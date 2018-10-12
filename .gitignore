@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 node_modules
 src/assets/javascripts/bundle.js
+package-lock.json
+.DS_Store

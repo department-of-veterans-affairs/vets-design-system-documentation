@@ -27,10 +27,15 @@
     "babel-loader": "^7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "react": "^16.5.2",
+    "react": "^15.5.4",
     "react-addons-update": "^15.6.2",
-    "react-dom": "^16.5.2",
+    "react-dom": "^15.5.4",
+    "uswds": "^1.4.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@department-of-veterans-affairs/formation": "^1.7.7",
+    "@department-of-veterans-affairs/react-jsonschema-form": "^1.0.0"
   }
 }
