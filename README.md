@@ -7,3 +7,21 @@ Min specs:
 - react
 - webpack
 
+## Getting started
+
+1. Install dependencies
+```
+$ npm install
+```
+
+2. Generate fresh `bundle.js`
+```
+$ webpack
+```
+
+3. Start jekyll server
+```
+$ bundle exec jekyll serve
+```
+
+4. Verify in browser: [localhost:4000](http://localhost:4000/)
