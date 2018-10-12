@@ -14,3 +14,11 @@ Formation’s purpose is to provide accepted guidance for:
 - visual design for existing components
 - use guidelines for existing components (when and when not to use a thing)
 - implementation of new visual patterns and components
+
+
+<div class="usa-alert usa-alert-success" >
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">Success Status</h3>
+    <p class="usa-alert-text">Lorem ipsum dolor sit amet, <a href="javascript:void(0);">consectetur adipiscing</a> elit, sed do eiusmod.</p>
+  </div>
+</div>
