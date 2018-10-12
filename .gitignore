@@ -2,4 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
-src/assets/bundle.js
+src/assets/javascripts/bundle.js
