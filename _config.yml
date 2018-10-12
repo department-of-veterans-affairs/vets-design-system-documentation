@@ -41,4 +41,7 @@ markdown: kramdown
 #   - vendor/ruby/
 
 source: src
-exclude: ['node_modules']
+exclude:
+  - node_modules
+  - tmp_remote_assets
+  - .sass-cache
