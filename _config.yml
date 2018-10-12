@@ -18,15 +18,15 @@ title: Jean Pants v2
 description: >- # this means to ignore newlines until "baseurl:"
   Design System for Vets.gov
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.vets.gov" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
+# plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +41,4 @@ plugins:
 #   - vendor/ruby/
 
 source: src
+exclude: ['node_modules']
