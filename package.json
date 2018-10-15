@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p"
+    "build": "webpack && gulp build"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
     "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-git": "^2.8.0",
     "node-sass": "^4.9.3",

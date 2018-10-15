@@ -3,16 +3,19 @@ var git = require('gulp-git');
 var clean = require('gulp-clean');
 
 
-gulp.task('clean-remote-assets', function () {
-  return gulp.src('./tmp_remote_assets', {read: false})
+gulp.task('clean-remote-assets', function (done) {
+  return gulp.src('./tmp_remote_assets', {read: false, allowEmpty: true})
     .pipe(clean());
+  done();
 });
 
 
-gulp.task('copy-remote-assets', ['clean-remote-assets'], function (err) {
-
-  git.clone('https://github.com/department-of-veterans-affairs/design-system.git', {args: './tmp_remote_assets'}, function (err) {
-    if (err) throw err;
-  })
-
+gulp.task('copy-remote-assets', function (done) {
+  return git.clone('https://github.com/department-of-veterans-affairs/design-system.git', {args: './tmp_remote_assets'})
+  done();
 });
+
+
+gulp.task('remote-assets', gulp.series('clean-remote-assets', 'copy-remote-assets'));
+
+
