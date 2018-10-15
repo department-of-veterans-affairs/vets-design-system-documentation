@@ -6,3 +6,5 @@ src/assets/javascripts/bundle.js
 package-lock.json
 .DS_Store
 tmp_remote_assets
+src/assets/img
+src/assets/fonts
