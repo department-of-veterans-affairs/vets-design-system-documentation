@@ -4,12 +4,11 @@ var gulp = require('gulp');
 gulp.task('build',
   gulp.series(
     'remote-assets',
-    //'build-uswds-if-needed',
     gulp.parallel(
       'fonts',
       'images',
-      //'javascript',
-      //'sass',
+      'javascript',
+      'css',
     )
   )
 );
