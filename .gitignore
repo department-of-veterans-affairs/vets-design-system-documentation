@@ -6,3 +6,4 @@ package-lock.json
 .DS_Store
 src/vendor
 tmp_remote_assets
+fonts
