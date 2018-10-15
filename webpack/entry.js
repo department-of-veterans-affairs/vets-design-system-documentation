@@ -1,6 +1,6 @@
 console.log("hi from the webpack/entry.js!");
 
-require('../src/_sass/app.scss');
+require('../node_modules/formation/src/sass/site/site.scss');
 
 
 import React, { Component } from 'react';
@@ -16,3 +16,5 @@ class App extends Component {
 }
 
 render(<App />, document.getElementById('reactComponentDemo'));
+
+

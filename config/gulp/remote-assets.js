@@ -4,14 +4,14 @@ var clean = require('gulp-clean');
 
 
 gulp.task('clean-remote-assets', function (done) {
-  return gulp.src('./tmp_remote_assets', {read: false, allowEmpty: true})
+  return gulp.src('./node_modules/formation', {read: false, allowEmpty: true})
     .pipe(clean());
   done();
 });
 
 
 gulp.task('copy-remote-assets', function (done) {
-  return git.clone('https://github.com/department-of-veterans-affairs/design-system.git', {args: './tmp_remote_assets'})
+  return git.clone('https://github.com/department-of-veterans-affairs/design-system.git', {args: './node_modules/formation'})
   done();
 });
 

@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./webpack/entry.js",
@@ -18,18 +18,29 @@ module.exports = {
         }
       },
       {
-        test: /\.(css|sass|scss)$/,
-        use: ExtractTextPlugin.extract({
-          use: ['raw-loader', 'sass-loader'],
-        })
-        },
-        {
-          test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-          loader: 'url-loader?limit=100000'
-        },
-      ]
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf)$/,
+        loader: 'url-loader?limit=100&name=../fonts/[name].[ext]',
+      },
+      {
+        test: /\.(png|svg)$/,
+        loader: 'url-loader?limit=100&name=../img/[name].[ext]',
+      },
+    ]
   },
   plugins: [
-      new ExtractTextPlugin('../css/app.css')
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '../css/app.css',
+      chunkFilename: '../css/[id].css',
+    })
   ]
 };
