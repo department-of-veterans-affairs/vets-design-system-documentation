@@ -4,7 +4,7 @@ var task = 'fonts';
 
 gulp.task('move-formation-fonts', function (done) {
   console.log("Moving fonts into folder");
-  var stream = gulp.src('./tmp_remote_assets/public/fonts/*')
+  var stream = gulp.src('./node_modules/formation/public/fonts/*')
     .pipe(gulp.dest('src/vendor/fonts'));
 
   return stream;
@@ -20,8 +20,8 @@ gulp.task('move-fontawesome-fonts', function (done) {
 });
 
 gulp.task('move-bitter-fonts', function (done) {
-  console.log("Moving Fontawesome into folder");
-  var stream = gulp.src('./tmp_remote_assets/public/fonts/bitter*')
+  console.log("Moving Bitter into folder");
+  var stream = gulp.src('./node_modules/formation/public/fonts/bitter*')
     .pipe(gulp.dest('src/fonts'));
 
   return stream;
