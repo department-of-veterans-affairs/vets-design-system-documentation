@@ -12,18 +12,18 @@ class MyReactComponent extends Component {
  render() {
  return (
  <div>
- 
+
  <h3>This is a React component!</h3>
- 
+
  <div id='sampleDatepicker'>
- 	This is a datepicker:
- 	<DatePicker showTimeSelect />
+   This is a datepicker:
+   <DatePicker showTimeSelect />
  </div>
 
 <div id='sampleLoader'>
-	This is a loading spinner:
-	<Loader color="#AAA" size="50px" margin="4px"/>
-	<a href="https://github.com/yuanyan/halogen">halogen on github</a>
+  This is a loading spinner:
+  <Loader color="#AAA" size="50px" margin="4px"/>
+  <a href="https://github.com/yuanyan/halogen">halogen on github</a>
 </div>
 
  </div>
