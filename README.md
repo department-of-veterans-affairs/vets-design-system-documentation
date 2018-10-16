@@ -9,6 +9,8 @@ Min specs:
 
 ## Getting started
 
+Tested using `node` v8.12.0 and `npm` v6.4.1.
+
 1. Install dependencies
 ```
 $ npm install
