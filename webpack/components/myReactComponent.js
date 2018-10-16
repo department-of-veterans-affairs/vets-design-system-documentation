@@ -26,6 +26,7 @@ class MyReactComponent extends Component {
   <a href="https://github.com/yuanyan/halogen">halogen on github</a>
 </div>
 
+
  </div>
 
 
@@ -34,3 +35,7 @@ class MyReactComponent extends Component {
  }
 }
 export default MyReactComponent;
+
+
+
+
