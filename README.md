@@ -2,8 +2,8 @@
 
 Prototype for a v2 of [Formation](https://department-of-veterans-affairs.github.io/design-system).
 
-Min specs: 
-- Jekyll 
+Min specs:
+- Jekyll
 - react
 - webpack
 
@@ -16,14 +16,9 @@ Tested using `node` v8.12.0 and `npm` v6.4.1.
 $ npm install
 ```
 
-2. Generate fresh `bundle.js`
+2. Build and start the Jekyll server
 ```
-$ webpack
-```
+$ npm run start
+````
 
-3. Start jekyll server
-```
-$ bundle exec jekyll serve
-```
-
-4. Verify in browser: [localhost:4000](http://localhost:4000/)
+3. Verify in browser: [localhost:4000](http://localhost:4000/)
