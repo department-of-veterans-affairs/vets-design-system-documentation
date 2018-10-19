@@ -1,0 +1,60 @@
+<ul class="usa-sidenav-list">
+  <li>
+    <a class="{% if page.sub_section contains "index" %} usa-current {% endif %}" href="{{ site.baseurl }}/">Introduction</a>
+  </li>
+  <li>
+    Layout
+    <ul class="usa-sidenav-sub_list" id="sublist_layout">
+      {% for p in site.layout  %}
+        {% if p.layout == 'default' %}
+        <li>
+            <a class="{% if p.url == page.url %} usa-current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' }}">{{p.title}}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    Components
+
+    <ul class="usa-sidenav-sub_list" id="sublist_components">
+      {% for p in site.components  %}
+        {% if p.layout == 'default' %}
+        <li>
+            <a class="{% if p.url == page.url %} usa-current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' }}">{{p.title}}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+
+  <li>
+    Patterns
+
+    <ul class="usa-sidenav-sub_list" id="sublist_patterns">
+      {% for p in site.patterns  %}
+        {% if p.layout == 'default' %}
+        <li>
+            <a class="{% if p.url == page.url %} usa-current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' }}">{{p.title}}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+
+  <li>
+    Utilities
+      <ul class="usa-sidenav-sub_list" id="sublist_utilities">
+        {% for p in site.utilities  %}
+          {% if p.layout == 'default' %}
+          <li>
+              <a class="{% if p.url == page.url %} usa-current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' }}">{{p.title}}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <a class="{% if page.sub_section contains "release notes" %} usa-current {% endif %}" href="{{ site.baseurl }}/releases.html">Release notes</a>
+    </li>
+  </ul>

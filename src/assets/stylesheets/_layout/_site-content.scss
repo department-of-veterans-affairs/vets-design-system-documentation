@@ -1,0 +1,12 @@
+.site-c-content {
+  display: flex;
+}
+
+.site-c-content__nav {
+  flex-basis: 25%;
+}
+
+.site-c-content__content {
+  flex-basis: 75%;
+  padding: $units-5;
+}

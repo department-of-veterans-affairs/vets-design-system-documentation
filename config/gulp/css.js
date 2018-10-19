@@ -10,5 +10,4 @@ gulp.task('copy-fontawesome-css', function (done) {
   done();
 });
 
-
-gulp.task('css', gulp.series('copy-fontawesome-css'));
+gulp.task('css', gulp.series('copy-fontawesome-css' ));

@@ -6,17 +6,18 @@
   <body>
 
     {% include header.html %}
-    <div id="root"></div>
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+
+    <div class="site-c-content">
+      <div class="site-c-content__nav">
+        {% include _side-nav.html %}
+      </div>
+      <div class="site-c-content__content">
+        <main id="site-content">
+          {{ content }}
+        </main>
       </div>
     </div>
 
-    <!-- placeholder for a sample React component -->
-    <div id="reactComponentDemo"></div>
-    <!-- end placeholder for a sample React component -->
-    
     {% include footer.html %}
     <script type="text/javascript" src="/vendor/javascripts/bundle.js" charset="utf-8"></script>
   </body>

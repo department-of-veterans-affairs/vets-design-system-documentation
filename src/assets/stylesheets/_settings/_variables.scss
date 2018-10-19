@@ -1,0 +1,37 @@
+
+/*
+===========================================
+Base unit
+===========================================
+This grid is based on the 8pt grid which helps us
+ensure consistent horizontal and vertical rhythm.
+We are using pixels rather than relative units to ensure
+consistent spacing in the event that the root font size
+is not equal 10.
+More info: https://spec.fm/specifics/8-pt-grid
+*/
+
+// Base unit
+$base-unit: 8px;
+
+// Varibles based on base units
+$units-0_5:   $base-unit / 2;
+$units-1:     $base-unit;
+$units-1_5:   $base-unit * 1.5;
+$units-2:     $base-unit * 2;
+$units-2_5:   $base-unit * 2.5;
+$units-3:     $base-unit * 3;
+$units-4:     $base-unit * 4;
+$units-5:     $base-unit * 5;
+$units-6:     $base-unit * 6;
+$units-7:     $base-unit * 7;
+$units-8:     $base-unit * 8;
+$units-9:     $base-unit * 9;
+$units-10:    $base-unit * 10;
+$units-15:    $base-unit * 15;
+$units-neg-0_5:  $base-unit * -.5;
+$units-neg-1:    $base-unit * -1;
+$units-neg-1_5:  $base-unit * -1.5;
+$units-neg-2:    $base-unit * -2;
+$units-neg-2_5:  $base-unit * -2.5;
+$units-neg-3:    $base-unit * -3;
