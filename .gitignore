@@ -8,3 +8,4 @@ src/vendor
 tmp_remote_assets
 fonts
 src/img
+src/_includes/react-samples

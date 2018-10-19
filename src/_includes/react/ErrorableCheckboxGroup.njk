@@ -1,0 +1,11 @@
+import React from 'react';
+import ErrorableCheckboxGroup from './ErrorableCheckboxGroup';
+
+export default function ErrorableCheckboxGroupExample(props) {
+  return (
+    <ErrorableCheckboxGroup
+      label='Errorable Checkbox Group'
+      onValueChange={(value) => value}
+      {...props}/>
+  );
+}

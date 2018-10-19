@@ -7,4 +7,8 @@ title: Additional Info
 
 # Hey
 
-{% include_relative code/additional-info.html %}
+{% include_relative html/additional-info.html %}
+
+```html
+{% include  react/AdditionalInfo.njk %}
+```
