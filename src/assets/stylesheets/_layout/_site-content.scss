@@ -1,12 +1,20 @@
 .site-c-content {
   display: flex;
+  align-items: stretch;
+  min-height: calc(100vh - 86px);
 }
 
 .site-c-content__nav {
+  background-color: $color-gray-lightest;
+  border-right: 1px solid $color-gray-lighter;
   flex-basis: 25%;
 }
 
 .site-c-content__content {
   flex-basis: 75%;
-  padding: $units-5;
+  padding: $units-8;
+}
+
+.site-l-wrapper {
+  padding: 0 $units-3;
 }

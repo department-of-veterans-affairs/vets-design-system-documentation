@@ -38,6 +38,17 @@ sass:
   sass_dir: assets/stylesheets/
   style: compressed
 
+# Collections
+collections:
+  layout:
+    output: true
+  components:
+    output: true
+  patterns:
+    output: true
+  utilities:
+    output: true
+
 includes:
   - /components/code
 

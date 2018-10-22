@@ -35,3 +35,16 @@ $units-neg-1_5:  $base-unit * -1.5;
 $units-neg-2:    $base-unit * -2;
 $units-neg-2_5:  $base-unit * -2.5;
 $units-neg-3:    $base-unit * -3;
+
+
+
+/*======================================
+clearfix
+========================================= */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

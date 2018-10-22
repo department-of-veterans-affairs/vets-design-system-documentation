@@ -1,13 +1,16 @@
 ---
 layout: default
-main_section: components
 sub_section: additional-info
 title: Additional Info
 ---
 
-# Hey
+# Additional Info
 
+AdditionalInfo components are interactive components that reveal and hide content from the page.
+
+<div class="site-c-showcase">
 {% include_relative html/additional-info.html %}
+</div>
 
 ```html
 {% include  react/AdditionalInfo.njk %}
