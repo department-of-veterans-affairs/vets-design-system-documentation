@@ -22,3 +22,12 @@ $ npm run start
 ````
 
 3. Verify in browser: [localhost:4000](http://localhost:4000/)
+
+## Adding content to the documentation site
+
+To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site. Documentation content can be found in the following directories:
+
+* `/src/_components`
+* `/src/_layout`
+* `/src/_patterns`
+* `/src/utilities` (Utilities coming soon!)
