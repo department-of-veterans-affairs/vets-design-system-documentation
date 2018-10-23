@@ -13,27 +13,8 @@ import AdditionalInfo from '@department-of-veterans-affairs/formation/Additional
 import MyReactComponent from './components/myReactComponent';
 
 
-class App extends Component {
- render() {
- return (
-  <div>
-  <MyReactComponent />
-  <AdditionalInfo triggerText="Testing this thing">
-    <ul>
-      <li>info A</li>
-      <li>info B</li>
-      <li>info C</li>
-      <li>info D</li>
-    </ul>
-  </AdditionalInfo>
-  </div>
 
- )
- }
-}
-
-
-class Foo extends Component {
+class AdditionalInfoDemo extends Component {
  render() {
    return (
     <div>
@@ -50,8 +31,8 @@ class Foo extends Component {
  }
 }
 
-render(<Foo />, document.getElementById('testinfo'));
-render(<App />, document.getElementById('reactComponentDemo'));
+render(<AdditionalInfoDemo />, document.getElementById('AdditionalInfoDemo'));
+render(<MyReactComponent />, document.getElementById('reactComponentDemo'));
 
 
 
