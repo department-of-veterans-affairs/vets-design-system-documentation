@@ -9,30 +9,103 @@ require('../node_modules/formation/src/sass/site/site.scss');
 import React, { Component } from 'react';
 import {render} from 'react-dom';
 import AdditionalInfo from '@department-of-veterans-affairs/formation/AdditionalInfo'
+import Modal from '@department-of-veterans-affairs/formation/Modal'
 
 import MyReactComponent from './components/myReactComponent';
 
+// Hide the modal
+function hideModal(){
+  console.log('hiding modal');
+  el.classList.remove(visible_class);
+}
 
 
 class AdditionalInfoDemo extends Component {
  render() {
    return (
     <div>
-    <AdditionalInfo triggerText="Another thing">
-      <ul>
-        <li>info A</li>
-        <li>info B</li>
-        <li>info C</li>
-        <li>info D</li>
-      </ul>
-    </AdditionalInfo>
+      <AdditionalInfo triggerText="Another thing">
+        <ul>
+          <li>info A</li>
+          <li>info B</li>
+          <li>info C</li>
+          <li>info D</li>
+        </ul>
+      </AdditionalInfo>
     </div>
    )
  }
 }
 
-render(<AdditionalInfoDemo />, document.getElementById('AdditionalInfoDemo'));
-render(<MyReactComponent />, document.getElementById('reactComponentDemo'));
+class ModalDemo extends Component {
+ render() {
+   return (
+    <div>
+      <Modal
+        title="Hey"
+        id="modal1"
+        status="success"
+        visible
+        className="va-overlay va-modal"
+        onClose={() => {hideModal()}}>
+        <p>This is a modal</p>
+      </Modal>
+    </div>
+   )
+ }
+}
 
 
+
+if (document.getElementById('reactComponentDemo')){
+  render(<MyReactComponent />, document.getElementById('reactComponentDemo'));
+}
+
+if (document.getElementById('AdditionalInfoDemo')) {
+  render(<AdditionalInfoDemo />, document.getElementById('AdditionalInfoDemo'));
+}
+
+if (document.getElementById('ModalDemo')) {
+  render(<ModalDemo className="foo" />, document.getElementById('ModalDemo'));
+
+  var el = document.getElementById('modal1'),
+      overlay_class = "va-overlay",
+      visible_class = "va-overlay--open";
+
+  if (el.classList)
+    el.classList.add(overlay_class);
+  else
+    el.overlay_class += ' ' + overlay_class;
+
+  function clickHandler(){
+    console.log('showing modal');
+    el.classList.add(visible_class);
+  }
+
+
+
+
+
+  var anchor = document.getElementById('demoModalButton');
+  if(anchor.addEventListener) {
+    anchor.addEventListener('click', clickHandler, false);
+  }
+  else if(anchor.attachEvent){  // this is for IE, because it doesn't support addEventListener
+   anchor.attachEvent('onclick', function(){
+     return clickHandler.apply(anchor, [window.event])
+    });
+  }
+
+
+
+  var close_btn = document.getElementsByClassName('va-modal-close');
+  if(close_btn.addEventListener) {
+    close_btn.addEventListener('click', hideModal, false);
+  }
+  else if(close_btn.attachEvent){  // this is for IE, because it doesn't support addEventListener
+   close_btn.attachEvent('onclick', function(){
+     return hideModal.apply(close_btn, [window.event])
+    });
+  }
+}
 
