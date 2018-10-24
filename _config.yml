@@ -40,6 +40,8 @@ sass:
 
 # Collections
 collections:
+  design:
+    output: true
   layout:
     output: true
   components:

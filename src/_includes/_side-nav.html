@@ -3,6 +3,18 @@
     <a class="site-c-sidenav-list__link {% if page.sub_section contains "index" %} current {% endif %}" href="{{ site.baseurl }}/">Introduction</a>
   </li>
   <li class="site-c-sidenav-list__item">
+    <h2 class="site-c-sidenav-list__heading">Design</h2>
+    <ul class="site-c-sidenav-sub-list" id="sublist_layout">
+      {% for p in site.design  %}
+        {% if p.layout == 'default' %}
+        <li class="site-c-sidenav-sub-list__item">
+            <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+  <li class="site-c-sidenav-list__item">
     <h2 class="site-c-sidenav-list__heading">Layout</h2>
     <ul class="site-c-sidenav-sub-list" id="sublist_layout">
       {% for p in site.layout  %}

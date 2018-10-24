@@ -15,8 +15,5 @@ Formation’s purpose is to provide accepted guidance for:
 * use guidelines for existing components (when and when not to use a thing)
 * implementation of new visual patterns and components
 
-<span class="d">test this</span>
-
-
 
 
