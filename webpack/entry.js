@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 import {render} from 'react-dom';
 import AdditionalInfo from '@department-of-veterans-affairs/formation/AdditionalInfo'
 import Modal from '@department-of-veterans-affairs/formation/Modal'
+import CollapsiblePanel from '@department-of-veterans-affairs/formation/CollapsiblePanel'
 
 import MyReactComponent from './components/myReactComponent';
 
@@ -51,6 +52,24 @@ class ModalDemo extends Component {
         onClose={() => {hideModal()}}>
         <p>This is a modal</p>
       </Modal>
+    </div>
+   )
+ }
+}
+
+class CollapsiblePanelDemo extends Component {
+ render() {
+   return (
+    <div>
+      <CollapsiblePanel
+        panelName="Panel 1">
+        <div>This panel defaults to closed.</div>
+      </CollapsiblePanel>
+
+      <CollapsiblePanel
+        panelName="Panel 2" startOpen>
+        <div>This panel defaults to open.</div>
+      </CollapsiblePanel>
     </div>
    )
  }
@@ -115,5 +134,9 @@ if (document.getElementById('ModalDemo')) {
      return hideModal.apply(close_btn, [window.event])
     });
   }
+}
+
+if (document.getElementById('CollapsiblePanelDemo')) {
+  render(<CollapsiblePanelDemo />, document.getElementById('CollapsiblePanelDemo'));
 }
 
