@@ -1,0 +1,38 @@
+<div class="va-crisis-line" style="position:static">
+  <div class="va-flex">
+    <button data-show="#modal-crisisline" class="va-crisis-line-button va-overlay-trigger" onclick="showModal(this);">
+      <span class="va-flex">
+        <span class="vcl"></span>
+        Get help from Veterans Crisis Line
+      </span>
+    </button>
+  </div>
+</div>
+<div id="modal-crisisline" class="va-overlay va-modal va-modal-large" role="alertdialog">
+  <div class="va-crisis-panel va-modal-inner">
+    <h3>Get help from Veterans Crisis Line</h3>
+    <button class="va-modal-close va-overlay-close" type="button" aria-label="Close this modal" onClick="showModal(this);">
+      <i class="fa fa-close va-overlay-close"></i>
+    </button>
+    <div class="va-overlay-body va-crisis-panel-body">
+      <ul>
+        <li><a href="tel:18002738255">Call <strong>1-800-273-8255 (Press 1)</strong></a></li>
+        <li><a href="sms:838255">Text to <b>838255</b></a></li>
+        <li><a href="https://www.veteranscrisisline.net/ChatTermsOfService.aspx?account=Veterans%20Chat">Chat <b>confidentially now</b></a></li>
+      </ul>
+      <p>If you are in crisis or having thoughts of suicide,
+visit <a href="https://www.veteranscrisisline.net/">VeteransCrisisLine.net</a> for more resources.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function showModal(elem) {
+    var parentClasses = document.getElementById("modal-crisisline").classList;
+    if(elem.classList.contains('va-overlay-close')) {
+      parentClasses.add('va-overlay');
+    } else if(parentClasses.contains('va-overlay')) {
+      parentClasses.remove('va-overlay');
+    }
+  }
+</script>
