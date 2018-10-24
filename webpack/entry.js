@@ -17,6 +17,7 @@ import MyReactComponent from './components/myReactComponent';
 function hideModal(){
   console.log('hiding modal');
   el.classList.remove(visible_class);
+  body.classList.remove(open_modal_body_class);
 }
 
 
@@ -68,9 +69,15 @@ if (document.getElementById('AdditionalInfoDemo')) {
 if (document.getElementById('ModalDemo')) {
   render(<ModalDemo className="foo" />, document.getElementById('ModalDemo'));
 
+
+
   var el = document.getElementById('modal1'),
+    body = document.getElementsByTagName("BODY")[0],
       overlay_class = "va-overlay",
-      visible_class = "va-overlay--open";
+      visible_class = "va-overlay--open",
+      open_modal_body_class = "modal-open";
+
+  body.classList.remove(open_modal_body_class);
 
   if (el.classList)
     el.classList.add(overlay_class);
@@ -80,6 +87,7 @@ if (document.getElementById('ModalDemo')) {
   function clickHandler(){
     console.log('showing modal');
     el.classList.add(visible_class);
+    body.classList.add(open_modal_body_class);
   }
 
 
