@@ -34,3 +34,9 @@
 .site-c-sidenav-list__link:hover {
   background-color: transparent;
 }
+
+.site-c-sidenav-sub-list__link.current {
+  color: $color-base;
+  font-weight: $font-bold;
+  pointer-events: none;
+}
