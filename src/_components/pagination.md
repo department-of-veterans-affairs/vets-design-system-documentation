@@ -4,7 +4,7 @@ sub_section: pagination
 title: Pagination
 ---
 
-# Breadcrumbs
+# Pagination
 
 <div class="site-c-showcase">
 {% include_relative html/pagination.html %}
