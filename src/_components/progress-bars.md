@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: progress-bars
-title: Progress Bars and Loading Indicators
+title: Progress Bars
 ---
 
-# Progress Bars and Loading Indicators
+# Progress Bars
 
 ## Standard Progress Bar
 
