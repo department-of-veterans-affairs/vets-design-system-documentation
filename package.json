@@ -55,7 +55,7 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
-    "@department-of-veterans-affairs/formation": "^1.8.3",
+    "@department-of-veterans-affairs/formation": "^1.8.6",
     "@department-of-veterans-affairs/react-jsonschema-form": "^1.0.0"
   },
   "peerDependencies": {

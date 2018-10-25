@@ -25,13 +25,3 @@ title: Progress Bars and Loading Indicators
 ```html
 {% include_relative html/segmented-progress-bar.html %}
 ```
-
-## Loading Indicator
-
-<div class="site-c-showcase">
-{% include_relative html/loading-indicator.html %}
-</div>
-
-```html
-{% include_relative html/loading-indicator.html %}
-```
