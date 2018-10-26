@@ -10,20 +10,35 @@ export default function AlertBoxExample(props) {
         status={props.status}
         isVisible={props.isVisible}/>
       <AlertBox
-        headline={props.headline}
+        headline="Warning alert"
         content={props.content}
-        status={'error'}
-        isVisible={props.isVisible}/>
+        status="warning"/>
       <AlertBox
-        headline={props.headline}
+        headline="Error alert"
         content={props.content}
-        status={'success'}
-        isVisible={props.isVisible}/>
+        status="error"/>
       <AlertBox
-        headline={props.headline}
+        headline="Success alert"
         content={props.content}
-        status={'info'}
-        isVisible={props.isVisible}/>
+        status="success"/>
+      <AlertBox
+        headline="Continue alert"
+        content={props.content}
+        status="continue"/>
+      <AlertBox
+        headline="Dismissable alert"
+        content={props.content}
+        status={props.status}
+        isVisible={props.isVisible}
+        onCloseAlert={() => {}}/>
+      <AlertBox
+        headline="Hidden alert"
+        content={props.content}
+        status={props.status}
+        isVisible={false}/>
+      <AlertBox
+        content={<p className="usa-alert-text">Content without heading.</p>}
+        status={props.status}/>
     </div>
   );
 }
