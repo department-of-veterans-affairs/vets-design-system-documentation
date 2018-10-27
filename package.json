@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp remote-assets && webpack && gulp build",
-    "start": "npm run build && bundle exec jekyll serve"
+    "start": "npm run build && bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
     "type": "git",
