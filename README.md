@@ -36,8 +36,8 @@ To add content, you will need to look into `/src` directory. This will be the so
 
 Since this site relies on scripts and processes that are not whitelisted in GitHub pages, we have to build the site locally in order to deploy it. The shell script will create a `gh-pages` branch in the `site` directory, initiate version control separate from the `master` branch, and push the branch to GitHub. Like most builds, the version history is not of importance.
 
-```bash
+```
 $ npm install
 $ npm run build
-$ ./deploy_site.sh 
+$ ./deploy_site.sh
 ```
