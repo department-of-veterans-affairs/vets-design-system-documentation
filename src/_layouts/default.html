@@ -9,7 +9,11 @@
 
     <div class="site-c-content">
       <div class="site-c-content__nav">
-        {% include _side-nav.html %}
+        {% if page.url contains "/design-system/" %}
+          {% include _design-system-nav.html %}
+        {% elsif page.url contains "/content-style-guide/" %}
+          {% include _content-style-guide-nav.html %}
+        {% endif %}
       </div>
       <div class="site-c-content__content">
         <main id="site-content" class="site-l-content-wrapper--styleguide">

@@ -1,0 +1,17 @@
+
+<ul class="site-c-sidenav-list">
+  <li class="site-c-sidenav-list__item">
+    <a class="site-c-sidenav-list__link {% if page.sub_section contains "index" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Introduction</a>
+  </li>
+  <li class="site-c-sidenav-list__item">
+    <ul class="site-c-sidenav-sub-list">
+      {% for p in site.content-style-guide  %}
+      {% if p.url contains "/sections/" %}
+      <li class="site-c-sidenav-sub-list__item">
+          <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </li>
+</ul>

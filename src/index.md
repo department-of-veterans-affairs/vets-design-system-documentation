@@ -15,5 +15,9 @@ Formation’s purpose is to provide accepted guidance for:
 * use guidelines for existing components (when and when not to use a thing)
 * implementation of new visual patterns and components
 
+[Design System]({{ site.baseurl }}/design-system)
+
+[Content Style Guide]({{ site.baseurl }}/content-style-guide)
+
 
 

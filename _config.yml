@@ -41,8 +41,8 @@ sass:
 # Collections
 collections:
   design-system:
-    design:
-      output: true
+    output: true
+  content-style-guide:
     output: true
 
 
