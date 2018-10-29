@@ -1,40 +1,41 @@
+
 <ul class="site-c-sidenav-list">
   <li class="site-c-sidenav-list__item">
     <a class="site-c-sidenav-list__link {% if page.sub_section contains "index" %} current {% endif %}" href="{{ site.baseurl }}/">Introduction</a>
   </li>
   <li class="site-c-sidenav-list__item">
     <h2 class="site-c-sidenav-list__heading">Design</h2>
-    <ul class="site-c-sidenav-sub-list" id="sublist_layout">
-      {% for p in site.design  %}
-        {% if p.layout == 'default' %}
-        <li class="site-c-sidenav-sub-list__item">
-            <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
-        </li>
-        {% endif %}
+    <ul class="site-c-sidenav-sub-list">
+      {% for p in site.design-system  %}
+      {% if p.url contains "/design/" %}
+      <li class="site-c-sidenav-sub-list__item">
+          <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+      </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </li>
   <li class="site-c-sidenav-list__item">
     <h2 class="site-c-sidenav-list__heading">Layout</h2>
-    <ul class="site-c-sidenav-sub-list" id="sublist_layout">
-      {% for p in site.layout  %}
-        {% if p.layout == 'default' %}
-        <li class="site-c-sidenav-sub-list__item">
-            <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
-        </li>
-        {% endif %}
+    <ul class="site-c-sidenav-sub-list">
+      {% for p in site.design-system  %}
+      {% if p.url contains "/layout/" %}
+      <li class="site-c-sidenav-sub-list__item">
+          <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+      </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </li>
   <li class="site-c-sidenav-list__item">
     <h2 class="site-c-sidenav-list__heading">Components</h2>
     <ul class="site-c-sidenav-sub-list">
-      {% for p in site.components  %}
-        {% if p.layout == 'default' %}
+      {% for p in site.design-system  %}
+      {% if p.url contains "/components/" %}
         <li class="site-c-sidenav-sub-list__item">
           <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
         </li>
-        {% endif %}
+      {% endif %}
       {% endfor %}
     </ul>
   </li>
@@ -42,12 +43,12 @@
   <li class="site-c-sidenav-list__item">
     <h3 class="site-c-sidenav-list__heading">Patterns</h3>
     <ul class="site-c-sidenav-sub-list" id="sublist_patterns">
-      {% for p in site.patterns  %}
-        {% if p.layout == 'default' %}
+      {% for p in site.design-system  %}
+      {% if p.url contains "/patterns/" %}
         <li class="site-c-sidenav-sub-list__item">
             <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
         </li>
-        {% endif %}
+      {% endif %}
       {% endfor %}
     </ul>
   </li>
@@ -55,16 +56,16 @@
   <li class="site-c-sidenav-list__item">
     <h3 class="site-c-sidenav-list__heading">Utilities</h3>
     <ul class="site-c-sidenav-sub-list" id="sublist_utilities">
-      {% for p in site.utilities  %}
-        {% if p.layout == 'default' %}
+      {% for p in site.design-system  %}
+      {% if p.url contains "/utilities/" %}
         <li class="site-c-sidenav-sub-list__item">
             <a class="site-c-sidenav-sub-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
         </li>
-        {% endif %}
+      {% endif %}
       {% endfor %}
     </ul>
   </li>
   <li class="site-c-sidenav-list__item">
     <a class="site-c-sidenav-list__link {% if page.sub_section contains "release notes" %} current {% endif %}" href="{{ site.baseurl }}/releases.html">Release notes</a>
   </li>
-  </ul>
+</ul>

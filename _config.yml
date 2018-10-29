@@ -40,16 +40,11 @@ sass:
 
 # Collections
 collections:
-  design:
+  design-system:
+    design:
+      output: true
     output: true
-  layout:
-    output: true
-  components:
-    output: true
-  patterns:
-    output: true
-  utilities:
-    output: true
+
 
 includes:
   - /components/code
