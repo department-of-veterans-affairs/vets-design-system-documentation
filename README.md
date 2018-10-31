@@ -25,12 +25,13 @@ $ npm run start
 
 ## Adding content to the documentation site
 
-To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site. Documentation content can be found in the following directories:
+To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site.
 
-* `/src/_components`
-* `/src/_layout`
-* `/src/_patterns`
-* `/src/_utilities` (Utilities coming soon!)
+The design system can be found
+* `/src/_design-system/`
+
+The content style guide can be found
+* `/src/_content-style-guide/`
 
 ## Deploying the site
 
