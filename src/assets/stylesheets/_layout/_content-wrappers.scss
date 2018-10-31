@@ -85,6 +85,14 @@
     font-weight: $font-normal;
   }
 
+  p .highlighter-rouge,
+  li .highlighter-rouge {
+    padding: $units-0_5;
+    margin: 0;
+    border: 0;
+    border-radius: 2px;
+  }
+
   //
   pre {
     white-space: pre-wrap;       /* css-3 */
