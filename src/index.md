@@ -15,9 +15,7 @@ Formation’s purpose is to provide accepted guidance for:
 * use guidelines for existing components (when and when not to use a thing)
 * implementation of new visual patterns and components
 
-[Design System]({{ site.baseurl }}/design-system)
-
-[Content Style Guide]({{ site.baseurl }}/content-style-guide)
+<a href="{{ site.baseurl }}/design-system" class="usa-button usa-button-big">Design System</a> <a href="{{ site.baseurl }}/content-style-guide" class="usa-button usa-button-big">Content styleguide</a>
 
 
 
