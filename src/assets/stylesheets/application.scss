@@ -3,8 +3,8 @@ font-matter: yay
 ---
 
 // Get variables from USWDS
-@import '../../../../node_modules/uswds/src/stylesheets/lib/addons/_font-stacks.scss';
-@import '../../../../node_modules/uswds/src/stylesheets/core/_variables.scss';
+@import '../../../node_modules/uswds/src/stylesheets/lib/addons/_font-stacks.scss';
+@import '../../../node_modules/uswds/src/stylesheets/core/_variables.scss';
 
 // Site CSS
 @import '_settings/variables';
