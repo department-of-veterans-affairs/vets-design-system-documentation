@@ -15,3 +15,11 @@ AdditionalInfo components are interactive components that reveal and hide conten
 ```html
 {% include  react/AdditionalInfo.njk %}
 ```
+
+## Examples
+
+You can see the Additional Info component on the Health Care Application form:
+- [Deductible Expenses page](https://vets.gov/health-care/apply/application/household-information/deductible-expenses)
+- [Medicare information page](https://vets.gov/health-care/apply/application/insurance-information/medicare)
+
+To see those pages, you would need to fill out the first few chapters of the form. (Note: We can update these links with examples that are earlier in a form or outside a form flow so they are easier to see.)
