@@ -1,7 +1,7 @@
 ---
 layout: default
-sub_section: ui-elements
-title: UI Elements
+sub_section: user-interface-elements
+title: User interface elements
 ---
 
-# UI Elements
+# User interface elements
