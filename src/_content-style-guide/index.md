@@ -10,4 +10,6 @@ Welcome to the VA.gov content style guide lorem ipsum.
 
 ## Content principles
 
-Plain language lorem ipsum
+* AP Style
+* Merriam Webster Dictionary
+* Plain language lorem ipsum
