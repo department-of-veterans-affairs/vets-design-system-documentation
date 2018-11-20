@@ -51,25 +51,25 @@
     <nav class="site-c-header__nav">
       <ul class="site-c-header__nav-list">
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/documentation">Documentation</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/documentation" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Documentation</a>
         </li>
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/content-style-guide">Content</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/content-style-guide" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Content</a>
         </li>
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/design">Design</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/design" %} current {% endif %}" href="{{ site.baseurl }}/design">Design</a>
         </li>
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/components">Components</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/components" %} current {% endif %}" href="{{ site.baseurl }}/components">Components</a>
         </li>
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/utilities">Utilities</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/utilities" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Utilities</a>
         </li>
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/patterns">Patterns</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/patterns" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Patterns</a>
         </li>
         <li class="site-c-header__nav-item">
-          <a class="site-c-header__nav-item__link" href="{{ site.baseurl }}/layout">Layout</a>
+          <a class="site-c-header__nav-item__link {% if page.url contains "/layout" %} current {% endif %}" href="{{ site.baseurl }}/layout">Layout</a>
         </li>
       </ul>
     </nav>

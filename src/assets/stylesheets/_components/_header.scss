@@ -61,3 +61,7 @@
   color: $color-gold;
   text-decoration: none;
 }
+
+.site-c-header__nav-item__link.current {
+  border-bottom: 3px solid $color-gold;
+}
