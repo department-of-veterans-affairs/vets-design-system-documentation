@@ -27,7 +27,7 @@
         {% elsif page.url contains "/layout/" %}
           {% include _side-nav.html section=site.layout %}
         {% elsif page.url contains "/content-style-guide/" %}
-          {% include _content-style-guide-nav.html %}
+            {% include _side-nav.html section=site.content-style-guide %}
         {% endif %}
       </div>
       <div class="site-c-content__content">
