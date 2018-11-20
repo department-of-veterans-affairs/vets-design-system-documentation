@@ -14,8 +14,18 @@
       </main>
       {% else %}
       <div class="site-c-content__nav">
-        {% if page.url contains "/design-system/" %}
-          {% include _design-system-nav.html %}
+        {% if page.url contains "/documentation/" %}
+          {% include _side-nav.html section=site.documentation %}
+        {% elsif page.url contains "/design/" %}
+          {% include _side-nav.html section=site.design %}
+        {% elsif page.url contains "/components/" %}
+          {% include _side-nav.html section=site.components %}
+        {% elsif page.url contains "/patterns/" %}
+          {% include _side-nav.html section=site.patterns %}
+        {% elsif page.url contains "/utilities/" %}
+          {% include _side-nav.html section=site.utilities %}
+        {% elsif page.url contains "/layout/" %}
+          {% include _side-nav.html section=site.layout %}
         {% elsif page.url contains "/content-style-guide/" %}
           {% include _content-style-guide-nav.html %}
         {% endif %}

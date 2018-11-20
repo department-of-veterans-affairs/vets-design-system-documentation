@@ -40,9 +40,19 @@ sass:
 
 # Collections
 collections:
-  design-system:
+  documentation:
     output: true
   content-style-guide:
+    output: true
+  design:
+    output: true
+  components:
+    output: true
+  patterns:
+    output: true
+  layout:
+    output: true
+  utilities:
     output: true
 
 
