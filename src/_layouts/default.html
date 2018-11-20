@@ -8,6 +8,11 @@
     {% include header.html %}
 
     <div class="site-c-content">
+      {% if page.homepage %}
+      <main id="site-content" class="site-l-wrapper">
+        {{ content }}
+      </main>
+      {% else %}
       <div class="site-c-content__nav">
         {% if page.url contains "/design-system/" %}
           {% include _design-system-nav.html %}
@@ -20,6 +25,8 @@
           {{ content }}
         </main>
       </div>
+      {% endif %}
+
     </div>
 
     {% include footer.html %}

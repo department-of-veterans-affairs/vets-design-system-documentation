@@ -1,13 +1,63 @@
 .site-c-header {
   color: #fff;
   background-color: $color-primary-darkest;
-  padding: $units-2 0;
 }
 
-.site-c-header__title,
-.site-c-header__title:visited {
-  font-weight: $font-bold;
-  font-size: 3.6rem;
+.site-c-header__masthead {
+  display: flex;
+}
+
+.site-c-header__logo-text {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 300;
+  font-style: normal;
+  margin: $units-3 0;
+}
+
+.site-c-header__logo-link,
+.site-c-header__logo-link:visited {
+  display: inline-block;
   color: #fff;
+  text-decoration: none;
+}
+
+.site-c-header__logo-link:hover,
+.site-c-header__logo-link:focus {
+  text-decoration: none;
+}
+
+.site-c-header__nav {
+  border-top: 1px solid white;
+}
+
+.site-c-header__nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-c-header__nav-item {
+  font-weight: bold;
+  margin: 0;
+}
+
+.site-c-header__nav-item:first-child {
+  margin-left: $units-neg-3
+}
+
+.site-c-header__nav-item__link,
+.site-c-header__nav-item__link:visited {
+  color: #fff;
+  display: block;
+  padding: $units-2 $units-3;
+  text-decoration: none;
+  transition: none;
+}
+
+.site-c-header__nav-item__link:hover,
+.site-c-header__nav-item__link:focus {
+  color: $color-gold;
   text-decoration: none;
 }
