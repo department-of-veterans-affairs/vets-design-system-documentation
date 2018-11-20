@@ -1,6 +1,6 @@
 ---
 layout: default
-sub_section: color-palette
+sub_section: index
 title: Content Style Guide
 ---
 

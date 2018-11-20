@@ -1,41 +1,20 @@
 .site-c-sidenav-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.site-c-sidenav-list__item {
   padding: $units-5;
-  border-bottom: 1px solid $color-gray-lighter;
-}
-
-.site-c-sidenav-list__heading {
-  margin-top: 0;
-  font-size: 2.2rem;
-  font-family: $font-sans;
-  font-weight: $font-normal;
-}
-
-.site-c-sidenav-sub-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
 }
 
-.site-c-sidenav-sub-list__link,
-.site-c-sidenav-sub-list__link:visited,
 .site-c-sidenav-list__link,
 .site-c-sidenav-list__link:visited {
   text-decoration: none;
   color: $color-primary;
 }
 
-.site-c-sidenav-sub-list__link:hover,
 .site-c-sidenav-list__link:hover {
   background-color: transparent;
 }
 
-.site-c-sidenav-sub-list__link.current {
+.site-c-sidenav-list__link.current {
   color: $color-base;
   font-weight: $font-bold;
   pointer-events: none;
