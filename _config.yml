@@ -22,7 +22,7 @@ url: "https://www.vets.gov" # the base hostname & protocol for your site, e.g. h
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-project_name: Formation
+project_name: Vets.gov Design System
 
 # Build settings
 markdown: kramdown

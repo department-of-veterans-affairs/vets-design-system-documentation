@@ -1,0 +1,160 @@
+<div class="site-c-mobile-nav" id="mobile-nav">
+  <button id="close_mobile_nav_button" class="site-c-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fa fa-close"></i></button>
+  <div class="usa-accordion site-c-mobile-nav__accordion">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button"
+      aria-expanded="{% if page.url contains "/documentation/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">Documentation</button>
+  </h2>
+  <div id="nav-a1" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "documentation/index" %} current {% endif %}" href="{{ site.baseurl }}/documentation/index.html">Overview</a>
+      </li>
+      {% for p in site.documentation %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/content-style-guide/" %}true{% else %}false{% endif %}" aria-controls="nav-a2">
+      Content
+    </button>
+  </h2>
+  <div id="nav-a2" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "content-style-guide/index" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide/index.html">Overview</a>
+      </li>
+      {% for p in site.content-style-guide %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/design/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
+      Design
+    </button>
+  </h2>
+  <div id="nav-a3" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "design/index" %} current {% endif %}" href="{{ site.baseurl }}/design/index.html">Overview</a>
+      </li>
+      {% for p in site.design %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/components/" %}true{% else %}false{% endif %}" aria-controls="nav-a4">
+      Components
+    </button>
+  </h2>
+  <div id="nav-a4" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "components/index" %} current {% endif %}" href="{{ site.baseurl }}/components/index.html">Overview</a>
+      </li>
+      {% for p in site.components %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/utilities/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
+      Utilities
+    </button>
+  </h2>
+  <div id="nav-a5" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "utilities/index" %} current {% endif %}" href="{{ site.baseurl }}/utilities/index.html">Overview</a>
+      </li>
+      {% for p in site.utilities %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a6">
+      Patterns
+    </button>
+  </h2>
+  <div id="nav-a6" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "patterns/index" %} current {% endif %}" href="{{ site.baseurl }}/patterns/index.html">Overview</a>
+      </li>
+      {% for p in site.patterns %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h2 class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+    <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/layout/" %}true{% else %}false{% endif %}" aria-controls="nav-a7">
+      Layout
+    </button>
+  </h2>
+  <div id="nav-a7" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+    <ul class="site-c-mobile-nav-list">
+      <li class="site-c-mobile-nav-list__item">
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/layout/index.html">Overview</a>
+      </li>
+      {% for p in site.layout %}
+        {% unless p.sub_section contains "index" %}
+          <li class="site-c-mobile-nav-list__item">
+            <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+</div>

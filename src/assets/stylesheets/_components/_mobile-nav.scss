@@ -1,0 +1,127 @@
+.site-c-mobile-nav {
+  background: #fff;
+  display: none;
+  padding: $units-3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: $flyout-menu;
+  overflow-y: scroll;
+  width: 75%;
+  max-width: 360px;
+  transform: translateX(0);
+
+  @include media($nav-width) {
+    display: none;
+  }
+}
+
+.site-c-mobile-nav.is-visible {
+  display: block;
+  animation: slidein-left 0.3s ease-in-out;
+
+  @include media($nav-width) {
+    display: none;
+  }
+}
+
+.site-c-mobile-nav__accordion {
+  clear: both;
+}
+
+.site-c-mobile-nav__accordion-heading {
+  border-top: 1px solid $color-gray-lighter;
+  border-bottom: 1px solid $color-gray-lighter;
+  margin: -1px 0 0;
+  line-height: 1;
+}
+
+.site-c-mobile-nav__accordion-content {
+  padding: 0;
+}
+
+.site-c-mobile-nav__accordion-button,
+.site-c-mobile-nav__accordion-button:hover,
+.site-c-mobile-nav__accordion-button:active,
+.site-c-mobile-nav__accordion-button:focus {
+  font-weight: $font-normal;
+  padding-left: 0;
+  background-color: transparent;
+  background-position: right center;
+  margin: 0;
+}
+
+.site-c-mobile-nav__accordion-button:hover,
+.site-c-mobile-nav__accordion-button:focus {
+  background-color: $color-gray-lightest;
+  color: $color-primary;
+}
+
+.site-c-mobile-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-c-mobile-nav-list__item {
+  padding: 0;
+  margin: 0;
+}
+
+.site-c-mobile-nav-list__link,
+.site-c-mobile-nav-list__link:visited {
+  color: $color-gray;
+  display: block;
+  border-top: 1px solid $color-gray-lighter;
+  border-bottom: 1px solid $color-gray-lighter;
+  font-size: 1.5rem;
+  margin-top: -1px;
+  padding: $units-1_5 $units-1_5 $units-1_5 $units-3;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.site-c-mobile-nav-list__link:hover,
+.site-c-mobile-nav-list__link:focus {
+  background-color: $color-gray-lightest;
+  color: $color-primary;
+  transition: none !important;
+  text-decoration: none;
+}
+
+.site-c-mobile-nav-list__link.current {
+  color: $color-base;
+  font-weight: bold;
+}
+
+.site-c-mobile-nav__close-button {
+  width: auto;
+  background: transparent;
+  color: $color-base;
+  float: right;
+  margin: 0 $units-neg-3 $units-3 0;
+  padding: $units-3;
+
+  .fa {
+    font-size: 1.8rem;
+  }
+}
+
+.site-c-mobile-nav__close-button:hover,
+.site-c-mobile-nav__close-button:focus {
+  background-color: transparent;
+  color: $color-base;
+}
+
+
+@keyframes slidein-left {
+    from {
+      transform: translateX(360px);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }

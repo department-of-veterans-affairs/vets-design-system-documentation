@@ -26,5 +26,9 @@
 }
 
 .site-l-wrapper {
-  padding: 0 $units-5;
+  padding: 0 $units-3;
+
+  @include media($nav-width) {
+    padding: 0 $units-5;
+  }
 }

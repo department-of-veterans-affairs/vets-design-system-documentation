@@ -7,6 +7,8 @@
 
     {% include header.html %}
 
+    {% include _mobile-nav.html %}
+
     <div class="site-c-content">
       {% if page.homepage %}
       <main id="site-content" class="site-l-wrapper">
@@ -41,6 +43,7 @@
 
     {% include footer.html %}
     <script type="text/javascript" src="{{ site.baseurl }}/vendor/javascripts/bundle.js" charset="utf-8"></script>
+    <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
   </body>
 
 </html>

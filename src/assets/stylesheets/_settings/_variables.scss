@@ -5,7 +5,13 @@ Additional Breakpoints
 */
 $grid-columns: 12 !default;
 $default-feature: min-width;
-$nav-width: 780px;
+$nav-width: 840px;
+/*
+===========================================
+Z-indexes
+===========================================
+*/
+$flyout-menu: 1000;
 
 
 /*
