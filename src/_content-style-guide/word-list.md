@@ -3,6 +3,7 @@ layout: default
 sub_section: word-list
 title: Word list
 ---
+
 # Word list
 
 For most terms used on VA.gov, we use the standard American English spelling in Merriam Webster Dictionary. The words on this list are exceptions. 
@@ -93,7 +94,7 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - exception: Used to call special attention to something. It should be bolded and never in all caps. **[@Beth/Danielle: could you point out for me example on site? Not sure calling for it to be bolded would always be good...? / jl]**
 - excluding: Use "not counting" or "not including."
 - expedited: Use "faster." **[@Beth, Danielle - is this guideline specific only to "faster"? Couldn't there be a situation where other plain language phrases might work better or just as well -- more quickly, quicker -- or are we strictly calling for "faster" for consistency?]**
-- explosive ordinance: Defined as high-explosive devices; and chemical and nuclear weapons. 
+- explosive ordinance: Defined as high-explosive devices, and chemical and nuclear weapons. **[@Beth, Danielle - is entry telling ppl to define phrase like this in body copy? or it's just defining for us internally?]**
 - exposure: Use "had contact with” or “come into contact with.”
 
 ### F
@@ -101,10 +102,10 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - family member: Use this term instead of “beneficiary” whenever possible. 
 - Family Servicemembers’ Group Life Insurance (FSGLI)
 - federal: Do not cap "federal" for generic usage such as "federal agency."
-- Fibromyalgia: Defined as a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems
-- file a claim for disability compensation (use "file a claim" rather than "apply for benefits")
-- final status: Use “in final status” rather than “in a final status” (no need for the article “a”).
-- financial hardship (don't say this!): Instead say, "Having trouble paying for basic needs, like food and housing"
+- Fibromyalgia: Defined as a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems. **[@Beth, Danielle - is entry calling for term to be defined in body copy as such?]**
+- file a claim for disability compensation: Use "file a claim" rather than "apply for benefits."
+- final status: Use “in final status” rather than “in a final status."
+- financial hardship: Don't use this phrase. Instead say, "Having trouble paying for basic needs, like food and housing." **[@Beth, Danielle - could you provide background on this? This seems like a wordy alternative.]**
 
 ### G
 
@@ -121,11 +122,11 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - hazardous: use "harmful" or "toxic."
 - hazardous exposure: defined as contact with harmful chemicals or other hazardous materials.
 - health care: Two words, never hyphenated as a compound adjective, e.g., “health care system.” Do not capitalize unless it is part of the official name of a VA medical center. In addition, defer to the hospital’s official name, which may have health care as one word versus two words. 
-- health problems: use "illnesses and injuries (also known as conditions)"
-- hospitalization: use "hospital care."
+- health problems: Use "illnesses and injuries (also known as conditions)." **[@Beth, Danielle - pls cf entry on "physical or mental disorder" which calls for defining it as a "health problem...." Not sure I uderstand rationale of avoiding "health problem" phrase in some instances.]**
+- hospitalization: Use "hospital care."
 - home loan: Do not use a hyphen when in the form of an adjective. ("home loan benefits").
 - Homeless or at risk of becoming homeless.
-- How it works (This section is sentence capped and is *not* followed by a colon).
+- How it works: This section is sentence capped and is *not* followed by a colon. **[@Beth, Danielle - not sure meaning? Also, as we move to sentence capitalization in general, we won't need to call out exceptions. Maybe removing okay?]**
 
 ### I
 
@@ -191,7 +192,7 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 - Persian Gulf War era: Lowercase "era."
 
-- physical or mental disorder: defined as a health problem that affects the body or mind.
+- physical or mental disorder: defined as a health problem that affects the body or mind. **[@Beth, Danielle - is this entry saying to define this phrase as "health problem that affects..."? Also, cf entry on "health problem," which says to use "illnesses and injuries (also known as conditions)" - so this would really be... illness (also known as a condition) that affects the body or mind"?? ]**
 
 - post-9/11: We use the slash rather than the hyphen for 9/11 (*not* 9-11). For example, Post-9/11 GI Bill.
 
@@ -313,13 +314,13 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 - VA regional office: "Regional Office" should only be capitalized if a specific name is included in the title.
 
-- vesicant agents: use "vesicant (blistering) agents."
+- vesicant agents: Use "vesicant (blistering) agents."
 
 - Vet Center: Capitalize the C. **[@Beth, Danielle - is this really an official branded name? "Vet Center"?]**
 
 - Veteran: Capitalize even when used as a common noun on VA.gov. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with the Veteran, rather than referring to them in the third person. 
 
-- >  Okay: Learn about the services and benefits that the VA offers to Veterans and their families. 
+- > Okay: Learn about the services and benefits that the VA offers to Veterans and their families. 
   >
   > Better: Learn about VA services and benefits that you and your family may be eligible for. 
 
