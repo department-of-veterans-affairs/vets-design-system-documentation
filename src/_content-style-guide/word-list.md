@@ -16,12 +16,12 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 ### A
 
-- active duty: Hyphenate when it modifies a noun; do not capitalize (active-duty Servicemember) **[@Working Group, Beth, Danielle: VHA calls for "[service member](https://vaww.va.gov/webcom/style.asp)" in its comms; OPIA also uses "[service member](https://www.va.gov/opa/persona/active_duty.asp)"; not sure what VBA and NCA uses. Let's discuss. I'd like to use lowercase. ]**
+- active duty: Hyphenate when it modifies a noun; do not capitalize (active-duty Servicemember) **[@Working Group, Beth, Danielle: VHA calls for "[service member](https://vaww.va.gov/webcom/style.asp)" in its comms; OPIA also uses "[service member](https://www.va.gov/opa/persona/active_duty.asp)"; not sure what VBA and NCA uses. Let's discuss. I'd like to use lowercase. Beth says: VBA's old graphics style guide uses "Servicemember"]**
 - accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas. Example:  "Get help from an accredited representative, a trained professional trusted to help with VA-related claims." 
 - advanced: Capitalize only when used as part of the branded term My HealtheVet Advanced. Otherwise lowercase.
 - Agent Orange: Define in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas. 
-- annual: Use "each year." [@Beth, Danielle - is "annual" really actually difficult for our customers to understand? Annual, annually -- these seem pretty common and easy to understand. (As opposed to terms like bi-annual, bi-weekly, bi-monthly which might be confused between 'twice per' or 'every other.'' ) ]
-- apply: Use "file a claim for disability compensation" instead of "apply for benefits."
+- annual: Use "each year." [@Beth, Danielle - is "annual" really actually difficult for our customers to understand? Annual, annually -- these seem pretty common and easy to understand. (As opposed to terms like bi-annual, bi-weekly, bi-monthly which might be confused between 'twice per' or 'every other.'' ) Beth says: As I mentioned on our call, it could be difficult for someone with less education or with a TBI, so if possible, I'd say use "each year" or "every year" ]
+- apply: On our Disability pages, use "file a claim for disability compensation" instead of "apply for benefits."
 - Armed Forces: Capitalize. **[@Beth, Danielle, me: VHA style actually calls for citing the different branches in a particular order. Adapt?]**
 - asbestos: Define in body copy as "toxic fibers, once used in many buildings and products." It can be defined in another sentence, as a parenthetical, or set off with commas. 
 - attending physician: Define it in the context of life insurance as "the doctor in charge of a Veteran's care." It can be defined in another sentence, as a parenthetical, or set off with commas. **[@Beth, Danielle - what about when we are talking directly TO the Veteran, since we should be using 2nd person more often now...?]**
@@ -31,7 +31,7 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - basic: Capitalize only when used as part of the branded term DS Logon Basic. Otherwise lowercase.
 - became ill: Use "got sick."
 - became worse: Use "got worse."
-- beneficiary: Use this term to mean the person picked to get the money from a life insurance policy when the policyholder dies. In other uses, avoid this term in favor of “family member.”  **[@Beth, Danielle - was this entry meant to convey 'define this as... x'?]**
+- beneficiary: Use this term to mean the person picked to get the money from a life insurance policy when the policyholder dies. In other uses, avoid this term in favor of “family member.”  **[@Beth, Danielle - was this entry meant to convey 'define this as... x'? Beth says: Well... this entry has two purposes. The first is as you stated, to define this term beneficiary as "the person who will receive money from your life insurance policy when you die." The second is: When we mean a dependent who can get benefits under you as the sponsor, we should use, as appropriate to the context, "family member" or "child" or "dependent," not "beneficiary."]**
 - Benefits Delivery at Discharge (BDD) program: “Benefits” is plural.
 - blind or low-vision (not "blind or sight-impaired")
 
@@ -39,8 +39,8 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 - can vs. may: Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
 - caregiver (not caretaker)
-- Certificate of Release or Discharge from Active Duty (DD214) **[@Beth, Danielle - not sure what this entry means...? Also, should discuss as part of larger forms topic -- See VA forms/Form names section.]**
-- certifying official (as in VA certifying official) **[@Beth, Danielle - not sure what this entry means...?]**
+- Certificate of Release or Discharge from Active Duty (DD214) **[@Beth, Danielle - not sure what this entry means...? Also, should discuss as part of larger forms topic -- See VA forms/Form names section. Beth says: These are all ways to refer to the DD214 document. That said, It think this entry is on the old side, and since it was added to the style guide, we've landed on mostly just saying DD214 or "discharge papers" since all Veterans are familiar with those terms. Also, DD214 doesn't need to be defined. It's the most basic of items that all Veterans have. 
+- certifying official (as in VA certifying official) **[@Beth, Danielle - not sure what this entry means...? Beth says: I see that we use this term in reference to education benefits and the person at your school who interacts with VA to verify benefits and fill out forms on your behalf. Not sure we need this entry--I probably added it because it's a term VA uses--rather than, say, "registrar" which isn't true at all schools. Sometimes the certifying official is in the registrar's office, but not always. Here are the pages where I see we use it: https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/study-at-foreign-schools/ and https://www.va.gov/education/opt-out-information-sharing/]**
 - Character of Discharge review process **[@Beth, Danielle - ditto ^]**
 - character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 - chronic: Use "long-lasting" or when needed, "illness that lasts for a long time." 
