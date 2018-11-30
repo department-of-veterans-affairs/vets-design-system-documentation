@@ -6,7 +6,7 @@ title: Utilities
 
 # Utilities
 
-Utilities are helpful, usually single-property classes that can provide more flexibility into a design system. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
+Utilities are helpful, usually single-property classes that can provide more flexibility into a design system at a high specificity. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
 
 ## Using in components
 
@@ -22,6 +22,20 @@ Design system components are built for maximum reusability. However, there are a
 
 Some of the utilities, such as margin and padding, are built to maintain a consistent horizontal and vertical rhythm. Rather than hard-coding pixel values, it is recommended to use either the utility classes or equivalent Sass variables.
 
-## Utilities for designs
+## Utilities for designers
 
 Designers should explore the available utilities in Formation. Because designs will be implemented with the styles in formation, knowledge of the utilities may assist in how designers describe their work.
+
+## Naming
+
+Utilities should be given descriptive class names that clearly reflect their property.
+
+**Bad**
+```
+.vads-u-mb5
+```
+
+**Good**
+```
+.vads-u-margin-bottom--5
+```
