@@ -31,11 +31,11 @@ Designers should explore the available utilities in Formation. Because designs w
 Utilities should be given descriptive class names that clearly reflect their property.
 
 **Bad**
-```
+```css
 .vads-u-mb5
 ```
 
 **Good**
-```
+```css
 .vads-u-margin-bottom--5
 ```

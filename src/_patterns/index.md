@@ -18,5 +18,5 @@ Patterns are design solutions, whereas a component can be considered a UI chunk.
 
 Because they address specific user needs, a pattern is more than the sum of its parts.
 
-Components can be considered concrete, a finite list: buttons, accordions, tables, etc. Patterns might be unique to a site or or an application, and may evolve with changes in technology or after competitive analysis. 
+Components can be considered concrete, a finite list: buttons, accordions, tables, etc. Patterns might be unique to a site or or an application, and may evolve with changes in technology or after competitive analysis.
 
