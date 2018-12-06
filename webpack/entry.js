@@ -26,7 +26,7 @@ class AdditionalInfoDemo extends Component {
  render() {
    return (
     <div>
-      <AdditionalInfo triggerText="Another thing">
+      <AdditionalInfo triggerText="Example additional info">
         <ul>
           <li>info A</li>
           <li>info B</li>
