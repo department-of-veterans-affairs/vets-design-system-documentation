@@ -10,6 +10,4 @@ title: Address Form
 {% include_relative html/address-form.html %}
 </div>
 
-```html
-{% include_relative html/address-form.html %}
-```
+{% include snippet.html content='html/address-form.html' %}

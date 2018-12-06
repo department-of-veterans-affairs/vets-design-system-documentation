@@ -12,6 +12,4 @@ title: Horizontal Rules
 {% include_relative html/horizontal-rule-stars.html %}
 </div>
 
-```html
-{% include_relative html/horizontal-rule-stars.html %}
-```
+{% include snippet.html content='html/horizontal-rule-stars.html' %}

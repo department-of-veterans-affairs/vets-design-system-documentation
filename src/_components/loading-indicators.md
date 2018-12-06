@@ -10,6 +10,4 @@ title: Loading Indicators
 {% include_relative html/loading-indicator.html %}
 </div>
 
-```html
-{% include_relative html/loading-indicator.html %}
-```
+{% include snippet.html content='html/loading-indicator.html' %}

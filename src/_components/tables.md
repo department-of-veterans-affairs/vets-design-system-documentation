@@ -12,9 +12,7 @@ title: Tables
 {% include_relative html/tables.html %}
 </div>
 
-```html
-{% include_relative html/tables.html %}
-```
+{% include snippet.html content='html/tables.html' %}
 
 
 ## Accessibility

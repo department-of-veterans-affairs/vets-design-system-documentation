@@ -10,6 +10,4 @@ title: Address Block
 {% include_relative html/address-block.html %}
 </div>
 
-```html
-{% include_relative html/address-block.html %}
-```
+{% include snippet.html content='html/address-block.html' %}

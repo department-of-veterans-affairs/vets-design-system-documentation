@@ -12,9 +12,7 @@ title: Buttons
 {% include_relative html/buttons.html %}
 </div>
 
-```html
-{% include_relative html/buttons.html %}
-```
+{% include snippet.html content='html/buttons.html' %}
 
 ## Accessibility
 

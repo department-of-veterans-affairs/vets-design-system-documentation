@@ -12,6 +12,4 @@ title: Lists
 {% include_relative html/process-steps.html %}
 </div>
 
-```html
-{% include_relative html/process-steps.html %}
-```
+{% include snippet.html content='html/process-steps.html' %}

@@ -10,6 +10,4 @@ title: Grid
 {% include_relative html/grid.html %}
 </div>
 
-```html
-{% include_relative html/grid.html %}
-```
+{% include snippet.html content='html/grid.html' %}

@@ -10,6 +10,4 @@ title: Name Form
 {% include_relative html/name-form.html %}
 </div>
 
-```html
-{% include_relative html/name-form.html %}
-```
+{% include snippet.html content='html/name-form.html' %}

@@ -10,6 +10,4 @@ title: Global Navigation
 {% include_relative html/global-navigation.html %}
 </div>
 
-```html
-{% include_relative html/global-navigation.html %}
-```
+{% include snippet.html content='html/global-navigation.html' %}

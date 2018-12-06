@@ -10,6 +10,4 @@ title: Breadcrumbs
 {% include_relative html/breadcrumbs.html %}
 </div>
 
-```html
-{% include_relative html/breadcrumbs.html %}
-```
+{% include snippet.html content='html/breadcrumbs.html' %}

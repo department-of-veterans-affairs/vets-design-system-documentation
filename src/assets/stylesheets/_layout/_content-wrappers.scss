@@ -72,15 +72,18 @@
 
 
   // Overrides
+  .highlight {
+    margin: 0;
+    padding-bottom: 0;
+    font-size: 1.3rem;
+  }
+
   .highlighter-rouge {
-    border: 1px solid $color-gray-lighter;
-    background: $color-gray-lightest;
-    padding: $units-2;
-    margin-top: 1.5em;
+    background: #fff;
   }
 
   .highlighter-rouge .highlight {
-    background: $color-gray-lightest;
+    background: #fff;
     border-bottom: none;
     font-weight: $font-normal;
   }

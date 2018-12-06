@@ -10,6 +10,4 @@ title: Pagination
 {% include_relative html/pagination.html %}
 </div>
 
-```html
-{% include_relative html/pagination.html %}
-```
+{% include snippet.html content='html/pagination.html' %}

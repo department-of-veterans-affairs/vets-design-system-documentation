@@ -12,9 +12,7 @@ title: Progress Bars
 {% include_relative html/progress-bar.html %}
 </div>
 
-```html
-{% include_relative html/progress-bar.html %}
-```
+{% include snippet.html content='html/progress-bar.html' %}
 
 ## Segmented Progress Bar
 
@@ -22,6 +20,4 @@ title: Progress Bars
 {% include_relative html/segmented-progress-bar.html %}
 </div>
 
-```html
-{% include_relative html/segmented-progress-bar.html %}
-```
+{% include snippet.html content='html/segmented-progress-bar.html' %}

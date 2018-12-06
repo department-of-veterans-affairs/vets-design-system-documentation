@@ -12,15 +12,11 @@ AdditionalInfo components are interactive components that reveal and hide conten
 {% include_relative html/modal.html %}
 </div>
 
-```html
-{% include  react/Modal.njk %}
-```
+{% include snippet.html content='react/Modal.njk' %}
 
 ## Crisis Line Modal
 <div class="site-c-showcase">
   {% include_relative html/crisis-line.html %}
 </div>
 
-```html
-{% include_relative html/crisis-line.html %}
-```
+{% include snippet.html content='html/crisis-line.html' %}

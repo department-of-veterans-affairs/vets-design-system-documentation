@@ -12,6 +12,4 @@ AdditionalInfo components are interactive components that reveal and hide conten
 {% include_relative html/collapsible-panel.html %}
 </div>
 
-```html
-{% include  react/CollapsiblePanel.njk %}
-```
+{% include snippet.html content='react/CollapsiblePanel.njk' %}

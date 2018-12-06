@@ -12,9 +12,7 @@ title: Alert Boxes
 {% include_relative html/alertbox.html %}
 </div>
 
-```html
-{% include_relative html/alertbox.html %}
-```
+{% include snippet.html content='html/alertbox.html' %}
 
 
 ## Accessibility
@@ -46,6 +44,5 @@ When the user is required to do something in response to an alert, let them know
 
 
 ## React Alert Boxes
-```html
-{% include  react/AlertBox.njk %}
-```
+
+{% include snippet.html content='react/AlertBox.njk' %}

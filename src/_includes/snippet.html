@@ -1,0 +1,12 @@
+{% assign accordion_id = include.content | replace: "/", "" | replace: ".", "" %}
+
+<div class="usa-accordion-bordered">
+<div>
+<button class="usa-accordion-button" aria-controls="{{accordion_id}}"> Code </button>
+<div id="{{accordion_id}}" class="usa-accordion-content" markdown="1">
+```html
+{% if {{include.content}} contains "react/" %}{% include {{include.content}} %}{% else %}{% include_relative {{include.content}} %}{% endif %}
+```
+</div>
+</div>
+</div>

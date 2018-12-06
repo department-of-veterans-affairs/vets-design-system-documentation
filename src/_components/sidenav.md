@@ -12,9 +12,7 @@ title: Sidenav
 {% include_relative html/sidenav.html %}
 </div>
 
-```html
-{% include_relative html/sidenav.html %}
-```
+{% include snippet.html content='html/sidenav.html' %}
 
 ## Accessibility
 * Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
