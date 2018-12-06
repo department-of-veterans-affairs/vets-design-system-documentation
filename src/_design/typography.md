@@ -124,9 +124,7 @@ title: Typography
   {% include_relative html/headings.html %}
 </div>
 
-```html
-{% include_relative html/headings.html %}
-```
+{% include snippet.html content='html/headings.html' %}
 
 ## Paragraphs
 
@@ -134,24 +132,18 @@ title: Typography
   {% include_relative html/paragraphs.html %}
 </div>
 
-```html
-{% include_relative html/paragraphs.html %}
-```
+{% include snippet.html content='html/paragraphs.html' %}
 
 ## Lists
 <div class="site-c-showcase">
   {% include_relative html/lists.html %}
 </div>
 
-```html
-{% include_relative html/lists.html %}
-```
+{% include snippet.html content='html/lists.html' %}
 
 ## Links
 <div class="site-c-showcase">
   {% include_relative html/links.html %}
 </div>
 
-```html
-{% include_relative html/links.html %}
-```
+{% include snippet.html content='html/links.html' %}
