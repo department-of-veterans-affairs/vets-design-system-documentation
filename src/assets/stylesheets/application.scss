@@ -5,11 +5,14 @@ font-matter: yay
 // Get variables from USWDS
 @import '../../../node_modules/uswds/src/stylesheets/lib/addons/_font-stacks.scss';
 @import '../../../node_modules/uswds/src/stylesheets/core/_variables.scss';
+@import '../../../node_modules/formation/src/sass/base/b-variables';
+@import '../../../node_modules/formation/src/sass/base/b-breakpoints';
 
 // Site CSS
 @import '_settings/variables';
 @import '_helpers/media';
 @import '_base/base';
+@import '_layout/grid';
 @import '_layout/site-content';
 @import '_layout/content-wrappers';
 @import '_components/header';
@@ -17,6 +20,7 @@ font-matter: yay
 @import '_components/mobile-nav';
 @import '_components/showcase';
 @import '_components/sidenav';
+@import '_utilities/flexbox';
 
 
 .usa-bitter {

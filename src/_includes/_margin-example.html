@@ -1,0 +1,23 @@
+<div class="site-c-showcase__col
+{% if include.grid_cols == 12 %}
+  vads-l-col--12
+{% elsif include.grid_cols == 6 %}
+  vads-l-col--12 large-screen:vads-l-col--6
+{% else %}
+  vads-l-col--6 large-screen:vads-l-col--3
+{% endif %}
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-c-square-outer
+    {% if include.outer_classes %}
+      {{ include.outer_classes }}
+    {% endif %}">
+    <div class="site-c-square site-c-square--small vads-u-{{ include.class }}"></div>
+    {% if include.show_square2 == 1 %}
+      <div class="site-c-square site-c-square--small opacity-25"></div>
+    {% endif %}
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-c-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-{{ include.class }}</p>
+    <p class="site-c-utility-value vads-u-margin-y--0">{{ include.value }}</p>
+  </div>
+</div>

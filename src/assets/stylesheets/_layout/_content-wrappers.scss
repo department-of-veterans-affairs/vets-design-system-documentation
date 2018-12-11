@@ -109,4 +109,10 @@
     border: 0;
     width: auto;
   }
+
+  > p,
+  > ol,
+  > ul {
+    max-width: 77ch;
+  }
 }

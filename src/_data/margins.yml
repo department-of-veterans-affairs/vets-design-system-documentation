@@ -1,0 +1,634 @@
+all:
+  - class: margin--0
+    value: 0px
+  - class: margin--1px
+    value: 1px
+  - class: margin--0p25
+    value: 2px
+  - class: margin--0p5
+    value: 4px
+  - class: margin--1
+    value: 8px
+  - class: margin--1p5
+    value: 12px
+  - class: margin--2
+    value: 16px
+  - class: margin--2p5
+    value: 20px
+  - class: margin--3
+    value: 24px
+  - class: margin--4
+    value: 32px
+  - class: margin--5
+    value: 40px
+  - class: margin--6
+    value: 48px
+  - class: margin--7
+    value: 56px
+  - class: margin--8
+    value: 64px
+  - class: margin--9
+    value: 72px
+
+y:
+  - class: margin-y--0
+    value: 0px
+  - class: margin-y--1px
+    value: 1px
+  - class: margin-y--0p25
+    value: 2px
+  - class: margin-y--0p5
+    value: 4px
+  - class: margin-y--1
+    value: 8px
+  - class: margin-y--1p5
+    value: 12px
+  - class: margin-y--2
+    value: 16px
+  - class: margin-y--2p5
+    value: 20px
+  - class: margin-y--3
+    value: 24px
+  - class: margin-y--4
+    value: 32px
+  - class: margin-y--5
+    value: 40px
+  - class: margin-y--6
+    value: 48px
+  - class: margin-y--7
+    value: 56px
+  - class: margin-y--8
+    value: 64px
+  - class: margin-y--9
+    value: 72px
+  - class: margin-y--neg9
+    value: -72px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg8
+    value: -64px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg7
+    value: -56px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg6
+    value: -48px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg5
+    value: -40px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg4
+    value: -32px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg3
+    value: -24px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg2p5
+    value: -20px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg2
+    value: -16px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg1p5
+    value: -12px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg1
+    value: -8px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg0p5
+    value: -4px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg0p25
+    value: -2px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-y--neg1px
+    value: -1px
+    outer_classes: vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+
+bottom:
+  - class: margin-bottom--0
+    value: 0px
+  - class: margin-bottom--1px
+    value: 1px
+  - class: margin-bottom--0p25
+    value: 2px
+  - class: margin-bottom--0p5
+    value: 4px
+  - class: margin-bottom--1
+    value: 8px
+  - class: margin-bottom--1p5
+    value: 12px
+  - class: margin-bottom--2
+    value: 16px
+  - class: margin-bottom--2p5
+    value: 20px
+  - class: margin-bottom--3
+    value: 24px
+  - class: margin-bottom--4
+    value: 32px
+  - class: margin-bottom--5
+    value: 40px
+  - class: margin-bottom--6
+    value: 48px
+  - class: margin-bottom--7
+    value: 56px
+  - class: margin-bottom--8
+    value: 64px
+  - class: margin-bottom--9
+    value: 72px
+  - class: margin-bottom--neg9
+    value: -72px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg8
+    value: -64px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg7
+    value: -56px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg6
+    value: -48px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg5
+    value: -40px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg4
+    value: -32px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg3
+    value: -24px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg2p5
+    value: -20px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg2
+    value: -16px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg1p5
+    value: -12px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg1
+    value: -8px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg0p5
+    value: -4px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg0p25
+    value: -2px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg1px
+    value: -1px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+
+top:
+  - class: margin-top--0
+    value: 0px
+  - class: margin-top--1px
+    value: 1px
+  - class: margin-top--0p25
+    value: 2px
+  - class: margin-top--0p5
+    value: 4px
+  - class: margin-top--1
+    value: 8px
+  - class: margin-top--1p5
+    value: 12px
+  - class: margin-top--2
+    value: 16px
+  - class: margin-top--2p5
+    value: 20px
+  - class: margin-top--3
+    value: 24px
+  - class: margin-top--4
+    value: 32px
+  - class: margin-top--5
+    value: 40px
+  - class: margin-top--6
+    value: 48px
+  - class: margin-top--7
+    value: 56px
+  - class: margin-top--8
+    value: 64px
+  - class: margin-top--9
+    value: 72px
+  - class: margin-top--neg9
+    value: -72px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg8
+    value: -64px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg7
+    value: -56px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg6
+    value: -48px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg5
+    value: -40px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg4
+    value: -32px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg3
+    value: -24px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg2p5
+    value: -20px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg2
+    value: -16px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg1p5
+    value: -12px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg1
+    value: -8px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg0p5
+    value: -4px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg0p25
+    value: -2px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+  - class: margin-top--neg1px
+    value: -1px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square
+
+bottom:
+  - class: margin-bottom--0
+    value: 0px
+  - class: margin-bottom--1px
+    value: 1px
+  - class: margin-bottom--0p25
+    value: 2px
+  - class: margin-bottom--0p5
+    value: 4px
+  - class: margin-bottom--1
+    value: 8px
+  - class: margin-bottom--1p5
+    value: 12px
+  - class: margin-bottom--2
+    value: 16px
+  - class: margin-bottom--2p5
+    value: 20px
+  - class: margin-bottom--3
+    value: 24px
+  - class: margin-bottom--4
+    value: 32px
+  - class: margin-bottom--5
+    value: 40px
+  - class: margin-bottom--6
+    value: 48px
+  - class: margin-bottom--7
+    value: 56px
+  - class: margin-bottom--8
+    value: 64px
+  - class: margin-bottom--9
+    value: 72px
+  - class: margin-bottom--neg9
+    value: -72px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg8
+    value: -64px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg7
+    value: -56px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg6
+    value: -48px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg5
+    value: -40px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg4
+    value: -32px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg3
+    value: -24px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg2p5
+    value: -20px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg2
+    value: -16px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg1p5
+    value: -12px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg1
+    value: -8px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg0p5
+    value: -4px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg0p25
+    value: -2px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+  - class: margin-bottom--neg1px
+    value: -1px
+    outer_classes: vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    show_square2: 1
+
+x:
+  - class: margin-x--0
+    value: 0px
+  - class: margin-x--1px
+    value: 1px
+  - class: margin-x--0p25
+    value: 2px
+  - class: margin-x--0p5
+    value: 4px
+  - class: margin-x--1
+    value: 8px
+  - class: margin-x--1p5
+    value: 12px
+  - class: margin-x--2
+    value: 16px
+  - class: margin-x--2p5
+    value: 20px
+  - class: margin-x--3
+    value: 24px
+  - class: margin-x--4
+    value: 32px
+  - class: margin-x--5
+    value: 40px
+  - class: margin-x--6
+    value: 48px
+  - class: margin-x--7
+    value: 56px
+  - class: margin-x--8
+    value: 64px
+  - class: margin-x--9
+    value: 72px
+  - class: margin-x--neg9
+    value: -72px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg8
+    value: -64px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg7
+    value: -56px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg6
+    value: -48px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg5
+    value: -40px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg4
+    value: -32px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg3
+    value: -24px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg2p5
+    value: -20px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg2
+    value: -16px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg1p5
+    value: -12px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg1
+    value: -8px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg0p5
+    value: -4px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg0p25
+    value: -2px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--neg1px
+    value: -1px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-x--auto
+    value: -1px
+    grid_cols: 12
+    outer_classes: width-100
+
+right:
+  - class: margin-right--0
+    value: 0px
+  - class: margin-right--1px
+    value: 1px
+  - class: margin-right--0p25
+    value: 2px
+  - class: margin-right--0p5
+    value: 4px
+  - class: margin-right--1
+    value: 8px
+  - class: margin-right--1p5
+    value: 12px
+  - class: margin-right--2
+    value: 16px
+  - class: margin-right--2p5
+    value: 20px
+  - class: margin-right--3
+    value: 24px
+  - class: margin-right--4
+    value: 32px
+  - class: margin-right--5
+    value: 40px
+  - class: margin-right--6
+    value: 48px
+  - class: margin-right--7
+    value: 56px
+  - class: margin-right--8
+    value: 64px
+  - class: margin-right--9
+    value: 72px
+  - class: margin-right--neg9
+    value: -72px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg8
+    value: -64px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg7
+    value: -56px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg6
+    value: -48px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg5
+    value: -40px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg4
+    value: -32px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg3
+    value: -24px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg2p5
+    value: -20px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg2
+    value: -16px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg1p5
+    value: -12px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg1
+    value: -8px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg0p5
+    value: -4px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg0p25
+    value: -2px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--neg1px
+    value: -1px
+    show_square2: 1
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-right--auto
+    value: -1px
+    grid_cols: 12
+    outer_classes: width-100
+
+left:
+  - class: margin-left--0
+    value: 0px
+  - class: margin-left--1px
+    value: 1px
+  - class: margin-left--0p25
+    value: 2px
+  - class: margin-left--0p5
+    value: 4px
+  - class: margin-left--1
+    value: 8px
+  - class: margin-left--1p5
+    value: 12px
+  - class: margin-left--2
+    value: 16px
+  - class: margin-left--2p5
+    value: 20px
+  - class: margin-left--3
+    value: 24px
+  - class: margin-left--4
+    value: 32px
+  - class: margin-left--5
+    value: 40px
+  - class: margin-left--6
+    value: 48px
+  - class: margin-left--7
+    value: 56px
+  - class: margin-left--8
+    value: 64px
+  - class: margin-left--9
+    value: 72px
+  - class: margin-left--neg9
+    value: -72px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg8
+    value: -64px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg7
+    value: -56px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg6
+    value: -48px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg5
+    value: -40px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg4
+    value: -32px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg3
+    value: -24px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg2p5
+    value: -20px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg2
+    value: -16px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg1p5
+    value: -12px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg1
+    value: -8px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg0p5
+    value: -4px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg0p25
+    value: -2px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--neg1px
+    value: -1px
+    outer_classes: vads-u-margin-left--yikes site-u-height--2square
+  - class: margin-left--auto
+    value: -1px
+    grid_cols: 12
+    outer_classes: width-100
+
+
+

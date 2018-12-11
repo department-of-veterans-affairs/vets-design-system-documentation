@@ -8,3 +8,66 @@
 .site-c-showcase + .highlighter-rouge {
   margin-top: -1px;
 }
+
+.site-c-showcase__col {
+  border-top: 1px solid $color-gray-lighter;
+  padding: $units-3 0;
+}
+
+.site-c-square-outer {
+  background: $color-secondary-light;
+  display: flex;
+}
+
+.site-c-square {
+  background: #fff;
+  border: 1px solid $color-base;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.site-c-square--small {
+  width: 20px;
+  height: 20px;
+}
+
+.site-c-utility-class {
+  font-family: "Courier";
+  font-size: 12px;
+  display: block;
+  width: auto;
+  background: $color-gray-lightest;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.site-c-utility-value {
+  font-family: "Courier";
+  font-size: 12px;
+  display: inline-block;
+  width: auto;
+  background: $color-secondary-lightest;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.site-u-height--2square{
+  height: 20px;
+  width: 20px;
+}
+
+.opacity-25 {
+  opacity: .25;
+}
+
+.vads-u-margin-top--yikes {
+  margin-top: 124px;
+}
+
+.vads-u-margin-left--yikes {
+  margin-left: 124px;
+}
+
+.width-100 {
+  width: 100%;
+}
