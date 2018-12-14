@@ -29,30 +29,9 @@ Change the visibility characteristics of an element
 
 Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
 
-<div class="sg-responsive-preview">
-  <div class="sg-responsive-preview__size-buttons">
-    <button class="sg-responsive-preview__size-button" type="button" data-size="320">
-      XS
-    </button>
-    <button class="sg-responsive-preview__size-button" type="button" data-size="544">
-      SM
-    </button>
-    <button class="sg-responsive-preview__size-button" type="button" data-size="768">
-      MD
-    </button>
-    <button class="sg-responsive-preview__size-button is-current" type="button" data-size="1024">
-      LG
-    </button>
-    <button class="sg-responsive-preview__size-button" type="button" data-size="1280">
-      XL
-    </button>
-  </div>
-  <div class="iframe__preview">
-    <iframe title="Pagination example" class="responsive-iframe" src="html/visibility.html" data-width="1024"  allowfullscreen="true" allowtransparency="true" height="500"></iframe>
-  </div>
-</div>
+{% include iframe-preview.html src="html/visibility.html" title="Visibility" height=400 %}
 
-
+{% include snippet.html content='html/visibility.html' %}
 
 ### Example
 

@@ -1,0 +1,22 @@
+<div class="sg-responsive-preview">
+  <div class="sg-responsive-preview__size-buttons">
+    <button class="sg-responsive-preview__size-button" type="button" data-size="320">
+      xsmall<span class="vads-u-display--none medium-screen:vads-u-display--inline">-screen</span>
+    </button>
+    <button class="sg-responsive-preview__size-button" type="button" data-size="481">
+      small<span class="vads-u-display--none medium-screen:vads-u-display--inline">-screen</span>
+    </button>
+    <button class="sg-responsive-preview__size-button" type="button" data-size="768">
+      medium<span class="vads-u-display--none medium-screen:vads-u-display--inline">-screen</span>
+    </button>
+    <button class="sg-responsive-preview__size-button is-current" type="button" data-size="1008">
+      small-desktop<span class="vads-u-display--none medium-screen:vads-u-display--inline">-screen</span>
+    </button>
+    <button class="sg-responsive-preview__size-button" type="button" data-size="1201">
+      large<span class="vads-u-display--none medium-screen:vads-u-display--inline">-screen</span>
+    </button>
+  </div>
+  <div class="iframe__preview">
+    <iframe title="{{ include.title }}" class="responsive-iframe" src="{{ include.src }}" data-width="1008"  allowfullscreen="true" allowtransparency="true" height="{{ include.height }}"></iframe>
+  </div>
+</div>
