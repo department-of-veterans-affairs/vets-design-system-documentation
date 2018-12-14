@@ -1,0 +1,49 @@
+.iframe__preview {
+  border: 1px solid $color-gray-light;
+  text-align: center;
+  margin-bottom: $units-1 * 4;
+  overflow: hidden;
+}
+
+.responsive-iframe {
+  transform-origin: center left;
+}
+
+.sg-responsive-preview {
+  overflow: hidden;
+}
+
+.sg-responsive-preview .iframe__preview {
+  padding-top: $units-1 * 2;
+  padding-bottom: $units-1 *2;
+  background: repeating-linear-gradient(
+    -55deg,
+    #f2f2f2,
+    #f2f2f2 10px,
+    #f9f9f9 10px,
+    #f9f9f9 20px
+  );
+}
+
+.sg-responsive-preview__size-buttons {
+  display: flex;
+}
+
+.sg-responsive-preview__size-button {
+  border-radius: 0;
+  border: 1px solid white;
+  margin: 0;
+  padding: $units-1 * 2 0;
+  width: 100%;
+
+  &:after {
+    content: attr(data-size) "px";
+    display: block;
+    font-weight: normal;
+    margin-top: $units-1 /2;
+  }
+
+  &.is-current {
+    background-color: $color-blue-darkest;
+  }
+}

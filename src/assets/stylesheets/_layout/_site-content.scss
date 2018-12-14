@@ -8,6 +8,7 @@
   background-color: $color-gray-lightest;
   border-right: 1px solid $color-gray-lighter;
   flex-basis: 25%;
+  max-width: 25%;
   display: none;
 
   @include media($nav-width) {
@@ -17,10 +18,12 @@
 
 .site-c-content__content {
   flex-basis: 100%;
+  max-width: 100%;
   padding: $units-3;
 
   @include media($nav-width) {
     flex-basis: 75%;
+    max-width: 75%;
     padding: $units-8;
   }
 }
