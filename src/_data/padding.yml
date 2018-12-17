@@ -1,0 +1,223 @@
+all:
+  - class: padding--0
+    value: 0px
+  - class: padding--1px
+    value: 1px
+  - class: padding--0p25
+    value: 2px
+  - class: padding--0p5
+    value: 4px
+  - class: padding--1
+    value: 8px
+  - class: padding--1p5
+    value: 12px
+  - class: padding--2
+    value: 16px
+  - class: padding--2p5
+    value: 20px
+  - class: padding--3
+    value: 24px
+  - class: padding--4
+    value: 32px
+  - class: padding--5
+    value: 40px
+  - class: padding--6
+    value: 48px
+  - class: padding--7
+    value: 56px
+  - class: padding--8
+    value: 64px
+  - class: padding--9
+    value: 72px
+
+y:
+  - class: padding-y--0
+    value: 0px
+  - class: padding-y--1px
+    value: 1px
+  - class: padding-y--0p25
+    value: 2px
+  - class: padding-y--0p5
+    value: 4px
+  - class: padding-y--1
+    value: 8px
+  - class: padding-y--1p5
+    value: 12px
+  - class: padding-y--2
+    value: 16px
+  - class: padding-y--2p5
+    value: 20px
+  - class: padding-y--3
+    value: 24px
+  - class: padding-y--4
+    value: 32px
+  - class: padding-y--5
+    value: 40px
+  - class: padding-y--6
+    value: 48px
+  - class: padding-y--7
+    value: 56px
+  - class: padding-y--8
+    value: 64px
+  - class: padding-y--9
+    value: 72px
+
+top:
+  - class: padding-top--0
+    value: 0px
+  - class: padding-top--1px
+    value: 1px
+  - class: padding-top--0p25
+    value: 2px
+  - class: padding-top--0p5
+    value: 4px
+  - class: padding-top--1
+    value: 8px
+  - class: padding-top--1p5
+    value: 12px
+  - class: padding-top--2
+    value: 16px
+  - class: padding-top--2p5
+    value: 20px
+  - class: padding-top--3
+    value: 24px
+  - class: padding-top--4
+    value: 32px
+  - class: padding-top--5
+    value: 40px
+  - class: padding-top--6
+    value: 48px
+  - class: padding-top--7
+    value: 56px
+  - class: padding-top--8
+    value: 64px
+  - class: padding-top--9
+    value: 72px
+
+bottom:
+  - class: padding-bottom--0
+    value: 0px
+  - class: padding-bottom--1px
+    value: 1px
+  - class: padding-bottom--0p25
+    value: 2px
+  - class: padding-bottom--0p5
+    value: 4px
+  - class: padding-bottom--1
+    value: 8px
+  - class: padding-bottom--1p5
+    value: 12px
+  - class: padding-bottom--2
+    value: 16px
+  - class: padding-bottom--2p5
+    value: 20px
+  - class: padding-bottom--3
+    value: 24px
+  - class: padding-bottom--4
+    value: 32px
+  - class: padding-bottom--5
+    value: 40px
+  - class: padding-bottom--6
+    value: 48px
+  - class: padding-bottom--7
+    value: 56px
+  - class: padding-bottom--8
+    value: 64px
+  - class: padding-bottom--9
+    value: 72px
+
+x:
+  - class: padding-x--0
+    value: 0px
+  - class: padding-x--1px
+    value: 1px
+  - class: padding-x--0p25
+    value: 2px
+  - class: padding-x--0p5
+    value: 4px
+  - class: padding-x--1
+    value: 8px
+  - class: padding-x--1p5
+    value: 12px
+  - class: padding-x--2
+    value: 16px
+  - class: padding-x--2p5
+    value: 20px
+  - class: padding-x--3
+    value: 24px
+  - class: padding-x--4
+    value: 32px
+  - class: padding-x--5
+    value: 40px
+  - class: padding-x--6
+    value: 48px
+  - class: padding-x--7
+    value: 56px
+  - class: padding-x--8
+    value: 64px
+  - class: padding-x--9
+    value: 72px
+
+right:
+  - class: padding-right--0
+    value: 0px
+  - class: padding-right--1px
+    value: 1px
+  - class: padding-right--0p25
+    value: 2px
+  - class: padding-right--0p5
+    value: 4px
+  - class: padding-right--1
+    value: 8px
+  - class: padding-right--1p5
+    value: 12px
+  - class: padding-right--2
+    value: 16px
+  - class: padding-right--2p5
+    value: 20px
+  - class: padding-right--3
+    value: 24px
+  - class: padding-right--4
+    value: 32px
+  - class: padding-right--5
+    value: 40px
+  - class: padding-right--6
+    value: 48px
+  - class: padding-right--7
+    value: 56px
+  - class: padding-right--8
+    value: 64px
+  - class: padding-right--9
+    value: 72px
+
+left:
+  - class: padding-left--0
+    value: 0px
+  - class: padding-left--1px
+    value: 1px
+  - class: padding-left--0p25
+    value: 2px
+  - class: padding-left--0p5
+    value: 4px
+  - class: padding-left--1
+    value: 8px
+  - class: padding-left--1p5
+    value: 12px
+  - class: padding-left--2
+    value: 16px
+  - class: padding-left--2p5
+    value: 20px
+  - class: padding-left--3
+    value: 24px
+  - class: padding-left--4
+    value: 32px
+  - class: padding-left--5
+    value: 40px
+  - class: padding-left--6
+    value: 48px
+  - class: padding-left--7
+    value: 56px
+  - class: padding-left--8
+    value: 64px
+  - class: padding-left--9
+    value: 72px

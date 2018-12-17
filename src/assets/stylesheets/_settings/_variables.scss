@@ -18,6 +18,14 @@ $nav-width: 840px;
   max-width: 100%;
 }
 
+$breakpoints: (
+  xsmall-screen:        $xsmall-screen,
+  small-screen:         $small-screen,
+  medium-screen:        $medium-screen,
+  small-desktop-screen: $small-desktop-screen,
+  large-screen:         $large-screen
+);
+
 
 /*
 ===========================================

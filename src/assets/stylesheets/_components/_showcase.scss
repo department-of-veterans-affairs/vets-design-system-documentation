@@ -71,3 +71,20 @@
 .width-100 {
   width: 100%;
 }
+
+.site-c-showcase__padding-example__outer {
+  border: 1px solid $color-base;
+  background: $color-primary-alt-light;
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+}
+
+.site-c-showcase__padding-example__inner {
+  background: white;
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  position: relative !important;
+}

@@ -69,7 +69,7 @@ $_justify-content-values: (
     @each $name in map-keys($_justify-content-values) {
       $value: map-get($_justify-content-values, $name);
       // Example: .vads-u-lg-justify-content--start
-      .vads-u-#{$breakpoint}-justify-content--#{$name} {
+      .#{$breakpoint}\:vads-u-justify-content--#{$name} {
         // Example: justify-content: flex-start
         justify-content: $value !important;
       }
@@ -130,7 +130,7 @@ $_align-items-values: (
     @each $name in map-keys($_align-items-values) {
       $value: map-get($_align-items-values, $name);
       // Example: .vads-u-lg-align-items--start
-      .vads-u-#{$breakpoint}-align-items--#{$name} {
+      .#{$breakpoint}\:vads-u-align-items--#{$name} {
         // Example: align-items: flex-start
         align-items: $value !important;
       }
@@ -154,7 +154,7 @@ $_align-items-values: (
     @each $name in map-keys($_align-items-values) {
       $value: map-get($_align-items-values, $name);
       // Example: .vads-u-lg-align-items--start
-      .vads-u-#{$breakpoint}-align-self--#{$name} {
+      .#{$breakpoint}\:vads-u-align-self--#{$name} {
         // Example: align-items: flex-start
         align-self: $value !important;
       }
@@ -207,7 +207,7 @@ $_flex-wrap-values: (nowrap: nowrap, wrap: wrap, wrap-reverse: wrap-reverse);
     @each $name in map-keys($_flex-wrap-values) {
       $value: map-get($_flex-wrap-values, $name);
       // Example: .vads-u-lg-flex-wrap--start
-      .vads-u-#{$breakpoint}-flex-wrap--#{$name} {
+      .#{$breakpoint}\:vads-u-flex-wrap--#{$name} {
         // Example: flex-wrap: flex-start
         flex-wrap: $value !important;
       }
@@ -250,7 +250,7 @@ $_flex-direction-values: (column: column, row: row, column-reverse: column-rever
     @each $name in map-keys($_flex-direction-values) {
       $value: map-get($_flex-direction-values, $name);
       // Example: .vads-u-lg-flex-wrap--start
-      .vads-u-#{$breakpoint}-flex-direction--#{$name} {
+      .#{$breakpoint}\:vads-u-flex-direction--#{$name} {
         // Example: flex-wrap: flex-start
         flex-direction: $value !important;
 
