@@ -17,7 +17,9 @@ title: Margins
 
 # Margins
 
+<div class="va-introtext" markdown="1">
 Change the spacing around an item. Margin classes include [responsive prefixes](#responsive-prefixes).
+</div>
 
 
 <div class="site-c-showcase">

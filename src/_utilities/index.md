@@ -6,7 +6,9 @@ title: Utilities
 
 # Utilities
 
+<div class="va-introtext">
 Utilities are helpful, usually single-property classes that can provide more flexibility into a design system at a high specificity. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
+</div>.
 
 ## Using in components
 

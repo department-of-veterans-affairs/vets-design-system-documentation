@@ -6,7 +6,9 @@ title: Patterns
 
 # Patterns
 
+<div class="va-introtext">
 Patterns are solutions and researched best practices that solve recurring user interface design problems:
+</div>
 
 * How do you organize web forms?
 * How do you provide navigational context?

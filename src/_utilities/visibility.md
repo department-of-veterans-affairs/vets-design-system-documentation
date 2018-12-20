@@ -13,7 +13,9 @@ title: Visibility
 
 # Visibilty
 
+<div class="va-introtext" markdown="1">
 Change the visibility characteristics of an element
+</div>
 
 ## Available utility classes
 - `vads-u-visibility--hidden` - Hides an element while leaving the space where it would have been

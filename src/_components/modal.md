@@ -6,8 +6,6 @@ title: Modal
 
 # Modal
 
-AdditionalInfo components are interactive components that reveal and hide content from the page.
-
 <div class="site-c-showcase">
 {% include_relative html/modal.html %}
 </div>

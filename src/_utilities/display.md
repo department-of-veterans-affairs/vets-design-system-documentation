@@ -13,7 +13,9 @@ title: Display
 
 # Display
 
+<div class="va-introtext">
 Change the display property of an element.
+</div>
 
 <div class="site-c-showcase">
 {% include_relative html/display.html %}

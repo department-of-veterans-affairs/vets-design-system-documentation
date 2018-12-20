@@ -6,4 +6,6 @@ title: Layout
 
 # Layout
 
+<div class="va-introtext">
 Welcome to the layout section
+</div>

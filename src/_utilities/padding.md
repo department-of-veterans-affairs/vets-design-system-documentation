@@ -16,7 +16,9 @@ title: Padding
 
 # Padding
 
+<div class="va-introtext" markdown="1">
 Change the spacing inside an item. Padding classes include [responsive prefixes](#responsive-prefixes).
+</div>
 
 <div class="site-c-showcase">
 

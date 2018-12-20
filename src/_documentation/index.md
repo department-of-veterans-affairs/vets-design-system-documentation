@@ -6,4 +6,6 @@ title: Documentation
 
 # Documentation
 
-Welcome to the documentation section
+<div class="va-introtext">
+Welcome to the documentation section.
+</div>
