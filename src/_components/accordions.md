@@ -4,10 +4,10 @@ sub_section: accordions
 title: Accordions
 ---
 
-# Additional Info
+# Accordions
 
 <div class="va-introtext" markdown="1">
-AdditionalInfo components are interactive components that reveal and hide content from the page.
+Accordions are a list of headers that can be clicked to hide or reveal additional content.
 </div>
 
 <div class="site-c-showcase">
