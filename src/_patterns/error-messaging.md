@@ -10,6 +10,8 @@ title: Error Messaging
 Error messages let users know when they have made a mistake on a form field.
 </div>
 
+In all cases, only show error validation messages or stylings after a user has interacted with a particular field.
+
 ## Errors on text inputs
 
 For all text inputs, the error message is placed between the label and the input.
