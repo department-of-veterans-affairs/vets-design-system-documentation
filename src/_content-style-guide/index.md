@@ -13,7 +13,7 @@ The purpose of this style guide is to help you create better content, not better
 
 **What you'll find in this style guide**
 
-We've organized the style guide into searchable topics. You can also use the nav links to go directly to the topic you need guidance on. This guide covers common issues on VA.gov. It does not cover basic writing mechanics and grammar. (We assume you know those already.) 
+We've organized the style guide into searchable topics, so you can go directly to the section you need guidance on. This guide covers common issues on VA.gov. It does not cover basic writing mechanics and grammar. (We assume you know those already.) 
 
 In general, we follow plain language and web best practices. But where we vary from standard practices, we call them out in the [word list](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/word-list.html) or as a topic section. 
 
