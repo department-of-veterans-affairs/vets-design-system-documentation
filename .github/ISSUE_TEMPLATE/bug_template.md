@@ -1,7 +1,6 @@
 ---
 name: Bug Template
-about: To file issues found during the Web Brand Consolidation Bug Bash (Oct 2018)
-
+about: For issues with the design system documentation site or Formation
 ---
 
 **Specs:**
@@ -18,4 +17,4 @@ user:
 
 
 **Desired behavior:**
-*Describe in detail what was supposed to happen; reference existing Zenhub issue that contains the solution if possible*
+*Describe in detail what was supposed to happen;
