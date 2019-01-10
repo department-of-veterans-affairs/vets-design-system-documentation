@@ -4,8 +4,16 @@
   margin: 0;
 }
 
+.site-c-sidenav-list__item {
+  background-color: #ffffff;
+  border: 1px solid $color-gray-lighter;
+  margin: 0 0 -1px 0;
+}
+
 .site-c-sidenav-list__link,
 .site-c-sidenav-list__link:visited {
+  display: block;
+  padding: $units-1 $units-2;
   text-decoration: none;
   color: $color-primary;
 }
@@ -15,6 +23,9 @@
 }
 
 .site-c-sidenav-list__link.current {
+  background-color: $color-gray-lightest;
+  border-left: 5px solid $color-primary;
+  padding-left: 11px;
   color: $color-base;
   font-weight: $font-bold;
   pointer-events: none;
