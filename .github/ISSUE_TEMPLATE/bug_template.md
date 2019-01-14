@@ -1,5 +1,5 @@
 ---
-name: "\U0001F535 Bug report"
+name: "\U0001F534 Bug report"
 about: Something in Formation is not working as expected
 ---
 
