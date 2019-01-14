@@ -1,5 +1,5 @@
 ---
-name: "\U0001F58A Documentation request"
+name: "\U0001F4D2 Documentation request"
 about: Suggest an update to documentation
 ---
 
