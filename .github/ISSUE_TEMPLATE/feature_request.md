@@ -1,12 +1,14 @@
 ---
 name: "\U0001F4A1 Feature request"
-about: Suggest an idea for a component or utility
+about: Suggest an idea for a new or existing component/utility
 ---
 
 # Feature Request
+
 - [ ] I’ve searched for any related issues and avoided creating a duplicate issue.
 
 ## Is this feature request relating to an existing component or utility? Please describe.
+
 - Component/utility name:
 
 ## Do you have a suggestion for a new component or utility?

@@ -4,6 +4,7 @@ about: Something in Formation is not working as expected
 ---
 
 # Bug Report
+
 - [ ] I’ve searched for any related issues and avoided creating a duplicate issue.
 
 ## What happened
