@@ -1,13 +1,14 @@
-  layout: default
-  sub_section: word-list
-
-##   title: Word list
+---
+layout: default
+sub_section: word-list
+title: Word list
+---
 
 # Word list
 
-For most terms on VA.gov, we use the standard American English spelling in Merriam-Webster Dictionary. The words on this list are exceptions or need clarification. 
+For most terms on VA.gov, we use the standard American English spelling in Merriam-Webster Dictionary. The words on this list are exceptions or need clarification.
 
-- We might use different capitalization or hyphenation. 
+- We might use different capitalization or hyphenation.
 - We may call for using a more plain language version of a word or to define it in body copy.  
 - We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word.
 
@@ -18,13 +19,13 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 ### A
 
 - active duty: Hyphenate when it modifies a noun; do not capitalize. Example: active-duty service member.
-- accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas. Example:  "Get help from an accredited representative, a trained professional trusted to help with VA-related claims." 
+- accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas. Example:  "Get help from an accredited representative, a trained professional trusted to help with VA-related claims."
 - advanced: Capitalize only when used as part of the branded term My HealtheVet Advanced. Otherwise lowercase.
-- Agent Orange: Define in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas. 
+- Agent Orange: Define in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
 - annual: Use "each year." **[@Beth, Danielle - is "annual" really actually difficult for our customers to understand? Annual, annually -- these seem pretty common and easy to understand. (As opposed to terms like bi-annual, bi-weekly, bi-monthly which might be confused between 'twice per' or 'every other.'' ) ]**
 - apply: Use "file a claim for disability compensation" instead of "apply for benefits."
 - Armed Forces: Capitalize.
-- asbestos: Define in body copy as "toxic fibers, once used in many buildings and products." It can be defined in another sentence, as a parenthetical, or set off with commas. 
+- asbestos: Define in body copy as "toxic fibers, once used in many buildings and products." It can be defined in another sentence, as a parenthetical, or set off with commas.
 - attending physician: Define it in the context of life insurance as "the doctor in charge of a Veteran's care." It can be defined in another sentence, as a parenthetical, or set off with commas. **[@Beth, Danielle - what about when we are talking directly TO the Veteran, since we should be using 2nd person more often now...?]**
 
 ### B
@@ -44,33 +45,33 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 - certifying official (as in VA certifying official) **[@Beth, Danielle - not sure what this entry means...?]**
 - Character of Discharge review process **[@Beth, Danielle - ditto ^]**
 - character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
-- chronic: Use "long-lasting" or when needed, "illness that lasts for a long time." 
-- claim exam: Use instead of C&P exam. The correct way to refer to it is "VA claim exam." 
+- chronic: Use "long-lasting" or when needed, "illness that lasts for a long time."
+- claim exam: Use instead of C&P exam. The correct way to refer to it is "VA claim exam."
 - click: Avoid using, especially "click here." Link the relevant words instead. Example: “Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you.”  
-- click: Avoid "click here" for embedded text links. Link the relevant words instead.  [See also Links](hyperlink-to-Links-topic) 
+- click: Avoid "click here" for embedded text links. Link the relevant words instead.  [See also Links](hyperlink-to-Links-topic)
   - Example: Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you. **[@Jared: can we format these words like link but not have it be dead link?]**
   - Exception: In interface instructional copy, it's okay to use "click [Button Name]." Example: In your account dashboard, click **Profile.** https://content-guide.18f.gov/technical-and-interface-writing/#do-the-hard-work-to-make-it-simple
-  - ​	[**@Beth, Danielle - Yes avoid for "click here," but I think it's okay, and prefereable for clarity, to use "click" in interface copy such as instructing people to click a particular CTA button - ex: "In Google Calendar, click **Create.**" or "Click **Profile** in your account dashboard." **Thoughts? See also Links[@ME:ADDLINKTO LINKS SECTION OF STYLE GUIDE]** 
+  - ​	[**@Beth, Danielle - Yes avoid for "click here," but I think it's okay, and prefereable for clarity, to use "click" in interface copy such as instructing people to click a particular CTA button - ex: "In Google Calendar, click **Create.**" or "Click **Profile** in your account dashboard." **Thoughts? See also Links[@ME:ADDLINKTO LINKS SECTION OF STYLE GUIDE]**
 - compensation: Use "payment" or "payments."
 - competent: Define as "of legal age and sound mind" in another sentence, as a parenthetical, or set off with commas.
-- conditions: On first mention use "illness" or "injury." For all other mentions, "condition" or "conditions" is OK. 
-- contamination: Define as "water that was found to have toxic chemicals in it." Can define in another sentence, as a parenthetical, or set off with commas. Exception: On the Camp Lejeune page, don't define this term. 
+- conditions: On first mention use "illness" or "injury." For all other mentions, "condition" or "conditions" is OK.
+- contamination: Define as "water that was found to have toxic chemicals in it." Can define in another sentence, as a parenthetical, or set off with commas. Exception: On the Camp Lejeune page, don't define this term.
 - continuous: Use "without a break" instead, as in "without a break in service." **[@Beth, Danielle - is this calling for us to NOT ever use the word "continuous"?]**
 - convalescence: Use "rehab care" instead.
-- court-appointed guardian: Define as "a person the court decides is in charge of caring for another person who can't take care of him or herself." Include definition in another sentence, as a parenthetical, or set off with commas. 
+- court-appointed guardian: Define as "a person the court decides is in charge of caring for another person who can't take care of him or herself." Include definition in another sentence, as a parenthetical, or set off with commas.
 - court-martial: Lowercase, as in "general court-martial," "special court-martial," and "summary court-martial."
-- C&P exam: compensation and pension exam. **[@ME c&p is the user seo term; org wants to rebrand as "VA claim exam" - use "also called  C&P exam."]** The correct way to refer to it is "VA claim exam." 
+- C&P exam: compensation and pension exam. **[@ME c&p is the user seo term; org wants to rebrand as "VA claim exam" - use "also called  C&P exam."]** The correct way to refer to it is "VA claim exam."
 
 ### D
 
-- death benefits: Define as "money from a Veteran’s life insurance policy when that Veteran dies."  Include definition in another sentence, as a parenthetical, or set off with commas. 
+- death benefits: Define as "money from a Veteran’s life insurance policy when that Veteran dies."  Include definition in another sentence, as a parenthetical, or set off with commas.
 - deceased: This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
 - demolish: Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
 - dentistry: Use "dental care."
 - Department of Veterans Affairs (no apostrophe) **[@Beth, Danielle, me - VHA & OPA style calls for something particular for referring to VA - do not use DVA, Dept of VA...etc. Include here.]**
 - Dependents’ Educational Assistance Program (also called Survivors’ and Dependents’ Educational Assistance Program): Both terms are regularly shortened to DEA. **[@Beth/Danielle - AP Style acronyms or do we currently call for defining on first instance? / jl]**
-- dependents of Veterans: Use "qualified dependents." 
-- deprivation: Define in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas. 
+- dependents of Veterans: Use "qualified dependents."
+- deprivation: Define in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas.
 - decision notice: Do not refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
 - disability or permanent disability: Define in body copy, in another sentence, a parenthetical, or set off with commas, as "a disability that doesn't go away." (Note: this definition goes on the Disability landing page only. Remove or don't define on other pages.) **[ANCHOR LINK TO "permanent disability" entry in P section. ]**
 - disability rating: Define as "a rating that measures how bad or severe a disability is." In certain instances, we may use "a rating that measures how bad your disability is and helps us decide your level of benefits."
@@ -95,7 +96,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
   - educational program
 - equivalent: Use "as in" instead. Example: Other separation documents, as in VA Form DD214 or other separation documents. **[@Beth, Danielle -- should this be "as in" in the example? seems like could be "such as" and that may be more common?]**
 - era: Uppercase for Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era" lc: Vietnam War era. **[@Beth/Danielle - what is Ic:? Can we use something more plain language? / jl]**
-- evidence: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed. 
+- evidence: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed.
 - exception: Used to call special attention to something. It should be bolded and never in all caps. **[@Beth/Danielle: could you point out for me example on site? Not sure calling for it to be bolded would always be good...? / jl]**
 - excluding: Use "not counting" or "not including."
 - expedited: Use "faster." **[@Beth, Danielle - is this guideline specific only to "faster"? Couldn't there be a situation where other plain language phrases might work better or just as well -- more quickly, quicker -- or are we strictly calling for "faster" for consistency?]**
@@ -104,8 +105,8 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 ### F
 
-- family member: Use this term instead of “beneficiary” whenever possible. 
-- Family Servicemembers’ Group Life Insurance (FSGLI): Branded term. 
+- family member: Use this term instead of “beneficiary” whenever possible.
+- Family Servicemembers’ Group Life Insurance (FSGLI): Branded term.
 - federal: Do not cap "federal" for generic usage such as "federal agency."
 - Fibromyalgia: Defined as a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems. **[@Beth, Danielle - is entry calling for term to be defined in body copy as such?]**
 - file a claim for disability compensation: Use "file a claim" rather than "apply for benefits."
@@ -126,7 +127,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - hazardous: use "harmful" or "toxic."
 - hazardous exposure: defined as contact with harmful chemicals or other hazardous materials.
-- health care: Two words, never hyphenated as a compound adjective, e.g., “health care system.” Do not capitalize unless it is part of the official name of a VA medical center. In addition, defer to the hospital’s official name, which may have health care as one word versus two words. 
+- health care: Two words, never hyphenated as a compound adjective, e.g., “health care system.” Do not capitalize unless it is part of the official name of a VA medical center. In addition, defer to the hospital’s official name, which may have health care as one word versus two words.
 - health problems: Use "illnesses and injuries (also known as conditions)." **[@Beth, Danielle - pls cf entry on "physical or mental disorder" which calls for defining it as a "health problem...." Not sure I uderstand rationale of avoiding "health problem" phrase in some instances.]**
 - hospitalization: Use "hospital care."
 - home loan: Do not use a hyphen when in the form of an adjective. ("home loan benefits").
@@ -158,11 +159,11 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - Loan Technician: Capitalize. **[@Working Group, Editorial -- To discuss. I recommend using standard American English -- lowercase unless it is being used as part of someone's title.]
 
-- log in/log out (verb), login (noun or adj.): Use sign in/sign out or username and password, as needed. 
+- log in/log out (verb), login (noun or adj.): Use sign in/sign out or username and password, as needed.
 
-  ​	**Do:** Sign in with your username and password. 
+  ​	**Do:** Sign in with your username and password.
 
-  ​	**Don't:** Enter your login ID. 
+  ​	**Don't:** Enter your login ID.
 
 - Loss of range of motion: Use "problems moving your body."
 
@@ -175,7 +176,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 - Million Veteran Program (MVP)
 - Montgomery GI Bill Active Duty
 - Montgomery GI Bill Selected Reserve
-- My HealtheVet: In body copy, headlines, and user interface elements such as links, buttons, and navigation, do not italicize the "e" between Health and Vet. The middle "e" is italicized only in the logo. 
+- My HealtheVet: In body copy, headlines, and user interface elements such as links, buttons, and navigation, do not italicize the "e" between Health and Vet. The middle "e" is italicized only in the logo.
 
 ### N
 
@@ -311,12 +312,12 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
   >  The full title is the “Department of Veterans Affairs” (no apostrophe).
   >  It should be used whenever a first reference to the department is made.
   >  The abbreviation “VA” (not DVA) should be put in parentheses.
-  >  Subsequent references can be either to “the department” or “VA.” 
+  >  Subsequent references can be either to “the department” or “VA.”
   >  Sometimes, VA may need to be distinguished from a state’s Department of Veterans Affairs.
   > In that case, the full title can be “U.S. Department of Veterans Affairs.”
   >  Do not use “the” before the abbreviation when it is used as a noun. For example: “VA announced today that....” If VA is used as an adjective, then “the” will be used in front of “VA.” For example: “The VA task force announced today that ....” **[@working group, @beth & danielle - for web, especially in components where space is an issue such as banner alerts, I think we should omit article for phrases such as "VA medical centers" and "VA services/facilities." In these instances, VA is part of a compound noun, rather than as an adjective, no? EX: Some VA facilities and services in TX are affected by Hurricane Florence.]**
 
-- VA.gov: Treat it as a brand name and always capitalize the "VA." Omit https://www . 
+- VA.gov: Treat it as a brand name and always capitalize the "VA." Omit https://www .
 
   ​	**Do:** Preview the new VA.gov.
 
@@ -330,23 +331,23 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - vesicant agents: Use "vesicant (blistering) agents."
 
-- Vet Center: Capitalize "Center." 
+- Vet Center: Capitalize "Center."
 
-- Veteran: On VA.gov, capitalize even when used as a common noun. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with Veterans, rather than referring to them in the third person. 
+- Veteran: On VA.gov, capitalize even when used as a common noun. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with Veterans, rather than referring to them in the third person.
 
-  ​	**Okay:** Learn about services and benefits that we offer to Veterans and their families. 
+  ​	**Okay:** Learn about services and benefits that we offer to Veterans and their families.
 
-  ​	**Better:** Learn about VA services and benefits that you and your family may be eligible for. 
+  ​	**Better:** Learn about VA services and benefits that you and your family may be eligible for.
 
-- Veteran Health Identification Card (VHIC) 
+- Veteran Health Identification Card (VHIC)
 
 - Veterans Benefits Administration (VBA)
 
-- Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the full name of a cemetery. 
+- Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the full name of a cemetery.
 
-  ​	**Examples:** 
+  ​	**Examples:**
 
-  - Family members may be eligible if they're buried in a Veterans cemetery. 
+  - Family members may be eligible if they're buried in a Veterans cemetery.
   - The Hawaii State Veterans Cemetery is located in Kaneohe, HI.
 
 - Veterans Crisis Line: "Veterans" does not take an apostrophe. The phone number is 1-800-273-8255. **[@Beth, Danielle - the ph# was in parens, but did you intend to convey that the # should always appear in parens after the text? or did you just want the correct ph# to be available and listed here in the entry? What happens if the ph# changes without our team's knowledge? Maybe we should include a list of the most essential VA phone numbers that we reference on our site?]**
@@ -384,4 +385,4 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 ### Z
 
-- zip code: Lowercase, two words. 
+- zip code: Lowercase, two words.
