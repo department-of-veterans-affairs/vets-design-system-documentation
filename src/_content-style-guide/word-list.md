@@ -1,28 +1,29 @@
----
-layout: default
-sub_section: word-list
-title: Word list
----
+  layout: default
+  sub_section: word-list
+
+##   title: Word list
 
 # Word list
 
-For most terms used on VA.gov, we use the standard American English spelling in Merriam Webster Dictionary. The words on this list are exceptions. 
+For most terms on VA.gov, we use the standard American English spelling in Merriam-Webster Dictionary. The words on this list are exceptions or need clarification. 
 
 - We might use different capitalization or hyphenation. 
 - We may call for using a more plain language version of a word or to define it in body copy.  
-- We may call for using one preferred term on VA.gov when different VA agencies use variations for the same thing.
+- We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word.
 
- For terms that are not on this list, please refer to [Merriam Webster Dictionary](www.merriam-webster.com).
+For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webster.com).
+
+
 
 ### A
 
-- active duty: Hyphenate when it modifies a noun; do not capitalize (active-duty Servicemember) **[@Working Group, Beth, Danielle: VHA calls for "[service member](https://vaww.va.gov/webcom/style.asp)" in its comms; OPIA also uses "[service member](https://www.va.gov/opa/persona/active_duty.asp)"; not sure what VBA and NCA uses. Let's discuss. I'd like to use lowercase. ]**
+- active duty: Hyphenate when it modifies a noun; do not capitalize. Example: active-duty service member.
 - accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas. Example:  "Get help from an accredited representative, a trained professional trusted to help with VA-related claims." 
 - advanced: Capitalize only when used as part of the branded term My HealtheVet Advanced. Otherwise lowercase.
 - Agent Orange: Define in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas. 
-- annual: Use "each year." [@Beth, Danielle - is "annual" really actually difficult for our customers to understand? Annual, annually -- these seem pretty common and easy to understand. (As opposed to terms like bi-annual, bi-weekly, bi-monthly which might be confused between 'twice per' or 'every other.'' ) ]
+- annual: Use "each year." **[@Beth, Danielle - is "annual" really actually difficult for our customers to understand? Annual, annually -- these seem pretty common and easy to understand. (As opposed to terms like bi-annual, bi-weekly, bi-monthly which might be confused between 'twice per' or 'every other.'' ) ]**
 - apply: Use "file a claim for disability compensation" instead of "apply for benefits."
-- Armed Forces: Capitalize. **[@Beth, Danielle, me: VHA style actually calls for citing the different branches in a particular order. Adapt?]**
+- Armed Forces: Capitalize.
 - asbestos: Define in body copy as "toxic fibers, once used in many buildings and products." It can be defined in another sentence, as a parenthetical, or set off with commas. 
 - attending physician: Define it in the context of life insurance as "the doctor in charge of a Veteran's care." It can be defined in another sentence, as a parenthetical, or set off with commas. **[@Beth, Danielle - what about when we are talking directly TO the Veteran, since we should be using 2nd person more often now...?]**
 
@@ -45,7 +46,11 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 - chronic: Use "long-lasting" or when needed, "illness that lasts for a long time." 
 - claim exam: Use instead of C&P exam. The correct way to refer to it is "VA claim exam." 
-- click: Avoid using, especially "click here." Link the relevant words instead. Example: “Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you.”  **See also Links[@ME:ADDLINKTO LINKS SECTION OF STYLE GUIDE]**
+- click: Avoid using, especially "click here." Link the relevant words instead. Example: “Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you.”  
+- click: Avoid "click here" for embedded text links. Link the relevant words instead.  [See also Links](hyperlink-to-Links-topic) 
+  - Example: Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you. **[@Jared: can we format these words like link but not have it be dead link?]**
+  - Exception: In interface instructional copy, it's okay to use "click [Button Name]." Example: In your account dashboard, click **Profile.** https://content-guide.18f.gov/technical-and-interface-writing/#do-the-hard-work-to-make-it-simple
+  - ​	[**@Beth, Danielle - Yes avoid for "click here," but I think it's okay, and prefereable for clarity, to use "click" in interface copy such as instructing people to click a particular CTA button - ex: "In Google Calendar, click **Create.**" or "Click **Profile** in your account dashboard." **Thoughts? See also Links[@ME:ADDLINKTO LINKS SECTION OF STYLE GUIDE]** 
 - compensation: Use "payment" or "payments."
 - competent: Define as "of legal age and sound mind" in another sentence, as a parenthetical, or set off with commas.
 - conditions: On first mention use "illness" or "injury." For all other mentions, "condition" or "conditions" is OK. 
@@ -100,7 +105,7 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 ### F
 
 - family member: Use this term instead of “beneficiary” whenever possible. 
-- Family Servicemembers’ Group Life Insurance (FSGLI)
+- Family Servicemembers’ Group Life Insurance (FSGLI): Branded term. 
 - federal: Do not cap "federal" for generic usage such as "federal agency."
 - Fibromyalgia: Defined as a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems. **[@Beth, Danielle - is entry calling for term to be defined in body copy as such?]**
 - file a claim for disability compensation: Use "file a claim" rather than "apply for benefits."
@@ -146,10 +151,19 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 ### L
 
 - lewisite: defined as a natural compound that contains the poisin arsenic. **[@Beth, Danielle - ditto above re defining in body copy?]**
+
 - life insurance: Do not hyphenate in the form of a compound adjective: “life insurance coverage.”
+
 - Loan Guaranty agent: Capped per SME. **[@Working Group & Editorial - Do we need parity for this term; do different agencies capitalize this term differently? @Beth, Danielle - can you provide more info on SME & rationale?]**
+
 - Loan Technician: Capitalize. **[@Working Group, Editorial -- To discuss. I recommend using standard American English -- lowercase unless it is being used as part of someone's title.]
-- log in / login: Two words as a verb. For all other parts of speach, it should be one word. **[@Beth, Danielle, Workng Group, Editorial - how do/should we use sign in/sign on/signon/ log in/ logon/ login? I have seen numerous variations and anticipate increasing inconsistencies if we don't codify this.]**
+
+- log in/log out (verb), login (noun or adj.): Use sign in/sign out or username and password, as needed. 
+
+  ​	**Do:** Sign in with your username and password. 
+
+  ​	**Don't:** Enter your login ID. 
+
 - Loss of range of motion: Use "problems moving your body."
 
 ### M
@@ -161,7 +175,7 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - Million Veteran Program (MVP)
 - Montgomery GI Bill Active Duty
 - Montgomery GI Bill Selected Reserve
-- My Health*e*Vet: Italicize the "e." **[@Beth, Danielle, Working Group - I actually see that in body text, we do NOT italicize the 'e.' It appears italics only in the logo. For example on the [MHV site](www.myhealthevet.va.gov/mhv-portal-web/about-mhv) itself, body copy does NOT italicize the e. Another [MHV example](https://www.myhealth.va.gov/mhv-portal-web/web/myhealthevet/user-registration) - scroll down for body copy. Let's clarify/modify, as italics is pretty against common web best practice, especially for text links and so on.]**
+- My HealtheVet: In body copy, headlines, and user interface elements such as links, buttons, and navigation, do not italicize the "e" between Health and Vet. The middle "e" is italicized only in the logo. 
 
 ### N
 
@@ -248,19 +262,21 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 - service-connection: Hyphenate this term. For example: "You may be eligible for service-connection."
 
-- Service-Disabled Veterans Insurance (S-DVI): Life insurance for Veterans who have become disabled as a result of serving in the military. **[@Beth, Danielle - is this entry telling ppl to define in body copy?]**
+- Service-Disabled Veterans Insurance (S-DVI): Branded term. Life insurance for Veterans who have become disabled as a result of serving in the military. **[@Beth, Danielle - is this entry telling ppl to define in body copy?]**
 
-- service member: Lowercase **[@Working Group & editorial: VHA calls for "[service member](https://vaww.va.gov/webcom/style.asp)" in its comms; OPIA also uses "[service member](https://www.va.gov/opa/persona/active_duty.asp)"; not sure what VBA and NCA uses. Let's discuss. Prefer lowercase, two words - this is more aligned with our modernization and plain language vision. MW does not have "servicemember" or "service member" as an entry; it has "servicemen" and "servicewomen," but "service" and "member" separately. [DoD military dictionary](www.militaryfactory.com/dictionary/military-dictionary.asp) also does NOT have an entry for "servicemember"; it refers to "service enlistees," (lowercase, two words) or "members of" [X specific branch] or "[X] member."  ] **
+- service member: Two words, lowercase. Exceptions for branded product and program names:
 
-- > Servicemember: One word and cap the S. 
+  - Servicemembers’ Group Life Insurance (SGLI)
+  - Servicemembers’ Group Life Insurance Disability Extension (SGLI-DE)
+  - Servicemembers’ Group Life Insurance Traumatic Injury Protection (TSGLI): Branded term.  **[@Beth, Danielle - not sure what this entry is advising. Are we saying spell it out and then use the acronym in parens? See entry under TSGLI - which provides spelled out, but doesn't say how it should be referred to in copy.]**
 
-- > Servicemembers’ Group Life Insurance (SGLI) **[@Working group & editorial: these can be exceptions due to their being part of branded product/program names, but otherwise use standard "service member." See also notes below re what we are advising by entry - how do we want copy to refer to thing.]**
+- Sign in, sign out: Do not use login, log in, sign on.  
 
-- > Servicemembers’ Group Life Insurance Disability Extension (SGLI-DE) **[@Beth, Danielle - see below note]**
+  ​	**Do:** Sign in with your username and password. / Sign in to make an appointment.
 
-- > Servicemembers’ Group Life Insurance Traumatic Injury Protection (TSGLI) **[@Beth, Danielle - not sure what this entry is advising. Are we saying spell it out and then use the acronym in parens? See entry under TSGLI - which provides spelled out, but doesn't say how it should be referred to in copy.]**
+  ​	**Don't:** Enter your login ID. / Sign on to make an appointment.
 
-- Social Security number: Use this capitalization per Merriam-Webster (do not cap "number").
+- Social Security number: Do not capitalize "number."
 
 - special claim: A disability claim to request compensation for special needs such as temporary payments when recovering from surgery and unable to move or work. **[@Beth, Danielle - see note on original claim, new claim, secondary claim, etc.]**
 
@@ -279,11 +295,11 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 - terminal illness: A sickness that can't be cured and that will likely result in the person’s death within a short period of time. **[@Beth, Danielle - is this calling for defining in body copy? Could you provide actual example on VA.gov?]**
 - Track Your Claim (use this phrasing for the blue button). We should reach for consistency across the site--top nav "Manage" dropdown, blue button, text links, etc. **[@Beth, Danielle - not sure what entry means]**
 - trauma: an injury or deeply disturbing experience. **[@Beth, Danielle - ditto ^ - are you calling for term to be defined in body copy or to not use the word "trauma" and instead use "an injury or deeply disturbing..."?]**
-- TSGLI: Servicemembers' Group Life Insurance Traumatic Injury Protection **[@Beth, Danielle, Working Group - I'm confused - where is the T in TSGLI?]**
+- TSGLI: Servicemembers' Group Life Insurance Traumatic Injury Protection **[@Beth, Danielle, Working Group - I'm confused - where is the T in TSGLI? Also, this seems the same as entry under "S" -- are we saying always use the acronym first? Why do we list this twice? ]**
 
 ### U
 
-- U.S.: This takes periods.
+- U.S.: Use periods.
 
 ### V
 
@@ -295,34 +311,32 @@ For most terms used on VA.gov, we use the standard American English spelling in 
   >  The full title is the “Department of Veterans Affairs” (no apostrophe).
   >  It should be used whenever a first reference to the department is made.
   >  The abbreviation “VA” (not DVA) should be put in parentheses.
-  >  Subsequent references can be either to “the department” or “VA.”
+  >  Subsequent references can be either to “the department” or “VA.” 
   >  Sometimes, VA may need to be distinguished from a state’s Department of Veterans Affairs.
   > In that case, the full title can be “U.S. Department of Veterans Affairs.”
-  >  Do not use “the” before the abbreviation when it is used as a noun. For example: “VA
-  > announced today that....” If VA is used as an adjective, then “the” will be used in front of
-  > “VA.” For example: “The VA task force announced today that ....”
+  >  Do not use “the” before the abbreviation when it is used as a noun. For example: “VA announced today that....” If VA is used as an adjective, then “the” will be used in front of “VA.” For example: “The VA task force announced today that ....” **[@working group, @beth & danielle - for web, especially in components where space is an issue such as banner alerts, I think we should omit article for phrases such as "VA medical centers" and "VA services/facilities." In these instances, VA is part of a compound noun, rather than as an adjective, no? EX: Some VA facilities and services in TX are affected by Hurricane Florence.]**
 
-- VA.gov: Treat it as a brand name; omit www. and always capitalize the VA and lowercase .gov. 
+- VA.gov: Treat it as a brand name and always capitalize the "VA." Omit https://www . 
 
-- > Do: Preview the new VA.gov.
-  >
-  > Don't: Va.gov has all the information you need to apply for your Veterans benefits.
+  ​	**Do:** Preview the new VA.gov.
+
+  ​	**Don't:** Va.gov has benefits information for Veterans.
 
 - VA health care facility
 
-- VA medical center: "Medical Center" should only be capitalized if a specific medical center name is included in the title. Don't shorten to "VA center."
+- VA medical center: Don't shorten to VA center. "Medical Center" should be capitalized only if a specific medical center name is included in the title (example: Washington VA Medical Center).
 
 - VA regional office: "Regional Office" should only be capitalized if a specific name is included in the title.
 
 - vesicant agents: Use "vesicant (blistering) agents."
 
-- Vet Center: Capitalize the C. **[@Beth, Danielle - is this really an official branded name? "Vet Center"?]**
+- Vet Center: Capitalize "Center." 
 
-- Veteran: Capitalize even when used as a common noun on VA.gov. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with the Veteran, rather than referring to them in the third person. 
+- Veteran: On VA.gov, capitalize even when used as a common noun. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with Veterans, rather than referring to them in the third person. 
 
-- > Okay: Learn about the services and benefits that the VA offers to Veterans and their families. 
-  >
-  > Better: Learn about VA services and benefits that you and your family may be eligible for. 
+  ​	**Okay:** Learn about services and benefits that we offer to Veterans and their families. 
+
+  ​	**Better:** Learn about VA services and benefits that you and your family may be eligible for. 
 
 - Veteran Health Identification Card (VHIC) 
 
@@ -330,13 +344,14 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 - Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the full name of a cemetery. 
 
-- > Example: Family members may be eligible if they're buried in a Veterans cemetery. 
-  >
-  > Exception: The Hawaii State Veterans Cemetery is located in Kaneohe, HI.
+  ​	**Examples:** 
+
+  - Family members may be eligible if they're buried in a Veterans cemetery. 
+  - The Hawaii State Veterans Cemetery is located in Kaneohe, HI.
 
 - Veterans Crisis Line: "Veterans" does not take an apostrophe. The phone number is 1-800-273-8255. **[@Beth, Danielle - the ph# was in parens, but did you intend to convey that the # should always appear in parens after the text? or did you just want the correct ph# to be available and listed here in the entry? What happens if the ph# changes without our team's knowledge? Maybe we should include a list of the most essential VA phone numbers that we reference on our site?]**
 
-- Veterans Employment Center™ (VEC) **[@Beth, Daniell, Working Group: do we have guidelines on the use of trademarks? e.g., use the symbol on first use only or on every instance or in headlines only or never in headlines/only in body copy...?]**
+- Veterans Employment Center™ (VEC) **[@Beth, Daniell, Working Group: do we have guidelines on the use of trademarks? e.g., use the symbol on first use only or on every instance or in headlines only or never in headlines/only in body copy...? Is there a place to link to?]**
 
 - Veterans Health Administration (VHA)
 
@@ -352,7 +367,7 @@ For most terms used on VA.gov, we use the standard American English spelling in 
 
 - Veterans’ Mortgage Life Insurance (VMLI): Takes a plural possessive apostrophe—Veterans'.
 
-- Vets.gov: Always capitalize the "V" — it's a brand name **[@Beth, Danielle - remove from list, since it's deprecated now?]**
+- Vets.gov: Always capitalize the "V" — it's a brand name. Vets.gov was retired November 7, 2018. **[@Beth, Danielle - remove from list, since it's deprecated now?]**
 
 - Vietnam Era: Uppercase "era," but "Vietnam War era" (lowercase "era"). Mostly we use the first term: Vietnam Era.
 
