@@ -14,6 +14,21 @@
 .site-c-header__masthead {
   display: flex;
   justify-content: space-between;
+
+  @include media($nav-width) {
+    align-items: center;
+  }
+}
+
+.usa-button.site-button-inverse {
+  background-color: #ffffff;
+  color: $color-primary-darker;
+
+  &:active,
+  &:hover {
+    background-color: rgba(255,255,255,.8);
+    color: $color-primary-darker;
+  }
 }
 
 .site-c-header__open-mobile-nav-button {
@@ -48,6 +63,13 @@
 .site-c-header__logo-link:hover,
 .site-c-header__logo-link:focus {
   text-decoration: none;
+}
+
+.site-c-header__utility-links {
+  display: none;
+  @include media($nav-width) {
+    display: block;
+  }
 }
 
 .site-c-header__nav {
