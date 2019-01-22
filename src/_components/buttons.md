@@ -20,13 +20,17 @@ The default buttons are the most commonly-used button on the site.
 
 ## Primary buttons
 
-Use the **primary** button for the primary action on any given page.
+Use the **primary** button for the primary action on a page.
 
 <div class="site-c-showcase">
 {% include_relative html/buttons-primary.html %}
 </div>
 
 {% include snippet.html content='html/buttons-primary.html' %}
+
+### Research insight
+
+Our researchers learned that users were missing calls to action on some pages because the blue buttons did not stand out, so a green **primary** button was created, tested and determined to be successful.
 
 ## Secondary button
 
