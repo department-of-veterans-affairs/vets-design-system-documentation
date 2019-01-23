@@ -10,6 +10,15 @@ gulp.task('copy-fontawesome-css', function (done) {
   done();
 });
 
+gulp.task('copy-uswds-css', function (done) {
+  console.log('copying font awesome CSS');
+  var stream = gulp.src('./node_modules/uswds/dist/css/uswds.min.css')
+    .pipe(gulp.dest('src/vendor/css'));
+
+  return stream;
+  done();
+});
+
 gulp.task('copy-formation-css', function (done) {
   console.log('copying font awesome CSS');
   var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/formation.min.css')
@@ -21,5 +30,6 @@ gulp.task('copy-formation-css', function (done) {
 
 gulp.task(task, gulp.series(
   'copy-fontawesome-css',
+  'copy-uswds-css',
   'copy-formation-css'
 ));

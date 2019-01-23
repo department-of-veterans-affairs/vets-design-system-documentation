@@ -8,9 +8,9 @@ console.log("hi from the webpack/entry.js!");
 
 import React, { Component } from 'react';
 import {render} from 'react-dom';
-import AdditionalInfo from '@department-of-veterans-affairs/formation/AdditionalInfo'
-import Modal from '@department-of-veterans-affairs/formation/Modal'
-import CollapsiblePanel from '@department-of-veterans-affairs/formation/CollapsiblePanel'
+import AdditionalInfo from '@department-of-veterans-affairs/formation-react/AdditionalInfo'
+import Modal from '@department-of-veterans-affairs/formation-react/Modal'
+import CollapsiblePanel from '@department-of-veterans-affairs/formation-react/CollapsiblePanel'
 
 import MyReactComponent from './components/myReactComponent';
 

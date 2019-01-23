@@ -3,10 +3,21 @@ font-matter: yay
 ---
 
 // Get variables from USWDS
-@import '../../../node_modules/uswds/src/stylesheets/lib/addons/_font-stacks.scss';
+@import '../../../node_modules/uswds/src/stylesheets/lib/bourbon';
+@import '../../../node_modules/uswds/src/stylesheets/lib/neat';
 @import '../../../node_modules/uswds/src/stylesheets/core/_variables.scss';
+@import '../../../node_modules/uswds/src/stylesheets/core/_grid.scss';
+@import '../../../node_modules/uswds/src/stylesheets/lib/addons/_font-stacks.scss';
+
+
+// Formation Site files
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-variables';
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-breakpoints';
+@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-breakpoints';
+@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-mixins';
+@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-crisis-line';
+@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-footer';
+@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/color-palette';
+@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/modules/_m-table';
 
 // Site CSS
 @import '_settings/variables';
@@ -46,4 +57,11 @@ font-matter: yay
     top: 0;
     transition: all 0.2s ease-in-out;
   }
+}
+
+.fa, .fas {
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+
 }
