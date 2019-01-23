@@ -14,5 +14,3 @@ AdditionalInfo components are interactive components that reveal and hide conten
 {% include_relative html/additional-info.html %}
 </div>
 
-
-{% include snippet.html content='react/AdditionalInfo.njk' %}

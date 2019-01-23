@@ -42,7 +42,3 @@ When the user is required to do something in response to an alert, let them know
 * Don’t include notifications that aren’t related to the user’s current goal.
 
 
-
-## React Alert Boxes
-
-{% include snippet.html content='react/AlertBox.njk' %}

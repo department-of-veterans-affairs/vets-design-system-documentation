@@ -22,5 +22,15 @@ gulp.task('copy-react-js', function (done) {
   done();
 });
 
+gulp.task('copy-formation-js', function (done) {
+  console.log('copying uswds javascript');
+  var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/formation.js')
+    .pipe(rename({dirname: ''}))
+    .pipe(gulp.dest('src/vendor/javascripts'));
+
+  return stream;
+  done();
+});
+
 
 gulp.task('javascript', gulp.series('copy-uswds-js', 'copy-react-js'));

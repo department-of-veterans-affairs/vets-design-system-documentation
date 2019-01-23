@@ -48,6 +48,3 @@ The `CollapsiblePanel` component renders the accordion. The interaction is sligh
 <div class="site-c-showcase">
 {% include_relative html/collapsible-panel.html %}
 </div>
-
-{% include snippet.html content='react/CollapsiblePanel.njk' %}
-

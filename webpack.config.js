@@ -17,35 +17,7 @@ module.exports = {
           presets: ["react", "es2015"]
         }
       },
-      {
-        test: /\.(sa|sc|c)ss$/,
-
-        use: [
-            {
-              loader: MiniCssExtractPlugin.loader,
-              options: {
-                publicPath: "",
-              }
-            },
-            'css-loader',
-            'sass-loader',
-        ]
-      },
-
-      {
-        test: /\.(woff|woff2|eot|ttf)$/,
-        loader: 'url-loader?limit=10&name=../fonts/[name].[ext]',
-      },
-      {
-        test: /\.(png|svg)$/,
-        loader: 'url-loader?limit=10&name=../img/[name].[ext]',
-      },
     ]
   },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/app.css',
-      chunkFilename: '../css/[id].css',
-    })
-  ]
+
 };
