@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && gulp build",
+    "build": "webpack && gulp build && gulp paths",
     "start": "npm run build && bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
