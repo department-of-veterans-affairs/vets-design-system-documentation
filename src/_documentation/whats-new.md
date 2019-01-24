@@ -23,6 +23,7 @@ The `formation-react` module contains all the React component implementations we
 Both are starting on v3, but will not necessarily be kept in sync going forward.
 
 To upgrade, update any paths in your React code to point to `formation-react` instead of `formation`.
+
 ---
 
 ### January 21, 2019
