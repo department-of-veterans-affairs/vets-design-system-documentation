@@ -23,7 +23,6 @@ font-matter: yay
 @import '_settings/variables';
 @import '_helpers/media';
 @import '_base/base';
-@import '_layout/grid';
 @import '_layout/site-content';
 @import '_layout/content-wrappers';
 @import '_components/header';
@@ -64,4 +63,13 @@ font-matter: yay
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 
+}
+
+
+
+
+.site-grid-example {
+  padding:12px;
+  background: #e1f3f8;
+  border: 1px solid #046b99;
 }
