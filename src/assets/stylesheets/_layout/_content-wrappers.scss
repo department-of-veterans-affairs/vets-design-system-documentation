@@ -129,14 +129,25 @@
   > p > code,
   > ol > li > code,
   > ul > li > code {
-    background-color: $color-gray-lightest !important;
-    padding-bottom: 2px !important;
-    padding-top: 2px !important;
+    background-color: rgba(0,0,0,.05) !important;
+    font-family: $font-monospace;
+    font-size: 1.3rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
     &:before,
     &:after {
-      letter-spacing: -.03em;
-      content: "\00a0";
+      letter-spacing: -0.2em;
+      content: '\00a0';
     }
+  }
+
+  > .usa-accordion-bordered .usa-accordion-button {
+    background-color: $color-gray-light;
+  }
+
+  > .usa-accordion-bordered .usa-accordion-button:hover,
+  > .usa-accordion-bordered .usa-accordion-button:focus {
+    background-color: $color-gray-lighter;
   }
 }
