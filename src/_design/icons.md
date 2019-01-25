@@ -49,8 +49,8 @@ title: Icons
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-close"></i></th>
-            <td>fa-close</td>
+            <th scope="row"><i class="fas fa-times"></i></th>
+            <td>fa-times</td>
             <td><code class='code-fa'>&amp;#xf00d;</code></td>
             <td>Close indicator (modals, alerts)</td>
         </tr>
@@ -206,8 +206,8 @@ title: Icons
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-gear"></i></th>
-            <td>fa-gear</td>
+            <th scope="row"><i class="fas fa-cog"></i></th>
+            <td>fa-cog</td>
             <td><code class='code-fa'>&amp;#xf013;</code></td>
             <td>Settings</td>
         </tr>
@@ -227,8 +227,8 @@ title: Icons
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-calendar-o"></i></th>
-            <td>fa-calendar-o</td>
+            <th scope="row"><i class="fas fa-calendar"></i></th>
+            <td>fa-calendar</td>
             <td><code class='code-fa'>&amp;#xf133;</code></td>
             <td>Duration (days/months/years)</td>
         </tr>
