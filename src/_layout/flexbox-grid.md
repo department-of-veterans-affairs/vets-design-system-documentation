@@ -4,13 +4,6 @@ sub_section: flexbox-grid
 title: Flexbox Grid
 ---
 
-<div class="usa-alert usa-alert usa-alert-error vads-u-margin-top--0 vads-u-margin-bottom--3">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Not yet accepted</h3>
-    <p>This is a preview of a draft feature. It is not currently available in Formation. This page is only for reference.</p>
-  </div>
-</div>
-
 # Flexbox grid
 
 <div class="va-introtext" markdown="1">
