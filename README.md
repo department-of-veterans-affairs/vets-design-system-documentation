@@ -45,4 +45,4 @@ $ ./deploy_site.sh
 
 ## Testing new utilities
 
-Get formation. Change package.json ``@department-of-veterans-affairs/formation": "file:../design-system/packages/formation`
+Get formation. Change package.json `"@department-of-veterans-affairs/formation": "file:../design-system/packages/formation"`
