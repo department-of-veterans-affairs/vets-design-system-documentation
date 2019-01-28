@@ -345,25 +345,25 @@ title: Icons
 
   <tbody>
     <tr>
-        <th scope="row"><i class="fas fa-twitter"></i></th>
+        <th scope="row"><i class="fab fa-twitter"></i></th>
         <td>fa-twitter</td>
         <td><code class='code-fa'>&amp;#f099;</code></td>
         <td>Hub page follow us section</td>
     </tr>
     <tr>
-        <th scope="row"><i class="fas fa-facebook"></i></th>
+        <th scope="row"><i class="fab fa-facebook"></i></th>
         <td>fa-facebook</td>
         <td><code class='code-fa'>&amp;#f090;</code></td>
         <td>Hub page follow us section</td>
     </tr>
     <tr>
-        <th scope="row"><i class="fas fa-youtube"></i></th>
+        <th scope="row"><i class="fab fa-youtube"></i></th>
         <td>fa-youtube</td>
         <td><code class='code-fa'>&amp;#f167;</code></td>
         <td>Hub page follow us section</td>
     </tr>
     <tr>
-        <th scope="row"><i class="fas fa-youtube"></i></th>
+        <th scope="row"><i class="fab fa-youtube"></i></th>
         <td>fa-youtube</td>
         <td><code class='code-fa'>&amp;#f16d;</code></td>
         <td>Hub page follow us section</td>
