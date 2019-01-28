@@ -6,9 +6,7 @@ title: Icons
 
 # Icons
 
-<h3>
-
-    Navigation</h3>
+<h3>Navigation</h3>
 <table class="icon-table usa-table-borderless">
     <thead>
         <tr>
@@ -240,4 +238,135 @@ title: Icons
             <td>Message, notfication, letter</td>
         </tr>
 
+        <tr>
+            <th scope="row"><i class="fas fa-user-circle"></i></th>
+            <td>fa-user-circle</td>
+            <td><code class='code-fa'>&amp;#f2bd;</code></td>
+            <td>Homepage sign in button icon</td>
+        </tr>
+
     </tbody>
+</table>
+
+
+<h3>Hub Icons</h3>
+
+
+<table class="icon-table usa-table-borderless">
+  <thead>
+      <tr>
+          <th scope="col">Icon</th>
+          <th scope="col">CSS Class</th>
+          <th scope="col">Unicode</th>
+          <th scope="col">Usage</th>
+      </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+        <th scope="row"><i class="fas fa-medkit"></i></th>
+        <td>fa-medkit</td>
+        <td><code class='code-fa'>&amp;#f0fa;</code></td>
+        <td>Healtcare hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-file-alt"></i></th>
+        <td>fa-file-alt</td>
+        <td><code class='code-fa'>&amp;#f15c;</code></td>
+        <td>Disability hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-graduation-cap"></i></th>
+        <td>fa-graduation-cap</td>
+        <td><code class='code-fa'>&amp;#f19d;</code></td>
+        <td>Education hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-id-card"></i></th>
+        <td>fa-id-card</td>
+        <td><code class='code-fa'>&amp;#f2c2;</code></td>
+        <td>Records hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-briefcase"></i></th>
+        <td>fa-briefcase</td>
+        <td><code class='code-fa'>&amp;#f0b1;</code></td>
+        <td>Careers hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-handshake"></i></th>
+        <td>fa-handshake</td>
+        <td><code class='code-fa'>&amp;#f2b5</code></td>
+        <td>Pension hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-home"></i></th>
+        <td>fa-home</td>
+        <td><code class='code-fa'>&amp;#f015;</code></td>
+        <td>Housing hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-shield-alt"></i></th>
+        <td>fa-shield-alt</td>
+        <td><code class='code-fa'>&amp;#f3ed;</code></td>
+        <td>Life Insurance hub icon</td>
+    </tr>
+
+    <tr>
+        <th scope="row"><i class="fas fa-star"></i></th>
+        <td>fa-star</td>
+        <td><code class='code-fa'>&amp;#f005;</code></td>
+        <td>Burials hub icon</td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+<h3>Social Media Icons</h3>
+
+<table class="icon-table usa-table-borderless">
+  <thead>
+      <tr>
+          <th scope="col">Icon</th>
+          <th scope="col">CSS Class</th>
+          <th scope="col">Unicode</th>
+          <th scope="col">Usage</th>
+      </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        <th scope="row"><i class="fab fa-twitter"></i></th>
+        <td>fa-twitter</td>
+        <td><code class='code-fa'>&amp;#f099;</code></td>
+        <td>Hub page follow us section</td>
+    </tr>
+    <tr>
+        <th scope="row"><i class="fab fa-facebook"></i></th>
+        <td>fa-facebook</td>
+        <td><code class='code-fa'>&amp;#f090;</code></td>
+        <td>Hub page follow us section</td>
+    </tr>
+    <tr>
+        <th scope="row"><i class="fab fa-youtube"></i></th>
+        <td>fa-youtube</td>
+        <td><code class='code-fa'>&amp;#f167;</code></td>
+        <td>Hub page follow us section</td>
+    </tr>
+    <tr>
+        <th scope="row"><i class="fab fa-youtube"></i></th>
+        <td>fa-youtube</td>
+        <td><code class='code-fa'>&amp;#f16d;</code></td>
+        <td>Hub page follow us section</td>
+    </tr>
+  </tbody>
+</table>
