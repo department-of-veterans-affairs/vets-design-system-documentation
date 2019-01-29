@@ -85,10 +85,10 @@ This property helps distribute space left over.
 
 **Available values**
 
-- `flex-start` (default): flex items are packed toward the start of the flex container
-- `flex-end`: flex items are packed toward to end of the flex container
-- `center`: flex items are packed in the center of the flex container
-- `space-between`: flex items are evenly distributed in the line with the first flex item start of the flex container and the last item at the end of the flex container
+- `flex-start` (default): flex items are organized from the start of the flex container
+- `flex-end`: flex items are organized at the end of the flex container
+- `center`: flex items are organized in the center of the flex container
+- `space-between`: the first flex item start of the flex container and the last item at the end of the flex container with all other flex items evenly distributed from the center.
 - `space-around`: flex items are evenly distributed across the row with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
 - `space-evenly`: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
 
@@ -98,6 +98,24 @@ This property helps distribute space left over.
 
 {% include snippet.html content='html/justify-content.html' %}
 
+## Align content
+
+This utility handles a flex container's lines within when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis.
+
+**Available values**
+
+- `flex-start`: flex items are organized from start of the flex container
+- `flex-end`: flex items are organized at end of the flex container
+- `center`: flex items are organized in the center of the flex container
+- `space-between`: first line of flex items is at the start of the flex container, the last line is at the end of the flex container, with all other lines distributed in between from the center.
+- `space-around`: flex items are distributed evenly along a horizontal axis
+- `stretch` (default): flex items stretch to take up remaining space.
+
+<div class="site-c-showcase">
+{% include_relative html/align-content.html%}
+</div>
+
+{% include snippet.html content='html/align-content.html' %}
 
 ## Order
 
