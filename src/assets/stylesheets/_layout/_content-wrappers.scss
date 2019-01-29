@@ -149,4 +149,22 @@
   > .usa-accordion-bordered .usa-accordion-button:focus {
     background-color: $color-gray-lighter;
   }
+
+  > .usa-table-borderless {
+    border: 1px solid $color-base;
+
+    th {
+      padding-left: $units-2_5;
+    }
+
+    th,
+    td {
+      border-color: $color-gray-lighter;
+    }
+
+    tbody tr:last-child td,
+    tbody tr:last-child th {
+      border-color: $color-base;
+    }
+  }
 }

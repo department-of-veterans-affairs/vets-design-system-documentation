@@ -7,7 +7,7 @@ title: Icons
 # Icons
 
 <h3>Navigation</h3>
-<table class="icon-table usa-table-borderless">
+<table class="usa-table-borderless">
     <thead>
         <tr>
             <th scope="col">Icon</th>
@@ -19,28 +19,28 @@ title: Icons
     <tbody>
 
         <tr>
-            <th scope="row"><i class="fa fa-chevron-down"></i></th>
+            <th scope="row"><i class="fas fa-chevron-down"></i></th>
             <td>fa-chevron-down</td>
             <td><code class='code-fa'>&amp;#xf078;</code></td>
             <td>Dropdown expand indicator</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-chevron-up"></i></th>
+            <th scope="row"><i class="fas fa-chevron-up"></i></th>
             <td>fa-chevron-up</td>
             <td><code class='code-fa'>&amp;#xf077;</code></td>
             <td>Dropdown collapse indicator</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-plus"></i></th>
+            <th scope="row"><i class="fas fa-plus"></i></th>
             <td>fa-plus</td>
             <td><code class='code-fa'>&amp;#xf067;</code></td>
             <td>Accordion expand indicator</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-minus"></i></th>
+            <th scope="row"><i class="fas fa-minus"></i></th>
             <td>fa-minus</td>
             <td><code class='code-fa'>&amp;#xf068;</code></td>
             <td>Accordion collapse indicator</td>
@@ -54,28 +54,28 @@ title: Icons
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-angle-double-left"></i></th>
+            <th scope="row"><i class="fas fa-angle-double-left"></i></th>
             <td>fa-angle-double-left</td>
             <td><code class='code-fa'>&amp;#xf100;</code></td>
             <td>Previous</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-angle-double-right"></i></th>
+            <th scope="row"><i class="fas fa-angle-double-right"></i></th>
             <td>fa-angle-double-right</td>
             <td><code class='code-fa'>&amp;#xf101;</code></td>
             <td>Next</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-search"></i></th>
+            <th scope="row"><i class="fas fa-search"></i></th>
             <td>fa-search</td>
             <td><code class='code-fa'>&amp;#xf002;</code></td>
             <td>Search</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-sort"></i></th>
+            <th scope="row"><i class="fas fa-sort"></i></th>
             <td>fa-sort</td>
             <td><code class='code-fa'>&amp;#xf0dc;</code></td>
             <td>Form field dropdown</td>
@@ -85,7 +85,7 @@ title: Icons
 </table>
 
 <h3>Interaction</h3>
-<table class="icon-table usa-table-borderless">
+<table class="usa-table-borderless">
     <thead>
         <tr>
             <th scope="col">Icon</th>
@@ -97,14 +97,14 @@ title: Icons
     <tbody>
 
         <tr>
-            <th scope="row"><i class="fa fa-plus"></i></th>
+            <th scope="row"><i class="fas fa-plus"></i></th>
             <td>fa-plus</td>
             <td><code class='code-fa'>&amp;#xf067;</code></td>
             <td>Add item</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-trash"></i></th>
+            <th scope="row"><i class="fas fa-trash"></i></th>
             <td>fa-trash</td>
             <td><code class='code-fa'>&amp;#xf1f8;</code></td>
             <td>Remove item</td>
@@ -114,7 +114,7 @@ title: Icons
 </table>
 
 <h3>Feedback</h3>
-<table class="icon-table usa-table-borderless">
+<table class="usa-table-borderless">
     <thead>
         <tr>
             <th scope="col">Icon</th>
@@ -126,28 +126,28 @@ title: Icons
     <tbody>
 
         <tr>
-            <th scope="row"><i class="fa fa-info-circle"></i></th>
+            <th scope="row"><i class="fas fa-info-circle"></i></th>
             <td>fa-info-circle</td>
             <td><code class='code-fa'>&amp;#xf05a;</code></td>
             <td>Informational</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-check-circle"></i></th>
+            <th scope="row"><i class="fas fa-check-circle"></i></th>
             <td>fa-check-circle</td>
             <td><code class='code-fa'>&amp;#xf058;</code></td>
             <td>Confirmation or completion</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-exclamation-triangle"></i></th>
+            <th scope="row"><i class="fas fa-exclamation-triangle"></i></th>
             <td>fa-exclamation-triangle</td>
             <td><code class='code-fa'>&amp;#xf071;</code></td>
             <td>Warning</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-exclamation-circle"></i></th>
+            <th scope="row"><i class="fas fa-exclamation-circle"></i></th>
             <td>fa-exclamation-circle</td>
             <td><code class='code-fa'>&amp;#xf06a;</code></td>
             <td>Error</td>
@@ -157,7 +157,7 @@ title: Icons
 </table>
 
 <h3>Identification</h3>
-<table class="icon-table usa-table-borderless">
+<table class="usa-table-borderless">
     <thead>
         <tr>
             <th scope="col">Icon</th>
@@ -169,35 +169,35 @@ title: Icons
     <tbody>
 
         <tr>
-            <th scope="row"><i class="fa fa-phone"></i></th>
+            <th scope="row"><i class="fas fa-phone"></i></th>
             <td>fa-phone</td>
             <td><code class='code-fa'>&amp;#xf095;</code></td>
             <td>Telephone number</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-map-marker"></i></th>
+            <th scope="row"><i class="fas fa-map-marker"></i></th>
             <td>fa-map-marker</td>
             <td><code class='code-fa'>&amp;#xf041;</code></td>
             <td>Location or address</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-road"></i></th>
+            <th scope="row"><i class="fas fa-road"></i></th>
             <td>fa-road</td>
             <td><code class='code-fa'>&amp;#xf018;</code></td>
             <td>Driving directions</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-globe"></i></th>
+            <th scope="row"><i class="fas fa-globe"></i></th>
             <td>fa-globe</td>
             <td><code class='code-fa'>&amp;#xf0ac;</code></td>
             <td>Website address</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-question-circle"></i></th>
+            <th scope="row"><i class="fas fa-question-circle"></i></th>
             <td>fa-question-circle</td>
             <td><code class='code-fa'>&amp;#xf059;</code></td>
             <td>Help or contact information</td>
@@ -211,14 +211,14 @@ title: Icons
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-folder"></i></th>
+            <th scope="row"><i class="fas fa-folder"></i></th>
             <td>fa-folder</td>
             <td><code class='code-fa'>&amp;#xf07b;</code></td>
             <td>Content folders (messaging)</td>
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-paperclip"></i></th>
+            <th scope="row"><i class="fas fa-paperclip"></i></th>
             <td>fa-paperclip</td>
             <td><code class='code-fa'>&amp;#xf0c6;</code></td>
             <td>Attachment (messaging)</td>
@@ -232,7 +232,7 @@ title: Icons
         </tr>
 
         <tr>
-            <th scope="row"><i class="fa fa-envelope"></i></th>
+            <th scope="row"><i class="fas fa-envelope"></i></th>
             <td>fa-envelope</td>
             <td><code class='code-fa'>&amp;#xf0e0;</code></td>
             <td>Message, notfication, letter</td>
@@ -252,7 +252,7 @@ title: Icons
 <h3>Hub Icons</h3>
 
 
-<table class="icon-table usa-table-borderless">
+<table class="usa-table-borderless">
   <thead>
       <tr>
           <th scope="col">Icon</th>
@@ -333,7 +333,7 @@ title: Icons
 
 <h3>Social Media Icons</h3>
 
-<table class="icon-table usa-table-borderless">
+<table class="usa-table-borderless">
   <thead>
       <tr>
           <th scope="col">Icon</th>
@@ -348,25 +348,25 @@ title: Icons
         <th scope="row"><i class="fab fa-twitter"></i></th>
         <td>fa-twitter</td>
         <td><code class='code-fa'>&amp;#f099;</code></td>
-        <td>Hub page follow us section</td>
+        <td>Twitter links</td>
     </tr>
     <tr>
         <th scope="row"><i class="fab fa-facebook"></i></th>
         <td>fa-facebook</td>
         <td><code class='code-fa'>&amp;#f090;</code></td>
-        <td>Hub page follow us section</td>
+        <td>Facebook links</td>
     </tr>
     <tr>
         <th scope="row"><i class="fab fa-youtube"></i></th>
         <td>fa-youtube</td>
         <td><code class='code-fa'>&amp;#f167;</code></td>
-        <td>Hub page follow us section</td>
+        <td>Youtube links</td>
     </tr>
     <tr>
         <th scope="row"><i class="fab fa-instagram"></i></th>
         <td>fa-instagram</td>
         <td><code class='code-fa'>&amp;#f16d;</code></td>
-        <td>Hub page follow us section</td>
+        <td>Instagram links</td>
     </tr>
   </tbody>
 </table>
