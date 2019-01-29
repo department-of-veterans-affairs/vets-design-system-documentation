@@ -1,3 +1,9 @@
+---
+layout: default
+sub_section: content principles
+title: Content principles
+---
+
 # Content principles
 
 By consistently practicing language in an intentional way, we can provide content that supports Veterans' needs and improve their experience on our site.  
