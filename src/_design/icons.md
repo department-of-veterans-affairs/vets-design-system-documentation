@@ -363,8 +363,8 @@ title: Icons
         <td>Hub page follow us section</td>
     </tr>
     <tr>
-        <th scope="row"><i class="fab fa-youtube"></i></th>
-        <td>fa-youtube</td>
+        <th scope="row"><i class="fab fa-instagram"></i></th>
+        <td>fa-instagram</td>
         <td><code class='code-fa'>&amp;#f16d;</code></td>
         <td>Hub page follow us section</td>
     </tr>
