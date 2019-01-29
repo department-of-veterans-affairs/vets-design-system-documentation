@@ -1,6 +1,6 @@
 ---
 layout: default
-sub_section: content principles
+sub_section: content-principles
 title: Content principles
 ---
 
