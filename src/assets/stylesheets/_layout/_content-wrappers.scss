@@ -154,12 +154,12 @@
     border: 1px solid $color-base;
 
     th {
-      padding-left: $units-2_5;
+      padding-left: .8em;
     }
 
     th,
     td {
-      border-color: $color-gray-lighter;
+      border-color: rgba(0,0,0,.2);
     }
 
     tbody tr:last-child td,
