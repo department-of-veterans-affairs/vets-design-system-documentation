@@ -12,6 +12,22 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### January 25, 2019
+
+**3.2.0**
+
+Includes Font Awesome regular and Fontawesome brand fonts.
+
+---
+
+### January 25, 2019
+
+**3.1.0**
+
+This release adds a new flexbox grid system.
+
+---
+
 ### January 23, 2019
 
 **3.0.0**
