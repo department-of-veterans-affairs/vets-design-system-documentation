@@ -4,13 +4,6 @@ sub_section: flexbox
 title: Flexbox
 ---
 
-<div class="usa-alert usa-alert-error vads-u-margin-top--0 vads-u-margin-bottom--3">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Proposal</h3>
-    <p>This utility has not been accepted into the codebase. This page is for reference only. Do not use this utility.</p>
-  </div>
-</div>
-
 # Flexbox
 
 <div class="va-introtext" markdown="1">

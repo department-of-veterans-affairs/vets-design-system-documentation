@@ -76,7 +76,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 
 ### When to use
 
-* Use buttons for the most important actions you want users to take on your site, such as "download," "sign up," or "log out."
+* Use buttons for the most important actions you want users to take on your site, such as "download," "sign up," or "sign out."
 
 ### When to consider something else
 
