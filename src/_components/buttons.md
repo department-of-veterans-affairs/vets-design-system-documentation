@@ -73,6 +73,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “download,” “view” or “sign up”).
 * Make the first word of the button’s label a verb. For example, instead of “Complaint Filing” label the button “File a complaint.”
 * At times, consider adding an icon to signal specific actions (“download”, “open in a new window”, etc).
+* Read more about writing for buttons in the [content style guide](../content-style-guide/buttons.html)
 
 ### When to use
 
