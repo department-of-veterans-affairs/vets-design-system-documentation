@@ -12,6 +12,22 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### January 30, 2019
+
+**3.4.0**
+
+Adds a suite Flexbox utilities.
+
+---
+
+### January 29, 2019
+
+**3.3.0**
+
+Moves the Add Another button to the bottom of array lists in support of updates to the U.S. Forms System.
+
+---
+
 ### January 25, 2019
 
 **3.2.0**
