@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: seo
-title: Search engine optimization (SEO)
+title: Writing for SEO
 ---
 
-# Search engine optimization (SEO)
+# Writing for SEO
