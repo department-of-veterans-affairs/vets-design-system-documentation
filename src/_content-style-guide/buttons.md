@@ -1,10 +1,10 @@
 ---
 layout: default
-sub_section: buttons
-title: Buttons
+sub_section: button-labels
+title: Button labels
 ---
 
-# Buttons
+# Button labels
 
 Buttons signal important calls-to-action (CTA) and help people quickly see what's the most important action they need to take on a page. Treat buttons like important or primary content, and prioritize their placement on pages as you would essential information. 
 
