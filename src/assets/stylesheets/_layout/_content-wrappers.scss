@@ -135,6 +135,14 @@
     font-size: 1.7rem;
   }
 
+  > ul {
+    list-style: disc;
+
+    ul {
+      list-style: circle;
+    }
+  }
+
   > p > code,
   > ol > li > code,
   > ul > li > code {
