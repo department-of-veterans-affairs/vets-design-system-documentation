@@ -135,12 +135,12 @@
     font-size: 1.7rem;
   }
 
-  > ul {
+  > ul:not(.usa-unstyled-list) {
     list-style: disc;
+  }
 
-    ul {
+  > ul ul {
       list-style: circle;
-    }
   }
 
   > p > code,
