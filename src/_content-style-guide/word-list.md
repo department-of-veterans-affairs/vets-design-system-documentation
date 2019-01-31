@@ -157,7 +157,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - Loan Guaranty agent: Capped per SME. **[@Working Group & Editorial - Do we need parity for this term; do different agencies capitalize this term differently? @Beth, Danielle - can you provide more info on SME & rationale?]**
 
-- Loan Technician: Capitalize. **[@Working Group, Editorial -- To discuss. I recommend using standard American English -- lowercase unless it is being used as part of someone's title.]
+- Loan Technician: Capitalize. **[To discuss. I recommend using standard American English -- lowercase unless it is being used as part of someone's official title.]
 
 - log in/log out (verb), login (noun or adj.): Use sign in/sign out or username and password, as needed.
 
@@ -170,7 +170,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 ### M
 
 - manufacturing: Use "making."
-- maximum: Use "top limit." **[@Beth, Danielle - background on this? "Maximum" seems fairly common and easy to understand. If we really call for "top limit" instead of "maximum," would like to have a good reason for the Working Group.]**
+- maximum: Use "top limit." **[@Beth, Danielle - background on this? "Maximum" seems fairly common and easy to understand. If we really call for "top limit" instead of "maximum," would like to have a good reason.]**
 - may: See entry for "can."
 - Military Occupation Code (MOC)
 - Million Veteran Program (MVP)
@@ -227,7 +227,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - presumptive disability: Use "health problem" and reference when needed for clarity. Example: " a health problem (called presumptive disability) that we've concluded is likely caused by... "
 
-- Prisoner of War: Capitalized to match the 10-10EZ. **[@Working Group, Editorial - The [DOD military dictionary does NOT capitalize this term](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). Therefore, I recommend using the same standard American English lowercase, _except_ when it is part of a proper noun such as the name of a form or law, like the "Geneva Convention Relative to the Treatment of Prisoners of War."]**
+- Prisoner of War: Capitalized to match the 10-10EZ. **[ [DOD military dictionary does NOT capitalize this term](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). Therefore, I recommend using the same standard American English lowercase, _except_ when it is part of a proper noun such as the name of a form or law, like the "Geneva Convention Relative to the Treatment of Prisoners of War."]**
 
 - Project 112/SHAD
 
