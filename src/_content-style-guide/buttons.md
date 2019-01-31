@@ -11,7 +11,7 @@ Buttons signal important calls-to-action (CTA) and help people quickly see what'
 For secondary or less important actions on a page, use links instead of buttons. Likewise, for simple navigation to lead people between page, use links instead of buttons. 
 
 [See section on links](linktolinkssection)
-###Looking for button design and interaction standards?### [Go to button components](../components/buttons.html)  
+__Looking for button design and interaction standards?__ [Go to button components](../components/buttons.html)  
 
 - Use sentence case for button labels.
 
