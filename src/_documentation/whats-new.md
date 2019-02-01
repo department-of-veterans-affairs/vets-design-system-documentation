@@ -14,6 +14,10 @@ The latest news and updates on Formation and the content style guide
 
 ### February 1, 2019
 
+**3.6.0**
+
+Adds a background-color utility
+
 **3.5.0**
 
 Adds a color utility
@@ -41,10 +45,6 @@ Moves the Add Another button to the bottom of array lists in support of updates 
 **3.2.0**
 
 Includes Font Awesome regular and Fontawesome brand fonts.
-
----
-
-### January 25, 2019
 
 **3.1.0**
 
