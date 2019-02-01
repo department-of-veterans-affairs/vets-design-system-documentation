@@ -12,6 +12,14 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### February 1, 2019
+
+**3.5.0**
+
+Adds a color utility
+
+---
+
 ### January 30, 2019
 
 **3.4.0**
