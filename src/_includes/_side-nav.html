@@ -5,8 +5,16 @@
   {% for p in include.section %}
     {% if p.sub_section %}
       {% unless p.sub_section contains "index" %}
-        <li class="site-c-sidenav-list__item">
-          <a class="site-c-sidenav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+        <li class="site-c-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
+          <a class="site-c-sidenav-list__link " href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          {% if p.anchors %}
+            <ul class="site-c-sidenav-list__sub">
+              {% for item in p.anchors %}
+                <li class="site-c-sidenav-list__sub-item">
+                  <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" }}">{{ item.anchor }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         </li>
       {% endunless %}
     {% endif %}

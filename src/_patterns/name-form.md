@@ -1,8 +1,4 @@
----
-layout: default
-sub_section: name-form
-title: Name Form
----
+
 
 # Name Form
 

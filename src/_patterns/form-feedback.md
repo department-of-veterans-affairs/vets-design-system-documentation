@@ -1,6 +1,20 @@
+---
+layout: default
+sub_section: form-feedback
+title: Form feedback
+anchors:
+  - anchor: Error messages
+---
 
+# Form Feedback
 
-# Error messaging
+<div class="va-introtext" markdown="1">
+Error messages let users know when they have made a mistake on a form field.
+</div>
+
+---
+
+## Error messages
 
 <div class="va-introtext" markdown="1">
 Error messages let users know when they have made a mistake on a form field.
@@ -8,7 +22,7 @@ Error messages let users know when they have made a mistake on a form field.
 
 In all cases, only show error validation messages or stylings after a user has interacted with a particular field.
 
-## Errors on text inputs
+### Errors on text inputs
 
 For all text inputs, the error message is placed between the label and the input.
 
@@ -18,7 +32,7 @@ For all text inputs, the error message is placed between the label and the input
 
 {% include snippet.html content='html/error-text-inputs.html' %}
 
-### Guidance
+#### Guidance
 
 In general, when there is an error on a form, a few things must happen.
 
@@ -35,7 +49,7 @@ The HTML for a typical error is:
 </span>
 ```
 
-## Error on select boxes
+### Error on select boxes
 
 Select boxes a pattern similar to text inputs. The guidance is similar as well.
 
@@ -45,7 +59,7 @@ Select boxes a pattern similar to text inputs. The guidance is similar as well.
 
 {% include snippet.html content='html/error-select-box.html' %}
 
-### Guidance
+#### Guidance
 
 Error messages are generally the same. The error message is slightly different in that it does not include the screen reader-only "Error" text.
 
@@ -53,7 +67,7 @@ Error messages are generally the same. The error message is slightly different i
 <span class="usa-input-error-message" id="select-159-error-message" role="alert">This is the error message</span>
 ```
 
-## Errors on radio buttons
+### Errors on radio buttons
 
 <div class="site-c-showcase">
 {% include_relative html/error-radio-buttons.html %}
@@ -61,17 +75,17 @@ Error messages are generally the same. The error message is slightly different i
 
 {% include snippet.html content='html/error-radio-buttons.html' %}
 
-### Guidance
+#### Guidance
 
 * Radio buttons typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the radio buttons.
 * The error message is placed just below the `<legend>`
 
 
-## Errors on checkboxes
+### Errors on checkboxes
 
 Unlike other form elements, error messages for checkboxes appear below
 
-### Error message above checkbox
+#### Error message above checkbox
 
 <div class="site-c-showcase">
 {% include_relative html/error-checkbox.html %}
@@ -79,7 +93,7 @@ Unlike other form elements, error messages for checkboxes appear below
 
 {% include snippet.html content='html/error-checkbox.html' %}
 
-### Error message with a checkbox group
+#### Error message with a checkbox group
 
 <div class="site-c-showcase">
 {% include_relative html/error-checkbox-group.html %}
@@ -87,12 +101,12 @@ Unlike other form elements, error messages for checkboxes appear below
 
 {% include snippet.html content='html/error-checkbox-group.html' %}
 
-#### Guidance
+##### Guidance
 
 * Checkbox groups typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the checkboxes.
 * The error message is placed just below the `<legend>`
 
-## Error message on file input
+### Error message on file input
 
 <div class="site-c-showcase">
 {% include_relative html/error-file-input.html %}
@@ -100,6 +114,6 @@ Unlike other form elements, error messages for checkboxes appear below
 
 {% include snippet.html content='html/error-file-input.html' %}
 
-### Guidance
+#### Guidance
 
 The guidance for file inputs is the same as the text inputs.

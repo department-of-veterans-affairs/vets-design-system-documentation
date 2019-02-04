@@ -22,11 +22,51 @@
   background-color: transparent;
 }
 
-.site-c-sidenav-list__link.current {
-  background-color: $color-gray-lightest;
-  border-left: 5px solid $color-primary;
-  padding-left: 11px;
-  color: $color-base;
+.site-c-sidenav-list__item.current {
+  background-color: #f9f9f9;
   font-weight: $font-bold;
-  pointer-events: none;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: $color-primary;
+    position: absolute;
+    width: 5px;
+    height: calc(100% + 2px);
+    left: -1px;
+    top: -1px;
+  }
+
+  a {
+    color: $color-base;
+  }
+}
+
+.site-c-sidenav-list__sub {
+  display: none;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.site-c-sidenav-list__item.current .site-c-sidenav-list__sub {
+  display: block;
+}
+
+.site-c-sidenav-list__sub-item {
+  border-top: 1px solid $color-gray-lighter;
+  padding: 0;
+  margin: 0;
+}
+
+.site-c-sidenav-list__sub__link {
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  padding: $units-1 $units-2;
+}
+
+.site-c-sidenav-list__sub__link:hover {
+  background-color: transparent;
 }
