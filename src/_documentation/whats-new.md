@@ -12,6 +12,18 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### February 5, 2019
+
+**3.7.0**
+
+Adds a font-size utility
+
+**Site Updates**
+
+Updated the documentation for background colors and added hex keys.
+
+---
+
 ### February 1, 2019
 
 **3.6.0**
