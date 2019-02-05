@@ -10,11 +10,44 @@ title: Background Color
 Change the background color of an element
 </div>
 
-**Note:** Not all of these colors are placed in accessible color combinations.
-
 <div class="site-c-showcase">
-{% include_relative html/background-color.html %}
+<h4>Base colors</h4>
+<div class="vads-l-row vads-u-flex-direction--column">
+  {% for item in site.data.colors.primary %}
+    {% include _background-color-example.html
+      name=item.name
+      hex=item.hex
+    %}
+  {% endfor %}
 </div>
 
-{% include snippet.html content='html/background-color.html' %}
+<h4>Grayscale</h4>
+<div class="vads-l-row vads-u-flex-direction--column">
+  {% for item in site.data.colors.grayscale %}
+    {% include _background-color-example.html
+      name=item.name
+      hex=item.hex
+    %}
+  {% endfor %}
+</div>
 
+<h4>Tertiary colors</h4>
+<div class="vads-l-row vads-u-flex-direction--column">
+  {% for item in site.data.colors.tertiary %}
+    {% include _background-color-example.html
+      name=item.name
+      hex=item.hex
+    %}
+  {% endfor %}
+</div>
+
+<h4>Hub colors</h4>
+<div class="vads-l-row vads-u-flex-direction--column">
+  {% for item in site.data.colors.hub %}
+    {% include _background-color-example.html
+      name=item.name
+      hex=item.hex
+    %}
+  {% endfor %}
+</div>
+</div>

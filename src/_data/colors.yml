@@ -1,0 +1,119 @@
+primary:
+  - name: base
+    hex: 212121
+  - name: white
+    hex: ffffff
+  - name: black
+    hex: "000000"
+  - name: orange
+    hex: eb7f29
+  - name: link-default
+    hex: 004795
+  - name: warning-message
+    hex: fac922
+  - name: gibill-accent
+    hex: fff1d2
+  - name: primary
+    hex: 0071bb
+  - name: primary-darker
+    hex: 003e73
+  - name: primary-darkest
+    hex: 112e51
+  - name: primary-alt
+    hex: 02bfe7
+  - name: primary-alt-dark
+    hex: 00a6d2
+  - name: primary-alt-darkest
+    hex: 046b99
+  - name: primary-alt-light
+    hex: 9bdaf1
+  - name: primary-alt-lightest
+    hex: e1f3f8
+  - name: secondary
+    hex: e31c3d
+  - name: secondary-dark
+    hex: cd2026
+  - name: secondary-darkest
+    hex: 981b1e
+  - name: secondary-light
+    hex: e59393
+  - name: secondary-lightest
+    hex: f9dede
+
+grayscale:
+  - name: gray
+    hex: 5b616b
+  - name: gray-dark
+    hex: 323a45
+  - name: gray-medium
+    hex: 757575
+  - name: gray-light
+    hex: aeb0b5
+  - name: gray-light-alt
+    hex: eeeeee
+  - name: gray-lighter
+    hex: d6d7d9
+  - name: gray-lightest
+    hex: f1f1f1
+  - name: gray-warm-dark
+    hex: 494440
+  - name: gray-warm-light
+    hex: e4e2e0
+  - name: gray-cool-light
+    hex: dce4ef
+
+tertiary:
+  - name: gold
+    hex: fdb81e
+  - name: gold-darker
+    hex: 988530
+  - name: gold-light
+    hex: f9c642
+  - name: gold-lighter
+    hex: fad980
+  - name: gold-lightest
+    hex: fff1d2
+  - name: green
+    hex: 2e8540
+  - name: green-darker
+    hex: 195c27
+  - name: green-light
+    hex: 4aa564
+  - name: green-lighter
+    hex: 94bfa2
+  - name: green-lightest
+    hex: e7f4e4
+  - name: cool-blue
+    hex: 205493
+  - name: cool-blue-light
+    hex: 4773aa
+  - name: cool-blue-lighter
+    hex: 8ba6ca
+  - name: cool-blue-lightest
+    hex: dce4ef
+
+hub:
+  - name: hub-health-care
+    hex: 3f57a6
+  - name: hub-education
+    hex: 21827f
+  - name: hub-disability
+    hex: a23737
+  - name: hub-careers
+    hex: bd5727
+  - name: hub-pension
+    hex: 3e8520
+  - name: hub-housing
+    hex: 8e704f
+  - name: hub-life-insurance
+    hex: 6f7a41
+  - name: hub-burials
+    hex: 357ab2
+  - name: hub-records
+    hex: 864381
+
+
+
+
+
+

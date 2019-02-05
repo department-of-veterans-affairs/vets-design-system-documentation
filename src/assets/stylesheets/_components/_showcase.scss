@@ -89,3 +89,30 @@
   overflow: hidden !important;
   position: relative !important;
 }
+
+
+
+
+
+.utility-value-color {
+  background-color: #fff;
+  border: 1px solid $color-gray-lightest;
+  font-family: $font-monospace;
+  margin-top: 0;
+  font-weight: 300;
+  white-space: nowrap;
+  text-transform: lowercase;
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.utility-value-color__chip {
+  height: .75rem;
+  border-radius: 50%;
+  width: .75rem;
+  display: inline-block;
+  margin-right: 8px;
+}
