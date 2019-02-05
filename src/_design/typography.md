@@ -63,26 +63,6 @@ title: Typography
 
 ---
 
-<section id="sans" class="usa-grid-full">
-    <h4>Merriweather (<tt>.usa-serif</tt>)</h4>
-
-    <div>
-        <div class="usa-width-one-half">
-            <p>Merriweather is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.</p>
-            <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
-
-        </div>
-
-        <div class="usa-serif typography-serif-intro usa-width-one-half usa-end-row">
-            <span class="text-huge">Aa</span>
-            <div>
-                <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
-                <p class="text-tiny">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-                <p class="text-tiny">0 1 2 3 4 5 6 7 8 9</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <style scoped>
     .text-tiny {
