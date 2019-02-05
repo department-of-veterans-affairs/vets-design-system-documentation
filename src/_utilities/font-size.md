@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: font-size
-title: Font size
+title: Font Size
 ---
 
 <div class="usa-alert usa-alert-error vads-u-margin-top--0 vads-u-margin-bottom--3">
