@@ -12,7 +12,7 @@ title: Typography
 
 
 <section id="sans" class="usa-grid-full">
-    <h4>Source Sans Pro (<tt>.usa-sans</tt>)</h4>
+    <h4>Source Sans Pro (<tt>.vads-u-font-family--sans</tt>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -22,7 +22,7 @@ title: Typography
 
         </div>
 
-        <div class="usa-sans typography-sans-intro usa-width-one-half usa-end-row">
+        <div class="vads-u-font-family--sans typography-sans-intro usa-width-one-half usa-end-row">
             <span class="text-huge">Aa</span>
             <div>
                 <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -36,7 +36,7 @@ title: Typography
 ---
 
 <section class="usa-grid-full">
-    <h4>Bitter (<tt>.usa-bitter</tt>)</h4>
+    <h4>Bitter (<tt>.vads-u-font-family--serif</tt>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -50,7 +50,7 @@ title: Typography
 
         </div>
 
-        <div class="usa-bitter typography-bitter-intro usa-width-one-half usa-end-row">
+        <div class="vads-u-font-family--serif typography-bitter-intro usa-width-one-half usa-end-row">
             <span class="text-huge">Aa</span>
             <div>
                 <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
