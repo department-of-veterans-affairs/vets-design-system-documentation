@@ -16,7 +16,8 @@ The latest news and updates on Formation and the content style guide
 
 **Site Updates**
 
-Updated the documentation presentation for the color utility and added hex keys.
+- Updated the documentation presentation for the color utility and added hex keys.
+- Updated icon documentation to include HTML snippets
 
 ---
 
