@@ -13,8 +13,44 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
 **Note:** Not all of these colors are placed in accessible color combinations.
 
 <div class="site-c-showcase">
-{% include_relative html/color.html %}
+  <h4>Base colors</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    {% for item in site.data.colors.primary %}
+      {% include _color-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
+  <h4>Grayscale</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    {% for item in site.data.colors.grayscale %}
+      {% include _color-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
+  <h4>Tertiary colors</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    {% for item in site.data.colors.tertiary %}
+      {% include _color-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
+  <h4>Hub colors</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    {% for item in site.data.colors.hub %}
+      {% include _color-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
 </div>
-
-{% include snippet.html content='html/color.html' %}
-

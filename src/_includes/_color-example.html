@@ -1,0 +1,20 @@
+<div class="vads-l-col site-c-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--{{ include.name }}
+      {%
+        if include.name contains "light" or
+        include.name contains "gibill-accent" or
+        include.name contains "white"
+      %}
+        vads-u-background-color--black
+      {% endif %}
+    ">.vads-u-color--{{ include.name }}</strong>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto">
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--{{ include.name }}"></span>
+      #{{ include.hex }}
+    </div>
+  </div>
+</div>
