@@ -7,7 +7,7 @@ title: Flexbox Grid
 # Flexbox grid
 
 <div class="va-introtext" markdown="1">
-The flexbox grid is another option for creating grid-based layouts with additional features that flexbox provides.
+The flexbox grid is another option for creating grid-based layouts with the additional features that flexbox provides. You can apply more flexbox properties by using the [flexbox utility](../utilities/flexbox.html).
 </div>
 
 In addition to the Flexbox grid, Formation uses a 12-column, responsive, flexbox grid to provide structure and align content.

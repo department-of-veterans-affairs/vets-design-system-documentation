@@ -7,7 +7,7 @@ title: Flexbox
 # Flexbox
 
 <div class="va-introtext" markdown="1">
-The flexbox utilities provide all of the properties for flex containers and some for flex items. All are responsive. Read about [responsive prefixes](#responsive-prefixes).
+The flexbox utilities provide all of the properties for flex containers and some for flex items. All are responsive. Read about [responsive prefixes](#responsive-prefixes). This utility can serve as compliment to the [flexbox grid](../layout/flexbox-grid.html).
 </div>
 
 Flexbox requires two components,  a *flex container* and *flex items*. Any first siblings in a flex container becomes a flex item. It is not possible for any of those siblings to not become a flex item.
