@@ -4,13 +4,6 @@ sub_section: font-family
 title: Font Family
 ---
 
-<div class="usa-alert usa-alert-error vads-u-margin-top--0 vads-u-margin-bottom--3">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Proposal</h3>
-    <p>This utility has not been added to Formation. This page is for documentation only.</p>
-  </div>
-</div>
-
 # Font Family
 
 <div class="va-introtext" markdown="1">
