@@ -184,6 +184,15 @@
       border-color: $color-base;
     }
   }
+
+  > .highlighter-rouge {
+    border: 1px solid $color-gray-lighter;
+    padding: units(2);
+
+    .highlight {
+      font-size: 1.7rem;
+    }
+  }
 }
 
 .code {

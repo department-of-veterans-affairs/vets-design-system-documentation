@@ -1,0 +1,100 @@
+units:
+  - token: 0
+    pixels: 0px
+    rems: 0rem
+  - token: 1px
+    pixels: 1px
+    rems: .1rem
+  - token: .25
+    pixels: 2px
+    rems: .2rem
+  - token: .5
+    pixels: 4px
+    rems: .4rem
+  - token: 1
+    pixels: 8px
+    rems: .8rem
+  - token: 1.5
+    pixels: 12px
+    rems: 1.2rem
+  - token: 2
+    pixels: 16px
+    rems: 1.6rem
+  - token: 2.5
+    pixels: 20px
+    rems: 2rem
+  - token: 3
+    pixels: 24px
+    rems: 2.4rem
+  - token: 4
+    pixels: 32px
+    rems: 3.2rem
+  - token: 5
+    pixels: 40px
+    rems: 4rem
+  - token: 6
+    pixels: 48px
+    rems: 4.8rem
+  - token: 7
+    pixels: 56px
+    rems: 5.6rem
+  - token: 8
+    pixels: 64px
+    rems: 6.4rem
+  - token: 9
+    pixels: 72px
+    rems: 7.2rem
+  - token: 10
+    pixels: 80px
+    rems: 8rem
+  - token: 15
+    pixels: 120px
+    rems: 12rem
+  - token: -1px
+    pixels: -1px
+    rems: -.1rem
+  - token: -.25
+    pixels: -2px
+    rems: -.2rem
+  - token: -.5
+    pixels: -4px
+    rems: -.4rem
+  - token: -1
+    pixels: -8px
+    rems: -.8rem
+  - token: -1.5
+    pixels: -12px
+    rems: -1.2rem
+  - token: -2
+    pixels: -16px
+    rems: -1.6rem
+  - token: -2.5
+    pixels: -20px
+    rems: -2rem
+  - token: -3
+    pixels: -24px
+    rems: -2.4rem
+  - token: -4
+    pixels: -32px
+    rems: -3.2rem
+  - token: -5
+    pixels: -40px
+    rems: -4rem
+  - token: -6
+    pixels: -48px
+    rems: -4.8rem
+  - token: -7
+    pixels: -56px
+    rems: -5.6rem
+  - token: -8
+    pixels: -64px
+    rems: -6.4rem
+  - token: -9
+    pixels: -72px
+    rems: -7.2rem
+  - token: -10
+    pixels: -80px
+    rems: -8rem
+  - token: -15
+    pixels: -120px
+    rems: -12rem

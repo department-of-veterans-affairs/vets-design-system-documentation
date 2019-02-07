@@ -14,8 +14,18 @@ The latest news and updates on Formation and the content style guide
 
 ### February 6, 2019
 
+**3.9.0**
+- Added a spacing units function for margin and padding
+
+**Site Updates**
+- Added documentation for spacing units
+
+---
+
+### February 6, 2019
+
 **3.8.0**
-- Added font-family utility 
+- Added font-family utility
 
 **Site Updates**
 
