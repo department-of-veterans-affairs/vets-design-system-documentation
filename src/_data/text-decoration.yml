@@ -1,0 +1,4 @@
+alignments:
+  - name: none
+  - name: underline
+  - name: strikethrough
