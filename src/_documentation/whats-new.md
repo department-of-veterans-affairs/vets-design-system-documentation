@@ -12,6 +12,13 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### February 8, 2019
+
+**3.10.0**
+- Added a text-alignment utility
+
+---
+
 ### February 6, 2019
 
 **3.9.0**
