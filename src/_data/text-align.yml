@@ -1,0 +1,5 @@
+alignments:
+  - name: left
+  - name: center
+  - name: right
+  - name: justify
