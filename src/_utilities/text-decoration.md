@@ -4,13 +4,6 @@ sub_section: text-decoration
 title: Text decoration
 ---
 
-<div class="usa-alert usa-alert-error vads-u-margin-top--0 vads-u-margin-bottom--5" role="alert">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Do not use. This is a proposal</h3>
-    <p>This utility is a proposal and this page exists only for demonstration purposes. Once this utility is accepted into the code base, this message will no longer appear.</p>
-  </div>
-</div>
-
 # Text decoration
 
 <div class="va-introtext" markdown="1">
