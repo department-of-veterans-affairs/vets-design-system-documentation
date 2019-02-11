@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: font-family
-title: Font Family
+title: Font family
 ---
 
-# Font Family
+# Font family
 
 <div class="va-introtext" markdown="1">
 Change the font-family.

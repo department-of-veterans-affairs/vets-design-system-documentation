@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: font-size
-title: Font Size
+title: Font size
 ---
 
 # Font size
