@@ -2,6 +2,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $font-sans;
+  scroll-behavior: smooth;
 }
 
 body {

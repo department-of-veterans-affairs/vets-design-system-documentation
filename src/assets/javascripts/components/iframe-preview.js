@@ -18,7 +18,9 @@
     }
   }
 
-  resizeFrame($iframe, $iframe_box);
+  if ($iframe.length) {
+    resizeFrame($iframe, $iframe_box);
+  }
 
   var preview_button = document.getElementsByClassName("sg-responsive-preview__size-button");
 
@@ -41,6 +43,8 @@
   }
 
   window.onresize = function(event) {
-   resizeFrame($iframe, $iframe_box);
+    if ($iframe.length) {
+      resizeFrame($iframe, $iframe_box);
+    }
   };
 
