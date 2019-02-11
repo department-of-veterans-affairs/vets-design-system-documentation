@@ -6,7 +6,8 @@ title: Icons
 
 # Icons
 
-<h2>Navigation</h2>
+## Navigation
+
 <table class="usa-table-borderless">
     <thead>
         <tr>
@@ -84,7 +85,8 @@ title: Icons
     </tbody>
 </table>
 
-<h2>Interaction</h2>
+## Interaction
+
 <table class="usa-table-borderless">
     <thead>
         <tr>
@@ -113,7 +115,8 @@ title: Icons
     </tbody>
 </table>
 
-<h2>Feedback</h2>
+## Feedback
+
 <table class="usa-table-borderless">
     <thead>
         <tr>
@@ -156,7 +159,8 @@ title: Icons
     </tbody>
 </table>
 
-<h2>Identification</h2>
+## Identification
+
 <table class="usa-table-borderless">
     <thead>
         <tr>
@@ -249,7 +253,7 @@ title: Icons
 </table>
 
 
-<h2>Hub Icons</h2>
+## Hub icon
 
 
 <table class="usa-table-borderless">
@@ -331,7 +335,7 @@ title: Icons
   </tbody>
 </table>
 
-<h2>Social Media Icons</h2>
+## Social media icons 
 
 <table class="usa-table-borderless">
   <thead>

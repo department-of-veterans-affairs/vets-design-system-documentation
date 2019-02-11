@@ -1,0 +1,27 @@
+.has-anchor {
+  position: relative;
+}
+
+.site-c-heading-anchor {
+  color: $color-gray;
+  font-size: .75em;
+  margin-left: $units-1;
+
+  @include media($nav-width) {
+    opacity: 0;
+    position: absolute;
+    left: -40px;
+    top: .25em;
+    padding-right: 20px;
+  }
+}
+
+.site-c-heading-anchor:visited {
+  color: $color-gray;
+}
+
+.has-anchor:hover .site-c-heading-anchor,
+.site-c-heading-anchor:hover {
+  background-color: transparent;
+  opacity: 1;
+}
