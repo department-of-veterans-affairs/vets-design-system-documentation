@@ -2,6 +2,15 @@
 layout: default
 sub_section: flexbox
 title: Flexbox
+anchors:
+  - anchor: Flex
+  - anchor: Flex direction
+  - anchor: Flex wrap
+  - anchor: Align items
+  - anchor: Flex direction
+  - anchor: Justify content
+  - anchor: Align content
+  - anchor: Order
 ---
 
 # Flexbox
@@ -27,7 +36,7 @@ The shorthand property, `flex` encompasses three properties: `flex-grow`, `flex-
 - `vads-u-flex--1` and `vads-u-flex--fill` can be used interchangably. Both of these will fill the space of the flex container  with equal width boxes.
 - `vads-u-flex--auto` will make it’s element’s width equal to that of the content within it.
 
-## Flex Direction
+## Flex direction
 
 Flex direction sets the main-axis, which defines the direction flex items are placed in the flex container. Unless `flex-wrap` is set to `wrap`, flexbox is a single-direction layout concept, where flex items are primarily laying out either in horizontal rows or vertical columns.
 
@@ -44,7 +53,7 @@ Flex direction sets the main-axis, which defines the direction flex items are pl
 
 {% include snippet.html content='html/flex-direction.html' %}
 
-## Flex Wrap
+## Flex wrap
 
 The [Flexbox grid](../layout/flexbox-grid.html) is set to `wrap` by default, but flexbox will otherwise place flex items into a single row. **Note:** If the number of grid columns exceeds 12 and the grid column is set to `nowrap`, the grid columns may extend off the page.
 
