@@ -12,6 +12,22 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### February 12, 2019
+
+**3.12.0**
+
+- Added a new `font-style` utility.
+
+---
+
+### February 11, 2019
+
+**Site updates**
+
+- Hover on any `h2`, `h3`, or `h4` to get an anchor link. This feature will allow users to easily copy deep links to share and discuss.
+
+---
+
 ### February 8, 2019
 
 **3.11.0**
