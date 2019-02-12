@@ -6,13 +6,6 @@ title: Font style
 
 # Font style
 
-<div class="usa-alert usa-alert-error" role="alert">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Do not use</h3>
-    <p>This utility is currently a proposal. It is not yet accepted into Formation. This page is for demonstration purposes only.</p>
-  </div>
-</div>
-
 <div class="va-introtext" markdown="1">
 Change the font style of an element.
 </div>
