@@ -14,9 +14,13 @@ The latest news and updates on Formation and the content style guide
 
 ### February 12, 2019
 
+**3.13.1**
+
+- Added a font-weight utility 
+
 **3.12.1**
 
-- Added a transparent option for color and background color utility. 
+- Added a transparent option for color and background color utility.
 
 **3.12.0**
 
