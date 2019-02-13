@@ -1,5 +1,6 @@
 .has-anchor {
   position: relative;
+  z-index: 1;
 }
 
 .site-c-heading-anchor {
@@ -13,6 +14,7 @@
     left: -40px;
     top: .25em;
     padding-right: 20px;
+    z-index: -1;
   }
 }
 
