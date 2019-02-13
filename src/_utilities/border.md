@@ -144,7 +144,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
 
 ## Responsive prefixes
 
-Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
+Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology. Only the [border shorthand](#border-shorthand) property is available with responsive prefixes.
 
 ### Example
 
