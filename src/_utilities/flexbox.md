@@ -11,6 +11,7 @@ anchors:
   - anchor: Justify content
   - anchor: Align content
   - anchor: Order
+  - anchor: Responsive prefixes
 ---
 
 # Flexbox
