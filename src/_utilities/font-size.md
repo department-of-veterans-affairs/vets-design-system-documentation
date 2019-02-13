@@ -2,6 +2,8 @@
 layout: default
 sub_section: font-size
 title: Font size
+anchors:
+  - anchor: Responsive prefixes
 ---
 
 # Font size

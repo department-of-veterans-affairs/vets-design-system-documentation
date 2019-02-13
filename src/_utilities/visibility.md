@@ -2,6 +2,8 @@
 layout: default
 sub_section: visibility
 title: Visibility
+anchors:
+  - anchor: Responsive prefixes
 ---
 
 # Visibilty

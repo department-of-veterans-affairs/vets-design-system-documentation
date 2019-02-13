@@ -2,6 +2,15 @@
 layout: default
 sub_section: margins
 title: Margins
+anchors:
+  - anchor: Margin on all sides
+  - anchor: Margin top and bottom
+  - anchor: Margin top
+  - anchor: Margin bottom
+  - anchor: Margin right and left
+  - anchor: Margin right
+  - anchor: Margin left
+  - anchor: Responsive prefixes
 ---
 
 # Margins
@@ -11,13 +20,13 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 </div>
 
 
-<div class="site-c-showcase">
+## Margin on all sides
 
-  <h2>Margin on all sides</h2>
+<div class="site-c-showcase">
 
   <div class="vads-l-row">
     {% for item in site.data.margins.all %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -26,13 +35,15 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
       %}
     {% endfor %}
   </div>
+</div>
 
+## Margin top and bottom
 
-  <h2>Margin top and bottom</h2>
+<div class="site-c-showcase">
   <p>The ghosted square represents another element just below the example in the DOM to depict a negative bottom margin.</p>
   <div class="vads-l-row">
     {% for item in site.data.margins.y %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -41,12 +52,13 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
       %}
     {% endfor %}
   </div>
+</div>
 
-
-  <h2>Margin top</h2>
+## Margin top
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.margins.top %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -55,12 +67,15 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Margin bottom</h2>
+
+## Margin bottom
+<div class="site-c-showcase">
   <p>The ghosted square represents another element just below the example in the DOM to depict a negative bottom margin.</p>
   <div class="vads-l-row">
     {% for item in site.data.margins.bottom %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -69,14 +84,15 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
       %}
     {% endfor %}
   </div>
+</div>
 
-
-  <h2>Margin right and left</h2>
+## Margin right and left
+<div class="site-c-showcase">
   <p>The squares in this example are set to display inline.The ghosted square represents another element just below the example in the DOM to depict a negative right margin.</p>
   <div class="vads-l-row">
 
     {% for item in site.data.margins.x %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -85,13 +101,15 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Margin right</h2>
+## Margin right
+<div class="site-c-showcase">
   <p>The squares in this example are set to display inline.The ghosted square represents another element just below the example in the DOM to depict a negative right margin.</p>
   <div class="vads-l-row">
 
     {% for item in site.data.margins.right %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -100,12 +118,13 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Margin left</h2>
+## Margin left
+<div class="site-c-showcase">
   <div class="vads-l-row">
-
     {% for item in site.data.margins.left %}
-      {% include _margin-example.html
+      {% include margin-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols

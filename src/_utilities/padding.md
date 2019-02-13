@@ -2,6 +2,15 @@
 layout: default
 sub_section: padding
 title: Padding
+anchors:
+  - anchor: Padding on all sides
+  - anchor: Padding top and bottom
+  - anchor: Padding top
+  - anchor: Padding bottom
+  - anchor: Padding right and left
+  - anchor: Padding right
+  - anchor: Padding left
+  - anchor: Responsive prefixes
 ---
 
 # Padding
@@ -10,12 +19,11 @@ title: Padding
 Change the spacing inside an item. Padding classes include [responsive prefixes](#responsive-prefixes).
 </div>
 
+## Padding on all sides
 <div class="site-c-showcase">
-
-  <h2>Padding on all sides</h2>
   <div class="vads-l-row">
     {% for item in site.data.padding.all %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -23,12 +31,14 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         outer_classes=item.outer_classes
       %}
     {% endfor %}
+    </div>
   </div>
 
-  <h2>Padding on top and bottom</h2>
+## Padding top and bottom
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.padding.y %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -37,11 +47,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Padding on top</h2>
+## Padding top
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.padding.top %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -50,11 +62,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Padding on bottom</h2>
+## Padding bottom
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.padding.bottom %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -63,11 +77,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Padding on right and left</h2>
+## Padding right and left
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.padding.x %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -76,11 +92,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Padding on right</h2>
+## Padding right
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.padding.right %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols
@@ -89,11 +107,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
       %}
     {% endfor %}
   </div>
+</div>
 
-  <h2>Padding on left</h2>
+## Padding left
+<div class="site-c-showcase">
   <div class="vads-l-row">
     {% for item in site.data.padding.left %}
-      {% include _padding-example.html
+      {% include padding-example.html
         class=item.class
         value=item.value
         grid_cols=item.grid_cols

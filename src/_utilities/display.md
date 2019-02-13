@@ -2,6 +2,8 @@
 layout: default
 sub_section: display
 title: Display
+anchors:
+  - anchor: Responsive prefixes
 ---
 
 # Display

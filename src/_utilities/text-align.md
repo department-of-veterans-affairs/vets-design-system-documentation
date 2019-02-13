@@ -2,6 +2,8 @@
 layout: default
 sub_section: text-align
 title: Text align
+anchors:
+  - anchor: Responsive prefixes
 ---
 
 # Text align
