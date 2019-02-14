@@ -12,11 +12,19 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### February 14, 2019
+
+**3.14.0**
+
+- Added a border utility
+
+---
+
 ### February 12, 2019
 
-**3.13.1**
+**3.13.0**
 
-- Added a font-weight utility 
+- Added a font-weight utility
 
 **3.12.1**
 

@@ -9,16 +9,6 @@ anchors:
   - anchor: Responsive prefixes
 ---
 
-
-
-<div class="usa-alert usa-alert-error vads-u-margin-bottom--5" role="alert">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Proposal: Do not use</h3>
-    <p>This utility has not been accepted into Formation. This page is for demonstration only.</p>
-  </div>
-</div>
-
-
 # Border
 
 <div class="va-introtext" markdown="1">

@@ -1,0 +1,23 @@
+.site-resource-link,
+.site-resource-link:visited {
+  display: flex;
+  padding: units(4);
+  border: 1px solid $color-gray-lighter;
+  color: $color-base;
+  text-decoration: none;
+  background-color: #fff;
+  height: 100%;
+  align-items: flex-start;
+
+  img {
+    flex-shrink: 0;
+    display: block;
+    width: units(4);
+  }
+}
+
+.site-resource-link:hover {
+  border-color: $color-primary;
+  background-color: white;
+  text-decoration: none;
+}
