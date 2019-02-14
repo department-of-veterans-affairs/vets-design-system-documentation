@@ -1,5 +1,5 @@
 ---
-name: "\U0001F647 Support question"
+name: "\U0001F64B Support question"
 about: If you need support using Formation
 ---
 
