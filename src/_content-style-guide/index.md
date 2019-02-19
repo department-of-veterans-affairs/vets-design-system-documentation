@@ -2,6 +2,10 @@
 layout: default
 sub_section: index
 title: VA.gov Content Style Guide
+anchors:
+  - anchor: What you'll find in this style guide
+  - anchor: Newsletter
+  - anchor: Suggestions or questions
 ---
 
 # VA.gov Content Style Guide
@@ -12,7 +16,7 @@ This is our house style guide for the VA.gov website. It's shared across VA agen
 
 The purpose of this style guide is to help you create better content, not better bureaucracy. See our [content principles](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/content-principles.html).
 
-**What you'll find in this style guide**
+## What you'll find in this style guide
 
 We've organized the style guide into searchable topics, so you can go directly to the section you need guidance on. This guide covers common issues on VA.gov. It does not cover basic writing mechanics and grammar. (We assume you know those already.)
 
@@ -24,6 +28,29 @@ In general, we follow plain language and web best practices. But where we vary f
 - [Merriam-Webster Dictionary](www.merriam-webster.com)
 - /?? OPIA style book?? is it linkable or behind intranet? I saw some governance rule we're not supposed to link to intranet??// **@Gary Hicks & Josh Tuscher**
 
-**Suggestions or questions?** Email [canwehaveplatformorstyleguide@email.com?].
+## Newsletter
+
+
+  <form id="GD-snippet-form" action="https://public.govdelivery.com/accounts/USVADS/subscribers/qualify" accept-charset="UTF-8" method="post">
+    <input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="authenticity_token" value="+Ycg18OTfytwWfUKmlfsFpLivhrAZfJCZ0YtJ0f88YnpHqz4WcsolaudXm6tMS8UrZ9aagwWiSg3bEVp5xWCLg==" />
+    <input type="hidden" name="topic_id" id="topic_id" value="USVADS_2" />
+    <fieldset>
+      <legend class="vads-u-font-size--md">Sign up for VA.gov content style guide updates</legend>
+      <ol class="usa-unstyled-list vads-u-margin--0">
+        <li class="email_fields">
+          <label for="email">Email address</label>
+          <input type="text" name="email" id="email" class="usa-input" />
+        </li>
+      </ol>
+      <div>
+        <button type="submit" class="usa-button vads-u-width--auto">Sign up</button>
+      </div>
+    </fieldset>
+  </form>
+
+## Suggestions or questions
+
+Email [canwehaveplatformorstyleguide@email.com?].
 
 If you're looking for VA governance requirements -- such as compliance, policies, and regulations -- please go to [VA Web Governance](www.va.gov/web/index.cfm).
