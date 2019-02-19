@@ -1,0 +1,53 @@
+height:
+  - name: 0
+    value: 0px
+    description: "Sets height to zero"
+  - name: full
+    value: 100%
+    description: "Sets height to full width of container"
+  - name: auto
+    value: auto
+    description: "Sets height to height of content"
+  - name: viewport
+    value: 100vh
+    description: "Sets hight to height of viewport"
+
+max_height:
+  - name: none
+    value: none
+    description: "Removes max-height"
+  - name: viewport
+    value: 100vh
+    description: "Prevents height from exceeding height of viewport"
+
+min_height:
+  - name: none
+    value: none
+    description: "Removes min-height"
+  - name: viewport
+    value: 100vh
+    description: "Height cannot be less than height of viewport"
+
+width:
+  - name: 0
+    value: 0px
+    description: "Sets width to zero"
+  - name: full
+    value: 100%
+    description: "Sets width equal to width of container"
+  - name: auto
+    value: auto
+    description: "Sets width to width of content"
+
+max_width:
+  - name: none
+    value: none
+    description: "Removes max-width"
+  - name: 100
+    value: 100%
+    description: "Prevents width from exceeding width of container"
+
+min_width:
+  - name: none
+    value: none
+    description: "Removes min-width"
