@@ -1,0 +1,13 @@
+measures:
+  - name: 1
+    value: 40ch
+  - name: 2
+    value: 60ch
+  - name: 3
+    value: 66ch
+  - name: 4
+    value: 72ch
+  - name: 5
+    value: 77ch
+  - name: none
+    value: none
