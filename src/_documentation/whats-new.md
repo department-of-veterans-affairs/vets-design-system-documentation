@@ -12,6 +12,29 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### February 21, 2019
+
+**5.3.0**
+
+- Added line-height utility
+
+**5.2.0**
+
+- Added measure
+
+**Site updates**
+- Improved documentation pages for some utilities
+
+---
+
+### February 20, 2019
+
+**5.1.0**
+
+- Added height and width utility
+
+---
+
 ### February 14, 2019
 
 **3.14.0**

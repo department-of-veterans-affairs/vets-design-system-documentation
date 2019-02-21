@@ -4,15 +4,6 @@ sub_section: line-height
 title: Line height
 ---
 
-<div class="usa-alert usa-alert-error vads-u-margin-bottom--3" role="alert">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Proposal: Do not use</h3>
-    <p>This page is for demonstration purposes only. This utility has not yet been accepted into Formation.</p>
-  </div>
-</div>
-
-
-
 # Line height
 
 <div class="va-introtext" markdown="1">
