@@ -2,6 +2,12 @@
 layout: default
 sub_section: Typography
 title: Typography
+anchors:
+  - anchor: Fonts
+  - anchor: Headings
+  - anchor: Paragraphs
+  - anchor: Lists
+  - anchor: Links
 ---
 
 # Typography
