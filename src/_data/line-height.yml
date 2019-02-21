@@ -1,0 +1,13 @@
+line_heights:
+  - name: 1
+    value: 1
+  - name: 2
+    value: 1.15
+  - name: 3
+    value: 1.35
+  - name: 4
+    value: 1.5
+  - name: 5
+    value: 1.62
+  - name: 6
+    value: 1.75
