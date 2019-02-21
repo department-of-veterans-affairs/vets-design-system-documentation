@@ -4,12 +4,12 @@ var gulp = require('gulp');
 gulp.task('build',
   //gulp.series(
   //  'remote-assets',
-    gulp.parallel(
+    gulp.series(
       'fonts',
       'images',
       'javascript',
       'css',
-      'paths',
+      'paths'
     )
 //  )
 );
