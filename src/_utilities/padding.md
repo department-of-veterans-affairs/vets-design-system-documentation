@@ -29,6 +29,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
     </div>
@@ -44,6 +45,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -59,6 +61,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -74,6 +77,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -89,6 +93,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -104,6 +109,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -119,6 +125,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
         grid_cols=item.grid_cols
         show_square2=item.show_square2
         outer_classes=item.outer_classes
+        index=forloop.index
       %}
     {% endfor %}
   </div>

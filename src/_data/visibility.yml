@@ -1,0 +1,7 @@
+visibility:
+  - name: hidden
+    description: "Hides an element while leaving the space where it would have been"
+  - name: visible
+    description: "Makes a hidden element visible. DOES NOT override screen-reader visibility utility."
+  - name: screen-reader
+    description: "Hides content visually but allows access to screen readers"

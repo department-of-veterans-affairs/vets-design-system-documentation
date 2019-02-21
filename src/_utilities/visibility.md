@@ -12,10 +12,20 @@ anchors:
 Change the visibility characteristics of an element
 </div>
 
-## Available utility classes
-- `vads-u-visibility--hidden` - Hides an element while leaving the space where it would have been
-- `vads-u-visibility--visible`
-- `vads-u-visibility--screen-reader` - Hides an element visually, but can still be read by a screen reader.
+<div class="site-c-showcase">
+  <div class="vads-l-row">
+    {% for item in site.data.visibility.visibility %}
+      <div class="vads-l-col--12 site-c-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+        <div>
+          <code class="code">.vads-u-visibility--{{ item.name }} </code>
+        </div>
+        <div>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
 ## Guidance
 

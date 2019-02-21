@@ -12,7 +12,7 @@ Change the font wight of an element.
 
 <div class="site-c-showcase">
   <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start">
+    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--4">
           <code class="code">.vads-u-font-weight--bold</code>
       </div>

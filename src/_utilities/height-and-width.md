@@ -28,6 +28,7 @@ Reset the height and width of an element. All height and width classes include [
         name=item.name
         value=item.value
         description=item.description
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -43,6 +44,7 @@ Reset the height and width of an element. All height and width classes include [
         name=item.name
         value=item.value
         description=item.description
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -58,6 +60,7 @@ Reset the height and width of an element. All height and width classes include [
         name=item.name
         value=item.value
         description=item.description
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -73,6 +76,7 @@ Reset the height and width of an element. All height and width classes include [
         name=item.name
         value=item.value
         description=item.description
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -88,6 +92,7 @@ Reset the height and width of an element. All height and width classes include [
         name=item.name
         value=item.value
         description=item.description
+        index=forloop.index
       %}
     {% endfor %}
   </div>
@@ -103,6 +108,7 @@ Reset the height and width of an element. All height and width classes include [
         name=item.name
         value=item.value
         description=item.description
+        index=forloop.index
       %}
     {% endfor %}
   </div>

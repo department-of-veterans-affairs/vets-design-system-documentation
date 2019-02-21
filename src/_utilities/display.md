@@ -13,10 +13,19 @@ Change the display property of an element.
 </div>
 
 <div class="site-c-showcase">
-{% include_relative html/display.html %}
+  <div class="vads-l-row">
+    {% for item in site.data.display.display %}
+      <div class="vads-l-col--12 site-c-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+        <div>
+          <code class="code">.vads-u-display--{{ item.name }} </code>
+        </div>
+        <div>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>
-
-{% include snippet.html content='html/display.html' %}
 
 ## Guidance
 

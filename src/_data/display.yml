@@ -1,0 +1,11 @@
+display:
+  - name: block
+    description: "Sets an element’s display to block so it starts on a new line and takes the entire width."
+  - name: inline
+    description: "Sets an element’s display to inline where height, width, margin, and padding have no effect."
+  - name: inline-block
+    description: "Sets an element‘s display to inline-block, where it can be arranged beside other elements and height, width, margin, and padding are accepted."
+  - name: flex
+    description: 'Sets an element‘s display to flex to behave as a flex container. For more related utilities, check out the <a href="flexbox.html">flexbox utilities</a>.'
+  - name: none
+    description: "Sets an element‘s display to none, hiding it visually and from screen readers."

@@ -17,6 +17,7 @@ Change the alignment of text or elements. This utility also [responsive prefixes
     {% for item in site.data.text-align.alignments %}
       {% include text-align-example.html
         name=item.name
+        index=forloop.index
       %}
     {% endfor %}
   </div>

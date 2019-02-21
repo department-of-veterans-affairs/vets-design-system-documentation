@@ -12,7 +12,7 @@ Change the text-decoration.
 
 <div class="site-c-showcase">
   <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start">
+    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border-top--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
           <code class="code">.vads-u-text-decoration--none</code>
       </div>
