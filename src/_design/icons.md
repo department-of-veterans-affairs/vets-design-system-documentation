@@ -2,6 +2,13 @@
 layout: default
 sub_section: icons
 title: Icons
+anchors:
+  - anchor: Navigation
+  - anchor: Interaction
+  - anchor: Feedback
+  - anchor: Identification
+  - anchor: Hub icons
+  - anchor: Social media icons
 ---
 
 # Icons
@@ -18,42 +25,6 @@ title: Icons
         </tr>
     </thead>
     <tbody>
-
-        <tr>
-            <th scope="row"><i class="fas fa-chevron-down"></i></th>
-            <td><code>&lt;i class="fas fa-chevron-down">&lt;/i></code></td>
-            <td><code class='code-fa'>&amp;#xf078;</code></td>
-            <td>Dropdown expand indicator</td>
-        </tr>
-
-        <tr>
-            <th scope="row"><i class="fas fa-chevron-up"></i></th>
-            <td><code>&lt;i class="fas fa-chevron-up">&lt;/i></code></td>
-            <td><code class='code-fa'>&amp;#xf077;</code></td>
-            <td>Dropdown collapse indicator</td>
-        </tr>
-
-        <tr>
-            <th scope="row"><i class="fas fa-plus"></i></th>
-            <td><code>&lt;i class="fas fa-plus">&lt;/i></code></td>
-            <td><code class='code-fa'>&amp;#xf067;</code></td>
-            <td>Accordion expand indicator</td>
-        </tr>
-
-        <tr>
-            <th scope="row"><i class="fas fa-minus"></i></th>
-            <td><code>&lt;i class="fas fa-minus">&lt;/i></code></td>
-            <td><code class='code-fa'>&amp;#xf068;</code></td>
-            <td>Accordion collapse indicator</td>
-        </tr>
-
-        <tr>
-            <th scope="row"><i class="fas fa-times"></i></th>
-            <td><code>&lt;i class="fas fa-times">&lt;/i></code></td>
-            <td><code class='code-fa'>&amp;#xf00d;</code></td>
-            <td>Close indicator (modals, alerts)</td>
-        </tr>
-
         <tr>
             <th scope="row"><i class="fas fa-angle-double-left"></i></th>
             <td><code>&lt;i class="fas fa-angle-double-left">&lt;/i></code></td>
@@ -75,13 +46,6 @@ title: Icons
             <td>Search</td>
         </tr>
 
-        <tr>
-            <th scope="row"><i class="fas fa-sort"></i></th>
-            <td><code>&lt;i class="fas fa-sort">&lt;/i></code></td>
-            <td><code class='code-fa'>&amp;#xf0dc;</code></td>
-            <td>Form field dropdown</td>
-        </tr>
-
     </tbody>
 </table>
 
@@ -97,7 +61,46 @@ title: Icons
         </tr>
     </thead>
     <tbody>
+      <tr>
+          <th scope="row"><i class="fas fa-sort"></i></th>
+          <td><code>&lt;i class="fas fa-sort">&lt;/i></code></td>
+          <td><code class='code-fa'>&amp;#xf0dc;</code></td>
+          <td>Form field dropdown</td>
+      </tr>
+      <tr>
+          <th scope="row"><i class="fas fa-chevron-down"></i></th>
+          <td><code>&lt;i class="fas fa-chevron-down">&lt;/i></code></td>
+          <td><code class='code-fa'>&amp;#xf078;</code></td>
+          <td>Dropdown expand indicator</td>
+      </tr>
 
+      <tr>
+          <th scope="row"><i class="fas fa-chevron-up"></i></th>
+          <td><code>&lt;i class="fas fa-chevron-up">&lt;/i></code></td>
+          <td><code class='code-fa'>&amp;#xf077;</code></td>
+          <td>Dropdown collapse indicator</td>
+      </tr>
+
+      <tr>
+          <th scope="row"><i class="fas fa-plus"></i></th>
+          <td><code>&lt;i class="fas fa-plus">&lt;/i></code></td>
+          <td><code class='code-fa'>&amp;#xf067;</code></td>
+          <td>Accordion expand indicator</td>
+      </tr>
+
+      <tr>
+          <th scope="row"><i class="fas fa-minus"></i></th>
+          <td><code>&lt;i class="fas fa-minus">&lt;/i></code></td>
+          <td><code class='code-fa'>&amp;#xf068;</code></td>
+          <td>Accordion collapse indicator</td>
+      </tr>
+
+      <tr>
+          <th scope="row"><i class="fas fa-times"></i></th>
+          <td><code>&lt;i class="fas fa-times">&lt;/i></code></td>
+          <td><code class='code-fa'>&amp;#xf00d;</code></td>
+          <td>Close indicator (modals, alerts)</td>
+      </tr>
         <tr>
             <th scope="row"><i class="fas fa-plus"></i></th>
             <td><code>&lt;i class="fas fa-plus">&lt;/i></code></td>
@@ -253,7 +256,7 @@ title: Icons
 </table>
 
 
-## Hub icon
+## Hub icons
 
 
 <table class="usa-table-borderless">
@@ -335,7 +338,7 @@ title: Icons
   </tbody>
 </table>
 
-## Social media icons 
+## Social media icons
 
 <table class="usa-table-borderless">
   <thead>
