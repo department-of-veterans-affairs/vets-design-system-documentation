@@ -5,14 +5,25 @@ title: Capitalization
 ---
 
 # Capitalization
+__Use sentence case capitalization__
 
-@ content team - let's discuss simplifying the capitalization styles used on va.gov. Would like to use sentence case for everything except proper nouns (including VA branded names, form names, so on ) and certain special VA terms like "Veterans."
+We use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
 
-Currently, we appear to use...
+__Exceptions where we use title capitalization__ 
 
-- page titles and headers - title case 
-- subheads - sentence case sometimes, but title case other times
-- stand alone text links - sentence case sometimes, title case sometimes
-- nav links (which sometimes is the same label as stand alone text links -- like from homepage hubs) - title case
-- breadcrumb labels - title case
-- alert banner titles - sentence case
+- Proper nouns (example: branded terms like "VA.gov," official program names, state names, names of federal agencies, days of the week and months, compositions such as titles of books, etc.)
+- The word “Veterans”
+- Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location) 
+- SEO browser titles
+
+
+
+__Like this | Not this__
+
+------------ | -------------
+
+Apply now for GI Bill benefits | Apply Now For GI Bill Benefits
+
+
+
+[Consult our word list](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/word-list.html) or refer to AP Style if you're not sure a term should be capitalized. If still unsure, err on the side of sentence case capitalization. 
