@@ -28,7 +28,7 @@ In general, we follow plain language and web best practices. But where we vary f
 - [Merriam-Webster Dictionary](www.merriam-webster.com)
 - /?? OPIA style book?? is it linkable or behind intranet? I saw some governance rule we're not supposed to link to intranet??// **@Gary Hicks & Josh Tuscher**
 
-## Newsletter
+## Want to know when we have updates to the style guide?
 
 
   <form id="GD-snippet-form" action="https://public.govdelivery.com/accounts/USVADS/subscribers/qualify" accept-charset="UTF-8" method="post">
@@ -49,8 +49,8 @@ In general, we follow plain language and web best practices. But where we vary f
     </fieldset>
   </form>
 
-## Suggestions or questions
+## Suggestions or questions about the style guide?
 
-Email [canwehaveplatformorstyleguide@email.com?].
+Email vawebdesign@va.gov
 
 If you're looking for VA governance requirements -- such as compliance, policies, and regulations -- please go to [VA Web Governance](www.va.gov/web/index.cfm).
