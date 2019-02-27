@@ -6,7 +6,7 @@
         <ul class="site-c-sidenav-list__sub">
           {% for item in page.anchors %}
             <li class="site-c-sidenav-list__sub-item">
-              <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" }}">{{ item.anchor }}</a></li>
+              <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" }}">{{ item.anchor }}</a></li>
           {% endfor %}
         </ul>
       {% endif %}
@@ -21,7 +21,7 @@
             <ul class="site-c-sidenav-list__sub">
               {% for item in p.anchors %}
                 <li class="site-c-sidenav-list__sub-item">
-                  <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" }}">{{ item.anchor }}</a></li>
+                  <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", ""}}">{{ item.anchor }}</a></li>
               {% endfor %}
             </ul>
           {% endif %}

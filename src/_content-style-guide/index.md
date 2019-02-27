@@ -2,10 +2,6 @@
 layout: default
 sub_section: index
 title: VA.gov Content Style Guide
-anchors:
-  - anchor: What you'll find in this style guide
-  - anchor: Newsletter
-  - anchor: Suggestions or questions
 ---
 
 # VA.gov Content Style Guide
