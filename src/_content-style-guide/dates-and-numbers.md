@@ -6,6 +6,8 @@ title: Dates, times, and phone numbers
 
 # Dates, times, and phone numbers
 
+Dates, times, and phone numbers often appear together, so we've put guidelines for these together. 
+
 __Dates__
 
 Spell out dates in body copy, using the full construction: March 31, 1989. In general, spell out days of the week and months also in body copy.  
