@@ -52,4 +52,4 @@ In general, we follow plain language and web best practices. But where we vary f
 **Email suggestions or questions to vawebdesign@va.gov**
 
 
-If you're looking for VA governance requirements -- such as compliance, policies, and regulations -- please go to [VA Web Governance](www.va.gov/web/index.cfm).
+If you're looking for VA governance requirements — such as compliance, policies, and regulations — please go to [VA Web Governance](www.va.gov/web/index.cfm).
