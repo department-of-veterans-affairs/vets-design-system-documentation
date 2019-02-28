@@ -1,7 +1,6 @@
 pipeline {
 
   agent {
-    //label 'vetsgov-general-purpose'
     dockerfile true
   }
 
@@ -21,22 +20,19 @@ pipeline {
     stage('Install npm dependencies') {
       steps {
         sh 'npm install'
+        sh 'bundle install'
       }
     }
 
     stage('Build static site') {
       steps {
-        sh 'bundle install && jekyll build'
+        sh 'npm run build'
+        sh 'jekyll build'
       }
     }
 
     stage('Tar assets and upload to S3') {
       steps {
-        script {
-          ref = sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
-        }
-        echo "ref=${ref}"
-        echo "GIT_COMMIT={$GIT_COMMIT}"
         sh 'tar -cf _site.tar.bz2 _site/'
 
         withCredentials([[
@@ -44,7 +40,7 @@ pipeline {
           credentialsId:    'vetsgov-website-builds-s3-upload',
           usernameVariable: 'AWS_ACCESS_KEY', 
           passwordVariable: 'AWS_SECRET_KEY']]) {
-          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/bill_test_ev/bill_test_filename.tar.bz2"
+          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/bill_test_filename.tar.bz2"
         }
       }
     }
