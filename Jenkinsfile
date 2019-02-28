@@ -27,7 +27,7 @@ pipeline {
     stage('Build static site') {
       steps {
         sh 'npm run build'
-        sh 'jekyll build'
+        sh 'bundle exec jekyll build'
       }
     }
 
