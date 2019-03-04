@@ -12,6 +12,15 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### March 4, 2019
+
+**Site updates**
+
+- Added form control documentation
+- Added image aspect ratio documentation 
+
+---
+
 ### February 21, 2019
 
 **5.3.0**
