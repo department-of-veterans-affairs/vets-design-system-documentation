@@ -2,7 +2,6 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
-package-lock.json
 .DS_Store
 src/vendor
 tmp_remote_assets
