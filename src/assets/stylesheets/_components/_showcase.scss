@@ -116,3 +116,25 @@
   display: inline-block;
   margin-right: 8px;
 }
+
+.site-aspect-ratio {
+   background-color: $color-primary-alt-light;
+   position: relative;
+   width: 100%;
+}
+
+.site-aspect-ratio--11 {
+  padding-top: 100%;
+}
+
+.site-aspect-ratio--21 {
+  padding-top: 50%;
+}
+
+.site-aspect-ratio--32 {
+  padding-top: 66.66666%
+}
+
+.site-aspect-ratio--72 {
+  padding-top: 28.5714%
+}
