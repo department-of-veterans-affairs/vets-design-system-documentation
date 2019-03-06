@@ -32,6 +32,9 @@ pipeline {
     }
 
     stage('Tar assets and upload to S3') {
+      when {
+        expression { env.BRANCH_NAME == 'master' }
+      }
       steps {
         sh 'tar -cf _site.tar.bz2 _site/'
 
