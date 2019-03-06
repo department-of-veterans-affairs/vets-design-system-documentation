@@ -8,7 +8,6 @@ gulp.task('copy-uswds-js', function (done) {
     .pipe(gulp.dest('src/vendor/javascripts'));
 
   return stream;
-  done();
 });
 
 
@@ -19,7 +18,6 @@ gulp.task('copy-react-js', function (done) {
     .pipe(gulp.dest('src/_includes/react'));
 
   return stream;
-  done();
 });
 
 gulp.task('copy-formation-js', function (done) {
@@ -29,7 +27,6 @@ gulp.task('copy-formation-js', function (done) {
     .pipe(gulp.dest('src/vendor/javascripts'));
 
   return stream;
-  done();
 });
 
 
