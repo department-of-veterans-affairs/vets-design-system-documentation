@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: color-palette
-title: Color Palette
+title: Color palette
 ---
 
-# Color Palette
+# Color palette
 
 <h3>
 

@@ -3,8 +3,8 @@ layout: default
 sub_section: form-templates
 title: Form templates
 anchors:
-  - anchor: Address Form
-  - anchor: Name Form
+  - anchor: Address form
+  - anchor: Name form
 ---
 
 # Form patterns
@@ -15,7 +15,7 @@ Common form structures and designs used on VA.gov
 
 ---
 
-## Address Form
+## Address form
 
 <div class="site-c-showcase">
 {% include_relative html/address-form.html %}
@@ -25,7 +25,7 @@ Common form structures and designs used on VA.gov
 
 ---
 
-## Name Form
+## Name form
 
 <div class="site-c-showcase">
 {% include_relative html/name-form.html %}

@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: loading-indcators
-title: Loading Indicators
+title: Loading indicators
 ---
 
-# Loading Indicators
+# Loading indicators
 
 <div class="site-c-showcase">
 {% include_relative html/loading-indicator.html %}

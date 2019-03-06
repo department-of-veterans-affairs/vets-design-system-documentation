@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: address-block
-title: Address Block
+title: Address block
 ---
 
-# Address Block
+# Address block
 
 <div class="site-c-showcase">
 {% include_relative html/address-block.html %}

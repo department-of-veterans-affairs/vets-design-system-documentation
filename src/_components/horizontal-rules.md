@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: horizontal-rules
-title: Horizontal Rules
+title: Horizontal rules
 ---
 
-# Horizontal Rules
+# Horizontal rules
 
 ## Stars
 

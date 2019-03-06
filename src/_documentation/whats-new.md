@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: whats-new
-title: What’s New?
+title: What’s new?
 ---
 
 # What’s new?
@@ -17,7 +17,7 @@ The latest news and updates on Formation and the content style guide
 **Site updates**
 
 - Added form control documentation
-- Added image aspect ratio documentation 
+- Added image aspect ratio documentation
 
 ---
 
