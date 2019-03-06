@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: float-grid
-title: Float Grid
+title: Float grid
 ---
 
-# Float Grid
+# Float grid
 
 <div class="va-introtext" markdown="1">
 The float grid is the grid provided by the U.S. Web Design System. For a grid that offers more flexibility, see the [flexbox grid](flexbox-grid.html).

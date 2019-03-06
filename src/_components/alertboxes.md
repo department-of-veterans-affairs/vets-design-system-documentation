@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: alertboxes.md
-title: Alert Boxes
+title: Alert boxes
 ---
 
-# Alert Boxes
+# Alert boxes
 
 <p class="va-introtext">Alerts keep users informed of important and sometimes time-sensitive changes.</p>
 

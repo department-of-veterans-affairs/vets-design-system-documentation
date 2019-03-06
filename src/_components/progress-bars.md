@@ -1,12 +1,12 @@
 ---
 layout: default
 sub_section: progress-bars
-title: Progress Bars
+title: Progress bars
 ---
 
-# Progress Bars
+# Progress bars
 
-## Standard Progress Bar
+## Standard progress bar
 
 <div class="site-c-showcase">
 {% include_relative html/progress-bar.html %}
@@ -14,7 +14,7 @@ title: Progress Bars
 
 {% include snippet.html content='html/progress-bar.html' %}
 
-## Segmented Progress Bar
+## Segmented progress bar
 
 <div class="site-c-showcase">
 {% include_relative html/segmented-progress-bar.html %}

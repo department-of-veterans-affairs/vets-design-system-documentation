@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: flexbox-grid
-title: Flexbox Grid
+title: Flexbox grid
 ---
 
 # Flexbox grid

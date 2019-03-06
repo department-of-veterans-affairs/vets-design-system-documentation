@@ -1,10 +1,10 @@
 ---
 layout: default
 sub_section: additional-info
-title: Additional Info
+title: Additional info
 ---
 
-# Additional Info
+# Additional info
 
 <div class="va-introtext" markdown="1">
 AdditionalInfo components are interactive components that reveal and hide content from the page.
