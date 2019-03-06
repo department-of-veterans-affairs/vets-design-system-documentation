@@ -10,7 +10,6 @@ anchors:
   - anchor: Continue status
   - anchor: Alert boxes with expandable content
   - anchor: Background color only
-  - anchor: Content variations
 ---
 
 # Alert boxes
@@ -88,14 +87,6 @@ Any style of alert box can be made to be a background color only.
 </div>
 
 {% include snippet.html content='html/alert-background-color.html' %}
-
-## Content variations
-
-<div class="site-c-showcase">
-{% include_relative html/alert-content.html %}
-</div>
-
-{% include snippet.html content='html/alert-content.html' %}
 
 ## Accessibility
 
