@@ -42,10 +42,6 @@
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
-    "react": "^15.5.4",
-    "react-addons-update": "^15.6.2",
-    "react-dom": "^15.5.4",
-    "react-scroll": "^1.7.10",
     "resolve-url-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -58,10 +54,9 @@
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^5.3.0",
     "@department-of-veterans-affairs/formation-react": "^3.0.0",
-    "@department-of-veterans-affairs/react-jsonschema-form": "^1.0.0"
-  },
-  "peerDependencies": {
     "react": "^15.5.4",
-    "uswds": "1.4.2"
+    "react-addons-update": "^15.6.2",
+    "react-dom": "^15.5.4",
+    "react-scroll": "^1.7.10"
   }
 }

@@ -8,7 +8,6 @@ gulp.task('css-paths', function (done) {
     .pipe(replace(/url\(\//gi, 'url('))
     .pipe(gulp.dest('./'));
   return stream;
-  done();
 });
 
 gulp.task('paths', gulp.series('css-paths' ));

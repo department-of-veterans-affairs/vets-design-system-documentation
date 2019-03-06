@@ -6,7 +6,6 @@ var clean = require('gulp-clean');
 gulp.task('clean-remote-assets', function (done) {
   return gulp.src('./node_modules/formation', {read: false, allowEmpty: true})
     .pipe(clean());
-  done();
 });
 
 

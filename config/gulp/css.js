@@ -7,7 +7,6 @@ gulp.task('copy-fontawesome-css', function (done) {
     .pipe(gulp.dest('src/vendor/css'));
 
   return stream;
-  done();
 });
 
 gulp.task('copy-uswds-css', function (done) {
@@ -16,7 +15,6 @@ gulp.task('copy-uswds-css', function (done) {
     .pipe(gulp.dest('src/vendor/css'));
 
   return stream;
-  done();
 });
 
 gulp.task('copy-formation-css', function (done) {
@@ -25,7 +23,6 @@ gulp.task('copy-formation-css', function (done) {
     .pipe(gulp.dest('src'));
 
   return stream;
-  done();
 });
 
 gulp.task(task, gulp.series(
