@@ -2,18 +2,100 @@
 layout: default
 sub_section: alertboxes.md
 title: Alert boxes
+anchors:
+  - anchor: Information status
+  - anchor: Warning status
+  - anchor: Success status
+  - anchor: Error status
+  - anchor: Continue status
+  - anchor: Alert boxes with expandable content
+  - anchor: Background color only
+  - anchor: Content variations
 ---
 
 # Alert boxes
 
 <p class="va-introtext">Alerts keep users informed of important and sometimes time-sensitive changes.</p>
 
+
+
+## Information status
+
+Used to provide helpful information to a user.
+
 <div class="site-c-showcase">
-{% include_relative html/alertbox.html %}
+{% include_relative html/alert-informational.html %}
 </div>
 
-{% include snippet.html content='html/alertbox.html' %}
+{% include snippet.html content='html/alert-informational.html' %}
 
+## Warning status
+
+Used to warn a user, but necessary when something has gone wrong.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-warning.html %}
+</div>
+
+{% include snippet.html content='html/alert-warning.html' %}
+
+## Success status
+
+Used to indicate success.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-success.html %}
+</div>
+
+{% include snippet.html content='html/alert-success.html' %}
+
+## Error status
+
+Used when there is a problem or something destructive is about to occur.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-error.html %}
+</div>
+
+{% include snippet.html content='html/alert-error.html' %}
+
+## Continue status
+
+Used to prompt user to sign in or create an account to access certain information.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-continue.html %}
+</div>
+
+{% include snippet.html content='html/alert-continue.html' %}
+
+## Alert boxes with expandable content
+
+Any style of alert box may be made to include expandable content.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-expandable.html %}
+</div>
+
+{% include snippet.html content='html/alert-expandable.html' %}
+
+## Background color only
+
+Any style of alert box can be made to be a background color only.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-background-color.html %}
+</div>
+
+{% include snippet.html content='html/alert-background-color.html' %}
+
+## Content variations
+
+<div class="site-c-showcase">
+{% include_relative html/alert-content.html %}
+</div>
+
+{% include snippet.html content='html/alert-content.html' %}
 
 ## Accessibility
 
