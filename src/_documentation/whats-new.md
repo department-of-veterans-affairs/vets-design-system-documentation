@@ -12,6 +12,13 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### March 6, 2019
+
+**Site updates**
+- Update documentation for alerts 
+
+---
+
 ### March 4, 2019
 
 **Site updates**
