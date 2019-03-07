@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if page.homepage %}class="vads-u-background-color--white"{% endif %}>
 
     {% include header.html %}
 
@@ -11,7 +11,7 @@
 
     <div class="site-c-content">
       {% if page.homepage %}
-      <main id="main-content" class="site-l-wrapper site-l-wrapper--center">
+      <main id="main-content">
         {{ content }}
       </main>
       {% else %}

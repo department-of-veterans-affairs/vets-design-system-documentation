@@ -1,7 +1,11 @@
 .site-c-sidenav-list {
   list-style: none;
-  padding: $units-5;
+  padding: units(5);
   margin: 0;
+
+  @include media($large-screen) {
+    padding-left: units(10);
+  }
 }
 
 .site-c-sidenav-list__item {
