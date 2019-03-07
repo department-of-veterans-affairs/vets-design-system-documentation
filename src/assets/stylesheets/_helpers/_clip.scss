@@ -1,0 +1,11 @@
+.clip-bottom {
+  overflow: hidden;
+  -webkit-clip-path: polygon(100% 0, 100% 92%, 82vw 100%, 0 91%, 0 0);
+  clip-path: polygon(100% 0, 100% 92%, 82vw 100%, 0 91%, 0 0);
+}
+
+.clip-top {
+  overflow: hidden;
+  -webkit-clip-path: polygon(18% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);
+  clip-path: polygon(18% 0, 100% 7%, 100% 100%, 0 100%, 0 8%);
+}

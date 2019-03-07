@@ -7,7 +7,11 @@
   padding-right: 0;
 
   @include media($nav-width) {
-    padding-right: $units-5;
+    padding-right: units(5);
+  }
+
+  @include media($large-screen) {
+    padding-right: units(10);
   }
 }
 

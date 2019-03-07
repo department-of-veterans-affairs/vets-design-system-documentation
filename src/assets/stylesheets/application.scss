@@ -23,6 +23,7 @@ font-matter: yay
 
 // Site CSS
 @import '_settings/variables';
+@import '_helpers/clip';
 @import '_helpers/media';
 @import '_base/base';
 @import '_layout/site-content';
@@ -72,4 +73,38 @@ font-matter: yay
   padding:12px;
   background: #e1f3f8;
   border: 1px solid #046b99;
+}
+
+.site-section-highlight {
+  padding-top: units(1);
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: units(10);
+    display: block;
+    top: units(3);
+    height: 5px;
+    background-color: $color-secondary;
+  }
+
+  a {
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: $color-link-default;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+.site-resources {
+  background: #16171F;
 }

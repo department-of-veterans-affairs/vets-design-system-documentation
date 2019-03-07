@@ -2,12 +2,13 @@
 .site-resource-link:visited {
   display: flex;
   padding: units(4);
-  border: 1px solid $color-gray-lighter;
+  border: 3px solid $color-primary;
   color: $color-base;
   text-decoration: none;
   background-color: #fff;
   height: 100%;
   align-items: flex-start;
+  transition: none;
 
   img {
     flex-shrink: 0;
@@ -17,7 +18,7 @@
 }
 
 .site-resource-link:hover {
-  border-color: $color-primary;
+  border-color: $color-gold;
   background-color: white;
   text-decoration: none;
 }
