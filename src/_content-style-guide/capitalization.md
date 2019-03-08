@@ -18,11 +18,9 @@ __Exceptions where we use title capitalization__
 
 
 
-__Like this | Not this__
-
------------- | -------------
-
-Apply now for GI Bill benefits | Apply Now For GI Bill Benefits
+| Like this  |  Apply now for GI Bill benefits |
+| ------------- | ------------- |
+| Not this  | Apply Now For GI Bill Benefits  |
 
 
 

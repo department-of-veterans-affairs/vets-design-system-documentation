@@ -16,12 +16,12 @@ The purpose of this style guide is to help you create better content, not better
 
 We've organized the style guide into searchable topics, so you can go directly to the section you need guidance on. This guide covers common issues on VA.gov. It does not cover basic writing mechanics and grammar. (We assume you know those already.)
 
-In general, we follow plain language and web best practices. But where we vary from standard practices, we call them out in the [word list](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/word-list.html) or as a topic section.
+In general, we follow plain language and web best practices. But where we vary from standard practices, we call them out in the [word list](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/word-list.html) or as a topic section. 
 
 **For topics not found in this style guide, refer to:**
 
 - AP Style
-- [Merriam-Webster Dictionary](www.merriam-webster.com)
+- [Merriam-Webster Dictionary](https://www.merriam-webster.com/)
 - /?? OPIA style book?? is it linkable or behind intranet? I saw some governance rule we're not supposed to link to intranet??// **@Gary Hicks & Josh Tuscher**
 
 **Want to know when we have updates to the style guide?**
@@ -45,7 +45,7 @@ In general, we follow plain language and web best practices. But where we vary f
     </fieldset>
   </form>
 
-**Email suggestions or questions to vawebdesign@va.gov**
+**Email suggestions or questions to** vawebdesign@va.gov
 
 
 If you're looking for VA governance requirements — such as compliance, policies, and regulations — please go to [VA Web Governance](www.va.gov/web/index.cfm).

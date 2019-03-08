@@ -18,7 +18,7 @@ __Exceptions__
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
   - Mon., Tue., Wed., Thu., Fri., Sat., Sun.
   - Jan., Feb., Mar., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate May, June, July.)
-  - In application form fields, we often use mm/dd/yyyy construction.
+  - In application form fields, we often use the construction: mm/dd/yyyy
 <br>
 
 
@@ -30,15 +30,15 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 
 -  Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
 - Include the minutes, even when on-the-hour.
-  - __Do:__ 8:00 a.m. to 5:30 p.m. ET    
-  - __Don't:__ 8 a.m. to 5:30 p.m. ET  
-- Include time zones as CT, ET, MT, or PT (no parentheses, periods, or daylight/standard). __([NOTE:vha doesn’t use (paren) – part of timestamp; vba does; ])__
+  - __Like this:__ 8:00 a.m. to 5:30 p.m. ET    
+  - __Not this:__ 8 a.m. to 5:30 p.m. ET  
+- Include time zones as CT, ET, MT, or PT (no parentheses, periods, or daylight/standard). 
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 
 - In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m., Monday through Friday.
 - Where space is limited, indicate ranges with the – en dash (not the shorter - hyphen) and a space on either side. Don't combine the en dash with from/between ​sentence construction.
-  - __Do:__ 8:00 a.m. – noon CT
-  - __Don't:__ from 8:00 a.m. – noon CT
+  - __Like this:__ 8:00 a.m. – noon CT
+  - __Not this:__ from 8:00 a.m. – noon CT
 
 
 
@@ -54,6 +54,6 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 - For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 
-- Use "select" or "press" to indicate the menu option after dialing a phone number. Both of these terms are considered 508 compliant.
-  - __Example:__ Call us toll free at 800-123-1234, then select 2, from 8:00 a.m. to 5:00 p.m. CT.
+- Use "select" to indicate the menu option after dialing a phone number. 
+  - __Like this:__ Call us toll free at 800-123-1234, then select 2, from 8:00 a.m. to 5:00 p.m. CT.
 

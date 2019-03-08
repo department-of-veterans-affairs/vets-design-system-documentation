@@ -19,8 +19,19 @@ We define better content as:
 - **Clear and helpful.** We break down complex information into simple, snackable chunks, and provide it progressively, when and where they need it, so it's easy to find, easy to understand, and not overwhelming.
 - **Empathetic.** We talk person-to-person with our customers, and use language that puts the person first, not the disability, condition, age, gender, or race. 
 
+
+| Like this  | Not this |
+| ------------- | ------------- |
+| If you limit consent, it may take us longer to get your records. Your doctor will follow the limits you specify. | The attending physician will abide by the limitation the Veteran specifies. If the Veteran opts to limit consent, please note it may take longer for VA to receive the Veteran’s records. |
+| Permission to share your medical records | Patient Authorization To Disclose Information to the Department of Veterans Affairs |
+| service member | …Service member…Servicemember…Service Member …service member |
+| Accept the terms of use to sign in.| Unless you accept the terms of use, you will not be able to sign in.|
+
+
+
+
 **Based on Veteran feedback**
 
-During user research, Veterans told us that they wanted information in a consumable way, with consistent, intuitive labels that help them figure out where to go and what to do. 
+These principles are based on feedback from Veterans. During user research, they told us that they wanted information in a consumable and manageable way, with consistent, intuitive labels that help them figure out where to go and what to do. 
 
 They wanted genuine empathy, not false formality ("I don't care if you call me 'sir' if you can't help me"). And they wanted the same level of customer service they're used to from other online brands.  
