@@ -109,9 +109,10 @@ hub:
     hex: 6f7a41
   - name: hub-burials
     hex: 357ab2
-  - name: hub-records
-    hex: 864381
-
+  - name: hub-family-member
+    hex: 003e73
+  - name: hub-service-member
+    hex: 003e73
 
 
 

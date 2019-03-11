@@ -11,7 +11,10 @@
       {% endif %}
     ">.vads-u-color--{{ include.name }}</strong>
   </div>
-  <div class="medium-screen:vads-u-margin-left--auto">
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-{{ include.name }}
+    </div>
     <div class="utility-value-color">
       <span class="utility-value-color__chip vads-u-background-color--{{ include.name }}"></span>
       #{{ include.hex }}
