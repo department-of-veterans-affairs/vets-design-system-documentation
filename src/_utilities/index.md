@@ -32,12 +32,28 @@ Designers should explore the available utilities in Formation. Because designs w
 
 Utilities should be given descriptive class names that clearly reflect their property.
 
-**Bad**
-```css
-.vads-u-mb5
-```
 
-**Good**
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Use descriptive class names that clearly indicate the associated CSS property.
+
+#### Example
 ```css
 .vads-u-margin-bottom--5
 ```
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content" markdown="1">
+Don’t use acroynms or shorthand, ambiguous class names that do not clearly indicate the associated CSS property.
+
+#### Example
+```css
+.vads-u-mb5
+```
+</div>
+</div>
+</div>
