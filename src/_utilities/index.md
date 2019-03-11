@@ -30,8 +30,7 @@ Designers should explore the available utilities in Formation. Because designs w
 
 ## Naming
 
-Utilities should be given descriptive class names that clearly reflect their property.
-
+Be descriptive and avoid creating ambiguity in how one may interpret the class names.
 
 <div class="do-dont">
 <div class="do-dont__do">
