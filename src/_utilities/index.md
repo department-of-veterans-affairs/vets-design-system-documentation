@@ -30,7 +30,7 @@ Designers should explore the available utilities in Formation. Because designs w
 
 ## Naming
 
-Be descriptive and avoid creating ambiguity in how one may interpret the class names.
+Be descriptive and avoid creating ambiguity in how one may interpret the utility class names.
 
 <div class="do-dont">
 <div class="do-dont__do">
