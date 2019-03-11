@@ -1,41 +1,38 @@
 ---
 layout: default
-sub_section: va-forms
-title: VA forms
+sub_section: government-forms
+title: Government forms
 ---
 
-# VA forms
 
-/[TO DISCUSS: Text taken from Andy's USCIS Content Guide. We should adapt this style for VA form names on va.gov. Putting 'VA Form' in front of all forms seems not easy to scan. Unless there's some very special VA reason? In general, all government form names are super long, and VA forms don't appear to be more unusually so./Jen]/ 
+# Government forms
 
-Form numbers are always used as a secondary reference on myUSCIS. We break from the syle used on USCIS' main website (i.e., *Form N-400, Application for Naturalization*) by dropping the word *form* and putting the number after the title in parenthesis. We need to maintain the form number for parity with the paper form, user recall, and SEO, but it is not a central organizing feature on myUSCIS or for many of our users.
+We often need to talk about or direct people to VA forms and other government forms, such as Department of Defense forms (DD forms). 
 
-Always include the form number in parenthesis on first reference on each page. You do not need to include it on subsequent references. You also do not need to include it if the form number is displayed to users as a visual element.
+## VA forms
 
-> `Do:` *Application for Naturalization (N-400)*
+When referring to a VA form in the first instance of body copy, lead with the name of the form (preceded by the article "a" or "an," rather than "the"), then the form number in parentheses. [@BETH/DANIELLE - UNCLEAR WHY WE CALL FOR USING A/AN, AND NOT THE.] 
 
-> `Don't:` *Form N-400, Application for Naturalization; N-400 Application for Naturalization; N-400: Application for Naturalization*
-
+- **Like this:** Fill out an Application for Health Benefits (VA Form 10-10EZ).
 
 
-/[Below from GH vets.gov content style guide]
 
-# Government Forms (Applications) Referenced on vets.gov
+On subsequent mentions, refer to it by the VA form number by itself. 
 
-When referring to a form, include "VA Form" in front of the number of the form and cap the F in "Form." For example, "Download VA Form 82-3456."
+- **Like this:**  You can apply online or fill out and mail an Application for Burial Benefits (VA Form 21P-530). [Download VA Form 21P-530 (PDF)](https://www.vba.va.gov/pubs/forms/VBA-21P-530-ARE.pdf) 
 
-When referred to in a sentence, lead with the name of the form (preceded by the article "a" or "an" rather than "the") followed by the number of the form in parentheses. Then, to link to the PDF, use the form number again for the sake of brevity:
 
-E.g. Fill out an Application for Burial Benefits (VA Form 21P-530). [Download VA Form 21P-530](https://www.vba.va.gov/pubs/forms/VBA-21P-530-ARE.pdf).
 
-## Common government forms
+## Common government forms 
+
+These are the most common forms we reference on our site. For VA forms not listed here, see **[@BETH/DANIELLE: SHOULD WE LINK TO VA FORMS LIBRARY HERE?**  https://www.va.gov/vaforms/  **- ALSO, HOW DO WE CURRENTLY REFER TO NON-VA FORMS - JUST LIKE THE ^, BUT WITHOUT "VA"? ]**
 
 | Form Number      | Form Name                                                    |
 | ---------------- | ------------------------------------------------------------ |
-| DD 214           | Certificate of Release of Discharge from Active Duty (commonly called discharge or separation papers) |
-| DD Form 149      | Application for Correction of Military Record (commonly referred to as form DD149) |
-| DD Form 293      | Application for the Review of Discharge or Dismissal (commonly referred to as form DD293) |
-| SGLV 8283        | Claim for Death Benefits                                     |
+| DD 214           | Certificate of Release of Discharge from Active Duty (commonly called discharge or separation papers) <br />**[@BETH/DANIELLE - DO WE REFERE TO THESE DD FORMS  - "VA FORM DD 214"? THESE ARE DOD, NOT VA, FORMS, AREN'T THEY? OR DOES VA HAVE OUR OWN VERSIONS OF THESE DOD FORMS?)** |
+| DD Form 149      | Application for Correction of Military Record (commonly referred to as form DD149) **[@BETH/DANIELLE - ARE WE SAYING IN THIS PARENTHETICAL THAT IT'S OKAY FOR US TO REFER TO IT AS "form DD149"?  INSTEAD OF USING ^ GUIDELINES: "Fill out an Application for Correction of Military Record (VA Form DD 149)   / or (DD Form 149)."  <br />Or ?? "Fill out an Application for Correction of Military Record (DD Form 149), commonly referred to as DD149"?** |
+| DD Form 293      | Application for the Review of Discharge or Dismissal (commonly referred to as form DD293)  **[@BETH/DANIELLE - NOTE ^ ]** |
+| SGLV 8283        | Claim for Death Benefits  **[@BETH/DANIELLE - THESE SGLV FORMS ARE VA FORMS. DO WE NEED TO PUT "VA Form" IN FRONT OF THEM, PER GUIDANCE?  <br />EX: "Fill out a Claim for Death Benefits (VA Form SGLV 8283)" ?   And would the subsequent mention be:  "Download VA Form SGLV 8283 (PDF)"  or  "Download SGLV 8283 (PDF)"? ]** |
 | SGLV 8286        | Servicemembers' Group Life Insurance Election and Certificate |
 | SGLV 8600        | Application for TSGLI Benefits                               |
 | SGLV 8715        | Application for the Servicemembers' Group Life Insurance (SGLI) Disability Extension |
@@ -63,3 +60,4 @@ E.g. Fill out an Application for Burial Benefits (VA Form 21P-530). [Download VA
 | VA Form 29-541   | Certificate Showing Residence and Heirs of Deceased Veteran  |
 | VA Form 4107     | Your Rights to Appeal our Decision                           |
 | VA Form 5655     | Financial Status Report                                      |
+
