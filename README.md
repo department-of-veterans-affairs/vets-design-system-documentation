@@ -25,7 +25,10 @@ $ npm run start
 
 ## Adding content to the documentation site
 
-To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site.
+To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site
+
+**Want add more to your content presentation?**
+Use these [html snippets](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki/Writing-snippets) in your markdown.
 
 The design system can be found
 * `/src/_design-system/`
