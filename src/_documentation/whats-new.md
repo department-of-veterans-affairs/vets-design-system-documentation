@@ -12,10 +12,36 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### March 13, 2019
+
+**Site updates**
+- Updates external [link icon documentation](../design/typography.html#links);
+
+---
+
+### March 12, 2019
+
+**5.4.2**
+- Adds external link icon CSS into Formation design system
+
+---
+
+### March 11, 2019
+
+**5.4.1**
+- Creats Sass variables for hub colors that are consistent with the rest of color variable naming conventions
+- Adds two new hub colors to utility classes for color, background color, and border color
+
+**Site updates**
+- New layout for [system color palette](../design/color-palette.html)
+- Updated documentation for color, background color, and border color to include new hub colors and Sass variable names
+
+---
+
 ### March 6, 2019
 
 **Site updates**
-- Update documentation for alerts 
+- Update documentation for alerts
 
 ---
 
