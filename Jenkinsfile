@@ -36,14 +36,14 @@ pipeline {
         expression { env.BRANCH_NAME == 'master' }
       }
       steps {
-        sh 'tar -cf _site.tar.bz2 _site/'
+        sh 'tar -C _site -cf _site.tar.bz2 .'
 
         withCredentials([[
           $class:           'UsernamePasswordMultiBinding', 
           credentialsId:    'vetsgov-website-builds-s3-upload',
           usernameVariable: 'AWS_ACCESS_KEY', 
           passwordVariable: 'AWS_SECRET_KEY']]) {
-          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/production.tar.bz2"
+          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/vagovdev.tar.bz2"
         }
       }
     }
