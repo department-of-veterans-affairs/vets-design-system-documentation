@@ -30,7 +30,7 @@ How you implement Formation into your project depends on how your project is str
 We recommend using `npm` to install the formation package into your project.
 
 ```bash
-$npm install --save @department-of-veterans-affairs/formation
+$ npm install --save @department-of-veterans-affairs/formation
 ```
 
 The Formation module is now installed as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/formation/dist` directory.
@@ -46,7 +46,7 @@ If you would like to use the Sass functions, such as for [spacing](../design/spa
 Because Formation still uses some variables from the U.S. Web Design System, you will need to add USWDS 1.4.2 as a dependency and important some files into your scss.
 
 ```bash
-$npm install usds@1.4.2
+$ npm install usds@1.4.2
 ```
 
 Again, here is how this documentation site is importing the U.S. Web Design System Sass files into its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
