@@ -11,6 +11,8 @@ anchors:
 
 # Color usage
 
+![alt text]({{site.baseurl}}/images/shield.png)
+
 ## Success
 
 ## Warnings
