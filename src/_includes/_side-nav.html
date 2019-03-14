@@ -16,7 +16,7 @@
     {% if p.sub_section %}
       {% unless p.sub_section contains "index" %}
         <li class="site-c-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
-          <a class="site-c-sidenav-list__link " href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+          <a class="site-c-sidenav-list__link " href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
           {% if p.anchors %}
             <ul class="site-c-sidenav-list__sub">
               {% for item in p.anchors %}

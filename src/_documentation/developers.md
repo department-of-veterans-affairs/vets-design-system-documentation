@@ -55,7 +55,7 @@ project-root
 2) Place the contents of the `dist` folder where you like and use `gulp-string-replace` to change the paths. This documentation site is doing exactly that. Take a look at the [script]
 (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/config/gulp/paths.js) in use.
 
-### Sass functions and variables
+### Sass functions, variables, and interactive components
 
 If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can either move the necessary files with gulp, or import the files from your project scss. This depends greatly only your project structure. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L13).
 
@@ -66,3 +66,7 @@ $ npm install usds@1.4.2
 ```
 
 Again, here is how this documentation site is importing the U.S. Web Design System Sass files into its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
+
+#### Javascript
+
+In order to use some interactive components, such as [accordions](../components/accordions), you will need to grab `uswds.min.js` or `uswds.js` from `node_modules/uswds/dist/js` and link to it in your project.
