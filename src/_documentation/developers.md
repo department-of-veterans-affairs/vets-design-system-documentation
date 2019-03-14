@@ -25,7 +25,7 @@ How to install Formation and use with your project.
 How you implement Formation into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. We will have a direct download available in the future.
 
 
-### Install Formation into project
+### Install Formation into your project
 
 We recommend using `npm` to install the formation package into your project.
 
@@ -38,6 +38,22 @@ The Formation module is now installed as a dependency. You can use the compiled 
 If you would like to use the un-compiled Sass files, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
 
 **Note:** We do not recommend editing files in the `node_modules` directory because once the packages are updated, your edits will be lost. We recommend using [gulp](https://gulpjs.com/) to move files from your `node_modules` directory into your project folders. To see how this documentation site is moving files, look at the [gulp build script](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/config/gulp/build.js).
+
+#### Images in Formation
+
+**Important:** Images linked in Formation’s CSS file use absolute paths, so there are two options for getting images to appear in your project.
+
+1) Place the contents of the `dist` folder in your project root.
+```
+project-root
+├── fonts/
+├── img/
+├── formation.js
+├── formation.min-css
+```
+
+2) Place the contents of the `dist` folder where you like and use `gulp-string-replace` to change the paths. This documentation site is doing exactly that. Take a look at the [script]
+(https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/config/gulp/paths.js) in use.
 
 ### Sass functions and variables
 
