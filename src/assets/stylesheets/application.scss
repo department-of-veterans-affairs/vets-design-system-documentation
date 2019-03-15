@@ -2,14 +2,6 @@
 font-matter: yay
 ---
 
-// Get variables from USWDS
-@import '../../../node_modules/uswds/src/stylesheets/lib/bourbon';
-@import '../../../node_modules/uswds/src/stylesheets/lib/neat';
-@import '../../../node_modules/uswds/src/stylesheets/core/_variables.scss';
-@import '../../../node_modules/uswds/src/stylesheets/core/_grid.scss';
-@import '../../../node_modules/uswds/src/stylesheets/lib/addons/_font-stacks.scss';
-
-
 // Formation Site files
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-variables';
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-breakpoints';
