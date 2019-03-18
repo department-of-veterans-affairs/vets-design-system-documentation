@@ -39,6 +39,7 @@ In general, when there is an error on a form, a few things must happen.
 * The form field and its corresponding `<label>` are wrapped in a container with a class name of `usa-input-error`. This will provide a thick border and padding to visual indicate an error message to users who might have difficulty perceiving contrast. It also changes the border of the input to red as a secondary indicator.
 * An error message is placed between the label and the form field.
 * The form field receives an `aria-describedby` attribute that references the `id` of the error message.
+* Prepending `<span class="sr-only">Error</span>` to error messages alerts screen screen readers clearly that an error exists.
 
 The HTML for a typical error is:
 
