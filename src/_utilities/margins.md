@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: margins
 title: Margins
 anchors:
   - anchor: Margin on all sides

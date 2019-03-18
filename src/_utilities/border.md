@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: border
 title: Border
 anchors:
   - anchor: Border shorthand
@@ -140,6 +139,6 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 {% include iframe-preview.html src="html/borders-responsive.html" title="Borders" height=200 %}
 
-{% include snippet.html content='html/borders-responsive.html' %}
+{% include snippet.html content='_html/borders-responsive.html' %}
 
 {% include _breakpoint-names.html %}

@@ -13,20 +13,20 @@ title: Buttons
 The default buttons are the most commonly-used button on the site.
 
 <div class="site-c-showcase">
-{% include_relative html/buttons-default.html %}
+{% include_relative _html/buttons-default.html %}
 </div>
 
-{% include snippet.html content='html/buttons-default.html' %}
+{% include snippet.html content='_html/buttons-default.html' %}
 
 ## Primary buttons
 
 Use the **primary** button for the primary action on a page.
 
 <div class="site-c-showcase">
-{% include_relative html/buttons-primary.html %}
+{% include_relative _html/buttons-primary.html %}
 </div>
 
-{% include snippet.html content='html/buttons-primary.html' %}
+{% include snippet.html content='_html/buttons-primary.html' %}
 
 ### Research insight
 
@@ -37,30 +37,30 @@ Our researchers learned that users were missing calls to action on some pages be
 Use **secondary** buttons for any actions that need to be _downplayed_ against other actions.
 
 <div class="site-c-showcase">
-{% include_relative html/buttons-secondary.html %}
+{% include_relative _html/buttons-secondary.html %}
 </div>
 
-{% include snippet.html content='html/buttons-secondary.html' %}
+{% include snippet.html content='_html/buttons-secondary.html' %}
 
 ## Big buttons
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
 
 <div class="site-c-showcase">
-{% include_relative html/buttons-big.html %}
+{% include_relative _html/buttons-big.html %}
 </div>
 
-{% include snippet.html content='html/buttons-big.html' %}
+{% include snippet.html content='_html/buttons-big.html' %}
 
 ## Disabled buttons
 
 Only `<button>` elements can be disabled with a `disabled` attribute. To make a `<a>` element disabled, you must use `.usa-button.usa-button-disabled` on the element.
 
 <div class="site-c-showcase">
-{% include_relative html/buttons-disabled.html %}
+{% include_relative _html/buttons-disabled.html %}
 </div>
 
-{% include snippet.html content='html/buttons-disabled.html' %}
+{% include snippet.html content='_html/buttons-disabled.html' %}
 
 ## Guidance
 

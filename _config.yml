@@ -18,9 +18,9 @@ title: VA.gov Design System
 description: >- # this means to ignore newlines until "baseurl:"
   Design System for VA.gov
 baseurl: "/vets-design-system-documentation" # the subpath of your site, e.g. /blog
-url: "https://www.vets.gov" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://design.va.gov" # the base hostname & protocol for your site, e.g. http://example.com
 
-project_name: Vets.gov Design System
+project_name: VA.gov Design System
 
 # Common links
 sketch_cloud_link: https://sketch.cloud/s/8WM9O
@@ -44,18 +44,25 @@ sass:
 collections:
   documentation:
     output: true
+    permalink: /:collection/:title
   content-style-guide:
     output: true
+    permalink: /:collection/:title
   design:
     output: true
+    permalink: /:collection/:title
   components:
     output: true
+    permalink: /:collection/:title
   patterns:
     output: true
+    permalink: /:collection/:title
   layout:
     output: true
+    permalink: /:collection/:title
   utilities:
     output: true
+    permalink: /:collection/:title
 
 
 includes:

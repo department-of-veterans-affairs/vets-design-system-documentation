@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: developers
 title: For developers
 anchors:
   - anchor: Installation

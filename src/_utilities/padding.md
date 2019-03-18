@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: padding
 title: Padding
 anchors:
   - anchor: Padding on all sides
@@ -140,7 +139,7 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 {% include iframe-preview.html src="html/padding-responsive.html" title="Padding" height=200 %}
 
-{% include snippet.html content='html/padding-responsive.html' %}
+{% include snippet.html content='_html/padding-responsive.html' %}
 
 
 {% include _breakpoint-names.html %}

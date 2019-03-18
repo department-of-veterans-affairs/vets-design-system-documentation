@@ -9,15 +9,15 @@ title: Progress bars
 ## Standard progress bar
 
 <div class="site-c-showcase">
-{% include_relative html/progress-bar.html %}
+{% include_relative _html/progress-bar.html %}
 </div>
 
-{% include snippet.html content='html/progress-bar.html' %}
+{% include snippet.html content='_html/progress-bar.html' %}
 
 ## Segmented progress bar
 
 <div class="site-c-showcase">
-{% include_relative html/segmented-progress-bar.html %}
+{% include_relative _html/segmented-progress-bar.html %}
 </div>
 
-{% include snippet.html content='html/segmented-progress-bar.html' %}
+{% include snippet.html content='_html/segmented-progress-bar.html' %}

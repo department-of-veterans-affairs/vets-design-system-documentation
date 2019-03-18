@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: pages
 title: Pages
 anchors:
   - anchor: Hub pages
@@ -8,13 +7,13 @@ anchors:
 
 # Pages
 
-Pattern documentation on VA.gov's page templates. 
+Pattern documentation on VA.gov's page templates.
 
-## Hub pages 
-A hub page page does the following: 
+## Hub pages
+A hub page page does the following:
 - Provides an executive summary of this hub
 - Provides links to lead users to specific sections about that benefit
-- Crosslink to related benefits 
+- Crosslink to related benefits
 - Allows users to connect via social media
 - Provides contact information for this benefit
 
@@ -30,10 +29,10 @@ We surface information that is important to Veterans first. The hierarchy of a h
 #### Page title (h1)
 Tells the user what's on this page, is also important semantically for html, defined in Foundation [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/design/typography.html#headings)
 #### Intro text
-Similar to the title, Intro text is an executive summary of page content, define in stype in Foundation [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/design/typography.html#paragraphs). Intro text is also important for SEO. 
+Similar to the title, Intro text is an executive summary of page content, define in stype in Foundation [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/design/typography.html#paragraphs). Intro text is also important for SEO.
 
 #### Jump link navigation (On this page)
-Jump link nav serves two purposes: 1) It informs users what sections are on this particular page, and 2) it allows the user to jump to the section they wish to read. 
+Jump link nav serves two purposes: 1) It informs users what sections are on this particular page, and 2) it allows the user to jump to the section they wish to read.
 
 #### Section breaks
 In order to be clear when a section begins, we use a "—★★★★★—" visual treatment documented [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/components/horizontal-rules)
@@ -60,7 +59,7 @@ The right rail contains [this kind] of content. More stuff about the right rail.
 The top of the right rail contains our Promo spot. I don't know anything about this content, but it seems like it should be a component in our design system
 
 #### Accordion
-In the second postion within the right rail, we list accordions containing specific groups of content. These accordions are the lowest priority pieces of content on a hub page, and they are positioned as such—at the bottom of the page. Some examples of accordions are: 
+In the second postion within the right rail, we list accordions containing specific groups of content. These accordions are the lowest priority pieces of content on a hub page, and they are positioned as such—at the bottom of the page. Some examples of accordions are:
 * "Ask questions" a short list of contact emails and phone numbers
 * "Not a Veteran" helpful links for folks that aren't Veterans
 * "Connect with us" social media links

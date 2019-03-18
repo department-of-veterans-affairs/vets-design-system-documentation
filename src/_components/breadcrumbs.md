@@ -7,7 +7,7 @@ title: Breadcrumbs
 # Breadcrumbs
 
 <div class="site-c-showcase">
-{% include_relative html/breadcrumbs.html %}
+{% include_relative _html/breadcrumbs.html %}
 </div>
 
-{% include snippet.html content='html/breadcrumbs.html' %}
+{% include snippet.html content='_html/breadcrumbs.html' %}

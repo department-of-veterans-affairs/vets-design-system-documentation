@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: image-aspect-ratios
 title: Image aspect ratios
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-sub_section: word-list
 title: Word list
+slug: word-list
 ---
 
 # Word list

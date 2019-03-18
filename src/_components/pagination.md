@@ -7,7 +7,7 @@ title: Pagination
 # Pagination
 
 <div class="site-c-showcase">
-{% include_relative html/pagination.html %}
+{% include_relative _html/pagination.html %}
 </div>
 
-{% include snippet.html content='html/pagination.html' %}
+{% include snippet.html content='_html/pagination.html' %}

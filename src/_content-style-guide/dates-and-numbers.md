@@ -1,12 +1,11 @@
 ---
 layout: default
-sub_section: dates-times-and-phone-numbers
 title: Dates, times, and phone numbers
 ---
 
 # Dates, times, and phone numbers
 
-Dates, times, and phone numbers often appear together, so we've put guidelines for these together. 
+Dates, times, and phone numbers often appear together, so we've put guidelines for these together.
 
 __Dates__
 
@@ -32,7 +31,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 - Include the minutes, even when on-the-hour.
   - __Like this:__ 8:00 a.m. to 5:30 p.m. ET    
   - __Not this:__ 8 a.m. to 5:30 p.m. ET  
-- Include time zones as CT, ET, MT, or PT (no parentheses, periods, or daylight/standard). 
+- Include time zones as CT, ET, MT, or PT (no parentheses, periods, or daylight/standard).
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 
 - In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m., Monday through Friday.
@@ -54,6 +53,6 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 - For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 
-- Use "select" to indicate the menu option after dialing a phone number. 
+- Use "select" to indicate the menu option after dialing a phone number.
   - __Like this:__ Call us toll free at 800-123-1234, then select 2, from 8:00 a.m. to 5:00 p.m. CT.
 

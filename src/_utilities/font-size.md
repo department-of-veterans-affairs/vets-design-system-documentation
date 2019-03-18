@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: font-size
 title: Font size
 anchors:
   - anchor: Responsive prefixes
@@ -13,10 +12,10 @@ Change the font size of an element. The font-size classes include [responsive pr
 </div>
 
 <div class="site-c-showcase">
-{% include_relative html/font-size.html %}
+{% include_relative _html/font-size.html %}
 </div>
 
-{% include snippet.html content='html/font-size.html' %}
+{% include snippet.html content='_html/font-size.html' %}
 
 ## Responsive prefixes
 
@@ -24,6 +23,6 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 {% include iframe-preview.html src="html/font-size-responsive.html" title="Font size" height=200 %}
 
-{% include snippet.html content='html/font-size-responsive.html' %}
+{% include snippet.html content='_html/font-size-responsive.html' %}
 
 {% include _breakpoint-names.html %}

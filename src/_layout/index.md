@@ -1,6 +1,6 @@
 ---
 layout: default
-sub_section: index
+index: true
 title: Layout
 ---
 

@@ -9,10 +9,10 @@ title: Sidenav
 <p class="va-introtext">Hierarchical, vertical navigation to place at the side of a page.</p>
 
 <div class="site-c-showcase">
-{% include_relative html/sidenav.html %}
+{% include_relative _html/sidenav.html %}
 </div>
 
-{% include snippet.html content='html/sidenav.html' %}
+{% include snippet.html content='_html/sidenav.html' %}
 
 ## Accessibility
 * Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.

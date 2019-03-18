@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: height-and-width
 title: Height and width
 anchors:
   - anchor: Height

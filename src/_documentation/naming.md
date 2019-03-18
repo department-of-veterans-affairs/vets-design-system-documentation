@@ -1,7 +1,7 @@
 ---
 layout: default
-sub_section: naming
-title: Naming Convention
+sub_section: naming-convention
+title: Naming convention
 ---
 
 # Naming Convention
