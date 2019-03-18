@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: icons
 title: Icons
 anchors:
   - anchor: Navigation

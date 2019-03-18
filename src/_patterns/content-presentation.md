@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: content-presentation
 title: Content presentation
 anchors:
   - anchor: Information callouts
@@ -16,10 +15,10 @@ anchors:
 Information callouts are light blue boxes that call attention to important information.
 
 <div class="site-c-showcase">
-{% include_relative html/information-callout.html %}
+{% include_relative _html/information-callout.html %}
 </div>
 
-{% include snippet.html content='html/information-callout.html' %}
+{% include snippet.html content='_html/information-callout.html' %}
 
 ---
 

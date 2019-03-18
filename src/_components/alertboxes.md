@@ -23,70 +23,70 @@ anchors:
 Used to provide helpful information to a user.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-informational.html %}
+{% include_relative _html/alert-informational.html %}
 </div>
 
-{% include snippet.html content='html/alert-informational.html' %}
+{% include snippet.html content='_html/alert-informational.html' %}
 
 ## Warning status
 
 Used to warn a user, but necessary when something has gone wrong.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-warning.html %}
+{% include_relative _html/alert-warning.html %}
 </div>
 
-{% include snippet.html content='html/alert-warning.html' %}
+{% include snippet.html content='_html/alert-warning.html' %}
 
 ## Success status
 
 Used to indicate success.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-success.html %}
+{% include_relative _html/alert-success.html %}
 </div>
 
-{% include snippet.html content='html/alert-success.html' %}
+{% include snippet.html content='_html/alert-success.html' %}
 
 ## Error status
 
 Used when there is a problem or something destructive is about to occur.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-error.html %}
+{% include_relative _html/alert-error.html %}
 </div>
 
-{% include snippet.html content='html/alert-error.html' %}
+{% include snippet.html content='_html/alert-error.html' %}
 
 ## Continue status
 
 Used to prompt user to sign in or create an account to access certain information.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-continue.html %}
+{% include_relative _html/alert-continue.html %}
 </div>
 
-{% include snippet.html content='html/alert-continue.html' %}
+{% include snippet.html content='_html/alert-continue.html' %}
 
 ## Alert boxes with expandable content
 
 Any style of alert box may be made to include expandable content.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-expandable.html %}
+{% include_relative _html/alert-expandable.html %}
 </div>
 
-{% include snippet.html content='html/alert-expandable.html' %}
+{% include snippet.html content='_html/alert-expandable.html' %}
 
 ## Background color only
 
 Any style of alert box can be made to be a background color only.
 
 <div class="site-c-showcase">
-{% include_relative html/alert-background-color.html %}
+{% include_relative _html/alert-background-color.html %}
 </div>
 
-{% include snippet.html content='html/alert-background-color.html' %}
+{% include snippet.html content='_html/alert-background-color.html' %}
 
 ## Accessibility
 

@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: color-usage
 title: Color usage
 anchors:
   - anchor: Success

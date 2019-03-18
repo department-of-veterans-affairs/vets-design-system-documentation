@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: spacing-units
 title: Spacing units
 anchors:
   - anchor: Spacing unit tokens

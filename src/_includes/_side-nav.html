@@ -1,7 +1,8 @@
 <ul class="site-c-sidenav-list">
-  <li class="site-c-sidenav-list__item {% if page.sub_section contains 'index' %} current {% endif %}">
-    <a class="site-c-sidenav-list__link " href="index.html">Overview</a>
-    {% if page.sub_section contains 'index' %}
+  {% for p in include.section %}
+    {% if p.index %}
+    <li class="site-c-sidenav-list__item {% if page.index %} current {% endif %}">
+      <a class="site-c-sidenav-list__link " href="{{site.baseurl}}{{ p.url | replace: '/index', ''}}">Overview</a>
       {% if page.anchors %}
         <ul class="site-c-sidenav-list__sub">
           {% for item in page.anchors %}
@@ -10,13 +11,13 @@
           {% endfor %}
         </ul>
       {% endif %}
+    </li>
     {% endif %}
-  </li>
+  {% endfor %}
   {% for p in include.section %}
-    {% if p.sub_section %}
-      {% unless p.sub_section contains "index" %}
+      {% unless p.index %}
         <li class="site-c-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
-          <a class="site-c-sidenav-list__link " href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+          <a class="site-c-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
           {% if p.anchors %}
             <ul class="site-c-sidenav-list__sub">
               {% for item in p.anchors %}
@@ -27,6 +28,5 @@
           {% endif %}
         </li>
       {% endunless %}
-    {% endif %}
   {% endfor %}
 </ul>

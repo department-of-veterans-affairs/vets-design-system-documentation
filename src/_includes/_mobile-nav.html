@@ -9,16 +9,14 @@
   <div id="nav-a1" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "documentation/index" %} current {% endif %}" href="{{ site.baseurl }}/documentation/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "documentation/index" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Overview</a>
       </li>
       {% for p in site.documentation %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", ".html" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -34,16 +32,14 @@
   <div id="nav-a2" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "content-style-guide/index" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "content-style-guide/index" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Overview</a>
       </li>
       {% for p in site.content-style-guide %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -59,16 +55,14 @@
   <div id="nav-a3" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "design/index" %} current {% endif %}" href="{{ site.baseurl }}/design/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "design/index" %} current {% endif %}" href="{{ site.baseurl }}/design">Overview</a>
       </li>
       {% for p in site.design %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -83,16 +77,14 @@
   <div id="nav-a4" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "components/index" %} current {% endif %}" href="{{ site.baseurl }}/components/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "components/index" %} current {% endif %}" href="{{ site.baseurl }}/components">Overview</a>
       </li>
       {% for p in site.components %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -108,16 +100,14 @@
   <div id="nav-a5" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "utilities/index" %} current {% endif %}" href="{{ site.baseurl }}/utilities/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "utilities/index" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Overview</a>
       </li>
       {% for p in site.utilities %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -132,16 +122,14 @@
   <div id="nav-a6" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "patterns/index" %} current {% endif %}" href="{{ site.baseurl }}/patterns/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "patterns/index" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Overview</a>
       </li>
       {% for p in site.patterns %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -156,16 +144,14 @@
   <div id="nav-a7" class="usa-accordion-content site-c-mobile-nav__accordion-content">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
-        <a class="site-c-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/layout/index.html">Overview</a>
+        <a class="site-c-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/layout">Overview</a>
       </li>
       {% for p in site.layout %}
-        {% if p.sub_section %}
-          {% unless p.sub_section contains "index" %}
+          {% unless p.index %}
             <li class="site-c-mobile-nav-list__item">
-              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{ site.baseurl }}/{{ p.path | remove: '_' | replace: ".md", "" }}">{{p.title}}</a>
+              <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
           {% endunless %}
-        {% endif %}
       {% endfor %}
     </ul>
   </div>

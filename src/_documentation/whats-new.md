@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: whats-new
 title: What’s new?
 ---
 

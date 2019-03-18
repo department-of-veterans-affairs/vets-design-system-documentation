@@ -1,7 +1,7 @@
 ---
 layout: default
-sub_section: index
 title: Components
+index: true
 ---
 
 # Components

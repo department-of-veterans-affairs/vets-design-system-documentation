@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: color
 title: Color
 ---
 

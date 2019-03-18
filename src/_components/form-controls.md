@@ -27,10 +27,10 @@ Form controls allow users to enter information.
 Text inputs allow people to enter any type of text unless otherwise restricted.
 
 <div class="site-c-showcase">
-{% include_relative html/text-inputs.html %}
+{% include_relative _html/text-inputs.html %}
 </div>
 
-{% include snippet.html content='html/text-inputs.html' %}
+{% include snippet.html content='_html/text-inputs.html' %}
 
 ### Accessibility
 
@@ -61,10 +61,10 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 A select box allows users to select one option from a list.
 
 <div class="site-c-showcase">
-{% include_relative html/select-box.html %}
+{% include_relative _html/select-box.html %}
 </div>
 
-{% include snippet.html content='html/select-box.html' %}
+{% include snippet.html content='_html/select-box.html' %}
 
 ### Accessibility
 
@@ -97,10 +97,10 @@ A select box allows users to select one option from a list.
 Allows users to select one or more items from a visible list.
 
 <div class="site-c-showcase">
-{% include_relative html/checkboxes.html %}
+{% include_relative _html/checkboxes.html %}
 </div>
 
-{% include snippet.html content='html/checkboxes.html' %}
+{% include snippet.html content='_html/checkboxes.html' %}
 
 ### Accessibility
 - Surround a related set of checkboxes with a `<fieldset>`. The` <legend>` provides context for the grouping. Do not use fieldset and legend for a single check.
@@ -130,10 +130,10 @@ Allows users to select one or more items from a visible list.
 Radio buttons allow users to see all available choices at once and select exactly one option.
 
 <div class="site-c-showcase">
-{% include_relative html/radio-buttons.html %}
+{% include_relative _html/radio-buttons.html %}
 </div>
 
-{% include snippet.html content='html/radio-buttons.html' %}
+{% include snippet.html content='_html/radio-buttons.html' %}
 
 ### Accessibility
 

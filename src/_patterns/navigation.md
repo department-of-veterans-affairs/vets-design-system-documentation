@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: navigation
 title: Navigation
 anchors:
   - anchor: Subsections within a content section

@@ -11,7 +11,7 @@ The process list, also known as the subway map, is used in a static informationa
 </div>
 
 <div class="site-c-showcase">
-{% include_relative html/process-steps.html %}
+{% include_relative _html/process-steps.html %}
 </div>
 
-{% include snippet.html content='html/process-steps.html' %}
+{% include snippet.html content='_html/process-steps.html' %}

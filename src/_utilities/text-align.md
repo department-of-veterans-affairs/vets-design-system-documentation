@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: text-align
 title: Text align
 anchors:
   - anchor: Responsive prefixes
@@ -29,7 +28,7 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 {% include iframe-preview.html src="html/text-align.html" title="Visibility" height=300 %}
 
-{% include snippet.html content='html/text-align.html' %}
+{% include snippet.html content='_html/text-align.html' %}
 
 ### Example
 

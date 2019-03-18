@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: text-decoration
 title: Text decoration
 ---
 
