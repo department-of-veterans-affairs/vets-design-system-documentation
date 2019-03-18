@@ -4,6 +4,7 @@ sub_section: developers
 title: For developers
 anchors:
   - anchor: Installation
+  - anchor: CSS
 ---
 
 # Documentation for developers
@@ -68,3 +69,46 @@ You can the import U.S. Web Design System 1.4.2 using `npm`.
 ```bash
 $ npm install usds@1.4.2
 ```
+
+## CSS
+
+### Modifying components
+
+Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../utilities) instead of writing new CSS.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Use utility classes to override default properties. This allows components to maintain a well-defined baseline of properties.
+
+#### HTML
+```html
+<div class="a-container">
+  <div class="a-component vads-u-margin-top--3"></div>
+</div>
+```
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content" markdown="1">
+Don’t change CSS properties based on a container or other context. This makes baseline properties for components unclear.
+
+#### HTML
+```html
+<div class="a-container">
+  <div class="a-component"></div>
+</div>
+```
+#### CSS
+```css
+.a-container .a-component {
+  margin-top: 24px;
+}
+```
+</div>
+</div>
+</div>
+
+
