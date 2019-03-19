@@ -45,6 +45,7 @@ collections:
   documentation:
     output: true
     permalink: /:collection/:title
+    label: Documentation
   content-style-guide:
     output: true
     permalink: /:collection/:title
