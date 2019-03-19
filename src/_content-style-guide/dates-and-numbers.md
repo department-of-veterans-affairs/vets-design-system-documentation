@@ -29,15 +29,41 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 
 -  Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
 - Include the minutes, even when on-the-hour.
-  - __Like this:__ 8:00 a.m. to 5:30 p.m. ET    
-  - __Not this:__ 8 a.m. to 5:30 p.m. ET  
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+8:00 a.m. to 5:30 p.m. ET
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+8 a.m. to 5:30 p.m. ET  
+</div>
+</div>
+</div>
 - Include time zones as CT, ET, MT, or PT (no parentheses, periods, or daylight/standard).
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 
 - In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m., Monday through Friday.
 - Where space is limited, indicate ranges with the – en dash (not the shorter - hyphen) and a space on either side. Don't combine the en dash with from/between ​sentence construction.
-  - __Like this:__ 8:00 a.m. – noon CT
-  - __Not this:__ from 8:00 a.m. – noon CT
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+8:00 a.m. – noon CT
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+from 8:00 a.m. – noon CT
+</div>
+</div>
+</div>
 
 
 

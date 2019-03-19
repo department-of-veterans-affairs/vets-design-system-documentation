@@ -6,7 +6,7 @@ title: Button labels
 
 # Button labels
 
-Buttons signal important calls-to-action (CTA) and help people quickly see what's the most important action they need to take on a page. Treat buttons like important or primary content, and prioritize their placement on pages as you would essential information. 
+Buttons signal important calls-to-action (CTA) and help people quickly see what's the most important action they need to take on a page. Treat buttons like important or primary content, and prioritize their placement on pages as you would essential information.
 
 [Use links for secondary or less important actions](../content-style-guide/links.html) on a page. Likewise, for simple navigation to lead people between pages, use links instead of buttons.
 
@@ -16,13 +16,39 @@ Buttons signal important calls-to-action (CTA) and help people quickly see what'
 
 - Use “trigger words” that people recognize and clearly signal what will happen when they click the button.
 
-  ​		**Like this:** Create an account |  **Not like this:** Get started
 
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+Create an account
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+Get started
+</div>
+</div>
+</div>
 
 
 - Make it an action.
 
-  ​		**Like this:** File a complaint   |   **Not like this:** Complaint filing
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+File a complaint
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+Complaint filing
+</div>
+</div>
+</div>
 
 
 
