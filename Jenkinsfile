@@ -43,9 +43,7 @@ pipeline {
           credentialsId:    'vetsgov-website-builds-s3-upload',
           usernameVariable: 'AWS_ACCESS_KEY', 
           passwordVariable: 'AWS_SECRET_KEY']]) {
-          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/vagov-dev.tar.bz2"
-          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/vagov-staging.tar.bz2"
-          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/vagov-prod.tar.bz2"
+          sh "s3-cli put --acl-public --region us-gov-west-1 _site.tar.bz2 s3://bucket-vagov-design-builds-s3-upload/$GIT_COMMIT/site.tar.bz2"
         }
       }
     }
