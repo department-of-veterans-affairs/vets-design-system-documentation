@@ -1,7 +1,7 @@
 ---
 layout: default
-sub_section: button-labels
 title: Button labels
+slug: button-labels
 ---
 
 # Button labels

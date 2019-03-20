@@ -1,6 +1,5 @@
 ---
 layout: default
-sub_section: government-forms
 title: Government forms
 
 ---
@@ -11,7 +10,7 @@ We often need to talk about or direct people to VA and other government forms, s
 
 ###  In body copy
 
-In general, we try to err on the side of clarity when we need to tell people about a form. 
+In general, we try to err on the side of clarity when we need to tell people about a form.
 
 Because VA form names tend to be very long, they're not always easy for Veterans to scan and quickly grasp. In some cases, it may be more helpful to talk about a form as a task and then mention the form number, rather than always referencing the full name and number.
 
@@ -19,16 +18,16 @@ Because VA form names tend to be very long, they're not always easy for Veterans
 
 - __Better:__ To give us permission to share your medical information, fill out VA Form 10-0485.
 
-  
+
 
 In the first instance of body copy, lead with the name of the form, then the form number in parentheses. Use "VA Form" in front of the number: VA Form SGLV 8286.
 
-- **Example — first instance:** 
+- **Example — first instance:**
   Use the Health Benefits Update form (VA Form 10-10EZR) to update your personal, financial, and insurance information.
 
-After the first mention, refer to it by VA Form plus the form number by itself. Ideally, try to recast the sentence  to refer to it generically, if you can do so without losing clarity about what form we're referring to. 
+After the first mention, refer to it by VA Form plus the form number by itself. Ideally, try to recast the sentence  to refer to it generically, if you can do so without losing clarity about what form we're referring to.
 
-- **Example — after first instance:** 
+- **Example — after first instance:**
   Send the completed VA Form 10-10EZR and any supporting documents to us.
   OR
   Send the completed form and any supporting documents to us.
@@ -37,10 +36,10 @@ After the first mention, refer to it by VA Form plus the form number by itself. 
 
 ### In CTA links, headers, and other UI elements
 
-In CTA links, headers, subheaders, page titles, and other UI elements, use the form number. Again, this is in general for most situations. Be sure to reference the full form name somewhere close by or in context, so it's more helpful to Veterans what the form is for. 
+In CTA links, headers, subheaders, page titles, and other UI elements, use the form number. Again, this is in general for most situations. Be sure to reference the full form name somewhere close by or in context, so it's more helpful to Veterans what the form is for.
 
 - **Example — in a CTA:**  
-  You can apply online or mail your Application for Burial Benefits (VA Form 21P-530). 
+  You can apply online or mail your Application for Burial Benefits (VA Form 21P-530).
 
   [Download VA Form 21P-530 (PDF)](https://www.vba.va.gov/pubs/forms/VBA-21P-530-ARE.pdf)
 
@@ -48,16 +47,16 @@ In CTA links, headers, subheaders, page titles, and other UI elements, use the f
 
 #### Exceptions
 
-Many Veterans refer to certain forms by their more common, casual name. For example, DD214 instead of the official Department of Defense form name, DD Form 214. For forms like these, we refer to them by the term that Veterans understand. These exceptions are noted in the list of forms. 
+Many Veterans refer to certain forms by their more common, casual name. For example, DD214 instead of the official Department of Defense form name, DD Form 214. For forms like these, we refer to them by the term that Veterans understand. These exceptions are noted in the list of forms.
 
-- **Example:** 
+- **Example:**
   Find out how to request your military records, including your DD214, through milConnect.
 
-  
+
 
 ## Common government forms
 
-For VA forms not listed here, search our [VA forms library](https://www.va.gov/vaforms/).  DD forms are Department of Defense forms. 
+For VA forms not listed here, search our [VA forms library](https://www.va.gov/vaforms/).  DD forms are Department of Defense forms.
 
 | Form number                      | Form name                                                    |
 | -------------------------------- | ------------------------------------------------------------ |
