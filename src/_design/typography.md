@@ -111,6 +111,44 @@ anchors:
 
 {% include snippet.html content='html/headings.html' %}
 
+### Headings and accessibility
+
+**Always** use semantic headings, logically nested in the proper order.  **Do not** use improper nesting to achieve a different font size. In other words, an `h1` should never be followed by an `h3`; it should only be followed by an `h2`. Use the [font-size utility](../utilities/font-size) to change the font size of a semantic heading instead.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Use utility classes to change the font size of a semantic heading.
+
+#### Example
+```html
+<h1>Main heading</h1>
+
+<p>Some text</p>
+
+<h2 class="vads-u-font-size--xl">Secondary heading</h2>
+```
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content" markdown="1">
+Don’t change heading level in order to use a different font size.
+
+#### Example
+```html
+<h1>Main heading</h1>
+
+<p>Some text</p>
+
+<h3>Secondary heading</h3>
+```
+</div>
+</div>
+</div>
+
 ## Paragraphs
 
 <div class="site-c-showcase">

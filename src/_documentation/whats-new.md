@@ -11,6 +11,17 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### March 21, 2019
+
+**5.5.1**
+- Adds more images used in background image CSS from va.gov
+
+**Site updates**
+- Update to documentation about headings
+
+---
+
+
 ### March 13, 2019
 
 **Site updates**

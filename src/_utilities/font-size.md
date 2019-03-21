@@ -11,6 +11,8 @@ anchors:
 Change the font size of an element. The font-size classes include [responsive prefixes](#responsive-prefixes).
 </div>
 
+The font-size utility is especially useful on headings, allowing them to be logically nested while applying a custom font size.
+
 <div class="site-c-showcase">
 {% include_relative html/font-size.html %}
 </div>
