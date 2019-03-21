@@ -178,7 +178,7 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 - may: See entry for "can."
 - Military Occupation Code (MOC)
 - Million Veteran Program (MVP)
-- MISSION Act: Refer to it by the [official short title, VA MISSION Act](https://www.congress.gov/bill/115th-congress/senate-bill/2372/text#toc-HA745D4BCFA2340D99507191E93770C44). (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
+- MISSION Act: Refer to it by the official short title, VA MISSION Act. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
 - Montgomery GI Bill Active Duty
 - Montgomery GI Bill Selected Reserve
 - My HealtheVet: In body copy, headlines, and user interface elements such as links, buttons, and navigation, do not italicize the "e" between Health and Vet. The middle "e" is italicized only in the logo.
