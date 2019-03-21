@@ -1,7 +1,9 @@
 pipeline {
 
   agent {
-    dockerfile true
+    dockerfile {
+      label 'vetsgov-general-purpose'
+    }
   }
 
   // $HOME defaults to '/' when not set, which results in:
