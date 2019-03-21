@@ -13,11 +13,15 @@ The latest news and updates on Formation and the content style guide
 
 ### March 21, 2019
 
+**5.5.2**
+- Adds heading level names to font-size utility 
+
 **5.5.1**
 - Adds more images used in background image CSS from va.gov
 
 **Site updates**
-- Update to documentation about headings
+- Update to documentation about headings in the typography section
+- Update to documentation on heading utilities
 
 ---
 
