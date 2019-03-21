@@ -24,27 +24,27 @@ Unlike the [float grid](grid.html), you will need to use the [padding utility](.
 Columns without a set width will automatically layout with equal widths. For example, below are four instances of `vads-l-col` which are each automatically 25% wide. The columns will automatically wrap when they don't fit a single row.
 
 <div class="site-c-showcase">
-{% include_relative _html/flexbox-grid-basic.html %}
+{% include_relative html/flexbox-grid-basic.html %}
 </div>
 
-{% include snippet.html content='_html/flexbox-grid-basic.html' %}
+{% include snippet.html content='html/flexbox-grid-basic.html' %}
 
 ## Fixed columns
 
 Column widths can be set using a modifier value on the `vads-l-col` class, such as `vads-l-col--3`. The number at the end of the class name represents the number of columns out of a 12-column grid. The total of those numbers in any `vads-l-row` should equal 12. If the total is more than 12, the grid will collapse into separate rows.
 
 <div class="site-c-showcase">
-{% include_relative _html/flexbox-grid-basic2.html %}
+{% include_relative html/flexbox-grid-basic2.html %}
 </div>
 
-{% include snippet.html content='_html/flexbox-grid-basic2.html' %}
+{% include snippet.html content='html/flexbox-grid-basic2.html' %}
 
 ## Responsive grid
 
 Each column class can include a breakpoint prefix that allows changing the column widths at different breakpoints.
 
-{% include iframe-preview.html src="_html/flexbox-grid-responsive.html" title="Visibility" height=400 %}
+{% include iframe-preview.html src="html/flexbox-grid-responsive.html" title="Visibility" height=400 %}
 
-{% include snippet.html content='_html/flexbox-grid-responsive.html' %}
+{% include snippet.html content='html/flexbox-grid-responsive.html' %}
 
 {% include _breakpoint-names.html %}

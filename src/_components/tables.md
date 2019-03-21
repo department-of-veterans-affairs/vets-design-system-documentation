@@ -9,10 +9,10 @@ title: Tables
 <p class="va-introtext">Tables show tabular data in columns and rows.</p>
 
 <div class="site-c-showcase">
-{% include_relative _html/tables.html %}
+{% include_relative html/tables.html %}
 </div>
 
-{% include snippet.html content='_html/tables.html' %}
+{% include snippet.html content='html/tables.html' %}
 
 
 ## Accessibility

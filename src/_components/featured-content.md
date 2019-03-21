@@ -11,10 +11,10 @@ title: Featured content
 Features are typically used to describe eligibility requirements.
 
 <div class="site-c-showcase">
-{% include_relative _html/featured-content.html %}
+{% include_relative html/featured-content.html %}
 </div>
 
-{% include snippet.html content='_html/featured-content.html' %}
+{% include snippet.html content='html/featured-content.html' %}
 
 ## Guidance
 
