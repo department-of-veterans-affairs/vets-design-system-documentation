@@ -17,7 +17,7 @@ title: VA.gov Design System
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Design System for VA.gov
-baseurl: "/vets-design-system-documentation" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://design.va.gov" # the base hostname & protocol for your site, e.g. http://example.com
 
 project_name: VA.gov Design System

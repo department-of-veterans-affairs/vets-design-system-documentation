@@ -1,5 +1,5 @@
 rm -rf _site
-bundle exec jekyll build
+bundle exec jekyll build --config _config.yml,_config_gh_pages.yml # later configs override earlier ones
 cd _site
 git init
 git remote add origin git@github.com:department-of-veterans-affairs/vets-design-system-documentation.git
