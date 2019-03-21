@@ -127,7 +127,7 @@ Use utility classes to change the font size of a semantic heading.
 
 <p>Some text</p>
 
-<h2 class="vads-u-font-size--xl">Secondary heading</h2>
+<h2 class="vads-u-font-size--h3">Secondary heading</h2>
 ```
 
 </div>
