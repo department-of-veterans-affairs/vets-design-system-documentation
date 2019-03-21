@@ -26,10 +26,10 @@ Flexbox requires two components,  a *flex container* and *flex items*. Any first
 The shorthand property, `flex` encompasses three properties: `flex-grow`, `flex-shrink`, and `flex-basis`, respectively. There are several options for creating ratios for flex items. However, these ratios are imprecise, so should not be used if specific widths are desired.
 
 <div class="site-c-showcase">
-{% include_relative _html/flex.html %}
+{% include_relative html/flex.html %}
 </div>
 
-{% include snippet.html content='_html/flex.html' %}
+{% include snippet.html content='html/flex.html' %}
 
 ### Guidance
 
@@ -48,20 +48,20 @@ Flex direction sets the main-axis, which defines the direction flex items are pl
 - `column-reverse`: same as row-reverse but bottom to top
 
 <div class="site-c-showcase">
-{% include_relative _html/flex-direction.html %}
+{% include_relative html/flex-direction.html %}
 </div>
 
-{% include snippet.html content='_html/flex-direction.html' %}
+{% include snippet.html content='html/flex-direction.html' %}
 
 ## Flex wrap
 
 The [Flexbox grid](../layout/flexbox-grid.html) is set to `wrap` by default, but flexbox will otherwise place flex items into a single row. **Note:** If the number of grid columns exceeds 12 and the grid column is set to `nowrap`, the grid columns may extend off the page.
 
 <div class="site-c-showcase">
-{% include_relative _html/flex-wrap.html %}
+{% include_relative html/flex-wrap.html %}
 </div>
 
-{% include snippet.html content='_html/flex-wrap.html' %}
+{% include snippet.html content='html/flex-wrap.html' %}
 
 ## Align items
 
@@ -76,10 +76,10 @@ This defines for how flex items are arranged across the row.
 - `baseline`: flex items are aligned to their baseline
 
 <div class="site-c-showcase">
-{% include_relative _html/align-items.html %}
+{% include_relative html/align-items.html %}
 </div>
 
-{% include snippet.html content='_html/align-items.html' %}
+{% include snippet.html content='html/align-items.html' %}
 
 ## Justify content
 
@@ -95,10 +95,10 @@ This property helps distribute space left over.
 - `space-evenly`: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
 
 <div class="site-c-showcase">
-{% include_relative _html/justify-content.html%}
+{% include_relative html/justify-content.html%}
 </div>
 
-{% include snippet.html content='_html/justify-content.html' %}
+{% include snippet.html content='html/justify-content.html' %}
 
 ## Align content
 
@@ -114,10 +114,10 @@ This utility handles a flex container's lines within when there is extra space i
 - `stretch` (default): flex items stretch to take up remaining space.
 
 <div class="site-c-showcase">
-{% include_relative _html/align-content.html%}
+{% include_relative html/align-content.html%}
 </div>
 
-{% include snippet.html content='_html/align-content.html' %}
+{% include snippet.html content='html/align-content.html' %}
 
 ## Order
 
@@ -126,10 +126,10 @@ By default, flex items are laid out in the source order. The order property cont
 This utility provides ordering for `1` thru `4` in addition to `initial`, `first`, and `last`.
 
 <div class="site-c-showcase">
-{% include_relative _html/order.html%}
+{% include_relative html/order.html%}
 </div>
 
-{% include snippet.html content='_html/order.html' %}
+{% include snippet.html content='html/order.html' %}
 
 ## Responsive prefixes
 

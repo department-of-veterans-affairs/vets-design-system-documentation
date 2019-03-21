@@ -26,10 +26,10 @@ In all cases, only show error validation messages or stylings after a user has i
 For all text inputs, the error message is placed between the label and the input.
 
 <div class="site-c-showcase">
-{% include_relative _html/error-text-inputs.html %}
+{% include_relative html/error-text-inputs.html %}
 </div>
 
-{% include snippet.html content='_html/error-text-inputs.html' %}
+{% include snippet.html content='html/error-text-inputs.html' %}
 
 #### Guidance
 
@@ -54,10 +54,10 @@ The HTML for a typical error is:
 Select boxes a pattern similar to text inputs. The guidance is similar as well.
 
 <div class="site-c-showcase">
-{% include_relative _html/error-select-box.html %}
+{% include_relative html/error-select-box.html %}
 </div>
 
-{% include snippet.html content='_html/error-select-box.html' %}
+{% include snippet.html content='html/error-select-box.html' %}
 
 #### Guidance
 
@@ -70,10 +70,10 @@ Error messages are generally the same. The error message is slightly different i
 ### Errors on radio buttons
 
 <div class="site-c-showcase">
-{% include_relative _html/error-radio-buttons.html %}
+{% include_relative html/error-radio-buttons.html %}
 </div>
 
-{% include snippet.html content='_html/error-radio-buttons.html' %}
+{% include snippet.html content='html/error-radio-buttons.html' %}
 
 #### Guidance
 
@@ -88,18 +88,18 @@ Unlike other form elements, error messages for checkboxes appear below
 #### Error message above checkbox
 
 <div class="site-c-showcase">
-{% include_relative _html/error-checkbox.html %}
+{% include_relative html/error-checkbox.html %}
 </div>
 
-{% include snippet.html content='_html/error-checkbox.html' %}
+{% include snippet.html content='html/error-checkbox.html' %}
 
 #### Error message with a checkbox group
 
 <div class="site-c-showcase">
-{% include_relative _html/error-checkbox-group.html %}
+{% include_relative html/error-checkbox-group.html %}
 </div>
 
-{% include snippet.html content='_html/error-checkbox-group.html' %}
+{% include snippet.html content='html/error-checkbox-group.html' %}
 
 ##### Guidance
 
@@ -109,10 +109,10 @@ Unlike other form elements, error messages for checkboxes appear below
 ### Error message on file input
 
 <div class="site-c-showcase">
-{% include_relative _html/error-file-input.html %}
+{% include_relative html/error-file-input.html %}
 </div>
 
-{% include snippet.html content='_html/error-file-input.html' %}
+{% include snippet.html content='html/error-file-input.html' %}
 
 #### Guidance
 

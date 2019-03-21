@@ -37,7 +37,7 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 {% include iframe-preview.html src="html/visibility.html" title="Visibility" height=400 %}
 
-{% include snippet.html content='_html/visibility.html' %}
+{% include snippet.html content='html/visibility.html' %}
 
 ### Example
 

@@ -11,10 +11,10 @@ Labels draw attention to new or important content.
 </div>
 
 <div class="site-c-showcase">
-{% include_relative _html/labels.html %}
+{% include_relative html/labels.html %}
 </div>
 
-{% include snippet.html content='_html/labels.html' %}
+{% include snippet.html content='html/labels.html' %}
 
 
 ## Accessibility

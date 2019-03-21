@@ -17,17 +17,17 @@ Common form structures and designs used on VA.gov
 ## Address form
 
 <div class="site-c-showcase">
-{% include_relative _html/address-form.html %}
+{% include_relative html/address-form.html %}
 </div>
 
-{% include snippet.html content='_html/address-form.html' %}
+{% include snippet.html content='html/address-form.html' %}
 
 ---
 
 ## Name form
 
 <div class="site-c-showcase">
-{% include_relative _html/name-form.html %}
+{% include_relative html/name-form.html %}
 </div>
 
-{% include snippet.html content='_html/name-form.html' %}
+{% include snippet.html content='html/name-form.html' %}

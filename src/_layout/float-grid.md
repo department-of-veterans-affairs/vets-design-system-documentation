@@ -10,10 +10,10 @@ The float grid is the grid provided by the U.S. Web Design System. For a grid th
 </div>
 
 <div class="site-c-showcase">
-{% include_relative _html/grid.html %}
+{% include_relative html/grid.html %}
 </div>
 
-{% include snippet.html content='_html/grid.html' %}
+{% include snippet.html content='html/grid.html' %}
 
 
 

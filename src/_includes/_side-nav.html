@@ -15,18 +15,20 @@
     {% endif %}
   {% endfor %}
   {% for p in include.section %}
-      {% unless p.index %}
-        <li class="site-c-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
-          <a class="site-c-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-          {% if p.anchors %}
-            <ul class="site-c-sidenav-list__sub">
-              {% for item in p.anchors %}
-                <li class="site-c-sidenav-list__sub-item">
-                  <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", ""}}">{{ item.anchor }}</a></li>
-              {% endfor %}
-            </ul>
-          {% endif %}
-        </li>
-      {% endunless %}
+      {% if p.layout == "default" %}
+        {% unless p.index %}
+          <li class="site-c-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
+            <a class="site-c-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            {% if p.anchors %}
+              <ul class="site-c-sidenav-list__sub">
+                {% for item in p.anchors %}
+                  <li class="site-c-sidenav-list__sub-item">
+                    <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", ""}}">{{ item.anchor }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endunless %}
+      {% endif %}
   {% endfor %}
 </ul>
