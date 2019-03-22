@@ -13,7 +13,7 @@ Everything you need to start working with Formation.
 
 View the code on GitHub and follow the instructions in the README file to get Formation up and running on your site.
 
-- [View Formation on GitHub](https://github.com/department-of-veterans-affairs/design-system)
+- [View Formation on GitHub](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools)
 
 ## Design files
 
