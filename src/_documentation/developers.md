@@ -120,5 +120,6 @@ In general, some, some rules for implementing design work include:
 - Use Sass [variables for colors](../design/color-palette) instead of hex codes
 - Discuss reusability of new design components and where is the most appropriate home for CSS and JS
 - Use the Formation [naming convention](naming)
+- Do not use ID selectors
 
 

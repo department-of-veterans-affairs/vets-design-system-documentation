@@ -28,12 +28,12 @@ Formation is VA.gov’s front-end framework for the design system. This site doc
 
 Before getting started, we recommend that you get familiar with Formation and how you can use it as part of your design process. Each section includes some helpful information:
 
-- **[Content style guide](../content-style-guide):** The content style guide governs how to write for VA.gov. Make sure that any text in your design adheres to the rules within.
-- **[Design](../design):** This section explains VA.gov's base styles and visual language. You should set margins and padding in your design comps using the [8pt spacing units](../design/spacing-units).
+- **[Content style guide](../content-style-guide):** The content style guide governs **how to write for VA.gov**. Make sure that any text in your design adheres to the rules within.
+- **[Design](../design):** This section explains VA.gov's **base styles and visual language**. You should set margins and padding in your design comps using the **[8pt spacing units](../design/spacing-units)**.
 - **[Components](../components):** Components are the "UI fragments," such as buttons and accordions. Some of these have strict usage guidelines, so please become familiar with them.
-- **[Utilities](../utilities):** This section mostly describes CSS, but that doesn't mean it is only for front-end developers. Formation guides design implementation, so understanding the utilities may assist in how designers describe their work. Many of the utilities are responsive and can be used to modify or enhance designs for different screen widths at a low development cost.
+- **[Utilities](../utilities):** This section mostly describes CSS, but that doesn't mean it is only for front-end developers. Formation guides design implementation, so **understanding the utilities may assist in how designers describe their work**. **Many of the utilities are responsive** and can be used to modify or enhance designs for different screen widths at a low development cost.
 - **[Patterns](../patterns):**  How components, content strategy, information architecture, accessibility, and visual design work in tandem to solve veterans' needs. Here, you will find information on how Hub pages are structured, how to build multi-part forms, etc.
-- **[Layout](../layout):** The layout section describes the design grid and tools you can use to create page or design pattern structure.
+- **[Layout](../layout):** The layout section describes the **design grid** and tools you can use to create page or design pattern structure.
 
 ## Working with developers  
 
