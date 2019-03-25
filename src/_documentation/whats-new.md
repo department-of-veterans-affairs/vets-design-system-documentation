@@ -11,10 +11,20 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### March 25, 2019
+
+**5.6.1**
+- Removes padding property on U.S. Web Design System grid that is overridden on VA.gov
+
+**Site updates**
+- Updated documentation for designers, developers, and naming conventions
+
+---
+
 ### March 21, 2019
 
 **5.5.2**
-- Adds heading level names to font-size utility 
+- Adds heading level names to font-size utility
 
 **5.5.1**
 - Adds more images used in background image CSS from va.gov
