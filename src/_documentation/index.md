@@ -10,7 +10,7 @@ title: Documentation
 This site provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital services on the VA.gov platform. Its primary audience includes designers, content writers, and front-end developers who work on VA.gov.
 </div>
 
-Here are some relevant guides to get started for:
+**Here are some relevant guides to get started for:**
 
 - [Designers](designers)
 - [Developers](developers)
