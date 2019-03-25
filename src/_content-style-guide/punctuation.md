@@ -3,10 +3,10 @@ layout: default
 title: Punctuation
 title: Punctuation
 anchors:
-  - Bulleted lists
-  - Commas
-  - Exclamation points
-  - Gender-neutral pronouns (they, their)
+  - anchor: Bulleted lists
+  - anchor: Commas
+  - anchor: Exclamation points
+  - anchor: Gender-neutral pronouns (they, their)
 ---
 
 # Punctuation
