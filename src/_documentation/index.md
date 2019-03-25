@@ -4,17 +4,27 @@ index: true
 title: Documentation
 ---
 
-# Documentation
+# Getting started with design.va.gov
 
 <div class="va-introtext">
-Formation provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital services on the VA.gov platform.
+This site provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital services on the VA.gov platform. Its primary audience includes designers, content writers, and front-end developers who work on VA.gov.
 </div>
 
-## Backed with the U.S. Web Design System
+Here are some relevant guides to get started for:
+
+- [Designers](designers)
+- [Developers](developers)
+- [Content writers](content-writers)
+
+## About Formation
+
+Throughout this site, you will see references to Formation. Formation is VA.gov’s front-end framework.
+
+### Formation is built on top of the U.S. Web Design System
 
 Formation was created with the [U.S. Web Design System](https://designsystem.digital.gov) in its underlying foundation, on top of which we have added components, design patterns, and other features unique to the needs of the VA.gov platform, all tested with Veterans to meet our usability and accessibility guidelines.
 
-## Browser support
+### Browser support
 
 Formation supports older and newer browsers through progressive enhancement. We follow the 2% rule: we support any browser above 2% usage as observed by analytics.usa.gov.
 

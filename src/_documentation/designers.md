@@ -43,5 +43,5 @@ If you have determined that a component is reusable, you will need work with the
 
 If the component is not reusable, only useful in a single context or single type of application, you have two options for how to proceed.
 
-1) Build the component using utility classes. Utilities can be used to help implement the component without committing new CSS.
-2) Build the component locally within the application.
+1. Build the component using utility classes. Utilities can be used to help implement the component without committing new CSS.
+2. Build the component locally within the application.

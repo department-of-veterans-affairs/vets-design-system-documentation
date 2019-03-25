@@ -4,6 +4,7 @@ title: For developers
 anchors:
   - anchor: Installation
   - anchor: CSS
+  - anchor: Implementing design work
 ---
 
 # Documentation for developers
@@ -109,5 +110,15 @@ Don’t change CSS properties based on a container or other context. This makes 
 </div>
 </div>
 </div>
+
+## Implementing design work
+
+When a designer hands off work, it is vital to work through potential implications that design designs may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
+
+In general, some, some rules for implementing design work include:
+- Use [spacing units](../design/spacing-units) instead of hard-coding pixel values for margins and padding
+- Use Sass [variables for colors](../design/color-palette) instead of hex codes
+- Discuss reusability of new design components and where is the most appropriate home for CSS and JS
+- Use the Formation [naming convention](naming)
 
 
