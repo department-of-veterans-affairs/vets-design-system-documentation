@@ -18,7 +18,28 @@ The content on this page only applies to Formation, not Formation React.
 
 ## Propose a component
 
-Content coming soon.
+(this page is under construction)
+
+Before proposing a pattern, you should ask:
+
+- Does a similar component exist?
+- Can it be generalized to work on more than site?
+
+If you answer "No" to the first question and "Yes" to the second, perhaps a new component is necessary. Otherwise, you might want to implement the component locally within your site or application.
+
+The process for proposing should follow these steps:
+- Open an issue with a proposal
+- Explain why the proposal is an ideal choice
+- Include design files if a prototype cannot be included
+- Attach any research that might support your proposal
+
+Next, the team will evaluate the proposal for:
+- Usability
+- Accessibility
+- Visual design
+- Fit on the va.gov platform
+
+After that, the team will add the component for beta testing.  Changes to the component can happen during this period.
 
 ## Modifying a component
 
