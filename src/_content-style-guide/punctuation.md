@@ -67,7 +67,7 @@ __Find out what happens after you apply?__
 <div class="do-dont__content" markdown="1">
 Section header example:
   
-__I'm enrolled! Now what?__
+__You're enrolled! Now what?__
 
 </div>
 </div>
