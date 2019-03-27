@@ -10,6 +10,7 @@ title: VA.gov Content Style Guide
 This is our house style guide for the VA.gov website. It's shared across VA agencies and teams, so we can speak with one voice and create a consistent, helpful experience for Veterans and non-Veteran customers. This style guide is a living document and will change over time based on user research and feedback.
 </div>
 
+
 The purpose of this style guide is to help you create better content, not better bureaucracy. See our [content principles](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/content-principles.html).
 
 ## What you'll find in this style guide
