@@ -13,7 +13,9 @@ When referring to VA, use the first-person pronoun (we, us, our). Use the second
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-We offer a variety of health services and VA benefits to meet your needs. For additional contact information, view our phone directory.
+__Use "we" and "you" for a conversational tone__
+  
+  We offer a variety of health services and VA benefits to meet your needs. For additional contact information, view our phone directory.
 
 </div>
 </div>
@@ -21,7 +23,9 @@ We offer a variety of health services and VA benefits to meet your needs. For ad
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
-VA offers a variety of health services and benefits to meet the needs of our nation's Veterans. For additional contact information, Veterans may also view our phone directory.
+__Don't talk about Veterans. Talk with them, person-to-person.__
+  
+  VA offers a variety of health services and benefits to meet the needs of our nation's Veterans. For additional contact information, Veterans may also view the VA phone directory.
 </div>
 </div>
 
@@ -29,7 +33,7 @@ VA offers a variety of health services and benefits to meet the needs of our nat
 
 
 
-Sometimes, you may need to identify the audience first for clarity before changing to second-person pronoun.
+Sometimes for clarity, you may need to identify who you're addressing first, before or in addition to using the second-person pronoun.
 
 
 
@@ -37,9 +41,11 @@ Sometimes, you may need to identify the audience first for clarity before changi
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-If you're a dependent family member of a Veteran or service member, you can get career and educational counseling through VR&E.
-
-Veterans who own a small business may qualify for advantages when bidding on government contracts. Find out if you can register your Veteran-owned small business.
+__Identify the audience as needed, while still using "you" and "your"__
+  
+  If you're a dependent family member of a Veteran or service member, you can get career and educational counseling through VR&E.
+  
+  Veterans who own a small business may qualify for advantages when bidding on government contracts. Learn more and register your Veteran-owned small business.
 
 </div>
 </div>
@@ -48,6 +54,8 @@ Veterans who own a small business may qualify for advantages when bidding on gov
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
 Dependent family members of Veterans or service members can get career and educational counseling through VR&E.  
+  
+Veterans who own a small business may qualify for advantages when bidding on government contracts. VA encourages Veterans to learn more and register their Veteran-owned small business.
 
 </div>
 </div>
