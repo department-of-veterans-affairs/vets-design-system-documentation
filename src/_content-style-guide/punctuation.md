@@ -3,7 +3,6 @@ layout: default
 title: Punctuation
 title: Punctuation
 anchors:
-  - anchor: Bulleted lists
   - anchor: Commas
   - anchor: Contractions
   - anchor: Exclamation points
@@ -12,23 +11,6 @@ anchors:
 
 # Punctuation
 We follow standard American English and AP Style on VA.gov. Areas where we differ are listed below.
-
-
-
-#### Bulleted lists
-
-Bulleted lists help organize information into easy to scan, more consumable content.  If a sentence lists more than three items or ideas, we recommend breaking them up into a bulleted list.
-
-- Capitalize the first word of every bullet.
-- Use a comma before the bolded "and" or "or" at the end of the line of text for each bullet.
-- Don't use a period at the end of the bullet unless it is a complete sentence. __[@BETH, DANIELLE - What is the current Vets.gov style when the list is a mix of complete sentences and fragments? Old school style is to use period on every bullet list item, if one is a complete sentence, but I don't know if this is what we do. EX: on the health-care/schedule-view-va-appointments, we have bullet lists that are complete sentences but none of them have periods.]__
-- Don't use a period at the end of the last bullet in a series of bullets.
-- If your list has more than 7 items, use subheads to break out the list into smaller bullet lists.
-- Keep list items short (1 or 2 sentences in length).
-- Use parallel construction, and consistent style, grammar, and use of punctuation for items in the same list. (Example: each bullet starts with a verb or each bullet is a noun; or each bullet is a fragment; or each bullet is a complete sentence).
-- Don't use a bulleted list for only 1 item.
-
-
 
 #### Commas
 
