@@ -70,9 +70,14 @@
 }
 
 .site-c-header__utility-links {
-  display: none;
-  @include media($nav-width) {
-    display: block;
+  align-items: center;
+  display: flex;
+
+  .usa-button {
+    display: none;
+    @include media($large-screen) {
+      display: block;
+    }
   }
 }
 
