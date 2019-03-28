@@ -56,6 +56,15 @@
     {% include footer.html %}
     <script type="text/javascript" src="{{ site.baseurl }}/vendor/javascripts/bundle.js" charset="utf-8"></script>
     <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
+    <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{ site.baseurl }}/search.json'
+    })
+    </script>
+
+    <script src="{{ site.baseurl }}/vendor/javascripts/uswds.min.js"></script>
   </body>
 
 </html>

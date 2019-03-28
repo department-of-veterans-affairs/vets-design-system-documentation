@@ -50,6 +50,11 @@
       <div class="site-c-header__utility-links">
         <a href="{{ site.baseurl }}/documentation/whats-new.html" class="usa-button site-button-inverse">What’s new?</a>
         <a href="{{ site.baseurl }}/documentation/code-and-design.html" class="usa-button vads-u-margin--0">Get code and design files</a>
+        <div id="search-container" class="site-search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search">
+          <ul id="results-container" class="site-search-results" role="listbox"></ul>
+        </div>
       </div>
       <button class="site-c-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu">Menu</button>
     </div>

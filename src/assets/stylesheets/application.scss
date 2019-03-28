@@ -99,3 +99,77 @@ font-matter: yay
 .site-resources {
   background: #16171F;
 }
+
+.site-search-container {
+  position: relative;
+  padding-left: units(2);
+  display: none;
+
+  @include media($nav-width) {
+    display: block;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 26px;
+    color: rgba(255,255,255,.75);
+    top: 16px;
+  }
+}
+
+.site-search-container__input[type="search"] {
+  box-sizing: border-box;
+  padding-left: 32px;
+  color: white;
+  background: rgba(22, 23, 31, .5);
+
+  &::-webkit-search-cancel-button {
+    display:block;
+  }
+}
+
+.site-search-container__input::placeholder {
+  color: white !important;
+}
+
+.site-search-results:empty {
+  display: none;
+  border: none;
+}
+
+.site-search-results {
+  color: $color-base;
+  border: 1px solid $color-gray-lighter;
+  background: transparent;
+  margin: 0;
+  list-style-type: none;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  top: 57px;
+  width: 140%;
+  z-index: 10000;
+  max-height: 400px;
+  overflow: scroll;
+
+  li {
+    margin: 0;
+    background: white;
+
+    a,
+    a:visited {
+      display: block;
+      border: 1px solid $color-gray-lighter;
+      text-decoration: none;
+      padding: units(2);
+      margin-top: -1px;
+      color: $color-base;
+      transition: none;
+      width: 100%;
+    }
+
+    a:hover {
+      color: $color-base;
+    }
+  }
+}
