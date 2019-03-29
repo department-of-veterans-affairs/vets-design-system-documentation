@@ -15,6 +15,21 @@ layout: null
     },
   {% endfor %}
 
+  {% for item in site.design %}
+  {% unless item.layout == "iframe" %}
+    {
+      "title"    : "{{ item.title | strip_html | escape }}",
+      "section"  : "Design",
+      "url"      : "{{ site.baseurl }}{{ item.url }}",
+      "category" : "{{item.categories | join: ', '}}",
+      "tags"     : "{{ item.tags | join: ', ' }}",
+      "date"     : "{{ item.date }}",
+      "description" : "{{item.description | strip_html | strip_newlines | escape }}"
+
+    },
+  {% endunless %}
+  {% endfor %}
+
   {% for item in site.components %}
   {% unless item.layout == "iframe" %}
     {
