@@ -44,7 +44,7 @@
     <div class="site-c-header__masthead">
       <div class="site-c-header__logo" id="extended-logo">
         <em class="site-c-header__logo-text">
-          <a class="site-c-header__logo-link" title="VA.gov Design System homepage" href="{{ site.baseurl }}/"><strong>VA.gov</strong> | Design System</a>
+          <a class="site-c-header__logo-link" title="VA.gov Design System homepage" href="{{ site.baseurl }}/"><strong class="vads-u-display--block small-screen:vads-u-display--inline">VA.gov</strong> <span class="vads-u-display--none small-screen:vads-u-display--inline">|</span> Design System</a>
         </em>
       </div>
       <div class="site-c-header__utility-links">
@@ -56,7 +56,8 @@
           <ul id="results-container" class="site-search-results" role="listbox"></ul>
         </div>
       </div>
-      <button class="site-c-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu">Menu</button>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button class="site-c-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
     </div>
     <nav class="site-c-header__nav">
       <ul class="site-c-header__nav-list">
@@ -87,3 +88,9 @@
   </div>
 
 </header>
+
+<div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
+  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search">
+  <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
+</div>
