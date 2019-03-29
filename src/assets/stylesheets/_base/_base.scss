@@ -2,6 +2,46 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $font-sans;
+
+  &:before {
+    content: '{ "current": "", "applied": [] }';
+    display: none;
+
+    @include media($xsmall-screen) {
+      & {
+        content: '{ "current": "xsmall-screen", "applied": ["xsmall-screen"] }';
+      }
+    }
+
+    @include media($small-screen) {
+      & {
+        content: '{ "current": "small-screen", "applied": ["xsmall-screen" ,"small-screen"] }';
+      }
+    }
+
+    @include media($medium-screen) {
+      & {
+        content: '{ "current": "medium-screen", "applied": ["xsmall-screen", "small-screen", "medium-screen"] }';
+      }
+    }
+
+    @include media($nav-width) {
+      & {
+        content: '{ "current": "nav-width", "applied": ["xsmall-screen", "small-screen", "medium-screen", "nav-width"] }';
+      }
+    }
+
+    @include media($small-desktop-screen) {
+      & {
+        content: '{ "current": "small-desktop-screen", "applied": ["xsmall-screen", "small-screen", "medium-screen", "nav-width", "small-desktop-screen"] }';
+      }
+    }
+    @include media($large-screen) {
+      & {
+        content: '{ "current": "large-screen", "applied": ["xsmall-screen", "small-screen", "medium-screen", "nav-width", "small-desktop-screen", "large-screen"] }';
+      }
+    }
+  }
 }
 
 body {
