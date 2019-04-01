@@ -151,6 +151,7 @@ font-matter: yay
   z-index: 10000;
   max-height: 358px;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 
   li {
     margin: 0;
