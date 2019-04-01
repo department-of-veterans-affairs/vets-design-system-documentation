@@ -26,42 +26,44 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 - accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas. Example:  "Get help from an accredited representative, a trained professional trusted to help with VA-related claims."
 - advanced: Capitalize only when used as part of the branded term "My HealtheVet Advanced." Otherwise lowercase.
 - Agent Orange: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
-- annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial," and opt for plain language alternatives instead. For example, use "each year" or "once each year" (instead of "annual"), "2 times each year" or "twice each year" (instead of "bi-annual"), and "every other year" (instead of "biennial"). **[@Beth, Danielle - is "annual" really actually difficult for our customers to understand? Annual, annually -- these seem pretty common and easy to understand. (As opposed to terms like bi-annual, bi-weekly, bi-monthly which might be confused between 'twice per' or 'every other.'' ) - ***[Danielle response: Wherever possible, we aim to use the simplest word option with the fewest syllables and clearest meaning. So even though "annual" is pretty well understood, "each year" is even simpler. And with this specific example, avoiding "annual" helps to get the writer in the practice to also avoid the more confusing "biannual" and "biennial."]***
-- apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is okay for other benefits, such as "Apply for VA health care." ***[Danielle note: Added that "Apply" is okay for other benefits to ensure clarity.]***
+- annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial," and opt for plain language alternatives instead. For example, use "each year" or "once each year" (instead of "annual"), "2 times each year" or "twice each year" (instead of "bi-annual"), and "every other year" (instead of "biennial"). 
+- apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is okay for other benefits, such as "Apply for VA health care." 
 - Armed Forces: Capitalize.
 - asbestos: Define on first mention in body copy as "toxic fibers, once used in many buildings and products." Include the definition in another sentence, as a parenthetical, or set off with commas.
-- attending physician: Define on first mention in body copy, in the context of life insurance, as "the doctor in charge of your care" (when talking the Veteran) or "the doctor in charge of a Veteran's care" (when talking to a family caregiver). Include the definition in another sentence, as a parenthetical, or set off with commas. ***[Danielle note: Revised for clarity]***
+- attending physician: In the context of life insurance, define on first mention in body copy as "the doctor in charge of your care" (when talking to Veterans) or "the doctor in charge of a Veteran's care" (when talking to a family caregiver). Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 ### B
 
 - basic: Capitalize only when used as part of the branded term "DS Logon Basic." Otherwise lowercase.
 - became ill: Use "got sick."
 - became worse: Use "got worse."
-- beneficiary: In the context of life insurance, define this term as "the person you choose to receive your insurance proceeds" on first reference in body copy. Include the definition in another sentence, as a parenthetical, or set off with commas. ***[Updated per live site hub page copy.]*** 
-- Benefits Delivery at Discharge (BDD) program: Note that “Benefits” is plural. ***[Danielle question: Pull out into the acronyms list instead?]***
+- beneficiary: In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas. 
+- Benefits Delivery at Discharge (BDD) program: Note that “Benefits” is plural. [See a list of other common VA acronyms](https://www.placeholderlink.gov).
 - blind or low-vision (not "blind or sight-impaired")
 
 ### C
 
 - can vs. may: Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
-- caregiver: Use "caregiver" (not "caretaker"). Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "family member caring for a Veteran with disabilities" instead. ***[Danielle note: Added more context around family caregivers.]***
-[***Danielle note: Removed the reference to DD214 here since it's covered in the forms section]***
-- certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits. Example: "Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999)." ***[Danielle note: Added more context and an example]***
+- caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities." 
+- certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits. 
+  ​	**Example:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
+
 - Character of Discharge review process: Initial cap "Character of Discharge" review process. ***[Danielle note: This is the current casing for this term. Revisit?]**
 - character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 - chronic: Define on first mention in body copy as "long-lasting" or when needed, "illness that lasts for a long time." Include the definition in another sentence, as a parenthetical, or set off with commas.
-- claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)". After first mention, use "VA claim exam" or "claim exam." ***[Danielle note: Added some context around this evolving term.]***
-- click: Avoid using, especially "click here." Link the relevant words instead. Example: “Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you.”  
-  - click: Avoid "click here" for embedded text links. Link the relevant words instead.  [See also Links](hyperlink-to-Links-topic)
-  - Example: Find an [accredited representative](https://www.vets.gov/disability-benefits/apply-for-benefits/help/index.html) to help you. **[@Jared: can we format these words like link but not have it be dead link?]**
-  - Exception: In interface instructional copy, it's okay to use "click [Button Name]." Example: In your account dashboard, click **Profile.** https://content-guide.18f.gov/technical-and-interface-writing/#do-the-hard-work-to-make-it-simple
-  - ​	[**@Beth, Danielle - Yes avoid for "click here," but I think it's okay, and prefereable for clarity, to use "click" in interface copy such as instructing people to click a particular CTA button - ex: "In Google Calendar, click **Create.**" or "Click **Profile** in your account dashboard." **Thoughts? See also Links[@ME:ADDLINKTO LINKS SECTION OF STYLE GUIDE]** ***Danielle response: Yes, agree 100%. We use "click" in that context now, so I think it's good to add the explicit exception here. I do wonder if we should talk with Trevor about any accessibility concerns around the word "click" as we did for "press"?]***
-- compensation: "Disability compensation" is the preferred term, but "VA disability pay" has greater SEO value and is more plain language. Use "VA disability compensation (pay)" on first mention, and try to work in both terms. Also include explanation of "monthly payments." ***[Danielle note: Revised more based on more recent SME guidance and SEO research]***
+- claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam." 
+- click: Avoid using, especially "click here." Link the relevant words instead. [See also Links](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/links)
+  ​ **Example:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you. 
+  ​	**Exception:** In interface instructional copy, it's okay to use "click [Button/Interface Name]." Example: In your account dashboard, click **Profile.** https://content-guide.18f.gov/technical-and-interface-writing/#do-the-hard-work-to-make-it-simple
+  - ​	***TBD - we should talk with Trevor about any accessibility concerns around the word "click" as we did for "press"?]***
+- compensation: "Disability compensation" is the preferred term, but "VA disability pay" has greater SEO value and is more plain language. Use "VA disability compensation (pay)" on first mention, and try to work in both terms. Also include explanation of "monthly payments." 
 - competent: Define on first mention in body copy as "of legal age and sound mind." Include the definition in another sentence, as a parenthetical, or set off with commas.
 - conditions: Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 - contamination: Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. **Exception:** On the Camp Lejeune page, don't define this term.
-- continuous: When used in the context of eligibility, define this term as "all at once, without a break in service"). **Example:** "Served for at least 30 continuous days (all at once, without a break in service)." ***[Danielle note: Revised to provide greater context and example.]***
-- convalescence: Use "rehab care" instead. If used in the context of a specific benefit, can include "(also known as convalescence)."
+- continuous: When used in the context of eligibility, define this term as "all at once, without a break in service." 
+  ​ **Example:** Served for at least 30 continuous days (all at once, without a break in service)."
+  
+- convalescence: Use "rehab care" instead. If used in the context of a specific benefit, can include as a parenthetical: "(also known as convalescence)."
 - court-appointed guardian: Define on first mention in body content as "a person the court decides is in charge of caring for another person who can't take care of him or herself." Include definition in another sentence, as a parenthetical, or set off with commas.
 - court-martial: Lowercase, as in "general court-martial," "special court-martial," and "summary court-martial."
 - C&P exam: see "claim exam" entry.
@@ -72,16 +74,18 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 - deceased: This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
 - demolish: Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
 - dentistry: Use "dental care" instead.
-- Department of Veterans Affairs: Spell out in its entirety (no apostrophe on Veterans') or shorten to "Veterans Affairs" or "VA." Do not use "DVA," "Dept of VA," or other shortened versions. ***[Danielle note: Added more specific guidance per JL; Jen, can you double check to make sure this is accurate? Thanks!]***
-- Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention. ***[Danielle note: Revised per live site copy.]***
-***[Danielle note: Removed "dependents of Veterans" entry; confirmed w/ Beth it's not needed here]***
+- Department of Veterans Affairs: On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." Do not use "DVA," "Dept of VA," or other non-standard shortened versions.
+  ​ **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety (no apostrophe on Veterans') on the first instance. After the first instance, may shorten to Veterans Affairs or VA.  ***Gary Hicks - can you please confirm this does not conflict with OPIA guidance on name usage? Part of this has been adapted from intranet guidance (VHA) with adaptations for VA.gov.)***
+  
+- Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention. 
 - deprivation: Define one first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas.
 - decision notice: Do not refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
-- disability rating: Define as "a rating that measures how severe a disability is" or similar language. For example:
-  - "We may use a rating that measures how bad your disability is and helps us decide your level of benefits."
-  - "We assign you a disability rating based on the severity of your disability." 
-- disease: Use "illness" unless it is part of a proper name of a specific disease.
-- dividend: Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.***[Danielle note: Revised for clarity]**
+- disability rating: Define as "a rating that measures how severe a disability is" or similar language. 
+  __- Example:__ We may use a rating that measures how bad your disability is and that helps us decide your level of benefits.
+  __- Example:__ We assign you a disability rating based on the severity of your disability. 
+  
+- disease: Use "illness" unless it's part of a proper name of a specific disease.
+- dividend: Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.
 - Don't Ask, Don't Tell policy: Use initial caps and no quotation marks. Don't capitalize "policy."
 
 ### E
@@ -100,59 +104,68 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
   - educational plan
   - educational program
 
-- employment handicap: Add a definition or note to help explain this term. **Example:** "Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests)." ***[Danielle note: Added per site.]***
-- equivalent: Use an alternative word or phrase, depending on context. For example:
-  - Use "Apply for VA health care online (Equal to VA Form 10-10EZ)" instead of "Apply for VA health care online (Equivalent to VA Form 10-10EZ)".
-  - Use "We'll also review your discharge papers (DD214 or other separation documents)" instead of "We'll also review your discharge papers (DD214 or equivalent)" ***[Danielle note: Revised for greater nuance]***
-- era: Uppercase for Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era" lowercase: Vietnam War era. **[@Beth/Danielle - what is Ic:? Can we use something more plain language? / jl]** ***[Danielle response: This was just shorthand for "lowercase" - have spelled it out.]***
+- employment handicap: Add a definition or note to help explain this term. 
+  ​ **Example:** Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests). 
+  
+- equivalent: Use an alternative word or phrase -- such as "equal to," "same as," "similar to," etc. -- depending on context. 
+  ​ **Like this:** Apply for VA health care online (equal to VA Form 10-10EZ).
+  ​ **Not this:** Apply for VA health care online (equivalent to VA Form 10-10EZ).
+  
+  ​ **Like this:** We'll also review your discharge papers (DD214 or other separation documents).
+  ​ **Not this:** We'll also review your discharge papers (DD214 or equivalent).
+   
+- era: Uppercase for Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era," lowercase: Vietnam War era. 
 - evidence: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed.
-- exception: Used to call special attention to something. It should be bolded and never in all caps. **[@Beth/Danielle: could you point out for me example on site? Not sure calling for it to be bolded would always be good...? / jl]** ***[Danielle response: See the blue box on this page for an example: https://www.va.gov/education/about-gi-bill-benefits/how-to-use-benefits/study-at-foreign-schools/.]***
+- exception: Used to call special attention to something. It should be bolded and never in all caps. 
 - excluding: Use "not counting" or "not including."
-- expedite/expedited: Use words like "faster," "quicker," or "speed up," depending on context. For example:
-  - Use "Find out how to use the Fully Developed Claims program to get a faster decision on your disability benefits claim" instead of "Find out how to use the Fully Developed Claims program to get an expedited decision on your disability benefits claim"
-  - Use "This may help speed up the claim decision process so you can get your benefits sooner" instead of "This may help expedite the claim decision process." **[@Beth, Danielle - is this guideline specific only to "faster"? Couldn't there be a situation where other plain language phrases might work better or just as well -- more quickly, quicker -- or are we strictly calling for "faster" for consistency?]** ***[Danielle response: Agree, I think there are different ways we can get around using "expedite/expedited." I've added some nuance and examples.]***
+- expedite/expedited: Use plain language words like "faster," "quicker," or "speed up," depending on context.
+  ​ **Like this:** Use the Fully Developed Claims program to get a faster decision on your disability benefits claim.
+  ​ **Not this:** Use the Fully Developed Claims program to get an expedited decision on your disability benefits claim.
+  
+  ​ **Like this:** This may help speed up the claim decision process, so you can get your benefits sooner.
+  ​ **Not this:** This may help expedite the claim decision process.
+  
 - explosive ordinance: Define on first mention in body copy as "high-explosive devices, and chemical and nuclear weapons." Include definition as another sentence, a parenthetical, or set off with commas.
 - exposure: Define in the context of body copy as "had contact with” or “come into contact with.”
 
 ### F
 
 - family member: Use this term instead of “beneficiary” whenever possible.
-- Family Servicemembers’ Group Life Insurance (FSGLI): Branded term. ***[Danielle question: Move to acronyms section?]***
+- Family Servicemembers’ Group Life Insurance (FSGLI): This is the program name. Treat as a proper noun, title capped. ***[Danielle question: Move to acronyms section?]***
 - federal: Do not cap "federal" for generic usage such as "federal agency."
 - Fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 - file a claim for disability compensation: Use "file a claim" rather than "apply for benefits" when referring to disability.
 - final status: Use “in final status” rather than “in a final status."
-- financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  **[@Beth, Danielle - could you provide background on this? This seems like a wordy alternative.]** ***[DT response: This is a situation in which we're looking to help the user understand what we mean by "financial hardship." I've revised to add more context.]***
+- financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
 ### G
 
 - GI: No periods (*not* G.I.).
-- GI Bill®: Include trademark in first prominent mention on website (currently on Education and Training hub page). ***[Danielle note: Added to reflect legal guidance]***
-- GI Bill Comparison Tool: Capitalize "Comparison Tool."
+- GI Bill®: Include the trademark symbol in the first prominent mention on website (currently on Education and Training hub page). ***[Danielle note: Added to reflect legal guidance] -- @Danielle: Jen question -- is the guidance for first prominent instance per page wherever it is mentioned or just once, in the Education section of the site?***
+- GI Bill Comparison Tool: Capitalize "Comparison Tool." Treat as a proper noun, title capped.
 - gravesite: Style this as one word. (Merriam-Webster does not address whether this should be one or two words, but the Gravesite Locator and Arlington National Cemetery both style it as one word. In addition, the following related words do appear in Merriam-Webster as one: graveside and gravestone.)
-- guarantee: Can be used as either a noun or a verb. For our purposes, especially within the Home Loans section, when used in a legal context, we use “guarantee” as a verb and “guaranty” as a noun. Example: “We guarantee a portion of the loan.”
-- guaranty: Should be used only as a noun. “Because of our partial guaranty, lenders may offer better loan terms for Veterans.”
-- Guardsman/Guardsmen: Replace with gender neutral language. For now, use "Guard member." In the process of confirming guidance. ***[Danielle note: Updated to reflect gender neutral terminology]***
-- Gulf War Illness: Cap the I in Illness. This is also sometimes called "Chronic Multi-symptom illness." Note that "Gulf War Syndrome" is the former name, but is no longer used. It can be included for clarity or SEO purposes on first mention as "(known in the past as Gulf War Syndrome)." ***[Danielle note: Added more context.]***
+- guarantee: Can be used as either a noun or a verb. For our purposes, especially within the Home Loans section, when used in a legal context, we use “guarantee” as a verb and “guaranty” as a noun. Example: We guarantee a portion of the loan.
+- guaranty: Should be used only as a noun. Example: Because of our partial guaranty, lenders may offer better loan terms for Veterans.
+- Guardsman/Guardsmen: Use the gender neutral "Guard member" on VA.gov. Capitalize "Guard." ***[Danielle note: Updated to reflect gender neutral terminology] -- [Jen note: @Danielle - pls confirm re capitalizing Guard; I think this is what Misty advised and we found in the DOD style guide...? Edited guidance language for clarity.]***
+- Gulf War Illness: Cap the I in Illness. This is also sometimes called "Chronic Multi-symptom illness." Note that "Gulf War Syndrome" is the former name, and is no longer used. It can be included for clarity or SEO purposes on first mention as "(known in the past as Gulf War Syndrome)." 
 
 ### H
 
 - hazardous: Define in the context of body copy as "harmful" or "toxic."
 - hazardous exposure: Define in the context of body copy as "contact with harmful chemicals or other hazardous materials."
 - health care: Two words, never hyphenated as a compound adjective, e.g., “health care system.” Do not capitalize unless it is part of the official name of a VA medical center. In addition, defer to the hospital’s official name, which may have health care as one word versus two words.
-***[Danielle note: Removed "health problems" entry; think we need to look at updating some of these against latest copy on site.]***
 - hospitalization: Use "hospital care."
 - home loan: Do not use a hyphen when in the form of an adjective. ("home loan benefits").
 - Homeless or at risk of becoming homeless.
-- House confinement: Phrase as "Being unable to leave your house (known as house confinement)". ***[Danielle note: Added per site]
+- House confinement: Phrase as "being unable to leave your house (known as house confinement)". 
 
 ### I
 
 - illness: Use "illness" to refer to diseases.
-- increased claim: Define on first mention as "a claim for more compensation for a disability that we've already determined to be service connected and that's gotten worse." ***[Danielle note: Revised per latest site definition.]**
-- independent living services: No hyphen for the compound adjective.
-- Individual Unemployability: Include a description that makes clear that this benefit is for Veterans who can't work due to a service-connected disability. ***[Danielle note: Revised per latest site definition.]**
-- individually unemployable: Lowercase. Define as "unable to work due to a service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas. ***[Danielle note: Revised per latest site definition.]**
+- increased claim: Define on first mention in body copy as "a claim for more compensation for a disability that we've already determined to be service connected and that has gotten worse." 
+- independent living services: Don't use hyphen for the compound adjective.
+- Individual Unemployability: Include a description that makes clear that this benefit is for Veterans who can't work due to a service-connected disability. ***[Danielle note: Revised per latest site definition.] - Jen q to Danielle: Is this an official VA terminology that requires capitalization? Example - the below term is lowercase, but seems the same/similar to this term.**
+- individually unemployable: Lowercase. Define as "unable to work due to a service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas. 
 - input: Use "record" instead.
 
 ### J
@@ -169,8 +182,11 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - Loan Guaranty agent: Capped per SME. **[@Working Group & Editorial - Do we need parity for this term; do different agencies capitalize this term differently? @Beth, Danielle - can you provide more info on SME & rationale?]** ***[Danielle note: Beth - do you have this history?]***
 
-- Loan Technician: Capitalize. **[To discuss. I recommend using standard American English -- lowercase unless it is being used as part of someone's official title.] ***[Danielle response: Agree.]***
-
+- Loan Technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles/credentials.  **[To discuss. I recommend using standard American English -- lowercase unless it is being used as part of someone's official title.] ***[Danielle response: Agree.]***
+  
+  ​ **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
+  ​ **Not this:** Loan Technician Jane Smith may ask you to provide more information.
+  
 - log in/log out (verb), login (noun or adj.): Use sign in/sign out or username and password, as needed.
 
   ​	**Do:** Sign in with your username and password.
@@ -182,49 +198,46 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 ### M
 
 - manufacturing: Use "making."
-***[Danielle note: Removed "maximum" entry; confirmed with Beth that it's not needed]***
 - may: See entry for "can."
 - Military Occupation Code (MOC) ***[Danielle question: Move to acronyms section?]***
 - Million Veteran Program (MVP) ***[Danielle question: Move to acronyms section?]***
 - MISSION Act: Refer to it by the official short title, VA MISSION Act. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
 - Montgomery GI Bill Active Duty (MGB-AD) ***[Danielle question: Move to acronyms section?]***
 - Montgomery GI Bill Selected Reserve (MGB-SR) ***[Danielle question: Move to acronyms section?]***
-- My HealtheVet: In body copy, headlines, and user interface elements such as links, buttons, and navigation, do not italicize the "e" between Health and Vet. The middle "e" is italicized only in the logo.
+- My HealtheVet: Do not italicize the joining "e" between "Health" and "Vet" in body copy, headlines, and user interface elements such as links, buttons, and navigation. The joining "e" is italicized only in the logo.
 
 ### N
 
-- National Guard: Can also use "Guard." ***[Danielle note: Added per recent SME conversation.]***
-- new claim: Define on first mention in body copy as "a claim for added benefits or other benefit requests related to an existing service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas. ***[Danielle note: Revised to address defining in body copy.]***
+- National Guard: Can also use "Guard." 
+- new claim: Define on first mention in body copy as "a claim for added benefits or other benefit requests related to an existing service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas. 
 - non-traditional: Hyphenate when preceding and modifying a noun.
 - nonpay: Do not hyphenate.
 - Note: Used to call special attention to something. It is bolded and never in all caps.
-- number: Spell out this word rather than using "No." or "#."
+- number: Spell out this word. Don't abbreviate to "No." or "#."
 
 ### O
 
-- original claim: Define on first mention in body copy as "your first claim for disability compensation." Include definition in another sentence, as a parenthetical, or set off with commas. ***[Danielle note: Revised to address defining in body copy.]***
+- original claim: Define on first mention in body copy as "your first claim for disability compensation." Include definition in another sentence, as a parenthetical, or set off with commas. 
 
 ### P
 
-- PO Box: Do not use periods.
+- PO Box: Don't use periods.
 
-- patient: Use "person living with," as in "person living with diabetes" instead of "diabetes patient."
+- patient: Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
 
 - percent: Use the symbol % rather than spelling it out, for scannability.
 
 - period of honorable service (not honorable period of service)
 
-- permanent disability, permanent and total disability: Define a "permanent disability" as "a disability that's not expected to improve" and define "permanent and total disability" as "a disability that we've rated as 100% disabling and that's not expected to improve." Include definition in another sentence, as a parenthetical, or set off with commas. **[@Beth, Danielle, Working Group - compare with entries for disability...]**  ***[Danielle note: Revised this and removed the separate "disability" entry because it was repetitive.]***
+- permanent disability, permanent and total disability: Define a "permanent disability" as "a disability that's not expected to improve" and define "permanent and total disability" as "a disability that we've rated as 100% disabling and that's not expected to improve." Include definition in another sentence, as a parenthetical, or set off with commas. 
 
 - Persian Gulf War era: Lowercase "era."
-
-***[Danielle note: Removed "physical or mental disorder" entry. I think we should revisit some of these terms against the latest site copy.]
 
 - post-9/11: We use the slash rather than the hyphen for 9/11 (*not* 9-11). For example, Post-9/11 GI Bill.
 
 - postservice: No hyphen.
 
-- Premium: Initial cap when used in the context of account level (for example: DS Logon Premium)
+- Premium: Initial cap when used in the context of account level (for example: DS Logon Premium account)
 
 - pre-discharge: Use a hyphen.
 
@@ -236,43 +249,52 @@ For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webs
 
 - presume: Use "conclude," as in "we will conclude your condition is linked to service."
 
-- presumptive disability: Use "health problem" and reference when needed for clarity. Example: " a health problem (called presumptive disability) that we've concluded is likely caused by... "
+- presumptive disability: Use "health problem" and reference when needed for clarity. Example: "a health problem (called presumptive disability) that we've concluded is likely caused by...."
 
-- Prisoner of War: Capitalized to match the 10-10EZ. **[ [DOD military dictionary does NOT capitalize this term](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). Therefore, I recommend using the same standard American English lowercase, _except_ when it is part of a proper noun such as the name of a form or law, like the "Geneva Convention Relative to the Treatment of Prisoners of War."]** ***[Danielle note: Agree, and would just add that we usually include "POW" as in "prisoner of war (POW)"]***
+- prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). **Example:** As a former prisoner of war (POW), you may be eligible for additional VA health benefits and services.  ***Jen note: @Danielle - could you verify if the second example is not saying something totally offbase? I meant to use it just as an example of when we'd use it as a lowercase noun, but don't want to inadvertently spread misinformation about VA benefits either.***
 
 - Project 112/SHAD
 
-- process (a claim): Use "review." **Example:** "We'll review your disability claim."
+- process (a claim): Use "review." **Example:** We'll review your disability claim.
 
-- prove: Avoid the word "prove" when speaking to evidence a Veteran needs to provide for a claim. Instead, use more empathetic language such as "show" or "to support your claim." For example: Use "You'll need to provide evidence that shows your illness was likely caused by your service" instead of "You'll need to prove that your illness was likely caused by your service." ***[Danielle note: Revised for clarity and greater context.]***
+- prove: Avoid the word "prove" when speaking about evidence that a Veteran needs to provide for a claim. Instead, use more empathetic language such as "show," "provide," or "to support your claim." 
+ 
+  ​ **Like this:** You'll need to provide evidence that shows your illness was likely caused by your service.
+  ​ **Not this:** You'll need to prove that your illness was likely caused by your service.
 
-- PTSD: posttraumatic stress disorder (no hyphen) **[@Beth, Danielle, Working Group -- would like to know how other agencies, particularly medical centers, use this term. MW uses the hyphen "post-traumatic stress disorder," which seems more common to me, and is actually easier to scan. Also, what is our current usage -- do we always spell it out in body copy, first instance only, do we use acronym, then spelling, or vice versa; or is this acronym considered common enough that we omit spelled term?]** ***[Danielle response: For history - I believe we follow this style in order to align with the National Center for PTSD. Re: the question of usage - we currently use "PTSD" in the left nav. We use "Posttraumatic stress disorder (PTSD)" in the page title and first mention in body copy of the PTSD health care page (for SEO purposes), and then PTSD after first mention in body copy]***
+- PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTSD. Note that we include "(PTSD)" in the page title and first mention in body copy of the PTSD health care page for SEO purposes, and then simply "PTSD" after first mention in body copy.
 
 ### Q
 
 ### R
 
-- regional benefit office: Use "regional office" instead. See "regional office" entry for details. ***[Danielle note: Added context from recent SME guidance.]***
-***[Danielle note: Removed "reopened claim" entry because we're no longer using that term]***
+- regional benefit office: Use "regional office" instead. See [regional office](placeholderanchorlink.com) entry for details. 
+
 - Reserve
+
 - Reservist
+
 - respiratory disease: Use "breathing problems" or "lung disease."
+
 - resume: Don't use accent marks when referring to the noun, as in a job resume.
-- retroactive: Provide contextual information to help define, as relevant in the specific situation. For example: "Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury." ***[Danielle note: Revised for clarity.]***
+
+- retroactive: Provide contextual information to help define, as relevant in the specific situation. Example: Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury.
 
 ### S
 
-- secondary service-connected claim: Define on first mention in body copy as "a claim for a new disability that's linked to a service-connected disability you already have." Include definition in another sentence, as a parenthetical, or set off with commas. ***[Danielle note: Revised to address defining in body copy.]***
+- secondary service-connected claim: Define on first mention in body copy as "a claim for a new disability that's linked to a service-connected disability you already have." Include definition in another sentence, as a parenthetical, or set off with commas. 
 
-- Selected Reserve: Generally used in the context of the Montgomery GI Bill Selected Reserve. ***[Danielle note: Added context.] 
+- Selected Reserve: Generally used in the context of the Montgomery GI Bill Selected Reserve. 
 
-- service connected: Hyphenate when preceding a noun. For example, "a Veteran with a service-connected disability." Otherwise, do not hyphenate. For example, "The disability is considered service connected."
+- service connected: Hyphenate when modifying a noun. Otherwise, do not hyphenate. 
+  ​ **Example (modifying a noun):** A Veteran with a service-connected disability. 
+  ​ **Example (not modifying a noun):** The disability is considered service connected.
 
-- service-connected condition: Define in body copy as an "illness or injury caused—or made worse by— active-duty service." Can define in another sentence, as a parenthetical, or set off with commas.  For example: "A service-connected condition is an illness or injury caused—or made worse by—your active-duty service."
+- service-connected condition: Define in body copy as an "illness or injury caused—or made worse by—active-duty service." Can define in another sentence, as a parenthetical, or set off with commas.  For example: "A service-connected condition is an illness or injury caused—or made worse by—your active-duty service."
 
 - service-connected disability: In most cases, add the definition separately as another sentence or a note below a bulleted list. For example: "Having a service-connected disability means we've concluded that you're disabled because of an illness or injury caused—or made worse—by your active-duty service."  
 
-***[Danielle note: Removed "service-connection"; confirmed with Beth that we don't need this term here.]***
+## Left off here [JL 4/1] 
 
 - Service-Disabled Veterans Insurance (S-DVI) ***[Danielle note: I don't think we need to recommend defining this in every instance. Also, should we move this to acronyms section?]***
 
