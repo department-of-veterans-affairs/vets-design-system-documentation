@@ -16,6 +16,10 @@ How to propose, amend, or retire components.
 
 The content on this page only applies to Formation, not Formation React.
 
+<div markdown="1">
+[![decison tree]({{site.baseurl}}/images/new-item-tree.jpg)]({{site.baseurl}}/images/new-item-tree.jpg)
+</div>
+
 ## Propose a component
 
 (this page is under construction)
