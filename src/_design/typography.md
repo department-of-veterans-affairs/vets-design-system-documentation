@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Typography
+tags: Fonts, Lists, Links, Headings, Paragraphs 
 anchors:
   - anchor: Fonts
   - anchor: Headings

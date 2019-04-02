@@ -1,6 +1,7 @@
 ---
 layout: default
 title: For developers
+tags: Installation, CSS, CSS architecture
 anchors:
   - anchor: Installation
   - anchor: CSS

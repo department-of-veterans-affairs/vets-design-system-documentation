@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Spacing units
+tags: Grid, Spacing tokens
 anchors:
   - anchor: Spacing unit tokens
   - anchor: Using the spacing tokens

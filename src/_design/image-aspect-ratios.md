@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Image aspect ratios
+tags: Images
 ---
 
 # Aspect ratios
