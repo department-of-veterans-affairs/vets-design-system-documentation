@@ -12,6 +12,13 @@ Change the font-family.
 VA.gov uses two typefaces: Bitter for serif and Source Sans as a sans-serif.
 
 <div class="site-c-showcase">
+{%
+  include _showcase-header.html
+  heading_level=2
+  header="Font family"
+  responsive=false
+  css_property="font-family"
+%}
   <div class="vads-l-row vads-u-flex-direction--column">
     <div class="vads-l-col site-c-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row" style="border-top:none;">
       <div><code class="code">.vads-u-font-family--sans</code></div>

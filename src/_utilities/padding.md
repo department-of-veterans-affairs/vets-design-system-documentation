@@ -9,7 +9,6 @@ anchors:
   - anchor: Padding right and left
   - anchor: Padding right
   - anchor: Padding left
-  - anchor: Responsive prefixes
 ---
 
 # Padding
@@ -20,6 +19,15 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding on all sides
 <div class="site-c-showcase">
+
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding"
+    responsive=true
+    css_property="padding"
+  %}
+
   <div class="vads-l-row">
     {% for item in site.data.padding.all %}
       {% include padding-example.html
@@ -36,6 +44,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding top and bottom
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding top and bottom"
+    responsive=true
+    css_property="padding-top, padding-bottom"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.padding.y %}
       {% include padding-example.html
@@ -52,6 +67,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding top
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding top"
+    responsive=true
+    css_property="padding-top"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.padding.top %}
       {% include padding-example.html
@@ -68,6 +90,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding bottom
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding bottom"
+    responsive=true
+    css_property="padding-bottom"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.padding.bottom %}
       {% include padding-example.html
@@ -84,6 +113,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding right and left
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding right and left"
+    responsive=true
+    css_property="padding-right, padding-left"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.padding.x %}
       {% include padding-example.html
@@ -100,6 +136,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding right
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding right"
+    responsive=true
+    css_property="padding-right"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.padding.right %}
       {% include padding-example.html
@@ -116,6 +159,13 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 
 ## Padding left
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Padding left"
+    responsive=true
+    css_property="padding-left"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.padding.left %}
       {% include padding-example.html

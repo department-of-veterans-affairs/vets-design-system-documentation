@@ -8,7 +8,6 @@ anchors:
   - anchor: Width
   - anchor: Min-width
   - anchor: Max-width
-  - anchor: Responsive prefixes
 ---
 
 # Height and width
@@ -20,6 +19,13 @@ Reset the height and width of an element. All height and width classes include [
 ## Height
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Height"
+    responsive=true
+    css_property="height"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.height-and-width.height %}
       {% include height-and-width-example.html
@@ -36,6 +42,13 @@ Reset the height and width of an element. All height and width classes include [
 ## Min-height
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Min-height"
+    responsive=true
+    css_property="min-height"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.height-and-width.min_height %}
       {% include height-and-width-example.html
@@ -52,6 +65,13 @@ Reset the height and width of an element. All height and width classes include [
 ## Max-height  
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Max-height"
+    responsive=true
+    css_property="max-height"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.height-and-width.max_height %}
       {% include height-and-width-example.html
@@ -68,6 +88,13 @@ Reset the height and width of an element. All height and width classes include [
 ## Width
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Width"
+    responsive=true
+    css_property="width"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.height-and-width.width %}
       {% include height-and-width-example.html
@@ -84,6 +111,13 @@ Reset the height and width of an element. All height and width classes include [
 ## Min-width
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Min-width"
+    responsive=true
+    css_property="min-width"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.height-and-width.min_width %}
       {% include height-and-width-example.html
@@ -100,6 +134,13 @@ Reset the height and width of an element. All height and width classes include [
 ## Max-width
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Max-height"
+    responsive=true
+    css_property="max-height"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.height-and-width.max_width %}
       {% include height-and-width-example.html

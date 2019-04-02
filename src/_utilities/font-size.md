@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Font size
-anchors:
-  - anchor: Responsive prefixes
 ---
 
 # Font size
@@ -14,6 +12,13 @@ Change the font size of an element. The font-size classes include [responsive pr
 The font-size utility is especially useful on headings, allowing them to be logically nested while applying a custom font size.
 
 <div class="site-c-showcase">
+{%
+  include _showcase-header.html
+  heading_level=2
+  header="Font size"
+  responsive=true
+  css_property="font-size"
+%}
 {% include_relative html/font-size.html %}
 </div>
 

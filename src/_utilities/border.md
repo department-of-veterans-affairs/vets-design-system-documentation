@@ -5,7 +5,6 @@ anchors:
   - anchor: Border shorthand
   - anchor: Border style
   - anchor: Border color
-  - anchor: Responsive prefixes
 ---
 
 # Border
@@ -19,6 +18,15 @@ Set width, style, and color of an item’s borders.
 The border shorthand utility provides border widths for all sides, as well as `top`, `right`, `bottom`, and `left`, using `solid` as the default `border-style`.
 
 <div class="site-c-showcase">
+
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Border"
+    responsive=true
+    css_property="border"
+  %}
+
   <h3>Border on all sides</h3>
   <div class="vads-l-row">
     {% for item in site.data.borders.widths %}
@@ -75,6 +83,15 @@ The border shorthand utility provides border widths for all sides, as well as `t
 **Note:** To use the utility for `border-style`, you must use the [border shorthand](#border-shorthand) if your element does not already have a border. Border style cannot be changed across different breakpoints
 
 <div class="site-c-showcase">
+
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Border style"
+    responsive=false
+    css_property="border-style"
+  %}
+
   <div class="vads-l-row">
     {% for item in site.data.borders.styles %}
       {% include border-example.html
@@ -90,6 +107,14 @@ The border shorthand utility provides border widths for all sides, as well as `t
 **Note:** To use the utility for `border-color`, you must use the [border shorthand](#border-shorthand) if your element does not already have a border. Border color cannot be changed across different breakpoints.
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Border color"
+    responsive=false
+    css_property="border-color"
+  %}
+
   <h4>Base colors</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.primary %}

@@ -10,6 +10,13 @@ Change the font wight of an element.
 </div>
 
 <div class="site-c-showcase">
+{%
+  include _showcase-header.html
+  heading_level=2
+  header="Font weight"
+  responsive=false
+  css_property="font-weight"
+%}
   <div class="vads-l-row vads-u-flex-direction--column">
     <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--4">

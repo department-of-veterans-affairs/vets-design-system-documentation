@@ -9,7 +9,6 @@ anchors:
   - anchor: Margin right and left
   - anchor: Margin right
   - anchor: Margin left
-  - anchor: Responsive prefixes
 ---
 
 # Margins
@@ -22,6 +21,14 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 ## Margin on all sides
 
 <div class="site-c-showcase">
+
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margins"
+    responsive=true
+    css_property="margin"
+  %}
 
   <div class="vads-l-row">
     {% for item in site.data.margins.all %}
@@ -39,6 +46,13 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 ## Margin top and bottom
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margin top and bottom"
+    responsive=true
+    css_property="margin-top, margin-bottom"
+  %}
   <p>The ghosted square represents another element just below the example in the DOM to depict a negative bottom margin.</p>
   <div class="vads-l-row">
     {% for item in site.data.margins.y %}
@@ -55,6 +69,13 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin top
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margin top"
+    responsive=true
+    css_property="margin-top"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.margins.top %}
       {% include margin-example.html
@@ -71,6 +92,14 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin bottom
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margin bottom"
+    responsive=true
+    css_property="margin-bottom"
+  %}
+
   <p>The ghosted square represents another element just below the example in the DOM to depict a negative bottom margin.</p>
   <div class="vads-l-row">
     {% for item in site.data.margins.bottom %}
@@ -87,6 +116,15 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin right and left
 <div class="site-c-showcase">
+
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margin right and left"
+    responsive=true
+    css_property="margin-right, margin-left"
+  %}
+
   <p>The squares in this example are set to display inline.The ghosted square represents another element just below the example in the DOM to depict a negative right margin.</p>
   <div class="vads-l-row">
 
@@ -104,6 +142,15 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin right
 <div class="site-c-showcase">
+
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margin right"
+    responsive=true
+    css_property="margin-right"
+  %}
+
   <p>The squares in this example are set to display inline.The ghosted square represents another element just below the example in the DOM to depict a negative right margin.</p>
   <div class="vads-l-row">
 
@@ -121,6 +168,14 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin left
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Margin left"
+    responsive=true
+    css_property="margin-left"
+  %}
+
   <div class="vads-l-row">
     {% for item in site.data.margins.left %}
       {% include margin-example.html

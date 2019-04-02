@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Text align
-anchors:
-  - anchor: Responsive prefixes
 ---
 
 # Text align
@@ -12,6 +10,13 @@ Change the alignment of text or elements. This utility also [responsive prefixes
 </div>
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=2
+    header="Text align"
+    responsive=true
+    css_property="text-align"
+  %}
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.text-align.alignments %}
       {% include text-align-example.html

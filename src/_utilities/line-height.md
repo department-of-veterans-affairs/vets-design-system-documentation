@@ -10,6 +10,13 @@ Change the line height of text. Measure classes include [responsive prefixes](#r
 </div>
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=2
+    header="Line height"
+    responsive=true
+    css_property="line-height"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.line-height.line_heights %}
       <div class="site-c-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">

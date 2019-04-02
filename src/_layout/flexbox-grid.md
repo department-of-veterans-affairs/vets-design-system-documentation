@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Flexbox grid
+anchors:
+  - anchor: Auto-sizing columns
+  - anchor: Fixed columns
+  - anchor: Responsive grid
 ---
 
 # Flexbox grid

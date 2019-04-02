@@ -10,6 +10,14 @@ Change the background color of an element
 </div>
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=2
+    header="Background color"
+    responsive=false
+    css_property="background-color"
+  %}
+
   <h4>Base colors</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.primary %}

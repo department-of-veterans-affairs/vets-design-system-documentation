@@ -6,8 +6,98 @@
   padding: $units-2;
 }
 
+.site-c-showcase > h2,
+.site-c-showcase > h3,
+.site-c-showcase > h4 {
+  font-family: $font-sans;
+}
+
 .site-c-showcase + .highlighter-rouge {
   margin-top: -1px;
+}
+
+.site-c-showcase__header {
+  margin-bottom: units(4);
+
+  @include media($medium-screen) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.site-c-showcase__heading {
+  font-size: 2rem;
+  font-family: $font-sans;
+  margin-top: 0;
+
+  @include media($medium-screen) {
+    margin: 0;
+  }
+}
+
+.site-utility-scope {
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+  @include media($medium-screen) {
+      margin: 0;
+  }
+}
+
+.site-utility-scope__link {
+  margin: 0;
+}
+
+.site-utility-scope__button,
+.site-utility-scope__button:visited,
+.site-utility-scope__button:hover {
+  background: transparent;
+  color: $color-base;
+  font-weight: $font-bold;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid;
+  padding: units(1);
+  border-radius: 4px;
+  transition: none;
+
+  .fas {
+    margin-right: units(.5);
+  }
+}
+
+.site-utility-scope__button--supported,
+.site-utility-scope__button--supported:visited {
+  border-color: $color-green-lighter;
+
+  .fas {
+    color: $color-green;
+  }
+}
+
+.site-utility-scope__button--unsupported,
+.site-utility-scope__button--unsupported:visited {
+  border-color: $color-gray-lighter;
+  color: $color-gray-light;
+  text-decoration: line-through;
+  pointer-events: none;
+
+  .fas {
+    color: $color-gray-lighter;
+  }
+}
+
+.site-c-showcase__prop-head {
+  width: 100%;
+  margin: 0;
+}
+
+.site-c-showcase__prop {
+  font-family: $font-monospace;
+  color: $color-secondary-darkest;
 }
 
 .site-c-showcase__col {

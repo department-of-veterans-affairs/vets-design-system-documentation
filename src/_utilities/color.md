@@ -12,6 +12,14 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
 **Note:** Not all of these colors are placed in accessible color combinations.
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=3
+    header="Color"
+    responsive=false
+    css_property="color"
+  %}
+
   <h4>Base colors</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.primary %}

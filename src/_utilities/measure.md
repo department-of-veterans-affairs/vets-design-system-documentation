@@ -13,6 +13,13 @@ In other words, as the font size increases, the pixel width increases.
 
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=2
+    header="Measure"
+    responsive=true
+    css_property="max-width (ch)"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.measures.measures %}
       <div class="site-c-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">

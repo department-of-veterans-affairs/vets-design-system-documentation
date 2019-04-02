@@ -1,0 +1,13 @@
+<div class="site-c-showcase__header">
+  <h{{ include.heading_level }} class="site-c-showcase__heading">{{ include.header }}</h{{ include.heading_level }}>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      {% if include.responsive == true %}
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      {% else %}
+        <span class="site-utility-scope__button site-utility-scope__button--unsupported"><i class="fas fa-times-circle" aria-label="Is not"></i> Responsive</span>
+      {% endif %}
+    </li>
+  </ul>
+  <p class="site-c-showcase__prop-head">CSS property: <span class="site-c-showcase__prop">{{ include.css_property }}</span></p>
+</div>

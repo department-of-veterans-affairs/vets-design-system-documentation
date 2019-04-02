@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Display
-anchors:
-  - anchor: Responsive prefixes
 ---
 
 # Display
@@ -12,6 +10,13 @@ Change the display property of an element.
 </div>
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=2
+    header="Display"
+    responsive=true
+    css_property="display"
+  %}
   <div class="vads-l-row">
     {% for item in site.data.display.display %}
       <div class="vads-l-col--12 site-c-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">

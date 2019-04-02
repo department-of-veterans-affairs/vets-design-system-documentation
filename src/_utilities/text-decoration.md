@@ -10,6 +10,13 @@ Change the text-decoration.
 </div>
 
 <div class="site-c-showcase">
+  {%
+    include _showcase-header.html
+    heading_level=2
+    header="Text decoration"
+    responsive=false
+    css_property="text-decoration"
+  %}
   <div class="vads-l-row vads-u-flex-direction--column">
     <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border-top--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
