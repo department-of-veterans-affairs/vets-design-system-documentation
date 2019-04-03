@@ -13,10 +13,14 @@ The latest news and updates on Formation and the content style guide
 
 ### April 3, 2019
 
+**6.0.0 & 6.0.1**
+
+Image paths in Formation are now relative, so the images and fonts folder are not *required* to be in your site root. 
+
 **Site updates**
 - Better indicators for responsive utilities
 - Updates to contribution documentation (still work in progress)
-- Updates to content style guide 
+- Updates to content style guide
 
 ---
 
