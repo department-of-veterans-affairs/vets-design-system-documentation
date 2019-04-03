@@ -11,6 +11,22 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 3, 2019
+
+**Site updates**
+- Better indicators for responsive utilities
+- Updates to contribution documentation (still work in progress)
+- Updates to content style guide 
+
+---
+
+### March 29, 2019
+
+**Site updates**
+- Added search feature
+
+---
+
 ### March 25, 2019
 
 **5.6.1**
