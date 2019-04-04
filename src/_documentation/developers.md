@@ -35,27 +35,34 @@ We recommend using `npm` to install the formation package into your project.
 $ npm install --save @department-of-veterans-affairs/formation
 ```
 
-The Formation module is now installed as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/formation/dist` directory.
+This line installs Formation as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/formation/dist` directory.
 
-If you would like to use the un-compiled Sass files, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
+If you would like to use the un-compiled Sass files instead, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
 
-**Note:** We do not recommend editing files in the `node_modules` directory because once the packages are updated, your edits will be lost. We recommend using [gulp](https://gulpjs.com/) to move files from your `node_modules` directory into your project folders. To see how this documentation site is moving files, look at the [gulp build script](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/config/gulp/build.js).
+**Note:** We do not recommend editing files in the `node_modules` directory because once the packages are updated, you will lose all of your edits. We recommend using [gulp](https://gulpjs.com/) to move files from your `node_modules` directory into your project folders. To see how this documentation site is moving files, look at the [gulp build script](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/config/gulp/build.js).
 
-#### Images in Formation
 
-**Important:** Images linked in Formation’s CSS file use absolute paths, so there are two options for getting images to appear in your project.
+Place the contents of the `dist` folder in your project. In this example, we placed the formation `dist` contents into `assets/formation/`, but you can place them anywhere in your project that you like. The `fonts/` and `img/` directories should remain relative to `formation.min.css`.
 
-1) Place the contents of the `dist` folder in your project root.
 ```
 project-root
-├── fonts/
-├── img/
-├── formation.js
-├── formation.min-css
+├── assets/
+├──────├──formation/
+├──────├──────├──────fonts/
+├──────├──────├──────img/
+├──────├──────├──────formation.js
+├──────├──────├──────formation.min-css
 ```
 
-2) Place the contents of the `dist` folder where you like and use `gulp-string-replace` to change the paths. This documentation site is doing exactly that. Take a look at the [script]
-(https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/config/gulp/paths.js) in use.
+If you prefer to change the location of the `fonts/` and `img/` directories relative to `formation.min.css`, set the following variables in your project:
+
+```
+$formation-asset-path: '../assets';
+$formation-image-path: "#{$formation-asset-path}/img";
+$formation-font-path: "#{$formation-asset-path}/fonts";
+```
+
+The example above is what is used on VA.gov, but you can customize this for your project.
 
 ### Sass functions, variables, and interactive components
 

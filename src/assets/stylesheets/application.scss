@@ -2,14 +2,15 @@
 font-matter: yay
 ---
 
-// Formation Site files
+// Files that allow us to use Formation’s Sass functions, variables, and mixins
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-variables';
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-breakpoints';
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-functions';
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-mixins';
+
+// Other Formation CSS we need for this site.
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-crisis-line';
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-footer';
-
 
 // Site CSS
 @import '_settings/variables';
