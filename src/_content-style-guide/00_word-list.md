@@ -63,7 +63,7 @@ can vs. may: Use "can" when meaning the ability or power to do something; use "m
 caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities." 
 
 certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits. 
-  -	**Example:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
+  -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
 
 Character of Discharge review process: Initial cap "Character of Discharge" review process. ***[Danielle note: This is the current casing for this term. Revisit?]**
 
@@ -76,7 +76,7 @@ claim exam: This is a term VA is working to rebrand. For now, on first mention o
 click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's okay to use "click [Button/Interface Name]." [See also Links](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/links) 
   - **Like this:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you. 
   
-  -	**In UI copy:** In your account dashboard, click **Profile.** 
+  -	**Like this in UI copy:** In your account dashboard, click **Profile.** 
   
   - ***TBD question out to Trevor in accessibility channel ***
   
