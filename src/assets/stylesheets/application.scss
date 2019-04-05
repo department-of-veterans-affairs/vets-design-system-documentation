@@ -10,7 +10,6 @@ font-matter: yay
 
 // Other Formation CSS we need for this site.
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-crisis-line';
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-footer';
 
 // Site CSS
 @import '_settings/variables';
@@ -21,6 +20,7 @@ font-matter: yay
 @import '_layout/content-wrappers';
 @import '_components/anchors';
 @import '_components/do-dont';
+@import '_components/footer';
 @import '_components/header';
 @import '_components/hero';
 @import '_components/iframe-preview';

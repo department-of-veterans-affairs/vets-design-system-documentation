@@ -1,15 +1,6 @@
 var gulp = require('gulp');
 var task = 'images';
 
-gulp.task('move-to-vendor', function (done) {
-  console.log("Moving images into folder");
-  var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/img/**/*')
-    .pipe(gulp.dest('src/vendor/img'));
-
-  return stream;
-
-});
-
 gulp.task('move-to-src', function (done) {
   console.log("Moving images into folder");
   var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/img/**/*')
@@ -20,4 +11,4 @@ gulp.task('move-to-src', function (done) {
 });
 
 
-gulp.task(task, gulp.parallel('move-to-vendor', 'move-to-src'));
+gulp.task(task, gulp.parallel('move-to-src'));

@@ -49,7 +49,7 @@ After submitting a proposal for the design system, the team will evaluate to det
 - **Accessibility**
 - **Usability**
 - **Design consistency**
-- ** Fit on the va.gov platform**
+- **Fit on the va.gov platform**
 
 The design system team may also reject the proposal at any time. If the team denies the proposal, please work with the design system about options for using the proposal in your project.
 

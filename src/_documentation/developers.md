@@ -75,7 +75,7 @@ In order to use some interactive components, such as [accordions](../components/
 You can the import U.S. Web Design System 1.4.2 using `npm`.
 
 ```bash
-$ npm install usds@1.4.2
+$ npm install uswds@1.4.2
 ```
 
 ## CSS

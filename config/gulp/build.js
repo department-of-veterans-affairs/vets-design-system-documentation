@@ -3,13 +3,11 @@ var gulp = require('gulp');
 
 gulp.task('build',
   //gulp.series(
-  //  'remote-assets',
     gulp.series(
       'fonts',
       'images',
       'javascript',
-      'css',
-      'paths'
+      'css'
     )
 //  )
 );
