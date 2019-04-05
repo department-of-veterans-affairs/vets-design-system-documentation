@@ -11,11 +11,23 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 4, 2019
+
+**Site updates**
+
+- Added examples to showcase how to nest flexbox grids inside other grid columns.
+
+**6.1.0**
+
+Updates Formation’s USWDS backbone to version 1.6.10.
+
+---
+
 ### April 3, 2019
 
 **6.0.0 & 6.0.1**
 
-Image paths in Formation are now relative, so the images and fonts folder are not *required* to be in your site root. 
+Image paths in Formation are now relative, so the images and fonts folder are not *required* to be in your site root.
 
 **Site updates**
 - Better indicators for responsive utilities

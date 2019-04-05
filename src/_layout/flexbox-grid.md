@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Flexbox grid
+tags: Columns, Nesting grids, Layout grid
 anchors:
   - anchor: Auto-sizing columns
   - anchor: Fixed columns
+  - anchor: How to nest grids
   - anchor: Responsive grid
 ---
 
@@ -42,6 +44,18 @@ Column widths can be set using a modifier value on the `vads-l-col` class, such 
 </div>
 
 {% include snippet.html content='html/flexbox-grid-basic2.html' %}
+
+## How to nest grids
+
+The flexbox grid can be easily nested inside other flexbox grid columns using both [padding utilities](../utilities/padding) and [margin utilities](../utilities/margins). If the grid column has a padding utility applied, use the same value of that padding utility on a negative margin left and right utility placed in the grid row.
+
+In this example, we have `vads-u-padding--2p5` applied to each grid column, so we use `vads-u-margin-x--neg2p5` on the grid row inside the grid column.
+
+<div class="site-c-showcase">
+{% include_relative html/nesting-grids.html %}
+</div>
+
+{% include snippet.html content='html/nesting-grids.html' %}
 
 ## Responsive grid
 
