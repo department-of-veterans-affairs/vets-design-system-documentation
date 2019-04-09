@@ -13,7 +13,9 @@ __Exceptions where we use title capitalization__
 - Proper nouns (example: branded terms like "VA.gov," official program names, state names, names of federal agencies, days of the week and months, compositions such as titles of books, etc.)
 - The word “Veterans”
 - Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
-- SEO browser titles
+
+__Exceptions where we use initial capitalization__
+- SEO title tags (example: VA Prescription Refill And Tracking | Veterans Affairs). See [Writing for SEO](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/seo) for more information.
 
 <div class="do-dont">
 <div class="do-dont__do">
