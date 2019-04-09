@@ -27,7 +27,7 @@ The process list, also known as the subway map, is used in a static informationa
 ### When to use
 
 - When users need to see a list of sequential steps
-- In a multi-step process where the user may need track progress over an extended period of time
+- In a multi-step process where the user may need to track progress over an extended period
 
 ### When to consider something else
 
