@@ -3,6 +3,7 @@ layout: default
 title: Punctuation
 title: Punctuation
 anchors:
+  - anchor: Ampersands
   - anchor: Commas
   - anchor: Contractions
   - anchor: Exclamation points
@@ -11,6 +12,10 @@ anchors:
 
 # Punctuation
 We follow standard American English and AP Style on VA.gov. Areas where we differ are listed below.
+
+#### Ampersands
+
+Don't use ampersands (&) in headers or body copy. Spell out “and.” Exceptions are when it's part of a proper noun such as a program name. Example: Vocational Rehabilitation and Employment (VR&E) program.
 
 #### Commas
 
