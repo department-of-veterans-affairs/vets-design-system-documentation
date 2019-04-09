@@ -15,7 +15,7 @@ We follow standard American English and AP Style on VA.gov. Areas where we diffe
 
 #### Ampersands
 
-Don't use ampersands (&) in headers or body copy. Spell out “and.” Exceptions are when it's part of a proper noun such as a program name. Example: Vocational Rehabilitation and Employment (VR&E) program.
+Don't use ampersands (&) in headers or body copy. Spell out “and.” Exceptions are when it's part of a proper noun such as a program name. Example: VR&E program.
 
 #### Commas
 
