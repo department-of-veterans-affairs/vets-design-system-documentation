@@ -261,7 +261,7 @@ life insurance: Do not hyphenate in the form of a compound adjective: “life in
 
 Loan Guaranty agent: Capped per SME. 
 
-Loan Technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
+loan technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
 - **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
 - **Not this:** Loan Technician Jane Smith may ask you to provide more information.
   
