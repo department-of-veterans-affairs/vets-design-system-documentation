@@ -7,7 +7,6 @@ anchors:
   - anchor: Commas
   - anchor: Contractions
   - anchor: Exclamation points
-  - anchor: Gender-neutral pronouns (they, their)
 ---
 
 # Punctuation
@@ -79,24 +78,3 @@ __You're enrolled! Now what?__
 </div>
 
 Note: Some design components may use the exclamation point as an icon for visual accent — in alert components, for example — but don't use it in the message copy itself.
-
-
-
-#### Gender-neutral pronouns (they, their)
-
-We use "they" and "their" as gender-neutral pronouns, instead of "he or she" and "his or her."  *The New Fowler's Modern English Language*, third edition, and *Garner's Modern American Usage*, third edition, support this approach.
-
-- __Like this:__  [Add example here]
-
-- __Not this:__  
-
-
-
-
-
-blah blah
-
-#### blah blah
-
-
-
