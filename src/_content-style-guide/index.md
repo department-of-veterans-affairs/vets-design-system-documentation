@@ -1,10 +1,10 @@
 ---
 layout: default
 index: true
-title: VA.gov Content Style Guide
+title: VA.gov content style guide
 ---
 
-# VA.gov Content Style Guide
+# VA.gov content style guide
 
 <div class="va-introtext" markdown="1">
 This is our house style guide for the VA.gov website. It's shared across VA agencies and teams, so we can speak with one voice and create a consistent, helpful experience for Veterans and non-Veteran customers. This style guide is a living document and will change over time, based on user research and feedback.
