@@ -466,7 +466,7 @@ work study: Two words, not hyphenated as a noun; hyphenate when used as an adjec
 
 ### Y
 
-- Yellow Ribbon Scholarship (Yellow Ribbon Program): Capitalize “Program.”
+Yellow Ribbon Scholarship (Yellow Ribbon Program): Capitalize “Program.”
 
 ### Z
 
