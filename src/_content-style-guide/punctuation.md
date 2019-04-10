@@ -18,10 +18,29 @@ Don't use ampersands (&) in headers or body copy. Spell out “and.” Exception
 
 #### Commas
 
-We use the serial comma, sometimes called the Oxford comma.
+We use the serial comma, sometimes called the Oxford comma. This is the comma used before a conjunction in a sentence with a series of 3 or more items. Sometimes the sentence can be misread if the serial comma is omitted.
 
-- __Like this:__  I like bread, cheese, and wine. / Need a better example here where it really matters.
-- __Not this:__  I like bread, cheese and wine. /
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+In his acceptance speech the actor thanked his parents, Martin Scorsese, and Robert De Niro.
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+In his acceptance speech the actor thanked his parents, Martin Scorsese and Robert De Niro.
+
+</div>
+</div>
+</div>
+
+
 
 
 
@@ -31,6 +50,7 @@ We use contractions on VA.gov. It supports our conversational, person-to-person 
 
 - Be careful not to mix up "its" and "it's."
 - Use "it's" as a contraction of "it is," never "it has." 
+- Don't use non-standard contractions like "would've," "could've," or "should've."
 
 
 <div class="do-dont">
@@ -62,7 +82,7 @@ Don't use the exclamation point on VA.gov for any text elements (body copy, head
 <div class="do-dont__content" markdown="1">
 Section header example:
   
-__Find out what happens after you apply?__
+__Find out what happens after you apply__
 
 </div>
 </div>
