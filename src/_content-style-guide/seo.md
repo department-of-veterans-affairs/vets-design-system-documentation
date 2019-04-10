@@ -44,7 +44,7 @@ __Why they're important__
 
 
 
-__Title tags__
+### Title tags
 
 Title tags are HTML elements that are displayed in browsers and on search engine results. They help people identify what the page is about and if it's relevant to their search query. On VA.gov, title tags are pulled from the H1 (the page title), so it's especially important to use the primary keyword or phrase in the page title.
 
@@ -72,7 +72,7 @@ For VA medical centers (VAMC), we format the title tag a little differently.  Be
 
 
 
-__Meta descriptions__
+### Meta descriptions
 
 Meta descriptions provide a high level summary of a page. While they aren't crawled by search engines, they are displayed in search results to users.  
 
