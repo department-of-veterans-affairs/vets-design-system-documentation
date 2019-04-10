@@ -376,7 +376,11 @@ service-connected condition: Define in body copy as an "illness or injury caused
 
 service-connected disability: In most cases, add the definition separately as another sentence or a note below a bulleted list. For example: "Having a service-connected disability means we've concluded that you're disabled because of an illness or injury caused—or made worse—by your active-duty service."  
 
-service member: Two words, lowercase. This follows the DOD style guide as well as OPIA guidance. **Exception:** When it appears as part of a  branded product or program name, such as Servicemembers’ Group Life Insurance Disability Extension (SGLI-DE). 
+service member: Two words, lowercase. This follows the DOD style guide as well as OPIA guidance. **Exception:** When it appears as part of a  branded product or program name, such as:
+
+- Servicemembers’ Group Life Insurance (SGLI)
+- Servicemembers’ Group Life Insurance Disability Extension (SGLI-DE)
+- Servicemembers’ Group Life Insurance Traumatic Injury Protection (TSGLI)
  
 sign in, sign out: Don't use log in/log out, login ID, or sign on.  
   -	**Like this:** Sign in to make an appointment.
