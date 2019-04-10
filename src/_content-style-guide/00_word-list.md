@@ -140,7 +140,7 @@ education (serving as an attributive noun to modify another noun)
   - education benefits: not educational benefits
   - education and training opportunities
 
-educational (as an adjective) ***[@Danielle - not sure why we list out so many examples of the use of "educational" as an adjective -- or if the below are supposed to be examples of this entry. Not sure if we are listing exactly how these terms should be defined in body copy? / jl]***
+educational (as an adjective) 
   - educational assistance (to be consistent with Chapter 35, DEA, Dependents’ Educational Assistance, and other programs such as REAP, Reserve Educational Assistance Program, and VEAP, Veterans’ Educational Assistance Program)
   - educational counseling
     - educational and career counseling (this instance runs counter to the style within eBenefits > Apply > Vocational Rehabilitation and Employment Benefits > Education and Career Counseling, but aligns with VR&E Chapter 36 (Educational and Vocational Counseling)
@@ -208,9 +208,9 @@ guarantee: Can be used as either a noun or a verb. For our purposes, especially 
 
 guaranty: Should be used only as a noun. Example: Because of our partial guaranty, lenders may offer better loan terms for Veterans.
 
-Guardsman/Guardsmen: Use the gender neutral "Guard member" on VA.gov. Capitalize "Guard." ***[Danielle note: Updated to reflect gender neutral terminology] -- [Jen note: @Danielle - pls confirm re capitalizing Guard; I think this is what Misty advised and we found in the DOD style guide...? Edited guidance language for clarity.]***
+Guardsman/Guardsmen: Use the gender neutral "Guard member" on VA.gov. Capitalize "Guard."
 
-Gulf War Illness: Capitalize the I in Illness. This is also sometimes called "Chronic Multi-symptom illness." Note that "Gulf War Syndrome" is the former name, and is no longer used. When needed for clariy or SEO, include the former term on first mention. Example: Gulf War Illness (known in the past as Gulf War Syndrome). [***@Danielle: is it "chronic multi-symptom illness" or "Chronic Multi-symptom illness"? / jl] 
+Gulf War Illness: Capitalize the I in Illness. This is also sometimes called "Chronic Multi-symptom illness." Note that "Gulf War Syndrome" is the former name, and is no longer used. When needed for clariy or SEO, include the former term on first mention. Example: Gulf War Illness (known in the past as Gulf War Syndrome). 
 
 ### H
 
@@ -239,7 +239,7 @@ increased claim: Define on first mention in body copy as "a claim for more compe
 
 independent living services: Don't use hyphen for the compound adjective.
 
-Individual Unemployability: Include a description that makes clear that this benefit is for Veterans who can't work due to a service-connected disability. ***[Danielle note: Revised per latest site definition.] - Jen q to Danielle: Is this an official VA terminology that requires capitalization? Example - the below term is lowercase, but seems the same/similar to this term.**
+Individual Unemployability: Include a description that makes clear that this benefit is for Veterans who can't work due to a service-connected disability. 
 
 individually unemployable: Lowercase. Define as "unable to work due to a service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas. 
 
@@ -259,13 +259,13 @@ lewisite: Define on first mention in body copy as "a natural compound that conta
 
 life insurance: Do not hyphenate in the form of a compound adjective: “life insurance coverage.”
 
-Loan Guaranty agent: Capped per SME. **[@Working Group & Editorial - Do we need parity for this term; do different agencies capitalize this term differently? @Beth, Danielle - can you provide more info on SME & rationale?]** ***[Danielle note: Beth - do you have this history?]***
+Loan Guaranty agent: Capped per SME. 
 
 Loan Technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
 - **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
 - **Not this:** Loan Technician Jane Smith may ask you to provide more information.
   
-- log in/log out (verb), login ID (noun or adj.): Use sign in/sign out or username and password, as needed.
+log in/log out (verb), login ID (noun or adj.): Use sign in/sign out or username and password, as needed.
   -	**Like this:** Sign in with your username and password.
   -	**Not this:** Enter your login ID.
 
@@ -314,7 +314,7 @@ permanent disability, permanent and total disability: Define a "permanent disabi
 
 Persian Gulf War era: Lowercase "era."
 
-post-9/11: Hyphenate. We use the slash rather than the hyphen for 9/11 (*not* 9-11). Example: Post-9/11 GI Bill. ***[@Danielle, Randi - can we find a non-proper name example of post-9/11, so we show a lowercase example? Post-9/11 GI Bill is the name of the program, so 'Post" would always be capped here. /jl]
+post-9/11: Hyphenate. We use the slash rather than the hyphen for 9/11 (*not* 9-11). Example: Post-9/11 GI Bill. 
 
 postservice: No hyphen.
 
@@ -332,7 +332,7 @@ presume: Use "conclude," as in "we will conclude your condition is linked to ser
 
 presumptive disability: Use "health problem" and reference when needed for clarity. Example: "a health problem (called presumptive disability) that we've concluded is likely caused by...."
 
-prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). **Example:** As a former prisoner of war (POW), you may be eligible for additional VA health benefits and services.  ***Jen note: @Danielle - could you verify if the second example is not saying something totally offbase? I meant to use it just as an example of when we'd use it as a lowercase noun, but don't want to inadvertently spread misinformation about VA benefits either.***
+prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). **Example:** As a former prisoner of war (POW), you may be eligible for additional VA health benefits and services. 
 
 Project 112/SHAD
 
@@ -351,9 +351,9 @@ PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTS
 
 regional benefit office: Use "regional office" instead. See [VA regional office](placeholderanchorlink.com) entry for details. 
 
-Reserve: ***[@Danielle/Beth - is this entry to indicate always capitalize? / jl]
+Reserve: 
 
-Reservist: ***[@Danielle/Beth - is this entry to indicate always capitalize? / jl]
+Reservist: 
 
 respiratory disease: Use "breathing problems" or "lung disease."
 
@@ -401,7 +401,7 @@ Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "al
 
 ### T
 
-terminal illness: When this term is used as part of eligibility information for a benefit such as hospice care or life insurance, include a plain language definition of the term. Example: "terminal illness (a condition that can't be treated)." ***[ @Danielle - I changed "terminal condition" in the example to "terminal illness." Think that was the intended. Please advise if not. /jl]
+terminal illness: When this term is used as part of eligibility information for a benefit such as hospice care or life insurance, include a plain language definition of the term. Example: "terminal illness (a condition that can't be treated)." 
 
 total disability, permanent and total disability:  Define a "total disability" as "a disability that we've rated as 100% disabling," and define "permanent and total disability" as "a disability that we've rated as 100% disabling and that's not expected to improve." Include definition in another sentence, as a parenthetical, or set off with commas. 
 
@@ -424,7 +424,7 @@ VA.gov: Treat it as a brand name and always capitalize "VA." Don't use "www.va.g
   
   -	**Not this:** Va.gov has benefits information for Veterans.
 
-VA health care facility: Don't hyphenate "health care" in this phrase. ***[@Danielle - there was no guidance here but assume this is what we mean - to not hyphenate when used as part of facility? / jl]
+VA health care facility: Don't hyphenate "health care" in this phrase. 
 
 VA medical center: Don't shorten to VA center. "Medical Center" should be capitalized only when it's part of an official medical center name (for example, Washington VA Medical Center).
 
@@ -442,7 +442,7 @@ Veteran: On VA.gov, capitalize even when used as a common noun. When possible, y
   
   -	**Better:** Learn about VA services and benefits that you and your family may be eligible for.
 
-- Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the official name of a cemetery.
+Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the official name of a cemetery.
   -	**Like this:** Family members may be eligible if they're buried in a Veterans cemetery.
   
   -	**Or when used in a proper noun:** The Hawaii State Veterans Cemetery is located in Kaneohe, HI.
@@ -459,7 +459,7 @@ website: One word, not capitalized.
 
 work study: Two words, not hyphenated as a noun; hyphenate when used as an adjective preceding a noun. 
   - **Like this (modifying a noun):** Find out if you can earn money while you go to school through our work-study program.
-  - **Like this (as a noun):** ***[@Danielle/Randi/Beth - could your provide example when this would be used as a noun and not hyphenated? Personally, I wouldn't hyphenate "work study program" either./ jl]***
+  - **Like this (as a noun):** 
 
 
 ### X
@@ -470,4 +470,4 @@ work study: Two words, not hyphenated as a noun; hyphenate when used as an adjec
 
 ### Z
 
-zip code: Lowercase, two words. ***[@Beth/Randi - should "zip" be lower case? ZIP is a U.S. Postal Service trademark and acronym, and they use all caps.]****
+zip code: Lowercase, two words. 
