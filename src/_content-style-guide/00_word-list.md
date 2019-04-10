@@ -153,11 +153,11 @@ employment handicap: Add a definition or note to help explain this term.
   - **Like this:** Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests). 
   
 equivalent: Use an alternative word or phrase -- such as "equal to," "same as," "as in," etc. -- depending on context. 
-  - **Like this:** Apply for VA health care online (equal to VA Form 10-10EZ).
-  - **Not this:** Apply for VA health care online (equivalent to VA Form 10-10EZ).
+ - **Like this:** Apply for VA health care online (equal to VA Form 10-10EZ).
+ - **Not this:** Apply for VA health care online (equivalent to VA Form 10-10EZ).
   
-  - **Like this:** We'll review your discharge papers (DD214 or other separation documents).
-  - **Not this:** We'll review your discharge papers (DD214 or equivalent).
+ - **Like this:** We'll review your discharge papers (DD214 or other separation documents).
+ - **Not this:** We'll review your discharge papers (DD214 or equivalent).
    
 era: Uppercase for Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era," lowercase: Vietnam War era. 
 
@@ -168,9 +168,9 @@ exception: Used to call special attention to something. It should be bolded and 
 excluding: Use "not counting" or "not including."
 
 expedite/expedited: Use plain language words like "faster," "quicker," or "speed up," depending on context.
-  - **Like this:** Use the Fully Developed Claims program to get a faster decision on your disability benefits claim. This may help speed up the claim decision process, so you can get your benefits sooner.  
+- **Like this:** Use the Fully Developed Claims program to get a faster decision on your disability benefits claim. This may help speed up the claim decision process, so you can get your benefits sooner.  
   
-  - **Not this:** Use the Fully Developed Claims program to get an expedited decision on your disability benefits claim. This may help expedite the claim decision process.
+- **Not this:** Use the Fully Developed Claims program to get an expedited decision on your disability benefits claim. This may help expedite the claim decision process.
 
   
 explosive ordinance: Define on first mention in body copy as "high-explosive devices, and chemical and nuclear weapons." Include definition as another sentence, a parenthetical, or set off with commas.
@@ -200,7 +200,7 @@ GI: No periods (*not* G.I.).
 GI Bill®: Include the trademark symbol in the first prominent mention on the website (currently on Education and Training hub page). 
 
 GI Bill Comparison Tool: Capitalize "Comparison Tool." Treat as a proper noun when mentioning it by the complete name. Don't capitalize tool when simply referencing it, not by name.
-  - **Like this:** The GI Bill Comparison Tool can help you compare benefits by school. Fill out the tool to get started.
+- **Like this:** The GI Bill Comparison Tool can help you compare benefits by school. Fill out the tool to get started.
 
 gravesite: Style this as one word. (Merriam-Webster does not address whether this should be one or two words, but the Gravesite Locator and Arlington National Cemetery both style it as one word. In addition, the following related words do appear in Merriam-Webster as one: graveside and gravestone.)
 
@@ -223,9 +223,9 @@ health care: Two words, never hyphenated as a compound adjective (for example, �
 hospitalization: Use "hospital care."
 
 home loan: Don't use a hyphen even when used as an adjective.
-  - **Like this:** home loan benefits
+- **Like this:** home loan benefits
   
-  - **Not this:** home-loan benefits
+- **Not this:** home-loan benefits
 
 Homeless or at risk of becoming homeless.
 
@@ -261,15 +261,15 @@ life insurance: Do not hyphenate in the form of a compound adjective: “life in
 
 Loan Guaranty agent: Capped per SME. **[@Working Group & Editorial - Do we need parity for this term; do different agencies capitalize this term differently? @Beth, Danielle - can you provide more info on SME & rationale?]** ***[Danielle note: Beth - do you have this history?]***
 
-- Loan Technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
-  - **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
-  - **Not this:** Loan Technician Jane Smith may ask you to provide more information.
+Loan Technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
+- **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
+- **Not this:** Loan Technician Jane Smith may ask you to provide more information.
   
 - log in/log out (verb), login ID (noun or adj.): Use sign in/sign out or username and password, as needed.
   -	**Like this:** Sign in with your username and password.
   -	**Not this:** Enter your login ID.
 
-- Loss of range of motion: Use "problems moving your body."
+Loss of range of motion: Use "problems moving your body."
 
 ### M
 
@@ -339,9 +339,9 @@ Project 112/SHAD
 process (a claim): Use "review." Example: We'll review your disability claim.
 
 prove: Avoid the word "prove" when speaking about evidence that a Veteran needs to provide for a claim. Instead, use more empathetic language such as "show," "provide," or "to support your claim." 
-  - **Like this:** You'll need to provide evidence that shows your illness was likely caused by your service.
+- **Like this:** You'll need to provide evidence that shows your illness was likely caused by your service.
   
-  - **Not this:** You'll need to prove that your illness was likely caused by your service.
+- **Not this:** You'll need to prove that your illness was likely caused by your service.
 
 PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTSD. Note that we include "(PTSD)" in the page title and first mention in body copy of the PTSD health care page for SEO purposes, and then simply "PTSD" after first mention in body copy.
 
@@ -349,7 +349,7 @@ PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTS
 
 ### R
 
-regional benefit office: Use "regional office" instead. See [regional office](placeholderanchorlink.com) entry for details. 
+regional benefit office: Use "regional office" instead. See [VA regional office](placeholderanchorlink.com) entry for details. 
 
 Reserve: ***[@Danielle/Beth - is this entry to indicate always capitalize? / jl]
 
@@ -430,7 +430,8 @@ VA medical center: Don't shorten to VA center. "Medical Center" should be capita
 
 VA national cemetery: "national cemetery" is lowercase except when part of the full name of a cemetery. 
 
-VA regional office: Use "VA regional office" and not "VA regional benefits office." "Regional Office" should only be capitalized if a specific name is included in the title. ***[@Danielle/Beth - can you provide example of the latter? /jl]
+VA regional office: Use "VA regional office" and not "VA regional benefits office." "Regional Office" should only be capitalized if a specific name is included in the title. 
+- **Like this:** The Buffalo Regional Office (RO) is one of four regional processing centers nationwide that process education claims. 
 
 vesicant agents: Use "vesicant (blistering) agents."
 
