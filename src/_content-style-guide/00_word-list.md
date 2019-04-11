@@ -12,7 +12,7 @@ For most terms on VA.gov, we use the standard American English spelling in Merri
 - We may call for using a more plain language version of a word or to define it in body copy.  
 - We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word.
 
-For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webster.com). For common VA acronyms, go to [Abbreviations and acronyms](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/abbreviations-and-acronyms).
+For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webster.com). For common VA acronyms, go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms).
 
 ---
 
@@ -73,7 +73,7 @@ chronic: Define on first mention in body copy as "long-lasting" or when needed, 
 
 claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
 
-click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's okay to use "click [Button/Interface Name]." [See also Links](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/links)
+click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's okay to use "click [Button/Interface Name]." [See also Links](https://design.va.gov/content-style-guide/links)
   - **Like this:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you.
 
   -	**Like this in UI copy:** In your account dashboard, click **Profile.**

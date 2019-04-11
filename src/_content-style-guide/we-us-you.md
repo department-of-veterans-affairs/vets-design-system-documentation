@@ -5,7 +5,7 @@ title: We, us, you
 
 # We, us, you
 
-When referring to VA, use the first-person pronoun (we, us, our). Use the second person (you, your) to refer to Veterans, service members, family members, and other audiences we're addressing. This aligns with our [content principles](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/content-principles.html) to speak person-to-person with our customers, rather than talking about them. 
+When referring to VA, use the first-person pronoun (we, us, our). Use the second person (you, your) to refer to Veterans, service members, family members, and other audiences we're addressing. This aligns with our [content principles](https://design.va.gov/content-style-guide/content-principles.html) to speak person-to-person with our customers, rather than talking about them. 
 
 
 

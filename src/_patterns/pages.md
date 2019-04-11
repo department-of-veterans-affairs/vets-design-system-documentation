@@ -27,18 +27,18 @@ The hub page pattern can be broken down into an ordered set of components:
 We surface information that is important to Veterans first. The hierarchy of a hub page is as follows:
 
 #### Page title (h1)
-Tells the user what's on this page, is also important semantically for html, defined in Foundation [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/design/typography.html#headings)
+Tells the user what's on this page, is also important semantically for html, defined in Foundation [here](https://design.va.gov/design/typography.html#headings)
 #### Intro text
-Similar to the title, Intro text is an executive summary of page content, define in stype in Foundation [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/design/typography.html#paragraphs). Intro text is also important for SEO.
+Similar to the title, Intro text is an executive summary of page content, define in stype in Foundation [here](https://design.va.gov/design/typography.html#paragraphs). Intro text is also important for SEO.
 
 #### Jump link navigation (On this page)
 Jump link nav serves two purposes: 1) It informs users what sections are on this particular page, and 2) it allows the user to jump to the section they wish to read.
 
 #### Section breaks
-In order to be clear when a section begins, we use a "—★★★★★—" visual treatment documented [here](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/components/horizontal-rules)
+In order to be clear when a section begins, we use a "—★★★★★—" visual treatment documented [here](https://design.va.gov/components/horizontal-rules)
 
 #### Section 1 (h2)
-The first section on a Hub page template contains information about how a Veteran might go about getting this benefit. Our h2s are defined in [Foundation](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/design/typography.html#headings)
+The first section on a Hub page template contains information about how a Veteran might go about getting this benefit. Our h2s are defined in [Foundation](https://design.va.gov/design/typography.html#headings)
 
 #### Section 2 (h2)
 The second section on a Hub page template contains information about how a Veteran might go about managing this benefit.

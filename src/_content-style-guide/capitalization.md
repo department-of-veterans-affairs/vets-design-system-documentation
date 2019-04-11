@@ -15,7 +15,7 @@ __Exceptions where we use title capitalization__
 - Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
 
 __Exceptions where we use initial capitalization__
-- SEO title tags (example: VA Prescription Refill And Tracking | Veterans Affairs). See [Writing for SEO](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/seo) for more information.
+- SEO title tags (example: VA Prescription Refill And Tracking | Veterans Affairs). See [Writing for SEO](https://design.va.gov/content-style-guide/seo) for more information.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -32,4 +32,4 @@ Apply Now For GI Bill Benefits
 </div>
 </div>
 
-[Consult our word list](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/word-list.html) or refer to AP Style if you're not sure a term should be capitalized. If still unsure, err on the side of sentence case capitalization.
+[Consult our word list](https://design.va.gov/content-style-guide/word-list.html) or refer to AP Style if you're not sure a term should be capitalized. If still unsure, err on the side of sentence case capitalization.
