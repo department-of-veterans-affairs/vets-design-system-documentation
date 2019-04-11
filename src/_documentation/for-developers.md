@@ -6,6 +6,7 @@ anchors:
   - anchor: Installation
   - anchor: CSS
   - anchor: Implementing design work
+slug: developers
 ---
 
 # Documentation for developers

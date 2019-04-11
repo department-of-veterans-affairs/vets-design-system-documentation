@@ -5,6 +5,7 @@ anchors:
   - anchor: Design resources
   - anchor: How to work with Formation
   - anchor: Working with developers
+slug: designers
 ---
 
 # Documentation for designers
