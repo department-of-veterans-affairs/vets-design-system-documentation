@@ -29,7 +29,7 @@ Formation is VA.gov’s front-end framework for the design system. This site doc
 
 Before getting started, we recommend that you get familiar with Formation and how you can use it as part of your design process. Each section includes some helpful information:
 
-- **[Content style guide](../content-style-guide):** The content style guide governs **how to write for VA.gov**. Make sure that any text in your design adheres to the rules within.
+- **[Content style guide](../content-style-guide):** Our house style guide for VA.gov. Follow the guidelines to help you create a **consistent, helpful experience for Veterans.**
 - **[Design](../design):** This section explains VA.gov's **base styles and visual language**. You should set margins and padding in your design comps using the **[8pt spacing units](../design/spacing-units)**.
 - **[Components](../components):** Components are the "UI fragments," such as buttons and accordions. Some of these have strict usage guidelines, so please become familiar with them.
 - **[Utilities](../utilities):** This section mostly describes CSS, but that doesn't mean it is only for front-end developers. Formation guides design implementation, so **understanding the utilities may assist in how designers describe their work**. **Many of the utilities are responsive** and can be used to modify or enhance designs for different screen widths at a low development cost.
