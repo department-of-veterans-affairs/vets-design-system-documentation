@@ -13,7 +13,7 @@
       </li>
       {% for p in site.documentation %}
        {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
@@ -38,7 +38,7 @@
       </li>
       {% for p in site.content-style-guide %}
         {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
@@ -63,7 +63,7 @@
       </li>
       {% for p in site.design %}
       {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
@@ -87,7 +87,7 @@
       </li>
       {% for p in site.components %}
       {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
@@ -112,7 +112,7 @@
       </li>
       {% for p in site.utilities %}
       {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
@@ -136,7 +136,7 @@
       </li>
       {% for p in site.patterns %}
         {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
@@ -160,7 +160,7 @@
       </li>
       {% for p in site.layout %}
           {% if p.layout == "default" %}
-          {% unless p.index %}
+          {% unless p.index or p.draft %}
             <li class="site-c-mobile-nav-list__item">
               <a class="site-c-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
             </li>
