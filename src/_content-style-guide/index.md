@@ -11,7 +11,7 @@ This is our house style guide for the VA.gov website. It's shared across VA agen
 </div>
 
 
-The purpose of this style guide is to help you create better content, not better bureaucracy. See our [content principles](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/content-principles.html).
+See our [content principles](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/content-principles.html) for the house voice and tone, and the foundation for how we practice language for and with Veterans in mind. 
 
 ## What you'll find in this style guide
 
