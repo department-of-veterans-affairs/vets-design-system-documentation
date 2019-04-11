@@ -12,7 +12,7 @@ Bulleted lists help make information more scannable and easier to understand.  I
 
 
 
-- Don't use a period at the end of the bullet unless it is a complete sentence. __[@BETH, DANIELLE - What is the current Vets.gov style when the list is a mix of complete sentences and fragments? Old school style is to use period on every bullet list item, if one is a complete sentence, but I don't know if this is what we do. EX: on the health-care/schedule-view-va-appointments, we have bullet lists that are complete sentences but none of them have periods.]__
+- Don't use a period at the end of the bullet unless it is a complete sentence.
 - Don't use a period at the end of the last bullet in a series of bullets.
 - If your list has more than 7 items, use subheads to break out the list into smaller bullet lists.
 - Keep list items short (1 or 2 sentences in length).
