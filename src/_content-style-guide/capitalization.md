@@ -15,7 +15,7 @@ __Exceptions where we use title capitalization__
 - Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
 
 __Exceptions where we use initial capitalization__
-- SEO title tags (example: VA Prescription Refill And Tracking | Veterans Affairs). See [Writing for SEO](https://design.va.gov/content-style-guide/seo) for more information.
+- SEO title tags (example: VA Prescription Refill And Tracking /| Veterans Affairs). See [Writing for SEO](https://design.va.gov/content-style-guide/seo) for more information.
 
 <div class="do-dont">
 <div class="do-dont__do">
