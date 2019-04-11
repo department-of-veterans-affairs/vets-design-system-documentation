@@ -188,7 +188,7 @@ Our National Center for PTSD is the world's leader in PTSD research, education, 
 </div>
 
 
-### 5. Give hope ***[@Danielle - I wasn't sure what to call this one, so that it's not just a duplication of #4. Any preference for approach? /jl]***
+### 5. Give hope 
 Especially for sensitive issues, provide reassurance that the reader is not alone and that there's hope for their condition.
 
 This may come in the form of:
