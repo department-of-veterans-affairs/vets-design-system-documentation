@@ -36,16 +36,6 @@ The design system can be found
 The content style guide can be found
 * `/src/_content-style-guide/`
 
-## Deploying the site
-
-Since this site relies on scripts and processes that are not whitelisted in GitHub pages, we have to build the site locally in order to deploy it. The shell script will create a `gh-pages` branch in the `site` directory, initiate version control separate from the `master` branch, and push the branch to GitHub. Like most builds, the version history is not of importance.
-
-```
-$ npm install
-$ npm run build
-$ ./deploy_site.sh
-```
-
 ## Testing new utilities
 
 Get formation. Change package.json `"@department-of-veterans-affairs/formation": "file:../veteran-facing-services-tools/packages/formation"`
