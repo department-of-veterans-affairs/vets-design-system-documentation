@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Error messages
+draft: true
 ---
 
 # Error messages
