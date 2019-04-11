@@ -26,7 +26,8 @@ We follow plain language and web best practices.  Where we vary from standard pr
 - VA Office of Public and Intergovernmental Affairs style guide
 
 
-__Suggestions or questions about the VA.gov content style guide?__ Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov)
+__Suggestions or questions about the VA.gov content style guide?__ 
+Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov) with "Content style guide" in the subject line.
 
 
 If you're looking for VA governance requirements — such as compliance, policies, and regulations — please go to [VA Web Governance](https://www.va.gov/web/index.cfm).
