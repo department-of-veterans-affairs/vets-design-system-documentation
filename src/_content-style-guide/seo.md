@@ -84,18 +84,3 @@ Meta descriptions provide a high level summary of a page. While they aren't craw
 - If you've written a relevant, helpful, search optimized intro text, you might be able to omit the meta description and let Google generate it for you. Meta descriptions are most useful for pages with
 
 
-
-***@Danielle - RE the below text: I'd like to omit, as I can't find a good way to consolidate/incorporate into the ^ recommendations. Is it basically that it's okay sometimes to not include a meta description and it's up to each person/business to decide? /jl***
-
-- It's ok to not write meta descriptions—sometimes.
-
-  - Google will generate them for you.
-
-  - Rule of thumb for identifying whether to write your own:
-
-    > If a page is targeting between one and three heavily searched terms or phrases, write your own meta description that targets those users performing search queries including those terms.
-    > If the page is targeting long-tail traffic (three or more keywords), it can sometimes be wiser to let the engines populate a meta description themselves. The reason is simple: When search engines pull together a meta description, they always display the keywords and surrounding phrases that the user has searched for. If a webmaster writes a meta description into the page's code, what they choose to write can actually detract from the relevance the engines make naturally, depending on the query.
-    > **One caveat to intentionally omitting meta description tags:**  Keep in mind that social sharing sites like Facebook commonly use a page's meta description tag as the description that appears when the page is shared on their sites. Without the meta description tag, social sharing sites may just use the first text they can find. Depending on the first text on your page, this might not create a good user experience for people encountering your content via social sharing.
-
-
-
