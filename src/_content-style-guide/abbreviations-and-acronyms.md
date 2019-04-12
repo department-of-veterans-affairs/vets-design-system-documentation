@@ -19,4 +19,5 @@ If the spelled out term is too long for easy scanning in the page title (H1) or 
 __Example__
 
 __Get free mental health care for PTSD__
+
 If you’re having problems sleeping, controlling your anger, or readjusting to civilian life, you're not alone. Find out how to access VA mental health services for posttraumatic stress disorder (PTSD), depression, grief, anxiety, and other needs. You can use some services even if you’re not enrolled in VA health care.
