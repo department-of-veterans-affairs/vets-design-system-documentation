@@ -88,6 +88,7 @@ Posttraumatic osteoarthritis
 ### 3. Avoid abstract language—and focus on the benefit to the reader
 
 __Example 1__
+
 When directing Veterans to crisis counseling, frame the language around the specific benefit (talking to someone right away for support). By reframing the language, we don't force the Veteran to question if they fit into the definition of being "in crisis."
 
 <div class="do-dont">
@@ -96,11 +97,13 @@ When directing Veterans to crisis counseling, frame the language around the spec
 <div class="do-dont__content" markdown="1">
 
 __Need to talk to someone right now?__
+
 Find out how to get support anytime, day or night.
 
 **Or**
 
 __Talk to a Veterans Crisis Line responder now__
+
 Whatever you're struggling with, our responders can offer confidential help 24/7. Many of them are Veterans themselves.
 
 </div>
@@ -111,6 +114,7 @@ Whatever you're struggling with, our responders can offer confidential help 24/7
 <div class="do-dont__content" markdown="1">
 
 __Are you in crisis?__
+
 Get help from the Veterans Crisis Line.
 
 </div>
@@ -192,10 +196,23 @@ Our National Center for PTSD is the world's leader in PTSD research, education, 
 Especially for sensitive issues, provide reassurance that the reader is not alone and that there's hope for their condition.
 
 This may come in the form of:
-•	Brief statements about the condition, such as:
-o	“Depression is a serious illness. But this common mental health condition is also highly treatable.”
-o	“If you’re struggling with substance use, you’re not alone.”
+- Brief statements about the condition
+- Quotes or stories from others living with the condition
+- Links to communities and advocacy groups for people living with the condition
 
-•	Quotes or stories from others living with the condition
-•	Links to communities and advocacy groups for people living with the condition
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+Depression is a serious illness. But this common mental health condition is also highly treatable.
+
+__Or__
+
+If you’re struggling with substance use, you’re not alone.
+
+</div>
+</div>
+</div>
+
 
