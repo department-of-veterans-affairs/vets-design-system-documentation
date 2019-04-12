@@ -207,9 +207,10 @@ guarantee: Can be used as either a noun or a verb. For our purposes, especially 
 
 guaranty: Should be used only as a noun. Example: Because of our partial guaranty, lenders may offer better loan terms for Veterans.
 
-Guardsman/Guardsmen: Use the gender neutral "Guard member" on VA.gov. Capitalize "Guard."
+Guard member: Use the gender neutral term, "Guard member," instead of Guardsman/Guardsmen on VA.gov. Capitalize "Guard."
 
-Gulf War Illness: Capitalize the I in Illness. This is also sometimes called "Chronic Multi-symptom illness." Note that "Gulf War Syndrome" is the former name, and is no longer used. When needed for clariy or SEO, include the former term on first mention. Example: Gulf War Illness (known in the past as Gulf War Syndrome).
+Gulf War Illness: Capitalize the I in Illness. Per NIH, this is also sometimes called "chronic multisymptom illness." Note: "Gulf War Syndrome" is the former name, and is no longer used. When needed for clariy or SEO, include the former term on first mention. 
+- **Like this:** Gulf War Illness (known in the past as Gulf War Syndrome)
 
 ### H
 
@@ -238,7 +239,7 @@ increased claim: Define on first mention in body copy as "a claim for more compe
 
 independent living services: Don't use hyphen for the compound adjective.
 
-Individual Unemployability: Include a description that makes clear that this benefit is for Veterans who can't work due to a service-connected disability.
+Individual Unemployability: Include a description that makes clear that this benefit is for Veterans who can't work due to a service-connected disability. This is a VA term and should be capitalized. 
 
 individually unemployable: Lowercase. Define as "unable to work due to a service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
@@ -260,7 +261,11 @@ life insurance: Do not hyphenate in the form of a compound adjective: “life in
 
 Loan Guaranty agent: Capped per SME.
 
-loan technician: Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
+loan guaranty agent: Lowercase. Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
+- **Like this:** Charles Lee, our loan guaranty agent, may ask you to provide more financial information.
+- **Not this:** Loan Technician Charles Lee may ask you to provide more financial information.
+
+loan technician: Lowercase. Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
 - **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
 - **Not this:** Loan Technician Jane Smith may ask you to provide more information.
 
@@ -313,7 +318,7 @@ permanent disability, permanent and total disability: Define a "permanent disabi
 
 Persian Gulf War era: Lowercase "era."
 
-post-9/11: Hyphenate. We use the slash rather than the hyphen for 9/11 (*not* 9-11). Example: Post-9/11 GI Bill.
+post-9/11: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11). Example: Post-9/11 GI Bill. In cases when post-9/11 stands alone rather than as part of a program name, it should be lowercased. 
 
 postservice: No hyphen.
 
@@ -331,7 +336,7 @@ presume: Use "conclude," as in "we will conclude your condition is linked to ser
 
 presumptive disability: Use "health problem" and reference when needed for clarity. Example: "a health problem (called presumptive disability) that we've concluded is likely caused by...."
 
-prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). **Example:** As a former prisoner of war (POW), you may be eligible for additional VA health benefits and services.
+prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). **Example:** You may be eligible for benefits as a former prisoner of war (POW).
 
 Project 112/SHAD
 
@@ -348,11 +353,11 @@ PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTS
 
 ### R
 
-regional benefit office: Use "regional office" instead. See [VA regional office](placeholderanchorlink.com) entry for details.
+regional office: Use instead of "regional benefit office." See VA regional office entry for details.
 
-Reserve:
+Reserve: Capitalize when used to refer to members of the military.  
 
-Reservist:
+Reservist: Capitalize.
 
 respiratory disease: Use "breathing problems" or "lung disease."
 
@@ -392,7 +397,8 @@ special claim: Define on first mention in body copy as "a claim for special need
 
 suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
-substantially gainful employment: Provide a definition or note when using this term. **Example:** "You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment), don’t count."
+substantially gainful employment: Provide a definition or note when using this term. 
+- **Like this:** You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment), don’t count.
 
 supplemental claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied."
 
@@ -458,7 +464,7 @@ website: One word, not capitalized.
 
 work study: Two words, not hyphenated as a noun; hyphenate when used as an adjective preceding a noun.
   - **Like this (modifying a noun):** Find out if you can earn money while you go to school through our work-study program.
-  - **Like this (as a noun):**
+  - **Like this (as a noun):** How much does work study pay? 
 
 
 ### X
@@ -469,4 +475,4 @@ Yellow Ribbon Scholarship (Yellow Ribbon Program): Capitalize “Program.”
 
 ### Z
 
-zip code: Lowercase, two words.
+zip code: Lowercase, two words, per Merriam-Webster.
