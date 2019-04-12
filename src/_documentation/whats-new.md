@@ -11,6 +11,19 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 12, 2019
+
+**Site updates**
+
+- Improved documentation for running the site locally
+- Updates to some content guidance in the style guide
+
+**6.1.3**
+
+- Adds `autoprefixer` to address display bug in select boxes
+
+---
+
 ### April 4, 2019
 
 **Site updates**
@@ -19,7 +32,7 @@ The latest news and updates on Formation and the content style guide
 
 **6.1.0**
 
-Updates Formation’s USWDS backbone to version 1.6.10.
+- Updates Formation’s USWDS backbone to version 1.6.10.
 
 ---
 
