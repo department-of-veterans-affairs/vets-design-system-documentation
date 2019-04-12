@@ -1,27 +1,32 @@
 # Vets Design System Documentation
 
-Prototype for a v2 of [Formation](https://department-of-veterans-affairs.github.io/design-system).
+This is repo for the design system documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the CSS and Javascript for the components, see the [formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools).
 
 Min specs:
 - Jekyll
 - react
 - webpack
 
-## Getting started
+## To run locally
 
 Tested using `node` v8.12.0 and `npm` v6.4.1.
 
-1. Install dependencies
+1. Clone this repo
+```
+$ git clone https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git
+```
+
+2. Install dependencies
 ```
 $ npm install
 ```
 
-2. Build and start the Jekyll server
+3. Build and start the Jekyll server
 ```
 $ npm run start
 ````
 
-3. Verify in browser: [localhost:4000](http://localhost:4000/)
+4. Verify in browser: [localhost:4000](http://localhost:4000/)
 
 ## Adding content to the documentation site
 
