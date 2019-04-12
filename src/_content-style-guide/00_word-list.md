@@ -78,8 +78,6 @@ click: Avoid using, especially "click here." Link the relevant words instead. **
 
   -	**Like this in UI copy:** In your account dashboard, click **Profile.**
 
-  - ***TBD question out to Trevor in accessibility channel ***
-
 compensation: "Disability compensation" is the preferred term, but "VA disability pay" has greater SEO value and is more plain language. Use "VA disability compensation (pay)" on first mention, and try to work in both terms. Also include explanation of "monthly payments."
 
 competent: Define on first mention in body copy as "of legal age and sound mind." Include the definition in another sentence, as a parenthetical, or set off with commas.
@@ -110,7 +108,7 @@ demolish: Use "knock down" or, when used as a noun in the context of a job of bu
 dentistry: Use "dental care" instead.
 
 Department of Veterans Affairs: On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also VA entry.
-  - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety (no apostrophe on Veterans') on the first instance. After the first instance, may shorten to Veterans Affairs or VA.  ***Gary Hicks - can you please confirm this does not conflict with OPIA guidance on name usage? Part of this has been adapted from intranet guidance (VHA) with adaptations for VA.gov.)***
+  - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety (no apostrophe on Veterans') on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
 
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -119,9 +117,8 @@ deprivation: Define one first mention in body copy as "a lack of things such as 
 decision notice: Do not refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
 
 disability rating: Define as "a rating that measures how severe a disability is" or similar language.
-  __- Like this:__ We may use a rating that measures how bad your disability is. This rating helps us decide your level of benefits.
-
-  __- Like this:__ We assign you a disability rating based on the severity of your disability.
+- **Like this:** We may use a rating that measures how bad your disability is. This rating helps us decide your level of benefits.
+- **Like this:** We assign you a disability rating based on the severity of your disability.
 
 
 disease: Use "illness" unless it's part of a proper name of a specific disease.
@@ -132,22 +129,24 @@ Don't Ask, Don't Tell policy: Use initial caps and no quotation marks. Don't cap
 
 ### E
 
+education: In general, on VA.gov we use "education" as a noun, and sometimes as part of a compound noun or attributive noun to modify another noun. 
+- **Like this:** education benefits OR education and training opportunities
+- **Not this:** educational benefits OR educational and training opportunities
+
+educational: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education" as above. (See education entry.) 
+- **Like this:** educational assistance, educational institution, educational plan, educational program
+
+educational and career counseling:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: this style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
+
+educational and vocational counseling: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling.
+ 
+educational assistance: We use this style of phrasing to be consistent with Chapter 35, [DEA, REAP, and VEAP](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/abbreviations-and-acronyms).
+
+educational counseling: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: this usage differs from the style within eBenefits VR&E > Education and Career Counseling pages.
+  
 email: No hyphen (not "e-mail").
 
 environmental hazards: Define on first mention in body copy as "harmful toxins in the air, water, or land such as those that get released from burn pits." Include definition as another sentence, a parenthetical, or set off with commas.
-
-education (serving as an attributive noun to modify another noun)
-  - education benefits: not educational benefits
-  - education and training opportunities
-
-educational (as an adjective)
-  - educational assistance (to be consistent with Chapter 35, DEA, Dependents’ Educational Assistance, and other programs such as REAP, Reserve Educational Assistance Program, and VEAP, Veterans’ Educational Assistance Program)
-  - educational counseling
-    - educational and career counseling (this instance runs counter to the style within eBenefits > Apply > Vocational Rehabilitation and Employment Benefits > Education and Career Counseling, but aligns with VR&E Chapter 36 (Educational and Vocational Counseling)
-    - educational and vocational counseling (to be consistent with VR&E Chapter 36: Educational and Vocational Counseling)
-  - educational institution
-  - educational plan
-  - educational program
 
 employment handicap: Add a definition or note to help explain this term.
   - **Like this:** Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
