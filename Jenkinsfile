@@ -49,5 +49,26 @@ pipeline {
         }
       }
     }
+
+    stage('Deploy dev & staging') {
+      when {
+        expression { env.BRANCH_NAME == 'master' }
+      }
+      steps {
+        script {
+          commit = sh(returnStdout: true, script: "git rev-parse HEAD").trim()
+        }
+
+        build job: 'deploys/vets-design-system-documentation-vagov-dev', parameters: [
+          booleanParam(name: 'notify_slack', value: true),
+          stringParam(name: 'ref', value: commit)
+        ], wait: false
+
+        build job: 'deploys/vets-design-system-documentation-vagov-staging', parameters: [
+          booleanParam(name: 'notify_slack', value: true),
+          stringParam(name: 'ref', value: commit)
+        ], wait: false
+      }
+    }
   }
 }
