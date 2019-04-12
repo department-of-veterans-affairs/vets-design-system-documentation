@@ -50,7 +50,7 @@ pipeline {
       }
     }
 
-    stage('Deploy dev & stagin') {
+    stage('Deploy dev & staging') {
       when {
         expression { env.BRANCH_NAME == 'master' }
       }
