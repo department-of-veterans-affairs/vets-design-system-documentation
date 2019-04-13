@@ -83,6 +83,8 @@ Don't use the exclamation point on VA.gov for any text elements (body copy, head
 Section header example:
   
 __Find out what happens after you apply__
+Or
+__After you apply
 
 </div>
 </div>
@@ -92,6 +94,8 @@ __Find out what happens after you apply__
 Section header example:
   
 __You're enrolled! Now what?__
+Or
+__Apply now!__
 
 </div>
 </div>
