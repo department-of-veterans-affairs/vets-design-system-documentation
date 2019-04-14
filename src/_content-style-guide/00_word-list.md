@@ -79,7 +79,7 @@ claim exam: This is a term VA is working to rebrand. For now, on first mention o
 click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's okay to use "click [Button/Interface Name]." [See also Links](https://design.va.gov/content-style-guide/links)
   - **Like this:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you.
 
-  -	**Like this in UI copy:** In your account dashboard, click **Profile.**
+  -	**Like this in UI copy:** In your account dashboard, click __Profile.__
 
 compensation: "Disability compensation" is the preferred term, but "VA disability pay" has greater SEO value and is more plain language. Use "VA disability compensation (pay)" on first mention, and try to work in both terms. Also include explanation of "monthly payments."
 
@@ -87,7 +87,8 @@ competent: Define on first mention in body copy as "of legal age and sound mind.
 
 conditions: Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 
-contamination: Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. **Exception:** On the Camp Lejeune page, don't define this term.
+contamination: Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. 
+- **Exception:** On the Camp Lejeune page, don't define this term.
 
 continuous: When used in the context of eligibility, define this term as "all at once, without a break in service."
   - **Like this:** Served for at least 30 continuous days (all at once, without a break in service)."
@@ -155,7 +156,7 @@ environmental hazards: Define on first mention in body copy as "harmful toxins i
 employment handicap: Add a definition or note to help explain this term.
   - **Like this:** Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
 
-equivalent: Use an alternative word or phrase -- such as "equal to," "same as," "as in," etc. -- depending on context.
+equivalent: Use an alternative word or phrase&mdash;such as "equal to," "same as," "as in," etc.&mdash;depending on context.
  - **Like this:** Apply for VA health care online (equal to VA Form 10-10EZ).
  - **Not this:** Apply for VA health care online (equivalent to VA Form 10-10EZ).
 
@@ -223,7 +224,8 @@ hazardous: Define in the context of body copy as "harmful" or "toxic."
 
 hazardous exposure: Define in the context of body copy as "contact with harmful chemicals or other hazardous materials."
 
-health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. In addition, defer to the hospital’s official name, which may have health care as one word versus two words.
+health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
+- **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
 
 hospitalization: Use "hospital care."
 
@@ -263,8 +265,6 @@ Job Bank: Neither word is plural. See Veterans Job Bank entry.
 lewisite: Define on first mention in body copy as "a natural compound that contains the poison arsenic." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 life insurance: Do not hyphenate in the form of a compound adjective: “life insurance coverage.”
-
-Loan Guaranty agent: Capped per SME.
 
 loan guaranty agent: Lowercase. Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
 - **Like this:** Charles Lee, our loan guaranty agent, may ask you to provide more financial information.
@@ -349,9 +349,11 @@ prestabilization: No hyphen.
 
 presume: Use "conclude," as in "we will conclude your condition is linked to service."
 
-presumptive disability: Use "health problem" and reference when needed for clarity. Example: "a health problem (called presumptive disability) that we've concluded is likely caused by...."
+presumptive disability: Use "health problem" and reference when needed for clarity. 
+- **Like this:** A health problem (called presumptive disability) that we've concluded is likely caused by....
 
-prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). **Example:** You may be eligible for benefits as a former prisoner of war (POW).
+prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
+- **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
 Project 112/SHAD
 
@@ -361,9 +363,11 @@ prove: Avoid the word "prove" when speaking about evidence that a Veteran needs 
 - **Like this:** You'll need to provide evidence that shows your illness was likely caused by your service.
 - **Not this:** You'll need to prove that your illness was likely caused by your service.
 
-PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTSD. In body copy, we reference the full spelling with “(PTSD)” after it. On subsequent mentions in body copy, we use PTSD by itself. **Exception for page titles:** If the spelled out term is too long in a page title (H1) or meta title tag, it’s okay to use PTSD by itself, and then use the full spelling with the acronym in the first instance of body copy.
+PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTSD. In body copy, we reference the full spelling with “(PTSD)” after it. On subsequent mentions in body copy, we use PTSD by itself. 
+
 - **First instance in body copy:** posttraumatic stress disorder (PTSD)
 - **After first instance in body copy:** PTSD
+- **Exception for page titles:** If the spelled out term is too long in a page title (H1) or meta title tag, it’s okay to use PTSD by itself, and then use the full spelling with the acronym in the first instance of body copy.
 
 
 ### Q
@@ -399,7 +403,8 @@ service-connected disability: In most cases, add the definition separately as an
 
 Service-Disabled Veterans Insurance (S-DVI). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-service member: Two words, lowercase. This follows the DOD style guide as well as OPIA guidance. **Exception:** When it appears as part of a  branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
+service member: Two words, lowercase. This follows the DOD style guide as well as OPIA guidance. 
+- **Exception:** When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
 
 Servicemembers’ Group Life Insurance (SGLI). Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
 - See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
@@ -444,6 +449,7 @@ U.S.: Use periods.
 ### V
 
 VA: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. See the entry "Department of Veterans Affairs" for full guidance. 
+
 - As a noun: VA announced today that...   
 - As a noun phrase ("VA facilities"): Some VA facilities in Texas are affected by Hurricane Florida.
 - As an adjective (modifying "task force"): The VA task force announced today...
