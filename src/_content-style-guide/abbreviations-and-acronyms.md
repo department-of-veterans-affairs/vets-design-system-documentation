@@ -9,7 +9,7 @@ Common VA acronyms are listed along with other terms on the [word list](https://
 
 ## Abbreviations
 
-In general, we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.) and degrees (Ph.D., M.D., etc.). 
+In general, we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.), and degrees (Ph.D., M.D., etc.). 
 
 In formats where space is very limited, like callout boxes or alerts, we abbreviate [days and months](https://design.va.gov/content-style-guide/dates-and-numbers). When in doubt, follow AP Style.
 
