@@ -17,7 +17,7 @@ See our [content principles](https://design.va.gov/content-style-guide/content-p
 
 We've organized the style guide into searchable topics, so you can go directly to the section you need guidance on. This guide covers common issues on VA.gov. It does not cover basic writing mechanics and grammar. (We assume you know those already.)
 
-We follow plain language and web best practices.  Where we vary from standard practices, we call them out in the [word list](https://design.va.gov/content-style-guide/word-list.html) or as a topic section.
+We follow plain language and web best practices. Where we vary from standard practices, we call them out in the [word list](https://design.va.gov/content-style-guide/word-list.html) or as a topic section.
 
 **For issues not covered in this style guide, refer to:**
 
@@ -30,4 +30,4 @@ __Suggestions or questions about the VA.gov content style guide?__
 Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov) with "Content style guide" in the subject line.
 
 
-If you're looking for VA governance requirements — such as compliance, policies, and regulations — please go to [VA Web Governance](https://www.va.gov/web/index.cfm).
+If you're looking for VA governance requirements&mdash;such as compliance, policies, and regulations&mdash;please go to [VA Web Governance](https://www.va.gov/web/index.cfm).
