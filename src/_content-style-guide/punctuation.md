@@ -6,6 +6,7 @@ anchors:
   - anchor: Ampersands
   - anchor: Commas
   - anchor: Contractions
+  - anchor: Em and en dashes, hyphens
   - anchor: Exclamation points
 ---
 
@@ -72,6 +73,30 @@ We are available 8:00 a.m. to 6:00 p.m. CT, Monday through Friday.
 
 
 
+
+
+#### Em and en dashes, hyphens
+
+__Em dash__ 
+
+Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to over use them. We don't use a space on either side of the em dash. 
+
+- **Like this:** You may be eligible if you have an illness or injury caused&mdash;or made worse by&mdash;your time in service.
+
+__En dash__ 
+
+We use the en dash to indicate a range. We use a space on either side of the en dash.
+- **Like this:** 9:00 a.m. ‒ 5:30 p.m. CT
+
+__Hyphens__ 
+
+This is the short, single dash. We use it to connect words that modify a noun or in names. 
+- **Like this:** active-duty service member; VA-related claim; Merriam-Webster 
+
+
+
+
+
 #### Exclamation points
 
 Don't use the exclamation point on VA.gov for any text elements (body copy, headers, subheaders, field labels, CTAs, etc.). It doesn't align withour voice and tone, which is conversational, helpful, and straightforward. We don't yell, and we're not hyperbolic or casual.
@@ -83,8 +108,10 @@ Don't use the exclamation point on VA.gov for any text elements (body copy, head
 Section header example:
   
 __Find out what happens after you apply__
+
 Or
-__After you apply
+
+__After you apply__
 
 </div>
 </div>
@@ -94,8 +121,10 @@ __After you apply
 Section header example:
   
 __You're enrolled! Now what?__
+
 Or
-__Apply now!__
+
+__You've successfully applied!__
 
 </div>
 </div>
