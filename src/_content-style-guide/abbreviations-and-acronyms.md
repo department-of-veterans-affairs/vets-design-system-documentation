@@ -7,7 +7,13 @@ title: Abbreviations and acronyms
 
 Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list).
 
-In general, we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.) and degrees (Ph.D., M.D., etc.). When in doubt, follow the AP Style.
+## Abbreviations
+
+In general, we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.) and degrees (Ph.D., M.D., etc.). 
+
+In formats where space is very limited, like callout boxes or alerts, we abbreviate [days and months](https://design.va.gov/content-style-guide/dates-and-numbers). When in doubt, follow AP Style.
+
+## Acronyms
 
 For acronyms, use the spelled out term on first mention in body copy with the acronym in parentheses; then the acronym alone on subsequent mentions. 
 
@@ -15,10 +21,12 @@ For acronyms, use the spelled out term on first mention in body copy with the ac
 - **After first mention:** TSGLI 
 
 __Exceptions for page titles and meta title tags__
-If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's okay to use only the acronym for the page title. Just define it in the first mention in body copy, using the spelled out term with the acronym in parentheses. 
-- Note that there may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we might use the spelled out term in page titles. 
 
-__Example__
+If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's okay to use only the acronym for the page title. Just define it in the first mention in body copy, using the spelled out term with the acronym in parentheses. 
+
+- Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we might use the spelled out term in page titles. In general, default to using the term that Veterans recognize better. 
+
+__Like this:__
 
 __Get free mental health care for PTSD__
 
