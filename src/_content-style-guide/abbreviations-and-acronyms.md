@@ -7,7 +7,9 @@ title: Abbreviations and acronyms
 
 Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list).
 
-In general, we don't use abbreviations on VA.gov. For acronyms, use the spelled out term on first mention in body copy with the acronym in parentheses; then the acronym alone on subsequent mention. 
+In general, we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.) and degrees (Ph.D., M.D., etc.). When in doubt, follow the AP Style.
+
+For acronyms, use the spelled out term on first mention in body copy with the acronym in parentheses; then the acronym alone on subsequent mentions. 
 
 - **On first mention:** Servicemembers' Group Life Insurance Traumatic Injury Protection (TSGLI)
 - **After first mention:** TSGLI 
