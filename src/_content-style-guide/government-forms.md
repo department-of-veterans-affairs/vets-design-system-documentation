@@ -22,15 +22,12 @@ Because VA form names tend to be very long, they're not always easy for Veterans
 
 In the first instance of body copy, lead with the name of the form, then the form number in parentheses. Use "VA Form" in front of the number: VA Form SGLV 8286.
 
-- **First mention:**
-  Use the Health Benefits Update form (VA Form 10-10EZR) to update your personal, financial, and insurance information.
+- **First mention:** Use the Health Benefits Update form (VA Form 10-10EZR) to update your personal, financial, and insurance information.
 
 After the first mention, refer to it by VA Form plus the form number by itself. Ideally, try to recast the sentence  to refer to it generically, if you can do so without losing clarity about what form we're referring to.
 
-- **After first mention:**
-  Send the completed VA Form 10-10EZR and any supporting documents to us.
-  OR
-  Send the completed form and any supporting documents to us.
+- **After first mention:** Send the completed VA Form 10-10EZR and any supporting documents to us.
+- **Or:** Send the completed form and any supporting documents to us.
 
 
 
@@ -49,8 +46,7 @@ In CTA links, headers, subheaders, page titles, and other UI elements, use the f
 
 Many Veterans refer to certain forms by their more common, casual name. For example, DD214 instead of the official Department of Defense form name, DD Form 214. For forms like these, we refer to them by the term that Veterans understand. These exceptions are noted in the list of forms.
 
-- **Example:**
-  Find out how to request your military records, including your DD214, through milConnect.
+- **Like this:** Find out how to request your military records, including your DD214, through milConnect.
 
 
 
