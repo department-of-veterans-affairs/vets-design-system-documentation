@@ -22,12 +22,12 @@ Because VA form names tend to be very long, they're not always easy for Veterans
 
 In the first instance of body copy, lead with the name of the form, then the form number in parentheses. Use "VA Form" in front of the number: VA Form SGLV 8286.
 
-- **Example — first instance:**
+- **First mention:**
   Use the Health Benefits Update form (VA Form 10-10EZR) to update your personal, financial, and insurance information.
 
 After the first mention, refer to it by VA Form plus the form number by itself. Ideally, try to recast the sentence  to refer to it generically, if you can do so without losing clarity about what form we're referring to.
 
-- **Example — after first instance:**
+- **After first mention:**
   Send the completed VA Form 10-10EZR and any supporting documents to us.
   OR
   Send the completed form and any supporting documents to us.
@@ -38,7 +38,7 @@ After the first mention, refer to it by VA Form plus the form number by itself. 
 
 In CTA links, headers, subheaders, page titles, and other UI elements, use the form number. Again, this is in general for most situations. Be sure to reference the full form name somewhere close by or in context, so it's more helpful to Veterans what the form is for.
 
-- **Example — in a CTA:**  
+- **In a CTA link:**  
   You can apply online or mail your Application for Burial Benefits (VA Form 21P-530).
 
   [Download VA Form 21P-530 (PDF)](https://www.vba.va.gov/pubs/forms/VBA-21P-530-ARE.pdf)
@@ -56,7 +56,7 @@ Many Veterans refer to certain forms by their more common, casual name. For exam
 
 ## Common government forms
 
-For VA forms not listed here, search our [VA forms library](https://www.va.gov/vaforms/).  DD forms are Department of Defense forms.
+For VA forms not listed here, search our [VA forms library](https://www.va.gov/vaforms/). DD forms are Department of Defense forms.
 
 | Form number                      | Form name                                                    |
 | -------------------------------- | ------------------------------------------------------------ |
