@@ -17,7 +17,7 @@ Spell out dates in body copy, using the full construction: March 31, 1989. In ge
 
 __Exceptions:__
 
-- Use 9/11 when referencing the September 11, 2001, terror attack.
+- Use 9/11 when it's part of a program name such as the Post-9/11 GI Bill.
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
   - Mon., Tue., Wed., Thu., Fri., Sat., Sun.
   - Jan., Feb., Mar., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate May, June, July.)
