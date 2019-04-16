@@ -81,7 +81,7 @@ __Em dash__
 
 Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to over use them. We don't use a space on either side of the em dash. 
 
-- **Like this:** You may be eligible if you have an illness or injury caused&mdash;or made worse by&mdash;your time in service.
+- **Like this:** You may be eligible if you have an illness or injury caused&mdash;or made worse&mdash;by your time in service.
 
 __En dash__ 
 
