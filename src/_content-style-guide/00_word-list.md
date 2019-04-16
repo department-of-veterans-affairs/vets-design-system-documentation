@@ -72,6 +72,8 @@ Character of Discharge review process: Initial cap "Character of Discharge" revi
 
 character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 
+Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 chronic: Define on first mention in body copy as "long-lasting" or when needed, "illness that lasts for a long time." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
@@ -84,6 +86,8 @@ click: Avoid using, especially "click here." Link the relevant words instead. **
 compensation: "Disability compensation" is the preferred term, but "VA disability pay" has greater SEO value and is more plain language. Use "VA disability compensation (pay)" on first mention, and try to work in both terms. Also include explanation of "monthly payments."
 
 competent: Define on first mention in body copy as "of legal age and sound mind." Include the definition in another sentence, as a parenthetical, or set off with commas.
+
+Comprehensive Assistance for Family Caregivers: The proper program name is Program of Comprehensive Assistance for Family Caregivers. Don't make the name into an acronym.
 
 conditions: Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 
