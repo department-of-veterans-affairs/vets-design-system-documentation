@@ -11,6 +11,18 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 17, 2019
+
+**6.2.0**
+
+Packages Formation’s Javascript to function as a standalone package. Formation can now be installed with node on a project without any other dependencies.
+
+**Site updates**
+
+- Updated documentation to the content style guide
+
+---
+
 ### April 12, 2019
 
 **Site updates**
