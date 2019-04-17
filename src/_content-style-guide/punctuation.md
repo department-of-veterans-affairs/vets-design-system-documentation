@@ -130,4 +130,4 @@ __You've successfully applied!__
 </div>
 </div>
 
-Note: Some design components may use the exclamation point as an icon for visual accent — in alert components, for example — but don't use it in the message copy itself.
+Note: Some design components may use the exclamation point as an icon for visual accent&mdash;in alert components, for example&mdash;but don't use it in the message copy itself.
