@@ -3,13 +3,15 @@
     {% if p.index %}
     <li class="site-c-sidenav-list__item {% if page.index %} current {% endif %}">
       <a class="site-c-sidenav-list__link " href="{{site.baseurl}}{{ p.url | replace: '/index', ''}}">Overview</a>
-      {% if page.anchors %}
-        <ul class="site-c-sidenav-list__sub">
-          {% for item in page.anchors %}
-            <li class="site-c-sidenav-list__sub-item">
-              <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" }}">{{ item.anchor }}</a></li>
-          {% endfor %}
-        </ul>
+      {% if page.index %}
+        {% if page.anchors %}
+          <ul class="site-c-sidenav-list__sub">
+            {% for item in page.anchors %}
+              <li class="site-c-sidenav-list__sub-item">
+                <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" }}">{{ item.anchor }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       {% endif %}
     </li>
     {% endif %}
@@ -19,13 +21,15 @@
         {% unless p.index or p.draft %}
           <li class="site-c-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
             <a class="site-c-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            {% if p.anchors %}
-              <ul class="site-c-sidenav-list__sub">
-                {% for item in p.anchors %}
-                  <li class="site-c-sidenav-list__sub-item">
-                    <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", ""}}">{{ item.anchor }}</a></li>
-                {% endfor %}
-              </ul>
+            {% if p.url == page.url %}
+              {% if p.anchors %}
+                <ul class="site-c-sidenav-list__sub">
+                  {% for item in p.anchors %}
+                    <li class="site-c-sidenav-list__sub-item">
+                      <a class="site-c-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", ""}}">{{ item.anchor }}</a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
             {% endif %}
           </li>
         {% endunless %}
