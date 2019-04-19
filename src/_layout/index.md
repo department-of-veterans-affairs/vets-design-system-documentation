@@ -2,6 +2,7 @@
 layout: default
 index: true
 title: Layout
+permalink: /:collection/index.html
 ---
 
 # Layout

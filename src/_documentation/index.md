@@ -2,6 +2,7 @@
 layout: default
 index: true
 title: Documentation
+permalink: /:collection/index.html
 ---
 
 # Getting started with design.va.gov

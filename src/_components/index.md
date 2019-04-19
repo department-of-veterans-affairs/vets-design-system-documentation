@@ -2,6 +2,7 @@
 layout: default
 title: Components
 index: true
+permalink: /:collection/index.html
 ---
 
 # Components

@@ -2,6 +2,7 @@
 layout: default
 index: true
 title: Patterns
+permalink: /:collection/index.html
 ---
 
 # Patterns

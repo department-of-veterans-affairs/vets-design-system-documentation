@@ -2,6 +2,7 @@
 layout: default
 index: true
 title: VA.gov content style guide
+permalink: /:collection/index.html
 ---
 
 # VA.gov content style guide

@@ -44,26 +44,26 @@ sass:
 collections:
   documentation:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
     label: Documentation
   content-style-guide:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   design:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   components:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   patterns:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   layout:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
   utilities:
     output: true
-    permalink: /:collection/:title
+    permalink: /:collection/:title/
 
 
 includes:

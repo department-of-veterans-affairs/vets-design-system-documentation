@@ -2,6 +2,7 @@
 layout: default
 index: true
 title: Utilities
+permalink: /:collection/index.html
 ---
 
 # Utilities
