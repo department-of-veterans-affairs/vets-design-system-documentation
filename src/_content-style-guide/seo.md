@@ -81,6 +81,6 @@ Meta descriptions provide a high level summary of a page. While they aren't craw
 - Work in a secondary keyword if it fits naturally.
 - Incorporate a call to action if there's space.
 - Use the active voice and our plain language, conversational voice and tone.
-- If you've written a relevant, helpful, search optimized intro text, you might be able to omit the meta description and let Google generate it for you. 
+
 
 
