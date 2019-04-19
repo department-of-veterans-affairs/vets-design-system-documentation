@@ -96,7 +96,7 @@ Image paths in Formation are now relative, so the images and fonts folder are no
 ### March 13, 2019
 
 **Site updates**
-- Updates external [link icon documentation](../design/typography.html#links);
+- Updates external [link icon documentation](../../design/typography/index.html#links);
 
 ---
 
