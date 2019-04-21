@@ -16,7 +16,7 @@ We use numerals or figures for all numbers, including 1 to 10. It's easier on th
 
 ## Exceptions
 
-- Spell out "one" when it's used by itself in a sentence, and in expressions like one-to-one, one-on-one.
+- Spell out "one" when it's used by itself in a sentence, or in expressions like one-to-one, one-on-one, and one-time.
 - Spell out ordinals up to tenth (first, second, third, etc.). Then use the style: 11th, 12th, etc. 
 - When used as part of a series or a range, always default to numerals. 
 
@@ -32,6 +32,8 @@ You must meet at least one of these eligibility requirements.
 
 Get help completing your application, including one-on-one consultation. 
 
+You may qualify for one-time dental care if you're in Class II and you meet these requirements.
+
 All runners-up from 5th to 11th place will receive an honorable mention.
 
 Choose from 1 of 5 VA-backed loan options.
@@ -45,6 +47,8 @@ Choose from 1 of 5 VA-backed loan options.
 You must meet at least 1 of these eligibility requirements. 
 
 Get help completing your application, including 1-on-1 consultation. 
+
+You may qualify for 1-time dental care if you're in Class II and you meet these requirements.
 
 All runners-up from fifth to 11th place will receive an honorable mention.
 
