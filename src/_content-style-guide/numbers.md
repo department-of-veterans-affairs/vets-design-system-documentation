@@ -1,34 +1,61 @@
 ---
 layout: default
 title: Numbers
+anchors:
+  - anchor: Use numerals 
+  - anchor: Exceptions
+  - anchor: Percentages
 ---
 
 # Numbers
 
-Use numerals for all numbers, including 1-10. It's easier on the web and on mobile for scanning, and helpful to low-literacy readers and people whose first language isn’t English.
+We differ from AP Style on numbers in order to meet the needs of users on the web and on mobile. 
 
-**Exceptions:** 
+## Use numerals 
+We use numerals or figures for all numbers, including 1 to 10. It's easier on the web and on mobile for scanning, and helpful to low-literacy readers and people whose first language isn’t English.
 
-- Spell out "one" when it's used in the sense of "a" rather than a number that's counting something. 
-- Spell out in the expression "more than one." 
+## Exceptions
+
+- Spell out "one" when it's used by itself in a sentence, and in expressions like one-to-one, one-on-one.
 - Spell out ordinals up to tenth (first, second, third, etc.). Then use the style: 11th, 12th, etc. 
+- When used as part of a series or a range, always default to numerals. 
+
+
+
 
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
 
-Choose from 5 VA-backed loan options.
+You must meet at least one of these eligibility requirements. 
 
-Can I get more than one degree under the GI Bill?
+Get help completing your application, including one-on-one consultation. 
 
-You'll have to pick which one you want to use.
+All runners-up from 5th to 11th place will receive an honorable mention.
 
-She was fifth in line. 
+Choose from 1 of 5 VA-backed loan options.
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+You must meet at least 1 of these eligibility requirements. 
+
+Get help completing your application, including 1-on-1 consultation. 
+
+All runners-up from fifth to 11th place will receive an honorable mention.
+
+Choose from one of 5 VA-backed loan options.
 
 </div>
 </div>
 </div>
+
+
+
 
 
 
