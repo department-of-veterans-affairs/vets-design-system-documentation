@@ -32,4 +32,4 @@ Apply Now For GI Bill Benefits
 </div>
 </div>
 
-[Consult our word list](https://design.va.gov/content-style-guide/word-list.html) or refer to AP Style if you're not sure a term should be capitalized. If still unsure, err on the side of sentence case capitalization.
+[Consult our word list](https://design.va.gov/content-style-guide/word-list) or refer to AP Style if you're not sure a term should be capitalized. If still unsure, err on the side of sentence case capitalization.

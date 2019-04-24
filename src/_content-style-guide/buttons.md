@@ -8,7 +8,7 @@ slug: button-labels
 
 Buttons signal important calls-to-action (CTA) and help people quickly see what's the most important action they need to take on a page. Treat buttons like important or primary content, and prioritize their placement on pages as you would essential information.
 
-[Use links for secondary or less important actions](../content-style-guide/links.html) on a page. Likewise, for simple navigation to lead people between pages, use links instead of buttons.
+[Use links for secondary or less important actions](../content-style-guide/links) on a page. Likewise, for simple navigation to lead people between pages, use links instead of buttons.
 
 - Use sentence case for button labels.
 
@@ -61,6 +61,6 @@ Complaint filing
   ​		**Like this:** “Compare GI Bill benefits” button should take you right to the comparison tool, va.gov/gi-bill-comparison-tool.
 
 
-__Looking for button design and interaction standards?__ [Go to button components](../components/buttons.html)   
+__Looking for button design and interaction standards?__ [Go to button components](../components/buttons)   
 
 
