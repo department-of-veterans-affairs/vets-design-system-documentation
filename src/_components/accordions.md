@@ -5,7 +5,7 @@ title: Accordions
 ---
 
 <div class="vads-u-background-color--gold vads-u-padding--2 vads-u-display--inline-block vads-u-width--auto vads-u-margin-bottom--5">
-  <p class="vads-u-margin--0  vads-u-measure--5"><strong>Accordions require javascript from U.S. Web Design System 1.4.2. to be installed on your project. See <a href="{{ site.baseurl }}/documentation/developers.html">developer documentation</a> for details. Alternatively, you can use the Formation React <a href="https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/platform/collapsiblepanel/">CollapsiblePanel</a>.</strong></p>
+  <p class="vads-u-margin--0  vads-u-measure--5"><strong>Accordions require javascript from U.S. Web Design System 1.4.2. to be installed on your project. See <a href="{{ site.baseurl }}/documentation/developers.html">developer documentation</a> for details. Alternatively, you can use the Formation React <a href="https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/">CollapsiblePanel</a>.</strong></p>
 </div>
 
 # Accordions
