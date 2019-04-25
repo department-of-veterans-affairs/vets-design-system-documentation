@@ -89,11 +89,14 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 - Use +1 only when the information is specifically addressing Veterans or people who are living outside the U.S.: +1-201-123-1234.
 
-- For vanity phone numbers, provide the numerals in parentheses at the end: 877-222-VETS (8387).
-
 - For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 
 - Use "select" to indicate the menu option after dialing a phone number.
+
+We don’t use vanity phone numbers in body copy, as it adds visual noise and is not helpful to screen readers. We use and hyperlink only the numeric phone number in body copy. 
+
+-	**Exception:** In marketing or promotional messaging, such as the right rail promo component, we discourage but make an exception for vanity phone numbers. In marketing or promotional components, use the format: 877-222-VETS (8387) and hyperlink the complete number including the parenthetical.
+
 
 <div class="do-dont">
 <div class="do-dont__do">
