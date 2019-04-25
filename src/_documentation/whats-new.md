@@ -11,6 +11,22 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 25, 2019
+
+**6.2.1**
+
+- Address bug in accordion script where bordered accordions were not declared
+- Fixes second bug in accordion where the DOM was traversed incorrectly
+- Fixes interaction on accordions where accordion content is opened below the fold
+
+**Site updates**
+
+- Updates to the content style guide
+- Removed browser autocomplete from search
+- Fixes issue where content in responsive previews generated 404 in production
+
+---
+
 ### April 17, 2019
 
 **6.2.0**
