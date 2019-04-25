@@ -17,6 +17,6 @@
     </button>
   </div>
   <div class="iframe__preview">
-    <iframe title="{{ include.title }}" class="responsive-iframe" src="{{ include.src }}" data-width="1008"  allowfullscreen="true" allowtransparency="true" height="{{ include.height }}"></iframe>
+    <iframe title="{{ include.title }}" class="responsive-iframe" src="{{ include.src | replace: '.html', ''}}" data-width="1008"  allowfullscreen="true" allowtransparency="true" height="{{ include.height }}"></iframe>
   </div>
 </div>
