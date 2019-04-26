@@ -3,7 +3,7 @@ layout: default
 title: Abbreviations and acronyms
 ---
 
-# Abbreviations and acronyms
+# Abbreviations and acronyms [@RANDI - somewhere ]
 
 Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list).
 
