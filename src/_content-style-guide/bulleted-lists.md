@@ -18,6 +18,7 @@ Bulleted lists help make information more scannable and easier to understand.  I
 - Keep list items short (1 or 2 sentences in length).
 - Use parallel construction, and consistent style, grammar, and use of punctuation for items in the same list. (Example: each bullet starts with a verb or each bullet is a noun; or each bullet is a fragment; or each bullet is a complete sentence).
 - Don't use a bulleted list for only 1 item.
+- RANDI - WIP - update guidance bullet list
 
 
 
