@@ -2,11 +2,11 @@
   <button id="close_mobile_nav_button" class="site-c-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fas fa-times"></i></button>
   <div class="usa-accordion ">
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading vads-u-border-top--0">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading vads-u-border-top--0">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button"
       aria-expanded="{% if page.url contains "/documentation/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">Documentation</button>
   </p>
-  <div id="nav-a1" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a1" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/documentation/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "documentation/index" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Overview</a>
@@ -26,12 +26,12 @@
 
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/content-style-guide/" %}true{% else %}false{% endif %}" aria-controls="nav-a2">
       Content
     </button>
   </p>
-  <div id="nav-a2" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a2" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/content-style-guide/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "content-style-guide/index" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Overview</a>
@@ -51,12 +51,12 @@
 
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/design/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
       Design
     </button>
   </p>
-  <div id="nav-a3" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a3" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/design/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "design/index" %} current {% endif %}" href="{{ site.baseurl }}/design">Overview</a>
@@ -75,12 +75,12 @@
 
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/components/" %}true{% else %}false{% endif %}" aria-controls="nav-a4">
       Components
     </button>
   </p>
-  <div id="nav-a4" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a4" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/components/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "components/index" %} current {% endif %}" href="{{ site.baseurl }}/components">Overview</a>
@@ -100,12 +100,12 @@
 
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/utilities/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
       Utilities
     </button>
   </p>
-  <div id="nav-a5" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a5" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/utilities/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "utilities/index" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Overview</a>
@@ -124,12 +124,12 @@
 
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a6">
       Patterns
     </button>
   </p>
-  <div id="nav-a6" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a6" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/patterns/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "patterns/index" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Overview</a>
@@ -148,12 +148,12 @@
 
 
   <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion-heading site-c-mobile-nav__accordion-heading">
+  <p class="usa-accordion usa-accordion-heading site-c-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-c-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/layout/" %}true{% else %}false{% endif %}" aria-controls="nav-a7">
       Layout
     </button>
   </p>
-  <div id="nav-a7" class="usa-accordion-content site-c-mobile-nav__accordion-content">
+  <div id="nav-a7" class="usa-accordion-content site-c-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/layout/" %}false{% else %}true{% endif %}">
     <ul class="site-c-mobile-nav-list">
       <li class="site-c-mobile-nav-list__item">
         <a class="site-c-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/layout">Overview</a>
