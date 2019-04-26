@@ -18,6 +18,7 @@ Links should tell people what action to take, where to go next, or what informat
 - Don't punctuate standalone CTA links. Exception: When the link text is a question.
 - If the embedded link text comes at the end of a sentence, don't hyperlink the ending punctuation.
 - Don't make links open in a new window. To keep the experience consistent across VA.gov, we code links to behave in the same way.
+- @RANDI - somewhere here - guidance re (PDF) or (YouTube)
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -94,7 +95,7 @@ You can apply online or mail your [Application for Burial Benefits (VA Form 21P-
 
 
 
-## Linking to external sites
+## Linking to external sites [@RANDI - Q about icon usage]
 
 On VA.gov we use an icon to alert people that a link will take them to an external site. We don’t use a pop-up or a modal warning. 
 
