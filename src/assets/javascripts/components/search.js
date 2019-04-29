@@ -80,23 +80,19 @@ var searchOnResultsPage = function() {
 
 var searchFunctions = function() {
   if (viewportIsWide) {
-    console.log('search desktop');
     searchOnDesktop();
   }
   else {
-    console.log('search mobile')
     searchOnMobile();
   }
 }
 
 // Determines if displaying results on the search results page first
 if (results_page_container !== null) {
-  console.log('search page');
   searchOnResultsPage();
   setTimeout(function(){ searchFunctions(); console.log('header search from results page');}, 35);
 }
 else {
-  console.log('not search page');
   searchFunctions();
 }
 
@@ -123,6 +119,26 @@ toggle_mobile_nav_button.addEventListener("click", function(e) {
   }
 });
 
+// Prevent results page in IE11
+// Search results don't show up on the results page in IE11, so we
+// remove the form element in IE11
+// TODO: Debug search script so this isn't necessary
+
+var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+
+if (isIE11) {
+  // select element to unwrap
+  var el = document.querySelector('.search-form');
+
+  // get the element's parent node
+  var parent = el.parentNode;
+
+  // move all children out of the element
+  while (el.firstChild) parent.insertBefore(el.firstChild, el);
+
+  // remove the empty element
+  parent.removeChild(el);
+}
 
 
 
