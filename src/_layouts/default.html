@@ -14,6 +14,14 @@
       <main id="main-content" class="vads-u-width--full">
         {{ content }}
       </main>
+      {% elsif page.results_page %}
+      <main id="main-content" class="vads-u-margin-y--7 vads-u-width--full">
+        <div class="site-c-content site-l-wrapper vads-l-grid-row small-desktop-screen:vads-u-justify-content--center">
+          <div class="vads-l-col--12 small-desktop-screen:vads-l-col--8">
+            {{ content }}
+          </div>
+        </div>
+      </main>
       {% else %}
       <div class="site-c-content__nav">
         {% if page.url contains "/documentation/" %}
