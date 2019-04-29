@@ -20,7 +20,7 @@ anchors:
 
 ## Information status
 
-Used to provide helpful information to a user.
+Used to provide helpful information to a user or something that warrants attention. Not used for negative consequences.
 
 <div class="site-c-showcase">
 {% include_relative html/alert-informational.html %}
@@ -30,7 +30,7 @@ Used to provide helpful information to a user.
 
 ## Warning status
 
-Used to warn a user, but necessary when something has gone wrong.
+Used to warn a user, such as when there are negative consequences, but necessary when something has gone wrong.
 
 <div class="site-c-showcase">
 {% include_relative html/alert-warning.html %}
@@ -80,13 +80,19 @@ Any style of alert box may be made to include expandable content.
 
 ## Background color only
 
-Any style of alert box can be made to be a background color only.
+Any style of alert box can be made to be a background color only. Background color only alerts are only to be used for immediate feedback, such as in single page applications or Ajax forms. They should not be used for static alert messaging.
 
 <div class="site-c-showcase">
 {% include_relative html/alert-background-color.html %}
 </div>
 
 {% include snippet.html content='html/alert-background-color.html' %}
+
+### Guidance
+
+- Some users might not be able to distinguish differences in the background color, or see the color at all. Do not rely on color alone to convey context.
+- Messaging should be direct and concise. Aim for one or two lines.
+- Do not use headings
 
 ## Accessibility
 
@@ -108,10 +114,12 @@ As a validation message that alerts someone that they just did something that ne
 ### Guidance
 
 When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.
+
 * Be polite in error messages — don’t place blame on the user.
 * Users generally won’t read documentation but will read a message that helps them resolve an error; include some educational material in your error message.
 * But don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
 * Allow a user to dismiss a notification wherever appropriate.
 * Don’t include notifications that aren’t related to the user’s current goal.
+* Do not stack alerts one after another
 
 
