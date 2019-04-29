@@ -19,6 +19,14 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 29, 2019
+
+**Site updates**
+
+- Added pattern documentation for "all of these"/"none of these" options in sets of radio buttons, checkboxes, and select boxes.
+
+---
+
 ### April 25, 2019
 
 **6.2.1**
