@@ -11,6 +11,14 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### April 30, 2019
+
+**6.2.3**
+
+- Adds missing Sass variables for cool blue colors
+
+---
+
 ### April 25, 2019
 
 **6.2.1**
