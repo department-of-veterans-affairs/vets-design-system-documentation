@@ -81,6 +81,49 @@ $ npm install uswds@1.4.2
 
 ## CSS
 
+When naming components, be sure to use Formation’s [naming conventions](naming).
+
+### Searchable selectors
+
+Many of the features in Sass make it easy to use shorthand to reduce repetitive typing and write cleaner .scss files. However, this makes using search features in GitHub or text editors much more difficult because it is not always clear how the shorthand was written; finding the right query requires guesswork.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Write out the full name of each selector.
+
+#### SCSS
+```css
+.alert {
+}
+
+.alert--warning {
+}
+
+.alert--error {
+}
+```
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content" markdown="1">
+Don’t use Sass shorthand features, such as nesting with ampersands often used with BEM syntax.
+
+#### CSS
+```scss
+.alert {
+  &--warning {
+  }
+  &--error {
+  }
+}
+```
+</div>
+</div>
+</div>
+
 ### Modifying components
 
 Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../utilities) instead of writing new CSS.
