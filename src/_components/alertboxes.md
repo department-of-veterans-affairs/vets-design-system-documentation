@@ -3,10 +3,10 @@ layout: default
 sub_section: alertboxes.md
 title: Alert boxes
 anchors:
-  - anchor: Information status
-  - anchor: Warning status
-  - anchor: Success status
-  - anchor: Error status
+  - anchor: Informational alert
+  - anchor: Warning alert
+  - anchor: Success alert
+  - anchor: Error alert
   - anchor: Continue status
   - anchor: Alert boxes with expandable content
   - anchor: Background color only
@@ -14,11 +14,13 @@ anchors:
 
 # Alert boxes
 
-<p class="va-introtext">Alerts keep users informed of important and sometimes time-sensitive changes.</p>
+<div class="va-introtext" markdown="1">
+Alerts keep users informed of important and sometimes time-sensitive changes.
+</div>
 
 
 
-## Information status
+## Informational alert
 
 Used to provide helpful information to a user or something that warrants attention. Not used for negative consequences.
 
@@ -28,7 +30,7 @@ Used to provide helpful information to a user or something that warrants attenti
 
 {% include snippet.html content='html/alert-informational.html' %}
 
-## Warning status
+## Warning alert
 
 Used to warn a user, such as when there are negative consequences, but necessary when something has gone wrong.
 
@@ -38,7 +40,7 @@ Used to warn a user, such as when there are negative consequences, but necessary
 
 {% include snippet.html content='html/alert-warning.html' %}
 
-## Success status
+## Success alert
 
 Used to indicate success.
 
@@ -48,7 +50,7 @@ Used to indicate success.
 
 {% include snippet.html content='html/alert-success.html' %}
 
-## Error status
+## Error alert
 
 Used when there is a problem or something destructive is about to occur.
 
@@ -58,7 +60,7 @@ Used when there is a problem or something destructive is about to occur.
 
 {% include snippet.html content='html/alert-error.html' %}
 
-## Continue status
+## Sign in or tool prompt
 
 Used to prompt user to sign in or create an account to access certain information.
 
@@ -94,6 +96,8 @@ Any style of alert box can be made to be a background color only. Background col
 - Messaging should be direct and concise. Aim for one or two lines.
 - Do not use headings
 
+---
+
 ## Accessibility
 
 Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the `alertdialog` role instead.
@@ -121,5 +125,6 @@ When the user is required to do something in response to an alert, let them know
 * Allow a user to dismiss a notification wherever appropriate.
 * Don’t include notifications that aren’t related to the user’s current goal.
 * Do not stack alerts one after another
+* If the alert appears in within the page body content, it should be co-located with relevant content.
 
 
