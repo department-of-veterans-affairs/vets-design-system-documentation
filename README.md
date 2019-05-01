@@ -78,3 +78,8 @@ my-projects-folder
 7. Once your update has been published to NPM, update `package.json` in `vets-design-system-documentation` from the local version to the new version number.
 
 8. Commit this along with any updates to the documentation site and submit a PR.
+
+## Deploying
+
+Merges into `master` will automatically be deployed to `dev-design.va.gov`. Production deploys are executed by creating a release of vets-website via Jenkins.
+
