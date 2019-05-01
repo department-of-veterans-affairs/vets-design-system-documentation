@@ -93,7 +93,6 @@ Many of the features in Sass make it easy to use shorthand to reduce repetitive 
 <div class="do-dont__content" markdown="1">
 Write out the full name of each selector.
 
-#### SCSS
 ```css
 .alert {
 }
@@ -111,7 +110,6 @@ Write out the full name of each selector.
 <div class="do-dont__content" markdown="1">
 Don’t use Sass shorthand features, such as nesting with ampersands often used with BEM syntax.
 
-#### CSS
 ```scss
 .alert {
   &--warning {
