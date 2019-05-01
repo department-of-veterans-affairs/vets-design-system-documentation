@@ -62,7 +62,7 @@ Used when there is a problem or something destructive is about to occur.
 
 ## Sign in or tool prompt
 
-Used to prompt user to sign in or create an account to access certain information.
+Used to prompt user to sign in, create an account, or launch a tool to access certain information.
 
 <div class="site-c-showcase">
 {% include_relative html/alert-continue.html %}
@@ -82,7 +82,7 @@ Any style of alert box may be made to include expandable content.
 
 ## Background color only
 
-Any style of alert box can be made to be a background color only. Background color only alerts are only to be used for immediate feedback, such as in single page applications or Ajax forms. They should not be used for static alert messaging.
+Any style of alert box can be made to be background color only. Background color only alerts are only to be used for immediate feedback, such as in single page applications or Ajax forms. They should not be used for static alert messaging.
 
 <div class="site-c-showcase">
 {% include_relative html/alert-background-color.html %}
@@ -125,6 +125,6 @@ When the user is required to do something in response to an alert, let them know
 * Allow a user to dismiss a notification wherever appropriate.
 * Don’t include notifications that aren’t related to the user’s current goal.
 * Do not stack alerts one after another
-* If the alert appears in within the page body content, it should be co-located with relevant content.
+* If the alert appears within the page body content, it should be co-located with relevant content.
 
 
