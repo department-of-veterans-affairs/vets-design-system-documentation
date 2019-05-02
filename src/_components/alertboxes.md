@@ -10,6 +10,7 @@ anchors:
   - anchor: Continue status
   - anchor: Alert boxes with expandable content
   - anchor: Background color only
+  - anchor: Full-width alerts
 ---
 
 # Alert boxes
@@ -30,6 +31,8 @@ Used to provide helpful information to a user or something that warrants attenti
 
 {% include snippet.html content='html/alert-informational.html' %}
 
+---
+
 ## Warning alert
 
 Used to warn a user, such as when there are negative consequences, but necessary when something has gone wrong.
@@ -39,6 +42,8 @@ Used to warn a user, such as when there are negative consequences, but necessary
 </div>
 
 {% include snippet.html content='html/alert-warning.html' %}
+
+---
 
 ## Success alert
 
@@ -50,6 +55,8 @@ Used to indicate success.
 
 {% include snippet.html content='html/alert-success.html' %}
 
+---
+
 ## Error alert
 
 Used when there is a problem or something destructive is about to occur.
@@ -59,6 +66,8 @@ Used when there is a problem or something destructive is about to occur.
 </div>
 
 {% include snippet.html content='html/alert-error.html' %}
+
+---
 
 ## Sign in or tool prompt
 
@@ -70,6 +79,8 @@ Used to prompt user to sign in, create an account, or launch a tool to access ce
 
 {% include snippet.html content='html/alert-continue.html' %}
 
+---
+
 ## Alert boxes with expandable content
 
 Any style of alert box may be made to include expandable content.
@@ -79,6 +90,8 @@ Any style of alert box may be made to include expandable content.
 </div>
 
 {% include snippet.html content='html/alert-expandable.html' %}
+
+---
 
 ## Background color only
 
@@ -90,11 +103,32 @@ Any style of alert box can be made to be background color only. Background color
 
 {% include snippet.html content='html/alert-background-color.html' %}
 
-### Guidance
-
 - Some users might not be able to distinguish differences in the background color, or see the color at all. Do not rely on color alone to convey context.
 - Messaging should be direct and concise. Aim for one or two lines.
 - Do not use headings
+
+---
+
+## Full-width alerts
+
+Full-width alerts can only appear below the main navigation and are used only for emergency or very urgent communications.
+
+<div class="site-c-showcase">
+{% include_relative html/alert-full-width.html %}
+</div>
+
+{% include snippet.html content='html/alert-full-width2.html' %}
+
+<div class="site-c-showcase">
+{% include_relative html/alert-full-width2.html %}
+</div>
+
+{% include snippet.html content='html/alert-full-width.html' %}
+
+- Only available in `info` or `warning` variants.
+- Use for emergency or very urgent communications only. Ex: hurricane alert; government shutdown affecting VA services, etc.
+- Do not stack - max is one per page at any one time. (If multiple emergency issues occur at once, make message content combined and link out to a landing page or to individual affected medical centers, for example.)
+- Can be used on homepage or, in true emergencies, on lower level pages.
 
 ---
 
