@@ -113,20 +113,25 @@ Any style of alert box can be made to be background color only. Background color
 
 Full-width alerts can only appear below the main navigation and are used only for emergency or very urgent communications.
 
+### Warning
 <div class="site-c-showcase">
 {% include_relative html/alert-full-width.html %}
 </div>
 
 {% include snippet.html content='html/alert-full-width2.html' %}
 
+### Informational
 <div class="site-c-showcase">
 {% include_relative html/alert-full-width2.html %}
 </div>
 
 {% include snippet.html content='html/alert-full-width.html' %}
 
+### More about full-width alerts
 - Only available in `info` or `warning` variants.
-- Use for emergency or very urgent communications only. Ex: hurricane alert; government shutdown affecting VA services, etc.
+- Content inside alert remains aligned the main page grid container. This might not be apparent on this site in smaller screens.
+- Use for emergency or very urgent communications only. Ex: hurricane alert; government shutdown affecting VA services, etc. Emergency homepage alerts notify Veterans, VA employees, and the public of events that affect VA services or site features.
+- To ensure that customers always know they can find critical service information in this area, do not use emergency homepage alerts for general press, outreach, or administrative messages.
 - Do not stack - max is one per page at any one time. (If multiple emergency issues occur at once, make message content combined and link out to a landing page or to individual affected medical centers, for example.)
 - Can be used on homepage or, in true emergencies, on lower level pages.
 
