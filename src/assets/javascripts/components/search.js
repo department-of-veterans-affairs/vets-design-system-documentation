@@ -44,7 +44,6 @@ var viewportIsWide = window.getBreakpointData().applied.indexOf('nav-width') !==
 
 // Next two functions are the search functions.
 var searchOnDesktop = function() {
-  console.log("searching on d");
   SimpleJekyllSearch({
     searchInput: desktop_search_input,
     resultsContainer: desktop_results_container,
@@ -69,7 +68,6 @@ var searchOnResultsPage = function() {
     mobile_search_input.value = searchTerm;
     document.getElementById('query-term').innerHTML = searchTerm;
   }
-  console.log("searching on page");
   SimpleJekyllSearch({
     searchInput: desktop_search_input,
     resultsContainer: results_page_container,
@@ -90,7 +88,7 @@ var searchFunctions = function() {
 // Determines if displaying results on the search results page first
 if (results_page_container !== null) {
   searchOnResultsPage();
-  setTimeout(function(){ searchFunctions(); console.log('header search from results page');}, 35);
+  setTimeout(function(){ searchFunctions(); }, 35);
 }
 else {
   searchFunctions();
