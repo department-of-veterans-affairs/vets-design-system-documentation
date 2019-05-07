@@ -17,7 +17,7 @@ Links should tell people what action to take, where to go next, or what informat
 - Avoid generic CTA links like "Learn more," "See more," and "Read more" by themselves.
 - Don't punctuate standalone CTA links. Exception: When the link text is a question.
 - If the embedded link text comes at the end of a sentence, don't hyperlink the ending punctuation.
-- When a link will open a PDF, YouTube video, XLS or other file format that is not a standard website, note that after the link in parentheses. Example: [Download a home toolkit](https://files.consumerfinance.gov/f/201503_cfpb_your-home-loan-toolkit-web.pdf)(PDF) from the Consumer Financial Protection Bureau
+- When a link opens a PDF, YouTube video, XLS or other file format that is not a standard website, note that after the link in parentheses. Example: [Download a home toolkit](https://files.consumerfinance.gov/f/201503_cfpb_your-home-loan-toolkit-web.pdf)(PDF) from the Consumer Financial Protection Bureau
 
 
 <div class="do-dont">
