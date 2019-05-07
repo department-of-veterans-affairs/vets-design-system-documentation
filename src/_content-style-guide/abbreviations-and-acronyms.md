@@ -3,7 +3,7 @@ layout: default
 title: Abbreviations and acronyms
 ---
 
-# Abbreviations and acronyms [@RANDI - somewhere ]
+# Abbreviations and acronyms 
 
 Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list).
 
@@ -22,9 +22,11 @@ For acronyms, use the spelled out term on first mention in body copy with the ac
 
 __Exceptions for page titles and meta title tags__
 
-If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's okay to use only the acronym for the page title. Just define it in the first mention in body copy, using the spelled out term with the acronym in parentheses. 
+If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's OK to use only the acronym for the page title. Just define it in the first mention in body copy, using the spelled out term with the acronym in parentheses. 
 
 - Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we might use the spelled out term in page titles. In general, default to using the term that Veterans recognize better. 
+
+Always spell out the names of internal offices within VA rather than using an acronym. This will avoid confusion if there are offices that share the same acronym, such as OCC (Office of Community Care, Office of Corporate Communications).
 
 __Like this:__
 
