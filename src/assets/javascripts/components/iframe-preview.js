@@ -26,10 +26,10 @@
 
   for (var i = 0; i < preview_button.length; i++){
     preview_button[i].onclick = function(e) {
-        var new_size = e.target.getAttribute('data-size');
-        var frame = e.target.parentNode.parentNode.querySelectorAll('.responsive-iframe');
-        var box = e.target.parentNode.parentNode.querySelectorAll('.iframe__preview');
-        var all_buttons = e.target.parentNode.querySelectorAll('.sg-responsive-preview__size-button');
+        var new_size = this.getAttribute('data-size');
+        var frame = this.parentNode.parentNode.querySelectorAll('.responsive-iframe');
+        var box = this.parentNode.parentNode.querySelectorAll('.iframe__preview');
+        var all_buttons = this.parentNode.querySelectorAll('.sg-responsive-preview__size-button');
 
         for (var i = 0; i < all_buttons.length; i++){
           all_buttons[i].classList.remove('is-current');

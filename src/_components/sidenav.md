@@ -8,11 +8,13 @@ title: Sidenav
 
 <p class="va-introtext">Hierarchical, vertical navigation to place at the side of a page.</p>
 
-<div class="site-c-showcase">
-{% include_relative html/sidenav.html %}
-</div>
+{% include iframe-preview.html src="html/sidenav.html" title="Side nav" height=400 %}
 
 {% include snippet.html content='html/sidenav.html' %}
+
+* All elements, including the `<script>` tag in the snippet are required. An update to Formation's script may address this.
+* The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
+
 
 ## Accessibility
 * Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
@@ -20,7 +22,6 @@ title: Sidenav
 ## Usability
 
 ### When to use
-* To display a navigational hierarchy with one to three levels.
 * To display the “sub-navigation” within a section of the website.
 
 ### When to consider something else
