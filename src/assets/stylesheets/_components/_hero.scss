@@ -2,4 +2,29 @@
   background: #16171F;
   color: #fff;
   padding: units(15) 0 19rem;
+  position: relative;
+
+  .site-l-wrapper {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.site-c-hero__img {
+  position: absolute;
+  width: 400px;
+  right: -14vw;
+  top: 74px;
+  z-index: 2;
+  opacity: .25;
+
+  @include media($medium-screen) {
+    opacity: .5;
+    right: 3vw;
+  }
+
+  @include media($large-screen) {
+    opacity: .9;
+    right: 10vw;
+  }
 }
