@@ -1,11 +1,21 @@
 .clip-bottom {
   overflow: hidden;
-  -webkit-clip-path: polygon(100% 0, 100% 92%, 82vw 100%, 0 91%, 0 0);
-  clip-path: polygon(100% 0, 100% 92%, 82vw 100%, 0 91%, 0 0);
+  -webkit-clip-path: polygon(100% 0px, 100% 93.60%, 25.38vw 97.39%, 0px 94.85%, 0px 0px);
+  clip-path: polygon(100% 0px, 100% 93.60%, 25.38vw 97.39%, 0px 94.85%, 0px 0px);
+
+  @include media($medium-screen) {
+    -webkit-clip-path: polygon(100% 0px, 100% 92%, 20.9vw 100%, 0px 94.85%, 0px 0px);
+    clip-path: polygon(100% 0px, 100% 92%, 20.9vw 100%, 0px 94.85%, 0px 0px);
+  }
 }
 
 .clip-top {
   overflow: hidden;
-  -webkit-clip-path: polygon(18% 0, 100% 5%, 100% 100%, 0 100%, 0 5%);
-  clip-path: polygon(18% 0, 100% 7%, 100% 100%, 0 100%, 0 8%);
+  -webkit-clip-path: polygon(79.46% 62px, 100% 4.6%, 100% 100%, 0px 100%, 0px 4.65%);
+  clip-path: polygon(79.46% 62px, 100% 4.6%, 100% 100%, 0px 100%, 0px 4.65%);
+
+  @include media($medium-screen) {
+    -webkit-clip-path: polygon(79.61% 15px, 100% 7%, 100% 100%, 0px 100%, 0px 8%);
+    clip-path: polygon(79.61% 15px, 100% 7%, 100% 100%, 0px 100%, 0px 8%);
+  }
 }
