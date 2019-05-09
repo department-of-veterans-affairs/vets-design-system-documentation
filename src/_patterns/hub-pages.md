@@ -1,15 +1,12 @@
 ---
 layout: default
-title: Pages
-anchors:
-  - anchor: Hub pages
+title: Hub pages
 ---
 
-# Pages
+# Hub pages
 
 Pattern documentation on VA.gov's page templates.
 
-## Hub pages
 A hub page page does the following:
 - Provides an executive summary of this hub
 - Provides links to lead users to specific sections about that benefit

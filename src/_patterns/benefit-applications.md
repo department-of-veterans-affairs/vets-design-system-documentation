@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Applications
+title: Benefit applications
 anchors:
   - anchor: Eligibilty
   - anchor: How to apply
@@ -9,7 +9,7 @@ anchors:
   - anchor: Waivers
 ---
 
-# Applications
+# Benefit applications
 
 Applications must consist of four epics
 
@@ -71,3 +71,10 @@ We should note that it could have some overlap with eligibility or apply now
 - Tend to be later in the flow before reviews
 - Lot of legal copy. Can be a static page on VA.gov that we link to. Lot of TL;DR version on the action application
 - One question at a time.
+
+## Service history
+Review of information type of pattern versus information collection. Veterans need to very if period of service is missing or incorrect.
+
+- Data is typically pre-filled for login
+- Show stack of flats (eg. Branch, Date)
+- May have other info (eg. character of discharge) but we hide that in the "review" view.
