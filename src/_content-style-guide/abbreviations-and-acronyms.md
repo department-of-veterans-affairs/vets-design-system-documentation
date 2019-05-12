@@ -32,7 +32,7 @@ If the spelled out term is too long for easy scanning in the page title (H1) or 
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1"> 
 
-This example uses the acronym in the header becasue it's what Veterans recognize better and the term they use in searches. The spelled out term is used at the first mention in the body copy.
+This example uses the acronym in the header because it's what Veterans recognize better and the term they use in searches. The spelled out term is used at the first mention in the body copy.
 
 __Get free mental health care for PTSD__
 
