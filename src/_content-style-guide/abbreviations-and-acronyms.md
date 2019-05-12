@@ -3,7 +3,7 @@ layout: default
 title: Abbreviations and acronyms
 ---
 
-# Abbreviations and acronyms
+# Abbreviations and acronyms 
 
 Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list).
 
@@ -20,14 +20,30 @@ For acronyms, use the spelled out term on first mention in body copy with the ac
 - **On first mention:** Servicemembers' Group Life Insurance Traumatic Injury Protection (TSGLI)
 - **After first mention:** TSGLI 
 
-__Exceptions for page titles and meta title tags__
+__Exceptions for page titles, headers, and meta title tags__
 
-If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's okay to use only the acronym for the page title. Just define it in the first mention in body copy, using the spelled out term with the acronym in parentheses. 
+If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's OK to use the acronym by itself for the H1 and meta title tag. Just define it in the first mention within body copy, using the spelled out term with the acronym in parentheses. 
 
-- Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we might use the spelled out term in page titles. In general, default to using the term that Veterans recognize better. 
+- Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we use the acronym (or vice versa) by itself in the H1 or headers. In general, default to first using the term that Veterans recognize better, especially in H1s and headers. 
 
-__Like this:__
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1"> 
+
+This example uses the acronym in the header because it's what Veterans recognize better and the term they use in searches. The spelled out term is used at the first mention in the body copy.
 
 __Get free mental health care for PTSD__
 
 If you’re having problems sleeping, controlling your anger, or readjusting to civilian life, you're not alone. Find out how to access VA mental health services for posttraumatic stress disorder (PTSD), depression, grief, anxiety, and other needs. You can use some services even if you’re not enrolled in VA health care.
+
+</div>
+</div>
+</div>
+
+
+
+## Avoid using internal acronyms
+
+Always spell out the names of VA offices instead of using the internal acronym on external-facing pages. This helps avoid confusion when there are offices that share the same acronym. (Example: The Office of Community Care, Office of Corporate Communications, and Office of Connected Care, all refer to their office as OCC.)
