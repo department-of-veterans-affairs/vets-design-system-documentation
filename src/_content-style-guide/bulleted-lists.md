@@ -8,7 +8,7 @@ title: Bulleted lists
 Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list.
 
 - Capitalize the first word of every bullet.
-- Don't use a bulleted list for only 1 item.
+- Don't use a bulleted list for only one item.
 - Keep each item succinct for scannability (for example, 1 or 2 sentences each).  
 - When using "and" or "or" at the end of each bullet point, use a comma and bold the "and"/"or" at the end of each bullet point. 
 - If your list has more than 7 items, use subheads to break out the list into smaller bullet lists.
