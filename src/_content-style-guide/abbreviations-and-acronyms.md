@@ -26,10 +26,11 @@ If the spelled out term is too long for easy scanning in the page title (H1) or 
 
 - Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we might use the spelled out term in page titles. In general, default to using the term that Veterans recognize better. 
 
-__Avoid using internal acronyms__
-Always spell out the names of offices within VA rather than using the internal acronym. This helps avoid confusion when there are offices that share the same acronym. 
+<br />
 
-For example, the Office of Community Care, Office of Corporate Communications, and Office of Connected Care, all internally use OCC which could confuse members of the public who may be looking for a specific office. 
+__Avoid using internal acronyms__
+
+Always spell out the names of VA offices instead of using the internal acronym on external-facing pages. This helps avoid confusion when there are offices that share the same acronym. (Example: The Office of Community Care, Office of Corporate Communications, and Office of Connected Care, all refer to their office as OCC.)
 
 
 __Like this:__
