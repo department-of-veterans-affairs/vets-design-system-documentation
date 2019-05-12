@@ -24,7 +24,7 @@ __Exceptions for page titles, headers, and meta title tags__
 
 If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's OK to use the acronym by itself for the H1 and meta title tag. Just define it in the first mention within body copy, using the spelled out term with the acronym in parentheses. 
 
-- Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we use the acronym (or vice versa) by itself in the H1 or headers. In general, default to first using the term that Veterans recognize better. 
+- Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we use the acronym (or vice versa) by itself in the H1 or headers. In general, default to first using the term that Veterans recognize better, especially in H1s and headers. 
 
 
 <div class="do-dont">
