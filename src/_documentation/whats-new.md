@@ -11,6 +11,30 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### May 13, 2019
+
+**6.3.3**
+
+- Imports missing Sidenav component CSS
+
+---
+
+### May 13, 2019
+
+**6.3.2**
+
+- Patch for Sidenav component Javascript.  Fixes bug where screen would be stuck if screen was resized while navigation flyout was open.
+
+---
+
+### May 9, 2019
+
+**6.3.0**
+
+- Added Sidenav component JavaScript to Formation
+
+---
+
 ### April 30, 2019
 
 **6.2.3**
