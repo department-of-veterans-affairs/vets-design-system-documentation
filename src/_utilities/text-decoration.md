@@ -9,7 +9,7 @@ title: Text decoration
 Change the text-decoration.
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=2
@@ -18,7 +18,7 @@ Change the text-decoration.
     css_property="text-decoration"
   %}
   <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border-top--0">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border-top--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
           <code class="code">.vads-u-text-decoration--none</code>
       </div>
@@ -26,7 +26,7 @@ Change the text-decoration.
         <a href="javascript:void();" class="vads-u-text-decoration--none">Link with no underline</a>
       </div>
     </div>
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
           <code class="code">.vads-u-text-decoration--underline</code>
       </div>
@@ -34,7 +34,7 @@ Change the text-decoration.
         <span class="vads-u-text-decoration--underline">Non-link with underline</span>
       </div>
     </div>
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
           <code class="code">.vads-u-text-decoration--line-through</code>
       </div>

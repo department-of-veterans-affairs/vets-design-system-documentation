@@ -9,7 +9,7 @@ title: Background color
 Change the background color of an element
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=2

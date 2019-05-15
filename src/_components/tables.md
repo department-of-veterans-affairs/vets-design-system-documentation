@@ -8,7 +8,7 @@ title: Tables
 
 <p class="va-introtext">Tables show tabular data in columns and rows.</p>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/tables.html %}
 </div>
 

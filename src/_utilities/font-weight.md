@@ -9,7 +9,7 @@ title: Font weight
 Change the font wight of an element.
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=2
@@ -18,7 +18,7 @@ Change the font wight of an element.
   css_property="font-weight"
 %}
   <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--4">
           <code class="code">.vads-u-font-weight--bold</code>
       </div>
@@ -29,7 +29,7 @@ Change the font wight of an element.
         <p class="vads-u-font-weight--bold vads-u-margin--0">&lt;p> with bold weight</p>
       </div>
     </div>
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
       <div class="vads-l-col--12 medium-screen:vads-l-col--4">
           <code class="code">.vads-u-font-weight--normal</code>
       </div>

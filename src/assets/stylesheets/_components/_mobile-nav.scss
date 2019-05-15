@@ -1,4 +1,4 @@
-.site-c-mobile-nav {
+.site-mobile-nav {
   background: #fff;
   display: none;
   padding: $units-3;
@@ -18,7 +18,7 @@
   }
 }
 
-.site-c-mobile-nav.is-visible {
+.site-mobile-nav.is-visible {
   display: block;
   animation: slidein-left 0.3s ease-in-out;
 
@@ -27,25 +27,25 @@
   }
 }
 
-.site-c-mobile-nav__accordion {
+.site-mobile-nav__accordion {
   clear: both;
 }
 
-.site-c-mobile-nav__accordion-heading {
+.site-mobile-nav__accordion-heading {
   border-top: 1px solid $color-gray-lighter;
   border-bottom: 1px solid $color-gray-lighter;
   margin: -1px 0 0;
   line-height: 1;
 }
 
-.site-c-mobile-nav__accordion-content {
+.site-mobile-nav__accordion-content {
   padding: 0;
 }
 
-.site-c-mobile-nav__accordion-button,
-.site-c-mobile-nav__accordion-button:hover,
-.site-c-mobile-nav__accordion-button:active,
-.site-c-mobile-nav__accordion-button:focus {
+.site-mobile-nav__accordion-button,
+.site-mobile-nav__accordion-button:hover,
+.site-mobile-nav__accordion-button:active,
+.site-mobile-nav__accordion-button:focus {
   font-weight: $font-normal;
   padding-left: 0;
   background-color: transparent;
@@ -53,25 +53,25 @@
   margin: 0;
 }
 
-.site-c-mobile-nav__accordion-button:hover,
-.site-c-mobile-nav__accordion-button:focus {
+.site-mobile-nav__accordion-button:hover,
+.site-mobile-nav__accordion-button:focus {
   background-color: $color-gray-lightest;
   color: $color-primary;
 }
 
-.site-c-mobile-nav-list {
+.site-mobile-nav-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.site-c-mobile-nav-list__item {
+.site-mobile-nav-list__item {
   padding: 0;
   margin: 0;
 }
 
-.site-c-mobile-nav-list__link,
-.site-c-mobile-nav-list__link:visited {
+.site-mobile-nav-list__link,
+.site-mobile-nav-list__link:visited {
   color: $color-gray;
   display: block;
   border-top: 1px solid $color-gray-lighter;
@@ -83,20 +83,20 @@
   line-height: 1;
 }
 
-.site-c-mobile-nav-list__link:hover,
-.site-c-mobile-nav-list__link:focus {
+.site-mobile-nav-list__link:hover,
+.site-mobile-nav-list__link:focus {
   background-color: $color-gray-lightest;
   color: $color-primary;
   transition: none !important;
   text-decoration: none;
 }
 
-.site-c-mobile-nav-list__link.current {
+.site-mobile-nav-list__link.current {
   color: $color-base;
   font-weight: bold;
 }
 
-.site-c-mobile-nav__close-button {
+.site-mobile-nav__close-button {
   width: auto;
   background: transparent;
   color: $color-base;
@@ -109,14 +109,14 @@
   }
 }
 
-.site-c-mobile-nav__close-button:hover,
-.site-c-mobile-nav__close-button:active,
-.site-c-mobile-nav__close-button:focus {
+.site-mobile-nav__close-button:hover,
+.site-mobile-nav__close-button:active,
+.site-mobile-nav__close-button:focus {
   background-color: transparent;
   color: $color-base;
 }
 
-.site-c-overlay {
+.site-overlay {
   position: fixed;
   top: 0;
   left: 0;

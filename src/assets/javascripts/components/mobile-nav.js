@@ -5,7 +5,7 @@ var close_mobile_nav_button = document.getElementById("close_mobile_nav_button")
     overlay = document.createElement("div");
     nav_open_class = "nav-is-open",
     visible_class = "is-visible",
-    overlay_class = "site-c-overlay";
+    overlay_class = "site-overlay";
 
 
 function removeElementsByClass(className){

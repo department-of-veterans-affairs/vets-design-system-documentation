@@ -8,7 +8,7 @@ title: Horizontal rules
 
 ## Stars
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/horizontal-rule-stars.html %}
 </div>
 

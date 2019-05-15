@@ -12,7 +12,7 @@ Set the `max-width` by number of characters per line using `ch` units instead of
 In other words, as the font size increases, the pixel width increases.
 
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=2
@@ -22,10 +22,10 @@ In other words, as the font size increases, the pixel width increases.
   %}
   <div class="vads-l-row">
     {% for item in site.data.measures.measures %}
-      <div class="site-c-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+      <div class="site-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
         <div class="vads-u-display--flex vads-u-justify-content--space-between">
           <code class="code">.vads-u-measure--{{ item.name }}</code>
-          <span class="site-c-utility-value">{{ item.value }}</span>
+          <span class="site-utility-value">{{ item.value }}</span>
         </div>
 
         <div class="vads-u-display--flex vads-u-align-items--center vads-u-border-top--1px vads-u-border-color--gray-lightest vads-u-margin-top--3">

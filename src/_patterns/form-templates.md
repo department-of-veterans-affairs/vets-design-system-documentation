@@ -16,7 +16,7 @@ Common form structures and designs used on VA.gov
 
 ## Address form
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/address-form.html %}
 </div>
 
@@ -26,7 +26,7 @@ Common form structures and designs used on VA.gov
 
 ## Name form
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/name-form.html %}
 </div>
 

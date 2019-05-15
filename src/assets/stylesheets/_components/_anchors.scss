@@ -3,7 +3,7 @@
   z-index: 1;
 }
 
-.site-c-heading-anchor {
+.site-heading-anchor {
   color: $color-gray;
   font-size: .75em;
   margin-left: $units-1;
@@ -18,12 +18,12 @@
   }
 }
 
-.site-c-heading-anchor:visited {
+.site-heading-anchor:visited {
   color: $color-gray;
 }
 
-.has-anchor:hover .site-c-heading-anchor,
-.site-c-heading-anchor:hover {
+.has-anchor:hover .site-heading-anchor,
+.site-heading-anchor:hover {
   background-color: transparent;
   opacity: 1;
 }

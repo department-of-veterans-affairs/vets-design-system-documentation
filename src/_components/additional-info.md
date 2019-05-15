@@ -14,7 +14,7 @@ title: Additional info
 AdditionalInfo components are interactive components that reveal and hide content from the page.
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/additional-info.html %}
 </div>
 

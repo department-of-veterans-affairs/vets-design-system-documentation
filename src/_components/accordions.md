@@ -14,7 +14,7 @@ title: Accordions
 Accordions are a list of headers that can be clicked to hide or reveal additional content.
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/accordions.html %}
 </div>
 
@@ -49,6 +49,6 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 The `CollapsiblePanel` component renders the accordion. The interaction is slightly different from the default accordion behavior, where multiple panels within a set can be open at the same time.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/collapsible-panel.html %}
 </div>

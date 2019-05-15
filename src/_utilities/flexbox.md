@@ -24,7 +24,7 @@ Flexbox requires two components,  a *flex container* and *flex items*. Any first
 
 The shorthand property, `flex` encompasses three properties: `flex-grow`, `flex-shrink`, and `flex-basis`, respectively. There are several options for creating ratios for flex items. However, these ratios are imprecise, so should not be used if specific widths are desired.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3
@@ -54,7 +54,7 @@ Flex direction sets the main-axis, which defines the direction flex items are pl
 - `column`: same as row but top to bottom
 - `column-reverse`: same as row-reverse but bottom to top
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3
@@ -71,7 +71,7 @@ Flex direction sets the main-axis, which defines the direction flex items are pl
 
 The [Flexbox grid](../layout/flexbox-grid.html) is set to `wrap` by default, but flexbox will otherwise place flex items into a single row. **Note:** If the number of grid columns exceeds 12 and the grid column is set to `nowrap`, the grid columns may extend off the page.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3
@@ -96,7 +96,7 @@ This defines for how flex items are arranged across the row.
 - `center`: flex items are centered across the row
 - `baseline`: flex items are aligned to their baseline
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3
@@ -122,7 +122,7 @@ This property helps distribute space left over.
 - `space-around`: flex items are evenly distributed across the row with equal space around them. Note that visually the spaces aren't equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies.
 - `space-evenly`: items are distributed so that the spacing between any two items (and the space to the edges) is equal.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3
@@ -148,7 +148,7 @@ This utility handles a flex container's lines within when there is extra space i
 - `space-around`: flex items are distributed evenly along a horizontal axis
 - `stretch` (default): flex items stretch to take up remaining space.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3
@@ -167,7 +167,7 @@ By default, flex items are laid out in the source order. The order property cont
 
 This utility provides ordering for `1` thru `4` in addition to `initial`, `first`, and `last`.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=3

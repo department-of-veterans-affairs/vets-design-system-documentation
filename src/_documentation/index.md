@@ -28,8 +28,8 @@ Formation was created with the [U.S. Web Design System](https://designsystem.dig
 
 Formation supports older and newer browsers through progressive enhancement. We follow the 2% rule: we support any browser above 2% usage as observed by analytics.usa.gov.
 
-<div class="site-c-showcase">
-  <div class="vads-u-display--flex site-c-showcase__col vads-u-margin-top--0 vads-u-border--0 vads-u-align-items--center">
+<div class="site-showcase">
+  <div class="vads-u-display--flex site-showcase__col vads-u-margin-top--0 vads-u-border--0 vads-u-align-items--center">
     <div class="vads-u-padding-right--5 vads-u-color--cool-blue-light ">
       <i class="fab fa-internet-explorer vads-u-font-size--2xl"></i>
     </div>
@@ -38,7 +38,7 @@ Formation supports older and newer browsers through progressive enhancement. We 
     </div>
   </div>
 
-  <div class="vads-u-display--flex site-c-showcase__col vads-u-align-items--center">
+  <div class="vads-u-display--flex site-showcase__col vads-u-align-items--center">
     <div class="vads-u-padding-right--5 vads-u-color--cool-blue-light ">
       <i class="fab fa-edge vads-u-font-size--2xl"></i>
     </div>
@@ -47,7 +47,7 @@ Formation supports older and newer browsers through progressive enhancement. We 
     </div>
   </div>
 
-  <div class="vads-u-display--flex site-c-showcase__col vads-u-align-items--center">
+  <div class="vads-u-display--flex site-showcase__col vads-u-align-items--center">
     <div class="vads-u-padding-right--5 vads-u-color--gold">
       <i class="fab fa-chrome vads-u-font-size--2xl"></i>
     </div>
@@ -56,7 +56,7 @@ Formation supports older and newer browsers through progressive enhancement. We 
     </div>
   </div>
 
-  <div class="vads-u-display--flex site-c-showcase__col vads-u-align-items--center">
+  <div class="vads-u-display--flex site-showcase__col vads-u-align-items--center">
     <div class="vads-u-padding-right--5 vads-u-color--orange">
       <i class="fab fa-firefox vads-u-font-size--2xl"></i>
     </div>
@@ -65,7 +65,7 @@ Formation supports older and newer browsers through progressive enhancement. We 
     </div>
   </div>
 
-  <div class="vads-u-display--flex site-c-showcase__col vads-u-align-items--center">
+  <div class="vads-u-display--flex site-showcase__col vads-u-align-items--center">
     <div class="vads-u-padding-right--5 vads-u-color--primary-alt-dark">
       <i class="fab fa-safari vads-u-font-size--2xl"></i>
     </div>

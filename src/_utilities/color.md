@@ -11,7 +11,7 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
 
 **Note:** Not all of these colors are placed in accessible color combinations.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3

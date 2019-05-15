@@ -10,7 +10,7 @@ title: Labels
 Labels draw attention to new or important content.
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/labels.html %}
 </div>
 

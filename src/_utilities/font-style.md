@@ -9,7 +9,7 @@ title: Font style
 Change the font style of an element.
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {%
   include _showcase-header.html
   heading_level=2
@@ -18,7 +18,7 @@ Change the font style of an element.
   css_property="font-style"
 %}
   <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
           <code class="code">.vads-u-font-style--italic</code>
       </div>
@@ -26,7 +26,7 @@ Change the font style of an element.
         <span class="vads-u-font-style--italic">Italic text in &lt;span>. </span>
       </div>
     </div>
-    <div class="site-c-showcase__col vads-l-row vads-u-align-items--flex-start">
+    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
       <div class="vads-l-col--12 medium-screen:vads-l-col--6">
           <code class="code">.vads-u-font-style--normal</code>
       </div>

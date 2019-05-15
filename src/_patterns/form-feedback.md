@@ -25,7 +25,7 @@ In all cases, only show error validation messages or stylings after a user has i
 
 For all text inputs, the error message is placed between the label and the input.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/error-text-inputs.html %}
 </div>
 
@@ -53,7 +53,7 @@ The HTML for a typical error is:
 
 Select boxes a pattern similar to text inputs. The guidance is similar as well.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/error-select-box.html %}
 </div>
 
@@ -69,7 +69,7 @@ Error messages are generally the same. The error message is slightly different i
 
 ### Errors on radio buttons
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/error-radio-buttons.html %}
 </div>
 
@@ -87,7 +87,7 @@ Unlike other form elements, error messages for checkboxes appear below
 
 #### Error message above checkbox
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/error-checkbox.html %}
 </div>
 
@@ -95,7 +95,7 @@ Unlike other form elements, error messages for checkboxes appear below
 
 #### Error message with a checkbox group
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/error-checkbox-group.html %}
 </div>
 
@@ -108,7 +108,7 @@ Unlike other form elements, error messages for checkboxes appear below
 
 ### Error message on file input
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/error-file-input.html %}
 </div>
 

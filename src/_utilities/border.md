@@ -17,7 +17,7 @@ Set width, style, and color of an item’s borders.
 
 The border shorthand utility provides border widths for all sides, as well as `top`, `right`, `bottom`, and `left`, using `solid` as the default `border-style`.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 
   {%
     include _showcase-header.html
@@ -82,7 +82,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
 ## Border style
 **Note:** To use the utility for `border-style`, you must use the [border shorthand](#border-shorthand) if your element does not already have a border. Border style cannot be changed across different breakpoints
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 
   {%
     include _showcase-header.html
@@ -106,7 +106,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
 ## Border color
 **Note:** To use the utility for `border-color`, you must use the [border shorthand](#border-shorthand) if your element does not already have a border. Border color cannot be changed across different breakpoints.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
