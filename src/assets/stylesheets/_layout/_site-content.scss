@@ -1,11 +1,11 @@
-.site-c-content {
+.site-content {
   display: flex;
   align-items: stretch;
   min-height: calc(100vh - 86px);
   width: 100%;
 }
 
-.site-c-content__nav {
+.site-content__nav {
   flex-basis: 25%;
   max-width: 25%;
   display: none;
@@ -15,7 +15,7 @@
   }
 }
 
-.site-c-content__content {
+.site-content__content {
   flex-basis: 100%;
   max-width: 100%;
   padding: $units-3;

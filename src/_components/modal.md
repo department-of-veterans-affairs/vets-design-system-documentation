@@ -10,12 +10,12 @@ title: Modal
 
 # Modal
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/modal.html %}
 </div>
 
 ## Crisis Line Modal
-<div class="site-c-showcase">
+<div class="site-showcase">
   {% include_relative html/crisis-line.html %}
 </div>
 

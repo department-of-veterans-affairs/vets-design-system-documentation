@@ -1,4 +1,4 @@
-.site-c-showcase {
+.site-showcase {
   @include clearfix;
   background-color: #ffffff;
   border: 1px solid $color-gray-lighter;
@@ -6,17 +6,17 @@
   padding: $units-2;
 }
 
-.site-c-showcase > h2,
-.site-c-showcase > h3,
-.site-c-showcase > h4 {
+.site-showcase > h2,
+.site-showcase > h3,
+.site-showcase > h4 {
   font-family: $font-sans;
 }
 
-.site-c-showcase + .highlighter-rouge {
+.site-showcase + .highlighter-rouge {
   margin-top: -1px;
 }
 
-.site-c-showcase__header {
+.site-showcase__header {
   margin-bottom: units(4);
 
   @include media($medium-screen) {
@@ -27,7 +27,7 @@
   }
 }
 
-.site-c-showcase__heading {
+.site-showcase__heading {
   font-size: 2rem;
   font-family: $font-sans;
   margin-top: 0;
@@ -90,39 +90,39 @@
   }
 }
 
-.site-c-showcase__prop-head {
+.site-showcase__prop-head {
   width: 100%;
   margin: 0;
 }
 
-.site-c-showcase__prop {
+.site-showcase__prop {
   font-family: $font-monospace;
   color: $color-secondary-darkest;
 }
 
-.site-c-showcase__col {
+.site-showcase__col {
   border-top: 1px solid $color-gray-lighter;
   padding: $units-3 0;
 }
 
-.site-c-square-outer {
+.site-square-outer {
   background: $color-secondary-light;
   display: flex;
 }
 
-.site-c-square {
+.site-square {
   background: #fff;
   border: 1px solid $color-base;
   display: inline-block;
   flex-shrink: 0;
 }
 
-.site-c-square--small {
+.site-square--small {
   width: 20px;
   height: 20px;
 }
 
-.site-c-utility-class {
+.site-utility-class {
   font-family: "Courier";
   font-size: 12px;
   display: block;
@@ -132,7 +132,7 @@
   border-radius: 2px;
 }
 
-.site-c-utility-value {
+.site-utility-value {
   font-family: "Courier";
   font-size: 12px;
   display: inline-block;
@@ -163,7 +163,7 @@
   width: 100%;
 }
 
-.site-c-showcase__padding-example__outer {
+.site-showcase__padding-example__outer {
   border: 1px solid $color-base;
   background: $color-primary-alt-light;
   display: inline-block;
@@ -171,7 +171,7 @@
   height: 160px;
 }
 
-.site-c-showcase__padding-example__inner {
+.site-showcase__padding-example__inner {
   background: white;
   width: 100%;
   height: 100%;

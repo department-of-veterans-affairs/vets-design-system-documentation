@@ -18,7 +18,7 @@ Reset the height and width of an element. All height and width classes include [
 
 ## Height
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -41,7 +41,7 @@ Reset the height and width of an element. All height and width classes include [
 
 ## Min-height
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -64,7 +64,7 @@ Reset the height and width of an element. All height and width classes include [
 
 ## Max-height  
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -87,7 +87,7 @@ Reset the height and width of an element. All height and width classes include [
 
 ## Width
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -110,7 +110,7 @@ Reset the height and width of an element. All height and width classes include [
 
 ## Min-width
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -133,7 +133,7 @@ Reset the height and width of an element. All height and width classes include [
 
 ## Max-width
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3

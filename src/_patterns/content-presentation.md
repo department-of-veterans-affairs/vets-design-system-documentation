@@ -14,7 +14,7 @@ anchors:
 
 Information callouts are light blue boxes that call attention to important information.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/information-callout.html %}
 </div>
 

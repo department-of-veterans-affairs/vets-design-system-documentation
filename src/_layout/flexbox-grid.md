@@ -29,7 +29,7 @@ Unlike the [float grid](grid.html), you will need to use the [padding utility](.
 
 Columns without a set width will automatically layout with equal widths. For example, below are four instances of `vads-l-col` which are each automatically 25% wide. The columns will automatically wrap when they don't fit a single row.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/flexbox-grid-basic.html %}
 </div>
 
@@ -39,7 +39,7 @@ Columns without a set width will automatically layout with equal widths. For exa
 
 Column widths can be set using a modifier value on the `vads-l-col` class, such as `vads-l-col--3`. The number at the end of the class name represents the number of columns out of a 12-column grid. The total of those numbers in any `vads-l-row` should equal 12. If the total is more than 12, the grid will collapse into separate rows.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/flexbox-grid-basic2.html %}
 </div>
 
@@ -51,7 +51,7 @@ The flexbox grid can be easily nested inside other flexbox grid columns using bo
 
 In this example, we have `vads-u-padding--2p5` applied to each grid column, so we use `vads-u-margin-x--neg2p5` on the grid row inside the grid column.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/nesting-grids.html %}
 </div>
 

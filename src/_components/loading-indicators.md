@@ -6,7 +6,7 @@ title: Loading indicators
 
 # Loading indicators
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/loading-indicator.html %}
 </div>
 

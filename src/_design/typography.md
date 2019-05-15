@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Typography
-tags: Fonts, Lists, Links, Headings, Paragraphs 
+tags: Fonts, Lists, Links, Headings, Paragraphs
 anchors:
   - anchor: Fonts
   - anchor: Headings
@@ -106,7 +106,7 @@ anchors:
 
 ## Headings
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {% include_relative html/headings.html %}
 </div>
 
@@ -152,21 +152,21 @@ Don’t change heading level in order to use a different font size.
 
 ## Paragraphs
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {% include_relative html/paragraphs.html %}
 </div>
 
 {% include snippet.html content='html/paragraphs.html' %}
 
 ## Lists
-<div class="site-c-showcase">
+<div class="site-showcase">
   {% include_relative html/lists.html %}
 </div>
 
 {% include snippet.html content='html/lists.html' %}
 
 ## Links
-<div class="site-c-showcase">
+<div class="site-showcase">
   {% include_relative html/links.html %}
 </div>
 

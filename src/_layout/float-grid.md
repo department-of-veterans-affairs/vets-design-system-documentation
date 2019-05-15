@@ -9,7 +9,7 @@ title: Float grid
 The float grid is the grid provided by the U.S. Web Design System. For a grid that offers more flexibility, see the [flexbox grid](flexbox-grid.html).
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/grid.html %}
 </div>
 

@@ -9,7 +9,7 @@ title: Text align
 Change the alignment of text or elements. This utility also [responsive prefixes](#responsive-prefixes).
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=2

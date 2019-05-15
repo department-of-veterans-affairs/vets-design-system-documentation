@@ -1,9 +1,9 @@
-.site-c-header {
+.site-header {
   color: #fff;
   background-color: $color-primary-darkest;
 }
 
-.site-c-header .site-l-wrapper {
+.site-header .site-l-wrapper {
   padding-right: 0;
 
   @include media($nav-width) {
@@ -15,7 +15,7 @@
   }
 }
 
-.site-c-header__masthead {
+.site-header__masthead {
   display: flex;
   justify-content: space-between;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.site-c-header__open-mobile-nav-button {
+.site-header__open-mobile-nav-button {
   border-radius: 0;
   margin: 0;
   width: auto;
@@ -45,7 +45,7 @@
   }
 }
 
-.site-c-header__logo-text {
+.site-header__logo-text {
   display: block;
   font-size: 2.1rem;
   font-weight: 300;
@@ -57,19 +57,19 @@
   }
 }
 
-.site-c-header__logo-link,
-.site-c-header__logo-link:visited {
+.site-header__logo-link,
+.site-header__logo-link:visited {
   display: inline-block;
   color: #fff;
   text-decoration: none;
 }
 
-.site-c-header__logo-link:hover,
-.site-c-header__logo-link:focus {
+.site-header__logo-link:hover,
+.site-header__logo-link:focus {
   text-decoration: none;
 }
 
-.site-c-header__utility-links {
+.site-header__utility-links {
   align-items: center;
   display: flex;
 
@@ -81,7 +81,7 @@
   }
 }
 
-.site-c-header__nav {
+.site-header__nav {
   border-top: 1px solid white;
   display: none;
 
@@ -90,24 +90,24 @@
   }
 }
 
-.site-c-header__nav-list {
+.site-header__nav-list {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.site-c-header__nav-item {
+.site-header__nav-item {
   font-weight: bold;
   margin: 0;
 }
 
-.site-c-header__nav-item:first-child {
+.site-header__nav-item:first-child {
   margin-left: $units-neg-3
 }
 
-.site-c-header__nav-item__link,
-.site-c-header__nav-item__link:visited {
+.site-header__nav-item__link,
+.site-header__nav-item__link:visited {
   color: #fff;
   display: block;
   padding: $units-2 $units-3;
@@ -115,12 +115,12 @@
   transition: none;
 }
 
-.site-c-header__nav-item__link:hover,
-.site-c-header__nav-item__link:focus {
+.site-header__nav-item__link:hover,
+.site-header__nav-item__link:focus {
   color: $color-gold;
   text-decoration: none;
 }
 
-.site-c-header__nav-item__link.current {
+.site-header__nav-item__link.current {
   border-bottom: 3px solid $color-gold;
 }

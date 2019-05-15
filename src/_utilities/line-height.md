@@ -9,7 +9,7 @@ title: Line height
 Change the line height of text. Measure classes include [responsive prefixes](#responsive-prefixes).
 </div>
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=2
@@ -19,10 +19,10 @@ Change the line height of text. Measure classes include [responsive prefixes](#r
   %}
   <div class="vads-l-row">
     {% for item in site.data.line-height.line_heights %}
-      <div class="site-c-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+      <div class="site-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
         <div class="vads-u-display--flex vads-u-justify-content--space-between">
           <code class="code">.vads-u-line-height--{{ item.name }}</code>
-          <span class="site-c-utility-value">{{ item.value }}</span>
+          <span class="site-utility-value">{{ item.value }}</span>
         </div>
 
         <div class="vads-u-display--flex vads-u-align-items--center vads-u-border-top--1px vads-u-border-color--gray-lightest vads-u-margin-top--3">

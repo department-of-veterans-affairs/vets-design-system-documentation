@@ -3,7 +3,7 @@ var has_anchor_class = "has-anchor";
 
 for (var i = 0; i < anchor.length; i++) {
   var anchor_link = anchor[i].getAttribute('id');
-  var el_str = '<a class="site-c-heading-anchor" href="#'+ anchor_link +'" aria-hidden="true"><i class="fas fa-link"></i></a>';
+  var el_str = '<a class="site-heading-anchor" href="#'+ anchor_link +'" aria-hidden="true"><i class="fas fa-link"></i></a>';
   var temp = document.createElement('div');
   temp.innerHTML = el_str;
   var htmlObject = temp.firstChild;

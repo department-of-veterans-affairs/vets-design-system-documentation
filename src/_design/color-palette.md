@@ -5,7 +5,7 @@ title: Color palette
 
 # Color palette
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   <h4 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4">Base colors</h4>
   <div class="vads-l-row">
     {% for item in site.data.colors.primary %}

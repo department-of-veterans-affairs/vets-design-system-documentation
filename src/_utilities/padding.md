@@ -18,7 +18,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 </div>
 
 ## Padding on all sides
-<div class="site-c-showcase">
+<div class="site-showcase">
 
   {%
     include _showcase-header.html
@@ -43,7 +43,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
   </div>
 
 ## Padding top and bottom
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -66,7 +66,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 </div>
 
 ## Padding top
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -89,7 +89,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 </div>
 
 ## Padding bottom
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -112,7 +112,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 </div>
 
 ## Padding right and left
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -135,7 +135,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 </div>
 
 ## Padding right
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -158,7 +158,7 @@ Change the spacing inside an item. Padding classes include [responsive prefixes]
 </div>
 
 ## Padding left
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3

@@ -25,7 +25,7 @@ Alerts keep users informed of important and sometimes time-sensitive changes.
 
 Used to provide helpful information to a user or something that warrants attention. Not used for negative consequences.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-informational.html %}
 </div>
 
@@ -37,7 +37,7 @@ Used to provide helpful information to a user or something that warrants attenti
 
 Used to warn a user, such as when there are negative consequences, but necessary when something has gone wrong.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-warning.html %}
 </div>
 
@@ -49,7 +49,7 @@ Used to warn a user, such as when there are negative consequences, but necessary
 
 Used to indicate success.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-success.html %}
 </div>
 
@@ -61,7 +61,7 @@ Used to indicate success.
 
 Used when there is a problem or something destructive is about to occur.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-error.html %}
 </div>
 
@@ -73,7 +73,7 @@ Used when there is a problem or something destructive is about to occur.
 
 Used to prompt user to sign in, create an account, or launch a tool to access certain information.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-continue.html %}
 </div>
 
@@ -85,7 +85,7 @@ Used to prompt user to sign in, create an account, or launch a tool to access ce
 
 Any style of alert box may be made to include expandable content.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-expandable.html %}
 </div>
 
@@ -97,7 +97,7 @@ Any style of alert box may be made to include expandable content.
 
 Any style of alert box can be made to be background color only. Background color only alerts are only to be used for immediate feedback, such as in single page applications or Ajax forms. They should not be used for static alert messaging.
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-background-color.html %}
 </div>
 
@@ -114,14 +114,14 @@ Any style of alert box can be made to be background color only. Background color
 Full-width alerts can only appear below the main navigation and are used only for emergency or very urgent communications.
 
 ### Warning
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-full-width.html %}
 </div>
 
 {% include snippet.html content='html/alert-full-width2.html' %}
 
 ### Informational
-<div class="site-c-showcase">
+<div class="site-showcase">
 {% include_relative html/alert-full-width2.html %}
 </div>
 

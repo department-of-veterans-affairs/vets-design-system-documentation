@@ -1,4 +1,4 @@
-.site-c-sidenav-list {
+.site-sidenav-list {
   list-style: none;
   padding: units(5);
   margin: 0;
@@ -8,25 +8,25 @@
   }
 }
 
-.site-c-sidenav-list__item {
+.site-sidenav-list__item {
   background-color: #ffffff;
   border: 1px solid $color-gray-lighter;
   margin: 0 0 -1px 0;
 }
 
-.site-c-sidenav-list__link,
-.site-c-sidenav-list__link:visited {
+.site-sidenav-list__link,
+.site-sidenav-list__link:visited {
   display: block;
   padding: $units-1 $units-2;
   text-decoration: none;
   color: $color-primary;
 }
 
-.site-c-sidenav-list__link:hover {
+.site-sidenav-list__link:hover {
   background-color: transparent;
 }
 
-.site-c-sidenav-list__item.current {
+.site-sidenav-list__item.current {
   background-color: #f9f9f9;
   font-weight: $font-bold;
   position: relative;
@@ -46,7 +46,7 @@
   }
 }
 
-.site-c-sidenav-list__sub {
+.site-sidenav-list__sub {
   display: none;
   list-style: none;
   margin-top: 0;
@@ -54,23 +54,23 @@
   padding: 0;
 }
 
-.site-c-sidenav-list__item.current .site-c-sidenav-list__sub {
+.site-sidenav-list__item.current .site-sidenav-list__sub {
   display: block;
 }
 
-.site-c-sidenav-list__sub-item {
+.site-sidenav-list__sub-item {
   border-top: 1px solid $color-gray-lighter;
   padding: 0;
   margin: 0;
 }
 
-.site-c-sidenav-list__sub__link {
+.site-sidenav-list__sub__link {
   display: block;
   text-decoration: none;
   font-weight: normal;
   padding: $units-1 $units-2;
 }
 
-.site-c-sidenav-list__sub__link:hover {
+.site-sidenav-list__sub__link:hover {
   background-color: transparent;
 }

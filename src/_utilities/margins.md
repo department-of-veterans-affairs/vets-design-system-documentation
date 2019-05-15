@@ -20,7 +20,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin on all sides
 
-<div class="site-c-showcase">
+<div class="site-showcase">
 
   {%
     include _showcase-header.html
@@ -45,7 +45,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 ## Margin top and bottom
 
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -68,7 +68,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 </div>
 
 ## Margin top
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -91,7 +91,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 
 
 ## Margin bottom
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
@@ -115,7 +115,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 </div>
 
 ## Margin right and left
-<div class="site-c-showcase">
+<div class="site-showcase">
 
   {%
     include _showcase-header.html
@@ -141,7 +141,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 </div>
 
 ## Margin right
-<div class="site-c-showcase">
+<div class="site-showcase">
 
   {%
     include _showcase-header.html
@@ -167,7 +167,7 @@ Change the spacing around an item. Margin classes include [responsive prefixes](
 </div>
 
 ## Margin left
-<div class="site-c-showcase">
+<div class="site-showcase">
   {%
     include _showcase-header.html
     heading_level=3
