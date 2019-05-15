@@ -68,7 +68,7 @@ my-projects-folder
 
   ```
   $ npm install
-  $ npm run start
+  $ npm run start 
   ```
 
   While `vets-design-system-documentation` is running and make further updates to `veteran-facing-services-tools`, you will need to run `$ npm run build` in that repo, then `$ npm run build` in `vets-design-system-documentation`.
