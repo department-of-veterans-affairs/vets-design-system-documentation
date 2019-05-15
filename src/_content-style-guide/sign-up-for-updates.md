@@ -28,5 +28,4 @@ This style guide is a living document and will change over time, based on user r
 
 
 
-__Suggestions or questions about the VA.gov content style guide?__ Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov)
-
+__Suggestions or questions about the VA.gov content style guide?__ Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov?subject=Content%20style%20guide). 
