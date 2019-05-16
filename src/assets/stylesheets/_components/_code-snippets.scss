@@ -1,5 +1,6 @@
 .site-code-snippet__button,
-.site-code-snippet__link {
+.site-code-snippet__link,
+.site-code-snippet__link:visited {
   background: white;
   background-image: none !important;
   border-right: 1px solid $color-gray-lightest;
