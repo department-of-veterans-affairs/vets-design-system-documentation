@@ -4,10 +4,6 @@ sub_section: accordions
 title: Accordions
 ---
 
-<div class="vads-u-background-color--gold vads-u-padding--2 vads-u-display--inline-block vads-u-width--auto vads-u-margin-bottom--5">
-  <p class="vads-u-margin--0  vads-u-measure--5"><strong>Accordions require javascript from U.S. Web Design System 1.4.2. to be installed on your project. See <a href="{{ site.baseurl }}/documentation/developers.html">developer documentation</a> for details. Alternatively, you can use the Formation React <a href="https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/">CollapsiblePanel</a>.</strong></p>
-</div>
-
 # Accordions
 
 <div class="va-introtext" markdown="1">
@@ -18,7 +14,7 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 {% include_relative html/accordions.html %}
 </div>
 
-{% include snippet.html content='html/accordions.html' %}
+{% include snippet.html content='html/accordions.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/' %}
 
 
 ## Accessibility
@@ -44,11 +40,3 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 * Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
 * Make sure interactive elements within the collapsible region are far enough from the headers that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)
-
-## React
-
-The `CollapsiblePanel` component renders the accordion. The interaction is slightly different from the default accordion behavior, where multiple panels within a set can be open at the same time.
-
-<div class="site-showcase">
-{% include_relative html/collapsible-panel.html %}
-</div>

@@ -1,9 +1,14 @@
 {% assign accordion_id = include.content | replace: "/", "" | replace: ".", "" %}
 
-<div class="usa-accordion-bordered">
+<div class="usa-accordion-bordered site-code-snippet">
 <div>
-<button class="usa-accordion-button" aria-controls="{{accordion_id}}"><span class="fas fa-code"></span> View code snippet</button>
-<div id="{{accordion_id}}" class="usa-accordion-content" markdown="1">
+<div class="site-code-snippet__button-group">
+<button class="usa-accordion-button site-code-snippet__button" aria-controls="{{accordion_id}}">Show HTML</button>
+{% if include.react_component %}
+<a href="{{ include.react_component }}" class="site-code-snippet__link external-link-icon-black" target="_blank"><span class="fab fa-react"></span> React version </a>
+{% endif %}
+</div>
+<div id="{{accordion_id}}" class="usa-accordion-content site-code-snippet__content" markdown="1">
 ```html
 {% if {{include.content}} contains "react/" %}{% include {{include.content}} %}{% else %}{% include_relative {{include.content}} %}{% endif %}
 ```
