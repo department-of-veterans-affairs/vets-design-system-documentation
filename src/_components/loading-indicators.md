@@ -10,4 +10,4 @@ title: Loading indicators
 {% include_relative html/loading-indicator.html %}
 </div>
 
-{% include snippet.html content='html/loading-indicator.html' %}
+{% include snippet.html content='html/loading-indicator.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/loadingindicator/' %}
