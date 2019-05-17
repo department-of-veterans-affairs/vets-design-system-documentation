@@ -32,7 +32,7 @@
 
 .site-code-snippet__content[aria-hidden="true"] {
   display: block !important;
-  max-height: units(10);
+  max-height: 96px;
   overflow: hidden;
   position: relative;
 
@@ -47,4 +47,10 @@
     height: units(10);
     pointer-events: none;
   }
+}
+
+.site-showcase + .site-code-snippet,
+.sg-responsive-preview + .site-code-snippet {
+  margin-top: units(-1);
+  border-top: 1px solid $color-gray-lighter;
 }

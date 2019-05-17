@@ -3,9 +3,9 @@
 <div class="usa-accordion-bordered site-code-snippet">
 <div>
 <div class="site-code-snippet__button-group">
-<button class="usa-accordion-button site-code-snippet__button" aria-controls="{{accordion_id}}">Show HTML</button>
+<button class="usa-accordion-button site-code-snippet__button" aria-controls="{{accordion_id}}"><span class="fas fa-plus vads-u-margin-right--0p5"></span> Show HTML</button>
 {% if include.react_component %}
-<a href="{{ include.react_component }}" class="site-code-snippet__link external-link-icon-black" target="_blank"><span class="fab fa-react"></span> React version </a>
+<a href="{{ include.react_component }}" class="site-code-snippet__link external-link-icon-black" target="_blank"><span class="fab fa-react vads-u-margin-right--0p5"></span> React version </a>
 {% endif %}
 </div>
 <div id="{{accordion_id}}" class="usa-accordion-content site-code-snippet__content" markdown="1">

@@ -1,7 +1,7 @@
 .iframe__preview {
-  border: 1px solid $color-gray-light;
+  border: 1px solid $color-gray-lighter;
   text-align: center;
-  margin-bottom: $units-0_5 * 4;
+  margin-bottom: units(1);
   overflow: hidden;
 }
 

@@ -7,7 +7,7 @@ if (showSnippetButton.length) {
 for (var i = 0; i < showSnippetButton.length; i++) {
   showSnippetButton[i].addEventListener("click", function(e) {
     if (this.innerHTML == original_text) {
-      this.innerHTML = "Hide HTML";
+      this.innerHTML = '<span class="fas fa-minus vads-u-margin-right--0p5"></span> Hide HTML';
     }
     else {
       this.innerHTML = original_text;
