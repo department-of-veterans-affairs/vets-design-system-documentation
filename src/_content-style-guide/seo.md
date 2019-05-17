@@ -24,7 +24,8 @@ At the foundation of all of these recommendations is to apply them in a way that
   - Example: Do people really want to know all the awards your office won for customer satisfaction or do they want to know how they can find out the status of their application?
 - Use the primary user search phrase or keyword in the H1 (page title), H2 (section headers), and intro text.
 - Don't have more than one H1 on a page. Use the H1 only for the page title.
-- Integrate the primary and secondary keywords throughout the body copy, and in H2s, H3s, and bolded text. But never "stuff keywords" for its own sake. That practice is contrary to creating helpful relevant content, and it's penalized by search engines.
+- Integrate the primary or secondary keywords throughout the body copy, H2s, and H3s. But never "stuff keywords" for its own sake. That practice is contrary to creating helpful relevant content.
+- [Use H2s and H3s consistently](https://yoast.com/how-to-use-headings-on-your-site/) to structure content hierarchy as sections and subsections. It helps organize content into scannable chunks, and also helps SEO (for example, so H3s can get easily featured in list snippets in searches). 
 - Write content and navigation elements that can be easily scanned and understood by the user. Include the primary keyword in the URL if possible.
 - Avoid "thin" or "lite" pages—pages that just don't have enough content. According to [Moz (On-page SEO)](https://moz.com/blog/beginners-guide-to-seo-chapter-4), "Google is clear that you should have a comprehensive page on a topic instead of multiple, weaker pages for each variation of a keyword."
 -  Try to include personalized, conversational questions and answers that answer the user's actual search query. This can help increase content relevancy in personalized searches.
