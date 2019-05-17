@@ -10,11 +10,21 @@ title: Accordions
 Accordions are a list of headers that can be clicked to hide or reveal additional content.
 </div>
 
+## Borderless
+
 <div class="site-showcase">
 {% include_relative html/accordions.html %}
 </div>
 
 {% include snippet.html content='html/accordions.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/' %}
+
+## Bordered
+
+<div class="site-showcase">
+{% include_relative html/accordions-bordered.html %}
+</div>
+
+{% include snippet.html content='html/accordions-bordered.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/' %}
 
 
 ## Accessibility
