@@ -51,7 +51,7 @@ Title tags are HTML elements that are displayed in browsers and on search engine
 
 - Format: H1 Page Title \| Veterans Affairs
 
-- Keep title tags to 60 characters maximum (with spaces) to display properly. If the H1 is too long, truncate to fit but always end with "\| Veterans Affairs"
+- Keep title tags to 70 characters maximum (with spaces) to display properly. If the H1 is too long, truncate to fit but always end with "\| Veterans Affairs"
 -  Use initial caps for title tags
 
 
@@ -69,7 +69,7 @@ For VA medical centers (VAMC), we format the title tag a little differently.  Be
   - VA Pittsburgh Health Care \| Our Services \| Veterans Affairs
   - VA Pittsburgh Health Care \| Billing And Insurance
 - Use the plain language VAMC short name for title tags rather than the long facility locator API name
-- On VA medical centers, omit the "\| Veterans Affairs" if the title tag goes over 60 characters
+- On VA medical centers, omit the "\| Veterans Affairs" if the title tag goes over 70 characters
 
 
 
