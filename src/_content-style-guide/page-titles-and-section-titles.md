@@ -29,7 +29,7 @@ Try to keep page titles to 52 characters maximum, with spaces. Use the primary S
 
 ## Section titles
 
-Section and subsection titles (also sometimes called headers and subheads) help organize the page into scannable, user-friedly chunks. They should provide clear guide posts and bring people deeper into the content. 
+Section and subsection titles (also sometimes called headers and subheads) help organize the page into scannable, user-friendly chunks. They should provide clear guideposts and bring people deeper into the content. 
 
 - Structure section titles with H2s and subsections with H3s, and so on. This provides a natural hierarchy for your content, and helps SEO.
 
@@ -57,7 +57,7 @@ For more information about structuring sections using H2s and H3s, see [How to u
 
 - **H2** What happens after you apply
 
-> - H3 How long it takes to find out from colleges 
+> - H3 How long it takes to hear back from colleges 
 
 - **H2** More information about applying for college 
 
