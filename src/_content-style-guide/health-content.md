@@ -175,7 +175,7 @@ Avoid lifting heavy objects for the first 2 weeks after surgery.
 </div>
 </div>
 
-### 4. Provide brief reassurance
+### 4. Provide brief reassurance of medical expertise
 While we don't want to be condescending, some situations may call for more sensitivity. Provide _brief_ reassurance that the information comes from experts to help readers feel more confident—while keeping the main focus on the reader’s needs.
 
 <div class="do-dont">
@@ -192,7 +192,7 @@ Our National Center for PTSD is the world's leader in PTSD research, education, 
 </div>
 
 
-### 5. Give hope 
+### 5. Destigmatize sensitive conditions and build hope
 Especially for sensitive issues, provide reassurance that the reader is not alone and that there's hope for their condition.
 
 This may come in the form of:
