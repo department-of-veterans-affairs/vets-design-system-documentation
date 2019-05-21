@@ -11,6 +11,27 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### May 21, 2019
+
+**Site updates**
+
+- Removed examples of alert boxes with expandable content. 
+
+
+---
+
+### May 20, 2019
+
+**6.3.5**
+
+- Patch to Fix a bugg affecting accordions
+
+**Site updates**
+
+- Redesigned code snippet previews and improved links to the react versions for some components.
+
+---
+
 ### May 13, 2019
 
 **6.3.3**
