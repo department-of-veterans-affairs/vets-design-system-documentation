@@ -8,7 +8,6 @@ anchors:
   - anchor: Success alert
   - anchor: Error alert
   - anchor: Continue status
-  - anchor: Alert boxes with expandable content
   - anchor: Background color only
   - anchor: Full-width alerts
 ---
@@ -78,18 +77,6 @@ Used to prompt user to sign in, create an account, or launch a tool to access ce
 </div>
 
 {% include snippet.html content='html/alert-continue.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
-
----
-
-## Alert boxes with expandable content
-
-Any style of alert box may be made to include expandable content.
-
-<div class="site-showcase">
-{% include_relative html/alert-expandable.html %}
-</div>
-
-{% include snippet.html content='html/alert-expandable.html' %}
 
 ---
 
