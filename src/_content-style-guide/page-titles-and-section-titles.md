@@ -35,7 +35,7 @@ Section and subsection titles (also sometimes called headers and subheads) help 
 
 - Try to keep section and subsection titles to 70 characters maximum, with spaces. 
 
-We allow a little more character count for sections and subsections than page titles. But in general, sections become hard to scan when they're too long.  Eliminate unnecessary details or nuance in section and subsection titles, and address them with more depth in the paragraph copy.
+We allow a little more character count for sections and subsections than page titles. But in general, sections become hard to scan when they're too long. Eliminate unnecessary details or nuance in section and subsection titles, and address them with more depth in the paragraph copy.
 
 For more information about structuring sections using H2s and H3s, see [How to use headings](https://yoast.com/how-to-use-headings-on-your-site/) on Yoast.com.
 
