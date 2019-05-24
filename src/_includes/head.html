@@ -6,7 +6,9 @@
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }} {% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-
+  {% if page.draft %}
+  <meta name=”robots” content=”noindex, follow”>
+  {% endif %}
 
   <!-- Icons -->
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
