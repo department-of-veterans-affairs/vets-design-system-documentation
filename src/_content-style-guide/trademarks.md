@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Trademarks
-draft: true
 ---
 
 # Trademarks
