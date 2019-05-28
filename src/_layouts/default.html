@@ -50,6 +50,11 @@
       <div class="site-content__content">
         <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
           {% unless page.index %}
+          {% if page.draft %}
+          <div class="vads-u-margin-bottom--2 vads-u-padding--2 vads-u-background-color--gold vads-u-display--inline-block vads-u-font-weight--bold">
+            This page is a draft. <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_{{page.url | replace_first:'/',''}}.md">Edit this page in GitHub</a>.
+          </div>
+          {% endif %}
           <div>
             <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
           </div>
