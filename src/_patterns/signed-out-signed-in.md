@@ -1,49 +1,59 @@
 ---
 layout: default
 title: Signed in vs. signed out
+draft: true
 anchors:
   - anchor: Site header
-  - anchor: Contextual CTAs (calls to action)
+  - anchor: Contextual calls to action
 ---
 
 # Signed in vs. signed out
-On VA.gov, there are a few differences between the signed in and signed out states.
+On VA.gov, there are a few differences between the signed in and signed out states:
+* [Site header]()
+* [Contextual CTAs]()
 
+**NOTE**: The above links are meant to be navigational.
 
 ## Site header
 The site header appears globally at the top of every page. Its appearance is responsive to the user’s browser size.
 ### Large site header
-#### Signed out
-![image](https://user-images.githubusercontent.com/2838493/58288795-33cbff00-7d7a-11e9-8cc9-3d956030ac8c.png)
-When users are signed out, the site header includes:
-* VA logo
-* Search
-* Contact Us
-* Sign In button
-* Top navigational items
-   * VA Benefits and Health Care
-   * About VA
-   * Find a Location
+When users sign in, the Sign In button is replaced by a link displays the user's first name. My VA and My Health are also shown as top navigation elements.
 
-#### Signed in
+**Signed out**
+![image](https://user-images.githubusercontent.com/2838493/58288795-33cbff00-7d7a-11e9-8cc9-3d956030ac8c.png)
+**Signed in**
 ![image](https://user-images.githubusercontent.com/2838493/58288819-4b0aec80-7d7a-11e9-9292-f932a62f545b.png)
-When users are signed in, the site header includes:
-* VA logo
-* Search
-* Contact Us
-* Sign In button
-* Top navigational items
-   * VA Benefits and Health Care
-   * About VA
-   *  Find a Location
-   *  My VA
-   *  My Health
 
 ### Small site header
-![image](https://user-images.githubusercontent.com/2838493/58288838-59590880-7d7a-11e9-85d5-e5d24029f505.png)
+When users are signed into the site on a smaller device, the Sign In link is replaced with the user's first name.
+
+**NOTE**: Not sure this is the best implementation of the Sign In button from an accessibility standpoint. Would be good to get @1Copenut 's take on this.
+
+**Signed out**
+
+![image](https://user-images.githubusercontent.com/2838493/58352243-9d0e4980-7e30-11e9-8ba1-96e583d69734.png)
+
+**Signed in**
+
+![image](https://user-images.githubusercontent.com/2838493/58352733-15c1d580-7e32-11e9-996c-8e8163cf287c.png)
+
+### Small site header - menu
+
+**Menu expanded - signed out**
+
+When users are signed in, My VA and My Health are shown as options.
+
+**Signed out**
+
+![image](https://user-images.githubusercontent.com/2838493/58352289-c333e980-7e30-11e9-8d33-57a790147f99.png)
+
+**Signed in**
+
+![image](https://user-images.githubusercontent.com/2838493/58352812-57528080-7e32-11e9-9f12-f4dbece73049.png)
+
 
 ---
-## Contextual CTAs (calls to action)
+## Contextual calls to action
 A contextual CTA is used when an action is required or recommended before a user starts a process (like applying for a VA benefit.) Contextual CTAs are placed within a larger chunk of content on a page. Placement depends on its importance compared to other content on the page. Often it is placed immediately after introduction text on a page.
 
 ### When is a contextual CTA appropriate?
