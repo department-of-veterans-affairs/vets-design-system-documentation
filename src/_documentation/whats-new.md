@@ -11,6 +11,15 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### May 30, 2019
+
+**Content style guide update**
+
+- New topic added for VA [trademarks](https://design.va.gov/content-style-guide/trademarks).
+
+
+---
+
 ### May 21, 2019
 
 **Site updates**
