@@ -4,17 +4,18 @@ title: Capitalization
 ---
 
 # Capitalization
-__Use sentence case capitalization__
+
+## Use sentence case capitalization
 
 We use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
 
-__Exceptions where we use title capitalization__
+### Exceptions where we use title capitalization
 
 - Proper nouns (example: branded terms like "VA.gov," official program names, state names, names of federal agencies, days of the week and months, compositions such as titles of books, etc.)
 - The word “Veterans”
 - Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
 
-__Exceptions where we use initial capitalization__
+### Exceptions where we use initial capitalization
 - SEO title tags (example: VA Prescription Refill And Tracking \| Veterans Affairs). See [Writing for SEO](https://design.va.gov/content-style-guide/seo) for more information.
 
 <div class="do-dont">
