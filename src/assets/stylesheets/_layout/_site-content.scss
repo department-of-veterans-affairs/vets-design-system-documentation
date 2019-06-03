@@ -12,6 +12,11 @@
 
   @include media($nav-width) {
     display: block;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow-y: auto;
   }
 }
 
