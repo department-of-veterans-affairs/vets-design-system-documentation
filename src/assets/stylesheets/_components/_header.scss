@@ -81,6 +81,23 @@
   }
 }
 
+.site-top-nav-wrapper {
+  display: none;
+  background-color: $color-primary-darkest;
+
+  @include media($nav-width) {
+    display: block;
+  }
+
+  &.sticky {
+    @include media($nav-width) {
+      position: sticky;
+      top: -1px;
+      z-index: 800;
+    }
+  }
+}
+
 .site-header__nav {
   border-top: 1px solid white;
   display: none;

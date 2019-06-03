@@ -61,34 +61,7 @@
       <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
       <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
     </div>
-    <nav class="site-header__nav">
-      <ul class="site-header__nav-list">
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/documentation/" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Documentation</a>
-        </li>
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/content-style-guide/" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Content</a>
-        </li>
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/design/" %} current {% endif %}" href="{{ site.baseurl }}/design">Design</a>
-        </li>
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/components/" %} current {% endif %}" href="{{ site.baseurl }}/components">Components</a>
-        </li>
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/utilities/" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Utilities</a>
-        </li>
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/patterns/" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Patterns</a>
-        </li>
-        <li class="site-header__nav-item">
-          <a class="site-header__nav-item__link {% if page.url contains "/layout/" %} current {% endif %}" href="{{ site.baseurl }}/layout">Layout</a>
-        </li>
-      </ul>
-    </nav>
-
   </div>
-
 </header>
 
 <div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
@@ -98,3 +71,4 @@
   </form>
   <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
 </div>
+
