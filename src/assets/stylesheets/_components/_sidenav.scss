@@ -3,6 +3,14 @@
   padding: units(5);
   margin: 0;
 
+  @include media($medium-screen) {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
   @include media($large-screen) {
     padding-left: units(10);
   }
@@ -12,6 +20,12 @@
   background-color: #ffffff;
   border: 1px solid $color-gray-lighter;
   margin: 0 0 -1px 0;
+}
+
+.site-sidenav-list__item:last-child {
+  @include media($medium-screen) {
+    margin-bottom: units(8);
+  }
 }
 
 .site-sidenav-list__link,
