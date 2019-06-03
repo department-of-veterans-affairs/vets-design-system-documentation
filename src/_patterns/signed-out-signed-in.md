@@ -12,8 +12,6 @@ On VA.gov, there are a few differences between the signed in and signed out stat
 * [Site header]()
 * [Contextual CTAs]()
 
-**NOTE**: The above links are meant to be navigational.
-
 ## Site header
 The site header appears globally at the top of every page. Its appearance is responsive to the user’s browser size.
 ### Large site header
