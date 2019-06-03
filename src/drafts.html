@@ -1,0 +1,107 @@
+---
+title: Drafts
+layout: default
+draft: true
+---
+
+<h1>Drafts</h1>
+
+This is a list of all the draft pages on design.va.gov
+
+<h2>Documentation</h2>
+
+<ul>
+  {% for item in site.documentation %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Content style guide</h2>
+
+<ul>
+  {% for item in site.content-style-guide %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Design</h2>
+
+<ul>
+  {% for item in site.design %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Components</h2>
+
+<ul>
+  {% for item in site.components %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Utilities</h2>
+
+<ul>
+  {% for item in site.utilities %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Patterns</h2>
+
+<ul>
+  {% for item in site.patterns %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Layout</h2>
+
+<ul>
+  {% for item in site.layout %}
+     {% if item.draft %}
+     <li>
+       <a href="{{ item.url }}">
+       {{ item.title }}
+       </a>
+     </li>
+     {% endif %}
+  {% endfor %}
+</ul>
