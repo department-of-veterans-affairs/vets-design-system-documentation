@@ -13,8 +13,8 @@ The additional info pattern is a context specific interaction where we provide u
 
 ## Examples
 
-![image](https://user-images.githubusercontent.com/12564977/58118228-6afdad00-7bce-11e9-843f-6e3782b46d84.png)
-![image](https://user-images.githubusercontent.com/12564977/58118237-6df89d80-7bce-11e9-87af-d7736a4a6131.png)
+![image](/images/additional-info-closed.png)
+![image](/images/additional-info-open.png)
 
 ## Where to place Additional info
 Whenever there is a chance to enhance the understanding a user has about a particular choice, the additional info interaction can be used! —for instance:
