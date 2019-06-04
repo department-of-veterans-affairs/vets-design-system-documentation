@@ -40,10 +40,9 @@ To add content, you will need to look into `/src` directory. This will be the so
 - [Design patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_patterns)
 - [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_utilities)
 
-[Read more in the wiki](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki/Adding-content) about how to add new pages to the design system documentation site, how to provide additional search keywords, etc.
 
-**Want add more to your content presentation than simple text?**
-Use these [html snippets](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki/Writing-snippets) in your markdown.
+### How to add new pages, improve presetnation, etc.
+[Read the wiki](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki) to learn how to add new pages to design.va.gov, improve local search, add images, etc.
 
 
 ## Testing updates to the Formation codebase on this site
@@ -68,7 +67,7 @@ my-projects-folder
 
   ```
   $ npm install
-  $ npm run start 
+  $ npm run start
   ```
 
   While `vets-design-system-documentation` is running and make further updates to `veteran-facing-services-tools`, you will need to run `$ npm run build` in that repo, then `$ npm run build` in `vets-design-system-documentation`.
