@@ -11,6 +11,20 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### June 6
+
+**6.5.1**
+- Patches line-height mismatch for paragraphs inside of a  `va-introtext` div.
+
+**6.5.0**
+- Update [loading indicator component]({{ site.baseurl }}/components/loading-indicators): Uses CSS for animation instead of animated SVG, which was unsupported in IE.
+
+**Site updates**
+- Removed USWDS `npm` notes from JavaScript documentation since it is no longer needed as a dependency
+- Fixed bug were anchors were hidden behind sticky navigation
+
+---
+
 ### May 30, 2019
 
 **Content style guide update**
@@ -24,7 +38,7 @@ The latest news and updates on Formation and the content style guide
 
 **Site updates**
 
-- Removed examples of alert boxes with expandable content. 
+- Removed examples of alert boxes with expandable content.
 
 
 **Content style guide updates**
@@ -34,13 +48,13 @@ Summary of new guidance or change in guidance (either from the vets.gov or OPIA 
 - [Sentence casing](https://design.va.gov/content-style-guide/capitalization), except for “Veterans,” global header, global footer, global top nav labels, and proper nouns.
 - [Service member](https://design.va.gov/content-style-guide/word-list#s) spelling change, per latest OPIA and DOD style guides.
 - [Times and time zones](https://design.va.gov/content-style-guide/dates-and-numbers): Omit daylight savings/standard reference; use ET, MT, CT, PT without parentheses; and other style updates.
-- [Phone numbers and vanity numbers](https://design.va.gov/content-style-guide/dates-and-numbers) style change. 
-- [Use "select" instead of "press"](https://design.va.gov/content-style-guide/dates-and-numbers) for phone menu options. It's more 508-friendly. 
+- [Phone numbers and vanity numbers](https://design.va.gov/content-style-guide/dates-and-numbers) style change.
+- [Use "select" instead of "press"](https://design.va.gov/content-style-guide/dates-and-numbers) for phone menu options. It's more 508-friendly.
 - Numbers: [When to use 1, when to spell out "one."](https://design.va.gov/content-style-guide/numbers)
 - [Use we, us, you](https://design.va.gov/content-style-guide/we-us-you) when talking with Veterans.
 - [Use they and their](https://design.va.gov/content-style-guide/they-their) as gender-neutral pronouns.
 - Changes to [how we display links](https://design.va.gov/content-style-guide/links) and use embedded links.
-- Guidance and tips for [writing health content](https://design.va.gov/content-style-guide/health-content). 
+- Guidance and tips for [writing health content](https://design.va.gov/content-style-guide/health-content).
 - Writing for SEO: format and character count updates for [title tags and meta descriptions](https://design.va.gov/content-style-guide/seo).
 - [Bulleted lists](https://design.va.gov/content-style-guide/bulleted-lists): Clarification on punctuating; on when multiple lists on the same page.
 - Clarification on [contractions](https://design.va.gov/content-style-guide/punctuation#contractions). (Contractions are conversational. We use them.)
