@@ -55,3 +55,14 @@ body {
 iframe {
   border: 0;
 }
+
+:target {
+  @include media($nav-width) {
+    padding-top: 100px;
+
+    .site-heading-anchor {
+      bottom: .3em;
+      top: auto;
+    }
+  }
+}

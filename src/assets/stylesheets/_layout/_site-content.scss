@@ -12,6 +12,7 @@
 
   @include media($nav-width) {
     display: block;
+    position: -webkit-sticky;
     position: sticky;
     top: 6rem;
     bottom: 0;
