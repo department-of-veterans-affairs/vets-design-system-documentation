@@ -128,6 +128,11 @@
     font-family: $font-sans;
   }
 
+  > h2 {
+    border-bottom: 3px solid;
+    padding-bottom: units(.5);
+  }
+
   > p,
   > ol,
   > ul {
