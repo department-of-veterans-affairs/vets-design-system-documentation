@@ -39,7 +39,7 @@
       </nav>
     </div>
 
-    <div class="site-content">
+    <div class="site-content {% unless page.homepage %}vads-u-margin-bottom--9{% endunless %}">
       {% if page.homepage %}
       <main id="main-content" class="vads-u-width--full">
         {{ content }}
