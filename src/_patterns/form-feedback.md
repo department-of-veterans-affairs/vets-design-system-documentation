@@ -11,8 +11,6 @@ anchors:
 Error messages let users know when they have made a mistake on a form field.
 </div>
 
----
-
 ## Error messages
 
 <div class="va-introtext" markdown="1">

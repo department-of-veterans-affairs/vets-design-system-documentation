@@ -8,7 +8,6 @@ anchors:
 
 # Content presentation
 
----
 
 ## Information callouts
 
@@ -20,7 +19,6 @@ Information callouts are light blue boxes that call attention to important infor
 
 {% include snippet.html content='html/information-callout.html' %}
 
----
 
 ## Expandable content
 
