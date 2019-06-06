@@ -69,16 +69,6 @@ The example above is what is used on VA.gov, but you can customize this for your
 
 If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can either move the necessary files with gulp, or import the files from your project scss. This depends greatly only your project structure. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
 
-#### Javascript
-
-In order to use some interactive components, such as [accordions](../components/accordions), you will need to grab `uswds.min.js` or `uswds.js` from `node_modules/uswds/dist/js` and link to it in your project.
-
-You can the import U.S. Web Design System 1.4.2 using `npm`.
-
-```bash
-$ npm install uswds@1.4.2
-```
-
 ## CSS
 
 When naming components, be sure to use Formation’s [naming conventions](naming).
