@@ -14,7 +14,6 @@ anchors:
 Patterns used in form design on VA.gov.
 </div>
 
----
 
 ## All or none of the above
 
@@ -46,8 +45,6 @@ Before choosing a select box, follow the [guidance]({{site.baseurl}}/components/
 In the case of radio options, you may include options for “all of these” or “none of these” after all other options are listed.
 
 When using an “all of these” option, ensure that under no circumstance would a partial set of options apply to the user.
-
----
 
 ## Error messages
 
@@ -155,7 +152,6 @@ Unlike other form elements, error messages for checkboxes appear below.
 The guidance for file inputs is the same as the text inputs.
 
 
----
 
 ## Templates
 

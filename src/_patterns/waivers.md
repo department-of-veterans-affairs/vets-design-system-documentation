@@ -4,6 +4,6 @@ title: Waivers
 draft: true
 ---
 
-# Waivers 
+# Waivers
 
-This is placeholder for waivers. 
+This is placeholder for waivers.

@@ -22,8 +22,6 @@ The four epics typically found within each benefit application are:
 
 Structuring benefit applications in this way has, through rigorous usability testing, demonstrably improved how to educate users about the benefits and how to set expectations about the application process. For the Department of Veterans Affairs, this means that applications are more accurate and complete, so the Department to better serves its constituents.
 
----
-
 ## Eligibility
 
 For Veterans, determining whether or not they (or their beneficiaries) are eligible for a specific benefit is a difficult process. The policies governing those benefits can be complex, fraught with dependencies and variations that can be overwhelming.
@@ -127,8 +125,6 @@ The following design system components are used to form the eligibility pattern:
 * [Accordions](https://design.va.gov/components/accordions) are used to provide frequently asked questions about benefits eligibility that may not necessarily be the primary reason a user has come to the page.
 * [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question. Note: this should only be used when the benefit   
 
----
-
 ## How to apply
 **_draft_**
 This is a high-level description of the “How to Apply” page for benefit applications. The content recommended for the “How to Apply” page may overlap with the “Eligibility” or “Apply now” sections.
@@ -176,8 +172,6 @@ Include the “More information section” if there is helpful supporting inform
 * [How to file a VA disability claim](https://www.va.gov/disability/how-to-file-claim/)
 * [How to apply for the GI Bill and other education benefits](https://www.va.gov/education/how-to-apply/)
 * [How to apply for a VA pension as a Veteran](https://www.va.gov/pension/how-to-apply/)
-
----
 
 ## Application introduction apply page
 
@@ -256,7 +250,6 @@ https://www.va.gov/education/apply-for-education-benefits/application/1990/intro
 https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction
 https://www.va.gov/pension/application/527EZ/introduction
 
----
 
 ## After You Apply
 This is a high-level description of the “After You Apply” page for benefit applications.

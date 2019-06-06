@@ -12,7 +12,6 @@ anchors:
 Common form structures and designs used on VA.gov
 </div>
 
----
 
 ## Address form
 
@@ -22,7 +21,6 @@ Common form structures and designs used on VA.gov
 
 {% include snippet.html content='html/address-form.html' %}
 
----
 
 ## Name form
 
