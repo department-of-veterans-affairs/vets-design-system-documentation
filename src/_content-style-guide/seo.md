@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Writing for SEO
+slug: writing-for-seo
 anchors:
   - anchor: SEO best practices for writing copy
   - anchor: Meta properties
