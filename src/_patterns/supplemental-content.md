@@ -16,12 +16,12 @@ In cases where a person’s input can have large or complicated impact on outcom
 
 _The following example depicts how to use contextual help to describe a medical condition if the user is unsure what to call it._
 
-<div class="vads-l-row vads-u-margin-x--neg2">
-  <div class="vads-l-col--6 vads-u-padding-x--2">
+<div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
+  <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <strong>Closed (default)</strong>
     <img src="/images/additional-info-closed.png">
   </div>
-  <div class="vads-l-col--6 vads-u-padding-x--2">
+  <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
     <strong>Open</strong>
     <img src="/images/additional-info-open.png">
   </div>
