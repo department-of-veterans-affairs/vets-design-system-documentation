@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sign up for updates
+slug: sign-up-for-updates
 ---
 
 # Sign up for updates
