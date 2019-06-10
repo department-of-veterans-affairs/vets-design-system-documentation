@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Supplemental content
-draft: true
 anchors:
   - anchor: Contextual help
 ---

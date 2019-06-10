@@ -11,6 +11,13 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### June 10
+
+**Site updates**
+- New pattern documentation for handling supplemental content.
+
+---
+
 ### June 6
 
 **6.5.1**
