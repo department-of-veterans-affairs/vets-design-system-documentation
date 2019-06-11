@@ -15,7 +15,7 @@ draft: true
 
 ## Examples of wizards used correctly on VA.gov
 
-[Input animated gif from Ryan here]
+![gif demonstrating a form wizard for VA Education]({{site.baseurl}}/images/Wizard-Education-normal.gif)
 
 
 - **Education Wizard:** [Find your benefits education form](<https://www.va.gov/education/how-to-apply/>). _You may need to scroll down to find the wizard._ This wizard is used to help guide users to the correct education benefits form.
@@ -37,7 +37,7 @@ The wizard should live *on the page* on both the **Eligibility** and **How to Ap
 - **Questions**: Questions appear 1 at a time under the button, using the expanding blue vertical left bar (see Information Alert) as new questions are added. Questions are conditional, based on previous answers. Structure the logic tree for wizard questions to get users to gather information from users in as few questions as possible, while still directing them to the best next step for their circumstances.
 
 - **Warning alerts in the wizard.** Show a [warning alert](<https://design.va.gov/components/alertboxes#warning-alert>) if a user answers a question in a way that is uncommon, or if they need to first do some other process that cannot be accessed via the wizard. For example, in the Education Form wizard, Show the Warning Alert immediately after the question, and provide concrete next steps and directions.  
-- 	ADD IN RYAN's GIF
+![gif demonstrating a form wizard for VA Education featuring a users that answers a specific question that triggers a warning]({{site.baseurl}}/images/Wizard-Education-warning.gif)
 
 - **Error alerts in the wizard**. Show an [error alert](<https://design.va.gov/components/alertboxes#error-alert>) if a user answers a question in a way that would render them ineligible to complete any of the forms serviced by the wizard. Instead, they may need to stop what they are doing and follow a different process on a different page or website. For example, in the Disability Claim wizard (shown below), a user who is still active duty needs to complete a completely different form on EBenefits, and completing an application on VA.gov would be a waste of time. Show the Error Alert immediately after the question, and provide concrete next steps and directions.
 
@@ -47,7 +47,7 @@ The wizard should live *on the page* on both the **Eligibility** and **How to Ap
 
 Note: For both alert cases, a user can still change their answer in the wizard to access and complete the form. We do not block users from accessing a form completely based on their answers to the wizard questions because there is always an edge case. Theoretically, we want to make the BEST thing they can do the EASIEST thing to do, based on the information the user has provided. So, if we hypothesize that they are ineligible based on how they answered the wizard questions, we should be making the easiest next step to do the next best thing that they can do.
 
-ADD RYAN GIF here
+![gif demonstrating a form wizard for VA Disability]({{site.baseurl}}/images/Wizard-Disability.gif)
 
 ## Research/Accessibility rationale
 - We show questions one at a time for accessibility/universal design reasons: we try not to show irrelevant content to users.
