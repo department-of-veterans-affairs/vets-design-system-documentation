@@ -13,7 +13,7 @@ draft: true
 - Wizards use conditional logic, whereby the answer to the first question determines the next question to be asked, or answer options that should be made available.
 - Wizards do not submit or store data.
 
-## Examples of wizards used correctly on VA.gov
+## Examples of wizards on VA.gov
 
 ![gif demonstrating a form wizard for VA Education]({{site.baseurl}}/images/Wizard-Education-normal.gif)
 
