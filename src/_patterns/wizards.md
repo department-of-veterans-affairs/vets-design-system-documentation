@@ -6,7 +6,7 @@ draft: true
 
 # Wizards
 
-<p class="va-introtext">Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. VA.gov uses a wizard pattern to guide users down an optimal pathway for their circumstances. </p>
+<p class="va-introtext">Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. <strong>VA.gov uses a wizard pattern to guide users down an optimal pathway for their circumstances.</strong> </p>
 
 - The VA.gov wizard pattern consists of a series of simple questions, written in plain language, used to glean a user's specific eligibility status, background, or specific needs/goals.
 - Wizards serve up one question at a time.
@@ -34,14 +34,14 @@ The wizard should live *on the page* on both the **Eligibility** and **How to Ap
 
 - **Green "Start" Button**: A wizard is launched through a primary button (green), with a clear label about what the wizard will help the user do, for example "Find your education benefits form".  A wizard may also END with a call-to-action, for example, "Apply now"; this button kicks off the next step, given the details that the user provided in the wizard. To distinguish between the call-to-action that starts the wizard and the call-to-action that takes the user to their next step and to set the hierarchy correctly when the sequence is complete, the first button changes from green to blue once clicked, and the final button becomes the green, primary call-to-action.
 
-- **Questions**: Questions appear 1 at a time under the button, using the expanding blue vertical left bar (see Information Alert) as new questions are added. Questions are conditional, based on previous answers. Structure the logic tree for wizard questions to get users to gather information from users in as few questions as possible, while still directing them to the best next step for their circumstances.
+- **Questions**: Questions appear one at a time under the button, using an expanding blue vertical left bar as new questions are added. Questions are conditional, based on previous answers. Structure the logic tree for wizard questions to get users to gather information from users in as few questions as possible, while still directing them to the best next step for their circumstances.
 
 - **Warning alerts in the wizard.** Show a [warning alert](<https://design.va.gov/components/alertboxes#warning-alert>) if a user answers a question in a way that is uncommon, or if they need to first do some other process that cannot be accessed via the wizard. For example, in the Education Form wizard, Show the Warning Alert immediately after the question, and provide concrete next steps and directions.  
 ![gif demonstrating a form wizard for VA Education featuring a users that answers a specific question that triggers a warning]({{site.baseurl}}/images/Wizard-Education-warning.gif)
 
 - **Error alerts in the wizard**. Show an [error alert](<https://design.va.gov/components/alertboxes#error-alert>) if a user answers a question in a way that would render them ineligible to complete any of the forms serviced by the wizard. Instead, they may need to stop what they are doing and follow a different process on a different page or website. For example, in the Disability Claim wizard (shown below), a user who is still active duty needs to complete a completely different form on EBenefits, and completing an application on VA.gov would be a waste of time. Show the Error Alert immediately after the question, and provide concrete next steps and directions.
 
-  <img width="779" alt="Screen Shot 2019-05-14 at 3 40 00 PM" src="https://user-images.githubusercontent.com/32132681/57727297-21a5de80-765f-11e9-811a-e8f564ab0ebb.png">
+  ![screenshot of wizard with an error]({{site.baseurl}}/images/wizard-with-error.png)
 
 - **Editable answers**: Users can scroll up to see all of their previous answers and make changes at any time. If a user makes a change to the answer to an earlier question, hide all previous answers and show only the next appropriate question in the series, based on the user's answer.
 
