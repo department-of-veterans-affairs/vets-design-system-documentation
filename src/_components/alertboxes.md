@@ -18,8 +18,6 @@ anchors:
 Alerts keep users informed of important and sometimes time-sensitive changes.
 </div>
 
-
-
 ## Informational alert
 
 Used to provide helpful information to a user or something that warrants attention. Not used for negative consequences.
@@ -30,7 +28,6 @@ Used to provide helpful information to a user or something that warrants attenti
 
 {% include snippet.html content='html/alert-informational.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
 
----
 
 ## Warning alert
 
@@ -42,8 +39,6 @@ Used to warn a user, such as when there are negative consequences, but necessary
 
 {% include snippet.html content='html/alert-warning.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
 
----
-
 ## Success alert
 
 Used to indicate success.
@@ -53,8 +48,6 @@ Used to indicate success.
 </div>
 
 {% include snippet.html content='html/alert-success.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
-
----
 
 ## Error alert
 
@@ -66,8 +59,6 @@ Used when there is a problem or something destructive is about to occur.
 
 {% include snippet.html content='html/alert-error.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
 
----
-
 ## Sign in or tool prompt
 
 Used to prompt user to sign in, create an account, or launch a tool to access certain information.
@@ -78,7 +69,6 @@ Used to prompt user to sign in, create an account, or launch a tool to access ce
 
 {% include snippet.html content='html/alert-continue.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
 
----
 
 ## Background color only
 
@@ -93,8 +83,6 @@ Any style of alert box can be made to be background color only. Background color
 - Some users might not be able to distinguish differences in the background color, or see the color at all. Do not rely on color alone to convey context.
 - Messaging should be direct and concise. Aim for one or two lines.
 - Do not use headings
-
----
 
 ## Full-width alerts
 
@@ -122,7 +110,6 @@ Full-width alerts can only appear below the main navigation and are used only fo
 - Do not stack - max is one per page at any one time. (If multiple emergency issues occur at once, make message content combined and link out to a landing page or to individual affected medical centers, for example.)
 - Can be used on homepage or, in true emergencies, on lower level pages.
 
----
 
 ## Accessibility
 
