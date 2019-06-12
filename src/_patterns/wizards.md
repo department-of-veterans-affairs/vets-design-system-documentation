@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Wizards
-draft: true
 ---
 
 # Wizards
