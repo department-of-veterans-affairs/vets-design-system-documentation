@@ -3,23 +3,25 @@
   var $iframe_box = document.getElementsByClassName("iframe__preview");
 
   var resizeFrame = function(frame, box){
-    var display_width = frame[0].getAttribute('data-width');
-    var viewable_width = box[0].getBoundingClientRect().width;
+    var display_width = frame.getAttribute('data-width');
+    var viewable_width = box.getBoundingClientRect().width;
 
     if ( viewable_width < display_width ) {
       var scale = viewable_width / display_width;
-      frame[0].style.transform = "scale("+ viewable_width / display_width +")";
-      frame[0].style.width = display_width + "px";
+      frame.style.transform = "scale("+ viewable_width / display_width +")";
+      frame.style.width = display_width + "px";
     }
 
     else {
-      frame[0].removeAttribute('style');
-      frame[0].style.width = display_width + "px";
+      frame.removeAttribute('style');
+      frame.style.width = display_width + "px";
     }
   }
 
   if ($iframe.length) {
-    resizeFrame($iframe, $iframe_box);
+    for (var i = 0; i < $iframe.length; i++){
+      resizeFrame($iframe[i], $iframe_box[i]);
+    }
   }
 
   var preview_button = document.getElementsByClassName("sg-responsive-preview__size-button");
@@ -38,7 +40,7 @@
         e.target.classList.add('is-current');
 
         frame[0].setAttribute('data-width', new_size);
-        resizeFrame(frame, box);
+        resizeFrame(frame[0], box[0]);
     };
   }
 
