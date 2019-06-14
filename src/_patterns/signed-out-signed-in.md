@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Signed out vs. signed in
-draft: true
 anchors:
   - anchor: Site header
   - anchor: Contextual calls to action
