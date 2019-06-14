@@ -16,4 +16,4 @@ We have two types of grids. One is the float grid (whereas "float" refers to the
 
 ## Page templates
 
-This section will some common page templates.
+This section includes common page templates used on VA.gov.
