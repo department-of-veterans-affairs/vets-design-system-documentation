@@ -2,7 +2,7 @@ pipeline {
 
   agent {
     dockerfile {
-      label 'vetsgov-general-purpose'
+      label 'vagov-general-purpose'
     }
   }
 
