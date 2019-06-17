@@ -3,7 +3,7 @@ pipeline {
   agent {
     dockerfile {
       label 'vagov-general-purpose'
-      args '-v /etc/pki/ca-trust/source/anchors:/va_certs'
+      args '-v /etc/pki/ca-trust/source/anchors:/usr/local/share/ca-certificates'
     }
   }
 
@@ -28,7 +28,7 @@ pipeline {
         // sh 'cp /va_certs/va.pem va.crt'
 
         // sh 'sudo cp *.crt /usr/local/share/ca-certificates/'
-        // sh 'update-ca-certificates'
+        sh 'update-ca-certificates'
       }
     }
 
