@@ -3,7 +3,7 @@ pipeline {
   agent {
     dockerfile {
       label 'vagov-general-purpose'
-      args '-v /etc/pki/ca-trust/source/anchors:/usr/local/share/ca-certificates'
+      args '-v /etc/pki/ca-trust/source/anchors:/va_certs'
     }
   }
 
@@ -21,13 +21,13 @@ pipeline {
         sh 'ls -l'
         sh 'whoami'
 
-        // sh 'cp /va_certs/dod-eca.pem dod-eca.crt'
-        // sh 'cp /va_certs/VA-Internal-S2-ICA1-v1.pem VA-Internal-S2-ICA1-v1.crt'
-        // sh 'cp /va_certs/VA-Internal-S2-ICA2-v1.pem VA-Internal-S2-ICA2-v1.crt'
-        // sh 'cp /va_certs/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
-        // sh 'cp /va_certs/va.pem va.crt'
+        sh 'cp /va_certs/dod-eca.pem dod-eca.crt'
+        sh 'cp /va_certs/VA-Internal-S2-ICA1-v1.pem VA-Internal-S2-ICA1-v1.crt'
+        sh 'cp /va_certs/VA-Internal-S2-ICA2-v1.pem VA-Internal-S2-ICA2-v1.crt'
+        sh 'cp /va_certs/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
+        sh 'cp /va_certs/va.pem va.crt'
 
-        // sh 'sudo cp *.crt /usr/local/share/ca-certificates/'
+        sh 'sudo cp *.crt /usr/local/share/ca-certificates/'
         sh 'update-ca-certificates'
       }
     }
