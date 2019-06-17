@@ -4,6 +4,7 @@ pipeline {
     dockerfile {
       label 'vagov-general-purpose'
       args '-v /etc/pki/ca-trust/source/anchors:/va_certs'
+      args '-u 504:1000'
     }
   }
 
