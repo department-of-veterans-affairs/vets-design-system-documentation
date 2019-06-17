@@ -3,6 +3,7 @@ pipeline {
   agent {
     dockerfile {
       label 'vetsgov-general-purpose'
+      args '-v /etc/pki/ca-trust/source/anchors:/va_certs'
     }
   }
 
