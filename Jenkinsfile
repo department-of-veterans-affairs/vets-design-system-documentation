@@ -15,22 +15,22 @@ pipeline {
 
   stages {
 
-    // stage('Update VA CA Certificates') {
-    //   steps {
-    //     sh 'pwd'
-    //     sh 'ls -l'
-    //     sh 'whoami'
+    stage('Update VA CA Certificates') {
+      steps {
+        sh 'pwd'
+        sh 'ls -l'
+        sh 'whoami'
 
-    //     sh 'cp /va_certs/dod-eca.pem dod-eca.crt'
-    //     sh 'cp /va_certs/VA-Internal-S2-ICA1-v1.pem VA-Internal-S2-ICA1-v1.crt'
-    //     sh 'cp /va_certs/VA-Internal-S2-ICA2-v1.pem VA-Internal-S2-ICA2-v1.crt'
-    //     sh 'cp /va_certs/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
-    //     sh 'cp /va_certs/va.pem va.crt'
+        // sh 'cp /va_certs/dod-eca.pem dod-eca.crt'
+        // sh 'cp /va_certs/VA-Internal-S2-ICA1-v1.pem VA-Internal-S2-ICA1-v1.crt'
+        // sh 'cp /va_certs/VA-Internal-S2-ICA2-v1.pem VA-Internal-S2-ICA2-v1.crt'
+        // sh 'cp /va_certs/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
+        // sh 'cp /va_certs/va.pem va.crt'
 
-    //     sh 'sudo cp *.crt /usr/local/share/ca-certificates/'
-    //     sh 'update-ca-certificates'
-    //   }
-    // }
+        // sh 'sudo cp *.crt /usr/local/share/ca-certificates/'
+        // sh 'update-ca-certificates'
+      }
+    }
 
     stage('Checkout Code') {
       steps {
