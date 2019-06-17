@@ -23,7 +23,7 @@ pipeline {
         sh 'cp /va_certs/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
         sh 'cp /va_certs/va.pem va.crt'
 
-        sh 'cp *.crt /usr/local/share/ca-certificates/'
+        sh 'sudo cp *.crt /usr/local/share/ca-certificates/'
         sh 'update-ca-certificates'
       }
     }
