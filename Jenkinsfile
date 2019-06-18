@@ -1,11 +1,11 @@
 pipeline {
 
   agent {
-    dockerfile {
+    // dockerfile {
       label 'vagov-general-purpose'
       // args '-v /etc/pki/ca-trust/source/anchors:/va_certs'
       // args '-u 504:1000'
-    }
+    // }
   }
 
   // $HOME defaults to '/' when not set, which results in:
