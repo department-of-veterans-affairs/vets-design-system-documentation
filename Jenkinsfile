@@ -54,7 +54,7 @@ pipeline {
           dockerImage.inside(args) {
             sh 'echo $HOME' 
             sh 'echo $NODE_OPTIONS' 
-            sh 'npm install'
+            sh 'npm install --loglevel verbose'
             sh 'bundle install'
           }
         }
