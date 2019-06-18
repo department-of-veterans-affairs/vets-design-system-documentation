@@ -52,6 +52,8 @@ pipeline {
         script {
           args = "-v ${pwd()}:/srv/jekyll -e NODE_OPTIONS=--use-openssl-ca -e HOME=/srv/jekyll"
           dockerImage.inside(args) {
+            sh 'echo $HOME' 
+            sh 'echo $NODE_OPTIONS' 
             sh 'npm install'
             sh 'bundle install'
           }
