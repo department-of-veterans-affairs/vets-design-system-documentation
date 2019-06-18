@@ -50,9 +50,8 @@ pipeline {
     stage('Install npm dependencies') {
       steps {
         script {
-          args = "-v ${pwd()}:/srv/jekyll -e NODE_OPTIONS=--use-openssl-ca"
+          args = "-v ${pwd()}:/srv/jekyll -e NODE_OPTIONS=--use-openssl-ca -e HOME=."
           dockerImage.inside(args) {
-            sh 'openssl s_client -showcerts -connect github.com:443'
             sh 'npm install'
             sh 'bundle install'
           }
