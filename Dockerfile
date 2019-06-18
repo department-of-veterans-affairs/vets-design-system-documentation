@@ -5,8 +5,8 @@ FROM jekyll/builder:3.8
 
 # RUN npm config set unsafe-perm true && npm install -g s3-cli
 
+RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 ADD *.crt /usr/local/share/ca-certificates/
-
 RUN update-ca-certificates
 
 WORKDIR /srv/jekyll
