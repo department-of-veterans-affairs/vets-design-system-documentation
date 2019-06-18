@@ -12,7 +12,7 @@ pipeline {
   //   Error: EACCES: permission denied, mkdir '/.npm'
   // jenkins runs docker using '-w <WORKSPACE>', so '.' points
   // to that WORKSPACE
-  environment { HOME = '.' }
+  // environment { HOME = '.' }
 
   stages {
 
