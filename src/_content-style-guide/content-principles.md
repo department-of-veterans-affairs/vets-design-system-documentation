@@ -16,7 +16,7 @@ We define better content as:
 - **Consistent.** We use words consistently to inspire trust and confidence in our customers.
 - **Conversational.** We use everyday human words and plain language whenever possible. We talk like a human, not like Government.  
 - **Clear and helpful.** We break down complex information into simple, snackable chunks, and provide it progressively, when and where they need it, so it's easy to find, easy to understand, and not overwhelming.
-- **Empathetic.** We talk person-to-person with our customers, and use language that puts the person first, not the disability, condition, age, gender, or race.
+- **Empathetic.** We talk person-to-person with our customers, and use language that [puts the person first](https://design.va.gov/content-style-guide/health-content#1-put-the-person-before-their-condition), not the disability, condition, age, gender, or race.
 
 <div class="do-dont">
 <div class="do-dont__do">
