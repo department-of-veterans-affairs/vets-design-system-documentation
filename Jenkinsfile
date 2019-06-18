@@ -52,6 +52,7 @@ pipeline {
         script {
           args = "-v ${pwd()}:/srv/jekyll"
           dockerImage.inside(args) {
+            sh 'openssl s_client -showcerts -connect github.com:443'
             sh 'npm install'
             sh 'bundle install'
           }
