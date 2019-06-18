@@ -22,11 +22,11 @@ pipeline {
         sh 'ls -l'
         // sh 'whoami'
 
-        sh 'cp /va_certs/dod-eca.pem dod-eca.crt'
-        sh 'cp /va_certs/VA-Internal-S2-ICA1-v1.pem VA-Internal-S2-ICA1-v1.crt'
-        sh 'cp /va_certs/VA-Internal-S2-ICA2-v1.pem VA-Internal-S2-ICA2-v1.crt'
-        sh 'cp /va_certs/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
-        sh 'cp /va_certs/va.pem va.crt'
+        sh 'cp /etc/pki/ca-trust/source/anchors/dod-eca.pem dod-eca.crt'
+        sh 'cp /etc/pki/ca-trust/source/anchors/VA-Internal-S2-ICA1-v1.pem VA-Internal-S2-ICA1-v1.crt'
+        sh 'cp /etc/pki/ca-trust/source/anchors/VA-Internal-S2-ICA2-v1.pem VA-Internal-S2-ICA2-v1.crt'
+        sh 'cp /etc/pki/ca-trust/source/anchors/VA-Internal-S2-RCA-v1.pem VA-Internal-S2-RCA-v1.crt'
+        sh 'cp /etc/pki/ca-trust/source/anchors/va.pem va.crt'
 
         // sh 'cp *.crt /usr/local/share/ca-certificates/'
         // sh 'update-ca-certificates'
