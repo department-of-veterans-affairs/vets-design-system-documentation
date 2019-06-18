@@ -42,7 +42,7 @@ pipeline {
     stage('Build Docker Image') {
       steps {
         script {
-          dockerImage = docker.build() // builds the Dockerfile in current dir
+          dockerImage = docker.build("bill-test:${env.BUILD_ID}") // builds the Dockerfile in current dir
         }
       }
     }
