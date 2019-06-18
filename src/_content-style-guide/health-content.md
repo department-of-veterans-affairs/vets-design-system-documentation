@@ -21,12 +21,19 @@ Try to use words like “Veteran” or “person” instead of “patient.” Th
 __Put the person first__
 
 Veteran with disabilities
+
 Veteran who has a disability
+
 Veteran living with a disability
+
 Person living with cancer
+
 Person being treated for cancer
+
 Veteran who is blind
+
 Veteran with vision loss
+
 Veteran with low or no vision
 
 </div>
