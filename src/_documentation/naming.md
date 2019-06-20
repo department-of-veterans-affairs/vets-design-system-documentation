@@ -85,7 +85,7 @@ When put together, we can have something like:
 
 ## About items that do not use Formation’s naming convention
 
-You will notice that not everything in Formation follows the naming the convention described above. There are two reasons for this:
+You will notice that not everything in Formation follows the naming convention described above. There are two reasons for this:
 
 1. Components are directly from the [U.S. Web Design System](https://design.digital.gov)
 2. Components developed before Formation was fully established
@@ -94,5 +94,5 @@ You will notice that not everything in Formation follows the naming the conventi
 
 ### What will happen to older components?
 
-Some legacy components may refactored to fit better with the old system. When those components are refactored, the legacy versions will remain in the codebase for XXXX weeks/cycles. Follow along for updates to Formation to find out what has changed.
+Some legacy components may be refactored to fit better with the old system. When those components are refactored, the legacy versions will remain in the codebase for XXXX weeks/cycles. Follow along for updates to Formation to find out what has changed.
 

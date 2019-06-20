@@ -26,7 +26,7 @@ Formation was created with the [U.S. Web Design System](https://designsystem.dig
 
 ### Browser support
 
-Formation supports older and newer browsers through progressive enhancement. We follow the 2% rule: we support any browser above 2% usage as observed by analytics.usa.gov.
+Formation supports older and newer browsers through progressive enhancement. We follow the 2% rule: we support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov).
 
 <div class="site-showcase">
   <div class="vads-u-display--flex site-showcase__col vads-u-margin-top--0 vads-u-border--0 vads-u-align-items--center">

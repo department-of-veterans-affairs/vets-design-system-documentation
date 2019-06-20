@@ -28,7 +28,7 @@ The latest news and updates on Formation and the content style guide
 
 **Site updates**
 - Removed USWDS `npm` notes from JavaScript documentation since it is no longer needed as a dependency
-- Fixed bug were anchors were hidden behind sticky navigation
+- Fixed bug where anchors were hidden behind sticky navigation
 
 ---
 
