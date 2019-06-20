@@ -162,7 +162,7 @@ The “What happens after I apply” section sets the user’s expectations abou
 * A call to action (primary blue button) that allows the user to track the status of their application
 * A card that sets the user’s expectation for how long it takes to receive a response
 
-### More information
+### Optional: More information
 Include the “More information section” if there is helpful supporting information about applying for the benefit.
 * For many short content items, consider using the accordion component to reduce the content on the page.
 * For longer content items, consider linking to a separate page.
