@@ -59,6 +59,10 @@ Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural
 
 blind or low-vision (not "blind or sight-impaired")
 
+Blue Water: Capitalize.
+
+Brown Water: Capitalize.
+
 ### C
 
 can vs. may: Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
