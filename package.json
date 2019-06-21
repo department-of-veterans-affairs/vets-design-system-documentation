@@ -51,7 +51,7 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
-    "@department-of-veterans-affairs/formation": "6.6.1",
+    "@department-of-veterans-affairs/formation": "6.6.3",
     "@department-of-veterans-affairs/formation-react": "^3.0.0",
     "react": "^15.5.4",
     "react-addons-update": "^15.6.2",

@@ -20,9 +20,18 @@ This site provides design guidelines and code to help you quickly create trustwo
 
 Throughout this site, you will see references to Formation. Formation is VA.gov’s front-end framework.
 
-### Formation is built on top of the U.S. Web Design System
+### U.S. Web Design System already included
 
-Formation was created with the [U.S. Web Design System](https://designsystem.digital.gov) in its underlying foundation, on top of which we have added components, design patterns, and other features unique to the needs of the VA.gov platform, all tested with Veterans to meet our usability and accessibility guidelines.
+Formation is built on top of a fork of [U.S. Web Design System](https://designsystem.digital.gov) (USWDS) v1.6.10. In other words, there is no need to include the USWDS into your Formation project because Formation already includes the USWDS.
+
+We have added components, design patterns, and other features unique to the needs of the VA.gov platform, all tested with Veterans to meet our usability and accessibility guidelines.
+
+We will not be update to version to USWDS v2, primarily because:
+- Many of the naming conventions have changed between the two versions
+- The design of some of the base components has changed based on specific needs for VA.gov
+- Formation includes its own set of utility classes and design tokens
+
+If USWDS introduces a new component that would be useful on VA.gov, implement it individually in a way that works with VA.gov's design system and naming convention.
 
 ### Browser support
 
