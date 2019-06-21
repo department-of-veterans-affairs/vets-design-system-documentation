@@ -5,7 +5,7 @@ draft: true
 anchors:
   - anchor: Eligibility
   - anchor: How to apply
-  - anchor: Application introduction apply page
+  - anchor: Apply now
   - anchor: After you apply
 ---
 
@@ -27,14 +27,14 @@ Structuring benefit applications in this way has, through rigorous usability tes
 For Veterans, determining whether or not they (or their beneficiaries) are eligible for a specific benefit is a difficult process. The policies governing those benefits can be complex, fraught with dependencies and variations that can be overwhelming.
 
 The associated pattern of content and functionality designed to help users of the website understand their eligibility, therefore, needs to accomplish a few things which can seem at odds with one another. Manifested as a single page, it should
-* provide a simple introduction to eligibility rules that covers the most common scenarios,
-* scale (expand) to represent variations in complexity,
-* prevent users from going to the wrong form,
-* provide the ability to announce changes in the law or availability of benefits that may impact their eligibility,
-* provide space to connect users to benefits that are likely to be related to their question about the benefit they are viewing,
-* guide users to the next logical step in determining their eligibility, ultimately concluding getting them to the proper benefit application.   
+* provide a simple introduction to eligibility rules that covers the most common scenarios
+* scale (expand) to represent variations in complexity
+* prevent users from going to the wrong form
+* provide the ability to announce changes in the law or availability of benefits that may impact their eligibility
+* provide space to connect users to benefits that are likely to be related to their question about the benefit they are viewing
+* guide users to the next logical step in determining their eligibility, ultimately concluding getting them to the proper benefit application   
 
-### Eligibility Hierarchy
+### Eligibility hierarchy
 The hierarchy of the eligibility pattern allows it to be flexible enough to cover simple or complex benefit eligibility information while still feeling straightforward and easy to follow. Generally, the eligibility pattern manifests itself as a single web page. It sits within a benefits hub based upon the following rules:
 
 * For benefits hubs with a single benefit (such as [Health care](https://www.va.gov/health-care)), we link to a separate [Eligibility](https://www.va.gov/health-care/eligibility/) page as well as [How to apply](https://www.va.gov/health-care/how-to-apply) page from the hub landing page.
@@ -45,10 +45,10 @@ The eligibility page consists of the following elements:
 
 ![eligibility_page_heirarchy](https://user-images.githubusercontent.com/50150810/58469713-f11e7400-8137-11e9-9c30-4a15d3df0ff0.png)
 
-#### 1. Title and Statement of Intent
+#### 1. Title and statement of intent
 The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.
 
-#### 2. Optional: Eligibility Change Announcement
+#### 2. Optional: Eligibility change announcement
 When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an alert box on this page. Follow the recommendations governing alert box usage, including
 * Use informational alerts to announce upcoming benefits
 * Use warning alerts to announce deadlines or expiring options
@@ -57,7 +57,7 @@ When time sensitive content about a benefit — such as a new benefit being made
 
 [View the alert box component](https://design.va.gov/components/alertboxes).
 
-#### 3. Common Scenario Overview
+#### 3. Common scenario overview
 
 The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Because some benefits are complex and contain several optional paths, it is occasionally acceptable to repeat this element on the page where there is an additional eligibility use case that is common enough to warrant it. Note: please do not overuse this pattern (no more than 2 occurrences per eligibility landing page) as it decreases its effectiveness at being more easily seen on the page.
 
@@ -65,13 +65,13 @@ The featured content component is used to present the user with the most commonl
 
 [View the featured content component](https://design.va.gov/components/featured-content).
 
-#### 4. Pre-requisite Content
+#### 4. Prerequisite content
 
-Content detailing pre-requisites should follow common scenarios on the page. Group pre-requisites logically by benefit type, and order benefit types from most common to less common.
+Content detailing prerequisites should follow common scenarios on the page. Group prerequisites logically by benefit type, and order benefit types from most common to less common.
 
 ![eligibility_prerequisites](https://user-images.githubusercontent.com/50150810/58469821-3a6ec380-8138-11e9-85bf-0bd2f6292aec.png)
 
-#### 5. How to Apply Heading and Primary Call to Action Button
+#### 5. How to apply heading and primary call to action button
 
 A brief heading should precede and call attention to the primary call to action button. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
@@ -83,45 +83,32 @@ The button can be followed by item 6, Additional Benefit-Eligibility-Specific Re
 
 [View the button component](https://design.va.gov/components/buttons).
 
-##### 5.1 Optional: Wizard Pattern for Branching Eligibility Choices
+##### 5.1 Optional: Wizard pattern for branching eligibility choices
 
-For a detailed overview, view the [Wizard pattern](https://design.va.gov/patterns/wizards). The following information applies to building a Wizard in the Eligibility page.  
+In the case where there are multiple benefit options, the [Wizard pattern](https://design.va.gov/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
 
-In the case where there are multiple benefit options, the wizard allows a user to branch into (or out of) the appropriate benefit application from the eligibility page.
-* A primary button (green button) reveals the first question of the wizard.
-* The text on the primary green button should represent the job the wizard is performing, such as “Find your education benefits form.”
-* After the wizard is revealed, the green button turns blue. This maintains the “one primary button per page” rule as the wizard will likely reveal a new primary button.
-* It should consist of mutually exclusive choices which use radio buttons.
-* The entire form is hidden by being contained within in an additional info component, so the choices are clearly displayed as interdependent and contained.
-* Steps dependent on not-yet -answered questions are hidden. It should only display the most recent question answered, which reveals the next unanswered question in the sequence.
-* The wizard mini-form should conclude with a primary (green) button linking to the appropriate form, or an
+The text on the primary green button should represent the job the wizard is performing, such as “Find your education benefits form.”
 
-[View the Wizard pattern](https://design.va.gov/patterns/wizards).
-
-[View the form controls components](https://design.va.gov/components/form-controls).
-
-[View the additional info component](https://design.va.gov/components/additional-info).
-
-#### 6. Optional: Additional Benefit-Eligibility-Specific Relevant Content
+#### 6. Optional: Additional benefit-eligibility-specific relevant content
 
 Any additional content necessary that is connected to the primary benefit eligibility use case for the page can be added here.
 
-#### 7. Optional: Benefit Eligibility Frequently Asked Questions
+#### 7. Optional: Benefit eligibility frequently asked questions
 
 Use the accordion component to present questions that are common about eligibility for a benefit.
 
 [View the accordion component](https://design.va.gov/components/accordions).
 
-#### 8. Optional: Related Benefits Content
+#### 8. Optional: Related benefits content
 
 Any additional benefits (e.g. vocational benefits eligibility that is related to education benefit eligibility) can be added to the bottom of the page using the RELATED PAGES component.
 
-### Design Components Used for Eligibility
+### Design components used for eligibility
 The following design system components are used to form the eligibility pattern:
 
 * [Alert boxes](https://design.va.gov/components/alertboxes) are used when you need to make a time-sensitive announcement about when eligibility for a benefit might become available, change, or be affected by the availability of a technical system or too.
 * [Featured content](https://design.va.gov/components/featured-content) can be used to promote the most common benefit scenario for that category of benefits. Note: please do not overuse this pattern as it decreases its effectiveness at being more easily seen on the page.
-* [Primary buttons](https://design.va.gov/components/buttons#primary-buttons) are used to provide the user with a single call to action to begin the application process. Note: please only use one button per eligibility page. In some cases the button may initiate a wizard, which can walk someone through pre-requisite questions to guide them to the correct form, or in some cases, prevent them from applying using the wrong form.
+* [Primary buttons](https://design.va.gov/components/buttons#primary-buttons) are used to provide the user with a single call to action to begin the application process. Note: please only use one button per eligibility page. In some cases the button may initiate a wizard, which can walk someone through prerequisite questions to guide them to the correct form, or in some cases, prevent them from applying using the wrong form.
 * [Accordions](https://design.va.gov/components/accordions) are used to provide frequently asked questions about benefits eligibility that may not necessarily be the primary reason a user has come to the page.
 * [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question. Note: this should only be used when the benefit   
 
@@ -173,7 +160,7 @@ Include the “More information section” if there is helpful supporting inform
 * [How to apply for the GI Bill and other education benefits](https://www.va.gov/education/how-to-apply/)
 * [How to apply for a VA pension as a Veteran](https://www.va.gov/pension/how-to-apply/)
 
-## Application introduction apply page
+## Apply now
 
 **_draft_**
 This is a high-level description of the introduction page for benefit applications.
