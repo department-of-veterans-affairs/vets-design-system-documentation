@@ -26,10 +26,10 @@ Formation is built on top of a fork of [U.S. Web Design System](https://designsy
 
 We have added components, design patterns, and other features unique to the needs of the VA.gov platform, all tested with Veterans to meet our usability and accessibility guidelines.
 
-We will not be update to version to USWDS v2, primarily because:
-- Many of the naming conventions have changed between the two versions
-- The design of some of the base components has changed based on specific needs for VA.gov
-- Formation includes its own set of utility classes and design tokens
+We're not currently updating to USWDS v2 because:
+- Many of the naming conventions have changed between the 2 versions.
+- The design of some of the base components has changed based on specific needs for VA.gov.
+- Formation includes its own set of utility classes and design tokens.
 
 If USWDS introduces a new component that would be useful on VA.gov, implement it individually in a way that works with VA.gov's design system and naming convention.
 

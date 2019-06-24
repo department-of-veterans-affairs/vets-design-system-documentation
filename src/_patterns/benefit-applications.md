@@ -26,20 +26,20 @@ Structuring benefit applications in this way has, through rigorous usability tes
 
 For Veterans, determining whether or not they (or their beneficiaries) are eligible for a specific benefit is a difficult process. The policies governing those benefits can be complex, fraught with dependencies and variations that can be overwhelming.
 
-The associated pattern of content and functionality designed to help users of the website understand their eligibility, therefore, needs to accomplish a few things which can seem at odds with one another. Manifested as a single page, it should
-* provide a simple introduction to eligibility rules that covers the most common scenarios
-* scale (expand) to represent variations in complexity
-* prevent users from going to the wrong form
-* provide the ability to announce changes in the law or availability of benefits that may impact their eligibility
-* provide space to connect users to benefits that are likely to be related to their question about the benefit they are viewing
-* guide users to the next logical step in determining their eligibility, ultimately concluding getting them to the proper benefit application   
+The associated pattern of content and functionality designed to help users of the website understand their eligibility, therefore, needs to accomplish a few things which can seem at odds with one another. Manifested as a single page, it should:
+* Provide a simple introduction to eligibility rules that covers the most common scenarios.
+* Scale (expand) to represent variations in complexity.
+* Prevent users from going to the wrong form.
+* Provide the ability to announce changes in the law or availability of benefits that may impact their eligibility.
+* Provide space to connect users to benefits that are likely to be related to their question about the benefit they are viewing.
+* Guide users to the next logical step in determining their eligibility, ultimately concluding getting them to the proper benefit application.
 
 ### Eligibility hierarchy
 The hierarchy of the eligibility pattern allows it to be flexible enough to cover simple or complex benefit eligibility information while still feeling straightforward and easy to follow. Generally, the eligibility pattern manifests itself as a single web page. It sits within a benefits hub based upon the following rules:
 
 * For benefits hubs with a single benefit (such as [Health care](https://www.va.gov/health-care)), we link to a separate [Eligibility](https://www.va.gov/health-care/eligibility/) page as well as [How to apply](https://www.va.gov/health-care/how-to-apply) page from the hub landing page.
 * For benefits hubs with multiple benefits (like [Life insurance](https://www.va.gov/life-insurance/)), we link to the [main options/Eligibility](https://www.va.gov/life-insurance/options-eligibility/) page from the hub landing page. From this page, the user can choose the option for which they want to explore their eligibility.
-* For a benefits hub where there is only a single benefit available, such as [Veteran's Pension](https://www.va.gov/pension/), we link directly to the [Eligibility](https://www.va.gov/pension/eligibility/) and page for that benefit from the hub landing page. We also link to pages for other, related benefits (Aid and Attendance, and Survivors Pension) from the hub landing page using the RELATED PAGES COMPONENT.
+* For a benefits hub where there is only a single benefit available, such as [Veteran's Pension](https://www.va.gov/pension/), we link directly to the [Eligibility](https://www.va.gov/pension/eligibility/) and page for that benefit from the hub landing page. We also link to pages for other, related benefits (Aid and Attendance, and Survivors Pension) from the hub.
 
 The eligibility page consists of the following elements:
 
