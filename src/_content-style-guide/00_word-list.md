@@ -212,7 +212,7 @@ final status: Use “in final status” rather than “in a final status."
 
 financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
-form: Do not use "application." Example: You need to fill out a decision review form.
+form: A Veteran fills out a decision review "form," not an "application."
 
 ### G
 
