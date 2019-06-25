@@ -43,7 +43,7 @@ The hierarchy of the eligibility pattern allows it to be flexible enough to cove
 
 The eligibility page consists of the following elements:
 
-![eligibility_page_heirarchy](https://user-images.githubusercontent.com/50150810/58469713-f11e7400-8137-11e9-9c30-4a15d3df0ff0.png)
+![eligibility_page_heirarchy](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/images/eligibility_page_heirarchy.png)
 
 #### A. Title and statement of intent
 The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.
@@ -52,7 +52,7 @@ The title should be “Eligibility for (Most Commonly Used Benefit Name).” The
 
 The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Some benefits are complex and contain several optional paths to confirmation. It is not acceptable to repeat this element on the page; instead use the Additional eligibility information &amp; scenarios element for other variations. Note: please do not use this pattern more than one time on the page as it decreases its effectiveness at drawing the eye to the most likely sought content.
 
-![eligibility_common_scenario_do-don't](https://user-images.githubusercontent.com/50150810/58469744-009dbd00-8138-11e9-828e-a947550737c2.png)
+![eligibility_common_scenario_do-don't](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/images/eligibility_common_scenario_do-dont.png)
 
 [View the featured content component](https://design.va.gov/components/featured-content).
 
