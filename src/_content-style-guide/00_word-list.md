@@ -37,6 +37,8 @@ annual: Unless part of a benefit or program name, avoid the use of terms like "a
   -	**Instead of bi-annual:** "2 times each year" or "twice each year"
   -	**Instead of biennial:** "every other year"
 
+appeal option: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
+
 apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is okay for other benefits, such as "Apply for VA health care."
 
 Armed Forces: Capitalize.
@@ -60,6 +62,10 @@ Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural
 blind or low-vision (not "blind or sight-impaired")
 
 Blue Water: Capitalize.
+
+Board decision: A Veteran receives a "Board decision," not a “Board Appeal decision.” 
+
+Board of Veterans Appeals: Capitalize. Can use "Board" on subsequent mentions in body copy.
 
 Brown Water: Capitalize.
 
@@ -206,6 +212,8 @@ final status: Use “in final status” rather than “in a final status."
 
 financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
+form: Do not use "application." Example: You need to fill out a decision review form.
+
 ### G
 
 GI: No periods (*not* G.I.).
@@ -234,6 +242,8 @@ hazardous exposure: Define in the context of body copy as "contact with harmful 
 
 health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
 - **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
+
+Higher-Level Review decision: Initial cap "Higher-Level Review" decision.
 
 hospitalization: Use "hospital care."
 
@@ -384,6 +394,8 @@ PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTS
 
 regional office: Use instead of "regional benefit office." See VA regional office entry for details.
 
+request: A Veteran "requests" a decision review when they’re looking to appeal a VA decision. A Veteran also "requests" a Higher-Level Review and "requests" a Board Appeal. However, a Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim. 
+
 Reserve: Capitalize when used to refer to members of the military.  
 
 Reservist: Capitalize.
@@ -394,11 +406,17 @@ resume: Don't use accent marks when referring to the noun, as in a job resume.
 
 retroactive: Provide contextual information to help define, as relevant in the specific situation. Example: Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury.
 
+review option: A Veteran selects from one of the available review options when they request a decision review. The three review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
+
+Reviewer: Someone involved in Supplemental Claim reviews. 
+
 ### S
 
 secondary service-connected claim: Define on first mention in body copy as "a claim for a new disability that's linked to a service-connected disability you already have." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 Selected Reserve: Generally used in the context of the Montgomery GI Bill Selected Reserve.
+
+Senior reviewer: Someone involved in Higher-Level Reviews. 
 
 service connected: Hyphenate when modifying a noun. Otherwise, do not hyphenate.
   - **Like this (modifying a noun):** A Veteran with a service-connected disability may be eligible for additional health care benefits.
@@ -437,7 +455,9 @@ suicide: When posing as a question for the Veteran, phrase as "Are you thinking 
 substantially gainful employment: Provide a definition or note when using this term. 
 - **Like this:** You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment), don’t count.
 
-supplemental claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied."
+Supplemental Claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied." Note: A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
+
+Supplemental Claim decision: Initial cap "Supplemental Claim" decision. 
 
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -461,6 +481,8 @@ VA: Don't use "the" before VA when it's used as a noun. However, when VA serves 
 - As a noun: VA announced today that...   
 - As a noun phrase ("VA facilities"): Some VA facilities in Texas are affected by Hurricane Florida.
 - As an adjective (modifying "task force"): The VA task force announced today...
+
+VA decision: This is a general, umbrella term for a claim decision made by VA.
 
 VA.gov: Treat it as a brand name and always capitalize "VA." Don't use "www.va.gov" as the name. 
 -	**Like this:** Preview the new VA.gov.
