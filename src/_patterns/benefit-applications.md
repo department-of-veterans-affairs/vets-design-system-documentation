@@ -45,33 +45,32 @@ The eligibility page consists of the following elements:
 
 ![eligibility_page_heirarchy](https://user-images.githubusercontent.com/50150810/58469713-f11e7400-8137-11e9-9c30-4a15d3df0ff0.png)
 
-#### 1. Title and statement of intent
+#### A. Title and statement of intent
 The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.
 
-#### 2. Optional: Eligibility change announcement
-When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an alert box on this page. Follow the recommendations governing alert box usage, including
-* Use informational alerts to announce upcoming benefits
-* Use warning alerts to announce deadlines or expiring options
-* Use alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
-* Use full-width alert boxes, warning or informational as contextually appropriate.
+#### B. Common scenario overview
 
-[View the alert box component](https://design.va.gov/components/alertboxes).
-
-#### 3. Common scenario overview
-
-The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Because some benefits are complex and contain several optional paths, it is occasionally acceptable to repeat this element on the page where there is an additional eligibility use case that is common enough to warrant it. Note: please do not overuse this pattern (no more than 2 occurrences per eligibility landing page) as it decreases its effectiveness at being more easily seen on the page.
+The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Some benefits are complex and contain several optional paths to confirmation. It is not acceptable to repeat this element on the page; instead use the Additional eligibility information &amp; scenarios element for other variations. Note: please do not use this pattern more than one time on the page as it decreases its effectiveness at drawing the eye to the most likely sought content.
 
 ![eligibility_common_scenario_do-don't](https://user-images.githubusercontent.com/50150810/58469744-009dbd00-8138-11e9-828e-a947550737c2.png)
 
 [View the featured content component](https://design.va.gov/components/featured-content).
 
-#### 4. Prerequisite content
+#### C. Additional eligibility information &amp; acenarios
 
-Content detailing prerequisites should follow common scenarios on the page. Group prerequisites logically by benefit type, and order benefit types from most common to less common.
+Benefit eligibility or requirements information that is more nuanced than the summary placed inside the Common scenario overview (featured content component), including different requirements for sub-audiences, application assistance, etc.  Group prerequisites logically by benefit type, and order benefit types from most common to less common.
 
 ![eligibility_prerequisites](https://user-images.githubusercontent.com/50150810/58469821-3a6ec380-8138-11e9-85bf-0bd2f6292aec.png)
 
-#### 5. How to apply heading and primary call to action button
+#### D. Optional: Eligibility change announcement
+
+When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an informational alert box on this page. Follow the recommendations governing alert box usage, including
+* Use informational alerts to announce upcoming benefits
+* Use inoformational alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
+
+[View the alert box component](https://design.va.gov/components/alertboxes).
+
+#### E. How to apply heading and primary call to action button
 
 A brief heading should precede and call attention to the primary call to action button. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
@@ -83,34 +82,34 @@ The button can be followed by item 6, Additional Benefit-Eligibility-Specific Re
 
 [View the button component](https://design.va.gov/components/buttons).
 
-##### 5.1 Optional: Wizard pattern for branching eligibility choices
+##### F.Optional: Wizard pattern for branching eligibility choices
 
 In the case where there are multiple benefit options, the [Wizard pattern](https://design.va.gov/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
 
 The text on the primary green button should represent the job the wizard is performing, such as “Find your education benefits form.”
 
-#### 6. Optional: Additional benefit-eligibility-specific relevant content
+#### G. Optional: Additional benefit-eligibility-specific relevant content
 
 Any additional content necessary that is connected to the primary benefit eligibility use case for the page can be added here.
 
-#### 7. Optional: Benefit eligibility frequently asked questions
+#### H. Optional: Benefit eligibility frequently asked questions
 
 Use the accordion component to present questions that are common about eligibility for a benefit.
 
 [View the accordion component](https://design.va.gov/components/accordions).
 
-#### 8. Optional: Related benefits content
+#### I. Optional: Related benefits content
 
 Any additional benefits (e.g. vocational benefits eligibility that is related to education benefit eligibility) can be added to the bottom of the page using the RELATED PAGES component.
 
 ### Design components used for eligibility
 The following design system components are used to form the eligibility pattern:
 
-* [Alert boxes](https://design.va.gov/components/alertboxes) are used when you need to make a time-sensitive announcement about when eligibility for a benefit might become available, change, or be affected by the availability of a technical system or too.
 * [Featured content](https://design.va.gov/components/featured-content) can be used to promote the most common benefit scenario for that category of benefits. Note: please do not overuse this pattern as it decreases its effectiveness at being more easily seen on the page.
+* [Informational alert boxes](https://design.va.gov/components/alertboxes) are used when you need to make a time-sensitive announcement about when eligibility for a benefit might become available, change, or be affected by the availability of a technical system or too.
 * [Primary buttons](https://design.va.gov/components/buttons#primary-buttons) are used to provide the user with a single call to action to begin the application process. Note: please only use one button per eligibility page. In some cases the button may initiate a wizard, which can walk someone through prerequisite questions to guide them to the correct form, or in some cases, prevent them from applying using the wrong form.
 * [Accordions](https://design.va.gov/components/accordions) are used to provide frequently asked questions about benefits eligibility that may not necessarily be the primary reason a user has come to the page.
-* [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question. Note: this should only be used when the benefit   
+* [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question. 
 
 ## How to apply
 **_draft_**
