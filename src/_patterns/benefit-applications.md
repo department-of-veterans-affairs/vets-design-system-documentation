@@ -48,7 +48,7 @@ The eligibility page consists of the following elements:
 #### A. Title and statement of intent
 The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.
 
-#### B. Common scenario overview
+#### B. Critically important information (most common scenario)
 
 The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Some benefits are complex and contain several optional paths to confirmation. It is not acceptable to repeat this element on the page; instead use the Additional eligibility information &amp; scenarios element for other variations. Note: please do not use this pattern more than one time on the page as it decreases its effectiveness at drawing the eye to the most likely sought content.
 
@@ -70,7 +70,7 @@ When time sensitive content about a benefit — such as a new benefit being made
 
 [View the alert box component](https://design.va.gov/components/alertboxes).
 
-#### E. How to apply heading and primary call to action button
+#### E. How to apply heading and primary call-to-action button
 
 A brief heading should precede and call attention to the primary call to action button. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
