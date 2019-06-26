@@ -43,7 +43,7 @@ The hierarchy of the eligibility pattern allows it to be flexible enough to cove
 
 The eligibility page consists of the following elements:
 
-![eligibility_page_heirarchy](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/images/eligibility_page_heirarchy.png)
+![eligibility_page_heirarchy](/images/eligibility_page_heirarchy.png)
 
 #### A. Title and statement of intent
 The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.
@@ -52,7 +52,7 @@ The title should be “Eligibility for (Most Commonly Used Benefit Name).” The
 
 The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Some benefits are complex and contain several optional paths to confirmation. It is not acceptable to repeat this element on the page; instead use the Additional eligibility information &amp; scenarios element for other variations. Note: please do not use this pattern more than one time on the page as it decreases its effectiveness at drawing the eye to the most likely sought content.
 
-![eligibility_common_scenario_do-don't](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/images/eligibility_common_scenario_do-dont.png)
+![eligibility_common_scenario_do-don't](/images/eligibility_common_scenario_do-dont.png)
 
 [View the featured content component](https://design.va.gov/components/featured-content).
 
@@ -109,7 +109,7 @@ The following design system components are used to form the eligibility pattern:
 * [Informational alert boxes](https://design.va.gov/components/alertboxes) are used when you need to make a time-sensitive announcement about when eligibility for a benefit might become available, change, or be affected by the availability of a technical system or too.
 * [Primary buttons](https://design.va.gov/components/buttons#primary-buttons) are used to provide the user with a single call to action to begin the application process. Note: please only use one button per eligibility page. In some cases the button may initiate a wizard, which can walk someone through prerequisite questions to guide them to the correct form, or in some cases, prevent them from applying using the wrong form.
 * [Accordions](https://design.va.gov/components/accordions) are used to provide frequently asked questions about benefits eligibility that may not necessarily be the primary reason a user has come to the page.
-* [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question. 
+* [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question.
 
 ## How to apply
 **_draft_**
