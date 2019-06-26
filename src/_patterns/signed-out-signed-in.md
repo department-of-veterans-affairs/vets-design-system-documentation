@@ -20,12 +20,12 @@ When users sign in, the Sign In button is replaced by a link displays the user's
 
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
-    <strong>Signed out</strong>
-    <a href="https://user-images.githubusercontent.com/2838493/58288795-33cbff00-7d7a-11e9-8cc9-3d956030ac8c.png"><img src="https://user-images.githubusercontent.com/2838493/58288795-33cbff00-7d7a-11e9-8cc9-3d956030ac8c.png" alt=""/></a>
+    <p><strong>Signed out</strong></p>
+    <a href="/images/pattern-header-signed-out.png"><img src="/images/pattern-header-signed-out.png" alt="signed out header on desktop"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
-    <strong>Signed in</strong>
-    <a href="https://user-images.githubusercontent.com/2838493/58288819-4b0aec80-7d7a-11e9-9292-f932a62f545b.png"><img src="https://user-images.githubusercontent.com/2838493/58288819-4b0aec80-7d7a-11e9-9292-f932a62f545b.png" alt=""></a>
+    <p><strong>Signed in</strong></p>
+    <a href="/images/pattern-header-signed-in.png"><img src="/images/pattern-header-signed-in.png" alt="signed in header on desktop"></a>
   </div>
 </div>
 
@@ -35,12 +35,12 @@ When users are signed into the site on a smaller device, the Sign In link is rep
 
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
-    <strong>Signed out</strong>
-    <a href="https://user-images.githubusercontent.com/2838493/58352243-9d0e4980-7e30-11e9-8ba1-96e583d69734.png"><img src="https://user-images.githubusercontent.com/2838493/58352243-9d0e4980-7e30-11e9-8ba1-96e583d69734.png" alt=""/></a>
+    <p><strong>Signed out</strong></p>
+    <a href="/images/pattern-small-header-signed-out.png"><img src="/images/pattern-small-header-signed-out.png" alt="signed out view of mobile header"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
-    <strong>Signed in</strong>
-    <a href="https://user-images.githubusercontent.com/2838493/58352733-15c1d580-7e32-11e9-996c-8e8163cf287c.png"><img src="https://user-images.githubusercontent.com/2838493/58352733-15c1d580-7e32-11e9-996c-8e8163cf287c.png" alt=""></a>
+    <p><strong>Signed in</strong></p>
+    <a href="/images/pattern-small-header-signed-in.png"><img src="/images/pattern-small-header-signed-in.png" alt="Signed in view of mobile header"></a>
   </div>
 </div>
 
@@ -48,12 +48,12 @@ When users are signed in and have opened the menu, **My VA** and **My Health** a
 
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
-    <strong>Signed out</strong>
-    <a href="https://user-images.githubusercontent.com/2838493/58352289-c333e980-7e30-11e9-8d33-57a790147f99.png"><img src="https://user-images.githubusercontent.com/2838493/58352289-c333e980-7e30-11e9-8d33-57a790147f99.png" alt=""/></a>
+    <p><strong>Signed out</strong></p>
+    <a href="/images/pattern-small-menu-open-signed-out.png"><img src="/images/pattern-small-menu-open-signed-out.png" alt="screenshot of menu open when signed out"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
-    <strong>Signed in</strong>
-    <a href="(https://user-images.githubusercontent.com/2838493/58352812-57528080-7e32-11e9-9f12-f4dbece73049.png"><img src="https://user-images.githubusercontent.com/2838493/58352812-57528080-7e32-11e9-9f12-f4dbece73049.png" alt=""></a>
+    <p><strong>Signed in</strong></p>
+    <a href="/images/pattern-small-menu-open-signed-in.png"><img src="/images/pattern-small-menu-open-signed-in.png" alt="screenshot of menu open when signed in"></a>
   </div>
 </div>
 
@@ -82,12 +82,12 @@ Use the green alert box component when the user is required to do something befo
 
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
-    <strong>Signed out</strong>
-    <a href="https://user-images.githubusercontent.com/2838493/58289289-9d004200-7d7b-11e9-86ef-1878543005ea.png"><img src="https://user-images.githubusercontent.com/2838493/58289289-9d004200-7d7b-11e9-86ef-1878543005ea.png" alt=""/></a>
+    <p><strong>Signed out</strong></p>
+    <a href="/images/pattern-cta-sign-in-create-account.png"><img src="/images/pattern-cta-sign-in-create-account.png" alt="create account screenshot"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
-    <strong>Signed in</strong>
-    <a href="(https://user-images.githubusercontent.com/2838493/58289332-aee1e500-7d7b-11e9-9c2a-592757b2ddf2.png"><img src="https://user-images.githubusercontent.com/2838493/58289332-aee1e500-7d7b-11e9-9c2a-592757b2ddf2.png" alt=""></a>
+    <p><strong>Signed in</strong></p>
+    <a href="/images/pattern-cta-verify-identity.png"><img src="/images/pattern-cta-verify-identity.png" alt="verify identity screen shot"></a>
   </div>
 </div>
 
@@ -95,12 +95,12 @@ Use the green alert box component when the user is required to do something befo
 
 Use the blue informational alert box component when the call to action is beneficial, but not required to proceed. Usually, it is a better experience when the user is signed in, so the prompting the user to sign in first is the primary action.
 
-![image](https://user-images.githubusercontent.com/2838493/58289486-2dd71d80-7d7c-11e9-9e09-ea6ad0a94861.png)
+![call to action screenshot](/images/pattern-cta-sign-in.png)
 
 #### Error
 
 Use a red alert box component when the user is blocked from continuing a process. Always offer at least one way for the user to resolve the error.
 
-![image](https://user-images.githubusercontent.com/2838493/58289387-d769df00-7d7b-11e9-96f3-2e1d311b3b84.png)
+![verify identity error](/images/pattern-verify-identity-error.png)
 
 
