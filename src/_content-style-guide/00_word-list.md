@@ -121,6 +121,8 @@ death benefits: Define on first mention in body copy as "money from a Veteran’
 
 deceased: This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
 
+decision review form: A Veteran fills out a decision review "form," not an "application."
+
 demolish: Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
 
 dentistry: Use "dental care" instead.
@@ -212,8 +214,6 @@ final status: Use “in final status” rather than “in a final status."
 
 financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
-form: A Veteran fills out a decision review "form," not an "application."
-
 ### G
 
 GI: No periods (*not* G.I.).
@@ -243,7 +243,7 @@ hazardous exposure: Define in the context of body copy as "contact with harmful 
 health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
 - **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
 
-Higher-Level Review decision: Initial cap "Higher-Level Review" decision.
+Higher-Level Review decision: Initial cap "Higher-Level Review." Don't cap "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
 
 hospitalization: Use "hospital care."
 
@@ -394,8 +394,6 @@ PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTS
 
 regional office: Use instead of "regional benefit office." See VA regional office entry for details.
 
-request: A Veteran "requests" a decision review when they’re looking to appeal a VA decision. A Veteran also "requests" a Higher-Level Review and "requests" a Board Appeal. However, a Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim. 
-
 Reserve: Capitalize when used to refer to members of the military.  
 
 Reservist: Capitalize.
@@ -408,7 +406,7 @@ retroactive: Provide contextual information to help define, as relevant in the s
 
 review option: A Veteran selects from one of the available review options when they request a decision review. The three review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
 
-Reviewer: Someone involved in Supplemental Claim reviews. 
+Reviewer: The person at VA/Board Appeal who does the Supplemental Claim reviews. 
 
 ### S
 
@@ -457,7 +455,7 @@ substantially gainful employment: Provide a definition or note when using this t
 
 Supplemental Claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied." Note: A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
 
-Supplemental Claim decision: Initial cap "Supplemental Claim" decision. 
+Supplemental Claim decision: Initial cap "Supplemental Claim." Don't capitalize "decision."
 
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -527,7 +525,7 @@ Veterans Health Administration (VHA). See [Abbreviations and acronyms](https://d
 
 Veterans Job Bank: "Veterans" is plural.
 
-Veterans Law Judge: Capitalize. Can use "judge" on subsequent mentions in body copy.
+Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions in body copy instead of the full formal term.
 
 Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
