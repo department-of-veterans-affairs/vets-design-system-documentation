@@ -37,7 +37,7 @@ annual: Unless part of a benefit or program name, avoid the use of terms like "a
   -	**Instead of bi-annual:** "2 times each year" or "twice each year"
   -	**Instead of biennial:** "every other year"
 
-apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is okay for other benefits, such as "Apply for VA health care."
+apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
 Armed Forces: Capitalize.
 
