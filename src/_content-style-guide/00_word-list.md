@@ -72,7 +72,7 @@ caregiver: Use "caregiver," not "caretaker." Also note that family members do no
 certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits.
   -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
 
-Character of Discharge review process: Initial cap "Character of Discharge" review process.
+Character of Discharge review process: Initial cap "Character of Discharge" review process. Don't capitalize "review process."
 
 character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 
@@ -82,7 +82,7 @@ Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMP
 
 claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
 
-click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's okay to use "click [Button/Interface Name]." [See also Links](https://design.va.gov/content-style-guide/links)
+click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's OK to use "click [Button/Interface Name]." [See also Links](https://design.va.gov/content-style-guide/links)
   - **Like this:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you.
 
   -	**Like this in UI copy:** In your account dashboard, click __Profile.__
@@ -107,7 +107,7 @@ court-appointed guardian: Define on first mention in body content as "a person t
 
 court-martial: Lowercase, as in "general court-martial," "special court-martial," and "summary court-martial."
 
-C&P exam: see "claim exam" entry.
+C&P exam: See "claim exam" entry.
 
 ### D
 
@@ -119,13 +119,13 @@ demolish: Use "knock down" or, when used as a noun in the context of a job of bu
 
 dentistry: Use "dental care" instead.
 
-Department of Veterans Affairs: Note there's no apostrophe on Veterans. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
+Department of Veterans Affairs: Note there's no apostrophe in "Veterans." On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
 - Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
 - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
 
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
-deprivation: Define one first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas.
+deprivation: Define on first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 decision notice: Do not refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
 
@@ -149,20 +149,20 @@ education: In general, on VA.gov we use "education" as a noun, and sometimes as 
 educational: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education" as above. (See education entry.) 
 - **Like this:** educational assistance, educational institution, educational plan, educational program
 
-educational and career counseling:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: this style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
+educational and career counseling:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
 
 educational and vocational counseling: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling.
  
 educational assistance: We use this style of phrasing to be consistent with Chapter 35, DEA, REAP, and VEAP.
 
-educational counseling: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: this usage differs from the style within eBenefits VR&E > Education and Career Counseling pages.
+educational counseling: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: This usage differs from the style within eBenefits VR&E > Education and Career Counseling pages.
   
 email: No hyphen (not "e-mail").
 
-environmental hazards: Define on first mention in body copy as "harmful toxins in the air, water, or land such as those that get released from burn pits." Include definition as another sentence, a parenthetical, or set off with commas.
-
 employment handicap: Add a definition or note to help explain this term.
   - **Like this:** Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
+
+environmental hazards: Define on first mention in body copy as "harmful toxins in the air, water, or land such as those that get released from burn pits." Include definition as another sentence, a parenthetical, or set off with commas.
 
 equivalent: Use an alternative word or phrase&mdash;such as "equal to," "same as," "as in," etc.&mdash;depending on context.
  - **Like this:** Apply for VA health care online (equal to VA Form 10-10EZ).
@@ -221,9 +221,9 @@ guarantee: Can be used as either a noun or a verb. For our purposes, especially 
 
 guaranty: Should be used only as a noun. Example: Because of our partial guaranty, lenders may offer better loan terms for Veterans.
 
-Guard member: Use the gender neutral term, "Guard member," instead of Guardsman/Guardsmen on VA.gov. Capitalize "Guard."
+Guard member: Use the gender-neutral term, "Guard member," instead of Guardsman/Guardsmen on VA.gov. Capitalize "Guard."
 
-Gulf War Illness: Capitalize the I in Illness. Per NIH, this is also sometimes called "chronic multisymptom illness." Note: "Gulf War Syndrome" is the former name, and is no longer used. When needed for clarity or SEO, include the former term on first mention. 
+Gulf War Illness: Capitalize "Illness." Per NIH, this is also sometimes called "chronic multisymptom illness." Note: "Gulf War Syndrome" is the former name, and is no longer used. When needed for clarity or SEO, include the former term on first mention. 
 - **Like this:** Gulf War Illness (known in the past as Gulf War Syndrome)
 
 ### H
@@ -235,14 +235,14 @@ hazardous exposure: Define in the context of body copy as "contact with harmful 
 health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
 - **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
 
-hospitalization: Use "hospital care."
-
 home loan: Don't use a hyphen even when used as an adjective.
 - **Like this:** home loan benefits
 
 - **Not this:** home-loan benefits
 
 Homeless or at risk of becoming homeless.
+
+hospitalization: Use "hospital care."
 
 House confinement: Phrase as "being unable to leave your house (known as house confinement)."
 
@@ -276,7 +276,7 @@ life insurance: Do not hyphenate in the form of a compound adjective: “life in
 
 loan guaranty agent: Lowercase. Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
 - **Like this:** Charles Lee, our loan guaranty agent, may ask you to provide more financial information.
-- **Not this:** Loan Technician Charles Lee may ask you to provide more financial information.
+- **Not this:** Loan Guaranty Agent Charles Lee may ask you to provide more financial information.
 
 loan technician: Lowercase. Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
 - **Like this:** Your loan technician, Jane Smith, may ask you to provide more information.
@@ -335,7 +335,7 @@ patient: Use "person living with," as in "person living with diabetes," instead 
 
 percent: Use the symbol % rather than spelling it out, for scannability.
 
-period of honorable service (not honorable period of service)
+period of honorable service: Not honorable period of service)
 
 permanent disability, permanent and total disability: Define a "permanent disability" as "a disability that's not expected to improve" and define "permanent and total disability" as "a disability that we've rated as 100% disabling and that's not expected to improve." Include definition in another sentence, as a parenthetical, or set off with commas.
 
@@ -363,9 +363,9 @@ presumptive disability: Use "health problem" and reference when needed for clari
 prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
 - **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
-Project 112/SHAD
-
 process (a claim): Use "review." Example: We'll review your disability claim.
+
+Project 112/SHAD
 
 prove: Avoid the word "prove" when speaking about evidence that a Veteran needs to provide for a claim. Instead, use more empathetic language such as "show," "provide," or "to support your claim."
 - **Like this:** You'll need to provide evidence that shows your illness was likely caused by your service.
@@ -375,7 +375,7 @@ PTSD: posttraumatic stress disorder (no hyphen), per the National Center for PTS
 
 - **First instance in body copy:** posttraumatic stress disorder (PTSD)
 - **After first instance in body copy:** PTSD
-- **Exception for page titles:** If the spelled out term is too long in a page title (H1) or meta title tag, it’s okay to use PTSD by itself, and then use the full spelling with the acronym in the first instance of body copy.
+- **Exception for page titles:** If the spelled-out term is too long in a page title (H1) or meta title tag, it’s OK to use PTSD by itself, and then use the full spelling with the acronym in the first instance of body copy.
 
 
 ### Q
@@ -432,10 +432,10 @@ Social Security number: Don't capitalize "number."
 
 special claim: Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
-
 substantially gainful employment: Provide a definition or note when using this term. 
-- **Like this:** You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment), don’t count.
+- **Like this:** You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment) don’t count.
+
+suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
 supplemental claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied."
 
@@ -480,18 +480,18 @@ vesicant agents: Use "vesicant (blistering) agents."
 Vet Center: Capitalize "Center."
 
 Veteran: On VA.gov, capitalize even when used as a common noun. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with Veterans, rather than referring to them in the third person.
--	**Okay:** Learn about services and benefits that we offer to Veterans and their families.
+-	**OK:** Learn about services and benefits that we offer to Veterans and their families.
 -	**Better:** Learn about VA services and benefits that you and your family may be eligible for.
 
 Veteran Health Identification Card (VHIC). Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Affairs: Note there's no apostrophe on Veterans. See the entries "VA" and "Department of Veterans Affairs."
+Veterans Affairs: Note there's no apostrophe in Veterans. See the entries "VA" and "Department of Veterans Affairs."
 
 Veterans Benefits Administration (VBA). Note that "Benefits" is plural. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the official name of a cemetery.
 -	**Like this:** Family members may be eligible if they're buried in a Veterans cemetery. 
-- **Or when used in a proper noun:** The Hawaii State Veterans Cemetery is located in Kaneohe, HI.
+- **Or when used in a proper noun:** The Hawaii State Veterans Cemetery is located in Kaneohe, Hawaii.
 
 Veterans Crisis Line (VCL): Note that "Veterans" does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
