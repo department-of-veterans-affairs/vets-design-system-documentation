@@ -406,7 +406,7 @@ retroactive: Provide contextual information to help define, as relevant in the s
 
 review option: A Veteran selects from one of the available review options when they request a decision review. The three review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
 
-reviewer: The person at VA or Board Appeal who reviews the Supplemental Claim. 
+reviewer: Lowercase. The person at VA or Board Appeal who reviews the Supplemental Claim. 
 
 ### S
 
@@ -414,7 +414,7 @@ secondary service-connected claim: Define on first mention in body copy as "a cl
 
 Selected Reserve: Generally used in the context of the Montgomery GI Bill Selected Reserve.
 
-senior reviewer: Someone involved in Higher-Level Reviews. 
+senior reviewer: Lowercase. Someone involved in Higher-Level Reviews. 
 
 service connected: Hyphenate when modifying a noun. Otherwise, do not hyphenate.
   - **Like this (modifying a noun):** A Veteran with a service-connected disability may be eligible for additional health care benefits.
