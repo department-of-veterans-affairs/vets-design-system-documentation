@@ -243,7 +243,7 @@ hazardous exposure: Define in the context of body copy as "contact with harmful 
 health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
 - **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
 
-Higher-Level Review decision: Initial cap "Higher-Level Review." Don't cap "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
+Higher-Level Review decision: Initial cap "Higher-Level Review." Don't capitalize "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
 
 hospitalization: Use "hospital care."
 
@@ -406,7 +406,7 @@ retroactive: Provide contextual information to help define, as relevant in the s
 
 review option: A Veteran selects from one of the available review options when they request a decision review. The three review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
 
-Reviewer: The person at VA/Board Appeal who does the Supplemental Claim reviews. 
+reviewer: The person at VA or Board Appeal who reviews the Supplemental Claim. 
 
 ### S
 
@@ -414,7 +414,7 @@ secondary service-connected claim: Define on first mention in body copy as "a cl
 
 Selected Reserve: Generally used in the context of the Montgomery GI Bill Selected Reserve.
 
-Senior reviewer: Someone involved in Higher-Level Reviews. 
+senior reviewer: Someone involved in Higher-Level Reviews. 
 
 service connected: Hyphenate when modifying a noun. Otherwise, do not hyphenate.
   - **Like this (modifying a noun):** A Veteran with a service-connected disability may be eligible for additional health care benefits.
