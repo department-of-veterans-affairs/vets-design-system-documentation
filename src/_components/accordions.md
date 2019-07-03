@@ -26,6 +26,16 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 {% include snippet.html content='html/accordions-bordered.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/' %}
 
+## Multi-selectable
+
+Adding a `data-multiselectable` attribute allows multiple accordions in a set to be open at the same time. This attribute can applied to any style of accordion.
+
+<div class="site-showcase">
+{% include_relative html/accordions-multiselectable.html %}
+</div>
+
+{% include snippet.html content='html/accordions-multiselectable.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/collapsiblepanel/' %}
+
 
 ## Accessibility
 
