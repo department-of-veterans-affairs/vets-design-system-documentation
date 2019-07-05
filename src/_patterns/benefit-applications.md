@@ -56,18 +56,18 @@ The featured content component is used to present the user with the most commonl
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Do</h3>
 <div class="do-dont__content" markdown="1">
-Use a single featured component for the most common scenario. 
+Use a single featured component for the most common scenario.
+![eligibility_page_heirarchy](/images/featured-content-do.png) 
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Don’t</h3>
 <div class="do-dont__content" markdown="1">
-Use two or more featured components for multiple scenarios, because their can't be more than one that is the most common. Use other page elements for this purpose. 
+Use two or more featured components for multiple scenarios, because their can't be more than one that is the most common. Use other page elements for this purpose.
+![eligibility_page_heirarchy](/images/featured-content-dont.png) 
 </div>
 </div>
 </div>
-
-![eligibility common scenario do-don't](/images/eligibility_common_scenario_do-dont.png)
 
 [View the featured content component](https://design.va.gov/components/featured-content).
 
@@ -116,15 +116,6 @@ Use the accordion component to present questions that are common about eligibili
 #### I. Optional: Related benefits content
 
 Any additional benefits (e.g. vocational benefits eligibility that is related to education benefit eligibility) can be added to the bottom of the page using the RELATED PAGES component.
-
-### Design components used for eligibility
-The following design system components are used to form the eligibility pattern:
-
-* [Featured content](https://design.va.gov/components/featured-content) can be used to promote the most common benefit scenario for that category of benefits. Note: please do not overuse this pattern as it decreases its effectiveness at being more easily seen on the page.
-* [Informational alert boxes](https://design.va.gov/components/alertboxes) are used when you need to make a time-sensitive announcement about when eligibility for a benefit might become available, change, or be affected by the availability of a technical system or too.
-* [Primary buttons](https://design.va.gov/components/buttons#primary-buttons) are used to provide the user with a single call to action to begin the application process. Note: please only use one button per eligibility page. In some cases the button may initiate a wizard, which can walk someone through prerequisite questions to guide them to the correct form, or in some cases, prevent them from applying using the wrong form.
-* [Accordions](https://design.va.gov/components/accordions) are used to provide frequently asked questions about benefits eligibility that may not necessarily be the primary reason a user has come to the page.
-* [Sidenav](https://design.va.gov/components/sidenav) can be used to identify secondary or sub audiences relevant to benefit eligibility, such as Active-duty service members,  POWS, or other variations in constituencies that may also be eligible for a benefit in question.
 
 ## How to apply
 **_draft_**
