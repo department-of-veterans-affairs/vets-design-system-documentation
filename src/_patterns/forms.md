@@ -2,8 +2,10 @@
 layout: default
 title: Forms
 draft: true
+tags: Forms, Multi-part forms, Error, Errors, Form templates
 anchors:
   - anchor: All or none of the above
+  - anchor: List and loop
   - anchor: Error messages
   - anchor: Templates
 ---
@@ -46,11 +48,32 @@ In the case of radio options, you may include options for “all of these” or 
 
 When using an “all of these” option, ensure that under no circumstance would a partial set of options apply to the user.
 
+## List and loop
+
+Some questions in forms only have one answer, such as "what is the city and state of your birth?" Other questions can have an unknown amount of answers, such as "list all the cities and states you've lived within." List and loop is a pattern that appears in forms when we don't know how many responses to a question a Veteran will provide, but we need to collect a number between 1 and "n," where "n" is all possible responses. This pattern appears in both simple and complex ways.
+
+### Simple list and loop pattern diagram
+
+A simple example of the pattern would include a small number of entry fields, such as one or two text fields in a single line. For a question like "Please list all the cities in which you've lived," a Veteran would list a single city, be given the option to add another city, and could continue adding additional cities until all cities were entered. Then the Veteran would choose to either continue to the next step in the form process or simply submit the completed form if they were at the end of the process.
+
+This diagram outlines the basic components required for each state of a list and loop pattern.
+
+![list-and-loop-diagram]({{site.baseurl}}/images/list-and-loop-contents.png)
+
+### Complex list and loops that include multiple inputs, conditionals
+
+Consider the question "What are the addresses of all locations where have you served?" The associated inputs, such as street address, city, state, and zip code would need to be repeated for each additional address of services. However, there are going to be changes in fields and form input rules based on whether or not the address is in the United States or international, such as the elimination/variation of "state" fields or variations on how zip codes are validated. Here's an example of how a more complex list and loop looks in the [VA Pension Application Process](https://www.va.gov/pension/application/527EZ/introduction).
+
+![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop1.png)
+
+![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop2.png)
+
+![pension-serviceperiods-3]({{site.baseurl}}/images/list-and-loop3.png)
+
+
 ## Error messages
 
-<div class="va-introtext" markdown="1">
 Error messages let users know when they have made a mistake on a form field.
-</div>
 
 In all cases, only show error validation messages or stylings after a user has interacted with a particular field.
 
