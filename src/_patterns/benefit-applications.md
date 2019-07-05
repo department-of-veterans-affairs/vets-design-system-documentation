@@ -52,6 +52,21 @@ The title should be “Eligibility for (Most Commonly Used Benefit Name).” The
 
 The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Some benefits are complex and contain several optional paths to confirmation. It is not acceptable to repeat this element on the page; instead use the Additional eligibility information &amp; scenarios element for other variations. Note: please do not use this pattern more than one time on the page as it decreases its effectiveness at drawing the eye to the most likely sought content.
 
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Use a single featured component for the most common scenario. 
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content" markdown="1">
+Use two or more featured components for multiple scenarios, because their can't be more than one that is the most common. Use other page elements for this purpose. 
+</div>
+</div>
+</div>
+
 ![eligibility common scenario do-don't](/images/eligibility_common_scenario_do-dont.png)
 
 [View the featured content component](https://design.va.gov/components/featured-content).
