@@ -50,11 +50,11 @@ When using an “all of these” option, ensure that under no circumstance would
 
 ## List and loop
 
-Some questions in forms only have one answer, such as "what is the city and state of your birth?" Other questions can have an unknown amount of answers, such as "list all the cities and states you've lived within." List and loop is a pattern that appears in forms when we don't know how many responses to a question a Veteran will provide, but we need to collect a number between 1 and "n," where "n" is all possible responses. This pattern appears in both simple and complex ways.
+Some questions in forms only have one answer, such as "what is the city and state of your birth?" Other questions can have an unknown amount of answers, such as "list all the cities and states you've lived within." List and loop is a pattern that appears in forms when we don't know how many responses to a question a user will provide, but we need to collect a number between 1 and "n," where "n" is all possible responses. This pattern appears in both simple and complex ways.
 
 ### Simple list and loop pattern diagram
 
-A simple example of the pattern would include a small number of entry fields, such as one or two text fields in a single line. For a question like "Please list all the cities in which you've lived," a Veteran would list a single city, be given the option to add another city, and could continue adding additional cities until all cities were entered. Then the Veteran would choose to either continue to the next step in the form process or simply submit the completed form if they were at the end of the process.
+A simple example of the pattern would include a small number of entry fields, such as one or two text fields in a single line. For a question like "Please list all the cities in which you've lived," a user would list a single city, be given the option to add another city, and could continue adding additional cities until all cities were entered. Then the user would choose to either continue to the next step in the form process or simply submit the completed form if they were at the end of the process.
 
 This diagram outlines the basic components required for each state of a list and loop pattern.
 
