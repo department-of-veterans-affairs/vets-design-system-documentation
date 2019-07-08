@@ -73,7 +73,7 @@ We generally reserve button CTAs to launch an application, to sign in, or other 
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
   
-__In this example, the link is an action related to the topic, but it isn't the primary CTA which is to use the online application.__
+__In this example, the link is an action related to the topic, but it isn't the primary CTA, which is to use the online application.__
 
 You can apply online or mail your Application for Burial Benefits (VA Form 21P-530).
 
