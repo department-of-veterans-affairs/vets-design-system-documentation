@@ -118,34 +118,35 @@ Use the accordion component to present questions that are common about eligibili
 Any additional benefits (e.g. vocational benefits eligibility that is related to education benefit eligibility) can be added to the bottom of the page using the RELATED PAGES component.
 
 ## How to apply
-**_draft_**
+
 This is a high-level description of the “How to Apply” page for benefit applications. The content recommended for the “How to Apply” page may overlap with the “Eligibility” or “Apply now” sections.
 
 ### Intro text
 Intro text is required and describes what the page is about. For the “How to Apply” page, the intro text usually includes the following:
 * The benefit(s) the application is for
 * The type(s) of users the application is aimed at (Veteran, service member, qualified family member)
+* A link back to the Eligiblity page to send users to the Eligibility page to ensure they're eligible for benefit
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
 ### Preparing to apply (informational callout)
 On the “How to Apply” page, use the [informational callout](https://design.va.gov/patterns/content-presentation) box to present chunked, scannable snippets of critical information needed by the majority of applicants. For example,
 
-* describe what a user needs to do before they begin the application
-* list items needed to complete the application (SSN, military history, etc.). Required items should be called out.
+* Describe what a user needs to do before they begin the application
+* List items needed to complete the application (SSN, military history, etc.). Required items should be called out.
 
 Note: The blue [informational callout](https://design.va.gov/patterns/content-presentation) box should only be used for the most important information on the page. Since it includes critical information, the callout should appear near the top of the page.
 
 ### How do I apply?
 The “How do I apply" section lists possible application methods. It should emphasize the optimal path for Veterans, (which may be how to get help from a human instead of online help.) Some common application methods are:
 * Online
-   * green CTA button
+   * Green CTA button
 * By mail
    * Link to the printable application form
    * Instructions for mailing the completed, printed form
 * In person
-   * link to find nearest VA regional office
+   * Link to find nearest VA regional office
 * With the help of a trained professional
-   * link to get help
+   * Link to get help
 
 ### What happens after I apply?
 The “What happens after I apply” section sets the user’s expectations about what will happen next in the application process. This section may include:
@@ -167,31 +168,36 @@ Include the “More information section” if there is helpful supporting inform
 
 ## Apply now
 
-**_draft_**
-This is a high-level description of the introduction page for benefit applications.
-### File for [benefit] header
-VA paper form equivalency appear under the page header. This shows the equivalent VA paper form
+This is a high-level description of the introduction page for benefit applications. The introduction page is the start of the react app and indicates the beginning of the form. It isn't a static page. 
+This page is separate from the static "How to Apply" page, and repeats some eligiblity and how to apply information in case users navigate to this page from somewhere outside of VA.gov. 
+
+### Page header
+The page title should be: "Apply for [benefit type]". For Disability, the page header should be "File for disability compensation" 
+
+Under the page header is the VA paper form equivalency. This shows the equivalent VA paper form that the online application corresponds to. For example: 
 *Equal to VA Form 21-526EZ (Application for Disability Compensation and Related Compensation Benefits).*
 
-### Sign-in
+### Sign-in message
+At the top of the introduction page, is a sign in message. There are two different messages depending if a user is signed in or if the user isn't signed in to their account. 
+
 Message when a user isn't signed in:
 - Lets applicants know that by signing in some information from their profile account could be prefilled into the application and that they can save their work as they go.  
 - Gives time on how long the application will be saved for
-- Blue CTA button *Sign In to Start Your Application*
+- Blue CTA button *Sign in to start your application*
 - Link to fill out the application without signing in. (For all online applications except for Disability Compensation)
 
 [screenshot]
 ![signed out.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/1d5d3f75-9047-44d1-8ebb-93c5c7c25e53)
 
 Message when a user is signed in:
-- Lets applicant know they are signed in and can save work as they go
+- Lets applicant know they are signed in and can save their work as they go
 - Green CTA button
 
 [screenshot]
 ![signed in message.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/a965f3f5-5065-4b54-bfda-5ebb5452e4bb)
 
 ### Subway map
-Subway, or process, map (https://design.va.gov/components/process-list) shows the applicant the steps they need to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
+Subway, or process, map (https://design.va.gov/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
 
 **Prepare**
 - Gives the applicant the information they’ll need to fill out the form, such as if they need to submit any documentation or provide their SSN, bank information, military history, spouse information, etc.
@@ -253,7 +259,7 @@ Intro tex describes what will happen next in the application process after an ap
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
 ### When will I hear back about my application?
-This section appears as  card or gray alert box (https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response and includes:
+This section appears as card or gray alert box (https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response and includes:
 * Content or a link to a page describing what the user can expect after they apply
 * Time frame for how long it takes to receive a response
 
