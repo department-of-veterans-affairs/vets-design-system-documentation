@@ -13,6 +13,13 @@ The latest news and updates on Formation and the content style guide
 
 ### July 3
 
+**Site updates**
+- Documentation for [promo banner]({{ site.baseurl }}/components/promo-banners) variations
+
+---
+
+### July 3
+
 **6.7.0**
 - [Accordion]({{ site.baseurl }}/components/accordions) component now supports a multi-selectable feature, allowing multiple accordions within a set to be open at the same time.
 
