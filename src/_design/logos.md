@@ -10,7 +10,8 @@ tags: [logos, logo, brand, branding, draft]
 
 # Logos
 
-Using custom logos for VA departments, offices, teams, sub-groups, special programs, initiatives, or events is not supported on VA.gov. This practice aligns with the requirements in the [VA Graphic Standards](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2) and the [Web Governance site](https://www.va.gov/web/standards/templates.cfm).  
+Using custom logos for VA departments, offices, teams, sub-groups, special programs, initiatives, or events is not supported on VA.gov. This practice aligns with the requirements in the [VA Graphic Standards](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2) and the [Web Governance site](https://www.va.gov/web/standards/templates.cfm). 
+
 In user research, Veterans told us that VA’s multiple brands are confusing and complicated to understand. By being consistent with our visual branding, we can reduce Veteran confusion from “logo clutter.”
 
 Custom logos for the following use cases are not supported on VA.gov:
@@ -40,7 +41,7 @@ This is based on page 9 of the VA Graphic Standards, seen below:
 
 They don’t care about our many sub-brands. It confuses them and creates feelings of mistrust about which is the source of truth for their benefits and services. Based on this Veteran feedback, VA has taken a “branded house” strategy.
 
-### Branded house vs. a house of brands*
+### Branded house vs. a house of brands
 
 * **Branded house.** An example of a “branded house” is the company Apple. Every Apple device and service appears as part of a single, unified visual ecosystem. 
 * **House of brands.** An example of a “house of brands” is the company Johnson & Johnson. This company includes many sub-brands that are more recognizable than the company itself. Think of Tylenol, Neutrogena, Listerine, etc. 
