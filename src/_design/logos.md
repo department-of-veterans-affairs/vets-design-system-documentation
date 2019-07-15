@@ -5,7 +5,7 @@ draft: true
 
 #Page info: Edit these items below
 title: Logos
-tags: [logos, logo, brand, branding, draft]
+tags: logos, logo, brand, branding
 ---
 
 # Logos
