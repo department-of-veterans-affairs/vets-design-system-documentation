@@ -1,7 +1,6 @@
 ---
 # Do NOT Edit layout
 layout: default
-draft: true
 
 #Page info: Edit these items below
 title: Logos
