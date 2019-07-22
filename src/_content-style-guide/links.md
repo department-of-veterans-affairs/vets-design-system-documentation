@@ -3,7 +3,6 @@ layout: default
 title: Links
 anchors:
   - anchor: Embedded text links vs. CTA links 
-  - anchor: Linking to external sites
 ---
 
 # Links
