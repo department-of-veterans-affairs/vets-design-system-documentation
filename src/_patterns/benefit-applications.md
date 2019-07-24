@@ -56,14 +56,14 @@ The featured content component is used to present the user with the most commonl
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Do</h3>
 <div class="do-dont__content" markdown="1">
-Use a single featured component for the most common scenario.
+  <p>Use a single featured component for the most common scenario.</p>
 ![eligibility_page_heirarchy](/images/featured-content-do.png) 
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Don’t</h3>
 <div class="do-dont__content" markdown="1">
-Use two or more featured components for multiple scenarios, because their can't be more than one that is the most common. Use other page elements for this purpose.
+<p>Use two or more featured components for multiple scenarios, because their can't be more than one that is the most common. Use other page elements for this purpose.</p>
 ![eligibility_page_heirarchy](/images/featured-content-dont.png) 
 </div>
 </div>
