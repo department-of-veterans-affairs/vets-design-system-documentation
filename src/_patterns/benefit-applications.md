@@ -174,8 +174,8 @@ This page is separate from the static "How to Apply" page, and repeats some elig
 ### Page header
 The page title should be: "Apply for [benefit type]". For Disability, the page header should be "File for disability compensation" 
 
-Under the page header is the VA paper form equivalency. This shows the equivalent VA paper form that the online application corresponds to. For example: 
-*Equal to VA Form 21-526EZ (Application for Disability Compensation and Related Compensation Benefits).*
+Under the page header is the VA paper form equivalency. This shows the equivalent VA paper form that the online application corresponds to. <br>
+For example: *Equal to VA Form 21-526EZ (Application for Disability Compensation and Related Compensation Benefits).*
 
 ### Sign-in message
 At the top of the introduction page, is a sign in message. There are two different messages depending if a user is signed in or if the user isn't signed in to their account. 
@@ -197,56 +197,63 @@ Message when a user is signed in:
 ![signed in message.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/a965f3f5-5065-4b54-bfda-5ebb5452e4bb)
 
 ### Subway map
-Subway, or process, map (https://design.va.gov/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
+[Subway or process map](https://design.va.gov/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
 
 **Prepare**
 - Gives the applicant the information they’ll need to fill out the form, such as if they need to submit any documentation or provide their SSN, bank information, military history, spouse information, etc.
 - Items that are optional are called out.
 
 **Apply**
+
 We use the same language for this step across all forms:
+
 *Complete this [benefits] form. After submitting the form, you’ll get a confirmation message. You can print this page for your records.*
 
-Within the **Apply**  header we also include content about how an applicant can get help filling out the form. This message is also consistent across all form introduction pages:
+Within this header we also include content about how an applicant can get help filling out the form. This message is also consistent across all form introduction pages:
 
-*What if I need help filling out my application? An accredited representative, like a Veterans Service Officer (VSO), can help you fill out your claim.*
+*What if I need help filling out my application? An accredited representative, like a Veterans Service Officer (VSO), can help you fill out your claim.* <br>
 [Get help filing your claim]
 
 **VA Review**
+
 The step tells applicants how much time it takes VA to review the application.  The content under this heading depends on what type of benefit they're applying for. For example:
-{for Health Care) *We process health care claims within a week.*
-(for Education) *We usually process claims within 30 days. We’ll let you know by mail if we need more information.*
-(for Disability) *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:
-  *xxxyxlxlx
+
+For Health Care form, the message is: *We process health care claims within a week.*
+For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.*
+For Disability Comp form, the message is: *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:
+
+  * xxxyxlxlx
   *
   *
 
 **VA Decision**
+
 This step tells applicants how and when they will be informed of the status of their application (if denied or approved) and the next steps. It sets the user’s expectation for how long it takes to receive a response.
 
 
 ### Other components on the intro page
-Depending on the type of benefit, we sometimes include an alert box with specific info about that benefit (https://design.va.gov/components/alertboxes).
+Depending on the type of benefit, we sometimes include an [alert box](https://design.va.gov/components/alertboxes) with specific info about that benefit.
+
 This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
 [screenshot]
 ![alert box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/05c0adb9-7d2d-4040-8d2f-9742273d7771)
 
 
 ### OMB information
-This appears at the bottom of the Introduction page and shows
-•	Respondent burden
-•	OMB control number
-•	Privacy act (link)
+This appears at the bottom of the Introduction page and shows:
+- Respondent burden
+- OMB control number
+- Privacy act (link)
 
 
 ### Need help?
 This footer appears on the bottom of every page of the form. It includes phone numbers if an applicant needs more support or has questions about filling out the form.
 
 ### Page examples
-https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction
-https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction
-https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction
-https://www.va.gov/pension/application/527EZ/introduction
+[File for disability compensation introduction page](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)<br>
+[Apply for education benefits introduction page](https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction)<br>
+[Apply for Pre-need eligiblity introduction page](https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction) <br>
+[Apply for Veterans pension introduction page](https://www.va.gov/pension/application/527EZ/introduction)
 
 
 ## After You Apply
@@ -259,26 +266,26 @@ Intro tex describes what will happen next in the application process after an ap
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
 ### When will I hear back about my application?
-This section appears as card or gray alert box (https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response and includes:
+This section appears as card or [gray alert box](https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response and includes:
 * Content or a link to a page describing what the user can expect after they apply
 * Time frame for how long it takes to receive a response
 
-[screenshot, HCA]
+[screenshot, Health Care After You Apply page]
 ![HCA alert box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/e1800594-661b-475c-9c4d-4172ae9d39eb)
 
-[screenshot EDU]
+[screenshot Education After You Apply page]
 ![EDU alert box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/bef3a079-2203-4e0a-a6d3-01e2c007b9bd)
 
-[screenshot Disability]
+[screenshot Disability Compensation After You Apply page]
 ![Disability alert.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/68505b40-9ded-4f32-b256-a33c79aa9b49)
 
-[Preneed has this info, but not in a card or grey alert box]
+[Preneed After You Apply page has this info, but not in a card or grey alert box]
 
 ![Preneed alert.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/895cf031-bb1d-4a88-ac72-5849e22596cd)
 
 
 
-After “When will I hear back about my application” header, each of the “After You Apply” pages diverge on format. I’ve listed each page below with a brief description what appears on the page  
+After **When will I hear back about my application** header, each of the “After You Apply” pages diverge on format. I’ve listed each page below with a brief description what appears on the page  
 
 ### HCA After You Apply
 The following are the subheads on the Health Care After You Apply page
@@ -290,13 +297,14 @@ On the Health Care After You Apply page, the content appears as subway process m
 ![HCA subway map.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/83e01440-ba5c-4c4a-bd0d-8fc73674bc72)
 
 ### Other questions
-Series of accordions addressing follow up questions an applicant might have
+This is a series of accordions of follow-up questions an applicant might have
 
 [screenshot]
 ![HCA other questions.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/051a50e4-0bde-4000-8b77-ab3aa1242d6f)
 
 
 ### Education After You Apply
+
 #### What should I do while I wait?
 Content describing what the user can do while they wait
 
@@ -308,11 +316,11 @@ Content describing what the user can expect after they apply
 
 ### Disability After You Apply Page
 #### The amount of time it takes to review your claim depends on:
-Bullets points listing the factors that go into how long it takes to process a claim
+Bullets points listing how long it takes to process a claim
 
 ### What should I do while I wait?
 Content describing what the user can do while they wait to hear about their claim.
-Includes Track Your Claims CTA blue button
+Includes **Track Your Claims** CTA blue button
 
 [screenshot]
 
