@@ -186,8 +186,7 @@ Message when a user isn't signed in:
 - Blue CTA button *Sign in to start your application*
 - Link to fill out the application without signing in. (For all online applications except for Disability Compensation)
 
-[screenshot]
-![signed out.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/1d5d3f75-9047-44d1-8ebb-93c5c7c25e53)
+![how-to-apply_unauth-message](/images/benefit-apps-unauth-message.png)
 
 Message when a user is signed in:
 - Lets applicant know they are signed in and can save their work as they go
