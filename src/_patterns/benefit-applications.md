@@ -192,8 +192,7 @@ Message when a user is signed in:
 - Lets applicant know they are signed in and can save their work as they go
 - Green CTA button
 
-[screenshot]
-![signed in message.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/a965f3f5-5065-4b54-bfda-5ebb5452e4bb)
+![how-to-apply_unauth-message](/images/how-to-apply_auth-message.png)
 
 ### Subway map
 [Subway or process map](https://design.va.gov/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
