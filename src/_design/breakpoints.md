@@ -15,7 +15,7 @@ anchors:
 
 There are six key breakpoints where the design of any page layout, utility, or component may change.
 
-{% include _breakpoint-names.html %}
+{% include _breakpoint-names.html hide_link=true %}
 
 ### What if you need to create a different breakpoint?
 
