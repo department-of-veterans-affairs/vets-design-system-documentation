@@ -71,7 +71,7 @@ The featured content component is used to present the user with the most commonl
 
 [View the featured content component](https://design.va.gov/components/featured-content).
 
-#### C. Additional eligibility information &amp; acenarios
+#### C. Additional eligibility information &amp; scenarios
 
 Benefit eligibility or requirements information that is more nuanced than the summary placed inside the Common scenario overview (featured content component), including different requirements for sub-audiences, application assistance, etc.  Group prerequisites logically by benefit type, and order benefit types from most common to less common.
 
@@ -121,8 +121,11 @@ Any additional benefits (e.g. vocational benefits eligibility that is related to
 
 This is a high-level description of the “How to Apply” page for benefit applications. The content recommended for the “How to Apply” page may overlap with the “Eligibility” or “Apply now” sections.
 
-### Intro text
-Intro text is required and describes what the page is about. For the “How to Apply” page, the intro text usually includes the following:
+### Page header
+The page title should be “How to apply for (Most Commonly Used Benefit Name).”
+
+### Introduction
+Introduction text describes what the page is about. For the “How to Apply” page, the intro text includes the following:
 * The benefit(s) the application is for
 * The type(s) of users the application is aimed at (Veteran, service member, qualified family member)
 * A link back to the Eligiblity page to send users to the Eligibility page to ensure they're eligible for benefit
@@ -160,7 +163,7 @@ Include the “More information section” if there is helpful supporting inform
 * For many short content items, consider using the accordion component to reduce the content on the page.
 * For longer content items, consider linking to a separate page.
 
-### Live examples
+### Live page examples
 * [How to apply for VA health care](https://www.va.gov/health-care/how-to-apply/)
 * [How to file a VA disability claim](https://www.va.gov/disability/how-to-file-claim/)
 * [How to apply for the GI Bill and other education benefits](https://www.va.gov/education/how-to-apply/)
@@ -180,7 +183,7 @@ For example: *Equal to VA Form 21-526EZ (Application for Disability Compensation
 ### Sign-in message
 At the top of the introduction page, is a sign in message. There are two different messages depending if a user is signed in or if the user isn't signed in to their account. 
 
-Message when a user isn't signed in:
+**Message when a user isn't signed in:**
 - Lets applicants know that by signing in some information from their profile account could be prefilled into the application and that they can save their work as they go.  
 - Gives time on how long the application will be saved for
 - Blue CTA button *Sign in to start your application*
@@ -188,7 +191,7 @@ Message when a user isn't signed in:
 
 ![how-to-apply_unauth-message](/images/benefit-apps-unauth-message.png)
 
-Message when a user is signed in:
+**Message when a user is signed in:**
 - Lets applicant know they are signed in and can save their work as they go
 - Green CTA button
 
@@ -207,7 +210,7 @@ We use the same language for this step across all forms:
 
 *Complete this [benefits] form. After submitting the form, you’ll get a confirmation message. You can print this page for your records.*
 
-Within this header we also include content about how an applicant can get help filling out the form. This message is also consistent across all form introduction pages:
+We also include content about how an applicant can get help filling out the form. 
 
 *What if I need help filling out my application? An accredited representative, like a Veterans Service Officer (VSO), can help you fill out your claim.* <br>
 [Get help filing your claim]
@@ -216,50 +219,50 @@ Within this header we also include content about how an applicant can get help f
 
 The step tells applicants how much time it takes VA to review the application.  The content under this heading depends on what type of benefit they're applying for. For example:
 
-For Health Care form, the message is: *We process health care claims within a week.*
-For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.*
+For Health Care form, the message is: *We process health care claims within a week.* <br>
+For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.* <br>
 For Disability Comp form, the message is: *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:
 
   * xxxyxlxlx
-  *
+  * xxxyxlxlx
   *
 
 **VA Decision**
 
-This step tells applicants how and when they will be informed of the status of their application (if denied or approved) and the next steps. It sets the user’s expectation for how long it takes to receive a response.
-
-
-### Other components on the intro page
-Depending on the type of benefit, we sometimes include an [alert box](https://design.va.gov/components/alertboxes) with specific info about that benefit.
-
-This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
-[screenshot]
-![alert box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/05c0adb9-7d2d-4040-8d2f-9742273d7771)
-
+This step sets the user’s expectation for how long it takes to receive a response. It tells applicants how and when they will be informed of the status of their application (if denied or approved).
 
 ### OMB information
 This appears at the bottom of the Introduction page and shows:
 - Respondent burden
 - OMB control number
-- Privacy act (link)
-
+- Privacy act link
 
 ### Need help?
 This footer appears on the bottom of every page of the form. It includes phone numbers if an applicant needs more support or has questions about filling out the form.
 
-### Page examples
+### Optional: Other components on the intro page
+Depending on the type of benefit, we sometimes include an [alert box](https://design.va.gov/components/alertboxes) with specific info about that benefit.
+
+This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
+[screenshot]
+![how-to-apply-alert-box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/05c0adb9-7d2d-4040-8d2f-9742273d7771)
+
+
+### Live page examples
 [File for disability compensation introduction page](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)<br>
 [Apply for education benefits introduction page](https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction)<br>
 [Apply for Pre-need eligiblity introduction page](https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction) <br>
 [Apply for Veterans pension introduction page](https://www.va.gov/pension/application/527EZ/introduction)
 
 
-## After You Apply
+## After you apply
 This is a high-level description of the “After You Apply” page for benefit applications.
 
+### Page header
+The page title should be: "After you apply for (Most Commonly Used Benefit Name)."
 
-### Intro text
-Intro tex describes what will happen next in the application process after an applicant submits their applications. This section may include:
+### Introduction
+Introduction text describes what will happen next in the application process after an applicant submits an application. This section may include:
 * What an applicant needs to do after they submit their application.
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
@@ -282,10 +285,11 @@ This section appears as card or [gray alert box](https://design.va.gov/component
 ![Preneed alert.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/895cf031-bb1d-4a88-ac72-5849e22596cd)
 
 
+### Optional components on "After you apply" page
 
-After **When will I hear back about my application** header, each of the “After You Apply” pages diverge on format. I’ve listed each page below with a brief description what appears on the page  
+After **When will I hear back about my application** header, each of the “After you apply” pages vary on format and content. Below is a list of the different After you apply pages with a brief description what appears on the page  
 
-### HCA After You Apply
+### HCA after you apply
 The following are the subheads on the Health Care After You Apply page
 #### If you approve my application what do I do next?
 On the Health Care After You Apply page, the content appears as subway process map with next steps for the applicant.
@@ -301,7 +305,7 @@ This is a series of accordions of follow-up questions an applicant might have
 ![HCA other questions.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/051a50e4-0bde-4000-8b77-ab3aa1242d6f)
 
 
-### Education After You Apply
+### Education after you apply
 
 #### What should I do while I wait?
 Content describing what the user can do while they wait
@@ -312,7 +316,7 @@ Content describing what the user can expect after they apply
 [screenshot]
 ![EDU after apply.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/0866e978-6889-4656-8980-29e98a94165d)
 
-### Disability After You Apply Page
+### Disability after you apply
 #### The amount of time it takes to review your claim depends on:
 Bullets points listing how long it takes to process a claim
 
@@ -337,7 +341,7 @@ Content describing what the user options the user has if they disagree with a VA
 
 ![2019-05-23 (8).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/26a3f97b-a732-433b-8752-cb9422d337eb)
 
-### Pre-Need After You Apply
+### Pre-Need after you apply
 
 #### If I qualify for burial, how will VA notify me of the decision?
 Content describing how VA inform the applicant the decision on their application.
