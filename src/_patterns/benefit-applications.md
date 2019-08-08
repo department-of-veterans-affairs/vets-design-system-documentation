@@ -266,27 +266,30 @@ Introduction text describes what will happen next in the application process aft
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
 ### When will I hear back about my application?
-This section appears as card or [gray alert box](https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response and includes:
+This section appears as card or [gray alert box](https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response, and includes:
 * Content or a link to a page describing what the user can expect after they apply
 * Time frame for how long it takes to receive a response
 
-[screenshot, Health Care After You Apply page]
-![HCA alert box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/e1800594-661b-475c-9c4d-4172ae9d39eb)
+**Health care decision information:** 
 
-[screenshot Education After You Apply page]
-![EDU alert box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/bef3a079-2203-4e0a-a6d3-01e2c007b9bd)
+![after-you-apply-health-care](/images/after-you-apply-health-care-decision.png)
 
-[screenshot Disability Compensation After You Apply page]
-![Disability alert.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/68505b40-9ded-4f32-b256-a33c79aa9b49)
+**Education decision information: 
 
-[Preneed After You Apply page has this info, but not in a card or grey alert box]
+![after-you-apply-edu](/images/after-you-apply-edu-decision.png)
 
-![Preneed alert.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/895cf031-bb1d-4a88-ac72-5849e22596cd)
+**Disability compensation decision information:** 
+
+![after-you-apply-disability](/images/after-you-apply-disability-decision.png)
+
+**Preneed decision information:**
+
+![after-you-apply-preneed](/images/after-you-apply-preneed-decision.png)
 
 
-### Optional components on "After you apply" page
+### Optional: Other components on "After you apply" pages
 
-After **When will I hear back about my application** header, each of the “After you apply” pages vary on format and content. Below is a list of the different After you apply pages with a brief description what appears on the page  
+After **When will I hear back about my application** title, the page varies on format and content. Below is a list of the "After you apply" pages and their optional components: 
 
 ### HCA after you apply
 The following are the subheads on the Health Care After You Apply page
