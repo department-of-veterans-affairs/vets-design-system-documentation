@@ -245,7 +245,7 @@ Depending on the type of benefit, we sometimes include an [alert box](https://de
 
 This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
 
-![apply-now-alert-box](/images/benefit-apps-apply-now-alert-box.png)
+![apply-now-alert-box](/images/apply-now-alert-box.png)
 
 ### Live page examples
 [File for disability compensation introduction page](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)<br>
