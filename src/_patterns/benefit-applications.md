@@ -171,7 +171,7 @@ Include the “More information section” if there is helpful supporting inform
 
 ## Apply now
 
-This is a high-level description of the introduction page for benefit applications. The introduction page is the start of the react app and indicates the beginning of the form. It isn't a static page. 
+The Apply Now page is the start of the react app and indicates the beginning of the form. It isn't a static page. 
 This page is separate from the static "How to Apply" page, and repeats some eligiblity and how to apply information in case users navigate to this page from somewhere outside of VA.gov. 
 
 ### Page header
@@ -221,7 +221,7 @@ The step tells applicants how much time it takes VA to review the application.  
 
 For Health Care form, the message is: *We process health care claims within a week.* <br>
 For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.* <br>
-For Disability Comp form, the message is: *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:
+For Disability Comp form, the message is: *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:*
 
   * xxxyxlxlx
   * xxxyxlxlx
@@ -244,9 +244,8 @@ This footer appears on the bottom of every page of the form. It includes phone n
 Depending on the type of benefit, we sometimes include an [alert box](https://design.va.gov/components/alertboxes) with specific info about that benefit.
 
 This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
-[screenshot]
-![how-to-apply-alert-box.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/05c0adb9-7d2d-4040-8d2f-9742273d7771)
 
+![apply-now-alert-box](/images/benefit-apps-apply-now-alert-box.png)
 
 ### Live page examples
 [File for disability compensation introduction page](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)<br>
