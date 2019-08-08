@@ -270,40 +270,38 @@ This section appears as card or [gray alert box](https://design.va.gov/component
 * Content or a link to a page describing what the user can expect after they apply
 * Time frame for how long it takes to receive a response
 
-**Health care decision information:** 
+**Health care:** 
 
 ![after-you-apply-health-care](/images/after-you-apply-health-care-decision.png)
 
-**Education decision information: 
+**Education:** 
 
 ![after-you-apply-edu](/images/after-you-apply-edu-decision.png)
 
-**Disability compensation decision information:** 
+**Disability compensation:** 
 
 ![after-you-apply-disability](/images/after-you-apply-disability-decision.png)
 
-**Preneed decision information:**
+**Preneed:**
 
 ![after-you-apply-preneed](/images/after-you-apply-preneed-decision.png)
 
 
-### Optional: Other components on "After you apply" pages
+### Optional: Other components on the "After you apply" page
 
-After **When will I hear back about my application** title, the page varies on format and content. Below is a list of the "After you apply" pages and their optional components: 
+Below is a list of optional components that appear on the "After you apply" page. 
 
 ### HCA after you apply
 The following are the subheads on the Health Care After You Apply page
 #### If you approve my application what do I do next?
 On the Health Care After You Apply page, the content appears as subway process map with next steps for the applicant.
 
-[screenshot]
 
 ![HCA subway map.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/83e01440-ba5c-4c4a-bd0d-8fc73674bc72)
 
 ### Other questions
 This is a series of accordions of follow-up questions an applicant might have
 
-[screenshot]
 ![HCA other questions.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/051a50e4-0bde-4000-8b77-ab3aa1242d6f)
 
 
@@ -315,7 +313,6 @@ Content describing what the user can do while they wait
 #### What happens after I apply?
 Content describing what the user can expect after they apply
 
-[screenshot]
 ![EDU after apply.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/0866e978-6889-4656-8980-29e98a94165d)
 
 ### Disability after you apply
@@ -326,20 +323,15 @@ Bullets points listing how long it takes to process a claim
 Content describing what the user can do while they wait to hear about their claim.
 Includes **Track Your Claims** CTA blue button
 
-[screenshot]
-
 ![Disibility with blue button.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/fbbce6a9-0e19-4865-9772-85c7c36533e9)
 
 #### What happens after I file a claim
 Subway process map underneath this header about how a claim is processed
 
-[screenshot]
 ![2019-05-23 (7).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/ec75ac94-5a6e-4b72-b4fc-17151889962b)
 
 #### What should I do if I disagree with a decision on my claim?
 Content describing what the user options the user has if they disagree with a VA decision.
-
-[screenshot]
 
 ![2019-05-23 (8).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/26a3f97b-a732-433b-8752-cb9422d337eb)
 
@@ -348,7 +340,6 @@ Content describing what the user options the user has if they disagree with a VA
 #### If I qualify for burial, how will VA notify me of the decision?
 Content describing how VA inform the applicant the decision on their application.
 
-[screenshot]
 ![2019-05-23 (9).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/e9345765-8aea-4d3f-95d1-1f73588ab622)
 
 #### What happens if VA decides I don’t qualify for burial in a VA national cemetery?
@@ -357,6 +348,5 @@ Content describing how VA inform the applicant the decision on their application
 
 #### What if I have other questions?
 
-[screenshot]
 ![2019-05-23 (10).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/2ecfaefe-6286-4e5c-bd68-b28068b2a5f3)
 
