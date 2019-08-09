@@ -282,71 +282,30 @@ This section appears as card or [gray alert box](https://design.va.gov/component
 
 ![after-you-apply-disability](/images/after-you-apply-disability-decision.png)
 
-**Preneed:**
-
-![after-you-apply-preneed](/images/after-you-apply-preneed-decision.png)
-
 
 ### Optional: Other components on the "After you apply" page
 
 Below is a list of optional components that appear on the "After you apply" page. 
 
-### HCA after you apply
-The following are the subheads on the Health Care After You Apply page
-#### If you approve my application what do I do next?
-On the Health Care After You Apply page, the content appears as subway process map with next steps for the applicant.
+### Subway process map
 
+[View the subway map component](https://design.va.gov/components/process-list).
 
-![HCA subway map.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/83e01440-ba5c-4c4a-bd0d-8fc73674bc72)
+**Health care:**
+![after-you-apply-subway-map](/images/after-you-apply-subway-map.png)
 
-### Other questions
-This is a series of accordions of follow-up questions an applicant might have
+### Accordions
 
-![HCA other questions.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/051a50e4-0bde-4000-8b77-ab3aa1242d6f)
+[View the accordion component]((https://design.va.gov/components/accordions).
 
+**Health care:**
 
-### Education after you apply
+![after-you-apply-accordions](/images/after-you-apply-accordions.png)
 
-#### What should I do while I wait?
-Content describing what the user can do while they wait
+### Call-to-action button
 
-#### What happens after I apply?
-Content describing what the user can expect after they apply
+[View the button component](https://design.va.gov/components/buttons).
 
-![EDU after apply.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/0866e978-6889-4656-8980-29e98a94165d)
+**Disability compensation:**
 
-### Disability after you apply
-#### The amount of time it takes to review your claim depends on:
-Bullets points listing how long it takes to process a claim
-
-### What should I do while I wait?
-Content describing what the user can do while they wait to hear about their claim.
-Includes **Track Your Claims** CTA blue button
-
-![Disibility with blue button.png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/fbbce6a9-0e19-4865-9772-85c7c36533e9)
-
-#### What happens after I file a claim
-Subway process map underneath this header about how a claim is processed
-
-![2019-05-23 (7).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/ec75ac94-5a6e-4b72-b4fc-17151889962b)
-
-#### What should I do if I disagree with a decision on my claim?
-Content describing what the user options the user has if they disagree with a VA decision.
-
-![2019-05-23 (8).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/26a3f97b-a732-433b-8752-cb9422d337eb)
-
-### Pre-Need after you apply
-
-#### If I qualify for burial, how will VA notify me of the decision?
-Content describing how VA inform the applicant the decision on their application.
-
-![2019-05-23 (9).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/e9345765-8aea-4d3f-95d1-1f73588ab622)
-
-#### What happens if VA decides I don’t qualify for burial in a VA national cemetery?
-
-#### Can I appeal the decision?
-
-#### What if I have other questions?
-
-![2019-05-23 (10).png](https://images.zenhubusercontent.com/59b0414bb0222d5de476aa22/2ecfaefe-6286-4e5c-bd68-b28068b2a5f3)
-
+![after-you-apply-CTA-button](/images/after-you-apply-CTA-button.png)
