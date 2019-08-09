@@ -119,20 +119,20 @@ Any additional benefits (e.g. vocational benefits eligibility that is related to
 
 ## How to apply
 
-This is a high-level description of the “How to Apply” page for benefit applications. The content recommended for the “How to Apply” page may overlap with the “Eligibility” or “Apply now” sections.
+This is a high-level description of the “How to apply” page for benefit applications. The content recommended for the “How to apply” page may overlap with the “Eligibility” or “Apply now” sections.
 
-### Page header
+### Page title
 The page title should be “How to apply for (Most Commonly Used Benefit Name).”
 
 ### Introduction
-Introduction text describes what the page is about. For the “How to Apply” page, the intro text includes the following:
+The introduction describes what the page is about. For the “How to apply” page, the introduction text includes the following:
 * The benefit(s) the application is for
 * The type(s) of users the application is aimed at (Veteran, service member, qualified family member)
 * A link back to the Eligiblity page to send users to the Eligibility page to ensure they're eligible for benefit
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
 ### Preparing to apply (informational callout)
-On the “How to Apply” page, use the [informational callout](https://design.va.gov/patterns/content-presentation) box to present chunked, scannable snippets of critical information needed by the majority of applicants. For example,
+On the “How to apply” page, use the [informational callout](https://design.va.gov/patterns/content-presentation) box to present chunked, scannable snippets of critical information needed by the majority of applicants. For example,
 
 * Describe what a user needs to do before they begin the application
 * List items needed to complete the application (SSN, military history, etc.). Required items should be called out.
@@ -171,10 +171,10 @@ Include the “More information section” if there is helpful supporting inform
 
 ## Apply now
 
-The Apply Now page is the start of the react app and indicates the beginning of the form. It isn't a static page. 
-This page is separate from the static "How to Apply" page, and repeats some eligiblity and how to apply information in case users navigate to this page from somewhere outside of VA.gov. 
+The "Apply" page is the start of the react app and indicates the beginning of the form. It isn't a static page. 
+This page is separate from the static "How to apply" page, and repeats some eligiblity and how to apply information in case users navigate to this page from somewhere outside of VA.gov. 
 
-### Page header
+### Page title
 The page title should be: "Apply for [benefit type]". For Disability, the page header should be "File for disability compensation" 
 
 Under the page header is the VA paper form equivalency. This shows the equivalent VA paper form that the online application corresponds to. <br>
@@ -210,14 +210,12 @@ We use the same language for this step across all forms:
 
 *Complete this [benefits] form. After submitting the form, you’ll get a confirmation message. You can print this page for your records.*
 
-We also include content about how an applicant can get help filling out the form. 
-
 *What if I need help filling out my application? An accredited representative, like a Veterans Service Officer (VSO), can help you fill out your claim.* <br>
 [Get help filing your claim]
 
-**VA Review**
+**VA review**
 
-The step tells applicants how much time it takes VA to review the application.  The content under this heading depends on what type of benefit they're applying for. For example:
+The step tells applicants how much time it takes VA to review the application. The content under this heading depends on what type of benefit they're applying for. For example:
 
 For Health Care form, the message is: *We process health care claims within a week.* <br>
 For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.* <br>
@@ -227,12 +225,12 @@ For Disability Comp form, the message is: *We process applications in the order 
   * xxxyxlxlx
   *
 
-**VA Decision**
+**VA decision**
 
-This step sets the user’s expectation for how long it takes to receive a response. It tells applicants how and when they will be informed of the status of their application (if denied or approved).
+This step sets the user’s expectation for when they will receive a response. It tells applicants how and when they will be informed of the status of their application (if denied or approved).
 
 ### OMB information
-This appears at the bottom of the Introduction page and shows:
+This appears at the bottom of the Apply page and shows:
 - Respondent burden
 - OMB control number
 - Privacy act link
@@ -240,8 +238,8 @@ This appears at the bottom of the Introduction page and shows:
 ### Need help?
 This footer appears on the bottom of every page of the form. It includes phone numbers if an applicant needs more support or has questions about filling out the form.
 
-### Optional: Other components on the intro page
-Depending on the type of benefit, we sometimes include an [alert box](https://design.va.gov/components/alertboxes) with specific info about that benefit.
+### Optional: Other components on the Apply page
+Depending on the type of benefit, an [alert box](https://design.va.gov/components/alertboxes) is sometimes included with specific inforomation or detail about that benefit.
 
 This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
 
@@ -255,13 +253,13 @@ This is an optional component and should only be used if there is an important b
 
 
 ## After you apply
-This is a high-level description of the “After You Apply” page for benefit applications.
+This is a high-level description of the “After you apply” page for benefit application.
 
-### Page header
+### Page title
 The page title should be: "After you apply for (Most Commonly Used Benefit Name)."
 
 ### Introduction
-Introduction text describes what will happen next in the application process after an applicant submits an application. This section may include:
+The introduction describes what will happen next in the application process after an applicant submits an application. This section may include:
 * What an applicant needs to do after they submit their application.
 * SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
 
@@ -296,7 +294,7 @@ Below is a list of optional components that appear on the "After you apply" page
 
 ### Accordions
 
-[View the accordion component]((https://design.va.gov/components/accordions).
+[View the accordion component](https://design.va.gov/components/accordions).
 
 **Health care:**
 
@@ -308,4 +306,4 @@ Below is a list of optional components that appear on the "After you apply" page
 
 **Disability compensation:**
 
-![after-you-apply-CTA-button](/images/after-you-apply-CTA-button.png)
+![after-you-apply-cta-button](/images/after-you-apply-cta-button.png)
