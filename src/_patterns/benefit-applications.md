@@ -143,6 +143,10 @@ Note: The blue [informational callout](https://design.va.gov/patterns/content-pr
 The “How do I apply" section lists possible application methods. It should emphasize the optimal path for Veterans, (which may be how to get help from a human instead of online help.) Some common application methods are:
 * Online
    * Green CTA button
+   The button will lead the user/applicant to one of two places: either the application flow for the benefit or a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+
+**Note:** never put more than one green button on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).   
+   
 * By mail
    * Link to the printable application form
    * Instructions for mailing the completed, printed form
@@ -217,9 +221,9 @@ We use the same language for this step across all forms:
 
 The step tells applicants how much time it takes VA to review the application. The content under this heading depends on what type of benefit they're applying for. For example:
 
-For Health Care form, the message is: *We process health care claims within a week.* <br>
-For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.* <br>
-For Disability Comp form, the message is: *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:*
+- For Health Care form, the message is: *We process health care claims within a week.* <br>
+- For Education forms, the message is: *We usually process claims within 30 days. We’ll let you know by mail if we need more information.* <br>
+- For Disability Comp form, the message is: *We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:*
 
   * xxxyxlxlx
   * xxxyxlxlx
