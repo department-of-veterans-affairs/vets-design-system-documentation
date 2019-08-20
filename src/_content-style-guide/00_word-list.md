@@ -404,7 +404,7 @@ resume: Don't use accent marks when referring to the noun, as in a job resume.
 
 retroactive: Provide contextual information to help define, as relevant in the specific situation. Example: Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury.
 
-review option: A Veteran selects from one of the available review options when they request a decision review. The three review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
+review option: A Veteran selects from one of the available review options when they request a decision review. The 3 review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
 
 reviewer: Lowercase. Person who reviews Supplemental Claims. (As opposed to a senior reviewer, who reviews Higher-Level Reviews.)
 
