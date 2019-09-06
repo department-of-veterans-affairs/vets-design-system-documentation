@@ -137,6 +137,8 @@ Department of Veterans Affairs: Note there's no apostrophe on Veterans. On VA.go
 - Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
 - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
 
+Dependency and Indemnity Compensation (DIC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
 deprivation: Define one first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas.
