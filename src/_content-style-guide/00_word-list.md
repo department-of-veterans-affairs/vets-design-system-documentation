@@ -341,6 +341,8 @@ nonpay: Do not hyphenate.
 
 Note: Used to call special attention to something. It is bolded and never in all caps.
 
+Notice of Disagreement (NOD): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 number: Spell out this word. Don't abbreviate to "No." or "#."
 
 ### O
