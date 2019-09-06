@@ -278,6 +278,8 @@ Job Bank: Neither word is plural. See Veterans Job Bank entry.
 
 ### K
 
+Korean Demilitarized Zone (DMZ): Capitalize, per AP Style. Use acronymn in subsequent references on the same page.
+
 ### L
 
 lewisite: Define on first mention in body copy as "a natural compound that contains the poison arsenic." Include definition in another sentence, as a parenthetical, or set off with commas.
