@@ -32,6 +32,8 @@ advanced: Capitalize only when used as part of the branded term "My HealtheVet A
 
 Agent Orange: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
+Agent Orange Registry health exam: Initial cap "Agent Orange Registry" health exam.
+
 annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
   -	**Instead of annual:**  "each year" or "once each year"
   -	**Instead of bi-annual:** "2 times each year" or "twice each year"
@@ -39,7 +41,7 @@ annual: Unless part of a benefit or program name, avoid the use of terms like "a
 
 appeal option: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
-apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is okay for other benefits, such as "Apply for VA health care."
+apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
 Armed Forces: Capitalize.
 
