@@ -34,6 +34,8 @@ Agent Orange: Define term on first mention in body copy as "a toxic chemical use
 
 Agent Orange Registry health exam: Initial cap "Agent Orange Registry" health exam.
 
+Aid and Attendance: Capped and always spelled out when referring to the VA pension benefit. Do not use the acronym A&A.
+
 annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
   -	**Instead of annual:**  "each year" or "once each year"
   -	**Instead of bi-annual:** "2 times each year" or "twice each year"
