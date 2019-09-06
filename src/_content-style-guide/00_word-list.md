@@ -345,6 +345,8 @@ PO Box: Don't use periods.
 
 patient: Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
 
+pension management center: Capitalize only if part of the formal name of a center. Example: Get more information about the Philadelphia VA Pension Management Center. Find the VA pension management center that serves the state you live in.
+
 percent: Use the symbol % rather than spelling it out, for scannability.
 
 period of honorable service (not honorable period of service)
