@@ -550,6 +550,8 @@ Veterans Service Representative (VSR). “Veterans” is plural and does not tak
 
 Vietnam Era: Capitalize "Era," but not in "Vietnam War era" (lowercase "era"). Mostly we use the first term: Vietnam Era. See entry on "era" for additional explanation.
 
+Vocational Rehabilitation Counselor (VRC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 ### W
 
 website: One word, not capitalized.
