@@ -79,6 +79,8 @@ can vs. may: Use "can" when meaning the ability or power to do something; use "m
 
 caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
 
+Certificate of Eligibility (COE): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits.
   -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
 
@@ -282,7 +284,7 @@ Job Bank: Neither word is plural. See Veterans Job Bank entry.
 
 ### K
 
-Korean Demilitarized Zone (DMZ): Capitalize, per AP Style. Use acronymn in subsequent references on the same page.
+Korean Demilitarized Zone (DMZ): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 ### L
 
