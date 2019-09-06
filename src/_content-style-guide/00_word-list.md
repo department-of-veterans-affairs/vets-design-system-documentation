@@ -463,6 +463,8 @@ Social Security number: Don't capitalize "number."
 
 special claim: Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
+Statement of the Case: Use initial caps
+
 suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
 substantially gainful employment: Provide a definition or note when using this term. 
@@ -471,6 +473,8 @@ substantially gainful employment: Provide a definition or note when using this t
 Supplemental Claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied." Note: A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
 
 Supplemental Claim decision: Initial cap "Supplemental Claim." Don't capitalize "decision."
+
+Supplemental Statement of the Case: Use initial caps
 
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
