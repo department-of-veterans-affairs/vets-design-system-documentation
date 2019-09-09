@@ -333,6 +333,8 @@ National Cemetery Administration (NCA). See [Abbreviations and acronyms](https:/
 
 National Guard: Can also use "Guard."
 
+Native American direct loan (NADL): No hyphen in Native American and don't capitalize "direct loan." See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 new claim: Define on first mention in body copy as "a claim for added benefits or other benefit requests related to an existing service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 non-traditional: Hyphenate when preceding and modifying a noun.
