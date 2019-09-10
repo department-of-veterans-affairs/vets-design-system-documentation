@@ -530,6 +530,8 @@ Veteran: On VA.gov, capitalize even when used as a common noun. When possible, y
 
 Veteran Health Identification Card (VHIC). Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
+Veteran ID Card (VIC): Capitalize when referring to the [ID card](https://www.va.gov/records/get-veteran-id-cards/vic/) that allows Veterans discounts at many businesses. Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 Veteran-Owned Small Business (VSOB): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Affairs: Note there's no apostrophe on Veterans. See the entries "VA" and "Department of Veterans Affairs."
