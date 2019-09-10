@@ -32,9 +32,9 @@ advanced: Capitalize only when used as part of the branded term "My HealtheVet A
 
 Agent Orange: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-Agent Orange Registry health exam: Initial cap "Agent Orange Registry" health exam.
+Agent Orange Registry health exam: Initial cap "Agent Orange Registry." Don't capitalize "health exam."
 
-Aid and Attendance: Capped and always spelled out when referring to the VA pension benefit. Do not use the acronym A&A.
+Aid and Attendance: Initial cap and always spell out when referring to the VA pension benefit. Do not use the acronym A&A.
 
 annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
   -	**Instead of annual:**  "each year" or "once each year"
@@ -79,7 +79,7 @@ can vs. may: Use "can" when meaning the ability or power to do something; use "m
 
 caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
 
-Certificate of Eligibility (COE): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Certificate of Eligibility (COE): Initial cap. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits.
   -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
@@ -137,7 +137,7 @@ Department of Veterans Affairs: Note there's no apostrophe on Veterans. On VA.go
 - Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
 - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
 
-Dependency and Indemnity Compensation (DIC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Dependency and Indemnity Compensation (DIC): Initial cap. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -214,7 +214,7 @@ Family Servicemembers’ Group Life Insurance (FSGLI): This is the program name.
 
 federal: Do not capitalize "federal" for generic usage such as "federal agency."
 
-Fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
+fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 file a claim for disability compensation: Use "file a claim" rather than "apply for benefits" when referring to disability.
 
@@ -263,6 +263,8 @@ home loan: Don't use a hyphen even when used as an adjective.
 Homeless or at risk of becoming homeless.
 
 House confinement: Phrase as "being unable to leave your house (known as house confinement)."
+
+Housebound allowance: Capitalize "Housebound." Lowercase "allowance."
 
 ### I
 
@@ -333,7 +335,7 @@ National Cemetery Administration (NCA). See [Abbreviations and acronyms](https:/
 
 National Guard: Can also use "Guard."
 
-Native American direct loan (NADL): No hyphen in Native American and don't capitalize "direct loan." See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Native American direct loan (NADL): Don't capitalize "direct loan." See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 new claim: Define on first mention in body copy as "a claim for added benefits or other benefit requests related to an existing service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
@@ -480,6 +482,8 @@ Supplemental Statement of the Case: Use initial caps
 
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
+Survivors Pension: Capitalize. Note there's no apostrophe in "Survivors."
+
 ### T
 
 terminal illness: When this term is used as part of eligibility information for a benefit such as hospice care or life insurance, include a plain language definition of the term. Example: "terminal illness (a condition that can't be treated)."
@@ -551,6 +555,8 @@ Veterans Job Bank: "Veterans" is plural.
 Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions in body copy instead of the full formal term.
 
 Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
+Veterans Pension: Capitalize and note no apostrophe in "Veterans." Lowercase "pension" when writing "VA pension." 
 
 Veterans Service Organization (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
