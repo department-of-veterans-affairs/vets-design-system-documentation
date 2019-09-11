@@ -32,10 +32,6 @@ advanced: Capitalize only when used as part of the branded term "My HealtheVet A
 
 Agent Orange: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-Agent Orange Registry health exam: Initial cap "Agent Orange Registry." Don't capitalize "health exam."
-
-Aid and Attendance: Initial cap and always spell out when referring to the VA pension benefit. Do not use the acronym A&A.
-
 annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
   -	**Instead of annual:**  "each year" or "once each year"
   -	**Instead of bi-annual:** "2 times each year" or "twice each year"
@@ -43,7 +39,7 @@ annual: Unless part of a benefit or program name, avoid the use of terms like "a
 
 appeal option: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
-apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
+apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is okay for other benefits, such as "Apply for VA health care."
 
 Armed Forces: Capitalize.
 
@@ -78,8 +74,6 @@ Brown Water: Capitalize.
 can vs. may: Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
 
 caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
-
-Certificate of Eligibility (COE): Initial cap. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits.
   -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
@@ -136,8 +130,6 @@ dentistry: Use "dental care" instead.
 Department of Veterans Affairs: Note there's no apostrophe on Veterans. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
 - Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
 - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
-
-Dependency and Indemnity Compensation (DIC): Initial cap. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -214,7 +206,7 @@ Family Servicemembers’ Group Life Insurance (FSGLI): This is the program name.
 
 federal: Do not capitalize "federal" for generic usage such as "federal agency."
 
-fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
+Fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 file a claim for disability compensation: Use "file a claim" rather than "apply for benefits" when referring to disability.
 
@@ -264,8 +256,6 @@ Homeless or at risk of becoming homeless.
 
 House confinement: Phrase as "being unable to leave your house (known as house confinement)."
 
-Housebound allowance: Capitalize "Housebound." Lowercase "allowance."
-
 ### I
 
 illness: Use "illness" to refer to diseases.
@@ -287,8 +277,6 @@ internet: Lowercase, per AP Style.
 Job Bank: Neither word is plural. See Veterans Job Bank entry.
 
 ### K
-
-Korean Demilitarized Zone (DMZ): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 ### L
 
@@ -335,8 +323,6 @@ National Cemetery Administration (NCA). See [Abbreviations and acronyms](https:/
 
 National Guard: Can also use "Guard."
 
-Native American direct loan (NADL): Don't capitalize "direct loan." See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
-
 new claim: Define on first mention in body copy as "a claim for added benefits or other benefit requests related to an existing service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 non-traditional: Hyphenate when preceding and modifying a noun.
@@ -344,8 +330,6 @@ non-traditional: Hyphenate when preceding and modifying a noun.
 nonpay: Do not hyphenate.
 
 Note: Used to call special attention to something. It is bolded and never in all caps.
-
-Notice of Disagreement (NOD): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 number: Spell out this word. Don't abbreviate to "No." or "#."
 
@@ -358,8 +342,6 @@ original claim: Define on first mention in body copy as "your first claim for di
 PO Box: Don't use periods.
 
 patient: Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
-
-pension management center: Capitalize only if part of the formal name of a center. Example: Get more information about the Philadelphia VA Pension Management Center. Find the VA pension management center that serves the state you live in.
 
 percent: Use the symbol % rather than spelling it out, for scannability.
 
@@ -467,8 +449,6 @@ Social Security number: Don't capitalize "number."
 
 special claim: Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-Statement of the Case: Use initial caps
-
 suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
 substantially gainful employment: Provide a definition or note when using this term. 
@@ -478,11 +458,7 @@ Supplemental Claim: Define on first mention in body copy as "providing new evide
 
 Supplemental Claim decision: Initial cap "Supplemental Claim." Don't capitalize "decision."
 
-Supplemental Statement of the Case: Use initial caps
-
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
-
-Survivors Pension: Capitalize. Note there's no apostrophe in "Survivors."
 
 ### T
 
@@ -530,10 +506,6 @@ Veteran: On VA.gov, capitalize even when used as a common noun. When possible, y
 
 Veteran Health Identification Card (VHIC). Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veteran ID Card (VIC): Capitalize when referring to the [ID card](https://www.va.gov/records/get-veteran-id-cards/vic/) that allows Veterans discounts at many businesses. Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
-
-Veteran-Owned Small Business (VSOB): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
-
 Veterans Affairs: Note there's no apostrophe on Veterans. See the entries "VA" and "Department of Veterans Affairs."
 
 Veterans Benefits Administration (VBA). Note that "Benefits" is plural. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
@@ -558,15 +530,11 @@ Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions
 
 Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Pension: Capitalize and note no apostrophe in "Veterans." Lowercase "pension" when writing "VA pension." 
-
 Veterans Service Organization (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Service Representative (VSR). “Veterans” is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Vietnam Era: Capitalize "Era," but not in "Vietnam War era" (lowercase "era"). Mostly we use the first term: Vietnam Era. See entry on "era" for additional explanation.
-
-Vocational Rehabilitation Counselor (VRC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 ### W
 
