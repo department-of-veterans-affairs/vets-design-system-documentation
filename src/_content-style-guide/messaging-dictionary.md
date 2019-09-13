@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Messaging 
+title: Messaging dictionary
 draft: true
 anchors:
   - anchor: System messaging
@@ -9,7 +9,7 @@ anchors:
   - anchor: Feedback messaging
 ---
 
-# Messaging 
+# Messaging Dictionary
 
 _Categories adapted from [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/guidelines/messaging/types)_
 
