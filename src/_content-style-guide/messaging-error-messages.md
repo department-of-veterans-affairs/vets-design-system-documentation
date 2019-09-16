@@ -22,10 +22,10 @@ Every error message will have **up to** 3 parts:
 1. Title: Bold title giving the user a quick idea of what’s wrong (or, for informational alerts, the key message the user needs to know)
 
 2. Description: 
-- Apology (if the error is coming from a problem on our end)
-- Succinct description of the issue, cause, and any relevant details
-- Call to action telling the user what to do next (if applicable)
-- Next-step call to action telling the user what to do if the first call to action fails to resolve the issue (if applicable)
+  - Apology (if the error is coming from a problem on our end)
+  - Succinct description of the issue, cause, and any relevant details
+  - Call to action telling the user what to do next (if applicable)
+  - Next-step call to action telling the user what to do if the first call to action fails to resolve the issue (if applicable)
 
 3. Button(s): Actionable next-step for user (if applicable)
 
@@ -43,32 +43,29 @@ To create an effective error message, ask yourself these 4 questions:
 
    The answer will determine how the error/issue needs to be framed, and whether an apology is needed. Consider if the issue is caused by:
 
-- The user's action
-- An authorization issue. Consider whether the issue is due to:
-  - VA.gov's inability to find user's records in our system, **or** 
-  - The user's records showing user can't use benefit/service (ie, user isn't a VA patient, user isn't enrolled in benefit/service, user isn't eligible for benefit/service)
-  - Something else
+   - The user's action
+   - An authorization issue. Consider whether the issue is due to:
+   - VA.gov's inability to find user's records in our system, **or** 
+   - The user's records showing user can't use benefit/service (ie, user isn't a VA patient, user isn't enrolled in benefit/service, user isn't eligible for benefit/service)
+   - Something else
 
-- A system or network access issue. Consider whether the issue:
-  - Affects the entire site or just one page/application/component/user task
-  - Is scheduled/expected or unexpected
-  - Is the result of an issue of Vets.gov, a separate site/app (such as DS Logon), or Internet network connection 
+   - A system or network access issue. Consider whether the issue:
+      - Affects the entire site or just one page/application/component/user task
+      - Is scheduled/expected or unexpected
+      - Is the result of an issue of Vets.gov, a separate site/app (such as DS Logon), or Internet network connection 
 
 3. What does the user need to know to best resolve the error/issue?
 
    The answer will inform the call to action telling the user what to do next, as well as any relevant details. 
 
-- For an error caused by user action, offer the user clear guidance on how to resolve the error (ie, Please make sure your file is a .pdf format).
-
-- For an error caused by an authorization issue:
-  - If the issue is due to VA.gov inability to find user's records in our system, direct the user to try again or call the VA.gov help desk if they think their records should be available.
-  
-  - If the issue is due to the user's records showing the user can't use benefit/service, offer a path forward:
-    - User not eligible for benefit: Direct to relevant eligibility information
-    - User not enrolled in benefit: Direct to relevant eligibility information and application page.
-    - User not a VA patient: Direct to facility locator to find contact information to call their VA facility.
-
-- For an error caused by a system or network access issue, the error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate is not available.
+   - For an error caused by user action, offer the user clear guidance on how to resolve the error (ie, Please make sure your file is a .pdf format).
+   - For an error caused by an authorization issue:
+   - If the issue is due to VA.gov inability to find user's records in our system, direct the user to try again or call the VA.gov help desk if they think their records should be available.
+   - If the issue is due to the user's records showing the user can't use benefit/service, offer a path forward:
+      - User not eligible for benefit: Direct to relevant eligibility information
+      - User not enrolled in benefit: Direct to relevant eligibility information and application page.
+      - User not a VA patient: Direct to facility locator to find contact information to call their VA facility.
+   - For an error caused by a system or network access issue, the error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate is not available.
 
 4. If the resolution fails, what’s the next step?
 
@@ -78,31 +75,31 @@ To create an effective error message, ask yourself these 4 questions:
 
 Create a brief title documenting the task that was successfully completed, followed by a brief description of the success. 
 
-Example:
+   Example:
 
-**Saved**
+   **Saved**
 
-We saved the information you've entered so far.
+   We saved the information you've entered so far.
 
 ### For task completion failure alerts 
 
 Include exactly what failed in the title, followed by a brief apology, reiteration of the failure reframed in the VA.gov perspective, and prompt to try again. 
 
-Example:
+   Example:
 
-**Your form didn't save**
+   **Your form didn't save**
 
-We're sorry. We couldn't save your form. Please try again.
+   We're sorry. We couldn't save your form. Please try again.
 
 Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. 
 
-Example:
+   Example:
 
-**Please save this application and try again**
+   **Please save this application and try again**
 
-We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.<
+   We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.<
 
-(button) Save your application
+   (button) Save your application
 
 ### For informational messages and warnings
 
@@ -218,10 +215,10 @@ The [Messaging Dictionary](/content-style-guide/messaging-dictionary) can help o
 
 | Error state | When to use | Link to dictionary of messages | 
 | ----- | ----- | ----- | 
-| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md#system-messaging) | 
-| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md#engagement-messaging) | 
-| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md/#access-messaging)| 
-| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md#feedback-messaging)| 
+| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples](/content-style-guide/messaging-dictionary#system-messaging) | 
+| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples](/content-style-guide/messaging-dictionary#engagement-messaging) | 
+| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](/content-style-guide/messaging-dictionary#access-messaging)| 
+| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](/content-style-guide/messaging-dictionary#feedback-messaging)| 
 
 ### Next-step calls to action
 
