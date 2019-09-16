@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Messaging: Error messages
+title: Messaging - Error messages
 draft: true
 anchors:
   - anchor: Structure
