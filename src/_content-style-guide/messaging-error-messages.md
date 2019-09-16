@@ -129,7 +129,7 @@ To create an effective informational message or warning, ask yourself these 2 qu
    
    **We need your help to finish reviewing your claim**
    
-   We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.<br/>
+   We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.
 
    (button) See details
 
@@ -165,13 +165,13 @@ Did the user’s action cause the error?
 
 | Situation | Sample error message | 
 | ----- | ----- |
-| File upload fails because user tried to upload an unacceptable file type. | *We couldn't upload your file* <br/> We weren’t able to upload your file. Please make sure the file you’re uploading is a .pdf or .doc file and try again. <br/> [button] Upload file again |
+| File upload fails because user tried to upload an unacceptable file type. | *We couldn't upload your file* We weren’t able to upload your file. Please make sure the file you’re uploading is a .pdf or .doc file and try again. [button] Upload file again |
 
 **If no:** Humbly accept responsibility for the error and offer user brief, but clear, details and guidance to resolution.
 
 | Situation | Sample error message | 
 | ----- | ----- |
-| Application fails to go through due to server issues. | *Please save this application and try again* <br/> We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow. <br/> [button] Save your application |
+| Application fails to go through due to server issues. | *Please save this application and try again* We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow. [button] Save your application |
 
 ### Conversational and plain language
 
@@ -186,7 +186,7 @@ Plain, simple words (ie, avoid jargon and multisyllabic words wherever possible)
 | This | Becomes something like this | 
 | ----- | ----- |
 | If you need immediate assistance... | If you need help right now...|
-| The system is currently unavailable... | VA.gov isn't working right now...<br/> OR <br/> VA.gov is down at the moment|
+| The system is currently unavailable... | VA.gov isn't working right now...OR VA.gov is down at the moment|
 
 When the instructions are conditional lead with the conditional phrase to make it clear who the instructions are for. Examples:
 
@@ -202,12 +202,12 @@ Focusing in on the intent of the error message can help to further flesh out the
 
 | Error state | When to use | Tone | Goals | Example |
 | ----- | ----- | ----- | ----- | ----- |
-| **Informational** | To surface system-related feedback not initiated by the user (e.g. status updates). <br/> OR <br/> To provide information that helps set the user's expectations for their experience (e.g. SiP available). | Clear and direct, Humble, Empathetic, Helpful | Succinctly convey information <br/> Explain how (and for how long) user may be impacted <br/> Offer guidance toward resolution (if needed) | **VA.gov will be down for maintenance soon** <br/> We’ll be doing some work on VA.gov on [Date] between [time] and [time]. If you have trouble using the site during that time, please check back soon. |
-| **Success** | As a confirmation that a user-initiated action was completed successfully. | Positive, direct, and definitive | Quickly and clearly convey user's success  | **File uploaded** <br/> We've uploaded your file. Thank you. |
-| **Warning**  | An action was unsuccessful, but the user can still proceed. </br> OR <br/> Some parts of the user’s experience may be limited that normally wouldn’t be (e.g. system is down and records are accessible but outdated). | Clear that there may be a problem, while being un-alarming and focused on reason and resolution | Help user understand the issue and resolve it as needed  | **Some information may not be current** <br/> We're sorry. We're having issues with our server. We're working to fix it, but it may take us a while. You can still use [APPLICATION/PAGE NAME], but you may not be seeing all of your updated information. If you're having trouble, please try again later. |
-| **Error** | A user action was not completed and must be resolved to proceed. | Clear that's something's wrong that will block the user from moving forward, while being un-alarming and focused on reason and resolution | Help user understand the issue and resolve it | **We've run into a problem** <br/> We're sorry. It looks like your latest action didn't go through on the site because there's a problem with the Internet connection. We can't take you to the next step until this is complete. Please check to make sure you're connected to the Internet and try again. |
-| **Actions (single button)** | The user must take an action to proceed with the task indicated by the message | Enticing to help prompt user to take action, while being clear about the action needed | Get user to take a specific action | **Still want to apply for VA health care benefits?** <br/> You started an application for health care benefits on [DATE], but you didn't submit it. You can open the application and finish applying at any time. <br/> [button] Open your application |
-| **Actions (binary button)** | The user must choose between two actions to proceed with a task, or to confirm an important action. | Clear and direct about how each of the choices will impact the user | Help user make an informed choice of action to take | **Are you sure you want to start this application over?** <br/> If you start over, you'll lose all the information you've filled in so far. <br/> [button 1] Start over [button 2] Continue your application |
+| **Informational** | To surface system-related feedback not initiated by the user (e.g. status updates).  OR To provide information that helps set the user's expectations for their experience (e.g. SiP available). | Clear and direct, Humble, Empathetic, Helpful | Succinctly convey information  Explain how (and for how long) user may be impacted Offer guidance toward resolution (if needed) | **VA.gov will be down for maintenance soon** We’ll be doing some work on VA.gov on [Date] between [time] and [time]. If you have trouble using the site during that time, please check back soon. |
+| **Success** | As a confirmation that a user-initiated action was completed successfully. | Positive, direct, and definitive | Quickly and clearly convey user's success  | **File uploaded**  We've uploaded your file. Thank you. |
+| **Warning**  | An action was unsuccessful, but the user can still proceed. OR  ome parts of the user’s experience may be limited that normally wouldn’t be (e.g. system is down and records are accessible but outdated). | Clear that there may be a problem, while being un-alarming and focused on reason and resolution | Help user understand the issue and resolve it as needed  | **Some information may not be current** We're sorry. We're having issues with our server. We're working to fix it, but it may take us a while. You can still use [APPLICATION/PAGE NAME], but you may not be seeing all of your updated information. If you're having trouble, please try again later. |
+| **Error** | A user action was not completed and must be resolved to proceed. | Clear that's something's wrong that will block the user from moving forward, while being un-alarming and focused on reason and resolution | Help user understand the issue and resolve it | **We've run into a problem** We're sorry. It looks like your latest action didn't go through on the site because there's a problem with the Internet connection. We can't take you to the next step until this is complete. Please check to make sure you're connected to the Internet and try again. |
+| **Actions (single button)** | The user must take an action to proceed with the task indicated by the message | Enticing to help prompt user to take action, while being clear about the action needed | Get user to take a specific action | **Still want to apply for VA health care benefits?** You started an application for health care benefits on [DATE], but you didn't submit it. You can open the application and finish applying at any time. [button] Open your application |
+| **Actions (binary button)** | The user must choose between two actions to proceed with a task, or to confirm an important action. | Clear and direct about how each of the choices will impact the user | Help user make an informed choice of action to take | **Are you sure you want to start this application over?** If you start over, you'll lose all the information you've filled in so far. [button 1] Start over [button 2] Continue your application |
 
 ### Messaging categories
 
@@ -226,9 +226,9 @@ Some errors may not be resolved based on initial instructions to user (ie, &ldqu
 
 | Next-step call to action | When to use | Stanard language to use | Potential condition variations | 
 | ----- | ----- | ----- | ----- | 
-| **Call the VA.gov help desk** | User can’t resolve an error that is directly related to the website (specifics TBD) | Please call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET. | If you need more help, please call... <br/> If it still doesn't work, please call... | 
-| **Get more information about/help with your VA benefits** | User may not be able to resolve error, but next step would involve talking to someone at VA about benefits | If you need more help, call us at 800-827-1000. Or, contact a VA regional benefit office near you. <br/> (button) [Find a VA regional benefit office](https://www.vets.gov/facilities/) | If you have questions about your benefits... | 
-| **Get help filing a disability claim** | User needs more help filing a disability claim | If you need more help with your claim, you may want to work with a trained professional. <br/> (button) [Get help with your claim](https://www.vets.gov/disability-benefits/apply/help/index.html) | |  | 
+| **Call the VA.gov help desk** | User can’t resolve an error that is directly related to the website (specifics TBD) | Please call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET. | If you need more help, please call... If it still doesn't work, please call... | 
+| **Get more information about/help with your VA benefits** | User may not be able to resolve error, but next step would involve talking to someone at VA about benefits | If you need more help, call us at 800-827-1000. Or, contact a VA regional benefit office near you. (button) [Find a VA regional benefit office](https://www.vets.gov/facilities/) | If you have questions about your benefits... | 
+| **Get help filing a disability claim** | User needs more help filing a disability claim | If you need more help with your claim, you may want to work with a trained professional. (button) [Get help with your claim](https://www.vets.gov/disability-benefits/apply/help/index.html) | |  | 
 | **Contact the Veterans Health Administration toll-free hotline** | User needs help filling out a health care benefits application | If you need more help filling out your application, call our toll-free hotline at 877-222-VETS (877-222-8387). We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET. You can also get help from a trained professional called an accredited representative. Or, find your state’s Veterans agency.|(button 1) [Request a representative][https://www.ebenefits.va.gov/ebenefits/about/feature?feature=request-vso-representative] (button 2) [Find a Veterans agency](https://www.va.gov/statedva.htm)| If you have questions about your application,... | 
-| **Contact your local VA medical center** | User needs to contact their doctor or speak to someone at a VA medical center for more information | If you need more help with this, call your healthcare provider or your local VA medical center or clinic. <br/> (button) [Find a VA health facility](https://www.vets.gov/facilities/) |If you have questions, call your doctor or a VA medical center or clinic near you...  | 
+| **Contact your local VA medical center** | User needs to contact their doctor or speak to someone at a VA medical center for more information | If you need more help with this, call your healthcare provider or your local VA medical center or clinic. button) [Find a VA health facility](https://www.vets.gov/facilities/) |If you have questions, call your doctor or a VA medical center or clinic near you...  | 
 | **Get answers to questions about education benefits** | User needs more help/answers to questions about their education benefits | If you need more help, call us at 888-GI-Bill (888-442-4551). We’re here Monday through Friday, 8:00 a.m. to 7:00 p.m. ET. | If you'd like to request a paper application... | 
