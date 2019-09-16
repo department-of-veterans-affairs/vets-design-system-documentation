@@ -11,7 +11,7 @@ anchors:
 
 # Error message style guide 
 
-Note: The guidelines below do not apply to inline error messages in form fields (ie &ldquo;Please enter a valid Social Security number.&rdquo;). Those will be handled separately.
+Note: The guidelines below do not apply to inline error messages in form fields (ie "Please enter a valid Social Security number."). Those will be handled separately.
 
 ## Structure
 
@@ -222,13 +222,13 @@ The [Messaging Dictionary](/content-style-guide/messaging-dictionary) can help o
 
 ### Next-step calls to action
 
-Some errors may not be resolved based on initial instructions to user (ie, &ldquo;Try again later&rdquo;). In these cases, a next-step call to action (ie, &ldquo;Call the VA.gov help desk&rdquo;) may be necessary. This will be decided on a case-by-case basis, but below are some initial guidelines for determining the appropriate next-step call to action.
+Some errors may not be resolved based on initial instructions to user (ie, "Try again later"). In these cases, a next-step call to action (ie, "Call the VA.gov help desk") may be necessary. This will be decided on a case-by-case basis, but below are some initial guidelines for determining the appropriate next-step call to action.
 
 | Next-step call to action | When to use | Stanard language to use | Potential condition variations | 
 | ----- | ----- | ----- | ----- | 
 | **Call the VA.gov help desk** | User can’t resolve an error that is directly related to the website (specifics TBD) | Please call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET. | If you need more help, please call... If it still doesn't work, please call... | 
 | **Get more information about/help with your VA benefits** | User may not be able to resolve error, but next step would involve talking to someone at VA about benefits | If you need more help, call us at 800-827-1000. Or, contact a VA regional benefit office near you. (button) [Find a VA regional benefit office](https://www.vets.gov/facilities/) | If you have questions about your benefits... | 
-| **Get help filing a disability claim** | User needs more help filing a disability claim | If you need more help with your claim, you may want to work with a trained professional. (button) [Get help with your claim](https://www.vets.gov/disability-benefits/apply/help/index.html) | |  | 
+| **Get help filing a disability claim** | User needs more help filing a disability claim | If you need more help with your claim, you may want to work with a trained professional. (button) [Get help with your claim](https://www.vets.gov/disability-benefits/apply/help/index.html) | 
 | **Contact the Veterans Health Administration toll-free hotline** | User needs help filling out a health care benefits application | If you need more help filling out your application, call our toll-free hotline at 877-222-VETS (877-222-8387). We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET. You can also get help from a trained professional called an accredited representative. Or, find your state’s Veterans agency.|(button 1) [Request a representative][https://www.ebenefits.va.gov/ebenefits/about/feature?feature=request-vso-representative] (button 2) [Find a Veterans agency](https://www.va.gov/statedva.htm)| If you have questions about your application,... | 
 | **Contact your local VA medical center** | User needs to contact their doctor or speak to someone at a VA medical center for more information | If you need more help with this, call your healthcare provider or your local VA medical center or clinic. button) [Find a VA health facility](https://www.vets.gov/facilities/) |If you have questions, call your doctor or a VA medical center or clinic near you...  | 
 | **Get answers to questions about education benefits** | User needs more help/answers to questions about their education benefits | If you need more help, call us at 888-GI-Bill (888-442-4551). We’re here Monday through Friday, 8:00 a.m. to 7:00 p.m. ET. | If you'd like to request a paper application... | 
