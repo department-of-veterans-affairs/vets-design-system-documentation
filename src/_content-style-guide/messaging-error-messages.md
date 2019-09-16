@@ -11,61 +11,56 @@ anchors:
 
 # Error message style guide 
 
-*Note: The guidelines below do not apply to inline error messages in form fields (ie, “Please enter a valid Social Security number.”). Those will be handled separately.*
+Note: The guidelines below do not apply to inline error messages in form fields (ie &ldquo;Please enter a valid Social Security number.&rdquo;). Those will be handled separately.
 
 ## Structure
 
 Every error message will have **up to** 3 parts:
 
-<img src="https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Screenshots/Error%20Message%20for%20Content%20Guide.png" width="608">
+![Error message diagram](/images/error-message-diagram.png) 
 
-**1.** **Title:** Bold title giving the user a quick idea of what’s wrong (or, for informational alerts, the key message the user needs to know)
+1. Title: Bold title giving the user a quick idea of what’s wrong (or, for informational alerts, the key message the user needs to know)
 
-**2.** **Description:** 
+2. Description: 
 - Apology (if the error is coming from a problem on our end)
 - Succinct description of the issue, cause, and any relevant details
 - Call to action telling the user what to do next (if applicable)
 - Next-step call to action telling the user what to do if the first call to action fails to resolve the issue (if applicable)
 
-**3.** **Button(s):** Actionable next-step for user (if applicable)
+3. Button(s): Actionable next-step for user (if applicable)
 
 ## Content within the description
 
-<a href="#general">General description guidance</a><br/>
-<a href="#success">For task completion success alerts</a><br/>
-<a href="#failure">For task completion failure alerts</a><br/>
-<a href="#informational">For informational messages and warnings</a><br/>
-
-<h3 id="others">General description guidance</h3>
+### General description guidance
 
 To create an effective error message, ask yourself these 4 questions:
 
-**1. What’s the error/issue?**
+1. What’s the error/issue?
 
-The answer will inform the details of the issue and cause.
+   The answer will inform the details of the issue and cause.
 
-**2. What’s the source of the error/issue?**
+2. What’s the source of the error/issue?
 
-The answer will determine how the error/issue needs to be framed, and whether an apology is needed. Consider if the issue is caused by:
+   The answer will determine how the error/issue needs to be framed, and whether an apology is needed. Consider if the issue is caused by:
 
-- **The user's action**
-- **An authorization issue.** Consider whether the issue is due to:
+- The user's action
+- An authorization issue. Consider whether the issue is due to:
   - VA.gov's inability to find user's records in our system, **or** 
   - The user's records showing user can't use benefit/service (ie, user isn't a VA patient, user isn't enrolled in benefit/service, user isn't eligible for benefit/service)
   - Something else
 
-- **A system or network access issue.** Consider whether the issue:
+- A system or network access issue. Consider whether the issue:
   - Affects the entire site or just one page/application/component/user task
   - Is scheduled/expected or unexpected
   - Is the result of an issue of Vets.gov, a separate site/app (such as DS Logon), or Internet network connection 
 
-**3. What does the user need to know to best resolve the error/issue?**
+3. What does the user need to know to best resolve the error/issue?
 
-The answer will inform the call to action telling the user what to do next, as well as any relevant details. 
+   The answer will inform the call to action telling the user what to do next, as well as any relevant details. 
 
-- **For an error caused by user action,** offer the user clear guidance on how to resolve the error (ie, Please make sure your file is a .pdf format).
+- For an error caused by user action, offer the user clear guidance on how to resolve the error (ie, Please make sure your file is a .pdf format).
 
-- **For an error caused by an authorization issue:**
+- For an error caused by an authorization issue:
   - If the issue is due to VA.gov inability to find user's records in our system, direct the user to try again or call the VA.gov help desk if they think their records should be available.
   
   - If the issue is due to the user's records showing the user can't use benefit/service, offer a path forward:
@@ -73,57 +68,83 @@ The answer will inform the call to action telling the user what to do next, as w
     - User not enrolled in benefit: Direct to relevant eligibility information and application page.
     - User not a VA patient: Direct to facility locator to find contact information to call their VA facility.
 
-- **For an error caused by a system or network access issue,** the error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate is not available.
+- For an error caused by a system or network access issue, the error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate is not available.
 
-**4. If the resolution fails, what’s the next step?**
+4. If the resolution fails, what’s the next step?
 
-The answer will inform whether or not to include a “next-step call to action” to help guide the user further should the first call to action fail to resolve the issue. This may be language directing the user to call the VA.gov help desk or other VA resources, and will be determined on an issue-by-issue basis. See [Next-step calls to action](#next-step) below for more information and guidance.
+   The answer will inform whether or not to include a “next-step call to action” to help guide the user further should the first call to action fail to resolve the issue. This may be language directing the user to call the VA.gov help desk or other VA resources, and will be determined on an issue-by-issue basis. See [Next-step calls to action](#next-step) below for more information and guidance.
 
+### For task completion success alerts
 
-<h3 id="success">For task completion success alerts</h3>
+Create a brief title documenting the task that was successfully completed, followed by a brief description of the success. 
 
-Create a brief title documenting the task that was successfully completed, followed by a brief description of the success. Example:<br/>
-**Saved**<br/>
+Example:
+
+**Saved**
+
 We saved the information you've entered so far.
 
-<h3 id="failure">For task completion failure alerts</h3> 
+### For task completion failure alerts 
 
-Include exactly what failed in the title, followed by a brief apology, reiteration of the failure reframed in the VA.gov perspective, and prompt to try again. Example:<br/>
-**Your form didn't save**<br/>
+Include exactly what failed in the title, followed by a brief apology, reiteration of the failure reframed in the VA.gov perspective, and prompt to try again. 
+
+Example:
+
+**Your form didn't save**
+
 We're sorry. We couldn't save your form. Please try again.
 
-Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. Example:<br/>
-**Please save this application and try again**<br/>
-We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.<br/>
+Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. 
+
+Example:
+
+**Please save this application and try again**
+
+We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.<
+
 (button) Save your application
 
-<h3 id="informational">For informational messages and warnings</h3>
+### For informational messages and warnings
 
 To create an effective informational message or warning, ask yourself these 2 questions:
 
-**1. What is the key information the user needs to know?**
+1. What is the key information the user needs to know?
 
-This information should be presented as succinctly as possible in the title and then reiterated in the description with any additional relevant details.
+   This information should be presented as succinctly as possible in the title and then reiterated in the description with any additional relevant details.
 
-- Informational example:<br/>
-**VA.gov will be down for maintenance soon**<br/>
-We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
+   - Informational example:
+   
+   **VA.gov will be down for maintenance soon**
 
-- Warning example: <br/>
-**We're working on the site**<br/>
-We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.
+   We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
 
-**2. Does the user need to action, or do we want the user to take action?**
+   - Warning example: 
+   
+   **We're working on the site**
+   
+   We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.
 
-- **When action is required,** frame required information as a need. Example:<br/>
-**We need your help to finish reviewing your claim**<br/>
-We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.<br/>
-(button) See details
+2. Does the user need to action, or do we want the user to take action?
 
-- **When we want to prompt the user to take action,** frame the prompt as a question to intrigue the user. Example:<br/>
-**Want to make your VA.gov account more secure?**<br/>
-You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.<br/>
-(button) Secure your account 
+   - When action is required, frame required information as a need. 
+   
+   Example:
+   
+   **We need your help to finish reviewing your claim**
+   
+   We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.<br/>
+
+   (button) See details
+
+   - When we want to prompt the user to take action, frame the prompt as a question to intrigue the user. 
+   
+   Example:
+   
+   **Want to make your VA.gov account more secure?**
+   
+   You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.
+   
+   (button) Secure your account 
 
 ## Style and tone
 
@@ -177,13 +198,9 @@ When the instructions are conditional lead with the conditional phrase to make i
 | Please call us if it still doesn’t work. | If it still doesn’t work, please call us.|
 | You can’t use this tool if you’re not a VA patient. | If you’re not a VA patient, you can’t use this tool.|
 
-## Additional Guidance\
+## Additional Guidance
 
-<a href="#state">Error state and message intent</a><br/>
-<a href="#categories">Messaging categories</a><br/>
-<a href="#cta">Next-step calls to action</a><br/>
-
-<h3 id="state">Error state and message intent</h3>
+### Error state and message intent
 Focusing in on the intent of the error message can help to further flesh out the nuances of tone and description content.
 
 | Error state | When to use | Tone | Goals | Example |
@@ -195,9 +212,9 @@ Focusing in on the intent of the error message can help to further flesh out the
 | **Actions (single button)** | The user must take an action to proceed with the task indicated by the message | Enticing to help prompt user to take action, while being clear about the action needed | Get user to take a specific action | **Still want to apply for VA health care benefits?** <br/> You started an application for health care benefits on [DATE], but you didn't submit it. You can open the application and finish applying at any time. <br/> [button] Open your application |
 | **Actions (binary button)** | The user must choose between two actions to proceed with a task, or to confirm an important action. | Clear and direct about how each of the choices will impact the user | Help user make an informed choice of action to take | **Are you sure you want to start this application over?** <br/> If you start over, you'll lose all the information you've filled in so far. <br/> [button 1] Start over [button 2] Continue your application |
 
-<h3 id="categories">Messaging categories</h3>
+### Messaging categories
 
-The [Messaging Dictionary](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.
+The [Messaging Dictionary](/content-style-guide/messaging-dictionary) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.
 
 | Error state | When to use | Link to dictionary of messages | 
 | ----- | ----- | ----- | 
@@ -206,9 +223,9 @@ The [Messaging Dictionary](https://github.com/department-of-veterans-affairs/vet
 | **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md/#access-messaging)| 
 | **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary.md#feedback-messaging)| 
 
-<h3 id="cta">Next-step calls to action</h3>
+### Next-step calls to action
 
-Some errors may not be resolved based on initial instructions to user (ie, "Try again later). In these cases, a next-step call to action (ie, "Call the VA.gov help desk") may be necessary. This will be decided on a case-by-case basis, but below are some initial guidelines for determining the appropriate next-step call to action.
+Some errors may not be resolved based on initial instructions to user (ie, &ldquo;Try again later&rdquo;). In these cases, a next-step call to action (ie, &ldquo;Call the VA.gov help desk&rdquo;) may be necessary. This will be decided on a case-by-case basis, but below are some initial guidelines for determining the appropriate next-step call to action.
 
 | Next-step call to action | When to use | Stanard language to use | Potential condition variations | 
 | ----- | ----- | ----- | ----- | 
