@@ -11,21 +11,40 @@ anchors:
 
 # Messaging Dictionary
 
-_Categories adapted from [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/guidelines/messaging/types)_
-
 ## System messaging
 
 Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.
 
 ***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
-### Scheduled downtime notice
+### Scheduled downtime notice scenarios
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
-| Notice of upcoming scheduled downtime (sitewide) | **VA.gov will be down for maintenance soon** | We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon. | - | Overlay | Informational | - |
-| Notice of upcoming scheduled downtime (application) | **[APPLICATION NAME] will be down for maintenance soon** | We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon. | - | Overlay | Informational | - |
-| Notice of upcoming scheduled downtime (authentication provider) |**[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon** | [ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [DATE] between [TIME] and [TIME]. If you have trouble signing in to your Vets.gov account during that time, please check back soon.  | - | Alert | Informational | Below sign in overlay title |
+#### Notice of upcoming scheduled downtime (sitewide)
+
+* Title: **VA.gov will be down for maintenance soon**
+* Description: We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
+* Actions: None
+* Component: [Modal](/components/modal)
+* State: [Informational](/components/alertboxes#informational-alert)
+* Location: N/A
+
+#### Notice of upcoming scheduled downtime (application)
+
+* Title: **[APPLICATION NAME] will be down for maintenance soon**
+* Description: We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon.
+* Actions: None
+* Component: [Modal](/components/modal)
+* State: [Informational](/components/alertboxes#informational-alert)
+* Location: N/A
+
+#### Notice of upcoming scheduled downtime (authentication provider)
+
+* Title: **[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon**
+* Description: [ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [DATE] between [TIME] and [TIME]. If you have trouble signing in to your Vets.gov account during that time, please check back soon.
+* Actions: None
+* Component: [Alert box](/components/alertboxes)
+* State: [Informational](/components/alertboxes#informational-alert)
+* Location: Below sign in overlay title
 
 ### Updates to user data (system-initiated)
 
@@ -137,3 +156,6 @@ The application’s response when the user is interacting with it. The majority 
 | Deletion failure                         | **We couldn't delete your file** | We're sorry. We couldn't delete your file. Please try again.  |  Dismissible | Alert | Error | Above page title |
 | Update success                           | **File updated** | We updated your file. Thank you. | Dismissible | Alert | Success | Above page title |
 | Update failure                           | **We couldn't update your file** | We're sorry. We couldn't update your file. Please try again.  |  Dismissible | Alert | Error | Above page title |
+
+_Categories adapted from [Salesforce Lightning Design System](https://www.lightningdesignsystem.com/guidelines/messaging/types)_
+
