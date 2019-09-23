@@ -165,11 +165,28 @@ Tell the user what’s happened/happening, how it will impact them, and how they
 
 ### Humble, helpful, and non-alarming
 
-| Use language that... | Avoid language that... | 
-| ----- | ----- |
-| Accepts ownership (or shared ownership) of the error *(ie, “We’re sorry. We can’t find your records in our system.”)*    | Blames the user for the error (even if error is user-generated) *(ie, “You're not in our system.”)*  | 
-| Instills confidence in the user *(ie, “We’re working to fix the problem.”)* | Instills alarm *(ie, “Warning!”)* | 
-| Offers steady, helpful guidance toward resolution *(ie, “Please make sure the file you’re uploading is a .pdf or .doc file and try again.”)*     | Feels overly casual or dismissive *(ie, “Oops! Incorrect file type”)* | 
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Use language that...</h3>
+<div class="do-dont__content" markdown="1">
+
+- Accepts ownership (or shared ownership) of the error *(ie, “We’re sorry. We can’t find your records in our system.”)*
+- Instills confidence in the user *(ie, “We’re working to fix the problem.”)*
+- Offers steady, helpful guidance toward resolution *(ie, “Please make sure the file you’re uploading is a .pdf or .doc file and try again.”)*
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Avoid language that...</h3>
+<div class="do-dont__content" markdown="1">
+
+- Blames the user for the error (even if error is user-generated) *(ie, “You're not in our system.”)*
+- Instills alarm *(ie, “Warning!”)*
+- Feels overly casual or dismissive *(ie, “Oops! Incorrect file type”)*
+
+</div>
+</div>
+</div>
 
 ### Framed to highlight VA.gov ownership/shared ownership of the error
 
@@ -191,23 +208,70 @@ Did the user’s action cause the error?
 
 First person/second person with a personal/helpful tone. Example:
 
-| This | Becomes something like this | 
-| ----- | ----- |
-| These records are unavailable. The help desk may be able to help locate them... | We can’t find your records. You can call the VA.gov help desk...We're here Monday through Friday...|
+<div class="do-dont">
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">This...</h3>
+<div class="do-dont__content" markdown="1">
+
+- These records are unavailable. The help desk may be able to help locate them...
+
+</div>
+</div>
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Becomes something like this</h3>
+<div class="do-dont__content" markdown="1">
+
+- We can’t find your records. You can call the VA.gov help desk...We're here Monday through Friday...
+
+</div>
+</div>
+</div>
 
 Plain, simple words (ie, avoid jargon and multisyllabic words wherever possible). Examples:
 
-| This | Becomes something like this | 
-| ----- | ----- |
-| If you need immediate assistance... | If you need help right now...|
-| The system is currently unavailable... | VA.gov isn't working right now...OR VA.gov is down at the moment|
+<div class="do-dont">
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">This...</h3>
+<div class="do-dont__content" markdown="1">
+
+- If you need immediate assistance...
+- The system is currently unavailable...
+
+</div>
+</div>
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Becomes something like this</h3>
+<div class="do-dont__content" markdown="1">
+
+- If you need help right now...
+- VA.gov isn't working right now...OR VA.gov is down at the moment
+
+</div>
+</div>
+</div>
 
 When the instructions are conditional lead with the conditional phrase to make it clear who the instructions are for. Examples:
 
-| This | Becomes something like this | 
-| ----- | ----- |
-| Please call us if it still doesn’t work. | If it still doesn’t work, please call us.|
-| You can’t use this tool if you’re not a VA patient. | If you’re not a VA patient, you can’t use this tool.|
+<div class="do-dont">
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">This...</h3>
+<div class="do-dont__content" markdown="1">
+
+- Please call us if it still doesn’t work.
+- You can’t use this tool if you’re not a VA patient.
+
+</div>
+</div>
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Becomes something like this</h3>
+<div class="do-dont__content" markdown="1">
+
+- If it still doesn’t work, please call us.
+- If you’re not a VA patient, you can’t use this tool.
+
+</div>
+</div>
+</div>
 
 ## Additional Guidance
 
