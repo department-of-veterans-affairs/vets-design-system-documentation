@@ -75,37 +75,37 @@ To create an effective error message, ask yourself these 4 questions:
 
 Create a brief title documenting the task that was successfully completed, followed by a brief description of the success. 
 
-   Example:
+Example:
 
-   **Saved**
+**Saved**
 
-   We saved the information you've entered so far.
+We saved the information you've entered so far.
    
-   ![Saved](/images/ErrorMessageStyleGuide-Saved-001.png)
+![Saved](/images/ErrorMessageStyleGuide-Saved-001.png)
 
 ### For task completion failure alerts 
 
 Include exactly what failed in the title, followed by a brief apology, reiteration of the failure reframed in the VA.gov perspective, and prompt to try again. 
 
-   Example:
+Example:
 
-   **Your form didn't save**
+**Your form didn't save**
 
-   We're sorry. We couldn't save your form. Please try again.
+We're sorry. We couldn't save your form. Please try again.
 
-   ![Your form didn't save](/images/ErrorMessageStyleGuide-Error-002.png)
+![Your form didn't save](/images/ErrorMessageStyleGuide-Error-002.png)
 
 Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. 
 
-   Example:
+Example:
 
-   **Please save this application and try again**
+**Please save this application and try again**
 
-   We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.
+We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.
 
-   (button) Save your application
+(button) Save your application
 
-   ![Please save this application and try again](/images/ErrorMessageStyleGuide-Save-003.png)
+![Please save this application and try again](/images/ErrorMessageStyleGuide-Save-003.png)
 
 ### For informational messages and warnings
 
@@ -113,49 +113,49 @@ To create an effective informational message or warning, ask yourself these 2 qu
 
 1. What is the key information the user needs to know?
 
-   This information should be presented as succinctly as possible in the title and then reiterated in the description with any additional relevant details.
+This information should be presented as succinctly as possible in the title and then reiterated in the description with any additional relevant details.
 
-   - Informational example:
+- Informational example:
    
-   **VA.gov will be down for maintenance soon**
+**VA.gov will be down for maintenance soon**
 
-   We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
+We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
 
-   ![VA.gov will be down for maintenance soon](/images/ErrorMessageStyleGuide-Down-004.png)
+![VA.gov will be down for maintenance soon](/images/ErrorMessageStyleGuide-Down-004.png)
 
-   - Warning example: 
+- Warning example: 
    
-   **We're working on the site**
+**We're working on the site**
    
-   We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.
+We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.
 
-   ![We're working on the site](/images/ErrorMessageStyleGuide-Warning-005.png)
+![We're working on the site](/images/ErrorMessageStyleGuide-Warning-005.png)
 
 2. Does the user need to action, or do we want the user to take action?
 
-   - When action is required, frame required information as a need. 
+- When action is required, frame required information as a need. 
    
-   Example:
+Example:
    
-   **We need your help to finish reviewing your claim**
+**We need your help to finish reviewing your claim**
    
-   We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.
+We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.
 
-   (button) See details
+(button) See details
    
-   ![We need your help to finish reviewing your claim](/images/ErrorMessageStyleGuide-Continue-006.png)
+![We need your help to finish reviewing your claim](/images/ErrorMessageStyleGuide-Continue-006.png)
 
-   - When we want to prompt the user to take action, frame the prompt as a question to intrigue the user. 
+- When we want to prompt the user to take action, frame the prompt as a question to intrigue the user. 
    
-   Example:
+Example:
    
-   **Want to make your VA.gov account more secure?**
+**Want to make your VA.gov account more secure?**
    
-   You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.
+You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.
    
-   (button) Secure your account 
+(button) Secure your account 
    
-   ![Want to make your VA.gov account more secure?](/images/ErrorMessageStyleGuide-Secure-007.png)
+![Want to make your VA.gov account more secure?](/images/ErrorMessageStyleGuide-Secure-007.png)
   
 ## Style and tone
 
