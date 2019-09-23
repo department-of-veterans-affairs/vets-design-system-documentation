@@ -80,6 +80,8 @@ Create a brief title documenting the task that was successfully completed, follo
    **Saved**
 
    We saved the information you've entered so far.
+   
+   [Saved](/images/ErrorMessageStyleGuide-Saved-001.png)
 
 ### For task completion failure alerts 
 
@@ -91,15 +93,19 @@ Include exactly what failed in the title, followed by a brief apology, reiterati
 
    We're sorry. We couldn't save your form. Please try again.
 
+   [Your form didn't save](/images/ErrorMessageStyleGuide-Error-002.png)
+
 Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. 
 
    Example:
 
    **Please save this application and try again**
 
-   We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.<
+   We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.
 
    (button) Save your application
+
+   [Please save this application and try again](/images/ErrorMessageStyleGuide-Save-003.png)
 
 ### For informational messages and warnings
 
@@ -115,11 +121,15 @@ To create an effective informational message or warning, ask yourself these 2 qu
 
    We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
 
+   [VA.gov will be down for maintenance soon](/images/ErrorMessageStyleGuide-Down-004.png)
+
    - Warning example: 
    
    **We're working on the site**
    
    We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.
+
+   [We're working on the site](/images/ErrorMessageStyleGuide-Warning-005.png)
 
 2. Does the user need to action, or do we want the user to take action?
 
@@ -132,6 +142,8 @@ To create an effective informational message or warning, ask yourself these 2 qu
    We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.
 
    (button) See details
+   
+   [We need your help to finish reviewing your claim](/images/ErrorMessageStyleGuide-Continue-006.png)
 
    - When we want to prompt the user to take action, frame the prompt as a question to intrigue the user. 
    
@@ -142,7 +154,9 @@ To create an effective informational message or warning, ask yourself these 2 qu
    You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.
    
    (button) Secure your account 
-
+   
+   [Want to make your VA.gov account more secure?](/images/ErrorMessageStyleGuide-Secure-007.png)
+  
 ## Style and tone
 
 ### Clear and direct
