@@ -532,7 +532,7 @@ Veteran Health Identification Card (VHIC). Note that "Veteran" is singular. See 
 
 Veteran ID Card (VIC): Capitalize when referring to the [ID card](https://www.va.gov/records/get-veteran-id-cards/vic/) that allows Veterans discounts at many businesses. Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veteran-Owned Small Business (VSOB): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veteran-owned small business (VSOB): Lowercase (aside from Veteran) when the term is spelled out. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Affairs: Note there's no apostrophe on Veterans. See the entries "VA" and "Department of Veterans Affairs."
 
@@ -565,6 +565,8 @@ Veterans Service Organization (VSO). "Veterans" is plural and does not take an a
 Veterans Service Representative (VSR). “Veterans” is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Vietnam Era: Capitalize "Era," but not in "Vietnam War era" (lowercase "era"). Mostly we use the first term: Vietnam Era. See entry on "era" for additional explanation.
+
+Vocational Rehabilitation and Employment (VR&E): Capitalize as full name of program. Can also use lowercased "voc rehab" on second reference, which is the informal term many Veterans use when referring to the program. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Vocational Rehabilitation Counselor (VRC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
