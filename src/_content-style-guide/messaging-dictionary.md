@@ -19,7 +19,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 ### Scheduled downtime notice scenarios
 
-| Scenario                                 | Title | Description | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
 | Notice of upcoming scheduled downtime (sitewide) | **VA.gov will be down for maintenance soon** | We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A | 
 | Notice of upcoming scheduled downtime (application) | **[APPLICATION NAME] will be down for maintenance soon** | We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
@@ -29,7 +29,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 *Some messages written to reflect the example; other variations will be added to expanded dictionary section.*
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | Status update (e.g. claim closed)        | **Your [CLAIM TYPE] claim update** | Our records show that your claim was closed on [DATE].| N/A | [Alert box](/components/alertboxes) | [Informational](/components/alertboxes#informational-alert) | Replace affected component |
 | Action required (e.g. claim evidence request) | **We need your help to finish reviewing your claim** | Please provide more evidence (supporting documents) so we can finish reviewing your claim.| See Details | [Alert box](/components/alertboxes) | [Warning alert](/components/alertboxes#warning-alert) | Above affected component |
@@ -44,7 +44,7 @@ Nudges the user to enter or update data in the system. It can be initiated by ei
 
 ### Prompt to complete a task or enter data
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | Continue a saved benefit application | **Still want to apply for [BENEFIT NAME]?** | The application you started for [BENEFIT NAME] will expire on [EXPIRATION DATE]. If you'd still like to apply, you'll need to submit the application by this date. Or you can start a new application any time. | [BUTTON 1] Continue your application [BUTTON 2] Start over | [Alert box](/components/alertboxes) | [Informational](/components/alertboxes#informational-alert) | Replace affected component |
 | Set up 2-factor authentication       | **Want to make your VA.gov account more secure?** | You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if someone gets your password. | Secure your account | [Alert box](/components/alertboxes) | [Informational](/components/alertboxes#informational-alert) | Replace affected component |
@@ -63,7 +63,7 @@ Variations in messaging will be contingent on:
 - If scheduled, when the application will be back up (precise time stamp if known, general estimate if not)
 - If not expected, general estimate of when the application will be back up
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | Entire site is not accessible (scheduled downtime) | **VA.gov is down for maintenance right now** | We're sorry. VA.gov isn't ready for you right now. We're doing some work to help make this site even better for Veterans, service members, and family members like you. We hope to finish our work by [DATE/TIME]. Please check back then. | N/A | [Plain text](/design/typography) | N/A | Replace page |
 | Entire site is not accessible (expected) | **VA.gov isn't working right now** | We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")]. | N/A | [Plain text](/design/typography) | N/A | Replace page |
@@ -79,7 +79,7 @@ Variations in messaging will be contingent on:
 
 ### Network connection loss
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | Application/page/component is not accessible due to user connection loss    | **We can't load [APPLICATION/PAGE/COMPONENT NAME]** | Please make sure you're connected to the Internet, and refresh this page to try again. | Try again | [Plain text](/design/typography) | N/A | Below page title |
 | Unable to complete an automated task (e.g. save application in progress) due to user connection loss | **We can't save your form right now** | Please make sure you're connected to the Internet, and then try saving your form again. | Try again | [Plain text](/design/typography) | N/A | Below affected component |
@@ -87,7 +87,7 @@ Variations in messaging will be contingent on:
 
 ### Authorization
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | (Application) user's records are not found | **We don't seem to have your records** | We're sorry. We can't find your records in our system. If you think they should be here, please try again later or call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET. | N/A | [Plain text](/design/typography) | N/A | Replace content below page title |
 | (Page) user's records are not found | **We don't seem to have your records** | We're sorry. We can't find your records in our system. If you think they should be here, please try again later or call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET.  | N/A | [Plain text](/design/typography) | N/A | Replace content below page title |
@@ -98,7 +98,7 @@ Variations in messaging will be contingent on:
 
 ### Empty state
 
-| Scenario                                 | Title | Description | Component | Location |
+| Scenario                                 | Message title | Message content | Component | Location |
 | ---------------------------------------- | ----- | ----------- | --------- | -------- |
 | (Application) No data tied to the user or scenario | **No [DATA TYPE (ie, prescription refills or health records)] to show** | We don't have any [DATA TYPE] in our system to show here. | [Plain text](/design/typography) | Replace content below page title |
 | (Page) no data tied to the user or scenario | **No [DATA TYPE] to show** | We don't have any [DATA TYPE] in our system to show here. | [Plain text](/design/typography) | Replace content below page title |
@@ -112,7 +112,7 @@ The application’s response when the user is interacting with it. The majority 
 
 ### Task completion success/failure
 
-| Scenario                                 | Title | Description | Actions | Component | State  | Location |
+| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | Form save in progress success (inline)   | **Saved** | We saved the information you've entered so far. | N/A | [Alert box](/components/alertboxes) | [Success alert](/components/alertboxes#success-alert) | Below affected component |
 | Form save in progress success (exit page) | **Saved**  | We saved your in-progress form. Remember, you need to finish the form and click "Submit" to apply for this benefit. Continue applying now, or come back later to finish your application. | Continue your application | [Alert box](/components/alertboxes) | [Success alert](/components/alertboxes#success-alert) | Below page title |
