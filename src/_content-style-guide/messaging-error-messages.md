@@ -11,7 +11,7 @@ anchors:
 
 # Error message style guide 
 
-Note: The guidelines below don't apply to inline error messages in form fields (for example, "Please enter a valid Social Security number."). Inline form field error messages will be handled in a separate error guide. 
+*Note: The guidelines below don't apply to inline error messages in form fields (for example, "Please enter a valid Social Security number."). Inline form field error messages will be handled in a separate error guide.* 
 
 ## Structure
 
