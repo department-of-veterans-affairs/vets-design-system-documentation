@@ -8,7 +8,7 @@ draft: true
 
 Just as is mentioned in the [Logos](https://design.va.gov/design/logos) section of the VA.gov Design System, user research shows that Veterans find multiple brands confusing and complicated to understand. The simpler, the better. This is also true for writing about products, tools, offices or programs. Use a plain language description instead of creating a branded name with capitalized terms. Also avoid using acronyms that are not established and known to Veterans.
 
-Writing in plain language uses everyday words people know and understand. These are also the words they use when doing internet searches. Describing programs and tools in this way instead of branding them is essential for SEO purposes. Simply tell the reader what your product does. 
+Writing in plain language uses everyday words people know and understand. These are also the words they use when doing internet searches. Describing programs and tools in this way instead of branding them is essential for SEO purposes. Simply tell the reader what your product does. There's no need to make up a new brand.
 
 <div class="do-dont">
 <div class="do-dont__do">
