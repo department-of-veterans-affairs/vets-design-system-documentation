@@ -27,6 +27,7 @@ Find out if you’re eligible for VA education benefits for dependents and spous
 Find out if you’re eligible for the Dependent and Spouse Education Benefit program (DSEB). 
 
 </div>
+</div>
 
 <div class="do-dont">
 <div class="do-dont__do">
