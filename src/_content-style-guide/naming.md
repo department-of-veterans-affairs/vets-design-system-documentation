@@ -33,8 +33,8 @@ Your industry must participate in the On-the-Job Training Program (OJT) through 
 
 </div>
 
-## Avoid using acronyms 
-Avoid using [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) that aren't established or already known to Veterans. It is clearer to use descriptive language than to brand the product, tool or program as an acronym.
+## Don't use acronyms 
+Avoid using [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) that aren't established or already known to Veterans. It is clearer to use descriptive language than to brand the product, tool or program as an acronym that Veterans need to learn and remember.
 
 
 
