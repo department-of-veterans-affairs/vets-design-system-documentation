@@ -6,9 +6,13 @@ draft: true
 
 # Naming
 
-Just as is mentioned in the [Logos](https://design.va.gov/design/logos) section of the VA.gov Design System, user research shows that Veterans find multiple brands confusing and complicated to understand. The simpler, the better. This is also true for writing about products, tools, offices or programs. Use a plain language description instead of creating a branded name with capitalized terms. Also avoid using acronyms that are not established and known to Veterans.
+Just as is mentioned in the [Logos](https://design.va.gov/design/logos) section of the VA.gov Design System, user research shows that Veterans find multiple brands confusing and complicated to understand. The simpler, the better. This is also true for writing about products, tools, offices or programs. 
 
-Writing in plain language uses everyday words people know and understand. These are also the words they use when doing internet searches. Describing programs and tools in this way instead of branding them is essential for SEO purposes. Simply tell the reader what your product does. There's no need to make up a new brand.
+VA already uses many established terms such as "National Call to Service program," "Post-9/11 GI Bill," and "Vocational Rehabilitation and Employment," just to name a few. Use a plain language description instead of making Veterans learn a new term they don't need or cluttering the page with unnecessary capitalized brands. By writing in this way, we follow our [content principles](https://design.va.gov/content-style-guide/content-principles), creating "consistent, clear, and customer-centered content." 
+
+Avoid using acronyms that aren't established or already known to Veterans. It's clearer to use descriptive language when explaining what the product is or what the tool does than to brand it as an acronym. 
+
+Writing in plain language uses everyday words people know and understand. These are also the words we use when doing internet searches. Describing programs and tools in this way is essential for SEO purposes. Simply tell the reader what your product does. There's no need to make up a new brand.
 
 <div class="do-dont">
 <div class="do-dont__do">
