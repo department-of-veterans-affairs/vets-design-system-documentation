@@ -12,7 +12,7 @@ VA already uses many established terms such as "National Call to Service program
 
 Avoid using [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) that aren't established or already known to Veterans. It's clearer to use descriptive language when explaining what the product is or what the tool does than to brand it as an acronym. 
 
-Writing in plain language uses everyday words people know and understand. These are also the words we use when doing internet searches. Describing programs and tools in this way is essential for SEO purposes. Simply tell the reader what your product does. There's no need to make up a new brand.
+Writing in plain language uses everyday words people know and understand. These are also the words we use when doing internet searches. Describing programs and tools in this way is essential for [SEO](http://dev-design.va.gov.s3-website-us-gov-west-1.amazonaws.com/content-style-guide/seo) purposes. Simply tell the reader what your product does. There's no need to make up a new brand.
 
 <div class="do-dont">
 <div class="do-dont__do">
