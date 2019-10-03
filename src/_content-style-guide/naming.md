@@ -6,11 +6,11 @@ draft: true
 
 # Naming
 
-Just as is mentioned in the [Logos](https://design.va.gov/design/logos) section of the VA.gov Design System, user research shows that Veterans find multiple brands confusing and complicated to understand. The simpler, the better. This is also true for writing about products, tools, offices or programs. 
+Just as is mentioned in the [Logos](https://design.va.gov/design/logos) section of the VA.gov Design System, user research shows that Veterans find multiple brands confusing and complicated to understand. The simpler, the better. This is also true for writing about products, tools, offices, or programs. 
 
 ### Use plain language
 
-Use a plain language description when talking about products, tools and programs. These are the everyday words people know and understand. These are also the words we use when doing internet searches, making plain language essential for [SEO](http://dev-design.va.gov.s3-website-us-gov-west-1.amazonaws.com/content-style-guide/seo) purposes. There's no need to brand and capitalize terms that can easily be described.
+Use a plain language description when talking about products, tools, and programs. These are the everyday words people know and understand. These are also the words we use when doing internet searches, making plain language essential for [SEO](http://dev-design.va.gov.s3-website-us-gov-west-1.amazonaws.com/content-style-guide/seo) purposes. There's no need to brand and capitalize terms that can easily be described.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -35,7 +35,7 @@ Your industry must participate in the On-the-Job Training Program (OJT) through 
 
 ### Don't use acronyms
 
-Avoid using [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) that aren't established or already known to Veterans. It is clearer to use descriptive language than to brand the product, tool or program as an acronym that Veterans need to learn and remember.
+Avoid using [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) that aren't established or already known to Veterans. It's clearer to use descriptive language than to brand the product, tool, or program as an acronym that Veterans need to learn and remember.
 
 
 
