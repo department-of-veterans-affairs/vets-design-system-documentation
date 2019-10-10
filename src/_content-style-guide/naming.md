@@ -10,7 +10,7 @@ Most tools, products, benefits, offices, and programs don’t need a brand name.
 
 -	Branded terms often introduce internal jargon that Veteran customers aren’t familiar with. 
 -	Branded terms—[like logos](https://design.va.gov/design/logos) that are different from the official VA brand—spawn unnecessary sub-brands that create confusion for users. 
--	Branded terms are expensive and time-consuming to market and "educate" Veterans on the meaning of. 
+-	Veterans need to be "educated" on the meaning of new branded terms, which is both expensive and time-consuming to do. 
 
 
 ### Use descriptive plain language labels
@@ -76,7 +76,7 @@ When we transform common words into capitalized, branded terms, and then refer t
 - Are hard to understand by customers and people outside your business or team.
 -	Sound like Government, not human.
 -	Don’t align with the clear, helpful, and plain language part of our content principles.
--	Isn’t person-to-person, conversational, and empathetic in voice and tone.
+-	Aren't person-to-person, conversational, and empathetic in voice and tone.
 
 
 <div class="do-dont">
