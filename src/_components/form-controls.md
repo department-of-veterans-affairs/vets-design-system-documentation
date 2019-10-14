@@ -117,7 +117,7 @@ Allows users to select one or more items from a visible list.
 
 #### When to consider something else
 - If there are too many options to display on a mobile screen.
-- If a user can only select one option from a list (use radio buttons instead).\
+- If a user can only select one option from a list (use radio buttons instead).
 
 #### Guidance
 - Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.
