@@ -10,8 +10,9 @@ Most tools, products, benefits, offices, and programs don’t need a brand name.
 
 -	Branded terms often introduce internal jargon that Veteran customers aren’t familiar with. 
 -	Branded terms—[like logos](https://design.va.gov/design/logos) that are different from the official VA brand—spawn unnecessary sub-brands that create confusion for users. 
--	Veterans need to be "educated" on the meaning of new branded terms, which is both expensive and time-consuming to do. 
+-	Branded terms need to be marketed in order for Veterans to be "educated" on their meaning, which is both expensive and time-consuming to do. 
 
+Check the [word list](https://design.va.gov/content-style-guide/word-list) for tools, products, benefits, and programs that are considered acceptable capitalized terms.
 
 ### Use descriptive plain language labels
 
@@ -33,7 +34,7 @@ Your VA education benefits can help you pay for books, supplies, and housing whi
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
  
-Your VA education benefits can help you pay for books, supplies, and housing while you’re learning a trade or skill through On-the-Job Training (OJT) Program.
+Your VA education benefits can help you pay for books, supplies, and housing while you’re learning a trade or skill through the On-the-Job Training (OJT) Program.
 
 </div>
 </div>
@@ -97,7 +98,7 @@ In certain cases, our Veterans transportation program may reimburse you for the 
  
 Find out if you’re eligible for the VA Dependents and Spouse Education Benefits (VADSEB). 
 
-VTP provides Veterans Transportation Service (VTS), Beneficiary Travel (BT), and provides Highly Rural Transportation Grants (HRTG) to non-profit organizations. The BT program, as part of VTP, may also help arrange special mode transportation (SMT) at the request of VA.
+VTP provides Veterans Transportation Service (VTS) and Beneficiary Travel (BT), and provides Highly Rural Transportation Grants (HRTG) to non-profit organizations. The BT program, as part of VTP, may also help arrange special mode transportation (SMT) at the request of VA.
 
 </div>
 </div>
