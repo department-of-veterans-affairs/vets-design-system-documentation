@@ -106,7 +106,7 @@ Allows users to select one or more items from a visible list.
 - Surround a related set of checkboxes with a `<fieldset>`. The` <legend>` provides context for the grouping. Do not use fieldset and legend for a single check.
 - The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `margin-left: -2rem; opacity: 0; position: absolute; left: auto;`.
 - Each input should have a semantic `id` attribute, and its corresponding `label` should have the same value in it’s `for` attribute.
-- The `title` attribute can replace <label>.
+- The `title` attribute can replace `<label>`.
 
 ### Usability
 
