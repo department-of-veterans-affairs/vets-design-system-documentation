@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Messaging dictionary
-draft: true
 anchors:
   - anchor: System messaging
   - anchor: Engagement messaging
@@ -15,7 +14,7 @@ anchors:
 
 Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [Error Messages](/patterns/error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### Scheduled downtime notice scenarios
 
@@ -40,7 +39,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 Nudges the user to enter or update data in the system. It can be initiated by either the system or another user.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [Error Messages](/patterns/error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### Prompt to complete a task or enter data
 
@@ -53,7 +52,7 @@ Nudges the user to enter or update data in the system. It can be initiated by ei
 
 Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [Error Messages](/patterns/error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### System downtime
 
@@ -108,7 +107,7 @@ Variations in messaging will be contingent on:
 
 The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [Error Messages](/patterns/error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### Task completion success/failure
 

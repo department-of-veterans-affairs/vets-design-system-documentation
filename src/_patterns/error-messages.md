@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Messaging - Error messages
-draft: true
 anchors:
   - anchor: Structure
   - anchor: Content within the description
@@ -290,14 +289,14 @@ Focusing in on the intent of the error message can help to further flesh out the
 
 ### Messaging categories
 
-The [Messaging Dictionary](/content-style-guide/messaging-dictionary) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.
+The [Messaging Dictionary](/patterns/messaging-dictionary) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.
 
 | Error state | When to use | Link to dictionary of messages | 
 | ----- | ----- | ----- | 
-| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples](/content-style-guide/messaging-dictionary#system-messaging) | 
-| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples](/content-style-guide/messaging-dictionary#engagement-messaging) | 
-| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](/content-style-guide/messaging-dictionary#access-messaging)| 
-| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](/content-style-guide/messaging-dictionary#feedback-messaging)| 
+| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples](/patterns/messaging-dictionary#system-messaging) | 
+| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples](/patterns/messaging-dictionary#engagement-messaging) | 
+| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](/patterns/messaging-dictionary#access-messaging)| 
+| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](/patterns/messaging-dictionary#feedback-messaging)| 
 
 ### Next-step calls to action
 
