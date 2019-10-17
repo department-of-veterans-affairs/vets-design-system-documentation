@@ -11,7 +11,7 @@ anchors:
 
 Because most Veterans find information starting with Google, no matter what the content is, writing for SEO (search engine optimization) is important to ensure that we're getting the right information to Veterans where they begin their journey.
 
-To learn more about SEO and writing with SEO in mind, we recommend starting with [Google's SEO starter guide]((https://support.google.com/webmasters/answer/7451184?hl=en) ) and [The Moz Blog](https://moz.com/blog).
+To learn more about SEO and writing with SEO in mind, we recommend starting with [Google's SEO starter guide](https://support.google.com/webmasters/answer/7451184?hl=en) and [The Moz Blog](https://moz.com/blog).
 
 
 
