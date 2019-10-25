@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Messaging dictionary
+title: Error message dictionary
 anchors:
   - anchor: System messaging
   - anchor: Engagement messaging
@@ -8,7 +8,7 @@ anchors:
   - anchor: Feedback messaging
 ---
 
-# Messaging Dictionary
+# Error message dictionary
 
 ## System messaging
 
