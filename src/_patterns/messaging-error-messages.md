@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Messaging - Error messages
+title: Error message styleguide
 anchors:
   - anchor: Structure
   - anchor: Content within the description
