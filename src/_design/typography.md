@@ -53,6 +53,7 @@ anchors:
             <p>Bitter has little variation in stroke weight and the Regular is thicker than a normal ‘Regular’ style for print design. This generates an intense color in paragraphs, accentuated by the serifs that are as thick as strokes with square terminals.</p>
             <p>Each glyph is carefully designed with an excellent curve quality added to the first stage of the design, that was entirely made in a pixel grid. The typeface is balanced and manually spaced to use very few kerning pairs, especially important
                 for web font use since most browsers do not currently support this feature.</p>
+            <p>- Sol Matas (Designed for Huerta Tipográfica)</p>
 
         </div>
 
