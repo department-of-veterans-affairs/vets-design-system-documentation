@@ -82,7 +82,7 @@ A select box allows users to select one option from a list.
 - If the list of options is very short. Use radio buttons instead.
 - If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.
 - If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from select boxes. Use checkboxes instead.
-- For site navigation (use the navigation components instead).
+- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link](/design/typography#links) or the [Sidenav component](/components/sidenav).
 
 #### Guidance
 
