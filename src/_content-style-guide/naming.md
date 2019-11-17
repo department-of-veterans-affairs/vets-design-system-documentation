@@ -4,21 +4,26 @@ title: Naming
 draft: true
 ---
 
-# Naming
+# Naming and labels
 
-Most tools, products, benefits, offices, and programs don’t need a brand name. Don’t create new branded names (official or otherwise) because:
+Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos](https://design.va.gov/design/logos), we also don't create "brand clutter" with unnecessary branding. 
 
--	Branded terms often introduce internal jargon that Veteran customers aren’t familiar with. 
--	Branded terms—[like logos](https://design.va.gov/design/logos) that are different from the official VA brand—spawn unnecessary sub-brands that create confusion for users. 
--	Branded terms need to be marketed in order for Veterans to be "educated" on their meaning, which is both expensive and time-consuming to do. 
+**Don't create new brands**
 
-Check the [word list](https://design.va.gov/content-style-guide/word-list) for tools, products, benefits, and programs that are considered acceptable capitalized terms.
+Branded names and labels: 
+-	Force internal jargon on customers. 
+-	Spawn unnecessary sub-brands and create confusion for Veterans. 
+-	Are expensive and time-consuming to market in order to educate customers on what they mean. 
 
-### Use descriptive plain language labels
+Check the [word list](https://design.va.gov/content-style-guide/word-list) for tools, benefits, and programs that are okay to capitalize.
 
-If you need to call your tool, product, feature, or program something, call it what it is. Use everyday, plain language words that people already understand.
+## Use descriptive plain language labels
 
-This follows our [content principles](https://design.va.gov/content-style-guide/content-principles), is easier to understand without explanatory information, and is better for [SEO](https://design.va.gov/content-style-guide/seo). 
+If you need to call your tool, program, or benefit something, call it what it is. Use everyday, plain language words that people already understand.
+
+This follows our [content principles](https://design.va.gov/content-style-guide/content-principles), is easier to understand without explanatory information, and is [better for SEO](https://design.va.gov/content-style-guide/seo). 
+
+In the example below, there's no need to brand education benefits with the internal line of business because all Veteran benefits are through VA. Likewise, on-the-job training doesn't need to be made into a brand or a branded, uncommon acronym.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -34,12 +39,14 @@ Your VA education benefits can help you pay for books, supplies, and housing whi
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
  
-Your VA education benefits can help you pay for books, supplies, and housing while you’re learning a trade or skill through the On-the-Job Training (OJT) Program.
+Your VR&E Education Benefits can help you pay for books, supplies, and housing while you’re learning a trade or skill through On-the-Job Training (OJT).
 
 </div>
 </div>
 
 </div>
+
+In the examples below, branded labels hide critical information. Using a descriptive plain language label helps the user find the task or information they're looking for. 
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -67,17 +74,18 @@ Pepco Green Button
 </div>
 
 
-### Don't create acronyms to use like a brand name
+## Don't create acronyms to use like a brand name
 
-Don’t create new [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) in Veteran-facing content that aren't already commonly used and understood. When in doubt, refer to [Merriam-Webster](https://www.merriam-webster.com) or AP Style.
+Many government organizations rely on acronyms as shorthand in internal communications, but that doesn't mean we should make customers learn our internal jargon. 
+
+Don’t create new [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) in Veteran-facing content that aren't commonly used and understood by them already. When in doubt, refer to [Merriam-Webster](https://www.merriam-webster.com) or AP Style. Likewise, don't use internal acronyms in Veteran-facing content like they're brand names.
 
 **Avoid “alphabet soup” syndrome**
 
-When we transform common words into capitalized, branded terms, and then refer to them as acronyms, we needlessly force internal jargon on our customers. Internal acronyms used like branded or official names:
-- Are hard to understand by customers and people outside your business or team.
+Internal acronyms used like branded names are:
+- Hard to understand by customers and people outside your business or team.
 -	Sound like Government, not human.
--	Don’t align with the clear, helpful, and plain language part of our content principles.
--	Aren't person-to-person, conversational, and empathetic in voice and tone.
+-	Don’t align with our [content principles](https://design.va.gov/content-style-guide/content-principles).
 
 
 <div class="do-dont">
