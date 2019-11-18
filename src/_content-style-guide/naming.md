@@ -15,7 +15,7 @@ Branded names and labels:
 -	Spawn unnecessary sub-brands and create confusion for Veterans. 
 -	Are expensive and time-consuming to market in order to educate customers on what they mean. 
 
-Check the [word list](https://design.va.gov/content-style-guide/word-list) for tools, benefits, and programs that are okay to capitalize.
+Check the [word list](https://design.va.gov/content-style-guide/word-list) for tools, benefits, and programs that are OK to capitalize.
 
 ## Use descriptive plain language labels
 
