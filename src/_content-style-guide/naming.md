@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Naming
-draft: true
 ---
 
 # Naming and labels
