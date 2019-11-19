@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Naming
+title: Naming and labels
 ---
 
 # Naming and labels
