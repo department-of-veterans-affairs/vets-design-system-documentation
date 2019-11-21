@@ -45,6 +45,7 @@ Pertains to newly received or noteworthy information about the VA.
 - Use for information that is safe to dismiss and can be accessed in other parts of VA.gov
 - Be succinct
 - Allow the user to dismiss
+- Retire promo banners after 30 days from initial posting or sooner, as specified by requestor
 </div>
 </div>
 <div class="do-dont__dont">

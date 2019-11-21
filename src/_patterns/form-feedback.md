@@ -83,7 +83,7 @@ Error messages are generally the same. The error message is slightly different i
 
 Unlike other form elements, error messages for checkboxes appear below
 
-#### Error message above checkbox
+#### Error message below checkbox
 
 <div class="site-showcase">
 {% include_relative html/error-checkbox.html %}
