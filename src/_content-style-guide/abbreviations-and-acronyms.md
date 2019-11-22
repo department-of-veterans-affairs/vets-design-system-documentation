@@ -15,16 +15,16 @@ In formats where space is very limited, like callout boxes or alerts, we abbrevi
 
 ## Acronyms
 
-For acronyms, use the spelled out term on first mention in body copy with the acronym in parentheses; then the acronym alone on subsequent mentions. 
+For acronyms, use the spelled-out term on first mention in body copy with the acronym in parentheses; then the acronym alone on subsequent mentions. 
 
 - **On first mention:** Servicemembers' Group Life Insurance Traumatic Injury Protection (TSGLI)
 - **After first mention:** TSGLI 
 
 __Exceptions for page titles, headers, and meta title tags__
 
-If the spelled out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's OK to use the acronym by itself for the H1 and meta title tag. Just define it in the first mention within body copy, using the spelled out term with the acronym in parentheses. 
+If the spelled-out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags](https://design.va.gov/content-style-guide/seo), it's OK to use the acronym by itself for the H1 and meta title tag. Just define it in the first mention within body copy, using the spelled-out term with the acronym in parentheses. 
 
-- Note: There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we use the acronym (or vice versa) by itself in the H1 or headers. In general, default to first using the term that Veterans recognize better, especially in H1s and headers. 
+- **Note:** There may be cases where for SEO purposes or to use the term that Veterans are more familiar with, we use the acronym (or vice versa) by itself in the H1 or headers. In general, default to first using the term that Veterans recognize better, especially in H1s and headers. 
 
 
 <div class="do-dont">
@@ -32,7 +32,7 @@ If the spelled out term is too long for easy scanning in the page title (H1) or 
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1"> 
 
-This example uses the acronym in the header because it's what Veterans recognize better and the term they use in searches. The spelled out term is used at the first mention in the body copy.
+This example uses the acronym in the header because it's what Veterans recognize better and the term they use in searches. The spelled-out term is used at the first mention in the body copy.
 
 __Get free mental health care for PTSD__
 

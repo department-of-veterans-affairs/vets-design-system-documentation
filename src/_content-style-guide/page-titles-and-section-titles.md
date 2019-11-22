@@ -18,7 +18,7 @@ If someone can still figure out what they need to do on that page or what that p
 
 Page titles have a few important functions: 
 
-- To clearly and quickly tell people the main purpose of the page—what can they do or what information they can get on that page.
+- To clearly and quickly tell people the main purpose of the page—what they can do or what information they can get on that page.
 - To [optimize the page for search](https://design.va.gov/content-style-guide/seo), so the information is findable through Google and other search engines. 
 
 Try to keep page titles to 52 characters maximum, with spaces. Use the primary SEO keyword in the page title. On VA.gov, page titles use the H1 tag.

@@ -20,7 +20,7 @@ __Exceptions:__
 - Use 9/11 when it's part of a program name such as the Post-9/11 GI Bill.
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
   - Mon., Tue., Wed., Thu., Fri., Sat., Sun.
-  - Jan., Feb., Mar., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate May, June, July.)
+  - Jan., Feb., Mar., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate April, May, June, July.)
   - In application form fields, we often use the construction: mm/dd/yyyy
 <br>
 
@@ -41,7 +41,7 @@ When referencing decades or periods of years, don't use an apostrophe with the "
 Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 
 - Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
-- Include the minutes, even when on-the-hour.
+- Include the minutes, even when on the hour.
 
 <div class="do-dont">
 <div class="do-dont__do">
