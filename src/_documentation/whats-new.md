@@ -11,6 +11,41 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### July 3
+
+**Site updates**
+- Documentation for [promo banner]({{ site.baseurl }}/components/promo-banners) variations
+
+---
+
+### July 3
+
+**6.7.0**
+- [Accordion]({{ site.baseurl }}/components/accordions) component now supports a multi-selectable feature, allowing multiple accordions within a set to be open at the same time.
+
+---
+
+### June 21
+
+**Site updates**
+- Documentation for the new [promo banner component](/components/promo-banners)
+- Note about how U.S. Web Design System has been implemented into the Formation design system
+
+**6.6.3**
+- Corrects font size in the [font size utility]({{site.base-url}}/utilities/font-size). The issue affected the normal font size utility, which was incorrectly set to `300`. The correct value is `400`.
+
+---
+
+### June 20
+
+**6.6.1 and 6.6.2**
+- Corrects display bug in the promo banner component
+
+**6.6.0**
+- Adds new promo banner component
+
+---
+
 ### June 10
 
 **Site updates**

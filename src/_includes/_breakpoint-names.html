@@ -1,30 +1,34 @@
 <table class="usa-table usa-table-borderless">
   <thead>
     <tr>
-      <th>breakpoint-name</th>
-      <th>width</th>
+      <th>Breakpoint sass variable</th>
+      <th>Width</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>xsmall-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$xsmall-screen</code></td>
       <td>320px</td>
     </tr>
     <tr>
-      <td><code>small-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$small-screen</code></td>
       <td>481px</td>
     </tr>
     <tr>
-      <td><code>medium-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$medium-screen</code></td>
       <td>768px</td>
     </tr>
     <tr>
-      <td><code>small-desktop-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$small-desktop-screen</code></td>
       <td>1008px</td>
     </tr>
     <tr>
-      <td><code>large-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$large-screen</code></td>
       <td>1201px</td>
     </tr>
   </tbody>
 </table>
+
+{% unless include.hide_link == true %}
+<p>Read more about <a href="{{ site.baseurl }}/design/breakpoints">breakpoints</a>.</p>
+{% endunless %}

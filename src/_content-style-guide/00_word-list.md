@@ -37,6 +37,8 @@ annual: Unless part of a benefit or program name, avoid the use of terms like "a
   -	**Instead of bi-annual:** "2 times each year" or "twice each year"
   -	**Instead of biennial:** "every other year"
 
+appeal option: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
+
 apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
 Armed Forces: Capitalize.
@@ -60,6 +62,10 @@ Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural
 blind or low-vision (not "blind or sight-impaired")
 
 Blue Water: Capitalize.
+
+Board decision: A Veteran receives a "Board decision," not a “Board Appeal decision.” 
+
+Board of Veterans Appeals: Capitalize. Can use "Board" on subsequent mentions in body copy.
 
 Brown Water: Capitalize.
 
@@ -114,6 +120,8 @@ C&P exam: See "claim exam" entry.
 death benefits: Define on first mention in body copy as "money from a Veteran’s life insurance policy when that Veteran dies."  Include definition in another sentence, as a parenthetical, or set off with commas.
 
 deceased: This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
+
+decision review form: A Veteran fills out a decision review "form," not an "application."
 
 demolish: Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
 
@@ -234,6 +242,8 @@ hazardous exposure: Define in the context of body copy as "contact with harmful 
 
 health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
 - **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
+
+Higher-Level Review decision: Initial cap "Higher-Level Review." Don't capitalize "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
 
 home loan: Don't use a hyphen even when used as an adjective.
 - **Like this:** home loan benefits
@@ -394,11 +404,18 @@ resume: Don't use accent marks when referring to the noun, as in a job resume.
 
 retroactive: Provide contextual information to help define, as relevant in the specific situation. Example: Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury.
 
+review option: A Veteran selects from one of the available review options when they request a decision review. The 3 review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
+
+reviewer: Lowercase. Person who reviews Supplemental Claims. (As opposed to a senior reviewer, who reviews Higher-Level Reviews.)
+
+
 ### S
 
 secondary service-connected claim: Define on first mention in body copy as "a claim for a new disability that's linked to a service-connected disability you already have." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 Selected Reserve: Generally used in the context of the Montgomery GI Bill Selected Reserve.
+
+senior reviewer: Lowercase. Person who reviews Higher-Level Reviews. (As opposed to a reviewer, who reviews Supplemental Claims.)
 
 service connected: Hyphenate when modifying a noun. Otherwise, do not hyphenate.
   - **Like this (modifying a noun):** A Veteran with a service-connected disability may be eligible for additional health care benefits.
@@ -437,7 +454,9 @@ substantially gainful employment: Provide a definition or note when using this t
 
 suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
-supplemental claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied."
+Supplemental Claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied." Note: A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
+
+Supplemental Claim decision: Initial cap "Supplemental Claim." Don't capitalize "decision."
 
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -461,6 +480,8 @@ VA: Don't use "the" before VA when it's used as a noun. However, when VA serves 
 - As a noun: VA announced today that...   
 - As a noun phrase ("VA facilities"): Some VA facilities in Texas are affected by Hurricane Florida.
 - As an adjective (modifying "task force"): The VA task force announced today...
+
+VA decision: This is a general, umbrella term for a claim decision made by VA.
 
 VA.gov: Treat it as a brand name and always capitalize "VA." Don't use "www.va.gov" as the name. 
 -	**Like this:** Preview the new VA.gov.
@@ -504,6 +525,8 @@ Veterans’ Group Life Insurance (VGLI). Note that Veterans’ is plural with a 
 Veterans Health Administration (VHA). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Job Bank: "Veterans" is plural.
+
+Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions in body copy instead of the full formal term.
 
 Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 

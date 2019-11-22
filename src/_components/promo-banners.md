@@ -7,9 +7,31 @@ title: Promo banners
 
 <p class="va-introtext">Promo banners are fixed content used for dismissible announcements such as new tools, news, etc.</p>
 
-{% include iframe-preview.html src="html/promo-banner-iframe.html" title="Visibility" height=400 %}
+## Benefit announcements
+
+Pertains to content focused on benefits: a new tool, a new online benefit application, etc.
+
+{% include iframe-preview.html src="html/promo-banner-iframe.html" title="Visibility" height=200 %}
 
 {% include snippet.html content='html/promo-banner.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/promobanner/' %}
+
+## Email signup
+
+Points to email signups for various VA updates / alerts / communications.
+
+{% include iframe-preview.html src="html/promo-banner-envelope-iframe.html" title="Visibility" height=200 %}
+
+{% include snippet.html content='html/promo-banner-envelope.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/promobanner/' %}
+
+## News stories
+
+Pertains to newly received or noteworthy information about the VA.
+
+{% include iframe-preview.html src="html/promo-banner-newspaper-iframe.html" title="Visibility" height=200 %}
+
+{% include snippet.html content='html/promo-banner-newspaper.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/promobanner/' %}
+
+
 
 ## Guidance
 
@@ -23,6 +45,7 @@ title: Promo banners
 - Use for information that is safe to dismiss and can be accessed in other parts of VA.gov
 - Be succinct
 - Allow the user to dismiss
+- Retire promo banners after 30 days from initial posting or sooner, as specified by requestor
 </div>
 </div>
 <div class="do-dont__dont">

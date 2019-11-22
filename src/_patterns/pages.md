@@ -29,7 +29,7 @@ We surface information that is important to Veterans first. The hierarchy of a h
 #### Page title (h1)
 Tells the user what's on this page, is also important semantically for html, defined in Foundation [here](https://design.va.gov/design/typography.html#headings)
 #### Intro text
-Similar to the title, Intro text is an executive summary of page content, define in stype in Foundation [here](https://design.va.gov/design/typography.html#paragraphs). Intro text is also important for SEO.
+Similar to the title, Intro text is an executive summary of page content, defined in Foundation [here](https://design.va.gov/design/typography.html#paragraphs). Intro text is also important for SEO.
 
 #### Jump link navigation (On this page)
 Jump link nav serves two purposes: 1) It informs users what sections are on this particular page, and 2) it allows the user to jump to the section they wish to read.

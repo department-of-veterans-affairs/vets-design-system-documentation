@@ -16,6 +16,6 @@ Patterns are solutions and researched best practices that solve recurring user i
 
 ## How are they different from components?
 
-A pattern is more than the sum of its parts. Patterns are solutions, whereas a component can be considered a UI chunk. In Formation, patterns how design, content strategy, reusable components, and accessibility can be put together to solve common problems that all Veterans may experience on VA.gov.
+A pattern is more than the sum of its parts. Patterns are solutions, whereas a component can be considered a UI chunk. In Formation, patterns demonstrate how design, content strategy, reusable components, and accessibility can be put together to solve common problems that all Veterans may experience on VA.gov.
 
 Components can be considered concrete, a finite list: buttons, accordions, tables, etc. Patterns might be unique to a site or an application and may evolve with changes in technology or after competitive analysis.

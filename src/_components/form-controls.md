@@ -82,7 +82,7 @@ A select box allows users to select one option from a list.
 - If the list of options is very short. Use radio buttons instead.
 - If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.
 - If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from select boxes. Use checkboxes instead.
-- For site navigation (use the navigation components instead).
+- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link](/design/typography#links) or the [Sidenav component](/components/sidenav).
 
 #### Guidance
 
@@ -106,7 +106,7 @@ Allows users to select one or more items from a visible list.
 - Surround a related set of checkboxes with a `<fieldset>`. The` <legend>` provides context for the grouping. Do not use fieldset and legend for a single check.
 - The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `margin-left: -2rem; opacity: 0; position: absolute; left: auto;`.
 - Each input should have a semantic `id` attribute, and its corresponding `label` should have the same value in it’s `for` attribute.
-- The `title` attribute can replace <label>.
+- The `title` attribute can replace `<label>`.
 
 ### Usability
 
@@ -117,7 +117,7 @@ Allows users to select one or more items from a visible list.
 
 #### When to consider something else
 - If there are too many options to display on a mobile screen.
-- If a user can only select one option from a list (use radio buttons instead).\
+- If a user can only select one option from a list (use radio buttons instead).
 
 #### Guidance
 - Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.

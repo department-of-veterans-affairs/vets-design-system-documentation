@@ -86,7 +86,7 @@ The [Flexbox grid](../layout/flexbox-grid.html) is set to `wrap` by default, but
 
 ## Align items
 
-This defines for how flex items are arranged across the row.
+This defines how flex items are arranged across the row.
 
 **Available values**
 
