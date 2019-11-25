@@ -11,7 +11,7 @@ title: Promo banners
 
 Pertains to content focused on benefits: a new tool, a new online benefit application, etc.
 
-{% include iframe-preview.html src="html/promo-banner-iframe.html" title="Visibility" height=200 %}
+{% include iframe-preview.html src="html/promo-banner-iframe.html" new_tab="true" title="Visibility" height=200 %}
 
 {% include snippet.html content='html/promo-banner.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/promobanner/' %}
 

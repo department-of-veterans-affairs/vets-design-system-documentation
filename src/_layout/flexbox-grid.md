@@ -61,7 +61,7 @@ In this example, we have `vads-u-padding--2p5` applied to each grid column, so w
 
 Each column class can include a breakpoint prefix that allows changing the column widths at different breakpoints.
 
-{% include iframe-preview.html src="html/flexbox-grid-responsive.html" title="Visibility" height=400 %}
+{% include iframe-preview.html src="html/flexbox-grid-responsive-iframe.html" new_tab="true" title="Visibility" height=400 %}
 
 {% include snippet.html content='html/flexbox-grid-responsive.html' %}
 

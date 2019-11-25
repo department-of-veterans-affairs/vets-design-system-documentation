@@ -24,7 +24,7 @@ The following guidance applies to all page templates. The page templates are bui
 
 In this example, the nav bar is what usually appears on the left-hand side of the page. When viewing this layout on VA.gov using a mobile device, the containing `div` sits on top of the main content. However, because the side navigation is converted to a flyout menu, and no vertical `padding` is associated with it, the side navigation's containing `div` appears to have disappeared.
 
-{% include iframe-preview.html src="html/2-col-content-right-iframe.html" title="2 columns" height=400 %}
+{% include iframe-preview.html src="html/2-col-content-right-iframe.html" new_tab="true" title="2 columns" height=400 %}
 
 {% include snippet.html content='html/2-col-content-right.html' %}
 
@@ -32,6 +32,6 @@ In this example, the nav bar is what usually appears on the left-hand side of th
 
 In this layout on VA.gov, the content is on the left and section on the left is often for promo content. When viewing this layout on a mobile device, the right column moves underneath the left column.
 
-{% include iframe-preview.html src="html/2-col-content-left-iframe.html" title="2 columns with content on the left" height=400 %}
+{% include iframe-preview.html src="html/2-col-content-left-iframe.html" new_tab="true" title="2 columns with content on the left" height=400 %}
 
 {% include snippet.html content='html/2-col-content-left.html' %}
