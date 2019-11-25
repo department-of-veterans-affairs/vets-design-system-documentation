@@ -8,9 +8,9 @@ title: Sidenav
 
 <p class="va-introtext">Hierarchical, vertical navigation to place at the side of a page.</p>
 
-{% include iframe-preview.html src="html/sidenav.html" title="Side nav" height=400 %}
+{% include iframe-preview.html src="html/sidenav-iframe.html" new_tab='true' title="Side nav" height=400 %}
 
-{% include snippet.html content='html/sidenav.html' %}
+{% include snippet.html content='html/sidenav.html' new_tab='html/sidenav-iframe.html'%}
 
 * All elements, including the `<script>` tag in the snippet are required. An update to Formation's script may address this.
 * The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
@@ -30,6 +30,7 @@ title: Sidenav
 * If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.
 
 ### Guidance
+* Typically used in a [two-column layout]({{ site.baseurl }}/layout/page-templates#two-columns-content-on-right).
 * Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
 * Keep the navigation links short. They can be shorter derivatives of page titles themselves.
 * If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
