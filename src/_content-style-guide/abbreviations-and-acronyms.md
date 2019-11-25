@@ -47,3 +47,5 @@ If you’re having problems sleeping, controlling your anger, or readjusting to 
 ## Avoid using internal acronyms
 
 Always spell out the names of VA offices instead of using the internal acronym on external-facing pages. This helps avoid confusion when there are offices that share the same acronym. (Example: The Office of Community Care, Office of Corporate Communications, and Office of Connected Care, all refer to their office as OCC.)
+
+See also our guidance on [naming and labels](https://design.va.gov/content-style-guide/naming-and-labels#dont-create-acronyms-to-use-like-a-brand-name) for information on acronyms and branding.
