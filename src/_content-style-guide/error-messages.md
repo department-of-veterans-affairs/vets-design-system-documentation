@@ -15,5 +15,5 @@ Error messages mainly appear in interactive experiences such as tools, forms, an
 - What does the user need to do to continue?
 - If there's nothing they can do, what’s the next step for the user?
 
-See the [error message style guide](https://design.va.gov/patterns/messaging-error-messages) for additional guidance on writing an error messages.
+See the [error message style guide](https://design.va.gov/patterns/messaging-error-messages) for additional guidance on writing error messages.
 See the [error message dictionary](https://design.va.gov/patterns/messaging-dictionary) for specific error message examples and use cases.
