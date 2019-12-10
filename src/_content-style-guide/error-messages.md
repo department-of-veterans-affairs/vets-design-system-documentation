@@ -9,7 +9,7 @@ Error messages tell the user that something has gone wrong. These messages shoul
 
 Error messages mainly appear in interactive experiences such as tools, forms, and applications. Because this category of messaging usually has a lot of visual design and formatting that affects copy, go to the design section for more [detailed guidance and formatting of error messages](https://design.va.gov/patterns/messaging-error-messages).
 
-## Error messages should provide the following information:
+### Error messages should provide the following information:
 - What’s the error or issue?
 - What caused the error or issue?
 - What does the user need to do to continue?
