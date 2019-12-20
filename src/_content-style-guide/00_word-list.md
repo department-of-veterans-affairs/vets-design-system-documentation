@@ -32,7 +32,7 @@ advanced: Capitalize only when used as part of the branded term "My HealtheVet A
 
 Agent Orange: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-Agent Orange Registry health exam: Initial cap "Agent Orange Registry." Don't capitalize "health exam."
+Agent Orange Registry health exam: Capitalize "Agent Orange Registry." Don't capitalize "health exam."
 
 annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
   -	**Instead of annual:**  "each year" or "once each year"
@@ -77,12 +77,12 @@ can vs. may: Use "can" when meaning the ability or power to do something; use "m
 
 caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
 
-Certificate of Eligibility (COE): Initial cap. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Certificate of Eligibility (COE): Capitalize. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits.
   -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
 
-Character of Discharge review process: Initial cap "Character of Discharge" review process.
+Character of Discharge review process: Don't capitalize "review process."
 
 character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 
@@ -117,7 +117,7 @@ court-appointed guardian: Define on first mention in body content as "a person t
 
 court-martial: Lowercase, as in "general court-martial," "special court-martial," and "summary court-martial."
 
-C&P exam: see "claim exam" entry.
+C&P exam: See "claim exam" entry.
 
 ### D
 
@@ -131,11 +131,11 @@ demolish: Use "knock down" or, when used as a noun in the context of a job of bu
 
 dentistry: Use "dental care" instead.
 
-Department of Veterans Affairs: Note there's no apostrophe on Veterans. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
+Department of Veterans Affairs: Note "Veterans" does not take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
 - Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
 - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
 
-Dependency and Indemnity Compensation (DIC): Initial cap. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Dependency and Indemnity Compensation (DIC): Capitalize. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -152,7 +152,7 @@ disease: Use "illness" unless it's part of a proper name of a specific disease.
 
 dividend: Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-Don't Ask, Don't Tell policy: Use initial caps and no quotation marks. Don't capitalize "policy."
+Don't Ask, Don't Tell policy: Capitalize with no quotation marks. Don't capitalize "policy."
 
 ### E
 
@@ -249,7 +249,7 @@ hazardous exposure: Define in the context of body copy as "contact with harmful 
 health care: Two words, never hyphenated as a compound adjective (for example, “health care system"). Do not capitalize unless it is part of the official name of a VA medical center. 
 - **Exception:** Defer to the VA medical center's official name, which may have health care as one word versus two words.
 
-Higher-Level Review decision: Initial cap "Higher-Level Review." Don't capitalize "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
+Higher-Level Review decision: Capitalize "Higher-Level Review." Don't capitalize "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
 
 hospitalization: Use "hospital care."
 
@@ -371,7 +371,7 @@ post-9/11: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11
 
 postservice: No hyphen.
 
-Premium: Initial cap when used in the context of account level (for example: DS Logon Premium account)
+Premium: Capitalize when used in the context of account level (for example: DS Logon Premium account)
 
 pre-discharge: Use a hyphen.
 
@@ -465,7 +465,7 @@ Social Security number: Don't capitalize "number."
 
 special claim: Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-Statement of the Case: Use initial caps
+Statement of the Case: Capitalize.
 
 suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
@@ -474,9 +474,9 @@ substantially gainful employment: Provide a definition or note when using this t
 
 Supplemental Claim: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied." Note: A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
 
-Supplemental Claim decision: Initial cap "Supplemental Claim." Don't capitalize "decision."
+Supplemental Claim decision: Don't capitalize "decision."
 
-Supplemental Statement of the Case: Use initial caps
+Supplemental Statement of the Case: Capitalize.
 
 Survivors’ and Dependents’ Educational Assistance (DEA) program: Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
@@ -532,7 +532,7 @@ Veteran ID Card (VIC): Capitalize when referring to the [ID card](https://www.va
 
 Veteran-owned small business (VSOB): Lowercase (aside from Veteran) when the term is spelled out. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Affairs: Note there's no apostrophe on Veterans. See the entries "VA" and "Department of Veterans Affairs."
+Veterans Affairs: Note that "Veterans" does not take an apostrophe. See the entries "VA" and "Department of Veterans Affairs."
 
 Veterans Benefits Administration (VBA). Note that "Benefits" is plural. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
