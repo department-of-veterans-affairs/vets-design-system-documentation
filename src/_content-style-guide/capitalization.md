@@ -7,7 +7,7 @@ title: Capitalization
 
 ## Use sentence case capitalization
 
-We use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
+We use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links, unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
 
 ### Exceptions where we use title capitalization
 
@@ -33,4 +33,4 @@ Apply Now For GI Bill Benefits
 </div>
 </div>
 
-[Consult our word list](https://design.va.gov/content-style-guide/word-list) or refer to AP Style if you're not sure a term should be capitalized. If still unsure, err on the side of sentence case capitalization.
+[Consult our word list](https://design.va.gov/content-style-guide/word-list) or refer to AP Style if you're not sure whether a term should be capitalized. If still unsure, err on the side of sentence case capitalization.

@@ -31,7 +31,7 @@ Change the alignment of text or elements. This utility also [responsive prefixes
 
 Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
 
-{% include iframe-preview.html src="html/text-align.html" title="Visibility" height=300 %}
+{% include iframe-preview.html src="html/text-align-iframe.html" new_tab="true" title="Visibility" height=300 %}
 
 {% include snippet.html content='html/text-align.html' %}
 

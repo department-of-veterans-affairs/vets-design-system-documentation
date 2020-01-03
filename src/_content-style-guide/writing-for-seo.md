@@ -21,7 +21,7 @@ Writing for SEO is more than having meta title tags, descriptions, and keywords.
 
 At the foundation of all of these recommendations is to apply them in a way that's natural and helpful to the user.
 
-- Write content that addresses what people actually search for with high quality, unique information that's relevant to that topic.
+- Write content that addresses what people actually search for with high-quality, unique information that's relevant to that topic.
   - Example: Do people really want to know all the awards your office won for customer satisfaction or do they want to know how they can find out the status of their application?
 - Use the primary user search phrase or keyword in the H1 (page title), H2 (section headers), and intro text.
 - Don't have more than one H1 on a page. Use the H1 only for the page title. See our [guidance on page titles](https://design.va.gov/content-style-guide/page-titles-and-section-titles).
@@ -40,7 +40,7 @@ At the foundation of all of these recommendations is to apply them in a way that
 __Why they're important__
 
 - Title tags and descriptions help people identify what the page is about in search results and decide whether to click on your page from the results.
-- Having a consistent standard for title tags and descriptions also helps ensure that our search 'branding' looks consistent and unified in search results.
+- Having a consistent standard for title tags and descriptions also helps ensure that our search "branding" looks consistent and unified in search results.
 - It helps communicate VA's brand as the authoritative source for VA information for Veterans.
 - It also helps people tell quickly which content comes from VA versus non-VA organizations that may also be providing VA benefit information.
 
@@ -77,7 +77,7 @@ For VA medical centers (VAMC), we format the title tag a little differently.  Be
 
 ### Meta descriptions
 
-Meta descriptions provide a high level summary of a page. While they aren't crawled by search engines, they are displayed in search results to users.  
+Meta descriptions provide a high-level summary of a page. While they aren't crawled by search engines, they are displayed in search results to users.  
 
 - Keep meta description text to less than 300 characters (including spaces).
 - Try to use the primary keyword or phrase at the beginning of the description, within the first 155 characters. (Google sometimes changes how many characters it shows on searches.)

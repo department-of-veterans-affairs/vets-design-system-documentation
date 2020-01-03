@@ -6,7 +6,7 @@ slug: button-labels
 
 # Button labels
 
-Buttons signal important calls-to-action (CTA) and help people quickly see what's the most important action they need to take on a page. Treat buttons like important or primary content, and prioritize their placement on pages as you would essential information.
+Buttons signal important calls to action (CTA) and help people quickly see what's the most important action they need to take on a page. Treat buttons like important or primary content, and prioritize their placement on pages as you would essential information.
 
 [Use links for secondary or less important actions](../content-style-guide/links) on a page. Likewise, for simple navigation to lead people between pages, use links instead of buttons.
 

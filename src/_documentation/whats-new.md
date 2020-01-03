@@ -11,6 +11,14 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### December 11
+
+**Content style guide updates:**
+
+- New topic added for [error messages](https://design.va.gov/content-style-guide/error-messages).
+- New topic added for [naming and labels](https://design.va.gov/content-style-guide/naming-and-labels).
+- New entries added to [word list](https://design.va.gov/content-style-guide/word-list), including appeals terms.
+
 ### July 3
 
 **Site updates**

@@ -47,7 +47,7 @@ In his acceptance speech the actor thanked his parents, Martin Scorsese and Robe
 
 #### Contractions
 
-We use contractions on VA.gov. It supports our conversational, person-to-person voice and tone. Some situations might call for spelling out all the words, like in legal or a warning messages, but in general, we prefer using contractions. 
+We use contractions on VA.gov. It supports our conversational, person-to-person voice and tone. Some situations might call for spelling out all the words, like in legal or warning messages, but in general, we prefer using contractions. 
 
 - Be careful not to mix up "its" and "it's."
 - Use "it's" as a contraction of "it is," never "it has." 
@@ -79,7 +79,7 @@ We are available 8:00 a.m. to 6:00 p.m. CT, Monday through Friday.
 
 __Em dash__ 
 
-Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to over use them. We don't use a space on either side of the em dash. 
+Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to overuse them. We don't use a space on either side of the em dash. 
 
 - **Like this:** You may be eligible if you have an illness or injury caused&mdash;or made worse&mdash;by your time in service.
 
@@ -99,7 +99,7 @@ This is the short, single dash. We use it to connect words that modify a noun or
 
 #### Exclamation points
 
-Don't use the exclamation point on VA.gov for any text elements (body copy, headers, subheaders, field labels, CTAs, etc.). It doesn't align withour voice and tone, which is conversational, helpful, and straightforward. We don't yell, and we're not hyperbolic or casual.
+Don't use the exclamation point on VA.gov for any text elements (body copy, headers, subheaders, field labels, CTAs, etc.). It doesn't align with our voice and tone, which is conversational, helpful, and straightforward. We don't yell, and we're not hyperbolic or casual.
 
 <div class="do-dont">
 <div class="do-dont__do">

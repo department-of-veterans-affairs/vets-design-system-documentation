@@ -17,7 +17,7 @@ There's no specific legal guidance for VA trademarks, but we follow this general
 
 For the GI Bill trademark, we  include the symbol on the [Education and training](https://www.va.gov/education/) hub landing page. 
 
-In the scenario where there was no appropriate place on the hub landing page, we would instead include the symbol on its [About the GI Bill benefits](https://www.va.gov/education/about-gi-bill-benefits/) page. (But not both.)
+In the scenario where there is no appropriate place on the hub landing page, we would instead include the symbol on its [About the GI Bill benefits](https://www.va.gov/education/about-gi-bill-benefits/) page. (But not both.)
 
 Don't include it on a disability, careers, pension, or other page where we might mention the GI Bill.
 
