@@ -57,6 +57,8 @@ became worse: Use "got worse."
 
 beneficiary: In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
+benefit office: Do not use "benefit office" or "regional benefit office." The correct term is "regional office." See entry for VA regional office for details. 
+
 Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 blind or low-vision (not "blind or sight-impaired")
