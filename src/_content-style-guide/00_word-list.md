@@ -67,7 +67,7 @@ Blue Water: Capitalize.
 
 Board decision: A Veteran receives a "Board decision," not a “Board Appeal decision.” 
 
-Board of Veterans Appeals: Capitalize. Can use "Board" on subsequent mentions in body copy.
+Board of Veterans' Appeals: Capitalize. Can use "Board" on subsequent mentions in body copy. Note that Veterans’ is plural with a plural possessive apostrophe.
 
 Brown Water: Capitalize.
 
