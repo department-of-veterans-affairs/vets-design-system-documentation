@@ -93,14 +93,14 @@ Full-width alerts can only appear below the main navigation and are used only fo
 {% include_relative html/alert-full-width.html %}
 </div>
 
-{% include snippet.html content='html/alert-full-width2.html' %}
+{% include snippet.html content='html/alert-full-width.html' %}
 
 ### Informational
 <div class="site-showcase">
 {% include_relative html/alert-full-width2.html %}
 </div>
 
-{% include snippet.html content='html/alert-full-width.html' %}
+{% include snippet.html content='html/alert-full-width2.html' %}
 
 ### More about full-width alerts
 - Only available in `info` or `warning` variants.
