@@ -16,13 +16,27 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 ***Note:** See [Error Messages](/patterns/error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
-### Scheduled downtime notice scenarios
+### Scheduled downtime notifications
 
 | Scenario                                 | Message title | Message content | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
-| Notice of upcoming scheduled downtime (sitewide) | **VA.gov will be down for maintenance soon** | We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A | 
-| Notice of upcoming scheduled downtime (application) | **[APPLICATION NAME] will be down for maintenance soon** | We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
-| Notice of upcoming scheduled downtime (authentication provider) | **[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon** | [ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [DATE] between [TIME] and [TIME]. If you have trouble signing in to your Vets.gov account during that time, please check back soon. | [Alert box](/components/alertboxes) | [Informational](/components/alertboxes#informational-alert) | Below sign in overlay title |
+| SITEWIDE Advance notification of scheduled downtime | **We'll be doing site maintenance on [Month, Date] between [00:00 a.m or p.m.] and [00:00 a.m or p.m.] ET.**  | You won’t be able to sign in or use some tools during this time. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A | 
+| SITEWIDE Countdown notication of scheduled downtime | **We’ll be starting site maintenance in [X] minutes** | If you’re filling out a form or using tools, sign in or create an account to save your work. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A | 
+| SITEWIDE Notice during scheduled downtime | **We’re working on VA.gov right now** | If you have trouble signing in or using some tools, check back after [Month, Date at 00:00 a.m. or p.m. ET]. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A | 
+| IN-APP Notice of upcoming scheduled downtime | **[APPLICATION NAME] will be down for maintenance soon** | We'll be doing some work on [APPLICATION NAME] on [Month, Date] between [00:00 a.m. or p.m.] and [00:00 a.m. or p.m ET]. If you have trouble using this tool during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+|IN-APP Notice during scheduled downtime | **This form is down for maintenance** | We’re making some updates to our site. We hope to be finished by [Month, Date] at [00:00 a.m or p.m. ET]. Please check back soon. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+| AUTH-PROVIDER Notice of upcoming scheduled downtime | **[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon** | [ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [Month, Date] between [00:00 a.m. or p.m.] and [00:00 a.m. or p.m. ET]. If you have trouble signing in to your VA.gov account during that time, please check back soon. | [Alert box](/components/alertboxes) | [Informational](/components/alertboxes#informational-alert) | Below sign in overlay title |
+| SIGN-IN Notice during scheduled downtime | **You may have trouble signing in or using some tools or services** | We’re doing some work on VA.gov right now. We hope to finish our work by [Month, Date] at [00:00 a.m or p.m. ET]. If you have trouble signing in or using any tool or services, check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+
+### Unscheduled downtime notifications
+
+| Scenario                                 | Message title | Message content | Component | State  | Location |
+| ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
+| SITEWIDE Notification of unscheduled downtime | **We’re doing some work on VA.gov right now** | You may have limited access to some tools and applications. We hope to finish our work by [Month, Date] at [00:00 a.m. or p.m. ET]. If you have trouble using any tools or services, please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+| IN-APP Notification of unscheduled downtime | **Application or Tool name] is down for maintenance** | We’re making some updates to [APPLICATION NAME]. We’re sorry it’s not working right now. We hope to finish our work by [Month, Date] at [00:00 a.m. or p.m. ET]. Please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+| SIGN-IN Notification of unscheduled downtime | **You may have trouble signing in or using some tools or services** | We’re doing some work on VA.gov right now. We hope to finish our work by [Month, Date] at [00:00 a.m. or p.m. ET]. If you have trouble using any tools or services, please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+
+
 
 ### Updates to user data (system-initiated)
 
@@ -115,6 +129,7 @@ The application’s response when the user is interacting with it. The majority 
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
 | Form save in progress success (inline)   | **Saved** | We saved the information you've entered so far. | N/A | [Alert box](/components/alertboxes) | [Success alert](/components/alertboxes#success-alert) | Below affected component |
 | Form save in progress success (exit page) | **Saved**  | We saved your in-progress form. Remember, you need to finish the form and click "Submit" to apply for this benefit. Continue applying now, or come back later to finish your application. | Continue your application | [Alert box](/components/alertboxes) | [Success alert](/components/alertboxes#success-alert) | Below page title |
+| Form save in progress success (inline)   | **We’re saving your new mobile phone number** |  We’ll show it here once it’s saved. | N/A | [Alert box](/components/alertboxes) | [Success alert](/components/alertboxes#success-alert) | Below affected component |
 | Form save in progress failure (inline)   | **Your form didn't save** | We're sorry. We couldn't save your form. Please try again.   | N/A | [Alert box](/components/alertboxes) | [Error alert](/components/alertboxes#error-alert) | Below affected component |
 | Form general error | **We need you to start over with this application** | Something's not working quite right. We're sorry to make extra work for you, but please try applying again in a few minutes. | Start over | [Alert box](/components/alertboxes) | [Error alert](/components/alertboxes#error-alert) | Replace content below page title |
 | Form submission success                  | **Submitted** | We received your form. Thank you. | N/A | [Alert box](/components/alertboxes) | [Error alert](/components/alertboxes#error-alert) | Below page title |
