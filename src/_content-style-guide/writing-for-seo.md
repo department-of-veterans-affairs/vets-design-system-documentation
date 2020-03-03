@@ -69,11 +69,11 @@ For VA medical centers (VAMC), we format the title tag a little differently. Bec
 
 - Format:  VAMC Plain Language System Name \| H1 Page Title \| Veterans Affairs
   - VA Pittsburgh Health Care \| Medical Records Office \| Veterans Affairs
-  - VA Pittsburgh Health Care \| H. John Heinz III Department of Veterans Affairs Medical Center \| Veterans Affairs
-- Use the plain language VAMC system name in the title tags rather than the long facility locator API system name.
+  - VA Pittsburgh Health Care \| H. John Heinz III Department Of Veterans Affairs Medical Center \| Veterans Affairs
+- Use the plain language VAMC system name in the title tags.
 - On VA medical centers, we don't apply a character limit for the meta title. 
 
-Because the official facility location API names (that are used in the H1 page titles) can be very long, we let search engines truncate according to their character limit.  
+Because the official facility location names can be very long and because we use them in the H1 page titles) of location pages, we let search engines truncate according to their character limit.  
 
 
 
