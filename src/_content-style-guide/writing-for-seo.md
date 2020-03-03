@@ -73,7 +73,7 @@ For VA medical centers (VAMC), we format the title tag a little differently. Bec
 - Use the plain language VAMC system name in the title tags.
 - On VA medical centers, we don't apply a character limit for the meta title. 
 
-Because the official facility location names can be very long and because we use them in the H1 page titles) of location pages, we let search engines truncate according to their character limit.  
+Because the official facility location names can be very long and because we use them in the H1 page titles of location pages, we let search engines truncate according to their character limit.  
 
 
 
