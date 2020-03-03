@@ -114,11 +114,11 @@ Call us toll free at <a href="tel:+18008271000">800-827-1000</a>.
 
 ## Addresses
 
-Always write out all types of street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. 
+Write out street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. Don't abbreviate.
 
-Always write out compass points that come before the street name. 
+When a street address contains a compass point (north, south, etch.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets. 
 
-When a street address contains a compass point after the street name, defer to the way it is referenced locally. For example, streets in Washington, D.C., often have compass points such as NE, NW, SE, and SW after the street name. Don't spell out.  
+In the examples below, we spell out the street names, and style the compass points the way it's locally referenced in Washington, D.C. (which abbreviates compass points), and New York city (which does not).   
 
 <div class="do-dont">
 <div class="do-dont__do">
