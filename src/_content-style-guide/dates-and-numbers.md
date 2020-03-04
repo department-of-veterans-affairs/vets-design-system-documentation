@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Dates, times, and phone numbers
+title: Dates, times, phone numbers, and addresses
 anchors:
   - anchor: Dates and years
   - anchor: Times and time zones
   - anchor: Phone numbers
+  - anchor: Addresses
 ---
 
-# Dates, times, and phone numbers
+# Dates, times, phone numbers, and addresses
 
-Dates, times, and phone numbers often appear together, so we've put guidelines for these in one place.
+Dates, times, phone numbers, and addresses often appear together, so we've put guidelines for these in one place.
 
 ## Dates and years
 
@@ -105,6 +106,41 @@ We don’t use vanity phone numbers in body copy, as it adds visual noise and is
   
 Call us toll free at <a href="tel:+18008271000">800-827-1000</a>.
 
+</div>
+</div>
+</div>
+
+<br>
+
+## Addresses
+
+Write out street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. Don't abbreviate.
+
+When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets. 
+
+In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.   
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+<p class="va-address-block">
+1600 Pennsylvania Avenue, NW <br/>
+Washington, DC, 20500 <br/>
+<p class="va-address-block">
+123 E. 45th Street <br/>
+New York, NY, 67890 <br/>
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+<p class="va-address-block">
+1600 Pennsylvania Ave. Northwest<br/>
+Washington, DC, 20500<br/>
+<p class="va-address-block">
+123 East 45th St. <br/>
+New York, NY 67890 <br/>
 </div>
 </div>
 </div>
