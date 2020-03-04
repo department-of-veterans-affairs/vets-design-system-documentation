@@ -5,13 +5,15 @@ title: Abbreviations and acronyms
 
 # Abbreviations and acronyms 
 
-Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list).
+Our approach on abbreviations and acronyms is aligned with the AP Stylebook. In general, we try to avoid them unless they are very common and familiar to the general public. This aligns with our plain language content principles to be more human and less jargon heavy. 
+
+Common VA acronyms are listed along with other terms on the [word list](https://design.va.gov/content-style-guide/word-list). 
 
 ## Abbreviations
 
-Our approach on abbreviations is aligned with the AP Stylebook. In general we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.), and degrees (Ph.D., M.D., etc.). 
+In general we don't use abbreviations on VA.gov except common cases such as a.m./p.m., titles used before names (Mr., Mrs., Dr., etc.), and degrees (Ph.D., M.D., etc.). 
 
-In formats where space is very limited, like callout boxes or alerts, we abbreviate [days and months](https://design.va.gov/content-style-guide/dates-and-numbers). When in doubt, follow AP Style.
+In formats where space is very limited, like callout boxes or alerts, we abbreviate [days and months](https://design.va.gov/content-style-guide/dates-and-numbers). When in doubt, follow AP Stylebook.
 
 ## Acronyms
 
@@ -46,6 +48,6 @@ If you’re having problems sleeping, controlling your anger, or readjusting to 
 
 ## Avoid using internal acronyms
 
-Always spell out the names of VA offices instead of using the internal acronym on external-facing pages. This helps avoid confusion when there are offices that share the same acronym. (Example: The Office of Community Care, Office of Corporate Communications, and Office of Connected Care, all refer to their office as OCC.)
+Always spell out the names of VA offices instead of using the internal acronym on external-facing pages. This helps avoid confusion when there are offices that share the same acronym. (Example: The Office of Community Care, Office of Corporate Communications, and Office of Connected Care, all refer to their office as OCC.) 
 
-See also our guidance on [naming and labels](https://design.va.gov/content-style-guide/naming-and-labels#dont-create-acronyms-to-use-like-a-brand-name) for information on acronyms and branding.
+Per the AP Stylebook: "Names not commonly before the public should not be reduced to acronyms solely to save a few words." See also our guidance on [naming and labels](https://design.va.gov/content-style-guide/naming-and-labels#dont-create-acronyms-to-use-like-a-brand-name) for information on acronyms and branding.
