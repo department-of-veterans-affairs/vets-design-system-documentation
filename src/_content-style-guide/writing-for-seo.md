@@ -65,13 +65,15 @@ __Example__
 
 __Exception—VA medical center websites__
 
-For VA medical centers (VAMC), we format the title tag a little differently.  Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
+For VA medical centers (VAMC), we format the title tag a little differently. Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
 
-- Format:  VAMC Short Name \| H1 Page Title \| Veterans Affairs
-  - VA Pittsburgh Health Care \| Our Services \| Veterans Affairs
-  - VA Pittsburgh Health Care \| Billing And Insurance
-- Use the plain language VAMC short name for title tags rather than the long facility locator API name
-- On VA medical centers, omit the "\| Veterans Affairs" if the title tag goes over 70 characters
+- Format:  VAMC Plain Language System Name \| H1 Page Title \| Veterans Affairs
+  - VA Pittsburgh Health Care \| Medical Records Office \| Veterans Affairs
+  - VA Pittsburgh Health Care \| H. John Heinz III Department Of Veterans Affairs Medical Center \| Veterans Affairs
+- Use the plain language VAMC system name in the title tags.
+- On VA medical centers, we don't apply a character limit for the meta title. 
+
+Because the official facility location names can be very long and because we use them in the H1 page titles of location pages, we let search engines truncate according to their character limit.  
 
 
 
