@@ -118,7 +118,7 @@ Write out street names (street, road, avenue, boulevard, highway, etc.) in both 
 
 When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets. 
 
-In the examples below, we spell out the street names, and style the compass points the way it's locally referenced in Washington, D.C. and New York city, which both abbreviate compass points.   
+In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.   
 
 <div class="do-dont">
 <div class="do-dont__do">
