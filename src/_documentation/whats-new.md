@@ -10,6 +10,13 @@ The latest news and updates on Formation and the content style guide
 </div>
 
 ---
+### April 2
+
+**Content style guide updates:**
+
+- New topic added for [form labels](https://design.va.gov/content-style-guide/form-labels).
+- New subtopic added for [addresses](https://design.va.gov/content-style-guide/dates-and-numbers#addresses).
+- New entries added to [word list](https://design.va.gov/content-style-guide/word-list), including Board of Veterans' Appeals.
 
 ### December 11
 
