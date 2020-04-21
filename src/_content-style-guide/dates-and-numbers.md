@@ -68,13 +68,13 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-8:00 a.m. – noon CT
+8:00 a.m. to noon CT
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
-from 8:00 a.m. – noon CT
+from 8:00 a.m. to noon CT
 </div>
 </div>
 </div>
