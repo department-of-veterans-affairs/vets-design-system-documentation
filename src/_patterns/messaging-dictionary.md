@@ -19,22 +19,34 @@ Alerts the user of important system-related issues or status. It’s initiated b
 ### Scheduled downtime notifications
 
 | Scenario                                 | Message title | Message content | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
-| SITEWIDE Advance notification of scheduled downtime | **We're doing site maintenance on [Month, Date] between [00:00 a.m/p.m.] and [00:00 a.m/p.m. ET].**  | You won’t be able to sign in or use some tools during this time. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| SITEWIDE Countdown notication of scheduled downtime | **Scheduled maintenance starts in [X] minutes.** | If you’re filling out a form, sign in or create an account to save your work. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| SITEWIDE Notice during scheduled downtime | **We’re working on VA.gov right now.** | If you have trouble using online tools, check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| IN-APP Advanced notice of scheduled downtime | **[APP name] will be unavailable soon** | We're doing work on [APP name] on [Month, Date] between [00:00 a.m./p.m.] and [00:00 a.m./p.m ET]. You won’t be able to use this tool during that time. | [React component](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | [Warning](/components/alertboxes#informational-alert) | N/A |
-|IN-APP Notice during scheduled downtime | **We're working on [APP name] right now** | If you have trouble using this tool, please check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [React component](/components/modal) | [Warning](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | N/A |
-| Partial downtime notification | **Some online tools or services aren't available right now** | You may have trouble accessing some features on VA.gov at this time. We’re working to fix this. Please check back soon. | [Alert box](/components/alertboxes) | [Warning](/components/alertboxes#warning-alert) | Below sign in overlay title |
-| SIGN-IN Notice during scheduled downtime | **You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]** | We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with your [DS Logon, MyHealtheVet, ID.me] account, please check back later. | [Alert box](/components/alertboxes) | [Warning](/components/alertboxes#warning-alert) | N/A |
+| ---------------------------------------- | ----- | ----------- | --------- | ------ | --------  |
+| **Sitewide**                             |        |             |           |        |          |
+|                                          |        |             |           |        |          |
+| Advance notification | **We're doing site maintenance on [Month, Date] between [00:00 a.m/p.m.] and [00:00 a.m/p.m. ET].**  | You won’t be able to sign in or use some tools during that time. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| Countdown notification | **Scheduled maintenance starts in [X] minutes.** | If you’re filling out a form, sign in or create an account to save your work. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| During downtime | **We’re working on VA.gov right now.** | If you have trouble using online tools, check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| **In-App**                                |  |  | |   |  |
+|                                           |          |        |            |         |         |
+| Advance notification | **[APP name] will be unavailable soon** | We're doing work on [APP name] on [Month, Date] between [00:00 a.m./p.m.] and [00:00 a.m./p.m. ET]. You won’t be able to use this tool during that time. | [React component](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | [Warning](/components/alertboxes#informational-alert) | N/A |
+| During downtime | **We're working on [APP name] right now** | If you have trouble using this tool, please check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [React component](/components/modal) | [Warning](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | N/A |
+| Partial downtime notification | **Some online tools or services aren't available right now** | You may have trouble accessing some features on VA.gov at this time. We’re working to fix this. Please check back soon. | [Alert box](/components/alertboxes) | [Warning](/components/alertboxes#warning-alert) | TK |
+| **Sign-in**                                |  |  | |   |  |
+|                                            |   |             |           |       |       |
+| During downtime | **You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]** | We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with your [DS Logon, MyHealtheVet, ID.me] account, please check back later. | [Alert box](/components/alertboxes) | [Warning](/components/alertboxes#warning-alert) | N/A |
 
 ### Unscheduled downtime notifications
 
 | Scenario                                 | Message title | Message content | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
-| SITEWIDE Notification of unscheduled downtime | **We’re doing some work on VA.gov right now** | You may have limited access to some tools and applications. We hope to finish our work by [Month, Date] at [00:00 a.m./p.m. ET]. If you have trouble using any online tools, please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
-| IN-APP Notification of unscheduled downtime | **[App name] is down for maintenance** | We’re making some updates to [APP name]. We’re sorry it’s not working right now. We hope to finish our work by [Month, Date] at [00:00 a.m./p.m. ET]. Please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
-| SIGN-IN Notification of unscheduled downtime | **You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]**  | We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with your [DS Logon, MyHealtheVet, ID.me] account, please check back later. | [Alert box](/components/alertboxes) | [Warning alert](/components/alertboxes#warning-alert) | N/A |
+| **Sitewide**                             |        |             |           |        |          |
+|                                          |        |             |           |        |          |
+| During downtime | **We’re doing some work on VA.gov right now** | You may have limited access to some tools and applications. We hope to finish our work by [Month, Date] at [00:00 a.m./p.m. ET]. If you have trouble using any online tools, please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+| **In-App**                             |        |             |           |        |          |
+|                                          |        |             |           |        |          |
+| During downtime | **[App name] is down for maintenance** | We’re making some updates to [APP name]. We’re sorry it’s not working right now. We hope to finish our work by [Month, Date] at [00:00 a.m./p.m. ET]. Please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
+| **Sign-in**                             |        |             |           |        |          |
+|                                          |        |             |           |        |          |
+| During downtime | **You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]**  | We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with your [DS Logon, MyHealtheVet, ID.me] account, please check back later. | [Alert box](/components/alertboxes) | [Warning alert](/components/alertboxes#warning-alert) | N/A |
 
 
 
