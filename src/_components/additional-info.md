@@ -11,10 +11,15 @@ title: Additional info
 # Additional info
 
 <div class="va-introtext" markdown="1">
-AdditionalInfo components are interactive components that reveal and hide content from the page.
+Additional Info components are interactive components that reveal and hide content from the page.
 </div>
 
 <div class="site-showcase">
 {% include_relative html/additional-info.html %}
 </div>
 
+## Guidance
+
+Use the Additional Info component to provide contextual help on a form in order to bring clarity to interactions. 
+
+Review the [supplemental content pattern guidelines](https://design.va.gov/patterns/supplemental-content) for how to use it, and what type of content to include.
