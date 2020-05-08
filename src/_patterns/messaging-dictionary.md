@@ -23,6 +23,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
 | **Sitewide**                             |        |             |           |        |          |
 |                                          |        |             |           |        |          |
 | Advance notification | **We're doing site maintenance on [Month, Date] between [00:00 a.m/p.m.] and [00:00 a.m/p.m. ET].**  | You won’t be able to sign in or use some tools during that time. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| Advance notification for 24 hour outage| **We're doing site maintenance for 24 hours starting on [Month/Day] at [00:00 a.m./p.m] until [Month/day 00:00 a.m./p.m. ET]** | You won’t be able to sign in or use some tools during that time. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
 | Countdown notification | **Scheduled maintenance starts in [X] minutes.** | If you’re filling out a form, sign in or create an account to save your work. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
 | During downtime | **We’re working on VA.gov right now.** | If you have trouble using online tools, check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
 | **In-App**                                |  |  | |   |  |
