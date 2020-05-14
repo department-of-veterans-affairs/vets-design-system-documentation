@@ -2,7 +2,6 @@
 layout: default
 title: On this page jump link
 draft: true
-tags: Jump links, Navigation, On this page
 anchors:
   - anchor: How to build it
   - anchor: When to use the On this page jump link component
@@ -11,7 +10,6 @@ anchors:
   - anchor: Accessibility
   - anchor: Implementation
   - anchor: Package information
-
 ---
 
 # On this page jump link
