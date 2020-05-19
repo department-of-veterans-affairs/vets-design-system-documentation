@@ -41,7 +41,7 @@ To add content, you will need to look into `/src` directory. This will be the so
 - [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_utilities)
 
 
-### How to add new pages, improve presetnation, etc.
+### How to add new pages, improve presentation, etc.
 [Read the wiki](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki) to learn how to add new pages to design.va.gov, improve local search, add images, etc.
 
 
