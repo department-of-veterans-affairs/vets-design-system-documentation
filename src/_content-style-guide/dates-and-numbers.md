@@ -86,13 +86,21 @@ from 8:00 a.m. to noon CT
 
 ## Phone numbers 
 
-Use hyphens between numbers, and don't use parentheses to set off the area code: 212-123-1234
+Use hyphens between numbers, and don't use parentheses to set off the area code: 212-123-1234. 
 
 - Use +1 only when the information is specifically addressing Veterans or people who are living outside the U.S.: +1-201-123-1234.
 
 - For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 
 - Use "select" to indicate the menu option after dialing a phone number.
+
+Regular phone numbers and TTY numbers should always be hyperlinked. Use the following source code for accessibility purposes:
+
+- `<a href="tel:8008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>` 
+
+- `<a href="tel:711" aria-label="TTY. 7 1 1.">711</a>`. 
+
+Screen readers vary in how they read numbers and can read a phone number as thousands or hundreds. Including the aria label allows it to read the phone number one number at a time with a pause.
 
 We don’t use vanity phone numbers in body copy, as it adds visual noise and is not helpful to screen readers. We use and hyperlink only the numeric phone number in body copy. 
 
