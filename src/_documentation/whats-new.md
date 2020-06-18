@@ -10,37 +10,42 @@ The latest news and updates on Formation and the content style guide
 </div>
 
 ---
-### April 2
 
-**Content style guide updates:**
+### April 2, 2020
+
+**Content style guide updates**
 
 - New topic added for [form labels](https://design.va.gov/content-style-guide/form-labels).
 - New subtopic added for [addresses](https://design.va.gov/content-style-guide/dates-and-numbers#addresses).
 - New entries added to [word list](https://design.va.gov/content-style-guide/word-list), including Board of Veterans' Appeals.
 
-### December 11
+---
 
-**Content style guide updates:**
+### December 11, 2019
+
+**Content style guide updates**
 
 - New topic added for [error messages](https://design.va.gov/content-style-guide/error-messages).
 - New topic added for [naming and labels](https://design.va.gov/content-style-guide/naming-and-labels).
 - New entries added to [word list](https://design.va.gov/content-style-guide/word-list), including appeals terms.
 
-### July 3
+---
+
+### July 3, 2019
 
 **Site updates**
 - Documentation for [promo banner]({{ site.baseurl }}/components/promo-banners) variations
 
 ---
 
-### July 3
+### July 3, 2019
 
 **6.7.0**
 - [Accordion]({{ site.baseurl }}/components/accordions) component now supports a multi-selectable feature, allowing multiple accordions within a set to be open at the same time.
 
 ---
 
-### June 21
+### June 21, 2019
 
 **Site updates**
 - Documentation for the new [promo banner component](/components/promo-banners)
@@ -51,7 +56,7 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
-### June 20
+### June 20, 2019
 
 **6.6.1 and 6.6.2**
 - Corrects display bug in the promo banner component
@@ -61,14 +66,14 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
-### June 10
+### June 10, 2019
 
 **Site updates**
 - New pattern documentation for handling supplemental content.
 
 ---
 
-### June 6
+### June 6, 2019
 
 **6.5.1**
 - Patches line-height mismatch for paragraphs inside of a  `va-introtext` div.
