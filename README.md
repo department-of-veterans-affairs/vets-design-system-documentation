@@ -41,7 +41,7 @@ To add content, you will need to look into `/src` directory. This will be the so
 - [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_utilities)
 
 
-### How to add new pages, improve presetnation, etc.
+### How to add new pages, improve presentation, etc.
 [Read the wiki](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki) to learn how to add new pages to design.va.gov, improve local search, add images, etc.
 
 
@@ -80,5 +80,5 @@ my-projects-folder
 
 ## Deploying
 
-Merges into `master` will automatically be deployed to `dev-design.va.gov`. Production deploys are executed by creating a release of vets-website via Jenkins.
+Merges into `master` will automatically be deployed to `dev-design.va.gov`. Production is automatically deployed every weekday at 2pm. Deploys are executed by creating a release of vets-website via Jenkins. You can track the deployment in the Slack channel, #design-system.
 

@@ -21,18 +21,15 @@ Alerts the user of important system-related issues or status. It’s initiated b
 | Scenario                                 | Message title | Message content | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | --------- | ------ | --------  |
 | **Sitewide**                             |        |             |           |        |          |
-|                                          |        |             |           |        |          |
-| Advance notification | **We're doing site maintenance on [Month, Date] between [00:00 a.m/p.m.] and [00:00 a.m/p.m. ET].**  | You won’t be able to sign in or use some tools during that time. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| Advance notification for 24 hour outage| **We're doing site maintenance for 24 hours starting on [Month/Day] at [00:00 a.m./p.m] until [Month/day 00:00 a.m./p.m. ET]** | You won’t be able to sign in or use some tools during that time. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| Countdown notification | **Scheduled maintenance starts in [X] minutes.** | If you’re filling out a form, sign in or create an account to save your work. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| During downtime | **We’re working on VA.gov right now.** | If you have trouble using online tools, check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [Promo banner](/components/promo-banners) | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
-| **In-App**                                |  |  | |   |  |
-|                                           |          |        |            |         |         |
-| Advance notification | **[APP name] will be unavailable soon** | We're doing work on [APP name] on [Month, Date] between [00:00 a.m./p.m.] and [00:00 a.m./p.m. ET]. You won’t be able to use this tool during that time. | [React component](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | [Warning](/components/alertboxes#informational-alert) | N/A |
+| Advance notification | **Upcoming site maintenance**  | We’ll be doing some work on VA.gov. The maintenance will last x hour. During that time, you won’t be able to sign in or use tools.<br> **Date:** Day, Date, Year <br>**Start/End time:** 0:00 a.m. to 0:00 a.m. ET | [System maintenance banner] | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| Advance notification/24 hour | **Upcoming site maintenance** | We’ll be doing some work on VA.gov. The maintenance will last 24 hours. During that time, you won’t be able to sign in or use tools. <br>**Start:** Day, Date, Year, at 0:00 a.m. ET <br>**End:** Day, Date, Year, at 0:00 a.m. ET | [System maintenance banner] | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| During downtime | **Site maintenance** | We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br>**Date:** Day, Date, Year <br>**Start/End time:** 0:00 a.m. to 00:00 a.m. ET  | [System maintenance banner] | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| During downtime/24 hour | **Site maintenance** | We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br>**Start:** Day, Date, Year at 0:00 a.m. ET <br>**End:** Day, Date, Year at 0:00 a.m. ET | [System maintenance banner] | [Announcement](/components//promo-banners#benefit-announcements) | N/A |
+| **In-app**                                |  |  | |   |  |
+| Advance notification | **[APP name] will be unavailable soon** | We're doing work on [APP name] on [Month, Date] between [00:00 a.m./p.m.] and [00:00 a.m./p.m. ET]. During that time, you won’t be able to use this tool. | [React component](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | [Warning](/components/alertboxes#informational-alert) | N/A |
 | During downtime | **We're working on [APP name] right now** | If you have trouble using this tool, please check back after [Month, Date] at [00:00 a.m./p.m. ET]. | [React component](/components/modal) | [Warning](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/) | N/A |
 | Partial downtime notification | **Some online tools or services aren't available right now** | You may have trouble accessing some features on VA.gov at this time. We’re working to fix this. Please check back soon. | [Alert box](/components/alertboxes) | [Warning](/components/alertboxes#warning-alert) | TK |
-| **Sign-in**                                |  |  | |   |  |
-|                                            |   |             |           |       |       |
+| **Sign-in page**                                |  |  | |   |  |
 | During downtime | **You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]** | We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with your [DS Logon, MyHealtheVet, ID.me] account, please check back later. | [Alert box](/components/alertboxes) | [Warning](/components/alertboxes#warning-alert) | N/A |
 
 ### Unscheduled downtime notifications
@@ -40,13 +37,10 @@ Alerts the user of important system-related issues or status. It’s initiated b
 | Scenario                                 | Message title | Message content | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
 | **Sitewide**                             |        |             |           |        |          |
-|                                          |        |             |           |        |          |
-| During downtime | **We’re doing some work on VA.gov right now** | You may have limited access to some tools and applications. We hope to finish our work by [Month, Date] at [00:00 a.m./p.m. ET]. If you have trouble using any online tools, please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
-| **In-App**                             |        |             |           |        |          |
-|                                          |        |             |           |        |          |
+| During downtime | **Site maintenance** | We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. <br>**Date:** Day, Date, Year <br>**Start/End time:** 0:00 a.m. to 00:00 a.m. ET  | [System maintenance banner] | [Informational](/components/alertboxes#informational-alert) | N/A |
+| **In-app**                             |        |             |           |        |          |
 | During downtime | **[App name] is down for maintenance** | We’re making some updates to [APP name]. We’re sorry it’s not working right now. We hope to finish our work by [Month, Date] at [00:00 a.m./p.m. ET]. Please check back after then. | [Modal](/components/modal) | [Informational](/components/alertboxes#informational-alert) | N/A |
-| **Sign-in**                             |        |             |           |        |          |
-|                                          |        |             |           |        |          |
+| **Sign-in page**                             |        |             |           |        |          |
 | During downtime | **You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]**  | We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with your [DS Logon, MyHealtheVet, ID.me] account, please check back later. | [Alert box](/components/alertboxes) | [Warning alert](/components/alertboxes#warning-alert) | N/A |
 
 
@@ -91,7 +85,7 @@ Variations in messaging will be contingent on:
 
 | Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
 | ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
-| Entire site is not accessible (scheduled downtime) | **VA.gov is down for maintenance right now** | We're sorry. VA.gov isn't ready for you right now. We're doing some work to help make this site even better for Veterans, service members, and family members like you. We hope to finish our work by [DATE/TIME]. Please check back then. | N/A | [Plain text](/design/typography) | N/A | Replace page |
+| Entire site is not accessible (site-wide scheduled downtime) | **Site maintenance** | We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we're finished. Thank you for your patience. **Date:** Day, Date, Year **Start/End time:** 0:00 a.m. to 0:00 a.m. ET | N/A | [Plain text](/design/typography) | N/A | Replace page |
 | Entire site is not accessible (expected) | **VA.gov isn't working right now** | We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")]. | N/A | [Plain text](/design/typography) | N/A | Replace page |
 | Entire site is accessible | **We're working on the site** | We’re doing some work on VA.gov right now. You should still be able to use the applications and tools. But if you have any trouble, please check back soon. | N/A | [Alert box](/components/alertboxes) | [Warning alert](/components/alertboxes#warning-alert) | Banner |
 | Application or page is not accessible | **[APPLICATION NAME] is down for maintenance** | We're making some updates to [APPLICATION NAME]. We're sorry it's not working right now, and we hope to be finished by [DATE], [TIME]. Please check back soon. | N/A | [Plain text](/design/typography) | N/A | Replace page below title |

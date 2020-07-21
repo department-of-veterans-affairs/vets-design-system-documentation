@@ -23,12 +23,18 @@ about: Suggest an update to documentation
 
 ## What is the nature of this update?
 
-- [ ] When to use
+<!--
+         Please provide all that apply. Not all are required.
+-->
+
+- [ ] How to build this component/pattern
+- [ ] When to use this component/pattern 
 - [ ] When to use something else
-- [ ] Code snippet
+- [ ] Usability guidance
 - [ ] Accessibility
-- [ ] Research insight
-- [ ] General documentation
+- [ ] Implementation
+- [ ] Research insights
+- [ ] Package information
 
 ## Additional Context
 

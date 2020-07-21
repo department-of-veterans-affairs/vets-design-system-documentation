@@ -313,9 +313,9 @@ Million Veteran Program (MVP). See [Abbreviations and acronyms](https://design.v
 
 MISSION Act: Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
 
-Montgomery GI Bill Active Duty (MGB-AD). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Montgomery GI Bill Active Duty (MGIB-AD). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Montgomery GI Bill Selected Reserve (MGB-SR). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Montgomery GI Bill Selected Reserve (MGIB-SR). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 My HealtheVet: Don't italicize the "e" between "Health" and "Vet" in body copy, headlines, and user interface elements such as links, buttons, and navigation. The "e" is italicized only in the logo.
 
