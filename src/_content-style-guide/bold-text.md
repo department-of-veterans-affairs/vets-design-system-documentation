@@ -22,4 +22,4 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 **Don’t use bold in these cases**
 
 - Any part of a text link, since the blue and underlining sets apart that text enough
-- Adverbs that emphasize a point being made in the text, like “only if”
+- Words used to emphasize a point being made in the text, like “only if”
