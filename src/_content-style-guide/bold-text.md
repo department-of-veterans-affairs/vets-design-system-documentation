@@ -11,7 +11,7 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 
 **Use bold text only in these cases**
 
-- The explicit set-up line that comes before bullet points that states something like this: “Both of these must be true” (https://www.va.gov/pension/eligibility/)
+- The explicit set-up line that comes before bullet points that states something like this: “Both of these must be true.” [See this page](https://www.va.gov/pension/eligibility/)
 - The “and” or “or” that comes at the end of each line in a bulleted list
 - The first part of a sentence, for scanability, when there’s a need to clearly set apart, for instance Veterans who fall into different eligibility categories. [See this page](https://www.va.gov/health-care/eligibility/)
 - Numerals, for scanability, that we know the Veteran is on the page to look for—like a dollar figure. [See this page](https://www.va.gov/health-care/get-reimbursed-for-travel-pay/)
