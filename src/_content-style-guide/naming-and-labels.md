@@ -38,7 +38,7 @@ Your VA education benefits can help you pay for books, supplies, and housing whi
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
  
-Your VR&E Education Benefits can help you pay for books, supplies, and housing while you’re learning a trade or skill through On-the-Job Training (OJT).
+Your VA Education Benefits can help you pay for books, supplies, and housing while you’re learning a trade or skill through On-the-Job Training (OJT).
 
 </div>
 </div>
