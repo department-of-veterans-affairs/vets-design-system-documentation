@@ -96,7 +96,7 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 Hyperlink all phone numbers, including TTY numbers. Use the following source code for 508 accessibility:
 
-- `<a href="tel:8008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>` 
+- `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>` 
 
 - `<a href="tel:711" aria-label="TTY. 7 1 1.">711</a>`. 
 
