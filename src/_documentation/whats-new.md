@@ -11,6 +11,17 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### September 10, 2020
+
+**Content style guide updates**
+
+- Fourth Mission added to [word list](https://design.va.gov/content-style-guide/word-list).
+- [Scheduled downtime notifications](https://design.va.gov/patterns/messaging-dictionary#scheduled-downtime-notifications) updated.
+- New topic added for [bold text](https://design.va.gov/content-style-guide/bold-text).
+- New subtopic added for aria labels within [phone numbers](https://design.va.gov/content-style-guide/dates-and-numbers#phone-numbers).
+
+---
+
 ### April 2, 2020
 
 **Content style guide updates**

@@ -208,13 +208,15 @@ Family Servicemembers’ Group Life Insurance (FSGLI): This is the program name.
 
 federal: Do not capitalize "federal" for generic usage such as "federal agency."
 
-Fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
+fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 file a claim for disability compensation: Use "file a claim" rather than "apply for benefits" when referring to disability.
 
 final status: Use “in final status” rather than “in a final status."
 
 financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
+
+Fourth Mission: Capitalize.  
 
 ### G
 
