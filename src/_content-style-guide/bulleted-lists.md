@@ -68,7 +68,7 @@ __What documents and information do I need to apply?__
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
+<div class="do-dont__content" markdown="1"> 
 
 When using "and" or "or" at the end of each bullet point, use a comma and bold the "and"/"or" at the end of each bullet point. 
   
