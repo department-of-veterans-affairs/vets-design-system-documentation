@@ -206,6 +206,8 @@ family member: Use this term instead of “beneficiary” whenever possible.
 Family Servicemembers’ Group Life Insurance (FSGLI): This is the program name. Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
 - See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
+FAQs: frequently asked questions 
+
 federal: Do not capitalize "federal" for generic usage such as "federal agency."
 
 fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
