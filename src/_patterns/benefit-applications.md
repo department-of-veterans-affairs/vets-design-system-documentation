@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Benefit applications
-draft: true
 anchors:
   - anchor: Eligibility
   - anchor: How to apply
