@@ -135,12 +135,12 @@ In the examples below, we spell out the street names, and style the compass poin
   
 <p class="va-address-block">
 1600 Pennsylvania Avenue, NW <br/>
-Washington, DC, 20500 <br/>
+Washington, DC 20500 <br/>
 </p>
   
 <p class="va-address-block">
 123 E. 45th Street <br/>
-New York, NY, 67890 <br/>
+New York, NY 67890 <br/>
 </p>
   
 </div>
@@ -152,7 +152,7 @@ New York, NY, 67890 <br/>
   
 <p class="va-address-block">
 1600 Pennsylvania Ave. Northwest<br/>
-Washington, DC, 20500<br/>
+Washington, DC 20500<br/>
 </p>
 
 <p class="va-address-block">

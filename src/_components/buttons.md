@@ -66,6 +66,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 
 * Buttons can be applied to `<button>`, which are used for actions,  or `<a>`, which is used for hyperlinks to destinations. Read more about usage under [accessibility](#accessibility).
 * Generally, use primary buttons for actions that go to the next step and use secondary buttons for actions that happen on the current page.
+* When to use default (blue) versus primary (green) buttons: If there is only one button on the page, use a pimary (green) button. Especially if the button is surrounded by a lot of content. Primary (green) buttons are always isolated from other UI, and meant to draw attention to themselves. In most other cases, use a default (blue) button.
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.
 * Make sure buttons should look clickable—use color variations to distinguish static, hover and active states.
 * Avoid using too many buttons on a page.
