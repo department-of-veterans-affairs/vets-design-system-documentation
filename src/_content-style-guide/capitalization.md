@@ -5,9 +5,11 @@ title: Capitalization
 
 # Capitalization
 
+As part of our plain language style, we use sentence capitalization as the standard on VA.gov, with a few exceptions.
+
 ## Use sentence case capitalization
 
-We use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links, unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
+Use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links, unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
 
 ### Exceptions where we use title capitalization
 
