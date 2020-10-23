@@ -3,6 +3,8 @@
 This is repo for the design system documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the CSS and Javascript for the components, see the [formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools).
 
 Min specs:
+- Ruby >= 2.4.0
+- RubyGems >= 2.7.0
 - [Jekyll](http://jekyllrb.com)
 - react
 - webpack
