@@ -16,10 +16,12 @@ Tested using `node` v8.12.0 and `npm` v6.4.1.
     $ git clone https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git
     ```
 
-1. Install dependencies
+1. Install NPM dependencies
     ```
     $ npm install
     ```
+
+1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
 
 1. Build and start the Jekyll server
     ```
