@@ -12,19 +12,19 @@ Min specs:
 Tested using `node` v8.12.0 and `npm` v6.4.1.
 
 1. Clone this repo
-```
-$ git clone https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git
-```
+    ```
+    $ git clone https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git
+    ```
 
 1. Install dependencies
-```
-$ npm install
-```
+    ```
+    $ npm install
+    ```
 
 1. Build and start the Jekyll server
-```
-$ npm run start
-````
+    ```
+    $ npm run start
+    ```
 
 1. Verify in browser: [localhost:4000](http://localhost:4000/)
 
@@ -51,11 +51,11 @@ In order to test new updates to Formation, you will need to work in two differen
 
 1. Clone the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools) at the same level as the design system documentation site.
 
-```
-my-projects-folder
-|   ├── vets-design-system-documentation
-|   ├── veteran-facing-services-tools
-```
+    ```
+    my-projects-folder
+    |   ├── vets-design-system-documentation
+    |   ├── veteran-facing-services-tools
+    ```
 
 1. Follow the [setup instructions](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools#setup) to get `veteran-facing-services-tools` running.
 
@@ -65,10 +65,10 @@ my-projects-folder
 
 1. Now, in `vets-design-system-documentation`, run the following:
 
-  ```
-  $ npm install
-  $ npm run start
-  ```
+    ```
+    $ npm install
+    $ npm run start
+    ```
 
   While `vets-design-system-documentation` is running and make further updates to `veteran-facing-services-tools`, you will need to run `$ npm run build` in that repo, then `$ npm run build` in `vets-design-system-documentation`.
 
