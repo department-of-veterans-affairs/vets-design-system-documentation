@@ -1,4 +1,8 @@
 # https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/engineering/codeowners.md
 
-*      @department-of-veterans-affairs/vsp-design-system-fe
-src/*  @department-of-veterans-affairs/vsp-design-system-team
+# Everything in the root directory, but no sub-directories
+/*        @department-of-veterans-affairs/vsp-design-system-fe
+
+# Everything except .github/ and src/, where the content files live
+config/   @department-of-veterans-affairs/vsp-design-system-fe
+webpack/  @department-of-veterans-affairs/vsp-design-system-fe
