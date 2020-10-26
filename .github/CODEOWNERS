@@ -1,3 +1,4 @@
 # https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/engineering/codeowners.md
 
-*  @department-of-veterans-affairs/vsp-design-system-team
+*      @department-of-veterans-affairs/vsp-design-system-fe
+src/*  @department-of-veterans-affairs/vsp-design-system-team
