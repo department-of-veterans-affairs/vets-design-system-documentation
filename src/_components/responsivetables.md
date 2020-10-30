@@ -62,7 +62,7 @@ If the list view takes up a lot of space vertically on mobile consider using the
 
  *show code snippet here* 
  
- ## Accessibility
+## Accessibility
 - **Test it as soon as possible, especially on mobile devices.** Reach out to A11y specialists to help test how tables read on mobile screen readers 
 - **Examples of roles used to make sure the responsive table is accessible:** `table`,`row`, `columnheader`, `rowheader`, and `cell`.
 - **Examples of scope values:** `col`, `row`, `colgroup`, `rowgroup`
