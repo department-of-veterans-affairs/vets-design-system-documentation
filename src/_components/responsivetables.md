@@ -47,6 +47,8 @@ anchors:
 <p class="va-introtext">List view tables transition into a list view when on smaller screens. A responsive list view works best on tables where veterans are looking up a piece of information. 
 </p>
 
+*show example here*
+
  
 ## Accessibility
 - **Test it as soon as possible, especially on mobile devices.** Reach out to A11y specialists to help test how tables read on mobile screen readers 
