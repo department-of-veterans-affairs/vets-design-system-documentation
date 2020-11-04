@@ -68,7 +68,7 @@ Use list view table when comparing rows and columns is not needed
 ### Usability guidance: how to use it
 **Arrange data in order of importance** Work with a content specialist and determine what order of columns is going to tell the best story with that data. Which columns are most critical to understanding what the meaning of the table is? Ask users what the most important data is to them and have that be the first column. 
 
-**Align data according to the content** When using list view, the header and value can be on the same line or it can be stacked vertically. If information is side by side, align header and value to the left. If all the values are numerical, make sure to right align numbers values. If information is stacked vertically, make sure both header and value are left aligned. 
+**Left align header and value in list view** When using list view, the header and value are stacked vertically. Make sure both header and value are left aligned. 
 
 **Limit characters in headings** Column headings shouldn’t exceed 60 characters. Follow content guidelines on [how to abbreviate dates and time](https://design.va.gov/content-style-guide/dates-and-numbers), as well as, other [abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
