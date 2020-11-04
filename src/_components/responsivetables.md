@@ -47,20 +47,6 @@ anchors:
 <p class="va-introtext">List view tables transition into a list view when on smaller screens. A responsive list view works best on tables where veterans are looking up a piece of information. 
 </p>
 
-**Simple list view:**
-
-A simple responsive list view that stacks information vertically.
-
- *show code snippet here* 
-
-**Show/Hide functionality**
-
-If the list view takes up a lot of space vertically on mobile consider using the show/hide view. 
-- Tables with 3 or more columns can use this view
-- Column 1 will show and the rest will be collapsed 
-- User can click show details to show a specific cell’s details or click show all to open all the cells’ details
-
- *show code snippet here* 
  
 ## Accessibility
 - **Test it as soon as possible, especially on mobile devices.** Reach out to A11y specialists to help test how tables read on mobile screen readers 
