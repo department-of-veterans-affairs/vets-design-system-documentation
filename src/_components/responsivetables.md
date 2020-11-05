@@ -41,6 +41,9 @@ anchors:
 - Headers are aligned with their data
 - Do not center align
 
+**Wrap instead of truncate content.** This reduces confusion in case headers start with the same word
+
+
 
 # Responsive List Tables 
 
@@ -71,7 +74,5 @@ Use list view table when comparing rows and columns is not needed
 **Left align header and value in list view** When using list view, the header and value are stacked vertically. Make sure both header and value are left aligned. 
 
 **Limit characters in headings** Column headings shouldn’t exceed 60 characters. Follow content guidelines on [how to abbreviate dates and time](https://design.va.gov/content-style-guide/dates-and-numbers), as well as, other [abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
-
-**Wrap instead of truncate content.** This reduces confusion in case headers start with the same word
 
 **Tables should have a maximum of 5 columns** Very large tables with lots of columns are difficult to use. This problem only gets exacerbated on mobile screens. Show only what users really need.  
