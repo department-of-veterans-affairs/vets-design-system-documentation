@@ -50,7 +50,7 @@ anchors:
 <p class="va-introtext">List view tables transition into a list view when on smaller screens. A responsive list view works best on tables where veterans are looking up a piece of information. 
 </p>
 
-![responsive-list-table]({{site.baseurl}}images/responsive-list-table.png)
+![responsive-list-table]({{site.baseurl}}/images/responsive-list-table.png)
 
  
 ## Accessibility
