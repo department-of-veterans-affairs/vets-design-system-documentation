@@ -23,13 +23,15 @@ The following sections detail what happens and who is involved when proposing an
 
 ## Who is involved
 
+### Veteran-Facing Service (VFS) teams
+
+VFS teams are the best qualified to solve business problems. VFS teams are building applications and services directly for Veterans and their communities, and are best suited to determine how to meet their needs.
+
 ### Design System Council
 
 The Design System Council is a cross-functional group of people from DEPO and various contractors building both Veteran-facing services and the DEPO platform. 
 
-TK
-- Purpose of the group, what they do
-- Cadence of meetings/logistics
+The Design System Council is the representative body that assesses improvements to VA.gov as they are developed. They meet every Friday to review proposals and make decisions.
 
 ### Design System Team
 
@@ -74,7 +76,7 @@ The Design System Council typically meets every Friday to review proposals. The 
 
 The Design System Council may reject the proposal at any time. If your proposal is denied, please consult with the Platform team about using the proposal in your project.
 
-### Audit the implication of the new pattern
+### Design System team audits the implication of the new pattern
 
 ### Collect necessary code and design files
 
