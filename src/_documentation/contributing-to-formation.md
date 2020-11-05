@@ -21,6 +21,22 @@ In most cases, you should strive to design with and code with existing component
 
 The following sections detail what happens and who is involved when proposing an addition or modification to the design system.
 
+## Who is involved
+
+### Design System Council
+
+The Design System Council is a cross-functional group of people from DEPO and various contractors building both Veteran-facing services and the DEPO platform. 
+
+TK
+- Purpose of the group, what they do
+- Cadence of meetings/logistics
+
+### Design System Team
+
+The Design System Team's mission is to provide simple, scalable, high quality tools and guidelines that enable teams to rapidly build and improve the Veteran facing digital applications provided by VA.
+
+This team ensures that all of the pieces of the VA.gov Design System (React library, Sketch library, design.va.gov, component library, and forms library) are up-to-date, consistent, and bug-free. 
+
 ## Adding a new component or pattern
 
 ### Define the VA business problem
@@ -52,11 +68,15 @@ After submitting a proposal for the design system, the Design System Council wil
 - **Accessibility**
 - **Usability**
 - **Design consistency**
-- **Fit on the VA.gov platform**
+- **Scalability**
 
-The platform team may also reject the proposal at any time. If the team denies the proposal, please work with the design system about options for using the proposal in your project.
+The Design System Council typically meets every Friday to review proposals. The Design System Council will provide feedback and request modifications to the proposal on the ticket. It typically takes around 2 weeks for a proposal to be reviewed.
 
-### Drafting (Platform team)
+The Design System Council may reject the proposal at any time. If your proposal is denied, please consult with the Platform team about using the proposal in your project.
+
+### Audit the implication of the new pattern
+
+### Collect necessary code and design files
 
 In most cases, the design team will need to see a prototype or detailed example of the proposal in action. Please submit any relevant data or research that supports the proposal.
 
