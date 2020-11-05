@@ -1,95 +1,58 @@
 ---
 layout: default
-title: Contributing to Formation
+title: Contributing to the VA.gov Design System
 anchors:
   - anchor: How to contribute
   - anchor: Modifying a component
   - anchor: Removing a component
 ---
 
-# Contributing to Formation
+# Contributing to the VA.gov Design System
 
 <div class="va-introtext">
 How to propose, amend, or retire components.
 </div>
 
-The content on this page only applies to Formation, not Formation React.
-
-
-
 ## How to contribute
 
-The following steps detail what happens and who is involved when proposing a modification to Formation.
-Before proposing an update to Formation, use this decision tree to do determine how you should proceed.
+The following steps detail what happens and who is involved when proposing a modification to the VA.gov Design System.
 
-<div markdown="1">
-[![decison tree]({{site.baseurl}}/images/new-item-tree.jpg)]({{site.baseurl}}/images/new-item-tree.jpg)
-</div>
+In most cases, you should strive to design with and code with existing components and patterns in the VA.gov Design System. But it's possible you'll encounter a business problem that existing design system components and patterns can't solve, and might require a modification or an addition to the design system.
 
-If the best course of action is to build the item directly into your project, you should still consult with the platform team to ensure the user experience and content style remain consistent with VA.gov at large.
+The following sections detail what happens and who is involved when proposing an addition or modification to the design system.
 
-In most cases, you should strive to design with and code with existing components and patterns in Formation.
+## Adding a new component or pattern
+
+### Define the VA business problem
+
+Before designing a new component or pattern, consider the following questions:
+- What problem do you need to solve? 
+- What user need do you need to meet?
+- Have you tried solving the problem with existing design system components?
+- Have you experimented with modifying existing design system components?
+
+If neither existing components, nor modifications of them will solve the problem...
 
 
-<div class="vads-u-background-color--primary-alt-lightest vads-u-padding--3" markdown="1">
-<div class="va-introtext vads-u-font-family--sans" markdown="1">
-Here are some scenarios that may help with the decision process:
-</div>
-
----
-
-<div class="vads-u-measure--5" markdown="1">
-
-*The designer has created a page with a new element that reveals additional content when the user clicks a button.*
-
-**Recommendation:** The designer should modify her design to use the accordion or additional info component
-</div>
----
-
-<div class="vads-u-measure--5" markdown="1">
-*The designer is working on an application where a user will have the option to make a destructive action that cannot be undone. The designer would like to use a red button to convey to the user that they should use caution, but there is currently no red buttons available in Formation.*
-
-**Recommendation:** The designer should propose a modification to the button component to add a variant that conveys destructive actions.
-</div>
-
----
-<div class="vads-u-measure--5" markdown="1">
-*The designer is building an interactive tool that allows the user to sort and organize results from a search query. It seems to be a one-off tool, but the results placed in way that looks like UI cards.*
-
-**Recommendation:** The designer should build the feature directly into their application, trying to use utility classes to implement the visual presentation if that appropriate. The platform team will work with the designer to determine if the work may be suitable for adding to Formation at a later date.
-</div>
----
-<div class="vads-u-measure--5" markdown="1">
-*The designer made a page with an alert box with another heading directly below it. These two items are little too close together, creating a bit of visual tension between them. The designer would like to make a modification on the alert box with additional margins for similar scenarios.*
-
-**Recommendation:** The developer should not accept the recommendation to add a modifier to the alert. Instead, the developer should use the margin utility to provide the additional spacing.
-</div>
----
-<div class="vads-u-measure--5" markdown="1">
-*The designer is making a form in which the user needs to select from a long list of options. A select box would introduce usability issues, especially on mobile devices. The designer has determined that a combobox feature would the best option, but there is currently no combobox in Formation.*
-
-**Recommendation:** Comboboxes are very useful, and could be used by other teams as well. The designer should propose the new component.
-</div>
-</div>
-
-### Propose an update (Project team)
+### Propose a new design system component or pattern
 
 The process for proposing should follow these steps:
-- Open a [GitHub issue](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=feature_request.md) with a proposal
+- Open a [GitHub issue on the design system board](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=feature_request.md) with a proposal
+- Explain the business case and user need your proposal meets
 - Explain why the proposal is an ideal choice
-- Include design files if you cannot create a prototype
+- Include screenshots of the component or pattern and source design files
 - Attach any research that might support your proposal
 
 All proposals should start with a GitHub issue.
 
-### Review (Platform team)
+### Design System Council reviews the proposal
 
-After submitting a proposal for the design system, the team will evaluate to determine what modifications might be necessary. The team will typically check for:
+After submitting a proposal for the design system, the Design System Council will evaluate to determine what modifications might be necessary. The team will typically check for:
 
 - **Accessibility**
 - **Usability**
 - **Design consistency**
-- **Fit on the va.gov platform**
+- **Fit on the VA.gov platform**
 
 The platform team may also reject the proposal at any time. If the team denies the proposal, please work with the design system about options for using the proposal in your project.
 
