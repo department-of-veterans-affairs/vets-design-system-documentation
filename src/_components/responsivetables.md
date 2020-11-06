@@ -62,10 +62,10 @@ anchors:
 ## Guidance
 
 ### When to use the responsive list view 
-Use list view table when comparing rows and columns is not needed
+Use list view table when you need to present a list of information in an itemized way 
 
 ### When to consider something else
-- When users do have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens 
+- When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens 
 - For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer. All column heading labels should total no more than 60 characters. 
 
 ### Usability guidance: how to use it
