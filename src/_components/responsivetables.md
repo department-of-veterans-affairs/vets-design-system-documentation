@@ -62,7 +62,7 @@ anchors:
 ## Guidance
 
 ### When to use the responsive list view 
-Use list view table when you need to present a list of information in an itemized way 
+Use list view table when you need to present a list of information in an itemized way.  
 
 ### When to consider something else
 - When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens 
