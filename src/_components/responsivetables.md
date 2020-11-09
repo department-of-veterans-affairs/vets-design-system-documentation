@@ -2,7 +2,6 @@
 layout: default
 sub_section: tables
 title: Tables
-draft: true
 anchors:
   - anchor: Tables
   - anchor: Responsive List Tables 
