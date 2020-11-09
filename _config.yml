@@ -69,4 +69,6 @@ includes:
   - /components/code
 
 exclude:
+  - node_modules
   - tmp_remote_assets
+  - .sass-cache
