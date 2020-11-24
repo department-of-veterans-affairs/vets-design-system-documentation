@@ -15,6 +15,7 @@ jobs:
 
     steps:
       - checkout
+      - aws-cli/setup
       - run: yarn install
         # If this works, think about adding it to the Gemfile
       - run: gem install bundler:1.16.6
