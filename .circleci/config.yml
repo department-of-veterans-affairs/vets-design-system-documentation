@@ -27,9 +27,15 @@ jobs:
 
 # Orchestrate or schedule a set of jobs
 workflows:
-   deploy-dev:
+  deploy-dev:
     jobs:
       - build-deploy:
           bucket: "dev-design.va.gov"
+          context:
+            - Platform
+  deploy-staging:
+    jobs:
+      - build-deploy:
+          bucket: "staging-design.va.gov"
           context:
             - Platform
