@@ -8,7 +8,7 @@ orbs:
 jobs:
   build-deploy:
     docker:
-      - image: cimg/ruby-node
+      - image: cimg/ruby:2.7.2-node
     steps:
       - checkout
       - run: yarn install
