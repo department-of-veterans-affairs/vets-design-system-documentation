@@ -23,7 +23,7 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
-      - run: aws s3 sync _site s3://<< parameters.bucket >>
+      - run: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read
 
 # Orchestrate or schedule a set of jobs
 workflows:
