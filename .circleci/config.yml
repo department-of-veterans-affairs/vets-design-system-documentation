@@ -4,11 +4,15 @@ version: 2.1
 orbs:
   # Declare a dependency on the welcome-orb
   welcome: circleci/welcome-orb@0.4.1
+  aws-cli: circleci/aws-cli@1.3.1
 
 jobs:
   build-deploy:
     docker:
       - image: cimg/ruby:2.7.2-node
+    environment:
+      AWS_DEFAULT_REGION: us-gov-west-1
+
     steps:
       - checkout
       - run: yarn install
@@ -17,6 +21,7 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
+      - run: aws s3 ls
 
 # Orchestrate or schedule a set of jobs
 workflows:
@@ -27,4 +32,6 @@ workflows:
       - welcome/run
   deploy:
     jobs:
-      - build-deploy
+      - build-deploy:
+          context:
+            - Platform
