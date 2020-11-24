@@ -20,7 +20,7 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
-      - run: aws s3 ls
+      - run: aws s3 sync _site s3://dev-design.va.gov
 
 # Orchestrate or schedule a set of jobs
 workflows:
