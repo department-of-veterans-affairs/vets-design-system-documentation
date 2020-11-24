@@ -10,6 +10,9 @@ jobs:
       - image: cimg/ruby:2.7.2-node
     environment:
       AWS_DEFAULT_REGION: us-gov-west-1
+    parameters:
+      bucket:
+        type: string
 
     steps:
       - checkout
@@ -20,12 +23,13 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
-      - run: aws s3 sync _site s3://dev-design.va.gov
+      - run: aws s3 sync _site s3://<< parameters.bucket >>
 
 # Orchestrate or schedule a set of jobs
 workflows:
-   deploy:
+   deploy-dev:
     jobs:
       - build-deploy:
+          bucket: "dev-design.va.gov"
           context:
             - Platform
