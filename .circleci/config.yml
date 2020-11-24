@@ -31,11 +31,17 @@ workflows:
     jobs:
       - build-deploy:
           bucket: "dev-design.va.gov"
+          filters:
+            branches:
+              only: master
           context:
             - Platform
   deploy-staging:
     jobs:
       - build-deploy:
           bucket: "staging-design.va.gov"
+          filters:
+            branches:
+              only: master
           context:
             - Platform
