@@ -4,6 +4,12 @@ title: Components
 index: true
 ---
 
+{% if jekyll.environment != "production" %}
+  <div class="vads-u-background-color--gold vads-u-padding--2">
+    <p class="vads-u-font-size--lg vads-u-margin--0">Come check out our <a href="{{ site.baseurl }}/storybook" class="vads-u-color--link-default vads-u-font-weight--bold vads-u-text-decoration--none">Storybook pilot</a>!</p>
+  </div>
+{% endif %}
+
 # Components
 
 <div class="va-introtext" markdown="1">

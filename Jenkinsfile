@@ -26,10 +26,10 @@ pipeline {
       }
     }
 
-    stage('Build static site') {
+    stage('Build static site for production') {
       steps {
         sh 'npm run build'
-        sh 'bundle exec jekyll build'
+        sh 'JEKYLL_ENV=production bundle exec jekyll build'
       }
     }
 
