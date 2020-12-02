@@ -5,8 +5,13 @@ index: true
 ---
 
 {% if jekyll.environment != "production" %}
-  <div class="vads-u-background-color--gold vads-u-padding--2">
-    <p class="vads-u-font-size--lg vads-u-margin--0">Come check out our <a href="{{ site.baseurl }}/storybook" class="vads-u-color--link-default vads-u-font-weight--bold vads-u-text-decoration--none">Storybook pilot</a>!</p>
+  <div class="feature">
+    <h3>Come check out our <a href="{{ site.baseurl }}/storybook" class="vads-u-color--link-default vads-u-font-weight--bold vads-u-text-decoration--none">Storybook pilot</a>!</h3>
+    <p>We are eager to receive feedback from designers & developers on their opionions on Storybook. Here are some example questions:</p>
+    <ul>
+      <li>Can you find guidance on how to use a component?</li>
+      <li>Are you able to see how a component will appear in a mobile viewport?</li>
+    </ul>
   </div>
 {% endif %}
 
