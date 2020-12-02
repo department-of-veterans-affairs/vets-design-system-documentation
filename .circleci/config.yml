@@ -2,12 +2,50 @@
 version: 2.1
 # Use a package of configuration called an orb.
 orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
+  aws-cli: circleci/aws-cli@1.3.1
+
+jobs:
+  build-deploy:
+    docker:
+      - image: cimg/ruby:2.7.2-node
+    environment:
+      AWS_DEFAULT_REGION: us-gov-west-1
+    parameters:
+      bucket:
+        type: string
+
+    steps:
+      - checkout
+      - aws-cli/setup
+      - run: yarn install
+        # If this works, think about adding it to the Gemfile
+      - run: gem install bundler:1.16.6
+      - run: bundle install
+      - run: yarn build
+      - run: bundle exec jekyll build
+      - run: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read
+
 # Orchestrate or schedule a set of jobs
 workflows:
-  # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
+  deploy-dev:
     jobs:
-      - welcome/run
+      - build-deploy:
+          # Set the bucket parameter to be the dev bucket
+          bucket: "dev-design.va.gov"
+          filters:
+            branches:
+              only: master
+          context:
+            # The Platform context has the environment variables for setting up the aws cli
+            - Platform
+  deploy-staging:
+    jobs:
+      - build-deploy:
+          # Set the bucket parameter to be the staging bucket
+          bucket: "staging-design.va.gov"
+          filters:
+            branches:
+              only: master
+          context:
+            # The Platform context has the environment variables for setting up the aws cli
+            - Platform
