@@ -70,11 +70,12 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.
 * Make sure buttons should look clickable—use color variations to distinguish static, hover and active states.
 * Avoid using too many buttons on a page.
+* Reserve chevrons in buttons for "Back" and "Continue" buttons only
 * Use sentence case for button labels.
-* Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “download,” “view” or “sign up”).
+* Keep the character limit for button labels to 35 characters. Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “download,” “view” or “sign up”). 
 * Make the first word of the button’s label a verb. For example, instead of “Complaint Filing” label the button “File a complaint.”
 * At times, consider adding an icon to signal specific actions (“download”, “open in a new window”, etc).
-* Read more about writing for buttons in the [content style guide](../content-style-guide/buttons.html)
+* Read more about writing for buttons in the [content style guide](https://design.va.gov/content-style-guide/button-labels)
 
 ### When to use
 
@@ -92,5 +93,5 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Buttons should display a visible focus state when users tab to them.
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don't automatically know either is a usable button.
 * When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
-
+* Include more contextual information in the button label for screen readers. You can use an aria label to specify form numbers or program names in the buttons for greater context. Example: A button label could say "Apply for caregiver assistance" and the button label for screen readers can say, `<button>Apply for <span class="sr only"the program of comprehensive</span> caregiver assistance</button>`
 
