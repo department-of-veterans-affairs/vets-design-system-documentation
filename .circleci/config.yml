@@ -49,3 +49,14 @@ workflows:
           context:
             # The Platform context has the environment variables for setting up the aws cli
             - Platform
+  deploy-prod:
+    jobs:
+      - build-deploy:
+          # Set the bucket parameter to be the prod bucket
+          bucket: "design.va.gov"
+          filters:
+            branches:
+              only: master
+          context:
+            # The Platform context has the environment variables for setting up the aws cli
+            - Platform
