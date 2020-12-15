@@ -2,6 +2,9 @@
 layout: default
 index: true
 title: Roadmap
+anchors:
+  - anchor: In Progress
+  - anchor: Future
 ---
 
 # Roadmap
