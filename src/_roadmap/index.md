@@ -11,7 +11,7 @@ title: Roadmap
 </div>
 
 
-## Current
+## In Progress
 
 <ul class="usa-accordion" data-multiselectable="true">
 {% for objective in site.data.roadmap.current %}
