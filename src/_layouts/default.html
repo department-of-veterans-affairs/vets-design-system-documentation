@@ -35,6 +35,9 @@
           <li class="site-header__nav-item">
             <a class="site-header__nav-item__link {% if page.url contains "/layout/" %} current {% endif %}" href="{{ site.baseurl }}/layout">Layout</a>
           </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-item__link {% if page.url contains "/roadmap/" %} current {% endif %}" href="{{ site.baseurl }}/roadmap">Roadmap</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -72,6 +75,9 @@
         {% elsif page.url contains "/layout/" %}
           {% include _side-nav.html section=site.layout %}
           {% assign collection_name = "Layout" %}
+        {% elsif page.url contains "/roadmap/" %}
+          {% include _side-nav.html section=site.roadmap %}
+          {% assign collection_name = "Roadmap" %}
         {% elsif page.url contains "/content-style-guide/" %}
             {% include _side-nav.html section=site.content-style-guide %}
             {% assign collection_name = "Content style guide" %}
