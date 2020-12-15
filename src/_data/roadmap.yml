@@ -10,6 +10,7 @@ future:
     description: |
       The Design System team plans to investigate Web Components as a way of
       providing a single component library that works for static pages as well
+      as React applications
 
   - title: New Forms library
     description: |
