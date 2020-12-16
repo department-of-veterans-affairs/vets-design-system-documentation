@@ -97,15 +97,11 @@ Note: The Department of the Treasury requires us to make electronic payments. If
 ### When to use this pattern 
 Follow this pattern to provide Veterans with the ability to change their bank account information. This direct deposit information is pre-populated because the veteran already filled these bank details beforehand. 
 
-#### Section name
-Under the form name and chapter title, always label the section name as “Direct deposit information” 
-
-#### Section  description
-Under the section name have a short description on what the information below means, “This is the bank account information we have on file for you. This is where we’ll send your payments.”
-
 #### Bank account information card
-Under the section title, the direct deposit information will live in the bank account information card. The information will be displayed in the component similar to the address block component. 
-Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the edit button. 
+The direct deposit information will live in the bank account information card. The card will have a short description on what the information below means, *“This is the bank account information we have on file for you. This is where we’ll send your payments.”*
+Under the description, the information will be displayed in the component similar to the [address block component.](https://design.va.gov/components/address-block) 
+Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the edit button.
+
 
 #### Call to action
 When the “update account information” button is clicked, the bank account information card will turn into an interactive card in which the review state will revert back into the input state.
