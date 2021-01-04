@@ -35,7 +35,7 @@ Common form structures and designs used on VA.gov
 ## Direct deposit form
 
 ### Input state
-* screenshot here *
+![Direct deposit input state]({{site.baseurl}}/images/Direct-deposit-input-state.png)
 
 ### When to use this pattern 
 Apply this pattern when Veterans are asked to provide banking information to receive funds electronically. 
@@ -67,6 +67,8 @@ The bank routing number text input is required for this form pattern. The routin
 The bank account number text input is required for this form pattern. The maximum bank account number length is 17 digits.
 
 #### “I don’t want to use direct deposit” checkbox
+![Direct deposit checkbox]({{site.baseurl}}/images/Direct-deposit-checkbox.png)
+
 Underneath the direct deposit  input card, give the Veteran the option to not give their direct deposit information. When the checkbox is checked, the direct deposit input card above will disappear. 
 
 ### More information
@@ -92,7 +94,7 @@ Note: The Department of the Treasury requires us to make electronic payments. If
 [VA Form 22-10203 (Application for Edith Nourse Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
 
 ### Review state
-*insert screenshot there*
+![Direct deposit review state]({{site.baseurl}}/images/Direct-deposit-review-state.png)
 
 ### When to use this pattern 
 Follow this pattern to provide Veterans with the ability to change their bank account information. This direct deposit information is pre-populated because the veteran already filled these bank details beforehand. 
