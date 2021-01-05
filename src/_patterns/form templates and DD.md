@@ -46,7 +46,7 @@ Under the form name and chapter title, begin the card with a heading level 3 of 
 #### Card description
 Under the card name have a short description on how VA only accepts direct deposit and what their direct deposit information is going to be used for. 
 
-Example: *We make payments only through direct deposit, also called  electronic funds transfer (EFT).  If you’re approved for the Roger Stem Scholarship, we’ll need to know where to deposit the funds.* 
+Example: *We make payments only through direct deposit, also called  electronic funds transfer (EFT).* 
 
 #### Check image
 *insert check image here*
