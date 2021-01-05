@@ -101,7 +101,7 @@ Follow this pattern to provide Veterans with the ability to change their bank ac
 #### Bank account information card
 The direct deposit information will live in the bank account information card. The card will have a short description on what the information below means, *“This is the bank account information we have on file for you. This is where we’ll send your payments.”*
 Under the description, the information will be displayed in the component similar to the [address block component.](https://design.va.gov/components/address-block) 
-Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the edit button.
+Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the call to action button below.
 
 
 #### Call to action
