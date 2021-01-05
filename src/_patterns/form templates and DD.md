@@ -49,7 +49,6 @@ Under the card name have a short description on how VA only accepts direct depos
 Example: *We make payments only through direct deposit, also called  electronic funds transfer (EFT).* 
 
 #### Check image
-*insert check image here*
 The check image provides a guide for Veterans to find their account and routing numbers from a check when filling out direct deposit information. 
 
 ### Form controls
