@@ -22,6 +22,10 @@ Here is what it looks like:
 
 ![on this page jump link specifications]({{site.baseurl}}/images/on-this-page-jump-links.png)
 
+## Accessibility
+- **Heading levels should only increase by one.** The proper order of heading levels conveys the structure of the page for users who use screen readers. When heading elements are applied correctly, the page becomes much easier to navigate for screen reader users and sighted users alike.
+- **The focus should be on the destination.** When a user clicks on an item on this page component, the focus should move to the heading that it’s linked to.
+- **Allow enough spacing between components.** Space should be 1.5 rem (36px) from the bottom of the descender to the top of the ascender.
 
 ## Guidance
 
@@ -36,15 +40,4 @@ Because the content on VA.gov can be dense and require exposition, pages can get
 - **For content pages, include a minimum of two H2 sections.** The article should have a minimum of two H2 sections in order to display the on this page component links.
 - **Do not use components for very short sections if we can display sections on one screen.** If using this component for 2 sections, do not use components if sections are very short.
 
-### Accessibility
-- **Heading levels should only increase by one.** The proper order of heading levels conveys the structure of the page for users who use screen readers. When heading elements are applied correctly, the page becomes much easier to navigate for screen reader users and sighted users alike.
-- **The focus should be on the destination.** When a user clicks on an item on this page component, the focus should move to the heading that it’s linked to.
-- **Allow enough spacing between components.** Space should be 1.5 rem (36px) from the bottom of the descender to the top of the ascender.
 
-### Implementation
-
-### Package information
-
-* **Package usage:**  
-
-* **Requires:**
