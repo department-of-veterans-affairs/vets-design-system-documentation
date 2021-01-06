@@ -23,3 +23,7 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 
 - Any part of a text link, since the blue and underlining sets apart that text enough
 - Words used to emphasize a point being made in the text, like “only if”
+
+**Stacked informational text in forms and applications**
+
+When there is short, stacked text in forms and applications that has a key (general information) and value (specific to the user or the page), bold the key only. Don't use a colon after it. See this page.   
