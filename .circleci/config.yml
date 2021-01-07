@@ -23,7 +23,7 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
-      - run: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read
+      - run: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read --delete --exclude "storybook/*"
 
 # Orchestrate or schedule a set of jobs
 workflows:
@@ -32,9 +32,9 @@ workflows:
       - build-deploy:
           # Set the bucket parameter to be the dev bucket
           bucket: "dev-design.va.gov"
-          filters:
-            branches:
-              only: master
+          # filters:
+          #   branches:
+          #     only: master
           context:
             # The Platform context has the environment variables for setting up the aws cli
             - Platform
