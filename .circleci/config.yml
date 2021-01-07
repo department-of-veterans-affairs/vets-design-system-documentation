@@ -23,7 +23,7 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
-        # We are taking these extra steps due tosome differences between Jekyll and AWS S3.
+        # We are taking these extra steps due to some differences between Jekyll and AWS S3.
         # More context:
         #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
       - run:
@@ -41,7 +41,7 @@ jobs:
             --exclude "*.*" \
             --content-type "text/html"
       - run:
-          name: Sync remaning files
+          name: Sync remaining files
           command: |
             aws s3 sync _site s3://<< parameters.bucket >> \
             --acl public-read \
