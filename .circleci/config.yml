@@ -28,7 +28,7 @@ jobs:
           command: find _site/ -type f ! -iname 'index.html' -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
       - run:
           name: Sync extensionless html files with correct type
-          command: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read --delete --exclude "storybook/*" --exclude "*.*" --content-type text/html
+          command: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read --delete --exclude "storybook/*" --exclude "*.*" --content-type "text/html"
       - run:
           name: Sync remaning files
           command: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read --delete --exclude "storybook/*" --exclude "*" --include "*.*"
