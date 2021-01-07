@@ -23,6 +23,9 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
+        # We are taking these extra steps due tosome differences between Jekyll and AWS S3.
+        # More context:
+        #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
       - run:
           name: Remove .html extension on non-index files
           command: |
