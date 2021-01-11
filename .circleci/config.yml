@@ -50,7 +50,7 @@ jobs:
             --delete \
             --exclude "*" \
             --include "*.*" \
-            --exclude "storybook/*" \
+            --exclude "storybook/*"
 
 # Orchestrate or schedule a set of jobs
 workflows:
