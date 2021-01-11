@@ -49,9 +49,9 @@ jobs:
             aws s3 sync _site s3://<< parameters.bucket >> \
             --acl public-read \
             --delete \
+            --include "*.*"
             --exclude "storybook/*" \
             --exclude "*" \
-            --include "*.*"
 
 # Orchestrate or schedule a set of jobs
 workflows:
