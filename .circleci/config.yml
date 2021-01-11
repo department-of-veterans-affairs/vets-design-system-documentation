@@ -23,6 +23,7 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
+      - run: cd _site/ && mkdir storybook
         # We are taking these extra steps due to some differences between Jekyll and AWS S3.
         # To access a .html file served from S3, the URL needs to have the .html extension.
         # We're removing the extension to make the URLs prettier.
