@@ -50,7 +50,7 @@ jobs:
             --acl public-read \
             --delete \
             --exclude "*" \
-            --include "*.*"
+            --include "*.*" \
             --exclude "storybook/*" \
 
 # Orchestrate or schedule a set of jobs
