@@ -44,7 +44,7 @@ Follow this pattern whenever you need to ask for a user’s name for an applicat
 - **First name and last name are required fields.** Middle name and suffix fields are optional. Mother’s maiden name field is not on every form. 
 
 ### Important numbers: Social security number & VA file number
-Follow this pattern whenever you need to ask for a social security number or file number. 
+Follow this pattern whenever you need to ask for a social security number or VA file number. 
 
 ![applicant information important numbers template]({{site.baseurl}}/images/Applicant-info-important-numbers.png) 
 
