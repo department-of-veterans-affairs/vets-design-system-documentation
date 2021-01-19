@@ -43,6 +43,47 @@ Follow this pattern whenever you need to ask for a user’s name for an applicat
 - **Make sure name fields work for most veterans.** Fields must be long enough to accommodate the names of your users. Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.
 - **First name and last name are required fields.** Middle name and suffix fields are optional. Mother’s maiden name field is not on every form. 
 
+### Important numbers: Social security number & VA file number
+Follow this pattern whenever you need to ask for a social security number or file number. 
+
+![applicant information important numbers template]({{site.baseurl}}/images/Applicant-info-important-numbers.png) 
+
+#### Usability guidance:
+- **Use a single text input for social security and VA file number.** labelled ‘Social Security number’. Do not use abbreviations, such as SSN
+- **VA file numbers are not on every form.** If the form asks for a Social Security number and VA file number make sure to note in the VA file number helper text, “must have this or a Social Security number”
+
+**Note:** The Social Security number pattern is going to be iterated on in the future, specifically masking the numbers for privacy purposes
+
+### Birth information:
+Follow this pattern whenever you need to ask for a user’s date and place of birth. 
+
+![applicant information birth information template]({{site.baseurl}}/images/Applicant-info-birth-info.png) 
+
+#### Usability guidance:
+- **Use the date input field for date of birth.** Writing out the label for each birth date string and separating them into three fields instead of one eliminates the format confusion.
+- **Place of birth information is one text input.** This format is easier to fill out for both veterans born outside the United States and for veterans who were born United States citizens.
+
+### Gender:
+Follow this pattern whenever you need to ask veterans their gender. 
+
+![applicant information gender template]({{site.baseurl}}/images/Applicant-info-gender.png) 
+
+#### Usability guidance:
+- **Don’t ask if it does not benefit the user experience.** You should only ask users about gender when absolutely necessary.  
+- **Use checkboxes.** Give veterans the ability to check more than one gender they could identify with. 
+
+**Note:** Many forms are based off of paper forms with limited fields for gender. Work with your stakeholder and see if you can expand the fields. 
+
+### Race, ethnicity, or origin:
+Follow this pattern whenever you need to ask veterans for their race, ethnicity, or origin. 
+
+![applicant information race template]({{site.baseurl}}/images/Applicant-info-race.png) 
+
+#### Usability guidance:
+- **Don’t ask if it does not benefit the user experience.** Only collect users’ information on this topic if you are going to use the data. 
+- **Give users the option of picking more than one ethnic group.** Always use checkboxes so that users can identify with multiple ethnicities. 
+
+
 
 ## Direct deposit form
 
