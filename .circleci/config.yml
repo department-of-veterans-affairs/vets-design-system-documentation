@@ -23,7 +23,34 @@ jobs:
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build
-      - run: aws s3 sync _site s3://<< parameters.bucket >> --acl public-read
+        # We are taking these extra steps due to some differences between Jekyll and AWS S3.
+        # To access a .html file served from S3, the URL needs to have the .html extension.
+        # We're removing the extension to make the URLs prettier.
+        # More context:
+        #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
+      - run:
+          name: Remove .html extension on non-index files
+          command: |
+            find _site/ -type f ! -iname 'index.html' -iname '*.html' \
+            -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+      - run:
+          name: Sync extensionless html files with correct type
+          command: |
+            aws s3 sync _site s3://<< parameters.bucket >> \
+            --acl public-read \
+            --delete \
+            --exclude "storybook/*" \
+            --exclude "*.*" \
+            --content-type "text/html"
+      - run:
+          name: Sync remaining files
+          command: |
+            aws s3 sync _site s3://<< parameters.bucket >> \
+            --acl public-read \
+            --delete \
+            --exclude "*" \
+            --include "*.*" \
+            --exclude "storybook/*"
 
 # Orchestrate or schedule a set of jobs
 workflows:
