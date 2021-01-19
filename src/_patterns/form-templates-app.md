@@ -49,8 +49,8 @@ Follow this pattern whenever you need to ask for a social security number or fil
 ![applicant information important numbers template]({{site.baseurl}}/images/Applicant-info-important-numbers.png) 
 
 #### Usability guidance:
-- **Use a single text input for social security and VA file number.** labelled ‘Social Security number’. Do not use abbreviations, such as SSN
-- **VA file numbers are not on every form.** If the form asks for a Social Security number and VA file number make sure to note in the VA file number helper text, “must have this or a Social Security number”
+- **Use a single text input for social security and VA file number.** labelled ‘Social Security number’. Do not use abbreviations, such as SSN.
+- **VA file numbers are not on every form.** If the form asks for a Social Security number and VA file number make sure to note in the VA file number helper text, “must have this or a Social Security number.”
 
 **Note:** The Social Security number pattern is going to be iterated on in the future, specifically masking the numbers for privacy purposes
 
