@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Back to top 
-draft: true
 ---
 
 # Back to top
