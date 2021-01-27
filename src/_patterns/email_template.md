@@ -7,7 +7,7 @@ draft: true
 
 # Email template
 
-(insert image here)
+![email template]({{site.baseurl}}/images/email-template.png)
 
 ## Guidance
 
