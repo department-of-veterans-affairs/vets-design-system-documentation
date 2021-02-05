@@ -101,7 +101,7 @@ Here is the content structure for asking a user for a single address:
 - State/Province/Region select box
 - Postal code text input
 
-[insert single address image]
+![contact information single address template]({{site.baseurl}}/images/contact-info-single-address.png)
 
 #### Usability guidance:
 - **If required, include a checkbox for United States military base address** Under the additional information component, there should be an explanation:
@@ -124,13 +124,13 @@ Here is the content structure for asking a user for multiple addresses:
 - City text input
 - State/Province/Region select box
 - Postal code text input
-- Radio button component for mailing address same as home address
+- Radio button component for mailing address same as home address (this is on mailing address page only) 
 
 **Mailing address**
-[insert image here]
+![contact information mailing address template]({{site.baseurl}}/images/contact-info-mailing-address.png)
 
 **Home address**
-[insert image here]
+![contact information home address template]({{site.baseurl}}/images/contact-info-home-address.png)
 
 #### Usability guidance: 
 - **Add guidance on where users can go to edit their account information on all VA accounts** Let the user know that when filling out contact information, they will have to edit their profile information. An example message is: *Any updates you make here to your contact information will only apply to this application. To update your contact information for all of your VA accounts, [go to your profile page](link to profile).*
@@ -139,7 +139,7 @@ Here is the content structure for asking a user for multiple addresses:
 
 ### Email address 
 Follow this pattern when you want to ask for an email address. 
-[insert image here]
+![contact information email address template]({{site.baseurl}}/images/contact-info-email-address.png)
 
 #### Usability guidance:
 - **If possible, tell users why you want their email address** Users need to know that the VA won’t abuse their email and which email they’d like to provide. An example message is: Please enter your contact information so we can get in touch with you if we have questions about your application.
@@ -147,7 +147,7 @@ Follow this pattern when you want to ask for an email address.
 
 ### Phone numbers 
 Follow this pattern when you want to ask for a phone number.  
-[insert image here]
+![contact information phone number template]({{site.baseurl}}/images/contact-info-phone-number.png)
 
 #### Usability guidance:
 - **If possible, tell users why you want their phone number** An example message is: Please enter your contact information so we can get in touch with you, if necessary. This message can be at the top of the page if asking for any other contact information.
@@ -158,7 +158,7 @@ Follow this pattern when you want to ask for a phone number.
 
 ### Method of contact 
 Follow this pattern when you want to ask a user how they’d like to be contacted. 
-[insert image here]
+![contact information method of contact template]({{site.baseurl}}/images/contact-info-method-of-contact.png)
 
 #### Usability guidance:
 - **This field is dependent on the form** Method of contact is form-dependent. Work with your stakeholders on whether your form needs a method of contact. 
