@@ -144,7 +144,7 @@ Follow this pattern when you want to ask for an email address.
 ![contact information email address template]({{site.baseurl}}/images/contact-info-email-address.png)
 
 #### Usability guidance:
-- **If possible, tell users why you want their email address** Users need to know that the VA won’t abuse their email and which email they’d like to provide. An example message is: Please enter your contact information so we can get in touch with you if we have questions about your application.
+- **If possible, tell users why you want their email address** Users need to know that the VA won’t abuse their email and which email they’d like to provide. An example message is: *Please enter your contact information so we can get in touch with you if we have questions about your application.*
 - **Validate email addresses** You should validate email addresses so you can let users know if they have entered one incorrectly. A validation message for when a user forgets the “@”: *Please enter a valid email address.* A validation message for when a user doesn’t use the same email in the “Confirm email address” field: *This email doesn't match the one you entered above.*
 
 ### Phone numbers 
