@@ -127,9 +127,11 @@ Here is the content structure for asking a user for multiple addresses:
 - Radio button component for mailing address same as home address (this is on mailing address page only) 
 
 **Mailing address**
+
 ![contact information mailing address template]({{site.baseurl}}/images/contact-info-mailing-address.png)
 
 **Home address**
+
 ![contact information home address template]({{site.baseurl}}/images/contact-info-home-address.png)
 
 #### Usability guidance: 
