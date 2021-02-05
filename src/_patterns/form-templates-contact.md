@@ -44,7 +44,7 @@ Follow this pattern whenever you need to ask for a social security number or VA 
 - **Use a single text input for social security and VA file number.** labelled ‘Social Security number’. Do not use abbreviations, such as SSN.
 - **VA file numbers are not on every form.** If the form asks for a Social Security number and VA file number make sure to note in the VA file number helper text, “must have this or a Social Security number.”
 
-**Note:** The Social Security number pattern is going to be iterated on in the future, specifically masking the numbers for privacy purposes
+**Note:** The Social Security number pattern is going to be iterated on in the future, specifically masking the numbers for privacy purposes.
 
 ### Birth information:
 Follow this pattern whenever you need to ask for a user’s date and place of birth. 
@@ -164,7 +164,7 @@ Follow this pattern when you want to ask a user how they’d like to be contacte
 
 #### Usability guidance:
 - **This field is dependent on the form.** Method of contact is form-dependent. Work with your stakeholders on whether your form needs a method of contact. 
-- **Give users the opportunity to pick one method of contact.** Provide contact information methods in radio button list form 
+- **Give users the opportunity to pick one method of contact.** Provide contact information methods in radio button list form. 
 
 ## Direct deposit form
 
