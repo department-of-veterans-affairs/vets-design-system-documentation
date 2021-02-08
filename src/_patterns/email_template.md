@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Email template
-draft: true
-
 ---
 
 # Email template
