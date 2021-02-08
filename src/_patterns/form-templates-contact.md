@@ -128,7 +128,7 @@ Here is the content structure for asking a user for multiple addresses:
 
 **Mailing address**
 
-![contact information mailing address template]({{site.baseurl}}/images/contact-info-mailing-address.png)
+![contact information mailing address template]({{site.baseurl}}/images/mailing-address.png)
 
 **Home address**
 
