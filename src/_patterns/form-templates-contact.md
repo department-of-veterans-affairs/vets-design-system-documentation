@@ -135,7 +135,7 @@ Here is the content structure for asking a user for multiple addresses:
 ![contact information home address template]({{site.baseurl}}/images/contact-info-home-address.png)
 
 #### Usability guidance: 
-- **Add guidance on where users can go to edit their account information on all VA accounts.** Let the user know that when filling out contact information, they will have to edit their profile information. An example message is: *Any updates you make here to your contact information will only apply to this application. To update your contact information for all of your VA accounts, [go to your profile page](link to profile).*
+- **Add guidance on where users can go to edit their account information on all VA accounts.** Let the user know that when filling out contact information, they will have to edit their profile information. An example message is: *Any updates you make here to your contact information will only apply to this application. To update your contact information for all of your VA accounts, go to your profile page (link to profile).*
 - **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 - **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses “Yes”, they can skip the home address form. 
 
