@@ -10,4 +10,4 @@ title: Pagination
 {% include_relative html/pagination.html %}
 </div>
 
-{% include snippet.html content='html/pagination.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/pagination/' %}
+{% include snippet.html content='html/pagination.html' react_component='https://design.va.gov/storybook/?path=/docs/components-pagination--default' %}

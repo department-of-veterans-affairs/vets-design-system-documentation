@@ -15,7 +15,7 @@ anchors:
 {% include_relative html/tables.html %}
 </div>
 
-{% include snippet.html content='html/tables.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/sortabletable/' %}
+{% include snippet.html content='html/tables.html' react_component='https://design.va.gov/storybook/?path=/docs/components-table--default' %}
 
 
 ## Accessibility

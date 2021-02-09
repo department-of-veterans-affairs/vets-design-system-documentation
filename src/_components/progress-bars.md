@@ -12,7 +12,7 @@ title: Progress bars
 {% include_relative html/progress-bar.html %}
 </div>
 
-{% include snippet.html content='html/progress-bar.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/progressbar/' %}
+{% include snippet.html content='html/progress-bar.html' react_component='https://design.va.gov/storybook/?path=/docs/components-table--default' %}
 
 ## Segmented progress bar
 
@@ -20,4 +20,4 @@ title: Progress bars
 {% include_relative html/segmented-progress-bar.html %}
 </div>
 
-{% include snippet.html content='html/segmented-progress-bar.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/segmentedprogressbar/' %}
+{% include snippet.html content='html/segmented-progress-bar.html' react_component='https://design.va.gov/storybook/?path=/docs/components-table--default' %}
