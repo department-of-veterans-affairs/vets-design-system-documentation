@@ -29,7 +29,7 @@ Use sitewide maintenance banners when VA.gov has to undergo scheduled maintenanc
 
 Use the [Before Maintenence banner](https://design.va.gov/storybook/?path=/docs/components-banners-maintenancebanner--before-maintenance) for communicating system downtimes that affect many to all services or tools sitewide across VA.gov before it happens. This helps users know when a tool or application will be available and plan accordingly. 
 
-**Text for the Before maintenance banner** 
+#### Text for the Before maintenance banner
 
 **Upcoming site maintenance**
 We’ll be doing some work on VA.gov. The maintenance will last x hour. During that time, you won’t be able to sign in or use tools.
@@ -46,9 +46,9 @@ We’ll be doing some work on VA.gov. The maintenance will last x hour. During t
 
 Use the [During Maintenence banner](https://design.va.gov/storybook/?path=/docs/components-banners-maintenancebanner--during-maintenance) for communicating system downtimes that affect all services or tools sitewide across VA.gov. This helps users know when a tool or application will be available. 
 
-**Text for the Before maintenance banner will always be**
+#### Text for the Before maintenance banner will always be
 
-**Site maintenance**
+##### Site maintenance
 We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.
 **Date:** Day, Date, Year
 **Start/End time:** 0:00 a.m. to 00:00 a.m. ET
