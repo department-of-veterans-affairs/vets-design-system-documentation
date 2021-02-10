@@ -31,10 +31,10 @@ Use the [Before Maintenence banner](https://design.va.gov/storybook/?path=/docs/
 
 **Text for the Before maintenance banner** 
 
-> **Upcoming site maintenance**
-> We’ll be doing some work on VA.gov. The maintenance will last x hour. During that time, you won’t be able to sign in or use tools.
-> **Date:** Day, Date, Year
-> **Start/End time:** 0:00 a.m. to 0:00 a.m. ET
+**Upcoming site maintenance**
+We’ll be doing some work on VA.gov. The maintenance will last x hour. During that time, you won’t be able to sign in or use tools.
+**Date:** Day, Date, Year
+**Start/End time:** 0:00 a.m. to 0:00 a.m. ET
 
 - Always specify time and date. Refer to [scheduled downtime notifications messaging](https://design.va.gov/patterns/messaging-dictionary#scheduled-downtime-notifications) in the content style guide.
 - Maintenance banners are always dismissable
@@ -48,10 +48,10 @@ Use the [During Maintenence banner](https://design.va.gov/storybook/?path=/docs/
 
 **Text for the Before maintenance banner will always be**
 
-> Site maintenance**
-> We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.
-> **Date:** Day, Date, Year
-> **Start/End time:** 0:00 a.m. to 00:00 a.m. ET
+**Site maintenance**
+We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.
+**Date:** Day, Date, Year
+**Start/End time:** 0:00 a.m. to 00:00 a.m. ET
 
 - Always specify time and date. Refer to [scheduled downtime notifications messaging](https://design.va.gov/patterns/messaging-dictionary#scheduled-downtime-notifications) in the content style guide.
 - Maintenance banners are always dismissable
