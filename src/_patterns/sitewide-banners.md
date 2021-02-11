@@ -12,11 +12,11 @@ Sitewide maintenance banners are used when we need to let Veterans know about sy
 
 
 ## When we use them 
-Sitewide maintenance banners combine the full-width banner alert component with standardized messaging text. It’s used when all (or most) unauthenticated and authenticated applications, tools, or sign in experiences across the entire site are affected (e.g., vets-api). The Office of the CTO Digital Experience Team is responsible for publishing the downtime maintenance banners.
+Sitewide maintenance banners combine the full-width banner alert component with standardized messaging text. It’s used when all (or most) unauthenticated and authenticated applications, tools, or sign in experiences across the entire site are affected (e.g., vets-api).
 
 1. Before the site maintenance
 
-2. During the site maintenance. 
+2. During the site maintenance
 
 ### Upcoming site maintenance banner: Before downtime
 The ‘before downtime’ banner helps users know when the downtime will take place, so they can plan accordingly. 
@@ -53,7 +53,7 @@ We’re working on VA.gov right now. If you have trouble signing in or using too
 
 ## UX behavior 
 
-The content and UX behavior of sitewide maintenance banners are standardized. Only the duration, dates, and times are customized. 
+The content and UX behavior of sitewide maintenance banners are standardized. Only the duration, dates, and times are customizable. 
 
 The Public Website Team (Office of the CTO Digital Experience) publishes downtime maintenance banners.
 
