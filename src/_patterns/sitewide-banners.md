@@ -2,8 +2,6 @@
 layout: default
 draft: true
 title: Sitewide maintenance banners
-anchors:
-  - anchor: 
  
 ---
 
