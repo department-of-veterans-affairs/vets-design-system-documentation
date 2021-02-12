@@ -26,7 +26,7 @@ Used to provide helpful information to a user or something that warrants attenti
 {% include_relative html/alert-informational.html %}
 </div>
 
-{% include snippet.html content='html/alert-informational.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
+{% include snippet.html content='html/alert-informational.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
 
 
 ## Warning alert
@@ -37,7 +37,7 @@ Used to warn a user, such as when there are negative consequences, but necessary
 {% include_relative html/alert-warning.html %}
 </div>
 
-{% include snippet.html content='html/alert-warning.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
+{% include snippet.html content='html/alert-warning.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
 
 ## Success alert
 
@@ -47,7 +47,7 @@ Used to indicate success.
 {% include_relative html/alert-success.html %}
 </div>
 
-{% include snippet.html content='html/alert-success.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
+{% include snippet.html content='html/alert-success.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
 
 ## Error alert
 
@@ -57,7 +57,7 @@ Used when there is a problem or something destructive is about to occur.
 {% include_relative html/alert-error.html %}
 </div>
 
-{% include snippet.html content='html/alert-error.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
+{% include snippet.html content='html/alert-error.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
 
 ## Sign in or tool prompt
 
@@ -67,7 +67,7 @@ Used to prompt user to sign in, create an account, or launch a tool to access ce
 {% include_relative html/alert-continue.html %}
 </div>
 
-{% include snippet.html content='html/alert-continue.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
+{% include snippet.html content='html/alert-continue.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
 
 
 ## Background color only
@@ -78,7 +78,7 @@ Any style of alert box can be made to be background color only. Background color
 {% include_relative html/alert-background-color.html %}
 </div>
 
-{% include snippet.html content='html/alert-background-color.html' react_component='https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/visual-design/components/alertbox/' %}
+{% include snippet.html content='html/alert-background-color.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
 
 - Some users might not be able to distinguish differences in the background color, or see the color at all. Do not rely on color alone to convey context.
 - Messaging should be direct and concise. Aim for one or two lines.
