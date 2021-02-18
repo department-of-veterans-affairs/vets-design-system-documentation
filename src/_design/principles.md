@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Design Principles
+title: Design principles
 draft: true
 ---
 
