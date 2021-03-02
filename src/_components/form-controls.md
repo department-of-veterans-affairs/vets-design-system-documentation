@@ -179,8 +179,8 @@ Use a month, day, year date input component for a date a user knows, like a date
 Use a month year date input component for a date a user can approximate, like a date they graduated from high school or a GED equivalent. (Example: May 2010) 
 
 #### When to consider something else
--If users are trying to schedule something, consider using a calendar picker
-Note: We do not have a calendar picker as part of the design system yet. This is still an experimental component. For reference, visit the VA online scheduling tool. 
+If users are trying to schedule something, consider using a calendar picker
+**Note:** We do not have a calendar picker as part of the design system yet. This is still an experimental component. For reference, visit the VA online scheduling tool. 
 
 #### Guidance
 - The component consists of two select boxes for month and day inputs and a text input for year input. For those components please check the usability guidance for select boxes and text inputs
