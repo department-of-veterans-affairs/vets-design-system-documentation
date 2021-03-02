@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Design Principles
-draft: true
+title: Design principles
 ---
 
 # VA.gov design principles
