@@ -164,7 +164,11 @@ Radio buttons allow users to see all available choices at once and select exactl
 
 Use the date input component to help users enter a date they would know or a date they can approximate.
 
-[put code snippet here]
+<div class="site-showcase">
+{% include_relative html/date.html %}
+</div>
+
+{% include snippet.html content='html/date.html' react_component='https://design.va.gov/storybook/?path=/docs/components-date--default' %}
 
 ### Accessibility
 Follow text input and select box guidance. The component consists of two select boxes for month and day inputs and a text input for year input. [LINK] Accessibility guidance for text inputs. Accessibility guidance for select boxes.[LINK]
