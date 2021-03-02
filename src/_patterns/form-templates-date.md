@@ -180,11 +180,18 @@ Follow this pattern whenever you need users to provide a date on a form.
 ### Dates a user knows: 
 Use the month/day/year date input component for most dates, particularly memorized dates. 
 
+![date input for memorized dates: month day and year]({{site.baseurl}}/images/date-input.png) 
+
 ### Dates a User Can Approximate:
 Use the month/year date input component for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
+
+![date input for approximate dates: month and year]({{site.baseurl}}/images/date-input-month-year.png) 
  
 ### Date ranges:
 Use  month/day/year inputs or month/year inputs depending on the question being asked. For example: Service history dates
+
+![date ranges: service start date and service end date]({{site.baseurl}}/images/date-ranges.png) 
+
 
 #### Usability guidance:
 - **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date” 
