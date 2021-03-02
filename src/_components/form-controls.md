@@ -2,7 +2,6 @@
 layout: default
 sub_section: form-controls
 title: Form controls
-draft: true
 anchors:
   - anchor: Text inputs
   - anchor: Select box
