@@ -172,11 +172,11 @@ Follow this pattern when you want to ask a user how they’d like to be contacte
 ### When to use this pattern 
 Follow this pattern whenever you need users to provide a date on a form.
 
-- Dates you may need users to provide include:
+Dates you may need users to provide include:
 - Dates a user knows, like a date of birth or marriage
 - Dates a user can approximate , like February 2021
 - Date ranges, like service history dates 
-- 
+
 ### Dates a user knows: 
 Use the month/day/year date input component for most dates, particularly memorized dates. 
 
