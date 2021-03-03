@@ -170,7 +170,7 @@ Use the date input component to help users enter a date they would know or a dat
 {% include snippet.html content='html/date.html' react_component='https://design.va.gov/storybook/?path=/docs/components-date--default' %}
 
 ### Accessibility
-Follow text input and select box guidance. The component consists of two select boxes for month and day inputs and a text input for year input. [LINK] Accessibility guidance for text inputs. Accessibility guidance for select boxes.[LINK]
+Follow text input and select box guidance. The component consists of two select boxes for month and day inputs and a text input for year input.
 
 ### Usability
 
@@ -180,6 +180,7 @@ Use a month year date input component for a date a user can approximate, like a 
 
 #### When to consider something else
 If users are trying to schedule something, consider using a calendar picker
+
 **Note:** We do not have a calendar picker as part of the design system yet. This is still an experimental component. For reference, visit the VA online scheduling tool. 
 
 #### Guidance
