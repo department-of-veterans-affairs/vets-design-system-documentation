@@ -194,7 +194,7 @@ Use  month/day/year inputs or month/year inputs depending on the question being 
 
 #### Usability guidance:
 - **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date” 
-- **Spell out full month names in the filled state** The month select box should have the full month’s name. Example: January 
+- **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
 - **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
  
 ## Direct deposit form
