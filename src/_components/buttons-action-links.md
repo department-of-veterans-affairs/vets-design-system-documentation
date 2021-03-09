@@ -25,7 +25,7 @@ Buttons that prompt users to sign in
 
 ## Wizard buttons
 
-Use the **wizard** button to trigger a [wizard] (https://design.va.gov/patterns/wizards) on a page..
+Use the **wizard** button to trigger a [wizard](https://design.va.gov/patterns/wizards) on a page.
 
 <div class="site-showcase">
 {% include_relative html/buttons-primary.html %}
