@@ -34,7 +34,7 @@ Use the **wizard** button to trigger a [wizard](https://design.va.gov/patterns/w
 {% include snippet.html content='html/buttons-primary.html' %}
 
 ### What to use for primary call to actions that link to another page 
-Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link] (https://design.va.gov/components/action-links) documentation for more details. We encourage using green buttons for triggering wizards only. 
+Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link](https://design.va.gov/components/action-links) documentation for more details. We encourage using green buttons for triggering wizards only. 
 
 ## Secondary button
 
