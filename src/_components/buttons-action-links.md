@@ -78,8 +78,8 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 
 
 ### When to consider something else
-*For navigation between pages of a website, default to using links.
-* If a call to action needs to be visually prominent on the page, use an [Action link] (https://design.va.gov/components/action-links)
+* For navigation between pages of a website, default to using links.
+* If a call to action needs to be visually prominent on the page, use an [Action link](https://design.va.gov/components/action-links)
 
 ### Usability guidance: how to use it
 * Buttons can be applied to `<button>`, which are used for actions
@@ -99,6 +99,6 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Buttons should display a visible focus state when users tab to them.
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don't automatically know either is a usable button.
 * Include more contextual information in the button label for screen readers. You can use an aria label to specify form numbers or program names in the buttons for greater context. 
-* It is important to use [Action links] (https://design.va.gov/components/action-links) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
+* It is important to use [Action links](https://design.va.gov/components/action-links) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
 * Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it has actually been designated as a button in the markup. 
-* Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link] (https://design.va.gov/components/action-links) guidance to determine what is needed for a page. 
+* Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link](https://design.va.gov/components/action-links) guidance to determine what is needed for a page. 
