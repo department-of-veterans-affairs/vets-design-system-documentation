@@ -1,7 +1,7 @@
 ---
 
 layout: default
-title: Action Link 
+title: Action links 
 draft: true
 ---
 
