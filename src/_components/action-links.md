@@ -11,7 +11,7 @@ draft: true
 
 This component is experimental because it needs more research to validate it. Please share any research to the #vsp-design-system slack channel. 
 
-![applicant information race template]({{site.baseurl}}/images/action-links.png) 
+![action links]({{site.baseurl}}/images/action-links.png) 
 
 
 ## Guidance
