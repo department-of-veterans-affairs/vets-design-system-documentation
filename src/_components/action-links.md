@@ -23,7 +23,7 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 
 
 ### When to consider something else
-- Do not use an action link for clickable actions, such as “download,” “sign up,” “submit” or “log out.”. Use [buttons](https://design.va.gov/components/buttons) instead. 
+- Do not use an action link for clickable actions, such as “download,” “sign up,” “submit” or “log out.” Use [buttons](https://design.va.gov/components/buttons) instead. 
 - Do not use action links to navigate between form pages. Use default and secondary buttons instead. 
 - Do not use action links to just link to another page or site. If a link does not need to be prominent on the page use a less prominent [link style.](https://design.va.gov/design/typography)
 
