@@ -210,6 +210,5 @@ Below is a list of standardized form labels that appear on VA.gov forms. This li
 |                               | Do you want to apply under the Fully Developed Claim program?                                                                                                                                              |                                                                                                                                                                                                                                        |                                                       |
 |                               |                                                                                                                                                                                                             |                                                                                                                                                                                                                                        |
 
-| Last updated: 3/12/2021
-|
-|
+| Last updated: 3/11/2021
+
