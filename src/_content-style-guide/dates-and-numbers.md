@@ -21,7 +21,7 @@ __Exceptions:__
 - Use 9/11 when it's part of a program name such as the Post-9/11 GI Bill.
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
   - Mon., Tue., Wed., Thu., Fri., Sat., Sun.
-  - Jan., Feb., Mar., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate April, May, June, July.)
+  - Jan., Feb., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate March, April, May, June, July.)
   - In application form fields, we often use the construction: mm/dd/yyyy
 <br>
 
