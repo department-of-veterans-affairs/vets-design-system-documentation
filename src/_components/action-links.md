@@ -7,7 +7,7 @@ draft: true
 
 # Action links
 
-![action links]({{site.baseurl}}/images/action-links-edited.png) 
+![action links]({{site.baseurl}}/images/action-links.png) 
 
 
 ## Guidance
