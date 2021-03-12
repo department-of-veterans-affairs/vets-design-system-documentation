@@ -36,11 +36,11 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 ### How to use other links 
 - If you want to use a link that needs less hierarchy than an action link, we recommend using this active link style. Active link styles can be accompanied by a right facing chevron icon for more emphasis.
 
-![active link style]({{site.baseurl}}/images/active-link-style.png) 
+![active link style]({{site.baseurl}}/images/active-link-style-big.png) 
 
 - For links that need even less hierarchy than an action link or active link style, we recommend using a default link style. 
 
-![default link style]({{site.baseurl}}/images/default-link-style.png) 
+![default link style]({{site.baseurl}}/images/default-link-style-big.png) 
 
 ## Accessibility
 - Action Links must have an `href` attribute. 
