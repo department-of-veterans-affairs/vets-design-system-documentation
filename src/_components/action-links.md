@@ -7,10 +7,6 @@ draft: true
 
 # Action links
 
-**EXPERIMENTAL**
-
-This component is experimental because it needs more research to validate it. Please share any research to the #vsp-design-system slack channel. 
-
 ![action links]({{site.baseurl}}/images/action-links.png) 
 
 
@@ -19,7 +15,10 @@ This component is experimental because it needs more research to validate it. Pl
 ### When to use the Action Link component
 Use an action link when hierarchy requires it. The action link is an  eye-catching link to start a digital service. An action link entices users to take action. Example: Starting a benefit application 
 
-**Note:** Action links will be replacing green primary buttons that link to another page. 
+**Note:** Action links will be replacing green primary buttons that link to another page.
+
+- Use a primary (green) action link to serve the purpose of the primary call to action on a page or a digital start to a service. 
+- Use a default (blue) action link to serve the purpose for when there are multiple action links on a page or if actions do not have hierarchy over each other.
 
 
 ### When to consider something else
@@ -28,9 +27,7 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 - Do not use action links to just link to another page or site. If a link does not need to be prominent on the page see our other link styles below in the “How we link to things” section. 
 
 ### Usability guidance: how to use it
-- Keep action link content short. Start with a verb. For example: “*Apply for health care benefits*” or “*Register for care*”
-- Use a primary (green) action link to serve the purpose of the primary call to action on a page or a digital start to a service. 
-- Use a default (blue) action link to serve the purpose for when there are multiple action links on a page or if actions do not have hierarchy over each other. 
+- Keep action link content short. Start with a verb. For example: “*Apply for health care benefits*” or “*Register for care*” 
 - The icon on the left of the link text will be slightly out of the grid to grab the attention of the user. 
 
 ### How to use other links 
@@ -41,6 +38,7 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 - For links that need even less hierarchy than an action link or active link style, we recommend using a default link style. 
 
 ![default link style]({{site.baseurl}}/images/default-link-style-big.png) 
+- Make sure to underline all text links. Underlining text links is important for low-vision users'accessibility. Exceptions to not underlining links are [side nav](https://design.va.gov/components/sidenav) links. 
 
 ## Accessibility
 - Action Links must have an `href` attribute. 
