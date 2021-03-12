@@ -28,7 +28,8 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 
 ### Usability guidance: how to use it
 - Keep action link content short. Start with a verb. For example: “*Apply for health care benefits*” or “*Register for care*” 
-- The icon on the left of the link text will be slightly out of the grid to grab the attention of the user. 
+- The icon on the left of the link text will be slightly out of the grid to grab the attention of the user.
+- Primary (green) action links and default (blue) action links can exist on the same page. We do not recommend having them side by side. 
 
 ### How to use other links 
 - If you want to use a link that needs less hierarchy than an action link, we recommend using this active link style. Active link styles can be accompanied by a right facing chevron icon for more emphasis.
