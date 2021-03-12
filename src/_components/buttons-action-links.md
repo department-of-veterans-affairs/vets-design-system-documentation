@@ -42,7 +42,9 @@ Use **secondary** buttons for any actions that need to be _downplayed_ against o
 Examples of secondary buttons:
 Buttons in modals 
 Buttons that advance form pages 
-Buttons for editing cards<div class="site-showcase">
+Buttons for editing cards
+
+<div class="site-showcase">
 {% include_relative html/buttons-secondary.html %}
 </div>
 
