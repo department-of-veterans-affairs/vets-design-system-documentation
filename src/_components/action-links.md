@@ -51,7 +51,8 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 - Using links and buttons intentionally results in a more inclusive experience for assistive technology users. Make sure to read both [buttons](https://design.va.gov/components/buttons) and action link guidance to determine what is needed for a page and when each should be used. 
 - Links that point to localized content in another language should have an `hreflang` attribute and a `lang` attribute in the following format:
 
-```<a
+```
+<a>
   className="va-action-link--blue"  
   href="#"
   hreflang="es"
