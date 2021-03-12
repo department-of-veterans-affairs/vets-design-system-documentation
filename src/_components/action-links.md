@@ -52,7 +52,7 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 - Links that point to localized content in another language should have an `hreflang` attribute and a `lang` attribute in the following format:
 
 ```
-<a>
+<a
   className="va-action-link--blue"  
   href="#"
   hreflang="es"
