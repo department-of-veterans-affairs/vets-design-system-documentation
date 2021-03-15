@@ -13,7 +13,7 @@ draft: true
 ## Guidance
 
 ### When to use the Action Link component
-Use an action link when hierarchy requires it. The action link is an  eye-catching link to start a digital service. An action link entices users to take action. Example: Starting a benefit application 
+The action link is an  eye-catching link to start a digital service. An action link entices users to take action. Example: Starting a benefit application 
 
 **Note:** Action links will be replacing green primary buttons that link to another page.
 
