@@ -39,7 +39,7 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 - For links that need even less hierarchy than an action link or active link style, we recommend using a default link style. 
 
 ![default link style]({{site.baseurl}}/images/default-link-style-big.png) 
-- Make sure to underline all text links. Underlining text links is important for low-vision users'accessibility. Exceptions to not underlining links are [side nav](https://design.va.gov/components/sidenav) links. 
+- Make sure to underline all text links. Underlining text links is important for low-vision users' accessibility. Exceptions to not underlining links are [side nav](https://design.va.gov/components/sidenav) links. 
 
 ## Accessibility
 - Action Links must have an `href` attribute. 
