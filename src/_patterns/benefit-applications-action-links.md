@@ -81,7 +81,7 @@ Benefit eligibility or requirements information that is more nuanced than the su
 
 When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an informational alert box on this page. Follow the recommendations governing alert box usage, including
 * Use informational alerts to announce upcoming benefits
-* Use inoformational alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
+* Use informational alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
 
 [View the alert box component](https://design.va.gov/components/alertboxes).
 
