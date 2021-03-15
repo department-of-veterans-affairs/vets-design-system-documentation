@@ -85,11 +85,11 @@ When time sensitive content about a benefit — such as a new benefit being made
 
 [View the alert box component](https://design.va.gov/components/alertboxes).
 
-#### E. How to apply heading and primary call-to-action button or action link
+#### E. How to apply heading and wizard button or action link
 
-A brief heading should precede and call attention to the primary call to action button or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
+A brief heading should precede and call attention to the wizard button or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
-If your page has a wizard, use a primary green button. We reserve primary green buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
 
 If the page does not have a wizard and you want to direct your user to the application flow. Use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
 
