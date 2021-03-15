@@ -32,11 +32,11 @@ Use an action link when hierarchy requires it. The action link is an  eye-catchi
 - Primary (green) action links and default (blue) action links can exist on the same page. We do not recommend having them side by side. 
 
 ### How to use other links 
-- If you want to use a link that needs less hierarchy than an action link, we recommend using this active link style. Active link styles can be accompanied by a right facing chevron icon for more emphasis.
+- If you want to use a link that needs less hierarchy than an action link, we recommend using this active link style. Active link styles can be accompanied by a right facing chevron icon for more emphasis. Active text link style: Source Sans Pro (Bold),  underlined, 16px, #004795
 
 ![active link style]({{site.baseurl}}/images/active-link-style-big.png) 
 
-- For links that need even less hierarchy than an action link or active link style, we recommend using a default link style. 
+- For links that need even less hierarchy than an action link or active link style, we recommend using a default link style. Default text link style: Source Sans Pro (Regular),  underlined, 16px, #004795)
 
 ![default link style]({{site.baseurl}}/images/default-link-style-big.png) 
 - Make sure to underline all text links. Underlining text links is important for low-vision users' accessibility. Exceptions to not underlining links are [side nav](https://design.va.gov/components/sidenav) links. 
