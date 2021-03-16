@@ -12,11 +12,13 @@ draft: true
 ## Default buttons
 
 The default buttons are the most commonly-used button on the site.
+
 Examples of default buttons:
-Buttons in modals 
-Buttons that advance form pages 
-Buttons that submit or save
-Buttons that prompt users to sign in 
+- Buttons in modals
+- Buttons that advance form pages 
+- Buttons that submit or save
+- Buttons that prompt users to sign in 
+
 <div class="site-showcase">
 {% include_relative html/buttons-default.html %}
 </div>
