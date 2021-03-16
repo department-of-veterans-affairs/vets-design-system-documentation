@@ -2,6 +2,7 @@
 layout: default
 sub_section: form-controls
 title: Form controls
+
 anchors:
   - anchor: Text inputs
   - anchor: Select box
@@ -157,3 +158,4 @@ Radio buttons allow users to see all available choices at once and select exactl
 - Options that are listed vertically are easier to read than those that are listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which radio button.
 - If you customize, make sure selections are adequately spaced for touch screens.
 - Use caution if you decide to set a default value. Setting a default value can discourage users from making conscious decisions, seem pushy, or alienate users who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.
+

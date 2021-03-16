@@ -4,7 +4,8 @@ title: Form templates
 anchors:
   - anchor: Applicant information
   - anchor: Contact information
-  - anchor: Direct deposit form
+  - anchor: Dates
+  - anchor: Direct deposit 
 ---
 
 # Form patterns
@@ -94,13 +95,13 @@ Here is the content structure for asking a user for a single address:
 - Additional info component (if applicable)
 - Country select box
 - Street address text input
-- Line 2 text input
-- Line 3 text input (if applicable)
+- Street address line 2 text input
+- Street address line 3 text input (if applicable)
 - City text input
 - State/Province/Region select box
 - Postal code text input
 
-![contact information single address template]({{site.baseurl}}/images/contact-info-single-address.png)
+![contact information single address template]({{site.baseurl}}/images/Address.png)
 
 #### Usability guidance:
 - **If required, include a checkbox for United States military base address.** Under the additional information component, there should be an explanation:
@@ -118,8 +119,8 @@ Here is the content structure for asking a user for multiple addresses:
 - Additional info component (if applicable)
 - Country select box
 - Street address text input
-- Line 2 text input
-- Line 3 text input (if applicable)
+- Street address line 2 text input
+- Street address line 3 text input (if applicable)
 - City text input
 - State/Province/Region select box
 - Postal code text input
@@ -127,11 +128,11 @@ Here is the content structure for asking a user for multiple addresses:
 
 **Mailing address**
 
-![contact information mailing address template]({{site.baseurl}}/images/mailing-address.png)
+![contact information mailing address template]({{site.baseurl}}/images/Mailing-address.png)
 
 **Home address**
 
-![contact information home address template]({{site.baseurl}}/images/contact-info-home-address.png)
+![contact information home address template]({{site.baseurl}}/images/Home-address.png)
 
 #### Usability guidance: 
 - **Add guidance on where users can go to edit their account information on all VA accounts.** Let the user know that when filling out contact information, they will have to edit their profile information. An example message is: *Any updates you make here to your contact information will only apply to this application. To update your contact information for all of your VA accounts, go to your profile page (link to profile).*
@@ -165,6 +166,37 @@ Follow this pattern when you want to ask a user how they’d like to be contacte
 - **This field is dependent on the form.** Method of contact is form-dependent. Work with your stakeholders on whether your form needs a method of contact. 
 - **Give users the opportunity to pick one method of contact.** Provide contact information methods in radio button list form. 
 
+## Dates
+
+### When to use this pattern 
+Follow this pattern whenever you need users to provide a date on a form.
+
+Dates you may need users to provide include:
+- Dates a user knows, like a date of birth or marriage
+- Dates a user can approximate , like February 2021
+- Date ranges, like service history dates 
+
+### Dates a user knows: 
+Use the month/day/year date input component for most dates, particularly memorized dates. 
+
+![date input for memorized dates: month day and year]({{site.baseurl}}/images/date-input.png) 
+
+### Dates a User Can Approximate:
+Use the month/year date input component for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
+
+![date input for approximate dates: month and year]({{site.baseurl}}/images/date-input-month-year.png) 
+ 
+### Date ranges:
+Use  month/day/year inputs or month/year inputs depending on the question being asked. For example: Service history dates
+
+![date ranges: service start date and service end date]({{site.baseurl}}/images/date-ranges.png) 
+
+
+#### Usability guidance:
+- **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date” 
+- **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
+- **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
+ 
 ## Direct deposit form
 
 ### Input state

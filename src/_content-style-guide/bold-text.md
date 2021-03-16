@@ -18,7 +18,7 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 - The different types of accounts through which you can sign in to VA.gov: My HealtheVet, DS Logon, and ID.me. [See this page](https://www.va.gov/health-care/view-test-and-lab-results/)
 - When there’s a “Note:” or “Example:” [See this page](https://www.va.gov/pension/veterans-pension-rates/)
 - The design element or text link we want the user to click on when we’re walking them through online instructions. [See this page](https://www.va.gov/health-care/get-reimbursed-for-travel-pay/)
-- If you are presenting a series of label and value pairs, such as the contact information (address, phone number, etc.) for a location. The label is always bold, not the value, and the label and value are separated by a line break as opposed to a colon. [See this page (click on Caregiver support](https://www.va.gov/pittsburgh-health-care/locations/h-john-heinz-iii-department-of-veterans-affairs-medical-center/)
+- If you are presenting a series of label and value pairs, such as the contact information (address, phone number, etc.) for a location. The label is always bold, not the value, and the label and value are separated by a line break as opposed to a colon. [See this page (click on Caregiver support)](https://www.va.gov/pittsburgh-health-care/locations/h-john-heinz-iii-department-of-veterans-affairs-medical-center/)
 
 **Don’t use bold in these cases**
 
