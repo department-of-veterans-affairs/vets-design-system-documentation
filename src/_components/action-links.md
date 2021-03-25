@@ -6,7 +6,7 @@ title: Action links
 
 # Action links
 
-![action links]({{site.baseurl}}/images/action-links.png) 
+![action links]({{site.baseurl}}/images/action-links-updated.png) 
 
 
 ## Guidance
