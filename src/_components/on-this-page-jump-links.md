@@ -41,6 +41,7 @@ This component is especially helpful for pages with a lot of content, as it help
 ### Usability guidance: how to use it
 - **Keep the first link and its corresponding heading close together,** so users can more easily make the connection that the links correspond to the H2 section titles
 - **The content on the page should have a minimum of two H2 section titles to use the On this page jump link.** 
+- **On this page component pairs well with the Back to top component.** The [Back to top component](https://design.va.gov/components/back-to-top) helps users quickly navigate back to the top of long pages of content.
 
 
 
