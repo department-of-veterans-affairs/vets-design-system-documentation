@@ -112,7 +112,7 @@ We don’t use vanity phone numbers in body copy, as it adds visual noise and is
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
   
-Call us toll free at <a href="tel:+18008271000">800-827-1000</a>.
+Call us toll free at <a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>.
 
 </div>
 </div>
