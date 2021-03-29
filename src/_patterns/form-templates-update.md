@@ -27,9 +27,9 @@ In the case where the response uses checkboxes, below the question, specify that
 
 <img src="{{site.baseurl}}/images/more-than-one-checkbox.png" alt="set of checkboxes" style="max-width: 376px">
 
-We recommend that you **do not** include checkbox options for “all of these” or “none of these” since the user may already select as many or as few boxes as necessary; implied by the text: “select all that apply.” Introducing these options could add unnecessary complexity to interaction design, the codebase, and even to the data model if not correctly handled on the backend.
+We recommend that you **do not** include checkbox options for “all of these” or “none of these” since the user may already select as many or as few boxes as necessary; as stated by the text “select all that apply." Introducing these options could add unnecessary complexity to interaction design, the codebase, and even to the data model if not correctly handled on the backend.
 
-Sometimes, due to specific requirements from the VA, you may have no choice. But to avoid creating a scenario where the user would be presented with an all or none checkbox, consider the following options:
+Sometimes, due to specific requirements from the VA, may have no choice but to include all or none of the above. To avoid creating a scenario where the user would be presented with an all or none checkbox, consider the following options:
 
 - Think about reframing the question
   - You can break the question into two separate questions, for example, start with a response using radio buttons. Then, you can present a set of checkboxes as a conditional follow-up question.
