@@ -341,16 +341,16 @@ When a document has successfully uploaded, the card will have the uploaded file 
 ![file upload review state]({{site.baseurl}}/images/file-upload-review-state.png)
 
 #### Usability guidance:
-**Don’t ask if it does not affect the delivery of a service** You should only ask users to upload documents if absolutely necessary 
-**Avoid error states by listing out what types and sizes of files are accepted** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
-**Validate file uploads**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
+- **Don’t ask if it does not affect the delivery of a service** You should only ask users to upload documents if absolutely necessary 
+- **Avoid error states by listing out what types and sizes of files are accepted** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
+- **Validate file uploads**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
 
 
 **Live application examples:**
 
-[VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
-[VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-[VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
+- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
+- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
 
 
 
