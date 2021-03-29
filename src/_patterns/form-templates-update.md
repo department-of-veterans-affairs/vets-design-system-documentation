@@ -8,6 +8,7 @@ anchors:
   - anchor: Contact information
   - anchor: Dates
   - anchor: Direct deposit 
+  - anchor: File upload
 ---
 
 # Form patterns
@@ -71,13 +72,22 @@ Follow this pattern whenever you need to ask for a user’s name for an applicat
 ### Important numbers: Social security number & VA file number
 Follow this pattern whenever you need to ask for a social security number or VA file number. 
 
+A Social Security Number (SSN) consists of nine digits, commonly written as three fields separated by hyphens: AAA-GG-SSSS. The first three-digit field is called the "area number". The central, two-digit field is called the "group number". The final, four-digit field is called the "serial number".
+A VA file number is how a veteran’s claim is tracked through the compensation system and how documents and other evidence are associated with a veteran’s file in the VA’s electronic database.
+
 ![applicant information important numbers template]({{site.baseurl}}/images/Applicant-info-important-numbers.png) 
+
+![social security number masked]({{site.baseurl}}/images/ssn-masked.png) 
+
 
 #### Usability guidance:
 - **Use a single text input for social security and VA file number.** labelled ‘Social Security number’. Do not use abbreviations, such as SSN.
 - **VA file numbers are not on every form.** If the form asks for a Social Security number and VA file number make sure to note in the VA file number helper text, “must have this or a Social Security number.”
+- **Mask social security number by default** All but the last 4 numbers are masked when input loses focus. When input is in focus, the input shows the valid numbers
+- **Give user flexibility in entering their SSN** A user  can enter the social security number however they like: with spaces, without spaces, dashes, or without dashes. When the user enters their number and the input loses focus, the number will appear masked with dashes. Image below:
+-**Validate Social Security numbers** A validation message for when the Social Security number is required: *Please enter a Social Security number.* A validation message for when a Social Security number is entered incorrectly: *Please enter a valid 9 digit Social Security number (dashes allowed)*
 
-**Note:** The Social Security number pattern is going to be iterated on in the future, specifically masking the numbers for privacy purposes.
+
 
 ### Birth information:
 Follow this pattern whenever you need to ask for a user’s date and place of birth. 
@@ -304,3 +314,43 @@ Mask the routing and account number but leave the 4 last digits. This masking is
 
 #### Call to action
 When the “update account information” button is clicked, the bank account information card will turn into an interactive card in which the review state will revert back into the input state.
+
+## File upload 
+Follow this pattern to help users select and upload a file
+
+Here is the structure for asking a user to upload a file:
+
+- Header 
+- Instructions on what documents to upload
+- Bulleted list of allowed file types and sizes
+- Secondary button to upload 
+
+**Note:** This content will vary depending on what you’re asking the user to upload. Work with your content specialist with how to ask for certain documents.
+
+![file upload input state]({{site.baseurl}}/images/file-upload-input-state.png)
+
+
+### Loading state:
+The upload button will be replaced by a gray card with a [standard progress bar component](https://design.va.gov/components/progress-bars) to indicate the progress of the document upload. The user will see the name of the file, as well as, have the option to cancel the upload. 
+
+![file upload loading state]({{site.baseurl}}/images/file-upload-loading-state.png)
+
+### Review state 
+When a document has successfully uploaded, the card will have the uploaded file name bolded and there will be an option to delete the file. Depending on the type of form, there can be a dropdown of selecting document types. Underneath the card there will be a secondary button to give the user the option of adding more document uploads. 
+
+![file upload review state]({{site.baseurl}}/images/file-upload-review-state.png)
+
+#### Usability guidance:
+**Don’t ask if it does not affect the delivery of a service** You should only ask users to upload documents if absolutely necessary 
+**Avoid error states by listing out what types and sizes of files are accepted** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
+**Validate file uploads**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
+
+
+**Live application examples:**
+
+[VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
+[VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+[VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
+
+
+
