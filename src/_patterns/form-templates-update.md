@@ -341,9 +341,9 @@ When a document has successfully uploaded, the card will have the uploaded file 
 ![file upload review state]({{site.baseurl}}/images/file-upload-review-state.png)
 
 #### Usability guidance:
-- **Don’t ask if it does not affect the delivery of a service** You should only ask users to upload documents if absolutely necessary 
-- **Avoid error states by listing out what types and sizes of files are accepted** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
-- **Validate file uploads**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
+- **Don’t ask if it does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary 
+- **Avoid error states by listing out what types and sizes of files are accepted.** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
+- **Validate file uploads.**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
 
 
 **Live application examples:**
