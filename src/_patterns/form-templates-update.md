@@ -77,7 +77,7 @@ A VA file number is how a veteran’s claim is tracked through the compensation 
 
 ![applicant information important numbers template]({{site.baseurl}}/images/Applicant-info-important-numbers.png) 
 
-![social security number masked]({{site.baseurl}}/images/ssn-masked.png) 
+![social security number masked]({{site.baseurl}}/images/ssn-masked-update.png) 
 
 
 #### Usability guidance:
