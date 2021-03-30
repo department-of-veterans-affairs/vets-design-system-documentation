@@ -313,9 +313,14 @@ Below is a list of optional components that appear on the "After you apply" page
 
 ![after-you-apply-accordions](/images/after-you-apply-accordions.png)
 
-### Call-to-action button
+### Call-to-action button or action link
+
+Use a button for a clickable action on the page. Use the action link if you are navigating the user to another page. 
 
 [View the button component](https://design.va.gov/components/buttons).
+
+[View the action link component](https://design.va.gov/components/action-links).
+
 
 **Disability compensation:**
 
