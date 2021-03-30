@@ -6,8 +6,9 @@ title: Action links
 
 # Action links
 
-![action links]({{site.baseurl}}/images/action-links.png) 
+![action links]({{site.baseurl}}/images/action-links-updated.png) 
 
+[Interact with this component on Storybook](https://design.va.gov/storybook/?path=/docs/components-action-link--page)
 
 ## Guidance
 
@@ -17,7 +18,9 @@ The action link is an  eye-catching link to start a digital service. An action l
 **Note:** Action links will be replacing green primary buttons that link to another page.
 
 - Use a primary (green) action link to serve the purpose of the primary call to action on a page or a digital start to a service. 
-- Use a default (blue) action link to serve the purpose for when there are multiple action links on a page or if actions do not have hierarchy over each other.
+- Use a secondary (blue) action link to serve the purpose for when there are multiple action links on a page or if actions do not have hierarchy over each other.
+- Use a reverse (white) action link when you need to use an action link on a dark background
+
 
 
 ### When to consider something else

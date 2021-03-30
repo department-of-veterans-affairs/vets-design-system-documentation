@@ -80,21 +80,27 @@ Benefit eligibility or requirements information that is more nuanced than the su
 
 When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an informational alert box on this page. Follow the recommendations governing alert box usage, including
 * Use informational alerts to announce upcoming benefits
-* Use inoformational alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
+* Use informational alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
 
 [View the alert box component](https://design.va.gov/components/alertboxes).
 
-#### E. How to apply heading and primary call-to-action button
+#### E. How to apply heading and wizard button or action link
 
-A brief heading should precede and call attention to the primary call to action button. This heading can be followed by an optional single sentence of text or phrase if necessary.
+A brief heading should precede and call attention to the wizard button or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
-The button will lead the user/applicant to one of two places: either the application flow for the benefit or a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
 
-Having a single green button on the page helps the user follow the most logical path. Note: never put more than one green button on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
+If the page does not have a wizard and you want to direct your user to the application flow. Use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
 
-The button can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
+Having a single green button or action link on the page helps the user follow the most logical path. 
+Note: never put more than one green button or action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
+
+The button or action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
 
 [View the button component](https://design.va.gov/components/buttons).
+
+[View the action link component](https://design.va.gov/components/action-links).
+
 
 ##### F.Optional: Wizard pattern for branching eligibility choices
 
@@ -141,10 +147,13 @@ Note: The blue [informational callout](https://design.va.gov/patterns/content-pr
 ### How do I apply?
 The “How do I apply" section lists possible application methods. It should emphasize the optimal path for Veterans, (which may be how to get help from a human instead of online help.) Some common application methods are:
 * Online
-   * Green CTA button
-   The button will lead the user/applicant to one of two places: either the application flow for the benefit or a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+   * Wizard button
+   If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+   * Action link
+   If the page does not have a wizard and you want to direct your user to the application flow. Use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
 
-**Note:** never put more than one green button on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).   
+**Note:** never put more than one green button or green action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).   
+
    
 * By mail
    * Link to the printable application form
@@ -196,9 +205,9 @@ At the top of the introduction page, is a sign in message. There are two differe
 
 **Message when a user is signed in:**
 - Lets applicant know they are signed in and can save their work as they go
-- Green CTA button
+- Primary (green) action link 
 
-![how-to-apply_unauth-message](/images/how-to-apply_auth-message.png)
+![how-to-apply_unauth-message](/images/benefit-apps-action-link.png)
 
 ### Subway map
 [Subway or process map](https://design.va.gov/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
@@ -303,9 +312,14 @@ Below is a list of optional components that appear on the "After you apply" page
 
 ![after-you-apply-accordions](/images/after-you-apply-accordions.png)
 
-### Call-to-action button
+### Call-to-action button or action link
+
+Use a button for a clickable action on the page. Use the action link if you are navigating the user to another page. 
 
 [View the button component](https://design.va.gov/components/buttons).
+
+[View the action link component](https://design.va.gov/components/action-links).
+
 
 **Disability compensation:**
 
