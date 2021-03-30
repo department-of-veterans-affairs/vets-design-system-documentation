@@ -81,11 +81,11 @@ A VA file number is how a veteran’s claim is tracked through the compensation 
 
 
 #### Usability guidance:
-- **Use a single text input for social security and VA file number.** labelled ‘Social Security number’. Do not use abbreviations, such as SSN.
+- **Use a single text input for social security and VA file number.** Label the text input ‘Social Security number.’ Do not use abbreviations, such as SSN.
 - **VA file numbers are not on every form.** If the form asks for a Social Security number and VA file number make sure to note in the VA file number helper text, “must have this or a Social Security number.”
-- **Mask social security number by default** All but the last 4 numbers are masked when input loses focus. When input is in focus, the input shows the valid numbers
-- **Give user flexibility in entering their SSN** A user  can enter the social security number however they like: with spaces, without spaces, dashes, or without dashes. When the user enters their number and the input loses focus, the number will appear masked with dashes. 
-- **Validate Social Security numbers** A validation message for when the Social Security number is required: *Please enter a Social Security number.* A validation message for when a Social Security number is entered incorrectly: *Please enter a valid 9 digit Social Security number (dashes allowed)*
+- **Mask Social Security number by default.** All but the last 4 numbers are masked when input loses focus. When input is in focus, the input shows the valid numbers.
+- **Give user flexibility in entering their Social Security number.** A user  can enter the Social Security number however they like: with spaces, without spaces, dashes, or without dashes. When the user enters their number and the input loses focus, the number will appear masked with dashes. 
+- **Validate Social Security numbers.** A validation message for when the Social Security number is required: *Please enter a Social Security number.* A validation message for when a Social Security number is entered incorrectly: *Please enter a valid 9 digit Social Security number (dashes allowed).*
 
 
 
