@@ -6,7 +6,7 @@ anchors:
   - anchor: Applicant information
   - anchor: Contact information
   - anchor: Dates
-  - anchor: Direct deposit 
+  - anchor: Direct deposit form
   - anchor: File upload
 ---
 
