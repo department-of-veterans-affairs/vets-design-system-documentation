@@ -3,24 +3,26 @@ layout: default
 title: What’s new?
 draft: true
 ---
-
 # What’s new?
 
 <div class="va-introtext">
 The latest news and updates on Formation and the content style guide
 </div>
 
+
 ---
 
 ### March 25, 2021
 
-#### Tools Updates
+###### Tools Updates
 
-**Storybook Launch** 
+##### **Storybook Launch** 
 
-Storybook was launched in January and is ready for use. Storybook is an industry-standard platform we’re using to document and more rapidly develop our component library. To access go to https://design.va.gov/storybook/  
+Storybook was launched in January and is ready for use. Storybook is an industry-standard platform we’re using to document and more rapidly develop our component library. To access go to [Storybook](https://design.va.gov/storybook/  )
 
-**Sketch Library Updates (as of Q1 2021)**
+
+
+##### **Sketch Library Updates (as of Q1 2021)**
 
 - Added action link symbols. Also included action link mini components on the User Flows page. Check the templates page on how the action link works in context 
 - Underlined all link text styles for accessibility purposes
@@ -37,7 +39,7 @@ Storybook was launched in January and is ready for use. Storybook is an industry
 - Added wizard mini pattern to user flows page
 - Added direct deposit templates
 
-**Form Pattern Library Updates** 
+###### **Form Pattern Library Updates** 
 
 Documentation has been added for the following patterns: 
 
@@ -45,33 +47,33 @@ Documentation has been added for the following patterns:
 - Contact Information 
 - Date input
 
-#### Components and Pattern Updates
+###### Components and Pattern Updates
 
-**Accordion Web Component**
+##### **Accordion Web Component**
 
-There is now an Accordion Web Component that is a single source of truth for multiple technical environments. Documentation for the Accordion is on Storybook. https://design.va.gov/storybook/?path=/story/components-va-accordion--default
+There is now an Accordion Web Component that is a single source of truth for multiple technical environments. Documentation for the [Accordion](https://design.va.gov/storybook/?path=/story/components-va-accordion--default) is on Storybook. 
 
 
 
-**Actions links and updated Button documentation**
+##### **Actions links and updated Button documentation**
 
 There is a new Action link component that was created because we needed a more prominent link component to direct sighted users and assistive tech users to start a service.  It is important for assistive technology users to have the correct markup because screen readers always say “link” before links, and “button” before buttons. Using links and buttons intentionally results in a more inclusive experience for assistive technology users We updated guidance on buttons as well and have decided to limit the use of the green button for triggering wizards only. Please read both components’ guidance to determine how to use buttons and links consistently and correctly. 
 
-https://design.va.gov/components/action-links 
+[[Action Links](https://design.va.gov/components/action-links) ]
 
-https://design.va.gov/components/buttons
+[[Buttons](https://design.va.gov/components/buttons)]
 
 
 
-**Direct Deposit** 
+##### **Direct Deposit** 
 
 A standard pattern is available for any team that needs direct deposit functionality in a VA.gov product. Review the [form template documentation](https://mailchi.us19.list-manage.com/track/click?u=6e3ab59c527a3cc8ef560eeb5&id=315bd28117&e=9450ed4eb7) to learn more. Direct deposit form templates are on the “Templates” page of the Sketch library. 
 
-**Responsive list tables**
+##### **Responsive list tables**
 
 Responsive list tables adapt on smaller screens so that each row in the table becomes an item in a list. They are great to use when Veterans are looking up information that is formatted in a table that would best be reformatted as a list on mobile devices, where the width of the screen may not accommodate a wider table. 
 
-The responsive list table can is on the “Styles” page of the Sketch library under the artboard “Content Presentation”You can read documentation for responsive tables at https://design.va.gov/components/tables
+The responsive list table can is on the “Styles” page of the Sketch library under the artboard “Content Presentation”.  You can read documentation for [responsive tables](https://design.va.gov/components/tables)  
 
 ---
 
