@@ -9,12 +9,11 @@ draft: true
 The latest news and updates on Formation and the content style guide
 </div>
 
-
 ---
 
-### March 25, 2021
+### April 5, 2021
 
-###### Tools Updates
+#### Tools Updates
 
 ##### **Storybook Launch** 
 
@@ -47,7 +46,7 @@ Documentation has been added for the following patterns:
 - Contact Information 
 - Date input
 
-###### Components and Pattern Updates
+#### Components and Pattern Updates
 
 ##### **Accordion Web Component**
 
