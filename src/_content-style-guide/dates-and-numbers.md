@@ -43,6 +43,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 
 - Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
 - Include the minutes, even when on the hour.
+- Always use the time zone ET, even if office is in another location (no parentheses, periods, or daylight/standard).
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -58,23 +59,22 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 </div>
 </div>
 </div>
-- Include time zones as CT, ET, MT, or PT (no parentheses, periods, or daylight/standard).
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 
-- In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m. MT, Monday through Friday.
+- In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m. ET, Monday through Friday.
 - Where space is limited, indicate ranges with the – en dash (not the shorter - hyphen) and a space on either side. Don't combine the en dash with from/between sentence construction.
 
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-8:00 a.m. to noon CT
+8:00 a.m. to noon ET
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
-from 8:00 a.m. to noon CT
+from 8:00 a.m. to noon ET
 </div>
 </div>
 </div>
