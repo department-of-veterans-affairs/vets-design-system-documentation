@@ -92,6 +92,8 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 - For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 
+- Always include hours and days of operation when listing a phone number.
+
 - Use "select" to indicate the menu option after dialing a phone number.
 
 Hyperlink all phone numbers, including TTY numbers. Use the following source code for 508 accessibility:
@@ -112,7 +114,8 @@ We don’t use vanity phone numbers in body copy, as it adds visual noise and is
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
   
-Call us toll free at <a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>.
+Call us toll free at <a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>. We're here Monday through Friday,
+8:00 a.m. to 9:00 p.m. ET.
 
 </div>
 </div>
