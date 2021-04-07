@@ -11,12 +11,12 @@ anchors:
 
 # Sketch for Teams at VA
 
-Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. 
+Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can ce added to Sketch for Teams.
 
 ## Get added to Sketch for Teams
 
 1. Go to https://www.sketch.com/signup and create a Sketch account 
-2. Send an email to Kevin Hoffman requesting to be added to the team
+2. In the #design channel in Slack, ping a Sketch for Teams admin (currently Kevin Hoffman or Ryan Thurlwell) requesting to be added
 3. Receive the invite via email, accept the invitation
 4. Boom, you're in! 
 
@@ -58,20 +58,19 @@ We use naming conventions to organize Sketch files in order for other people to 
 
 ### Pages
 
-Pages contain all of the artboards for the project. Each page should have a specifc purpose—iterations on a specific user flow, a prototype, etc.
+Pages contain all of the artboards for the product. Each page should have a specifc purpose—iterations on a specific user flow, a prototype, etc.
 
-Name pages in such a way other designers, engineers, product folks, and stakeholders can understand and navigate them.
+Name pages in such a way other designers, engineers, product folks, and stakeholders can understand and navigate them. Always start version numbering with 3 digits (e.g. v001).
 
 **Name pages like this:**
 
-[Project name - purpose and version number (if needed)]
+[Product name - purpose - focus (optional) - version number)]
 
 **Examples**
 
-- VAOSR - Calendar v2
-- VA-Find-a-form - Prototype 2 - v1
-- VA-CLP - Work in progress
-- VARS - Exploration - Widget
+- VAOSR - Exploration - Calendar widget - v001
+- VAOSR - Prototype - Community care - v001
+- VAOSR - Direct schedule - v001
 
 ### Artboards
 
@@ -79,13 +78,12 @@ Artboard naming conventions should reflect the page they reside just like breadc
 
 **If the page name is**
 
-- VAOSR - Calendar v2
+- VAOSR - Exploration - Calendar widget - v001
 
-**Then artboards might be named**
+**Then artboards would be named**
 
-- VAOSR - Calendar v2 - 01
-- VAOSR - Calendar v2 - 02
-- VAOSR - Calendar v2 - 03
+- VAOSR - Exploration - Calendar widget - 001
+
 
 ## Troubleshooting
 
