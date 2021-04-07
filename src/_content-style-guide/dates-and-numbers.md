@@ -92,7 +92,7 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 - For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 
-- Always include hours and days of operation when listing a phone number.
+- Always include days and hours of operation when listing a phone number.
 
 - Use "select" to indicate the menu option after dialing a phone number.
 
