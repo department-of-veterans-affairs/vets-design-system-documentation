@@ -6,7 +6,7 @@ title: Action links
 
 # Action links
 
-![action links]({{site.baseurl}}/images/action-links-updated.png) 
+<iframe width="100%" height="1000" src="https://design.va.gov/storybook/iframe.html?id=components-action-link--page&viewMode=story"></iframe>
 
 [Interact with this component on Storybook](https://design.va.gov/storybook/?path=/docs/components-action-link--page)
 
