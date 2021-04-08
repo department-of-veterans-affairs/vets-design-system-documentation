@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Form templates
-draft mode: true
+title: Forms draft mode
+draft: true
+tags: Forms, Multi-part forms, Error, Errors, Form templates
 anchors:
   - anchor: All or none of the above
   - anchor: Applicant information
