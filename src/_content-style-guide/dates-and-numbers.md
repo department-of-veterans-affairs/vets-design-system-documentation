@@ -43,7 +43,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 
 - Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
 - Include the minutes, even when on the hour.
-- Always use the time zone ET, even if office is in another location (no parentheses, periods, or daylight/standard).
+- Always use the time zone ET, even if the office is in another location (no parentheses, periods, or daylight/standard).
 
 <div class="do-dont">
 <div class="do-dont__do">
