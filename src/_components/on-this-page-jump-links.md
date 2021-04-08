@@ -4,12 +4,8 @@ title: On this page jump link
 draft: true
 anchors:
   - anchor: How to build it
-  - anchor: When to use the On this page jump link component
-  - anchor: When to consider something else
-  - anchor: Usability guidance: how to use it
   - anchor: Accessibility
-  - anchor: Implementation
-  - anchor: Package information
+  - anchor: Guidance
 ---
 
 # On this page jump link
