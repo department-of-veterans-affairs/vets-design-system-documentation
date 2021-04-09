@@ -14,7 +14,7 @@ Design teams at VA use Sketch for Teams to view, share, and collaborate on our w
 
 ## Get added to Sketch for Teams
 
-1. Go to https://www.sketch.com/signup and create a Sketch account 
+1. Go to [sketch.com](https://www.sketch.com/signup) and create a Sketch account 
 2. In the #design channel in Slack, ping a Sketch for Teams admin (currently Kevin Hoffman or Ryan Thurlwell) requesting to be added
 3. Receive the invite via email, accept the invitation
 4. Boom, you're in! 
