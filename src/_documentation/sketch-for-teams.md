@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Sketch for Teams
-draft: true
 anchors:
   - anchor: Get added to Sketch for Teams
   - anchor: Using Sketch for Teams
