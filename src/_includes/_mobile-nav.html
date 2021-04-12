@@ -170,5 +170,28 @@
     </ul>
   </div>
 
+    <!-- Use the accurate heading level to maintain the document outline -->
+    <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading">
+      <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/experimental-design/" %}true{% else %}false{% endif %}" aria-controls="nav-a7">
+        Experimental Design
+      </button>
+    </p>
+    <div id="nav-a7" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/exerimental-design/" %}false{% else %}true{% endif %}">
+      <ul class="site-mobile-nav-list">
+        <li class="site-mobile-nav-list__item">
+          <a class="site-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/experimental-design">Overview</a>
+        </li>
+        {% for p in site.experimental-design %}
+            {% if p.experimental-design == "default" %}
+            {% unless p.index or p.draft %}
+              <li class="site-mobile-nav-list__item">
+                <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+              </li>
+            {% endunless %}
+            {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
 </div>
 </div>
