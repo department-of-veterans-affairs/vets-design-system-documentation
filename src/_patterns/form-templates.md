@@ -376,6 +376,7 @@ and
 - ‘Add another’ primary button should be placed at the bottom left on cards that allow users to add information.
 <img width="585" alt="Screen Shot 2021-03-30 at 10 30 42 AM" src="https://user-images.githubusercontent.com/72398073/113917840-ba8ff680-97af-11eb-8ed2-0e565647df39.png">
 - ‘Delete file’ secondary button should be placed at the bottom left on cards that allow users to upload files
+
 <img width="476" alt="Screen Shot 2021-03-30 at 10 25 40 AM" src="https://user-images.githubusercontent.com/72398073/113917959-e3b08700-97af-11eb-8a3d-0b1a3983267a.png">
 
 
