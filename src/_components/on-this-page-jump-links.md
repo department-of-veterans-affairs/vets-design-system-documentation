@@ -1,7 +1,6 @@
 ---
 layout: default
 title: On this page jump link
-draft: true
 anchors:
   - anchor: How to build it
   - anchor: Accessibility
