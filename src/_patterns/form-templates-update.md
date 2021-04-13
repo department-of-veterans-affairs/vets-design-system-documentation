@@ -484,7 +484,7 @@ Say ‘Please upload at least one file’
 - [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
 - [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
 
-## List and loop
+## <a id="listandloop"></a>List and loop
 
 Some questions in forms only have one answer, such as "what is the city and state of your birth?" Other questions can have an unknown amount of answers, such as "list all the cities and states you've lived within." List and loop is a pattern that appears in forms when we don't know how many responses to a question a user will provide, but we need to collect a number between 1 and "n," where "n" is all possible responses. This pattern appears in both simple and complex ways.
 
@@ -560,7 +560,7 @@ Here is the structure for service periods:
 ![pension-serviceperiods-3]({{site.baseurl}}/images/list-and-loop3.png)
 
 #### Usability guidance:
-- **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the list and loop pattern in this section above.
+- **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the [list and loop pattern](#listandloop) above.
 - **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there. 
 
 ### Service under another name
