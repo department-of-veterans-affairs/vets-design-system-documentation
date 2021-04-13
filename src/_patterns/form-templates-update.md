@@ -579,7 +579,7 @@ Here is the structure:
 
 #### Usability guidance:
 - **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
-- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. See how the List and Loop pattern works in the section above. 
+- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. You can read more in depth about the [list and loop pattern](#listandloop) above.
 
 ### Reserves and National Guard and Federal Orders
 Follow this pattern whenever you need to ask for a user’s Reserve or National Guard information. Persons in the Reserve or National Guard are not full-time active duty military personnel, although they can be deployed at any time should the need arise. 
