@@ -564,7 +564,7 @@ Here is the structure for service periods:
 - **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there. 
 
 ### Service under another name
-Follow this pattern whenever you need to ask for a user if they served under another name. 
+Follow this pattern whenever you need to ask a user if they served under another name. 
 
 Here is the structure:
 
