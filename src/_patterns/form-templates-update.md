@@ -498,7 +498,7 @@ This diagram outlines the basic components required for each state of a list and
 
 ### Complex list and loops that include multiple inputs, conditionals
 
-Consider the question "What are the addresses of all locations where you served?" The associated inputs, such as street address, city, state, and zip code would need to be repeated for each additional address of services. However, there are going to be changes in fields and form input rules based on whether or not the address is in the United States or international, such as the elimination/variation of "state" fields or variations on how zip codes are validated. You can see an example of a complex list and loop pattern in [service history documentation](##servicehistory)
+Consider the question "What are the addresses of all locations where you served?" The associated inputs, such as street address, city, state, and zip code would need to be repeated for each additional address of services. However, there are going to be changes in fields and form input rules based on whether or not the address is in the United States or international, such as the elimination/variation of "state" fields or variations on how zip codes are validated. You can see an example of a complex list and loop pattern in [service history documentation](#servicehistory)
 
 ## Review section
 Follow this pattern to help users review their information before submitting the form.
@@ -527,7 +527,7 @@ and
 
 <img width="476" alt="Screen Shot 2021-03-30 at 10 25 40 AM" src="https://user-images.githubusercontent.com/72398073/113917959-e3b08700-97af-11eb-8a3d-0b1a3983267a.png">
 
-## <a id="servicehistory"></a>Service history 
+## <a id="servicehistory"></a>Service history
 Follow this pattern to ask a user about their service/military history.
 
 The service history information section consists of:
