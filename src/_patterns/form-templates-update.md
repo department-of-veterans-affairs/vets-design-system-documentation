@@ -498,7 +498,7 @@ This diagram outlines the basic components required for each state of a list and
 
 ### Complex list and loops that include multiple inputs, conditionals
 
-Consider the question "What are the addresses of all locations where you served?" The associated inputs, such as street address, city, state, and zip code would need to be repeated for each additional address of services. However, there are going to be changes in fields and form input rules based on whether or not the address is in the United States or international, such as the elimination/variation of "state" fields or variations on how zip codes are validated. You can see an example of a complex list and loop pattern in the service history documentation around service periods below.
+Consider the question "What are the addresses of all locations where you served?" The associated inputs, such as street address, city, state, and zip code would need to be repeated for each additional address of services. However, there are going to be changes in fields and form input rules based on whether or not the address is in the United States or international, such as the elimination/variation of "state" fields or variations on how zip codes are validated. You can see an example of a complex list and loop pattern in [service history documentation](##servicehistory)
 
 ## Review section
 Follow this pattern to help users review their information before submitting the form.
@@ -527,10 +527,10 @@ and
 
 <img width="476" alt="Screen Shot 2021-03-30 at 10 25 40 AM" src="https://user-images.githubusercontent.com/72398073/113917959-e3b08700-97af-11eb-8a3d-0b1a3983267a.png">
 
-## Service history 
+## <a id="servicehistory"></a>Service history 
 Follow this pattern to ask a user about their service/military history.
 
-- The service history information section consists of:
+The service history information section consists of:
 - Service periods
 - Service under another name
 - Reserves and National Guard
@@ -578,7 +578,7 @@ Here is the structure:
 ![service under another name]({{site.baseurl}}/images/service-name.png)
 
 #### Usability guidance:
-- **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a users response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
+- **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
 - **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. See how the List and Loop pattern works in the section above. 
 
 ### Reserves and National Guard and Federal Orders
@@ -599,7 +599,7 @@ Here is the structure:
   - ‘Name of reserve/National guard unit’ text input
   - Unit address form template (if applicable)
   - Unit phone number (if applicable)
-  - Activation start date input
+  - Service start date input
 
 ![reserves and national guard pension form structure]({{site.baseurl}}/images/reserve-pension.png)
 
