@@ -2,6 +2,7 @@
 layout: default
 title: Experimental Design
 index: true
+draft: true
 ---
 
 # Experimental Design
