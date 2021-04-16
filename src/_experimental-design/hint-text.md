@@ -18,8 +18,16 @@ This should be used in the case where the needed clarification is very short.
 ## As subtext beneath the label
 This should be used in the case where the needed clarification is a little longer, but less than two sentences. These should likely not wrap more than twice for a total of three lines. 
 ### Example:
-Phone number / We will only call you if we need more information about your application
-Utility / For example: electricity, gas, water, sewer
+
+<form class="usa-form">
+  <label for="input-type-text">
+    Phone number 
+    <span class="vads-u-color--gray-medium vads-u-display--block">
+      We will only call you if we need more information about your application
+    </span>
+  </label>
+  <input class="usa-input" name="input-type-text" type="text">
+</form>
 
 ## Within an Additional Info component 
 This should be used in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links.
