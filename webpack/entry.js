@@ -37,6 +37,18 @@ class AdditionalInfoDemo extends Component {
  }
 }
 
+class AdditionalInfoDemoHintText extends Component {
+ render() {
+   return (
+    <div>
+      <AdditionalInfo triggerText={this.props.label}>
+        <span>{this.props.content}</span>
+      </AdditionalInfo>
+    </div>
+   )
+ }
+}
+
 class ModalDemo extends Component {
  render() {
    return (
@@ -81,6 +93,13 @@ if (document.getElementById('reactComponentDemo')){
 
 if (document.getElementById('AdditionalInfoDemo')) {
   render(<AdditionalInfoDemo />, document.getElementById('AdditionalInfoDemo'));
+}
+
+if (document.getElementById('AdditionalInfoDemo-HintText')) {
+  const hintTextElement = document.getElementById('AdditionalInfoDemo-HintText');
+  const label = hintTextElement.dataset.label;
+  const content = hintTextElement.dataset.content;
+  render(<AdditionalInfoDemoHintText label={label} content={content} />, hintTextElement);
 }
 
 if (document.getElementById('ModalDemo')) {
