@@ -1,0 +1,16 @@
+{% comment %}
+  Assume Storybook is running on the default port 6006.
+  `npm run start` will use the default JEKYLL_ENV=development.
+{% endcomment %}
+
+{% if jekyll.environment == "development" %}
+  {% assign storybook_path = "http://localhost:6006" %}
+{% else %}
+  {% assign storybook_path = "/storybook" %}
+{% endif %}
+
+<div class="site-showcase">
+  <iframe width="100%" height="{{ include.height }}" src="{{ storybook_path }}/iframe.html?id={{ include.story }}&viewMode=story"></iframe>
+</div>
+
+[See this in Storybook]({{ storybook_path }}/?path=/docs/{{ include.story }})
