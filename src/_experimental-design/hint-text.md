@@ -9,8 +9,11 @@ When a detailed form input label is not enough to convey the meaning or purpose 
 ## Inline with the label 
 This should be used in the case where the needed clarification is very short.
 ### Example:
-Date (MM/DD/YYY)
-Post-9/11 GI Bill (Chapter 33)
+
+<form class="usa-form">
+  <label for="input-type-text">Street address (20 characters maximum)</label>
+  <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
+</form>
 
 ## As subtext beneath the label
 This should be used in the case where the needed clarification is a little longer, but less than two sentences. These should likely not wrap more than twice for a total of three lines. 
