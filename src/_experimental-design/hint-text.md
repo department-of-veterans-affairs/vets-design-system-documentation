@@ -11,7 +11,7 @@ This should be used in the case where the needed clarification is very short.
 ### Example:
 
 <form class="usa-form">
-  <label for="input-type-text">Street address (20 characters maximum)</label>
+  <label class="vads-u-margin-top--0" for="input-type-text">Street address (20 characters maximum)</label>
   <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
 </form>
 
@@ -20,7 +20,7 @@ This should be used in the case where the needed clarification is a little longe
 ### Example:
 
 <form class="usa-form">
-  <label for="input-type-text">
+  <label class="vads-u-margin-top--0" for="input-type-text">
     Phone number 
     <span class="vads-u-color--gray-medium vads-u-display--block">
       We will only call you if we need more information about your application
