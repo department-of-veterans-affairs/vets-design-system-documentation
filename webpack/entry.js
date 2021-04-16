@@ -41,8 +41,8 @@ class AdditionalInfoDemoHintText extends Component {
  render() {
    return (
     <div>
-      <AdditionalInfo triggerText={this.props.label}>
-        <span>{this.props.content}</span>
+      <AdditionalInfo triggerText="Why is this required?">
+        <p>We need the Veteran’s Social Security number or tax identification number to process the application when it’s submitted online, but it’s not a requirement to apply for the program.</p>
       </AdditionalInfo>
     </div>
    )
@@ -96,10 +96,7 @@ if (document.getElementById('AdditionalInfoDemo')) {
 }
 
 if (document.getElementById('AdditionalInfoDemo-HintText')) {
-  const hintTextElement = document.getElementById('AdditionalInfoDemo-HintText');
-  const label = hintTextElement.dataset.label;
-  const content = hintTextElement.dataset.content;
-  render(<AdditionalInfoDemoHintText label={label} content={content} />, hintTextElement);
+  render(<AdditionalInfoDemoHintText />, document.getElementById('AdditionalInfoDemo-HintText'));
 }
 
 if (document.getElementById('ModalDemo')) {

@@ -43,9 +43,6 @@ This should be used in cases where the needed clarification is long or complex, 
       Veteran’s Social Security number
     </label>
     <input class="usa-input" name="input-type-text" type="text">
-    <div id="AdditionalInfoDemo-HintText"
-      data-label="Why is this required?"
-      data-content="We need the Veteran’s Social Security number or tax identification number to process the application when it’s submitted online, but it’s not a requirement to apply for the program."
-    ></div>
+    <div id="AdditionalInfoDemo-HintText"></div>
   </form>
 </div>
