@@ -22,7 +22,7 @@ jobs:
       - run: gem install bundler:1.16.6
       - run: bundle install
       - run: yarn build
-      - run: bundle exec jekyll build
+      - run: JEKYLL_ENV=production bundle exec jekyll build
         # We are taking these extra steps due to some differences between Jekyll and AWS S3.
         # To access a .html file served from S3, the URL needs to have the .html extension.
         # We're removing the extension to make the URLs prettier.
