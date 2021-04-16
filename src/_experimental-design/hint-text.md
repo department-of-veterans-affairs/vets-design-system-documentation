@@ -46,6 +46,6 @@ This should be used in cases where the needed clarification is long or complex, 
     <div id="AdditionalInfoDemo-HintText"
       data-label="Why is this required?"
       data-content="We need the Veteran’s Social Security number or tax identification number to process the application when it’s submitted online, but it’s not a requirement to apply for the program."
-    >
+    ></div>
   </form>
 </div>
