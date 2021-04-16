@@ -21,9 +21,9 @@ This should be used in the case where the needed clarification is a little longe
 
 <form class="usa-form">
   <label class="vads-u-margin-top--0" for="input-type-text">
-    Phone number 
+    Case or docket number 
     <span class="vads-u-color--gray-medium vads-u-display--block">
-      We will only call you if we need more information about your application
+      You'll find this number on your case documents
     </span>
   </label>
   <input class="usa-input" name="input-type-text" type="text">
