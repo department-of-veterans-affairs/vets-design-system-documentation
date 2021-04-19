@@ -73,7 +73,7 @@ Follow this pattern whenever you need to ask for a user’s name for an applicat
 - **Make sure name fields work for most veterans.** Fields must be long enough to accommodate the names of your users. Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.
 - **First name and last name are required fields.** Middle name and suffix fields are optional. Mother’s maiden name field is not on every form. 
 
-#### Error message templates for names:
+### Error message templates for names:
 
 **When a user doesn’t enter their first name**
 
@@ -102,7 +102,7 @@ A VA file number is how a veteran’s claim is tracked through the compensation 
 - **Give user flexibility in entering their Social Security number.** A user  can enter the Social Security number however they like: with spaces, without spaces, dashes, or without dashes. When the user enters their number and the input loses focus, the number will appear masked with dashes. 
 - **Validate Social Security numbers.** A validation message for when the Social Security number is required: *Please enter a Social Security number.* A validation message for when a Social Security number is entered incorrectly: *Please enter a valid 9 digit Social Security number (dashes allowed).*
 
-#### Error message templates for Social Security number and VA file number:
+### Error message templates for Social Security number and VA file number:
 
 **If nothing is entered for Social Security number**
 
@@ -214,7 +214,7 @@ Here is the content structure for asking a user for multiple addresses:
 - **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 - **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses “Yes”, they can skip the home address form. 
 
-#### Error message templates for addresses:
+### Error message templates for addresses:
 
 **When a user doesn’t enter a street address:**
 
@@ -252,7 +252,7 @@ Follow this pattern when you want to ask for an email address.
 - **If possible, tell users why you want their email address.** Users need to know that the VA won’t abuse their email and which email they’d like to provide. An example message is: *Please enter your contact information so we can get in touch with you if we have questions about your application.*
 - **Validate email addresses.** You should validate email addresses so you can let users know if they have entered one incorrectly. A validation message for when a user forgets the “@”: *Please enter a valid email address.* A validation message for when a user doesn’t use the same email in the “Confirm email address” field: *This email doesn't match the one you entered above.*
 
-#### Error message templates for email addresses
+### Error message templates for email addresses
 
 **When a user doesn’t enter an email address:** 
 
@@ -277,7 +277,7 @@ Follow this pattern when you want to ask for a phone number.
 - **“Mobile phone number” is a required field if the user checks (I would like to receive text messages from VA about my [  ] benefits).** An example of this is on the [VA Form 22-10203 (Application for Edith Nourse Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
 - **Do not use primary or secondary phone numbers as field labels.** Home and mobile phone numbers are more plain language-focused. 
 
-#### Error message templates for phone numbers
+### Error message templates for phone numbers
 
 **When a user doesn’t enter a phone number:**
 
@@ -326,7 +326,7 @@ Use  month/day/year inputs or month/year inputs depending on the question being 
 - **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
 - **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
  
- #### Error message templates for dates
+ ### Error message templates for dates
 
 **If nothing is entered**
 Say 'Please enter a date'
@@ -468,7 +468,7 @@ When a document has successfully uploaded, the card will have the uploaded file 
 - **Avoid error states by listing out what types and sizes of files are accepted.** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
 - **Validate file uploads.**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
 
-#### Error message templates for file upload
+### Error message templates for file upload
 
 **When a user doesn’t upload a required document:**
 
