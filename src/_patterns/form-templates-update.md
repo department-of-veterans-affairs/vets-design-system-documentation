@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Form templates
-draft: true
 anchors:
   - anchor: All or none of the above
   - anchor: Applicant information
