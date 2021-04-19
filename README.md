@@ -22,6 +22,7 @@ Tested using `node` v8.12.0 and `npm` v6.4.1.
     ```
 
 1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
+NOTE: This repo works with Ruby version 2.6.6. Instead of using `brew install ruby`, which will install the latest version, run `brew install ruby@2.6` and make sure when you are adding references to your PATH that you specify version 2.6.6 instead of 3.0.0.
 
 1. Build and start the Jekyll server
     ```

@@ -37,6 +37,18 @@ class AdditionalInfoDemo extends Component {
  }
 }
 
+class AdditionalInfoDemoHintText extends Component {
+ render() {
+   return (
+    <div>
+      <AdditionalInfo triggerText="Why is this required?">
+        <p>We need the Veteran’s Social Security number or tax identification number to process the application when it’s submitted online, but it’s not a requirement to apply for the program.</p>
+      </AdditionalInfo>
+    </div>
+   )
+ }
+}
+
 class ModalDemo extends Component {
  render() {
    return (
@@ -81,6 +93,10 @@ if (document.getElementById('reactComponentDemo')){
 
 if (document.getElementById('AdditionalInfoDemo')) {
   render(<AdditionalInfoDemo />, document.getElementById('AdditionalInfoDemo'));
+}
+
+if (document.getElementById('AdditionalInfoDemo-HintText')) {
+  render(<AdditionalInfoDemoHintText />, document.getElementById('AdditionalInfoDemo-HintText'));
 }
 
 if (document.getElementById('ModalDemo')) {

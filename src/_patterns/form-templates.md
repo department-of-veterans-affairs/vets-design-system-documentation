@@ -8,7 +8,11 @@ anchors:
   - anchor: Dates
   - anchor: Direct deposit 
   - anchor: File upload
+  - anchor: List and loop
+  - anchor: Review section
+  - anchor: Service history
 ---
+
 
 # Form patterns
 
@@ -68,6 +72,17 @@ Follow this pattern whenever you need to ask for a user’s name for an applicat
 - **Make sure name fields work for most veterans.** Fields must be long enough to accommodate the names of your users. Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.
 - **First name and last name are required fields.** Middle name and suffix fields are optional. Mother’s maiden name field is not on every form. 
 
+### Error message templates for names:
+
+**When a user doesn’t enter their first name**
+
+Say  'Please enter a first name'
+
+**When a user doesn’t enter their last name**
+
+Say  'Please enter a last name'
+
+
 ### Important numbers: Social security number & VA file number
 Follow this pattern whenever you need to ask for a social security number or VA file number. 
 
@@ -86,6 +101,23 @@ A VA file number is how a veteran’s claim is tracked through the compensation 
 - **Give user flexibility in entering their Social Security number.** A user  can enter the Social Security number however they like: with spaces, without spaces, dashes, or without dashes. When the user enters their number and the input loses focus, the number will appear masked with dashes. 
 - **Validate Social Security numbers.** A validation message for when the Social Security number is required: *Please enter a Social Security number.* A validation message for when a Social Security number is entered incorrectly: *Please enter a valid 9 digit Social Security number (dashes allowed).*
 
+### Error message templates for Social Security number and VA file number:
+
+**If nothing is entered for Social Security number**
+
+Say 'Please enter a Social Security number'
+
+**When a a Social Security number is entered incorrectly**
+
+Say  'Please enter a valid 9 digit Social Security number (dashes allowed)'
+
+**If nothing is entered for VA file number**
+
+Say  'Please enter a VA file number'
+
+**When a VA file number is entered incorrectly**
+
+Say  'Your VA file number must be between 7 to 9 digits'
 
 
 ### Birth information:
@@ -181,6 +213,36 @@ Here is the content structure for asking a user for multiple addresses:
 - **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 - **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses “Yes”, they can skip the home address form. 
 
+### Error message templates for addresses:
+
+**When a user doesn’t enter a street address:**
+
+Say 'Please enter a street address'
+
+**When a user doesn’t enter a city:**
+
+ Say 'Please enter a city'
+
+**When a user doesn’t enter a state:**
+
+Say  'Please enter a state'
+
+**When a user doesn’t enter a postal code:**
+
+Say  'Please enter a postal code'
+
+**When a postal code is entered incorrectly:**
+
+Say  'Please enter a valid 5- or 9-digit postal code (dashes allowed)'
+
+**When a postal code can’t be correct:**
+
+Say 'Please provide a valid postal code'
+
+**When a user doesn’t select a state or province:**
+
+Say 'Please select a state or province'
+
 ### Email address 
 Follow this pattern when you want to ask for an email address. 
 ![contact information email address template]({{site.baseurl}}/images/contact-info-email-address.png)
@@ -188,6 +250,20 @@ Follow this pattern when you want to ask for an email address.
 #### Usability guidance:
 - **If possible, tell users why you want their email address.** Users need to know that the VA won’t abuse their email and which email they’d like to provide. An example message is: *Please enter your contact information so we can get in touch with you if we have questions about your application.*
 - **Validate email addresses.** You should validate email addresses so you can let users know if they have entered one incorrectly. A validation message for when a user forgets the “@”: *Please enter a valid email address.* A validation message for when a user doesn’t use the same email in the “Confirm email address” field: *This email doesn't match the one you entered above.*
+
+### Error message templates for email addresses
+
+**When a user doesn’t enter an email address:** 
+
+Say  'Please enter an email address'
+
+**When a user doesn’t enter an email address in the correct format:** 
+
+Say  'Please enter an email address using this format: X@X.com'
+
+**When a user doesn’t use the same email in the “Confirm email address” field:** 
+
+Say ‘This email doesn’t match the one you entered above’.
 
 ### Phone numbers 
 Follow this pattern when you want to ask for a phone number.  
@@ -198,7 +274,17 @@ Follow this pattern when you want to ask for a phone number.
 - **Validate phone numbers.** Users must provide at least a 10 digit phone number with or without dashes. Example of acceptable formats: 703-123-4567, 7031234567, 1+703-123-4567. A validation message for when a user forgets to enter the phone number: *Please enter your phone number.* A validation message for when a user’s phone number is too short: *This field should be at least 10 character(s).* 
 - **If a user chooses a home or mobile phone number as their method of contact, phone numbers are required fields.** If a user chooses email or mail as their preferred method then a phone number field won’t be validated. (Note: Method of contact field is form dependent) 
 - **“Mobile phone number” is a required field if the user checks (I would like to receive text messages from VA about my [  ] benefits).** An example of this is on the [VA Form 22-10203 (Application for Edith Nourse Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
-- **Do not use primary or secondary phone numbers as field labels.** Home and mobile phone numbers are more plain language-focused.  
+- **Do not use primary or secondary phone numbers as field labels.** Home and mobile phone numbers are more plain language-focused. 
+
+### Error message templates for phone numbers
+
+**When a user doesn’t enter a phone number:**
+
+Say 'Please enter a phone number'
+
+**If the telephone number is not in the correct format:**
+
+Say  'Please enter a 10-digit phone number (with or without dashes)'
 
 ### Method of contact 
 Follow this pattern when you want to ask a user how they’d like to be contacted. 
@@ -239,6 +325,29 @@ Use  month/day/year inputs or month/year inputs depending on the question being 
 - **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
 - **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
  
+ ### Error message templates for dates
+
+**If nothing is entered**
+Say 'Please enter a date'
+
+**If the date entered can’t be correct**
+Say ‘Please provide a valid date'
+
+**If the date entered is in a month year format and  can’t be correct**
+Say 'Please enter a valid month and year'
+
+**If the year needed to be within a specific range**
+Say 'Please enter a year between [minimum year] and [maximum year]'
+
+**For a date range, if the date must be after another date**
+Say 'To date must be after From date'
+
+**If the date is in the past when it needs to be today or in the future**
+Say 'Please provide a valid current or future date'
+
+**If the date is in the future when it needs to be past date or current date**
+Say  'Please enter a valid current or past date'
+
 ## Direct deposit form
 
 ### Input state
@@ -314,6 +423,20 @@ Mask the routing and account number but leave the 4 last digits. This masking is
 #### Call to action
 When the “update account information” button is clicked, the bank account information card will turn into an interactive card in which the review state will revert back into the input state.
 
+#### Error message templates for direct deposit
+
+**When a user doesn’t enter a bank account number:**
+
+Say 'Please enter a bank account number'
+
+**When a user enters their routing number incorrectly:**
+
+Say 'Please enter a valid nine digit routing number'
+
+**When a user doesn’t enter a routing number:**
+
+Say 'Please enter a routing number'
+
 ## File upload 
 Follow this pattern to help users select and upload a file
 
@@ -344,9 +467,177 @@ When a document has successfully uploaded, the card will have the uploaded file 
 - **Avoid error states by listing out what types and sizes of files are accepted.** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
 - **Validate file uploads.**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
 
+### Error message templates for file upload
+
+**When a user doesn’t upload a required document:**
+
+Say ‘Please upload a file’’
+
+**When there needs to be at least one required document:**
+
+Say ‘Please upload at least one file’
 
 **Live application examples:**
 
 - [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
 - [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
 - [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
+
+## <a id="listandloop"></a>List and loop
+
+Some questions in forms only have one answer, such as "what is the city and state of your birth?" Other questions can have an unknown amount of answers, such as "list all the cities and states you've lived within." List and loop is a pattern that appears in forms when we don't know how many responses to a question a user will provide, but we need to collect a number between 1 and "n," where "n" is all possible responses. This pattern appears in both simple and complex ways.
+
+### Simple list and loop pattern diagram
+
+A simple example of the pattern would include a small number of entry fields, such as one or two text fields in a single line. For a question like "Please list all the cities in which you've lived," a user would list a single city, be given the option to add another city, and could continue adding additional cities until all cities were entered. Then the user would choose to either continue to the next step in the form process or simply submit the completed form if they were at the end of the process.
+
+This diagram outlines the basic components required for each state of a list and loop pattern.
+
+![list-and-loop-diagram]({{site.baseurl}}/images/list-and-loop-contents.png)
+
+### Complex list and loops that include multiple inputs, conditionals
+
+Consider the question "What are the addresses of all locations where you served?" The associated inputs, such as street address, city, state, and zip code would need to be repeated for each additional address of services. However, there are going to be changes in fields and form input rules based on whether or not the address is in the United States or international, such as the elimination/variation of "state" fields or variations on how zip codes are validated. You can see an example of a complex list and loop pattern in [service history documentation](#servicehistory)
+
+## Review section
+Follow this pattern to help users review their information before submitting the form.
+
+Here is the structure for review section:
+- Show the progress bar along with the chapter title: Review application.<img width="546" alt="Screen Shot 2021-03-30 at 10 26 40 AM" src="https://user-images.githubusercontent.com/72398073/113917545-53724200-97af-11eb-8c9f-b22e9d2db0bf.png">
+- Use bordered, multi-selectable accordions
+- When an accordion is open, each section within a chapter should have a secondary “Edit” button in the top right.
+- Underneath the accordions include the note:
+Note: According to federal law, there are criminal penalties, including a fine and/or imprisonment for up to 5 years, for withholding information or for providing incorrect information (See 18 U.S.C. 1001).
+and
+-  Privacy agreement 
+- Button pair: Secondary button labeled “Back” and Default blue button labeled “Submit application”
+- Last saved application date and time in green background color only alert style
+- Finish this application later default link 
+
+**Note:** This content will vary depending on your form. Work with your content specialist or check out the form labels. 
+
+#### Usability guidance:
+- Each chapter should be its own accordion.
+- List chapters in chronological order.
+- ‘File upload’ and ‘Add another’ sections should be in the gray card style.
+- ‘Add another’ primary button should be placed at the bottom left on cards that allow users to add information.
+<img width="585" alt="Screen Shot 2021-03-30 at 10 30 42 AM" src="https://user-images.githubusercontent.com/72398073/113917840-ba8ff680-97af-11eb-8ed2-0e565647df39.png">
+- ‘Delete file’ secondary button should be placed at the bottom left on cards that allow users to upload files
+
+<img width="476" alt="Screen Shot 2021-03-30 at 10 25 40 AM" src="https://user-images.githubusercontent.com/72398073/113917959-e3b08700-97af-11eb-8a3d-0b1a3983267a.png">
+
+## <a id="servicehistory"></a>Service history
+Follow this pattern to ask a user about their service/military history.
+
+The service history information section consists of:
+- Service periods
+- Service under another name
+- Reserves and National Guard
+- Federal Orders
+- POW Status and Severance Pay
+
+**Note:** Service history content varies from form to form. Let this pattern be your starting point and decide what needs to be on your form. 
+
+### Service periods
+Follow this pattern whenever you need to ask for a user’s periods of service in the military.
+
+Here is the structure for service periods:
+
+**Service periods**
+- Heading
+- Branch of service text input 
+- Service start date input 
+- Service end date input
+- Type of service text input (if applicable)
+- Character of service -- this can also be Character of discharge -- text input (if applicable) 
+- ‘Add another service period’ secondary button
+
+![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop1.png)
+
+![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop2.png)
+
+![pension-serviceperiods-3]({{site.baseurl}}/images/list-and-loop3.png)
+
+#### Usability guidance:
+- **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the [list and loop pattern](#listandloop) above.
+- **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there. 
+
+### Service under another name
+Follow this pattern whenever you need to ask a user if they served under another name. 
+
+Here is the structure:
+
+**Service under another name**
+- ‘Did you serve under another name’ radio buttons
+(If user selects yes)
+  - Name form template
+  - ‘Add another name’ secondary button
+- ‘Place of last or anticipated separation from service’ text input
+
+![service under another name]({{site.baseurl}}/images/service-name.png)
+
+#### Usability guidance:
+- **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
+- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. You can read more in depth about the [list and loop pattern](#listandloop) above.
+
+### Reserves and National Guard and Federal Orders
+Follow this pattern whenever you need to ask for a user’s Reserve or National Guard information. Persons in the Reserve or National Guard are not full-time active duty military personnel, although they can be deployed at any time should the need arise. 
+
+Here is the structure:
+
+**Reserves and National Guard** (Disability form structure)
+- Obligation start date input
+- Obligation end date input
+- Unit name text input
+
+![reserves and national guard disability form structure]({{site.baseurl}}/images/reserves-disability.png)
+
+**Reserves and National Guard** (Pension form structure)
+- ‘Are you currently on federal active duty in the National Guard?’ radio buttons
+(If user selects yes)
+  - ‘Name of reserve/National guard unit’ text input
+  - Unit address form template (if applicable)
+  - Unit phone number (if applicable)
+  - Service start date input
+
+![reserves and national guard pension form structure]({{site.baseurl}}/images/reserve-pension.png)
+
+**Federal Orders**  (Disability form structure)
+- ‘Are you currently activated on federal orders?’ radio buttons
+(If user selects yes)
+  - Activation start date input
+  - Expected separation date input (This could also be Anticipated separation date)
+
+![federal orders]({{site.baseurl}}/images/federal-orders.png)
+
+### Prisoner of War (POW)
+Follow this pattern whenever you need to ask for a user’s POW information. Former prisoners of war (POW) are Veterans who, during active military service, were forcibly detained or interned in the line of duty by an enemy government or its agents or a hostile force.
+
+Here is the structure:
+
+**POW Status and Severance Pay**
+- ‘Are you a former POW?’ radio buttons
+(If user selects yes)
+  - Start of confinement date input
+  - End of confinement date input
+- ‘Add another  period’ secondary button (if applicable)
+- ’Have you received any type of severance or separation pay?’ radio buttons
+(If user selects yes)
+  - ‘Pay type’ radio buttons
+  - ‘Amount’ number input
+
+![prisoner of war and severance pay]({{site.baseurl}}/images/pow-status.png)
+
+#### Usability guidance:
+- **Don’t ask if it does not benefit the user experience.** You should only ask users about POW information when absolutely necessary. 
+- **Depending on the form, use the List and Loop pattern to add multiple confinement periods.** An example of adding multiple confinement periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction). 
+
+**Live application examples:**
+
+- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
+- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
+- [VA Form 22-1990N - Application for VA Education Benefits Under the National Call to Service (NCS) Program](https://www.va.gov/education/apply-for-education-benefits/application/1990N/introduction)
+
+
+
