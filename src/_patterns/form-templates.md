@@ -348,7 +348,7 @@ Say 'Please provide a valid current or future date'
 **If the date is in the future when it needs to be past date or current date**
 Say  'Please enter a valid current or past date'
 
-## Direct deposit form
+## Direct deposit
 
 ### Input state
 ![Direct deposit input state]({{site.baseurl}}/images/Direct-deposit-input-state-small.png)
