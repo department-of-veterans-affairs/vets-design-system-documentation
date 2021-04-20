@@ -41,8 +41,9 @@ This should be used in cases where the needed clarification is long or complex, 
   <form class="usa-form">
     <label class="vads-u-margin-top--0" for="input-type-text">
       Veteran’s Social Security number
-      <div id="AdditionalInfoDemo-HintText"></div>
+
     </label>
+    <div id="AdditionalInfoDemo-HintText"></div>
     <input class="usa-input" name="input-type-text" type="text">
   </form>
 </div>
