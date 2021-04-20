@@ -43,7 +43,7 @@ This should be used in cases where the needed clarification is long or complex, 
       Veteran’s Social Security number
 
     </label>
-    <div id="AdditionalInfoDemo-HintText"></div>
+    <div id="AdditionalInfoDemo-HintText" class="vads-u-margin-bottom--1"></div>
     <input class="usa-input" name="input-type-text" type="text">
   </form>
 </div>
