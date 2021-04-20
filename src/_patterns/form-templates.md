@@ -351,7 +351,7 @@ Say  'Please enter a valid current or past date'
 ## Direct deposit
 
 ### Input state
-![Direct deposit input state]({{site.baseurl}}/images/Direct-deposit-input-state-small.png)
+![Direct deposit input state]({{site.baseurl}}/images/direct_deposit_input.png)
 
 ### When to use this pattern 
 Apply this pattern when Veterans are asked to provide banking information to receive funds electronically. 
