@@ -3,6 +3,9 @@ layout: default
 sub_section: Hint text
 title: Hint text
 ---
+Suggested by: Shawna Hein + Becca Walsh, VSA
+
+# Hint text guidance
 
 When a detailed form input label is not enough to convey the meaning or purpose of the input, we have three options for including additional information:
 
