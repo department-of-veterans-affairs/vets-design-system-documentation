@@ -34,7 +34,9 @@ This should be used in the case where the needed clarification is a little longe
 </div>
 
 ## Within an Additional Info component
-This should be used in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links.
+This should be used in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links. 
+
+Note that in general we want to avoid this pattern - if a field needs a lot of explanation, it should ideally be moved to its own page with explanation on the page itself.
 ### Example
 
 <div class="site-showcase">
