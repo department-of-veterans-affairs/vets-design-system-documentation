@@ -72,3 +72,7 @@ exclude:
   - node_modules
   - tmp_remote_assets
   - .sass-cache
+
+# Default for building locally. See configuration files in jekyll-configs/ for
+# environment overrides.
+storybook_path: "http://localhost:6006"
