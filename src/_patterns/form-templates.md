@@ -379,7 +379,7 @@ The bank name text input isn’t required for all direct deposit patterns and de
 The bank routing number text input is required for this form pattern. The routing number must be 9 digits. 
 
 #### Bank account number
-The bank account number text input is required for this form pattern. The maximum bank account number length is 17 digits.
+The bank account number text input is required for this form pattern. 
 
 #### “I don’t want to use direct deposit” checkbox
 ![Direct deposit checkbox]({{site.baseurl}}/images/Direct-deposit-checkbox-small.png)
