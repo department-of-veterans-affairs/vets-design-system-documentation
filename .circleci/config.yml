@@ -13,6 +13,8 @@ jobs:
     parameters:
       bucket:
         type: string
+      envConfig:
+        type: string
 
     steps:
       - checkout
@@ -22,7 +24,7 @@ jobs:
       - run: gem install bundler:1.16.6
       - run: bundle install
       - run: yarn build
-      - run: bundle exec jekyll build
+      - run: bundle exec jekyll build --config _config.yml,<< parameters.envConfig >>
         # We are taking these extra steps due to some differences between Jekyll and AWS S3.
         # To access a .html file served from S3, the URL needs to have the .html extension.
         # We're removing the extension to make the URLs prettier.
@@ -59,6 +61,7 @@ workflows:
       - build-deploy:
           # Set the bucket parameter to be the dev bucket
           bucket: "dev-design.va.gov"
+          envConfig: "jekyll-configs/dev.yml"
           filters:
             branches:
               only: master
@@ -70,6 +73,7 @@ workflows:
       - build-deploy:
           # Set the bucket parameter to be the staging bucket
           bucket: "staging-design.va.gov"
+          envConfig: "jekyll-configs/staging.yml"
           filters:
             branches:
               only: master
@@ -81,6 +85,7 @@ workflows:
       - build-deploy:
           # Set the bucket parameter to be the prod bucket
           bucket: "design.va.gov"
+          envConfig: "jekyll-configs/prod.yml"
           filters:
             branches:
               only: master
