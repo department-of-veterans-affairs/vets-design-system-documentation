@@ -6,7 +6,7 @@ title: Action links
 
 # Action links
 
-{% include storybook-preview.html height=500 story="components-action-link--page" %}
+{% include storybook-preview.html height=560 story="components-action-link--page" %}
 
 ## Guidance
 
