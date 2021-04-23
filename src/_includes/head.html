@@ -6,6 +6,12 @@
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }} {% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
+  {% if site.analytics == "production" %}
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T2ZTDXZ');</script>
+  <!-- End Google Tag Manager -->
+  {% endif %}
+
   {% if page.draft %}
   <meta name=”robots” content=”noindex, nofollow”>
   {% endif %}

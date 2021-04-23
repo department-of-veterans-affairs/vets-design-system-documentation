@@ -1,10 +1,11 @@
-const path = require('path');
+const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./webpack/entry.js",
+  mode: "production",
   output: {
-    path: path.resolve(__dirname, 'src/vendor/javascripts/'),
+    path: path.resolve(__dirname, "src/vendor/javascripts/"),
     filename: "bundle.js"
   },
   module: {
@@ -16,8 +17,7 @@ module.exports = {
         query: {
           presets: ["react", "es2015"]
         }
-      },
+      }
     ]
-  },
-
+  }
 };

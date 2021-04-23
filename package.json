@@ -1,7 +1,7 @@
 {
   "name": "vetsgov-design-system",
   "version": "0.0.1",
-  "description": "Design System for Vets.gov",
+  "description": "Design System for VA.gov",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
