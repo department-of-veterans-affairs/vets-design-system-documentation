@@ -179,10 +179,10 @@
     <div id="nav-a8" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/exerimental-design/" %}false{% else %}true{% endif %}">
       <ul class="site-mobile-nav-list">
         <li class="site-mobile-nav-list__item">
-          <a class="site-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/experimental-design">Overview</a>
+          <a class="site-mobile-nav-list__link {% if page.url contains "experimental-design/index" %} current {% endif %}" href="{{ site.baseurl }}/experimental-design">Overview</a>
         </li>
         {% for p in site.experimental-design %}
-            {% if p.experimental-design == "default" %}
+            {% if p.layout == "default" %}
             {% unless p.index or p.draft %}
               <li class="site-mobile-nav-list__item">
                 <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
