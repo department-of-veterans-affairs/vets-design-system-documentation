@@ -60,3 +60,4 @@ Adding a `data-multiselectable` attribute allows multiple accordions in a set to
 
 * Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
 * Make sure interactive elements within the collapsible region are far enough from the headers that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)
+* Keep accordion content succinct. Accordion height will fluctuate depending on the content. If the accordion has subheading, we do not recommend the subheading to wrap to 2 lines. 
