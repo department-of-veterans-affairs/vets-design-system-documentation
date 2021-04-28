@@ -553,11 +553,9 @@ Here is the structure for service periods:
 - Character of service -- this can also be Character of discharge -- text input (if applicable) 
 - ‘Add another service period’ secondary button
 
-![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop1.png)
+![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop.png)
 
-![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop2.png)
-
-![pension-serviceperiods-3]({{site.baseurl}}/images/list-and-loop3.png)
+![pension-serviceperiods-2]({{site.baseurl}}/images/list-and-loop3.png)
 
 #### Usability guidance:
 - **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the [list and loop pattern](#listandloop) above.
