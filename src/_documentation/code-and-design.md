@@ -1,14 +1,10 @@
 ---
 layout: default
 title: Code and design files
-draft: true
 tags: Downloads
-anchors:
-  - anchor: For developers
-  - anchor: For designers
 ---
 
-# Code and design resources
+# Code and design files
 
 <div class="va-introtext">
 Everything you need to start working with the VA.gov Design System. 
