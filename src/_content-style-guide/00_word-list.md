@@ -536,6 +536,8 @@ Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions
 
 Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
+Veterans Service Officer (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
 Veterans Service Organization (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Service Representative (VSR). “Veterans” is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
