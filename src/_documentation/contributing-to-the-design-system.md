@@ -7,7 +7,7 @@ draft: true
 # Contributing to the design system
 
 <div class="va-introtext">
-How to suggest and retire components.
+How to suggest a new component, update existing components, and retire components.
 </div>
 
 
@@ -43,8 +43,8 @@ Once you have validated your component, provide documentation (usage guidelines)
 
 In order for your component to be codified into the design system, three things must happen: 
 1. Fill out this GitHub template with usability guidance. 
-2. Share any Sketch artifacts with the DST 
-3. Share code with the DST
+2. Share any Sketch artifacts with the Design System Team. 
+3. Share code with the Design System Team. 
 
 ## Update a component
 If you are suggesting a change to something that already exists in the VA.gov Design System, please propose it by commenting on the issue for that component or pattern. You can find issues for all published components in patterns on the individual component and pattern pages, as well as, here (LINK)
