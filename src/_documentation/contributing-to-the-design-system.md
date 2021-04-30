@@ -46,7 +46,7 @@ In order for your component to be codified into the design system, three things 
 2. Share any Sketch artifacts with the Design System Team. 
 3. Share code with the Design System Team. 
 
-## Update a component
+## Suggest an update to an existing component
 If you are suggesting a change to something that already exists in the VA.gov Design System, please propose it by commenting on the issue for that component or pattern. You can find issues for all published components in patterns on the individual component and pattern pages, as well as, here (LINK)
 
 ## Removing a component
