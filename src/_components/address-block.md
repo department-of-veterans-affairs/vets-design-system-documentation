@@ -6,8 +6,4 @@ title: Address block
 
 # Address block
 
-<div class="site-showcase">
-{% include_relative html/address-block.html %}
-</div>
-
-{% include snippet.html content='html/address-block.html' %}
+{% include storybook-preview.html height="300px" story="components-address-block--page" %}
