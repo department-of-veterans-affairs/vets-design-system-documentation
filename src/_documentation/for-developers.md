@@ -19,7 +19,7 @@ How to install and use VA Design System styles and components with your project.
 
 **If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/). Otherwise, proceed below.
 
-How you implement Formation into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. We will have a direct download available in the future.
+How you implement VADS styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. We will have a direct download available in the future.
 
 
 ### Install Formation into your project
@@ -34,18 +34,6 @@ This line installs Formation as a dependency. You can use the compiled files fou
 
 If you would like to use the un-compiled Sass files instead, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
 
-Place the contents of the `dist` folder in your project. In this example, we placed the formation `dist` contents into `assets/formation/`, but you can place them anywhere in your project that you like. The `fonts/` and `img/` directories should remain relative to `formation.min.css`.
-
-```
-project-root
-├── assets/
-├──────├──formation/
-├──────├──────├──────fonts/
-├──────├──────├──────img/
-├──────├──────├──────formation.js
-├──────├──────├──────formation.min-css
-```
-
 If you prefer to change the location of the `fonts/` and `img/` directories relative to `formation.min.css`, set the following variables in your project:
 
 ```
@@ -58,7 +46,7 @@ The example above is what is used on VA.gov, but you can customize this for your
 
 ### Sass functions, variables, and interactive components
 
-If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This depends greatly on your project structure. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
+If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
 
 ## CSS
 
