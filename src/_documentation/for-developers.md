@@ -12,7 +12,7 @@ slug: developers
 # Documentation for developers
 
 <div class="va-introtext">
-How to install Formation and use with your project.
+How to install and use VA Design System styles and components with your project.
 </div>
 
 ## Installation
