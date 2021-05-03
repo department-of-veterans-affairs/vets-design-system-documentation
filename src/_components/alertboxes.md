@@ -21,63 +21,39 @@ Alerts keep users informed of important and sometimes time-sensitive changes.
 ## Informational alert
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
-<div class="site-showcase">
-{% include_relative html/alert-informational.html %}
-</div>
 
-{% include snippet.html content='html/alert-informational.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
+{% include storybook-preview.html story="components-va-alert--default" %}
 
 
 ## Warning alert
 
 Used to warn a user, such as when there are negative consequences, and when something has gone wrong.
 
-<div class="site-showcase">
-{% include_relative html/alert-warning.html %}
-</div>
-
-{% include snippet.html content='html/alert-warning.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
+{% include storybook-preview.html story="components-va-alert--warning" %}
 
 ## Success alert
 
 Used to indicate success.
 
-<div class="site-showcase">
-{% include_relative html/alert-success.html %}
-</div>
-
-{% include snippet.html content='html/alert-success.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
+{% include storybook-preview.html story="components-va-alert--success" %}
 
 ## Error alert
 
 Used when there is a problem or something destructive is about to occur.
 
-<div class="site-showcase">
-{% include_relative html/alert-error.html %}
-</div>
-
-{% include snippet.html content='html/alert-error.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
+{% include storybook-preview.html story="components-va-alert--error" %}
 
 ## Sign in or tool prompt
 
 Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
 
-<div class="site-showcase">
-{% include_relative html/alert-continue.html %}
-</div>
-
-{% include snippet.html content='html/alert-continue.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
-
+{% include storybook-preview.html story="components-va-alert--continue" %}
 
 ## Background color only
 
 Any style of alert box can be made to be background-color only. Use background-color only alerts only for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
-<div class="site-showcase">
-{% include_relative html/alert-background-color.html %}
-</div>
-
-{% include snippet.html content='html/alert-background-color.html' react_component='https://design.va.gov/storybook/?path=/docs/components-alertbox--info' %}
+{% include storybook-preview.html story="components-va-alert--background-only" %}
 
 - Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context.
 - Messaging should be direct and concise. Aim for one or two lines.
