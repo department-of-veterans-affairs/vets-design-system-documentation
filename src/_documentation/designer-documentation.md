@@ -1,6 +1,6 @@
 ---
 layout: default
-title: For designers doc sprint
+title: Designer documentation
 draft: true
 anchors:
   - anchor: Design resources
