@@ -1,11 +1,10 @@
 ---
 layout: default
-title: For designers (draft)
+title: For designers doc sprint
 draft: true
 anchors:
   - anchor: Design resources
   - anchor: How to work with the VA.gov Design System
-slug: designers
 ---
 
 # Documentation for designers
