@@ -71,21 +71,19 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 
 {% include snippet.html content='html/buttons-disabled.html' %}
 
-## Guidance
+## Usability
 
-
-### When to use
+### When to use buttons
 
 * Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.”
 * Use buttons if you want the user to trigger some kind of Javascript functionality by clicking it.
-
 
 ### When to consider something else
 * For navigation between pages of a website, default to using links.
 * For a visually prominent call to action that links to another page, use an [Action link](https://design.va.gov/components/action-links)
 * Buttons vs text links can be confusing. A good rule is if the action changes the url, it should not be a button.
 
-### Usability guidance: how to use it
+### How to use buttons
 * Buttons can be applied to `<button>`, which are used for actions
 * Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the “large button” or the most visually distinct fill color.
 * Make sure buttons look clickable—use color variations to distinguish static, hover and active states.
@@ -97,7 +95,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * At times, consider adding an icon to signal specific actions (“download”, “open in a new window”, etc).
 * Read more about writing for buttons in the [content style guide](https://design.va.gov/content-style-guide/button-labels)
 
-### Accessibility
+## Accessibility considerations
 
 * When using the `<button>` element, always specify a `type`.
 * Buttons should display a visible focus state when users tab to them.
