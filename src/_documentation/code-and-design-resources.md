@@ -38,4 +38,4 @@ Sketch for Teams works very similar to "normal" Sketch, but contains a few big f
 - You receive Library updates automagiclly
 - Developers can inspect any element on a page, anytime
 
-To read more documentation on how to use sketch for teams, check our our [for designers](https://design.va.gov/documentation/designers)
+To read more documentation on how to use sketch for teams, check our our [for designers documentation](https://design.va.gov/documentation/designers) 
