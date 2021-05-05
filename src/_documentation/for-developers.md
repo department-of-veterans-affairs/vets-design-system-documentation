@@ -44,9 +44,34 @@ $formation-font-path: "#{$formation-asset-path}/fonts";
 
 The example above is what is used on VA.gov, but you can customize this for your project.
 
-### Sass functions, variables, and interactive components
+#### Sass functions, variables, and interactive components
 
 If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
+
+### Load the Web Component library
+
+The Design System team is working on developing a library of reusable Web Components that can be used on any HTML page. Once loaded on the page, these can be used like normal HTML tags in JSX without the need to import any additional code.
+
+This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
+
+1. Add the `web-components` dependency to your node/yarn project using `yarn add web-components@https://github.com/department-of-veterans-affairs/component-library.git#wc-vX.Y.Z`. Replace `X.Y.Z` with the [release number you want from the 'Releases' page](https://github.com/department-of-veterans-affairs/component-library/releases).
+1. Import the global CSS file which contains important CSS variables:
+  ```js
+  import 'web-components/dist/component-library/component-library.css';
+  ```
+1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
+  ```js
+  import { applyPolyfills, defineCustomElements } from 'web-components/loader';
+  ```
+1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
+  ```js
+  applyPolyfills().then(() => {
+      defineCustomElements();
+  });
+  ```
+1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
+1. Any Web Components from the Design System (identified by tags prefixed with `<va-*>`) should now work as expected on your page.
+
 
 ## CSS
 
