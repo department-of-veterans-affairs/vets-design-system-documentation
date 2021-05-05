@@ -33,7 +33,7 @@ Pertains to newly received or noteworthy information about the VA.
 
 
 
-## Guidance
+## How to use Promo banners
 
 - Fixed to the bottom of the viewport
 - In Formation's current version, you will need to implement your own dismiss function
