@@ -83,6 +83,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 ### When to consider something else
 * For navigation between pages of a website, default to using links.
 * For a visually prominent call to action that links to another page, use an [Action link](https://design.va.gov/components/action-links)
+* Buttons vs text links can be confusing. A good rule is if the action changes the url, it should not be a button.
 
 ### Usability guidance: how to use it
 * Buttons can be applied to `<button>`, which are used for actions

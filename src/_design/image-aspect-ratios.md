@@ -42,7 +42,7 @@ Aspect ratios for images used on VA.gov
 
     <div class="vads-l-col vads-l-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
       <div class="vads-l-col--12 medium-screen:vads-l-col--3">
-        <div class="site-aspect-ratio site-aspect-ratio--11"></div>
+        <div class="site-aspect-ratio site-aspect-ratio--32"></div>
       </div>
       <div class="vads-l-col--12 medium-screen:vads-l-col--1 medium-screen:vads-u-padding-left--2">
         <span class="site-utility-value">3:2</span>

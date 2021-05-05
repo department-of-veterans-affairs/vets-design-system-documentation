@@ -11,7 +11,7 @@ anchors:
 # Documentation for content writers
 
 
-The purpose of the VA.gov content style guide is to help you create better content, not better bureaucracy. If you’re new to our site, we recommend starting with the [Overview](https://design.va.gov/content-style-guide/) and [Content principles](<https://design.va.gov/content-style-guide/content-principles.html>).
+The purpose of the VA.gov content style guide is to help you create better content, not better bureaucracy. If you’re new to our site, we recommend starting with the [Overview](https://design.va.gov/content-style-guide/) and [Content principles](<https://design.va.gov/content-style-guide/content-principles>).
 
 We’ve also pulled out a few sections below that address common questions. Because this is a living document that will be updated and added to over time, we encourage you to sign up for email updates.
 
@@ -19,13 +19,13 @@ We focus on usage, rather than web policies and governance. If you’re looking 
 
 ## Get started
 
-### [Content principles](https://design.va.gov/content-style-guide/content-principles.html)
+### [Content principles](https://design.va.gov/content-style-guide/content-principles)
 Our content principles guide the voice and tone of everything we write.
 
-### [Word list](https://design.va.gov/content-style-guide/word-list.html)
+### [Word list](https://design.va.gov/content-style-guide/word-list)
 Use our in-house style for common words on VA.gov, so we can use words and labels consistently.
 
-### [Writing for SEO](https://design.va.gov/content-style-guide/seo.html)
+### [Writing for SEO](https://design.va.gov/content-style-guide/seo)
 See basic SEO tips and best practices for making content findable in searches.
 
 ## Sign up for updates

@@ -12,30 +12,21 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 ## Borderless
 
-<div class="site-showcase">
-{% include_relative html/accordions.html %}
-</div>
-
-{% include snippet.html content='html/accordions.html' react_component='https://design.va.gov/storybook/?path=/docs/components-collapsiblepanel--default' %}
+{% include storybook-preview.html story="components-va-accordion--default" %}
 
 ## Bordered
 
-<div class="site-showcase">
-{% include_relative html/accordions-bordered.html %}
-</div>
-
-{% include snippet.html content='html/accordions-bordered.html' react_component='https://design.va.gov/storybook/?path=/docs/components-collapsiblepanel--default' %}
+{% include storybook-preview.html story="components-va-accordion--bordered" %}
 
 ## Multi-selectable
 
 Adding a `data-multiselectable` attribute allows multiple accordions in a set to be open at the same time. This attribute can applied to any style of accordion.
 
-<div class="site-showcase">
-{% include_relative html/accordions-multiselectable.html %}
-</div>
+{% include storybook-preview.html story="components-va-accordion--multi" %}
 
-{% include snippet.html content='html/accordions-multiselectable.html' react_component='https://design.va.gov/storybook/?path=/docs/components-collapsiblepanel--default' %}
+## Subheader
 
+{% include storybook-preview.html story="components-va-accordion--subheader" %}
 
 ## Accessibility
 
@@ -60,3 +51,4 @@ Adding a `data-multiselectable` attribute allows multiple accordions in a set to
 
 * Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
 * Make sure interactive elements within the collapsible region are far enough from the headers that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)
+* Keep accordion content succinct. Accordion height will fluctuate depending on the content. If the accordion has subheading, we do not recommend the subheading to wrap to 2 lines. 
