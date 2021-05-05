@@ -16,7 +16,9 @@ Features are typically used to describe eligibility requirements.
 
 {% include snippet.html content='html/featured-content.html' %}
 
-## Guidance
+## Usability
+
+### How to use the Featured content component 
 
 * Features should use a `h3` or `h4` heading
 * Also supports open text, such as `<p>`, `<ul>`, and `<ol>`, `<strong>`, `<em>`, and `<a>`
