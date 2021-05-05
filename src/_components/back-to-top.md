@@ -6,7 +6,6 @@ title: Back to top
 # Back to top
 The Back to top component helps users quickly navigate back to the top of long pages of content.
 
-<!-- ![Back to top component]({{site.baseurl}}/images/back-to-top.png) -->
 {% include storybook-preview.html story="components-back-to-top--default" %}
 
 ## Accessibility

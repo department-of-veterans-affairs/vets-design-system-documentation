@@ -12,30 +12,21 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 ## Borderless
 
-<div class="site-showcase">
-{% include_relative html/accordions.html %}
-</div>
-
-{% include snippet.html content='html/accordions.html' react_component='https://design.va.gov/storybook/?path=/docs/components-collapsiblepanel--default' %}
+{% include storybook-preview.html story="components-va-accordion--default" %}
 
 ## Bordered
 
-<div class="site-showcase">
-{% include_relative html/accordions-bordered.html %}
-</div>
-
-{% include snippet.html content='html/accordions-bordered.html' react_component='https://design.va.gov/storybook/?path=/docs/components-collapsiblepanel--default' %}
+{% include storybook-preview.html story="components-va-accordion--bordered" %}
 
 ## Multi-selectable
 
 Adding a `data-multiselectable` attribute allows multiple accordions in a set to be open at the same time. This attribute can applied to any style of accordion.
 
-<div class="site-showcase">
-{% include_relative html/accordions-multiselectable.html %}
-</div>
+{% include storybook-preview.html story="components-va-accordion--multi" %}
 
-{% include snippet.html content='html/accordions-multiselectable.html' react_component='https://design.va.gov/storybook/?path=/docs/components-collapsiblepanel--default' %}
+## Subheader
 
+{% include storybook-preview.html story="components-va-accordion--subheader" %}
 
 ## Accessibility
 
