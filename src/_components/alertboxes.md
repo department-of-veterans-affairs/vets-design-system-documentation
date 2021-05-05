@@ -85,15 +85,9 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 - Don’t stack - max is one full-width alert per page at any one time. (If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.)
 - Can be used on homepage or, in true emergencies, on lower-level pages.
 
-
-## Accessibility
-
-Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that isn’t interactive. If the message is interactive, use the `alertdialog` role instead.
-Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-
 ## Usability
 
-### When to use
+### When to use alerts
 
 Use Alert boxes to notify users of the status of the site, which may or may not require a user’s response. This includes errors, warnings, and general site updates. Use Alert boxes to alert users  that something they need needs to be correct or to confirm successful completion of a task.
 
@@ -102,7 +96,7 @@ Use Alert boxes to notify users of the status of the site, which may or may not 
 * On long forms, always include in-line validation in addition to any error messages that appear at the top of the form.
 * If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this is what they want.
 
-### Guidance
+### How to use alerts
 
 When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. A notification of a system change may require more contextual information than a validation message. The message should be concise, in plain language, and adhere to VA.gov voice and tone principles. Don’t use jargon and computer code in the message.
 
@@ -113,5 +107,10 @@ When the user is required to do something in response to an alert, let them know
 * Don’t include notifications that aren’t related to the user’s current goal.
 * Don’t stack alerts one after the other.
 * If the alert appears within the page body content, it should be co-located with relevant content.
+
+## Accessibility considerations
+
+Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that isn’t interactive. If the message is interactive, use the `alertdialog` role instead.
+Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
 
 
