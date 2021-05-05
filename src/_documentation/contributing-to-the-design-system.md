@@ -32,7 +32,20 @@ Fill out a ‘suggest a component ticket’ (LINK). You will need to provide jus
 You will present your work to the Design System Council at an upcoming meeting.
 - Submit request to join an upcoming Design System Council meeting in #vsp-design-system 
 - During the meeting, the Design System Council Working Group will evaluate the request and make a decision. 
-If your component request is approved, the Design System Team will add your component to the Experimental section on design.va.gov and label it "to do."
+If your component request is approved, add your component to the Experimental section on design.va.gov and label it "to do."
+
+What to add to the experimental section: 
+    - Name of component or pattern 
+    - Purpose - Why you needed to create a new component or pattern
+    - Description of component or pattern
+    - Code location, if available
+    - Artifact (mockups, wireframes, or prototypes)
+    - Existing components used (if creating a new pattern)
+    - Guidance (if available)
+
+How to add it to the experimental design section:
+    - Add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design)
+
 
 ### 4. Validate your design
 You or your team need to do research and usability testing to validate your component. 
@@ -42,9 +55,10 @@ If an experimental component sits on design.va.gov for 3 months, it will be remo
 Once you have validated your component, provide documentation (usage guidelines), artifacts (Sketch file, and reusable code) and any links to research. 
 
 In order for your component to be codified into the design system, three things must happen: 
-1. Fill out this GitHub template with usability guidance. 
-2. Share any Sketch artifacts with the Design System Team. 
-3. Share code with the Design System Team. 
+1. Fill out this Documentation GitHub template with usability guidance. 
+ - Please include research validating the usefulness - metrics on why this component tested successfully 
+2. Share any Sketch artifacts with the Design System Team 
+3. Share code with the Design System Team
 
 ## Suggest an update to an existing component
 If you are suggesting a change to something that already exists in the VA.gov Design System, please propose it by commenting on the issue for that component or pattern. You can find issues for all published components in patterns on the individual component and pattern pages, as well as, here (LINK)
