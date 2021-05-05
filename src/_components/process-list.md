@@ -18,14 +18,7 @@ The process list, also known as the subway map, is used in a static informationa
 
 ## Usability
 
-### Guidance
-
-- Can be used to display up to 20 steps.
-- List headings should start with a verb.
-- Make headings clear and concise. You can always write more content in paragraphs and other HTML elements below the heading.
-- Do not stack.
-
-### When to use
+### When to use Process lists
 
 - When users need to see a list of sequential steps.
 - In a multi-step process where the user may need to track progress over an extended period.
@@ -34,3 +27,12 @@ The process list, also known as the subway map, is used in a static informationa
 
 - The list is a checklist.
 - The information is not sequential.
+
+### How to use Process lists
+
+- Can be used to display up to 20 steps.
+- List headings should start with a verb.
+- Make headings clear and concise. You can always write more content in paragraphs and other HTML elements below the heading.
+- Do not stack.
+
+
