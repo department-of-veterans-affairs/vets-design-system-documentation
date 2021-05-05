@@ -3,9 +3,8 @@ layout: default
 title: For developers
 tags: Installation, CSS, CSS architecture
 anchors:
-  - anchor: Installation
-  - anchor: CSS
-  - anchor: Implementing design work
+  - anchor: Using the Design System
+  - anchor: Contributing to the Design System
 slug: developers
 ---
 
@@ -15,7 +14,7 @@ slug: developers
 How to install and use VA Design System styles and components with your project.
 </div>
 
-## Installation
+## Using the Design System
 
 **If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/). Otherwise, proceed below.
 
@@ -73,11 +72,11 @@ This is already handled for the `vets-website` repository. To get our Web Compon
 1. Any Web Components from the Design System (identified by tags prefixed with `<va-*>`) should now work as expected on your page.
 
 
-## CSS
+### CSS
 
 When naming components, be sure to use Formation’s [naming conventions](naming).
 
-### Searchable selectors
+#### Searchable selectors
 
 Many of the features in Sass make it easy to use shorthand to reduce repetitive typing and write cleaner .scss files. However, this makes using search features in GitHub or text editors much more difficult because it is not always clear how the shorthand was written; finding the right query requires guesswork.
 
@@ -116,7 +115,7 @@ Don’t use Sass shorthand features, such as nesting with ampersands often used 
 </div>
 </div>
 
-### Modifying components
+#### Modifying components
 
 Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../utilities) instead of writing new CSS.
 
@@ -126,7 +125,7 @@ Sometimes you will need to modify certain default properties of a component depe
 <div class="do-dont__content" markdown="1">
 Use utility classes to override default properties. This allows components to maintain a well-defined baseline of properties.
 
-#### HTML
+##### HTML
 ```html
 <div class="a-container">
   <div class="a-component vads-u-margin-top--3"></div>
@@ -139,13 +138,13 @@ Use utility classes to override default properties. This allows components to ma
 <div class="do-dont__content" markdown="1">
 Don’t change CSS properties based on a container or other context. This makes baseline properties for components unclear.
 
-#### HTML
+##### HTML
 ```html
 <div class="a-container">
   <div class="a-component"></div>
 </div>
 ```
-#### CSS
+##### CSS
 ```css
 .a-container .a-component {
   margin-top: 24px;
@@ -155,7 +154,7 @@ Don’t change CSS properties based on a container or other context. This makes 
 </div>
 </div>
 
-## Implementing design work
+### Implementing design work
 
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
 
@@ -166,4 +165,11 @@ In general, some rules for implementing design work include:
 - Use the Formation [naming convention](naming)
 - Do not use ID selectors
 
+## Contributing to the Design System
 
+The Design System currently has an ["Experimental" Design System](../experimental-design) with less oversight which VFS application teams can contribute to. In order for a component to be included in the _official_ Design System, here is what we expect to see:
+
+1. Research on why this new addition is useful/necessary.
+1. Guidance on how to use it.
+1. 90%+ test coverage
+1. Any PR should be manageable in size (less than ~500 lines of code)
