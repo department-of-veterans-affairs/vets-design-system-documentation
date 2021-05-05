@@ -17,13 +17,9 @@ Labels draw attention to new or important content.
 {% include snippet.html content='html/labels.html' %}
 
 
-## Accessibility
-
-When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.
-
 ## Usability
 
-### When to use
+### When to use labels
 
 * To draw attention to new, important content on a page that might otherwise be missed.
 * To filter results with one or more tags.
@@ -35,10 +31,13 @@ When labels are used to call out new content that is dynamically loaded onto a p
 * To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.
 * When users already expect content to be updated frequently. For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.
 
-### Guidance
+### How to use labels
 
 * Users frequently confuse labels as buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
 * If your labels are not interactive, be sure to disable hover, focus, and active styles.
 * Don’t mix interactive and static labels on your site. Once you establish a pattern for how labels behave, users will expect that behavior every time.
 * Don’t overdo it — if everything on a page is called out as important, nothing is important.
 
+## Accessibility considerations
+
+When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.
