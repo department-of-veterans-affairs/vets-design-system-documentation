@@ -7,7 +7,14 @@ title: Action links
 # Action links
 Action links guide users to a new page to take an action or to start an online tool or digital service. 
 
-{% include storybook-preview.html height=560 story="components-action-link--page" %}
+**Primary**
+{% include storybook-preview.html height="50px" story="components-action-link--primary" %}
+
+**Secondary**
+{% include storybook-preview.html height="50px" story="components-action-link--secondary" %}
+
+**Reverse**
+{% include storybook-preview.html height="67px" story="components-action-link--reverse" %}
 
 ## Usability 
 Action Links will be replacing green primary buttons that take users to another page. For example: *Apply for education benefits* 
