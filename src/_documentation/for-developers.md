@@ -167,12 +167,13 @@ In general, some rules for implementing design work include:
 
 ## Contributing to the Design System
 
-The two main ways for developers to contribute to the Design System are by writing new components or by modifying existing components. Regardless of which type of contribution you are making, we expect each PR to:
+The two main ways for developers to contribute to the Design System are by writing new components or by modifying existing components. Regardless of which type of contribution you are making, each PR should:
 
 - have at least 90% test coverage
 - have appropriate comments/documentation for functions, classes, etc.
 - have Storybook stories for new features
-- minimize complexity - don't build for features which aren't in the system yet
+- minimize complexity
+- include only the smallest changeset required for the feature or fix
 
 ### New components
 
@@ -188,5 +189,5 @@ In order for a component to be included in the _official_ Design System, we expe
 PRs which make a change to the Design System should be manageable in size (less than ~500 lines of code). This is to meant to:
 
 - Save your time as the developer
-- Help prevent unnecessary things from making their way into the Design System
+- Keep PRs tightly focused
 - Keep the review process short.
