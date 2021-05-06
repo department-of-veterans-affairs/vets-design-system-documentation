@@ -167,9 +167,9 @@ In general, some rules for implementing design work include:
 
 ## Contributing to the Design System
 
-The Design System currently has an ["Experimental" Design System](../experimental-design) with less oversight which VFS application teams can contribute to. In order for a component to be included in the _official_ Design System, here is what we expect to see:
+If you contribute something to the Experimental Design System, we would like for a link to that code (in `vets-website`) to be provided in the documentation.
 
-1. Research on why this new addition is useful/necessary.
-1. Guidance on how to use it.
+In order for a component to be included in the _official_ Design System, here is what we expect to see:
+
 1. 90%+ test coverage
 1. Any PR should be manageable in size (less than ~500 lines of code)
