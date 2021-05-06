@@ -49,7 +49,7 @@ If you would like to use the Sass functions, such as for [spacing](../design/spa
 
 ### Load the Web Component library
 
-The Design System team is working on developing a library of reusable Web Components that can be used on any HTML page. Once loaded on the page, these can be used like normal HTML tags in JSX without the need to import any additional code.
+The Design System team is working on developing a library of reusable Web Components that can be used on any HTML page or React application.
 
 This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
 
