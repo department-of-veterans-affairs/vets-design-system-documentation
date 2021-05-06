@@ -6,4 +6,4 @@ title: Address block
 
 # Address block
 
-{% include storybook-preview.html height="300px" story="components-address-block--page" %}
+{% include storybook-preview.html story="components-address-block--default" %}
