@@ -167,9 +167,26 @@ In general, some rules for implementing design work include:
 
 ## Contributing to the Design System
 
+The two main ways for developers to contribute to the Design System are by writing new components or by modifying existing components. Regardless of which type of contribution you are making, we expect each PR to:
+
+- have at least 90% test coverage
+- have appropriate comments/documentation for functions, classes, etc.
+- have Storybook stories for new features
+- minimize complexity - don't build for features which aren't in the system yet
+
+### New components
+
 If you contribute something to the Experimental Design System, we would like for a link to that code (in `vets-website`) to be provided in the documentation.
 
-In order for a component to be included in the _official_ Design System, here is what we expect to see:
+<!-- This is commented out until we have something to link to.
+In order for a component to be included in the _official_ Design System, we expect [these criteria to be met]().
+-->
 
-1. 90%+ test coverage
-1. Any PR should be manageable in size (less than ~500 lines of code)
+
+### Modifying existing code
+
+PRs which make a change to the Design System should be manageable in size (less than ~500 lines of code). This is to meant to:
+
+- Save your time as the developer
+- Help prevent unnecessary things from making their way into the Design System
+- Keep the review process short.
