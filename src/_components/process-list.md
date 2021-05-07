@@ -10,11 +10,7 @@ title: Process list (subway map)
 The process list, also known as the subway map, is used in a static informational context to describe the process to apply for a benefit or to provide tracking information to a user where they are in a given process.
 </div>
 
-<div class="site-showcase">
-{% include_relative html/process-steps.html %}
-</div>
-
-{% include snippet.html content='html/process-steps.html' %}
+{% include storybook-preview.html height="300px" story="components-process-list--default-story" %}
 
 ## Usability
 
