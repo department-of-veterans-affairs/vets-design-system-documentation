@@ -11,7 +11,7 @@ anchors:
 
 The On this page jump link component summarizes the sections (h2s) at the top of long pages and allows users to jump down the page to the respective section.
 
-{% include storybook-preview.html height="900px" story="components-va-on-this-page--default" %}
+{% include storybook-preview.html height="250px" story="components-va-on-this-page--default" %}
 
 ## Usability
 
