@@ -11,26 +11,19 @@ title: Promo banners
 
 Pertains to content focused on benefits: a new tool, a new online benefit application, etc.
 
-{% include iframe-preview.html src="html/promo-banner-iframe.html" new_tab="true" title="Visibility" height=200 %}
-
-{% include snippet.html content='html/promo-banner.html' react_component='https://design.va.gov/storybook/?path=/docs/components-banners-promobanner--default' %}
+{% include storybook-preview.html width="1200px" story="components-banners-promobanner--default" %}
 
 ## Email signup
 
 Points to email signups for various VA updates / alerts / communications.
 
-{% include iframe-preview.html src="html/promo-banner-envelope-iframe.html" title="Visibility" height=200 %}
-
-{% include snippet.html content='html/promo-banner-envelope.html' react_component='https://design.va.gov/storybook/?path=/docs/components-banners-promobanner--default' %}
+{% include storybook-preview.html width="1200px" story="components-banners-promobanner--email-signup" %}
 
 ## News stories
 
 Pertains to newly received or noteworthy information about the VA.
 
-{% include iframe-preview.html src="html/promo-banner-newspaper-iframe.html" title="Visibility" height=200 %}
-
-{% include snippet.html content='html/promo-banner-newspaper.html' react_component='https://design.va.gov/storybook/?path=/docs/components-banners-promobanner--default' %}
-
+{% include storybook-preview.html width="1200px" story="components-banners-promobanner--news" %}
 
 
 ## How to use Promo banners
