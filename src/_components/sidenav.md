@@ -8,9 +8,7 @@ title: Sidenav
 
 <p class="va-introtext">Hierarchical, vertical navigation to place at the side of a page.</p>
 
-{% include iframe-preview.html src="html/sidenav-iframe.html" new_tab='true' title="Side nav" height=400 %}
-
-{% include snippet.html content='html/sidenav.html' new_tab='html/sidenav-iframe.html'%}
+{% include storybook-preview.html height="550px" story="components-sidenav--default-story" %}
 
 * All elements, including the `<script>` tag in the snippet are required. An update to Formation's script may address this.
 * The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
