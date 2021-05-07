@@ -11,11 +11,7 @@ anchors:
 
 <p class="va-introtext">Tables show tabular data in columns and rows.</p>
 
-<div class="site-showcase">
-{% include_relative html/tables.html %}
-</div>
-
-{% include snippet.html content='html/tables.html' react_component='https://design.va.gov/storybook/?path=/docs/components-table--default' %}
+{% include storybook-preview.html height="300px" story="components-table--default" %}
 
 ## Usability
 * Tables are great at displaying tabular data. Minimal visual styling helps surface this information more easily.
@@ -46,8 +42,7 @@ anchors:
 <p class="va-introtext">List view tables transition into a list view when on smaller screens. A responsive list view works best on tables where veterans are looking up a piece of information. 
 </p>
 
-![responsive-list-table-small]({{site.baseurl}}/images/responsive-list-table-small.png)
-
+{% include storybook-preview.html height="950px" width="400px" story="components-table--default" %}
 
 ## Usability
 
