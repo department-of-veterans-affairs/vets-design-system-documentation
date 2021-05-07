@@ -6,8 +6,4 @@ title: Pagination
 
 # Pagination
 
-<div class="site-showcase">
-{% include_relative html/pagination.html %}
-</div>
-
-{% include snippet.html content='html/pagination.html' react_component='https://design.va.gov/storybook/?path=/docs/components-pagination--default' %}
+{% include storybook-preview.html story="components-pagination--default" %}
