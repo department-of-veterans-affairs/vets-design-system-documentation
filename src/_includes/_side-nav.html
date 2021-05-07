@@ -16,7 +16,8 @@
     </li>
     {% endif %}
   {% endfor %}
-  {% for p in include.section %}
+  {% assign sortedPages = include.section | sort: "order", "last" %}
+  {% for p in sortedPages %}
       {% if p.layout == "default" %}
         {% unless p.index %}
           {% unless p.draft and (p.url != page.url) %}
