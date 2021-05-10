@@ -54,6 +54,10 @@ The Design System team is working on developing a library of reusable Web Compon
 This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
 
 1. Add the `web-components` dependency to your node/yarn project using `yarn add web-components@https://github.com/department-of-veterans-affairs/component-library.git#wc-vX.Y.Z`. Replace `X.Y.Z` with the [release number you want from the 'Releases' page](https://github.com/department-of-veterans-affairs/component-library/releases).
+1. Add this `postinstall` script to `package.json` (this is necessary since the built files aren't committed to the git repo, so we must build them locally):
+  ```json
+  "postinstall": "cd node_modules/web-components && yarn install --production && yarn build"
+  ```
 1. Import the global CSS file which contains important CSS variables:
   ```js
   import 'web-components/dist/component-library/component-library.css';
