@@ -6,6 +6,7 @@ anchors:
   - anchor: How to work with the VA.gov Design System
   - anchor: Design resources
   - anchor: Sketch for teams
+slug: designers
 ---
 
 # Documentation for designers
