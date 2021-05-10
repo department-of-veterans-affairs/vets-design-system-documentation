@@ -36,6 +36,8 @@ At the foundation of all of these recommendations is to apply them in a way that
 ## Meta properties
 
  Writing for SEO is more than having meta title tags, descriptions, and keywords, but we still want to include them and make sure that we're using them consistently.
+ 
+ Each page needs a unique title tag and meta description. Don't use the same title tags and meta descriptions on multiple pages. Duplicate title tags and descriptions are bad for SEO and confuse users on search results.
 
 __Why they're important__
 
