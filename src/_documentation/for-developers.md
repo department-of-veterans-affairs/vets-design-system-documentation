@@ -14,6 +14,11 @@ slug: developers
 How to install and use VA Design System styles and components with your project.
 </div>
 
+## Parts of the Design System
+- [Formation styles](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation)
+- [React components](https://github.com/department-of-veterans-affairs/component-library)
+- [Web components](https://github.com/department-of-veterans-affairs/component-library/tree/web-components)
+
 ## Using the Design System
 
 **If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/). Otherwise, proceed below.
