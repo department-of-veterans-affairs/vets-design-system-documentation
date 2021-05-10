@@ -18,7 +18,7 @@ How to install and use VA Design System styles and components with your project.
 
 **If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/). Otherwise, proceed below.
 
-How you implement VADS styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`.
+How you implement VADS styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the `formation` styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
 
 
 ### Install Formation into your project
