@@ -10,13 +10,8 @@ title: Modal
 
 # Modal
 
-<div class="site-showcase">
-{% include_relative html/modal.html %}
-</div>
+{% include storybook-preview.html height="400px" story="components-modal--default" %}
 
 ## Crisis Line Modal
-<div class="site-showcase">
-  {% include_relative html/crisis-line.html %}
-</div>
 
-{% include snippet.html content='html/crisis-line.html' %}
+{% include storybook-preview.html height="400px" story="components-modal--crisis-line-modal" %}
