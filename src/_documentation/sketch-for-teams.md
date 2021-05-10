@@ -10,7 +10,7 @@ anchors:
 
 # Sketch for Teams at VA
 
-Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can ce added to Sketch for Teams.
+Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can be added to Sketch for Teams.
 
 ## Get added to Sketch for Teams
 
