@@ -76,7 +76,84 @@ This is already handled for the `vets-website` repository. To get our Web Compon
 1. Any Web Components from the Design System (identified by tags prefixed with `<va-*>`) should now work as expected on your page.
 
 
-### CSS
+### Implementing design work
+
+When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
+
+In general, some rules for implementing design work include:
+- Use [spacing units](../design/spacing-units) instead of hard-coding pixel values for margins and padding
+- Use Sass [variables for colors](../design/color-palette) instead of hex codes
+- Discuss reusability of new design components and where is the most appropriate home for CSS and JS
+- Use the Formation [naming convention](naming)
+- Do not use ID selectors
+
+#### Use design system utilities
+
+Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../utilities) instead of writing new CSS.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Use utility classes to override default properties. This allows components to maintain a well-defined baseline of properties.
+
+##### HTML
+```html
+<div class="a-container">
+  <div class="a-component vads-u-margin-top--3"></div>
+</div>
+```
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content" markdown="1">
+Don’t change CSS properties based on a container or other context. This makes baseline properties for components unclear.
+
+##### HTML
+```html
+<div class="a-container">
+  <div class="a-component"></div>
+</div>
+```
+##### CSS
+```css
+.a-container .a-component {
+  margin-top: 24px;
+}
+```
+</div>
+</div>
+</div>
+
+## Contributing to the Design System
+
+The two main ways for developers to contribute to the Design System are by writing new components or by modifying existing components. Regardless of which type of contribution you are making, each PR should:
+
+- have at least 90% test coverage
+- have appropriate comments/documentation for functions, classes, etc.
+- have Storybook stories for new features
+- minimize complexity
+- include only the smallest changeset required for the feature or fix
+
+### New components
+
+If you contribute something to the Experimental Design System, include a link to that code (in `vets-website`) in the documentation.
+
+<!-- This is commented out until we have something to link to.
+In order for a component to be included in the _official_ Design System, we expect [these criteria to be met]().
+-->
+
+
+### Modifying existing code
+
+PRs which make a change to the Design System should be manageable in size (less than ~500 lines of code). This is to meant to:
+
+- Save your time as the developer
+- Keep PRs tightly focused
+- Keep the review process short.
+
+### Writing CSS for the design system
 
 When naming components, be sure to use Formation’s [naming conventions](naming).
 
@@ -119,79 +196,3 @@ Don’t use Sass shorthand features, such as nesting with ampersands often used 
 </div>
 </div>
 
-#### Modifying components
-
-Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../utilities) instead of writing new CSS.
-
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Do</h3>
-<div class="do-dont__content" markdown="1">
-Use utility classes to override default properties. This allows components to maintain a well-defined baseline of properties.
-
-##### HTML
-```html
-<div class="a-container">
-  <div class="a-component vads-u-margin-top--3"></div>
-</div>
-```
-</div>
-</div>
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Don’t</h3>
-<div class="do-dont__content" markdown="1">
-Don’t change CSS properties based on a container or other context. This makes baseline properties for components unclear.
-
-##### HTML
-```html
-<div class="a-container">
-  <div class="a-component"></div>
-</div>
-```
-##### CSS
-```css
-.a-container .a-component {
-  margin-top: 24px;
-}
-```
-</div>
-</div>
-</div>
-
-### Implementing design work
-
-When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
-
-In general, some rules for implementing design work include:
-- Use [spacing units](../design/spacing-units) instead of hard-coding pixel values for margins and padding
-- Use Sass [variables for colors](../design/color-palette) instead of hex codes
-- Discuss reusability of new design components and where is the most appropriate home for CSS and JS
-- Use the Formation [naming convention](naming)
-- Do not use ID selectors
-
-## Contributing to the Design System
-
-The two main ways for developers to contribute to the Design System are by writing new components or by modifying existing components. Regardless of which type of contribution you are making, each PR should:
-
-- have at least 90% test coverage
-- have appropriate comments/documentation for functions, classes, etc.
-- have Storybook stories for new features
-- minimize complexity
-- include only the smallest changeset required for the feature or fix
-
-### New components
-
-If you contribute something to the Experimental Design System, include a link to that code (in `vets-website`) in the documentation.
-
-<!-- This is commented out until we have something to link to.
-In order for a component to be included in the _official_ Design System, we expect [these criteria to be met]().
--->
-
-
-### Modifying existing code
-
-PRs which make a change to the Design System should be manageable in size (less than ~500 lines of code). This is to meant to:
-
-- Save your time as the developer
-- Keep PRs tightly focused
-- Keep the review process short.
