@@ -15,8 +15,7 @@ How to install and use VA Design System styles and components with your project.
 </div>
 
 ## Parts of the Design System
-- [Formation](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation)
-  - Formation is the name of the VA.gov design system styles
+- [Formation](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) is the name of the VA.gov design system styles
 - [React components](https://github.com/department-of-veterans-affairs/component-library)
 - [Web components](https://github.com/department-of-veterans-affairs/component-library/tree/web-components)
 
