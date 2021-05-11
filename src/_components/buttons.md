@@ -18,21 +18,13 @@ Examples of default buttons:
 - Buttons that submit or save
 - Buttons that prompt users to sign in 
 
-<div class="site-showcase">
-{% include_relative html/buttons-default.html %}
-</div>
-
-{% include snippet.html content='html/buttons-default.html' %}
+{% include storybook-preview.html story="components-buttons--default-story" %}
 
 ## Wizard buttons
 
 Use the **wizard** button to trigger a [wizard](https://design.va.gov/patterns/wizards) on a page.
 
-<div class="site-showcase">
-{% include_relative html/buttons-primary.html %}
-</div>
-
-{% include snippet.html content='html/buttons-primary.html' %}
+{% include storybook-preview.html story="components-buttons--primary" %}
 
 ### What to use for primary call to actions that link to another page 
 Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link](https://design.va.gov/components/action-links) documentation for more details. We encourage using green buttons for triggering wizards only. 
@@ -45,31 +37,19 @@ Buttons in modals
 Buttons that advance form pages 
 Buttons for editing cards
 
-<div class="site-showcase">
-{% include_relative html/buttons-secondary.html %}
-</div>
-
-{% include snippet.html content='html/buttons-secondary.html' %}
+{% include storybook-preview.html story="components-buttons--secondary" %}
 
 ## Big buttons
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
 
-<div class="site-showcase">
-{% include_relative html/buttons-big.html %}
-</div>
-
-{% include snippet.html content='html/buttons-big.html' %}
+{% include storybook-preview.html story="components-buttons--big" %}
 
 ## Disabled buttons
 
 Only `<button>` elements can be disabled with a `disabled` attribute. To make a `<a>` element disabled, you must use `.usa-button.usa-button-disabled` on the element.
 
-<div class="site-showcase">
-{% include_relative html/buttons-disabled.html %}
-</div>
-
-{% include snippet.html content='html/buttons-disabled.html' %}
+{% include storybook-preview.html story="components-buttons--disabled" %}
 
 ## Usability
 
