@@ -38,7 +38,7 @@ The website displays HTML and CSS examples of the various components and pattern
 
 ## Sketch for Teams at VA
 
-Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can ce added to Sketch for Teams.
+Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can be added to Sketch for Teams.
 
 ### Get added to Sketch for Teams
 
@@ -120,3 +120,4 @@ Artboard naming conventions should reflect the page they reside just like breadc
 ### Leaving Sketch for Teams
 
 People change projects frequently, and we have a limited number of licenses for Sketch for Teams. If you roll off work at VA or no longer use Sketch for Teams, please email Kevin Hoffman.
+
