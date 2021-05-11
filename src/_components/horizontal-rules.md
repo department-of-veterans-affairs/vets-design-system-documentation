@@ -8,8 +8,4 @@ title: Horizontal rules
 
 ## Stars
 
-<div class="site-showcase">
-{% include_relative html/horizontal-rule-stars.html %}
-</div>
-
-{% include snippet.html content='html/horizontal-rule-stars.html' %}
+{% include storybook-preview.html story="components-horizontal-rules--default-story" %}
