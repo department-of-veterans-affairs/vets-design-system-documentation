@@ -27,11 +27,13 @@ Form controls allow users to enter information.
 
 Text inputs allow people to enter any type of text unless otherwise restricted.
 
-<div class="site-showcase">
-{% include_relative html/text-inputs.html %}
-</div>
+### Text input
 
-{% include snippet.html content='html/text-inputs.html' %}
+{% include storybook-preview.html story="components-textinput--default" %}
+
+### Text area
+
+{% include storybook-preview.html height="300px" story="components-textarea--default" %}
 
 ### Usability
 
@@ -61,11 +63,7 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 A select box allows users to select one option from a list.
 
-<div class="site-showcase">
-{% include_relative html/select-box.html %}
-</div>
-
-{% include snippet.html content='html/select-box.html' %}
+{% include storybook-preview.html story="components-select--default" %}
 
 ### Usability
 
@@ -97,12 +95,7 @@ A select box allows users to select one option from a list.
 
 Allows users to select one or more items from a visible list.
 
-<div class="site-showcase">
-{% include_relative html/checkboxes.html %}
-</div>
-
-{% include snippet.html content='html/checkboxes.html' %}
-
+{% include storybook-preview.html height="200px" story="components-checkboxgroup--default" %}
 
 ### Usability
 
@@ -131,12 +124,7 @@ Allows users to select one or more items from a visible list.
 
 Radio buttons allow users to see all available choices at once and select exactly one option.
 
-<div class="site-showcase">
-{% include_relative html/radio-buttons.html %}
-</div>
-
-{% include snippet.html content='html/radio-buttons.html' %}
-
+{% include storybook-preview.html height="200px" story="components-radiobuttons--default" %}
 
 ### Usability
 
@@ -165,11 +153,7 @@ Radio buttons allow users to see all available choices at once and select exactl
 
 Use the date input component to help users enter a date they would know or a date they can approximate.
 
-<div class="site-showcase">
-{% include_relative html/date.html %}
-</div>
-
-{% include snippet.html content='html/date.html' react_component='https://design.va.gov/storybook/?path=/docs/components-date--default' %}
+{% include storybook-preview.html story="components-date--default" %}
 
 ### Usability
 
