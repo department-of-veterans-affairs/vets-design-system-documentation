@@ -10,11 +10,7 @@ title: Featured content
 
 Features are typically used to describe eligibility requirements.
 
-<div class="site-showcase">
-{% include_relative html/featured-content.html %}
-</div>
-
-{% include snippet.html content='html/featured-content.html' %}
+{% include storybook-preview.html height="250px" story="components-featured-content--default-story" %}
 
 ## Usability
 
