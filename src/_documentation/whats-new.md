@@ -11,6 +11,14 @@ The latest news and updates on Formation and the content style guide
 
 ---
 
+### May 12, 2021
+
+**Content style guide updates**
+
+- Exceptions added to [page titles](https://design.va.gov/content-style-guide/page-titles-and-section-titles#page-titles) topic. 
+- [Title tags](https://design.va.gov/content-style-guide/seo#meta-properties) subtopic updated.
+- Veterans Service Officer added to [word list](https://design.va.gov/content-style-guide/word-list).
+
 ### April 5, 2021
 
 #### Tools Updates
