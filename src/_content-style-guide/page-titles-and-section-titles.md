@@ -25,7 +25,7 @@ Try to keep page titles to 52 characters maximum, with spaces. Use the primary S
 
 **Exceptions:**
 
-- Articles in resources and support, the character limit for the page title is 70. 
+- Articles in resources and support have a page title character limit of 70. 
 - News releases, blog titles, community stories, and local event titles don't have a page title character limit. 
 
 
