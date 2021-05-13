@@ -72,7 +72,7 @@ __Exception—VA medical center websites__
 
 For VA medical centers (VAMC), we format the title tag a little differently. Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
 
-- Format: H1 Page Title \| VAMC Plain Language System Name \|Veterans Affairs
+- Format: H1 Page Title \| VAMC Plain Language System Name \| Veterans Affairs
   - Psychology Internships And Fellowships \| VA Pittsburgh Health Care \| Veterans Affairs
   - H. John Heinz III Department Of Veterans Affairs Medical Center \| VA Pittsburgh Health Care \| Veterans Affairs
 - Use the plain language VAMC system name in the title tags.
