@@ -19,6 +19,8 @@ The latest news and updates on Formation and the content style guide
 - [Title tags](https://design.va.gov/content-style-guide/seo#meta-properties) subtopic updated.
 - Veterans Service Officer added to [word list](https://design.va.gov/content-style-guide/word-list).
 
+---
+
 ### April 5, 2021
 
 #### Tools Updates
