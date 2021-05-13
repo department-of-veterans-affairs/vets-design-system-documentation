@@ -12,7 +12,7 @@ For most terms on VA.gov, we use the standard American English spelling in Merri
 - We may call for using a more plain language version of a word or to define it in body copy.  
 - We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word.
 
-For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webster.com). 
+For terms that are not on this list, refer to [Merriam-Webster](https://www.merriam-webster.com). 
 
 ---
 
