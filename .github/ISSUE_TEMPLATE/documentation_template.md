@@ -1,5 +1,5 @@
 ---
-name: ":pencil: Documentation template"
+name: "\U0001F4DD Documentation template"
 about: A template for writing documentation for components and patterns
 ---
 
