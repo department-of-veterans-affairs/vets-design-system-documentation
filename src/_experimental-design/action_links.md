@@ -2,7 +2,6 @@
 
 layout: default
 title: Action links 
-draft: true
 ---
 
 Suggested by: The Design System Team, VSP
