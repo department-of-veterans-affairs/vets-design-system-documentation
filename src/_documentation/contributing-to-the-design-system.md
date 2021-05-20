@@ -12,21 +12,17 @@ How to suggest a new component, update existing components, and retire component
 
 
 ## Suggest a component
-Anyone can suggest a new component. We currently keep a list of suggestions in the backlog. (LINK)
+Anyone can suggest a new component. We currently keep a list of suggestions in the design system backlog. 
 
-Follow these 5 steps to suggest a component for the Design System.
+Follow these 5 steps to suggest a component for the design system.
 
-### 1. Check the DST backlog 
-Check the backlog to see if your idea has already been suggested.
-If your idea is in the backlog, check the status. 
-- If the status is To Do, go to the GitHub issue to read more information.
-- If the status is In Progress, go to the GitHub issue to find out more.
-- If the status is Experimental, you can see the current version in the Experimental section. 
+### 1. Check the design system backlog 
+Check the [backlog](https://design.va.gov/documentation/backlog) to see if your idea has already been suggested. Take a look at the "proposed" category.
 
 If you do not see your idea in the backlog at all go to step 2.
 
 ### 2. Fill out a request
-Fill out a ‘suggest a component ticket’ (LINK). You will need to provide justification for this new component and any artifacts you might want to include.
+Fill out a [Experimental Design System request ticket] (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md). You will need to provide justification for this new component and any artifacts you might want to include.
 
 ### 3. Present to Design System Council
 You will present your work to the Design System Council at an upcoming meeting.
@@ -35,13 +31,13 @@ You will present your work to the Design System Council at an upcoming meeting.
 If your component request is approved, add your component to the Experimental section on design.va.gov and label it "to do."
 
 What to add to the experimental section: 
-    - Name of component or pattern 
-    - Purpose - Why you needed to create a new component or pattern
-    - Description of component or pattern
-    - Code location, if available
-    - Artifact (mockups, wireframes, or prototypes)
-    - Existing components used (if creating a new pattern)
-    - Guidance (if available)
+ - Name of component or pattern 
+ - Purpose - Why you needed to create a new component or pattern
+ - Description of component or pattern
+ - Code location, if available
+ - Artifact (mockups, wireframes, or prototypes)
+ - Existing components used (if creating a new pattern)
+ - Guidance (if available)
 
 How to add it to the experimental design section:
     - Add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design)
@@ -49,19 +45,22 @@ How to add it to the experimental design section:
 
 ### 4. Validate your design
 You or your team need to do research and usability testing to validate your component. 
-If an experimental component sits on design.va.gov for 3 months, it will be removed. 
+If an experimental component sits on design.va.gov for 6 months, it will be removed. 
 
 ### 5. Document and submit
 Once you have validated your component, provide documentation (usage guidelines), artifacts (Sketch file, and reusable code) and any links to research. 
 
 In order for your component to be codified into the design system, three things must happen: 
-1. Fill out this Documentation GitHub template with usability guidance. 
+1. Fill out this [Documentation GitHub template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=documentation_template.md) with usability guidance. 
  - Please include research validating the usefulness - metrics on why this component tested successfully 
 2. Share any Sketch artifacts with the Design System Team 
 3. Share code with the Design System Team
 
-## Suggest an update to an existing component
-If you are suggesting a change to something that already exists in the VA.gov Design System, please propose it by commenting on the issue for that component or pattern. You can find issues for all published components in patterns on the individual component and pattern pages, as well as, here (LINK)
+## Suggest an update to an existing component or pattern
+If you are suggesting a change to something that already exists in the VA.gov Design System, please fill out this [Github ticket] (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new)
+
+## Suggest an update to documentation
+For requesting more documentation or updating a piece of documentation on design.va.gov, please fill out a [documentation request](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=documentation_request.md)
 
 ## Removing a component
 
