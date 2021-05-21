@@ -376,7 +376,7 @@ presume: Use "conclude," as in "we will conclude your condition is linked to ser
 presumptive disability: Use "health problem" and reference when needed for clarity. 
 - **Like this:** A health problem (called presumptive disability) that we've concluded is likely caused by....
 
-prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
+prisoner of war (POW): Don't capitalize per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
 - **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
 process (a claim): Use "review." Example: We'll review your disability claim.
@@ -434,7 +434,7 @@ service-connected disability: In most cases, add the definition separately as an
 
 Service-Disabled Veterans Insurance (S-DVI). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-service member: Two words, lowercase. This follows the DOD style guide as well as OPIA guidance. 
+service member: Two words, lowercase. This follows the Department of Defense style guide as well as guidance from the VA Office of Public and Intergovernmental Affairs (OPIA). 
 - **Exception:** When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
 
 Servicemembers’ Group Life Insurance (SGLI). Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
