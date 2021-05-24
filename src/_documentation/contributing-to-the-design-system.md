@@ -27,15 +27,16 @@ Fill out a [Experimental Design System request ticket](https://github.com/depart
 ### 3. Present to Design System Council
 You will present your work to the Design System Council at an upcoming meeting.
 - Submit request to join an upcoming Design System Council meeting in #vsp-design-system 
-- During the meeting, the Design System Council Working Group will evaluate the request and make a decision. 
-If your component request is approved, add your component to the Experimental section on design.va.gov and label it "to do."
+- During the meeting, the Design System Council will evaluate the request and make a decision. 
+If your component request is approved, add your component to the [Experimental section](https://design.va.gov/experimental-design/) on design.va.gov.
 
 What to add to the experimental section: 
  - Name of component or pattern 
+ - Who is suggesting it (team, contract)
  - Purpose - Why you needed to create a new component or pattern
  - Description of component or pattern
  - Code location, if available
- - Artifact (mockups, wireframes, or prototypes)
+ - Artifacts (mockups, wireframes, or prototypes)
  - Existing components used (if creating a new pattern)
  - Guidance (if available)
 
