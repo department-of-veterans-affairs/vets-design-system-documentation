@@ -22,7 +22,7 @@ Check the [backlog](https://design.va.gov/documentation/backlog) to see if your 
 If you do not see your idea in the backlog at all go to step 2.
 
 ### 2. Fill out a request
-Fill out a [Experimental Design System request ticket] (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md). You will need to provide justification for this new component and any artifacts you might want to include.
+Fill out a [Experimental Design System request ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md). You will need to provide justification for this new component and any artifacts you might want to include.
 
 ### 3. Present to Design System Council
 You will present your work to the Design System Council at an upcoming meeting.
@@ -57,7 +57,7 @@ In order for your component to be codified into the design system, three things 
 3. Share code with the Design System Team
 
 ## Suggest an update to an existing component or pattern
-If you are suggesting a change to something that already exists in the VA.gov Design System, please fill out this [Github ticket] (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new)
+If you are suggesting a change to something that already exists in the VA.gov Design System, please fill out this [Github ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new)
 
 ## Suggest an update to documentation
 For requesting more documentation or updating a piece of documentation on design.va.gov, please fill out a [documentation request](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=documentation_request.md)
