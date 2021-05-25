@@ -52,7 +52,7 @@ Many Veterans refer to certain forms by their more common, casual name. For exam
 
 ## Common government forms
 
-For VA forms not listed here, search our [VA forms library](https://www.va.gov/vaforms/). DD forms are Department of Defense forms.
+For VA forms not listed here, go to [Find a VA form](https://www.va.gov/find-forms/). DD forms are Department of Defense forms.
 
 | Form number                      | Form name                                                    |
 | -------------------------------- | ------------------------------------------------------------ |

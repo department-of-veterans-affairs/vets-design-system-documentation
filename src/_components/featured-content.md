@@ -10,13 +10,11 @@ title: Featured content
 
 Features are typically used to describe eligibility requirements.
 
-<div class="site-showcase">
-{% include_relative html/featured-content.html %}
-</div>
+{% include storybook-preview.html height="250px" story="components-featured-content--default-story" %}
 
-{% include snippet.html content='html/featured-content.html' %}
+## Usability
 
-## Guidance
+### How to use the Featured content component 
 
 * Features should use a `h3` or `h4` heading
 * Also supports open text, such as `<p>`, `<ul>`, and `<ol>`, `<strong>`, `<em>`, and `<a>`

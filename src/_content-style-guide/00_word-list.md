@@ -12,7 +12,7 @@ For most terms on VA.gov, we use the standard American English spelling in Merri
 - We may call for using a more plain language version of a word or to define it in body copy.  
 - We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word.
 
-For terms that are not on this list, refer to [Merriam-Webster](www.merriam-webster.com). 
+For terms that are not on this list, refer to [Merriam-Webster](https://www.merriam-webster.com). 
 
 ---
 
@@ -376,7 +376,7 @@ presume: Use "conclude," as in "we will conclude your condition is linked to ser
 presumptive disability: Use "health problem" and reference when needed for clarity. 
 - **Like this:** A health problem (called presumptive disability) that we've concluded is likely caused by....
 
-prisoner of war (POW): Don't capitalize per the [DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
+prisoner of war (POW): Don't capitalize per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
 - **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
 process (a claim): Use "review." Example: We'll review your disability claim.
@@ -434,7 +434,7 @@ service-connected disability: In most cases, add the definition separately as an
 
 Service-Disabled Veterans Insurance (S-DVI). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-service member: Two words, lowercase. This follows the DOD style guide as well as OPIA guidance. 
+service member: Two words, lowercase. This follows the Department of Defense style guide as well as guidance from the VA Office of Public and Intergovernmental Affairs (OPIA). 
 - **Exception:** When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
 
 Servicemembers’ Group Life Insurance (SGLI). Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
@@ -535,6 +535,8 @@ Veterans Job Bank: "Veterans" is plural.
 Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions in body copy instead of the full formal term.
 
 Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
+Veterans Service Officer (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Service Organization (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 

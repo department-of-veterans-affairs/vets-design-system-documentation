@@ -36,6 +36,8 @@ At the foundation of all of these recommendations is to apply them in a way that
 ## Meta properties
 
  Writing for SEO is more than having meta title tags, descriptions, and keywords, but we still want to include them and make sure that we're using them consistently.
+ 
+ Each page needs a unique title tag and meta description. Don't use the same title tags and meta descriptions on multiple pages. Duplicate title tags and descriptions are bad for SEO and confuse users on search results.
 
 __Why they're important__
 
@@ -52,9 +54,12 @@ Title tags are HTML elements that are displayed in browsers and on search engine
 
 
 - Format: H1 Page Title \| Veterans Affairs
+- Use initial caps for title tags
 
-- Keep title tags to 70 characters maximum (with spaces) to display properly. If the H1 is too long, truncate to fit but always end with "\| Veterans Affairs"
--  Use initial caps for title tags
+__Additional guidance__
+
+For benefit hub pages, we keep title tags to 70 characters maximum (with spaces), so it displays best in organic search results. If the H1 is too long, we truncate it in the meta title tag to fit while still including "\| Veterans Affairs" at the end. Note: We don't truncate the H1 in title tags for content types that don't have a page title character limit like news releases and resources and support articles.
+
 
 
 
@@ -67,9 +72,9 @@ __Exception—VA medical center websites__
 
 For VA medical centers (VAMC), we format the title tag a little differently. Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
 
-- Format:  VAMC Plain Language System Name \| H1 Page Title \| Veterans Affairs
-  - VA Pittsburgh Health Care \| Medical Records Office \| Veterans Affairs
-  - VA Pittsburgh Health Care \| H. John Heinz III Department Of Veterans Affairs Medical Center \| Veterans Affairs
+- Format: H1 Page Title \| VAMC Plain Language System Name \| Veterans Affairs
+  - Psychology Internships And Fellowships \| VA Pittsburgh Health Care \| Veterans Affairs
+  - H. John Heinz III Department Of Veterans Affairs Medical Center \| VA Pittsburgh Health Care \| Veterans Affairs
 - Use the plain language VAMC system name in the title tags.
 - On VA medical centers, we don't apply a character limit for the meta title. 
 
