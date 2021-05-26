@@ -10,7 +10,7 @@ The form confirmation page gives users information about what they can expect af
 
 Our current confirmation pages vary in format and content. Below are some of the default components on our current confirmation pages. Teams should tailor the layout and content as needed based on the benefit type and/or stakeholder feedback.
 
-![form confirmation template]({{site.baseurl}}/Form-confirmation-mini-template.png) 
+![form confirmation template]({{site.baseurl}}/images/Form-confirmation-mini-template.png) 
 
 The form confirmation page consists of:
 
@@ -44,7 +44,7 @@ We’ll send an email confirming your order to **email.va.gov.**
 
 ## Print this page pattern 
 
-![print this page pattern]({{site.baseurl}}/print-this-page.png) 
+![print this page pattern]({{site.baseurl}}/images/print-this-page.png) 
 
 The print this page pattern consists of the [Featured content component](https://design.va.gov/components/featured-content), content, and a “Print this page” default blue button. 
 
@@ -70,12 +70,12 @@ Some examples of other content or questions we might want to include on a form's
  
 ## Action link
 
-![confirmation page action link]({{site.baseurl}}/confirmation-page-action-link.png) 
+![confirmation page action link]({{site.baseurl}}/images/confirmation-page-action-link.png) 
 
  The action link guides the user back to the VA.gov homepage. 
 
 ## Helpful content
 
-![need help content]({{site.baseurl}}/need-help.png) 
+![need help content]({{site.baseurl}}/images/need-help.png) 
 
 Helpful content varies depending on form to form. Use the H3 highlight for the title and always label it “Need help?”. The content usually points the user to a number they can call if they need help with their form. 
