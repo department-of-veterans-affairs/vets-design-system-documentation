@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Contributing to the design system
-draft: true
 ---
 
 # Contributing to the design system
