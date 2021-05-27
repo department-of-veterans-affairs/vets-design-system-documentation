@@ -143,7 +143,7 @@ The two main ways for developers to contribute to the Design System are by writi
 
 ### New components
 
-If you contribute something to the Experimental Design System, include a link to that code (in `vets-website`) in the documentation.
+If you want to contribute something to the Design System, see the [Contributing to the Design System](./contributing-to-the-design-system) page.
 
 <!-- This is commented out until we have something to link to.
 In order for a component to be included in the _official_ Design System, we expect [these criteria to be met]().
