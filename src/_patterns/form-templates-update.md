@@ -480,6 +480,19 @@ Say ‘Please upload a file’’
 
 Say ‘Please upload at least one file’
 
+**When there is an internet connection error:**
+
+Say ‘Network request failed’
+
+**When the file is too large:**
+
+Say ‘File is too large to be updated’
+
+**When the file is the wrong file type**
+
+Say ‘File is not one of the allowed types’
+
+
 **Live application examples:**
 
 - [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
