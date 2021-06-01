@@ -1,0 +1,4 @@
+{
+  "name": "vets-design-system-documentation",
+  "postCreateCommand": "npm install && gem install jekyll && gem install bundler:1.16.6 && bundler install"
+}
