@@ -22,5 +22,4 @@ Additionally, we wanted to create a light-weight process where teams building ap
 Yes. However, if you are using an experimental component, be aware that it hasn’t necessarily been fully validated. If you are using one, please document any research you’ve done on it’s component page for others to see.
 
 ## How do I add an experimental component here?
-To get a component into our experimental system, steps 1-4 in [the process written up here](https://design.va.gov/documentation/contributing-to-the-design-system)
-
+To get a component into our experimental system, follow steps 1-4 in [the process written up here](https://design.va.gov/documentation/contributing-to-the-design-system)
