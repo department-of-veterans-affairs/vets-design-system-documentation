@@ -11,9 +11,9 @@ How to suggest a new component, update existing components, and retire component
 
 
 ## Suggest a component
-Anyone can suggest a new component. We currently keep a list of suggestions in the design system backlog. 
+Anyone can suggest a new component. We currently keep a list of suggestions in the design system backlog.   
 
-Follow these 5 steps to suggest a component for the design system.
+Follow these 6 steps to suggest a component for the design system.
 
 ### 1. Check the design system backlog 
 Check the [backlog](https://design.va.gov/documentation/backlog) to see if your idea has already been suggested. Take a look at the "proposed" category.
@@ -24,9 +24,11 @@ If you do not see your idea in the backlog at all go to step 2.
 Fill out a [Experimental Design System request ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md). You will need to provide justification for this new component and any artifacts you might want to include.
 
 ### 3. Present to Design System Council
-You will present your work to the Design System Council at an upcoming meeting.
+You will present your work to the Design System Council at an upcoming meeting. Experimental design requests will always be prioritized in this meeting, and teams can assume generally that they will be able to present the same week of the request.
 - Submit request to join an upcoming Design System Council meeting in #vsp-design-system 
 - During the meeting, the Design System Council will evaluate the request and make a decision. 
+
+### 4. Add your component to the Experimental section
 If your component request is approved, add your component to the [Experimental section](https://design.va.gov/experimental-design/) on design.va.gov.
 
 What to add to the experimental section: 
@@ -43,11 +45,11 @@ How to add it to the experimental design section:
     - Add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design)
 
 
-### 4. Validate your design
+### 5. Validate your design
 You or your team need to do research and usability testing to validate your component. 
 If an experimental component sits on design.va.gov for 6 months, it will be removed. 
 
-### 5. Document and submit
+### 6. Document and submit
 Once you have validated your component, provide documentation (usage guidelines), artifacts (Sketch file, and reusable code) and any links to research. 
 
 In order for your component to be codified into the design system, three things must happen: 
