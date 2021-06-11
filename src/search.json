@@ -45,6 +45,21 @@ layout: null
   {% endunless %}
   {% endfor %}
 
+  {% for item in site.experimental-design %}
+  {% unless item.layout == "iframe" %}
+    {
+      "title"    : "{{ item.title | strip_html | escape }}",
+      "section"  : "Experimental design",
+      "url"      : "{{ site.baseurl }}{{ item.url }}",
+      "category" : "{{item.categories | join: ', '}}",
+      "tags"     : "{{ item.tags | join: ', ' }}",
+      "date"     : "{{ item.date }}",
+      "description" : "{{item.description | strip_html | strip_newlines | escape }}"
+
+    },
+  {% endunless %}
+  {% endfor %}
+
   {% for item in site.content-style-guide %}
     {
       "title"    : "{{ item.title | strip_html | escape }}",
