@@ -24,6 +24,8 @@ VA.gov design principles are fundamental pieces of guidance that help designers 
 
 **Respect Veterans’ time by using research to validate your best conceptual approach.** Rather than having Veterans spend time helping you resolve granular design decisions, focus your research on the primary user problem or need. 
 
+**Base your design decisions on whether the Veteran or caregiver can complete a task over what might "look right."** Everything we design should ultimately make tasks easier for our Veterans. Don't spend time finessing how something looks if it's working for the Veteran.
+
 **A Veterans’ journey is fundamentally unique, and not limited to VA.gov.** The digital experience is a part of a larger, end-to-end government service experience that should connect a Veteran to all the people, places, and services that helps them access benefits. Because of this unique nature, what works in other industries may not always apply.
 
 ## Impact
