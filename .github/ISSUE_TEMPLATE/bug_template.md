@@ -1,6 +1,10 @@
 ---
 name: "\U0001F534 Bug report"
 about: Something in Formation is not working as expected
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 # Bug Report

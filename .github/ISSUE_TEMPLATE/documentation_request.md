@@ -1,6 +1,10 @@
 ---
 name: "\U0001F4D6 Documentation request"
 about: Suggest an update to documentation
+title: ''
+labels: vsp-design-system-team
+assignees: caw310
+
 ---
 
 # Feature Request

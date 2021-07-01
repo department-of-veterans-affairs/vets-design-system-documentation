@@ -1,6 +1,10 @@
 ---
 name: "\U0001F4DD Documentation template"
 about: A template for writing documentation for components and patterns
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 **Documentation template for a component:**
@@ -61,5 +65,3 @@ Explanation of section.
 
 
 If you want to reference pattern documentation on design.va.gov: https://design.va.gov/patterns/email_template
-
-

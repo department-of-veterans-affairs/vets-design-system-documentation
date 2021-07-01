@@ -1,6 +1,10 @@
 ---
 name: "\U0001F64B Support question"
 about: If you need support using Formation
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 # Support question

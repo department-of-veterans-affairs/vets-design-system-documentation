@@ -1,6 +1,10 @@
 ---
 name: "\U0001F4A1 Experimental design system request"
 about: Propose an idea for a new component or pattern
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 Check the [design system backlog](https://design.va.gov/documentation/backlog) and [experimental design tab](https://design.va.gov/experimental-design/) to see if your proposal has already been suggested. 
