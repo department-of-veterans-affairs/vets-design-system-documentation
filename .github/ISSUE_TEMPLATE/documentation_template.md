@@ -2,8 +2,8 @@
 name: "\U0001F4DD Documentation template"
 about: A template for writing documentation for components and patterns
 title: ''
-labels: ''
-assignees: ''
+labels: 'vsp-design-system-team'
+assignees: 'caw310'
 
 ---
 
