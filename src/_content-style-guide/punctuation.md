@@ -131,3 +131,7 @@ __You've successfully applied!__
 </div>
 
 Note: Some design components may use the exclamation point as an icon for visual accent&mdash;in alert components, for example&mdash;but don't use it in the message copy itself.
+
+#### Quotation marks
+
+Always use curly quotation marks for both quotes and apostrophes instead of straight up and down ones.
