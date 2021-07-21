@@ -2,8 +2,8 @@
 name: "\U0001F4A1 Experimental design system request"
 about: Propose an idea for a new component or pattern
 title: ''
-labels: ''
-assignees: ''
+labels: 'vsp-design-system-team'
+assignees: 'caw310'
 
 ---
 
