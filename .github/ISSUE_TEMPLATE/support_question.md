@@ -2,8 +2,8 @@
 name: "\U0001F64B Support question"
 about: If you need support using Formation
 title: ''
-labels: ''
-assignees: ''
+labels: 'vsp-design-system-team'
+assignees: 'caw310'
 
 ---
 
