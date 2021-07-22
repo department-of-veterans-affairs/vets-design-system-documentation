@@ -4,10 +4,12 @@ title: Punctuation
 title: Punctuation
 anchors:
   - anchor: Ampersands
+  - anchor: Apostrophes
   - anchor: Commas
   - anchor: Contractions
   - anchor: Em and en dashes, hyphens
   - anchor: Exclamation points
+  - anchor: Quotation marks
 ---
 
 # Punctuation
@@ -16,6 +18,9 @@ We follow standard American English and AP Style on VA.gov. Areas where we diffe
 #### Ampersands
 
 Don't use ampersands (&) in headers or body copy. Spell out “and.” Exceptions are when it's part of a proper noun such as a program name. Example: VR&E program.
+
+#### Apostrophes
+Use curly apostrophes instead of straight up and down ones.
 
 #### Commas
 
@@ -134,4 +139,4 @@ Note: Some design components may use the exclamation point as an icon for visual
 
 #### Quotation marks
 
-Always use curly quotation marks for both quotes and apostrophes instead of straight up and down ones.
+Use curly quotation marks instead of straight up and down ones.
