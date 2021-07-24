@@ -24,12 +24,12 @@
 .site-content__content {
   flex-basis: 100%;
   max-width: 100%;
-  padding: $units-3;
+  padding: $units-3 $units-3 0 $units-3;
 
   @include media($nav-width) {
     flex-basis: 75%;
     max-width: 75%;
-    padding: $units-8;
+    padding: $units-8 $units-8 0 $units-8;
   }
 }
 
