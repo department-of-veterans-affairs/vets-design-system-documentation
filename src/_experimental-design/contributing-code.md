@@ -3,6 +3,14 @@ layout: default
 title: Contributing experimental design code
 order: 2
 draft: true
+anchors:
+  - anchor: Writing experimental design code
+  - anchor: Code location
+  - anchor: README
+  - anchor: Breaking changes
+  - anchor: CODEOWNERS
+  - anchor: Test coverage
+  - anchor: Using experimental designs
 ---
 # Contributing experimental design code
 At the heart of the experimental design process is the shared code. This document explains the process for contributing code for experimental designs and the reasoning behind that process.
