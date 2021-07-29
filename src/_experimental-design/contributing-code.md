@@ -6,6 +6,7 @@ anchors:
   - anchor: Writing experimental design code
   - anchor: Sharing experimental design code
   - anchor: Using shared experimental designs
+  - anchor: Ending the experiment
 ---
 # Contributing experimental design code
 This document explains the process for contributing code for experimental designs and the reasoning behind that process.
@@ -40,7 +41,7 @@ Each experimental design should have a README that contains the following inform
      - The `stable` status means the public API is finalized, but the code may still receive backward-compatible updates such as accessibility improvements and bug fixes
      - The `deprecated` status means the code should no longer be used in applications
           - This may be because of a breaking change (see [Breaking changes](#breaking-changes) below), official adoption into the design system, or research which indicates the experiment was unsuccessful
-          - When the status is `deprecated`, add a `Reason:` to indicate why (so engineers know where to look for the new version or not to use it at all) and make an announcement to alert other teams that may be using the experiment
+          - See [Ending the experiment](#ending-the-experiment) below for instructions on what to do when deprecating code
 - API documentation (optional but encouraged)
 
 ### Breaking changes
@@ -73,3 +74,20 @@ The babel module resolver plugin has the `root` set to `"./src"`, so you can imp
  ```js
 import LargeButton from '~/experimental/large-button';
 ```
+
+## Ending the experiment
+Experimental designs are meant to be short-lived. The experimental design code may no longer be needed because:
+- The design was approved for adoption into the design system
+- The design was rejected for adoption into the design system
+- A breaking change was introduced and a new version was created
+
+When code is deprecated for any of these reasons, the goal is to delete the code. If there are no applications using the deprecated code, simply delete the directory.
+
+If there are applications using the deprecated code:
+1. In the README: Mark the code as `deprecated`
+1. In the REAMDE: Clearly outline what engineers should do to stop using the experiment
+    - This may be something like "upgrade to `~/experimental/large-button-2`," "use `@department-of-veterans-affairs/component-library/LargeButton`," or "discontinue use; the experiment has been rejected"
+1. In Slack: Notify teams that the code has been deprecated, either via an announcement or reaching out directly to the teams using the experiment
+1. Check in weekly to see if there are still applications using the experiment; delete the directory when no applications are dependent on it
+
+It's the responsibility of the code owners to delete deprecated code when it's no longer in use.
