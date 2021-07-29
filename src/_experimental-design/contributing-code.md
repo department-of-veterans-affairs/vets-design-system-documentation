@@ -5,7 +5,7 @@ order: 2
 anchors:
   - anchor: Writing experimental design code
   - anchor: Sharing experimental design code
-  - anchor: Using experimental designs
+  - anchor: Using shared experimental designs
 ---
 # Contributing experimental design code
 This document explains the process for contributing code for experimental designs and the reasoning behind that process.
@@ -65,7 +65,7 @@ Add your team's GitHub team name to the [CODEOWNERS file](https://github.com/dep
 ### Test coverage
 As with all code, test coverage is critical. This is especially true with shared code. Aim for at least 90% unit test coverage before declaring an experiment to be `stable`.
 
-## Using experimental designs
+## Using shared experimental designs
  The babel module resolver plugin has the `root` set to `"./src"`, so you can import your experimental design with the following:
  
  ```js
