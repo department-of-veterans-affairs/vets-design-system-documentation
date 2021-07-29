@@ -50,7 +50,7 @@ Once the code for an experimental design is stable, **breaking changes should no
 
 If you need to introduce breaking changes, **do not modify the existing code.** Instead, copy the contents of the directory to a sibling directory post-fixed with a version number.
 
-**Example:**
+**Example:**  
 The `LargeButton` you created accepted `children`, but because of reasons, you need to limit the content of the button to only text. You've decided to remove the `children` prop and add a `label` prop instead which accepts only strings. To introduce this change, you would:
 1. Copy the contents of `src/experimental/large-button/` to `src/experimental/large-button-2`
 2. Update the status in `src/experimental/large-button/README` to `deprecated` and indicate why (because there's a new version)
