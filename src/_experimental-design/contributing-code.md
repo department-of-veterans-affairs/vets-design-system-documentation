@@ -2,18 +2,13 @@
 layout: default
 title: Contributing experimental design code
 order: 2
-draft: true
 anchors:
   - anchor: Writing experimental design code
-  - anchor: Code location
-  - anchor: README
-  - anchor: Breaking changes
-  - anchor: CODEOWNERS
-  - anchor: Test coverage
+  - anchor: Sharing experimental design code
   - anchor: Using experimental designs
 ---
 # Contributing experimental design code
-At the heart of the experimental design process is the shared code. This document explains the process for contributing code for experimental designs and the reasoning behind that process.
+This document explains the process for contributing code for experimental designs and the reasoning behind that process.
 
 If you haven't read it already, refer to the [experimental design page](/experimental-design) for more information about the full process.
 
@@ -26,6 +21,11 @@ Each experimental design should:
 Developing the experiment as if it were a standalone library will make the code more reusable and graduating the component or pattern into the official design system smoother.
 
 Each experimental design should [include a README](#readme) and be [owned by a team](#codeowners).
+
+## Sharing experimental design code
+Sharing code between applications is necessarily more involved than writing code for a single application. To avoid the overhead that sharing code introduces (reporting development status, managing breaking changes, deprecating the code etc.), it's recommended to develop experimental designs in the application directory and not import it from another application.
+
+If the time comes that another application needs to use the experiment, the rest of this section describes the process for how to share this code.
 
 ### Code location
 Each experimental design is located in its own directory in [`vets-website`](https://github.com/department-of-veterans-affairs/vets-website/) at `src/experimental/` unless otherwise noted in its documentation on this site.
