@@ -66,8 +66,10 @@ Add your team's GitHub team name to the [CODEOWNERS file](https://github.com/dep
 As with all code, test coverage is critical. This is especially true with shared code. Aim for at least 90% unit test coverage before declaring an experiment to be `stable`.
 
 ## Using shared experimental designs
- The babel module resolver plugin has the `root` set to `"./src"`, so you can import your experimental design with the following:
+Before using an experimental design, first check the `src/experimental/` directory in `vets-website` to see if it's been shared yet. If not, work with the authoring team to move the code into `src/experimental/`. See [Sharing experimental design code](#sharing-experimental-design-code) above for more information.
+
+The babel module resolver plugin has the `root` set to `"./src"`, so you can import your experimental design with the following:
  
  ```js
-import LargeButton from 'experimental/large-button';
+import LargeButton from '~/experimental/large-button';
 ```
