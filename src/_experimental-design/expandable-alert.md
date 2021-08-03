@@ -22,4 +22,6 @@ Mobile friendly expandable alerts combine the Additional Info component within B
 
 ### Code reference:
 
+[Debt team's expandable alert code](https://github.com/department-of-veterans-affairs/vets-website/blob/3476c57cd753cd9a8da7d466fb23cb892e1ce1c2/src/applications/medical-copays/components/StatusAlert.jsx) - this is an iteration of the original Vet Center code below, and has been reviewed by Robin and Josh.
+
 [Vet Center expandable alert code](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/static-pages/shared/ExpandableOperatingStatus.jsx)
