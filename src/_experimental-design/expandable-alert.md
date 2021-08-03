@@ -10,7 +10,7 @@ Suggested by: Leyda Hughes, VSA Facilities Team
 When an alert box is too visually prominent and additional information needs to be communicated without leaving the page.
 
 ## Description
-Mobile friendly expandable alerts combine the Additional Info component within Background Color Only alert color schemes, and include an icon. 
+Mobile friendly expandable alerts combine the Additional Info component within Background Color Only alert color schemes, and includes an icon. 
 
 ### Example:
 
