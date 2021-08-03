@@ -20,15 +20,6 @@ Mobile friendly expandable alerts combine the Additional Info component within B
 
 [UXPin design specs](https://preview.uxpin.com/0a5eaacdf411fde0cb3abf4932010c29fbccb7de#/pages/138515145/simulate/sitemap?mode=i)
 
-### Code example:
+### Code reference:
 
-<div data-widget-type="expandable-operating-status-vc_0103V" facilityid="vc_0103V" status="limited" info="We're currently open for limited in-person service, and screening all visitors for symptoms, due to COVID-19. For individual and group counseling, we recommend using our telehealth services. If you need to speak with someone confidentially, please call us anytime 24/7 at 877-927-8387.">
-  <div class="vads-u-margin-bottom--1">
-    <div><button type="button" class="collapsible limited"><i aria-hidden="true" role="img" class="fa fa-exclamation-triangle alert-icon-base"></i>
-      <span class="status-label">Limited services and hours</span>
-      </button>
-    <div class="content limited vads-u-display--none"><p class="more-info">We're currently open for limited in-person service, and screening all visitors for symptoms, due to COVID-19. For individual and group counseling, we recommend using our telehealth services. If you need to speak with someone confidentially, please call us anytime 24/7 at <a target="_blank" href="tel:877-927-8387" lang="en">877-927-8387</a>.</p>
-    </div>
-   </div>
- </div>
-</div>
+[Vet Center expandable alert code](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/static-pages/shared/ExpandableOperatingStatus.jsx)
