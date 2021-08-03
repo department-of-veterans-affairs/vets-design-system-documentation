@@ -23,3 +23,9 @@ Mobile friendly expandable alerts combine the Additional Info component within B
 ### Code reference:
 
 [Vet Center expandable alert code](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/static-pages/shared/ExpandableOperatingStatus.jsx)
+
+## Accessibility requirements:
+
+Icon: Must provide alternative text (use sr-only text or an aria-label) so screen readers have an equivalent understanding of the purpose/nature of the message
+
+Heading: e.g. "Facility closed" should be one heading level below its parent
