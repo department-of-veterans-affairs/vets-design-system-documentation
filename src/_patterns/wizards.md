@@ -27,7 +27,7 @@ title: Wizards
 
 ## Where to place wizards
 
-The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content](http://localhost:4000/components/featured-content) eligibility boxes but before [accordions](<https://design.va.gov/patterns/content-presentation#accordions>) or additional information.
+The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content](https://design.va.gov/components/featured-content) eligibility boxes but before [accordions](<https://design.va.gov/patterns/content-presentation#accordions>) or additional information.
 
 ## Specifics of the pattern
 
