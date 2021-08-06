@@ -23,9 +23,9 @@ Check the [design system backlog](https://design.va.gov/documentation/backlog) a
 > Include links to any examples, research or code to support your proposal, if available.
 
 ## Next steps
-You will present your work to the Design System Council at an upcoming meeting.
+You may present your work to the Design System Council at an upcoming meeting. If you do not or cannot attend the Design Council Meeting, you can opt to get an asynchronous approval. 
 
-Submit request to join an upcoming Design System Council meeting in #vsp-design-system 
+Submit requests to join an upcoming Design System Council meeting in #vsp-design-system.  
 
 During the meeting, the Design System Council Working Group will evaluate the request and make a decision. 
 
