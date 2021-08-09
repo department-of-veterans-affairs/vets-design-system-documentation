@@ -11,7 +11,7 @@ How to suggest a new component, update existing components, and retire component
 
 
 ## Suggest a component or pattern
-Veteran-facing teams are expected to use design system patterns and components when possible. If existing components or patterns will not work to address needed designs,  VFS teams can suggest new components or patterns by going through our Experimental Design process. 
+Veteran-facing teams are expected to use design system patterns and components when possible. If existing components or patterns will not work to address needed designs,  VFS teams can suggest new components or patterns by going through our Experimental Design process outlined below. 
 
 All new components or patterns should go through this process. We recommend starting this process before sharing new designs widely with stakeholders. 
 
@@ -22,7 +22,7 @@ When considering if a component or pattern should be added to the design system 
 2. The component/pattern is different in more than one major way than existing components in the design system, if the component is only different in color or format, for instance, then it would be better as a variant of the existing component. Note that variants of existing components should also go through this experimental process.
 3. Our existing components and patterns will not solve the user problems sufficiently.
 
-Follow the steps below  to suggest a component or pattern for the design system.
+Follow the steps below to suggest a component or pattern for the design system through our experimental process.
 
 
 ### 1. Check the design system backlog 
