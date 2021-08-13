@@ -207,7 +207,7 @@ This document explains the process for contributing code for experimental design
 
 If you haven't read it already, refer to the [experimental design page](/experimental-design) for more information about the full process.
 
-## Writing experimental design code
+### Writing experimental design code
 Each experimental design should:
 - Be absent of business logic and domain knowledge
 - Not import application code
@@ -217,18 +217,18 @@ Developing the experiment as if it were a standalone library will make the code 
 
 Each experimental design should [include a README](#readme) and be [owned by a team](#codeowners).
 
-## Sharing experimental design code
+### Sharing experimental design code
 Sharing code between applications is necessarily more involved than writing code for a single application. To avoid the overhead that sharing code introduces (reporting development status, managing breaking changes, deprecating the code etc.), it's recommended to develop experimental designs in the application directory and not import it from another application.
 
 If the time comes that another application needs to use the experiment, the rest of this section describes the process for how to share this code.
 
-### Code location
+#### Code location
 Each experimental design is located in its own directory in [`vets-website`](https://github.com/department-of-veterans-affairs/vets-website/) at `src/experimental/` unless otherwise noted in its documentation on this site.
 
 **Example:**  
 If your team needs an experimental button that's larger than the standard button, you would create `src/experimental/large-button/index.jsx` as the entry file for your "library."
 
-### README
+#### README
 Each experimental design should have a README that contains the following information:
 - Development status: `stable`, `unstable`, or `deprecated`
      - The `unstable` status means the code is under active development and the public API may change without notice
@@ -238,7 +238,7 @@ Each experimental design should have a README that contains the following inform
           - See [Ending the experiment](#ending-the-experiment) below for instructions on what to do when deprecating code
 - API documentation (optional but encouraged)
 
-### Breaking changes
+#### Breaking changes
 "Breaking changes" is defined here In `semver` terms as a backwards incompatible change to the public API of your component or pattern. (See the [Semantic Versioning Specification](https://semver.org/#spec-item-8) for more details.)
 
 Once the code for an experimental design is stable, **breaking changes should not be introduced.** Other applications may depend on this code, but are unable to pin the version because it's not a "proper" library.
@@ -254,13 +254,13 @@ The `LargeButton` you created accepted `children`, but because of reasons, you n
 5. Update the [CODEOWNERS file](#codeowners) to add the new directory
 6. Make an announcement for anybody who may be using the deprecated code
 
-### CODEOWNERS
+#### CODEOWNERS
 Add your team's GitHub team name to the [CODEOWNERS file](https://github.com/department-of-veterans-affairs/vets-website/blob/master/.github/CODEOWNERS) to take ownership of the experiment's code. This will mean your team will be required reviewers on all changes to this code.
 
-### Test coverage
+#### Test coverage
 As with all code, test coverage is critical. This is especially true with shared code. Aim for at least 90% unit test coverage before declaring an experiment to be `stable`.
 
-## Using shared experimental designs
+### Using shared experimental designs
 Before using an experimental design, first check the `src/experimental/` directory in `vets-website` to see if it's been shared yet. If not, work with the authoring team to move the code into `src/experimental/`. See [Sharing experimental design code](#sharing-experimental-design-code) above for more information.
 
 The babel module resolver plugin has the `root` set to `"./src"`, so you can import your experimental design with the following:
@@ -269,7 +269,7 @@ The babel module resolver plugin has the `root` set to `"./src"`, so you can imp
 import LargeButton from '~/experimental/large-button';
 ```
 
-## Ending the experiment
+### Ending the experiment
 Experimental designs are meant to be short-lived. The experimental design code may no longer be needed because:
 - The design was approved for adoption into the design system
 - The design was rejected for adoption into the design system
