@@ -67,7 +67,7 @@ The markdown file should include most of what you put in your experimental reque
 - Existing components used (if creating a new pattern)
 - Guidance (if available)
 
-Note that code is not required at this step in the process - the main point of documenting here is visibility to other teams. However, if you have shared code you can share, great! More guidance on the code part of contribution and where to store files can be found here **Link to be added very soon!**.
+Note that code is not required at this step in the process - the main point of documenting here is visibility to other teams. However, if you have shared code you can share, great! [More guidance on the code part of contribution and where to store files can be found here](https://design.va.gov/documentation/developers#contributing-experimental-design-code).
 
 **If your component or pattern request is rejected**, the council will add notes as to why and what they suggest you do instead on your initial request ticket.
 
