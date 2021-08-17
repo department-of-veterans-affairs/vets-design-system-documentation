@@ -11,23 +11,21 @@ Suggested by: Liz Lantz, VSA Authenticated Experience Team
 
 This input message is variation of our validation message pattern. It provides helpful, in-context information about an input, either before or immediately after a Veteran interacts with an input (e.g. on a form input that auto-saves). 
 
-*Will add image tags once folder is published and I have URLS* 
-
 **Informational**
 
-*image goes here* 
+<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-info.png" width="60%" /> 
 
 **Success**
 
-*image goes here* 
+<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-success.png" width="60%" />
 
 **Warning**
 
-*image goes here* 
+<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-warning.png" width="60%" />
 
 **Error**
 
-*image goes here* 
+<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-error.png" width="60%" />
 
 ### Examples
 
