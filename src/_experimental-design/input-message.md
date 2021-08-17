@@ -13,19 +13,19 @@ This input message is variation of our validation message pattern. It provides h
 
 **Informational**
 
-<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-info.png" width="60%" /> 
+![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-info.png)
 
 **Success**
 
-<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-success.png" width="60%" />
+![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-success.png)
 
 **Warning**
 
-<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-warning.png" width="60%" />
+![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-warning.png)
 
 **Error**
 
-<img src="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-error.png" width="60%" />
+![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-error.png)
 
 ### Examples
 
