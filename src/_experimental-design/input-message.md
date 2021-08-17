@@ -13,19 +13,19 @@ This input message is variation of our validation message pattern. It provides h
 
 **Informational**
 
-![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-info.png)
+![image]({{site.baseurl}}/images/experimental-design/input-message-info.png)
 
 **Success**
 
-![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-success.png)
+![image]({{site.baseurl}}/images/experimental-design/input-message-success.png)
 
 **Warning**
 
-![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-warning.png)
+![image]({{site.baseurl}}/images/experimental-design/input-message-warning.png)
 
 **Error**
 
-![image](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/assets/input-message-error.png)
+![image]({{site.baseurl}}/images/experimental-design/input-message-error.png)
 
 ### Examples
 
