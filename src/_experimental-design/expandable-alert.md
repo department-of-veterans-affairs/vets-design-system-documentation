@@ -5,9 +5,9 @@ title: Mobile friendly expandable alert
 ---
 Suggested by: Leyda Hughes, VSA Facilities Team
 
-# Purpose
+# Mobile friendly expandable alert
 
-When an alert box is too visually prominent and additional information needs to be communicated without leaving the page.
+To be used When an alert box is too visually prominent and additional information needs to be communicated without leaving the page.
 
 ## Description
 Mobile friendly expandable alerts combine the Additional Info component within Background Color Only alert color schemes, and includes an icon. 
