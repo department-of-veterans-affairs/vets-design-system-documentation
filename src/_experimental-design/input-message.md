@@ -38,7 +38,7 @@ This input message is variation of our validation message pattern. It provides h
 
 ### Code reference
 
-[Radio inputs for notification settings]([https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/app[…\]e/components/notification-settings/NotificationRadioButtons.jsx](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/personalization/profile/components/notification-settings/NotificationRadioButtons.jsx))
+[Radio inputs for notification settings](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/personalization/profile/components/notification-settings/NotificationRadioButtons.jsx)
 
 ## Usability 
 
