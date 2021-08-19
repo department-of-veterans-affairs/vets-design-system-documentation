@@ -3,7 +3,4 @@
 <div>Date added: {{ page.date_added | date: '%b %d, %Y' }}</div>
 {% endif %}
 
-{% if page.last_updated != null %}
-<!-- <div>Last updated: {{ page.date | date: '%b %d, %Y at %H:%M:%S %Z' }} -->
-<div>Last updated: {{ page.last_updated | date: '%b %d, %Y' }}</div>
-{% endif %}
+<div>Last updated: {{ page.last_modified_at | date: '%b %d, %Y' }}</div>
