@@ -30,7 +30,8 @@ sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-t
 markdown: kramdown
 highlighter: rouge
 # theme: minima
-# plugins:
+plugins:
+  - jekyll-last-modified-at
 #  - jekyll-feed
 
 
