@@ -55,15 +55,16 @@ Related PR: https://github.com/department-of-veterans-affairs/vets-website/pull/
 
 Code snippet:
 
-  <code>
-  <div aria-live="polite" aria-relevant="added text"> </code>
-  <code> <button aria-label="Copy link to RELEVANT_TEXT"> </code>
-    <code><!-- SVG or Font Awesome goodness --> </code>
-    <code> </button></code>
-  <code> <div></code>
-     <code> <p>Link copied</p> </code>
-    <code></div> </code>
- <code> </div> </code>
+```html
+<div aria-live="polite" aria-relevant="added text">
+  <button aria-label="Copy link to RELEVANT_TEXT">
+    <!-- SVG or Font Awesome goodness -->
+  </button>
+  <div>
+    <p>Link copied</p>
+  </div>
+</div>
+```
 
 The accessible label will contain relevant, content specific titles for the screen reader to announce, e.g. “Copy link to [How can I stay informed about COVID-19 vaccines at VA]”.
 
