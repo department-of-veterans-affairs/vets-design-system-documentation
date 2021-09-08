@@ -288,6 +288,8 @@ Job Bank: Neither word is plural. See Veterans Job Bank entry.
 
 lewisite: Define on first mention in body copy as "a natural compound that contains the poison arsenic." Include definition in another sentence, as a parenthetical, or set off with commas.
 
+LGBTQ+: Use in all instances. “LGBTQ+” refers to lesbian, gay, bisexual, transgender, and queer identities. The “+” sign captures identities beyond LGBTQ, including but not limited to questioning, pansexual, asexual, agender, gender diverse, nonbinary, and gender-neutral identities.
+
 life insurance: Do not hyphenate in the form of a compound adjective: “life insurance coverage.”
 
 loan guaranty agent: Lowercase. Capitalize only when used as someone's title. The preferred style is to recast the sentence so that it adheres to AP Style on professional titles.  
