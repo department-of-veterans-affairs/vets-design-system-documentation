@@ -3,6 +3,7 @@ layout: default
 title: Icons
 anchors:
   - anchor: Navigation
+  - anchor: Accessibility
   - anchor: Interaction
   - anchor: Feedback
   - anchor: Identification
@@ -11,6 +12,8 @@ anchors:
 ---
 
 # Icons
+
+## Accessibility
 
 ## Navigation
 
