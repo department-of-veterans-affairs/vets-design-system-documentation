@@ -15,6 +15,34 @@ anchors:
 
 ## Accessibility
 
+### When to use `role="img"`
+
+If an icon is being used alone (without support text), it should have a `role="img"` AND appropriate ARIA markup OR screen reader only descriptive text.
+
+### When to use `role="presentation"`
+
+If an icon is being used with visual (and assistive device) text, it should have `role="presentation"`.
+
+### Examples:
+
+Here are a few examples of icons being used in different contexts:
+
+#### Icon being used alone
+
+Example goes here...
+
+#### Icon being used with supporting text
+
+Example goes here...
+
+#### Icon being used alone inside an `<a>` tag
+
+Example goes here...
+
+#### icon being used with supporting text inside an `<a>` tag
+
+Example goes here...
+
 ## Navigation
 
 <table class="usa-table-borderless">
