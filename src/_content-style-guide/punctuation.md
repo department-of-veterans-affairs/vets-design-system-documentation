@@ -139,4 +139,4 @@ Note: Some design components may use the exclamation point as an icon for visual
 
 #### Quotation marks
 
-Use curly quotation marks instead of straight up and down ones.
+Use curly quotation marks (ex. “quotation marks”) instead of straight up and down ones (ex. /"quotation marks/").
