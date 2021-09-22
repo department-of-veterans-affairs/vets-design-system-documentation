@@ -20,7 +20,7 @@ We follow standard American English and AP Style on VA.gov. Areas where we diffe
 Don't use ampersands (&) in headers or body copy. Spell out “and.” Exceptions are when it's part of a proper noun such as a program name. Example: VR&E program.
 
 #### Apostrophes
-Use curly apostrophes (ex. don’t) instead of straight up and down ones (ex. don't).
+Use curly apostrophes (ex. don’t) instead of straight up and down ones (ex. don\'t).
 
 #### Commas
 
