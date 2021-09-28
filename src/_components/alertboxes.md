@@ -64,18 +64,8 @@ Any style of alert box can be made to be background-color only. Use background-c
 Full-width alerts are used only for emergency or urgent communications and should appear below the main navigation. 
 
 ### Warning
-<div class="site-showcase">
-{% include_relative html/alert-full-width.html %}
-</div>
 
-{% include snippet.html content='html/alert-full-width.html' %}
-
-### Informational
-<div class="site-showcase">
-{% include_relative html/alert-full-width2.html %}
-</div>
-
-{% include snippet.html content='html/alert-full-width2.html' %}
+{% include storybook-preview.html story="components-va-alert--fullwidth" %}
 
 ### More about full-width alerts
 - Only available in `info` or `warning` variants.
