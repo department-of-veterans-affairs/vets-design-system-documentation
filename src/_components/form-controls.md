@@ -29,7 +29,7 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 ### Text input
 
-{% include storybook-preview.html story="components-textinput--default" %}
+{% include storybook-preview.html story="components-va-text-input--default" %}
 
 ### Text area
 
@@ -63,7 +63,7 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 A select box allows users to select one option from a list.
 
-{% include storybook-preview.html story="components-select--default" %}
+{% include storybook-preview.html story="components-va-select--default" %}
 
 ### Usability
 
