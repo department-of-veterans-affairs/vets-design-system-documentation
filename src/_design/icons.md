@@ -3,6 +3,7 @@ layout: default
 title: Icons
 anchors:
   - anchor: Navigation
+  - anchor: Accessibility
   - anchor: Interaction
   - anchor: Feedback
   - anchor: Identification
@@ -11,6 +12,50 @@ anchors:
 ---
 
 # Icons
+
+## Accessibility
+
+### When to use `role="img"`
+
+If an icon is being used alone (without support text), it should have a `role="img"` AND appropriate ARIA markup OR screen reader only descriptive text.
+
+### When to use `role="presentation"`
+
+If an icon is being used with visual (and assistive device) text, it should have `role="presentation"`.
+
+### Examples:
+
+Here are a few examples of icons being used in different contexts:
+
+#### Icon being used alone
+
+```html
+<IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} />
+```
+
+#### Icon being used with supporting text
+
+```html
+<IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} />
+Help
+```
+
+#### Icon being used alone inside an `<a>` tag
+
+```html
+<a href="#">
+  <IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} />
+</a>
+```
+
+#### icon being used with supporting text inside an `<a>` tag
+
+```html
+<a href="#">
+  <IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} />
+  Help
+</a>
+```
 
 ## Navigation
 
