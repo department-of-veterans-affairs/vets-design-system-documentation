@@ -15,11 +15,11 @@ draft: true
 * On large and medium screens, the Back to top component will have the label, “Back to top” with an arrow icon to the left of the label. On small screens, the Back to top component will only have the arrow icon. Use one Back to top component per page.
 
 ### When to use Back to top
-* In pages with static content that is more than two screens in length on large and medium screens, or more than four screens in length on small screens
+* In pages with static content that is more than two screens in length on large and medium screens, or more than four screens in length on small screens.
 
 ### When _not_ to use Back to top
-* In pages with dynamic content
-* In pages with static content that is short in length
+* In pages with dynamic content.
+* In pages with static content that is short in length.
 
 ### Placement
 * The Back to top component is anchored to the lower right edge of the main content container on desktop, and the lower right edge of the viewport on smaller screens.
@@ -27,11 +27,11 @@ draft: true
 * In smaller screens where the Back to top component is the arrow icon, there should be at least 4 spacing units (32 pixels) of white space above and 2 spacing units (16 pixels) below the component.  
 
 ### Behavior
-* As the user scrolls down the page, the Back to top component reveals as a sticky button in the lower right edge of the main content area
-* The Back to top component stays fixed in the lower right edge of the main content area when the user reaches the bottom of the page  
-* Clicking the Back to top button takes the user to the top of the page
+* As the user scrolls down the page, the Back to top component reveals as a sticky button in the lower right edge of the main content area.
+* The Back to top component stays fixed in the lower right edge of the main content area when the user reaches the bottom of the page.  
+* Clicking the Back to top button takes the user to the top of the page.
 
 ## Accessibility considerations
-* Animations can be distracting to users with vestibular conditions
-* Some users may have smooth scrolling turned off in their preferences, which will affect the transition going back to the top of the page
-* After the user has clicked the Back to top button, the code should call focus on an element near the top of the page, such as the H1
+* Animations can be distracting to users with vestibular conditions.
+* Some users may have smooth scrolling turned off in their preferences, which will affect the transition going back to the top of the page.
+* After the user has clicked the Back to top button, the code should call focus on an element near the top of the page, such as the H1.
