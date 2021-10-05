@@ -14,7 +14,7 @@ anchors:
 {% include storybook-preview.html height="300px" story="components-table--default" %}
 
 ## Usage
-* A table can be a good design solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
+* A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
 
 ### When to use a table
 * When presenting data that can be compared across multiple categories.
@@ -26,26 +26,27 @@ anchors:
 
 ### How to use tables
 - **Align data according to the content** 
-  - Always top align all data in rows
-  - Numerical data is right-aligned
-  - Textual data is left-aligned
-  - Headers are aligned with their data
-  - Do not center align
-- **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word
+  - Always top align all data in rows.
+  - Numerical data is right-aligned.
+  - Textual data is left-aligned.
+  - Headers are aligned with their data.
+  - Do not center align.
+- **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
 - **Be selective about using column sort.**
-  - Sort should only be included in a table if it can assist the user in completing a task
-  - Only one column per table should be sortable, keep it simple
-  - A default sort order (ascending or descending) must be defined 
+  - Sort should only be included in a table if it can assist the user in completing a task.
+  - Only one column per table should be sortable, keep it simple.
+  - A default sort order (ascending or descending) must be defined.
 
 ## Accessibility considerations
-* Proper header usage is the most important accessibility consideration for tables; the more straightforward the header, the better 
+* Table headers must be designated with `<th>`.
+* Header labels must accurately describe the corresponding group of cells.
 * Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
 * Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
 * When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
 
 # Responsive list table 
 
-<p class="va-introtext">List view tables transition into a list view when on smaller screens. A responsive list view works best on tables where veterans are looking up a piece of information. 
+<p class="va-introtext">Responsive list tables transition into a list view on smaller screens. A responsive list table is a good solution when veterans need to look up a piece of information. 
 </p>
 
 {% include storybook-preview.html height="950px" width="400px" story="components-table--default" %}
@@ -53,7 +54,7 @@ anchors:
 ## Usage
 
 ### When to use the responsive list view table
-Use list view table when you need to present a list of information in an itemized way.  
+Use a list view table when you need to present a list of information in an itemized way.  
 
 ### When to consider something else
 - When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens 
