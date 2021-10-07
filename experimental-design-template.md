@@ -18,6 +18,8 @@ Talk about the "why" of your Experimental pattern. What problem will you be solv
 
 Insert an image with callouts here, if you have one. Callouts should live as numbered text beneath the image (for accessibility reasons). If the image is large, callout text can live within the image itself as well as beneath it. Use the Anatomy callouts Sketch library in your mockups.
 
+<!-- Insert image example -->
+
 1. Callout one
 2. Callout two
 3. Callout three
@@ -40,3 +42,7 @@ Add supplemental information and/or PR links here. You may delete this section i
 ## Accessibility notes
 
 How does an engineer build the pattern to meet WCAG 2.1 standards? Include guidelines and code snippets here.
+
+## Research
+
+Include links to research findings, if applicable.
