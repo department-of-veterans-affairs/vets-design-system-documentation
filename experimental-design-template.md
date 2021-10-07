@@ -1,18 +1,18 @@
 ---
 layout: default
-sub_section: Pattern name
-title: Pattern name
+sub_section: Experimental pattern name
+title: Experimental pattern name
 draft: true
 ---
 Suggested by: your name
 
-# Pattern name 
+# Experimental pattern name 
 
-Briefly describe your proposed Experimental Design pattern.
+Briefly describe your proposed Experimental design pattern.
 
 ## Purpose
 
-Talk about the "why" of your pattern. What problem are you solving? How will this pattern improve the experience of veterans using va.gov and/or be an affordance for designers and developers working on the site?
+Talk about the "why" of your Experimental pattern. What problem will you be solving? How will this pattern improve the experience of veterans using va.gov and/or be an affordance for designers and developers working on the site?
 
 ## Example
 
