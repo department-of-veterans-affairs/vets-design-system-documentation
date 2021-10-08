@@ -16,13 +16,13 @@ Talk about the "why" of your Experimental pattern. What problem will you be solv
 
 ## Example
 
-Insert an image with callouts here, if you have one. Callouts should live as numbered text beneath the image (for accessibility reasons). If the image is large, callout text can live within the image itself as well as beneath it. Use the Anatomy callouts Sketch library in your mockups.
+<!-- Insert an image with callouts here, if you have one. Callouts should live as numbered text beneath the image (for accessibility reasons). If the image is large, callout text can live within the image itself as well as beneath it. Use the Anatomy callouts Sketch library in your mockups. -->
 
-<!-- Insert image example -->
+![Form Confirmation page example](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/form_confirmation_page_desktop.png)
 
-1. Callout one
-2. Callout two
-3. Callout three
+1. **Callout one**. Description.
+2. **Callout two**. Description.
+3. **Callout three**. Description.
 
 ## UX behavior 
 
