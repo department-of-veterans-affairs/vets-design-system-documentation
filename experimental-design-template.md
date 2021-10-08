@@ -23,6 +23,13 @@ Talk about the "why" of your Experimental pattern. What problem(s) will you be s
 1. **Callout one**. Description.
 2. **Callout two**. Description.
 3. **Callout three**. Description.
+4. **Callout four**. Description.
+5. **Callout five**. Description.
+6. **Callout six**. Description.
+7. **Callout seven**. Description.
+8. **Callout eight**. Description.
+9. **Callout nine**. Description.
+10. **Callout ten**. Description.
 
 ## UX behavior 
 
@@ -36,8 +43,7 @@ Add supplemental information and/or PR links here. You may delete this section i
 
 ## Design mockups
 
-* Links to images or Sketch files. 
-* Include desktop and mobile versions.
+Links to images or Sketch files. Include mobile and desktop versions.
 
 ## Accessibility notes
 
