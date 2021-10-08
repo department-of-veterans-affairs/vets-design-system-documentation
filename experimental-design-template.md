@@ -12,7 +12,7 @@ Briefly describe your proposed Experimental design pattern.
 
 ## Purpose
 
-Talk about the "why" of your Experimental pattern. What problem will you be solving? How will this pattern improve the experience of veterans using va.gov and/or be an affordance for designers and developers working on the site?
+Talk about the "why" of your Experimental pattern. What problem(s) will you be solving? How will this pattern improve the experience of veterans using va.gov and/or be an affordance for designers and developers working on the platform?
 
 ## Example
 
@@ -45,4 +45,4 @@ How does an engineer build the pattern to meet WCAG 2.1 standards? Include guide
 
 ## Research
 
-Include links to research findings, if applicable.
+Include links to research findings, if applicable. Indicate an absence of research findings if none exist (yet).
