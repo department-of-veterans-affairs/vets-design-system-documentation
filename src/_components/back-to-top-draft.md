@@ -9,7 +9,7 @@ draft: true
 
 <p class="va-introtext">The Back to top component is a button shortcut that allows the user to quickly navigate to the top of a long page of content.</p>
 
-{% include storybook-preview.html height="300px" story="components-table--default" %}
+{% include storybook-preview.html height="300px" story="components-va-back-to-top--default" %}
 
 ## Usage
 * On large and medium screens, the Back to top component will have the label, “Back to top” with an arrow icon to the left of the label. On small screens, the Back to top component will only have the arrow icon. Use one Back to top component per page.
@@ -22,7 +22,7 @@ draft: true
 * In pages with static content that is short in length.
 
 ### Placement
-* The Back to top component is anchored to the lower right edge of the main content container on desktop, and the lower right edge of the viewport on smaller screens.
+* The Back to top component is anchored to the lower right edge of its parent container (the main content area) on desktop, and the lower right edge of the viewport on smaller screens.
 * In the desktop view there should be at least 5 spacing units (40 pixels) of white space above the Back to top component and 2.5 spacing units (20 pixels) white space below. 
 * In smaller screens where the Back to top component is the arrow icon, there should be at least 4 spacing units (32 pixels) of white space above and 2 spacing units (16 pixels) below the component.  
 
