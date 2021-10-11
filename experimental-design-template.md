@@ -20,11 +20,11 @@ Talk about the "why" of your Experimental pattern. What problem(s) will you be s
 
 ![Form Confirmation page example](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/Form-confirmation-mini-template.png)
 
-1. **Callout one**. Description.
-2. **Callout two**. Description.
-3. **Callout three**. Description.
-4. **Callout four**. Description.
-5. **Callout five**. Description.
+1. **Name**. Description.
+2. **Name**. Description.
+3. **Name**. Description.
+4. **Name**. Description.
+5. **Name**. Description.
 
 ## UX behavior 
 
