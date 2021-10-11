@@ -17,17 +17,24 @@ draft: true
 {% include storybook-preview.html height="100px" story="components-breadcrumbs--mobile-first" %}
 
 
-<!-- Optional section
 ## Variations
-* If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.
-{% include storybook-preview.html height="300px" story="components-table--complex" %}
--->
+
+*If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.
+
+- The breadcrumb for online applications only shows up to the initial page in the form flow.  It does not continue to track every step/page within the flow.  In this scenario, forward and backward CTAs should be provided as part of the main content of the form flow as appropriate, and the breadcrumb only provides a link to the beginning of the form. 
 
 ## Usage
 
 *What does this component do? Does the component look or behave differently on small vs. large screens? Talk about differences. What other details will help stakeholders use this component as you intended?*
 
+- Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history. 
+- The placement of the breadcrumb must be consistent from page to page. 
+- Always use consistent styling and interactons throughout the site, so users do not experience unexpected changes as they navigate through related pages. This includes using a character as a separator between segments.   
+- Each breadcrumb segment must match the H1 of the corresponding page. 
+- The breadcrumb should always include a link to the home page of the site. 
+- The breadcrumb should always end with the current page as the last segment. The only exception to this is for display on mobile. 
 - 
+
 
 ### When to use
 
@@ -42,6 +49,7 @@ draft: true
 - Do not use a breadcrumb on the top page of a site (i.e. the home page). 
 - Do not use a breadcrumb if the path or hierarchy of the page is irrelevant to the user or experience. 
 - Do not use a breadcrumb for products that have a flat structure (i.e. only 2 levels of content or less)
+- Do not use a breadcrumb if it would create a way for a user to exit or navigate away from a user flow that they are unable to return to, or would result in a loss of data. 
 
 
 ### Placement
