@@ -19,7 +19,7 @@ draft: true
 
 ## Variations
 
-*If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.
+*If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.*
 
 - The breadcrumb for online applications only shows up to the initial page in the form flow.  It does not continue to track every step/page within the flow.  In this scenario, forward and backward CTAs should be provided as part of the main content of the form flow as appropriate, and the breadcrumb only provides a link to the beginning of the form. 
 
@@ -29,10 +29,10 @@ draft: true
 
 - Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history. 
 - The placement of the breadcrumb must be consistent from page to page. 
-- Always use consistent styling and interactons throughout the site, so users do not experience unexpected changes as they navigate through related pages. This includes using a character as a separator between segments.   
-- Each breadcrumb segment must match the H1 of the corresponding page. 
-- The breadcrumb should always include a link to the home page of the site. 
-- The breadcrumb should always end with the current page as the last segment. The only exception to this is for display on mobile. 
+- Always use consistent styling and interactons for the breadcrumb throughout the site, so users do not experience unexpected changes as they navigate through related pages. This includes using a consistent character as a separator between segments.   
+- Each breadcrumb segment should match the H1 of the corresponding page. 
+- The breadcrumb path should always include a link to the home page of the site. 
+- The breadcrumb path must always end with the current page as the last segment. The only exception to this is for display on mobile. 
 - 
 
 
@@ -40,7 +40,9 @@ draft: true
 
 *When would someone want to use this component in their solution?*
 
-- Use a breadcrumb when it is important to the user to understand where they are in the site, and have the ability to navigate up the hierarchy. 
+- Use a breadcrumb when content is more than 2 levels deep. 
+- Use a breadcrumb when it is important to the user to understand where they are in the site.
+- Use a breadcrumb when the user may need to navigate up the hierarchy of their current page. 
 
 ### When not to use
 
@@ -63,7 +65,7 @@ draft: true
 
 *Talk about the interaction details of the component here. What component states are there to consider? Error, empty, not enabled, etc.*
 
-- 
+- All segements, except the current page, should link to the applicable page
 
 ## Accessibility considerations
 
