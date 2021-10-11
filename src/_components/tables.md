@@ -21,8 +21,8 @@ anchors:
 * When organizing precise numerical data, such as statistical data.
 
 ### When to consider something else
-* Tables should be used sparingly. When content can be organized as a [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (e.g. 2-column term and description), a description list should be used. 
-* Lists will generally be more accessible on mobile screens since they will not require a horizontal scroll or create narrow, unreadable columns.
+* Use tables sparingly. When content can be organized as a [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (e.g. 2-column term and description), a description list should be used. Lists will generally be more accessible on mobile screens since they will not require a horizontal scroll or create narrow, unreadable columns.
+* Avoid layout tables (tables that contain no data and are used solely for text formatting purposes).
 
 ### How to use tables
 - **Align data according to the content** 
@@ -40,9 +40,11 @@ anchors:
 ## Accessibility considerations
 * Table headers must be designated with `<th>`.
 * Header labels must accurately describe the corresponding group of cells.
-* Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
-* Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
+* Each header cell should have `scope="col"` or `scope="row"`.
+* Complex tables with more than two levels of headers should use `id` and `headers` attributes so that data cells and header associations are explicit.
+* Nested tables should be avoided.
 * When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+* The caption should succinctly describe the table in a meaningful way.
 
 # Responsive list table 
 
@@ -57,7 +59,7 @@ anchors:
 Use a list view table when you need to present a list of information in an itemized way.  
 
 ### When to consider something else
-- When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens 
+- When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens. 
 - For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer. All column heading labels should total no more than 60 characters. 
 
 ### How to use responsive view tables
