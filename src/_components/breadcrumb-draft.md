@@ -33,7 +33,6 @@ draft: true
 - Each breadcrumb segment should match the H1 of the corresponding page. 
 - The breadcrumb path should always include a link to the home page of the site. 
 - The breadcrumb path must always end with the current page as the last segment. The only exception to this is for display on mobile. 
-- 
 
 
 ### When to use
