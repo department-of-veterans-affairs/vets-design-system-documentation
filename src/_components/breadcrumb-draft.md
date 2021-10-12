@@ -69,7 +69,6 @@ draft: true
 
 - All the links in the breadcrumb, except the current page, should be interactive and link to their corresponding page.
 - The current page segment of the breadcrumb should not be interactive or link. 
-- 
 
 
 ## Accessibility considerations
