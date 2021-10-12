@@ -2,7 +2,7 @@
 layout: default
 sub_section: Experimental pattern name
 title: Experimental pattern name
-draft: false
+draft: true
 ---
 Suggested by: your name
 
