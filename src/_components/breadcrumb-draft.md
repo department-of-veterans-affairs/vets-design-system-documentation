@@ -7,7 +7,7 @@ draft: true
 
 # Breadcrumbs
 
-<p class="va-introtext">The breadcrumb is a sitewide navigation component that shows users where they are in the site and gives them a way to navigate up a level in the site hierarchy or backwards in a flow. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results. This can improve rankings, and provide users with additional context. </p>
+<p class="va-introtext">The breadcrumb is a sitewide navigation component that shows users where they are in the site and gives them a way to navigate up levels in the site hierarchy. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results. This can improve rankings, and provide users with additional context. </p>
 
 ## Desktop
 {% include storybook-preview.html height="100px" story="components-breadcrumbs--default" %}
