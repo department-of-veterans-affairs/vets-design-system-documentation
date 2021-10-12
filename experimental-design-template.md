@@ -38,7 +38,7 @@ Add supplemental information and/or PR links here. You may delete this section i
 
 ## Design mockups
 
-Links to images or Sketch files. Please make sure you are using Sketch for Teams, and include mobile and desktop versions of your design.
+Add links to images or Sketch for Teams files here. Please include mobile and desktop versions of your design.
 
 ## Accessibility notes
 
