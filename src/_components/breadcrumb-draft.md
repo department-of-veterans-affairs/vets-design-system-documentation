@@ -78,8 +78,16 @@ draft: true
 
 - 
 
+## SEO considerations
+
+*Include any information on how the component may impact SEO.*
+
+- Search engines utilize breadcrumbs to understand your site structure and gain additional context about your page to help in ranking.
+- Breadcrumbs can also be displayed in search engine results pages (SERPs), which provides additional context to users about your page.
+
+
 ## Resources
 
 *Links to research, design files, etc.*
 
-- 
+- Breadcrumbs not only provide benefits to users, but they can also improve SEO and
