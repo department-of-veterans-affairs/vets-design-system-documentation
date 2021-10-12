@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: breadcrumbs
-title: Breadcrumbs
+title: Breadcrumbs - draft
 draft: true
 ---
 
@@ -21,14 +21,14 @@ draft: true
 
 *If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.*
 
-- The breadcrumb for online applications only shows up to the initial page in the form flow.  It does not continue to track every step/page within the flow.  In this scenario, forward and backward CTAs should be provided as part of the main content of the form flow as appropriate, and the breadcrumb only provides a link to the beginning of the form. 
+
 
 ## Usage
 
 *What does this component do? Does the component look or behave differently on small vs. large screens? Talk about differences. What other details will help stakeholders use this component as you intended?*
 
 - Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history. 
-- The placement of the breadcrumb must be consistent from page to page. 
+  - For online applications and forms, the breadcrumb represents the forms's placement within the site hierarchy, it does not track the steps or progress of the form flow.  In other words, the breadcrumb will only up to show the form as the current page segment, and will maintain that display while the user goes through the flow. For navigation within the form flow, forward and backward CTAs can be provided as part of the main content as appropriate. 
 - If you use a breadcrumb for one page in a hierarchy, always use a breadcrumb for all other pages within that hierarchy. 
 - Always use consistent styling and interactons for the breadcrumb throughout the site, so users do not experience unexpected changes as they navigate through related pages. This includes using a consistent character as a separator between segments.   
 - Each breadcrumb segment should match the H1 of the corresponding page. 
@@ -51,7 +51,7 @@ draft: true
 
 - Do not use a breadcrumb on the top page of a site (i.e. the home page). 
 - Do not use a breadcrumb if the path or hierarchy of the page is irrelevant to the user or experience. 
-- Do not use a breadcrumb if the site has a flat structure (i.e. only 2 levels of content or less)
+- Do not use a breadcrumb if the site/experience has a flat structure (i.e. only 2 levels of content or less)
 - Do not use a breadcrumb if it would create a way for a user to exit or navigate away from a user flow that they are unable to return to, or would result in a loss of data. 
 
 
@@ -60,13 +60,17 @@ draft: true
 *Where does this component appear on the page? Refer to our grid. Use spacing units (in Utilities) rather than getting too granular with pixel specifications.*
 
 - The breadcrumb should be placed below the header and above the main content.
+- The placement of the breadcrumb must be consistent from page to page. 
 
 
 ### Behavior
 
 *Talk about the interaction details of the component here. What component states are there to consider? Error, empty, not enabled, etc.*
 
-- All segements, except the current page, should link to the applicable page
+- All the links in the breadcrumb, except the current page, should be interactive and link to their corresponding page.
+- The current page segment of the breadcrumb should not be interactive or link. 
+- 
+
 
 ## Accessibility considerations
 
