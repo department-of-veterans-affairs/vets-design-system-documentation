@@ -17,9 +17,9 @@ draft: true
 {% include storybook-preview.html height="100px" story="components-breadcrumbs--mobile-first" %}
 
 
-## Variations
+<!-- ## Variations
 
-*If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.*
+*If multiple variations of the component exist (eg accordions can have a border or be borderless) use this section to present those variations. Include live examples from Storybook.*-->
 
 
 
