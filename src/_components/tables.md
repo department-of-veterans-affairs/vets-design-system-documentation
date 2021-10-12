@@ -1,56 +1,65 @@
 ---
 layout: default
-sub_section: tables
-title: Tables
+sub_section: table
+title: Table
 anchors:
-  - anchor: Tables
-  - anchor: Responsive List Tables 
+  - anchor: Table
+  - anchor: Responsive list table
 ---
 
-# Tables
+# Table
 
-<p class="va-introtext">Tables show tabular data in columns and rows.</p>
+<p class="va-introtext">The table component organizes data into columns and rows.</p>
 
 {% include storybook-preview.html height="300px" story="components-table--default" %}
 
-## Usability
-* Tables are great at displaying tabular data. Minimal visual styling helps surface this information more easily.
+## Usage
+* A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
 
-### When to use tables
-* When you need tabular information, such as statistical data.
+### When to use a table
+* When presenting data that can be compared across multiple categories.
+* When organizing precise numerical data, such as statistical data.
 
 ### When to consider something else
-* Depending on the type of content, consider using other presentation formats such as definition lists or hierarchical lists.
+* Use tables sparingly. When content can be organized as a [description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) (e.g. 2-column term and description), a description list should be used. Lists will generally be more accessible on mobile screens since they will not require a horizontal scroll or create narrow, unreadable columns.
+* Avoid layout tables (tables that contain no data and are used solely for text formatting purposes).
 
 ### How to use tables
 - **Align data according to the content** 
-  - Always top align all data in rows
-  - Numerical data is right-aligned
-  - Textual data is left-aligned
-  - Headers are aligned with their data
-  - Do not center align
-- **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word
-
+  - Always top align all data in rows.
+  - Numerical data is right-aligned.
+  - Textual data is left-aligned.
+  - Headers are aligned with their data.
+  - Do not center align.
+- **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
+- **Be selective about using column sort.**
+  - Sort should only be included in a table if it can assist the user in completing a task.
+  - Only one column per table should be sortable, keep it simple.
+  - A default sort order (ascending or descending) must be defined.
 
 ## Accessibility considerations
-* Simple tables can have two levels of headers. Each header cell should have `scope="col"` or `scope="row"`.
-* Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
+* Table headers must be designated with `<th>`.
+* Header labels must accurately describe the corresponding group of cells.
+* Each header cell should have `scope="col"` or `scope="row"`.
+* Complex tables with more than two levels of headers should use `id` and `headers` attributes so that data cells and header associations are explicit.
+* Nested tables should be avoided.
 * When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+* The caption should succinctly describe the table in a meaningful way.
 
-# Responsive List Tables 
+# Responsive list table 
 
-<p class="va-introtext">List view tables transition into a list view when on smaller screens. A responsive list view works best on tables where veterans are looking up a piece of information. 
+<p class="va-introtext">Responsive list tables transition into a list view on smaller screens. A responsive list table is a good solution when veterans need to look up a piece of information. 
 </p>
 
 {% include storybook-preview.html height="950px" width="400px" story="components-table--default" %}
 
-## Usability
+## Usage
 
 ### When to use the responsive list view table
-Use list view table when you need to present a list of information in an itemized way.  
+Use a list view table when you need to present a list of information in an itemized way.  
 
 ### When to consider something else
-- When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens 
+- When users have to compare rows and columns, consider using a comparison table layout in which the table layout remains the same on smaller screens. 
 - For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer. All column heading labels should total no more than 60 characters. 
 
 ### How to use responsive view tables
