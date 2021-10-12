@@ -90,4 +90,4 @@ draft: true
 
 *Links to research, design files, etc.*
 
-- Breadcrumbs not only provide benefits to users, but they can also improve SEO and
+
