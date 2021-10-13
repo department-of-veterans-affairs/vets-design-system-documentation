@@ -10,6 +10,10 @@ title: Back to top
 
 {% include storybook-preview.html height="300px" story="components-va-back-to-top--default" %}
 
+Mobile view:
+
+{% include storybook-preview.html height="300px" width="400px" story="components-va-back-to-top--default" %}
+
 ## Usage
 * On large and medium screens, the Back to top component will have the label, “Back to top” with an arrow icon to the left of the label. On small screens, the Back to top component will only have the arrow icon. Use one Back to top component per page.
 
