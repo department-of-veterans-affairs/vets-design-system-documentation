@@ -3,11 +3,11 @@
 layout: default
 
 #Page info: Edit these items below
-title: [URL Standards]
+title: [URL standards]
 draft: true
 ---
 
-# URL Standards
+# URLs
 
 URLs are a highly visible attribute of your content that impacts user experience, accessibility, and search rankings.  The URL of a page specifies the page's name and location within VA.gov. 
 
@@ -22,7 +22,7 @@ URLs are a highly visible attribute of your content that impacts user experience
 ![The structure of a URL]({{site.baseurl}}/images/url-segments.jpg)
 
 
-### SEO Considerations
+## SEO considerations
 - URLs can impact search rankings and help support other metadata driving search rankings. 
 - The URL structure provides search engines (and users) context and meaning, as well as information on the priority and relationship between content on your site.
   - Content placed higher in a hierarchy (e.g. a root level page) is seen as more important than another similar deeper page. 
@@ -85,4 +85,71 @@ URLs are a highly visible attribute of your content that impacts user experience
   - Example: These two URLs are similar but may be perceived differently based on the use of the word “and”: `www.va.gov/survivor-dependent-benefits/` versus `www.va.gov/survivor-and-dependent-benefits/`
   - Is the content about dependents _of_ survivors, or, dependents _and_ survivors?
 
+
+### Guidelines for parameters in URLs 
+When using parameters, in addition to all the URL standards above, please use these guidelines when possible to create clean and understandable URL strings. 
+
+- Parameter labels should generally no more than 1 word
+- Use a parameter label that indicates what the parameter is, not a generic word such as “parm” or “key”
+- Do not expose empty/null value parameters in the URL
+- If multiple parameters are used, list them in a consistent order when possible
+- Use the rel=canonical attribute when the parameter-based URL is similar content to the canonical content (i.e. sorting does not change the content, but pagination and search parameters do)
+
+### Guidelines for anchor tags (i.e. jump links) 
+When using jump links, or, anchored links, in addition to all the URL standards above, please use these guidelines when possible to create clean and understandable URL strings.
+
+- Anchor tag IDs should be treated as part of the URL and preferably follow all the same standards as URLs
+- Ideally the tag ID should be plain language keywords that help provide meaning to the content, e.g. using a primary keyword from the associated heading. This works best for anchor tags on relatively static headings such as the Hub page. 
+  - Example:  This link provides a user with quick access to tasks for managing their health care benefits - https://www.va.gov/health-care/#manage-your-health-and-benefits
+- If the heading is lengthy, or could potentially change over time, using an ID (i.e. the content ID from drupal) is a another option.  This works well for creating anchor links to accordions that hold frequently asked questions.
+
+
+## Vanity and shortened URLs 
+
+A vanity URL is a short, simple, memorable and readable URL that utilizes the existing domain (va.gov) and redirects users to a specific page of the va.gov site.  
+- Example: www.va.gov/vre takes users to https://www.va.gov/careers-employment/vocational-rehabilitation/ 
+
+
+A “shortened URL” is a short, simple URL, but is generally made up of a randomized set of characters. VA does not currently provide a URL shortener service, so any external shortener services will not utilize the va.gov domain. 
+- Example: http://go.usa.gov/TBUj takes users to https://www.usa.gov/Citizen/Topics/Environment-Agriculture.shtml
+
+
+### About vanity URLs
+
+- The structure of a VA.gov vanity URL is the "va.gov" plus a short keyword segment -  www.va.gov/[keyword] 
+  - We do not use sub-domains for vanity urls (i.e. education.va.gov) 
+  - We do not use custom top-level domains for vanity urls (i.e. www.va.apply) 
+- We do not maintain the visibility of the vanity URL in a user’s browser.  Once they enter the vanity URL, they are immediately redirected to the appropriate landing page and the actual canonical URL for that page will be displayed in their browser.  
+
+**When to use a vanity URL**
+- To provide a short and memorable URL for high profile content or tools on va.gov that lives 3 or more levels deep or has a URL with 70 or more characters. 
+- To provide an easy to remember and speak/type URL for a campaign landing page.
+
+**When not to use a vanity URL:**
+- For links to content that exists external to va.gov.
+- For links to files or documents such as a pdf.
+- For links to content or tools that live within the top 1-2 levels of the site already (i.e. www.va.gov/health-care). 
+- For links to content in the Resources and Support area of the site.
+- To create an acronym or abbreviation, or to use one that is not well known by Veterans.
+
+### Guidance for choosing a vanity URL
+
+- Vanity URLs must be easy to say and type, as they are often used in print, video and audio campaigns where users have to understand, remember and then enter them into their browser.
+  - Do users need to change keyboards on a mobile device to enter the vanity URL (i.e. switching between alpha and numeric character keyboards)?
+  - Can assisted tech users easily speak the URL?
+- The vanity URLs should send users to content that matches the meaning and specificity of the keywords used in the URL.
+- You must follow the core URL standards when determining your vanity URL, to ensure it is  unique, accurate, readable and properly formatted. 
+- Examples: 
+  - Good:  www.va.gov/vre - Although this uses an acronym, it is an exclusive acronym within VA and is a well-known acronym a very long program name. It also greatly shortens a long URL for a key benefit.   
+  - Poor:  www.va.gov/TrustVA - This is a relatively descriptive URL, but it uses uppercase letters which means that users must type (or speak) the appropriate capitalization or the redirect will not work. 
+  - Poor:  www.va.gov/dependents - The word “dependents” is a very broad term that could be interpreted a number of ways - is it a landing page for Veteran dependents to view benefits and services for them, or is it a place for Veterans to manage their dependents, etc. 
+
+
+### How to request a vanity URL
+
+- Requests for vanity URLs need to be submitted AT LEAST 2 weeks in advance of when they need to be live. This allows for time to establish and confirm the final URL and landing page as well as give technical teams time to plan for implementation.
+- When requesting a vanity URL, OCTO may decline or provide alternatives based on adherence to standards and the above guidance. 
+- Ad campaign tracking must be handled by the requestor, and will not be implemented through this process.
+
+To request a vanity URL, please submit a  [Redirect, URL change, or vanity URL request issue](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?assignees=mnorthuis&labels=ia&template=redirect-request.md&title=Redirect+Request), and follow the instructions in the template. 
 
