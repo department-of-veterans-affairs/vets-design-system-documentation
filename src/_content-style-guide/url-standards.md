@@ -3,7 +3,11 @@
 layout: default
 
 #Page info: Edit these items below
-title: [URL standards]
+title: [URLs]
+anchors:
+  - anchor: SEO considerations
+  - anchor: URL standards 
+  - anchor: Vanity and shortened URLs
 draft: true
 ---
 
@@ -11,7 +15,6 @@ draft: true
 
 URLs are a highly visible attribute of your content that impacts user experience, accessibility, and search rankings.  The URL of a page specifies the page's name and location within VA.gov. 
 
-### About URLs
 - URLs consists of a domain, sub-directories (optional), and a page name.  
 - A good URL helps users AND search engines by providing: 
   - A high-level description of what the content is about
