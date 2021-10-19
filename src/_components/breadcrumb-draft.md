@@ -56,8 +56,7 @@ draft: true
 - The current page segment of the breadcrumb should not be interactive or link. 
 
 
-## Accessibility considerations
-- 
+<!--## Accessibility considerations-->
 
 <!-- ## SEO considerations (optional)-->
 ## SEO considerations
