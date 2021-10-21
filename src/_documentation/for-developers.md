@@ -21,8 +21,7 @@ How to install and use VA Design System styles and components with your project.
 
 ## Parts of the Design System
 - [Formation](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) is the name of the VA.gov design system styles
-- [React components](https://github.com/department-of-veterans-affairs/component-library)
-- [Web components](https://github.com/department-of-veterans-affairs/component-library/tree/web-components)
+- [Component library](https://github.com/department-of-veterans-affairs/component-library)
 
 ## Using the Design System
 
@@ -63,14 +62,15 @@ The Design System team is working on developing a library of reusable Web Compon
 
 This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
 
-1. Add the `web-components` dependency to your node/yarn project using `yarn add web-components@https://github.com/department-of-veterans-affairs/component-library.git#wc-vX.Y.Z`. Replace `X.Y.Z` with the [release number you want from the 'Releases' page](https://github.com/department-of-veterans-affairs/component-library/releases).
+1. Add the `component-library` dependency to your node/yarn project using `yarn add @department-of-veterans-affairs/component-library`.
+
 1. Import the global CSS file which contains important CSS variables:
   ```js
-  import 'web-components/dist/component-library/component-library.css';
+  import '@department-of-veterans-affairs/component-library/dist/main.css';
   ```
 1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
   ```js
-  import { applyPolyfills, defineCustomElements } from 'web-components/loader';
+  import { applyPolyfills, defineCustomElements } from '@department-of-veterans-affairs/component-library';
   ```
 1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
   ```js
