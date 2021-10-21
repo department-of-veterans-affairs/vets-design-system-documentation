@@ -6,7 +6,7 @@ title: Back to top
 
 # Back to top
 
-<p class="va-introtext">The Back to top component is a button shortcut that allows the user to quickly navigate to the top of a long page of content.</p>
+<p class="va-introtext">The Back to top component is a shortcut that allows the user to quickly navigate to the top of a long page of content.</p>
 
 {% include storybook-preview.html height="300px" story="components-va-back-to-top--default" %}
 
@@ -30,11 +30,11 @@ Mobile view:
 * In smaller screens where the Back to top component is the arrow icon, there should be at least 4 spacing units (32 pixels) of white space above and 2 spacing units (16 pixels) below the component.
 
 ### Behavior
-* As the user scrolls down the page, the Back to top component reveals as a sticky button in the lower right edge of the main content area.
+* As the user scrolls down the page, the Back to top component reveals as a sticky element in the lower right edge of the main content area.
 * The Back to top component stays fixed in the lower right edge of the main content area when the user reaches the bottom of the page.
-* Clicking the Back to top button takes the user to the top of the page.
+* Clicking Back to top takes the user to the top of the page.
 
 ## Accessibility considerations
 * Animations can be distracting to users with vestibular conditions.
 * Some users may have smooth scrolling turned off in their preferences, which will affect the transition going back to the top of the page.
-* After the user has clicked the Back to top button, the code should call focus on an element near the top of the page, such as the H1.
+* After the user has clicked Back to top, the code should call focus on an element near the top of the page, such as the H1.
