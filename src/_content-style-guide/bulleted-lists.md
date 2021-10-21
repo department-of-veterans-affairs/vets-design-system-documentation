@@ -18,7 +18,8 @@ Bulleted lists help make information more scannable and easier to understand.  I
 __Punctuation for bullet lists__
 - When the list is made up of fragments, don't use ending periods.
 - When the list is made up of full sentences, use ending periods. (Example: Each item could be a complete sentence if it stood alone, even without the intro sentence or header.)
-- Don't use a period at the end of the last bullet in a series of bullets.
+- When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the complete sentence. Also use ending periods on the other bulleted items in that list, even if they are fragments.
+- Don't use a period at the end of the last bullet in a series of fragments.
 
 Note: Punctuation of bullets are determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets that are full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
 <br />
