@@ -53,3 +53,6 @@ What does a content creator, designer, or developer need to know to implement an
 
 ## Resources
 * Links to research, design files, etc.
+
+## Related
+* Links to related items in the Content Styleguide or elsewhere on design.va.gov.
