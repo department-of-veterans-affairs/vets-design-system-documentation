@@ -15,13 +15,13 @@ Bulleted lists help make information more scannable and easier to understand.  I
 - Use parallel construction within the same list. (Make each bullet start with a verb; or make each a noun phrase; etc.)
 
 
-__Punctuation for bullet lists__
+__Punctuation for bulleted lists__
 - When the list is made up of fragments, don't use ending periods.
 - When the list is made up of full sentences, use ending periods. (Example: Each item could be a complete sentence if it stood alone, even without the intro sentence or header.)
-- When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the complete sentence. Also use ending periods on the other bulleted items in that list, even if they are fragments.
+- When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the additional sentence. To be consistent, also use ending periods on the other items in the bulleted list, even if they're fragments.
 - Don't use a period at the end of the last bullet in a series of fragments.
 
-Note: Punctuation of bullets are determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets that are full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
+Note: Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets that are full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
 <br />
 
 
