@@ -110,7 +110,7 @@ __All of these must be true. You're:__
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
 
-Use ending periods for each bulleted item in a list if one of the items contains a fragment and an additional sentence. 
+Use ending periods for each bulleted item in a list if any of the items contain a fragment and an additional sentence. 
   
 Here's what you'll need to apply:
 - **Social Security number** for you, your spouse, and your qualified dependents. 
