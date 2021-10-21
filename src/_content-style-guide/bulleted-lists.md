@@ -101,3 +101,37 @@ __All of these must be true. You're:__
 
 </div>
 
+<br />
+
+
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+Use ending periods for each bulleted item in a list if one of the items contains a fragment and an additional sentence. 
+  
+Here's what you'll need to apply:
+- **Social Security number** for you, your spouse, and your qualified dependents. 
+- **Your military discharge information.** If you sign in to apply, we may be able to fill in this information for you. If you don't sign in to apply, we'll ask you to upload a copy of your DD214 or other separation documents.
+- **Insurance cards** for all health insurance companies that cover you. This includes any coverage that you get through a spouse or significant other. This also includes Medicare, private insurance, or insurance from your employer.
+
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+ 
+Here's what you'll need to apply:
+
+- **Social Security number** for you, your spouse, and your qualified dependents
+- **Your military discharge information.** If you sign in to apply, we may be able to fill in this information for you. If you don't sign in to apply, we'll ask you to upload a copy of your DD214 or other separation documents.
+- **Insurance cards** for all health insurance companies that cover you. This includes any coverage that you get through a spouse or significant other. This also includes Medicare, private insurance, or insurance from your employer.
+
+</div>
+</div>
+
+</div>
+
