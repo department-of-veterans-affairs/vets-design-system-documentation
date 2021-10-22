@@ -41,7 +41,7 @@ URLs consists of a domain, sub-directories (optional), and a page name.
 
 ## URL standards 
 
-**URLs must be unique and distinctly different.**
+### URLs must be unique and distinctly different.
 - Two pages with the same URL cannot exist on the same site. 
 - We should not have two pages with very similar URLs. Each URL should be specific enough to clearly differentiate each page.
 
@@ -55,7 +55,7 @@ URLs consists of a domain, sub-directories (optional), and a page name.
 </div>
 
 
-**URLs must adhere to formatting standards.**
+### URLs must adhere to formatting standards.
 - All alpha characters in URLs must be lowercase 
 - All individual words should be separated by hyphens.  Do not use underscores or other characters as separators. 
 - URLs cannot include spaces
@@ -65,7 +65,7 @@ URLs consists of a domain, sub-directories (optional), and a page name.
   - Example: www.va.gov/health-care/apply-for-health-care-form-10-10-ez 
 - URLs cannot be longer than 2083 characters or it may not be rendered correctly by all browsers. 
 
-**URLs must be accurate.**
+### URLs must be accurate.
 - URLs must accurately represent the content of the page
   - If the content does not include information on eligibility, do not use the word “eligibility” in the URL.  This can be misleading to users and search engines. 
 - URLs must accurately represent the placement and hierarchy of the content. 
@@ -79,7 +79,7 @@ URLs consists of a domain, sub-directories (optional), and a page name.
   - If an empty sub-directory is necessary (for future planning for example), ensure the empty directory redirects users to a proper location so users do not get a 404.
 -URLs cannot have incorrect spelling or grammar.  
 
-**URLs must be readable, utilize plain language and include appropriate and consistent keywords.**
+### URLs must be readable, utilize plain language and include appropriate and consistent keywords.
 - Users (and search engines) must be able to easily “read” the URL and gain an understanding of its content and purpose
 - URL keywords should be selected from the primary keywords used in the H1 of the page
   - Primary keywords representing the content should be consistently used across headings, links, URLs and navigation components. 
@@ -87,7 +87,7 @@ URLs consists of a domain, sub-directories (optional), and a page name.
   - Example: Health care is two words in our standards, and should be represented as  “health-care” in a URL. 
 
 
-**URLs must be clear, specific, and concise.** 
+### URLs must be clear, specific, and concise.
 - Do not use overly broad terms that may be misinterpreted - be specific in describing the focus of the page.
   - URLs should not be shortened so much that meaning and context are lost.
   - Example: A URL such as www.va.gov/dependents uses a very broad label.  Users and search engines may see this and interpret it as a broad content page for dependents of Veterans.  Using this URL for a specific type of dependent content, could result in a frustrating experience.  It also removes that URL as an option for broader dependent content.  A better URL for a task-based feature such may be something like www.va.gov/verify-your-dependents/.
