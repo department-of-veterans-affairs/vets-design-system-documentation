@@ -13,15 +13,13 @@ draft: true
 
 # URLs
 
-URLs are a highly visible attribute of your content that impacts user experience, accessibility, and search rankings.  The URL of a page specifies the page's name and location within VA.gov. 
-
-A good URL helps users AND search engines by providing: 
+**URLs are a highly visible attribute of your content that improve user experience, accessibility, and search rankings by providing:** 
 - A high-level description of what the content is about
 - The location of the content within your site 
 - An indication of the priority of the content based on the depth (i.e. number of sub-directories in the URL path) of the content
 - Information about how the content is related to other content within your site.
 
-URLs consists of a domain, sub-directories (optional), and a page name.  
+**The URL of a page specifies the page's name and location within VA.gov. It consists of a domain, sub-directories (optional), and a page name.**  
 
 ![The structure of a URL]({{site.baseurl}}/images/url-segments.jpg)
 
@@ -51,6 +49,7 @@ URLs consists of a domain, sub-directories (optional), and a page name.
 <div class="do-dont__content" markdown="1">
 <p> The following 2 URLs are very similar: www.va.gov/health-care/  and www.va.gov/healthcare/. </p>
 <p> In this case, the URLs for both pages should be reviewed to determine what makes them unique and how the URL, along with the H1 and meta data, can help articulate the difference so users and search engines better understand what to expect from each individual page.
+</div>
 </div>
 </div>
 
