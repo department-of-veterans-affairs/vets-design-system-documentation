@@ -62,6 +62,6 @@ draft: true
 ## SEO considerations
 - Search engines utilize breadcrumbs to understand your site structure and gain additional context about your page to help in ranking.
 - Breadcrumbs can also be displayed in search engine results pages (SERPs), which provides additional context to users about your page.
+- Breadcrumbs are not the only element used by search engines, go to [writing for SEO in the content styleguide](https://design.va.gov/content-style-guide/seo) for more SEO assistance. 
 
-
-## Resources
+<!-- ## Resources (optional)-->
