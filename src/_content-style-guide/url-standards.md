@@ -148,11 +148,4 @@ A “shortened URL” is a short, simple URL, but is generally made up of a rand
   - Poor:  www.va.gov/dependents - The word “dependents” is a very broad term that could be interpreted a number of ways - is it a landing page for Veteran dependents to view benefits and services for them, or is it a place for Veterans to manage their dependents, etc. 
 
 
-### How to request a vanity URL
-
-- Requests for vanity URLs need to be submitted AT LEAST 2 weeks in advance of when they need to be live. This allows for time to establish and confirm the final URL and landing page as well as give technical teams time to plan for implementation.
-- When requesting a vanity URL, OCTO may decline or provide alternatives based on adherence to standards and the above guidance. 
-- Ad campaign tracking must be handled by the requestor, and will not be implemented through this process.
-
-To request a vanity URL, please submit a  [Redirect, URL change, or vanity URL request issue](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?assignees=mnorthuis&labels=ia&template=redirect-request.md&title=Redirect+Request), and follow the instructions in the template. 
 
