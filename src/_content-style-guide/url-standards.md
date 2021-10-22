@@ -38,7 +38,7 @@ URLs are a highly visible attribute of your content that impacts user experience
   - A permanent redirect (i.e. 301) also ensures that all SEO value is passed along to the new page. 
 
 
-## URL Standards 
+## URL standards 
 
 **URLs must be unique and distinctly different.**
 - Two pages with the same URL cannot exist on the same site. 
