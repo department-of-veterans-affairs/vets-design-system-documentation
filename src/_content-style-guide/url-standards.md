@@ -24,7 +24,7 @@ draft: true
 ![The structure of a URL]({{site.baseurl}}/images/url-segments.jpg)
 
 
-## SEO impacts
+## URLs should be optimized for SEO
 - URLs can impact search rankings and help support other metadata driving search rankings. 
 - The URL structure provides search engines (and users) context and meaning, as well as information on the priority and relationship between content on your site.
   - Content placed higher in a hierarchy (e.g. a root level page) is seen as more important than another similar deeper page. 
@@ -32,10 +32,7 @@ draft: true
 - The ability for users to read and understand your URL increases the likelihood of the link being clicked, which positively impacts search rankings. 
 - Keywords in URLs have some impact. However, the value of a keyword in a URL diminishes the further down the URL it appears in. In other words, it will have less value in the fourth segment than in the second segment of the URL.  Strive for shorter URLs that feature only useful keywords. 
 - Search engines often truncate URLs that are longer than 72 characters when displaying the URL in search results. 
-- Be sure to redirect old URLs if the content is archived or the URL changes.  
-  - This ensures there are no broken links and that users can still get to your site. 
-  - A permanent redirect (i.e. 301) also ensures that all SEO value is passed along to the new page. 
-
+- Always implement a redirect when pages are taken down or the URL changes to ensure users do not encounter a 404 page, there are no broken links across your site, and search engines know pass SEO value along to the new page. 
 
 ## URL standards 
 
@@ -48,7 +45,7 @@ draft: true
 <h3 class="do-dont__heading">Example</h3>
 <div class="do-dont__content" markdown="1">
 <p> The following 2 URLs are very similar: www.va.gov/health-care/  and www.va.gov/healthcare/. </p>
-<p> In this case, the URLs for both pages should be reviewed to determine what makes them unique and how the URL, along with the H1 and meta data, can help articulate the difference so users and search engines better understand what to expect from each individual page.
+<p> In this case, the URLs for both pages should be reviewed to determine what makes them unique and how the URL, along with the H1 and meta data, can help articulate the difference so users and search engines better understand what to expect from each individual page. </p>
 </div>
 </div>
 </div>
@@ -96,6 +93,7 @@ draft: true
 - Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.  
   - Example: These two URLs are similar but may be perceived differently based on the use of the word “and”: `www.va.gov/survivor-dependent-benefits/` versus `www.va.gov/survivor-and-dependent-benefits/`
   - Is the content about dependents _of_ survivors, or, dependents _and_ survivors?
+
 
 
 ### Guidelines for parameters in URLs 
