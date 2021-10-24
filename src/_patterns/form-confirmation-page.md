@@ -4,22 +4,22 @@ title: Form confirmation
 draft: true
 ---
 
-# Form confirmation page:
+# Form confirmation page
  
-The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim.
+The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim.
 
-Our current confirmation pages vary in format and content. Below are some of the default components on our current confirmation pages. Teams should tailor the layout and content as needed based on the benefit type and/or stakeholder feedback.
+Our current confirmation pages vary in format and content. Below are some of the default components used in our current confirmation pages. Teams should tailor the layout and content as needed based on the benefit type and/or stakeholder feedback.
 
 ![form confirmation template]({{site.baseurl}}/images/Form-confirmation-mini-template.png) 
 
 The form confirmation page consists of:
 
-A. H1 (should carry over from H1 from the online form)  
-B. Success alert   
-C. Print this page pattern  
-D. Other content elements  
-E. Action link  
-F. Helpful content  
+1. H1 (should carry over from H1 from the online form)  
+2. Success alert   
+3. Print this page pattern  
+4. Other content elements  
+5. Action link  
+6. Helpful content  
 
 ## H1
 
