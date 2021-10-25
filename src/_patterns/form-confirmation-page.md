@@ -32,7 +32,7 @@ File for disability compensation (Form 21-526EZ)
 
 ![success alert]({{site.baseurl}}/success-alert.png) 
 
-Use a [success alert](https://design.va.gov/components/alertboxes) to let your user know that they’ve successfully submitted their form. Content for the success alert depends on the form.
+Use a [success alert](https://design.va.gov/components/alertboxes#success-alert) to let your user know that they’ve successfully submitted their form. Content for the success alert will depend on the form.
 
 Example messages of success alerts on other form confirmation pages:
 
@@ -46,7 +46,7 @@ We’ll send an email confirming your order to **email.va.gov.**
 
 ![print this page pattern]({{site.baseurl}}/images/print-this-page.png) 
 
-The print this page pattern consists of the [Featured content component](https://design.va.gov/components/featured-content), content, and a “Print this page” default blue button. 
+The print this page pattern consists of the [Featured content component](https://design.va.gov/components/featured-content), content, and a “Print this page” [default blue button](https://design.va.gov/components/buttons). 
 
 Print this page pattern consists of:
 - Benefit they’ve applied for
@@ -57,11 +57,11 @@ Print this page pattern consists of:
 - “Print this page” default blue button
 
 ## Other content elements 
-What other content to include on the confirmation page depends on the type of benefit. Some benefit confirmation pages might need more information than others.
+Content to include on the confirmation page will depend on the type of benefit. Some benefit confirmation pages might need more information than others.
 
-Content writers and designers should work together to determine the best format and content for the confirmation page, based on the type of benefit and stakeholder input.
+Content writers and designers should work together to determine the best format and content for the confirmation page, based on the type of benefit and stakeholder input. The [Process list (subway map) component](https://design.va.gov/components/process-list) can be a good solution for presenting next steps or processes where the user may need to track progress over an extended period of time.
 
-Some examples of other content or questions we might want to include on a form's confirmation page are:
+Some examples of other content or questions are:
 - What happens after I apply? 
 - How long will it take VA to process the application?
 - What can the applicant do while they wait?
@@ -72,10 +72,10 @@ Some examples of other content or questions we might want to include on a form's
 
 ![confirmation page action link]({{site.baseurl}}/images/confirmation-page-action-link.png) 
 
- The action link guides the user back to the VA.gov homepage. 
+ The [action link](https://design.va.gov/experimental-design/action_links) guides the user back to the VA.gov homepage. 
 
 ## Helpful content
 
 ![need help content]({{site.baseurl}}/images/need-help.png) 
 
-Helpful content varies depending on form to form. Use the H3 highlight for the title and always label it “Need help?”. The content usually points the user to a number they can call if they need help with their form. 
+Helpful content will vary depending on the form. Use the H3 highlight for the title and always label it “Need help?”. The content usually points the user to a number they can call if they need help with their form. 
