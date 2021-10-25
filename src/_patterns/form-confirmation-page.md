@@ -17,7 +17,7 @@ The form confirmation page consists of:
 1. H1 (should carry over from H1 from the online form)  
 2. Success alert   
 3. Print this page pattern  
-4. Other content elements  
+4. Other content elements (may include process list/subway map)
 5. Action link  
 6. Helpful content  
 
