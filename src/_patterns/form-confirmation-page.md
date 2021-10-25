@@ -30,7 +30,7 @@ File for disability compensation (Form 21-526EZ)
 
 ## Success alert 
 
-![success alert]({{site.baseurl}}/success-alert.png) 
+![success alert]({{site.baseurl}}/images/success-alert.png) 
 
 Use a [success alert](https://design.va.gov/components/alertboxes#success-alert) to let your user know that they’ve successfully submitted their form. Content for the success alert will depend on the form.
 
