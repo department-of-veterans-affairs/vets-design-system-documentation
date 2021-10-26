@@ -21,14 +21,16 @@ The form confirmation page consists of:
 5. Action link  
 6. Helpful content  
 
-## H1
+## Building blocks
+
+### H1
 
 File for [benefit] or Apply for [benefit] and the VA paper form equivalency appears next to or below the H1.
 
 Example:  
 File for disability compensation (Form 21-526EZ)
 
-## Success alert 
+### Success alert 
 
 ![success alert]({{site.baseurl}}/images/success-alert.png) 
 
@@ -42,7 +44,7 @@ Once we’ve reviewed your application, a Caregiver Support Coordinator will con
 **Your order has been submitted.**
 We’ll send an email confirming your order to **email.va.gov.**
 
-## Print this page pattern 
+### Print this page pattern 
 
 ![print this page pattern]({{site.baseurl}}/images/print-this-page.png) 
 
@@ -56,7 +58,7 @@ Print this page pattern consists of:
 - Other important information about their claim, such as disability conditions, they’re claiming. (if applicable)
 - “Print this page” default blue button
 
-## Other content elements 
+### Other content elements 
 Content to include on the confirmation page will depend on the type of benefit. Some benefit confirmation pages might need more information than others.
 
 Content writers and designers should work together to determine the best format and content for the confirmation page, based on the type of benefit and stakeholder input. The [Process list (subway map) component](https://design.va.gov/components/process-list) can be a good solution for presenting next steps or processes where the user may need to track progress over an extended period of time.
@@ -68,13 +70,13 @@ Some examples of other content or questions are:
 - Are there any actions the applicant needs to take while they wait?
 - What can the applicant do if they have additional questions after they apply?
  
-## Action link
+### Action link
 
 ![confirmation page action link]({{site.baseurl}}/images/confirmation-page-action-link.png) 
 
  The [action link](https://design.va.gov/experimental-design/action_links) guides the user back to the VA.gov homepage. 
 
-## Helpful content
+### Helpful content
 
 ![need help content]({{site.baseurl}}/images/need-help.png) 
 
