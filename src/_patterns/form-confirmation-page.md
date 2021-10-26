@@ -41,9 +41,6 @@ Example messages of success alerts on other form confirmation pages:
 **You’ve successfully submitted your application.**
 Once we’ve reviewed your application, a Caregiver Support Coordinator will contact you to discuss next steps. 
 
-**Your order has been submitted.**
-We’ll send an email confirming your order to **email.va.gov.**
-
 ### Print this page pattern 
 
 ![print this page pattern]({{site.baseurl}}/images/print-this-page.png) 
