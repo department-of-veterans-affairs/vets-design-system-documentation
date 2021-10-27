@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Form confirmation page
-draft: true
 ---
 
 # Form confirmation page
