@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bulleted lists
+label: "Draft"
 ---
 
 # Bulleted lists
