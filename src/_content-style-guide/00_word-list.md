@@ -508,7 +508,7 @@ vesicant agents: Use "vesicant (blistering) agents."
 
 Vet Center: Capitalize "Center."
 
-Veteran: On VA.gov, capitalize even when used as a common noun. When possible, you can avoid this awkward style by recasting sentences into a more conversational tone and speaking directly with Veterans, rather than referring to them in the third person.
+Veteran: On VA.gov, capitalize even when used as a common noun. When possible, recast sentences into a more conversational tone, using second person to speak directly with Veterans, rather than referring to them in the third person.
 -	**OK:** Learn about services and benefits that we offer to Veterans and their families.
 -	**Better:** Learn about VA services and benefits that you and your family may be eligible for.
 
