@@ -28,9 +28,10 @@ Talk about the "why" of your Experimental pattern. What problem(s) will you be s
 
 ## UX behavior 
 
-Include placement and interaction details here. You may delete this section if it isn't needed.
+Include placement and interaction details here.
 
 * Bullet points help keep things scannable.
+* You may delete this section if it isn't needed.
 
 ## Additional notes
 
