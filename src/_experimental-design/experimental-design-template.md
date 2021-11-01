@@ -4,7 +4,7 @@ sub_section: Experimental pattern name
 title: Experimental pattern name
 draft: true
 ---
-Suggested by: your name
+Suggested by: your name and team/contract
 
 # Experimental pattern name 
 
