@@ -34,7 +34,11 @@ Include placement and interaction details here. You may delete this section if i
 
 ## Additional notes
 
-Add supplemental information and/or PR links here. You may delete this section if it isn't needed.
+Add supplemental information here. 
+
+* This may include PR links, links to code, etc.
+* Note if your experimental pattern relates to other components or patterns. Please include links.
+* You may delete this section if it isn't needed.
 
 ## Design mockups
 
