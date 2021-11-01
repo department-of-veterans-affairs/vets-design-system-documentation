@@ -1,13 +1,24 @@
 ---
 layout: default
 title: What’s new?
+draft: true
 ---
 
 # What’s new?
 
 <div class="va-introtext">
-The latest news and updates on the Design System, Forms library and the Content styleguide
+The latest news and updates on the Design System, Forms library and the Content style guide
 </div>
+
+---
+
+### November 1, 2021
+**Design System updates**
+
+- Back to top web component
+- Form confirmation page
+- Alert box web component
+- Accordion web component 
 
 ---
 
