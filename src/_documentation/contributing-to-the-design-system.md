@@ -53,11 +53,11 @@ When making the initial request, you can ask to have asynchronous approval if yo
 ### 4. Add your component or pattern to the Experimental section
 **If your component/pattern request is approved**, add your component to the [Experimental section](https://design.va.gov/experimental-design/) on design.va.gov.
 
-This should take no more than 30-60 minutes. To add the component/pattern, simply add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design) - then reach out to Shawna Hein or Ryan Thurwell to merge your request. Please use the [Experimental design template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/experimental-design-template.md) when documenting your new component/pattern. If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact Ryan Thurwell if you need access to Sketch for Teams.
+This should take no more than 30-60 minutes. To add the component/pattern, simply add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design) - then reach out to Shawna Hein or Ryan Thurwell to merge your request. Please use the [Experimental design template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/experimental-design-template.md) to document your new component/pattern. If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact Ryan Thurwell if you need access to Sketch for Teams.
 
 Once merged, the markdown you update will automatically be migrated to the experimental tab of the design system. This typically takes 10-15 minutes after you’ve updated the markdown file. 
 
-The markdown file should include most of what you put in your experimental request ticket, with a few additional details - e.g. the following:
+Your documentation should include most of what you put in your experimental request ticket, with a few additional details - e.g. the following (these items are also captured in the Experimental design template markdown file):
 - Name of component or pattern
 - Who is suggesting it (team, contract)
 - Purpose - Why you needed to create a new component or pattern
@@ -66,7 +66,7 @@ The markdown file should include most of what you put in your experimental reque
   - If you need to embed images, videos, or other assets in your markdown file, add them to the assets folder [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design/assets).
 - Code location, if available
 - Existing components used (if creating a new pattern)
-- Guidance (if available)
+- Usage and accessibility guidance (if available)
 
 Note that code is not required at this step in the process - the main point of documenting here is visibility to other teams. However, if you have shared code you can share, great! [More guidance on the code part of contribution and where to store files can be found here](https://design.va.gov/documentation/developers#contributing-experimental-design-code).
 
