@@ -1,7 +1,7 @@
 ---
 layout: default
 title: What’s new?
-draft: true
+
 ---
 
 # What’s new?
