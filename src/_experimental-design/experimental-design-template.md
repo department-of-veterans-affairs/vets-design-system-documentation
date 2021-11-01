@@ -42,7 +42,9 @@ Add supplemental information here.
 
 ## Design mockups
 
-Add links to images or Sketch for Teams files here. Please include mobile and desktop versions of your design.
+Add links to images or Sketch for Teams files here. 
+
+* Please include mobile and desktop versions of your design.
 
 ## Accessibility notes
 
