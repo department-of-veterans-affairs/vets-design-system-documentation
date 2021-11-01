@@ -53,7 +53,7 @@ When making the initial request, you can ask to have asynchronous approval if yo
 ### 4. Add your component or pattern to the Experimental section
 **If your component/pattern request is approved**, add your component to the [Experimental section](https://design.va.gov/experimental-design/) on design.va.gov.
 
-This should take no more than 30-60 minutes. To add the component/pattern, simply add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design) - then reach out to Shawna Hein or Ryan Thurwell to merge your request.
+This should take no more than 30-60 minutes. To add the component/pattern, simply add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design) - then reach out to Shawna Hein or Ryan Thurwell to merge your request. Please use the [Experimental design template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/experimental-design-template.md) when documenting your new component/pattern. If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact Ryan Thurwell if you need access to Sketch for Teams.
 
 Once merged, the markdown you update will automatically be migrated to the experimental tab of the design system. This typically takes 10-15 minutes after you’ve updated the markdown file. 
 
