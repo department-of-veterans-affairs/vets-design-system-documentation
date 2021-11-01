@@ -18,7 +18,6 @@ The latest news and updates on the Design System, Forms library and the Content 
 - Back to top web component
 - Form confirmation page
 - Alert box web component
-- Accordion web component 
 
 ---
 
