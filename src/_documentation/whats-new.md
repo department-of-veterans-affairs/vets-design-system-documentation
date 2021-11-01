@@ -6,7 +6,7 @@ title: What’s new?
 # What’s new?
 
 <div class="va-introtext">
-The latest news and updates on Formation and the content style guide
+The latest news and updates on the Design System, Forms library and the Content styleguide
 </div>
 
 ---
