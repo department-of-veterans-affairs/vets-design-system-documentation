@@ -129,7 +129,8 @@ Write out street names (street, road, avenue, boulevard, highway, etc.) in both 
 
 When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets. 
 
-In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.   
+In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.
+
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -166,3 +167,6 @@ New York, NY 67890 <br/>
 </div>
 </div>
 </div>
+
+### Zip codes
+When writing a zip code in an address block, the extra 4 digits aren't required. We often include them when writing an address for Veterans to send documents to, but we don't require them when asking a Veteran to fill out their own information.
