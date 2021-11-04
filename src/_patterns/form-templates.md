@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Form templates
+title: Form patterns
 anchors:
   - anchor: All or none of the above
   - anchor: Applicant information
