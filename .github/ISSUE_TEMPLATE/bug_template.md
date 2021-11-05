@@ -1,6 +1,6 @@
 ---
 name: "\U0001F534 Bug report"
-about: Something in Formation is not working as expected
+about: Something in the Design System is not working as expected
 title: ''
 labels: 'vsp-design-system-team'
 assignees: 'caw310'
