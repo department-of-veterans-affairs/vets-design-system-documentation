@@ -7,6 +7,10 @@ title: Design System Backlog
 
 ### In progess
 
+- [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
+
+- [Add style guide / pattern fo Blue status highlights to DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/388)
+
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
 
 - [Forms system signatures / attestations #344](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/344) 
@@ -14,9 +18,6 @@ title: Design System Backlog
 ### Prioritized
 
 - [Feature request: Confirmation page standardization](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/384)
-- [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
-
-- [Add style guide / pattern fo Blue status highlights to DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/388)
 
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
 
@@ -37,11 +38,6 @@ title: Design System Backlog
 - [Add tab design to Storybook · Issue #403 ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/403)
 
 - [Document tab component to be added to the design system](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/21469) 
-
-
-
-
-
 
 ### Approved needs prioritizing 
 
@@ -74,10 +70,6 @@ title: Design System Backlog
 - [Add borderless table to design.va.gov #363](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/363)
 
 - [Request to explore srcset for serving optimized images](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/407) 
-
-
-
-
 
 ### Proposed
 
