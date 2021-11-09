@@ -8,9 +8,13 @@ title: Back to top
 
 <p class="va-introtext">The Back to top component is a shortcut that allows the user to quickly navigate to the top of a long page of content.</p>
 
+## Examples
+
+### Desktop
+
 {% include storybook-preview.html height="300px" story="components-va-back-to-top--default" %}
 
-Mobile view:
+### Mobile
 
 {% include storybook-preview.html height="300px" width="400px" story="components-va-back-to-top--default" %}
 
