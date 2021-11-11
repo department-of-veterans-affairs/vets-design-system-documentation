@@ -2,23 +2,20 @@
 layout: default
 title: Content presentation
 anchors:
-  - anchor: Information callouts
+  - anchor: Featured content
   - anchor: Expandable content
 ---
 
 # Content presentation
 
 
-## Information callouts
+## Featured content
 
-Information callouts are light blue boxes that call attention to important information.
+[Featured content](https://design.va.gov/components/featured-content) components are light blue boxes that call attention to important information.
 
 <div class="site-showcase">
-{% include_relative html/information-callout.html %}
+{% include storybook-preview.html height="250px" story="components-featured-content--default-story" %}
 </div>
-
-{% include snippet.html content='html/information-callout.html' %}
-
 
 ## Expandable content
 
