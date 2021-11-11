@@ -12,7 +12,7 @@ Features are typically used to describe eligibility requirements.
 
 {% include storybook-preview.html height="250px" story="components-featured-content--default-story" %}
 
-## Usability
+## Usage
 
 ### How to use the Featured content component 
 
