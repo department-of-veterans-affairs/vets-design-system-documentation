@@ -10,7 +10,7 @@ title: Featured content
 
 Features are typically used to describe eligibility requirements.
 
-{% include storybook-preview.html height="220px" story="components-va-featured-content--default" %}
+{% include storybook-preview.html height="200px" story="components-va-featured-content--default" %}
 
 ## Usage
 
