@@ -14,7 +14,7 @@ anchors:
 [Featured content](https://design.va.gov/components/featured-content) components are light blue boxes that call attention to important information.
 
 <div class="site-showcase">
-{% include storybook-preview.html height="250px" story="components-featured-content--default-story" %}
+{% include storybook-preview.html height="250px" story="components-va-featured-content--default" %}
 </div>
 
 ## Expandable content
