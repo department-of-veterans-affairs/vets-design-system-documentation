@@ -29,7 +29,7 @@ The purpose of this pattern is:
 
 ### Typical layout
 
-<img src="../../images/experimental-design/apple-tool-first-mock-3.jpg" width="500" />
+![image]({{site.baseurl}}/images/experimental-design/apple-tool-first-mock-3.jpg")
 
 ### Layout with consolidated additional information (FAQs section)
 
@@ -37,7 +37,7 @@ The purpose of this pattern is:
 
 ## Mobile designs
 
-<img src="../../images/experimental-design/apple-tool-mobile-3.jpg" />
+![image]({{site.baseurl}}/images/experimental-design/apple-tool-mobile-3.jpg)
 
 ### UX behavior
 
@@ -56,7 +56,7 @@ The on this page component should start with a link to the list itself, and then
 #### Integrating contextual questions in the cards
 Overall questions should be in a content area accessed by the "on this page" component, but more contextual questions can be "additional info" components on the cards themselves. Example provided.
 
-<img src="../../images/experimental-design/additional-info.png" width="500" />
+![image]({{site.baseurl}}/images/experimental-design/additional-info.png)
 
 #### Optional card elements 
 Not all the elements you see in this design are necessary, for example, if you don't have detail pages for your items, you can leave out the action link and still use this pattern.
