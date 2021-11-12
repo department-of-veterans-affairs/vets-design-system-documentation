@@ -18,7 +18,7 @@ The purpose of this pattern is:
 
 ## Example
 
-![image]({{site.baseurl}}/images/experimental-design/authenticated-list-tool.jpg" width="500")
+![image]({{site.baseurl}}/images/experimental-design/authenticated-list-tool.jpg)
 
 
 1. **'On this page' component.** This section should link to the associated content on the page. It should 'jump' to that section when the user clicks it.
