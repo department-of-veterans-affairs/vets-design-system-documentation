@@ -58,8 +58,12 @@ Overall questions should be in a content area accessed by the "on this page" com
 
 ![image]({{site.baseurl}}/images/experimental-design/auth-info-list-additional-info.png)
 
-#### Optional card elements 
-Not all the elements you see in this design are necessary, for example, if you don't have detail pages for your items, you can leave out the action link and still use this pattern.
+#### Items on the card and optional card elements 
+Make sure to not overload elements on the cards. If you're finding you need to let the user know about a fair amount of information about a single card, link to a details page with more detail.
+
+Try to stick to only a single item (or less) of each element type - e.g. one status, one additional info component (with the exception of name:value pairs).
+
+And of course, not all the elements you see in this design are necessary, for example, if you don't have detail pages for your items, you can leave out the action link and still use this pattern.
 
 ## Accessibility considerations
 
