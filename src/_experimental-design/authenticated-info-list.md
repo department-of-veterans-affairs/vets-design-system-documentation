@@ -29,7 +29,7 @@ The purpose of this pattern is:
 
 ### Typical layout
 
-<img src="/images/experimental-design/auth-info-list-authenticated-info-list-images/apple-tool-first-mock-3.jpg" width="500" />
+<img src=".../images/experimental-design/auth-info-list-authenticated-info-list-images/apple-tool-first-mock-3.jpg" width="500" />
 
 ### Layout with consolidated additional information (FAQs section)
 
