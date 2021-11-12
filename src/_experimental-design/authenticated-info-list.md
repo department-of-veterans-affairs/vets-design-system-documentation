@@ -33,7 +33,7 @@ The purpose of this pattern is:
 
 ### Layout with consolidated additional information (FAQs section)
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-/auth-info-list-apple-tool-consolidated-faq-3.jpeg)
+![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-consolidated-faq-3.jpeg)
 
 ## Mobile designs
 
