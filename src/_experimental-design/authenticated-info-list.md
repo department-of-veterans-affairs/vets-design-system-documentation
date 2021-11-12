@@ -18,7 +18,7 @@ The purpose of this pattern is:
 
 ## Example
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-authenticated-list-tool.jpeg width="500")
+![image]({{site.baseurl}}/images/experimental-design/auth-info-list-authenticated-list-tool.jpeg)
 
 
 1. **'On this page' component.** This section should link to the associated content on the page. It should 'jump' to that section when the user clicks it.
@@ -33,7 +33,7 @@ The purpose of this pattern is:
 
 ### Layout with consolidated additional information (FAQs section)
 
-![image]({{site.baseurl}}/images/experimental-designauth-info-list-/auth-info-list-apple-tool-consolidated-faq-3.jpeg)
+![image]({{site.baseurl}}/images/experimental-design/auth-info-list-/auth-info-list-apple-tool-consolidated-faq-3.jpeg)
 
 ## Mobile designs
 
