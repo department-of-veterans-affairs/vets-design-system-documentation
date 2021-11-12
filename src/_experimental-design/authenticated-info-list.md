@@ -29,11 +29,11 @@ The purpose of this pattern is:
 
 ### Typical layout
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-first-mock-3.jpeg")
+![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-first-mock-3.jpeg)
 
 ### Layout with consolidated additional information (FAQs section)
 
-<img src="../../images/experimental-designauth-info-list-/apple-tool-consolidated-faq-3.jpeg" width="500" />
+![image]({{site.baseurl}}/images/experimental-designauth-info-list-/apple-tool-consolidated-faq-3.jpeg)
 
 ## Mobile designs
 
