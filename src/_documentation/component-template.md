@@ -9,9 +9,13 @@ draft: true
 
 <p class="va-introtext">Short description of Component.</p>
 
-<!-- This is where live component example(s) from Storybook should appear. -->
+## Examples
 
-{% include storybook-preview.html height="300px" story="components-table--simple" %}
+### Desktop
+[Preview desktop version in Storybook](https:link.com)
+
+### Mobile
+[Preview mobile version in Storybook](https:link.com)
 
 <!-- Optional section
 
@@ -21,14 +25,6 @@ draft: true
 {% include storybook-preview.html height="300px" story="components-table--complex" %}
 
 -->
-
-## Examples
-
-### Desktop
-[Preview desktop version in Storybook](https:link.com)
-
-### Mobile
-[Preview mobile version in Storybook](https:link.com)
 
 ## Usage
 * What does this component do? 
