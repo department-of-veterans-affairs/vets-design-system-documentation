@@ -22,8 +22,13 @@ draft: true
 
 -->
 
-[Preview mobile version in Storybook](https:link.com)<br/>
+## Examples
+
+### Desktop
 [Preview desktop version in Storybook](https:link.com)
+
+### Mobile
+[Preview mobile version in Storybook](https:link.com)
 
 ## Usage
 * What does this component do? 
