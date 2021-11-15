@@ -13,8 +13,6 @@ title: Design System Backlog
 
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
 
-- [Forms system signatures / attestations #344](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/344) 
-
 ### Prioritized
 
 - [Feature request: Confirmation page standardization](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/384)
