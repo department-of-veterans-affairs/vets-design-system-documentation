@@ -5,9 +5,8 @@ layout: default
 #Page info: Edit these items below
 title: [URLs]
 anchors:
-  - anchor: SEO considerations
   - anchor: URL standards 
-  - anchor: Vanity and shortened URLs
+  - anchor: Vanity URLs
 draft: true
 ---
 
