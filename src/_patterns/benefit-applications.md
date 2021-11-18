@@ -101,6 +101,10 @@ The button or action link can be followed by item 6, Additional Benefit-Eligibil
 
 [View the action link component](https://design.va.gov/components/action-links).
 
+**Accessibility considerations** 
+
+Screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as a wizard button or action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information (that may be important to that call to action) could exist below that call to action. Therefore, please be mindful about placing important content below the key call to action.
+
 #### F. Optional: Wizard pattern for branching eligibility choices
 
 In the case where there are multiple benefit options, the [Wizard pattern](https://design.va.gov/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
@@ -110,8 +114,6 @@ The text on the primary green button should represent the job the wizard is perf
 #### G. Optional: Additional benefit-eligibility-specific relevant content
 
 Any additional content necessary that is connected to the primary benefit eligibility use case for the page can be added here.
-
-Accessibility considerations: screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as a wizard button or action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information (that may be important to that call to action) could exist below that call to action. Therefore, please be mindful about placing important content below the key call to action.
 
 #### H. Optional: Benefit eligibility frequently asked questions
 
