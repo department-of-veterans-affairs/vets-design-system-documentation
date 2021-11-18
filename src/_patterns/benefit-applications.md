@@ -101,7 +101,7 @@ The button or action link can be followed by item 6, Additional Benefit-Eligibil
 
 [View the action link component](https://design.va.gov/components/action-links).
 
-##### F.Optional: Wizard pattern for branching eligibility choices
+#### F. Optional: Wizard pattern for branching eligibility choices
 
 In the case where there are multiple benefit options, the [Wizard pattern](https://design.va.gov/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
 
