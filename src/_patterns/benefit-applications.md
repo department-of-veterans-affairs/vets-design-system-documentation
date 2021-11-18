@@ -10,7 +10,7 @@ anchors:
 
 # Benefit applications
 
-<p class="va-introtext">Benefit applications are where users can go to apply for benefits in any of the benefit hubs on VA.gov. The policies and regulations around these benefits are very complex, and users often have difficulty determining if they are eligible, what they need to provide, and what to expect after they've submitted their application. For this reason, benefit applications, as a pattern, are divided into four distinct "epics" that help users navigate the process from start to finish.</p>
+<p class="va-introtext">Users can apply for benefits in any of the benefit hubs on VA.gov. The policies and regulations around these benefits are very complex, and users often have difficulty determining if they are eligible, what they need to provide, and what to expect after they've submitted their application. For these reasons, Benefit applications, as a pattern, is divided into four distinct "epics" that help users navigate the process from start to finish.</p>
 
 The four epics typically found within each benefit application are:
 
@@ -90,7 +90,7 @@ A brief heading should precede and call attention to the wizard button or action
 
 If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
 
-If the page does not have a wizard and you want to direct your user to the application flow. Use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
+If the page does not have a wizard and you want to direct your user to the application flow, use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
 
 Having a single green button or action link on the page helps the user follow the most logical path. 
 Note: never put more than one green button or action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
@@ -101,7 +101,6 @@ The button or action link can be followed by item 6, Additional Benefit-Eligibil
 
 [View the action link component](https://design.va.gov/components/action-links).
 
-
 ##### F.Optional: Wizard pattern for branching eligibility choices
 
 In the case where there are multiple benefit options, the [Wizard pattern](https://design.va.gov/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
@@ -111,6 +110,8 @@ The text on the primary green button should represent the job the wizard is perf
 #### G. Optional: Additional benefit-eligibility-specific relevant content
 
 Any additional content necessary that is connected to the primary benefit eligibility use case for the page can be added here.
+
+Accessibility considerations: screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as a wizard button or action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information (that may be important to that call to action) could exist below that call to action. Therefore, please be mindful about placing important content below the key call to action.
 
 #### H. Optional: Benefit eligibility frequently asked questions
 
@@ -235,7 +236,6 @@ The step tells applicants how much time it takes VA to review the application. T
 
   * xxxyxlxlx
   * xxxyxlxlx
-  *
 
 **VA decision**
 
