@@ -7,7 +7,6 @@ title: [URLs]
 anchors:
   - anchor: URL standards 
   - anchor: Vanity URLs
-draft: true
 ---
 
 # URLs
