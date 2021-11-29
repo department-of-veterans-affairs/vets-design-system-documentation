@@ -16,8 +16,7 @@ There is currently a number of items that may potentially live at the bottom of 
 
 ### Artifacts
 
-[Mockups with both Back to top and Feedback buttons](https://www.sketch.com/s/65948b03-95a4-4bf7-b8fa-75caff6bfa4a)
-Developers: please use these mockups to guide your work. Both the Back to top and Feedback buttons should use the same dimensions, type size and weight, and corner radius.
+[Most recent - mockups with both Back to top and Feedback buttons](https://www.sketch.com/s/65948b03-95a4-4bf7-b8fa-75caff6bfa4a) **Developers: please use these mockups to guide your work.** <br/>Both the Back to top and Feedback buttons should use the same dimensions, type size and weight, and corner radius.
 
 [Confluence Documentation](https://vfs.atlassian.net/wiki/spaces/Contact/pages/1845231893/Medallia+-+Bottom+of+Main+Design+Proposal)
 [Sketch Files](https://www.sketch.com/s/dbc369e6-21ae-4717-a169-a5e734934f93/v/jogKRo/)
