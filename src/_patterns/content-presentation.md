@@ -51,7 +51,7 @@ Optional elements for cards include:
 - Button(s)
 
 ### Read-only cards
-Read-only cards often contain dynamic, time-sensitive information such as appointment details or claim status. They can also contain financial data like balances. Keep card copy short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link. Avoid using dynamic content within the middle of a sentence to future-proof the card for translation. 
+Read-only cards often contain dynamic, time-sensitive information such as appointment details or claim/appeal status. They can also contain financial data like balances.
 
 Some examples of read-only cards include:
 
@@ -65,3 +65,15 @@ While interactive cards are visually similar to read-only cards, they serve very
 
 List and loop
 Selectable list item
+
+### Card do's and don'ts
+
+Do:
+- Keep card content (especially header text) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
+- Indicate status clearly, preferably through using a **Status:** text label, if this attribute is applicable to the card.
+- Consider whether the card will appear alone or alongside other cards in a sequence. This contextual detail will affect the visual design and information architecture of the card.
+- The blue Featured content component is meant to act as a callout for the most important information on the page, use sparingly.
+
+Don't
+- Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
+- Try not to mix and match multiple card styles in a single page.
