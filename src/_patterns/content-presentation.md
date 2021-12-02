@@ -33,7 +33,7 @@ Use additional info components in forms to provide additional context. The light
 
 ## Cards
 
-Cards group short, related pieces of information into discrete containers, similar to physical index or playing cards. The context of use for cards can vary widely, but at a minimum most cards share these elements:
+Cards group short, related pieces of information into discrete containers, similar to physical index or playing cards. Most often, the goal of a card is to present a summary of information in one digestable chunk with the option to navigate to more details. The context of use for cards can vary widely, but at a minimum most cards share these elements:
 
 1. Background color or border
 2. Header
@@ -51,20 +51,20 @@ Optional elements for cards include:
 - Button(s)
 
 ### Read-only cards
-Read-only cards often contain dynamic, time-sensitive information such as appointment details or claim/appeal status. They can also contain financial data like balances.
+Read-only cards often contain dynamic, time-sensitive information such as appointment details or claim/appeal status. They can also communicate financial data like balances.
 
 Some examples of read-only cards include:
 
-Content (Featured content is the only card type represented in Drupal)
-Promo
-Appointment
-Facility locator
+- Content
+- Promo
+- Appointment
+- Facility locator
 
 ### Interactive cards
 While interactive cards are visually similar to read-only cards, they serve very different purposes. Interactive cards contain form elements like input fields, checkboxes, and/or buttons, and are most often used for adding, editing, or deleting chunks of information. Some examples of interactive cards include:
 
-List and loop
-Selectable list item
+- List and loop
+- Selectable list item
 
 ### Card do's and don'ts
 
