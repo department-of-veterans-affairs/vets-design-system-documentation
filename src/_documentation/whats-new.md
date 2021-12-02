@@ -12,6 +12,16 @@ The latest news and updates on the Design System, Forms library and the Content 
 
 ---
 
+### November 23, 2021
+
+**Content style guide updates**
+
+- [Zip code](https://design.va.gov/content-style-guide/dates-and-numbers#zip-codes) subtopic added. 
+- [Apostrophes](https://design.va.gov/content-style-guide/punctuation#apostrophes) and [quotation marks](https://design.va.gov/content-style-guide/punctuation#quotation-marks) subtopics added.
+- Veteran entry updated in [word list](https://design.va.gov/content-style-guide/word-list).
+
+---
+
 ### November 1, 2021
 **Design System updates**
 
