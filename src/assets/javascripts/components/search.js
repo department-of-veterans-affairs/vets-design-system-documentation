@@ -66,7 +66,7 @@ var searchOnResultsPage = function() {
   if (typeof searchTerm != "undefined"){
     desktop_search_input.value = searchTerm;
     mobile_search_input.value = searchTerm;
-    document.getElementById('query-term').innerHTML = searchTerm;
+    document.getElementById('query-term').innerText = searchTerm;
   }
   SimpleJekyllSearch({
     searchInput: desktop_search_input,
