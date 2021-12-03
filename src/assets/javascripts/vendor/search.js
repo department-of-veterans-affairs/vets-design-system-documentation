@@ -369,11 +369,11 @@ var _$src_8 = {};
   }
 
   function emptyResultsContainer () {
-    options.resultsContainer.innerHTML = ''
+    options.resultsContainer.innerText = ''
   }
 
   function appendToResultsContainer (text) {
-    options.resultsContainer.innerHTML += text
+    options.resultsContainer.innerText += text
   }
 
   function registerInput () {
