@@ -169,4 +169,4 @@ New York, NY 67890 <br/>
 </div>
 
 ### Zip codes
-When we ask a Veteran to fill out their address, we don't require them to include the extra 4 digits of their zip code. But when we (VA) provide an address for Veterans to send documents to, we sometiems include the extra 4 digits of the zip code.
+When we ask a Veteran to fill out their address, we don't require them to include the extra 4 digits of their zip code. But when we (VA) provide an address for Veterans to send documents to, we sometimes include the extra 4 digits of the zip code.
