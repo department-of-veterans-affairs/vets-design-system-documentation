@@ -66,7 +66,7 @@ var searchOnResultsPage = function() {
   if (typeof searchTerm != "undefined"){
     desktop_search_input.value = searchTerm;
     mobile_search_input.value = searchTerm;
-    document.getElementById('query-term').innerText = searchTerm;
+    document.getElementById('query-term').innerText = htmlEncode(searchTerm);
   }
   SimpleJekyllSearch({
     searchInput: desktop_search_input,
@@ -138,6 +138,17 @@ if (isIE11) {
   parent.removeChild(el);
 }
 
+/**
+ * Sanitize and encode all HTML in a user-submitted string
+ * https://portswigger.net/web-security/cross-site-scripting/preventing
+ * @param  {String} str  The user-submitted string
+ * @return {String} str  The sanitized string
+ */
+ function htmlEncode(str){
+  return String(str).replace(/[^\w. ]/gi, function(c){
+     return '&#'+c.charCodeAt(0)+';';
+  });
+}
 
 
 
