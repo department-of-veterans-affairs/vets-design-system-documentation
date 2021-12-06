@@ -47,8 +47,8 @@ Note: the blue [Featured content](https://design.va.gov/components/featured-cont
 
 Suggested keyboard behaviors for interacting with cards:
 
-- Tab to move to the next card or focusable element outside of the card.
-- Shift + tab to move focus to the previous card or previous focusable element outside of the card.
+- Tab to move to the next card or next focusable element outside of the card.
+- Shift + Tab to move focus to the previous card or previous focusable element outside of the card.
 - Arrow keys to move between focusable elements within the card.
 - Enter/Return to execute the call to action.
 - If the card is selectable using a checkbox, use the Space key to toggle select/deselect states.
