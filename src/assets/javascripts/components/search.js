@@ -64,8 +64,8 @@ var searchOnResultsPage = function() {
   var searchTerm = getQueryVariable('query');
   // Put the value of the query on the page
   if (typeof searchTerm != "undefined"){
-    desktop_search_input.value = searchTerm;
-    mobile_search_input.value = searchTerm;
+    desktop_search_input.value = htmlEncode(searchTerm);
+    mobile_search_input.value = htmlEncode(searchTerm);
     document.getElementById('query-term').innerText = htmlEncode(searchTerm);
   }
   SimpleJekyllSearch({
