@@ -62,11 +62,11 @@ Read-only cards often contain dynamic, time-dependent information such as appoin
 **Status card** <br/>
 ![Status card]({{site.baseurl}}/images/StatusCard1.png)
 
-**Appointment card** <br/>
-![Appointment card]({{site.baseurl}}/images/ApptCard.png)
-
 **Promo card** <br/>
 ![Promo card]({{site.baseurl}}/images/PromoCard1.png)
+
+**Appointment card** <br/>
+![Appointment card]({{site.baseurl}}/images/ApptCard.png)
 
 ## Interactive cards
 While interactive cards are visually similar to read-only cards, they serve very different purposes. Interactive cards contain form elements like input fields, checkboxes, and/or buttons, and are most often used for adding, editing, or deleting chunks of information. Examples of interactive cards include:
