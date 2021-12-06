@@ -28,7 +28,7 @@ Optional elements for cards include:
 - Input field(s)
 - Button(s)
 
-### Usage guidelines
+### Usage and content guidelines
 
 - Keep card content (especially header text) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
 - Indicate status clearly, preferably through using a bold **Status:** text label, if this attribute is applicable to the card.
@@ -61,9 +61,14 @@ Some examples of read-only cards include:
 ### Content card
 ![Content card]({{site.baseurl}}/images/ContentCard1.png)
 
-- Promo
-- Appointment
-- Facility locator
+### Status card
+![Status card]({{site.baseurl}}/images/StatusCard1.png)
+
+### Promo card
+![Promo card]({{site.baseurl}}/images/PromoCard1.png)
+
+### Appointment card
+![Appointment card]({{site.baseurl}}/images/ApptCard1.png)
 
 ## Interactive cards
 While interactive cards are visually similar to read-only cards, they serve very different purposes. Interactive cards contain form elements like input fields, checkboxes, and/or buttons, and are most often used for adding, editing, or deleting chunks of information. Some examples of interactive cards include:
