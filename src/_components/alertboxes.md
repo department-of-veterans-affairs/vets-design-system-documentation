@@ -2,6 +2,7 @@
 layout: default
 sub_section: alertboxes.md
 title: Alert boxes
+draft: true
 anchors:
   - anchor: Informational alert
   - anchor: Warning alert
@@ -49,15 +50,21 @@ Used to prompt a user to sign in, create an account, or launch an online tool to
 
 {% include storybook-preview.html story="components-va-alert--continue" %}
 
-## Background color only
+## Background only alert
 
-Any style of alert box can be made to be background-color only. Use background-color only alerts only for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
+Any style of alert box can be made to be background only. Use background only alerts solely for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
 {% include storybook-preview.html story="components-va-alert--background-only" %}
 
-- Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context.
+- Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context. 
 - Messaging should be direct and concise. Aim for one or two lines.
-- Don’t use headings for background-color only alerts.
+- Don’t use headings for background only alerts.
+
+### Background only alert with icon
+
+A background alert may be used with an icon to draw attention to important feedback. The iconography for background only alerts is consistent with the way icons are used in non-background only alerts.
+
+{% include storybook-preview.html story="components-va-alert--background-only-with-icon" %}
 
 ## Full-width alerts
 
