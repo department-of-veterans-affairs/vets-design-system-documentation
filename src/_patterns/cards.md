@@ -30,9 +30,8 @@ Optional elements for cards include:
 ### Usage and content guidelines
 
 - Keep card content (especially header text) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
-- Indicate status clearly, preferably through using a bold **Status:** text label, if this attribute is applicable to the card.
-- If you are using color as a status indicator, make sure your color choices are intentional and intuitive.
-- Consider whether the card will appear alone or alongside other cards in a sequence. This contextual detail will affect the visual design and information architecture of the card.
+- Indicate status clearly, preferably through using a bold **Status:** text label, if this attribute is applicable to the card. If you are using color as a supplementary status indicator, make sure your color choices are intentional and intuitive.
+- Consider whether the card will appear alone or alongside other cards in a sequence. Cards that appear in sequence should be uniform in their look and feel to enhance scannability.
 - Try not to mix and match multiple card styles in a single page.
 - Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 
