@@ -28,14 +28,11 @@ Optional elements for cards include:
 - Input field(s)
 - Button(s)
 
-## Card do's and don'ts
+### Usage guidelines
 
-Do:
 - Keep card content (especially header text) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
 - Indicate status clearly, preferably through using a **Status:** text label, if this attribute is applicable to the card.
 - Consider whether the card will appear alone or alongside other cards in a sequence. This contextual detail will affect the visual design and information architecture of the card.
-
-Don't
 - Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 - Try not to mix and match multiple card styles in a single page.
 
