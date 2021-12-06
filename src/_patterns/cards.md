@@ -53,7 +53,7 @@ Suggested keyboard behaviors for interacting with cards:
 - If the card is selectable using a checkbox, use the Space key to toggle select/deselect states.
 
 ## Read-only cards
-Read-only cards often contain dynamic, time-dependent information such as appointment details or claim/appeal status. They can also be used to highlight personalized information or how-to content. Examples of read-only cards include:
+Read-only cards contain dynamic, time-dependent information such as appointment details or claim/appeal status. They can also be used to highlight personalized information or how-to content. Examples of read-only cards include:
 
 **Content card** <br/>
 ![Content card]({{site.baseurl}}/images/ContentCard1.png)
