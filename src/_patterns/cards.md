@@ -59,7 +59,7 @@ Read-only cards often contain dynamic, time-sensitive information such as appoin
 Some examples of read-only cards include:
 
 ### Content card
-![Content card]({{site.baseurl}}/images/ContentCard1.png)
+![Content card]({{site.baseurl}}/images/ContentCard-borderless.png)
 
 - Promo
 - Appointment
