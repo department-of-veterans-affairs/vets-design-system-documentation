@@ -31,12 +31,19 @@ Optional elements for cards include:
 ### Usage guidelines
 
 - Keep card content (especially header text) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
-- Indicate status clearly, preferably through using a **Status:** text label, if this attribute is applicable to the card.
+- Indicate status clearly, preferably through using a bold **Status:** text label, if this attribute is applicable to the card.
+- If you are using color as a status indicator, make sure your color choices are intentional and intuitive.
 - Consider whether the card will appear alone or alongside other cards in a sequence. This contextual detail will affect the visual design and information architecture of the card.
-- Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 - Try not to mix and match multiple card styles in a single page.
+- Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 
-Note: the blue Featured content component is meant to act as a callout for the most important information on the page, and should not be considered a card unless it contains dynamic information and a call to action.
+Note: the blue [Featured content](https://design.va.gov/components/featured-content) component is meant to act as a callout for the most important information on the page, and should not be considered a card unless it contains dynamic content and a call to action.
+
+### Accessibility considerations
+
+- Include alt text for images and links.
+- Define a tab order for elements within the card.
+- If you are using multiple cards in a sequence, provide a way for keyboard users to jump between cards without having to tab through every element within each card. 
 
 ## Read-only cards
 Read-only cards often contain dynamic, time-sensitive information such as appointment details or claim/appeal status. They can also communicate financial data like balances.
