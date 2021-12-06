@@ -25,8 +25,7 @@ Optional elements for cards include:
 - Dark blue border to indicate card is selected
 - Image
 - Alert
-- Input field(s)
-- Button(s)
+- Form controls like text input fields, dropdowns, and buttons
 
 ### Usage and content guidelines
 
