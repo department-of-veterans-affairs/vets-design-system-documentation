@@ -9,7 +9,7 @@ draft: true
 
 # Cards
 
-Cards group short, related pieces of information into discrete containers, similar to physical index or playing cards. Cards by nature are **actionable** -- in most cases, the goal of a card is to present a snapshot of information in one digestable chunk with the option to navigate to more detailed content. The context of use for cards can vary widely, but at a minimum all cards share these elements:
+Cards group short, related pieces of information into discrete containers, similar to physical index or playing cards. Cards by nature are **actionable** -- in most cases, the goal of a card is to present a snapshot of information in one digestable chunk, with the option to navigate to more detailed content. The context of use for cards can vary widely, but at a minimum all cards share these elements:
 
 1. Background color or border
 2. Header
