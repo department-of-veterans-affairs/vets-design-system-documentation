@@ -62,11 +62,12 @@ var searchOnMobile = function() {
 // Function for search results page
 var searchOnResultsPage = function() {
   var searchTerm = getQueryVariable('query');
+  var searchTermEncoded = htmlEncode(searchTerm);
   // Put the value of the query on the page
   if (typeof searchTerm != "undefined"){
-    desktop_search_input.value = htmlEncode(searchTerm);
-    mobile_search_input.value = htmlEncode(searchTerm);
-    document.getElementById('query-term').innerText = htmlEncode(searchTerm);
+    desktop_search_input.value = searchTermEncoded;
+    mobile_search_input.value = searchTermEncoded;
+    document.getElementById('query-term').innerText = searchTermEncoded;
   }
   SimpleJekyllSearch({
     searchInput: desktop_search_input,
