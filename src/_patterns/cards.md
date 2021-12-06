@@ -45,6 +45,14 @@ Note: the blue [Featured content](https://design.va.gov/components/featured-cont
 - Define a tab order for elements within the card.
 - If you are using multiple cards in a sequence, provide a way for keyboard users to jump between cards without having to tab through every element within each card. 
 
+Suggested keyboard behaviors for interacting with cards:
+
+- Tab to move to the next card or focusable element outside of the card.
+- Shift + tab to move focus to the previous card or previous focusable element outside of the card.
+- Arrow keys to move between focusable elements within the card.
+- Enter/Return to execute the call to action.
+- If the card is selectable using a checkbox, use the Space key to toggle select/deselect states.
+
 ## Read-only cards
 Read-only cards often contain dynamic, time-sensitive information such as appointment details or claim/appeal status. They can also communicate financial data like balances.
 
