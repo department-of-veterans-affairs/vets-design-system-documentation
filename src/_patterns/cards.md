@@ -54,7 +54,7 @@ Suggested keyboard behaviors for interacting with cards:
 - If the card is selectable using a checkbox, use the Space key to toggle select/deselect states.
 
 ## Read-only cards
-Read-only cards often contain dynamic, time-dependent information such as appointment details or claim/appeal status. They can also be used to highlight personalized information or promotional content. Some examples of read-only cards include:
+Read-only cards often contain dynamic, time-dependent information such as appointment details or claim/appeal status. They can also be used to highlight personalized information or promotional content. Examples of read-only cards include:
 
 **Content card** <br/>
 ![Content card]({{site.baseurl}}/images/ContentCard1.png)
@@ -69,7 +69,7 @@ Read-only cards often contain dynamic, time-dependent information such as appoin
 ![Promo card]({{site.baseurl}}/images/PromoCard1.png)
 
 ## Interactive cards
-While interactive cards are visually similar to read-only cards, they serve very different purposes. Interactive cards contain form elements like input fields, checkboxes, and/or buttons, and are most often used for adding, editing, or deleting chunks of information. Some examples of interactive cards include:
+While interactive cards are visually similar to read-only cards, they serve very different purposes. Interactive cards contain form elements like input fields, checkboxes, and/or buttons, and are most often used for adding, editing, or deleting chunks of information. Examples of interactive cards include:
 
 **List and loop card** <br/>
 ![List and loop card]({{site.baseurl}}/images/ListLoop.png)
