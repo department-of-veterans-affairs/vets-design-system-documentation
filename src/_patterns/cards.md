@@ -35,7 +35,7 @@ Optional elements for cards include:
 - Try not to mix and match multiple card styles in a single page.
 - Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 
-Note: the blue [Featured content](https://design.va.gov/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a callout for the most important information on the page, and should not be considered a card unless it contains dynamic content and a call to action.
+Note: the blue [Featured content](https://design.va.gov/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a callout for the most important information on the page. It should not be considered a card unless it contains dynamic content and a call to action.
 
 ### Accessibility considerations
 
