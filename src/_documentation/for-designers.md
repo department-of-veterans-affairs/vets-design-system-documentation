@@ -31,6 +31,10 @@ Before getting started, we recommend that you get familiar with the VA.gov Desig
 
 The website displays HTML and CSS examples of the various components and patterns in use on VA.gov. You can use your browser’s web inspector to view the specs for each component. If you use Sketch, each of the components has been added to a VA pattern library as well.
 
+<ul class="usa-unstyled-list">
+  <li><a href="{{ site.baseurl }}/downloads/VA-gov-Pattern-Library_120721.sketch"><span class="fa fa-download vads-u-display--inline-block vads-u-margin-right--1"></span>Download the Sketch VA Pattern Library</a></li>
+</ul>
+
 ## Sketch for Teams at VA
 
 Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can be added to Sketch for Teams. Once you have been added, you may access the [VA pattern library](https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156) in the cloud or via download.
