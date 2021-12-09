@@ -11,5 +11,5 @@ title: Additional info
 
 # Additional info
 
-{% include storybook-preview.html story="components-additionalinfo--default" %}
+{% include storybook-preview.html story="components-va-additional-info--default" %}
 
