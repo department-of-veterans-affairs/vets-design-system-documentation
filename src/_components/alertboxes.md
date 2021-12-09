@@ -75,7 +75,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 - Don’t stack - max is one full-width alert per page at any one time. (If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.)
 - Can be used on homepage or, in true emergencies, on lower-level pages.
 
-## Usability
+## Usage
 
 ### When to use alerts
 
