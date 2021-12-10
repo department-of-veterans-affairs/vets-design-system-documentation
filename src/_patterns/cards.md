@@ -39,17 +39,15 @@ Note: the blue [Featured content](https://design.va.gov/components/featured-cont
 
 ### Design specifications
 
-Cards are responsive to the width of the viewport and their parent container. Cards should have at least 8px white space (margins) on the left and right sides. Use 16px margins on the top and bottom sides if the card is appearing in a sequence with other cards. Starting with a mobile-first design is recommended. 
+Cards are responsive to the width of the viewport and their parent container. Cards should have at least 16px white space (margins) on all sides. Starting with a mobile-first design is recommended. 
 
-**Mobile**
-
+**Small screens**
 - Card maximum width = 304px
 - Card minimum width = 280px
 
-**Desktop**
-
-- Card maximum width = 648px
-- Card minimum width = 440px
+**Large and medium screens**
+- Card maximum width = 752px
+- Card minimum width = 384px
 
 ### Accessibility considerations
 
