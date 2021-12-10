@@ -73,4 +73,4 @@ While interactive cards are visually similar to read-only cards, they serve very
 ![List and loop card]({{site.baseurl}}/images/ListLoop.png)
 
 **Selectable list item card** <br/>
-![Selectable list item card]({{site.baseurl}}/images/ListItemCard.png)
+![Selectable list item card]({{site.baseurl}}/images/ListItem2.png)
