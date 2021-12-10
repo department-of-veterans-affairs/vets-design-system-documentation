@@ -9,7 +9,7 @@ draft: true
 
 # Cards
 
-Cards group short, related pieces of information into discrete containers, similar to physical index or playing cards. Cards by nature are **actionable** -- in most cases, the goal of a card is to present a snapshot of information in one digestable chunk, with the option to navigate to more detailed content. The context of use for cards can vary widely, but at a minimum all cards share these elements:
+Cards group short, related pieces of information into discrete containers, similar to physical index or playing cards. Cards by nature are **actionable** and contain dynamic content -- in most cases, the goal of a card is to present a snapshot of information in one digestable chunk, with the option to navigate to more detailed content. The context of use for cards can vary widely, but at a minimum all cards share these elements:
 
 1. Background color or border
 2. Header
@@ -36,6 +36,20 @@ Optional elements for cards include:
 - Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 
 Note: the blue [Featured content](https://design.va.gov/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a callout for the most important information on the page. It should not be considered a card unless it contains dynamic content and a call to action.
+
+### Design specifications
+
+Cards are responsive to the width of the viewport and their parent container. Cards should have at least 8px white space (margins) on the left and right sides. Use 16px margins on the top and bottom sides if the card is appearing in a sequence with other cards. Starting with a mobile-first design is recommended. 
+
+**Mobile**
+
+- Card maximum width = 304px
+- Card minimum width = 280px
+
+**Desktop**
+
+- Card maximum width = 648px
+- Card minimum width = 440px
 
 ### Accessibility considerations
 
@@ -70,7 +84,7 @@ Read-only cards contain dynamic, time-dependent information such as appointment 
 While interactive cards are visually similar to read-only cards, they serve very different purposes. Interactive cards contain form elements like input fields, checkboxes, and/or buttons, and are most often used for adding, editing, or deleting chunks of information. Examples of interactive cards include:
 
 **List and loop card** <br/>
-![List and loop card]({{site.baseurl}}/images/ListLoop.png)
+![List and loop card]({{site.baseurl}}/images/ListLoopCard-borderless.png)
 
 **Selectable list item card** <br/>
 ![Selectable list item card]({{site.baseurl}}/images/ListItem2.png)
