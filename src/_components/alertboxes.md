@@ -62,7 +62,7 @@ Any style of alert box can be modified to be a background only alert. Use backgr
 
 ### Background only alert with icon
 
-A background alert may be used with an icon to draw attention to important feedback. The iconography for background only alerts is consistent with the way icons are used in non-background only alerts.
+A background alert may be used with an icon to draw attention to important feedback. The iconography for background only alerts is consistent with the way icons are used in standard alert boxes.
 
 {% include storybook-preview.html story="components-va-alert--background-only-with-icon" %}
 
