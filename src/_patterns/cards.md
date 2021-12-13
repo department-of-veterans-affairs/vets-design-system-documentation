@@ -20,12 +20,8 @@ Cards group short, related pieces of information into discrete containers, simil
 
 Optional elements for cards include:
 
-- Status label 
-- Checkbox for selecting card
-- Dark blue border to indicate card is selected
 - Image
-- Alert
-- Form controls like text input fields, dropdowns, and buttons
+- Status label
 
 ### Usage and content guidelines
 
