@@ -9,7 +9,7 @@ anchors:
   - anchor: Success alert
   - anchor: Error alert
   - anchor: Continue status
-  - anchor: Background color only
+  - anchor: Background color only alert
   - anchor: Full-width alerts
 ---
 
@@ -54,7 +54,7 @@ Used to prompt a user to sign in, create an account, or launch an online tool to
 
 Any style of alert box can be modified to be a background color only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
-{% include storybook-preview.html story="components-va-alert--background-only" %}
+{% include storybook-preview.html story="components-va-alert--background-only" height="80px" %}
 
 - Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context. 
 - Messaging should be direct and concise. Aim for one or two lines.
@@ -64,7 +64,7 @@ Any style of alert box can be modified to be a background color only alert. Use 
 
 A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert boxes.
 
-{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="120px" %}
+{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="80px" %}
 
 ## Full-width alerts
 
