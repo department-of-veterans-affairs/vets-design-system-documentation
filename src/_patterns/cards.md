@@ -52,16 +52,7 @@ Cards are responsive to the width of the viewport and their parent container. Ca
 ### Accessibility considerations
 
 - Include alt text for images and links.
-- Define a tab order for elements within the card.
-- If you are using multiple cards in a sequence, provide a way for keyboard users to jump between cards without having to tab through every element within each card. 
-
-Suggested keyboard behaviors for interacting with cards:
-
-- Tab to move to the next card or next focusable element outside of the card.
-- Shift + Tab to move focus to the previous card or previous focusable element outside of the card.
-- Arrow keys to move between focusable elements within the card.
-- Enter/Return to execute the call to action.
-- If the card is selectable using a checkbox, use the Space key to toggle select/deselect states.
+- Using the tab key should bring focus to the call(s) to action within the card.
 
 ## Read-only cards
 Read-only cards contain dynamic, time-dependent information such as appointment details or claim/appeal status. They can also be used to highlight personalized information or how-to content. Examples of read-only cards include:
