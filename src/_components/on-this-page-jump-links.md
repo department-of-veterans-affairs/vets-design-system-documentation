@@ -13,7 +13,7 @@ The On this page jump link component summarizes the sections (`<h2>`s) at the 
 
 {% include storybook-preview.html height="250px" story="components-va-on-this-page--default" %}
 
-## Usability
+## Usage
 
 ### When to use the On this page jump link component
 Use this component to quickly tell users what information they can get on that page. 
