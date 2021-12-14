@@ -2,7 +2,6 @@
 layout: default
 sub_section: alertboxes.md
 title: Alert boxes
-draft: true
 anchors:
   - anchor: Informational alert
   - anchor: Warning alert
