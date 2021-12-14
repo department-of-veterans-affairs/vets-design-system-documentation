@@ -28,7 +28,7 @@ Adding a `data-multiselectable` attribute allows multiple accordions in a set to
 
 {% include storybook-preview.html story="components-va-accordion--subheader" %}
 
-## Usability
+## Usage
 
 ### When to use accordions
 
