@@ -24,7 +24,7 @@ title: Back to top
 ### When to use Back to top
 * In pages with static content that is more than two screens in length on large and medium screens, or more than four screens in length on small screens.
 
-### When _not_ to use Back to top
+### When not to use Back to top
 * In pages with dynamic content.
 * In pages with static content that is short in length.
 
