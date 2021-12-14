@@ -12,7 +12,7 @@ The process list, also known as the subway map, is used in a static informationa
 
 {% include storybook-preview.html height="300px" story="components-process-list--default-story" %}
 
-## Usability
+## Usage
 
 ### When to use Process lists
 
