@@ -51,7 +51,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 
 {% include storybook-preview.html story="components-buttons--disabled" %}
 
-## Usability
+## Usage
 
 ### When to use buttons
 
