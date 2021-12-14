@@ -13,7 +13,7 @@ title: Sidenav
 * All elements, including the `<script>` tag in the snippet are required. An update to Formation's script may address this.
 * The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
 
-## Usability
+## Usage
 
 ### When to use sidenav
 * To display the “sub-navigation” within a section of the website.
