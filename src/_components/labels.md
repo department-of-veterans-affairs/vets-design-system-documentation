@@ -12,7 +12,7 @@ Labels draw attention to new or important content.
 
 {% include storybook-preview.html height="50px" story="components-labels--default-story" %}
 
-## Usability
+## Usage
 
 ### When to use labels
 
