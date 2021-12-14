@@ -35,7 +35,7 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 {% include storybook-preview.html height="300px" story="components-textarea--default" %}
 
-### Usability
+### Usage
 
 #### When to use text inputs
 
@@ -65,7 +65,7 @@ A select box allows users to select one option from a list.
 
 {% include storybook-preview.html story="components-select--default" %}
 
-### Usability
+### Usage
 
 #### When to use select boxes
 
@@ -97,7 +97,7 @@ Allows users to select one or more items from a visible list.
 
 {% include storybook-preview.html height="200px" story="components-checkboxgroup--default" %}
 
-### Usability
+### Usage
 
 #### When to use checkboxes
 - When a user can select any number of choices from a set list.
@@ -126,7 +126,7 @@ Radio buttons allow users to see all available choices at once and select exactl
 
 {% include storybook-preview.html height="200px" story="components-radiobuttons--default" %}
 
-### Usability
+### Usage
 
 #### When to use radio buttons
 - When users need to select only one option out of a set of mutually exclusive choices.
@@ -155,7 +155,7 @@ Use the date input component to help users enter a date they would know or a dat
 
 {% include storybook-preview.html story="components-date--default" %}
 
-### Usability
+### Usage
 
 #### When to use date inputs
 Use a month, day, year date input component for a date a user knows, like a date of birth or marriage.  (Example: July 21, 1992). 
