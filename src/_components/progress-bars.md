@@ -8,8 +8,8 @@ title: Progress bars
 
 ## Standard progress bar
 
-{% include storybook-preview.html story="components-va-progress-bar--default" height="40x" %}
+{% include storybook-preview.html story="components-va-progress-bar--default" height="80x" %}
 
 ## Segmented progress bar
 
-{% include storybook-preview.html story="components-va-segmented-progress-bar--default" height="40px" %}
+{% include storybook-preview.html story="components-va-segmented-progress-bar--default" height="80px" %}
