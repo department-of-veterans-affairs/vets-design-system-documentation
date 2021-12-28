@@ -11,11 +11,11 @@ A link is a navigation element that can appear alone, inline, or in a group with
 
 ## Examples
 
-### Links
+### Standard link
 
 ### Download link (with icon)
 
-### Action links
+### Action link
 
 ### Link groups
 
