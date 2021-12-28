@@ -50,4 +50,4 @@ Use a link when you want to:
 
 ## Content considerations
 
-Link text should always communicate purpose and target, in that order, so users know before clicking where they will be navigated to. Please see the Content style guide Links entry for more guidance. 
+Link text should always communicate purpose and target, in that order, so users know before clicking where they will be navigated to. See the Content style guide Links entry for more guidance. 
