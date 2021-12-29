@@ -7,17 +7,21 @@ draft: true
 
 # Links
 
-A link is a navigation element that can appear alone, inline, or in a group with other links. A link can be used to trigger a download, such as a PDF, but in general links go places when clicked. 
+A link is a navigation element that can appear alone, inline, or in a group with other links. A link can be used to trigger a download, such as a PDF, but in general links go places when clicked.
 
 ## Examples
 
-### Standard link
+### Link
+
+### Link with icon
 
 ### Download link
 
-A download link may be accompanied by an icon for emphasis. Download link text must include the name of the file to be downloaded in parentheses. 
+Download link text must include the name of the file to be downloaded in parentheses. A download link may be accompanied by an icon for emphasis. 
 
 ### Action link
+
+Use an Action link to emphasize an important CTA, such as starting an application for benefits. See [Action links](https://design.va.gov/experimental-design/action_links) for more information.
 
 ### Link groups
 
@@ -25,9 +29,7 @@ Groups of links are styled differently depending on their context.
 
 **On this page jump links**
 
-This component allows the user to quickly navigate to specific sections within a long page of content. See [On this page jump links](https://design.va.gov/components/on-this-page-jump-links) for more details.
-
-{% include storybook-preview.html height="250px" story="components-va-on-this-page--default" %}
+This component allows the user to quickly navigate to specific sections within a long page of content. See [On this page jump links](https://design.va.gov/components/on-this-page-jump-links) for details.
 
 **Major links**
 
