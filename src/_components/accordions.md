@@ -7,10 +7,10 @@ title: Accordions
 # Accordions
 
 <div class="va-introtext" markdown="1">
-Accordions are a list of headers that can be clicked to hide or reveal additional content.
+Accordions are a list of headers that can be clicked to hide or reveal additional content. By default accordions are multi-selectable and borderless, however props can be added to make them bordered and single-select.
 </div>
 
-## Borderless
+## Default
 
 {% include storybook-preview.html story="components-va-accordion--default" %}
 
@@ -18,11 +18,9 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 {% include storybook-preview.html story="components-va-accordion--bordered" %}
 
-## Multi-selectable
+## Only Open One
 
-Adding a `data-multiselectable` attribute allows multiple accordions in a set to be open at the same time. This attribute can applied to any style of accordion.
-
-{% include storybook-preview.html story="components-va-accordion--multi" %}
+{% include storybook-preview.html story="components-va-accordion--only-open-one" %}
 
 ## Subheader
 
