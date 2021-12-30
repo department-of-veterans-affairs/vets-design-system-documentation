@@ -54,12 +54,21 @@ Use a link when you want to:
 
 ### Behavior
 
-A link has four states: default, hover, active, and visited. 
+A link has four states: default, hover, active, and visited.
 
 ## Accessibility considerations
+
+Focus. 
 
 ## Accessibility testing
 
 ## Content considerations
 
-Link text should always clearly communicate purpose and target so users know before clicking where they will be navigated to. See the Content style guide Links entry for more guidance. 
+Link text should always clearly communicate purpose and target so users know before clicking where they will be navigated to. See the Content style guide for more details on link text best practices. 
+
+## Related 
+
+- Links (Content style guide)
+- Buttons
+- Action links
+- On this page jump links
