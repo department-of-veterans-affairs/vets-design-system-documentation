@@ -13,6 +13,8 @@ A link is a navigation element that can appear alone, inline, or in a group with
 
 ### Link
 
+Links that appear inline, surrounded by text, should be underlined by default in order to help them stand out.
+
 ### Link with icon
 
 ### Download link
