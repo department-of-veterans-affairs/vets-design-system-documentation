@@ -7,13 +7,13 @@ draft: true
 
 # Links
 
-A link is a navigation element that can appear alone, inline, or in a group with other links. A link can be used to trigger a download, such as a PDF, but in general links go places when clicked.
+A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can be used to trigger a download, such as a PDF, but in general links go places when clicked.
 
 ## Examples
 
-### Link
+### Embedded links and CTA links
 
-Links that appear inline, surrounded by text, should be underlined by default in order to help them stand out.
+Embedded links are surrounded by text, and should be underlined by default in order to help them stand out. Standalone CTA links call attention to an important link on the page and should start with an action verb. See [Links](https://design.va.gov/content-style-guide/links) in the Content style guide for detailed guidance on when to use Embedded links vs. CTA links. 
 
 ### Link with icon
 
@@ -21,7 +21,7 @@ Links that appear inline, surrounded by text, should be underlined by default in
 
 Download link text must include the name of the file to be downloaded in parentheses. A download link may be accompanied by an icon for emphasis. 
 
-### Action link
+### Action links
 
 Use an Action link to emphasize an important CTA, such as starting an application for benefits. See [Action links](https://design.va.gov/experimental-design/action_links) for more information.
 
