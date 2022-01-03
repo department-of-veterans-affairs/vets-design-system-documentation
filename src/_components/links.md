@@ -15,11 +15,9 @@ A link is a navigation element that can appear alone, inline (embedded), or in a
 
 Embedded links are surrounded by text, and should be underlined by default in order to help them stand out. Standalone CTA links call attention to an important link on the page and should start with an action verb. See [Links](https://design.va.gov/content-style-guide/links) in the Content style guide for detailed guidance on when to use Embedded links vs. CTA links. 
 
-### Link with icon
+Download link text must include the name of the file to be downloaded in parentheses. A download link may be accompanied by an icon for emphasis.
 
-### Download link
-
-Download link text must include the name of the file to be downloaded in parentheses. A download link may be accompanied by an icon for emphasis. 
+### Link with icon 
 
 ### Action links
 
