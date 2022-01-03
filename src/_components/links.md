@@ -64,7 +64,7 @@ Focus.
 
 ## Content considerations
 
-Link text should always clearly communicate purpose and target so users know before clicking where they will be navigated to. See the Content style guide for more details on link text best practices. 
+Link text should always clearly communicate purpose and target so users know before clicking where they will be navigated to. See [Links](https://design.va.gov/content-style-guide/links) in the Content style guide for more information. 
 
 ## Related 
 
