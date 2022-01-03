@@ -60,7 +60,7 @@ A link has four states: default, hover, active, and visited.
 
 ## Accessibility considerations
 
-Focus. 
+Link text importance. Focus behavior. 
 
 ## Accessibility testing
 
