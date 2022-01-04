@@ -18,9 +18,11 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 {% include storybook-preview.html story="components-va-accordion--bordered" %}
 
-## Only Open One
+## Single Select
 
-{% include storybook-preview.html story="components-va-accordion--only-open-one" %}
+* Utilization of the `open-single` prop on the `va-accordion` component will change the accordion from multi-selectable to single-select
+
+{% include storybook-preview.html story="components-va-accordion--single-select" %}
 
 ## Subheader
 
