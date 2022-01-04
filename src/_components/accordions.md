@@ -20,7 +20,7 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 ## Single Select
 
-* Utilization of the `open-single` prop on the `va-accordion` component will change the accordion from multi-selectable to single-select
+* Adding an `open-single` prop on the `va-accordion` component will allow the user to only open one accordion at a time.
 
 {% include storybook-preview.html story="components-va-accordion--single-select" %}
 
