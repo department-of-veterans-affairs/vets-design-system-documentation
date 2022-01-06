@@ -20,6 +20,7 @@ How to install and use VA Design System styles and components with your project.
 </div>
 
 ## Parts of the Design System
+
 - [Formation](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) is the name of the VA.gov design system styles
 - [Component library](https://github.com/department-of-veterans-affairs/component-library)
 
@@ -28,7 +29,6 @@ How to install and use VA Design System styles and components with your project.
 **If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/). Otherwise, proceed below.
 
 How you implement VADS styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the `formation` styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
-
 
 ### Install Formation into your project
 
@@ -65,28 +65,47 @@ This is already handled for the `vets-website` repository. To get our Web Compon
 1. Add the `component-library` dependency to your node/yarn project using `yarn add @department-of-veterans-affairs/component-library`.
 
 1. Import the global CSS file which contains important CSS variables:
-  ```js
-  import '@department-of-veterans-affairs/component-library/dist/main.css';
-  ```
-1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
-  ```js
-  import { applyPolyfills, defineCustomElements } from '@department-of-veterans-affairs/component-library';
-  ```
-1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
-  ```js
-  applyPolyfills().then(() => {
-      defineCustomElements();
-  });
-  ```
-1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
-1. Any Web Components from the Design System (identified by tags prefixed with `<va-*>`) should now work as expected on your page.
 
+```js
+import "@department-of-veterans-affairs/component-library/dist/main.css";
+```
+
+1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
+
+```js
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from "@department-of-veterans-affairs/component-library";
+```
+
+1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
+
+```js
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
+```
+
+1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
+1. There are 2 ways that we can use web components depending on your requirements.
+
+   If you are not passing in functions, objects or arrays to a web component's properties, then you can use a web component from the Design System (identified by tags prefixed with `<va-*`) like any other HTML element without having to import it.
+
+   If you must pass in functions, objects or arrays to a web component's properties, you must use the web component bindings syntax:
+
+```js
+import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
+
+<VaExampleComponent />;
+```
 
 ### Implementing design work
 
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
 
 In general, some rules for implementing design work include:
+
 - Use [spacing units](../design/spacing-units) instead of hard-coding pixel values for margins and padding
 - Use Sass [variables for colors](../design/color-palette) instead of hex codes
 - Discuss reusability of new design components and where is the most appropriate home for CSS and JS
@@ -104,11 +123,13 @@ Sometimes you will need to modify certain default properties of a component depe
 Use utility classes to override default properties. This allows components to maintain a well-defined baseline of properties.
 
 ##### HTML
+
 ```html
 <div class="a-container">
   <div class="a-component vads-u-margin-top--3"></div>
 </div>
 ```
+
 </div>
 </div>
 <div class="do-dont__dont">
@@ -117,17 +138,21 @@ Use utility classes to override default properties. This allows components to ma
 Don’t change CSS properties based on a container or other context. This makes baseline properties for components unclear.
 
 ##### HTML
+
 ```html
 <div class="a-container">
   <div class="a-component"></div>
 </div>
 ```
+
 ##### CSS
+
 ```css
 .a-container .a-component {
   margin-top: 24px;
 }
 ```
+
 </div>
 </div>
 </div>
@@ -149,7 +174,6 @@ If you want to contribute something to the Design System, see the [Contributing 
 <!-- This is commented out until we have something to link to.
 In order for a component to be included in the _official_ Design System, we expect [these criteria to be met]().
 -->
-
 
 ### Modifying existing code
 
@@ -183,6 +207,7 @@ Write out the full name of each selector.
 .alert--error {
 }
 ```
+
 </div>
 </div>
 <div class="do-dont__dont">
@@ -198,17 +223,21 @@ Don’t use Sass shorthand features, such as nesting with ampersands often used 
   }
 }
 ```
+
 </div>
 </div>
 </div>
 
 ## Contributing experimental design code
+
 This document explains the process for contributing code for experimental designs and the reasoning behind that process.
 
 If you haven't read it already, refer to the [experimental design page](/experimental-design) for more information about the full process.
 
 ### Writing experimental design code
+
 Each experimental design should:
+
 - Be absent of business logic and domain knowledge
 - Not import application code
 - Not introduce breaking changes
@@ -218,27 +247,32 @@ Developing the experiment as if it were a standalone library will make the code 
 Each experimental design should [include a README](#readme) and be [owned by a team](#codeowners).
 
 ### Sharing experimental design code
+
 Sharing code between applications is necessarily more involved than writing code for a single application. To avoid the overhead that sharing code introduces (reporting development status, managing breaking changes, deprecating the code etc.), it's recommended to develop experimental designs in the application directory and not import it from another application.
 
 If the time comes that another application needs to use the experiment, the rest of this section describes the process for how to share this code.
 
 #### Code location
+
 Each experimental design is located in its own directory in [`vets-website`](https://github.com/department-of-veterans-affairs/vets-website/) at `src/experimental/` unless otherwise noted in its documentation on this site.
 
 **Example:**  
 If your team needs an experimental button that's larger than the standard button, you would create `src/experimental/large-button/index.jsx` as the entry file for your "library."
 
 #### README
+
 Each experimental design should have a README that contains the following information:
+
 - Development status: `stable`, `unstable`, or `deprecated`
-     - The `unstable` status means the code is under active development and the public API may change without notice
-     - The `stable` status means the public API is finalized, but the code may still receive backward-compatible updates such as accessibility improvements and bug fixes
-     - The `deprecated` status means the code should no longer be used in applications
-          - This may be because of a breaking change (see [Breaking changes](#breaking-changes) below), official adoption into the design system, or research which indicates the experiment was unsuccessful
-          - See [Ending the experiment](#ending-the-experiment) below for instructions on what to do when deprecating code
+  - The `unstable` status means the code is under active development and the public API may change without notice
+  - The `stable` status means the public API is finalized, but the code may still receive backward-compatible updates such as accessibility improvements and bug fixes
+  - The `deprecated` status means the code should no longer be used in applications
+    - This may be because of a breaking change (see [Breaking changes](#breaking-changes) below), official adoption into the design system, or research which indicates the experiment was unsuccessful
+    - See [Ending the experiment](#ending-the-experiment) below for instructions on what to do when deprecating code
 - API documentation (optional but encouraged)
 
 #### Breaking changes
+
 "Breaking changes" is defined here In `semver` terms as a backwards incompatible change to the public API of your component or pattern. (See the [Semantic Versioning Specification](https://semver.org/#spec-item-8) for more details.)
 
 Once the code for an experimental design is stable, **breaking changes should not be introduced.** Other applications may depend on this code, but are unable to pin the version because it's not a "proper" library.
@@ -247,6 +281,7 @@ If you need to introduce breaking changes, **do not modify the existing code.** 
 
 **Example:**  
 The `LargeButton` you created accepted `children`, but because of reasons, you need to limit the content of the button to only text. You've decided to remove the `children` prop and add a `label` prop instead which accepts only strings. To introduce this change, you would:
+
 1. Copy the contents of `src/experimental/large-button/` to `src/experimental/large-button-2`
 2. Update the status in `src/experimental/large-button/README` to `deprecated` and indicate why (because there's a new version)
 3. Make the breaking changes to `src/experimental/large-button-2`
@@ -255,22 +290,27 @@ The `LargeButton` you created accepted `children`, but because of reasons, you n
 6. Make an announcement for anybody who may be using the deprecated code
 
 #### CODEOWNERS
+
 Add your team's GitHub team name to the [CODEOWNERS file](https://github.com/department-of-veterans-affairs/vets-website/blob/master/.github/CODEOWNERS) to take ownership of the experiment's code. This will mean your team will be required reviewers on all changes to this code.
 
 #### Test coverage
+
 As with all code, test coverage is critical. This is especially true with shared code. Aim for at least 90% unit test coverage before declaring an experiment to be `stable`.
 
 ### Using shared experimental designs
+
 Before using an experimental design, first check the `src/experimental/` directory in `vets-website` to see if it's been shared yet. If not, work with the authoring team to move the code into `src/experimental/`. See [Sharing experimental design code](#sharing-experimental-design-code) above for more information.
 
 The babel module resolver plugin has the `root` set to `"./src"`, so you can import your experimental design with the following:
 
- ```js
-import LargeButton from '~/experimental/large-button';
+```js
+import LargeButton from "~/experimental/large-button";
 ```
 
 ### Ending the experiment
+
 Experimental designs are meant to be short-lived. The experimental design code may no longer be needed because:
+
 - The design was approved for adoption into the design system
 - The design was rejected for adoption into the design system
 - A breaking change was introduced and a new version was created
@@ -278,9 +318,10 @@ Experimental designs are meant to be short-lived. The experimental design code m
 When code is deprecated for any of these reasons, the goal is to delete the code. If there are no applications using the deprecated code, simply delete the directory.
 
 If there are applications using the deprecated code:
+
 1. In the README: Mark the code as `deprecated`
 1. In the REAMDE: Clearly outline what engineers should do to stop using the experiment
-    - This may be something like "upgrade to `~/experimental/large-button-2`," "use `@department-of-veterans-affairs/component-library/LargeButton`," or "discontinue use; the experiment has been rejected"
+   - This may be something like "upgrade to `~/experimental/large-button-2`," "use `@department-of-veterans-affairs/component-library/LargeButton`," or "discontinue use; the experiment has been rejected"
 1. In Slack: Notify teams that the code has been deprecated, either via an announcement or reaching out directly to the teams using the experiment
 1. Check in weekly to see if there are still applications using the experiment; delete the directory when no applications are dependent on it
 
