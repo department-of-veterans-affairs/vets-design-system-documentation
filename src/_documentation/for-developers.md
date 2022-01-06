@@ -86,9 +86,10 @@ applyPolyfills().then(() => {
 
 5. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 
-6. If you are not passing in functions, objects or arrays to a web component's properties, then you can use a web component from the Design System (identified by tags prefixed with `<va-*>`) like any other HTML element without having to import it.
-
-    If you must pass in functions, objects or arrays to a web component's properties, you must use the web component bindings syntax:
+6. If you are not passing in functions, objects or arrays to a web component's properties, then you can use a web component from the Design System (identified by tags prefixed with `<va-*>`).
+    
+    **For React applications:**
+    If you must pass in functions, objects or arrays to a web component's properties, you must use the web component React bindings syntax:
     ```js
     import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
     
