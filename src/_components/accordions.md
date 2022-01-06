@@ -32,19 +32,20 @@ Accordions are a list of headers that can be clicked to hide or reveal additiona
 
 ## Usage
 
-Accordions organize pieces of sibling content. Form controls, alerts, and other components should . 
-
 ### When to use accordions
 
 Use an accordion when:
 
-* Users only need a few specific pieces of related content within a page.
+* Users only need to see a few pieces of sibling content within a page.
 * Information needs to be displayed in a small space.
 
 ### When to consider something else
 
-* If visitors need to see most or all of the information on a page. Use well-formatted text instead.
-* If there is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about what headers to click on.
+Consider another solution if:
+
+* Users need to see most or all of the information on the page at one time. Use chunked text with discriptive headings instead.
+* There is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
+* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info](https://design.va.gov/components/additional-info) component instead. Additional info uses the show/hide interaction in a similar way to accordions.b 
 
 ### How to use accordions
 
