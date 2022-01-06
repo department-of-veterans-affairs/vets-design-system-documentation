@@ -64,14 +64,12 @@ This is already handled for the `vets-website` repository. To get our Web Compon
 
 1. Add the `component-library` dependency to your node/yarn project using `yarn add @department-of-veterans-affairs/component-library`.
 
-1. Import the global CSS file which contains important CSS variables:
-
+2. Import the global CSS file which contains important CSS variables:
 ```js
 import "@department-of-veterans-affairs/component-library/dist/main.css";
 ```
 
-1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
-
+3. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
 ```js
 import {
   applyPolyfills,
@@ -79,26 +77,25 @@ import {
 } from "@department-of-veterans-affairs/component-library";
 ```
 
-1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
-
+4. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
 ```js
 applyPolyfills().then(() => {
   defineCustomElements();
 });
 ```
 
-1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
-1. There are 2 ways that we can use web components depending on your requirements.
+5. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 
-   If you are not passing in functions, objects or arrays to a web component's properties, then you can use a web component from the Design System (identified by tags prefixed with `<va-*`) like any other HTML element without having to import it.
+6. There are 2 ways that we can use web components depending on your requirements.
 
-   If you must pass in functions, objects or arrays to a web component's properties, you must use the web component bindings syntax:
+    If you are not passing in functions, objects or arrays to a web component's properties, then you can use a web component from the Design System (identified by tags prefixed with `<va-*>`) like any other HTML element without having to import it.
 
-```js
-import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
-
-<VaExampleComponent />;
-```
+    If you must pass in functions, objects or arrays to a web component's properties, you must use the web component bindings syntax:
+    ```js
+    import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
+    
+    <VaExampleComponent />;
+    ```
 
 ### Implementing design work
 
