@@ -10,29 +10,35 @@ title: Accordions
 Accordions are a list of headers that can be clicked to hide or reveal additional content. By default accordions are multi-selectable and borderless, however props can be added to make them bordered and single-select.
 </div>
 
-## Default
+## Examples
+
+### Default
 
 {% include storybook-preview.html story="components-va-accordion--default" %}
 
-## Bordered
+### Bordered
 
 {% include storybook-preview.html story="components-va-accordion--bordered" %}
 
-## Single Select
+### Single Select
 
 * Adding an `open-single` prop on the `va-accordion` component will allow the user to only open one accordion at a time.
 
 {% include storybook-preview.html story="components-va-accordion--single-select" %}
 
-## Subheader
+### Subheader
 
 {% include storybook-preview.html story="components-va-accordion--subheader" %}
 
 ## Usage
 
+Accordions organize pieces of sibling content. Form controls, alerts, and other components should . 
+
 ### When to use accordions
 
-* Users only need a few specific pieces of content within a page.
+Use an accordion when:
+
+* Users only need a few specific pieces of related content within a page.
 * Information needs to be displayed in a small space.
 
 ### When to consider something else
