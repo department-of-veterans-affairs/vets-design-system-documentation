@@ -24,4 +24,4 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 
 - In any part of a text link, since the blue and underlining sets apart that text enough.
 - For words used to emphasize a point being made in the text, like “only if.”
-- When an H3 or H4 is more appropriate because the label is serving as a subhead. Screen readers navigate around the page using headings. If the subhead text is bold, an area of the page will  be skipped.
+- When the label is serving as a subhead. Use an H3 or an H4 instead. Screen readers navigate around the page by headings. If the subhead text is bold, that section of the page will be skipped.
