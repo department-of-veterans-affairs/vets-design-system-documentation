@@ -63,30 +63,25 @@ The Design System team is working on developing a library of reusable Web Compon
 This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
 
 1. Add the `component-library` dependency to your node/yarn project using `yarn add @department-of-veterans-affairs/component-library`.
-
-2. Import the global CSS file which contains important CSS variables:
+1. Import the global CSS file which contains important CSS variables:
 ```js
 import "@department-of-veterans-affairs/component-library/dist/main.css";
 ```
-
-3. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
+1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
 ```js
 import {
   applyPolyfills,
   defineCustomElements,
 } from "@department-of-veterans-affairs/component-library";
 ```
-
-4. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
+1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
 ```js
 applyPolyfills().then(() => {
   defineCustomElements();
 });
 ```
-
-5. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
-
-6. If you are not passing in functions, objects or arrays to a web component's properties, then you are ready to use a web component from the Design System (identified by tags prefixed with `<va-*>`).
+1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.xxxxx
+1. If you are not passing in functions, objects or arrays to a web component's properties, then you are ready to use a web component from the Design System (identified by tags prefixed with `<va-*>`).
     
     **For React applications:**
     If you must pass in functions, objects or arrays to a web component's properties, you must use the web component React bindings syntax:
