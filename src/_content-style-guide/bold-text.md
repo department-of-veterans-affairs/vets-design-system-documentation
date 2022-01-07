@@ -22,5 +22,6 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 
 **Don’t use bold in these cases**
 
-- Any part of a text link, since the blue and underlining sets apart that text enough
-- Words used to emphasize a point being made in the text, like “only if”
+- In any part of a text link, since the blue and underlining sets apart that text enough.
+- For words used to emphasize a point being made in the text, like “only if.”
+- When the label is serving as a subhead. Use an H3 or an H4 instead. Screen readers navigate around the page by headings. If the subhead text is bold, the screen reader will skip that section of the page.
