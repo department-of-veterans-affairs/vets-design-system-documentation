@@ -80,7 +80,7 @@ applyPolyfills().then(() => {
   defineCustomElements();
 });
 ```
-1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.xxxxx
+1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 1. If you are not passing in functions, objects or arrays to a web component's properties, then you are ready to use a web component from the Design System (identified by tags prefixed with `<va-*>`).
     
     **For React applications:**
