@@ -56,7 +56,7 @@ Consider another solution if:
 
 * Keep content succinct -- accordion height will fluctuate depending on the length of the content. 
 * If the accordion has a subheading, it should not wrap to two lines. 
-* In general, accordions should organize static content. Outside of the forms review page, where accordions are used to group sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions to help prevent usability and accessibility issues. Interactive elements will not be focusable when the accordion is in a collapsed state.
+* In general, accordions should organize static content. Outside of the forms review page, where accordions are used to group sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions. Interactive elements will not be focusable when the accordion is in a collapsed state.
 
 ## Accessibility considerations
 
