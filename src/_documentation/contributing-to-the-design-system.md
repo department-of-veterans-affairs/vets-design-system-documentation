@@ -34,18 +34,18 @@ If you do see your idea in the backlog, message the contributors to see if they 
 
 
 ### 2. Fill out a request
-Fill out a [Experimental Design System request ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md&labels=vsp-design-system-team). This should take no more than 10-15 minutes. In the ticket, you will need to provide justification for this new component and any artifacts you might want to include. 
+Fill out an [Experimental Design System request ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md&labels=vsp-design-system-team). This should take no more than 10-15 minutes. In the ticket you will need to provide justification for this new component or pattern, and link to any artifacts you want to include. 
 
 After filling out the ticket, post in the #vsp-design-system slack channel and tag Carol Wong to alert the team that you have filled out a ticket and would like to get on the council's agenda.
 
-Note that you do not need to have anything coded at this point, and in fact, we suggest not having anything coded since ideally ideas would be surfaced to the council before teams put effort into new components.  
+Note that you do not need to have anything coded at this point, and in fact, we suggest not having anything coded since ideally ideas would be surfaced to the council before teams put effort into building new components.  
 
 Additionally, the artifacts you include do not need to be high fidelity. They only need to be able to illustrate your concept. We do, however, encourage some thoughts on how your component or pattern works on mobile.
 
 
 ### 3. Present to Design System Council
 You will present your work to the Design System Council at an upcoming meeting. The Design System Council meets every Friday at 1pm Eastern. Experimental design requests will always be prioritized in this meeting, and teams can assume generally that they will be able to present the same week of the request. In order to kick off this step,
-- Submit a request to join an upcoming Design System Council meeting in #vsp-design-system
+- Submit a request to join an upcoming Design System Council meeting in #vsp-design-system.
 - During the meeting, the Design System Council will evaluate the request and make a decision.
 
 When making the initial request, you can ask to have asynchronous approval if you feel like the change is simple and does not need further explanation. Note that your ticket will still be discussed in the council meeting, but you do not have to attend
