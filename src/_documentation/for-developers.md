@@ -85,10 +85,12 @@ applyPolyfills().then(() => {
     
     **For React applications:**
     If you must pass in functions, objects, or arrays to a web component's properties or listen to custom events, you must use the web component React bindings syntax:
-    ```js
+    ```jsx
     import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
+
+    const exampleFunction = () => console.log("Hello, World!");
     
-    <VaExampleComponent />;
+    <VaExampleComponent exampleProp={exampleFunction} />
     ```
 
 ### Implementing design work
