@@ -50,13 +50,13 @@ Consider another solution if:
 ### Behavior
 
 * Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
-* Make sure interactive elements within the collapsible region are far enough from the header that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)
+* Make sure interactive elements (such as links) within the collapsible region are far enough from the header that users don’t accidentally trigger a collapse. (The exact distance will depend on the device.)
 
 ## Content considerations
 
-* Keep accordion content succinct -- accordion height will fluctuate depending on the content. 
-* If the accordion has a subheading, we do not recommend the subheading wrap to 2 lines. 
-* Outside of the forms review page, where accordions are used to organize sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions. 
+* Keep content succinct -- accordion height will fluctuate depending on the length of the content. 
+* If the accordion has a subheading, it should not wrap to two lines. 
+* In general, accordions should organize static content. Outside of the forms review page, where accordions are used to group sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions to help prevent usability and accessibility issues. Interactive elements will not be focusable when the accordion is in a collapsed state.
 
 ## Accessibility considerations
 
