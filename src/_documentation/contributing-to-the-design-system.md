@@ -30,7 +30,7 @@ Check the [backlog](https://design.va.gov/documentation/backlog) to see if your 
 
 If you do not see your idea in the backlog, go to step 2. 
 
-If you do see your idea in the backlog, message the contributors to see if they are moving forwards or not. If not and you would like to tackle the problem, move forwards with step 2.
+If you do see your idea in the backlog, message the contributors to see if they are moving forward or not. If not and you would like to tackle the problem, move forwards with step 2.
 
 
 ### 2. Fill out a request
