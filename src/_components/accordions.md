@@ -36,7 +36,7 @@ Accordions, which employ the UX principle of progressive disclosure, are a list 
 
 Use an accordion:
 
-* If users only need to access a few pieces of related information within a content-heavy page.
+* When users only need to access a few pieces of related information within a content-heavy page.
 * To organize related content in a small space.
 
 ### When to consider something else
