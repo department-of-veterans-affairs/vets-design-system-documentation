@@ -8,7 +8,7 @@ draft: true
 # Links
 
 <div class="va-introtext" markdown="1">
-A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can be used to trigger a download, such as a PDF, but in general links go places (on the same page or another page) when clicked.
+A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can be used to trigger a download, such as a PDF, but in general links go places (either on the same page or to another page) when clicked.
 </div>
 
 <!-- Show storybook preview here. -->
@@ -40,12 +40,13 @@ A link has four main states: default, hover, active, and visited.
 
 ## Accessibility considerations
 
-- In order to achieve material honesty, a link should not be styled to look or behave like a button.
+- In order to achieve material honesty, a link must not be styled to look or behave like a button.
+- Links list for screenreaders.
 
 ## Content considerations
 
-- Link text should clearly communicate purpose and target (in that order), so users know where they'll be navigated upon clicking.
-- Clearly label external links that go to other federal agences.
+- Link text should clearly communicate purpose and target (in that order), so users know where they'll be taken before clicking.
+- Clearly label external links that go to other federal agencies.
 - For non-federal external links, explicitly state that the content is not endorsed by the federal government.   
 
 ## Link patterns
