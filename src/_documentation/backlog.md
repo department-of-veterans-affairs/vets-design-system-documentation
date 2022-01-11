@@ -8,7 +8,7 @@ title: Design System Backlog
 - [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
 - [Add style guide / pattern fo Blue status highlights to DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/388)
 
-### In progess
+### In progress
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
 -  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
 - [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
