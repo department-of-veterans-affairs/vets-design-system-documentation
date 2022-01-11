@@ -4,14 +4,19 @@ title: Design System Backlog
 ---
 
 ## Design System Backlog
-
-### In progess
-
+### Completed
 - [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
-
 - [Add style guide / pattern fo Blue status highlights to DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/388)
 
+### In progess
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
+-  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
+- [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
+- [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
+- [Audit & document use of Bold text on headings](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/19573)
+- [Add tab design to Storybook · Issue #403 ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/403)
+- [Feature Request - Privacy Act Statement variation and customization  # ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
+
 
 ### Prioritized
 
@@ -23,19 +28,6 @@ title: Design System Backlog
 
 - [Create a pattern for The header / hero area with the veteran's name and info](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/389)
 
-- [Feature Request - Privacy Act Statement variation and customization  # ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
-
-- [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
-
-- [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
-
-- [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
-
-- [Audit & document use of Bold text on headings](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/19573)
-
-- [Add tab design to Storybook · Issue #403 ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/403)
-
-- [Document tab component to be added to the design system](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/21469) 
 
 ### Approved needs prioritizing 
 
