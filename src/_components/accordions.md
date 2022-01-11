@@ -67,3 +67,8 @@ See [Expandable content](https://design.va.gov/patterns/content-presentation#exp
 * Buttons should state if they are expanded with `aria-expanded="true"`. `The aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.
 * Each button has a unique name `aria-controls="id"` that associates the control to the appropriate region by referencing the controlled element’s `id`.
 * Each content area will have its `aria-hidden` attribute set to either true or false by the component, depending on its corresponding button’s aria-expanded attribute. To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not set `aria-hidden="true"` on any of your content areas.
+
+## Related
+
+* [Addtional info](https://design.va.gov/components/additional-info)
+* [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content)
