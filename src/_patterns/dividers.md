@@ -22,3 +22,7 @@ Consider using a Divider:
 ### When to consider something else
 
 - Avoid using dividers between short, discrete items that are in close proximity with one another. Divider overuse will clutter the page. Consider using vertical white space instead to create separation.  
+
+### How to use Dividers
+
+Horizontal dividers span the width of their container.
