@@ -63,24 +63,50 @@ The Design System team is working on developing a library of reusable Web Compon
 This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
 
 1. Add the `component-library` dependency to your node/yarn project using `yarn add @department-of-veterans-affairs/component-library`.
-
 1. Import the global CSS file which contains important CSS variables:
-  ```js
-  import '@department-of-veterans-affairs/component-library/dist/main.css';
-  ```
+```js
+import "@department-of-veterans-affairs/component-library/dist/main.css";
+```
 1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
-  ```js
-  import { applyPolyfills, defineCustomElements } from '@department-of-veterans-affairs/component-library';
-  ```
+```js
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from "@department-of-veterans-affairs/component-library";
+```
 1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
-  ```js
-  applyPolyfills().then(() => {
-      defineCustomElements();
-  });
-  ```
+```js
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
+```
 1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
-1. Any Web Components from the Design System (identified by tags prefixed with `<va-*>`) should now work as expected on your page.
 
+### Using Web Components
+
+#### Vanilla JavaScript Applications
+
+If the Design System web components will be used in a vanilla JavaScript application, you are ready to use them (identified by tags prefixed with `<va-*>`).
+
+We make our best efforts to avoid creating web components with object or array properties in order to make them easier to use in static HTML pages.
+
+#### React Applications
+
+If the Design System web components will be used in a React application, you are ready to use them unless:
+
+- You must pass in a function, object or array to a web component's properties
+- You must listen to custom events
+
+**If your use case is listed above, you will have to use our web component bindings for React.** If you are not sure if you need to use a custom event, please refer to the web component's Storybook documentation to see its events and properties.
+
+Bindings are component wrappers that allow our web components to work as first-class React components, allowing us to handle custom events and to pass in more than strings and numbers to a web component's properties. You will have to import each web component's bindings like you would with a React component.
+```jsx
+import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
+
+const exampleFunction = () => console.log("Hello, World!");
+
+<VaExampleComponent exampleProp={exampleFunction} />
+```
 
 ### Implementing design work
 
