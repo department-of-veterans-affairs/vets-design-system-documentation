@@ -81,17 +81,26 @@ applyPolyfills().then(() => {
 });
 ```
 1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
-1. You are ready to use a web component from the Design System (identified by tags prefixed with `<va-*>`).
-    
-    **For React applications:**
-    If you must pass in functions, objects, or arrays to a web component's properties or listen to custom events, you must use the web component React bindings syntax:
-    ```jsx
-    import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
 
-    const exampleFunction = () => console.log("Hello, World!");
-    
-    <VaExampleComponent exampleProp={exampleFunction} />
-    ```
+### Using Web Components
+#### Vanilla JavaScript Applications
+If the Design System web components will be used in a vanilla JavaScript application, you are ready to use them (identified by tags prefixed with `<va-*>`).
+#### React Applications
+If the Design System web components will be used in a React application, you are ready to use them unless:
+
+- You must pass in a function, object or array to a web component's properties
+- You must listen to custom events
+
+**If your use case is listed above, you will have to use our web component bindings for React.** If you are not sure if you need to use a custom event, please refer to the web component's Storybook documentation to see its events and properties.
+
+Bindings are component wrappers that allow our web components to work as first-class React components, allowing us to handle custom events and to pass in more than strings and numbers to a web component's properties. You will have to import each web component's bindings like you would with a React component.
+```jsx
+import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
+
+const exampleFunction = () => console.log("Hello, World!");
+
+<VaExampleComponent exampleProp={exampleFunction} />
+```
 
 ### Implementing design work
 
