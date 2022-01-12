@@ -83,9 +83,15 @@ applyPolyfills().then(() => {
 1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 
 ### Using Web Components
+
 #### Vanilla JavaScript Applications
+
 If the Design System web components will be used in a vanilla JavaScript application, you are ready to use them (identified by tags prefixed with `<va-*>`).
+
+We make our best efforts to avoid creating web components with object or array properties in order to make them easier to use in static HTML pages.
+
 #### React Applications
+
 If the Design System web components will be used in a React application, you are ready to use them unless:
 
 - You must pass in a function, object or array to a web component's properties
