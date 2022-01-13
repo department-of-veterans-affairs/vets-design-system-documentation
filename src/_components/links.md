@@ -13,7 +13,11 @@ A link is a navigation element that can appear alone, inline (embedded), or in a
 
 ## Examples
 
-<!-- Show storybook preview here. -->
+<div class="site-showcase">
+  {% include_relative html/links.html %}
+</div>
+
+{% include snippet.html content='html/links.html' %}
 
 ## Usage
 
@@ -30,10 +34,6 @@ Use a link when you want to:
 - Use a button when you want to make a state change or submit a form. Buttons **do things**, whereas links **go places**.
 - When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links](https://design.va.gov/experimental-design/action_links).
 
-### Behavior
-
-A link has five states: default, hover, active, focus, and visited.
-
 ## Content considerations
 
 - Link text should clearly communicate purpose and target (in that order), so users know where they'll be taken before clicking.
@@ -44,15 +44,19 @@ A link has five states: default, hover, active, focus, and visited.
 ## Accessibility considerations
 
 - In order to achieve material honesty, a link must not be styled to look or behave like a button.
-- Links list for screenreaders.
+- Screen readers organize all of the links on a page into a links list, which makes writing link text with clear purpose and target very important.
 
 ## Link patterns
 
-Groups of links can be styled differently depending on their context. 
+Groups of links that appear near the bottom of the main content area on a page can be styled differently depending on their context. 
+
+**Related links**
+
+Related links go to programs and services that are closely related to the content on the page. Resources and support Related links do not appear with supplementary teaser text.
 
 **Major links**
 
-**Related links**
+Major links go to programs and services outside of the current content area.
 
 ## Related 
 
