@@ -43,8 +43,8 @@ Use a link when you want to:
 
 ## Accessibility considerations
 
-- In order to achieve material honesty, a link must not be styled to look or behave like a button.
-- Screen readers organize all of the links on a page into a links list, which makes writing link text with clear purpose and target very important.
+- In order to be materially honest, a link must not be styled to look or behave like a button.
+- The user must be able to navigate to and select links with a keyboard.
 
 ## Link patterns
 
