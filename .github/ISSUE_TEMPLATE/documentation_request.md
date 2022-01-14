@@ -19,10 +19,10 @@ assignees: caw310
 - [ ] Utility
 - [ ] Other
 
-## What is the name
+## What is the name?
 
 <!--
-         Please describe the name of the component/pattern/utility, or section in the content styleguide this applies to
+         Please describe the name of the component/pattern/utility, or section in the content style guide this update applies to.
 -->
 
 ## What is the nature of this update?
