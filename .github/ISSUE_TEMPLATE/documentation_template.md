@@ -15,7 +15,7 @@ Description of component.
 
 (image of component)
 
-## Usability
+## Usage
 
 ### When to use [component name]
 Provide a brief description of the component and use cases.
