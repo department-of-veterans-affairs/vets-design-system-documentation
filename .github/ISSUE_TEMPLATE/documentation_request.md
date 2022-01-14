@@ -13,7 +13,7 @@ assignees: caw310
 
 ## This update is for:
 
-- [ ] Content styleguide
+- [ ] Content style guide
 - [ ] Component
 - [ ] Pattern
 - [ ] Utility
