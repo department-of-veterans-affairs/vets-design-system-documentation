@@ -60,13 +60,13 @@ See [Expandable content](https://design.va.gov/patterns/content-presentation#exp
 * If the accordion has a subheading, it should not wrap to two lines. 
 * In general, accordions should organize static content. Outside of the forms review page, where accordions are used to group sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions. Interactive elements will not be focusable when the accordion is in a collapsed state.
 
-## Accessibility considerations
+## Accessibility considerations and testing
 
 * Code header areas in the accordion as `<buttons>` so that they are usable with both screen readers and the keyboard.
-* The spacebar or enter key must be able to toggle the expand/collapse state of the panel.
 * Buttons should state if they are expanded with `aria-expanded="true"`. `The aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.
 * Each button has a unique name `aria-controls="id"` that associates the control to the appropriate region by referencing the controlled element’s `id`.
 * Each content area will have its `aria-hidden` attribute set to either true or false by the component, depending on its corresponding button’s aria-expanded attribute. To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not set `aria-hidden="true"` on any of your content areas.
+* Testing: the spacebar or enter key must be able to toggle the expand/collapse state of the panel.
 
 ## Related
 
