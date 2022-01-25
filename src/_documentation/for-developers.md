@@ -109,7 +109,7 @@ const exampleFunction = () => console.log("Hello, World!");
 ```
 
 #### Custom Events
-Some of the Design System web components have custom events.
+Some of the Design System web components allow for custom events.
 
 If you must use custom events and you're not using JSX, you must add an event listener using the event name as the event type. Given an event named `vaChange`, use: 
 ```js
