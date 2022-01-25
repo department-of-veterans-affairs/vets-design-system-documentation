@@ -15,6 +15,8 @@ The context of use for cards varies, but at a minimum all cards share these elem
 3. Secondary content (subheaders, body text)
 4. Call to action (link or action link)
 
+![Basic card](/images/Card-one-header.png) 
+
 Optional elements for cards include:
 
 - Label component
