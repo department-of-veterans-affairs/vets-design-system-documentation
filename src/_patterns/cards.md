@@ -25,7 +25,7 @@ Optional elements for cards include:
 
 - Cards will usually appear in a sequence and should be uniform in their look and feel to enhance scannability.
 - You may use the Label component near the top of a card to call out appointment status such as "Canceled" or "Upcoming".
-- If you are using color as a supplementary status indicator, make sure your color choices are intentional, accessible, and intuitive. Never rely on color alone to communicate status.
+- If you are using color as a supplementary status indicator, make sure your color choices are accessible, and intuitive. Never rely on color alone to communicate status.
 - Maximum of three CTAs per card. An Action link will draw attention to the primary CTA on the card.
 
 ### Content considerations
