@@ -43,7 +43,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 
 - Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
 - Include the minutes, even when on the hour.
-- Always use the time zone ET, even if the office is in another location (no parentheses, periods, or daylight/standard).
+- When referencing office hours, always use the time zone ET, even if the office is in another location (no parentheses, periods, or daylight/standard).
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -60,6 +60,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 </div>
 </div>
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
+- In an application or tool that has a time stamp of a user's progress, show hours in their local time zone.
 
 - In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m. ET, Monday through Friday.
 - Where space is limited, indicate ranges with the – en dash (not the shorter - hyphen) and a space on either side. Don't combine the en dash with from/between sentence construction.
