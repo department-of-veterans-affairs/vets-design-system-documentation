@@ -45,7 +45,7 @@ Cards are responsive to the width of the viewport and their parent container. Ca
 - Card maximum width = 304px
 - Card minimum width = 280px
 
-### Large and medium screens**
+### Large and medium screens
 - Card maximum width = 752px
 - Card minimum width = 384px
 
