@@ -6,22 +6,23 @@ draft: true
 
 # Cards
 
-Cards group short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestable chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items. 
+<p class="va-introtext">Cards group short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestable chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items.</p>
 
 The context of use for cards varies, but at a minimum all cards share these elements:
 
-1. Background color
-2. Header
-3. Secondary content (subheaders, body text)
-4. Call to action (link or action link)
-
 ![Basic card](/images/Card-one-header.png) 
+
+1. Background color
+2. Header (H3 or H4)
+3. Secondary content (subheaders, body text, embedded links)
+4. Call to action (link or action link)
 
 Optional elements for cards include:
 
-- Label component
-- Color status indicator badge
-- Image
+![Label and status badge card](/images/Card-label-badge.png) 
+
+1. Label component
+2. Status indicator badge
 
 ## Usage
 
