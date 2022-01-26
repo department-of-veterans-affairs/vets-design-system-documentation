@@ -59,7 +59,6 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 </div>
 </div>
 </div>
-
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 - In an application or tool that has a time stamp of a user's progress or saved work, show hours in their local time zone.
 - In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m. ET, Monday through Friday.
