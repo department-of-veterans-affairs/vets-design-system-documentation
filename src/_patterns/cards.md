@@ -21,7 +21,7 @@ Optional elements for cards include:
 
 ![Label and status badge card](/images/Card-label-badge.png) 
 
-1. Label component
+1. [Label component](https://design.va.gov/components/labels)
 2. Status indicator badge
 
 ## Usage
