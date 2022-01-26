@@ -119,6 +119,8 @@ const element = document.querySelector('va-example-component');
 element.addEventListener('vaChange', event => { /* your listener */ })
 ```
 
+The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
+
 ### Implementing design work
 
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
