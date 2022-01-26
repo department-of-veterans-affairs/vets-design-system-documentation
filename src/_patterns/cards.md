@@ -12,7 +12,7 @@ draft: true
 
 The context of use for cards varies, but at a minimum all cards share these elements:
 
-![Basic card](/images/Card-one-header.png) 
+![Basic card](/images/Basic-card.png) 
 
 1. Background color
 2. Header (H3 or H4)
