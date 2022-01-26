@@ -57,3 +57,11 @@ Cards are responsive to the width of the viewport and their parent container. Ca
 - Include alt text for images and links.
 - The tab key should bring focus to the call(s) to action within the card. 
 - The enter key or spacebar should open a link or Action link.
+
+## Related
+
+- Action links
+- Featured content
+- Labels
+- Links (Content style guide)
+- Section titles (Content style guide)
