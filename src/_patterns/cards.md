@@ -16,8 +16,8 @@ The context of use for cards varies, but at a minimum all cards share these elem
 
 1. Background color
 2. Header (H3 or H4)
-3. Secondary content (body text, optional embedded links)
-4. Call to action (Action link or link)
+3. Secondary content (body text, optional embedded [links](https://design.va.gov/content-style-guide/links))
+4. Call to action ([Action link](https://design.va.gov/experimental-design/action_links) or link)
 
 Optional elements for cards include:
 
@@ -35,7 +35,7 @@ Optional elements for cards include:
 
 ## Content considerations
 
-- Keep card content (especially header text) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
+- Keep card content (especially [header text](https://design.va.gov/content-style-guide/page-titles-and-section-titles#section-titles)) short, crisp, and to-the-point: users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
 - Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
 
 Note: the blue [Featured content](https://design.va.gov/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a callout for the most important information on the page. Cards will usually appear in a sequence, whereas Featured content should be used sparingly on the page. 
