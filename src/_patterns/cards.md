@@ -17,7 +17,7 @@ The context of use for cards varies, but at a minimum all cards share these elem
 1. Background color
 2. Header (H3 or H4)
 3. Secondary content (body text, optional embedded links)
-4. Call to action (link or action link)
+4. Call to action (Action link or link)
 
 Optional elements for cards include:
 
