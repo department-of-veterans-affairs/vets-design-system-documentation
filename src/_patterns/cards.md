@@ -18,7 +18,7 @@ The context of use for cards varies, but most cards share these elements:
 2. **Title.** H3 or H4. Clearly summarizes card content.
 3. **Subheader.** H4 or body text. Usually communicates a status.
 4. **Secondary content.** Body text, optional embedded [links](https://design.va.gov/content-style-guide/links). This content includes next steps and dates/times.
-5. **Call to action.** [Action link](https://design.va.gov/experimental-design/action_links)(recommended) or link. 
+5. **Call to action.** [Action link](https://design.va.gov/experimental-design/action_links) (recommended) or link. 
 
 Optional elements for cards include:
 
