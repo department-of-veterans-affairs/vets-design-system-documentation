@@ -95,7 +95,7 @@ We make our best efforts to avoid creating web components with object or array p
 If the Design System web components will be used in a React application, you are ready to use them unless:
 
 - You must pass in a function, object or array to a web component's properties
-- You must listen to custom events
+- You must use custom events
 
 **If your use case is listed above, you will have to use our web component bindings for React.** If you are not sure if you need to use a custom event, please refer to the web component's Storybook documentation to see its events and properties.
 
@@ -107,6 +107,19 @@ const exampleFunction = () => console.log("Hello, World!");
 
 <VaExampleComponent exampleProp={exampleFunction} />
 ```
+
+#### Custom Events
+Some of the Design System web components allow for custom events.
+
+If you must use custom events and you're using JSX, you must prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
+
+If you must use custom events and you're **not** using JSX, you must add an event listener using the event name as the event type. Given an event named `vaChange`, use: 
+```js
+const element = document.querySelector('va-example-component');
+element.addEventListener('vaChange', event => { /* your listener */ })
+```
+
+The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
 
 ### Implementing design work
 
