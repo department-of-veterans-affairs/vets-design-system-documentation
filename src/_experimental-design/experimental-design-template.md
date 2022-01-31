@@ -10,7 +10,7 @@ Product/application/form: describe where your Experimental component/pattern wil
 
 # Experimental pattern name 
 
-Briefly describe your proposed Experimental design pattern.
+Briefly describe your proposed Experimental design component/pattern.
 
 ## Purpose
 
