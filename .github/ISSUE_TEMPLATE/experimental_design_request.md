@@ -29,4 +29,4 @@ Submit requests to join an upcoming Design System Council meeting in #vsp-design
 
 During the meeting, the Design System Council Working Group will evaluate the request and make a decision. 
 
-If your component request is approved, you can add your component to the [experimental section](https://design.va.gov/experimental-design/) on design.va.gov. If you havee any questions on how to add your component to the experimental section, please reach out to the Design System Team at #vsp-design-system
+If your request is approved, you can add your component/pattern to the [Experimental Design section](https://design.va.gov/experimental-design/) of design.va.gov. If you have any questions on how to add your component/pattern to the Experimental section, please reach out to the Design System Team at #vsp-design-system.
