@@ -4,9 +4,9 @@ sub_section: Experimental pattern name
 title: Experimental pattern name
 draft: true
 ---
-Suggested by: your name
-Team/contract: your team
-Product/application/form: describe where your Experimental component/pattern will live
+Suggested by: your name <br/>
+Team/contract: your team <br />
+Product/application/form: describe where your Experimental component/pattern will live <br/>
 
 # Experimental pattern name 
 
