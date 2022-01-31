@@ -14,7 +14,7 @@ Briefly describe your proposed Experimental design component/pattern.
 
 ## Purpose
 
-Talk about the "why" of your Experimental pattern. What problem(s) will you be solving? How will this pattern improve the experience of veterans using va.gov and/or be an affordance for designers and developers working on the platform?
+Talk about the "why" of your Experimental component/pattern. What problem(s) will you be solving? How will this component/pattern improve the experience of veterans using va.gov and/or be an affordance for designers and developers working on the platform?
 
 ## Example
 
