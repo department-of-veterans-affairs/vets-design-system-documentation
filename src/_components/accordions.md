@@ -70,5 +70,5 @@ See [Expandable content](https://design.va.gov/patterns/content-presentation#exp
 
 ## Related
 
-* [Addtional info](https://design.va.gov/components/additional-info)
+* [Additional info](https://design.va.gov/components/additional-info)
 * [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content)
