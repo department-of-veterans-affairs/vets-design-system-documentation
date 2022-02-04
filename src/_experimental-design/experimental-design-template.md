@@ -7,6 +7,7 @@ draft: true
 Suggested by: your name <br/>
 Team/contract: your team <br />
 Product/application/form: describe where your Experimental component/pattern will live <br/>
+Date: <br/>
 
 # Experimental pattern name 
 
