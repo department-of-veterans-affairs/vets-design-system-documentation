@@ -7,7 +7,7 @@ title: Tabs
 # Tabs
 
 <div class="va-introtext" markdown="1">
-Tabs organize related groups of content (within the same hierarchical level) into discrete views that a user can easier navigate between.</div>
+Tabs organize related groups of content within the same hierarchy into discrete views that a user can easier navigate between.</div>
 
 ## Examples
 
@@ -39,13 +39,13 @@ The Design System Team considers tabs a deprecated component. Because tabs stack
 
 ### Behavior
 
-* At a minimum, make sure selected and not selected tab styles are documented in your design, along with the focus states for each style. Hover and active states are optional for tabs.
 * Allow users to click anywhere on a tab to select it.
 * Never let tabs wrap to a second line.
+* At a minimum, document selected and not selected tab styles in your design, along with the focus states for each style. Hover and active states are optional for tabs.
 
 ## Content considerations
 
-* 
+* Keep tab labels succinct. 
 
 ## Accessibility considerations and testing
 
