@@ -7,7 +7,7 @@ title: Tabs
 # Tabs
 
 <div class="va-introtext" markdown="1">
-Tabs organize related groups of content (within the same hierarcy level) into discrete views that a user can easier navigate between.</div>
+Tabs organize related groups of content (within the same hierarchical level) into discrete views that a user can easier navigate between.</div>
 
 ## Examples
 
