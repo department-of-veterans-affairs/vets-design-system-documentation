@@ -13,24 +13,24 @@ Tabs organize related groups of content (within the same hierarcy level) into di
 
 ### GI Bill Comparison Tool
 
-{% include storybook-preview.html story="components-va-accordion--default" %}
+![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png) 
 
 ### Claim Status Tool
 
-{% include storybook-preview.html story="components-va-accordion--bordered" %}
+![claim status tool tabs]({{site.baseurl}}/images/tabs-claim-status.png) 
 
 ### Facility locator mobile view
 
-{% include storybook-preview.html story="components-va-accordion--single-select" %}
+![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc.png) 
 
 ## Usage
 
-Because tabs stack horizontally, they are not an optimal design solution for mobile viewports. The Design System Team considers tabs a deprecated component.
+The Design System Team considers tabs a deprecated component. Because tabs stack horizontally, they are not an optimal design solution for mobile viewports. 
 
 ### When to use tabs
 
 * To organize 2-3 pieces of related content that users do not need to see all at one time.
-* To allow the user to easily switch between a binary set of options, like Search by name/Search by location or View list/View map.
+* To allow the user to easily switch between a binary set of options or views, like Search by name/Search by location or View list/View map.
 
 ### When to consider something else
 
@@ -53,5 +53,4 @@ Because tabs stack horizontally, they are not an optimal design solution for mob
 
 ## Related
 
-* [Additional info](https://design.va.gov/components/additional-info)
-* [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content)
+* 
