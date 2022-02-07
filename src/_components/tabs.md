@@ -7,8 +7,7 @@ title: Tabs
 # Tabs
 
 <div class="va-introtext" markdown="1">
-Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select.
-</div>
+Tabs organize related groups of content (within the same hierarcy level) into discrete views that a user can easier navigate between.</div>
 
 ## Examples
 
@@ -26,39 +25,31 @@ Accordions, which use the UX principle of progressive disclosure, are a list of 
 
 ## Usage
 
+Because tabs stack horizontally, they are not an optimal design solution for mobile viewports. The Design System Team considers tabs a deprecated component.
+
 ### When to use tabs
 
-Use an accordion:
-
-* When users only need to access a few pieces of related information within a content-heavy page.
-* To organize related content in a small space.
+* To organize 2-3 pieces of related content that users do not need to see all at one time.
+* To allow the user to easily switch between a binary set of options, like Search by name/Search by location or View list/View map.
 
 ### When to consider something else
 
-Consider another solution if:
-
-* Users need to see most or all of the information on the page at one time. Use well-formatted text with discriptive headings instead.
-* There is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
-* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info](https://design.va.gov/components/additional-info) component instead to leverage show/hide functionality. 
+* Consider using a single-select accordion to display one chunk of content at a time.
+* Consider using a dropdown menu (with options that correspond to sections of content) + button to switch between content views.
 
 ### Behavior
 
-* Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
-* Make sure interactive elements (such as links) within the collapsible region are far enough from the header that users don’t accidentally trigger a collapse. (The exact distance will depend on the device.)
+* At a minimum, make sure selected and not selected tab styles are documented in your design, along with the focus states for each style. Hover and active states are optional for tabs.
+* Allow users to click anywhere on a tab to select it.
+* Never let tabs wrap to a second line.
 
 ## Content considerations
 
-* Keep content succinct – accordion height will fluctuate depending on the length of the content. 
-* If the accordion has a subheading, it should not wrap to two lines. 
-* In general, accordions should organize static content. Outside of the forms review page, where accordions are used to group sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions. Interactive elements will not be focusable when the accordion is in a collapsed state.
+* 
 
 ## Accessibility considerations and testing
 
-* Code header areas in the accordion as `<buttons>` so that they are usable with both screen readers and the keyboard.
-* Buttons should state if they are expanded with `aria-expanded="true"`. `The aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.
-* Each button has a unique name `aria-controls="id"` that associates the control to the appropriate region by referencing the controlled element’s `id`.
-* Each content area will have its `aria-hidden` attribute set to either true or false by the component, depending on its corresponding button’s aria-expanded attribute. To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not set `aria-hidden="true"` on any of your content areas.
-* Testing: the spacebar or enter key must be able to toggle the expand/collapse state of the panel.
+* 
 
 ## Related
 
