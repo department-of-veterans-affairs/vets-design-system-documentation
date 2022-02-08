@@ -7,8 +7,7 @@ draft: true
 
 # Tabs
 
-<div class="va-introtext" markdown="1">
-Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between.</div>
+<p class="va-introtext" markdown="1">Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between.</p>
 
 ## Examples
 
