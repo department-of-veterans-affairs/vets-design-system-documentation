@@ -17,7 +17,7 @@ draft: true
 
 ### Facility locator mobile view
 
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc.png) 
+![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) 
 
 ## Usage
 
