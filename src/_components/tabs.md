@@ -34,7 +34,7 @@ The Design System Team considers tabs a deprecated component. Because tabs stack
 
 ### When to consider something else
 
-* Consider using a single-select accordion to display one chunk of content at a time.
+* Consider using a single-select [accordion](https://design.va.gov/components/accordions) to display one chunk of content at a time.
 * If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
 
 ### Behavior and design specifications
