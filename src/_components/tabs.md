@@ -37,21 +37,21 @@ The Design System Team considers tabs a deprecated component. Because tabs stack
 * Consider using a single-select [accordion](https://design.va.gov/components/accordions) to display one chunk of content at a time.
 * If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
 
-### Behavior and design specifications
+### Behavior and design
 
 * Allow the user to click anywhere on a tab to select it.
-* The selected tab should be highlighted and visually connected to content below it.
+* The selected tab must be highlighted and visually connected to content below it.
 * Never let tabs wrap to a second line.
 * Keep the interaction design simple. Document selected and not selected tab styles along with the focus state for each style. Hover and active states are optional for tabs.
 
 ## Content considerations
 
 * Keep tab labels succinct and use plain language. Labels should be 1-2 words.
-* Use sentence case for tab labels. 
+* Use sentence case for tab labels.
 
-## Accessibility considerations and testing
+## Accessibility considerations
 
-* 
+* See [Mozilla's ARIA: tab role] documentation (https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) for details.
 
 ## Related
 
