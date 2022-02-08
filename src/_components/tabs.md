@@ -51,7 +51,7 @@ The Design System Team considers tabs a deprecated component. Because tabs stack
 
 ## Accessibility considerations
 
-* See Mozilla's [ARIA: tab role documentation](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) for guidance.
+* See Mozilla's [ARIA: tab role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) documentation for guidance.
 
 ## Related
 
