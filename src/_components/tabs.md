@@ -15,10 +15,6 @@ draft: true
 
 ![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png) 
 
-### Claim Status Tool
-
-![claim status tool tabs]({{site.baseurl}}/images/tabs-claim-status.png) 
-
 ### Facility locator mobile view
 
 ![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc.png) 
