@@ -25,27 +25,28 @@ Tabs organize related groups of content within the same hierarchy into discrete 
 
 ## Usage
 
-The Design System Team considers tabs a deprecated component. Because tabs stack horizontally, they are not an optimal design solution for mobile viewports. 
+The Design System Team considers tabs a deprecated component. Because tabs stack horizontally, and horizontal scrolling is generally not a good user experience, they are not an optimal design solution for mobile viewports. 
 
 ### When to use tabs
 
-* To organize 2-3 pieces of related content that users do not need to see all at one time.
-* To allow the user to easily switch between a binary set of options or views, like Search by name/Search by location or View list/View map.
+* To organize 2-3 pieces of related content that users do not need to see simultaneously.
+* To allow the user to easily toggle between a binary set of options or views, like Search by name/Search by location or View list/View map.
 
 ### When to consider something else
 
 * Consider using a single-select accordion to display one chunk of content at a time.
-* Consider using a dropdown menu (with options that correspond to sections of content) + button to switch between content views.
+* If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
 
 ### Behavior
 
 * Allow users to click anywhere on a tab to select it.
 * Never let tabs wrap to a second line.
-* At a minimum, document selected and not selected tab styles in your design, along with the focus states for each style. Hover and active states are optional for tabs.
+* Keep the interaction design simple. Document selected and not selected tab styles along with the focus states for each style. Hover and active states are optional for tabs.
 
 ## Content considerations
 
-* Keep tab labels succinct. 
+* Keep tab labels succinct and use plain language. Labels should be 1-2 words.
+* Use sentence case for tab labels. 
 
 ## Accessibility considerations and testing
 
