@@ -27,7 +27,7 @@ Use the **wizard** button to trigger a [wizard](https://design.va.gov/patterns/w
 {% include storybook-preview.html story="components-buttons--primary" %}
 
 ### What to use for primary call to actions that link to another page 
-Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link](https://design.va.gov/components/action-links) documentation for more details. We encourage using green buttons for triggering wizards only. 
+Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link](https://design.va.gov/experimental-design/action_links) documentation for more details. We encourage using green buttons for triggering wizards only. 
 
 ## Secondary button
 
@@ -60,7 +60,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 
 ### When to consider something else
 * For navigation between pages of a website, default to using links.
-* For a visually prominent call to action that links to another page, use an [Action link](https://design.va.gov/components/action-links)
+* For a visually prominent call to action that links to another page, use an [Action link](https://design.va.gov/experimental-design/action_links)
 * Buttons vs text links can be confusing. A good rule is if the action changes the url, it should not be a button.
 
 ### How to use buttons
@@ -81,7 +81,7 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Buttons should display a visible focus state when users tab to them.
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don't automatically know either is a usable button.
 * Include more contextual information in the button label for screen readers. You can use an aria label to specify form numbers or program names in the buttons for greater context. 
-* It is important to use [Action links](https://design.va.gov/components/action-links) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
+* It is important to use [Action links](https://design.va.gov/experimental-design/action_links) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
 * Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it has actually been designated as a button in the markup. 
-* Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link](https://design.va.gov/components/action-links) guidance to determine what is needed for a page. 
+* Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link](https://design.va.gov/experimental-design/action_links) guidance to determine what is needed for a page. 
 
