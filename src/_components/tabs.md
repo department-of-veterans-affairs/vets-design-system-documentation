@@ -21,7 +21,7 @@ draft: true
 
 ## Usage
 
-The Design System Team considers tabs a deprecated component. Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution, especially for mobile viewports. 
+The Design System Team considers tabs a deprecated component. Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. 
 
 ### When to use tabs
 
