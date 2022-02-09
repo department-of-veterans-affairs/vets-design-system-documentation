@@ -37,7 +37,7 @@ The Design System Team considers tabs a deprecated component. Because tabs stack
 
 * Allow the user to click anywhere on a tab to select it.
 * The selected tab must be highlighted and visually connected to content below it.
-* Never let tabs wrap to a second line.
+* Never let a row of tabs wrap to a second line.
 * Keep the interaction design simple. Document selected and not selected tab styles along with the focus state for each style. Hover and active states are optional for tabs.
 
 ## Content considerations
