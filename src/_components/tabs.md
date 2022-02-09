@@ -25,7 +25,7 @@ The Design System Team considers tabs a deprecated component. Because tabs stack
 
 ### When to use tabs
 
-* To group 2-3 pieces of related content that users do not need to see simultaneously.
+* To group 2-3 pieces of related content that the user does not need to see simultaneously.
 * To allow the user to easily toggle between a binary set of options or views, like Search by name/Search by location or View list/View map.
 
 ### When to consider something else
