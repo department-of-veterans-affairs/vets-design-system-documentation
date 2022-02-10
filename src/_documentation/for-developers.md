@@ -101,7 +101,7 @@ If the Design System web components will be used in a React application, you are
 
 Bindings are component wrappers that allow our web components to work as first-class React components, allowing us to handle custom events and to pass in more than strings and numbers to a web component's properties. You will have to import each web component's bindings like you would with a React component.
 ```jsx
-import { VaExampleComponent } from "@department-of-veterans-affairs/web-components/react-bindings";
+import { VaExampleComponent } from "@department-of-veterans-affairs/component-library/dist/react-bindings";
 
 const exampleFunction = () => console.log("Hello, World!");
 
