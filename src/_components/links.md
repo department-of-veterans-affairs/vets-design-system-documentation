@@ -60,7 +60,7 @@ Major links go to programs and services outside of the current content area.
 
 ## Related 
 
-- Action links
-- Buttons
-- Links (Content style guide)
-- On this page jump links
+- [Action links](https://design.va.gov/experimental-design/action_links)
+- [Buttons](https://design.va.gov/components/buttons)
+- [Links (Content style guide)](https://design.va.gov/content-style-guide/links)
+- [On this page jump links](https://design.va.gov/components/on-this-page-jump-links)
