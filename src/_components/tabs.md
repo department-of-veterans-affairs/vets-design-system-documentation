@@ -6,21 +6,11 @@ title: Tabs
 
 # Tabs
 
-<p class="va-introtext" markdown="1">Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between. The Design System Team considers tabs a deprecated component. </p>
-
-## Examples
-
-### GI Bill Comparison Tool
-
-![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png) 
-
-### Facility locator mobile view
-
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) 
+<p class="va-introtext" markdown="1">Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between.</p>
 
 ## Usage
 
-Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. In some cases, using two tabs (only) to present a set of complimentary views or options is acceptable.
+The Design System Team considers tabs a deprecated component. Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. In some cases, using two tabs (only) to present a set of complimentary views or options is acceptable.
 
 ### When to use tabs
 
@@ -38,6 +28,16 @@ Because tabs stack horizontally or wrap to a second line, they are not an optima
 * The selected tab must be highlighted and visually connected to content below it.
 * Never let a row of tabs wrap to a second line.
 * Keep the interaction design simple. Document selected and not selected tab styles along with the focus state for each style. Hover and active states are optional for tabs.
+
+## Examples
+
+### GI Bill Comparison Tool
+
+![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png) 
+
+### Facility locator mobile view
+
+![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) 
 
 ## Content considerations
 
