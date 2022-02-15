@@ -6,7 +6,7 @@ title: Tabs
 
 # Tabs
 
-<p class="va-introtext" markdown="1">Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between.</p>
+<p class="va-introtext" markdown="1">Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between. The Design System Team considers tabs a deprecated component. </p>
 
 ## Examples
 
@@ -20,7 +20,7 @@ title: Tabs
 
 ## Usage
 
-The Design System Team considers tabs a deprecated component. Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. In some cases, using two tabs (only) to present a set of complimentary views or options is acceptable.
+Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. In some cases, using two tabs (only) to present a set of complimentary views or options is acceptable.
 
 ### When to use tabs
 
