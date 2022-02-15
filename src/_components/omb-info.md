@@ -43,26 +43,7 @@ OMB Info should appear at the bottom of a form introduction page and show:
 Use an OMB info control at the bottom of a form introduction page.
 
 
-### When to consider something else
-
-Consider another solution if:
-
-* When to consider something else.
-
-
 ### Behavior
 
 * All text is static with the exception of privacy act
 * Privacy Act is a link which opens in a modal window
-
-
-## Accessibility considerations
-
-* Consideration 1
-* Consideration 2
-
-
-## Related
-
-* Related Item 1
-* Related Item 2
