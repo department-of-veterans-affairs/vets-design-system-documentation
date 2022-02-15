@@ -16,7 +16,9 @@ title: Tabs
 
 ### Facility locator mobile view
 
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) ## Usage
+![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) 
+
+## Usage
 
 Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. In some cases, using two tabs (only) to present a set of complimentary views or options is acceptable.
 
