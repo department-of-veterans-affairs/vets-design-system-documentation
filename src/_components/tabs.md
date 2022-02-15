@@ -2,7 +2,6 @@
 layout: default
 sub_section: Tabs
 title: Tabs
-draft: true
 ---
 
 # Tabs
