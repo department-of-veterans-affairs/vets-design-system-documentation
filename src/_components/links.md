@@ -52,9 +52,13 @@ Groups of links that appear near the bottom of the main content area on a page c
 
 **Related links**
 
+![related links image]({{site.baseurl}}/images/RelatedLinks.png) 
+
 Related links go to programs and services that are closely related to the content on the page. Resources and support Related links do not appear with supplementary teaser text.
 
 **Major links**
+
+![major links]({{site.baseurl}}/images/MajorLinks.png) 
 
 Major links go to programs and services outside of the current content area.
 
