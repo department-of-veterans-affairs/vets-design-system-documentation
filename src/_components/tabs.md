@@ -20,14 +20,14 @@ title: Tabs
 
 ## Usage
 
-Because tabs stack horizontally or wrap to a second line, they are not an optimal design solution for mobile viewports. In some cases, using two tabs (only) to present a set of complimentary views or options is acceptable.
+Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using 2 tabs (only) to present a set of complementary options is acceptable.
 
 ### When to use tabs
 
-* To group 2-3 pieces of related content that the user does not need to see simultaneously.
-* To allow the user to easily toggle between a binary set of options or views, like Search by name/Search by location or View list/View map.
+* To group 2 to 3 pieces of related content that the user doesn't need to read at the same time.
+* To allow the user to easily toggle between a binary set of options, like Search by name/Search by location or View list/View map.
 
-### When to consider something else
+### Other components to consider
 
 * Consider using a single-select [accordion](https://design.va.gov/components/accordions) to display one chunk of content at a time.
 * If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
@@ -35,18 +35,18 @@ Because tabs stack horizontally or wrap to a second line, they are not an optima
 ### Behavior and design
 
 * Allow the user to click anywhere on a tab to select it.
-* The selected tab must be highlighted and visually connected to content below it.
+* Make sure the selected tab is highlighted and visually connected to the content below it.
 * Never let a row of tabs wrap to a second line.
 * Keep the interaction design simple. Document selected and not selected tab styles along with the focus state for each style. Hover and active states are optional for tabs.
 
 ## Content considerations
 
-* Keep tab labels succinct and use plain language. Labels should be 1-2 words.
+* Keep tab labels succinct and use plain language. Labels should be 1 to 2 words.
 * Use sentence case for tab labels.
 
 ## Accessibility considerations
 
-* See Mozilla's [ARIA: tab role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) documentation for guidance.
+* Go to Mozilla's [ARIA: tab role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) documentation for guidance.
 
 ## Related
 
