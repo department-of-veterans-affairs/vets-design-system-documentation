@@ -46,22 +46,6 @@ Use a link when you want to:
 - In order to be materially honest, a link must not be styled to look or behave like a button.
 - The user must be able to navigate to and select links with a keyboard.
 
-## Link patterns
-
-Groups of links that appear near the bottom of the main content area on a page can be styled differently depending on their context. 
-
-**Related links**
-
-![related links image]({{site.baseurl}}/images/RelatedLinks.png) 
-
-Related links go to programs and services that are closely related to the content on the page. Resources and support Related links do not appear with supplementary teaser text.
-
-**Major links**
-
-![major links]({{site.baseurl}}/images/MajorLinks.png) 
-
-Major links go to programs and services outside of the current content area.
-
 ## Related 
 
 - [Action links](https://design.va.gov/experimental-design/action_links)
