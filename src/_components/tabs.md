@@ -27,7 +27,7 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 * To group 2 to 3 pieces of related content that the user doesn't need to read at the same time.
 * To allow the user to easily toggle between a binary set of options, like Search by name/Search by location or View list/View map.
 
-### When to use something else
+### When to consider something else
 
 * Consider using a single-select [accordion](https://design.va.gov/components/accordions) to display one chunk of content at a time.
 * If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
