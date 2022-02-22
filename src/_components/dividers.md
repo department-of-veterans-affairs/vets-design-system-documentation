@@ -1,11 +1,11 @@
 ---
 layout: default
-sub_section: Dividers
-title: Dividers
+sub_section: Horizontal rules
+title: Horizontal rules
 draft: true
 ---
 
-# Dividers
+# Horizontal rules
  
 Dividers are thin lines that create separation between sections of content on a page. 
 
@@ -17,14 +17,12 @@ Dividers are thin lines that create separation between sections of content on a 
 
 ## Usage
 
-### When to use dividers
-
-Consider using a divider:
+### When to use horizontal rules
 
 - To signify a change in topic, content type, or expected interaction.
-- To create visual separation between chunks of content. Dividers can help users distinguish between blocks of similar content at-a-glace.  
+- To create visual separation between chunks of content. Horizontal rules can help users distinguish between blocks of similar content at-a-glace.  
 
 ### When to consider something else
 
-- Dividers are most effective when used infrequently. Avoid using dividers between short, individual items that are in close proximity with one another, unless the dividers are separating navigation links. Consider using white space or headers instead to create vertical separation.  
-- Use a gray (background color) box to separate a chunk of interactive elements, like search controls, from a list of results. 
+- Avoid using horizontal rules between short, individual items that are in close proximity with one another, _unless_ they are separating navigation links. Consider using white space or headers instead to create vertical separation.  
+- Use a gray (background color) box to separate a chunk of interactive elements, like search controls, from a list of search results. 
