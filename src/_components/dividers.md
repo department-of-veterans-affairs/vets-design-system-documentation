@@ -7,7 +7,7 @@ draft: true
 
 # Horizontal rules
  
-Dividers are thin lines that create separation between sections of content on a page. 
+Horizontal rules are thin lines that create separation between sections of content on a page. 
 
 ## Examples
 
