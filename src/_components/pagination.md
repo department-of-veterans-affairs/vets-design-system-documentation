@@ -6,4 +6,4 @@ title: Pagination
 
 # Pagination
 
-{% include storybook-preview.html story="components-pagination--default" %}
+{% include storybook-preview.html story="components-va-pagination--default" %}
