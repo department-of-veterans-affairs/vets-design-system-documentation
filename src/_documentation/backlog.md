@@ -7,29 +7,24 @@ title: Design System Backlog
 ### Completed
 - [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
 - [Add style guide / pattern fo Blue status highlights to DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/388)
-
-### In progress
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
--  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
-- [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
-- [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
+- [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385
 - [Audit & document use of Bold text on headings](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/19573)
-- [Add tab design to Storybook · Issue #403 ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/403)
 - [Feature Request - Privacy Act Statement variation and customization  # ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
-
-
-### Prioritized
-
+-  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
 - [Feature request: Confirmation page standardization](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/384)
-
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
 
 - [Audit & document use of Bold text on headings #19573](https://github.com/department-of-veterans-affairs/va.gov-team/issues/19573)
 
-- [Create a pattern for The header / hero area with the veteran's name and info](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/389)
+### In progress
+- [Create mobile design mockups for type-ahead search](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/37792) 
+- [New Components: Download, Video Link, and Accessibility Links #281](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/281)
+
 
 
 ### Approved needs prioritizing 
+- [Create a pattern for The header / hero area with the veteran's name and info](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/389)
 
 - [Standardize type ahead search pattern #308](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/308)
 
@@ -51,7 +46,7 @@ title: Design System Backlog
 
 - [Consider adding the Subway Map as a component to the Design System #260](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/260)
 
-- [New Components: Download, Video Link, and Accessibility Links #281](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/281)
+
 
 - [Secondary button should be styled with a white background, currently styled as transparent #196](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/196)
 
