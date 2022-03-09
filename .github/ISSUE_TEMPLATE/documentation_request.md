@@ -40,6 +40,12 @@ assignees: caw310
 - [ ] Research insights
 - [ ] Package information
 
+## What problem does this solve?
+
+<!--
+        Please describe the problem and how this proposed solution solves it.  
+-->
+
 ## Additional Context
 
 <!--
