@@ -14,7 +14,7 @@ title: Design System Backlog
 -  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
 - [Feature request: Confirmation page standardization](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/384)
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
-
+- [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
 - [Audit & document use of Bold text on headings #19573](https://github.com/department-of-veterans-affairs/va.gov-team/issues/19573)
 
 ### In progress
@@ -24,6 +24,8 @@ title: Design System Backlog
 
 
 ### Approved needs prioritizing 
+- [Add tab design to Storybook · Issue #403 ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/403)
+
 - [Create a pattern for The header / hero area with the veteran's name and info](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/389)
 
 - [Standardize type ahead search pattern #308](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/308)
