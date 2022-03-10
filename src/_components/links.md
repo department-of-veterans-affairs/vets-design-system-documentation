@@ -33,9 +33,17 @@ Use a link when you want to:
 
 Use the following pattern:
 
-fa-download icon + 8 px spacing + link text (file type in parentheses)
+fa-download icon + 8 px spacing + link text (file type)
 
 Icon and link text color is `$color-link-default` `#004795`.
+
+![PDF download pattern]({{site.baseurl}}/images/PDF-download-link.png) 
+
+For PDFs that have been translated into a language other than English, use:
+
+fa-download icon + 8 px spacing + link text (file type, language abbreviation)
+
+![PDF download pattern, Spanish]({{site.baseurl}}/images/PDF-download-link-esp.png) 
 
 ### When to consider something else
 
