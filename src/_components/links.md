@@ -29,6 +29,14 @@ Use a link when you want to:
 - Trigger a download such as a PDF.
 - Make email addresses, dates, and phone numbers open the relevant app by clicking or tapping them.
 
+**PDF download links**
+
+Use the following pattern:
+
+fa-download icon + 8 px spacing + link text (file type in parentheses)
+
+Icon and link text color is `$color-link-default` `#004795`.
+
 ### When to consider something else
 
 - Use a button when you want to make a state change or submit a form. Buttons **do things**, whereas links **go places**.
