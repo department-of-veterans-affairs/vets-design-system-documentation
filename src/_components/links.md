@@ -12,12 +12,13 @@ A link is a navigation element that can appear alone, inline (embedded), or in a
 </div>
 
 ## Examples
-
+{% comment %}
 <div class="site-showcase">
-  {% include_relative ../_design/html/links.html %}
+  {% include_relative html/links.html %}
 </div> 
 
-{% include snippet.html content='../_design/html/links.html' %}
+{% include snippet.html content='html/links.html' %}
+{% endcomment %}
 
 ## Usage
 
