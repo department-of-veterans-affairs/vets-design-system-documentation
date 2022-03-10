@@ -8,7 +8,7 @@ title: Design System Backlog
 - [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
 - [Add style guide / pattern fo Blue status highlights to DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/388)
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
-- [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385
+- [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
 - [Audit & document use of Bold text on headings](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/19573)
 - [Feature Request - Privacy Act Statement variation and customization  # ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
 -  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
