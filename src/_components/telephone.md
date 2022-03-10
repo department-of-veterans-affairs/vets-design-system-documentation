@@ -14,7 +14,7 @@ The `va-telephone` component also follows the guidelines set for <a href="https:
 
 ## Default
 
-{% include storybook-preview.html story=components-va-telephone--default" height="80px" %}
+{% include storybook-preview.html story="components-va-telephone--default" height="80px" %}
 
 ## Three Digit Number
 
