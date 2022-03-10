@@ -13,9 +13,9 @@ A link is a navigation element that can appear alone, inline (embedded), or in a
 
 ## Examples
 
-<div class="site-showcase">
+<!-- <div class="site-showcase">
   {% include_relative html/links.html %}
-</div>
+</div> -->
 
 {% include snippet.html content='html/links.html' %}
 
