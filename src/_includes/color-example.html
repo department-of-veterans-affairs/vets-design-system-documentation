@@ -1,3 +1,22 @@
+<script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(() => {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
 <div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
   <div>
     <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
@@ -10,6 +29,9 @@
         vads-u-background-color--black
       {% endif %}
     ">.vads-u-color--{{ include.name }}</strong>
+    <button aria-label="Copy" id="vads-u-color--{{ include.name }}" class="usa-button-secondary" onClick="clickToCopy('vads-u-color--{{ include.name }}');" type="button">
+      <i id="vads-u-color--{{ include.name }}-icon" class="fas fa-copy"></i>
+    </button>
   </div>
   <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
     <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
