@@ -5,31 +5,13 @@ title: Promo banners
 
 # Promo banners
 
-<p class="va-introtext">Promo banners are fixed content used for dismissible announcements such as new tools, news, etc.</p>
+<p class="va-introtext">Promo banners are fixed content at the bottom of the viewport used for dismissible announcements such as new tools, news, etc.</p>
 
-## Benefit announcements
+## Default
 
-Pertains to content focused on benefits: a new tool, a new online benefit application, etc.
+{% include storybook-preview.html width="1200px" story="components-va-promo-banner--default" %}
 
-{% include storybook-preview.html width="1200px" story="components-banners-promobanner--default" %}
-
-## Email signup
-
-Points to email signups for various VA updates / alerts / communications.
-
-{% include storybook-preview.html width="1200px" story="components-banners-promobanner--email-signup" %}
-
-## News stories
-
-Pertains to newly received or noteworthy information about the VA.
-
-{% include storybook-preview.html width="1200px" story="components-banners-promobanner--news" %}
-
-
-## How to use Promo banners
-
-- Fixed to the bottom of the viewport
-- In Formation's current version, you will need to implement your own dismiss function
+### When to use va-promo-banner and when to consider something else
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -51,3 +33,30 @@ Pertains to newly received or noteworthy information about the VA.
 </div>
 </div>
 </div>
+
+### How to use Promo banners
+-  Add text, an href prop, an id, and a type prop to the component to have data displayed a the bottom of the viewport with an icon associated with the type chosen.
+#### Types
+
+- Announcement
+    - Pertains to content focused on benefits: a new tool, a new online benefit application, etc.
+- Email Signup
+    - Points to email signups for various VA updates / alerts / communications.
+- News
+    - Pertains to newly received or noteworthy information about the VA.
+
+### Technical Documentation on va-promo-banner
+
+Props Available:
+- disable-analytics 
+    - This prop is a boolean and is optional. When it is set to true the component-library-analytics event that is set to track usage on Vets Website via Google Tag Manager will be disabled.
+- type	
+    - This prop takes in a string of 'announcement', 'news', or 'email-signup' and is used to control which icon gets displayed in the Promo Banner.
+- href
+    - This prop takes in a string, and is utilized to determine the web page a user should navigate to when clicking on the Promo Banner.
+
+Events Available:
+- closeEvent
+    - This event is fired when the component is dismissed by clicking on the close icon.
+- component-library-analytics
+    - This event is used to track usage of the component in Vets Website via Google Tag Manager and is emitted when clicking on an anchor link. **Note: This event is read only and cannot be customized**
