@@ -11,6 +11,7 @@ title: Promo banners
 
 {% include storybook-preview.html width="1200px" story="components-va-promo-banner--default" %}
 
+## Usage
 ### When to use va-promo-banner and when to consider something else
 
 <div class="do-dont">
@@ -60,3 +61,8 @@ Events Available:
     - This event is fired when the component is dismissed by clicking on the close icon.
 - component-library-analytics
     - This event is used to track usage of the component in Vets Website via Google Tag Manager and is emitted when clicking on an anchor link. **Note: This event is read only and cannot be customized**
+
+## Accessibility considerations
+
+- By default the close button will have an `aria-label` of `Dismiss this promo banner`. 
+- For all icon elements `aria-hidden="true"` will be added to the element.
