@@ -11,7 +11,15 @@ The latest news and updates on the Design System, Forms library and the Content 
 </div>
 
 ---
+### March 16, 2022
 
+**Component updates**
+
+- [Telephone](https://design.va.gov/components/telephone) section added. 
+- [Banners](https://design.va.gov/components/banners) section added.
+- [Promo Banners](https://design.va.gov/components/promo-banners) section updated.
+
+---
 ### November 23, 2021
 
 **Content style guide updates**
