@@ -27,7 +27,7 @@ The action link is an  eye-catching link to start a digital service. An action l
 
 **Note:** Action links will be replacing green primary buttons that link to another page.
 
-- Use a primary (green) Action Link for the primary call to action on a page or the start of a digital service. 
+- Use a primary (green) Action Link for the primary call to action on a page or the start of a digital service. Use only one primary Action link per page.
 - Use a secondary (blue) Action Link when there are multiple Action Links on a page or if the actions are of equal hierarchy. 
 - Use a reverse (white) Action Link for a dark background.
 
