@@ -84,4 +84,5 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * It is important to use [Action links](https://design.va.gov/experimental-design/action_links) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
 * Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it has actually been designated as a button in the markup. 
 * Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link](https://design.va.gov/experimental-design/action_links) guidance to determine what is needed for a page. 
+* A button's tap target size should be at least 48 x 48 px, with at least 8 px separating tappable elements. 
 
