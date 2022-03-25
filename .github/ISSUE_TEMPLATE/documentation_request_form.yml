@@ -14,7 +14,7 @@ body:
         required: true
 - type: dropdown
   attributes:
-    label: This update is for:
+    label: "This update is for:"
     options:
       - Content style guide
       - Component
