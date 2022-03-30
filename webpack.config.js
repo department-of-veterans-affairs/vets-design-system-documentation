@@ -6,18 +6,27 @@ module.exports = {
   mode: "production",
   output: {
     path: path.resolve(__dirname, "src/vendor/javascripts/"),
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        exclude: /(node_modules)/,
-        loader: "babel-loader",
-        query: {
-          presets: ["react", "es2015"]
-        }
-      }
-    ]
-  }
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // instead of style-loader
+          "css-loader",
+        ],
+      },
+    ],
+  },
 };
