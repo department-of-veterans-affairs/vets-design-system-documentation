@@ -6,7 +6,6 @@ Min specs:
 
 - [Jekyll](http://jekyllrb.com)
 - react
-- webpack
 
 ## To run locally
 

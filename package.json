@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && gulp build",
+    "build": "gulp build",
     "start": "npm run build && bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
@@ -31,7 +31,6 @@
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
     "extract-loader": "^5.1.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^6.2.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
@@ -47,10 +46,7 @@
     "set-value": ">=4.1.0",
     "style-loader": "^3.3.1",
     "tar": ">=6.1.11",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.6.0"
+    "url-loader": "^4.1.1"
   },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^6.16.0",
