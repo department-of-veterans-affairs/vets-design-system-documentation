@@ -26,21 +26,22 @@ Use a link when you want to:
 
 - Navigate to another page or jump to a different section on the current page.
 - Trigger a download such as a PDF.
+- Launch a video.
 - Make email addresses, dates, and phone numbers open the relevant app by clicking or tapping them.
 
 **PDF download links**
 
-Use the following pattern:
+Use the following pattern (the icon is optional):
 
 fa-download icon + 8px margin + Link text (PDF, page count)
 
-Icon (optional) and link text color is `$color-link-default` `#004795`.
+Icon and link text color is `$color-link-default` `#004795`.
 
 ![PDF download pattern]({{site.baseurl}}/images/PDF-download-link.png) 
 
 For PDFs that have been translated into a language other than English, use:
 
-Link text (file type, page count, language abbreviation)
+Link text (PDF, page count, language abbreviation)
 
 ### When to consider something else
 
@@ -49,7 +50,7 @@ Link text (file type, page count, language abbreviation)
 
 ## Content considerations
 
-- See [Links in the Content style guide](https://design.va.gov/content-style-guide/links) for detailed guidance. 
+- Reference [Links in the Content style guide](https://design.va.gov/content-style-guide/links) for detailed guidance. 
 
 ## Accessibility considerations
 
