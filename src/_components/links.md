@@ -31,7 +31,7 @@ Use a link when you want to:
 
 **PDF download links**
 
-Use the following pattern (the icon is optional):
+Use the following pattern (icon is optional):
 
 fa-download icon + 8px margin + Link text (PDF, page count)
 
