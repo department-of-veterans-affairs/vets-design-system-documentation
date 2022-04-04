@@ -11,7 +11,7 @@ anchors:
 
 <p class="va-introtext">The table component organizes data into columns and rows.</p>
 
-{% include storybook-preview.html height="300px" story="components-table--default" %}
+{% include storybook-preview.html height="300px" story="components-va-table--default" %}
 
 ## Usage
 * A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
@@ -51,7 +51,7 @@ anchors:
 <p class="va-introtext">Responsive list tables transition into a list view on smaller screens. A responsive list table is a good solution when veterans need to look up a piece of information. 
 </p>
 
-{% include storybook-preview.html height="950px" width="400px" story="components-table--default" %}
+{% include storybook-preview.html height="950px" width="400px" story="components-va-table--default" %}
 
 ## Usage
 
