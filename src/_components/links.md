@@ -32,17 +32,15 @@ Use a link when you want to:
 
 Use the following pattern:
 
-fa-download icon + 8 px spacing + link text (file type)
+fa-download icon + 8px margin + Link text (PDF, page count)
 
-Icon and link text color is `$color-link-default` `#004795`.
+Icon (optional) and link text color is `$color-link-default` `#004795`.
 
 ![PDF download pattern]({{site.baseurl}}/images/PDF-download-link.png) 
 
 For PDFs that have been translated into a language other than English, use:
 
-fa-download icon + 8 px spacing + link text (file type, language abbreviation)
-
-![PDF download pattern, Spanish]({{site.baseurl}}/images/PDF-download-link-esp.png) 
+Link text (file type, page count, language abbreviation)
 
 ### When to consider something else
 
@@ -51,10 +49,7 @@ fa-download icon + 8 px spacing + link text (file type, language abbreviation)
 
 ## Content considerations
 
-- Link text should clearly communicate purpose and target (in that order), so users know where they'll be taken before clicking.
-- Clearly label external links that go to other federal agencies.
-- For non-federal external links, explicitly state that the content is not endorsed by the federal government.  
-- See [Links in the Content style guide](https://design.va.gov/content-style-guide/links) for information on when to use embedded links vs. CTA links. 
+- See [Links in the Content style guide](https://design.va.gov/content-style-guide/links) for detailed guidance. 
 
 ## Accessibility considerations
 
