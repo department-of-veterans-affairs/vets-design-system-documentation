@@ -33,6 +33,7 @@ anchors:
   - Do not center align.
 - **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
 - **Be selective about using column sort.**
+  - **Note:** column sort does not work in IE11
   - Sort should only be included in a table if it can assist the user in completing a task.
   - Only one column per table should be sortable, keep it simple.
   - A default sort order (ascending or descending) must be defined.
