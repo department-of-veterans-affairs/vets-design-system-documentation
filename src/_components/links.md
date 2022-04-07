@@ -46,9 +46,9 @@ Use the following pattern for PDF download links. The download icon is optional:
 
 fa-download icon + 8px margin + Link text (PDF, page count)
 
-![PDF download pattern]({{site.baseurl}}/images/PDF-download-link.png) 
+<!--![PDF download pattern]({{site.baseurl}}/images/PDF-download-link.png) 
 
-<!--For PDFs that have been translated into a language other than English, use:
+For PDFs that have been translated into a language other than English, use:
 
 fa-download icon + 8px margin + Link text (language abbreviation)(PDF, page count)
 
