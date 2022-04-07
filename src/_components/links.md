@@ -31,7 +31,7 @@ Use a link when you want to:
 
 ### When to consider something else
 
-- Use a button when you want to make a state change or submit a form. Buttons **do things**, whereas links **go places**.
+- Use [Buttons](https://design.va.gov/components/buttons) when you want to make a state change or submit a form. Buttons **do things**, links **go places**.
 - When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links](https://design.va.gov/experimental-design/action_links).
 - When you want to make a long page of content with two or more H2s easier to navigate, use [On this page jump links](https://design.va.gov/components/on-this-page-jump-links).
 
