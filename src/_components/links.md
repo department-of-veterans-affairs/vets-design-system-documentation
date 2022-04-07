@@ -44,7 +44,7 @@ Use a link when you want to:
 
 Use the following pattern for PDF download links. The download icon is optional:
 
-- fa-download icon + 8px margin + Link text (PDF, page count)
+fa-download icon + 8px margin + Link text (PDF, page count)
 
 Icon, link text, and underline color is `$color-link-default` `#004795`.
 
@@ -64,11 +64,11 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 
 Use the following pattern when linking directly to a YouTube video:
 
-- fa-play-circle icon + 8px margin + Video link text
+fa-play-circle icon + 8px margin + Video link text
 
 Use the following pattern when linking to a YouTube channel:
 
-- fa-youtube icon + 8px margin + YouTube channel name
+fa-youtube icon + 8px margin + YouTube channel name
 
 **Video play link code example**
 
