@@ -85,7 +85,7 @@ Use the following pattern when linking to a YouTube channel:
 
 ## Content considerations
 
-- Link text should describe the target and purpose of the link.
+- Link text should describe the purpose and target (destination) of the link.
 - Go to [Links in the Content style guide](https://design.va.gov/content-style-guide/links) for detailed guidance. 
 
 ## Accessibility considerations
