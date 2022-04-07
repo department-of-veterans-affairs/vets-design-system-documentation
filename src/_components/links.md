@@ -40,7 +40,7 @@ Use a link when you want to:
 - Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
 - Encode phone and email links with `mailto:` and `tel:`.
 
-**PDF download links**
+**PDF links**
 
 Use the following pattern for PDF download links. The download icon is optional:
 
