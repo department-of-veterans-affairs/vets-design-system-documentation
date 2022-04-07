@@ -29,24 +29,44 @@ Use a link when you want to:
 - Launch a video.
 - Make email addresses, dates, and phone numbers open the relevant app by clicking or tapping them.
 
+### When to consider something else
+
+- Use a button when you want to make a state change or submit a form. Buttons **do things**, whereas links **go places**.
+- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links](https://design.va.gov/experimental-design/action_links).
+
+### How to use Links
+
+- Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
+
 **PDF download links**
 
 Use the following pattern (icon is optional):
 
 fa-download icon + 8px margin + Link text (PDF, page count)
 
-Icon and link text color is `$color-link-default` `#004795`.
+Icon, link text, and underline color is `$color-link-default` `#004795`.
 
 ![PDF download pattern]({{site.baseurl}}/images/PDF-download-link.png) 
 
 For PDFs that have been translated into a language other than English, use:
 
-Link text (PDF, page count, language abbreviation)
+fa-download icon + 8px margin + Link text (PDF, page count, language abbreviation)
 
-### When to consider something else
+**PDF download link code example**
 
-- Use a button when you want to make a state change or submit a form. Buttons **do things**, whereas links **go places**.
-- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links](https://design.va.gov/experimental-design/action_links).
+```HTML
+<a 
+  href="https://www.va.gov/playbook/downloads/Voices_Of_Veterans.pdf" 
+  download="Voices_Of_Veterans.pdf" 
+  type="application/pdf">
+    <i aria-hidden="true" class="fas fa-download vads-u-padding-right--1" role="img"></i>
+      Download the Voices of Veterans <dfn>(<abbr title="Portable Document Format">PDF</abbr>, 5pages)</dfn>
+</a>
+```
+
+**Video links**
+
+
 
 ## Content considerations
 
@@ -54,8 +74,8 @@ Link text (PDF, page count, language abbreviation)
 
 ## Accessibility considerations
 
-- In order to be materially honest, a link must not be styled to look or behave like a button.
-- The user must be able to navigate to and select links with a keyboard.
+- In order to be materially honest, do not style a link to look or behave like a button.
+- The user must be able to navigate to links using the Tab key and activate links using the Enter key.
 
 ## Related 
 
