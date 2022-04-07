@@ -40,6 +40,7 @@ source: src
 sass:
   sass_dir: assets/stylesheets/
   style: compressed
+  implementation: sass-embedded
 
 # Collections
 collections:
@@ -76,6 +77,11 @@ exclude:
   - node_modules
   - tmp_remote_assets
   - .sass-cache
+  - _design/html
+  - _components/html
+  - _patterns/html
+  - _layout/html
+  - _utilities/html
 
 # Default for building locally. See configuration files in jekyll-configs/ for
 # environment overrides.

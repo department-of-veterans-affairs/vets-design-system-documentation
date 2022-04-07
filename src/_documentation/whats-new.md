@@ -1,7 +1,6 @@
 ---
 layout: default
 title: What’s new?
-
 ---
 
 # What’s new?

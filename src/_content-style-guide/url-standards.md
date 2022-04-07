@@ -3,7 +3,7 @@
 layout: default
 
 #Page info: Edit these items below
-title: [URLs]
+title: URLs
 anchors:
   - anchor: URL standards 
   - anchor: Vanity URLs

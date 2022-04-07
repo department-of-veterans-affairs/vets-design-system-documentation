@@ -10,7 +10,7 @@ title: Design System Backlog
 - [Documentation Request: What error messages are automatically implemented as part of the forms library](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/386) 
 - [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
 - [Audit & document use of Bold text on headings](https://app.zenhub.com/workspaces/vsp-design-system-5f8de67192551b0012ebb802/issues/department-of-veterans-affairs/va.gov-team/19573)
-- [Feature Request - Privacy Act Statement variation and customization  # ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
+- [Feature Request - Privacy Act Statement variation and customization# ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
 -  [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
 - [Feature request: Confirmation page standardization](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/384)
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
@@ -84,7 +84,7 @@ title: Design System Backlog
 
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
 
-- [Feature Request - Privacy Act Statement variation and customization  # Feature Request](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
+- [Feature Request - Privacy Act Statement variation and customization# Feature Request](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
 
 - [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
 

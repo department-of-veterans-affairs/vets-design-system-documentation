@@ -7,7 +7,7 @@ orbs:
 jobs:
   build-deploy:
     docker:
-      - image: cimg/ruby:2.7.2-node
+      - image: cimg/ruby:2.7.5-node
     environment:
       AWS_DEFAULT_REGION: us-gov-west-1
     parameters:
@@ -21,7 +21,7 @@ jobs:
       - aws-cli/setup
       - run: yarn install
         # If this works, think about adding it to the Gemfile
-      - run: gem install bundler:1.16.6
+      - run: gem install bundler:2.1.4
       - run: bundle install
       - run: yarn build
       - run: bundle exec jekyll build --config _config.yml,<< parameters.envConfig >>

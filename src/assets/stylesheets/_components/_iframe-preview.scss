@@ -60,7 +60,7 @@
     content: attr(data-size) "px";
     display: block;
     font-weight: normal;
-    margin-top: $units-1 /2;
+    margin-top: calc($units-1 /2);
   }
 
   @include media($medium-screen) {
