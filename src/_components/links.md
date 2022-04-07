@@ -8,7 +8,7 @@ draft: True
 # Links
 
 <div class="va-introtext" markdown="1">
-A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, such as a PDF, but in general links go places when clicked.
+A link is a navigation element that can appear stand-alone, inline (embedded), or in a group with other links. A link can trigger a download, such as a PDF, but in general links go places when clicked.
 </div>
 
 ## Examples
@@ -16,7 +16,7 @@ A link is a navigation element that can appear alone, inline (embedded), or in a
   {% include_relative html/links.html %}
 </div>
 
-{% include snippet.html content='html/links.html' %}
+<!--{% include snippet.html content='html/links.html' %}-->
 
 ## Usage
 
