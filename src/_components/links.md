@@ -72,7 +72,7 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 
 Use the following pattern when linking directly to a YouTube video:
 
-fa-video icon + 8px margin + Video link text
+fa-play-circle icon + 8px margin + Video link text
 
 Use the following pattern when linking to a YouTube channel:
 
