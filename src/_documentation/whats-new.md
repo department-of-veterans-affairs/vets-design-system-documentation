@@ -11,6 +11,13 @@ The latest news and updates on the Design System, Forms library and the Content 
 </div>
 
 ---
+### April 04, 2022
+**Design System updates**
+
+- Table web component
+
+---
+
 ### March 16, 2022
 
 **Component updates**
