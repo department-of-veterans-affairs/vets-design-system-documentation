@@ -58,7 +58,7 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 
 **PDF download link code example**
 
-```
+```html
 <a 
   href="https://www.va.gov/playbook/downloads/Voices_Of_Veterans.pdf" 
   download="Voices_Of_Veterans.pdf" 
@@ -80,7 +80,7 @@ fa-youtube icon + 8px margin + YouTube channel name
 
 **Video play link code example**
 
-```
+```html
 <a 
   class="video-link" 
   href="https://www.youtube.com/watch?time_continue=3&amp;v=xE0LzeRgdAk" 
