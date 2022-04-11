@@ -66,7 +66,7 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 Use the following pattern when linking directly to a YouTube video:
 
 fa-play-circle icon + 8px margin + Video link text <br/>
-![Video play link](/images/Video-link-plain.png)
+![Video play link](/images/Video-link-descriptive.png)
 
 Use the following pattern when linking to a YouTube channel:
 
@@ -82,7 +82,7 @@ fa-youtube icon + 8px margin + YouTube channel name <br/>
   target="_blank" 
   rel="noopener ">
     <i aria-hidden="true" class="fas fa-play-circle vads-u-padding-right--1" role="img"></i>
-      View video about VA disability compensation <dfn>on Youtube</dfn>
+      Go to the video about VA disability compensation <dfn>on Youtube</dfn>
 </a> 
 ```
 
