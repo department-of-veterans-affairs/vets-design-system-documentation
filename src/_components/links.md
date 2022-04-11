@@ -8,7 +8,7 @@ draft: True
 # Links
 
 <div class="va-introtext" markdown="1">
-A link is a navigation element that can appear stand-alone, inline (embedded), or in a group with other links. A link can trigger a download, such as a PDF, but in general links go places when clicked.
+A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go places when clicked.
 </div>
 
 ## Examples
@@ -40,10 +40,11 @@ Use a link when you want to:
 - Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
 - Encode phone and email links with `mailto:` and `tel:`.
 
-### PDF links
+## PDF links
 
 Use the following pattern for PDF download links. The download icon is optional:
 
+![PDF download link](/images/Download-link-english.png)
 fa-download icon + 8px margin + Link text (PDF, page count)
 
 Icon, link text, and underline color is `$color-link-default` `#004795`.
@@ -64,6 +65,7 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 
 Use the following pattern when linking directly to a YouTube video:
 
+![Video play link](/images/Video-link-plain.png)
 fa-play-circle icon + 8px margin + Video link text
 
 Use the following pattern when linking to a YouTube channel:
