@@ -53,11 +53,11 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 
 ```html
 <a 
-  href="https://www.va.gov/playbook/downloads/Voices_Of_Veterans.pdf" 
-  download="Voices_Of_Veterans.pdf" 
+  href="https://www.va.gov/vaforms/medical/pdf/10-10EZ-fillable.pdf" 
+  download="10-10EZ.pdf" 
   type="application/pdf">
     <i aria-hidden="true" class="fas fa-download vads-u-padding-right--1" role="img"></i>
-      Download the Voices of Veterans <dfn>(<abbr title="Portable Document Format">PDF</abbr>, 5pages)</dfn>
+      Download VA form 10-10EZ <dfn>(<abbr title="Portable Document Format">PDF</abbr>, 5pages)</dfn>
 </a>
 ```
 
