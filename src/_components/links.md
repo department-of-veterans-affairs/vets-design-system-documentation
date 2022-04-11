@@ -8,7 +8,7 @@ draft: True
 # Links
 
 <div class="va-introtext" markdown="1">
-A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go places when clicked.
+A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked.
 </div>
 
 ## Examples
@@ -70,7 +70,8 @@ fa-play-circle icon + 8px margin + Video link text <br/>
 
 Use the following pattern when linking to a YouTube channel:
 
-fa-youtube icon + 8px margin + YouTube channel name
+fa-youtube icon + 8px margin + YouTube channel name < br/>
+![Video play link](/images/VA-youtube-link.png)
 
 **Video play link code example**
 
