@@ -70,7 +70,7 @@ fa-play-circle icon + 8px margin + Video link text <br/>
 
 Use the following pattern when linking to a YouTube channel:
 
-fa-youtube icon + 8px margin + YouTube channel name < br/>
+fa-youtube icon + 8px margin + YouTube channel name <br/>
 ![Video play link](/images/VA-youtube-link.png)
 
 **Video play link code example**
