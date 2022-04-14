@@ -16,9 +16,9 @@ draft: true
 
 ### When to use Type-ahead
 
-### When to consider something else
+* Use the type-ahead component in pages where the user would benefit from receiving suggestions to complete their search query. 
 
-## Content considerations
+### When to consider something else
 
 ## Accessibility considerations
 
