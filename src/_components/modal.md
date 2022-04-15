@@ -4,7 +4,7 @@ sub_section: modal
 title: Modal
 ---
 
-# Modal web component
+# Modal
 
 {% include storybook-preview.html height="400px" story="components-va-modal--default" link_text="va-modal" %}
 
