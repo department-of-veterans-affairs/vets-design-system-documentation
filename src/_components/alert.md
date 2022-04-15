@@ -1,7 +1,7 @@
 ---
 layout: default
-sub_section: alertboxes.md
-title: Alert boxes
+sub_section: alert.md
+title: Alert
 anchors:
   - anchor: Informational alert
   - anchor: Warning alert
@@ -12,7 +12,7 @@ anchors:
   - anchor: Full-width alerts
 ---
 
-# Alert boxes
+# Alert
 
 <div class="va-introtext" markdown="1">
 Alerts keep users informed of important and sometimes time-sensitive changes.
@@ -22,38 +22,38 @@ Alerts keep users informed of important and sometimes time-sensitive changes.
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
-{% include storybook-preview.html story="components-va-alert--default" %}
+{% include storybook-preview.html story="components-va-alert--default" link_text="va-alert" %}
 
 
 ## Warning alert
 
 Used to warn a user, such as when there are negative consequences, and when something has gone wrong.
 
-{% include storybook-preview.html story="components-va-alert--warning" %}
+{% include storybook-preview.html story="components-va-alert--warning" link_text="va-alert" %}
 
 ## Success alert
 
 Used to indicate success.
 
-{% include storybook-preview.html story="components-va-alert--success" %}
+{% include storybook-preview.html story="components-va-alert--success" link_text="va-alert" %}
 
 ## Error alert
 
 Used when there is a problem or something destructive is about to occur.
 
-{% include storybook-preview.html story="components-va-alert--error" %}
+{% include storybook-preview.html story="components-va-alert--error" link_text="va-alert" %}
 
 ## Sign in or tool prompt
 
 Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
 
-{% include storybook-preview.html story="components-va-alert--continue" %}
+{% include storybook-preview.html story="components-va-alert--continue" link_text="va-alert" %}
 
 ## Background color only alert
 
-Any style of alert box can be modified to be a background color only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
+Any style of alert can be modified to be a background color only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
-{% include storybook-preview.html story="components-va-alert--background-only" height="80px" %}
+{% include storybook-preview.html story="components-va-alert--background-only" height="80px" link_text="va-alert" %}
 
 - Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context. 
 - Messaging should be direct and concise. Aim for one or two lines.
@@ -61,9 +61,9 @@ Any style of alert box can be modified to be a background color only alert. Use 
 
 ### Background color only alert with icon
 
-A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert boxes.
+A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert.
 
-{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="80px" %}
+{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="80px" link_text="va-alert" %}
 
 ## Full-width alerts
 
@@ -71,7 +71,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 
 ### Warning
 
-{% include storybook-preview.html story="components-va-alert--fullwidth" %}
+{% include storybook-preview.html story="components-va-alert--fullwidth" link_text="va-alert" %}
 
 ### More about full-width alerts
 - Only available in `info` or `warning` variants.
@@ -85,7 +85,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 
 ### When to use alerts
 
-Use Alert boxes to notify users of the status of the site, which may or may not require a user’s response. This includes errors, warnings, and general site updates. Use Alert boxes to alert users  that something they need needs to be correct or to confirm successful completion of a task.
+Use Alert to notify users of the status of the site, which may or may not require a user’s response. This includes errors, warnings, and general site updates. Use Alert to alert users  that something they need needs to be correct or to confirm successful completion of a task.
 
 ### When to consider something else
 
