@@ -10,4 +10,4 @@ title: Modal
 
 ## Crisis Line Modal
 
-{% include storybook-preview.html height="500px" story="components-modal--crisis-line-modal" %}
+{% include storybook-preview.html height="500px" story="components-va-modal--crisis-line-modal" link_text="va-modal" %}
