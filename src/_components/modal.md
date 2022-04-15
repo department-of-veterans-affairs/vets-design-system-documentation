@@ -8,9 +8,9 @@ title: Modal
   <p class="vads-u-margin--0  vads-u-measure--5"><strong>Modals are currently only available in Formation React. Read about the <a href="https://design.va.gov/storybook/?path=/docs/components-modal--default">Modal component</a>.</strong></p>
 </div>
 
-# Modal
+# Modal web component
 
-{% include storybook-preview.html height="400px" story="components-modal--default" %}
+{% include storybook-preview.html height="400px" story="components-va-modal--default" link_text="va-modal" %}
 
 ## Crisis Line Modal
 
