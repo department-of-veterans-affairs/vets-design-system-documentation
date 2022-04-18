@@ -18,13 +18,14 @@ draft: true
 
 Use type-ahead:
 
-* In global search and other places where predictive text can help the user find relevant content. Type-ahead reduces cognitive load and can assist the user in building useful search queries quickly.
+* In global search and search results pages where predictive text can help the user find relevant content. Type-ahead reduces cognitive load and can assist the user in building useful search queries quickly.
 * To allow the user to filter a long list of search results. 
 * In mobile search UIs where typing a query on a small, hand-held keyboard can be difficult.
 
 ### When to consider something else
 
-* The type-ahead component is appropriate for search and filter use cases. Do not use type-ahead in form fields where the user might assume they are limited to selecting a suggested term in the dropdown menu (when free text input is also allowed).
+* When free text input is allowed, do not use type-ahead in form fields where the user might assume they are limited to selecting a suggested term.
+* Alternatively, provide a clear way for the user to add an entry if you use type-ahead in a form field. Highlighting the typed characters as the top-most item in the dropdown list helps communicate the affordance of free text input.
 
 ## Search behavior
 
