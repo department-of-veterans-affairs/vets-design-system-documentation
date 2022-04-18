@@ -1,0 +1,30 @@
+<div class="site-top-nav-wrapper site-l-wrapper {% unless page.homepage %}sticky{% endunless %}">
+  <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/documentation/" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Documentation</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/content-style-guide/" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Content</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/design/" %} current {% endif %}" href="{{ site.baseurl }}/design">Design</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/components/" %} current {% endif %}" href="{{ site.baseurl }}/components">Components</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/utilities/" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Utilities</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/patterns/" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Patterns</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/layout/" %} current {% endif %}" href="{{ site.baseurl }}/layout">Layout</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link {% if page.url contains "/experimental-design/" %} current {% endif %}" href="{{ site.baseurl }}/experimental-design">Experimental Design</a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -18,7 +18,7 @@
   {% endfor %}
   {% assign sortedPages = include.section | sort: "title", "last" %}
   {% for p in sortedPages %}
-      {% if p.layout == "default" %}
+      {% if p.layout == "default" or p.layout == "component" %}
         {% unless p.index %}
           {% unless p.draft and (p.url != page.url) %}
             <li class="site-sidenav-list__item {% if p.url == page.url %} current {% endif %}">

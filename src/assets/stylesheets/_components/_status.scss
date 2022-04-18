@@ -1,0 +1,14 @@
+.site-component-status--use-best-practice,
+.site-component-status--use-deployed {
+  background-color: $color-green-darker;
+}
+
+.site-component-status--use-with-caution-available,
+.site-component-status--use-with-caution-candidate {
+  background-color: $color-orange; 
+}
+
+.site-component-status--dont-use-proposed,
+.site-component-status--dont-use-deprecated {
+  background-color: $color-secondary-dark;
+}

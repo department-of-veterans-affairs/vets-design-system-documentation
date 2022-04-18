@@ -1,0 +1,12 @@
+{% assign status-label = "Proposed" %}
+{% if page.status == 'use-best-practice' %}
+  {% assign status-label = "Use: Best Practice" %}
+{% elsif page.status == "use-deployed" %}
+  {% assign status-label = "Use: Deployed" %}
+{% elsif page.status == "use-with-caution-available" %}
+  {% assign status-label = "Use with caution: Available" %}
+{% endif %}
+
+<span class="usa-label site-component-status site-component-status--{{page.status}}">
+  {{ status-label }}
+</span>
