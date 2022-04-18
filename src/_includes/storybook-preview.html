@@ -1,5 +1,12 @@
-<div class="site-showcase" style="max-width: {{ include.width | default: '100%' }}" >
-  <iframe width="100%" height="{{ include.height }}" src="{{ site.storybook_path }}/iframe.html?id={{ include.story }}&viewMode=story"></iframe>
+<div
+  class="site-showcase"
+  style="max-width: {{ include.width | default: '100%' }}"
+>
+  <iframe
+    width="100%"
+    height="{{ include.height }}"
+    src="{{ site.storybook_path }}/iframe.html?id={{ include.story }}&viewMode=story"
+  ></iframe>
 </div>
 
 [{% if include.link_text %}View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ site.storybook_path }}/?path=/docs/{{ include.story }})
