@@ -1,6 +1,6 @@
 ---
 layout: default
-sub_section: loading-indcator
+sub_section: loading-indicator
 title: Loading indicator
 ---
 
