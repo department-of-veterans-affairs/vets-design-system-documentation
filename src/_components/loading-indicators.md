@@ -17,7 +17,7 @@ The indeterminate loading indicator communicates to the end user that a page is 
 
 ### When to use the Indeterminate loading indicator
 
-* When the wait time for a process, such as loading a page, is unknown. The Indeterminate loading indicator can appear with or without a text label.
+* When the wait time for a process, such as loading a page, is unknown. 
 
 ### When to consider something else
 
@@ -27,3 +27,7 @@ The indeterminate loading indicator communicates to the end user that a page is 
 ## Accessibility considerations
 
 * 
+
+## Content considerations
+
+* The Indeterminate loading indicator can appear with or without a text label.
