@@ -21,7 +21,8 @@ The indeterminate loading indicator communicates to the end user that a page is 
 
 ### When to consider something else
 
-* Use the standard [Progress bar](https://design.va.gov/components/progress-bars) for file uploads where the wait time is determinate.
+* Use the [Standard progress bar](https://design.va.gov/components/progress-bars) for file uploads where the wait time is determinate.
+* Use the [Segmented progress bar](https://design.va.gov/components/progress-bars) in forms to communicate the number of steps required to complete the form.
 
 ## Accessibility considerations
 
