@@ -10,12 +10,15 @@ anchors:
 
 # Documentation for content writers
 
-
-The purpose of the VA.gov content style guide is to help you create better content, not better bureaucracy. If you’re new to our site, we recommend starting with the [Overview](https://design.va.gov/content-style-guide/) and [Content principles](<https://design.va.gov/content-style-guide/content-principles>).
+<div class="va-introtext">
+  The purpose of the VA.gov content style guide is to help you create better content, not better bureaucracy. If you’re new to our site, we recommend starting with the <a href="{{ site.baseurl }}/content-style-guide/">Overview</a> and <a href="{{ site.baseurl }}/content-style-guide/content-principles">Content principles</a>
+</div>
 
 We’ve also pulled out a few sections below that address common questions. Because this is a living document that will be updated and added to over time, we encourage you to sign up for email updates.
 
 We focus on usage, rather than web policies and governance. If you’re looking for VA web policies, VA Handbook 6102, and other web governance information for all VA digital experiences (including intranet, subdomains, and social media), please visit the [VA Web Governance site](<https://www.va.gov/web/index.cfm>).
+
+{% include _site-on-this-page.html %}
 
 ## Get started
 

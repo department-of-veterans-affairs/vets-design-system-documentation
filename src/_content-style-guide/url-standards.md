@@ -21,15 +21,13 @@ URLs are a highly visible attribute of your content that improve user experience
 A URL consists of a domain, sub-directories (optional), and a page name.
 
 ![The structure of a URL]({{site.baseurl}}/images/url-segments.jpg)
-
-
  
 **Changing URLs or retiring content**
 - Always implement a redirect when pages are taken down or the URL changes.
 - This ensures users do not encounter a 404 page or a broken link. 
 - This also tells search engines to no longer index a page, and to pass any SEO value along to the new page. 
 
-
+{% include _site-on-this-page.html %}
 
 ## URL standards 
 

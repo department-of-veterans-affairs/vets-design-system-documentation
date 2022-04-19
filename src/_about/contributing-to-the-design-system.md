@@ -9,6 +9,7 @@ title: Contributing to the design system
   How to suggest a new component, update existing components, and retire components.
 </div>
 
+{% include _site-on-this-page.html %}
 
 ## Suggest a component or pattern
 
@@ -70,7 +71,7 @@ This should take no more than 30-60 minutes.
 
 Use the [Experimental Design Template]({{ site.new_component_template_link }}) to add and document your component or pattern. It will be created under components but don't worry, we'll move it to the appropriate place if it is a pattern.
 
-If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact Kevin Hoffman if you need access to Sketch for Teams.
+If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact {{ site.sketch_for_teams_admin }} if you need access to Sketch for Teams.
 
 ##### Adding a component or pattern via GitHub
 
@@ -97,7 +98,7 @@ Note that code is not required at this step in the process - the main point of d
 
 #### Ask for your component or pattern to be merged
 
-After your component or pattern has been added reach out to Shawna Hein or Matthew Dingee to merge your request. 
+After your component or pattern has been added reach out to {{ site.experimental_reviewer_1 }} or {{ site.experimental_reviewer_2 }} to merge your request. 
 
 Once merged, the markdown you update will automatically be migrated to the experimental tab of the design system. This typically takes 10-15 minutes after you’ve updated the markdown file. 
 

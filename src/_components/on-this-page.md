@@ -1,12 +1,15 @@
 ---
 layout: component
 title: On this page
+intro-text: "The On this page jump links component summarizes the sections (&lt;h2&gt;s) at the top of long pages and allows users to jump down the page to the respective section."
 status: use-best-practice
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Accessibility considerations
 ---
 
-<div class="va-introtext" markdown="1">
-  The On this page jump links component summarizes the sections (`<h2>`s) at the top of long pages and allows users to jump down the page to the respective section.
-</div>
+## Examples
 
 {% include storybook-preview.html height="250px" story="components-va-on-this-page--default" %}
 

@@ -19,6 +19,13 @@ slack_channel_link: https://dsva.slack.com/archives/C01DBGX4P45
 new_component_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components/experimental-design-template.md
 new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_components/experimental-design-template.md
 
+# People
+sketch_for_teams_admin: "Kevin Hoffman" 
+sketch_library_owner: "Natalie Hill"
+experimental_reviewer_1: "Shawna Hein"
+experimental_reviewer_2: "Matthew Dingee"
+
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

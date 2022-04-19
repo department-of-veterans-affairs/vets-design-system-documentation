@@ -1,5 +1,5 @@
 {% for scale in site.data.maturity-scale.scale %}
-  {% if scale.name == include.component-status %}
+  {%- if scale.name == include.component-status -%}
   <i class="fas fa-circle site-sidenav-status site-sidenav-status--{{include.component-status}}"></i>
-  {% endif %}
+  {%- endif -%}
 {% endfor %}

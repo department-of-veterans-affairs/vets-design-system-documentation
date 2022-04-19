@@ -1,6 +1,6 @@
 ---
 layout: component
-title: Buttons
+title: Button
 status: use-best-practice
 intro-text: Use buttons to signal actions.
 anchors:

@@ -1,17 +1,20 @@
 ---
-layout: default
-sub_section: Links
-title: Links
+layout: component
+title: Link
+intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
 draft: True
+status: use-deployed
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Variations
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Related
 ---
 
-# Links
-
-<div class="va-introtext" markdown="1">
-A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked.
-</div>
-
 ## Examples
+
 <div class="site-showcase">
   {% include_relative html/links.html %}
 </div>
@@ -31,16 +34,18 @@ Use a link when you want to:
 
 ### When to consider something else
 
-- Use [Buttons](https://design.va.gov/components/buttons) when you want to make a state change or submit a form. Buttons **do things**, links **go places**.
-- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links](https://design.va.gov/experimental-design/action_links).
-- When you want to make a long page of content with two or more H2s easier to navigate, use [On this page jump links](https://design.va.gov/components/on-this-page-jump-links).
+- Use a [Button](button) when you want to make a state change or submit a form. Buttons **do things**, links **go places**.
+- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links](../experimental-design/action_links).
+- When you want to make a long page of content with two or more H2s easier to navigate, use [On this page links](on-this-page).
 
 ### How to use Links
 
 - Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
 - Encode phone and email links with `mailto:` and `tel:`.
 
-## PDF links
+## Variations
+
+### PDF links
 
 Use the following pattern for PDF download links. The download icon is optional:
 
@@ -61,7 +66,7 @@ Icon, link text, and underline color is `$color-link-default` `#004795`.
 </a>
 ```
 
-## Video links
+### Video links
 
 Use the following pattern when linking directly to a YouTube video:
 
@@ -89,7 +94,7 @@ fa-youtube icon + 8px margin + YouTube channel name <br/>
 ## Content considerations
 
 - Link text should describe the purpose and target (destination) of the link.
-- Go to [Links in the Content style guide](https://design.va.gov/content-style-guide/links) for detailed guidance. 
+- Go to [Links in the Content style guide](../content-style-guide/links) for detailed guidance. 
 
 ## Accessibility considerations
 
@@ -98,7 +103,7 @@ fa-youtube icon + 8px margin + YouTube channel name <br/>
 
 ## Related 
 
-- [Action links](https://design.va.gov/experimental-design/action_links)
-- [Buttons](https://design.va.gov/components/buttons)
-- [Links (Content style guide)](https://design.va.gov/content-style-guide/links)
-- [On this page jump links](https://design.va.gov/components/on-this-page-jump-links)
+- [Action links](../experimental-design/action_links)
+- [Button](../components/buttons)
+- [Links (Content style guide)](../content-style-guide/links)
+- [On this page links](on-this-page)

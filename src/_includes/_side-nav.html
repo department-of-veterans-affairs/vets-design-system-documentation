@@ -3,16 +3,6 @@
     {% if p.index %}
     <li class="site-sidenav-list__item {% if page.index %} current {% endif %}">
       <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url | replace: '/index', ''}}">Overview</a>
-      {% if page.index %}
-        {% if page.anchors %}
-          <ul class="site-sidenav-list__sub">
-            {% for item in page.anchors %}
-              <li class="site-sidenav-list__sub-item">
-                <a class="site-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" | replace: ",", "" }}">{{ item.anchor }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      {% endif %}
     </li>
     {% endif %}
   {% endfor %}
@@ -23,10 +13,9 @@
           {% unless p.draft and (p.url != page.url) %}
             <li class="site-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
               <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">
-                {% if p.status and p.layout == "component" %}
-                  {% include _site-side-nav-status.html component-status=p.status%}
-                {% endif %}
-                {{p.title}}
+                {%- if p.status and p.layout == "component" -%}
+                  {%- include _site-side-nav-status.html component-status=p.status -%}
+                {%- endif -%}{{p.title}}
               </a>
             </li>
           {% endunless %}

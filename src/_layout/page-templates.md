@@ -2,13 +2,18 @@
 layout: default
 title: Page templates
 anchors:
+  - anchor: Guidance
   - anchor: Two columns, content on right
   - anchor: Two columns, content on left
 ---
 
 # Page templates
 
-<p class="va-introtext">These are the most common layouts used on VA.gov. The templates on this page are not full-page layouts, as main header and footer are not currently part of Formation, but snippets here are for everything in between to help you establish for page grid.</p>
+<p class="va-introtext">
+  These are the most common layouts used on VA.gov. The templates on this page are not full-page layouts, as main header and footer are not currently part of Formation, but snippets here are for everything in between to help you establish for page grid.
+</p>
+
+{% include _site-on-this-page.html %}
 
 ## Guidance for all examples
 
