@@ -5,7 +5,6 @@ This is repo for the design system documentation, aka [design.va.gov](https://de
 Min specs:
 
 - [Jekyll](http://jekyllrb.com)
-- react
 
 ## To run locally
 
