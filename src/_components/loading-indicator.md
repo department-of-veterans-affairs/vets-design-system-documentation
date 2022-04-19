@@ -4,7 +4,7 @@ sub_section: loading-indicator
 title: Loading indicator
 ---
 
-# Loading indicators
+# Loading indicator
 
 <div class="va-introtext" markdown="1">
 The indeterminate Loading indicator communicates to the end user that a page is in the process of loading.</div>
