@@ -4,7 +4,7 @@ sub_section: accordions
 title: Accordion
 ---
 
-# Accordions
+# Accordion
 
 <div class="va-introtext" markdown="1">
 Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select.
