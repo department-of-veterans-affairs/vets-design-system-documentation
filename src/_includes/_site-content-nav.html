@@ -1,7 +1,7 @@
 <div class="site-content__nav">
-  {% if page.url contains "/documentation/" %}
-    {% include _side-nav.html section=site.documentation %}
-    {% assign collection_name = "Documentation" %}
+  {% if page.url contains "/about/" %}
+    {% include _side-nav.html section=site.about %}
+    {% assign collection_name = "About" %}
   {% elsif page.url contains "/design/" %}
     {% include _side-nav.html section=site.design %}
     {% assign collection_name = "Design" %}

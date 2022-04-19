@@ -1,21 +1,12 @@
 ---
-layout: default
-sub_section: omb-info
-title: OMB info
+layout: component
+title: "OMB info"
+status: use-deployed
+intro-text: "Required text from the Office of Management and Budget."
 anchors:
-  - anchor: Default
-  - anchor: Without OMB Number
-  - anchor: Without Response Burden
-  - anchor: With Custom Respondent Burden Benefit Type
+  - anchor: Examples
+  - anchor: Usage
 ---
-
-# OMB info
-
-OMB Info should appear at the bottom of a form introduction page and show:
- - Respondent burden
- - OMB control number
- - Expiration date 
- - Privacy act (link)
 
 ## Examples
 
@@ -42,6 +33,14 @@ OMB Info should appear at the bottom of a form introduction page and show:
 
 Use an OMB info control at the bottom of a form introduction page.
 
+### How to use OMB Info
+
+OMB Info should appear at the bottom of a form introduction page and show:
+
+ - Respondent burden
+ - OMB control number
+ - Expiration date 
+ - Privacy act (link)
 
 ### Behavior
 

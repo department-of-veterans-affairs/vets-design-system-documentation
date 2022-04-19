@@ -48,6 +48,14 @@
             {% if page.status %}
               {% include _status.html %}
             {% endif %}
+            {% if page.intro-text %}
+            <div class="va-introtext" markdown="1">
+              {{ page.intro-text }}
+            </div>
+            {% endif %}
+            {% if page.anchors %}
+              {% include _site-on-this-page.html %}
+            {% endif %}
           {% endunless %}
           {{ content }}
         </main>

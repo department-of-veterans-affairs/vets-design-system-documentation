@@ -1,12 +1,16 @@
 ---
-layout: default
-sub_section: Tabs
+layout: component
 title: Tabs
+status: use-with-caution-available
+intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between. The Design System Team considers tabs a deprecated component due to their incompatibility (in most cases) with mobile viewports."
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Related
 ---
 
-# Tabs
-
-<p class="va-introtext" markdown="1">Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between. The Design System Team considers tabs a deprecated component due to their incompatibility (in most cases) with mobile viewports.</p>
 
 ## Examples
 

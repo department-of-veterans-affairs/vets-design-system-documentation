@@ -1,19 +1,21 @@
 ---
-layout: default
-sub_section: table
+layout: component
 title: Table
+status: use-best-practice
+intro-text: "The table component organizes data into columns and rows."
 anchors:
-  - anchor: Table
-  - anchor: Responsive list table
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+web-component: va-table
 ---
 
-# Table
-
-<p class="va-introtext">The table component organizes data into columns and rows.</p>
+## Example
 
 {% include storybook-preview.html height="300px" story="components-va-table--default" %}
 
 ## Usage
+
 * A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
 
 ### When to use a table
@@ -37,6 +39,8 @@ anchors:
   - Sort should only be included in a table if it can assist the user in completing a task.
   - Only one column per table should be sortable, keep it simple.
   - A default sort order (ascending or descending) must be defined.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 * Table headers must be designated with `<th>`.
@@ -68,6 +72,8 @@ Use a list view table when you need to present a list of information in an itemi
 - **Left align header and value in list view** When using list view, the header and value are stacked vertically with the bolded header on one line and the value on the line below. Make sure both header and value are left aligned. 
 - **Limit characters in headings** Column headings shouldn’t exceed 60 characters. Follow content guidelines on [how to abbreviate dates and time](https://design.va.gov/content-style-guide/dates-and-numbers), as well as, other [abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 - **Tables should have a maximum of 5 columns** Very large tables with lots of columns are difficult to use. This problem only gets exacerbated on smaller screens. Show only what users really need.  
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 - **Test it as soon as possible, especially on mobile devices.** Reach out to A11y specialists to help test how tables read on mobile screen readers 

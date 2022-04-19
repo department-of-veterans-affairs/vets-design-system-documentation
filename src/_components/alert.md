@@ -1,55 +1,48 @@
 ---
-layout: default
-sub_section: alertboxes.md
-title: Alert boxes
+layout: component
+title: Alert
+status: use-best-practice
+intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 anchors:
-  - anchor: Informational alert
-  - anchor: Warning alert
-  - anchor: Success alert
-  - anchor: Error alert
-  - anchor: Continue status
-  - anchor: Background color only alert
-  - anchor: Full-width alerts
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
+web-component: va-alert
 ---
 
-# Alert boxes
-
-<div class="va-introtext" markdown="1">
-Alerts keep users informed of important and sometimes time-sensitive changes.
-</div>
-
-## Informational alert
+## Examples
+### Informational alert
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
 {% include storybook-preview.html story="components-va-alert--default" %}
 
-
-## Warning alert
+### Warning alert
 
 Used to warn a user, such as when there are negative consequences, and when something has gone wrong.
 
 {% include storybook-preview.html story="components-va-alert--warning" %}
 
-## Success alert
+### Success alert
 
 Used to indicate success.
 
 {% include storybook-preview.html story="components-va-alert--success" %}
 
-## Error alert
+### Error alert
 
 Used when there is a problem or something destructive is about to occur.
 
 {% include storybook-preview.html story="components-va-alert--error" %}
 
-## Sign in or tool prompt
+### Sign in or tool prompt
 
 Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
 
 {% include storybook-preview.html story="components-va-alert--continue" %}
 
-## Background color only alert
+### Background color only alert
 
 Any style of alert box can be modified to be a background color only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
@@ -59,21 +52,21 @@ Any style of alert box can be modified to be a background color only alert. Use 
 - Messaging should be direct and concise. Aim for one or two lines.
 - Don’t use headings in background alerts.
 
-### Background color only alert with icon
+#### Background color only alert with icon
 
 A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert boxes.
 
 {% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="80px" %}
 
-## Full-width alerts
+### Full-width alerts
 
 Full-width alerts are used only for emergency or urgent communications and should appear below the main navigation. 
 
-### Warning
+#### Warning
 
 {% include storybook-preview.html story="components-va-alert--fullwidth" %}
 
-### More about full-width alerts
+#### More about full-width alerts
 - Only available in `info` or `warning` variants.
 - Content inside alert remains aligned to the main page grid container. This might not be apparent on this site in smaller screens.
 - Use for emergency or very urgent communications only. For example, a hurricane alert; government shutdown affecting VA services, etc. Emergency homepage alerts notify Veterans, VA employees, and the public of events that affect VA services or site features.
@@ -103,6 +96,8 @@ When the user is required to do something in response to an alert, let them know
 * Don’t include notifications that aren’t related to the user’s current goal.
 * Don’t stack alerts one after the other.
 * If the alert appears within the page body content, it should be co-located with relevant content.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 

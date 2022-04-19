@@ -1,42 +1,47 @@
 ---
-layout: default
-sub_section: telephone
+layout: component
 title: Telephone
+status: use-best-practice
+intro-text: "The telephone component captures the many variations of phone numbers displayed on va.gov." 
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
+web-component: va-telephone
 ---
 
-# Telephone
-
-<div class="va-introtext" markdown="1">
-The `va-telephone` component allows for a developer to create a link to a telephone number. By default, `va-telephone` components are clickable with a link and accept a value of 3 or 10 digits, however, props can be added to make provide them with an extension, make them non-clickable, and have an international phone number indicator.
+By default, `va-telephone` components are clickable with a link and accept a value of 3 or 10 digits, however, props can be added to provide them with an extension, make them non-clickable, and have an international phone number indicator.
 
 The `va-telephone` component also follows the guidelines set for <a href="https://design.va.gov/content-style-guide/dates-and-numbers#phone-numbers">phone numbers</a>.
-</div>
 
-## Default
+## Examples
+
+### Default
 
 {% include storybook-preview.html story="components-va-telephone--default" height="80px" %}
 
-## Three Digit Number
+### Three Digit Number
 
 {% include storybook-preview.html story="components-va-telephone--three-digit-number" height="80px" %}
 
-## Extension
+### Extension
 
 {% include storybook-preview.html story="components-va-telephone--extension" height="80px" %}
 
-## Not Clickable
+### Not Clickable
 
 {% include storybook-preview.html story="components-va-telephone--not-clickable" height="80px" %}
 
-## International
+### International
 
 {% include storybook-preview.html story="components-va-telephone--international" height="80px" %}
 
-## Aria Described By
+### Aria Described By
 
 {% include storybook-preview.html story="components-va-telephone--aria-described-by" height="80px" %}
 
-## Vanity Number
+### Vanity Number
 
 {% include storybook-preview.html story="components-va-telephone--vanity-number" height="80px" %}
 
@@ -55,21 +60,7 @@ The `va-telephone` component also follows the guidelines set for <a href="https:
 - Add a 3 or 10 digit phone number to the component to have it formatted correctly for usage in a page.
 - If the phone number should have an `extension`, be `non-clickable`, or represent an `international` number, additional props can be added to accommodate.
 
-### Technical Documentation on va-telephone
-
-Props Available:
-- contact 
-    - This prop takes in a string of 3 or 10 digits representing the contact number and is required.
-- extension	
-    - This prop takes in an integer as a phone number extension and is optional.
-- not-clickable
-    - This prop is a boolean and is optional. When it is set to true the text will not be a hyperlink as it will be rendered as a span instead of a hyperlink.
-- international
-    - This prop is a boolean and is optional. When it is set to true it will prepend a +1 to the number indicating that number is to be used from outside the USA.
-
-Events Available:
-- component-library-analytics
-    - This event is used to track usage of the component in Vets Website via Google Tag Manager and is emitted when clicking on an anchor link. **Note: This event is read only and cannot be customized**
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 

@@ -1,17 +1,23 @@
 ---
-layout: default
-sub_section: banners
-title: Banners
+layout: component
+title: Banner
+status: use-deployed
+intro-text: "Banners are fixed content at the top of the page used for dismissible announcements such as new tools, news, etc."
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
+web-component: va-banner
 ---
 
-# Banners
-<p class="va-introtext">Banners are fixed content at the top of the page used for dismissible announcements such as new tools, news, etc.</p>
+## Examples
 
-## Default
+### Default
 
 {% include storybook-preview.html story="components-va-banner--default" height="80px" %}
 
-## Closeable
+### Closeable
 
 {% include storybook-preview.html story="components-va-banner--closeable" height="80px" %}
 
@@ -49,6 +55,8 @@ Props Available:
 Events Available:
 - component-library-analytics
     - This event is used to track usage of the component in Vets Website via Google Tag Manager and is emitted when clicking on an anchor link. **Note: This event is read only and cannot be customized**
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
