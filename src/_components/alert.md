@@ -67,6 +67,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 {% include storybook-preview.html story="components-va-alert--fullwidth" %}
 
 #### More about full-width alerts
+
 - Only available in `info` or `warning` variants.
 - Content inside alert remains aligned to the main page grid container. This might not be apparent on this site in smaller screens.
 - Use for emergency or very urgent communications only. For example, a hurricane alert; government shutdown affecting VA services, etc. Emergency homepage alerts notify Veterans, VA employees, and the public of events that affect VA services or site features.

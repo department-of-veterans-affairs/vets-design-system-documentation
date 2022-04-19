@@ -48,7 +48,7 @@ web-component: va-table
 * Each header cell should have `scope="col"` or `scope="row"`.
 * Complex tables with more than two levels of headers should use `id` and `headers` attributes so that data cells and header associations are explicit.
 * Nested tables should be avoided.
-* When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+* When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element. The title can be an affordance to screen reader users especially if there are multiple tables on one page.
 * The caption should succinctly describe the table in a meaningful way.
 
 # Responsive list table 
