@@ -1,7 +1,7 @@
 ---
 layout: default
 sub_section: accordions
-title: Accordions
+title: Accordion
 ---
 
 # Accordions
