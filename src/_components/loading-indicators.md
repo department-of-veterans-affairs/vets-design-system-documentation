@@ -7,7 +7,7 @@ title: Loading indicators
 # Loading indicators
 
 <div class="va-introtext" markdown="1">
-The indeterminate loading indicator communicates to the end user that a page is in the process of loading.</div>
+The indeterminate Loading indicator communicates to the end user that a page is in the process of loading.</div>
 
 ## Example
 
@@ -15,7 +15,7 @@ The indeterminate loading indicator communicates to the end user that a page is 
 
 ## Usage
 
-### When to use the Indeterminate loading indicator
+### When to use the Loading indicator
 
 * When the wait time for a process, such as loading a page, is unknown. 
 
