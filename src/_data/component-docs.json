@@ -1609,7 +1609,7 @@
           "mutable": false,
           "attr": "href",
           "reflectToAttr": false,
-          "docs": "`href` attribute for the `a` tag.",
+          "docs": "`href` attribute for the `<a>` tag.",
           "docsTags": [],
           "values": [
             {

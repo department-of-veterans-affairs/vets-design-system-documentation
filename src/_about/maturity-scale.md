@@ -115,6 +115,10 @@ Once a component or pattern is “in the wild” the Design System Team will tra
 
 The Design System team will be auditing components & patterns on a regular basis, evaluating them for movement within the scale
 
+### A component or pattern is proposed
+
+Any additions to the system, either new components or patterns, updates to existing entries, or requests for replacements are requested via the [Experimental Design Process](contributing-to-the-design-system/).
+
 ### Proposed to Candidate 
 
 The Design System Team or Design System Council have evaluated the proposal and the Design System Team is now working on the component or pattern.
@@ -140,4 +144,4 @@ The Design System Team has completed documenting and building the component or p
 
 Let's use the Wizard pattern is an example. It was once considered "state of the art" and would have been categorized as "Use: Best Practice". However, over time some issues were revealed that made us reconsider and thus we moved to bring the pattern back to "Use with caution: Available". Essentially, the pattern was "under review". After review we now consider the pattern to be "Don't use: Deprecated" and replaced by other patterns.
 
-In short, a component or pattern may not move backwards through the scale in a linear fashion. In fact, a component or pattern may be deprecated from any other status, if necessary.
+In short, a component or pattern may not move backwards through the scale in a linear fashion. In fact, a component or pattern may be deprecated from any other status, if necessary. When we decide to deprecate a pattern, the Design System Team has [a process it follows to do so](contributing-to-the-design-system#deprecating-a-component).

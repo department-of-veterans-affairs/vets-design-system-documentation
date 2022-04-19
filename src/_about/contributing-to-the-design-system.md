@@ -6,18 +6,20 @@ title: Contributing to the design system
 # Contributing to the design system
 
 <div class="va-introtext">
-How to suggest a new component, update existing components, and retire components.
+  How to suggest a new component, update existing components, and retire components.
 </div>
 
 
 ## Suggest a component or pattern
+
 Veteran-facing teams are expected to use design system patterns and components when possible. If existing components or patterns will not work to address needed designs,  VFS teams can suggest new components or patterns by going through our Experimental Design process outlined below. 
 
 All new components or patterns should go through this process. We recommend starting this process before sharing new designs widely with stakeholders. 
 
-This process works best if started  before development begins, during the design phase.
+This process works best if started before development begins, during the design phase.
 
-When considering if a component or pattern should be added to the design system there are a few criteria that define a “good” candidate -
+When considering if a component or pattern should be added to the design system there are a few criteria that define a “good” candidate:
+
 1. The component/pattern is already being used on more than one page on VA.gov, or the designer can give examples of multiple places the component could be used 
 2. The component/pattern is different in more than one major way than existing components in the design system, if the component is only different in color or format, for instance, then it would be better as a variant of the existing component. Note that variants of existing components should also go through this experimental process.
 3. Our existing components and patterns will not solve the user problems sufficiently.
@@ -26,17 +28,24 @@ Follow the steps below to suggest a component or pattern for the design system t
 
 
 ### 1. Check the design system backlog 
-Check the [backlog](https://design.va.gov/documentation/backlog) to see if your idea has already been suggested. Take a look at the "proposed" category.
+
+Check the backlog to see if your idea has already been suggested:
+
+* [vets-design-system-documentation]({{ site.github_issues_link_1 }})
+* [va.gov-team]({{ site.github_issues_link_2 }})
 
 If you do not see your idea in the backlog, go to step 2. 
 
-If you do see your idea in the backlog, message the contributors to see if they are moving forward or not. If not and you would like to tackle the problem, move forward with step 2.
+If you do see your idea in the backlog, message the contributors to see if they are moving forward or not. If not, and you would like to tackle the problem, move forward with step 2.
 
 
 ### 2. Fill out a request
-Fill out an [Experimental Design System request ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md&labels=vsp-design-system-team). This should take no more than 10-15 minutes. In the ticket you will need to provide justification for this new component or pattern, and link to any artifacts you want to include. 
 
-After filling out the ticket, post in the #vsp-design-system slack channel and tag Carol Wong to alert the team that you have filled out a ticket and would like to get on the council's agenda.
+Fill out an Experimental Design System request ticket. This should take no more than 10-15 minutes. In the ticket you will need to provide justification for this new component or pattern, and link to any artifacts you want to include. 
+
+<a class="vads-c-action-link--green" href="{{ site.request_addition_link }}">Request a new addition to the Design System</a>
+
+After filling out the ticket, post in the <a href="{{ site.slack_channel_link }}">{{ site.slack_channel_name }}</a> slack channel and tag Carol Wong to alert the team that you have filled out a ticket and would like to get on the council's agenda.
 
 Note that you do not need to have anything coded at this point, and in fact, we suggest not having anything coded since ideally ideas would be surfaced to the council before teams put effort into building new components.  
 
@@ -44,20 +53,36 @@ Additionally, the artifacts you include do not need to be high fidelity. They on
 
 
 ### 3. Present to Design System Council
+
 You will present your work to the Design System Council at an upcoming meeting. The Design System Council meets every Friday at 1pm Eastern. Experimental design requests will always be prioritized in this meeting, and teams can assume generally that they will be able to present the same week of the request. In order to kick off this step,
-- Submit a request to join an upcoming Design System Council meeting in #vsp-design-system.
+- Submit a request to join an upcoming Design System Council meeting in <a href="{{ site.slack_channel_link }}">{{ site.slack_channel_name }}</a>. 
 - During the meeting, the Design System Council will evaluate the request and make a decision.
 
 When making the initial request, you can ask to have asynchronous approval if you feel like the change is simple and does not need further explanation. Note that your ticket will still be discussed in the council meeting, but you do not have to attend
 
 ### 4. Add your component or pattern to the Experimental section
-**If your component/pattern request is approved**, add your component to the [Experimental section](https://design.va.gov/experimental-design/) on design.va.gov.
 
-This should take no more than 30-60 minutes. To add the component/pattern, simply add a markdown file [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design) - then reach out to Shawna Hein or Ryan Thurwell to merge your request. Please use the [Experimental design template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_experimental-design/experimental-design-template.md) to document your new component/pattern. If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact Ryan Thurwell if you need access to Sketch for Teams.
+**If your component/pattern request is approved**, add your component or pattern to the Design System. 
 
-Once merged, the markdown you update will automatically be migrated to the experimental tab of the design system. This typically takes 10-15 minutes after you’ve updated the markdown file. 
+This should take no more than 30-60 minutes. 
+
+#### Add the component or pattern
+
+Use the [Experimental Design Template]({{ site.new_component_template_link }}) to add and document your component or pattern. It will be created under components but don't worry, we'll move it to the appropriate place if it is a pattern.
+
+If you are including an example image, please use the [Anatomy callouts Sketch library](https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727) for annotations. You may contact Kevin Hoffman if you need access to Sketch for Teams.
+
+##### Adding a component or pattern via GitHub
+
+1. Go to [`src/_components/`](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components)
+2. Open the `Add file` menu
+3. Copy the contents of [the template]({{ site.new_component_template_raw_link }}) and fill in the sections for your component or pattern.
+4. When you're ready, commit the changes to a branch, and create a pull request for peer review.
+
+##### Documenting your component or pattern
 
 Your documentation should include most of what you put in your experimental request ticket, with a few additional details - e.g. the following (these items are also captured in the Experimental design template markdown file):
+
 - Name of component or pattern
 - Who is suggesting it (team, contract)
 - Purpose - Why you needed to create a new component or pattern
@@ -68,7 +93,13 @@ Your documentation should include most of what you put in your experimental requ
 - Existing components used (if creating a new pattern)
 - Usage and accessibility guidance (if available)
 
-Note that code is not required at this step in the process - the main point of documenting here is visibility to other teams. However, if you have shared code you can share, great! [More guidance on the code part of contribution and where to store files can be found here](https://design.va.gov/documentation/developers#contributing-experimental-design-code).
+Note that code is not required at this step in the process - the main point of documenting here is visibility to other teams. However, if you have shared code you can share, great! [More guidance on the code part of contribution and where to store files can be found here](developers#contributing-experimental-design-code).
+
+#### Ask for your component or pattern to be merged
+
+After your component or pattern has been added reach out to Shawna Hein or Matthew Dingee to merge your request. 
+
+Once merged, the markdown you update will automatically be migrated to the experimental tab of the design system. This typically takes 10-15 minutes after you’ve updated the markdown file. 
 
 **If your component or pattern request is rejected**, the council will add notes as to why and what they suggest you do instead on your initial request ticket.
 
