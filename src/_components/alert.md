@@ -78,7 +78,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 
 ### When to use alerts
 
-Use Alert boxes to notify users of the status of the site, which may or may not require a user’s response. This includes errors, warnings, and general site updates. Use Alert boxes to alert users  that something they need needs to be correct or to confirm successful completion of a task.
+Use Alert to notify users of the status of the site, which may or may not require a user’s response. This includes errors, warnings, and general site updates. Use Alert to alert users that something they need needs to be correct or to confirm successful completion of a task.
 
 ### When to consider something else
 
@@ -103,5 +103,3 @@ When the user is required to do something in response to an alert, let them know
 
 Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that isn’t interactive. If the message is interactive, use the `alertdialog` role instead.
 Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-
-
