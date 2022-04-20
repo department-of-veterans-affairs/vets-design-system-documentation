@@ -44,7 +44,7 @@ Used to prompt a user to sign in, create an account, or launch an online tool to
 
 ### Background color only alert
 
-Any style of alert box can be modified to be a background color only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
+Any style of alert box can be modified to be a background-color-only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
 {% include storybook-preview.html story="components-va-alert--background-only" height="80px" %}
 
