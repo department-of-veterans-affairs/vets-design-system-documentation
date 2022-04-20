@@ -142,6 +142,6 @@ The Design System Team has completed documenting and building the component or p
 
 ### An example of deprecating a component
 
-Let's use the Wizard pattern is an example. It was once considered "state of the art" and would have been categorized as "Use: Best Practice". However, over time some issues were revealed that made us reconsider and thus we moved to bring the pattern back to "Use with caution: Available". Essentially, the pattern was "under review". After review we now consider the pattern to be "Don't use: Deprecated" and replaced by other patterns.
+Let's use the Wizard pattern is an example. It was once considered "state of the art" and would have been categorized as "Use: Best Practice". However, over time some issues were revealed that made us reconsider and we moved to bring the pattern back to "Use with caution: Available". Essentially, the pattern was "under review". After review, we now consider the pattern to be "Don't use: Deprecated" and it has been replaced by other patterns.
 
 In short, a component or pattern may not move backwards through the scale in a linear fashion. In fact, a component or pattern may be deprecated from any other status, if necessary. When we decide to deprecate a pattern, the Design System Team has [a process it follows to do so](contributing-to-the-design-system#deprecating-a-component).
