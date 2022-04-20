@@ -121,7 +121,7 @@ Any additions to the system, either new components or patterns, updates to exist
 
 ### Proposed to Candidate 
 
-The Design System Team or Design System Council have evaluated the proposal and the Design System Team is now working on the component or pattern.
+The Design System Team and Design System Council have evaluated the proposal and the Design System Team is now working on the component or pattern.
 
 ### Candidate to Available
 
