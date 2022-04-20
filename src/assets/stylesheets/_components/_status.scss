@@ -1,5 +1,9 @@
 .site-component-status__link {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .site-sidenav-status {
