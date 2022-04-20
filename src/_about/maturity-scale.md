@@ -68,11 +68,11 @@ The component or pattern is:
 By “complete” we mean that the documentation of the component or pattern is complete and in sync across the Design System (design.va.gov, Storybook, and Sketch library). 
 
 <h3 id="deployed">Use: Deployed</h3>
-The component or pattern is:
+The component or pattern:
 
-* Deployed in production for more than 3 months
+* Is deployed in production for more than 3 months
 * Is in use by more than one application/project
-* There is sufficient research backing one or more of the current variations
+* Has sufficient research backing one or more of the current variations
 
 In other words, it’s out there and we have some degree of confidence in it.
 
