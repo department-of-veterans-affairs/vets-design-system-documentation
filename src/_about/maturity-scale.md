@@ -78,9 +78,9 @@ In other words, it’s out there and we have some degree of confidence in it.
 
 <h3 id="best-practice">Use: Best Practice</h3>
 
-The component or pattern is:
+The component or pattern:
 
-* Out in production for a year or more
+* Has been out in production for a year or more
 * Has no significant issues filed against it (accessibility and usability are solid)
 * Is in use in multiple projects and works well in multiple contexts
 * Has supporting research
