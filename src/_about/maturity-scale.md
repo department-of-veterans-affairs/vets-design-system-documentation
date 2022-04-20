@@ -53,7 +53,7 @@ A team has filed a request for a component or pattern but it has not yet been re
 
 <h3 id="candidate">Use with caution: Candidate</h3>
 
-Design System Team or Design System Council have evaluated the proposal. 
+Design System Team and/or Design System Council have evaluated the proposal. 
 
 * The Design System Team will be creating documentation for the component or pattern. 
 * The component or pattern may be in limited use (i.e. it may have already been shipped by a team). This could also be known as: “In work”, “Draft”, "Beta", or “Give it a go! YMMV”.
