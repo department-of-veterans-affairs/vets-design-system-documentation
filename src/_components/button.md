@@ -1,14 +1,17 @@
 ---
-layout: default
-sub_section: buttons
-title: Buttons
+layout: component
+title: Button
+status: use-best-practice
+intro-text: Use buttons to signal actions.
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Accessibility considerations
 ---
 
-# Buttons
+## Examples
 
-<p class="va-introtext">Use buttons to signal actions.</p>
-
-## Default buttons
+### Default buttons
 
 The default buttons are the most commonly-used button on the site.
 
@@ -20,7 +23,7 @@ Examples of default buttons:
 
 {% include storybook-preview.html story="components-buttons--default-story" %}
 
-## Wizard buttons
+### Wizard buttons
 
 Use the **wizard** button to trigger a [wizard](https://design.va.gov/patterns/wizards) on a page.
 
@@ -29,23 +32,24 @@ Use the **wizard** button to trigger a [wizard](https://design.va.gov/patterns/w
 ### What to use for primary call to actions that link to another page 
 Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link](https://design.va.gov/experimental-design/action_links) documentation for more details. We encourage using green buttons for triggering wizards only. 
 
-## Secondary button
+### Secondary button
 
 Use **secondary** buttons for any actions that need to be _downplayed_ against other actions.
+
 Examples of secondary buttons:
-Buttons in modals 
-Buttons that advance form pages 
-Buttons for editing cards
+* Buttons in modals 
+* Buttons that advance form pages 
+* Buttons for editing cards
 
 {% include storybook-preview.html story="components-buttons--secondary" %}
 
-## Big buttons
+### Big buttons
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
 
 {% include storybook-preview.html story="components-buttons--big" %}
 
-## Disabled buttons
+### Disabled buttons
 
 Only `<button>` elements can be disabled with a `disabled` attribute. To make a `<a>` element disabled, you must use `.usa-button.usa-button-disabled` on the element.
 
@@ -85,4 +89,3 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it has actually been designated as a button in the markup. 
 * Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link](https://design.va.gov/experimental-design/action_links) guidance to determine what is needed for a page. 
 * A button's tap target size should be at least 48 x 48 px, with at least 8 px separating tappable elements. 
-

@@ -12,6 +12,8 @@ anchors:
 
 Dates, times, phone numbers, and addresses often appear together, so we've put guidelines for these in one place.
 
+{% include _site-on-this-page.html %}
+
 ## Dates and years
 
 Spell out dates in body copy, using the full construction: March 31, 1989. In general, spell out days of the week and months also in body copy. 

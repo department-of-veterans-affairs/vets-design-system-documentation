@@ -44,6 +44,18 @@
           <div>
             <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
           </div>
+            <h1 id="{{ page.title }}">{{ page.title }}</h1>
+            {% if page.status %}
+              {% include _status.html %}
+            {% endif %}
+            {% if page.intro-text %}
+            <div class="va-introtext" markdown="1">
+              {{ page.intro-text }}
+            </div>
+            {% endif %}
+            {% if page.anchors %}
+              {% include _site-on-this-page.html %}
+            {% endif %}
           {% endunless %}
           {{ content }}
         </main>
@@ -59,3 +71,5 @@
   <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
   </body>
 </html>
+
+

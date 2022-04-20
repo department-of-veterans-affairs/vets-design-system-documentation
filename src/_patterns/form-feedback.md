@@ -8,14 +8,10 @@ anchors:
 # Form Feedback
 
 <div class="va-introtext" markdown="1">
-Error messages let users know when they have made a mistake on a form field.
+  Error messages let users know when they have made a mistake on a form field.
 </div>
 
 ## Error messages
-
-<div class="va-introtext" markdown="1">
-Error messages let users know when they have made a mistake on a form field.
-</div>
 
 In all cases, only show error validation messages or stylings after a user has interacted with a particular field.
 

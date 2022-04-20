@@ -15,14 +15,17 @@ anchors:
 # Punctuation
 We follow standard American English and AP Style on VA.gov. Areas where we differ are listed below.
 
-#### Ampersands
+{% include _site-on-this-page.html %}
+
+## Ampersands
 
 Don't use ampersands (&) in headers or body copy. Spell out “and.” Exceptions are when it's part of a proper noun such as a program name. Example: VR&E program.
 
-#### Apostrophes
+## Apostrophes
+
 Use curly apostrophes (ex. don't) instead of straight up and down ones (ex. don&apos;t).
 
-#### Commas
+## Commas
 
 We use the serial comma, sometimes called the Oxford comma. This is the comma used before a conjunction in a sentence with a series of 3 or more items. Sometimes the sentence can be misread if the serial comma is omitted.
 
@@ -46,18 +49,13 @@ In his acceptance speech the actor thanked his parents, Martin Scorsese and Robe
 </div>
 </div>
 
-
-
-
-
-#### Contractions
+## Contractions
 
 We use contractions on VA.gov. It supports our conversational, person-to-person voice and tone. Some situations might call for spelling out all the words, like in legal or warning messages, but in general, we prefer using contractions. 
 
 - Be careful not to mix up "its" and "it's."
 - Use "it's" as a contraction of "it is," never "it has." 
 - Don't use non-standard contractions like "would've," "could've," or "should've."
-
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -77,10 +75,7 @@ We are available 8:00 a.m. to 6:00 p.m. CT, Monday through Friday.
 </div>
 
 
-
-
-
-#### Em and en dashes, hyphens
+## Em and en dashes, hyphens
 
 __Em dash__ 
 
@@ -99,10 +94,7 @@ This is the short, single dash. We use it to connect words that modify a noun or
 - **Like this:** active-duty service member; VA-related claim; Merriam-Webster 
 
 
-
-
-
-#### Exclamation points
+## Exclamation points
 
 Don't use the exclamation point on VA.gov for any text elements (body copy, headers, subheaders, field labels, CTAs, etc.). It doesn't align with our voice and tone, which is conversational, helpful, and straightforward. We don't yell, and we're not hyperbolic or casual.
 
@@ -137,6 +129,6 @@ __You've successfully applied!__
 
 Note: Some design components may use the exclamation point as an icon for visual accent&mdash;in alert components, for example&mdash;but don't use it in the message copy itself.
 
-#### Quotation marks
+## Quotation marks
 
 Use curly quotation marks (ex. “quotation marks”) instead of straight up and down ones (ex. &quot;quotation marks&quot;).

@@ -1,24 +1,7 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: VA.gov Design System
-#email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Design System for VA.gov
+description: Design System for VA.gov
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://design.va.gov" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://design.va.gov" # Base hostname & protocol for the site
 
 project_name: VA.gov Design System
 
@@ -26,14 +9,28 @@ project_name: VA.gov Design System
 sketch_cloud_link: https://sketch.cloud/s/8WM9O
 sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Work%20Practices/Design/Design%20Resources/Pattern%20Library/VA-gov-Pattern-Library.sketch
 
+github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
+github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
+request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md&labels=vsp-design-system-team
+
+slack_channel_name: "#platform-design-system"
+slack_channel_link: https://dsva.slack.com/archives/C01DBGX4P45
+
+new_component_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components/experimental-design-template.md
+new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_components/experimental-design-template.md
+
+# People
+sketch_for_teams_admin: "Kevin Hoffman" 
+sketch_library_owner: "Natalie Hill"
+experimental_reviewer_1: "Shawna Hein"
+experimental_reviewer_2: "Matthew Dingee"
+
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
-# theme: minima
 plugins:
   - jekyll-last-modified-at
-#  - jekyll-feed
-
 
 source: src
 
@@ -44,7 +41,7 @@ sass:
 
 # Collections
 collections:
-  documentation:
+  about:
     output: true
     permalink: /:collection/:title
   content-style-guide:
@@ -69,7 +66,6 @@ collections:
     output: true
     permalink: /:collection/:title
 
-
 includes:
   - /components/code
 
@@ -77,12 +73,13 @@ exclude:
   - node_modules
   - tmp_remote_assets
   - .sass-cache
+  - .ruby_version
   - _design/html
   - _components/html
   - _patterns/html
   - _layout/html
   - _utilities/html
 
-# Default for building locally. See configuration files in jekyll-configs/ for
-# environment overrides.
+# Default for building locally. 
+# See configuration files in jekyll-configs/ for environment overrides.
 storybook_path: "http://localhost:6006"

@@ -119,15 +119,6 @@
     width: auto;
   }
 
-  > h1,
-  > h2,
-  > h3,
-  > h4,
-  > h5,
-  > h6 {
-    font-family: $font-sans;
-  }
-
   > h2 {
     border-bottom: 3px solid;
     padding-bottom: units(.5);
@@ -193,6 +184,7 @@
   > .va-introtext {
     font-family: $font-sans;
     font-size: 2.2rem;
+    margin: units(3) 0;
   }
 }
 

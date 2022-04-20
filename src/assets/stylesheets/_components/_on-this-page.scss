@@ -1,0 +1,40 @@
+.site-on-this-page {
+  margin: 1rem;
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -0.5em;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__title {
+    font-family: $font-serif;
+    font-size: 2rem;
+    margin: 0.4em 0em;
+  }
+
+  &__definition {
+    margin: 0.4em 0em;
+  }
+
+  &__link {
+    display: flex;
+    align-items: baseline;
+    padding: 0.5em;
+    line-height: 1.5em;
+    max-width: 285px;
+  }
+
+  &__link i {
+    font-style: normal;
+    font-weight: 900;
+    margin-right: 8px;
+    font-size: 0.75em;
+  }
+
+  &__link:active {
+    background-color: $color-gray-lighter;
+  }
+}

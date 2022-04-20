@@ -2,8 +2,8 @@
 layout: default
 title: Icons
 anchors:
-  - anchor: Navigation
   - anchor: Accessibility
+  - anchor: Navigation
   - anchor: Interaction
   - anchor: Feedback
   - anchor: Identification
@@ -12,6 +12,12 @@ anchors:
 ---
 
 # Icons
+
+<div class="va-introtext">
+    We leverage Font Awesome icons to communicate meaning, action, status, or feedback.
+</div>
+
+{% include _site-on-this-page.html %}
 
 ## Accessibility
 

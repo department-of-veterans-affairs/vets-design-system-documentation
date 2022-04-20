@@ -4,15 +4,15 @@
   <!-- Use the accurate heading level to maintain the document outline -->
   <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading vads-u-border-top--0">
     <button class="usa-accordion-button site-mobile-nav__accordion-button"
-      aria-expanded="{% if page.url contains "/documentation/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">Documentation</button>
+      aria-expanded="{% if page.url contains "/about/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">About</button>
   </p>
-  <div id="nav-a1" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/documentation/" %}false{% else %}true{% endif %}">
+  <div id="nav-a1" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/about/" %}false{% else %}true{% endif %}">
     <ul class="site-mobile-nav-list">
       <li class="site-mobile-nav-list__item">
-        <a class="site-mobile-nav-list__link {% if page.url contains "documentation/index" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Overview</a>
+        <a class="site-mobile-nav-list__link {% if page.url contains "about/index" %} current {% endif %}" href="{{ site.baseurl }}/about">Overview</a>
       </li>
-      {% assign sortedDocumentation = site.documentation | sort: "order", "last" %}
-      {% for p in sortedDocumentation %}
+      {% assign sortedAbout = site.about | sort: "order", "last" %}
+      {% for p in sortedAbout %}
        {% if p.layout == "default" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">

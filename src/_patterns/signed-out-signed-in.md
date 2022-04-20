@@ -8,7 +8,11 @@ anchors:
 
 # Signed out vs. signed in
 
-<p class="va-introtext">If a user has not signed in to VA.gov, we know very little information about the user. When the user signs in and verifies their identity, we know who the user is. In either case, we display the most relevant content, features, and calls to action.</p>
+<p class="va-introtext">
+  If a user has not signed in to VA.gov, we know very little information about the user. When the user signs in and verifies their identity, we know who the user is. In either case, we display the most relevant content, features, and calls to action.
+</p>
+
+{% include _site-on-this-page.html %}
 
 ## Site header
 

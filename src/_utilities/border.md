@@ -5,13 +5,16 @@ anchors:
   - anchor: Border shorthand
   - anchor: Border style
   - anchor: Border color
+  - anchor: Responsive prefixes
 ---
 
 # Border
 
 <div class="va-introtext" markdown="1">
-Set width, style, and color of an item’s borders.
+  Set width, style, and color of an item’s borders.
 </div>
+
+{% include _site-on-this-page.html %}
 
 ## Border shorthand
 

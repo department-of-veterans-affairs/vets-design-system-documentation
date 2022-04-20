@@ -9,13 +9,16 @@ anchors:
   - anchor: Padding right and left
   - anchor: Padding right
   - anchor: Padding left
+  - anchor: Responsive prefixes
 ---
 
 # Padding
 
 <div class="va-introtext" markdown="1">
-Change the spacing inside an item. Padding classes include [responsive prefixes](#responsive-prefixes).
+  Change the spacing inside an item. Padding classes include [responsive prefixes](#responsive-prefixes).
 </div>
+
+{% include _site-on-this-page.html %}
 
 ## Padding on all sides
 <div class="site-showcase">
