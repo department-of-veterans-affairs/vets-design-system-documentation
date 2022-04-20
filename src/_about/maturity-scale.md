@@ -85,7 +85,7 @@ The component or pattern:
 * Is in use in multiple projects and works well in multiple contexts
 * Has supporting research
 
-Given all of the above, the component or patter is now considered best practice.
+Given all of the above, the component or pattern is now considered best practice.
 
 <h3 id="deprecated">Don't use: Deprecated</h3>
 
