@@ -2,7 +2,7 @@
 layout: component
 title: Telephone
 status: use-best-practice
-intro-text: "The telephone component captures the many variations of phone numbers displayed on va.gov." 
+intro-text: "The telephone component captures the many variations of phone numbers displayed on VA.gov." 
 anchors:
   - anchor: Examples
   - anchor: Usage

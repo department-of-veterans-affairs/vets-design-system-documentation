@@ -49,7 +49,7 @@ The full maturity scale goes in this order:
 
 A team has filed a request for a component or pattern but it has not yet been reviewed by the Design System Team or Design System Council. 
 
-* May link to supporting research, a Sketch (or other tool) mock-up, or a functional instance on va.gov. 
+* May link to supporting research, a Sketch (or other tool) mock-up, or a functional instance on VA.gov. 
 
 <h3 id="candidate">Use with caution: Candidate</h3>
 
@@ -111,7 +111,7 @@ Once a component or pattern is “in the wild” the Design System Team will tra
   * Are there any additional usability tests or other research that directly or indirectly covered this component?
 3. **Adoption**
   * How many teams have adopted this component?
-  * How widely is it used across va.gov?
+  * How widely is it used across VA.gov?
 
 The Design System team will be auditing components & patterns on a regular basis, evaluating them for movement within the scale
 
