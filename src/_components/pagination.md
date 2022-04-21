@@ -12,7 +12,7 @@ web-component: va-pagination
 
 ## Example
 
-{% include storybook-preview.html story="components-va-pagination--default" %}
+{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination" %}
 
 ## Usage
 
