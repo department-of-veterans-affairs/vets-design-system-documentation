@@ -13,12 +13,7 @@ web-component: va-breadcrumbs
 
 ## Examples
 
-### Desktop
-{% include storybook-preview.html height="100px" story="components-breadcrumbs--default" %}
-
-
-### Mobile
-{% include storybook-preview.html height="100px" width="400px" story="components-breadcrumbs--mobile-first" %}
+{% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
 
 
 ## Usage
