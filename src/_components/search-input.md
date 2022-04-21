@@ -1,7 +1,13 @@
 ---
-layout: default
-title: Type-ahead
-draft: true
+layout: component
+title: Search Input
+intro-text: "Search Input......"
+status: use-deployed
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+web-component: va-search-input
 ---
 
 # Type-ahead
