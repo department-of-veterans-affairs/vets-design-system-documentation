@@ -42,7 +42,7 @@ Section and subsection titles (also sometimes called headers and subheads) help 
 
 We allow a little more character count for sections and subsections than page titles. But in general, sections become hard to scan when they're too long. Eliminate unnecessary details or nuance in section and subsection titles, and address them with more depth in the paragraph copy.
 
-For more information about structuring sections using H2s and H3s, see [How to use headings](https://yoast.com/how-to-use-headings-on-your-site/) on Yoast.com.
+[Read more about using header levels to structure sections on W3.org](https://www.w3.org/WAI/tutorials/page-structure/headings/)
 
 <div class="do-dont">
 <div class="do-dont__do">
