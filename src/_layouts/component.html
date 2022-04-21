@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body {% if page.homepage %}class="vads-u-background-color--white"{% endif %}>
+  <body>
 
     {% if site.analytics == "production" %}
     <!-- Google Tag Manager (noscript) -->
@@ -13,28 +13,13 @@
     {% endif %}
 
     {% include header.html %}
-
     {% include _mobile-nav.html %}
-
     <div>
 
     {% include _site-top-nav.html %}
 
-    <div class="site-content {% unless page.homepage %}vads-u-margin-bottom--9{% endunless %}">
-      {% if page.homepage %}
-      <main id="main-content" class="vads-u-width--full">
-        {{ content }}
-      </main>
-      {% elsif page.results_page %}
-      <main id="main-content" class="vads-u-margin-y--7 vads-u-width--full">
-        <div class="site-content site-l-wrapper vads-l-grid-row small-desktop-screen:vads-u-justify-content--center">
-          <div class="vads-l-col--12 small-desktop-screen:vads-l-col--8">
-            {{ content }}
-          </div>
-        </div>
-      </main>
-      {% else %}
-        {% include _site-content-nav.html %}
+    <div class="site-content vads-u-margin-bottom--9">
+      {% include _site-content-nav.html %}
       <div class="site-content__content">
         <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
           {% unless page.index %}
@@ -44,7 +29,7 @@
           <div>
             <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
           </div>
-            <h1 id="{{ page.title }}">{{ page.title }}</h1>
+          <h1 id="{{ page.title }}">{{ page.title }}</h1>
             {% if page.status %}
               {% include _status.html %}
             {% endif %}
@@ -53,6 +38,7 @@
               {{ page.intro-text }}
             </div>
             {% endif %}
+            {% include component-resource-links.html %}
             {% if page.anchors %}
               {% include _site-on-this-page.html %}
             {% endif %}
@@ -62,7 +48,6 @@
         {% include edit-on-github.html %}
         {% include timestamps.html %}
       </div>
-      {% endif %}
     </div>
   </div>
 

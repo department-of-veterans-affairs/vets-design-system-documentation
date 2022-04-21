@@ -1,8 +1,9 @@
 ---
 layout: component
 title: Table
-status: use-best-practice
 intro-text: "The table component organizes data into columns and rows."
+research-title: Tables
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage
