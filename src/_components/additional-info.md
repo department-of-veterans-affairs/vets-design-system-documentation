@@ -19,7 +19,7 @@ web-component: va-additional-info
 
 ### No Border
 
-* Adding in the `disable-border` prop remove the left blue border from the expanded state of the component.
+* Adding in the `disable-border` prop removes the left blue border from the expanded state of the component.
 
 {% include storybook-preview.html story="components-va-additional-info--no-border" link_text="va-additional-info" %}
 
