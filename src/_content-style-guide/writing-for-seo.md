@@ -24,7 +24,7 @@ At the foundation of all of these recommendations is to apply them in a way that
 - Write content that addresses what people actually search for with high-quality, unique information that's relevant to that topic.
   - Example: Do people really want to know all the awards your office won for customer satisfaction or do they want to know how they can find out the status of their application?
 - Use the primary user search phrase or keyword in the H1 (page title), H2 (section headers), and intro text.
-- Don't have more than one H1 on a page. Use the H1 only for the page title. See our [guidance on page titles](https://design.va.gov/content-style-guide/page-titles-and-section-titles).
+- Don't have more than one H1 on a page. Use the H1 only for the page title. See our [guidance on page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
 - Integrate the primary or secondary keywords throughout the body copy, H2s, and H3s. But never "stuff keywords" for its own sake. That practice is contrary to creating helpful relevant content.
 - [Use H2s and H3s consistently](https://yoast.com/how-to-use-headings-on-your-site/) to structure content hierarchy as sections and subsections. It helps organize content into scannable chunks, and also helps SEO (for example, so H3s can get easily featured in list snippets in searches). 
 - Write content and navigation elements that can be easily scanned and understood by the user. Include the primary keyword in the URL if possible.
@@ -50,7 +50,7 @@ __Why they're important__
 
 ### Title tags
 
-Title tags are HTML elements that are displayed in browsers and on search engine results. They help people identify what the page is about and if it's relevant to their search query. On VA.gov, title tags are pulled from the H1 (the page title), so it's especially important to use the primary keyword or phrase in the [page title](https://design.va.gov/content-style-guide/page-titles-and-section-titles). 
+Title tags are HTML elements that are displayed in browsers and on search engine results. They help people identify what the page is about and if it's relevant to their search query. On VA.gov, title tags are pulled from the H1 (the page title), so it's especially important to use the primary keyword or phrase in the [page title]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles). 
 
 
 - Format: H1 Page Title \| Veterans Affairs

@@ -49,9 +49,9 @@ Consider another solution if:
 
 * Users need to see most or all of the information on the page at one time. Use well-formatted text with discriptive headings instead.
 * There is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
-* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info](https://design.va.gov/components/additional-info) component instead to leverage show/hide functionality. 
+* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality. 
 
-See [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content) for more accordion usage guidelines.
+See [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content) for more accordion usage guidelines.
 
 ### Behavior
 
@@ -76,5 +76,5 @@ See [Expandable content](https://design.va.gov/patterns/content-presentation#exp
 
 ## Related
 
-* [Additional info](https://design.va.gov/components/additional-info)
-* [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content)
+* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content)

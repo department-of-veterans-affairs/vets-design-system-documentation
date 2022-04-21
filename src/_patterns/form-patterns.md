@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: pattern
 title: Form patterns
+status: use-deployed
+intro-text: "Common form structures and designs used on VA.gov"
 anchors:
   - anchor: All or none of the above
   - anchor: Applicant information
@@ -12,15 +14,7 @@ anchors:
   - anchor: Review section
   - anchor: Service history
   - anchor: Signature
-  
 ---
-
-
-# Form patterns
-
-<div class="va-introtext" markdown="1">
-Common form structures and designs used on VA.gov
-</div>
 
 ## All or none of the above
 
@@ -418,7 +412,7 @@ Follow this pattern to provide Veterans with the ability to change their bank ac
 
 #### Bank account information card
 The direct deposit information will live in the bank account information card. The card will have a short description on what the information below means, *“This is the bank account information we have on file for you. This is where we’ll send your payments.”*
-Under the description, the information will be displayed in the component similar to the [address block component.](https://design.va.gov/components/address-block) 
+Under the description, the information will be displayed in the component similar to the [address block component.]({{ site.baseurl }}/components/address-block) 
 Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the call to action button below.
 
 
@@ -455,7 +449,7 @@ Here is the structure for asking a user to upload a file:
 
 
 ### Loading state:
-The upload button will be replaced by a gray card with a [standard progress bar component](https://design.va.gov/components/progress-bars) to indicate the progress of the document upload. The user will see the name of the file, as well as, have the option to cancel the upload. 
+The upload button will be replaced by a gray card with a [standard progress bar component]({{ site.baseurl }}/components/progress-bar) to indicate the progress of the document upload. The user will see the name of the file, as well as, have the option to cancel the upload. 
 
 ![file upload loading state]({{site.baseurl}}/images/file-upload-loading.png)
 

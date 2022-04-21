@@ -59,7 +59,7 @@ beneficiary: In the context of life insurance, define on first mention in body c
 
 benefit office: Do not use "benefit office" or "regional benefit office." The correct term is "regional office." See entry for VA regional office for details. 
 
-Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 blind or low-vision (not "blind or sight-impaired")
 
@@ -86,11 +86,11 @@ character of service (more casually referred to as "type of service"): This is a
 
 chronic: Define on first mention in body copy as "long-lasting" or when needed, "illness that lasts for a long time." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
 
-click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's OK to use "click [Button/Interface Name]." [See also Links](https://design.va.gov/content-style-guide/links)
+click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's OK to use "click [Button/Interface Name]." [See also Links]({{ site.baseurl }}/content-style-guide/links)
   - **Like this:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you.
 
   -	**Like this in UI copy:** In your account dashboard, click __Profile.__
@@ -129,7 +129,7 @@ demolish: Use "knock down" or, when used as a noun in the context of a job of bu
 
 dentistry: Use "dental care" instead.
 
-Department of Veterans Affairs: Note there's no apostrophe in "Veterans." On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
+Department of Veterans Affairs: Note there's no apostrophe in "Veterans." On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you]({{ site.baseurl }}/content-style-guide/we-us-you) for examples.
 - Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
 - **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
 
@@ -204,7 +204,7 @@ exposure: Define in the context of body copy as "had contact with” or “come 
 family member: Use this term instead of “beneficiary” whenever possible.
 
 Family Servicemembers’ Group Life Insurance (FSGLI): This is the program name. Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
-- See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+- See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 FAQs: frequently asked questions 
 
@@ -313,21 +313,21 @@ manufacturing: Use "making."
 
 may: See entry for "can."
 
-Military Occupation Code (MOC). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Military Occupation Code (MOC). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Million Veteran Program (MVP). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Million Veteran Program (MVP). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 MISSION Act: Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
 
-Montgomery GI Bill Active Duty (MGIB-AD). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Montgomery GI Bill Active Duty (MGIB-AD). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Montgomery GI Bill Selected Reserve (MGIB-SR). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Montgomery GI Bill Selected Reserve (MGIB-SR). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 My HealtheVet: Don't italicize the "e" between "Health" and "Vet" in body copy, headlines, and user interface elements such as links, buttons, and navigation. The "e" is italicized only in the logo.
 
 ### N
 
-National Cemetery Administration (NCA). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+National Cemetery Administration (NCA). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 National Guard: Can also use "Guard."
 
@@ -434,19 +434,19 @@ service-connected condition: Define in body copy as an "illness or injury caused
 
 service-connected disability: In most cases, add the definition separately as another sentence or a note below a bulleted list. For example: "Having a service-connected disability means we've concluded that you're disabled because of an illness or injury caused—or made worse—by your active-duty service."  
 
-Service-Disabled Veterans Insurance (S-DVI). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Service-Disabled Veterans Insurance (S-DVI). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 service member: Two words, lowercase. This follows the Department of Defense style guide as well as guidance from the VA Office of Public and Intergovernmental Affairs (OPIA). 
 - **Exception:** When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
 
 Servicemembers’ Group Life Insurance (SGLI). Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
-- See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+- See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Servicemembers’ Group Life Insurance Disability Extension (SGLI-DE). Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
-- See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+- See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Servicemembers’ Group Life Insurance Traumatic Injury Protection (TSGLI). Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." 
-- See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+- See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 sign in, sign out: Don't use log in/log out, login ID, or sign on.  
   -	**Like this:** Sign in to make an appointment.
@@ -512,37 +512,37 @@ Veteran: On VA.gov, capitalize even when used as a common noun. When possible, r
 -	**OK:** Learn about services and benefits that we offer to Veterans and their families.
 -	**Better:** Learn about VA services and benefits that you and your family may be eligible for.
 
-Veteran Health Identification Card (VHIC). Note that "Veteran" is singular. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veteran Health Identification Card (VHIC). Note that "Veteran" is singular. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Affairs: Note there's no apostrophe in Veterans. See the entries "VA" and "Department of Veterans Affairs."
 
-Veterans Benefits Administration (VBA). Note that "Benefits" is plural. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Benefits Administration (VBA). Note that "Benefits" is plural. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans cemetery: "Veterans" does not take an apostrophe, and "cemetery" is lowercase except when part of the official name of a cemetery.
 -	**Like this:** Family members may be eligible if they're buried in a Veterans cemetery. 
 - **Or when used in a proper noun:** The Hawaii State Veterans Cemetery is located in Kaneohe, Hawaii.
 
-Veterans Crisis Line (VCL): Note that "Veterans" does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Crisis Line (VCL): Note that "Veterans" does not take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans’ Educational Assistance Program (VEAP). Note that Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans’ Educational Assistance Program (VEAP). Note that Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Employment Center™ (VEC). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Employment Center™ (VEC). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans’ Group Life Insurance (VGLI). Note that Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans’ Group Life Insurance (VGLI). Note that Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Health Administration (VHA). See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Health Administration (VHA). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Veterans Job Bank: "Veterans" is plural.
 
 Veterans Law Judge: Capitalize. Can use lowercase "judge" on subsequent mentions in body copy instead of the full formal term.
 
-Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans’ Mortgage Life Insurance (VMLI). Note Veterans’ is plural with a plural possessive apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Service Officer (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Service Officer (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Service Organization (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Service Organization (VSO). "Veterans" is plural and does not take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Veterans Service Representative (VSR). “Veterans” is plural and does not take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Veterans Service Representative (VSR). “Veterans” is plural and does not take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 Vietnam Era: Capitalize "Era," but not in "Vietnam War era" (lowercase "era"). Mostly we use the first term: Vietnam Era. See entry on "era" for additional explanation.
 

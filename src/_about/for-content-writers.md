@@ -22,13 +22,13 @@ We focus on usage, rather than web policies and governance. If you’re looking 
 
 ## Get started
 
-### [Content principles](https://design.va.gov/content-style-guide/content-principles)
+### [Content principles]({{ site.baseurl }}/content-style-guide/content-principles)
 Our content principles guide the voice and tone of everything we write.
 
-### [Word list](https://design.va.gov/content-style-guide/word-list)
+### [Word list]({{ site.baseurl }}/content-style-guide/word-list)
 Use our in-house style for common words on VA.gov, so we can use words and labels consistently.
 
-### [Writing for SEO](https://design.va.gov/content-style-guide/seo)
+### [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo)
 See basic SEO tips and best practices for making content findable in searches.
 
 ## Sign up for updates

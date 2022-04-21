@@ -32,7 +32,7 @@ The action link is an  eye-catching link to start a digital service. An action l
 - Use a reverse (white) Action Link for a dark background.
 
 ### When to consider something else
-- Don’t use an Action Link for these actions: “sign up,” “submit” or “sign out.” For these actions, use [buttons](https://design.va.gov/components/buttons) instead. 
+- Don’t use an Action Link for these actions: “sign up,” “submit” or “sign out.” For these actions, use [buttons]({{ site.baseurl }}/components/button) instead. 
 - Don’t use Action Links to navigate between screens of an online application or tool. Use default and secondary buttons instead.
 - Don’t use Action Links link to go to another page or site that isn’t taking users to start an action. See the “Other link styles” section below for other link options. 
 
@@ -57,7 +57,7 @@ For example:
 For example:
 
 ![default link style]({{site.baseurl}}/images/default-link-style-big.png) 
-- All text links should be underlined. This is especially important for low-vision users. (Exception: [side nav](https://design.va.gov/components/sidenav) shouldn’t be underlined.)
+- All text links should be underlined. This is especially important for low-vision users. (Exception: [side nav]({{ site.baseurl }}/components/sidenav) shouldn’t be underlined.)
 
 ## Accessibility considerations
 - Action Links must have an `href` attribute. 
@@ -65,7 +65,7 @@ For example:
 - For external links or links that open up to a new tab, make sure to add an aria label to let the user know what sort of link they’re clicking on.
 - It is important to use Action Links for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
 - Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it’s been designated as a button in the markup.
-- Using links and buttons intentionally results in a more inclusive experience for assistive technology users. Make sure to read both [buttons](https://design.va.gov/components/buttons) and Action Link guidance to determine when you should use each component.
+- Using links and buttons intentionally results in a more inclusive experience for assistive technology users. Make sure to read both [buttons]({{ site.baseurl }}/components/button) and Action Link guidance to determine when you should use each component.
 - Links that point to localized content in another language should have an `hreflang` attribute and a `lang` attribute in the following format:
 
 ```

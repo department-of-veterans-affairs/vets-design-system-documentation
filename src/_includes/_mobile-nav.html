@@ -11,9 +11,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "about/index" %} current {% endif %}" href="{{ site.baseurl }}/about">Overview</a>
       </li>
-      {% assign sortedAbout = site.about | sort: "order", "last" %}
+      {% assign sortedAbout = site.about | sort: "title", "last" %}
       {% for p in sortedAbout %}
-       {% if p.layout == "default" %}
+       {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -37,9 +37,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "content-style-guide/index" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Overview</a>
       </li>
-      {% assign sortedCSG = site.content-style-guide | sort: "order", "last" %}
+      {% assign sortedCSG = site.content-style-guide | sort: "title", "last" %}
       {% for p in sortedCSG %}
-        {% if p.layout == "default" %}
+        {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -63,9 +63,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "design/index" %} current {% endif %}" href="{{ site.baseurl }}/design">Overview</a>
       </li>
-      {% assign sortedDesign = site.design | sort: "order", "last" %}
+      {% assign sortedDesign = site.design | sort: "title", "last" %}
       {% for p in site.sortedDesign %}
-      {% if p.layout == "default" %}
+      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -88,9 +88,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "components/index" %} current {% endif %}" href="{{ site.baseurl }}/components">Overview</a>
       </li>
-      {% assign sortedComponents = site.components | sort: "order", "last" %}
+      {% assign sortedComponents = site.components | sort: "title", "last" %}
       {% for p in sortedComponents %}
-      {% if p.layout == "default" %}
+      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -114,9 +114,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "utilities/index" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Overview</a>
       </li>
-      {% assign sortedUtilities = site.utilities | sort: "order", "last" %}
+      {% assign sortedUtilities = site.utilities | sort: "title", "last" %}
       {% for p in sortedUtilities %}
-      {% if p.layout == "default" %}
+      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -139,9 +139,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "patterns/index" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Overview</a>
       </li>
-      {% assign sortedPatterns = site.patterns | sort: "order", "last" %}
+      {% assign sortedPatterns = site.patterns | sort: "title", "last" %}
       {% for p in sortedPatterns %}
-        {% if p.layout == "default" %}
+        {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -164,9 +164,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/layout">Overview</a>
       </li>
-      {% assign sortedLayout = site.layout | sort: "order", "last" %}
+      {% assign sortedLayout = site.layout | sort: "title", "last" %}
       {% for p in sortedLayout %}
-          {% if p.layout == "default" %}
+          {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -188,9 +188,9 @@
       <li class="site-mobile-nav-list__item">
         <a class="site-mobile-nav-list__link {% if page.url contains "experimental-design/index" %} current {% endif %}" href="{{ site.baseurl }}/experimental-design">Overview</a>
       </li>
-      {% assign sortedExperimentalDesign = site.experimental-design | sort: "order", "last" %}
+      {% assign sortedExperimentalDesign = site.experimental-design | sort: "title", "last" %}
       {% for p in sortedExperimentalDesign %}
-          {% if p.layout == "default" %}
+          {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>

@@ -8,12 +8,12 @@
   {% endfor %}
   {% assign sortedPages = include.section | sort: "title", "last" %}
   {% for p in sortedPages %}
-      {% if p.layout == "default" or p.layout == "component" %}
+      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
         {% unless p.index %}
           {% unless p.draft and (p.url != page.url) %}
             <li class="site-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
               <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">
-                {%- if p.status and p.layout == "component" -%}
+                {%- if p.status and (p.layout == "component" or p.layout == "pattern") -%}
                   {%- include _site-side-nav-status.html component-status=p.status -%}
                 {%- endif -%}{{p.title}}
               </a>

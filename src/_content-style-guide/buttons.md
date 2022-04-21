@@ -50,8 +50,6 @@ Complaint filing
 </div>
 </div>
 
-
-
 - Always take users to the right level of access for the CTA.
 
   ​		**Like this:** “Explore VA health care” button should take you to a general health care benefits landing page like va.gov/health-care.
@@ -61,6 +59,6 @@ Complaint filing
   ​		**Like this:** “Compare GI Bill benefits” button should take you right to the comparison tool, va.gov/gi-bill-comparison-tool.
 
 
-__Looking for button design and interaction standards?__ [Go to button components](../components/buttons)   
+__Looking for button design and interaction standards?__ [Go to button component](../components/button)   
 
 

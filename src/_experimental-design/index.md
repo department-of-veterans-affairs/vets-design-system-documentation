@@ -22,4 +22,4 @@ Additionally, we wanted to create a light-weight process where teams building ap
 Yes. However, if you are using an experimental component or pattern, be aware that it hasn’t necessarily been fully validated. Please include any research you have done on the experimental component or pattern on its documentation page for others to see.
 
 ## How do I add an experimental component or pattern here?
-To get a component or pattern into our experimental system, follow steps 1-4 in [the process written up here](https://design.va.gov/documentation/contributing-to-the-design-system)
+To get a component or pattern into our experimental system, follow steps 1-4 in [the process written up here]({{ site.baseurl }}/documentation/contributing-to-the-design-system)
