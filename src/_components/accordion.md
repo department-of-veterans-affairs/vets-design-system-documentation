@@ -1,14 +1,18 @@
 ---
-layout: default
+layout: component
 sub_section: accordions
-title: Accordions
+title: Accordion
+intro-text: "Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select."
+status: use-best-practice
+web-component: va-accordion
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Related
 ---
-
-# Accordions
-
-<div class="va-introtext" markdown="1">
-Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select.
-</div>
 
 ## Examples
 
@@ -54,13 +58,15 @@ See [Expandable content](https://design.va.gov/patterns/content-presentation#exp
 * Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
 * Make sure interactive elements (such as links) within the collapsible region are far enough from the header that users don’t accidentally trigger a collapse. (The exact distance will depend on the device.)
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Content considerations
 
 * Keep content succinct – accordion height will fluctuate depending on the length of the content. 
 * If the accordion has a subheading, it should not wrap to two lines. 
 * In general, accordions should organize static content. Outside of the forms review page, where accordions are used to group sections of editable information, we discourage the use of form elements like radio buttons, checkboxes, and buttons within accordions. Interactive elements will not be focusable when the accordion is in a collapsed state.
 
-## Accessibility considerations and testing
+## Accessibility considerations
 
 * Code header areas in the accordion as `<buttons>` so that they are usable with both screen readers and the keyboard.
 * Buttons should state if they are expanded with `aria-expanded="true"`. `The aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.

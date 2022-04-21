@@ -8,13 +8,16 @@ anchors:
   - anchor: Width
   - anchor: Min-width
   - anchor: Max-width
+  - anchor: Responsive prefixes
 ---
 
 # Height and width
 
 <div class="va-introtext" markdown="1">
-Reset the height and width of an element. All height and width classes include [responsive prefixes](#responsive-prefixes).
+  Reset the height and width of an element. All height and width classes include [responsive prefixes](#responsive-prefixes).
 </div>
+
+{% include _site-on-this-page.html %}
 
 ## Height
 

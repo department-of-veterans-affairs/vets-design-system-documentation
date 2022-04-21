@@ -12,10 +12,13 @@ anchors:
 
 # Typography
 
+<p class="va-introtext">
+  Typographical selections intended to meet the highest standards of usability and accessibility, while setting a consistent look and feel in order to convey credibility.
+</p>
+
+{% include _site-on-this-page.html %}
+
 ## Fonts
-
-
-
 
 <section id="sans" class="usa-grid-full">
     <h4>Source Sans Pro (<tt>.vads-u-font-family--sans</tt>)</h4>

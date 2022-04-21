@@ -10,6 +10,8 @@ anchors:
 
 # Error messages
 
+{% include _site-on-this-page.html %}
+
 ## System messaging
 
 Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.

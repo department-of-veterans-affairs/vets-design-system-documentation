@@ -1,12 +1,15 @@
 ---
-layout: default
+layout: component
 sub_section: Back to top
-title: Back to top
+title: "Back to top"
+status: use-deployed
+intro-text: "The Back to top component is a shortcut that allows the user to quickly navigate to the top of a long page of content."
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
 ---
-
-# Back to top
-
-<p class="va-introtext">The Back to top component is a shortcut that allows the user to quickly navigate to the top of a long page of content.</p>
 
 ## Examples
 
@@ -37,6 +40,8 @@ title: Back to top
 * As the user scrolls down the page, the Back to top component reveals as a sticky element in the lower right edge of the main content area.
 * The Back to top component stays fixed in the lower right edge of the main content area when the user reaches the bottom of the page.
 * Clicking Back to top takes the user to the top of the page.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 * Animations can be distracting to users with vestibular conditions.

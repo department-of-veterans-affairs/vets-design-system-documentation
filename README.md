@@ -5,7 +5,6 @@ This is repo for the design system documentation, aka [design.va.gov](https://de
 Min specs:
 
 - [Jekyll](http://jekyllrb.com)
-- react
 
 ## To run locally
 
@@ -45,13 +44,13 @@ Tested using `node` v14.15.0 and `npm` v6.14.8.
 
 To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site.
 
+- [About pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_about)
 - [Components pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components)
 - [Content style guide pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_content-style-guide)
 - [Design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_design)
 - [Experimental design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design)
-- [Documentation pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_documentation)
 - [Layout pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_layout)
-- [Design patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_patterns)
+- [Patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_patterns)
 - [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_utilities)
 
 ### How to add new pages, improve presentation, etc.

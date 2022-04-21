@@ -8,6 +8,7 @@ anchors:
 
 # Content presentation
 
+{% include _site-on-this-page.html %}
 
 ## Featured content
 

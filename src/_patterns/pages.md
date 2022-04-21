@@ -7,7 +7,9 @@ anchors:
 
 # Pages
 
-Pattern documentation on VA.gov's page templates.
+<div class="va-introtext">
+  Pattern documentation on VA.gov's page templates.
+</div>
 
 ## Hub pages
 A hub page page does the following:

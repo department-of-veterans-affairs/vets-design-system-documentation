@@ -7,7 +7,9 @@ anchors:
 
 # Supplemental content
 
-<p class="va-introtext">VA.gov uses supplemental content to provide the user background information related to a form or service. This information is often nuanced and dense, but not critical, so we typically place it behind an interaction or somewhere that is not disruptive to the user's ability to complete a task.</p>
+<p class="va-introtext">
+  VA.gov uses supplemental content to provide the user background information related to a form or service. This information is often nuanced and dense, but not critical, so we typically place it behind an interaction or somewhere that is not disruptive to the user's ability to complete a task.
+</p>
 
 ## Contextual help
 

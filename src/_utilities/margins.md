@@ -9,13 +9,16 @@ anchors:
   - anchor: Margin right and left
   - anchor: Margin right
   - anchor: Margin left
+  - anchor: Responsive prefixes
 ---
 
 # Margins
 
 <div class="va-introtext" markdown="1">
-Change the spacing around an item. Margin classes include [responsive prefixes](#responsive-prefixes).
+  Change the spacing around an item. Margin classes include [responsive prefixes](#responsive-prefixes).
 </div>
+
+{% include _site-on-this-page.html %}
 
 
 ## Margin on all sides

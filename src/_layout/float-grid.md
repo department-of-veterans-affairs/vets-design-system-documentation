@@ -1,21 +1,26 @@
 ---
 layout: default
 title: Float grid
+anchors:
+  - anchor: Grid examples
+  - anchor: Implementation
 ---
 
 # Float grid
 
 <div class="va-introtext" markdown="1">
-The float grid is the grid provided by the U.S. Web Design System. For a grid that offers more flexibility, see the [flexbox grid](flexbox-grid.html).
+  The float grid is the grid provided by the U.S. Web Design System v1. For a grid that offers more flexibility, see the [flexbox grid](flexbox-grid.html).
 </div>
+
+{% include _site-on-this-page.html %}
+
+## Grid examples
 
 <div class="site-showcase">
 {% include_relative html/grid.html %}
 </div>
 
 {% include snippet.html content='html/grid.html' %}
-
-
 
 ## Implementation
 

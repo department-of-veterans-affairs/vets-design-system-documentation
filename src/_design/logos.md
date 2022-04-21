@@ -1,8 +1,5 @@
 ---
-# Do NOT Edit layout
 layout: default
-
-#Page info: Edit these items below
 title: Logos
 tags: logos, logo, brand, branding
 ---

@@ -3,6 +3,7 @@ layout: default
 title: Flexbox grid
 tags: Columns, Nesting grids, Layout grid
 anchors:
+  - anchor: Grid elements
   - anchor: Auto-sizing columns
   - anchor: Fixed columns
   - anchor: How to nest grids
@@ -12,8 +13,12 @@ anchors:
 # Flexbox grid
 
 <div class="va-introtext" markdown="1">
-The flexbox grid is another option for creating grid-based layouts with the additional features that flexbox provides. You can apply more flexbox properties by using the [flexbox utility](../utilities/flexbox.html).
+  The flexbox grid is another option for creating grid-based layouts with the additional features that flexbox provides. You can apply more flexbox properties by using the [flexbox utility](../utilities/flexbox.html).
 </div>
+
+{% include _site-on-this-page.html %}
+
+## Grid elements
 
 In addition to the Flexbox grid, Formation uses a 12-column, responsive, flexbox grid to provide structure and align content.
 
@@ -61,7 +66,7 @@ In this example, we have `vads-u-padding--2p5` applied to each grid column, so w
 
 Each column class can include a breakpoint prefix that allows changing the column widths at different breakpoints.
 
-{% include iframe-preview.html src="html/flexbox-grid-responsive-iframe.html" new_tab="true" title="Visibility" height=400 %}
+{% include iframe-preview.html src="html/flexbox-grid-responsive-iframe" new_tab="true" title="Visibility" height=400 %}
 
 {% include snippet.html content='html/flexbox-grid-responsive.html' %}
 

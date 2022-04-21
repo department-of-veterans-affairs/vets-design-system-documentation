@@ -20,7 +20,7 @@ draft: true
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
 - [Audit & document use of Bold text on headings #19573](https://github.com/department-of-veterans-affairs/va.gov-team/issues/19573)
 - [Create a pattern for The header / hero area with the veteran's name and info](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/389)
-- [Feature Request - Privacy Act Statement variation and customization  # ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
+- [Feature Request - Privacy Act Statement variation and customization# ](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
 - [Documentation request: Width suggestions for cards](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/380)
 - [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
 - [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
@@ -68,7 +68,7 @@ draft: true
 - [Feature Request: Postal Code Placement](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/392)
 - [Feature request: Confirmation page standardization](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/384)
 - [Feature request: Dynamic title, expiration date, form id, and URL.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/383)
-- [Feature Request - Privacy Act Statement variation and customization  # Feature Request](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
+- [Feature Request - Privacy Act Statement variation and customization# Feature Request](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/381)
 - [Feature Request - Tabs component](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/379)
 - [Create guidelines on using Gray boxes versus the hairline "column" sections](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/385)
 - [Create pattern for "statuses" on cards in DS](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/387)
