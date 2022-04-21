@@ -1,19 +1,21 @@
 ---
-layout: default
-sub_section: table
+layout: component
 title: Table
+status: use-best-practice
+intro-text: "The table component organizes data into columns and rows."
 anchors:
-  - anchor: Table
-  - anchor: Responsive list table
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+web-component: va-table
 ---
 
-# Table
+## Example
 
-<p class="va-introtext">The table component organizes data into columns and rows.</p>
-
-{% include storybook-preview.html height="300px" story="components-table--default" %}
+{% include storybook-preview.html height="300px" story="components-va-table--default" %}
 
 ## Usage
+
 * A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
 
 ### When to use a table
@@ -33,9 +35,12 @@ anchors:
   - Do not center align.
 - **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
 - **Be selective about using column sort.**
+  - **Note:** column sort does not work in IE11
   - Sort should only be included in a table if it can assist the user in completing a task.
   - Only one column per table should be sortable, keep it simple.
   - A default sort order (ascending or descending) must be defined.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 * Table headers must be designated with `<th>`.
@@ -43,7 +48,7 @@ anchors:
 * Each header cell should have `scope="col"` or `scope="row"`.
 * Complex tables with more than two levels of headers should use `id` and `headers` attributes so that data cells and header associations are explicit.
 * Nested tables should be avoided.
-* When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+* When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element. The title can be an affordance to screen reader users especially if there are multiple tables on one page.
 * The caption should succinctly describe the table in a meaningful way.
 
 # Responsive list table 
@@ -51,7 +56,7 @@ anchors:
 <p class="va-introtext">Responsive list tables transition into a list view on smaller screens. A responsive list table is a good solution when veterans need to look up a piece of information. 
 </p>
 
-{% include storybook-preview.html height="950px" width="400px" story="components-table--default" %}
+{% include storybook-preview.html height="950px" width="400px" story="components-va-table--default" %}
 
 ## Usage
 
@@ -67,6 +72,8 @@ Use a list view table when you need to present a list of information in an itemi
 - **Left align header and value in list view** When using list view, the header and value are stacked vertically with the bolded header on one line and the value on the line below. Make sure both header and value are left aligned. 
 - **Limit characters in headings** Column headings shouldn’t exceed 60 characters. Follow content guidelines on [how to abbreviate dates and time](https://design.va.gov/content-style-guide/dates-and-numbers), as well as, other [abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 - **Tables should have a maximum of 5 columns** Very large tables with lots of columns are difficult to use. This problem only gets exacerbated on smaller screens. Show only what users really need.  
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 - **Test it as soon as possible, especially on mobile devices.** Reach out to A11y specialists to help test how tables read on mobile screen readers 

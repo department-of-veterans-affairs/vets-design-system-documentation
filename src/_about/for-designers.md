@@ -11,8 +11,10 @@ slug: designers
 # Documentation for designers
 
 <div class="va-introtext">
-Designers are urged to read through each section of design.va.gov and see all components and patterns in use on VA.gov. The utilities section is also useful to help foster ideas in how a particular design solution can be constructed.
+  Designers are urged to read through each section of design.va.gov and see all components and patterns in use on VA.gov. The utilities section is also useful to help foster ideas in how a particular design solution can be constructed.
 </div>
+
+{% include _site-on-this-page.html %}
 
 ## How to work with the VA.gov Design System
 
@@ -41,9 +43,9 @@ Design teams at VA use Sketch for Teams to view, share, and collaborate on our w
 
 ### Get added to Sketch for Teams
 
-1. Go to [sketch.com](https://www.sketch.com/signup) and create a Sketch account 
-2. In the #design channel in Slack, ping a Sketch for Teams admin (currently Ryan Thurlwell) requesting to be added
-3. Receive the invite via email, accept the invitation
+1. Go to [sketch.com](https://www.sketch.com/signup) and create a Sketch account. 
+2. In the [#design channel in Slack](https://dsva.slack.com/archives/C0NGDDXME), ping a Sketch for Teams admin (currently {{ site.sketch_for_teams_admin }}) requesting to be added.
+3. Receive the invite via email, accept the invitation.
 4. Boom, you're in! 
 
 ### Using Sketch for Teams
@@ -62,7 +64,7 @@ To get started on a new project, there are only a couple of steps:
 
 ### Libraries
 
-Do not modify the VA-gov-Pattern-Library. Only OCTO-DE and the Design System Team should edit the library. If you have questions about how to use component symbols, contact Natalie Hill, the Design System Team's UX Designer.
+Do not modify the VA-gov-Pattern-Library. Only OCTO-DE and the Design System Team should edit the library. If you have questions about how to use component symbols, contact {{ site.sketch_library_owner }}, the Design System Team's UX Designer.
 
 **Load the VA.gov pattern library**
 

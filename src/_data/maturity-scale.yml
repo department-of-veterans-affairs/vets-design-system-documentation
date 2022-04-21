@@ -1,0 +1,25 @@
+scale:
+  - name: dont-use-proposed
+    category: "Don't use"
+    category-slug: dont-use
+    title: Proposed
+  - name: use-with-caution-candidate
+    category: Use with caution
+    category-slug: use-with-caution
+    title: Candidate
+  - name: use-with-caution-available
+    category: Use with caution
+    category-slug: use-with-caution
+    title: Available
+  - name: use-deployed
+    category: Use
+    category-slug: use
+    title: Deployed
+  - name: use-best-practice
+    category: Use
+    category-slug: use
+    title: Best practice
+  - name: dont-use-deprecated
+    category: "Don't use"
+    category-slug: dont-use
+    title: Deprecated

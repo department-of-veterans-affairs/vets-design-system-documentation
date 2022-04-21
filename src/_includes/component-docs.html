@@ -1,0 +1,50 @@
+<h2 id="code-usage">Code usage</h2>
+<h3>Attributes and Properties</h3>
+<table>
+  <tr>
+    <th><strong>Property</strong></th>
+    <th><strong>Attribute</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Default</strong></th>
+    <th><strong>Description</strong></th>
+  </tr>
+  {% for component in site.data.component-docs.components %} {% if component.tag
+  == include.component_name %}
+  <div>
+    {% for prop in component.props %}
+    <tr>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.name }}</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.attr }}</code></th>
+      <th>{% if prop.type %}<code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.type }}</code>{% endif %}</th>
+      <th>{% if prop.default %}<code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.default }}</code>{% endif %}</th>
+      <th>{{ prop.docs }}</th>
+    </tr>
+    {% endfor %}
+  </div>
+  {% endif %} {% endfor %}
+</table>
+
+<h3>Events</h3>
+<table>
+  <tr>
+    <th><strong>Name</strong></th>
+    <th><strong>Description</strong></th>
+  </tr>
+  {% for component in site.data.component-docs.components %} {% if component.tag
+  == include.component_name %}
+  <div>
+    {% for event in component.events %}
+    <tr>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ event.event }}</code></th>
+      <th>{{ event.docs }}</th>
+    </tr>
+    {% endfor %} {% for listener in component.listeners %} {% assign docs =
+    component.docsTags | where: "name", listener.event %}
+    <tr>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ listener.event }}</code></th>
+      <th>{% for doc in docs %} {{ doc.text }} {% endfor %}</th>
+    </tr>
+    {% endfor %}
+  </div>
+  {% endif %} {% endfor %}
+</table>

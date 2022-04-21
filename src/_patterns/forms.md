@@ -13,9 +13,10 @@ anchors:
 # Forms
 
 <div class="va-introtext" markdown="1">
-Patterns used in form design on VA.gov.
+  Patterns used in form design on VA.gov.
 </div>
 
+{% include _site-on-this-page.html %}
 
 ## All or none of the above
 

@@ -95,7 +95,9 @@ A select box allows users to select one option from a list.
 
 Allows users to select one or more items from a visible list.
 
-{% include storybook-preview.html height="200px" story="components-checkboxgroup--default" %}
+{% include storybook-preview.html height="200px" story="components-va-checkbox-group--default" link_text="va-checkbox-group" %}
+
+{% include storybook-preview.html height="200px" story="components-va-checkbox-group--single-checkbox" link_text="va-checkbox-group" %}
 
 ### Usage
 
@@ -124,7 +126,7 @@ Allows users to select one or more items from a visible list.
 
 Radio buttons allow users to see all available choices at once and select exactly one option.
 
-{% include storybook-preview.html height="200px" story="components-radiobuttons--default" %}
+{% include storybook-preview.html height="200px" story="components-va-radio--default" link_text="va-radio" %}
 
 ### Usage
 

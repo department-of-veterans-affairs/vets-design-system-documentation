@@ -9,3 +9,4 @@ fonts
 src/img
 src/_includes/react
 src/formation.min.css
+src/.jekyll-cache

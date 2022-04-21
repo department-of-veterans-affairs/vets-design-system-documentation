@@ -3,6 +3,7 @@ layout: default
 title: Spacing units
 tags: Grid, Spacing tokens
 anchors:
+  - anchor: Why multiples of 8?
   - anchor: Spacing unit tokens
   - anchor: Using the spacing tokens
 ---
@@ -10,8 +11,10 @@ anchors:
 # Spacing units
 
 <div class="va-introtext">
-Formation’s spacing units are based on multiples of 8 to maintain a consistent rhythm when applied to margins, padding, and other dimensions.
+  Formation’s spacing units are based on multiples of 8 to maintain a consistent rhythm when applied to margins, padding, and other dimensions.
 </div>
+
+{% include _site-on-this-page.html %}
 
 ## Why multiples of 8?
 

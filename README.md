@@ -5,53 +5,52 @@ This is repo for the design system documentation, aka [design.va.gov](https://de
 Min specs:
 
 - [Jekyll](http://jekyllrb.com)
-- react
-- webpack
 
 ## To run locally
 
-Tested using `node` v8.12.0 and `npm` v6.4.1.
+Tested using `node` v14.15.0 and `npm` v6.14.8.
 
-1. Clone this repo
+1. **Clone this repo**
 
    ```
    $ git clone https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git
    ```
 
-1. Install NPM dependencies
+1. **Install NPM dependencies**
 
    ```
    $ npm install
    ```
 
-1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
-   NOTE: This repo works with Ruby version 2.6.6. Instead of using `brew install ruby`, which will install the latest version, run `brew install ruby@2.6` and make sure when you are adding references to your PATH that you specify version 2.6.6 instead of 3.0.0.
+1. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
 
-1. Install Ruby gems
+   **NOTE:** This repo works with Ruby version 2.7.5. **It does not work with `ruby v3.0` or above**. On the step where you will install `ruby` make sure to specify `ruby@2.7.5` and also use the version of `2.7.5` when you are adding references to your PATH in your terminal.
+
+1. **Install Ruby gems**
 
    ```
    $ bundle install
    ```
 
-1. Build and start the Jekyll server
+1. **Build and start the Jekyll server**
 
    ```
    $ npm run start
    ```
 
-1. Verify in browser: [localhost:4000](http://localhost:4000/)
+1. **Verify in browser: [localhost:4000](http://localhost:4000/)**
 
 ## Adding content to the documentation site
 
 To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site.
 
+- [About pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_about)
 - [Components pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components)
 - [Content style guide pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_content-style-guide)
 - [Design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_design)
 - [Experimental design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design)
-- [Documentation pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_documentation)
 - [Layout pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_layout)
-- [Design patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_patterns)
+- [Patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_patterns)
 - [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_utilities)
 
 ### How to add new pages, improve presentation, etc.

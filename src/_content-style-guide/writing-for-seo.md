@@ -13,7 +13,7 @@ Because most Veterans find information starting with Google, no matter what the 
 
 To learn more about SEO and writing with SEO in mind, we recommend starting with [Google's SEO starter guide](https://support.google.com/webmasters/answer/7451184?hl=en) and [The Moz Blog](https://moz.com/blog).
 
-
+{% include _site-on-this-page.html %}
 
 ## SEO best practices for writing copy
 

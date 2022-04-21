@@ -1,17 +1,18 @@
 ---
-layout: default
-sub_section: sidenav
+layout: component
 title: Sidenav
+status: use-best-practice
+intro-text: "Hierarchical, vertical navigation to place at the side of a page."
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
 ---
 
-# Sidenav
-
-<p class="va-introtext">Hierarchical, vertical navigation to place at the side of a page.</p>
+## Example
 
 {% include storybook-preview.html height="550px" story="components-sidenav--default-story" %}
-
-* All elements, including the `<script>` tag in the snippet are required. An update to Formation's script may address this.
-* The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
 
 ## Usage
 
@@ -28,6 +29,11 @@ title: Sidenav
 * Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
 * Keep the navigation links short. They can be shorter derivatives of page titles themselves.
 * If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+
+## Code usage
+
+* All elements, including the `<script>` tag in the snippet are required. An update to Formation's script may address this.
+* The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
 
 ## Accessibility considerations
 * Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
