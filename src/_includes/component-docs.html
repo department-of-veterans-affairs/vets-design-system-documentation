@@ -1,8 +1,8 @@
 {% for component in site.data.component-docs.components %} {% if component.tag
   == include.component_name %}
-{% unless compoenent.props == empty %} {% unless component.events == empty %}
+{% if component.props != empty or component.events != empty %}
 <h2 id="code-usage">Code usage</h2>
-{% unless component.props == empty %}
+{% if component.props != empty %}
 <h3>Attributes and Properties</h3>
 <table>
   <tr>
@@ -24,9 +24,9 @@
     {% endfor %}
   </div>
 </table>
-{% endunless %}
+{% endif %}
 
-{% unless component.events == empty %}
+{% if component.events != empty %}
 <h3>Events</h3>
 <table>
   <tr>
@@ -48,5 +48,5 @@
     {% endfor %}
   </div>
 </table>
-{% endunless %}
-{% endunless %} {% endunless %} {% endif %} {% endfor %}
+{% endif %}
+{% endif %} {% endif %} {% endfor %}
