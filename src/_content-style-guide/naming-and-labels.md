@@ -5,7 +5,7 @@ title: Naming and labels
 
 # Naming and labels
 
-Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos](https://design.va.gov/design/logos), we also don't create "brand clutter" with unnecessary branding. 
+Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos]({{ site.baseurl }}/design/logos), we also don't create "brand clutter" with unnecessary branding. 
 
 **Don't create new brands**
 
@@ -14,13 +14,13 @@ Branded names and labels:
 -	Spawn unnecessary sub-brands and create confusion for Veterans. 
 -	Are expensive and time-consuming to market in order to educate customers on what they mean. 
 
-Check the [word list](https://design.va.gov/content-style-guide/word-list) for tools, benefits, and programs that are OK to capitalize.
+Check the [word list]({{ site.baseurl }}/content-style-guide/word-list) for tools, benefits, and programs that are OK to capitalize.
 
 ## Use descriptive plain language labels
 
 If you need to call your tool, program, or benefit something, call it what it is. Use everyday, plain language words that people already understand.
 
-This follows our [content principles](https://design.va.gov/content-style-guide/content-principles), is easier to understand without explanatory information, and is [better for SEO](https://design.va.gov/content-style-guide/seo). 
+This follows our [content principles]({{ site.baseurl }}/content-style-guide/content-principles), is easier to understand without explanatory information, and is [better for SEO]({{ site.baseurl }}/content-style-guide/seo). 
 
 In the example below, there's no need to brand education benefits with the internal line of business because all Veteran benefits are through VA. Likewise, on-the-job training doesn't need to be made into a brand or a branded, uncommon acronym.
 
@@ -77,14 +77,14 @@ Pepco Green Button
 
 Many government organizations rely on acronyms as shorthand in internal communications, but that doesn't mean we should make customers learn our internal jargon. 
 
-Don’t create new [acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) in Veteran-facing content that aren't commonly used and understood by them already. When in doubt, refer to [Merriam-Webster](https://www.merriam-webster.com) or AP Style. Likewise, don't use internal acronyms in Veteran-facing content like they're brand names.
+Don’t create new [acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) in Veteran-facing content that aren't commonly used and understood by them already. When in doubt, refer to [Merriam-Webster](https://www.merriam-webster.com) or AP Style. Likewise, don't use internal acronyms in Veteran-facing content like they're brand names.
 
 **Avoid “alphabet soup” syndrome**
 
 Internal acronyms used like branded names are:
 - Hard to understand by customers and people outside your business or team.
 -	Sound like Government, not human.
--	Don’t align with our [content principles](https://design.va.gov/content-style-guide/content-principles).
+-	Don’t align with our [content principles]({{ site.baseurl }}/content-style-guide/content-principles).
 
 
 <div class="do-dont">

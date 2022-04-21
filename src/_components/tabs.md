@@ -33,7 +33,7 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 
 ### When to consider something else
 
-* Consider using a single-select [accordion](https://design.va.gov/components/accordions) to display one chunk of content at a time.
+* Consider using a single-select [accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
 * If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
 
 ### Behavior and design
@@ -54,4 +54,4 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 
 ## Related
 
-* [Accordions](https://design.va.gov/components/accordions)
+* [Accordion]({{ site.baseurl }}/components/accordion)

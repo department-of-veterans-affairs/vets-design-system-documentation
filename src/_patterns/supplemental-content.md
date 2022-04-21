@@ -1,15 +1,11 @@
 ---
-layout: default
+layout: pattern
 title: Supplemental content
+status: use-deployed
+intro-text: "Provides the user background information related to a form or service. This information is often nuanced and dense, but not critical, so we typically place it behind an interaction or somewhere that is not disruptive to the user's ability to complete a task."
 anchors:
   - anchor: Contextual help
 ---
-
-# Supplemental content
-
-<p class="va-introtext">
-  VA.gov uses supplemental content to provide the user background information related to a form or service. This information is often nuanced and dense, but not critical, so we typically place it behind an interaction or somewhere that is not disruptive to the user's ability to complete a task.
-</p>
 
 ## Contextual help
 
@@ -28,7 +24,7 @@ _The following example depicts how to use contextual help to describe a medical 
   </div>
 </div>
 
-Most VA forms have a large amount of instructional text that tries to make VA processes, or the requirements of the application process clear. Unfortunately they are frequently several pages of tiny type that the person has to read and retain. Much of it may not even be relevant to that specific person’s situation. We use the [Additional info](https://design.va.gov/components/additional-info) component to situate plain language help at the point of the process where it is most relevant. For example, a group of three inputs that make sense in a particular order, and the middle one has some nuance to it.
+Most VA forms have a large amount of instructional text that tries to make VA processes, or the requirements of the application process clear. Unfortunately they are frequently several pages of tiny type that the person has to read and retain. Much of it may not even be relevant to that specific person’s situation. We use the [Additional info]({{ site.baseurl }}/components/additional-info) component to situate plain language help at the point of the process where it is most relevant. For example, a group of three inputs that make sense in a particular order, and the middle one has some nuance to it.
 
 The help is triggered by clicking on a uniquely styled text link with a plain language hook. The helper text is revealed with a sliding drawer type animation (like the accordion) and is typically 1-3 short paragraphs. Shorter is better, and references to static content pages is encouraged when the situation is complicated.
 

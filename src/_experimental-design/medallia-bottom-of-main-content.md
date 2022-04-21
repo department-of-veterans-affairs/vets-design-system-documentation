@@ -41,11 +41,9 @@ There is currently a number of items that may potentially live at the bottom of 
 
 Note: the above mobile design does not address a current bug in the “last updated” text. Currently, the last updated text has no left margin. However, it should utilize the standard padding-left: .5em that is in place on the ‘article.’
 
-
 ### Existing components used
 
-[Default Button](https://design.va.gov/components/buttons)
-
+[Primary Button]({{ site.baseurl }}/components/button)
 
 ### Guidance (if available)
 

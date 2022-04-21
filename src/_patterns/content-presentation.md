@@ -1,18 +1,16 @@
 ---
-layout: default
+layout: pattern
 title: Content presentation
+status: use-deployed
+into-text: "Describes how to choose the appropriate components for presenting content in certain contexts."
 anchors:
   - anchor: Featured content
   - anchor: Expandable content
 ---
 
-# Content presentation
-
-{% include _site-on-this-page.html %}
-
 ## Featured content
 
-[Featured content](https://design.va.gov/components/featured-content) components are light blue boxes that call attention to important information.
+[Featured content]({{ site.baseurl }}/components/featured-content) components are light blue boxes that call attention to important information.
 
 {% include storybook-preview.html height="250px" story="components-va-featured-content--default" %}
 
@@ -20,7 +18,7 @@ anchors:
 
 ### Accordions
 
-Use [accordions](../components/accordions.html) to hold chunks of sibling content. They can be used in forms in review screens, but for additional context, please use [AdditionalInfo](#additionalinfo).
+Use [accordions]({{ site.baseurl }}/components/accordion.html) to hold chunks of sibling content. They can be used in forms in review screens, but for additional context, please use [AdditionalInfo](#additionalinfo).
 
 ### AdditionalInfo
 

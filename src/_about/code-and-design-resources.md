@@ -28,7 +28,6 @@ Sketch is our tool of choice for creating mockups. You can access our sketch lib
   <li><a href="{{ site.baseurl }}/downloads/VA-gov-Pattern-Library.sketch"><span class="fa fa-download vads-u-display--inline-block vads-u-margin-right--1"></span>Download VA.gov sketch library</a></li>
 </ul>
 
-
 Design teams at VA use [Sketch for Teams](https://www.sketch.com/for-teams/) to view, share, and collaborate on our work. Only designers actively working on products at VA.gov can be added to Sketch for Teams.
 
 Sketch for Teams works very similar to "normal" Sketch, but contains a few big features that help teams work together:
@@ -38,4 +37,4 @@ Sketch for Teams works very similar to "normal" Sketch, but contains a few big f
 - You receive Library updates automagiclly
 - Developers can inspect any element on a page, anytime
 
-To read more documentation on how to use sketch for teams, check our our [for designers documentation](https://design.va.gov/documentation/designers) 
+To read more documentation on how to use sketch for teams, check our our [for designers documentation]({{ site.baseurl }}/documentation/designers) 

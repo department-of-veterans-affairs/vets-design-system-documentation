@@ -1,18 +1,12 @@
 ---
-layout: default
+layout: pattern
 title: Signed out vs. signed in
+status: use-deployed
+intro-text: "If a user has not signed in to VA.gov, we know very little information about the user. When the user signs in and verifies their identity, we know who the user is. In either case, we display the most relevant content, features, and calls to action."
 anchors:
   - anchor: Site header
   - anchor: Contextual calls to action
 ---
-
-# Signed out vs. signed in
-
-<p class="va-introtext">
-  If a user has not signed in to VA.gov, we know very little information about the user. When the user signs in and verifies their identity, we know who the user is. In either case, we display the most relevant content, features, and calls to action.
-</p>
-
-{% include _site-on-this-page.html %}
 
 ## Site header
 
@@ -74,7 +68,7 @@ Use a contextual CTA when:
 * The CTA includes important supplemental information
 * An error has occurred and the user is blocked from proceeding
 
-Use the [alert box component]({{ site.baseurl }}/components/alert-boxes) for contextual CTAs.
+Use the [alert component]({{ site.baseurl }}/components/alert) for contextual CTAs.
 
 ### Possible states of a contextual CTA
 
@@ -82,7 +76,7 @@ A contextual CTA may change based on the authentication status of the user.
 
 #### CTA required to continue
 
-Use the green alert box component when the user is required to do something before they can continue a process.
+Use the green alert component when the user is required to do something before they can continue a process.
 
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
@@ -97,13 +91,13 @@ Use the green alert box component when the user is required to do something befo
 
 #### CTA beneficial, not required
 
-Use the blue informational alert box component when the call to action is beneficial, but not required to proceed. Usually, it is a better experience when the user is signed in, so the prompting the user to sign in first is the primary action.
+Use the blue informational alert component when the call to action is beneficial, but not required to proceed. Usually, it is a better experience when the user is signed in, so the prompting the user to sign in first is the primary action.
 
 ![call to action screenshot](/images/pattern-cta-sign-in.png)
 
 #### Error
 
-Use a red alert box component when the user is blocked from continuing a process. Always offer at least one way for the user to resolve the error.
+Use a red alert component when the user is blocked from continuing a process. Always offer at least one way for the user to resolve the error.
 
 ![verify identity error](/images/pattern-verify-identity-error.png)
 

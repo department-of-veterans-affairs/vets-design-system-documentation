@@ -1,17 +1,16 @@
 ---
-layout: default
-draft: true
+layout: pattern
 title: Sitewide maintenance banners
- 
+status: use-with-caution-candidate
+intro-text: "Sitewide maintenance banners are used when we need to let Veterans know about system maintenance affecting the availability of applications and services on VA.gov."
+draft: true
+anchors:
+  - anchor: When we use them
+  - anchor: Guidance
 ---
 
-# Sitewide maintenance banners
-<div class="va-introtext" markdown="1">
-Sitewide maintenance banners are used when we need to let Veterans know about system maintenance affecting the availability of applications and services on VA.gov.  
-</div>
-
-
 ## When we use them 
+
 Sitewide maintenance banners combine the full-width banner alert component with standardized messaging text. It’s used when all (or most) unauthenticated and authenticated applications, tools, or sign in experiences across the entire site are affected (e.g., vets-api).
 
 1. Before the site maintenance
@@ -21,7 +20,7 @@ Sitewide maintenance banners combine the full-width banner alert component with 
 ### Upcoming site maintenance banner: Before downtime
 The ‘before downtime’ banner helps users know when the downtime will take place, so they can plan accordingly. 
 
-There are 2 versions of the upcoming message: one for typical downtimes, and another for when a downtime spans multiple days or is 24 hours or longer in duration. Refer to [scheduled downtime notifications messaging](https://design.va.gov/patterns/messaging-dictionary#scheduled-downtime-notifications) in the error messaging dictionary for the multi-day/24 hours+ downtime text.
+There are 2 versions of the upcoming message: one for typical downtimes, and another for when a downtime spans multiple days or is 24 hours or longer in duration. Refer to [scheduled downtime notifications messaging]({{ site.baseurl }}/patterns/messaging-dictionary#scheduled-downtime-notifications) in the error messaging dictionary for the multi-day/24 hours+ downtime text.
 
 Information in {brackets} show customizable details. 
 
@@ -33,7 +32,7 @@ We’ll be doing some work on VA.gov. The maintenance will last {x hour}. During
 
 **Start/End time:** {0:00 a.m./p.m. to 0:00 a.m./p.m. ET}
 
-[View the Before Maintenance React component on storybook](https://design.va.gov/storybook/?path=/docs/components-banners-maintenancebanner--before-maintenance)
+[View the Before Maintenance React component on storybook]({{ site.baseurl }}/storybook/?path=/docs/components-banners-maintenancebanner--before-maintenance)
 
 ### During site maintenance banner: During downtime
 
@@ -49,9 +48,9 @@ We’re working on VA.gov right now. If you have trouble signing in or using too
 
 **Start/End time:** {0:00 a.m./p.m. to 00:00 a.m./p.m. ET}
 
-[View the During Maintenance React component on storybook](https://design.va.gov/storybook/?path=/docs/components-banners-maintenancebanner--during-maintenance)
+[View the During Maintenance React component on storybook]({{ site.baseurl }}/storybook/?path=/docs/components-banners-maintenancebanner--during-maintenance)
 
-## UX behavior 
+## Guidance
 
 The content and UX behavior of sitewide maintenance banners are standardized. Only the duration, dates, and times are customizable. 
 
