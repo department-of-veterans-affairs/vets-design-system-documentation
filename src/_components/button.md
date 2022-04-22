@@ -1,8 +1,9 @@
 ---
 layout: component
 title: Button
-status: use-best-practice
 intro-text: Use buttons to signal actions.
+research-link: Buttons
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage

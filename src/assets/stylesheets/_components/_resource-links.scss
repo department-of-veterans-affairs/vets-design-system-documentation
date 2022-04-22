@@ -11,8 +11,8 @@
   transition: none;
 
   img {
-    flex-shrink: 0;
     display: block;
+    flex-shrink: 0;
     width: units(4);
   }
 }
@@ -21,4 +21,45 @@
   border-color: $color-gold;
   background-color: white;
   text-decoration: none;
+}
+
+// These styles are for links to resources per-component
+
+.site-component-resources-links {
+  margin: 1rem 1rem units(3) 1rem;
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -0.5em; // don't need this but let's it line up with on-this-page
+    padding-left: 0;
+  }
+
+  &__title {
+    font-family: $font-serif;
+    font-size: 2rem;
+    margin: units(0.5) 0;
+  }
+
+  &__definition {
+    display: inline-block;
+    margin: units(0.5) 0em;
+  }
+
+  &__link {
+    display: block;
+    padding: units(0.5);
+    line-height: 1.5em;
+    margin-right: units(2);
+  }
+
+  &__img,
+  &__icon {
+    margin-right: units(0.5);
+  }
+
+  &__img {
+    height: units(2);
+    width: units(2);
+  }
 }
