@@ -246,7 +246,7 @@ Don’t use Sass shorthand features, such as nesting with ampersands often used 
 ## Contributing experimental design code
 This document explains the process for contributing code for experimental designs and the reasoning behind that process.
 
-If you haven't read it already, refer to the [experimental design page](/experimental-design) for more information about the full process.
+If you haven't read it already, refer to the [contributing to the design system]({{ site.baseurl }}/about/contributing-to-the-design-system) page for more information about the full process.
 
 ### Writing experimental design code
 Each experimental design should:

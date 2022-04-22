@@ -1,13 +1,13 @@
 ---
 layout: default
 index: true
-title: Design
+title: Foundation
 ---
 
-# Design
+# Foundation
 
 <div class="va-introtext" markdown="1">
-The Design section provides information about the visual language and styles used on VA.gov.
+  The Foundation section provides information about the visual language and styles used on VA.gov.
 </div>
 
 Behind every aspect of the language used on VA.gov lies an intention: to convey interactivity, provide structure to content, and impart a sense of space and context.

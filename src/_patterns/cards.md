@@ -23,7 +23,7 @@ The context of use for cards varies, but most cards share these elements:
 2. **Title.** H3 or H4. Clearly summarizes card content.
 3. **Subheader.** H4 or body text. Usually communicates a status.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
-5. **Call to action.** [Action link]({{ site.baseurl }}/experimental-design/action_links) (recommended) or link. 
+5. **Call to action.** [Action link]({{ site.baseurl }}/components/action-link) (recommended) or link. 
 
 Optional elements for cards include:
 
