@@ -24,11 +24,10 @@ web-component: va-loading-indicator
 
 ## Content considerations
 
-* The Indeterminate loading indicator can appear with or without a text label.
+* Make sure that the loading indicator message is clear and concise.
 
 ## Accessibility considerations
 
 * The loading indicator component is used to notify user’s that the page content is loading. W3C WAI-ARIA `aria-live="polite"`, `aria-label` and `aria-valuetext` are used to ensure screen reader users are also provided the same information.
-* Make sure that the loading indicator message is clear and concise.
 
 {% include component-docs.html component_name=page.web-component %}
