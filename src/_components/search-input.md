@@ -10,9 +10,9 @@ anchors:
 web-component: va-search-input
 ---
 
-# Type-ahead
+# Search input
 
-<p class="va-introtext">The Type-ahead component displays up to five suggested search terms in a dropdowon below the input field while the user is typing a query. The goal of Type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type.</p>
+<p class="va-introtext"> The Search input component lives in the global header of VA.gov and on search results pages, and can be paired with type-ahead functionality. Type-ahead displays up to five suggested search terms in a dropdowon below the Search input field while the user is typing a query. The goal of type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type.</p>
 
 ## Example
 
@@ -20,11 +20,9 @@ web-component: va-search-input
 
 ## Usage
 
-### When to use Type-ahead
+### When to use Search input with type-ahead
 
-Use type-ahead:
-
-* In global search and search results pages where predictive text can help the user find relevant content. Type-ahead reduces cognitive load and can assist the user in building useful search queries quickly.
+* In global search and on search results pages where predictive text can help the user find relevant content. Type-ahead reduces cognitive load and can assist the user in building useful search queries quickly.
 * To allow the user to filter a long list of search results. 
 * In mobile search UIs where typing a query on a small, hand-held keyboard can be difficult.
 
