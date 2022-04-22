@@ -14,13 +14,13 @@ anchors:
 
 ## Status 
 
-The Wizard pattern is now deprecated and the Design System Team is in the process of replacing it with patterns and guidance that will roughly adhere to the following:
+The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and the Design System Team is in the process of replacing it with patterns and guidance that will roughly adhere to the following:
 
 * [Content: Writing questions for forms](https://service-manual.nhs.uk/content/how-to-write-good-questions-for-forms/get-the-questions-into-order)
 * [Pattern: Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)
 * [Principle: One thing per page](https://www.gov.uk/service-manual/design/form-structure#start-with-one-thing-per-page)
 
-You should not create any new instances of this pattern and should instead speak with the Design System Council or CollabCycle team who can direct you.
+You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you.
 
 ## Purpose
 

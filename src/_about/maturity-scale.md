@@ -36,12 +36,12 @@ Components and patterns start out as proposed, are filed in Github as [users of 
 
 The full maturity scale goes in this order:
 
-1. [Proposed](#proposed)
-2. [Candidate](#candidate)
-3. [Available](#available)
-4. [Deployed](#deployed)
-5. [Best Practice](#best-practice)
-6. [Deprecated](#deprecated)
+1. [Proposed](#dont-use-proposed)
+2. [Candidate](#use-with-caution-candidate)
+3. [Available](#use-with-caution-available)
+4. [Deployed](#use-deployed)
+5. [Best Practice](#use-best-practice)
+6. [Deprecated](#dont-use-deprecated)
 
 ## Definitions
 

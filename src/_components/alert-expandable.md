@@ -1,18 +1,20 @@
 ---
-layout: default
-sub_section: Alert boxes
-title: Mobile friendly expandable alert
+layout: component
+title: Alert - Expandable
+github-title: va-alert-expandable
+intro-text: "Mobile friendly expandable alerts combine the Additional Info component within Background Color Only alert color schemes, and includes an icon."
+status: use-with-caution-candidate
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
+  - anchor: Research
 ---
+
 Suggested by: Leyda Hughes, VSA Facilities Team
 
-# Mobile friendly expandable alert
-
-To be used When an alert box is too visually prominent and additional information needs to be communicated without leaving the page.
-
-## Description
-Mobile friendly expandable alerts combine the Additional Info component within Background Color Only alert color schemes, and includes an icon. 
-
-### Example:
+## Example
 
 ![image](https://user-images.githubusercontent.com/4960080/127147819-12d07cf2-b357-4058-81d5-56f0caf764a2.png)
 
@@ -20,17 +22,21 @@ Mobile friendly expandable alerts combine the Additional Info component within B
 
 [UXPin design specs](https://preview.uxpin.com/0a5eaacdf411fde0cb3abf4932010c29fbccb7de#/pages/138515145/simulate/sitemap?mode=i)
 
-### Code reference:
+## Usage
+
+To be used when an alert box is too visually prominent and additional information needs to be communicated without leaving the page.
+
+## Code usage
 
 [Vet Center expandable alert code](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/static-pages/shared/ExpandableOperatingStatus.jsx)
 
-### Accessibility requirements:
+## Accessibility considerations
 
 Icon: Must provide alternative text (use sr-only text or an aria-label) so screen readers have an equivalent understanding of the purpose/nature of the message
 
 Heading: e.g. "Facility closed" should be one heading level below its parent
 
-## Research findings 
+## Research
 
 ### Medical copay enhancement tool usability - July 2021
 

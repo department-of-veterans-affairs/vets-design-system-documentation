@@ -2,7 +2,7 @@
 layout: component
 title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
-draft: True
+research-title: Links
 status: use-deployed
 anchors:
   - anchor: Examples

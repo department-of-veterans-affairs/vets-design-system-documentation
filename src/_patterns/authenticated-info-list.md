@@ -1,14 +1,22 @@
 ---
-layout: default
-title: Authenticated info list pattern 
+layout: pattern
+title: Authenticated info list
+intro-text: "This pattern helps users quickly see a list of items related to their own personal information, as well as quickly navigate to answers to the questions they might have."
+status: use-with-caution-available
+anchors:
+  - anchor: Purpose
+  - anchor: Example
+  - anchor: Layout
+  - anchor: Usage
+  - anchor: Accessibility considerations
+  - anchor: Research
 ---
 
 Suggested by: Shawna Hein, Kevin Stachura, VSA
 
-# Authenticated info list pattern
-This pattern helps users quickly see a list of items related to their own personal information, as well as quickly navigate to answers to the questions they might have.
 
 ## Purpose
+
 The purpose of this pattern is:
 
 1. To create an easily scannable list / group of a user's related items
@@ -25,21 +33,23 @@ The purpose of this pattern is:
 2. **User's list of items.** A group of related (and relevant) content items for the user to review.
 3. **Additional information.** Relevant but potentially tertiary information for the user. Not part of the user's list of items. The 'on this page' component will link to these items. 
 
-## Desktop designs
+## Layout
 
-### Typical layout
+### Desktop 
+
+#### Typical layout
 
 ![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-first-mock-3.jpeg)
 
-### Layout with consolidated additional information (FAQs section)
+#### Layout with consolidated additional information (FAQs section)
 
 ![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-consolidated-faq-3.jpeg)
 
-## Mobile designs
+### Mobile
 
 ![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-mobile-3.jpeg)
 
-### UX behavior
+### Usage
 
 You should use this pattern if you're designing an experience where a Veteran is viewing a list of items relevant to them. For example, a list of the claims they have in process, a list of their disability ratings, or a list of the medical devices they have ordered.
 
