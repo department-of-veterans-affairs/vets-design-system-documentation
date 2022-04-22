@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-04-09T01:10:25",
+  "timestamp": "2022-04-22T14:32:00",
   "compiler": {
     "name": "@stencil/core",
     "version": "2.14.0",
@@ -1303,6 +1303,190 @@
       "dependencyGraph": {}
     },
     {
+      "filePath": "./src/components/va-number-input/va-number-input.tsx",
+      "encapsulation": "shadow",
+      "tag": "va-number-input",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "enableAnalytics",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "enable-analytics",
+          "reflectToAttr": false,
+          "docs": "Emit component-library-analytics events on the blur event.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "mutable": false,
+          "attr": "error",
+          "reflectToAttr": false,
+          "docs": "The error message to render.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "inputmode",
+          "type": "\"decimal\" | \"numeric\"",
+          "mutable": false,
+          "attr": "inputmode",
+          "reflectToAttr": false,
+          "docs": "The inputmode attribute.",
+          "docsTags": [],
+          "values": [
+            {
+              "value": "decimal",
+              "type": "string"
+            },
+            {
+              "value": "numeric",
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "The label for the text input.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "max",
+          "type": "number | string",
+          "mutable": false,
+          "attr": "max",
+          "reflectToAttr": false,
+          "docs": "Maximum number value\nThe max attribute specifies the maximum value for an `<input>` element.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "min",
+          "type": "number | string",
+          "mutable": false,
+          "attr": "min",
+          "reflectToAttr": false,
+          "docs": "Minimum number value\nThe min attribute specifies the minimum value for an `<input>` element.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "mutable": false,
+          "attr": "name",
+          "reflectToAttr": false,
+          "docs": "The name to pass to the input element.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "required",
+          "reflectToAttr": false,
+          "docs": "Set the input to required and render the (Required) text.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": true,
+          "attr": "value",
+          "reflectToAttr": true,
+          "docs": "The value for the input.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "component-library-analytics",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "The event used to track usage of the component. This is emitted when the\ninput is blurred and enableAnalytics is true.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
       "filePath": "./src/components/va-on-this-page/va-on-this-page.tsx",
       "encapsulation": "shadow",
       "tag": "va-on-this-page",
@@ -1609,7 +1793,7 @@
           "mutable": false,
           "attr": "href",
           "reflectToAttr": false,
-          "docs": "`href` attribute for the `&lt;a&gt;` tag.",
+          "docs": "`href` attribute for the anchor tag.",
           "docsTags": [],
           "values": [
             {
@@ -1895,6 +2079,138 @@
           "cancelable": true,
           "composed": true,
           "docs": "The event emitted when the selected option value changes",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/va-search/va-search.tsx",
+      "encapsulation": "shadow",
+      "tag": "va-search",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "buttonText",
+          "type": "string",
+          "mutable": false,
+          "attr": "button-text",
+          "reflectToAttr": false,
+          "docs": "Text displayed inside the search button",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "inputValue",
+          "type": "string",
+          "mutable": false,
+          "attr": "input-value",
+          "reflectToAttr": false,
+          "docs": "Initial value of input",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": true,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "The aria-label for search input and button. Default is 'Search'.",
+          "docsTags": [],
+          "default": "'Search'",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "buttonClickEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search button is clicked",
+          "docsTags": []
+        },
+        {
+          "event": "buttonFocusEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search button gains focus",
+          "docsTags": []
+        },
+        {
+          "event": "buttonKeyDownEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search button is focused and a key is pressed",
+          "docsTags": []
+        },
+        {
+          "event": "inputBlurEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search input loses focus",
+          "docsTags": []
+        },
+        {
+          "event": "inputChangeEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search input loses focus after its value was changed",
+          "docsTags": []
+        },
+        {
+          "event": "inputFocusEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search input gains focus",
+          "docsTags": []
+        },
+        {
+          "event": "inputKeyDownEvent",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Fires when the search input is focused and a key is pressed",
           "docsTags": []
         }
       ],
@@ -2515,6 +2831,23 @@
             }
           ],
           "optional": true,
+          "required": false
+        },
+        {
+          "name": "status",
+          "type": "\"success\"",
+          "mutable": false,
+          "attr": "status",
+          "reflectToAttr": false,
+          "docs": "Adds styling based on status value",
+          "docsTags": [],
+          "values": [
+            {
+              "value": "success",
+              "type": "string"
+            }
+          ],
+          "optional": false,
           "required": false
         },
         {
