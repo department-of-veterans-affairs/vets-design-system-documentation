@@ -63,7 +63,7 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 A select box allows users to select one option from a list.
 
-{% include storybook-preview.html story="components-va-select--default" %}
+{% include storybook-preview.html story="components-va-select--default" link_text="va-select" %}
 
 ### Usage
 
