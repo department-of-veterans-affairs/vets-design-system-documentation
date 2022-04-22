@@ -111,7 +111,9 @@ Your documentation should include most of what you put in your experimental requ
 - Purpose - Why you needed to create a new component or pattern
 - Description of component or pattern
 - Artifacts (mockups, wireframes, or prototypes)
-  - If you need to embed images, videos, or other assets in your markdown file, add them to the assets folder [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/images/experimental-design).
+  - If you need to embed images, videos, or other assets in your markdown file, add them to the assets folder [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/images/experimental-design). 
+  - Be careful to add them directly to the folder rather than dragging and dropping into the Github markdown editor as while that creates a link it does not add the asset to the design system. 
+  - When including an image in your page please [create alt text](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) 
 - Code location, if available
 - Existing components used (if creating a new pattern)
 - Usage and accessibility guidance (if available)
