@@ -29,9 +29,19 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 ### Text input
 
+#### Default
+
 {% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
 
+#### Success
+
 {% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input" %}
+
+### Number input
+
+* Number input always has the type of `number` and provides a `min` and `max` attribute to set a range on the component. 
+
+{% include storybook-preview.html story="components-va-number-input--default" link_text="va-number-input" %}
 
 ### Text area
 
