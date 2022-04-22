@@ -3,7 +3,9 @@ layout: component
 sub_section: accordions
 title: Accordion
 intro-text: "Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select."
+research-title: Accordions
 status: use-best-practice
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2550D408-704E-4AD4-A726-87607DB7E42B
 web-component: va-accordion
 anchors:
   - anchor: Examples
@@ -18,21 +20,21 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-accordion--default" %}
+{% include storybook-preview.html story="components-va-accordion--default" link_text="va-accordion" %}
 
 ### Bordered
 
-{% include storybook-preview.html story="components-va-accordion--bordered" %}
+{% include storybook-preview.html story="components-va-accordion--bordered" link_text="va-accordion" %}
 
 ### Single Select
 
 * Adding an `open-single` prop on the `va-accordion` component will allow the user to only open one accordion at a time.
 
-{% include storybook-preview.html story="components-va-accordion--single-select" %}
+{% include storybook-preview.html story="components-va-accordion--single-select" link_text="va-accordion" %}
 
 ### Subheader
 
-{% include storybook-preview.html story="components-va-accordion--subheader" %}
+{% include storybook-preview.html story="components-va-accordion--subheader" link_text="va-accordion" %}
 
 ## Usage
 
@@ -49,9 +51,9 @@ Consider another solution if:
 
 * Users need to see most or all of the information on the page at one time. Use well-formatted text with discriptive headings instead.
 * There is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
-* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info](https://design.va.gov/components/additional-info) component instead to leverage show/hide functionality. 
+* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality. 
 
-See [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content) for more accordion usage guidelines.
+See [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content) for more accordion usage guidelines.
 
 ### Behavior
 
@@ -76,5 +78,5 @@ See [Expandable content](https://design.va.gov/patterns/content-presentation#exp
 
 ## Related
 
-* [Additional info](https://design.va.gov/components/additional-info)
-* [Expandable content](https://design.va.gov/patterns/content-presentation#expandable-content)
+* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content)

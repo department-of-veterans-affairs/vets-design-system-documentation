@@ -14,7 +14,7 @@
 
     {% include header.html %}
     {% include _mobile-nav.html %}
-    <div>
+    <div> <!-- random div? -->
 
     {% include _site-top-nav.html %}
 
@@ -38,7 +38,6 @@
               {{ page.intro-text }}
             </div>
             {% endif %}
-            {% include component-resource-links.html %}
             {% if page.anchors %}
               {% include _site-on-this-page.html %}
             {% endif %}
@@ -56,5 +55,3 @@
   <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
   </body>
 </html>
-
-

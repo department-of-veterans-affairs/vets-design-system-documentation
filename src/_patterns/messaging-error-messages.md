@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: pattern
 title: Error message style guide
+intro-text: "Details the structure, style, and tone for error message content."
+status: use-deployed
 anchors:
   - anchor: Structure
   - anchor: Content within the description
@@ -8,11 +10,7 @@ anchors:
   - anchor: Additional guidance
 ---
 
-# Error message style guide 
-
 *Note: The guidelines below don't apply to inline error messages in form fields (for example, "Please enter a valid Social Security number."). Inline form field error messages will be handled in a separate error guide.* 
-
-{% include _site-on-this-page.html %}
 
 ## Structure
 

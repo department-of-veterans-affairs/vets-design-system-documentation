@@ -29,7 +29,9 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 ### Text input
 
-{% include storybook-preview.html story="components-va-text-input--default" %}
+{% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
+
+{% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input" %}
 
 ### Text area
 
@@ -63,7 +65,7 @@ Text inputs allow people to enter any type of text unless otherwise restricted.
 
 A select box allows users to select one option from a list.
 
-{% include storybook-preview.html story="components-va-select--default" %}
+{% include storybook-preview.html story="components-va-select--default" link_text="va-select" %}
 
 ### Usage
 

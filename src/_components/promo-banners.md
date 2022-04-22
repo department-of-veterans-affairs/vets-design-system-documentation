@@ -3,6 +3,7 @@ layout: component
 title: "Promo Banner"
 status: use-deployed
 intro-text: "A promo banner is fixed content at the bottom of the viewport used for dismissible announcements such as new tools, news, etc."
+research-title: "Promo banners"
 anchors:
   - anchor: Examples
   - anchor: Usage

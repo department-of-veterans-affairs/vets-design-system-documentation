@@ -108,7 +108,7 @@ Once merged, the markdown you update will automatically be migrated to the exper
 ### 5. Validate your design
 In order to get your component or pattern moved from the Experimental section to the official design system, you or your team need to do research or usability testing to validate. When you initially submit your design to the experimental system, the council is happy to provide thoughts and feedback on your validation approach. 
 
-Once you have data from your research, write the results of the research on your experimental component page. [An example can be seen here](https://design.va.gov/experimental-design/expandable-alert).
+Once you have data from your research, write the results of the research on your experimental component page. [An example can be seen here]({{ site.baseurl }}/experimental-design/expandable-alert).
 
 If an experimental component or pattern sits on design.va.gov for 6 months with no validation documented, it will be removed by the design system team.
 

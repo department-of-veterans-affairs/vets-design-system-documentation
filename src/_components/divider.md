@@ -1,6 +1,7 @@
 ---
 layout: component
 title: Divider
+research-title: "Horizontal rules"
 status: use-best-practice
 intro-text: "Dividers are used sparingly to separate significant sections of content"
 ---

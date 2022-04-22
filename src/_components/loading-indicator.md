@@ -1,8 +1,9 @@
 ---
 layout: component
 title: "Loading indicator"
-status: use-best-practice
 intro-text: "A loading indicator provides a clue to ongoing activity when the site needs to load additional content."
+research-title: "Loading indicators"
+status: use-best-practice
 web-component: va-loading-indicator
 ---
 

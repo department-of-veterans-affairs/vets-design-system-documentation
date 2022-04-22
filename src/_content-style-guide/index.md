@@ -11,13 +11,13 @@ This is our house style guide for the VA.gov website. It's shared across VA admi
 </div>
 
 
-See our [content principles](https://design.va.gov/content-style-guide/content-principles) for the house voice and tone, and the foundation for how we practice language for and with Veterans in mind.
+See our [content principles]({{ site.baseurl }}/content-style-guide/content-principles) for the house voice and tone, and the foundation for how we practice language for and with Veterans in mind.
 
 ## What you'll find in this style guide
 
 We've organized the style guide into searchable topics, so you can go directly to the section you need guidance on. This guide covers common issues on VA.gov. It does not cover basic writing mechanics and grammar. (We assume you know those already.)
 
-We follow plain language and web best practices. Where we vary from standard practices, we call them out in the [word list](https://design.va.gov/content-style-guide/word-list) or as a topic section.
+We follow plain language and web best practices. Where we vary from standard practices, we call them out in the [word list]({{ site.baseurl }}/content-style-guide/word-list) or as a topic section.
 
 **For issues not covered in this style guide, refer to:**
 

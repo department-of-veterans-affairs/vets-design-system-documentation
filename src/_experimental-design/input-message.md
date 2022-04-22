@@ -53,19 +53,19 @@ This message pattern is a mobile friendly, in-line way to communicate informatio
 
 ### When to consider something else
 
-If you need to tell the Veteran they've missed a required field on an application, or they've entered data in the wrong format, use the [current error pattern](https://design.va.gov/storybook/?path=/docs/components-radiobuttons--error) instead.
+If you need to tell the Veteran they've missed a required field on an application, or they've entered data in the wrong format, use the [current error pattern]({{ site.baseurl }}/storybook/?path=/docs/components-radiobuttons--error) instead.
 
 ### How to use Input Messages
 
 - Keep message content short.
-- Use the [feedback icons](https://design.va.gov/design/icons#feedback) from the design system.
+- Use the [feedback icons]({{ site.baseurl }}/design/icons#feedback) from the design system.
 - Use the success, warning, error states on forms that don't require the user to click a button to submit the form.
 
 ### Other input message styles
 
 #### Error messages 
 
-- When a user is filling out an online application, use the [current error pattern](https://design.va.gov/storybook/?path=/docs/components-radiobuttons--error) when a user has 
+- When a user is filling out an online application, use the [current error pattern]({{ site.baseurl }}/storybook/?path=/docs/components-radiobuttons--error) when a user has 
   - missed a required field
   - entered data incorrectly
 
