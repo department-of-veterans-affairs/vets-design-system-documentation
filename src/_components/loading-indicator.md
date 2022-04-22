@@ -27,6 +27,7 @@ web-component: va-loading-indicator
 
 ## Accessibility considerations
 
-* 
+* The loading indicator component is used to notify user’s that the page content is loading. W3C WAI-ARIA `aria-live="polite"`, `aria-label` and `aria-valuetext` are used to ensure screen reader users are also provided the same information.
+* Make sure that the loading indicator message is clear and concise.
 
 {% include component-docs.html component_name=page.web-component %}
