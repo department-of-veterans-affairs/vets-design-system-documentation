@@ -1,48 +1,57 @@
 ---
-
-layout: default
-title: Action links 
+layout: component
+title: Action link 
+github-title: va-action-link
+intro-text: "Action links guide users to a new page to take an action or to start an online tool or digital service."
+status: use-deployed
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Accessibility considerations
 ---
 
-Suggested by: The Design System Team, VSP
+## Examples
 
+### Primary
 
-# Action links
-Action links guide users to a new page to take an action or to start an online tool or digital service. 
-
-**Primary**
 {% include storybook-preview.html height="50px" story="components-action-link--primary" %}
 
-**Secondary**
+### Secondary
+
 {% include storybook-preview.html height="50px" story="components-action-link--secondary" %}
 
-**Reverse**
+### Reverse
+
 {% include storybook-preview.html height="67px" story="components-action-link--reverse" %}
 
-## Usability 
-Action Links will be replacing green primary buttons that take users to another page. For example: *Apply for education benefits* 
+## Usage
 
-### When to use Action Links
-The action link is an  eye-catching link to start a digital service. An action link entices users to take action. Example: Starting a benefit application 
+Action Links replace green primary buttons that take users to another page. For example: *Apply for education benefits* 
 
-**Note:** Action links will be replacing green primary buttons that link to another page.
+### When to use an Action Link
+
+The action link is an eye-catching link to start a digital service. An action link entices users to take action. Example: Starting a benefit application 
 
 - Use a primary (green) Action Link for the primary call to action on a page or the start of a digital service. Use only one primary Action link per page.
 - Use a secondary (blue) Action Link when there are multiple Action Links on a page or if the actions are of equal hierarchy. 
 - Use a reverse (white) Action Link for a dark background.
 
 ### When to consider something else
+
 - Don’t use an Action Link for these actions: “sign up,” “submit” or “sign out.” For these actions, use [buttons]({{ site.baseurl }}/components/button) instead. 
 - Don’t use Action Links to navigate between screens of an online application or tool. Use default and secondary buttons instead.
 - Don’t use Action Links link to go to another page or site that isn’t taking users to start an action. See the “Other link styles” section below for other link options. 
 
 ### How to use Action Links
+
 - Keep Action Link content short. Start with a verb. For example: “*Apply for health care benefits*” or “*Register for care*”
 - The icon on the left of the Action Link can be slightly out of the grid to grab the user’s attention.
 - Primary (green) and secondary (blue) Action Links can exist on the same page, but we don’t recommend placing them side by side. 
 
 ### Other link styles
+
 #### Active links 
+
 - For links that have less hierarchy than an Action Link, we recommend using an Active Link. Active Links can be accompanied by a right-facing chevron icon for more emphasis. 
 - Active text link style: Source Sans Pro (Bold),  underlined, 16px, #004795
 
@@ -51,6 +60,7 @@ For example:
 ![active link style]({{site.baseurl}}/images/active-link-style-big.png) 
 
 #### Default links 
+
 - For links that need even less hierarchy than an Action Link or Active Link, we recommend using a Default Link.
 - Default text link style: Source Sans Pro (Regular),  underlined, 16px, #004795)
 
@@ -60,6 +70,7 @@ For example:
 - All text links should be underlined. This is especially important for low-vision users. (Exception: [side nav]({{ site.baseurl }}/components/sidenav) shouldn’t be underlined.)
 
 ## Accessibility considerations
+
 - Action Links must have an `href` attribute. 
 - Action links should only use an anchor tag `<a>`. The `<a>` element, or anchor element, is used to create a hyperlink to another webpage or another location within the same webpage. 
 - For external links or links that open up to a new tab, make sure to add an aria label to let the user know what sort of link they’re clicking on.

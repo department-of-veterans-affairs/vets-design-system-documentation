@@ -2,7 +2,7 @@
 layout: component
 title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
-draft: True
+research-title: Links
 status: use-deployed
 anchors:
   - anchor: Examples
@@ -35,7 +35,7 @@ Use a link when you want to:
 ### When to consider something else
 
 - Use a [Button](button) when you want to make a state change or submit a form. Buttons **do things**, links **go places**.
-- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links]({{ site.baseurl }}/experimental-design/action_links).
+- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use [Action links]({{ site.baseurl }}/components/action-link).
 - When you want to make a long page of content with two or more H2s easier to navigate, use [On this page links](on-this-page).
 
 ### How to use Links
@@ -103,7 +103,7 @@ fa-youtube icon + 8px margin + YouTube channel name <br/>
 
 ## Related 
 
-- [Action links]({{ site.baseurl }}/experimental-design/action_links)
+- [Action links]({{ site.baseurl }}/components/action-link)
 - [Button]({{ site.baseurl }}/components/button)
 - [Links (Content style guide)]({{ site.baseurl }}/content-style-guide/links)
 - [On this page links]({{ site.baseurl }}/components/on-this-page)

@@ -62,9 +62,6 @@ collections:
   utilities:
     output: true
     permalink: /:collection/:title
-  experimental-design:
-    output: true
-    permalink: /:collection/:title
 
 includes:
   - /components/code

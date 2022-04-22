@@ -132,7 +132,7 @@ title: Design System Backlog
 
 - [Update the Additional Info component to be used for Learn More expandable sections in forms](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/246)
 
-- [[IMPROVEMENT\]: Address Block - CONSIDER adding a component and structured data](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/243)
+- [IMPROVEMENT: Address Block - CONSIDER adding a component and structured data](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/243)
 
 - [Print styling for confirmation page](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/197)
 

@@ -92,7 +92,7 @@ The button or action link can be followed by item 6, Additional Benefit-Eligibil
 
 [View the button component]({{ site.baseurl }}/components/button).
 
-[View the action link component]({{ site.baseurl }}/experimental-design/action_links).
+[View the action link component]({{ site.baseurl }}/components/action-link).
 
 **Accessibility considerations** 
 
@@ -313,7 +313,7 @@ Use a button for a clickable action on the page. Use the action link if you are 
 
 [View the button component]({{ site.baseurl }}/components/button).
 
-[View the action link component]({{ site.baseurl }}/experimental-design/action_links).
+[View the action link component]({{ site.baseurl }}/components/action-link).
 
 
 **Disability compensation:**

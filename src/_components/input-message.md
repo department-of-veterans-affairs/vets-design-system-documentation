@@ -1,15 +1,20 @@
 ---
-layout: default
+layout: component
 title: Input message
-
+github-title: va-input-message
+intro-text: "Provides helpful, in-context information about an input, either before or immediately after a Veteran interacts with an input (e.g. on a form input that auto-saves)."
+status: use-with-caution-candidate
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Accessibility considerations
+  - anchor: Research
 ---
 
 Suggested by: Liz Lantz, VSA Authenticated Experience Team
 
-
-# Input message
-
-This input message is variation of our validation message pattern. It provides helpful, in-context information about an input, either before or immediately after a Veteran interacts with an input (e.g. on a form input that auto-saves). 
+## Examples
 
 **Informational**
 
@@ -27,7 +32,7 @@ This input message is variation of our validation message pattern. It provides h
 
 ![image]({{site.baseurl}}/images/experimental-design/input-message-error.png)
 
-### Examples
+### Mock-ups
 
 - [Mock-up demonstrating an update to existing settings](https://preview.uxpin.com/51ca6ecd7ddaf2ceaf75f94e2b2ccbed2a193f6d#/pages/141106818/simulate/sitemap?mode=i). First fieldset is interactive.
 - [Mock-up demonstrating use case of a Veteran who has never updated their settings](https://preview.uxpin.com/51ca6ecd7ddaf2ceaf75f94e2b2ccbed2a193f6d#/pages/140948867/simulate/sitemap?mode=i).
@@ -36,11 +41,7 @@ This input message is variation of our validation message pattern. It provides h
 
 - [UXPin design specs](https://preview.uxpin.com/ed1067b8f73e8f3501bc476bb03bb4b46a261a39#/pages//simulate/no-panels)
 
-### Code reference
-
-[Radio inputs for notification settings](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/personalization/profile/components/notification-settings/NotificationRadioButtons.jsx)
-
-## Usability 
+## Usage
 
 ### When to use this variation
 
@@ -69,13 +70,17 @@ If you need to tell the Veteran they've missed a required field on an applicatio
   - missed a required field
   - entered data incorrectly
 
+### Code usage
+
+[Radio inputs for notification settings](https://github.com/department-of-veterans-affairs/vets-website/blob/master/src/applications/personalization/profile/components/notification-settings/NotificationRadioButtons.jsx)
+
 ## Accessibility considerations
 
 - Icon needs to have alternative text (use sr-only text or an aria-label) so screen readers have an equivalent understanding of the purpose/nature of the message.
 
 - When the message changes after a user interacts with an input, use `aria-live="polite"` to announce the change.
 
-## Research findings 
+## Research
 
 - No research conducted as of 8/16/21.
 - Internal usability study with colleagues who are also Veterans planned for late Aug/early Sept 2021.
