@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /foundation/utilities/flexbox
+has-parent: /foundation/utilities
 title: Flexbox
 anchors:
   - anchor: Flex

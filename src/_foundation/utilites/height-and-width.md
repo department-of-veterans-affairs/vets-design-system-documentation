@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /foundation/utilities/height-and-width
+has-parent: /foundation/utilities
 title: Height and width
 anchors:
   - anchor: Height

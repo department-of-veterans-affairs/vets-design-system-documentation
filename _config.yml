@@ -47,19 +47,13 @@ collections:
   content-style-guide:
     output: true
     permalink: /:collection/:title
-  design:
+  foundation:
     output: true
     permalink: /:collection/:title
   components:
     output: true
     permalink: /:collection/:title
   patterns:
-    output: true
-    permalink: /:collection/:title
-  layout:
-    output: true
-    permalink: /:collection/:title
-  utilities:
     output: true
     permalink: /:collection/:title
 

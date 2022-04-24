@@ -1,14 +1,34 @@
 ---
 layout: default
-index: true
+permalink: /foundation/utilities
 title: Utilities
+sub-pages:
+  - sub-page: Background color
+  - sub-page: Border
+  - sub-page: Color
+  - sub-page: Display
+  - sub-page: Flexbox
+  - sub-page: Font family
+  - sub-page: Font size 
+  - sub-page: Font style
+  - sub-page: Font weight
+  - sub-page: Height and width
+  - sub-page: Line height
+  - sub-page: Margins
+  - sub-page: Measure
+  - sub-page: Padding
+  - sub-page: Text align
+  - sub-page: Text decoration
+  - sub-page: Visibility
 ---
 
 # Utilities
 
 <div class="va-introtext">
-Utilities are helpful, usually single-property classes that can provide more flexibility into a design system at a high specificity. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
+  Utilities are helpful, usually single-property classes that can provide more flexibility into a design system at a high specificity. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
 </div>.
+
+{% include _site-in-this-section.html %}
 
 ## Using in components
 

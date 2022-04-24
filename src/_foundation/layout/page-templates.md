@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Page templates
+permalink: /foundation/layout/page-layouts
+has-parent: /foundation/layout
+title: Page layouts
 anchors:
   - anchor: Guidance
   - anchor: Two columns, content on right

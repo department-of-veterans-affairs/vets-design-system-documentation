@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /foundation/layout/float-grid
+has-parent: /foundation/layout
 title: Float grid
 anchors:
   - anchor: Grid examples

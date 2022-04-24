@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /foundation/utilities/border
+has-parent: /foundation/utilities
 title: Border
 anchors:
   - anchor: Border shorthand

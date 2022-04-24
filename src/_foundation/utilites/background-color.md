@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /foundation/utilities/background-color
+has-parent: /foundation/utilities
 title: Background color
 ---
 

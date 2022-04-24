@@ -1,5 +1,7 @@
 ---
 layout: default
+permalink: /foundation/utilities/color
+has-parent: /foundation/utilities
 title: Color
 ---
 
