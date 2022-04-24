@@ -1,0 +1,16 @@
+{% if page.sub-pages %}
+<nav aria-labelledby="on-this-page" class="site-on-this-page">
+  <dl class="site-on-this-page__list">
+    <dt id="on-this-page" class="site-on-this-page__title">
+      In this section
+    </dt>
+  {% for item in page.sub-pages%}
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="{{ page.url }}/{{ item.sub-page | slugify }}">
+        {{ item.sub-page }}
+      </a>
+    </dd>
+  {% endfor %}
+  </dl>
+</nav>
+{% endif %}
