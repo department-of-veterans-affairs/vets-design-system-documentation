@@ -6,6 +6,7 @@ intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
   - sub-page: All or none of the above
   - sub-page: Applicant information
+  - sub-page: Confirmation
   - sub-page: Contact information
   - sub-page: Dates
   - sub-page: Direct deposit 
