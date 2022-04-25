@@ -1,6 +1,7 @@
 ---
 layout: component
 title: Search Input
+draft: true
 intro-text: "Search Input......"
 status: use-deployed
 anchors:
