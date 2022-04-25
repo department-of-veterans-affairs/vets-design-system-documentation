@@ -1,11 +1,13 @@
 ---
 layout: pattern
-title: Form confirmation page
+permalink: /patterns/forms/confirmation
+has-parent: /patterns/forms/
+title: Confirmation
 status: use-deployed
 intro-text: "The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim."
 anchors:
   - anchor: Example
-  - anchor: Building blocks
+  - anchor: Structure
   - anchor: Related
 ---
 
@@ -24,7 +26,7 @@ The form confirmation page consists of:
 5. Action link  
 6. Helpful content  
 
-## Building blocks
+## Structure
 
 ### H1
 

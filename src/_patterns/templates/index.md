@@ -11,4 +11,7 @@ sub-pages:
 
 {% include _site-in-this-section.html %}
 
-Also available is the [forms review page template]({{ site.baseurl }}/patterns/forms/review) and code details in [page layouts]({{ site.baseurl }}/foundation/layouts/page-layouts).
+Also available are the:
+* [Forms review page template]({{ site.baseurl }}/patterns/forms/review) 
+* [Forms confirmation page template]({{ site.baseurl }}/patterns/forms/confirmation) 
+* Code details in [page layouts]({{ site.baseurl }}/foundation/layouts/page-layouts)

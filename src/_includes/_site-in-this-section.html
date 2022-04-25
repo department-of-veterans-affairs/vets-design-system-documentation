@@ -1,16 +1,16 @@
 {% if page.sub-pages %}
-<nav aria-labelledby="on-this-page" class="site-on-this-page">
-  <dl class="site-on-this-page__list">
-    <dt id="on-this-page" class="site-on-this-page__title">
-      In this section
-    </dt>
+<nav aria-labelledby="in-this-section" class="site-in-this-section">
+  <h2 id="on-this-page" class="site-in-this-section__title">
+    In this section
+  </h2>
+  <ul class="site-in-this-section__list">
   {% for item in page.sub-pages%}
-    <dd role="definition" class="site-on-this-page__definition">
-      <a class="site-on-this-page__link" href="{{ page.url }}/{{ item.sub-page | slugify }}">
+    <dd role="definition" class="site-in-this-section__definition">
+      <a class="site-in-this-section__link" href="{{ page.url }}/{{ item.sub-page | slugify }}">
         {{ item.sub-page }}
       </a>
     </dd>
   {% endfor %}
-  </dl>
+  </ul>
 </nav>
 {% endif %}
