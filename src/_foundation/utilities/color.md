@@ -1,29 +1,31 @@
 ---
 layout: default
-permalink: /foundation/utilities/background-color
-has-parent: /foundation/utilities
-title: Background color
+permalink: /foundation/utilities/color
+has-parent: /foundation/utilities/
+title: Color
 ---
 
-# Background color
+# Color
 
 <div class="va-introtext">
-Change the background color of an element
+Change the color of text and SVGs (using <code>fill: currentColor</code>).
 </div>
+
+**Note:** Not all of these colors are placed in accessible color combinations.
 
 <div class="site-showcase">
   {%
     include _showcase-header.html
-    heading_level=2
-    header="Background color"
+    heading_level=3
+    header="Color"
     responsive=false
-    css_property="background-color"
+    css_property="color"
   %}
 
   <h4>Base colors</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.primary %}
-      {% include _background-color-example.html
+      {% include color-example.html
         name=item.name
         hex=item.hex
       %}
@@ -33,7 +35,7 @@ Change the background color of an element
   <h4>Grayscale</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.grayscale %}
-      {% include _background-color-example.html
+      {% include color-example.html
         name=item.name
         hex=item.hex
       %}
@@ -43,7 +45,7 @@ Change the background color of an element
   <h4>Tertiary colors</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.tertiary %}
-      {% include _background-color-example.html
+      {% include color-example.html
         name=item.name
         hex=item.hex
       %}
@@ -53,10 +55,11 @@ Change the background color of an element
   <h4>Hub colors</h4>
   <div class="vads-l-row vads-u-flex-direction--column">
     {% for item in site.data.colors.hub %}
-      {% include _background-color-example.html
+      {% include color-example.html
         name=item.name
         hex=item.hex
       %}
     {% endfor %}
   </div>
+
 </div>

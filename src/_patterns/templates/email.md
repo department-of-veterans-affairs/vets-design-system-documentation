@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/templates/email
-has-parent: /patterns/templates
+has-parent: /patterns/templates/
 title: Email
 status: use-deployed
 intro-text: "The email template is used to communicate with Veterans through email."

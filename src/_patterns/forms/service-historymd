@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/service-history
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Service history
 intro-text: "Follow this pattern to ask a user about their service/military history."
 status: use-deployed

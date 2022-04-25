@@ -65,11 +65,11 @@ exclude:
   - tmp_remote_assets
   - .sass-cache
   - .ruby_version
-  - _design/html
+  - _foundation/html
   - _components/html
   - _patterns/html
-  - _layout/html
-  - _utilities/html
+  - _foundation/layout/html
+  - _foundation/utilities/html
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.

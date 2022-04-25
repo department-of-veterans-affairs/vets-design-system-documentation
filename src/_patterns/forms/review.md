@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/review
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Review
 intro-text: "Follow this pattern to help users review their information before submitting the form."
 status: use-deployed

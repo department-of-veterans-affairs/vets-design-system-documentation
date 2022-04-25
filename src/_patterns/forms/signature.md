@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/signature
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Signature
 intro-text: "Use this pattern on the review section of the form when you need a user to provide their signature as a statement of truth."
 status: use-deployed

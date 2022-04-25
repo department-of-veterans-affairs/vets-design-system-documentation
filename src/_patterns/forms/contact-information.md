@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/contact-information
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Contact information
 intro-text: "The current implementation of contact information on VA.gov forms."
 status: use-deployed

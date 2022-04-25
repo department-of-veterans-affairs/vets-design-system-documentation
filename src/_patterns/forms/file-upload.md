@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/file-upload
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: File upload
 intro-text: "Follow this pattern to help users select and upload a file."
 status: use-deployed

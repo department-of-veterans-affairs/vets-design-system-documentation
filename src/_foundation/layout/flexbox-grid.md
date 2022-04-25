@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /foundation/layout/flexbox-grid
-has-parent: /foundation/layout
+has-parent: /foundation/layout/
 title: Flexbox grid
 tags: Columns, Nesting grids, Layout grid
 anchors:

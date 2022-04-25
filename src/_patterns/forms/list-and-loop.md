@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/list-and-loop
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: List and loop
 intro-text: "List and loop is a pattern that appears in forms when we don't know how many responses to a question a user will provide."
 status: use-deployed
