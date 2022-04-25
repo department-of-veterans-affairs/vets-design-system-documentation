@@ -29,13 +29,16 @@ web-component: va-search-input
 ### When to use Search input with type-ahead
 
 * In the global header and on search results pages, only. Type-ahead reduces cognitive load and can assist the user in building useful search queries quickly. 
-* When adding the Search input with type-ahead to a search results page, match [this implementation](https://www.va.gov/search/).
 * To allow the user to filter a long list of search results. 
 * In mobile search UIs where typing a query on a small, hand-held keyboard can be difficult.
 
 ### When to consider something else
 
 * When free text input is allowed, do not use type-ahead in form fields where the user might assume they are limited to selecting a suggested term. Alternatively, provide a clear way for the user to add an entry if you do use type-ahead in a form field.
+
+### How to use Search input with type-ahead
+
+* When adding the Search input with type-ahead to a search results page, match [this implementation](https://www.va.gov/search/).
 
 ## Search behavior
 
