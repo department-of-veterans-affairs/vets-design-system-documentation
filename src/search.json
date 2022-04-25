@@ -5,7 +5,7 @@ layout: null
   {% for item in site.about %}
     {
       "title"    : "{{ item.title | strip_html | escape }}",
-      "section"  : "Documentation",
+      "section"  : "About",
       "url"      : "{{ site.baseurl }}{{ item.url }}",
       "category" : "{{item.categories | join: ', '}}",
       "tags"     : "{{ item.tags | join: ', ' }}",
@@ -15,11 +15,11 @@ layout: null
     },
   {% endfor %}
 
-  {% for item in site.design %}
+  {% for item in site.foundation %}
   {% unless item.layout == "iframe" %}
     {
       "title"    : "{{ item.title | strip_html | escape }}",
-      "section"  : "Design",
+      "section"  : "Foundation",
       "url"      : "{{ site.baseurl }}{{ item.url }}",
       "category" : "{{item.categories | join: ', '}}",
       "tags"     : "{{ item.tags | join: ', ' }}",
@@ -58,21 +58,6 @@ layout: null
     },
   {% endfor %}
 
-  {% for item in site.utilities %}
-  {% unless item.layout == "iframe" %}
-    {
-      "title"    : "{{ item.title | strip_html | escape }}",
-      "section"  : "Utilities",
-      "url"      : "{{ site.baseurl }}{{ item.url }}",
-      "category" : "{{item.categories | join: ', '}}",
-      "tags"     : "{{ item.tags | join: ', ' }}",
-      "date"     : "{{ item.date }}",
-      "description" : "{{item.description | strip_html | strip_newlines | escape }}"
-
-    },
-  {% endunless %}
-  {% endfor %}
-
   {% for item in site.patterns %}
   {% unless item.layout == "iframe" %}
     {
@@ -85,21 +70,6 @@ layout: null
       "description" : "{{item.description | strip_html | strip_newlines | escape }}"
 
     },
-  {% endunless %}
-  {% endfor %}
-
-  {% for item in site.layout %}
-  {% unless item.layout == "iframe" %}
-    {
-      "title"    : "{{ item.title | strip_html | escape }}",
-      "section"  : "Layout",
-      "url"      : "{{ site.baseurl }}{{ item.url }}",
-      "category" : "{{item.categories | join: ', '}}",
-      "tags"     : "{{ item.tags | join: ', ' }}",
-      "date"     : "{{ item.date }}",
-      "description" : "{{item.description | strip_html | strip_newlines | escape }}"
-
-    } {% unless forloop.last %},{% endunless %}
   {% endunless %}
   {% endfor %}
 ]
