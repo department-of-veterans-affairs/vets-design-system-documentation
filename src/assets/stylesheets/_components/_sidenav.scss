@@ -16,6 +16,7 @@
 
 .site-sidenav-list__link,
 .site-sidenav-list__link:visited {
+  position: relative;
   display: block;
   padding: $units-1 $units-2;
   text-decoration: none;
@@ -46,8 +47,13 @@
   }
 }
 
+.site-sidenav-list__handle {
+  position: absolute;
+  right: units(1);
+  top: 30%;
+}
+
 .site-sidenav-list__sub {
-  display: none;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
