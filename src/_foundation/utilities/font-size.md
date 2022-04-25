@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /foundation/utilities/font-size
-has-parent: /foundation/utilities
+has-parent: /foundation/utilities/
 title: Font size
 ---
 

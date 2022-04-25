@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/direct-deposit
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Direct deposit
 intro-text: "The current implementation for collecting direct deposit information on VA.gov forms."
 status: use-deployed

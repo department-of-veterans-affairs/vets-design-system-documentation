@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /foundation/utilities/line-height
-has-parent: /foundation/utilities
+has-parent: /foundation/utilities/
 title: Line height
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: pattern
 title: Forms
-permalink: /patterns/forms
+permalink: /patterns/forms/
 intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
   - sub-page: All or none of the above

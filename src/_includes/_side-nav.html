@@ -32,7 +32,7 @@
               <ul class="site-sidenav-list__sub">
                 {% for item in p.sub-pages%}
                 <li class="site-sidenav-list__sub-item">
-                  <a class="site-sidenav-list__sub__link" href="{{p.permalink }}/{{ item.sub-page | slugify }}">
+                  <a class="site-sidenav-list__sub__link" href="{{p.permalink }}{{ item.sub-page | slugify }}">
                     {{ item.sub-page }}
                   </a>
                 </li>
@@ -43,7 +43,7 @@
               <ul class="site-sidenav-list__sub">
                 {% for item in p.sub-pages%}
                 <li class="site-sidenav-list__sub-item">
-                  <a class="site-sidenav-list__sub__link" href="{{p.permalink }}/{{ item.sub-page | slugify }}">
+                  <a class="site-sidenav-list__sub__link" href="{{p.permalink }}{{ item.sub-page | slugify }}">
                     {{ item.sub-page }}
                   </a>
                 </li>

@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /foundation/utilities/visibility
-has-parent: /foundation/utilities
+has-parent: /foundation/utilities/
 title: Visibility
 ---
 

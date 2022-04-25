@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /foundation/utilities/padding
-has-parent: /foundation/utilities
+has-parent: /foundation/utilities/
 title: Padding
 anchors:
   - anchor: Padding on all sides

@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/dates
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Dates
 intro-text: "The current implementation for collecting dates on VA.gov forms."
 status: use-deployed

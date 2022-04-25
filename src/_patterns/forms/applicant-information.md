@@ -1,7 +1,7 @@
 ---
 layout: pattern
 permalink: /patterns/forms/applicant-information
-has-parent: /patterns/forms
+has-parent: /patterns/forms/
 title: Applicant information
 intro-text: "The current implementation of applicant information on VA.gov forms."
 status: use-deployed

@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /foundation/utilities/measure
-has-parent: /foundation/utilities
+has-parent: /foundation/utilities/
 title: Measure
 ---
 
