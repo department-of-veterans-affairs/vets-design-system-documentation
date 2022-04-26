@@ -136,7 +136,7 @@ In general, some rules for implementing design work include:
 
 #### Use design system utilities
 
-Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../utilities) instead of writing new CSS.
+Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../foundation/utilities) instead of writing new CSS.
 
 <div class="do-dont">
 <div class="do-dont__do">

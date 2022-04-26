@@ -186,7 +186,7 @@ The responsive list table can is on the “Styles” page of the Sketch library 
 - Note about how U.S. Web Design System has been implemented into the Formation design system
 
 **6.6.3**
-- Corrects font size in the [font size utility]({{site.base-url}}/utilities/font-size). The issue affected the normal font size utility, which was incorrectly set to `300`. The correct value is `400`.
+- Corrects font size in the [font size utility]({{site.base-url}}/foundation/utilities/font-size). The issue affected the normal font size utility, which was incorrectly set to `300`. The correct value is `400`.
 
 ---
 

@@ -42,7 +42,9 @@ Change the visibility characteristics of an element
 
 Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
 
-{% include iframe-preview.html src="html/visibility-iframe.html" new_tab="true" title="Visibility" height=400 %}
+<div class="site-showcase">
+{% include_relative html/visibility.html %}
+</div>
 
 {% include snippet.html content='html/visibility.html' %}
 
