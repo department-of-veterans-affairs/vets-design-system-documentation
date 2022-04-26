@@ -192,9 +192,10 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 ### Example
 
-{% include iframe-preview.html src="html/padding-responsive.html" title="Padding" height=200 %}
+<div class="site-showcase">
+{% include_relative html/padding-responsive.html %}
+</div>
 
 {% include snippet.html content='html/padding-responsive.html' %}
-
 
 {% include _breakpoint-names.html %}

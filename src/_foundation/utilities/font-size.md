@@ -30,7 +30,9 @@ The font-size utility is especially useful on headings, allowing them to be logi
 
 Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.
 
-{% include iframe-preview.html new_tab="true" src="html/font-size-responsive-iframe.html" title="Font size" height=200 %}
+<div class="site-showcase">
+{% include_relative html/font-size-responsive.html %}
+</div>
 
 {% include snippet.html content='html/font-size-responsive.html' %}
 

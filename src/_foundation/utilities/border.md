@@ -167,7 +167,9 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 
 ### Example
 
-{% include iframe-preview.html src="html/borders-responsive.html" title="Borders" height=200 %}
+<div class="site-showcase">
+{% include_relative html/borders-responsive.html %}
+</div>
 
 {% include snippet.html content='html/borders-responsive.html' %}
 

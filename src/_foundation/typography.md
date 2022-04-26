@@ -118,7 +118,7 @@ anchors:
 
 ### Headings and accessibility
 
-**Always** use semantic headings, logically nested in the proper order.  **Do not** use improper nesting to achieve a different font size. In other words, an `h1` should never be followed by an `h3`; it should only be followed by an `h2`. Use the [font-size utility](../utilities/font-size) to change the font size of a semantic heading instead.
+**Always** use semantic headings, logically nested in the proper order.  **Do not** use improper nesting to achieve a different font size. In other words, an `h1` should never be followed by an `h3`; it should only be followed by an `h2`. Use the [font-size utility](../foundation/utilities/font-size) to change the font size of a semantic heading instead.
 
 <div class="do-dont">
 <div class="do-dont__do">
