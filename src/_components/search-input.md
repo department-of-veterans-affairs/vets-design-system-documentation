@@ -39,7 +39,7 @@ web-component: va-search-input
 
 ### How to use Search input with type-ahead
 
-* When adding Search input with type-ahead to a search results page, match [this implementation](https://www.va.gov/search/).
+* When adding Search input with type-ahead to a search results page, match [the global search results implementation](https://www.va.gov/search/) on VA.gov.
 
 ## Search behavior
 
