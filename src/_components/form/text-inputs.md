@@ -17,7 +17,11 @@ web-component: va-text-input
 
 ## Text input
 
+#### Default
+
 {% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
+
+#### Success
 
 {% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input" %}
 
@@ -56,3 +60,5 @@ Note that in general we want to avoid this pattern - if a field needs a lot of e
 
 - Avoid `placeholder` text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
 - Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
+
+{% include component-docs.html component_name=page.web-component %}
