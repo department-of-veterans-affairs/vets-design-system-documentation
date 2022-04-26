@@ -32,7 +32,7 @@ In the case of radio options, you may include options for “all of these” or 
 When using an “all of these” option, ensure that under no circumstance would a partial set of options apply to the user.
 
 ## Select box
-Before choosing a select box, follow the [guidance]({{site.baseurl}}/components/form-controls#usability-1) to determine if you should be using radio buttons instead.
+Before choosing a select box, follow the [guidance]({{site.baseurl}}/components/form/select#usage) to determine if you should be using radio buttons instead.
 
 In the case of radio options, you may include options for “all of these” or “none of these” after all other options are listed.
 
