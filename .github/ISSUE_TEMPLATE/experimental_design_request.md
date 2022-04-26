@@ -7,7 +7,7 @@ assignees: caw310
 
 ---
 
-Check the [design system backlog](https://design.va.gov/documentation/backlog) and [experimental design tab](https://design.va.gov/experimental-design/) to see if your proposal has already been suggested. 
+Check the [design system backlog](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Apattern-new%2Ccomponent-new%2Cpattern-update%2Ccomponent-update) and existing [components](https://design.va.gov/components/) and [patterns](https://design.va.gov/patterns/) to see if your proposal has already been suggested. 
 
 ## What
 > Give a brief description of the component or pattern you want to propose.
@@ -25,8 +25,8 @@ Check the [design system backlog](https://design.va.gov/documentation/backlog) a
 ## Next steps
 You may present your work to the Design System Council at an upcoming meeting. If you do not or cannot attend the Design Council Meeting, you can opt to get an asynchronous approval. 
 
-Submit requests to join an upcoming Design System Council meeting in #vsp-design-system.  
+Submit requests to join an upcoming Design System Council meeting in #platform-design-system.  
 
 During the meeting, the Design System Council Working Group will evaluate the request and make a decision. 
 
-If your request is approved, you can add your component/pattern to the [Experimental Design section](https://design.va.gov/experimental-design/) of design.va.gov. If you have any questions on how to add your component/pattern to the Experimental section, please reach out to the Design System Team at #vsp-design-system.
+If your request is approved, you can [add your component or pattern to the system](https://design.va.gov/about/contributing-to-the-design-system#4-add-your-component-or-pattern-to-the-system). If you have any questions on how to add your component or pattern to the system, please reach out to the Design System Team at #platform-design-system.
