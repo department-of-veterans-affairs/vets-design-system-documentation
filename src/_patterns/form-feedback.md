@@ -1,15 +1,11 @@
 ---
-layout: default
+layout: pattern
 title: Form feedback
+status: use-deployed
+intro-text: "Error messages let users know when they have made a mistake on a form field."
 anchors:
   - anchor: Error messages
 ---
-
-# Form Feedback
-
-<div class="va-introtext" markdown="1">
-  Error messages let users know when they have made a mistake on a form field.
-</div>
 
 ## Error messages
 

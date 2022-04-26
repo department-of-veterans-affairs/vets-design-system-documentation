@@ -13,12 +13,7 @@ web-component: va-breadcrumbs
 
 ## Examples
 
-### Desktop
-{% include storybook-preview.html height="100px" story="components-breadcrumbs--default" %}
-
-
-### Mobile
-{% include storybook-preview.html height="100px" width="400px" story="components-breadcrumbs--mobile-first" %}
+{% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
 
 
 ## Usage
@@ -26,7 +21,7 @@ web-component: va-breadcrumbs
   - For online applications and forms, the breadcrumb represents the forms's placement within the site hierarchy, it does not track the steps or progress of the form flow.  In other words, the breadcrumb will only show up to the form as the current page segment, and will maintain that display while the user goes through the flow. For navigation through the steps of the form flow, forward and backward CTAs can be provided as part of the main content as appropriate. 
 - If you use a breadcrumb for one page in a hierarchy, always use a breadcrumb for all pages within that hierarchy. 
 - Always use consistent styling and interactions for the breadcrumb throughout the site, so users do not experience unexpected changes as they navigate through related pages. This includes using a consistent character as a separator between segments.   
-- Each breadcrumb segment should match the H1 of the corresponding page. When writing H1s for a page, follow the content [styleguide for writing page titles](https://design.va.gov/content-style-guide/page-titles-and-section-titles). 
+- Each breadcrumb segment should match the H1 of the corresponding page. When writing H1s for a page, follow the content [styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles). 
 - On desktop, the breadcrumb path should always start with a link to the home page of the site and end with the current page as the last segment. 
 - On mobile, the breadcrumb will only display the parent of the current page.  This breadcrumb should allow the user to move up one level at a time, all the way to the home page of the site.  The mobile version of the breadcrumb does not show the current page.  
 - If a breadcrumb wraps to a second line, the line break must happen between segments(i.e. a single segment should not break into 2 lines) and maintain appropriate tappable space. 
@@ -54,9 +49,10 @@ web-component: va-breadcrumbs
 - All the links in the breadcrumb, except the current page, should be interactive and link to their corresponding page.
 - The current page segment of the breadcrumb should not be interactive or link. 
 
-{% include component-docs.html component_name=page.web-component %}
-
 ## SEO considerations
 - Search engines utilize breadcrumbs to understand your site structure and gain additional context about your page to help in ranking.
 - Breadcrumbs can also be displayed in search engine results pages (SERPs), which provides additional context to users about your page.
-- Breadcrumbs are not the only element used by search engines, go to [writing for SEO in the content styleguide](https://design.va.gov/content-style-guide/seo) for more SEO assistance. 
+- Breadcrumbs are not the only element used by search engines, go to [writing for SEO in the content styleguide]({{ site.baseurl }}/content-style-guide/seo) for more SEO assistance. 
+
+{% include component-docs.html component_name=page.web-component %}
+

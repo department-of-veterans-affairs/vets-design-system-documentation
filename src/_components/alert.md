@@ -3,6 +3,7 @@ layout: component
 title: Alert
 status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
+research-title: "Alert boxes"
 anchors:
   - anchor: Examples
   - anchor: Usage

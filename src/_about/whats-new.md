@@ -6,11 +6,30 @@ title: What’s new?
 # What’s new?
 
 <div class="va-introtext">
-The latest news and updates on the Design System, Forms library and the Content style guide
+  The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
 ---
+### April 25, 2022
+
+- System wide navigation changes
+  - The side navigation now shows sub-pages rather than in-page anchor links. Anchor links are now reflected using the "On this page" component which you'll find at the top of any lengthy page.
+  - Experimental Design components and patterns moved into their respective Components and Patterns sections.
+  - The "Documentation" section was renamed "About".
+  - The "Design" section was renamed "Foundation".
+  - Utilities and Layout moved into the Foundation section.
+- [Maturity scale]({{ site.baseurl }}/about/maturity-scale/): We've introduced a maturity scale to track the lifecycle of components and patterns. This allows experimental design elements to come into the system and have visibility in the Components and Patterns sections. Each component and pattern has been assigned a maturity level on the scale which is indicated by a tag and dot in the side navigation.
+- Section pages: Top-level navigation sections, such as Patterns and Foundation, now have sub-sections that group similar elements. For example, [Patterns > Forms]({{ site.baseurl }}/patterns/forms/) groups form patterns where each form pattern has a distinct page and a similar page structure. These new section pages will also have general guidance that applies to everything in that section. This will allow us to grow the system. 
+  - New sections:
+    - [Foundation > Layout]({{ site.baseurl }}/foundation/layout/) 
+    - [Foundation > Utilities]({{ site.baseurl }}/foundation/utilities/) 
+    - [Patterns > Forms]({{ site.baseurl }}/patterns/forms/) 
+    - [Patterns > Templates]({{ site.baseurl }}/patterns/templates/) 
+
+
+---
 ### April 04, 2022
+
 **Design System updates**
 
 - Table web component
@@ -99,9 +118,9 @@ There is now an Accordion Web Component that is a single source of truth for mul
 
 There is a new Action link component that was created because we needed a more prominent link component to direct sighted users and assistive tech users to start a service.  It is important for assistive technology users to have the correct markup because screen readers always say “link” before links, and “button” before buttons. Using links and buttons intentionally results in a more inclusive experience for assistive technology users We updated guidance on buttons as well and have decided to limit the use of the green button for triggering wizards only. Please read both components’ guidance to determine how to use buttons and links consistently and correctly. 
 
-[[Action Links](https://design.va.gov/components/action-links) ]
+[[Action Links]({{ site.baseurl }}/components/action-links) ]
 
-[[Buttons](https://design.va.gov/components/buttons)]
+[[Button]({{ site.baseurl }}/components/button)]
 
 ##### **Direct Deposit** 
 
@@ -156,7 +175,7 @@ The responsive list table can is on the “Styles” page of the Sketch library 
 ### July 3, 2019
 
 **6.7.0**
-- [Accordion]({{ site.baseurl }}/components/accordions) component now supports a multi-selectable feature, allowing multiple accordions within a set to be open at the same time.
+- [Accordion]({{ site.baseurl }}/components/accordion) component now supports a multi-selectable feature, allowing multiple accordions within a set to be open at the same time.
 
 ---
 
@@ -167,7 +186,7 @@ The responsive list table can is on the “Styles” page of the Sketch library 
 - Note about how U.S. Web Design System has been implemented into the Formation design system
 
 **6.6.3**
-- Corrects font size in the [font size utility]({{site.base-url}}/utilities/font-size). The issue affected the normal font size utility, which was incorrectly set to `300`. The correct value is `400`.
+- Corrects font size in the [font size utility]({{site.base-url}}/foundation/utilities/font-size). The issue affected the normal font size utility, which was incorrectly set to `300`. The correct value is `400`.
 
 ---
 
@@ -194,7 +213,7 @@ The responsive list table can is on the “Styles” page of the Sketch library 
 - Patches line-height mismatch for paragraphs inside of a  `va-introtext` div.
 
 **6.5.0**
-- Update [loading indicator component]({{ site.baseurl }}/components/loading-indicators): Uses CSS for animation instead of animated SVG, which was unsupported in IE.
+- Update [loading indicator component]({{ site.baseurl }}/components/loading-indicator): Uses CSS for animation instead of animated SVG, which was unsupported in IE.
 
 **Site updates**
 - Removed USWDS `npm` notes from JavaScript documentation since it is no longer needed as a dependency
@@ -206,7 +225,7 @@ The responsive list table can is on the “Styles” page of the Sketch library 
 
 **Content style guide update**
 
-- New topic added for VA [trademarks](https://design.va.gov/content-style-guide/trademarks).
+- New topic added for VA [trademarks]({{ site.baseurl }}/content-style-guide/trademarks).
 
 
 ---

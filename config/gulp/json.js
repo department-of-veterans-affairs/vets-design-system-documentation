@@ -2,6 +2,8 @@
 var gulp = require('gulp');
 var task = 'json';
 
+// The component-docs..json file allows us to display the attributes, properties, and events 
+// for the components in the system in the Component pages
 
 gulp.task('move-json-data', function (done) {
   console.log("Moving json into folder");

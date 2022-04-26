@@ -1,18 +1,35 @@
 ---
-layout: default
-title: Wizards
+layout: pattern
+title: Wizard
+status: dont-use-deprecated
+intro-text: "Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. <strong>VA.gov uses a wizard pattern to guide users down an optimal pathway for their circumstances.</strong>"
+anchors:
+  - anchor: Status
+  - anchor: Purpose
+  - anchor: Examples
+  - anchor: Where to place wizards
+  - anchor: Specifics of the pattern
+  - anchor: Research/Accessibility rationale
 ---
 
-# Wizards
+## Status 
 
-<p class="va-introtext">Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. <strong>VA.gov uses a wizard pattern to guide users down an optimal pathway for their circumstances.</strong> </p>
+The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and the Design System Team is in the process of replacing it with patterns and guidance that will roughly adhere to the following:
+
+* [Content: Writing questions for forms](https://service-manual.nhs.uk/content/how-to-write-good-questions-for-forms/get-the-questions-into-order)
+* [Pattern: Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)
+* [Principle: One thing per page](https://www.gov.uk/service-manual/design/form-structure#start-with-one-thing-per-page)
+
+You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you.
+
+## Purpose
 
 - The VA.gov wizard pattern consists of a series of simple questions, written in plain language, used to glean a user's specific eligibility status, background, or specific needs/goals.
 - Wizards serve up one question at a time.
 - Wizards use conditional logic, whereby the answer to the first question determines the next question to be asked, or answer options that should be made available.
 - Wizards do not submit or store data.
 
-## Examples of wizards on VA.gov
+## Examples
 
 ![gif demonstrating a form wizard for VA Education]({{site.baseurl}}/images/Wizard-Education-normal.gif)
 
@@ -27,7 +44,7 @@ title: Wizards
 
 ## Where to place wizards
 
-The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content](https://design.va.gov/components/featured-content) eligibility boxes but before [accordions](<https://design.va.gov/patterns/content-presentation#accordions>) or additional information.
+The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content]({{ site.baseurl }}/components/featured-content) eligibility boxes but before [accordions]({{ site.baseurl }}/patterns/content-presentation#accordions) or additional information.
 
 ## Specifics of the pattern
 
@@ -35,10 +52,10 @@ The wizard should live *on the page* on both the **Eligibility** and **How to Ap
 
 - **Questions**: Questions appear one at a time under the button, using an expanding blue vertical left bar as new questions are added. Questions are conditional, based on previous answers. Structure the logic tree for wizard questions to get users to gather information from users in as few questions as possible, while still directing them to the best next step for their circumstances.
 
-- **Warning alerts in the wizard.** Show a [warning alert](<https://design.va.gov/components/alertboxes#warning-alert>) if a user answers a question in a way that is uncommon, or if they need to first do some other process that cannot be accessed via the wizard. For example, in the Education Form wizard, Show the Warning Alert immediately after the question, and provide concrete next steps and directions.  
+- **Warning alerts in the wizard.** Show a [warning alert]({{ site.baseurl }}/components/alert#warning-alert) if a user answers a question in a way that is uncommon, or if they need to first do some other process that cannot be accessed via the wizard. For example, in the Education Form wizard, Show the Warning Alert immediately after the question, and provide concrete next steps and directions.  
 ![gif demonstrating a form wizard for VA Education featuring a users that answers a specific question that triggers a warning]({{site.baseurl}}/images/Wizard-Education-warning.gif)
 
-- **Error alerts in the wizard**. Show an [error alert](<https://design.va.gov/components/alertboxes#error-alert>) if a user answers a question in a way that would render them ineligible to complete any of the forms serviced by the wizard. Instead, they may need to stop what they are doing and follow a different process on a different page or website. For example, in the Disability Claim wizard (shown below), a user who is still active duty needs to complete a completely different form on EBenefits, and completing an application on VA.gov would be a waste of time. Show the Error Alert immediately after the question, and provide concrete next steps and directions.
+- **Error alerts in the wizard**. Show an [error alert]({{ site.baseurl }}/components/alert#error-alert) if a user answers a question in a way that would render them ineligible to complete any of the forms serviced by the wizard. Instead, they may need to stop what they are doing and follow a different process on a different page or website. For example, in the Disability Claim wizard (shown below), a user who is still active duty needs to complete a completely different form on EBenefits, and completing an application on VA.gov would be a waste of time. Show the Error Alert immediately after the question, and provide concrete next steps and directions.
 
   ![screenshot of wizard with an error]({{site.baseurl}}/images/wizard-with-error.png)
 

@@ -47,22 +47,13 @@ collections:
   content-style-guide:
     output: true
     permalink: /:collection/:title
-  design:
+  foundation:
     output: true
     permalink: /:collection/:title
   components:
     output: true
     permalink: /:collection/:title
   patterns:
-    output: true
-    permalink: /:collection/:title
-  layout:
-    output: true
-    permalink: /:collection/:title
-  utilities:
-    output: true
-    permalink: /:collection/:title
-  experimental-design:
     output: true
     permalink: /:collection/:title
 
@@ -74,11 +65,11 @@ exclude:
   - tmp_remote_assets
   - .sass-cache
   - .ruby_version
-  - _design/html
+  - _foundation/html
   - _components/html
   - _patterns/html
-  - _layout/html
-  - _utilities/html
+  - _foundation/layout/html
+  - _foundation/utilities/html
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.

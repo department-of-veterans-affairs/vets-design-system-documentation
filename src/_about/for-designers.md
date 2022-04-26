@@ -25,9 +25,9 @@ Before getting started, we recommend that you get familiar with the VA.gov Desig
 - **[Content style guide](../content-style-guide):** Our house style guide for VA.gov. Follow the guidelines to help you create a **consistent, helpful experience for Veterans.**
 - **[Design](../design):** This section explains VA.gov's **base styles and visual language**. You should set margins and padding in your design comps using the **[8pt spacing units](../design/spacing-units)**.
 - **[Components](../components):** Components are the "UI fragments," such as buttons and accordions. Some of these have strict usage guidelines, so please become familiar with them.
-- **[Utilities](../utilities):** This section mostly describes CSS, but that doesn't mean it is only for front-end developers. Formation guides design implementation, so **understanding the utilities may assist in how designers describe their work**. **Many of the utilities are responsive** and can be used to modify or enhance designs for different screen widths at a low development cost.
+- **[Utilities](../foundation/utilities):** This section mostly describes CSS, but that doesn't mean it is only for front-end developers. Formation guides design implementation, so **understanding the utilities may assist in how designers describe their work**. **Many of the utilities are responsive** and can be used to modify or enhance designs for different screen widths at a low development cost.
 - **[Patterns](../patterns):**  How components, content strategy, information architecture, accessibility, and visual design work in tandem to solve Veterans' needs. Here, you will find information on how Hub pages are structured, how to build multi-part forms, etc.
-- **[Layout](../layout):** The layout section describes the **design grid** and tools you can use to create page or design pattern structure.
+- **[Layout](../foundation/layout):** The layout section describes the **design grid** and tools you can use to create page or design pattern structure.
 
 ## Design resources
 
