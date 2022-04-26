@@ -1,6 +1,6 @@
 ---
 layout: component
-permalink: /components/form/
+permalink: /components/form
 title: Form
 intro-text: "Form controls allow users to enter information."
 sub-pages:

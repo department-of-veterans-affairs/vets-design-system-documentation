@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /foundation/utilities/
+permalink: /foundation/utilities
 title: Utilities
 sub-pages:
   - sub-page: Background color
