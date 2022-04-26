@@ -5,6 +5,7 @@ title: Form
 intro-text: "Form controls allow users to enter information."
 sub-pages:
   - sub-page: Text inputs
+  - sub-page: Number input
   - sub-page: Select
   - sub-page: Checkbox
   - sub-page: Radio button
