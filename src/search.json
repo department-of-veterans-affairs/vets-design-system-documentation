@@ -69,7 +69,7 @@ layout: null
       "date"     : "{{ item.date }}",
       "description" : "{{item.description | strip_html | strip_newlines | escape }}"
 
-    },
+    } {% unless forloop.last %},{% endunless %}
   {% endunless %}
   {% endfor %}
 ]
