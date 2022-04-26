@@ -1,7 +1,7 @@
 ---
 layout: pattern
 title: Templates
-permalink: /patterns/templates/
+permalink: /patterns/templates
 intro-text: "Templates for specific pages that provide guidance on their layout and use."
 sub-pages:
   - sub-page: Email
