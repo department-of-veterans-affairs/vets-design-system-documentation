@@ -49,9 +49,10 @@ web-component: va-breadcrumbs
 - All the links in the breadcrumb, except the current page, should be interactive and link to their corresponding page.
 - The current page segment of the breadcrumb should not be interactive or link. 
 
-{% include component-docs.html component_name=page.web-component %}
-
 ## SEO considerations
 - Search engines utilize breadcrumbs to understand your site structure and gain additional context about your page to help in ranking.
 - Breadcrumbs can also be displayed in search engine results pages (SERPs), which provides additional context to users about your page.
 - Breadcrumbs are not the only element used by search engines, go to [writing for SEO in the content styleguide]({{ site.baseurl }}/content-style-guide/seo) for more SEO assistance. 
+
+{% include component-docs.html component_name=page.web-component %}
+
