@@ -25,7 +25,7 @@ anchors:
 * If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.
 
 ### How to use sidenav
-* Typically used in a [two-column layout]({{ site.baseurl }}/layout/page-templates#two-columns-content-on-right).
+* Typically used in a [two-column layout]({{ site.baseurl }}/foundation/layout/page-layouts#two-columns-content-on-right).
 * Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
 * Keep the navigation links short. They can be shorter derivatives of page titles themselves.
 * If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.

@@ -14,4 +14,4 @@ sub-pages:
 Also available are the:
 * [Forms review page template]({{ site.baseurl }}/patterns/forms/review) 
 * [Forms confirmation page template]({{ site.baseurl }}/patterns/forms/confirmation) 
-* Code details in [page layouts]({{ site.baseurl }}/foundation/layouts/page-layouts)
+* Code details in [page layouts]({{ site.baseurl }}/foundation/layout/page-layouts)
