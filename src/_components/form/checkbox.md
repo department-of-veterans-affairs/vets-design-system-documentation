@@ -39,3 +39,5 @@ web-component: va-checkbox-group
 - The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `margin-left: -2rem; opacity: 0; position: absolute; left: auto;`.
 - Each input should have a semantic `id` attribute, and its corresponding `label` should have the same value in it’s `for` attribute.
 - The `title` attribute can replace `<label>`.
+
+{% include component-docs.html component_name=page.web-component %}

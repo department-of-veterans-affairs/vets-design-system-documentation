@@ -40,3 +40,5 @@ web-component: va-select
 
 - Make sure your select box has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).
 - Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
+
+{% include component-docs.html component_name=page.web-component %}
