@@ -9,6 +9,7 @@ status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-checkbox-group
 ---
@@ -34,10 +35,10 @@ web-component: va-checkbox-group
 - Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”
 - If you customize, make sure selections are adequately spaced for touch screens.
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Accessibility considerations
 - Surround a related set of checkboxes with a `<fieldset>`. The` <legend>` provides context for the grouping. Do not use fieldset and legend for a single check.
 - The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `margin-left: -2rem; opacity: 0; position: absolute; left: auto;`.
 - Each input should have a semantic `id` attribute, and its corresponding `label` should have the same value in it’s `for` attribute.
 - The `title` attribute can replace `<label>`.
-
-{% include component-docs.html component_name=page.web-component %}

@@ -9,6 +9,7 @@ status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-radio
 ---
@@ -32,10 +33,10 @@ web-component: va-radio
 - If you customize, make sure selections are adequately spaced for touch screens.
 - Use caution if you decide to set a default value. Setting a default value can discourage users from making conscious decisions, seem pushy, or alienate users who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Accessibility considerations
 
 - Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 - Each radio button should have a `<label>`. Associate the two by matching the `<label>`’s `for` attribute to the `<input>`’s `id` attribute.
 - The `title` attribute can replace `<label>`.
-
-{% include component-docs.html component_name=page.web-component %}
