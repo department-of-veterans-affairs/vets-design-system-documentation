@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /foundation/layout
+permalink: /foundation/layout/
 title: Layout
 sub-pages:
   - sub-page: Flexbox grid
