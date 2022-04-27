@@ -9,6 +9,7 @@ status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-select
 ---
@@ -35,6 +36,8 @@ web-component: va-select
 - Avoid making options in one select box menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.
 - When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
 - Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 

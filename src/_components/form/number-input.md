@@ -10,6 +10,7 @@ anchors:
   - anchor: Number input
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-number-input
 ---
@@ -39,9 +40,9 @@ web-component: va-number-input
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a input field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
 
+{% include component-docs.html component_name=page.web-component %}
+
 ## Accessibility considerations
 
 - Avoid `placeholder` text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
 - Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
-
-{% include component-docs.html component_name=page.web-component %}
