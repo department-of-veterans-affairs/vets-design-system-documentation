@@ -56,7 +56,7 @@ The example above is what is used on VA.gov, but you can customize this for your
 
 #### Sass functions, variables, and interactive components
 
-If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
+If you would like to use the Sass functions, such as for [spacing](../foundation/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
 
 ### Load the Web Component library
 
@@ -128,8 +128,8 @@ The majority of our web components also fire a `component-library-analytics` eve
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
 
 In general, some rules for implementing design work include:
-- Use [spacing units](../design/spacing-units) instead of hard-coding pixel values for margins and padding
-- Use Sass [variables for colors](../design/color-palette) instead of hex codes
+- Use [spacing units](../foundation/spacing-units) instead of hard-coding pixel values for margins and padding
+- Use Sass [variables for colors](../foundation/color-palette) instead of hex codes
 - Discuss reusability of new design components and where is the most appropriate home for CSS and JS
 - Use the Formation [naming convention](naming)
 - Do not use ID selectors
