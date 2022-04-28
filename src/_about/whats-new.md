@@ -118,7 +118,7 @@ There is now an Accordion Web Component that is a single source of truth for mul
 
 There is a new Action link component that was created because we needed a more prominent link component to direct sighted users and assistive tech users to start a service.  It is important for assistive technology users to have the correct markup because screen readers always say “link” before links, and “button” before buttons. Using links and buttons intentionally results in a more inclusive experience for assistive technology users We updated guidance on buttons as well and have decided to limit the use of the green button for triggering wizards only. Please read both components’ guidance to determine how to use buttons and links consistently and correctly. 
 
-[[Action Links]({{ site.baseurl }}/components/action-links) ]
+[[Action Links]({{ site.baseurl }}/components/action-link) ]
 
 [[Button]({{ site.baseurl }}/components/button)]
 
@@ -130,7 +130,7 @@ A standard pattern is available for any team that needs direct deposit functiona
 
 Responsive list tables adapt on smaller screens so that each row in the table becomes an item in a list. They are great to use when Veterans are looking up information that is formatted in a table that would best be reformatted as a list on mobile devices, where the width of the screen may not accommodate a wider table. 
 
-The responsive list table can is on the “Styles” page of the Sketch library under the artboard “Content Presentation”.  You can read documentation for [responsive tables](https://design.va.gov/components/tables)  
+The responsive list table can is on the “Styles” page of the Sketch library under the artboard “Content Presentation”.  You can read documentation for [responsive tables](https://design.va.gov/components/table)  
 
 ---
 
