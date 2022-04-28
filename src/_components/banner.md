@@ -15,11 +15,11 @@ web-component: va-banner
 
 ### Default
 
-{% include storybook-preview.html story="components-va-banner--default" %}
+{% include storybook-preview.html story="components-va-banner--default" height="80px" %}
 
 ### Closeable
 
-{% include storybook-preview.html story="components-va-banner--closeable" %}
+{% include storybook-preview.html story="components-va-banner--closeable" height="80px" %}
 
 ## Usage
 
