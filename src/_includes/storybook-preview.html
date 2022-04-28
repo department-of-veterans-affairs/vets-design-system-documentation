@@ -3,10 +3,18 @@
   style="max-width: {{ include.width | default: '100%' }}"
 >
   <iframe
+    id="{{ include.story }}"
     width="100%"
     height="{{ include.height }}"
     src="{{ site.storybook_path }}/iframe.html?id={{ include.story }}&viewMode=story"
   ></iframe>
 </div>
+
+<script>
+  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
+  window["{{ include.story }}"].onload = function() {
+    window["{{ include.story }}"].style.height = window["{{ include.story }}"].contentWindow.document.body.scrollHeight + "px";
+  }
+</script>
 
 [{% if include.link_text %}View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ site.storybook_path }}/?path=/docs/{{ include.story }})
