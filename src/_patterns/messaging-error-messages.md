@@ -5,7 +5,7 @@ intro-text: "Details the structure, style, and tone for error message content."
 status: use-deployed
 anchors:
   - anchor: Structure
-  - anchor: Content within the description
+  - anchor: Content within the message description
   - anchor: Style and tone
   - anchor: Additional guidance
 ---
