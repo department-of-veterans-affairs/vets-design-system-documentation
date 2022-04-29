@@ -14,11 +14,11 @@ anchors:
 
 ### Standard progress bar
 
-{% include storybook-preview.html story="components-va-progress-bar--default" height="80px" %}
+{% include storybook-preview.html story="components-va-progress-bar--default" link_text="va-progress-bar" height="80px" %}
 
 ### Segmented progress bar
 
-{% include storybook-preview.html story="components-va-segmented-progress-bar--default" height="80px" %}
+{% include storybook-preview.html story="components-va-segmented-progress-bar--default" link_text="va-segmented-progress-bar" height="80px" %}
 
 ## Usage
 
