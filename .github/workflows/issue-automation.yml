@@ -10,7 +10,7 @@ jobs:
     name: Add new issues to project board
     runs-on: ubuntu-latest
     steps:
-      - name: Get project data
+      - name: Get project ID
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORGANIZATION: department-of-veterans-affairs
@@ -21,13 +21,6 @@ jobs:
               organization(login: $org){
                 projectNext(number: $number) {
                   id
-                  fields(first:20) {
-                    nodes {
-                      id
-                      name
-                      settings
-                    }
-                  }
                 }
               }
             }' -f org=$ORGANIZATION -F number=$PROJECT_NUMBER > project_data.json
