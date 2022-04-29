@@ -32,7 +32,7 @@ Within each of those categories there are 2 levels:
   * Proposed
   * Deprecated
 
-Components and patterns start out as proposed, are filed in Github as [users of the system contribute](contributing-to-the-design-system/), and then, typically, progress up the scale as we gain confidence in that component or pattern. That level of confidence is measured by a number of criteria which are outlined below.
+Components and patterns start out as proposed, are filed in Github as [users of the system contribute](contributing-to-the-design-system), and then, typically, progress up the scale as we gain confidence in that component or pattern. That level of confidence is measured by a number of criteria which are outlined below.
 
 The full maturity scale goes in this order:
 
@@ -117,7 +117,7 @@ The Design System team will be auditing components & patterns on a regular basis
 
 ### A component or pattern is proposed
 
-Any additions to the system, either new components or patterns, updates to existing entries, or requests for replacements are requested via the [Experimental Design Process](contributing-to-the-design-system/).
+Any additions to the system, either new components or patterns, updates to existing entries, or requests for replacements are requested via the [Experimental Design Process](contributing-to-the-design-system).
 
 ### Proposed to Candidate 
 

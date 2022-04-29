@@ -23,7 +23,7 @@ The VA.gov Design System is VA.gov’s front-end framework. This site documents 
 Before getting started, we recommend that you get familiar with the VA.gov Design System and how you can use it as part of your design process. Each section includes some helpful information:
 
 - **[Content style guide](../content-style-guide):** Our house style guide for VA.gov. Follow the guidelines to help you create a **consistent, helpful experience for Veterans.**
-- **[Foundation](../foundation):** This section explains VA.gov's **base styles and visual language**. You should set margins and padding in your design comps using the **[8pt spacing units](../design/spacing-units)**.
+- **[Foundation](../foundation):** This section explains VA.gov's **base styles and visual language**. You should set margins and padding in your design comps using the **[8pt spacing units](../foundation/spacing-units)**.
 - **[Components](../components):** Components are the "UI fragments," such as buttons and accordions. Some of these have strict usage guidelines, so please become familiar with them.
 - **[Utilities](../foundation/utilities):** This section mostly describes CSS, but that doesn't mean it is only for front-end developers. Formation guides design implementation, so **understanding the utilities may assist in how designers describe their work**. **Many of the utilities are responsive** and can be used to modify or enhance designs for different screen widths at a low development cost.
 - **[Patterns](../patterns):**  How components, content strategy, information architecture, accessibility, and visual design work in tandem to solve Veterans' needs. Here, you will find information on how Hub pages are structured, how to build multi-part forms, etc.
