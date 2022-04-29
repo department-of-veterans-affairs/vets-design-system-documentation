@@ -38,7 +38,7 @@ Change the display property of an element.
 ### Accessibility
 
 - Using code `vads-u-display--none` and its responsive prefix will hide that element from screen readers. Only use this property if you are choosing to hide from **all** users.
-- If you want to hide something visual but still make it available to screen readers, consider using the [visibility utility](visibility.html) instead.
+- If you want to hide something visual but still make it available to screen readers, consider using the [visibility utility](visibility) instead.
 
 ## Responsive prefixes
 

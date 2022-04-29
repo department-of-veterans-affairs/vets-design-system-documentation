@@ -27,7 +27,7 @@ web-component: va-select
 - If the list of options is very short. Use radio buttons instead.
 - If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.
 - If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from select boxes. Use checkboxes instead.
-- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link](/design/typography#links) or the [Sidenav component](/components/sidenav).
+- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link]({{ site.baseurl }}/components/link) or the [sidenav component]({{ site.baseurl }}/components/sidenav).
 
 ## How to use
 
