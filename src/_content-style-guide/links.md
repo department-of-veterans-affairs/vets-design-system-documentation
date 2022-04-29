@@ -26,7 +26,7 @@ Links should tell people what action to take, where to go next, or what informat
   
 __Use natural language, and link relevant words__
   
-If your disability gets worse, [file for a VA disability compensation increase](https://preview.va.gov/disability/how-to-file-claim/).
+If your disability gets worse, [file for a VA disability compensation increase](https://va.gov/disability/how-to-file-claim/).
   
 Apply for a United States burial flag to place over a casket or coffin, or place with an urn. 
 [Learn more about burial flags](https://www.va.gov/burials-memorials/memorial-items/burial-flags/)
@@ -39,7 +39,7 @@ Apply for a United States burial flag to place over a casket or coffin, or place
   
 __Avoid "click here" and generic CTA text__
 
-[Click here](https://preview.va.gov/disability/how-to-file-claim/) to file for a VA disability compensation increase if your disability gets worse.
+[Click here](https://va.gov/disability/how-to-file-claim/) to file for a VA disability compensation increase if your disability gets worse.
 
 Apply for a United States burial flag to place over a casket or coffin, or place with an urn. 
 [Learn more](https://www.va.gov/burials-memorials/memorial-items/burial-flags/)

@@ -19,8 +19,8 @@ web-component: va-loading-indicator
 
 ### When to consider something else
 
-* Use the [Standard progress bar](https://design.va.gov/components/progress-bars) for file uploads where the wait time is determinate.
-* Use the [Segmented progress bar](https://design.va.gov/components/progress-bars) in forms to communicate the number of steps required to complete the form.
+* Use the [Standard progress bar]({{ site.baseurl }}/components/progress-bar) for file uploads where the wait time is determinate.
+* Use the [Segmented progress bar]({{ site.baseurl }}/components/progress-bar) in forms to communicate the number of steps required to complete the form.
 
 ## Content considerations
 

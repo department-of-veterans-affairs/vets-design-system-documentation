@@ -13,7 +13,7 @@ web-component: va-telephone
 
 By default, `va-telephone` components are clickable with a link and accept a value of 3 or 10 digits, however, props can be added to provide them with an extension, make them non-clickable, and have an international phone number indicator.
 
-The `va-telephone` component also follows the guidelines set for <a href="https://design.va.gov/content-style-guide/dates-and-numbers#phone-numbers">phone numbers</a>.
+The `va-telephone` component also follows the guidelines set for <a href="{{ site.baseurl }}/content-style-guide/dates-and-numbers#phone-numbers">phone numbers</a>.
 
 ## Examples
 

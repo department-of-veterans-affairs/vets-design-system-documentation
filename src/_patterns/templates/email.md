@@ -33,7 +33,7 @@ Heading level 2 is also supported.
 Paragraph text is used for the body content of the email. Bold, italics, and bulleted lists are also supported. 
 
 ### Bulleted lists
-Bulleted lists are supported to break up paragraph content. The style follows the [VA design system bullet styling]({{ site.baseurl }}/design/typography).
+Bulleted lists are supported to break up paragraph content. The style follows the [VA design system bullet styling]({{ site.baseurl }}/foundation/typography#lists).
 
 ### Links
 Links are supported and follow the style of design system links. When links are critical for the user to visit, the full URL should be displayed to set expectations and allow for copying and pasting. 

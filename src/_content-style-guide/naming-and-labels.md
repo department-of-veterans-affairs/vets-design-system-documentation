@@ -5,7 +5,7 @@ title: Naming and labels
 
 # Naming and labels
 
-Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos]({{ site.baseurl }}/design/logos), we also don't create "brand clutter" with unnecessary branding. 
+Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos]({{ site.baseurl }}/foundation/logos), we also don't create "brand clutter" with unnecessary branding. 
 
 **Don't create new brands**
 

@@ -59,7 +59,7 @@ If you need to tell the Veteran they've missed a required field on an applicatio
 ### How to use Input Messages
 
 - Keep message content short.
-- Use the [feedback icons]({{ site.baseurl }}/design/icons#feedback) from the design system.
+- Use the [feedback icons]({{ site.baseurl }}/foundation/icons#feedback) from the design system.
 - Use the success, warning, error states on forms that don't require the user to click a button to submit the form.
 
 ### Other input message styles
