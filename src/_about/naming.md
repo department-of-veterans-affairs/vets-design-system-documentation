@@ -87,7 +87,7 @@ When put together, we can have something like:
 
 You will notice that not everything in Formation follows the naming convention described above. There are two reasons for this:
 
-1. Components are directly from the [U.S. Web Design System](https://design.digital.gov)
+1. Components are directly from the [U.S. Web Design System](https://designsystem.digital.gov)
 2. Components developed before Formation was fully established
 
 **Any new components added to Formation must use the naming convention.**

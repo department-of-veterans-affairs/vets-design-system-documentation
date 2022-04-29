@@ -33,7 +33,7 @@ When considering if a component or pattern should be added to the design system 
 
 ### What is an experimental component or pattern?
 
-An experimental component or pattern is something that is being explored by a team on VA.gov, but has not yet been validated sufficiently by our Veterans and caregivers to become an official design system component or pattern. Thus on the [maturity scale it will be marked as "Use with caution"]({{ site.baseurl }}/about/maturity-scale/) at the top of any component or pattern page.
+An experimental component or pattern is something that is being explored by a team on VA.gov, but has not yet been validated sufficiently by our Veterans and caregivers to become an official design system component or pattern. Thus on the [maturity scale it will be marked as "Use with caution"]({{ site.baseurl }}/about/maturity-scale) at the top of any component or pattern page.
 
 ### Why showcase experimental components and patterns?
 
