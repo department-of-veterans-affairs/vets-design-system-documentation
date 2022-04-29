@@ -9,7 +9,7 @@ anchors:
   - anchor: Examples
   - anchor: Where to place wizards
   - anchor: Specifics of the pattern
-  - anchor: Research/Accessibility rationale
+  - anchor: Research and Accessibility rationale
 ---
 
 ## Status 
@@ -65,7 +65,7 @@ Note: For both alert cases, a user can still change their answer in the wizard t
 
 ![gif demonstrating a form wizard for VA Disability]({{site.baseurl}}/images/Wizard-Disability.gif)
 
-## Research/Accessibility rationale
+## Research and Accessibility rationale
 - We show questions one at a time for accessibility/universal design reasons: we try not to show irrelevant content to users.
 - We learned through research to add blue left bar to show users that the wizard questions are related and part of the same process of finding the correct form.
 - Wizard questions may come from user research, i.e. a point of confusion for many users regarding their eligibility for a VA benefit.
