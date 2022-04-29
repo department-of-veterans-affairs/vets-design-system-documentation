@@ -15,11 +15,11 @@ anchors:
 
 ### Desktop
 
-{% include storybook-preview.html height="300px" story="components-va-back-to-top--default" %}
+{% include storybook-preview.html height="300px" story="components-va-back-to-top--default" link_text="va-back-to-top" %}
 
 ### Mobile
 
-{% include storybook-preview.html height="300px" width="400px" story="components-va-back-to-top--default" %}
+{% include storybook-preview.html height="300px" width="400px" story="components-va-back-to-top--default" link_text="va-back-to-top" %}
 
 ## Usage
 * On large and medium screens, the Back to top component will have the label, “Back to top” with an arrow icon to the left of the label. On small screens, the Back to top component will only have the arrow icon. Use one Back to top component per page.
