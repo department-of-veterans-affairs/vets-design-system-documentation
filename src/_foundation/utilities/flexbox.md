@@ -17,7 +17,7 @@ anchors:
 # Flexbox
 
 <div class="va-introtext" markdown="1">
-  The flexbox utilities provide all of the properties for flex containers and some for flex items. All are responsive. Read about [responsive prefixes](#responsive-prefixes). This utility can serve as compliment to the [flexbox grid](../layout/flexbox-grid.html).
+  The flexbox utilities provide all of the properties for flex containers and some for flex items. All are responsive. Read about [responsive prefixes](#responsive-prefixes). This utility can serve as compliment to the [flexbox grid](../layout/flexbox-grid).
 </div>
 
 Flexbox requires two components,  a *flex container* and *flex items*. Any first siblings in a flex container becomes a flex item. It is not possible for any of those siblings to not become a flex item.
@@ -73,7 +73,7 @@ Flex direction sets the main-axis, which defines the direction flex items are pl
 
 ## Flex wrap
 
-The [Flexbox grid](../layout/flexbox-grid.html) is set to `wrap` by default, but flexbox will otherwise place flex items into a single row. **Note:** If the number of grid columns exceeds 12 and the grid column is set to `nowrap`, the grid columns may extend off the page.
+The [Flexbox grid](../layout/flexbox-grid) is set to `wrap` by default, but flexbox will otherwise place flex items into a single row. **Note:** If the number of grid columns exceeds 12 and the grid column is set to `nowrap`, the grid columns may extend off the page.
 
 <div class="site-showcase">
 {%
