@@ -1,15 +1,16 @@
 ---
 layout: component
 title: Additional info
-status: use-deployed
 intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations."
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C28D2A57-71E4-4EDF-8FBA-87C6D858BF60
+status: use-deployed
+web-component: va-additional-info
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
-web-component: va-additional-info
 ---
 
 ## Examples
