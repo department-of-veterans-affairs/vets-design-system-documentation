@@ -93,6 +93,9 @@ Most VA forms have a large amount of instructional text that tries to make VA pr
 
 ## Accessibility considerations
 
+* The Additional Info component should be validated to meet the WCAG 2.1 AA accessibility guidelines.
+* The Additional Info component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
+* Pressing the close button (a element with role of button) must close the Additional Info.
 
 ## Related
 

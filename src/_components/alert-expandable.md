@@ -32,9 +32,11 @@ To be used when an alert box is too visually prominent and additional informatio
 
 ## Accessibility considerations
 
-Icon: Must provide alternative text (use sr-only text or an aria-label) so screen readers have an equivalent understanding of the purpose/nature of the message
-
-Heading: e.g. "Facility closed" should be one heading level below its parent
+* Icon: Must provide alternative text (use sr-only text or an aria-label) so screen readers have an equivalent understanding of the purpose/nature of the message
+* Heading: e.g. "Facility closed" should be one heading level below its parent
+* A single notification always needs a minimum of one Heading component as its content.
+* Heading in a notification should include a maximum of 80 characters.
+* Paragraph in a notification should include a maximum of 120 characters.
 
 ## Research
 
