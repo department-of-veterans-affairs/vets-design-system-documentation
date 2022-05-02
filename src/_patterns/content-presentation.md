@@ -18,11 +18,11 @@ anchors:
 
 ### Accordions
 
-Use [accordions]({{ site.baseurl }}/components/accordion.html) to hold chunks of sibling content. They can be used in forms in review screens, but for additional context, please use [AdditionalInfo](#additionalinfo).
+Use [accordions]({{ site.baseurl }}/components/accordion) to hold chunks of sibling content. They can be used in forms in review screens, but for additional context, please use [AdditionalInfo](#additionalinfo).
 
 ### Additional info
 
-Use Additional info components in forms to provide additional context. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy.
+Use [additional info]({{ site.baseurl }}/components/additional-info) components in forms to provide additional context. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy.
 
 ### How to Choose?
 

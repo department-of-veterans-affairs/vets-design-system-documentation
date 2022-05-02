@@ -5,7 +5,7 @@ title: Health content
 
 # Health content
 
-Writing health content takes special care because of the medical or clinical nature of some topics that affect people. On VA.gov, we avoid being overly clinical and follow our [content principles](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/content-principles) and person-to-person, empathetic, and conversational voice.
+Writing health content takes special care because of the medical or clinical nature of some topics that affect people. On VA.gov, we avoid being overly clinical and follow our [content principles]({{ site.baseurl }}/content-style-guide/content-principles) and person-to-person, empathetic, and conversational voice.
 
 
 ## 5 tips for writing clear, empathetic, and plain language health content
@@ -60,7 +60,7 @@ Blind Veteran
 ### 2. Avoid overly medical terms or jargon
 But recognize when it’s important to explain specific terms that their health care provider may use. In those cases, use the term along with a plain language definition or examples of symptoms to provide context.
 
-The [word list](https://department-of-veterans-affairs.github.io/vets-design-system-documentation/content-style-guide/word-list) contains common VA jargon and our recommended plain language alternatives.
+The [word list]({{ site.baseurl }}/content-style-guide/word-list) contains common VA jargon and our recommended plain language alternatives.
 
 <div class="do-dont">
 <div class="do-dont__do">

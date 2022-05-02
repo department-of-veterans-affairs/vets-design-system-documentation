@@ -11,7 +11,7 @@ anchors:
 # Float grid
 
 <div class="va-introtext" markdown="1">
-  The float grid is the grid provided by the U.S. Web Design System v1. For a grid that offers more flexibility, see the [flexbox grid](flexbox-grid.html).
+  The float grid is the grid provided by the U.S. Web Design System v1. For a grid that offers more flexibility, see the [flexbox grid](flexbox-grid).
 </div>
 
 {% include _site-on-this-page.html %}

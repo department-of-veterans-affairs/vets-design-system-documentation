@@ -34,11 +34,11 @@ We surface information that is important to Veterans first. The hierarchy of a h
 
 ### Page title (h1)
 
-Tells the user what's on this page, is also important semantically for html, defined in Foundation [here]({{ site.baseurl }}/design/typography.html#headings)
+Tells the user what's on this page, is also important semantically for html, defined in Foundation [here]({{ site.baseurl }}/foundation/typography#headings)
 
 ### Intro text
 
-Similar to the title, Intro text is an executive summary of page content, defined in Foundation [here]({{ site.baseurl }}/design/typography.html#paragraphs). Intro text is also important for SEO.
+Similar to the title, Intro text is an executive summary of page content, defined in Foundation [here]({{ site.baseurl }}/foundation/typography#paragraphs). Intro text is also important for SEO.
 
 ### Jump link navigation (On this page)
 
@@ -50,7 +50,7 @@ In order to be clear when a section begins, we use a "—★★★★★—" vis
 
 ### Section 1 (h2)
 
-The first section on a Hub page template contains information about how a Veteran might go about getting this benefit. Our h2s are defined in [Foundation]({{ site.baseurl }}/design/typography.html#headings)
+The first section on a Hub page template contains information about how a Veteran might go about getting this benefit. Our h2s are defined in [Foundation]({{ site.baseurl }}/foundation/typography#headings)
 
 ### Section 2 (h2)
 
