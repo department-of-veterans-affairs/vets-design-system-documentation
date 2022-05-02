@@ -30,6 +30,11 @@ jobs:
       run: |
         find _site/ -type f ! -iname 'index.html' -iname '*.html' \
         -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+    - uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: "us-gov-west-1"
     - name: Sync extensionless html files with correct type
       run: |
         aws s3 sync _site s3://${{ matrix.bucket}} \
@@ -46,8 +51,4 @@ jobs:
         --exclude "*" \
         --include "*.*" \
         --exclude "storybook/*"
-    - uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: "us-gov-west-1"         
+
