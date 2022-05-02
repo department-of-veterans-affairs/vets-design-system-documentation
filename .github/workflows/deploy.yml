@@ -47,7 +47,3 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: "us-gov-west-1"         
-    - name: S3 Sync Storybook build
-      run: |
-        aws s3 sync ./packages/storybook/storybook-static s3://${{ matrix.bucket }}/storybook --acl public-read --follow-symlinks --delete
- 
