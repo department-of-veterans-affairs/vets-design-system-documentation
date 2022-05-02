@@ -1,0 +1,54 @@
+
+name: Deploy site
+on: push
+
+jobs:
+  deploy:
+    strategy:
+      matrix:
+        bucket: [dev-design.va.gov, staging-design.va.gov]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+      - run: npm install
+      - run: gem install bundler:2.1.4
+      - run: bundle install
+      - run: npm build
+      - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
+      - name: Remove .html extension on non-index files
+        run: |
+          find _site/ -type f ! -iname 'index.html' -iname '*.html' \
+          -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+      - name: Sync extensionless html files with correct type
+        run: |
+          aws s3 sync _site s3://<< parameters.bucket >> \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*" \
+          --exclude "*.*" \
+          --content-type "text/html"
+       - name: Sync remaining files
+         run: |
+          aws s3 sync _site s3://<< parameters.bucket >> \
+          --acl public-read \
+          --delete \
+          --exclude "*" \
+          --include "*.*" \
+          --exclude "storybook/*"
+
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-gov-west-1"         
+      - name: S3 Sync Storybook build
+        run: |
+          aws s3 sync ./packages/storybook/storybook-static s3://${{ matrix.bucket }}/storybook --acl public-read --follow-symlinks --delete
+ 
