@@ -18,7 +18,7 @@ jobs:
         node-version: 14.x
         cache: 'npm'
     - run: npm install
-    - run: gem install bundler:2.1.4
+    # - run: gem install bundler:2.1.4
     - run: bundle install
     - run: npm build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
