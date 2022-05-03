@@ -48,9 +48,9 @@ Use an accordion:
 
 Consider another solution if:
 
-* Users need to see most or all of the information on the page at one time. Use well-formatted text with discriptive headings instead.
+* Users need to see most or all of the information on the page at one time. Use well-formatted text with descriptive headings instead.
 * There is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
-* Users would benefit from seeing additional context for a discrete piece of content. Use the [Addtional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality. 
+* Users would benefit from seeing additional context for a discrete piece of content. Use the [Additional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality, especially in a form. 
 
 See [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content) for more accordion usage guidelines.
 
