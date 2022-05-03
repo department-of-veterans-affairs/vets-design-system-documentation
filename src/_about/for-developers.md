@@ -56,7 +56,7 @@ The example above is what is used on VA.gov, but you can customize this for your
 
 #### Sass functions, variables, and interactive components
 
-If you would like to use the Sass functions, such as for [spacing](../design/spacing-units.html#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
+If you would like to use the Sass functions, such as for [spacing]({{ site.baseurl }}/foundation/spacing-units#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports Formation’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
 
 ### Load the Web Component library
 
@@ -128,15 +128,15 @@ The majority of our web components also fire a `component-library-analytics` eve
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
 
 In general, some rules for implementing design work include:
-- Use [spacing units](../design/spacing-units) instead of hard-coding pixel values for margins and padding
-- Use Sass [variables for colors](../design/color-palette) instead of hex codes
+- Use [spacing units]({{ site.baseurl }}/foundation/spacing-units) instead of hard-coding pixel values for margins and padding
+- Use Sass [variables for colors]({{ site.baseurl }}/foundation/color-palette) instead of hex codes
 - Discuss reusability of new design components and where is the most appropriate home for CSS and JS
 - Use the Formation [naming convention](naming)
 - Do not use ID selectors
 
 #### Use design system utilities
 
-Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites](../foundation/utilities) instead of writing new CSS.
+Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites]({{ site.baseurl }}/foundation/utilities) instead of writing new CSS.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -185,7 +185,7 @@ The two main ways for developers to contribute to the Design System are by writi
 
 ### New components
 
-If you want to contribute something to the Design System, see the [Contributing to the Design System](./contributing-to-the-design-system) page.
+If you want to contribute something to the Design System, see the [Contributing to the Design System]({{ site.baseurl }}/about/contributing-to-the-design-system) page.
 
 <!-- This is commented out until we have something to link to.
 In order for a component to be included in the _official_ Design System, we expect [these criteria to be met]().

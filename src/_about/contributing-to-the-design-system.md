@@ -33,7 +33,7 @@ When considering if a component or pattern should be added to the design system 
 
 ### What is an experimental component or pattern?
 
-An experimental component or pattern is something that is being explored by a team on VA.gov, but has not yet been validated sufficiently by our Veterans and caregivers to become an official design system component or pattern. Thus on the [maturity scale it will be marked as "Use with caution"]({{ site.baseurl }}/about/maturity-scale/) at the top of any component or pattern page.
+An experimental component or pattern is something that is being explored by a team on VA.gov, but has not yet been validated sufficiently by our Veterans and caregivers to become an official design system component or pattern. Thus on the [maturity scale it will be marked as "Use with caution"]({{ site.baseurl }}/about/maturity-scale) at the top of any component or pattern page.
 
 ### Why showcase experimental components and patterns?
 
@@ -132,7 +132,7 @@ Once merged, the markdown you update will automatically be migrated to the exper
 ### 5. Validate your design
 In order to get your component or pattern moved from the Experimental section to the official design system, you or your team need to do research or usability testing to validate. When you initially submit your design to the experimental system, the council is happy to provide thoughts and feedback on your validation approach. 
 
-Once you have data from your research, write the results of the research on your experimental component page. [An example can be seen here]({{ site.baseurl }}/experimental-design/expandable-alert).
+Once you have data from your research, write the results of the research on your experimental component page. [An example can be seen here]({{ site.baseurl }}/components/alert-expandable).
 
 If an experimental component or pattern sits on design.va.gov for 6 months with no validation documented, it will be removed by the design system team.
 

@@ -35,7 +35,7 @@ Change the visibility characteristics of an element
 
 ## Guidance
 
-- If you want to hide an element visually and from screen readers as well as discard the space where it would have been, consider using a [display utility](display.html) instead.
+- If you want to hide an element visually and from screen readers as well as discard the space where it would have been, consider using a [display utility](display) instead.
 
 
 ## Responsive prefixes

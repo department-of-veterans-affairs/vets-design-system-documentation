@@ -9,6 +9,7 @@ status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-radio
 ---
@@ -31,6 +32,8 @@ web-component: va-radio
 - Options that are listed vertically are easier to read than those that are listed horizontally. Horizontal listings can make it difficult to tell which label pertains to which radio button.
 - If you customize, make sure selections are adequately spaced for touch screens.
 - Use caution if you decide to set a default value. Setting a default value can discourage users from making conscious decisions, seem pushy, or alienate users who don’t fit into your assumptions. If you are unsure, leave nothing selected by default.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 

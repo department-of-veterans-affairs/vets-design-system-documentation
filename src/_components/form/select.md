@@ -9,6 +9,7 @@ status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-select
 ---
@@ -26,7 +27,7 @@ web-component: va-select
 - If the list of options is very short. Use radio buttons instead.
 - If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.
 - If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from select boxes. Use checkboxes instead.
-- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link](/design/typography#links) or the [Sidenav component](/components/sidenav).
+- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link]({{ site.baseurl }}/components/link) or the [sidenav component]({{ site.baseurl }}/components/sidenav).
 
 ## How to use
 
@@ -35,6 +36,8 @@ web-component: va-select
 - Avoid making options in one select box menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.
 - When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
 - Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
