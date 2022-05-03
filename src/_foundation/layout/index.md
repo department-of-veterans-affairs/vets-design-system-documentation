@@ -22,4 +22,4 @@ We have two types of grids. One is the float grid (whereas "float" refers to the
 
 ## Page layouts
 
-This section includes common page layouts used on VA.gov.
+This section includes common page layouts used on VA.gov. 
