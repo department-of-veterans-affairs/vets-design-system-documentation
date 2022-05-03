@@ -24,6 +24,11 @@ jobs:
     - run: npm install
     - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
+    # We are taking these extra steps due to some differences between Jekyll and AWS S3.
+    # To access a .html file served from S3, the URL needs to have the .html extension.
+    # We're removing the extension to make the URLs prettier.
+    # More context:
+    #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
     - name: Remove .html extension on non-index files
       run: |
         find _site/ -type f ! -iname 'index.html' -iname '*.html' \
