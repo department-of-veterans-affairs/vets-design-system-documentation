@@ -1,4 +1,3 @@
-
 name: Deploy site
 on: push
 
@@ -10,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      # with:
-      #   ref: master
     - name: Use Node.js 14.x
       uses: actions/setup-node@v2
       with:
@@ -19,7 +16,6 @@ jobs:
         cache: 'npm'
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7.5 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: npm install
     - run: npm run-script build
@@ -49,4 +45,3 @@ jobs:
         --exclude "*" \
         --include "*.*" \
         --exclude "storybook/*"
-
