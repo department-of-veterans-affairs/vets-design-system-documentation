@@ -10,6 +10,13 @@ title: What’s new?
 </div>
 
 ---
+### May 03, 2022
+
+**Design System updates**
+
+- [Number input web component](https://design.va.gov/components/form/number-input)
+
+---
 ### April 25, 2022
 
 - System wide navigation changes
