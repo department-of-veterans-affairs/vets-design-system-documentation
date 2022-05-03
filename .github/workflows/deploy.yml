@@ -6,7 +6,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        bucket: [dev-design.va.gov]
+        environment: [{ bucket: dev-design.va.gov, config: dev.yml }]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: npm install
     - run: npm run-script build
-    - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
+    - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
     - name: Remove .html extension on non-index files
       run: |
         find _site/ -type f ! -iname 'index.html' -iname '*.html' \
@@ -35,7 +35,7 @@ jobs:
         aws-region: "us-gov-west-1"
     - name: Sync extensionless html files with correct type
       run: |
-        aws s3 sync _site s3://${{ matrix.bucket}} \
+        aws s3 sync _site s3://${{ matrix.environment.bucket }} \
         --acl public-read \
         --delete \
         --exclude "storybook/*" \
@@ -43,7 +43,7 @@ jobs:
         --content-type "text/html"
     - name: Sync remaining files
       run: |
-        aws s3 sync _site s3://${{ matrix.bucket}} \
+        aws s3 sync _site s3://${{ matrix.environment.bucket }} \
         --acl public-read \
         --delete \
         --exclude "*" \
