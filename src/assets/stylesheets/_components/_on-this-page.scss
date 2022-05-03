@@ -22,9 +22,13 @@
   &__link {
     display: flex;
     align-items: baseline;
+    text-decoration: none;
     padding: 0.5em;
     line-height: 1.5em;
     max-width: 285px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-property: color, background-color, border-color;
   }
 
   &__link i {
