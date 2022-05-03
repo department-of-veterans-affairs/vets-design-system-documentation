@@ -4,9 +4,7 @@ title: Components
 index: true
 ---
 
-# Components TESTING
-
-Some stuff here - deployed to dev?
+# Components
 
 <div class="va-introtext" markdown="1">
 Components are interactive and non-interactive UI elements that can be grouped together or presented individually. They are independent, reusable chunks of a user interface.
