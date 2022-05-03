@@ -103,7 +103,7 @@ Hyperlink all phone numbers, including TTY numbers. Use the following source cod
 
 - `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>` 
 
-- `<a href="tel:711" aria-label="TTY. 7 1 1.">711</a>`. 
+- `<a href="tel:711" aria-label="TTY. 7 1 1.">TTY: 711</a>`. 
 
 Including the aria label tells screen readers to read the phone number one digit at a time like a phone number, rather than as thousands or hundreds.
 
