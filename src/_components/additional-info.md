@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Additional info
-intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations."
+intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Additional info component to situate plain language help at the point of the process where it is most relevant."
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C28D2A57-71E4-4EDF-8FBA-87C6D858BF60
 status: use-deployed
 web-component: va-additional-info
@@ -31,7 +31,7 @@ anchors:
 
 * **Revealing helpful background information**: When you have additional information you want to convey about an application, process, or a step or question in a form that is not critical. This component should be used in instances where a more prominent [Alert]({{ site.baseurl }}/components/alert) would not be appropriate.
 * **Clarifying outcomes for an input**: In cases where a person's input can have large or complicated impact on outcomes we use contextual help in Additional info to locate expanded guidance next to the relevant interaction.
-* **Clarifying a form question**: If a form question needs clarification, and that clarification is brief, use Additional info. If a form is a conversation, Additional info would be considered an aside. (This <a href="https://blog.navapbc.com/structuring-a-complex-eligibility-form-for-healthcare-gov-37d79a5ad6">case study on structuring complex health care questions for healthcare.gov</a> goes into greater detail on how to structure your form as a conversation.)
+* **Clarifying a form question**: If a form question needs clarification, and that clarification is brief, use Additional info. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy. If a form is a conversation, Additional info would be considered an aside. (This <a href="https://blog.navapbc.com/structuring-a-complex-eligibility-form-for-healthcare-gov-37d79a5ad6">case study on structuring complex health care questions for healthcare.gov</a> goes into greater detail on how to structure your form as a conversation.)
 * **Information not applicable to all**: Additional info can hide details that may not be applicable to all users.
 
 ### When to consider something else
@@ -68,20 +68,25 @@ The following are places where Additional info can be used:
 
 #### Revealing helpful background information in a form 
 
-_The following example depicts how to use contextual help to describe a medical condition if the user is unsure what to call it._
-
-<div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
-    <h5>Closed (default)</h5>
-    <img src="/images/additional-info-closed.png">
-  </div>
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
-    <h5>Open</h5>
-    <img src="/images/additional-info-open.png">
-  </div>
-</div>
-
 Most VA forms have a large amount of instructional text that tries to make VA processes, or the requirements of the application process clear. Unfortunately they are frequently several pages of tiny type that the person has to read and retain. Much of it may not even be relevant to that specific person’s situation. We use the Additional info component to situate plain language help at the point of the process where it is most relevant. For example, a group of three inputs that make sense in a particular order, and the middle one has some nuance to it.
+
+<h5>Closed (default)</h5>
+{% include component-example.html alt="Example of this component in the closed state being used for contextual help." file="/images/components/additional-info/additional-info-closed.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." %}
+
+<h5>Open</h5>
+{% include component-example.html alt="Example of this component in the open state being used for contextual help." file="/images/components/additional-info/additional-info-open.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." %}
+
+
+#### Within a Process list
+<figure class="site-component-example">
+  <img alt="Example of this component used within a process list component" src="{{ site.baseurl }}/images/components/additional-info/example-in-process-list.png" class="site-component-example__image">
+  <figcaption class="site-component-example__caption">
+    Use within a <a href="{{ site.baseurl }}/components/process-list">process list</a> in <a href="https://www.va.gov/health-care/apply/application/introduction">Apply for VA health care</a>
+  </figcaption>
+</figure>
+
+#### Below a primary call-to-action
+{% include component-example.html alt="Example of this component used to provide instructions in another language" file="/images/components/additional-info/example-for-instructions.png" caption="Use below a primary call-to-action button to get instructions in an additional language in <a href=\"https://www.va.gov/health-care/how-to-apply/\">How to apply for VA health care</a>" %}
 
 
 
@@ -97,6 +102,7 @@ Most VA forms have a large amount of instructional text that tries to make VA pr
 * The Additional Info component should be validated to meet the WCAG 2.1 AA accessibility guidelines.
 * The Additional Info component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
 * Pressing the close button (a element with role of button) must close the Additional Info.
+* The link element that acts as the trigger for the drawer to open and close has a role of heading so it can be found in the page. Setting an aria-level is recommended.
 
 ## Related
 
