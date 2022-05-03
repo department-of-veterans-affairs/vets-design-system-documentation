@@ -22,8 +22,6 @@ jobs:
         ruby-version: 2.7.5 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: npm install
-    # - run: gem install bundler:2.1.4
-    # - run: bundle install
     - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
     - name: Remove .html extension on non-index files
