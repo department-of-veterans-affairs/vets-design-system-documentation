@@ -1,7 +1,9 @@
 {% if page.sub-pages %}
 <nav aria-labelledby="in-this-section" class="site-in-this-section">
-  <h2 id="on-this-page" class="site-in-this-section__title">In this section</h2>
-  <ul class="site-in-this-section__list">
+  <dt id="in-this-section" role="heading" aria-level="2" class="site-in-this-section__title">
+    In this section
+  </dt>
+  <dl class="site-in-this-section__list">
     {% for item in page.sub-pages%}
     <dd role="definition" class="site-in-this-section__definition">
       <a
@@ -12,6 +14,6 @@
       </a>
     </dd>
     {% endfor %}
-  </ul>
+  </dl>
 </nav>
 {% endif %}

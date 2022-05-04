@@ -17,6 +17,13 @@ title: What’s new?
 - [Date web component](https://design.va.gov/components/form/date-input)
 
 ---
+### May 03, 2022
+
+**Design System updates**
+
+- [Number input web component](https://design.va.gov/components/form/number-input)
+
+---
 ### April 25, 2022
 
 - System wide navigation changes

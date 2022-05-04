@@ -30,7 +30,7 @@ web-component: va-text-input
 
 This should be used in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links. 
 
-Note that in general we want to avoid this pattern - if a field needs a lot of explanation, it should ideally be moved to its own page with explanation on the page itself. [See other options for Hint text](#hint-text)
+Note that in general we want to avoid this pattern - if a field needs a lot of explanation, it should ideally be moved to its own page with explanation on the page itself. [See other options for Hint text]({{ site.baseurl }}/components/form/#hint-text)
 
 {% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input--with-hint-text" %}
 
