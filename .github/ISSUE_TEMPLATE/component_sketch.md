@@ -9,7 +9,8 @@ assignees: caw310, GnatalieH
 
 ## Configuring this issue
 - [ ] Add issue to appropriate epic
-- [ ] Add Design System component label
+- [ ] Add Design System component label (such as `va-alert`)
+- [ ] Add `component-new` or `component-update` label, if applicable
 - [ ] Complete sections below
 - [ ] Delete this section once complete
 
