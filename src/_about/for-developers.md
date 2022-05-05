@@ -27,7 +27,7 @@ slug: developers
 
 ## Using the Design System
 
-**If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://department-of-veterans-affairs.github.io/veteran-facing-services-tools/). Otherwise, proceed below.
+**If you are working in the vets-website repository**, you can skip straight to the [developer documentation](https://depo-platform-documentation.scrollhelp.site/developer-docs/Frontend-developer-documentation.687931428.html). Otherwise, proceed below.
 
 How you implement VADS styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the `formation` styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
 
