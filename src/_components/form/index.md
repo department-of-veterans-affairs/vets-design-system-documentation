@@ -4,12 +4,13 @@ permalink: /components/form/
 title: Form
 intro-text: "Form controls allow users to enter information."
 sub-pages:
-  - sub-page: Text inputs
-  - sub-page: Number input
-  - sub-page: Select
   - sub-page: Checkbox
-  - sub-page: Radio button
   - sub-page: Date input
+  - sub-page: Label
+  - sub-page: Number input
+  - sub-page: Radio button
+  - sub-page: Select
+  - sub-page: Text inputs
 ---
 
 {% include _site-in-this-section.html %}

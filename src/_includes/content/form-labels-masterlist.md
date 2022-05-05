@@ -1,11 +1,3 @@
----
-layout: pattern
-title: Form labels
-status: use-deployed
-intro-text: "A list of standardized form labels that appear on VA.gov forms. This list is a continued work in progress as each form is unique and has specific labels and questions. As we migrate more forms online, we'll continue to add plain-language labels to this list."
----
-
-
 | **Form section**              | **Plain-language label or question**                                                                                                                                                                        | **Followup label or question**                                                                                                                                                                                                         | **Form notes**                                        |     |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | --- |
 | **Applicant information**     | Your first name                                                                                                                                                                                             |                                                                                                                                                                                                                                        |                                                       |
@@ -209,4 +201,3 @@ intro-text: "A list of standardized form labels that appear on VA.gov forms. Thi
 |                               |                                                                                                                                                                                                             |                                                                                                                                                                                                                                        |
 
 | Last updated: 3/11/2021
-
