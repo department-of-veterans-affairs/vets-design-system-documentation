@@ -12,6 +12,11 @@ sub-pages:
   - sub-page: Date input
 ---
 
+<div class="feature">
+View documentation for the current forms library for VA.gov on <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-Library-Overview.2085355587.html">the platform website</a>.
+</div>
+
+
 {% include _site-in-this-section.html %}
 
 ## How to group form controls
