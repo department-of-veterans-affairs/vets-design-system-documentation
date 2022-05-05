@@ -19,7 +19,7 @@ sub-pages:
 <div class="feature">
   <h3>Forms system documentation</h3>
   <p>The current forms library is considered a legacy product and is in maintenance mode. A new forms library is under development.</p>
-  <p>View documentation for the current forms library for VA.gov on <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-Library-Overview.2085355587.html">the platform website</a>.</p>
+  <p>View documentation for the current forms library for VA.gov on <a href="{{ site.forms_system_link }}">the platform website</a>.</p>
 </div>
 
 - Group each set of thematically related controls in a `fieldset` element. Use the `legend` element as a heading within each one. The `fieldset` and `legend` elements make it easier for screen reader users to navigate the form.
