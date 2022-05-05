@@ -28,7 +28,7 @@ Build a web component of [component name].
 - [ ] Ping designer for design review
 - [ ] Once accessibility and design reviews are complete, alert Carol that component is ready for staging review
 - [ ] Address any staging review comments
-- [ ] Set maturity scale to "Use with Caution: Available"
+- [ ] Display the appropriate [maturity scale](https://design.va.gov/about/maturity-scale) option in Storybook (once this feature is available)
 - [ ] Merge component
 
 ## Acceptance Criteria
