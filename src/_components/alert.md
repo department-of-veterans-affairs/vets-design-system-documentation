@@ -4,15 +4,18 @@ title: Alert
 status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5E24F540-2558-488C-BD6D-823F4A2F5607
 anchors:
-  - anchor: Examples
+  - anchor: Examples - Default
+  - anchor: Examples - Default variations
+  - anchor: Examples - Background color only
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-alert
 ---
 
-## Examples
+## Examples - Default
 ### Informational alert
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
@@ -43,6 +46,40 @@ Used to prompt a user to sign in, create an account, or launch an online tool to
 
 {% include storybook-preview.html story="components-va-alert--continue" %}
 
+## Examples - Default variations
+
+### Heading level
+
+Alerts can contain headings.
+
+{% include storybook-preview.html story="components-va-alert--heading-level" %}
+
+### Dismissible 
+
+* Any alert variation can be dismissible. This example shows an informational alert that can be dismissed.
+* Allow a user to dismiss a notification wherever appropriate.
+
+{% include storybook-preview.html story="components-va-alert--closeable" %}
+
+### Full-width
+
+Full-width alerts are used only for emergency or urgent communications and should appear below the main navigation. 
+
+#### Warning
+
+{% include storybook-preview.html story="components-va-alert--fullwidth" %}
+
+#### More about the full-width variation
+
+- Only available in `info` or `warning` alerts.
+- Content inside alert remains aligned to the main page grid container. This might not be apparent on this site in smaller screens.
+- Use for emergency or very urgent communications only. For example, a hurricane alert; government shutdown affecting VA services, etc. Emergency homepage alerts notify Veterans, VA employees, and the public of events that affect VA services or site features.
+- To ensure that customers always know they can find critical service information in this area, don’t use emergency homepage alerts for general press, outreach, or administrative messages.
+- Don’t stack - max is one full-width alert per page at any one time. (If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.)
+- Can be used on homepage or, in true emergencies, on lower-level pages.
+
+## Examples - Background color only
+
 ### Background color only alert
 
 Any style of alert box can be modified to be a background-color-only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
@@ -53,28 +90,11 @@ Any style of alert box can be modified to be a background-color-only alert. Use 
 - Messaging should be direct and concise. Aim for one or two lines.
 - Don’t use headings in background alerts.
 
-#### Background color only alert with icon
+### Background color only alert with icon
 
 A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert boxes.
 
 {% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="352px" %}
-
-### Full-width alerts
-
-Full-width alerts are used only for emergency or urgent communications and should appear below the main navigation. 
-
-#### Warning
-
-{% include storybook-preview.html story="components-va-alert--fullwidth" %}
-
-#### More about full-width alerts
-
-- Only available in `info` or `warning` variants.
-- Content inside alert remains aligned to the main page grid container. This might not be apparent on this site in smaller screens.
-- Use for emergency or very urgent communications only. For example, a hurricane alert; government shutdown affecting VA services, etc. Emergency homepage alerts notify Veterans, VA employees, and the public of events that affect VA services or site features.
-- To ensure that customers always know they can find critical service information in this area, don’t use emergency homepage alerts for general press, outreach, or administrative messages.
-- Don’t stack - max is one full-width alert per page at any one time. (If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.)
-- Can be used on homepage or, in true emergencies, on lower-level pages.
 
 ## Usage
 
@@ -103,5 +123,5 @@ When the user is required to do something in response to an alert, let them know
 
 ## Accessibility considerations
 
-Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that isn’t interactive. If the message is interactive, use the `alertdialog` role instead.
-Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+* Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that isn’t interactive. If the message is interactive, use the `alertdialog` role instead.
+* Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
