@@ -17,15 +17,15 @@ sub-pages:
   - sub-page: Signature
 ---
 
+{% include _site-in-this-section.html %}
+
+## Getting Started with VA.gov Forms
+
 <div class="feature">
   <h3>Forms system documentation</h3>
   <p>The current forms library is considered a legacy product and is in maintenance mode. A new forms library is under development.</p>
   <p>View documentation for the current forms library for VA.gov on <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-Library-Overview.2085355587.html">the platform website</a>.</p>
 </div>
-
-{% include _site-in-this-section.html %}
-
-# Getting Started with VA.gov Forms
 
 _Compiled by:_ Shawna Hein, VSA Design Lead
 
