@@ -1,11 +1,17 @@
 ---
-name: "New DS component - Design"
+name: "DS component - Design"
 about: INTERNAL DST USE ONLY
 title: [component name] - Design
 labels: vsp-design-system-team
 assignees: caw310, GnatalieH
 
 ---
+
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add Design System component label
+- [ ] Complete sections below
+- [ ] Delete this section once complete
 
 ## Description
 Create design for [component name].

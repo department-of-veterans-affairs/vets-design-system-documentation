@@ -6,8 +6,11 @@ labels: vsp-design-system-team
 assignees: caw310, k80bowman
 
 ---
-
-
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add Design System component label
+- [ ] Complete sections below
+- [ ] Delete this section once complete
 ## Issue Description
 We need to conduct a full accessibility review of the [component name] component. The component can be viewed in Storybook here: [insert Chromatic link here]
 

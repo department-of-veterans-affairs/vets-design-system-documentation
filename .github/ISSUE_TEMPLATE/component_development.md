@@ -1,11 +1,17 @@
 ---
-name: "New DS component - Development"
+name: "DS component - Development"
 about: INTERNAL DST USE ONLY
 title: [component name] - Development
 labels: vsp-design-system-team
 assignees: caw310, k80bowman
 
 ---
+
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add Design System component label
+- [ ] Complete sections below
+- [ ] Delete this section once complete
 
 ## Description
 Build a web component of [component name].

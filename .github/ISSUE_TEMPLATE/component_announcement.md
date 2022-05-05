@@ -1,11 +1,17 @@
 ---
-name: "New DS component - Announcement"
+name: "DS component - Announcement"
 about: INTERNAL DST USE ONLY
 title: [component name] - Announcement
 labels: vsp-design-system-team
 assignees: caw310, k80bowman
 
 ---
+
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add Design System component label
+- [ ] Complete sections below
+- [ ] Delete this section once complete
 
 ## Description
 Announce that [component name] is ready for use and add it to the "What's New" page on design.va.gov.
