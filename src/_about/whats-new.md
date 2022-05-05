@@ -9,6 +9,26 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+### May 05, 2022
+
+**Design System updates**
+
+- [Modal web component](https://design.va.gov/components/modal)
+
+---
+### May 04, 2022
+
+**Design System updates**
+
+- [Date web component](https://design.va.gov/components/form/date-input)
+
+---
+### May 03, 2022
+
+**Design System updates**
+
+- [Number input web component](https://design.va.gov/components/form/number-input)
+
 ---
 ### April 25, 2022
 

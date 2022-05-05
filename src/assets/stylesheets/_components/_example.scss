@@ -1,0 +1,21 @@
+.site-component-example {
+  margin: units(2) 0 units(3) 0;
+  border: 1px solid $color-gray-lighter;
+  background-color: $color-gray-lightest;
+  border-radius: 0.4rem;
+
+  &__image {
+    padding: units(2) 0 0 units(2);
+
+    @include media($medium-screen) {
+      width: 75%;
+      max-width: 600px;
+    }
+  }
+
+  &__caption {
+    padding: units(1) units(2);
+    color: $color-base;
+    font-size: 1.5rem;
+  }
+}

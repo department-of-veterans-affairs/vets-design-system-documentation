@@ -68,7 +68,7 @@ First things first. Forms on VA.gov typically consist of:
 
 For numbers 3-4 mentioned above, users are given guidance on where they are in the form using a segmented progress bar.  Each segment of the bar represents a “chapter” in the form.  Note that there can be multiple “pages” within each chapter, so the bar does not always increment when the user clicks between pages.
 
-For a bit of context on the technical side, [read up on the form system](https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-Library-Overview.2085355587.html) and/or [watch the quick demo Chris V. gave to the VSA design team](https://zoom.us/rec/share/x5FpP7XC1DJOYZ3d933GUagdMInqeaa82ilM-KcLzUxo_-q1CWuJcUJVwzaPXTp_) in Feb. 2020 (pw: vsadesign)
+For a bit of context on the technical side, [read up on the form system]({{ site.forms_system_link }}) and/or [watch the quick demo Chris V. gave to the VSA design team](https://zoom.us/rec/share/x5FpP7XC1DJOYZ3d933GUagdMInqeaa82ilM-KcLzUxo_-q1CWuJcUJVwzaPXTp_) in Feb. 2020 (pw: vsadesign) 
 
 ### Content Pages
 Typically, there is a Drupal content page that a user can read before entering an online form, where they learn about eligibility and how to apply.  This page can have wizards, buttons, and/or application status widgets that link to the form.
@@ -105,7 +105,7 @@ Some examples start here (use the right arrow key to navigate through): [https:/
 #### Addresses
 Many forms have sections where users are asked to review and/or edit an address. 
 
-If the user is editing an address, if possible, make sure it only is editing the address for that particular form and is not necesssarily editing the profile address on file. Use the following language on the form to make that clear to folks:
+If the user is editing an address, if possible, make sure it only is editing the address for that particular form and is not necessarily editing the profile address on file. Use the following language on the form to make that clear to folks:
 
 `This is the address we have on file for you. Any updates you make here to your address will apply only to this application.
 {address form fields, etc..}.` 
@@ -133,11 +133,13 @@ There is a [Form labels master list](https://github.com/department-of-veterans-a
 If you want to give users direction on how to fill in a field, current standard is to put it in parenthesis next to the form label or question, e.g. “Street address (20 characters maximum ) *Required”
 
 #### Other Components
-* [Error messages](https://design.va.gov/content-style-guide/error-messages)
-* [Supplemental / Learn More pattern](https://design.va.gov/patterns/supplemental-content)
-* [Step by step “Wizard” / Revealing more questions](https://design.va.gov/patterns/wizards)
+
+* [Error messages]({{ site.baseurl }}/content-style-guide/error-messages)
+* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Step by step “Wizard” / Revealing more questions]({{ site.baseurl }}/patterns/wizards)
 
 ### The Review Page
+
 Example here: [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903673](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903673)
 
 This page consists primarily of accordions the user can expand to view and edit the data they have entered.
@@ -147,6 +149,7 @@ If you have designed custom components throughout the form, those components als
 It also can include checkboxes or signature boxes. 
 
 ### The Confirmation Page
+
 [Guidelines for confirmation page can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-confirmation-page.md)
 
 Examples of [confirmation pages in the wild can be seen here](https://dsva.slack.com/archives/C0NGDDXME/p1579042705077800)
@@ -235,4 +238,4 @@ The Design System Council will tell you what to do here soon….!
 
 **What are the constraints of the Form Builder tool?  Can we extend it / change it?**
 
-VSP is responsible for the forms system. extensive changes should involve the VSP FE Tools team (#vsp-tools-fe on slack) early, but it’s open to contribution by everyone. Some thoughts on this are in this thread https://dsva.slack.com/archives/CBU0KDSB1/p1580237084228800
+VSP is responsible for the forms system. extensive changes should involve the VSP FE Tools team (#vsp-tools-fe on slack) early, but it’s open to contribution by everyone. Some thoughts on this are in [this slack thread](https://dsva.slack.com/archives/CBU0KDSB1/p1580237084228800)
