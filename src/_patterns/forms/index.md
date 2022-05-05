@@ -233,4 +233,4 @@ The Design System Council will tell you what to do here soon….!
 
 **What are the constraints of the Form Builder tool?  Can we extend it / change it?**
 
-VSP is responsible for the forms system. extensive changes should involve the VSP FE Tools team (#vsp-tools-fe on slack) early, but it’s open to contribution by everyone. Some thoughts on this are in this thread https://dsva.slack.com/archives/CBU0KDSB1/p1580237084228800
+VSP is responsible for the forms system. extensive changes should involve the VSP FE Tools team (#vsp-tools-fe on slack) early, but it’s open to contribution by everyone. Some thoughts on this are in [this slack thread](https://dsva.slack.com/archives/CBU0KDSB1/p1580237084228800)
