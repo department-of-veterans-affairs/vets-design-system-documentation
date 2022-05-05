@@ -29,18 +29,19 @@
 .site-component-status--use-with-caution-available,
 .site-component-status--use-with-caution-candidate {
   background-color: $color-orange; 
+  color: $color-base;
 }
 .site-sidenav-status--use-with-caution-available,
 .site-sidenav-status--use-with-caution-candidate {
-  color: $color-orange; 
+  color: $color-orange;
 }
 
 .site-component-status--dont-use,
 .site-component-status--dont-use-proposed,
 .site-component-status--dont-use-deprecated {
-  background-color: $color-secondary-dark;
+  background-color: $color-secondary-darkest;
 }
 .site-sidenav-status--dont-use-proposed,
 .site-sidenav-status--dont-use-deprecated {
-  color: $color-secondary-dark;
+  color: $color-secondary-darkest;
 }
