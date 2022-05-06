@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: pattern
 title: Benefit applications
-draft: true
+status: use-deployed
+intro-text: "Users can apply for benefits in any of the benefit hubs on VA.gov. The policies and regulations around these benefits are very complex, and users often have difficulty determining if they are eligible, what they need to provide, and what to expect after they've submitted their application. For these reasons, Benefit applications, as a pattern, is divided into four distinct \"epics\" that help users navigate the process from start to finish."
 anchors:
   - anchor: Eligibility
   - anchor: How to apply
@@ -9,16 +10,7 @@ anchors:
   - anchor: After you apply
 ---
 
-# Benefit applications
-
-<p class="va-introtext">Benefit applications are where users can go to apply for benefits in any of the benefit hubs on VA.gov. The policies and regulations around these benefits are very complex, and users often have difficulty determining if they are eligible, what they need to provide, and what to expect after they've submitted their application. For this reason, benefit applications, as a pattern, are divided into four distinct "epics" that help users navigate the process from start to finish.</p>
-
-The four epics typically found within each benefit application are:
-
-1. [Eligibility](#eligibility)
-2. [How to apply](#how-to-apply)
-3. [Apply now](#application-introduction-apply-page)
-4. [After you apply](#after-you-apply)
+Each benefit application has four epics: Eligibility, How to apply, Apply now, and After you apply.
 
 Structuring benefit applications in this way has, through rigorous usability testing, demonstrably improved how to educate users about the benefits and how to set expectations about the application process. For the Department of Veterans Affairs, this means that applications are more accurate and complete, so the Department to better serves its constituents.
 
@@ -63,13 +55,13 @@ The featured content component is used to present the user with the most commonl
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Don’t</h3>
 <div class="do-dont__content" markdown="1">
-<p>Use two or more featured components for multiple scenarios, because their can't be more than one that is the most common. Use other page elements for this purpose.</p>
+<p>Use two or more featured components for multiple scenarios, because there can't be more than one that is the most common. Use other page elements for this purpose.</p>
 ![eligibility_page_heirarchy](/images/featured-content-dont.png) 
 </div>
 </div>
 </div>
 
-[View the featured content component](https://design.va.gov/components/featured-content).
+[View the featured content component]({{ site.baseurl }}/components/featured-content).
 
 #### C. Additional eligibility information &amp; scenarios
 
@@ -79,27 +71,36 @@ Benefit eligibility or requirements information that is more nuanced than the su
 
 #### D. Optional: Eligibility change announcement
 
-When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an informational alert box on this page. Follow the recommendations governing alert box usage, including
+When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an informational alert on this page. Follow the recommendations governing alert usage, including
 * Use informational alerts to announce upcoming benefits
-* Use inoformational alert boxes with expandable content to hide detail that may not apply to everyone visiting the page
+* Use informational alerts with expandable content to hide detail that may not apply to everyone visiting the page
 
-[View the alert box component](https://design.va.gov/components/alertboxes).
+[View the alert component]({{ site.baseurl }}/components/alert).
 
-#### E. How to apply heading and primary call-to-action button
+#### E. How to apply heading and wizard button or action link
 
-A brief heading should precede and call attention to the primary call to action button. This heading can be followed by an optional single sentence of text or phrase if necessary.
+A brief heading should precede and call attention to the wizard button or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
-The button will lead the user/applicant to one of two places: either the application flow for the benefit or a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
 
-Having a single green button on the page helps the user follow the most logical path. Note: never put more than one green button on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
+If the page does not have a wizard and you want to direct your user to the application flow, use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
 
-The button can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
+Having a single green button or action link on the page helps the user follow the most logical path. 
+Note: never put more than one green button or action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
 
-[View the button component](https://design.va.gov/components/buttons).
+The button or action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
 
-##### F.Optional: Wizard pattern for branching eligibility choices
+[View the button component]({{ site.baseurl }}/components/button).
 
-In the case where there are multiple benefit options, the [Wizard pattern](https://design.va.gov/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
+[View the action link component]({{ site.baseurl }}/components/action-link).
+
+**Accessibility considerations** 
+
+Screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as a wizard button or action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information (that may be important to that call to action) could exist below that call to action. Therefore, please be mindful about placing important content below the key call to action.
+
+#### F. Optional: Wizard pattern for branching eligibility choices
+
+In the case where there are multiple benefit options, the [Wizard pattern]({{ site.baseurl }}/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
 
 The text on the primary green button should represent the job the wizard is performing, such as “Find your education benefits form.”
 
@@ -111,7 +112,7 @@ Any additional content necessary that is connected to the primary benefit eligib
 
 Use the accordion component to present questions that are common about eligibility for a benefit.
 
-[View the accordion component](https://design.va.gov/components/accordions).
+[View the accordion component]({{ site.baseurl }}/components/accordion).
 
 #### I. Optional: Related benefits content
 
@@ -129,23 +130,26 @@ The introduction describes what the page is about. For the “How to apply” pa
 * The benefit(s) the application is for
 * The type(s) of users the application is aimed at (Veteran, service member, qualified family member)
 * A link back to the Eligiblity page to send users to the Eligibility page to ensure they're eligible for benefit
-* SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
+* SEO keywords (See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo).)
 
 ### Preparing to apply (informational callout)
-On the “How to apply” page, use the [informational callout](https://design.va.gov/patterns/content-presentation) box to present chunked, scannable snippets of critical information needed by the majority of applicants. For example,
+On the “How to apply” page, use the [informational callout]({{ site.baseurl }}/patterns/content-presentation) box to present chunked, scannable snippets of critical information needed by the majority of applicants. For example,
 
 * Describe what a user needs to do before they begin the application
 * List items needed to complete the application (SSN, military history, etc.). Required items should be called out.
 
-Note: The blue [informational callout](https://design.va.gov/patterns/content-presentation) box should only be used for the most important information on the page. Since it includes critical information, the callout should appear near the top of the page.
+Note: The blue [informational callout]({{ site.baseurl }}/patterns/content-presentation) box should only be used for the most important information on the page. Since it includes critical information, the callout should appear near the top of the page.
 
 ### How do I apply?
 The “How do I apply" section lists possible application methods. It should emphasize the optimal path for Veterans, (which may be how to get help from a human instead of online help.) Some common application methods are:
 * Online
-   * Green CTA button
-   The button will lead the user/applicant to one of two places: either the application flow for the benefit or a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+   * Wizard button
+   If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+   * Action link
+   If the page does not have a wizard and you want to direct your user to the application flow. Use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
 
-**Note:** never put more than one green button on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).   
+**Note:** never put more than one green button or green action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).   
+
    
 * By mail
    * Link to the printable application form
@@ -197,12 +201,12 @@ At the top of the introduction page, is a sign in message. There are two differe
 
 **Message when a user is signed in:**
 - Lets applicant know they are signed in and can save their work as they go
-- Green CTA button
+- Primary (green) action link 
 
-![how-to-apply_unauth-message](/images/how-to-apply_auth-message.png)
+![how-to-apply_unauth-message](/images/benefit-apps-action-link.png)
 
 ### Subway map
-[Subway or process map](https://design.va.gov/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
+[Subway or process map]({{ site.baseurl }}/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
 
 **Prepare**
 - Gives the applicant the information they’ll need to fill out the form, such as if they need to submit any documentation or provide their SSN, bank information, military history, spouse information, etc.
@@ -227,7 +231,6 @@ The step tells applicants how much time it takes VA to review the application. T
 
   * xxxyxlxlx
   * xxxyxlxlx
-  *
 
 **VA decision**
 
@@ -243,7 +246,7 @@ This appears at the bottom of the Apply page and shows:
 This footer appears on the bottom of every page of the form. It includes phone numbers if an applicant needs more support or has questions about filling out the form.
 
 ### Optional: Other components on the Apply page
-Depending on the type of benefit, an [alert box](https://design.va.gov/components/alertboxes) is sometimes included with specific inforomation or detail about that benefit.
+Depending on the type of benefit, an [alert]({{ site.baseurl }}/components/alert) is sometimes included with specific inforomation or detail about that benefit.
 
 This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
 
@@ -265,10 +268,10 @@ The page title should be: "After you apply for (Most Commonly Used Benefit Name)
 ### Introduction
 The introduction describes what will happen next in the application process after an applicant submits an application. This section may include:
 * What an applicant needs to do after they submit their application.
-* SEO keywords (See [Writing for SEO](https://design.va.gov/content-style-guide/seo).)
+* SEO keywords (See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo).)
 
 ### When will I hear back about my application?
-This section appears as card or [gray alert box](https://design.va.gov/components/alertboxes) that sets the user’s expectation for how long it takes to receive a response, and includes:
+This section appears as card or [gray alert]({{ site.baseurl }}/components/alert) that sets the user’s expectation for how long it takes to receive a response, and includes:
 * Content or a link to a page describing what the user can expect after they apply
 * Time frame for how long it takes to receive a response
 
@@ -291,22 +294,27 @@ Below is a list of optional components that appear on the "After you apply" page
 
 ### Subway process map
 
-[View the subway map component](https://design.va.gov/components/process-list).
+[View the subway map component]({{ site.baseurl }}/components/process-list).
 
 **Health care:**
 ![after-you-apply-subway-map](/images/after-you-apply-subway-map.png)
 
 ### Accordions
 
-[View the accordion component](https://design.va.gov/components/accordions).
+[View the accordion component]({{ site.baseurl }}/components/accordion).
 
 **Health care:**
 
 ![after-you-apply-accordions](/images/after-you-apply-accordions.png)
 
-### Call-to-action button
+### Call-to-action button or action link
 
-[View the button component](https://design.va.gov/components/buttons).
+Use a button for a clickable action on the page. Use the action link if you are navigating the user to another page. 
+
+[View the button component]({{ site.baseurl }}/components/button).
+
+[View the action link component]({{ site.baseurl }}/components/action-link).
+
 
 **Disability compensation:**
 

@@ -3,34 +3,52 @@
     {% if p.index %}
     <li class="site-sidenav-list__item {% if page.index %} current {% endif %}">
       <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url | replace: '/index', ''}}">Overview</a>
-      {% if page.index %}
-        {% if page.anchors %}
-          <ul class="site-sidenav-list__sub">
-            {% for item in page.anchors %}
-              <li class="site-sidenav-list__sub-item">
-                <a class="site-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" | replace: ",", "" }}">{{ item.anchor }}</a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      {% endif %}
     </li>
     {% endif %}
   {% endfor %}
-  {% for p in include.section %}
-      {% if p.layout == "default" %}
-        {% unless p.index %}
+  {% assign sortedPages = include.section | sort: "title", "last" %}
+  {% for p in sortedPages %}
+      {% assign is-current = false %}
+      {% if p.url == page.url or (page.has-parent == p.permalink and p.sub-pages) %}
+        {% assign is-current = true %}
+      {% endif %}
+      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+        {% unless p.index or p.has-parent %}
           {% unless p.draft and (p.url != page.url) %}
-            <li class="site-sidenav-list__item {% if p.url == page.url %} current {% endif %}">
-              <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-              {% if p.url == page.url %}
-                {% if p.anchors %}
-                  <ul class="site-sidenav-list__sub">
-                    {% for item in p.anchors %}
-                      <li class="site-sidenav-list__sub-item">
-                        <a class="site-sidenav-list__sub__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" | replace: ",", "" }}">{{ item.anchor }}</a></li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
+            <li class="site-sidenav-list__item {% if is-current == true %} current {%- endif -%}">
+              <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">
+                {%- if p.status and (p.layout == "component" or p.layout == "pattern") -%}
+                  {%- include _site-side-nav-status.html component-status=p.status -%}
+                {%- endif -%}{{p.title}}
+                {%- if p.sub-pages -%}
+                  {%- if is-current == true -%}
+                <i aria-hidden="true" class="fas fa-minus site-sidenav-list__handle" role="img"></i>
+                  {%- elsif is-current == false -%}
+                <i aria-hidden="true" class="fas fa-plus site-sidenav-list__handle" role="img"></i>
+                  {%- endif -%}
+                {%- endif -%}
+              </a>
+              {% if p.sub-pages and p.url == page.url %}
+              <ul class="site-sidenav-list__sub">
+                {% for item in p.sub-pages%}
+                <li class="site-sidenav-list__sub-item">
+                  <a class="site-sidenav-list__sub__link" href="{{p.permalink }}{{ item.sub-page | slugify }}">
+                    {{ item.sub-page }}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+              {% endif %}
+              {% if page.has-parent == p.permalink and p.sub-pages %}
+              <ul class="site-sidenav-list__sub">
+                {% for item in p.sub-pages%}
+                <li class="site-sidenav-list__sub-item">
+                  <a class="site-sidenav-list__sub__link" href="{{p.permalink }}{{ item.sub-page | slugify }}">
+                    {{ item.sub-page }}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
               {% endif %}
             </li>
           {% endunless %}

@@ -5,39 +5,20 @@
 
   <body {% if page.homepage %}class="vads-u-background-color--white"{% endif %}>
 
+    {% if site.analytics == "production" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZTDXZ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+
     {% include header.html %}
 
     {% include _mobile-nav.html %}
 
     <div>
 
-    <div class="site-top-nav-wrapper site-l-wrapper {% unless page.homepage %}sticky{% endunless %}">
-      <nav class="site-header__nav">
-        <ul class="site-header__nav-list">
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/documentation/" %} current {% endif %}" href="{{ site.baseurl }}/documentation">Documentation</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/content-style-guide/" %} current {% endif %}" href="{{ site.baseurl }}/content-style-guide">Content</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/design/" %} current {% endif %}" href="{{ site.baseurl }}/design">Design</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/components/" %} current {% endif %}" href="{{ site.baseurl }}/components">Components</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/utilities/" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Utilities</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/patterns/" %} current {% endif %}" href="{{ site.baseurl }}/patterns">Patterns</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-item__link {% if page.url contains "/layout/" %} current {% endif %}" href="{{ site.baseurl }}/layout">Layout</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    {% include _site-top-nav.html %}
 
     <div class="site-content {% unless page.homepage %}vads-u-margin-bottom--9{% endunless %}">
       {% if page.homepage %}
@@ -53,55 +34,28 @@
         </div>
       </main>
       {% else %}
-      <div class="site-content__nav">
-        {% if page.url contains "/documentation/" %}
-          {% include _side-nav.html section=site.documentation %}
-          {% assign collection_name = "Documentation" %}
-        {% elsif page.url contains "/design/" %}
-          {% include _side-nav.html section=site.design %}
-          {% assign collection_name = "Design" %}
-        {% elsif page.url contains "/components/" %}
-          {% include _side-nav.html section=site.components %}
-          {% assign collection_name = "Components" %}
-        {% elsif page.url contains "/patterns/" %}
-          {% include _side-nav.html section=site.patterns %}
-          {% assign collection_name = "Patterns" %}
-        {% elsif page.url contains "/utilities/" %}
-          {% include _side-nav.html section=site.utilities %}
-          {% assign collection_name = "Utilities" %}
-        {% elsif page.url contains "/layout/" %}
-          {% include _side-nav.html section=site.layout %}
-          {% assign collection_name = "Layout" %}
-        {% elsif page.url contains "/content-style-guide/" %}
-            {% include _side-nav.html section=site.content-style-guide %}
-            {% assign collection_name = "Content style guide" %}
-        {% endif %}
-      </div>
+        {% include _site-content-nav.html %}
       <div class="site-content__content">
         <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
           {% unless page.index %}
-          {% if page.draft %}
-          <div class="vads-u-margin-bottom--2 vads-u-padding--2 vads-u-background-color--gold vads-u-display--inline-block vads-u-font-weight--bold">
-            This page is a draft. <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_{{page.url | replace_first:'/',''}}.md">Edit this page in GitHub</a>.
-          </div>
-          {% endif %}
+            {% if page.draft %}
+              {% include _draft.html %}
+            {% endif %}
           <div>
             <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
           </div>
           {% endunless %}
           {{ content }}
         </main>
+        {% include edit-on-github.html %}
+        {% include timestamps.html %}
       </div>
       {% endif %}
-
     </div>
   </div>
 
-    {% include footer.html %}
-    <script type="text/javascript" src="{{ site.baseurl }}/vendor/javascripts/bundle.js" charset="utf-8"></script>
-    <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
-
-    <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
+  {% include footer.html %}
+  <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
+  <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
   </body>
-
 </html>

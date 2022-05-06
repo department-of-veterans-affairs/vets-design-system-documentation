@@ -6,6 +6,6 @@ display:
   - name: inline-block
     description: "Sets an element‘s display to inline-block, where it can be arranged beside other elements and height, width, margin, and padding are accepted."
   - name: flex
-    description: 'Sets an element‘s display to flex to behave as a flex container. For more related utilities, check out the <a href="flexbox.html">flexbox utilities</a>.'
+    description: 'Sets an element‘s display to flex to behave as a flex container. For more related utilities, check out the <a href="flexbox">flexbox utilities</a>.'
   - name: none
     description: "Sets an element‘s display to none, hiding it visually and from screen readers."

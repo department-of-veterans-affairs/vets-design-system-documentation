@@ -1,6 +1,10 @@
 ---
 name: "\U0001F4D6 Documentation request"
 about: Suggest an update to documentation
+title: ''
+labels: vsp-design-system-team
+assignees: caw310
+
 ---
 
 # Feature Request
@@ -9,26 +13,38 @@ about: Suggest an update to documentation
 
 ## This update is for:
 
-- [ ] Content styleguide
+- [ ] Content style guide
 - [ ] Component
 - [ ] Pattern
 - [ ] Utility
 - [ ] Other
 
-## What is the name
+## What is the name?
 
 <!--
-         Please describe the name of the component/pattern/utility, or section in the content styleguide this applies to
+         Please describe the name of the component/pattern/utility, or section in the content style guide this update applies to.
 -->
 
 ## What is the nature of this update?
 
-- [ ] When to use
+<!--
+         Please provide all that apply. Not all are required.
+-->
+
+- [ ] How to build this component/pattern
+- [ ] When to use this component/pattern 
 - [ ] When to use something else
-- [ ] Code snippet
+- [ ] Usability guidance
 - [ ] Accessibility
-- [ ] Research insight
-- [ ] General documentation
+- [ ] Implementation
+- [ ] Research insights
+- [ ] Package information
+
+## What problem does this solve?
+
+<!--
+        Please describe the problem and how this proposed solution solves it.  
+-->
 
 ## Additional Context
 

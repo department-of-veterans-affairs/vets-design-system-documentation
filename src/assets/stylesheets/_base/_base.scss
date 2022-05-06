@@ -58,11 +58,24 @@ iframe {
 
 :target {
   @include media($nav-width) {
-    padding-top: 100px;
+    // This is the height of the header (59px) 
+    // (plus some breathing room)
+    // It's intended to prevent a header that has an anchor
+    // link attached to it from hiding under the fixed header
+    // when a user comes to the page
+    // Unfortunately, it makes these links appear further away
+    // in the normal flow of a page
+    padding-top: 70px;
 
     .site-heading-anchor {
       bottom: .3em;
       top: auto;
     }
   }
+}
+
+blockquote {
+  margin: units(2);
+  padding: 0 units(1);
+  border-left: .25em solid $color-gray-medium;
 }

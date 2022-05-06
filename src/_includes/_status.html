@@ -1,0 +1,15 @@
+{% assign status-category = "Don't use" %}
+{% assign status-title = "Proposed" %}
+
+{% for scale in site.data.maturity-scale.scale %}
+  {% if page.status == scale.name %}
+    {% assign status-category = scale.category %}
+    {% assign status-title = scale.title %}
+  {% endif %}
+{% endfor %}
+
+<a class="site-component-status__link" href="{{ site.baseurl }}/about/maturity-scale#{{ page.status }}">
+  <span class="usa-label site-component-status site-component-status--{{page.status}}">
+    {{ status-category }}: {{ status-title }}
+  </span>
+</a>

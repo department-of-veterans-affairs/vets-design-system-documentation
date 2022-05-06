@@ -1,0 +1,18 @@
+<div class="site-content__nav">
+  {% if page.url contains "/about/" %}
+    {% include _side-nav.html section=site.about %}
+    {% assign collection_name = "About" %}
+  {% elsif page.url contains "/content-style-guide/" %}
+    {% include _side-nav.html section=site.content-style-guide %}
+    {% assign collection_name = "Content style guide" %}
+  {% elsif page.url contains "/foundation/" %}
+    {% include _side-nav.html section=site.foundation %}
+    {% assign collection_name = "Foundation" %}
+  {% elsif page.url contains "/components/" %}
+    {% include _side-nav.html section=site.components %}
+    {% assign collection_name = "Components" %}
+  {% elsif page.url contains "/patterns/" %}
+    {% include _side-nav.html section=site.patterns %}
+    {% assign collection_name = "Patterns" %}
+  {% endif %}
+</div>

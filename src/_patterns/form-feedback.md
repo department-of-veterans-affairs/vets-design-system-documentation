@@ -1,21 +1,13 @@
 ---
-layout: default
+layout: pattern
 title: Form feedback
+status: use-deployed
+intro-text: "Error messages let users know when they have made a mistake on a form field."
 anchors:
   - anchor: Error messages
 ---
 
-# Form Feedback
-
-<div class="va-introtext" markdown="1">
-Error messages let users know when they have made a mistake on a form field.
-</div>
-
 ## Error messages
-
-<div class="va-introtext" markdown="1">
-Error messages let users know when they have made a mistake on a form field.
-</div>
 
 In all cases, only show error validation messages or stylings after a user has interacted with a particular field.
 
@@ -80,10 +72,6 @@ Error messages are generally the same. The error message is slightly different i
 
 
 ### Errors on checkboxes
-
-Unlike other form elements, error messages for checkboxes appear below
-
-#### Error message above checkbox
 
 <div class="site-showcase">
 {% include_relative html/error-checkbox.html %}

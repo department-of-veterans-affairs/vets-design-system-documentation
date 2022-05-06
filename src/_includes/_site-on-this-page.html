@@ -1,0 +1,17 @@
+{% if page.anchors %}
+<nav aria-labelledby="on-this-page" class="site-on-this-page">
+  <dl class="site-on-this-page__list">
+    <dt id="on-this-page" role="heading" aria-level="2" class="site-on-this-page__title">
+      On this page
+    </dt>
+  {% for item in page.anchors %}
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" | replace: ",", "" }}">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        {{ item.anchor }}
+      </a>
+    </dd>
+  {% endfor %}
+  </dl>
+</nav>
+{% endif %}

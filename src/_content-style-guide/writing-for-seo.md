@@ -11,9 +11,9 @@ anchors:
 
 Because most Veterans find information starting with Google, no matter what the content is, writing for SEO (search engine optimization) is important to ensure that we're getting the right information to Veterans where they begin their journey.
 
-To learn more about SEO and writing with SEO in mind, we recommend starting with [Google's SEO starter guide]((https://support.google.com/webmasters/answer/7451184?hl=en) ) and [The Moz Blog](https://moz.com/blog).
+To learn more about SEO and writing with SEO in mind, we recommend starting with [Google's SEO starter guide](https://support.google.com/webmasters/answer/7451184?hl=en) and [The Moz Blog](https://moz.com/blog).
 
-
+{% include _site-on-this-page.html %}
 
 ## SEO best practices for writing copy
 
@@ -21,10 +21,10 @@ Writing for SEO is more than having meta title tags, descriptions, and keywords.
 
 At the foundation of all of these recommendations is to apply them in a way that's natural and helpful to the user.
 
-- Write content that addresses what people actually search for with high quality, unique information that's relevant to that topic.
+- Write content that addresses what people actually search for with high-quality, unique information that's relevant to that topic.
   - Example: Do people really want to know all the awards your office won for customer satisfaction or do they want to know how they can find out the status of their application?
 - Use the primary user search phrase or keyword in the H1 (page title), H2 (section headers), and intro text.
-- Don't have more than one H1 on a page. Use the H1 only for the page title. See our [guidance on page titles](https://design.va.gov/content-style-guide/page-titles-and-section-titles).
+- Don't have more than one H1 on a page. Use the H1 only for the page title. See our [guidance on page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
 - Integrate the primary or secondary keywords throughout the body copy, H2s, and H3s. But never "stuff keywords" for its own sake. That practice is contrary to creating helpful relevant content.
 - [Use H2s and H3s consistently](https://yoast.com/how-to-use-headings-on-your-site/) to structure content hierarchy as sections and subsections. It helps organize content into scannable chunks, and also helps SEO (for example, so H3s can get easily featured in list snippets in searches). 
 - Write content and navigation elements that can be easily scanned and understood by the user. Include the primary keyword in the URL if possible.
@@ -36,11 +36,13 @@ At the foundation of all of these recommendations is to apply them in a way that
 ## Meta properties
 
  Writing for SEO is more than having meta title tags, descriptions, and keywords, but we still want to include them and make sure that we're using them consistently.
+ 
+ Each page needs a unique title tag and meta description. Don't use the same title tags and meta descriptions on multiple pages. Duplicate title tags and descriptions are bad for SEO and confuse users on search results.
 
 __Why they're important__
 
 - Title tags and descriptions help people identify what the page is about in search results and decide whether to click on your page from the results.
-- Having a consistent standard for title tags and descriptions also helps ensure that our search 'branding' looks consistent and unified in search results.
+- Having a consistent standard for title tags and descriptions also helps ensure that our search "branding" looks consistent and unified in search results.
 - It helps communicate VA's brand as the authoritative source for VA information for Veterans.
 - It also helps people tell quickly which content comes from VA versus non-VA organizations that may also be providing VA benefit information.
 
@@ -48,13 +50,16 @@ __Why they're important__
 
 ### Title tags
 
-Title tags are HTML elements that are displayed in browsers and on search engine results. They help people identify what the page is about and if it's relevant to their search query. On VA.gov, title tags are pulled from the H1 (the page title), so it's especially important to use the primary keyword or phrase in the [page title](https://design.va.gov/content-style-guide/page-titles-and-section-titles). 
+Title tags are HTML elements that are displayed in browsers and on search engine results. They help people identify what the page is about and if it's relevant to their search query. On VA.gov, title tags are pulled from the H1 (the page title), so it's especially important to use the primary keyword or phrase in the [page title]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles). 
 
 
 - Format: H1 Page Title \| Veterans Affairs
+- Use initial caps for title tags
 
-- Keep title tags to 70 characters maximum (with spaces) to display properly. If the H1 is too long, truncate to fit but always end with "\| Veterans Affairs"
--  Use initial caps for title tags
+__Additional guidance__
+
+For benefit hub pages, we keep title tags to 70 characters maximum (with spaces), so it displays best in organic search results. If the H1 is too long, we truncate it in the meta title tag to fit while still including "\| Veterans Affairs" at the end. Note: We don't truncate the H1 in title tags for content types that don't have a page title character limit like news releases and resources and support articles.
+
 
 
 
@@ -65,19 +70,21 @@ __Example__
 
 __Exception—VA medical center websites__
 
-For VA medical centers (VAMC), we format the title tag a little differently.  Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
+For VA medical centers (VAMC), we format the title tag a little differently. Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
 
-- Format:  VAMC Short Name \| H1 Page Title \| Veterans Affairs
-  - VA Pittsburgh Health Care \| Our Services \| Veterans Affairs
-  - VA Pittsburgh Health Care \| Billing And Insurance
-- Use the plain language VAMC short name for title tags rather than the long facility locator API name
-- On VA medical centers, omit the "\| Veterans Affairs" if the title tag goes over 70 characters
+- Format: H1 Page Title \| VAMC Plain Language System Name \| Veterans Affairs
+  - Psychology Internships And Fellowships \| VA Pittsburgh Health Care \| Veterans Affairs
+  - H. John Heinz III Department Of Veterans Affairs Medical Center \| VA Pittsburgh Health Care \| Veterans Affairs
+- Use the plain language VAMC system name in the title tags.
+- On VA medical centers, we don't apply a character limit for the meta title. 
+
+Because the official facility location names can be very long and because we use them in the H1 page titles of location pages, we let search engines truncate according to their character limit.  
 
 
 
 ### Meta descriptions
 
-Meta descriptions provide a high level summary of a page. While they aren't crawled by search engines, they are displayed in search results to users.  
+Meta descriptions provide a high-level summary of a page. While they aren't crawled by search engines, they are displayed in search results to users.  
 
 - Keep meta description text to less than 300 characters (including spaces).
 - Try to use the primary keyword or phrase at the beginning of the description, within the first 155 characters. (Google sometimes changes how many characters it shows on searches.)

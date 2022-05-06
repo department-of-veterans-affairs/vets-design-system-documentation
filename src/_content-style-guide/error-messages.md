@@ -1,13 +1,19 @@
 ---
 layout: default
 title: Error messages
-draft: true
 ---
 
 # Error messages
-**[See here for existing error messaging guidance to pull from/update.](https://department-of-veterans-affairs.github.io/design-system/docs/messaging-and-error-handling/error-message-standardization-content-style-guide.html)**
 
+Error messages tell the user that something has gone wrong. These messages should be clear, direct, and have an actionable call to action (CTA) for the user.
 
-- Stay conversational, and use natural language.
-- Types of error messages - system errors, field level errors, etc.
-- For reference - [messaging dictionary](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Design%20System/Guidelines/Error%20handling/Dictionary.md)
+Error messages mainly appear in interactive experiences such as tools, forms, and applications. Because this category of messaging usually has a lot of visual design and formatting that affects copy, go to the design section for more [detailed guidance and formatting of error messages]({{ site.baseurl }}/patterns/messaging-error-messages).
+
+**Error messages should provide the following information:**
+- What’s the error or issue?
+- What caused the error or issue?
+- What does the user need to do to continue?
+- If there's nothing they can do, what’s the next step for the user?
+
+See the [error message style guide]({{ site.baseurl }}/patterns/messaging-error-messages) for additional guidance on writing error messages.
+See the [error message dictionary]({{ site.baseurl }}/patterns/messaging-dictionary) for specific error message examples and use cases.

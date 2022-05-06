@@ -12,17 +12,22 @@ Page and section titles do a lot of heavy lifting. A good rule of thumb is to hi
 
 If someone can still figure out what they need to do on that page or what that page is about, it's a good sign that the page and section titles are working well.  
 
+{% include _site-on-this-page.html %}
 
 
 ## Page titles 
 
 Page titles have a few important functions: 
 
-- To clearly and quickly tell people the main purpose of the page—what can they do or what information they can get on that page.
-- To [optimize the page for search](https://design.va.gov/content-style-guide/seo), so the information is findable through Google and other search engines. 
+- To clearly and quickly tell people the main purpose of the page—what they can do or what information they can get on that page.
+- To [optimize the page for search]({{ site.baseurl }}/content-style-guide/seo), so the information is findable through Google and other search engines. 
 
 Try to keep page titles to 52 characters maximum, with spaces. Use the primary SEO keyword in the page title. On VA.gov, page titles use the H1 tag.
 
+**Exceptions:**
+
+- Articles in resources and support have a page title character limit of 70. 
+- News releases, blog titles, community stories, and local event titles don't have a page title character limit. 
 
 
 
@@ -37,7 +42,7 @@ Section and subsection titles (also sometimes called headers and subheads) help 
 
 We allow a little more character count for sections and subsections than page titles. But in general, sections become hard to scan when they're too long. Eliminate unnecessary details or nuance in section and subsection titles, and address them with more depth in the paragraph copy.
 
-For more information about structuring sections using H2s and H3s, see [How to use headings](https://yoast.com/how-to-use-headings-on-your-site/) on Yoast.com.
+[Read more about using header levels to structure sections on W3.org](https://www.w3.org/WAI/tutorials/page-structure/headings/)
 
 <div class="do-dont">
 <div class="do-dont__do">

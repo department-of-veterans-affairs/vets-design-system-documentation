@@ -1,13 +1,8 @@
 ---
-layout: default
+layout: component
 sub_section: address-block
 title: Address block
+status: use-deployed
 ---
 
-# Address block
-
-<div class="site-showcase">
-{% include_relative html/address-block.html %}
-</div>
-
-{% include snippet.html content='html/address-block.html' %}
+{% include storybook-preview.html story="components-address-block--default" %}

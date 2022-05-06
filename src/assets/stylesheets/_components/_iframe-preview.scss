@@ -3,6 +3,24 @@
   text-align: center;
   margin-bottom: units(1);
   overflow: hidden;
+  position: relative;
+}
+
+.iframe__preview__open,
+.iframe__preview__open:visited {
+  background: $color-gray-lightest;
+  bottom: 0;
+  color: $color-primary;
+  display: block;
+  padding: units(1);
+  position: absolute;
+  transition: none;
+  right: 0;
+}
+
+.iframe__preview__open:hover,
+.iframe__preview__open:focus {
+  background: $color-gray-lighter;
 }
 
 .responsive-iframe {
@@ -15,7 +33,7 @@
 
 .sg-responsive-preview .iframe__preview {
   padding-top: $units-1 * 2;
-  padding-bottom: $units-1 *2;
+  padding-bottom: units(5);
   background: repeating-linear-gradient(
     -55deg,
     #f2f2f2,
@@ -42,7 +60,7 @@
     content: attr(data-size) "px";
     display: block;
     font-weight: normal;
-    margin-top: $units-1 /2;
+    margin-top: calc($units-1 /2);
   }
 
   @include media($medium-screen) {

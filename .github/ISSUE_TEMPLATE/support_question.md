@@ -1,6 +1,10 @@
 ---
 name: "\U0001F64B Support question"
-about: If you need support using Formation
+about: If you need support using the Design System
+title: ''
+labels: 'vsp-design-system-team'
+assignees: 'caw310'
+
 ---
 
 # Support question
@@ -20,6 +24,11 @@ about: If you need support using Formation
        may have done
  -->
 
+## What problem does this solve?
+
+<!--
+        Please describe the problem and how this proposed solution solves it.  
+-->
 
 ## Additional Context
 <!--

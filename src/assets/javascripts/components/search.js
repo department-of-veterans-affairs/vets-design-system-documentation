@@ -62,11 +62,12 @@ var searchOnMobile = function() {
 // Function for search results page
 var searchOnResultsPage = function() {
   var searchTerm = getQueryVariable('query');
+  var searchTermEncoded = htmlEncode(searchTerm);
   // Put the value of the query on the page
   if (typeof searchTerm != "undefined"){
-    desktop_search_input.value = searchTerm;
-    mobile_search_input.value = searchTerm;
-    document.getElementById('query-term').innerHTML = searchTerm;
+    desktop_search_input.value = searchTermEncoded;
+    mobile_search_input.value = searchTermEncoded;
+    document.getElementById('query-term').innerText = searchTermEncoded;
   }
   SimpleJekyllSearch({
     searchInput: desktop_search_input,
@@ -138,6 +139,17 @@ if (isIE11) {
   parent.removeChild(el);
 }
 
+/**
+ * Sanitize and encode all HTML in a user-submitted string
+ * https://portswigger.net/web-security/cross-site-scripting/preventing
+ * @param  {String} str  The user-submitted string
+ * @return {String} str  The sanitized string
+ */
+ function htmlEncode(str){
+  return String(str).replace(/[^\w. ]/gi, function(c){
+     return '&#'+c.charCodeAt(0)+';';
+  });
+}
 
 
 

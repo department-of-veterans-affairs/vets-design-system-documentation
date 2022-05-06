@@ -14,7 +14,7 @@ In general, we try to err on the side of clarity when we need to tell people abo
 
 Because VA form names tend to be very long, they're not always easy for Veterans to scan and quickly grasp. In some cases, it may be more helpful to talk about a form as a task and then mention the form number, rather than always referencing the full name and number.
 
-- __Okay:__ Complete the Request for and Authorization to Release Protected Health Information to Health Information Exchanges (VA Form 10-0485).
+- __OK:__ Complete the Request for and Authorization to Release Protected Health Information to Health Information Exchanges (VA Form 10-0485).
 
 - __Better:__ To give us permission to share your medical information, fill out VA Form 10-0485.
 
@@ -52,7 +52,7 @@ Many Veterans refer to certain forms by their more common, casual name. For exam
 
 ## Common government forms
 
-For VA forms not listed here, search our [VA forms library](https://www.va.gov/vaforms/). DD forms are Department of Defense forms.
+For VA forms not listed here, go to [Find a VA form](https://www.va.gov/find-forms/). DD forms are Department of Defense forms.
 
 | Form number                      | Form name                                                    |
 | -------------------------------- | ------------------------------------------------------------ |

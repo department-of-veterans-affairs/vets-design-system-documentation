@@ -1,0 +1,47 @@
+.site-component-status__link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-sidenav-status {
+  font-size: 1rem;
+  padding-right: .5rem;
+}
+
+.site-component-status-heading .site-component-status {
+  font-size: 2rem;
+}
+
+.site-component-status--use,
+.site-component-status--use-best-practice,
+.site-component-status--use-deployed {
+  background-color: $color-green-darker;
+}
+.site-sidenav-status--use-best-practice,
+.site-sidenav-status--use-deployed {
+  color: $color-green-darker;
+}
+
+.site-component-status--use-with-caution,
+.site-component-status--use-with-caution-available,
+.site-component-status--use-with-caution-candidate {
+  background-color: $color-orange; 
+  color: $color-base;
+}
+.site-sidenav-status--use-with-caution-available,
+.site-sidenav-status--use-with-caution-candidate {
+  color: $color-orange;
+}
+
+.site-component-status--dont-use,
+.site-component-status--dont-use-proposed,
+.site-component-status--dont-use-deprecated {
+  background-color: $color-secondary-darkest;
+}
+.site-sidenav-status--dont-use-proposed,
+.site-sidenav-status--dont-use-deprecated {
+  color: $color-secondary-darkest;
+}
