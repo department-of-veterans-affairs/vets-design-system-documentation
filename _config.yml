@@ -30,7 +30,7 @@ experimental_reviewer_2: "Matthew Dingee"
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: none
 plugins:
   - jekyll-last-modified-at
 

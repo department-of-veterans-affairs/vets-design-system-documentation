@@ -5,6 +5,7 @@ has-parent: /components/progress-bar/
 title: "Progress bar - Segmented"
 intro-text: "A segmented progress bar updates users on their progress through a multi-step process."
 research-title: Progress bars
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/22A38EE5-A28E-41CB-829C-4D305AFEAE50
 status: use-deployed
 web-component: va-segmented-progress-bar
 anchors:

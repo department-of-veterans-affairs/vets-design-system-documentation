@@ -3,6 +3,7 @@ layout: component
 title: "Loading indicator"
 intro-text: "A loading indicator provides a clue to ongoing activity when the site needs to load additional content."
 research-title: "Loading indicators"
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F7EE9993-F4A9-4384-A074-329473A10D43
 status: use-best-practice
 web-component: va-loading-indicator
 ---
