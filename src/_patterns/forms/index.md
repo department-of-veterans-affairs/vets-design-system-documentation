@@ -21,11 +21,11 @@ sub-pages:
 
 ## Getting Started with VA.gov Forms
 
-<div class="feature">
-  <h3>Forms system documentation</h3>
+<va-featured-content>
+  <h3 slot="headline">Forms system documentation</h3>
   <p>The current forms library is considered a legacy product and is in maintenance mode. A new forms library is under development.</p>
   <p>View documentation for the current forms library for VA.gov on <a href="{{ site.forms_system_link }}">the platform website</a>.</p>
-</div>
+</va-featured-content>
 
 _Compiled by:_ Shawna Hein, VSA Design Lead
 
