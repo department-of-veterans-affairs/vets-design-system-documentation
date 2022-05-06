@@ -21,7 +21,7 @@ anchors:
 
 ### When to use a segmented progress bar
 
-* **Step indicator for forms**: When you need the user to complete more than 2 steps in a process, usually completing a form.
+* **Step indicator for forms**: When you need the user to complete more than one step in a process, usually completing a form.
 * **Multiple steps and screens for a single interaction**: When you need to communicate which step a user is currently on as they move through a multi-step process for a single interaction. 
 
 ### When to consider something else
