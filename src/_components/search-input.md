@@ -15,11 +15,11 @@ web-component: va-search
 
 ### Default
 
-{% include storybook-preview.html story="components-va-search-do-not-use-yet--default" %}
+{% include storybook-preview.html story="components-va-search-input--default" link_text="va-search-input" %}
 
 ### With button text
 
-{% include storybook-preview.html story="components-va-search-do-not-use-yet--with-button-text" %}
+{% include storybook-preview.html story="components-va-search-input--with-button-text" link_text="va-search-input" %}
 
 ## Usage
 
