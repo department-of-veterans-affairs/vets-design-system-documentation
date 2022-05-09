@@ -20,7 +20,10 @@ Audit of [component or pattern name]. Identify as many instances of this compone
 ## Tasks
 - [ ] Work with engineers and the Governance team to find examples of this type of component
 - [ ] Add screenshots of component usage examples to a Mural board, including links to sources
-- [ ] Present findings to the DST (Carol can help schedule this)
+- [ ] Gather feedback on findings from the DST (Carol can help schedule a session for this). Questions to ask include:
+    - Are any changes to current implementations needed?
+    - Are there any variations that can be consolidated?
+    - Are there any accessibility considerations that should be taken into account as part of the design?
 - [ ] Respond to feedback from DST
 - [ ] Add link to Mural board as a comment in this ticket and to the component design ticket if applicable
 

@@ -12,6 +12,7 @@ assignees: caw310, k80bowman
 - [ ] Add `component-new` or `component-update` label, if applicable
 - [ ] Complete sections below
 - [ ] Delete this section once complete
+
 ## Issue Description
 We need to conduct a full accessibility review of the [component name] component. The component can be viewed in Storybook here: [insert Chromatic link here]
 
@@ -19,7 +20,7 @@ We need to conduct a full accessibility review of the [component name] component
 - [ ] Full accessibility review of the component is completed
 - [ ] Add descriptions of any issues found to this ticket
     - [ ] If any problems are found, add screen recordings and/or screenshots to comments on this ticket that show the problem.
-- [ ] Alert Katy and the developer who built the component when the review is complete
+- [ ] If necessary, discuss any accessibility issues found with the engineer who developed the component
 - [ ] Re-review any fixes the developer makes to the component
 
 ## Acceptance Criteria

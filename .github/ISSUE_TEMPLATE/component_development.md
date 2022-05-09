@@ -15,7 +15,7 @@ assignees: caw310, k80bowman
 - [ ] Delete this section once complete
 
 ## Description
-Build a web component of [component name].
+Build a web component of [component name]. Be sure to add analytics if necessary, see [guidance](https://vfs.atlassian.net/wiki/spaces/DST/pages/2079817745/Component+development+process#Analytics%5BinlineExtension%5D).
 
 ## Details
 - Design documents: [add links to any design documents]

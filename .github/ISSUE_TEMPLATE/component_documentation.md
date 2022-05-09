@@ -15,7 +15,7 @@ assignees: caw310, k80bowman
 - [ ] Delete this section once complete
 
 ## Description
-Add or update documentation and guidance for [component name] on design.va.gov.
+Add or update documentation and guidance for [component name] on design.va.gov. When adding a new component, use the [component documentation template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_components/template.md).
 
 ## Details
 [add links to any design documents]
