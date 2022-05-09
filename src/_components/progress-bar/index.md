@@ -4,6 +4,7 @@ permalink: /components/progress-bar/
 title: "Progress bar - Activity"
 intro-text: "A progress bar provides status as the system is taking an action on behalf of the user."
 research-title: Progress bars
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/7FD5C3CE-96CF-47F1-8AB6-D7E2C51060F1
 status: use-deployed
 web-component: va-progress-bar
 sub-pages:
