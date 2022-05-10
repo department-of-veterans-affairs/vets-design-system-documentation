@@ -61,7 +61,7 @@ The featured content component is used to present the user with the most commonl
 </div>
 </div>
 
-[View the featured content component]({{ site.baseurl }}/components/featured-content).
+[View the featured content component]({{ site.baseurl }}/components/featured-content)
 
 #### C. Additional eligibility information &amp; scenarios
 
@@ -75,7 +75,7 @@ When time sensitive content about a benefit — such as a new benefit being made
 * Use informational alerts to announce upcoming benefits
 * Use informational alerts with expandable content to hide detail that may not apply to everyone visiting the page
 
-[View the alert component]({{ site.baseurl }}/components/alert).
+[View the alert component]({{ site.baseurl }}/components/alert)
 
 #### E. How to apply heading and wizard button or action link
 
@@ -90,9 +90,9 @@ Note: never put more than one green button or action link on the page. If you ha
 
 The button or action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
 
-[View the button component]({{ site.baseurl }}/components/button).
+[View the button component]({{ site.baseurl }}/components/button)
 
-[View the action link component]({{ site.baseurl }}/experimental-design/action_links).
+[View the action link component]({{ site.baseurl }}/components/link/action)
 
 **Accessibility considerations** 
 
@@ -112,7 +112,7 @@ Any additional content necessary that is connected to the primary benefit eligib
 
 Use the accordion component to present questions that are common about eligibility for a benefit.
 
-[View the accordion component]({{ site.baseurl }}/components/accordion).
+[View the accordion component]({{ site.baseurl }}/components/accordion)
 
 #### I. Optional: Related benefits content
 
@@ -313,7 +313,7 @@ Use a button for a clickable action on the page. Use the action link if you are 
 
 [View the button component]({{ site.baseurl }}/components/button).
 
-[View the action link component]({{ site.baseurl }}/experimental-design/action_links).
+[View the action link component]({{ site.baseurl }}/components/link/action).
 
 
 **Disability compensation:**

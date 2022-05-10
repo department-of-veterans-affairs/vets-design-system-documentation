@@ -1,0 +1,19 @@
+{% if page.sub-pages %}
+<nav aria-labelledby="in-this-section" class="site-in-this-section">
+  <dt id="in-this-section" role="heading" aria-level="2" class="site-in-this-section__title">
+    In this section
+  </dt>
+  <dl class="site-in-this-section__list">
+    {% for item in page.sub-pages%}
+    <dd role="definition" class="site-in-this-section__definition">
+      <a
+        class="site-in-this-section__link"
+        href="{{ page.url }}{{ item.sub-page | slugify }}"
+      >
+        {{ item.sub-page }}
+      </a>
+    </dd>
+    {% endfor %}
+  </dl>
+</nav>
+{% endif %}

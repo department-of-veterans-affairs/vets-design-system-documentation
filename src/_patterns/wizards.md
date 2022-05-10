@@ -9,18 +9,18 @@ anchors:
   - anchor: Examples
   - anchor: Where to place wizards
   - anchor: Specifics of the pattern
-  - anchor: Research/Accessibility rationale
+  - anchor: Research and Accessibility rationale
 ---
 
 ## Status 
 
-The Wizard pattern is now deprecated and the Design System Team is in the process of replacing it with patterns and guidance that will roughly adhere to the following:
+The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and the Design System Team is in the process of replacing it with patterns and guidance that will roughly adhere to the following:
 
 * [Content: Writing questions for forms](https://service-manual.nhs.uk/content/how-to-write-good-questions-for-forms/get-the-questions-into-order)
 * [Pattern: Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)
 * [Principle: One thing per page](https://www.gov.uk/service-manual/design/form-structure#start-with-one-thing-per-page)
 
-You should not create any new instances of this pattern and should instead speak with the Design System Council or CollabCycle team who can direct you.
+You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you.
 
 ## Purpose
 
@@ -65,7 +65,7 @@ Note: For both alert cases, a user can still change their answer in the wizard t
 
 ![gif demonstrating a form wizard for VA Disability]({{site.baseurl}}/images/Wizard-Disability.gif)
 
-## Research/Accessibility rationale
+## Research and Accessibility rationale
 - We show questions one at a time for accessibility/universal design reasons: we try not to show irrelevant content to users.
 - We learned through research to add blue left bar to show users that the wizard questions are related and part of the same process of finding the correct form.
 - Wizard questions may come from user research, i.e. a point of confusion for many users regarding their eligibility for a VA benefit.

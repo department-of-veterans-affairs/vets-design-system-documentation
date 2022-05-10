@@ -1,6 +1,12 @@
 ---
 layout: default
 title: Contributing to the design system
+anchors:
+  - anchor: Overview
+  - anchor: How to add a component or pattern
+  - anchor: Suggest an update to an existing component or pattern
+  - anchor: Suggest an update to documentation
+  - anchor: Deprecating a component
 ---
 
 # Contributing to the design system
@@ -11,7 +17,7 @@ title: Contributing to the design system
 
 {% include _site-on-this-page.html %}
 
-## Suggest a component or pattern
+## Overview
 
 Veteran-facing teams are expected to use design system patterns and components when possible. If existing components or patterns will not work to address needed designs,  VFS teams can suggest new components or patterns by going through our Experimental Design process outlined below. 
 
@@ -25,8 +31,23 @@ When considering if a component or pattern should be added to the design system 
 2. The component/pattern is different in more than one major way than existing components in the design system, if the component is only different in color or format, for instance, then it would be better as a variant of the existing component. Note that variants of existing components should also go through this experimental process.
 3. Our existing components and patterns will not solve the user problems sufficiently.
 
-Follow the steps below to suggest a component or pattern for the design system through our experimental process.
+### What is an experimental component or pattern?
 
+An experimental component or pattern is something that is being explored by a team on VA.gov, but has not yet been validated sufficiently by our Veterans and caregivers to become an official design system component or pattern. Thus on the [maturity scale it will be marked as "Use with caution"]({{ site.baseurl }}/about/maturity-scale) at the top of any component or pattern page.
+
+### Why showcase experimental components and patterns?
+
+Since our community has many people across different contracts and companies building on VA.gov, we often have teams trying out new component or pattern designs. However, before this, there was no place for folks to get visibility into what was happening, resulting in team members working on the same problem spaces without being aware that that was the case.
+
+Additionally, we wanted to create a light-weight process where teams building applications could contribute back to our design system.
+
+### Can I use an experimental component or pattern in my application?
+
+Yes. However, if you are using an experimental component or pattern, be aware that it hasn’t necessarily been fully validated. Use with caution and give the component or pattern a try but understand that it may not work in your specific context. Please include any research you have done on the experimental component or pattern on its documentation page for others to see.
+
+## How to add a component or pattern 
+
+Follow the steps below to suggest a component or pattern for the design system through our experimental process.
 
 ### 1. Check the design system backlog 
 
@@ -61,9 +82,10 @@ You will present your work to the Design System Council at an upcoming meeting. 
 
 When making the initial request, you can ask to have asynchronous approval if you feel like the change is simple and does not need further explanation. Note that your ticket will still be discussed in the council meeting, but you do not have to attend
 
-### 4. Add your component or pattern to the Experimental section
 
-**If your component/pattern request is approved**, add your component or pattern to the Design System. 
+### 4. Add your component or pattern to the system
+
+**If your component/pattern request is approved**, add your component or pattern to the Design System. New component will enter at the start of the [maturity scale at "Use with caution: Candidate"]({{ site.baseurl }}/about/maturity-scale#use-with-caution-candidate). This signals to others that the candidate has been evaluated and may be something they could consider using.
 
 This should take no more than 30-60 minutes. 
 
@@ -89,7 +111,9 @@ Your documentation should include most of what you put in your experimental requ
 - Purpose - Why you needed to create a new component or pattern
 - Description of component or pattern
 - Artifacts (mockups, wireframes, or prototypes)
-  - If you need to embed images, videos, or other assets in your markdown file, add them to the assets folder [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design/assets).
+  - If you need to embed images, videos, or other assets in your markdown file, add them to the assets folder [here](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/images/experimental-design). 
+  - Be careful to add them directly to the folder rather than dragging and dropping into the Github markdown editor as while that creates a link it does not add the asset to the design system. 
+  - When including an image in your page please [create alt text](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images) 
 - Code location, if available
 - Existing components used (if creating a new pattern)
 - Usage and accessibility guidance (if available)
@@ -108,7 +132,7 @@ Once merged, the markdown you update will automatically be migrated to the exper
 ### 5. Validate your design
 In order to get your component or pattern moved from the Experimental section to the official design system, you or your team need to do research or usability testing to validate. When you initially submit your design to the experimental system, the council is happy to provide thoughts and feedback on your validation approach. 
 
-Once you have data from your research, write the results of the research on your experimental component page. [An example can be seen here]({{ site.baseurl }}/experimental-design/expandable-alert).
+Once you have data from your research, write the results of the research on your experimental component page. [An example can be seen here]({{ site.baseurl }}/components/alert-expandable).
 
 If an experimental component or pattern sits on design.va.gov for 6 months with no validation documented, it will be removed by the design system team.
 

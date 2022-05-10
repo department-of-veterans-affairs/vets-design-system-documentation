@@ -51,20 +51,19 @@
   </div>
 
 
-
   <!-- Use the accurate heading level to maintain the document outline -->
   <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading">
-    <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/design/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
-      Design
+    <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/foundation/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
+      Foundation
     </button>
   </p>
-  <div id="nav-a3" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/design/" %}false{% else %}true{% endif %}">
+  <div id="nav-a3" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/foundation/" %}false{% else %}true{% endif %}">
     <ul class="site-mobile-nav-list">
       <li class="site-mobile-nav-list__item">
-        <a class="site-mobile-nav-list__link {% if page.url contains "design/index" %} current {% endif %}" href="{{ site.baseurl }}/design">Overview</a>
+        <a class="site-mobile-nav-list__link {% if page.url contains "foundation/index" %} current {% endif %}" href="{{ site.baseurl }}/foundation">Overview</a>
       </li>
-      {% assign sortedDesign = site.design | sort: "title", "last" %}
-      {% for p in site.sortedDesign %}
+      {% assign sortedFoundation = site.foundation | sort: "title", "last" %}
+      {% for p in site.sortedFoundation %}
       {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
@@ -102,32 +101,6 @@
   </div>
 
 
-
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading">
-    <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/utilities/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
-      Utilities
-    </button>
-  </p>
-  <div id="nav-a5" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/utilities/" %}false{% else %}true{% endif %}">
-    <ul class="site-mobile-nav-list">
-      <li class="site-mobile-nav-list__item">
-        <a class="site-mobile-nav-list__link {% if page.url contains "utilities/index" %} current {% endif %}" href="{{ site.baseurl }}/utilities">Overview</a>
-      </li>
-      {% assign sortedUtilities = site.utilities | sort: "title", "last" %}
-      {% for p in sortedUtilities %}
-      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
-          {% unless p.index or p.draft %}
-            <li class="site-mobile-nav-list__item">
-              <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            </li>
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-
   <!-- Use the accurate heading level to maintain the document outline -->
   <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading">
     <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a6">
@@ -142,55 +115,6 @@
       {% assign sortedPatterns = site.patterns | sort: "title", "last" %}
       {% for p in sortedPatterns %}
         {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
-          {% unless p.index or p.draft %}
-            <li class="site-mobile-nav-list__item">
-              <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            </li>
-          {% endunless %}
-          {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading">
-    <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/layout/" %}true{% else %}false{% endif %}" aria-controls="nav-a7">
-      Layout
-    </button>
-  </p>
-  <div id="nav-a7" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/layout/" %}false{% else %}true{% endif %}">
-    <ul class="site-mobile-nav-list">
-      <li class="site-mobile-nav-list__item">
-        <a class="site-mobile-nav-list__link {% if page.url contains "layout/index" %} current {% endif %}" href="{{ site.baseurl }}/layout">Overview</a>
-      </li>
-      {% assign sortedLayout = site.layout | sort: "title", "last" %}
-      {% for p in sortedLayout %}
-          {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
-          {% unless p.index or p.draft %}
-            <li class="site-mobile-nav-list__item">
-              <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            </li>
-          {% endunless %}
-          {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <p class="usa-accordion usa-accordion-heading site-mobile-nav__accordion-heading">
-    <button class="usa-accordion-button site-mobile-nav__accordion-button" aria-expanded="{% if page.url contains "/experimental-design/" %}true{% else %}false{% endif %}" aria-controls="nav-a8">
-      Experimental Design
-    </button>
-  </p>
-  <div id="nav-a8" class="usa-accordion-content site-mobile-nav__accordion-content" aria-hidden="{% if page.url contains "/exerimental-design/" %}false{% else %}true{% endif %}">
-    <ul class="site-mobile-nav-list">
-      <li class="site-mobile-nav-list__item">
-        <a class="site-mobile-nav-list__link {% if page.url contains "experimental-design/index" %} current {% endif %}" href="{{ site.baseurl }}/experimental-design">Overview</a>
-      </li>
-      {% assign sortedExperimentalDesign = site.experimental-design | sort: "title", "last" %}
-      {% for p in sortedExperimentalDesign %}
-          {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
           {% unless p.index or p.draft %}
             <li class="site-mobile-nav-list__item">
               <a class="site-mobile-nav-list__link {% if p.url == page.url %} current {% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>

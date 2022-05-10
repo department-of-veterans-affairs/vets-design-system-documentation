@@ -16,49 +16,62 @@ anchors:
 
 The maturity scale is divided into 3 major categories:
 
-* Use
-* Use with caution
-* Don't use
+* <span class="usa-label site-component-status site-component-status--use">Use</span>
+* <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
+* <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
 
 Within each of those categories there are 2 levels:
 
-* Use
+* <span class="usa-label site-component-status site-component-status--use">Use</span>
   * Deployed
   * Best practice
-* Use with caution
+* <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
   * Candidate
   * Available
-* Don't use
+* <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
   * Proposed
   * Deprecated
 
-Components and patterns start out as proposed, are filed in Github as [users of the system contribute](contributing-to-the-design-system/), and then, typically, progress up the scale as we gain confidence in that component or pattern. That level of confidence is measured by a number of criteria which are outlined below.
+Components and patterns start out as proposed, are filed in Github as [users of the system contribute](contributing-to-the-design-system), and then, typically, progress up the scale as we gain confidence in that component or pattern. That level of confidence is measured by a number of criteria which are outlined below.
 
 The full maturity scale goes in this order:
 
-1. [Proposed](#proposed)
-2. [Candidate](#candidate)
-3. [Available](#available)
-4. [Deployed](#deployed)
-5. [Best Practice](#best-practice)
-6. [Deprecated](#deprecated)
+1. [Proposed](#dont-use-proposed)
+2. [Candidate](#use-with-caution-candidate)
+3. [Available](#use-with-caution-available)
+4. [Deployed](#use-deployed)
+5. [Best Practice](#use-best-practice)
+6. [Deprecated](#dont-use-deprecated)
 
 ## Definitions
 
-<h3 id="dont-use-proposed">Don't use: Proposed</h3>
+<h3 id="dont-use-proposed" class="site-component-status-heading">
+  <span class="usa-label site-component-status site-component-status--dont-use-proposed">
+    Don't use: Proposed
+  </span>
+</h3>
 
-A team has filed a request for a component or pattern but it has not yet been reviewed by the Design System Team or Design System Council. 
+A team has filed a request for a component or pattern but it has not yet been reviewed by the Design System Team or Design System Council. You will not see this status in the system but it is included here to give a complete view of the lifecycle of a component.
 
-* May link to supporting research, a Sketch (or other tool) mock-up, or a functional instance on VA.gov. 
+* The Github issue may link to supporting research, a Sketch (or other tool) mock-up, or a functional instance on VA.gov. 
 
-<h3 id="use-with-caution-candidate">Use with caution: Candidate</h3>
+<h3 id="use-with-caution-candidate" class="site-component-status-heading">
+  <span class="usa-label site-component-status site-component-status--use-with-caution-candidate">
+    Use with caution: Candidate
+  </span>
+</h3>
 
 Design System Team and/or Design System Council have evaluated the proposal. 
 
 * The Design System Team will be creating documentation for the component or pattern. 
 * The component or pattern may be in limited use (i.e. it may have already been shipped by a team). This could also be known as: “In work”, “Draft”, "Beta", or “Give it a go! YMMV”.
 
-<h3 id="use-with-caution-available">Use with caution: Available</h3>
+<h3 id="use-with-caution-available" class="site-component-status-heading">
+  <span class="usa-label site-component-status site-component-status--use-with-caution-available">
+    Use with caution: Available
+  </span>
+</h3>
+
 The component or pattern is:
 
 * Complete and ready to be used but may or may not have been deployed to production.
@@ -67,7 +80,12 @@ The component or pattern is:
 
 By “complete” we mean that the documentation of the component or pattern is complete and in sync across the Design System (design.va.gov, Storybook, and Sketch library). 
 
-<h3 id="use-deployed">Use: Deployed</h3>
+<h3 id="use-deployed" class="site-component-status-heading">
+  <span class="usa-label site-component-status site-component-status--use-deployed">
+    Use: Deployed
+  </span>
+</h3>
+
 The component or pattern:
 
 * Is deployed in production for more than 3 months
@@ -76,7 +94,11 @@ The component or pattern:
 
 In other words, it’s out there and we have some degree of confidence in it.
 
-<h3 id="use-best-practice">Use: Best Practice</h3>
+<h3 id="use-best-practice" class="site-component-status-heading">
+  <span class="usa-label site-component-status site-component-status--use-best-practice">
+    Use: Best Practice
+  </span>
+</h3>
 
 The component or pattern:
 
@@ -87,7 +109,11 @@ The component or pattern:
 
 Given all of the above, the component or pattern is now considered best practice.
 
-<h3 id="dont-use-deprecated">Don't use: Deprecated</h3>
+<h3 id="dont-use-deprecated" class="site-component-status-heading">
+  <span class="usa-label site-component-status site-component-status--dont-use-deprecated">
+    Don't use: Deprecated
+  </span>
+</h3>
 
 A previously available or deployed component or pattern is now considered lacking and should not be used. The component or pattern: 
 
@@ -117,7 +143,7 @@ The Design System team will be auditing components & patterns on a regular basis
 
 ### A component or pattern is proposed
 
-Any additions to the system, either new components or patterns, updates to existing entries, or requests for replacements are requested via the [Experimental Design Process](contributing-to-the-design-system/).
+Any additions to the system, either new components or patterns, updates to existing entries, or requests for replacements are requested via the [Experimental Design Process](contributing-to-the-design-system).
 
 ### Proposed to Candidate 
 

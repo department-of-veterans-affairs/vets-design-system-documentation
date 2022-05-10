@@ -7,10 +7,10 @@ layout: default
 
 This is a list of all the draft pages on design.va.gov
 
-<h2>Documentation</h2>
+<h2>About</h2>
 
 <ul>
-  {% for item in site.documentation %}
+  {% for item in site.about %}
      {% if item.draft %}
      <li>
        <a href="{{ item.url }}">
@@ -35,10 +35,10 @@ This is a list of all the draft pages on design.va.gov
   {% endfor %}
 </ul>
 
-<h2>Design</h2>
+<h2>Foundation</h2>
 
 <ul>
-  {% for item in site.design %}
+  {% for item in site.foundation %}
      {% if item.draft %}
      <li>
        <a href="{{ item.url }}">
@@ -63,38 +63,10 @@ This is a list of all the draft pages on design.va.gov
   {% endfor %}
 </ul>
 
-<h2>Utilities</h2>
-
-<ul>
-  {% for item in site.utilities %}
-     {% if item.draft %}
-     <li>
-       <a href="{{ item.url }}">
-       {{ item.title }}
-       </a>
-     </li>
-     {% endif %}
-  {% endfor %}
-</ul>
-
 <h2>Patterns</h2>
 
 <ul>
   {% for item in site.patterns %}
-     {% if item.draft %}
-     <li>
-       <a href="{{ item.url }}">
-       {{ item.title }}
-       </a>
-     </li>
-     {% endif %}
-  {% endfor %}
-</ul>
-
-<h2>Layout</h2>
-
-<ul>
-  {% for item in site.layout %}
      {% if item.draft %}
      <li>
        <a href="{{ item.url }}">

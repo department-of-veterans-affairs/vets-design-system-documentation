@@ -16,6 +16,13 @@
   <meta name=”robots” content=”noindex, nofollow”>
   {% endif %}
 
+  <!-- Web component setup -->
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css" />
+  <script type="module">
+    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    defineCustomElements();
+</script>
+
   <!-- Icons -->
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">

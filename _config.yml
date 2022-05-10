@@ -9,6 +9,8 @@ project_name: VA.gov Design System
 sketch_cloud_link: https://sketch.cloud/s/8WM9O
 sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Work%20Practices/Design/Design%20Resources/Pattern%20Library/VA-gov-Pattern-Library.sketch
 
+forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-System-Overview.2085355587.html
+
 github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
 github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
 request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md&labels=vsp-design-system-team
@@ -28,7 +30,7 @@ experimental_reviewer_2: "Matthew Dingee"
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: none
 plugins:
   - jekyll-last-modified-at
 
@@ -47,22 +49,13 @@ collections:
   content-style-guide:
     output: true
     permalink: /:collection/:title
-  design:
+  foundation:
     output: true
     permalink: /:collection/:title
   components:
     output: true
     permalink: /:collection/:title
   patterns:
-    output: true
-    permalink: /:collection/:title
-  layout:
-    output: true
-    permalink: /:collection/:title
-  utilities:
-    output: true
-    permalink: /:collection/:title
-  experimental-design:
     output: true
     permalink: /:collection/:title
 
@@ -74,11 +67,12 @@ exclude:
   - tmp_remote_assets
   - .sass-cache
   - .ruby_version
-  - _design/html
+  - _foundation/html
   - _components/html
+  - _components/link/html
   - _patterns/html
-  - _layout/html
-  - _utilities/html
+  - _foundation/layout/html
+  - _foundation/utilities/html
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.
