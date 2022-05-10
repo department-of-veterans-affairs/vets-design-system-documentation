@@ -22,28 +22,30 @@ We define better content as:
 {% capture example_like_this %}
 <div markdown="1">
   If you limit consent, it may take us longer to get your records. Your doctor will follow the limits you specify.
-
-  Permission to share your medical records
-
-  service member
-
-  Accept the terms of use to sign in.
 </div>
 {% endcapture %}
 
 {% capture example_not_this %}
 <div markdown="1">
   The attending physician will abide by the limitation the Veteran specifies. If the Veteran opts to limit consent, please note it may take longer for VA to receive the Veteran’s records.
-
-  Patient Authorization To Disclose Information to the Department of Veterans Affairs
-
-  …Service member…Servicemember…Service Member …service member
-
-  Unless you accept the terms of use, you will not be able to sign in.
 </div>
 {% endcapture %}
 
 {% include _like-this-not-this.html like_this=example_like_this not_this=example_not_this %}
+
+{% capture example_like_this_2 %}
+<div markdown="1">
+  Accept the terms of use to sign in.
+</div>
+{% endcapture %}
+
+{% capture example_not_this_2 %}
+<div markdown="1">
+  Unless you accept the terms of use, you will not be able to sign in.
+</div>
+{% endcapture %}
+
+{% include _like-this-not-this.html like_this=example_like_this_2 not_this=example_not_this_2 %}
 
 ## Based on Veteran feedback
 
