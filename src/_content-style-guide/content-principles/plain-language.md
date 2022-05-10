@@ -1,15 +1,23 @@
-# Plain language
+---
+layout: content-style-guide
+permalink: /content-style-guide/content-principles/plain-language
+has-parent: /content-style-guide/content-principles/
+title: Plain language
+---
 
-“Avoiding vagueness and unnecessary complexity makes it easier for members of the public to understand and to apply for important benefits and services for which they are eligible. Plain writing can also assist the public in complying with applicable requirements simply because people better understand what they are supposed to do.”
-
-— Final Guidance on Implementing the Plain Writing Act of 2010 
+<blockquote>
+  <p>
+    “Avoiding vagueness and unnecessary complexity makes it easier for members of the public to understand and to apply for important benefits and services for which they are eligible. Plain writing can also assist the public in complying with applicable requirements simply because people better understand what they are supposed to do.”
+  </p>
+  <p>
+    — Final Guidance on Implementing the Plain Writing Act of 2010 
+  </p>
+</blockquote>
 
 
 ## Top 10 VA plain language standards
 
-
 Follow these plain language standards to help Veterans and their families find and understand the information they need:
-
 
 - **Use short sentences.** Try to limit each sentence to one subject and verb when possible. 
 - **Use simple words and terms** that are familiar to our primary audience: Veterans and their families.
