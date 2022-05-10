@@ -12,26 +12,17 @@ anchors:
 
 ## Examples
 
-### Default buttons
+### Primary buttons
 
-The default buttons are the most commonly-used button on the site.
+The primary buttons are the most commonly-used button on the site.
 
-Examples of default buttons:
+Examples of primary buttons:
 - Buttons in modals
 - Buttons that advance form pages 
 - Buttons that submit or save
 - Buttons that prompt users to sign in 
 
-{% include storybook-preview.html story="components-buttons--default-story" %}
-
-### Wizard buttons
-
-Use the **wizard** button to trigger a [wizard]({{ site.baseurl }}/patterns/wizards) on a page.
-
 {% include storybook-preview.html story="components-buttons--primary" %}
-
-### What to use for primary call to actions that link to another page 
-Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link]({{ site.baseurl }}/components/action-link) documentation for more details. We encourage using green buttons for triggering wizards only. 
 
 ### Secondary button
 
@@ -44,6 +35,15 @@ Examples of secondary buttons:
 
 {% include storybook-preview.html story="components-buttons--secondary" %}
 
+### Wizard buttons
+
+Use the **wizard** button to trigger a [wizard]({{ site.baseurl }}/patterns/wizards) on a page.
+
+{% include storybook-preview.html story="components-buttons--continue" %}
+
+### What to use for primary call to actions that link to another page 
+Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link]({{ site.baseurl }}/components/action-link) documentation for more details. We encourage using green buttons for triggering wizards only. 
+
 ### Big buttons
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
@@ -55,6 +55,12 @@ Any button can be made bigger by adding a class name of `usa-button-big` to the 
 Only `<button>` elements can be disabled with a `disabled` attribute. To make a `<a>` element disabled, you must use `.usa-button.usa-button-disabled` on the element.
 
 {% include storybook-preview.html story="components-buttons--disabled" %}
+
+### Progress buttons
+
+Use the **progress** button in form flows to proceed forward or go back.
+
+{% include storybook-preview.html story="components-buttons-progressbutton--button-pairs" %}
 
 ## Usage
 
