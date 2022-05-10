@@ -34,11 +34,11 @@ anchors:
 
 Use a link when you want to:
 
-- Navigate to another page (internal or external).
-- Anchor, or jump, to a specific header and section on a page.
-- Trigger a download such as a PDF.
-- Play a video.
-- Make email addresses and phone numbers open the relevant app by clicking or tapping them.
+- Navigate to another page (internal or external)
+- Anchor, or jump, to a specific header and section on a page
+- Trigger a download such as a PDF
+- Play a video
+- Make email addresses and phone numbers open the relevant app by clicking or tapping them
 
 ### When to consider something else
 
