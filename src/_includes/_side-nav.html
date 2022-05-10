@@ -17,9 +17,10 @@
           {% unless p.draft and (p.url != page.url) %}
             <li class="site-sidenav-list__item {% if is-current == true %} current {%- endif -%}">
               <a class="site-sidenav-list__link " href="{{site.baseurl}}{{ p.url }}">
+                {{p.title}}
                 {%- if p.status and (p.layout == "component" or p.layout == "pattern") -%}
                   {%- include _site-side-nav-status.html component-status=p.status -%}
-                {%- endif -%}{{p.title}}
+                {%- endif -%}
                 {%- if p.sub-pages -%}
                   {%- if is-current == true -%}
                 <i aria-hidden="true" class="fas fa-minus site-sidenav-list__handle" role="img"></i>
