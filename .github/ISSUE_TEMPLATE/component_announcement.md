@@ -15,7 +15,7 @@ assignees: caw310, k80bowman
 - [ ] Delete this section once complete
 
 ## Description
-Announce that [component name] is ready for use and add it to the "What's New" page on design.va.gov.
+Announce that [component name] is ready for use, add it to the "What's New" page on design.va.gov, and update the Maturity Scale label to "Use: Deployed" on design.va.gov (and Storybook and Sketch, when we enable that feature).
 
 ## Details
 Dependent on the completion of development, the creation of Sketch artifacts and component page, and documentation for the component on design.va.gov.
@@ -35,7 +35,9 @@ Sample announcement:
 - [ ] Craft component announcement (be sure to add appropriate links)
 - [ ] Post announcement in Slack channels mentioned above
 - [ ] Add new component notification to "What's New" page on design.va.gov
+- [ ] Update Maturity Scale label to "Use: Deployed" on design.va.gov, Storybook, and Sketch (where applicable)
 
 ## Acceptance Criteria
 - [ ] Component has been announced in appropriate Slack channels
 - [ ] New component notification has been added to "What's New" page on design.va.gov
+- [ ] Component has the "Use: Deployed" Maturity Scale label on design.va.gov, Storybook, and in Sketch (where applicable)

@@ -22,7 +22,7 @@ Add or update documentation and guidance for [component name] on design.va.gov. 
 
 [add link to Sketch component page]
 
-Be sure to use the appropriate [maturity scale](https://design.va.gov/about/maturity-scale) option.
+Be sure to use the appropriate [maturity scale](https://design.va.gov/about/maturity-scale) option. If this is a new component that has not yet gone through Staging Review, use the "Use with Caution: Candidate" label.
 
 ## Tasks
 - [ ] Write or update component documentation for design.va.gov

@@ -27,12 +27,10 @@ Build a web component of [component name]. Be sure to add analytics if necessary
 - [ ] Write any necessary tests
 - [ ] Add Chromatic link to #[add accessibility ticket number] and request review from an accessibility specialist
 - [ ] Ping designer for design review
-- [ ] Once accessibility and design reviews are complete, alert Carol that component is ready for staging review
-- [ ] Address any staging review comments
 - [ ] Display the appropriate [maturity scale](https://design.va.gov/about/maturity-scale) option in Storybook (once this feature is available)
+    - If this is a new component that has not gone through Staging Review, it should be labeled "Use with Caution: Candidate"
 - [ ] Merge component
 
 ## Acceptance Criteria
 - [ ] Component is written and added to Storybook
 - [ ] Component has had accessibility and design reviews
-- [ ] Any comments from the staging review have been addressed
