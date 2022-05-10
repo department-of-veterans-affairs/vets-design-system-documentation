@@ -1,82 +1,32 @@
-.site-sidenav-list {
-  list-style: none;
-  padding: units(5);
-  margin: 0;
+.va-sidebarnav {
+  margin: 4rem 0 0 4rem;
+  background-color: var(--color-white);
 
-  @include media($large-screen) {
-    padding-left: units(10);
+  .usa-sidenav-list {
+    border: none;
+    > li {
+      a {
+        position: relative;
+      }
+      i {
+        position: initial;
+        right: initial;
+        color: initial;
+        vertical-align: initial;
+        font-size: initial;
+        padding-left: initial;
+      }
+      .site-sidenav-list__handle {
+        position: absolute;
+        left: 100%;
+        transform: translateX(calc(-100% - 1rem));
+      }
+      a.usa-current {
+        cursor: pointer;
+      }
+      .sub_list-current {
+        color: var(--color-base);
+      }
+    }
   }
-}
-
-.site-sidenav-list__item {
-  background-color: #ffffff;
-  border: 1px solid $color-gray-lighter;
-  margin: 0 0 -1px 0;
-}
-
-.site-sidenav-list__link,
-.site-sidenav-list__link:visited {
-  position: relative;
-  display: block;
-  padding: $units-1 $units-2;
-  text-decoration: none;
-  color: $color-primary;
-}
-
-.site-sidenav-list__link:hover {
-  background-color: transparent;
-}
-
-.site-sidenav-list__item.current {
-  background-color: #f9f9f9;
-  font-weight: $font-bold;
-  position: relative;
-
-  &:before {
-    content: "";
-    background: $color-primary;
-    position: absolute;
-    width: 5px;
-    height: calc(100% + 2px);
-    left: -1px;
-    top: -1px;
-  }
-
-  a {
-    color: $color-base;
-  }
-}
-
-.site-sidenav-list__handle {
-  position: absolute;
-  right: units(1);
-  top: 30%;
-}
-
-.site-sidenav-list__sub {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-.site-sidenav-list__item.current .site-sidenav-list__sub {
-  display: block;
-}
-
-.site-sidenav-list__sub-item {
-  border-top: 1px solid $color-gray-lighter;
-  padding: 0;
-  margin: 0;
-}
-
-.site-sidenav-list__sub__link {
-  display: block;
-  text-decoration: none;
-  font-weight: normal;
-  padding: $units-1 $units-2;
-}
-
-.site-sidenav-list__sub__link:hover {
-  background-color: transparent;
 }
