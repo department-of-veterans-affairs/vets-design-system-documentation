@@ -36,7 +36,7 @@ anchors:
 
 ### Instances of this component in production
 
-{% include component-example.html alt="Example of this component in isolation." file="/images/components/address-block/mailing-address.png" caption="Use of this component for a VA Debt Management Center address." %}
+{% include component-example.html alt="Example of this component in isolation." file="/images/components/address-block/mailing-address.png" caption="Use of this component for a VA Debt Management Center address." width="50%" %}
 
 {% capture example_like_this %}
   {% include component-example.html alt="Example of this component to show Veteran personal information." file="/images/components/address-block/veteran-personal-info.png" caption="Use of this component for Veteran personal information." %}

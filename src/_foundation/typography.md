@@ -7,7 +7,6 @@ anchors:
   - anchor: Headings
   - anchor: Paragraphs
   - anchor: Lists
-  - anchor: Links
 ---
 
 # Typography
@@ -168,10 +167,3 @@ Don’t change heading level in order to use a different font size.
 </div>
 
 {% include snippet.html content='html/lists.html' %}
-
-## Links
-<div class="site-showcase">
-  {% include_relative html/links.html %}
-</div>
-
-{% include snippet.html content='html/links.html' %}
