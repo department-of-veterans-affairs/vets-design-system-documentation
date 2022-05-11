@@ -1,7 +1,7 @@
 ---
 name: "DS component - Announcement"
 about: INTERNAL DST USE ONLY
-title: [component name] - Announcement
+title: "[component name] - Announcement"
 labels: vsp-design-system-team
 assignees: caw310, k80bowman
 

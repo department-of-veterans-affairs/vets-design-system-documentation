@@ -1,7 +1,7 @@
 ---
 name: "DS component - Design"
 about: INTERNAL DST USE ONLY
-title: [component name] - Design
+title: "[component name] - Design"
 labels: vsp-design-system-team
 assignees: caw310, GnatalieH
 
