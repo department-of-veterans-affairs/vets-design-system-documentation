@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    {% if site.analytics == "production" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZTDXZ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endif %}
+
+    {% include header.html %}
+    {% include _mobile-nav.html %}
+    <div>
+
+    {% include _site-top-nav.html %}
+
+    <div class="site-content vads-u-margin-bottom--9">
+      {% include _site-content-nav.html %}
+      <div class="site-content__content">
+        <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+          {% unless page.index %}
+            {% if page.draft %}
+              {% include _draft.html %}
+            {% endif %}
+          <div>
+            <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
+          </div>
+          <h1 id="{{ page.title }}">{{ page.title }}</h1>
+            {% if page.intro-text %}
+            <div class="va-introtext" markdown="1">
+              {{ page.intro-text }}
+            </div>
+            {% endif %}
+            {% if page.anchors %}
+              {% include _site-on-this-page.html %}
+            {% endif %}
+            {% if page.sub-pages %}
+              {% include _site-in-this-section.html %}
+            {% endif %}
+          {% endunless %}
+          {{ content }}
+        </main>
+        {% include edit-on-github.html %}
+        {% include timestamps.html %}
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+
+  <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
+  <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
+  </body>
+</html>

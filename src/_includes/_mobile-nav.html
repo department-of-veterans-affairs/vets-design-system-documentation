@@ -13,7 +13,7 @@
       </li>
       {% assign sortedAbout = site.about | sort: "title", "last" %}
       {% for p in sortedAbout %}
-       {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+       {% if p.layout != "iframe" %}
           {% unless p.index or p.draft %}
             <li class="{% if p.url == page.url %}active-level{% endif %}">
               <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -39,7 +39,7 @@
       </li>
       {% assign sortedCSG = site.content-style-guide | sort: "title", "last" %}
       {% for p in sortedCSG %}
-        {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+        {% if p.layout != "iframe" %}
           {% unless p.index or p.draft %}
             <li class="{% if p.url == page.url %}active-level{% endif %}">
               <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -64,7 +64,7 @@
       </li>
       {% assign sortedFoundation = site.foundation | sort: "title", "last" %}
       {% for p in sortedFoundation %}
-      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+      {% if p.layout != "iframe" %}
           {% unless p.index or p.draft %}
             <li class="{% if p.url == page.url %}active-level{% endif %}">
               <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -89,7 +89,7 @@
       </li>
       {% assign sortedComponents = site.components | sort: "title", "last" %}
       {% for p in sortedComponents %}
-      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+      {% if p.layout != "iframe" %}
           {% unless p.index or p.draft %}
             <li class="{% if p.url == page.url %}active-level{% endif %}">
               <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
@@ -114,7 +114,7 @@
       </li>
       {% assign sortedPatterns = site.patterns | sort: "title", "last" %}
       {% for p in sortedPatterns %}
-        {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+        {% if p.layout != "iframe" %}
           {% unless p.index or p.draft %}
             <li class="{% if p.url == page.url %}active-level{% endif %}">
               <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>

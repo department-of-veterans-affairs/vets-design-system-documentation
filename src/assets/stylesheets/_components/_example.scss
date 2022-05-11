@@ -6,11 +6,9 @@
 
   &__image {
     padding: units(2) 0 0 units(2);
-
-    @include media($medium-screen) {
-      width: 75%;
-      max-width: 600px;
-    }
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
   }
 
   &__caption {
