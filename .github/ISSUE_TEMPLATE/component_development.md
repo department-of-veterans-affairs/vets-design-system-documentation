@@ -17,12 +17,15 @@ assignees: caw310, k80bowman
 ## Description
 Build a web component of [component name]. Be sure to add analytics if necessary, see [guidance](https://vfs.atlassian.net/wiki/spaces/DST/pages/2079817745/Component+development+process#Analytics%5BinlineExtension%5D).
 
+If this is a pattern or component that is alreday in existence, check the Design System Team backlog for outstanding issues. If you find any, link to them in a comment on this ticket. If possible, address any outstanding issues with this new version and link to this issue from the original issue. If not, indicate that in the original issue.
+
 ## Details
 - Design documents: [add links to any design documents]
 - Review accessibility considerations added to component design ticket (if any)
 - Review [Design System Engineering Best Practices document](https://vfs.atlassian.net/wiki/spaces/DST/pages/2176516116/Design+System+Engineering+Best+Practices)
 
 ## Tasks
+- [ ] Review DST backlog for outstanding issues with this component, if necessary
 - [ ] Create web component and add to Storyboook
 - [ ] Write any necessary tests
 - [ ] Add Chromatic link to #[add accessibility ticket number] and request review from an accessibility specialist
