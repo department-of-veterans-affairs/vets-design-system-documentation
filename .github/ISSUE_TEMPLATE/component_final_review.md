@@ -1,7 +1,7 @@
 ---
 name: "DS component - Final Review"
 about: INTERNAL DST USE ONLY
-title: [component name] - Final Review
+title: "[component name] - Final Review"
 labels: vsp-design-system-team
 assignees: caw310, k80bowman
 

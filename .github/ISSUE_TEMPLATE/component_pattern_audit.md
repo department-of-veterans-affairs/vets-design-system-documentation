@@ -1,7 +1,7 @@
 ---
 name: "New DS component or pattern - Audit"
 about: INTERNAL DST USE ONLY
-title: [component or pattern name] - Audit
+title: "[component or pattern name] - Audit"
 labels: vsp-design-system-team
 assignees: caw310, GnatalieH
 

@@ -1,7 +1,7 @@
 ---
 name: "DS component - Sketch artifacts"
 about: INTERNAL DST USE ONLY
-title: [component name] - Sketch artifacts
+title: "[component name] - Sketch artifacts"
 labels: vsp-design-system-team
 assignees: caw310, GnatalieH
 

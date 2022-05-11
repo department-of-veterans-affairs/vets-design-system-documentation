@@ -1,7 +1,7 @@
 ---
 name: "Component accessibility review"
 about: INTERNAL DST USE ONLY
-title: [component name] - Accessibility review
+title: "[component name] - Accessibility review"
 labels: vsp-design-system-team
 assignees: caw310, k80bowman
 
