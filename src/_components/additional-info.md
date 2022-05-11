@@ -71,15 +71,15 @@ The following are places where Additional info can be used:
 Most VA forms have a large amount of instructional text that tries to make VA processes, or the requirements of the application process clear. Unfortunately they are frequently several pages of tiny type that the person has to read and retain. Much of it may not even be relevant to that specific person’s situation. We use the Additional info component to situate plain language help at the point of the process where it is most relevant. For example, a group of three inputs that make sense in a particular order, and the middle one has some nuance to it.
 
 <h5>Closed (default)</h5>
-{% include component-example.html alt="Example of this component in the closed state being used for contextual help." file="/images/components/additional-info/additional-info-closed.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." %}
+{% include component-example.html alt="Example of this component in the closed state being used for contextual help." file="/images/components/additional-info/additional-info-closed.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." width="50%" %}
 
 <h5>Open</h5>
-{% include component-example.html alt="Example of this component in the open state being used for contextual help." file="/images/components/additional-info/additional-info-open.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." %}
+{% include component-example.html alt="Example of this component in the open state being used for contextual help." file="/images/components/additional-info/additional-info-open.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." width="50%" %}
 
 
 #### Within a Process list
 <figure class="site-component-example">
-  <img alt="Example of this component used within a process list component" src="{{ site.baseurl }}/images/components/additional-info/example-in-process-list.png" class="site-component-example__image">
+  <img alt="Example of this component used within a process list component" src="{{ site.baseurl }}/images/components/additional-info/example-in-process-list.png" class="site-component-example__image" width="75%">
   <figcaption class="site-component-example__caption">
     Use within a <a href="{{ site.baseurl }}/components/process-list">process list</a> in <a href="https://www.va.gov/health-care/apply/application/introduction">Apply for VA health care</a>
   </figcaption>

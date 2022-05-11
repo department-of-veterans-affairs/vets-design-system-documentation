@@ -76,7 +76,7 @@ Some examples of other content or questions are:
 
 ![confirmation page action link]({{site.baseurl}}/images/confirmation-page-action-link.png) 
 
- The [action link]({{ site.baseurl }}/components/action-link) guides the user back to the VA.gov homepage. 
+ The [action link]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage. 
 
 ### Helpful content
 

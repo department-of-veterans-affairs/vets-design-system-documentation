@@ -44,7 +44,7 @@ Used when there is a problem or something destructive is about to occur.
 
 Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
 
-{% include storybook-preview.html story="components-va-alert--continue" %}
+{% include storybook-preview.html story="components-va-alert--sign-in-or-tool-prompt" %}
 
 ## Examples - Default variations
 
@@ -56,10 +56,10 @@ Alerts can contain headings.
 
 ### Dismissible 
 
-* Any alert variation can be dismissible. This example shows an informational alert that can be dismissed.
+* Any alert variation can be dismissible, including background-color only alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
 
-{% include storybook-preview.html story="components-va-alert--closeable" %}
+{% include storybook-preview.html story="components-va-alert--dismissable" %}
 
 ### Full-width
 

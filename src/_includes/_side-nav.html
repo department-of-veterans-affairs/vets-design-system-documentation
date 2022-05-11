@@ -12,7 +12,7 @@
       {% if p.url == page.url or (page.has-parent == p.permalink and p.sub-pages) %}
         {% assign is-current = true %}
       {% endif %}
-      {% if p.layout == "default" or p.layout == "component" or p.layout == "pattern" %}
+      {% if p.layout != "iframe" %}
         {% unless p.index or p.has-parent %}
           {% unless p.draft and (p.url != page.url) %}
             <li class="site-sidenav-list__item {% if is-current == true %} current {%- endif -%}">
