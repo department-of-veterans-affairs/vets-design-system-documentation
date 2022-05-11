@@ -2,24 +2,30 @@ scale:
   - name: dont-use-proposed
     category: "Don't use"
     category-slug: dont-use
+    symbol: fa-square
     title: Proposed
   - name: use-with-caution-candidate
     category: Use with caution
     category-slug: use-with-caution
+    symbol: fa-exclamation-triangle
     title: Candidate
   - name: use-with-caution-available
     category: Use with caution
     category-slug: use-with-caution
+    symbol: fa-exclamation-triangle
     title: Available
   - name: use-deployed
     category: Use
     category-slug: use
+    symbol: fa-circle
     title: Deployed
   - name: use-best-practice
     category: Use
     category-slug: use
+    symbol: fa-circle
     title: Best practice
   - name: dont-use-deprecated
     category: "Don't use"
     category-slug: dont-use
+    symbol: fa-square
     title: Deprecated

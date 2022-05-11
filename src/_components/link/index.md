@@ -64,7 +64,7 @@ Use a link when you want to:
 
 ### Active link
 
-{% include component-example.html alt="Example of the active link style." file="/images/components/link/active-link-style-big.png" caption="An example of the default link style." %}
+{% include component-example.html alt="Example of the active link style." file="/images/components/link/active-link-style-big.png" caption="An example of the active link style." %}
 {% include snippet.html content='html/active-link.html' %}
 
 - For links that have less hierarchy than an Action Link, we recommend using an Active Link. Active Links can be accompanied by a right-facing chevron icon for more emphasis. 

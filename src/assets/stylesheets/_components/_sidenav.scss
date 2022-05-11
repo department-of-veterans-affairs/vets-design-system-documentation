@@ -17,7 +17,8 @@
 .site-sidenav-list__link,
 .site-sidenav-list__link:visited {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: $units-1 $units-2;
   text-decoration: none;
   color: $color-primary;
@@ -45,6 +46,10 @@
   a {
     color: $color-base;
   }
+}
+
+.site-sidenav-list__link .site-sidenav-status {
+  order: -1;
 }
 
 .site-sidenav-list__handle {

@@ -16,19 +16,32 @@ anchors:
 
 The maturity scale is divided into 3 major categories:
 
-* <span class="usa-label site-component-status site-component-status--use">Use</span>
-* <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
-* <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
+  
+{% assign scale = site.data.maturity-scale.scale %}
+{% assign use = scale | where: 'category', 'Use' %}
+{% assign use_with_caution = scale | where: 'category', 'Use with caution' %}
+{% assign dont_use = scale | where: 'category', "Don't use" %}
+{% assign use_symbol = use.first.symbol %}
+{% assign use_with_caution_symbol = use_with_caution.first.symbol %}
+{% assign dont_use_symbol = dont_use.first.symbol %}
+
+<i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use"></i> <span class="usa-label site-component-status site-component-status--use">Use</span>
+
+<i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution"></i> <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
+
+<i class="fas {{dont_use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--dont-use"></i> <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
 
 Within each of those categories there are 2 levels:
 
-* <span class="usa-label site-component-status site-component-status--use">Use</span>
+<i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use"></i> <span class="usa-label site-component-status site-component-status--use">Use</span>
   * Deployed
   * Best practice
-* <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
+
+<i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution"></i> <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
   * Candidate
   * Available
-* <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
+
+<i class="fas {{dont_use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--dont-use"></i> <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
   * Proposed
   * Deprecated
 
@@ -46,6 +59,7 @@ The full maturity scale goes in this order:
 ## Definitions
 
 <h3 id="dont-use-proposed" class="site-component-status-heading">
+  <i class="fas {{dont_use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--dont-use"></i> 
   <span class="usa-label site-component-status site-component-status--dont-use-proposed">
     Don't use: Proposed
   </span>
@@ -56,6 +70,7 @@ A team has filed a request for a component or pattern but it has not yet been re
 * The Github issue may link to supporting research, a Sketch (or other tool) mock-up, or a functional instance on VA.gov. 
 
 <h3 id="use-with-caution-candidate" class="site-component-status-heading">
+  <i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution-candidate"></i> 
   <span class="usa-label site-component-status site-component-status--use-with-caution-candidate">
     Use with caution: Candidate
   </span>
@@ -67,6 +82,7 @@ Design System Team and/or Design System Council have evaluated the proposal.
 * The component or pattern may be in limited use (i.e. it may have already been shipped by a team). This could also be known as: “In work”, “Draft”, "Beta", or “Give it a go! YMMV”.
 
 <h3 id="use-with-caution-available" class="site-component-status-heading">
+  <i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution-available"></i> 
   <span class="usa-label site-component-status site-component-status--use-with-caution-available">
     Use with caution: Available
   </span>
@@ -81,6 +97,7 @@ The component or pattern is:
 By “complete” we mean that the documentation of the component or pattern is complete and in sync across the Design System (design.va.gov, Storybook, and Sketch library). 
 
 <h3 id="use-deployed" class="site-component-status-heading">
+  <i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-deployed"></i> 
   <span class="usa-label site-component-status site-component-status--use-deployed">
     Use: Deployed
   </span>
@@ -95,6 +112,7 @@ The component or pattern:
 In other words, it’s out there and we have some degree of confidence in it.
 
 <h3 id="use-best-practice" class="site-component-status-heading">
+  <i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-best-practice"></i> 
   <span class="usa-label site-component-status site-component-status--use-best-practice">
     Use: Best Practice
   </span>
@@ -110,6 +128,7 @@ The component or pattern:
 Given all of the above, the component or pattern is now considered best practice.
 
 <h3 id="dont-use-deprecated" class="site-component-status-heading">
+  <i class="fas {{dont_use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--dont-use"></i> 
   <span class="usa-label site-component-status site-component-status--dont-use-deprecated">
     Don't use: Deprecated
   </span>
