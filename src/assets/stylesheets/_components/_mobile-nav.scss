@@ -1,4 +1,4 @@
-.site-mobile-nav {
+.va-sidebarnav.site-mobile-nav {
   background: #fff;
   display: none;
   padding: $units-3;
@@ -12,13 +12,20 @@
   width: 75%;
   max-width: 360px;
   transform: translateX(0);
+  visibility: visible;
+  margin: 0;
+  left: inherit;
+
+  &::before {
+    content: none;
+  }
 
   @include media($nav-width) {
     display: none;
   }
 }
 
-.site-mobile-nav.is-visible {
+.va-sidebarnav.site-mobile-nav.is-visible {
   display: block;
   animation: slidein-left 0.3s ease-in-out;
 
