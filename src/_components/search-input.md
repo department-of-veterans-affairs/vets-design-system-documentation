@@ -21,6 +21,10 @@ web-component: va-search
 
 {% include storybook-preview.html story="components-va-search-input--with-button-text" link_text="va-search-input" %}
 
+### With Typeahead
+
+{% include storybook-preview.html story="components-va-search-input--with-typeahead" link_text="va-search-input" %}
+
 ## Usage
 
 ### When to use search input with type-ahead
