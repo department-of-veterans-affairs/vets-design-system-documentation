@@ -16,26 +16,23 @@ Dates, times, phone numbers, and addresses often appear together, so we've put g
 
 ## Dates and years
 
-Spell out dates in body copy, using the full construction: March 31, 1989. In general, spell out days of the week and months also in body copy. 
+Spell out dates in body copy, using the full construction: March 31, 1989. In general, spell out days of the week and months also in body copy.
 
-__Exceptions:__
+**Exceptions:**
 
 - Use 9/11 when it's part of a program name such as the Post-9/11 GI Bill.
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
   - Mon., Tue., Wed., Thu., Fri., Sat., Sun.
   - Jan., Feb., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate March, April, May, June, July.)
   - In application form fields, we often use the construction: mm/dd/yyyy
-<br>
+    <br>
 
-__Years__
+**Years**
 
 When referencing decades or periods of years, don't use an apostrophe with the "s."
 
 - **Like this:** The early 2000s
 - **Not this:** The early 2000's
-
-
-
 
 <br>
 
@@ -82,14 +79,11 @@ from 8:00 a.m. to noon ET
 </div>
 </div>
 
-
-
-
 <br>
 
-## Phone numbers 
+## Phone numbers
 
-Use hyphens between numbers, and don't use parentheses to set off the area code: 212-123-1234. 
+Use hyphens between numbers, and don't use parentheses to set off the area code: 212-123-1234.
 
 - Use +1 only when the information is specifically addressing Veterans or people who are living outside the U.S.: +1-201-123-1234.
 
@@ -101,16 +95,15 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 Hyperlink all phone numbers, including TTY numbers. Use the following source code for 508 accessibility:
 
-- `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>` 
+- `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>`
 
 - `<a href="tel:711" aria-label="TTY. 7 1 1.">TTY: 711</a>`. 
 
 Including the aria label tells screen readers to read the phone number one digit at a time like a phone number, rather than as thousands or hundreds.
 
-We don’t use vanity phone numbers in body copy, as it adds visual noise and is not helpful to screen readers. We use and hyperlink only the numeric phone number in body copy. 
+We don’t use vanity phone numbers in body copy, as it adds visual noise and is not helpful to screen readers. We use and hyperlink only the numeric phone number in body copy.
 
--	**Exception:** In marketing or promotional messaging, such as the right rail promo component, we discourage but make an exception for vanity phone numbers. In marketing or promotional components, use the format: 877-222-VETS (8387) and hyperlink the complete number including the parenthetical.
-
+- **Exception:** In marketing or promotional messaging, such as the right rail promo component, we discourage but make an exception for vanity phone numbers. In marketing or promotional components, use the format: 877-222-VETS (8387) and hyperlink the complete number including the parenthetical.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -130,46 +123,8 @@ Call us toll free at <a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 
 
 Write out street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. Don't abbreviate.
 
-When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets. 
+When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets.
 
 In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.
-
-
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
-  
-<p class="va-address-block">
-1600 Pennsylvania Avenue, NW <br/>
-Washington, DC 20500 <br/>
-</p>
-  
-<p class="va-address-block">
-123 E. 45th Street <br/>
-New York, NY 67890 <br/>
-</p>
-  
-</div>
-</div>
-
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
-<div class="do-dont__content" markdown="1">
-  
-<p class="va-address-block">
-1600 Pennsylvania Ave. Northwest<br/>
-Washington, DC 20500<br/>
-</p>
-
-<p class="va-address-block">
-123 East 45th St. <br/>
-New York, NY 67890 <br/>
-</p>
-
-</div>
-</div>
-</div>
-
-### Zip codes
-When we ask a Veteran to fill out their address, we don't require them to include the extra 4 digits of their zip code. But when we (VA) provide an address for Veterans to send documents to, we sometimes include the extra 4 digits of the zip code.
+ 
+{% include content/addresses.md %}

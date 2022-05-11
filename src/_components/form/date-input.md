@@ -9,11 +9,12 @@ status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-date
 ---
 
-{% include storybook-preview.html story="components-date--default" %}
+{% include storybook-preview.html story="components-va-date--default" link_text="va-date" %}
 
 ## Usage
 
@@ -31,6 +32,8 @@ If users are trying to schedule something, consider using a calendar picker.
 
 - The component consists of two select boxes for month and day inputs and a text input for year input. For those components please check the usability guidance for select boxes and text inputs
 - For the month select box, provide the user unabbreviated months to choose from. Example: January
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 

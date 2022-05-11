@@ -1,0 +1,6 @@
+<figure class="site-component-example">
+  <img class="site-component-example__image" alt="{{ include.alt }}" src="{{ site.baseurl }}{{ include.file }}" {% if include.width -%}width="{{include.width}}"{% endif -%}>
+  <figcaption class="site-component-example__caption">
+    {{ include.caption }}
+  </figcaption>
+</figure>

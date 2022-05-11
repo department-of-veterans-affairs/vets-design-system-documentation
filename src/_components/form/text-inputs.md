@@ -3,8 +3,9 @@ layout: component
 permalink: /components/form/text-inputs
 has-parent: /components/form/
 title: Text inputs
-research-title: Form controls
 intro-text: "Text inputs (text-input and textarea) allow people to enter any type of text unless otherwise restricted."
+research-title: Form controls
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/04A043C5-65CA-43BB-88F2-E17EF8B12D7D
 status: use-deployed
 anchors:
   - anchor: Text input
@@ -30,7 +31,7 @@ web-component: va-text-input
 
 This should be used in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links. 
 
-Note that in general we want to avoid this pattern - if a field needs a lot of explanation, it should ideally be moved to its own page with explanation on the page itself. [See other options for Hint text](#hint-text)
+Note that in general we want to avoid this pattern - if a field needs a lot of explanation, it should ideally be moved to its own page with explanation on the page itself. [See other options for Hint text]({{ site.baseurl }}/components/form/#hint-text)
 
 {% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input--with-hint-text" %}
 

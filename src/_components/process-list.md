@@ -12,7 +12,7 @@ anchors:
 
 ## Examples
 
-{% include storybook-preview.html height="300px" story="components-va-process-list--default" %}
+{% include storybook-preview.html height="300px" story="components-va-process-list--default" link_text="va-process-list" %}
 
 ## Usage
 

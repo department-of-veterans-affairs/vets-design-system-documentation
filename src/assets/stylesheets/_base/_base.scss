@@ -73,3 +73,9 @@ iframe {
     }
   }
 }
+
+blockquote {
+  margin: units(2);
+  padding: 0 units(1);
+  border-left: .25em solid $color-gray-medium;
+}

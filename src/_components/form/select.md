@@ -3,8 +3,9 @@ layout: component
 permalink: /components/form/select
 has-parent: /components/form/
 title: Select
-research-title: Form controls
 intro-text: "A select box allows users to select one option from a list."
+research-title: Form controls
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/93AD583C-43C8-40A6-9363-36D3CC2C2AAD
 status: use-deployed
 anchors:
   - anchor: Usage
