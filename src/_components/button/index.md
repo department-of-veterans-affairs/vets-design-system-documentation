@@ -13,7 +13,7 @@ sub-pages:
 
 ## Examples
 
-### Primary buttons
+### Primary button
 
 The primary buttons are the most commonly-used button on the site.
 
@@ -35,15 +35,6 @@ Examples of secondary buttons:
 * Buttons for editing cards
 
 {% include storybook-preview.html story="components-buttons--secondary" %}
-
-### Continue buttons
-
-Use the **continue** button when a user has to complete an action like signing in or triggering a [wizard]({{ site.baseurl }}/patterns/wizards) on a page.
-
-{% include storybook-preview.html story="components-buttons--continue" %}
-
-### What to use for primary call to actions that link to another page 
-Accessibility specialists have determined that calls to action that bring a user to another page should be replaced with more visually prominent links rather than buttons due to confusion with screen readers. Read [Action link]({{ site.baseurl }}/components/action-link) documentation for more details. We encourage using green buttons for triggering wizards only. 
 
 ### Big buttons
 
