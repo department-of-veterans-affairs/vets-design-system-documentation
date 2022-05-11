@@ -8,7 +8,7 @@ anchors:
   - anchor: Usage
   - anchor: Type-ahead behavior
   - anchor: Code usage
-web-component: va-search
+web-component: va-search-input
 ---
 
 ## Examples
