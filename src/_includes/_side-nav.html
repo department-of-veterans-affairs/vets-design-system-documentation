@@ -34,6 +34,9 @@
                   <li>
                     <a href="{{p.permalink }}{{ item.sub-page | slugify }}">
                       {{ item.sub-page }}
+                    {%- if p.status and (p.layout != "iframe") -%}
+                      {%- include _site-side-nav-status.html component-status=p.status -%}
+                    {%- endif -%}
                     </a>
                   </li>
                   {% endfor %}
@@ -52,6 +55,9 @@
                   <li>
                     <a class="{% if is-current == true %}sub_list-current vads-u-font-weight--bold{%- endif -%}" href="{{p.permalink }}{{ item.sub-page | slugify }}">
                       {{ item.sub-page }}
+                    {%- if p.status and (p.layout != "iframe") -%}
+                      {%- include _site-side-nav-status.html component-status=p.status -%}
+                    {%- endif -%}
                     </a>
                   </li>
                   {% endfor %}

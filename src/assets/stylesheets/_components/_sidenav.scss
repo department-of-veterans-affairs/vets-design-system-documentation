@@ -39,5 +39,11 @@
         color: var(--color-base);
       }
     }
+    .active-level .usa-sidenav-sub_list li>a:hover {
+      // This may be a bug in formation as 
+      // the item you are hovering over has different padding 
+      // and thus unintentionally (IMHO) moves. This defeats that.
+      padding-left: 28px;
+    }
   }
 }
