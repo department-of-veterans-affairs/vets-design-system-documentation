@@ -8,7 +8,7 @@ anchors:
   - anchor: Usage
   - anchor: Type-ahead behavior
   - anchor: Code usage
-web-component: va-search
+web-component: va-search-input
 ---
 
 ## Examples
@@ -20,6 +20,10 @@ web-component: va-search
 ### With button text
 
 {% include storybook-preview.html story="components-va-search-input--with-button-text" link_text="va-search-input" %}
+
+### With Type-ahead
+
+{% include storybook-preview.html story="components-va-search-input--with-typeahead" link_text="va-search-input" %}
 
 ## Usage
 

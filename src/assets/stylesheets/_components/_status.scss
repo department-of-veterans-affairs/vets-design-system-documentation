@@ -6,7 +6,8 @@
   }
 }
 
-.va-sidebarnav .usa-sidenav-list > li, main {
+.va-sidebarnav .usa-sidenav-list > li, 
+main {
   .site-sidenav-status {
     font-size: 1rem;
     padding-right: 0.5rem;
@@ -45,5 +46,9 @@
   .site-sidenav-status--dont-use-proposed,
   .site-sidenav-status--dont-use-deprecated {
     color: $color-secondary-darkest;
+  }
+
+  .site-sidenav-status--large {
+    font-size: inherit;
   }
 }

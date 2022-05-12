@@ -7,6 +7,8 @@
     > li {
       a {
         position: relative;
+        display: flex;
+        align-items: center;
       }
       i {
         position: initial;
@@ -20,6 +22,15 @@
         position: absolute;
         left: 100%;
         transform: translateX(calc(-100% - 1rem));
+      }
+      .site-sidenav-status {
+        order: -1;
+      }
+      a:hover {
+        // This may be a bug in formation as 
+        // the item you are hovering over has different padding 
+        // and thus unintentionally (IMHO) moves. This defeats that.
+        padding: 8px 16px 8px 12px;
       }
       a.usa-current {
         cursor: pointer;
