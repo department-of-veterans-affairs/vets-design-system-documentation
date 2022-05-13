@@ -8,6 +8,7 @@
 {% endcapture %}
 
 {% capture headerClasses %}
+  vads-u-display--flex
   vads-u-font-family--sans
   vads-u-font-size--lg
   vads-u-margin--0
@@ -18,14 +19,20 @@
 
 <div class="medium-screen:vads-u-display--flex">
   <div class="{{ containerClasses }} vads-u-border-color-top--green">
-    <h3 class="{{ headerClasses }} vads-u-color--green">Like this</h3>
+    <h3 class="{{ headerClasses }} vads-u-color--green">
+      <img src="/assets/img/check-circle-green.svg" class="vads-u-margin-right--1" aria-hidden="true" />
+      Like this
+    </h3>
     <div>
       {{ do }}
     </div>
   </div>
 
   <div class="{{ containerClasses }} vads-u-border-color-top--secondary">
-    <h3 class="{{ headerClasses }} vads-u-color--secondary">Not this</h3>
+    <h3 class="{{ headerClasses }} vads-u-color--secondary">
+      <img src="/assets/img/times-circle-red.svg" class="vads-u-margin-right--1" aria-hidden="true" />
+      Not this
+    </h3>
     <div>
       {{ dont }}
     </div>
