@@ -9,6 +9,12 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+### May 12, 2022
+
+**Design System updates**
+
+- [Search input web component](https://design.va.gov/components/search-input)
+
 ### May 05, 2022
 
 **Design System updates**
