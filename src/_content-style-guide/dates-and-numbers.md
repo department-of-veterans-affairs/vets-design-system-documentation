@@ -44,20 +44,15 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 - Include the minutes, even when on the hour.
 - When referencing office hours, always use the time zone ET, even if the office is in another location (no parentheses, periods, or daylight/standard).
 
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
+{% capture do %}
 8:00 a.m. to 5:30 p.m. ET
-</div>
-</div>
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
-<div class="do-dont__content" markdown="1">
-8 a.m. to 5:30 p.m. ET  
-</div>
-</div>
-</div>
+{% endcapture %}
+
+{% capture dont %}
+8 a.m. to 5:30 p.m. ET
+{% endcapture %}
+
+{% include do-dont.html do=do dont=dont %}
 
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 - In an application or tool that has a time stamp of a user's progress or saved work, show hours in their local time zone.
