@@ -16,54 +16,46 @@
         {% if p.layout != "iframe" %}
           {% unless p.index or p.has-parent %}
             {% unless p.draft and (p.url != page.url) %}
-              <li class="{% if is-current == true %}active-level{%- endif -%}">
-                <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-                  {{p.title}}
-                  {%- if p.status and (p.layout != "iframe") -%}
-                    {%- include _site-side-nav-status.html component-status=p.status -%}
-                  {%- endif -%}
-                  {%- if p.sub-pages -%}
-                  {%- if is-current == false -%}
-                    <i aria-hidden="true" class="fas fa-plus site-sidenav-list__handle" role="img"></i>
-                  {%- endif -%}
+                {%- if p.sub-pages -%}
+                  <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="{%- if is-current == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">{{p.title}}</button>
+                      <div id="{{p.title | slugify }}" class="usa-accordion-content" aria-hidden="{%- if is-current == true -%}false{%- else -%}true{%- endif -%}">
+                        <ul class="usa-sidenav-list">
+                          <li class="{% if is-current == true %}active-level{%- endif -%}">
+                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">Overview</a>
+                          </li>
+                          {% for item in p.sub-pages%}
+                          {% assign link = page.url %}
+                          {% assign slug = item.sub-page | slugify %}
+                          {% if link contains slug %}
+                            {% assign is-current = true %}
+                          {% else %}
+                            {% assign is-current = false %}
+                          {% endif %}
+                          <li>
+                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{p.permalink }}{{ item.sub-page | slugify }}">
+                              {{ item.sub-page }}
+                            {%- if p.status and (p.layout != "iframe") -%}
+                              {%- include _site-side-nav-status.html component-status=p.status -%}
+                            {%- endif -%}
+                            </a>
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  {%- else -%}
+                  <li class="{% if is-current == true %}active-level{%- endif -%}">
+                    <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
+                      {{p.title}}
+                      {%- if p.status and (p.layout != "iframe") -%}
+                        {%- include _site-side-nav-status.html component-status=p.status -%}
+                      {%- endif -%}
+                    </a>
+                  </li>
                 {%- endif -%}
-                </a>
-                {% if p.sub-pages and p.url == page.url %}
-                <ul class="usa-sidenav-sub_list">
-                  {% for item in p.sub-pages%}
-                  <li>
-                    <a href="{{p.permalink }}{{ item.sub-page | slugify }}">
-                      {{ item.sub-page }}
-                    {%- if p.status and (p.layout != "iframe") -%}
-                      {%- include _site-side-nav-status.html component-status=p.status -%}
-                    {%- endif -%}
-                    </a>
-                  </li>
-                  {% endfor %}
-                </ul>
-                {% endif %}
-                {% if page.has-parent == p.permalink and p.sub-pages %}
-                <ul class="usa-sidenav-sub_list">
-                  {% for item in p.sub-pages%}
-                    {% assign link = page.url %}
-                    {% assign slug = item.sub-page | slugify %}
-                    {% if link contains slug %}
-                      {% assign is-current = true %}
-                    {% else %}
-                      {% assign is-current = false %}
-                    {% endif %}
-                  <li>
-                    <a class="{% if is-current == true %}sub_list-current vads-u-font-weight--bold{%- endif -%}" href="{{p.permalink }}{{ item.sub-page | slugify }}">
-                      {{ item.sub-page }}
-                    {%- if p.status and (p.layout != "iframe") -%}
-                      {%- include _site-side-nav-status.html component-status=p.status -%}
-                    {%- endif -%}
-                    </a>
-                  </li>
-                  {% endfor %}
-                </ul>
-                {% endif %}
-              </li>
             {% endunless %}
           {% endunless %}
         {% endif %}
