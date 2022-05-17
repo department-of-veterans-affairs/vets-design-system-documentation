@@ -2,6 +2,7 @@
 layout: pattern
 title: Templates
 permalink: /patterns/templates/
+status: use-deployed
 intro-text: "Templates for specific pages that provide guidance on their layout and use."
 sub-pages:
   - sub-page: Email

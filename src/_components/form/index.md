@@ -3,6 +3,7 @@ layout: component
 permalink: /components/form/
 title: Form
 intro-text: "Form controls allow users to enter information."
+status: use-deployed
 sub-pages:
   - sub-page: Checkbox
   - sub-page: Date input

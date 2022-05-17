@@ -2,6 +2,7 @@
 layout: pattern
 title: Forms
 permalink: /patterns/forms/
+status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
   - sub-page: All or none of the above

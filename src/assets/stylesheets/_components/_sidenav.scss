@@ -1,87 +1,58 @@
-.site-sidenav-list {
-  list-style: none;
-  padding: units(5);
-  margin: 0;
+.va-sidebarnav {
+  $padding-override: 10px 16px 10px 12px;
 
-  @include media($large-screen) {
-    padding-left: units(10);
+  margin: 4rem 0 0 4rem;
+  background-color: var(--color-white);
+
+  .usa-accordion {
+    .usa-accordion-button {
+      padding: $padding-override;
+      font-size: 15px;
+    }
+    .usa-sidenav-list a {
+      padding: $padding-override;
+    }
   }
-}
-
-.site-sidenav-list__item {
-  background-color: #ffffff;
-  border: 1px solid $color-gray-lighter;
-  margin: 0 0 -1px 0;
-}
-
-.site-sidenav-list__link,
-.site-sidenav-list__link:visited {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: $units-1 $units-2;
-  text-decoration: none;
-  color: $color-primary;
-}
-
-.site-sidenav-list__link:hover {
-  background-color: transparent;
-}
-
-.site-sidenav-list__item.current {
-  background-color: #f9f9f9;
-  font-weight: $font-bold;
-  position: relative;
-
-  &:before {
-    content: "";
-    background: $color-primary;
-    position: absolute;
-    width: 5px;
-    height: calc(100% + 2px);
-    left: -1px;
-    top: -1px;
+  .usa-accordion-content[aria-hidden="false"] {
+    background-color: var(--color-gray-lightest);
   }
 
-  a {
-    color: $color-base;
+  .usa-sidenav-list {
+    border: none;
+    > li {
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: $padding-override;
+      }
+      i {
+        position: initial;
+        right: initial;
+        color: initial;
+        vertical-align: initial;
+        font-size: initial;
+        padding-left: initial;
+      }
+      .site-sidenav-status {
+        order: -1;
+      }
+      a:hover,
+      a.usa-current:hover {
+        // This may be a bug in formation as 
+        // the item you are hovering over has different padding 
+        // and thus unintentionally (IMHO) moves. This defeats that.
+        padding: $padding-override;
+      }
+      a.usa-current {
+        cursor: pointer;
+      }
+    }
+    .active-level .usa-sidenav-sub_list li>a:hover {
+      // This may be a bug in formation as 
+      // the item you are hovering over has different padding 
+      // and thus unintentionally (IMHO) moves. This defeats that.
+      padding-left: 28px;
+    }
   }
-}
-
-.site-sidenav-list__link .site-sidenav-status {
-  order: -1;
-}
-
-.site-sidenav-list__handle {
-  position: absolute;
-  right: units(1);
-  top: 30%;
-}
-
-.site-sidenav-list__sub {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
-.site-sidenav-list__item.current .site-sidenav-list__sub {
-  display: block;
-}
-
-.site-sidenav-list__sub-item {
-  border-top: 1px solid $color-gray-lighter;
-  padding: 0;
-  margin: 0;
-}
-
-.site-sidenav-list__sub__link {
-  display: block;
-  text-decoration: none;
-  font-weight: normal;
-  padding: $units-1 $units-2;
-}
-
-.site-sidenav-list__sub__link:hover {
-  background-color: transparent;
 }
