@@ -10,8 +10,12 @@
     {% assign sortedPages = include.section | sort: "title", "last" %}
     {% for p in sortedPages %}
         {% assign is-current = false %}
-        {% if p.url == page.url or (page.has-parent == p.permalink and p.sub-pages) %}
+        {% if p.url == page.url %}
           {% assign is-current = true %}
+        {% endif %}
+        {% assign open-accordion = false %}
+        {% if p.url == page.url or (page.has-parent == p.permalink) %}
+         {% assign open-accordion = true %}
         {% endif %}
         {% if p.layout != "iframe" %}
           {% unless p.index or p.has-parent %}
@@ -19,11 +23,16 @@
                 {%- if p.sub-pages -%}
                   <ul class="usa-accordion">
                     <li>
-                      <button class="usa-accordion-button" aria-expanded="{%- if is-current == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">{{p.title}}</button>
-                      <div id="{{p.title | slugify }}" class="usa-accordion-content" aria-hidden="{%- if is-current == true -%}false{%- else -%}true{%- endif -%}">
+                      <button class="usa-accordion-button" aria-expanded="{%- if open-accordion == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">{{p.title}}</button>
+                      <div id="{{p.title | slugify }}" class="usa-accordion-content" aria-hidden="{%- if open-accordion == true -%}false{%- else -%}true{%- endif -%}">
                         <ul class="usa-sidenav-list">
                           <li class="{% if is-current == true %}active-level{%- endif -%}">
-                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">Overview</a>
+                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
+                              Overview
+                              {%- if p.status and (p.layout != "iframe") -%}
+                                {%- include _site-side-nav-status.html component-status=p.status -%}
+                              {%- endif -%}
+                            </a>
                           </li>
                           {% for item in p.sub-pages%}
                           {% assign link = page.url %}
