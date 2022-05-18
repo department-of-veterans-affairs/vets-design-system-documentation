@@ -20,31 +20,31 @@ web-component: va-alert
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
-{% include storybook-preview.html story="components-va-alert--default" %}
+{% include storybook-preview.html story="components-va-alert--default" link_text="va-alert" %}
 
 ### Warning alert
 
 Used to warn a user, such as when there are negative consequences, and when something has gone wrong.
 
-{% include storybook-preview.html story="components-va-alert--warning" %}
+{% include storybook-preview.html story="components-va-alert--warning" link_text="va-alert" %}
 
 ### Success alert
 
 Used to indicate success.
 
-{% include storybook-preview.html story="components-va-alert--success" %}
+{% include storybook-preview.html story="components-va-alert--success" link_text="va-alert" %}
 
 ### Error alert
 
 Used when there is a problem or something destructive is about to occur.
 
-{% include storybook-preview.html story="components-va-alert--error" %}
+{% include storybook-preview.html story="components-va-alert--error" link_text="va-alert" %}
 
 ### Sign in or tool prompt
 
 Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
 
-{% include storybook-preview.html story="components-va-alert--sign-in-or-tool-prompt" %}
+{% include storybook-preview.html story="components-va-alert--sign-in-or-tool-prompt" link_text="va-alert" %}
 
 ## Examples - Default variations
 
@@ -52,14 +52,22 @@ Used to prompt a user to sign in, create an account, or launch an online tool to
 
 Alerts can contain headings.
 
-{% include storybook-preview.html story="components-va-alert--heading-level" %}
+{% include storybook-preview.html story="components-va-alert--heading-level" link_text="va-alert" %}
 
 ### Dismissible 
 
 * Any alert variation can be dismissible, including background-color only alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
 
-{% include storybook-preview.html story="components-va-alert--dismissable" %}
+{% include storybook-preview.html story="components-va-alert--dismissable" link_text="va-alert" %}
+
+#### Dismissible Background Only
+
+{% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only" link_text="va-alert" %}
+
+#### Dismissible Background Only Icon
+
+{% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only-icon" link_text="va-alert" %}
 
 ### Full-width
 
@@ -67,7 +75,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 
 #### Warning
 
-{% include storybook-preview.html story="components-va-alert--fullwidth" %}
+{% include storybook-preview.html story="components-va-alert--fullwidth" link_text="va-alert" %}
 
 #### More about the full-width variation
 
@@ -84,7 +92,7 @@ Full-width alerts are used only for emergency or urgent communications and shoul
 
 Any style of alert box can be modified to be a background-color-only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
 
-{% include storybook-preview.html story="components-va-alert--background-only" height="352px" %}
+{% include storybook-preview.html story="components-va-alert--background-only" height="352px" link_text="va-alert" %}
 
 - Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context. 
 - Messaging should be direct and concise. Aim for one or two lines.
@@ -94,7 +102,7 @@ Any style of alert box can be modified to be a background-color-only alert. Use 
 
 A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert boxes.
 
-{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="352px" %}
+{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="352px" link_text="va-alert" %}
 
 ## Usage
 
