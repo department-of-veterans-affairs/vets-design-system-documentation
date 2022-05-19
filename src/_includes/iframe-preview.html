@@ -19,7 +19,7 @@
   <div class="iframe__preview">
     <iframe title="{{ include.title }}" class="responsive-iframe" src="{{ include.src | replace: '.html', ''}}" data-width="1008"  allowfullscreen="true" allowtransparency="true" height="{{ include.height }}"></iframe>
     {% if include.new_tab == "true" %}
-    <a href="{{ include.src | replace: '.html', ''}}" class="iframe__preview__open" target="_blank"><span class="fas fa-external-link-alt vads-u-margin-right--0p5"></span> Open in new tab </a>
+    <a href="{{ include.src | replace: '.html', ''}}" class="iframe__preview__open" target="_blank" rel="noopener noreferrer"><span class="fas fa-external-link-alt vads-u-margin-right--0p5"></span> Open in new tab </a>
     {% endif %}
   </div>
 </div>
