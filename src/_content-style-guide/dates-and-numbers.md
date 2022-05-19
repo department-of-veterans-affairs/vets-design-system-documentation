@@ -95,7 +95,10 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 Hyperlink all phone numbers, including TTY numbers. Use the following Design System component for 508 accessibility and consistent formatting:
 
-- `<va-telephone contact="8008271000"/>`
+<div class="site-showcase">
+  {% include_relative html/telephone.html %}
+</div>
+{% include snippet.html content='html/telephone.html' %}
 
 The `<va-telephone>` component currently doesn't support the "TTY" text inside of the clickable portion of the link, so for those numbers use the following markup:
 
