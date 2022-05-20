@@ -93,9 +93,14 @@ Use hyphens between numbers, and don't use parentheses to set off the area code:
 
 - Use "select" to indicate the menu option after dialing a phone number.
 
-Hyperlink all phone numbers, including TTY numbers. Use the following source code for 508 accessibility:
+Hyperlink all phone numbers, including TTY numbers. Use the following Design System component for 508 accessibility and consistent formatting:
 
-- `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>`
+<div class="site-showcase">
+  {% include_relative html/telephone.html %}
+</div>
+{% include snippet.html content='html/telephone.html' %}
+
+The `<va-telephone>` component currently doesn't support the "TTY" text inside of the clickable portion of the link, so for those numbers use the following markup:
 
 - `<a href="tel:711" aria-label="TTY. 7 1 1.">TTY: 711</a>`. 
 
