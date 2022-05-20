@@ -1,15 +1,14 @@
 ---
 layout: component
-permalink: /components/form/text-inputs
+permalink: /components/form/text-input
 has-parent: /components/form/
-title: Text inputs
-intro-text: "Text inputs (text-input and textarea) allow people to enter any type of text unless otherwise restricted."
+title: Text input
+intro-text: "Text input allows people to enter any type of text unless otherwise restricted."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/04A043C5-65CA-43BB-88F2-E17EF8B12D7D
 status: use-deployed
 anchors:
   - anchor: Text input
-  - anchor: Text area
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -35,13 +34,9 @@ Note that in general we want to avoid this pattern - if a field needs a lot of e
 
 {% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input--with-hint-text" %}
 
-## Text area
-
-{% include storybook-preview.html height="300px" story="components-textarea--default" %}
-
 ## Usage
 
-### When to use text inputs
+### When to use text input
 
 - If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 - When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.
@@ -53,8 +48,8 @@ Note that in general we want to avoid this pattern - if a field needs a lot of e
 
 ### How to use 
 
-- The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
-- Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users. Consider using specific `pattern` attributes or `type="tel"` or `type="number"` to trigger specific mobile keyboards.
+- The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a [textarea]({{ site.baseurl }}/components/form/textarea) instead.
+- Text input is among the easiest type of input for desktop users but are more difficult for mobile users. Consider using specific `pattern` attributes or `type="tel"` or `type="number"` to trigger specific mobile keyboards.
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
 
