@@ -18,10 +18,16 @@ Features are typically used to describe eligibility requirements.
 
 ## Usage
 
-### When to use
+### When to use featured content
 
-* Use featured content when you need to summarize dense content and call out key details that readers shouldn’t miss.
-* Use featured content when you need to highlight a short, actionable list.
+* If you need to summarize dense content and call out key details that readers shouldn’t miss
+* If you need to highlight a short, actionable list
+
+### When to consider something else
+
+* Do not use as a table of contents. If you’re listing headings for internal page navigation, use the [On this page]({{ site.baseurl }}/components/on-this-page) component.
+* If there are more than 5 bullet points, bullet points are longer than 20 words or bullet points require a header, image or button
+* If you're highlighting something that isn't part of the page, use the [Alert]({{ site.baseurl }}/components/alert) component.
 
 ### How to use the Featured content component 
 
