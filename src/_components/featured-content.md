@@ -14,7 +14,7 @@ Features are typically used to describe eligibility requirements.
 
 ## Example
 
-{% include storybook-preview.html height="250px" story="components-va-featured-content--default" %}
+{% include storybook-preview.html height="250px" story="components-va-featured-content--default" link_text="va-featured-content" %}
 
 ## Usage
 
