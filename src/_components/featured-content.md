@@ -18,6 +18,11 @@ Features are typically used to describe eligibility requirements.
 
 ## Usage
 
+### When to use
+
+* Use featured content when you need to summarize dense content and call out key details that readers shouldn’t miss.
+* Use featured content when you need to highlight a short, actionable list.
+
 ### How to use the Featured content component 
 
 * Features should use a `h3` or `h4` heading
