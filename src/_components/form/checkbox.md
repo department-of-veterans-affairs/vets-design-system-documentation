@@ -37,7 +37,7 @@ web-component: va-checkbox-group
 
 ### Native Events
 
-- The native event of onBlur is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+- The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
 {% include component-docs.html component_name=page.web-component %}
 
