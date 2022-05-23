@@ -53,6 +53,10 @@ Note that in general we want to avoid this pattern - if a field needs a lot of e
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
 
+### Native Events
+
+- Native onInput and onBlur events are available on this component. They can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations

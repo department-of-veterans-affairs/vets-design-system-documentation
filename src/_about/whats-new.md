@@ -9,6 +9,11 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+### May 23, 2022
+
+**Design System updates**
+- [Documentation on native events in form controls](https://design.va.gov/components/form/)
+
 ### May 12, 2022
 
 **Design System updates**
