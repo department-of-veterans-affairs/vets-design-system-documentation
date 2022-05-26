@@ -18,4 +18,4 @@ In order to maintain a cohesive user experience across the VA.gov platform, it i
 
 ## Accessibility
 
-While this guide will always provide accessible samples and usage guidelines, it is still possible to create inaccessible designs using the components and utilities available in Formation. Always remember that the audience using VA.gov may not be visual users, may experience color blindness or have difficulty handling low contrast ratios. Never use color alone as an affordance.
+While this guide will always provide accessible samples and usage guidelines, it is still possible to create inaccessible designs using the components and utilities available in Formation. Always remember that the audience using VA.gov may not be visual users, may experience color blindness or have difficulty handling low contrast ratios. Never use color alone as an affordance, always allow users to control automated content, and provide alternative navigation options.
