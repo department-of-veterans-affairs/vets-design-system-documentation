@@ -11,6 +11,7 @@ anchors:
   - anchor: Usage
   - anchor: Behavior
   - anchor: Code usage
+  - anchor: Not a Card 
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -39,16 +40,16 @@ Optional elements for cards include:
 
 ### When to use Card
 
-* **Collections**: Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
-* **Framing a call to action**: Cards are often used to highlight and frame a specific call to action or decision a user needs to take. 
-* **Conveying status**: Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
+* **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
+* **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take. 
+* **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
 
 ### When to consider something else
 
-* **Large data sets**: A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
-* **Eligibility information or other content highlight**: The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
-* **Navigation - A Card is not a Button or Link**: While a Card may contain a call-to-action link, it is not a navigation element. Do not use a Card to act as a large tap target. There is a notable exception for the [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) whereby a Card-like container is used around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
-* **Forms - A Card is not a Fieldset**: A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. There is a notable exception for the [List and Loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) where a Card is used to enter the loop to edit or remove an item in the list. 
+* **Large data sets.**: A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
+* **Eligibility information or other content highlight.**: The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
+* **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target. 
+* **Forms - A Card is not a Fieldset**. A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
 
 ### When to use caution
 
@@ -86,7 +87,8 @@ Optional elements for cards include:
 
 ### Communicating status
 
-If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive. Never rely on color alone to communicate status.
+* Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
+* If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive. Never rely on color alone to communicate status.
 
 ### Calls to action 
 
@@ -99,19 +101,47 @@ If you are using color as a supplementary status indicator, make sure your color
 #### Dimensions 
 
 Cards use the following widths:
-  * $xsmall-screen up to $medium-screen:
-    * Card maximum width = 304px
-    * Card minimum width = 280px
-  * $medium-screen through $large-screen and above:
-    * Card maximum width = 752px
-    * Card minimum width = 384px
+
+* [$xsmall-screen up to $medium-screen]({{ site.baseurl }}/foundation/breakpoints#names-and-values):
+  * Card maximum width = 304px
+  * Card minimum width = 280px
+* [$medium-screen through $large-screen]({{ site.baseurl }}/foundation/breakpoints#names-and-values) and above:
+  * Card maximum width = 752px
+  * Card minimum width = 384px
 
 #### Layout
 
-Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing units (1.2rem/12px)]({{ site.baseurl }}/foundation/spacing-units) below each card to separate them and to match the same gutter on the left and right at mobile breakpoints. Then the spacing increases to [2 spacing units (1.6rem/16px)]({{ site.baseurl }}/foundation/spacing-units) of margin on all sides at the [$medium-screen and above breakpoint]({{ site.baseurl }}/foundation/breakpoints).
+Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing units (1.2rem/12px)]({{ site.baseurl }}/foundation/spacing-units) below each card to separate them. Then the spacing increases to [2 spacing units (1.6rem/16px)]({{ site.baseurl }}/foundation/spacing-units) of margin on all sides at the [$medium-screen and above breakpoint]({{ site.baseurl }}/foundation/breakpoints).
 
+### Element states
 
-{% include component-docs.html component_name=page.github-title %}
+* When a Card behaves as a link it must have hover, focus, and active states. The hover state should be a 2px solid [$color-primary]({{ site.baseurl }}/foundation/color-palette#base) border. An appropriate focus status would add a 2px solid outline.
+
+## Code usage
+
+There is not currently a va-card web component. 
+
+## Not a Card 
+
+There are a few design elements that look like a Card but do not behave like a Card and are actually instances, or variations, of other components or are simply containers that share the same background color as a Card. These Card adjacent designs should not be thought of as a Card component and do not adhere to the guidelines defined here.
+
+### Containers for links in the Mobile app
+
+{% include component-example.html alt="A mobile link that looks like a Card." file="/images/components/card/not-a-card-mobile-link.png" caption="Mobile link. Not a Card." width="50%" %}
+
+The [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) uses a Card-like container around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
+
+### Containers for List and Loop in forms
+
+{% include component-example.html alt="A container for an action in a form used in the List and Loop pattern." file="/images/components/card/not-a-card-list-and-loop.png" caption="Container for a button and title. Not a Card." width="50%" reverse=true %}
+
+The [List and Loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) uses a Card-like container to enter the loop to edit or remove an item in the list. This treatment is specific to that pattern and should not be thought of as an instance of a Card.
+
+### Containers for radio button tiles and checkboxes
+
+{% include component-example.html alt="A container for a checkbox and description in a form." file="/images/components/card/not-a-card-radio-button-tile.png" caption="Container for a checkbox. Not a Card." width="50%" %}
+
+A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [U.S. Web Design System Radio buttons - Tile variation](https://designsystem.digital.gov/components/radio-buttons/). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
 
 ## Content considerations
 
@@ -121,7 +151,7 @@ Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing 
 ## Accessibility considerations
 
 * **Use the appropriate heading level for your page.** Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.
-* **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card.  The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - action]({{ site.baseurl }}/components/link/action).
+* **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card.  The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
 
 ## Related
 

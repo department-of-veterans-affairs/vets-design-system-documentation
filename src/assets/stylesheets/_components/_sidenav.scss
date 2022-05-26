@@ -7,6 +7,7 @@
   .usa-accordion {
     .usa-accordion-button {
       padding: $padding-override;
+      padding-left: 16px; // making the buttons line up vertically with links
       font-size: 15px;
     }
     .usa-sidenav-list a {
@@ -53,6 +54,19 @@
       // the item you are hovering over has different padding 
       // and thus unintentionally (IMHO) moves. This defeats that.
       padding-left: 28px;
+    }
+  }
+
+  .usa-sidenav-list .usa-accordion + .usa-accordion {
+    margin-top: 0;
+  }
+}
+
+.va-sidebarnav--components,
+.va-sidebarnav--patterns {
+  .usa-accordion {
+    .usa-accordion-button {
+      padding-left: 31px; // override of the override to align the buttons
     }
   }
 }
