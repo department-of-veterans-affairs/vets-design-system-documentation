@@ -7,6 +7,7 @@ research-title: card
 intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
 anchors:
   - anchor: Examples
+  - anchor: Variations
   - anchor: Usage
   - anchor: Behavior
   - anchor: Code usage
@@ -36,20 +37,50 @@ Optional elements for cards include:
 
 ## Usage
 
-### When to use this pattern
+### When to use Card
 
 * **Collections**: Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
 * **Framing a call to action**: Cards are often used to highlight and frame a specific call to action or decision a user needs to take. 
 * **Conveying status**: Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
 
-### When not to use this pattern
+### When to consider something else
 
 * **Large data sets**: A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
 * **Eligibility information or other content highlight**: The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
+* **Navigation - A Card is not a Button or Link**: While a Card may contain a call-to-action link, it is not a navigation element. Do not use a Card to act as a large tap target. There is a notable exception for the [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) whereby a Card-like container is used around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
+* **Forms - A Card is not a Fieldset**: A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. There is a notable exception for the [List and Loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) where a Card is used to enter the loop to edit or remove an item in the list. 
 
 ### When to use caution
 
 * **Search results**: Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results.
+
+## Variations
+
+### Instances of this component in production
+
+#### Appointment
+
+{% include component-example.html alt="An appointment card in MyVA." file="/images/components/card/appointment-mobile.png" caption="An appointment card in MyVA." reverse=true width="50%" %}
+
+#### Appointment with status
+
+{% include component-example.html alt="An appointment card with a status of canceled." file="/images/components/card/appointment-canceled-mobile.png" caption="An appointment card for a canceled appointment." reverse=true width="50%" %}
+
+#### Claims and appeals
+
+{% include component-example.html alt="A Claims and Appeals card in MyVA." file="/images/components/card/claims-and-appeals-mobile.png" caption="A Claims and Appeals card showing status for a claim in MyVA at a mobile viewport width." reverse=true width="50%" %}
+
+#### Number highlight
+
+{% include component-example.html alt="A Number highlight card showing a disability rating." file="/images/components/card/disability-rating.png" caption="A Number Highlight card brings attention to a specific number or statistic." reverse=true width="75%" %}
+
+#### Form status
+
+{% include component-example.html alt="A form status card in MyVA." file="/images/components/card/form-in-progress.png" caption="A form status card showing the status of a form that a Veteran is in the process of filing out in MyVA." reverse=true width="75%" %}
+
+#### Promo
+
+{% include component-example.html alt="A promo card for the GI Bill Comparison Tool ." file="/images/components/card/promo.png" caption="A promo card features an image or icon and contains a call-to-action with a description." reverse=true width="50%" %}
 
 ## Behavior
 
@@ -78,21 +109,6 @@ Cards use the following widths:
 #### Layout
 
 Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing units (1.2rem/12px)]({{ site.baseurl }}/foundation/spacing-units) below each card to separate them and to match the same gutter on the left and right at mobile breakpoints. Then the spacing increases to [2 spacing units (1.6rem/16px)]({{ site.baseurl }}/foundation/spacing-units) of margin on all sides at the [$medium-screen and above breakpoint]({{ site.baseurl }}/foundation/breakpoints).
-
-### Instances of this component in production
-
-#### Form status
-
-{% include component-example.html alt="A form status card in MyVA." file="/images/components/card/form-in-progress.png" caption="A form status card showing the status of a form that a Veteran is in the process of filing out in MyVA." reverse=true width="75%" %}
-
-#### Claims and appeals
-
-{% include component-example.html alt="A Claims and Appeals card in MyVA." file="/images/components/card/claims-and-appeals-mobile.png" caption="A Claims and Appeals card showing status for a claim in MyVA at a mobile viewport width." reverse=true width="50%" %}
-
-#### Appointment
-
-{% include component-example.html alt="An appointment card in MyVA." file="/images/components/card/appointment-mobile.png" caption="An appointment card in MyVA." reverse=true width="50%" %}
-
 
 
 {% include component-docs.html component_name=page.github-title %}
