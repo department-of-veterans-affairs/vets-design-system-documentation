@@ -7,6 +7,7 @@ status: use-deployed
 sub-pages:
   - sub-page: Checkbox
   - sub-page: Date input
+  - sub-page: Date text input
   - sub-page: Label
   - sub-page: Number input
   - sub-page: Radio button
