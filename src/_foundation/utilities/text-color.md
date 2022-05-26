@@ -1,11 +1,11 @@
 ---
 layout: default
-permalink: /foundation/utilities/color
+permalink: /foundation/utilities/text-color
 has-parent: /foundation/utilities/
-title: Color
+title: Text Color
 ---
 
-# Color
+# Text Color
 
 <div class="va-introtext">
 Change the color of text and SVGs (using <code>fill: currentColor</code>).

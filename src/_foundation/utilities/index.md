@@ -5,7 +5,6 @@ title: Utilities
 sub-pages:
   - sub-page: Background color
   - sub-page: Border
-  - sub-page: Color
   - sub-page: Display
   - sub-page: Flexbox
   - sub-page: Font family
@@ -18,6 +17,7 @@ sub-pages:
   - sub-page: Measure
   - sub-page: Padding
   - sub-page: Text align
+  - sub-page: Text color
   - sub-page: Text decoration
   - sub-page: Visibility
 ---

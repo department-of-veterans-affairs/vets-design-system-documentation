@@ -1,4 +1,4 @@
-.site-mobile-nav {
+.va-sidebarnav.site-mobile-nav {
   background: #fff;
   display: none;
   padding: $units-3;
@@ -12,13 +12,20 @@
   width: 75%;
   max-width: 360px;
   transform: translateX(0);
+  visibility: visible;
+  margin: 0;
+  left: inherit;
+
+  &::before {
+    content: none;
+  }
 
   @include media($nav-width) {
     display: none;
   }
 }
 
-.site-mobile-nav.is-visible {
+.va-sidebarnav.site-mobile-nav.is-visible {
   display: block;
   animation: slidein-left 0.3s ease-in-out;
 
@@ -27,82 +34,13 @@
   }
 }
 
-.site-mobile-nav__accordion {
-  clear: both;
-}
-
-.site-mobile-nav__accordion-heading {
-  border-top: 1px solid $color-gray-lighter;
-  border-bottom: 1px solid $color-gray-lighter;
-  margin: -1px 0 0;
-  line-height: 1;
-}
-
-.site-mobile-nav__accordion-content {
-  padding: 0;
-}
-
-.site-mobile-nav__accordion-button,
-.site-mobile-nav__accordion-button:hover,
-.site-mobile-nav__accordion-button:active,
-.site-mobile-nav__accordion-button:focus {
-  font-weight: $font-normal;
-  padding-left: 0;
-  background-color: transparent;
-  background-position: right center;
-  margin: 0;
-}
-
-.site-mobile-nav__accordion-button:hover,
-.site-mobile-nav__accordion-button:focus {
-  background-color: $color-gray-lightest;
-  color: $color-primary;
-}
-
-.site-mobile-nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.site-mobile-nav-list__item {
-  padding: 0;
-  margin: 0;
-}
-
-.site-mobile-nav-list__link,
-.site-mobile-nav-list__link:visited {
-  color: $color-gray;
-  display: block;
-  border-top: 1px solid $color-gray-lighter;
-  border-bottom: 1px solid $color-gray-lighter;
-  font-size: 1.5rem;
-  margin-top: -1px;
-  padding: $units-1_5 $units-1_5 $units-1_5 $units-3;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.site-mobile-nav-list__link:hover,
-.site-mobile-nav-list__link:focus {
-  background-color: $color-gray-lightest;
-  color: $color-primary;
-  transition: none !important;
-  text-decoration: none;
-}
-
-.site-mobile-nav-list__link.current {
-  color: $color-base;
-  font-weight: bold;
-}
-
 .site-mobile-nav__close-button {
+  background-color: transparent;
+  color: var(--color-base);
+  position: relative;
+  left: 100%;
+  transform: translateX(-100%);
   width: auto;
-  background: transparent;
-  color: $color-base;
-  float: right;
-  margin: 0 $units-neg-3 $units-3 0;
-  padding: $units-3;
 
   .fa {
     font-size: 1.8rem;
@@ -120,28 +58,30 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0,0,0, .5);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   pointer-events: none;
   z-index: $z-index-overlay;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 
   &.is-visible {
     opacity: 1;
     visibility: visible;
   }
+  @include media($nav-width) {
+    display: none;
+  }
 }
 
-
 @keyframes slidein-left {
-    from {
-      transform: translateX(360px);
-    }
-
-    to {
-      transform: translateX(0);
-    }
+  from {
+    transform: translateX(360px);
   }
+
+  to {
+    transform: translateX(0);
+  }
+}
