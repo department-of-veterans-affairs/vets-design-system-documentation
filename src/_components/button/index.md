@@ -23,7 +23,7 @@ Examples of primary buttons:
 - Buttons that submit or save
 - Buttons that prompt users to sign in 
 
-{% include storybook-preview.html story="components-buttons--primary" %}
+{% include storybook-preview.html story="components-buttons-button--primary" %}
 
 ### Secondary button
 
@@ -34,19 +34,19 @@ Examples of secondary buttons:
 * Buttons that advance form pages 
 * Buttons for editing cards
 
-{% include storybook-preview.html story="components-buttons--secondary" %}
+{% include storybook-preview.html story="components-buttons-button--secondary" %}
 
 ### Big buttons
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
 
-{% include storybook-preview.html story="components-buttons--big" %}
+{% include storybook-preview.html story="components-buttons-button--big" %}
 
 ### Disabled buttons
 
 Only `<button>` elements can be disabled with a `disabled` attribute. To make a `<a>` element disabled, you must use `.usa-button.usa-button-disabled` on the element.
 
-{% include storybook-preview.html story="components-buttons--disabled" %}
+{% include storybook-preview.html story="components-buttons-button--disabled" %}
 
 ## Usage
 
