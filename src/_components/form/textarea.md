@@ -1,47 +1,28 @@
 ---
 layout: component
-permalink: /components/form/text-inputs
+permalink: /components/form/textarea
 has-parent: /components/form/
-title: Text inputs
-intro-text: "Text inputs (text-input and textarea) allow people to enter any type of text unless otherwise restricted."
+title: Textarea
+intro-text: "Textarea allows people to enter any type of text."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/04A043C5-65CA-43BB-88F2-E17EF8B12D7D
 status: use-deployed
 anchors:
-  - anchor: Text input
-  - anchor: Text area
+  - anchor: Textarea
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-text-input
+web-component: va-textarea
 ---
 
-## Text input
+## Textarea
 
-#### Default
-
-{% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
-
-#### Success
-
-{% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input" %}
-
-### Text input with hint text
-
-This should be used in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links. 
-
-Note that in general we want to avoid this pattern - if a field needs a lot of explanation, it should ideally be moved to its own page with explanation on the page itself. [See other options for Hint text]({{ site.baseurl }}/components/form/#hint-text)
-
-{% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input--with-hint-text" %}
-
-## Text area
-
-{% include storybook-preview.html height="300px" story="components-textarea--default" %}
+{% include storybook-preview.html height="300px" story="components-va-textarea--default" link_text="va-textarea" %}
 
 ## Usage
 
-### When to use text inputs
+### When to use textarea
 
 - If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 - When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a calendar picker.
@@ -53,10 +34,12 @@ Note that in general we want to avoid this pattern - if a field needs a lot of e
 
 ### How to use 
 
-- The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
-- Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users. Consider using specific `pattern` attributes or `type="tel"` or `type="number"` to trigger specific mobile keyboards.
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+
+### Native Events
+
+- Native onInput and onBlur events are available on this component. They can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
 {% include component-docs.html component_name=page.web-component %}
 

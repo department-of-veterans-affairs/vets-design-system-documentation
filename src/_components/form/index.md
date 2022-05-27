@@ -11,7 +11,8 @@ sub-pages:
   - sub-page: Number input
   - sub-page: Radio button
   - sub-page: Select
-  - sub-page: Text inputs
+  - sub-page: Text input
+  - sub-page: Textarea
 ---
 
 {% include _site-in-this-section.html %}

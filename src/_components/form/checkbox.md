@@ -35,6 +35,10 @@ web-component: va-checkbox-group
 - Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”
 - If you customize, make sure selections are adequately spaced for touch screens.
 
+### Native Events
+
+- The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations

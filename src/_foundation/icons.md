@@ -21,6 +21,9 @@ anchors:
 
 ## Accessibility
 
+- When using a decorative icon, it shouldn’t be read out to screen-reader users because it doesn’t add to their understanding. Icons should be accompanied with text.
+- All interactive accessible icons must be keyboard accessible and touch accessible as well as clickable via a mouse.
+
 ### When to use `role="img"`
 
 If an icon is being used alone (without support text), it should have a `role="img"` AND appropriate ARIA markup OR screen reader only descriptive text.
