@@ -4,6 +4,7 @@ title: Card
 status: use-deployed
 github-title: va-card
 research-title: card
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2219A3C0-576F-48CE-8EF3-60F37E30BA93
 intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
 anchors:
   - anchor: Examples
@@ -24,8 +25,8 @@ anchors:
 ![Basic card]({{ site.baseurl }}/images/components/card/annotated.png) 
 
 1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
-2. **Title.** Clearly summarizes card content. 
-3. **Subheader.** Subheader or body text. Usually communicates a status.
+2. **Title.** A header that clearly summarizes card content. 
+3. **Subheader.** Subheader or body text. May communicate a status.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
 5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
 
@@ -46,18 +47,21 @@ Optional elements for cards include:
 
 ### When to consider something else
 
-* **Large data sets.**: A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
-* **Eligibility information or other content highlight.**: The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
+* **Eligibility information or other content highlight.** The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
+* **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert/) component.
+* **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
+* **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
 * **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target. 
-* **Forms - A Card is not a Fieldset**. A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
 
 ### When to use caution
 
-* **Search results**: Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results.
+* **Search results.** Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
 
 ## Variations
 
 ### Instances of this component in production
+
+There are many instances of the Card component in production. This is an an exhaustive list but does serve to highlight well defined instances of a Card.
 
 #### Appointment
 
@@ -71,30 +75,37 @@ Optional elements for cards include:
 
 {% include component-example.html alt="A Claims and Appeals card in MyVA." file="/images/components/card/claims-and-appeals-mobile.png" caption="A Claims and Appeals card showing status for a claim in MyVA at a mobile viewport width." reverse=true width="50%" %}
 
-#### Number highlight
-
-{% include component-example.html alt="A Number highlight card showing a disability rating." file="/images/components/card/disability-rating.png" caption="A Number Highlight card brings attention to a specific number or statistic." reverse=true width="75%" %}
-
 #### Form status
 
 {% include component-example.html alt="A form status card in MyVA." file="/images/components/card/form-in-progress.png" caption="A form status card showing the status of a form that a Veteran is in the process of filing out in MyVA." reverse=true width="75%" %}
 
-#### Promo
+#### Media
 
-{% include component-example.html alt="A promo card for the GI Bill Comparison Tool ." file="/images/components/card/promo.png" caption="A promo card features an image or icon and contains a call-to-action with a description." reverse=true width="50%" %}
+{% include component-example.html alt="A media card for the GI Bill Comparison Tool ." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call-to-action with a description." reverse=true width="50%" %}
+
+#### Number highlight
+
+{% include component-example.html alt="A Number highlight card showing a disability rating." file="/images/components/card/disability-rating.png" caption="A Number Highlight card brings attention to a specific number or statistic." reverse=true width="75%" %}
+
+#### Payment
+
+{% include component-example.html alt="A payment card example." file="/images/components/card/payment.png" caption="A payment card showing a type of payment." reverse=true width="75%" %}
 
 ## Behavior
 
-### Communicating status
-
-* Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
-* If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive. Never rely on color alone to communicate status.
-
 ### Calls to action 
 
-* An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. 
-* A card should not contain more than three calls-to-action (CTAs). 
-* Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
+* **Make cards actionable.** A Card should be actionable. That can be accomplished either by making the Card itself a link or by the use of the [action link]({{ site.baseurl }}/components/link/action) component.
+* **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. 
+* **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs). 
+* **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
+
+### Communicating status
+
+* **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status. 
+  * NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.
+* **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive. 
+* **Color and another.** Never rely on color alone to communicate status.
 
 ### Placement
 
@@ -141,7 +152,7 @@ The [List and Loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) use
 
 {% include component-example.html alt="A container for a checkbox and description in a form." file="/images/components/card/not-a-card-radio-button-tile.png" caption="Container for a checkbox. Not a Card." width="50%" %}
 
-A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [U.S. Web Design System Radio buttons - Tile variation](https://designsystem.digital.gov/components/radio-buttons/). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
+A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [U.S. Web Design System Radio buttons - Tile variation](https://designsystem.digital.gov/components/radio-buttons). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
 
 ## Content considerations
 
@@ -151,6 +162,7 @@ A radio button tile has a title and description within the label and a Card-like
 ## Accessibility considerations
 
 * **Use the appropriate heading level for your page.** Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.
+* **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
 * **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card.  The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
 
 ## Related

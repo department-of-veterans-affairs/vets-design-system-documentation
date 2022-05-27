@@ -133,3 +133,4 @@ When the user is required to do something in response to an alert, let them know
 
 * Use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message that isn’t interactive. If the message is interactive, use the `alertdialog` role instead.
 * Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+* Don't automatically dismiss an alert based on a timer or time limit.
