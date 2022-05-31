@@ -22,20 +22,40 @@ anchors:
 
 ### Anatomy
 
+#### Basic
+
 ![Basic card]({{ site.baseurl }}/images/components/card/annotated.png) 
 
 1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
-2. **Title.** A header that clearly summarizes card content. 
-3. **Subheader.** Subheader or body text. May communicate a status.
+2. **Header.** Header that summarizes the card's content.
+3. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
+4. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
+
+#### Status via Tag
+
+![Status card via Tag]({{ site.baseurl }}/images/components/card/status.png)
+
+Use this variation when you have a short status which can use the [Tag component]({{ site.baseurl }}/components/tag).
+
+1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
+2. **Status.** Status using the [Tag component]({{ site.baseurl }}/components/tag).
+3. **Header.** Header that summarizes the card's content.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
-5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
+5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
 
-Optional elements for cards include:
+#### Status via label with indicator
 
-![Status card]({{ site.baseurl }}/images/components/card/status.png)
+![Status card via label with indicator]({{ site.baseurl }}/images/components/card/status-long-label.png)
 
-1. [Tag component]({{ site.baseurl }}/components/tag)
-2. Status indicator badge
+Use this variation when you have a longer status label.
+
+1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
+2. **Header.** Header that summarizes the card's content.
+3. **Status.** Status with indicator. Accommodates longer status labels.
+4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
+5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
+
+You can see these options in use in the [variations](#variations) below.
 
 ## Usage
 
@@ -158,6 +178,19 @@ A radio button tile has a title and description within the label and a Card-like
 
 * **Concise headers and text.** Keep card content (especially [header text]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)) short, crisp, and to-the-point: Users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
 * **Translation proof.** Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
+* **Statuses**: Currently, the following status names that are known to be in-use:
+  * [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
+  * Appointments:
+    * Upcoming
+    * Requested
+    * Past
+    * Canceled
+  * [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
+    * Claim received
+    * Initial review
+    * Evidence gathering, review, and decision
+    * Preparation for notification
+    * Complete
 
 ## Accessibility considerations
 
