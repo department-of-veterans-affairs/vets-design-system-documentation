@@ -21,3 +21,7 @@
 .site-component-example--reverse {
   background-color: $color-white;
 }
+
+.do-dont .site-component-example .site-component-example__image {
+  padding: units(2);
+}
