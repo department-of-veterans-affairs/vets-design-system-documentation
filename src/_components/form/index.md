@@ -8,7 +8,9 @@ sub-pages:
   - sub-page: Checkbox
   - sub-page: Date input
   - sub-page: Label
+  - sub-page: Input message
   - sub-page: Number input
+  - sub-page: Progress bar - Segmented
   - sub-page: Radio button
   - sub-page: Select
   - sub-page: Text input

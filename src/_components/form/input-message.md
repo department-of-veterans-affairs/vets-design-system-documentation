@@ -1,9 +1,12 @@
 ---
 layout: component
+permalink: /components/form/input-message
+has-parent: /components/form/
 title: Input message
 github-title: va-input-message
 intro-text: "Provides helpful, in-context information about an input, either before or immediately after a Veteran interacts with an input (e.g. on a form input that auto-saves)."
 status: use-with-caution-candidate
+contributors: Liz Lantz (VSA Authenticated Experience Team)
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -12,25 +15,23 @@ anchors:
   - anchor: Research
 ---
 
-Suggested by: Liz Lantz, VSA Authenticated Experience Team
-
 ## Examples
 
 **Informational**
 
-![image]({{site.baseurl}}/images/experimental-design/input-message-info.png)
+![image]({{site.baseurl}}/images/components/input-message/input-message-info.png)
 
 **Success**
 
-![image]({{site.baseurl}}/images/experimental-design/input-message-success.png)
+![image]({{site.baseurl}}/images/components/input-message/input-message-success.png)
 
 **Warning**
 
-![image]({{site.baseurl}}/images/experimental-design/input-message-warning.png)
+![image]({{site.baseurl}}/images/components/input-message/input-message-warning.png)
 
 **Error**
 
-![image]({{site.baseurl}}/images/experimental-design/input-message-error.png)
+![image]({{site.baseurl}}/images/components/input-message/input-message-error.png)
 
 ### Mock-ups
 

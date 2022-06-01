@@ -67,7 +67,7 @@ First things first. Forms on VA.gov typically consist of:
 1. **A review page** where the user can review information and make edits if necessary
 1. **A confirmation page** once the user has submitted
 
-For numbers 3-4 mentioned above, users are given guidance on where they are in the form using a [segmented progress bar]({{ site.baseurl }}/components/progress-bar/segmented).  Each segment of the bar represents a "chapter" in the form.  Note that there can be multiple "pages" within each chapter, so the bar does not always increment when the user clicks between pages.
+For numbers 3-4 mentioned above, users are given guidance on where they are in the form using a [segmented progress bar]({{ site.baseurl }}/components/form/progress-bar-segmented).  Each segment of the bar represents a "chapter" in the form.  Note that there can be multiple "pages" within each chapter, so the bar does not always increment when the user clicks between pages.
 
 For a bit of context on the technical side, [read up on the form system]({{ site.forms_system_link }}) and/or [watch the quick demo Chris V. gave to the VSA design team](https://zoom.us/rec/share/x5FpP7XC1DJOYZ3d933GUagdMInqeaa82ilM-KcLzUxo_-q1CWuJcUJVwzaPXTp_) in Feb. 2020 (pw: vsadesign) 
 
