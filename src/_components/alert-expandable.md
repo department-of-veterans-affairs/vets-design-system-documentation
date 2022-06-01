@@ -4,6 +4,7 @@ title: Alert - Expandable
 github-title: va-alert-expandable
 intro-text: "Mobile friendly expandable alerts combine the Additional Info component within Background Color Only alert color schemes, and includes an icon."
 status: use-with-caution-candidate
+contributors: Leyda Hughes (VSA Facilities Team)
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -11,8 +12,6 @@ anchors:
   - anchor: Accessibility considerations
   - anchor: Research
 ---
-
-Suggested by: Leyda Hughes, VSA Facilities Team
 
 ## Example
 

@@ -6,6 +6,7 @@ has-parent: /components/link/
 github-title: va-copy-deep-link
 into-text: "When a content page is very long with many subsections, the \"Link - Deep content\" icon can help users easily link people to deep content."
 status: use-with-caution-candidate
+contributors: Jennifer Lee
 anchors:
   - anchor: Examples
   - anchor: Purpose
@@ -13,8 +14,6 @@ anchors:
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
-
-Suggested by: Jennifer Lee
 
 ## Examples
 
