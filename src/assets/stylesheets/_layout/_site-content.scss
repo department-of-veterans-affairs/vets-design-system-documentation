@@ -18,6 +18,8 @@
     bottom: 0;
     height: calc(100vh - 6rem);
     overflow-y: auto;
+    flex-basis: 30%;
+    max-width: 28rem;
   }
 }
 
@@ -28,7 +30,7 @@
 
   @include media($nav-width) {
     flex-basis: 75%;
-    max-width: 75%;
+    max-width: 85em; // similar to production and USWDS
     padding: $units-8 $units-8 0 $units-8;
   }
 }

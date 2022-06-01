@@ -142,10 +142,9 @@
   > p > code,
   > ol > li > code,
   > ul > li > code {
-    background-color: rgba(0,0,0,.02) !important;
-    border: 1px solid $color-gray-light !important;
+    background-color: rgba(0,0,0,.07) !important;
     font-family: $font-monospace;
-    padding: 0 !important;
+    padding: 2px 0 !important;
 
     &:before,
     &:after {

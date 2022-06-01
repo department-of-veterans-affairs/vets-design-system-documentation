@@ -8,6 +8,7 @@ web-component: va-additional-info
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Behavior
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
@@ -42,7 +43,7 @@ anchors:
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
 * **Floating in space**: Try to avoid using Additional info outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Additional info between a h1 and a Card. See [placement](#placement) for more.
 
-### Behavior
+## Behavior
 
 The help is triggered by clicking on a uniquely styled text link with a plain language hook. The helper text is revealed with a sliding drawer type animation (like the accordion) and is typically 1-3 short paragraphs. Shorter is better, and references to static content pages is encouraged when the situation is complicated.
 
