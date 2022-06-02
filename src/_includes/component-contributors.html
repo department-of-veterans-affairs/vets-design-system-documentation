@@ -1,0 +1,13 @@
+{% if page.contributors %}
+  {% assign contributors = page.contributors | split: ',' %}
+  <dl class="site-component-contributors">
+    <dt id="component-contributors" role="heading" aria-level="2" class="site-component-contributors__title">
+      Contributors
+    </dt>
+    {% for contributor in contributors %}
+    <dd role="definition" class="site-component-contributors__contributor">
+      {{ contributor }}
+    </dd>
+    {% endfor %}
+  </dl>
+{% endif %}

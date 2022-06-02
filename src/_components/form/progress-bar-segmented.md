@@ -1,7 +1,7 @@
 ---
 layout: component
-permalink: /components/progress-bar/segmented
-has-parent: /components/progress-bar/
+permalink: /components/form/progress-bar-segmented
+has-parent: /components/form/
 title: "Progress bar - Segmented"
 intro-text: "A segmented progress bar updates users on their progress through a multi-step process."
 research-title: Progress bars

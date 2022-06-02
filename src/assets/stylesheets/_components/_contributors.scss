@@ -1,0 +1,10 @@
+// Contributors to a component or pattern
+.site-component-contributors {
+  margin-bottom: units(3);
+
+  &__title {
+    font-family: $font-serif;
+    font-size: 2rem;
+    margin: units(0.5) 0;
+  }
+}

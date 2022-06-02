@@ -7,8 +7,6 @@ research-title: Progress bars
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/7FD5C3CE-96CF-47F1-8AB6-D7E2C51060F1
 status: use-deployed
 web-component: va-progress-bar
-sub-pages:
-  - sub-page: Segmented
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -30,7 +28,7 @@ anchors:
 
 ### When to consider something else
 
-* **Step indicator for forms**: When you are providing feedback on the number of steps in a process, for example when a user is filling out a form, use the [segmented progress bar]({{ site.baseurl }}/components/progress-bar/segmented). 
+* **Step indicator for forms**: When you are providing feedback on the number of steps in a process, for example when a user is filling out a form, use the [segmented progress bar]({{ site.baseurl }}/components/form/progress-bar-segmented). 
 * **Unknown or indeterminate time**: When the wait time for a process, such as loading a page, is unknown use the [loading indicator]({{ site.baseurl }}/components/loading-indicator). 
 
 ### Behavior
@@ -52,5 +50,5 @@ anchors:
 
 ## Related
 
-* [Segmented progress bar]({{ site.baseurl }}/components/progress-bar/segmented)
+* [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented)
 * [Loading indicator]({{ site.baseurl }}/components/loading-indicator)

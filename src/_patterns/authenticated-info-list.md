@@ -3,6 +3,7 @@ layout: pattern
 title: Authenticated info list
 intro-text: "This pattern helps users quickly see a list of items related to their own personal information, as well as quickly navigate to answers to the questions they might have."
 status: use-with-caution-available
+contributors: Shawna Hein, Kevin Stachura
 anchors:
   - anchor: Purpose
   - anchor: Example
@@ -12,7 +13,6 @@ anchors:
   - anchor: Research
 ---
 
-Suggested by: Shawna Hein, Kevin Stachura, VSA
 
 
 ## Purpose
