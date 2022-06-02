@@ -2,6 +2,7 @@
 layout: component
 title: Tag
 intro-text: A tag draws attention to new or important content.
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/7573C02C-6190-440F-9D70-07029D502204
 status: use-deployed
 anchors:
   - anchor: Examples
