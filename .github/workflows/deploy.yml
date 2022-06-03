@@ -1,14 +1,14 @@
 name: Deploy site
 on:
   push:
-    # branches:
-    #   - master
+    branches:
+      - master
 
 jobs:
   deploy:
     strategy:
       matrix:
-        environment: [{ bucket: dev-design.va.gov, config: dev.yml }]
+        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
