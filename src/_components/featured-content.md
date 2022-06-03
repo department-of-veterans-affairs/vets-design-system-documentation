@@ -27,7 +27,7 @@ web-component: va-featured-content
 ### When to consider something else
 
 * **Basic overview information.** This component is not intended for basic overview information.
-* **Related content.** Don't use this component to highlight related information on, and drive Veterans to, other pages. Use related links, promos, or stories (depending on template options) instead for this purpose.
+* **Related content.** Don't use this component to highlight related information on, and drive Veterans to, other pages. Use [related or major links]({{ site.baseurl }}/components/link/collection#related-links), [media cards]({{ site.baseurl }}/components/card#media), or stories (depending on template options) instead for this purpose.
 * **Table of contents.** Do not use a Featured content component for a table of contents. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component instead for in-page navigation.
 * **Dynamic highlight.** If you're highlighting something that was dynamically added to the page in response to a user action, use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
 * **Time sensitive.** If you have a message that will appear only for a defined period of time, use an [Alert]({{ site.baseurl }}/components/alert) component instead.
@@ -52,7 +52,7 @@ Featured content is found towards the top of the page after the h1 title of the 
 {% include component-example.html alt="An example of an eligibility featured content block in the Health care eligibility page." file="/images/components/featured-content/eligibility.png" caption="The featured content block is mainly intended for use in highlighting eligibility on VA.gov." width="75%" %}
 
 {% capture example_like_this_1 %}
-  {% include component-example.html alt="Example of the Link, Collection, Related links component to show a list of links." file="/images/components/link/links-collection-major.png" caption="Use the Related links variation of the Link - Collection component for a collection of links." %}
+  {% include component-example.html alt="Example of the Link, Collection, Related links component to show a list of links." file="/images/components/link/collection-major.png" caption="Use the Major links variation of the Link - Collection component for a collection of links." %}
 {% endcapture %}
 
 {% capture example_not_this_1 %}
@@ -62,7 +62,7 @@ Featured content is found towards the top of the page after the h1 title of the 
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
 {% capture example_like_this_2 %}
-  {% include component-example.html alt="Example of the Related link component to show a list of links." file="/images/components/link/related-links.png" caption="Use the Related links variation of the Link - Collection component for a collection of links." reverse=true %}
+  {% include component-example.html alt="Example of the Related link component to show a list of links." file="/images/components/link/collection-related.png" caption="Use the Related links variation of the Link - Collection component for a collection of links." reverse=true %}
 {% endcapture %}
 
 {% capture example_not_this_2 %}
