@@ -55,7 +55,7 @@ Review the [when to use a collection](##when-to-use-a-collection) section for gu
 
 ### Design principles
 
-There are many principles of Gestalt, which suggests that the whole is greater than the sum of its parts. For collections of links, the [Law of Proximity](https://lawsofux.com/law-of-proximity/) applies which states: 
+For collections of links, the [Law of Proximity](https://lawsofux.com/law-of-proximity/) applies which states: 
 
 > Objects that are near, or proximate to each other, tend to be grouped together.
 
