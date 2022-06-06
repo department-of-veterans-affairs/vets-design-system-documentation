@@ -1,23 +1,29 @@
 ---
-layout: default
-sub_section: Bottom of Main Content
-title: Medallia Feedback Bottom of Main Button
+layout: pattern
+title: Feedback
+intro-text: VA asks users of VA.gov for feedback via a feedback button and form provided by Medallia.
+contributor: Ian McCullough (VSP Contact Center)
 draft: true
+status: use-deployed
+anchors:
+  - anchor: Usage
+  - anchor: Examples
+  - anchor: How to design and build
+  - anchor: Accessibility considerations
+  - anchor: Research
 ---
-Suggested by: Ian McCullough<br/>
-Team/contract: VSP Contact Center<br />
-Product/application/form: describe where your Experimental component/pattern will live <br/>
-Date: May 19, 2022<br/>
 
-# Bottom of Main Content Feedback Button 
+## Usage
 
-The Medallia Feedback button officially moved from the sidebar to the bottom of the main content area on February 9, 2022. The button relocation is subject to the experimental design process, and as such the move needs to be validated. To validate this move, I will pull data from previous Medallia usability studies as well as compare form submission data from before and after the button was moved.
+### When to use Feedback
 
-## Purpose
+* TODO: Explain when we collect feedback and when we do not. This may equate and align to when the Feedback button is currently present on the page. 
 
-The previous location of the Medallia Feedback button was sticky on the right side of the browser window. This button had 508 accessibility issues on all platforms, and was removed from mobile due to display issues. By moving the button to the bottom of the main content, the accessibility issues were resolved and the button was able to be added to mobile breakpoints.
+### When to consider something else
 
-## Example
+* TODO: Describe any scenarios where the Feedback button should not, or does not, appear.
+
+## Examples
 
 <img width="400" alt="About VA health benefits page screenshot with callouts" src="https://user-images.githubusercontent.com/73119703/169309597-e810c224-6058-4834-94a8-576fee5cecc2.png" >
 
@@ -26,7 +32,13 @@ The previous location of the Medallia Feedback button was sticky on the right si
 3. **Date updated**. The date on which the page was most frequently updated. This text does not appear on all VA.gov pages.
 4. **Medallia Feedback Button**. Button that launches a modal window that contains the Medallia feedback survey. This button does not appear on all VA.gov pages.
 
-## UX behavior 
+### Feedback form in modal
+
+* TODO: Add example
+
+## How to design and build 
+
+### Layout details
 
 The Medallia Feedback button sits at the bottom of the main content within the context of other elements. In addition to the Feedback button, the bottom of the main content can also contain:
 
@@ -37,20 +49,20 @@ These three elements are not present on every page, and multiple variations can 
 
 To better establish user expectations of location, appropriate space will be provided for an element regardless of it's presence or absence. This creates a cohesive pattern that does not shift in size or location, even if one or two of the elements are not present on a particular page. The width of the pattern is also dynamically determined by the width of the main content container.
 
+### How this pattern works
 
-## Additional notes
+* Users trigger the feedback interaction when clicking on the Feedback button. 
+* This opens a modal window that contains a form, shown above. 
+* After submitting the form the user sees a "Thank you" screen which can then be dismissed with a primary "Close" button. Focus is returned to the Feedback button.
 
-This element has been [added to production on Feb. 9, 2022](https://github.com/department-of-veterans-affairs/content-build/pull/810). 
+### Components used in this pattern
 
-Design system components:
 * [Back to top](https://design.va.gov/components/back-to-top)
-* [Primary button](https://design.va.gov/components/button/#primary-button) *Note: the width of the primary button was slightly adjusted to match with the width of the back to top button*
+* [Button - Primary](https://design.va.gov/components/button/#primary-button) 
 
-## Design mockups
+### This pattern in production
 
-[Sketch file](https://www.sketch.com/s/dbc369e6-21ae-4717-a169-a5e734934f93/v/jogKRo/)
-
-### Desktop
+#### Desktop
 
 **[Manage your VA debt – Desktop](https://www.va.gov/manage-va-debt/)**
 
@@ -62,7 +74,7 @@ Design system components:
 <img width="400" alt="All Articles In VA Account And Profile Veterans Affairs Desktop Screenshot" src="https://user-images.githubusercontent.com/73119703/169309056-c6de2ad2-d4b6-4967-998e-5a1fa368d0dc.png">
 
 
-### Mobile _(400 px width)_
+#### Mobile _(400 px width)_
 
 **Manage your VA debt – Mobile**
 
@@ -73,11 +85,13 @@ Design system components:
 <img width="200" alt="All Articles In VA Account And Profile Veterans Affairs Screenshot" src="https://user-images.githubusercontent.com/73119703/169311294-b43d0f8c-7b89-4451-aba7-ec268cf85116.png">
 
 
-## Accessibility notes
+## Accessibility considerations
 
-How does an engineer build the pattern to meet WCAG 2.1 standards? What is the focus order of UI elements in your pattern? Include guidelines and code snippets here.
+Accessibility considerations are forthcoming.
 
 ## Research
+
+The previous location of the Medallia Feedback button was sticky on the right side of the browser window. This button had 508 accessibility issues on all platforms, and was removed from mobile due to display issues. By moving the button to the bottom of the main content, the accessibility issues were resolved and the button was able to be added to mobile breakpoints.
 
 ### Usability Studies
 
@@ -113,3 +127,5 @@ Both date ranges span 31 days, and the dates from January are submissions from t
 **Mobile feedback**
 
 In addition to the button being relocated on the desktop view, it was added to the mobile breakpoints as well. Previous 508 accessibility issues prevented the button from being displayed on the sidebar of mobile screens. From February 10 to March 12, there were 9,449 feedback submissions, 2,215 of which were mobile, or 23.4% of all submissions.
+
+
