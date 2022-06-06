@@ -8,6 +8,7 @@ sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/D58
 status: use-deployed
 sub-pages:
   - sub-page: Action
+  - sub-page: Collection
   - sub-page: Deep Content
 anchors:
   - anchor: Examples
@@ -42,14 +43,14 @@ Use a link when you want to:
 
 ### When to consider something else
 
-- Use a [Button]({{ site.baseurl }}/components/button) when you want to make a state change or submit a form. Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons]({{ site.baseurl }}/components/link/action#links-vs-buttons)
-- When you want to draw attention to an important CTA on the page, such as a link that launches a benefit application, use an [Action link]({{ site.baseurl }}/components/link/action).
-- When you want to make a long page of content with two or more H2s easier to navigate, use an [On this page link]({{ site.baseurl }} /components/on-this-page).
+- **Use buttons for actions.** Use a [Button]({{ site.baseurl }}/components/button) when you want to make a state change or submit a form. Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons]({{ site.baseurl }}/components/link/action#links-vs-buttons)
+- **Use action links for calls-to-action.** When you want to draw attention to an important call-to-action (CTA) on the page, such as a link that launches a benefit application, use an [Action link]({{ site.baseurl }}/components/link/action).
+- **Table of contents.** When you want to make a long page of content with two or more H2s easier to navigate, use an [On this page link]({{ site.baseurl }} /components/on-this-page).
 
 ### How to use Links
 
-- Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
-- Encode phone and email links with `mailto:` and `tel:`.
+- **Open in the same window except in certain instances.** Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
+- **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
 
 ## Variations
 
