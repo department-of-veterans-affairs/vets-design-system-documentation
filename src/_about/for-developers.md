@@ -4,6 +4,8 @@ title: For developers
 tags: Installation, CSS, CSS architecture
 anchors:
   - anchor: Using the Design System
+  - anchor: Using Web Components
+  - anchor: Implementing design work
   - anchor: Contributing to the Design System
   - anchor: Contributing experimental design code
   - anchor: Writing experimental design code
@@ -84,15 +86,15 @@ applyPolyfills().then(() => {
 ```
 1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 
-### Using Web Components
+## Using Web Components
 
-#### Vanilla JavaScript Applications
+### Vanilla JavaScript Applications
 
 If the Design System web components will be used in a vanilla JavaScript application, you are ready to use them (identified by tags prefixed with `<va-*>`).
 
 We make our best efforts to avoid creating web components with object or array properties in order to make them easier to use in static HTML pages.
 
-#### React Applications
+### React Applications
 
 If the Design System web components will be used in a React application, you are ready to use them unless:
 
@@ -110,7 +112,7 @@ const exampleFunction = () => console.log("Hello, World!");
 <VaExampleComponent exampleProp={exampleFunction} />
 ```
 
-#### Custom Events
+### Custom Events
 Some of the Design System web components allow for custom events.
 
 If you must use custom events and you're using JSX, you must prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
@@ -123,7 +125,20 @@ element.addEventListener('vaChange', event => { /* your listener */ })
 
 The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
 
-### Implementing design work
+### Using React vs Web Components
+While large portions of VA.gov are built via React applications there are some teams that cannot import React into their projects or have to perform work around hacks to have all React components available in order to be able to select the correct one to use.
+
+Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
+
+Benefits include:
+- Future proofing as Web Components are agnostic and can be imported into any JS Framework
+- Consistent syntax across frameworks and projects
+- Actively updated and maintained - we are deprecating most React components so they will not have the latest updates
+- Performance - no hacks needed to use Web Components directly on your project and you can select the specific ones you would like to use
+
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components and we encourage all developers to build out new components via Web Components moving forward on your projects.
+
+## Implementing design work
 
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
 
