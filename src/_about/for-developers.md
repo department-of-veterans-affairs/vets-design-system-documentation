@@ -133,7 +133,7 @@ Due to these issues the Design System Team recommends using our Web Components o
 Benefits include:
 - Future proofing as Web Components can be imported into any JS Framework
 - Consistent syntax across frameworks and projects
-- Actively updated and maintained - we are deprecating most React components so they will not have the latest updates
+- Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
 - Performance - no hacks needed to use Web Components directly on your project and you can select the specific ones you would like to use
 
 The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components and we encourage all developers to build out new components via Web Components moving forward on your projects.
