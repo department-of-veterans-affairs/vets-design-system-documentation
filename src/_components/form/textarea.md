@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Textarea
 intro-text: "Textarea allows people to enter any type of text."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/04A043C5-65CA-43BB-88F2-E17EF8B12D7D
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C6340B6C-F41E-423B-BDEA-B340A81C9714
 status: use-deployed
 anchors:
   - anchor: Textarea
@@ -46,4 +46,3 @@ web-component: va-textarea
 ## Accessibility considerations
 
 - Avoid `placeholder` text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.
-- Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.
