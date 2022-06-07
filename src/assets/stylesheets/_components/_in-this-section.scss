@@ -1,5 +1,5 @@
 .site-in-this-section {
-  margin: units(3) units(1.5);
+  margin: units(3) units(1.5) units(3) 0;
 
   &__list {
     @include media($medium-screen) {

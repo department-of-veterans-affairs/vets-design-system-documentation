@@ -4,9 +4,16 @@ permalink: /components/button/
 title: Button
 intro-text: Use buttons to signal actions.
 research-link: Buttons
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5317C603-D6BD-4AFF-84E6-151F7A197B91
 status: use-best-practice
 sub-pages:
   - sub-page: Progress button
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+web-component: va-button
 ---
 
 {% include _site-in-this-section.html %}
@@ -23,7 +30,7 @@ Examples of primary buttons:
 - Buttons that submit or save
 - Buttons that prompt users to sign in 
 
-{% include storybook-preview.html story="components-buttons-button--primary" %}
+{% include storybook-preview.html story="components-va-button--primary" link_text="va-button--primary" %}
 
 ### Secondary button
 
@@ -34,13 +41,13 @@ Examples of secondary buttons:
 * Buttons that advance form pages 
 * Buttons for editing cards
 
-{% include storybook-preview.html story="components-buttons-button--secondary" %}
+{% include storybook-preview.html story="components-va-button--secondary" link_text="va-button--secondary" %}
 
 ### Big buttons
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
 
-{% include storybook-preview.html story="components-buttons-button--big" %}
+{% include storybook-preview.html story="components-va-button--big" link_text="va-button--big" %}
 
 ### Disabled buttons
 
@@ -79,6 +86,10 @@ Only `<button>` elements can be disabled with a `disabled` attribute. To make a 
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don't automatically know either is a usable button.
 * Include more contextual information in the button label for screen readers. You can use an aria label to specify form numbers or program names in the buttons for greater context. 
 * It is important to use [Action links]({{ site.baseurl }}/components/action-link) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
-* Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it has actually been designated as a button in the markup. 
-* Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link]({{ site.baseurl }}/components/action-link) guidance to determine what is needed for a page. 
-* A button's tap target size should be at least 48 x 48 px, with at least 8 px separating tappable elements. 
+* We follow [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons) which recommend that:
+> On a touchscreen, buttons need a hit target of at least 44x44 points to accommodate a fingertip. On all screens, it’s essential to include enough space around a button so that people can visually distinguish it from surrounding components and content, whether people use touch, a pointer, or a system that expands a button when it’s in focus.
+* Use at least 8px separating tappable elements. 
+
+{% include content/links-vs-buttons.md %}
+
+{% include a11y/do-not-disable-buttons.md %}
