@@ -1,8 +1,8 @@
 ---
 layout: component
-permalink: /components/form/date-text-input
+permalink: /components/form/memorable-date
 has-parent: /components/form/
-title: Date Text Input
+title: Memorable Date
 research-title: Form controls
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-with-caution-available
@@ -14,7 +14,7 @@ anchors:
 web-component: va-date-text-input
 ---
 
-{% include storybook-preview.html story="components-va-date-text-input--default" link_text="va-date-text-input" %}
+{% include storybook-preview.html height="200px" story="components-va-date-text-input--default" link_text="va-date-text-input" %}
 
 ## Usage
 
