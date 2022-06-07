@@ -131,7 +131,7 @@ While large portions of VA.gov are built via React applications, there are some 
 Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
 
 Benefits include:
-- Future proofing as Web Components are agnostic and can be imported into any JS Framework
+- Future proofing as Web Components can be imported into any JS Framework
 - Consistent syntax across frameworks and projects
 - Actively updated and maintained - we are deprecating most React components so they will not have the latest updates
 - Performance - no hacks needed to use Web Components directly on your project and you can select the specific ones you would like to use
