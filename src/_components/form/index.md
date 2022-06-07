@@ -7,6 +7,7 @@ status: use-deployed
 sub-pages:
   - sub-page: Checkbox
   - sub-page: Date input
+  - sub-page: Memorable date
   - sub-page: Label
   - sub-page: Input message
   - sub-page: Number input
