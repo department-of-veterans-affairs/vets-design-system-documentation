@@ -125,18 +125,22 @@ element.addEventListener('vaChange', event => { /* your listener */ })
 
 The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
 
-### Using React vs Web Components
+### React and Web Components
+**Note:** Please use Web Components where applicable on projects. We maintain these components to provide VA teams with an ecosystem of vetted and tested components. These components are here to help scale and build projects quicker without needing to create net new components.
+
 While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
 
 Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
+
+For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert`.
 
 Benefits include:
 - Future proofing as Web Components can be imported into any JS Framework
 - Consistent syntax across frameworks and projects
 - Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
-- Performance - no hacks needed to use Web Components directly on your project and you can select the specific ones you would like to use
+- Performance and speed
 
-The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components and we encourage all developers to build out new components via Web Components moving forward on your projects.
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers to build out new components on applications via Design System Components instead of creating new similar bespoke components when building out an application.
 
 ## Implementing design work
 
