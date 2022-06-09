@@ -65,11 +65,7 @@ The action link is an eye-catching link to start a digital service. An action li
 - Action links should only use an anchor tag `<a>`. The `<a>` element, or anchor element, is used to create a hyperlink to another webpage or another location within the same webpage. 
 - For external links or links that open up to a new tab, make sure to add an aria label to let the user know what sort of link they’re clicking on.
 
-### Links vs. buttons
-
-- It is important to use Action Links for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
-- Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it’s been designated as a button in the markup.
-- Using links and buttons intentionally results in a more inclusive experience for assistive technology users. Make sure to read both [buttons]({{ site.baseurl }}/components/button) and Action Link guidance to determine when you should use each component.
+{% include content/links-vs-buttons.md %}
 
 ### Links to content in another language
 
