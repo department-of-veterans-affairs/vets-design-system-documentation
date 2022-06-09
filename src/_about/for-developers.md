@@ -4,6 +4,8 @@ title: For developers
 tags: Installation, CSS, CSS architecture
 anchors:
   - anchor: Using the Design System
+  - anchor: Using Web Components
+  - anchor: Implementing design work
   - anchor: Contributing to the Design System
   - anchor: Contributing experimental design code
   - anchor: Writing experimental design code
@@ -84,15 +86,15 @@ applyPolyfills().then(() => {
 ```
 1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 
-### Using Web Components
+## Using Web Components
 
-#### Vanilla JavaScript Applications
+### Vanilla JavaScript Applications
 
 If the Design System web components will be used in a vanilla JavaScript application, you are ready to use them (identified by tags prefixed with `<va-*>`).
 
 We make our best efforts to avoid creating web components with object or array properties in order to make them easier to use in static HTML pages.
 
-#### React Applications
+### React Applications
 
 If the Design System web components will be used in a React application, you are ready to use them unless:
 
@@ -110,7 +112,7 @@ const exampleFunction = () => console.log("Hello, World!");
 <VaExampleComponent exampleProp={exampleFunction} />
 ```
 
-#### Custom Events
+### Custom Events
 Some of the Design System web components allow for custom events.
 
 If you must use custom events and you're using JSX, you must prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
@@ -123,7 +125,24 @@ element.addEventListener('vaChange', event => { /* your listener */ })
 
 The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
 
-### Implementing design work
+### React and Web Components
+**Note:** Please use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
+
+While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
+
+Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
+
+For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert`.
+
+Benefits include:
+- Future proofing as Web Components can be imported into any JS Framework
+- Consistent syntax across frameworks and projects
+- Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
+- Performance and speed
+
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. If our components do not meet your needs, we would love to hear about it. Please reach out to us in Slack or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team&template=bug_template.md&title=). If you are interested in contributing a new component to the design system, please review our [documentation about that process](contributing-to-the-design-system).
+
+## Implementing design work
 
 When a designer hands off work, it is vital to work through potential implications that design may have on Formation. Are there any new variations on components? Are there any new components not present on this site? For more on that process, read about how to contribute.
 
