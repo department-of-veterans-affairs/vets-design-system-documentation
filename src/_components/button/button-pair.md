@@ -4,6 +4,7 @@ permalink: /components/button/button-pair
 has-parent: /components/button/
 title: Button pair
 research-link: Buttons
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5317C603-D6BD-4AFF-84E6-151F7A197B91
 intro-text: Use button pairs to provide navigation through a form flow.
 status: use-deployed
 anchors:
