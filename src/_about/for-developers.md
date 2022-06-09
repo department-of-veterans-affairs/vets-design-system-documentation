@@ -126,7 +126,7 @@ element.addEventListener('vaChange', event => { /* your listener */ })
 The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
 
 ### React and Web Components
-**Note:** Please use Web Components where applicable on projects. We maintain these components to provide VA teams with an ecosystem of vetted and tested components. These components are here to help scale and build projects quicker without needing to create net new components.
+**Note:** Please use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
 
 While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
 
