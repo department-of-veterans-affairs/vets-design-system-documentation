@@ -156,7 +156,7 @@ The Design System Team has specific linting and migration rules in place to help
 
 ### How to migrate to Web Components
 The Design System Team provides three ways to migrate specific React Components over to Web Components:
-* **Manual** - There are too many changes to automate and a guide will need to be followed
+* **Manual** - There are too many changes to automate and a guide will need to be followed.
 * **ESLint Rule** - In the `vets-website` repo there is a ESLint rule that informs you of the ability to convert from a React Component to a Web Component
 * [**Migration Script**](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/README.md) - There is a script available to be used in the CLI when in the `vets-website` repo to convert the React Component to a Web Component.
 
