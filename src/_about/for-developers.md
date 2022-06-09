@@ -140,7 +140,7 @@ Benefits include:
 - Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
 - Performance and speed
 
-The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers to build out new components on applications via Design System Components instead of creating new similar bespoke components when building out an application.
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. If our components do not meet your needs, we would love to hear about it. Please reach out to us in Slack or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team&template=bug_template.md&title=). If you are interested in contributing a new component to the design system, please review our [documentation about that process](contributing-to-the-design-system).
 
 ## Implementing design work
 
