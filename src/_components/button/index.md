@@ -5,7 +5,7 @@ title: Button
 intro-text: Use buttons to signal actions.
 research-link: Buttons
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5317C603-D6BD-4AFF-84E6-151F7A197B91
-status: use-best-practice
+status: use-with-caution-candidate
 sub-pages:
   - sub-page: Button pair
 anchors:
