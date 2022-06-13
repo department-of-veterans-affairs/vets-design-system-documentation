@@ -4,6 +4,7 @@ title: Feedback
 intro-text: VA asks users of VA.gov for feedback via a feedback button and form provided by Medallia.
 contributor: Ian McCullough (VSP Contact Center)
 draft: true
+research-title: Feedback
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -17,11 +18,7 @@ anchors:
 
 ### When to use Feedback
 
-* TODO: Explain when we collect feedback and when we do not. This may equate and align to when the Feedback button is currently present on the page. 
-
-### When to consider something else
-
-* TODO: Describe any scenarios where the Feedback button should not, or does not, appear.
+* Always provide the ability for users to provide feedback. The feedback button appears at the bottom of every modernized VA.gov page.
 
 ## Examples
 
