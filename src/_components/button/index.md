@@ -43,16 +43,16 @@ Any button can be made bigger by adding a class name of `usa-button-big` to the 
 
 ### When to use buttons
 
-* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.”
-* Use buttons if you want the user to trigger some kind of Javascript functionality by clicking it.
+* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#links-vs-buttons).
+* **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window. 
 
 ### When to use primary buttons
 
-The primary buttons are the most commonly-used button on the site.
+* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. 
 
 ### When to use secondary buttons
 
-Use **secondary** buttons for any actions that need to be _downplayed_ against other actions.
+* **Use secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section.
 
 ### When to consider something else
 
@@ -61,9 +61,10 @@ Use **secondary** buttons for any actions that need to be _downplayed_ against o
 
 ### Behavior
 
-* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. 
 * **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
+* **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
+* **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
 
 ### Mobile behavior
 
@@ -81,17 +82,21 @@ Use **secondary** buttons for any actions that need to be _downplayed_ against o
 
 ### Instances of this component in production
 
-#### Examples of primary buttons
+#### Primary button with a secondary link
 
-- Buttons in modals
-- Buttons that advance form pages 
-- Buttons that submit or save
-- Buttons that prompt users to sign in 
+* **Links can substitute for secondary buttons.** It is not always necessary to pair a secondary button with a primary button. In the example below a link can also suffice for a non-primary action.
 
-#### Examples of secondary buttons
+{% include component-example.html alt="Example of a primary button with a secondary link." file="/images/components/button/primary-with-secondary-link.png" caption="An example of a primary button used with a secondary link." reverse=true %}
 
-* Back or cancel buttons
 
+#### Secondary button as radio button
+
+This variation substitutes the large tap target of a button where a radio button would traditionally be used. This serves a similar purpose to the [USWDS Tile variation of a Radio button](https://designsystem.digital.gov/components/radio-buttons/). 
+
+* **Limit to Yes/No.** This variation should be limited to Yes/No questions rather than used as a substitute for radio buttons which can more readily handle 3 or more responses.
+* **Reflect selections.** The response of the user must change the button from a secondary button to a ```$color-primary-darker``` background in order to reflect the state of the user's response.
+
+{% include component-example.html alt="Example of the secondary button as radio button substitution." file="/images/components/button/button-as-radio.png" caption="The COVID-19 Screener uses secondary buttons instead of radio buttons for Yes/No questions." %}
 
 {% include component-docs.html component_name=page.web-component %}
 

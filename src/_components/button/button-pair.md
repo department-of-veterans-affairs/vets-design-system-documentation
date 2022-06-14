@@ -18,13 +18,14 @@ anchors:
 ## Examples
 
 ### Progress
+
 {% include storybook-preview.html story="components-buttons-progressbutton--button-pairs" %}
 
 ## Usage
 
 ### When to use a button pair
 
-* Use a button pair for providing navigation options through a form flow. 
+* Use a button pair for providing navigation options through a form flow.
 
 ### When to consider something else
 
@@ -39,6 +40,7 @@ anchors:
 ### Mobile behavior
 
 * Primary and secondary buttons should appear full-width up until the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the secondary button being on top of the primary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-unit-tokens) of separation between them.
+* It is also acceptable for the buttons to be half-width and centered at smaller viewport sizes.
 * At and after the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the secondary button continuing to appear before the primary button.
 
 ### Placement
