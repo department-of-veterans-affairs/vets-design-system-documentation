@@ -3,7 +3,6 @@ layout: pattern
 title: Feedback
 intro-text: VA asks users of VA.gov for feedback via a feedback button and form provided by Medallia.
 contributor: Ian McCullough (VSP Contact Center)
-draft: true
 research-title: Feedback
 status: use-deployed
 anchors:
@@ -18,11 +17,11 @@ anchors:
 
 ### When to use Feedback
 
-* Always provide the ability for users to provide feedback. The feedback button appears at the bottom of every modernized VA.gov page.
+* Always provide the ability for users to provide sentiment feedback. The feedback button appears at the bottom of every modernized VA.gov page.
 
 ## Examples
 
-<img width="400" alt="About VA health benefits page screenshot with callouts" src="https://user-images.githubusercontent.com/73119703/169309597-e810c224-6058-4834-94a8-576fee5cecc2.png" >
+{% include component-example.html alt="About VA health benefits page screenshot with call-outs." file="/images/patterns/feedback/feedback-anatomy.png" caption="Page anatomy showing the placement for the feedback button." width="50%" %}
 
 1. **Main Content**. Content, including any left or right rail sections, within the main content of the page between the header and footer, but above the Back to Top/Last Updated/Feedback section.
 2. **Back to Top Button**. Button that scrolls the user back to the top of the page when clicked. This button does not appear on all VA.gov pages.
@@ -31,7 +30,7 @@ anchors:
 
 ### Feedback form in modal
 
-* TODO: Add example
+{% include component-example.html alt="The Medallia feedback form." file="/images/patterns/feedback/feedback-form.png" caption="A 3 question form which appears in a modal after a user clicks the Feedback button and quickly allows the user to provide feedback." width="50%" %}
 
 ## How to design and build 
 
@@ -61,26 +60,46 @@ To better establish user expectations of location, appropriate space will be pro
 
 #### Desktop
 
-**[Manage your VA debt – Desktop](https://www.va.gov/manage-va-debt/)**
+<div class="usa-grid">
+  <div class="usa-width-one-half">
+    <h5>
+      <a href="https://www.va.gov/manage-va-debt">
+        Manage your VA debt – Desktop
+      </a>
+    </h5>
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width page." file="/images/patterns/feedback/feedback-example-desktop-1.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a page." %}
+  </div>
+  <div class="usa-width-one-half">
+    <h5>
+      <a href="https://www.va.gov/resources/va-account-and-profile/">
+      All articles in: VA account and profile – Desktop
+      </a>
+    </h5>
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width search page." file="/images/patterns/feedback/feedback-example-desktop-2.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a search results page." %}
+  </div>
+</div>
 
-<img width="400" alt="Manage Your VA Debt Veterans Affairs Desktop Screenshot" src="https://user-images.githubusercontent.com/73119703/169309397-d10161b3-e862-48f1-9879-49b4f766174f.png">
 
+#### Mobile
 
-**[All articles in: VA account and profile – Desktop](https://www.va.gov/resources/va-account-and-profile/)**
-
-<img width="400" alt="All Articles In VA Account And Profile Veterans Affairs Desktop Screenshot" src="https://user-images.githubusercontent.com/73119703/169309056-c6de2ad2-d4b6-4967-998e-5a1fa368d0dc.png">
-
-
-#### Mobile _(400 px width)_
-
-**Manage your VA debt – Mobile**
-
-<img width="200" alt="Manage Your VA Debt Veterans Affairs Mobile Screenshot" src="https://user-images.githubusercontent.com/73119703/169310958-d1c1aa40-6605-419f-9756-427b2526c2a8.png">
-
-**All articles in: VA account and profile – Mobile**
-
-<img width="200" alt="All Articles In VA Account And Profile Veterans Affairs Screenshot" src="https://user-images.githubusercontent.com/73119703/169311294-b43d0f8c-7b89-4451-aba7-ec268cf85116.png">
-
+<div class="usa-grid">
+  <div class="usa-width-one-half">
+    <h5>
+      <a href="https://www.va.gov/manage-va-debt">
+        Manage your VA debt – Mobile
+      </a>
+    </h5>
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a mobile width page." file="/images/patterns/feedback/feedback-example-mobile-1.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a page in a mobile viewport." %}
+  </div>
+  <div class="usa-width-one-half">
+    <h5>
+      <a href="https://www.va.gov/resources/va-account-and-profile/">
+      All articles in: VA account and profile – Mobile
+      </a>
+    </h5>
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width search page." file="/images/patterns/feedback/feedback-example-mobile-2.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a search results page in a mobile viewport." %}
+  </div>
+</div>
 
 ## Accessibility considerations
 
