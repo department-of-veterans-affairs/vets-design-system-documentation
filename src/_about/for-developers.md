@@ -137,6 +137,29 @@ element.addEventListener('vaChange', event => { /* your listener */ })
 
 The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
 
+### Native Events
+Some of our web components utilize native HTML DOM events such as `click` and `blur`. We prefer to use native events when possible because it is easier for teams to test and may not require the use of React bindings.
+
+To **use native events in JSX**, they must be prefixed with `on` and use camel case. Given the native `blur` event, use `onBlur`.
+
+An example using the `click` event in JSX:
+```jsx
+<va-button text="Edit" onClick={e => console.log(e)} />
+```
+
+To **use native events in vanilla JavaScript**, they can be used inline and prefixed with `on` **or** by adding an event listener using the event name as the event type.
+
+An example using the `blur` event in vanilla JavaScript:
+```js
+<va-button onblur="handleBlur()" />
+```
+
+Another example using the `blur` event in vanilla JavaScript:
+```js
+const element = document.querySelector('va-button');
+element.addEventListener('blur', event => { /* your listener */ })
+```
+
 ### React and Web Components
 **Note:** Please use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
 
