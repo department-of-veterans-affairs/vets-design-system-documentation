@@ -69,6 +69,7 @@ exclude:
   - .ruby_version
   - _foundation/html
   - _components/html
+  - _components/form/html
   - _components/link/html
   - _patterns/html
   - _foundation/layout/html

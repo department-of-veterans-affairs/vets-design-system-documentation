@@ -8,7 +8,7 @@ research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/04A043C5-65CA-43BB-88F2-E17EF8B12D7D
 status: use-deployed
 anchors:
-  - anchor: Text input
+  - anchor: Examples
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -16,13 +16,13 @@ anchors:
 web-component: va-text-input
 ---
 
-## Text input
+## Examples
 
-#### Default
+### Default
 
 {% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
 
-#### Success
+### Success
 
 {% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input" %}
 
@@ -52,6 +52,18 @@ Note that in general we want to avoid this pattern - if a field needs a lot of e
 - Text input is among the easiest type of input for desktop users but are more difficult for mobile users. Consider using specific `pattern` attributes or `type="tel"` or `type="number"` to trigger specific mobile keyboards.
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+
+### Errors
+
+* For all text inputs, the error message is placed between the label and the input.
+* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+
+<div class="site-showcase">
+{% include_relative html/error-text-inputs.html %}
+</div>
+{% include snippet.html content='html/error-text-inputs.html' %}
+
+
 
 ### Native Events
 

@@ -1,42 +1,59 @@
 ---
 layout: component
-permalink: /components/button/progress-button
+permalink: /components/button/button-pair
 has-parent: /components/button/
-title: Progress button
+title: Button pair
 research-link: Buttons
-intro-text: Use the progress button in form flows to proceed forward or go back.
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5317C603-D6BD-4AFF-84E6-151F7A197B91
+intro-text: Use button pairs to provide navigation through a form flow.
 status: use-deployed
 anchors:
+  - anchor: Examples
   - anchor: Usage
-  - anchor: How to use
+  - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
 
 ## Examples
 
-### Progress button
-{% include storybook-preview.html story="components-buttons-progressbutton--default" %}
+### Progress
 
-### Button pairs
 {% include storybook-preview.html story="components-buttons-progressbutton--button-pairs" %}
 
 ## Usage
 
-### When to use progress button
-* Use progress buttons for clickable actions you want users to take on a page, such as “Continue” or Back.”
-* Use progress buttons if you want the user to trigger some kind of Javascript functionality by clicking it.
+### When to use a button pair
+
+* Use a button pair for providing navigation options through a form flow.
 
 ### When to consider something else
-* For navigation between pages of a website, default to using links.
-* For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/action-link)
-* Buttons vs text links can be confusing. A good rule is if the action changes the url, it should not be a button.
 
-### How to use 
-* Avoid using too many buttons on a page.
-* Only use  arrow icons  in buttons for "Back" and "Continue" buttons that appear in forms 
-* Use sentence case for button labels.
-* Keep the character limit for button labels to 35 characters. Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “Back" or "Continue"). 
-* Read more about writing for buttons in the [content style guide]({{ site.baseurl }}/content-style-guide/button-labels)
+* **Navigation outside of the flow.** For navigation to pages outside of the form flow, use a [link]({{ site.baseurl }}/components/link).
+* **Call-To-Action.** For a visually prominent call to action (CTA) that links to another page, use an [action link]({{ site.baseurl }}/components/action-link).
+
+### Behavior
+
+* **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
+* **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
+
+### Mobile behavior
+
+* Primary and secondary buttons should appear full-width up until the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the secondary button being on top of the primary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-unit-tokens) of separation between them.
+* It is also acceptable for the buttons to be half-width and centered at smaller viewport sizes.
+* At and after the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the secondary button continuing to appear before the primary button.
+
+### Placement
+
+* A button pair appears at the bottom of a form.
+
+### Design principles
+
+* [Fitts's Law](https://lawsofux.com/fittss-law/) is important to keep in mind when determining button sizing and placement. Touch targets should be placed where they can be easily and quickly acquired. For example, this is why we do not split the buttons far apart, aligning them to different sides of the viewport. Fitts's Law states:
+
+> The time to acquire a target is a function of the distance to and size of the target 
+
+
 
 <!--- {% include component-docs.html component_name=page.web-component %} -->
 <h2 id="code-usage">Code usage</h2>
@@ -115,6 +132,12 @@ anchors:
     </tr>
   </div>
 </table>
+
+## Content considerations
+
+### Button labels
+
+{% include content/button-labels.md %}
 
 ## Accessibility considerations
 
