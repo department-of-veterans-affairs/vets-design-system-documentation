@@ -9,7 +9,7 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
-## June 8, 2022
+## June 15, 2022
 
 - The va-button-primary utility class has been deprecated.
 
