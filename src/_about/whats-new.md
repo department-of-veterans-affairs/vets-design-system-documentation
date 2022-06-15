@@ -11,7 +11,7 @@ title: What’s new?
 
 ## June 15, 2022
 
-- The va-button-primary utility class has been deprecated.
+- The va-button-primary utility class has been deprecated. Please visit the [Button](https://design.va.gov/components/button/) component page for guidance on buttons.
 
 ### May 23, 2022
 
