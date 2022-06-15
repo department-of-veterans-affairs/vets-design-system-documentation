@@ -35,6 +35,27 @@ web-component: va-checkbox-group
 - Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”
 - If you customize, make sure selections are adequately spaced for touch screens.
 
+### Errors
+
+* Checkbox groups typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the checkboxes.
+* The error message is placed just below the `<legend>`.
+* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+
+<div class="site-showcase">
+{% include_relative html/error-checkbox.html %}
+</div>
+
+{% include snippet.html content='html/error-checkbox.html' %}
+
+#### Error message with a checkbox group
+
+<div class="site-showcase">
+{% include_relative html/error-checkbox-group.html %}
+</div>
+
+{% include snippet.html content='html/error-checkbox-group.html' %}
+
+
 ### Native Events
 
 - The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
