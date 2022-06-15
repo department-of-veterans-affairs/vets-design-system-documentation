@@ -38,6 +38,21 @@ web-component: va-select
 - When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
 - Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
 
+### Errors
+
+<div class="site-showcase">
+{% include_relative html/error-select-box.html %}
+</div>
+
+{% include snippet.html content='html/error-select-box.html' %}
+
+* For select the error message does not include the screen reader-only "Error" text.
+* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+
+```html
+<span class="usa-input-error-message" id="select-159-error-message" role="alert">This is the error message</span>
+```
+
 ### Native Events
 
 - The native onKeyDown event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
