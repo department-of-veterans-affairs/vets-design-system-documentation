@@ -29,28 +29,28 @@ web-component: va-button
 
 {% include storybook-preview.html story="components-va-button--secondary" link_text="va-button--secondary" %}
 
-### Big buttons
+### Big button
 
 Any button can be made bigger by adding a class name of `usa-button-big` to the button.
 
 {% include storybook-preview.html story="components-va-button--big" link_text="va-button--big" %}
 
-### Disabled buttons
+### Disabled button
 
 {% include storybook-preview.html story="components-va-button--disabled" link_text="va-button--disabled" %}
 
 ## Usage
 
-### When to use buttons
+### When to use a button
 
 * **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#links-vs-buttons).
 * **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window. 
 
-### When to use primary buttons
+### When to use a primary button
 
 * **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. 
 
-### When to use secondary buttons
+### When to use a secondary button
 
 * **Use secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section.
 
@@ -112,10 +112,9 @@ This variation substitutes the large tap target of a button where a radio button
 * Buttons should display a visible focus state when users tab to them.
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don't automatically know either is a usable button.
 * Include more contextual information in the button label for screen readers. You can use an aria label to specify form numbers or program names in the buttons for greater context. 
-* It is important to use [Action links]({{ site.baseurl }}/components/action-link) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
 * We follow [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons) which recommend that:
 > On a touchscreen, buttons need a hit target of at least 44x44 points to accommodate a fingertip. On all screens, it’s essential to include enough space around a button so that people can visually distinguish it from surrounding components and content, whether people use touch, a pointer, or a system that expands a button when it’s in focus.
-* Use at least 8px separating tappable elements. 
+* Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements. 
 
 {% include content/links-vs-buttons.md %}
 
