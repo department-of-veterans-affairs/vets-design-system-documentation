@@ -302,7 +302,7 @@ var _$src_8 = {};
     resultsContainer: null,
     json: [],
     success: Function.prototype,
-    searchResultTemplate: '<li><a href="{url}"><h2 class="vads-u-margin-y--0 vads-u-font-size--md vads-u-display--inline-block vads-u-text-decoration--underline">{title}</h2> <span class="vads-u-font-size--sm">in {section}</span><span class="site-search-results__url vads-u-color--green">http://design.va.gov{url}</span><div class="vads-u-font-size--base">{description}</div></a></li>',
+    searchResultTemplate: '<li><a href="{url}"><h2 class="vads-u-margin-y--0 vads-u-font-size--md vads-u-display--inline-block vads-u-text-decoration--underline vads-u-color--link-default">{title}</h2> <span class="vads-u-font-size--sm">in {section}</span><span class="site-search-results__url vads-u-color--green">http://design.va.gov{url}</span><div class="vads-u-font-size--base">{description}</div></a></li>',
     templateMiddleware: Function.prototype,
     sortMiddleware: function () {
       return 0
