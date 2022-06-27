@@ -13,19 +13,23 @@ forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer
 
 github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
 github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
-request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=&template=experimental_design_request.md&labels=vsp-design-system-team
+request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team%2C+experimental_design&template=experimental_design_request.md&title=Experimental+Design+%5Bcomponent+or+pattern+name%5D
 
+research_repo: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues
 slack_channel_name: "#platform-design-system"
 slack_channel_link: https://dsva.slack.com/archives/C01DBGX4P45
 
-new_component_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components/experimental-design-template.md
-new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_components/experimental-design-template.md
+new_component_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_components/template.md
+new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_components/template.md
+new_pattern_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_patterns/template.md
+new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_patterns/template.md
+update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310%2Ck80bowman&labels=vsp-design-system-team&template=documentation_request_form.yml
+
 
 # People
 sketch_for_teams_admin: "Kevin Hoffman" 
 sketch_library_owner: "Natalie Hill"
-experimental_reviewer_1: "Shawna Hein"
-experimental_reviewer_2: "Matthew Dingee"
+experimental_reviewer_1: "Matthew Dingee"
 
 
 # Build settings
