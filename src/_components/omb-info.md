@@ -18,7 +18,7 @@ anchors:
 
 {% include storybook-preview.html story="components-ombinfo--without-omb-number" %}
 
-### Without Response Burden
+### Without Respondent Burden
 
 {% include storybook-preview.html story="components-ombinfo--without-response-burden" %}
 
