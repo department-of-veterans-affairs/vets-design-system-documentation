@@ -11,3 +11,4 @@ src/_includes/react
 src/formation.min.css
 src/.jekyll-cache
 src/_data/component-docs.json
+src/assets/stylesheets/component-library.css
