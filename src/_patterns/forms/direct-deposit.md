@@ -30,7 +30,11 @@ Example: *We make payments only through direct deposit, also called  electronic 
 
 #### Check image
 
-The check image provides a guide for Veterans to find their account and routing numbers from a check when filling out direct deposit information. 
+The check image provides a guide for Veterans to find their account and routing numbers from a check when filling out direct deposit information.
+
+#### Check image caption
+
+Provides a caption for the check image, which is used to provide supplemental information for the image.
 
 ### Form controls
 
