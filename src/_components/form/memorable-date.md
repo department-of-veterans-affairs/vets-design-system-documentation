@@ -12,10 +12,10 @@ anchors:
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-date-text-input
+web-component: va-memorable-date
 ---
 
-{% include storybook-preview.html height="200px" story="components-va-date-text-input--default" link_text="va-date-text-input" %}
+{% include storybook-preview.html height="200px" story="components-va-memorable-date--default" link_text="va-memorable-date" %}
 
 ## Usage
 
