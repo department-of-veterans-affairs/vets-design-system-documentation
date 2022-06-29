@@ -15,6 +15,8 @@ Deprecating a component is done only by the Design System Team. However, you can
 
 You may need to come to the Design System Council with your request for discussion.
 
+<a class="vads-c-action-link--blue" href="{{ site.request_removal_link }}">Suggest a removal</a> 
+
 ## How the Design System Team deprecates a component
 
 When we decide to remove a component, we take the following steps:
