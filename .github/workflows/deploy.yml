@@ -27,6 +27,7 @@ jobs:
     - run: npm install
     - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
+    - run: tree _site/vendor/javascripts/
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
     # We're removing the extension to make the URLs prettier.
