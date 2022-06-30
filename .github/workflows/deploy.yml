@@ -9,7 +9,7 @@ jobs:
   deploy:
     strategy:
       matrix:
-        environment: [{ bucket: dev-design.va.gov, config: dev.yml }]
+        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -25,8 +25,8 @@ jobs:
         ruby-version: 2.7.5 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: npm install
-    - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
+    - run: npm run-script build
     - run: tree _site/vendor/javascripts/
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
