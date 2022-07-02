@@ -21,10 +21,10 @@ research_repo: https://github.com/department-of-veterans-affairs/va.gov-research
 slack_channel_name: "#platform-design-system"
 slack_channel_link: https://dsva.slack.com/archives/C01DBGX4P45
 
-new_component_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_components/template.md
-new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_components/template.md
-new_pattern_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/_patterns/template.md
-new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/master/src/_patterns/template.md
+new_component_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_components/template.md
+new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/main/src/_components/template.md
+new_pattern_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md
+new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/main/src/_patterns/template.md
 update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310%2Ck80bowman&labels=vsp-design-system-team&template=documentation_request_form.yml
 
 
