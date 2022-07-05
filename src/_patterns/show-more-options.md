@@ -1,11 +1,12 @@
 ---
 layout: pattern
 title: Show more options
-contributor: Peter Russo (VAOS)
+contributors: Peter Russo (VAOS)
+added: 7/5/2022
 intro-text: Allows users to progressively display the available options in a long list as needed. This helps the user process a long list in smaller chunks. 
-research-title: va-show-more
-sketch-link: https://sketch.com/s/f9772b47-772c-4a66-bfcf-1f677230d9f4
-status: use-with-caution-available
+research-title: Show more options
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/AC70760E-54B7-41E1-982A-26E3B29049DF
+status: use-with-caution-candidate
 anchors:
   - anchor: Usage
   - anchor: Examples
@@ -58,7 +59,6 @@ anchors:
 ### Page templates available for this pattern
 
 * This pattern exists in VA Online Scheduling (VAOS) on the facility and provider sections of the "Start scheduling" flow.
-* A [Sketch file](https://sketch.com/s/f9772b47-772c-4a66-bfcf-1f677230d9f4) contains additional examples of this interaction.
 
 ## Content considerations
 
