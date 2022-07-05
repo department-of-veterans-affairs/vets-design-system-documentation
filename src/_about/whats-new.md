@@ -9,6 +9,12 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+### July 05, 2022
+
+**Design System updates**
+
+- [Button web component](https://design.va.gov/components/button)
+
 ### June 27, 2022
 
 **Design System updates**
