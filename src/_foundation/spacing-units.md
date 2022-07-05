@@ -30,7 +30,7 @@ The number 8 is easily broken down into smaller measurements before it approache
 
 In order to keep spacing consistent throughout VA.gov, it is recommended you favor using the `units` functions instead of hard coding pixels (or relative units) for margins and padding.
 
-In order to access the spacing tokens in your project, you will need to import Formation’s [base files](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation/sass/base) into your project files. [Here is how this site is doing that](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/master/src/assets/stylesheets/application.scss#L5).
+In order to access the spacing tokens in your project, you will need to import Formation’s [base files](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation/sass/base) into your project files. [Here is how this site is doing that](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss#L5).
 
 There are two ways of using the spacing tokens in your code.
 
