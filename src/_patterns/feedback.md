@@ -2,8 +2,7 @@
 layout: pattern
 title: Feedback
 intro-text: VA asks users of VA.gov for feedback via a feedback button and form provided by Medallia.
-contributor: Ian McCullough (VSP Contact Center)
-research-title: Feedback
+contributors: Ian McCullough (VSP Contact Center)
 status: use-deployed
 anchors:
   - anchor: Usage
