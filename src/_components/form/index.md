@@ -68,6 +68,8 @@ The HTML for a typical error is:
 </span>
 ```
 
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/messaging-error-messages">Review the error messages pattern</a>
+
 ## Hint text
 
 When a detailed form input label is not enough to convey the meaning or purpose of the input, we have three options for including additional information:

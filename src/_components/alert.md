@@ -11,6 +11,7 @@ anchors:
   - anchor: Examples - Background color only
   - anchor: Usage
   - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Accessibility considerations
 web-component: va-alert
 ---
@@ -128,6 +129,12 @@ When the user is required to do something in response to an alert, let them know
 * If the alert appears within the page body content, it should be co-located with relevant content.
 
 {% include component-docs.html component_name=page.web-component %}
+
+## Content considerations
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages">View content for messages</a>
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/messaging-error-messages">Review the error messages pattern</a>
 
 ## Accessibility considerations
 
