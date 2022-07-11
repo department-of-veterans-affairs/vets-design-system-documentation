@@ -14,15 +14,14 @@ anchors:
 Sitewide maintenance banners combine the full-width banner alert component with standardized messaging text. It’s used when all (or most) unauthenticated and authenticated applications, tools, or sign in experiences across the entire site are affected (e.g., vets-api).
 
 1. Before the site maintenance
-
 2. During the site maintenance
 
 ### Upcoming site maintenance banner: Before downtime
 The ‘before downtime’ banner helps users know when the downtime will take place, so they can plan accordingly. 
 
-There are 2 versions of the upcoming message: one for typical downtimes, and another for when a downtime spans multiple days or is 24 hours or longer in duration. Refer to [scheduled downtime notifications messaging]({{ site.baseurl }}/patterns/messaging-dictionary#scheduled-downtime-notifications) in the error messaging dictionary for the multi-day/24 hours+ downtime text.
+There are 2 versions of the upcoming message: one for typical downtimes, and another for when a downtime spans multiple days or is 24 hours or longer in duration. Refer to [scheduled downtime notifications messaging]({{ site.baseurl }}/content-style-guide/error-messages/system#scheduled-downtime-notifications) in the error messaging dictionary for the multi-day/24 hours+ downtime text.
 
-Information in {brackets} show customizable details. 
+Information in {brackets} show customizable details.
 
 #### Upcoming site maintenance 
 

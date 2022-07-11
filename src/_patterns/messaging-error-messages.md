@@ -1,11 +1,13 @@
 ---
 layout: pattern
-title: Error message style guide
-intro-text: "Details the structure, style, and tone for error message content."
+title: Error messages
+intro-text: "Details the structure, style, and tone for error and informational messages."
 status: use-deployed
 anchors:
   - anchor: Structure
-  - anchor: Content within the message description
+  - anchor: Content within the message - General
+  - anchor: Content within the message - Task completion
+  - anchor: Messages dictionary
   - anchor: Style and tone
   - anchor: Additional guidance
 ---
@@ -16,147 +18,130 @@ anchors:
 
 Every error message will have **up to** 3 parts:
 
-![Error message diagram](/images/error-message-diagram.png) 
+{% include component-example.html alt="Structure of an Alert." file="/images/patterns/error-messages/diagram.png" caption="The 3 parts of every error message: Title, description, call-to-action button or action link." reverse=true width="75%" %}
 
-1. Message title: Bold title giving the user a quick idea of what’s wrong (or, for informational alerts, the key message the user needs to know)
+### 1.Title
 
-2. Message content (description): 
-  - Apology (if the error is coming from a problem on our end)
-  - Succinct description of the issue, cause, and any relevant details
-  - Call to action telling the user what to do next (if applicable)
-  - Next-step call to action telling the user what to do if the first call to action fails to resolve the issue (if applicable)
+* Bold title giving the user a quick idea of what’s wrong (or, for informational alerts, the key message the user needs to know).
 
-3. Button(s): Actionable next-step for user (if applicable)
+### 2. Description
 
-## Content within the message description
+- Apology (if the error is coming from a problem on our end).
+- Succinct description of the issue, cause, and any relevant details.
+- Call to action telling the user what to do next (if applicable).
+- Next-step call to action telling the user what to do if the first call to action fails to resolve the issue (if applicable).
 
-### General description guidance
+### 3. Button or Link
+
+* Actionable next-step for user (if applicable).
+
+## Content within the message - General 
 
 To create an effective error message, ask yourself these 4 questions:
 
-1. What’s the error/issue?
+### 1. What’s the error/issue?
 
-   The answer will inform the details of the issue and cause.
+The answer will inform the details of the issue and cause.
 
-2. What’s the source of the error/issue?
+### 2. What’s the source of the error/issue?
 
-   The answer will determine how the error/issue needs to be framed, and whether an apology is needed. **Consider if the issue is caused by:**
+The answer will determine how the error/issue needs to be framed, and whether an apology is needed. 
 
-   - The user's action
-   
-   - An authorization issue. **Consider whether the issue is due to:**
-   
-   - VA.gov's inability to find user's records in our system, **or** 
-   - The user's records showing user can't use benefit/service (ie, user isn't a VA patient, user isn't enrolled in benefit/service, user isn't eligible for benefit/service)
-   - Something else
+Consider if the issue is caused by:
 
-   - A system or network access issue. **Consider whether the issue:**
-      - Affects the entire site or just one page/application/component/user task
-      - Is scheduled/expected or unexpected
-      - Is the result of an issue of VA.gov, a separate site/app (such as DS Logon), or Internet network connection 
+**A. The user's action**
 
-3. What does the user need to know to resolve the error/issue?
+**B. An authorization issue.** If so, consider whether the issue is due to:
+- VA.gov's inability to find user's records in our system
+- The user's records showing user can't use benefit/service (ie, user isn't a VA patient, user isn't enrolled in benefit/service, user isn't eligible for benefit/service)
+- Something else
 
-   The answer will inform the call to action telling the user what to do next, as well as any relevant details. 
+**C. A system or network access issue.** If so, consider whether the issue:
 
-   - For an error caused by user action, offer the user clear guidance on how to resolve the error (ie, "Please make sure your file is a .pdf format").
-   - For an error caused by an authorization issue, if the issue is due to VA.gov inability to find user's records in our system, direct the user to try again or call the VA.gov help desk if they think their records should be available.
-   - If the issue is due to the user's records showing the user can't use benefit/service, offer a path forward:
-      - User not eligible for benefit: Direct to relevant eligibility information
-      - User not enrolled in benefit: Direct to relevant eligibility information and application page.
-      - User not a VA patient: Direct to facility locator to find contact information to call their VA facility.
-   - For an error caused by a system or network access issue, the error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate isn't available.
+- Affects the entire site or just one page/application/component/user task
+- Is scheduled/expected or unexpected
+- Is the result of an issue of VA.gov, a separate site/app (such as DS Logon), or Internet network connection 
 
-4. If the resolution fails, what’s the next step?
+### 3. What does the user need to know to resolve the error/issue?
 
-   The answer will inform whether or not to include a “next-step call to action” to help guide the user further should the first call to action fail to resolve the issue. This may be language directing the user to call the VA.gov help desk or other VA resources, and will be determined on an issue-by-issue basis. See [Next-step calls to action](#next-step) below for more information and guidance.
+The answer will inform the call to action telling the user what to do next, as well as any relevant details. 
 
-### For task completion success alerts
+For an error caused by or due to:
+
+- **User action.** Offer the user clear guidance on how to resolve the error (ie, "Please make sure your file is a .pdf format").
+- **Authorization issue.** If the issue is due to VA.gov inability to find user's records in our system, direct the user to try again or call the VA.gov help desk if they think their records should be available.
+- **User's records showing the user can't use benefit/service.** Offer a path forward:
+   - **User not eligible for benefit:** Direct to relevant eligibility information
+   - **User not enrolled in benefit:** Direct to relevant eligibility information and application page.
+   - **User not a VA patient:** Direct to facility locator to find contact information to call their VA facility.
+- **System or network access issue.** The error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate isn't available.
+
+### 4. If the resolution fails, what’s the next step?
+
+The answer will inform whether or not to include a “next-step call to action” to help guide the user further should the first call to action fail to resolve the issue. This may be language directing the user to call the VA.gov help desk or other VA resources, and will be determined on an issue-by-issue basis. See [Next-step calls to action](#next-step) below for more information and guidance.
+
+## Content within the message - Task completion
+
+Below are examples of each type of [Alert]({{ site.baseurl }}/components/alert) style for task completion.
+
+### Success alerts
 
 Create a brief title documenting the task that was successfully completed, followed by a brief description of the success. 
 
-Example:
+#### Saved
 
-**Saved**
+{% include component-example.html alt="Success alert for saving." file="/images/patterns/error-messages/saved-001.png" caption="We saved the information you've entered so far." reverse=true width="50%" %}
 
-We saved the information you've entered so far.
-   
-![Saved](/images/ErrorMessageStyleGuide-Saved-001.png)
-
-### For task completion failure alerts 
+### Error alerts 
 
 Include exactly what failed in the title, followed by a brief apology, reiteration of the failure reframed in the VA.gov perspective, and prompt to try again. 
 
-Example:
+#### Your form didn't save
 
-**Your form didn't save**
-
-We're sorry. We couldn't save your form. Please try again.
-
-![Your form didn't save](/images/ErrorMessageStyleGuide-Error-002.png)
+{% include component-example.html alt="Error alert for form didn't save." file="/images/patterns/error-messages/saved-error-002.png" caption="We're sorry. We couldn't save your form. Please try again." width="50%" %}
 
 Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. 
 
-Example:
+#### Please save this application and try again
 
-**Please save this application and try again**
+{% include component-example.html alt="Error alert for please save and try again." file="/images/patterns/error-messages/saved-error-003.png" caption="We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow." width="50%" %}
 
-We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.
-
-(button) Save your application
-
-![Please save this application and try again](/images/ErrorMessageStyleGuide-Save-003.png)
-
-### For informational messages and warnings
+### Informational messages and warnings
 
 To create an effective informational message or warning, ask yourself these 2 questions:
 
-**1. What's the key information the user needs to know?**
+### 1. What's the key information the user needs to know?
 
 This information should be presented as succinctly as possible in the title and then reiterated in the description with any additional relevant details.
 
-- Informational example:
+#### Informational example
    
-**VA.gov will be down for maintenance soon**
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/down-004.png" caption="We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon." reverse=true width="75%" %}
 
-We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.
+#### Warning example 
+   
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/warning-005.png" caption="We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon." reverse=true width="75%" %}
 
-![VA.gov will be down for maintenance soon](/images/ErrorMessageStyleGuide-Down-004.png)
+### 2. Does the user need to take action, or do we want the user to take action?
 
-- Warning example: 
+When action is required, frame required information as a need. 
    
-**We're working on the site**
+#### We need your help to finish reviewing your claim
    
-We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.
-
-![We're working on the site](/images/ErrorMessageStyleGuide-Warning-005.png)
-
-**2. Does the user need to take action, or do we want the user to take action?**
-
-- When action is required, frame required information as a need. 
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/continue-006.png" caption="We need you to provide more evidence (supporting documents) so we can finish reviewing your claim." reverse=true width="50%" %}
    
-Example:
+When we want to prompt the user to take action, frame the prompt as a question to engage the user. 
    
-**We need your help to finish reviewing your claim**
+#### Want to make your VA.gov account more secure?
    
-We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.
-
-(button) See details
-   
-![We need your help to finish reviewing your claim](/images/ErrorMessageStyleGuide-Continue-006.png)
-
-- When we want to prompt the user to take action, frame the prompt as a question to engage the user. 
-   
-Example:
-   
-**Want to make your VA.gov account more secure?**
-   
-You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.
-   
-(button) Secure your account 
-   
-![Want to make your VA.gov account more secure?](/images/ErrorMessageStyleGuide-Secure-007.png)
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/secure-007.png" caption="You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password." reverse=true width="50%" %}
   
+## Messages dictionary
+
+The messages dictionary holds the title, content, component, and state for each scenario of message on the site.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages">View the messages dictionary</a>
+
 ## Style and tone
 
 ### Clear and direct
@@ -289,14 +274,14 @@ Focusing in on the intent of the error message can help to further flesh out the
 
 ### Messaging categories
 
-The [Messaging Dictionary](/patterns/messaging-dictionary) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.
+The [Messaging Dictionary]({{site.baseurl}}/content-style-guide/error-messages) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue to expand the dictionary, so check back often for new messages.
 
 | Error state | When to use | Link to dictionary of messages | 
 | ----- | ----- | ----- | 
-| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples](/patterns/messaging-dictionary#system-messaging) | 
-| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples](/patterns/messaging-dictionary#engagement-messaging) | 
-| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](/patterns/messaging-dictionary#access-messaging)| 
-| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](/patterns/messaging-dictionary#feedback-messaging)| 
+| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples]({{site.baseurl}}/content-style-guide/error-messages/system) | 
+| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples]({{site.baseurl}}/content-style-guide/error-messages/engagement) | 
+| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples]({{site.baseurl}}/content-style-guide/error-messages/access) | 
+| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples]({{site.baseurl}}/content-style-guide/error-messages/feedback) | 
 
 ### Next-step calls to action
 
