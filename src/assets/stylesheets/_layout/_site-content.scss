@@ -19,6 +19,7 @@
     height: calc(100vh - 6rem);
     overflow-y: auto;
     flex-basis: 30%;
+    min-width: 25rem; // the lack of this causes the sidenav to not display at 840px for some odd reason
     max-width: 28rem;
   }
 }
