@@ -19,7 +19,7 @@ Error messages mainly appear in interactive experiences such as tools, forms, an
 
 The messages dictionary holds the title, content, component, and state for each scenario of message on the site. The messages dictionary is broken up into 4 types of messages:
 
-### [System]({{ site.baseurl }}/content-style-guide/error-messages/system/)
+### [System]({{ site.baseurl }}/content-style-guide/error-messages/system)
 
 Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.
 
