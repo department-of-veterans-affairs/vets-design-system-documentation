@@ -13,13 +13,38 @@ anchors:
   - anchor: Research
 ---
 
-## Example
+## Examples
+### Informational alert
 
-![image](https://user-images.githubusercontent.com/4960080/127147819-12d07cf2-b357-4058-81d5-56f0caf764a2.png)
+Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
-![image](https://user-images.githubusercontent.com/4960080/127148001-517c85d7-e6d9-401d-81d7-1d3b8f1dbeb1.png)
+{% include storybook-preview.html story="components-va-alert-expandable--default" link_text="va-alert-expandable" %}
 
-[UXPin design specs](https://preview.uxpin.com/0a5eaacdf411fde0cb3abf4932010c29fbccb7de#/pages/138515145/simulate/sitemap?mode=i)
+### Warning alert
+
+Used to warn a user, such as when there are negative consequences, and when something has gone wrong.
+
+{% include storybook-preview.html story="components-va-alert-expandable--warning" link_text="va-alert-expandable" %}
+
+### Success alert
+
+Used to indicate success.
+
+{% include storybook-preview.html story="components-va-alert-expandable--success" link_text="va-alert-expandable" %}
+
+### Error alert
+
+Used when there is a problem or something destructive is about to occur.
+
+{% include storybook-preview.html story="components-va-alert-expandable--error" link_text="va-alert-expandable" %}
+
+### Continue alert
+
+{% include storybook-preview.html story="components-va-alert-expandable--continue" link_text="va-alert-expandable" %}
+
+### No icon alerts
+
+{% include storybook-preview.html story="components-va-alert-expandable--no-icon" link_text="va-alert-expandable" %}
 
 ## Usage
 
