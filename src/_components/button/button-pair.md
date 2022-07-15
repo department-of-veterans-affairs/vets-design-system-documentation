@@ -7,6 +7,7 @@ research-link: Buttons
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F2B3C09A-004C-4A71-BD77-E0A2C1EF2BAA
 intro-text: Use button pairs to provide navigation through a form flow.
 status: use-deployed
+web-component: va-button-pair
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -19,7 +20,13 @@ anchors:
 
 ### Progress
 
-{% include storybook-preview.html story="components-buttons-progressbutton--button-pairs" %}
+{% include storybook-preview.html story="components-va-button-pair--default" %}
+
+### Update
+{% include storybook-preview.html story="components-va-button-pair--update" %}
+
+### Continue
+{% include storybook-preview.html story="components-va-button-pair--continue" %}
 
 ## Usage
 
@@ -55,89 +62,7 @@ anchors:
 
 
 
-<!--- {% include component-docs.html component_name=page.web-component %} -->
-<h2 id="code-usage">Code usage</h2>
-<h3>Attributes and Properties</h3>
-<table>
-  <tr>
-    <th><strong>Property</strong></th>
-    <th><strong>Attribute</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Default</strong></th>
-    <th><strong>Description</strong></th>
-  </tr>
-  <div>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">afterText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">afterText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>A character to appear after the button text. This is wrapped in a `span.button-icon`.</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaDescribedby</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaDescribedby</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>Element ID containing additional content read by a screenreader</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaLabel</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaLabel</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>Text read by a screenreader instead of content within the button</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">beforeText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">beforeText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>A character to appear before the button text. This is wrapped in a `span.button-icon`.</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonClass</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonClass</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>CSS class(es) to apply to the button</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>The text of the button</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">disabled</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">disabled</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">boolean</code></th>
-      <th></th>
-      <th>Whether the button is disabled</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">onButtonClick</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">onButtonClick</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">function</code></th>
-      <th></th>
-      <th>Function called when the button is clicked.</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">submitButton</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">submitButton</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">boolean</code></th>
-      <th></th>
-      <th>Whether the button is a submit button</th>
-    </tr>
-  </div>
-</table>
-
-## Content considerations
-
-### Button labels
-
-{% include content/button-labels.md %}
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
