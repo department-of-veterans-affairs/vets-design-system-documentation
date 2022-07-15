@@ -14,7 +14,13 @@ anchors:
 web-component: va-date
 ---
 
+## Examples
+
+### Default
 {% include storybook-preview.html story="components-va-date--default" link_text="va-date" %}
+
+### Month/Year
+{% include storybook-preview.html story="components-va-date--month-year" link_text="va-date month/year variant" %}
 
 ## Usage
 
@@ -32,6 +38,17 @@ If users are trying to schedule something, consider using a calendar picker.
 
 - The component consists of two select boxes for month and day inputs and a text input for year input. For those components please check the usability guidance for select boxes and text inputs
 - For the month select box, provide the user unabbreviated months to choose from. Example: January
+
+### Errors and validation
+{% include storybook-preview.html story="components-va-date--default&args=error:Error" link_text="va-date with error" %}
+
+By default all date components have the following validation:
+- Cannot have blank values
+- Month and Day must be valid numbers
+- The Year cannot fall outside of the range of 1900 through the current year plus 100 years
+
+The option to add custom validation is available as well. An [example showing custom validation logic](https://design.va.gov/storybook/?path=/docs/components-va-date--custom-validation) to detect if the date is provided in the future is available in Storybook.
+
 
 {% include component-docs.html component_name=page.web-component %}
 
