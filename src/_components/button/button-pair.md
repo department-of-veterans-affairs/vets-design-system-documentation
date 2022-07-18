@@ -5,8 +5,9 @@ has-parent: /components/button/
 title: Button pair
 research-link: Buttons
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F2B3C09A-004C-4A71-BD77-E0A2C1EF2BAA
-intro-text: Use button pairs to provide navigation through a form flow.
+intro-text: Use button pairs to provide navigation through a form flow or a primary and secondary action.
 status: use-deployed
+web-component: va-button-pair
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -17,15 +18,22 @@ anchors:
 
 ## Examples
 
-### Progress
+### Default (Yes/No)
+{% include storybook-preview.html story="components-va-button-pair--default" link_text="Default button pair" %}
 
-{% include storybook-preview.html story="components-buttons-progressbutton--button-pairs" %}
+### Update/Cancel
+{% include storybook-preview.html story="components-va-button-pair--update" link_text="Update/Cancel button pair" %}
+
+### Back/Continue
+{% include storybook-preview.html story="components-va-button-pair--continue" link_text="Back/Continue button pair" %}
 
 ## Usage
 
 ### When to use a button pair
 
-* Use a button pair for providing navigation options through a form flow.
+* Use the [default](#default-yesno) button pair variation to provide primary and secondary response options to a question.
+* Use the [Update/Cancel](#updatecancel) button pair variation for saving form input on a form.
+* Use the [Back/Continue](#backcontinue) button pair variation for providing navigation options through a step by step flow of form pages.
 
 ### When to consider something else
 
@@ -35,13 +43,13 @@ anchors:
 ### Behavior
 
 * **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
-* **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
+* **Arrows are reserved.** Arrow icons should only appear for the [Back/Continue](#backcontinue) button pair.
 
 ### Mobile behavior
 
 * Primary and secondary buttons should appear full-width up until the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the secondary button being on top of the primary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-unit-tokens) of separation between them.
-* It is also acceptable for the buttons to be half-width and centered at smaller viewport sizes.
 * At and after the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the secondary button continuing to appear before the primary button.
+* It is also acceptable for the buttons to be half-width and centered at smaller viewport sizes, as they are in the [Back/Continue](#backcontinue) button pair variation.
 
 ### Placement
 
@@ -53,96 +61,17 @@ anchors:
 
 > The time to acquire a target is a function of the distance to and size of the target 
 
-
-
-<!--- {% include component-docs.html component_name=page.web-component %} -->
-<h2 id="code-usage">Code usage</h2>
-<h3>Attributes and Properties</h3>
-<table>
-  <tr>
-    <th><strong>Property</strong></th>
-    <th><strong>Attribute</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Default</strong></th>
-    <th><strong>Description</strong></th>
-  </tr>
-  <div>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">afterText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">afterText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>A character to appear after the button text. This is wrapped in a `span.button-icon`.</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaDescribedby</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaDescribedby</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>Element ID containing additional content read by a screenreader</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaLabel</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">ariaLabel</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>Text read by a screenreader instead of content within the button</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">beforeText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">beforeText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>A character to appear before the button text. This is wrapped in a `span.button-icon`.</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonClass</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonClass</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>CSS class(es) to apply to the button</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">buttonText</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">string</code></th>
-      <th></th>
-      <th>The text of the button</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">disabled</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">disabled</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">boolean</code></th>
-      <th></th>
-      <th>Whether the button is disabled</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">onButtonClick</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">onButtonClick</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">function</code></th>
-      <th></th>
-      <th>Function called when the button is clicked.</th>
-    </tr>
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">submitButton</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">submitButton</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">boolean</code></th>
-      <th></th>
-      <th>Whether the button is a submit button</th>
-    </tr>
-  </div>
-</table>
-
-## Content considerations
-
-### Button labels
-
-{% include content/button-labels.md %}
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
 * Include more contextual information in the button label for screen readers. You can use an aria label, using the ariaLabel or ariaDescribedby properties, to specify form numbers or program names in the buttons for greater context. 
-* It is important to use [Action links]({{ site.baseurl }}/components/action-link) for calls to actions that link to another page rather than buttons, because screen readers always say “link” before links, and “button” before buttons. 
-* Button and link confusion can be very frustrating for assistive technology users. A user with a screen reader may pull up a list of links and may not find a specific link because it turns out that it has actually been designated as a button in the markup. 
-* Using buttons and links intentionally results in a more inclusive experience for assistive technology users. Make sure to read both button and [action link]({{ site.baseurl }}/components/action-link) guidance to determine what is needed for a page. 
-* A button's tap target size should be at least 48 x 48 px, with at least 8 px separating tappable elements. 
+* We follow the [WCAG 2.1 Target Size - Level AAA](https://www.w3.org/WAI/WCAG21/quickref/#target-size) criteria which states:
+> "The size of the target for pointer inputs is at least 44 by 44 CSS pixels..."
+
+That guidance agrees with [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons) which recommend that:
+> "On a touchscreen, buttons need a hit target of at least 44x44 points to accommodate a fingertip. On all screens, it’s essential to include enough space around a button so that people can visually distinguish it from surrounding components and content, whether people use touch, a pointer, or a system that expands a button when it’s in focus."
+
+* Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements. 
+
+{% include content/links-vs-buttons.md %}

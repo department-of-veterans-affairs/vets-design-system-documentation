@@ -1,5 +1,5 @@
 ---
-name: "DS component - Design"
+name: "DST - Component design"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design"
 labels: vsp-design-system-team
@@ -15,7 +15,7 @@ assignees: caw310, GnatalieH
 - [ ] Delete this section once complete
 
 ## Description
-Create design for [component name].
+Create design for [component name] and/or update Sketch artifacts for [component name]
 
 If this is a pattern or component that is alreday in existence, check the Design System Team backlog for outstanding design issues. If you find any, link to them in a comment on this ticket. If possible, address any outstanding issues with this design and link to this issue from the original issue. If not, indicate that in the original issue.
 

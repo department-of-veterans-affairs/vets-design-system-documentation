@@ -1,5 +1,5 @@
 ---
-name: "\U0001F64B Support question"
+name: "\U0001F64B _Support question"
 about: If you need support using the Design System
 title: ''
 labels: 'vsp-design-system-team'
