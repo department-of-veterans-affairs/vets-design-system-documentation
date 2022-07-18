@@ -1,5 +1,5 @@
 ---
-name: "DST - Component announcement"
+name: "_DST - Component announcement"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Announcement"
 labels: vsp-design-system-team
