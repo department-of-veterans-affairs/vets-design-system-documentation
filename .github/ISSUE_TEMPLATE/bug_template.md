@@ -1,5 +1,5 @@
 ---
-name: "\U0001F534 Bug report"
+name: "\U0001F534 _Bug report"
 about: Something in the Design System is not working as expected
 title: ''
 labels: 'vsp-design-system-team'
