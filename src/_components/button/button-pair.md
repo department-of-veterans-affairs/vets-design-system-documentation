@@ -18,15 +18,14 @@ anchors:
 
 ## Examples
 
-### Progress
-
-{% include storybook-preview.html story="components-va-button-pair--default" %}
+### Default
+{% include storybook-preview.html story="components-va-button-pair--default" link_text="default button pair" %}
 
 ### Update
-{% include storybook-preview.html story="components-va-button-pair--update" %}
+{% include storybook-preview.html story="components-va-button-pair--update" link_text="update button pair" %}
 
 ### Continue
-{% include storybook-preview.html story="components-va-button-pair--continue" %}
+{% include storybook-preview.html story="components-va-button-pair--continue" link_text="continue button pair" %}
 
 ## Usage
 
