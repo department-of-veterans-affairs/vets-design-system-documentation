@@ -13,9 +13,9 @@ forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer
 
 github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
 github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
-github_issues_new: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team&template=_bug_template.md
-request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team%2C+_experimental_design&template=experimental_design_request.md&title=Experimental+Design+%5Bcomponent+or+pattern+name%5D
-request_removal_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310%2Ck80bowman&labels=vsp-design-system-team&template=_documentation_request_form.yml
+github_issues_new: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team&template=bug_template.md
+request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team%2C+experimental_design&template=experimental_design_request.md&title=Experimental+Design+%5Bcomponent+or+pattern+name%5D
+request_removal_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310%2Ck80bowman&labels=vsp-design-system-team&template=documentation_request_form.yml
 
 research_repo: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues
 slack_channel_name: "#platform-design-system"
