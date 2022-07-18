@@ -19,13 +19,13 @@ anchors:
 ## Examples
 
 ### Default (Yes/No)
-{% include storybook-preview.html story="components-va-button-pair--default" %}
+{% include storybook-preview.html story="components-va-button-pair--default" link_text="Default button pair" %}
 
 ### Update/Cancel
-{% include storybook-preview.html story="components-va-button-pair--update" %}
+{% include storybook-preview.html story="components-va-button-pair--update" link_text="Update/Cancel button pair" %}
 
 ### Back/Continue
-{% include storybook-preview.html story="components-va-button-pair--continue" %}
+{% include storybook-preview.html story="components-va-button-pair--continue" link_text="Back/Continue button pair" %}
 
 ## Usage
 
