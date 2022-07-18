@@ -26,6 +26,8 @@ The form confirmation page consists of:
 5. Action link  
 6. Helpful content  
 
+Examples of [confirmation pages in the wild can be seen here](https://dsva.slack.com/archives/C0NGDDXME/p1579042705077800)
+
 ## Structure
 
 ### H1

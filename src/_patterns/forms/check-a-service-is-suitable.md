@@ -1,10 +1,9 @@
 ---
 layout: pattern
-title: Pattern name
+title: Check a service is suitable
+intro-text: "Helps a user to determine if they can or should use a service." 
 draft: true
-intro-text: "This text provides the overall purpose and function of the pattern."
-research-title: Use this to match the label in the research repo. 
-sketch-link: https://www.sketch.com/our-workspace-the-pattern-library/specific-page-for-this-pattern
+research-title: check-a-service-is-suitable
 status: use-with-caution-available
 anchors:
   - anchor: Usage
@@ -14,12 +13,6 @@ anchors:
   - anchor: Accessibility considerations
 ---
 
-The intro-text appears fist and should contain the purpose and definition of the pattern. If you need to provide additional context of when and why to use this pattern then include it here.
-
-There are some potential types of patterns:
-- Help a user to...
-- Ask a user for...
-
 ## Usage
 
 ### When to use this pattern
@@ -27,9 +20,9 @@ There are some potential types of patterns:
 Criteria for when the pattern is appropriate.
 
 May contain:
-#### Design principles
-- Design principles to consider
 
+- Links to other relevant design guidance or patterns.
+- Design principles to consider
 
 ### When not to use this pattern
 
@@ -48,13 +41,6 @@ Criteria for when the pattern could work with additional prototyping and testing
 
 ## Examples
 
-Examples of this pattern on VA.gov.
-
-May contain reference or links to:
-### Other relevant examples
-- Instances of this pattern at other agencies
-- Other digital services in other countries using this pattern
-
 ## How to design and build 
 
 ### Anatomy or layout details
@@ -63,7 +49,7 @@ Details any containers of components or layout concerns for how the pattern may 
 
 ### How this pattern works
 
-Details the design decisions inherent to the pattern, describes the interactions, and provides usability guidance.
+Details the design decisions inherent to the pattern,  describes the interactions, and provides usability guidance.
 
 ### Components used in this pattern
 
