@@ -14,7 +14,8 @@ anchors:
 ---
 
 ## Examples
-### Informational alert
+
+### Default (Informational)
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
