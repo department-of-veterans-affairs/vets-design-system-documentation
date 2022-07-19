@@ -1,5 +1,5 @@
 ---
-name: "DS component - Final Review"
+name: "_DST - Component final review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Final Review"
 labels: vsp-design-system-team

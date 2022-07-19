@@ -1,5 +1,5 @@
 ---
-name: "DS component - Documentation"
+name: "_DST - Component documentation"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Documentation"
 labels: vsp-design-system-team
