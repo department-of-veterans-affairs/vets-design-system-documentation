@@ -10,6 +10,11 @@ jobs:
       matrix:
         environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
     runs-on: ubuntu-latest
+    env:
+      BUILD_DETAILS: |
+        REF=$GITHUB_REF
+        BUILD_ID=$GITHUB_JOB
+        BUILDTIME=$(echo (date))
     steps:
     - uses: actions/checkout@v2
       with:
@@ -26,6 +31,8 @@ jobs:
     - run: npm install
     - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
+    - name: Make BUILD.txt file
+      run: echo \"$BUILD_DETAILS" > _site/BUILD.txt
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
     # We're removing the extension to make the URLs prettier.
