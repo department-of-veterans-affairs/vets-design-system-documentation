@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUILD_DETAILS: |
-        REF=$GITHUB_REF
-        BUILD_ID=$GITHUB_JOB
+        REF=${{ env.GITHUB_REF}}
+        BUILD_ID=${{ env.GITHUB_JOB}}
         BUILDTIME=$(echo (date))
     steps:
     - uses: actions/checkout@v2
