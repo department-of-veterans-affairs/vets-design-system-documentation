@@ -29,8 +29,8 @@ jobs:
     - name: Make BUILD.txt file
       run: |
         echo -e "REF=${{ github.ref }}\n \
-               BUILD_ID=${{ github.job }}\n \
-               BUILDTIME=$(date)" > _site/BUILD.txt
+        BUILD_ID=${{ github.job }}\n \
+        BUILDTIME=$(date)" > _site/BUILD.txt
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
     # We're removing the extension to make the URLs prettier.
