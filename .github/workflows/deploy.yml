@@ -32,7 +32,7 @@ jobs:
     - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
     - name: Make BUILD.txt file
-      run: echo \"$BUILD_DETAILS" > _site/BUILD.txt
+      run: echo \"$BUILD_DETAILS\" > _site/BUILD.txt
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
     # We're removing the extension to make the URLs prettier.
