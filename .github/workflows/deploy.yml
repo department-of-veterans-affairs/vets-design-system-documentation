@@ -10,11 +10,6 @@ jobs:
       matrix:
         environment: [{ bucket: dev-design.va.gov, config: dev.yml }]
     runs-on: ubuntu-latest
-    env:
-      BUILD_DETAILS: |
-        REF=${{ env.GITHUB_REF}}
-        BUILD_ID=${{ env.GITHUB_JOB}}
-        BUILDTIME=$(echo (date))
     steps:
     - uses: actions/checkout@v2
       with:
