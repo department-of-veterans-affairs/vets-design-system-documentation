@@ -28,8 +28,8 @@ jobs:
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
     - name: Make BUILD.txt file
       run: |
-        echo -e "REF=${{ github.ref }}\n \
-        BUILD_ID=${{ github.job }}\n \
+        echo -e "REF=${{ github.ref }}\n\
+        BUILD_ID=${{ github.job }}\n\
         BUILDTIME=$(date)" > _site/BUILD.txt
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
