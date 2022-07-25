@@ -2,6 +2,7 @@
 layout: pattern
 title: Forms
 permalink: /patterns/forms/
+contributors: "Shawna Hein (VSA Design Lead), Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
 status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
@@ -16,144 +17,79 @@ sub-pages:
   - sub-page: Review
   - sub-page: Service history
   - sub-page: Signature
+  - sub-page: Sub-task
 ---
 
 {% include _site-in-this-section.html %}
 
-## Getting Started with VA.gov Forms
-
-<va-featured-content>
-  <h3 slot="headline">Forms system documentation</h3>
-  <p>The current forms library is considered a legacy product and is in maintenance mode. A new forms library is under development.</p>
-  <p>View documentation for the current forms library for VA.gov on <a href="{{ site.forms_system_link }}">the platform website</a>.</p>
-</va-featured-content>
-
-_Compiled by:_ Shawna Hein, VSA Design Lead
-
-_With contributions from:_ VSA Design: Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, VSP Engineering: Chris Valarida, VSP Content: Peggy Gannon
-
-So you’re moving a paper form online.  Or moving a legacy online form to VA.gov. What are your next steps? 
-
-- [The Structure of a Form](#the-structure-of-a-form)
-  - [Content Pages](#content-pages)
-    - [The Application Status Widget](#the-application-status-widget)
-  - [The Introduction Page](#the-introduction-page)
-  - [The Main Form Pages](#the-main-form-pages)
-    - [Sectioning of the Form](#sectioning-of-the-form)
-    - [Addresses](#addresses)
-    - [The “List Loop” pattern](#the-list-loop-pattern)
-    - [Labeling of Fields](#labeling-of-fields)
-    - [Optional vs Required labeling](#optional-vs-required-labeling)
-    - [Hint Text](#hint-text)
-    - [Other Components](#other-components)
-  - [The Review Page](#the-review-page)
-  - [The Confirmation Page](#the-confirmation-page)
-  - [Cross-Page Topics](#cross-page-topics)
-    - [Legalese Vs Plain Language](#legalese-vs-plain-language)
-- [The Form Design Process](#the-form-design-process)
-  - [Product Managers](#product-managers)
-  - [Designers](#designers)
-  - [Developers](#developers)
-- [FAQ](#faq)
 
 ## The Structure of a Form
-![structure of a form]({{ site.baseurl }}/images/pattern-forms-flow.png "Structure of a Form")
 
-First things first. Forms on VA.gov typically consist of:
+{% include component-example.html alt="Representative pages of a form flow for VA.gov." file="/images/patterns/forms/flow.png" caption="The anatomy of a form flow." %}
 
-1. **A Drupal content landing page** that outlines eligibility requirements and/ or how to apply  information about the benefit. 
-1. **An Introduction page** that includes a CTA to login if relevant and a subway map / timeline of what the user can expect when filling out the form
-1. **One or more sections with form fields**, laid out in chapters. Each chapter may have multiple pages.
-1. **A review page** where the user can review information and make edits if necessary
-1. **A confirmation page** once the user has submitted
+1. **[Content landing page](#content-landing-page).** A page built in Drupal that outlines eligibility requirements and/or how to apply. Also, provides information about the benefit. 
+1. **[Introduction page](#introduction-page).** Includes a call-to-action to login if relevant and a subway map / timeline of what the user can expect when filling out the form.
+1. **[Main form pages](#main-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
+1. **[Review page]({{ site.baseurl }}/patterns/forms/review).** Allows the user to review information and make edits if necessary.
+1. **[Confirmation page]({{ site.baseurl }}/patterns/forms/confirmation).** Gives users information about what they can expect after they submit an online application.
 
-For numbers 3-4 mentioned above, users are given guidance on where they are in the form using a [segmented progress bar]({{ site.baseurl }}/components/form/progress-bar-segmented).  Each segment of the bar represents a "chapter" in the form.  Note that there can be multiple "pages" within each chapter, so the bar does not always increment when the user clicks between pages.
 
-For a bit of context on the technical side, [read up on the form system]({{ site.forms_system_link }}) and/or [watch the quick demo Chris V. gave to the VSA design team](https://zoom.us/rec/share/x5FpP7XC1DJOYZ3d933GUagdMInqeaa82ilM-KcLzUxo_-q1CWuJcUJVwzaPXTp_) in Feb. 2020 (pw: vsadesign) 
+## Pages
 
-### Content Pages
-Typically, there is a Drupal content page that a user can read before entering an online form, where they learn about eligibility and how to apply.  This page can have wizards, buttons, and/or application status widgets that link to the form.
+### Content landing page
 
-Example here: [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406902817](https://www.va.gov/disability/how-to-file-claim/)
+A page that a user can read before entering an online form where they learn about eligibility and how to apply. This page can contain several elements:
 
-You can see some “in the wild” examples here:
+* Sub-task pattern
+* Process list
+* Application status widget that links to the form
 
+#### Examples
 * [https://www.va.gov/health-care/how-to-apply/](https://www.va.gov/health-care/how-to-apply/)
 * [https://www.va.gov/health-care/eligibility/](https://www.va.gov/health-care/eligibility/)
 * [https://www.va.gov/disability/how-to-file-claim/](https://www.va.gov/disability/how-to-file-claim/)
 
-#### The Application Status Widget
+
+#### Application status widget
+
 This application status widget is a dynamic section within the content pages, and changes depending on whether the user is logged out/logged in and whether they have started a form or not.  
 
 The states can be seen here [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406902821](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406902821)
 
-### The Introduction Page
+
+### Introduction Page
+
 [Guidelines on the content of the introduction page can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-introduction-page-template.md)
 
 Example here: [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406500061](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406500061)
 
-### The Main Form Pages
+### Main Form Pages
+
 Some examples start here (use the right arrow key to navigate through): [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903387](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903387)
 
-#### Sectioning of the Form
+### Splitting forms into chapters
 (Reference: [https://dsva.slack.com/archives/C0NGDDXME/p1578005824025300](https://dsva.slack.com/archives/C0NGDDXME/p1578005824025300))
 
+* Users are given guidance on where they are in the form using a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented). Each segment of the bar represents a "chapter" in the form.  Note that there can be multiple "pages" within each chapter, so the bar does not always increment when the user clicks between pages.
 * When deciding how fields should be laid out in the form in terms of “chunking,” forms should be sectioned into chapters, with the progress bar in a "how you would explain the steps to someone out loud" methodology. (e.g. first we'll get veteran info, then spouse info, then info about the claim)
 * If the screens within the chapters end up having more than 3-5 questions, or more than one conceptual topic, as a general rule, break those screens into multiple "pages" within the section. For example, if you have a chapter on “Veteran info” you may have multiple pages within that chapter, one where you get contact information, another where you get medical information. 
    * **Note for the future:** There is general consensus that this design pattern could be improved. It’s not ideal for a user to click “continue” and not have the progress bar increment.  A small percentage of users are consistently confused by this behavior. Additionally, the number of pages may increase or decrease based on conditional questions, which adds complications to improving this pattern.
 * With conditional questions, use the blue bar / expanding element as long as it's not too long / overwhelming and/or requires a call to another service.  Otherwise, use another page within the section instead.
 
-#### Addresses
-Many forms have sections where users are asked to review and/or edit an address. 
+## Patterns
 
-If the user is editing an address, if possible, make sure it only is editing the address for that particular form and is not necessarily editing the profile address on file. Use the following language on the form to make that clear to folks:
+* [List and loop]({{ site.baseurl }}/patterns/forms/list-and-loop)
 
-`This is the address we have on file for you. Any updates you make here to your address will apply only to this application.
-{address form fields, etc..}.` 
+## Components
 
-`To update your address for all of your VA accounts, you’ll need to go to your profile page. [View the address that's on file in your profile](va.gov/profile).`  
-
-#### The “List Loop” pattern
-If your form has a section where user can add “multiple” of something, e.g. “add multiple children” or “add multiple past jobs” you should use the list loop pattern within the form system. This involves:
-
-* Exposing fields to the user for the “first one”
-* Creating a button below that allows the user to “add another x”
-* Those items are then “stored” in the system and can be used later to reference if you need more information about each of the “x things” they added.  
-
-
-#### Labeling of Fields
-There is a [Form labels master list](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-labels.md) - Please work with a content editor to ensure we use these labels as defaults when creating form fields and questions. This document will continually be updated as more forms are brought online and new fields and/or questions are documented. 
-
-#### Optional vs Required labeling
-(Reference: [https://dsva.slack.com/archives/C0NGDDXME/p1570051496075200](https://dsva.slack.com/archives/C0NGDDXME/p1570051496075200))
-
-* For now we are marking fields as Required and assuming all fields not marked Required are optional
-* This may be revisited as part of a design system council initiative
-
-#### Hint Text
-If you want to give users direction on how to fill in a field, current standard is to put it in parenthesis next to the form label or question, e.g. “Street address (20 characters maximum ) *Required”
-
-#### Other Components
-
-* [Error messages]({{ site.baseurl }}/content-style-guide/error-messages)
 * [Additional info]({{ site.baseurl }}/components/additional-info)
-* [Step by step “Wizard” / Revealing more questions]({{ site.baseurl }}/patterns/wizards)
+* [Error messages]({{ site.baseurl }}/content-style-guide/error-messages)
+* [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented).
 
-### The Review Page
+## Additional topics
 
-Example here: [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903673](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903673)
-
-This page consists primarily of accordions the user can expand to view and edit the data they have entered.
-
-If you have designed custom components throughout the form, those components also need to work in the “review boxes” at the end of the flow.  Make sure to mock this up to show developers what they will look like if there are questions.
-
-It also can include checkboxes or signature boxes. 
-
-### The Confirmation Page
-
-[Guidelines for confirmation page can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-confirmation-page.md)
-
-Examples of [confirmation pages in the wild can be seen here](https://dsva.slack.com/archives/C0NGDDXME/p1579042705077800)
+* [Form labels]({{ site.baseurl }}/content-style-guide/form-labels)
+* [Hint text]({{ site.baseurl }}/components/form/#hint-text)
 
 ### Cross-Page Topics
 
@@ -169,6 +105,7 @@ For legal or regulatory content, however, we need to use judgment and be careful
 You may need to get PRA approval or other kinds of approval if you are tweaking the form itself and/or adding fields. Contact Rachel Sauter at USDS for details. 
 
 ## The Form Design Process
+
 There are a few documents that have been written to help PMs and their teams structure how and when they do things when embarking on a form project for VA.gov: 
 
 * [https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-resources/form-design-process.md](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-resources/form-design-process.md)
@@ -230,13 +167,3 @@ This document will not attempt to rewrite those documents, however, we will prov
    * Make sure to be regularly communicating with your designer(s) to ensure you understand requirements, and collaborate with them on coming up with tweaks to the designs if necessary
 * **For QA**, there exist some [e2e test helpers for testing forms](https://github.com/department-of-veterans-affairs/vets-website/tree/master/src/platform/testing/e2e/form-tester). The code is fairly nicely commented though but there isn't a lot of documentation about how to use them as far as we know. 
 * **For Accessibility**, you will need to build comprehensive e2e tests for these form views, and that includes axe checks for every page. Ideally, these happen just before navigating away from a page, not immediately after loading the page. That way we get a good feel for all the content, and hidden content like progressive questions are surfaced. [More guidance can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/accessibility/guidance/staging-review-processes.md).
-
-## FAQ
-
-**What if there is a bug in a design system component or a form component?**
-
-The Design System Council will tell you what to do here soon….!
-
-**What are the constraints of the Form Builder tool?  Can we extend it / change it?**
-
-VSP is responsible for the forms system. extensive changes should involve the VSP FE Tools team (#vsp-tools-fe on slack) early, but it’s open to contribution by everyone. Some thoughts on this are in [this slack thread](https://dsva.slack.com/archives/CBU0KDSB1/p1580237084228800)

@@ -77,32 +77,26 @@ When time sensitive content about a benefit — such as a new benefit being made
 
 [View the alert component]({{ site.baseurl }}/components/alert)
 
-#### E. How to apply heading and wizard button or action link
+#### E. How to apply heading and action links
 
-A brief heading should precede and call attention to the wizard button or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
+A brief heading should precede and call attention to the sub-task link or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
-If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.
+If your page uses a [sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task), use a [secondary action link]({{ site.baseurl }}/components/link/action#secondary). If the page does not have a sub-task pattern and you want to direct your user to the application flow, use a [primary action link]({{ site.baseurl }}/components/link/action#primary). This action link is a visually prominent link that will bring the user to another page. 
 
-If the page does not have a wizard and you want to direct your user to the application flow, use a primary green action link. This action link is a visually prominent link that will bring the user to another page. 
+Having an action link on the page helps the user follow the most logical path. 
+Note: Avoid putting more than one action link on the page. If you have a page that requires multiple benefit form links, use the [sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task) to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
 
-Having a single green button or action link on the page helps the user follow the most logical path. 
-Note: never put more than one green button or action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
-
-The button or action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
-
-[View the button component]({{ site.baseurl }}/components/button)
-
-[View the action link component]({{ site.baseurl }}/components/link/action)
+The action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
 
 **Accessibility considerations** 
 
-Screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as a wizard button or action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information (that may be important to that call to action) could exist below that call to action. Therefore, please be mindful about placing important content below the key call to action.
+Screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as an action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information, that may be important to that call to action, could exist beyond that call to action. Therefore, please be mindful about placing important content below the key call to action.
 
-#### F. Optional: Wizard pattern for branching eligibility choices
+#### F. Optional: Sub-task pattern for branching eligibility choices
 
-In the case where there are multiple benefit options, the [Wizard pattern]({{ site.baseurl }}/patterns/wizards) allows a user to branch into the appropriate benefit application from the eligibility page.
+In the case where there are multiple benefit options, the [Sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task) allows a user to branch into the appropriate benefit application from the eligibility page.
 
-The text on the primary green button should represent the job the wizard is performing, such as “Find your education benefits form.”
+The text of the action link should represent the job the sub-task is performing, such as "Find your education benefits form".
 
 #### G. Optional: Additional benefit-eligibility-specific relevant content
 
