@@ -1,5 +1,5 @@
 ---
-name: "_DST - New component or pattern audit"
+name: "DST - New component or pattern audit"
 about: INTERNAL DST USE ONLY
 title: "[component or pattern name] - Audit"
 labels: vsp-design-system-team

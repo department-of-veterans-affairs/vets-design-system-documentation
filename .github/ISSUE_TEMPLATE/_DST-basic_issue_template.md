@@ -1,5 +1,5 @@
 ---
-name: "_DST - Basic Issue Template"
+name: "DST - Basic Issue Template"
 about: INTERNAL DST USE ONLY
 title: ''
 labels: vsp-design-system-team
