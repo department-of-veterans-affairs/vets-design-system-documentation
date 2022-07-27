@@ -24,7 +24,7 @@ Tested using `node` v14.15.0 and `npm` v6.14.8.
 
 1. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
 
-   **NOTE:** This repo works with Ruby version 2.7.5. **It does not work with `ruby v3.0` or above**. On the step where you will install `ruby` make sure to specify `ruby@2.7.5` and also use the version of `2.7.5` when you are adding references to your PATH in your terminal.
+   **NOTE:** This repo works with Ruby version 3.0.2.
 
 1. **Install Ruby gems**
 
