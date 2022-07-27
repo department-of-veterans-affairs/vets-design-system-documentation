@@ -27,7 +27,7 @@ In the Slack announcement, please add links to the component page on design.va.g
 - #platform-design-system
 
 Sample announcement:
-> :loudspeaker: The Design System has just published a new version of component-library which includes the new [component name] component, as well as made it available in vets-website. You may view the component on design.va.gov, in Storybook, and in Sketch. This component is rated [Use with Caution: Available on the Design System Maturity Scale](https://design.va.gov/about/maturity-scale#use-with-caution-available) and the Design System Team will be monitoring its usage over the next few months.
+> :loudspeaker: The Design System has just published a new version of component-library which includes the new [component name] component, as well as made it available in vets-website. You may view the component on design.va.gov, in Storybook, and in the Sketch Pattern Library. This component is rated [Use with Caution: Available on the Design System Maturity Scale](https://design.va.gov/about/maturity-scale#use-with-caution-available) and the Design System Team will be monitoring its usage over the next few months.
 >
 > If you need any assistance using this component in your applications, please reach out to the Design System Team in the #vfs-platform-support channel.
 
