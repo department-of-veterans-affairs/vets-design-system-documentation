@@ -42,6 +42,10 @@ The `va-telephone` component also follows the guidelines set for <a href="{{ sit
 
 {% include storybook-preview.html story="components-va-telephone--aria-described-by" height="80px" %}
 
+### TTY
+
+{% include storybook-preview.html story="components-va-telephone--tty" height="80px" %}
+
 ### Vanity Number
 
 {% include storybook-preview.html story="components-va-telephone--vanity-number" height="80px" %}
@@ -60,6 +64,7 @@ The `va-telephone` component also follows the guidelines set for <a href="{{ sit
 
 - Add a 3 or 10 digit phone number to the component to have it formatted correctly for usage in a page.
 - If the phone number should have an `extension`, be `non-clickable`, or represent an `international` number, additional props can be added to accommodate.
+- For TTY numbers, pass the `tty` boolean prop to have appropriate indicators in the link text and the `aria-label`.
 
 {% include component-docs.html component_name=page.web-component %}
 
