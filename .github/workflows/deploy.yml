@@ -1,14 +1,14 @@
 name: Deploy site
-on:
-  push:
-    branches:
-      - main
+on: push
+  # push:
+  #   branches:
+  #     - main
 
 jobs:
   deploy:
     strategy:
       matrix:
-        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
+        environment: [{ bucket: dev-design.va.gov, config: dev.yml }]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -21,7 +21,7 @@ jobs:
         cache: 'npm'
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7.5 # Not needed with a .ruby-version file
+        ruby-version: 3.0.2 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: npm install
     - run: npm run-script build
