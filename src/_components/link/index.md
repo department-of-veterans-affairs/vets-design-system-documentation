@@ -23,11 +23,34 @@ anchors:
 
 ## Examples
 
-<div class="site-showcase">
-  {% include_relative html/links.html %}
-</div>
+### Default
+{% include storybook-preview.html story="components-va-link--default" link_text="va-link" %}
 
-{% include snippet.html content='html/links.html' %}
+### Active
+- For links that have less hierarchy than an Action Link, we recommend using an Active Link. Active Links can be accompanied by a right-facing chevron icon for more emphasis. 
+- Active links can be seen on [Hub pages]({{ site.baseurl }}/patterns/templates/hub#example)
+- Active link text is bold.
+
+{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" %}
+
+### Download
+- Use for download links including but not limited to PDFs and Excel files. The download icon is optional but encouraged.
+- When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
+- Structure: fa-download icon + 8px margin + Link text (PDF, page count)
+
+{% include storybook-preview.html story="components-va-link--download" link_text="download va-link" %}
+
+### Video
+- Use when linking directly to a YouTube video.
+- Structure: fa-play-circle icon + 8px margin + Video link text
+
+{% include storybook-preview.html story="components-va-link--video" link_text="video va-link" %}
+
+### Channel
+- Use when linking to a YouTube channel.
+- Structure: fa-youtube icon + 8px margin + YouTube channel name
+
+{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" %}
 
 ## Usage
 
@@ -51,51 +74,9 @@ Use a link when you want to:
 
 - **Open in the same window except in certain instances.** Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
 - **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
-
-## Variations
-
-### Default
-
-{% include component-example.html alt="Example of the default link style." file="/images/components/link/default-link-style-big.png" reverse=true caption="An example of the default link style." %}
-
-- Usage guidance is above. This is the default style to be used for all links unless otherwise stated in the variations below.
 - All links use Source Sans Pro (Regular), underlined, at 16px.
 - All links share the same color (`$color-link-default` `#004795`) for icon, link text, and underline. 
 - All text links should be underlined. This is especially important for low-vision users. (Exception: [side navigation links]({{ site.baseurl }}/components/sidenav) should not be underlined.)
-
-### Active link
-
-{% include component-example.html alt="Example of the active link style." file="/images/components/link/active-link-style-big.png" caption="An example of the active link style." reverse=true %}
-{% include snippet.html content='html/active-link.html' %}
-
-- For links that have less hierarchy than an Action Link, we recommend using an Active Link. Active Links can be accompanied by a right-facing chevron icon for more emphasis. 
-- Active links can be seen on [Hub pages]({{ site.baseurl }}/patterns/templates/hub#example)
-- Active link text is bold.
-
-### Download link
-
-{% include component-example.html alt="Example of the download link style." file="/images/components/link/download-link-en.png" caption="An example of the download link in English." reverse=true %}
-{% include snippet.html content='html/pdf-download-link.html' %}
-
-- Use for download links including but not limited to PDFs and Excel files. The download icon is optional but encouraged.
-- When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
-- Structure: fa-download icon + 8px margin + Link text (PDF, page count)
-
-### Video link - Descriptive
-
-{% include component-example.html alt="Example of the video link descriptive style." file="/images/components/link/video-descriptive-link.png" caption="An example of the video descriptive link in English." reverse=true %}
-{% include snippet.html content='html/video-descriptive-link.html' %}
-
-* Use when linking directly to a YouTube video.
-* Structure: fa-play-circle icon + 8px margin + Video link text
-
-### Video link - Channel
-
-{% include component-example.html alt="Example of the video link channel style." file="/images/components/link/video-channel-link.png" caption="An example of the video descriptive link in English." reverse=true %}
-{% include snippet.html content='html/video-channel-link.html' %}
-
-* Use when linking to a YouTube channel.
-* Structure: fa-youtube icon + 8px margin + YouTube channel name
 
 ## Content considerations
 
