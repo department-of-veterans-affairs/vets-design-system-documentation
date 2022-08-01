@@ -27,30 +27,31 @@ anchors:
 {% include storybook-preview.html story="components-va-link--default" link_text="va-link" %}
 
 ### Active
+
+{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" %}
+
 - For links that have less hierarchy than an Action Link, we recommend using an Active Link. Active Links can be accompanied by a right-facing chevron icon for more emphasis. 
 - Active links can be seen on [Hub pages]({{ site.baseurl }}/patterns/templates/hub#example)
 - Active link text is bold.
 
-{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" %}
-
 ### Download
-- Use for download links including but not limited to PDFs and Excel files. The download icon is optional but encouraged.
-- When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
-- Structure: fa-download icon + 8px margin + Link text (PDF, page count)
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" %}
 
+- Use for download links including but not limited to PDFs and Excel files. The download icon is optional but encouraged.
+- When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
+
 ### Video
-- Use when linking directly to a YouTube video.
-- Structure: fa-play-circle icon + 8px margin + Video link text
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" %}
 
+- Use when linking directly to a YouTube video.
+
 ### Channel
-- Use when linking to a YouTube channel.
-- Structure: fa-youtube icon + 8px margin + YouTube channel name
 
 {% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" %}
+
+- Use when linking to a YouTube channel.
 
 ## Usage
 
