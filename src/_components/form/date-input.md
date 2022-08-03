@@ -40,7 +40,8 @@ web-component: va-date
 
 ## Usage
 
-### When to use date inputs
+### When to use date input
+
 - Use a month, day, year date input component for a date a user knows, like a date of birth or marriage.  (Example: July 21, 1992). 
 - Use the [month year](#monthyear) variant for a date a user can approximate, like a date they graduated from high school or a GED equivalent. (Example: May 2010) 
 
