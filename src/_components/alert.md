@@ -17,50 +17,53 @@ web-component: va-alert
 ---
 
 ## Examples - Default
-### Informational alert
 
-Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
+### Informational alert
 
 {% include storybook-preview.html story="components-va-alert--default" link_text="va-alert" %}
 
-### Warning alert
+Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
-Used to warn a user, such as when there are negative consequences, and when something has gone wrong.
+### Warning alert
 
 {% include storybook-preview.html story="components-va-alert--warning" link_text="va-alert" %}
 
-### Success alert
+Used to warn a user, such as when there are negative consequences, or when something has gone wrong.
 
-Used to indicate success.
+### Success alert
 
 {% include storybook-preview.html story="components-va-alert--success" link_text="va-alert" %}
 
-### Error alert
+Used to indicate success.
 
-Used when there is a problem or something destructive is about to occur.
+### Error alert
 
 {% include storybook-preview.html story="components-va-alert--error" link_text="va-alert" %}
 
+Used when there is a problem or something destructive is about to occur.
+
 ### Sign in or tool prompt
 
-Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
-
 {% include storybook-preview.html story="components-va-alert--sign-in-or-tool-prompt" link_text="va-alert" %}
+
+Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
 
 ## Examples - Default variations
 
 ### Heading level
 
-Alerts can contain headings.
-
 {% include storybook-preview.html story="components-va-alert--heading-level" link_text="va-alert" %}
 
+Alerts should contain headings.
+
+
 ### Dismissible 
+
+{% include storybook-preview.html story="components-va-alert--dismissable" link_text="va-alert" %}
 
 * Any alert variation can be dismissible, including background-color only alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
 
-{% include storybook-preview.html story="components-va-alert--dismissable" link_text="va-alert" %}
 
 #### Dismissible Background Only
 
@@ -109,28 +112,40 @@ A background alert may be used with an icon to draw attention to important feedb
 
 ### When to use alerts
 
-Use Alert to notify users of the status of the site, which may or may not require a user’s response. This includes errors, warnings, and general site updates. Use Alert to alert users that something they need needs to be correct or to confirm successful completion of a task.
+* **User feedback.** Use Alert for [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) that respond to an action a user has taken and to draw their attention to something that they need to correct or to confirm successful completion of a task. These messages use success and error variations.
+* **In-application system status.** An exception to the above is providing information to the user, unprompted, about a problem with a particular application. These [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) typically use an error or warning variation and do not require user action.
+* **Engagement messages that nudge the user to enter or update data.** [Engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement) typically use the informational variation and ask the user to take an action.
+* **Access messages when a user tries to access an item that is not available to them.** [Access messages]({{ site.baseurl }}/content-style-guide/error-messages/access) typically warn the user that something they tried to access is not working correctly or is temporarily unavailable. These often use the error or warning variations. 
 
 ### When to consider something else
 
-* On long forms, always include in-line validation in addition to any error messages that appear at the top of the form.
-* If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation modal dialogue, to allow the user to confirm that this is what they want.
+* **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation [modal]({{ site.baseurl }}/components/modal) dialogue, to allow the user to confirm that this is what they want.
+* **Unprompted and in-page alerts.** Consider the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component to draw attention to important information on the page that is not a response to user feedback.
+* **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
 
 ### How to use alerts
 
-When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. A notification of a system change may require more contextual information than a validation message. The message should be concise, in plain language, and adhere to VA.gov voice and tone principles. Don’t use jargon and computer code in the message.
+When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. A notification of a system change may require more contextual information than a validation message. The message should be concise, in plain language, and adhere to VA.gov voice and tone principles. 
 
-* Be polite in error messages — don’t place blame on the user.
-* Users generally won’t read documentation, but they’ll  read a message that helps them resolve an error; include some educational material in your error message.
-* But don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
+* On long forms, always include inline validation in addition to any error messages that appear at the top of the form.
 * Allow a user to dismiss a notification wherever appropriate.
 * Don’t include notifications that aren’t related to the user’s current goal.
 * Don’t stack alerts one after the other.
 * If the alert appears within the page body content, it should be co-located with relevant content.
+* Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
+
+### Choosing between variations
+
+By default use the standard Alert variation. Use the background-only variation for immediate feedback, such as in single-page applications or dynamic Javascript driven forms. 
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
+
+* Be polite in error messages — don’t place blame on the user.
+* Users generally won’t read documentation, but they’ll  read a message that helps them resolve an error; include some educational material in your error message.
+* But don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
+* Don’t use jargon and computer code in the message.
 
 <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages">View content for messages</a>
 

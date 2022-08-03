@@ -41,6 +41,7 @@ anchors:
 * **Too much content**: You should not try to put multiple paragraphs inside Additional info. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
+* **Inside Alerts**: Do not use this component inside an [Alert]({{ site.baseurl }}/components/alert). Try the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component instead, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Additional info outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Additional info between a h1 and a Card. See [placement](#placement) for more.
 
 ## Behavior
