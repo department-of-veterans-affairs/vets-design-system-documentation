@@ -17,7 +17,7 @@ assignees: caw310, GnatalieH
 ## Description
 Create design for [component name] and/or update Sketch artifacts for [component name]
 
-If this is a pattern or component that is alreday in existence, conduct a small audit to make sure there aren't design issues that need to be addressed. Also, check the Design System Team backlog for outstanding design issues. If you find any, link to them in a comment on this ticket. If possible, address any outstanding issues with this design and link to this issue from the original issue. If not, indicate that in the original issue.
+If this is a pattern or component that is already in existence, conduct a small-scale audit (3-5 examples) to make sure there aren't design issues that need to be addressed. Also, check the Design System Team backlog for outstanding design issues. If you find any, link to them in a comment on this ticket. If possible, address any outstanding issues with this design and link to this issue from the original issue. If not, indicate that in the original issue.
 
 ## Details
 [add links to any tickets or documents with details about the design]
