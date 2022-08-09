@@ -29,7 +29,7 @@ anchors:
 
 ### When to consider something else
 
-* **Anything that is not a System status message.** This component is ONLY for site-wide [System status messages]({{ site.baseurl }}/content-style-guide/error-messages/system). There is no other appropriate use.
+* **Anything that is not a System status message.** This component is ONLY for site-wide [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system). There is no other appropriate use.
 
 ### How to use MaintenanceBanner
 
