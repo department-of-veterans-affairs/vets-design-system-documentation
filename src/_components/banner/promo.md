@@ -1,6 +1,8 @@
 ---
 layout: component
-title: "Promo Banner"
+title: Banner - Promo
+permalink: /components/banner/promo
+has-parent: /components/banner/
 status: use-deployed
 intro-text: "A promo banner is fixed content at the bottom of the viewport used for dismissible announcements such as new tools, news, etc."
 research-title: "Promo banners"

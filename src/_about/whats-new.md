@@ -9,55 +9,60 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
-### July 05, 2022
+## July 2022
 
-**Design System updates**
+### New and updated components
+#### Use: Deployed
+* [Link]({{site.baseurl}}/components/link)
+* [Month/Year]({{site.baseurl}}/components/form/date-input)
+* [Textarea]({{site.baseurl}}/components/form/textarea)
 
-- [Button web component](https://design.va.gov/components/button)
+#### Use with caution
 
-### June 27, 2022
+- [Button]({{ site.baseurl }}/components/button)
+- [Button pair]({{ site.baseurl }}/components/button/button-pair)
+- [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable)
+- [Memorable date]({{ site.baseurl }}/components/form/memorable-date)
 
-**Design System updates**
+### Sketch Library updates
 
-- [Textarea web component](https://design.va.gov/components/form/textarea)
+New component symbols:
+* Promo banner
+* Button Pair
+* OMB Info 
+* Active link variation 
+* File Input
+* Table
+* Alert - expandable (Info and Warning variations)
+* Telephone 
+* Decreased form control error state margins to align with USWDS
+* Increased width of error state borders from 2px to 4px for Date input, Memorable date, Number input, Select, Text input, Text area to align with USWDS
+* New layer styles for default, disabled, focus, error, and success borders on form controls
 
-### June 15, 2022
+### Documentation updates
 
-- The va-button-primary utility class has been deprecated. Please visit the [Button component page](https://design.va.gov/components/button/) for guidance on buttons.
+* [Button pair]({{ site.baseurl }}/components/button/button-pair)
+* Consolidation of [error message related content]({{ site.baseurl }}/content-style-guide/error-messages/)
+* [Link]({{site.baseurl}}/components/link)
 
-### May 23, 2022
+### Pattern updates
 
-**Design System updates**
-- [Documentation on native events in form controls](https://design.va.gov/components/form/)
+* [Show more options]({{ site.baseurl }}/patterns/show-more-options) (documentation and Sketch library)
 
-### May 12, 2022
+## June 2022
 
-**Design System updates**
+- [Textarea web component]({{ site.baseurl }}/components/form/textarea)
+- The va-button-primary utility class has been deprecated. Please visit the [Button component page]({{ site.baseurl }}/components/button/) for guidance on buttons.
 
-- [Search input web component](https://design.va.gov/components/search-input)
+## May 2022
 
-### May 05, 2022
+- [Documentation on native events in form controls]({{ site.baseurl }}/components/form/)
+- [Search input web component]({{ site.baseurl }}/components/search-input)
+- [Modal web component]({{ site.baseurl }}/components/modal)
+- [Date web component]({{ site.baseurl }}/components/form/date-input)
+- [Number input web component]({{ site.baseurl }}/components/form/number-input)
 
-**Design System updates**
-
-- [Modal web component](https://design.va.gov/components/modal)
-
----
-### May 04, 2022
-
-**Design System updates**
-
-- [Date web component](https://design.va.gov/components/form/date-input)
-
----
-### May 03, 2022
-
-**Design System updates**
-
-- [Number input web component](https://design.va.gov/components/form/number-input)
-
----
-### April 25, 2022
+## April 2022
 
 - System wide navigation changes
   - The side navigation now shows sub-pages rather than in-page anchor links. Anchor links are now reflected using the "On this page" component which you'll find at the top of any lengthy page.
@@ -72,39 +77,19 @@ title: What’s new?
     - [Foundation > Utilities]({{ site.baseurl }}/foundation/utilities/) 
     - [Patterns > Forms]({{ site.baseurl }}/patterns/forms/) 
     - [Patterns > Templates]({{ site.baseurl }}/patterns/templates/) 
-
-
----
-### April 04, 2022
-
-**Design System updates**
-
 - Table web component
 
----
+## March 2022
 
-### March 16, 2022
+- [Telephone]({{ site.baseurl }}/components/telephone) section added. 
+- [Banners]({{ site.baseurl }}/components/banner) section added.
+- [Promo Banners]({{ site.baseurl }}/components/banner/promo) section updated.
 
-**Component updates**
+## November 2021
 
-- [Telephone](https://design.va.gov/components/telephone) section added. 
-- [Banners](https://design.va.gov/components/banner) section added.
-- [Promo Banners](https://design.va.gov/components/promo-banners) section updated.
-
----
-### November 23, 2021
-
-**Content style guide updates**
-
-- [Zip code](https://design.va.gov/content-style-guide/dates-and-numbers#zip-codes) subtopic added. 
-- [Apostrophes](https://design.va.gov/content-style-guide/punctuation#apostrophes) and [quotation marks](https://design.va.gov/content-style-guide/punctuation#quotation-marks) subtopics added.
-- Veteran entry updated in [word list](https://design.va.gov/content-style-guide/word-list).
-
----
-
-### November 1, 2021
-**Design System updates**
-
+- [Zip code]({{ site.baseurl }}/content-style-guide/dates-and-numbers#zip-codes) subtopic added. 
+- [Apostrophes]({{ site.baseurl }}/content-style-guide/punctuation#apostrophes) and [quotation marks]({{ site.baseurl }}/content-style-guide/punctuation#quotation-marks) subtopics added.
+- Veteran entry updated in [word list]({{ site.baseurl }}/content-style-guide/word-list).
 - Back to top web component
 - Form confirmation page
 - Alert box web component
