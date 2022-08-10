@@ -14,7 +14,6 @@ title: What’s new?
 ### New and updated components
 #### Use: Deployed
 * [Link]({{site.baseurl}}/components/link)
-* [Month/Year]({{site.baseurl}}/components/form/date-input)
 * [Textarea]({{site.baseurl}}/components/form/textarea)
 
 #### Use with caution

@@ -2,6 +2,7 @@
 layout: component
 permalink: /components/form/
 title: Form
+inner-title: Overview
 intro-text: "Form controls allow users to enter information."
 status: use-deployed
 sub-pages:

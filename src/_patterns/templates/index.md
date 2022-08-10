@@ -1,6 +1,7 @@
 ---
 layout: pattern
 title: Templates
+inner-title: Overview
 permalink: /patterns/templates/
 status: use-deployed
 intro-text: "Templates for specific pages that provide guidance on their layout and use."

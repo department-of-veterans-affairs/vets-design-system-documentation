@@ -28,7 +28,7 @@
                         <ul class="usa-sidenav-list">
                           <li class="{% if is-current == true %}active-level{%- endif -%}">
                             <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-                              Overview
+                              {% if p.inner-title %}{{ p.inner-title }}{% else %}{{ p.title }}{%- endif -%}
                               {%- if p.status and (p.layout != "iframe") -%}
                                 {%- include _site-side-nav-status.html component-status=p.status -%}
                               {%- endif -%}
