@@ -1,6 +1,7 @@
 ---
 layout: pattern
 title: Forms
+inner-title: Overview
 permalink: /patterns/forms/
 contributors: "Shawna Hein (VSA Design Lead), Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
 status: use-deployed
