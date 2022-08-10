@@ -73,23 +73,6 @@ Alerts should contain headings.
 
 {% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only-icon" link_text="va-alert" %}
 
-### Full-width
-
-Full-width alerts are used only for emergency or urgent communications and should appear below the main navigation. 
-
-#### Warning
-
-{% include storybook-preview.html story="components-va-alert--fullwidth" link_text="va-alert" %}
-
-#### More about the full-width variation
-
-- Only available in `info` or `warning` alerts.
-- Content inside alert remains aligned to the main page grid container. This might not be apparent on this site in smaller screens.
-- Use for emergency or very urgent communications only. For example, a hurricane alert; government shutdown affecting VA services, etc. Emergency homepage alerts notify Veterans, VA employees, and the public of events that affect VA services or site features.
-- To ensure that customers always know they can find critical service information in this area, don’t use emergency homepage alerts for general press, outreach, or administrative messages.
-- Don’t stack - max is one full-width alert per page at any one time. (If multiple emergency issues occur at once, combine the message and link out to a landing page or to individual affected medical centers, for example.)
-- Can be used on homepage or, in true emergencies, on lower-level pages.
-
 ## Examples - Background color only
 
 ### Background color only alert
@@ -122,6 +105,7 @@ A background alert may be used with an icon to draw attention to important feedb
 * **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation [modal]({{ site.baseurl }}/components/modal) dialogue, to allow the user to confirm that this is what they want.
 * **Unprompted and in-page alerts.** Consider the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component to draw attention to important information on the page that is not a response to user feedback.
 * **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
+* **System maintenance.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
 
 ### How to use alerts
 
@@ -143,7 +127,7 @@ By default use the standard Alert variation. Use the background-only variation f
 ## Content considerations
 
 * Be polite in error messages — don’t place blame on the user.
-* Users generally won’t read documentation, but they’ll  read a message that helps them resolve an error; include some educational material in your error message.
+* Users generally won’t read documentation, but they’ll read a message that helps them resolve an error; include some educational material in your error message.
 * But don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
 * Don’t use jargon and computer code in the message.
 
