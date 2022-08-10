@@ -4,6 +4,7 @@ title: Banner - Maintenance
 permalink: /components/banner/maintenance
 has-parent: /components/banner/
 github-title: va-banner-maintenance
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/960E1D9A-BF6D-40AB-82E4-DC335D00990C/canvas
 status: use-deployed
 intro-text: "Banners specifically for site-wide system messages, typically system maintenance, which are fixed to the top of the viewport."
 anchors:
