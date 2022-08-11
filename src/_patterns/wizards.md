@@ -14,13 +14,9 @@ anchors:
 
 ## Status 
 
-The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and the Design System Team is in the process of replacing it with patterns and guidance that will roughly adhere to the following:
+The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and replaced by the the [Sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task). 
 
-* [Content: Writing questions for forms](https://service-manual.nhs.uk/content/how-to-write-good-questions-for-forms/get-the-questions-into-order)
-* [Pattern: Check a service is suitable](https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/)
-* [Principle: One thing per page](https://www.gov.uk/service-manual/design/form-structure#start-with-one-thing-per-page)
-
-You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you.
+You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you. You may attempt to [retrofit an existing instance of the Wizard pattern](#retrofit-this-pattern) until the Sub-task pattern is more widely in use.
 
 ## Purpose
 
@@ -69,3 +65,34 @@ Note: For both alert cases, a user can still change their answer in the wizard t
 - We show questions one at a time for accessibility/universal design reasons: we try not to show irrelevant content to users.
 - We learned through research to add blue left bar to show users that the wizard questions are related and part of the same process of finding the correct form.
 - Wizard questions may come from user research, i.e. a point of confusion for many users regarding their eligibility for a VA benefit.
+
+## Retrofit this pattern
+
+The Wizard pattern was deprecated primarily because of difficult-to-solve accessibility issues. However, many teams and products still rely on this pattern. While the Sub-task pattern is available, some teams may not be able to immediately adopt that new pattern and thus will need help minimizing the accessibility issues with this pattern:
+
+### Accessibility defects
+
+* New inputs or conditional text added to the DOM based on user interaction with radio buttons, checkboxes, or select menus need to be announced to screen readers so users have context that new information is available.
+* No clear end point.
+* Easy for users to accidentally jump/tab out of the wizard.
+* No clear and explicit validation of input.
+* Nested fieldsets are problematic as the end of a fieldset is not announced by screen readers thus making it impossible for screen reader users to confidently know which fields belong within which fieldset.
+* Providing results using dynamic show/hide behavior is spotty for screen reader users
+
+New inputs or conditional text added to the DOM based on user interaction with radio buttons, checkboxes, or select menus can be confusing for screen reader users. They may miss that new information is added to the page after interacting with these elements. Why? Normally, screen reader users don't get a notification with a radio button, checkbox, or select menu. This can create an experience where people may miss the context of why another question is being asked or why more content exists on the page.
+
+Currently, the Wizard pattern allows this in multiple ways. To work around this, we recommend taking these steps to minimize possible issues with the screen reader experience.
+
+### What to do?
+
+* **Ask qualifying questions up front in the form**, to avoid complicated branching logic and progressive disclosure patterns that reveal content inline whenever possible.
+
+If you can't avoid it:
+
+* **Keep new content added below the element that triggered the new content.** This ensures that screen reader users who navigate down the page linearly won't miss the newly added content.
+* **Keep the new content added simple.** One additional question is okay. Or one additional input or clarifying sentence or two. However, the more that's added may make it difficult for some screen reader users to understand how the new content is associated with what triggered it.
+* **Avoid inserting static content between interactive content.** Screen reader users who navigate through forms may skip static content that is sandwiched between interactive content. Consider providing the new static content:
+  * On the following page
+  * Within an expandable [additional info]({{ site.baseurl }}/components/additional-info) component (reachable by keyboard via the TAB key)
+  * As a polite aria live region
+* **Reach out for help.** If an experience can't avoid multiple instances of branching togic, or large amounts of newly added content, contact an accessibility specialist for help implementing [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions).
