@@ -82,7 +82,7 @@ Details any containers of components or layout concerns for how the pattern may 
   * One piece of information you’re telling a user
   * One decision a user has to make
   * One question a user has to answer
-* Create a series of simple questions or decisions, written in plain language, and place them on distinct pages (rather than progressively disclosed on the same page)
+* Start with the content design - Create a series of simple questions or decisions, written in plain language, and place them on distinct pages (rather than progressively disclosed on the same page)
 * Structure the logic tree for questions to gather information from users in as few questions as possible, while still directing them to the best next step for their circumstances.
 * Do not show irrelevant content to users.
 * Questions can be used to:
