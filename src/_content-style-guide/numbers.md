@@ -66,7 +66,7 @@ Choose from one of 5 VA-backed loan options.
 
 Use numerals and % symbol, with no space between the number and %. This style follows the practice for scientific and technical writing, and differs from 18F. 
 
-We use this approach because it’s easier to scan, and we have a lot of content discussing disability ratings. Disability ratings fall into the scientifc and technical category of writing. 
+We use this approach because it’s easier to scan, and we have a lot of content discussing disability ratings. Disability ratings fall into the scientific and technical category of writing. 
 
 
 
