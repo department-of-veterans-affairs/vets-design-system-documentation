@@ -3,52 +3,65 @@ layout: component
 permalink: /components/form/file-input
 has-parent: /components/form/
 title: File input
-intro-text: "File input allows one or more files to be uploaded."
+intro-text: "File input allows a single file to be uploaded."
 research-title: Form controls
-status: use-deployed
+sketch-link: https://www.sketch.com/s/1cb56b0b-df7c-456b-a8e4-f08a3553a5d3/p/DA9643BD-6386-4CCD-9811-A654B306BBC6
+status: use-with-caution-candidate
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: How to use
+  - anchor: Code usage
   - anchor: Accessibility considerations
+web-component: va-file-input
 ---
 
 ## Examples
 
 ### Default
 
-{% include storybook-preview.html story="components-fileinput--default" link_text="FileInput" %}
+{% include storybook-preview.html height="100px" story="components-va-file-input--default" link_text="va-file-input" %}
+
+### Required
+
+{% include storybook-preview.html height="100px" story="components-va-file-input--required" link_text="va-file-input" %}
+
+### Error Message
+
+{% include storybook-preview.html height="100px" story="components-va-file-input--error-message" link_text="va-file-input" %}
 
 ## Usage
 
-### When to use file input 
+### When to use va-file-input
 
-* **Uploading documents.** The file input component allows a user to provide required documents.
+* **Uploading documents.** The file input component allows a user to provide a required document.
 
 ### When to consider something else
 
+* **Documents are optional.** Avoid asking users to provide documents if you don’t require them.
+
 * **Asynchronous upload.** The file input component doesn’t support asynchronous uploading. Files are POSTed only on form submission.
 
-## How to use
+* **Asking for large files.** Be mindful that some users might have limited connectivity or data plans.
 
-The file input button triggers a micro-interaction that causes the Operating System (OS) to present a dialog that prompts the user to select one or more files to upload. Once the files are uploaded the browser presents a dialog to inform the user of the success or failure of the upload.
+### How to use
 
-* **Pair with a label.** Be sure to include a form label with the file input button.
-* **Allow multiple file formats.** Not everyone has access to the same software. Be flexible with file types to avoid unnecessary software requirements.
-* **Prefer one file per input.** Some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app.
+The file input button triggers a micro-interaction that causes the Operating System (OS) to present a dialog that prompts the user to select a file to upload. Once the file is uploaded, the browser presents a dialog to inform the user of the success or failure of the upload.
+
+* **Pair with a label.** Be sure to provide label text with the file input component.
+* **Prefer one file per input.** The file input component only supports one file upload at a time. Some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app.
 * **Highlight input restrictions.** Use hint-text to be clear about any file restrictions, such as document types or file size.
 
 ### Errors
 
-* The error message is placed above the file input.
+* The error message is placed above the file input button.
+* To display a custom error message, pass text into the `error` property.
 * See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
 
-<div class="site-showcase">
-{% include_relative html/error-file-input.html %}
-</div>
+{% include storybook-preview.html height="100px" story="components-va-file-input--error-message" link_text="va-file-input" %}
 
-{% include snippet.html content='html/error-file-input.html' %}
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
-* **Use proper labels and attributes.** Each file input should have a ```<label>```. Associate the two by matching the ```<label>```’s for attribute to the ```<input>```’s id attribute.
+* **Use proper labels and attributes.** When a label is supplied to the `label` property of the component, it will be associated with the ```<input>``` element that has a matching id attribute automatically.
