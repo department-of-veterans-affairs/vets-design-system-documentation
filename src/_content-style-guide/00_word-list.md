@@ -476,8 +476,6 @@ special claim: Define on first mention in body copy as "a claim for special need
 
 Statement of the Case: Capitalize.
 
-suicide: When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
-
 substantially gainful employment: Provide a definition or note when using this term. 
 - **Like this:** You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment) don’t count.
 
