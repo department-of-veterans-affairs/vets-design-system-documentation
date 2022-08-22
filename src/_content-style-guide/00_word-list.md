@@ -571,17 +571,15 @@ Veterans Service Organization (VSO). "Veterans" is plural and doesn't take an ap
 
 Veterans Service Representative (VSR). “Veterans” is plural and doesn't take an apostrophe. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-Vietnam Era: Capitalize. But don't capitalize "era" when you include "War" in the term ("Vietnam War era"). See entry on "era" for additional explanation.
-
 Veteran Readiness and Employment (VR&E): Capitalize as the full name of the program. This used to be called Vocational Rehabilitation and Employment, and we have places where we reference the old name and say "formerly known as." We also reference the shortened version of the old name: "voc rehab." See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
-
-Veterans’ Mortgage Life Insurance (VMLI). "Veterans’" takes a plural possessive apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 Veterans Service Officer (VSO). "Veterans" is plural and doesn't take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 Veterans Service Organization (VSO). "Veterans" is plural and doesn't take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 Veterans Service Representative (VSR). “Veterans” is plural and doesn't take an apostrophe. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+
+Vietnam Era: Capitalize. But don't capitalize "era" when you include "War" in the term ("Vietnam War era"). See entry on "era" for additional explanation.
 
 Vocational Rehabilitation Counselor (VRC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
