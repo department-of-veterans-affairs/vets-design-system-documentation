@@ -1,27 +1,39 @@
 ---
 layout: pattern
-permalink: /patterns/forms/service-history
-has-parent: /patterns/forms/
+permalink: /patterns/ask-users-for/service-history
+sub-section: ask-users-for
 title: Service history
 intro-text: "Follow this pattern to ask a user about their service/military history."
 status: use-deployed
 anchors:
-  - anchor: Service periods
-  - anchor: Service under another name
-  - anchor: Reserves and National Guard
-  - anchor: Federal Orders
-  - anchor: POW Status and Severance Pay
+  - anchor: Usage
   - anchor: Examples
+  - anchor: How to build
+  - anchor: Usage - Service under another name
+  - anchor: Usage - Reserves and National Guard and Federal Orders
+  - anchor: Usage - Prisoner of War (POW)
 ---
 
-**Note:** Service history content varies from form to form. Let this pattern be your starting point and decide what needs to be on your form. 
+## Usage
 
-## Service periods
+### When to use this pattern
 
-Follow this pattern whenever you need to ask for a user’s periods of service in the military.
+* **Service periods.** Follow this pattern whenever you need to ask for a Veteran's periods of service in the military. 
+* **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the [list and loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) above.
+* **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there. 
 
-### Structure
+## Examples
 
+- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
+- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
+- [VA Form 22-1990N - Application for VA Education Benefits Under the National Call to Service (NCS) Program](https://www.va.gov/education/apply-for-education-benefits/application/1990N/introduction)
+
+## How to design and build
+
+### Service periods
+
+#### Structure
 - Heading
 - Branch of service text input 
 - Service start date input 
@@ -34,14 +46,12 @@ Follow this pattern whenever you need to ask for a user’s periods of service i
 
 ![pension-serviceperiods-2]({{site.baseurl}}/images/list-and-loop3.png)
 
-### Usage
-
-- **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the [list and loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) above.
-- **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there. 
-
-## Service under another name
+## Usage - Service under another name
 
 Follow this pattern whenever you need to ask a user if they served under another name. 
+
+- **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
+- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. You can read more in depth about the [list and loop pattern](#listandloop) above.
 
 ### Structure
 
@@ -53,12 +63,7 @@ Follow this pattern whenever you need to ask a user if they served under another
 
 ![service under another name]({{site.baseurl}}/images/service-name.png)
 
-### Usage
-
-- **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
-- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. You can read more in depth about the [list and loop pattern](#listandloop) above.
-
-## Reserves and National Guard and Federal Orders
+## Usage - Reserves and National Guard and Federal Orders
 
 Follow this pattern whenever you need to ask for a user’s Reserve or National Guard information. Persons in the Reserve or National Guard are not full-time active duty military personnel, although they can be deployed at any time should the need arise. 
 
@@ -89,9 +94,12 @@ Follow this pattern whenever you need to ask for a user’s Reserve or National 
 
 ![federal orders]({{site.baseurl}}/images/federal-orders.png)
 
-## Prisoner of War (POW)
+## Usage - Prisoner of War (POW)
 
 Follow this pattern whenever you need to ask for a user’s POW information. Former prisoners of war (POW) are Veterans who, during active military service, were forcibly detained or interned in the line of duty by an enemy government or its agents or a hostile force.
+
+- **Don’t ask if it does not benefit the user experience.** You should only ask users about POW information when absolutely necessary. 
+- **Depending on the form, use the List and Loop pattern to add multiple confinement periods.** An example of adding multiple confinement periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction). 
 
 ### Structure - POW Status and Severance Pay
 
@@ -107,14 +115,3 @@ Follow this pattern whenever you need to ask for a user’s POW information. For
 
 ![prisoner of war and severance pay]({{site.baseurl}}/images/pow-status.png)
 
-### Usage
-
-- **Don’t ask if it does not benefit the user experience.** You should only ask users about POW information when absolutely necessary. 
-- **Depending on the form, use the List and Loop pattern to add multiple confinement periods.** An example of adding multiple confinement periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction). 
-
-## Examples
-
-- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
-- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
-- [VA Form 22-1990N - Application for VA Education Benefits Under the National Call to Service (NCS) Program](https://www.va.gov/education/apply-for-education-benefits/application/1990N/introduction)
