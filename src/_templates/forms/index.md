@@ -2,37 +2,25 @@
 layout: pattern
 title: Forms
 inner-title: Overview
-permalink: /patterns/forms/
+permalink: /templates/forms/
 contributors: "Shawna Hein (VSA Design Lead), Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
 status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
-  - sub-page: All or none of the above
-  - sub-page: Applicant information
   - sub-page: Confirmation
-  - sub-page: Contact information
-  - sub-page: Dates
-  - sub-page: Direct deposit 
-  - sub-page: File upload
-  - sub-page: List and loop
-  - sub-page: Review
-  - sub-page: Service history
-  - sub-page: Signature
-  - sub-page: Sub-task
 ---
 
 {% include _site-in-this-section.html %}
 
-
-## The Structure of a Form
+## The structure of a form
 
 {% include component-example.html alt="Representative pages of a form flow for VA.gov." file="/images/patterns/forms/flow.png" caption="The anatomy of a form flow." %}
 
 1. **[Content landing page](#content-landing-page).** A page built in Drupal that outlines eligibility requirements and/or how to apply. Also, provides information about the benefit. 
 1. **[Introduction page](#introduction-page).** Includes a call-to-action to login if relevant and a subway map / timeline of what the user can expect when filling out the form.
 1. **[Main form pages](#main-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
-1. **[Review page]({{ site.baseurl }}/patterns/forms/review).** Allows the user to review information and make edits if necessary.
-1. **[Confirmation page]({{ site.baseurl }}/patterns/forms/confirmation).** Gives users information about what they can expect after they submit an online application.
+1. **[Review page]({{ site.baseurl }}/patterns/help-users-to/check-answers).** Allows the user to review information and make edits if necessary.
+1. **[Confirmation page]({{ site.baseurl }}/templates/confirmation).** Gives users information about what they can expect after they submit an online application.
 
 
 ## Pages
@@ -41,9 +29,9 @@ sub-pages:
 
 A page that a user can read before entering an online form where they learn about eligibility and how to apply. This page can contain several elements:
 
-* Sub-task pattern
-* Process list
-* Application status widget that links to the form
+* [Help users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern
+* [Process list]({{ site.baseurl }}/components/process-list)
+* [Application status widget](#application-status-widget) that links to the form
 
 #### Examples
 * [https://www.va.gov/health-care/how-to-apply/](https://www.va.gov/health-care/how-to-apply/)
@@ -79,7 +67,8 @@ Some examples start here (use the right arrow key to navigate through): [https:/
 
 ## Patterns
 
-* [List and loop]({{ site.baseurl }}/patterns/forms/list-and-loop)
+* [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses)
+* [Help users to check answers]({{ site.baseurl }}/patterns/help-users-to/check-answers)
 
 ## Components
 

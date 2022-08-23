@@ -1,9 +1,11 @@
 ---
 layout: pattern
-title: Check a service is suitable
-intro-text: "Helps a user to determine if they can or should use a service." 
+permalink: /patterns/help-users-to/check-their-eligibility
+title: Check their eligibility
+sub-section: help-users-to
+intro-text: "Helps a user to determine if they are eligible to apply or use a service." 
 draft: true
-research-title: check-a-service-is-suitable
+research-title: check-their-eligibility
 status: use-with-caution-available
 anchors:
   - anchor: Usage

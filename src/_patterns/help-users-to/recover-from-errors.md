@@ -1,6 +1,9 @@
 ---
 layout: pattern
-title: Error messages
+permalink: /patterns/help-users-to/recover-from-errors
+sub-section: help-users-to
+title: Recover from errors
+aka: Error messages
 intro-text: "Details the structure, style, and tone for error and informational messages."
 status: use-deployed
 anchors:

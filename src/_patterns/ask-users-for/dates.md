@@ -1,23 +1,25 @@
 ---
 layout: pattern
-permalink: /patterns/forms/dates
-has-parent: /patterns/forms/
+permalink: /patterns/ask-users-for/dates
+sub-section: ask-users-for
 title: Dates
-intro-text: "The current implementation for collecting dates on VA.gov forms."
+intro-text: "Use this pattern to collect dates from a user."
 status: use-deployed
 anchors:
-  - anchor: When to use this pattern
   - anchor: Usage
-  - anchor: Error message templates for dates
+  - anchor: How to design and build
+  - anchor: Content considerations
 ---
 
-## When to use this pattern 
+## Usage
+
+### When to use this pattern 
 
 Follow this pattern whenever you need users to provide a date on a form.
 
 Dates you may need users to provide include:
 - Dates a user knows, like a date of birth or marriage
-- Dates a user can approximate , like February 2021
+- Dates a user can approximate, like February 2021
 - Date ranges, like service history dates 
 
 ### Dates a user knows
@@ -38,13 +40,17 @@ Use  month/day/year inputs or month/year inputs depending on the question being 
 
 ![date ranges: service start date and service end date]({{site.baseurl}}/images/date-ranges.png) 
 
-## Usage
+## How to design and build 
+
+### How this pattern works
 
 - **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date” 
 - **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
 - **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
  
-## Error message templates for dates
+## Content considerations
+
+### Error message templates for dates
 
 **If nothing is entered**
 Say 'Please enter a date'

@@ -58,7 +58,7 @@ The Public Website Team (Office of the CTO Digital Experience) publishes downtim
 - Specify custom dates and times. 
 - Specify custom duration (how many hours or minutes) in the upcoming/before message. 
 - Times are always given in ET.
-- Sitewide maintenance banners are always dismissable per session.
+- Sitewide maintenance banners are always dismissible per session.
 - The ‘upcoming’ before message should be published at least 12 hours in advance. (Can be more in     advance when the outage is unusually long or comprehensive.)
 - Banner expires and automatically removed when downtime is complete.
 - A maximum of 3 banners are allowed simultaneously. 

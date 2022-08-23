@@ -1,19 +1,30 @@
 ---
 layout: pattern
-permalink: /patterns/forms/file-upload
-has-parent: /patterns/forms/
-title: File upload
+permalink: /patterns/ask-users-for/files
+sub-section: ask-users-for
+title: Files
+aka: File upload
 intro-text: "Follow this pattern to help users select and upload a file."
 status: use-deployed
 anchors:
-  - anchor: Structure
-  - anchor: Loading state
-  - anchor: Review state
   - anchor: Usage
-  - anchor: Error message templates for file upload
+  - anchor: How to design and build
+  - anchor: Content considerations
 ---
 
-## Structure
+## Usage
+
+### When to use this pattern
+
+* **Required documentation.** When a user must upload a file in order to provide required documentation.
+
+### When not to use this pattern
+
+8 **Don’t ask if it does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary.
+
+## How to design and build
+
+### Layout details
 
 Here is the structure for asking a user to upload a file:
 
@@ -26,26 +37,27 @@ Here is the structure for asking a user to upload a file:
 
 ![file upload input state]({{site.baseurl}}/images/file-upload-input.png)
 
-## Loading state
+### How this pattern works
+
+- **Avoid error states by listing out what types and sizes of files are accepted.** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
+- **Validate file uploads.**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
+- **Do not italicize information regarding file sizes.** Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
+
+#### Loading state
 
 The upload button will be replaced by a gray card with a [standard progress bar component]({{ site.baseurl }}/components/progress-bar) to indicate the progress of the document upload. The user will see the name of the file, as well as, have the option to cancel the upload. 
 
 ![file upload loading state]({{site.baseurl}}/images/file-upload-loading.png)
 
-## Review state 
+#### Review state 
 
 When a document has successfully uploaded, the card will have the uploaded file name bolded and there will be an option to delete the file. Depending on the type of form, there can be a dropdown of selecting document types. Underneath the card there will be a secondary button to give the user the option of adding more document uploads. 
 
 ![file upload review state]({{site.baseurl}}/images/file-upload-review.png)
 
-## Usage
+## Content considerations
 
-- **Don’t ask if it does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary 
-- **Avoid error states by listing out what types and sizes of files are accepted.** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
-- **Validate file uploads.**  A validation message for when a user skips uploading a required document: *Please upload a file.* When there needs to be at least one required document: *Please upload at least one file* 
-- **Do not italicize information regarding file sizes.** Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
-
-## Error message templates for file upload
+### Error message templates for file upload
 
 **When a user doesn’t upload a required document:**
 

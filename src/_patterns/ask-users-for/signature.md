@@ -1,20 +1,32 @@
 ---
 layout: pattern
-permalink: /patterns/forms/signature
-has-parent: /patterns/forms/
+permalink: /patterns/ask-users-for/signature
+sub-section: ask-users-for
 title: Signature
-intro-text: "Use this pattern on the review section of the form when you need a user to provide their signature as a statement of truth."
+intro-text: "Use this pattern when you need a user to provide their signature as a statement of truth."
 status: use-deployed
 anchors:
-  - anchor: Structure
   - anchor: Usage
-  - anchor: Error message templates 
+  - anchor: Examples
+  - anchor: How to design and build
+  - anchor: Content considerations
 ---
+
+## Usage
+
+### When to use this pattern
+
+* **Certification statement or statement of truth.** Some forms will require the user to certify their submission by signature.
+
+## Examples
 
 ![form signature pattern]({{site.baseurl}}/images/form-signature.png)
 
+## How to design and build 
 
-## Structure
+This patterns is used at the end of a form review page.
+
+### Layout details
 
 - Instructions for the user around signing the certification
 - Card
@@ -24,13 +36,16 @@ anchors:
 - Text input for signature
 - Checkbox for certification
 
-## Usage
+### How this pattern works
 
 - **Place the pattern underneath the accordions on the review section.** Do not hide this component inside an accordion. 
 - **Signature pattern does not exist in every form.** If your form needs a certification statement or statement of truth, we recommend using this pattern. 
 - **When using this pattern, do not add the privacy policy checkbox at the end of the form.** The user does not need to check another checkbox for  privacy policy. 
 
-## Error message templates 
+
+## Content considerations
+
+### Error message templates 
 
 **When a user doesn’t enter the name they entered previously in the form**
 

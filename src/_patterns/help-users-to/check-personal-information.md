@@ -1,6 +1,8 @@
 ---
 layout: pattern
-title: Authenticated info list
+title: Check personal information
+aka: Authenticated info list
+sub-section: help-users-to
 intro-text: "This pattern helps users quickly see a list of items related to their own personal information, as well as quickly navigate to answers to the questions they might have."
 status: use-with-caution-available
 contributors: Shawna Hein, Kevin Stachura
@@ -12,8 +14,6 @@ anchors:
   - anchor: Accessibility considerations
   - anchor: Research
 ---
-
-
 
 ## Purpose
 

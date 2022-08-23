@@ -19,8 +19,8 @@ anchors:
 ### When to use this pattern
 
 * **Service periods.** Follow this pattern whenever you need to ask for a Veteran's periods of service in the military. 
-* **Use the list and loop pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs. You can read more in depth about the [list and loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) above.
-* **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there. 
+* **Use the multiple response pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs to gather multiple pieces of information. Read more about the [multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
+* **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there.
 
 ## Examples
 
@@ -51,7 +51,7 @@ anchors:
 Follow this pattern whenever you need to ask a user if they served under another name. 
 
 - **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
-- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. You can read more in depth about the [list and loop pattern](#listandloop) above.
+- **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. Read more about the [multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
 
 ### Structure
 
