@@ -3,7 +3,7 @@ layout: pattern
 permalink: /patterns/ask-users-for/dates
 sub-section: ask-users-for
 title: Dates
-intro-text: "Use this pattern to collect dates from a user."
+intro-text: "Use this pattern to collect dates from a person."
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -15,28 +15,36 @@ anchors:
 
 ### When to use this pattern 
 
-Follow this pattern whenever you need users to provide a date on a form.
+Follow this pattern whenever you need a person to provide a date on a form.
 
-Dates you may need users to provide include:
-- Dates a user knows, like a date of birth or marriage
-- Dates a user can approximate, like February 2021
-- Date ranges, like service history dates 
+Dates you may need people to provide include:
+- Dates a person knows, like a date of birth or marriage anniversary.
+- Dates a person can approximate, like February 2021.
+- Date ranges, like service history dates.
 
-### Dates a user knows
+### Dates a person knows
 
-Use the month/day/year date input component for most dates, particularly memorized dates. 
+Use the [Memorable date]({{ site.baseurl }}/components/form/memorable-date) component for dates a person is likely to have memorized such as a date of birth or marriage anniversary. 
+
+You can also use the standard [date]({{ site.baseurl }}/components/form/date) component:
 
 ![date input for memorized dates: month day and year]({{site.baseurl}}/images/date-input.png) 
 
+#### Date of birth
+
+Follow this pattern whenever you need to ask for a user’s date and place of birth. 
+
+![applicant information birth information template]({{site.baseurl}}/images/Applicant-info-birth-info.png) 
+
 ### Dates a user can approximate
 
-Use the month/year date input component for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
+Use the [month/year date]({{ site.baseurl }}/components/form/date-input#monthyear) component variation for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
 
 ![date input for approximate dates: month and year]({{site.baseurl}}/images/date-input-month-year.png) 
  
 ### Date ranges
 
-Use  month/day/year inputs or month/year inputs depending on the question being asked. For example: Service history dates
+Use one of the aforementioned components depending on the question being asked. For example: Service history dates.
 
 ![date ranges: service start date and service end date]({{site.baseurl}}/images/date-ranges.png) 
 
@@ -47,6 +55,8 @@ Use  month/day/year inputs or month/year inputs depending on the question being 
 - **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date” 
 - **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
 - **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
+- **Use the date input field for date of birth.** Writing out the label for each birth date string and separating them into three fields instead of one eliminates potential format confusion.
+- **Use one text input for Place of birth.** This format is easier to fill out for both Veterans born outside the United States and for Veterans who were born United States citizens.
  
 ## Content considerations
 
