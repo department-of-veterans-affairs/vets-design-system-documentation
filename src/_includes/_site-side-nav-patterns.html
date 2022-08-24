@@ -1,52 +1,20 @@
 <nav class="va-sidebarnav va-sidebarnav--{{include.name}}">
   {% assign ask_users_for = site.patterns | where: "sub-section", "ask-users-for" %}
   {% assign help_users_to = site.patterns | where: "sub-section", "help-users-to" %}
+  {% assign deprecated = site.patterns | where: "status", "dont-use-deprecated" %}
 
   <h3 class="va-sidebarnav__sub-section">
     Ask users for&hellip;
   </h3>
-  <ul class="usa-sidenav-list">
-    {% for p in ask_users_for %}
-      {% assign is-current = false %}
-      {% if p.url == page.url %}
-        {% assign is-current = true %}
-      {% endif %}
-      {% unless p.index %}
-        {% unless p.draft and (p.url != page.url) %}
-          <li class="{% if is-current == true %}active-level{%- endif -%}">
-            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-              {{p.title}}
-                {%- if p.status -%}
-                  {%- include _site-side-nav-status.html component-status=p.status -%}
-                {%- endif -%}
-            </a>
-          </li>
-        {% endunless %}
-      {% endunless %}
-    {% endfor %}
-  </ul>
+  {% include _site-side-nav-patterns-list.html section_list=ask_users_for %}
 
   <h3 class="va-sidebarnav__sub-section">
     Help users to&hellip;
   </h3>
-  <ul class="usa-sidenav-list">
-    {% for p in help_users_to %}
-      {% assign is-current = false %}
-      {% if p.url == page.url %}
-        {% assign is-current = true %}
-      {% endif %}
-      {% unless p.index %}
-        {% unless p.draft and (p.url != page.url) %}
-          <li class="{% if is-current == true %}active-level{%- endif -%}">
-            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-              {{p.title}}
-                {%- if p.status -%}
-                  {%- include _site-side-nav-status.html component-status=p.status -%}
-                {%- endif -%}
-            </a>
-          </li>
-        {% endunless %}
-      {% endunless %}
-    {% endfor %}
-  </ul>
+  {% include _site-side-nav-patterns-list.html section_list=help_users_to %}
+
+  <h3 class="va-sidebarnav__sub-section">
+    Deprecated
+  </h3>
+  {% include _site-side-nav-patterns-list.html section_list=deprecated%}
 </nav>
