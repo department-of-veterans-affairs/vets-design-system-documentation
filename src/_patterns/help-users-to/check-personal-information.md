@@ -26,7 +26,7 @@ The purpose of this pattern is:
 
 ## Example
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-authenticated-list-tool.jpeg)
+![image]({{site.baseurl}}/images/patterns/help-users-to/check-personal-information/auth-list-tool.jpeg)
 
 
 1. **'On this page' component.** This section should link to the associated content on the page. It should 'jump' to that section when the user clicks it.
@@ -39,15 +39,15 @@ The purpose of this pattern is:
 
 #### Typical layout
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-first-mock-3.jpeg)
+![image]({{site.baseurl}}/images/patterns/help-users-to/check-personal-information/apple-tool.jpeg)
 
 #### Layout with consolidated additional information (FAQs section)
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-consolidated-faq-3.jpeg)
+![image]({{site.baseurl}}/images/patterns/help-users-to/check-personal-information/apple-tool-consolidated-faq-3.jpeg)
 
 ### Mobile
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-apple-tool-mobile-3.jpeg)
+![image]({{site.baseurl}}/images/patterns/help-users-to/check-personal-information/apple-tool-mobile-3.jpeg)
 
 ### Usage
 
@@ -66,7 +66,7 @@ The on this page component should start with a link to the list itself, and then
 #### Integrating contextual questions in the cards
 Overall questions should be in a content area accessed by the "on this page" component, but more contextual questions can be "additional info" components on the cards themselves. Example provided.
 
-![image]({{site.baseurl}}/images/experimental-design/auth-info-list-additional-info.png)
+![image]({{site.baseurl}}/images/patterns/help-users-to/check-personal-information/additional-info.png)
 
 #### Items on the card and optional card elements 
 Make sure to not overload elements on the cards. If you're finding you need to let the user know about a fair amount of information about a single card, link to a details page with more detail.

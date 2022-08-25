@@ -38,7 +38,7 @@ The hierarchy of the eligibility pattern allows it to be flexible enough to cove
 
 The eligibility page consists of the following elements:
 
-![eligibility_page_heirarchy](/images/eligibility_page_heirarchy.png)
+![eligibility_page_heirarchy]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/eligibility_page_heirarchy.png)
 
 #### A. Title and statement of intent
 The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.
@@ -52,14 +52,14 @@ The featured content component is used to present the user with the most commonl
 <h3 class="do-dont__heading">Do</h3>
 <div class="do-dont__content" markdown="1">
   <p>Use a single featured component for the most common scenario.</p>
-![eligibility_page_heirarchy](/images/featured-content-do.png) 
+![eligibility_page_heirarchy]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/featured-content-do.png) 
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Don’t</h3>
 <div class="do-dont__content" markdown="1">
 <p>Use two or more featured components for multiple scenarios, because there can't be more than one that is the most common. Use other page elements for this purpose.</p>
-![eligibility_page_heirarchy](/images/featured-content-dont.png) 
+![eligibility_page_heirarchy]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/featured-content-dont.png) 
 </div>
 </div>
 </div>
@@ -70,7 +70,7 @@ The featured content component is used to present the user with the most commonl
 
 Benefit eligibility or requirements information that is more nuanced than the summary placed inside the Common scenario overview (featured content component), including different requirements for sub-audiences, application assistance, etc.  Group prerequisites logically by benefit type, and order benefit types from most common to less common.
 
-![eligibility_prerequisites](https://user-images.githubusercontent.com/50150810/58469821-3a6ec380-8138-11e9-85bf-0bd2f6292aec.png)
+![eligibility_prerequisites]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/additional-eligibility.png)
 
 #### D. Optional: Eligibility change announcement
 
@@ -194,13 +194,13 @@ At the top of the introduction page, is a sign in message. There are two differe
 - Blue CTA button *Sign in to start your application*
 - Link to fill out the application without signing in. (For all online applications except for Disability Compensation)
 
-![how-to-apply_unauth-message](/images/benefit-apps-unauth-message.png)
+![how-to-apply_unauth-message]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/unauth-message.png)
 
 **Message when a user is signed in:**
 - Lets applicant know they are signed in and can save their work as they go
 - [Primary action link]({{ site.baseurl }}/components/link/action#primary) 
 
-![how-to-apply_unauth-message](/images/benefit-apps-action-link.png)
+![how-to-apply_unauth-message]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/action-link.png)
 
 ### Subway map
 [Subway or process map]({{ site.baseurl }}/components/process-list) shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.
@@ -247,7 +247,7 @@ Depending on the type of benefit, an [alert]({{ site.baseurl }}/components/alert
 
 This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.  
 
-![apply-now-alert-box](/images/apply-now-alert-box.png)
+![apply-now-alert-box]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/apply-now-alert-box.png)
 
 ### Live page examples
 [File for disability compensation introduction page](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)<br>
@@ -274,15 +274,15 @@ This section appears as card or [gray alert]({{ site.baseurl }}/components/alert
 
 **Health care:** 
 
-![after-you-apply-health-care](/images/after-you-apply-health-care-decision.png)
+![after-you-apply-health-care]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-health-care-decision.png)
 
 **Education:** 
 
-![after-you-apply-edu](/images/after-you-apply-edu-decision.png)
+![after-you-apply-edu]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-edu-decision.png)
 
 **Disability compensation:** 
 
-![after-you-apply-disability](/images/after-you-apply-disability-decision.png)
+![after-you-apply-disability]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-disability-decision.png)
 
 
 ### Optional: Other components on the "After you apply" page
@@ -294,7 +294,7 @@ Below is a list of optional components that appear on the "After you apply" page
 [View the subway map component]({{ site.baseurl }}/components/process-list).
 
 **Health care:**
-![after-you-apply-subway-map](/images/after-you-apply-subway-map.png)
+![after-you-apply-subway-map]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-subway-map.png)
 
 ### Accordions
 
@@ -302,7 +302,7 @@ Below is a list of optional components that appear on the "After you apply" page
 
 **Health care:**
 
-![after-you-apply-accordions](/images/after-you-apply-accordions.png)
+![after-you-apply-accordions]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-accordions.png)
 
 ### Call-to-action button or action link
 
@@ -315,4 +315,4 @@ Use a button for a clickable action on the page. Use the action link if you are 
 
 **Disability compensation:**
 
-![after-you-apply-cta-button](/images/after-you-apply-cta-button.png)
+![after-you-apply-cta-button]({{ site.baseurl }}/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-cta-button.png)
