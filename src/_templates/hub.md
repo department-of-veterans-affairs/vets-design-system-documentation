@@ -22,10 +22,10 @@ A hub page page does the following:
 
 ## Example
 
-![Image of va.gov housing assistance hub page]({{site.baseurl}}/images/hub-housing assistance.png)
+![Image of va.gov housing assistance hub page]({{site.baseurl}}/images/templates/hub/housing-assistance.png)
 
 The hub page pattern can be broken down into an ordered set of components:
-![Image of va.gov housing assistance hub page]({{site.baseurl}}/images/hub-housing assistance markup.png)
+![Image of va.gov housing assistance hub page]({{site.baseurl}}/images/templates/hub/housing-assistance-markup.png)
 
 ## Hierarchy
 

@@ -20,9 +20,9 @@ anchors:
 
 ## Examples
 
-![applicant information important numbers template]({{site.baseurl}}/images/Applicant-info-important-numbers.png) 
+![applicant information important numbers template]({{site.baseurl}}/images/patterns/ask-users-for/social-security-number/important-numbers.png) 
 
-![social security number masked]({{site.baseurl}}/images/ssn-masked-update.png) 
+![social security number masked]({{site.baseurl}}/images/patterns/ask-users-for/social-security-number/ssn-masked-update.png) 
 
 ## How to design and build 
 

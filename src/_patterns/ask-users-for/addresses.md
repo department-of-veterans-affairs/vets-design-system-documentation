@@ -21,14 +21,14 @@ anchors:
 ## Examples
 
 ### Single address
-![contact information single address template]({{site.baseurl}}/images/Address.png)
+![contact information single address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/single-address.png)
 
 ### Mailing address
-![contact information mailing address template]({{site.baseurl}}/images/Mailing-address.png)
+![contact information mailing address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/mailing-address.png)
 
 ### Home address
 
-![contact information home address template]({{site.baseurl}}/images/Home-address.png)
+![contact information home address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/home-address.png)
 
 ## How to design and build 
 

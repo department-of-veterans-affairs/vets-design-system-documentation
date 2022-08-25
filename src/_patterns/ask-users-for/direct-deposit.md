@@ -21,7 +21,7 @@ anchors:
 
 ## Examples
 
-![Direct deposit input state]({{site.baseurl}}/images/direct_deposit_update.png)
+![Direct deposit input state]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/direct_deposit_update.png)
 
 ### Production example
 
@@ -62,7 +62,7 @@ The bank routing number text input is required for this form pattern. The routin
 The bank account number text input is required for this form pattern. 
 
 #### “I don’t want to use direct deposit” checkbox
-![Direct deposit checkbox]({{site.baseurl}}/images/Direct-deposit-checkbox-small.png)
+![Direct deposit checkbox]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/Direct-deposit-checkbox-small.png)
 
 Underneath the direct deposit  input card, give the Veteran the option to not give their direct deposit information. When the checkbox is checked, the direct deposit input card above will disappear. 
 
@@ -85,7 +85,7 @@ Note: The Department of the Treasury requires us to make electronic payments. If
 
 ## How to design and build - Review
 
-![Direct deposit review state]({{site.baseurl}}/images/Direct-deposit-review-state-small.png)
+![Direct deposit review state]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/Direct-deposit-review-state-small.png)
 
 
 #### Bank account information card

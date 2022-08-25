@@ -22,7 +22,7 @@ anchors:
 
 ## Examples
 
-{% include component-example.html alt="About VA health benefits page screenshot with call-outs." file="/images/patterns/feedback/feedback-anatomy.png" caption="Page anatomy showing the placement for the feedback button." width="50%" %}
+{% include component-example.html alt="About VA health benefits page screenshot with call-outs." file="/images/patterns/ask-users-for/feedback/feedback-anatomy.png" caption="Page anatomy showing the placement for the feedback button." width="50%" %}
 
 1. **Main Content**. Content, including any left or right rail sections, within the main content of the page between the header and footer, but above the Back to Top/Last Updated/Feedback section.
 2. **Back to Top Button**. Button that scrolls the user back to the top of the page when clicked. This button does not appear on all VA.gov pages.
@@ -31,7 +31,7 @@ anchors:
 
 ### Feedback form in modal
 
-{% include component-example.html alt="The Medallia feedback form." file="/images/patterns/feedback/feedback-form.png" caption="A 3 question form which appears in a modal after a user clicks the Feedback button and quickly allows the user to provide feedback." width="50%" %}
+{% include component-example.html alt="The Medallia feedback form." file="/images/patterns/ask-users-for/feedback/feedback-form.png" caption="A 3 question form which appears in a modal after a user clicks the Feedback button and quickly allows the user to provide feedback." width="50%" %}
 
 ## How to design and build 
 
@@ -68,7 +68,7 @@ To better establish user expectations of location, appropriate space will be pro
         Manage your VA debt – Desktop
       </a>
     </h5>
-    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width page." file="/images/patterns/feedback/feedback-example-desktop-1.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a page." %}
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width page." file="/images/patterns/ask-users-for/feedback/feedback-example-desktop-1.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a page." %}
   </div>
   <div class="usa-width-one-half">
     <h5>
@@ -76,7 +76,7 @@ To better establish user expectations of location, appropriate space will be pro
       All articles in: VA account and profile – Desktop
       </a>
     </h5>
-    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width search page." file="/images/patterns/feedback/feedback-example-desktop-2.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a search results page." %}
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width search page." file="/images/patterns/ask-users-for/feedback/feedback-example-desktop-2.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a search results page." %}
   </div>
 </div>
 
@@ -90,7 +90,7 @@ To better establish user expectations of location, appropriate space will be pro
         Manage your VA debt – Mobile
       </a>
     </h5>
-    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a mobile width page." file="/images/patterns/feedback/feedback-example-mobile-1.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a page in a mobile viewport." %}
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a mobile width page." file="/images/patterns/ask-users-for/feedback/feedback-example-mobile-1.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a page in a mobile viewport." %}
   </div>
   <div class="usa-width-one-half">
     <h5>
@@ -98,7 +98,7 @@ To better establish user expectations of location, appropriate space will be pro
       All articles in: VA account and profile – Mobile
       </a>
     </h5>
-    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width search page." file="/images/patterns/feedback/feedback-example-mobile-2.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a search results page in a mobile viewport." %}
+    {% include component-example.html alt="The Medallia feedback button shown on a snippet of a desktop width search page." file="/images/patterns/ask-users-for/feedback/feedback-example-mobile-2.png" caption="An example of the placement of the feedback button at the bottom of a snippet of a search results page in a mobile viewport." %}
   </div>
 </div>
 

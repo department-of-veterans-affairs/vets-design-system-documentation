@@ -28,25 +28,25 @@ Use the [Memorable date]({{ site.baseurl }}/components/form/memorable-date) comp
 
 You can also use the standard [date]({{ site.baseurl }}/components/form/date) component:
 
-![date input for memorized dates: month day and year]({{site.baseurl}}/images/date-input.png) 
+![date input for memorized dates: month day and year]({{site.baseurl}}/images/patterns/ask-users-for/dates/date-input.png) 
 
 #### Date of birth
 
 Follow this pattern whenever you need to ask for a user’s date and place of birth. 
 
-![applicant information birth information template]({{site.baseurl}}/images/Applicant-info-birth-info.png) 
+![applicant information birth information template]({{site.baseurl}}/images/patterns/ask-users-for/dates/birth-info.png) 
 
 ### Dates a user can approximate
 
 Use the [month/year date]({{ site.baseurl }}/components/form/date-input#monthyear) component variation for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
 
-![date input for approximate dates: month and year]({{site.baseurl}}/images/date-input-month-year.png) 
+![date input for approximate dates: month and year]({{site.baseurl}}/images/patterns/ask-users-for/dates/date-input-month-year.png) 
  
 ### Date ranges
 
 Use one of the aforementioned components depending on the question being asked. For example: Service history dates.
 
-![date ranges: service start date and service end date]({{site.baseurl}}/images/date-ranges.png) 
+![date ranges: service start date and service end date]({{site.baseurl}}/images/patterns/ask-users-for/dates/date-ranges.png) 
 
 ## How to design and build 
 

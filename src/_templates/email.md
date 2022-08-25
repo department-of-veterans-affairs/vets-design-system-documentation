@@ -11,7 +11,7 @@ anchors:
 
 ## Example
 
-![email template]({{site.baseurl}}/images/email-template.png)
+![email template]({{site.baseurl}}/images/templates/email/email-template.png)
 
 ## Guidance
 

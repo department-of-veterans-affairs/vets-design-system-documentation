@@ -20,7 +20,7 @@ anchors:
  
 ## Examples
 
-![contact information email address template]({{site.baseurl}}/images/contact-info-email-address.png)
+![contact information email address template]({{site.baseurl}}/images/patterns/ask-users-for/email-address/email-address.png)
 
 ## How to design and build 
 

@@ -21,7 +21,7 @@ anchors:
 
 ## Examples
 
-![applicant information gender template]({{site.baseurl}}/images/Applicant-info-gender.png) 
+![applicant information gender template]({{site.baseurl}}/images/patterns/ask-users-for/gender/gender.png)
 
 ## How to design and build 
 

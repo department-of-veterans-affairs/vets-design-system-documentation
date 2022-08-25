@@ -19,7 +19,7 @@ anchors:
  
 ## Examples
 
-![contact information method of contact template]({{site.baseurl}}/images/contact-info-method-of-contact.png)
+![contact information method of contact template]({{site.baseurl}}/images/patterns/ask-users-for/contact-preferences/method-of-contact.png)
 
 ## How to design and build 
 

@@ -42,9 +42,9 @@ anchors:
 - Character of service -- this can also be Character of discharge -- text input (if applicable) 
 - ‘Add another service period’ secondary button
 
-![pension-serviceperiods-1]({{site.baseurl}}/images/list-and-loop.png)
+![pension-serviceperiods-1]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop.png)
 
-![pension-serviceperiods-2]({{site.baseurl}}/images/list-and-loop3.png)
+![pension-serviceperiods-2]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop3.png)
 
 ## Usage - Service under another name
 
@@ -61,7 +61,7 @@ Follow this pattern whenever you need to ask a user if they served under another
   - ‘Add another name’ secondary button
 - ‘Place of last or anticipated separation from service’ text input
 
-![service under another name]({{site.baseurl}}/images/service-name.png)
+![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.png)
 
 ## Usage - Reserves and National Guard and Federal Orders
 
@@ -72,7 +72,7 @@ Follow this pattern whenever you need to ask for a user’s Reserve or National 
 - Obligation end date input
 - Unit name text input
 
-![reserves and national guard disability form structure]({{site.baseurl}}/images/reserves-disability.png)
+![reserves and national guard disability form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-disability.png)
 
 ### Structure - Reserves and National Guard Pension
 
@@ -83,7 +83,7 @@ Follow this pattern whenever you need to ask for a user’s Reserve or National 
   - Unit phone number (if applicable)
   - Service start date input
 
-![reserves and national guard pension form structure]({{site.baseurl}}/images/reserve-pension.png)
+![reserves and national guard pension form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserve-pension.png)
 
 ### Structure - Federal Orders Disability
 
@@ -92,7 +92,7 @@ Follow this pattern whenever you need to ask for a user’s Reserve or National 
   - Activation start date input
   - Expected separation date input (This could also be Anticipated separation date)
 
-![federal orders]({{site.baseurl}}/images/federal-orders.png)
+![federal orders]({{site.baseurl}}/images/patterns/ask-users-for/service-history/federal-orders.png)
 
 ## Usage - Prisoner of War (POW)
 
@@ -113,5 +113,5 @@ Follow this pattern whenever you need to ask for a user’s POW information. For
   - ‘Pay type’ radio buttons
   - ‘Amount’ number input
 
-![prisoner of war and severance pay]({{site.baseurl}}/images/pow-status.png)
+![prisoner of war and severance pay]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.png)
 

@@ -15,7 +15,7 @@ Our current confirmation pages vary in format and content. Below are some of the
 
 ## Example
 
-![form confirmation template]({{site.baseurl}}/images/Form-confirmation-mini-template.png) 
+![form confirmation template]({{site.baseurl}}/images/templates/forms/confirmation/mini-template.png) 
 
 The form confirmation page consists of:
 
@@ -39,7 +39,7 @@ File for disability compensation (Form 21-526EZ)
 
 ### Success alert 
 
-![success alert]({{ site.baseurl }}/images/success-alert.png) 
+![success alert]({{ site.baseurl }}/images/templates/forms/confirmation/success-alert.png) 
 
 Use a [success alert]({{ site.baseurl }}/components/alert#success-alert) to let your user know that they’ve successfully submitted their form. Content for the success alert will depend on the form.
 
@@ -50,7 +50,7 @@ Once we’ve reviewed your application, a Caregiver Support Coordinator will con
 
 ### Print this page pattern 
 
-![print this page pattern]({{site.baseurl}}/images/print-this-page.png) 
+![print this page pattern]({{site.baseurl}}/images/templates/forms/confirmation/print-this-page.png) 
 
 The print this page pattern consists of the [Featured content component]({{ site.baseurl }}/components/featured-content), content, and a “Print this page” [default blue button]({{ site.baseurl }}/components/button). 
 
@@ -76,13 +76,13 @@ Some examples of other content or questions are:
  
 ### Action link
 
-![confirmation page action link]({{site.baseurl}}/images/confirmation-page-action-link.png) 
+![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/action-link.png) 
 
  The [action link]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage. 
 
 ### Helpful content
 
-![need help content]({{site.baseurl}}/images/need-help.png) 
+![need help content]({{site.baseurl}}/images/templates/forms/confirmation/need-help.png) 
 
 Helpful content will vary depending on the form. Use the H3 highlight for the title and always label it “Need help?”. The content usually points the user to a number they can call if they need help with their form. 
 

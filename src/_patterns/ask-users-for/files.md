@@ -35,7 +35,7 @@ Here is the structure for asking a user to upload a file:
 
 **Note:** This content will vary depending on what you’re asking the user to upload. Work with your content specialist with how to ask for certain documents.
 
-![file upload input state]({{site.baseurl}}/images/file-upload-input.png)
+![file upload input state]({{site.baseurl}}/images/patterns/ask-users-for/files/file-upload-input.png)
 
 ### How this pattern works
 
@@ -47,13 +47,13 @@ Here is the structure for asking a user to upload a file:
 
 The upload button will be replaced by a gray card with a [standard progress bar component]({{ site.baseurl }}/components/progress-bar) to indicate the progress of the document upload. The user will see the name of the file, as well as, have the option to cancel the upload. 
 
-![file upload loading state]({{site.baseurl}}/images/file-upload-loading.png)
+![file upload loading state]({{site.baseurl}}/images/patterns/ask-users-for/files/file-upload-loading.png)
 
 #### Review state 
 
 When a document has successfully uploaded, the card will have the uploaded file name bolded and there will be an option to delete the file. Depending on the type of form, there can be a dropdown of selecting document types. Underneath the card there will be a secondary button to give the user the option of adding more document uploads. 
 
-![file upload review state]({{site.baseurl}}/images/file-upload-review.png)
+![file upload review state]({{site.baseurl}}/images/patterns/ask-users-for/files/file-upload-review.png)
 
 ## Content considerations
 

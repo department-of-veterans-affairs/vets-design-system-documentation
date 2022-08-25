@@ -27,7 +27,7 @@ You should not create any new instances of the Wizard pattern and should instead
 
 ## Examples
 
-![gif demonstrating a form wizard for VA Education]({{site.baseurl}}/images/Wizard-Education-normal.gif)
+![gif demonstrating a form wizard for VA Education]({{site.baseurl}}/images/patterns/wizard/Wizard-Education-normal.gif)
 
 
 - **Education Wizard:** [Find your benefits education form](<https://www.va.gov/education/how-to-apply/>) ([code](https://github.com/department-of-veterans-affairs/vets-website/tree/master/src/applications/gi)). _You may need to scroll down to find the wizard._ This wizard is used to help guide users to the correct education benefits form.
@@ -49,17 +49,17 @@ The wizard should live *on the page* on both the **Eligibility** and **How to Ap
 - **Questions**: Questions appear one at a time under the button, using an expanding blue vertical left bar as new questions are added. Questions are conditional, based on previous answers. Structure the logic tree for wizard questions to get users to gather information from users in as few questions as possible, while still directing them to the best next step for their circumstances.
 
 - **Warning alerts in the wizard.** Show a [warning alert]({{ site.baseurl }}/components/alert#warning-alert) if a user answers a question in a way that is uncommon, or if they need to first do some other process that cannot be accessed via the wizard. For example, in the Education Form wizard, Show the Warning Alert immediately after the question, and provide concrete next steps and directions.  
-![gif demonstrating a form wizard for VA Education featuring a users that answers a specific question that triggers a warning]({{site.baseurl}}/images/Wizard-Education-warning.gif)
+![gif demonstrating a form wizard for VA Education featuring a users that answers a specific question that triggers a warning]({{site.baseurl}}/images/patterns/wizard/Wizard-Education-warning.gif)
 
 - **Error alerts in the wizard**. Show an [error alert]({{ site.baseurl }}/components/alert#error-alert) if a user answers a question in a way that would render them ineligible to complete any of the forms serviced by the wizard. Instead, they may need to stop what they are doing and follow a different process on a different page or website. For example, in the Disability Claim wizard (shown below), a user who is still active duty needs to complete a completely different form on EBenefits, and completing an application on VA.gov would be a waste of time. Show the Error Alert immediately after the question, and provide concrete next steps and directions.
 
-  ![screenshot of wizard with an error]({{site.baseurl}}/images/wizard-with-error.png)
+  ![screenshot of wizard with an error]({{site.baseurl}}/images/patterns/wizard/wizard-with-error.png)
 
 - **Editable answers**: Users can scroll up to see all of their previous answers and make changes at any time. If a user makes a change to the answer to an earlier question, hide all previous answers and show only the next appropriate question in the series, based on the user's answer.
 
 Note: For both alert cases, a user can still change their answer in the wizard to access and complete the form. We do not block users from accessing a form completely based on their answers to the wizard questions because there is always an edge case. Theoretically, we want to make the BEST thing they can do the EASIEST thing to do, based on the information the user has provided. So, if we hypothesize that they are ineligible based on how they answered the wizard questions, we should be making the easiest next step to do the next best thing that they can do.
 
-![gif demonstrating a form wizard for VA Disability]({{site.baseurl}}/images/Wizard-Disability.gif)
+![gif demonstrating a form wizard for VA Disability]({{site.baseurl}}/images/patterns/wizard/Wizard-Disability.gif)
 
 ## Research and Accessibility rationale
 - We show questions one at a time for accessibility/universal design reasons: we try not to show irrelevant content to users.

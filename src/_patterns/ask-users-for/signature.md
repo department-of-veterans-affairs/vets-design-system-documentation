@@ -20,7 +20,7 @@ anchors:
 
 ## Examples
 
-![form signature pattern]({{site.baseurl}}/images/form-signature.png)
+![form signature pattern]({{site.baseurl}}/images/patterns/ask-users-for/form-signature.png)
 
 ## How to design and build 
 

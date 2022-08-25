@@ -20,11 +20,11 @@ When users sign in, the Sign In button is replaced by a link displays the user's
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
-    <a href="/images/pattern-header-signed-out.png"><img src="/images/pattern-header-signed-out.png" alt="signed out header on desktop"/></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/header-signed-out.png"><img src="{{ site.baseurl }}/images/templates/auth/header-signed-out.png" alt="signed out header on desktop"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
-    <a href="/images/pattern-header-signed-in.png"><img src="/images/pattern-header-signed-in.png" alt="signed in header on desktop"></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/header-signed-in.png"><img src="{{ site.baseurl }}/images/templates/auth/header-signed-in.png" alt="signed in header on desktop"></a>
   </div>
 </div>
 
@@ -35,11 +35,11 @@ When users are signed into the site on a smaller device, the Sign In link is rep
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
-    <a href="/images/pattern-small-header-signed-out.png"><img src="/images/pattern-small-header-signed-out.png" alt="signed out view of mobile header"/></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/small-header-signed-out.png"><img src="{{ site.baseurl }}/images/templates/auth/small-header-signed-out.png" alt="signed out view of mobile header"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
-    <a href="/images/pattern-small-header-signed-in.png"><img src="/images/pattern-small-header-signed-in.png" alt="Signed in view of mobile header"></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/small-header-signed-in.png"><img src="{{ site.baseurl }}/images/templates/auth/small-header-signed-in.png" alt="Signed in view of mobile header"></a>
   </div>
 </div>
 
@@ -48,11 +48,11 @@ When users are signed in and have opened the menu, **My VA** and **My Health** a
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
-    <a href="/images/pattern-small-menu-open-signed-out.png"><img src="/images/pattern-small-menu-open-signed-out.png" alt="screenshot of menu open when signed out"/></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-out.png"><img src="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-out.png" alt="screenshot of menu open when signed out"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
-    <a href="/images/pattern-small-menu-open-signed-in.png"><img src="/images/pattern-small-menu-open-signed-in.png" alt="screenshot of menu open when signed in"></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-in.png"><img src="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-in.png" alt="screenshot of menu open when signed in"></a>
   </div>
 </div>
 
@@ -82,11 +82,11 @@ Use the green alert component when the user is required to do something before t
 <div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
-    <a href="/images/pattern-cta-sign-in-create-account.png"><img src="/images/pattern-cta-sign-in-create-account.png" alt="create account screenshot"/></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/cta-sign-in-create-account.png"><img src="{{ site.baseurl }}/images/templates/auth/cta-sign-in-create-account.png" alt="create account screenshot"/></a>
   </div>
   <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
-    <a href="/images/pattern-cta-verify-identity.png"><img src="/images/pattern-cta-verify-identity.png" alt="verify identity screen shot"></a>
+    <a href="{{ site.baseurl }}/images/templates/auth/cta-verify-identity.png"><img src="{{ site.baseurl }}/images/templates/auth/cta-verify-identity.png" alt="verify identity screen shot"></a>
   </div>
 </div>
 
@@ -94,12 +94,12 @@ Use the green alert component when the user is required to do something before t
 
 Use the blue informational alert component when the call to action is beneficial, but not required to proceed. Usually, it is a better experience when the user is signed in, so the prompting the user to sign in first is the primary action.
 
-![call to action screenshot](/images/pattern-cta-sign-in.png)
+![call to action screenshot]({{ site.baseurl }}/images/templates/auth/cta-sign-in.png)
 
 #### Error
 
 Use a red alert component when the user is blocked from continuing a process. Always offer at least one way for the user to resolve the error.
 
-![verify identity error](/images/pattern-verify-identity-error.png)
+![verify identity error]({{ site.baseurl }}/images/templates/auth/verify-identity-error.png)
 
 

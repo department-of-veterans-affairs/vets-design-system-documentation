@@ -14,7 +14,7 @@ sub-pages:
 
 ## The structure of a form
 
-{% include component-example.html alt="Representative pages of a form flow for VA.gov." file="/images/patterns/forms/flow.png" caption="The anatomy of a form flow." %}
+{% include component-example.html alt="Representative pages of a form flow for VA.gov." file="/images/templates/forms/flow.png" caption="The anatomy of a form flow." %}
 
 1. **[Content landing page](#content-landing-page).** A page built in Drupal that outlines eligibility requirements and/or how to apply. Also, provides information about the benefit. 
 1. **[Introduction page](#introduction-page).** Includes a call-to-action to login if relevant and a subway map / timeline of what the user can expect when filling out the form.

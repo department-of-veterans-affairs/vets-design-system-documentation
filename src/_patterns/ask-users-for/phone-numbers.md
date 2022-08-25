@@ -20,7 +20,7 @@ anchors:
  
 ## Examples
 
-![contact information phone number template]({{site.baseurl}}/images/contact-info-phone-number.png)
+![contact information phone number template]({{site.baseurl}}/images/patterns/ask-users-for/phone-numbers/phone-numbers.png)
 
 ## How to design and build 
 

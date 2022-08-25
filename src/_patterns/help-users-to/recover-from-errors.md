@@ -21,7 +21,7 @@ anchors:
 
 Every error message will have **up to** 3 parts:
 
-{% include component-example.html alt="Structure of an Alert." file="/images/patterns/error-messages/diagram.png" caption="The 3 parts of every error message: Title, description, call-to-action button or action link." reverse=true width="75%" %}
+{% include component-example.html alt="Structure of an Alert." file="/images/patterns/help-users-to/recover-from-errors/diagram.png" caption="The 3 parts of every error message: Title, description, call-to-action button or action link." reverse=true width="75%" %}
 
 ### 1.Title
 
@@ -93,7 +93,7 @@ Create a brief title documenting the task that was successfully completed, follo
 
 #### Saved
 
-{% include component-example.html alt="Success alert for saving." file="/images/patterns/error-messages/saved-001.png" caption="We saved the information you've entered so far." reverse=true width="50%" %}
+{% include component-example.html alt="Success alert for saving." file="/images/patterns/help-users-to/recover-from-errors/saved-001.png" caption="We saved the information you've entered so far." reverse=true width="50%" %}
 
 ### Error alerts 
 
@@ -101,13 +101,13 @@ Include exactly what failed in the title, followed by a brief apology, reiterati
 
 #### Your form didn't save
 
-{% include component-example.html alt="Error alert for form didn't save." file="/images/patterns/error-messages/saved-error-002.png" caption="We're sorry. We couldn't save your form. Please try again." width="50%" %}
+{% include component-example.html alt="Error alert for form didn't save." file="/images/patterns/help-users-to/recover-from-errors/saved-error-002.png" caption="We're sorry. We couldn't save your form. Please try again." width="50%" %}
 
 Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included. 
 
 #### Please save this application and try again
 
-{% include component-example.html alt="Error alert for please save and try again." file="/images/patterns/error-messages/saved-error-003.png" caption="We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow." width="50%" %}
+{% include component-example.html alt="Error alert for please save and try again." file="/images/patterns/help-users-to/recover-from-errors/saved-error-003.png" caption="We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow." width="50%" %}
 
 ### Informational messages and warnings
 
@@ -119,11 +119,11 @@ This information should be presented as succinctly as possible in the title and 
 
 #### Informational example
    
-{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/down-004.png" caption="We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon." reverse=true width="75%" %}
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/help-users-to/recover-from-errors/down-004.png" caption="We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon." reverse=true width="75%" %}
 
 #### Warning example 
    
-{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/warning-005.png" caption="We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon." reverse=true width="75%" %}
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/help-users-to/recover-from-errors/warning-005.png" caption="We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon." reverse=true width="75%" %}
 
 ### 2. Does the user need to take action, or do we want the user to take action?
 
@@ -131,13 +131,13 @@ When action is required, frame required information as a need.
    
 #### We need your help to finish reviewing your claim
    
-{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/continue-006.png" caption="We need you to provide more evidence (supporting documents) so we can finish reviewing your claim." reverse=true width="50%" %}
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/help-users-to/recover-from-errors/continue-006.png" caption="We need you to provide more evidence (supporting documents) so we can finish reviewing your claim." reverse=true width="50%" %}
    
 When we want to prompt the user to take action, frame the prompt as a question to engage the user. 
    
 #### Want to make your VA.gov account more secure?
    
-{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/error-messages/secure-007.png" caption="You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password." reverse=true width="50%" %}
+{% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/help-users-to/recover-from-errors/secure-007.png" caption="You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password." reverse=true width="50%" %}
   
 ## Messages dictionary
 

@@ -22,7 +22,7 @@ anchors:
 
 ## Examples
 
-![applicant information name template]({{site.baseurl}}/images/Applicant-info-name.png)
+![applicant information name template]({{site.baseurl}}/images/patterns/ask-users-for/names/names.png)
 
 ## How to design and build 
 
