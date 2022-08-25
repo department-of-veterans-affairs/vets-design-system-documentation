@@ -69,7 +69,7 @@ The HTML for a typical error is:
 </span>
 ```
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/messaging-error-messages">Review the error messages pattern</a>
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors">Review the help users to recover from errors pattern</a>
 
 ## Hint text
 

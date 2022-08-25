@@ -28,7 +28,7 @@ The sub-task pattern provides guidance on how to "keep it simple". This pattern 
 
 All of the use cases below are valid uses for this pattern.
 
-* **Task before a flow.** Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. Use this pattern to guide users down an optimal pathway for their circumstances. This is also known as [branching eligibility choices]({{ site.baseurl }}/patterns/benefit-applications#f-optional-sub-task-pattern-for-branching-eligibility-choices).
+* **Task before a flow.** Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. Use this pattern to guide users down an optimal pathway for their circumstances. This is also known as [branching eligibility choices]({{ site.baseurl }}/patterns/help-users-to/navigate-benefit-applications#f-optional-help-users-to-complete-a-sub-task-pattern-for-branching-eligibility-choices).
 * **Task within a flow.** Use this pattern when we need the user to complete a shorter task, one that can be accomplished with a few questions, within a larger process that may span touchpoints.
 
 #### Design principles
@@ -44,7 +44,7 @@ That one decision or question may require more than one input from the user as t
 
 ### When not to use this pattern
 
-* **In place of a standard form flow.** This pattern does not replace a standard form flow and layout. This pattern exists within a larger flow or process, not by itself. Thus it would be inappropriate to create a stand-alone form flow that does not have a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented), [Button pair]({{ site.baseurl }}/components/button/button-pair), and other components found in a typical [form flow]({{ site.baseurl }}/patterns/forms/#the-structure-of-a-form).
+* **In place of a standard form flow.** This pattern does not replace a standard form flow and layout. This pattern exists within a larger flow or process, not by itself. Thus it would be inappropriate to create a stand-alone form flow that does not have a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented), [Button pair]({{ site.baseurl }}/components/button/button-pair), and other components found in a typical [form flow]({{ site.baseurl }}/templates/forms/#the-structure-of-a-form).
 
 ### When to use caution
 
@@ -54,14 +54,14 @@ That one decision or question may require more than one input from the user as t
 
 ### Pre-check-in experience
 
-{% include component-example.html alt="Check-in experience sub-task example." file="/images/patterns/forms/sub-task/Check-in-sub-task.png" caption="Pre-check-in sub-task." %}
+{% include component-example.html alt="Check-in experience sub-task example." file="/images/patterns/help-users-to/complete-a-sub-task/Check-in-sub-task.png" caption="Pre-check-in sub-task." %}
 
 * An example of a task that helps determine if current information on file for a Veteran is correct before checking in at a facility. This example shows the success path.
 * Note that this example features a [Button pair]({{ site.baseurl }}/components/button/button-pair) for Yes/no which has some [accessibility considerations](#accessibility-considerations).
 
 ### VA Online Scheduling (VAOS) Vaccine sub-task
 
-{% include component-example.html alt="VA Online Scheduling sub-task example." file="/images/patterns/forms/sub-task/VAOS-vaccine-sub-task.png" caption="VA Online Scheduling vaccine sub-task." %}
+{% include component-example.html alt="VA Online Scheduling sub-task example." file="/images/patterns/help-users-to/complete-a-sub-task/VAOS-vaccine-sub-task.png" caption="VA Online Scheduling vaccine sub-task." %}
 
 * An example of a short task within a larger process, the questions related to vaccination status are a sub-task that results in either the user moving forward in the process or reaching a stopping point. This is sometimes also referred to as a "screener question", in that it screens out users from continuing along the larger process. 
 * Step 4 in this sub-task shows an example of an [end point](#define-clear-end-points).

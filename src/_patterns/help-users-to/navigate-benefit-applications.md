@@ -84,10 +84,10 @@ When time sensitive content about a benefit — such as a new benefit being made
 
 A brief heading should precede and call attention to the sub-task link or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.
 
-If your page uses a [sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task), use a [secondary action link]({{ site.baseurl }}/components/link/action#secondary). If the page does not have a sub-task pattern and you want to direct your user to the application flow, use a [primary action link]({{ site.baseurl }}/components/link/action#primary). This action link is a visually prominent link that will bring the user to another page. 
+If your page uses the [Help users to complete a sub-task pattern]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task), use a [secondary action link]({{ site.baseurl }}/components/link/action#secondary). If the page does not have a help users to complete a sub-task pattern and you want to direct your user to the application flow, use a [primary action link]({{ site.baseurl }}/components/link/action#primary). This action link is a visually prominent link that will bring the user to another page. 
 
 Having an action link on the page helps the user follow the most logical path. 
-Note: Avoid putting more than one action link on the page. If you have a page that requires multiple benefit form links, use the [sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task) to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
+Note: Avoid putting more than one action link on the page. If you have a page that requires multiple benefit form links, use the [pattern for helping users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).
 
 The action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.
 
@@ -95,9 +95,9 @@ The action link can be followed by item 6, Additional Benefit-Eligibility-Specif
 
 Screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as an action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information, that may be important to that call to action, could exist beyond that call to action. Therefore, please be mindful about placing important content below the key call to action.
 
-#### F. Optional: Sub-task pattern for branching eligibility choices
+#### F. Optional: Help users to complete a sub-task pattern for branching eligibility choices
 
-In the case where there are multiple benefit options, the [Sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task) allows a user to branch into the appropriate benefit application from the eligibility page.
+In the case where there are multiple benefit options, the [pattern for helping users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) allows a user to branch into the appropriate benefit application from the eligibility page.
 
 The text of the action link should represent the job the sub-task is performing, such as "Find your education benefits form".
 
@@ -130,12 +130,12 @@ The introduction describes what the page is about. For the “How to apply” pa
 * SEO keywords (See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo).)
 
 ### Preparing to apply (informational callout)
-On the “How to apply” page, use the [informational callout]({{ site.baseurl }}/patterns/content-presentation) box to present chunked, scannable snippets of critical information needed by the majority of applicants. For example,
+On the “How to apply” page, use the [featured content]({{ site.baseurl }}/components/featured-content) component to present chunked, scannable snippets of critical information needed by the majority of applicants to apply. For example,
 
 * Describe what a user needs to do before they begin the application
 * List items needed to complete the application (SSN, military history, etc.). Required items should be called out.
 
-Note: The blue [informational callout]({{ site.baseurl }}/patterns/content-presentation) box should only be used for the most important information on the page. Since it includes critical information, the callout should appear near the top of the page.
+Note: The [featured content]({{ site.baseurl }}/components/featured-content) component should only be used for the most important information on the page. Since it includes critical information, featured content should appear near the top of the page.
 
 ### How do I apply?
 The “How do I apply" section lists possible application methods. It should emphasize the optimal path for Veterans, (which may be how to get help from a human instead of online help.) Some common application methods are:
@@ -198,7 +198,7 @@ At the top of the introduction page, is a sign in message. There are two differe
 
 **Message when a user is signed in:**
 - Lets applicant know they are signed in and can save their work as they go
-- Primary (green) action link 
+- [Primary action link]({{ site.baseurl }}/components/link/action#primary) 
 
 ![how-to-apply_unauth-message](/images/benefit-apps-action-link.png)
 

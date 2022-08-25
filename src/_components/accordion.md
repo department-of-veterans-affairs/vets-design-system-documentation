@@ -74,4 +74,3 @@ anchors:
 ## Related
 
 * [Additional info]({{ site.baseurl }}/components/additional-info)
-* [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content)

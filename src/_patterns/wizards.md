@@ -14,9 +14,9 @@ anchors:
 
 ## Status 
 
-The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and replaced by the the [Sub-task pattern]({{ site.baseurl }}/patterns/forms/sub-task). 
+The [Wizard pattern is now deprecated](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/399) and replaced by the the [help users complete a sub-task pattern]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task). 
 
-You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you. You may attempt to [retrofit an existing instance of the Wizard pattern](#retrofit-this-pattern) until the Sub-task pattern is more widely in use.
+You should not create any new instances of the Wizard pattern and should instead speak with the Design System Council or CollabCycle team who can direct you. You may attempt to [retrofit an existing instance of the Wizard pattern](#retrofit-this-pattern) until the help users to complete a sub-task pattern is more widely in use.
 
 ## Purpose
 
@@ -40,7 +40,7 @@ You should not create any new instances of the Wizard pattern and should instead
 
 ## Where to place wizards
 
-The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content]({{ site.baseurl }}/components/featured-content) eligibility boxes but before [accordions]({{ site.baseurl }}/patterns/content-presentation#accordions) or additional information.
+The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content]({{ site.baseurl }}/components/featured-content) eligibility boxes but before [accordions]({{ site.baseurl }}/component/accordion) or [additional information]({{ site.baseurl }}/components/additional-info).
 
 ## Specifics of the pattern
 

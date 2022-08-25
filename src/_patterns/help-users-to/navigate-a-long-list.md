@@ -31,29 +31,31 @@ anchors:
 
 ## Examples
 
-{% include component-example.html alt="Show more options screen example from the VA Online Scheduling application." file="/images/patterns/show-more-options/vaos-choose-location.png" caption="The VA Online Scheduling application uses the Show more options pattern for choosing VA facility locations." width="50%" %}
+{% include component-example.html alt="Show more options screen example from the VA Online Scheduling application." file="/images/patterns/help-users-to/navigate-a-long-list/vaos-choose-location.png" caption="The VA Online Scheduling application uses this pattern for choosing VA facility locations." width="50%" %}
+
+{% include component-example.html alt="Help users to navigate a long list example from the VA Claim Status tool." file="/images/patterns/help-users-to/navigate-a-long-list/claim-status-tool.gif" caption="The VA Claim Status tools uses this pattern for navigating a long list of older updates to a claim." width="75%" %}
 
 ## How to design and build 
 
 ### Anatomy or layout details
 
-{% include component-example.html alt="Show more options mock-up screen examples." file="/images/patterns/show-more-options/interactions.png" caption="The anatomy of the Show more options pattern." %}
+{% include component-example.html alt="Show more options mock-up screen examples." file="/images/patterns/help-users-to/navigate-a-long-list/interactions-v2.png" caption="The anatomy of the help users to navigate a long list pattern." %}
 
 1. **Default state**. A mobile screen of a page in a VA.gov form flow. The form question consists of a list with ten total options. 5 options are displayed. A link underneath reads "+ show 5 more options"
 2. **Default state - sorter**. A dropdown labeled "Sort these options".
 3. **Default state - radio options**. Five generic radio buttons.
-4. **Default state - show more link**. Show more link exists between the options nad the navigation buttons.
+4. **Default state - show more button or link**. Show more button or link exists between the options and the navigation buttons.
 5. **State when all options are showing**. A mobile screen of a page in a VA.gov form flow. Same as the first except 10 radio buttons are showing, and the link is not.
-6.  **State when there are only 5 total options**. A mobile screen of a page in a VA.gov form flow. Same as the first except there is no link to show more options.
+6.  **State when there are only 5 total options**. A mobile screen of a page in a VA.gov form flow. Same as the first except there is no link or button to show more options.
 
 ### How this pattern works
 
 * Given a long list of options, only the first 5 options are displayed. 
-* A link below the options acts as a trigger for revealing additional options.
-  * This link does not appear if there are 5 or less options.
-* Clicking the link displays more options, 5 at a time.
-* Once all options are displayed, the link disappears.
-* Once the additional options are revealed, there is no need and thus no mechanism to hide them.
+* A button or link below the options acts as a trigger for revealing additional options.
+  * This button or link does not appear if there are 5 or less options.
+* Clicking the button or link displays more options, 5 at a time.
+* Once all options are displayed, the button or link disappears, or changes label ("Hide options").
+* Once the additional options are revealed, there may be no need, and thus no mechanism, to hide them.
 
 ### Components used in this pattern
 
@@ -62,6 +64,7 @@ anchors:
 ### Page templates available for this pattern
 
 * This pattern exists in VA Online Scheduling (VAOS) on the facility and provider sections of the "Start scheduling" flow.
+* This pattern also exists in the VA Claim Status tool.
 
 ## Content considerations
 

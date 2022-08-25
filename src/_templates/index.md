@@ -2,17 +2,16 @@
 layout: default
 index: true
 title: Templates
-intro-text: "Templates for specific pages that provide guidance on their layout and use."
+intro-text: "Templates, or page layouts, compose components within a single page. A layout can contain multiple variations of a component depending on the context."
 ---
 
-# Templates
+<h1>{{ page.title }}</h1>
 
-{{ page.intro-text }}
+<div class="va-introtext">
+  {{ page.intro-text }}
+</div>
 
-
-## Related patterns
-
-* [Help users to check answers]({{ site.baseurl }}/patterns/help-users-to/check-answers) 
+{% include components-patterns-templates.md %}
 
 ## Code usage
 
