@@ -3,7 +3,6 @@ name: "DST - Component development"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Development"
 labels: vsp-design-system-team
-assignees: caw310, k80bowman
 
 ---
 

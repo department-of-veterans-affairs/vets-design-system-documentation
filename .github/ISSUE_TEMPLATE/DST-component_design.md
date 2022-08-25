@@ -3,7 +3,7 @@ name: "DST - Component design"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design"
 labels: vsp-design-system-team
-assignees: caw310, GnatalieH
+assignees: GnatalieH
 
 ---
 
