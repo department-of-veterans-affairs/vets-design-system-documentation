@@ -2,17 +2,20 @@
 layout: default
 index: true
 title: Patterns
+intro-text: "Patterns are solutions and researched best practices for solving user-focused tasks and recurring user interface design problems:"
 ---
 
-# Patterns
+<h1>{{ page.title }}</h1>
 
 <div class="va-introtext">
-  Patterns are solutions and researched best practices that solve recurring user interface design problems:
+  {{ page.intro-text }}
 </div>
 
 * How do you build complex, multi-part web forms?
 * How do you provide navigational context?
 * How do you handle progressive disclosure?
+
+All of the patterns in this section show or cite examples from VA.gov and were researched, designed, developed, and tested by teams creating applications on our platform.
 
 {% include components-patterns-templates.md %}
 

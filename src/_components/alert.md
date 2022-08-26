@@ -133,7 +133,7 @@ By default use the standard Alert variation. Use the background-only variation f
 
 <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages">View content for messages</a>
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/messaging-error-messages">Review the error messages pattern</a>
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors">Review the help users to recover from errors pattern</a>
 
 ## Accessibility considerations
 

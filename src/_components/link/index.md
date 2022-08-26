@@ -31,7 +31,7 @@ anchors:
 {% include storybook-preview.html story="components-va-link--active" link_text="active va-link" %}
 
 - For links that have less hierarchy than an Action Link, we recommend using an Active Link. Active Links can be accompanied by a right-facing chevron icon for more emphasis. 
-- Active links can be seen on [Hub pages]({{ site.baseurl }}/patterns/templates/hub#example)
+- Active links can be seen on [Hub pages]({{ site.baseurl }}/templates/hub#example)
 - Active link text is bold.
 
 ### Download

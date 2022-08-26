@@ -39,6 +39,7 @@ markdown: kramdown
 highlighter: none
 plugins:
   - jekyll-last-modified-at
+  - jekyll-redirect-from
 
 source: src
 
@@ -62,6 +63,9 @@ collections:
     output: true
     permalink: /:collection/:title
   patterns:
+    output: true
+    permalink: /:collection/:title
+  templates:
     output: true
     permalink: /:collection/:title
 
