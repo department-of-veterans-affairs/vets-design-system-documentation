@@ -2,6 +2,8 @@
 layout: pattern
 title: Feedback
 permalink: /patterns/ask-users-for/feedback
+redirect_from:
+  - /patterns/feedback
 sub-section: ask-users-for
 intro-text: VA asks users of VA.gov for feedback via a feedback button and form provided by Medallia.
 contributors: Ian McCullough (VSP Contact Center)

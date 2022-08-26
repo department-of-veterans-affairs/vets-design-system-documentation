@@ -1,8 +1,10 @@
 ---
 layout: pattern
 title: Navigate benefit applications
-aka: Benefit applications
 permalink: /patterns/help-users-to/navigate-benefit-applications
+redirect_from:
+  - /patterns/benefit-applications
+aka: Benefit applications
 sub-section: help-users-to
 status: use-deployed
 intro-text: "Users can apply for benefits in any of the benefit hubs on VA.gov. The policies and regulations around these benefits are very complex, and users often have difficulty determining if they are eligible, what they need to provide, and what to expect after they've submitted their application. For these reasons, Benefit applications, as a pattern, is divided into four distinct \"epics\" that help users navigate the process from start to finish."

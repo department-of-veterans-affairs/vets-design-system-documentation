@@ -39,6 +39,7 @@ markdown: kramdown
 highlighter: none
 plugins:
   - jekyll-last-modified-at
+  - jekyll-redirect-from
 
 source: src
 

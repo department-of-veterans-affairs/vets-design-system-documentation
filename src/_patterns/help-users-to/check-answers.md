@@ -1,8 +1,10 @@
 ---
 layout: pattern
-permalink: /patterns/help-users-to/check-answers
-sub-section: help-users-to
 title: Check answers
+permalink: /patterns/help-users-to/check-answers
+redirect_from:
+  - /patterns/forms/review
+sub-section: help-users-to
 intro-text: "Follow this pattern to help users check their answers before submitting a form."
 status: use-deployed
 anchors:

@@ -1,9 +1,11 @@
 ---
 layout: pattern
-permalink: /patterns/ask-users-for/files
-sub-section: ask-users-for
 title: Files
+permalink: /patterns/ask-users-for/files
+redirect_from:
+  - /patterns/forms/file-upload
 aka: File upload
+sub-section: ask-users-for
 intro-text: "Follow this pattern to help users select and upload a file."
 status: use-deployed
 anchors:

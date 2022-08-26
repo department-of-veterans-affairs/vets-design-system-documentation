@@ -1,9 +1,11 @@
 ---
 layout: pattern
-permalink: /patterns/help-users-to/navigate-a-long-list
-sub-section: help-users-to
 title: Navigate a long list
+permalink: /patterns/help-users-to/navigate-a-long-list
+redirect_from:
+  - /patterns/show-more-options
 aka: Show more options
+sub-section: help-users-to
 contributors: Peter Russo (VAOS)
 added: 7/5/2022
 intro-text: Allows users to navigate and process a long list of items by progressively displaying additional items as needed.

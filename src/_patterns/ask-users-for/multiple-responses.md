@@ -1,9 +1,11 @@
 ---
 layout: pattern
-permalink: /patterns/ask-users-for/multiple-responses
-sub-section: ask-users-for
-aka: List & Loop
 title: Multiple responses
+permalink: /patterns/ask-users-for/multiple-responses
+redirect_from:
+  - /patterns/forms/list-and-loop
+aka: List & Loop
+sub-section: ask-users-for
 intro-text: "Follow this pattern in forms when we need to collect more than one response from a user." 
 status: use-deployed
 anchors:

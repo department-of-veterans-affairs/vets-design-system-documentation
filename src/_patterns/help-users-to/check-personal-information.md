@@ -1,6 +1,9 @@
 ---
 layout: pattern
 title: Check personal information
+permalink: /patterns/help-users-to/check-personal-information
+redirect_from:
+  - /patterns/authenticated-info-list
 aka: Authenticated info list
 sub-section: help-users-to
 intro-text: "This pattern helps users quickly see a list of items related to their own personal information, as well as quickly navigate to answers to the questions they might have."
