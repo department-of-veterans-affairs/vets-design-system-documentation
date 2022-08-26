@@ -3,6 +3,8 @@ layout: pattern
 title: Forms
 inner-title: Overview
 permalink: /templates/forms/
+redirect_from:
+  - /patterns/forms/
 contributors: "Shawna Hein (VSA Design Lead), Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
 status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
