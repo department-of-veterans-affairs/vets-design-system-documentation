@@ -28,7 +28,7 @@ web-component: va-omb-info
 
 {% include storybook-preview.html story="components-va-omb-info--with-custom-respondent-burden-benefit-type" link_text="va-omb-info" %}
 
-## With Children
+### With Children
 {% include storybook-preview.html story="components-va-omb-info--children" link_text="va-omb-info" %}
 
 ## Usage
