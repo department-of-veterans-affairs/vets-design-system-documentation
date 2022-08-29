@@ -3,7 +3,6 @@ name: "DST - Basic Issue Template"
 about: INTERNAL DST USE ONLY
 title: ''
 labels: vsp-design-system-team
-assignees: caw310, k80bowman
 
 ---
 ## Configuring this issue

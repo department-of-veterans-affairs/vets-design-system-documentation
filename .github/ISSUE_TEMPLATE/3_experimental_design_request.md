@@ -3,7 +3,6 @@ name: "3. Experimental design system request"
 about: Propose an idea for a new component or pattern
 title: "Experimental Design [component or pattern name]"
 labels: vsp-design-system-team, experimental_design
-assignees: caw310
 
 ---
 
