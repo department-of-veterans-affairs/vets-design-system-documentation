@@ -1,0 +1,20 @@
+<nav class="va-sidebarnav va-sidebarnav--{{include.name}}">
+  {% assign ask_users_for = site.patterns | where: "sub-section", "ask-users-for" %}
+  {% assign help_users_to = site.patterns | where: "sub-section", "help-users-to" %}
+  {% assign deprecated = site.patterns | where: "status", "dont-use-deprecated" %}
+
+  <h3 class="va-sidebarnav__sub-section">
+    Ask users for&hellip;
+  </h3>
+  {% include _site-side-nav-patterns-list.html section_list=ask_users_for %}
+
+  <h3 class="va-sidebarnav__sub-section">
+    Help users to&hellip;
+  </h3>
+  {% include _site-side-nav-patterns-list.html section_list=help_users_to %}
+
+  <h3 class="va-sidebarnav__sub-section">
+    Deprecated
+  </h3>
+  {% include _site-side-nav-patterns-list.html section_list=deprecated%}
+</nav>

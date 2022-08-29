@@ -13,7 +13,7 @@ sub-pages:
 
 Error messages mainly appear in interactive experiences such as tools, forms, and applications. This category of messaging has visual design and formatting that affects copy and thus you must: 
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/messaging-error-messages">Review the error messages pattern</a>
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors">Review the help users to recover from errors pattern</a>
 
 ## Messages dictionary
 

@@ -9,7 +9,7 @@ status: use-with-caution-available
 anchors:
   - anchor: Usage
   - anchor: Examples
-  - anchor: How to build
+  - anchor: How to design and build
   - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
@@ -29,7 +29,6 @@ Criteria for when the pattern is appropriate.
 May contain:
 #### Design principles
 - Design principles to consider
-
 
 ### When not to use this pattern
 

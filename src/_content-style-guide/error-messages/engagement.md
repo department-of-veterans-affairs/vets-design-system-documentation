@@ -6,7 +6,7 @@ title: Engagement messages
 intro-text: Nudges the user to enter or update data in the system. It can be initiated by either the system or another user.
 ---
 
-***Note:** See [Error Messages](/patterns/error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [Error Messages](/patterns/help-users-to/recover-from-errors#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ## Prompt to complete a task or enter data
 

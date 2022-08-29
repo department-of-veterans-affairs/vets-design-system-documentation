@@ -4,6 +4,12 @@
   margin: 4rem 0 0 4rem;
   background-color: var(--color-white);
 
+  &__sub-section {
+    margin: 0;
+    padding: 2rem 0rem 1rem 1.5rem;
+    color: var(--color-base);
+  }
+
   .usa-accordion {
     .usa-accordion-button {
       padding: $padding-override;

@@ -33,9 +33,11 @@ If this is a pattern or component that is already in existence, check the Design
     - If this is a new component that has not gone through Staging Review, it should be labeled "Use with Caution: Candidate"
 - [ ] Merge component
 - [ ] Create a new release of component-library
-- [ ] Update component-library dependency in vets-design-system-documentation to have the updated component-docs.json
+- [ ] Update component-library dependency in vets-design-system-documentation to get the updated component-docs.json
+- [ ] Add analytics set-up to `vets-website` repository. See [guidance here](https://vfs.atlassian.net/wiki/spaces/DST/pages/2079817745/Component+development+process#Analytics%5BinlineExtension%5D).
 
 ## Acceptance Criteria
 - [ ] Component is written and added to Storybook
 - [ ] Component has had accessibility and design reviews
 - [ ] Design.va.gov has the latest version of component-library
+- [ ] Analytics has been configured for the component in the `vets-website` repo
