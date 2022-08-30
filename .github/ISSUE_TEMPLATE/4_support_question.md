@@ -3,6 +3,7 @@ name: "4. \U0001F64B Support question"
 about: If you need support using the Design System
 title: ''
 labels: 'vsp-design-system-team'
+assignees: 'caw310'
 
 ---
 
