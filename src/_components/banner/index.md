@@ -24,7 +24,7 @@ web-component: va-banner
 
 ### Dismissible
 
-{% include storybook-preview.html story="components-va-banner--closeable" height="172px" link_text="va-banner" %}
+{% include storybook-preview.html story="components-va-banner--dismissible" height="172px" link_text="va-banner" %}
 
 ## Usage
 
