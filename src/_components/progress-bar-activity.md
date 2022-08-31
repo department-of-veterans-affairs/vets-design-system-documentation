@@ -23,7 +23,7 @@ anchors:
 
 ### When to use an activity progress bar
 
-* **System status feedback**: When you need to provide feedback to the user that an action they initiated is progressing. The most common example is when a user must upload a document and needs feedback that the upload is progressing.
+* **System status feedback**: When you need to provide feedback to the user that an action they initiated is progressing. The most common example is when a user must upload a file and needs feedback that the upload is progressing.
 * **When the action is determinate**:  When the progress accomplished thus far and the remaining progress to be taken can be shown. This component takes a percentage as input to display the progress of the activity.
 
 ### When to consider something else
