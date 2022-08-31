@@ -3,7 +3,6 @@ name: "DST - Component documentation"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Documentation"
 labels: vsp-design-system-team
-assignees: caw310, k80bowman
 
 ---
 

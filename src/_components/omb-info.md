@@ -7,26 +7,29 @@ intro-text: "Required text from the Office of Management and Budget."
 anchors:
   - anchor: Examples
   - anchor: Usage
+web-component: va-omb-info
 ---
 
 ## Examples
 
 ### Default
 
-{% include storybook-preview.html story="components-ombinfo--default" %}
+{% include storybook-preview.html story="components-va-omb-info--default" link_text="va-omb-info" %}
 
 ### Without OMB Number
 
-{% include storybook-preview.html story="components-ombinfo--without-omb-number" %}
+{% include storybook-preview.html story="components-va-omb-info--without-omb-number" link_text="va-omb-info" %}
 
 ### Without Respondent Burden
 
-{% include storybook-preview.html story="components-ombinfo--without-response-burden" %}
+{% include storybook-preview.html story="components-va-omb-info--without-response-burden" link_text="va-omb-info" %}
 
 ### With Custom Respondent Burden Benefit Type
 
-{% include storybook-preview.html story="components-ombinfo--with-custom-respondent-burden-benefit-type" %}
+{% include storybook-preview.html story="components-va-omb-info--with-custom-respondent-burden-benefit-type" link_text="va-omb-info" %}
 
+### With Children
+{% include storybook-preview.html story="components-va-omb-info--children" link_text="va-omb-info" %}
 
 ## Usage
 
