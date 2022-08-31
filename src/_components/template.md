@@ -47,6 +47,10 @@ Add Storybook examples as necessary.
 * **Not for these tasks**: Explain the user tasks where this component is not, or should not, be used.
 * **Use this instead**: Explain when another component should be used instead.
 
+### How this component works
+
+Details the design decisions inherent to the component.
+
 ### Behavior
 
 Describe the key interactions for this component.

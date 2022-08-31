@@ -9,4 +9,4 @@
   ></iframe>
 </div>
 
-[{% if include.link_text %}View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ site.storybook_path }}/?path=/docs/{{ include.story }})
+[{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ site.storybook_path }}/?path=/docs/{{ include.story }})
