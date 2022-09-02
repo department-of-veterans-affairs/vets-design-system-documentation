@@ -2,7 +2,7 @@
 name: "DST - Component development"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Development"
-labels: vsp-design-system-team
+labels: vsp-design-system-team, dst-engineering
 
 ---
 
