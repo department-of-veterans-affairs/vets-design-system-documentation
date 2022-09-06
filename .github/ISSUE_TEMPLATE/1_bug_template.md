@@ -2,7 +2,7 @@
 name: "1. \U0001F534 Bug report"
 about: Something in the Design System is not working as expected
 title: ''
-labels: 'vsp-design-system-team'
+labels: vsp-design-system-team, bug
 
 ---
 
@@ -34,3 +34,13 @@ Steps to reproduce:
 2.
 3.
 4.
+
+## Urgency
+How urgent is this request? Please select the approriate option below and/or provide details
+- [ ] This bug is blocking work currently in progress
+- [ ] This bug is affecting work currently in progress but we have a workaround
+- [ ] This bug is blocking work planned within the next few sprints
+- [ ] This bug is not blocking any work
+- [ ] Other
+
+### Details
