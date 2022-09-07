@@ -3,6 +3,7 @@ layout: component
 permalink: /components/form/textarea
 has-parent: /components/form/
 title: Textarea
+tag: va-textarea
 intro-text: "Textarea allows people to enter any type of text."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C6340B6C-F41E-423B-BDEA-B340A81C9714
