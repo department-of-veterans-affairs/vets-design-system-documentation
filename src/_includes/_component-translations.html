@@ -1,9 +1,11 @@
 {% assign component_tag = page.title | downcase | prepend: "va " | split: " " | join: "-" %}
 {% assign component = site.data.component-docs.components | find: 'tag', component_tag %}
 {% assign translations = component.docsTags | where_exp: 'item', 'item.name == "translations"' %}
-{% assign languages = translations | map: 'text' %}
+{% assign languages = translations | map: 'text' | default: nil %}
 
-<span class="usa-label vads-u-margin-left--0p5">
-  <i class="fas fa-globe"></i>
-  {{ languages | join: ", " }}
-</span>
+{% if languages %}
+  <span class="usa-label vads-u-margin-left--0p5">
+    <i class="fas fa-globe"></i>
+    {{ languages | join: ", " }}
+  </span>
+{% endif %}
