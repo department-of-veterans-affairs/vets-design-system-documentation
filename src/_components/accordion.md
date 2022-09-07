@@ -1,6 +1,7 @@
 ---
 layout: component
 title: Accordion
+tag: va-accordion
 intro-text: "Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select."
 research-title: Accordions
 status: use-best-practice
