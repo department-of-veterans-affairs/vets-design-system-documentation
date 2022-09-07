@@ -3,7 +3,6 @@ layout: component
 permalink: /components/form/number-input
 has-parent: /components/form/
 title: Number input
-tag: va-number-input
 research-title: Form controls
 intro-text: "Number input elements are used for numeric inputs."
 status: use-deployed
