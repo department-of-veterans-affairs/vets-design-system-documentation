@@ -3,6 +3,7 @@ layout: component
 permalink: /components/form/text-input
 has-parent: /components/form/
 title: Text input
+tag: va-text-input
 intro-text: "Text input allows people to enter any type of text unless otherwise restricted."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/04A043C5-65CA-43BB-88F2-E17EF8B12D7D
