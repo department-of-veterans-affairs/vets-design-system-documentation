@@ -1,13 +1,7 @@
-{% for component in site.data.component-docs.components %}
-  {% if component.tag == page.tag %}
-    {% assign translations = component.docsTags | where_exp: 'item', 'item.name == "translations"' %}
-    {% assign languages = translations | map: 'text' %}
-    <span class="usa-label vads-u-margin-left--0p5">
-      <i class="fas fa-globe"></i>
-      {{ languages | join: ", " }}
-    </span>
-
-  {% endif %}
-{% endfor %}
-
-
+{% assign component = site.data.component-docs.components | find: 'tag', page.tag %}
+{% assign translations = component.docsTags | where_exp: 'item', 'item.name == "translations"' %}
+{% assign languages = translations | map: 'text' %}
+<span class="usa-label vads-u-margin-left--0p5">
+  <i class="fas fa-globe"></i>
+  {{ languages | join: ", " }}
+</span>
