@@ -33,6 +33,9 @@
             {% if page.status %}
               {% include _status.html %}
             {% endif %}
+
+            {% include _component-translations.html %}
+
             {% if page.intro-text %}
             <div class="va-introtext" markdown="1">
               {{ page.intro-text }}
