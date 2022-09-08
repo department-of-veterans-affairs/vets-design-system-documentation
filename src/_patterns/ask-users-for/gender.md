@@ -21,12 +21,15 @@ anchors:
 
 ## Examples
 
-![applicant information gender template]({{site.baseurl}}/images/patterns/ask-users-for/gender/gender.png)
+{% include component-example.html alt="Asking for gender in the VA.gov Profile." file="/images/patterns/ask-users-for/gender/gender-identity-profile.png" caption="Asking for gender in the VA.gov Profile, personal information section." width="75%" %}
+
+{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." width="75%" %}
 
 ## How to design and build 
 
 ### How this pattern works
 
-- **Give Veterans the option of picking more than one gender they could identify with.** Always use checkboxes so that Veterans can identify with multiple descriptions.
-* **Provide a way to self-describe.** Selecting this checkbox should reveal a text field that allows the Veteran to use their own preferred terminology.
+* **Give Veterans the option of picking more than one gender they could identify with.** Always use checkboxes so that Veterans can identify with multiple descriptions.
 * **Provide a way to opt-out of answering.** A checkbox labeled "Prefer not to answer" should be provided.
+* **Provide a way to give a 'None of the above' answer.** A checkbox labeled "A gender not listed here." should be provided.
+* **Explain what happens to the information collected.** Always explain to Veterans how the information they provide is used, shared, and protected.
