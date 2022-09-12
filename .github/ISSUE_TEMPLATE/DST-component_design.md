@@ -32,9 +32,11 @@ If this is a pattern or component that is already in existence, conduct a small-
 - [ ] Review designs with DST members (Carol can help schedule this)
 - [ ] Address any comments from reviews, if necessary
 - [ ] Comment on this ticket with any accessibility considerations engineers may need to know
+- [ ] Comment on this ticket with content specifications (e.g. labels and error messages)
 - [ ] Comment on this ticket with a link to the designs and post in DST Slack channel
 
 ## Acceptance Criteria
 - [ ] Component design is complete and has been reviewed
 - [ ] Accessibility considerations have been added to this ticket, if necessary
+- [ ] Content specifications have been added to this ticket, if necessary
 - [ ] Link to design has been added to this ticket and shared in Slack
