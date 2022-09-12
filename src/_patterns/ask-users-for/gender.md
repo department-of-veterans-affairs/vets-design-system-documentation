@@ -29,7 +29,7 @@ anchors:
 
 ### How this pattern works
 
-* **Give Veterans the option of picking more than one gender they could identify with.** Always use checkboxes so that Veterans can identify with multiple descriptions.
+<!-- We didn't do this due to a backend constraint. * **Give Veterans the option of picking more than one gender they could identify with.** Always use checkboxes so that Veterans can identify with multiple descriptions. -->
 * **Provide a way to opt-out of answering.** A checkbox labeled "Prefer not to answer" should be provided.
 * **Provide a way to give a 'None of the above' answer.** A checkbox labeled "A gender not listed here." should be provided.
 * **Explain what happens to the information collected.** Always explain to Veterans how the information they provide is used, shared, and protected.
