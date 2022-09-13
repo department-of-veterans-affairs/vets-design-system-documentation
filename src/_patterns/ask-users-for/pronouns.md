@@ -15,7 +15,9 @@ anchors:
 
 ### When to use this pattern
 
-* **When you need to collect a person's pronouns in order to address them appropriately.** A pronoun is a word that can be used to refer to a person you are addressing (i.e. "you") or being talked about in the third person (i.e. "she/her," "he/him," and "they/them"). Some pronouns are gendered (i.e. "she/her" and "he/him") and thus we are intentional about the way we use pronouns in order to be respectful and inclusive. A pronoun can be indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns and using those pronouns, when not addressing a person by their name, creates a more comfortable interaction.
+**When you need to collect a person's pronouns in order to address them appropriately.** A pronoun is a word that can be used to refer to a person you are addressing (i.e. "you") or being talked about in the third person (i.e. "she/her," "he/him," and "they/them"). Some pronouns are gendered (i.e. "she/her" and "he/him") and thus we are intentional about the way we use pronouns in order to be respectful and inclusive. A pronoun can be indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns and using those pronouns, when not addressing a person by their name, creates a more comfortable interaction.
+
+Pronouns, as well as other personal information in a user profile, will be used when Veterans visit VA facilities and speak to VA representatives, for example. Previously there wasn't a way for users to convey a preference ahead of time, which was creating discomfort for both Veterans and VA staff.
 
 ## Examples
 

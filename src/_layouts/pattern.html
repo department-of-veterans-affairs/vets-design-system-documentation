@@ -23,9 +23,7 @@
             {% if page.draft %}
               {% include _draft.html %}
             {% endif %}
-          <div>
-            <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
-          </div>
+            {% include _site-section-name.html %}
           {% if page.sub-section %}
           <p class="vads-u-display--inline-block vads-u-font-size--h3 vads-u-margin--0 vads-u-color--black">
             {{ page.sub-section | replace: "-", " " | capitalize }}&hellip;
