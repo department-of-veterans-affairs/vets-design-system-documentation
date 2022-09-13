@@ -9,6 +9,29 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## August 2022
+
+### New and updated components
+
+#### Use with caution
+
+* [File input]({{ site.baseurl }}/components/form/file-input)
+* [Memorable date]({{ site.baseurl }}/components/form/memorable-date)
+* [Month/year]({{ site.baseurl }}/components/form/date-input#monthyear)
+
+### Sketch Library updates
+
+* Added the [Privacy agreement component](https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/symbols?g=Privacy%2520agreement).
+* Organized text and layer styles, deleted duplicates.
+
+### Documentation updates
+
+* [Alert]({{ site.baseurl }}/components/alert), [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable), [Additional information]({{ site.baseurl }}/components/additional-info), [Banner]({{ site.baseurl }}/components/banner), [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance), and [Banner - Promo]({{ site.baseurl }}/components/banner/promo) all received guidance clarifications on their uses and how to choose between them.
+
+### Pattern updates
+
+* [Patterns]({{ site.baseurl }}/patterns/) reorganization. We’ve reorganized the Patterns section around user tasks: Asking a user for information and helping users to accomplish a task. We’ve put in redirects as well so that you can find where your favorite pattern has gone.
+
 ## July 2022
 
 ### New and updated components
