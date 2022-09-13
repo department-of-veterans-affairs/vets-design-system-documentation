@@ -9,6 +9,7 @@ anchors:
   - anchor: Usage
   - anchor: Examples
   - anchor: How to design and build
+  - anchor: Accessibility considerations
 ---
 
 ## Usage
@@ -29,3 +30,8 @@ Pronouns, as well as other personal information in a user profile, will be used 
 
 * **Give Veterans the option of picking more than one pronoun they could identify with.** Use checkboxes so that Veterans can identify with multiple descriptions.
 * **Provide a way to opt-out of answering.** A checkbox labeled "Use my preferred name" should be provided.
+* **Provide a way to give an answer not in the list.** Allow for users to provide their own answer with an open-ended text field. The additional text field allows the user to see that there is an option to provide their own answer, which is particularly useful in cases where the list of options is unlikely to ever be exhaustive. It may also be more expedient in that the user does not have to make a selection before entering text into the field. However, this should only be used with a single input and not multiple inputs.
+
+## Accessibility considerations
+
+**Use a single text field to capture options not found in a list.** While it is typically encouraged to hide unnecessary fields until a user makes a selection that makes them relevant (sometimes referred to as a form of Progressive disclosure), it is also desirable to signal to the user that they may provide their own answer. This makes the interaction more accessible as it allows a screen reader user to navigate through the field and know that is an option without having to trigger a reveal of that field. For example, having to select "Provide my own answer" which would then reveal a text field. 
