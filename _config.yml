@@ -71,14 +71,13 @@ collections:
     output: true
     permalink: /:collection/:title
 
-includes:
-  - /components/code
+include:
+  - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-8b28c6fa.js
 
+# Exclusions are relative to the source directory (which is set to src)
 exclude:
-  - node_modules
-  - tmp_remote_assets
-  - .sass-cache
-  - .ruby_version
+  - .DS_Store
+  - .jekyll-cache
   - _foundation/html
   - _components/html
   - _components/form/html

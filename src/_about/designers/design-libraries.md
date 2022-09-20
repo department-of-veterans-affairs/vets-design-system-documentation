@@ -22,26 +22,18 @@ To access and enable the core VA.gov pattern library, follow these steps:
 
 Once you’ve loaded the library, you should be able to access everything in it by navigating to **Insert** > **Symbols** > **VA-gov-Pattern-Library**.
 
-<va-alert
-    background-only
-    class="vads-u-margin-bottom--1"
-    close-btn-aria-label="Close notification"
-    disable-analytics="false"
-    full-width="false"
-    show-icon
-    status="info"
-    visible="true"
-  >
-  <strong>Do not modify the core Sketch library!</strong> Only the Design System Team should edit the library. If you have questions about how to use component symbols, contact {{ site.sketch_library_owner }}, the Design System Team's UX Designer.
+<va-alert close-btn-aria-label="Close notification" status="warning" visible>
+  <h2 slot="headline">Do not modify the core Sketch library!</h2> 
+  <p>
+    Only the Design System Team should edit the library. If you have questions about how to use component symbols, contact {{ site.sketch_library_owner }}, the Design System Team's UX Designer.
+  </p>
 </va-alert>
 
 ### View the library
 
 You can <a href="{{ site.sketch_cloud_link}}">view the core Sketch library</a> in Sketch for Teams (filname: VA-gov-Pattern-library). You can open the library in Sketch by looking for the "Edit in Sketch" button. This will allow you to investigate and copy components if you prefer to do that rather than insert symbols. 
 
-<a class="vads-c-action-link--green" href="{{ site.sketch_cloud_link }}">
-  View the Core library
-</a>
+<a class="vads-c-action-link--green" href="{{ site.sketch_cloud_link }}">View the Core library</a>
 
 ### Additional libraries
 
@@ -56,9 +48,7 @@ Components in a shared library are considered available for use but may not have
 
 ### Current shared libraries
 
-<a class="vads-c-action-link--blue" href="https://sketch.com/s/ab0f611b-c15c-42c4-ab71-1158ff6e01c6">
-  Search
-</a>
+<a class="vads-c-action-link--blue" href="https://sketch.com/s/ab0f611b-c15c-42c4-ab71-1158ff6e01c6">Search</a>
 
 ### Shared library maintainer - Role and responsibilities
 
