@@ -1,0 +1,37 @@
+{% assign name = include.component_name %}
+{% assign components = site.data.component-checklist %}
+{% assign component = components | map: name %}
+{% assign definitions = components | map: "definitions" %}
+
+<h2 id="checklist">Checklist</h2>
+<div class="vads-l-grid-container site-component-checklist">
+  <div class="vads-l-row">
+  {% for definition in definitions %}
+    {% for section in definition %}
+      {% assign title = section[0] %}
+      {% assign items = section[1] %}
+    <div class="vads-l-col--6 site-component-checklist__col">
+      <h3 id="checklist-{{ title }}">{{ title | replace: "-", " " | capitalize }}</h3>
+      <dl class="site-component-checklist__list">
+        {% for item in items %}
+          {% assign name = item.name %}
+          {% assign values = component.first[title] %}
+          {% assign slug_name = name | slugify %}
+          {% assign value = values | where: "name", slug_name %}
+          {% assign score = value.first.score %}
+        <dt class="site-component-checklist__name">
+          {% if score == true %}
+          <i class="fas fa-check-circle site-component-checklist-score--is-true"></i>
+          {% else %}
+          <i class="fas fa-times site-component-checklist-score--is-false"></i>
+          {% endif %}
+          {{ name }}
+        </dt>
+        <dd>{{ item.desc }}</dd>
+        {% endfor %}
+      </dl>
+    </div>
+    {% endfor %}
+  {% endfor %}
+  </div>
+</div>

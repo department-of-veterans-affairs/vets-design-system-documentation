@@ -1,0 +1,20 @@
+.site-component-checklist {
+  padding: 0;  
+
+  &__col {
+    padding-right: units(2);
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+}
+
+.site-component-checklist-score {
+  &--is-true {
+    color: $color-green;
+  }
+  &--is-false {
+    color: $color-orange;
+  }
+}
