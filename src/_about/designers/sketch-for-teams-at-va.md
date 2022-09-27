@@ -1,8 +1,8 @@
 ---
 layout: documentation
 title: Sketch for Teams at VA
-permalink: /about/for-designers/sketch-for-teams-at-va
-has-parent: /about/for-designers/
+permalink: /about/designers/sketch-for-teams-at-va
+has-parent: /about/designers/
 intro-text: Design teams at VA use Sketch for Teams to view, share, and collaborate on our work. 
 ---
 

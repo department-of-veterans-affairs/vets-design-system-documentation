@@ -2,8 +2,8 @@
 layout: category
 title: For designers
 inner-title: Working with the system
-permalink: /about/for-designers/
-into-text: Designers are urged to read through each section of design.va.gov and see all components and patterns in use on VA.gov. 
+permalink: /about/designers/
+intro-text: Documentation and resources for designers.
 sub-pages:
   - sub-page: Design Libraries
   - sub-page: Sketch for teams at VA
@@ -11,9 +11,7 @@ sub-pages:
 
 ## Working with the design system
 
-The VA.gov Design System is VA.gov’s front-end framework. This site documents most of the components in the Sketch library. However, some components will be migrated over the next few release cycles.
-
-Before getting started, we recommend that you get familiar with the VA.gov Design System and how you can use it as part of your design process. Each section includes some helpful information:
+The VA.gov Design System is VA.gov’s front-end framework. Before getting started, we recommend that you get familiar with the VA.gov Design System and how you can use it as part of your design process. Each section includes some helpful information:
 
 - **[Content](../content-style-guide).** Our house style guide for VA.gov. Follow the guidelines to help you create a **consistent, helpful experience for Veterans.**
 - **[Foundation](../foundation).** This section explains VA.gov's base styles and visual language. You should set margins and padding in your design comps using the [8pt spacing units](../foundation/spacing-units).
