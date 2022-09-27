@@ -3,7 +3,7 @@ layout: component
 title: Table
 intro-text: "The table component organizes data into columns and rows."
 research-title: Table
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5E24F540-2558-488C-BD6D-823F4A2F5607
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/D9AD4361-D6AC-4BB8-845A-7D90B5A3400D
 status: use-best-practice
 anchors:
   - anchor: Examples
