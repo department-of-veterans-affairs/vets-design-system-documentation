@@ -1,8 +1,8 @@
 ---
 layout: documentation
 title: Design libraries
-permalink: /about/for-designers/design-libraries
-has-parent: /about/for-designers/
+permalink: /about/designers/design-libraries
+has-parent: /about/designers/
 intro-text: The Design System Team provides several Sketch libraries for use by teams.
 anchors:
   - anchor: Add the core Sketch library to your project
