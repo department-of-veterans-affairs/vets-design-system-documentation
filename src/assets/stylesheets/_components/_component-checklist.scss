@@ -1,16 +1,24 @@
 .site-component-checklist {
   padding: 0;  
 
-  &__col {
-    padding-right: units(2);
+  &__list {
+    max-width: 72ex;
   }
 
   &__name {
     font-weight: bold;
   }
+
+  &__totals {
+    margin: units(2);
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }
 
 .site-component-checklist-score {
+  margin-right: units(.25);
+
   &--is-true {
     color: $color-green;
   }

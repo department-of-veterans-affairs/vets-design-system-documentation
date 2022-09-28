@@ -1,42 +1,40 @@
-guidance:
-  - name: usage
+maturity:
+  - name: guidance
     score: true
-  - name: code-usage
+  - name: research
+    score: false
+  - name: stability
     score: true
-  - name: content-considerations
-    score: true
-  - name: accessibility-considerations
-    score: true
-  - name: internationalization-guidelines
+  - name: adoption
     score: true
 accessibility:
   - name: accessible-use-of-color
     score: true
-  - name: accessible-contrast-for-text
-    score: true
-  - name: accessible-contrast-for-ui-components
+  - name: accessible-contrast
     score: true
   - name: keyboard-interactions
     score: true
   - name: content-zoom-tested
     score: true
-  - name: tested-in-screenreader
+  - name: tested-in-screen-readers
     score: true
 code-assets:
-  - name: defined-variations 
+  - name: variations 
     score: true
-  - name: all-interactive-states-depicted
+  - name: responsive
     score: true
-  - name: all-breakpoints-depicted
+  - name: interactive-states
     score: true
+  - name: tokens
+    score: false
   - name: internationalization
     score: true
-  - name: design-tokens
-    score: false
 visual-assets:
-  - name: all-breakpoints-depicted 
+  - name: variations
     score: true
-  - name: defined-variations
+  - name: responsive
     score: true
-  - name: all-interactive-states-depicted
+  - name: interactive-states
+    score: false
+  - name: tokens
     score: false
