@@ -35,7 +35,7 @@ anchors:
 - When an accordion is open, each section within a chapter should have a secondary “Edit” button in the top right.
 - Underneath the accordions include the note:
 > Note: According to federal law, there are criminal penalties, including a fine and/or imprisonment for up to 5 years, for withholding information or for providing incorrect information (See 18 U.S.C. 1001).
-- Following the note also include the Privacy agreement.
+- Following the note also include the [Privacy agreement]({{ site.baseurl }}/components/privacy-agreement).
 - [Button pair]({{ site.baseurl }}/components/button/button-pair): Secondary button labeled “Back” and Default blue button labeled “Submit application”
 - Last saved application date and time in green background color only alert style
 - Finish this application later default link 
@@ -46,4 +46,5 @@ anchors:
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Button pair]({{ site.baseurl }}/components/button/button-pair)
+* [Privacy agreement]({{ site.baseurl }}/components/privacy-agreement)
 * [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented)
