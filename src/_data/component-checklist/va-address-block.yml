@@ -13,7 +13,7 @@ accessibility:
   - name: accessible-contrast
     score: true
   - name: keyboard-interactions
-    score: true
+    score: "n/a"
   - name: content-zoom-tested
     score: true
   - name: tested-in-screen-readers
@@ -24,17 +24,17 @@ code-assets:
   - name: responsive
     score: true
   - name: interactive-states
-    score: true
+    score: "n/a"
   - name: tokens
-    score: false
+    score: "n/a"
   - name: internationalization
-    score: true
+    score: "n/a"
 visual-assets:
   - name: variations
     score: true
   - name: responsive
     score: true
   - name: interactive-states
-    score: false
+    score: "n/a"
   - name: tokens
-    score: false
+    score: "n/a"

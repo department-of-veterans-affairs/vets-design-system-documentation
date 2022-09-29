@@ -2,7 +2,7 @@ maturity:
   - name: guidance
     score: true
   - name: research
-    score: false
+    score: true
   - name: stability
     score: true
   - name: adoption
@@ -28,7 +28,7 @@ code-assets:
   - name: tokens
     score: false
   - name: internationalization
-    score: true
+    score: false
 visual-assets:
   - name: variations
     score: true

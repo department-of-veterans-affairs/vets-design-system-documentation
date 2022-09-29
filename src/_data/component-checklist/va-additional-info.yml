@@ -28,13 +28,13 @@ code-assets:
   - name: tokens
     score: false
   - name: internationalization
-    score: true
+    score: false
 visual-assets:
   - name: variations
     score: true
   - name: responsive
     score: true
   - name: interactive-states
-    score: false
+    score: true
   - name: tokens
     score: false

@@ -25,4 +25,7 @@
   &--is-false {
     color: $color-orange;
   }
+  &--is-na {
+    color: $color-gray-light;
+  }
 }

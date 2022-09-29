@@ -2,7 +2,7 @@
 layout: component
 title: Alert - Expandable
 github-title: va-alert-expandable
-intro-text: "A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action."
+intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/a/nRdbRGg
 status: use-with-caution-candidate
 contributors: Leyda Hughes (VSA Facilities Team)
@@ -13,9 +13,9 @@ anchors:
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Research
+  - anchor: Related
+  - anchor: Component checklist
 ---
-
-Alert - Expandable is a mobile friendly alert component that combines the [Additional Info component]({{ site.baseurl }}/components/additional-info) within the [Background-Color Only Alert]({{ site.baseurl}}/components/alert/background-only) color schemes.
 
 ## Examples
 
@@ -99,3 +99,10 @@ The alert was tested as part of a usability study with 9 participants. The alert
 - The alert was often the first thing Veterans noticed when arriving on the page
 - Some clicked on the alert to read more about the referred charge while others moved on to looking at other sections of the prototype 
 - Veterans generally understood that they could interact with the alert. However, one asked themselves, "Can I click on this?" before clicking on it. That may have been because they were interacting with a prototype where not every element was interactive rather than because they were unsure that the alert was clickable in general. 
+
+## Related
+
+* [Additional info]({{ site.baseurl }}/components/additional-info) 
+* [Alert - Background only]({{ site.baseurl}}/components/alert/background-only) 
+
+{% include _component-checklist.html component_name=page.web-component %}
