@@ -2,7 +2,7 @@ maturity:
   - name: guidance
     score: true
   - name: research
-    score: true
+    score: false
   - name: stability
     score: true
   - name: adoption
@@ -35,6 +35,6 @@ visual-assets:
   - name: responsive
     score: true
   - name: interactive-states
-    score: false
+    score: true
   - name: tokens
     score: "n/a"

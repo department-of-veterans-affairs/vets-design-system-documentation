@@ -26,7 +26,7 @@ code-assets:
   - name: interactive-states
     score: true
   - name: tokens
-    score: false
+    score: "n/a"
   - name: internationalization
     score: true
 visual-assets:
@@ -37,4 +37,4 @@ visual-assets:
   - name: interactive-states
     score: false
   - name: tokens
-    score: false
+    score: "n/a"
