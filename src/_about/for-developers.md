@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: documentation
 title: For developers
+intro-text: Documentation and resources for developers.
 tags: Installation, CSS, CSS architecture
 anchors:
   - anchor: Using the Design System
@@ -14,14 +15,6 @@ anchors:
   - anchor: Ending the experiment
 slug: developers
 ---
-
-# Documentation for developers
-
-<div class="va-introtext">
-  How to install and use VA Design System styles and components with your project.
-</div>
-
-{% include _site-on-this-page.html %}
 
 ## Parts of the Design System
 - [Formation](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) is the name of the VA.gov design system styles
