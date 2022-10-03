@@ -6,7 +6,7 @@ redirect_from:
   - /patterns/messaging-error-messages
 aka: Error messages
 sub-section: help-users-to
-intro-text: "Details the structure, style, and tone for error and informational messages."
+intro-text: "Details the structure, style, and tone for error and informational messages, and provides guidance on presenting next steps after an error occurs."
 status: use-deployed
 anchors:
   - anchor: Structure
