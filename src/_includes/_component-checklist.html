@@ -52,8 +52,30 @@
   </div>
     {% if completed_items != 0 && total_items != 0 %}
   <div class="vads-l-row">
-    <div class="vads-l-col-12 site-component-checklist__totals">
+    <div class="vads-l-col--12 large-screen:vads-l-col--4 site-component-checklist__totals">
       {{ completed_items | times: 100 | divided_by: total_items }}% complete ({{ completed_items }} of {{ total_items }})
+    </div>
+    <div class="vads-l-col--12 large-screen:vads-l-col--8 site-component-checklist-legend">
+      <div class="vads-l-row site-component-checklist-legend__row">
+        <div class="vads-l-col--12 small-desktop-screen:vads-l-col--2">
+          <p class="site-component-checklist-legend__title">
+            Legend:
+          </p>
+        </div>
+        <div class="vads-l-col--12 small-desktop-screen:vads-l-col--10">
+          <ul class="site-component-checklist-legend__list">
+            <li class="site-component-checklist-legend__item">
+              <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i> Complete
+            </li>
+            <li class="site-component-checklist-legend__item">
+              <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i> Incomplete
+            </li>
+            <li class="site-component-checklist-legend__item">
+              <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> Not applicable
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
     {% endif %}

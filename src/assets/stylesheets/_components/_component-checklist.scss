@@ -1,4 +1,5 @@
 .site-component-checklist {
+  margin: 0;
   padding: 0;  
 
   &__list {
@@ -10,7 +11,7 @@
   }
 
   &__totals {
-    margin: units(2);
+    margin: units(2) 0;
     font-size: 2rem;
     font-weight: bold;
   }
@@ -22,10 +23,41 @@
   &--is-true {
     color: $color-green;
   }
+
   &--is-false {
     color: $color-orange;
   }
+
   &--is-na {
     color: $color-gray-light;
+  }
+}
+
+.site-component-checklist-legend {
+  @include media($small-desktop-screen) {
+    margin-top: units(1);
+  }
+
+  @include media($small-desktop-screen) {
+    margin-top: units(2);
+  }
+
+  &__title {
+    @include media($small-desktop-screen) {
+      margin: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    width: 33.33%;
+    max-width: 125px;
+    margin-right: units(1);
   }
 }
