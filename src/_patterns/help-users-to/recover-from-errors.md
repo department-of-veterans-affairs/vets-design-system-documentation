@@ -40,7 +40,7 @@ Every error message will have **up to** 3 parts:
 
 * Actionable next-step for user (if applicable).
 
-## Content within the message - General 
+## Content within the alert - General 
 
 To create an effective error message, ask yourself these 4 questions:
 
@@ -85,7 +85,7 @@ For an error caused by or due to:
 
 The answer will inform whether or not to include a “next-step call to action” to help guide the user further should the first call to action fail to resolve the issue. This may be language directing the user to call the VA.gov help desk or other VA resources, and will be determined on an issue-by-issue basis. See [Next-step calls to action](#next-step) below for more information and guidance.
 
-## Content within the message - Task completion
+## Content within the alert - Task completion
 
 Below are examples of each type of [Alert]({{ site.baseurl }}/components/alert) style for task completion.
 
@@ -141,6 +141,10 @@ When we want to prompt the user to take action, frame the prompt as a question t
    
 {% include component-example.html alt="Info alert for site maintenance." file="/images/patterns/help-users-to/recover-from-errors/secure-007.png" caption="You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password." reverse=true width="50%" %}
   
+## Content outside of the alert
+
+Some cases, such as a login error, may allow for additional content to be displayed below the alert component. Use well-formatted text with a header and bullet points below the alert to tell the user what they can do next to resolve the error.
+
 ## Messages dictionary
 
 The messages dictionary holds the title, content, component, and state for each scenario of message on the site.
