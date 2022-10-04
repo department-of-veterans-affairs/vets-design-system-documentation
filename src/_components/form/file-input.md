@@ -7,6 +7,7 @@ intro-text: "File input allows a single file to be uploaded."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2EB04B39-CAE6-4D13-8655-4394F9A3F072/canvas
 status: use-with-caution-candidate
+web-component: va-file-input
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -14,7 +15,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
-web-component: va-file-input
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -73,7 +74,8 @@ web-component: va-file-input
 * **Use file instead of document.** File is the broadest term and thus preferable to "document" as that may be too specific when images, text files, and other file types may be acceptable for upload.
 * **Follow messaging guidance.** Follow the [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the messages dictionary for file upload success and failure.
 
-
 ## Accessibility considerations
 
 * **Use proper labels and attributes.** When a label is supplied to the `label` property of the component, it will be associated with the ```<input>``` element that has a matching id attribute automatically.
+
+{% include _component-checklist.html component_name=page.web-component %}

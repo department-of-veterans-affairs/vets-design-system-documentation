@@ -2,12 +2,11 @@ maturity:
   - name: guidance
     score: true
   - name: research
-    score: true
+    score: false
   - name: stability
     score: true
   - name: adoption
     score: false
-    notes: "If we can hear from teams using this component (Oct. 2022) then this component may be able to move up the maturity scale. Please reach out the Design System team if you have used this component successfully in 2022."
 accessibility:
   - name: accessible-use-of-color
     score: true
@@ -21,21 +20,21 @@ accessibility:
     score: true
 code-assets:
   - name: variations 
-    score: true
+    score: false
   - name: responsive
-    score: true
+    score: false
   - name: interactive-states
-    score: true
+    score: false
   - name: tokens
-    score: false
+    score: "n/a"
   - name: internationalization
-    score: false
+    score: "n/a"
 visual-assets:
   - name: variations
-    score: true
+    score: false
   - name: responsive
-    score: true
+    score: false
   - name: interactive-states
     score: false
   - name: tokens
-    score: false
+    score: "n/a"

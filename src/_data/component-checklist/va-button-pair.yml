@@ -7,6 +7,7 @@ maturity:
     score: false
   - name: adoption
     score: false
+    notes: "This component was introduced in July 2022."
 accessibility:
   - name: accessible-use-of-color
     score: true

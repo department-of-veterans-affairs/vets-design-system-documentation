@@ -10,7 +10,7 @@
     {% assign completed_items = 0 %}
   <div class="vads-l-row">
     <div class="vads-l-col--12">
-      <va-accordion>
+      <va-accordion open-single>
     {% for section in definition %}
       {% assign title = section[0] %}
       {% assign items = section[1] %}
@@ -25,6 +25,7 @@
               {% assign slug_name = name | slugify %}
               {% assign value = values | where: "name", slug_name %}
               {% assign score = value.first.score %}
+              {% assign notes = value.first.notes %}
             <dt class="site-component-checklist__name">
               {% if score == true %}
                 {% assign completed_items = completed_items | plus: 1 %}
@@ -39,6 +40,9 @@
               {{ name }}
             </dt>
             <dd>{{ item.desc }}</dd>
+              {% if notes %}
+            <dd>Note: {{ notes }}</dd>
+              {% endif %}
             {% endfor %}
           </dl>
         </va-accordion-item>
