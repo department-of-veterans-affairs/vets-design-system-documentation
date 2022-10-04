@@ -11,6 +11,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -56,3 +57,5 @@ This component appears at the bottom of a form, above the link to "Finish this a
 ## Accessibility considerations
 
 **Privacy policy opens in new tab or window.** This component must detail to all users that the privacy policy link opens in a new window. This indication should be visible and auditory.
+
+{% include _component-checklist.html component_name=page.web-component %}
