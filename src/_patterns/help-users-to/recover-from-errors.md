@@ -6,14 +6,12 @@ redirect_from:
   - /patterns/messaging-error-messages
 aka: Error messages
 sub-section: help-users-to
-intro-text: "Details the structure, style, and tone for error and informational messages, and provides guidance on presenting next steps after an error occurs."
+intro-text: "This page contains guidance on how to present actionable steps for recovery when users encounter an error alert."
 status: use-deployed
 anchors:
-  - anchor: Structure
-  - anchor: Content within the message - General
-  - anchor: Content within the message - Task completion
-  - anchor: Messages dictionary
-  - anchor: Style and tone
+  - anchor: Types of errors
+  - anchor: Error alert content
+  - anchor: Content outside of the alert
   - anchor: Additional guidance
 ---
 
