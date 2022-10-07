@@ -2,7 +2,7 @@
 layout: component
 title: "OMB info"
 status: use-deployed
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/v/eMln5p/a/ZOZ9J47/r/nZme2g
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/a/ZOZ9J47
 intro-text: "Provides text required by the Office of Management and Budget (OMB) to be present on all forms."
 web-component: va-omb-info
 anchors:
