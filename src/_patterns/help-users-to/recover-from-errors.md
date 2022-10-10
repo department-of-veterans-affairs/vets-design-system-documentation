@@ -6,12 +6,13 @@ redirect_from:
   - /patterns/messaging-error-messages
 aka: Error messages
 sub-section: help-users-to
-intro-text: "This page contains guidance on how to present actionable steps for recovery when users encounter an error alert."
+intro-text: "This page contains guidance on how to present actionable steps for recovery when users encounter an error."
 status: use-deployed
 anchors:
+  - anchor: Usage
   - anchor: Types of errors
   - anchor: Error alert content
-  - anchor: Content outside of the alert
+  - anchor: Other content
   - anchor: Additional guidance
 ---
 
