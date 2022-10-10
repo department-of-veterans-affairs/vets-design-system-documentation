@@ -10,10 +10,10 @@ intro-text: "This page contains guidance on how to present actionable steps for 
 status: use-deployed
 anchors:
   - anchor: Usage
-  - anchor: Types of errors
-  - anchor: Error alert content
-  - anchor: Other content
-  - anchor: Additional guidance
+  - anchor: Examples
+  - anchor: How to design and build
+  - anchor: Accessibility considerations
+  - anchor: Content considerations
 ---
 
 *Note: The guidelines below don't apply to inline error messages in form fields (for example, "Please enter a valid Social Security number."). Inline form field error messages will be handled in a separate error guide.* 
