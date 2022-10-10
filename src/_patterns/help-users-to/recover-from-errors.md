@@ -6,7 +6,7 @@ redirect_from:
   - /patterns/messaging-error-messages
 aka: Error messages
 sub-section: help-users-to
-intro-text: "This page contains guidance on how to present actionable steps for recovery when users encounter an error."
+intro-text: "This pattern shows how to present actionable content to help users recover from errors."
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -50,10 +50,6 @@ This pattern does not apply to inline errors. Guidance on creating inline form f
 ## Accessibility considerations
 
 ### Screen reader users
-
-### Low-vision users
-
-### Users with cognitive disabilities
 
 ## Additional guidance
 
