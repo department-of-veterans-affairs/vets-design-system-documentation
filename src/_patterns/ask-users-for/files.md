@@ -12,64 +12,72 @@ anchors:
   - anchor: Usage
   - anchor: How to design and build
   - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Live application examples
 ---
 
 ## Usage
 
 ### When to use this pattern
 
-* **Required documentation.** When a user must upload a file in order to provide required documentation.
+- When a user must upload a file to provide required documentation in order to complete a task.
 
 ### When not to use this pattern
 
-* **Don’t ask if it does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary.
+- You should only ask users to upload a file if absolutely necessary. Do not ask for files if it does not affect the delivery of a service or outcome of a task. 
 
 ## How to design and build
 
-### Layout details
+### File input component
 
-Here is the content structure for asking a user to upload a file:
+{% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input" %}
+
+Use the File input component along with the following content above it:
 
 - Header 
-- Instructions on what document(s) to upload
-- Bulleted list of allowed file types and sizes
-- Secondary button to upload 
+- Instructions on what file(s) to upload
+- Bullet list of allowed file types and sizes
 
-**Note:** This content will vary depending on what you’re asking the user to upload. Work with a content specialist on how to ask for certain documents.
-
-![file upload input state]({{site.baseurl}}/images/patterns/ask-users-for/files/file-upload-input.png)
+Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can invite user and/or technical errors.
 
 ### How this pattern works
 
-- **Avoid error states by listing out what types and sizes of files are accepted.** The types of files accepted depend on the form. Most forms accept pdf, jpg, jpeg, and png. 
-- **Validate file uploads.**  See example error messages under Content considerations.
-- **Do not italicize information regarding file sizes.** Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
+#### Error state
+
+{% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input--error-message" %}
+
+- Help the user prevent upload errors by listing above the File input component the types and sizes of files that are accepted. The accepted file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
+- Validate file uploads and provide specific error messaging. See example error messages under Content considerations.
 
 #### Loading state
 
-The upload button will be replaced by a gray card with a [standard progress bar component]({{ site.baseurl }}/components/progress-bar) to indicate the progress of the document upload. The user will see the name of the file as well as the option to cancel the upload. 
+Use the Progress bar - Activity component to give feedback to the user that a determinate background activity is happening.
 
-![file upload loading state]({{site.baseurl}}/images/patterns/ask-users-for/files/file-upload-loading.png)
-
-#### Review state 
-
-When a document has successfully uploaded, a card will show the uploaded file name in bold with an option to delete the file. Depending on the type of form, there may be a dropdown to select a document type for the uploaded file. Underneath the card there will be a secondary button to give the user the option of uploading additional files. 
-
-![file upload review state]({{site.baseurl}}/images/patterns/ask-users-for/files/file-upload-review.png)
+{% include storybook-preview.html story="components-va-progress-bar--default" link_text="va-progress-bar" %}
 
 ## Content considerations
 
+The content preceding the File input component will vary depending on what file you are asking the user to upload. Work with a content specialist on how to ask for certain documents. Avoid using words like "scan" or "convert" that do not speak to the mobile experience.
+
 ### Error message templates for file upload
 
-**When a user doesn’t upload a required document:**
+**When a user does not upload a required file:**
 
-Say ‘Please upload a file.’
+Say ‘Upload a file.’
 
-**When there needs to be at least one required document:**
+**When the uploaded file does not match one of the accepted file types:**
 
-Say ‘Please upload at least one file.’
 
-**Live application examples:**
+
+**When the uploaded file exceeds the maximum allowed size:**
+
+
+
+## Accessibility considerations
+
+- Do not italicize file type and size help text. Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
+
+## Live application examples
 
 - [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
 - [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
