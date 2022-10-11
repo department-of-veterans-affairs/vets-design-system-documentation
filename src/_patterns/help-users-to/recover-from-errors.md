@@ -45,7 +45,7 @@ This pattern does not apply to inline errors. Guidance on creating inline form f
 
 ### Alert component content
 
-### Suplemental content
+### Supplemental content
 
 ## Accessibility considerations
 
