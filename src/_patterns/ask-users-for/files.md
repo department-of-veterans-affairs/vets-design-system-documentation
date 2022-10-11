@@ -10,29 +10,33 @@ intro-text: "Follow this pattern to help users upload a file."
 status: use-deployed
 anchors:
   - anchor: Usage
+  - anchor: Examples
   - anchor: How to design and build
   - anchor: Content considerations
   - anchor: Accessibility considerations
-  - anchor: Live application examples
 ---
 
 ## Usage
 
 ### When to use this pattern
 
-- When a user must upload a file in order to complete a task, such as providing documentation.
+* **Required documentation.** When a user must upload a file in order to provide required documentation.
 
 ### When not to use this pattern
 
-- You should only ask a user to upload a file if absolutely necessary. Do not ask for files if they do not affect the delivery of a service or outcome of a task. 
+* **Don’t ask if it does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary.
+
+## Examples
+
+- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
+- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
 
 ## How to design and build
 
-### File input component
+### Layout details
 
-{% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input" %}
-
-Use the File input component along with the following content preceding it:
+Use the [File input component](https://design.va.gov/components/form/file-input) along with the following content preceding it:
 
 - Header 
 - Instructions on what file(s) to upload
@@ -76,9 +80,3 @@ Say 'Upload a file under [maximum size allowed].'
 ## Accessibility considerations
 
 - Do not italicize file type and size help text. Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
-
-## Live application examples
-
-- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
-- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
