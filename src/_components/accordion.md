@@ -13,6 +13,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -74,3 +75,5 @@ anchors:
 ## Related
 
 * [Additional info]({{ site.baseurl }}/components/additional-info)
+
+{% include _component-checklist.html component_name=page.web-component %}

@@ -12,6 +12,8 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Related
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -111,4 +113,5 @@ Most VA forms have a large amount of instructional text that tries to make VA pr
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Alert]({{ site.baseurl }}/components/alert)
-* [Content presentation - Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content)
+
+{% include _component-checklist.html component_name=page.web-component %}

@@ -1,0 +1,83 @@
+{% assign name = include.component_name %}
+{% assign components = site.data.component-checklist %}
+{% assign component = components | map: name %}
+{% assign definitions = components | map: "definitions" %}
+
+<h2 id="component-checklist">Component checklist</h2>
+<div class="vads-l-grid-container site-component-checklist">
+  {% for definition in definitions %}
+    {% assign total_items = 0 %}
+    {% assign completed_items = 0 %}
+  <div class="vads-l-row">
+    <div class="vads-l-col--12">
+      <va-accordion open-single>
+    {% for section in definition %}
+      {% assign title = section[0] %}
+      {% assign items = section[1] %}
+        <va-accordion-item id="checklist-{{ title }}">
+          <h3 slot="headline">
+            {{ title | replace: "-", " " | capitalize }}
+          </h3>
+          <dl class="site-component-checklist__list">
+            {% for item in items %}
+              {% assign name = item.name %}
+              {% assign values = component.first[title] %}
+              {% assign slug_name = name | slugify %}
+              {% assign value = values | where: "name", slug_name %}
+              {% assign score = value.first.score %}
+              {% assign notes = value.first.notes %}
+            <dt class="site-component-checklist__name">
+              {% if score == true %}
+                {% assign completed_items = completed_items | plus: 1 %}
+                {% assign total_items = total_items | plus: 1 %}
+              <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+              {% elsif score == "n/a" %}
+              <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i>
+              {% elsif score == false %}
+                {% assign total_items = total_items | plus: 1 %}
+              <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+              {% endif %}
+              {{ name }}
+            </dt>
+            <dd>{{ item.desc }}</dd>
+              {% if notes %}
+            <dd>Note: {{ notes }}</dd>
+              {% endif %}
+            {% endfor %}
+          </dl>
+        </va-accordion-item>
+    {% endfor %}
+      </va-accordion>
+    </div>
+  </div>
+    {% if completed_items != 0 && total_items != 0 %}
+  <div class="vads-l-row">
+    <div class="vads-l-col--12 large-screen:vads-l-col--4 site-component-checklist__totals">
+      {{ completed_items | times: 100 | divided_by: total_items }}% complete ({{ completed_items }} of {{ total_items }})
+    </div>
+    <div class="vads-l-col--12 large-screen:vads-l-col--8 site-component-checklist-legend">
+      <div class="vads-l-row site-component-checklist-legend__row">
+        <div class="vads-l-col--12 small-desktop-screen:vads-l-col--2">
+          <p class="site-component-checklist-legend__title">
+            Legend:
+          </p>
+        </div>
+        <div class="vads-l-col--12 small-desktop-screen:vads-l-col--10">
+          <ul class="site-component-checklist-legend__list">
+            <li class="site-component-checklist-legend__item">
+              <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i> Complete
+            </li>
+            <li class="site-component-checklist-legend__item">
+              <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i> Incomplete
+            </li>
+            <li class="site-component-checklist-legend__item">
+              <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> Not applicable
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    {% endif %}
+  {% endfor %}
+</div>

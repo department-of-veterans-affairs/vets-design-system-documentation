@@ -13,6 +13,7 @@ anchors:
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Research
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -86,3 +87,5 @@ If you need to tell the Veteran they've missed a required field on an applicatio
 - No research conducted as of 8/16/21.
 - Internal usability study with colleagues who are also Veterans planned for late Aug/early Sept 2021.
 - External study planned for notification settings post-MVP Oct/Nov 2021.
+
+{% include _component-checklist.html component_name="va-input-message" %}

@@ -26,9 +26,7 @@
             {% if page.draft %}
               {% include _draft.html %}
             {% endif %}
-          <div>
-            <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
-          </div>
+            {% include _site-section-name.html %}
           <h1 id="{{ page.title }}">{{ page.title }}</h1>
             {% if page.intro-text %}
             <div class="va-introtext" markdown="1">

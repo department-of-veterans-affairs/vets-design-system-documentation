@@ -9,6 +9,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
+  - anchor: Component checklist
 ---
 
 
@@ -55,3 +56,5 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 ## Related
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
+
+{% include _component-checklist.html component_name="va-tabs" %}
