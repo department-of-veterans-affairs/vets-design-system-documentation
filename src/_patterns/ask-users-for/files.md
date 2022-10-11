@@ -20,7 +20,7 @@ anchors:
 
 ### When to use this pattern
 
-- When a user must upload a file to provide required documentation in order to complete a task.
+- When a user must upload a file in order to complete a task.
 
 ### When not to use this pattern
 
@@ -46,8 +46,8 @@ Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can
 
 {% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input--error-message" %}
 
-- Help the user prevent upload errors by listing above the File input component the types and sizes of files that are accepted. The accepted file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
-- Validate file uploads and provide specific error messaging. See example error messages under Content considerations.
+- Help the user prevent upload errors by listing the types and sizes of files that are accepted **above** the File input component. The accepted file types depend on the form, though most forms accept pdf, jpg, and png. 
+- Validate file uploads and provide messaging that is specific to the validation error. See example error messages under Content considerations.
 
 #### Loading state
 
