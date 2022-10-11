@@ -6,7 +6,7 @@ redirect_from:
   - /patterns/forms/file-upload
 aka: File upload
 sub-section: ask-users-for
-intro-text: "Follow this pattern to help users select and upload a file."
+intro-text: "Follow this pattern to help users upload a file."
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -20,11 +20,11 @@ anchors:
 
 ### When to use this pattern
 
-- When a user must upload a file in order to complete a task.
+- When a user must upload a file in order to complete a task, such as providing documentation.
 
 ### When not to use this pattern
 
-- You should only ask users to upload a file if absolutely necessary. Do not ask for files if it does not affect the delivery of a service or outcome of a task. 
+- You should only ask a user to upload a file if absolutely necessary. Do not ask for files if they do not affect the delivery of a service or outcome of a task. 
 
 ## How to design and build
 
@@ -32,7 +32,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input" %}
 
-Use the File input component along with the following content above it:
+Use the File input component along with the following content preceding it:
 
 - Header 
 - Instructions on what file(s) to upload
@@ -67,11 +67,11 @@ Say ‘Upload a file.’
 
 **When the uploaded file does not match one of the accepted file types:**
 
-
+Say 'Upload a [list accepted file types].'
 
 **When the uploaded file exceeds the maximum allowed size:**
 
-
+Say 'Upload a file under [maximum size allowed].'
 
 ## Accessibility considerations
 
