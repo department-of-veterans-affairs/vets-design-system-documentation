@@ -13,9 +13,15 @@ title: What’s new?
 
 ### New and updated components
 
-#### Use with caution
-
 * [Privacy agreement]({{ site.baseurl }}/components/privacy-agreement)
+* **Translation indicator.** Components that have Spanish translation now have a label next to their maturity level at the top of the page (e.g. [Accordion]({{ site.baseurl }}/components/accordion)).
+* A [number of fixes](https://github.com/department-of-veterans-affairs/component-library/releases?q=created%3A2022-09-01..2022-09-30+prerelease%3Afalse&expanded=true) including:
+  * Fixed va-checkbox label alignment
+  * Added label prop value to va-button in the va-file-input component 
+  * Fixed month validation utility 
+  * Aligned web component labels, descriptions, and error message font weights
+  * Adjust va-checkbox margin from error-message to label
+  * Fixed alert expandable component calc-max-height
 
 ### Sketch Library updates
 
