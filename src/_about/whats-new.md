@@ -9,6 +9,24 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## September 2022
+
+### New and updated components
+
+#### Use with caution
+
+* [Privacy agreement]({{ site.baseurl }}/components/privacy-agreement)
+
+### Sketch Library updates
+
+* We created our first ["Shared library" for Search components](https://www.sketch.com/s/ab0f611b-c15c-42c4-ab71-1158ff6e01c6). Shared libraries extend the core library with additional components that are organized by functionality. Read more about [shared libraries]({{ site.baseurl }}/about/designers/design-libraries#shared-libraries).
+ 
+### Documentation updates
+
+ * We also updated documentation on all of our [design libraries]({{ site.baseurl }}/about/designers/design-libraries).
+ * Added a new pattern: [Ask users for pronouns]({{ site.baseurl }}/patterns/ask-users-for/pronouns). This pattern also covers how to provide a way to give an answer not in the list of options. 
+ * Revised the pattern detailing how to [Ask users for gender]({{ site.baseurl }}/patterns/ask-users-for/gender)
+
 ## August 2022
 
 ### New and updated components
@@ -98,18 +116,3 @@ New component symbols:
     - [Foundation > Layout]({{ site.baseurl }}/foundation/layout/) 
     - [Foundation > Utilities]({{ site.baseurl }}/foundation/utilities/) 
 - Table web component
-
-## March 2022
-
-- [Telephone]({{ site.baseurl }}/components/telephone) section added. 
-- [Banners]({{ site.baseurl }}/components/banner) section added.
-- [Promo Banners]({{ site.baseurl }}/components/banner/promo) section updated.
-
-## November 2021
-
-- [Zip code]({{ site.baseurl }}/content-style-guide/dates-and-numbers#zip-codes) subtopic added. 
-- [Apostrophes]({{ site.baseurl }}/content-style-guide/punctuation#apostrophes) and [quotation marks]({{ site.baseurl }}/content-style-guide/punctuation#quotation-marks) subtopics added.
-- Veteran entry updated in [word list]({{ site.baseurl }}/content-style-guide/word-list).
-- Back to top web component
-- Form confirmation page
-- Alert box web component
