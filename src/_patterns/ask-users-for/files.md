@@ -28,15 +28,17 @@ anchors:
 
 ## Examples
 
-- [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
-- [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-- [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
+### VA Form 21P-527EZ
+
+[VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
+
+![file upload default state]({{site.baseurl}}/images/patterns/ask-users-for/files/Form_21P-527EZ_upload-button.png)
 
 ## How to design and build
 
 ### Layout details
 
-Use the [File input component](https://design.va.gov/components/form/file-input) along with the following content preceding it:
+Use the [File input component](https://design.va.gov/components/form/file-input) along with the following content placed above it:
 
 - Header 
 - Instructions on what file(s) to upload
@@ -50,32 +52,26 @@ Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can
 
 {% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input--error-message" %}
 
-- Help the user prevent upload errors by listing the types and sizes of files that are accepted **above** the File input component. The accepted file types depend on the form, though most forms accept pdf, jpg, and png. 
-- Validate file uploads and provide messaging that is specific to the validation error. See example error messages under Content considerations.
+- **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, and png. 
+- **Validate file uploads and provide actionable error messages.** Visit <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages/feedback">Feedback messages</a> in the Content styleguide for file upload success and failure messages.
 
 #### Loading state
 
-Use the Progress bar - Activity component to give feedback to the user that a determinate background activity is happening.
+The upload button will be replaced by a gray card with the Progress bar - Activity component to indicate the progress of the document upload. The user will see the name of the file and have the option to cancel the upload.
 
 {% include storybook-preview.html story="components-va-progress-bar--default" link_text="va-progress-bar" %}
+
+#### Review state
+
+When a document has successfully uploaded, the card will have the uploaded file name in bold with an option to delete the file. Depending on the form, there may be a dropdown in the card to select the document type. The Upload button will move underneath the card to give the user the option of uploading more files.
+
+![file upload review state]({{site.baseurl}}/images/patterns/ask-users-for/files/Form_21P-527EZ_uploaded-file-card.png)
 
 ## Content considerations
 
 The content preceding the File input component will vary depending on what file you are asking the user to upload. Work with a content specialist on how to ask for certain documents. Avoid using words like "scan" or "convert" that do not speak to the mobile experience.
 
-### Error message templates for file upload
-
-**When a user does not upload a required file:**
-
-Say ‘Upload a file.’
-
-**When the uploaded file does not match one of the accepted file types:**
-
-Say 'Upload a [list accepted file types].'
-
-**When the uploaded file exceeds the maximum allowed size:**
-
-Say 'Upload a file under [maximum size allowed].'
+- Go to <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages/feedback">Feedback messages</a> (Content styleguide) for file upload success and error message guidance.
 
 ## Accessibility considerations
 
