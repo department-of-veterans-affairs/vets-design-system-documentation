@@ -40,13 +40,7 @@ web-component: va-banner
   * Permanent facility closure
   * Utility outages (phone, water, etc.)
   * Wildfire, natural disasters, and inclement weather
-* **Helping a Veteran maintain their health.** Another category of messages are broadly related to helping Veterans manage their health. These messages include, but are not limited to:
-  * Call center/secure messaging promotion
   * Delays in filling prescriptions
-  * Flu shot general availability/promotion of flu clinic
-  * Learn about vaccinations
-  * New phone numbers
-  * Town Hall event announcement
 * **Additional Veteran actions.** Finally there are additional messages that require an action from a Veteran that may use this component:
   * IRS deadline for benefit declarations
   * Sign up for notifications 
@@ -57,6 +51,12 @@ web-component: va-banner
 * **In-application system status, engagement, and access messages.** All of the messages in our [messages dictionary]({{ site.baseurl }}/content-style-guide/error-messages) are handled by the [Alert]({{ site.baseurl }}/components/alert) component.
 * **News, promotion, new tools, etc.** Promotional items or general news that may be relevant to a broad audience of Veterans is better placed in the [Banner - Promo]({{ site.baseurl }}/components/banner/promo) component. To ensure that customers always know they can find critical service information in this area, don’t use Banner for general press, outreach, or administrative messages.
 * **System maintenance.** Before and during maintenance there are [specific system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) that we use to communicate the maintenance window to users which is handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component. 
+* **Helping a Veteran maintain their health.** Another category of messages are broadly related to helping Veterans manage their health. These messages should be managed with a combination of Content Management System (CMS) components as follows:
+  * Call center/secure messaging promotion: Story with spotlight.
+  * Flu shot general availability/promotion of flu clinic: Story with spotlight, Event for flu clinics, or a program page with a link to a spotlight area.
+  * Learn about vaccinations: Program page with link from spotlight area or Story with spotlight. Note: Do not duplicate national content.
+  * New phone numbers: News release, Story
+  * Town Hall event announcement: Event with spotlight.
 
 ### How to use Banner
 
