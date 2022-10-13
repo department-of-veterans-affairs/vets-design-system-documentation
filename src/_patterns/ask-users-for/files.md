@@ -52,16 +52,6 @@ anchors:
 
 ![file upload review state]({{site.baseurl}}/images/patterns/ask-users-for/files/10-10cg-review.png)
 
-### VA Form 10-10EZ - Application for Health Care
-
-**Default state**
-
-![file upload default state]({{site.baseurl}}/images/patterns/ask-users-for/files/10-10ez-default.png)
-
-**Review state**
-
-![file upload review state]({{site.baseurl}}/images/patterns/ask-users-for/files/10-10ez-review.png)
-
 ### VA Form 20-0995 - Supplemental Claims
 
 **Default state**
