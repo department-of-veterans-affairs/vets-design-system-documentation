@@ -28,13 +28,15 @@ anchors:
 
 ## Examples
 
-### VA Form 21P-527EZ - Application for Pension Benefits
+### Default state
 
-**Default state**
+{% include component-example.html alt="A document upload form page." file="/images/patterns/ask-users-for/files/Form_21P-527EZ_upload-button.png" caption="The upload file button in use on VA Form 21P-527EZ - Application for Pension Benefits showing the default state before a user has interacted with the button." %}
 
-![file upload default state]({{site.baseurl}}/images/patterns/ask-users-for/files/Form_21P-527EZ_upload-button.png)
+### Loading state
 
-**Review state**
+{% include component-example.html alt="The loading state of file upload." file="/images/patterns/ask-users-for/files/10-10cg-loading.png" caption="The loading state of file upload uses the Progress bar - Activity component to show the user that the system is uploading their file." width="50%" %}
+
+### Review state
 
 ![file upload review state]({{site.baseurl}}/images/patterns/ask-users-for/files/Form_21P-527EZ_uploaded-file-card.png)
 
@@ -44,9 +46,6 @@ anchors:
 
 ![file upload default state]({{site.baseurl}}/images/patterns/ask-users-for/files/10-10cg-default.png)
 
-**Loading state**
-
-![file upload loading state]({{site.baseurl}}/images/patterns/ask-users-for/files/10-10cg-loading.png)
 
 **Review state**
 
