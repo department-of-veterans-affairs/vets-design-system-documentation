@@ -25,7 +25,7 @@ Use this pattern when you want to present actionable next steps to help a user r
 
 ## Examples
 
-### Sign in and identify verification
+### Sign-in and identify verification
 
 Screenshot(s) TBA.
 
@@ -47,13 +47,13 @@ Screenshot(s) TBA.
 
 ## How to design and build
 
-### Sign in errors
-
-### Errors within forms
+TBA
 
 ## Content considerations
 
 ### Alert and background alert content
+
+Structure of alerts that have a headline, body text, and maybe a CTA.
 
 ### Supplemental content
 
