@@ -16,6 +16,7 @@ body:
       - Component
       - Pattern
       - Utility
+      - Forms Library
       - Other
   validations:
     required: true
@@ -38,6 +39,8 @@ body:
       - label: Implementation
       - label: Research insights
       - label: Package information
+      - label: Addition to Forms Library documentation
+      - label: Update to existing Forms Library documentation
 - type: textarea
   attributes:
     label: What problem does this solve?
