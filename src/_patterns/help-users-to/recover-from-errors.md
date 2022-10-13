@@ -21,29 +21,39 @@ anchors:
 
 ### When to use this pattern
 
-Use this pattern when you want to help users recover from login, application-specific, or system-wide errors.
-
-### When not to use this pattern
-
-This pattern does not apply to inline errors. Guidance on creating inline form field error messages will be handled in a separate pattern.
+Use this pattern when you want to present actionable next steps to help a user resolve their error.
 
 ## Examples
 
-### Login
+### Sign in and identify verification
 
-### Application-specific
+Screenshot(s) TBA.
 
-### System-wide
+### System
+
+Screenshot(s) TBA.
+
+### Engagement
+
+Screenshot(s) TBA.
+
+### Access
+
+Screenshot(s) TBA.
+
+### Feedback
+
+Screenshot(s) TBA.
 
 ## How to design and build
 
-### Alert - Error variation
+### Sign in errors
 
-### Alert - Warning variation
+### Errors within forms
 
 ## Content considerations
 
-### Alert component content
+### Alert and background alert content
 
 ### Supplemental content
 
