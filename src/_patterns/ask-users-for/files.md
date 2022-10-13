@@ -87,7 +87,7 @@ Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can
 {% include storybook-preview.html story="components-va-file-input--default" link_text="va-file-input--error-message" %}
 
 - **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
-- **Validate file uploads and provide actionable error messages.** Visit <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages/feedback">Feedback messages</a> in the Content styleguide for file upload success and failure messages.
+- **Validate file uploads and provide actionable error messages.** Visit <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages/feedback">Feedback messages</a> in the Content styleguide for file upload success and error messages.
 
 #### Loading state
 
