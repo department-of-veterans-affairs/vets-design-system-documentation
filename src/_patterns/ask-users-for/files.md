@@ -71,7 +71,7 @@ When a document has successfully uploaded, the card will display the uploaded fi
 {% include storybook-preview.html story="components-va-file-input--error-message#error-message" link_text="va-file-input--error-message" %}
 
 - **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
-- **Validate file uploads and provide actionable error messages.** Visit <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages/feedback">Feedback messages</a> in the Content styleguide for file upload success and error messages.
+- **Validate file uploads and provide actionable error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
 
 ## Content considerations
 
