@@ -21,7 +21,10 @@ anchors:
 
 ### When to use this pattern
 
-Use this pattern when you want to present actionable next steps to help a user resolve their error.
+- **Sign in.** When a user is unable to sign in to VA.gov.
+- **Inline errors.** When a user makes a recoverable error while entering data within a form or application.
+- **Access is limited or unavailable.** When the system or an application is down, or a user does not meet requirements to obtain access.
+- **Data is missing.** When you want to nudge a user to update their information.
 
 ## Examples
 
@@ -47,15 +50,30 @@ Screenshot(s) TBA.
 
 ## How to design and build
 
-TBA
+### Anatomy or layout details
+
+#### Login errors
+
+- Alert
+- Well-formatted text listing next steps
+
+#### Access errors
+
+#### Warning and informational alerts
+
+#### Inline errors
+
+### How this pattern works
+
+### Components used in this pattern
+
+#### Alert
+
+#### Background alert
+
+#### Form field error states
 
 ## Content considerations
-
-### Alert and background alert content
-
-Structure of alerts that have a headline, body text, and maybe a CTA.
-
-### Supplemental content
 
 ## Accessibility considerations
 
