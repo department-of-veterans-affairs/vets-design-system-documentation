@@ -21,7 +21,7 @@ anchors:
 
 ### When to use this pattern
 
-- **Sign in.** When a user is unable to sign in to VA.gov.
+- **Sign in errors.** When a user is unable to sign in to VA.gov.
 - **Inline errors.** When a user makes a recoverable error while entering data within a form or application.
 - **Access is limited or unavailable.** When the system or an application is down, or a user does not meet requirements to obtain access.
 - **Data is missing.** When you want to nudge a user to update their information.
