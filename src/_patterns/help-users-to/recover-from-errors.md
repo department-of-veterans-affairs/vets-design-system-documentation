@@ -21,48 +21,50 @@ anchors:
 
 ### When to use this pattern
 
-- **Sign in.** When a user is unable to sign in to VA.gov.
-- **Inline.** When a user makes a recoverable error while entering data within a form or application.
-- **System downtime.** Scheduled or unscheduled.
-- **Access is limited or unavailable.** When a user does not meet the requirements necessary to access a part of the system.
-- **Updates to user data.** When a claim decision has been made or a user needs to supply additional information.
+TBA
 
 ## Examples
 
 ### Sign-in and identify verification
 
-Screenshot(s) TBA.
+- Can't sign in
 
-### System
+### System and network
 
-Screenshot(s) TBA.
+- System maintenance and downtime
+- Network connectivity issues
 
-### Engagement
+### Access and authorization
 
-Screenshot(s) TBA.
+- Can't access app, system, etc.
+- User data not found or incomplete
+- Eligibility requirements not met
 
-### Access
+### Data entry and form submission
 
-Screenshot(s) TBA.
-
-### Feedback
-
-Screenshot(s) TBA.
+- Inline validation
+- Missing required data
+- Save and save-in-progress errors
+- Submission failure, must start application over, etc.
 
 ## How to design and build
 
 ### Anatomy or layout details
 
-#### Login errors
+#### Alert
 
-- Alert
-- Well-formatted text listing next steps
+- Title
+- Succinct description of what happened
+- Call to action
 
-#### Access errors
+#### Background alert
 
-#### Warning and informational alerts
+- Succinct description of what happened
+- Next steps (if applicable)
 
 #### Inline errors
+
+
 
 ### How this pattern works
 
