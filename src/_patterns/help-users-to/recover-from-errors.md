@@ -29,10 +29,9 @@ TBA
 
 - Can't sign in
 
-### System and network
+### System
 
 - System maintenance and downtime
-- Network connectivity issues
 
 ### Access and authorization
 
@@ -40,7 +39,7 @@ TBA
 - User data not found or incomplete
 - Eligibility requirements not met
 
-### Data entry and form submission
+### Feedback
 
 - Inline validation
 - Missing required data
@@ -64,7 +63,7 @@ TBA
 
 #### Inline errors
 
-
+#### When to suggest calling Help Desk
 
 ### How this pattern works
 
