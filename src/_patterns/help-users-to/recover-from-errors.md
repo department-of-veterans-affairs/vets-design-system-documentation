@@ -21,7 +21,7 @@ anchors:
 
 ### When to use this pattern
 
-TBA
+- When a user experiences a critical or recoverable error while interacting with forms, apps, and other content on VA.gov.
 
 ## Examples
 
@@ -41,31 +41,33 @@ TBA
 
 ### Feedback
 
-- Inline validation
+- Inline field validation
 - Missing required data
 - Save and save-in-progress errors
-- Submission failure, must start application over, etc.
+- Submission failure, must start over, etc.
 
 ## How to design and build
 
 ### Anatomy or layout details
 
-#### Alert
+#### Placement on page
 
-- Title
-- Succinct description of what happened
-- Call to action
+**Alert**
 
-#### Background alert
+**Background alert**
 
-- Succinct description of what happened
-- Next steps (if applicable)
+#### Next steps
 
-#### Inline errors
+Some errors, such as sign-in errors, may call for content in addition to the Alert component to help a user recover from their error. Chunking this content helps break down complex processes into discrete, easy-to-follow steps. Use headers and bulleted text below the Alert to communicate next steps to a user after a critical error has occcurred. 
 
-#### When to suggest calling Help Desk
+[include image]
 
 ### How this pattern works
+
+- Use the default Error alert when there is a problem (such as a sign in failure) or something destructive is about to occur.
+- Use the default Warning alert to communicate system-wide issues.
+- Use the background-only alert variation for immediate feedback, such as in single-page applications or dynamic Javascript driven forms.
+- Use inline error messaging when an issue has occurred within a form field. In all cases, only show error validation messages or stylings after a user has interacted with a particular field. 
 
 ### Components used in this pattern
 
