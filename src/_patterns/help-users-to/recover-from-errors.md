@@ -27,7 +27,7 @@ anchors:
 
 ### Sign-in
 
-- Can't sign in
+Sign-in error
 
 ### System
 
@@ -58,7 +58,7 @@ Alerts can appear above or below the H1 and contain the following elements:
 - Succinct description of what happened
 - CTA
 
-#### Background alert
+#### Background alerts
 
 Background alerts are usually triggered by a user-initiated action. They appear below the H1 and contain the following elements:
 
@@ -67,9 +67,9 @@ Background alerts are usually triggered by a user-initiated action. They appear 
 
 #### Next steps
 
-Some errors, such as sign-in errors, may call for content in addition to the Alert component to help a user recover from their error. Chunking this content helps break down complex processes into discrete, easy-to-follow steps. Use headers and bulleted text below the Alert to communicate next steps to a user after a critical error has occcurred. 
+Alert and Background alert content should be brief. Some errors may not be resolved through initial feedback to user (ie, "Try again later"). In these cases, next steps content may be necessary. Whenever this content is more than a couple of sentences in length, use headers and bulleted text to chunk out the steps.
 
-[include example image]
+<img src="{{site.baseurl}}/images/sign-in_error.png" alt="sign-in error and next steps" style="max-width: 376px">
 
 ### How this pattern works
 
