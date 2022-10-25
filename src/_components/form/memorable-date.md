@@ -3,7 +3,7 @@ layout: component
 permalink: /components/form/memorable-date
 has-parent: /components/form/
 title: Memorable Date
-research-title: Form controls
+research-title: Memorable Date
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-with-caution-available
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/
