@@ -28,7 +28,7 @@ anchors:
 
 ### Sign-in
 
-Sign-in error
+- Sign-in error
 
 ### System
 
@@ -53,15 +53,17 @@ Sign-in error
 
 #### Alerts
 
-Alerts can appear above or below the H1 and contain the following elements:
+Use [Warning](https://design.va.gov/components/alert#warning-alert) and [Error](https://design.va.gov/components/alert#error-alert) Alert variations to help a user recognize an issue has occurred or is about to occur. Alerts appear at the top of the page or co-located near the content they describe, and contain the following building blocks:
 
 - Header
 - Succinct description of what happened
-- CTA
+- Optional CTA
+
+Visit the [Alert component page](https://design.va.gov/components/alert#usage) for usage guidelines.
 
 #### Background alerts
 
-Background alerts are usually triggered by a user-initiated action and contain the following elements:
+Background alerts are triggered by a user-initiated action and contain the following elements:
 
 - Succinct description of what happened
 - Optional CTA
