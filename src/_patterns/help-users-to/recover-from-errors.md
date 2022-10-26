@@ -21,7 +21,8 @@ anchors:
 
 ### When to use this pattern
 
-- When a user experiences a critical or recoverable error while interacting with a form, application, or other content on VA.gov.
+- **Critical errors.** Critical errors occur when a user can't complete a task, such as signing in, and may require calling Help Desk in order to resolve. A critical error may be the result of user error or system/network outages.
+- **Recoverable errors.** Recoverable errors can be resolved by a user completing required information or correcting a validation error.
 
 ## Examples
 
@@ -60,7 +61,7 @@ Alerts can appear above or below the H1 and contain the following elements:
 
 #### Background alerts
 
-Background alerts are usually triggered by a user-initiated action. They appear below the H1 and contain the following elements:
+Background alerts are usually triggered by a user-initiated action and contain the following elements:
 
 - Succinct description of what happened
 - Optional CTA
