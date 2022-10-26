@@ -1,22 +1,18 @@
-{% assign component_name = 'va-' | append: include.component %}
-{% assign component = site.data.component-docs.components | find: 'tag', component_name %}
+{% assign component_title = include.component %}
+{% assign component = include.components | where: "title", component_title | first %}
+
+{% if component == nil %}
+  {% assign component_title = include.parent | append: ' - ' | append: component_title  %}
+  {% assign component = include.components | where: "title", component_title | first %}
+{% endif %}
+
 {% if component %}
-  {% assign maturity_category = component.docsTags | where_exp: 'item', 'item.name == "maturityCategory"' | map: 'text' | first %}
-  {% assign maturity_level = component.docsTags | where_exp: 'item', 'item.name == "maturityLevel"' | map: 'text' | first %}
-
-  {% if maturity_category == 'caution' %}
-    {% assign maturity_category = 'use-with-caution' %}
-  {% endif %}
-
-  {% if maturity_level == 'best_practice' %}
-    {% assign maturity_level = 'best-practice' %}
-  {% endif %}
-
-  {% assign component_status = maturity_category | append: '-' | append: maturity_level %}
-
-  {% for scale in site.data.maturity-scale.scale %}
-    {%- if scale.name == component_status -%}
-    <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{component_status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
-    {%- endif -%}
-  {% endfor %}
+  {% assign component_status = component.status %}
+  {% if component_status %}
+    {% for scale in site.data.maturity-scale.scale %}
+      {%- if scale.name == component_status -%}
+      <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{component_status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
+      {%- endif -%}
+    {% endfor %}
+  {%- endif -%}
 {%- endif -%}
