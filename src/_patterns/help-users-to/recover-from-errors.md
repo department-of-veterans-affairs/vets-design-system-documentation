@@ -53,7 +53,7 @@ anchors:
 
 #### Alerts
 
-Use [Warning](https://design.va.gov/components/alert#warning-alert) and [Error](https://design.va.gov/components/alert#error-alert) Alert variations to help a user recognize an issue has occurred or is about to occur. Alerts appear at the top of the page or co-located near the content they describe, and contain the following building blocks:
+Use [Warning](https://design.va.gov/components/alert#warning-alert) and [Error](https://design.va.gov/components/alert#error-alert) Alert variations to help a user recognize an issue has occurred or is about to occur. Alerts appear at the top of the page, below the H1 and intro text, or co-located near the content they describe, and contain the following building blocks:
 
 - Header
 - Succinct description of what happened
