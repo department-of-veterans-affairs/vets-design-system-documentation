@@ -1,5 +1,18 @@
-{% for scale in site.data.maturity-scale.scale %}
-  {%- if scale.name == include.component-status -%}
-  <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{include.component-status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
+{% assign component_title = include.component %}
+{% assign component = include.components | where: "title", component_title | first %}
+
+{% if component == nil %}
+  {% assign component_title = include.parent | append: ' - ' | append: component_title  %}
+  {% assign component = include.components | where: "title", component_title | first %}
+{% endif %}
+
+{% if component %}
+  {% assign component_status = component.status %}
+  {% if component_status %}
+    {% for scale in site.data.maturity-scale.scale %}
+      {%- if scale.name == component_status -%}
+      <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{component_status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
+      {%- endif -%}
+    {% endfor %}
   {%- endif -%}
-{% endfor %}
+{%- endif -%}

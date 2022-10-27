@@ -2,7 +2,7 @@
 layout: component
 permalink: /components/form/radio-button
 has-parent: /components/form/
-title: Radio Button
+title: Radio button
 research-title: Form controls
 intro-text: "Radio buttons allow users to see all available choices at once and select exactly one option."
 status: use-deployed

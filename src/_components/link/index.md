@@ -9,7 +9,7 @@ status: use-deployed
 sub-pages:
   - sub-page: Action
   - sub-page: Collection
-  - sub-page: Deep Content
+  - sub-page: Deep content
 anchors:
   - anchor: Examples
   - anchor: Usage
