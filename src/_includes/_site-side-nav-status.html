@@ -7,12 +7,15 @@
 {% endif %}
 
 {% if component %}
-  {% assign component_status = component.status %}
-  {% if component_status %}
-    {% for scale in site.data.maturity-scale.scale %}
-      {%- if scale.name == component_status -%}
-      <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{component_status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
-      {%- endif -%}
-    {% endfor %}
-  {%- endif -%}
+  {% assign status = component.status %}
+{% elsif include.pattern-status %}
+  {% assign status = include.pattern-status %}
+{%- endif -%}
+
+{% if status %}
+  {% for scale in site.data.maturity-scale.scale %}
+    {%- if scale.name == status -%}
+    <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
+    {%- endif -%}
+  {% endfor %}
 {%- endif -%}
