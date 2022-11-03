@@ -8,6 +8,7 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Accessibility considerations
 web-component: va-telephone
 ---
@@ -46,29 +47,49 @@ The `va-telephone` component also follows the guidelines set for <a href="{{ sit
 
 {% include storybook-preview.html story="components-va-telephone--tty" height="80px" %}
 
+### SMS
+
+{% include storybook-preview.html story="components-va-telephone--sms" height="80px" %}
+
 ### Vanity Number
 
 {% include storybook-preview.html story="components-va-telephone--vanity-number" height="80px" %}
 
 ## Usage
 
-### When to use va-telephone
+### When to use Telephone
 
-- When a phone number is to be shown on a page.
+* When a phone number is to be shown on a page. The component can be configured to have selecting the number make a phone call, call a teletypewriter/teleprinter, or send an SMS text message.
 
 ### When to consider something else
 
-- The link text is not a phone number.
+* When the link text is not a phone number to be called or messaged.
 
-### How to use va-telephone
+### How this component works
 
-- Add a 3 or 10 digit phone number to the component to have it formatted correctly for usage in a page.
-- If the phone number should have an `extension`, be `non-clickable`, or represent an `international` number, additional props can be added to accommodate.
-- For TTY numbers, pass the `tty` boolean prop to have appropriate indicators in the link text and the `aria-label`.
+* Add a phone number to the component to have it formatted correctly for usage in a page.
+
+### Behavior
+
+* By default selecting the link will trigger a phone call, opening the default program on the computer or device for placing phone calls. 
+
+### Choosing between variations
+
+* If the phone number should have an `extension`, be `non-clickable`, or represent an `international` number, additional props can be added to accommodate.
+* For TTY numbers, pass the `tty` boolean prop to have appropriate indicators in the link text and the `aria-label`.
+* For text messages, pass the `sms` boolean prop to have the link trigger a SMS text message instead of placing a phone call. This will open the default program on the computer or device for sending messages.
+
+### Placement
+
+* Phone numbers can appear within a sentence or on their own line.
 
 {% include component-docs.html component_name=page.web-component %}
 
+## Content considerations
+
+{% include content/phone-numbers.md %}
+
 ## Accessibility considerations
 
-- By default an `aria-label` will be created based off of the context entered into the component and will be formatted as a combined phone number parts within the label separated by periods, e.g. "800-555-1212" becomes "8 0 0. 5 5 5. 1 2 1 2"
-- If the `non-clickable` prop is enabled `aria-hidden="true"` will be added to the span element containing the  number and a `sr-only` css class will be added to the span element displaying the number in the `aria-label` format as shown above. 
+- By default an `aria-label` will be created based off of the context entered into the component and will be formatted as a combined phone number with parts within the label separated by periods, e.g. "800-555-1212" becomes "8 0 0. 5 5 5. 1 2 1 2"
+- If the `non-clickable` prop is enabled `aria-hidden="true"` will be added to the span element containing the  number and a `sr-only` CSS class will be added to the span element displaying the number in the `aria-label` format as shown above.
