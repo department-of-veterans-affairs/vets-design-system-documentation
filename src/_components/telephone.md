@@ -13,10 +13,6 @@ anchors:
 web-component: va-telephone
 ---
 
-By default, `va-telephone` components are clickable with a link and accept a value of 3 or 10 digits, however, props can be added to provide them with an extension, make them non-clickable, and have an international phone number indicator.
-
-The `va-telephone` component also follows the guidelines set for <a href="{{ site.baseurl }}/content-style-guide/dates-and-numbers#phone-numbers">phone numbers</a>.
-
 ## Examples
 
 ### Default
@@ -67,7 +63,8 @@ The `va-telephone` component also follows the guidelines set for <a href="{{ sit
 
 ### How this component works
 
-* Add a phone number to the component to have it formatted correctly for usage in a page.
+* By default, phone numbers provided to this component are clickable with a link and accept a value of 3, 5, 6, or 10 digits. 
+* Props can be added to provide phone numbers with an extension, make them non-clickable, and to include an international phone number indicator.
 
 ### Behavior
 
