@@ -49,7 +49,6 @@ anchors:
 <div class="site-showcase">
 {% include_relative html/error-text-inputs.html %}
 </div>
-{% include snippet.html content='html/error-text-inputs.html' %}
 
 In all cases, only show error validation messages or stylings after a user has interacted with a particular field.
 
@@ -73,26 +72,15 @@ The HTML for a typical error is:
 
 ## Hint text
 
-When a detailed form input label is not enough to convey the meaning or purpose of the input, we have three options for including additional information:
+When a detailed form input label is not enough to convey the meaning or purpose of the input, we have three options for including additional context:
 
-### Inline with the label
+1. [Beneath the label (default)](#default-hint-text)
+2. [Inline within the label](#inline-within-the-label)
+3. [Additional info](#additional-info)
 
-This should be used in the case where the needed clarification is very short.
+### Default hint text
 
-#### Example
-
-<div class="site-showcase">
-  <form class="usa-form">
-    <label class="vads-u-margin-top--0" for="input-type-text">Street address (20 characters maximum)</label>
-    <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
-  </form>
-</div>
-
-### As subtext beneath the label
-
-This should be used in the case where the needed clarification is a little longer, but less than two sentences. These should likely not wrap more than twice for a total of three lines.
-
-#### Example
+{% include component-example.html alt="The text-input component with hint text." file="/images/components/text-input/text-input-with-hint-text.png" caption="Hint text appears between the label and text-input field." width="50%" %}
 
 <div class="site-showcase">
   <form class="usa-form">
@@ -105,3 +93,24 @@ This should be used in the case where the needed clarification is a little longe
     <input class="usa-input" name="input-type-text" type="text">
   </form>
 </div>
+
+This should be used in the case where the needed clarification is a little longer, but less than two sentences. These should ideally not wrap more than twice for a total of three lines.
+
+### Inline within the label
+
+<div class="site-showcase">
+  <form class="usa-form">
+    <label class="vads-u-margin-top--0" for="input-type-text">Street address (20 characters maximum)</label>
+    <input class="usa-input" id="input-type-text" name="input-type-text" type="text">
+  </form>
+</div>
+
+This should be used in the case where the needed clarification is very short.
+
+### With Additional info
+
+{% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input--with-hint-text" %}
+
+Using the [additional info]({{ site.baseurl }}/components/additional-info) component should be used sparingly in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links and attempts at reducing the content have failed. 
+
+We want to avoid this variation when possible. If a field needs a lot of explanation, it should ideally be moved to a distinct page with explanation on the page itself. 
