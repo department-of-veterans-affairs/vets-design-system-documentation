@@ -111,6 +111,6 @@ This should be used in the case where the needed clarification is very short.
 
 {% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input--with-hint-text" %}
 
-Using the [additional info]({{ site.baseurl }}/components/additional-info) component should be used sparingly in cases where the needed clarification is long or complex, requiring more than two sentences, multiple paragraphs, or special formatting, such as bullet points or links and attempts at reducing the content have failed. 
+Using the [additional info]({{ site.baseurl }}/components/additional-info) component should only be done in cases where the needed clarification is long, complex, requiring more than two sentences or multiple paragraphs, or special formatting (bullet points, links, etc.). 
 
-We want to avoid this variation when possible. If a field needs a lot of explanation, it should ideally be moved to a distinct page with explanation on the page itself. 
+We want to avoid this variation when possible. Use of this component for this purpose is a last resort when attempts at reducing the content have failed. If a field needs a lot of explanation, it should ideally be moved to a distinct page with explanation on the page itself. 
