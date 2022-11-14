@@ -120,6 +120,22 @@ When the user is required to do something in response to an alert, let them know
 * If the alert appears within the page body content, it should be co-located with relevant content.
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
 
+### Placement
+
+#### Default alerts
+
+* In most cases, the Default alert (in all of its variations) should be placed directly below the H1 and intro text, near the top of the page. 
+* When a Default alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section.
+
+EXAMPLES TBA
+
+#### Background color only alerts
+
+* Background color only alerts should be placed directly below the H1 and intro text when the alert applies to the entire page. 
+* In forms, save-in-progress success and error background alerts should be placed directly below the Previous/Continue button pair. This placement allows for the page content to remain fixed in the same position even when the alert updates dynamically.  
+
+EXAMPLES TBA
+
 ### Choosing between variations
 
 By default use the standard Alert variation. Use the background-only variation for immediate feedback, such as in single-page applications or dynamic Javascript driven forms. 
