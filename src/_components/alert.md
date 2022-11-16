@@ -129,10 +129,10 @@ When the user is required to do something in response to an alert, let them know
 
 #### Background color only alerts
 
-Background color only alerts are used for immediate feedback, and most often are displayed after the user has updated a form.
+Background alerts are used for immediate feedback, and most often are displayed after the user has updated a form.
 
-* Background only alerts should be placed directly below the intro text, near the top of the page, when the alert message applies to the entire page.
-* When a Background only alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section adjacent to the group of form fields it describes.
+* Background alerts should be placed directly below the intro text, near the top of the page, when the alert message applies to the entire page.
+* When a Background alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section adjacent to the group of form fields it describes.
 * In forms, save-in-progress success and error Background alerts should be placed directly below the Previous/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.  
 
 ### Choosing between variations
