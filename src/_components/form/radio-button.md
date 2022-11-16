@@ -51,4 +51,3 @@ web-component: va-radio
 
 - Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 - Each radio button should have a `<label>`. Associate the two by matching the `<label>`’s `for` attribute to the `<input>`’s `id` attribute.
-- The `title` attribute can replace `<label>`.
