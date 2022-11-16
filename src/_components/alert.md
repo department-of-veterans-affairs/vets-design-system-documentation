@@ -154,6 +154,15 @@ Some roles, like role="region", help assistive technology identify the content a
 
 ARIA Specific Roles - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques
 
+### When do images or icons need alternative (alt) text?
+
+For accessibility best practices, we differentiate between images that are decorative and images that are informative.
+
+* **Decorative images:** Dividers or design items that do not provide additional context or content. They may exist on the page for purely aesthetic reasons. They don’t add to the information a user needs and they make little sense, or are unnecessary, when read with a screen reader. 
+* **Informative images:** convey some kind of information. To determine whether an image is informative or not, try removing it from the design. If information is missing with the image removed it means that the image is informative and needs alt text.
+
+Consider the purpose of your graphic and whether alt text will provide any information, benefit, or feeling (e.g. the icons used in this Alert component) **If the image will not provide information, benefit, or sentiment then do not provide alt text on the image.** For more information on why we must provide relevant and meaningful alt text and how to create quality alt text please refer to the content style guide on [Alternative text for images]({{ site.baseurl }}/content-style-guide/alternative-text-for-images).
+
 ## Related
 
 * [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable)
