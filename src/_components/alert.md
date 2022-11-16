@@ -143,6 +143,13 @@ By default use the standard Alert variation. Use the background-only variation f
 * Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
 * Don't automatically dismiss an alert based on a timer or time limit.
 
+### Decorative Icons -When Do Images Need Alt Text?
+
+* For accessibility best practices, we differentiate between images that are decorative and images that are informative.
+* Decorative images usually don’t need alt text. They may exist on the page for purely aesthetic reasons – in other words, Decorative items such as dividers or design items that do not provide additional context or content don’t need alt text. They don’t add to the information a user needs and they make little sense, or are unnecessary, when read with a screen reader. Consider the purpose of your graphic and whether alt text will provide any information, benefit, or feeling.
+For example, our Example Alerts icons we have here in the Design System.
+* Informative image convey some kind of information. The rule of thumb I use to determine whether an image is informative or not is to remove it from the design: if I am missing information because the image is gone, then it means the image is informative and needs alt text.
+
 ## Related
 
 * [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable)
