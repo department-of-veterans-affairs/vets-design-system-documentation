@@ -125,14 +125,14 @@ When the user is required to do something in response to an alert, let them know
 #### Default alerts
 
 * In most cases, the Default alert (in all of its variations) should be placed directly below the intro text, near the top of the page. 
-* When a Default alert is applicable to a specific section of content on a page, it can be placed directly below the header of that section.
+* When a Default alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section.
 
 #### Background color only alerts
 
 Background alerts are used for immediate feedback, and most often are displayed after the user has updated a form.
 
-* Background alerts should be placed directly below the intro text, near the top of the page, when the alert message applies to the entire page.
-* When a Background alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section adjacent to the group of form fields it describes.
+* Background alerts should be placed directly below the intro text, near the top of the page, when the alert applies to the entire page.
+* When a Background alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section and above the group of form fields it describes.
 * In forms, save-in-progress success and error Background alerts should be placed directly below the Previous/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.  
 
 ### Choosing between variations
