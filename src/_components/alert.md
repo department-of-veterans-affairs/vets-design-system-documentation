@@ -129,15 +129,13 @@ When the user is required to do something in response to an alert, let them know
 
 #### Background color only alerts
 
-Background alerts are used for immediate feedback, and most often are displayed after the user has updated a form.
-
 * Background alerts should be placed directly below the intro text, near the top of the page, when the alert applies to the entire page.
 * When a Background alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section and above the group of form fields it describes.
 * In forms, save-in-progress success and error Background alerts should be placed directly below the Previous/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.  
 
 ### Choosing between variations
 
-By default use the standard Alert variation. Use the background-only variation for immediate feedback, such as in single-page applications or dynamic Javascript driven forms. 
+Use the Default alert variation in most use cases and within static content pages. Use the Background alert variation for immediate feedback, such as in single-page applications or dynamic Javascript-driven forms. Background alerts are most often displayed immediately after the user has taken an action.
 
 {% include component-docs.html component_name=page.web-component %}
 
