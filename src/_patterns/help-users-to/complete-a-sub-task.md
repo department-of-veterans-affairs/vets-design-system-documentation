@@ -54,6 +54,13 @@ That one decision or question may require more than one input from the user as t
 
 ## Examples
 
+### Supplemental claim
+
+{% include component-example.html alt="Supplemental claim sub-task example." file="/images/patterns/help-users-to/complete-a-sub-task/supplemental-claim-sub-task.png" caption="Supplemental claim at sub-task at the start of the process to choose the correct path." width="50%" %}
+
+* An example of a task that helps the user determine if the supplemental claim service is suitable to their needs. It starts in screen 1 by asking the user to answer a single question via a radio button followed by a continue button that reveals either screen 2 or 3 based on the answer. This is in contrast to the deprecated Wizard pattern which progressively disclosed additional questions on the same screen. 
+* Once a user decides which type of Supplemental Claim they are filing they see screen 2 if the answer using the top radio button option or screen 3 if they answer using the bottom radio button option. Screen 2 allows the user to start the process and navigates to an introduction page. Screen 3 gives users a clear next step to take and ends the flow. 
+
 ### Pre-check-in experience
 
 {% include component-example.html alt="Check-in experience sub-task example." file="/images/patterns/help-users-to/complete-a-sub-task/Check-in-sub-task.png" caption="Pre-check-in sub-task." %}
