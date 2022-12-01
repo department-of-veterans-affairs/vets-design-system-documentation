@@ -79,7 +79,7 @@ Alerts should contain headings.
 
 ### Background color only alert
 
-Any style of alert box can be modified to be a background-color-only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They shouldn’t be used for static alert messaging.
+Any style of alert box can be modified to be a background-color-only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They should not be used for static alert messaging.
 
 {% include storybook-preview.html story="components-va-alert--background-only" height="352px" link_text="va-alert" %}
 
@@ -120,9 +120,23 @@ When the user is required to do something in response to an alert, let them know
 * If the alert appears within the page body content, it should be co-located with relevant content.
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
 
+### Placement
+
+#### Default alerts
+
+* In most cases, the Default alert (in all of its variations) should be placed directly below the intro text, near the top of the page. 
+* When a Default alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section.
+
+#### Background color only alerts
+
+* Background alerts related to a form field or section should be placed below the label, legend, or section header.
+* The info variation of the Background alert can be placed between sections.
+* Save-in-progress success and error Background alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
+
 ### Choosing between variations
 
-By default use the standard Alert variation. Use the background-only variation for immediate feedback, such as in single-page applications or dynamic Javascript driven forms. 
+* Use the Default alert variation in most use cases and within static content pages. Background alerts are not available in Drupal.
+* Use the Background alert variation for immediate feedback within forms and applications. Background alerts are most often displayed immediately after the user has taken an action, and can also be used for save-in-progress success and error messaging. 
 
 {% include component-docs.html component_name=page.web-component %}
 
