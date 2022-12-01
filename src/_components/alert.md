@@ -130,7 +130,7 @@ When the user is required to do something in response to an alert, let them know
 #### Background color only alerts
 
 * In most cases, a Background alert should be placed directly above the form field or group of fields it describes.
-* Save-in-progress success and error Background alerts should be placed directly below the Previous/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.  
+* Save-in-progress success and error Background alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.  
 
 ### Choosing between variations
 
