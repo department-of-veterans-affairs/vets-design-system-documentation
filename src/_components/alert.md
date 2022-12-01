@@ -129,7 +129,7 @@ When the user is required to do something in response to an alert, let them know
 
 #### Background color only alerts
 
-* Background error alerts related to a form field or section should be placed below the label, legend, or section header.
+* Background alerts related to a form field or section should be placed below the label, legend, or section header.
 * The info variation of the Background alert can be placed between sections.
 * Save-in-progress success and error Background alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
 
