@@ -17,11 +17,11 @@ anchors:
 
 ### When to use this pattern
 
-* **When a user may not be eligible for a benefit or service.** Providing users feedback on their eligibility for a benefit or service and providing them with a way to change their answers can help reduce a high rate of declined applications.
+* **When a user may not be eligible for a benefit or service.** Providing users feedback on their eligibility for a benefit or service, and enabling a way to change their answers, can help reduce a high rate of declined applications.
 
 #### Design principles
 
-* Providing users feedback on their eligibility gives them the control and freedom to exit what may be a lengthy process and provides a way to correct a mistake early in the process.
+* Presenting users feedback on their eligibility gives them the control and freedom to exit what may be a lengthy process and provides a way to correct a mistake early in the process.
 * This pattern may also be thought of as an example of [introducing useful friction in the process by anticipating possible errors](https://www.smashingmagazine.com/2018/01/friction-ux-design-tool/#anticipating-possible-errors) that would cause an application to be rejected.
 
 
