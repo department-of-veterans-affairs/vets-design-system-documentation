@@ -2,6 +2,8 @@
 layout: pattern
 title: Pattern name
 draft: true
+permalink: /patterns/[ask|help]-users-to]/[pattern name]
+sub-section: [ask-users-to|help-users-to]
 intro-text: "This text provides the overall purpose and function of the pattern."
 research-title: Use this to match the label in the research repo. 
 sketch-link: https://www.sketch.com/our-workspace-the-pattern-library/specific-page-for-this-pattern

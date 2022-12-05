@@ -82,10 +82,6 @@ That one decision or question may require more than one input from the user as t
 
 ## How to design and build 
 
-### Anatomy or layout details
-
-Details any containers of components or layout concerns for how the pattern may be implemented on a page or pages.
-
 ### How this pattern works
 
 * Use the principle of "One thing per page" where the "thing" is:
