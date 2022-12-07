@@ -30,6 +30,10 @@ anchors:
 
 ![contact information home address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/home-address.png)
 
+### Address confirmation
+
+{% include component-example.html alt="An Alert in a form flow that warns the user that the address they entered could not be found in U.S. Postal Service data." file="/images/patterns/ask-users-for/addresses/edit-mailing-address-confirmation.png" caption="Example of an alert warning a user that the address they entered does not match U.S. Postal service data and providing a way for them to correct their address or use the corrected address from the Postal service." width="50%" %}
+
 ## How to design and build 
 
 ### Layout details
@@ -79,6 +83,12 @@ Follow this guidance when asking for both mailing and home addresses. In some fo
 - **Add guidance on where users can go to edit their account information on all VA accounts.** Let the user know that when filling out contact information, they will have to edit their profile information. An example message is: *Any updates you make here to your contact information will only apply to this application. To update your contact information for all of your VA accounts, go to your profile page (link to profile).*
 - **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 - **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses “Yes”, they can skip the home address form. 
+
+### Address confirmation
+
+* **Check addresses against USPS data.** Confirm the user's address against U.S. Postal Service data and warn the user with a [warning Alert]({{ site.baseurl }}/components/alert#warning-alert) when the address they entered is potentially incorrect.
+* **Provide a way to edit or use the potentially incorrect address.** Provide a link to edit the address so that a user can correct any potential errors. Also provide a way for the user to override the address check and continue with the address they provided.
+
 
 ## Content considerations
 
