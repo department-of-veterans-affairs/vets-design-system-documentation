@@ -7,6 +7,7 @@ redirect_from:
 aka: Authenticated info list
 sub-section: help-users-to
 intro-text: "This pattern helps users quickly see a list of items related to their own personal information, as well as quickly navigate to answers to the questions they might have."
+research-title: Help users to check personal info
 status: use-with-caution-available
 contributors: Shawna Hein, Kevin Stachura
 anchors:
