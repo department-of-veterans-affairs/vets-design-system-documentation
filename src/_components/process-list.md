@@ -36,7 +36,7 @@ anchors:
 
 * **Be thoughtful about the number of steps.** A process list should include between three and ten steps to prevent it from getting too unwieldy or confusing.
 * **Do not stack.** Only one instance of this component should appear on a page.
-* **Do not mash up this component with other components.** This component should not be combined with an Accordion acting as the header for a step in the process. Content should be edited to fit the step, providing key information, and be visible by default. 
+* **Do not mash up this component with other components.** This component should not be combined with an Accordion acting as the header for a step in the process. Content should be edited to fit the step, provide key information, and be visible by default. 
 
 ### Placement
 
@@ -51,7 +51,7 @@ The Process list usually appears towards the top of the page after the title and
 ## Content considerations
 * **List headings should start with a verb.** Examples include "Prepare", "Apply", "Review", etc.
 * **Make headings clear and concise.** You can always write more content in paragraphs and other HTML elements below the heading.
-* **Make process step content clear and concise.** Process list should not be a container for many other components and text. Content should be brief and to the point when explaining a step in the process.
+* **Make process step content clear and concise.** Process list should not be a container for many other components and text. Use plain language and briefly explain the step in the process.
 
 ## Accessibility considerations
 
