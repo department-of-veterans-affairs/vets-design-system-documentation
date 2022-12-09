@@ -23,6 +23,10 @@ anchors:
 * **Visibility of system status.** This pattern demonstrates the [usability principle of communicating the current state](https://www.nngroup.com/articles/visibility-system-status/) in order to allow users to feel in control and to be able to take appropriate action.
 * **User control and freedom.** This pattern also gives users control over their own information thereby providing [control and freedom](https://www.nngroup.com/articles/user-control-and-freedom/).
 
+### When not to use this pattern
+
+* **When an update in this form will not update their VA.gov profile.**  If a contact information addition or change will **not** update the user's VA.gov profile then use the text "*Any updates you make here to your [type of contact information] will only apply to this application.*" 
+
 ### When to use caution
 
 * **Data that cannot be changed.** This pattern should not be used if the data cannot reliably be updated to reflect the user's intent. If most of the instances of user information can be updated with some exceptions then those exceptions may be called out to the user.

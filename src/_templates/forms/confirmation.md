@@ -26,7 +26,10 @@ The form confirmation page consists of:
 5. Action link  
 6. Helpful content  
 
-Examples of [confirmation pages in the wild can be seen here](https://dsva.slack.com/archives/C0NGDDXME/p1579042705077800)
+### Instances of this template in production
+
+{% include component-example.html alt="An example of a confirmation page." file="/images/templates/forms/confirmation/health-care-confirmation.png" caption="Example of the Apply for health care confirmation page." width="50%" %}
+
 
 ## Structure
 

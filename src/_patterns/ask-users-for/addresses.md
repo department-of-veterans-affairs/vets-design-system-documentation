@@ -21,18 +21,24 @@ anchors:
 ## Examples
 
 ### Single address
-![contact information single address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/single-address.png)
+
+{% include component-example.html alt="An example of a single address form." file="/images/patterns/ask-users-for/addresses/single-address.png" caption="Example of a form collecting a single address." width="50%" %}
 
 ### Mailing address
-![contact information mailing address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/mailing-address.png)
+
+{% include component-example.html alt="An example of a mailing address form." file="/images/patterns/ask-users-for/addresses/mailing-address.png" caption="Example of a form collecting a mailing address." width="50%" %}
 
 ### Home address
 
-![contact information home address template]({{site.baseurl}}/images/patterns/ask-users-for/addresses/home-address.png)
+{% include component-example.html alt="An example of a home address form." file="/images/patterns/ask-users-for/addresses/home-address.png" caption="Example of a form collecting a home address." width="50%" %}
 
 ### Address confirmation
 
 {% include component-example.html alt="An Alert in a form flow that warns the user that the address they entered could not be found in U.S. Postal Service data." file="/images/patterns/ask-users-for/addresses/edit-mailing-address-confirmation.png" caption="Example of an alert warning a user that the address they entered does not match U.S. Postal service data and providing a way for them to correct their address or use the corrected address from the Postal service." width="50%" %}
+
+### Prefill information
+
+{% include component-example.html alt="An information box in a form flow that tells the user that some information has been prefilled from their VA.gov profile." file="/images/patterns/ask-users-for/addresses/prefill.png" caption="Example of an informational message informing a user that information from their profile has been prefilled into the form below." width="50%" %}
 
 ## How to design and build 
 
@@ -80,14 +86,18 @@ Here is the content structure for asking a user for multiple addresses:
 
 Follow this guidance when asking for both mailing and home addresses. In some forms, we ask for both addresses because some veterans live in different homes depending on the time of year.
 
-- **Add guidance on where users can go to edit their account information on all VA accounts.** Let the user know that when filling out contact information, they will have to edit their profile information. An example message is: *Any updates you make here to your contact information will only apply to this application. To update your contact information for all of your VA accounts, go to your profile page (link to profile).*
 - **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 - **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses “Yes”, they can skip the home address form. 
+- **Indicate to users whether an update in this form will update their VA.gov profile.**  If an address addition or change will **not** update the user's VA.gov profile then use the text "*Any updates you make here to your address will only apply to this application.*" Refer to the [Help users to know how their information is updated pattern]({{ site.baseurl }}/patterns/help-users-to/know-how-their-information-is-updated) for information on how to communicate that an update will be reflected in their profile.
 
 ### Address confirmation
 
 * **Check addresses against USPS data.** Confirm the user's address against U.S. Postal Service data and warn the user with a [warning Alert]({{ site.baseurl }}/components/alert#warning-alert) when the address they entered is potentially incorrect.
 * **Provide a way to edit or use the potentially incorrect address.** Provide a link to edit the address so that a user can correct any potential errors. Also provide a way for the user to override the address check and continue with the address they provided.
+
+### Prefill information
+
+* **Inform users when prefilling information from VA.gov profile.** When information is pre-populated into a form we notify users with the message: "We’ve prefilled some of your information from your account. If you need to correct anything, you can edit the form fields below." Use of this message should be combined with informing the user whether or not a change made here will be reflected in their profile as well (see "Indicate to users whether an update in this form will update their VA.gov profile" above)
 
 
 ## Content considerations
