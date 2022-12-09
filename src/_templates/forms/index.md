@@ -85,12 +85,15 @@ Some examples start here (use the right arrow key to navigate through): [https:/
 
 ### Cross-Page Topics
 
-#### Legalese Vs Plain Language
+#### Legalese vs. Plain Language
+
 (Reference: [https://dsva.slack.com/archives/C0NGDDXME/p1579133450082200](https://dsva.slack.com/archives/C0NGDDXME/p1579133450082200))
 
 In general, our online forms should not be framed as a 1:1 mapping of the paper form - in other words, what we are building are data collection mechanisms for the forms themselves, and therefore do not need approval in the same way the forms themselves do.  Therefore, the language does not need to map 1:1 to the paper forms.  In general, voice and tone strategy on our online pages should use plain language.
 
-A legal memo addresses this situation.: “As long as the underlying, approved form is not altered and the interactive materials essentially collect the same information, then OIRA considers these applications a nonsubstantive change to an already approved collection, and would encourage their development.” ([https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf)).
+A [legal memo](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf) addresses this situation: 
+
+> “As long as the underlying, approved form is not altered and the interactive materials essentially collect the same information, then OIRA considers these applications a nonsubstantive change to an already approved collection, and would encourage their development.” 
 
 For legal or regulatory content, however, we need to use judgment and be careful. Sometimes this might mean providing a plain language summary and the legal language in parentheses for reference. We’ve sometimes used this approach on the public website unauthenticated pages. For tools and authenticated experiences, you can use things like the “learn more” dropdown or modals to have plain language versions alongside legal definitions.
 
@@ -100,8 +103,8 @@ You may need to get PRA approval or other kinds of approval if you are tweaking 
 
 There are a few documents that have been written to help PMs and their teams structure how and when they do things when embarking on a form project for VA.gov: 
 
-* [https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-resources/form-design-process.md](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-resources/form-design-process.md)
-* [https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/content-process-modernizing-VA-forms.md](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/content-process-modernizing-VA-forms.md)
+* [VA.gov form design process](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-resources/form-design-process.md)
+* [Content process for modernizing VA.gov forms](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-content-process.md)
 
 This document will not attempt to rewrite those documents, however, we will provide a few tips per practice area:
 
@@ -111,7 +114,7 @@ This document will not attempt to rewrite those documents, however, we will prov
    * What are the stakeholder needs?
    * What fields are actually required? What is optional? Based on user research, are there any fields we can drop?
    * Do we already know of any potentially triggering / invasive / confusing questions that are required? Do we really need to have those fields? If so, what kind of things can we say to explain why they are there? 
-   * Start discussions on security & privacy with the platform security team (POC effective 11/2021: Thomas Delrue)
+   * Start discussions on security & privacy with the platform security team (POC effective 12/2022: Mike Chelen)
    * Document these answers in a Product Outline.
 * If you'd like to think about analytics for your form, Platform Analytics also has [documentation for adding analytics for forms](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/analytics/google-analytics/data-dictionary-form-events.md).
 
@@ -125,7 +128,7 @@ This document will not attempt to rewrite those documents, however, we will prov
 * If there is an already existing form of some kind:
    * How are users currently using the form and process? What can we learn from that?
    * Take all the fields on the form and think about them as individual components. Then group them together logically to start determine how your chapters and pages are going to be laid out
-   * Some folks have found it helpful to create a text-based outline of the form fields - to do some of the high level grouping and organization before getting into Sketch -- something like this: [https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/pension/pension-outline.md](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/pension/pension-outline.md)
+   * Some folks have found it helpful to create a text-based outline of the form fields - to do some of the high level grouping and organization before getting into Sketch -- something like this: [21P-527EZ Pension Outline](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/pension/pension-outline.md)
       * An excel spreadsheet could also be helpful for this
    * Build a wireflow or flow diagrams to show at a high level how things are going to work
    * Create your final wireframes
