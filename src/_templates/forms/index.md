@@ -116,7 +116,7 @@ This document will not attempt to rewrite those documents, however, we will prov
    * Do we already know of any potentially triggering / invasive / confusing questions that are required? Do we really need to have those fields? If so, what kind of things can we say to explain why they are there? 
    * Start discussions on security & privacy with the platform security team (POC effective 12/2022: Mike Chelen)
    * Document these answers in a Product Outline.
-* If you'd like to think about analytics for your form, Platform Analytics also has [documentation for adding analytics for forms](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/analytics/google-analytics/data-dictionary-form-events.md).
+* If you'd like to think about analytics for your form, Platform Analytics also has [documentation for adding analytics for forms](https://depo-platform-documentation.scrollhelp.site/analytics-monitoring/google-analytics-data-dictionary)
 
 ### Designers
 * User research discovery
@@ -160,5 +160,5 @@ This document will not attempt to rewrite those documents, however, we will prov
       * Some things aren’t possible using the forms system; it’s best to find out if your form has any of those as soon as possible so the design can be reconsidered if needed
    * While your form’s schema is in heavy development, keep it in vets-website to avoid updating the vets-json-schema dependency on every branch; once it’s settled down, move it to vets-json-schema
    * Make sure to be regularly communicating with your designer(s) to ensure you understand requirements, and collaborate with them on coming up with tweaks to the designs if necessary
-* **For QA**, there exist some [e2e test helpers for testing forms](https://github.com/department-of-veterans-affairs/vets-website/tree/master/src/platform/testing/e2e/form-tester). The code is fairly nicely commented though but there isn't a lot of documentation about how to use them as far as we know. 
+* **For QA**, there exist some [e2e test helpers for testing forms](https://depo-platform-documentation.scrollhelp.site/developer-docs/end-to-end-testing-with-cypress). The code is fairly nicely commented though but there isn't a lot of documentation about how to use them as far as we know. 
 * **For Accessibility**, you will need to build comprehensive e2e tests for these form views, and that includes axe checks for every page. Ideally, these happen just before navigating away from a page, not immediately after loading the page. That way we get a good feel for all the content, and hidden content like progressive questions are surfaced. [More guidance can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/accessibility/guidance/staging-review-processes.md).
