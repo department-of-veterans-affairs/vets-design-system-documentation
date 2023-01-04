@@ -19,10 +19,12 @@ anchors:
 * **When you need to collect an email address.** For example, for contact information.
  
 ## Examples
-<img width="699" alt="prepopulated-email-address" src="https://user-images.githubusercontent.com/97645218/209711675-f76129e5-a64d-4378-9cf5-f4ed49c2e21f.png">
+### Default
+{% include component-example.html alt="An email address label and field." file="/images/patterns/ask-users-for/email-address/prepopulated-email-address.png" caption="A prefilled email address label and field." class="x2" %}
 
+### Prefill information
 
-![prefill-information](https://user-images.githubusercontent.com/97645218/209711684-9c8aa414-14b7-4e3c-9e3f-c7aaa15967b1.png)
+{% include component-example.html alt="An information box in a form flow that tells the user that some information has been prefilled from their VA.gov profile." file="/images/patterns/ask-users-for/addresses/prefill.png" caption="Example of an informational message informing a user that information from their profile has been prefilled into the form below." class="x2" %}
 
 ## How to design and build 
 
