@@ -22,7 +22,7 @@ sub-pages:
 1. **[Introduction page](#introduction-page).** Includes a call-to-action to login if relevant and a subway map / timeline of what the user can expect when filling out the form.
 1. **[Main form pages](#main-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
 1. **[Review page]({{ site.baseurl }}/patterns/help-users-to/check-answers).** Allows the user to review information and make edits if necessary.
-1. **[Confirmation page]({{ site.baseurl }}/templates/confirmation).** Gives users information about what they can expect after they submit an online application.
+1. **[Confirmation page]({{ site.baseurl }}/templates/forms/confirmation).** Gives users information about what they can expect after they submit an online application.
 
 
 ## Pages
