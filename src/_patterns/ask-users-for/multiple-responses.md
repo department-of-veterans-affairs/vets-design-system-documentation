@@ -55,7 +55,7 @@ This variation was the first to be created and thus is considered the default an
 
 #### What to watch out for 
 
-* The "Add another..." secondary button is always visible allowing the user to add additional sets of fields before filling out and saving the first set. This can get the user into an error condition that may be confusing.
+* The "Add another..." secondary button is always visible allowing the user to add additional sets of fields before filling out and saving the first set. This can get the user into an error condition that may be confusing. Therefore consider whether one of the alternative variations would be better suited to the collection of multiple responses.
 
 ### Code considerations
 
@@ -91,7 +91,7 @@ This method shows all items on one page in a list with an "Add a new [item]" [Li
 {% include component-example.html alt="Form example allowing user to select issues from a list." file="/images/patterns/ask-users-for/multiple-responses/add-item.png" caption="Form allowing a Veteran to select health issues for review in a claim." class="x2" %}
 
 * Items are displayed in a list with checkboxes for selecting items.
-* The "Add a new [item]" is display using the [Link - Action (primary)]({{ site.baseurl }}/components/link/action#primary) component.
+* The "Add a new [item]" is displayed using the [Link - Action (primary)]({{ site.baseurl }}/components/link/action#primary) component.
 * The "Add a new [item]" link directs the user to a new page with the form elements for adding an item. 
 * Upon completion, a "add" or "update" button returns the user to the original page with the new item added. A "Cancel" button returns the user to the original page without any changes. 
 
