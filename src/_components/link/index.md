@@ -61,11 +61,10 @@ anchors:
 ### When to use an Active link
 
 * **Collections, such as Hub pages.** Active links can be seen on [Hub pages]({{ site.baseurl }}/templates/hub#example)
-* **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links are accompanied by a right-facing chevron icon for more emphasis. 
+* **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. 
 
 ### When to use a Download link
 * **Downloading files.** Use for download links including but not limited to PDFs and Excel files. The download icon is optional but encouraged.
-
 
 ### When to consider something else
 
