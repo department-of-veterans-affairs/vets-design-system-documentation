@@ -46,6 +46,10 @@ anchors:
 
 - Use when linking to a YouTube channel.
 
+### Calendar
+
+{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="25px" %}
+
 ## Usage
 
 ### When to use a default link
