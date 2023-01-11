@@ -89,5 +89,4 @@ Some examples of other content or questions are:
 
 Helpful content will vary depending on the form. Use the H3 highlight for the title and always label it “Need help?”. The content usually points the user to a number they can call if they need help with their form. 
 
-## Related
-- [Form Confirmation Page content guidance](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-confirmation-page.md) (GitHub)
+
