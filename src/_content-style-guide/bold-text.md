@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Bold text
+title: Bold & italic text
 ---
 
-# Bold text
+# Bold & italic text
+
+## Bold text
 
 Use bolded text to call attention to words or phrases that will help the Veteran understand the content on the page.
-
-**Note:** Don’t use italics. It doesn’t show up well on a screen, and sometimes it can be harder to read than normal text.
 
 **Use bold text only in these cases**
 
@@ -25,3 +25,7 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 - In any part of a text link, since the blue and underlining sets apart that text enough.
 - For words used to emphasize a point being made in the text, like “only if.”
 - When the label is serving as a subhead. Use an H3 or an H4 instead. Screen readers navigate around the page by headings. If the subhead text is bold, the screen reader will skip that section of the page.
+
+## Italic text
+
+* **Don’t use italics.** It doesn’t show up well on a screen, and sometimes it can be harder to read than normal text.

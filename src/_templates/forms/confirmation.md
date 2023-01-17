@@ -48,12 +48,10 @@ After the H1 there should be a line of content letting users know that they succ
 
 Example messages of success alerts on form confirmation pages:
 
-**You’ve successfully submitted your application.**
-Once we’ve reviewed your application, a Caregiver Support Coordinator will contact you to discuss next steps. 
+>**You’ve successfully submitted your application.** <br>
+Once we’ve reviewed your application, a Caregiver Support Coordinator will contact you to discuss next steps.
 
-**We've received your application.**
-![Success alert](https://user-images.githubusercontent.com/97645218/211619870-c41165f7-75b0-415a-9ec4-77eab3c2da62.png)
-
+>We've received your application.
 
 ### Print this page pattern 
 
@@ -63,7 +61,7 @@ Include a line of content letting users know they can print the page for their r
 
 Example message:
 
-![Print this page](https://user-images.githubusercontent.com/97645218/211620469-bb9eb94a-8d79-4c68-bde0-245913a38812.png)
+>Please print this page for your records.
 
 The print this page pattern consists of the [Featured content component]({{ site.baseurl }}/components/featured-content), content, and a “Print this page” [default blue button]({{ site.baseurl }}/components/button). 
 
@@ -91,13 +89,13 @@ Some examples of other questions we might want to include on a form's confirmati
 - Are there any actions the applicant needs to take while they wait?
 - What can the applicant do if they have additional questions after they apply?
  
- Some examples of other content we might want to include on a form's confirmation page are:
+Some examples of other content we might want to include on a form's confirmation page are:
  
- Letting the applicant know that VA might contact them for more information or documents.
+Letting the applicant know that VA might contact them for more information or documents.
  
- Example message:
+Example message:
  
- ![Contact for more information](https://user-images.githubusercontent.com/97645218/211622872-0875dad7-ef37-4b5e-86ad-0be6d6af6f1c.png)
+>We may contact you if we need more information or documents.
 
 ### Action link
 
