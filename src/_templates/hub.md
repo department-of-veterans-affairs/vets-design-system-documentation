@@ -69,11 +69,11 @@ At the bottom of every Hub page, we list benefits that are related to, but not p
 
 ## Right rail
 
-The right rail contains [this kind] of content. More stuff about the right rail.
+The right rail is the content area on the right side of the page. It is used to house additional information that is supplemental to the main content on the page. The right rail contains distinct blocks of content that can include headers, paragraphs, links, images, and accordions.
 
 ### Promo spot
 
-The top of the right rail contains our Promo spot. I don't know anything about this content, but it seems like it should be a component in our design system
+In the first position within the right rail, at the top, we include a Promo spot with a visual image that complements the main content on the page. The Promo spot is informational.
 
 ### Accordion
 
