@@ -3,62 +3,62 @@ on:
   push:
     branches:
       - main
+      - staging
+      - dev
 
 jobs:
   deploy:
-    strategy:
-      matrix:
-        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Use Node.js 14.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: 14.x
-        cache: 'npm'
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7.5 # Not needed with a .ruby-version file
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: npm install
-    - run: npm run-script build
-    - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
-    - name: Make BUILD.txt file
-      # The -e flag enables the interpretation of the \n newline character
-      run: |
-        echo -e "REF=${{ github.sha }}\n\
-        BUILD_ID=${{ github.run_id }}\n\
-        BUILDTIME=$(date)" > _site/BUILD.txt
-    # We are taking these extra steps due to some differences between Jekyll and AWS S3.
-    # To access a .html file served from S3, the URL needs to have the .html extension.
-    # We're removing the extension to make the URLs prettier.
-    # More context:
-    #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
-    - name: Remove .html extension on non-index files
-      run: |
-        find _site/ -type f ! -iname 'index.html' -iname '*.html' \
-        -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
-    - uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: "us-gov-west-1"
-    - name: Sync extensionless html files with correct type
-      run: |
-        aws s3 sync _site s3://${{ matrix.environment.bucket }} \
-        --acl public-read \
-        --delete \
-        --exclude "storybook/*" \
-        --exclude "*.*" \
-        --content-type "text/html"
-    - name: Sync remaining files
-      run: |
-        aws s3 sync _site s3://${{ matrix.environment.bucket }} \
-        --acl public-read \
-        --delete \
-        --exclude "*" \
-        --include "*.*" \
-        --exclude "storybook/*"
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: "npm"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.5 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: npm install
+      - run: npm run-script build
+      # If you use a "Github Actions Linter" of some kind, it may complain about the expression here and below, but promise it actually works!
+      - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ vars[format('{0}_CONFIG', github.ref_name)] }}
+      - name: Make BUILD.txt file
+        # The -e flag enables the interpretation of the \n newline character
+        run: |
+          echo -e "REF=${{ github.sha }}\n\
+          BUILD_ID=${{ github.run_id }}\n\
+          BUILDTIME=$(date)" > _site/BUILD.txt
+      # We are taking these extra steps due to some differences between Jekyll and AWS S3.
+      # To access a .html file served from S3, the URL needs to have the .html extension.
+      # We're removing the extension to make the URLs prettier.
+      # More context:
+      #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
+      - name: Remove .html extension on non-index files
+        run: |
+          find _site/ -type f ! -iname 'index.html' -iname '*.html' \
+          -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-gov-west-1"
+      - name: Sync extensionless html files with correct type
+        run: |
+          aws s3 sync _site s3://${{ vars[format('{0}_BUCKET', github.ref_name)] }} \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*" \
+          --exclude "*.*" \
+          --content-type "text/html"
+      - name: Sync remaining files
+        run: |
+          aws s3 sync _site s3://${{ vars[format('{0}_BUCKET', github.ref_name)] }} \
+          --acl public-read \
+          --delete \
+          --exclude "*" \
+          --include "*.*" \
+          --exclude "storybook/*"
