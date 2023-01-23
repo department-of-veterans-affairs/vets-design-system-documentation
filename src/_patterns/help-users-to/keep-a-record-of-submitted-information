@@ -1,0 +1,45 @@
+---
+layout: pattern
+permalink: /patterns/help-users-to/keep-a-record-of-submitted-information
+sub-section: help-users-to
+title: Keep-a-record-of-submitted-information
+intro-text: "This pattern provides the user with a printable record of their submission."
+status: Use: deployed
+anchors:
+  -anchor: Usage
+  -anchor: Examples
+  -anchor: How to design and build
+  -anchor: Content considerations
+---
+
+## Usage
+
+### When to use this pattern
+
+**When you are collecting information from users on a long form.** The pattern provides the user with a printable record of their submission. A printed record provides a reference for future use and helps to confirm a successful form submission.
+
+## Examples
+### Confirmation page summary
+![Confirmation page summary]({{ site.baseurl }}/images/components/card/status.png)
+
+### Print preview of confirmation page summary
+![Print preview of confirmation page summary]({{ site.baseurl }}/images/components/card/status.png)
+Images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page.png
+
+
+## How to design and build
+### How this pattern works
+
+- **Create a summary of submitted information.** Include a title for the summary page. An example message is: *Your application information*
+- **Include a recap of submitted information.** Include the applicant's name and date of application.
+- **Inform users to print the confirmation for their records.** Notify users that they can print or download their application information. An example message is: *You can print this confirmation page for your records. You can also download your completed application as a PDF.*
+- **Include a "Print this page" button.** A printed record provides a reference for future use. The "Print this page" button appears at the bottom of the summary page.
+- **Include a link to download the completed application in PDF format.** The download link appears below the "Print this page" button.
+
+## Content considerations
+The print styling differs between the VA and USWDS systems, but their high-level guidance is still relevant. Link to USWDS Keep a record pattern
+
+## Accessibility considerations
+Link to Accessibility section of USWDS
+[VA Notify](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify)
+https://design.va.gov/about/maturity-scale
