@@ -37,9 +37,10 @@ Images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmatio
 - **Include a link to download the completed application in PDF format.** The download link appears below the "Print this page" button.
 
 ## Content considerations
-The print styling differs between the VA and USWDS systems, but their high-level guidance is still relevant. Link to USWDS Keep a record pattern
+The print styling differs between the VA and USWDS systems, but their high-level guidance is still relevant. Link to USWDS Keep a record pattern: 
+[USWDS](https://designsystem.digital.gov/patterns/complete-a-complex-form/keep-a-record/)
 
 ## Accessibility considerations
-Link to Accessibility section of USWDS
-[VA Notify](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify)
-https://design.va.gov/about/maturity-scale
+Link to Accessibility section of USWDS:
+[USWDS](https://designsystem.digital.gov/patterns/complete-a-complex-form/keep-a-record/#section_9)
+
