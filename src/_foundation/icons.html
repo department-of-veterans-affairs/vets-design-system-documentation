@@ -1,0 +1,102 @@
+---
+layout: default
+title: Icons
+anchors:
+  - anchor: Feedback
+  - anchor: Health
+  - anchor: Hub
+  - anchor: Identification
+  - anchor: Interaction
+  - anchor: Messaging
+  - anchor: Navigation
+  - anchor: Notifications
+  - anchor: Profile
+  - anchor: Scheduling
+  - anchor: Social
+  - anchor: Accessibility considerations
+---
+
+<h1 id="icons">Icons</h1>
+
+{% assign icons = site.data.icons %}
+
+<div class="va-introtext">
+  We leverage Font Awesome (v5.15.4) icons to communicate meaning, action, status, or feedback.
+</div>
+
+{% include _site-on-this-page.html %}
+
+{% for section in icons %}
+<h2 id="{{ section[0] | downcase }}">{{ section[0] }}</h2>
+<table class="usa-table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">Icon</th>
+      <th scope="col">HTML</th>
+      <th scope="col">Unicode</th>
+      <th scope="col">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for icon in section[1] %}
+    <tr>
+      <th scope="row">
+        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+      </th>
+      <td><code>&lt;i class="{{ icon.fa-class }}">&lt;/i></code></td>
+      <td><code class='code-fa'>&amp;{{ icon.unicode }}</code></td>
+      <td>
+        {% if icon.additional-usage %}
+          {% assign usage = icon.name | append: ', ' | append: icon.additional-usage %}
+          {{ usage }}
+        {% else if %}
+          {{ icon.name }}
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+
+<h2 id="Accessibility-considerations">Accessibility considerations</h2>
+<ul>
+  <li>When using a decorative icon, it shouldn’t be read out to screen-reader users because it doesn’t add to their understanding. Icons should be accompanied with text.</li>
+  <li>All interactive accessible icons must be keyboard accessible and touch accessible as well as clickable via a mouse.</li>
+</ul>
+
+<h3 id="when-to-use-roleimg">When to use <code>role="img"</code></h3>
+<p>
+  If an icon is being used alone (without support text), it should have a `role="img"` AND appropriate ARIA markup OR screen reader only descriptive text.
+</p>
+
+<h3 id="when-to-use-rolepresentation">When to use</h3>
+<p>
+  If an icon is being used with visual (and assistive device) text, it should have `role="presentation"`.
+</p>
+
+<h3 id="examples">Examples</h3>
+<p>
+  Here are a few examples of icons being used in different contexts:
+</p>
+
+<h4 id="icon-being-used-alone">Icon being used alone</h4>
+
+<pre><code class="language-html">&lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} /&gt;</code></pre>
+
+<h4 id="icon-being-used-with-supporting-text">
+  Icon being used with supporting text
+</h4>
+
+<pre><code class="language-html">&lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} /&gt; Help </code></pre>
+
+<h4 id="icon-being-used-alone-inside-an-a-tag">Icon being used alone inside an <code>&lt;a&gt;</code> tag</h4>
+
+<pre><code class="language-html">&lt;a href="#"&gt; &lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} /&gt; &lt;/a&gt;</code></pre>
+
+<h4 id="icon-being-used-with-supporting-text-inside-an-a-tag">
+  icon being used with supporting text inside an <code>&lt;a&gt;</code> tag
+</h4>
+
+<pre><code class="language-html">&lt;a href="#"&gt; &lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} /&gt; Help &lt;/a&gt;</code></pre>
+
