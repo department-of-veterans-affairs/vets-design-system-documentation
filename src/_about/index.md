@@ -83,3 +83,15 @@ The Design System supports older and newer browsers through progressive enhancem
     </div>
   </div>
 </div>
+
+### Use of this Design System beyond VA.gov
+
+The [21st Century Integrated Digital Experience Act (IDEA)](https://digital.gov/resources/21st-century-integrated-digital-experience-act/), signed into law in December 2018, requires teams at VA to consider using the [U.S. Web Design System](https://designsystem.digital.gov/), and to coordinate and ensure alignment of internal and external programs. Thus we strongly encourage you to use the VA design system and/or the US Web Design System as you're building products, whether for an internal or external audience. However, there is currently no requirement to follow the guidance in this design system for internal tools.
+
+From [21st Century IDEA](https://www.congress.gov/bill/115th-congress/house-bill/5759/text):
+
+> (c) Internal Digital Services.--The head of each executive agency shall ensure, to the greatest extent practicable, that any Intranet established after the date of enactment of this Act conforms to the requirements described in subsection (a).
+
+While Subsection A does not mandate use of the U.S. Design System for internal tools, it does indicate that it is part of the strategy an agency should employ:
+
+> coordinate and ensure alignment of the internal and external customer experience programs and strategy of the executive agency; and Compliance With United States Website Standards.--Any website of an executive agency that is made available to the public after the date of enactment of this Act shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration.

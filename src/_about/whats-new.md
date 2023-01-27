@@ -9,6 +9,42 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## Winter 2022-2023
+
+### New and updated components
+
+* Added SMS option to va-telephone component
+* Added autocomplete prop to va-text-input
+* Tagalog translation added to va-text-input 
+* Tagalog translation added to va-accordion
+* Added calendar variation to va-link
+
+### Deprecated React components
+
+* AcceptTerms
+* HelpMenu
+* IconHelp
+* PrivacyAgreement
+
+### Sketch Library updates
+
+* Accordion - Two-line header variation
+* Alert - Action link variation for sign-in/tool prompt alert
+* Link - Calendar variation
+* USWDS upgrade - New symbols for four USWDS components: Radio button, Text input, Memorable date, and US Banner
+
+### Documentation updates
+
+* Added [Help users to know how their information is updated]({{ site.baseurl }}/patterns/help-users-to/know-how-their-information-is-updated)
+* Added [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information)
+* Updated [Ask users for Multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses)
+* Updated [Ask users for addresses]({{ site.baseurl }}/patterns/ask-users-for/addresses)
+* Updated [Ask users for email address]({{ site.baseurl }}/patterns/ask-users-for/email-address)
+* Updated [Ask users for files]({{ site.baseurl }}/patterns/ask-users-for/files)
+* Updated [Ask users for signature]({{ site.baseurl }}/patterns/ask-users-for/signature)
+* Updated [Help users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task)
+
+
 ## September 2022
 
 ### New and updated components
@@ -107,18 +143,3 @@ New component symbols:
 - [Modal web component]({{ site.baseurl }}/components/modal)
 - [Date web component]({{ site.baseurl }}/components/form/date-input)
 - [Number input web component]({{ site.baseurl }}/components/form/number-input)
-
-## April 2022
-
-- System wide navigation changes
-  - The side navigation now shows sub-pages rather than in-page anchor links. Anchor links are now reflected using the "On this page" component which you'll find at the top of any lengthy page.
-  - Experimental Design components and patterns moved into their respective Components and Patterns sections.
-  - The "Documentation" section was renamed "About".
-  - The "Design" section was renamed "Foundation".
-  - Utilities and Layout moved into the Foundation section.
-- [Maturity scale]({{ site.baseurl }}/about/maturity-scale): We've introduced a maturity scale to track the lifecycle of components and patterns. This allows experimental design elements to come into the system and have visibility in the Components and Patterns sections. Each component and pattern has been assigned a maturity level on the scale which is indicated by a tag and dot in the side navigation.
-- Section pages: Top-level navigation sections, such as Patterns and Foundation, now have sub-sections that group similar elements. These new section pages will also have general guidance that applies to everything in that section. This will allow us to grow the system. 
-  - New sections:
-    - [Foundation > Layout]({{ site.baseurl }}/foundation/layout/) 
-    - [Foundation > Utilities]({{ site.baseurl }}/foundation/utilities/) 
-- Table web component
