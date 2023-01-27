@@ -30,6 +30,14 @@ anchors:
 
 {% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="25px" %}
 
+### Calendar
+
+{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="25px" %}
+
+### Channel
+
+{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="25px" %}
+
 ### Download
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="25px" %}
@@ -37,18 +45,6 @@ anchors:
 ### Video
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="25px" %}
-
-- Use when linking directly to a YouTube video.
-
-### Channel
-
-{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="25px" %}
-
-- Use when linking to a YouTube channel.
-
-### Calendar
-
-{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="25px" %}
 
 ## Usage
 
@@ -63,8 +59,18 @@ anchors:
 * **Collections, such as Hub pages.** Active links can be seen on [Hub pages]({{ site.baseurl }}/templates/hub#example)
 * **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. 
 
+### When to use a Calendar link
+* **Adding an event to a calendar.** Use when the link adds an event to a digital calendar.
+
+### When to use a Channel link
+* **YouTube channel.** Use when linking to a YouTube channel.
+
 ### When to use a Download link
-* **Downloading files.** Use for download links including but not limited to PDFs and Excel files. The download icon is optional but encouraged.
+* **Downloading files.** Use for download links including but not limited to PDFs and Excel files.
+
+### When to use a Video link
+* **YouTube Video.** Use when linking directly to a YouTube video.
+
 
 ### When to consider something else
 
@@ -73,18 +79,26 @@ anchors:
 * **Table of contents.** When you want to make a long page of content with two or more H2s easier to navigate, use an [On this page link]({{ site.baseurl }} /components/on-this-page).
 * **Triggering the generation of a PDF.** When using for a PDF, use only for linking directly to a PDF, not as a trigger for a process that generates a PDF. For [generating a PDF, use a button](#links-vs-buttons).
 
-### Behavior
+### How this component works
 
-- **Open in the same window except in certain instances.** Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
-- **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
+* **Use icons as defined.** [Icons]({{ site.baseurl }}/foundation/icons/) defined in the link variations above are reserved for that distinct usage. These icons should not be used for another purpose without explicit permission to do so from the Design System Council.
 
-### Implementation details
+#### Implementation details
 
 If for some reason you do not use a link web-component links must meet the following criteria:
 
 - All links use Source Sans Pro (Regular), underlined, at 16px.
 - All links share the same color (`$color-link-default` `#004795`) for icon, link text, and underline. 
 - All text links should be underlined. This is especially important for low-vision users. (Exception: [side navigation links]({{ site.baseurl }}/components/sidenav) should not be underlined.)
+
+### Behavior
+
+- **Open in the same window except in certain instances.** Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
+- **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
+
+### Choosing between variations
+
+[Review the usage section](#usage) for guidance.
 
 ## Content considerations
 
