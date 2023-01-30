@@ -13,6 +13,7 @@ title: What’s new?
 
 ### New and updated components
 
+* Updated the Link - Collection component to add an example of a Section collection.
 * Added SMS option to va-telephone component
 * Added autocomplete prop to va-text-input
 * Tagalog translation added to va-text-input 
@@ -35,6 +36,7 @@ title: What’s new?
 
 ### Documentation updates
 
+* Updated [icons]({{ site.baseurl }}/foundation/icons/) to more accurately reflect the icons in use across VA.gov.
 * Added [Help users to know how their information is updated]({{ site.baseurl }}/patterns/help-users-to/know-how-their-information-is-updated)
 * Added [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information)
 * Updated [Ask users for Multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses)

@@ -98,7 +98,7 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ### Choosing between variations
 
-[Review the usage section](#usage) for guidance.
+Review ["Usage"](#usage) for guidance.
 
 ## Content considerations
 

@@ -55,7 +55,7 @@ anchors:
 
 ### Choosing between variations
 
-Review the [when to use a collection](##when-to-use-a-collection) section for guidance.
+Review ["When to use a Collection"](#when-to-use-a-collection) for guidance.
 
 ### Placement
 
