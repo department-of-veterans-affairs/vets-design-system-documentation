@@ -9,6 +9,7 @@ contributors: "Shawna Hein (VSA Design Lead), Jonathan Nelson, Liz Lantz, Christ
 status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
+  - sub-page: Introduction
   - sub-page: Confirmation
 ---
 

@@ -6,10 +6,12 @@ title: Confirmation
 status: use-deployed
 intro-text: "The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim."
 anchors:
+  - anchor: About
   - anchor: Example
   - anchor: Structure
-  - anchor: Related
 ---
+
+## About
 
 Our current confirmation pages vary in format and content. Below are some of the default components used in our current confirmation pages. Teams should tailor the layout and content as needed based on the benefit type and/or stakeholder feedback.
 
