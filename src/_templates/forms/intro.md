@@ -5,6 +5,7 @@ has-parent: /templates/forms/
 title: Introduction
 status: use-deployed
 intro-text: "The form introduction page gives users information about what they can expect before they submit an online application. This page also provides users with steps on how to apply."
+sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/A952E56D-1CFC-4545-A32C-11DDCFB7359C/canvas
 anchors:
   - anchor: About
   - anchor: Example
@@ -21,29 +22,36 @@ Users can navigate to a form’s introduction page either from within VA.gov or 
 
 {% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-unauth.png" caption="Anatomy of the Introduction page for unauthenticated users." class="x2" %}
 
-{% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-auth.png" caption="Anatomy of the Introduction page for authenticated users." class="x2" %}
-
-The form confirmation page consists of:
+The introduction form page for unauthenticated users consists of:
 
 1. [H1 Plain language title of benefit](#h1)
 2. [VA Paper form equivalency](#va-paper-form-equivalency)
-3. Message 
-  * Unauthenticated users: [Save work in-progress alert](#save-work-in-progress-alert)
-  * Authenticated users: [Prefill notification](#prefill-notification)
+3. [Save work in-progress alert](#save-work-in-progress-alert)
+4. [Process list](#process-list)
+5. [Sign-in](#sign-in)
+6. [OMB Information](#omb-information)
+7. [Need help](#need-help)
+
+{% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-auth.png" caption="Anatomy of the Introduction page for authenticated users." class="x2" %}
+
+The introduction form page for authenticated users consists of:
+
+1. [H1 Plain language title of benefit](#h1)
+2. [VA Paper form equivalency](#va-paper-form-equivalency)
+3. [Prefill alert](#prefill-alert)
 4. [Start form link](#start-form-link)
 5. [Process list](#process-list)
 6. [Start form link](#start-form-link)
 7. [OMB Information](#omb-information)
 8. [Need help](#need-help)
-9. [Optional components](#optional-components)
 
 ### Instances of this template in production
 
-* https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction
-* https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction
-* https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction
-* https://www.va.gov/pension/application/527EZ/introduction
-* https://www.va.gov/health-care/apply/application/introduction
+* [https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+* [https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction](https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction)
+* [https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction](https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction)
+* [https://www.va.gov/pension/application/527EZ/introduction](https://www.va.gov/pension/application/527EZ/introduction)
+* [https://www.va.gov/health-care/apply/application/introduction](https://www.va.gov/health-care/apply/application/introduction)
 
 ## Structure
 
@@ -63,7 +71,8 @@ The VA paper form equivalency statement appears under this H1.
 
 For example:
 
->  File for disability compensation</h1>
+> <h1>File for disability compensation</h1>
+
 > Equal to VA Form 21-526EZ (Application for Disability Compensation and Related Compensation Benefits).
 
 ### Save work in progress alert
@@ -72,9 +81,15 @@ The Save work in progress in message uses the [Alert - Informational]({{ site.ba
 
 The message content is captured in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
 
-This alert for most online applications will give users the option to start the form without signing in. The exception is the Disability Compensation form where users must sign in in order to start that application.
+This alert gives users the option to start the form without signing in, excluding the Disability Compensation form where users are required to sign in.
 
 {% include component-example.html alt="An example of save work in progress alert." file="/images/templates/forms/introduction/save-work-in-progress-alert.png" caption="An example of a save work in progress alert used in the Introduction page." class="x2" %}
+
+### Prefill alert
+
+The Prefill alert uses the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component and informs users who are signed-in that their progress will be saved while completing a form.
+
+The message content is captured in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
 
 ### Start form link
 
@@ -127,6 +142,10 @@ Some examples:
 
 This step tells users when they'll be informed about the status of their application (if denied or approved) and the next steps.
 It also sets the user’s expectation for how long it takes to receive a response.
+
+### Sign-in
+
+A [Button - Primary]({{ site.baseurl }}/components/button) that reads "Sign in to start your application" and opens a modal allowing a user to authenticate. The button is paired with a link which reads "Start your application without signing in" and allows the user to start the application process without authenticating.
 
 ### OMB information 
 

@@ -5,10 +5,11 @@ inner-title: Overview
 permalink: /templates/forms/
 redirect_from:
   - /patterns/forms/
-contributors: "Shawna Hein (VSA Design Lead), Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
+contributors: "Shawna Hein, Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
 status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
+  - sub-page: How to apply
   - sub-page: Introduction
   - sub-page: Confirmation
 ---
@@ -19,41 +20,14 @@ sub-pages:
 
 {% include component-example.html alt="Representative pages of a form flow for VA.gov." file="/images/templates/forms/flow.png" caption="The anatomy of a form flow." %}
 
-1. **[Content landing page](#content-landing-page).** A page built in Drupal that outlines eligibility requirements and/or how to apply. Also, provides information about the benefit. 
-1. **[Introduction page](#introduction-page).** Includes a call-to-action to login if relevant and a subway map / timeline of what the user can expect when filling out the form.
+1. **[How to apply (aka Landing) page]({{ site.baseurl }}/templates/forms/how-to-apply).** A page built in Drupal that outlines eligibility requirements, provides details on how to apply, and what happens after an application is submitted.
+1. **[Introduction page]({{ site.baseurl }}/templates/forms/introduction).** The form introduction page gives users information about what they can expect before they submit an online application. This page also provides users with steps on how to apply.
 1. **[Main form pages](#main-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
 1. **[Review page]({{ site.baseurl }}/patterns/help-users-to/check-answers).** Allows the user to review information and make edits if necessary.
 1. **[Confirmation page]({{ site.baseurl }}/templates/forms/confirmation).** Gives users information about what they can expect after they submit an online application.
 
 
 ## Pages
-
-### Content landing page
-
-A page that a user can read before entering an online form where they learn about eligibility and how to apply. This page can contain several elements:
-
-* [Help users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern
-* [Process list]({{ site.baseurl }}/components/process-list)
-* [Application status widget](#application-status-widget) that links to the form
-
-#### Examples
-* [https://www.va.gov/health-care/how-to-apply/](https://www.va.gov/health-care/how-to-apply/)
-* [https://www.va.gov/health-care/eligibility/](https://www.va.gov/health-care/eligibility/)
-* [https://www.va.gov/disability/how-to-file-claim/](https://www.va.gov/disability/how-to-file-claim/)
-
-
-#### Application status widget
-
-This application status widget is a dynamic section within the content pages, and changes depending on whether the user is logged out/logged in and whether they have started a form or not.  
-
-The states can be seen here [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406902821](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406902821)
-
-
-### Introduction Page
-
-[Guidelines on the content of the introduction page can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/content/form-introduction-page-template.md)
-
-Example here: [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406500061](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406500061)
 
 ### Main Form Pages
 
@@ -75,9 +49,9 @@ Some examples start here (use the right arrow key to navigate through): [https:/
 
 ## Components
 
+* [Form elements]({{ site.baseurl }}/components/form)
 * [Additional info]({{ site.baseurl }}/components/additional-info)
 * [Error messages]({{ site.baseurl }}/content-style-guide/error-messages)
-* [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented).
 
 ## Additional topics
 
@@ -90,7 +64,7 @@ Some examples start here (use the right arrow key to navigate through): [https:/
 
 (Reference: [https://dsva.slack.com/archives/C0NGDDXME/p1579133450082200](https://dsva.slack.com/archives/C0NGDDXME/p1579133450082200))
 
-In general, our online forms should not be framed as a 1:1 mapping of the paper form - in other words, what we are building are data collection mechanisms for the forms themselves, and therefore do not need approval in the same way the forms themselves do.  Therefore, the language does not need to map 1:1 to the paper forms.  In general, voice and tone strategy on our online pages should use plain language.
+In general, our online forms should not be framed as a 1:1 mapping of the paper form - in other words, what we are building are data collection mechanisms for the forms themselves, and therefore do not need approval in the same way the forms themselves do. Therefore, the language does not need to map 1:1 to the paper forms. In general, voice and tone strategy on our online pages should use plain language.
 
 A [legal memo](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf) addresses this situation: 
 
@@ -100,6 +74,7 @@ For legal or regulatory content, however, we need to use judgment and be careful
 
 You may need to get PRA approval or other kinds of approval if you are tweaking the form itself and/or adding fields. Contact Rachel Sauter at USDS for details. 
 
+<!--
 ## The Form Design Process
 
 There are a few documents that have been written to help PMs and their teams structure how and when they do things when embarking on a form project for VA.gov: 
@@ -163,3 +138,4 @@ This document will not attempt to rewrite those documents, however, we will prov
    * Make sure to be regularly communicating with your designer(s) to ensure you understand requirements, and collaborate with them on coming up with tweaks to the designs if necessary
 * **For QA**, there exist some [e2e test helpers for testing forms](https://depo-platform-documentation.scrollhelp.site/developer-docs/end-to-end-testing-with-cypress). The code is fairly nicely commented though but there isn't a lot of documentation about how to use them as far as we know. 
 * **For Accessibility**, you will need to build comprehensive e2e tests for these form views, and that includes axe checks for every page. Ideally, these happen just before navigating away from a page, not immediately after loading the page. That way we get a good feel for all the content, and hidden content like progressive questions are surfaced. [More guidance can be found here](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/accessibility/guidance/staging-review-processes.md).
+-->

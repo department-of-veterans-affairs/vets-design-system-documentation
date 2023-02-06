@@ -5,13 +5,13 @@ title: Hub
 status: use-deployed
 intro-text: "Hub pages serve as a landing page for particular benefits."
 anchors:
-  - anchor: Purpose
+  - anchor: About
   - anchor: Example
-  - anchor: Hierarchy
+  - anchor: Structure
   - anchor: Right-rail
 ---
 
-## Purpose
+## About
 
 A hub page page does the following:
 - Provides an executive summary of this hub
@@ -27,7 +27,7 @@ A hub page page does the following:
 The hub page pattern can be broken down into an ordered set of components:
 ![Image of va.gov housing assistance hub page]({{site.baseurl}}/images/templates/hub/housing-assistance-markup.png)
 
-## Hierarchy
+## Structure
 
 We surface information that is important to Veterans first. The hierarchy of a hub page is as follows:
 
