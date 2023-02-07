@@ -1,3 +1,21 @@
+Appointments:
+  - name: Duration (days/months/years)
+    fa-class: "fas fa-calendar"
+    unicode: "#xf133;"
+    additional-usage: Link - Calendar
+  - name: In-person appointment
+    fa-class: "fas fa-building"
+    unicode: "#xf1ad;"
+  - name: Phone appointment
+    fa-class: "fas fa-phone-alt"
+    unicode: "#xf879;"
+  - name: Time (hours/minutes)
+    fa-class: "fas fa-clock"
+    unicode: "#xf0e0;"
+  - name: Video appointment
+    fa-class: "fas fa-video"
+    unicode: "#xf03d;"
+
 Feedback:
   - name: Informational
     fa-class: "fas fa-info-circle"
@@ -206,24 +224,6 @@ Profile:
   - name: Travel reimbursement
     fa-class: "fas fa-suitcase"
     unicode: "#xf0f2;"
-
-Scheduling:
-  - name: Duration (days/months/years)
-    fa-class: "fas fa-calendar"
-    unicode: "#xf133;"
-    additional-usage: Link - Calendar
-  - name: In-person appointment
-    fa-class: "fas fa-building"
-    unicode: "#xf1ad;"
-  - name: Phone appointment
-    fa-class: "fas fa-phone-alt"
-    unicode: "#xf879;"
-  - name: Time (hours/minutes)
-    fa-class: "fas fa-clock"
-    unicode: "#xf0e0;"
-  - name: Video appointment
-    fa-class: "fas fa-video"
-    unicode: "#xf03d;"
 
 Social:
   - name: Facebook
