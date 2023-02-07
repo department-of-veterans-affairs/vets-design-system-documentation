@@ -103,7 +103,7 @@ The headings start with action words and are short/concise. We've made these con
 
 #### Prepare
 
-This steps tells the user what they need to fill out the form (Social Security number, bank information, military history, spouse information, etc). This bullet can also include some basic eligibility information or a link back to the VA.gov benefit eligibility page.
+These steps tells the user what they need to fill out the form (Social Security number, bank information, military history, spouse information, etc). This bullet can also include some basic eligibility information or a link back to the VA.gov benefit eligibility page.
 
 {% include component-example.html alt="An example of the Prepare step." file="/images/templates/forms/introduction/prepare-step-22-1990e.png" caption="An example of a Prepare step from the application to use transferred education benefits." class="x2" %}
 
