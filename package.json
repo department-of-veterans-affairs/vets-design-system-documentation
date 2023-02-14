@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "npm run build && bundle exec jekyll serve --baseurl ''",
+    "watch": "npm run build && bundle exec jekyll serve --baseurl '' --incremental",
     "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
