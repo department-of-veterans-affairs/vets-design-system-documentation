@@ -23,27 +23,27 @@ web-component: va-radio
 
 ### Hint text
 
-{% include storybook-preview.html story="components-va-radio--with-hint-text" link_text="va-radio" %}
+{% include storybook-preview.html story="components-va-radio--with-hint-text" link_text="va-radio with hint text" %}
 
 ### Label header
 
-{% include storybook-preview.html story="components-va-radio--label-header" link_text="va-radio" %}
+{% include storybook-preview.html story="components-va-radio--label-header" link_text="va-radio with label header" %}
 
 ### Description text
 
-{% include storybook-preview.html story="components-va-radio--with-description-text" link_text="va-radio" %}
+{% include storybook-preview.html story="components-va-radio--with-description-text" link_text="va-radio with description text" %}
 
 ### Tiled
 
-{% include storybook-preview.html height="250px" story="components-va-radio--tiled" link_text="va-radio" %}
+{% include storybook-preview.html height="250px" story="components-va-radio--tiled" link_text="va-radio tiled" %}
 
 ### Error
 
-{% include storybook-preview.html story="components-va-radio--error" link_text="va-radio" %}
+{% include storybook-preview.html story="components-va-radio--error" link_text="va-radio error" %}
 
 ### Internationalization
 
-{% include storybook-preview.html height="200px" story="components-va-radio--internationalization" link_text="va-radio" %}
+{% include storybook-preview.html height="200px" story="components-va-radio--internationalization" link_text="va-radio internationalization" %}
 
 ## Usage
 
