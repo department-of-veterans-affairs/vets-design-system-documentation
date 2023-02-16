@@ -20,6 +20,8 @@ Users can navigate to a form’s introduction page either from within VA.gov or 
 
 ## Example
 
+### Unauthenticated
+
 {% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-unauth.png" caption="Anatomy of the Introduction page for unauthenticated users." class="x2" %}
 
 The introduction form page for unauthenticated users consists of:
@@ -31,6 +33,8 @@ The introduction form page for unauthenticated users consists of:
 5. [Sign-in](#sign-in)
 6. [OMB Information](#omb-information)
 7. [Need help](#need-help)
+
+### Authenticated
 
 {% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-auth.png" caption="Anatomy of the Introduction page for authenticated users." class="x2" %}
 
@@ -87,7 +91,7 @@ This alert gives users the option to start the form without signing in, excludin
 
 ### Prefill alert
 
-The Prefill alert uses the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component and informs users who are signed-in that their progress will be saved while completing a form.
+The [Prefill]({{ site.baseurl }}/components/form/prefill) alert uses the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component and informs users who are signed-in that their progress will be saved while completing a form.
 
 The message content is captured in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
 
@@ -156,4 +160,3 @@ A [Button - Primary]({{ site.baseurl }}/components/button) that reads "Sign in t
 The Need help component is a footer that appears on the bottom of every page of the form. This content lets users know how to get additional help with the form or the benefits. 
 
 {% include component-example.html alt="An example of a need help footer for forms pages." file="/images/templates/forms/introduction/need-help.png" caption="An example of a Need help component used on all forms pages." class="x2" %}
-
