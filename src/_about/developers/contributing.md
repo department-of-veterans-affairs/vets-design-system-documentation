@@ -94,7 +94,7 @@ If the time comes that another application needs to use the experiment, the rest
 
 Each experimental design is located in its own directory in [`vets-website`](https://github.com/department-of-veterans-affairs/vets-website/) at `src/experimental/` unless otherwise noted in its documentation on this site.
 
-**Example:**  
+**Example:**
 If your team needs an experimental button that's larger than the standard button, you would create `src/experimental/large-button/index.jsx` as the entry file for your "library."
 
 ### README
@@ -115,7 +115,7 @@ Once the code for an experimental design is stable, **breaking changes should no
 
 If you need to introduce breaking changes, **do not modify the existing code.** Instead, copy the contents of the directory to a sibling directory post-fixed with a version number.
 
-**Example:**  
+**Example:**
 The `LargeButton` you created accepted `children`, but because of reasons, you need to limit the content of the button to only text. You've decided to remove the `children` prop and add a `label` prop instead which accepts only strings. To introduce this change, you would:
 1. Copy the contents of `src/experimental/large-button/` to `src/experimental/large-button-2`
 2. Update the status in `src/experimental/large-button/README` to `deprecated` and indicate why (because there's a new version)
@@ -150,7 +150,7 @@ When code is deprecated for any of these reasons, the goal is to delete the code
 
 If there are applications using the deprecated code:
 1. In the README: Mark the code as `deprecated`
-1. In the REAMDE: Clearly outline what engineers should do to stop using the experiment
+1. In the README: Clearly outline what engineers should do to stop using the experiment
     - This may be something like "upgrade to `~/experimental/large-button-2`," "use `@department-of-veterans-affairs/component-library/LargeButton`," or "discontinue use; the experiment has been rejected"
 1. In Slack: Notify teams that the code has been deprecated, either via an announcement or reaching out directly to the teams using the experiment
 1. Check in weekly to see if there are still applications using the experiment; delete the directory when no applications are dependent on it

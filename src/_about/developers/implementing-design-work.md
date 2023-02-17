@@ -3,7 +3,7 @@ layout: documentation
 title: Implementing design work
 permalink: /about/developers/implementing-design-work
 has-parent: /about/developers/
-intro-text: When a designer hands off work, it is vital to work through potential implications that design may have on the Design System. 
+intro-text: When a designer hands off work, it is vital to work through potential implications that design may have on the Design System.
 anchors:
   - anchor: Implementation rules
   - anchor: Use design system utilities
@@ -23,7 +23,7 @@ In general, some rules for implementing design work include:
 
 ## Use design system utilities
 
-Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilites]({{ site.baseurl }}/foundation/utilities) instead of writing new CSS.
+Sometimes you will need to modify certain default properties of a component depending on how it scaffolds with nearby elements. Use [utilities]({{ site.baseurl }}/foundation/utilities) instead of writing new CSS.
 
 <div class="do-dont">
 <div class="do-dont__do">
