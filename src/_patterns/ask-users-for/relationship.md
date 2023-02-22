@@ -40,4 +40,4 @@ anchors:
 
 **When a user doesn’t select a relationship:**
 
-Say 'Please select your relationship to the Veteran'
+Say "Please select your relationship to the Veteran"
