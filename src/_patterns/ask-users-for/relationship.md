@@ -22,11 +22,11 @@ anchors:
 
 ### Caregiver Form 10-10CG
 
-{% include component-example.html alt="An example of a single address form." file="/images/patterns/ask-users-for/addresses/single-address.png" caption="Example of a form collecting a single address." width="50%" %}
+{% include component-example.html alt="An example of asking the relationship to the Veteran in a drop down." file="/images/patterns/ask-users-for/relationship/relationship-caregiver.png" caption="Example of asking the relationship to the Veteran in a drop down." width="50%" %}
 
 ### Burial benefits Form 21P-530
 
-{% include component-example.html alt="An example of a mailing address form." file="/images/patterns/ask-users-for/addresses/mailing-address.png" caption="Example of a form collecting a mailing address." width="50%" %}
+{% include component-example.html alt="An example of asking the relationship to the Veteran with radio buttons." file="/images/patterns/ask-users-for/relationship/relationship-burial.png" caption="Example of asking the relationship to the Veteran with radio buttons." width="50%" %}
 
 ## How to design and build 
 
