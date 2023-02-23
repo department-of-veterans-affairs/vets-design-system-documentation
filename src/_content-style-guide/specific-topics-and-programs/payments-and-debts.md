@@ -25,7 +25,7 @@ When we write about debt, we want to always communicate these things:
 
 benefit overpayment (or overpayment): We use this term to describe when VA pays a Veteran too much money related to a VA benefit (such as disability, education, or pension benefits) and the Veteran now owes that money back to VA.
 
-- **Note:** Use "benefit overpayment" on the first mention and "overpayment" for all subsequent mentions. "Overpayments" alone is OK for all instances with limited character counts.
+- **Note:** Use "benefit overpayment" on first mention and "overpayment" for all subsequent mentions. "Overpayments" alone is OK for all instances with limited character counts.
 
 balance (used with "debt balance" and "copay bill balance"): We use this term to describe the remaining amount a Veteran owes on a debt or copay bill.
 
@@ -39,7 +39,7 @@ compromise offer: We use this term to describe this specific debt repayment or r
 
 copay (or copayment, or health care copay): We use this term to describe the amount some Veterans pay for certain health care services and prescriptions.
 
-- **Note:** Use "health care copay" on the first mention in general content where the context of health care is necessary and then "copay" on subsequent mentions.
+- **Note:** Use "health care copay" on first mention in general content where the context of health care is necessary and then "copay" on subsequent mentions.
 
 copay bill (or patient statement, or billing statement): We use these terms to describe the bill or statement that a Veteran receives for their health care copay.
 
