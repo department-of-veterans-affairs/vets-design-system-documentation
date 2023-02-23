@@ -1,13 +1,19 @@
+---
+layout: default
+title: Payments and debts
+anchors:
+ - anchor: Considerations
+ - anchor: Related terms
+ - anchor: Retired terms
+ - anchor: Resources
+---
+
 # Payments and debts (including benefit overpayments and copay bills)
 
 The information on this page will help you use consistent language about VA payment and debts (including benefit overpayments and copay bills) across communication channels.
 
-## On this page: ##
+{% include _site-on-this-page.html %}
 
-- [Considerations](#considerations)
-- [Related terms](#related-terms)
-- [Retired terms](#retired-terms)
-- [Resources](#resources)
 ## Considerations
 
 When we write about debt, we want to always communicate these things:
