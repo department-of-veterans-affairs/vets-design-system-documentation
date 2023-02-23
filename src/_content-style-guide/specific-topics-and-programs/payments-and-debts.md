@@ -31,9 +31,7 @@ balance (used with "debt balance" and "copay bill balance"): We use this term to
 
 **Note:** We use this term mainly within the online debt portal itself.
 
-benefit debt: Previously we used benefit debt to describe a debt related to VA benefits and to distinguish it from copay-related debt. We now refer to all benefit-related debts as "overpayments," as this is a less negative term.
-
-**Note:** Use "overpayment" instead. Go to the "benefit debt" entry in the [Retired terms](#retired-terms) section.
+benefit debt: Go to the "benefit debt" entry in the [Retired terms](#retired-terms) section.
 
 compromise offer: We use this term to describe this specific debt repayment or relief option. A compromise offer means that the Veteran offers VA a lesser one-time lump sum amount as full payment.
 
@@ -57,9 +55,9 @@ outstanding debt: We use this term to describe a debt that the Veteran currently
 
 overpayment (or overpayment debt): We use this term to refer to a debt that's because of an overpayment. In some cases, we can go with "overpayments" (and not add "overpayment debts").
 
-payment (or payments, or VA payment): These terms are highly contextualWe use these terms in different contexts. We typically use VA payment to describe a payment that VA makes to the Veteran. However, we do use payment (without the VA) in the context of payment history to describe the display of a historical record of payments VA has made to the Veteran. We also use the plural version of this term (Payments) as the top-level category to house debts and payment history in the VA mobile app. We also use payment in the context of a payment a Veteran can make to pay down a debt.
+payment (or payments, or VA payment): We use these terms in different contexts. We typically use VA payment to describe a payment that VA makes to the Veteran. However, we do use payment (without the VA) in the context of payment history to describe the display of a historical record of payments from VA to the Veteran. We also use the plural version of this term (Payments) as the top-level category to house debts and payment history in the VA mobile app. We also use payment in the context of a payment a Veteran can make to pay down a debt.
 
-payment history: We use this term for displaying a history of payments VA has made to a Veteran.
+payment history: We use this term for displaying a history of payments from VA to a Veteran.
 
 pay: We use this term to describe paying a copay bill.
 
