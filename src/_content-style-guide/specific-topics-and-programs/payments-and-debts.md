@@ -1,7 +1,7 @@
 ---
 layout: content-style-guide
-permalink: /content-style-guide/content-principles/specific-topics-and-programs/payments-and-debts
-has-parent: /content-style-guide/content-principles/specific-topics-and-programs/
+permalink: /content-style-guide/specific-topics-and-programs/payments-and-debts
+has-parent: /content-style-guide/specific-topics-and-programs/
 title: Payments and debts (including benefit overpayments and copay bills)
 intro-text: "The information on this page will help you use consistent language about VA payments and debts (including benefit overpayments and copay bills) across communication channels."
 anchors:
