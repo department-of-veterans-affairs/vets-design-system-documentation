@@ -32,7 +32,7 @@ anchors:
 
 ### How this pattern works
 
-- **Use either a drop down or radio buttons.** Options should include spouse, child, parent, executor/administraitor of estate or other.
+- **Use either a drop down or radio buttons.** Options should include spouse, child, parent, executor/administrator of estate or other.
 - **Provide a way to give a ‘None of the above’ answer.** A radio button labeled “Other” should be provided.
 
 
