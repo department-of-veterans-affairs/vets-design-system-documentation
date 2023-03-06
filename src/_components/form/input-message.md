@@ -41,7 +41,7 @@ anchors:
   - All field sets are interactive
   - Last fieldset demonstrates error state
 
-- [UXPin design specs](https://preview.uxpin.com/ed1067b8f73e8f3501bc476bb03bb4b46a261a39#/pages//simulate/no-panels)
+- [Design specs](https://www.sketch.com/s/afd69a1f-72d2-430b-9b62-285e9d3f479c/a/9P4QlQn)
 
 ## Usage
 
@@ -84,8 +84,8 @@ If you need to tell the Veteran they've missed a required field on an applicatio
 
 ## Research
 
-- No research conducted as of 8/16/21.
-- Internal usability study with colleagues who are also Veterans planned for late Aug/early Sept 2021.
-- External study planned for notification settings post-MVP Oct/Nov 2021.
+- This component was evaluated as part of a [Feb 2023 usability study for VA.gov's notification settings feature](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/profile/notification-preferences/discovery-and-research/usability-study-add-email-jan-2023/findings-summary.md#no-one-was-confused-by-the-lack-of-a-save-button).  The feature uses an auto-save functionality and relies on the input message pattern to communicate to users after they interact with an input. 
+- Participants stated the feedback provided by this compontent made them feel confident that their changes had been saved.
+> It’s notifying me that it’s been saved. I’m trusting that this is going to work and I don’t need to call. -P9
 
 {% include _component-checklist.html component_name="va-input-message" %}
