@@ -22,11 +22,11 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 ### A
 
-active duty: Hyphenate when it modifies a noun; don't capitalize. 
--	**Like this:** active-duty service member
-
 accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas.
 -	**Like this:** Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
+
+active duty: Lowercase, and hyphenate when it modifies a noun. 
+-	**Like this:** active-duty service member
 
 advanced: Capitalize only when used as part of the branded term "My HealtheVet Advanced." Otherwise lowercase.
 
@@ -59,11 +59,11 @@ became worse: Use "got worse."
 
 beneficiary: In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-benefit office: Do not use "benefit office" or "regional benefit office." The correct term is "regional office." See entry for VA regional office for details. 
+benefit office: Don't use "benefit office" or "regional benefit office." The correct term is "regional office." Go to entry for VA regional office for details. 
 
-Benefits Delivery at Discharge (BDD) program. Note that “Benefits” is plural. See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Benefits Delivery at Discharge (BDD) program: Note that “Benefits” is plural. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-blind or low-vision (not "blind or sight-impaired")
+blind or low-vision: Don't use "blind or sight-impaired."
 
 Blue Water: Capitalize.
 
@@ -77,24 +77,24 @@ Brown Water: Capitalize.
 
 can vs. may: Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
 
-caregiver: Use "caregiver," not "caretaker." Also note that family members do not necessarily see themselves as "caregivers" so, while "family caregiver" can be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
+caregiver: Use "caregiver," not "caretaker." Also note that family members don't necessarily see themselves as "caregivers." While "family caregiver" may be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
 
-Certificate of Eligibility (COE): Capitalize. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+Certificate of Eligibility (COE): Capitalize. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-certifying official: Use this term to refer to the person at one's school who needs to approve/submit enrollment information for VA education benefits.
+certifying official: Use this term to refer to the person at one's school who needs to approve or submit enrollment information for VA education benefits.
   -	**Like this:** Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
 
 Character of Discharge review process: Don't capitalize "review process."
 
-character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states one of the following: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
+character of service (more casually referred to as "type of service"): This is a "block" or box on the VA Form DD214 that states these statuses: honorable, general/under honorable conditions, under other than honorable conditions, uncharacterized, or bad conduct.
 
 chronic: Define on first mention in body copy as "long-lasting" or when needed, "illness that lasts for a long time." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA). See [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA). Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 claim exam: This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
 
-click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's OK to use "click [Button/Interface Name]." [See also Links]({{ site.baseurl }}/content-style-guide/links)
+click: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's OK to use "click [Button/Interface Name]." [Go to Links]({{ site.baseurl }}/content-style-guide/links)
   - **Like this:** Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you.
 
   -	**Like this in UI copy:** In your account dashboard, click __Profile.__
@@ -123,9 +123,11 @@ C&P exam: See "claim exam" entry.
 
 ### D
 
-death benefits: Define on first mention in body copy as "money from a Veteran’s life insurance policy when that Veteran dies."  Include definition in another sentence, as a parenthetical, or set off with commas.
+death benefits: Define on first mention in body copy as "money from a Veteran’s life insurance policy when that Veteran dies." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 deceased: This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
+
+decision notice: Don't refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
 
 decision review form: A Veteran fills out a decision review "form," not an "application."
 
@@ -133,29 +135,26 @@ demolish: Use "knock down" or, when used as a noun in the context of a job of bu
 
 dentistry: Use "dental care" instead.
 
-Department of Veterans Affairs: "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." See [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
+Department of Veterans Affairs: "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." Go to [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
 
-- Do not use "DVA," "Dept of VA," or other non-standard shortened versions. See also, the entries "VA" and "VA.gov."
-- **Exception:** When the full, official federal agency name needs to be used, spell out in its entirety on the first instance. After the first instance, may shorten to Veterans Affairs or VA. 
+- Don't use "DVA," "Dept of VA," or other non-standard shortened versions. For more, go to the entries "VA" and "VA.gov."
+- **Exception:** When using the full, official federal agency name, spell out in its entirety on the first instance. After the first instance, shorten to Veterans Affairs or VA. 
 
-Dependency and Indemnity Compensation (DIC): Capitalize. See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+Dependency and Indemnity Compensation (DIC): Capitalize. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 Dependents’ Educational Assistance Program: Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
 
-deprivation: Define on first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well being." Include the definition in another sentence, as a parenthetical, or set off with commas.
-
-decision notice: Do not refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
+deprivation: Define on first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well-being." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 disability rating: Define as "a rating that measures how severe a disability is" or similar language.
 - **Like this:** We may use a rating that measures how bad your disability is. This rating helps us decide your level of benefits.
 - **Like this:** We assign you a disability rating based on the severity of your disability.
 
-
 disease: Use "illness" unless it's part of a proper name of a specific disease.
 
 dividend: Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-Don't Ask, Don't Tell policy: Capitalize with no quotation marks. Don't capitalize "policy."
+Don't Ask, Don't Tell policy: Capitalize with no quotation marks. Lowercase "policy."
 
 ### E
 
