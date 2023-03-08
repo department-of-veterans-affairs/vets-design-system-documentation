@@ -73,15 +73,6 @@ The Design System supports older and newer browsers through progressive enhancem
       Latest versions of Safari
     </div>
   </div>
-
-  <div class="vads-u-display--flex site-showcase__col vads-u-margin-top--0 vads-u-border--0 vads-u-align-items--center">
-    <div class="vads-u-padding-right--5 vads-u-color--cool-blue-light ">
-      <i class="fab fa-internet-explorer vads-u-font-size--2xl"></i>
-    </div>
-    <div class="vads-u-font-weight--bold">
-      IE 11 and up (to be deprecated in 2022)
-    </div>
-  </div>
 </div>
 
 ### Use of this Design System beyond VA.gov
