@@ -13,6 +13,7 @@ anchors:
   - anchor: How to use
   - anchor: Code usage
   - anchor: Content considerations
+  - anchor: Accessibility considerations
 ---
 
 ## Examples
@@ -49,3 +50,10 @@ Code for this component is shown in the [examples](#examples).
 
 * Message content can be found in the example above or in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
 * This message is to be accompanied by text that reads: "We'll save your application on every change." and appears just below the [Progress bar - Segmented]({{ site.baseurl }}/components/progress-bar-segmented) component on [Form - Step pages]({{ site.baseurl }}/templates/forms/#step-form-pages).
+
+## Accessibility considerations
+
+* Use `aria-describedby` to link a portion of the autosave message to the continue button. To do this add `aria-describedby="save"` to the Continue button and add a `<span id="save">` around the first line of text in this component. This achieves the following:
+    * Better ensures screen reader users will not miss the auto save message (which is located below the continue button)
+    * Does not change the visual design of the page
+    * Is flexible to the level of screen reader use (beginners are more likely to hear the auto-save message whereas advanced users won't be bothered by it)
