@@ -13,8 +13,11 @@ sub-pages:
   - sub-page: File input
   - sub-page: Input message
   - sub-page: Label
+  - sub-page: Need help?
   - sub-page: Number input
+  - sub-page: Penalty notice
   - sub-page: Prefill
+  - sub-page: Privacy Agreement
   - sub-page: Progress bar - Segmented
   - sub-page: Radio button
   - sub-page: Select
