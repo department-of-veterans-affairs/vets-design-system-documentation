@@ -398,7 +398,7 @@ presumptive disability: Use "health problem" and reference when needed for clari
 prisoner of war (POW): Lowercase per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
 - **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
-process (a claim): Use "review" instead when used as a verb. 
+process (a claim):  When using as a verb, use "review" instead. 
 - **Like this:** We'll review your disability claim.
 
 Project 112/SHAD
@@ -525,7 +525,7 @@ VA medical center: Don't shorten to VA center. "Medical Center" should be capita
 
 VA national cemetery: "national cemetery" is lowercase except when part of the full name of a cemetery.
 
-VA regional office: Use "VA regional office" and not "VA regional benefits office." "Regional Office" should be capitalized only if a specific name is included in the title.
+VA regional office: Use "VA regional office" instead of "VA regional benefits office." "Regional Office" should be capitalized only if a specific name is included in the title.
 - **Like this:** The Buffalo Regional Office (RO) is 1 of 4 regional processing centers nationwide that process education claims.
 
 vesicant agents: Use "vesicant (blistering) agents."
