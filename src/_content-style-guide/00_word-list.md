@@ -53,13 +53,13 @@ attending physician: In the context of life insurance, define on first mention i
 
 basic: Capitalize only when used as part of the branded term "DS Logon Basic." Otherwise lowercase.
 
-became ill: Use "got sick."
+became ill: Use "got sick" instead.
 
-became worse: Use "got worse."
+became worse: Use "got worse" instead.
 
 beneficiary: In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-benefit office: Don't use "benefit office" or "regional benefit office." The correct term is "regional office." Go to entry for VA regional office for details. 
+benefit office: Don't use "benefit office" or "regional benefit office." Use "regional office" instead. Go to entry for VA regional office for details. 
 
 Benefits Delivery at Discharge (BDD) program: Note that “Benefits” is plural. [Go to Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
@@ -193,7 +193,7 @@ evidence: Define as "supporting documents" and add, "like a doctor's report or m
 
 exception: Used to call special attention to something. It should be bolded and never in all caps.
 
-excluding: Use "not counting" or "not including."
+excluding: Use "not counting" or "not including" instead.
 
 expedite/expedited: Use plain language words like "faster," "quicker," or "speed up," depending on context.
 - **Like this:** Use the Fully Developed Claims program to get a faster decision on your disability benefits claim. This may help speed up the claim decision process, so you can get your benefits sooner.  
@@ -218,9 +218,9 @@ federal: Lowercase "federal" for generic usage such as "federal agency."
 
 fibromyalgia: Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-file a claim for disability compensation: Use "file a claim" rather than "apply for benefits" when referring to disability.
+file a claim for disability compensation: Use "file a claim" instead of "apply for benefits" when referring to disability.
 
-final status: Use “in final status” rather than “in a final status."
+final status: Use “in final status” instead of “in a final status."
 
 financial hardship: Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
@@ -264,7 +264,7 @@ home loan: Don't use a hyphen even when used as an adjective.
 
 homeless: Homeless is OK as an adjective to describe people without fixed housing. Or use "at risk of becoming homeless."
 
-hospitalization: Use "hospital care."
+hospitalization: Use "hospital care" instead.
 
 House confinement: Phrase as "being unable to leave your house (known as house confinement)."
 
@@ -314,12 +314,12 @@ log in/log out (verb), login ID (noun or adj.): Use sign in/sign out or username
   -	**Like this:** Sign in with your username and password.
   -	**Not this:** Enter your login ID.
 
-Loss of range of motion: Use "problems moving your body."
+Loss of range of motion: Use "problems moving your body" instead.
 
 ### M
 
 
-manufacturing: Use "making."
+manufacturing: Use "making" instead.
 
 may: Go to entry for "can."
 
@@ -397,7 +397,8 @@ presumptive disability: Use "health problem" and reference when needed for clari
 prisoner of war (POW): Lowercase per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
 - **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
-process (a claim): Use "review." Example: We'll review your disability claim.
+process (a claim): Use "review" instead when used as a verb. 
+- **Like this:** We'll review your disability claim.
 
 Project 112/SHAD
 
