@@ -21,7 +21,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ---
 
 ### A
-
 accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas.
 -	**Like this:** Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
 
