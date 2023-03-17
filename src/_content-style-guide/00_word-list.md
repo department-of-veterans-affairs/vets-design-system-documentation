@@ -235,7 +235,7 @@ GI Bill®: Include the trademark symbol in the first prominent mention on the we
 GI Bill Comparison Tool: Capitalize "Comparison Tool." Treat as a proper noun when mentioning it by the complete name. Lowercase "tool" when simply referencing it, not by name.
 - **Like this:** The GI Bill Comparison Tool can help you compare benefits by school. Fill out the tool to get started.
 
-gravesite: Style this as 1 word. (Merriam-Webster does not address whether this should be 1 or 2 words, but the Gravesite Locator and Arlington National Cemetery both style it as 1 word. In addition, the following related words do appear in Merriam-Webster as one: graveside and gravestone.)
+gravesite: Style this as 1 word. (Merriam-Webster doesn't address whether this should be 1 or 2 words, but the Gravesite Locator and Arlington National Cemetery both style it as 1 word. In addition, the following related words do appear in Merriam-Webster as one: graveside and gravestone.)
 
 guarantee: Use as either a noun or a verb. For our purposes, especially within the Home Loans section, when used in a legal context, we use “guarantee” as a verb and “guaranty” as a noun. Example: We guarantee a portion of the loan.
 
@@ -441,7 +441,7 @@ Selected Reserve: Generally used in the context of the Montgomery GI Bill Select
 
 senior reviewer: Lowercase. Person who reviews Higher-Level Reviews. (As opposed to a reviewer, who reviews Supplemental Claims.)
 
-service connected: Hyphenate when modifying a noun. Otherwise, do not hyphenate.
+service connected: Hyphenate when modifying a noun. Otherwise, don't hyphenate.
   - **Like this (modifying a noun):** A Veteran with a service-connected disability may be eligible for additional health care benefits.
 
   - **Like this (not modifying a noun):** The disability is considered service connected.
