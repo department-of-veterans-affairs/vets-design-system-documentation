@@ -268,7 +268,7 @@ hospitalization: Use "hospital care."
 
 House confinement: Phrase as "being unable to leave your house (known as house confinement)."
 
-Housebound allowance: Don't capitalize "allowance."
+Housebound allowance: Lowercase "allowance."
 
 ### I
 
@@ -394,7 +394,7 @@ presume: Use "conclude," as in "we will conclude your condition is linked to ser
 presumptive disability: Use "health problem" and reference when needed for clarity. 
 - **Like this:** A health problem (called presumptive disability) that we've concluded is likely caused by....
 
-prisoner of war (POW): Don't capitalize per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
+prisoner of war (POW): Lowercase per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
 - **Like this:** You may be eligible for benefits as a former prisoner of war (POW).
 
 process (a claim): Use "review." Example: We'll review your disability claim.
@@ -469,7 +469,7 @@ sign in, sign out: Don't use log in/log out, login ID, or sign on.
 
   -	**Not this:** Sign on to make an appointment.
 
-Social Security number: Don't capitalize "number."
+Social Security number: Lowercase "number."
 
 special claim: Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
@@ -574,7 +574,7 @@ Veterans Service Organization (VSO). "Veterans" is plural and doesn't take an ap
 
 Veterans Service Representative (VSR). “Veterans” is plural and doesn't take an apostrophe. [Go to Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-Vietnam Era: Capitalize. But don't capitalize "era" when you include "War" in the term ("Vietnam War era"). See entry on "era" for additional explanation.
+Vietnam Era: Capitalize. But lowercase "era" when you include "War" in the term ("Vietnam War era"). See entry on "era" for additional explanation.
 
 Vocational Rehabilitation Counselor (VRC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
