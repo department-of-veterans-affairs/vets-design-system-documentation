@@ -322,15 +322,17 @@ manufacturing: Use "making" instead.
 
 may: Go to entry for "can."
 
-Military Occupation Code (MOC). Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Military Occupation Code (MOC): Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Million Veteran Program (MVP). Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Million Veteran Program (MVP): Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
 MISSION Act: Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
 
-Montgomery GI Bill Active Duty (MGIB-AD). Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Montgomery GI Bill Active Duty (MGIB-AD): Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-Montgomery GI Bill Selected Reserve (MGIB-SR). Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+Montgomery GI Bill Selected Reserve (MGIB-SR): Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
+multifactor authentication: Use this term instead of "2-factor authentication." Multifactor is 1 word. No hyphen. 
 
 My HealtheVet: Don't italicize the "e" between "Health" and "Vet" in body copy, headlines, and user interface elements such as links, buttons, and navigation. The "e" is italicized only in the logo.
 
@@ -346,7 +348,7 @@ new claim: Define on first mention in body copy as "a claim for added benefits o
 
 non-traditional: Hyphenate when preceding and modifying a noun.
 
-nonpay: Don't hyphenate.
+nonpay: No hyphen.
 
 Note: Used to call special attention to something. It is bolded and never in all caps.
 
@@ -441,7 +443,7 @@ Selected Reserve: Generally used in the context of the Montgomery GI Bill Select
 
 senior reviewer: Lowercase. Person who reviews Higher-Level Reviews. (As opposed to a reviewer, who reviews Supplemental Claims.)
 
-service connected: Hyphenate when modifying a noun. Otherwise, don't hyphenate.
+service connected: Use a hyphen when modifying a noun. Otherwise, no hyphen.
   - **Like this (modifying a noun):** A Veteran with a service-connected disability may be eligible for additional health care benefits.
 
   - **Like this (not modifying a noun):** The disability is considered service connected.
@@ -517,7 +519,7 @@ VA.gov: Treat it as a brand name and always capitalize "VA." Don't use "www.va.g
 -	**Like this:** Preview the new VA.gov.
 -	**Not this:** Va.gov has benefits information for Veterans.
 
-VA health care facility: Don't hyphenate "health care" in this phrase.
+VA health care facility: No hyphen in "health care" in this phrase.
 
 VA medical center: Don't shorten to VA center. "Medical Center" should be capitalized only when it's part of an official medical center name (for example, Washington VA Medical Center).
 
