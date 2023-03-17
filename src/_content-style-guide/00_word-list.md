@@ -505,7 +505,7 @@ U.S.: Use periods.
 
 ### V
 
-VA: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. See the entry "Department of Veterans Affairs" for full guidance. 
+VA: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. Go to the entry "Department of Veterans Affairs" for full guidance. 
 
 - As a noun: VA announced today that...   
 - As a noun phrase ("VA facilities"): Some VA facilities in Texas are affected by Hurricane Florida.
@@ -523,7 +523,7 @@ VA medical center: Don't shorten to VA center. "Medical Center" should be capita
 
 VA national cemetery: "national cemetery" is lowercase except when part of the full name of a cemetery.
 
-VA regional office: Use "VA regional office" and not "VA regional benefits office." "Regional Office" should only be capitalized if a specific name is included in the title.
+VA regional office: Use "VA regional office" and not "VA regional benefits office." "Regional Office" should be capitalized only if a specific name is included in the title.
 - **Like this:** The Buffalo Regional Office (RO) is 1 of 4 regional processing centers nationwide that process education claims.
 
 vesicant agents: Use "vesicant (blistering) agents."
@@ -542,7 +542,7 @@ Veteran-owned small business (VSOB): Lowercase all words except "Veteran" when t
 
 Veteran Readiness and Employment (VR&E): Capitalize as the full name of the program. This used to be called Vocational Rehabilitation and Employment, and we have places where we reference the old name and say "formerly known as." We also reference the shortened version of the old name: "voc rehab." [Go to Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-Veterans Affairs: "Veterans" doesn't take an apostrophe. See the entries "VA" and "Department of Veterans Affairs."
+Veterans Affairs: "Veterans" doesn't take an apostrophe. Go to the entries "VA" and "Department of Veterans Affairs."
 
 Veterans Benefits Administration (VBA). "Benefits" is plural. [Go to Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
@@ -574,9 +574,9 @@ Veterans Service Organization (VSO). "Veterans" is plural and doesn't take an ap
 
 Veterans Service Representative (VSR). “Veterans” is plural and doesn't take an apostrophe. [Go to Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-Vietnam Era: Capitalize. But lowercase "era" when you include "War" in the term ("Vietnam War era"). See entry on "era" for additional explanation.
+Vietnam Era: Capitalize. But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry on "era" for additional explanation.
 
-Vocational Rehabilitation Counselor (VRC): See [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+Vocational Rehabilitation Counselor (VRC): [Go to Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 ### W
 
