@@ -74,6 +74,8 @@ Brown Water: Capitalize.
 
 ### C
 
+C&P exam: Go to "claim exam" entry.
+
 can vs. may: Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
 
 caregiver: Use "caregiver," not "caretaker." Also note that family members don't necessarily see themselves as "caregivers." While "family caregiver" may be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
@@ -118,8 +120,6 @@ court-appointed guardian: Define on first mention in body content as "a person t
 
 court-martial: Lowercase, as in "general court-martial," "special court-martial," and "summary court-martial."
 
-C&P exam: Go to "claim exam" entry.
-
 ### D
 
 death benefits: Define on first mention in body copy as "money from a Veteran’s life insurance policy when that Veteran dies." Include definition in another sentence, as a parenthetical, or set off with commas.
@@ -161,7 +161,7 @@ education: In general, on VA.gov we use "education" as a noun, and sometimes as 
 - **Like this:** education benefits OR education and training opportunities
 - **Not this:** educational benefits OR educational and training opportunities
 
-educational: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education" as above. (Go to education entry.) 
+educational: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education." (Go to education entry.) 
 - **Like this:** educational assistance, educational institution, educational plan, educational program
 
 educational and career counseling:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
@@ -291,7 +291,7 @@ Job Bank: Neither word is plural. Go to Veterans Job Bank entry.
 
 ### K
 
-Korean Demilitarized Zone (DMZ): [Go to Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+Korean Demilitarized Zone (DMZ): Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 ### L
 
@@ -362,8 +362,6 @@ original claim: Define on first mention in body copy as "your first claim for di
 
 ### P
 
-PO Box: Don't use periods.
-
 patient: Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
 
 pension management center: Capitalize only if part of the formal name of a center. Example: Get more information about the Philadelphia VA Pension Management Center. Find the VA pension management center that serves the state you live in.
@@ -375,6 +373,8 @@ period of honorable service: Not honorable period of service.
 permanent disability, permanent and total disability: Define a "permanent disability" as "a disability that's not expected to improve" and define "permanent and total disability" as "a disability that we've rated as 100% disabling and that's not expected to improve." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 Persian Gulf War era: Lowercase "era."
+
+PO Box: Don't use periods.
 
 post-9/11: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11). Example: Post-9/11 GI Bill. In cases when post-9/11 stands alone rather than as part of a program name, it should be lowercase. 
 
