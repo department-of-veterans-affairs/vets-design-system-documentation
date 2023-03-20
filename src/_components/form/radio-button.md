@@ -33,9 +33,9 @@ web-component: va-radio
 
 {% include storybook-preview.html story="components-va-radio--with-description-text" link_text="va-radio with description text" %}
 
-### Tiled
+### Tile
 
-{% include storybook-preview.html height="250px" story="components-va-radio--tile" link_text="va-radio tiled" %}
+{% include storybook-preview.html height="250px" story="components-va-radio--tile" link_text="va-radio tile" %}
 
 ### Error
 
@@ -52,8 +52,8 @@ web-component: va-radio
 - When the number of available options can fit onto a mobile screen.
 * Use the [Hint text](#hint-text) variation to provide additional information that pertains to the question being asked or all of the options presented.
 * Use the [Label header](#label-header) variation when a heading is required within the `legend` that acts as a label for the radio buttons. This can aid users in navigating the form questions, particularly in the [sub-task pattern]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task)
-* Use the [Description text](#description-text) variation to provide additional details about one or more radio button options. This variation is superseded by the Tiled variation.
-* Use the [Tiled](#tiled) variation to provide additional details about one or more radio button options within a large and well defined tap target. 
+* Use the [Description text](#description-text) variation to provide additional details about one or more radio button options. This variation is superseded by the Tile variation.
+* Use the [Tile](#tile) variation to provide additional details about one or more radio button options within a large and well defined tap target. 
 
 ### When to consider something else
 
