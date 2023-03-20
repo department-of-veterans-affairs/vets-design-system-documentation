@@ -35,7 +35,7 @@ web-component: va-radio
 
 ### Tiled
 
-{% include storybook-preview.html height="250px" story="components-va-radio--tiled" link_text="va-radio tiled" %}
+{% include storybook-preview.html height="250px" story="components-va-radio--tile" link_text="va-radio tiled" %}
 
 ### Error
 
