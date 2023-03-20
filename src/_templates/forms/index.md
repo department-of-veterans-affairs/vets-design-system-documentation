@@ -11,6 +11,7 @@ intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
   - sub-page: How to apply
   - sub-page: Introduction
+  - sub-page: Review
   - sub-page: Confirmation
 ---
 
@@ -22,14 +23,14 @@ sub-pages:
 
 1. **[How to apply (aka Landing) page]({{ site.baseurl }}/templates/forms/how-to-apply).** A page built in Drupal that outlines eligibility requirements, provides details on how to apply, and what happens after an application is submitted.
 1. **[Introduction page]({{ site.baseurl }}/templates/forms/introduction).** The form introduction page gives users information about what they can expect before they submit an online application. This page also provides users with steps on how to apply.
-1. **[Main form pages](#main-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
-1. **[Review page]({{ site.baseurl }}/patterns/help-users-to/check-answers).** Allows the user to review information and make edits if necessary.
+1. **[Step form pages](#step-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
+1. **[Review page]({{ site.baseurl }}/templates/forms/review).** Allows the user to review information and make edits if necessary.
 1. **[Confirmation page]({{ site.baseurl }}/templates/forms/confirmation).** Gives users information about what they can expect after they submit an online application.
 
 
 ## Pages
 
-### Main Form Pages
+### Step Form Pages
 
 Some examples start here (use the right arrow key to navigate through): [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903387](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903387)
 
@@ -72,7 +73,7 @@ A [legal memo](https://obamawhitehouse.archives.gov/sites/default/files/omb/info
 
 For legal or regulatory content, however, we need to use judgment and be careful. Sometimes this might mean providing a plain language summary and the legal language in parentheses for reference. We’ve sometimes used this approach on the public website unauthenticated pages. For tools and authenticated experiences, you can use things like the “learn more” dropdown or modals to have plain language versions alongside legal definitions.
 
-You may need to get PRA approval or other kinds of approval if you are tweaking the form itself and/or adding fields. Contact Rachel Sauter at USDS for details. 
+You may need to get PRA approval or other kinds of approval if you are tweaking the form itself and/or adding fields. 
 
 <!--
 ## The Form Design Process
