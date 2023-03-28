@@ -126,7 +126,7 @@ death benefits: Define on first mention in body copy as "money from a Veteran’
 
 deceased: This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
 
-decision notice: Don't refer to as "decision letter." The Veteran undergoes a VA claim exam (referred to as a C&P exam by Veterans), and then after VA reviews the evidence, we send a "decision notice" that includes the disability rating.
+decision notice: A "decision notice" is the same as a “decision letter.” The usage, or preferred term, varies across business lines. We send this notice to Veterans after we make a decision on their claim.
 
 decision review form: A Veteran fills out a decision review "form," not an "application."
 
