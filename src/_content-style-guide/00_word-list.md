@@ -21,22 +21,29 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ---
 
 ### A
-accredited representative: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas.
--	**Like this:** Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
+**accredited representative**
+: Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas.
+:	- Like this: Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
 
-active duty: Lowercase, and hyphenate when it modifies a noun. 
--	**Like this:** active-duty service member
+**active duty**
+: Lowercase, and hyphenate when it modifies a noun. 
+: -	Like this: active-duty service member
 
-advanced: Capitalize only when used as part of the branded term "My HealtheVet Advanced." Otherwise lowercase.
+**advanced**
+: Capitalize only when used as part of the branded term "My HealtheVet Advanced." Otherwise lowercase.
 
-Agent Orange: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
+**Agent Orange**
+: Define term on first mention in body copy as "a toxic chemical used to clear trees and plants during the war." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-Agent Orange Registry health exam: Lowercase "health exam."
+**Agent Orange Registry health exam**
+: Lowercase "health exam."
 
-annual: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
-  -	**Instead of annual:**  "each year" or "once each year"
-  -	**Instead of bi-annual:** "2 times each year" or "twice each year"
-  -	**Instead of biennial:** "every other year"
+**annual**
+: Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
+
+: - Instead of annual:  "each year" or "once each year"
+: -	Instead of bi-annual: "2 times each year" or "twice each year"
+: -	Instead of biennial: "every other year"
 
 appeal option: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
