@@ -45,39 +45,55 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : -	Instead of bi-annual: "2 times each year" or "twice each year"
 : -	Instead of biennial: "every other year"
 
-appeal option: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
+**appeal option**
+: On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
-apply: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
+**apply**
+: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
-Armed Forces: Capitalize.
+**Armed Forces**
+: Capitalize.
 
-asbestos: Define on first mention in body copy as "toxic fibers, once used in many buildings and products." Include the definition in another sentence, as a parenthetical, or set off with commas.
+**asbestos**
+: Define on first mention in body copy as "toxic fibers, once used in many buildings and products." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-attending physician: In the context of life insurance, define on first mention in body copy as "the doctor in charge of your care" (when talking to Veterans) or "the doctor in charge of a Veteran's care" (when talking to a family caregiver). Include the definition in another sentence, as a parenthetical, or set off with commas.
+**attending physician**
+: In the context of life insurance, define on first mention in body copy as "the doctor in charge of your care" (when talking to Veterans) or "the doctor in charge of a Veteran's care" (when talking to a family caregiver). Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 ### B
 
-basic: Capitalize only when used as part of the branded term "DS Logon Basic." Otherwise lowercase.
+**basic**
+: Capitalize only when used as part of the branded term "DS Logon Basic." Otherwise lowercase.
 
-became ill: Use "got sick" instead.
+**became ill**
+: Use "got sick" instead.
 
-became worse: Use "got worse" instead.
+**became worse**
+: Use "got worse" instead.
 
-beneficiary: In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas.
+**beneficiary**
+: In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
-benefit office: Don't use "benefit office" or "regional benefit office." Use "regional office" instead. Go to entry for VA regional office for details. 
+**benefit office**
+: Don't use "benefit office" or "regional benefit office." Use "regional office" instead. Go to entry for VA regional office for details. 
 
-Benefits Delivery at Discharge (BDD) program: Note that “Benefits” is plural. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+**Benefits Delivery at Discharge (BDD) program**
+: Note that “Benefits” is plural. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-blind or low-vision: Don't use "blind or sight-impaired."
+**blind or low-vision**
+: Don't use "blind or sight-impaired."
 
-Blue Water: Capitalize.
+**Blue Water**
+: Capitalize.
 
-Board decision: A Veteran receives a "Board decision," not a “Board Appeal decision.” 
+**Board decision**
+: A Veteran receives a "Board decision," not a “Board Appeal decision.” 
 
-Board of Veterans' Appeals: Capitalize. Can use "Board" on subsequent mentions in body copy. Note that Veterans’ is plural with a plural possessive apostrophe.
+**Board of Veterans' Appeals**
+: Capitalize. Can use "Board" on subsequent mentions in body copy. Note that Veterans’ is plural with a plural possessive apostrophe.
 
-Brown Water: Capitalize.
+**Brown Water**
+: Capitalize.
 
 ### C
 
