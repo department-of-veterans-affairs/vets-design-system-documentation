@@ -496,7 +496,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### P
 
 **PACT Act**
-: The full title of the law is The Sergeant First Class (SFC) Heath Robinson Honoring our Promise to Address Comprehensive Toxics (PACT) Act. PACT Act alone is OK for all instances. 
+: PACT Act alone is OK for all instances. The full title of the law is The Sergeant First Class (SFC) Heath Robinson Honoring our Promise to Address Comprehensive Toxics (PACT) Act.
 
 **patient**
 : Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
