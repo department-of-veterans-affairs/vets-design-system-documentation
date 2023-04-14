@@ -61,14 +61,14 @@ We use contractions on VA.gov. It supports our conversational, person-to-person 
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-We're available 8:00 a.m. to 6:00 p.m. CT, Monday through Friday. 
+We're available 8:00 a.m. to 6:00 p.m. ET, Monday through Friday. 
 
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
-We are available 8:00 a.m. to 6:00 p.m. CT, Monday through Friday.
+We are available 8:00 a.m. to 6:00 p.m. ET, Monday through Friday.
 
 </div>
 </div>
@@ -85,13 +85,13 @@ Use the em dash similar to a parenthetical or commas to set off an important cla
 
 __En dash__ 
 
-We use the en dash to indicate a range. We use a space on either side of the en dash.
-- **Like this:** 9:00 a.m. ‒ 5:30 p.m. CT
+Avoid using the en dash, since screen readers do not consistently announce them. When writing a range, use "to" in most instances of body copy (like 9:00 a.m. to 5:30 p.m. ET) or a hyphen if space is limited. 
 
 __Hyphens__ 
 
-This is the short, single dash. We use it to connect words that modify a noun or in names. 
+This is the short, single dash. We use it to connect words that modify a noun or in names. Hyphens are also OK to indicate ranges when space is limited. In those cases, add a space before and after the hyphen.
 - **Like this:** active-duty service member; VA-related claim; Merriam-Webster 
+- **Like this:** 2021 - 2022
 
 
 ## Exclamation points
