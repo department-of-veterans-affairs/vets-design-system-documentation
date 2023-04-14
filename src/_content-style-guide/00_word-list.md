@@ -182,6 +182,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **dentistry**
 : Use "dental care" instead.
 
+**Department of Defense (DOD)**
+: Capitalize the O when using the acronym. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
+
 **Department of Veterans Affairs**
 : "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." Go to [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
 
@@ -492,6 +495,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 ### P
 
+**PACT Act**
+: The full title of the law is The Sergeant First Class (SFC) Heath Robinson Honoring our Promise to Address Comprehensive Toxics (PACT) Act. PACT Act alone is OK for all instances. 
+
 **patient**
 : Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
 
@@ -613,7 +619,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define in body copy as an "illness or injury caused—or made worse by—active-duty service." Can define in another sentence, as a parenthetical, or set off with commas.  For example: "A service-connected condition is an illness or injury caused—or made worse by—your active-duty service."
 
 **service-connected disability**
-: In most cases, add the definition separately as another sentence or a note below a bulleted list. For example: "Having a service-connected disability means we've concluded that you're disabled because of an illness or injury caused—or made worse—by your active-duty service."  
+: In most cases, add the definition separately as another sentence or a note below a bulleted list. For example: "Having a service-connected disability means we've concluded that you're disabled because of an illness or injury caused—or made worse—by your active-duty service."
+
+**service-connected disability rating**
+: In most cases, use "disability rating" instead for simplicity. Although using the full phrase is not wrong.
 
 **Service-Disabled Veterans Insurance (S-DVI)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
