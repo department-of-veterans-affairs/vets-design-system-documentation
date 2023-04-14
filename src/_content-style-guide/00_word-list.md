@@ -217,7 +217,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### E
 
 **Edith Nourse Rogers STEM Scholarship**
-: Spell out the full title on first mention: The Edith Nourse Rogers Science Technology Engineering Math (STEM) Scholarship. After the first mention, use Rogers STEM Scholarship. Use this language to describe the program: "The Rogers STEM Scholarship allows eligible Veterans using the Post-9/11 GI Bill or dependents using the Fry Scholarship to get added benefits."
+: Spell out the full title on first mention: The Edith Nourse Rogers Science Technology Engineering Math (STEM) Scholarship. After the first mention, use Rogers STEM Scholarship. Don't use the phrase “extends Post-9/11 GI Bill or Fry Scholarship benefits” to describe the program. Use language like this instead: "The Rogers STEM Scholarship allows eligible Veterans using the Post-9/11 GI Bill or dependents using the Fry Scholarship to get added benefits."
 
 **education**
 : In general, on VA.gov we use "education" as a noun, and sometimes as part of a compound noun or attributive noun to modify another noun. 
