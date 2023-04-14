@@ -75,7 +75,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : In the context of life insurance, define on first mention in body copy as "the person you choose to receive your insurance proceeds." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 **benefit office**
-: Don't use "benefit office" or "regional benefit office." Use "regional office" instead. Go to entry for VA regional office for details. 
+: Don't use "benefit office" or "regional benefit office." Use "regional office" instead. Go to entry for "VA regional office" for details. 
 
 **Benefits Delivery at Discharge (BDD) program**
 : Note that “Benefits” is plural. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
@@ -98,7 +98,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### C
 
 **C&P exam**
-: Go to "claim exam" entry.
+: Go to entry for "claim exam."
 
 **can vs. may**
 : Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
@@ -176,14 +176,17 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **decision review form**
 : A Veteran fills out a decision review "form," not an "application."
 
+**Defense Department (DOD)**
+: For most cases, use Defense Department (not Department of Defense) on first reference. After the first reference, use DOD. Capitalize the O. Go to the [DOD brand guide] (https://www.defense.gov/Brand-Guide/) for more information. And go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
+
 **demolish**
 : Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
 
 **dentistry**
 : Use "dental care" instead.
 
-**Department of Defense (DOD)**
-: Capitalize the O when using the acronym. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
+**Department of Defense**
+: Go to entry for Defense Department.
 
 **Department of Veterans Affairs**
 : "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." Go to [We, us, you](https://design.va.gov/content-style-guide/we-us-you) for examples.
@@ -225,7 +228,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Not this: educational benefits OR educational and training opportunities
 
 **educational**
-: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education." (Go to education entry.) 
+: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education." (Go to entry for "education.") 
 : - Like this: educational assistance, educational institution, educational plan, educational program
 
 **educational and career counseling**
@@ -396,7 +399,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### J
 
 **Job Bank**
-: Neither word is plural. Go to Veterans Job Bank entry.
+: Neither word is plural. Go to entry for "Veterans Job Bank."
 
 ### K
 
@@ -578,7 +581,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### R
 
 **regional office**
-: Use instead of "regional benefit office." Go to VA regional office entry for details.
+: Use instead of "regional benefit office." Go to entry for "VA regional office" for details.
 
 **Reserve**
 : Capitalize when used to refer to members of the military.  
@@ -699,7 +702,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### V
 
 **VA**
-: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. Go to the entry "Department of Veterans Affairs" for full guidance. 
+: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. Go to entry for "Department of Veterans Affairs" for full guidance. 
 
 : - As a noun: VA announced today that...   
 : - As a noun phrase ("VA facilities"): Some VA facilities in Texas are affected by Hurricane Florida.
@@ -797,7 +800,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : “Veterans” is plural and doesn't take an apostrophe. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 **Vietnam Era: Capitalize**
-: But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry on "era" for additional explanation.
+: But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry for "era" for additional explanation.
 
 **Vocational Rehabilitation Counselor (VRC)**
 : Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
