@@ -85,13 +85,13 @@ Use the em dash similar to a parenthetical or commas to set off an important cla
 
 __En dash__ 
 
-Avoid using the en dash, since screen readers do not consistently announce them. When writing a range, use "to" in most instances of body copy (like 9:00 a.m. to 5:30 p.m. ET) or a hyphen if space is limited. 
+Avoid using en dashes, since screen readers don't consistently announce them. 
 
 __Hyphens__ 
 
-This is the short, single dash. We use it to connect words that modify a noun or in names. Hyphens are also OK to indicate ranges when space is limited. In those cases, add a space before and after the hyphen.
+This is the short, single dash. We use it to connect words that modify a noun or in names. Hyphens are also OK to indicate ranges when space is limited. However, in normal body copy, use "to" to indicate ranges (like 2021 to 2022). We don't use a space on either side of the hyphen.
 - **Like this:** active-duty service member; VA-related claim; Merriam-Webster 
-- **Like this:** 2021 - 2022
+- **Like this:** 2021-2022
 
 
 ## Exclamation points
