@@ -177,7 +177,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : A Veteran fills out a decision review "form," not an "application."
 
 **Defense Department (DOD)**
-: For most cases, use Defense Department (not Department of Defense) on first reference. After the first reference, use DOD. Capitalize the O. Go to the [DOD brand guide] (https://www.defense.gov/Brand-Guide/) for more information. And go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
+: For most cases, use Defense Department on the first instance. After the first instance, use DOD. Capitalize the O. Go to the [DOD brand guide](https://www.defense.gov/Brand-Guide/#use-of-name) for more information. And go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
 
 **demolish**
 : Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
