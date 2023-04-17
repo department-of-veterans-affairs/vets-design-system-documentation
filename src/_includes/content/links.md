@@ -1,12 +1,13 @@
 Links should tell people what action to take, where to go next, or what information to expect when they select the link.
 
 - Use natural and descriptive language.
-- Hyperlink the most relevant word or phrase that describes the purpose and target (destination) of the link.
+- Add links on a separate line to help make them stand out.
+- Be selective when choosing links. Too many links can overwhelm users.
+- Describe the purpose and target (destination) of the link.
 - Don’t make the link so long that the relevant words get lost.
 - Avoid "Click here" as the CTA text.
-- Avoid generic CTA links like "Learn more," "See more," and "Read more" by themselves.
+- Avoid generic CTA links like "Learn more," "See more," and "Read more" by themselves. 
 - Don't punctuate standalone CTA links. Exception: When the link text is a question.
-- If the embedded link text comes at the end of a sentence, don't hyperlink the ending punctuation.
 - When a link opens a PDF, YouTube video, XLS or other file format, [use the appropriate link variation]({{ site.baseurl }}/components/link/#variations). 
 
 <div class="do-dont">
@@ -16,9 +17,12 @@ Links should tell people what action to take, where to go next, or what informat
   
 __Use natural language, and link relevant words__
   
-If your disability gets worse, [file for a VA disability compensation increase](https://va.gov/disability/how-to-file-claim/).
+If your disability gets worse, you can file a claim to increase disability compensation. 
+  
+[How to file a VA disability claim for increased compensation](https://va.gov/disability/how-to-file-claim/)
   
 Apply for a United States burial flag to place over a casket or coffin, or place with an urn. 
+
 [Learn more about burial flags](https://www.va.gov/burials-memorials/memorial-items/burial-flags/)
 
 </div>
@@ -40,11 +44,9 @@ Apply for a United States burial flag to place over a casket or coffin, or place
 
 ### Embedded text links vs. CTA links
 
-__Use embedded text links to cross-link related, helpful information__
+__Avoid embedded text links within body copy__
 
-Embedded text links are hyperlinks that are part of running text in body copy. We use them to link people to related, but not essential, information. 
-- Because too many embedded links can be distracting or overwhelming to readers with traumatic brain injuries or other cognitive impairments, we try to not overuse them. 
-- Link information when it will be helpful to the Veteran, and it's related to the subject being discussed, not just for the sake of linking. 
+Embedded text links are hyperlinks that are part of running text in body copy. Embedded links can be distracting or overwhelming to readers with traumatic brain injuries or other cognitive impairments, so we try not to use them. 
 
 __Use CTA links to call out actions__
 
