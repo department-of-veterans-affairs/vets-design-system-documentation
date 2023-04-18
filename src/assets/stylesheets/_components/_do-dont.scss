@@ -96,3 +96,8 @@
     font-family: $font-sans;
   }
 }
+
+.do-dont__diff {
+  // This is $color-gold-lightest with an opacity adjustment
+  background: rgba(255, 241, 210, .6);
+}
