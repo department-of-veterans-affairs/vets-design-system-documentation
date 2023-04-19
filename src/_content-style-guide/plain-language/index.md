@@ -7,6 +7,7 @@ sub-pages:
   - sub-page: Use short sentences
   - sub-page: Use simple words and terms
   - sub-page: Use active voice
+  - sub-page: Structure your content
 ---
 
 <blockquote>
@@ -31,4 +32,4 @@ Follow these plain language standards to help Veterans and their families find a
 - **Don’t use jargon.** This includes bureaucratic and legal language as well as unnecessary acronyms and initialisms.
 - **Don’t use idioms.** These can be confusing or not understandable, especially for someone whose first language isn’t English.
 - **Avoid or minimize references to branded program names.** Describe the benefit instead. Use “educational and career counseling” to describe Personalized Career Planning and Guidance, PCPG, and Chapter 36.
-- **Structure your content** so it’s easy to follow. Instead of long paragraphs, chunk content using hierarchical headings (H2s and H3s), bulleted lists, and process lists.
+- **[Structure your content]({{ site.baseurl }}/content-style-guide/plain-language/structure-your-content)** so it’s easy to follow. Instead of long paragraphs, chunk content using hierarchical headings (H2s and H3s), bulleted lists, and process lists.
