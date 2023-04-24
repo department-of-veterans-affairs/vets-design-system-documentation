@@ -20,8 +20,10 @@ You may gather supporting documents yourself, or you can ask for our help to gat
 
 {% capture example_like_this_2 %}
 You can file a Supplemental Claim if you meet at least 1 of these requirements:
-  •	You have new and relevant evidence that we didn’t consider before, or
-  •	You have a condition that we now consider presumptive
+<ul>
+  <li>You have new and relevant evidence that we didn’t consider before, or</li>
+  <li>You have a condition that we now consider presumptive</li>
+</ul>
 {% endcapture %}
 
 {% capture example_not_this_2 %}
