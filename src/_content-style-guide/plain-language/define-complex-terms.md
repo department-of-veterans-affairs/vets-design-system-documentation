@@ -3,8 +3,9 @@ layout: content-style-guide
 permalink: /content-style-guide/plain-language/define-complex-terms
 has-parent: /content-style-guide/plain-language/
 title: Define complex terms
-intro-text: "Define complex terms if you must use them. Some Veterans are more familiar with a complex term that VA may use in other communications, so we keep it and define it. Add a plain language definition in parentheses immediately following the term or in a separate sentence. You can also lead with the plain language phrasing, followed by the complex term.  ."
+intro-text: "Define complex terms if you must use them."
 ---
+Some Veterans are more familiar with a complex term that VA may use in other communications, so we keep it and define it. Add a plain language definition in parentheses immediately following the term or in a separate sentence. You can also lead with the plain language phrasing, followed by the complex term.
 
 {% capture example_like_this_1 %}
 We’ll pay you a percentage of the full month’s rate based on the number of days that you’re enrolled in the month. We call this a prorated payment.
