@@ -1,4 +1,3 @@
-
 ---
 layout: content-style-guide
 permalink: /content-style-guide/plain-language/dont-use-jargon
