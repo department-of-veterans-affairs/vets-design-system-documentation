@@ -15,33 +15,25 @@ Your counselor will work with you to <span class="do-dont__diff">map out</span> 
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
 {% capture example_like_this_2 %}
-We'll send you a new decision letter <span class="do-dont__diff">by</span> mail.
+You can <span class="do-dont__diff">contact</span> your regional loan center directly.
 {% endcapture %}
 {% capture example_not_this_2 %}
-We'll send you a new decision letter <span class="do-dont__diff">via</span> mail.
+You can <span class="do-dont__diff">reach out</span> to your regional loan center directly.
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_2 not_this=example_not_this_2 %}
 
 {% capture example_like_this_3 %}
-You’ll get a letter from us <span class="do-dont__diff">that will tell you how to return</span> VA payments.
+If you want to <span class="do-dont__diff">identify</span>  an error with the decision on your claim, you can request a higher-level review.
 {% endcapture %}
 {% capture example_not_this_3 %}
-You’ll get a letter from us <span class="do-dont__diff">concerning the process for returning</span> VA payments.
+If you want to <span class="do-dont__diff">point out</span> an error with the decision on your claim, you can request a higher-level review.
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_3 not_this=example_not_this_3 %}
 
 {% capture example_like_this_4 %}
-You’ll get a survey <span class="do-dont__diff">about</span> 1 week after we receive your initial claim.
+If we have your mobile phone number <span class="do-dont__diff">in our records,</span> we’ll automatically send you text reminders.
 {% endcapture %}
 {% capture example_not_this_4 %}
-You’ll get a survey <span class="do-dont__diff">approximately</span> 1 week after we receive your initial claim.
+If we have your mobile phone number <span class="do-dont__diff">on file</span> we’ll automatically send you text reminders.
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_4 not_this=example_not_this_4 %}
-
-{% capture example_like_this_5 %}
-We’re getting evidence from you, your health care providers, <span class="do-dont__diff">government</span> agencies, and other sources. 
-{% endcapture %}
-{% capture example_not_this_5 %}
-We’re getting evidence from you, your health care providers, <span class="do-dont__diff">governmental</span> agencies, and other sources.
-{% endcapture %}
-{% include _like-this-not-this.html like_this=example_like_this_5 not_this=example_not_this_5 %}
