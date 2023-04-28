@@ -11,27 +11,27 @@ intro-text: "Use pronouns to speak to our audience in a personable and convers
 - For Q&As, the Veteran asks the question (use “I”) and VA answers (use “we” and “you”)
 
 {% capture example_like_this_1 %}
-We base your monthly rate on the 2 factors listed here.
+<span class="do-dont__diff">We</span> base your monthly rate on the 2 factors listed here.
 {% endcapture %}
 {% capture example_not_this_1 %}
-VA bases the monthly rate for Veterans on the 2 factors listed here.
+<span class="do-dont__diff">VA</span> bases the monthly rate for Veterans on the 2 factors listed here.
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
 {% capture example_like_this_2 %}
-This will help us process your claim quickly.
+This will help <span class="do-dont__diff">us</span> process your claim quickly.
 {% endcapture %}
 {% capture example_not_this_2 %}
-This will help VA process your claim quickly.
+This will help <span class="do-dont__diff">VA</span> process your claim quickly.
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_2 not_this=example_not_this_2 %}
 
 {% capture example_like_this_3 %}
 **Am I eligible for Veterans Pension benefits?**
-You may be eligible if you meet these requirements.
+<span class="do-dont__diff">You</span> may be eligible if you meet these requirements.
 {% endcapture %}
 {% capture example_not_this_3 %}
 **Are Veterans eligible for pension benefits?**
-Veterans who meet these requirements may be eligible. 
+<span class="do-dont__diff">Veterans</span> who meet these requirements may be eligible. 
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_3 not_this=example_not_this_3 %}
