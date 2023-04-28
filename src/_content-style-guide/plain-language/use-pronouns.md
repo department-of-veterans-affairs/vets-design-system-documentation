@@ -2,14 +2,14 @@
 layout: content-style-guide
 permalink: /content-style-guide/plain-language/use-pronouns
 has-parent: /content-style-guide/plain-language/
-title: Use simple words and terms
+title: Use pronouns
 intro-text: "Use pronouns to speak to our audience in a personable and conversational voice."  
 ---
 
-- Address the Veteran as an individual with second person singular: “you” and ”your” 
+- Address the Veteran as an individual with second person singular: “you” and “your” 
 - Represent VA with a single voice with first person plural: “we” and “our”  
 - For Q&As, the Veteran asks the question (use “I”) and VA answers (use “we” and “you”)
-- 
+
 {% capture example_like_this_1 %}
 We base your monthly rate on the 2 factors listed here.
 {% endcapture %}
