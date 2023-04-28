@@ -16,7 +16,7 @@ We’ll pay you a prorated payment.
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
 {% capture example_like_this_2 %}
-If your tuition and fees are less than the monthly rate, we’ll send you a lump sum (1 payment) at the start of each term.
+If your tuition and fees are less than the monthly rate, we’ll send you a lump sum (one payment) at the start of each term.
 {% endcapture %}
 {% capture example_not_this_2 %}
 If your tuition and fees are less than the monthly rate, we’ll send you a lump sum payment at the start of each term. 
