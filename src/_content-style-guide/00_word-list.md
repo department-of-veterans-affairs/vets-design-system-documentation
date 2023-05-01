@@ -90,7 +90,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : A Veteran receives a "Board decision," not a “Board Appeal decision.” 
 
 **Board of Veterans' Appeals**
-: Capitalize. Can use "Board" on subsequent mentions in body copy. Note that Veterans’ is plural with a plural possessive apostrophe.
+: Capitalize. Can use "Board" on subsequent mentions in body copy. Note that "Veterans" is plural with a plural possessive: Veterans'.
 
 **Brown Water**
 : Capitalize.
@@ -232,10 +232,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Like this: educational assistance, educational institution, educational plan, educational program
 
 **educational and career counseling**
-:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
-
-**educational and vocational counseling**
-: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling.
+:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Career Counseling. Note: This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
  
 **educational assistance**
 : We use this style of phrasing to be consistent with Chapter 35, DEA, REAP, and VEAP.
@@ -267,8 +264,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **evidence**
 : Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed.
 
-**exception**
-: Used to call special attention to something. It should be bolded and never in all caps.
+**Exception**
+: Used to call special attention to something. It should be bolded and never in all caps. Use a colon following "Exception."
 
 **excluding**
 : Use "not counting" or "not including" instead.
@@ -486,7 +483,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : No hyphen.
 
 **Note**
-: Used to call special attention to something. It is bolded and never in all caps.
+: Used to call special attention to something. It should be bolded and never in all caps. Use a colon following "Note."
 
 **Notice of Disagreement (NOD)**
 : Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
@@ -526,7 +523,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Don't use periods.
 
 **post-9/11**
-: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11). Example: Post-9/11 GI Bill. In cases when post-9/11 stands alone rather than as part of a program name, it should be lowercase. 
+: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11). Example: Post-9/11 GI Bill. In cases when "post-9/11" stands alone rather than as part of a program name, it should be lowercase. 
 
 **postservice**
 : No hyphen.
