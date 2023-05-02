@@ -9,6 +9,49 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## Spring 2023
+
+The team has mainly focused on building out new variations of our form components based on USWDS v3. However, we've also made the changes below.
+
+### New and updated components
+
+* Added [Form - Autosave]({{ site.baseurl }}/components/form/autosave)
+* Added [Form - Need help?]({{ site.baseurl }}/components/form/need-help)
+* Added [Form - Penalty notice]({{ site.baseurl }}/components/form/penalty-notice)
+* Added [Form - Prefill]({{ site.baseurl }}/components/form/prefill)
+* Added icon support to [va-accordion-item]({{ site.baseurl }}/components/accordion#icon-in-header)
+* Added Tile variation to [va-checkbox]({{ site.baseurl }}/components/form/checkbox#tile)
+* Added option for currency to [va-number-input]({{ site.baseurl }}/components/form/number-input#currency)
+* Added extra hint text to [va-memorable-date]({{ site.baseurl }}/components/form/memorable-date#extra-hint-text)
+
+See the [component-library release notes](https://github.com/department-of-veterans-affairs/component-library/releases) for more detailed issues on component fixes.
+
+### Content style guide updates
+
+* Revised the [plain language section]({{ site.baseurl }}/content-style-guide/plain-language/).
+
+### Deprecated React components
+
+* CheckboxGroup
+* DropdownPanel
+* ProgressButton
+* RadioButtons
+* SystemDownView
+
+### Sketch Library updates
+
+* Added the aforementioned new Form components (Autosave, Need help?, Penalty notice, Prefill)
+* Templates library now uses the correct header and footer throughout.
+* Reorganized patterns to match new naming and nav structure.
+* Added sidenav mobile menu.
+ 
+
+### Documentation updates
+
+* Added Form templates for [How to apply]({{ site.baseurl }}/templates/forms/how-to-apply), [Introduction]({{ site.baseurl }}/templates/forms/introduction), [Review]({{ site.baseurl }}/templates/forms/review).
+* Added variations to checkbox, number input, and memorable date.
+
+
 ## Winter 2022-2023
 
 ### New and updated components

@@ -7,7 +7,7 @@ research-title: Form controls
 intro-text: "Number input elements are used for numeric inputs."
 status: use-deployed
 anchors:
-  - anchor: Number input
+  - anchor: Examples
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -15,11 +15,35 @@ anchors:
 web-component: va-number-input
 ---
 
-### Number input
+## Examples
 
-* Number input always has the type of `number` and provides a `min` and `max` attribute to set a range on the component. 
+### Default
 
 {% include storybook-preview.html story="components-va-number-input--default" link_text="va-number-input" %}
+
+### Currency
+
+{% include storybook-preview.html story="components-va-number-input--with-currency" link_text="va-number-input with currency" %}
+
+### Hint text
+
+{% include storybook-preview.html story="components-va-number-input--with-hint-text" link_text="va-number-input with hint text" %}
+
+### Valid range
+
+{% include storybook-preview.html story="components-va-number-input--valid-range" link_text="va-number-input with valid range" %}
+
+### Error
+
+{% include storybook-preview.html story="components-va-number-input--error" link_text="va-number-input error" %}
+
+### Required
+
+{% include storybook-preview.html story="components-va-number-input--required" link_text="va-number-input required" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="components-va-number-input--internationalization" link_text="va-number-input internationalization" %}
 
 ## Usage
 
@@ -37,6 +61,7 @@ web-component: va-number-input
 
 ### How to use 
 
+- Number input always has the type of `number` and provides a `min` and `max` attribute to set a range on the component. 
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a input field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
 
