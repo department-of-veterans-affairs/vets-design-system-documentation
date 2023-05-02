@@ -38,6 +38,10 @@ web-component: va-checkbox-group
 
 {% include storybook-preview.html story="components-va-checkbox--with-description-jsx" link_text="va-checkbox with description JSX" %}
 
+### Tile
+
+{% include storybook-preview.html story="components-va-checkbox--tile" link_text="va-checkbox tile" %}
+
 ### Error
 
 {% include storybook-preview.html story="components-va-checkbox--error" link_text="va-checkbox error" %}

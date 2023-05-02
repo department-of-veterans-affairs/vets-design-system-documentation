@@ -27,11 +27,11 @@ This will help <span class="do-dont__diff">VA</span> process your claim quickly.
 {% include _like-this-not-this.html like_this=example_like_this_2 not_this=example_not_this_2 %}
 
 {% capture example_like_this_3 %}
-**<span class="do-dont__diff">Am I</span> eligible for Veterans Pension benefits?**
+<strong><span class="do-dont__diff">Am I</span> eligible for Veterans Pension benefits?</strong>
 <span class="do-dont__diff">You</span> may be eligible if you meet these requirements.
 {% endcapture %}
 {% capture example_not_this_3 %}
-**<span class="do-dont__diff">Are Veterans</span> eligible for pension benefits?**
+<strong><span class="do-dont__diff">Are Veterans</span> eligible for pension benefits?</strong>
 <span class="do-dont__diff">Veterans</span> who meet these requirements may be eligible. 
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_3 not_this=example_not_this_3 %}

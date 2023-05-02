@@ -1,6 +1,6 @@
 ---
 layout: content-style-guide
-permalink: /content-style-guide/plain-language/dont-use-jargon
+permalink: /content-style-guide/plain-language/don-t-use-jargon
 has-parent: /content-style-guide/plain-language/
 title: Don’t use jargon
 intro-text: "Don’t use jargon. This includes bureaucratic and legal language as well as unnecessary acronyms and initialisms."

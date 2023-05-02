@@ -7,6 +7,12 @@ sub-pages:
   - sub-page: Use short sentences
   - sub-page: Use simple words and terms
   - sub-page: Use active voice
+  - sub-page: Define complex terms
+  - sub-page: Use pronouns
+  - sub-page: Use contractions
+  - sub-page: Don't use jargon
+  - sub-page: Don't use idioms
+  - sub-page: Avoid branded names
   - sub-page: Structure your content
 ---
 
@@ -29,7 +35,7 @@ Follow these plain language standards to help Veterans and their families find a
 - **[Define complex terms]({{ site.baseurl }}/content-style-guide/plain-language/define-complex-terms)** if you must use them. Add a plain language definition in parentheses immediately following the term or in a separate sentence.
 - **[Use pronouns]({{ site.baseurl }}/content-style-guide/plain-language/use-pronouns)** to speak to our audience in a personable and conversational voice. Address the Veteran as an individual with “you”/”your” and refer to VA with “we”/“our.” For Q&As, the Veteran asks the question (use “I”) and VA answers (use “we” and “you”).
 - **[Use contractions]({{ site.baseurl }}/content-style-guide/plain-language/use-contractions)** (“don’t” instead of “do not”) to communicate with our audience in a conversational way. 
-- **[Don’t use jargon]({{ site.baseurl }}/content-style-guide/plain-language/dont-use-jargon).** This includes bureaucratic and legal language as well as unnecessary acronyms and initialisms.
-- **[Don’t use idioms]({{ site.baseurl }}/content-style-guide/plain-language/dont-use-idioms).** These can be confusing or not understandable, especially for someone whose first language isn’t English.
+- **[Don’t use jargon]({{ site.baseurl }}/content-style-guide/plain-language/don-t-use-jargon).** This includes bureaucratic and legal language as well as unnecessary acronyms and initialisms.
+- **[Don’t use idioms]({{ site.baseurl }}/content-style-guide/plain-language/don-t-use-idioms).** These can be confusing or not understandable, especially for someone whose first language isn’t English.
 - **[Avoid or minimize references to branded program names]({{ site.baseurl }}/content-style-guide/plain-language/avoid-branded-names).** Describe the benefit instead. Use “educational and career counseling” to describe Personalized Career Planning and Guidance, PCPG, and Chapter 36.
 - **[Structure your content]({{ site.baseurl }}/content-style-guide/plain-language/structure-your-content)** so it’s easy to follow. Instead of long paragraphs, chunk content using hierarchical headings (H2s and H3s), bulleted lists, and process lists.

@@ -23,6 +23,22 @@ anchors:
 
 {% include storybook-preview.html height="200px" story="components-va-memorable-date--default" link_text="va-memorable-date" %}
 
+### Extra hint text
+
+{% include storybook-preview.html height="200px" story="components-va-memorable-date--extra-hint-text" link_text="va-memorable-date with extra hint text" %}
+
+### Custom validation
+
+{% include storybook-preview.html height="200px" story="components-va-memorable-date--custom-validation" link_text="va-memorable-date with custom validation" %}
+
+### Error
+
+{% include storybook-preview.html height="200px" story="components-va-memorable-date--error" link_text="va-memorable-date error" %}
+
+### Internationalization
+
+{% include storybook-preview.html height="200px" story="components-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
+
 ## Usage
 
 ### When to use date inputs

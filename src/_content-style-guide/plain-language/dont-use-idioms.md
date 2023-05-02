@@ -1,6 +1,6 @@
 ---
 layout: content-style-guide
-permalink: /content-style-guide/plain-language/dont-use-idioms
+permalink: /content-style-guide/plain-language/don-t-use-idioms
 has-parent: /content-style-guide/plain-language/
 title: Don’t use idioms
 intro-text: "Idioms can be confusing, especially for someone whose first language isn’t English."
