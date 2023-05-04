@@ -110,9 +110,11 @@ The Design System Team has specific linting and migration rules in place to help
 ## How to migrate to Web Components
 
 The Design System Team provides three ways to migrate specific React Components over to Web Components:
-* **Manual** - There is an ESLint rule that informs you that the React component is deprecated but there are too many changes to automate and a guide will need to be followed.
+* **Manual** - There is an ESLint rule that informs you that the React component is deprecated but there are too many changes to automate a replacement and a guide will need to be followed ([Storybook](https://design.va.gov/storybook/?path=/story/about-introduction--page) example, Confluence documentation, or other guidance within the ESLint popup).
 * **ESLint Rule** - There is an ESLint rule that informs you of the ability to convert from a React Component to a Web Component with a migration click.
 * [**Migration Script**](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/README.md) - There is a script available to be used in the CLI when in the `vets-website` repo to convert the React Component to a Web Component.
+
+Auto-migrations may not be able to perfectly migrate every component. Before you merge your PR be sure to inspect the diff and test thoroughly. Migrations also do not update test files so you will need to update those manually.
 
 ### Web component migrations
 
