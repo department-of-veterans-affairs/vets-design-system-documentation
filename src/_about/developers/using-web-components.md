@@ -127,13 +127,13 @@ Here is a list of each Web Component and the migration available:
 * `va-back-to-top`: N/A
 * `va-banner`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-banner)
 * `va-breadcrumbs`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/master/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-button`: N/A
-* `va-checkbox`: N/A
-* `va-checkbox-group`: N/A
+* `va-button`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-button--primary)
+* `va-checkbox`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-checkbox--default)
+* `va-checkbox-group`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-checkbox-group--default)
 * `va-date`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2127527996/Manual+Component+Migration+Guide#Date-or-SimpleDate-to-va-date%3A)
 * `va-date-text-input`: N/A
 * `va-featured-content`: N/A
-* `va-file-input`: N/A
+* `va-file-input`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-file-input--default)
 * `va-loading-indicator`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/loadingindicator.js)
 * `va-modal`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-number-input`: N/A
@@ -146,7 +146,7 @@ Here is a list of each Web Component and the migration available:
 * `va-radio`: N/A
 * `va-search-input`: N/A
 * `va-segmented-progress-bar`: N/A
-* `va-select`: N/A
+* `va-select`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-select--default)
 * `va-table`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-telephone`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-text-input`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
