@@ -42,7 +42,7 @@ anchors:
 
 ### Icon in header
 
-{% include storybook-preview.html story="components-va-accordion--icon-in-header" link_text="va-accordion Icon in header" %}
+{% include storybook-preview.html story="components-va-accordion--using-icons" link_text="va-accordion Icon in header" %}
 
 
 
