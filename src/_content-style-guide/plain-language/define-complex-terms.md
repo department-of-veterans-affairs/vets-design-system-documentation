@@ -40,7 +40,7 @@ Your premium depends on these factors:
 {% include _like-this-not-this.html like_this=example_like_this_4 not_this=example_not_this_4 %}
 
 {% capture example_like_this_5 %}
-When you notify us of your intent to file, you may be able to get retroactive payments (payments that start at a point in the past). 
+When you notify us of your intent to file, you may be able to get retroactive payments (payments for the time between when you submitted your intent to file and when we approved your claim). 
 {% endcapture %}
 {% capture example_not_this_5 %}
 When you notify us of your intent to file, you may be able to get retroactive payments.
