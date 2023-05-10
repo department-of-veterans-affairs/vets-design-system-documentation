@@ -3,7 +3,7 @@ layout: content-style-guide
 permalink: /content-style-guide/plain-language/structure-your-content
 has-parent: /content-style-guide/plain-language/
 title: Structure your content
-intro-text: "Structure your content so it is easy to follow. Instead of long paragraphs, chunk content using hierarchical headings (H2s and H3s), bulleted lists, process lists (subway map), and groups of accordion links."
+intro-text: "Structure your content so it's easy to follow. Instead of long paragraphs, chunk content using hierarchical headings (H2s and H3s), bulleted lists, process lists (subway map), and groups of accordion links."
 ---
 
 Here are some examples.
