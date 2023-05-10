@@ -15,7 +15,7 @@ You may be eligible for <span class="do-dont__diff">Veteran Readiness and Employ
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
 {% capture example_like_this_2 %}
-Personalized Career Planning and Guidance (PCPG) offers free educational and career guidance, planning, and resources to Veterans. Find out if you’re eligible for <span class="do-dont__diff">educational and career counseling through this program.</span>
+Personalized Career Planning and Guidance (PCPG) offers free educational and career guidance, planning, and resources to Veterans. Find out if you’re eligible for <span class="do-dont__diff">educational and career counseling</span> through this program.
 {% endcapture %}
 {% capture example_not_this_2 %}
 Personalized Career Planning and Guidance (PCPG) offers free educational and career guidance, planning, and resources to Veterans. Find out if you’re eligible for <span class="do-dont__diff">PCPG.</span>
