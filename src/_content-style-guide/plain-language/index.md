@@ -16,15 +16,6 @@ sub-pages:
   - sub-page: Structure your content
 ---
 
-<blockquote>
-  <p>
-    “Avoiding vagueness and unnecessary complexity makes it easier for members of the public to understand and to apply for important benefits and services for which they are eligible. Plain writing can also assist the public in complying with applicable requirements simply because people better understand what they are supposed to do.”
-  </p>
-  <p>
-    — Final Guidance on Implementing the Plain Writing Act of 2010 
-  </p>
-</blockquote>
-
 ## Top 10 VA plain language standards
 
 Follow these plain language standards to help Veterans and their families find and understand the information they need:
@@ -39,3 +30,12 @@ Follow these plain language standards to help Veterans and their families find a
 - **[Don’t use idioms]({{ site.baseurl }}/content-style-guide/plain-language/don-t-use-idioms).** Idioms can be confusing, especially for someone whose first language isn’t English.
 - **[Avoid branded names]({{ site.baseurl }}/content-style-guide/plain-language/avoid-branded-names).** Avoid or minimize references to branded program names. Describe the benefit instead. For example, use “educational and career counseling” to describe Personalized Career Planning and Guidance, PCPG, and Chapter 36.
 - **[Structure your content]({{ site.baseurl }}/content-style-guide/plain-language/structure-your-content)** so it’s easy to follow. Instead of long paragraphs, chunk content using hierarchical headings (H2s and H3s), bulleted lists, process lists (subway map), and groups of accordion links.
+
+<blockquote>
+  <p>
+    “Avoiding vagueness and unnecessary complexity makes it easier for members of the public to understand and to apply for important benefits and services for which they are eligible. Plain writing can also assist the public in complying with applicable requirements simply because people better understand what they are supposed to do.”
+  </p>
+  <p>
+    — Final Guidance on Implementing the Plain Writing Act of 2010 
+  </p>
+</blockquote>
