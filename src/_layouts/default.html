@@ -7,56 +7,55 @@
 
     {% if site.analytics == "production" %}
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZTDXZ"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZTDXZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
     {% endif %}
 
     {% include header.html %}
-
     {% include _mobile-nav.html %}
 
     <div>
+      {% include _site-top-nav.html %}
+      {% include _banner-whats-new.html %}
 
-    {% include _site-top-nav.html %}
-    {% include _banner-whats-new.html %}
-
-    <div class="site-content {% unless page.homepage %}vads-u-margin-bottom--9{% endunless %}">
-      {% if page.homepage %}
-      <main id="main-content" class="vads-u-width--full">
-        {{ content }}
-      </main>
-      {% elsif page.results_page %}
-      <main id="main-content" class="vads-u-margin-y--7 vads-u-width--full">
-        <div class="site-content site-l-wrapper vads-l-grid-row small-desktop-screen:vads-u-justify-content--center">
-          <div class="vads-l-col--12 small-desktop-screen:vads-l-col--8">
-            {{ content }}
-          </div>
-        </div>
-      </main>
-      {% else %}
-        {% include _site-content-nav.html %}
-      <div class="site-content__content">
-        <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
-          {% unless page.index %}
-            {% if page.draft %}
-              {% include _draft.html %}
-            {% endif %}
-          <div>
-            <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
-          </div>
-          {% endunless %}
+      <div class="site-content {% unless page.homepage %}vads-u-margin-bottom--9{% endunless %}">
+        {% if page.homepage %}
+        <main id="main-content" class="vads-u-width--full">
           {{ content }}
         </main>
-        {% include edit-on-github.html %}
-        {% include timestamps.html %}
+        {% elsif page.results_page %}
+        <main id="main-content" class="vads-u-margin-y--7 vads-u-width--full">
+          <div class="site-content site-l-wrapper vads-l-grid-row small-desktop-screen:vads-u-justify-content--center">
+            <div class="vads-l-col--12 small-desktop-screen:vads-l-col--8">
+              {{ content }}
+            </div>
+          </div>
+        </main>
+        {% else %}
+          {% include _site-content-nav.html %}
+        <div class="site-content__content">
+          <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+            {% unless page.index %}
+              {% if page.draft %}
+                {% include _draft.html %}
+              {% endif %}
+              {% if collection_name %}
+                {% include _site-section-name.html %}
+              {% endif %}
+            {% endunless %}
+            {{ content }}
+          </main>
+          {% include edit-on-github.html %}
+          {% include timestamps.html %}
+        </div>
+        {% endif %}
       </div>
-      {% endif %}
     </div>
-  </div>
 
-  {% include footer.html %}
-  <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
-  <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
+    {% include footer.html %}
+    <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
+    <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
   </body>
 </html>

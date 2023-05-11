@@ -21,18 +21,19 @@
     <div class="site-content vads-u-margin-bottom--9">
       {% include _site-content-nav.html %}
       <div class="site-content__content">
-        <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+        <main lang="en" id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
           {% unless page.index %}
             {% if page.draft %}
               {% include _draft.html %}
             {% endif %}
-          <div>
-            <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
-          </div>
+            {% include _site-section-name.html %}
           <h1 id="{{ page.title }}">{{ page.title }}</h1>
             {% if page.status %}
               {% include _status.html %}
             {% endif %}
+
+            {% include _component-translations.html %}
+
             {% if page.intro-text %}
             <div class="va-introtext" markdown="1">
               {{ page.intro-text }}

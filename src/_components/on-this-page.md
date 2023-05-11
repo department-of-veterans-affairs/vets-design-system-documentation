@@ -4,6 +4,7 @@ title: On this page
 intro-text: "The On this page jump links component summarizes the sections (&lt;h2&gt;s) at the top of long pages and allows users to jump down the page to the respective section."
 research-title: "On this page jump link"
 status: use-best-practice
+web-component: va-on-this-page
 anchors:
   - anchor: Examples
   - anchor: Usage

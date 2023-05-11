@@ -5,7 +5,7 @@ status: use-deployed
 intro-text: "The featured content component helps Veterans quickly identify must-read information on a page. Use this component to highlight a small chunk of the most important information on a page, like eligibility criteria or coverage under a particular VA benefit."
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5D59FDA9-A9F3-492C-AF41-F48CF5117F04
 anchors:
-  - anchor: Example
+  - anchor: Examples
   - anchor: Usage
   - anchor: Variations
   - anchor: Code usage
@@ -14,7 +14,7 @@ anchors:
 web-component: va-featured-content
 ---
 
-## Example
+## Examples
 
 {% include storybook-preview.html height="250px" story="components-va-featured-content--default" link_text="va-featured-content" %}
 
@@ -71,10 +71,10 @@ Featured content is found towards the top of the page after the h1 title of the 
 
 {% include _like-this-not-this.html like_this=example_like_this_2 not_this=example_not_this_2 %}
 
+## Code usage
+
+Code for this component is shown in Storybook. Follow the link provided in [examples](#examples).
 
 ## Content considerations
 
 * **Keep content brief.** If there are more than 5 bullet points, the bullet points are longer than 20 words, or the bullet points require a header, image or button consider using simple body text, headings, and lists instead.
-
-
-{% include component-docs.html component_name=page.web-component %}

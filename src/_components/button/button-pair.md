@@ -14,6 +14,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -75,3 +76,5 @@ That guidance agrees with [Apple's Human Interface Guidelines](https://developer
 * Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements. 
 
 {% include content/links-vs-buttons.md %}
+
+{% include _component-checklist.html component_name=page.web-component %}

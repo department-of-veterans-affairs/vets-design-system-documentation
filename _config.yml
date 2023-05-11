@@ -6,16 +6,18 @@ url: "https://design.va.gov" # Base hostname & protocol for the site
 project_name: VA.gov Design System
 
 # Common links
-sketch_cloud_link: https://sketch.cloud/s/8WM9O
+sketch_cloud_link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156
+sketch_templates_link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9
+sketch_annotations_link: https://sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727
 sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Work%20Practices/Design/Design%20Resources/Pattern%20Library/VA-gov-Pattern-Library.sketch
 
 forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-System-Overview.2085355587.html
 
 github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
 github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
-github_issues_new: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team&template=bug_template.md
-request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team%2C+experimental_design&template=experimental_design_request.md&title=Experimental+Design+%5Bcomponent+or+pattern+name%5D
-request_removal_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310%2Ck80bowman&labels=vsp-design-system-team&template=documentation_request_form.yml
+github_issues_new: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=1_bug_template.md&title=
+request_addition_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team%2C+experimental_design&template=3_experimental_design_request.md&title=Experimental+Design+%5Bcomponent+or+pattern+name%5D
+request_removal_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=2_documentation_request_form.yml
 
 research_repo: https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues
 slack_channel_name: "#platform-design-system"
@@ -25,7 +27,7 @@ new_component_template_link: https://github.com/department-of-veterans-affairs/v
 new_component_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/main/src/_components/template.md
 new_pattern_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md
 new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/main/src/_patterns/template.md
-update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310%2Ck80bowman&labels=vsp-design-system-team&template=documentation_request_form.yml
+update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=2_documentation_request_form.yml
 
 
 # People
@@ -39,6 +41,7 @@ markdown: kramdown
 highlighter: none
 plugins:
   - jekyll-last-modified-at
+  - jekyll-redirect-from
 
 source: src
 
@@ -64,15 +67,17 @@ collections:
   patterns:
     output: true
     permalink: /:collection/:title
+  templates:
+    output: true
+    permalink: /:collection/:title
 
-includes:
-  - /components/code
+include:
+  - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-8b28c6fa.js
 
+# Exclusions are relative to the source directory (which is set to src)
 exclude:
-  - node_modules
-  - tmp_remote_assets
-  - .sass-cache
-  - .ruby_version
+  - .DS_Store
+  - .jekyll-cache
   - _foundation/html
   - _components/html
   - _components/form/html

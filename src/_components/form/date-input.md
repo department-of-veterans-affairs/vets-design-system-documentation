@@ -2,7 +2,7 @@
 layout: component
 permalink: /components/form/date-input
 has-parent: /components/form/
-title: Date Input
+title: Date input
 research-title: Form controls
 intro-text: "Use the date input component to help users enter a date they would know or a date they can approximate."
 status: use-deployed

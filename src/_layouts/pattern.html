@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
-
   <body>
 
     {% if site.analytics == "production" %}
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZTDXZ"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2ZTDXZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     {% endif %}
 
@@ -26,10 +23,18 @@
             {% if page.draft %}
               {% include _draft.html %}
             {% endif %}
-          <div>
-            <p class="vads-u-border-color--primary vads-u-color--gray vads-u-margin-top--neg3 vads-u-display--inline-block vads-u-border-bottom--3px">{{ collection_name }}</p>
-          </div>
+            {% include _site-section-name.html %}
+          {% if page.sub-section %}
+          <p class="vads-u-display--inline-block vads-u-font-size--h3 vads-u-margin--0 vads-u-color--black">
+            {{ page.sub-section | replace: "-", " " | capitalize }}&hellip;
+          </p>
+          {% endif %}
           <h1 id="{{ page.title }}">{{ page.title }}</h1>
+            {% if page.aka %}
+            <p>
+              Also known as: {{ page.aka }}
+            </p>
+            {% endif %}
             {% if page.status %}
               {% include _status.html %}
             {% endif %}

@@ -3,7 +3,6 @@ name: "DST - Component final review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Final Review"
 labels: vsp-design-system-team
-assignees: caw310, k80bowman
 
 ---
 
@@ -27,28 +26,20 @@ Once the Staging Review is complete and any issues have been addressed, announce
     - Link to component in Storybook:
 - [ ] Component is represented in the Design System Sketch Library
     - Link to component page in Sketch Library:
-- [ ] Component has passed an accessibility check
-    - Accessibility check ticket:
 
-### Slack announcement
-In the Slack announcement, please add links to the component page on design.va.gov and to the Design System Maturity Scale page on design.va.gov. Post the announcement in the following Slack channels:
-- #vfs-all-teams
-- #design
-- #cms-team
-- #platform-design-system
+### Announcement
+Add an item to the monthly [What's New update Confluence page](https://vfs.atlassian.net/wiki/spaces/DST/pages/2301100061/Monthly+DS+Updates+to+What+s+New) that says the Link web component is ready for use. It should include a link to the component on design.va.gov.
 
 Sample announcement:
-> :loudspeaker: The new [[component name] component](link to component on design.va.gov) is now available in the Design System! Guidance and design resources are now available on design.va.gov, in Storybook, and in the Sketch Pattern Library.
->
-> If you need any assistance using this component in your applications, please reach out to the Design System Team in the #vfs-platform-support channel.
+> The new [[component name] component](link to component on design.va.gov) is now available in the Design System. Guidance and design resources are now available on design.va.gov, in Storybook, and in the Sketch Pattern Library.
 
 ## Tasks
 - [ ] Fill out checklist above
 - [ ] Once all items are checked off, alert Carol that component is ready for staging review
 - [ ] Address any staging review comments
-- [ ] Announce component in Slack and add to "What's new"
+- [ ] Add announcement to "What's New" Confluence page for the month
 
 ## Acceptance Criteria
 - [ ] All items on the checklist are checked off and links have been added
 - [ ] Any comments from the staging review have been addressed
-- [ ] Component has been announced and added to "What's new"
+- [ ] Component announcement has been added to the "What's New Confluence page for the month

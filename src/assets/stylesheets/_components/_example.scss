@@ -11,6 +11,15 @@
     object-fit: contain;
   }
 
+  &__image.x2 {
+    @include media($medium-screen) {
+      max-width: 65%;
+    }
+    @include media($large-screen) {
+      max-width: 50%;
+    }
+  }
+
   &__caption {
     padding: units(1) units(2);
     color: $color-base;

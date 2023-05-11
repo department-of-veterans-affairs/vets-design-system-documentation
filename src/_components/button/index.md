@@ -5,16 +5,17 @@ title: Button
 intro-text: Use buttons to signal actions.
 research-link: Buttons
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5317C603-D6BD-4AFF-84E6-151F7A197B91
-status: use-with-caution-candidate
+status: use-deployed
 sub-pages:
   - sub-page: Button pair
+web-component: va-button
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
-web-component: va-button
+  - anchor: Component checklist
 ---
 
 {% include _site-in-this-section.html %}
@@ -112,6 +113,7 @@ This variation substitutes the large tap target of a button where a radio button
 * Buttons should display a visible focus state when users tab to them.
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers don't automatically know either is a usable button.
 * Include more contextual information in the button label for screen readers. You can use an aria label to specify form numbers or program names in the buttons for greater context. 
+* Button labels should never change dynamically or be used to communicate a status.
 * We follow the [WCAG 2.1 Target Size - Level AAA](https://www.w3.org/WAI/WCAG21/quickref/#target-size) criteria which states:
 > "The size of the target for pointer inputs is at least 44 by 44 CSS pixels..."
 
@@ -123,3 +125,5 @@ That guidance agrees with [Apple's Human Interface Guidelines](https://developer
 {% include content/links-vs-buttons.md %}
 
 {% include a11y/do-not-disable-buttons.md %}
+
+{% include _component-checklist.html component_name=page.web-component %}

@@ -13,6 +13,7 @@ anchors:
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -60,3 +61,5 @@ When a recipient clicks/taps on the URL that was sent to them, they're brought d
 
 * On clicking/tapping, use a live-region to announce the "Link copied" text and keep the focus on the button. 
 * The accessible label will contain relevant, content specific titles for the screen reader to announce, e.g. “Copy link to [How can I stay informed about COVID-19 vaccines at VA]”.
+
+{% include _component-checklist.html component_name="va-deep-content" %}
