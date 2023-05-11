@@ -29,15 +29,17 @@ See the [component-library release notes](https://github.com/department-of-veter
 ### Content style guide updates
 
 * Added a [Specific topics and programs section]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/) with a [Payments and debts entry]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/payments-and-debts/).
-* Added these entries in our [Word list]({{ site.baseurl }}/content-style-guide/word-list/):
-- Defense Department
-- Department of Defense
-- Edith Nourse Rogers STEM Scholarship
-- PACT Act
-- Service-connected disability rating
 * Revised our [Bulleted lists]({{ site.baseurl }}/content-style-guide/bulleted-lists) section. We now recommend always introducing bulleted lists with a full sentence. This helps with our efforts to translate content.
 * Revised the [en dash entry]({{ site.baseurl }}/content-style-guide/punctuation#em-and-en-dashes-hyphens) in our [Punctuation section]({{ site.baseurl }}/content-style-guide/punctuation/). We now recommend avoiding en dashes for accessibility reasons. Screen readers don’t consistently announce them.
 * Revised our [plain language section]({{ site.baseurl }}/content-style-guide/plain-language/).
+
+### New entries in [Word list]({{ site.baseurl }}/content-style-guide/word-list/)
+
+* Defense Department
+* Department of Defense
+* Edith Nourse Rogers STEM Scholarship
+* PACT Act
+* Service-connected disability rating
 
 ### Deprecated React components
 
