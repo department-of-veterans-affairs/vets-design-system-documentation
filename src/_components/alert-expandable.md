@@ -84,8 +84,7 @@ Used when there is a problem or something destructive is about to occur.
 
 ## Accessibility considerations
 
-* Icon: Must provide alternative text (use sr-only text or an aria-label) so screen readers have an equivalent understanding of the purpose/nature of the message
-* Heading: e.g. "Facility closed" should be one heading level below its parent
+{% include a11y/alerts.md %}
 
 ## Research
 

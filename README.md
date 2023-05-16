@@ -8,7 +8,7 @@ Min specs:
 
 ## To run locally
 
-Tested using `node` v14.15.0 and `npm` v6.14.8.
+Tested using `node` v18.14.0 and `npm` v6.14.8.
 
 1. **Clone this repo**
 

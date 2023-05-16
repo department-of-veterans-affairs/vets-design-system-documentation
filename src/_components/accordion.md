@@ -24,17 +24,27 @@ anchors:
 
 ### Bordered
 
-{% include storybook-preview.html story="components-va-accordion--bordered" link_text="va-accordion" %}
+{% include storybook-preview.html story="components-va-accordion--bordered" link_text="va-accordion bordered" %}
 
 ### Single Select
 
 * Adding an `open-single` prop on the `va-accordion` component will allow the user to only open one accordion at a time.
 
-{% include storybook-preview.html story="components-va-accordion--single-select" link_text="va-accordion" %}
+{% include storybook-preview.html story="components-va-accordion--single-select" link_text="va-accordion single select" %}
 
 ### Subheader
 
-{% include storybook-preview.html story="components-va-accordion--subheader" link_text="va-accordion" %}
+{% include storybook-preview.html story="components-va-accordion--subheader" link_text="va-accordion subheader" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="components-va-accordion--internationalization" link_text="va-accordion Internationalization" %}
+
+### Icon in header
+
+{% include storybook-preview.html story="components-va-accordion--using-icons" link_text="va-accordion Icon in header" %}
+
+
 
 ## Usage
 

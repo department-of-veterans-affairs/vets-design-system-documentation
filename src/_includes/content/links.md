@@ -85,5 +85,3 @@ You can apply online or mail your [Application for Burial Benefits (VA Form 21P-
 </div>
 </div>
 </div>
-
-
