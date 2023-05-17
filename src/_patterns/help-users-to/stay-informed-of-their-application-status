@@ -1,13 +1,12 @@
 ---
 layout: pattern
-title: stay informed
+title: Stay informed of their application status
 draft: true
-permalink: /patterns/[ask|help]-users-to]/[pattern name]
-sub-section: [ask-users-to|help-users-to]
-intro-text: "This text provides the overall purpose and function of the pattern."
-research-title: Use this to match the label in the research repo. 
+permalink: /patterns/help-users-to/stay-informed-of-their-application-status
+sub-section: help-users-to
+intro-text: "In forms when we need to keep the user informed of their application staus, there is no one size fits all solution.To provide clarity, this page shows examples of what exists today, and lists the limitations."
 sketch-link: https://www.sketch.com/our-workspace-the-pattern-library/specific-page-for-this-pattern
-status: use-with-caution-available
+status: use-deployed
 anchors:
   - anchor: Usage
   - anchor: Examples
