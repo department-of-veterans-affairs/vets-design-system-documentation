@@ -15,6 +15,8 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Related
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -47,6 +49,10 @@ Add Storybook examples as necessary.
 * **Not for these tasks**: Explain the user tasks where this component is not, or should not, be used.
 * **Use this instead**: Explain when another component should be used instead.
 
+### How this component works
+
+Details the design decisions inherent to the component.
+
 ### Behavior
 
 Describe the key interactions for this component.
@@ -76,7 +82,6 @@ Images with captions that describe different instances of this component being u
 
 
 This is the Code Usage section. Note that the header is inside this include.
-
 <!-- include component-docs.html component_name=page.web-component  -->
 
 ## Content considerations
@@ -91,3 +96,7 @@ This is the Code Usage section. Note that the header is inside this include.
 ## Related
 
 * Links to related components.
+
+
+This is the Component checklist section. Note that the header is inside this include.
+<!-- include _component-checklist.html component_name=page.web-component -->

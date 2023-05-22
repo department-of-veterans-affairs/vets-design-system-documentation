@@ -1,0 +1,72 @@
+---
+layout: documentation
+permalink: /about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved
+has-parent: /about/contributing-to-the-design-system/
+title: Add a component or pattern once approved
+intro-text: Once approved by the Design System Council you may proceed to adding your component or pattern to the Design System.
+---
+
+<va-process-list>
+  <li>
+    <h3 id="add">Add the component or pattern</h3>
+    <p>
+      Create a pull request in GitHub in order to add your component or pattern:
+    </p>
+    <ol>
+      <li>Go to <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_components">src/_components/</a> or <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_patterns">src/_patterns/</a> depending upon which you intend to add.
+      </li>
+      <li>Open the <code>Add file</code> menu</li>
+      <li>Copy the contents of the <a href="{{ site.new_component_template_raw_link }}">component</a> or <a href="{{ site.new_pattern_template_raw_link }}">pattern</a> template and fill in the sections as best you can. Don't worry: The Design System Team will review and ask questions about your contribution to help provide the best possible documentation.</li>
+      <li>When you're ready, commit the changes to a branch, and create a pull request for peer review.</li>
+      <li>After your pull request has been created, assign it to {{ site.experimental_reviewer_1 }} to review and merge your request.</li>
+    </ol>
+  </li>
+  <li>
+    <h3 id="document">Document your component or pattern</h3>
+    <p>
+      Your documentation should follow the component or pattern template to the best of your ability. Any sections you have trouble filling out simply leave a "TODO:" note for the Design System Team who will review your submission and make edits or ask you questions, as necessary. 
+    </p>
+    <h4>Artifacts (mockups, wireframes, or prototypes)</h4>
+    <ul>
+      <li>If you need to embed images, videos, or other assets in your markdown file, add them to the <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/images/experimental-design">assets folder</a></li>
+      <li>Be careful to add them directly to the folder rather than dragging and dropping into the Github markdown editor as while that creates a link it does not add the asset to the design system.</li>
+      <li>When including an image in your page please <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#images">create alt text</a>.</li>
+    </ul>
+    <p>
+      Note that code is not required at this step in the process - the main point of documenting here is visibility to other teams. However, if you have code you can share, great! <a href="{{ site.baseurl }}/about/developers#contributing-experimental-design-code">Contributing experimental design code</a> covers how to contribute code. 
+    </p>
+  </li>
+  <li>
+    <h3 id="validate">Validate your design</h3>
+    <p>
+      New components will enter at the start of the <a href="{{ site.baseurl }}/about/maturity-scale#use-with-caution-candidate">maturity scale at "Use with caution: Candidate"</a>. This signals to others that the candidate exists and be something they could consider using.
+    </p>
+    <p>
+      In order to graduate your component or pattern up the <a href="{{ site.baseurl }}/about/maturity-scale#use-with-caution-available">maturity scale to "Use with caution: Available"</a>, you or your team need to do research or usability testing to validate. When you initially submit your design to the Design System Council, the council is happy to provide thoughts and feedback on your validation approach. 
+    </p>
+    <p>
+      If an experimental component or pattern sits in the <a href="{{ site.baseurl }}/about/maturity-scale#use-with-caution-candidate">"Use with caution: Candidate"</a> status for 6 months with no validation research documented, it will be removed by the design system team.
+    </p>
+  </li>
+  <li>
+    <h3 id="update">Update your component or pattern</h3>
+    <p>
+      Once you have data from your research, submit the results of the research to the <a href="https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues">Research repo</a> and tag your research with the appropriate labels including the component or pattern (Design System labels are "va-[component/pattern name]").
+    </p> 
+    <p>
+      Then provide the Design System Team with the following in <a href="{{ site.slack_channel_link }}">{{ site.slack_channel_name }}</a>:
+    </p>
+    <ol>
+      <li>A link to the research in the Research repo</li>
+      <li>Any guidance updates that you recommend</li>
+      <li>Sketch artifacts</li>
+      <li><a href="{{ site.baseurl }}/about/developers#contributing-experimental-design-code">Code</a></li>
+    </ol>
+    <p>
+      If you can provide a pull request to the Design System Team, you are encouraged to do so. Essentially, you can <a href="#document">return to step 2</a> and fill in any blanks you left in the documentation you created.
+    </p>
+    <p>
+      If you are including an example anatomy image for your component, please use the <a href="https://www.sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727">Anatomy callouts Sketch library</a> for annotations. You may contact {{ site.sketch_for_teams_admin }} if you need access to Sketch for Teams.
+    </p>
+  </li>
+</va-process-list>

@@ -1,0 +1,20 @@
+<ul class="usa-sidenav-list">
+  {% for p in include.section_list %}
+    {% assign is-current = false %}
+    {% if p.url == page.url %}
+      {% assign is-current = true %}
+    {% endif %}
+    {% unless p.index %}
+      {% unless p.draft and (p.url != page.url) %}
+        <li class="{% if is-current == true %}active-level{%- endif -%}">
+          <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
+            {{p.title}}
+              {%- if p.status -%}
+                {%- include _site-side-nav-status.html pattern-status=p.status -%}
+              {%- endif -%}
+          </a>
+        </li>
+      {% endunless %}
+    {% endunless %}
+  {% endfor %}
+</ul>

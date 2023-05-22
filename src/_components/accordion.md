@@ -13,6 +13,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -23,36 +24,42 @@ anchors:
 
 ### Bordered
 
-{% include storybook-preview.html story="components-va-accordion--bordered" link_text="va-accordion" %}
+{% include storybook-preview.html story="components-va-accordion--bordered" link_text="va-accordion bordered" %}
 
 ### Single Select
 
 * Adding an `open-single` prop on the `va-accordion` component will allow the user to only open one accordion at a time.
 
-{% include storybook-preview.html story="components-va-accordion--single-select" link_text="va-accordion" %}
+{% include storybook-preview.html story="components-va-accordion--single-select" link_text="va-accordion single select" %}
 
 ### Subheader
 
-{% include storybook-preview.html story="components-va-accordion--subheader" link_text="va-accordion" %}
+{% include storybook-preview.html story="components-va-accordion--subheader" link_text="va-accordion subheader" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="components-va-accordion--internationalization" link_text="va-accordion Internationalization" %}
+
+### Icon in header
+
+{% include storybook-preview.html story="components-va-accordion--using-icons" link_text="va-accordion Icon in header" %}
+
+
 
 ## Usage
 
 ### When to use accordions
 
-Use an accordion:
-
-* When users only need to access a few pieces of related information within a content-heavy page.
-* To organize related content in a small space.
+* **Organizing related sections of content to condense and chunk the content.** When you need to organize related sections of content into a smaller space use accordions to condense and group the content.
+* **A series of content**: If you have a series of content in the body of a page and outside of a form or tool. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details. 
+* **Reveal and compare relevant information.** When users need to reveal and compare relevant and related information accordions can make this easier.
 
 ### When to consider something else
 
-Consider another solution if:
-
-* Users need to see most or all of the information on the page at one time. Use well-formatted text with descriptive headings instead.
-* There is not enough content to warrant condensing. Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
-* Users would benefit from seeing additional context for a discrete piece of content. Use the [Additional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality, especially in a form. 
-
-See [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content) for more accordion usage guidelines.
+* **Users need to see most or all of the information on the page at one time.** Use well-formatted text with descriptive headings instead.
+* **There is not enough content to warrant condensing.** Accordions increase cognitive load and interaction cost, as users have to make decisions about which headers to click.
+* **Users would benefit from seeing additional context for a discrete piece of content.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality, especially in a form. 
+* **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 
 ### Behavior
 
@@ -78,4 +85,5 @@ See [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expand
 ## Related
 
 * [Additional info]({{ site.baseurl }}/components/additional-info)
-* [Expandable content]({{ site.baseurl }}/patterns/content-presentation#expandable-content)
+
+{% include _component-checklist.html component_name=page.web-component %}

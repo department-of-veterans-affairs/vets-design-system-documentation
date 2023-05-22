@@ -69,6 +69,7 @@ The [word list]({{ site.baseurl }}/content-style-guide/word-list) contains commo
 __Use everyday words__
 
 An illness that lasts for a long time
+
 Chronic (long-lasting) illness
 
 Pain and swelling in your joints that happens when a past injury

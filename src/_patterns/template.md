@@ -2,6 +2,8 @@
 layout: pattern
 title: Pattern name
 draft: true
+permalink: /patterns/[ask|help]-users-to]/[pattern name]
+sub-section: [ask-users-to|help-users-to]
 intro-text: "This text provides the overall purpose and function of the pattern."
 research-title: Use this to match the label in the research repo. 
 sketch-link: https://www.sketch.com/our-workspace-the-pattern-library/specific-page-for-this-pattern
@@ -9,7 +11,7 @@ status: use-with-caution-available
 anchors:
   - anchor: Usage
   - anchor: Examples
-  - anchor: How to build
+  - anchor: How to design and build
   - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
@@ -27,8 +29,7 @@ There are some potential types of patterns:
 Criteria for when the pattern is appropriate.
 
 May contain:
-
-- Links to other relevant design guidance or patterns.
+#### Design principles
 - Design principles to consider
 
 ### When not to use this pattern
@@ -51,7 +52,7 @@ Criteria for when the pattern could work with additional prototyping and testing
 Examples of this pattern on VA.gov.
 
 May contain reference or links to:
-
+### Other relevant examples
 - Instances of this pattern at other agencies
 - Other digital services in other countries using this pattern
 
@@ -63,7 +64,7 @@ Details any containers of components or layout concerns for how the pattern may 
 
 ### How this pattern works
 
-Details the design decisions inherent to the pattern,  describes the interactions, and provides usability guidance.
+Details the design decisions inherent to the pattern, describes the interactions, and provides usability guidance.
 
 ### Components used in this pattern
 

@@ -1,13 +1,8 @@
 ---
-layout: default
+layout: documentation
 title: Design principles
+intro-text: VA.gov design principles are fundamental pieces of guidance that help designers make their applications consistent with the Office of the Chief Technology Officer's (OCTO) standards of quality in the user experience. Designers should apply them when they conceive, design, critique, iterate upon, and launch the user interface and user flow of applications on VA.gov.
 ---
-
-# VA.gov design principles
-
-<div class="va-introtext">
-  VA.gov design principles are fundamental pieces of guidance that help designers make their applications consistent with DEPO’s standards of quality in the user experience. Designers should apply them when they conceive, design, critique, iterate upon, and launch the user interface and user flow of applications on VA.gov.
-</div>
 
 ## Usable by everyone
 **Accessibility is core to all design decisions.** People with disabilities do not have less needs than anyone else. Everyone should be able to use any tool or application regardless of features or complexity.
@@ -33,4 +28,4 @@ title: Design principles
 ## Impact
 **The VA.gov customer experience should be consistent across tools, applications, and devices.** A Veteran should be able to access the same content and user experience regardless of how they engage with their data.
 
-**Use existing collaboration processes and channels to see your work in a larger context.** Some of what you’re designing may have been designed before, while some of what you are designing might be entirely new and necessary. Collaborate with the DEPO platform to ensure that you have visibility to spend your best effort on the things that VA.gov needs the most.
+**Use existing collaboration processes and channels to see your work in a larger context.** Some of what you’re designing may have been designed before, while some of what you are designing might be entirely new and necessary. Collaborate with the OCTO and VA.gov Platform team to ensure that you have visibility to spend your best effort on the things that VA.gov needs the most.

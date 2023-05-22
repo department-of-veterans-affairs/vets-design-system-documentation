@@ -10,6 +10,7 @@ anchors:
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -58,3 +59,5 @@ anchors:
 ## Content considerations
 
 {% include content/addresses.md %}
+
+{% include _component-checklist.html component_name="va-address-block" %}

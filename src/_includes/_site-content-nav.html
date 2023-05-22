@@ -12,7 +12,10 @@
     {% include _side-nav.html section=site.components name="components" %}
     {% assign collection_name = "Components" %}
   {% elsif page.url contains "/patterns/" %}
-    {% include _side-nav.html section=site.patterns name="patterns" %}
+    {% include _site-side-nav-patterns.html name="patterns" %}
     {% assign collection_name = "Patterns" %}
+  {% elsif page.url contains "/templates/" %}
+    {% include _side-nav.html section=site.templates name="templates" %}
+    {% assign collection_name = "Templates" %}
   {% endif %}
 </div>

@@ -7,6 +7,8 @@ research-title: Form controls
 intro-text: "Allows users to select one or more items from a visible list."
 status: use-deployed
 anchors:
+  - anchor: Examples - Single
+  - anchor: Examples - Group
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -14,9 +16,70 @@ anchors:
 web-component: va-checkbox-group
 ---
 
-{% include storybook-preview.html height="200px" story="components-va-checkbox-group--default" link_text="va-checkbox-group" %}
+## Examples - Single
 
-{% include storybook-preview.html height="200px" story="components-va-checkbox-group--single-checkbox" link_text="va-checkbox-group" %}
+### Default
+
+{% include storybook-preview.html story="components-va-checkbox--default" link_text="va-checkbox" %}
+
+### Checked
+
+{% include storybook-preview.html story="components-va-checkbox--checked" link_text="va-checkbox checked" %}
+
+### Hint text
+
+{% include storybook-preview.html story="components-va-checkbox--with-hint-text" link_text="va-checkbox with hint text" %}
+
+### Description String
+
+{% include storybook-preview.html story="components-va-checkbox--with-description-string" link_text="va-checkbox with description string" %}
+
+### Description JSX
+
+{% include storybook-preview.html story="components-va-checkbox--with-description-jsx" link_text="va-checkbox with description JSX" %}
+
+### Tile
+
+{% include storybook-preview.html story="components-va-checkbox--tile" link_text="va-checkbox tile" %}
+
+### Error
+
+{% include storybook-preview.html story="components-va-checkbox--error" link_text="va-checkbox error" %}
+
+### Required
+
+{% include storybook-preview.html story="components-va-checkbox--required" link_text="va-checkbox required" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="components-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
+
+## Examples - Group
+
+### Default
+
+{% include storybook-preview.html height="140px" story="components-va-checkbox-group--default" link_text="va-checkbox-group default" %}
+
+### Hint text
+
+{% include storybook-preview.html story="components-va-checkbox-group--with-hint-text" link_text="va-checkbox group with hint text" %}
+
+### Error
+
+{% include storybook-preview.html story="components-va-checkbox-group--error" link_text="va-checkbox group error" %}
+
+### Required
+
+{% include storybook-preview.html story="components-va-checkbox-group--required" link_text="va-checkbox group required" %}
+
+### Single checkbox
+
+{% include storybook-preview.html story="components-va-checkbox-group--single-checkbox" link_text="va-checkbox group single checkbox" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="components-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
+
 
 ## Usage
 
@@ -34,6 +97,27 @@ web-component: va-checkbox-group
 - List options vertically if possible; horizontal listings can make it difficult to tell which label pertains to which checkbox.
 - Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”
 - If you customize, make sure selections are adequately spaced for touch screens.
+
+### Errors
+
+* Checkbox groups typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the checkboxes.
+* The error message is placed just below the `<legend>`.
+* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+
+<div class="site-showcase">
+{% include_relative html/error-checkbox.html %}
+</div>
+
+{% include snippet.html content='html/error-checkbox.html' %}
+
+#### Error message with a checkbox group
+
+<div class="site-showcase">
+{% include_relative html/error-checkbox-group.html %}
+</div>
+
+{% include snippet.html content='html/error-checkbox-group.html' %}
+
 
 ### Native Events
 

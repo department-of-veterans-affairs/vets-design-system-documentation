@@ -30,4 +30,4 @@ __Suggestions or questions about the VA.gov content style guide?__
 Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov) with "Content style guide" in the subject line.
 
 
-If you're looking for VA governance requirements&mdash;such as compliance, policies, and regulations&mdash;please go to [VA Web Governance](https://www.va.gov/web/index.cfm).
+If you're looking for VA governance requirements&mdash;such as compliance, policies, and regulations&mdash;please go to [VA Web Governance](https://digital.va.gov/web-governance/).

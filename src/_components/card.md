@@ -68,7 +68,7 @@ You can see these options in use in the [variations](#variations) below.
 ### When to consider something else
 
 * **Eligibility information or other content highlight.** The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
-* **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert/) component.
+* **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
 * **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
 * **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
 * **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target. 
@@ -162,11 +162,11 @@ There are a few design elements that look like a Card but do not behave like a C
 
 The [Mobile App](https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone) uses a Card-like container around an [active link]({{ site.baseurl }}/components/link/#active-link) to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.
 
-### Containers for List and Loop in forms
+### Containers for asking users for multiple responses (aka List and Loop) in forms
 
-{% include component-example.html alt="A container for an action in a form used in the List and Loop pattern." file="/images/components/card/not-a-card-list-and-loop.png" caption="Container for a button and title. Not a Card." width="50%" reverse=true %}
+{% include component-example.html alt="A container for an action in a form used in the Ask users for multiple responses (aka List and Loop) pattern." file="/images/components/card/not-a-card-list-and-loop.png" caption="Container for a button and title. Not a Card." width="50%" reverse=true %}
 
-The [List and Loop pattern]({{ site.baseurl }}/patterns/forms/list-and-loop) uses a Card-like container to enter the loop to edit or remove an item in the list. This treatment is specific to that pattern and should not be thought of as an instance of a Card.
+The [pattern for asking users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) (aka List and Loop) uses a Card-like container to enter the loop to edit or remove an item in the list. This treatment is specific to that pattern and should not be thought of as an instance of a Card.
 
 ### Containers for radio button tiles and checkboxes
 

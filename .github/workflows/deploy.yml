@@ -2,7 +2,7 @@ name: Deploy site
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -26,6 +26,12 @@ jobs:
     - run: npm install
     - run: npm run-script build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
+    - name: Make BUILD.txt file
+      # The -e flag enables the interpretation of the \n newline character
+      run: |
+        echo -e "REF=${{ github.sha }}\n\
+        BUILD_ID=${{ github.run_id }}\n\
+        BUILDTIME=$(date)" > _site/BUILD.txt
     # We are taking these extra steps due to some differences between Jekyll and AWS S3.
     # To access a .html file served from S3, the URL needs to have the .html extension.
     # We're removing the extension to make the URLs prettier.

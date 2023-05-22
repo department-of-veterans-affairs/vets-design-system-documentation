@@ -40,9 +40,10 @@ web-component: va-search-input
 
 ### Placement
 
-* The search input component should only appear in the global header and on search results pages. 
+* The search input component should only appear in the global header, on search results pages, and in search-related tools such as Resources and Support and Find a VA Form. 
 * The search input component is revealed when a user interacts with the Search va-dropdown in the global header.
-* On search results the search input appears below the header of the page and above the count of results in the main content well.
+* On search results pages, the search input appears below the header of the page and above the count of results in the main content well.
+* On search-related tools pages, the search input appears below the header of the page and above the linked resources or form links in the main content well.
 
 ### How to use Search input with type-ahead
 

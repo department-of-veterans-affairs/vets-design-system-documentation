@@ -8,7 +8,7 @@ Min specs:
 
 ## To run locally
 
-Tested using `node` v14.15.0 and `npm` v6.14.8.
+Tested using `node` v18.14.0 and `npm` v6.14.8.
 
 1. **Clone this repo**
 
@@ -24,7 +24,7 @@ Tested using `node` v14.15.0 and `npm` v6.14.8.
 
 1. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
 
-   **NOTE:** This repo works with Ruby version 2.7.5. **It does not work with `ruby v3.0` or above**. On the step where you will install `ruby` make sure to specify `ruby@2.7.5` and also use the version of `2.7.5` when you are adding references to your PATH in your terminal.
+   **NOTE:** This repo works with Ruby version 3.0.2.
 
 1. **Install Ruby gems**
 
@@ -44,14 +44,14 @@ Tested using `node` v14.15.0 and `npm` v6.14.8.
 
 To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site.
 
-- [About pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_about)
-- [Components pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_components)
-- [Content style guide pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_content-style-guide)
-- [Design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_design)
-- [Experimental design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_experimental-design)
-- [Layout pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_layout)
-- [Patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_patterns)
-- [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/_utilities)
+- [About pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_about)
+- [Components pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_components)
+- [Content style guide pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_content-style-guide)
+- [Design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_design)
+- [Experimental design pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_experimental-design)
+- [Layout pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_layout)
+- [Patterns pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_patterns)
+- [Utilities pages](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/_utilities)
 
 ### How to add new pages, improve presentation, etc.
 
@@ -92,4 +92,4 @@ While `vets-design-system-documentation` is running and make further updates to 
 
 ## Deploying
 
-Merges into `master` will automatically be deployed to `dev-design.va.gov`. Production is automatically deployed every weekday at 2pm. Deploys are executed by creating a release of vets-website via Jenkins. You can track the deployment in the Slack channel, #design-system.
+Merges into `main` will automatically be deployed to `dev-design.va.gov`. Production is automatically deployed every weekday at 2pm. Deploys are executed by creating a release of vets-website via Jenkins. You can track the deployment in the Slack channel, #design-system.
