@@ -41,6 +41,6 @@
     "yargs-parser": "^5.0.1"
   },
   "dependencies": {
-    "@department-of-veterans-affairs/formation": "^7.0.1"
+    "@department-of-veterans-affairs/formation": "^7.0.7"
   }
 }
