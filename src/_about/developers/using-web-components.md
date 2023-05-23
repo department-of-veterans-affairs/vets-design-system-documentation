@@ -6,11 +6,11 @@ has-parent: /about/developers/
 intro-text: Web Components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. 
 anchors:
   - anchor: How to use a web component
+  - anchor: React and Web Components
   - anchor: Vanilla JavaScript applications
   - anchor: React applications
   - anchor: Custom events
   - anchor: Native events
-  - anchor: React and Web Components
   - anchor: How to migrate to Web Components
 ---
 
@@ -27,6 +27,27 @@ A web component looks like an HTML element such as `<va-example-component>`. It 
   * You write HTML templates that you can add to your HTML elements
   * You add slots to provide additional context within the component
 
+## React and Web Components
+
+Use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
+
+While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
+
+Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
+
+For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert` (or `VaAlert` as the React binding).
+
+The benefits of using Design System Web Components include:
+
+- Web Components can be imported into any JS Framework
+- Consistent syntax across frameworks and projects
+- Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
+- Performance and speed
+
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. 
+
+If our components do not meet your needs, we would love to hear about it. Reach out to us in Slack at #platform-design-system or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose). And if you are interested in contributing to the Design System, review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
+
 ## Vanilla JavaScript applications
 
 If a Design System web component will be used without the need for passing in a function, object, array, or custom event, you are ready to use it without any additional imports. 
@@ -34,6 +55,7 @@ If a Design System web component will be used without the need for passing in a 
 A vanilla web component is used like `<va-example-component>` (identified by tags prefixed with `<va-*>`).
 
 We make our best efforts to avoid creating web components with object or array properties in order to make them easier to use in static HTML pages.
+
 
 ## React applications
 
@@ -72,7 +94,7 @@ The equivalent vanilla Web Component version using `<va-example-component>` woul
 
 <hr>
 
-```jsx
+```html
 <script>
   const component = document.querySelector('va-example-component');
   const exampleFunction = () => { return "Hello, World!" };
@@ -110,7 +132,7 @@ If the Web Component has a custom event that you need to use and you're **not** 
 
 <hr>
 
-```js
+```html
 <script>
   const element = document.querySelector('va-example-component');
   const exampleCallback = event => { console.log(event.detail) }
@@ -131,46 +153,45 @@ Some of our web components utilize native HTML DOM events such as `click` and `b
 
 To **use native events in JSX**, they must be prefixed with `on` and use camel case. Given the native `blur` event, use `onBlur`.
 
+
 An example using the `click` event in JSX:
+
+<hr>
+
 ```jsx
-<va-button text="Edit" onClick={e => console.log(e)} />
+<va-button text="Edit" onClick={ (event) => console.log(event.detail) } />
 ```
+
+<hr>
 
 To **use native events in vanilla JavaScript**, they can be used inline and prefixed with `on` **or** by adding an event listener using the event name as the event type.
 
 An example using the `blur` event in vanilla JavaScript:
+
+<hr>
+
 ```js
 <va-button onblur="handleBlur()" />
 ```
 
+<hr>
+
 Another example using the `blur` event in vanilla JavaScript:
-```js
-const element = document.querySelector('va-button');
-element.addEventListener('blur', event => { /* your listener */ })
+
+<hr>
+
+```html
+<script>
+  const element = document.querySelector('va-button');
+  element.addEventListener('blur', (event) => { console.log(event.detail) })
+</script>
+
+<va-button>
 ```
 
+<hr>
+
 For more information about native events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
-
-## React and Web Components
-
-Use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
-
-While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
-
-Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
-
-For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert` (or `VaAlert` as the React binding).
-
-The benefits of using Design System Web Components include:
-
-- Web Components can be imported into any JS Framework
-- Consistent syntax across frameworks and projects
-- Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
-- Performance and speed
-
-The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. 
-
-If our components do not meet your needs, we would love to hear about it. Reach out to us in Slack at #platform-design-system or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose). And if you are interested in contributing to the Design System, review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
 
 ## How to migrate to Web Components
 
