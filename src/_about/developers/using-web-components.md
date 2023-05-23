@@ -84,13 +84,13 @@ The equivalent vanilla Web Component version using `<va-example-component>` woul
 
 <hr>
 
-It can be more convenient to use the React binding version of the Web Component in React when a function is needed to be passed into a prop. But if the Web Component does not require interaction like this, the vanilla web component can be used without needing an import.
+It can be more convenient to use the React binding version of the Web Component in React when a function is needed to be passed into a prop. But if you don't require passing in a function or listening to events, use the vanilla Web Component and avoid an import entirely.
 
 ## Custom Events
 
 Some of the Design System Web Components allow for custom events.
 
-If the Web Components has a custom event that you need to use and you're using the React binding, you will need to prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
+If the Web Component has a custom event that you need to use and you're using the React binding, you will need to prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
 
 <hr>
 
@@ -106,7 +106,7 @@ const exampleCallback = (event) => { console.log(event.detail) }
 
 <hr>
 
-If the Web Components has a custom event that you need to use and you're **not** using the React binding, you will add an event listener using the event name as the event type:
+If the Web Component has a custom event that you need to use and you're **not** using the React binding, you will add an event listener using the event name as the event type:
 
 <hr>
 
