@@ -16,7 +16,7 @@ anchors:
 
 ## How to use a web component
 
-We can use a component called `<va-example-component>`, with its unique styling and functionality, in any JavaScript framework or library. The fact that these components are framework agnostic, helps us future proof our component library.
+A web component looks like an HTML element such as `<va-example-component>`. It has unique styling and functionality and can work in any JavaScript framework or library. The fact that these components are framework agnostic, helps us future proof our component library.
 
 [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) consist of three parts:
 * A custom HTML element
@@ -29,7 +29,7 @@ We can use a component called `<va-example-component>`, with its unique styling 
 
 ## Vanilla JavaScript applications
 
-If the Design System web components will be used without the need for passing in a function, object, array, or custom event, you are ready to use them without any additional imports. 
+If a Design System web component will be used without the need for passing in a function, object, array, or custom event, you are ready to use it without any additional imports. 
 
 A vanilla web component is used like `<va-example-component>` (identified by tags prefixed with `<va-*>`).
 
@@ -46,7 +46,7 @@ If either of these are true, we would recommend using the React binding for ease
 - You must pass in a function, object or array to a web component's properties
 - You must use custom events
 
-If you are not sure if you need to use a custom event, refer to the web component's [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page) to review its events and properties.
+If you are not sure if you need either of those features, refer to the web component's [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page) to review its events and properties.
 
 **Importing a React binding of a web component**
 
@@ -54,33 +54,76 @@ Bindings are component wrappers that allow our web components to work as first-c
 
 Example of importing the React binding of a web component:
 
+<hr>
+
 ```jsx
 import { 
   VaExampleComponent 
 } from "@department-of-veterans-affairs/component-library/dist/react-bindings";
 
-const exampleFunction = (event) => console.log(event.detail);
+const exampleFunction = () => { return "Hello, World!" };
 
 <VaExampleComponent exampleProp={exampleFunction} />
 ```
 
-The equivalent vanilla web component version of this would be `<va-example-component>`.
+<hr>
+
+The equivalent vanilla web component version using `<va-example-component>` would be this:
+
+<hr>
+
+```jsx
+<script>
+  const component = document.querySelector('va-example-component');
+  const exampleFunction = () => { return "Hello, World!" };
+  component.exampleProp = exampleFunction();
+</script>
+
+<va-example-component />
+```
+
+<hr>
+
+It can be more convenient to use the React binding version of the web component in React when a function is needed to be passed into a prop. But if the Web Component does not require interaction like this, the vanilla web component can be used without needing an import.
 
 ## Custom Events
 
 Some of the Design System web components allow for custom events.
 
-If you must use custom events and you're using JSX, you must prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
+If you must use custom events and you're using React, you must prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
 
-If you must use custom events and you're **not** using JSX, you must add an event listener using the event name as the event type. Given an event named `vaChange`, use: 
+If you must use custom events and you're **not** using React, you must add an event listener using the event name as the event type. Given an event named `vaChange`, use:
+
+<hr>
 ```js
-const element = document.querySelector('va-example-component');
-element.addEventListener('vaChange', event => { /* your listener */ })
+<script>
+  const element = document.querySelector('va-example-component');
+  const exampleFunction = event => { console.log(event.detail) }
+  element.addEventListener('vaChange', exampleFunction)
+<script>
+
+<va-example-component>
 ```
+<hr>
 
-The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
+The React binding equivalent of this would be:
 
-For more information about custom events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
+<hr>
+
+```jsx
+import { 
+  VaExampleComponent 
+} from "@department-of-veterans-affairs/component-library/dist/react-bindings";
+
+const exampleFunction = (event) => { console.log(event.detail) }
+
+<VaExampleComponent exampleProp={exampleFunction} />
+```
+<hr>
+
+The majority of our web components also fire a `component-library-analytics` event used to send component library interactions into analytics data layer events. The [handler for the Google Analytics event](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/site-wide/component-library-analytics-setup.js) exists in vets-website.
+
+For more information about custom events for specific components, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
 
 ## Native Events
 
