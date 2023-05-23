@@ -5,7 +5,7 @@ permalink: /about/developers/using-web-components
 has-parent: /about/developers/
 intro-text: Web Components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. 
 anchors:
-  - anchor: How to create a web component
+  - anchor: How to use a web component
   - anchor: Vanilla JavaScript applications
   - anchor: React applications
   - anchor: Custom events
@@ -14,11 +14,11 @@ anchors:
   - anchor: How to migrate to Web Components
 ---
 
-## How to create a web component
+## How to use a web component
 
-We can create our new component called `<va-web-component>`, with its unique styling and functionality, and use it in any JavaScript framework or library. The fact that these components are framework agnostic, helps us future proof our component library.
+We can use a component called `<va-example-component>`, with its unique styling and functionality, in any JavaScript framework or library. The fact that these components are framework agnostic, helps us future proof our component library.
 
-Web Components consist of three parts:
+[Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) consist of three parts:
 * A custom HTML element
   * Where you register your own HTML tag
 * The shadow DOM
@@ -29,27 +29,42 @@ Web Components consist of three parts:
 
 ## Vanilla JavaScript applications
 
-If the Design System web components will be used in a vanilla JavaScript application, you are ready to use them (identified by tags prefixed with `<va-*>`).
+If the Design System web components will be used without the need for passing in a function, object, array, or custom event, you are ready to use them without any additional imports. 
+
+A vanilla web component is used like `<va-example-component>` (identified by tags prefixed with `<va-*>`).
 
 We make our best efforts to avoid creating web components with object or array properties in order to make them easier to use in static HTML pages.
 
 ## React applications
 
-If the Design System web components will be used in a React application, you are ready to use them unless:
+React application have an option of either using the web component directly like `<va-example-component>` or importing the React binding for the web component which would look like this `<VaExampleComponent>`. Both of these implementations render as web components though.
+
+**How to choose to use the vanilla component or React binding?** 
+
+If either of these are true, we would recommend using the React binding for ease of use:
 
 - You must pass in a function, object or array to a web component's properties
 - You must use custom events
 
-**If your use case is listed above, you will have to use our web component bindings for React.** If you are not sure if you need to use a custom event, please refer to the web component's Storybook documentation to see its events and properties.
+If you are not sure if you need to use a custom event, refer to the web component's [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page) to review its events and properties.
 
-Bindings are component wrappers that allow our web components to work as first-class React components, allowing us to handle custom events and to pass in more than strings and numbers to a web component's properties. You will have to import each web component's bindings like you would with a React component.
+**Importing a React binding of a web component**
+
+Bindings are component wrappers that allow our web components to work as first-class React components. This allows them to handle custom events and to pass in more than primitives to a web component's properties. 
+
+Example of importing the React binding of a web component:
+
 ```jsx
-import { VaExampleComponent } from "@department-of-veterans-affairs/component-library/dist/react-bindings";
+import { 
+  VaExampleComponent 
+} from "@department-of-veterans-affairs/component-library/dist/react-bindings";
 
-const exampleFunction = () => console.log("Hello, World!");
+const exampleFunction = (event) => console.log(event.detail);
 
 <VaExampleComponent exampleProp={exampleFunction} />
 ```
+
+The equivalent vanilla web component version of this would be `<va-example-component>`.
 
 ## Custom Events
 
@@ -64,6 +79,8 @@ element.addEventListener('vaChange', event => { /* your listener */ })
 ```
 
 The majority of our web components also fire a `component-library-analytics` event used to translate component library actions into analytics data layer events. The event handler for this event exists in `vets-website`.
+
+For more information about custom events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
 
 ## Native Events
 
@@ -89,23 +106,28 @@ const element = document.querySelector('va-button');
 element.addEventListener('blur', event => { /* your listener */ })
 ```
 
+For more information about native events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
+
 ## React and Web Components
 
-**Note:** Please use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
+Use our VA Design System Web Components where applicable in your projects. We maintain this component library to provide VA teams with an ecosystem of vetted and tested components.
 
 While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
 
 Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
 
-For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert`.
+For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert` (or `VaAlert` as the React binding).
 
-Benefits include:
-- Future proofing as Web Components can be imported into any JS Framework
+The benefits of using Design System Web Components include:
+
+- Web Components can be imported into any JS Framework
 - Consistent syntax across frameworks and projects
 - Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
 - Performance and speed
 
-The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. If our components do not meet your needs, we would love to hear about it. Please reach out to us in Slack or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=caw310&labels=vsp-design-system-team&template=bug_template.md&title=). If you are interested, please review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. 
+
+If our components do not meet your needs, we would love to hear about it. Reach out to us in Slack or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose). And if you are interested in contributing to the Design System, review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
 
 ## How to migrate to Web Components
 
