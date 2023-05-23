@@ -68,7 +68,7 @@ const exampleFunction = () => { return "Hello, World!" };
 
 <hr>
 
-The equivalent vanilla web component version using `<va-example-component>` would be this:
+The equivalent vanilla Web Component version using `<va-example-component>` would be this:
 
 <hr>
 
@@ -84,29 +84,13 @@ The equivalent vanilla web component version using `<va-example-component>` woul
 
 <hr>
 
-It can be more convenient to use the React binding version of the web component in React when a function is needed to be passed into a prop. But if the Web Component does not require interaction like this, the vanilla web component can be used without needing an import.
+It can be more convenient to use the React binding version of the Web Component in React when a function is needed to be passed into a prop. But if the Web Component does not require interaction like this, the vanilla web component can be used without needing an import.
 
 ## Custom Events
 
-Some of the Design System web components allow for custom events.
+Some of the Design System Web Components allow for custom events.
 
-If you must use custom events and you're using React, you must prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
-
-If you must use custom events and you're **not** using React, you must add an event listener using the event name as the event type. Given an event named `vaChange`, use:
-
-<hr>
-```js
-<script>
-  const element = document.querySelector('va-example-component');
-  const exampleFunction = event => { console.log(event.detail) }
-  element.addEventListener('vaChange', exampleFunction)
-<script>
-
-<va-example-component>
-```
-<hr>
-
-The React binding equivalent of this would be:
+If the Web Components has a custom event that you need to use and you're using the React binding, you will need to prefix events with `on`. Given an event named `vaChange`, use `onVaChange`.
 
 <hr>
 
@@ -115,11 +99,27 @@ import {
   VaExampleComponent 
 } from "@department-of-veterans-affairs/component-library/dist/react-bindings";
 
-const exampleFunction = (event) => { console.log(event.detail) }
+const exampleCallback = (event) => { console.log(event.detail) }
 
-<VaExampleComponent exampleProp={exampleFunction} />
+<VaExampleComponent onVaChange={exampleCallback} />
 ```
+
 <hr>
+
+If the Web Components has a custom event that you need to use and you're **not** using the React binding, you will add an event listener using the event name as the event type:
+
+<hr>
+
+```js
+<script>
+  const element = document.querySelector('va-example-component');
+  const exampleCallback = event => { console.log(event.detail) }
+  element.addEventListener('vaChange', exampleCallback)
+<script>
+
+<va-example-component>
+```
+
 
 The majority of our web components also fire a `component-library-analytics` event used to send component library interactions into analytics data layer events. The [handler for the Google Analytics event](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/site-wide/component-library-analytics-setup.js) exists in vets-website.
 
