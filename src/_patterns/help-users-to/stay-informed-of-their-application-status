@@ -16,47 +16,24 @@ anchors:
 
 Review examples of patterns that exist today that help users to stay informed of their application status.
 
-
-
 ## Usage
 
 ### When to use this pattern
 
-Criteria for when the pattern is appropriate.
-
-May contain:
-#### Design principles
-- Design principles to consider
-
-### When not to use this pattern
-
-Criteria for when the pattern is inappropriate.
-
-### When to use caution
-
-Criteria for when the pattern could work with additional prototyping and testing.
+**When users need to stay informed of their application status.** After users have submitted an application, keep them informed of their application status.
 
 
-**Additional Usage sub-sections may include:**
-- Inputs and outputs
-- How to tell users
-- When to tell users
-- Do & Don't
+## Examples on VA.gov.
 
-## Examples
+### 10-10ez application status on health care intro page
 
-Examples of this pattern on VA.gov.
+{% include component-example.html alt="10-10ez health care application status on intro page." file="/images/patterns/help-user-to/stay-informed-of-their-application-status/10-10ez-status-on-intro-page.png" caption="10-10ez health care application status on intro page." class="x2" %}
 
-May contain reference or links to:
-### Other relevant examples
-- Instances of this pattern at other agencies
-- Other digital services in other countries using this pattern
 
-## How to design and build 
+### Claim status tool
 
-### Anatomy or layout details
+{% include component-example.html alt="Claim status tool." file="/images/patterns/help-user-to/stay-informed-of-their-application-status/Claim-status-tool-status-page.png" caption="Claim status tool." class="x2" %}
 
-Details any containers of components or layout concerns for how the pattern may be implemented on a page or pages.
 
 ### How this pattern works
 
