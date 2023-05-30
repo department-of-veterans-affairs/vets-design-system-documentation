@@ -27,17 +27,18 @@ Review examples of patterns that exist today that help users to stay informed of
 
 ### 10-10ez application status on health care intro page
 
-{% include component-example.html alt="10-10ez health care application status on intro page." file="/images/patterns/help-user-to/stay-informed-of-their-application-status/10-10ez-status-on-intro-page.png" caption="10-10ez health care application status on intro page." class="x2" %}
+{% include component-example.html alt="10-10ez health care application status on intro page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/10-10ez-status-on-intro-page.png" caption="10-10ez health care application status on intro page." class="x2" %}
 
 
 ### Claim status tool
 
-{% include component-example.html alt="Claim status tool." file="/images/patterns/help-user-to/stay-informed-of-their-application-status/Claim-status-tool-status-page.png" caption="Claim status tool." class="x2" %}
+{% include component-example.html alt="Claim status tool page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/Claim-status-tool-status-page.png" caption="Claim status tool page." class="x2" %}
 
 
-### How this pattern works
+### Certificate of eligibility
 
-Details the design decisions inherent to the pattern, describes the interactions, and provides usability guidance.
+{% include component-example.html alt="Certificate of eligibility status page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/COE-automatic-download-page.png" caption="Certificate of eligibility status page." class="x2" %}
+
 
 ### Components used in this pattern
 
