@@ -4,7 +4,7 @@ title: Stay informed of their application status
 draft: true
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
-intro-text: "In forms when we need to keep the user informed of their application staus, there is no one size fits all solution. To provide clarity, this page shows examples of patterns that exist today, and lists their limitations."
+intro-text: "In forms when we need to keep the user informed of their application staus, there is no one size fits all solution. To provide clarity, this page shows examples of patterns that exist on VA.gov today."
 status: use-deployed
 anchors:
   - anchor: Usage
