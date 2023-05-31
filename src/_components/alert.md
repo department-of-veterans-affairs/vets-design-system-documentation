@@ -22,46 +22,53 @@ web-component: va-alert
 
 ### Informational alert
 
-{% include storybook-preview.html story="components-va-alert--default" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--default" link_text="va-alert informational" %}
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
 ### Warning alert
 
-{% include storybook-preview.html story="components-va-alert--warning" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--warning" link_text="va-alert warning" %}
 
 Used to warn a user, such as when there are negative consequences, or when something has gone wrong.
 
 ### Success alert
 
-{% include storybook-preview.html story="components-va-alert--success" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--success" link_text="va-alert success" %}
 
 Used to indicate success.
 
 ### Error alert
 
-{% include storybook-preview.html story="components-va-alert--error" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--error" link_text="va-alert error" height="220px" %}
 
 Used when there is a problem or something destructive is about to occur.
 
 ### Sign in or tool prompt
 
-{% include storybook-preview.html story="components-va-alert--sign-in-or-tool-prompt" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--sign-in-or-tool-prompt" link_text="va-alert sign in or tool prompt" height="220px" %}
 
 Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
+
+### Sign In To Start Your Application
+
+{% include storybook-preview.html story="components-va-alert--sign-in-to-start-your-application" link_text="va-alert sign in to start your application" height="330px" %}
+
+Used to inform the user of the benefits of signing in. Mainly, that information can be prefilled into some forms from Profile data and that information entered into a form will be saved as the user progresses from step to step.
+
 
 ## Examples - Default variations
 
 ### Heading level
 
-{% include storybook-preview.html story="components-va-alert--heading-level" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--heading-level" link_text="va-alert heading level" %}
 
 Alerts should contain headings.
 
 
 ### Dismissible 
 
-{% include storybook-preview.html story="components-va-alert--dismissable" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--dismissable" link_text="va-alert dismissible" %}
 
 * Any alert variation can be dismissible, including background-color only alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
