@@ -4,6 +4,7 @@ permalink: /components/form/number-input
 has-parent: /components/form/
 title: Number input
 research-title: Form controls
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/4C89A45B-E8D8-44ED-B79A-E64F34303F03/canvas
 intro-text: "Number input elements are used for numeric inputs."
 status: use-deployed
 anchors:
