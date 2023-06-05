@@ -23,10 +23,10 @@ You can <span class="do-dont__diff">reach out</span> to your regional loan cente
 {% include _like-this-not-this.html like_this=example_like_this_2 not_this=example_not_this_2 %}
 
 {% capture example_like_this_3 %}
-If you want to <span class="do-dont__diff">identify</span> an error with the decision on your claim, you can request a higher-level review.
+If you want to <span class="do-dont__diff">identify</span> an error with the decision on your claim, you can request a Higher-Level Review.
 {% endcapture %}
 {% capture example_not_this_3 %}
-If you want to <span class="do-dont__diff">point out</span> an error with the decision on your claim, you can request a higher-level review.
+If you want to <span class="do-dont__diff">point out</span> an error with the decision on your claim, you can request a Higher-Level Review.
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_3 not_this=example_not_this_3 %}
 
