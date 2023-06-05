@@ -1,0 +1,57 @@
+---
+layout: pattern
+title: Stay informed of their application status
+draft: true
+permalink: /patterns/help-users-to/stay-informed-of-their-application-status
+sub-section: help-users-to
+intro-text: "In forms when we need to keep the user informed of their application staus, there is no one size fits all solution. To provide clarity, this page shows examples of patterns that exist on VA.gov today."
+status: use-deployed
+anchors:
+  - anchor: Usage
+  - anchor: Examples
+  - anchor: How to design and build
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+---
+
+Review examples of patterns that exist today that help users to stay informed of their application status.
+
+## Usage
+
+### When to use this pattern
+
+**When users need to stay informed of their application status.** After users have submitted an application, keep them informed of their application status.
+
+
+## Examples on VA.gov.
+
+### 10-10ez application status on health care intro page
+
+{% include component-example.html alt="An example of the 10-10ez health care application status on intro page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/10-10ez-status-on-intro-page.png" caption="10-10ez health care application status on intro page." class="x2" %}
+
+
+### Claim status tool
+
+{% include component-example.html alt="An example of the Claim status tool page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/Claim-status-tool-status-page.png" caption="Claim status tool page." class="x2" %}
+
+
+### Certificate of eligibility
+
+{% include component-example.html alt="An example of the Certificate of eligibility status page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/COE-automatic-download-page.png" caption="Certificate of eligibility status page." class="x2" %}
+
+
+### Components used in this pattern
+
+List of links to the components used in the pattern and details on any variations in use.
+
+### Page templates available for this pattern
+
+List of links to page templates or layouts used to build any pages for this pattern.
+
+## Content considerations
+
+Any content rules or recommendations for the pattern.
+
+## Accessibility considerations
+
+Calling out specific accessibility concerns and considerations.
