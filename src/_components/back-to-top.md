@@ -3,6 +3,7 @@ layout: component
 sub_section: Back to top
 title: "Back to top"
 status: use-deployed
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/FDC3C083-F7A0-4E90-B8B3-DEECADF511FA/canvas
 intro-text: "The Back to top component is a shortcut that allows the user to quickly navigate to the top of a long page of content."
 anchors:
   - anchor: Examples
