@@ -1,8 +1,9 @@
 ---
 layout: component
 title: Sidenav
-status: use-best-practice
 intro-text: "Hierarchical, vertical navigation to place at the side of a page."
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/6C33CB80-7176-4959-89E1-DBBD51CC029A/canvas
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage

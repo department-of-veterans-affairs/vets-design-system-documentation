@@ -5,6 +5,7 @@ has-parent: /components/form/
 title: Radio button
 research-title: Form controls
 intro-text: "Radio buttons allow users to see all available choices at once and select exactly one option."
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/AF7CD21C-2DF3-4CA4-B678-473A929B9615/canvas
 status: use-deployed
 anchors:
   - anchor: Examples

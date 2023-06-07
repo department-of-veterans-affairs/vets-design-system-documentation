@@ -2,6 +2,7 @@
 layout: component
 title: Pagination
 status: use-deployed
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/ABBAABE0-2108-4DBA-8FF5-01F00A06F082/canvas
 intro-text: "Pagination is navigation for paginated content."
 anchors:
   - anchor: Examples
