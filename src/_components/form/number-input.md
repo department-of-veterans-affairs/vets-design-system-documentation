@@ -46,6 +46,10 @@ web-component: va-number-input
 
 {% include storybook-preview.html story="components-va-number-input--internationalization" link_text="va-number-input internationalization" %}
 
+### Widths
+
+{% include storybook-preview.html story="components-va-number-input--widths" link_text="va-number-input widths" height="800px" %}
+
 ## Usage
 
 ### When to use number input
@@ -65,6 +69,16 @@ web-component: va-number-input
 - Number input always has the type of `number` and provides a `min` and `max` attribute to set a range on the component. 
 - Only show error validation messages or stylings after a user has interacted with a particular field.
 - Avoid using placeholder text that appears within a input field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+
+### Choosing between variations
+
+* **Error.** Highlights the text input field where the user has made an error that needs to be corrected.
+* **Required.** Indicates to the user that the text input field is required in order to submit the form.
+* **With Hint Text.** Provides a short hint to the user on what to enter into the field.
+* **Valid Range.** A combination of a max and min value indicating an acceptable number range of what can be entered into the field.
+* **Internationalization.** Demonstrates how this components changes when used with the language toggle.
+* **With Currency.** Indicates to the user the expected input is US currency.
+* **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
 ### Native Events
 
