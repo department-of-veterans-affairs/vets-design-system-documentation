@@ -21,6 +21,11 @@ Review examples of patterns that exist today that help users to stay informed of
 
 ## Examples
 
+### MyVA
+
+{% include component-example.html alt="An example of a claims and appeals status card in My VA." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/status-in-myva.png" caption="A status Card component used in MyVA to show the status of a claim with a call-to-action to retrieve details on that claim." reverse="true" class="x2" %}
+
+
 ### 10-10ez application status on health care intro page
 
 {% include component-example.html alt="An example of the 10-10ez health care application status on intro page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/10-10ez-status-on-intro-page.png" caption="The 10-10ez Health Care application provides status to users if and when they return to the introduction page." class="x2" %}
