@@ -15,6 +15,9 @@ The team has mainly focused on building out new variations of our form component
 
 ### New and updated components
 
+* Added va-card to [Card]({{ site.baseurl }}/components/card) in addition to new examples
+* Added width variations to [Text input]({{ site.baseurl }}/components/form/text-input#widths) and [Number input]({{ site.baseurl }}/components/form/number-input#widths)
+* Added fieldsets to [radio buttons]({{ site.baseurl }}/components/form/radio-button) and [checkboxes]({{ site.baseurl }}/components/form/checkbox#examples---group)
 * Added [Form - Autosave]({{ site.baseurl }}/components/form/autosave)
 * Added [Form - Need help?]({{ site.baseurl }}/components/form/need-help)
 * Added [Form - Penalty notice]({{ site.baseurl }}/components/form/penalty-notice)

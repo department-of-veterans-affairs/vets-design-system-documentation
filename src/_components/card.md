@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Card
-status: use-deployed
+status: use-with-caution-candidate
 github-title: va-card
 research-title: card
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2219A3C0-576F-48CE-8EF3-60F37E30BA93
@@ -144,6 +144,10 @@ There are many instances of the Card component in production. This is not an exh
 #### Claims and appeals
 
 {% include component-example.html alt="A Claims and Appeals card in MyVA." file="/images/components/card/claims-and-appeals-mobile.png" caption="A Claims and Appeals card showing status for a claim in MyVA at a mobile viewport width." reverse=true width="50%" %}
+
+#### Financial Status Report
+
+{% include component-example.html alt="A Financial Status Report card." file="/images/components/card/financial-status-report.png" caption="A Financial Status Report (VA form 5655) card showing a household expense added with a Link - Active for editing the monthly amount and a Button - Icon for deleting the entry." reverse=true class="x2" %}
 
 #### Media
 
