@@ -52,11 +52,11 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 ### With Additional Info
 
-{% include storybook-preview.html story="components-va-text-input--with--additional-info" link_text="va-text-input with Additional info" %}
+{% include storybook-preview.html story="components-va-text-input--with-additional-info" link_text="va-text-input with Additional info" %}
 
 ### Widths
 
-{% include storybook-preview.html story="components-va-text-input--with--widths" link_text="va-text-input widths" height="800px" %}
+{% include storybook-preview.html story="components-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
 
 ## Usage
 
