@@ -7,8 +7,8 @@ research-title: "Alert boxes"
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5E24F540-2558-488C-BD6D-823F4A2F5607
 anchors:
   - anchor: Examples - Default
-  - anchor: Examples - Default variations
-  - anchor: Examples - Background color only
+  - anchor: Examples - Properties
+  - anchor: Examples - Slim alert
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -57,7 +57,7 @@ Used to prompt a user to sign in, create an account, or launch an online tool to
 Used to inform the user of the benefits of signing in. Mainly, that information can be prefilled into some forms from Profile data and that information entered into a form will be saved as the user progresses from step to step.
 
 
-## Examples - Default variations
+## Examples - Properties
 
 ### Heading level
 
@@ -65,49 +65,39 @@ Used to inform the user of the benefits of signing in. Mainly, that information 
 
 Alerts should contain headings.
 
-
 ### Dismissible 
 
 {% include storybook-preview.html story="components-va-alert--dismissable" link_text="va-alert dismissible" %}
 
-* Any alert variation can be dismissible, including background-color only alerts. This example shows an informational alert that can be dismissed.
+* Any alert variation can be dismissible, including slim alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
 
-
-#### Dismissible Background Only
-
-{% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only" link_text="va-alert" %}
-
-#### Dismissible Background Only Icon
+#### Dismissible Slim alert
 
 {% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only-icon" link_text="va-alert" %}
 
-## Examples - Background color only
+## Examples - Slim alert
 
-### Background color only alert
-
-Any style of alert box can be modified to be a background-color-only alert. Use background alerts for immediate feedback, such as in single-page applications or Ajax forms. They should not be used for static alert messaging.
-
-{% include storybook-preview.html story="components-va-alert--background-only" height="352px" link_text="va-alert" %}
-
-- Some users might not be able to distinguish differences in the background color or see the color at all. Don’t rely on color alone to convey context. 
-- Messaging should be direct and concise. Aim for one or two lines.
-- Don’t use headings in background alerts.
-
-### Background color only alert with icon
-
-A background alert may be used with an icon to draw attention to important feedback. The iconography for background alerts is consistent with the way icons are used in standard alert boxes.
+Any style of alert box can be modified to be a Slim alert. The iconography for Slim alerts is consistent with the way icons are used in standard Alerts. 
 
 {% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="352px" link_text="va-alert" %}
 
 ## Usage
 
-### When to use alerts
+### When to use a Standard alert
 
 * **User feedback.** Use Alert for [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) that respond to an action a user has taken and to draw their attention to something that they need to correct or to confirm successful completion of a task. These messages use success and error variations.
 * **In-application system status.** An exception to the above is providing information to the user, unprompted, about a problem with a particular application. These [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) typically use an error or warning variation and do not require user action.
 * **Engagement messages that nudge the user to enter or update data.** [Engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement) typically use the informational variation and ask the user to take an action.
 * **Access messages when a user tries to access an item that is not available to them.** [Access messages]({{ site.baseurl }}/content-style-guide/error-messages/access) typically warn the user that something they tried to access is not working correctly or is temporarily unavailable. These often use the error or warning variations. 
+
+### When to use a Slim alert
+
+**All of the above standard alert uses cases apply however, use of a Slim alert in place of a Standard alert is only appropriate when used with one of these additional constraints:**
+
+* **Immediate feedback to the user.** When your application is using Javascript to provide an immediate response to the user without a full page load.
+* **Sub-alerts on the page.** When your page has more than 1 alert and you are using the Standard and Slim alerts to create a hierarchy of alerts. It is also appropriate to convey multiple statuses using a combination of headers, text, and the Slim alert variation. An example of a sub-alert is the [Autosave alert]({{ site.baseurl }}/components/form/autosave).
+
 
 ### When to consider something else
 
@@ -122,28 +112,30 @@ When the user is required to do something in response to an alert, let them know
 
 * On long forms, always include inline validation in addition to any error messages that appear at the top of the form.
 * Allow a user to dismiss a notification wherever appropriate.
-* Don’t include notifications that aren’t related to the user’s current goal.
-* Don’t stack alerts one after the other.
+* Don't include notifications that aren't related to the user's current goal.
+* Don't stack alerts one after the other.
 * If the alert appears within the page body content, it should be co-located with relevant content.
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
+* Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
+* Headings are optional in Slim alerts.
 
 ### Placement
 
-#### Default alerts
+#### Default alert
 
 * In most cases, the Default alert (in all of its variations) should be placed directly below the intro text, near the top of the page. 
 * When a Default alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section.
 
-#### Background color only alerts
+#### Slim alert
 
-* Background alerts related to a form field or section should be placed below the label, legend, or section header.
-* The info variation of the Background alert can be placed between sections.
-* Save-in-progress success and error Background alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
+* Slim alerts related to a form field or section should be placed below the label, legend, or section header.
+* The Info variation of the Slim alert can be placed between sections.
+* Save-in-progress success and error Slim alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
 
 ### Choosing between variations
 
-* Use the Default alert variation in most use cases and within static content pages. Background alerts are not available in Drupal.
-* Use the Background alert variation for immediate feedback within forms and applications. Background alerts are most often displayed immediately after the user has taken an action, and can also be used for save-in-progress success and error messaging. 
+* Use the Default alert variation in most use cases and within static content pages. Slim alerts are not available in Drupal.
+* Use the Slim alert variation for immediate feedback within forms and applications. Slim alerts are most often displayed immediately after the user has taken an action, and can also be used for save-in-progress success and error messaging. 
 
 {% include component-docs.html component_name=page.web-component %}
 
