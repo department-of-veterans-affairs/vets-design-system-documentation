@@ -15,6 +15,8 @@ The team has mainly focused on building out new variations of our form component
 
 ### New and updated components
 
+* Updated [va-table to support pagination]({{ site.baseurl }}/components/table#with-pagination).
+* Alert - Background-color-only with no icon is now deprecated in favor of the with icon variation. That variation is now known as [Alert - Slim]({{ site.baseurl }}/components/alert#examples---slim-alert), to align with the US Web Design System.
 * Added va-card to [Card]({{ site.baseurl }}/components/card) in addition to new examples
 * Added width variations to [Text input]({{ site.baseurl }}/components/form/text-input#widths) and [Number input]({{ site.baseurl }}/components/form/number-input#widths)
 * Added fieldsets to [radio buttons]({{ site.baseurl }}/components/form/radio-button) and [checkboxes]({{ site.baseurl }}/components/form/checkbox#examples---group)
