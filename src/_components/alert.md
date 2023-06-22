@@ -74,13 +74,13 @@ Alerts should contain headings.
 
 #### Dismissible Slim alert
 
-{% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only-icon" link_text="va-alert" %}
+{% include storybook-preview.html height="80px" story="components-va-alert--dismissable-background-only-icon" link_text="va-alert Slim, dismissible" %}
 
 ## Examples - Slim alert
 
 Any style of alert box can be modified to be a Slim alert. The iconography for Slim alerts is consistent with the way icons are used in standard Alerts. 
 
-{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="352px" link_text="va-alert" %}
+{% include storybook-preview.html story="components-va-alert--background-only-with-icon" height="352px" link_text="va-alert Slim" %}
 
 ## Usage
 
