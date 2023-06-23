@@ -58,7 +58,7 @@ anchors:
 
 ### When to use Component name
 
-* **Time-sensitive information.** Provides a visual distinct card in order to surface time-sensitive updates and action items.
+* **Time-sensitive information.** Provides a visually distinct card in order to surface time-sensitive updates and action items.
 * **Highlight most important information.** Visually stands out from other cards and content on the page so the user knows it is the most important thing to pay attention to.
 
 ### When to consider something else
@@ -68,43 +68,41 @@ anchors:
 
 ### How this component works
 
+The component is comprised of the following elements:
+
+1. Header
+2. Status icon
+3. Body
+4. [Link - Active]({{ site.baseurl }}/components/link#active)
+5. Close icon and text
 
 ### Choosing between variations
 
 * **Drop the border when there are more than 3 notifications in a set.** In order to avoid visual noise and distraction use the no border variation when there are more than 3-5 notifications in a list.
-* **Avoid making the notification non-dismissible.**
+* **Avoid making the notification non-dismissible.** Don't take autonomy away from the user unless there is a clear and valid use case.
 
 ### Placement
 
 Where the component appears visually, and if necessary to clarify, where it may appear in the source code. Can also comment on where the component is not to be placed.
 
-### Design principles
-
-* List of design or UX principles that this component is an example or or adheres to.
-
 ### Instances of this component in production
 
-Images with captions that describe different instances of this component being used in production.
-
-<!-- include component-example.html alt="Explain what is in the image." file="/images/components/component-name/filename.png" caption="Describe what this example image is depicting." --> 
+Currently, the notification component will be used on MyVA and in MyHealtheVet. 
 
 
-This is the Code Usage section. Note that the header is inside this include.
-<!-- include component-docs.html component_name=page.web-component  -->
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
-* Bulleted list of content related instructions to the designer.
-* May be an include is shared with the Content style guide section.
+* Use concise, active voice, plain language content and limit the notification body to just a few lines.
 
 ## Accessibility considerations
 
-* Bulleted list of a11y related instructions to the designer and developer.
+* Use the header level change to set the appropriate header level within the flow of the page without altering the size and weight of the header.
 
 ## Related
 
-* Links to related components.
+* [Alert]({{ site.baseurl }}/components/alert)
+* [Card]({{ site.baseurl }}/components/card) 
 
-
-This is the Component checklist section. Note that the header is inside this include.
-<!-- include _component-checklist.html component_name=page.web-component -->
+{% include _component-checklist.html component_name=page.web-component %}
