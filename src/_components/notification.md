@@ -78,6 +78,7 @@ The component is comprised of the following elements:
 
 ### Choosing between variations
 
+* **Use [Action required](#action-required) when the user needs to take action.** The action required variation is explicitly for notifications that require the user to take an action. Use [update](#update) or the [default](#default) when no specific action is required.
 * **Drop the border when there are more than 3 notifications in a set.** In order to avoid visual noise and distraction use the no border variation when there are more than 3-5 notifications in a list.
 * **Avoid making the notification non-dismissible.** Don't take autonomy away from the user unless there is a clear and valid use case.
 
@@ -98,7 +99,7 @@ Currently, the notification component will be used on MyVA and in MyHealtheVet.
 
 ## Accessibility considerations
 
-* Use the header level change to set the appropriate header level within the flow of the page without altering the size and weight of the header.
+* Use the [header level change](#header-level-change) to set the appropriate header level within the flow of the page without altering the size and weight of the header.
 
 ## Related
 
