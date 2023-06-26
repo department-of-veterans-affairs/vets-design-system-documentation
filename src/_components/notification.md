@@ -2,7 +2,7 @@
 layout: component
 title: Notification
 contributor: Angela Agosto, Allison Lu
-intro-text: Provides a visual distinct card in order to surface time-sensitive updates and action items.
+intro-text: Provides a visually distinct card in order to surface time-sensitive updates and action items.
 sketch-link: 
 status: use-with-caution-available
 web-component: va-notification
@@ -83,7 +83,7 @@ The component is comprised of the following elements:
 
 ### Placement
 
-Where the component appears visually, and if necessary to clarify, where it may appear in the source code. Can also comment on where the component is not to be placed.
+Notifications should appear below the H1 of the page and near the top of the content of the page.
 
 ### Instances of this component in production
 
