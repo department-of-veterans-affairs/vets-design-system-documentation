@@ -60,7 +60,6 @@ Choose the [No border](#no-border) variation when using Additional info inside o
 The following are places where Additional info can be used:
 
 * After a header (h2, h3, h4) or paragraph to provide orthogonal details or provide an answer to a common question.
-* Below a [primary button]({{ site.baseurl }}/components/button) to provide context about the action the button will take or to provide instructions in another language.
 * Within a [Process list]({{ site.baseurl }}/components/process-list) to shorten the length of content within a step.
 * Within a [Form]({{ site.baseurl }}/components/form) to provide additional help text.
 * Whenever there is a chance to enhance the understanding a user has about a particular choice.
@@ -89,11 +88,6 @@ Most VA forms have a large amount of instructional text that tries to make VA pr
     Use within a <a href="{{ site.baseurl }}/components/process-list">process list</a> in <a href="https://www.va.gov/health-care/apply/application/introduction">Apply for VA health care</a>
   </figcaption>
 </figure>
-
-#### Below a primary call-to-action
-{% include component-example.html alt="Example of this component used to provide instructions in another language" file="/images/components/additional-info/example-for-instructions.png" caption="Use below a primary call-to-action button to get instructions in an additional language in <a href=\"https://www.va.gov/health-care/how-to-apply/\">How to apply for VA health care</a>" %}
-
-
 
 {% include component-docs.html component_name=page.web-component %}
 
