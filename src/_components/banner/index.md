@@ -6,6 +6,7 @@ intro-text: "Banners are for announcements that typically prepare a Veteran to v
 status: use-deployed
 sub-pages:
   - sub-page: Maintenance
+  - sub-page: Official Gov
   - sub-page: Promo
 anchors:
   - anchor: Examples

@@ -14,13 +14,13 @@ anchors:
 
 ## Examples
 
-### Before maintenance
+### Default (during maintenance)
 
-{% include storybook-preview.html story="components-banners-maintenancebanner--before-maintenance" height="214px" link_text="MaintenanceBanner" %}
+{% include storybook-preview.html story="components-va-maintenance-banner--default" link_text="va-maintenance-banner" height="225px" %}
 
-### During maintenance
+### Warning (upcomming maintenance)
 
-{% include storybook-preview.html story="components-banners-maintenancebanner--during-maintenance" height="214px" link_text="MaintenanceBanner" %}
+{% include storybook-preview.html story="components-va-maintenance-banner--maintenance-warning" link_text="va-maintenance-banner maintenance warning" height="225px" %}
 
 ## Usage
 

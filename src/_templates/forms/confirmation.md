@@ -6,10 +6,12 @@ title: Confirmation
 status: use-deployed
 intro-text: "The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim."
 anchors:
+  - anchor: About
   - anchor: Example
   - anchor: Structure
-  - anchor: Related
 ---
+
+## About
 
 Our current confirmation pages vary in format and content. Below are some of the default components used in our current confirmation pages. Teams should tailor the layout and content as needed based on the benefit type and/or stakeholder feedback.
 
@@ -19,12 +21,12 @@ Our current confirmation pages vary in format and content. Below are some of the
 
 The form confirmation page consists of:
 
-1. H1 (should carry over from H1 from the online form)  
-2. Success alert   
-3. Print this page pattern  
-4. Other content elements (may include process list/subway map)
-5. Action link  
-6. Helpful content  
+1. [Page title](#page-title)
+2. [Success alert](#success-alert)
+3. [Help users to keep a record of submitted information pattern](#help-users-to-keep-a-record-of-submitted-information-pattern)
+4. [Other content elements](#other-content-elements)
+5. [Back to VA.gov link](#back-to-vagov-link)  
+6. [Need help](#need-help)
 
 ### Instances of this template in production
 
@@ -33,7 +35,7 @@ The form confirmation page consists of:
 
 ## Structure
 
-### H1
+### Page title
 
 The H1 for this page should carry over from H1 for the online form. File for [benefit] or Apply for [benefit] and the VA paper form equivalency appears next to or below the H1.
 
@@ -53,21 +55,14 @@ Once we’ve reviewed your application, a Caregiver Support Coordinator will con
 
 >We've received your application.
 
-### Print this page pattern 
+### Help users to keep a record of submitted information pattern
 
-![print this page pattern]({{site.baseurl}}/images/templates/forms/confirmation/print-this-page.png) 
+Follow the [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) pattern to allow users to keep a printable record of their form submission.
 
-Include a line of content letting users know they can print the page for their records. 
+This pattern employs the [Featured content component]({{ site.baseurl }}/components/featured-content), content, and a “Print this page” [Button - Primary]({{ site.baseurl }}/components/button). 
 
-Example message:
+The Featured content component should contain: 
 
->Please print this page for your records.
-
-The print this page pattern consists of the [Featured content component]({{ site.baseurl }}/components/featured-content), content, and a “Print this page” [default blue button]({{ site.baseurl }}/components/button). 
-
-Informational blue box content: 
-
-(begin blue box)
 - Applicant name
 - Benefit they’ve applied for
 - Confirmation number (if applicable)
@@ -75,9 +70,8 @@ Informational blue box content:
 - Other important information about their claim, such as disability conditions, they’re claiming. (if applicable)
 - “Print this page” default blue button
 
-(end blue box)
-
 ### Other content elements 
+
 Content to include on the confirmation page will depend on the type of benefit. Some benefit confirmation pages might need more information than others.
 
 Content writers and designers should work together to determine the best format and content for the confirmation page, based on the type of benefit and stakeholder input. The [Process list (subway map) component]({{ site.baseurl }}/components/process-list) can be a good solution for presenting next steps or processes where the user may need to track progress over an extended period of time.
@@ -97,16 +91,14 @@ Example message:
  
 >We may contact you if we need more information or documents.
 
-### Action link
+### Back to VA.gov link
 
 ![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/action-link.png) 
 
- Include a link that allows users to navigate back to VA.gov. The [action link]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage. 
+ Include a link that allows users to navigate back to VA.gov. The [Link - Action]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage. 
 
-### Helpful content
+### Need help
 
-![need help content]({{site.baseurl}}/images/templates/forms/confirmation/need-help.png) 
+The Need help component is a footer that appears on the bottom of every page of the form. This content lets users know how to get additional help with the form or the benefits. The content is customized depending on the form and usually points the user to a number they can call if they need help with their form.  
 
-Helpful content will vary depending on the form. Use the H3 highlight for the title and always label it “Need help?”. The content usually points the user to a number they can call if they need help with their form. 
-
-
+{% include component-example.html alt="An example of a need help footer for forms pages." file="/images/templates/forms/confirmation/need-help.png" caption="An example of a Need help component used on all forms pages." class="x2" %}

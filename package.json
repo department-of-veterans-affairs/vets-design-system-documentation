@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "npm run build && bundle exec jekyll serve --baseurl ''",
+    "watch": "npm run build && bundle exec jekyll serve --baseurl '' --incremental",
     "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
@@ -26,7 +27,7 @@
   },
   "homepage": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation#readme",
   "devDependencies": {
-    "@department-of-veterans-affairs/component-library": "^13.6.0",
+    "@department-of-veterans-affairs/component-library": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-rename": "^2.0.0",
@@ -41,6 +42,9 @@
     "yargs-parser": "^5.0.1"
   },
   "dependencies": {
-    "@department-of-veterans-affairs/formation": "^7.0.1"
+    "@department-of-veterans-affairs/formation": "^7.0.8"
+  },
+  "engines": {
+    "npm": "6.14.8"
   }
 }
