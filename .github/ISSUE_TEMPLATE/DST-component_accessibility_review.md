@@ -2,7 +2,7 @@
 name: "DST - Component accessibility review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Accessibility review"
-labels: vsp-design-system-team
+labels: platform-design-system-team
 
 ---
 ## Configuring this issue
