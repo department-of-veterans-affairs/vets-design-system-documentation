@@ -115,7 +115,7 @@ __Use a link following a list that identifies the destination__
 * Prostate Cancer
 * Respiratory Cancers
 
-[Learn more about these cancers on the VA public health website](https://www.publichealth.va.gov/exposures/agentorange/conditions/).
+<a href="https://www.cancer.gov/types/common-cancers" target="_blank">Learn more about these cancers on the National Cancer Institute website</a>.
 
 </div>
 </div>
@@ -125,9 +125,10 @@ __Use a link following a list that identifies the destination__
   
 __Avoid linking each item in a list to the same destination__
 
-* [Bladder cancer](https://www.publichealth.va.gov/exposures/agentorange/conditions/)
-* [Prostate Cancer](https://www.publichealth.va.gov/exposures/agentorange/conditions/)
-* [Respiratory Cancers](https://www.publichealth.va.gov/exposures/agentorange/conditions/)
+* <a href="https://www.cancer.gov/types/common-cancers" target="_blank">Bladder cancer</a>
+* <a href="https://www.cancer.gov/types/common-cancers" target="_blank">Prostate Cancer</a>
+* <a href="https://www.cancer.gov/types/common-cancers" target="_blank">Respiratory Cancers</a>
+
 </div>
 </div>
 </div>
