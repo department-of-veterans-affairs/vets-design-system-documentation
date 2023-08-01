@@ -106,9 +106,10 @@ Review ["Usage"](#usage) for guidance.
 
 ## Accessibility considerations
 
-- **Material honesty**: Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
-- **Keyboard navigation**: The user must be able to navigate to links using the Tab key and activate links using the Enter key.
-- **Purpose and target**: Without a purpose and target, everyone-- but especially screen reader users-- will struggle to understand where they may be routed off to.
+- **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
+- **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
+- **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
+- **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites](#linking-to-external-sites).
 
 {% include content/links-vs-buttons.md %}
 
