@@ -222,7 +222,6 @@ Here is a list of each Web Component and the migration available:
 * `va-breadcrumbs`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/master/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-button`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-button--primary)
 * `va-checkbox`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-checkbox--default)
-* `va-checkbox-group`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-checkbox-group--default)
 * `va-file-input`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-file-input--default)
 * `va-loading-indicator`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/loadingindicator.js)
 * `va-modal`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
