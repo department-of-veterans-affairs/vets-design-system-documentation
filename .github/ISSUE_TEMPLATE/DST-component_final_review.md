@@ -2,7 +2,7 @@
 name: "DST - Component final review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Final Review"
-labels: vsp-design-system-team
+labels: platform-design-system-team
 
 ---
 

@@ -2,7 +2,7 @@
 name: "DST - Basic Issue Template"
 about: INTERNAL DST USE ONLY
 title: ''
-labels: vsp-design-system-team
+labels: platform-design-system-team
 
 ---
 ## Configuring this issue

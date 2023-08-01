@@ -2,7 +2,7 @@
 name: "DST - Component documentation"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Documentation"
-labels: vsp-design-system-team
+labels: platform-design-system-team
 
 ---
 
