@@ -133,9 +133,10 @@ __Avoid linking each item in a list to the same destination__
 </div>
 
 
-<h4>Open external links in the same tab and window</h4>
+<h4>Open internal links in the same tab and window, open external links in a new tab and window</h4>
 
-* **External links should open in the same tab and window.** Thus they should not have `target="_blank"`. However, per USWDS guidance, external links should have `rel="noreferrer"` added as an attribute. 
+* **Internal links should open in the same tab or window.** Links within the va.gov domain should open in the current tab or window excluding some sub-domains (see below).
+* **External links should open in a new tab or window.** Links to external sites should have `target="_blank"`. Also, per USWDS guidance, external links should have `rel="noreferrer"` added as an attribute. 
 * **VA sub-domain exceptions that open in a new tab or window.** Some VA sub-domains provide a distinct experience from VA.gov and thus open in a new tab. This list is periodically re-evaluated and updated. The following sub-domains currently open in a new tab:
   * myhealth.va.gov
   * ebenefits.va.gov
