@@ -93,12 +93,12 @@ Note: We do not use the new window icon shown in the USWDS.
 
 <h4>Clearly identify external links</h4>
 
-The USWDS guidance requires that the VA clearly identify external links. Here are several ways we have decided to do that:
+The USWDS guidance requires that VA clearly identify external links. Here are several ways to do that:
 
 <h5>Individual links in text</h5>
 
-* **Include text within the link that indicates where the user will go.** Useful for individual links rather than a set of links in a list all going to the same place, this method uses text within the link to signal to the user the destination of that link. For example, "Chronic B-cell leukemia on VA's public health site".
-* **Use an aria-label to create a screen reader only label.** The `aria-label` appends text that provides additional context as to the destination of the link. 
+* **Include text within the link that indicates where the user will go.** Use text within the link to signal to the user the destination of that link. For example, "Learn more about chronic B-cell leukemia on VA's public health site."
+* **Use an aria-label to create a screen reader-only label.** The `aria-label` appends text that provides additional context as to the destination of the link. 
 
 <h5>A list</h5>
 
@@ -132,12 +132,11 @@ __Avoid linking each item in a list to the same destination__
 </div>
 </div>
 
-
 <h4>Open internal links in the same tab and window, open external links in a new tab and window</h4>
 
-* **Internal links should open in the same tab or window.** Links within the va.gov domain should open in the current tab or window excluding some sub-domains (see below).
-* **External links should open in a new tab or window.** Links to external sites should have `target="_blank"`. Also, per USWDS guidance, external links should have `rel="noreferrer"` added as an attribute. 
-* **VA sub-domain exceptions that open in a new tab or window.** Some VA sub-domains provide a distinct experience from VA.gov and thus open in a new tab. This list is periodically re-evaluated and updated. The following sub-domains currently open in a new tab:
+* **External links should open in a new tab or window.** Links to external sites should have `target="_blank"`. Also, per USWDS guidance, external links should have `rel="noreferrer"` added as an attribute.
+* **Internal links should open in the same tab or window.** Links within the VA.gov domain should open in the current tab or window. There are some exceptions that we have listed here.
+* **VA sub-domain exceptions that open in a new tab or window.** Some VA sub-domains provide a distinct experience from VA.gov, so they open in a new tab. This list is periodically re-evaluated and updated. The following sub-domains currently open in a new tab:
   * myhealth.va.gov
   * ebenefits.va.gov
   * www.accesstocare.va.gov
