@@ -1,6 +1,6 @@
 name: 2. 📖 Documentation request form
 description: Suggest an update to documentation
-labels: ["vsp-design-system-team"]
+labels: ["platform-design-system-team"]
 body:
 - type: checkboxes
   attributes:
