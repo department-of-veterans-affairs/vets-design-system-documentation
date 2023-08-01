@@ -2,7 +2,7 @@
 name: "DST - Component development"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Development"
-labels: vsp-design-system-team, dst-engineering
+labels: platform-design-system-team, dst-engineering
 
 ---
 
@@ -25,10 +25,10 @@ If this is a pattern or component that is already in existence, check the Design
 
 ## Tasks
 - [ ] Review DST backlog for outstanding issues with this component, if necessary
-- [ ] Create web component and add to Storyboook
+- [ ] Create web component and add to Storybook
 - [ ] Write any necessary tests
 - [ ] Add Chromatic link to #[add accessibility ticket number] and request review from an accessibility specialist
-- [ ] Ping designer for design review
+- [ ] Contact designer for design review
 - [ ] Display the appropriate [maturity scale](https://design.va.gov/about/maturity-scale) option in Storybook (once this feature is available)
     - If this is a new component that has not gone through Staging Review, it should be labeled "Use with Caution: Candidate"
 - [ ] Merge component
