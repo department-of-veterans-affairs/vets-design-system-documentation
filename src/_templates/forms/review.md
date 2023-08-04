@@ -65,11 +65,11 @@ All accordions start out collapsed.
 
 ### Penalty notice
 
-[Penalty notice]({{site.baseurl}}/components/forms/penalty-notice) component. This is a content component which is a required legal notice that must appear on this final step of an application.
+[Penalty notice]({{site.baseurl}}/components/form/penalty-notice) component. This is a content component which is a required legal notice that must appear on this final step of an application.
 
 ### Privacy agreement
 
-[Privacy agreement]({{site.baseurl}}/components/forms/privacy-agreement) component. This component is used unless a form requires a wet signature in which case this component is replaced by the [Ask users for signature]({{ site.basurl }}/patterns/ask-users-for/signature) pattern, wet signature variation.
+[Privacy agreement]({{site.baseurl}}/components/form/privacy-agreement) component. This component is used unless a form requires a wet signature in which case this component is replaced by the [Ask users for signature]({{ site.basurl }}/patterns/ask-users-for/signature) pattern, wet signature variation.
 
 ### Button pair
 
@@ -77,7 +77,7 @@ All accordions start out collapsed.
 
 ### Autosave
 
-The [Autosave]({{site.baseurl}}/components/forms/autosave) component provides the last saved application date and time in a Alert - background only - Success variation.
+The [Autosave]({{site.baseurl}}/components/form/autosave) component provides the last saved application date and time in a Alert - background only - Success variation.
 
 ### Finish application later
 
@@ -85,4 +85,4 @@ A link that allows the user to exit the process with their progress saved.
 
 ### Need help?
 
-The [Need help?]({{site.baseurl}}/components/forms/need-help) component provides contact information for reaching VA.
+The [Need help?]({{site.baseurl}}/components/form/need-help) component provides contact information for reaching VA.
