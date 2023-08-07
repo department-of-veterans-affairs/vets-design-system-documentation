@@ -14,7 +14,7 @@ anchors:
 ## Considerations
 
 - We want to encourage Veterans to create Login.gov or ID.me accounts, with an emphasis on Login.gov. 
-- Research has shown that some people confuse Login.gov with being a separate tool. Reinforce that Login.gov and ID.me are types of accounts—not tools or portals—by using the phrase “Login.gov account.”  
+- Research has shown that some people confuse Login.gov with being a separate tool. Reinforce that Login.gov and ID.me are types of accounts—not tools or portals—by using the phrase “Login.gov account” or “ID.me account.”  
 **Like this:** “You can use your Login.gov account to access your VA benefits, services, and information online.”  
 **Not this:** “You can use Login.gov to access your VA benefits, services, and information online.”
 **Exception:** We don’t need “account” to follow “Login.gov” in this example: “Login.gov is a U.S. government account that meets modern security standards.” 
@@ -39,12 +39,12 @@ anchors:
 : - Note: We’re reviewing some alternate messaging related to this for the future. 
 
 **sign in/sign out** 
-: We always use “sign in” and “sign out” to describe the process of authenticating on VA.gov. 
+: We always use “sign in” and “sign out” to describe the process of authenticating on VA.gov.
 : - Note: We don’t use “log in”/“log out” or “sign on.” 
 
 **verify your identity**
 : We use this to describe the process of proving your identity through a sign-in partner like Login.gov or ID.me. 
-: - Note: Login.gov and ID.me use “verify your identity” to describe this process. We can explain this in Veteran content as “We’ll ask you to verify your identity (prove that you’re you).” 
+: - Note: Login.gov and ID.me use “verify your identity” to describe this process. We can explain this in Veteran content as, “We’ll ask you to verify your identity (prove that you’re you).” 
 
 ## Retired terms
 
