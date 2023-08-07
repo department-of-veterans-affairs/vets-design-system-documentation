@@ -5,6 +5,7 @@ title: Specific topics and programs
 intro-text: "Read this page to learn how this style guide section can help you as you create VA content—and how to suggest new entries."
 sub-pages:
   - sub-page: Payments and debts
+  - sub-page: Sign in and identity verification
 ---
 
 ## How this section helps VA content creators
@@ -47,6 +48,5 @@ Entries coming soon:
 - Medical records 
 - Messaging 
 - Prescriptions 
-- Sign in and identity verification 
 
 If you want to suggest a dedicated entry for us to consider, email us at vawebdesign@va.gov. 

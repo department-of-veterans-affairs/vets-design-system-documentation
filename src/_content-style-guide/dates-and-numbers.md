@@ -16,7 +16,7 @@ Dates, times, phone numbers, and addresses often appear together, so we've put g
 
 ## Dates and years
 
-Spell out dates in body copy, using the full construction: March 31, 1989. In general, spell out days of the week and months also in body copy.
+Spell out dates in body copy, using the full construction: March 31, 1989. Or January 2, 1980. In general, spell out days of the week and months also in body copy.
 
 **Exceptions:**
 
