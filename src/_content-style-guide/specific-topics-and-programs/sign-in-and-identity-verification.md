@@ -18,7 +18,7 @@ anchors:
 **Like this:** “You can use your Login.gov account to access your VA benefits, services, and information online.”  
 **Not this:** “You can use Login.gov to access your VA benefits, services, and information online.”
 **Exception:** We don’t need “account” to follow “Login.gov” in this example: “Login.gov is a U.S. government account that meets modern security standards.” 
-- When describing reasons for creating an account or changing to a new type of account, keep the focus on how Veterans can benefit. Don’t use phrases like “keep VA secure,” since that puts the responsibility for VA data security on Veterans.  
+- When describing reasons for creating an account or changing to a new type of account, keep the focus on how Veterans can benefit. Don’t use phrases like “to protect VA’s data security,” since that puts the responsibility for VA data security on Veterans.  
 - The language around sign in and identity is rapidly evolving. Check back often for updates. 
 
 ## Related terms
