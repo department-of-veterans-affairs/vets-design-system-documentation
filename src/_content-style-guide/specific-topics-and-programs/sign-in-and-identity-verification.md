@@ -29,7 +29,7 @@ anchors:
  
 **multifactor authentication and 2-factor authentication**
 : We use these terms to describe the multifactor security process that Veterans must use when they sign in to VA.gov. 
-: - Note: Use “multifactor authentication” as the main term. Where space allows, we can include “This process is also sometimes called 2-factor authentication.” 
+: - Note: Use “multifactor authentication” as the main term. Where space allows, we can include, “This process is also sometimes called 2-factor authentication.” 
 
 **My HealtheVet** 
 : “My HealtheVet” is 2 words. Don’t italicize the “e” between “Health” and “Vet” in digital content body copy, headlines, and user interface elements such as links, buttons, and navigation. The “e” is italicized only in the logo and in print materials. 
@@ -49,7 +49,7 @@ anchors:
 ## Retired terms
 
 **2-factor authentication**
-Use “multifactor authentication” as the main term. Where space allows, we can include, “This process is also sometimes called 2-factor authentication.” 
+: Use “multifactor authentication” as the main term. Where space allows, we can include, “This process is also sometimes called 2-factor authentication.” 
 
 ## Resources
 
