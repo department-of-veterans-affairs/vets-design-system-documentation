@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/names
 sub-section: ask-users-for
 title: Names
 intro-text: "Follow this pattern whenever you need to ask for a person's name for an application."
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js
+sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/303BA3DA-853A-471B-9A2E-53C72F08368D/canvas
 status: use-deployed
 anchors:
   - anchor: Usage

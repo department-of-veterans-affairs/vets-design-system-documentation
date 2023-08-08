@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/dates
 sub-section: ask-users-for
 title: Dates
 intro-text: "Use this pattern to collect dates from a person."
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/datePatterns.jsx
+sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/303BA3DA-853A-471B-9A2E-53C72F08368D/canvas
 status: use-deployed
 anchors:
   - anchor: Usage

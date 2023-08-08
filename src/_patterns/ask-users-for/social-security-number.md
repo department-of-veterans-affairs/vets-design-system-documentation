@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/social-security-number
 sub-section: ask-users-for
 title: Social security or VA file number
 intro-text: "Follow this pattern whenever you need to collect a person's Social Security or VA file number for an application."
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx
+sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/3CB011B6-F1AD-4B21-BF45-B9FE3B033552/canvas
 status: use-deployed
 anchors:
   - anchor: Usage
