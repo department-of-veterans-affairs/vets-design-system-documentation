@@ -22,23 +22,21 @@ To access and enable the core VA.gov pattern library, follow these steps:
 
 Once you’ve loaded the library, you should be able to access everything in it by navigating to **Insert** > **Symbols** > **VA-gov-Pattern-Library**.
 
-<va-alert close-btn-aria-label="Close notification" status="warning" visible>
-  <h2 slot="headline">Do not modify the core Sketch library!</h2> 
-  <p>
-    Only the Design System Team should edit the library. If you have questions about how to use component symbols, contact {{ site.sketch_library_owner }}, the Design System Team's UX Designer.
-  </p>
-</va-alert>
-
 ### View the library
 
-You can <a href="{{ site.sketch_cloud_link}}">view the core Sketch library</a> in Sketch for Teams (filname: VA-gov-Pattern-library). You can open the library in Sketch by looking for the "Edit in Sketch" button. This will allow you to investigate and copy components if you prefer to do that rather than insert symbols. 
+You can <a href="{{ site.sketch_cloud_link}}">view the core Sketch library</a> in Sketch for Teams (filname: Example Library - USWDS MVP Component Library). You can open the library in Sketch by looking for the "Edit in Sketch" button. This will allow you to investigate and components. 
 
 <a class="vads-c-action-link--green" href="{{ site.sketch_cloud_link }}">View the Core library</a>
 
+### Templates
+* [Page and email]({{ site.sketch_templates_link }}) - Page and email templates
+* [Forms]({{ site.sketch_forms_templates_link }}) - Form page templates
+
 ### Additional libraries
 
-* [Annotations]({{ site.sketch_annotations_link }}) - For annotating wireframes and prototoypes.
-* [Templates]({{ site.sketch_templates_link }}) - Page and email templates.
+* [Annotations]({{ site.sketch_annotations_link }}) - For annotating wireframes and prototoypes
+* [User flows]({{ site.sketch_user_flows_link}}) - User flows
+* [Wireframes]({{ site.sketch_wireframes_link}}) - Wireframes
 
 ## Shared libraries
 

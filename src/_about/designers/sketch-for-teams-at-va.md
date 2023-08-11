@@ -26,8 +26,8 @@ Sketch for Teams contains a few important features that help teams work together
 
 To get started on a new project, there are only a couple of steps:
 
-1. Duplicate and rename the [Sketch for Teams Template](https://www.sketch.com/s/2f665c26-160d-474e-b5cc-bb94e73bb91a) in your team's folder
-2. In the Sketch app, go to Sketch > Preferences > Libraries and add the VA-gov-Pattern-Library.
+1. Duplicate and rename the [Sketch for Teams Template](https://www.sketch.com/s/2f665c26-160d-474e-b5cc-bb94e73bb91a) in your team's folder.
+2. In the Sketch app, go to Sketch > Preferences > Libraries and add the [Component Library - MVP]({{ site.sketch_component_library }}).
 
 ## Leaving Sketch for Teams
 

@@ -5,6 +5,7 @@ intro-text: "Accordions, which use the UX principle of progressive disclosure, a
 research-title: Accordions
 status: use-best-practice
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2550D408-704E-4AD4-A726-87607DB7E42B
+uswds-v3: default
 web-component: va-accordion
 anchors:
   - anchor: Examples
