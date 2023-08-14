@@ -5,6 +5,8 @@ status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5E24F540-2558-488C-BD6D-823F4A2F5607
+uswds-v3: default
+web-component: va-alert
 anchors:
   - anchor: Examples - Default
   - anchor: Examples - Properties
@@ -15,7 +17,6 @@ anchors:
   - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
-web-component: va-alert
 ---
 
 ## Examples - Default

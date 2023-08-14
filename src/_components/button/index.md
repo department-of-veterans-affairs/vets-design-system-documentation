@@ -8,6 +8,7 @@ sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/531
 status: use-deployed
 sub-pages:
   - sub-page: Button pair
+uswds-v3: primary
 web-component: va-button
 anchors:
   - anchor: Examples

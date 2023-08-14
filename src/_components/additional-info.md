@@ -4,6 +4,7 @@ title: Additional info
 intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Additional info component to situate plain language help at the point of the process where it is most relevant."
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C28D2A57-71E4-4EDF-8FBA-87C6D858BF60
 status: use-deployed
+uswds-v3: default
 web-component: va-additional-info
 anchors:
   - anchor: Examples

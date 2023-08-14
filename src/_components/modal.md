@@ -4,12 +4,13 @@ title: Modal
 status: use-deployed
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/D10C68C1-35D7-4AB9-A020-BD7052EEDD1B/canvas
 intro-text: "A modal disables page content and focuses the user’s attention on a single task or message."
+uswds-v3: default
+web-component: va-modal
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-modal
 ---
 
 ## Examples
