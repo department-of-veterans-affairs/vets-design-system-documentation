@@ -26,8 +26,8 @@ Users can navigate to a form’s introduction page either from within VA.gov or 
 
 The introduction form page for unauthenticated users consists of:
 
-1. [H1 Plain language title of benefit](#h1)
-2. [VA Paper form equivalency](#va-paper-form-equivalency)
+1. [H1 Plain language title of benefit](#title)
+2. [VA Paper form title](#va-paper-form-title)
 3. [Save work in-progress alert](#save-work-in-progress-alert)
 4. [Process list](#process-list)
 5. [Sign-in](#sign-in)
@@ -40,8 +40,8 @@ The introduction form page for unauthenticated users consists of:
 
 The introduction form page for authenticated users consists of:
 
-1. [H1 Plain language title of benefit](#h1)
-2. [VA Paper form equivalency](#va-paper-form-equivalency)
+1. [H1 Plain language title of benefit](#title)
+2. [VA Paper form title](#va-paper-form-title)
 3. [Prefill alert](#prefill-alert)
 4. [Start form link](#start-form-link)
 5. [Process list](#process-list)
@@ -59,9 +59,9 @@ The introduction form page for authenticated users consists of:
 
 ## Structure
 
-### H1
+### Title
 
-The H1 plain language title of benefit makes it clear to the user the benefit they are applying for. For example: 
+The plain language title of a form makes it clear to the user the benefit they are applying for. The title is limited to 52 characters. For example: 
 
 > File for [name of benefit] 
 
@@ -69,15 +69,16 @@ or
 
 > Apply for [name of benefit]
 
-### VA Paper form equivalency
+### VA Paper form title
 
-The VA paper form equivalency statement appears under this H1.
+The VA paper form title appears in a subtitle under the title in the following format:
+
+> Full PDF form title (VA Form FormNumber)
 
 For example:
 
-> <h1>File for disability compensation</h1>
-
-> Equal to VA Form 21-526EZ (Application for Disability Compensation and Related Compensation Benefits).
+> <h1>Authorize the release of non-VA medical information to VA</h1>
+> <div class="schemaform-subtitle">Authorization to disclose information to the Department of Veterans Affairs (VA Forms 21-4142 and 21-4142a)</div>
 
 ### Save work in progress alert
 
