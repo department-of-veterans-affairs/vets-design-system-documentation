@@ -81,17 +81,12 @@ __Put links on their own line__
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
-__Use embedded text links to cross-link related, helpful information__
-
-Embedded text links are hyperlinks that are part of running text in body copy. We use them to link people to related, but not essential, information. 
-- Because too many embedded links can be distracting or overwhelming to readers with traumatic brain injuries or other cognitive impairments, we try to not overuse them. 
-- Link information when it will be helpful to the Veteran, and it's related to the subject being discussed, not just for the sake of linking. 
 
 __Use CTA links to call out actions__
 
 CTA links are standalone hyperlinks that are calls to an action, but that don't warrant a [primary button CTA]({{ site.baseurl }}/content-style-guide/button-labels). 
 
-We generally reserve button CTAs to launch an application, to sign in, or other primary, essential action on a page. But there are other kinds of actions that may call for a CTA as a text link, like downloading a form, learning about important information (like eligibility or copay rates, etc.). 
+We generally reserve button CTAs to launch an application, to sign in, or other primary, essential actions on a page. But there are other kinds of actions that may call for a CTA as a text link, like downloading a form, learning about important information (like eligibility or copay rates, etc.). 
 
 <div class="do-dont">
 <div class="do-dont__do">
