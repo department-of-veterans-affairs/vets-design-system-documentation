@@ -21,7 +21,7 @@ anchors:
 ## Link text
 
 * Use natural and descriptive language.
-* Describe the purpose of the link—and the destination if it’s taking the reader outside of VA.gov.
+* Describe the purpose of the link and the destination if it’s taking the reader outside of VA.gov.
 * Don’t make the link so long that the relevant words get lost.
 * Avoid "Click here," since not all people are physically clicking links. 
 * Avoid generic link text like "Learn more" and "Read more" by themselves.
