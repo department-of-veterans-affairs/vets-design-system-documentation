@@ -86,7 +86,7 @@ __Use CTA links to call out actions__
 
 CTA links are standalone hyperlinks that are calls to an action, but that don't warrant a [primary button CTA]({{ site.baseurl }}/content-style-guide/button-labels). 
 
-We generally reserve button CTAs to launch an application, to sign in, or other primary, essential actions on a page. But there are other kinds of actions that may call for a CTA as a text link, like downloading a form, learning about important information (like eligibility or copay rates, etc.). 
+We generally reserve button CTAs to launch an application, to sign in, or other primary, essential actions on a page. But there are other kinds of actions that may call for a CTA as a text link, like downloading a form or learning about important information (like eligibility or copay rates, etc.). 
 
 <div class="do-dont">
 <div class="do-dont__do">
