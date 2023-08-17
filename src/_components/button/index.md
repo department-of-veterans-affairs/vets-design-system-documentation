@@ -11,8 +11,8 @@ sub-pages:
 uswds-v3: primary
 web-component: va-button
 anchors:
-  - anchor: Examples (v1)
-  - anchor: Examples (v3)
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -22,7 +22,7 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-## Examples (v1)
+## Examples - v1
 
 ### Default - Primary
 
@@ -44,7 +44,7 @@ anchors:
 
 {% include storybook-preview.html height="100px" story="components-va-button--back" link_text="va-button--back" %}
 
-## Examples (v1)
+## Examples - v3
 
 ### Default - Primary
 

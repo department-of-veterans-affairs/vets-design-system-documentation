@@ -10,8 +10,8 @@ sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/F82
 uswds-v3: default
 web-component: va-memorable-date
 anchors:
-  - anchor: Examples (v1)
-  - anchor: Examples (v3)
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -19,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples (v1)
+## Examples - v1
 
 ### Default
 
@@ -41,7 +41,7 @@ anchors:
 
 {% include storybook-preview.html height="200px" story="components-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
 
-## Examples (v3)
+## Examples - v3
 
 ### Default
 
