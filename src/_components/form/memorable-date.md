@@ -6,11 +6,12 @@ title: Memorable date
 research-title: Memorable Date
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-with-caution-available
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/canvas
 uswds-v3: default
 web-component: va-memorable-date
 anchors:
-  - anchor: Examples
+  - anchor: Examples (v1)
+  - anchor: Examples (v3)
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -44,7 +45,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date v3" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date v3 along with additional variations" %}
 
 
 ## Usage
