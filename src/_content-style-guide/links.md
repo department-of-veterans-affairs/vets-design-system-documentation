@@ -34,9 +34,10 @@ anchors:
   
 __Use natural language, and link relevant words__
   
-If your disability gets worse, [file for a VA disability compensation increase](https://va.gov/disability/how-to-file-claim/).
+If your disability gets worse, you can file for an increase in compensation.  
+[File for a VA disability compensation increase](https://va.gov/disability/how-to-file-claim/)
   
-Apply for a United States burial flag to place over a casket or coffin, or place with an urn. 
+Apply for a United States burial flag to place over a casket or coffin, or place with an urn.  
 [Learn more about burial flags](https://www.va.gov/burials-memorials/memorial-items/burial-flags/)
 
 </div>
@@ -62,9 +63,8 @@ Apply for a United States burial flag to place over a casket or coffin, or place
 * Create space between different links. Clustering links together can make it hard for users to select the intended link, especially on a touch screen device, like a smartphone.
 * In general, put a link on a separate line to help it stand out. Exception: Putting a link at the end of a sentence is OK if space is limited, like intro copy or alerts.
 
-__Put links on their own line__
-
 {% capture example_like_this_1 %}
+__Put links on their own line__
 <ul>
   <li>Trouble breathing</li>
   <li>Persistent (continuing) pain or pressure in the chest</li>
@@ -72,7 +72,9 @@ __Put links on their own line__
 </ul>
 <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Check COVID-19 symptoms on the CDC website</a>
 {% endcapture %}
+
 {% capture example_not_this_1 %}
+__Avoid linking each item in a list to the same destination__
 <ul>
   <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Trouble breathing</a></li>
   <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Persistent (continuing) pain or pressure in the chest</a></li>
@@ -81,8 +83,7 @@ __Put links on their own line__
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
-
-__Use CTA links to call out actions__
+### Use CTA links to call out actions
 
 CTA links are standalone hyperlinks that are calls to an action, but that don't warrant a [primary button CTA]({{ site.baseurl }}/content-style-guide/button-labels). 
 
