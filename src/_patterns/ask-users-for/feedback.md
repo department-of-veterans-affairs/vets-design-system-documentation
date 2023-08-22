@@ -114,6 +114,11 @@ The previous location of the Medallia Feedback button was sticky on the right si
 
 ### Usability Studies
 
+#### Homepage redesign study
+In the second round of usability testing for the new VA.gov homepage, 2 participants using ZoomText screen magification missed the feedback button. This is likely due to screen magnification showing only part of the screen at any given time. As there’s no indication that the feedback exists on the bottom right side of the page, it may be missed by magnification users who scan the page left to right with a limited view. An example is included in the report, "[How disabled Veterans provide accessibility feedback]([url](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/teams/shared-support/accessibility/research/2022-10-a11y-feedback/research-findings.md#key-insights--3))."
+
+#### Foresee to Medallia usability studies
+
 In late fall 2021, [VA.gov](http://va.gov/) transitioned from utilizing Foresee to Medallia to capture user feedback. This transition was accompanied by 2 usability testing sessions to test button location and button design. In both studies, the question “You would like to submit feedback on this Find VA Locations page on the [VA.gov](http://va.gov/) website. What would be your process for submitting that feedback?” was asked.
 
 **Study 1:**
