@@ -6,11 +6,12 @@ title: Memorable date
 research-title: Memorable Date
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-with-caution-available
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/canvas
 uswds-v3: default
 web-component: va-memorable-date
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -18,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples
+## Examples - v1
 
 ### Default
 
@@ -40,32 +41,24 @@ anchors:
 
 {% include storybook-preview.html height="200px" story="components-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
 
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--with-month-select" link_text="va-memorable-date v3 along with additional variations" %}
+
 ## Usage
 
-### When to use date inputs
-- Appropriate for most dates.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/memorable-date/">Refer to the U.S. Web Design System for usage guidance</a>
 
-### When to consider something else
+### Choosing between variations
 
-- Consider a date picker for scheduling. If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
-
-**Note:** We do not currently have a calendar picker as part of the design system. For reference, visit the VA online scheduling tool (VAOS) to see an experimental version of a calendar picker. 
-
-### Usability Guidance
-- Label each field. Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- Avoid select elements. It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text boxes.
-
-### How to use date inputs
-
-- The year input is set to accept only a four-digit number while the month and day inputs can accept up to a two-digit number.
-- Always use back-end validation on dates for correctness.
+* The v3 version of this component uses a select element instead of a text input for the month. This was done after research conducted by the USWDS team. Teams should note the maturity of this component and proceed with caution.
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
-- Follow input guidance. These text fields should follow the accessibility guidelines for all text inputs.
-- Don’t auto-advance focus. Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
-- Use “text” instead of “number” inputs. Research indicates that numeric inputs still carry many usability problems, according to the gov.uk Technology in Government blog.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/memorable-date/#accessibility-memorable-date">Refer to the U.S. Web Design System for accessibility guidance</a>
 
 {% include _component-checklist.html component_name=page.web-component %}
