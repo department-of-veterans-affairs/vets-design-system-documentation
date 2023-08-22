@@ -7,12 +7,13 @@ intro-text: "A select box allows users to select one option from a list."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/93AD583C-43C8-40A6-9363-36D3CC2C2AAD
 status: use-deployed
+uswds-v3: default
+web-component: va-select
 anchors:
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-select
 ---
 
 {% include storybook-preview.html story="components-va-select--default" link_text="va-select" %}

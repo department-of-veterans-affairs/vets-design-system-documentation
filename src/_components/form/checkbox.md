@@ -7,6 +7,8 @@ research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/AB01082F-B8AE-4D0A-A3FD-5B8EDEB578CD/canvas
 intro-text: "Allows users to select one or more items from a visible list."
 status: use-deployed
+uswds-v3: default
+web-component: va-checkbox-group
 anchors:
   - anchor: Examples - Single
   - anchor: Examples - Group
@@ -14,7 +16,6 @@ anchors:
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-checkbox-group
 ---
 
 ## Examples - Single

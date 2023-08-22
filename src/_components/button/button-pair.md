@@ -7,6 +7,7 @@ research-link: Buttons
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F2B3C09A-004C-4A71-BD77-E0A2C1EF2BAA
 intro-text: Use button pairs to provide navigation through a form flow or a primary and secondary action.
 status: use-with-caution-candidate
+uswds-v3: default
 web-component: va-button-pair
 anchors:
   - anchor: Examples

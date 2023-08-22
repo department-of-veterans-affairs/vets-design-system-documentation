@@ -4,6 +4,7 @@ title: "Process list"
 intro-text: "The process list, also known as the subway map, is used in a static informational context to describe the process to apply for a benefit or to provide tracking information to a user where they are in a given process."
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/A47C20F3-B0BF-4187-ABD8-045F4250A196/canvas
 status: use-deployed
+uswds-v3: default
 web-component: va-process-list
 anchors:
   - anchor: Examples
