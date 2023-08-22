@@ -53,7 +53,7 @@ anchors:
 
 ### Choosing between variations
 
-* The v3 version of this component swaps a month select for a text input which was done after research conducted by the USWDS team. Teams should note the maturity of this component and proceed with caution.
+* The v3 version of this component uses a select element instead of a text input for the month. This was done after research conducted by the USWDS team. Teams should note the maturity of this component and proceed with caution.
 
 {% include component-docs.html component_name=page.web-component %}
 
