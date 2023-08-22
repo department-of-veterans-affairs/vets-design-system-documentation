@@ -94,5 +94,5 @@ exclude:
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.
-storybook_path: "http://localhost:6006"
+storybook_path: "http://127.0.0.1:6006"
 storybook_prod_uswds_path: "https://design.va.gov/storybook/?path=/docs/uswds"
