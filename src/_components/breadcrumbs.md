@@ -1,60 +1,85 @@
 ---
 layout: component
 title: Breadcrumbs
-intro-text: "The breadcrumb is a sitewide navigation component that shows users where they are in the site and gives them a way to navigate up levels in the site hierarchy. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results. This can improve rankings, and provide users with additional context."
+intro-text: "Breadcrumbs provide secondary navigation to help users understand where they are in a website. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results. This can improve rankings, and provide users with additional context."
 status: use-deployed
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F30D6063-F45E-4AAE-A2F5-A26C3E5EA5A5
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/F30D6063-F45E-4AAE-A2F5-A26C3E5EA5A5/canvas
 uswds-v3: default
 web-component: va-breadcrumbs
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Code usage
-  - anchor: SEO considerations
+  - anchor: Accessibility considerations
 ---
 
-## Examples
+## Examples - v1
+
+### Default
 
 {% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
 
+### Rerender state
+
+{% include storybook-preview.html height="200px" story="components-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs and adjust state" %}
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="100px" story="uswds-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
+
+### Rerender state
+
+{% include storybook-preview.html story="uswds-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs v3 and adjust state" %}
+
+### Wrapping state
+
+{% include storybook-preview.html story="uswds-va-breadcrumbs--wrapping-state" link_text="va-breadcrumbs v3 wrapping state" %}
 
 ## Usage
-- Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history. 
-  - For online applications and forms, the breadcrumb represents the forms's placement within the site hierarchy, it does not track the steps or progress of the form flow.  In other words, the breadcrumb will only show up to the form as the current page segment, and will maintain that display while the user goes through the flow. For navigation through the steps of the form flow, forward and backward CTAs can be provided as part of the main content as appropriate. 
-- If you use a breadcrumb for one page in a hierarchy, always use a breadcrumb for all pages within that hierarchy. 
-- Always use consistent styling and interactions for the breadcrumb throughout the site, so users do not experience unexpected changes as they navigate through related pages. This includes using a consistent character as a separator between segments.   
-- Each breadcrumb segment should match the H1 of the corresponding page. When writing H1s for a page, follow the content [styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles). 
-- On desktop, the breadcrumb path should always start with a link to the home page of the site and end with the current page as the last segment. 
-- On mobile, the breadcrumb will only display the parent of the current page.  This breadcrumb should allow the user to move up one level at a time, all the way to the home page of the site.  The mobile version of the breadcrumb does not show the current page.  
-- If a breadcrumb wraps to a second line, the line break must happen between segments(i.e. a single segment should not break into 2 lines) and maintain appropriate tappable space. 
 
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/">Refer to the U.S. Web Design System for usage guidance</a>
+
+### Additional guidance for VA
 
 ### When to use
-- Use a breadcrumb when content is more than 2 levels deep. 
-- Use a breadcrumb when it is important to the user to understand where they are in the site.
-- Use a breadcrumb when the user may need to navigate up the hierarchy of their current page. 
 
+- **Complex levels.** Use a breadcrumb when content is more than 2 levels deep. 
 
-### When not to use
-- Do not use a breadcrumb on the top page of a site (i.e. the home page). 
-- Do not use a breadcrumb if the path or hierarchy of the page is irrelevant to the user or experience. 
-- Do not use a breadcrumb if the site/experience has a flat structure (i.e. only 2 levels of content or less)
-- Do not use a breadcrumb if it would create a way for a user to exit or navigate away from a user flow that they are unable to return to, or would result in a loss of data. 
+### When to consider something else
+
+- **Simple sites.** Do not use a breadcrumb if the site or experience has a flat structure (i.e. only 2 levels of content or less)
+- **Irrelevant hierarchy.** Do not use a breadcrumb if the path or hierarchy of the page is irrelevant to the user or experience. 
+- **One way exit.** Do not use a breadcrumb if it would create a way for a user to exit or navigate away from a user flow that they are unable to return to, or would result in a loss of data. 
+
+### Usability guidance
+
+- **Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history.** For online applications and forms, the breadcrumb represents the forms's placement within the site hierarchy, it does not track the steps or progress of the form flow. In other words, the breadcrumb will only show up to the form as the current page segment, and will maintain that display while the user goes through the flow. For navigation through the steps of the form flow, forward and backward CTAs can be provided as part of the main content as appropriate. 
+- **Include one, include all.** If you use a breadcrumb for one page in a hierarchy, always use a breadcrumb for all pages within that hierarchy. 
+- **Each breadcrumb segment should match the H1 of the corresponding page.** When writing H1s for a page, follow the content [styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles). 
 
 
 ### Placement
+
 - The breadcrumb should be placed below the header and above the main content.
 - The placement of the breadcrumb must be consistent from page to page. 
 
-
 ### Behavior
+
 - All the links in the breadcrumb, except the current page, should be interactive and link to their corresponding page.
 - The current page segment of the breadcrumb should not be interactive or link. 
 
-## SEO considerations
+### SEO considerations
+
 - Search engines utilize breadcrumbs to understand your site structure and gain additional context about your page to help in ranking.
 - Breadcrumbs can also be displayed in search engine results pages (SERPs), which provides additional context to users about your page.
 - Breadcrumbs are not the only element used by search engines, go to [writing for SEO in the content styleguide]({{ site.baseurl }}/content-style-guide/seo) for more SEO assistance. 
 
 {% include component-docs.html component_name=page.web-component %}
 
+
+## Accessibility considerations
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
