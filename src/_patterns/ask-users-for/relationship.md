@@ -4,6 +4,7 @@ permalink: /patterns/ask-users-for/relationship
 sub-section: ask-users-for
 title: Relationship to Veteran
 intro-text: "Follow this pattern to ask a user for their relationship to the Veteran."
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx
 status: use-deployed
 anchors:
   - anchor: Usage
