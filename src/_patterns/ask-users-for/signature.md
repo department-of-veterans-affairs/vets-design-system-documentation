@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/signature
 sub-section: ask-users-for
 title: Signature
 intro-text: "Use this pattern when you need a user to provide their signature as a statement of truth."
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/FormSignature.jsx
+sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/97D32F6F-65D9-4A85-8828-13501931A7EE/canvas
 status: use-deployed
 anchors:
   - anchor: Usage

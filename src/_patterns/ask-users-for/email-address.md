@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/email-address
 sub-section: ask-users-for
 title: Email address
 intro-text: "Follow this pattern to ask a user for an email address."
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx
+sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/7F447374-E091-4BA2-90FC-06AE6DF82F92/canvas
 status: use-deployed
 anchors:
   - anchor: Usage

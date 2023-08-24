@@ -4,11 +4,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://design.va.gov" # Base hostname & protocol for the site
 
 project_name: VA.gov Design System
+design_library_name: "Component Symbol Library"
 
 # Common links
-sketch_cloud_link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156
+sketch_cloud_link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c
+sketch_component_library: https://sketch.com/s/bd089bc0-e3e3-4681-bf72-e6be22b433e4
 sketch_templates_link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9
+sketch_form_templates_link: https://sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952
 sketch_annotations_link: https://sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727
+sketch_wireframes_link: https://www.sketch.com/s/61f7423a-950c-49d2-aee7-96b4a1941eae
+sketch_user_flows_link: https://www.sketch.com/s/3b0d625a-ab30-4e83-8084-5987ea5e2bb7
 sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Work%20Practices/Design/Design%20Resources/Pattern%20Library/VA-gov-Pattern-Library.sketch
 
 forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-System-Overview.2085355587.html
@@ -28,11 +33,12 @@ new_component_template_raw_link: https://raw.githubusercontent.com/department-of
 new_pattern_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md
 new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/main/src/_patterns/template.md
 update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=2_documentation_request_form.yml
+uswds_link: https://designsystem.digital.gov/
 
 
 # People
 sketch_for_teams_admin: "Kevin Hoffman" 
-sketch_library_owner: "Natalie Hill"
+sketch_library_owner: "Lillian Boot, Barb Denney"
 experimental_reviewer_1: "Matthew Dingee"
 
 
@@ -88,4 +94,5 @@ exclude:
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.
-storybook_path: "http://localhost:6006"
+storybook_path: "http://127.0.0.1:6006"
+storybook_prod_uswds_path: "https://design.va.gov/storybook/?path=/docs/uswds"

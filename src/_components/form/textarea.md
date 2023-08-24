@@ -7,12 +7,13 @@ intro-text: "Textarea allows people to enter any type of text."
 research-title: Form controls
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C6340B6C-F41E-423B-BDEA-B340A81C9714
 status: use-deployed
+uswds-v3: default
+web-component: va-textarea
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-textarea
 ---
 
 ## Examples

@@ -8,6 +8,7 @@ title: Privacy Agreement
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/a/l13oDA7
 intro-text: "Used on the review step of a form flow to provide a link to the privacy policy content and provide a confirmation checkbox."
 status: use-deployed
+uswds-v3: default
 web-component: va-privacy-agreement
 anchors:
   - anchor: Examples
