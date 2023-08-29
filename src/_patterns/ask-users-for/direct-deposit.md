@@ -104,12 +104,12 @@ When the “update account information” button is clicked, the bank account in
 
 **When a user doesn’t enter a bank account number:**
 
-Say 'Please enter a bank account number'
+Say 'Enter a bank account number'
 
 **When a user enters their routing number incorrectly:**
 
-Say 'Please enter a valid nine digit routing number'
+Say 'Enter a valid nine digit routing number'
 
 **When a user doesn’t enter a routing number:**
 
-Say 'Please enter a routing number'
+Say 'Enter a routing number'
