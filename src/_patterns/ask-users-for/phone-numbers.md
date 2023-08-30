@@ -22,7 +22,7 @@ anchors:
  
 ## Examples
 
-![contact information phone number template]({{site.baseurl}}/images/patterns/ask-users-for/phone-numbers/phone-numbers.png)
+{% include component-example.html alt="Shows the form fields used to obtain home phone number and mobile phone number." file="/images/patterns/ask-users-for/phone-numbers/phone-numbers.png" caption="Example of asking for a home phone number or mobile phone number." class="x2" %}
 
 ## How to design and build 
 
