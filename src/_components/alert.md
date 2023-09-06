@@ -168,6 +168,8 @@ When the user is required to do something in response to an alert, let them know
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/alert/#accessibility-alert">Refer to the U.S. Web Design System for accessibility guidance</a>
 
+### Additional accessibility considerations for VA
+
 {% include a11y/alerts.md %}
 
 ## Related
