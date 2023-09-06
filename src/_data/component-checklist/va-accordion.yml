@@ -2,7 +2,7 @@ maturity:
   - name: guidance
     score: true
   - name: research
-    score: false
+    score: true
   - name: stability
     score: true
   - name: adoption

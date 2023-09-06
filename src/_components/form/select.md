@@ -57,7 +57,7 @@ anchors:
 
 ### Additional guidance for VA
 
-#### When to consider something else
+#### Additional reasons to consider something else
 
 **More than 15 options.** If the list of options is very long, we do not yet have the combo box component in our system thus an alternative is to use functionality that allows users to type the same information into a text input that suggests possible options instead as seen in our [search input]({{ site.baseurl }}/components/search-input) component.
 
