@@ -13,6 +13,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
 ## Examples - v1
@@ -29,7 +30,19 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="605px" story="uswds-va-process-list--default" link_text="va-process-list v3 along with additional variations" %}
+{% include storybook-preview.html height="605px" story="uswds-va-process-list--default" link_text="va-process-list v3 default" %}
+
+### Status
+
+{% include storybook-preview.html height="350px" story="uswds-va-process-list--status" link_text="va-process-list v3 status" %}
+
+### Header Size
+
+{% include storybook-preview.html height="375px" story="uswds-va-process-list--header-size" link_text="va-process-list v3 header size" %}
+
+### Custom Sizing
+
+{% include storybook-preview.html height="300px" story="uswds-va-process-list--custom-sizing" link_text="va-process-list v3 custom sizing" %}
 
 ## Usage
 
@@ -75,3 +88,6 @@ The Process list appears after a start form link on the form [Introduction page]
 ### Additional accessibility considerations for VA
 
 * **Don't use headings alone.** Each step should have both a heading and content that helps describe the step in more detail.
+
+
+{% include _component-checklist.html component_name=page.web-component %}

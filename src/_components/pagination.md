@@ -2,16 +2,19 @@
 layout: component
 title: Pagination
 status: use-deployed
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/ABBAABE0-2108-4DBA-8FF5-01F00A06F082/canvas
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/DFDEF51F-1013-4214-A1DD-C4718E0E6BDD/canvas
 intro-text: "Pagination is navigation for paginated content."
+web-component: va-pagination
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
-web-component: va-pagination
+  - anchor: Component checklist
 ---
 
-## Example
+## Examples - v1
+
+### Default
 
 {% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination" %}
 
@@ -29,3 +32,6 @@ web-component: va-pagination
 * When it is undesirable to have the user pause for navigation. Some alternatives include the infinite scroll pattern or simple un-numbered navigation.
 
 {% include component-docs.html component_name=page.web-component %}
+
+
+{% include _component-checklist.html component_name=page.web-component %}

@@ -16,6 +16,7 @@ anchors:
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
 ## Examples - v1
@@ -71,3 +72,6 @@ anchors:
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
+
+
+{% include _component-checklist.html component_name=page.web-component %}

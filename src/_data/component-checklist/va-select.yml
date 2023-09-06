@@ -2,10 +2,9 @@ maturity:
   - name: guidance
     score: true
   - name: research
-    score: false
+    score: true
   - name: stability
     score: true
-    notes: "This component was converted from React to a web-component in September 2022."
   - name: adoption
     score: true
 accessibility:
@@ -29,7 +28,7 @@ code-assets:
   - name: tokens
     score: "n/a"
   - name: internationalization
-    score: "n/a"
+    score: true
 visual-assets:
   - name: variations
     score: true
