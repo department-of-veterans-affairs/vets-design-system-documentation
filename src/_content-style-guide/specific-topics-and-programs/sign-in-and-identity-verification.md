@@ -16,7 +16,7 @@ anchors:
 - We want to encourage Veterans to create Login.gov or ID.me accounts, with an emphasis on Login.gov. 
 - Research has shown that some people confuse Login.gov with being a separate tool. Reinforce that Login.gov and ID.me are types of accounts—not tools or portals—by using the phrase “Login.gov account” or “ID.me account.”  
 **Like this:** “You can use your Login.gov account to access your VA benefits, services, and information online.”  
-**Not this:** “You can use Login.gov to access your VA benefits, services, and information online.”
+**Not this:** “You can use Login.gov to access your VA benefits, services, and information online.”  
 **Exception:** We don’t need “account” to follow “Login.gov” in this example: “Login.gov is a U.S. government account that meets modern security standards.” 
 - When describing reasons for creating an account or changing to a new type of account, keep the focus on how Veterans can benefit. Don’t use phrases like “to protect VA’s data security,” since that puts the responsibility for VA data security on Veterans.  
 - The language around sign in and identity is rapidly evolving. Check back often for updates. 
