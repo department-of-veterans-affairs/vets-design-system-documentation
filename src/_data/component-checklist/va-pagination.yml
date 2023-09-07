@@ -28,7 +28,7 @@ code-assets:
   - name: tokens
     score: "n/a"
   - name: internationalization
-    score: false
+    score: true
 visual-assets:
   - name: variations
     score: true

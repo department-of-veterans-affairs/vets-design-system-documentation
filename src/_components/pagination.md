@@ -7,8 +7,10 @@ intro-text: "Pagination is navigation for paginated content."
 web-component: va-pagination
 anchors:
   - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Code usage
+  - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
 
@@ -16,22 +18,51 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination" %}
+{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination default" %}
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-pagination--default" link_text="va-pagination v3 default" %}
+
+### With Middle
+
+{% include storybook-preview.html story="uswds-va-pagination--with-middle" link_text="va-pagination v3 with middle" %}
+
+### With Last
+
+{% include storybook-preview.html story="uswds-va-pagination--with-last" link_text="va-pagination v3 with last" %}
+
+### With Unbounded First
+
+{% include storybook-preview.html story="uswds-va-pagination--with-unbounded-first" link_text="va-pagination v3 with unbounded first" %}
+
+### With Unbounded Middle
+
+{% include storybook-preview.html story="uswds-va-pagination--with-unbounded-middle" link_text="va-pagination v3 with unbounded middle" %}
+
+### With Seven or Less
+
+{% include storybook-preview.html story="uswds-va-pagination--with-seven-or-less" link_text="va-pagination v3 with seven or less" %}
+
+### With Seven or Less Middle
+
+{% include storybook-preview.html story="uswds-va-pagination--with-seven-or-less-middle" link_text="va-pagination v3 with seven or less middle" %}
+
+### Internationalization
+
+{% include storybook-preview.html height="300px" story="uswds-va-pagination--internationalization" link_text="va-pagination v3 internationalization" %}
 
 ## Usage
 
-### When to use pagination
-
-* When it is not feasible to show all ordered data on a single page. Examples of content that should be paginated include search results or other multi-page collections of related items. 
-
-### When to consider something else
-
-* If your content has meaningful groupings or categories.
-* Steps in a sequence
-* Short collections
-* When it is undesirable to have the user pause for navigation. Some alternatives include the infinite scroll pattern or simple un-numbered navigation.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/pagination/">Refer to the U.S. Web Design System for usage guidance</a>
 
 {% include component-docs.html component_name=page.web-component %}
+
+## Accessibility considerations
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/pagination/#accessibility-pagination">Refer to the U.S. Web Design System for accessibility guidance</a>
 
 
 {% include _component-checklist.html component_name=page.web-component %}
