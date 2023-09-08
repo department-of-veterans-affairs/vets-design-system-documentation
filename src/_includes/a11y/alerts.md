@@ -1,5 +1,4 @@
-* Don’t visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-* Don't automatically dismiss an alert based on a timer or time limit.
+* **No auto-dismissal.** Don't automatically dismiss an alert based on a timer or time limit.
 
 ### Assign an appropriate ARIA role
 
