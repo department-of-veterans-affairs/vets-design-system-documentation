@@ -5,13 +5,14 @@ redirect_from:
   - /components/privacy-agreement
 has-parent: /components/form/
 title: Privacy Agreement
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/a/l13oDA7
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/EB404E82-9D9D-4D3F-BEDC-00D323499F1D/canvas
 intro-text: "Used on the review step of a form flow to provide a link to the privacy policy content and provide a confirmation checkbox."
 status: use-deployed
 uswds-v3: default
 web-component: va-privacy-agreement
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -19,7 +20,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples
+## Examples - v1
 
 ### Default
 
@@ -28,6 +29,11 @@ anchors:
 ### With Error
 
 {% include storybook-preview.html height="100px" story="components-va-privacy-agreement--with-error" link_text="va-privacy-agreement" %}
+
+## Examples - v3
+
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--default" link_text="va-privacy-agreement v3 and additional variations" %}
+
 
 ## Usage
 

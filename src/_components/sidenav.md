@@ -2,14 +2,30 @@
 layout: component
 title: Sidenav
 intro-text: "Hierarchical, vertical navigation to place at the side of a page."
+github-title: va-sidenav
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/6C33CB80-7176-4959-89E1-DBBD51CC029A/canvas
-status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+>
+  <h2 slot="headline">
+    This component is not officially supported
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      This component has not yet been built as a component in the Design System. Thus the Design System Team does not officially recognize nor support this component. Guidance and design assets are provided as is.
+    </p>
+  </div>
+</va-alert>
+
 
 ## Example
 
