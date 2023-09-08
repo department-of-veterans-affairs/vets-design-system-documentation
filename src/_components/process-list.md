@@ -2,50 +2,68 @@
 layout: component
 title: "Process list"
 intro-text: "The process list, also known as the subway map, is used in a static informational context to describe the process to apply for a benefit or to provide tracking information to a user where they are in a given process."
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/A47C20F3-B0BF-4187-ABD8-045F4250A196/canvas
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/6C4E1C75-E50B-4690-AB3F-27F7C3F297C6/canvas
 status: use-deployed
 uswds-v3: default
 web-component: va-process-list
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
-## Examples
+## Examples - v1
 
 ### Default - Content list
 
-{% include storybook-preview.html height="300px" story="components-va-process-list--default" link_text="va-process-list" %}
+{% include storybook-preview.html height="605px" story="components-va-process-list--default" link_text="va-process-list" %}
 
 ### Additional styling
 
-{% include storybook-preview.html  story="components-va-process-list--additional-styling" link_text="va-process-list--additional-styling" %}
+{% include storybook-preview.html height="200px" story="components-va-process-list--additional-styling" link_text="va-process-list--additional-styling" %}
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="605px" story="uswds-va-process-list--default" link_text="va-process-list v3 default" %}
+
+### Status
+
+{% include storybook-preview.html height="350px" story="uswds-va-process-list--status" link_text="va-process-list v3 status" %}
+
+### Header Size
+
+{% include storybook-preview.html height="375px" story="uswds-va-process-list--header-size" link_text="va-process-list v3 header size" %}
+
+### Custom Sizing
+
+{% include storybook-preview.html height="300px" story="uswds-va-process-list--custom-sizing" link_text="va-process-list v3 custom sizing" %}
 
 ## Usage
 
-### When to use a process list
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/process-list/">Refer to the U.S. Web Design System for usage guidance</a>
 
-- **Displaying high-level sequential steps.** Use process lists to create a clear hierarchy and help users easily differentiate between individual **high-level** steps or stages in a process.
-- **For multi-step processes.** In a multi-step process where the user may need to track progress over an extended period.
+### Additional guidance for VA
 
-### When to consider something else
+#### Additional uses of a process list
 
-* **Step indicator for forms.**: When you need the user to complete more than one step in a process, usually completing a form, use the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component.
-* **When showing current status or progress.** Use the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component to show the user the current step in a multi-step process.
-* **In-page navigation.** Use the [side navigation]({{ site.baseurl }}/components/sidenav) component to display the "sub-navigation" within a section or page of the website.
-* **The steps are non-sequential.** Use lists to display text that doesn’t have a clear, logical order to it.
-* **The listed content is meant to improve readability of a complex sentence.** Use the ordered and unordered list components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
+* **For multi-step processes.** In a multi-step process where the user may need to track progress over an extended period.
+
+#### Additional reasons to consider something else
+
 * **When instructing users to take specific actions that don't require explanation, not describing high-level steps.** This component isn't appropriate for a list of instructions such as "Click the login button" or "Right-click and select Save As" that don't require any additional description.
-
 
 ### How this component works
 
 * **Be thoughtful about the number of steps.** A process list should include between three and ten steps to prevent it from getting too unwieldy or confusing.
 * **Do not stack.** Only one instance of this component should appear on a page.
 * **Do not mash up this component with other components.** The functionality of this component should not be combined with the functionality for other components. For example, using an Accordion to act as the header for a step in the process would be inappropriate usage.. Content should be edited to fit the step, provide key information, and be visible by default. Use of the [additional info]({{ site.baseurl }}/components/additional-info#within-a-process-list) component to condense content within a step is permissible. 
+* **Each step must have visible content.** Each step should have both a heading and content that helps describe the step in more detail. Do not collapse or hide all content within a step. An explanation of the step is minimally required.
 
 ### Placement
 
@@ -58,11 +76,18 @@ The Process list appears after a start form link on the form [Introduction page]
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
+
 * **List headings should start with a verb.** Examples include "Prepare", "Apply", "Review", etc.
 * **Make headings clear and concise.** You can always write more content in paragraphs and other HTML elements below the heading.
 * **Make process step content clear and concise.** Process list should not be a container for many other components and text. Use plain language and briefly explain the step in the process.
 
 ## Accessibility considerations
 
-* **Use semantic heading levels.** While our examples uses a `<h3>`, use the appropriate heading level within your page.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/process-list/#accessibility-process-list">Refer to the U.S. Web Design System for accessibility guidance</a>
+
+### Additional accessibility considerations for VA
+
 * **Don't use headings alone.** Each step should have both a heading and content that helps describe the step in more detail.
+
+
+{% include _component-checklist.html component_name=page.web-component %}
