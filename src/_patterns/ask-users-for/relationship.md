@@ -23,13 +23,9 @@ anchors:
  
 ## Examples
 
-### Caregiver Form 10-10CG
+### Relationship to Veteran
 
-{% include component-example.html alt="An example of asking the relationship to the Veteran in a drop down." file="/images/patterns/ask-users-for/relationship/relationship-caregiver.png" caption="Example of asking the relationship to the Veteran in a drop down." width="50%" %}
-
-### Burial benefits Form 21P-530
-
-{% include component-example.html alt="An example of asking the relationship to the Veteran with radio buttons." file="/images/patterns/ask-users-for/relationship/relationship-burial.png" caption="Example of asking the relationship to the Veteran with radio buttons." width="50%" %}
+{% include component-example.html alt="An example of asking the relationship to the Veteran with radio buttons." file="/images/patterns/ask-users-for/relationship/relationship-to-veteran.png" caption="Example of asking the relationship to the Veteran with radio buttons." width="50%" %}
 
 <a class="vads-c-action-link--blue" href="{{ page.example-link }}">
   View an example
