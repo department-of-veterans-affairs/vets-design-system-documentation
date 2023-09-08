@@ -217,7 +217,6 @@ Auto-migrations may not be able to perfectly migrate every component. Before you
 Here is a list of each Web Component and the migration available:
 
 * `va-accordion`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2127527996/Manual+Component+Migration+Guide)
-* `va-additional-info`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/additionalinfo.js)
 * `va-alert`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/alertbox.js)
 * `va-breadcrumbs`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/master/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-button`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-button--primary)
