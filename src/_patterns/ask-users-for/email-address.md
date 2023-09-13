@@ -5,6 +5,7 @@ sub-section: ask-users-for
 title: Email address
 intro-text: "Follow this pattern to ask a user for an email address."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx
+example-link: https://staging.va.gov/mock-form-patterns/phone-and-email-address
 sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/7F447374-E091-4BA2-90FC-06AE6DF82F92/canvas
 status: use-deployed
 anchors:
@@ -27,6 +28,12 @@ anchors:
 ### Prefill information
 
 {% include component-example.html alt="An information box in a form flow that tells the user that some information has been prefilled from their VA.gov profile." file="/images/patterns/ask-users-for/addresses/prefill.png" caption="Example of an informational message informing a user that information from their profile has been prefilled into the form below." class="x2" %}
+
+### Asking for an email address
+{% include component-example.html alt="An example of asking users for an email address." file="/images/patterns/ask-users-for/email-address/email-address.png" caption="Example of asking users for an email address." width="50%" %}
+
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
 
 ## How to design and build 
 
