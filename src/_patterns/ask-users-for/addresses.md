@@ -5,6 +5,7 @@ sub-section: ask-users-for
 title: Addresses
 intro-text: "Follow this pattern to ask a user for an address."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx
+example-link: https://staging.va.gov/mock-form-patterns/mailing-address
 sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/E1492AFF-DF32-4C70-AAE4-0B6B1F16C2A3/canvas
 status: use-deployed
 anchors:
@@ -29,6 +30,9 @@ anchors:
 ### Mailing address
 
 {% include component-example.html alt="An example of a mailing address form." file="/images/patterns/ask-users-for/addresses/mailing-address.png" caption="Example of a form collecting a mailing address." width="50%" %}
+
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
 
 ### Home address
 
