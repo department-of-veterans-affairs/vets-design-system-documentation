@@ -48,8 +48,8 @@ anchors:
 
 **When a user doesn’t enter a phone number:**
 
-Say 'Please enter a phone number'
+Say 'Enter a phone number'
 
 **If the telephone number is not in the correct format:**
 
-Say  'Please enter a 10-digit phone number (with or without dashes)'
+Say  'Enter a 10-digit phone number'
