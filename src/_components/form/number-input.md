@@ -31,7 +31,7 @@ anchors:
   >
     <React.Fragment key=".0">
       <p class="vads-u-margin-y--0">
-        The v1 and v3 variations of this component are identical as this component does not exist in the USWDS. Teams should switch to the v3 variation in preparation for global color and typography changes that the v3 variation will accept. 
+        The v1 and v3 variations of this component are identical, excluding the Currency variation which will be added to v3 at a later date. This component does not exist in the USWDS. Teams should switch to the v3 variation in preparation for global color and typography changes that the v3 variation will accept. 
       </p>
     </React.Fragment>
   </va-alert>
@@ -69,10 +69,6 @@ anchors:
 {% include storybook-preview.html story="uswds-va-number-input--widths" link_text="va-number-input v3 widths" height="800px" %}
 
 ## Usage
-
-### Default
-
-{% include storybook-preview.html story="uswds-va-number-input--default" link_text="va-number-input v3 default and additional variations" %}
 
 ### When to use number input
 
