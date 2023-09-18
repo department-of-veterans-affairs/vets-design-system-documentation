@@ -7,7 +7,7 @@ status: use-deployed
 uswds-v3: default
 web-component: va-additional-info
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Behavior
   - anchor: Code usage
@@ -19,15 +19,33 @@ anchors:
 
 ## Examples
 
+<va-alert
+    class="vads-u-margin-bottom--1"
+    close-btn-aria-label="Close notification"
+    disable-analytics="false"
+    full-width="false"
+    slim
+    status="warning"
+    uswds
+    visible="true"
+  >
+    <React.Fragment key=".0">
+      <p class="vads-u-margin-y--0">
+        The v1 and v3 variations of this component are identical as this component does not exist in the USWDS. Teams should switch to the v3 variation in preparation for global color and typography changes that the v3 variation will accept. 
+      </p>
+    </React.Fragment>
+  </va-alert>
+
 ### Default
 
-{% include storybook-preview.html story="components-va-additional-info--default" link_text="va-additional-info" %}
+{% include storybook-preview.html  story="uswds-va-additional-info--default" link_text="va-additional-info v3 default" %}
 
 ### No Border
 
 * Adding in the `disable-border` prop removes the left blue border from the expanded state of the component.
 
-{% include storybook-preview.html story="components-va-additional-info--no-border" link_text="va-additional-info" %}
+{% include storybook-preview.html story="uswds-va-additional-info--no-border" link_text="va-additional-info v3 no border" %}
+
 
 ## Usage
 
