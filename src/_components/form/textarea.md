@@ -10,13 +10,14 @@ status: use-deployed
 uswds-v3: default
 web-component: va-textarea
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples
+## Examples - v1
 
 ### Default
 {% include storybook-preview.html height="260px" story="components-va-textarea--default" link_text="va-textarea" %}
@@ -36,22 +37,24 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 Refer to the overall [form guidance]({{ site.baseurl }}/components/form#hint-text) for hint text examples and usage.
 
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="260px" story="uswds-va-textarea--default" link_text="va-textarea v3 default with additional variations" %}
+
 ## Usage
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/text-input/">Refer to the U.S. Web Design System for usage guidance</a>
 
 ### When to use textarea
 
-- If you can’t reasonably predict a user's answer to a prompt and there might be wide variability in users’ answers.
-- When users want to be able to paste in a response.
-- When using another type of input will make answering more difficult. 
+### Additional guidance for VA
 
-### When to consider something else
+#### When to consider something else
 
-- When a short, single line of text is expected and sufficient.
-- When users are choosing from a specific set of options.
+- **Predictable text.** When a short, single line of text is expected and sufficient.
 
-### How to use 
-
-- Only show error validation messages or stylings after a user has interacted with a particular field.
 
 ### Behavior
 
@@ -66,5 +69,8 @@ Refer to the overall [form guidance]({{ site.baseurl }}/components/form#hint-tex
 
 ## Accessibility considerations
 
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/text-input/#accessibility-text-input">Refer to the U.S. Web Design System for accessibility guidance</a>
+
 * **Avoid `placeholder` text.** Excluding our max characters variation, avoid using placeholder text. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. Also, placeholder text is no longer visible once a user clicks into the field. Thus users will no longer have that text available when they need to review their entries. People who have cognitive or visual disabilities have additional problems with placeholder text.
 * **When using placeholder text, provide screen reader accessible text.** When using the placeholder prop, which is used automatically by the Max length variation, additional work is required to make the component accessible. Screen readers such as JAWS and NVDA don't read placeholder text. Placeholder text is a visual addition only. Thus when using placeholder text to provide important information visually you must also convey this information to screen reader users as well. To do this this add screen read only text within a `<span>` using the `.sr-only` CSS class and place the span and text where you would like it to be read out, typically after the field label. 
+* **Only show error validation messages or stylings after a user has interacted with a particular field.** Do not interrupt a user while they are entering text into a textarea.
