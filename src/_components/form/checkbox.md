@@ -4,7 +4,7 @@ permalink: /components/form/checkbox
 has-parent: /components/form/
 title: Checkbox
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/AB01082F-B8AE-4D0A-A3FD-5B8EDEB578CD/canvas
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/AB01082F-B8AE-4D0A-A3FD-5B8EDEB578CD/canvas
 intro-text: "Allows users to select one or more items from a list. Checkboxes are an easily understandable way to indicate that users can select one or more answers to a question or items from a list."
 status: use-deployed
 uswds-v3: default

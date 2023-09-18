@@ -6,7 +6,7 @@ title: "Progress bar - Segmented"
 intro-text: "A segmented progress bar updates users on their progress through a multi-step process."
 aka: Step indicator
 research-title: Progress bars
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/22A38EE5-A28E-41CB-829C-4D305AFEAE50
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/2FCC2B76-88D4-477C-AF19-EC1A1A6DA6B7/canvas
 status: use-deployed
 uswds-v3: default
 web-component: va-segmented-progress-bar
