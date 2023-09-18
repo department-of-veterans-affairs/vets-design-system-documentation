@@ -94,7 +94,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="140px" story="uswds-va-checkbox-group--default" link_text="va-checkbox-group v3 default and additional variations" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--default" link_text="va-checkbox-group v3 default and additional variations" %}
 
 ## Usage
 

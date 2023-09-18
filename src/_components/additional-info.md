@@ -7,7 +7,7 @@ status: use-deployed
 uswds-v3: default
 web-component: va-additional-info
 anchors:
-  - anchor: Examples - v3
+  - anchor: Examples
   - anchor: Usage
   - anchor: Behavior
   - anchor: Code usage
