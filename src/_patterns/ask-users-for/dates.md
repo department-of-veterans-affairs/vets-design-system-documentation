@@ -31,10 +31,6 @@ Dates you may need people to provide include:
 
 Use the [Memorable date]({{ site.baseurl }}/components/form/memorable-date) component for dates a person is likely to have memorized such as a date of birth or marriage anniversary. 
 
-You can also use the standard [date]({{ site.baseurl }}/components/form/date) component:
-
-![date input for memorized dates: month day and year]({{site.baseurl}}/images/patterns/ask-users-for/dates/date-input.png) 
-
 #### Date of birth
 
 {% include component-example.html alt="Shows the form fields used to obtain date of birth." file="/images/patterns/ask-users-for/dates/form-dob.png" caption="Example of asking for a date of birth." class="x2" %}
@@ -48,19 +44,17 @@ You can also use the standard [date]({{ site.baseurl }}/components/form/date) co
 
 Follow this pattern whenever you need to ask for a user’s date and place of birth. 
 
-![applicant information birth information template]({{site.baseurl}}/images/patterns/ask-users-for/dates/birth-info.png) 
+{% include component-example.html alt="Shows the form fields used to obtain date and place of birth." file="/images/patterns/ask-users-for/dates/birth-info.png" caption="Example of asking for a date and place of birth. NOTE: This screenshot shows an outdated date component. Use Memorable Date for collecting date of birth." class="x2" %}
 
 ### Dates a user can approximate
 
 Use the [month/year date]({{ site.baseurl }}/components/form/date-input#monthyear) component variation for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
 
-![date input for approximate dates: month and year]({{site.baseurl}}/images/patterns/ask-users-for/dates/date-input-month-year.png) 
- 
+{% include component-example.html alt="Shows the date input for collecting approximate dates." file="/images/patterns/ask-users-for/dates/date-input-month-year.png" caption="Example of using the month and year date component for collecting a date a user can approximate." class="x2" %}
+
 ### Date ranges
 
-Use one of the aforementioned components depending on the question being asked. For example: Service history dates.
-
-![date ranges: service start date and service end date]({{site.baseurl}}/images/patterns/ask-users-for/dates/date-ranges.png) 
+Refer to the [Service history pattern]({{ site.baseurl }}/patterns/ask-users-for/service-history) for an example of collecting service date ranges.
 
 ## How to design and build 
 

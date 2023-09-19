@@ -6,6 +6,8 @@ title: Relationship to Veteran
 intro-text: "Follow this pattern to ask a user for their relationship to the Veteran."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx
 example-link: https://staging.va.gov/mock-form-patterns/relationship-to-veteran
+github-title: pattern-relationship-to-veteran
+research-title: Ask users for relationship to Veteran
 sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/CDC8B63A-CD03-4A68-8130-9F2A106D0961/canvas
 status: use-deployed
 anchors:
