@@ -4,21 +4,23 @@ permalink: /components/form/checkbox
 has-parent: /components/form/
 title: Checkbox
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/AB01082F-B8AE-4D0A-A3FD-5B8EDEB578CD/canvas
-intro-text: "Allows users to select one or more items from a visible list."
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/AB01082F-B8AE-4D0A-A3FD-5B8EDEB578CD/canvas
+intro-text: "Allows users to select one or more items from a list. Checkboxes are an easily understandable way to indicate that users can select one or more answers to a question or items from a list."
 status: use-deployed
 uswds-v3: default
 web-component: va-checkbox-group
 anchors:
-  - anchor: Examples - Single
-  - anchor: Examples - Group
+  - anchor: Examples - Single - v1
+  - anchor: Examples - Single - v3
+  - anchor: Examples - Group - v1
+  - anchor: Examples - Group - v3
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - Single
+## Examples - Single - v1
 
 ### Default
 
@@ -56,7 +58,13 @@ anchors:
 
 {% include storybook-preview.html story="components-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
 
-## Examples - Group
+## Examples - Single - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-checkbox--default" link_text="va-checkbox v3 default and additional variations" %}
+
+## Examples - Group - v1
 
 ### Default
 
@@ -82,23 +90,22 @@ anchors:
 
 {% include storybook-preview.html story="components-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
 
+## Examples - Group - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--default" link_text="va-checkbox-group v3 default and additional variations" %}
 
 ## Usage
 
-### When to use checkboxes
-- When a user can select any number of choices from a set list.
-- When a user needs to choose “yes” or “no” on only one option (use a stand-alone checkbox). For example, to toggle a setting on or off.
-- When users need to see all the available options at a glance.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/">Refer to the U.S. Web Design System for usage guidance</a>
 
-### When to consider something else
+### Additional guidance for VA
+
+#### When to consider something else
+
 - If there are too many options to display on a mobile screen.
 - If a user can only select one option from a list (use radio buttons instead).
-
-### How to use 
-- Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.
-- List options vertically if possible; horizontal listings can make it difficult to tell which label pertains to which checkbox.
-- Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”
-- If you customize, make sure selections are adequately spaced for touch screens.
 
 ### Errors
 
@@ -121,14 +128,12 @@ anchors:
 {% include snippet.html content='html/error-checkbox-group.html' %}
 
 
+{% include component-docs.html component_name=page.web-component %}
+
 ### Native Events
 
 - The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
-{% include component-docs.html component_name=page.web-component %}
-
 ## Accessibility considerations
-- Surround a related set of checkboxes with a `<fieldset>`. The` <legend>` provides context for the grouping. Do not use fieldset and legend for a single check.
-- The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `margin-left: -2rem; opacity: 0; position: absolute; left: auto;`.
-- Each input should have a semantic `id` attribute, and its corresponding `label` should have the same value in it’s `for` attribute.
-- The `title` attribute can replace `<label>`.
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/#accessibility-checkbox">Refer to the U.S. Web Design System for accessibility guidance</a>
