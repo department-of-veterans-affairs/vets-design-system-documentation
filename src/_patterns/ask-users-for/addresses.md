@@ -6,6 +6,8 @@ title: Addresses
 intro-text: "Follow this pattern to ask a user for an address."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx
 example-link: https://staging.va.gov/mock-form-patterns/mailing-address
+github-title: pattern-addresses
+research-title: Ask users for addresses
 sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/E1492AFF-DF32-4C70-AAE4-0B6B1F16C2A3/canvas
 status: use-deployed
 anchors:
