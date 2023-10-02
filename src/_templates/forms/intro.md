@@ -8,21 +8,30 @@ intro-text: "The form introduction page gives users information about what they 
 sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/A952E56D-1CFC-4545-A32C-11DDCFB7359C/canvas
 anchors:
   - anchor: About
-  - anchor: Example
-  - anchor: Structure
+  - anchor: Example - Application
+  - anchor: Structure - Application
+  - anchor: Example - Non-Application
+  - anchor: Structure - Non-Application
 ---
 
 ## About
 
-This page gives users step-by-step information on how to apply for a benefit. It also sets clear expectations on when they can expect a decision on their application. This page also gives users ways to get help, as well as important information about that specific form or benefit.
+The introduction page introduces the process that the user is about to embark on to apply to a benefit or service or to complete an ancillary form. This page sets clear expectations on the process and may provide details on when they can expect a decision on their application. This page also gives users ways to get help, as well as important information about that specific form or benefit.
 
 Users can navigate to a form’s introduction page either from within VA.gov or through an online search. Since users can navigate to this page from outside VA.gov, it's recommended that this page include some basic benefit eligibility information or a link back to the VA.gov benefit eligibility page.
 
-## Example
+### Variations
+
+There are 2 versions of the Introduction page:
+
+1. **Application**: The application template is intended for introduction pages that start an application for a benefit or service.
+2. **Non-application**: The non-application template is intended for introduction pages that start a standard form flow. In other words, an online form that is not for an application for a benefit or service. Typically these are for ancillary forms related to a benefit or service.
+
+## Example - Application
 
 ### Unauthenticated
 
-{% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-unauth.png" caption="Anatomy of the Introduction page for unauthenticated users." class="x2" %}
+{% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-app-unauth.png" caption="Anatomy of the Introduction page for unauthenticated users." class="x2" %}
 
 The introduction form page for unauthenticated users consists of:
 
@@ -36,7 +45,7 @@ The introduction form page for unauthenticated users consists of:
 
 ### Authenticated
 
-{% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-auth.png" caption="Anatomy of the Introduction page for authenticated users." class="x2" %}
+{% include component-example.html alt="An example of an introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-app-auth.png" caption="Anatomy of the Introduction page for authenticated users." class="x2" %}
 
 The introduction form page for authenticated users consists of:
 
@@ -57,7 +66,7 @@ The introduction form page for authenticated users consists of:
 * [https://www.va.gov/pension/application/527EZ/introduction](https://www.va.gov/pension/application/527EZ/introduction)
 * [https://www.va.gov/health-care/apply/application/introduction](https://www.va.gov/health-care/apply/application/introduction)
 
-## Structure
+## Structure - Application
 
 ### Title
 
@@ -158,6 +167,44 @@ A [Button - Primary]({{ site.baseurl }}/components/button) that reads "Sign in t
 
 ### Need help
 
-The Need help component is a footer that appears on the bottom of every page of the form. This content lets users know how to get additional help with the form or the benefits. 
+The [Need help component]({{ site.baseurl }}/components/form/need-help) is a footer that appears on the bottom of every page of the form. This content lets users know how to get additional help with the form or the benefits. 
 
 {% include component-example.html alt="An example of a need help footer for forms pages." file="/images/templates/forms/introduction/need-help.png" caption="An example of a Need help component used on all forms pages." class="x2" %}
+
+## Example - Non-application
+
+### Unauthenticated
+
+{% include component-example.html alt="An example of a non-application introduction page for unauthenticated users." file="/images/templates/forms/introduction/template-non-app-unauth.png" caption="Layout of the non-application introduction page for unauthenticated users." class="x2" %}
+
+The non-application introduction page for unauthenticated users consists of the same elements as the application intro page with some notable distinctions:
+
+1. The [Sign-in to save work in-progress alert](#sign-in-to-save-work-in-progress-alert) appears towards the bottom of the page and is the only call-to-action to start the form. Note that there are two variations of this Alert: Pre-fill and no-pre-fill.
+2. A [What to know before you fill out this form](#what-to-know-before-you-fill-out-this-form) section is added.
+
+### Authenticated
+
+{% include component-example.html alt="An example of a non-application introduction page for authenticated users." file="/images/templates/forms/introduction/template-non-app-auth.png" caption="Layout of the non-application introduction page for authenticated users." class="x2" %}
+
+### Instances of this template in production
+
+* [Authorize the release of non-VA medical information to VA (VA Form 21-4142)](https://www.va.gov/supporting-forms-for-claims/release-information-to-va-form-21-4142/introduction)
+* [Submit a lay witness statement to support a VA claim (VA Form 21-10210)](https://www.va.gov/supporting-forms-for-claims/lay-witness-statement-form-21-10210/introduction)
+* [Request to be a substitute claimant for a deceased claimant - VA Form 21P-0847](https://www.va.gov/supporting-forms-for-claims/substitute-claimant-form-21P-0847/introduction)
+
+
+## Structure - Non-application
+
+The structure of the non-application into template uses the same elements as the application version with the addition of on new section.
+
+### Sign-in to save work in-progress alert
+
+There are two variations of this alert:
+
+1. [Pre-fill sign-in]({{ site.baseurl }}/components/alert#sign-in-to-start-your-application---pre-fill)
+2. [No pre-fill sign-in]({{ site.baseurl }}/components/alert#sign-in-to-start-your-application---no-pre-fill)
+
+### What to know before you fill out this form
+
+* A 2-5 bulleted list of things people should know before filling out the form. This could include information such as when submitting a fom is unnecessary or if there are time limits to be aware of, etc.
+* If an additional list with separate information is useful here, you may add a second h2.
