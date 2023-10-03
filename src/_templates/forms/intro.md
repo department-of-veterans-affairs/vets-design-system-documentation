@@ -206,5 +206,5 @@ There are two variations of this alert:
 
 ### What to know before you fill out this form
 
-* A 2-5 bulleted list of things people should know before filling out the form. This could include information such as when submitting a fom is unnecessary or if there are time limits to be aware of, etc.
+* A 2-5 bulleted list of things people should know before filling out the form. This could include information such as when submitting a form is unnecessary or if there are time limits to be aware of, etc.
 * If an additional list with separate information is useful here, you may add a second h2.
