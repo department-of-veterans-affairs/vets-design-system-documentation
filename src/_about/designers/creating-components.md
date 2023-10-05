@@ -43,12 +43,13 @@ All components should have "Simplify all instances" checked. It helps reduce vis
 * For main components, show nested properties as appropriate.
 * Properties should be named and set up consistently:
   * Mode: Always appears first. Some options include Light and Dark or languages.
-  * Type: Appears below Mode. Used for things like Primary / Secondary or H1 / H2.
-  * Layout: Appears below Type. Used for things like Horizontal / Vertical or varying quantities.
-  * State: Appears below Layout. Used for things like Focus / Active or Open / Closed or Active / Inactive.
-* Booleans should be named and set up consistently.
-  * Used to show/hide icons, buttons, content, etc.
-  * Always name them descriptively – i.e. icon (left) / icon (right), button (secondary), header (show/hide).
+  * Type: Appears below Mode. Used for things like Primary, Secondary, or H1, H2.
+  * Layout: Appears below Type. Used for things like Horizontal, Vertical, or varying quantities.
+  * State: Appears below Layout. Used for things like Focus, Active, or Open, Closed or Active, Inactive.
+* Booleans should be named and set up consistently: 
+  * Booleans can be used to show/hide icons, buttons, content, etc.
+  * Boolean names should be in the following format: `[Action] [Noun]`.
+  * The name should also agree with the true value. For example, "Show Icon" instead of "Hide Icon" or "Icon Show/Hide".
 * Instance swaps should be named and set up consistently.
   * Preferred values should be set as appropriate.
   * Always name them descriptively – i.e. icon (left) / icon (right).
@@ -56,7 +57,8 @@ All components should have "Simplify all instances" checked. It helps reduce vis
   * Add content fields for every editable content area.
   * Header and title fields should be named descriptively – i.e. header / title or header 1, header 2, etc.
   * Body copy fields should always be named “content”.
-  * Fields such as labels, tags, and buttons should be named descriptively – i.e. button text
+  * Fields such as labels, tags, and buttons should be named descriptively – i.e. Button Text
+  * Naming should use title casing. For example, "Content", "Title", "Show Icon".
   * Layers should also be named descriptively and not "Frame 1". 
 
 ### States
@@ -70,7 +72,7 @@ The following states should be depicted on all components:
 
 ### Sub-components
 
-For any sub-components that are used to build another component that should NOT be available to a designer using the library, prefix the component with an underscore or period (i.e “_” or “.”). This will make those components “private” to the current Figma file. It will not be exposed for a designer to use on it’s own with connected to the library.
+For any sub-components that are used to build another component that should NOT be available to a designer using the library, prefix the component with an underscore or period (i.e “_” or “.”). This will make those components “private” to the current Figma file. It will not be exposed for a designer to use on it’s own when connected to the library.
 
 ### Variations
 
@@ -80,9 +82,12 @@ In addition, all variations are shown at mobile and desktop viewport widths. If 
 
 ## Design tokens
 
-All components should be connected to the VADS Component Library styles & variables.
+All components should be connected to the VADS Component Library styles & variables. 
 
-* All components should be connected to the proper style or variable/token 
+{% include component-example.html alt="Design token not applied in Figma." file="/images/about/designers/figma/token-not-applied.png" caption="An Auto layout value that is not using a token." %}
+{% include component-example.html alt="Design token applied in Figma." file="/images/about/designers/figma/token-applied.png" caption="An Auto layout value that is correctly using a token." %}
+
+* All components should be connected to the proper style or variable/token. 
 * **Colors:** Connected to the correct color token (not primitive!) found in the local variables library.
 * **Typography:** Connected to the correct text style found under local styles.
 * **Spacing:** Connected to the correct spacing token or primitive. 
@@ -95,6 +100,10 @@ All components should be connected to the VADS Component Library styles & variab
 
 All colors should be pulled from the variables in the VADS Figma file.
 
+* **All color combinations much pass color contrast at the following sizes and ratios.** 
+  * All text of 20px or smaller has a 4.5:1 contrast ratio to its background (or better)
+  * All text of 20px or larger has a 3:1 contrast ratio to its background (or better)
+  * Non-text elements have a 3:1 contrast ratio to their background and to neighboring elements (or better)
 * **Use variable tokens (NOT primitive) for colors.** To find variable tokens, look under libraries when you select the color menu and scroll past the primitives collection to find tokens.
 
 {% include component-example.html alt="VADS color token panel in Figma." file="/images/about/designers/figma/colors.png" caption="Be sure to scroll past the primitives to get to the VADS color tokens." %}
@@ -150,7 +159,7 @@ Essentially, we are looking for all of the things mentioned above.
 * Components should be as reactive as possible. Most, if not all, components should be able to be resize for either mobile, tablet, or desktop viewport widths.
 * The correct spacing should be applied to auto layout.
 * Try to break the component! 
-  * Test on asset NOT parent component 
+  * Test on instance and NOT main component.
   * Expand/shrink the asset and put into containers.
   * Change body text and/or header from a sentence to paragraph.
   * Ensure text wraps correctly.
@@ -162,7 +171,7 @@ Not all components need every property. It will differ component to component. T
 
 * **Variants:** Should be used when the component has several states i.e primary, secondary, error.
 * **Boolean:** Should be used if the component has a part that does not always need to be shown i.e icons, nested components and mobile view.
-* **Text:** Should be used when the test on a component needs to be changed. There are some exceptions to this: If the component has several variants that need to have different/specific text. When you change the text on the parent component it will change all of the variants.
+* **Text:** Should be used when the test on a component needs to be changed. There are some exceptions to this: If the component has several variants that need to have different/specific text. When you change the text on the main component it will change all of the variants.
 * **Instance Swap:** Should be used if there is a part of the component that needs to be switched out but nothing else needs to change (i.e. iconography).
 * **Color contrast** [Review our use of color guidelines](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/prepare-for-an-accessibility-staging-review#use-of-color). Tip: The plugin "Contrast" can help with this check.
 
@@ -180,9 +189,9 @@ Not all components need every property. It will differ component to component. T
 
 #### Tokens and variables
 
-* All components should be connected to VADS Component Library styles & variables .
+* All components should be connected to VADS Component Library styles & variables. Variables will start with "vads-".
 * All components should be connected to the proper style or variable/token:
   * **Colors:** Connected to the correct color token (not primitive!) - can be found in local variables library.
   * **Typography:** Connected to the correct text style - under local styles.
-  * **Spacing:** Connected to the correct spacing token or primitive.
+  * **Spacing:** Connected to the correct spacing token.
   * **Icons:** Connected to correct [icon]({{ site.baseurl }}/foundation/icons). 
