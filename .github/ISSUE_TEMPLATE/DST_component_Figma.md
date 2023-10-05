@@ -23,54 +23,14 @@ Confluence page with instructions: https://vfs.atlassian.net/l/cp/JR0BtAa1
 
 
 ## Tasks
-Component configuration
-- [ ] All components should have “simplify all instances” checked.    
-- [ ] Documentation: Add a short description of how the component should be used or add a link to documentation 
-- [ ] Naming: Make sure the name matches what we have displayed in storybook 
-Colors:
-- [ ] All colors should be pulled from the variables in the Design System Figma file 
-- [ ] Use variable tokens (NOT primitive) for colors: It is listed under libraries when you select the color menu. Scroll past primitives collection to find tokens.  
-Typography:
-- [ ] All text styles should be pulled from the Design System Figma file. Note: Variables are not available for text so use the local styles
-- [ ] Make sure your text uses the correct resizing
-    - [ ] Auto width - component will expand to the right when changing text 
-    - [ ]  Auto height - component will expand downward when changing text 
-    - [ ]  Fixed size- component will stay the same size regardless of the text changing  
-Spacing 
-- [ ]  Apply spacing variables when possible 
-    - [ ] Look for icon to find spacing variables: It can be found with auto layout, radius, and width and height  
-Autolayout
-- [ ] Using auto layout
-- [ ] Explore auto layout properties
-- [ ]   Components must be set up to automatically vertically resize as text changes.
-    - [ ] Typically, a component’s height will need to be set to “hug” to accomplish this.
-- [ ] Components must be set up for responsive widths. Here are some potential ways to achieve this:
-    - [ ] Variant widths may need to be set to “fill” at 1024px for desktop or 320px for mobile (Note: “fill” will only be available if this component is within a container.)
-    - [ ] Constraints may need to be set to "left and right" or “scale.”
-    - [ ] Autolayout properties may need to be customized depending on the component’s design.
-Properties
-- [ ] Explore component properties
-- [ ] Properties should be listed in an order that mimics the component’s visual layout from top to bottom and left to right.
-- [ ] For main components, show nested properties as appropriate.
-- [ ] Properties should be named and set up consistently.
-    - [ ] Mode: Always appears first. Some options include Light and Dark or languages.
-    - [ ] Type: Appears below Mode. Used for things like Primary / Secondary or H1 / H2.
-    - [ ] Layout: Appears below Type. Used for things like Horizontal / Vertical or varying quantities.
-    - [ ] State: Appears below Layout. Used for things like Focus / Active or Open / Closed or Active / Inactive.
-- [ ] Booleans should be named and set up consistently.
-    - [ ] Used to show/hide icons, buttons, content, etc.
-    - [ ] Always name them descriptively – i.e. icon (left) / icon (right), button (secondary), header (show/hide).
-- [ ] Instance swaps should be named and set up consistently.
-    - [ ] Preferred values should be set as appropriate.
-    - [ ] Always name them descriptively – i.e. icon (left) / icon (right).
-- [ ] Text properties should be named and set up consistently.
-    - [ ] Add content fields for every editable content area.
-    - [ ] Header and title fields should be named descriptively – i.e. header / title or header 1, header 2, etc.
-    - [ ] Body copy fields should always be named “content”.
-    - [ ] Fields such as labels, tags, and buttons should be named descriptively – i.e. button text
-- [ ] Layers
-    - [ ] Avoid default naming of layers (ex. “Frame 1”) and use descriptive names
-    - [ ] For any components that are used to build another component that should NOT be available to a designer using the library, prefix the component with an underscore or period (i.e “_” or “.”). This will make those components “private” to the current Figma file. It will not be exposed for a designer to use on it’s own with connected to the library.
+- [ ] Create designs for component in Figma
+- [ ] Review designs with PO and/or other DST designers
+- [ ] Review designs with an accessibility specialist
+- [ ] Review designs with DST members 
+- [ ] Address any comments from reviews, if necessary
+- [ ] Comment on this ticket with any accessibility considerations engineers may need to know
+- [ ] Comment on this ticket with content specifications (e.g. labels and error messages)
+- [ ] Comment on this ticket with a link to the designs and post in DST Slack channel
 
 
 ## Acceptance Criteria
