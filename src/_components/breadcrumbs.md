@@ -68,8 +68,7 @@ anchors:
 
 ### Behavior
 
-- All the links in the breadcrumb, except the current page, should be interactive and link to their corresponding page.
-- The current page segment of the breadcrumb should not be interactive or link. 
+- All links in the breadcrumb should be interactive and link to their corresponding page, or in the case of the current page link, link to content on the current page.
 
 ### SEO considerations
 
@@ -83,3 +82,8 @@ anchors:
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
+
+### Additional accessibility guidance for VA
+
+* **Make current page a link.** Use a link for the current page for robustness. While it may sound counterintuitive to link to the current page in this component, it makes sense to include this as a link so screen readers voice the current page link whether the user navigates by element or by tabbing. Making the current page a link rather than text makes it a focusable and clickable element. It also follows [WAI-ARIA Authoring Practices Guide (APG) guidances](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/) which states that an `a` element with `aria-current="page"` should represent the current page.
+  * NOTE: The v1 version of this component has not been updated. Please use the v3 version of this component.
