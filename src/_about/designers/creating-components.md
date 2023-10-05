@@ -100,7 +100,7 @@ All components should be connected to the VADS Component Library styles & variab
 
 All colors should be pulled from the variables in the VADS Figma file.
 
-* **All color combinations much pass color contrast at the following sizes and ratios.** 
+* **All color combinations must pass color contrast at the following sizes and ratios.** 
   * All text of 20px or smaller has a 4.5:1 contrast ratio to its background (or better)
   * All text of 20px or larger has a 3:1 contrast ratio to its background (or better)
   * Non-text elements have a 3:1 contrast ratio to their background and to neighboring elements (or better)
