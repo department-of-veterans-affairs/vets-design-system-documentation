@@ -6,6 +6,7 @@ permalink: /about/designers/
 intro-text: Documentation and resources for designers.
 sub-pages:
   - sub-page: Design Libraries
+  - sub-page: Creating components
   - sub-page: Sketch for teams at VA
 ---
 
