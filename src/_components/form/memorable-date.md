@@ -45,7 +45,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--with-month-select" link_text="va-memorable-date v3 along with additional variations" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date v3 along with additional variations" %}
 
 ## Usage
 
