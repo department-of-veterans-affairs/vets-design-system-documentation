@@ -93,3 +93,7 @@ While `vets-design-system-documentation` is running and make further updates to 
 ## Deploying
 
 Merges into `main` will automatically be deployed to `dev-design.va.gov`. Production is automatically deployed every weekday at 2pm. Deploys are executed by creating a release of vets-website via Jenkins. You can track the deployment in the Slack channel, #design-system.
+
+## Additional Testing
+
+This project is tested with BrowserStack.
