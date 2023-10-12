@@ -21,68 +21,69 @@ anchors:
 
 ## Examples
 
-![Direct deposit input state]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/direct_deposit_update.png)
+{% include component-example.html alt="Edit direct deposit information." file="/images/patterns/ask-users-for/direct-deposit/direct_deposit_update.png" caption="An example of editing direct deposit information." class="x2" reverse="true" %}
 
-### Production example
+{% include component-example.html alt="Add direct deposit information." file="/images/patterns/ask-users-for/direct-deposit/form-22-10203-direct-deposit-20230608.png" caption="An example from form 22-10203, Apply for the Rogers STEM Scholarship, of collecting direct deposit information." class="x2" %}
 
-[VA Form 22-10203 (Application for Edith Nourse Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
+{% include component-example.html alt="Add direct deposit information in profile." file="/images/patterns/ask-users-for/direct-deposit/direct-deposit-in-profile.png" caption="How direct deposit information is collected in Profile." class="x2" reverse="true" %}
+
+### Examples in production
+
+* [VA Form 22-10203 (Application for the Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
+* [Profile](https://va.gov/profile/direct-deposit)
 
 ## How to design and build - Input
 
-### Direct deposit card name
+### Anatomy 
 
-Under the form name and chapter title, begin the card with a heading level 3 of “Direct deposit information” 
+#### Direct deposit
 
-### Card description
+Under the form name and Progress bar - Segmented, begin with a fieldset legend of "Direct deposit". 
 
-Under the card name have a short description on how VA only accepts direct deposit and what their direct deposit information is going to be used for. 
+#### Card description
 
-Example: *We make payments only through direct deposit, also called  electronic funds transfer (EFT).* 
+Under the card name have a short description. For example:
 
-### Check image
+> Direct deposit information is not required to determine eligibility. However, benefits cannot be paid without this information per U.S. Treasury regulation 31 C.F.R. § 208.3.
+
+#### Check image
 
 The check image provides a guide for Veterans to find their account and routing numbers from a check when filling out direct deposit information.
 
-### Check image caption
+#### Check image caption
 
 Provides a caption for the check image, which is used to provide supplemental information for the image.
 
 ### Anatomy - Form controls
 
 #### Account type
-Present the account type as a radio button group since the Veteran has only two options to choose from: checking and savings.
 
-#### Bank name
-The bank name text input isn’t required for all direct deposit patterns and developers have the option of not including this text input. 
- 
+Present the account type as a radio button group since the Veteran has only two options to choose from: Checking and savings.
+
 #### Bank routing number
+
 The bank routing number text input is required for this form pattern. The routing number must be 9 digits. 
 
 #### Bank account number
+
 The bank account number text input is required for this form pattern. 
 
-#### “I don’t want to use direct deposit” checkbox
-![Direct deposit checkbox]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/Direct-deposit-checkbox-small.png)
-
-Underneath the direct deposit  input card, give the Veteran the option to not give their direct deposit information. When the checkbox is checked, the direct deposit input card above will disappear. 
-
 ### More information
-Let Veterans know how this direct deposit information is going to apply their other benefits.
 
-Example: *Note: Any updates you make here will change your bank account information for some VA benefits, including [add affected benefits].
+Let Veterans know how this direct deposit information is going to apply their other benefits. For example:
+
+> Note: Any bank account information you enter here will apply to your other Veteran benefits, including compensation, pension, and Benefits for Certain Children with Disabilities (Chapter 18) payments.
+
+> Information entered here won’t change your existing accounts for VA education or health benefits.
 These updates won’t change your bank account information for [add non-affected benefits].*
  
 #### Additional info component
+
 Provide more information if Veterans do not have a bank account.
 
-Example of additional information that can be displayed:
+{% include component-example.html alt="What if I don't have a bank account? additional information." file="/images/patterns/ask-users-for/direct-deposit/what-if-i-dont-have-a-bank-account.png" caption="An example using the additional information component to answer to the question of what Veterans can do if they do not have a bank account, also from the application for the Rogers STEM Scholarship." class="x2" %}
 
-*What if I don’t have a bank account?*
-
-*The [Veterans Benefits Banking Program (VBBP)](https://veteransbenefitsbanking.org/) provides a list of Veteran-friendly banks and credit unions. They’ll work with you to set up an account, or help you qualify for an account, so you can use direct deposit.
-To get started, call one of the participating banks or credit unions listed on the VBBP website. Be sure to mention the Veterans Benefits Banking Program.
-Note: The Department of the Treasury requires us to make electronic payments. If you don’t want to use direct deposit, you’ll need to call the Department of the Treasury at **888-224-2950**. Ask to talk with a representative who handles waiver requests. They can answer any questions or concerns you may have.*
-
+<!--
 ## How to design and build - Review
 
 ![Direct deposit review state]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/Direct-deposit-review-state-small.png)
@@ -95,6 +96,7 @@ Mask the routing and account number but leave the 4 last digits. This masking is
 
 #### Call to action
 When the “update account information” button is clicked, the bank account information card will turn into an interactive card in which the review state will revert back into the input state.
+-->
 
 ## Content considerations
 
@@ -102,12 +104,12 @@ When the “update account information” button is clicked, the bank account in
 
 **When a user doesn’t enter a bank account number:**
 
-Say 'Please enter a bank account number'
+Say 'Enter a bank account number'
 
 **When a user enters their routing number incorrectly:**
 
-Say 'Please enter a valid nine digit routing number'
+Say 'Enter a valid nine digit routing number'
 
 **When a user doesn’t enter a routing number:**
 
-Say 'Please enter a routing number'
+Say 'Enter a routing number'

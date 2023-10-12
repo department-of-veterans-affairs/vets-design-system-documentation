@@ -3,7 +3,7 @@ layout: documentation
 title: Using Web Components
 permalink: /about/developers/using-web-components
 has-parent: /about/developers/
-intro-text: Web Components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps. 
+intro-text: Web Components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps.
 anchors:
   - anchor: How to use a web component
   - anchor: React and Web Components
@@ -44,13 +44,23 @@ The benefits of using Design System Web Components include:
 - Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
 - Performance and speed
 
-The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components. 
+The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components.
 
 If our components do not meet your needs, we would love to hear about it. Reach out to us in Slack at #platform-design-system or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose). And if you are interested in contributing to the Design System, review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
 
+## USWDS V1 vs. V3 Compatibility
+
+The current version of the Design System is compatible with the US Web Design System (USWDS) version 1. To use components compatible with version 3 of the USWDS, add a `uswds` flag to the component, as in this example:
+
+```
+<va-gizmo uswds>
+```
+
+To check if the component you want to use in "V3 Mode" is available to use in this mode, go to the [VA Design System's Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-additional-info--default) site and look under the "USWDS" section. Here you will find a list of available components as well as implementation details and examples.
+
 ## Vanilla JavaScript applications
 
-If a Design System web component will be used without the need for passing in a function, object, array, or custom event, you are ready to use it without any additional imports. 
+If a Design System web component will be used without the need for passing in a function, object, array, or custom event, you are ready to use it without any additional imports.
 
 A vanilla web component is used like `<va-example-component>` (identified by tags prefixed with `<va-*>`).
 
@@ -61,7 +71,7 @@ We make our best efforts to avoid creating web components with object or array p
 
 React application have an option of either using the web component directly like `<va-example-component>` or importing the React binding for the web component which would look like this `<VaExampleComponent>`. Both of these implementations render as web components though.
 
-**How to choose to use the vanilla component or React binding?** 
+**How to choose to use the vanilla component or React binding?**
 
 If either of these are true, we would recommend using the React binding for ease of use:
 
@@ -72,15 +82,15 @@ If you are not sure if you need either of those features, refer to the web compo
 
 **Importing a React binding of a web component**
 
-Bindings are component wrappers that allow our web components to work as first-class React components. This allows them to handle custom events and to pass in more than primitives to a web component's properties. 
+Bindings are component wrappers that allow our web components to work as first-class React components. This allows them to handle custom events and to pass in more than primitives to a web component's properties.
 
 Example of importing the React binding of a web component:
 
 <hr>
 
 ```jsx
-import { 
-  VaExampleComponent 
+import {
+  VaExampleComponent
 } from "@department-of-veterans-affairs/component-library/dist/react-bindings";
 
 const exampleFunction = () => { return "Hello, World!" };
@@ -117,8 +127,8 @@ If the Web Component has a custom event that you need to use and you're using th
 <hr>
 
 ```jsx
-import { 
-  VaExampleComponent 
+import {
+  VaExampleComponent
 } from "@department-of-veterans-affairs/component-library/dist/react-bindings";
 
 const exampleCallback = (event) => { console.log(event.detail) }
@@ -207,20 +217,13 @@ Auto-migrations may not be able to perfectly migrate every component. Before you
 Here is a list of each Web Component and the migration available:
 
 * `va-accordion`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2127527996/Manual+Component+Migration+Guide)
-* `va-additional-info`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/additionalinfo.js)
 * `va-alert`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/alertbox.js)
 * `va-breadcrumbs`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/master/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-button`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-button--primary)
-* `va-checkbox`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-checkbox--default)
-* `va-checkbox-group`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-checkbox-group--default)
 * `va-file-input`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-file-input--default)
 * `va-loading-indicator`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/loadingindicator.js)
 * `va-modal`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-omb-info`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-pagination`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-process-list`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-process-list)
 * `va-promo-banner`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-promo-banner)
-* `va-select`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-select--default)
-* `va-table`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-telephone`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
 * `va-text-input`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)

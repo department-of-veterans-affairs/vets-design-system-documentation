@@ -14,11 +14,25 @@ web-component: va-table
 
 ## Example
 
+### Default
+
 {% include storybook-preview.html height="300px" story="components-va-table--default" %}
+
+### Missing data
+
+{% include storybook-preview.html height="225px" story="components-va-table--missing-data" %}
+
+### Sortable
+
+{% include storybook-preview.html height="400px" story="components-va-table--sortable" %}
+
+### With pagination
+
+{% include storybook-preview.html height="400px" story="components-va-table--with-pagination" %}
 
 ## Usage
 
-* A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the scannability of tabular data.
+* A table can be a good solution when the user needs to analyze or compare data at-a-glance. Minimal visual styling helps improve the ability to scan tabular data.
 
 ### When to use a table
 * When presenting data that can be compared across multiple categories.

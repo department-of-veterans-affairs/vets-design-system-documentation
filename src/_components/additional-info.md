@@ -2,8 +2,9 @@
 layout: component
 title: Additional info
 intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Additional info component to situate plain language help at the point of the process where it is most relevant."
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/C28D2A57-71E4-4EDF-8FBA-87C6D858BF60
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/C28D2A57-71E4-4EDF-8FBA-87C6D858BF60/canvas
 status: use-deployed
+uswds-v3: default
 web-component: va-additional-info
 anchors:
   - anchor: Examples
@@ -18,15 +19,33 @@ anchors:
 
 ## Examples
 
+<va-alert
+    class="vads-u-margin-bottom--1"
+    close-btn-aria-label="Close notification"
+    disable-analytics="false"
+    full-width="false"
+    slim
+    status="warning"
+    uswds
+    visible="true"
+  >
+    <React.Fragment key=".0">
+      <p class="vads-u-margin-y--0">
+        The v1 and v3 variations of this component are identical as this component does not exist in the USWDS. Teams should switch to the v3 variation in preparation for global color and typography changes that the v3 variation will accept. 
+      </p>
+    </React.Fragment>
+  </va-alert>
+
 ### Default
 
-{% include storybook-preview.html story="components-va-additional-info--default" link_text="va-additional-info" %}
+{% include storybook-preview.html  story="uswds-va-additional-info--default" link_text="va-additional-info v3 default" %}
 
 ### No Border
 
 * Adding in the `disable-border` prop removes the left blue border from the expanded state of the component.
 
-{% include storybook-preview.html story="components-va-additional-info--no-border" link_text="va-additional-info" %}
+{% include storybook-preview.html story="uswds-va-additional-info--no-border" link_text="va-additional-info v3 no border" %}
+
 
 ## Usage
 
@@ -60,7 +79,6 @@ Choose the [No border](#no-border) variation when using Additional info inside o
 The following are places where Additional info can be used:
 
 * After a header (h2, h3, h4) or paragraph to provide orthogonal details or provide an answer to a common question.
-* Below a [primary button]({{ site.baseurl }}/components/button) to provide context about the action the button will take or to provide instructions in another language.
 * Within a [Process list]({{ site.baseurl }}/components/process-list) to shorten the length of content within a step.
 * Within a [Form]({{ site.baseurl }}/components/form) to provide additional help text.
 * Whenever there is a chance to enhance the understanding a user has about a particular choice.
@@ -89,11 +107,6 @@ Most VA forms have a large amount of instructional text that tries to make VA pr
     Use within a <a href="{{ site.baseurl }}/components/process-list">process list</a> in <a href="https://www.va.gov/health-care/apply/application/introduction">Apply for VA health care</a>
   </figcaption>
 </figure>
-
-#### Below a primary call-to-action
-{% include component-example.html alt="Example of this component used to provide instructions in another language" file="/images/components/additional-info/example-for-instructions.png" caption="Use below a primary call-to-action button to get instructions in an additional language in <a href=\"https://www.va.gov/health-care/how-to-apply/\">How to apply for VA health care</a>" %}
-
-
 
 {% include component-docs.html component_name=page.web-component %}
 

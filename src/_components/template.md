@@ -1,6 +1,6 @@
 ---
 layout: component
-title: Component name (singluar)
+title: Component name (singular)
 contributor: Command separated list of contributor names with (org name) following, if applicable
 draft: true
 intro-text: "This text provides the overall purpose and function of the component."

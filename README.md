@@ -1,6 +1,6 @@
 # Vets Design System Documentation
 
-This is repo for the design system documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the CSS and Javascript for the components, see the [formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools).
+This repo is for VA Design System documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the design system components, see the [component-library](https://github.com/department-of-veterans-affairs/component-library). Additionally, the [Formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools) contains sitewide VA.gov base styles and utility classes.
 
 Min specs:
 
@@ -93,3 +93,7 @@ While `vets-design-system-documentation` is running and make further updates to 
 ## Deploying
 
 Merges into `main` will automatically be deployed to `dev-design.va.gov`. Production is automatically deployed every weekday at 2pm. Deploys are executed by creating a release of vets-website via Jenkins. You can track the deployment in the Slack channel, #design-system.
+
+## Additional Testing
+
+This project is tested with BrowserStack.

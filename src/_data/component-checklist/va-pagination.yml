@@ -1,0 +1,40 @@
+maturity:
+  - name: guidance
+    score: true
+  - name: research
+    score: false
+  - name: stability
+    score: true
+  - name: adoption
+    score: true
+accessibility:
+  - name: accessible-use-of-color
+    score: true
+  - name: accessible-contrast
+    score: true
+  - name: keyboard-interactions
+    score: true
+  - name: content-zoom-tested
+    score: true
+  - name: tested-in-screen-readers
+    score: true
+code-assets:
+  - name: variations 
+    score: true
+  - name: responsive
+    score: true
+  - name: interactive-states
+    score: true
+  - name: tokens
+    score: "n/a"
+  - name: internationalization
+    score: true
+visual-assets:
+  - name: variations
+    score: true
+  - name: responsive
+    score: true
+  - name: interactive-states
+    score: true
+  - name: tokens
+    score: "n/a"
