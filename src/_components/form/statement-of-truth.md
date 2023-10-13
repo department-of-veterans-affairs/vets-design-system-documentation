@@ -40,6 +40,10 @@ anchors:
 
 * **To collect a signature.**: This component collects a digital signature from the user to certify their submission. This component is used in the [Ask users for a signature]({{ site.baseurl }}/patterns/ask-users-for/signature) pattern.
 
+### How this component works
+
+The component works by asking the user to populate the text-input field with their name. That name must match the name entered earlier into the form on a previous step. If the name does not match, an error message is returned. 
+
 ### Behavior
 
 * **When using this pattern, do not add the privacy policy checkbox at the end of the form.** The user does not need to check another checkbox for privacy policy.
