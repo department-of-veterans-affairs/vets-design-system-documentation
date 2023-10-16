@@ -72,7 +72,7 @@ The help is triggered by clicking on a uniquely styled text link with a plain la
 
 ### Choosing between variations
 
-Choose the [No border](#no-border) variation when using Additional info inside of an [Alert]({{ site.baseurl }}/components/Alert) as the border would be duplicative and unnecessary. However, consider not using this component inside of an Alert and instead linking to another page, especially if your content is long or complex.
+Choose the [No border](#no-border) variation when using Additional info inside of a bordered container as the border would be duplicative and unnecessary. Note however that the most common occurrence of this is using this component inside an Alert which is strongly discouraged. Consider instead linking to another page, especially if your content is long or complex, or reducing content.
 
 ### Placement
 
@@ -86,27 +86,6 @@ The following are places where Additional info can be used:
 ### Design principles
 
 * **Disclosure widget**: The Additional Info component is an example of a [Disclosure widget](https://en.wikipedia.org/wiki/Disclosure_widget), as is the [&lt;details&gt; HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details). Disclosure widgets are sometimes considered examples of [staged or progressive disclosure](https://www.nngroup.com/articles/progressive-disclosure/).
-
-### Instances of this component in production
-
-#### Revealing helpful background information in a form 
-
-Most VA forms have a large amount of instructional text that tries to make VA processes, or the requirements of the application process clear. Unfortunately they are frequently several pages of tiny type that the person has to read and retain. Much of it may not even be relevant to that specific person’s situation. We use the Additional info component to situate plain language help at the point of the process where it is most relevant. For example, a group of three inputs that make sense in a particular order, and the middle one has some nuance to it.
-
-<h5>Closed (default)</h5>
-{% include component-example.html alt="Example of this component in the closed state being used for contextual help." file="/images/components/additional-info/additional-info-closed.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." width="50%" %}
-
-<h5>Open</h5>
-{% include component-example.html alt="Example of this component in the open state being used for contextual help." file="/images/components/additional-info/additional-info-open.png" caption="Use of this component for contextual help to describe a medical condition if the user is unsure what to call it." width="50%" %}
-
-
-#### Within a Process list
-<figure class="site-component-example">
-  <img alt="Example of this component used within a process list component" src="{{ site.baseurl }}/images/components/additional-info/example-in-process-list.png" class="site-component-example__image" width="75%">
-  <figcaption class="site-component-example__caption">
-    Use within a <a href="{{ site.baseurl }}/components/process-list">process list</a> in <a href="https://www.va.gov/health-care/apply/application/introduction">Apply for VA health care</a>
-  </figcaption>
-</figure>
 
 {% include component-docs.html component_name=page.web-component %}
 
