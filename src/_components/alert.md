@@ -8,10 +8,10 @@ sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/5E2
 uswds-v3: default
 web-component: va-alert
 anchors:
-  - anchor: Examples - v1
-  - anchor: Examples - Properties - v1
+  - anchor: Examples - Standard - v1
+  - anchor: Examples - Standard properties - v1
   - anchor: Examples - Slim alert - v1
-  - anchor: Examples - v3
+  - anchor: Examples - Standard - v3
   - anchor: Examples - Slim alert - v3
   - anchor: Usage
   - anchor: Code usage
@@ -21,9 +21,9 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
+## Examples - Standard - v1
 
-### Informational alert
+### Informational alert (aka default)
 
 {% include storybook-preview.html story="components-va-alert--default" link_text="va-alert informational" %}
 
@@ -65,7 +65,7 @@ Used to inform the user of the benefits of signing in. Mainly, that information 
 
 This variation can be used when pre-fill is not offered on a form (which should be avoided).
 
-## Examples - Properties - v1
+## Examples - Standard properties - v1
 
 ### Heading level
 
@@ -90,7 +90,9 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 
 {% include storybook-preview.html story="components-va-alert--slim" height="352px" link_text="va-alert Slim" %}
 
-## Examples - v3
+## Examples - Standard - v3
+
+### Informational alert (aka default)
 
 {% include storybook-preview.html story="uswds-va-alert--default" link_text="va-alert informational v3 and additional variations" %}
 
@@ -140,7 +142,7 @@ When the user is required to do something in response to an alert, let them know
 
 ### Placement
 
-#### Alert
+#### Standard Alert
 
 * In most cases, the standard Alert (in all of its variations) should be placed directly below the intro text, near the top of the page.
 * When a standard Alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section.
