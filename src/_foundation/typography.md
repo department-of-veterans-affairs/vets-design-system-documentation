@@ -24,7 +24,7 @@ anchors:
 
     <div>
         <div class="usa-width-one-half">
-            <p><a href="https://fonts.google.com/specimen/Source+Sans+Pro">Source Sans Pro</a> is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
+            <p><a href="https://github.com/uswds/uswds/tree/develop/packages/uswds-core/src/assets/fonts/source-sans-pro">Source Sans Pro</a> is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
             <p>Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers
                 and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.</p>
 

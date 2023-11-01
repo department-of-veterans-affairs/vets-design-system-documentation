@@ -19,6 +19,7 @@ font-matter: yay
 @import '_layout/site-content';
 @import '_layout/content-wrappers';
 @import '_components/anchors';
+@import '_components/badge';
 @import '_components/code-snippets';
 @import '_components/component-checklist';
 @import '_components/do-dont';
@@ -36,7 +37,6 @@ font-matter: yay
 @import '_components/search-results';
 @import '_components/showcase';
 @import '_components/sidenav';
-@import '_components/status';
 
 
 .usa-skipnav {
@@ -59,14 +59,12 @@ font-matter: yay
   }
 }
 
-.fa, .fas, .fab {
+.fa, .fas {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands";
-  font-weight: 900;
 }
 
 

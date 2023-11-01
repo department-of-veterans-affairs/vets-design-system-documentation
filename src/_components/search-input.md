@@ -2,6 +2,7 @@
 layout: component
 title: Search Input
 intro-text: "The Search input component lives in the global header of VA.gov and on search results pages, and can be paired with type-ahead functionality. Type-ahead displays up to five suggested search terms in a dropdown below the Search input field while the user is typing a query. The goal of type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type."
+sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2D81882E-4732-40FD-961B-C1DECA9FCDF1/canvas
 status: use-deployed
 anchors:
   - anchor: Examples

@@ -18,11 +18,11 @@ We follow federal standards as well as VA policies for designing, maintaining, a
 To learn about these and other important policies&mdash;including [508 requirements for accessibility](https://www.va.gov/web/standards/accessibility.cfm)&mdash;and how to implement them for digital experiences you’re creating, visit the VA Web Governance site.
 
 
-## [VA Web Governance site](https://www.va.gov/web/index.cfm)
+## [VA Web Governance site](https://digital.va.gov/web-governance/)
 
 Be sure to visit regularly. We update the governance site when federal regulations, VA policies, or standards change.
 
-### [Primary VA policies](https://www.va.gov/web/standards/va-fed-policies.cfm)
+### [Primary VA policies](https://digital.va.gov/web-governance/standards-and-policies/governing-va-and-federal-policies/)
 
 __VA Directive 6102.__ The directive documents the policies for digital experiences, no matter where they’re hosted. The information in the directive applies to all organizations within VA. 
 

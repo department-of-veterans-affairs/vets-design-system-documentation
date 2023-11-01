@@ -1,3 +1,4 @@
+.site-component-badge-link,
 .site-component-status__link {
   text-decoration: none;
 
@@ -53,5 +54,31 @@ main {
 
   .site-sidenav-status--large {
     font-size: inherit;
+  }
+}
+
+.site-component-badge-link {
+  font-size: 1.5rem;
+  margin-left: units(0.5);
+  padding: 0.1rem 0.7rem;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.site-component-badge-link__img {
+  padding-right: units(0.5);
+}
+
+.site-component-badge-link--uswds {
+  background-color: $color-primary-alt-darkest;
+  color: $color-white;
+
+  &:hover,
+  &:visited {
+    color: $color-white;
+  }
+
+  &:hover {
+    background-color: $color-primary-alt;
   }
 }
