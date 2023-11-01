@@ -1,10 +1,13 @@
 var gulp = require('gulp');
+var task = 'storybook';
 
-gulp.task('storybook', function () {
+gulp.task('move-assets', function (done) {
     console.log("Moving assets from storybook to root assets directory.");
 
-    return gulp.src('storybook/assets/**/*')
-        .pipe(gulp.dest('assets/'));
+    var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/assets/*')
+        .pipe(gulp.dest('assets'));
+
+    return stream;
 });
 
-gulp.task('default', gulp.parallel('storybook'));
+gulp.task(task, gulp.parallel('move-assets'));

@@ -9,7 +9,7 @@ gulp.task('build',
       'images',
       'javascript',
       'css',
-      'storybook'
+      'storybook',
     )
 //  )
 );
