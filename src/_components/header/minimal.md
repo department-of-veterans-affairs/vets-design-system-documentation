@@ -1,11 +1,13 @@
 ---
 layout: component
-title: Header - Simplified
+title: Header - Minimal
+permalink: /components/header/header-minimal
+has-parent: /components/header/
 contributor: Ben Brasso (Agile 6), Ya-ching Tsao (CivicActions), Zach Park (Agile 6), Kristen McConnell (Ad Hoc)
-draft: true
-intro-text: "The simplified header notifies Veterans that they are on a VA website and what section they are viewing. It doesn’t contain some aspects of the standard header, such as Sign In and navigation."
-sketch-link: TODO
-web-component: header-simplified
+intro-text: A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/224585DD-02BA-49EB-91C6-DE20869AA4AC/canvas
+status: use-with-caution-candidate
+web-component: va-minimal-header
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -22,12 +24,9 @@ The simplified header notifies Veterans that they are on a VA website and what s
 
 ### Default
 
-{% include storybook-preview.html story="components-va-component-name--default" link_text=page.web-component %}
+### Minimal
 
-Current Sketch examples
-- [Sketch mobile example](https://www.sketch.com/s/a720996f-5ebb-4092-8e5d-8e3dcff50dc7/prototype/a/E50121F2-F405-46C7-9FE6-8505525F7010)
-- [Sketch desktop example](https://www.sketch.com/s/a720996f-5ebb-4092-8e5d-8e3dcff50dc7/a/L0LVoDQ)
-
+{% include storybook-preview.html story="components-va-minimal-header--default" link_text=page.web-component %}
 
 ## Usage
 
