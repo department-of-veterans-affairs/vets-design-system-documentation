@@ -9,11 +9,6 @@ sub-pages:
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Code usage
-  - anchor: Content considerations
-  - anchor: Accessibility considerations
-  - anchor: Related
-  - anchor: Component checklist
 ---
 
 {% include _site-in-this-section.html %}
@@ -60,8 +55,8 @@ The header is made up of four parts:
 
 * **BEWARE! The header is injected on all pages of VA.gov.** It is important for teams working on the header to be aware that the header is injected across different Content Management Systems at the VA. Here are some important things to keep in mind when working on the header:
   * The header is not currently a web-component supported by the Design System Team. Instead, it is a shared global React component with logic onto itself.
-  * Web components do not currently load in Microsoft TeamsSites, one of the Content Management Systems that the header is injected into. 
-  * The Sitewide team owns the design of the header while the Design System Team owns the code of the header going forward. Thus the Design System Team is currently building out the web-component and will be working with other teams to support web-components in TeamsSites.
+  * Web components do not currently load in Microsoft TeamSites, one of the Content Management Systems that the header is injected into. 
+  * The Sitewide team owns the design of the header while the Design System Team owns the code of the header going forward. Thus the Design System Team is currently building out the web-components and will be working with other teams to support web-components in TeamSites.
 
 ### Choosing between variations
 
