@@ -32,9 +32,9 @@ anchors:
 
 ### Default
 
-{% include component-example.html alt="The VA.gov header at mobile viewport width." file="/images/components/header/header-mobile.png" caption="At mobile viewport width for unauthenticated users the VA.gov header shows a sign in link and a menu button." class="x2" %}
+{% include component-example.html alt="The VA.gov header at mobile viewport width." file="/images/components/header/header-mobile.png" caption="At mobile viewport width for unauthenticated users the VA.gov header shows a sign in link and a menu button." class="x2" reverse="true" %}
 
-{% include component-example.html alt="The VA.gov header at desktop viewport width." file="/images/components/header/header-desktop.png" caption="At desktop viewport width for unauthenticated users the VA.gov header exposes search, contact us, and main menu navigation." %}
+{% include component-example.html alt="The VA.gov header at desktop viewport width." file="/images/components/header/header-desktop.png" caption="At desktop viewport width for unauthenticated users the VA.gov header exposes search, contact us, and main menu navigation." reverse="true" %}
 
 ## Usage
 
@@ -48,7 +48,7 @@ The header is made up of four parts:
 
 1. [**Banner - Official Gov**]({{ site.baseurl }}/components/banner/official-gov). This component is required for all U.S. Government web sites.
 2. **Header stripe**. This part of the header holds the VA logo, agency badge and title, sign in button, search, contact us link, and the main menu.
-3. [**Crisis Line Modal**]({{ site.baseurl }}/components/crisis-line-modal). The Veterans Crisis Line modal is a button prominently placed over the Banner - Official Gov and Header stripe. When interacted with it opens a modal window. 
+3. [**Crisis Line Modal**](https://design.va.gov/storybook/?path=/docs/components-va-crisis-line-modal--default). The Veterans Crisis Line modal is a button prominently placed over the Banner - Official Gov and Header stripe. When interacted with it opens a modal window.
 4. **Main menu**. The main menu provides top-level navigation across the whole of VA.gov 
 
 ### Behavior
@@ -60,7 +60,7 @@ The header is made up of four parts:
 
 ### Choosing between variations
 
-* **Use the [Header - Minimal]({{ site.baseurl }}/component/header/header-minimal) variation for use cases where navigating away would prevent the user from easily accomplishing their main task.** We use the minimal header variation where we want to guide the user to task completion and where navigating away from the current task would be counter-productive or potentially lose user input. For example, a form flow is a use case where we want to help the user get through filling out the form without interruption. Also, in the check-in experience we deliberately use a header with no sign in button because that button caused confusion with users and took them to sign into VA.gov when they intended to check-in to their appointment.
+* **Use the [Header - Minimal]({{ site.baseurl }}/components/header/header-minimal) variation for use cases where navigating away would prevent the user from easily accomplishing their main task.** We use the minimal header variation where we want to guide the user to task completion and where navigating away from the current task would be counter-productive or potentially lose user input. For example, a form flow is a use case where we want to help the user get through filling out the form without interruption. Also, in the check-in experience we deliberately use a header with no sign in button because that button caused confusion with users and took them to sign into VA.gov when they intended to check-in to their appointment.
 
 ### Placement
 
