@@ -166,6 +166,9 @@ Navigation:
   - name: Next
     fa-class: "fas fa-angle-double-right"
     unicode: "#xf101;"
+  - name: External link
+    fa-class: "fas fa-external-link-alt"
+    unicode: "#xf35d;"
   - name: Link - Active component
     fa-class: "fas fa-chevron-right"
     unicode: "#xf054;"
