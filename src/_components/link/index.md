@@ -102,7 +102,7 @@ Review "[Usage](#usage)" for guidance.
 
 ## Content considerations
 
-Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links/).
+Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links).
 
 ## Accessibility considerations
 
