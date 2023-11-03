@@ -13,8 +13,6 @@ anchors:
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
-  - anchor: Accessibility considerations
-  - anchor: Related
   - anchor: Component checklist
 ---
 
@@ -54,9 +52,5 @@ anchors:
   * Use a plain language description of the benefit or service.
   * Use a maximum of 52 characters.
   * The form subtitle should not have "Equal to" before the full title of the PDF form.
-
-## Accessibility considerations
-
-* The form title should take on the banner landmark for assistive technologies. A banner landmark role overwrites the implicit ARIA role for the container element upon which it is applied. It should be reserved for globally repeating sitewide content that is generally located at the top of every page.
 
 {% include _component-checklist.html component_name=page.web-component %}
