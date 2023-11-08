@@ -5,7 +5,7 @@ permalink: /components/link/deep-content
 has-parent: /components/link/
 github-title: va-copy-deep-link
 into-text: "When a content page is very long with many subsections, the \"Link - Deep content\" icon can help users easily link people to deep content."
-status: use-with-caution-candidate
+status: dont-use-deprecated
 contributors: Jennifer Lee
 anchors:
   - anchor: Examples
@@ -15,6 +15,21 @@ anchors:
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+>
+  <h2 slot="headline">
+    The Link - Deep content component is now deprecated. 
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      This component was not widely adopted, has no research backing it, and thus has been deprecated.
+    </p>
+  </div>
+</va-alert>
 
 ## Examples
 
