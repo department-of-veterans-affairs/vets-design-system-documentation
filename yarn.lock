@@ -9,13 +9,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@department-of-veterans-affairs/component-library@^23.0.0":
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-23.0.0.tgz#ae671d58d58b34870d7d5ed997b5d9e10939b0ac"
-  integrity sha512-/uQUoFEKuif6/xnNTWUGhU67vpirlbUbSMfPp/8xB9yiN8EBUy4WXav8kfLpWTVpBT1IdN6NeykfE64AGvwFnA==
+"@department-of-veterans-affairs/component-library@^31.0.1":
+  version "31.0.1"
+  resolved "http://localhost:4873/@department-of-veterans-affairs%2fcomponent-library/-/component-library-31.0.1.tgz#9382356d33481fad4e544b506f85b863e17c9c4c"
+  integrity sha512-Xh8i8PQYf7cA84kzdXJnOBZazlbqYD6Tdzmxv3/wzTU09d3jA3EOpbowuOXkA0QYoF4fRvJBTkaDl+2FZF/Now==
   dependencies:
-    "@department-of-veterans-affairs/react-components" "18.0.0"
-    "@department-of-veterans-affairs/web-components" "4.45.18"
+    "@department-of-veterans-affairs/react-components" "25.0.0"
+    "@department-of-veterans-affairs/web-components" "4.47.1"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
@@ -31,10 +31,10 @@
     element-closest "^3.0.1"
     foundation-sites "5"
 
-"@department-of-veterans-affairs/react-components@18.0.0":
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/react-components/-/react-components-18.0.0.tgz#001100892ab8391d65c4b15da1d466d9cebc21b8"
-  integrity sha512-gOnyxqLdPJQhIodkd62dsB+1xL4TFdN2Kmq0bxbndW8m4tzls9SHFTEaT76QzKr463YV7+A764iW901EuCu+ZA==
+"@department-of-veterans-affairs/react-components@25.0.0":
+  version "25.0.0"
+  resolved "http://localhost:4873/@department-of-veterans-affairs%2freact-components/-/react-components-25.0.0.tgz#9c5330869c7abdebe99cac5476a7f469bd920fd8"
+  integrity sha512-xArlOaMd5fPuEpc4b/g7gJfJoObG2JkOscH2Adi6m6gauXbtGXbQGEu3amKVsZEvpM5biy3Ga/aL3SA3DMO9iw==
   dependencies:
     classnames "^2.2.6"
     prop-types "^15.6.2"
@@ -42,10 +42,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@4.45.18":
-  version "4.45.18"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-4.45.18.tgz#ae244df6b27e610093099dded1d3f83a0c06271e"
-  integrity sha512-y1O9M3sFFYiqLK/UXWibnfm3oGELnGvCMA9iBTGOhPDx6uGO3N3Kn10ZJ23ebXqomDFFbReCD8aDFzHk8PVaKw==
+"@department-of-veterans-affairs/web-components@4.47.1":
+  version "4.47.1"
+  resolved "http://localhost:4873/@department-of-veterans-affairs%2fweb-components/-/web-components-4.47.1.tgz#57f2edbaa8f2ac711480b5f7163777379eb6aafc"
+  integrity sha512-zr38F6m1AyI8DZIDhXc4/cu2qLFP5UkNlMMbqEjg5PrL6HifQifvg8UJ9pwqI7Ztyjp31qq9VxdfHNfBoexnDg==
   dependencies:
     "@stencil/core" "^2.19.2"
     aria-hidden "^1.1.3"
