@@ -60,43 +60,72 @@ anchors:
 {% endfor %}
 
 <h2 id="accessibility-considerations">Accessibility considerations</h2>
+<p>
+  Icon usage typically falls into two categories, decorative and semantic.
+</p>
 <ul>
-  <li>When using a decorative icon, it shouldn’t be read out to screen-reader users because it doesn’t add to their understanding. Icons should be accompanied with text.</li>
-  <li>All interactive accessible icons must be keyboard accessible and touch accessible as well as clickable via a mouse.</li>
+  <li><strong>Decorative icons</strong> are icons that are only used for visual reinforcement. If these were removed from the page, users would still be able to
+  understand and use the page.</li>
+  <li><strong>Semantic icons</strong> are icons that convey meaning, rather than only being decorative. This includes icons without text next to them that are
+  used as interactive elements such as buttons.</li>
 </ul>
 
-<h3 id="when-to-use-roleimg">When to use <code>role="img"</code></h3>
+<h3 id="decorative-icons">Using decorative icons</h3>
 <p>
-  If an icon is being used alone (without support text), it should have a `role="img"` AND appropriate ARIA markup OR screen reader only descriptive text.
+  If your icons are only decorative, manually add an <code>aria-hidden</code> attribute to the icon for accessibility.
 </p>
 
-<h3 id="when-to-use-rolepresentation">When to use</h3>
+<h3 id="semantic-icons">Using semantic icons</h3>
 <p>
-  If an icon is being used with visual (and assistive device) text, it should have `role="presentation"`.
+  If your icons have semantic meaning, you have to manually add a few things to make it accessible. There are two methods, non-interactive and interactive, so choose the one that suits your use case.
 </p>
 
-<h3 id="examples">Examples</h3>
+<h4 id="non-interactive">Non-interactive icons</h4>
 <p>
-  Here are a few examples of icons being used in different contexts:
+  Ideally, any icon would also have a visible label associated with it. But if you must use an icon without a visible label, follow the guidance below to make it accessible.
+</p>
+<p>
+  For icons used on non-focusable elements, manually add the following for accessibility:
+</p>
+<ul>
+  <li><code>aria-hidden="true"</code> attribute.</li>
+  <li>A text-alternative inside of a <code>span</code> tag. Include a CSS class to visually hide this text, while keeping it visible to assistive technology.</li>
+  <li><code>title</code> attribute on the icon to provide a tooltip for sighted mouse users.</li>
+</ul>
+
+<h5>Non-interactive example</h5>
+<pre>
+  <code class="language-html">
+&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt; 
+&lt;span class="sr-only"/&gt;Time to complete:&lt;/span&gt;
+&lt;span&gt;4 minutes&lt;/span&gt;
+  </code>
+</pre>
+
+<h4 id="interactive">Interactive icons</h4>
+<p>
+  If an icon is a focusable interactive element, you do not need to add visually hidden alternative text as described
+  above. In this case, an <code>aria-label</code> with a text description on the interactive element is sufficient. A <span>title</span> attribute can also be added to provide a tooltip for sighted mouse users.
 </p>
 
-<h4 id="icon-being-used-alone">Icon being used alone</h4>
-
-<pre><code class="language-html">&lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} /&gt;</code></pre>
-
-<h4 id="icon-being-used-with-supporting-text">
-  Icon being used with supporting text
-</h4>
-
-<pre><code class="language-html">&lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} /&gt; Help </code></pre>
-
-<h4 id="icon-being-used-alone-inside-an-a-tag">Icon being used alone inside an <code>&lt;a&gt;</code> tag</h4>
-
-<pre><code class="language-html">&lt;a href="#"&gt; &lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} /&gt; &lt;/a&gt;</code></pre>
-
-<h4 id="icon-being-used-with-supporting-text-inside-an-a-tag">
-  icon being used with supporting text inside an <code>&lt;a&gt;</code> tag
-</h4>
-
-<pre><code class="language-html">&lt;a href="#"&gt; &lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} /&gt; Help &lt;/a&gt;</code></pre>
-
+<h5>Interactive example</h5>
+<p>
+  In this example, the link element contains the alternative text, the icon inside of it is decorative.
+</p>
+<pre>
+  <code class="language-html">
+&lt;a href="#" aria-label="View inbox, you have unread messages"&gt;
+  View inbox &lt;i aria-hidden="true" class="fas fa-circle"&gt;&lt;/i&gt;
+&lt;/a&gt;
+  </code>
+</pre>
+<p>
+  As stated earlier, ideally, the following example would have a visible text label. Use this example with caution.
+</p>
+<pre>
+  <code class="language-html">
+&lt;a href="#" aria-label="View calendar"&gt;
+  &lt;i aria-hidden="true" class="fas fa-calendar" title="View calendar"&gt;&lt;/i&gt;
+&lt;/a&gt;
+  </code>
+</pre>
