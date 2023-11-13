@@ -4,7 +4,7 @@ title: Notification
 contributor: Angela Agosto, Allison Lu
 intro-text: Provides a visually distinct card in order to surface time-sensitive updates and action items.
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/D8882D33-99F3-4503-B4E1-D085DAF9C507/canvas
-status: use-with-caution-available
+status: dont-use-deprecated
 web-component: va-notification
 anchors:
   - anchor: Examples
@@ -15,6 +15,21 @@ anchors:
   - anchor: Related
   - anchor: Component checklist
 ---
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+>
+  <h2 slot="headline">
+    The Notification component is now deprecated. 
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      Teams are continuing to explore solutions to bring attention to items that have changed in a view. If you wish to use this component, please speak with the Design System Team.
+    </p>
+  </div>
+</va-alert>
 
 ## Examples
 
