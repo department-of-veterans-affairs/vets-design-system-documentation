@@ -58,7 +58,7 @@ anchors:
 
 ### Crisis Line Modal
 
-{% include storybook-preview.html story="components-va-modal--crisis-line-modal" link_text="va-modal" %}
+{% include storybook-preview.html story="components-va-crisis-line-modal--default" link_text="va-crisis-line-modal" %}
 
 ### Large
 
