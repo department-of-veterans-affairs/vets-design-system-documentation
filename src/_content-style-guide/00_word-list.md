@@ -312,6 +312,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 ### G
 
+**gender diverse**
+: No hyphen.
+
 **GI**
 : No periods (*not* G.I.).
 
