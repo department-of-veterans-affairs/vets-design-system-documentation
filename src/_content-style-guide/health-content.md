@@ -95,7 +95,7 @@ Posttraumatic osteoarthritis
 
 ### 3. Avoid abstract language—and focus on the benefit to the reader
 
-__Example 1__
+#### Example 1
 
 When directing Veterans to crisis counseling, frame the language around the specific benefit (talking to someone right away for support). By reframing the language, we don't force the Veteran to question if they fit into the definition of being "in crisis."
 
@@ -131,7 +131,7 @@ Get help from the Veterans Crisis Line.
 
 
 
-__Example 2__
+#### Example 2
 
 When writing health-related instructions, be specific and emphasize the benefit of following the instructions.
 
