@@ -39,7 +39,7 @@ At the foundation of all of these recommendations is to apply them in a way that
  
  Each page needs a unique title tag and meta description. Don't use the same title tags and meta descriptions on multiple pages. Duplicate title tags and descriptions are bad for SEO and confuse users on search results.
 
-__Why they're important__
+### Why they're important
 
 - Title tags and descriptions help people identify what the page is about in search results and decide whether to click on your page from the results.
 - Having a consistent standard for title tags and descriptions also helps ensure that our search "branding" looks consistent and unified in search results.
@@ -56,19 +56,19 @@ Title tags are HTML elements that are displayed in browsers and on search engine
 - Format: H1 Page Title \| Veterans Affairs
 - Use initial caps for title tags
 
-__Additional guidance__
+#### Additional guidance
 
 For benefit hub pages, we keep title tags to 70 characters maximum (with spaces), so it displays best in organic search results. If the H1 is too long, we truncate it in the meta title tag to fit while still including "\| Veterans Affairs" at the end. Note: We don't truncate the H1 in title tags for content types that don't have a page title character limit like news releases and resources and support articles.
 
 
 
 
-__Example__
+#### Example
 
 ![screenshot of browser title example]({{site.baseurl}}/images/browser-title-example-va-prescription-refill-and-tracking.png)
 
 
-__Exception—VA medical center websites__
+#### Exception—VA medical center websites
 
 For VA medical centers (VAMC), we format the title tag a little differently. Because it's important to call out the region and because many Veterans search for VA hospitals by the city or region, it's important to distinguish the regional nature of the page from the national content on VA.gov.
 
