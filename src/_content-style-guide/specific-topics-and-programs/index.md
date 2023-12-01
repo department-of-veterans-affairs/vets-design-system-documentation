@@ -49,4 +49,4 @@ Entries coming soon:
 - Messaging 
 - Prescriptions 
 
-If you want to suggest a dedicated entry for us to consider, email us at vawebdesign@va.gov. 
+If you want to suggest a dedicated entry for us to consider, email us at <a href=“mailto:vawebdesign@va.gov”>vawebdesign@va.gov</a>. 
