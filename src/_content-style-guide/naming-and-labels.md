@@ -7,7 +7,7 @@ title: Naming and labels
 
 Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos]({{ site.baseurl }}/foundation/logos), we also don't create "brand clutter" with unnecessary branding. 
 
-**Don't create new brands**
+### Don't create new brands
 
 Branded names and labels: 
 -	Force internal jargon on customers. 
@@ -79,7 +79,7 @@ Many government organizations rely on acronyms as shorthand in internal communic
 
 Don’t create new [acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) in Veteran-facing content that aren't commonly used and understood by them already. When in doubt, refer to [Merriam-Webster](https://www.merriam-webster.com) or AP Style. Likewise, don't use internal acronyms in Veteran-facing content like they're brand names.
 
-**Avoid “alphabet soup” syndrome**
+### Avoid “alphabet soup” syndrome
 
 Internal acronyms used like branded names are:
 - Hard to understand by customers and people outside your business or team.
