@@ -1,0 +1,38 @@
+﻿Name,type,vads-name,uswds-design-token,final-hex-value,vads-alias,description
+vads-color-aqua,Primitive,vads-color-aqua,uswds-system-color-cyan-30v,#00bde3,vads-color-primary-alt,Use of this sass variable will move to vads-color-primary-alt and then be retired.
+vads-color-aqua-dark,Primitive,vads-color-aqua-dark,uswds-system-color-cyan-40v,#009ec1,,Use of this sass variable will move to vads-color-primary-alt-dark and then be retired.
+vads-color-aqua-lightest,Primitive,vads-color-aqua-lightest,uswds-system-color-blue-cool-5v,#e1f3f8,vads-color-primary-alt-lightest,This will move to vads-color-primary-alt-lightest and then be retired.
+vads-color-black,Primitive,vads-color-black,,#000000,,
+vads-color-blue,Primitive,vads-color-blue,uswds-system-color-blue-60v,#005ea2,vads-color-primary,This is identical to vads-color-primary and instances should be converted and removed.
+vads-color-blue-cool,Primitive,vads-color-blue-cool,uswds-system-color-blue-warm-60,#345D96,,
+vads-color-blue-cool-light,Primitive,vads-color-blue-cool-light,uswds-system-color-blue-warm-50,#345D96,,
+vads-color-blue-darkest,Primitive,vads-color-blue-darkest,uswds-system-color-blue-warm-80v,#162e51,vads-color-primary-darkest,Identical to vads-color-primary-darkest and should be converted and removed.
+vads-color-blue-light,Primitive,vads-color-blue-light,uswds-system-color-blue-60v,#005ea2,vads-color-primary,This is identical to vads-color-primary and instances should be converted and removed.
+vads-color-gold,Primitive,vads-color-gold,uswds-system-color-gold-20v,#ffbe2e,,
+vads-color-gold-darker,Primitive,vads-color-gold-darker,uswds-system-color-gold-50v,#936f38,,
+vads-color-gold-light,Primitive,vads-color-gold-light,uswds-system-color-yellow-20v,#face00,,
+vads-color-gold-lighter,Primitive,vads-color-gold-lighter,uswds-system-color-gold-10v,#ffe396,,
+vads-color-gold-lightest,Primitive,vads-color-gold-lightest,uswds-system-color-gold-5v,#fef0c8,,
+vads-color-gray,Primitive,vads-color-gray,uswds-system-color-gray-cool-60,#565c65,,
+vads-color-gray-cool-light,Primitive,vads-color-gray-cool-light,uswds-system-color-blue-warm-10,#e1e7f1,,
+vads-color-gray-dark,Primitive,vads-color-gray-dark,uswds-system-color-gray-cool-70,#3d4551,,
+vads-color-gray-light,Primitive,vads-color-gray-light,uswds-system-color-gray-cool-30,#a9aeb1,,
+vads-color-gray-light-alt,Primitive,vads-color-gray-light-alt,uswds-system-color-gray-cool-5,#edeff0,,
+vads-color-gray-lighter,Primitive,vads-color-gray-lighter,uswds-system-color-gray-cool-10,#dfe1e2,,
+vads-color-gray-lightest,Primitive,vads-color-gray-lightest,uswds-system-color-gray-5,#f0f0f0,,
+vads-color-gray-medium,Primitive,vads-color-gray-medium,uswds-system-color-gray-50,#757575,,
+vads-color-gray-warm-dark,Primitive,vads-color-gray-warm-dark,uswds-system-color-gray-warm-70,#454540,,
+vads-color-gray-warm-light,Primitive,vads-color-gray-warm-light,uswds-system-color-gray-warm-10,#e6e6e2,,
+vads-color-green,Primitive,vads-color-green,uswds-system-color-green-cool-50v,#008817,,
+vads-color-green-dark,Primitive,vads-color-green-dark,uswds-system-color-green-cool-60v,#216e1f,,
+vads-color-green-darker,Primitive,vads-color-green-darker,uswds-system-color-green-cool-70v,#154c21,,
+vads-color-green-light,Primitive,vads-color-green-light,uswds-system-color-green-cool-40,#5e9f69,,
+vads-color-green-lighter,Primitive,vads-color-green-lighter,uswds-system-color-green-cool-20,#b4d0b9,,
+vads-color-green-lightest,Primitive,vads-color-green-lightest,uswds-system-color-green-cool-5,#ecf3ec,,
+vads-color-orange,Primitive,vads-color-orange,uswds-system-color-orange-40,#dd7533,,This will likely be replaced by semantic tokens in future.
+vads-color-purple,Primitive,vads-color-purple,uswds-system-color-violet-70v,#54278f,,Identical to vads-color-link-visited and thus will be removed.
+vads-color-red,Primitive,vads-color-red,uswds-system-color-red-50,#d83933,,Identical to vads-color-secondary and instances should be converted and removed.
+vads-color-red-dark,Primitive,vads-color-red-dark,uswds-system-color-red-60v,#b50909,,Identical to vads-color-secondary-dark and any instances should be converted and removed.
+vads-color-red-light,Primitive,vads-color-red-light,uswds-system-color-red-30,#f2938c,,Identical to vads-color-secondary-light and any instances (I couldn't find any)  should be converted and removed.
+vads-color-red-lightest,Primitive,vads-color-red-lightest,uswds-system-color-red-cool-10v,#f8dfe2,,Identical to vads-color-secondary-lightest and instances should be converted and removed.
+vads-color-white,Primitive,vads-color-white,,#ffffff,,
