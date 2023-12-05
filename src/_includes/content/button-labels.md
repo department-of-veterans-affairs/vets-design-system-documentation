@@ -43,10 +43,7 @@ Complaint filing
 </div>
 
 - Always take users to the right level of access for the CTA.
-
-  ​		**Like this:** “Explore VA health care” button should take you to a general health care benefits landing page like va.gov/health-care.
-
-  ​		**Like this:** “Apply for VA health care” button should take you to an application page like va.gov/health-care/apply.
-
-  ​		**Like this:** “Compare GI Bill benefits” button should take you right to the comparison tool, va.gov/gi-bill-comparison-tool.
+  -   **Like this:** “Explore VA health care” button should take you to a general health care benefits landing page like [VA health care](https://www.va.gov/health-care).
+  -   **Like this:** “Apply for VA health care” button should take you to an application page like [Apply for VA healthcare](https://www.va.gov/health-care/apply/application/introduction).
+  -   **Like this:** “Compare GI Bill benefits” button should take you right to the [GI Bill® Comparison Tool](https://www.va.gov/education/gi-bill-comparison-tool/).
 
