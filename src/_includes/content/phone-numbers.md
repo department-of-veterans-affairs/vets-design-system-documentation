@@ -11,6 +11,8 @@ Using the [Telephone component]({{ site.baseurl }}/components/telephone) will ap
 * Include an aria label using spaces between the digits and periods between sections in order to have screen readers read the phone number one digit at a time like a phone number, rather than as thousands or hundreds. For example:
   * `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>`
   * `<a href="tel:711" aria-label="TTY. 7 1 1.">TTY: 711</a>`. 
+* If the phone number has an extension, use this format for the aria label:
+  * `<a href="tel:5551231234,4" aria-label="5 5 5. 1 2 3. 1 2 3 4. extension. 4.">555-123-1234, ext. 4</a> (<a href="tel:711" aria-label="TTY. 7 1 1.">TTY: 711</a>)`
 
 If for some reason you cannot use the Telephone component, you are responsible for meeting the same formatting and accessibility guidance when creating links to phone numbers. 
 
