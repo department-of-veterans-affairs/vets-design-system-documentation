@@ -2322,7 +2322,7 @@
         },
         "vads-color-blue-darkest": {
           "type": "color",
-          "value": "{vads-semantic.color.primary.vads-color-primary-darkest}",
+          "value": "{vads-semantic.color.primary.vads-color-primary-darker}",
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "mode": "Value",
@@ -5734,7 +5734,7 @@
             }
           }
         },
-        "vads-color-primary-darker": {
+        "vads-color-primary-dark": {
           "type": "color",
           "value": "{uswds.colors.blue.warm-vivid.uswds-system-color-blue-warm-vivid-70}",
           "extensions": {
@@ -5749,7 +5749,7 @@
             }
           }
         },
-        "vads-color-primary-darkest": {
+        "vads-color-primary-darker": {
           "type": "color",
           "value": "{uswds.colors.blue.warm-vivid.uswds-system-color-blue-warm-vivid-80}",
           "extensions": {
