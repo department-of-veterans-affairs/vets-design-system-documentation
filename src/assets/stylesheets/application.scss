@@ -11,6 +11,9 @@ font-matter: yay
 // Other Formation CSS we need for this site.
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-crisis-line';
 
+// Override Formation color variables 
+@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss';
+
 // Site CSS
 @import '_settings/variables';
 @import '_helpers/clip';
