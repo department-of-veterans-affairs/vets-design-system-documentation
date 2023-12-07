@@ -1,13 +1,18 @@
 
-Using the [Telephone component]({{ site.baseurl }}/components/telephone) will apply the following formatting and accessibility guidance:
+Using the [Telephone component]({{ site.baseurl }}/components/telephone) will apply the following formatting and accessibility guidance.
+
+## Formatting 
 
 * Use hyphens between numbers, and don't use parentheses to set off the area code: 212-123-1234.
 * Use +1 only when the information is specifically addressing Veterans or people who are living outside the U.S.: +1-201-123-1234.
 * For phone numbers with an extension, use ext. at the end: 202-123-1234, ext. 9.
 * Always include days and hours of operation when listing a phone number.
-* Use "select" to indicate the menu option after dialing a phone number.
+* Use "select" to indicate the menu option after dialing a phone number. Example: Call 988 and select 1.
 * Use a verb ahead of the number. Use "call" or "call us at..." for phone numbers and "text" or "text us at" for text numbers.
-* Hyperlink all phone numbers, including TTY numbers. It is not a requirement to link the "call" or "text" verb that precedes the number. We do however include "TTY" in the link and aria-label to make it clear that it's specifically for TTY so that users who need the service see it and so those who do not do not unintentionally call a TTY number.
+* When a phone number has (TTY: 711) included, it should be formatted in parenthesis directly following the phone number. Example: 866-440-1238 (TTY: 711) or 866-440-1238, ext. 4 (TTY: 711)
+
+## Links and aria labels
+* Hyperlink all phone numbers, including TTY numbers. It is not a requirement to link the "call" or "text" verb that precedes the number. We do however include "TTY" in the link and aria label to make it clear that it's specifically for TTY so that users who need the service see it and so those who do not do not unintentionally call a TTY number.
 * Include an aria label using spaces between the digits and periods between sections in order to have screen readers read the phone number one digit at a time like a phone number, rather than as thousands or hundreds. For example:
   * `<a href="tel:+18008271000" aria-label="8 0 0. 8 2 7. 1 0 0 0.">800-827-1000</a>`
   * `<a href="tel:711" aria-label="TTY. 7 1 1.">TTY: 711</a>`. 
