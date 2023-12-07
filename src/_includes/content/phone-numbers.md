@@ -16,7 +16,7 @@ Using the [Telephone component]({{ site.baseurl }}/components/telephone) will ap
 
 If for some reason you cannot use the Telephone component, you are responsible for meeting the same formatting and accessibility guidance when creating links to phone numbers. 
 
-#### Don't use vanity phone numbers in body copy
+## Don't use vanity phone numbers in body copy
 We don’t use vanity phone numbers in body copy, as it adds visual noise and is not helpful to screen readers. We use and hyperlink only the numeric phone number in body copy.
 
 - **Exception:** In marketing or promotional messaging, such as the right rail promo component, we discourage but make an exception for vanity phone numbers. In marketing or promotional components, use the format: 877-222-VETS (8387) and hyperlink the complete number including the parenthetical.
