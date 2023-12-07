@@ -198,7 +198,7 @@ Notifications:
   - name: Informational - not requiring user action
     fa-class: "fas fa-info-circle"
     unicode: "#xf05a;"
-    color: "#0071bb"
+    color: "#005ea2"
 
 Profile:
   - name: Appointment
