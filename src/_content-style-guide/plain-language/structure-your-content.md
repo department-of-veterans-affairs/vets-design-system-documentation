@@ -10,7 +10,7 @@ Here are some examples.
 
 ## Headers
 
-{% include component-example.html alt="An example of using headers." file="/images/content-style-guide/plain-language/structure-your-content-headers.png" caption="Headers provide the necessary structure to the content of the page." width="60%" %}
+{% include component-example.html alt="An example of using headers." file="/images/content-style-guide/plain-language/structure-your-content-headers.png" caption="Headers provide the necessary structure to the content of the page. The page title is H1, the first sub-heading is H2, and sub-headings within that section are H3." width="60%" %}
 
 ## Accordions
 

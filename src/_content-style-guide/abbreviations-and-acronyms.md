@@ -22,7 +22,7 @@ For acronyms, use the spelled-out term on first mention in body copy with the ac
 - **On first mention:** Servicemembers' Group Life Insurance Traumatic Injury Protection (TSGLI)
 - **After first mention:** TSGLI 
 
-__Exceptions for page titles, headers, and meta title tags__
+### Exceptions for page titles, headers, and meta title tags
 
 If the spelled-out term is too long for easy scanning in the page title (H1) or to fit within the character count for [meta title tags]({{ site.baseurl }}/content-style-guide/seo), it's OK to use the acronym by itself for the H1 and meta title tag. Just define it in the first mention within body copy, using the spelled-out term with the acronym in parentheses. 
 

@@ -7,12 +7,12 @@ title: Naming and labels
 
 Most tools, products, benefits, offices, and programs don’t need a brand name or branded label. In line with the [VA Graphics Standards against custom logos]({{ site.baseurl }}/foundation/logos), we also don't create "brand clutter" with unnecessary branding. 
 
-**Don't create new brands**
+## Don't create new brands
 
-Branded names and labels: 
--	Force internal jargon on customers. 
--	Spawn unnecessary sub-brands and create confusion for Veterans. 
--	Are expensive and time-consuming to market in order to educate customers on what they mean. 
+We limit branded names and labels for these reasons: 
+-	They force internal jargon on customers. 
+-	They spawn unnecessary sub-brands and create confusion for Veterans. 
+-	They're expensive and time-consuming to market in order to educate customers on what they mean. 
 
 Check the [word list]({{ site.baseurl }}/content-style-guide/word-list) for tools, benefits, and programs that are OK to capitalize.
 
@@ -79,12 +79,12 @@ Many government organizations rely on acronyms as shorthand in internal communic
 
 Don’t create new [acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) in Veteran-facing content that aren't commonly used and understood by them already. When in doubt, refer to [Merriam-Webster](https://www.merriam-webster.com) or AP Style. Likewise, don't use internal acronyms in Veteran-facing content like they're brand names.
 
-**Avoid “alphabet soup” syndrome**
+### Avoid “alphabet soup” syndrome
 
-Internal acronyms used like branded names are:
-- Hard to understand by customers and people outside your business or team.
--	Sound like Government, not human.
--	Don’t align with our [content principles]({{ site.baseurl }}/content-style-guide/content-principles).
+Internal acronyms, used like branded names, can cause problems for these reasons:
+- They're hard to understand by customers and people outside your business or team.
+-	They sound like Government, not human.
+-	They don’t align with our [content principles]({{ site.baseurl }}/content-style-guide/content-principles).
 
 
 <div class="do-dont">

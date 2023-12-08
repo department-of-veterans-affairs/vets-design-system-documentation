@@ -64,7 +64,7 @@ Apply for a United States burial flag to place over a casket or coffin, or place
 * In general, put a link on a separate line to help it stand out. Exception: Putting a link at the end of a sentence is OK if space is limited, like intro copy or alerts.
 
 {% capture example_like_this_1 %}
-__Put links on their own line__
+**Put links on their own line**
 <ul>
   <li>Trouble breathing</li>
   <li>Persistent (continuing) pain or pressure in the chest</li>
@@ -74,7 +74,7 @@ __Put links on their own line__
 {% endcapture %}
 
 {% capture example_not_this_1 %}
-__Avoid linking each item in a list to the same destination__
+**Avoid linking each item in a list to the same destination**
 <ul>
   <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Trouble breathing</a></li>
   <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Persistent (continuing) pain or pressure in the chest</a></li>
