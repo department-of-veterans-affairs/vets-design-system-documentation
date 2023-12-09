@@ -18,7 +18,7 @@ Dates, times, phone numbers, and addresses often appear together, so we've put g
 
 Spell out dates in body copy, using the full construction: March 31, 1989. Or January 2, 1980. In general, spell out days of the week and months also in body copy.
 
-**Exceptions:**
+### Exceptions
 
 - Use 9/11 when it's part of a program name such as the Post-9/11 GI Bill.
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
@@ -27,7 +27,7 @@ Spell out dates in body copy, using the full construction: March 31, 1989. Or Ja
   - In application form fields, we often use the construction: mm/dd/yyyy
     <br>
 
-**Years**
+### Years
 
 When referencing decades or periods of years, don't use an apostrophe with the "s."
 

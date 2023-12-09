@@ -77,17 +77,17 @@ We are available 8:00 a.m. to 6:00 p.m. ET, Monday through Friday.
 
 ## Em and en dashes, hyphens
 
-__Em dash__ 
+### Em dash 
 
 Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to overuse them. We don't use a space on either side of the em dash. 
 
 - **Like this:** You may be eligible if you have an illness or injury caused&mdash;or made worse&mdash;by your time in service.
 
-__En dash__ 
+### En dash 
 
 Avoid using en dashes, since screen readers don't consistently announce them. 
 
-__Hyphens__ 
+### Hyphens 
 
 This is the short, single dash. We use it to connect words that modify a noun or in names. Hyphens are also OK to indicate ranges when space is limited. However, in normal body copy, use "to" to indicate ranges (like 2021 to 2022). We don't use a space on either side of the hyphen.
 - **Like this:** active-duty service member; VA-related claim; Merriam-Webster 

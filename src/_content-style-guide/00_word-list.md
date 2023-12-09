@@ -308,9 +308,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
 **Fourth Mission**
-: Capitalize.  
+: Capitalize.
 
 ### G
+
+**gender diverse**
+: No hyphen.
 
 **GI**
 : No periods (*not* G.I.).

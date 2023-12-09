@@ -14,19 +14,19 @@ primary:
   - name: gibill-accent
     hex: fff1d2
   - name: primary
-    hex: 0071bb
+    hex: 005ea2
+  - name: primary-dark
+    hex: 1a4480
   - name: primary-darker
-    hex: 003e73
-  - name: primary-darkest
-    hex: 112e51
+    hex: 162e51
   - name: primary-alt
-    hex: 02bfe7
+    hex: 00bde3
   - name: primary-alt-dark
-    hex: 00a6d2
+    hex: 009ec1
   - name: primary-alt-darkest
-    hex: 046b99
+    hex: 07648d
   - name: primary-alt-light
-    hex: 9bdaf1
+    hex: 97d4ea
   - name: primary-alt-lightest
     hex: e1f3f8
   - name: secondary
@@ -110,9 +110,9 @@ hub:
   - name: hub-burials
     hex: 357ab2
   - name: hub-family-member
-    hex: 003e73
+    hex: 1a4480
   - name: hub-service-member
-    hex: 003e73
+    hex: 1a4480
 
 
 
