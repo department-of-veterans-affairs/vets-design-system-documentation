@@ -9,10 +9,10 @@
   <tbody>
     {% for item in include.spacing %}
     <tr>
-      <th scope="row"><code class="code">{{ item.token }}</code></th>
-      <td>{{ item.pixels }}</td>
+      <th scope="row"><code class="code">{{ item.vads-name }}</code></th>
+      <td>{{ item.value-from-uswds-design-token }}</td>
       <td>
-        <div class="vads-u-background-color--primary" style="height: {{ item.pixels }}">
+        <div class="vads-u-background-color--primary" style="height: {{ item.value-from-uswds-design-token }}">
         </div>
       </td>
     </tr>

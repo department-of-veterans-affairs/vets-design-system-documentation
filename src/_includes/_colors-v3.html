@@ -1,6 +1,8 @@
 <div class="vads-l-col--12 vads-u-margin-bottom--5">
   <div class="vads-u-display--flex">
-    <div class="vads-u-border--1px vads-u-border-color--gray-lighter vads-u-padding--5 vads-u-background-color--{{ include.name | remove: 'vads-color-' }} vads-u-margin-right--1 medium-screen:vads-u-flex--2"></div>
+    <div class="vads-u-border--1px vads-u-border-color--gray-lighter vads-u-padding--5 vads-u-margin-right--1 medium-screen:vads-u-flex--2" style="background-color: {{ include.hex }}"></div>
+    
+    <!-- div class="vads-u-border--1px vads-u-border-color--gray-lighter vads-u-padding--5 vads-u-background-color--{{ include.name | remove: 'vads-color-' }} vads-u-margin-right--1 medium-screen:vads-u-flex--2"></div -->
     <div class="vads-u-width--full vads-u-flex--2">
       <div class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter">
         <strong>{{ include.name }}</strong>
