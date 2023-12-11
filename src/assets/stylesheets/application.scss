@@ -111,3 +111,17 @@ font-matter: yay
   background: #16171F;
 }
 
+/*
+For the time being, we're manually overriding these two classes that get imported from Formation
+because they get dynamically generated in color-palette-example.html. This is necessary because 
+Formation still relies on the older --primary-darker/darkest naming convention for the sake of 
+backwards compatibility. When Formation has been fully deprecated and we are on new utility classes, 
+these can be removed along with an update to how classes are generated in color-palette-example.html. 
+*/
+.vads-u-background-color--primary-dark {
+  background-color: $color-primary-dark !important;
+}
+
+.vads-u-background-color--primary-darker {
+  background-color: $color-primary-darker !important;
+}
