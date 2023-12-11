@@ -1,20 +1,31 @@
 ﻿Name,type,vads-name,uswds-design-token,final-hex-value,vads-alias,description
 vads-color-action-focus-on-light,Semantic,vads-color-action-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus outline color
 vads-color-base,Semantic,vads-color-base,uswds-system-color-gray-90,#1b1b1b,,
-vads-color-base-dark,Semantic,vads-color-base-dark,uswds-system-color-gray-cool-60,#565c65,,
-vads-color-base-darker,Semantic,vads-color-base-darker,uswds-system-color-gray-cool-70,#3d4551,,
-vads-color-base-darkest,Semantic,vads-color-base-darkest,uswds-system-color-gray-90,#1b1b1b,vads-color-ink,Also vads-color-ink
-vads-color-base-light,Semantic,vads-color-base-light,uswds-system-color-gray-cool-30,#a9aeb1,,
-vads-color-base-lighter,Semantic,vads-color-base-lighter,uswds-system-color-gray-cool-10,#dfe1e2,,
-vads-color-base-lightest,Semantic,vads-color-base-lightest,uswds-system-color-gray-5,#f0f0f0,,
+vads-color-base-dark,Semantic,vads-color-base-dark,uswds-system-color-gray-cool-60,#565c65,vads-color-gray,
+vads-color-base-darker,Semantic,vads-color-base-darker,uswds-system-color-gray-cool-70,#3d4551,vads-color-gray-dark,
+vads-color-base-darkest,Semantic,vads-color-base-darkest,uswds-system-color-gray-90,#1b1b1b,vads-color-base,Also vads-color-ink
+vads-color-base-light,Semantic,vads-color-base-light,uswds-system-color-gray-cool-30,#a9aeb1,vads-color-gray-light,
+vads-color-base-lighter,Semantic,vads-color-base-lighter,uswds-system-color-gray-cool-10,#dfe1e2,vads-color-gray-lighter,
+vads-color-base-lightest,Semantic,vads-color-base-lightest,uswds-system-color-gray-5,#f0f0f0,vads-color-gray-lightest,
 vads-color-error,Semantic,vads-color-error,uswds-system-color-red-vivid-60,#b21d38,,
 vads-color-gibill-accent,Semantic,vads-color-gibill-accent,,#fef0c8,vads-color-gold-lightest,
+vads-color-hub-burials,Semantic,vads-color-hub-burials,uswds-system-color-blue-50,#2378c3,,
+vads-color-hub-careers,Semantic,vads-color-hub-careers,uswds-system-color-orange-warm-50,#bd5727,,
+vads-color-hub-disability,Semantic,vads-color-hub-disability,uswds-system-color-red-60,#a23737,,
+vads-color-hub-education,Semantic,vads-color-hub-education,uswds-system-color-mint-cool-50,#40807e,,
+vads-color-hub-family-member,Semantic,vads-color-hub-family-member,,#162e51,vads-color-primary-darker,
+vads-color-hub-health-care,Semantic,vads-color-hub-health-care,uswds-system-color-indigo-cool-60,#3f57a6,,
+vads-color-hub-housing,Semantic,vads-color-hub-housing,uswds-system-color-gold-50,#8e704f,,
+vads-color-hub-life-insurance,Semantic,vads-color-hub-life-insurance,uswds-system-color-green-warm-50,#6f7a41,,
+vads-color-hub-pension,Semantic,vads-color-hub-pension,uswds-system-color-green-cool-50,#4d8055,,
+vads-color-hub-records,Semantic,vads-color-hub-records,uswds-system-color-violet-warm-60,#6f7a41,,
+vads-color-hub-service-member,Semantic,vads-color-hub-service-member,,#162e51,vads-color-primary-darker,
 vads-color-info,Semantic,vads-color-info,uswds-system-color-cyan-30v,#00bde3,,$theme-color-info from USWDS
 vads-color-info-dark,Semantic,vads-color-info-dark,uswds-system-color-cyan-40v,#009ec1,,$theme-color-info-dark from USWDS
 vads-color-info-darker,Semantic,vads-color-info-darker,uswds-system-color-blue-cool-60,#2e6276,,$theme-color-info-darker from USWDS
 vads-color-info-light,Semantic,vads-color-info-light,uswds-system-color-cyan-20,#99deea,,$theme-color-info-light from USWDS
 vads-color-info-lighter,Semantic,vads-color-info-lighter,uswds-system-color-cyan-5,#e7f6f8,,$theme-color-info-lighter from USWDS
-vads-color-ink,Semantic,vads-color-ink,uswds-system-color-gray-90,#1b1b1b,,Also vads-color-base-darkest
+vads-color-ink,Semantic,vads-color-ink,uswds-system-color-gray-90,#1b1b1b,vads-color-base,Also vads-color-base-darkest
 vads-color-inset-bg,Semantic,vads-color-inset-bg,,#e7f6f8,vads-color-info-lighter,
 vads-color-link,Semantic,vads-color-link,uswds-system-color-blue-60v,#005ea2,,
 vads-color-link-active,Semantic,vads-color-link-active,uswds-system-color-blue-70v,#0b4778,,
