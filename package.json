@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "start": "npm run build && bundle exec jekyll serve --baseurl ''",
-    "watch": "npm run build && bundle exec jekyll serve --baseurl '' --incremental",
-    "preinstall": "npx npm-force-resolutions"
+    "start": "yarn run build && bundle exec jekyll serve --baseurl ''",
+    "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
     "uswds",
     "formation"
   ],
-  "author": "Jared Cunha",
+  "author": "Matthew Dingee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues"
@@ -37,15 +36,8 @@
     "set-value": ">=4.1.0",
     "tar": ">=6.1.11"
   },
-  "resolutions": {
-    "glob-parent": "^5.1.2",
-    "yargs-parser": "^5.0.1"
-  },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^9.0.1",
     "@department-of-veterans-affairs/css-library": "^0.0.2"
-  },
-  "engines": {
-    "npm": "6.14.8"
   }
 }
