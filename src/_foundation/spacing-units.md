@@ -24,7 +24,15 @@ The number 8 is easily broken down into smaller measurements before it approache
 
 ## Spacing unit tokens
 
-{% include spacing-tokens.html %}
+The VA follows the USWDS spacing unit tokens and then adds additional semantic tokens.
+
+### Primitive
+
+{% assign spacing_primitive = site.data.tokens.vads-spacing-primitive %}
+{% include spacing-tokens.html spacing=spacing_primitive %}
+
+### Semantic
+
 
 ## Using the spacing tokens
 

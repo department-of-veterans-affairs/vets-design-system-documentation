@@ -2,19 +2,17 @@
   <thead>
     <tr>
       <th scope="col">Token</th>
-      <th scope="col">Pixels</th>
-      <th scope="col">Rems</th>
+      <th scope="col">Value</th>
       <th scope="col">Example</th>
     </tr>
   </thead>
   <tbody>
-    {% for item in site.data.spacing.units %}
+    {% for item in include.spacing %}
     <tr>
-      <th scope="row"><code class="code">{{ item.token }}</code></th>
-      <td>{{ item.pixels }}</td>
-      <td>{{ item.rems }}</td>
+      <th scope="row"><code class="code">{{ item.vads-name }}</code></th>
+      <td>{{ item.value-from-uswds-design-token }}</td>
       <td>
-        <div class="vads-u-background-color--primary" style="height: {{ item.pixels }}">
+        <div class="vads-u-background-color--primary" style="height: {{ item.value-from-uswds-design-token }}">
         </div>
       </td>
     </tr>
