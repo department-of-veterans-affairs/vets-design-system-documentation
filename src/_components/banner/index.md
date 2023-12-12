@@ -6,6 +6,7 @@ intro-text: "Banners are for announcements that typically prepare a Veteran to v
 status: use-deployed
 sub-pages:
   - sub-page: Maintenance
+  - sub-page: Official Gov
   - sub-page: Promo
 anchors:
   - anchor: Examples
@@ -15,6 +16,8 @@ anchors:
   - anchor: Accessibility considerations
 web-component: va-banner
 ---
+
+{% include _site-in-this-section.html %}
 
 ## Examples
 

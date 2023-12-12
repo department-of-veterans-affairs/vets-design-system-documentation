@@ -16,9 +16,9 @@ Dates, times, phone numbers, and addresses often appear together, so we've put g
 
 ## Dates and years
 
-Spell out dates in body copy, using the full construction: March 31, 1989. In general, spell out days of the week and months also in body copy.
+Spell out dates in body copy, using the full construction: March 31, 1989. Or January 2, 1980. In general, spell out days of the week and months also in body copy.
 
-**Exceptions:**
+### Exceptions
 
 - Use 9/11 when it's part of a program name such as the Post-9/11 GI Bill.
 - Abbreviate days and months when space is very limited, such as in callout boxes, alerts, or promo components, etc.
@@ -27,7 +27,7 @@ Spell out dates in body copy, using the full construction: March 31, 1989. In ge
   - In application form fields, we often use the construction: mm/dd/yyyy
     <br>
 
-**Years**
+### Years
 
 When referencing decades or periods of years, don't use an apostrophe with the "s."
 
@@ -62,7 +62,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 - When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
 - In an application or tool that has a time stamp of a user's progress or saved work, show hours in their local time zone.
 - In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m. ET, Monday through Friday.
-- Where space is limited, indicate ranges with the – en dash (not the shorter - hyphen) and a space on either side. Don't combine the en dash with from/between sentence construction.
+- Where space is limited, indicate ranges with the - hyphen without spaces on either side. Don't combine the hyphen with from/between sentence construction.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -86,11 +86,5 @@ from 8:00 a.m. to noon ET
 {% include content/phone-numbers.md %}
 
 ## Addresses
-
-Write out street names (street, road, avenue, boulevard, highway, etc.) in both body copy and in address blocks. Don't abbreviate.
-
-When a street address contains a compass point (north, south, etc.), defer to the way it's referenced locally. For example, some cities may abbreviate compass points like north and south for some but not all streets.
-
-In the examples below, we spell out the street names, and style the compass points the way they're locally referenced in Washington, D.C., and New York City, which both abbreviate compass points.
  
 {% include content/addresses.md %}

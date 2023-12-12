@@ -36,6 +36,6 @@ visual-assets:
   - name: responsive
     score: true
   - name: interactive-states
-    score: "n/a"
+    score: true
   - name: tokens
     score: "n/a"

@@ -2,6 +2,7 @@
 layout: component
 title: Divider
 research-title: "Divider"
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/C396BCC1-4835-4F3E-997B-5C622D853493/canvas#Version
 status: use-best-practice
 intro-text: "Dividers are used sparingly to separate significant sections of content"
 ---

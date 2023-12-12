@@ -6,16 +6,22 @@ inner-title: Overview
 intro-text: "Form controls allow users to enter information."
 status: use-deployed
 sub-pages:
+  - sub-page: Autosave
   - sub-page: Checkbox
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input
-  - sub-page: Label
   - sub-page: Input message
+  - sub-page: Label
+  - sub-page: Need help?
   - sub-page: Number input
+  - sub-page: Penalty notice
+  - sub-page: Prefill
+  - sub-page: Privacy Agreement
   - sub-page: Progress bar - Segmented
   - sub-page: Radio button
   - sub-page: Select
+  - sub-page: Statement of truth
   - sub-page: Text input
   - sub-page: Textarea
 anchors:
@@ -29,7 +35,6 @@ anchors:
 
 <va-featured-content>
   <h3 slot="headline">Forms system documentation</h3>
-  <p>The current forms library is considered a legacy product and is in maintenance mode. A new forms library is under development.</p>
   <p>View documentation for the current forms library for VA.gov on <a href="{{ site.forms_system_link }}">the platform website</a>.</p>
 </va-featured-content>
 

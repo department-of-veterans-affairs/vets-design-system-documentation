@@ -1,0 +1,245 @@
+Appointments:
+  - name: Duration (days/months/years)
+    fa-class: "fas fa-calendar"
+    unicode: "#xf133;"
+    additional-usage: Link - Calendar
+  - name: In-person appointment
+    fa-class: "fas fa-building"
+    unicode: "#xf1ad;"
+  - name: Phone appointment
+    fa-class: "fas fa-phone-alt"
+    unicode: "#xf879;"
+  - name: Time (hours/minutes)
+    fa-class: "fas fa-clock"
+    unicode: "#xf0e0;"
+  - name: Video appointment
+    fa-class: "fas fa-video"
+    unicode: "#xf03d;"
+
+Feedback:
+  - name: Informational
+    fa-class: "fas fa-info-circle"
+    unicode: "#xf05a;"
+    additional-usage: Alert - Info, Notifications
+  - name: Confirmation or completion
+    fa-class: "fas fa-check"
+    unicode: "#xf00c;"
+    color: "#2e8540"
+    additional-usage: Alert - Success
+  - name: Warning
+    fa-class: "fas fa-exclamation-triangle"
+    unicode: "#xf071;"
+    additional-usage: Alert - Warning
+  - name: Error
+    fa-class: "fas fa-exclamation-circle"
+    unicode: "#xf06a;"
+    color: "#cd2026"
+    additional-usage: Alert - Error, Notifications
+
+Health:
+  - name: Lab and test results (Facilities)
+    fa-class: "fas fa-clipboard-list"
+    unicode: "#xf46d;"
+    additional-usage: Compare GI benefits by school (Profile)
+  - name: Health care facility operating status (Facilities)
+    fa-class: "fas fa-dot-circle"
+    unicode: "#xf192;"
+  - name: Hearing aid (Facilities)
+    fa-class: "fas fa-deaf"
+    unicode: "#xf2a4;"
+
+Hub:
+  - name: Burials
+    fa-class: "fas fa-star"
+    unicode: "#xf005;"
+  - name: Careers and employment
+    fa-class: "fas fa-briefcase"
+    unicode: "#xf0b1;"
+    additional-usage: On-the-job Training (GI Bill Comparison tool)
+  - name: Disability
+    fa-class: "fas fa-file-alt"
+    unicode: "#xf15c;"
+  - name: Education
+    fa-class: "fas fa-graduation-cap"
+    unicode: "#xf19d;"
+    additional-usage: VA education and benefits (Profile)
+  - name: Family member benefits
+    fa-class: "fas fa-users"
+    unicode: "#xf0c0;"
+  - name: Healthcare
+    fa-class: "fas fa-medkit"
+    unicode: "#xf0fa;"
+  - name: Housing
+    fa-class: "fas fa-home"
+    unicode: "#xf015;"
+  - name: Life Insurance
+    fa-class: "fas fa-shield-alt"
+    unicode: "#xf3ed;"
+  - name: Pension
+    fa-class: "fas fa-handshake"
+    unicode: "#xf2b5;"
+  - name: Records
+    fa-class: "fas fa-id-card"
+    unicode: "#xf2c2;"
+  - name: Service member benefits
+    fa-class: "fas fa-flag-usa"
+    unicode: "#xf74d;"
+
+
+Identification:
+  - name: Telephone number
+    fa-class: "fas fa-phone"
+    unicode: "#xf095;"
+  - name: Location or address
+    fa-class: "fas fa-map-marker-alt"
+    unicode: "#xf041;"
+  - name: Driving directions
+    fa-class: "fas fa-road"
+    unicode: "#xf018;"
+  - name: Website address
+    fa-class: "fas fa-globe"
+    unicode: "#xf0ac;"
+  - name: Help or contact information
+    fa-class: "fas fa-question-circle"
+    unicode: "#xf059;"
+  - name: Settings
+    fa-class: "fas fa-cog"
+    unicode: "#xf013;"
+  - name: Homepage sign in button
+    fa-class: "fas fa-user-circle"
+    unicode: "#f2bd;"
+  - name: Announcement
+    fa-class: "fas fa-bullhorn"
+    unicode: "#f0e0;"
+
+Interaction:
+  - name: Accordion expand indicator
+    fa-class: "fas fa-plus"
+    unicode: "#xf067;"
+    additional-usage: Add item
+  - name: Accordion collapse indicator
+    fa-class: "fas fa-minus"
+    unicode: "#xf068;"
+  - name: Close indicator (modals, alerts)
+    fa-class: "fas fa-times"
+    unicode: "#xf00d;"
+  - name: Download item
+    fa-class: "fas fa-download"
+    unicode: "#xf019;"
+    additional-usage: Link - Download
+  - name: Dropdown expand indicator
+    fa-class: "fas fa-chevron-down"
+    unicode: "#xf078;"
+  - name: Dropdown collapse indicator
+    fa-class: "fas fa-chevron-up"
+    unicode: "#xf077;"
+  - name: Form field dropdown
+    fa-class: "fas fa-sort"
+    unicode: "#xf0dc;"
+  - name: Remove or delete item
+    fa-class: "fas fa-trash-alt"
+    unicode: "#xf1f8;"
+
+Messaging:
+  - name: Attachment
+    fa-class: "fas fa-paperclip"
+    unicode: "#xf0c6;"
+  - name: Content folder
+    fa-class: "fas fa-folder"
+    unicode: "#xf07b;"
+    additional-usage: Move
+  - name: Message, letter
+    fa-class: "fas fa-envelope"
+    unicode: "#xf0e0;"
+    additional-usage: Subscribe to news, notifications, or updates (Facilities)
+  - name: Print
+    fa-class: "fas fa-print"
+    unicode: "#xf02f;"
+  - name: Reply
+    fa-class: "fas fa-reply"
+    unicode: "#xf3e5;"
+
+Navigation:
+  - name: Previous
+    fa-class: "fas fa-angle-double-left"
+    unicode: "#xf100;"
+  - name: Next
+    fa-class: "fas fa-angle-double-right"
+    unicode: "#xf101;"
+  - name: External link
+    fa-class: "fas fa-external-link-alt"
+    unicode: "#xf35d;"
+  - name: Link - Active component
+    fa-class: "fas fa-chevron-right"
+    unicode: "#xf054;"
+  - name: Navigate page down
+    fa-class: "fas fa-arrow-down"
+    unicode: "#xf063;"
+  - name: Navigate page up
+    fa-class: "fas fa-arrow-up"
+    unicode: "#xf062;"
+  - name: Search
+    fa-class: "fas fa-search"
+    unicode: "#xf002;"
+  - name: Channel
+    fa-class: "fab fa-youtube"
+    unicode: "#xf167;"
+    additional-usage: Link - Channel, YouTube (Social)
+  - name: Video
+    fa-class: "fas fa-play-circle"
+    unicode: "#xf144;"
+    additional-usage: Link - Video
+
+Notifications:
+  - name: Urgent - requiring user action
+    fa-class: "fas fa-exclamation-circle"
+    unicode: "#xf06a;"
+    color: "#981b1e"
+  - name: Informational - not requiring user action
+    fa-class: "fas fa-info-circle"
+    unicode: "#xf05a;"
+    color: "#005ea2"
+
+Profile:
+  - name: Appointment
+    fa-class: "fas fa-calendar-check"
+    unicode: "#xf274;"
+  - name: Claims and appeals
+    fa-class: "fas fa-clipboard-check"
+    unicode: "#xf46c;"
+  - name: Debt
+    fa-class: "fas fa-file-invoice-dollar"
+    unicode: "#xf571;"
+  - name: Direct Deposit
+    fa-class: "fas fa-dollar-sign"
+    unicode: "#xf155;"
+    additional-usage: Profile - Check your GI bill statement of benefits
+  - name: Messages
+    fa-class: "fas fa-comments"
+    unicode: "#xf086;"
+  - name: Medical records
+    fa-class: "fas fa-file-medical"
+    unicode: "#xf477;"
+  - name: Payment history
+    fa-class: "fas fa-user-check"
+    unicode: "#xf4fc;"
+  - name: Prescriptions
+    fa-class: "fas fa-prescription-bottle"
+    unicode: "#xf485;"
+  - name: Travel reimbursement
+    fa-class: "fas fa-suitcase"
+    unicode: "#xf0f2;"
+
+Social:
+  - name: Facebook
+    fa-class: "fab fa-facebook"
+    unicode: "#xf090;"
+  - name: Flickr
+    fa-class: "fab fa-flickr"
+    unicode: "#xf16e;"
+  - name: Instagram
+    fa-class: "fab fa-instagram"
+    unicode: "#xf167;"
+  - name: Twitter
+    fa-class: "fab fa-twitter"
+    unicode: "#xf099;"

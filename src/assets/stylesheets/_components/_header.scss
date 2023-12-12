@@ -1,6 +1,6 @@
 .site-header {
   color: #fff;
-  background-color: $color-primary-darkest;
+  background-color: $color-primary-darker;
 }
 
 .site-header .site-l-wrapper {
@@ -26,12 +26,12 @@
 
 .usa-button.site-button-inverse {
   background-color: #ffffff;
-  color: $color-primary-darker;
+  color: $color-primary-dark;
 
   &:active,
   &:hover {
     background-color: rgba(255,255,255,.8);
-    color: $color-primary-darker;
+    color: $color-primary-dark;
   }
 }
 
@@ -83,7 +83,7 @@
 
 .site-top-nav-wrapper {
   display: none;
-  background-color: $color-primary-darkest;
+  background-color: $color-primary-darker;
 
   @include media($nav-width) {
     display: block;

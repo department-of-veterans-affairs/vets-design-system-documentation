@@ -1,0 +1,96 @@
+---
+layout: default
+title: Color palette
+anchors:
+  - anchor: Semantic color tokens
+  - anchor: Primitive color tokens
+  - anchor: v1 colors
+---
+
+<h1 id="icons">{{ page.title }}</h1>
+
+<div class="va-introtext">
+  Our color palette is organized into semantic color tokens, which have specific meaning within the system, and primitive color tokens, which establish a sub-set of colors that the VA uses from the U.S. Web Design System.
+</div>
+
+{% include _site-on-this-page.html %}
+
+<h2 id="semantic-color-tokens">Semantic color tokens</h2>
+
+{% assign semantic = site.data.tokens.vads-color-semantic %}
+<div class="site-showcase">
+  <div class="vads-l-row">
+    {% for item in semantic %}
+      {% include _colors-v3.html
+          name=item.vads-name
+          hex=item.final-hex-value
+          uswds=item.uswds-design-token
+          alias=item.vads-alias
+          desc=item.description
+      %}
+    {% endfor %}
+  </div>
+</div>
+
+
+<h2 id="primitive-color-tokens">Primitive color tokens</h2>
+{% assign primitives = site.data.tokens.vads-color-primitives %}
+<div class="site-showcase">
+  <div class="vads-l-row">
+    {% for item in primitives %}
+      {% include _colors-v3.html
+          name=item.vads-name
+          hex=item.final-hex-value
+          uswds=item.uswds-design-token
+          alias=item.vads-alias
+          desc=item.description
+      %}
+    {% endfor %}
+  </div>
+</div>
+
+
+<h2 id="v1-colors">v1 colors</h2>
+
+<div class="site-showcase">
+  <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-base">Base colors</h3>
+  <div class="vads-l-row">
+    {% for item in site.data.colors.primary %}
+      {% include color-palette-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
+  <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-grayscale">Grayscale</h3>
+  <div class="vads-l-row">
+    {% for item in site.data.colors.grayscale %}
+      {% include color-palette-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
+  <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-tertiary">Tertiary colors</h3>
+  <div class="vads-l-row">
+    {% for item in site.data.colors.tertiary %}
+      {% include color-palette-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+
+  <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-hub">Hub colors</h3>
+  <p>Hub colors are only to be used on VA.gov benefit hubs.</p>
+  <div class="vads-l-row">
+    {% for item in site.data.colors.hub %}
+      {% include color-palette-example.html
+        name=item.name
+        hex=item.hex
+      %}
+    {% endfor %}
+  </div>
+</div>

@@ -7,6 +7,7 @@ title: Bulleted lists
 
 Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list.
 
+- Introduce the list with a full sentence.
 - Capitalize the first word of every bullet.
 - Don't use a bulleted list for only one item.
 - Keep each item succinct for scannability (for example, 1 or 2 sentences each).  
@@ -15,9 +16,8 @@ Bulleted lists help make information more scannable and easier to understand.  I
 - Use parallel construction within the same list. (Make each bullet start with a verb; or make each a noun phrase; etc.)
 
 
-__Punctuation for bulleted lists__
+## Punctuation for bulleted lists
 - When the list is made up of fragments, don't use ending periods.
-- When the list is made up of full sentences, use ending periods. (Example: Each item could be a complete sentence if it stood alone, even without the intro sentence or header.)
 - When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the additional sentence. To be consistent, also use ending periods on the other items in the bulleted list, even if they're fragments.
 - Don't use a period at the end of the last bullet in a series of fragments.
 
@@ -73,9 +73,9 @@ __What documents and information do I need to apply?__
 
 When using "and" or "or" at the end of each bullet point, use a comma and bold the "and"/"or" at the end of each bullet point. 
   
-__Both of these must be true. You’re:__
-- Enrolled in VA health care, __and__
-- Registered as a patient in a VA health facility
+__Both of these must be true:__
+- You’re enrolled in VA health care, __and__
+- You’re registered as a patient in a VA health facility
 
 
 __And you must have one of these free accounts:__
@@ -90,10 +90,10 @@ __And you must have one of these free accounts:__
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
  
-__All of these must be true. You're:__ 
+__All of these must be true:__ 
 
-- Enrolled in VA health care
-- Registered as a patient in a VA health facility
+- You're enrolled in VA health care
+- You're registered as a patient in a VA health facility
 - __And__ you must have one of these free accounts: An Advanced or Premium My HealtheVet account, a Premium DS Logon account (used for eBenefits and milConnect), or a verified ID.me account that you can create here on VA.gov.
 
 </div>

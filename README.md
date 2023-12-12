@@ -1,6 +1,6 @@
 # Vets Design System Documentation
 
-This is repo for the design system documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the CSS and Javascript for the components, see the [formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools).
+This repo is for VA Design System documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the design system components, see the [component-library](https://github.com/department-of-veterans-affairs/component-library). Additionally, the [Formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools) contains sitewide VA.gov base styles and utility classes.
 
 Min specs:
 
@@ -8,7 +8,7 @@ Min specs:
 
 ## To run locally
 
-Tested using `node` v14.15.0 and `npm` v6.14.8.
+Tested using `node` v18.19.0 and `yarn` v1.22.19.
 
 1. **Clone this repo**
 
@@ -16,29 +16,29 @@ Tested using `node` v14.15.0 and `npm` v6.14.8.
    $ git clone https://github.com/department-of-veterans-affairs/vets-design-system-documentation.git
    ```
 
-1. **Install NPM dependencies**
+2. **Install dependencies**
 
    ```
-   $ npm install
+   $ yarn install
    ```
 
-1. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
+3. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
 
    **NOTE:** This repo works with Ruby version 3.0.2.
 
-1. **Install Ruby gems**
+4. **Install Ruby gems**
 
    ```
    $ bundle install
    ```
 
-1. **Build and start the Jekyll server**
+5. **Build and start the Jekyll server**
 
    ```
-   $ npm run start
+   $ yarn start
    ```
 
-1. **Verify in browser: [localhost:4000](http://localhost:4000/)**
+6. **Verify in browser: [localhost:4000](http://localhost:4000/)**
 
 ## Adding content to the documentation site
 
@@ -78,11 +78,11 @@ In order to test new updates to Formation, you will need to work in two differen
 1. Now, in `vets-design-system-documentation`, run the following:
 
    ```
-   $ npm install
-   $ npm run start
+   $ yarn
+   $ yarn start
    ```
 
-While `vets-design-system-documentation` is running and make further updates to `veteran-facing-services-tools`, you will need to run `$ npm run build` in that repo, then `$ npm run build` in `vets-design-system-documentation`.
+While `vets-design-system-documentation` is running and make further updates to `veteran-facing-services-tools`, you will need to run `$ npm run build` in that repo, then `$ yarn build` in `vets-design-system-documentation`.
 
 1. When you have finished your work in `veteran-facing-services-tools`, follow the [instructions](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools#publishing-module-to-npm) to submit a PR and publish to NPM.
 
@@ -93,3 +93,7 @@ While `vets-design-system-documentation` is running and make further updates to 
 ## Deploying
 
 Merges into `main` will automatically be deployed to `dev-design.va.gov`. Production is automatically deployed every weekday at 2pm. Deploys are executed by creating a release of vets-website via Jenkins. You can track the deployment in the Slack channel, #design-system.
+
+## Additional Testing
+
+This project is tested with BrowserStack.

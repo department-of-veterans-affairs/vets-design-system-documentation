@@ -1,0 +1,27 @@
+name: Pull Request
+
+on:
+  pull_request:
+    types: [ready_for_review, synchronize, reopened, opened]
+jobs:
+  build:
+    strategy:
+      matrix:
+        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+        cache: 'npm'
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.5 # Not needed with a .ruby-version file
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - run: npm install
+    - run: npm run-script build
+    - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}

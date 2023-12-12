@@ -109,7 +109,7 @@ This pattern can be implemented with standard form elements and other optional c
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Alert]({{ site.baseurl }}/components/alert)
 * [Button pair]({{ site.baseurl }}/components/button/button-pair)
-* [Link - Action]({{ site.baseurl }}/components/link/action/)
+* [Link - Action]({{ site.baseurl }}/components/link/action)
 
 ## Content considerations
 

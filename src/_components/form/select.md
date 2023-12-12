@@ -3,63 +3,75 @@ layout: component
 permalink: /components/form/select
 has-parent: /components/form/
 title: Select
-intro-text: "A select box allows users to select one option from a list."
+intro-text: "A select component allows users to choose one option from a menu."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/93AD583C-43C8-40A6-9363-36D3CC2C2AAD
+sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/93AD583C-43C8-40A6-9363-36D3CC2C2AAD/canvas
 status: use-deployed
+uswds-v3: default
+web-component: va-select
 anchors:
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
-web-component: va-select
+  - anchor: Component checklist
 ---
 
-{% include storybook-preview.html story="components-va-select--default" link_text="va-select" %}
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-select--default" link_text="va-select default" %}
+
+### Required
+
+{% include storybook-preview.html story="components-va-select--required" link_text="va-select required" %}
+
+### With hint text
+
+{% include storybook-preview.html story="components-va-select--with-hint-text" link_text="va-select with hint text" %}
+
+### Error message
+
+{% include storybook-preview.html story="components-va-select--error-message" link_text="va-select error message" %}
+
+### Dynamic options
+
+{% include storybook-preview.html story="components-va-select--dynamic-options" link_text="va-select dynamic options" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="components-va-select--internationalization" link_text="va-select internationalization" %}
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select v3 along with additional variations" %}
+
 
 ## Usage
 
-### When to use select
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/">Refer to the U.S. Web Design System for usage guidance</a>
 
-- Use sparingly — only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.
+### Additional guidance for VA
 
-### When to consider something else
+#### Additional reasons to consider something else
 
-- If the list of options is very short. Use radio buttons instead.
-- If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.
-- If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from select boxes. Use checkboxes instead.
-- If you are intending to provide navigation. To help users navigate to a section on the same page or another page in the site, use a [text link]({{ site.baseurl }}/components/link) or the [sidenav component]({{ site.baseurl }}/components/sidenav).
+**More than 15 options.** If the list of options is very long, we do not yet have the combo box component in our system thus an alternative is to use functionality that allows users to type the same information into a text input that suggests possible options instead as seen in our [search input]({{ site.baseurl }}/components/search-input) component.
 
-### How to use
-
-- Test select boxes thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.
-- On mobile devices, select boxes use a scroll wheel rather than a dropdown, which some users find difficult to use.
-- Avoid making options in one select box menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.
-- When most users will (or should) pick a particular option, make it the default: `<option selected="selected">Default</option>`
-- Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.
-
-### Errors
-
-<div class="site-showcase">
-{% include_relative html/error-select-box.html %}
-</div>
-
-{% include snippet.html content='html/error-select-box.html' %}
-
-* For select the error message does not include the screen reader-only "Error" text.
-* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
-
-```html
-<span class="usa-input-error-message" id="select-159-error-message" role="alert">This is the error message</span>
-```
+{% include component-docs.html component_name=page.web-component %}
 
 ### Native Events
 
 - The native onKeyDown event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
-{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
-- Make sure your select box has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).
-- Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
+
+
+{% include _component-checklist.html component_name=page.web-component %}

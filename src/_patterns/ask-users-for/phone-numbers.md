@@ -4,6 +4,11 @@ permalink: /patterns/ask-users-for/phone-numbers
 sub-section: ask-users-for
 title: Phone numbers
 intro-text: Follow this pattern when you want to ask for a phone number.
+code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/phonePattern.jsx
+example-link: https://staging.va.gov/mock-form-patterns/phone-and-email-address
+github-title: pattern-phone-numbers
+research-title: Ask users for phone numbers
+sketch-link: https://www.sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952/p/7F447374-E091-4BA2-90FC-06AE6DF82F92/canvas
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -20,8 +25,11 @@ anchors:
  
 ## Examples
 
-![contact information phone number template]({{site.baseurl}}/images/patterns/ask-users-for/phone-numbers/phone-numbers.png)
+{% include component-example.html alt="Shows the form fields used to obtain home phone number and mobile phone number." file="/images/patterns/ask-users-for/phone-numbers/phone-numbers.png" caption="Example of asking for a home phone number or mobile phone number." class="x2" %}
 
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
+  
 ## How to design and build 
 
 ### Layout details
@@ -42,8 +50,8 @@ anchors:
 
 **When a user doesn’t enter a phone number:**
 
-Say 'Please enter a phone number'
+Say 'Enter a phone number'
 
 **If the telephone number is not in the correct format:**
 
-Say  'Please enter a 10-digit phone number (with or without dashes)'
+Say  'Enter a 10-digit phone number'

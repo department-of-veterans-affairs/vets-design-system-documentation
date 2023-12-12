@@ -11,6 +11,9 @@ font-matter: yay
 // Other Formation CSS we need for this site.
 @import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-crisis-line';
 
+// Override Formation color variables 
+@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss';
+
 // Site CSS
 @import '_settings/variables';
 @import '_helpers/clip';
@@ -19,6 +22,7 @@ font-matter: yay
 @import '_layout/site-content';
 @import '_layout/content-wrappers';
 @import '_components/anchors';
+@import '_components/badge';
 @import '_components/code-snippets';
 @import '_components/component-checklist';
 @import '_components/do-dont';
@@ -36,7 +40,6 @@ font-matter: yay
 @import '_components/search-results';
 @import '_components/showcase';
 @import '_components/sidenav';
-@import '_components/status';
 
 
 .usa-skipnav {
@@ -59,21 +62,19 @@ font-matter: yay
   }
 }
 
-.fa, .fas, .fab {
+.fa, .fas {
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands";
-  font-weight: 900;
 }
 
 
 .site-grid-example {
   padding:12px;
   background: #e1f3f8;
-  border: 1px solid #046b99;
+  border: 1px solid #07648d;
 }
 
 .site-section-highlight {
@@ -110,3 +111,17 @@ font-matter: yay
   background: #16171F;
 }
 
+/*
+For the time being, we're manually overriding these two classes that get imported from Formation
+because they get dynamically generated in color-palette-example.html. This is necessary because 
+Formation still relies on the older --primary-darker/darkest naming convention for the sake of 
+backwards compatibility. When Formation has been fully deprecated and we are on new utility classes, 
+these can be removed along with an update to how classes are generated in color-palette-example.html. 
+*/
+.vads-u-background-color--primary-dark {
+  background-color: $color-primary-dark !important;
+}
+
+.vads-u-background-color--primary-darker {
+  background-color: $color-primary-darker !important;
+}

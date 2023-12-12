@@ -1,11 +1,13 @@
 ---
 layout: component
 title: Card
-status: use-deployed
+status: use-with-caution-candidate
 github-title: va-card
 research-title: card
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2219A3C0-576F-48CE-8EF3-60F37E30BA93
 intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
+contributor: Allison Lu, Angela Agosto
+web-component: va-card
 anchors:
   - anchor: Examples
   - anchor: Variations
@@ -20,13 +22,60 @@ anchors:
 
 ## Examples
 
-### Anatomy
+### Default - Gray
 
-#### Basic
+<div class="site-showcase">
+  {% include_relative html/card.html %}
+</div>
+
+### Default - White with border
+
+{% include storybook-preview.html story="components-va-card--default" link_text="va-card default" %}
+
+### With Drop Shadow
+
+{% include storybook-preview.html story="components-va-card--with-drop-shadow" link_text="va-card default" %}
+
+### Benefit payments
+
+<div class="site-showcase">
+  {% include_relative html/card-benefit-payments.html %}
+</div>
+
+### Application status (Benefit application drafts)
+
+<div class="site-showcase">
+  {% include_relative html/card-benefit-application-drafts.html %}
+</div>
+
+
+## Usage
+
+### When to use Card
+
+* **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
+* **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take. 
+* **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
+
+### When to consider something else
+
+* **Eligibility information or other content highlight.** The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
+* **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
+* **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
+* **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
+* **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target. 
+
+### When to use caution
+
+* **Search results.** Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
+
+### How this component works
+
+#### Default
 
 ![Basic card]({{ site.baseurl }}/images/components/card/annotated.png) 
 
-1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
+1. **Background color.** White or [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
 2. **Header.** Header that summarizes the card's content.
 3. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
 4. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
@@ -57,31 +106,28 @@ Use this variation when you have a longer status label.
 
 You can see these options in use in the [variations](#variations) below.
 
-## Usage
-
-### When to use Card
-
-* **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
-* **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take. 
-* **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
-
-### When to consider something else
-
-* **Eligibility information or other content highlight.** The [Featured content]({{ site.baseurl }}/components/featured-content) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
-* **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert/) component.
-* **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
-* **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
-* **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target. 
-
-### When to use caution
-
-* **Search results.** Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
 
 ## Variations
 
+### Choosing between variations
+
+Currently (06/2023), there are 3 variations to choose from:
+
+#### 1. Default gray
+
+This variation was the previous default and is the Card variation most widely used across VA.gov. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow. [Benefit payments](#benefit-payments) and [Application status](#application-status-benefit-application-drafts) are examples of this variation.
+
+#### 2. Default white
+
+This variation is the [new default](#2-default-white) and is codified in a web-component. Content should be structured in the same way. New variations of Card will start with this variation as the base. Currently you may choose to use either the gray or white default Card however, this newer variation is preferred.
+
+#### 3. With drop shadow
+
+Use [this variation](#3-with-drop-shadow) for emphasis, for example at the top of a page or section, or as the primary card in a series of cards. When using in a series, use with the default white variation. Do not combine this variation with the default gray variation.
+
 ### Instances of this component in production
 
-There are many instances of the Card component in production. This is an an exhaustive list but does serve to highlight well defined instances of a Card.
+There are many instances of the Card component in production. This is not an exhaustive list but does serve to augment the [examples](#examples) above and highlight well defined instances of a Card.
 
 #### Appointment
 
@@ -91,31 +137,35 @@ There are many instances of the Card component in production. This is an an exha
 
 {% include component-example.html alt="An appointment card with a status of canceled." file="/images/components/card/appointment-canceled-mobile.png" caption="An appointment card for a canceled appointment." reverse=true width="50%" %}
 
+#### Appointment, large with icon
+
+{% include component-example.html alt="A large appointment card with an icon." file="/images/components/card/appointment-with-icon.png" caption="A large appointment card with an icon to identify the card type or category, in this case for an in-person appointment." reverse=true width="50%" %}
+
 #### Claims and appeals
 
 {% include component-example.html alt="A Claims and Appeals card in MyVA." file="/images/components/card/claims-and-appeals-mobile.png" caption="A Claims and Appeals card showing status for a claim in MyVA at a mobile viewport width." reverse=true width="50%" %}
 
-#### Form status
+#### Financial Status Report
 
-{% include component-example.html alt="A form status card in MyVA." file="/images/components/card/form-in-progress.png" caption="A form status card showing the status of a form that a Veteran is in the process of filing out in MyVA." reverse=true width="75%" %}
+{% include component-example.html alt="A Financial Status Report card." file="/images/components/card/financial-status-report.png" caption="A Financial Status Report (VA form 5655) card showing a household expense added with a Link - Active for editing the monthly amount and a Button - Icon for deleting the entry." reverse=true class="x2" %}
 
 #### Media
 
 {% include component-example.html alt="A media card for the GI Bill Comparison Tool ." file="/images/components/card/media.png" caption="A media card features an image or icon and contains a call-to-action with a description." reverse=true width="50%" %}
 
+#### Navigation
+
+{% include component-example.html alt="A navigation card used in the MyHealtheVet landing page." file="/images/components/card/my-healthevet-mobile.png" caption="A navigation card used in the MyHealtheVet landing page which contains a category of links." reverse=true width="50%" %}
+
 #### Number highlight
 
 {% include component-example.html alt="A Number highlight card showing a disability rating." file="/images/components/card/disability-rating.png" caption="A Number Highlight card brings attention to a specific number or statistic." reverse=true width="75%" %}
-
-#### Payment
-
-{% include component-example.html alt="A payment card example." file="/images/components/card/payment.png" caption="A payment card showing a type of payment." reverse=true width="75%" %}
 
 ## Behavior
 
 ### Calls to action 
 
-* **Make cards actionable.** A Card should be actionable. That can be accomplished either by making the Card itself a link or by the use of the [action link]({{ site.baseurl }}/components/link/action) component.
+* **Make cards actionable.** A Card should be actionable. That can be accomplished through the use of the [action link]({{ site.baseurl }}/components/link/action) component.
 * **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. 
 * **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs). 
 * **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
@@ -148,9 +198,7 @@ Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing 
 
 * When a Card behaves as a link it must have hover, focus, and active states. The hover state should be a 2px solid [$color-primary]({{ site.baseurl }}/foundation/color-palette#base) border. An appropriate focus status would add a 2px solid outline.
 
-## Code usage
-
-There is not currently a va-card web component. 
+{% include component-docs.html component_name=page.web-component %}
 
 ## Not a Card 
 
@@ -172,7 +220,7 @@ The [pattern for asking users for multiple responses]({{ site.baseurl }}/pattern
 
 {% include component-example.html alt="A container for a checkbox and description in a form." file="/images/components/card/not-a-card-radio-button-tile.png" caption="Container for a checkbox. Not a Card." width="50%" %}
 
-A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [U.S. Web Design System Radio buttons - Tile variation](https://designsystem.digital.gov/components/radio-buttons). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
+A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [Radio button - Tile variation]({{ site.baseurl }}/components/form/radio-button#tile). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
 
 ## Content considerations
 

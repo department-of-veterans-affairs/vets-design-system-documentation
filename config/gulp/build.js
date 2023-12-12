@@ -8,7 +8,8 @@ gulp.task('build',
       'fonts',
       'images',
       'javascript',
-      'css'
+      'css',
+      'storybook',
     )
 //  )
 );

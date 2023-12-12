@@ -1,0 +1,131 @@
+---
+layout: default
+title: Icons
+anchors:
+  - anchor: Appointments
+  - anchor: Feedback
+  - anchor: Health
+  - anchor: Hub
+  - anchor: Identification
+  - anchor: Interaction
+  - anchor: Messaging
+  - anchor: Navigation
+  - anchor: Notifications
+  - anchor: Profile
+  - anchor: Social
+  - anchor: Accessibility considerations
+---
+
+<h1 id="icons">Icons</h1>
+
+{% assign icons = site.data.icons %}
+
+<div class="va-introtext">
+  We leverage Font Awesome (v5.15.4) icons to communicate meaning, action, status, or feedback.
+</div>
+
+{% include _site-on-this-page.html %}
+
+{% for section in icons %}
+<h2 id="{{ section[0] | downcase }}">{{ section[0] }}</h2>
+<table class="usa-table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">Icon</th>
+      <th scope="col">HTML</th>
+      <th scope="col">Unicode</th>
+      <th scope="col">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for icon in section[1] %}
+    <tr>
+      <th scope="row">
+        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+      </th>
+      <td><code>&lt;i class="{{ icon.fa-class }}">&lt;/i></code></td>
+      <td><code class='code-fa'>&amp;{{ icon.unicode }}</code></td>
+      <td>
+        {% if icon.additional-usage %}
+          {% assign usage = icon.name | append: ', ' | append: icon.additional-usage %}
+          {{ usage }}
+        {% else if %}
+          {{ icon.name }}
+        {% endif %}
+      </td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+
+<h2 id="accessibility-considerations">Accessibility considerations</h2>
+<p>
+  Icon usage typically falls into two categories, decorative and semantic.
+</p>
+<ul>
+  <li><strong>Decorative icons</strong> are icons that are only used for visual reinforcement. If these were removed from the page, users would still be able to
+  understand and use the page.</li>
+  <li><strong>Semantic icons</strong> are icons that convey meaning, rather than only being decorative. This includes icons without text next to them that are
+  used as interactive elements such as buttons.</li>
+</ul>
+
+<h3 id="decorative-icons">Using decorative icons</h3>
+<p>
+  If your icons are only decorative, manually add an <code>aria-hidden</code> attribute to the icon for accessibility.
+</p>
+
+<h3 id="semantic-icons">Using semantic icons</h3>
+<p>
+  If your icons have semantic meaning, you have to manually add a few things to make it accessible. There are two methods, non-interactive and interactive, so choose the one that suits your use case.
+</p>
+
+<h4 id="non-interactive">Non-interactive icons</h4>
+<p>
+  Ideally, any icon would also have a visible label associated with it. But if you must use an icon without a visible label, follow the guidance below to make it accessible.
+</p>
+<p>
+  For icons used on non-focusable elements, manually add the following for accessibility:
+</p>
+<ul>
+  <li><code>aria-hidden="true"</code> attribute.</li>
+  <li>A text-alternative inside of a <code>span</code> tag. Include a CSS class to visually hide this text, while keeping it visible to assistive technology.</li>
+  <li><code>title</code> attribute on the icon to provide a tooltip for sighted mouse users.</li>
+</ul>
+
+<h5>Non-interactive example</h5>
+<pre>
+  <code class="language-html">
+&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt; 
+&lt;span class="sr-only"/&gt;Time to complete:&lt;/span&gt;
+&lt;span&gt;4 minutes&lt;/span&gt;
+  </code>
+</pre>
+
+<h4 id="interactive">Interactive icons</h4>
+<p>
+  If an icon is a focusable interactive element, you do not need to add visually hidden alternative text as described
+  above. In this case, an <code>aria-label</code> with a text description on the interactive element is sufficient. A <span>title</span> attribute can also be added to provide a tooltip for sighted mouse users.
+</p>
+
+<h5>Interactive example</h5>
+<p>
+  In this example, the link element contains the alternative text, the icon inside of it is decorative.
+</p>
+<pre>
+  <code class="language-html">
+&lt;a href="#" aria-label="View inbox, you have unread messages"&gt;
+  View inbox &lt;i aria-hidden="true" class="fas fa-circle"&gt;&lt;/i&gt;
+&lt;/a&gt;
+  </code>
+</pre>
+<p>
+  As stated earlier, ideally, the following example would have a visible text label. Use this example with caution.
+</p>
+<pre>
+  <code class="language-html">
+&lt;a href="#" aria-label="View calendar"&gt;
+  &lt;i aria-hidden="true" class="fas fa-calendar" title="View calendar"&gt;&lt;/i&gt;
+&lt;/a&gt;
+  </code>
+</pre>

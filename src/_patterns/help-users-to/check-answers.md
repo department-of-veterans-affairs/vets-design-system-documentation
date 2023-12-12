@@ -22,25 +22,10 @@ anchors:
 
 ### How this pattern works
 
-- Each chapter should be its own accordion.
-- List chapters in chronological order.
-- ‘File upload’ and ‘Add another’ sections should be in the gray card style.
-- ‘Add another’ primary button should be placed at the bottom left on cards that allow users to add information.
-- ‘Delete file’ secondary button should be placed at the bottom left on cards that allow users to upload files
-
-### Layout details
-
-- Show the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) along with the chapter title: Review application.
-- Use bordered, multi-selectable [accordions]({{ site.baseurl }}/components/accordion).
-- When an accordion is open, each section within a chapter should have a secondary “Edit” button in the top right.
-- Underneath the accordions include the note:
-> Note: According to federal law, there are criminal penalties, including a fine and/or imprisonment for up to 5 years, for withholding information or for providing incorrect information (See 18 U.S.C. 1001).
-- Following the note also include the [Privacy agreement]({{ site.baseurl }}/components/privacy-agreement).
-- [Button pair]({{ site.baseurl }}/components/button/button-pair): Secondary button labeled “Back” and Default blue button labeled “Submit application”
-- Last saved application date and time in green background color only alert style
-- Finish this application later default link 
-
-**Note:** This content will vary depending on your form. Work with your content specialist or check out the form labels. 
+- Use the [Review page template]({{ site.baseurl }}/templates/forms/review).
+- Each chapter or step should have a corresponding [Accordion]({{ site.baseurl }}/components/accordion).
+- Chapters or steps are listed in chronological order matching the flow of the process.
+- ‘File upload’ and ‘Add another’ sections should use the same presentation style used on their step pages. For example, the [grey Card]{{site.baseurl}}/components/card) variation.
 
 ### Components used in this pattern
 
