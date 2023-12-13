@@ -36,6 +36,8 @@ anchors:
 
 ### How this component works
 
+* **Use with the [Footer - Minimal]({{ site.baseurl }}/components/footer/footer-minimal).** The minimal header should be used in conjunction with the minimal footer.
+
 ### Behavior
 
 * **Set form title as header and sub-header.** The minimal header has header and subheader props that allow for setting the title of the form and the form number, respectively. Use of this component is intended for form flows and in particular when the h1 of the page is being to ask the user a question in keeping with the One Thing Per Page content principle.
