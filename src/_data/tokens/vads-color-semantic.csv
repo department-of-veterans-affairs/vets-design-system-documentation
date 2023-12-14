@@ -7,7 +7,13 @@ vads-color-base-darkest,Semantic,vads-color-base-darkest,uswds-system-color-gray
 vads-color-base-light,Semantic,vads-color-base-light,uswds-system-color-gray-cool-30,#a9aeb1,vads-color-gray-light,
 vads-color-base-lighter,Semantic,vads-color-base-lighter,uswds-system-color-gray-cool-10,#dfe1e2,vads-color-gray-lighter,
 vads-color-base-lightest,Semantic,vads-color-base-lightest,uswds-system-color-gray-5,#f0f0f0,vads-color-gray-lightest,
-vads-color-error,Semantic,vads-color-error,uswds-system-color-red-vivid-60,#b21d38,,
+vads-color-emergency,Semantic,vads-color-emergency,uswds-system-color-red-warm-60v,#9c3d10,,$theme-color-emergency from USWDS
+vads-color-emergency-dark,Semantic,vads-color-emergency-dark,uswds-system-color-red-warm-80,#332d29,,$theme-color-emergency-dark from USWDS
+vads-color-error,Semantic,vads-color-error,uswds-system-color-red-warm-50v,#d54309,,$theme-color-error from USWDS
+vads-color-error-dark,Semantic,vads-color-error-dark,uswds-system-color-red-vivid-60,#b21d38,,$theme-color-error-dark from USWDS
+vads-color-error-darker,Semantic,vads-color-error-darker,uswds-system-color-red-70,#6f3331,,$theme-color-error-darker from USWDS
+vads-color-error-light,Semantic,vads-color-error-light,uswds-system-color-red-warm-30v,#f39268,,$theme-color-error-light from USWDS
+vads-color-error-lighter,Semantic,vads-color-error-lighter,uswds-system-color-red-warm-10,#f4e3db,,$theme-color-error-lighter from USWDS
 vads-color-gibill-accent,Semantic,vads-color-gibill-accent,,#fef0c8,vads-color-gold-lightest,
 vads-color-hub-burials,Semantic,vads-color-hub-burials,uswds-system-color-blue-50,#2378c3,,
 vads-color-hub-careers,Semantic,vads-color-hub-careers,uswds-system-color-orange-warm-50,#bd5727,,
@@ -38,12 +44,21 @@ vads-color-primary-alt-light,Semantic,vads-color-primary-alt-light,uswds-system-
 vads-color-primary-alt-lightest,Semantic,vads-color-primary-alt-lightest,uswds-system-color-blue-cool-5v,#e1f3f8,,
 vads-color-primary-dark,Semantic,vads-color-primary-dark,uswds-system-color-blue-warm-70v,#1a4480,,
 vads-color-primary-darker,Semantic,vads-color-primary-darker,uswds-system-color-blue-warm-80v,#162e51,,"Shifts to primary-dark, takes on primary-darkest"
+vads-color-primary-light,Semantic,vads-color-primary-light,uswds-system-color-blue-30,#73b3e7,,
 vads-color-primary-lighter,Semantic,vads-color-primary-lighter,uswds-system-color-blue-10,#d9e8f6,,
 vads-color-secondary,Semantic,vads-color-secondary,uswds-system-color-red-50,#d83933,,$theme-color-secondary
 vads-color-secondary-dark,Semantic,vads-color-secondary-dark,uswds-system-color-red-60v,#b50909,,$theme-color-secondary-dark
 vads-color-secondary-darkest,Semantic,vads-color-secondary-darkest,uswds-system-color-red-70v,#8b0a03,,$theme-color-secondary-darker
 vads-color-secondary-light,Semantic,vads-color-secondary-light,uswds-system-color-red-30,#f2938c,,$theme-color-secondary-light
 vads-color-secondary-lightest,Semantic,vads-color-secondary-lightest,uswds-system-color-red-cool-10v,#f8dfe2,,$theme-color-secondary-lighter
-vads-color-success,Semantic,vads-color-success,,#008817,vads-color-green,
+vads-color-success,Semantic,vads-color-success,uswds-system-color-green-cool-40v,#00a91c,,$theme-color-success from USWDS
+vads-color-success-dark,Semantic,vads-color-success-dark,uswds-system-color-green-cool-50v,#008817,,$theme-color-success-dark from USWDS
+vads-color-success-darker,Semantic,vads-color-success-darker,uswds-system-color-green-cool-60v,#216e1f,,$theme-color-success-darker from USWDS
+vads-color-success-light,Semantic,vads-color-success-light,uswds-system-color-green-cool-20v,#70e17b,,$theme-color-success-light from USWDS
+vads-color-success-lighter,Semantic,vads-color-success-lighter,uswds-system-color-green-cool-5,#ecf3ec,,$theme-color-success-lighter from USWDS
 vads-color-va-accent,Semantic,vads-color-va-accent,uswds-system-color-yellow-50,#8a7237,,Used in the table and desktop main navigation menu as a top border highlight color. Should be replaced by vads-main-menu-color-border-top-open-on-light
-vads-color-warning-message,Semantic,vads-color-warning-message,,#faf3d1,vads-alert-color-background-warning-on-light,
+vads-color-warning,Semantic,vads-color-warning,uswds-system-color-gold-20v,#ffbe2e,,$theme-color-warning from USWDS
+vads-color-warning-dark,Semantic,vads-color-warning-dark,uswds-system-color-gold-30v,#e5a000,,$theme-color-warning-dark from USWDS
+vads-color-warning-darker,Semantic,vads-color-warning-darker,uswds-system-color-gold-50v,#936f38,,$theme-color-warning-darker from USWDS
+vads-color-warning-light,Semantic,vads-color-warning-light,uswds-system-color-yellow-10v,#fee685,,$theme-color-warning-light from USWDS
+vads-color-warning-lighter,Semantic,vads-color-warning-lighter,uswds-system-color-yellow-5,#faf3d1,vads-alert-color-background-warning-on-light,$theme-color-warning-lighter from USWDS

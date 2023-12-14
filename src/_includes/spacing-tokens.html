@@ -1,20 +1,31 @@
+{% assign token_type = include.type %}
 <table class="usa-table usa-table-borderless">
   <thead>
     <tr>
       <th scope="col">Token</th>
       <th scope="col">Value</th>
+      {% if token_type == "primitive" %}
       <th scope="col">Example</th>
+      {% endif %}
     </tr>
   </thead>
   <tbody>
     {% for item in include.spacing %}
     <tr>
       <th scope="row"><code class="code">{{ item.vads-name }}</code></th>
-      <td>{{ item.value-from-uswds-design-token }}</td>
+      <td>
+        {% if item.value-from-uswds-design-token %}
+          {{ item.value-from-uswds-design-token }}
+        {% else %}
+          {{ item.vads-alias }}
+        {% endif %}
+      </td>
+      {% if token_type == "primitive" %}
       <td>
         <div class="vads-u-background-color--primary" style="height: {{ item.value-from-uswds-design-token }}">
         </div>
       </td>
+      {% endif %}
     </tr>
     {% endfor %}
   </tbody>
