@@ -25,17 +25,17 @@ vads-input-border-color-on-light,Component,vads-input-border-color-on-light,,#56
 vads-input-prefix-color-fill-on-light,Component,vads-input-prefix-color-fill-on-light,,#757575,vads-label-hint-text-color-on-light,Form input prefix for icon fill. Same as vads-input-prefix-color-text-on-light and hint-text color.
 vads-input-prefix-color-text-on-light,Component,vads-input-prefix-color-text-on-light,,#757575,vads-label-hint-text-color-on-light,Form input prefix for text. Same as hint-text color.
 vads-input-suffix-color-text-on-light,Component,vads-input-suffix-color-text-on-light,,#757575,vads-label-hint-text-color-on-light,Form input suffix for text. Same as hint-text color.
-vads-input-tile-background-active-on-light,Component,vads-input-tile-background-active-on-light,,"rgba(0,94,162,.1)",,
-vads-input-tile-border-active-on-light,Component,vads-input-tile-border-active-on-light,,#005ea2,vads-color-primary,
-vads-input-tile-border-on-light,Component,vads-input-tile-border-on-light,,"rgba(27,27,27,.3)",,
-vads-label-color-on-light,Component,vads-label-color-on-light,,#1b1b1b,vads-color-base,Form label text color
-vads-label-hint-text-color-on-light,Component,vads-label-hint-text-color-on-light,uswds-system-color-gray-50,#757575,,Form label hint-text color
-vads-link-color-background-active-on-light,Component,vads-link-color-background-active-on-light,,"rgba(0,0,0,0.05)",,
-vads-link-color-background-hover-on-light,Component,vads-link-color-background-hover-on-light,,"rgba(0,0,0,0.05)",,"Not sure why we can't just pick a gray here, but this is how it's implemented in production."
+vads-input-tile-background-active-on-light,Component,vads-input-tile-background-active-on-light,,"rgba(0,94,162,.1)",,Background color for the active state for checkbox and radio button Tile variations.
+vads-input-tile-border-active-on-light,Component,vads-input-tile-border-active-on-light,,#005ea2,vads-color-primary,Border color for the active state for checkbox and radio button Tile variations.
+vads-input-tile-border-on-light,Component,vads-input-tile-border-on-light,,"rgba(27,27,27,.03)",,Default border color for checkbox and radio button Tile variations.
+vads-label-color-on-light,Component,vads-label-color-on-light,,#1b1b1b,vads-color-base,Form label text color. Same as base color.
+vads-label-hint-text-color-on-light,Component,vads-label-hint-text-color-on-light,uswds-system-color-gray-50,#757575,,Form label hint-text color. Only passes contrast ratio on a white background.
+vads-link-color-background-active-on-light,Component,vads-link-color-background-active-on-light,,"rgba(0,0,0,0.05)",,Background highlight color when a standard link is active. Same as the background color in the hover state.
+vads-link-color-background-hover-on-light,Component,vads-link-color-background-hover-on-light,,"rgba(0,0,0,0.05)",,Background highlight color when hovering over standard links.
 vads-link-color-text-active-on-light,Component,vads-link-color-text-active-on-light,,#1a4480,vads-color-primary-dark,"Link text color on hover, which is combined with a darker background"
 vads-link-color-text-hover-on-light,Component,vads-link-color-text-hover-on-light,,#1b1b1b,vads-color-base,"Link text color on hover, which is combined with a darker background"
-vads-main-menu-color-border-top-open-on-light,Component,vads-main-menu-color-border-top-open-on-light,uswds-system-color-yellow-50,#8a7237,,Replaces va-accent
-vads-modal-overlay-color-background,Component,vads-modal-overlay-color-background,,"rgba(50,58,69,.8) <-- rgba(uswds-system-color-gray-cool-70, 0.8)",,
-vads-process-list-color-text-pending-on-light,Component,vads-process-list-color-text-pending-on-light,uswds-system-color-gray-50,#757575,,
-vads-sidenav-color-background,Component,vads-sidenav-color-background,,"rgba(#000000, 0.25);",,
+vads-main-menu-color-border-top-open-on-light,Component,vads-main-menu-color-border-top-open-on-light,uswds-system-color-yellow-50,#8a7237,,Replaces va-accent.
+vads-modal-overlay-color-background,Component,vads-modal-overlay-color-background,,"rgba(50,58,69,.8)",,Color of the modal background that hides the content behind the modal. Uses uswds-system-color-gray-cool-70 at .8 opacity.
+vads-process-list-color-text-pending-on-light,Component,vads-process-list-color-text-pending-on-light,uswds-system-color-gray-50,#757575,,Items in the process list that are in a pending state use this color.
+vads-sidenav-color-background,Component,vads-sidenav-color-background,,"rgba(0,0,0,0, 0.25);",,Background color of the sidenav.
 vads-toolbar-background-on-light,Component,vads-toolbar-background-on-light,uswds-system-color-gray-2,#f9f9f9,,Flagship mobile app toolbar background

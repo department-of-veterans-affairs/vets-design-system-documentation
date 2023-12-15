@@ -3,6 +3,7 @@ layout: default
 title: Color palette
 anchors:
   - anchor: Semantic color tokens
+  - anchor: Component color tokens
   - anchor: Primitive color tokens
   - anchor: v1 colors
 ---
@@ -16,7 +17,6 @@ anchors:
 {% include _site-on-this-page.html %}
 
 <h2 id="semantic-color-tokens">Semantic color tokens</h2>
-
 {% assign semantic = site.data.tokens.vads-color-semantic %}
 <div class="site-showcase">
   <div class="vads-l-row">
@@ -32,6 +32,21 @@ anchors:
   </div>
 </div>
 
+<h2 id="component-color-tokens">Component color tokens</h2>
+{% assign component = site.data.tokens.vads-color-component %}
+<div class="site-showcase">
+  <div class="vads-l-row">
+    {% for item in component %}
+      {% include _colors-v3.html
+          name=item.vads-name
+          hex=item.final-hex-value
+          uswds=item.uswds-design-token
+          alias=item.vads-alias
+          desc=item.description
+      %}
+    {% endfor %}
+  </div>
+</div>
 
 <h2 id="primitive-color-tokens">Primitive color tokens</h2>
 {% assign primitives = site.data.tokens.vads-color-primitives %}
