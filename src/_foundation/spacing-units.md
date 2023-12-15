@@ -29,10 +29,18 @@ The VA follows the USWDS spacing unit tokens and then adds additional semantic t
 ### Primitive
 
 {% assign spacing_primitive = site.data.tokens.vads-spacing-primitive %}
-{% include spacing-tokens.html spacing=spacing_primitive %}
+{% include spacing-tokens.html 
+    spacing=spacing_primitive 
+    type="primitive" 
+%}
 
 ### Semantic
 
+{% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
+{% include spacing-tokens.html 
+    spacing=spacing_semantic 
+    type="semantic"
+%}
 
 ## Using the spacing tokens
 

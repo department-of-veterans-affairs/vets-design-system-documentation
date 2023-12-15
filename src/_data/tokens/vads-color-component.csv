@@ -1,0 +1,41 @@
+﻿Name,type,vads-name,uswds-design-token,final-hex-value,vads-alias,description
+vads-alert-color-background-error-on-light,Component,vads-alert-color-background-error-on-light,,#f4e3db,vads-color-error-lighter,Background color for error alerts
+vads-alert-color-background-info-on-light,Component,vads-alert-color-background-info-on-light,,#e7f6f8,vads-color-info-lighter,Background color for informational alerts
+vads-alert-color-background-success-on-light,Component,vads-alert-color-background-success-on-light,,#ecf3ec,vads-color-success-lighter,Background color for success alerts
+vads-alert-color-background-warning-on-light,Component,vads-alert-color-background-warning-on-light,,#faf3d1,vads-color-warning-lighter,Background color for warning alerts
+vads-alert-color-border-error-on-light,Component,vads-alert-color-border-error-on-light,,#d54309,vads-color-error,Border color for error alerts
+vads-alert-color-border-info-on-light,Component,vads-alert-color-border-info-on-light,,#00bde3,vads-color-info,Border color for informational alerts
+vads-alert-color-border-success-on-light,Component,vads-alert-color-border-success-on-light,,#00a91c,vads-color-success,Border color for success alerts
+vads-alert-color-border-warning-on-light,Component,vads-alert-color-border-warning-on-light,,#ffbe2e,vads-color-warning,Border color for warning alerts
+vads-button-color-background-primary-active-on-light,Component,vads-button-color-background-primary-active-on-light,,#162e51,vads-color-primary-darkest,Background color for primary buttons - active state
+vads-button-color-background-primary-alt-active-on-light,Component,vads-button-color-background-primary-alt-active-on-light,,#154c21,vads-color-green-darker,Background color for primary alt buttons - active state
+vads-button-color-background-primary-alt-hover-on-light,Component,vads-button-color-background-primary-alt-hover-on-light,,#216e1f,vads-color-green-dark,Background color for primary alt buttons - hover state
+vads-button-color-background-primary-alt-on-light,Component,vads-button-color-background-primary-alt-on-light,,#008817,vads-color-green,Background color for primary alt buttons
+vads-button-color-background-primary-hover-on-light,Component,vads-button-color-background-primary-hover-on-light,,#1a4480,vads-color-primary-darker,Background color for primary buttons - hover state
+vads-button-color-background-primary-on-light,Component,vads-button-color-background-primary-on-light,,#005ea2,vads-color-primary,Background color for primary buttons
+vads-button-color-background-secondary-on-light,Component,vads-button-color-background-secondary-on-light,,#ffffff,vads-color-white,Background color for secondary buttons
+vads-button-color-text-primary-alt-on-light,Component,vads-button-color-text-primary-alt-on-light,,#ffffff,vads-color-white,Text color for primary alt buttons
+vads-button-color-text-primary-on-light,Component,vads-button-color-text-primary-on-light,,#ffffff,vads-color-white,Text color for primary buttons
+vads-button-color-text-secondary-active-on-light,Component,vads-button-color-text-secondary-active-on-light,,#162e51,vads-color-primary-darkest,Background color for primary buttons - active state
+vads-button-color-text-secondary-hover-on-light,Component,vads-button-color-text-secondary-hover-on-light,,#1a4480,vads-color-primary-darker,Background color for primary buttons - hover state
+vads-button-color-text-secondary-on-light,Component,vads-button-color-text-secondary-on-light,,#005ea2,vads-color-white,Text color for primary buttons
+vads-featured-content-color-background,Component,vads-featured-content-color-background,,#e7f6f8,vads-color-info-lighter,Featured content component background color.
+vads-input-background-color-on-light,Component,vads-input-background-color-on-light,,#ffffff,vads-color-white,Form input background color
+vads-input-border-color-on-light,Component,vads-input-border-color-on-light,,#565c65,vads-color-base-dark,Form input border color
+vads-input-prefix-color-fill-on-light,Component,vads-input-prefix-color-fill-on-light,,#757575,vads-label-hint-text-color-on-light,Form input prefix for icon fill. Same as vads-input-prefix-color-text-on-light and hint-text color.
+vads-input-prefix-color-text-on-light,Component,vads-input-prefix-color-text-on-light,,#757575,vads-label-hint-text-color-on-light,Form input prefix for text. Same as hint-text color.
+vads-input-suffix-color-text-on-light,Component,vads-input-suffix-color-text-on-light,,#757575,vads-label-hint-text-color-on-light,Form input suffix for text. Same as hint-text color.
+vads-input-tile-background-active-on-light,Component,vads-input-tile-background-active-on-light,,"rgba(0,94,162,.1)",,Background color for the active state for checkbox and radio button Tile variations.
+vads-input-tile-border-active-on-light,Component,vads-input-tile-border-active-on-light,,#005ea2,vads-color-primary,Border color for the active state for checkbox and radio button Tile variations.
+vads-input-tile-border-on-light,Component,vads-input-tile-border-on-light,,"rgba(27,27,27,.03)",,Default border color for checkbox and radio button Tile variations.
+vads-label-color-on-light,Component,vads-label-color-on-light,,#1b1b1b,vads-color-base,Form label text color. Same as base color.
+vads-label-hint-text-color-on-light,Component,vads-label-hint-text-color-on-light,uswds-system-color-gray-50,#757575,,Form label hint-text color. Only passes contrast ratio on a white background.
+vads-link-color-background-active-on-light,Component,vads-link-color-background-active-on-light,,"rgba(0,0,0,0.05)",,Background highlight color when a standard link is active. Same as the background color in the hover state.
+vads-link-color-background-hover-on-light,Component,vads-link-color-background-hover-on-light,,"rgba(0,0,0,0.05)",,Background highlight color when hovering over standard links.
+vads-link-color-text-active-on-light,Component,vads-link-color-text-active-on-light,,#1a4480,vads-color-primary-dark,"Link text color on hover, which is combined with a darker background"
+vads-link-color-text-hover-on-light,Component,vads-link-color-text-hover-on-light,,#1b1b1b,vads-color-base,"Link text color on hover, which is combined with a darker background"
+vads-main-menu-color-border-top-open-on-light,Component,vads-main-menu-color-border-top-open-on-light,uswds-system-color-yellow-50,#8a7237,,Replaces va-accent.
+vads-modal-overlay-color-background,Component,vads-modal-overlay-color-background,,"rgba(50,58,69,.8)",,Color of the modal background that hides the content behind the modal. Uses uswds-system-color-gray-cool-70 at .8 opacity.
+vads-process-list-color-text-pending-on-light,Component,vads-process-list-color-text-pending-on-light,uswds-system-color-gray-50,#757575,,Items in the process list that are in a pending state use this color.
+vads-sidenav-color-background,Component,vads-sidenav-color-background,,"rgba(0,0,0,0, 0.25);",,Background color of the sidenav.
+vads-toolbar-background-on-light,Component,vads-toolbar-background-on-light,uswds-system-color-gray-2,#f9f9f9,,Flagship mobile app toolbar background

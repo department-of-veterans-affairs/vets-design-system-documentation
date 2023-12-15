@@ -1,0 +1,9 @@
+﻿Name,type,vads-name,vads-alias,description
+vads-forms-spacing-vertical-stack-default,Semantic,vads-forms-spacing-vertical-stack-default,vads-spacing-vertical-stack-l,Default spacing between form fields
+vads-spacing-inset-l,Semantic,vads-spacing-inset-l,vads-spacing-4,"Spacing within an item (internal padding), large"
+vads-spacing-inset-m,Semantic,vads-spacing-inset-m,vads-spacing-3,"Spacing within an item (internal padding), medium"
+vads-spacing-inset-s,Semantic,vads-spacing-inset-s,vads-spacing-2,"Spacing within an item (internal padding), small"
+vads-spacing-vertical-stack-default,Semantic,vads-spacing-vertical-stack-default,vads-spacing-vertical-stack-s,Default spacing between vertically stacked items
+vads-spacing-vertical-stack-l,Semantic,vads-spacing-vertical-stack-l,vads-spacing-4,"Spacing between items in a stack, large"
+vads-spacing-vertical-stack-m,Semantic,vads-spacing-vertical-stack-m,vads-spacing-3,"Spacing between items in a stack, medium"
+vads-spacing-vertical-stack-s,Semantic,vads-spacing-vertical-stack-s,vads-spacing-2,"Spacing between items in a stack, small"
