@@ -64,7 +64,7 @@ Apply for a United States burial flag to place over a casket or coffin, or place
 * In general, put a link on a separate line to help it stand out. Exception: Putting a link at the end of a sentence is OK if space is limited, like intro copy or alerts.
 
 {% capture example_like_this_1 %}
-**Put links on their own line**
+Put links on their own line
 <ul>
   <li>Trouble breathing</li>
   <li>Persistent (continuing) pain or pressure in the chest</li>
@@ -122,7 +122,7 @@ You can apply online or mail your [Application for Burial Benefits (VA Form 21P-
 
 ## Linking to documents and other file sources
 * Avoid linking to PDFs as much as possible. 
-* If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System. [Review examples of link variations in the Components section]({{ site.baseurl }}/components/links/)
+* If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System. [Review examples of link variations in the Components section]({{ site.baseurl }}/components/link/)
 
 ## Linking to external sites
 
