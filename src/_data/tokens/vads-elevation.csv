@@ -1,0 +1,6 @@
+﻿Name,type,vads-name,value,vads-alias,value-from-vads-alias,description
+vads-elevation-z-index-base,Primitive,vads-elevation-z-index-base,0,,,Base layer of elevation
+vads-elevation-z-index-level-1,Primitive,vads-elevation-z-index-level-1,100,,,Level 1 of elevation layers.
+vads-elevation-z-index-level-2,Primitive,vads-elevation-z-index-level-2,200,,,Level 2 of elevation layers.
+vads-elevation-z-index-level-3,Primitive,vads-elevation-z-index-level-3,300,,,Level 3 of elevation layers.
+vads-elevation-z-index-level-4,Primitive,vads-elevation-z-index-level-4,400,,,Level 4 of elevation layers.
