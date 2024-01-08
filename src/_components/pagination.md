@@ -5,6 +5,7 @@ status: use-deployed
 sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/DFDEF51F-1013-4214-A1DD-C4718E0E6BDD/canvas
 intro-text: "Pagination is navigation for paginated content."
 web-component: va-pagination
+uswds-v3: default
 anchors:
   - anchor: Examples - v1
   - anchor: Examples - v3
