@@ -46,7 +46,7 @@ anchors:
 
 Use the [File input](https://design.va.gov/components/form/file-input) component along with the following content placed above it:
 
-- Header 
+- Header
 - Instructions on what file(s) to upload
 - Bullet list of allowed file types and sizes
 
@@ -66,6 +66,10 @@ The upload button will be replaced by a gray card with the [Progress bar - Activ
 
 When a document has successfully uploaded, the card will display the uploaded file name in bold with an option to delete the file. Depending on the form, there may be a dropdown in the card to select the document type. If multiple files are allowed, the upload button will move beneath the card to give the user the option of adding more files one-by-one.
 
+#### Delete state
+
+When a user triggers an action to remove or delete an upload file a modal confirming their action is presented. Within the modal the user can confirm and continue or cancel their action. This prevents accidental removal of the file which is an action that cannot otherwise be easily undone (the user would have to repeat the uplaod process).
+
 #### Error state
 
 {% include storybook-preview.html story="components-va-file-input--error-message#error-message" link_text="va-file-input--error-message" %}
@@ -80,4 +84,5 @@ When a document has successfully uploaded, the card will display the uploaded fi
 
 ## Accessibility considerations
 
-- Do not italicize file type and size help text. Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
+* **Do not italicize file type and size help text.** Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
+* **Ask for confirmation when deleting files.** Destructive actions like deleting files should require two steps by users --- the initial button click, and then a confirmation. This helps prevent users from accidentally deleting a file with an unintentional click, and provides an extra prompt for screen reader users and screen magnification users who might not see the visual change when a file is removed.
