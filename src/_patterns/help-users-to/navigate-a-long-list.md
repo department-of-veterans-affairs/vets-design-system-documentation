@@ -41,25 +41,25 @@ anchors:
 
 {% include component-example.html alt="Show more options mock-up screen examples." file="/images/patterns/help-users-to/navigate-a-long-list/interactions-v2.png" caption="The anatomy of the help users to navigate a long list pattern." %}
 
-1. **Default state**. A mobile screen of a page in a VA.gov form flow. The form question consists of a list with ten total options. 5 options are displayed. A link underneath reads "+ show 5 more options"
+1. **Default state**. A mobile screen of a page in a VA.gov form flow. The form question consists of a list with ten total options. 5 options are displayed. A button underneath reads "Show past updates (3)"
 2. **Default state - sorter**. A dropdown labeled "Sort these options".
 3. **Default state - radio options**. Five generic radio buttons.
-4. **Default state - show more button or link**. Show more button or link exists between the options and the navigation buttons.
-5. **State when all options are showing**. A mobile screen of a page in a VA.gov form flow. Same as the first except 10 radio buttons are showing, and the link is not.
-6.  **State when there are only 5 total options**. A mobile screen of a page in a VA.gov form flow. Same as the first except there is no link or button to show more options.
+4. **Default state - show more button**. Show more button exists between the options and the navigation buttons.
+5. **State when all options are showing**. A mobile screen of a page in a VA.gov form flow. Same as the first except 10 radio buttons are showing, and the button is not.
+6.  **State when there are only 5 total options**. A mobile screen of a page in a VA.gov form flow. Same as the first except there is no button to show more options.
 
 ### How this pattern works
 
 * Given a long list of options, only the first 5 options are displayed. 
-* A button or link below the options acts as a trigger for revealing additional options.
-  * This button or link does not appear if there are 5 or less options.
-* Clicking the button or link displays more options, 5 at a time.
-* Once all options are displayed, the button or link disappears, or changes label ("Hide options").
+* A button below the options acts as a trigger for revealing additional options.
+  * This button does not appear if there are 5 or less options.
+* Clicking the button displays more options, 5 at a time.
+* Once all options are displayed, the button disappears.
 * Once the additional options are revealed, there may be no need, and thus no mechanism, to hide them.
 
 ### Components used in this pattern
 
-* [Link]({{ site.baseurl }}/components/link)
+* [Button]({{ site.baseurl }}/components/button)
 
 ### Page templates available for this pattern
 
@@ -68,11 +68,11 @@ anchors:
 
 ## Content considerations
 
-The text of the trigger link should be in the following format:
+The text of the trigger button should be in the following format:
 
-> "+ show [#] more [name of option]" 
+> "Show [name of option] (#)" 
 
-For example, "+ 5 more locations"
+For example, "Show past updates (3)"
 
 ## Accessibility considerations
 
