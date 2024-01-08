@@ -4,29 +4,50 @@ title: Search Input
 intro-text: "The Search input component lives in the global header of VA.gov and on search results pages, and can be paired with type-ahead functionality. Type-ahead displays up to five suggested search terms in a dropdown below the Search input field while the user is typing a query. The goal of type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type."
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2D81882E-4732-40FD-961B-C1DECA9FCDF1/canvas
 status: use-deployed
+uswds-v3: primary
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Type-ahead behavior
   - anchor: Code usage
 web-component: va-search-input
 ---
 
-## Examples
+## Examples - v1
 
 ### Default
 
-{% include storybook-preview.html story="components-va-search-input--default" link_text="va-search-input" %}
+{% include storybook-preview.html story="components-va-search-input--default" link_text="va-search-input default and additional variations" %}
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-search-input--default" link_text="va-search-input v3 Default" %}
 
 ### With button text
 
-{% include storybook-preview.html story="components-va-search-input--with-button-text" link_text="va-search-input" %}
+{% include storybook-preview.html story="uswds-va-search-input--with-button-text" link_text="va-search-input v3 with Button text" %}
 
-### With Type-ahead
+### Big
 
-{% include storybook-preview.html story="components-va-search-input--with-typeahead" link_text="va-search-input" %}
+{% include storybook-preview.html story="uswds-va-search-input--big" link_text="va-search-input v3 Big" %}
+
+### Small
+
+{% include storybook-preview.html story="uswds-va-search-input--small" link_text="va-search-input v3 small" %}
+
+### With Typeahead
+
+{% include storybook-preview.html story="uswds-va-search-input--with-typeahead" link_text="va-search-input v3 with typeahead" %}
+
 
 ## Usage
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/search">Refer to the U.S. Web Design System for usage guidance</a>
+
+### Additional guidance for VA
 
 ### When to use search input with type-ahead
 
@@ -98,3 +119,7 @@ Search.gov's implementation of type-ahead does support fuzzy string matching to 
 ### Additional coding guidelines for type-ahead
 
 The va-search component behaves as an input field with a submit button by default. In order to add type-ahead functionality, pass an array of suggestions that will be displayed below the input field. However, this component does not include logic to generate those suggestions.
+
+## Accessibility considerations
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/search/#accessibility-search">Refer to the U.S. Web Design System for accessibility guidance</a>
