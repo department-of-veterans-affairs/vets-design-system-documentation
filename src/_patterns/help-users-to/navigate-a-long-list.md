@@ -33,9 +33,7 @@ anchors:
 
 ## Examples
 
-{% include component-example.html alt="Show more options screen example from the VA Online Scheduling application." file="/images/patterns/help-users-to/navigate-a-long-list/vaos-choose-location.png" caption="The VA Online Scheduling application uses this pattern for choosing VA facility locations." width="50%" %}
-
-{% include component-example.html alt="Help users to navigate a long list example from the VA Claim Status tool." file="/images/patterns/help-users-to/navigate-a-long-list/claim-status-tool.gif" caption="The VA Claim Status tools uses this pattern for navigating a long list of older updates to a claim." width="75%" %}
+{% include component-example.html alt="Help users to navigate a long list example from the VA Claim Status tool." file="/images/patterns/help-users-to/navigate-a-long-list/claim-status-tool-long-list.png" caption="The VA Claim Status tools uses this pattern for navigating a long list of older updates to a claim." class="x2" %}
 
 ## How to design and build 
 
