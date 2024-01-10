@@ -4,8 +4,11 @@ title: "Featured content"
 status: use-deployed
 intro-text: "The featured content component helps Veterans quickly identify must-read information on a page. Use this component to highlight a small chunk of the most important information on a page, like eligibility criteria or coverage under a particular VA benefit."
 sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5D59FDA9-A9F3-492C-AF41-F48CF5117F04
+uswds-v3: default
+aka: Summary box
 anchors:
-  - anchor: Examples
+  - anchor: Examples - v1
+  - anchor: Examples - v3
   - anchor: Usage
   - anchor: Variations
   - anchor: Code usage
@@ -14,11 +17,23 @@ anchors:
 web-component: va-featured-content
 ---
 
-## Examples
+## Examples - v1
+
+### Default
 
 {% include storybook-preview.html height="250px" story="components-va-featured-content--default" link_text="va-featured-content" %}
 
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="250px" story="uswds-va-featured-content--default" link_text="va-featured-content" %}
+
 ## Usage
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/summary-box/">Refer to the U.S. Web Design System for usage guidance</a>
+
+### Additional guidance for VA
 
 ### When to use featured content
 
@@ -78,3 +93,7 @@ Code for this component is shown in Storybook. Follow the link provided in [exam
 ## Content considerations
 
 * **Keep content brief.** If there are more than 5 bullet points, the bullet points are longer than 20 words, or the bullet points require a header, image or button consider using simple body text, headings, and lists instead.
+
+## Accessibility considerations
+
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/summary-box/#accessibility-summary-box">Refer to the U.S. Web Design System for accessibility guidance</a>
