@@ -28,17 +28,25 @@ anchors:
 
 ## Examples
 
-### Default state
+### Default
 
-{% include component-example.html alt="The default state of file upload." file="/images/patterns/ask-users-for/files/file-upload-input.png" caption="File upload in the default state before a user has interacted with the upload button." %}
+{% include component-example.html alt="The default state of file upload." file="/images/patterns/ask-users-for/files/0955-default.png" caption="File upload in the default state before a user has interacted with the upload button." class="x2" %}
 
-### Loading state
+### Loading
 
 {% include component-example.html alt="The loading state of file upload." file="/images/patterns/ask-users-for/files/file-upload-loading.png" caption="The loading state of file upload uses the Progress bar - Activity component to give feedback to the user that the system is uploading their file." width="50%" %}
 
-### Review state
+### Review
 
-{% include component-example.html alt="The review state of file upload." file="/images/patterns/ask-users-for/files/file-upload-review.png" caption="The review state of file upload includes a card with the file name and an option to delete the file." width="50%" %}
+{% include component-example.html alt="The review state of file upload." file="/images/patterns/ask-users-for/files/0955-review.png" caption="The review state of file upload includes a card with the file name and an option to delete the file." class="x2" %}
+
+#### Review with PDF password option
+
+{% include component-example.html alt="The review state of file upload with an option of providing a password to a file." file="/images/patterns/ask-users-for/files/0955-pdf-password-added.png" caption="The review state of file upload can allow a user to provide a password to a password-protected file." class="x2" reverse="true" %}
+
+### Delete
+
+{% include component-example.html alt="The delete state of file upload." file="/images/patterns/ask-users-for/files/0955-modal-detail.png" caption="The review state of file upload includes a card with the file name and an option to delete the file." class="x2" %}
 
 ## How to design and build
 
@@ -54,28 +62,34 @@ Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can
 
 ### How this pattern works
 
-#### Default state
+#### Default
 
 The File input component default state uses a secondary button and label placed in close proximity beneath the document upload instructions. When the user clicks the upload button a browser window will open to allow them to navigate to and select their file.
 
-#### Loading state
+#### Loading
 
-The upload button will be replaced by a gray card with the [Progress bar - Activity](https://design.va.gov/components/progress-bar/) component to indicate the progress of the document upload. The user will see the name of the file and have the option to cancel the upload.
+The upload button will be replaced by a [gray card]({{ site.baseurl }}/components/card) with the [Progress bar - Activity]({{ site.baseurl }}/components/progress-bar) component to indicate the progress of the document upload. The user will see the name of the file and have the option to cancel the upload.
 
-#### Review state
+#### Review
 
 When a document has successfully uploaded, the card will display the uploaded file name in bold with an option to delete the file. Depending on the form, there may be a dropdown in the card to select the document type. If multiple files are allowed, the upload button will move beneath the card to give the user the option of adding more files one-by-one.
 
-#### Delete state
+#### Delete
 
 When a user triggers an action to remove or delete an upload file a modal confirming their action is presented. Within the modal the user can confirm and continue or cancel their action. This prevents accidental removal of the file which is an action that cannot otherwise be easily undone (the user would have to repeat the uplaod process).
 
-#### Error state
+#### Error
 
 {% include storybook-preview.html story="components-va-file-input--error-message#error-message" link_text="va-file-input--error-message" %}
 
-- **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
-- **Validate file uploads and provide actionable error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
+* **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
+* **Validate file uploads and provide actionable error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
+
+### Instances in production
+
+{% include component-example.html alt="File upload in the 10182 form." file="/images/patterns/ask-users-for/files/10182-file-upload.png" caption="The process to request a board appeal includes the ability to upload files." class="x2" %}
+
+{% include component-example.html alt="File upload review in the 10-10CG form." file="/images/patterns/ask-users-for/files/10-10cg-review.png" caption="The application for the program of comprehensive assistance for family caregivers, form 10-10CG, features an Alert - warning with additional explanation." class="x2" %}
 
 ## Content considerations
 
