@@ -139,11 +139,11 @@ There are many instances of the Card component in production. This is not an exh
 
 #### Appointment, large with icon
 
-{% include component-example.html alt="A large appointment card with an icon." file="/images/components/card/appointment-with-icon.png" caption="A large appointment card with an icon to identify the card type or category, in this case for an in-person appointment." reverse=true width="50%" %}
+{% include component-example.html alt="A large appointment card with an icon." file="/images/components/card/appointment-with-icon.png" caption="A large appointment card with an icon to identify the card type or category, in this case for an in-person appointment." reverse=true class="x2" %}
 
-#### Claims and appeals
+#### Claims status
 
-{% include component-example.html alt="A Claims and Appeals card in MyVA." file="/images/components/card/claims-and-appeals-mobile.png" caption="A Claims and Appeals card showing status for a claim in MyVA at a mobile viewport width." reverse=true width="50%" %}
+{% include component-example.html alt="A Claims status card in the Claim Status Tool." file="/images/components/card/card-with-alert-slim.png" caption="A Claims status card showing status for a compensation claim with a slim Alert in at a mobile viewport width." class="x2" %}
 
 #### Financial Status Report
 
@@ -155,7 +155,7 @@ There are many instances of the Card component in production. This is not an exh
 
 #### Navigation
 
-{% include component-example.html alt="A navigation card used in the MyHealtheVet landing page." file="/images/components/card/my-healthevet-mobile.png" caption="A navigation card used in the MyHealtheVet landing page which contains a category of links." reverse=true width="50%" %}
+{% include component-example.html alt="A navigation card used in the MyHealtheVet landing page." file="/images/components/card/my-healthevet-mobile.png" caption="A navigation card used in the MyHealtheVet landing page which contains a category of links." reverse=true class="x2" %}
 
 #### Number highlight
 
