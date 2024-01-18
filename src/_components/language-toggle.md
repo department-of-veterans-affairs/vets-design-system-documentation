@@ -58,9 +58,17 @@ The component appears 32px below the "In this section" menu and 24px above the h
 
 ### Instances of this component in production
 
+#### COVID-19 vaccines at VA
+
 * [COVID-19 vaccines at VA](https://www.va.gov/health-care/covid-19-vaccine/)
 * [Vacunas contra el COVID-19 en VA](https://www.va.gov/health-care/covid-19-vaccine-esp/)
 * [Mga bakuna sa COVID-19 sa VA](https://www.va.gov/health-care/covid-19-vaccine-tag/)
+
+#### The PACT Act and your VA benefits
+
+* [The PACT Act and your VA benefits](https://www.va.gov/resources/the-pact-act-and-your-va-benefits/)
+* [La Ley PACT y sus beneficios de VA](https://www.va.gov/resources/the-pact-act-and-your-va-benefits-esp/)
+* [Ang PACT Act at ang iyong mga VA benefits](https://www.va.gov/resources/the-pact-act-and-your-va-benefits-tag/)
 
 ## Content considerations
 
