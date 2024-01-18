@@ -142,6 +142,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Comprehensive Assistance for Family Caregivers**
 : The proper program name is Program of Comprehensive Assistance for Family Caregivers. Don't make the name into an acronym.
 
+**condition vs. disability** 
+: In the context of service connection, we use "condition" to describe an illness or injury that affects your mind or body. We call a condition a "disability" after a Veteran has received a disability rating.
+
+: - Like this: If you have a condition connected to your service, you may be eligible for compensation.   
+: - Like this: If your service-connected disability has gotten worse, find out how to file a claim to increase your disability rating.
+
 **conditions**
 : Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 
@@ -393,6 +399,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **input**
 : Use "record" instead.
 
+**intent to file** 
+: Lowercase in almost all cases unless referencing the full form name. Don’t use “ITF” or the phrase “file your intent to file.” 
+
+: - Like this: Fill out your intent to file form. 
+: - Like this: Submit your intent to file.
+
 **internet**
 : Lowercase, per AP Style.
 
@@ -452,6 +464,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **MISSION Act**
 : Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
+
+**mobile phone**
+: Use mobile phone when referencing a device for talking and texting, with or without internet connectivity. Don’t use cell phone or cellular phone. You can also use “mobile device” to reference tablets or mobile phones more generally. For related information, go to the entry for **smartphone**.
 
 **Montgomery GI Bill Active Duty (MGIB-AD)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
@@ -650,6 +665,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Don't use log in/log out, login ID, or sign on.  
 : -	Like this: Sign in to make an appointment.
 : - Not this: Sign on to make an appointment.
+
+**smartphone** 
+: Use smartphone when specifically referencing a mobile phone that connects to the internet. Like this: “At some VA health care facilities, you can now check in for appointments with your smartphone.” For related information, go to the entry for **mobile phone**.
 
 **Social Security number**
 : Lowercase "number."
