@@ -466,7 +466,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
 
 **mobile phone**
-: Use mobile phone when referencing a device for talking and texting, with or without internet connectivity. Don’t use cell phone or cellular phone. You can also use “mobile device” to reference tablets or mobile phones more generally. For related information, go to the entry for **smartphone**.
+: Use mobile phone when referencing a device for talking and texting, with or without internet connectivity. Don’t use cell phone or cellular phone. You can also use “mobile device” to reference tablets or mobile phones more generally. For related information, go to the entry for "smartphone."
 
 **Montgomery GI Bill Active Duty (MGIB-AD)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
@@ -667,7 +667,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Not this: Sign on to make an appointment.
 
 **smartphone** 
-: Use smartphone when specifically referencing a mobile phone that connects to the internet. Like this: “At some VA health care facilities, you can now check in for appointments with your smartphone.” For related information, go to the entry for **mobile phone**.
+: Use smartphone when specifically referencing a mobile phone that connects to the internet. Like this: “At some VA health care facilities, you can now check in for appointments with your smartphone.” For related information, go to the entry for "mobile phone."
 
 **Social Security number**
 : Lowercase "number."
