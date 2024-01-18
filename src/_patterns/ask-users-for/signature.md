@@ -34,15 +34,64 @@ This pattern is used at the end of a form review page.
 
 ### Layout details
 
-- Instructions for the user around signing the certification
-- Card
-- Heading: Veteran’s statement of truth
-- Content (specific to form)
-- Link to [privacy policy page](https://www.va.gov/privacy-policy/)
-- Text input for signature
-- Checkbox for certification
+* Instructions for the user around signing the certification
+* Card
+* [Statement of truth component]({{ site.baseurl }}/components/form/statement-of-truth)
 
 ### How this pattern works
 
 - **Signature pattern does not exist in every form.** If your form needs a certification statement or statement of truth, we recommend using this pattern. 
 - **When using this pattern, do not add the privacy policy checkbox at the end of the form.** The user does not need to check another checkbox for  privacy policy. 
+
+### Implementation details
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  full-width="false"
+  slim
+  status="warning"
+  uswds
+  visible="true"
+>
+  <p class="vads-u-margin-y--0">
+    <strong>Generating a PDF:</strong> When generating a PDF for submission, for example when using the <a href="https://developer.va.gov/explore/api/benefits-intake">Benefits Intake API</a>, the following rules must be adhered to.
+  </p>
+</va-alert>
+
+#### Generating a PDF
+
+* **Veteran's name from Statement of truth is entered into the Signature field.** Enter the input from the Statement of truth text-input into the Requester's or Veteran's signature field on the PDF. If the form is not using the Statement of truth component yet, use the user's signed-in name. **NOTE:** All forms should implement the Statement of truth component.
+* **Current date is entered into the Date Signed field.** Enter the current date into Date Signed or Date field usually found next to the Signature field on the paper form.
+* **Date &amp; timestamp and authentication level are added at the bottom right of all generated pages.** At the bottom right of each page the date and time in UTC as well as the authentication level of the submitter of the form must be indicated. This takes the [Date and timestamp watermark format](#date-and-timestamp-watermark-format).
+* **Date and timestamp the form in the VA DATE STAMP box, when available.** If the paper form you are populating has a VA DATE STAMP box in the upper right-hand corner, this field must be populated with the date and time in UTC that the form was submitted. This takes the [Date and timestamp VA DATE STAMP box format](#date-and-timestamp-va-date-stamp-box-format). NOTE: Older versions of some forms may not have the VA DATE STAMP box.
+* **All date and time stamps are in Coordinated Universal Time (UTC).** Use the UTC timezone when generating date and time stamps on forms as this is how form submission data is stored.
+* **All date and time stamps must be the date the form was initially submitted.** Date the time stamps must be the date the form was initially submitted and not the date and time the PDF was generated. This is a requirement due to potential delays or submission issues. This ensures Veterans get the earliest possible date -- when they first hit submit.
+
+#### Date and timestamp watermark format
+
+##### Unauthenticated
+
+> Signed electronically and submitted via VA.gov at 11:30 UTC 2023-12-13. Signee not signed in.
+
+##### Identity Assurance Level 1 (IAL1)
+
+> Signed electronically and submitted via VA.gov at 11:30 UTC 2023-12-13. Signee signed in but hasn’t verified their identity.
+
+##### Identity Assurance Level 2 (IAL2)
+
+> Signed electronically and submitted via VA.gov at 11:30 UTC 2023-12-13. Signee signed with an identity-verified account.
+
+#### Date and timestamp VA DATE STAMP box format
+
+> Application Submitted:<br />
+> 11:30 UTC 2023-12-13
+
+[Example PDFs](https://www.figma.com/file/Mcspa23rssXdDqwoWumuEV/Date-Authenticated-PDF-Stamp?type=design&node-id=1-25&mode=design&t=1tySoIe8RW7XGFMu-0) are available.
+
+### Components used in this pattern
+
+* [Statement of truth component]({{ site.baseurl }}/components/form/statement-of-truth)
+
+### Page templates available for this pattern
+
+* [VADS Templates](https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates---SANDBOX-USE-WITH-CAUTION?type=design&node-id=112%3A11074&mode=design&t=jGEZxdu9cs3idXUa-1) contains a page template for the Review page which contains this pattern.

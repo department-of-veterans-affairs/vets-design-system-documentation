@@ -19,6 +19,7 @@ anchors:
 The intro-text appears fist and should contain the purpose and definition of the pattern. If you need to provide additional context of when and why to use this pattern then include it here.
 
 There are some potential types of patterns:
+
 - Help a user to...
 - Ask a user for...
 
@@ -29,7 +30,9 @@ There are some potential types of patterns:
 Criteria for when the pattern is appropriate.
 
 May contain:
+
 #### Design principles
+
 - Design principles to consider
 
 ### When not to use this pattern
@@ -40,8 +43,8 @@ Criteria for when the pattern is inappropriate.
 
 Criteria for when the pattern could work with additional prototyping and testing.
 
-
 **Additional Usage sub-sections may include:**
+
 - Inputs and outputs
 - How to tell users
 - When to tell users
@@ -52,13 +55,15 @@ Criteria for when the pattern could work with additional prototyping and testing
 Examples of this pattern on VA.gov.
 
 May contain reference or links to:
+
 ### Other relevant examples
+
 - Instances of this pattern at other agencies
 - Other digital services in other countries using this pattern
 
 ### Examples in production
 
-## How to design and build 
+## How to design and build
 
 ### Anatomy or layout details
 
