@@ -21,10 +21,10 @@
     react-focus-on "^3.5.1"
     react-transition-group "^1.0.0"
 
-"@department-of-veterans-affairs/css-library@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/css-library/-/css-library-0.0.2.tgz"
-  integrity sha512-1frOFN0OWye3SWymqUBJoHV2NtKvBYmhyL8WoHafikkmF8axIBcJvrw/NobPYEjkMZnIrcSZTIh7BlHTJ7jx8A==
+"@department-of-veterans-affairs/css-library@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.2.0.tgz#19d3c2a6428687034c9faf8aff4020167d274bad"
+  integrity sha512-Reaj5iUyg3WrSKD/fyiKyGkWFog5oJQzg4j9bC+uyazNXVFMmtqERvRI/FRsUhTV5cTrh52KGjoEWfRI/gdonA==
   dependencies:
     "@divriots/style-dictionary-to-figma" "^0.4.0"
 
@@ -47,7 +47,7 @@
 
 "@department-of-veterans-affairs/react-components@26.0.0":
   version "26.0.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/react-components/-/react-components-26.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/react-components/-/react-components-26.0.0.tgz#c37a5bd8d41461ca2197195a0d890df99bd6e442"
   integrity sha512-sdaEBQPxFgMg6X4XU6wsHm+wqY79EWQSLIk/k7eGVEZeHI1gasiphzkI/u/8B+JM4HjGUiRHRhaHfIgwcibzcQ==
   dependencies:
     classnames "^2.2.6"
@@ -70,7 +70,7 @@
 
 "@divriots/style-dictionary-to-figma@^0.4.0":
   version "0.4.0"
-  resolved "https://registry.npmjs.org/@divriots/style-dictionary-to-figma/-/style-dictionary-to-figma-0.4.0.tgz"
+  resolved "https://registry.yarnpkg.com/@divriots/style-dictionary-to-figma/-/style-dictionary-to-figma-0.4.0.tgz#c518116620887eb71d2750c30201f9ffceb3dac9"
   integrity sha512-vSC3u1xBi9ShYpGEP+atS+L0vnNnSFmjtvB976+yNUT25nvgpUYCb1ZsSpKBe8+Uk1Qww+4ZIK+/91k3msfs2Q==
 
 "@fortawesome/fontawesome-free@^5.15.4":
