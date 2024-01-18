@@ -36,7 +36,7 @@ anchors:
 
 ### How this component works
 
-* **Use Alert - Background-only Success.** This component is an instance of the [Alert - Background-only with icon - Success]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component.
+* **Use Alert - Slim.** This component is an instance of the [Alert - Slim]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component in the success state.
 
 ### Placement
 

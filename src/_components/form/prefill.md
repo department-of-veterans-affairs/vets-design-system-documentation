@@ -22,14 +22,12 @@ anchors:
 <div class="site-showcase">
   {% include_relative html/prefill-intro.html %}
 </div>
-{% include snippet.html content='html/prefill-intro.html' %}
 
 ### Step 
 
 <div class="site-showcase">
   {% include_relative html/prefill-step.html %}
 </div>
-{% include snippet.html content='html/prefill-step.html' %}
 
 ## Usage
 
