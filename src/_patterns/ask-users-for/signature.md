@@ -60,8 +60,10 @@ This pattern is used at the end of a form review page.
 
 #### Generating a PDF
 
+This guide is for software engineers generating a PDF for submission to the <a href="https://developer.va.gov/explore/api/benefits-intake">Benefits Intake API</a>.
+
 * **Veteran's name from Statement of truth is entered into the Signature field.** Enter the input from the Statement of truth text-input into the Requester's or Veteran's signature field on the PDF. If the form is not using the Statement of truth component yet, use the user's signed-in name. **NOTE:** All forms should implement the Statement of truth component.
-* **Current date is entered into the Date Signed field.** Enter the current date into Date Signed or Date field usually found next to the Signature field on the paper form.
+* **Current date is entered into the Date Signed field.** Enter the current date into Date Signed or Date field usually found next to the Signature field on the paper form. Entering the current date without asking the user for it is appropriate.
 * **Date &amp; timestamp and authentication level are added at the bottom right of all generated pages.** At the bottom right of each page the date and time in UTC as well as the authentication level of the submitter of the form must be indicated. This takes the [Date and timestamp watermark format](#date-and-timestamp-watermark-format).
 * **Date and timestamp the form in the VA DATE STAMP box, when available.** If the paper form you are populating has a VA DATE STAMP box in the upper right-hand corner, this field must be populated with the date and time in UTC that the form was submitted. This takes the [Date and timestamp VA DATE STAMP box format](#date-and-timestamp-va-date-stamp-box-format). NOTE: Older versions of some forms may not have the VA DATE STAMP box.
 * **All date and time stamps are in Coordinated Universal Time (UTC).** Use the UTC timezone when generating date and time stamps on forms as this is how form submission data is stored.
