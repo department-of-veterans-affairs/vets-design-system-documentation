@@ -21,10 +21,17 @@
     react-focus-on "^3.5.1"
     react-transition-group "^1.0.0"
 
-"@department-of-veterans-affairs/css-library@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/css-library/-/css-library-0.0.2.tgz"
-  integrity sha512-1frOFN0OWye3SWymqUBJoHV2NtKvBYmhyL8WoHafikkmF8axIBcJvrw/NobPYEjkMZnIrcSZTIh7BlHTJ7jx8A==
+"@department-of-veterans-affairs/css-library@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.2.0.tgz#19d3c2a6428687034c9faf8aff4020167d274bad"
+  integrity sha512-Reaj5iUyg3WrSKD/fyiKyGkWFog5oJQzg4j9bC+uyazNXVFMmtqERvRI/FRsUhTV5cTrh52KGjoEWfRI/gdonA==
+  dependencies:
+    "@divriots/style-dictionary-to-figma" "^0.4.0"
+
+"@department-of-veterans-affairs/css-library@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/css-library/-/css-library-0.2.0.tgz"
+  integrity sha512-Reaj5iUyg3WrSKD/fyiKyGkWFog5oJQzg4j9bC+uyazNXVFMmtqERvRI/FRsUhTV5cTrh52KGjoEWfRI/gdonA==
   dependencies:
     "@divriots/style-dictionary-to-figma" "^0.4.0"
 
@@ -44,7 +51,7 @@
     domready "^1.0.8"
     element-closest "^3.0.1"
     foundation-sites "5"
-
+ 
 "@department-of-veterans-affairs/react-components@26.0.1":
   version "26.0.1"
   resolved "https://registry.npmjs.org/@department-of-veterans-affairs/react-components/-/react-components-26.0.1.tgz#38eeb0dbe14ffe5f4a5fad6007d4688b33eabfdf"
@@ -70,7 +77,7 @@
 
 "@divriots/style-dictionary-to-figma@^0.4.0":
   version "0.4.0"
-  resolved "https://registry.npmjs.org/@divriots/style-dictionary-to-figma/-/style-dictionary-to-figma-0.4.0.tgz"
+  resolved "https://registry.yarnpkg.com/@divriots/style-dictionary-to-figma/-/style-dictionary-to-figma-0.4.0.tgz#c518116620887eb71d2750c30201f9ffceb3dac9"
   integrity sha512-vSC3u1xBi9ShYpGEP+atS+L0vnNnSFmjtvB976+yNUT25nvgpUYCb1ZsSpKBe8+Uk1Qww+4ZIK+/91k3msfs2Q==
 
 "@fortawesome/fontawesome-free@^5.15.4":
@@ -318,7 +325,7 @@ binary-extensions@^1.0.0:
 
 bindings@^1.5.0:
   version "1.5.0"
-  resolved "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
+  resolved "https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz"
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
   dependencies:
     file-uri-to-path "1.0.0"
@@ -826,7 +833,7 @@ fast-levenshtein@^1.0.0:
 
 file-uri-to-path@1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
+  resolved "https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz"
   integrity sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
 
 fill-range@^4.0.0:
@@ -944,7 +951,7 @@ fs.realpath@^1.0.0:
 
 fsevents@^1.2.7:
   version "1.2.13"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz#f325cb0455592428bcf11b383370ef70e3bfcc38"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-1.2.13.tgz"
   integrity sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==
   dependencies:
     bindings "^1.5.0"
@@ -982,7 +989,7 @@ get-value@^2.0.3, get-value@^2.0.6:
 
 glob-parent@^3.1.0:
   version "3.1.0"
-  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-3.1.0.tgz#9e6af6299d8d3bd2bd40430832bd113df906c5ae"
+  resolved "https://registry.npmjs.org/glob-parent/-/glob-parent-3.1.0.tgz"
   integrity sha512-E8Ak/2+dZY6fnzlR7+ueWvhsH1SjHr4jjss4YS/h4py44jY9MhK/VFdaZJAWDz6BbL21KeteKxFSFpq8OS5gVA==
   dependencies:
     is-glob "^3.1.0"
@@ -1663,7 +1670,7 @@ mute-stdout@^1.0.0:
 
 nan@^2.12.1:
   version "2.18.0"
-  resolved "https://registry.npmjs.org/nan/-/nan-2.18.0.tgz#26a6faae7ffbeb293a39660e88a76b82e30b7554"
+  resolved "https://registry.npmjs.org/nan/-/nan-2.18.0.tgz"
   integrity sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==
 
 nanomatch@^1.2.9:
@@ -1845,7 +1852,7 @@ pascalcase@^0.1.1:
 
 path-dirname@^1.0.0:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/path-dirname/-/path-dirname-1.0.2.tgz#cc33d24d525e099a5388c0336c6e32b9160609e0"
+  resolved "https://registry.npmjs.org/path-dirname/-/path-dirname-1.0.2.tgz"
   integrity sha512-ALzNPpyNq9AqXMBjeymIjFDAkAFH06mHJH/cSBHAgU0s4vfpBn6b2nf8tiRLvagKD8RbTpq2FKTBg7cl9l3c7Q==
 
 path-exists@^2.0.0:
