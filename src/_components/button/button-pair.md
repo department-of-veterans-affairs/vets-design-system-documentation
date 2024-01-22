@@ -4,7 +4,7 @@ permalink: /components/button/button-pair
 has-parent: /components/button/
 title: Button pair
 research-link: Buttons
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/F2B3C09A-004C-4A71-BD77-E0A2C1EF2BAA/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A153&mode=design&t=jMcVWkPlFhZu3RTh-1
 intro-text: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically. 
 status: use-with-caution-candidate
 uswds-v3: default
