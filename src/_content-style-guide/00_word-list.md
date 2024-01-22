@@ -546,6 +546,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **postservice**
 : No hyphen.
 
+**posttraumatic stress disorder**
+: No hyphen, per the National Center for PTSD. Go to entry for "PTSD."
+
 **Premium**
 : Capitalize when used in the context of account level (for example: DS Logon Premium account)
 
