@@ -2,7 +2,7 @@
 layout: component
 title: Modal
 status: use-deployed
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/D10C68C1-35D7-4AB9-A020-BD7052EEDD1B/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=861%3A1708&mode=design&t=jMcVWkPlFhZu3RTh-1
 intro-text: "A modal disables page content and focuses the user’s attention on a single task or message."
 uswds-v3: default
 web-component: va-modal

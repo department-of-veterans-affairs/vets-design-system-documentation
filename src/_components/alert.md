@@ -4,7 +4,7 @@ title: Alert
 status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/5E24F540-2558-488C-BD6D-823F4A2F5607/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-alert
 anchors:
@@ -71,7 +71,7 @@ This variation can be used when pre-fill is not offered on a form (which should 
 
 {% include storybook-preview.html story="components-va-alert--heading-level" link_text="va-alert heading level" %}
 
-Alerts should contain headings.
+* Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
 ### Dismissible 
 
@@ -125,7 +125,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 **All of the above standard alert uses cases apply however, use of a Slim alert in place of a standard alert is only appropriate when used with one of these additional constraints:**
 
 * **Immediate feedback to the user.** When your application is using Javascript to provide an immediate response to the user without a full page load.
-* **Sub-alerts on the page.** When your page has more than 1 alert and you are using the Standard and Slim alerts to create a hierarchy of alerts. It is also appropriate to convey multiple statuses using a combination of headers, text, and the Slim alert variation. An example of a sub-alert is the [Autosave alert]({{ site.baseurl }}/components/form/autosave).
+* **Sub-alerts on the page.** When your page has more than 1 alert and you are using the Standard and Slim alerts to create a hierarchy of alerts within the page. This does not mean stacking alerts on top of one another, this means placing them appropriately throughout the page. It can also be appropriate to convey multiple statuses using a combination of headers, text, and the Slim alert variation. An example of a sub-alert is the [Autosave alert]({{ site.baseurl }}/components/form/autosave).
 
 ### How to use alerts
 
@@ -138,7 +138,7 @@ When the user is required to do something in response to an alert, let them know
 * If the alert appears within the page body content, it should be co-located with relevant content.
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
-* Headings are optional in Slim alerts.
+* Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
 ### Placement
 
