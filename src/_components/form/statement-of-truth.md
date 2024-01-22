@@ -42,7 +42,7 @@ anchors:
 
 ### How this component works
 
-The component works by asking the user to populate the text-input field with their name. That name must match the name entered earlier into the form on a previous step. If the name does not match, an error message is returned. 
+The component works by asking the user to populate the text-input field with their name. That name must match the name entered earlier into the form on a previous step. If the name does not match, an error message is returned.
 
 ### Behavior
 
@@ -54,7 +54,9 @@ The component works by asking the user to populate the text-input field with the
 
 ### Instances of this component in production
 
-[VA Form 10-10CG (Application for Family Caregiver Benefits)](https://www.va.gov/family-member-benefits/apply-for-caregiver-assistance-form-10-10cg/introduction)
+* [Application for Family Caregiver Benefits (VA Form 10-10CG)](https://www.va.gov/family-member-benefits/apply-for-caregiver-assistance-form-10-10cg/introduction)
+* [Submit a lay or witness statement to support a VA claim - Lay/Witness Statement (VA Form 21-10210)](https://www.va.gov/supporting-forms-for-claims/lay-witness-statement-form-21-10210/introduction)
+* [Request personal records - Freedom of Information Act (FOIA) or Privacy Act (PA) Request (VA Form 20-10206)](https://www.va.gov/records/request-personal-records-form-20-10206/introduction)
 
 {% include component-docs.html component_name=page.web-component %}
 

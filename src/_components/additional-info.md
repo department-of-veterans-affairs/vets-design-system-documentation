@@ -60,7 +60,7 @@ anchors:
 ### When to consider something else
 
 * **Accordions for a series**: If you have a series of content in the body of a page and outside of a form or tool then an [Accordion]({{ site.baseurl }}/components/accordion) is preferred. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details. 
-* **Too much content**: You should not try to put multiple paragraphs inside Additional info. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content.
+* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of our content team to edit content and explore alternatives.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
 * **Inside Alerts**: Do not use this component inside an [Alert]({{ site.baseurl }}/components/alert). Try the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component instead, especially when the Alert is within the page content and not at the top of the page.
