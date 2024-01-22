@@ -4,7 +4,7 @@ title: Alert
 status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/5E24F540-2558-488C-BD6D-823F4A2F5607/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-alert
 anchors:
