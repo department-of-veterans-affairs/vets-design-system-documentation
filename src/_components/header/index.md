@@ -3,7 +3,7 @@ layout: component
 title: Header
 permalink: /components/header/
 intro-text: A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/224585DD-02BA-49EB-91C6-DE20869AA4AC/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
 sub-pages:
   - sub-page: Header - Minimal
 anchors:
