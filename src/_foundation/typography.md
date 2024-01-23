@@ -7,6 +7,7 @@ anchors:
   - anchor: Headings
   - anchor: Paragraphs
   - anchor: Lists
+  - anchor: Typography tokens
 ---
 
 # Typography
@@ -167,3 +168,22 @@ Don’t change heading level in order to use a different font size.
 </div>
 
 {% include snippet.html content='html/lists.html' %}
+
+## Typography tokens
+
+
+### Primitive typography tokens
+
+{% assign font_primitive = site.data.tokens.vads-font-primitive %}
+{% include font-tokens.html 
+    font=font_primitive 
+    type="primitive" 
+%}
+
+### Semantic typography tokens
+
+{% assign font_semantic = site.data.tokens.vads-font-semantic %}
+{% include font-tokens.html 
+    font=font_semantic
+    type="semantic" 
+%}
