@@ -10,7 +10,6 @@ intro-text: "Choose the most appropriate implementation of this pattern in forms
 status: use-deployed
 anchors:
   - anchor: Usage
-  - anchor: Examples
   - anchor: How to design and build - Single page
   - anchor: How to design and build - Multi-page
   - anchor: How to design and build - Add item
