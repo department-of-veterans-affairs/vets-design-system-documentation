@@ -4,7 +4,7 @@ title: Spacing units
 tags: Grid, Spacing tokens
 anchors:
   - anchor: Why multiples of 8?
-  - anchor: Spacing unit tokens
+  - anchor: Spacing tokens
   - anchor: Using the spacing tokens
 ---
 
@@ -22,7 +22,7 @@ The number 8 is easily broken down into smaller measurements before it approache
 
 - [Read more about the 8-point grid](https://spec.fm/specifics/8-pt-grid)
 
-## Spacing unit tokens
+## Spacing tokens
 
 The VA follows the USWDS spacing unit tokens and then adds additional semantic tokens.
 
@@ -42,7 +42,7 @@ The VA follows the USWDS spacing unit tokens and then adds additional semantic t
     type="semantic"
 %}
 
-## Using the spacing tokens
+## Using the spacing units
 
 In order to keep spacing consistent throughout VA.gov, it is recommended you favor using the `units` functions instead of hard coding pixels (or relative units) for margins and padding.
 

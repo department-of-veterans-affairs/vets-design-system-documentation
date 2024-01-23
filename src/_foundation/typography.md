@@ -175,15 +175,9 @@ Don’t change heading level in order to use a different font size.
 ### Primitive typography tokens
 
 {% assign font_primitive = site.data.tokens.vads-font-primitive %}
-{% include font-tokens.html 
-    font=font_primitive 
-    type="primitive" 
-%}
+{% include tokens.html tokens=font_primitive %}
 
 ### Semantic typography tokens
 
 {% assign font_semantic = site.data.tokens.vads-font-semantic %}
-{% include font-tokens.html 
-    font=font_semantic
-    type="semantic" 
-%}
+{% include tokens.html tokens=font_semantic %}
