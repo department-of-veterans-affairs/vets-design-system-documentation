@@ -1,6 +1,16 @@
-﻿Name,type,vads-name,value,vads-alias,value-from-vads-alias,description
-vads-elevation-z-index-base,Primitive,vads-elevation-z-index-base,0,,,Base layer of elevation
-vads-elevation-z-index-level-1,Primitive,vads-elevation-z-index-level-1,100,,,Level 1 of elevation layers.
-vads-elevation-z-index-level-2,Primitive,vads-elevation-z-index-level-2,200,,,Level 2 of elevation layers.
-vads-elevation-z-index-level-3,Primitive,vads-elevation-z-index-level-3,300,,,Level 3 of elevation layers.
-vads-elevation-z-index-level-4,Primitive,vads-elevation-z-index-level-4,400,,,Level 4 of elevation layers.
+﻿Name,type,vads-name,uswds-design-token,value-from-uswds-design-token,description
+vads-elevation-shadow-1,Primitive,vads-elevation-shadow-1,uswds-system-shadow-1,"0 1px 4px 0 rgba(0, 0, 0, 0.1)",
+vads-elevation-shadow-2,Primitive,vads-elevation-shadow-2,uswds-system-shadow-2,"0 4px 8px 0 rgba(0, 0, 0, 0.1)",
+vads-elevation-shadow-3,Primitive,vads-elevation-shadow-3,uswds-system-shadow-3,"0 8px 16px 0 rgba(0, 0, 0, 0.1)",
+vads-elevation-shadow-4,Primitive,vads-elevation-shadow-4,uswds-system-shadow-4,"0 12px 24px 0 rgba(0, 0, 0, 0.1)",
+vads-elevation-shadow-5,Primitive,vads-elevation-shadow-5,uswds-system-shadow-5,"0 16px 32px 0 rgba(0, 0, 0, 0.1)",
+vads-elevation-shadow-none,Primitive,vads-elevation-shadow-none,uswds-system-shadow-none,none,
+vads-elevation-z-index-auto,Primitive,vads-elevation-z-index-auto,uswds-system-z-index-auto,auto,Bottom level of elevation layers. 
+vads-elevation-z-index-base,Primitive,vads-elevation-z-index-base,uswds-system-z-index-0,0,Base layer of elevation. $base-layer in base/_b-variables.scss
+vads-elevation-z-index-bottom,Primitive,vads-elevation-z-index-level-bottom,uswds-system-z-index-bottom,-100,Bottom level of elevation layers. 
+vads-elevation-z-index-level-1,Primitive,vads-elevation-z-index-level-1,uswds-system-z-index-100,100,Level 1 of elevation layers.	
+vads-elevation-z-index-level-2,Primitive,vads-elevation-z-index-level-2,uswds-system-z-index-200,200,Level 2 of elevation layers. 
+vads-elevation-z-index-level-3,Primitive,vads-elevation-z-index-level-3,uswds-system-z-index-300,300,Level 3 of elevation layers. 
+vads-elevation-z-index-level-4,Primitive,vads-elevation-z-index-level-4,uswds-system-z-index-400,400,Level 4 of elevation layers.
+vads-elevation-z-index-level-5,Primitive,vads-elevation-z-index-level-5,uswds-system-z-index-500,500,Level 5 of elevation layers. 
+vads-elevation-z-index-top,Primitive,vads-elevation-z-index-level-top,uswds-system-z-index-top,99999,Top level of elevation layers. 

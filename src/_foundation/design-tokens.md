@@ -11,7 +11,7 @@ anchors:
 
 ## What are design tokens?
 
-Design tokens express a design decision by applying the many color, typography, and spacing options available in the U.S. Web Design System (USWDS) to specific contexts within the platforms at the VA. Design tokens allow us to propagate those design decisions to our platforms.
+Design tokens express a design decision by applying the many color, typography, and spacing options available as [design tokens from the U.S. Web Design System (USWDS)](https://designsystem.digital.gov/design-tokens/) to specific contexts within the platforms at the VA. Design tokens allow us to propagate those design decisions to our platforms.
 
 ## Taxonomy and typology
 
@@ -35,7 +35,8 @@ This organizational structure is informed by the work of Nathan Curtis. Read mor
 These levels refer to a component, element within a component, or component group.
 
 **Group**
-: Component groups (e.g. forms, navigation, etc.)
+: Defines a family of tokens.
+: Examples include forms and navigation.
 
 **Component**
 : Component name
@@ -52,11 +53,37 @@ These levels refer to a component, element within a component, or component grou
 : * Font
 : * Shape
 : * Size
-: * Spacing 
+: * Spacing
+
+Future additions from USWDS may include flex, order, and opacity.
 
 **Concept**
-: 
+: Allows tokens to be grouped within a category.
 : Current values may include action, hub, inset, vertical, etc.
+
+Future additions may include visualization.
+
+**Property**
+: Defines the token scope.
+: This can be synonymous with the CSS property name.
+
+### Modifiers
+
+**Variant**
+: Defines variations to distinguish use cases.
+: Examples include primary, secondary, tertiary and heading, body, default.
+
+**State**
+: Defines states of interactivity.
+: Examples include hover, press, focus, error, etc.
+
+**Scale**
+: Places the token within an intentional, ordered range of values.
+: Examples include heading levels: 1, 2, 3, 4, 5 and t-shirt sizes: small, medium, large.
+
+**Mode**
+: Defines a background setting on which elements appear thus enabling light and dark modes.
+: Examples are on-light and on-dark.
 
 ## Types
 
@@ -90,7 +117,7 @@ Component tokens are scoped to a specific component and represent decisions spec
 
 ### Forthcoming design tokens
 
-These tokens are not available in Figma nor are they yet represented in the CSS library. However, they do provide values that teams can coalesce around that will soon be available as tokens.
+These tokens are not available in Figma nor are they yet represented in the CSS library. However, they do provide values that teams can coalesce around that will soon be available as tokens in our component-library.
 
 <va-accordion bordered="false" uswds="true">
   <va-accordion-item header="Elevation" id="second" uswds>
