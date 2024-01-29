@@ -46,7 +46,6 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-additional-info--no-border" link_text="va-additional-info v3 no border" %}
 
-
 ## Usage
 
 ### When to use Additional info
@@ -55,13 +54,15 @@ anchors:
 * **Clarifying outcomes for an input**: In cases where a person's input can have large or complicated impact on outcomes we use contextual help in Additional info to locate expanded guidance next to the relevant interaction.
 * **Information closely tied to an input.** Use this component over an [Accordion]({{ site.baseurl }}/components/accordion) when the content is closely tied to a particular message or input on the screen. If the content is more tangentially related then use an Accordion.
 * **Clarifying a form question**: If a form question needs clarification, and that clarification is brief, use Additional info. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy. If a form is a conversation, Additional info would be considered an aside. (This <a href="https://blog.navapbc.com/structuring-a-complex-eligibility-form-for-healthcare-gov-37d79a5ad6">case study on structuring complex health care questions for healthcare.gov</a> goes into greater detail on how to structure your form as a conversation.)
+* **Content that can be organized under the current heading.** If you have additional content that provides context and makes sense under the same heading as the content nearby.
 * **Information not applicable to all**: Additional info can hide details that may not be applicable to all users.
 
 ### When to consider something else
 
-* **Accordions for a series**: If you have a series of content in the body of a page and outside of a form or tool then an [Accordion]({{ site.baseurl }}/components/accordion) is preferred. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details. 
-* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of our content team to edit content and explore alternatives.
+* **Accordions for a series**: If you have a series of content in the body of a page and outside of a form or tool then an [Accordion]({{ site.baseurl }}/components/accordion) is preferred. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details.
+* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of CAIA to edit content and explore alternatives.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
+* **Content organized under a new heading.** If you have enough content that it makes sense to organize under a new heading that does not make sense under the same heading as the content nearby then use an [Accordion]({{ site.baseurl }}/components/accordion).
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
 * **Inside Alerts**: Do not use this component inside an [Alert]({{ site.baseurl }}/components/alert). Try the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component instead, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Additional info outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Additional info between a h1 and a Card. See [placement](#placement) for more.
