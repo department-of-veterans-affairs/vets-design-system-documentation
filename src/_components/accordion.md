@@ -60,11 +60,13 @@ anchors:
 
 * **Organizing related sections of content to condense and chunk the content.** When you need to organize related sections of content into a smaller space use accordions to condense and group the content.
 * **A series of content**: If you have a series of content in the body of a page and outside of a form or tool. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details. 
+* **Content organized under a new heading.** If you have enough content that it makes sense to organize under a new heading that does not make sense under the same heading as the content nearby. 
 * **Reveal and compare relevant information.** When users need to reveal and compare relevant and related information accordions can make this easier.
 
 #### Additional reasons to consider something else
 
 * **Users would benefit from seeing additional context for a discrete piece of content.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component instead to leverage show/hide functionality, especially in a form. 
+* **Content that can be organized under the current heading.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component if you have additional content that provides context and makes sense under the same heading as the content nearby.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 
 ### Behavior
