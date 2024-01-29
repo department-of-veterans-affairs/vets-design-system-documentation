@@ -1,0 +1,10 @@
+﻿Name,type,vads-name,value,vads-alias,value-from-vads-alias,description
+vads-size-line-length-1,Primitive,vads-size-line-length-1,44ex,,,From USWDS.
+vads-size-line-length-2,Primitive,vads-size-line-length-2,60ex,,,From USWDS.
+vads-size-line-length-3,Primitive,vads-size-line-length-3,64ex,,,From USWDS.
+vads-size-line-length-4,Primitive,vads-size-line-length-4,68ex,,,From USWDS.
+vads-size-line-length-5,Primitive,vads-size-line-length-5,72ex,,,From USWDS.
+vads-size-line-length-6,Primitive,vads-size-line-length-6,88ex,,,From USWDS.
+vads-size-max-width-body,Semantic,vads-size-max-width-body,70rem,,,This is the current max-width of body content. We'll be moving to the 6 line length tokens that the USWDS has: https://designsystem.digital.gov/design-tokens/typesetting/measure/
+vads-size-max-width-site,Semantic,vads-size-max-width-site,1040px,,,
+vads-size-min-width-body,Semantic,vads-size-min-width-body,284px,,,
