@@ -65,7 +65,7 @@ anchors:
 </div>
 
 
-<h2 id="v1-colors">v1 colors</h2>
+<h2 id="v1-colors">v3 colors</h2>
 
 <div class="site-showcase">
   <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-base">Base colors</h3>
@@ -73,7 +73,7 @@ anchors:
     {% for item in site.data.colors.primary %}
       {% include color-palette-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -83,7 +83,7 @@ anchors:
     {% for item in site.data.colors.grayscale %}
       {% include color-palette-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -93,7 +93,7 @@ anchors:
     {% for item in site.data.colors.tertiary %}
       {% include color-palette-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -104,7 +104,7 @@ anchors:
     {% for item in site.data.colors.hub %}
       {% include color-palette-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>

@@ -27,7 +27,7 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
     {% for item in site.data.colors.primary %}
       {% include color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -37,7 +37,7 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
     {% for item in site.data.colors.grayscale %}
       {% include color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -47,7 +47,7 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
     {% for item in site.data.colors.tertiary %}
       {% include color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -57,7 +57,7 @@ Change the color of text and SVGs (using <code>fill: currentColor</code>).
     {% for item in site.data.colors.hub %}
       {% include color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
