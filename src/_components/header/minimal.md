@@ -7,7 +7,7 @@ contributors: Ben Brasso (Agile 6), Ya-ching Tsao (CivicActions), Zach Park (Agi
 intro-text: The minimal header can be used when navigating away would prevent the user from easily accomplishing their main task.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
 status: use-with-caution-candidate
-web-component: va-minimal-header
+web-component: va-header-minimal
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -20,11 +20,11 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-minimal-header--default" link_text=page.web-component %}
+{% include storybook-preview.html story="components-va-header-minimal--default" link_text=page.web-component %}
 
 ### With Subheader
 
-{% include storybook-preview.html story="components-va-minimal-header--with-subheader" link_text="View va-minimal-header with subheader variation" %}
+{% include storybook-preview.html story="components-va-header-minimal--with-subheader" link_text="View va-header-minimal with subheader variation" %}
 
 ## Usage
 
