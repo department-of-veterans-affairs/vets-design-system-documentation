@@ -3,7 +3,7 @@ layout: component
 title: "Featured content"
 status: use-deployed
 intro-text: "The featured content component helps Veterans quickly identify must-read information on a page. Use this component to highlight a small chunk of the most important information on a page, like eligibility criteria or coverage under a particular VA benefit."
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/5D59FDA9-A9F3-492C-AF41-F48CF5117F04
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1192%3A4460&mode=design&t=vNilCSI60pQBiKkM-1
 uswds-v3: default
 aka: Summary box
 anchors:
