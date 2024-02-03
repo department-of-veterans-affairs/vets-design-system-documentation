@@ -162,15 +162,7 @@ Don’t change heading level in order to use a different font size.
 
 {% include snippet.html content='html/paragraphs.html' %}
 
-## Lists
-<div class="site-showcase">
-  {% include_relative html/lists.html %}
-</div>
-
-{% include snippet.html content='html/lists.html' %}
-
 ## Typography tokens
-
 
 ### Primitive typography tokens
 
