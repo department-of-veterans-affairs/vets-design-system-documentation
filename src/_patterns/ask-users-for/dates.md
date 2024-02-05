@@ -11,26 +11,21 @@ github-title: pattern-dates
 research-title: Ask users for dates
 status: use-deployed
 anchors:
-  - anchor: Example
   - anchor: Usage
+  - anchor: Example
   - anchor: How to design and build
   - anchor: Code usage
   - anchor: Content considerations
 ---
 
-## Example
-
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
-
 ## Usage
 
-### When to use this pattern 
+### When to use this pattern
 
 Follow this pattern whenever you need a person to provide a date on a form.
 
 Dates you may need people to provide include:
+
 * Dates a person knows, like a date of birth or marriage anniversary.
 * Dates a person can approximate, like February 2021.
 * Date ranges, like service history dates.
@@ -43,16 +38,15 @@ Use the [Memorable date]({{ site.baseurl }}/components/form/memorable-date) comp
 
 {% include component-example.html alt="Shows the form fields used to obtain date of birth and date of death." file="/images/patterns/ask-users-for/dates/date-of-birth-in-40-0247.png" caption="Example of asking for a date of birth and date of death from form 40-0247." class="x2" %}
 
-
 #### Date and place of birth
 
-Follow this pattern whenever you need to ask for a user’s date and place of birth. 
+Follow this pattern whenever you need to ask for a user’s date and place of birth.
 
 {% include component-example.html alt="Shows the form fields used to obtain date and place of birth." file="/images/patterns/ask-users-for/dates/birth-info.png" caption="Example of asking for a date and place of birth. NOTE: This screenshot shows an outdated date component. Use Memorable Date for collecting date of birth." class="x2" %}
 
 ### Dates a user can approximate
 
-Use the [month/year date]({{ site.baseurl }}/components/form/date-input#monthyear) component variation for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?* 
+Use the [month/year date]({{ site.baseurl }}/components/form/date-input#monthyear) component variation for dates that a user may struggle to remember. For example: *When did you receive your high school diploma or equivalency certificate?*
 
 {% include component-example.html alt="Shows the date input for collecting approximate dates." file="/images/patterns/ask-users-for/dates/date-input-month-year.png" caption="Example of using the month and year date component for collecting a date a user can approximate." class="x2" %}
 
@@ -60,7 +54,13 @@ Use the [month/year date]({{ site.baseurl }}/components/form/date-input#monthyea
 
 Refer to the [Service history pattern]({{ site.baseurl }}/patterns/ask-users-for/service-history) for an example of collecting service date ranges.
 
-## How to design and build 
+## Example
+
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
+</a>
+
+## How to design and build
 
 ### Anatomy details
 
@@ -94,29 +94,29 @@ Use the [VADS templates (Patterns & Forms) for Dates in Figma]({{ page.figma-lin
 ### Error message templates for dates
 
 **If nothing is entered...**
-: Say 'Please enter a date'
+: Say "Please enter a date"
 
 **If nothing is entered for a date of birth or death...**
-: Say 'Please provide the date of birth'
-: Say 'Please provide the date of death'
+: Say "Please provide the date of birth"
+: Say "Please provide the date of death"
 
 **If the date entered can’t be correct...**
-: Say ‘Please provide a valid date'
+: Say "Please provide a valid date"
 
 **If the date entered is in the future...**
-: Say ‘Please provide a valid current or past date'
+: Say "Please provide a valid current or past date"
 
 **If the date entered is in a month year format and can’t be correct...**
-: Say 'Please enter a valid month and year'
+: Say "Please enter a valid month and year"
 
 **If the year needed to be within a specific range...**
-: Say 'Please enter a year between [minimum year] and [maximum year]'
+: Say "Please enter a year between [minimum year] and [maximum year]"
 
 **For a date range, if the date must be after another date...**
-: Say 'To date must be after From date'
+: Say "To date must be after From date"
 
 **If the date is in the past when it needs to be today or in the future...**
-: Say 'Please provide a valid current or future date'
+: Say "Please provide a valid current or future date"
 
 **If the date is in the future when it needs to be past date or current date...**
-: Say  'Please enter a valid current or past date'
+: Say "Please enter a valid current or past date"

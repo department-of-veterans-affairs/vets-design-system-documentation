@@ -11,20 +11,12 @@ github-title: pattern-names
 research-title: Ask users for names
 status: use-deployed
 anchors:
-  - anchor: Examples
   - anchor: Usage
+  - anchor: Examples
   - anchor: How to design and build
   - anchor: Code usage
   - anchor: Content considerations
 ---
-
-## Examples
-
-{% include component-example.html alt="Shows the form fields used to obtain first, middle, and last name." file="/images/patterns/ask-users-for/names/form-names.png" caption="Example of asking for first, middle, and last names." class="x2" %}
-
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
 
 ## Usage
 
@@ -33,6 +25,14 @@ anchors:
 * **When you need to collect a person's name.** For example, for contact information or to complete an application.
 
 **Note:** These fields are not on every form. Work with your stakeholders to determine which fields are necessary for your application.
+
+## Examples
+
+{% include component-example.html alt="Shows the form fields used to obtain first, middle, and last name." file="/images/patterns/ask-users-for/names/form-names.png" caption="Example of asking for first, middle, and last names." class="x2" %}
+
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
+</a>
 
 ## How to design and build
 
@@ -65,7 +65,10 @@ Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-lin
 ### Error message templates for names
 
 **When a user doesn’t enter their first name...**
-: Say  'Please enter a first name'
+: Say "Please enter a first name"
 
 **When a user doesn’t enter their last name...**
-: Say  'Please enter a last name'
+: Say "Please enter a last name"
+
+**When a user enters a character that we cannot accept...**
+: Say "You entered a character we can’t accept. Try removing [invalid character]"
