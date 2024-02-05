@@ -11,10 +11,18 @@ github-title: pattern-dates
 research-title: Ask users for dates
 status: use-deployed
 anchors:
+  - anchor: Example
   - anchor: Usage
   - anchor: How to design and build
+  - anchor: Code usage
   - anchor: Content considerations
 ---
+
+## Example
+
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
+</a>
 
 ## Usage
 
@@ -23,9 +31,9 @@ anchors:
 Follow this pattern whenever you need a person to provide a date on a form.
 
 Dates you may need people to provide include:
-- Dates a person knows, like a date of birth or marriage anniversary.
-- Dates a person can approximate, like February 2021.
-- Date ranges, like service history dates.
+* Dates a person knows, like a date of birth or marriage anniversary.
+* Dates a person can approximate, like February 2021.
+* Date ranges, like service history dates.
 
 ### Dates a person knows
 
@@ -34,10 +42,6 @@ Use the [Memorable date]({{ site.baseurl }}/components/form/memorable-date) comp
 #### Date of birth and/or death
 
 {% include component-example.html alt="Shows the form fields used to obtain date of birth and date of death." file="/images/patterns/ask-users-for/dates/date-of-birth-in-40-0247.png" caption="Example of asking for a date of birth and date of death from form 40-0247." class="x2" %}
-
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
 
 
 #### Date and place of birth
@@ -64,11 +68,12 @@ Follow the [vertical padding and accessibility annotations in Figma]({{ page.fig
 
 ### How this pattern works
 
-* **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date” 
+* **Write clear form labels for date ranges** Do not use “From” and “To” to when labeling form labels for date ranges. Make it clear what dates you’re asking for. Example: “Obligation start date” and “Obligation end date”.
 * **Spell out full month names in the selected state** The month select box should have the full month’s name. Example: January 
 * **Validate date inputs.** You should validate date inputs so you can let users know if they have entered one incorrectly. A general validation message for an incorrect date: *Please enter a valid date*
 * **Use the date input field for date of birth.** Writing out the label for each birth date string and separating them into three fields instead of one eliminates potential format confusion.
 * **Use one text input for Place of birth.** This format is easier to fill out for both Veterans born outside the United States and for Veterans who were born United States citizens.
+* **Pair with full name.** Collection of date of birth is paired with [full name]({{ site.baseurl }}/patterns/ask-users-for/names). The two patterns typically appear on the same step/page.
 
 ### Components used in this pattern
 
@@ -79,6 +84,10 @@ Follow the [vertical padding and accessibility annotations in Figma]({{ page.fig
 ### Page templates available for this pattern
 
 Use the [VADS templates (Patterns & Forms) for Dates in Figma]({{ page.figma-link }}).
+
+## Code usage
+
+[Dates is a web-component pattern available in the Forms library]({{ page.code-link }}).
 
 ## Content considerations
 
