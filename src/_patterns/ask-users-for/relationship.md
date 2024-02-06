@@ -6,7 +6,7 @@ title: Relationship to Veteran
 intro-text: "Follow this pattern to ask a user for their relationship to the Veteran."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx
 example-link: https://staging.va.gov/mock-form-patterns/relationship-to-veteran
-figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A23560&mode=design&t=93yXuwTXsWwWopry-1
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A17640&mode=design&t=93yXuwTXsWwWopry-1
 github-title: pattern-relationship-to-veteran
 research-title: Ask users for relationship to Veteran
 status: use-deployed
