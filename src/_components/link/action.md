@@ -5,7 +5,7 @@ permalink: /components/link/action
 has-parent: /components/link/
 github-title: va-action-link
 intro-text: "Action links guide users to a new page to take an action or to start an online tool or digital service."
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/760C972F-C6EC-4F06-AA08-193B4691ECB0
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10315&mode=design&t=nYOotVcwdpiMCL5C-1
 status: use-deployed
 anchors:
   - anchor: Examples

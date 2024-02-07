@@ -2,7 +2,7 @@
 layout: component
 title: Telephone
 status: use-best-practice
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/a/WKjQYn0
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1296%3A9773&mode=design&t=nYOotVcwdpiMCL5C-1
 intro-text: "The telephone component captures the many variations of phone numbers displayed on VA.gov." 
 anchors:
   - anchor: Examples
