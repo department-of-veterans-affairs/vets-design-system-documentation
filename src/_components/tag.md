@@ -2,7 +2,7 @@
 layout: component
 title: Tag
 intro-text: A tag draws attention to new or important content.
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/7573C02C-6190-440F-9D70-07029D502204
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
 status: use-deployed
 anchors:
   - anchor: Examples
