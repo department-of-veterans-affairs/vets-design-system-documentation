@@ -13,7 +13,7 @@ anchors:
 
 ## Getting started
 
-The [Component Library](https://github.com/department-of-veterans-affairs/component-library) is a monorepo that contains various Design System packages including a package for web components.
+The [Component Library](https://github.com/department-of-veterans-affairs/component-library) is a monorepo that contains various Design System packages including a package for web components and Storybook.
 
 To begin local development, clone the Component Library repo and follow the steps in the readme file for [Running the Build via Storybook](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#running-build-via-storybook). After following each of these steps, a local instance of Storybook will load at `localhost:6006` where development can occur.
 
