@@ -47,13 +47,13 @@ PRs which make a change to the Design System should be manageable in size. This 
 - Keep PRs tightly focused
 - Keep the review process short
 
-Be sure to follow the steps outlined in the [Getting Started](/about/developers/contributing#getting-started) section above and submit your pull request when its ready. You can reach out to the #platform-design-system Slack channel with any other questions.
+Be sure to follow the steps outlined in the [Getting Started](/about/developers/contributing#getting-started) section above and submit your pull request when it's ready to be reviewed by the Design System Team engineers and designers. You can reach out to the #platform-design-system Slack channel with questions.
 
 ## Contributing new components
 
 This section details how to contribute new components. If you haven't read it already, refer to the [contributing to the design system]({{ site.baseurl }}/about/contributing-to-the-design-system) page for more information about the full process. If you're unsure if you're ready to start creating a new component, make sure you've gone through the [experimental design process details]({{ site.baseurl }}/about/contributing-to-the-design-system) first. 
 
-Reach out to the #platform-design-system Slack channel with any other questions.
+Reach out to the #platform-design-system Slack channel with questions.
 
 ### General considerations
 
