@@ -47,9 +47,18 @@ anchors:
 
 {% include component-example.html alt="Unordered lists from VA.gov." file="/images/components/list/unordered-list.png" caption="An example of unordered lists, with nested list items, from a vision care health benefits page." class="x2" %}
 
+{% include component-example.html alt="List in an accordion." file="/images/components/list/unordered-list-in-accordion.png" caption="An example of an unordered list in an Accordion component." class="x2" %}
+
+{% include component-example.html alt="List in a Summary box." file="/images/components/list/unordered-list-in-summary-box.png" caption="An example of an unordered list in a Summary box component." class="x2" %}
+
+{% include component-example.html alt="List with two connected items." file="/images/components/list/unordered-list-with-and.png" caption="An example of an unordered list where items are concatenated using and." class="x2" %}
+
 {% include component-example.html alt="List of appointments in VA.gov." file="/images/components/list/appointments-list.png" caption="An example of an inline list of appointments where each list item is a row containing appointment details." class="x2" %}
 
-{% include component-example.html alt="List of claim letters in VA.gov." file="/images/components/list/claim-letter-list.png" caption="An example of a list of Claim letters." class="x2" %}
+{% include component-example.html alt="List of claim letters in VA.gov." file="/images/components/list/notification-letter.png" caption="An example of a list of Claim letters." class="x2" %}
+
+{% include component-example.html alt="List of documents filed in VA.gov." file="/images/components/list/documents-filed.png" caption="An example of a list of documents filed with the VA." class="x2" %}
+
 
 ## Content considerations
 
@@ -63,3 +72,5 @@ anchors:
 ## Related
 
 * [Card]({{ site.baseurl }}/components/card)
+
+{% include _component-checklist.html component_name=page.github-title %}
