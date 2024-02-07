@@ -6,7 +6,16 @@
         <strong>{{ include.name }}</strong>
       </div>
       <div class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter">
-        #{{ include.hex }}
+        {%
+          if include.hex
+        %}
+          #{{ include.hex }}
+        {% endif %}
+        {%
+          if include.token
+        %}
+          <script>document.write(getComputedStyle(document.body).getPropertyValue('{{ include.token }}'));</script>
+        {% endif %}
       </div>
       <div class="vads-u-color--secondary-darkest">
         $color-{{ include.name }}
