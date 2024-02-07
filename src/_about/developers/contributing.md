@@ -118,7 +118,7 @@ All components are required to have end-to-end tests located in the `web-compone
 
 Stencil provides many utility functions to help write e2e tests using Jest and Puppeteer. Review the Stencil documentation on [End-to-end Testing](https://stenciljs.com/docs/end-to-end-testing) for more information or review existing component tests for guidance.
 
-Unit testing is also encourage where appropriate. The [va-telephone component unit tests](https://github.com/department-of-veterans-affairs/component-library/blob/main/packages/web-components/src/components/va-telephone/test/va-telephone.spec.tsx) can be used as an example.
+Unit testing is also encouraged where appropriate. The [va-telephone component unit tests](https://github.com/department-of-veterans-affairs/component-library/blob/main/packages/web-components/src/components/va-telephone/test/va-telephone.spec.tsx) can be used as an example.
 
 ## Timeline to get a new component to prod
 
