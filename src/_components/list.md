@@ -19,13 +19,17 @@ anchors:
 
 ### Default
 
-#### Unordered and ordered lists
+#### Simple unordered and ordered lists
 
 <div class="site-showcase">
   {% include_relative html/lists.html %}
 </div>
 
-{% include snippet.html content='html/lists.html' %}
+#### More complex unordered and ordered lists
+
+<div class="site-showcase">
+  {% include_relative html/unordered-list-decision-letters.html %}
+</div>
 
 ## Usage
 
@@ -55,7 +59,7 @@ anchors:
 
 {% include component-example.html alt="List of appointments in VA.gov." file="/images/components/list/appointments-list.png" caption="An example of an inline list of appointments where each list item is a row containing appointment details." class="x2" %}
 
-{% include component-example.html alt="List of claim letters in VA.gov." file="/images/components/list/notification-letter.png" caption="An example of a list of Claim letters." class="x2" %}
+{% include component-example.html alt="List of claim letters in VA.gov." file="/images/components/list/claim-letters.png" caption="An example of a list of Claim letters from VA.gov." class="x2" %}
 
 {% include component-example.html alt="List of documents filed in VA.gov." file="/images/components/list/documents-filed.png" caption="An example of a list of documents filed with the VA." class="x2" %}
 
