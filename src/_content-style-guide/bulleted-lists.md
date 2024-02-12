@@ -20,18 +20,18 @@ anchors:
 Note: Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets that are full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
 
 <div class="do-dont">
-  <div class="do-dont__do">
-    <h3 class="do-dont__heading">Like this</h3>
-      <div class="do-dont__content" markdown="1"> 
-        Use parallel construction and don't use ending periods for fragments.
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1"> 
+Use parallel construction and don't use ending periods for fragments.
   
-        __What documents and information do I need to apply?__
+__What documents and information do I need to apply?__
 
-        - Social Security number
-        - Bank account direct deposit information
-        - Education and military history
-        - Basic information about the school
-  </div>
+- Social Security number
+- Bank account direct deposit information
+- Education and military history
+- Basic information about the school
+</div>
 </div>
 
 <div class="do-dont__dont">

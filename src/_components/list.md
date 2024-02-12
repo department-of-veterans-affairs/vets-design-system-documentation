@@ -33,13 +33,14 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/">Refer to the U.S. Web Design System for usage guidance</a>
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/list/">Refer to the U.S. Web Design System for usage guidance</a>
 
 ### Additional guidance for VA
 
 ### How this component works
 
 * **Use square list-item-type for unordered lists.** The square list item type is preferred.
+* **Two or more items.** Lists with 2 or more items are acceptable.
 
 ### Choosing between variations
 
@@ -63,10 +64,11 @@ anchors:
 
 {% include component-example.html alt="List of documents filed in VA.gov." file="/images/components/list/documents-filed.png" caption="An example of a list of documents filed with the VA." class="x2" %}
 
-
 ## Content considerations
 
 {% include content/unordered-list.md %}
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/bulleted-lists">Refer to the Content style guide for additional guidance for unordered lists</a>
 
 ## Accessibility considerations
 
