@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: File input
 intro-text: "File input allows a single file to be uploaded."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2EB04B39-CAE6-4D13-8655-4394F9A3F072/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85508&mode=design&t=TiJHClaf3VQ6wU6B-1
 status: use-with-caution-candidate
 web-component: va-file-input
 anchors:
