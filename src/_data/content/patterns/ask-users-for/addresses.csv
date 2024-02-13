@@ -1,0 +1,9 @@
+Section,Subsection,Pattern or component,Label,Label text,Hint text (if applicable),,Error scenario,Error message,Notes on recent updates,Notes on adjustments for specific channels
+,,,,,,,,,,
+/patterns,/ask-users-for,/addresses,/country,Country,,,/error/no-selection,Select a country,,
+/patterns,/ask-users-for,/addresses,/street-address,Street address,,,/error/no-entry,Enter a street address,,
+/patterns,/ask-users-for,/addresses,/city,City,,,/error/no-entry,Enter a city,,
+/patterns,/ask-users-for,/addresses,/state,State,,,/error/no-selection,Select a state,,
+/patterns,/ask-users-for,/addresses,/state-province-region,"State, province, or region",,,/error/no-selection,"Enter a state, province, or region",,
+/patterns,/ask-users-for,/addresses,/postal-code,Postal code,,,/error/no-entry,Enter a postal code,,
+/patterns,/ask-users-for,/addresses,/postal-code,Postal code,Enter a valid 5- or 9-digit postal code (with or without dashes),,/error/incorrect-entry,Enter a valid 5- or 9-digit postal code (with or without dashes),,
