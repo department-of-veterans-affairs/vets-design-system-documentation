@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Radio button
 research-title: Form controls
 intro-text: Radio buttons allow users to select exactly one choice from a group.
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/AF7CD21C-2DF3-4CA4-B678-473A929B9615/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1373%3A86693&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 uswds-v3: default
 web-component: va-radio

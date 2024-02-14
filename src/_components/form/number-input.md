@@ -4,7 +4,7 @@ permalink: /components/form/number-input
 has-parent: /components/form/
 title: Number input
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/4C89A45B-E8D8-44ED-B79A-E64F34303F03/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A84422&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Number input elements are used for numeric inputs."
 status: use-deployed
 uswds-v3: default

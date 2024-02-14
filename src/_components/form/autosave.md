@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Autosave
 intro-text: "Informs the user that we will, and have, automatically saved their progress in a form flow."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/DD364E2A-FF85-4009-BA2C-ACA9DA452F57/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A24511&mode=design&t=TiJHClaf3VQ6wU6B-1
 status: use-deployed
 anchors:
   - anchor: Examples
