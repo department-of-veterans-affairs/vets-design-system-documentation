@@ -9,13 +9,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@department-of-veterans-affairs/component-library@^36.1.0":
-  version "36.1.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-36.1.0.tgz#678a1d5fb4e3a7f6acc85ff5f428f48f705b5a9e"
-  integrity sha512-xKBVu5DRuSSaOaa0D/JP6msbwmfzDmC668J8wAaO+793VM1GSc9b1a5ZuC8z5y8moZl5lDIYZvR5inmp7juybg==
+"@department-of-veterans-affairs/component-library@^37.0.0":
+  version "37.0.0"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-37.0.0.tgz#b36cce43dc1d53b0f0fd55c496b5ddded5035e69"
+  integrity sha512-Y1fJhicBlTM5AAaQfWOByAJKt0LOJ9wY7wBqZ6co5H/+rbkty5/Ur5ISmS8112ammyAb/OYKkN6VmKx8ucHw7w==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.0.0"
-    "@department-of-veterans-affairs/web-components" "4.60.0"
+    "@department-of-veterans-affairs/web-components" "5.0.0"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
@@ -49,10 +49,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@4.60.0":
-  version "4.60.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-4.60.0.tgz#827180c22adba0dbfd0754828fb2b3a98c4ab0aa"
-  integrity sha512-uB4vMOTFf40uXeretV4FaW3wZx2bdax82LVc6sAs2orF0RNctQiZbd9E6nZzly3bEGoXfZ/haUdahYqcNQK09Q==
+"@department-of-veterans-affairs/web-components@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-5.0.0.tgz#81628780cef1e647dfd3f87d1473058b8cee481d"
+  integrity sha512-OHeCxd89lgzjCmF/G5RIvWjH81X0aq7XfoSx54RR1jl7pNbAZkm9oWxCD6adG4YGqrtmr2GArMvS17bO+lRRsg==
   dependencies:
     "@department-of-veterans-affairs/css-library" "^0.3.1"
     "@stencil/core" "^2.19.2"
