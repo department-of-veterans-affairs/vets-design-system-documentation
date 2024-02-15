@@ -15,6 +15,7 @@ anchors:
   close-btn-aria-label="Close notification"
   status="warning"
   visible
+  uswds
 >
   <h2 slot="headline">
     This component is not officially supported

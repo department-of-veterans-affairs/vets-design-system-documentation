@@ -22,9 +22,25 @@ We ask that teams begin to use these new versions of our web-components to aid i
 
 [Add the {{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries#add-the-component-symbol-library-to-your-project) in Sketch to be able to use the new v3-based versions of our components.
 
-#### Developers
+#### Migration strategy
 
-[Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components#uswds-v1-vs-v3-compatibility) to be able to toggle components onto their v3-based version.
+[Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration) to be able to migrate components onto their v3-based version.
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+  uswds
+>
+  <h2 slot="headline">
+    v1 components will be deprecated on April 19, 2024
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      In late February, all components that have a v3 version will be set to default to v3. By April 19, 2024 all v1 components will be deprecated.
+    </p>
+  </div>
+</va-alert>
 
 ### Governance rules for using v3-based components
 

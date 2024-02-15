@@ -9,6 +9,22 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+  uswds
+>
+  <h2 slot="headline">
+    v1 components will be deprecated on April 19, 2024
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      All V1 components will be officially retired and no longer available for use by April 19, 2024. Teams that have chosen to opt out of migrating to v3 components will be automatically opted in on this date. <a href="{{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration">Learn how to migrate a component</a>.
+    </p>
+  </div>
+</va-alert>
+
 ## Winter 2024
 
 The team continued to deliver web components synced to USWDS v3 and brought the platform inline with the v3 color palette.

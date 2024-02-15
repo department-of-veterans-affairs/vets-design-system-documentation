@@ -33,30 +33,32 @@ Use our VA Design System Web Components where applicable in your projects. We ma
 
 While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
 
-Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
+Due to these issues the Design System Team has moved to using Web Components on VA.gov applications and pages.
 
 For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert` (or `VaAlert` as the React binding).
 
 The benefits of using Design System Web Components include:
 
-- Web Components can be imported into any JS Framework
-- Consistent syntax across frameworks and projects
-- Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
-- Performance and speed
+* Web Components can be imported into any JS Framework
+* Consistent syntax across frameworks and projects
+* Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
+* Performance and speed
 
 The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components.
 
 If our components do not meet your needs, we would love to hear about it. Reach out to us in Slack at #platform-design-system or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose). And if you are interested in contributing to the Design System, review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
 
-## USWDS V1 vs. V3 Compatibility
+## USWDS V1 to V3 migration
 
 The current version of the Design System is compatible with the US Web Design System (USWDS) version 1. To use components compatible with version 3 of the USWDS, add a `uswds` flag to the component, as in this example:
 
-```
+```html
 <va-gizmo uswds>
 ```
 
-To check if the component you want to use in "V3 Mode" is available to use in this mode, go to the [VA Design System's Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-additional-info--default) site and look under the "USWDS" section. Here you will find a list of available components as well as implementation details and examples.
+To check if the component you want to use has a v3 version, go to the [VA Design System's Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-additional-info--default) site and look under the "USWDS" section. Here you will find a list of available components as well as implementation details and examples.
+
+To migrate, if the `uswds` prop has been set to false, explicitly set it to true. **Run all of your application test suites and address any tests that break due to migration.**
 
 ## Vanilla JavaScript applications
 
