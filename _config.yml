@@ -4,17 +4,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://design.va.gov" # Base hostname & protocol for the site
 
 project_name: VA.gov Design System
-design_library_name: "Component Symbol Library"
+design_library_name: "VADS Component Library"
 
 # Common links
-sketch_cloud_link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c
-sketch_component_library: https://sketch.com/s/bd089bc0-e3e3-4681-bf72-e6be22b433e4
-sketch_templates_link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9
-sketch_form_templates_link: https://sketch.com/s/dc844743-277e-41d4-81ba-a48fd0743952
-sketch_annotations_link: https://sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727
-sketch_wireframes_link: https://www.sketch.com/s/61f7423a-950c-49d2-aee7-96b4a1941eae
-sketch_user_flows_link: https://www.sketch.com/s/3b0d625a-ab30-4e83-8084-5987ea5e2bb7
-sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Work%20Practices/Design/Design%20Resources/Pattern%20Library/VA-gov-Pattern-Library.sketch
+figma_example_library: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=c29j3xBxzMAyLWxu-1 
+figma_component_library: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=121%3A1484&mode=design&t=ygQCLqlAL5VdSPil-1
+figma_templates_library: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A29744&mode=design&t=A89mK0w9KGp2uWIR-1
+figma_annotations_library: https://www.figma.com/file/CZcnWfQOwtLqPm4WA5paYG/VADS-Web-Annotation-Kit?type=design&node-id=415%3A1135&mode=design&t=V0V5YZrcbM7VnWa6-1
 
 forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-System-Overview.2085355587.html
 
