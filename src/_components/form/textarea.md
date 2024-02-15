@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Textarea
 intro-text: "Textarea allows people to enter any type of text."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/C6340B6C-F41E-423B-BDEA-B340A81C9714/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A96417&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 uswds-v3: default
 web-component: va-textarea

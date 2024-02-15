@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Select
 intro-text: "A select component allows users to choose one option from a menu."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/93AD583C-43C8-40A6-9363-36D3CC2C2AAD/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A93876&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 uswds-v3: default
 web-component: va-select
