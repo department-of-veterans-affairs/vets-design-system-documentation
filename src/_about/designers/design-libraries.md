@@ -112,6 +112,6 @@ Artboard naming conventions should reflect the page they reside just like breadc
 
 * VAOSR - Exploration - Calendar widget - v001
 
-#### hen artboards would be named
+#### Then artboards would be named
 
 * VAOSR - Exploration - Calendar widget - 001
