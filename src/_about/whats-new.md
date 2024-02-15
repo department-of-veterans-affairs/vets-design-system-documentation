@@ -94,6 +94,8 @@ See the [component-library release notes](https://github.com/department-of-veter
 * Added guidance for conditional revealing fields in the [Ask users for relationship to Veteran]({{ site.baseurl }}/patterns/ask-users-for/relationship#conditionally-revealed-fields).
 * Removed unhelpful examples from the [Help users to navigate a long list]({{ site.baseurl }}/patterns/help-users-to/navigate-a-long-list#examples) pattern.
 * Deprecated the [Notification]({{ site.baseurl }}/components/notification) component.
+* Deprecated the [Link - Deep content]({{ site.baseurl }}/components/link/deep-content) component.
+* Updated [accessibility considerations for icons]({{ site.baseurl }}/foundation/icons#accessibility-considerations).
 
 All [documentation updates can be viewed in GitHub](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pulls?q=is%3Apr+is%3Aclosed).
 
