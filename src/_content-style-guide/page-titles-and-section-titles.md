@@ -20,7 +20,7 @@ If someone can still figure out what they need to do on that page or what that p
 Page titles have a few important functions: 
 
 - To clearly and quickly tell people the main purpose of the page—what they can do or what information they can get on that page.
-- To [optimize the page for search]({{ site.baseurl }}/content-style-guide/seo), so the information is findable through Google and other search engines. 
+- To [optimize the page for search]({{ site.baseurl }}/content-style-guide/seo), so the information is findable through Google and other search engines.
 
 Try to keep page titles to 52 characters maximum, with spaces. Use the primary SEO keyword in the page title. On VA.gov, page titles use the H1 tag.
 
@@ -37,8 +37,8 @@ Try to keep page titles to 52 characters maximum, with spaces. Use the primary S
 Section and subsection titles (also sometimes called headers and subheads) help organize the page into scannable, user-friendly chunks. They should provide clear guideposts and bring people deeper into the content. 
 
 - Structure section titles with H2s and subsections with H3s, and so on. This provides a natural hierarchy for your content, and helps SEO.
-
-- Try to keep section and subsection titles to 70 characters maximum, with spaces. 
+- In sections that list several ways someone can contact VA or apply for a benefit, use "Option [X]:" in the header. For example, under an H2 that says "How can I apply?" we might have these H3s: "Option 1: Online" and "Option 2: By mail"
+- Try to keep section and subsection titles to 70 characters maximum, with spaces.
 
 We allow a little more character count for sections and subsections than page titles. But in general, sections become hard to scan when they're too long. Eliminate unnecessary details or nuance in section and subsection titles, and address them with more depth in the paragraph copy.
 
@@ -56,9 +56,9 @@ We allow a little more character count for sections and subsections than page ti
 - **H2** Documents you need before you start your college application
 - **H2** Ways to apply to colleges 
 
-> - H3 Apply online 
+> - H3 Option 1: Online 
 
-> - H3 Apply by mail 
+> - H3 Option 2: By mail 
 
 - **H2** What happens after you apply
 
