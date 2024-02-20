@@ -22,33 +22,46 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-## Examples - v1
-
-### Default - Primary
-
-{% include storybook-preview.html height="100px" story="components-va-button--primary" link_text="va-button--primary" %}
-
-### Default - Secondary
-
-{% include storybook-preview.html height="100px" story="components-va-button--secondary" link_text="va-button--secondary" %}
-
-### Default - Big
-
-{% include storybook-preview.html height="100px" story="components-va-button--big" link_text="va-button--big" %}
-
-### Continue
-
-{% include storybook-preview.html height="100px" story="components-va-button--continue" link_text="va-button--continue" %}
-
-### Back
-
-{% include storybook-preview.html height="100px" story="components-va-button--back" link_text="va-button--back" %}
-
 ## Examples - v3
 
 ### Default - Primary
 
-{% include storybook-preview.html height="100px" story="uswds-va-button--primary" link_text="va-button--primary v3 along with additional variations" %}
+{% include storybook-preview.html height="100px" story="uswds-va-button--primary" link_text="va-button--primary" %}
+
+### Default - Secondary
+
+{% include storybook-preview.html height="100px" story="uswds-va-button--secondary" link_text="va-button--secondary" %}
+
+### Default - Big
+
+{% include storybook-preview.html height="100px" story="uswds-va-button--big" link_text="va-button--big" %}
+
+### Continue
+
+{% include storybook-preview.html height="100px" story="uswds-va-button--continue" link_text="va-button--continue" %}
+
+### Back
+
+{% include storybook-preview.html height="100px" story="uswds-va-button--back" link_text="va-button--back" %}
+
+### Destructive
+
+{% include storybook-preview.html height="100px" story="button--destructive" link_text="" base_path=site.storybook_mobile_path %}
+
+### Base - Primary (mobile only)
+
+{% include storybook-preview.html height="100px" story="button--base" link_text="" base_path=site.storybook_mobile_path %}
+
+### Base - Secondary (mobile only)
+
+{% include storybook-preview.html height="100px" story="button--base-secondary" link_text="" base_path=site.storybook_mobile_path %}
+
+
+## Examples - v1
+
+### Default - Primary
+
+{% include storybook-preview.html height="100px" story="components-va-button--primary" link_text="va-button--primary v1 along with additional variations" %}
 
 ## Usage
 
@@ -59,7 +72,7 @@ anchors:
 #### When to use a button
 
 * **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#links-vs-buttons).
-* **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window. 
+* **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window.
 
 #### When to consider something else
 
@@ -72,11 +85,14 @@ anchors:
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
 
-
 ### Choosing between variations
 
-* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. 
-* **Use secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section.
+* **Use Primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. Also, use primary buttons to take the user to the next step in a process.
+* **Use Secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
+* **Use Big primary buttons for the only action.** Use the big variation of the primary button for the only action on the page.
+* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** Note that these buttons can be used as a pair from [button pair]({{ site.baseurl }}/components/button/button-pair). Also, note that the Back button should not be used if it is only navigating rather than taking an action (like submitting data ala the Continue button).
+* **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons will not pass the required color contrast ratio.
+* **Use destructive for actions that have serious consequences.** Use the destructive button for any action that cannot be reversed and may result in data loss. Currently used in the mobile app when canceling an appointment and when removing contact information.
 
 ### Placement
 

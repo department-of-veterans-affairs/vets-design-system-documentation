@@ -25,15 +25,17 @@ anchors:
 
 {% include storybook-preview.html story="components-va-component-name--default" link_text=page.web-component %}
 
-
 ### Variation 1
 
 Add Storybook examples as necessary.
 
-
 ### Variation 2
 
 Add Storybook examples as necessary.
+
+### Variation 3 (mobile only)
+
+{% include storybook-preview.html height="100px" story="name" base_path=site.storybook_mobile_path %}
 
 ## Usage
 
@@ -41,7 +43,6 @@ Add Storybook examples as necessary.
 
 * **In this context**: Explain the scenario or user context where this component is, or could be, used.
 * **In this task**: Explain the user task or tasks where this component is, or could be, used.
-
 
 ### When to consider something else
 
@@ -64,7 +65,7 @@ Describe the key interactions for this component.
 
 ### Choosing between variations
 
-Help the designer and developer understand when to choose between any variations of this component.
+Help the designer and developer understand when to choose between any variations of this component. Include mobile variations here.
 
 ### Placement
 
