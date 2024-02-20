@@ -33,8 +33,6 @@ uswds_link: https://designsystem.digital.gov/
 
 
 # People
-sketch_for_teams_admin: "Kevin Hoffman" 
-sketch_library_owner: "Lillian Boot, Barb Denney"
 experimental_reviewer_1: "Matthew Dingee"
 
 
@@ -90,5 +88,6 @@ exclude:
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.
-storybook_path: "http://127.0.0.1:6006"
+storybook_path: "http://localhost:6006"
 storybook_prod_uswds_path: "https://design.va.gov/storybook/?path=/docs/uswds"
+storybook_mobile_path: "https://department-of-veterans-affairs.github.io/va-mobile-library"

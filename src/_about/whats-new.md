@@ -97,6 +97,7 @@ See the [component-library release notes](https://github.com/department-of-veter
 ### Documentation updates
 
 * Renamed Featured Content to [Summary box]({{ site.baseurl }}/components/summary-box).
+* Moved [List]({{ site.baseurl }}/components/list) to components.
 * Added [Design tokens]({{ site.baseurl }}/foundation/design-tokens) to the Foundation section.
 * Updated the [Contributing]({{ site.baseurl }}/about/developers/contributing) page for developers.
 * Added the [Language toggle]({{ site.baseurl }}/components/language-toggle) component.

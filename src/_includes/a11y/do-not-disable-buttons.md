@@ -12,13 +12,17 @@ In addition, disabled buttons can be unintentionally read out and accessed by mo
 
 While it is technically possible, we strongly discourage disabling buttons. Here are recommendations on how to handle specific interactions:
 
-* **Lack of required fields.** When a user attempts to submit a form without entering all required form fields: 
-  * Announce the error and shift focus to the first unfilled required form field. 
+* **Lack of required fields.** When a user attempts to submit a form without entering all required form fields:
+  * Announce the error and shift focus to the first unfilled required form field.
   * Properly indicate required form elements (the right thing will happen for you when you use the required property on form fields in the Design System).
 * **No longer valid options.** If certain options in a form are no longer valid then there are two options:
   1. Replace the form elements that can no longer be changed with text representing the current value instead of the current value within a disabled input.
   2. Hide the form elements that are no longer valid.
-   
+
+Additional suggestions:
+
+* **Provide additional context.** Provide additional context surrounding a button that tells a user what to expect when a button is tapped.
+
 #### Is it ever valid to disable a button?
 
 Post-form submission or post-action it can be appropriate to disable the submit or action button as the system is in-between states and loading or taking action. This behavior is often seen on buttons that make a purchase or reservation to prevent the user from accidentally triggering the action multiple times.
