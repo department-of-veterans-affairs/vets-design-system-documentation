@@ -37,7 +37,7 @@ Try to keep page titles to 52 characters maximum, with spaces. Use the primary S
 Section and subsection titles (also sometimes called headers and subheads) help organize the page into scannable, user-friendly chunks. They should provide clear guideposts and bring people deeper into the content. 
 
 - Structure section titles with H2s and subsections with H3s, and so on. This provides a natural hierarchy for your content, and helps SEO.
-- In sections that list several ways someone can contact VA or apply for a benefit, use "Option [X]:" in the header. For example, under an H2 that says "How can I apply?" we might have these H3s: "Option 1: Online" and "Option 2: By mail"
+- In sections that list several ways someone can contact VA or apply for a benefit, use "Option [X]:" in the header. For example, under an H2 that says "How to apply" we might have these H3s: "Option 1: Online" and "Option 2: By mail"
 - Try to keep section and subsection titles to 70 characters maximum, with spaces.
 
 We allow a little more character count for sections and subsections than page titles. But in general, sections become hard to scan when they're too long. Eliminate unnecessary details or nuance in section and subsection titles, and address them with more depth in the paragraph copy.
