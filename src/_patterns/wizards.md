@@ -36,7 +36,7 @@ You should not create any new instances of the Wizard pattern and should instead
 
 - **Apply for service discharge upgrade**:  [How to apply for a discharge upgrade](https://www.va.gov/discharge-upgrade-instructions) ([code](https://github.com/department-of-veterans-affairs/vets-website/tree/master/src/applications/discharge-wizard)). _You may need to scroll down to find the wizard._ Applying for a service discharge upgrade is a relatively new and very complex process. Depending on a user's specific set of circumstances, they may need to complete different forms and send them to different places. This wizard is meant to collect information about those specific circumstances to give users the best available guidance of what they can do next. There are over 100 different combinations from the wizard that can yield different results, so it does not make sense to do a simple content page to explain eligibility.
 
-  This tool was developed prior to Formation, so some of the patterns are not in alignment with other wizards. For example, the wizard starts at a new URL, does not use the blue sidebar, etc. However, this can be used as an example for similar use cases, where a very complex set of characteristics or circumstances may determine a user's next step.
+This tool was developed prior to the Design System, so some of the patterns are not in alignment with other wizards. For example, the wizard starts at a new URL, does not use the blue sidebar, etc. However, this can be used as an example for similar use cases, where a very complex set of characteristics or circumstances may determine a user's next step.
 
 ## Where to place wizards
 

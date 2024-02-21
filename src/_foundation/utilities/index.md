@@ -46,7 +46,7 @@ Some of the utilities, such as margin and padding, are built to maintain a consi
 
 ## Utilities for designers
 
-Designers should explore the available utilities in Formation. Because designs will be implemented with the styles in formation, knowledge of the utilities may assist in how designers describe their work.
+Designers should explore the available utilities in the CSS Library. Because designs will be implemented with the styles in formation, knowledge of the utilities may assist in how designers describe their work.
 
 ## Naming
 
