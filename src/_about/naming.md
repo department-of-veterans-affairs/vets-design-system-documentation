@@ -4,10 +4,10 @@ sub_section: naming-convention
 title: Naming convention
 ---
 
-# Formation’s naming convention
+# Naming convention
 
 <div class="va-introtext">
-Naming conventions are an important aspect of any design system. Formation’s naming convention helps:
+  Naming conventions are an important aspect of any design system. The naming convention helps:
 </div>
 
 * Provide clarity and scope
@@ -33,13 +33,13 @@ There are other variants on the naming convention as well.
 
 Below is some more information on the different parts of the name.
 
-### Global namespace
+## Global namespace
 
-The global namespace is `vads`, which is short for **Veterans Affairs Design System**. The global namespace helps identify a class name that belongs to Formation from any other classes that might be created specifically for an application.
+The global namespace is `vads`, which is short for **Veterans Affairs Design System**. The global namespace helps identify a class name that belongs to the Design System from any other classes that might be created specifically for an application.
 
 ### Class prefix
 
-Class prefixes help indicate the function of a class. There are three main functions for classes in Formation:
+Class prefixes help indicate the function of a class. There are three main functions for classes:
 
 * `c` for Component
 * `u` for Utility
@@ -51,7 +51,7 @@ BEM Syntax stands for **Block**, **Element**, **Modifier**.
 
 While the BEM syntax typically results in longer class names, it is excellent for providing information about how classes are scoped. In addition to the context, this allows the developer to avoid using combinators in class names and use semantic headings.
 
-For example, an alert can be considered a **block** (for brevity, we will not use the full Formation naming convention here).
+For example, an alert can be considered a **block** (for brevity, we will not use the full naming convention here).
 
 ```
 .alert {}
@@ -83,16 +83,15 @@ When put together, we can have something like:
 
 [More on BEM Syntax](http://getbem.com)
 
-## About items that do not use Formation’s naming convention
+## About items that do not use the naming convention
 
-You will notice that not everything in Formation follows the naming convention described above. There are two reasons for this:
+You will notice that not everything in follows the naming convention described above. There are two reasons for this:
 
 1. Components are directly from the [U.S. Web Design System](https://designsystem.digital.gov)
-2. Components developed before Formation was fully established
+2. Components developed before the Design System was fully established
 
-**Any new components added to Formation must use the naming convention.**
+**Any new components added to the Design System must use the naming convention.**
 
 ### What will happen to older components?
 
-Some legacy components may be refactored to fit better with the old system. When those components are refactored, the legacy versions will remain in the codebase for XXXX weeks/cycles. Follow along for updates to Formation to find out what has changed.
-
+Some legacy components may be refactored to fit better with the old system. When those components are refactored, the legacy versions will remain in the codebase for XXXX weeks/cycles. Follow along for updates to the Design System to find out what has changed.

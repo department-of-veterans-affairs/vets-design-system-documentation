@@ -22,7 +22,7 @@ anchors:
 
 ## Grid elements
 
-In addition to the Flexbox grid, Formation uses a 12-column, responsive, flexbox grid to provide structure and align content.
+In addition to the Flexbox grid, the CSS library uses a 12-column, responsive, flexbox grid to provide structure and align content.
 
 The grid consists of three distinct pieces:
 
