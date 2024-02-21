@@ -4,12 +4,14 @@
 
 In some situations, an ARIA role may need to be added to the alert component for it to work best for people who use assistive technology. ARIA should be used sparingly to supplement and enhance the native features of HTML.
 
-* **Static alert: No role.**  If the alert is a static alert that exists on the page when the page gets loaded, it likely doesn't need a role.
-* **Timely information that requires action: Use `role="alert"`.** If the alert conveys timely or time-sensitive and important information that needs to be acted on before moving forward, use `role="alert"`. 
-* **Interactive elements: Use `role="alertdialog"`.** If the information in the alert contains interactive elements, like links or buttons, use the `role="alertdialog"` role instead of `role="alert"`.
-* **Important but not timely: Use `role="region"`.** If the information isn't timely and doesn't need to be acted on immediately, but still contains important information that represents a substantial topic on the page, role="region" may be appropriate. Some roles, like `role="region"`, help assistive technology identify the content as being grouped and separated from the rest of the page content. For example, some assistive technologies can navigate by landmark roles like `role="region"`.
+* **Static alert: No Role.** If the alert is a static alert that exists on the page when the page gets loaded, it doesn’t need a role.
+* **Important, time-sensitive information: Use role="alert".** Use this role on alert components that appear after a user interaction.
+  * This is for live updates to a page that would not get noticed otherwise. Updates to a page can occur without the user refreshing the page, so these may go unnoticed when using assistive technologies. `role="alert"` ensures assistive technology announces these updates and keeps the user informed.
+  * Because this can be intrusive to the user experience, this should be used sparingly for information that requires the user's immediate attention.
+  * **Interactive alerts: Use role="alertdialog" instead.** For alerts that fit the criteria of `role="alert"`, but also contain content requiring user interaction, use `role="alertdialog"` instead of `role="alert"`. For example, expecting the user to acknowledge the alert by closing it before proceeding.
+* For must-read information that is present on page load, consider using a [Summary box]({{ site.baseurl }}/components/summary-box) instead of an alert.
 
-More on [ARIA specific roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques).
+More on [ARIA: alert role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/alert_role).
 
 ### Alternative (alt) text for icons and images
 
