@@ -96,6 +96,7 @@ See the [component-library release notes](https://github.com/department-of-veter
 
 ### Documentation updates
 
+* Updated accessibility guidance around the use of role in [Alert]({{ site.baseurl }}/components/alert#assign-an-appropriate-aria-role).
 * Renamed Featured Content to [Summary box]({{ site.baseurl }}/components/summary-box).
 * Added [Design tokens]({{ site.baseurl }}/foundation/design-tokens) to the Foundation section.
 * Updated the [Contributing]({{ site.baseurl }}/about/developers/contributing) page for developers.
