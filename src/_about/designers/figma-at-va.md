@@ -28,4 +28,4 @@ To get started on a new project, there are only a couple of steps:
 
 ## Leaving Figma
 
-People change projects frequently, and we have a limited number of licenses for Figma. If you roll off work at VA or no longer use Figma, please email {{ site.sketch_for_teams_admin }}.
+People change projects frequently, and we have a limited number of licenses for Figma. If you roll off work at VA or no longer use Figma, please view the [Offboarding](https://depo-platform-documentation.scrollhelp.site/getting-started/offboarding) procedure.
