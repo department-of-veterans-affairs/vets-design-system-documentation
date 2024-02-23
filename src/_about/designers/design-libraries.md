@@ -13,33 +13,43 @@ anchors:
 
 ## Add the {{ site.design_library_name }} to your project
 
-Use the core {{ site.design_library_name }} library to access all components. In Figma, the component library lives in the cloud. Thus you do not need to download the library. The Design System Team updates the component library in order to keep it in sync with the component-library code which contains our web components.
+Use the core **{{ site.design_library_name }}** library to access all components. In Figma, the component library lives in the cloud. Thus you do not need to download the library. The Design System Team updates the component library in order to keep it in sync with the component-library code which contains our web components.
 
 <a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/research-design/designing-with-figma-at-va#DesigningwithFigmaatVA-HowtoenabletheVADesignLibrary">Learn how to enable the {{ site.design_library_name }}</a>
 
-Once you’ve loaded the library, you should be able to access everything in it by navigating to **Resources** > **Components** > **{{ site.design_library_name}}**. Note that you cannot open or edit the component library directly. The Design System Team manages this library.
+Once you’ve loaded the library, you can access the components by navigating to the **Assets** panel, and selecting **{{ site.design_library_name}}**.
+
+**Note:** You cannot edit the component library directly. The Design System Team manages this library.
 
 <a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/research-design/designing-with-figma-at-va#DesigningwithFigmaatVA">Learn more about designing with Figma at VA</a>
 
-### Example Library
+### {{ site.example_library_name}}
 
-The Example library has examples of all of the component symbols and their variations as well as foundational elements (color, typography, and spacing).
+**{{ site.example_library_name}}** demonstrates all of the components, their properties and variations, as well as common examples for you to copy and paste into your design files. 
 
-<a class="vads-c-action-link--blue" href="{{ site.figma_example_library }}">View the Example Library</a>
+**Note:** Copying example component instances from here to your own files will maintain the link to the main component in the **{{ site.design_library_name}}** so you will be notified of any component updates.
 
-### Templates, Patterns, and Forms Library
+<a class="vads-c-action-link--blue" href="{{ site.figma_example_library }}">View {{ site.example_library_name}}</a>
 
-The Templates, Patterns, and Forms library has templates for all of our patterns, including form patterns. 
+### {{ site.resource_library_name }}
 
-<a class="vads-c-action-link--blue" href="{{ site.figma_templates_library }}">View the Templates, Patterns, and Forms Library</a>
+**{{ site.resource_library_name }}** has templates for all of our [Patterns]({{ site.baseurl }}/patterns/), including form patterns. Copy assets from here to kickstart a design.
 
-### Additional libraries
+<a class="vads-c-action-link--blue" href="{{ site.figma_templates_library }}">View {{ site.resource_library_name }}</a>
 
-Use these libraries to assist your design process. Some of the assets you can generate from these libraries, such as user flows, are required in the CollabCycle process.
+### Additional libraries and resources
+
+Use these libraries to assist your design process. Some of the assets you can generate from these libraries are required in the <a href="https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/">Collaboration Cycle</a> process.
+
+**VADS Web Annotation Kit** provides useful tools to document your design with accessibility, development, component identification, and many other types of helpful notes. 
 
 <a class="vads-c-action-link--blue" href="{{ site.figma_annotations_library }}">View the Web Annotation Kit</a>
 
-The wireframe library is currently under construction. User flows are now created in Mural and should [follow this guidance](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/information-architecture/standards/user-flow-guidance.md).
+The **VADS Wireframe Library**  is currently under construction.
+
+### User Flows
+
+ User flows are created in Mural and should [follow this guidance](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/information-architecture/standards/user-flow-guidance.md) for best practices. See [Request access to tools](https://depo-platform-documentation.scrollhelp.site/getting-started/request-access-to-tools) for additional information.
 
 ## Shared libraries
 
@@ -76,7 +86,6 @@ If you feel that you have a component that would be helpful to others you can co
 
 1. **Build your assets on the DRAFTS page** in the shared library you would like to contribute to. It's important to use symbols, colors, text and layer styles, wherever possible, from the Core library.
 2. **Create new symbol(s) for your proposed component.** This should include any nested symbols from the Core library that you used (try not to break the symbols). Use the following naming convention for new symbols. You may also refer to the organization of the Core library for hints.
-
 * Default: ```[component name] / [desktop | mobile ] / default / [item]```
 * Variation: ```[component name] / [desktop | mobile ] / variation-name / [item]```
 * Variation with states: ```[component name] / [desktop | mobile ] / variation-name / [item:state]```
@@ -90,7 +99,7 @@ We use naming conventions to organize files in order for other people to easily 
 
 ### Pages
 
-Pages contain all of the artboards for the product. Each page should have a specific purpose—iterations on a specific user flow, a prototype, etc.
+Pages contain all of the frames for the product. Each page should have a specific purpose—iterations on a specific user flow, a prototype, etc.
 
 Name pages in such a way other designers, engineers, product folks, and stakeholders can understand and navigate them. Always start version numbering with 3 digits (e.g. v001).
 
@@ -104,14 +113,14 @@ Name pages in such a way other designers, engineers, product folks, and stakehol
 * VAOSR - Prototype - Community care - v001
 * VAOSR - Direct schedule - v001
 
-### Artboards
+### Frames
 
-Artboard naming conventions should reflect the page they reside just like breadcrumbs on a website. Use numbers or descriptions for clarity as needed.
+Frame naming conventions should reflect the page they reside just like breadcrumbs on a website. Use numbers or descriptions for clarity as needed.
 
 #### If the page name is
 
 * VAOSR - Exploration - Calendar widget - v001
 
-#### Then artboards would be named
+#### Then the frames would be named
 
-* VAOSR - Exploration - Calendar widget - 001
+* VAOSR - Exploration - Calendar widget - v001

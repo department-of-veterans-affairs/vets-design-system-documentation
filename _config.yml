@@ -5,6 +5,8 @@ url: "https://design.va.gov" # Base hostname & protocol for the site
 
 project_name: VA.gov Design System
 design_library_name: "VADS Component Library"
+example_library_name: "VADS Example Library"
+resource_library_name: "VADS Templates, Patterns, and Forms"
 
 # Common links
 figma_example_library: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=c29j3xBxzMAyLWxu-1 
