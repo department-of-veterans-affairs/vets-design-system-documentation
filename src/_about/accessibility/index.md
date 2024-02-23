@@ -5,15 +5,15 @@ permalink: /about/accessibility/
 intro-text: How to follow accessibility standards when using or contributing to the VA Design System (VADS)
 ---
 
-VA is here to serve Veterans of the United States military, and [approximately 40% have an identified disability](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/teams/vsa/accessibility/disability-statistics-veterans.md). 
+VA is here to serve Veterans of the United States military, and [approximately 40% have an identified disability](https://www.statista.com/statistics/250316/us-veterans-by-disability-status/). 
 
 Therefore, [accessibility is core to all design decisions]({{ site.baseurl }}/about/principles#usable-by-everyone) made in our Design System. All components must be tested before admission into the Design System, and all VA products must be tested before launch.
 
 ## Our holistic approach to accessibility
 
-The VA Design System provides accessible components, the guidance to implement these components, and the tools to customize and extend the design system accessibly. 
+The VA Design System provides accessible components, the guidance to implement these components, and the tools to customize and extend the design system accessibly. It was built on top of a fork of the U.S. Web Design System (USWDS), which prioritizes accessibility throughout. [Learn more about how USWDS practices accessibility.](https://designsystem.digital.gov/documentation/accessibility/)
 
-However, components don’t live in a vacuum. As standalone elements, they can only be tested atomically. For a product to launch, you need to test holistically; you should review the product as a whole before launch. 
+Components don’t live in a vacuum. As standalone elements, they can only be tested atomically. For a product to launch, you need to test holistically; you should review the product as a whole before launch. 
 
 The surest way to make an accessible product is to “shift left,” or prioritize accessibility during an entire project’s lifecycle.
 
@@ -68,24 +68,24 @@ As part of staging reviews, new components must also complete [advanced testing 
 * iOS with Safari using VoiceOver (Mobile)
 * Windows 11 with Chrome using JAWs (Desktop)
 
-**Note:** The testing tools above may be replaced, depending on context, with NVDA and TalkBack.
+If time and resources allow, do a more comprehensive review by testing with:
+* Android with Chrome using TalkBack (Mobile)
+* Windows 11 with Chrome using NVDA (Desktop)
 
 It is the intention of this team to improve our testing standards to more accurately reflect the full experience of users with disabilities. Today our compliance testing sets a minimal standard (WCAG 2.1 AA) that we are striving to raise.
 
 ## Resources for Veteran-facing service teams
-
-### Learn how to make accessible products on the modernized VA.gov platform
-
-Visit the VA Platform site to learn about:
-
-- [Accessibility for developers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-testing)
-- [Accessibility for researchers](https://depo-platform-documentation.scrollhelp.site/research-design/research-assistive-technology-sessions)
-- [How to prepare for an accessibility staging review](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/prepare-for-an-accessibility-staging-review)
-- [Our plain language guidelines](https://design.va.gov/content-style-guide/plain-language/)
-
 
 ### Get accessibility guidance early from the CAIA team
 
 The Sitewide Content, Accessibility, and Information Architecture (CAIA) team can help you meet VA.gov’s accessibility standards. Whether you’re starting a new product or refining an existing one, contact the CAIA team as early as possible to create accurate, consistent, accessible, and equitable digital services for Veterans.
 
 Submit a [Sitewide Content, Accessibility, and IA intake form ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?assignees=RLHecht%2C+coforma-terry%2C+kristinoletmuskat%2C+laurwill%2C+sara-amanda&labels=sitewide+CAIA%2C+sitewide+content-product+support%2C+Sitewide+IA%2C+sitewide+content%2C+sitewide+accessibility&projects=&template=sitewide-content-intake-form.md&title=%3CType+of+Request%3E+from+%3CTeam%3E) in GitHub to get started, or reach out to CAIA on their #sitewide-content-accessibility-ia Slack channel.
+
+### Learn how to make accessible products on the modernized VA.gov platform
+
+- [Accessibility for developers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-testing)
+- [Accessibility for researchers](https://depo-platform-documentation.scrollhelp.site/research-design/research-assistive-technology-sessions)
+- [How to prepare for an accessibility staging review](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/prepare-for-an-accessibility-staging-review)
+- [Our plain language guidelines](https://design.va.gov/content-style-guide/plain-language/)
+
