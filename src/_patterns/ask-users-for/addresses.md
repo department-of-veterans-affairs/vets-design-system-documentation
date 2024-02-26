@@ -136,25 +136,13 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 * If you need to display an address after it has been collected, then [follow content style guidelines on addresses](/content-style-guide/dates-and-numbers#addresses).
 
-### Error message templates for addresses
+### Labels, error messages, and hint text
 
-**When a user doesn’t enter a street address...**
-: Say "Please enter a street address"
+{% assign labels = site.data.content.patterns.ask-users-for.addresses %}
 
-**When a user doesn’t enter a city...**
-: Say "Please enter a city"
-
-**When a user doesn’t enter a state...**
-: Say "Please enter a state"
-
-**When a user doesn’t enter a postal code...**
-: Say "Please enter a postal code"
-
-**When a postal code is entered incorrectly...**
-: Say "Please enter a valid 5- or 9-digit postal code (dashes allowed)"
-
-**When a postal code can’t be correct...**
-: Say "Please provide a valid postal code"
-
-**When a user doesn’t select a state or province...**
-: Say "Please select a state or province"
+{% for label in labels %}
+**{{ label.label-text }}**
+: Error: {{ label.error-scenario }}
+: Response: {{ label.error-message }}
+: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
+{% endfor %}
