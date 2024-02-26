@@ -20,8 +20,8 @@ We ask that teams begin to use these new versions of our web-components to aid i
 
 #### Designers
 
-[Add the {{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries#add-the-component-symbol-library-to-your-project) in Sketch to be able to use the new v3-based versions of our components.
-
+[Add the {{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries#add-the-vads-component-library-to-your-project) in Figma to be able to use the new v3-based versions of our components.
+ 
 #### Migration strategy
 
 [Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration) to be able to migrate components onto their v3-based version.
