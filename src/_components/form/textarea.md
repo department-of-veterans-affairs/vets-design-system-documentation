@@ -10,12 +10,18 @@ status: use-deployed
 uswds-v3: default
 web-component: va-textarea
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="260px" story="uswds-va-textarea--default" link_text="va-textarea v3 default with additional variations" %}
 
 ## Examples - v1
 
@@ -36,12 +42,6 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 ### Hint text
 
 Refer to the overall [form guidance]({{ site.baseurl }}/components/form#hint-text) for hint text examples and usage.
-
-## Examples - v3
-
-### Default
-
-{% include storybook-preview.html height="260px" story="uswds-va-textarea--default" link_text="va-textarea v3 default with additional variations" %}
 
 ## Usage
 

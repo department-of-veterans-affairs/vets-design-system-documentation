@@ -10,14 +10,20 @@ status: use-deployed
 uswds-v3: default
 web-component: va-select
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select v3 along with additional variations" %}
 
 ## Examples - v1
 
@@ -44,13 +50,6 @@ anchors:
 ### Internationalization
 
 {% include storybook-preview.html story="components-va-select--internationalization" link_text="va-select internationalization" %}
-
-## Examples - v3
-
-### Default
-
-{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select v3 along with additional variations" %}
-
 
 ## Usage
 

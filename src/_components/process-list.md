@@ -7,24 +7,14 @@ status: use-deployed
 uswds-v3: default
 web-component: va-process-list
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
-
-## Examples - v1
-
-### Default - Content list
-
-{% include storybook-preview.html height="605px" story="components-va-process-list--default" link_text="va-process-list" %}
-
-### Additional styling
-
-{% include storybook-preview.html height="200px" story="components-va-process-list--additional-styling" link_text="va-process-list--additional-styling" %}
 
 ## Examples - v3
 
@@ -43,6 +33,16 @@ anchors:
 ### Custom Sizing
 
 {% include storybook-preview.html height="300px" story="uswds-va-process-list--custom-sizing" link_text="va-process-list v3 custom sizing" %}
+
+## Examples - v1
+
+### Default - Content list
+
+{% include storybook-preview.html height="605px" story="components-va-process-list--default" link_text="va-process-list" %}
+
+### Additional styling
+
+{% include storybook-preview.html height="200px" story="components-va-process-list--additional-styling" link_text="va-process-list--additional-styling" %}
 
 ## Usage
 

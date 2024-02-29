@@ -10,14 +10,20 @@ status: use-with-caution-candidate
 uswds-v3: default
 web-component: va-button-pair
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
+
+## Examples - v3
+
+### Default 
+
+{% include storybook-preview.html story="uswds-va-button-pair--default" link_text="Default v3 button pair along with additional variations" %}
 
 ## Examples - v1
 
@@ -32,12 +38,6 @@ anchors:
 ### Back/Continue
 
 {% include storybook-preview.html story="components-va-button-pair--continue" link_text="Back/Continue button pair" %}
-
-## Examples - v3
-
-### Default 
-
-{% include storybook-preview.html story="uswds-va-button-pair--default" link_text="Default v3 button pair along with additional variations" %}
 
 ## Usage
 

@@ -10,13 +10,19 @@ status: use-deployed
 uswds-v3: default
 web-component: va-radio
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="300px" story="uswds-va-radio--default" link_text="va-radio v3 default and additional variations" %}
 
 ## Examples - v1
 
@@ -47,12 +53,6 @@ anchors:
 ### Internationalization
 
 {% include storybook-preview.html height="200px" story="components-va-radio--internationalization" link_text="va-radio internationalization" %}
-
-## Examples - v3
-
-### Default
-
-{% include storybook-preview.html height="300px" story="uswds-va-radio--default" link_text="va-radio v3 default and additional variations" %}
 
 ## Usage
 

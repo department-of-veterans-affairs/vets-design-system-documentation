@@ -7,22 +7,12 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 uswds-v3: default
 web-component: va-breadcrumbs
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
-
-### Rerender state
-
-{% include storybook-preview.html height="200px" story="components-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs and adjust state" %}
 
 ## Examples - v3
 
@@ -37,6 +27,16 @@ anchors:
 ### Wrapping state
 
 {% include storybook-preview.html story="uswds-va-breadcrumbs--wrapping-state" link_text="va-breadcrumbs v3 wrapping state" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
+
+### Rerender state
+
+{% include storybook-preview.html height="200px" story="components-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs and adjust state" %}
 
 ## Usage
 

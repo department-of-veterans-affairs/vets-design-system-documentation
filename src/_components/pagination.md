@@ -7,19 +7,13 @@ intro-text: "Pagination is navigation for paginated content."
 web-component: va-pagination
 uswds-v3: default
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination default" %}
 
 ## Examples - v3
 
@@ -54,6 +48,12 @@ anchors:
 ### Internationalization
 
 {% include storybook-preview.html height="300px" story="uswds-va-pagination--internationalization" link_text="va-pagination v3 internationalization" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination default" %}
 
 ## Usage
 

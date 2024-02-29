@@ -10,14 +10,21 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 uswds-v3: default
 web-component: va-memorable-date
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date v3 along with additional variations" %}
+
 
 ## Examples - v1
 
@@ -40,12 +47,6 @@ anchors:
 ### Internationalization
 
 {% include storybook-preview.html height="200px" story="components-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
-
-## Examples - v3
-
-### Default
-
-{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date v3 along with additional variations" %}
 
 ## Usage
 

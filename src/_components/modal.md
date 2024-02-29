@@ -7,12 +7,22 @@ intro-text: "A modal disables page content and focuses the user’s attention on
 uswds-v3: default
 web-component: va-modal
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
+
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-modal--default" link_text="va-modal v3 along with additional variations" %}
+
+### With forced action
+
+{% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal v3 with forced action" %}
 
 ## Examples - v1
 
@@ -67,16 +77,6 @@ anchors:
 ### With button pair
 
 {% include storybook-preview.html story="components-va-modal--with-button-pair" link_text="va-modal with button pair" %}
-
-## Examples - v3
-
-### Default
-
-{% include storybook-preview.html story="uswds-va-modal--default" link_text="va-modal v3 along with additional variations" %}
-
-### With forced action
-
-{% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal v3 with forced action" %}
 
 ## Usage
 

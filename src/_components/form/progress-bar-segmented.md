@@ -11,18 +11,12 @@ status: use-deployed
 uswds-v3: default
 web-component: va-segmented-progress-bar
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-segmented-progress-bar--default" link_text="va-segmented-progress-bar default" height="200px" %}
 
 ## Examples - v3
 
@@ -57,6 +51,12 @@ anchors:
 ### Custom Header Level
 
 {% include storybook-preview.html story="uswds-va-segmented-progress-bar--custom-header-level" link_text="va-segmented-progress-bar v3 custom header level" height="200px" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-segmented-progress-bar--default" link_text="va-segmented-progress-bar default" height="200px" %}
 
 ## Usage
 

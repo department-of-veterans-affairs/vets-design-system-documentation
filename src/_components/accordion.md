@@ -8,8 +8,8 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 uswds-v3: default
 web-component: va-accordion
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -17,6 +17,10 @@ anchors:
   - anchor: Related
   - anchor: Component checklist
 ---
+
+## Examples - v3
+
+{% include storybook-preview.html story="uswds-va-accordion--default" link_text="va-accordion v3 along with additional variations" %}
 
 ## Examples - v1
 
@@ -45,10 +49,6 @@ anchors:
 ### Icon in header
 
 {% include storybook-preview.html story="components-va-accordion--using-icons" link_text="va-accordion Icon in header" %}
-
-## Examples - v3
-
-{% include storybook-preview.html story="uswds-va-accordion--default" link_text="va-accordion v3 along with additional variations" %}
 
 ## Usage
 

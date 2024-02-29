@@ -10,15 +10,27 @@ status: use-deployed
 uswds-v3: default
 web-component: va-checkbox-group
 anchors:
-  - anchor: Examples - Single - v1
   - anchor: Examples - Single - v3
-  - anchor: Examples - Group - v1
   - anchor: Examples - Group - v3
+  - anchor: Examples - Single - v1
+  - anchor: Examples - Group - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
+
+## Examples - Single - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-checkbox--default" link_text="va-checkbox v3 default and additional variations" %}
+
+## Examples - Group - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--default" link_text="va-checkbox-group v3 default and additional variations" %}
 
 ## Examples - Single - v1
 
@@ -58,12 +70,6 @@ anchors:
 
 {% include storybook-preview.html story="components-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
 
-## Examples - Single - v3
-
-### Default
-
-{% include storybook-preview.html story="uswds-va-checkbox--default" link_text="va-checkbox v3 default and additional variations" %}
-
 ## Examples - Group - v1
 
 ### Default
@@ -89,12 +95,6 @@ anchors:
 ### Internationalization
 
 {% include storybook-preview.html story="components-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
-
-## Examples - Group - v3
-
-### Default
-
-{% include storybook-preview.html story="uswds-va-checkbox-group--default" link_text="va-checkbox-group v3 default and additional variations" %}
 
 ## Usage
 
