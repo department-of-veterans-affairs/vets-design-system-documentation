@@ -25,26 +25,33 @@ anchors:
 {% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
 
 ### Error
+
 {% include storybook-preview.html story="components-va-text-input--error" link_text="va-text-input Error" %}
 
 See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
 
 ### Success
+
 {% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input Success" %}
 
 ### Required
+
 {% include storybook-preview.html story="components-va-text-input--required" link_text="va-text-input Required" %}
 
 ### Internationalization
+
 {% include storybook-preview.html story="components-va-text-input--internationalization" link_text="va-text-input Internationalization" height="175px" %}
 
 ### Max length
+
 {% include storybook-preview.html story="components-va-text-input--max-length" link_text="va-text-input Max length" %}
 
 ### Range
+
 {% include storybook-preview.html story="components-va-text-input--range" link_text="va-text-input Range" %}
 
 ### Pattern
+
 {% include storybook-preview.html story="components-va-text-input--pattern" link_text="va-text-input Pattern" %}
 
 ### With Hint Text
@@ -88,14 +95,14 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 * **Pattern.** Allows for a pattern of characters to be required for a the text input entry to be valid.
 * **Autocomplete.** Provides type-ahead functionality. 
 * **With Hint Text.** Provides a short hint to the user on what to enter into the field.
-* **With Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input. 
+* **With Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
 {% include component-docs.html component_name=page.web-component %}
 
 ### Native Events
 
-- Native onInput and onBlur events are available on this component. They can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+* Native onInput and onBlur events are available on this component. They can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
 ## Accessibility considerations
 
@@ -104,4 +111,4 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 ### Additional accessibility considerations for VA
 
 * **Avoid `placeholder` text.** Excluding our max characters variation, avoid using placeholder text. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. Also, placeholder text is no longer visible once a user clicks into the field. Thus users will no longer have that text available when they need to review their entries. People who have cognitive or visual disabilities have additional problems with placeholder text.
-* **When using placeholder text, provide screen reader accessible text.** When using the placeholder prop, which is used automatically by the Max length variation, additional work is required to make the component accessible. Screen readers such as JAWS and NVDA don't read placeholder text. Placeholder text is a visual addition only. Thus when using placeholder text to provide important information visually you must also convey this information to screen reader users as well. To do this, add screen read only text within a `<span>` using the `.sr-only` CSS class and place the span and text where you would like it to be read out, typically after the field label. 
+* **When using placeholder text, provide screen reader accessible text.** When using the placeholder prop, which is used automatically by the Max length variation, additional work is required to make the component accessible. Screen readers such as JAWS and NVDA don't read placeholder text. Placeholder text is a visual addition only. Thus when using placeholder text to provide important information visually you must also convey this information to screen reader users as well. To do this, add screen read only text within a `<span>` using the `.sr-only` CSS class and place the span and text where you would like it to be read out, typically after the field label.
