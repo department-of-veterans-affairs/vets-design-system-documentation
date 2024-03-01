@@ -25,6 +25,43 @@ title: What’s new?
   </div>
 </va-alert>
 
+## Leap Year February 2024
+The team continued to deliver web components synced to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
+
+### New and updated components
+
+* va-breadcrumb: VA.gov home is now the default first label in #638
+* va-flle-input: Made accessibility visual updates to the focus state and error state in #2441 
+
+### Bug fixes
+
+* va-modal: Fixed icon positioning in larger version in 2445
+* va-file-input: Made accessibility fix so it reads out selected files correctly in #2442
+* va-file-input: Disabled multiple file input dragging and dropping in #2479
+* va-icon: Updated to use sprite successfully in #2353
+* va-pagination: Fixed incorrect active page color in v3 in #2420
+* va-maintenance-banner: Remove banner role in #2429
+* Forms pattern: Updated  headings to correct serif font in #2474
+* Forms pattern: Updated radio button to show title and required label in #2475
+
+### Deprecated React components
+
+Modal (#1634, #2449,  #2450)
+
+### Figma Library updates
+
+* Added Contact preferences pattern in #2452
+* Updated expandable alert with number of lines property in #2454
+* Added LinkedIn icon in #2497
+* Fixed font & link color for Email Template #2506
+
+### Documentation updates
+
+* Developer contribution page updates in #2446 
+* va-alert and va-expandable-alert: Updated accessibility documentation for announcing alerts (role="alert") in #2145
+* Design Libraries has been updated with Figma information in #2410
+
+
 ## Winter 2024
 
 The team continued to deliver web components synced to USWDS v3 and brought the platform inline with the v3 color palette.
