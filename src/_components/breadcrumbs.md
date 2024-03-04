@@ -7,22 +7,12 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 uswds-v3: default
 web-component: va-breadcrumbs
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
-
-### Rerender state
-
-{% include storybook-preview.html height="200px" story="components-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs and adjust state" %}
 
 ## Examples - v3
 
@@ -37,6 +27,12 @@ anchors:
 ### Wrapping state
 
 {% include storybook-preview.html story="uswds-va-breadcrumbs--wrapping-state" link_text="va-breadcrumbs v3 wrapping state" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html height="100px" story="components-va-breadcrumbs--default" link_text="va-breadcrumbs" %}
 
 ## Usage
 
@@ -58,13 +54,12 @@ anchors:
 
 - **Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history.** For online applications and forms, the breadcrumb represents the forms's placement within the site hierarchy, it does not track the steps or progress of the form flow. In other words, the breadcrumb will only show up to the form as the current page segment, and will maintain that display while the user goes through the flow. For navigation through the steps of the form flow, forward and backward CTAs can be provided as part of the main content as appropriate. 
 - **Include one, include all.** If you use a breadcrumb for one page in a hierarchy, always use a breadcrumb for all pages within that hierarchy. 
-- **Each breadcrumb segment should match the H1 of the corresponding page.** When writing H1s for a page, follow the content [styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles). 
-
+- **Each breadcrumb segment should match the H1 of the corresponding page.** When writing H1s for a page, follow the content [styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
 
 ### Placement
 
 - The breadcrumb should be placed below the header and above the main content.
-- The placement of the breadcrumb must be consistent from page to page. 
+- The placement of the breadcrumb must be consistent from page to page.
 
 ### Behavior
 
@@ -78,6 +73,9 @@ anchors:
 
 {% include component-docs.html component_name=page.web-component %}
 
+### Router link support
+
+To use React Router with this component [follow these instructions](https://design.va.gov/storybook/?path=/docs/uswds-va-breadcrumbs--with-router-link-support#with-router-link-support).
 
 ## Accessibility considerations
 

@@ -7,12 +7,12 @@ research-link: Buttons
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
 status: use-deployed
 sub-pages:
-  - sub-page: Button pair
+  - sub-page: Button group
 uswds-v3: primary
 web-component: va-button
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -22,33 +22,33 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-## Examples - v1
-
-### Default - Primary
-
-{% include storybook-preview.html height="100px" story="components-va-button--primary" link_text="va-button--primary" %}
-
-### Default - Secondary
-
-{% include storybook-preview.html height="100px" story="components-va-button--secondary" link_text="va-button--secondary" %}
-
-### Default - Big
-
-{% include storybook-preview.html height="100px" story="components-va-button--big" link_text="va-button--big" %}
-
-### Continue
-
-{% include storybook-preview.html height="100px" story="components-va-button--continue" link_text="va-button--continue" %}
-
-### Back
-
-{% include storybook-preview.html height="100px" story="components-va-button--back" link_text="va-button--back" %}
-
 ## Examples - v3
 
 ### Default - Primary
 
-{% include storybook-preview.html height="100px" story="uswds-va-button--primary" link_text="va-button--primary v3 along with additional variations" %}
+{% include storybook-preview.html height="60px" story="uswds-va-button--primary" link_text="va-button--primary" %}
+
+### Default - Secondary
+
+{% include storybook-preview.html height="60px" story="uswds-va-button--secondary" link_text="va-button--secondary" %}
+
+### Default - Big
+
+{% include storybook-preview.html height="80px" story="uswds-va-button--big" link_text="va-button--big" %}
+
+### Continue
+
+{% include storybook-preview.html height="60px" story="uswds-va-button--continue" link_text="va-button--continue" %}
+
+### Back
+
+{% include storybook-preview.html height="60px" story="uswds-va-button--back" link_text="va-button--back" %}
+
+## Examples - v1
+
+### Default - Primary
+
+{% include storybook-preview.html height="60px" story="components-va-button--primary" link_text="va-button--primary v1 along with additional variations" %}
 
 ## Usage
 

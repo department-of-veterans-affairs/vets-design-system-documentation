@@ -65,7 +65,7 @@ Used to inform the user of the benefits of signing in. Mainly, that information 
 
 This variation can be used when pre-fill is not offered on a form (which should be avoided).
 
-## Examples - Standard properties - v1
+## Examples - Standard properties - v3
 
 ### Heading level
 

@@ -10,8 +10,8 @@ status: use-deployed
 uswds-v3: default
 web-component: va-select
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -23,34 +23,37 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-select--default" link_text="va-select default" %}
+{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select default" %}
 
 ### Required
 
-{% include storybook-preview.html story="components-va-select--required" link_text="va-select required" %}
+{% include storybook-preview.html story="uswds-va-select--required" link_text="va-select required" %}
 
 ### With hint text
 
-{% include storybook-preview.html story="components-va-select--with-hint-text" link_text="va-select with hint text" %}
+{% include storybook-preview.html story="uswds-va-select--with-hint-text" link_text="va-select with hint text" %}
 
-### Error message
+### Read only
 
-{% include storybook-preview.html story="components-va-select--error-message" link_text="va-select error message" %}
+{% include storybook-preview.html story="uswds-va-select--read-only" link_text="va-select inert, or read only" %}
+
+### Error
+
+{% include storybook-preview.html story="uswds-va-select--error-message" link_text="va-select error message" %}
 
 ### Dynamic options
 
-{% include storybook-preview.html story="components-va-select--dynamic-options" link_text="va-select dynamic options" %}
+{% include storybook-preview.html story="uswds-va-select--dynamic-options" link_text="va-select dynamic options" %}
 
 ### Internationalization
 
-{% include storybook-preview.html story="components-va-select--internationalization" link_text="va-select internationalization" %}
+{% include storybook-preview.html story="uswds-va-select--internationalization" link_text="va-select internationalization" %}
 
-## Examples - v3
+## Examples - v1
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select v3 along with additional variations" %}
-
+{% include storybook-preview.html story="components-va-select--default" link_text="va-select v3 along with additional variations" %}
 
 ## Usage
 
