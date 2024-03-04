@@ -48,7 +48,7 @@ anchors:
 
 ## Examples - v1
 
-{% include storybook-preview.html story="uswds-va-accordion--default" link_text="va-accordion default" %}
+{% include storybook-preview.html story="components-va-accordion--default" link_text="va-accordion v1 default and additional variations" %}
 
 ## Usage
 

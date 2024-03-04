@@ -64,7 +64,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="300px" story="uswds-va-radio--default" link_text="va-radio v1 default and additional variations" %}
+{% include storybook-preview.html height="300px" story="components-va-radio--default" link_text="va-radio v1 default and additional variations" %}
 
 ## Usage
 
