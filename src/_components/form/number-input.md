@@ -38,35 +38,43 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-number-input--default" link_text="va-number-input v3 default" %}
-
-### Currency
-
-{% include storybook-preview.html story="components-va-number-input--with-currency" link_text="va-number-input with currency" %}
+{% include storybook-preview.html story="uswds-va-number-input--default" link_text="va-number-input default" %}
 
 ### Hint text
 
-{% include storybook-preview.html story="uswds-va-number-input--with-hint-text" link_text="va-number-input with hint text v3" %}
+{% include storybook-preview.html story="uswds-va-number-input--with-hint-text" link_text="va-number-input with hint text" %}
 
 ### Valid range
 
-{% include storybook-preview.html story="uswds-va-number-input--valid-range" link_text="va-number-input v3 with valid range" %}
-
-### Error
-
-{% include storybook-preview.html story="uswds-va-number-input--error" link_text="va-number-input v3 error" %}
+{% include storybook-preview.html story="uswds-va-number-input--valid-range" link_text="va-number-input with valid range" %}
 
 ### Required
 
-{% include storybook-preview.html story="uswds-va-number-input--required" link_text="va-number-input v3 required" %}
+{% include storybook-preview.html story="uswds-va-number-input--required" link_text="va-number-input required" %}
+
+### Forms pattern single
+
+{% include storybook-preview.html story="uswds-va-number-input--forms-pattern-single" link_text="va-number-input forms pattern single" height="400px" %}
+
+### Forms pattern multiple
+
+{% include storybook-preview.html story="uswds-va-number-input--forms-pattern-multiple" link_text="va-number-input forms pattern multiple" height="400px" %}
+
+### Error
+
+{% include storybook-preview.html story="uswds-va-number-input--error" link_text="va-number-input error" %}
+
+### Forms pattern single error
+
+{% include storybook-preview.html story="uswds-va-number-input--forms-pattern-single-error" link_text="va-number-input forms pattern single error" height="400px" %}
 
 ### Internationalization
 
-{% include storybook-preview.html story="uswds-va-number-input--internationalization" link_text="va-number-input v3 internationalization" %}
+{% include storybook-preview.html story="uswds-va-number-input--internationalization" link_text="va-number-input internationalization" %}
 
 ### Widths
 
-{% include storybook-preview.html story="uswds-va-number-input--widths" link_text="va-number-input v3 widths" height="800px" %}
+{% include storybook-preview.html story="uswds-va-number-input--widths" link_text="va-number-input widths" height="800px" %}
 
 ## Usage
 

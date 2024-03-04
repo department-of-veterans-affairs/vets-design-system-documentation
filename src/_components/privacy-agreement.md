@@ -11,8 +11,8 @@ status: use-deployed
 uswds-v3: default
 web-component: va-privacy-agreement
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -20,20 +20,19 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
+## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--default" link_text="va-privacy-agreement" %}
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--default" link_text="va-privacy-agreement default" %}
 
-### With Error
+### Error
 
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--with-error" link_text="va-privacy-agreement" %}
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--with-error" link_text="va-privacy-agreement error" %}
 
-## Examples - v3
+## Examples - v1
 
-{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--default" link_text="va-privacy-agreement v3 and additional variations" %}
-
+{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--default" link_text="va-privacy-agreement v1 and additional variations" %}
 
 ## Usage
 

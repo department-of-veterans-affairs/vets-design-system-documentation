@@ -7,76 +7,68 @@ intro-text: "A modal disables page content and focuses the user’s attention on
 uswds-v3: default
 web-component: va-modal
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="400px" story="components-va-modal--default" link_text="va-modal" %}
-
-### Info
-
-{% include storybook-preview.html story="components-va-modal--info" link_text="va-modal info" %}
-
-### Continue
-
-{% include storybook-preview.html story="components-va-modal--continue" link_text="va-modal continue" %}
-
-### Success
-
-{% include storybook-preview.html story="components-va-modal--success" link_text="va-modal success" %}
-
-### Warning
-
-{% include storybook-preview.html story="components-va-modal--warning" link_text="va-modal warning" %}
-
-### Error
-
-{% include storybook-preview.html story="components-va-modal--error" link_text="va-modal error" %}
-
-### Click outside to close
-
-{% include storybook-preview.html story="components-va-modal--click-outside-to-close" link_text="va-modal click outside to close" %}
-
-### Without buttons
-
-{% include storybook-preview.html story="components-va-modal--without-buttons" link_text="va-modal without buttons" %}
-
-### Without title
-
-{% include storybook-preview.html story="components-va-modal--without-title" link_text="va-modal without title" %}
-
-### With nested web components
-
-{% include storybook-preview.html story="components-va-modal--with-nested-web-components" link_text="va-modal with nested web components" %}
-
-### Crisis Line Modal
-
-{% include storybook-preview.html story="components-va-crisis-line-modal--default" link_text="va-crisis-line-modal" %}
-
-### Large
-
-{% include storybook-preview.html story="components-va-modal--large" link_text="va-modal large" %}
-
-### With button pair
-
-{% include storybook-preview.html story="components-va-modal--with-button-pair" link_text="va-modal with button pair" %}
-
 ## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-modal--default" link_text="va-modal v3 along with additional variations" %}
+{% include storybook-preview.html story="uswds-va-modal--default" link_text="va-modal" %}
+
+### Info
+
+{% include storybook-preview.html story="uswds-va-modal--info" link_text="va-modal info" %}
+
+### Continue
+
+{% include storybook-preview.html story="uswds-va-modal--continue" link_text="va-modal continue" %}
+
+### Success
+
+{% include storybook-preview.html story="uswds-va-modal--success" link_text="va-modal success" %}
+
+### Warning
+
+{% include storybook-preview.html story="uswds-va-modal--warning" link_text="va-modal warning" %}
+
+### Error
+
+{% include storybook-preview.html story="uswds-va-modal--error" link_text="va-modal error" %}
+
+### Click outside to close
+
+{% include storybook-preview.html story="uswds-va-modal--click-outside-to-close" link_text="va-modal click outside to close" %}
+
+### Without buttons
+
+{% include storybook-preview.html story="uswds-va-modal--without-buttons" link_text="va-modal without buttons" %}
+
+### Without title
+
+{% include storybook-preview.html story="uswds-va-modal--without-title" link_text="va-modal without title" %}
+
+### With nested web components
+
+{% include storybook-preview.html story="uswds-va-modal--with-nested-web-components" link_text="va-modal with nested web components" %}
+
+### Large
+
+{% include storybook-preview.html story="uswds-va-modal--large" link_text="va-modal large" %}
 
 ### With forced action
 
-{% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal v3 with forced action" %}
+{% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal with forced action" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-modal--default" link_text="va-modal v1 along with additional variations" %}
 
 ## Usage
 

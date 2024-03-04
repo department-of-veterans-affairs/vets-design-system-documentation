@@ -4,9 +4,9 @@ maturity:
   - name: research
     score: false
   - name: stability
-    score: false
+    score: true
   - name: adoption
-    score: false
+    score: true
     notes: "This component was introduced in July 2022."
 accessibility:
   - name: accessible-use-of-color
@@ -14,11 +14,11 @@ accessibility:
   - name: accessible-contrast
     score: true
   - name: keyboard-interactions
-    score: false
+    score: true
   - name: content-zoom-tested
-    score: false
+    score: true
   - name: tested-in-screen-readers
-    score: false
+    score: true
 code-assets:
   - name: variations 
     score: true
@@ -36,6 +36,6 @@ visual-assets:
   - name: responsive
     score: true
   - name: interactive-states
-    score: false
+    score: true
   - name: tokens
     score: "n/a"

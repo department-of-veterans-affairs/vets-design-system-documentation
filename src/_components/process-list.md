@@ -7,8 +7,8 @@ status: use-deployed
 uswds-v3: default
 web-component: va-process-list
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -16,33 +16,29 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
-
-### Default - Content list
-
-{% include storybook-preview.html height="605px" story="components-va-process-list--default" link_text="va-process-list" %}
-
-### Additional styling
-
-{% include storybook-preview.html height="200px" story="components-va-process-list--additional-styling" link_text="va-process-list--additional-styling" %}
-
 ## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html height="605px" story="uswds-va-process-list--default" link_text="va-process-list v3 default" %}
+{% include storybook-preview.html height="605px" story="uswds-va-process-list--default" link_text="va-process-list default" %}
 
 ### Status
 
-{% include storybook-preview.html height="350px" story="uswds-va-process-list--status" link_text="va-process-list v3 status" %}
+{% include storybook-preview.html height="350px" story="uswds-va-process-list--status" link_text="va-process-list status" %}
 
 ### Header Size
 
-{% include storybook-preview.html height="375px" story="uswds-va-process-list--header-size" link_text="va-process-list v3 header size" %}
+{% include storybook-preview.html height="375px" story="uswds-va-process-list--header-size" link_text="va-process-list header size" %}
 
 ### Custom Sizing
 
-{% include storybook-preview.html height="300px" story="uswds-va-process-list--custom-sizing" link_text="va-process-list v3 custom sizing" %}
+{% include storybook-preview.html height="300px" story="uswds-va-process-list--custom-sizing" link_text="va-process-list custom sizing" %}
+
+## Examples - v1
+
+### Default - Content list
+
+{% include storybook-preview.html height="605px" story="components-va-process-list--default" link_text="va-process-list v1 and additional variations" %}
 
 ## Usage
 

@@ -1,13 +1,14 @@
 ---
 layout: component
 title: "Summary box"
+aka: Featured content
 status: use-deployed
 intro-text: "The summary box component helps Veterans quickly identify must-read information on a page. Use this component to highlight a small chunk of the most important information on a page, like eligibility criteria or coverage under a particular VA benefit."
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1192%3A4460&mode=design&t=vNilCSI60pQBiKkM-1
 uswds-v3: default
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Variations
   - anchor: Code usage
@@ -16,17 +17,17 @@ anchors:
 web-component: va-summary-box
 ---
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="250px" story="components-va-summary-box--default" link_text="va-summary-box" %}
-
 ## Examples - v3
 
 ### Default
 
 {% include storybook-preview.html height="250px" story="uswds-va-summary-box--default" link_text="va-summary-box" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html height="250px" story="components-va-summary-box--default" link_text="va-summary-box" %}
 
 ## Usage
 

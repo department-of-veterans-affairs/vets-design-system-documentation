@@ -30,6 +30,10 @@ anchors:
 
 {% include storybook-preview.html height="600px" story="uswds-va-statement-of-truth--with-input-error" link_text=page.web-component %}
 
+### With Custom heading
+
+{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-custom-heading" link_text=page.web-component %}
+
 ### With Prefilling
 
 {% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-prefilling" link_text=page.web-component %}

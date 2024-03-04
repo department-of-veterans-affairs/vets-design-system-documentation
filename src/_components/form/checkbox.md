@@ -10,91 +10,115 @@ status: use-deployed
 uswds-v3: default
 web-component: va-checkbox-group
 anchors:
-  - anchor: Examples - Single - v1
   - anchor: Examples - Single - v3
-  - anchor: Examples - Group - v1
+  - anchor: Examples - Single - v1
   - anchor: Examples - Group - v3
+  - anchor: Examples - Group - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - Single - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-checkbox--default" link_text="va-checkbox" %}
-
-### Checked
-
-{% include storybook-preview.html story="components-va-checkbox--checked" link_text="va-checkbox checked" %}
-
-### Hint text
-
-{% include storybook-preview.html story="components-va-checkbox--with-hint-text" link_text="va-checkbox with hint text" %}
-
-### Description String
-
-{% include storybook-preview.html story="components-va-checkbox--with-description-string" link_text="va-checkbox with description string" %}
-
-### Description JSX
-
-{% include storybook-preview.html story="components-va-checkbox--with-description-jsx" link_text="va-checkbox with description JSX" %}
-
-### Tile
-
-{% include storybook-preview.html story="components-va-checkbox--tile" link_text="va-checkbox tile" %}
-
-### Error
-
-{% include storybook-preview.html story="components-va-checkbox--error" link_text="va-checkbox error" %}
-
-### Required
-
-{% include storybook-preview.html story="components-va-checkbox--required" link_text="va-checkbox required" %}
-
-### Internationalization
-
-{% include storybook-preview.html story="components-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
-
 ## Examples - Single - v3
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-checkbox--default" link_text="va-checkbox v3 default and additional variations" %}
+{% include storybook-preview.html story="uswds-va-checkbox--default" link_text="va-checkbox" %}
 
-## Examples - Group - v1
+### Tile
 
-### Default
+{% include storybook-preview.html story="uswds-va-checkbox--tile" link_text="va-checkbox tile" %}
 
-{% include storybook-preview.html height="140px" story="components-va-checkbox-group--default" link_text="va-checkbox-group default" %}
+### Checked
+
+{% include storybook-preview.html story="uswds-va-checkbox--checked" link_text="va-checkbox checked" %}
 
 ### Hint text
 
-{% include storybook-preview.html story="components-va-checkbox-group--with-hint-text" link_text="va-checkbox group with hint text" %}
+{% include storybook-preview.html story="uswds-va-checkbox--with-hint-text" link_text="va-checkbox with hint text" %}
+
+### Description String
+
+{% include storybook-preview.html story="uswds-va-checkbox--with-description-string" link_text="va-checkbox with description string" %}
+
+### Description JSX
+
+{% include storybook-preview.html story="uswds-va-checkbox--with-description-jsx" link_text="va-checkbox with description JSX" %}
+
+### On background
+
+{% include storybook-preview.html story="uswds-va-checkbox--on-background" link_text="va-checkbox on a background" %}
 
 ### Error
 
-{% include storybook-preview.html story="components-va-checkbox-group--error" link_text="va-checkbox group error" %}
+{% include storybook-preview.html story="uswds-va-checkbox--error" link_text="va-checkbox error" %}
 
 ### Required
 
-{% include storybook-preview.html story="components-va-checkbox-group--required" link_text="va-checkbox group required" %}
-
-### Single checkbox
-
-{% include storybook-preview.html story="components-va-checkbox-group--single-checkbox" link_text="va-checkbox group single checkbox" %}
+{% include storybook-preview.html story="uswds-va-checkbox--required" link_text="va-checkbox required" %}
 
 ### Internationalization
 
-{% include storybook-preview.html story="components-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
+{% include storybook-preview.html story="uswds-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
+
+## Examples - Single - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-checkbox--default" link_text="va-checkbox v1 default and additional variations" %}
 
 ## Examples - Group - v3
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--default" link_text="va-checkbox-group v3 default and additional variations" %}
+{% include storybook-preview.html height="200px" story="uswds-va-checkbox-group--default" link_text="va-checkbox-group default" %}
+
+### Label header
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--label-header" link_text="va-checkbox group label header" height="250px" %}
+
+### Hint text
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--with-hint-text" link_text="va-checkbox group with hint text" %}
+
+### Required
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--required" link_text="va-checkbox group required" %}
+
+### Single checkbox
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--single-checkbox" link_text="va-checkbox group single checkbox" %}
+
+### Tile
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--tile" link_text="va-checkbox group tile" %}
+
+### Forms pattern - Single
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single" link_text="va-checkbox group forms pattern single" height="300px" %}
+
+### Forms pattern - Single error
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="va-checkbox group forms pattern single error" height="300px" %}
+
+### Forms pattern - Multiple
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="va-checkbox group forms pattern multiple" height="300px" %}
+
+### Error
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="va-checkbox group error" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
+
+## Examples - Group - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-checkbox-group--default" link_text="va-checkbox-group v1 default and additional variations" %}
 
 ## Usage
 

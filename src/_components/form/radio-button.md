@@ -10,49 +10,61 @@ status: use-deployed
 uswds-v3: default
 web-component: va-radio
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v1
+## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html story="components-va-radio--default" link_text="va-radio" %}
-
-### Hint text
-
-{% include storybook-preview.html story="components-va-radio--with-hint-text" link_text="va-radio with hint text" %}
-
-### Label header
-
-{% include storybook-preview.html story="components-va-radio--label-header" link_text="va-radio with label header" %}
-
-### Description text
-
-{% include storybook-preview.html story="components-va-radio--with-description-text" link_text="va-radio with description text" %}
+{% include storybook-preview.html height="200px" story="uswds-va-radio--default" link_text="va-radio" %}
 
 ### Tile
 
-{% include storybook-preview.html height="250px" story="components-va-radio--tile" link_text="va-radio tile" %}
+{% include storybook-preview.html height="350px" story="uswds-va-radio--tile" link_text="va-radio tile" %}
+
+### Hint text
+
+{% include storybook-preview.html height="250px" story="uswds-va-radio--hint" link_text="va-radio with hint text" %}
+
+### Label header
+
+{% include storybook-preview.html height="200px" story="uswds-va-radio--label-header" link_text="va-radio with label header" %}
+
+### On background
+
+{% include storybook-preview.html height="100px" story="uswds-va-radio--on-background" link_text="va-radio on background" %}
+
+### Forms pattern single
+
+{% include storybook-preview.html height="600px" story="uswds-va-radio--forms-pattern-single" link_text="va-radio forms pattern single" %}
+
+### Forms pattern multiple
+
+{% include storybook-preview.html height="450px" story="uswds-va-radio--forms-pattern-multiple" link_text="va-radio forms pattern multiple" %}
 
 ### Error
 
 {% include storybook-preview.html story="components-va-radio--error" link_text="va-radio error" %}
 
+### Forms pattern single error
+
+{% include storybook-preview.html height="600px" story="uswds-va-radio--forms-pattern-single-error" link_text="va-radio forms pattern single error" %}
+
 ### Internationalization
 
-{% include storybook-preview.html height="200px" story="components-va-radio--internationalization" link_text="va-radio internationalization" %}
+{% include storybook-preview.html height="250px" story="components-va-radio--internationalization" link_text="va-radio internationalization" %}
 
-## Examples - v3
+## Examples - v1
 
 ### Default
 
-{% include storybook-preview.html height="300px" story="uswds-va-radio--default" link_text="va-radio v3 default and additional variations" %}
+{% include storybook-preview.html height="300px" story="components-va-radio--default" link_text="va-radio v1 default and additional variations" %}
 
 ## Usage
 

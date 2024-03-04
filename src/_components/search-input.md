@@ -6,42 +6,41 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 status: use-deployed
 uswds-v3: primary
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Type-ahead behavior
   - anchor: Code usage
 web-component: va-search-input
 ---
 
+## Examples - v3
+
+### Default
+
+{% include storybook-preview.html story="uswds-va-search-input--default" link_text="va-search-input Default" %}
+
+### With button text
+
+{% include storybook-preview.html story="uswds-va-search-input--with-button-text" link_text="va-search-input with Button text" %}
+
+### Big
+
+{% include storybook-preview.html story="uswds-va-search-input--big" link_text="va-search-input Big" %}
+
+### Small
+
+{% include storybook-preview.html story="uswds-va-search-input--small" link_text="va-search-input small" %}
+
+### With Typeahead
+
+{% include storybook-preview.html story="uswds-va-search-input--with-typeahead" link_text="va-search-input with typeahead" %}
+
 ## Examples - v1
 
 ### Default
 
 {% include storybook-preview.html story="components-va-search-input--default" link_text="va-search-input default and additional variations" %}
-
-## Examples - v3
-
-### Default
-
-{% include storybook-preview.html story="uswds-va-search-input--default" link_text="va-search-input v3 Default" %}
-
-### With button text
-
-{% include storybook-preview.html story="uswds-va-search-input--with-button-text" link_text="va-search-input v3 with Button text" %}
-
-### Big
-
-{% include storybook-preview.html story="uswds-va-search-input--big" link_text="va-search-input v3 Big" %}
-
-### Small
-
-{% include storybook-preview.html story="uswds-va-search-input--small" link_text="va-search-input v3 small" %}
-
-### With Typeahead
-
-{% include storybook-preview.html story="uswds-va-search-input--with-typeahead" link_text="va-search-input v3 with typeahead" %}
-
 
 ## Usage
 
