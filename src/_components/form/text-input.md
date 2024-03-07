@@ -10,69 +10,85 @@ status: use-deployed
 uswds-v3: default
 web-component: va-text-input
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v1
+## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input" %}
+{% include storybook-preview.html story="uswds-va-text-input--default" link_text="va-text-input" %}
+
+### Required
+
+{% include storybook-preview.html story="uswds-va-text-input--required" link_text="va-text-input Required" %}
+
+### Pattern
+
+{% include storybook-preview.html story="uswds-va-text-input--pattern" link_text="va-text-input Pattern" %}
+
+### Autocomplete
+
+{% include storybook-preview.html story="uswds-va-text-input--autocomplete" link_text="va-text-input Autocomplete" %}
+
+### Hint Text
+
+{% include storybook-preview.html story="uswds-va-text-input--with-hint-text" link_text="va-text-input with Hint text" %}
+
+Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hint-text) for hint text examples and usage.
+
+### Inline Hint Text
+
+{% include storybook-preview.html story="uswds-va-text-input--with-inline-hint-text" link_text="va-text-input with inline Hint text" %}
+
+### With Additional Info
+
+{% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="va-text-input with Additional info" %}
+
+### With Character count
+
+{% include storybook-preview.html story="uswds-va-text-input--with-character-count" link_text="va-text-input with character count" %}
+
+### Forms pattern - Single
+
+{% include storybook-preview.html story="uswds-va-text-input--forms-pattern-single" link_text="va-text-input forms pattern single" height="500px" %}
+
+### Forms pattern - Single error
+
+{% include storybook-preview.html story="uswds-va-text-input--forms-pattern-single-error" link_text="va-text-input forms pattern single error" height="500px" %}
+
+### Forms pattern - Multiple
+
+{% include storybook-preview.html story="uswds-va-text-input--forms-pattern-multiple" link_text="va-text-input forms pattern multiple" height="500px" %}
 
 ### Error
 
-{% include storybook-preview.html story="components-va-text-input--error" link_text="va-text-input Error" %}
+{% include storybook-preview.html story="uswds-va-text-input--error" link_text="va-text-input Error" %}
 
 See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
 
 ### Success
 
-{% include storybook-preview.html story="components-va-text-input--success" link_text="va-text-input Success" %}
-
-### Required
-
-{% include storybook-preview.html story="components-va-text-input--required" link_text="va-text-input Required" %}
+{% include storybook-preview.html story="uswds-va-text-input--success" link_text="va-text-input Success" %}
 
 ### Internationalization
 
-{% include storybook-preview.html story="components-va-text-input--internationalization" link_text="va-text-input Internationalization" height="175px" %}
-
-### Max length
-
-{% include storybook-preview.html story="components-va-text-input--max-length" link_text="va-text-input Max length" %}
-
-### Range
-
-{% include storybook-preview.html story="components-va-text-input--range" link_text="va-text-input Range" %}
-
-### Pattern
-
-{% include storybook-preview.html story="components-va-text-input--pattern" link_text="va-text-input Pattern" %}
-
-### With Hint Text
-
-{% include storybook-preview.html story="components-va-text-input--with-hint-text" link_text="va-text-input with Hint text" %}
-
-Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hint-text) for hint text examples and usage.
-
-### With Additional Info
-
-{% include storybook-preview.html story="components-va-text-input--with-additional-info" link_text="va-text-input with Additional info" %}
+{% include storybook-preview.html story="uswds-va-text-input--internationalization" link_text="va-text-input Internationalization" height="175px" %}
 
 ### Widths
 
-{% include storybook-preview.html story="components-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
+{% include storybook-preview.html story="uswds-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
 
-## Examples - v3
+## Examples - v1
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-text-input--default" link_text="va-text-input v3 default" %}
+{% include storybook-preview.html story="uswds-va-text-input--default" link_text="va-text-input v1 default and additional variations" %}
 
 ## Usage
 

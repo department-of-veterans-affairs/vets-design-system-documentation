@@ -96,15 +96,15 @@ anchors:
 
 ### Forms pattern - Single
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single" link_text="va-checkbox group forms pattern single" height="300px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single" link_text="va-checkbox group forms pattern single" height="600px" %}
 
 ### Forms pattern - Single error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="va-checkbox group forms pattern single error" height="300px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="va-checkbox group forms pattern single error" height="600px" %}
 
 ### Forms pattern - Multiple
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="va-checkbox group forms pattern multiple" height="300px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="va-checkbox group forms pattern multiple" height="600px" %}
 
 ### Error
 
