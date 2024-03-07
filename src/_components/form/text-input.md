@@ -96,22 +96,21 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 ### Behavior
 
-* **Max length variation.** The Max length variation adds placeholder text inside the text-input. Once the user starts typing, this placeholder text disappears. Once the user has entered the same number of characters as the max length, text appears below the field in the following format: (Max. NN characters). At that point no additional text can be entered into the text-input. If the user removes one or more characters and thus goes below the max limit the text beneath the field is removed.
-  * Note: When using this variation please note the [accessibility considerations](#accessibility-considerations) that you must take into account.
-
 ### Choosing between variations
 
+* **Required.** Indicates to the user that the text input field is required in order to submit the form.
+* **Pattern.** Allows for a pattern of characters to be required for the text input entry to be valid.
+* **Autocomplete.** Specifies what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
+* **With Hint Text.** Provides a short hint to the user on what to enter into the field.
+* **With Inline Hint Text.** Provides a very short hint to the user within the label on what to enter into the field. Hint text is preferred to inline hint text.
+* **With Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
+* **With Character count.** Implements the [USWDS Character count](https://designsystem.digital.gov/components/character-count/) functionality which displays the character count below the text input. However, our implementation differs from USWDS in that it does not allow for entering more text after the maxlength.
+* **Forms pattern - Single.** This variation can be used to support the [One thing per page]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) content principle where we gather one decision, question, or piece of information on the page.
+* **Forms pattern - Single error.** Shows the error state for the single form field pattern.
+* **Forms pattern - Multiple .** This variation also can be used to support the [One thing per page content principle]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) where we gather one decision, question, or piece of information on the page.
 * **Error.** Highlights the text input field where the user has made an error that needs to be corrected.
 * **Success.** Indicates to the user in realtime that an error has been cleared and the text entry is now valid. NOTE: This isn't typically used currently.
-* **Required.** Indicates to the user that the text input field is required in order to submit the form.
 * **Internationalization.** Demonstrates how this components changes when used with the language toggle.
-* **Max Length.** Indicates to the user when a maximum number of characters has been entered into the text input field.
-* **Min Length.** Indicates to the user when a minimum number of characters must be entered into a field.
-* **Range.** A combination of the above max and min length parameters indicating an acceptable range of characters to be entered into the field.
-* **Pattern.** Allows for a pattern of characters to be required for a the text input entry to be valid.
-* **Autocomplete.** Provides type-ahead functionality. 
-* **With Hint Text.** Provides a short hint to the user on what to enter into the field.
-* **With Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
 {% include component-docs.html component_name=page.web-component %}

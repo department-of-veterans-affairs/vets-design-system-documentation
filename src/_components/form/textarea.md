@@ -10,38 +10,42 @@ status: use-deployed
 uswds-v3: default
 web-component: va-textarea
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v1
+## Examples - v3
 
 ### Default
-{% include storybook-preview.html height="260px" story="components-va-textarea--default" link_text="va-textarea" %}
 
-### Error
-{% include storybook-preview.html height="260px" story="components-va-textarea--error" link_text="va-textarea error" %}
-
-See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
-
-### Max length
-{% include storybook-preview.html height="275px" story="components-va-textarea--max-length" link_text="va-textarea max length" %}
+{% include storybook-preview.html height="260px" story="uswds-va-textarea--default" link_text="va-textarea default" %}
 
 ### Required
-{% include storybook-preview.html height="260px" story="components-va-textarea--required" link_text="va-textarea required" %}
+
+{% include storybook-preview.html height="260px" story="uswds-va-textarea--required" link_text="va-textarea required" %}
 
 ### Hint text
 
 Refer to the overall [form guidance]({{ site.baseurl }}/components/form#hint-text) for hint text examples and usage.
 
-## Examples - v3
+### Max length
+
+{% include storybook-preview.html height="275px" story="uswds-va-textarea--max-length" link_text="va-textarea max length" %}
+
+### Error
+
+{% include storybook-preview.html height="260px" story="uswds-va-textarea--error" link_text="va-textarea error" %}
+
+See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+
+## Examples - v1
 
 ### Default
 
-{% include storybook-preview.html height="260px" story="uswds-va-textarea--default" link_text="va-textarea v3 default with additional variations" %}
+{% include storybook-preview.html height="260px" story="components-va-textarea--default" link_text="va-textarea v3 default with additional variations" %}
 
 ## Usage
 
