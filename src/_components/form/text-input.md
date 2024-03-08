@@ -103,7 +103,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **With Inline Hint Text.** Provides a very short hint to the user within the label on what to enter into the field. Hint text is preferred to inline hint text.
 * **With Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
 * **With Character count.** Implements the [USWDS Character count](https://designsystem.digital.gov/components/character-count/) functionality which displays the character count below the text input. However, our implementation differs from USWDS in that it does not allow for entering more text after the maxlength.
-* **Forms pattern - Single.** This variation can be used to support the [One thing per page]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) content principle where we gather one decision, question, or piece of information on the page.
+* **Forms pattern - Single.** This variation can be used to support the [One thing per page content principle]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) where we gather one decision, question, or piece of information on the page.
 * **Forms pattern - Single error.** Shows the error state for the single form field pattern.
 * **Forms pattern - Multiple .** This variation also can be used to support the [One thing per page content principle]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) where we gather one decision, question, or piece of information on the page.
 * **Error.** Highlights the text input field where the user has made an error that needs to be corrected.
