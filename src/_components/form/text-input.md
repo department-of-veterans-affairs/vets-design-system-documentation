@@ -88,7 +88,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-text-input--default" link_text="va-text-input v1 default and additional variations" %}
+{% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input v1 default and additional variations" %}
 
 ## Usage
 
