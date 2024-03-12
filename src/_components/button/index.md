@@ -116,7 +116,7 @@ This variation substitutes the large tap target of a button where a radio button
 ### Additional guidance for VA
 
 * **Button labels should never change dynamically or be used to communicate a status.**
-* **Mind target size.** We follow the [WCAG 2.1 Target Size - Level AAA](https://www.w3.org/WAI/WCAG21/quickref/#target-size) criteria which states:
+* **Mind target size.** We follow the [WCAG 2.2 Target Size - Level AAA](https://www.w3.org/WAI/WCAG22/quickref/#target-size) criteria which states:
 > "The size of the target for pointer inputs is at least 44 by 44 CSS pixels..."
 
 That guidance agrees with [Apple's Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons) which recommend that:

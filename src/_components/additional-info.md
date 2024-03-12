@@ -97,7 +97,7 @@ The following are places where Additional info can be used:
 
 ## Accessibility considerations
 
-* The Additional Info component should be validated to meet the WCAG 2.1 AA accessibility guidelines.
+* The Additional Info component should be validated to meet the WCAG 2.2 AA accessibility guidelines.
 * The Additional Info component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
 * Pressing the close button (a element with role of button) must close the Additional Info.
 * The link element that acts as the trigger for the drawer to open and close has a role of heading so it can be found in the page. Setting an aria-level is recommended.
