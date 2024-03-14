@@ -11,6 +11,6 @@ slug: button-labels
 ## Related
 
 * [Button]({{ site.baseurl }}/components/button)
-* [Button pair]({{ site.baseurl }}/components/button/button-group)
+* [Button group]({{ site.baseurl }}/components/button/button-group)
 
 
