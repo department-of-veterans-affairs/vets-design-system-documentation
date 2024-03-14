@@ -1,9 +1,12 @@
 ---
 layout: component
+permalink: /components/modal/
 title: Modal
-status: use-deployed
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=861%3A1708&mode=design&t=jMcVWkPlFhZu3RTh-1
 intro-text: "A modal disables page content and focuses the user’s attention on a single task or message."
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=861%3A1708&mode=design&t=jMcVWkPlFhZu3RTh-1
+status: use-deployed
+sub-pages:
+  - sub-page: Crisis Line modal
 uswds-v3: default
 web-component: va-modal
 anchors:
@@ -12,7 +15,10 @@ anchors:
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
+
+{% include _site-in-this-section.html %}
 
 ## Examples - v3
 
