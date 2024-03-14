@@ -19,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
+## Examples - v3
 
 ### Default
 
