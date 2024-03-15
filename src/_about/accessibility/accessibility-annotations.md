@@ -73,19 +73,20 @@ Different detail cards will have different information you can toggle or fill in
 
 Included in the library are multiple formats of annotation components. Keep in mind that not all of these annotations are required for every application all of the time. This is just what’s available to you in the library. You’ll use your own experience and discretion as to what to use, and we’ll provide some guidance further below.
 
-* Buttons - Interactive elements that perform an action, such as submitting a form or opening a dialog.
-* DS - Allows you to provide more details about components or patterns that are part of the VA design system.
-* Feedback - Identifies error messages, warning messages, and other communications to the user.
-* Focus order - A sequential order of focusable components that preserves meaning and operability.
-* Headings - Semantic levels within a page’s section hierarchy.
-* Images - Describe informative with alt text or mark decorative images.
-* Inputs - Fields and controls for forms to accept data from users.
-* Landmarks - Regions of a page that a user might want quick access to.
-* Links - Interactive elements that navigate to web pages, files, or anything that changes a URL.
-* Lists - Ordered or unordered lists of similar components.
-* Notes - Any details that don’t fit into the other annotation categories. For example, if you’re uncertain how an interaction may work (eg. for assistive technology users) and want to call attention to that unknown.
-* Reading order - The sequential order in which assistive technology will read content.
-* Utilities - Several references to aid in the developer experience.
+* **Buttons** - Interactive elements that perform an action, such as submitting a form or opening a dialog.
+* **DS** - Allows you to provide more details about components or patterns that are part of the VA design system.
+* **Feedback** - Identifies error messages, warning messages, and other communications to the user.
+* **Focus order** - A sequential order of focusable components that preserves meaning and operability.
+* **Headings** - Semantic levels within a page’s section hierarchy.
+* **Images** - Describe informative with alt text or mark decorative images.
+* **Inputs** - Fields and controls for forms to accept data from users.
+* **Landmarks** - Regions of a page that a user might want quick access to.
+* **Links** - Interactive elements that navigate to web pages, files, or anything that changes a URL.
+* **Lists** - Ordered or unordered lists of similar components.
+* **Notes** - Any details that don’t fit into the other annotation categories. For example, if you’re uncertain how an interaction may work (eg. for assistive technology users) and want to call attention to that unknown.
+* **Reading order** - The sequential order in which assistive technology will read content.
+* **Utilities** - Several references to aid in the developer experience.
+
 For more detailed information about the annotation symbols, refer to the [CVS Wiki](https://github.com/cvs-health/annotations/wiki/Web-Accessibility-Annotation-Kit).
 
 ## What you should annotate in applications
