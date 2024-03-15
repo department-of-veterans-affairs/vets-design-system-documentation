@@ -170,7 +170,7 @@ In our experience, it’s better to over-annotate than under-annotate for a few 
 
 ### Example 1
 
-[Figma for Example 1](https://www.figma.com/file/IJarxte9ZHN8SbhLV9nM9T/WIP---Documentation---Screenshots-for-annotations?type=design&node-id=152-5771&mode=design)
+[View example 1 in Figma](https://www.figma.com/file/IJarxte9ZHN8SbhLV9nM9T/WIP---Documentation---Screenshots-for-annotations?type=design&node-id=152-5771&mode=design)
 
 In Example 1, the first two parts of the screen were annotated with the “Additional files are required” alert and the “Review and sign” accordions.
 
@@ -209,7 +209,7 @@ The designer also wanted to communicate further details about the inputs with th
   
 ### Example 2
 
-[Figma for Example 2](https://www.figma.com/file/IJarxte9ZHN8SbhLV9nM9T/Documentation---Screenshots-for-annotations?type=design&node-id=152-7142&mode=design&t=SsY2TB4soUkkjskG-11)
+[View example 2 in Figma](https://www.figma.com/file/IJarxte9ZHN8SbhLV9nM9T/Documentation---Screenshots-for-annotations?type=design&node-id=152-7142&mode=design&t=SsY2TB4soUkkjskG-11)
 
 {% include component-example.html alt="An example of a form's intro text and alert." file="/images/about/accessibility/annotations/example-2.png" %}
 
