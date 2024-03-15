@@ -3,7 +3,11 @@ layout: category
 title: Accessibility
 permalink: /about/accessibility/
 intro-text: How to follow accessibility standards when using or contributing to the VA Design System (VADS)
+sub-pages:
+  - sub-page: Accessibility annotations
 ---
+
+{% include _site-in-this-section.html %}
 
 VA is here to serve Veterans of the United States military, and [approximately 40% have an identified disability](https://www.statista.com/statistics/250316/us-veterans-by-disability-status/). 
 
