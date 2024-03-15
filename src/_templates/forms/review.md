@@ -24,8 +24,8 @@ The Review page consists of:
 
 1. [Page title and subtitle](#page-title-and-subtitle)
 2. [Progress bar - Segmented](#progress-bar-segmented)
-3. [Review steps or chapters - Expanded](#review-steps-or-chapters-expanded)
-4. [Review steps or chapters - Collapsed](#review-steps-or-chapters-collapsed)
+3. [Review steps or chapters - Expanded](#review-steps-or-chapters---expanded)
+4. [Review steps or chapters - Collapsed](#review-steps-or-chapters---collapsed)
 5. [Penalty notice](#penalty-notice)
 6. [Privacy agreement](#privacy-agreement)
 7. [Button pair](#button-pair)
