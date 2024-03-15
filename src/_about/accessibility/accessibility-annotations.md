@@ -33,7 +33,7 @@ Designers should add annotations before the design/developer hand-off.  The Coll
 
 ## Library
 
-With the transition to Figma, we have added an open-source accessibility annotation kit from CVS to the VADS Figma Library collection. At the time of this writing, the kit is located on the VA.gov Platform, in the VA Design System folder, titled “VADS Web Annotation Kit.” Soon, it will be automatically added to all files created with VA.gov Platform accounts.
+With the transition to Figma, we have added an open-source [accessibility annotation kit from CVS](https://www.figma.com/community/file/1311421011482282592) to the VADS Figma Library collection. At the time of this writing, the kit is located on the VA.gov Platform, in the VA Design System folder, titled “VADS Web Annotation Kit.” Soon, it will be automatically added to all files created with VA.gov Platform accounts.
   
 {% include component-example.html alt="Figma interface for adding a library." file="/images/about/accessibility/annotations/add-library.png" caption="In the Figma interface, navigate to the assets panel and click the 'book' icon. You’ll see the existing libraries. Select the 'VADS Annotation Kit' and click 'Add to file'." %}
 
