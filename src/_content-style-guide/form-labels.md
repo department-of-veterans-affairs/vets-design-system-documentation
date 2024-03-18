@@ -4,7 +4,11 @@ title: Form labels
 slug: form-labels
 ---
 
-# Form labels
+# Form labels (in progress)
+
+**Note:** We're updating our guidance for form labels. Many of these labels are out of date. Check back soon for updates.
+
+_______________________________
 
 When adapting a paper form into an online application or tool on VA.gov, content writers and UX designers should consult our [Form labels](#form-label-masterlist) to see if a standardized label has already been created. Use the existing standardized labels when building a form rather than create new or custom labels with each new form.
 
