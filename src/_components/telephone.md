@@ -63,12 +63,13 @@ web-component: va-telephone
 
 ### How this component works
 
-* By default, phone numbers provided to this component are clickable with a link and accept a value of 3, 5, 6, or 10 digits. 
-* Props can be added to provide phone numbers with an extension, make them non-clickable, and to include an international phone number indicator.
+* **Creates a clickable phone number link.** By default, phone numbers provided to this component are clickable with a link and accept a value of 3, 5, 6, or 10 digits.
+* **Alter behavior using props.** Props can be added to provide phone numbers with an extension, make them non-clickable, and to include an international phone number indicator.
+* **Do not use a country code for US-based audiences.** Use +1 only when the information is specifically addressing Veterans or people who are living outside the U.S. In other words, do not prepend a U.S. phone number with the U.S. country code unless the audience is living outside the U.S. in which case you may then use the international prop which will automatically prepend a +1.
 
 ### Behavior
 
-* By default selecting the link will trigger a phone call, opening the default program on the computer or device for placing phone calls. 
+* By default selecting the link will trigger a phone call, opening the default program on the computer or device for placing phone calls.
 
 ### Choosing between variations
 
@@ -88,5 +89,5 @@ web-component: va-telephone
 
 ## Accessibility considerations
 
-- By default an `aria-label` will be created based off of the context entered into the component and will be formatted as a combined phone number with parts within the label separated by periods, e.g. "800-555-1212" becomes "8 0 0. 5 5 5. 1 2 1 2"
-- If the `non-clickable` prop is enabled `aria-hidden="true"` will be added to the span element containing the  number and a `sr-only` CSS class will be added to the span element displaying the number in the `aria-label` format as shown above.
+* By default an `aria-label` will be created based off of the context entered into the component and will be formatted as a combined phone number with parts within the label separated by periods, e.g. "800-555-1212" becomes "8 0 0. 5 5 5. 1 2 1 2"
+* If the `non-clickable` prop is enabled `aria-hidden="true"` will be added to the span element containing the  number and a `sr-only` CSS class will be added to the span element displaying the number in the `aria-label` format as shown above.
