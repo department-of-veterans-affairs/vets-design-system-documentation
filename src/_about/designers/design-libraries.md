@@ -10,7 +10,6 @@ anchors:
   - anchor: Naming conventions in project files
 ---
 
-
 ## Add the {{ site.design_library_name }} to your project
 
 Use the core **{{ site.design_library_name }}** library to access all components. In Figma, the component library lives in the cloud. Thus you do not need to download the library. The Design System Team updates the component library in order to keep it in sync with the component-library code which contains our web components.
@@ -42,6 +41,8 @@ Once you’ve loaded the library, you can access the components by navigating to
 Use these libraries to assist your design process. Some of the assets you can generate from these libraries are required in the <a href="https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/">Collaboration Cycle</a> process.
 
 **VADS Web Annotation Kit** provides useful tools to document your design with accessibility, development, component identification, and many other types of helpful notes. 
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/accessibility/accessibility-annotations">Learn how to use the Annotation Kit</a>
 
 <a class="vads-c-action-link--blue" href="{{ site.figma_annotations_library }}">View the Web Annotation Kit</a>
 
