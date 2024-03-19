@@ -52,7 +52,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
 **Armed Forces**
-: Capitalize.
+: Capitalize. The Armed Forces consist of 6 service branches: the Air Force, Army, Coast Guard, Marine Corps, Navy, and Space Force. Also refer to the "uniformed services" entry.
 
 **asbestos**
 : Define on first mention in body copy as "toxic fibers, once used in many buildings and products." Include the definition in another sentence, as a parenthetical, or set off with commas.
@@ -716,6 +716,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 
 ### U
+
+**uniformed services**
+: Uniformed services refers to the Armed Forces plus these 2 branches: the National Oceanic and Atmospheric Administration and the Public Health Service. Also refer to the "Armed Forces" entry.
 
 **U.S.**
 : Use periods.
