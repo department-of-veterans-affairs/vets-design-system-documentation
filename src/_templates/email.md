@@ -4,6 +4,7 @@ permalink: /templates/email
 title: Email
 status: use-deployed
 intro-text: "The email template is used to communicate with Veterans through email."
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2607%3A31365&mode=design&t=0y4ua4v9DIeIvkhX-1
 anchors:
   - anchor: Example
   - anchor: Guidance
