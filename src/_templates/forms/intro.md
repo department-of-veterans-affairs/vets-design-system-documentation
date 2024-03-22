@@ -184,14 +184,13 @@ The non-application introduction page for unauthenticated users consists of the 
 
 ### Authenticated
 
-{% include component-example.html alt="An example of a non-application introduction page for authenticated users." file="/images/templates/forms/introduction/template-non-app-auth.png" caption="Layout of the non-application introduction page for authenticated users." class="x2" %}
+{% include component-example.html alt="An example of a non-application introduction page for authenticated users." file="/images/templates/forms/introduction/template-non-app-auth.png" caption="Example of the non-application introduction page for authenticated users." class="x2" %}
 
 ### Instances of this template in production
 
 * [Authorize the release of non-VA medical information to VA (VA Form 21-4142)](https://www.va.gov/supporting-forms-for-claims/release-information-to-va-form-21-4142/introduction)
 * [Submit a lay witness statement to support a VA claim (VA Form 21-10210)](https://www.va.gov/supporting-forms-for-claims/lay-witness-statement-form-21-10210/introduction)
 * [Request to be a substitute claimant for a deceased claimant - VA Form 21P-0847](https://www.va.gov/supporting-forms-for-claims/substitute-claimant-form-21P-0847/introduction)
-
 
 ## Structure - Non-application
 
