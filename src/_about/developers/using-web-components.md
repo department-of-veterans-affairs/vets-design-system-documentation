@@ -12,6 +12,7 @@ anchors:
   - anchor: Custom events
   - anchor: Native events
   - anchor: How to migrate to Web Components
+  - anchor: How to migrate from Font Awesome to va-icon
 ---
 
 ## How to use a web component
@@ -218,13 +219,52 @@ Auto-migrations may not be able to perfectly migrate every component. Before you
 
 Here is a list of each Web Component and the migration available:
 
-* `va-accordion`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2127527996/Manual+Component+Migration+Guide)
-* `va-alert`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/alertbox.js)
-* `va-button`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-button--primary)
-* `va-file-input`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-file-input--default)
-* `va-loading-indicator`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/loadingindicator.js)
 * `va-modal`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-omb-info`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-process-list`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-process-list)
-* `va-promo-banner`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-promo-banner)
-* `va-text-input`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
+
+## How to migrate from Font Awesome to va-icon
+
+Font Awesome icons will be deprecated late-May 2024 in favor of the `va-icon` web component which uses the USWDS icon module. USWDS icons are a combination of Material Icons and [custom icons](https://github.com/department-of-veterans-affairs/dst-uswds-compile/tree/main/assets/icons). A searchable set can be viewed on the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
+
+### Quick References
+- [va-icon on Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default)
+- [USWDS Icon list](https://designsystem.digital.gov/components/icon/)
+- Slack channel: `#platform-design-system`
+
+### ESLint Auto-Migration
+
+Places that Font Awesome classes are used in vets-website will be flagged by an ESLint rule that also includes an auto-fix option:
+
+{% include component-example.html alt="An ESLint pop-up for the rule to prefer icon component in VS Code. It says the va-icon web component should be used instead of Font Awesome" file="/images/icon-eslint-step-1.png" caption="The ESLint rule flagging a Font Awesome element in vets-website" %}
+
+This will convert the Font Awesome icon to the `va-icon` web component. Entering the Quick Fix menu will allow you to select "Fix this" or "Fix all":
+
+{% include component-example.html alt="The list of quick fix options for the eslint rule. One says to fix this and another says to Fix all" file="/images/icon-eslint-step-2.png" caption="The rule's quick fix options" %}
+
+Once selected, the fixer will convert the Font Awesome icon to the `va-icon` web component:
+
+
+{% include component-example.html alt="The completed fixer results that show va-icon web component with mapping properties" file="/images/icon-eslint-step-3.png" caption="The converted Font Awesome element to the va-icon web component" %}
+
+After this auto-fix completes, you will need to update the <strong>icon</strong> value as well as visually confirm the <strong>size</strong> and if any custom CSS styles are still applicable.
+
+To migrate from Font Awesome to the web component without using the ESLint migration rule, reference the [Storybook examples](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default).
+
+### The va-icon Web Component API
+
+Examples and details for the va-icon web component can be found on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default). The web component has the following customization properties available:
+
+- <strong>icon</strong>: The name of the icon to use
+- <strong>size</strong>: The size of the icon as a value between 3 to 9. Sizing can be previewed in Storybook by adjusting the size control
+  - 3: 24px
+  - 4: 32px
+  - 5: 40px
+  - 6: 48px
+  - 7: 56px
+  - 8: 64px
+  - 9: 72px
+- <strong>srtext</strong>: Screen-reader text if the icon has semantic meaning and is not purely decorative
+- <strong>color</strong>: The fill color of the icon (coming soon)
+
+### Mapping Icon Names
+
+If you're having trouble deciding which icon name to use, reach out in the <br/>`#platform-design-system` Slack channel.
