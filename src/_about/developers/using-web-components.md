@@ -223,7 +223,7 @@ Here is a list of each Web Component and the migration available:
 
 ## How to migrate from Font Awesome to va-icon
 
-Font Awesome icons will be deprecated late-May 2024 in favor of the `va-icon` web component which uses the USWDS icon module. USWDS icons are a combination of Material Icons and [custom icons](https://github.com/department-of-veterans-affairs/dst-uswds-compile/tree/main/assets/icons). A searchable set can be viewed on the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
+Font Awesome icons will be deprecated in late-May 2024 in favor of the `va-icon` web component which uses USWDS icons. USWDS icons are a combination of Material Icons and [custom icons](https://github.com/department-of-veterans-affairs/dst-uswds-compile/tree/main/assets/icons). A searchable set can be viewed on the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
 
 ### Quick References
 - [va-icon on Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default)
@@ -254,7 +254,7 @@ To migrate from Font Awesome to the web component without using the ESLint migra
 Examples and details for the va-icon web component can be found on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default). The web component has the following customization properties available:
 
 - <strong>icon</strong>: The name of the icon to use
-- <strong>size</strong>: The size of the icon as a value between 3 to 9. Sizing can be previewed in Storybook by adjusting the size control
+- <strong>size</strong>: The size of the icon as a value between 3 and 9. Sizing can be previewed in Storybook by adjusting the size control
   - 3: 24px
   - 4: 32px
   - 5: 40px
@@ -267,4 +267,4 @@ Examples and details for the va-icon web component can be found on [Storybook](h
 
 ### Mapping Icon Names
 
-If you're having trouble deciding which icon name to use, reach out in the <br/>`#platform-design-system` Slack channel.
+Icon names can be referenced on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default), the [USWDS Icon page](https://designsystem.digital.gov/components/icon/), or reach out in the <br/>`#platform-design-system` Slack channel for help deciding on a mapping name.
