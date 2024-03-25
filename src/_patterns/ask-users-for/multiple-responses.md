@@ -10,12 +10,11 @@ intro-text: "Choose the most appropriate implementation of this pattern in forms
 status: use-deployed
 anchors:
   - anchor: Usage
-  - anchor: How to design and build - Checkbox
-  - anchor: How to design and build - Radio button
-  - anchor: How to design and build - Text input
-  - anchor: How to design and build -  Textarea
+  - anchor: How to design and build - Single page
+  - anchor: How to design and build - Multi-page
+  - anchor: How to design and build - Add item
+  - anchor: How to design and build - Contact information
   - anchor: Code considerations
-  - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
 
