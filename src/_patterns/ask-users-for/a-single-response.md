@@ -6,6 +6,7 @@ aka: One Thing per Page
 contributors: Jeana Clark (Ad Hoc), Jamie Klenetsky Fay (Coforma)
 sub-section: ask-users-for
 intro-text: "Asking for one logical thing at a time allows users to focus on what you are asking from them. Choose the most appropriate implementation of this pattern in forms when we need to collect a single response from a user." 
+research-title: Ask users for a single response
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -23,30 +24,29 @@ We should always divide long forms into multiple smaller sections that make up a
 
 This is often referred to as the "[One thing per page](#design-principles)" design principle. While there is often only one form field element on the page, it does not necessarily mean that there can be only one element. The "One thing" refers to the information being gathered and not the actual number of form fields.
 
-We have a number of patterns that use the One thing per page principle and below we outline how to implement this principle as a pattern using many of our form components.
+We have a number of patterns that use the One thing per page principle and below we outline how to implement this principle as a pattern using our form components.
 
 ### When to use this pattern
 
-* **Collecting one, or a few, responses to gather related information from the user.**  A page with too many "things" - unrelated concepts - can be difficult to understand. When a page covers multiple topics, it's hard to narrow down what the purpose of the page is, and what actions the user should take. Use this pattern to avoid this problem and to clearly chunk the data being collected into logical parts.
+* **Collecting one, or a few, responses to gather related information from the user.**  A page with too many "things" - unrelated concepts - can be difficult to understand. When a page covers multiple topics, it's hard to narrow down what the purpose of the page is, and what actions the user should take. Use this pattern to avoid this problem and to clearly divide the information being collected into logical parts.
 
 ### When not to use this pattern
 
-* **Collecting the same data in a series of questions.** Forms will often collect the same information about 1 or more items. For example, personal information about a Veteran's dependents. The paper form equivalent would be a table where each row is an item and the columns are the questions. For this scenario, use the [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
+* **Collecting the same data in a series of questions.** Forms will often collect the same information about 1 or more items. For example, personal information about a Veteran's dependents. The paper form equivalent would be a table where each row is an item and the columns are the questions. For this scenario, use the [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern. Note that the multiple responses pattern does leverage the single response pattern but does so in a loop so as to collect multiple instances of information.
 * **Collecting many possible responses.** Some questions can have an unknown amount of answers, such as "list all the cities and states you've lived within." When we don't know how many responses to a question a user will provide, but we need to collect a number between 1 and "n," where "n" is all possible responses, use the [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
 
 ### Why we prefer this pattern
 
-1. Reduces cognitive load
-2. Handling errors is easier
-3. Pages load faster
-4. Tracking behavior is easier
-5. Tracking progress is easier & returning to previous steps is easier
-6. Scrolling is reduced
-7. Branching/conditional logic is easier
-8. Easier for screen readers
-9. Reviewing/Editing sections is easier
-10. Incremental save in progress for authenticated users
-11. Design process is easier as we can easily reuse patterns across forms
+1. **Reduces cognitive load.** The [W3C Cognitive Accessibility Guidance](https://www.w3.org/WAI/WCAG2/supplemental/#cognitiveaccessibilityguidance) provides more details on how to better meet the accessibility needs of people with cognitive and learning disabilities.
+2. **Simplified error handling.** Shorter, focused pages make it easier for the user to find and correct errors.
+3. **Faster page loads.** Shorter pages load and respond to user interaction faster than longer pages.
+4. **Easier progress tracking.** When users drop out of the "funnel" of completing a form it is simple to tell which questions may have contributed to that drop off.
+5. **Simplified navigation.** Returning to previous steps is easier as each step is focused and clear. This also makes returning to a step to make an edit easier.
+6. **Improved experience on mobile.** Shorter pages are easier to scan, navigate, and move through quickly.
+7. **Simplified branching and conditional logic.** Less complex pages are easier to code for conditional branches.
+8. **Easier for screen readers.** Less complex pages are easier for users of screen readers to use.
+9. **Improved pattern reuse.** Simple pages make pattern reuse more likely and thus simplify the design process.
+10. **Simpler screens despite more clicks.** While breaking forms into smaller chunks does result in more clicks, research both here and [in the UK](https://designnotes.blog.gov.uk/2014/07/14/things-we-learnt-designing-register-to-vote/) has shown that the process feels simple and easy and users do not get stuck.  
 
 ## Examples
 
@@ -58,6 +58,7 @@ We have a number of patterns that use the One thing per page principle and below
 
 * [Sign VA claim forms as an alternate signer (VA Form 21-0972)](https://www.va.gov/supporting-forms-for-claims/alternate-signer-form-21-0972/introduction)
 * [Submit a lay or witness statement to support a VA claim - Lay/Witness Statement (VA Form 21-10210)](https://www.va.gov/supporting-forms-for-claims/lay-witness-statement-form-21-10210/introduction)
+* [File a Supplemental Claim (VA Form 20-0995)](https://www.va.gov/decision-reviews/supplemental-claim/file-supplemental-claim-form-20-0995/start)
 * [Request personal records - Freedom of Information Act (FOIA) or Privacy Act (PA) Request (VA Form 20-10206)](https://www.va.gov/records/request-personal-records-form-20-10206/introduction)
 
 ### Other relevant examples
