@@ -31,35 +31,7 @@ anchors:
 3. **Date updated**. The date on which the page was most frequently updated. This text does not appear on all VA.gov pages.
 4. **Medallia Feedback Button**. Button that launches a modal window that contains the Medallia feedback survey. This button does not appear on all VA.gov pages.
 
-### Feedback form in modal
-
-{% include component-example.html alt="The Medallia feedback form." file="/images/patterns/ask-users-for/feedback/feedback-form.png" caption="A 3 question form which appears in a modal after a user clicks the Feedback button and quickly allows the user to provide feedback." width="50%" %}
-
-## How to design and build 
-
-### Layout details
-
-The Medallia Feedback button sits at the bottom of the main content within the context of other elements. In addition to the Feedback button, the bottom of the main content can also contain:
-
-* Date last updated
-* Back to top button
-
-These three elements are not present on every page, and multiple variations can be found. For example, the [articles search results page]([https://www.va.gov/resources/va-account-and-profile/) has the back to top and feedback buttons, but no 'date last updated' text. The [signing in to VA.gov page](https://www.va.gov/resources/signing-in-to-vagov/) has all three elements.
-
-To better establish user expectations of location, appropriate space will be provided for an element regardless of it's presence or absence. This creates a cohesive pattern that does not shift in size or location, even if one or two of the elements are not present on a particular page. The width of the pattern is also dynamically determined by the width of the main content container.
-
-### How this pattern works
-
-* Users trigger the feedback interaction when clicking on the Feedback button. 
-* This opens a modal window that contains a form, shown above. 
-* After submitting the form the user sees a "Thank you" screen which can then be dismissed with a primary "Close" button. Focus is returned to the Feedback button.
-
-### Components used in this pattern
-
-* [Back to top](https://design.va.gov/components/back-to-top)
-* [Button - Primary](https://design.va.gov/components/button/#primary-button) 
-
-### This pattern in production
+### Examples in production
 
 #### Desktop
 
@@ -82,7 +54,6 @@ To better establish user expectations of location, appropriate space will be pro
   </div>
 </div>
 
-
 #### Mobile
 
 <div class="usa-grid">
@@ -104,6 +75,34 @@ To better establish user expectations of location, appropriate space will be pro
   </div>
 </div>
 
+### Feedback form in modal
+
+{% include component-example.html alt="The Medallia feedback form." file="/images/patterns/ask-users-for/feedback/feedback-form.png" caption="A 3 question form which appears in a modal after a user clicks the Feedback button and quickly allows the user to provide feedback." width="50%" %}
+
+## How to design and build
+
+### Layout details
+
+The Medallia Feedback button sits at the bottom of the main content within the context of other elements. In addition to the Feedback button, the bottom of the main content can also contain:
+
+* Date last updated
+* Back to top button
+
+These three elements are not present on every page, and multiple variations can be found. For example, the [articles search results page]([https://www.va.gov/resources/va-account-and-profile/) has the back to top and feedback buttons, but no 'date last updated' text. The [signing in to VA.gov page](https://www.va.gov/resources/signing-in-to-vagov/) has all three elements.
+
+To better establish user expectations of location, appropriate space will be provided for an element regardless of it's presence or absence. This creates a cohesive pattern that does not shift in size or location, even if one or two of the elements are not present on a particular page. The width of the pattern is also dynamically determined by the width of the main content container.
+
+### How this pattern works
+
+* Users trigger the feedback interaction when clicking on the Feedback button.
+* This opens a modal window that contains a form, shown above.
+* After submitting the form the user sees a "Thank you" screen which can then be dismissed with a primary "Close" button. Focus is returned to the Feedback button.
+
+### Components used in this pattern
+
+* [Back to top](https://design.va.gov/components/back-to-top)
+* [Button - Primary](https://design.va.gov/components/button/#primary-button)
+
 ## Accessibility considerations
 
 Accessibility considerations are forthcoming.
@@ -115,6 +114,7 @@ The previous location of the Medallia Feedback button was sticky on the right si
 ### Usability Studies
 
 #### Homepage redesign study
+
 In the second round of usability testing for the new VA.gov homepage, 2 participants using ZoomText screen magification missed the feedback button. This is likely due to screen magnification showing only part of the screen at any given time. As there’s no indication that the feedback exists on the bottom right side of the page, it may be missed by magnification users who scan the page left to right with a limited view. An example is included in the report, "[How disabled Veterans provide accessibility feedback]([url](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/teams/shared-support/accessibility/research/2022-10-a11y-feedback/research-findings.md#key-insights--3))."
 
 #### Foresee to Medallia usability studies
@@ -123,20 +123,19 @@ In late fall 2021, [VA.gov](http://va.gov/) transitioned from utilizing Foresee 
 
 **Study 1:**
 
-- 1 of 7 participants found the button in the sidebar. 
-- 5 of 7 participants looked in the footer.
+* 1 of 7 participants found the button in the sidebar. 
+* 5 of 7 participants looked in the footer.
 
 **Study 2:**
 
-- 6 of 11 participants found the button in the sidebar.
-- 6 of 11 participants looked in the footer.
+* 6 of 11 participants found the button in the sidebar.
+* 6 of 11 participants looked in the footer.
 
 *Note, in some instances during the second study, participants would look in the footer prior to finding the button in the sidebar.*
 
 ### Feedback Submission Comparison
 
 To track the effectiveness of moving the feedback button to the bottom of the main content area, we compared the number of submissions on a single page before and after the button move.
-
 
 | **Page**                                                     | **Jan 1 - Jan 31 submissions** | **Feb 10 - Mar 12 submissions** | **% increase** |
 | :----------------------------------------------------------- | :----------------------------- | :------------------------------ | :------------- |
@@ -151,5 +150,3 @@ Both date ranges span 31 days, and the dates from January are submissions from t
 **Mobile feedback**
 
 In addition to the button being relocated on the desktop view, it was added to the mobile breakpoints as well. Previous 508 accessibility issues prevented the button from being displayed on the sidebar of mobile screens. From February 10 to March 12, there were 9,449 feedback submissions, 2,215 of which were mobile, or 23.4% of all submissions.
-
-

@@ -9,8 +9,8 @@ research-title: Use this to match the label in the research repo.
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates-(Patterns-%26-Forms)?type=design&node-id=2988%3A29744&mode=design&t=Y0LWxs33fRITMh6x-1
 status: use-with-caution-available
 anchors:
-  - anchor: Examples
   - anchor: Usage
+  - anchor: Examples
   - anchor: How to design and build
   - anchor: Code usage
   - anchor: Content considerations
@@ -35,12 +35,6 @@ Examples of this pattern. May contain reference or links to:
 ### When to use this pattern
 
 Criteria for when the pattern is appropriate.
-
-May contain:
-
-### When to use this pattern
-
-Criteria for when to use this pattern.
 
 ### When not to use this pattern
 

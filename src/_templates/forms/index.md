@@ -23,28 +23,15 @@ sub-pages:
 
 1. **[How to apply (aka Landing) page]({{ site.baseurl }}/templates/forms/how-to-apply).** A page built in Drupal that outlines eligibility requirements, provides details on how to apply, and what happens after an application is submitted.
 1. **[Introduction page]({{ site.baseurl }}/templates/forms/introduction).** The form introduction page gives users information about what they can expect before they submit an online application. This page also provides users with steps on how to apply.
-1. **[Step form pages](#step-form-pages).** The majority of a form, these pages are laid out in chapters. Each chapter may have multiple pages.
+1. **[Step form pages](#patterns).** The majority of a form, these pages follow one of the form patterns designed in the system.
 1. **[Review page]({{ site.baseurl }}/templates/forms/review).** Allows the user to review information and make edits if necessary.
 1. **[Confirmation page]({{ site.baseurl }}/templates/forms/confirmation).** Gives users information about what they can expect after they submit an online application.
 
-
-## Pages
-
-### Step Form Pages
-
-Some examples start here (use the right arrow key to navigate through): [https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903387](https://vsateams.invisionapp.com/share/A2W64P7YUG9#/screens/406903387)
-
-### Splitting forms into chapters
-(Reference: [https://dsva.slack.com/archives/C0NGDDXME/p1578005824025300](https://dsva.slack.com/archives/C0NGDDXME/p1578005824025300))
-
-* Users are given guidance on where they are in the form using a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented). Each segment of the bar represents a "chapter" in the form.  Note that there can be multiple "pages" within each chapter, so the bar does not always increment when the user clicks between pages.
-* When deciding how fields should be laid out in the form in terms of “chunking,” forms should be sectioned into chapters, with the progress bar in a "how you would explain the steps to someone out loud" methodology. (e.g. first we'll get veteran info, then spouse info, then info about the claim)
-* If the screens within the chapters end up having more than 3-5 questions, or more than one conceptual topic, as a general rule, break those screens into multiple "pages" within the section. For example, if you have a chapter on “Veteran info” you may have multiple pages within that chapter, one where you get contact information, another where you get medical information. 
-   * **Note for the future:** There is general consensus that this design pattern could be improved. It’s not ideal for a user to click “continue” and not have the progress bar increment.  A small percentage of users are consistently confused by this behavior. Additionally, the number of pages may increase or decrease based on conditional questions, which adds complications to improving this pattern.
-* With conditional questions, use the blue bar / expanding element as long as it's not too long / overwhelming and/or requires a call to another service.  Otherwise, use another page within the section instead.
-
 ## Patterns
 
+All of the patterns in the "[Ask users for...]({{ site.baseurl }}/patterns/)" section of our patterns are form patterns for collecting information from users. However, the following patterns for collecting information more generically may be of particular interest:
+
+* [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response)
 * [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses)
 * [Help users to check answers]({{ site.baseurl }}/patterns/help-users-to/check-answers)
 
@@ -67,9 +54,9 @@ Some examples start here (use the right arrow key to navigate through): [https:/
 
 In general, our online forms should not be framed as a 1:1 mapping of the paper form - in other words, what we are building are data collection mechanisms for the forms themselves, and therefore do not need approval in the same way the forms themselves do. Therefore, the language does not need to map 1:1 to the paper forms. In general, voice and tone strategy on our online pages should use plain language.
 
-A [legal memo](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf) addresses this situation: 
+A [legal memo](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf) addresses this situation:
 
-> “As long as the underlying, approved form is not altered and the interactive materials essentially collect the same information, then OIRA considers these applications a nonsubstantive change to an already approved collection, and would encourage their development.” 
+> “As long as the underlying, approved form is not altered and the interactive materials essentially collect the same information, then OIRA considers these applications a nonsubstantive change to an already approved collection, and would encourage their development.”
 
 For legal or regulatory content, however, we need to use judgment and be careful. Sometimes this might mean providing a plain language summary and the legal language in parentheses for reference. We’ve sometimes used this approach on the public website unauthenticated pages. For tools and authenticated experiences, you can use things like the “learn more” dropdown or modals to have plain language versions alongside legal definitions.
 
