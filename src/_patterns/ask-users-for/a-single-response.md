@@ -52,7 +52,11 @@ We have a number of patterns that use the One thing per page principle and below
 
 ### Annotated
 
-{% include component-example.html alt="An annotated example of using radio buttons to collect the answer to a single question ." file="/images/patterns/ask-users-for/a-single-response/radio-button.png" caption="An annotated example of using radio buttons to collect the answer to a single response." class="x2" %}
+{% include component-example.html alt="An annotated example of using radio buttons to collect the answer to a single question." file="/images/patterns/ask-users-for/a-single-response/single-response-annotated.png" caption="An annotated example of using radio buttons to collect the answer to a single response." class="x2" %}
+
+### With form description
+
+{% include component-example.html alt="An annotated example that includes a form description." file="/images/patterns/ask-users-for/a-single-response/single-response-with-form-description.png" caption="An annotated example that adds a form description to the single response." class="x2" %}
 
 ### Examples in production
 
@@ -70,6 +74,11 @@ We have a number of patterns that use the One thing per page principle and below
 
 ## How to design and build
 
+### Anatomy and layout details
+
+
+
+
 ### How this pattern works
 
 Your goal is to figure out how users think of the "things" - the concepts, topics, or questions - you're presenting to them. Which stand alone, and which go together?
@@ -86,6 +95,14 @@ Here are steps you can take to determine what the “things” are on your form 
   * Frustrated by the number of steps, or
   * Confused by the amount of concepts on a page
 8. Iterate.
+
+### Components used in this pattern
+
+[View the full list of available component variations below](#code-usage).
+
+### Page templates available for this pattern
+
+Page templates are available in the specific patterns that leverage this pattern in the "[Ask users for...]({{ site.baseurl }}/patterns)" section.
 
 ### Design principles
 
