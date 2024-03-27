@@ -21,8 +21,11 @@ anchors:
 {% assign icons = site.data.icons %}
 
 <div class="va-introtext">
-  We leverage Font Awesome (v5.15.4) icons to communicate meaning, action, status, or feedback.
+  Use icons to communicate meaning, action, status, or feedback.
 </div>
+<p>
+  We currently leverage Font Awesome (v1) v5.15.4 but are migrating to [USWDS icons](https://designsystem.digital.gov/components/icon/) (v3) with some additions for VA-specific use cases. 
+</p>
 
 {% include _site-on-this-page.html %}
 
@@ -31,7 +34,8 @@ anchors:
 <table class="usa-table-borderless">
   <thead>
     <tr>
-      <th scope="col">Icon</th>
+      <th scope="col">Icon (v3)</th>
+      <th scope="col">Icon (v1)</th>
       <th scope="col">HTML</th>
       <th scope="col">Unicode</th>
       <th scope="col">Usage</th>
@@ -41,8 +45,11 @@ anchors:
   {% for icon in section[1] %}
     <tr>
       <th scope="row">
-        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+        <va-icon icon="{{icon.icon-name}}" size=3 srtext="{{icon.name}}" />
       </th>
+      <td>
+        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+      </td>
       <td><code>&lt;i class="{{ icon.fa-class }}">&lt;/i></code></td>
       <td><code class='code-fa'>&amp;{{ icon.unicode }}</code></td>
       <td>
