@@ -51,12 +51,12 @@ web-component: va-summary-box
 
 ### Placement
 
-Summary box is found towards the top of the page after the h1 title of the page and [intro text]({{ site.baseurl }}/foundation/typography#paragraphs). 
+Summary box is found towards the top of the page after the h1 title of the page and [intro text]({{ site.baseurl }}/foundation/typography#paragraphs).
 
-### How to use the Summary box component 
+### How to use the Summary box component
 
-* Features should use a `h3` or `h4` heading depending on what the appropriate heading level is for your page based on the content of your page. 
-* Also supports open text, such as `<p>`, `<ul>`, and `<ol>`, `<strong>`, `<em>`, and `<a>`
+* Features must use a `h3` or `h4` heading depending on what the appropriate heading level is for your page based on the content of your page.
+* Also supports open text, such as `<p>`, `<ul>`, and `<ol>`, `<strong>`, `<em>`, and `<a>`.
 
 ## Variations
 
