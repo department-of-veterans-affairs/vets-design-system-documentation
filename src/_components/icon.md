@@ -31,5 +31,4 @@ Each icon has a chosen semantic meaning and should be used in a manner that is c
 
 Before introducing a new icon check the list to be see if the meaning of the icon you need corresponds to an existing icon. If you have questions about a new icon, or icon usage, feel free to reach out to the Design System team.
 
-This is the Code Usage section. Note that the header is inside this include.
 {% include component-docs.html component_name=page.web-component %}

@@ -24,7 +24,7 @@ anchors:
   Use icons to communicate meaning, action, status, or feedback.
 </div>
 <p>
-  We currently leverage Font Awesome (v1) v5.15.4 but are migrating to [USWDS icons](https://designsystem.digital.gov/components/icon/) (v3) with some additions for VA-specific use cases. 
+  We currently leverage Font Awesome (v1) v5.15.4 but are migrating to <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> (v3) with some additions for VA-specific use cases. 
 </p>
 
 {% include _site-on-this-page.html %}
@@ -34,10 +34,10 @@ anchors:
 <table class="usa-table-borderless">
   <thead>
     <tr>
-      <th scope="col">Icon (v3)</th>
-      <th scope="col">Icon (v1)</th>
-      <th scope="col">HTML</th>
-      <th scope="col">Unicode</th>
+      <th scope="col">Icon v3</th>
+      <th scope="col">Icon v3 name</th>
+      <th scope="col">Icon v1</th>
+      <th scope="col">FontAwesome class</th>
       <th scope="col">Usage</th>
     </tr>
   </thead>
@@ -45,13 +45,13 @@ anchors:
   {% for icon in section[1] %}
     <tr>
       <th scope="row">
-        <va-icon icon="{{icon.icon-name}}" size=3 srtext="{{icon.name}}" />
+        <va-icon icon="{{icon.icon-name}}" size=3 srtext="{{icon.name}}" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%} />
       </th>
+      <td>{{ icon.icon-name }}</td>
       <td>
         <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
       </td>
-      <td><code>&lt;i class="{{ icon.fa-class }}">&lt;/i></code></td>
-      <td><code class='code-fa'>&amp;{{ icon.unicode }}</code></td>
+      <td>{{ icon.fa-class }}</td>
       <td>
         {% if icon.additional-usage %}
           {% assign usage = icon.name | append: ', ' | append: icon.additional-usage %}
