@@ -13,7 +13,7 @@ Appointments:
     fa-class: "fas fa-phone-alt"
     unicode: "#xf879;"
   - name: Time (hours/minutes)
-    icon-name: clock
+    icon-name: schedule
     fa-class: "fas fa-clock"
     unicode: "#xf0e0;"
   - name: Video appointment
@@ -114,6 +114,9 @@ Identification:
     icon-name: phone
     fa-class: "fas fa-phone"
     unicode: "#xf095;"
+  - name: Phone
+    icon-name: phone_iphone
+    additional-usage: Telephone number in Crisis Line modal
   - name: Location or address
     icon-name: location_on
     fa-class: "fas fa-map-marker-alt"
@@ -202,6 +205,8 @@ Messaging:
     icon-name: undo
     fa-class: "fas fa-reply"
     unicode: "#xf3e5;"
+  - name: Secure messaging
+    icon-name: chat
 
 Navigation:
   - name: Previous
