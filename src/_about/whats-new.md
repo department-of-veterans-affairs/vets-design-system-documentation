@@ -25,6 +25,32 @@ title: What’s new?
   </div>
 </va-alert>
 
+## March 2024
+The team continued to synch to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
+
+### Updated components and bug fixes
+*  CSS-Library: add missing tokens after audit of formation (#1074)
+*  CSS-Library: update tokens missed in previous update (#1087)
+* va-accordion: remove Font Awesome icon override (#1083)
+* va-header-minimal: add optional headings (#1084)
+* updated CSS-Library version in web-components (#1086)
+* va-text-input and va-textarea error message not announced by screen readers (#2572)
+* Updated all instances of color-primary-darker and color-primary-darkest in vets-website#2311
+
+### Figma Library updates
+* Added v3 Borderless Table Design to the component library (#1859) 
+* Add Military Address pattern to templates (#2329)
+* Added Direct Deposit pattern to templates (#2453)
+* Added Review form pattern to templates (#2465)
+* Added Introduction pattern to templates (#2484) 
+* Added Service History pattern to templates ((#2460) 
+* Update the design system template screens for intro page (#2385) 
+
+### Documentation updates
+* Fixed broken link to "linking to external link" info (#2552)
+* Documented pattern for Ask users for a single response (#2611)
+* Wrote guidance for icon migration (#2536)
+
 ## Leap Year February 2024
 The team continued to deliver web components synced to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
 
