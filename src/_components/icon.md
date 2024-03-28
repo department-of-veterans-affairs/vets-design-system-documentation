@@ -31,4 +31,8 @@ Each icon has a chosen semantic meaning and should be used in a manner that is c
 
 Before introducing a new icon check the list to be see if the meaning of the icon you need corresponds to an existing icon. If you have questions about a new icon, or icon usage, feel free to reach out to the Design System team.
 
+### How to migrate from Font Awesome to va-icon
+
+Follow our detailed instructions on [how to migrate to va-icon]({{ site.baseurl }}/about/developers/using-web-components#how-to-migrate-from-font-awesome-to-va-icon).
+
 {% include component-docs.html component_name=page.web-component %}
