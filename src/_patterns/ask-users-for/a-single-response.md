@@ -52,7 +52,7 @@ We have a number of patterns that use the One thing per page principle and below
 
 ### Annotated
 
-{% include component-example.html alt="An annotated example of using radio buttons to collect the answer to a single question." file="/images/patterns/ask-users-for/a-single-response/single-response-annotated.png" caption="An annotated example of using radio buttons to collect the answer to a single response." class="x2" %}
+{% include component-example.html alt="An annotated example of using radio buttons to collect the answer to a single response." file="/images/patterns/ask-users-for/a-single-response/single-response-annotated.png" caption="An annotated example of using radio buttons to collect the answer to a single response." class="x2" %}
 
 ### With form description
 
@@ -76,8 +76,7 @@ We have a number of patterns that use the One thing per page principle and below
 
 ### Anatomy and layout details
 
-
-
+Follow the annotated [examples](#examples) above and use the [component variations listed below](#code-usage).
 
 ### How this pattern works
 

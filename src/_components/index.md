@@ -33,11 +33,11 @@ We ask that teams begin to use these new versions of our web-components to aid i
   uswds
 >
   <h2 slot="headline">
-    v1 components will be deprecated on April 19, 2024
+    v1 components will be deprecated on May 3, 2024
   </h2>
   <div>
     <p className="vads-u-margin-y--0">
-      In late February, all components that have a v3 version will be set to default to v3. By April 19, 2024 all v1 components will be deprecated.
+      In late February, all components that have a v3 version will be set to default to v3. By May 3, 2024 all v1 components will be deprecated.
     </p>
   </div>
 </va-alert>
