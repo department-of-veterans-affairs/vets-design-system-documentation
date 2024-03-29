@@ -5,7 +5,7 @@ has-parent: /templates/forms/
 title: Introduction
 status: use-deployed
 intro-text: "The form introduction page gives users information about what they can expect before they submit an online application. This page also provides users with steps on how to apply."
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/A952E56D-1CFC-4545-A32C-11DDCFB7359C/canvas
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=4546-6220&mode=design
 anchors:
   - anchor: About
   - anchor: Example - Application
