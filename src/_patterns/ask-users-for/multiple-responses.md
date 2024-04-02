@@ -7,6 +7,8 @@ redirect_from:
 aka: List & Loop
 sub-section: ask-users-for
 intro-text: "Choose the most appropriate implementation of this pattern in forms when we need to collect multiple responses from a user." 
+github-title: pattern-multiple-responses
+research-title: Ask users for multiple responses
 status: use-deployed
 anchors:
   - anchor: Usage

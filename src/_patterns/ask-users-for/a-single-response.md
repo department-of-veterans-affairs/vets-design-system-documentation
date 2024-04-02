@@ -6,6 +6,7 @@ aka: One Thing per Page
 contributors: Jeana Clark (Ad Hoc), Jamie Klenetsky Fay (Coforma)
 sub-section: ask-users-for
 intro-text: "Asking for one logical thing at a time allows users to focus on what you are asking from them. Choose the most appropriate implementation of this pattern in forms when we need to collect a single response from a user." 
+github-title: pattern-a-single-response
 research-title: Ask users for a single response
 status: use-deployed
 anchors:

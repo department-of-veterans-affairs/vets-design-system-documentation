@@ -7,6 +7,8 @@ redirect_from:
 aka: File upload
 sub-section: ask-users-for
 intro-text: "Follow this pattern to help users upload a file."
+github-title: pattern-files
+research-title: Ask users for files
 status: use-deployed
 anchors:
   - anchor: Usage

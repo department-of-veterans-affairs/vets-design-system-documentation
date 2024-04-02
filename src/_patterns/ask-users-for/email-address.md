@@ -8,6 +8,7 @@ code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/m
 example-link: https://staging.va.gov/mock-form-patterns/phone-and-email-address
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates-(Patterns-%26-Forms)?type=design&node-id=2987%3A39070&mode=design&t=Y0LWxs33fRITMh6x-1
 github-title: pattern-email
+research-title: Ask users for email address
 status: use-deployed
 anchors:
   - anchor: Usage

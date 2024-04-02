@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/gender
 sub-section: ask-users-for
 title: Gender
 intro-text: Follow this pattern whenever you need to ask Veterans their gender. 
+github-title: pattern-gender
+research-title: Ask users for gender
 status: use-with-caution-candidate
 anchors:
   - anchor: Usage
