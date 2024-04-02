@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/race-ethnicity-or-origin
 sub-section: ask-users-for
 title: Race, ethnicity, or origin
 intro-text: Follow this pattern whenever you need to ask veterans for their race, ethnicity, or origin. 
+github-title: pattern-race-ethnicity-origin
+research-title: Ask users for race ethnicity or origin
 status: use-deployed
 anchors:
   - anchor: Usage
