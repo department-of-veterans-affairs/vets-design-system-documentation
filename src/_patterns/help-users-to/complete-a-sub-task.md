@@ -70,7 +70,7 @@ This pattern is an example of the [One thing per page]({{ site.baseurl }}/patter
 
 ### Other relevant examples
 
-* **beta.ssa.gov** The [Check eligibility for Social Security benefits](https://beta.ssa.gov/prepare/check-eligibility-for-benefits) flow is a preparation step ahead of applying for benefits and uses the "One thing per page" principle throughout.
+* **ssa.gov** The [Check eligibility for Social Security benefits](https://ssa.gov/prepare/check-eligibility-for-benefits) flow is a preparation step ahead of applying for benefits and uses the "One thing per page" principle throughout.
 * **Better form design**: There are many reasons why using this pattern with the underlying principle of "One thing per page" is preferred. Many of which are [outlined in this article from Smashing Magazine](https://www.smashingmagazine.com/2017/05/better-form-design-one-thing-per-page/).
 
 ## How to design and build
