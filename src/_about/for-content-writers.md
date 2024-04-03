@@ -16,7 +16,7 @@ anchors:
 
 We’ve also pulled out a few sections below that address common questions. Because this is a living document that will be updated and added to over time, we encourage you to sign up for email updates.
 
-We focus on usage, rather than web policies and governance. If you’re looking for VA web policies, VA Handbook 6102, and other web governance information for all VA digital experiences (including intranet, subdomains, and social media), please visit the [VA Web Governance site](<https://www.va.gov/web/index.cfm>).
+We focus on usage, rather than web policies and governance. If you’re looking for VA web policies, VA Handbook 6102, and other web governance information for all VA digital experiences (including intranet, subdomains, and social media), please visit the [VA Web Governance site](https://digital.va.gov/web-governance/).
 
 {% include _site-on-this-page.html %}
 
