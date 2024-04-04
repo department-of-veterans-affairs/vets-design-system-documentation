@@ -156,7 +156,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Exception: On the Camp Lejeune page, don't define this term.
 
 **contention**
-: Don't use this in Veteran-facing / other user-facing content. It's an internal term describing an issue associated with a claim. Typically this is a medical condition, but in some cases it could be for other things like claiming a dependent. In cases where it applies to a condition, use "condition" instead, in Veteran-facing / user-facing content
+: Use "condition" or an alternate word or phrase instead, depending on context. Internally, "contention" refers to an issue connected with a claim. Typically this is a medical condition, but in some cases it could be for other things like claiming a dependent.
 
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
