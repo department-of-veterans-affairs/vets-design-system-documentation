@@ -116,6 +116,12 @@ The "One thing" can be:
 
 That one decision or question may require more than one input from the user as they fill out a form. However, by following this pattern you can [reduce the cognitive load](https://www.nngroup.com/articles/minimize-cognitive-load/) required to complete the form by focusing the user on a specific question and its answer.
 
+
+{% include content/conditionally-revealed-fields.md %}
+
+
+
+
 ## Code usage
 
 Refer to the following component variations to implement this pattern:
