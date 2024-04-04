@@ -77,6 +77,8 @@ anchors:
 * Use the [Description text](#description-text) variation to provide additional details about one or more radio button options. This variation is superseded by the Tile variation.
 * Use the [Tile](#tile) variation to provide additional details about one or more radio button options within a large and well defined tap target. 
 
+{% include content/conditionally-revealed-fields.md %}
+
 ### Errors
 
 * Radio buttons typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the radio buttons.

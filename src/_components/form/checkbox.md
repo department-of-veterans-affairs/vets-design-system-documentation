@@ -131,6 +131,8 @@ anchors:
 - If there are too many options to display on a mobile screen.
 - If a user can only select one option from a list (use radio buttons instead).
 
+{% include content/conditionally-revealed-fields.md %}
+
 ### Errors
 
 * Checkbox groups typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the checkboxes.
