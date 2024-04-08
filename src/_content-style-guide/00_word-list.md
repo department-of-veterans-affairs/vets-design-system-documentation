@@ -155,6 +155,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. 
 : - Exception: On the Camp Lejeune page, don't define this term.
 
+**contention**
+: Use "condition" or an alternate word or phrase instead, depending on context. Internally, "contention" refers to an issue connected with a claim. Typically this is a medical condition, but in some cases it could be for other things like claiming a dependent.
+
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
 : - Like this: Served for at least 30 continuous days (all at once, without a break in service)."
