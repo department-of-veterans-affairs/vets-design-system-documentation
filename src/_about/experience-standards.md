@@ -24,6 +24,8 @@ There are 22 experience standards grouped into 7 user experience categories.
 
 ### Category: Comprehension
 
+User easily understands the product.
+
 A product might have launch-blocking findings in this category if it:
 
 * Makes it hard for a user to understand how to complete a task
