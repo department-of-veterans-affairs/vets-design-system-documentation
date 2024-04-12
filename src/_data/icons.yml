@@ -282,7 +282,7 @@ Profile:
     fa-class: "fas fa-user-check"
     unicode: "#xf4fc;"
   - name: Prescriptions
-    icon-name: pill
+    icon-name: medication
     fa-class: "fas fa-prescription-bottle"
     unicode: "#xf485;"
   - name: Travel reimbursement
