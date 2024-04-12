@@ -16,6 +16,8 @@ Appointments:
     icon-name: schedule
     fa-class: "fas fa-clock"
     unicode: "#xf0e0;"
+  - name: TTY
+    icon-name: tty
   - name: Video appointment
     icon-name: videocam
     fa-class: "fas fa-video"
@@ -31,7 +33,6 @@ Feedback:
     icon-name: check
     fa-class: "fas fa-check"
     unicode: "#xf00c;"
-    color: "#2e8540"
     additional-usage: Alert - Success
   - name: Warning
     icon-name: warning
@@ -42,7 +43,6 @@ Feedback:
     fa-class: "fas fa-exclamation-circle"
     icon-name: error
     unicode: "#xf06a;"
-    color: "#cd2026"
     additional-usage: Alert - Error
 
 Health:
@@ -291,6 +291,8 @@ Profile:
     unicode: "#xf0f2;"
 
 Social:
+  - name: Apple App Store
+    icon-name: app_store
   - name: Facebook
     icon-name: facebook
     fa-class: "fab fa-facebook"
@@ -299,6 +301,8 @@ Social:
     icon-name: flickr
     fa-class: "fab fa-flickr"
     unicode: "#xf16e;"
+  - name: Google Play Store
+    icon-name: google_play
   - name: Instagram
     icon-name: instagram
     fa-class: "fab fa-instagram"
@@ -310,3 +314,5 @@ Social:
   - name: LinkedIn
     icon-name: linkedin
     fa-class: "fab fa-linkedin"
+  - name: X
+    icon-name: x
