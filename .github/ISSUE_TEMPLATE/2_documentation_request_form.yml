@@ -35,9 +35,9 @@ body:
       - label: When to use this component/pattern
       - label: When to use something else
       - label: Usability guidance
-      - label: Accessibility
+      - label: Accessibility considerations
+      - label: Content considerations
       - label: Implementation
-      - label: Research insights
       - label: Package information
       - label: Addition to Forms Library documentation
       - label: Update to existing Forms Library documentation
