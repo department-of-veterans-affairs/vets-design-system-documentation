@@ -1,5 +1,6 @@
 .va-sidebarnav {
   $padding-override: 10px 16px 10px 12px;
+  color: inherit; // Formation override
 
   margin: 4rem 0 0 4rem;
   background-color: var(--color-white);
