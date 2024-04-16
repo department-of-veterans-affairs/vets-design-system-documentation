@@ -26,10 +26,6 @@ anchors:
 
 ## Examples
 
-### Single address
-
-{% include component-example.html alt="An example of a single address form." file="/images/patterns/ask-users-for/addresses/single-address.png" caption="Example of a form collecting a single address." width="50%" %}
-
 ### Mailing address
 
 {% include component-example.html alt="An example of a mailing address form." file="/images/patterns/ask-users-for/addresses/mailing-address.png" caption="Example of a form collecting a mailing address." width="50%" %}
@@ -38,17 +34,13 @@ anchors:
   View an example
 </a>
 
-### Military base address
+### Mailing address - Military base
 
 {% include component-example.html alt="An example of a mailing address form that includes the option for a military base." file="/images/patterns/ask-users-for/addresses/military-base-address.png" caption="Example of a form collecting a mailing address on a military base." width="50%" %}
 
 <a class="vads-c-action-link--blue" href="{{ page.example-link }}">
   View an example
 </a>
-
-### Home address
-
-{% include component-example.html alt="An example of a home address form." file="/images/patterns/ask-users-for/addresses/home-address.png" caption="Example of a form collecting a home address." width="50%" %}
 
 ### Address confirmation
 
@@ -130,7 +122,7 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 ## Code usage
 
-[fullNamePattern is a web-component pattern available in the Forms library]({{ page.code-link }}).
+[addressPattern is a web-component pattern available in the Forms library]({{ page.code-link }}).
 
 ## Content considerations
 
@@ -142,7 +134,7 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 {% for label in labels %}
 **{{ label.label-text }}**
+: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
 : Error: {{ label.error-scenario }}
 : Response: {{ label.error-message }}
-: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
 {% endfor %}
