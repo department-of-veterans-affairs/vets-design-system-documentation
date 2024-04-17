@@ -134,7 +134,9 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 {% for label in labels %}
 **{{ label.label-text }}**
-: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
-: Error: {{ label.error-scenario }}
-: Response: {{ label.error-message }}
+: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}  
+: Error type 1: {{ label.error-scenario-1 }}
+: - Error message 1: {{ label.error-message-1 }}
+: Error type 2: {{ label.error-scenario-2 }}
+: - Error message 2: {{ label.error-message-2 }}
 {% endfor %}
