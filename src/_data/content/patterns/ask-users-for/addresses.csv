@@ -6,3 +6,4 @@ section,subsection,pattern-or-component,label,label-text,hint-text,,error-scenar
 /patterns,/ask-users-for,/addresses,/state-province-region,"State, province, or region",,,No selection,"Enter a state, province, or region",,
 /patterns,/ask-users-for,/addresses,/postal-code,Postal code,,,No entry,Enter a postal code,,
 /patterns,/ask-users-for,/addresses,/postal-code,Postal code,Enter a valid 5- or 9-digit postal code (with or without dashes),,Incorrect entry,Enter a valid 5- or 9-digit postal code (with or without dashes),,
+/patterns,/ask-users-for,/addresses,/apo-fpo-dpo,"APO, FPO or DPO",,,No selection,"Select a post office type: APO, FPO, or DPO"
