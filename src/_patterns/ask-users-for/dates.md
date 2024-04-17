@@ -91,32 +91,6 @@ Use the [VADS templates (Patterns & Forms) for Dates in Figma]({{ page.figma-lin
 
 ## Content considerations
 
-### Error message templates for dates
+### Labels, error messages, and hint text
 
-**If nothing is entered...**
-: Say "Please enter a date"
-
-**If nothing is entered for a date of birth or death...**
-: Say "Please provide the date of birth"
-: Say "Please provide the date of death"
-
-**If the date entered can’t be correct...**
-: Say "Please provide a valid date"
-
-**If the date entered is in the future...**
-: Say "Please provide a valid current or past date"
-
-**If the date entered is in a month year format and can’t be correct...**
-: Say "Please enter a valid month and year"
-
-**If the year needed to be within a specific range...**
-: Say "Please enter a year between [minimum year] and [maximum year]"
-
-**For a date range, if the date must be after another date...**
-: Say "To date must be after From date"
-
-**If the date is in the past when it needs to be today or in the future...**
-: Say "Please provide a valid current or future date"
-
-**If the date is in the future when it needs to be past date or current date...**
-: Say "Please enter a valid current or past date"
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.dates %}

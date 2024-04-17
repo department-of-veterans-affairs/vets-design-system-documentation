@@ -130,11 +130,4 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 ### Labels, error messages, and hint text
 
-{% assign labels = site.data.content.patterns.ask-users-for.addresses %}
-
-{% for label in labels %}
-**{{ label.label-text }}**
-: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
-: Error: {{ label.error-scenario }}
-: Response: {{ label.error-message }}
-{% endfor %}
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.addresses %}

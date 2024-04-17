@@ -1,0 +1,12 @@
+.site-component-fields {
+  margin: units(3) 0;
+  
+  &__name {
+    font-weight: bold;
+  }
+
+  &__error {
+    margin-top: units(2);
+  }
+
+}
