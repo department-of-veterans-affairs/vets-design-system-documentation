@@ -5,30 +5,30 @@
     Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
   </dd>
   {% if label.label-variations %}
-  <dd>Label variations: {{ label.label-variations }}</dd>
+  <dd>Label variation: {{ label.label-variations }}</dd>
   {% endif %}
   {% if label.error-scenario-1 %}
   <dd class="site-component-fields__error">
-    Error: {{ label.error-scenario-1 }}
+    Error type: {{ label.error-scenario-1 }}
   </dd>
   <dd>
-    Response: {{ label.error-message-1 }}
+    Error message: {{ label.error-message-1 }}
   </dd>
   {% endif %}
   {% if label.error-scenario-2 %}
   <dd class="site-component-fields__error">
-    Error 2: {{ label.error-scenario-2 }}
+    Error type 2: {{ label.error-scenario-2 }}
   </dd>
   <dd>
-    Response 2: {{ label.error-message-2 }}
+    Error message 2: {{ label.error-message-2 }}
   </dd>
   {% endif %}
   {% if label.error-scenario-3 %}
   <dd class="site-component-fields__error">
-    Error 3: {{ label.error-scenario-3 }}
+    Error type 3: {{ label.error-scenario-3 }}
   </dd>
   <dd>
-    Response 3: {{ label.error-message-3 }}
+    Error message 3: {{ label.error-message-3 }}
   </dd>
   {% endif %}
 </dl>
