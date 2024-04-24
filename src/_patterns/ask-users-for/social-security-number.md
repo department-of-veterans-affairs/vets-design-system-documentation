@@ -64,16 +64,6 @@ Use the [VADS templates (Patterns & Forms) for Social Security or VA file number
 
 ## Content considerations
 
-### Error message templates for Social Security number and VA file number
+### Labels, error messages, and hint text
 
-**If nothing is entered for Social Security number**
-: Say "Please enter a Social Security number"
-
-**When a a Social Security number is entered incorrectly**
-: Say "Please enter a valid 9 digit Social Security number (dashes allowed)"
-
-**If nothing is entered for VA file number**
-: Say "Please enter a VA file number"
-
-**When a VA file number is entered incorrectly**
-: Say "Your VA file number must be 8 or 9 digits"
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.social-security-and-va-file-number %}

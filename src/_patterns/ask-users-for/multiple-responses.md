@@ -7,6 +7,7 @@ redirect_from:
 aka: List & Loop
 sub-section: ask-users-for
 intro-text: "Choose the most appropriate implementation of this pattern in forms when we need to collect multiple responses from a user." 
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A63598&mode=design&t=ocBby0ApctnJJSel-1
 github-title: pattern-multiple-responses
 research-title: Ask users for multiple responses
 status: use-deployed

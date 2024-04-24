@@ -63,7 +63,6 @@ Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-lin
 * **Do not use primary or secondary phone numbers as field labels.** Home and mobile phone numbers are more plain language-focused.
 * **Display phone numbers in the appropriate way.** If you need to display a phone number after it has been collected, then [follow content style guidelines on phone numbers]({{ site.baseurl }}/content-style-guide/dates-and-numbers#phone-numbers).
 
-### Error message templates for phone numbers
+### Labels, error messages, and hint text
 
-**If the telephone number is not in the correct format...**
-: Say "Please enter a 10-digit phone number (with or without dashes)"
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.phone-numbers %}
