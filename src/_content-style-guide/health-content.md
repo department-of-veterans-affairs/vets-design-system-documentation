@@ -9,7 +9,7 @@ sub-pages:
 
 ## Use plain language alternatives for medical terms—or explain terms in context
 
-Use a plain language approach instead of medical jargon. If Veterans need to know a specific medical term that a health care provider may use, include the term and explain it in context with plain language.
+Use a plain language approach instead of medical jargon. If they need to know a specific medical term that a health care provider may use, include the term and explain it in context with plain language.
 
 ### Use everyday words when you can
 
