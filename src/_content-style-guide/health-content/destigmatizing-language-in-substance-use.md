@@ -4,9 +4,9 @@ When writing about substance use and substance use disorder, the words we use ma
 
 At VA, we use language that reflects how we provide treatment and support to Veterans with substance use disorders:
 
-- We recognize people as human beings first and not as defined by their problems or conditions.
+- We recognize people as human beings first and not as someone defined by their problems or conditions.
 - We know that people have problems but are not themselves the problem.
-- We show support and understanding for people who have substance use problems, rather than negativity, punishing attitudes, or blame.
+- We show support and understanding for people who have substance use problems. We don't use negativity, punishing attitudes, or blame.
 - We recognize substance use disorder as a serious condition and not a choice or “habit.”
 
 ## Substance use: Language to use and avoid
@@ -40,8 +40,8 @@ At VA, we use language that reflects how we provide treatment and support to Vet
 
 ## Supply of substances: Language to use and avoid
 
-**Use:** Person who traffics or sells drugs, substances, or medications other than as prescribed**  
-Avoid:** Dealer
+**Use:** Person who traffics or sells drugs, substances, or medications other than as prescribed  
+**Avoid:** Dealer
 
 **Use:** Extensive involvement in the unlawful sale of drugs, substances, or medications other than as prescribed  
 **Avoid:** Hardcore
@@ -111,7 +111,7 @@ Avoid:** Habit
 
 ## Criminal justice system (or criminal legal system): Language to use and avoid
 
-**Note:** We acknowledge the movement toward replacing references to the “justice system” with references to the “legal system.” We’re including both terms at this time and may update this information in the future as consensus arises.
+**Note:** We acknowledge the movement toward replacing references to the “justice system” with references to the “legal system.” We’re including both terms at this time and may update this information in the future as we continue these conversations.
 
 **Use:** Person with justice system involvement; person with legal system involvement  
 **Avoid:** Convict, criminal, delinquent, offender
