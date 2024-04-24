@@ -35,8 +35,10 @@ Use a plain language approach instead of medical jargon. If Veterans need to kno
 
 This helps to make it clear that a person is not defined by their illnesses, disabilities, or status as a patient.
 
-Use person-first language when writing about defined diseases, mental health conditions, or substance use  
-<br/>Examples:
+Use person-first language when writing about defined diseases, mental health conditions, or substance use.  
+<br/>
+
+**Examples:**
 
 - Use “Veteran with cancer,” not “cancer patient”
 - Use “Veteran with diabetes,” not “diabetic Veteran”
@@ -48,7 +50,7 @@ Use person-first language when writing about defined diseases, mental health con
 
 ### **Respect the preferences of individual communities for identity-first language**
 
-Some communities, in particular, prefer language that honors the way they interact with the world as an important part of their identity. You can also shift between identity-first and person-first language to honor the fact that different communities and individuals have different preferences.  
+Some communities prefer language that honors the way they interact with the world as an important part of their identity. You can also shift between identity-first and person-first language to honor the fact that different communities and individuals have different preferences.  
 <br/>Examples:
 
 - Use both “blind Veterans” and “Veterans who are blind.” “Veterans with vision loss” or “Veterans with low vision” are also appropriate in some contexts.
@@ -66,19 +68,19 @@ This may come in the form of the following:
 - Quotes or stories from people living with the condition
 - Links to communities and advocacy groups for people living with the condition
 
-Examples:
+**Examples:**
 
 - Depression is a serious illness. But this common mental health condition is also highly treatable. Talk with your health care provider about treatment options.
 - If you’re struggling with substance use, you’re not alone. We can connect you with support groups designed to help you and others struggling with substance use.
 - Getting a diabetes diagnosis can be overwhelming. Your VA health care team is here to help. They’ll work with you to develop a treatment plan and be there to support you along the way.
 
-Get more word choice recommendations for destigmatizing substance use in health content \[link TK\]
+[Get more word choice recommendations for destigmatizing substance use in health content](https://design.va.gov/content-style-guide/health-content/destigmatizing-language-in-substance-use)
 
 ## Focus on small, achievable steps to support behavior change
 
 Many Veterans live with chronic (long-lasting) diseases—like diabetes and high blood pressure—that often require behavior changes as part of a treatment plan. Follow these tips for content that promotes health behavior change.
 
-### **Give specific actions—and emphasize the benefits**
+### Give specific actions—and emphasize the benefits
 
 When writing health-related instructions, provide small and specific action steps. Use everyday examples. And remind people how taking these actions can help them.
 
@@ -105,9 +107,7 @@ Here are some common items that are likely to weigh 10 pounds or more:
 
 Avoid lifting heavy objects for the first 2 weeks after surgery.
 
-### **Be practical and realistic**
-
-###
+### Be practical and realistic
 
 Consider how factors beyond Veterans’ control affect their ability to follow health recommendations. Avoid describing a behavior change as easy or simple when it may be hard to do in practice.
 
@@ -119,7 +119,7 @@ Eating healthy foods can help you feel better. Try to plan healthy meals that fi
 
 Eating healthy foods can help you feel better. Stock up on fresh fruits and veggies on the weekend, so it’s easy to eat right during the week.
 
-### **Pair action steps with VA resources and support**
+### Pair action steps with VA resources and support
 
 Veterans can find general health information from a wide range of sources. It’s helpful to remember that when it comes to basic health advice, we’re often telling Veterans things they already know.
 
@@ -147,11 +147,11 @@ For more tools and resources to help you adopt a healthy lifestyle, meet your he
 
 ## Make risk—and risk reduction—easier to understand
 
-### Many Veterans may have a higher risk of certain conditions based on their service history. When writing about risk, make the numbers as clear and simple as possible. And always follow statements about risk with action steps your audience can take to protect their health
+Many Veterans may have a higher risk of certain conditions based on their service history. When writing about risk, make the numbers as clear and simple as possible. And always follow statements about risk with action steps your audience can take to protect their health
 
-### **Do the math for your audience**
+### Do the math for your audience
 
-### Use comparative numbers (like “1 in” or “1 out of”) language instead of fractions or percentages. If you’re comparing numbers, always keep the denominator the same  
+Use comparative numbers (like “1 in” or “1 out of”) language instead of fractions or percentages. If you’re comparing numbers, always keep the denominator the same  
 
 **Like this**
 
@@ -161,7 +161,7 @@ About 8 out of 10 people reported side effects from the older treatment. But onl
 
 This treatment is associated with a 20% risk of side effects. About 16 out of 20 people reported side effects from the older treatment, and only 2 in 10 reported side effects from the new one.
 
-### **Put health risks in perspective**
+### Put health risks in perspective
 
 In most cases, it’s more helpful to focus on absolute risk than relative risk. It’s also helpful to compare risks using everyday examples.
 
@@ -173,11 +173,11 @@ Eating a lot of processed meat may increase your risk of getting colorectal canc
 
 Eating processed meat every day increases your risk of colon cancer by 18%.
 
-### **Follow risk statements with action steps**
+### Follow risk statements with action steps
 
 Learning that you’re at risk for a health condition can be scary. Knowing you can take action to improve your situation can help. So always include steps Veterans can take to lower their risk, or to protect their health if they do develop the condition.
 
-Examples:
+**Examples:**
 
 - Repeated exposure to loud noises—such as from firing weapons or using heavy machinery—can increase your risk for tinnitus. Tinnitus is a health condition where people experience humming or ringing in their ears or head. If you have tinnitus, ask your care team about our tinnitus management program. We can help you learn to use sound to cope with tinnitus.
 - Agent Orange can cause certain cancers and other health conditions. If you think you were exposed to Agent Orange while serving, you can get a free toxic exposure screening at your local VA health facility. After your screening, we’ll give you information about any VA benefits or resources you may need.
@@ -186,13 +186,13 @@ Examples:
 
 Use these resources as well to help guide your health education content:
 
-[Clear and simple guide (National Institutes of Health)](https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/clear-communication/)
+[Clear and simple guide on the National Institutes of Health website](https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/clear-communication/)
 
-[Everyday words for public health communication (Centers for Disease Control and Prevention website)](https://www.cdc.gov/ccindex/everydaywords/index.html)
+[Everyday words for public health communication on the Centers for Disease Control and Prevention website](https://www.cdc.gov/ccindex/everydaywords/index.html)
 
-[Health literacy online: A guide for simplifying the user experience (Office of Disease Prevention and Health Promotion website)](https://health.gov/healthliteracyonline/)  
+[Health literacy online: A guide for simplifying the user experience from the Office of Disease Prevention and Health Promotion website](https://health.gov/healthliteracyonline/)  
 
-[The SHARE Approach—Communicating Numbers to Your Patients: A Reference Guide for Health Care Providers (Agency for Healthcare Research and Quality website)](https://www.ahrq.gov/health-literacy/professional-training/shared-decision/tool/resource-5.html)
+[The SHARE Approach—Communicating Numbers to Your Patients: A Reference Guide for Health Care Providers from the Agency for Healthcare Research and Quality website](https://www.ahrq.gov/health-literacy/professional-training/shared-decision/tool/resource-5.html)
 
 </div>
 </div>
