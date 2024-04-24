@@ -36,7 +36,6 @@ Use a plain language approach instead of medical jargon. If they need to know a 
 This helps to make it clear that a person is not defined by their illnesses, disabilities, or status as a patient.
 
 Use person-first language when writing about defined diseases, mental health conditions, or substance use.  
-<br/>
 
 **Examples:**
 
@@ -46,7 +45,7 @@ Use person-first language when writing about defined diseases, mental health con
 - Use “Veteran with bipolar disorder,” not “bipolar Veteran”
 - Use “Veteran with a substance use disorder,” not “addict"
 
-### **Respect the preferences of individual communities for identity-first language**
+### Respect the preferences of individual communities for identity-first language
 
 Some communities, in particular, prefer language that honors the way they interact with the world as an important part of their identity. You can also shift between identity-first and person-first language to honor the fact that different communities and individuals have different preferences.  
 <br/>Examples:
@@ -70,8 +69,6 @@ This may come in the form of the following:
 - If you’re struggling with substance use, you’re not alone. We can connect you with support groups designed to help you and others struggling with substance use.
 - Getting a diabetes diagnosis can be overwhelming. Your VA health care team is here to help. They’ll work with you to develop a treatment plan and be there to support you along the way.
 
-[Get more word choice recommendations for destigmatizing substance use in health content](https://design.va.gov/content-style-guide/health-content/destigmatizing-language-in-substance-use)
-
 ## Focus on small, achievable steps to support behavior change
 
 Many Veterans live with chronic (long-lasting) diseases—like diabetes and high blood pressure—that often require behavior changes as part of a treatment plan. Follow these tips for content that promotes health behavior change.
@@ -80,33 +77,12 @@ Many Veterans live with chronic (long-lasting) diseases—like diabetes and high
 
 When writing health-related instructions, provide small and specific action steps. Use everyday examples. And remind people how taking these actions can help them.
 
-#### Example 1
-
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
 
 Using your asthma inhaler correctly will help you breathe easier. Follow the directions for your inhaler. If you’re not sure how to use it, ask your health care provider to explain.
-
-</div>
-</div>
-
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
-<div class="do-dont__content" markdown="1">
-
-Always use your asthma inhaler correctly.
-
-</div>
-</div>
-
-#### Example 2
-
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
 
 Don’t lift anything heavier than 10 pounds for the first 2 weeks after surgery. This will help your wounds heal more quickly and lower your risk of problems like bleeding.
 
@@ -123,6 +99,8 @@ Here are some common items that are likely to weigh 10 pounds or more:
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
+
+Always use your asthma inhaler correctly.
 
 Avoid lifting heavy objects for the first 2 weeks after surgery.
 
