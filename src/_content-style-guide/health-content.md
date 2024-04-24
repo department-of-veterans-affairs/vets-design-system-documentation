@@ -186,13 +186,13 @@ Learning that you’re at risk for a health condition can be scary. Knowing you 
 
 Use these resources as well to help guide your health education content:
 
-[Clear and simple guide on the National Institutes of Health website](https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/clear-communication/)
+[Clear and simple guide (National Institutes of Health website)](https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/clear-communication/)
 
-[Everyday words for public health communication on the Centers for Disease Control and Prevention website](https://www.cdc.gov/ccindex/everydaywords/index.html)
+[Everyday words for public health communication (Centers for Disease Control and Prevention website)](https://www.cdc.gov/ccindex/everydaywords/index.html)
 
-[Health literacy online: A guide for simplifying the user experience from the Office of Disease Prevention and Health Promotion website](https://health.gov/healthliteracyonline/)  
+[Health literacy online: A guide for simplifying the user experience (Office of Disease Prevention and Health Promotion website)](https://health.gov/healthliteracyonline/)  
 
-[The SHARE Approach—Communicating Numbers to Your Patients: A Reference Guide for Health Care Providers from the Agency for Healthcare Research and Quality website](https://www.ahrq.gov/health-literacy/professional-training/shared-decision/tool/resource-5.html)
+[The SHARE Approach—Communicating Numbers to Your Patients: A Reference Guide for Health Care Providers (Agency for Healthcare Research and Quality website)](https://www.ahrq.gov/health-literacy/professional-training/shared-decision/tool/resource-5.html)
 
 </div>
 </div>
