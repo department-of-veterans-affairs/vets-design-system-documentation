@@ -80,7 +80,7 @@ When writing health-related instructions, provide small and specific action step
 
 <div class="do-dont">
 <div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
+<h3 class="do-dont__heading">Like this</h4>
 <div class="do-dont__content" markdown="1">
 
 Using your asthma inhaler correctly will help you breathe easier. Follow the directions for your inhaler. If you’re not sure how to use it, ask your health care provider to explain.
@@ -98,7 +98,7 @@ Here are some common items that are likely to weigh 10 pounds or more:
 </div>
 
 <div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
+<h3 class="do-dont__heading">Not this</h4>
 <div class="do-dont__content" markdown="1">
 
 Always use your asthma inhaler correctly.
@@ -114,7 +114,7 @@ Consider how factors beyond Veterans’ control affect their ability to follow h
 
 <div class="do-dont">
 <div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
+<h3 class="do-dont__heading">Like this</h4>
 <div class="do-dont__content" markdown="1">
 
 Eating healthy foods can help you feel better. Try to plan healthy meals that fit your budget. If fresh produce is too expensive, try frozen fruits and veggies instead.
@@ -123,7 +123,7 @@ Eating healthy foods can help you feel better. Try to plan healthy meals that fi
 </div>
 
 <div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
+<h3 class="do-dont__heading">Not this</h4>
 <div class="do-dont__content" markdown="1">
 
 Eating healthy foods can help you feel better. Stock up on fresh fruits and veggies on the weekend, so it’s easy to eat right during the week.
@@ -168,7 +168,7 @@ Use comparative numbers (like “1 in” or “1 out of”) language instead of 
 
 <div class="do-dont">
 <div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
+<h3 class="do-dont__heading">Like this</h4>
 <div class="do-dont__content" markdown="1">
 
 About 8 out of 10 people reported side effects from the older treatment. But only 2 out of 10 people reported side effects from this newer treatment.
@@ -177,7 +177,7 @@ About 8 out of 10 people reported side effects from the older treatment. But onl
 </div>
 
 <div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
+<h3 class="do-dont__heading">Not this</h4>
 <div class="do-dont__content" markdown="1">
 
 This treatment is associated with a 20% risk of side effects. About 16 out of 20 people reported side effects from the older treatment, and only 2 in 10 reported side effects from the new one.
@@ -191,7 +191,7 @@ In most cases, it’s more helpful to focus on absolute risk than relative risk.
 
 <div class="do-dont">
 <div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
+<h3 class="do-dont__heading">Like this</h4>
 <div class="do-dont__content" markdown="1">
 
 Eating a lot of processed meat may increase your risk of getting colorectal cancer. But the increase is relatively small. Studies show that eating 50 grams of processed meat every day can increase your lifetime risk from about 5 in 100 to about 6 in 100.
@@ -200,7 +200,7 @@ Eating a lot of processed meat may increase your risk of getting colorectal canc
 </div>
 
 <div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
+<h3 class="do-dont__heading">Not this</h4>
 <div class="do-dont__content" markdown="1">
 
 Eating processed meat every day increases your risk of colon cancer by 18%.
