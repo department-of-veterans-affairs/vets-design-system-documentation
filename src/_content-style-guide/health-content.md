@@ -48,7 +48,8 @@ Use person-first language when writing about defined diseases, mental health con
 ### Respect the preferences of individual communities for identity-first language
 
 Some communities, in particular, prefer language that honors the way they interact with the world as an important part of their identity. You can also shift between identity-first and person-first language to honor the fact that different communities and individuals have different preferences.  
-<br/>Examples:
+
+**Examples:** 
 
 - Use both “blind Veterans” and “Veterans who are blind.” “Veterans with vision loss” or “Veterans with low vision” are also appropriate in some contexts.
 - Use both “Deaf Veterans” and “Veterans who are deaf.” “Veterans with hearing loss” is also appropriate in some contexts, especially in VA where many Veterans have some hearing loss due to their military service. Avoid “hearing-impaired.”
