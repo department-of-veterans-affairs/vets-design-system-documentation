@@ -46,8 +46,6 @@ Use person-first language when writing about defined diseases, mental health con
 - Use “Veteran with bipolar disorder,” not “bipolar Veteran”
 - Use “Veteran with a substance use disorder,” not “addict"
 
-[Get more word choice recommendations for destigmatizing substance use in health content](https://design.va.gov/content-style-guide/health-content/destigmatizing-language-in-substance-use)
-
 ### **Respect the preferences of individual communities for identity-first language**
 
 Some communities, in particular, prefer language that honors the way they interact with the world as an important part of their identity. You can also shift between identity-first and person-first language to honor the fact that different communities and individuals have different preferences.  
@@ -55,8 +53,6 @@ Some communities, in particular, prefer language that honors the way they intera
 
 - Use both “blind Veterans” and “Veterans who are blind.” “Veterans with vision loss” or “Veterans with low vision” are also appropriate in some contexts.
 - Use both “Deaf Veterans” and “Veterans who are deaf.” “Veterans with hearing loss” is also appropriate in some contexts, especially in VA where many Veterans have some hearing loss due to their military service. Avoid “hearing-impaired.”
-
-[Learn more about person-first language on the National Institutes of Health website](https://www.nih.gov/nih-style-guide/person-first-destigmatizing-language)
 
 ## Destigmatize sensitive conditions and build hope
 
@@ -84,15 +80,33 @@ Many Veterans live with chronic (long-lasting) diseases—like diabetes and high
 
 When writing health-related instructions, provide small and specific action steps. Use everyday examples. And remind people how taking these actions can help them.
 
-**Like this**
+#### Example 1
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
 
 Using your asthma inhaler correctly will help you breathe easier. Follow the directions for your inhaler. If you’re not sure how to use it, ask your health care provider to explain.
 
-**Not this**
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
 
 Always use your asthma inhaler correctly.
 
-**Like this**
+</div>
+</div>
+
+#### Example 2
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
 
 Don’t lift anything heavier than 10 pounds for the first 2 weeks after surgery. This will help your wounds heal more quickly and lower your risk of problems like bleeding.
 
@@ -103,21 +117,41 @@ Here are some common items that are likely to weigh 10 pounds or more:
 - A laundry basket filled with towels or jeans
 - A large bag of sugar or flour, or a sack of potatoes
 
-**Not this**
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
 
 Avoid lifting heavy objects for the first 2 weeks after surgery.
+
+</div>
+</div>
 
 ### Be practical and realistic
 
 Consider how factors beyond Veterans’ control affect their ability to follow health recommendations. Avoid describing a behavior change as easy or simple when it may be hard to do in practice.
 
-**Like this**
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
 
 Eating healthy foods can help you feel better. Try to plan healthy meals that fit your budget. If fresh produce is too expensive, try frozen fruits and veggies instead.
 
-**Not this**
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
 
 Eating healthy foods can help you feel better. Stock up on fresh fruits and veggies on the weekend, so it’s easy to eat right during the week.
+
+</div>
+</div>
+
 
 ### Pair action steps with VA resources and support
 
@@ -151,27 +185,49 @@ Many Veterans may have a higher risk of certain conditions based on their servic
 
 ### Do the math for your audience
 
-Use comparative numbers (like “1 in” or “1 out of”) language instead of fractions or percentages. If you’re comparing numbers, always keep the denominator the same  
+Use comparative numbers (like “1 in” or “1 out of”) language instead of fractions or percentages. If you’re comparing numbers, always keep the denominator the same.
 
-**Like this**
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
 
 About 8 out of 10 people reported side effects from the older treatment. But only 2 out of 10 people reported side effects from this newer treatment.
 
-**Not this**
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
 
 This treatment is associated with a 20% risk of side effects. About 16 out of 20 people reported side effects from the older treatment, and only 2 in 10 reported side effects from the new one.
+
+</div>
+</div>
 
 ### Put health risks in perspective
 
 In most cases, it’s more helpful to focus on absolute risk than relative risk. It’s also helpful to compare risks using everyday examples.
 
-**Like this**
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
 
 Eating a lot of processed meat may increase your risk of getting colorectal cancer. But the increase is relatively small. Studies show that eating 50 grams of processed meat every day can increase your lifetime risk from about 5 in 100 to about 6 in 100.
 
-**Not this**
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
 
 Eating processed meat every day increases your risk of colon cancer by 18%.
+
+</div>
+</div>
 
 ### Follow risk statements with action steps
 
