@@ -30,9 +30,7 @@ Feedback:
     unicode: "#xf05a;"
     additional-usage: Alert - Info
   - name: Confirmation or completion
-    icon-name: check
-    fa-class: "fas fa-check"
-    unicode: "#xf00c;"
+    icon-name: check_circle
     additional-usage: Alert - Success
   - name: Warning
     icon-name: warning
@@ -44,6 +42,15 @@ Feedback:
     icon-name: error
     unicode: "#xf06a;"
     additional-usage: Alert - Error
+  - name: Sign in or tool prompt
+    fa-class: "fas fa-lock"
+    icon-name: lock
+    additional-usage: Alert - Continue
+  - name: Confirmation or completion
+    icon-name: check
+    fa-class: "fas fa-check"
+    unicode: "#xf00c;"
+    additional-usage: Process List
 
 Health:
   - name: Lab and test results (Facilities)
