@@ -9,18 +9,18 @@ sub-pages:
 
 ## Use plain language alternatives for medical terms—or explain terms in context
 
-Use a plain language approach instead of medical jargon. If they need to know a specific medical term that a health care provider may use, include the term and explain it in context with plain language.
+Use a plain language approach instead of medical jargon. If the reader needs to know a specific medical term that a health care provider may use, include the term and explain it in context with plain language.
 
-### **Use everyday words when you can**
+### Use everyday words when you can
 
-Examples:
+**Examples:**
 
 - Use “high blood pressure,” not “hypertension”
 - Use “cancer-causing,” not “carcinogenic”
 
-### **Explain need-to-know jargon in context**
+### Explain need-to-know jargon in context
 
-Examples:
+**Examples:**
 
 - For some conditions, we automatically assume (or “presume”) that your service caused your condition. We call these “presumptive conditions.”
 - A traumatic brain injury (TBI) is a sudden jolt to your head that changes the way your brain works. The jolt could be caused by a blow to your head, a blast, or an object like a bullet or fragment entering your brain.
@@ -31,7 +31,7 @@ Examples:
 
 ## Put the person before their condition—but respect identity-first language when a community prefers it  
 
-### **Use words like “Veteran” or “person” instead of “patient”**
+### Use words like “Veteran” or “person” instead of “patient”
 
 This helps to make it clear that a person is not defined by their illnesses, disabilities, or status as a patient.
 
@@ -44,7 +44,7 @@ Use person-first language when writing about defined diseases, mental health con
 - Use “Veteran with bipolar disorder,” not “bipolar Veteran”
 - Use “Veteran with a substance use disorder,” not “addict"
 
-Get more word choice recommendations for destigmatizing substance use in health content \[link TK\]
+[Get more word choice recommendations for destigmatizing substance use in health content](https://design.va.gov/content-style-guide/health-content/destigmatizing-language-in-substance-use)
 
 ### **Respect the preferences of individual communities for identity-first language**
 
