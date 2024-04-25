@@ -107,6 +107,7 @@ Avoid lifting heavy objects for the first 2 weeks after surgery.
 
 </div>
 </div>
+</div>
 
 ### Be practical and realistic
 
@@ -128,6 +129,7 @@ Eating healthy foods can help you feel better. Try to plan healthy meals that fi
 
 Eating healthy foods can help you feel better. Stock up on fresh fruits and veggies on the weekend, so it’s easy to eat right during the week.
 
+</div>
 </div>
 </div>
 
@@ -184,6 +186,7 @@ This treatment is associated with a 20% risk of side effects. About 16 out of 20
 
 </div>
 </div>
+</div>
 
 ### Put health risks in perspective
 
@@ -191,7 +194,7 @@ In most cases, it’s more helpful to focus on absolute risk than relative risk.
 
 <div class="do-dont">
 <div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h4>
+<h4 class="do-dont__heading">Like this</h4>
 <div class="do-dont__content" markdown="1">
 
 Eating a lot of processed meat may increase your risk of getting colorectal cancer. But the increase is relatively small. Studies show that eating 50 grams of processed meat every day can increase your lifetime risk from about 5 in 100 to about 6 in 100.
@@ -205,6 +208,7 @@ Eating a lot of processed meat may increase your risk of getting colorectal canc
 
 Eating processed meat every day increases your risk of colon cancer by 18%.
 
+</div>
 </div>
 </div>
 
@@ -228,9 +232,5 @@ Use these resources as well to help guide your health education content:
 [Health literacy online: A guide for simplifying the user experience (Office of Disease Prevention and Health Promotion website)](https://health.gov/healthliteracyonline/)  
 
 [The SHARE Approach—Communicating Numbers to Your Patients: A Reference Guide for Health Care Providers (Agency for Healthcare Research and Quality website)](https://www.ahrq.gov/health-literacy/professional-training/shared-decision/tool/resource-5.html)
-
-</div>
-</div>
-</div>
 
 
