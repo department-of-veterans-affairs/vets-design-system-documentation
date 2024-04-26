@@ -126,19 +126,19 @@ A product might have launch-blocking findings in this category if it:
 
 * Keeps a user from completing a critical task quickly.
 
-### User can perform the primary task free of distractions
+#### User can perform the primary task free of distractions
 
 **There’s an issue when:** User can't easily perform the primary task free of distractions.
 
 GitHub label: [exp-std-task-focus](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-task-focus)
 
-### User encounters no repetition or redundancy
+#### User encounters no repetition or redundancy
 
 **There’s an issue when:** User encounters unnecessary repetition or redundancy.
 
 GitHub label: [exp-std-repetition](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-repetition)
 
-### User is notified if an action will take them out of the primary flow
+#### User is notified if an action will take them out of the primary flow
 
 **There’s an issue when:** User is taken out of the primary flow without notification.
 

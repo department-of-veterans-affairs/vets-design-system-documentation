@@ -1,4 +1,4 @@
-### Conditionally revealed fields
+#### Conditionally revealed fields
 
 In the radio button and checkbox components, we offer an option to conditionally reveal fields when the user selects an answer. These fields are often used to group related questions together by revealing a single follow-up question only when they’re relevant to the user.
 

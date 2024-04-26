@@ -128,8 +128,8 @@ anchors:
 
 #### When to consider something else
 
-- If there are too many options to display on a mobile screen.
-- If a user can only select one option from a list (use radio buttons instead).
+* If there are too many options to display on a mobile screen.
+* If a user can only select one option from a list (use radio buttons instead).
 
 {% include content/conditionally-revealed-fields.md %}
 
@@ -153,12 +153,13 @@ anchors:
 
 {% include snippet.html content='html/error-checkbox-group.html' %}
 
-
 {% include component-docs.html component_name=page.web-component %}
+
+{% include content/using-message-aria-describedby.md %}
 
 ### Native Events
 
-- The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
 ## Accessibility considerations
 
