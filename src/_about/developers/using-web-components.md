@@ -230,7 +230,7 @@ Font Awesome icons will be deprecated in late-May 2024 in favor of the `va-icon`
 - [va-icon on Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default)
 - Slack channel: `#platform-design-system`
 
-### ESLint Auto-Migration
+<!-- ### ESLint Auto-Migration
 
 Places that Font Awesome classes are used in vets-website will be flagged by an ESLint rule that also includes an auto-fix option:
 
@@ -246,7 +246,7 @@ Once selected, the fixer will convert the Font Awesome icon to the `va-icon` web
 
 After this auto-fix completes, you will need to update the <strong>icon</strong> value as well as visually confirm the <strong>size</strong> and if any custom CSS styles are still applicable.
 
-To migrate from Font Awesome to the web component without using the ESLint migration rule, reference the [icon name mapping](https://design.va.gov/foundation/icons) tables as well as the web component's [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default) page.
+To migrate from Font Awesome to the web component without using the ESLint migration rule, reference the [icon name mapping](https://design.va.gov/foundation/icons) tables as well as the web component's [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default) page. -->
 
 ### The va-icon Web Component API
 
