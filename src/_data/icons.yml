@@ -188,6 +188,12 @@ Interaction:
     icon-name: delete
     fa-class: "fas fa-trash-alt"
     unicode: "#xf1f8;"
+  - name: Cancel an action
+    icon-name: cancel
+  - name: Loading indicator
+    icon-name: autorenew
+    fa-class: "fas fa-spinner"
+    unicode: "#xf1f8;"
 
 Messaging:
   - name: Attachment

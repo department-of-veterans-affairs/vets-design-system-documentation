@@ -13,6 +13,7 @@ anchors:
   - anchor: Notifications
   - anchor: Profile
   - anchor: Social
+  - anchor: Requesting a new icon
   - anchor: Accessibility considerations
 ---
 
@@ -24,7 +25,10 @@ anchors:
   Use icons to communicate meaning, action, status, or feedback.
 </div>
 <p>
-  We currently leverage Font Awesome (v1) v5.15.4 but are migrating to <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> (v3) with some additions for VA-specific use cases. 
+  VADS icons are adapted from <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> which is a set
+  pulled from Material Icons with some additions. VADS includes some additional Material and custom icons for VA-specific
+  use
+  cases. Our v1/legacy icon set used Font Awesome v5.15.4.
 </p>
 
 {% include _site-on-this-page.html %}
@@ -65,6 +69,33 @@ anchors:
   </tbody>
 </table>
 {% endfor %}
+
+<h2 id="requesting-a-new-icon">Requesting a new icon</h2>
+<p>
+  If your team needs a new icon and wants to suggest adding it to the design system, follow these steps:
+</p>
+
+<ol>
+  <li>
+    <strong>Check Existing Icons</strong>:</strong>
+    Look through the current icon set to ensure a similar icon doesn't already exist. We aim to maintain consistency in
+    semantic use by avoiding duplicating similar icons.
+  </li>
+
+  <li>
+    <strong>Explore Material Icons</strong>:
+    Visit <a href="https://fonts.google.com/icons">Material icons</a> to find an icon that suits your needs. Preferably,
+    choose generic icons that could be reused in various applications. Note that we typically use the "fill" icon style.
+  </li>
+  <li>
+    <strong>Submit Your Icon</strong>:
+    Once you've found a suitable icon for VADS, submit it using the following link:
+    <p><a class="vads-c-action-link--blue" href="{{ site.request_addition_link }}">Request a new addition to the Design
+        System</a></p>
+  </li>
+</ol>
+
+<p>These steps should streamline the process for suggesting and adding new icons to the design system.</p>
 
 <h2 id="accessibility-considerations">Accessibility considerations</h2>
 <p>
