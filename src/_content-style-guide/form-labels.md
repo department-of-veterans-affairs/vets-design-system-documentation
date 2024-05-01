@@ -13,6 +13,6 @@ We're in the process of standardizing form field labels and their related hint t
 ### Ask uses for...
 
 - [Addresses](https://design.va.gov/patterns/ask-users-for/addresses#content-considerations)
-- [Dates](https://design.va.gov/patterns/ask-users-for/dates)
-- [Email address](https://design.va.gov/patterns/ask-users-for/email-address)
-- [Phone numbers](https://design.va.gov/patterns/ask-users-for/phone-numbers)
+- [Dates](https://design.va.gov/patterns/ask-users-for/dates#content-considerations)
+- [Email address](https://design.va.gov/patterns/ask-users-for/email-address#content-considerations)
+- [Phone numbers](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations)
