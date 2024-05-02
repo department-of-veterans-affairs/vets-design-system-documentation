@@ -50,23 +50,7 @@ anchors:
 
 ### Layout details
 
-#### Single address layout
-
-Here is the content structure for asking a user for a single address:
-
-* Checkbox for military address (if applicable)
-* Additional info component (if applicable)
-* Country select box
-* Street address text input
-* Street address line 2 text input
-* Street address line 3 text input (if applicable)
-* City text input
-* State/Province/Region select box
-* Postal code text input
-
-#### Multiple addresses layout
-
-Here is the content structure for asking a user for multiple addresses:
+Here is the content structure for asking a user for an address:
 
 * Header - Mailing or Home Address
 * Relevant information regarding this form and the user’s address (if applicable)
@@ -79,7 +63,7 @@ Here is the content structure for asking a user for multiple addresses:
 * City text input
 * State/Province/Region select box
 * Postal code text input
-* Radio button component for mailing address same as home address (this is on mailing address page only) 
+* Radio button component for mailing address same as home address (if applicable; this is on mailing address page only) 
 
 ### How this pattern works
 
