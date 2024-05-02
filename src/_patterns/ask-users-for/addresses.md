@@ -63,7 +63,7 @@ Here is the content structure for asking a user for an address:
 * City text input
 * State/Province/Region select box
 * Postal code text input
-* Radio button component for mailing address same as home address (this is on mailing address page only) 
+* Radio button component for mailing address same as home address (if applicable; this shows up on mailing address page only) 
 
 ### How this pattern works
 
