@@ -62,13 +62,6 @@ Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-lin
 
 ## Content considerations
 
-### Error message templates for names
+### Labels, error messages, and hint text
 
-**When a user doesn’t enter their first name...**
-: Say "Please enter a first name"
-
-**When a user doesn’t enter their last name...**
-: Say "Please enter a last name"
-
-**When a user enters a character that we cannot accept...**
-: Say "You entered a character we can’t accept. Try removing [invalid character]"
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.names %}

@@ -7,6 +7,7 @@ redirect_from:
 aka: File upload
 sub-section: ask-users-for
 intro-text: "Follow this pattern to help users upload a file."
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A63596&mode=design&t=ocBby0ApctnJJSel-1
 github-title: pattern-files
 research-title: Ask users for files
 status: use-deployed

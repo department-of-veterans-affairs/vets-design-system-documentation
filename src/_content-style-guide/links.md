@@ -127,21 +127,5 @@ You can apply online or mail your [Application for Burial Benefits (VA Form 21P-
 ## Linking to external sites
 
 * **Use text that tells the reader where the link takes them.** Example: [Check COVID-19 symptoms on the CDC website](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html)
-* **Open external links in a new tab or window.** Links to external sites should have an attribute in the source code to open in a new tab. (This is what that looks like: `target="_blank"` .) External links should also have `rel="noreferrer"` as an attribute.
 * **Consider using an aria-label to create a screen reader-only label.** Aria-labels can be helpful in specialized instances where there's a clear reason to use separate text for people who use screen readers. The aria-label may append or replace text within a link to provide context about where the link goes.
-* **Don’t use the “new window” icon for external links since it can cause confusion.** In content we avoid use of the "new window" icon. Within components, for brevity, use of the icon is acceptable.
-* **Open internal links in the same tab or window.** Links within the VA.gov domain should open in the current tab or window. Exception: Some VA sub-domains provide a distinct experience from VA.gov, so they open in a new tab. For these exceptions, add “(opens in new tab)” to the link text.
-
-### VA sub-domain exceptions that open in a new tab or window
-
-These sub-domains currently open in a new tab, and we should clarify that in the link text. Example: “Learn more on our ebenefits website (opens in new tab)” This list is periodically re-evaluated and updated. 
-
-  * [myhealth.va.gov](http://myhealth.va.gov/)
-  * [ebenefits.va.gov](http://ebenefits.va.gov/)
-  * [www.accesstocare.va.gov](http://www.accesstocare.va.gov/)
-  * [www.gibill.va.gov/wave](http://www.gibill.va.gov/wave)
-  * [www.blogs.va.gov](http://www.blogs.va.gov/)
-  * [www.data.va.gov](http://www.data.va.gov/)
-  * [mobile.va.gov](http://mobile.va.gov/)
-  * [www.accesstocare.va.gov](http://www.accesstocare.va.gov/)
-  * [www.oit.va.gov](http://www.oit.va.gov/)
+* **Explain when a link is opening in a new tab with text, not an icon.** Add "(opens in new tab)" to notify users when a link is opening in a new tab. In standard link text, we avoid using the new window icon, since it can cause confusion. Within components that have space constraints, the icon is acceptable.

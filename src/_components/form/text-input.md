@@ -113,6 +113,8 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 {% include component-docs.html component_name=page.web-component %}
 
+{% include content/using-message-aria-describedby.md %}
+
 ### Native Events
 
 * Native onInput and onBlur events are available on this component. They can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.

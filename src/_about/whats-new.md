@@ -25,6 +25,48 @@ title: What’s new?
   </div>
 </va-alert>
 
+## April 2024
+The team continued to synch to USWDS v3 and updated and fixed v3 components while the Figma Library continued to be built out. 
+
+### New features and compopnents
+* Icon Button Component (#2641)
+* Formation Deprecation - Add 768px Breakpoint to CSS Library (#2533)
+* Conversion to USWDS v3 Borderless table component (#1860)
+
+### Updated components and bug fixes
+* [Alert] - Remove background-only prop from Alert In Figma (#2394)
+* Review & submit - fix accordion error styling (#77064)
+* Injected Header - Add eslint warning & inline comments for React Modals that should not be touched (#2541)
+* Remove V1 Memorable Date from Component Library and Storybook (#2660)
+* Search Typeahead component does not close as expected when the component loads with a value prefilled (#2676)
+* Formation Deprecation - Typography base size migration QA vets-website, content-build and vagov-content (#2525)
+* Formation Deprecation - Typography base size migration QA component-library (#2566) 
+* Rename medium-mobile breakpoint to tablet (#2679)
+* va-summary-box should require that a header be present (#2557)
+* Update components section in Storybook(#2589)
+* Update remaining Formation color variables to their css-library counterparts (#79489)
+* Review & submit - fix accordion error styling(#77064)
+* Update remaining Formation color variables to their css-library counterparts (#79489)
+* Formation Deprecation - Migrate font settings from Formation to CSS Library (#2537) 
+* Remove Font Awesome icon overrides in USWDS components (#2577) 
+
+### Figma Library updates
+* Figma rebuild: Templates - How to apply (Forms (#2464)
+* Figma rebuild: Templates - Multiple Responses (Patterns) (#2457)
+* Add missing icons for texting/mobile device and external link (#2381)
+* Figma rebuild: Templates - Confirmation (Forms) (2466)
+* Icons - Update Figma Components to use USWDS icons (#2624) 
+
+### Documentation updates
+* Icon web component - Documentation (#2197)
+* Create documentation about web component analytics (#2625) 
+
+### Accessibility  updates
+* Discovery: Research and propose aria-describedby alternatives (#2619)
+* Icon web component - Accessibility review (#1365)
+* va-select needs describedby property (#2587)
+  
+
 ## March 2024
 The team continued to synch to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
 

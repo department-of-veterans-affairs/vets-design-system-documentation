@@ -26,10 +26,6 @@ anchors:
 
 ## Examples
 
-### Single address
-
-{% include component-example.html alt="An example of a single address form." file="/images/patterns/ask-users-for/addresses/single-address.png" caption="Example of a form collecting a single address." width="50%" %}
-
 ### Mailing address
 
 {% include component-example.html alt="An example of a mailing address form." file="/images/patterns/ask-users-for/addresses/mailing-address.png" caption="Example of a form collecting a mailing address." width="50%" %}
@@ -38,17 +34,13 @@ anchors:
   View an example
 </a>
 
-### Military base address
+### Mailing address - Military base
 
 {% include component-example.html alt="An example of a mailing address form that includes the option for a military base." file="/images/patterns/ask-users-for/addresses/military-base-address.png" caption="Example of a form collecting a mailing address on a military base." width="50%" %}
 
 <a class="vads-c-action-link--blue" href="{{ page.example-link }}">
   View an example
 </a>
-
-### Home address
-
-{% include component-example.html alt="An example of a home address form." file="/images/patterns/ask-users-for/addresses/home-address.png" caption="Example of a form collecting a home address." width="50%" %}
 
 ### Address confirmation
 
@@ -58,23 +50,7 @@ anchors:
 
 ### Layout details
 
-#### Single address layout
-
-Here is the content structure for asking a user for a single address:
-
-* Checkbox for military address (if applicable)
-* Additional info component (if applicable)
-* Country select box
-* Street address text input
-* Street address line 2 text input
-* Street address line 3 text input (if applicable)
-* City text input
-* State/Province/Region select box
-* Postal code text input
-
-#### Multiple addresses layout
-
-Here is the content structure for asking a user for multiple addresses:
+Here is the content structure for asking a user for an address:
 
 * Header - Mailing or Home Address
 * Relevant information regarding this form and the user’s address (if applicable)
@@ -87,7 +63,7 @@ Here is the content structure for asking a user for multiple addresses:
 * City text input
 * State/Province/Region select box
 * Postal code text input
-* Radio button component for mailing address same as home address (this is on mailing address page only) 
+* Radio button component for mailing address same as home address (if applicable; this is on mailing address page only) 
 
 ### How this pattern works
 
@@ -130,7 +106,7 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 ## Code usage
 
-[fullNamePattern is a web-component pattern available in the Forms library]({{ page.code-link }}).
+[addressPattern is a web-component pattern available in the Forms library]({{ page.code-link }}).
 
 ## Content considerations
 
@@ -138,11 +114,4 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 ### Labels, error messages, and hint text
 
-{% assign labels = site.data.content.patterns.ask-users-for.addresses %}
-
-{% for label in labels %}
-**{{ label.label-text }}**
-: Error: {{ label.error-scenario }}
-: Response: {{ label.error-message }}
-: Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
-{% endfor %}
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.addresses %}

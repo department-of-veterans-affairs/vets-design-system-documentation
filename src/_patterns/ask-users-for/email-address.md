@@ -60,16 +60,6 @@ Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-lin
 
 ## Content considerations
 
-### Error message templates for email addresses
+### Labels, error messages, and hint text
 
-**When a user doesn’t enter an email address...**
-: Say "Please enter an email address"
-
-**When a user enters a blank or invalid email address...**
-: Say "Enter a valid email address without spaces using this format: email@domain.com"
-
-**When a user enters an unacceptable character...**
-: Say "You entered a character we can’t accept. Try removing spaces and any special characters like commas or brackets."
-
-**When an email address is above the 50-character limit...**
-: Say "We don't support email addresses that exceed 50 characters"
+{% include _field-labels.html labels=site.data.content.patterns.ask-users-for.email %}
