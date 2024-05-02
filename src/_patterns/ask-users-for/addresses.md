@@ -111,8 +111,6 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 ## Content considerations
 
 * If you need to display an address after it has been collected, then [follow content style guidelines on addresses](/content-style-guide/dates-and-numbers#addresses).
-* This section includes standardized labels, hint text, and error messages for the form fields that commonly appear in this pattern. Confirm which fields your form requires and which it collects as optional.
-* This section includes field-specific hint text for certain fields. It doesn’t include general hint text related to character limits. If your form has character limits on any of these fields, add hint text that dynamically displays "[X] characters left"
 
 ### Labels, error messages, and hint text
 
