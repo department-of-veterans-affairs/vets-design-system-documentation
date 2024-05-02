@@ -52,21 +52,7 @@ anchors:
 
 #### Single address layout
 
-Here is the content structure for asking a user for a single address:
-
-* Checkbox for military address (if applicable)
-* Additional info component (if applicable)
-* Country select box
-* Street address text input
-* Street address line 2 text input
-* Street address line 3 text input (if applicable)
-* City text input
-* State/Province/Region select box
-* Postal code text input
-
-#### Multiple addresses layout
-
-Here is the content structure for asking a user for multiple addresses:
+Here is the content structure for asking a user for an address:
 
 * Header - Mailing or Home Address
 * Relevant information regarding this form and the user’s address (if applicable)
@@ -127,6 +113,8 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 ## Content considerations
 
 * If you need to display an address after it has been collected, then [follow content style guidelines on addresses](/content-style-guide/dates-and-numbers#addresses).
+* This section includes standardized labels, hint text, and error messages for the form fields that commonly appear in this pattern. Confirm which fields your form requires and which it collects as optional.
+* This section includes field-specific hint text for certain fields. It doesn’t include general hint text related to character limits. If your form has character limits on any of these fields, add hint text that dynamically displays "[X] characters left"
 
 ### Labels, error messages, and hint text
 
