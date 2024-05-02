@@ -25,10 +25,8 @@ anchors:
   Use icons to communicate meaning, action, status, or feedback.
 </div>
 <p>
-  VADS icons are adapted from <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> which is a set
-  pulled from Material Icons with some additions. VADS includes some additional Material and custom icons for VA-specific
-  use
-  cases. Our v1/legacy icon set used Font Awesome v5.15.4.
+  VADS icons are adapted from <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> and also
+  includes additional icons for VA-specific use cases. Our v1/legacy icon set used Font Awesome v5.15.4.
 </p>
 
 {% include _site-on-this-page.html %}
@@ -77,16 +75,24 @@ anchors:
 
 <ol>
   <li>
-    <strong>Check Existing Icons</strong>:
-    Look through the current icon set to ensure a similar icon doesn't already exist. We aim to maintain consistency in
+    <strong>Check Existing VADS Icons</strong>:
+    Look through the current icon set to ensure a similar icon does not already exist. We aim to maintain consistency in
     semantic use by avoiding duplicating similar icons.
-  </li>
+    </li>
 
-  <li>
-    <strong>Explore Material Icons</strong>:
-    Visit <a href="https://fonts.google.com/icons">Material icons</a> to find an icon that suits your needs. Preferably,
-    choose generic icons that could be reused in various applications. Note that we typically use the "fill" icon style.
-  </li>
+    <li>
+      <strong>Explore USWDS Icons</strong>:
+      Search
+      <a href="https://designsystem.digital.gov/components/icon/">USWDS Icon</a> to see if another existing icon suits your
+      needs. Preferably, choose generic icons that could be reused in various applications.
+      
+      <p>If VADS and USWDS do not contain a suitable icon, you
+        may search <a href="https://fonts.google.com/icons">Material
+          Icons</a> or browse the official <a
+          href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a>
+        Figma
+        plugin by Google. Note that we typically use the "filled" icon style.</p>
+      </li>
   <li>
     <strong>Submit Your Icon</strong>:
     Once you've found a suitable icon for VADS, submit it using the following link:
@@ -134,7 +140,7 @@ anchors:
 <h5>Non-interactive example</h5>
 <pre>
   <code class="language-html">
-&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt; 
+&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt;
 &lt;span class="sr-only"/&gt;Time to complete:&lt;/span&gt;
 &lt;span&gt;4 minutes&lt;/span&gt;
   </code>
