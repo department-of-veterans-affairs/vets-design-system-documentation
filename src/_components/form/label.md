@@ -7,5 +7,4 @@ intro-text: "A list of standardized form labels that appear on VA.gov forms. Thi
 status: use-deployed
 ---
 
-
-{% include content/form-labels-masterlist.md %}
+[Review form labels that we've updated here](https://design.va.gov/content-style-guide/form-labels)
