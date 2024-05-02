@@ -50,8 +50,6 @@ anchors:
 
 ### Layout details
 
-#### Single address layout
-
 Here is the content structure for asking a user for an address:
 
 * Header - Mailing or Home Address
