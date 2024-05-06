@@ -32,7 +32,7 @@ At VA, we use language that reflects how we provide treatment and support to Vet
 **Use:** Person with a severe substance use disorder  
 **Avoid**: Hardcore
 
-**Use**: Person who is currently injecting drugs  
+**Use**: Person who is currently injecting drugs or substances  
 **Avoid:** Injection, injecting, or IV drug user
 
 **Use:** Person with stimulant use disorder; person who engages in unhealthy use of stimulants  
