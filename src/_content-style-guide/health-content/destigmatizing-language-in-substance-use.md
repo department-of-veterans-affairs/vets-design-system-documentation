@@ -117,7 +117,7 @@ Avoid:** Habit
 
 ## Criminal justice system (or criminal legal system): Language to use and avoid
 
-**Note:** We acknowledge the movement toward replacing references to the “justice system” with references to the “legal system.” We’re including both terms at this time and may update this information in the future as we continue these conversations.
+**Note:** We acknowledge the movement toward replacing references to the “justice system” with references to the “legal system.” We’re including both terms at this time and may update this information in the future as consensus arises.
 
 **Use:** Person with justice system involvement; person with legal system involvement  
 **Avoid:** Convict, criminal, delinquent, offender
