@@ -24,7 +24,7 @@ At VA, we use language that reflects how we provide treatment and support to Vet
 **Avoid:** Addict; addicted; alcohol, drug, or substance user; alcohol, drug, or substance abuser
 
 **Use:** Person with alcohol use disorder; person who engages in unhealthy drinking  
-**Avoid:** Alcoholic, drunk
+**Avoid:** Alcoholic; drunk
 
 **Use:** Not currently using drugs, substances, or medications other than as prescribed  
 **Avoid:** Clean
@@ -80,11 +80,11 @@ At VA, we use language that reflects how we provide treatment and support to Vet
 **Use:** Provide a sample for drug or toxicology testing  
 **Avoid:** Drop
 
-**Use:** Tested positive for substances**  
-Avoid:** Dirty, fail, pop
+**Use:** Tested positive for substances  
+**Avoid:** Dirty; fail; pop
 
 **Use:** Tested negative for substances  
-**Avoid:** Clean, pass
+**Avoid:** Clean; pass
 
 ## Treatment: Language to use and avoid
 
@@ -97,11 +97,11 @@ Avoid:** Dirty, fail, pop
 **Use:** Unsuccessful course of treatment; didn’t benefit from treatment  
 **Avoid:** Fail
 
-**Use:** Substance use disorder; substance addiction**  
-Avoid:** Habit
+**Use:** Substance use disorder; substance addiction  
+**Avoid:** Habit
 
 **Use:** A recurrence of alcohol, drug, or substance use  
-**Avoid:** Lapse, slip
+**Avoid:** Lapse; slip
 
 **Use:** Medication for opioid use disorder MOUD); medication for alcohol use disorder (MAUD); medication or pharmacotherapy for substance use disorder  
 **Avoid:** Medication-assisted treatment (MAT); maintenance; maintenance treatment; methadone maintenance; replacement treatment; opioid substitution
@@ -120,10 +120,10 @@ Avoid:** Habit
 **Note:** We acknowledge the movement toward replacing references to the “justice system” with references to the “legal system.” We’re including both terms at this time and may update this information in the future as consensus arises.
 
 **Use:** Person with justice system involvement; person with legal system involvement  
-**Avoid:** Convict, criminal, delinquent, offender
+**Avoid:** Convict; criminal; delinquent; offender
 
 **Use:** Person who was formerly involved in the justice (or legal) system  
-**Avoid:** Ex-con, ex-convict, ex-offender
+**Avoid:** Ex-con; ex-convict; ex-offender
 
 **Use:** Person who pled guilty to, or was judged guilty of, a felony offense; person officially declared guilty of a felony offense in a court of law  
 **Avoid**: Felon
@@ -140,7 +140,7 @@ Avoid:** Habit
 ## Other related topics and situations: Language to use and avoid
 
 **Use:** Person experiencing severe poverty, homelessness, housing insecurity or instability; person who is unhoused  
-**Avoid:** Derelict, transient
+**Avoid:** Derelict; transient
 
 **Use:** Under-resourced neighborhood; neighborhood with a high rate of poverty; marginalized community  
 **Avoid:** High-poverty (in reference to a place or community)
