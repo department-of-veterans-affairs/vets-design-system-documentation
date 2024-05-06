@@ -55,7 +55,7 @@ At VA, we use language that reflects how we provide treatment and support to Vet
 ## Drugs and substances: Language to use and avoid
 
 **Use:** Potential for a substance to lead to addiction or unhealthy use  
-**Avoid:** Abuse potential, potential for abuse
+**Avoid:** Abuse potential; potential for abuse
 
 **Use:** Substances that can lead to addiction or unhealthy use  
 **Avoid:** Drugs of abuse
