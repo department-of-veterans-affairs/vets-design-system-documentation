@@ -3,7 +3,7 @@ name: "DST - Component Figma"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design"
 labels: platform-design-system-team
-assignees: babsdenney, danbrady
+assignees: babsdenney, danbrady, lwwright7
 
 ---
 
@@ -29,7 +29,7 @@ Confluence page with instructions: https://vfs.atlassian.net/l/cp/JR0BtAa1
 
 - [ ] Create designs for component in Figma
 - [ ] Review designs with PO and/or other DST designers
-- [ ] Review designs with an accessibility specialist
+- [ ] Review designs with developers and accessibility specialist
 - [ ] Review designs with DST members
 - [ ] Address any comments from reviews, if necessary
 - [ ] Comment on this ticket with any accessibility considerations engineers may need to know
