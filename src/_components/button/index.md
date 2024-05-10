@@ -124,6 +124,13 @@ That guidance agrees with [Apple's Human Interface Guidelines](https://developer
 
 * **Use at least [1 spacing unit]({{ site.baseurl }}/foundation/spacing-units) separating tappable elements.**
 
+* **Prioritize a clear and concise button label and only use `message-aria-describedby` when it enhances understanding and accessibility.** The `message-aria-describedby` property emulates HTML's `aria-describedby` due to web component limitations. It allows adding an additional description that is visually hidden, but screen reader accessible.
+  * When to use:
+    * **Providing additional context or instructions.** If the button label is concise but requires further explanation.
+  * When _not_ to use:
+    * **Duplicating information.** If the button's label is clear and concise, adding additional information may be redundant and cumbersome for users of assistive technology.
+    * **Providing essential information.** Crucial information for the button's purpose should be the button label itself, _not_ solely relying on an additional description.
+
 {% include content/links-vs-buttons.md %}
 
 {% include a11y/do-not-disable-buttons.md %}
