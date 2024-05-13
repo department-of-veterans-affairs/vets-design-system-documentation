@@ -1,6 +1,6 @@
 ---
 layout: content-style-guide
-permalink: /content-style-guide/health-content
+permalink: /content-style-guide/health-content/
 title: Health content
 intro-text: "Health content should be accurate, accessible, and actionable to help Veterans make decisions about their health and health care benefits. In VA health content, we avoid overly clinical language and write in a person-to-person, empathetic, and conversational voice."
 sub-pages:

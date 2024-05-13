@@ -13,7 +13,7 @@ At VA, we use language that reflects how we provide treatment and support to Vet
 - We recognize people as human beings first and not as defined by their problems or conditions.
 - We know that people have problems but are not themselves the problem.
 - We show support and understanding for people who have substance use problems, rather than negativity, punishing attitudes, or blame.
-- We recognize substance use disorder as a serious condition and not a choice or “habit.” 
+- We recognize substance use disorder as a serious condition and not a choice or “habit.”
 
 ## Substance use: Language to use and avoid
 
