@@ -2,24 +2,18 @@
 layout: component
 title: Pagination
 status: use-deployed
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/DFDEF51F-1013-4214-A1DD-C4718E0E6BDD/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1047%3A3408&mode=design&t=VuR2cBxP21GQYVZc-1
 intro-text: "Pagination is navigation for paginated content."
 web-component: va-pagination
 uswds-v3: default
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination default" %}
 
 ## Examples - v3
 
@@ -51,9 +45,19 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-pagination--with-seven-or-less-middle" link_text="va-pagination v3 with seven or less middle" %}
 
+### With Seven or Less Last
+
+{% include storybook-preview.html story="uswds-va-pagination--with-seven-or-less-last" link_text="va-pagination with seven or less last" %}
+
 ### Internationalization
 
 {% include storybook-preview.html height="300px" story="uswds-va-pagination--internationalization" link_text="va-pagination v3 internationalization" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-pagination--default" link_text="va-pagination default" %}
 
 ## Usage
 
@@ -64,6 +68,5 @@ anchors:
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/pagination/#accessibility-pagination">Refer to the U.S. Web Design System for accessibility guidance</a>
-
 
 {% include _component-checklist.html component_name=page.web-component %}

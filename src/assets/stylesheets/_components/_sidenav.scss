@@ -1,13 +1,12 @@
 .va-sidebarnav {
   $padding-override: 10px 16px 10px 12px;
-
   margin: 4rem 0 0 4rem;
-  background-color: var(--color-white);
+  background-color: var(--vads-color-white);
 
   &__sub-section {
     margin: 0;
     padding: 2rem 0rem 1rem 1.5rem;
-    color: var(--color-base);
+    color: var(--vads-color-base);
   }
 
   .usa-accordion {
@@ -21,7 +20,7 @@
     }
   }
   .usa-accordion-content[aria-hidden="false"] {
-    background-color: var(--color-gray-lightest);
+    background-color: var(--vads-color-gray-lightest);
   }
 
   .usa-sidenav-list {

@@ -19,6 +19,7 @@ vads-button-color-text-primary-on-light,Component,vads-button-color-text-primary
 vads-button-color-text-secondary-active-on-light,Component,vads-button-color-text-secondary-active-on-light,,#162e51,vads-color-primary-darkest,Background color for primary buttons - active state
 vads-button-color-text-secondary-hover-on-light,Component,vads-button-color-text-secondary-hover-on-light,,#1a4480,vads-color-primary-darker,Background color for primary buttons - hover state
 vads-button-color-text-secondary-on-light,Component,vads-button-color-text-secondary-on-light,,#005ea2,vads-color-white,Text color for primary buttons
+vads-card-color-border-on-light,Component,vads-card-border-on-light,,#757575,vads-color-gray-medium,Border color for default cards.
 vads-featured-content-color-background,Component,vads-featured-content-color-background,,#e7f6f8,vads-color-info-lighter,Featured content component background color.
 vads-input-background-color-on-light,Component,vads-input-background-color-on-light,,#ffffff,vads-color-white,Form input background color
 vads-input-border-color-on-light,Component,vads-input-border-color-on-light,,#565c65,vads-color-base-dark,Form input border color

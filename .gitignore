@@ -9,7 +9,6 @@ tmp_remote_assets
 src/.jekyll-cache
 src/assets/stylesheets/component-library.css
 src/formation.min.css
-src/img
 src/vendor
 src/_data/component-docs.json
 src/_includes/react

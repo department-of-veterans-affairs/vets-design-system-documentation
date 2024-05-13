@@ -5,9 +5,9 @@ inner-title: Working with the system
 permalink: /about/designers/
 intro-text: Documentation and resources for designers.
 sub-pages:
-  - sub-page: Design Libraries
+  - sub-page: Design libraries
   - sub-page: Creating components
-  - sub-page: Sketch for teams at VA
+  - sub-page: Figma at VA
 ---
 
 ## Working with the design system
@@ -24,7 +24,6 @@ The VA.gov Design System is VA.gov’s front-end framework. Before getting start
 
 The website displays HTML and CSS examples of the various components and patterns in use on VA.gov. You can use your browser’s web inspector to view the specs for each component. 
 
-The Design System Team also provides a complete Sketch library of core components. In addition, there are community shared libraries organized by functionality.
+The Design System Team also provides a complete [Figma library of core components]({{ site.figma_component_library }}). In addition, there are community [shared libraries]({{ site.baseurl }}/about/designers/design-libraries) organized by functionality.
 
 {% include _site-in-this-section.html %}
-

@@ -18,7 +18,7 @@ In general, some rules for implementing design work include:
 - Use [spacing units]({{ site.baseurl }}/foundation/spacing-units) instead of hard-coding pixel values for margins and padding.
 - Use Sass [variables for colors]({{ site.baseurl }}/foundation/color-palette) instead of hex codes.
 - Discuss reusability of new design components and where is the most appropriate home for CSS and JS.
-- Use the Formation [naming convention](/about/naming).
+- Use the CSS Library [naming convention](/about/naming).
 - Do not use ID selectors
 
 ## Use design system utilities

@@ -4,7 +4,7 @@ permalink: /components/link/
 title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
 research-title: Links
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/D58429E9-064C-48EE-8681-0389401F887C
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
 status: use-deployed
 sub-pages:
   - sub-page: Action
@@ -93,7 +93,7 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ### Behavior
 
-* **Open VA.gov links in the same window except in certain instances.** VA.gov links should open in a new tab only if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links/#linking-to-external-sites) in the content style guide for additional information.
+* **Open VA.gov links in the same window except in certain instances.** VA.gov links should open in a new tab only if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide for additional information.
 - **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
 
 ### Choosing between variations
@@ -109,7 +109,7 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 - **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
 - **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
 - **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
-- **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links/#linking-to-external-sites).
+- **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
 
 {% include content/links-vs-buttons.md %}
 

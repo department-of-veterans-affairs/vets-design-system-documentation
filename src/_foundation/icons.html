@@ -13,6 +13,7 @@ anchors:
   - anchor: Notifications
   - anchor: Profile
   - anchor: Social
+  - anchor: Requesting a new icon
   - anchor: Accessibility considerations
 ---
 
@@ -21,8 +22,12 @@ anchors:
 {% assign icons = site.data.icons %}
 
 <div class="va-introtext">
-  We leverage Font Awesome (v5.15.4) icons to communicate meaning, action, status, or feedback.
+  Use icons to communicate meaning, action, status, or feedback.
 </div>
+<p>
+  VADS icons are adapted from <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> and also
+  includes additional icons for VA-specific use cases. Our v1/legacy icon set used Font Awesome v5.15.4.
+</p>
 
 {% include _site-on-this-page.html %}
 
@@ -31,9 +36,10 @@ anchors:
 <table class="usa-table-borderless">
   <thead>
     <tr>
-      <th scope="col">Icon</th>
-      <th scope="col">HTML</th>
-      <th scope="col">Unicode</th>
+      <th scope="col">Icon v3</th>
+      <th scope="col">Icon v3 name</th>
+      <th scope="col">Icon v1</th>
+      <th scope="col">FontAwesome class</th>
       <th scope="col">Usage</th>
     </tr>
   </thead>
@@ -41,10 +47,13 @@ anchors:
   {% for icon in section[1] %}
     <tr>
       <th scope="row">
-        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+        <va-icon icon="{{icon.icon-name}}" size=3 srtext="{{icon.name}}" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%} />
       </th>
-      <td><code>&lt;i class="{{ icon.fa-class }}">&lt;/i></code></td>
-      <td><code class='code-fa'>&amp;{{ icon.unicode }}</code></td>
+      <td>{{ icon.icon-name }}</td>
+      <td>
+        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+      </td>
+      <td>{{ icon.fa-class }}</td>
       <td>
         {% if icon.additional-usage %}
           {% assign usage = icon.name | append: ', ' | append: icon.additional-usage %}
@@ -58,6 +67,41 @@ anchors:
   </tbody>
 </table>
 {% endfor %}
+
+<h2 id="requesting-a-new-icon">Requesting a new icon</h2>
+<p>
+  If your team needs a new icon and wants to suggest adding it to the design system, follow these steps:
+</p>
+
+<ol>
+  <li>
+    <strong>Check Existing VADS Icons</strong>:
+    Look through the current icon set to ensure a similar icon does not already exist. We aim to maintain consistency in
+    semantic use by avoiding duplicating similar icons.
+    </li>
+
+    <li>
+      <strong>Explore USWDS Icons</strong>:
+      Search
+      <a href="https://designsystem.digital.gov/components/icon/">USWDS Icon</a> to see if another existing icon suits your
+      needs. Preferably, choose generic icons that could be reused in various applications.
+      
+      <p>If VADS and USWDS do not contain a suitable icon, you
+        may search <a href="https://fonts.google.com/icons">Material
+          Icons</a> or browse the official <a
+          href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a>
+        Figma
+        plugin by Google. Note that we typically use the "filled" icon style.</p>
+      </li>
+  <li>
+    <strong>Submit Your Icon</strong>:
+    Once you've found a suitable icon for VADS, submit it using the following link:
+    <p><a class="vads-c-action-link--blue" href="{{ site.request_addition_link }}">Request a new addition to the Design
+        System</a></p>
+  </li>
+</ol>
+
+<p>These steps should streamline the process for suggesting and adding new icons to the design system.</p>
 
 <h2 id="accessibility-considerations">Accessibility considerations</h2>
 <p>
@@ -96,7 +140,7 @@ anchors:
 <h5>Non-interactive example</h5>
 <pre>
   <code class="language-html">
-&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt; 
+&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt;
 &lt;span class="sr-only"/&gt;Time to complete:&lt;/span&gt;
 &lt;span&gt;4 minutes&lt;/span&gt;
   </code>

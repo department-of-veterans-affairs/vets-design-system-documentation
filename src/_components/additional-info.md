@@ -2,7 +2,7 @@
 layout: component
 title: Additional info
 intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Additional info component to situate plain language help at the point of the process where it is most relevant."
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/C28D2A57-71E4-4EDF-8FBA-87C6D858BF60/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A22760&mode=design&t=TiJHClaf3VQ6wU6B-1
 status: use-deployed
 uswds-v3: default
 web-component: va-additional-info
@@ -97,7 +97,7 @@ The following are places where Additional info can be used:
 
 ## Accessibility considerations
 
-* The Additional Info component should be validated to meet the WCAG 2.1 AA accessibility guidelines.
+* The Additional Info component should be validated to meet the WCAG 2.2 AA accessibility guidelines.
 * The Additional Info component uses aria-controls and aria-expanded attributes to convey the expand and collapse functionality to assistive technologies.
 * Pressing the close button (a element with role of button) must close the Additional Info.
 * The link element that acts as the trigger for the drawer to open and close has a role of heading so it can be found in the page. Setting an aria-level is recommended.

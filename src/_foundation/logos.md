@@ -33,6 +33,8 @@ This is based on page 9 of the VA Graphic Standards, seen below:
 
 [<img src="/images/VA_508_GraphicStandardsGuide_013113-9.png">](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2)
 
+Logos can be accessed in our [{{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries).
+
 ### Veterans recognize VA
 
 They don’t care about our many sub-brands. It confuses them and creates feelings of mistrust about which is the source of truth for their benefits and services. Based on this Veteran feedback, VA has taken a “branded house” strategy.

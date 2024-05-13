@@ -5,14 +5,14 @@ redirect_from:
   - /components/privacy-agreement
 has-parent: /components/form/
 title: Privacy Agreement
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/EB404E82-9D9D-4D3F-BEDC-00D323499F1D/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85151&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Used on the review step of a form flow to provide a link to the privacy policy content and provide a confirmation checkbox."
 status: use-deployed
 uswds-v3: default
 web-component: va-privacy-agreement
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -20,20 +20,19 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
+## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--default" link_text="va-privacy-agreement" %}
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--default" link_text="va-privacy-agreement default" %}
 
-### With Error
+### Error
 
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--with-error" link_text="va-privacy-agreement" %}
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--with-error" link_text="va-privacy-agreement error" %}
 
-## Examples - v3
+## Examples - v1
 
-{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--default" link_text="va-privacy-agreement v3 and additional variations" %}
-
+{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--default" link_text="va-privacy-agreement v1 and additional variations" %}
 
 ## Usage
 

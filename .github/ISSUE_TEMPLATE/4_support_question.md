@@ -16,7 +16,7 @@ labels: 'platform-design-system-team'
         Describe what you are stuck on, what you have tried and how you would like us to help.
 -->
 
-## What you have tried:
+## What you have tried
 
 <!--
        Describe in detail what you have tried and what you have found from any research you

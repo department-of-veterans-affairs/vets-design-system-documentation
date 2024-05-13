@@ -6,8 +6,8 @@ title: Statement of truth
 contributor: Jeana Clark, Nick Sprinkle
 intro-text: "The Statement of truth allows users to certify that the information they have provided in form is correct and true to the best of their knowledge and belief."
 research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
-sketch-link: 
-status: use-with-caution-available
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85739&mode=design&t=TiJHClaf3VQ6wU6B-1 
+status: use-with-caution-candidate
 uswds-v3: default
 web-component: va-statement-of-truth
 anchors:
@@ -29,6 +29,10 @@ anchors:
 ### With Input Error
 
 {% include storybook-preview.html height="600px" story="uswds-va-statement-of-truth--with-input-error" link_text=page.web-component %}
+
+### With Custom heading
+
+{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-custom-heading" link_text=page.web-component %}
 
 ### With Prefilling
 

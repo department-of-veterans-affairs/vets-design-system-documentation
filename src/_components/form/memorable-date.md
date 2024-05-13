@@ -6,12 +6,12 @@ title: Memorable date
 research-title: Memorable Date
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-with-caution-available
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
 uswds-v3: default
 web-component: va-memorable-date
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -19,33 +19,57 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--default" link_text="va-memorable-date" %}
-
-### Extra hint text
-
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--extra-hint-text" link_text="va-memorable-date with extra hint text" %}
-
-### Custom validation
-
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--custom-validation" link_text="va-memorable-date with custom validation" %}
-
-### Error
-
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--error" link_text="va-memorable-date error" %}
-
-### Internationalization
-
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
-
 ## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date v3 along with additional variations" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date" %}
+
+### Month select
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--with-month-select" link_text="va-memorable-date with month select" %}
+
+### Extra hint text
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--extra-hint-text" link_text="va-memorable-date with extra hint text" %}
+
+### Custom validation
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--custom-validation" link_text="va-memorable-date with custom validation" %}
+
+### Forms pattern single default
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-single-without-month-dropdown" link_text="va-memorable-date forms pattern single default " %}
+
+### Forms pattern multiple
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-multiple" link_text="va-memorable-date forms pattern multiple" %}
+
+### Error
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--error" link_text="va-memorable-date error" %}
+
+### Error with month select
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--error-with-month-select" link_text="va-memorable-date error with month select" %}
+
+### Forms pattern single error
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-single-error" link_text="va-memorable-date forms pattern single error" %}
+
+### Forms pattern multiple error
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-multiple-error" link_text="va-memorable-date forms pattern multiple error" %}
+
+### Internationalization
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html height="200px" story="components-va-memorable-date--default" link_text="va-memorable-date v1 along with additional variations" %}
 
 ## Usage
 

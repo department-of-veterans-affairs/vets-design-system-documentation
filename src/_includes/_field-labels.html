@@ -1,0 +1,35 @@
+{% for label in include.labels %}
+<dl class="site-component-fields">
+  <dt class="site-component-fields__name">{{ label.label-text }}</dt>
+  <dd>
+    Hint text: {% if label.hint-text %}{{ label.hint-text }}{% else %} None{% endif %}
+  </dd>
+  {% if label.label-variations %}
+  <dd>Label variation: {{ label.label-variations }}</dd>
+  {% endif %}
+  {% if label.error-scenario-1 %}
+  <dd class="site-component-fields__error">
+    Error type: {{ label.error-scenario-1 }}
+  </dd>
+  <dd>
+    Error message: {{ label.error-message-1 }}
+  </dd>
+  {% endif %}
+  {% if label.error-scenario-2 %}
+  <dd class="site-component-fields__error">
+    Error type 2: {{ label.error-scenario-2 }}
+  </dd>
+  <dd>
+    Error message 2: {{ label.error-message-2 }}
+  </dd>
+  {% endif %}
+  {% if label.error-scenario-3 %}
+  <dd class="site-component-fields__error">
+    Error type 3: {{ label.error-scenario-3 }}
+  </dd>
+  <dd>
+    Error message 3: {{ label.error-message-3 }}
+  </dd>
+  {% endif %}
+</dl>
+{% endfor %}

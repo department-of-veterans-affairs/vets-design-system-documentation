@@ -5,13 +5,13 @@ has-parent: /components/form/
 title: Select
 intro-text: "A select component allows users to choose one option from a menu."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/a52734dd-00d0-44f1-9c9e-ff4016130e5c/p/93AD583C-43C8-40A6-9363-36D3CC2C2AAD/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A93876&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 uswds-v3: default
 web-component: va-select
 anchors:
-  - anchor: Examples - v1
   - anchor: Examples - v3
+  - anchor: Examples - v1
   - anchor: Usage
   - anchor: How to use
   - anchor: Code usage
@@ -19,38 +19,41 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-select--default" link_text="va-select default" %}
-
-### Required
-
-{% include storybook-preview.html story="components-va-select--required" link_text="va-select required" %}
-
-### With hint text
-
-{% include storybook-preview.html story="components-va-select--with-hint-text" link_text="va-select with hint text" %}
-
-### Error message
-
-{% include storybook-preview.html story="components-va-select--error-message" link_text="va-select error message" %}
-
-### Dynamic options
-
-{% include storybook-preview.html story="components-va-select--dynamic-options" link_text="va-select dynamic options" %}
-
-### Internationalization
-
-{% include storybook-preview.html story="components-va-select--internationalization" link_text="va-select internationalization" %}
-
 ## Examples - v3
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select v3 along with additional variations" %}
+{% include storybook-preview.html story="uswds-va-select--default" link_text="va-select default" %}
 
+### Required
+
+{% include storybook-preview.html story="uswds-va-select--required" link_text="va-select required" %}
+
+### With hint text
+
+{% include storybook-preview.html story="uswds-va-select--with-hint-text" link_text="va-select with hint text" %}
+
+### Read only
+
+{% include storybook-preview.html story="uswds-va-select--read-only" link_text="va-select inert, or read only" %}
+
+### Error
+
+{% include storybook-preview.html story="uswds-va-select--error-message" link_text="va-select error message" %}
+
+### Dynamic options
+
+{% include storybook-preview.html story="uswds-va-select--dynamic-options" link_text="va-select dynamic options" %}
+
+### Internationalization
+
+{% include storybook-preview.html story="uswds-va-select--internationalization" link_text="va-select internationalization" %}
+
+## Examples - v1
+
+### Default
+
+{% include storybook-preview.html story="components-va-select--default" link_text="va-select v3 along with additional variations" %}
 
 ## Usage
 

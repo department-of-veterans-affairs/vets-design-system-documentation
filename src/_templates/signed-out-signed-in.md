@@ -4,6 +4,7 @@ permalink: /templates/signed-out-vs-signed-in
 title: Signed out vs. signed in
 status: use-deployed
 intro-text: "If a user has not signed in to VA.gov, we know very little information about the user. When the user signs in and verifies their identity, we know who the user is. In either case, we display the most relevant content, features, and calls to action."
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A64513&mode=design&t=0y4ua4v9DIeIvkhX-1
 anchors:
   - anchor: Site header
   - anchor: Contextual calls to action

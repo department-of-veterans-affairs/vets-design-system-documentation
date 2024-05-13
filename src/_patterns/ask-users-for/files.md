@@ -7,6 +7,9 @@ redirect_from:
 aka: File upload
 sub-section: ask-users-for
 intro-text: "Follow this pattern to help users upload a file."
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A63596&mode=design&t=ocBby0ApctnJJSel-1
+github-title: pattern-files
+research-title: Ask users for files
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -48,15 +51,21 @@ anchors:
 
 {% include component-example.html alt="The delete state of file upload." file="/images/patterns/ask-users-for/files/0955-modal-detail.png" caption="The review state of file upload includes a card with the file name and an option to delete the file." class="x2" %}
 
+### Examples in production
+
+{% include component-example.html alt="File upload in the 10182 form." file="/images/patterns/ask-users-for/files/10182-file-upload.png" caption="The process to request a board appeal includes the ability to upload files." class="x2" %}
+
+{% include component-example.html alt="File upload review in the 10-10CG form." file="/images/patterns/ask-users-for/files/10-10cg-review.png" caption="The application for the program of comprehensive assistance for family caregivers, form 10-10CG, features an Alert - warning with additional explanation." class="x2" %}
+
 ## How to design and build
 
 ### Layout details
 
 Use the [File input](https://design.va.gov/components/form/file-input) component along with the following content placed above it:
 
-- Header
-- Instructions on what file(s) to upload
-- Bullet list of allowed file types and sizes
+* Header
+* Instructions on what file(s) to upload
+* Bullet list of allowed file types and sizes
 
 Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can invite user and/or technical errors.
 
@@ -82,18 +91,13 @@ When a user triggers an action to remove or delete an upload file a modal confir
 
 {% include storybook-preview.html story="components-va-file-input--error-message#error-message" link_text="va-file-input--error-message" %}
 
-* **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png. 
+* **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png.
 * **Validate file uploads and provide actionable error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
-
-### Instances in production
-
-{% include component-example.html alt="File upload in the 10182 form." file="/images/patterns/ask-users-for/files/10182-file-upload.png" caption="The process to request a board appeal includes the ability to upload files." class="x2" %}
-
-{% include component-example.html alt="File upload review in the 10-10CG form." file="/images/patterns/ask-users-for/files/10-10cg-review.png" caption="The application for the program of comprehensive assistance for family caregivers, form 10-10CG, features an Alert - warning with additional explanation." class="x2" %}
 
 ## Content considerations
 
 {% include content/file-upload.md %}
+
 * **Consider the mobile experience.** Avoid using words like "scan" or "convert" in the file upload instructions.
 
 ## Accessibility considerations

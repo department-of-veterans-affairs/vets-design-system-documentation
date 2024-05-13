@@ -52,7 +52,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
 **Armed Forces**
-: Capitalize.
+: Capitalize. The Armed Forces consist of 6 service branches: the Air Force, Army, Coast Guard, Marine Corps, Navy, and Space Force. Also refer to the "uniformed services" entry.
 
 **asbestos**
 : Define on first mention in body copy as "toxic fibers, once used in many buildings and products." Include the definition in another sentence, as a parenthetical, or set off with commas.
@@ -154,6 +154,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **contamination**
 : Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. 
 : - Exception: On the Camp Lejeune page, don't define this term.
+
+**contention**
+: Use "condition" or an alternate word or phrase instead, depending on context. Internally, "contention" refers to an issue connected with a claim. Typically this is a medical condition, but in some cases it could be for other things like claiming a dependent.
 
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
@@ -716,6 +719,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 
 ### U
+
+**uniformed services**
+: Uniformed services refers to the Armed Forces plus these 2 branches: the National Oceanic and Atmospheric Administration and the Public Health Service. Also refer to the "Armed Forces" entry.
 
 **U.S.**
 : Use periods.

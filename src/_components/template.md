@@ -6,7 +6,7 @@ draft: true
 intro-text: "This text provides the overall purpose and function of the component."
 github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
-sketch-link: https://www.sketch.com/our-workspace-the-pattern-library/specific-page-for-this-component
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
 status: use-with-caution-available
 web-component: va-component-name
 anchors:
@@ -25,11 +25,9 @@ anchors:
 
 {% include storybook-preview.html story="components-va-component-name--default" link_text=page.web-component %}
 
-
 ### Variation 1
 
 Add Storybook examples as necessary.
-
 
 ### Variation 2
 
@@ -41,7 +39,6 @@ Add Storybook examples as necessary.
 
 * **In this context**: Explain the scenario or user context where this component is, or could be, used.
 * **In this task**: Explain the user task or tasks where this component is, or could be, used.
-
 
 ### When to consider something else
 
@@ -80,7 +77,6 @@ Images with captions that describe different instances of this component being u
 
 <!-- include component-example.html alt="Explain what is in the image." file="/images/components/component-name/filename.png" caption="Describe what this example image is depicting." --> 
 
-
 This is the Code Usage section. Note that the header is inside this include.
 <!-- include component-docs.html component_name=page.web-component  -->
 
@@ -96,7 +92,6 @@ This is the Code Usage section. Note that the header is inside this include.
 ## Related
 
 * Links to related components.
-
 
 This is the Component checklist section. Note that the header is inside this include.
 <!-- include _component-checklist.html component_name=page.web-component -->

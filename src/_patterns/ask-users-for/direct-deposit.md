@@ -4,6 +4,9 @@ permalink: /patterns/ask-users-for/direct-deposit
 sub-section: ask-users-for
 title: Direct deposit
 intro-text: "Follow this pattern to ask users for their banking information in order to enable direct deposit."
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A21247&mode=design&t=ocBby0ApctnJJSel-1
+github-title: pattern-direct-deposit
+research-title: Ask users for direct deposit
 status: use-deployed
 anchors:
   - anchor: Usage

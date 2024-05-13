@@ -5,8 +5,10 @@ sub-section: ask-users-for
 title: Signature
 intro-text: "Use this pattern when you need a user to provide their signature as a statement of truth."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/FormSignature.jsx
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/97D32F6F-65D9-4A85-8828-13501931A7EE/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85739&mode=design&t=KWZdlejzgnGiPckM-1
 status: use-deployed
+github-title: pattern-signature
+research-title: Ask users for signature
 anchors:
   - anchor: Usage
   - anchor: Examples

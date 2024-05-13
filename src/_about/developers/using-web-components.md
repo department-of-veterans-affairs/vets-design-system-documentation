@@ -12,6 +12,7 @@ anchors:
   - anchor: Custom events
   - anchor: Native events
   - anchor: How to migrate to Web Components
+  - anchor: How to migrate from Font Awesome to va-icon
 ---
 
 ## How to use a web component
@@ -33,30 +34,32 @@ Use our VA Design System Web Components where applicable in your projects. We ma
 
 While large portions of VA.gov are built via React applications, there are some teams that cannot import React directly into their projects and have to add work around hacks in order to use React components.
 
-Due to these issues the Design System Team recommends using our Web Components on VA.gov applications and pages.
+Due to these issues the Design System Team has moved to using Web Components on VA.gov applications and pages.
 
 For easy identification, all of our Web Components begin with a `va-` prefix. For example, the Web Component version of our alert component is named `va-alert` (or `VaAlert` as the React binding).
 
 The benefits of using Design System Web Components include:
 
-- Web Components can be imported into any JS Framework
-- Consistent syntax across frameworks and projects
-- Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
-- Performance and speed
+* Web Components can be imported into any JS Framework
+* Consistent syntax across frameworks and projects
+* Actively updated and maintained - we are deprecating most React components and they will not have the latest updates
+* Performance and speed
 
 The Design System Team has specific linting and migration rules in place to help ease in the transition from React to Web Components. We also encourage all developers use Design System Components in their applications instead of creating their own similar components.
 
 If our components do not meet your needs, we would love to hear about it. Reach out to us in Slack at #platform-design-system or [submit a bug report](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose). And if you are interested in contributing to the Design System, review [how to contribute a new component to the design system]({{ site.baseurl }}/about/developers/contributing).
 
-## USWDS V1 vs. V3 Compatibility
+## USWDS V1 to V3 migration
 
 The current version of the Design System is compatible with the US Web Design System (USWDS) version 1. To use components compatible with version 3 of the USWDS, add a `uswds` flag to the component, as in this example:
 
-```
+```html
 <va-gizmo uswds>
 ```
 
-To check if the component you want to use in "V3 Mode" is available to use in this mode, go to the [VA Design System's Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-additional-info--default) site and look under the "USWDS" section. Here you will find a list of available components as well as implementation details and examples.
+To check if the component you want to use has a v3 version, go to the [VA Design System's Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-additional-info--default) site and look under the "USWDS" section. Here you will find a list of available components as well as implementation details and examples.
+
+To migrate, if the `uswds` prop has been set to false, explicitly set it to true. **Run all of your application test suites and address any tests that break due to migration.**
 
 ## Vanilla JavaScript applications
 
@@ -216,13 +219,50 @@ Auto-migrations may not be able to perfectly migrate every component. Before you
 
 Here is a list of each Web Component and the migration available:
 
-* `va-accordion`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2127527996/Manual+Component+Migration+Guide)
-* `va-alert`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/alertbox.js)
-* `va-button`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-button--primary)
-* `va-file-input`: [Manual Migration](https://design.va.gov/storybook/?path=/docs/components-va-file-input--default)
-* `va-loading-indicator`: [Migration Script](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/transformers/loadingindicator.js)
 * `va-modal`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-omb-info`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
-* `va-process-list`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-process-list)
-* `va-promo-banner`: [Manual Migration](https://vfs.atlassian.net/wiki/spaces/DST/pages/2051080448/Liquid+template+migration+guidance#va-promo-banner)
-* `va-text-input`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
+
+## How to migrate from Font Awesome to va-icon
+
+Font Awesome icons will be deprecated in late-May 2024 in favor of the `va-icon` web component which uses USWDS icons. USWDS icons are a combination of Material Icons and [custom icons](https://github.com/department-of-veterans-affairs/dst-uswds-compile/tree/main/assets/icons). A searchable set can be viewed on the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
+
+### Quick References
+- [Icon Name Mapping](https://design.va.gov/foundation/icons)
+- [va-icon on Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default)
+- Slack channel: `#platform-design-system`
+
+<!-- ### ESLint Auto-Migration
+
+Places that Font Awesome classes are used in vets-website will be flagged by an ESLint rule that also includes an auto-fix option:
+
+{% include component-example.html alt="An ESLint pop-up for the rule to prefer icon component in VS Code. It says the va-icon web component should be used instead of Font Awesome" file="/images/icon-eslint-step-1.png" caption="The ESLint rule flagging a Font Awesome element in vets-website" %}
+
+This will convert the Font Awesome icon to the `va-icon` web component. Entering the Quick Fix menu will allow you to select "Fix this" or "Fix all":
+
+{% include component-example.html alt="The list of quick fix options for the eslint rule. One says to fix this and another says to Fix all" file="/images/icon-eslint-step-2.png" caption="The rule's quick fix options" %}
+
+Once selected, the fixer will convert the Font Awesome icon to the `va-icon` web component:
+
+{% include component-example.html alt="The completed fixer results that show va-icon web component with mapping properties" file="/images/icon-eslint-step-3.png" caption="The converted Font Awesome element to the va-icon web component" %}
+
+After this auto-fix completes, you will need to update the <strong>icon</strong> value as well as visually confirm the <strong>size</strong> and if any custom CSS styles are still applicable.
+
+To migrate from Font Awesome to the web component without using the ESLint migration rule, reference the [icon name mapping](https://design.va.gov/foundation/icons) tables as well as the web component's [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default) page. -->
+
+### The va-icon Web Component API
+
+Examples and details for the va-icon web component can be found on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default). The web component has the following customization properties available:
+
+- <strong>icon</strong>: The name of the icon to use
+- <strong>size</strong>: The size of the icon as a value between 3 and 9. Sizing can be previewed in Storybook by adjusting the size control
+  - 3: 24px
+  - 4: 32px
+  - 5: 40px
+  - 6: 48px
+  - 7: 56px
+  - 8: 64px
+  - 9: 72px
+- <strong>srtext</strong>: Screen-reader text if the icon has semantic meaning and is not purely decorative
+
+### Mapping Icon Names
+
+Icon name mapping from Font Awesome to USWDS can be found on the [Icons Foundation page](https://design.va.gov/foundation/icons). Icon names can also be referenced on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default) or the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
