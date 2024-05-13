@@ -4,16 +4,17 @@ title: Form labels
 slug: form-labels
 ---
 
-# Form labels
+# Form labels (in progress)
 
-When adapting a paper form into an online application or tool on VA.gov, content writers and UX designers should consult our [Form labels](#form-label-masterlist) to see if a standardized label has already been created. Use the existing standardized labels when building a form rather than create new or custom labels with each new form.
+## Standardized labels by form pattern
 
-The masterlist documents labels and questions that appear on our online forms. This list is continually updated as more forms are brought online and new field labels and form questions are documented.
+We're in the process of standardizing form field labels and their related hint text and error messages. We'll add to this list as we build out the set of standardized labels.
 
-Because form fields have a lot of visual design and formatting that can affect copy, this masterlist is also included in the Components > Form guidance.
+### Ask uses for...
 
-## Form label masterlist
-
-A list of standardized form labels that appear on VA.gov forms. This list is a continued work in progress as each form is unique and has specific labels and questions. As we migrate more forms online, we'll continue to add plain-language labels to this list.
-
-{% include content/form-labels-masterlist.md %}
+- [Addresses](https://design.va.gov/patterns/ask-users-for/addresses#content-considerations)
+- [Dates](https://design.va.gov/patterns/ask-users-for/dates#content-considerations)
+- [Email address](https://design.va.gov/patterns/ask-users-for/email-address#content-considerations)
+- [Names](https://design.va.gov/patterns/ask-users-for/names#content-considerations)
+- [Phone numbers](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations)
+- [Social Security or VA file number](https://design.va.gov/patterns/ask-users-for/social-security-number#content-considerations)
