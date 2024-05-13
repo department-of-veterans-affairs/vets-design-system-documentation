@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: content-style-guide
+permalink: /content-style-guide/health-content/
 title: Health content
+intro-text: "Health content should be accurate, accessible, and actionable to help Veterans make decisions about their health and health care benefits. In VA health content, we avoid overly clinical language and write in a person-to-person, empathetic, and conversational voice."
+sub-pages:
+  - sub-page: Destigmatizing language in substance use
 ---
-
-# Health content
-
-Health content should be accurate, accessible, and actionable to help Veterans make decisions about their health and health care benefits. In VA health content, we avoid overly clinical language and write in a person-to-person, empathetic, and conversational voice.
 
 ## Use plain language alternatives for medical terms—or explain terms in context
 
-Use a plain language approach instead of medical jargon. If they need to know a specific medical term that a health care provider may use, include the term and explain it in context with plain language.
+Use a plain language approach instead of medical jargon. If Veterans need to know a specific medical term that a health care provider may use, include the term and explain it in context with plain language.
 
 ### Use everyday words when you can
 
@@ -150,7 +150,7 @@ Our National Center for PTSD is the world’s leader in PTSD research, education
 
 You can also call our tobacco quitline at 855-QUIT-VET (855-784-8838). Or sign up for our SmokefreeVET text messaging program.
 
-[Sign for SmokefreeVET text messaging](http://smokefree.gov/VET)
+[Sign up for SmokefreeVET text messaging](http://smokefree.gov/VET)
 
 [Find more resources to help you quit smoking](https://veterans.smokefree.gov)
 
@@ -162,7 +162,7 @@ For more tools and resources to help you adopt a healthy lifestyle, meet your he
 
 ## Make risk—and risk reduction—easier to understand
 
-Many Veterans may have a higher risk of certain conditions based on their service history. When writing about risk, make the numbers as clear and simple as possible. And always follow statements about risk with action steps your audience can take to protect their health
+Many Veterans may have a higher risk of certain conditions based on their service history. When writing about risk, make the numbers as clear and simple as possible. And always follow statements about risk with action steps your audience can take to protect their health.
 
 ### Do the math for your audience
 
@@ -232,5 +232,3 @@ Use these resources as well to help guide your health education content:
 [Health literacy online: A guide for simplifying the user experience (Office of Disease Prevention and Health Promotion website)](https://health.gov/healthliteracyonline/)  
 
 [The SHARE Approach—Communicating Numbers to Your Patients: A Reference Guide for Health Care Providers (Agency for Healthcare Research and Quality website)](https://www.ahrq.gov/health-literacy/professional-training/shared-decision/tool/resource-5.html)
-
-
