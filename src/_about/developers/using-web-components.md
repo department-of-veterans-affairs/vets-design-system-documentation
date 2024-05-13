@@ -226,11 +226,11 @@ Here is a list of each Web Component and the migration available:
 Font Awesome icons will be deprecated in late-May 2024 in favor of the `va-icon` web component which uses USWDS icons. USWDS icons are a combination of Material Icons and [custom icons](https://github.com/department-of-veterans-affairs/dst-uswds-compile/tree/main/assets/icons). A searchable set can be viewed on the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
 
 ### Quick References
+- [Icon Name Mapping](https://design.va.gov/foundation/icons)
 - [va-icon on Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default)
-- [USWDS Icon list](https://designsystem.digital.gov/components/icon/)
 - Slack channel: `#platform-design-system`
 
-### ESLint Auto-Migration
+<!-- ### ESLint Auto-Migration
 
 Places that Font Awesome classes are used in vets-website will be flagged by an ESLint rule that also includes an auto-fix option:
 
@@ -242,12 +242,11 @@ This will convert the Font Awesome icon to the `va-icon` web component. Entering
 
 Once selected, the fixer will convert the Font Awesome icon to the `va-icon` web component:
 
-
 {% include component-example.html alt="The completed fixer results that show va-icon web component with mapping properties" file="/images/icon-eslint-step-3.png" caption="The converted Font Awesome element to the va-icon web component" %}
 
 After this auto-fix completes, you will need to update the <strong>icon</strong> value as well as visually confirm the <strong>size</strong> and if any custom CSS styles are still applicable.
 
-To migrate from Font Awesome to the web component without using the ESLint migration rule, reference the [Storybook examples](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default).
+To migrate from Font Awesome to the web component without using the ESLint migration rule, reference the [icon name mapping](https://design.va.gov/foundation/icons) tables as well as the web component's [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default) page. -->
 
 ### The va-icon Web Component API
 
@@ -263,8 +262,7 @@ Examples and details for the va-icon web component can be found on [Storybook](h
   - 8: 64px
   - 9: 72px
 - <strong>srtext</strong>: Screen-reader text if the icon has semantic meaning and is not purely decorative
-- <strong>color</strong>: The fill color of the icon (coming soon)
 
 ### Mapping Icon Names
 
-Icon names can be referenced on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default), the [USWDS Icon page](https://designsystem.digital.gov/components/icon/), or reach out in the <br/>`#platform-design-system` Slack channel for help deciding on a mapping name.
+Icon name mapping from Font Awesome to USWDS can be found on the [Icons Foundation page](https://design.va.gov/foundation/icons). Icon names can also be referenced on [Storybook](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default) or the [USWDS Icon page](https://designsystem.digital.gov/components/icon/).
