@@ -11,14 +11,13 @@ status: use-deployed
 uswds-v3: default
 web-component: va-segmented-progress-bar
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -52,12 +51,6 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-segmented-progress-bar--custom-header-level" link_text="va-segmented-progress-bar custom header level" height="200px" %}
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-segmented-progress-bar--default" link_text="va-segmented-progress-bar v1 and additional variations" height="200px" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/step-indicator/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -73,7 +66,7 @@ anchors:
 ### Placement
 
 * The progress bar should appear directly below the h1 title of the process and before the form itself.
- 
+
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations

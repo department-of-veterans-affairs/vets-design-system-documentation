@@ -11,8 +11,7 @@ sub-pages:
 uswds-v3: primary
 web-component: va-button
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -22,7 +21,7 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-## Examples - v3
+## Examples
 
 ### Default - Primary
 
@@ -43,12 +42,6 @@ anchors:
 ### Back
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--back" link_text="va-button--back" %}
-
-## Examples - v1
-
-### Default - Primary
-
-{% include storybook-preview.html height="60px" story="components-va-button--primary" link_text="va-button--primary v1 along with additional variations" %}
 
 ## Usage
 
@@ -71,7 +64,6 @@ anchors:
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
-
 
 ### Choosing between variations
 

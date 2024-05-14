@@ -10,17 +10,14 @@ status: use-deployed
 uswds-v3: default
 web-component: va-checkbox-group
 anchors:
-  - anchor: Examples - Single - v3
-  - anchor: Examples - Single - v1
-  - anchor: Examples - Group - v3
-  - anchor: Examples - Group - v1
+  - anchor: Examples - Single
+  - anchor: Examples - Group
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - Single - v3
+## Examples - Single
 
 ### Default
 
@@ -62,13 +59,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
 
-## Examples - Single - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-checkbox--default" link_text="va-checkbox v1 default and additional variations" %}
-
-## Examples - Group - v3
+## Examples - Group
 
 ### Default
 
@@ -114,12 +105,6 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
 
-## Examples - Group - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-checkbox-group--default" link_text="va-checkbox-group v1 default and additional variations" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -135,23 +120,19 @@ anchors:
 
 ### Errors
 
-* Checkbox groups typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the checkboxes.
-* The error message is placed just below the `<legend>`.
-* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+* Refer to the specific error examples above.
 
-<div class="site-showcase">
-{% include_relative html/error-checkbox.html %}
-</div>
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
+  
+### Hint text
 
-{% include snippet.html content='html/error-checkbox.html' %}
+* Refer to the [hint text example](#hint-text) above.
 
-#### Error message with a checkbox group
-
-<div class="site-showcase">
-{% include_relative html/error-checkbox-group.html %}
-</div>
-
-{% include snippet.html content='html/error-checkbox-group.html' %}
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 

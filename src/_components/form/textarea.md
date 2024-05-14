@@ -10,14 +10,13 @@ status: use-deployed
 uswds-v3: default
 web-component: va-textarea
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -53,15 +52,7 @@ anchors:
 
 ### Error
 
-{% include storybook-preview.html height="260px" story="uswds-va-textarea--error" link_text="va-textarea error" %}
-
-See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="260px" story="components-va-textarea--default" link_text="va-textarea v3 default with additional variations" %}
+{% include storybook-preview.html story="uswds-va-textarea--error" link_text="va-textarea error" height="280px" %}
 
 ## Usage
 
@@ -72,6 +63,14 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 #### When to consider something else
 
 * **Predictable text.** When a short, single line of text is expected and sufficient.
+
+### Errors
+
+* Refer to the specific error examples above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 
