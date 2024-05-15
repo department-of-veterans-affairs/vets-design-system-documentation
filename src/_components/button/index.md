@@ -8,6 +8,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 status: use-deployed
 sub-pages:
   - sub-page: Button group
+  - sub-page: Button icon
 uswds-v3: primary
 web-component: va-button
 anchors:
@@ -70,12 +71,12 @@ anchors:
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration.
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
-
 
 ### Choosing between variations
 
-* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. 
+* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section.
 * **Use secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section.
 
 ### Placement

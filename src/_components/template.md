@@ -37,14 +37,14 @@ Add Storybook examples as necessary.
 
 ### When to use Component name
 
-* **In this context**: Explain the scenario or user context where this component is, or could be, used.
-* **In this task**: Explain the user task or tasks where this component is, or could be, used.
+* **In this context.** Explain the scenario or user context where this component is, or could be, used.
+* **In this task.** Explain the user task or tasks where this component is, or could be, used.
 
 ### When to consider something else
 
-* **Not in this context**: Explain which scenarios or user context where this component is not, or should not, be used.
-* **Not for these tasks**: Explain the user tasks where this component is not, or should not, be used.
-* **Use this instead**: Explain when another component should be used instead.
+* **Not in this context.** Explain which scenarios or user context where this component is not, or should not, be used.
+* **Not for these tasks.** Explain the user tasks where this component is not, or should not, be used.
+* **Use this instead.** Explain when another component should be used instead.
 
 ### How this component works
 
@@ -54,10 +54,10 @@ Details the design decisions inherent to the component.
 
 Describe the key interactions for this component.
 
-* **Trigger**: What does the user do to start the interaction with this component.
-* **Rules**: What rules govern how the component behaves. How does it work?
-* **Feedback**: What the user sees, hears, and feels that help them understand the rules.
-* **Loops and modes**: Meta rules that govern the interaction.
+* **Trigger.** What does the user do to start the interaction with this component.
+* **Rules.** What rules govern how the component behaves. How does it work?
+* **Feedback.** What the user sees, hears, and feels that help them understand the rules.
+* **Loops and modes.** Meta rules that govern the interaction.
 
 ### Choosing between variations
 
