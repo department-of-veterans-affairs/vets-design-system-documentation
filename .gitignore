@@ -12,3 +12,5 @@ src/formation.min.css
 src/vendor
 src/_data/component-docs.json
 src/_includes/react
+src/img
+!src/img/sprite.svg
