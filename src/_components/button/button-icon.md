@@ -41,7 +41,7 @@ anchors:
 
 ### When to consider something else
 
-* **When a secondary button will suffice.** Button - Icon does not replace the [Button - Secondary]({{ site.baseurl }}/components/button#default---secondary). Only use Button -Icon when Button - Secondary would visually dwarf a link primary action.
+* **When a secondary button will suffice.** Button - Icon does not replace the [Button - Secondary]({{ site.baseurl }}/components/button#default---secondary). Only use Button - Icon when Button - Secondary would visually dwarf a link primary action.
 
 ## Content considerations
 
