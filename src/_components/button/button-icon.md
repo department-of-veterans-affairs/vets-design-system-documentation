@@ -4,7 +4,7 @@ permalink: /components/button/button-icon
 redirect_from:
   - /components/button-icon
 has-parent: /components/button/
-title: Button icon
+title: Button - Icon
 aka: Button - Tertiary
 research-link: Buttons
 figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=6554%3A11058&mode=design&t=4Zo01aEkp6l4faTn-1
