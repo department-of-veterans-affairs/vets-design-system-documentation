@@ -180,4 +180,4 @@ A Veterans Service Representative will review your form
 </div>
 </div>
 
-We only include job titles or staff roles when the Veteran needs to know that specific term in order to contact the right person at a facility. For example, “Call your VA facility and ask to speak to the My HealtheVet coordinator.”
+We only include job titles or staff roles when the Veteran needs to know that specific term to contact the right person at a facility. For example, “Call your VA facility and ask to speak to the My HealtheVet coordinator.”
