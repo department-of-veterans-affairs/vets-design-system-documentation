@@ -20,11 +20,11 @@ anchors:
 
 ### Borderless table (default)
 
-{% include storybook-preview.html height="300px" story="uswds-va-table--default" link_text="va-table v3 default"  %}
+{% include storybook-preview.html height="350px" story="uswds-va-table--default" link_text="va-table v3 default"  %}
 
 ### Borderless with custom markup
 
-{% include storybook-preview.html height="225px" story="uswds-va-table--with-custom-markup" link_text="va-table with custom markup" %}
+{% include storybook-preview.html height="650px" story="uswds-va-table--with-custom-markup" link_text="va-table with custom markup" %}
 
 ### Borderless with missing data
 
@@ -32,13 +32,13 @@ anchors:
 
 ### Borderless with pagination
 
-{% include storybook-preview.html height="225px" story="uswds-va-table--with-pagination" link_text="va-table with pagination" %}
+{% include storybook-preview.html height="410px" story="uswds-va-table--with-pagination" link_text="va-table with pagination" %}
 
 ## Examples - v1
 
 ### Responsive stacked table (v1 Default)
 
-{% include storybook-preview.html height="300px" story="components-va-table--default" link_text="va-table v1 along with additional variations"  %}
+{% include storybook-preview.html height="400px" story="components-va-table--default" link_text="va-table v1 along with additional variations"  %}
 
 ## Usage
 
@@ -48,15 +48,7 @@ anchors:
 
 #### Using the standard table
 
-* **Align data according to the content.**
-  * Always top align all data in rows.
-  * Numerical data is right-aligned.
-  * Textual data is left-aligned.
-  * Headers are aligned with their data.
-  * Do not center align.
 * **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
-* **Be selective about using column sort.**
-  * Sort should only be included in a table if it can assist the user in completing a task.
 
 #### Using responsive stacked tables
 
