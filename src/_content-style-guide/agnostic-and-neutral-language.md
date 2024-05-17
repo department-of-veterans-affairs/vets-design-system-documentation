@@ -43,7 +43,7 @@ If your provider has filled out the form electronically, he or she must print it
 
 ## Ability and device-agnostic UI language
 
-### We avoid "view” and “hear” 
+### We avoid “view” and “hear” 
 
 A person viewing a screen would “view" their medical records, lab results, claim status, or letter. A person using a screen reader or calling in to listen to an interactive voice response experience would “hear” their medical records, lab results, claim status, or letter. 
 
