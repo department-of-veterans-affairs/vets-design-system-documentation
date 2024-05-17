@@ -39,7 +39,7 @@ If your provider has filled out the form electronically, he or she must print it
 -	Stepchild instead of stepson or stepdaughter
 -	Parent instead of mother or father
 
-Note: Some VA forms currently capture gendered relationships on their backend, so we may need to keep gendered terms in some online forms until VA is able to adjust the backend.
+**Note:** Some VA forms currently capture gendered relationships on their backend, so we may need to keep gendered terms in some online forms until VA is able to adjust the backend.
 
 ## Ability and device-agnostic UI language
 
