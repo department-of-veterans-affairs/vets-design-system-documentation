@@ -59,14 +59,17 @@ Examples:
 
 ### We avoid “click,” “press,” and “tap”
 
-People can use several different types of interactions for the same task. So, we use “select” instead of “click,” “press,” or “tap”: 
--	Buttons: Use “Select Submit,” not “Tap the Submit button”
--	Links and navigation: Use “Select My VA,” not “Click on My VA”
--	Phone extensions: Use “Select 1”, not “Press 1” 
+People can use several different types of interactions for the same task. So, we use “select” instead of “click,” “press,” or “tap.” 
+
+Examples: 
+
+-	In buttons, use “Select Submit” instead of “Tap the Submit button”
+-	In links and navigation, use “Select My VA” instead of “Click on My VA”
+-	In phone extensions, use “Select 1” instead of “Press 1” 
  
 ### We avoid directional language
 
-Content won’t always be in the same place on a screen for all users, so we avoid directional language in instructions. For example, different screen sizes on mobile devices, different assistive devices, and different text size settings  can all affect the placement of content.   
+Content won’t always be in the same place on a screen for all users, so we avoid directional language in instructions. For example, different screen sizes on mobile devices, different assistive devices, and different text size settings can all affect the placement of content.   
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -85,6 +88,7 @@ Select the link from the main menu
 <div class="do-dont__content" markdown="1">
 
 Read below
+
 Select the link on the top right corner of the screen
 
 </div>
@@ -119,7 +123,7 @@ Select the blue Submit button
 
 ### We avoid specific titles of VA business lines or offices
 
-The internal organization of VA is usually not need-to-know information for Veterans. So in most cases, we use “we” and “us” to refer to VA as a whole. Don't use VBA, VHA, NCA, or other internal VA acronyms.
+The internal organization of VA is usually not need-to-know information for Veterans. So in most cases, we use “we” and “us” to refer to VA as a whole. Don’t use VBA, VHA, NCA, or other internal VA acronyms.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -171,8 +175,9 @@ We’ll review your form
 <div class="do-dont__content" markdown="1">
 
 A Veterans Service Representative will review your form
-We only include job titles or staff roles when the Veteran needs to know that specific term in order to contact the right person at a facility. For example, “Call your VA facility and ask to speak to the My HealtheVet coordinator.”
 
 </div>
 </div>
 </div>
+
+We only include job titles or staff roles when the Veteran needs to know that specific term in order to contact the right person at a facility. For example, “Call your VA facility and ask to speak to the My HealtheVet coordinator.”
