@@ -11,8 +11,7 @@ status: use-deployed
 uswds-v3: default
 web-component: va-button-pair
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -20,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default (Yes/No)
 
@@ -33,12 +32,6 @@ anchors:
 ### Continue
 
 {% include storybook-preview.html story="uswds-va-button-pair--continue" link_text="Back/Continue button pair" height="60px" %}
-
-## Examples - v1
-
-### Default (Yes/No)
-
-{% include storybook-preview.html story="components-va-button-pair--default" link_text="Default button pair" height="60px" %}
 
 ## Usage
 
