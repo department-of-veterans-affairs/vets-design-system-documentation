@@ -16,41 +16,45 @@ title: What’s new?
   uswds
 >
   <h2 slot="headline">
-    v1 components will be deprecated on May 3, 2024
+    v1 components have now been deprecated
   </h2>
   <div>
     <p className="vads-u-margin-y--0">
-      All V1 components will be officially retired and no longer available for use by May 3, 2024. Teams that have chosen to opt out of migrating to v3 components will be automatically opted in on this date. <a href="{{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration">Learn how to migrate a component</a>.
+      If your team is still using a v1 component, instances will be flagged in the Collab Cycle and may be considered launch blocking. <a href="{{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration">Learn how to migrate a component</a>.
     </p>
   </div>
 </va-alert>
 
 ## April 2024
-The team continued to synch to USWDS v3 and updated and fixed v3 components while the Figma Library continued to be built out. 
 
-### New features and compopnents
+The team continued to synch to USWDS v3 and updated and fixed v3 components while the Figma Library continued to be built out.
+
+### New features and components
+
 * Icon Button Component (#2641)
 * Formation Deprecation - Add 768px Breakpoint to CSS Library (#2533)
 * Conversion to USWDS v3 Borderless table component (#1860)
 
 ### Updated components and bug fixes
+
 * [Alert] - Remove background-only prop from Alert In Figma (#2394)
 * Review & submit - fix accordion error styling (#77064)
 * Injected Header - Add eslint warning & inline comments for React Modals that should not be touched (#2541)
 * Remove V1 Memorable Date from Component Library and Storybook (#2660)
 * Search Typeahead component does not close as expected when the component loads with a value prefilled (#2676)
 * Formation Deprecation - Typography base size migration QA vets-website, content-build and vagov-content (#2525)
-* Formation Deprecation - Typography base size migration QA component-library (#2566) 
+* Formation Deprecation - Typography base size migration QA component-library (#2566)
 * Rename medium-mobile breakpoint to tablet (#2679)
 * va-summary-box should require that a header be present (#2557)
 * Update components section in Storybook(#2589)
 * Update remaining Formation color variables to their css-library counterparts (#79489)
 * Review & submit - fix accordion error styling(#77064)
 * Update remaining Formation color variables to their css-library counterparts (#79489)
-* Formation Deprecation - Migrate font settings from Formation to CSS Library (#2537) 
-* Remove Font Awesome icon overrides in USWDS components (#2577) 
+* Formation Deprecation - Migrate font settings from Formation to CSS Library (#2537)
+* Remove Font Awesome icon overrides in USWDS components (#2577)
 
 ### Figma Library updates
+
 * Figma rebuild: Templates - How to apply (Forms (#2464)
 * Figma rebuild: Templates - Multiple Responses (Patterns) (#2457)
 * Add missing icons for texting/mobile device and external link (#2381)
@@ -58,19 +62,22 @@ The team continued to synch to USWDS v3 and updated and fixed v3 components whil
 * Icons - Update Figma Components to use USWDS icons (#2624) 
 
 ### Documentation updates
+
 * Icon web component - Documentation (#2197)
 * Create documentation about web component analytics (#2625) 
 
 ### Accessibility  updates
-* Discovery: Research and propose aria-describedby alternatives (#2619)
+
+* Discovery: Research and propose aria-describedby alternatives(#2619)
 * Icon web component - Accessibility review (#1365)
 * va-select needs describedby property (#2587)
   
-
 ## March 2024
+
 The team continued to synch to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
 
 ### Updated components and bug fixes
+
 *  CSS-Library: add missing tokens after audit of formation (#1074)
 *  CSS-Library: update tokens missed in previous update (#1087)
 * va-accordion: remove Font Awesome icon override (#1083)
@@ -80,21 +87,24 @@ The team continued to synch to USWDS v3 and made updates and fixes to v3 compone
 * Updated all instances of color-primary-darker and color-primary-darkest in vets-website#2311
 
 ### Figma Library updates
-* Added v3 Borderless Table Design to the component library (#1859) 
+
+* Added v3 Borderless Table Design to the component library (#1859)
 * Add Military Address pattern to templates (#2329)
 * Added Direct Deposit pattern to templates (#2453)
 * Added Review form pattern to templates (#2465)
-* Added Introduction pattern to templates (#2484) 
-* Added Service History pattern to templates ((#2460) 
-* Update the design system template screens for intro page (#2385) 
+* Added Introduction pattern to templates (#2484)
+* Added Service History pattern to templates (#2460)
+* Update the design system template screens for intro page (#2385)
 
 ### Documentation updates
+
 * Fixed broken link to "linking to external link" info (#2552)
 * Documented pattern for Ask users for a single response (#2611)
 * Wrote guidance for icon migration (#2536)
 
 ## Leap Year February 2024
-The team continued to deliver web components synced to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
+
+The team continued to deliver web components synced to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out.
 
 ### New and updated components
 
@@ -128,7 +138,6 @@ Modal (#1634, #2449,  #2450)
 * Developer contribution page updates in #2446 
 * va-alert and va-expandable-alert: Updated accessibility documentation for announcing alerts (role="alert") in #2145
 * Design Libraries has been updated with Figma information in #2410
-
 
 ## Winter 2024
 
@@ -252,60 +261,3 @@ A long list of bug fixes can be found in our [component release notes](https://g
 
 * Table
 * CheckboxGroup
-
-## Spring 2023
-
-The team has mainly focused on building out new variations of our form components based on USWDS v3. However, we've also made the changes below.
-
-### New and updated components
-
-* Updated [va-table to support pagination]({{ site.baseurl }}/components/table#with-pagination).
-* Alert - Background-color-only with no icon is now deprecated in favor of the with icon variation. That variation is now known as [Alert - Slim]({{ site.baseurl }}/components/alert#examples---slim-alert), to align with the US Web Design System.
-* Added va-card to [Card]({{ site.baseurl }}/components/card) in addition to new examples
-* Added width variations to [Text input]({{ site.baseurl }}/components/form/text-input#widths) and [Number input]({{ site.baseurl }}/components/form/number-input#widths)
-* Added fieldsets to [radio buttons]({{ site.baseurl }}/components/form/radio-button) and [checkboxes]({{ site.baseurl }}/components/form/checkbox#examples---group)
-* Added [Form - Autosave]({{ site.baseurl }}/components/form/autosave)
-* Added [Form - Need help?]({{ site.baseurl }}/components/form/need-help)
-* Added [Form - Penalty notice]({{ site.baseurl }}/components/form/penalty-notice)
-* Added [Form - Prefill]({{ site.baseurl }}/components/form/prefill)
-* Added icon support to [va-accordion-item]({{ site.baseurl }}/components/accordion#icon-in-header)
-* Added Tile variation to [va-checkbox]({{ site.baseurl }}/components/form/checkbox#tile)
-* Added option for currency to [va-number-input]({{ site.baseurl }}/components/form/number-input#currency)
-* Added extra hint text to [va-memorable-date]({{ site.baseurl }}/components/form/memorable-date#extra-hint-text)
-
-See the [component-library release notes](https://github.com/department-of-veterans-affairs/component-library/releases) for more detailed issues on component fixes.
-
-### Content style guide updates
-
-* Added a [Specific topics and programs section]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/) with a [Payments and debts entry]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/payments-and-debts/).
-* Revised our [Bulleted lists]({{ site.baseurl }}/content-style-guide/bulleted-lists) section. We now recommend always introducing bulleted lists with a full sentence. This helps with our efforts to translate content.
-* Revised the [en dash entry]({{ site.baseurl }}/content-style-guide/punctuation#em-and-en-dashes-hyphens) in our [Punctuation section]({{ site.baseurl }}/content-style-guide/punctuation/). We now recommend avoiding en dashes for accessibility reasons. Screen readers don’t consistently announce them.
-* Revised our [plain language section]({{ site.baseurl }}/content-style-guide/plain-language/).
-
-### New entries in [Word list]({{ site.baseurl }}/content-style-guide/word-list/)
-
-* Defense Department
-* Department of Defense
-* Edith Nourse Rogers STEM Scholarship
-* PACT Act
-* Service-connected disability rating
-
-### Deprecated React components
-
-* DropdownPanel
-* ProgressButton
-* RadioButtons
-* SystemDownView
-
-### Sketch Library updates
-
-* Added the aforementioned new Form components (Autosave, Need help?, Penalty notice, Prefill)
-* Templates library now uses the correct header and footer throughout.
-* Reorganized patterns to match new naming and nav structure.
-* Added sidenav mobile menu.
- 
-
-### Documentation updates
-
-* Added Form templates for [How to apply]({{ site.baseurl }}/templates/forms/how-to-apply), [Introduction]({{ site.baseurl }}/templates/forms/introduction), [Review]({{ site.baseurl }}/templates/forms/review).
-* Added variations to checkbox, number input, and memorable date.

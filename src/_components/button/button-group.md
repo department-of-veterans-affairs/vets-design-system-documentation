@@ -5,7 +5,7 @@ has-parent: /components/button/
 title: Button group
 aka: Button pair
 research-link: Buttons
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A153&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=3109%3A381&mode=design&t=HPTk6DwbG1oCM61n-1
 intro-text: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically. 
 status: use-deployed
 uswds-v3: default

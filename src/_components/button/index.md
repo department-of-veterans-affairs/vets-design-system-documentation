@@ -8,11 +8,11 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 status: use-deployed
 sub-pages:
   - sub-page: Button group
+  - sub-page: Button icon
 uswds-v3: primary
 web-component: va-button
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -22,7 +22,7 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-## Examples - v3
+## Examples
 
 ### Default - Primary
 
@@ -44,12 +44,6 @@ anchors:
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--back" link_text="va-button--back" %}
 
-## Examples - v1
-
-### Default - Primary
-
-{% include storybook-preview.html height="60px" story="components-va-button--primary" link_text="va-button--primary v1 along with additional variations" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/button/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -70,12 +64,12 @@ anchors:
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/foundation/icons#requesting-a-new-icon) .
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
-
 
 ### Choosing between variations
 
-* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. 
+* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section.
 * **Use secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section.
 
 ### Placement

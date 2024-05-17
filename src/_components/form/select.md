@@ -10,16 +10,14 @@ status: use-deployed
 uswds-v3: default
 web-component: va-select
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -49,12 +47,6 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-select--internationalization" link_text="va-select internationalization" %}
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-select--default" link_text="va-select v3 along with additional variations" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -65,16 +57,30 @@ anchors:
 
 **More than 15 options.** If the list of options is very long, we do not yet have the combo box component in our system thus an alternative is to use functionality that allows users to type the same information into a text input that suggests possible options instead as seen in our [search input]({{ site.baseurl }}/components/search-input) component.
 
+### Errors
+
+* Refer to the specific [error example](#error) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
+
+### Hint text
+
+* Refer to the [hint text example](#hint-text) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
+
 {% include component-docs.html component_name=page.web-component %}
 
 ### Native Events
 
 - The native onKeyDown event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
-
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
-
 
 {% include _component-checklist.html component_name=page.web-component %}
