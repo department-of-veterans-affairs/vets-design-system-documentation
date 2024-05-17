@@ -11,8 +11,7 @@ status: use-deployed
 uswds-v3: default
 web-component: va-privacy-agreement
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -20,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -30,17 +29,13 @@ anchors:
 
 {% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--with-error" link_text="va-privacy-agreement error" %}
 
-## Examples - v1
-
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--default" link_text="va-privacy-agreement v1 and additional variations" %}
-
 ## Usage
 
 ### When to use Privacy Agreement
 
 **For all forms that collect Personally Identifiable Information (PII).** As stated in the [VA Privacy Policy](https://www.va.gov/privacy-policy/):
 
->  The VA.gov web pages that collect personal information will have a hyperlink to the Limited Privacy Policy that applies to that particular web page.
+> The VA.gov web pages that collect personal information will have a hyperlink to the Limited Privacy Policy that applies to that particular web page.
 
 This is a requirement of the Privacy Act of 1974.
 
@@ -60,7 +55,6 @@ This component appears at the bottom of a form, above the link to "Finish this a
 ### Instances of this component in production
 
 {% include component-example.html alt="An example of this component in use on VA.gov." file="/images/components/privacy-agreement/10-10EZ-privacy-agreement.png" caption="An example of this component in use on the 10-10EZ form on VA.gov" %}
-
 
 {% include component-docs.html component_name=page.web-component %}
 

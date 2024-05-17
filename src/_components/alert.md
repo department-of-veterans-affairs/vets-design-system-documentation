@@ -8,11 +8,9 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 uswds-v3: default
 web-component: va-alert
 anchors:
-  - anchor: Examples - Standard - v3
-  - anchor: Examples - Standard properties - v3
-  - anchor: Examples - Slim alert - v3
-  - anchor: Examples - Standard - v1
-  - anchor: Examples - Slim alert - v1
+  - anchor: Examples - Standard
+  - anchor: Examples - Standard properties
+  - anchor: Examples - Slim alert
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -21,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - Standard - v3
+## Examples - Standard
 
 ### Informational alert (aka default)
 
@@ -65,7 +63,7 @@ Used to inform the user of the benefits of signing in. Mainly, that information 
 
 This variation can be used when pre-fill is not offered on a form (which should be avoided).
 
-## Examples - Standard properties - v3
+## Examples - Standard properties
 
 ### Heading level
 
@@ -80,21 +78,11 @@ This variation can be used when pre-fill is not offered on a form (which should 
 * Any alert variation can be dismissible, including slim alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
 
-## Examples - Slim alert - v3
+## Examples - Slim alert
 
 Any style of alert box can be modified to be a Slim alert. The iconography for Slim alerts is consistent with the way icons are used in standard Alerts.
 
 {% include storybook-preview.html story="uswds-va-alert--slim" height="352px" link_text="va-alert Slim" %}
-
-## Examples - Standard - v1
-
-### Informational alert (aka default)
-
-{% include storybook-preview.html story="components-va-alert--default" link_text="va-alert informational v1 and additional variations" %}
-
-## Examples - Slim alert - v1
-
-{% include storybook-preview.html story="components-va-alert--slim" height="352px" link_text="va-alert Slim v3 and additional variations" %}
 
 ## Usage
 

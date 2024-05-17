@@ -19,23 +19,6 @@ anchors:
 
 ## Examples
 
-<va-alert
-    class="vads-u-margin-bottom--1"
-    close-btn-aria-label="Close notification"
-    disable-analytics="false"
-    full-width="false"
-    slim
-    status="warning"
-    uswds
-    visible="true"
-  >
-    <React.Fragment key=".0">
-      <p class="vads-u-margin-y--0">
-        The v1 and v3 variations of this component are identical as this component does not exist in the USWDS. Teams should switch to the v3 variation in preparation for global color and typography changes that the v3 variation will accept. 
-      </p>
-    </React.Fragment>
-  </va-alert>
-
 ### Default
 
 {% include storybook-preview.html  story="uswds-va-additional-info--default" link_text="va-additional-info v3 default" %}
@@ -53,7 +36,7 @@ anchors:
 * **Revealing helpful background information**: When you have additional information you want to convey about an application, process, or a step or question in a form that is not critical. This component should be used in instances where a more prominent [Alert]({{ site.baseurl }}/components/alert) would not be appropriate.
 * **Clarifying outcomes for an input**: In cases where a person's input can have large or complicated impact on outcomes we use contextual help in Additional info to locate expanded guidance next to the relevant interaction.
 * **Information closely tied to an input.** Use this component over an [Accordion]({{ site.baseurl }}/components/accordion) when the content is closely tied to a particular message or input on the screen. If the content is more tangentially related then use an Accordion.
-* **Clarifying a form question**: If a form question needs clarification, and that clarification is brief, use Additional info. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy. If a form is a conversation, Additional info would be considered an aside. (This <a href="https://blog.navapbc.com/structuring-a-complex-eligibility-form-for-healthcare-gov-37d79a5ad6">case study on structuring complex health care questions for healthcare.gov</a> goes into greater detail on how to structure your form as a conversation.)
+* **Clarifying a form question**: If a form question needs clarification, and that clarification is brief, use Additional info. The lighter design prevents breaking up the visual progression as the user navigates the form. These can also serve as alternative to where accordions feel too heavy. Be sure to review the [hint text guidance]({{ site.baseurl }}/components/form/label#hint-text) for implementation details. If a form is a conversation, Additional info would be considered an aside. (This <a href="https://blog.navapbc.com/structuring-a-complex-eligibility-form-for-healthcare-gov-37d79a5ad6">case study on structuring complex health care questions for healthcare.gov</a> goes into greater detail on how to structure your form as a conversation.)
 * **Content that can be organized under the current heading.** If you have additional content that provides context and makes sense under the same heading as the content nearby.
 * **Information not applicable to all**: Additional info can hide details that may not be applicable to all users.
 
@@ -81,7 +64,7 @@ The following are places where Additional info can be used:
 
 * After a header (h2, h3, h4) or paragraph to provide orthogonal details or provide an answer to a common question.
 * Within a [Process list]({{ site.baseurl }}/components/process-list) to shorten the length of content within a step.
-* Within a [Form]({{ site.baseurl }}/components/form) to provide additional help text.
+* Within a [Form]({{ site.baseurl }}/components/form/label#with-additional-info) to provide additional help text.
 * Whenever there is a chance to enhance the understanding a user has about a particular choice.
 
 ### Design principles
