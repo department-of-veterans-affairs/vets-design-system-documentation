@@ -39,15 +39,19 @@ anchors:
 
 * **In a Card or other container alongside a primary link.** This component is mainly intended to sit alongside a primary link, typically a [Link - Active]({{ site.baseurl }}/components/link#active) variation, within a [Card]({{ site.baseurl }}/components/card). This allows the link to visually have the affordance as the primary action and the Button - Icon the affordance of a secondary action.
 
+The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/foundation/icons#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
+
 ### When to consider something else
 
 * **When a secondary button will suffice.** Button - Icon does not replace the [Button - Secondary]({{ site.baseurl }}/components/button#default---secondary). Only use Button - Icon when Button - Secondary would visually dwarf a link primary action.
 
+{% comment %}
 ## Content considerations
 
 * **Button labels as verbs.** This component represents an action and thus the button label needs to be a verb that describes the action the user is taking.
 * **Be concise - one or two words only.** Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only.
 * **Delete is preferred to remove.** We prefer words that describe exactly what will happen when you tap or click.
+{% endcomment %}
 
 ## Accessibility considerations
 
