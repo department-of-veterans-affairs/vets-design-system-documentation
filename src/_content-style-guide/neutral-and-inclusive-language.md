@@ -1,6 +1,12 @@
-# Agnostic and neutral language
-
-At VA, we create content that is agnostic of gender, device, and experience. We focus on the intent of the action rather than the specific way a person is experiencing that action. We do this to be both inclusive and accurate.
+---
+layout: content-style-guide
+title: Neutral and inclusive language
+intro-text: At VA, we create content that is agnostic of gender, device, and experience. We focus on the intent of the action rather than the specific way a person is experiencing that action. We do this to be both inclusive and accurate.
+anchors:
+  - anchor: Gender-neutral pronouns and terms for family relationships
+  - anchor: Ability- and device-agnostic UI language
+  - anchor: Administration, program, and staff role agnostic language
+---
 
 ## Gender-neutral pronouns and terms for family relationships 
 
@@ -41,7 +47,7 @@ If your provider has filled out the form electronically, he or she must print it
 
 **Note:** Some VA forms currently capture gendered relationships on their backend, so we may need to keep gendered terms in some online forms until VA is able to adjust the backend.
 
-## Ability and device-agnostic UI language
+## Ability- and device-agnostic UI language
 
 ### We avoid “view” and “hear” 
 
