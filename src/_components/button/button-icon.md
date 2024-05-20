@@ -46,7 +46,7 @@ anchors:
 
 ### How this component works
 
-* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only. For example, "change", "delete", and "cancel".
+* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only. For example, "Change file", "Delete", and "Cancel".
 
 ## Requesting new instances
 
