@@ -46,9 +46,9 @@ anchors:
 
 ### How this component works
 
-* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only.
+* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only. For example, "change", "delete", and "cancel".
 
-## Requesting a new instances
+## Requesting new instances
 
 The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/foundation/icons#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
 
