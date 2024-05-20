@@ -93,7 +93,7 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ### Behavior
 
-* **Open VA.gov links in the same window except in certain instances.** VA.gov links should open in a new tab only if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide for additional information.
+* **Open all links in the same window except in certain instances.** Links on VA.gov should open in a new tab only if clicking the link will result in the user losing progress or data. This scenario should be avoided when possible. In all other instances, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide for additional information.
 - **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
 
 ### Choosing between variations
