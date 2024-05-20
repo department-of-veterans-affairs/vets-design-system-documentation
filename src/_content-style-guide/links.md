@@ -74,7 +74,7 @@ Put links on their own line
 {% endcapture %}
 
 {% capture example_not_this_1 %}
-**Avoid linking each item in a list to the same destination**
+Avoid linking each item in a list to the same destination
 <ul>
   <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Trouble breathing</a></li>
   <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Persistent (continuing) pain or pressure in the chest</a></li>
