@@ -1,18 +1,18 @@
 ---
 layout: content-style-guide
 title: Neutral and inclusive language
-intro-text: At VA, we create content that is agnostic of gender, device, and experience. We focus on the intent of the action rather than the specific way a person is experiencing that action. We do this to be both inclusive and accurate.
+intro-text: At VA, we aim to create language that’s accurate for all our audiences. That means using language that’s neutral and inclusive for Veterans and family members of different experiences, identities, and abilities. We focus on the intent of the action rather than the specific way a person experiences that action.
 anchors:
   - anchor: Gender-neutral pronouns and terms for family relationships
-  - anchor: Ability- and device-agnostic UI language
-  - anchor: Administration, program, and staff role agnostic language
+  - anchor: Language that doesn’t assume an ability or device
+  - anchor: “We” and “us” instead of specific roles and titles
 ---
 
 ## Gender-neutral pronouns and terms for family relationships 
 
 ### We use “they” and “their” as gender-neutral pronouns
 
-Don’t use “he or she” and “his or her.”
+Don’t use “he or she” or “his or her.”
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -47,13 +47,13 @@ If your provider has filled out the form electronically, he or she must print it
 
 **Note:** Some VA forms currently capture gendered relationships on their backend, so we may need to keep gendered terms in some online forms until VA is able to adjust the backend.
 
-## Ability- and device-agnostic UI language
+## Language that doesn’t assume an ability or device
 
 ### We avoid “view” and “hear” 
 
 A person viewing a screen would “view" their medical records, lab results, claim status, or letter. A person using a screen reader or calling in to listen to an interactive voice response experience would “hear” their medical records, lab results, claim status, or letter. 
 
-So, we use agnostic terms that focus on the intent of the action rather than the sensory experience. This becomes especially important as we create flexible and reusable content that can work across different channels.
+So, we use language that focuses on the intent of the action rather than the sensory experience. This becomes especially important as we create flexible and reusable content that can work across different channels.
 
 Examples:
 
@@ -69,13 +69,13 @@ People can use several different types of interactions for the same task. So, we
 
 Examples: 
 
--	In buttons, use “Select Submit” instead of “Tap the Submit button”
--	In links and navigation, use “Select My VA” instead of “Click on My VA”
+-	In buttons, use “Select **Submit**” instead of “Tap the **Submit** button”
+-	In links and navigation, use “Select **My VA**” instead of “Click on **My VA**”
 -	In phone extensions, use “Select 1” instead of “Press 1” 
  
 ### We avoid directional language
 
-Content won’t always be in the same place on a screen for all users, so we avoid directional language in instructions. For example, different screen sizes on mobile devices, different assistive devices, and different text size settings can all affect the placement of content.   
+Content won’t always be in the same place on a screen for all people, so we avoid directional language in instructions. For example, different screen sizes on mobile devices, different assistive devices, and different text size settings can all affect the placement of content.   
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -110,7 +110,7 @@ Many people have colorblindness, so we avoid using color in instructions.
 <h4 class="do-dont__heading">Like this</h4>
 <div class="do-dont__content" markdown="1">
 
-Select Submit
+Select **Submit**
 
 </div>
 </div>
@@ -119,13 +119,13 @@ Select Submit
 <h4 class="do-dont__heading">Not this</h4>
 <div class="do-dont__content" markdown="1">
 
-Select the blue Submit button
+Select the blue **Submit** button
 
 </div>
 </div>
 </div>
 
-## Administration, program, and staff role agnostic language
+## “We” and “us” instead of specific roles and titles
 
 ### We avoid specific titles of VA business lines or offices
 
@@ -158,7 +158,7 @@ Send your completed form to the Veterans Health Administration
 
 ### We avoid or minimize branded program names
 
-Describe the benefit instead.
+In most cases, we describe the program or benefit instead.
 
 [Learn more about avoiding branded names](https://design.va.gov/content-style-guide/plain-language/avoid-branded-names)
 
@@ -186,4 +186,4 @@ A Veterans Service Representative will review your form
 </div>
 </div>
 
-We only include job titles or staff roles when the Veteran needs to know that specific term to contact the right person at a facility. For example, “Call your VA facility and ask to speak to the My HealtheVet coordinator.”
+We only include job titles or staff roles when the Veteran needs to know that specific term to contact the right person at a facility. For example, “Call your VA facility and ask for the My HealtheVet coordinator.”
