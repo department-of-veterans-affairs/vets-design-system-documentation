@@ -11,11 +11,12 @@ figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Lib
 intro-text: The button icon variation acts as a tertiary button which has equal visual prominence to Link - Action and thus can be used in contexts that require a mix of links and buttons. 
 status: use-with-caution-candidate
 uswds-v3: default
-web-component: va-button-pair
+web-component: va-button-icon
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Code usage
+  - anchor: Requesting a new instance
+  - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
 
@@ -43,11 +44,17 @@ anchors:
 
 * **When a secondary button will suffice.** Button - Icon does not replace the [Button - Secondary]({{ site.baseurl }}/components/button#default---secondary). Only use Button - Icon when Button - Secondary would visually dwarf a link primary action.
 
+### How this component works
+
+* **Icon plus uppercase label.** These buttons are composed of an icon and an uppercase label. The label is a verb that represents an action that the user is taking. Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only. For example, "Change file", "Delete", and "Cancel".
+
+## Requesting new instances
+
+The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/foundation/icons#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
+
 ## Content considerations
 
-* **Button labels as verbs.** This component represents an action and thus the button label needs to be a verb that describes the action the user is taking.
-* **Be concise - one or two words only.** Because the visual style of this button uses uppercase text, labels must be very concise actions and thus are limited to one or two words only.
-* **Delete is preferred to remove.** We prefer words that describe exactly what will happen when you tap or click.
+* **Delete is preferred to remove.** We prefer words that describe exactly what will happen when you tap or click. Note: Currently, icon and button labels are hard-coded into the component. New icons and labels must be requested following the instructions above.
 
 ## Accessibility considerations
 

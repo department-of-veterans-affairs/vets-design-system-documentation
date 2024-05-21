@@ -10,8 +10,7 @@ sub-pages:
 uswds-v3: default
 web-component: va-modal
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
@@ -20,7 +19,7 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -69,12 +68,6 @@ anchors:
 ### With forced action
 
 {% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal with forced action" %}
-
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-modal--default" link_text="va-modal v1 along with additional variations" %}
 
 ## Usage
 

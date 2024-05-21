@@ -31,6 +31,7 @@ Feedback:
     additional-usage: Alert - Info
   - name: Confirmation or completion
     icon-name: check_circle
+    fa-class: "fas fa-circle-check"
     additional-usage: Alert - Success
   - name: Warning
     icon-name: warning
@@ -190,6 +191,7 @@ Interaction:
     unicode: "#xf1f8;"
   - name: Cancel an action
     icon-name: cancel
+    fa-class: "fas fa-circle-xmark"
   - name: Loading indicator
     icon-name: autorenew
     fa-class: "fas fa-spinner"
