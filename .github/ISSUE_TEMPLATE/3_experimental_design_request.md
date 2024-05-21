@@ -34,6 +34,10 @@ labels: platform-design-system-team, experimental_design
 
 > What would you want to tell other teams about this component or pattern?
 
+## Your team
+
+> Tell us what team you are on. 
+
 ## Research (optional)
 
 > Include any research you have already conducted, or plan to conduct, on this component or pattern.
