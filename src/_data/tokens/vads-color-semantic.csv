@@ -4,6 +4,7 @@ vads-color-action-border-base-active-on-light,Semantic,vads-color-action-border-
 vads-color-action-focus-on-light,Semantic,vads-color-action-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus outline color
 vads-color-action-surface-default-on-dark,Semantic,vads-color-action-surface-default-on-dark,uswds-system-color-blue-30v,#58b4ff,,Used for button on mobile app in dark mode
 vads-color-action-surface-destructive-on-dark,Semantic,vads-color-action-surface-destructive-on-dark,uswds-system-color-red-vivid-40,#fb5a47,,Used for button on mobile app in dark mode
+vads-color-background-default-on-dark,Semantic,vads-color-background-default-on-dark,uswds-system-color-gray-warm-90,#171716,,Used for app background on mobile app in dark mode
 vads-color-base,Semantic,vads-color-base,uswds-system-color-gray-90,#1b1b1b,,
 vads-color-base-dark,Semantic,vads-color-base-dark,uswds-system-color-gray-cool-60,#565c65,vads-color-gray,
 vads-color-base-darker,Semantic,vads-color-base-darker,uswds-system-color-gray-cool-70,#3d4551,vads-color-gray-dark,
@@ -11,7 +12,6 @@ vads-color-base-darkest,Semantic,vads-color-base-darkest,uswds-system-color-gray
 vads-color-base-light,Semantic,vads-color-base-light,uswds-system-color-gray-cool-30,#a9aeb1,vads-color-gray-light,
 vads-color-base-lighter,Semantic,vads-color-base-lighter,uswds-system-color-gray-cool-10,#dfe1e2,vads-color-gray-lighter,
 vads-color-base-lightest,Semantic,vads-color-base-lightest,uswds-system-color-gray-5,#f0f0f0,vads-color-gray-lightest,
-vads-color-bg-default-on-dark,Semantic,vads-color-bg-default-on-dark,uswds-system-color-gray-warm-90,#171716,,Used for app background on mobile app in dark mode
 vads-color-emergency,Semantic,vads-color-emergency,uswds-system-color-red-warm-60v,#9c3d10,,$theme-color-emergency from USWDS
 vads-color-emergency-dark,Semantic,vads-color-emergency-dark,uswds-system-color-red-warm-80,#332d29,,$theme-color-emergency-dark from USWDS
 vads-color-error,Semantic,vads-color-error,uswds-system-color-red-warm-50v,#d54309,,$theme-color-error from USWDS
