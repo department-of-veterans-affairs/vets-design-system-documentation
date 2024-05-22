@@ -7,7 +7,10 @@ title: URLs
 anchors:
   - anchor: URL standards 
   - anchor: Vanity URLs
+redirect_from:
+  - /content-style-guide/url-standards
 ---
+
 
 # URLs
 
@@ -20,7 +23,7 @@ URLs are a highly visible attribute of your content that improve user experience
 
 A URL consists of a domain, sub-directories (optional), and a page name.
 
-![The structure of a URL]({{site.baseurl}}/images/url-segments.jpg)
+![The structure of a URL. Includes illustrations of URL segments including the domain, any subdirectories, and current page name]({{site.baseurl}}/images/url-segments.jpg)
  
 **Changing URLs or retiring content**
 - Always implement a redirect when pages are taken down or the URL changes.
@@ -70,21 +73,31 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 ### Guidelines for anchor tags (i.e. jump links) 
 When using jump links, or, anchored links, in addition to all the URL standards above, please use these guidelines when possible to create clean and understandable URL strings.
 
-- Anchor tag IDs should be treated as part of the URL and preferably follow all the same standards as URLs
+- Anchor tag IDs should be treated as part of the URL and preferably follow all the same standards as URLs.
 - Ideally the tag ID should be plain language keywords that help provide meaning to the content, e.g. using a primary keyword from the associated heading. This works best for anchor tags on relatively static headings such as the Hub page. 
   - Example:  This link provides a user with quick access to tasks for managing their health care benefits - https://www.va.gov/health-care/#manage-your-health-and-benefits
-- If the heading is lengthy, or could potentially change over time, using an ID (i.e. the content ID from drupal) is a another option.  This works well for creating anchor links to accordions that hold frequently asked questions.
+- If the heading is lengthy, or could potentially change over time, using an ID (i.e. the content ID from drupal) is a another option. This works well for creating anchor links to accordions that hold frequently asked questions.
 
 
 ### Guidelines for parameters in URLs 
-When using parameters, in addition to all the URL standards above, please use these guidelines when possible to create clean and understandable URL strings. 
 
-- Parameter labels should generally no more than 1 word
-- Use a parameter label that indicates what the parameter is, not a generic word such as “parm” or “key”
-- Do not expose empty/null value parameters in the URL
-- If multiple parameters are used, list them in a consistent order when possible
-- Use the rel=canonical attribute when the parameter-based URL is similar content to the canonical content (i.e. sorting does not change the content, but pagination and search parameters do)
+URL parameters - also known as query strings - are values added to the end of a URL that filter or organize the information on a page. Parameters are used for a number of reasons - most commonly for pagination, anchoring, filtering or sorting data, indicating language, or searching.
 
+An example of a query string and parameter values in use on VA.gov is on our existing search functionality. The `?` indicates the beginning of the query string, followed by one or more parameters (i.e. `page=1`). Each parameter includes a key and a value, and multiple parameters are separated by an ampersand.
+
+    https://www.va.gov/search/?page=1&query=disability+compensation&t=true
+
+Like the core URL, parameters must also be readable and understandable to the user, so they know what information is being used to display the content of the page, and do not make the URL look untrustworthy. Parameters also impact SEO because they create unique URLs, so care must be taken to ensure they do not dilute the SEO value of the static, or, canonical version of the page.
+
+When adding parameters to your URL, in addition to all the URL standards above, please follow the guidelines below.
+
+- Do not use any PII in parameter values, or any other data that should not be logged or tracked. This includes everything from names and contact information to unique identifiers used that an be used to identify a specific person such as IP address, ICN, or EDIPI.
+- Set the static, or main, URL as the canonical page using the `rel=canonical` attribute when the parameter-based URL is similar content to the canonical content. An example is when using parameters for sorting. The data returned is the same, but is in a different order, therefore include the `rel=canonical` attribute to tell search engines that the resorted page is the same as the original page.
+- Parameter keys should be no more than 1 word for a label and must clearly define what the parameter is. Do not use generic terms such as “parm” or “key”.
+- Do not expose empty or null value parameters in the URL.
+- For multi-select type values, combine the values into a single parameter rather than exposing the key multiple times in a URL multiple times (i.e. `color=blue,red,white` vs `color=blue&color=red&color=white`).
+- Avoid linking to URLs with parameters. Link to the static or canonical URL when possible.
+- If multiple parameters are used in a query string, set a priority and list them in a consistent order.
 
 
 ## Vanity URLs 
