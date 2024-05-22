@@ -104,7 +104,8 @@
   display: none;
 
   @include media($nav-width) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -120,8 +121,12 @@
   margin: 0;
 }
 
-.site-header__nav-item:first-child {
-  margin-left: $units-neg-3
+.site-header__nav-list:first-child {
+  margin-left: $units-neg-3;
+}
+
+.site-header__nav-list:last-child {
+  margin-right: $units-neg-3;
 }
 
 .site-header__nav-item__link,
@@ -141,4 +146,11 @@
 
 .site-header__nav-item__link.current {
   border-bottom: 4px solid $color-gold;
+}
+
+.site-header__nav-item__link.site-header__nav-item__link--icon {
+  align-items: center;
+  display: flex;
+  gap: $units-0p5;
+  white-space: nowrap;
 }

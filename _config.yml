@@ -16,6 +16,7 @@ figma_annotations_library: https://www.figma.com/file/CZcnWfQOwtLqPm4WA5paYG/VAD
 
 forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-System-Overview.2085355587.html
 
+github_issues_templates: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose
 github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
 github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
 github_issues_new: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=1_bug_template.md&title=
