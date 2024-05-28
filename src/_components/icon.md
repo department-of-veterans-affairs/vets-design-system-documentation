@@ -31,6 +31,19 @@ Each icon has a chosen semantic meaning and should be used in a manner that is c
 
 Before introducing a new icon check the list to be see if the meaning of the icon you need corresponds to an existing icon. If you have questions about a new icon, or icon usage, feel free to reach out to the Design System team.
 
+### Icon Color
+
+By default, the web component icon will display as `--vads-color-base` which is the base color set across VA.gov. If a different icon color is needed, style can be applied directly to the web component element using CSS. For example:
+
+```
+<va-icon size="4" name="alarm" class="alarm-icon" >
+
+.alarm-icon {
+  color: var(--vads-color-white);
+}
+
+```
+
 ### How to migrate from Font Awesome to va-icon
 
 Follow our detailed instructions on [how to migrate to va-icon]({{ site.baseurl }}/about/developers/using-web-components#how-to-migrate-from-font-awesome-to-va-icon).
