@@ -13,7 +13,6 @@ anchors:
   - anchor: Examples - v3
   - anchor: Examples - v1
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
@@ -71,7 +70,10 @@ anchors:
 
 * The [error message is placed above the file input area](#error-message).
 * To display a custom error message, pass text into the `error` property.
-* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 

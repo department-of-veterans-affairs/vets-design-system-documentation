@@ -10,15 +10,13 @@ status: use-deployed
 uswds-v3: default
 web-component: va-text-input
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -31,6 +29,10 @@ anchors:
 ### Pattern
 
 {% include storybook-preview.html story="uswds-va-text-input--pattern" link_text="va-text-input Pattern" %}
+
+### Valid Range
+
+{% include storybook-preview.html story="uswds-va-text-input--valid-range" link_text="va-text-input valid range" %}
 
 ### Autocomplete
 
@@ -46,13 +48,17 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 {% include storybook-preview.html story="uswds-va-text-input--with-inline-hint-text" link_text="va-text-input with inline Hint text" %}
 
-### With Additional Info
+### Additional Info
 
 {% include storybook-preview.html story="uswds-va-text-input--with-additional-info" link_text="va-text-input with Additional info" %}
 
-### With Character count
+### Character count
 
 {% include storybook-preview.html story="uswds-va-text-input--with-character-count" link_text="va-text-input with character count" %}
+
+### Currency
+
+{% include storybook-preview.html story="uswds-va-text-input--with-currency" link_text="va-text-input with currency" %}
 
 ### Forms pattern - Single
 
@@ -84,12 +90,6 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 {% include storybook-preview.html story="uswds-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html story="components-va-text-input--default" link_text="va-text-input v1 default and additional variations" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/text-input/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -98,11 +98,13 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 * **Required.** Indicates to the user that the text input field is required in order to submit the form.
 * **Pattern.** Allows for a pattern of characters to be required for the text input entry to be valid.
+* **Valid range.** Allows for a range of numeric values to be required for the text input entry to be valid.
 * **Autocomplete.** Specifies what if any permission the user agent has to provide automated assistance in filling out form field values, as well as guidance to the browser as to the type of information expected in the field.
-* **With Hint Text.** Provides a short hint to the user on what to enter into the field.
-* **With Inline Hint Text.** Provides a very short hint to the user within the label on what to enter into the field. Hint text is preferred to inline hint text.
-* **With Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
-* **With Character count.** Implements the [USWDS Character count](https://designsystem.digital.gov/components/character-count/) functionality which displays the character count below the text input. However, our implementation differs from USWDS in that it does not allow for entering more text after the maxlength.
+* **Hint Text.** Provides a short hint to the user on what to enter into the field.
+* **Inline Hint Text.** Provides a very short hint to the user within the label on what to enter into the field. Hint text is preferred to inline hint text.
+* **Additional Info.** Depicts how to use the [additional info component]({{ site.baseurl }}/components/additional-info) within a va-text-input.
+* **Character count.** Implements the [USWDS Character count](https://designsystem.digital.gov/components/character-count/) functionality which displays the character count below the text input. However, our implementation differs from USWDS in that it does not allow for entering more text after the maxlength.
+* **Currency.** Indicates that the input accepts a dollar amount.
 * **Forms pattern - Single.** This variation can be used to support the [One thing per page content principle]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) where we gather one decision, question, or piece of information on the page.
 * **Forms pattern - Single error.** Shows the error state for the single form field pattern.
 * **Forms pattern - Multiple .** This variation also can be used to support the [One thing per page content principle]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task#design-principles) where we gather one decision, question, or piece of information on the page.
@@ -110,6 +112,22 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Success.** Indicates to the user in realtime that an error has been cleared and the text entry is now valid. NOTE: This isn't typically used currently.
 * **Internationalization.** Demonstrates how this components changes when used with the language toggle.
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
+
+### Errors
+
+* Refer to the specific error examples above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
+
+### Hint text
+
+* Refer to the [hint text example](#hint-text) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -126,4 +144,3 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 ### Additional accessibility considerations for VA
 
 * **Avoid `placeholder` text.** Excluding our max characters variation (v1), avoid using placeholder text. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. Also, placeholder text is no longer visible once a user clicks into the field. Thus users will no longer have that text available when they need to review their entries. People who have cognitive or visual disabilities have additional problems with placeholder text.
-* **When using placeholder text, provide screen reader accessible text.** When using the placeholder prop, which is used automatically by the Max length variation (v1 only), additional work is required to make the component accessible. Screen readers such as JAWS and NVDA don't read placeholder text. Placeholder text is a visual addition only. Thus when using placeholder text to provide important information visually you must also convey this information to screen reader users as well. To do this, add screen read only text within a `<span>` using the `.sr-only` CSS class and place the span and text where you would like it to be read out, typically after the field label.

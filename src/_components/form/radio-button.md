@@ -10,15 +10,13 @@ status: use-deployed
 uswds-v3: default
 web-component: va-radio
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -60,12 +58,6 @@ anchors:
 
 {% include storybook-preview.html height="250px" story="components-va-radio--internationalization" link_text="va-radio internationalization" %}
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="300px" story="components-va-radio--default" link_text="va-radio v1 default and additional variations" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/radio-buttons/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -75,17 +67,25 @@ anchors:
 * Use the [Hint text](#hint-text) variation to provide additional information that pertains to the question being asked or all of the options presented.
 * Use the [Label header](#label-header) variation when a heading is required within the `legend` that acts as a label for the radio buttons. This can aid users in navigating the form questions, particularly in the [sub-task pattern]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task)
 * Use the [Description text](#description-text) variation to provide additional details about one or more radio button options. This variation is superseded by the Tile variation.
-* Use the [Tile](#tile) variation to provide additional details about one or more radio button options within a large and well defined tap target. 
+* Use the [Tile](#tile) variation to provide additional details about one or more radio button options within a large and well defined tap target.
 
 {% include content/conditionally-revealed-fields.md %}
 
 ### Errors
 
-* Radio buttons typically appear inside of `<fieldset>`s. The class name of `usa-input-error` may be placed on the `<fieldset>` that contains all of the radio buttons.
-* The error message is placed just below the `<legend>`.
-* See [form error handling]({{ site.baseurl }}/components/form/#error-handling) for additional guidance.
+* Refer to the specific error examples above.
 
-{% include snippet.html content='html/error-radio-buttons.html' %}
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
+
+### Hint text
+
+* Refer to the [hint text example](#hint-text) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 

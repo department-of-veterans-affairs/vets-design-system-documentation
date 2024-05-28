@@ -5,14 +5,13 @@ has-parent: /components/button/
 title: Button group
 aka: Button pair
 research-link: Buttons
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A153&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=3109%3A381&mode=design&t=HPTk6DwbG1oCM61n-1
 intro-text: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically. 
 status: use-deployed
 uswds-v3: default
 web-component: va-button-pair
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -20,7 +19,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default (Yes/No)
 
@@ -33,12 +32,6 @@ anchors:
 ### Continue
 
 {% include storybook-preview.html story="uswds-va-button-pair--continue" link_text="Back/Continue button pair" height="60px" %}
-
-## Examples - v1
-
-### Default (Yes/No)
-
-{% include storybook-preview.html story="components-va-button-pair--default" link_text="Default button pair" height="60px" %}
 
 ## Usage
 

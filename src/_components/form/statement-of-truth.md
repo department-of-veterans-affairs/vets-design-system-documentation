@@ -11,7 +11,7 @@ status: use-with-caution-candidate
 uswds-v3: default
 web-component: va-statement-of-truth
 anchors:
-  - anchor: Examples - v3
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -20,7 +20,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -66,7 +66,7 @@ The component works by asking the user to populate the text-input field with the
 
 ## Content considerations
 
-### Error message templates 
+### Error message templates
 
 **When a user doesn’t enter the name they entered previously in the form**
 

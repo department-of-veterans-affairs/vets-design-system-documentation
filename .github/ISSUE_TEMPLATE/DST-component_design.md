@@ -3,7 +3,7 @@ name: "DST - Component design"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design"
 labels: platform-design-system-team
-assignees: babsdenney, LillyBoot
+assignees: babsdenney, danbrady, lwwright7
 
 ---
 
@@ -27,8 +27,8 @@ If this is a pattern or component that is already in existence, conduct a small-
 - [ ] Conduct small audit if necessary (if component already exists and we are building a new version)
 - [ ] Review DST backlog for outstanding design issues with this component, if necessary (if this component already exists and we are building a new version)
 - [ ] Create designs for component
-- [ ] Review designs with PO and/or DSC
-- [ ] Review designs with an accessibility specialist
+- [ ] Review designs with PO and DST designers 
+- [ ] Review designs with developers and accessibility specialist
 - [ ] Review designs with DST members (Carol can help schedule this)
 - [ ] Address any comments from reviews, if necessary
 - [ ] Comment on this ticket with any accessibility considerations engineers may need to know
@@ -37,6 +37,6 @@ If this is a pattern or component that is already in existence, conduct a small-
 
 ## Acceptance Criteria
 - [ ] Component design is complete and has been reviewed
-- [ ] Accessibility considerations have been added to this ticket, if necessary
+- [ ] Accessibility and development considerations have been added to this ticket, if necessary
 - [ ] Content specifications have been added to this ticket, if necessary
 - [ ] Link to design has been added to this ticket and shared in Slack

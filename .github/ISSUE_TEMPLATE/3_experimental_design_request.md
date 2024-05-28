@@ -3,6 +3,7 @@ name: "3. Experimental design system request"
 about: Propose an idea for a new component or pattern
 title: "Experimental Design [component or pattern name]"
 labels: platform-design-system-team, experimental_design
+assignees: caw310
 
 ---
 
@@ -33,6 +34,10 @@ labels: platform-design-system-team, experimental_design
 ## Guidance
 
 > What would you want to tell other teams about this component or pattern?
+
+## Your team
+
+> Tell us what team you are on. 
 
 ## Research (optional)
 

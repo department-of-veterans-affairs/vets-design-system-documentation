@@ -54,6 +54,13 @@
   color: $color-base;
 }
 
+.site-mobile-nav__link {
+  display: flex;
+  gap: $units-0p5;
+  padding: $units-2;
+  text-decoration: none;
+}
+
 .site-overlay {
   position: fixed;
   top: 0;

@@ -106,6 +106,22 @@ anchors:
 * **With Currency.** Indicates to the user the expected input is US currency.
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
+### Errors
+
+* Refer to the specific error examples above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
+
+### Hint text
+
+* Refer to the [hint text example](#hint-text) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
+
 {% include component-docs.html component_name=page.web-component %}
 
 {% include content/using-message-aria-describedby.md %}

@@ -10,16 +10,14 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 uswds-v3: default
 web-component: va-memorable-date
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -65,12 +63,6 @@ anchors:
 
 {% include storybook-preview.html height="200px" story="uswds-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--default" link_text="va-memorable-date v1 along with additional variations" %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/memorable-date/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -78,6 +70,22 @@ anchors:
 ### Choosing between variations
 
 * The v3 version of this component uses a select element instead of a text input for the month. This was done after research conducted by the USWDS team. Teams should note the maturity of this component and proceed with caution.
+
+### Errors
+
+* Refer to the specific error examples above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
+
+### Hint text
+
+* Refer to the [hint text example](#extra-hint-text) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 
