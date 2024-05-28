@@ -5,7 +5,7 @@ intro-text: At VA, we aim to create language that’s accurate for all our audie
 anchors:
   - anchor: Gender-neutral pronouns and terms for family relationships
   - anchor: Language that doesn’t assume an ability or device
-  - anchor: Use “we” and “us” instead of specific roles and titles
+  - anchor: First-person language instead of specific roles and titles
 ---
 
 ## Gender-neutral pronouns and terms for family relationships 
@@ -125,7 +125,7 @@ Select the blue **Submit** button
 </div>
 </div>
 
-## Use “we” and “us” instead of specific roles and titles
+## First-person language instead of specific roles and titles
 
 ### We avoid specific titles of VA business lines or offices
 
