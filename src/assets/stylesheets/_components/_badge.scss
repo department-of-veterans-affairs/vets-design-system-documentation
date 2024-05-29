@@ -10,12 +10,12 @@
 .va-sidebarnav .usa-sidenav-list > li, 
 main {
   .site-sidenav-status {
-    font-size: 1rem;
-    padding-right: 0.5rem;
+    font-size: 0.625rem;
+    padding-right: 0.3125rem;
   }
 
   .site-component-status-heading .site-component-status {
-    font-size: 2rem;
+    font-size: 1.25rem;
   }
 
   .site-component-status--use,
@@ -58,9 +58,9 @@ main {
 }
 
 .site-component-badge-link {
-  font-size: 1.5rem;
+  font-size: 0.9375rem;
   margin-left: units(0.5);
-  padding: 0.1rem 0.7rem;
+  padding: 0.0625rem 0.4375rem;
   border-radius: 2px;
   text-transform: uppercase;
 }

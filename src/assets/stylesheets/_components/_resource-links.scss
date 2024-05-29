@@ -26,7 +26,7 @@
 // These styles are for links to resources per-component
 
 .site-component-resources-links {
-  margin: 1rem 1rem units(3) 1rem;
+  margin: 0.625rem 0.625rem units(3) 0.625rem;
 
   &__list {
     margin-top: 0;
@@ -37,7 +37,7 @@
 
   &__title {
     font-family: $font-serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     margin: units(0.5) 0;
   }
 

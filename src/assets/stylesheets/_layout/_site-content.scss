@@ -13,13 +13,13 @@
       display: block;
       position: -webkit-sticky;
       position: sticky;
-      top: 6rem;
+      top: 3.75rem;
       bottom: 0;
-      height: calc(100vh - 6rem);
+      height: calc(100vh - 3.75rem);
       overflow-y: auto;
       flex-basis: 30%;
-      min-width: 25rem; // the lack of this causes the sidenav to not display at 840px for some odd reason
-      max-width: 28rem;
+      min-width: 15.625rem; // the lack of this causes the sidenav to not display at 840px for some odd reason
+      max-width: 17.5rem;
     }
   }
 
