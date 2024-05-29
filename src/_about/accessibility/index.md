@@ -88,8 +88,9 @@ Submit a [Sitewide Content, Accessibility, and IA intake form ticket](https://gi
 
 ### Learn how to make accessible products on the modernized VA.gov platform
 
-- [Accessibility for developers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-testing)
-- [Accessibility for researchers](https://depo-platform-documentation.scrollhelp.site/research-design/research-assistive-technology-sessions)
+- [Resources for researchers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-on-va-gov#AccessibilityonVA.gov-ResourcesforResearchers)
+- [Resources for designers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-on-va-gov#AccessibilityonVA.gov-ResourcesforDesigners)
+- [Resources for developers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-on-va-gov#AccessibilityonVA.gov-ResourcesforDevelopers)
+- [Resources for product managers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-on-va-gov#AccessibilityonVA.gov-ResourcesforProductManagers)
 - [How to prepare for an accessibility staging review](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/prepare-for-an-accessibility-staging-review)
 - [Our plain language guidelines](https://design.va.gov/content-style-guide/plain-language/)
-
