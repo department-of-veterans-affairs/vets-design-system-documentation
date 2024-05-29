@@ -47,13 +47,13 @@
 
 .site-header__logo-text {
   display: block;
-  font-size: 1.3125remrem;
+  font-size: 1.3125rem;
   font-weight: 300;
   font-style: normal;
   margin: $units-3 0;
 
   @include media($nav-width) {
-    font-size: 2remrem;
+    font-size: 2rem;
   }
 }
 
