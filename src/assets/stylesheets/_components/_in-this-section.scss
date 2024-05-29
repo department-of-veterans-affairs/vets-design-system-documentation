@@ -3,7 +3,7 @@
 
   &__list {
     @include media($medium-screen) {
-      columns: 2 12.5rem;
+      columns: 2 20rem;
       column-gap: units(2);
     }
     margin-top: 0;
@@ -15,7 +15,7 @@
 
   &__title {
     font-family: $font-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: normal;
     margin: 0.4em 0em;
   }

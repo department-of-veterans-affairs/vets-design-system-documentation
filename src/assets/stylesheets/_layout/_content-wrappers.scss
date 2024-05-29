@@ -128,7 +128,7 @@
   > ol,
   > ul {
     max-width: 77ch;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   > ul:not(.usa-unstyled-list) {
@@ -176,13 +176,13 @@
     padding: units(2);
 
     .highlight {
-      font-size: 1.0625rem;
+      font-size: 1.7rem;
     }
   }
 
   > .va-introtext {
     font-family: $font-sans;
-    font-size: 1.375rem;
+    font-size: 2.2rem;
     margin: units(3) 0;
   }
 }

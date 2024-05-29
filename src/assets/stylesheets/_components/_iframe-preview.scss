@@ -51,7 +51,7 @@
   border-radius: 0;
   border: .5px solid white;
   border-bottom: 0;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: $units-1 * 2 $units-1;
   width: 100%;
@@ -64,7 +64,7 @@
   }
 
   @include media($medium-screen) {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   &.is-current {
