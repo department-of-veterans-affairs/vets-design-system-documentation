@@ -68,7 +68,7 @@ After adding each item, the user is shown a summary of what they have added so f
 * **Edit items.** Clicking the edit link returns the user to the first question of the loop and the user has now entered an "edit flow". After editing items, the user is returned to the summary page and alert is shown confirming their item has been updated. When entering an edit flow, the H3s of the pages are updated to include "Edit [previous h3 title]".
 * **Delete items.** Clicking the delete button allows a user to confirm that they want to delete the entire loop and all of the answers they have given through the entire loop. A modal pops up asking the user to confirm their choice. After they remove a card, they are returned to the summary page where they can choose to add another. If the user has removed all items, and yet one item is required, the user is returned to the first page of the loop where a warning alert is displayed reminding the user at least one item is required.
 * **Add another item.** If the user chooses to add another item they return to the first question page to add the new item.
-Continue to the next question in the form
+* **Continue to the next question in the form**
 
 These summary cards work the same on the review page of the form.
 
