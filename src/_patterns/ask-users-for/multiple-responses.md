@@ -82,21 +82,17 @@ These summary cards work the same on the review page of the form.
 
 ### Code & content considerations
 
-The pattern has baked-in error and validation messages for:
-
-* Successful editing of an item
-* Successful removal of an item
-* When the maximum number of items have been added
-* When all items in a required loop have been removed
-* When a user wants to cancel adding an item mid-flow
-
-The pattern also has baked-in patterns for using the same word for adding an item on question pages, summary cards, and edit pages. For example:
-
-* Do you want to add another [dependent]?
-* Review your [dependents]
-* Remove a [dependent]
-* You have added the maximum number of [dependents]
-
+* **Use the built in error and validation messages**.
+  * Successful editing of an item
+  * Successful removal of an item
+  * When the maximum number of items have been added
+  * When all items in a required loop have been removed
+  * When a user wants to cancel adding an item mid-flow
+* **Use the built in functionality for using the same word for adding an item on question pages, summary cards, and edit pages.** For example:
+  * Do you want to add another [dependent]?
+  * Review your [dependents]
+  * Remove a [dependent]
+  * You have added the maximum number of [dependents]
 * **If at least one item is required, use hint text to let users know.** The pattern must indicate to users that at least one item is required. If all items are removed, return users to the first page of the loop to gather information.
 * **If there are a maximum number of items, make this clear to the user.** You can use hint text to do this. Also, after the user has entered the maximum number allowed the pattern removes the "add another" question, and displays a warning instructing the user that they have entered the maximum allowed and they can either edit, or remove a card if they need to add more information.
 
