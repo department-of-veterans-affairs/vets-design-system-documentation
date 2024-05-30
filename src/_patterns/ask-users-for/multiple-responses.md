@@ -54,7 +54,7 @@ This method is also recommended as the user first identifies the items in a list
 
 The loop can be repeated as many times as your form allows.
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-requried }}">
+<a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-required }}">
   View an example of a multi-page required loop
 </a>
 <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-optional }}">
