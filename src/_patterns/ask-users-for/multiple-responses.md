@@ -44,7 +44,7 @@ This method is also recommended as the user first identifies the items in a list
 
 {% include component-example.html alt="A multi-page multiple response flow diagram." file="/images/patterns/ask-users-for/multiple-responses/multiple-response-flow.png" caption="A diagram explaining the parts of the multi-page pattern." %}
 
-1. A user starts enters either a required or optional list and loop flow.
+1. A user enters either a required or optional multiple response flow.
   * **A required item for the list and loop.** The required version has an intro page explaining that we're about to ask a series of questions about a thing, and if there's a limit, they can enter up to that limit. Teams can customize how they want this page to work.
   * **Completely optional list and loop.** For an optional list and loop, the question is asked "Do you have [a thing] to add? yes/no" Yes enters the loop.
 2. The first page of the list and loop asks them to identify the thing they are adding. In this case, treatment records from a facility. Designers can choose how they want to construct the pages of the list and loop. We recommend following the one thing per page pattern as we do throughout our forms.
@@ -66,7 +66,7 @@ The loop can be repeated as many times as your form allows.
 After adding each item, the user is shown a summary of what they have added so far and they can:
 
 * **Edit items.** Clicking the edit link returns the user to the first question of the loop and the user has now entered an "edit flow". After editing items, the user is returned to the summary page and alert is shown confirming their item has been updated. When entering an edit flow, the H3s of the pages are updated to include "Edit [previous h3 title]"
-* **Delete items.** Clicking the delete button, allows a user to confirm that they want to delete the entire loop and all of the answers they had given through the entire loop. A modal pops up asking the user to confirm their choice. After they remove a card, they are returned to the summary page where they can choose to add another. IF the user has removed all items, and yet one item is required, the user is returned to the first page of the loop where a warning alert is displayed reminding the user at least one item is required.
+* **Delete items.** Clicking the delete button allows a user to confirm that they want to delete the entire loop and all of the answers they have given through the entire loop. A modal pops up asking the user to confirm their choice. After they remove a card, they are returned to the summary page where they can choose to add another. IF the user has removed all items, and yet one item is required, the user is returned to the first page of the loop where a warning alert is displayed reminding the user at least one item is required.
 * **Add another item.** If the user chooses to add another item they return to the first question page to add the new item.
 Continue to the next question in the form
 
@@ -82,7 +82,7 @@ These summary cards work the same on the review page of the form.
 
 ### Code & content considerations
 
-The pattern has baked in error and validation messages for:
+The pattern has baked-in error and validation messages for:
 
 * Successful editing of an item
 * Successful removal of an item
@@ -90,7 +90,7 @@ The pattern has baked in error and validation messages for:
 * When all items in a required loop have been removed
 * When a user wants to cancel adding an item mid-flow
 
-The pattern has also baked patterns for using the same word for adding an item on question pages, summary cards, and edit pages. For example:
+The pattern also has baked-in patterns for using the same word for adding an item on question pages, summary cards, and edit pages. For example:
 
 * Do you want to add another [dependent]?
 * Review your [dependents]
@@ -112,7 +112,7 @@ The Single page implementation variation of this pattern exposes an initial set 
 
 {% include component-example.html alt="Form example requesting service history from a Veteran." file="/images/patterns/ask-users-for/multiple-responses/editing-service-period.png" caption="Form collecting service history information from a Veteran using the single page implementation of this pattern." class="x2" %}
 
-* The fields are presented with an option to "Save" the initial entry and to "Add another". Selecting "Add another" before filing in the required fields and clicking "Save" [results in errors associated with each missing field]({{ site.baseurl }}/images/patterns/ask-users-for/multiple-responses/editing-service-period-errors.png).
+* The fields are presented with an option to "Save" the initial entry and to "Add another". Selecting "Add another" before filling in the required fields and clicking "Save" [results in errors associated with each missing field]({{ site.baseurl }}/images/patterns/ask-users-for/multiple-responses/editing-service-period-errors.png).
 
 ### Review for edit and remove
 
