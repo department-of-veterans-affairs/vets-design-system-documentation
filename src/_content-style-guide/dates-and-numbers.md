@@ -85,6 +85,12 @@ from 8:00 a.m. to noon ET
 
 {% include content/phone-numbers.md %}
 
+## Fax numbers
+
+Don’t hyperlink or add aria labels to fax numbers. Make it clear in the surrounding text when a number is a fax number to avoid people mistaking it as a phone number.
+
+**Like this:** If you’re in the U.S., fax your application to 844-531-7818.
+
 ## Addresses
  
 {% include content/addresses.md %}
