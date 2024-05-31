@@ -19,7 +19,7 @@ We use numerals or figures for all numbers, including 1 to 10. It's easier on th
 
 - Spell out "one" when it's used by itself in a sentence, or in expressions like one-to-one, one-on-one, and one-time.
 - Spell out ordinals up to tenth (first, second, third, etc.). Then use the style: 11th, 12th, etc. 
-- When used as part of a series, date, or a range, always default to numerals.
+- When used as part of a series, date, or range, always default to numerals.
 
 <div class="do-dont">
 <div class="do-dont__do">
