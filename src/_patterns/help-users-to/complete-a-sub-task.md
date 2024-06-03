@@ -22,7 +22,7 @@ Within our design philosophy of "[Keep it simple](https://department-of-veterans
 
 > Limit the number of decisions a Veteran needs to make in one screen. We usually try to keep the number of questions under five. Two or three is even better.
 
-The sub-task pattern provides guidance on how to "keep it simple". This pattern replaces the deprecated Wizard pattern. 
+The sub-task pattern provides guidance on how to "keep it simple". This pattern replaces the deprecated Wizard pattern.
 
 ## Usage
 
@@ -51,8 +51,8 @@ This pattern is an example of the [One thing per page]({{ site.baseurl }}/patter
 
 {% include component-example.html alt="Supplemental claim sub-task example." file="/images/patterns/help-users-to/complete-a-sub-task/supplemental-claim-sub-task.png" caption="Supplemental claim at sub-task at the start of the process to choose the correct path." width="50%" %}
 
-* An example of a task that helps the user determine if the supplemental claim service is suitable to their needs. It starts in screen 1 by asking the user to answer a single question via a radio button followed by a continue button that reveals either screen 2 or 3 based on the answer. This is in contrast to the deprecated Wizard pattern which progressively disclosed additional questions on the same screen. 
-* Once a user decides which type of Supplemental Claim they are filing they see screen 2 if the answer using the top radio button option or screen 3 if they answer using the bottom radio button option. Screen 2 allows the user to start the process and navigates to an introduction page. Screen 3 gives users a clear next step to take and ends the flow. 
+* An example of a task that helps the user determine if the supplemental claim service is suitable to their needs. It starts in screen 1 by asking the user to answer a single question via a radio button followed by a continue button that reveals either screen 2 or 3 based on the answer. This is in contrast to the deprecated Wizard pattern which progressively disclosed additional questions on the same screen.
+* Once a user decides which type of Supplemental Claim they are filing they see screen 2 if the answer using the top radio button option or screen 3 if they answer using the bottom radio button option. Screen 2 allows the user to start the process and navigates to an introduction page. Screen 3 gives users a clear next step to take and ends the flow.
 
 ### Pre-check-in experience
 
@@ -110,14 +110,16 @@ This pattern can be implemented with standard form elements and other optional c
 * Questions, decisions, and other pieces of information in the sub-task must be in [plain language]({{ site.baseurl }}/content-style-guide/content-principles/plain-language).
 * Start with essential, required questions then move to optional questions if necessary.
 * Don't nest multiple questions within one question. Most questions should be answerable via the [Yes/No button pair]({{ site.baseurl }}/components/button/button-pair#default-yesno)
-* Group similar questions into a series of questions around a topic. For example, contact information questions could be grouped so those questions appear in series rather than sporadically. 
+  * Example: We would NOT ask, ‘Do you have a cat, and do you like that cat?’ in one question. Those should be two separate questions.
+* Group similar questions into a series of questions around a topic. For example, contact information questions could be grouped so those questions appear in series rather than sporadically.
 * Use research and card sorting to determine the best order of questions.
 * Use clear and concise [button labels]({{ site.baseurl }}/content-style-guide/button-labels).
 * Reference [writing questions for forms](https://service-manual.nhs.uk/content/how-to-write-good-questions-for-forms/get-the-questions-into-order) for additional considerations.
 
 ## Accessibility considerations
 
-* Titles (h1s) of sub-task pages must be unique. 
+* Titles (h1s) of sub-task pages must be unique.
+* Title tags should pull from the form or task name, not the H1, for each page in the flow. Example: every page in a subtask flow for the Income Limits tool should have the title tag Income Limits | Veterans Affairs, regardless of what the H1 is.
 * Use of the Yes/No button pair is limited to mobile specific flows as it does not remember the user's previous choice when navigating backwards in a flow. Using radio options along with a submit button is more materially honest and semantically correct as it splits the selection (input) from submission (button).
 * This pattern replaces the deprecated Wizard pattern as it avoids the following problems with that pattern. Thus ensure that your Sub-task does not exhibit the following:
   * No clear end point.
