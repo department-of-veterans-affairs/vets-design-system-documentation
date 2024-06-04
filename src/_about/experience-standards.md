@@ -74,9 +74,9 @@ GitHub label: [exp-std-content-errors](https://github.com/department-of-veterans
 
 GitHub label: [exp-std-best-practice](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-best-practice)
 
-#### User encounters consistent, clear design components
+#### User encounters consistent, clear design components and patterns
 
-**There’s an issue when:** User encounters design components that are inconsistent or confusing.
+**There’s an issue when:** User encounters design components or patterns that are inconsistent or confusing.
 
 GitHub label: [exp-std-design-consistency](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-design-consistency)
 
@@ -86,9 +86,9 @@ GitHub label: [exp-std-design-consistency](https://github.com/department-of-vete
 
 GitHub label: [exp-std-content-va](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-content-va)
 
-#### User encounters up-to-date design components
+#### User encounters up-to-date design components and patterns.
 
-**There’s an issue when:** User encounters design components that are out of date.
+**There’s an issue when:** User encounters design components or patterns that are out of date.
 
 GitHub label: [exp-std-design-version](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-design-version)
 
@@ -205,8 +205,8 @@ GitHub label: [exp-std-flow-completion](https://github.com/department-of-veteran
 
 GitHub label: [exp-std-element-comprehension](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-element-comprehension)
 
-#### User experiences predictable interactions with components
+#### User experiences predictable interactions with components and patterns
 
-**There’s an issue when:** User experiences an unexpected interaction with a component.
+**There’s an issue when:** User experiences an unexpected interaction with a component or pattern.
 
 GitHub label: [exp-std-unexpected-interaction](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-unexpected-interaction)
