@@ -25,5 +25,5 @@
   Create a cache-busting string based on build timestamp.
 {% endcomment -%}
 {%- assign cacheBust = site.time | date:'?v=%s' -%}
-<script src="{{ '/assets/javascripts/site.js/' | prepend: site.baseurl | append: cacheBust }}"></script>
+<script src="{{ '/assets/javascripts/site.js' | prepend: site.baseurl | append: cacheBust }}"></script>
 <script src="{{ '/vendor/javascripts/formation.js' | prepend: site.baseurl | append: cacheBust }}"></script>
