@@ -18,7 +18,7 @@ Use bolded text to call attention to words or phrases that will help the Veteran
 - Numerals, for scanability, that we know the Veteran is on the page to look for—like a dollar figure. [Review examples on Disability housing grants for Veterans page](https://www.va.gov/housing-assistance/disability-housing-grants/)
 - The different types of accounts through which you can sign in to VA.gov: Login.gov, My HealtheVet, DS Logon, and ID.me. [Review examples on View your VA lab and test results online page](https://www.va.gov/health-care/view-test-and-lab-results/)
 - When there’s a “Note:” or “Example:” [Review examples on VA pension rates for Veterans page](https://www.va.gov/pension/veterans-pension-rates/)
-- The design element or text link we want the user to select when we’re explaining how to do a task. For example, "In the **File** menu, choose **Save**." [Review an example on Verifying your identity](https://www.va.gov/resources/verifying-your-identity-on-vagov/)
+- The design element or text link we want the user to select when we’re explaining how to do a task. For example, "In the **File** menu, choose **Save**." [Review an example on Verifying your identity page](https://www.va.gov/resources/verifying-your-identity-on-vagov/)
 - If you’re presenting a series of label and value pairs, such as the contact information (address, phone number, etc.) for a location. The label is always bold, not the value, and the label and value are separated by a line break as opposed to a colon. [Review examples on H. John Heinz III Department of VA Medical Center page](https://www.va.gov/pittsburgh-health-care/locations/h-john-heinz-iii-department-of-veterans-affairs-medical-center/#caregiver-support)
 
 ### Don’t use bold in these cases
