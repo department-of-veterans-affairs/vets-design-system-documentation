@@ -35,6 +35,11 @@ assignees: caw310
 
 > What would you want to tell other teams about this component or pattern?
 
+## Collaboration Cycle Ticket
+
+> Provide a link to your collaboration cycle ticket. 
+
+
 ## Your team
 
 > Tell us what team you are on. 
