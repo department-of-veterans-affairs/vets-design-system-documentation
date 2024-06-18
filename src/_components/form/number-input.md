@@ -6,7 +6,7 @@ title: Number input
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A84422&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Number input elements are used for numeric inputs."
-status: use-deployed
+status: use-with-caution-available
 uswds-v3: default
 web-component: va-number-input
 anchors:
@@ -17,24 +17,12 @@ anchors:
   - anchor: Accessibility considerations
 ---
 
-## Examples
+<va-alert status="warning">
+  <h2 slot="headline">Scheduled for Deprecation</h2>
+  <p>This component is planned to be deprecated and it's functionality will be added to <a href="{{ site.baseurl }}/components/form/text-input">Text Input</a>. View the <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/2609">deprecation issue</a> for the current status.</p>
+</va-alert>
 
-<va-alert
-    class="vads-u-margin-bottom--1"
-    close-btn-aria-label="Close notification"
-    disable-analytics="false"
-    full-width="false"
-    slim
-    status="warning"
-    uswds
-    visible="true"
-  >
-    <React.Fragment key=".0">
-      <p class="vads-u-margin-y--0">
-        The v1 and v3 variations of this component are identical, excluding the Currency variation which will be added to v3 at a later date. This component does not exist in the USWDS. Teams should switch to the v3 variation in preparation for global color and typography changes that the v3 variation will accept. 
-      </p>
-    </React.Fragment>
-  </va-alert>
+## Examples
 
 ### Default
 
