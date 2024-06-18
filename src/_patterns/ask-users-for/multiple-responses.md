@@ -102,7 +102,10 @@ On the summary page, ensure that the edit links and delete buttons have accessib
 
 ## How to design and build - Single page
 
-The Single page implementation variation of this pattern exposes an initial set of fields to collect a set of information with an option to add additional sets of information, one at a time. Note that this variation is currently used on VA.gov but is no longer the preferred variation for this pattern.
+The Single page implementation variation of this pattern exposes an initial set of fields to collect a set of information with an option to add additional sets of information, one at a time.
+
+<!-- Note: Wrapping va-alert in 'p' to maintain similar line length / max-width -->
+<p><va-alert status="info" slim> This single-page variation is currently used on VA.gov, but is no longer the preferred variation for this pattern. The <a href="#how-to-design-and-build---multi-page">multi-page pattern</a> is recommended for new designs.</va-alert></p>
 
 ### Collection
 
