@@ -110,7 +110,7 @@ This pattern can be implemented with standard form elements and other optional c
 * Questions, decisions, and other pieces of information in the sub-task must be in [plain language]({{ site.baseurl }}/content-style-guide/content-principles/plain-language).
 * Start with essential, required questions then move to optional questions if necessary.
 * Don't nest multiple questions within one question. Most questions should be answerable via the [Yes/No button pair]({{ site.baseurl }}/components/button/button-pair#default-yesno)
-  * Example: We would NOT ask, ‘Do you have a cat, and do you like that cat?’ in one question. Those should be two separate questions.
+  * Example: We would NOT ask, "Do you have a cat, and do you like that cat?" in one question. Those should be two separate questions.
 * Group similar questions into a series of questions around a topic. For example, contact information questions could be grouped so those questions appear in series rather than sporadically.
 * Use research and card sorting to determine the best order of questions.
 * Use clear and concise [button labels]({{ site.baseurl }}/content-style-guide/button-labels).
@@ -119,7 +119,7 @@ This pattern can be implemented with standard form elements and other optional c
 ## Accessibility considerations
 
 * Titles (h1s) of sub-task pages must be unique.
-* Title tags should pull from the form or task name, not the H1, for each page in the flow. Example: every page in a subtask flow for the Income Limits tool should have the title tag Income Limits | Veterans Affairs, regardless of what the H1 is.
+* [Title tags]({{ site.baseurl }}/content-style-guide/title-tags) should pull from the form or task name, not the H1, for each page in the flow. Example: every page in a subtask flow for the Income Limits tool should have the title tag "Income Limits \| Veterans Affairs", regardless of what the H1 is.
 * Use of the Yes/No button pair is limited to mobile specific flows as it does not remember the user's previous choice when navigating backwards in a flow. Using radio options along with a submit button is more materially honest and semantically correct as it splits the selection (input) from submission (button).
 * This pattern replaces the deprecated Wizard pattern as it avoids the following problems with that pattern. Thus ensure that your Sub-task does not exhibit the following:
   * No clear end point.
