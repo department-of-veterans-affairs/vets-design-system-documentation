@@ -133,7 +133,7 @@ Note: Some design components may use the exclamation point as an icon for visual
 
 Use curly quotation marks (ex. “quotation marks”) instead of straight up and down ones (ex. &quot;quotation marks&quot;).
 
-Use quotation marks when referencing free text that users submit in a form field (like search input).
+Use quotation marks when referencing free text that people submit in a form field (like search input).
 
 Don’t use quotation marks when referencing buttons, screens, or section headers in instructions. For these situations, use bold only.
 
