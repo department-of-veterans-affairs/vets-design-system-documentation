@@ -68,13 +68,15 @@ We use certain symbols in content throughout VA. Well-known signs and symbols ca
 
 ### Dollar sign
 In general, use the dollar sign instead of spelling out dollars.  
-Like this: We’ll pay the tuition and mandatory fees up to $27,120.05 for this academic year (August 1, 2023, to July 31, 2024).
+
+**Example:** We’ll pay the tuition and mandatory fees up to $27,120.05 for this academic year (August 1, 2023, to July 31, 2024).
 
 Add "$" to table cells so screenreaders read the number as dollars and cents and not as a standard decimal.
 
 ### Degree symbol
 When pairing with a specific number, use the degree symbol.  
-Like this: The temperature was 10°C
+
+**Example:** The temperature was 10°C
 
 ### Percent sign 
 Use numerals and % symbol, with no space between the number and %. This style follows the practice for scientific and technical writing, and differs from 18F. 
