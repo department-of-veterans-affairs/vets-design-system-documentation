@@ -5,6 +5,7 @@ anchors:
   - anchor: Dates and years
   - anchor: Times and time zones
   - anchor: Phone numbers
+  - anchor: Fax numbers
   - anchor: Addresses
 ---
 
