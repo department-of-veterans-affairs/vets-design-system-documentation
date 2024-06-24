@@ -9,7 +9,11 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
-
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+  uswds
 >
   <h2 slot="headline">
     v1 components have now been deprecated
@@ -22,21 +26,23 @@ title: What’s new?
 </va-alert>
 
 ## May 2024
-The team continued to synch to USWDS v3 specifically aligning typography and updated and fixed v3 components. The Figma Library continued to be built out and updated. 
+
+The team continued to synch to USWDS v3 specifically aligning typography and updated and fixed v3 components. The Figma Library continued to be built out and updated.
 
 ### New features and components
+
 * Experimental Design - Button - Icon (#1559)
 * Experimental Design [new icon request: pill] (#2811)
 * Add icons for the mobile app (#2865)
 
 ### Updated components and bug fixes
-* Allow <va-link> to be a white link instead of default blue (#2602) 
+
+* Allow `<va-link>` to be a white link instead of default blue (#2602)
 * Add `aria-describedby` attribute/functionality to va-button (#2739)
 * Formation Deprecation - Styles Migration - Swap content-build import (#2539)
-* Allow <va-link> to be a white link instead of default blue (#2602)
 * Screen Reader bug: Signature / Statement of Truth (JAWS) (#2649)
 * Remove V1 Modal from Component Library and Storybook (#2661)
-* Component Analytics enhancement request: Provide context for <va-link> (#2693)
+* Component Analytics enhancement request: Provide context for `<va-link>` (#2693)
 * Cannot submit a form with va-button (#2734)
 * Statement of Truth change events do not contain the form values (#2783)
 * Remove the v1 components in Storybook (#2800)
@@ -44,30 +50,32 @@ The team continued to synch to USWDS v3 specifically aligning typography and upd
 * DST Staging Review: Insufficient color contrast on focus/hover states (#2833)
 * Accessibility: V3 Select's options are not being read with Chrome when arrowed through (#2610)
 * Tag component should use USWDS v3 background color (#2361)
-* Update the "Icon Found" bot in vets-website and content-build for va-icon (#2626)
+* Update the "Icon Found" bot in vets-website and content-build for va-icon(#2626)
 * File Input - Update v3 component to align with Figma (#2642)
 * Cannot change text of a continue va-button (#2733)
-* va-icon should be properly aligned to parent element and pick up font size (#2818)
+* va-icon should be properly aligned to parent element and pick up font size(#2818)
 * Replace content-build breadcrumb partial with V3 Component (#2742)
 * Formation Deprecation - CSS Library Utility class rename (#2855)
-* Fix Drag-and-Drop Handling and Add Custom Validation Example for <va-file-input> (#84044)
+* Fix Drag-and-Drop Handling and Add Custom Validation Example for `<va-file-input>` (#84044)
 * Formation Deprecation - Typography Migration - Swap vets-website imports (#2538)
 * Pill icon has hard-coded fill value (#2875)
 
 ### Figma Library updates
+
 * Figma rebuild: Templates - Feedback (Patterns) (#2454)
 * Figma rebuild: Templates - Review (Forms) add accessibility annotations (#2545)
 * Figma rebuild: Templates - Form Step (pattern) (#2778)
 * [List] - Add Figma components for Lists (#2510)
 * Add Table Example in Figma (#2809)
 * Figma rebuild: Templates - Signature (Patterns) (#2461)
-* [Figma] Update Penalty Statement in figma components (#2528)
+* [Figma] Update Penalty Statement in figma components(#2528)
 * [va-checkbox] - Add Indeterminate State - Design (#2653)
 * Figma update: Add white link variation to va-link (#2776)
 * Tag component should use USWDS v3 background color (#2361)
 * Update button width for mobile modals in Figma component (#2740)
 
 ### Global Typography updates
+
 * Typography Step 1 Completion: Merge component-library and vets-website PRs (#2681)
 * Typography - Update Application REM Values - Appeals 995, 996 (#2698)
 * Typography - Update Application REM Values - Appeals 10182 and Appeals/shared (#2699)
@@ -81,10 +89,10 @@ The team continued to synch to USWDS v3 specifically aligning typography and upd
 * Typography - Update Application REM Values - discharge-wizard and education-letters (#2707)
 
 ### Documentation updates
-* Converted v3 Borderless Table - Documentation (#2307)
-* Remove v1 component guidance from v3 components (#2802) Button Icon - Documentation (#2745)
-* Update documentation for `aria-describedby` attribute/functionality to va-button (#2770)
 
+* Converted v3 Borderless Table - Documentation (#2307)
+* Remove v1 component guidance from v3 components (#2802)Button Icon - Documentation (#2745)
+* Update documentation for `aria-describedby` attribute/functionality to va-button (#2770)
 
 ## April 2024
 
@@ -135,12 +143,12 @@ The team continued to synch to USWDS v3 and updated and fixed v3 components whil
   
 ## March 2024
 
-The team continued to synch to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out. 
+The team continued to synch to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out.
 
 ### Updated components and bug fixes
 
-*  CSS-Library: add missing tokens after audit of formation (#1074)
-*  CSS-Library: update tokens missed in previous update (#1087)
+* CSS-Library: add missing tokens after audit of formation (#1074)
+* CSS-Library: update tokens missed in previous update (#1087)
 * va-accordion: remove Font Awesome icon override (#1083)
 * va-header-minimal: add optional headings (#1084)
 * updated CSS-Library version in web-components (#1086)
