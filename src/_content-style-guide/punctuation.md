@@ -132,3 +132,30 @@ Note: Some design components may use the exclamation point as an icon for visual
 ## Quotation marks
 
 Use curly quotation marks (ex. “quotation marks”) instead of straight up and down ones (ex. &quot;quotation marks&quot;).
+
+Use quotation marks when referencing free text that people submit in a form field (like search input).
+
+Don’t use quotation marks when referencing buttons, screens, or section headers in instructions. For these situations, use bold only.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+Showing 1 to 10 of 110 search results for “what are my benefits”
+
+Then select the **Search this area of the map** button.
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+Showing 1 to 10 of 110 search results for **what are my benefits**
+
+Then select the "Search this area of the map" button.
+
+</div>
+</div>
+</div>

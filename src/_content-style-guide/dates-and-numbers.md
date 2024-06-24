@@ -5,6 +5,7 @@ anchors:
   - anchor: Dates and years
   - anchor: Times and time zones
   - anchor: Phone numbers
+  - anchor: Fax numbers
   - anchor: Addresses
 ---
 
@@ -84,6 +85,12 @@ from 8:00 a.m. to noon ET
 ## Phone numbers
 
 {% include content/phone-numbers.md %}
+
+## Fax numbers
+
+Don’t hyperlink or add aria labels to fax numbers. Make it clear in the surrounding text when a number is a fax number to avoid people mistaking it as a phone number.
+
+**Like this:** If you’re in the U.S., fax your application to 1-844-531-7818.
 
 ## Addresses
  
