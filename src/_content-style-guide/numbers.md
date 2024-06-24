@@ -3,8 +3,7 @@ layout: default
 title: Numbers
 anchors:
   - anchor: Use numerals 
-  - anchor: Exceptions
-  - anchor: Percentages
+  - anchor: Signs and symbols
 ---
 
 # Numbers
@@ -16,11 +15,11 @@ We differ from AP Style on numbers in order to meet the needs of users on the we
 ## Use numerals 
 We use numerals or figures for all numbers, including 1 to 10. It's easier on the web and on mobile for scanning, and helpful to low-literacy readers and people whose first language isn’t English.
 
-## Exceptions
+### Exceptions
 
 - Spell out "one" when it's used by itself in a sentence, or in expressions like one-to-one, one-on-one, and one-time.
 - Spell out ordinals up to tenth (first, second, third, etc.). Then use the style: 11th, 12th, etc. 
-- When used as part of a series or a range, always default to numerals. 
+- When used as part of a series, date, or range, always default to numerals.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -36,6 +35,8 @@ You may qualify for one-time dental care if you're in Class II and you meet thes
 All runners-up from 5th to 11th place will receive an honorable mention.
 
 Choose from 1 of 5 VA-backed loan options.
+
+You have a disability that started within 1 year after your discharge.
 
 </div>
 </div>
@@ -53,21 +54,30 @@ All runners-up from fifth to 11th place will receive an honorable mention.
 
 Choose from one of 5 VA-backed loan options.
 
+You have a disability that started within one year after your discharge.
+
 </div>
 </div>
 </div>
 
 
 
+## Signs and symbols
 
+We use certain symbols in content throughout VA. Well-known signs and symbols can be easier to scan. 
 
+### Dollar sign
+In general, use the dollar sign instead of spelling out dollars.  
+Like this: We’ll pay the tuition and mandatory fees up to $27,120.05 for this academic year (August 1, 2023, to July 31, 2024).
 
-## Percentages
+Add "$" to table cells so screenreaders read the number as dollars and cents and not as a standard decimal.
 
+### Degree symbol
+When pairing with a specific number, use the degree symbol.  
+Like this: The temperature was 10°C
+
+### Percent sign 
 Use numerals and % symbol, with no space between the number and %. This style follows the practice for scientific and technical writing, and differs from 18F. 
-
-We use this approach because it’s easier to scan, and we have a lot of content discussing disability ratings. Disability ratings fall into the scientific and technical category of writing. 
-
 
 
 <div class="do-dont">
