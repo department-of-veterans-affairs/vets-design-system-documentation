@@ -144,7 +144,7 @@ Don’t use quotation marks when referencing buttons, screens, or section header
 
 Showing 1 to 10 of 110 search results for “what are my benefits”
 
-Then click the **Search this area of the map** button.
+Then select the **Search this area of the map** button.
 
 </div>
 </div>
@@ -154,7 +154,7 @@ Then click the **Search this area of the map** button.
 
 Showing 1 to 10 of 110 search results for **what are my benefits**
 
-Then click the "Search this area of the map" button.
+Then select the "Search this area of the map" button.
 
 </div>
 </div>

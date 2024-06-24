@@ -30,4 +30,4 @@ You can file a Supplemental Claim if you have new and relevant evidence that we 
 Call us at 800-827-0648 (TTY: 711), Monday through Friday, 7:30 a.m. to 7:00 p.m. ET.
 
 Get the current Post-9/11 GI Bill (Chapter 33) rates for August 1, 2023, to July 31, 2024, and learn about how we determine how much of the full benefit rate you can get.
-{% endcapture %}
+{% endcapture %}{% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
