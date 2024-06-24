@@ -45,6 +45,7 @@ All of the patterns in the "[Ask users for...]({{ site.baseurl }}/patterns/)" se
 
 * [Form labels]({{ site.baseurl }}/content-style-guide/form-labels)
 * [Hint text]({{ site.baseurl }}/components/form/#hint-text)
+* [Title tags]({{ site.baseurl }}/content-style-guide/title-tags)
 
 ### Cross-Page Topics
 

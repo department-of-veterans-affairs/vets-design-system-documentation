@@ -13,6 +13,7 @@ anchors:
   - anchor: Notifications
   - anchor: Profile
   - anchor: Social
+  - anchor: developer.va.gov
   - anchor: Requesting a new icon
   - anchor: Accessibility considerations
 ---
@@ -116,60 +117,16 @@ anchors:
 
 <h3 id="decorative-icons">Using decorative icons</h3>
 <p>
-  If your icons are only decorative, manually add an <code>aria-hidden</code> attribute to the icon for accessibility.
+  If your icons are only decorative, _do not_ include <code>srtext</code> on the component. The component will add an <code>aria-hidden</code> attribute to the icon for accessibility.
 </p>
+
+<p>Icon buttons containing a decorative icon plus a visual label are supported with <a href="{{ site.baseurl }}/components/button-icon">Button - Icon</a>, but with limited options. Rather than supporting any text and icon combination, these will be added on a case-by-case basis. Generally, we feel that icons in buttons are not necessary.</p>
 
 <h3 id="semantic-icons">Using semantic icons</h3>
 <p>
-  If your icons have semantic meaning, you have to manually add a few things to make it accessible. There are two methods, non-interactive and interactive, so choose the one that suits your use case.
+  We do not advise using icons as links or buttons on their own. Links and buttons should always have a visible label.
 </p>
 
-<h4 id="non-interactive">Non-interactive icons</h4>
 <p>
-  Ideally, any icon would also have a visible label associated with it. But if you must use an icon without a visible label, follow the guidance below to make it accessible.
+  Exceptions to this are a close button on a modal or an alert. However, it is advised to use the design system component for these scenarios, as they are coded with the proper accessibility attributes.
 </p>
-<p>
-  For icons used on non-focusable elements, manually add the following for accessibility:
-</p>
-<ul>
-  <li><code>aria-hidden="true"</code> attribute.</li>
-  <li>A text-alternative inside of a <code>span</code> tag. Include a CSS class to visually hide this text, while keeping it visible to assistive technology.</li>
-  <li><code>title</code> attribute on the icon to provide a tooltip for sighted mouse users.</li>
-</ul>
-
-<h5>Non-interactive example</h5>
-<pre>
-  <code class="language-html">
-&lt;i aria-hidden="true" class="fas fa-car" title="Time to complete"&gt;&lt;/i&gt;
-&lt;span class="sr-only"/&gt;Time to complete:&lt;/span&gt;
-&lt;span&gt;4 minutes&lt;/span&gt;
-  </code>
-</pre>
-
-<h4 id="interactive">Interactive icons</h4>
-<p>
-  If an icon is a focusable interactive element, you do not need to add visually hidden alternative text as described
-  above. In this case, an <code>aria-label</code> with a text description on the interactive element is sufficient. A <span>title</span> attribute can also be added to provide a tooltip for sighted mouse users.
-</p>
-
-<h5>Interactive example</h5>
-<p>
-  In this example, the link element contains the alternative text, the icon inside of it is decorative.
-</p>
-<pre>
-  <code class="language-html">
-&lt;a href="#" aria-label="View inbox, you have unread messages"&gt;
-  View inbox &lt;i aria-hidden="true" class="fas fa-circle"&gt;&lt;/i&gt;
-&lt;/a&gt;
-  </code>
-</pre>
-<p>
-  As stated earlier, ideally, the following example would have a visible text label. Use this example with caution.
-</p>
-<pre>
-  <code class="language-html">
-&lt;a href="#" aria-label="View calendar"&gt;
-  &lt;i aria-hidden="true" class="fas fa-calendar" title="View calendar"&gt;&lt;/i&gt;
-&lt;/a&gt;
-  </code>
-</pre>

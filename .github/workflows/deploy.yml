@@ -18,13 +18,13 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 14.x
-        cache: 'npm'
+        cache: 'yarn'
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.5 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: npm install
-    - run: npm run-script build
+    - run: yarn install
+    - run: yarn run build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
     - name: Make BUILD.txt file
       # The -e flag enables the interpretation of the \n newline character

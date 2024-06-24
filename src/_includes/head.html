@@ -1,3 +1,8 @@
+{%- comment %}
+  Create a cache-busting string based on build timestamp.
+{% endcomment -%}
+{%- assign cacheBust = site.time | date:'?v=%s' -%}
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +22,7 @@
   {% endif %}
 
   <!-- Web component setup -->
-  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css" />
+  <link rel="stylesheet" type="text/css" href="{{ '/assets/stylesheets/component-library.css' | append: cacheBust }}" />
   <script type="module">
     import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
     defineCustomElements();
@@ -30,12 +35,11 @@
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="144x144">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicons/favicon.ico">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/formation.min.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/application.css">
-
+  <link rel="stylesheet" href="{{ '/formation.min.css' | prepend: site.baseurl | append: cacheBust }}">
+  <link rel="stylesheet" href="{{ '/assets/stylesheets/application.css' | prepend: site.baseurl | append: cacheBust }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <script src="{{site.baseurl }}/assets/javascripts/polyfills/array.from.js"></script>
+  <script src="{{ '/assets/javascripts/polyfills/array.from.js' | prepend: site.baseurl | append: cacheBust }}"></script>
 
 </head>
