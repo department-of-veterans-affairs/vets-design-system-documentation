@@ -54,6 +54,8 @@ Feedback:
     additional-usage: Process List
 
 Health:
+  - name: In progress status
+    icon-name: acute
   - name: Lab and test results (Facilities)
     icon-name: assignment
     fa-class: "fas fa-clipboard-list"
@@ -67,6 +69,9 @@ Health:
     icon-name: hearing_disabled
     fa-class: "fas fa-deaf"
     unicode: "#xf2a4;"
+  - name: Shipped items
+    icon-name: local_shipping
+    additional-usage: Mobile app
 
 Hub:
   - name: Burials
@@ -158,33 +163,29 @@ Interaction:
   - name: Accordion expand indicator
     icon-name: add
     fa-class: "fas fa-plus"
-    unicode: "#xf067;"
     additional-usage: Add item
   - name: Accordion collapse indicator
     icon-name: remove
     fa-class: "fas fa-minus"
-    unicode: "#xf068;"
   - name: Close indicator (modals, alerts)
     icon-name: close
     fa-class: "fas fa-times"
-    unicode: "#xf00d;"
   - name: Download item
     icon-name: file_download
     fa-class: "fas fa-download"
-    unicode: "#xf019;"
     additional-usage: Link - Download
   - name: Dropdown expand indicator
     icon-name: expand_more
     fa-class: "fas fa-chevron-down"
-    unicode: "#xf078;"
   - name: Dropdown collapse indicator
     icon-name: expand_less
     fa-class: "fas fa-chevron-up"
-    unicode: "#xf077;"
   - name: Form field dropdown
     icon-name: unfold_more
     fa-class: "fas fa-sort"
-    unicode: "#xf0dc;"
+  - name: Reload view
+    icon-name: refresh
+    additional-usage: Mobile app
   - name: Remove or delete item
     icon-name: delete
     fa-class: "fas fa-trash-alt"
@@ -207,6 +208,9 @@ Messaging:
     fa-class: "fas fa-folder"
     unicode: "#xf07b;"
     additional-usage: Move
+  - name: Inbox
+    icon-name: inbox
+    additional-usage: Messaging, Mobile app
   - name: Message, letter
     icon-name: mail
     fa-class: "fas fa-envelope"
@@ -300,6 +304,8 @@ Profile:
     icon-name: medication
     fa-class: "fas fa-prescription-bottle"
     unicode: "#xf485;"
+  - name: Submitted
+    icon-name: fact_check
   - name: Travel reimbursement
     icon-name: work
     fa-class: "fas fa-suitcase"
@@ -331,3 +337,9 @@ Social:
     fa-class: "fab fa-linkedin"
   - name: X
     icon-name: x
+
+developer.va.gov:
+  - name: Authentication
+    icon-name: key
+  - name: Tags
+    icon-name: sell
