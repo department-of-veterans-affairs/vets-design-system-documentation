@@ -11,7 +11,7 @@ intro-text: "Dividers are used sparingly to separate significant sections of con
 
 ### Stars
 
-{% include storybook-preview.html story="components-divider--default-story" %}
+{% include storybook-preview.html story="components-divider--default" %}
 
 ## Usage
 
