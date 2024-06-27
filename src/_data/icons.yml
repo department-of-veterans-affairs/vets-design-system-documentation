@@ -72,6 +72,8 @@ Health:
   - name: Shipped items
     icon-name: local_shipping
     additional-usage: Mobile app
+  - name: Medications
+    icon-name: pill
 
 Hub:
   - name: Burials
