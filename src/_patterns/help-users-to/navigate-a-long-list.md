@@ -10,7 +10,6 @@ contributors: Peter Russo (VAOS)
 added: 7/5/2022
 intro-text: Allows users to navigate and process a long list of items by progressively displaying additional items as needed.
 research-title: Show more options
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/AC70760E-54B7-41E1-982A-26E3B29049DF
 status: use-with-caution-candidate
 anchors:
   - anchor: Usage

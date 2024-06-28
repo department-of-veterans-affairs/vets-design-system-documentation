@@ -4,7 +4,6 @@ permalink: /patterns/help-users-to/keep-a-record-of-submitted-information
 sub-section: help-users-to
 title: Keep a record of submitted information
 intro-text: "This pattern provides the user with a printable record of their submission."
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/8B8D4C83-E246-4F59-8601-9D076322A8E5/canvas
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -48,10 +47,6 @@ The component that contains the prompt to print the confirmation page should app
 * [Featured content]({{ site.baseurl }}/components/featured-content)
 * [Button - Primary]({{ site.baseurl }}/components/button)
 * [Link - Download]({{ site.baseurl }}/components/link/#download)
-
-### Page templates available for this pattern
-
-* [Form Confirmation page template](https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/8B8D4C83-E246-4F59-8601-9D076322A8E5/canvas)
 
 ## Content considerations
 

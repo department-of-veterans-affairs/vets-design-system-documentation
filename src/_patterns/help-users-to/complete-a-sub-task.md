@@ -8,7 +8,6 @@ title: Complete a sub task
 aka: Sub-task, Wizard
 intro-text: "Helps users complete a shorter task before, or within, a larger process or flow." 
 research-title: sub-task
-sketch-link: https://www.sketch.com/our-workspace-the-pattern-library/specific-page-for-this-pattern
 status: use-with-caution-available
 anchors:
   - anchor: Usage
