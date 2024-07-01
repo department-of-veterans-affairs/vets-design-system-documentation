@@ -10,8 +10,7 @@ status: use-with-caution-available
 uswds-v3: default
 web-component: va-file-input
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -19,7 +18,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -41,11 +40,13 @@ anchors:
 
 {% include storybook-preview.html height="100px" story="uswds-va-file-input--error-message" link_text="va-file-input error message" %}
 
-## Examples - v1
+### Header Label
 
-### Default
+{% include storybook-preview.html height="100px" story="uswds-va-file-input--header-label" link_text="va-file-input header label" %}
 
-{% include storybook-preview.html height="100px" story="components-va-file-input--default" link_text="va-file-input" %}
+### Additional form inputs
+
+{% include storybook-preview.html height="200px" story="uswds-va-file-input--additional-info" link_text="va-file-input header label" %}
 
 ## Usage
 
@@ -53,7 +54,7 @@ anchors:
 
 ### Additional guidance for VA
 
-* **One file per input.** This component only supports one file upload at a time. Some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app. Thus the VA implementation of this component does not deviate from our [current pattern]({{ site.baseurl }}/patterns/ask-users-for/files#review) for handling multiple file uploads by prompting for each file with a new file input component. We will evaluate if we will change the behavior of this component at a later date.
+* **One file at a time.** This component only supports selecting one file to upload at a time. Some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app.
 
 ### How this component works
 
@@ -64,7 +65,7 @@ anchors:
 
 * **Trigger**: The file input button triggers a micro-interaction that causes the Operating System (OS) to present a dialog that prompts the user to select a file to upload.
 * **Rules**: Once the file is uploaded, the browser presents a dialog to inform the user of the success or failure of the upload. The uploaded file can then be removed by the user, if necessary. Additional files can be uploaded, one by one.
-* **Feedback**: The [Progress bar - Activity]({{ site.baseurl }}/components/progress-bar/) component should be used to provide feedback to the user while the file is uploading.
+* **Feedback**: The [Progress bar - Activity]({{ site.baseurl }}/components/progress-bar/) component should be used to provide feedback to the user while the file is uploading if the upload is happening to the server on the current step. The Progress bar is not necessary if the upload of the file happens upon page submit or at a later point in the process.
 
 ### Errors
 
