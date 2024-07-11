@@ -37,7 +37,7 @@
     "tar": ">=6.2.1"
   },
   "dependencies": {
-    "@department-of-veterans-affairs/formation": "^11.0.5",
+    "@department-of-veterans-affairs/formation": "^11.0.12",
     "@department-of-veterans-affairs/css-library": "^0.8.5"
   },
   "engines": {
