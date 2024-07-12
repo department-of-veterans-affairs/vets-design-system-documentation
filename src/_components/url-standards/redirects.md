@@ -23,6 +23,8 @@ A URL redirect forwards both visitors and search engines to a different URL than
 
 Teams must formally request a redirect before implementation so they can be vetted for accuracy and appropriateness, and implemented with full validation across environments. That request also kicks off work to update all internal links and identifies existing redirects that may need to be updated.
 
+{% include _site-on-this-page.html %}
+
 ## Usage
 
 ### When to use a redirect
@@ -61,4 +63,4 @@ If you need to implement a redirect, a request must first be submitted to VA.gov
 
 <a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new/choose">Submit a Redirect or URL change issue on GitHub</a>
 
-<a class="vads-c-action-lik--blue" href="https://depo-platform-documentation.scrollhelp.site/developer-docs/">Learn more about implementing redirects on the VA Platform documentation site</a>
+<a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/developer-docs/">Learn more about implementing redirects on the VA Platform documentation site</a>
