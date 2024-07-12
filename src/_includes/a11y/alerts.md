@@ -5,13 +5,23 @@
 In some situations, an ARIA role may need to be added to the alert component for it to work best for people who use assistive technology. ARIA should be used sparingly to supplement and enhance the native features of HTML.
 
 * **Static alert: No Role.** If the alert is a static alert that exists on the page when the page gets loaded, it doesn’t need a role.
-* **Important, time-sensitive information: Use role="alert".** Use this role on alert components that appear after a user interaction.
+* **Important, time-sensitive information: Use role="alert".** Use this role on alert components that appear after a user interaction. Alerts are assertive live regions, so setting `role="alert"` is equivalent to setting `aria-live="assertive"` and `aria-atomic="true"`.
+    ```
+    <va-alert role="alert" ...>...</va-alert>
+    ```
   * This is for live updates to a page that would not get noticed otherwise. Updates to a page can occur without the user refreshing the page, so these may go unnoticed when using assistive technologies. `role="alert"` ensures assistive technology announces these updates and keeps the user informed.
   * Because this can be intrusive to the user experience, this should be used sparingly for information that requires the user's immediate attention.
   * **Interactive alerts: Use role="alertdialog" instead.** For alerts that fit the criteria of `role="alert"`, but also contain content requiring user interaction, use `role="alertdialog"` instead of `role="alert"`. For example, expecting the user to acknowledge the alert by closing it before proceeding.
+    ```
+    <va-alert role="alertdialog" ...>...</va-alert>
+    ```
+* **Advisory information, not important enough to have an alert role: Use role="status".** Use this role on alert components that appear after a user interaction. This allows users with assistive tech to be notified of the change, but won't immediately interrupt them from the current task. Elements with the `role=status` have an implicit `aria-live=polite` and an implicit `aria-atomic=true`.
+    ```
+    <va-alert role="status" ...>...</va-alert>
+    ```
 * For must-read information that is present on page load, consider using a [Summary box]({{ site.baseurl }}/components/summary-box) instead of an alert.
 
-More on [ARIA: alert role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/alert_role).
+More on [ARIA: alert role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/alert_role), [ARIA: status role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/status_role).
 
 ### Alternative (alt) text for icons and images
 
