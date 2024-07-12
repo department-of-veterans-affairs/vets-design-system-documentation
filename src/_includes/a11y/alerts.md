@@ -15,7 +15,7 @@ In some situations, an ARIA role may need to be added to the alert component for
     ```
     <va-alert role="alertdialog" ...>...</va-alert>
     ```
-* **Advisory information, not important enough to be an alert: Use role="status".** Use this role on alert components that appear after a user interaction. This allows users with assistive tech to be notified of the change. Elements with the role status have an implicit `aria-live=polite` and an implicit `aria-atomic=true`.
+* **Advisory information, not important enough to have an alert role: Use role="status".** Use this role on alert components that appear after a user interaction. This allows users with assistive tech to be notified of the change, but won't immediately interrupt them from the current task. Elements with the role status have an implicit `aria-live=polite` and an implicit `aria-atomic=true`.
     ```
     <va-alert role="status" ...>...</va-alert>
     ```
