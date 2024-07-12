@@ -4,6 +4,9 @@ layout: default
 
 #Page info: Edit these items below
 title: URLs
+permalink: /components/url-standards/
+sub-pages:
+  - sub-page: Redirects
 anchors:
   - anchor: URL standards 
   - anchor: Vanity URLs
