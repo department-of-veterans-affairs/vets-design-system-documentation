@@ -10,8 +10,7 @@ status: use-with-caution-available
 uswds-v3: default
 web-component: va-file-input
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
@@ -19,7 +18,7 @@ anchors:
   - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Default
 
@@ -60,11 +59,6 @@ Change the label to any H1 through H6 header size.
 
 {% include component-example.html alt="Multiple files" file="/images/components/file-input/multipleFiles.png" caption="File input when multiple files are uploaded" class="x2" %}
 
-## Examples - v1
-
-### Default
-
-{% include storybook-preview.html height="100px" story="components-va-file-input--default" link_text="va-file-input" %}
 
 ## Usage
 
@@ -72,7 +66,7 @@ Change the label to any H1 through H6 header size.
 
 ### Additional guidance for VA
 
-* **One file per input.** The file input supports uploading a single file multiple times but does not support selecting multiple files at a single time. This component only supports one file upload at a time. The reason for this is some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app. Thus, the VA implementation of this component does not deviate from our [current pattern]({{ site.baseurl }}/patterns/ask-users-for/files#review) for handling multiple file uploads by prompting for each file with a new file input component. We will evaluate if we will change the behavior of this component at a later date.
+* **One file per input.** The file input supports uploading a single file multiple times but does not support selecting multiple files at a single time. This component only supports one file upload at a time. The reason for this is some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app. Thus, the VA implementation of this component does not deviate from our [current pattern]({{ site.baseurl }}/patterns/ask-users-for/files#review) for handling multiple file uploads by prompting for each file with a new file input component.
 * **Files pattern guidance.** Follow the <a class="vads-c-action-link--blue" href="https://design.va.gov/patterns/ask-users-for/files">files pattern guidance</a> for how to include the file input in a form. 
 
 ### How this component works
@@ -84,7 +78,7 @@ Change the label to any H1 through H6 header size.
 
 * **Trigger**: The file input button triggers a micro-interaction that causes the Operating System (OS) to present a dialog that prompts the user to select a file to upload.
 * **Rules**: Once the file is uploaded, the browser presents a dialog to inform the user of the success or failure of the upload. The uploaded file can then be removed by the user, if necessary. Additional files can be uploaded, one by one.
-* **Feedback**: The [Progress bar - Activity]({{ site.baseurl }}/components/progress-bar/) component should be used to provide feedback to the user while the file is uploading. This is currently not a feature of the file upload and will be added at a later date. 
+* **Feedback**: The [Progress bar - Activity]({{ site.baseurl }}/components/progress-bar/) component should be used to provide feedback to the user while the file is uploading if the upload is happening to the server on the current step. The Progress bar is not necessary if the upload of the file happens upon page submit or at a later point in the process. The Progress bar is currently not a feature of the file input component and will be added at a later date.
 
 ### Errors
 
