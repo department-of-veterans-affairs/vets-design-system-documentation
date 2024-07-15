@@ -5,7 +5,6 @@ permalink: /patterns/help-users-to/check-eligibility
 sub-section: help-users-to
 intro-text: "Follow this pattern to help users to check their eligibility for a benefit or service."
 research-title: help-users-to-check-eligibility
-sketch-link: https://sketch.com/s/610156b6-f281-4497-81f3-64454fc72156
 status: use-deployed
 anchors:
   - anchor: Usage

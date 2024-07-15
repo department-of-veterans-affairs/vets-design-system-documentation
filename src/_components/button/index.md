@@ -91,7 +91,7 @@ anchors:
 This variation substitutes the large tap target of a button where a radio button would traditionally be used. This serves a similar purpose to the [USWDS Tile variation of a Radio button](https://designsystem.digital.gov/components/radio-buttons/). 
 
 * **Limit to Yes/No.** This variation should be limited to Yes/No questions rather than used as a substitute for radio buttons which can more readily handle 3 or more responses.
-* **Reflect selections.** The response of the user must change the button from a secondary button to a ```$color-primary-dark``` background in order to reflect the state of the user's response.
+* **Reflect selections.** The response of the user must change the button from a secondary button to a ```$vads-color-primary-dark``` background in order to reflect the state of the user's response.
 
 {% include component-example.html alt="Example of the secondary button as radio button substitution." file="/images/components/button/button-as-radio.png" caption="The COVID-19 Screener uses secondary buttons instead of radio buttons for Yes/No questions." %}
 

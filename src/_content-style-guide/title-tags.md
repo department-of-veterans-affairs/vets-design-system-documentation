@@ -40,6 +40,7 @@ We format title tags differently for forms and multi-page subtasks. Some form co
 
 Each page in the flow should have the plain language form or task name as the title tag. This may be different from the H1.
 
-Example: Apply For VA Health Care \| Veterans Affairs (NOT Form 10-10ez) \| Veterans Affairs)
-
-Example: Income Limits \| Veterans Affairs (NOT What’s Your Address) \| Veterans Affairs)
+- Example: Income Limits \| Veterans Affairs
+  - Instead of: What's Your Address \| Veterans Affairs
+- Example: Apply For VA Health Care \| Veterans Affairs
+  - Instead of: Form 10-10ez \| Veterans Affairs
