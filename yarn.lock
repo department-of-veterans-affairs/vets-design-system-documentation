@@ -9,24 +9,17 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@department-of-veterans-affairs/component-library@^42.2.1":
-  version "42.2.1"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-42.2.1.tgz#fea2ab63a9cf4cf9bbf7467b0a279bd56e5e70b9"
-  integrity sha512-FNIUHabOx9kgz8EE1PprE5YUMNqlU92h6je770OSjKwMX4/csAf5aomRjNjlsq+LwxgLyUU4hukQec9bi+0CTQ==
+"@department-of-veterans-affairs/component-library@^43.0.0":
+  version "43.0.0"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-43.0.0.tgz#1eff1c9723addacc2b98e5afb7a1aa8bf498935f"
+  integrity sha512-Rpqg30q5nJysbJYth5aWOI0atvmU4qL7PvEOY9p3xQuKnxGdewA/tHJqcachg6l89iNHP3MZdGVnl1JUQSAk8w==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.1.0"
-    "@department-of-veterans-affairs/web-components" "10.0.0"
+    "@department-of-veterans-affairs/web-components" "11.2.4"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
     react-transition-group "^1.0.0"
-
-"@department-of-veterans-affairs/css-library@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.3.1.tgz#25440d997771bbf9d89a46e4a43c1bf674e6a015"
-  integrity sha512-sG4pmxwI4L05vhNGlwMtai6YMEXcWUwACeXffgbg/Jt5GCCyD1lSW81PW7JSirvzV3wKKte86xlsfz4mpLPPXQ==
-  dependencies:
-    "@divriots/style-dictionary-to-figma" "^0.4.0"
 
 "@department-of-veterans-affairs/css-library@^0.8.1":
   version "0.8.3"
@@ -37,10 +30,19 @@
     "@uswds/uswds" "^3.7.1"
     rimraf "^5.0.5"
 
-"@department-of-veterans-affairs/formation@^11.0.5":
-  version "11.0.5"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/formation/-/formation-11.0.5.tgz#20ce74597501244ba73f1e390b098c34854dd4b3"
-  integrity sha512-tYgmOKomXVqUEMN4ajXx/9mVfZwp8yTCjiC8UYG094jyWS2uQR2PhGEzpwp2XDCK1hRFFiV+CK5qROzeORfDWA==
+"@department-of-veterans-affairs/css-library@^0.8.5":
+  version "0.8.5"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/css-library/-/css-library-0.8.5.tgz#610f1f4304e0636a190ad9fd79e8ba3fff80207c"
+  integrity sha512-kld40XYUlEPk2qcwiBFSSmBLdfdG1vKOs4rPpq9EgF8iDLlkXN2iSp8cgsmryc7hgKCZe800jRGqEnXOcFno4A==
+  dependencies:
+    "@divriots/style-dictionary-to-figma" "^0.4.0"
+    "@uswds/uswds" "^3.7.1"
+    rimraf "^5.0.5"
+
+"@department-of-veterans-affairs/formation@^11.0.12":
+  version "11.0.12"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/formation/-/formation-11.0.12.tgz#9f06fd3f4bb006fa001e0bc54a1391932610ca60"
+  integrity sha512-GIMB56GYDP9PrZvefw7VWGoWZsOI7l3otEQLaoPP/z3AxzkORoDWkrSn5+yHiuST3z4BQfiA8fEKLOl1/jZJ0w==
   dependencies:
     "@fortawesome/fontawesome-free" "^5.15.4"
     domready "^1.0.8"
@@ -58,10 +60,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-10.0.0.tgz#63e143fb1275e1610111eecc79cf73f37d2a5647"
-  integrity sha512-z3vhz9FGv8r2JlAay3ls6DQg32zWjGmSNz2HXLifoFO8rYWMK14fiHQiDiVyUjp7mp5qCFVoNPZMqjK241r7zg==
+"@department-of-veterans-affairs/web-components@11.2.4":
+  version "11.2.4"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-11.2.4.tgz#158fa086f5b1e1434074da24272857ccdafa11df"
+  integrity sha512-+4kb8NUO1lMjoue/7n0Xj1p5BqTxglUQcW4OlEE1I3D/TC9dziQaLqQlt037b6y4AUg6D6JBVvttWVudQ2jEMg==
   dependencies:
     "@department-of-veterans-affairs/css-library" "^0.8.1"
     "@stencil/core" "^2.19.2"

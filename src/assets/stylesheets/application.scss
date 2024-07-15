@@ -120,9 +120,9 @@ backwards compatibility. When Formation has been fully deprecated and we are on 
 these can be removed along with an update to how classes are generated in color-palette-example.html. 
 */
 .vads-u-background-color--primary-dark {
-  background-color: $color-primary-dark !important;
+  background-color: $vads-color-primary-dark !important;
 }
 
 .vads-u-background-color--primary-darker {
-  background-color: $color-primary-darker !important;
+  background-color: $vads-color-primary-darker !important;
 }
