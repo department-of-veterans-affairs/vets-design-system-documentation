@@ -130,3 +130,17 @@ That guidance agrees with [Apple's Human Interface Guidelines](https://developer
 {% include a11y/do-not-disable-buttons.md %}
 
 {% include _component-checklist.html component_name=page.web-component %}
+
+
+{% for component in site.data.accessibility.audit %}
+{% if component.name == button %}
+Testing
+<ul>
+  <li>
+      {{ component.name }}
+      <ul>
+        <li>Use of Color: {{ component.color }}</li>
+      </ul>
+  </li>
+{% endfor %}
+</ul>

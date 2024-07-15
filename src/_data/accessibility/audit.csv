@@ -1,0 +1,4 @@
+name,axe,color,text,zoom,mouse,keyboard,sr,voice,mobile,date
+va-button,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,2024-07-11
+va-alert,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,
+va-accordion,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,2024-05-01
