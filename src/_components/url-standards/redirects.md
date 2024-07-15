@@ -1,20 +1,13 @@
 ---
-# Do NOT Edit layout
-layout: default
-
-#Page info: Edit these items below
+layout: component
 title: Redirects
 permalink: /components/url-standards/redirects
 has-parent: /components/url-standards/
+intro-text: A URL redirect forwards both visitors and search engines to a different URL than the one requested. Teams should implement a redirect or request a redirect whenever they change a URL or remove a page. 
 anchors:
   - anchor: Usage
   - anchor: Redirect requests and implementation process 
 ---
-
-
-# Redirects
-
-A URL redirect forwards both visitors and search engines to a different URL than the one requested. Teams should implement a redirect or request a redirect whenever they change a URL or remove a page. 
 
 **A redirect serves 2 purposes:**
 1.  It protects the Veteran's experience by making sure they are sent to a valid destination page rather than receiving a 404 (page not found) error
