@@ -48,7 +48,7 @@ anchors:
 
 ### Error
 
-{% include storybook-preview.html story="components-va-radio--error" link_text="va-radio error" %}
+{% include storybook-preview.html story="uswds-va-radio--error" link_text="va-radio error" %}
 
 ### Forms pattern single error
 
@@ -56,7 +56,7 @@ anchors:
 
 ### Internationalization
 
-{% include storybook-preview.html height="250px" story="components-va-radio--internationalization" link_text="va-radio internationalization" %}
+{% include storybook-preview.html height="250px" story="uswds-va-radio--internationalization" link_text="va-radio internationalization" %}
 
 ## Usage
 

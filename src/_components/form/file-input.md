@@ -40,25 +40,25 @@ anchors:
 
 #### Single file error
 
-{% include component-example.html alt="Single file input error" file="/images/components/file-input/singleFileError.png" caption="File input when an error occcurs for a single file" class="x2" %}
+{% include component-example.html alt="Single file input error" file="/images/components/file-input/singleFileInputError.png" caption="File input when an error occurs for a single file" class="x2" %}
 
 #### Multiple file error
 
-{% include component-example.html alt="Multiple file input error" file="/images/components/file-input/multipleFileError.png" caption="File input when an error occcurs when uploading multiple files" class="x2" %}
+{% include component-example.html alt="Multiple file input error" file="/images/components/file-input/multipleFileInputError.png" caption="File input when an error occurs when uploading multiple files" class="x2" %}
 
 ### Header label
+
 Change the label to any H1 through H6 header size.  
 
 {% include storybook-preview.html height="100px" story="uswds-va-file-input--header-label" link_text="va-file-input header label" %}
 
 ### Additional form inputs
 
-{% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalFormInput.png" caption="File input when an additional form is needed to complete the file upload" class="x2" %}
+{% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input when an additional form is needed to complete the file upload" class="x2" %}
 
 ### Multiple files
 
 {% include component-example.html alt="Multiple files" file="/images/components/file-input/multipleFiles.png" caption="File input when multiple files are uploaded" class="x2" %}
-
 
 ## Usage
 
@@ -67,7 +67,7 @@ Change the label to any H1 through H6 header size.
 ### Additional guidance for VA
 
 * **One file per input.** The file input supports uploading a single file multiple times but does not support selecting multiple files at a single time. This component only supports one file upload at a time. The reason for this is some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app. Thus, the VA implementation of this component does not deviate from our [current pattern]({{ site.baseurl }}/patterns/ask-users-for/files#review) for handling multiple file uploads by prompting for each file with a new file input component.
-* **Files pattern guidance.** Follow the <a class="vads-c-action-link--blue" href="https://design.va.gov/patterns/ask-users-for/files">files pattern guidance</a> for how to include the file input in a form. 
+* **Files pattern guidance.** Follow the [files pattern guidance]({{ site.baseurl }}/patterns/ask-users-for/files) for how to include the file input in a form.
 
 ### How this component works
 
