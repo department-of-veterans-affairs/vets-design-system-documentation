@@ -20,15 +20,11 @@ anchors:
 
 ### When to use this pattern
 
-* **Asking users for their housing or living situation or status.** 
+* **Asking users for their housing or living situation or status.** For example, when asking whether a user is facing housing instability or may not have a permanent mailing address.
 
 ### When not to use this pattern
 
 * **When the API used by the form cannot accommodate the information.** This pattern can potentially gather additional information beyond address, such as point of contact, that must be stored in a system of record and thus must be handled by an API.
-
-### When to use caution
-
-* If the API does not have a way to capture this information.
 
 ## Examples
 
@@ -52,7 +48,7 @@ anchors:
 
 Using a list of questions or criteria has been found in some situations to be more effective than asking a yes/no question about homelessness. The series of criteria help users to self-identify and communicate that they are experiencing housing instability.
 
-Answering in the affirmative to any of the first 5 options sends the user to a conditional page that asks if the user has a mailing address:
+Answering in the affirmative to any of the first 5 options (seen in the examples above) sends the user to a conditional page that asks if the user has a mailing address:
 
 {% include component-example.html alt="An example of asking users if they have a current mailing address." file="/images/patterns/ask-users-for/housing-status/current-mailing-address.png" caption="An example of asking users if they have a current mailing address." class="x2" %}
 
@@ -61,6 +57,10 @@ Answering in the affirmative to "I have another housing risk not listed here" se
 {% include component-example.html alt="An example of asking users for other housing risks." file="/images/patterns/ask-users-for/housing-status/other-housing-risks.png" caption="An example of asking a user if they have other housing risks." class="x2" %}
 
 Answering in the affirmative to "None of these situations apply to me" sends the user to the mailing address page which users our [address pattern]({{ site.baseurl }}/patterns/ask-users-for/addresses). They do not see the conditional page asking if they have a mailing address or not.
+
+In addition, it may be appropriate to ask the user for a point of contact to assist us in contacting the person submitting the form.
+
+{% include component-example.html alt="An example of asking the user for a point of contact." file="/images/patterns/ask-users-for/housing-status/point-of-contact.png" caption="An example of asking a user for a point of contact." class="x2" %}
 
 ### Components used in this pattern
 
