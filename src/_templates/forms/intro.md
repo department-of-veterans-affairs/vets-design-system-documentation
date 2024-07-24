@@ -4,7 +4,7 @@ permalink: /templates/forms/introduction
 has-parent: /templates/forms/
 title: Introduction
 status: use-deployed
-intro-text: "The form introduction page gives users information about what they can expect before they submit an online application. This page also provides users with steps on how to apply."
+intro-text: "The form introduction page introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form."
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=4546-6220&mode=design
 anchors:
   - anchor: About
@@ -20,7 +20,7 @@ anchors:
 
 ## About
 
-The form introduction page introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. The form intro page does 3 things:
+The form intro page does 3 things:
 
 - Sets clear expectations about the process of using this form
 - Helps the person prepare to fill out the form by gathering required information and documents before they start
