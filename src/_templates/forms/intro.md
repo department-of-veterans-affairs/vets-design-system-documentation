@@ -13,6 +13,7 @@ anchors:
   - anchor: Process list (for applications)
   - anchor: What to know section (for non-applications)
   - anchor: Sign-in widget, prefill alert, or "continue saved form" alert
+  - anchor: OMB and Need help sections
   - anchor: Examples (application)
   - anchor: Examples (non-application)
 ---
@@ -166,7 +167,9 @@ Choose the correct sign-in widget for your form.
 
 **Note:** The [alert component page]({{ site.baseurl }}/components/alert) has examples of sign-in widget alerts, but we're currently updating our guidance for sign-in and verification widgets in online forms. Check back here for updates, and in the meantime reach out to the Sitewide CAIA team in our sitewide-content-accessibility-ia slack channel for support.
 
-### OMB information 
+## OMB and Need help sections
+
+### OMB information
 
 [OMB information]({{ site.baseurl }}/components/omb-info) is a component that appears at the bottom of the page. The information to fill the component is taken from the paper form (or provided by a VA partner).
 
