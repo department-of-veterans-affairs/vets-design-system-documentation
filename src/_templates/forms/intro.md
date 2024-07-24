@@ -40,7 +40,7 @@ Both variations mostly follow the same structure. The only difference is the sec
 - Applications use a process list
 - Non-applications use a "What to know before you fill out this form" section
 
-**Note:** Some straightforward applications may not require a process list. It's OK to use the same structure as Non-application for those forms.  
+**Note:** Some straightforward applications may not require a process list. It's OK to use the same structure as non-application forms for those.  
 
 ## Structure
 
