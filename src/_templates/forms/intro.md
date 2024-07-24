@@ -58,12 +58,12 @@ In general, use the full, official name of the form in title case, followed by t
 
 Example:
 
-[Title] Apply for VA health care
+[Title] Apply for VA health care  
 [Subtitle] Application for Health Benefits (VA Form 10-10EZ) 
 
 Alternate example: 
 
-[Title] Request a Higher-Level Review
+[Title] Request a Higher-Level Review  
 [Subtitle] (VA Form 20-0996)
 
 **Intro paragraph**
