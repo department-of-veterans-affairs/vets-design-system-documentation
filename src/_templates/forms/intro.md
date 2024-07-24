@@ -73,26 +73,6 @@ Alternate example:
 
 **Note:** Guidance on this part of the template is evolving. Check back for updates.
 
-### Save work in progress alert
-
-The Save work in progress in message uses the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component and encourages users to sign-in in order to save their progress while completing a form.
-
-The message content is captured in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
-
-This alert gives users the option to start the form without signing in, excluding the Disability Compensation form where users are required to sign in.
-
-{% include component-example.html alt="An example of save work in progress alert." file="/images/templates/forms/introduction/save-work-in-progress-alert.png" caption="An example of a save work in progress alert used in the Introduction page." class="x2" %}
-
-### Prefill alert
-
-The [Prefill]({{ site.baseurl }}/components/form/prefill) alert uses the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component and informs users who are signed-in that their progress will be saved while completing a form.
-
-The message content is captured in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
-
-### Start form link
-
-The Start form link is an [action link]({{ site.baseurl }}/components/link/action) that navigates the user to the first main form page.
-
 ## Process list (for applications)
 
 - Use a [process list]({{ site.baseurl }}/components/process-list) to describe the steps to apply.
