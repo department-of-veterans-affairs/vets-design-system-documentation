@@ -13,7 +13,7 @@ TBD - Versioning these criteria? So we can say this component was testing accord
 Each component is tested for accessibility in the design system based on the four principles of accessibility.
 
 - **Perceivable** - Information and user interface components must be presentable to users in ways they can perceive.
-  - The information be invisible to all of the user's senses.
+  - The information cannot be invisible to all of the user's senses.
 - **Operable** - User interface components and navigation must be operable.
   - The interface cannot require an interaction that a user cannot perform.
 - **Understandable** - Information and the operation of user interface must be understandable.
