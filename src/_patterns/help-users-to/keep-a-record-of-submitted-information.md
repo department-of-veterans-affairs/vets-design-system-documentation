@@ -5,6 +5,7 @@ sub-section: help-users-to
 title: Keep a record of submitted information
 intro-text: "This pattern provides the user with a printable record of their submission."
 status: use-deployed
+research-title: Help users to keep a record of submitted info
 anchors:
   - anchor: Usage
   - anchor: Examples
@@ -25,6 +26,7 @@ anchors:
 {% include component-example.html alt="An example confirmation page containing a component that allows users to print the confirmation page." file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page.png" caption="The 'Your application information' component provides a clear call-to-action for the user to 'Print this page'." width="75%" %}
 
 ### Print preview of confirmation page summary
+
 ![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-view-page1.png)
 ![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-view-page2.png)
 
