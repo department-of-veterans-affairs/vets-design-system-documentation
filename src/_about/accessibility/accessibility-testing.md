@@ -21,11 +21,7 @@ Each component is tested for accessibility in the design system based on the fou
 - **Robust** -  Content must be robust enough that it can be interpreted reliably by a wide variety of user agents, including assistive technologies.
   - The content should remain accessible, even as assistive technologies become more advanced.
 
-These principles are the foundation of [Section 508 of the Rehabilitation Act](https://www.access-board.gov/ict/), which incorporates Web Content Accessibility Guidelines (WCAG) 2.0 Level AA success criteria. We aim to adhere to the latest version of WCAG Level AA, which at the time of writing is WCAG 2.2. We strive to not only meet those standards, but to go beyond compliance with thorough testing to ensure that we creating an inclusive and equitable experience for everyone. 
-
-## Design Review
-
-TBD
+These principles are the foundation of [Section 508 of the Rehabilitation Act](https://www.access-board.gov/ict/), which incorporates Web Content Accessibility Guidelines (WCAG) 2.0 Level AA success criteria. We aim to adhere to the latest version of WCAG Level AA, which at the time of writing is WCAG 2.2. We strive to not only meet those standards, but to go beyond compliance with thorough testing to ensure that we creating an inclusive and equitable experience for everyone.
 
 ## Code Review
 
