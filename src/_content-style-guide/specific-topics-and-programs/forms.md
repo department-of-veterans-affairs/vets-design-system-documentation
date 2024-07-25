@@ -18,26 +18,6 @@ intro-text: "The information on this page will help you use consistent language 
 
 ## Patterns 
 
-### Voice 
-
-Use active voice. In general, use second person questions with first person responses. 
-
-Example: 
-
-What caused this service-connected disability?
-
-(radio button) My disability was caused by an injury or exposure during my military service.
-(radio button) My disability was caused by an injury or exposure during training. 
-
-### Yes or no questions
-
-- In most cases, there should be 2 answer options for Yes and No questions: "Yes" and "No"
-- In certain cases, you can have up to 4 answer options: "Yes," "No," "I don't know," and "I prefer not to answer"
-- Don't restate the question wording in the answer options
-
-Like this: Is the Veteran deceased? Yes [button] No [button]
-Not like this: Is the Veteran deceased? Yes, the Veteran is deceased [button] No, the Veteran is not deceased [button]
-
 ### Punctuation
 
 Don't use punctuation in these instances:
@@ -73,6 +53,26 @@ Normal body text uses standard punctuation. Example: We don't require that you s
 Add a question mark if the content is a question. Example: "Are you the Veteran?"
 
 Use punctuation if the content is more than one full sentence. Example: "Select the responses that describe your living situation. You can select more than one."
+
+### Voice 
+
+Use active voice. In general, use second person questions with first person responses. 
+
+Example: 
+
+What caused this service-connected disability?
+
+(radio button) My disability was caused by an injury or exposure during my military service.
+(radio button) My disability was caused by an injury or exposure during training. 
+
+### Yes or no questions
+
+- In most cases, there should be 2 answer options for Yes and No questions: "Yes" and "No"
+- In certain cases, you can have up to 4 answer options: "Yes," "No," "I don't know," and "I prefer not to answer"
+- Don't restate the question wording in the answer options
+
+Like this: Is the Veteran deceased? Yes [button] No [button]
+Not like this: Is the Veteran deceased? Yes, the Veteran is deceased [button] No, the Veteran is not deceased [button]
 
 ## Resources
 
