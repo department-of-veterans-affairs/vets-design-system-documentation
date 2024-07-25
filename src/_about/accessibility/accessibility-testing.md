@@ -68,14 +68,22 @@ Testing with text resizing, zoom, and magnification is crucial for accessibility
 
 ## Screen Readers
 
+Screen reader testing is important for accessibility because it ensures each component is usable for users of assistive technology. We test with the following screen reader and browser combinations to ensure a consistent experience across devices:
+
 - JAWS + Chrome
 - NVDA + Firefox
 - VoiceOver + Safari
 
-## Mouse and Keyboard
+## Input Methods
 
-- Click targets
+Mouse and keyboard testing are essential for accessibility because they ensure each component is usable for individuals who rely on different input methods.
+
+- Click target sizes
 - Mouse compatibility
 - Keyboard compatibility
 
 ## Other
+
+Testing beyond the key areas of accessibility ensures an inclusive experience for a wider range of users with diverse needs. Here are some other things we test for:
+
+- TBD
