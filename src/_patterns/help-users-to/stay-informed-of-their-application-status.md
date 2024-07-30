@@ -5,6 +5,7 @@ permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
 intro-text: "When we need to keep the user informed of their application status, there is currently no \"one size fits all\" solution. To provide clarity, this page shows examples of patterns that exist on VA.gov today."
 status: use-with-caution-candidate
+research-title: Help users to stay informed of app status
 anchors:
   - anchor: Usage
   - anchor: Examples
