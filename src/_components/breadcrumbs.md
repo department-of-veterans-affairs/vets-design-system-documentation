@@ -40,20 +40,24 @@ anchors:
 
 ### When to use
 
-* **Complex levels.** Use a breadcrumb when content is more than 2 levels deep.
+* **Hierarchies more than 2 levels.** Use a breadcrumb when the section of content is more than 2 levels deep.
+* **Include one, include all.** If you use a breadcrumb for one page in a hierarchy, use a breadcrumb for all pages within that hierarchy.
 
 ### When to consider something else
 
-* **Simple sites.** Do not use a breadcrumb if the site or experience has a flat structure (i.e. only 2 levels of content or less)
+* **Simple sections of the site.** Do not use a breadcrumb if the section of the site is not every deep (i.e. only 2 levels of content or less)
 * **Irrelevant hierarchy.** Do not use a breadcrumb if the path or hierarchy of the page is irrelevant to the user or experience.
-* **One way exit.** Do not use a breadcrumb if it would create a way for a user to exit or navigate away from a user flow that they are unable to return to, or would result in a loss of data.
 
 ### Usability guidance
 
-* **Breadcrumbs should be based on content hierarchy, not on the user's click path or browser history.** For online applications and forms, the breadcrumb represents the forms's placement within the site hierarchy, it does not track the steps or progress of the form flow. In other words, the breadcrumb will only show up to the form as the current page segment, and will maintain that display while the user goes through the flow. For navigation through the steps of the form flow, forward and backward CTAs can be provided as part of the main content as appropriate.
-* **Include one, include all.** If you use a breadcrumb for one page in a hierarchy, always use a breadcrumb for all pages within that hierarchy.
-* **Each breadcrumb segment should match the text of the title (h1) of the corresponding page.** Breadcrumb segment text must match the title (h1) text of a corresponding page and not be an abbreviation or variation of that title. When writing H1s for a page, follow the [content styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
-* **Use the title (h1 & title tag) of the Introduction page as the text of the final breadcrumb for a multi-step form.** On a multi-step form the final crumb is frozen as the title of the Introduction page and should link back to the Introduction page. The breadcrumb works in concert with the [Progress bar - Segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented) to provide context for a user is in a process and on the site.
+* **Hierarchical relationships, not linear paths.** Breadcrumbs should be based on content hierarchy, not on the user’s click path or browser history. For online applications and forms, the breadcrumb represents the forms’s placement within the site hierarchy, it does not track the steps or progress of the form flow.
+* **Match the text of the title (h1).** Breadcrumb segment text must match the text of the title (h1) text of a corresponding page and not be an abbreviation or variation of that title. When writing H1s for a page, follow the [content styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
+Start with "VA.gov home". Clearly indicate that the home page is the VA.gov home page. This clarifies placement within broader VA.gov site, and ensures there's no confusion between the VA.gov home page and the landing page of a section of the site.
+
+#### Breadcrumbs in form flows
+
+* In form flows, the breadcrumb should only show up to the form introduction page as the final segment, and maintain that display while the user progresses through the flow. This allows the user to easily get to the beginning of the form flow. Forward and backward CTAs can be provided within the page to allow page by page navigation. The breadcrumb works in concert with the [Progress bar - Segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented) to provide context for where a user is in a process and on the site.
+* When using the [Header - Minimal]({{ site.baseurl }}/components/header/header-minimal), the breadcrumb can be removed to further prevent the user from easily navigating away and not not accomplishing their main task. In this case, the breadcrumb can be replaced with a "Back" link that allows the user to navigate backwards in the flow.
 
 ### Placement
 
