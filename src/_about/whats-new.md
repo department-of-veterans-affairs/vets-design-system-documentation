@@ -25,6 +25,29 @@ title: What’s new?
   </div>
 </va-alert>
 
+## Summer 2024
+
+The team synced up typography with USWDS v3 and continues to focus on syncing up iconography and replacing v1 components with their v3 equivalents.
+
+### New and updated components
+
+* [File input]({{ site.baseurl }}/components/form/file-input)
+* [Text input - Prefix icon]({{ site.baseurl }}/components/form/text-input#prefix-icon)
+* [Text input - Suffix text]({{ site.baseurl }}/components/form/text-input#suffix-text)
+* [Text input - Prefix and Suffix]({{ site.baseurl }}/components/form/text-input#prefix-and-suffix)
+
+### New and updated guidance
+
+* [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs)
+* [Ask users for housing status](/patterns/ask-users-for/housing-status)
+* [URLs]({{ site.baseurl }}/components/url-standards/)
+* [URLs - Redirects]({{ site.baseurl }}/components/url-standards/redirects)
+* [Use short sentences]({{ site.baseurl }}/content-style-guide/plain-language/use-short-sentences)
+
+### Bug fixes
+
+[Issues closed this summer](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2024-06-01..2024-08-30+)
+
 ## May 2024
 
 The team continued to synch to USWDS v3 specifically aligning typography and updated and fixed v3 components. The Figma Library continued to be built out and updated.
@@ -298,35 +321,3 @@ See the [component-library release notes](https://github.com/department-of-veter
 * Updated [accessibility considerations for icons]({{ site.baseurl }}/foundation/icons#accessibility-considerations).
 
 All [documentation updates can be viewed in GitHub](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pulls?q=is%3Apr+is%3Aclosed).
-
-## Summer 2023
-
-The team continues to focus on building out new variations of our components based on USWDS v3. 
-
-### New and updated components
-
-* [va-back-to-top]({{ site.baseurl }}/components/back-to-top) changed from a button to a link by @jamigibbs in #746
-* [va-button](https://design.va.gov/storybook/?path=/docs/components-va-button--primary-alternate): Add alternate (green) version to primary button by @powellkerry in #771
-* Added [va-maintenance-banner]({{ site.baseurl }}/components/banner/maintenance) web component by @powellkerry in #713
-* Added [va-notification]({{ site.baseurl }}/components/notification) web component by @allisonlu in #702
-
-### USWDS v3-based components
-
-* Added va-accordion USWDS v3 variation by @powellkerry in #728
-* Added Additional info v3 by @harshil1793 in #703
-* Added va-breadcrumbs: Add USWDS variation by @harshil1793 in #711
-* [va-icon](https://design.va.gov/storybook/?path=/docs/uswds-va-icon--default): Add new web component @it-harrison in #772
-* Added va-process-list: Add USWDS variation by @ataker in #770
-
-#### Bug fixes
-
-A long list of bug fixes can be found in our [component release notes](https://github.com/department-of-veterans-affairs/component-library/releases).
-
-### Content style guide updates
-
-* Added guidance on [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
-
-### Deprecated React components
-
-* Table
-* CheckboxGroup
