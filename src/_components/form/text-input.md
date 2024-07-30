@@ -94,6 +94,10 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 {% include storybook-preview.html story="uswds-va-text-input--with-suffix" link_text="va-text-input with suffix" height="175px" %}
 
+### Prefix and Suffix
+
+{% include storybook-preview.html story="uswds-va-text-input--with-icon-and-suffix" link_text="va-text-input with icon and suffix" height="175px" %}
+  
 ### Widths
 
 {% include storybook-preview.html story="uswds-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
