@@ -1,5 +1,8 @@
 ---
 layout: component
+permalink: /components/summary-box
+redirect_from:
+  - /components/featured-content
 title: "Summary box"
 aka: Featured content
 status: use-deployed

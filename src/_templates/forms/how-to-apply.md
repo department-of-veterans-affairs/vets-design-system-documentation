@@ -56,9 +56,9 @@ Examples of audience include:
 
 ### How to prepare
 
-This section tells the user what information they need to gather in order to fill out the form (Social Security number, bank information, military history, spouse information, DD214, etc). This section starts with a link to the Eligibility page for the benefit which details who is eligible to apply. 
+This section tells the user what information they need to gather in order to fill out the form (Social Security number, bank information, military history, spouse information, DD214, etc). This section starts with a link to the Eligibility page for the benefit which details who is eligible to apply.
 
-This section can be presented using the [Featured content]({{ site.baseurl }}/components/featured-content) component. Alternatively, it can be broken out into two content sections:
+This section can be presented using the [Summary box]({{ site.baseurl }}/components/summary-box) component. Alternatively, it can be broken out into two content sections:
 
 1. How do I prepare before starting my application?
 2. What documents and information do I need to apply?
@@ -71,7 +71,7 @@ Details the options a user has to apply, including but not limited to:
 * Phone
 * Mail
 * In person
-* With support from a trained professional 
+* With support from a trained professional
 
 Note: While some versions of this page use a primary button to navigate to the form Introduction page, the correct component to use is the [Link - Action]({{ site.baseurl }}/components/link/action).
 
