@@ -58,8 +58,8 @@ In general, use the full, official name of the form in title case, followed by t
 
 Example:
 
-[Title] Apply for VA health care  
-[Subtitle] Application for Health Benefits (VA Form 10-10EZ) 
+[Title] Request personal records
+[Subtitle] Freedom of Information Act (FOIA) or Privacy Act (PA) Request (VA Form 20-10206) 
 
 Alternate example: 
 
@@ -79,7 +79,7 @@ Alternate example:
 - Use this H2 above the list: "Follow these steps to get started"
 - Use the numbered process steps listed here as H3s
 - Add tailored need-to-know information about the specific form under each step, but aim to keep this section as brief as possible
-- Consider how the information in this process list aligns with information on the related VA.gov pages for this benefit — if you need to add or update information on those pages, talk with the **Sitewide content/accessibility/information architecture (CAIA)** team that manages all benefit pages in the Drupal CMS
+- Consider how the information in this process list aligns with information on the related VA.gov pages for this benefit — if you need to add or update information on those pages, talk with the **Sitewide content, accessibility, information architecture (CAIA)** team that manages all benefit pages in the Drupal CMS
 
 **1. Check your eligibility**
 
