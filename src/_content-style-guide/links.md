@@ -89,15 +89,15 @@ When linking to a page, tool, or online form, always link to the canonical URL o
 
 For form flows, the canonical URL excludes the reference to a specific page in the flow or initial page displayed in the flow.  
 
-Form example:
-Don’t use a URL to a specific page: va.gov/health-care/apply-form-1010ez/introduction
-Do use the canonical URL: va.gov/health-care/apply-form-1010ez/
+Example:
+- Don’t use a URL to a specific page: va.gov/health-care/apply-form-1010ez/introduction
+- Do use the canonical URL: va.gov/health-care/apply-form-1010ez/
 
-In addition, on modernized VA.gov, many pages—particularly static unauthenticated pages—often end in a trailing slash. To determine if a trailing slash should be used, check the live URL that the browser shows after you open it up. 
+In addition, on modernized VA.gov, many pages—particularly static unauthenticated pages—often end in a trailing slash. To find out if you should use a trailing slash, check the live URL that is displayed for the page after you open it in a browser. 
 
-Trailing slash example:
-Don’t use the URL without the trailing slash: va.gov/health-care 
-Do use the URL with a trailing slash:  va.gov/health-care/
+Example:
+- Don’t use the URL without the trailing slash: va.gov/health-care 
+- Do use the URL with a trailing slash:  va.gov/health-care/
 
 When we use the canonical URL in links, it reduces the risk of links breaking when sub-URLs in a form or flow change. It also helps tell search engines our preferred URL for search indexing. This can add search value to the canonical URL by eliminating the split of search value between multiple pages. 
 
