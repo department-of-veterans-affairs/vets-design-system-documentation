@@ -43,8 +43,8 @@ Readability is a key part of accessibility because it directly impacts how easil
 
 Automated accessibility testing tools are crucial for building accessible digital products because they provide a quick and efficient way to identify potential issues. Currently, each design system component goes through:
 
-- An Axe scan via Cypress.
-- An Axe scan via the browser extension.
+- An Axe scan via Cypress for the default variation of the component.
+- An Axe scan via the browser extension for each additional variation of the component.
 
 ## Use of Color
 
