@@ -210,7 +210,7 @@ The introduction form page for authenticated users consists of:
 
 ### Instances of this template in production
 
-* [Authorize the release of non-VA medical information to VA (VA Form 21-4142)](https://www.va.gov/supporting-forms-for-claims/release-information-to-va-form-21-4142/introduction)
-* [Submit a lay witness statement to support a VA claim (VA Form 21-10210)](https://www.va.gov/supporting-forms-for-claims/lay-witness-statement-form-21-10210/introduction)
-* [Request to be a substitute claimant for a deceased claimant - VA Form 21P-0847](https://www.va.gov/supporting-forms-for-claims/substitute-claimant-form-21P-0847/introduction)
+* [Submit an intent to file (VA Form 21-0966)](https://www.va.gov/supporting-forms-for-claims/intent-to-file-form-21-0966/)
+* [Authorize VA to release your information to a third-party source (VA Form 21-0845)](https://www.va.gov/supporting-forms-for-claims/third-party-authorization-form-21-0845/)
+* [Request priority processing (VA Form 20-10207)](https://www.va.gov/supporting-forms-for-claims/request-priority-processing-form-20-10207/)
 
