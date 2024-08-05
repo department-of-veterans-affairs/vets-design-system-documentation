@@ -6,6 +6,7 @@ anchors:
   - anchor: Considerations
   - anchor: Link text
   - anchor: Formatting
+  - anchor: Linking to pages on VA.gov
   - anchor: Linking to documents and other file sources
   - anchor: Linking to external sites
 ---
