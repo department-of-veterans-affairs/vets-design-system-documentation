@@ -37,7 +37,6 @@ Examples of these changes are:
 - If the change is temporary, use a temporary redirect instead of a permanent redirect.  Redirects default to a permanent 301 code, which tells search engines that the page is permanently gone and to remove it from their index and transfer all search value to the new URL. A temporary redirect is useful for situations where the URL will likely be brought back, such as downtime due to program pauses or maintenance, or the URL may be repurposed in the future, such as an annual campaign.
 - To claim incorrect URLs that are being accessed for a page.  Site visitors can sometimes enter incorrect URLs to try and access a page. We cannot claim every possibly URL variation of every page. Instead, we should work to determine if there is a source to an invalid URL being used, such as a miscommunication or incorrect link.
 - For pages that do not live under the va.gov domain.  If the URL of a page does not contain "va.gov", we do not own the page and therefore cannot redirect it. For example, we cannot redirect a page that lives at "www.example.gov/va" or "va.example.gov", but we could redirect a page at "example.va.gov" or "www.va.gov/example".
-- If a page is permanently removed and there's not a different page that has equivalent content - such as the ending of a program or service - it is ok to serve up a 404 (page not found) error.  
 
 ### Redirect standards and guidance
 
