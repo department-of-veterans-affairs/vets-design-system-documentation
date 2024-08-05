@@ -59,7 +59,7 @@ Once we’ve reviewed your application, a Caregiver Support Coordinator will con
 
 Follow the [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) pattern to allow users to keep a printable record of their form submission.
 
-This pattern employs the [Featured content component]({{ site.baseurl }}/components/featured-content), content, and a “Print this page” [Button - Primary]({{ site.baseurl }}/components/button). 
+This pattern employs the [Summary box component]({{ site.baseurl }}/components/summary-box), content, and a “Print this page” [Button - Primary]({{ site.baseurl }}/components/button). 
 
 The Featured content component should contain: 
 
