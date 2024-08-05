@@ -16,8 +16,6 @@ anchors:
 
 Teams must formally request a redirect before implementation so they can be vetted for accuracy and appropriateness, and implemented with full validation across environments. That request also kicks off work to update all internal links and identifies existing redirects that may need to be updated.
 
-{% include _site-on-this-page.html %}
-
 ## Usage
 
 ### When to use a redirect
