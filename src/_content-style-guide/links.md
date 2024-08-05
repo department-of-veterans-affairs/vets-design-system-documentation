@@ -83,42 +83,24 @@ Avoid linking each item in a list to the same destination
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
-### Use CTA links to call out actions
+## Linking to pages on VA.gov
 
-CTA links are standalone hyperlinks that are calls to an action, but that don't warrant a [primary button CTA]({{ site.baseurl }}/content-style-guide/button-labels). 
+When linking to a page, tool, or online form, always link to the canonical URL of the page. The canonical URL—which can be suggested and influenced by us, but is ultimately determined by search engines—is what appears in search results. 
 
-We generally reserve button CTAs to launch an application, to sign in, or other primary, essential actions on a page. But there are other kinds of actions that may call for a CTA as a text link, like downloading a form or learning about important information (like eligibility or copay rates, etc.). 
+For form flows, the canonical URL excludes the reference to a specific page in the flow or initial page displayed in the flow.  
 
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
-  
-__In this example, the link is an action related to the topic, but it isn't the primary CTA, which is to use the online application.__
+Example:
+- Don’t use a URL to a specific page: va.gov/health-care/apply-form-1010ez/introduction
+- Do use the canonical URL: va.gov/health-care/apply-form-1010ez/
 
-You can apply online or mail your Application for Burial Benefits (VA Form 21P-530).
+In addition, on modernized VA.gov, many pages—particularly static unauthenticated pages—often end in a trailing slash. To find out if you should use a trailing slash, check the live URL that is displayed for the page after you open it in a browser. 
 
-<a 
-  href="#VBA-21P-530-ARE.pdf"
-  download="VBA-21P-530-ARE.pdf" 
-  type="application/pdf">
-    <i aria-hidden="true" class="fas fa-download vads-u-padding-right--1" role="img"></i>
-      Download VA Form 21P-530 <dfn>(<abbr title="Portable Document Format">PDF</abbr>, 5 pages)</dfn>
-</a>
-  
-</div>
-</div>
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
-<div class="do-dont__content" markdown="1">
-  
-__In this example, the action gets lost as an embedded text link.__
-  
-You can apply online or mail your [Application for Burial Benefits (VA Form 21P-530)](https://www.vba.va.gov/pubs/forms/VBA-21P-530-ARE.pdf).
+Example:
+- Don’t use the URL without the trailing slash: va.gov/health-care 
+- Do use the URL with a trailing slash:  va.gov/health-care/
 
-</div>
-</div>
-</div>
+When we use the canonical URL in links, it reduces the risk of links breaking when sub-URLs in a form or flow change. It also helps tell search engines our preferred URL for search indexing. This can add search value to the canonical URL by eliminating the split of search value between multiple pages. 
+
 
 ## Linking to documents and other file sources
 * Avoid linking to PDFs as much as possible. 
