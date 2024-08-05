@@ -34,10 +34,15 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
-<va-featured-content>
-  <h3 slot="headline">Forms system documentation</h3>
-  <p>View documentation for the current forms library for VA.gov on <a href="{{ site.forms_system_link }}">the platform website</a>.</p>
-</va-featured-content>
+<va-summary-box>
+  <h3 slot="headline">Get help creating forms</h3>
+  <p>
+    Learn <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/a-guide-to-digitizing-va-forms">how to digitize a form at the VA</a>.
+  </p>
+  <p>
+    View documentation for <a href="{{ site.forms_system_link }}">building forms using the Forms Library</a>.
+  </p>
+</va-summary-box>
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/form/">Refer to the U.S. Web Design System for usage guidance</a>
 

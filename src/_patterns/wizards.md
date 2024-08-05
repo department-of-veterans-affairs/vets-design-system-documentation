@@ -40,7 +40,7 @@ This tool was developed prior to the Design System, so some of the patterns are 
 
 ## Where to place wizards
 
-The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [featured content]({{ site.baseurl }}/components/featured-content) eligibility boxes but before [accordions]({{ site.baseurl }}/component/accordion) or [additional information]({{ site.baseurl }}/components/additional-info).
+The wizard should live *on the page* on both the **Eligibility** and **How to Apply** pages for an application. The wizards begin under blue [summary box]({{ site.baseurl }}/components/summary-box) eligibility boxes but before [accordions]({{ site.baseurl }}/component/accordion) or [additional information]({{ site.baseurl }}/components/additional-info).
 
 ## Specifics of the pattern
 
