@@ -14,12 +14,6 @@ index: true
 
 Components the VA shares with the USWDS have been synced to the design, styling, and functionality of the US System while retaining elements necessary to the VA. Components that have been converted are marked with a badge <a class="site-component-badge-link site-component-badge-link--uswds" href="{{ site.uswds_link }}"><img src="{{ site.baseurl }}/assets/img/uswds-logo.svg" class="site-component-badge-link__img" width="16px" height="16px" /> USWDS v3</a> at the top of their component page.
 
-There are 3 exceptions where additional work is ongoing:
-
-1. va-table (additional variations to be added)
-2. va-file-input (fully redesigned)
-3. va-text-input (adding prefix, suffix and merging with number input)
-
 All teams must now be using the v3 versions of our web-components. The Design System Team continues to roll out the new v3-based System including syncing color, typography, and spacing with the U.S. System.
 
 ### How to use the new v3-based components

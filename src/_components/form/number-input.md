@@ -6,7 +6,7 @@ title: Number input
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A84422&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Number input elements are used for numeric inputs."
-status: use-with-caution-available
+status: dont-use-deprecated
 uswds-v3: default
 web-component: va-number-input
 anchors:
@@ -17,9 +17,9 @@ anchors:
   - anchor: Accessibility considerations
 ---
 
-<va-alert status="warning">
-  <h2 slot="headline">Scheduled for Deprecation</h2>
-  <p>This component is planned to be deprecated and it's functionality will be added to <a href="{{ site.baseurl }}/components/form/text-input">Text Input</a>. View the <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/2609">deprecation issue</a> for the current status.</p>
+<va-alert status="error">
+  <h2 slot="headline">Number Input is now deprecated</h2>
+  <p>Equivalent functionality is available in <a href="{{ site.baseurl }}/components/form/text-input">Text Input</a>.</p>
 </va-alert>
 
 ## Examples
