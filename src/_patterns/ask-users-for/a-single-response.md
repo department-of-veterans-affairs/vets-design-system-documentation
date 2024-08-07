@@ -133,11 +133,6 @@ Refer to the following component variations to implement this pattern:
 * [Single]({{ site.baseurl }}/components/form/memorable-date#forms-pattern-single-default)
 * [Multiple]({{ site.baseurl }}/components/form/memorable-date#forms-pattern-multiple)
 
-### Number input
-
-* [Single]({{ site.baseurl }}/components/form/number-input#forms-pattern-single)
-* [Multiple]({{ site.baseurl }}/components/form/number-input#forms-pattern-multiple)
-
 ### Radio button
 
 * [Single]({{ site.baseurl }}/components/form/radio-button#forms-pattern-single)
