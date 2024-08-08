@@ -4,6 +4,7 @@ permalink: /templates/hub
 title: Hub
 status: use-deployed
 intro-text: "Hub pages serve as a landing page for particular benefits."
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=2607-31366&t=1fh2gr46l2FEHw8n-1
 anchors:
   - anchor: About
   - anchor: Example
