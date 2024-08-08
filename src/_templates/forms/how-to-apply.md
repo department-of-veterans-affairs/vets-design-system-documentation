@@ -5,7 +5,7 @@ has-parent: /templates/forms/
 title: How to apply
 status: use-deployed
 intro-text: "A page that outlines eligibility requirements, provides details on how to apply, and what happens after an application is submitted."
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/9D078D44-1887-4A5B-BCAB-1254CFA0A17C/canvas
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=4849-1623&t=1fh2gr46l2FEHw8n-1
 anchors:
   - anchor: About
   - anchor: Example

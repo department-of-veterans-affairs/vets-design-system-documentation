@@ -16,7 +16,7 @@
   {% assign code-link = page.code-link %}
 {% endif %}
 
-{% if github_component_name or research_component_name or page.sketch-link or page.figma-link %}
+{% if github_component_name or research_component_name or page.figma-link %}
 <nav aria-labelledby="component-resources" class="site-component-resources-links">
   <dl class="site-component-resources-links__list">
     <dt id="component-resources" role="heading" aria-level="2" class="site-component-resources-links__title">
@@ -33,13 +33,6 @@
     <dd role="definition" class="site-component-resources-links__definition">
       <a class="site-component-resources-links__link" href="https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+{{research_component_name}}%22" target="_blank" rel="noopener noreferrer" title="View research related to this component (internal only)">
         <i aria-hidden="true" class="fas fa-book site-component-resources-links__icon" role="img"></i>Research
-      </a>
-    </dd>
-    {% endif %}
-    {% if page.sketch-link %}
-    <dd role="definition" class="site-component-resources-links__definition">
-      <a class="site-component-resources-links__link" href="{{page.sketch-link}}" target="_blank" rel="noopener noreferrer" title="View the visual design for this component (internal only)">
-        <img aria-hidden="true" src="{{ site.baseurl }}/assets/img/sketch-logo-black.svg" alt="Sketch logo" role="img" class="site-component-resources-links__img">Sketch
       </a>
     </dd>
     {% endif %}
