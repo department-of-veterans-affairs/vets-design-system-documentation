@@ -103,6 +103,8 @@ hub:
     token: --color-hub-careers
   - name: hub-pension
     token: --color-hub-pension
+  - name: hub-records
+    token: --color-hub-records
   - name: hub-housing
     token: --color-hub-housing
   - name: hub-life-insurance
