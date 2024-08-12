@@ -32,7 +32,7 @@ anchors:
 
 ### Apply to Rogers STEM scholarship
 
-{% include component-example.html alt="Check eligibility example from the process to apply for Rogers STEM scholarship." file="/images/patterns/help-users-to/check-eligibility/rogers-STEM-scholarship.png" caption="Examples of two steps in an application process that provide feedback to users regarding their eligibility (shown at mobile viewport width)." width="75%" %}
+{% include component-example.html alt="Check eligibility example from the process to apply for Rogers STEM scholarship." file="/images/patterns/help-users-to/check-eligibility/CheckEligibility.png" caption="Examples of two steps in an application process that provide feedback to users regarding their eligibility (shown at mobile viewport width)." width="75%" %}
 
 ## How to design and build 
 
