@@ -17,7 +17,9 @@ anchors:
 
 ### When to use this pattern
 
-- **Don’t ask if it does not benefit the user experience.** Only collect users’ information on this topic if you are going to use the data. 
+* **Don’t ask a user to provide information that VA already has.** You should only ask users for race or ethnicity, sexual orientation, or gender identity when VA does not already have the user's information or when VA's last validation date pre-dates the most recent approved pattern.
+* **Only ask a user to provide information if it benefits the user experience.** You should only ask a user for their race or ethnicity, sexual orientation, or gender identity if you can clearly explain how providing this information will benefit the user (not the VA) and the question is related to the larger action they are trying to perform.
+* **Only collect data when you can reinforce trust, transparency, and user choice.** You must clarify their information will not be used for their medical treatment or benefits determinations and demonstrate how a user can change their race or ethnicity, sexual orientation, or gender identity and related privacy preferences in the VA.gov profile. If a user does not have and is not eligible to create a VA.gov profile, the data is not collected.
 
 ## Examples
 
@@ -27,5 +29,7 @@ anchors:
 
 ### How this pattern works
 
-* **Give users the option of picking more than one ethnic group.** Always use checkboxes so that users can identify with multiple ethnicities. 
-* **Provide a way to opt-out of answering.** A checkbox labeled "Prefer not to answer" should be provided.
+* **Ethnicity is currently a distinct question that precedes race and is limited to one response.** Ethnicity is currently separate (this may change in future) and must only accept one response.
+* **Give users the option of picking more than one race or origin.** Always use checkboxes so that users can identify with multiple races. 
+* **Provide a way to opt-out of answering.** An option labeled "Prefer not to answer" should be provided to both questions.
+* **These questions are optional.** Clearly communicate that the information being collected is not required.
