@@ -23,7 +23,7 @@ anchors:
 
 ## Examples
 
-![applicant information race template]({{site.baseurl}}/images/patterns/ask-users-for/race-ethnicity-or-origin/race.png) 
+![applicant information race template]({{site.baseurl}}/images/patterns/ask-users-for/race-ethnicity-or-origin/race-ethnicity-or-origin.png) 
 
 ## How to design and build 
 
