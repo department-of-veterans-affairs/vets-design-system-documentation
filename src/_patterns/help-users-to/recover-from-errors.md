@@ -20,7 +20,7 @@ anchors:
 ### Step 1. Explain what went wrong
 - In a standard alert style, explain the problem in the header. (In a slim alert style without a header, this will be in the main text). [Go to alert styles](https://design.va.gov/components/alert)
 - If we caused the error, say “We’re sorry.” For example, “We’re sorry. There’s a problem with our system. We can’t access your records right now.”
-- If the person doing the action caused the error, don’t say “we’re sorry." But don’t blame the person. Use a neutral tone to describe the problem. For example, “We can’t upload this file type. Try uploading a .pdf or .doc file instead.”
+- If the person doing the action caused the error, don’t say “we’re sorry.” But don’t blame the person. Use a neutral tone to describe the problem. For example, “We can’t upload this file type. Try uploading a .pdf or .doc file instead.”
 
 ### Step 2. Explain how to fix it (recovery step)
 - After you explain the error, tell the person how to fix it. Include as many recovery steps as you need to make sure the person won’t get stuck in a dead end.
@@ -39,7 +39,7 @@ You can add conditional statements before these recovery steps as needed. For ex
 - If it still doesn’t work, …
 - If you have questions about your VA benefits, …
 
-**Note:** When you create a new error message with a contact option, you’ll need coordinate with the Veteran Support team. Tell that team what triggers the error, the recovery steps, and how contact center staff can help people troubleshoot or resolve the problem. If you're launching a new product, you can include this information in the product guide. Otherwise, you can contact them via this Slack channel: vsp-contact-center-support.
+**Note:** When you create a new error message with a contact option, you’ll need to coordinate with the Veteran Support team. Tell that team what triggers the error, what the recovery steps are, and how contact center staff can help people troubleshoot or resolve the problem. If you’re launching a new product, you can include this information in the product guide. Otherwise, you can contact the Veteran Support team via this Slack channel: vsp-contact-center-support.
 
 **Problem:** Person needs technical help navigating VA.gov or using an online tool or form
 - **Recovery step:** Call MyVA411
