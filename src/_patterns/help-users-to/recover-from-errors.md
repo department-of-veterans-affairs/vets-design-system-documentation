@@ -41,27 +41,27 @@ You can add conditional statements before these recovery steps as needed. For ex
 
 **Note:** When you create a new error message with a contact option, you’ll need to coordinate with the Veteran Support team. Tell that team what triggers the error, what the recovery steps are, and how contact center staff can help people troubleshoot or resolve the problem. If you’re launching a new product, you can include this information in the product guide. Otherwise, you can contact the Veteran Support team via this Slack channel: vsp-contact-center-support.
 
-**Problem:** Person needs technical help navigating VA.gov or using an online tool or form
+**Problem:** The person needs technical help navigating VA.gov or using an online tool or form
 - **Recovery step:** Call MyVA411
 - **Text to use:** Call us at 800-698-2411 (TTY: 711). We’re here 24/7.
 
-**Problem:** Person needs help filling out a benefit application or has questions about VA benefits
+**Problem:** The person needs help filling out a benefit application or has questions about VA benefits
 - **Recovery step:** Call benefits hotline
 - **Text to use:** Call us at 800-827-1000 (TTY: 711). We’re here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET. 
 
-**Problem:** Person needs help filling out an education benefits application or has questions about VA education benefits
+**Problem:** The person needs help filling out an education benefits application or has questions about VA education benefits
 - **Recovery step:** Call the GI Bill hotline
 - **Text to use:** Call us at 888-442-4551 (TTY: 711). We’re here Monday through Friday, 8:00 a.m. to 7:00 p.m. ET.
 
-**Problem:** Person needs help filling out a health benefits application or has questions about VA health care benefits
+**Problem:** The person needs help filling out a health benefits application or has questions about VA health care benefits
 - **Recovery step:** Call health benefits hotline
 - **Text to use:** Call us at 877-222-8387 (TTY: 711). We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET.
 
-**Problem:** Person needs to contact their health care provider or talk to someone at a VA medical center
+**Problem:** The person needs to contact their health care provider or talk to someone at a VA medical center
 - **Recovery step:** Call VA health facility
 - **Text to use:** Contact your VA health facility. 
   [Find your VA health facility](https://www.va.gov/find-locations/?page=1&facilityType=health)
 
-**Problem:** Person needs help using My HealtheVet health tools
+**Problem:** The person needs help using My HealtheVet health tools
 - **Recovery step:** Call the My HealtheVet help desk
 - **Text to use:** Call us at 877-327-0022 (TTY: 711). We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET.
