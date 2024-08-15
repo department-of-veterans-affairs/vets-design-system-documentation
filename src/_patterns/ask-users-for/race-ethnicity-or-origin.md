@@ -48,3 +48,4 @@ anchors:
 * **Give users the option of picking more than one race or origin.** Always use checkboxes so that users can identify with multiple races. 
 * **Provide a way to opt-out of answering.** An option labeled "Prefer not to answer" should be provided to both questions.
 * **These questions are optional.** Clearly communicate that the information being collected is not required.
+* **When "Prefer not to answer" is selected, other options are negated.** If a user indicates that they prefer not to answer then all other checkboxes should be unchecked and/or ignored upon submission.
