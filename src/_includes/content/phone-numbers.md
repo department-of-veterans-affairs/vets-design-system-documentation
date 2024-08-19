@@ -13,7 +13,7 @@ Using the [Telephone component]({{ site.baseurl }}/components/telephone) will ap
 
 ### Links and aria
 * Hyperlink all phone numbers, including (TTY: 711). Include "TTY:" in the link. Don't link the "call" or "text" verb that precedes the number.
-* **New guidance as of August 2024:** You no longer need to use aria on phone numbers or TTY. This shift came out of evolving accessibility guidance for AT users. Teams should stop adding aria to phone numbers and TTY in new content, but the shift will take time to implement on existing content. If you have questions, contact Sitewide CAIA team. 
+* **New guidance as of August 2024:** You no longer need to use aria labels on phone numbers or TTY. This shift came out of evolving accessibility guidance for people who use assistive technology. Teams should stop adding aria labels to phone numbers and TTY in new content, but the shift will take time to implement on existing content. If you have questions, contact the Sitewide Content, Accessibility, and Information Architecture (CAIA) team. 
 
 **Note:** If for some reason you cannot use the Telephone component, you are responsible for meeting the same formatting and accessibility guidance when creating links to phone numbers. 
 
