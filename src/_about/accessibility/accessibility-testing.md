@@ -5,8 +5,15 @@ permalink: /about/accessibility/accessibility-testing
 has-parent: /about/accessibility/
 intro-text: Accessibility testing
 anchors:
-  - anchor: ...
+  - anchor: Overview
+  - anchor: VFS team responsibilities
+  - anchor: Testing principles
+  - anchor: Testing methodology
 ---
+
+## Overview
+
+This accessibility testing plan outlines a comprehensive strategy to ensure our website and mobile application meet accessibility standards and provide an inclusive user experience for all individuals.  This plan focuses on testing across multiple platforms and devices, using both automated and manual methods to identify and address potential accessibility issues. The plan incorporates best practices and industry standards to ensure our digital products are accessible to users with disabilities. By prioritizing accessibility throughout the development lifecycle, we aim to create an inclusive digital environment that welcomes all users. 
 
 ## VFS team responsibilities
 
@@ -45,7 +52,9 @@ Each component is also tested to ensure compatibility with common assistive tech
 - Touch-only
 - Alternative input devices
 
-## Code review
+## Testing methodology
+
+### Code review
 
 Code reviews are essential for building inclusive and usable digital products for everyone. Well-written semantic HTML ensures that browsers faithfully convey design system components to users, and ensures maximum compatibility with assistive technologies. Here's what we look for in code:
 
@@ -56,7 +65,7 @@ Code reviews are essential for building inclusive and usable digital products fo
 - [Controls are labeled](https://www.w3.org/WAI/tutorials/forms/labels/)
   - Are elements labeled using appropriate techniques?
 
-## Readability
+### Readability
 
 Readability is a key part of accessibility because it directly impacts how easily users can understand the content. We ensure the following are easy to understand:
 
@@ -71,7 +80,7 @@ Readability is a key part of accessibility because it directly impacts how easil
 - [Plain language](https://design.va.gov/content-style-guide/plain-language/)
   - Is all text consistent with our plain language standards?
 
-### VFS team considerations
+#### VFS team considerations
 
 Readability of an individual component is highly dependent on the context around that component. When using a component, VFS teams should check:
 
@@ -87,14 +96,14 @@ Readability of an individual component is highly dependent on the context around
 - Plain language
   - Do error messages clearly describe the error and provide a clear path for resolving the error?
 
-## Automated scans
+### Automated scans
 
 Automated accessibility testing tools are crucial for building accessible digital products because they provide a quick and efficient way to identify potential issues. Currently, each design system component goes through:
 
 - An Axe scan via Cypress for the default variation of the component.
 - An Axe scan via the browser extension for each additional variation of the component.
 
-## Use of color
+### Use of color
 
 Color plays a crucial role in accessibility because it significantly impacts how users perceive and interact with digital content, especially those with visual impairments. Here is what we test for: 
 
@@ -102,13 +111,13 @@ Color plays a crucial role in accessibility because it significantly impacts how
 - Information is not communicated through color alone. Relying solely on color for communication is an accessibility barrier for individuals with visual impairments.
 - Use of [Windows contrast themes](https://learn.microsoft.com/en-us/windows/apps/design/accessibility/high-contrast-themes) (formerly High Contrast Mode) does not result in any use of color regressions from the default color presentation.
 
-### VFS team considerations
+#### VFS team considerations
 
 When using a component, VFS teams should check:
 
 - Color contrast against against backgrounds and nearby or adjacent elements.
 
-## Text resizing, zoom, and magnification.
+### Text resizing, zoom, and magnification.
 
 Testing text resizing, browser zoom levels, and screen magnifications is crucial for accessibility because it ensures that your website or application remains usable for individuals who need to adjust their browser's display settings or magnify parts of their screen. Here's what we test:
 
@@ -116,7 +125,7 @@ Testing text resizing, browser zoom levels, and screen magnifications is crucial
 - Zoom levels of 200%, 300%, and 400% do not affect the usability of the component.
 - Features are visible or discoverable when using [MacOS Zoom](https://support.apple.com/guide/mac-help/change-zoom-settings-for-accessibility-mh40579/mac), [Windows Magnifier](https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198), and/or similar magnification tools.
 
-## Screen readers
+### Screen readers
 
 Screen reader testing is important for accessibility because it ensures each component is usable for users of assistive technology. We test with the following screen reader and browser combinations to ensure a consistent experience across devices:
 
@@ -134,7 +143,7 @@ With each screen reader, here's what we test:
 - All interactive elements are announced with their element type, current value, and current state (as appropriate).
 - Common screen reader interaction patterns are supported (eg. navigating a page by heading, navigating a page by landmark, etc).
 
-## Input and interaction methods
+### Input and interaction methods
 
 Each component is tested to ensure it is usable for individuals who rely on different input methods. Input methods tested include:
 
