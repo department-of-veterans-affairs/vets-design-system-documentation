@@ -8,8 +8,6 @@ anchors:
   - anchor: ...
 ---
 
-TBD - Versioning these criteria? So we can say this component was testing according to Version 1.0.
-
 ## VFS team responsibilities
 
 Design system components are tested in isolation. While we try to ensure that no accessibility barriers exist in any given component, barriers can still be introduced when components are used in an unanticipated combination, or when components are placed in an unanticipated context within the page.
@@ -35,7 +33,7 @@ Each component is tested for accessibility in the design system based on the fou
 
 These principles are the foundation of [Section 508 of the Rehabilitation Act](https://www.access-board.gov/ict/), which incorporates Web Content Accessibility Guidelines (WCAG) 2.0 Level AA success criteria. We aim to adhere to the latest version of WCAG Level AA, which at the time of writing is [WCAG 2.2](https://www.w3.org/TR/WCAG22/). We strive to not only meet those standards, but to go beyond compliance with thorough testing to ensure that we creating an inclusive and equitable experience for everyone.
 
-Each component is also tested to ensure compatability with common assistive technologies covering a broad set of common interaction modalities, including:
+Each component is also tested to ensure compatibility with common assistive technologies covering a broad set of common interaction modalities, including:
 
 - Screen readers (text to speech)
 - Voice command/speech recognition (speech to text)
@@ -49,7 +47,7 @@ Each component is also tested to ensure compatability with common assistive tech
 
 ## Code review
 
-Code reviews are essential for building inclusive and usable digital products for everyone. Well-written semantic HTML ensures that browsers faithfully convey design system components to users, and ensures maximum compatability with assistive technologies. Here's what we look for in code:
+Code reviews are essential for building inclusive and usable digital products for everyone. Well-written semantic HTML ensures that browsers faithfully convey design system components to users, and ensures maximum compatibility with assistive technologies. Here's what we look for in code:
 
 - [Valid HTML usage](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
   - Are semantic HTML elements used properly?
@@ -116,7 +114,7 @@ Testing text resizing, browser zoom levels, and screen magnifications is crucial
 
 - Browser font size options correctly resize the text of a component.
 - Zoom levels of 200%, 300%, and 400% do not affect the usability of the component.
-- Features are visible or discoverable when using [MacOS Zoom](https://support.apple.com/guide/mac-help/change-zoom-settings-for-accessibility-mh40579/mac), [Windows Magnifier](https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198), and/or similar maginification tools.
+- Features are visible or discoverable when using [MacOS Zoom](https://support.apple.com/guide/mac-help/change-zoom-settings-for-accessibility-mh40579/mac), [Windows Magnifier](https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198), and/or similar magnification tools.
 
 ## Screen readers
 
@@ -155,14 +153,11 @@ For each input method, we test:
   - Controls do not require multipoint or path-based gestures.
   - Controls do not require specific click or tap patterns or timing.
 - Keyboard compatibility, including:
+  - All interactive elements are focusable using the keyboard.
   - Focus indicators are fully visible and meet color contrast requirements.
-  - ...
-- Voice command/speech recognition compatability, including:
-  - The accessible name of elements matches the visble label for the element; or, if not, the visible label supports
-  - Pronouncability of labels  
-
-## Other
-
-Testing beyond the key areas of accessibility ensures an inclusive experience for a wider range of users with diverse needs. Here are some other things we test for:
-
-- TBD
+  - Form elements such as dropdowns, radio buttons, and sliders can be utilized with arrow keys.
+  - Interactive elements can be activated with the keyboard.
+  - Users can exit all interactive elements without being trapped.
+- Voice command/speech recognition compatibility, including:
+  - The accessible name of elements matches the visible label for the element; or, if not, the visible label supports
+  - Pronouncability of labels
