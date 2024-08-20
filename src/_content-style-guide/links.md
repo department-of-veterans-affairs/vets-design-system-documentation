@@ -6,7 +6,7 @@ anchors:
   - anchor: Considerations
   - anchor: Link text
   - anchor: Formatting
-  - anchor: Linking to internal pages
+  - anchor: Linking to the main VA website
   - anchor: Linking to documents and other file sources
   - anchor: Linking to external sites
 ---
@@ -84,7 +84,7 @@ Avoid linking each item in a list to the same destination
 {% endcapture %}
 {% include _like-this-not-this.html like_this=example_like_this_1 not_this=example_not_this_1 %}
 
-## Linking to internal pages
+## Linking to the main VA website
 
 When linking to a page, tool, or online form on VA.gov, always link to the canonical URL of the page. The canonical URL—which can be suggested and influenced by us, but is ultimately determined by search engines—is what appears in search results. 
 
