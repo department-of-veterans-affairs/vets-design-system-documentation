@@ -1,0 +1,5 @@
+component,last_audit_date,code_review,code_review_comments,readability,readability_comments,automated_scans,automated_scans_comments,use_of_color,use_of_color_comments,zoom_resize_magnify,zoom_resize_magnify_comments,screen_readers,screen_readers_comments,input_methods,input_methods_comments
+va-button,2024-07-11,Pass,,Conditional,,Pass with comments,Axe testing shows a false positive on color contrast for the default variation.,Pass,,Pass,,Fail,JAWS and NVDA do not read the standard HTML properly.,,
+va-alert,2023-01-01,Pass with comments,,,,,,,,,,,,,
+va-accordion,2024-05-01,Conditional,,,,,,,,,,,,,
+va-additional-info,2024-08-21,Fail,,,,,,,,,,,,,
