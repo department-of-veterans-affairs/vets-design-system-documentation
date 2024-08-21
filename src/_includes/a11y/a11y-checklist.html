@@ -1,0 +1,29 @@
+{% for component in site.data.component-checklist.a11y-audit %}
+    {% if component["Name"] == include.name %}
+        <h2>Accessibility checklist</h2>
+
+        {% assign row = site.data.component-checklist.a11y-audit[forloop.index0] %}
+        {% for pair in row %}
+            <!-- {{ pair | inspect }} <br> -->
+
+            {{ pair[0] }}: {{ pair[1] }} <br>
+        {% endfor %}
+
+        <!-- <h3>
+            Title
+        </h3> -->
+        <dl class="site-component-checklist__list">
+            <dt class="site-component-checklist__name">
+                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i>
+                <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+            Test
+            </dt>
+
+            <dd>Code review description</dd>
+            <dd>Note: </dd>
+        </dl>
+
+
+    {% endif %}
+{% endfor %}
