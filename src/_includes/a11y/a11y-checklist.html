@@ -3,26 +3,34 @@
         <h2>Accessibility checklist</h2>
 
         {% assign row = site.data.component-checklist.a11y-audit[forloop.index0] %}
-        {% for pair in row %}
-            <!-- {{ pair | inspect }} <br> -->
+        {% for name_value_pair in row %}
+            <!-- {{ pair[0] }}: {{ pair[1] }} <br> -->
 
-            {{ pair[0] }}: {{ pair[1] }} <br>
+            
+            <dl class="site-component-checklist__list">
+                <dt class="site-component-checklist__name">
+                    {% if name_value_pair[1] contains "Pass with exceptions" %}
+                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                    {% elsif name_value_pair[1] contains "Pass" %}                
+                        <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                    {% elsif name_value_pair[1] contains "Conditional" %}
+                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                    {% elsif name_value_pair[1] contains "Fail" %}
+                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                    {% else %}
+                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> 
+                    {% endif %}
+                    
+                    {{ name_value_pair[0] }}
+                </dt>
+    
+                <dd>{{ name_value_pair[1] }}</dd>
+            </dl>
         {% endfor %}
 
         <!-- <h3>
             Title
         </h3> -->
-        <dl class="site-component-checklist__list">
-            <dt class="site-component-checklist__name">
-                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
-                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i>
-                <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
-            Test
-            </dt>
-
-            <dd>Code review description</dd>
-            <dd>Note: </dd>
-        </dl>
 
 
     {% endif %}
