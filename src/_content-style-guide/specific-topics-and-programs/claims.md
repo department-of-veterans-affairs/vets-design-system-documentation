@@ -12,7 +12,7 @@ anchors:
 
 ## Considerations
 
-Existing pages on VA.gov may not always reflect the latest decisions. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
+Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
 
 ## Related terms
 
