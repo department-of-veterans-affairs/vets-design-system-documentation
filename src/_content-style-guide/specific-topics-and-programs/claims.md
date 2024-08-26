@@ -2,7 +2,7 @@
 layout: content-style-guide
 permalink: /content-style-guide/specific-topics-and-programs/claims
 has-parent: /content-style-guide/specific-topics-and-programs/
-title: Claims
+title: Claims and applications
 intro-text: "The information on this page will help you use consistent language about claims and applications across communication channels."
 anchors:
  - anchor: Considerations
@@ -12,7 +12,7 @@ anchors:
 
 ## Considerations
 
-We use the word claim intentionally to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. Merriam-Webster defines "claim" as an action "to assert to be rightfully one's own." 
+This is a living document. We'll update this page as we learn more and evolve our language. 
 
 ## Related terms
 
@@ -20,7 +20,7 @@ We use the word claim intentionally to reflect that Veterans who are filing for 
 : We use this term in the context of someone submitting an initial application for benefits. In general, a Veteran will "apply" for health care and "file a claim" for disability.
 
 **claim**
-: In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. 
+: In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. We use the word claim intentionally to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. 
 
 **claim exam**
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
