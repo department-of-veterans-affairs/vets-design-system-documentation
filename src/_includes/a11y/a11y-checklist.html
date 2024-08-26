@@ -1,37 +1,47 @@
-{% for component in site.data.component-checklist.a11y-audit %}
+{% assign component-found = false %}
+
+{% for component in site.data.component-checklist.a11y.a11y-audit %}
     {% if component["Name"] == include.name %}
-        <h2>Accessibility checklist</h2>
+        {% assign component-found = true %}
+        {% assign row = site.data.component-checklist.a11y.a11y-audit[forloop.index0] %}
 
-        {% assign row = site.data.component-checklist.a11y-audit[forloop.index0] %}
+        <p>
+            For more information on each category, see <a href="{{ site.baseurl }}/accessibility/accessibillity-testing">Accessibility Testing</a>.
+        </p>
+
         {% for name_value_pair in row %}
-            <!-- {{ pair[0] }}: {{ pair[1] }} <br> -->
+            {% if name_value_pair[0] != "Name" %}
+                <dl class="site-component-checklist__list">
+                    <dt class="site-component-checklist__name">
+                        {%if name_value_pair[0] != "Last audit date" %}
+                            {% if name_value_pair[1] contains "Pass with exceptions" %}
+                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                            {% elsif name_value_pair[1] contains "Pass" %}                
+                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                            {% elsif name_value_pair[1] contains "Conditional" %}
+                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                            {% elsif name_value_pair[1] contains "Fail" %}
+                                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                            {% else %}
+                                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> 
+                            {% endif %}
+                        {% endif %}
 
-            
-            <dl class="site-component-checklist__list">
-                <dt class="site-component-checklist__name">
-                    {% if name_value_pair[1] contains "Pass with exceptions" %}
-                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
-                    {% elsif name_value_pair[1] contains "Pass" %}                
-                        <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
-                    {% elsif name_value_pair[1] contains "Conditional" %}
-                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
-                    {% elsif name_value_pair[1] contains "Fail" %}
-                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                        {{ name_value_pair[0] }}
+                    </dt>
+
+                    {% if name_value_pair[1] %}
+                        <dd>{{ name_value_pair[1] }}</dd>
                     {% else %}
-                        <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> 
+                        <dd>This category has not been tested.</dd>
                     {% endif %}
-                    
-                    {{ name_value_pair[0] }}
-                </dt>
-    
-                <dd>{{ name_value_pair[1] }}</dd>
-            </dl>
+                </dl>
+            {%endif%}
         {% endfor %}
-
-        <!-- <h3>
-            Title
-        </h3> -->
-
-
     {% endif %}
 {% endfor %}
+
+
+{% if component-found == false %}
+    <p>This component has not yet been audited for accessibility.</p>
+{% endif %}
