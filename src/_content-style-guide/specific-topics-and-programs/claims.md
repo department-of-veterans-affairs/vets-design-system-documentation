@@ -12,7 +12,7 @@ anchors:
 
 ## Considerations
 
-Since we are always iterating on our site, existing pages may not always reflect the latest decisions on this page yet until the content team can update them. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
+Existing pages on VA.gov may not always reflect the latest decisions. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
 
 ## Related terms
 
@@ -20,7 +20,7 @@ Since we are always iterating on our site, existing pages may not always reflect
 : We use this term in the context of someone submitting an initial application for benefits. In general, a Veteran will "apply" for health care and "file a claim" for disability.
 
 **claim**
-: In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. We use the word claim intentionally to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. 
+: In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. We use this term intentionally to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. 
 
 **claim exam**
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
