@@ -35,6 +35,12 @@
                     {% else %}
                         <dd>This category has not been tested.</dd>
                     {% endif %}
+
+                    {% if name_value_pair[1] contains "Conditional" %}
+                        <p>
+                            <u>Note:</u> <b>This category is dependent on how you use this component.</b> Test this for accessibility in your project.
+                        </p>
+                    {% endif %}
                 </dl>
             {%endif%}
         {% endfor %}
