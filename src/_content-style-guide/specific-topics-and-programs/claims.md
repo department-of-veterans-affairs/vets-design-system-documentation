@@ -12,7 +12,7 @@ anchors:
 
 ## Considerations
 
-This is a living document. We'll update this page as we learn more and evolve our language. 
+Since we are always iterating on our site, existing pages may not always reflect the latest decisions on this page yet until the content team can update them. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
 
 ## Related terms
 
