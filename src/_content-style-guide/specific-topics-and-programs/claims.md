@@ -12,7 +12,9 @@ anchors:
 
 ## Considerations
 
-Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
+= We use the terms "claim," "application," and "request" throughout forms on VA.gov. We use these terms intentionally, and they are not always interchangeable.  
+- In reusable content (like an alert) that appears in many types of online forms and static pages, generally use "form" instead of "claim," "application," or "request." 
+- Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
 
 ## Related terms
 
