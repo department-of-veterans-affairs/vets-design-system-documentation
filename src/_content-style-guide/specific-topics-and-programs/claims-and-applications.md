@@ -21,10 +21,12 @@ Not this: "Thank you for submitting your application on VA.gov"
 ## Related terms
 
 **apply**
-: We use this term in the context of someone submitting an initial application for benefits. In general, a Veteran will "apply" for health care and "file a claim" for disability.
+: We use this term in the context of someone submitting an initial application for benefits. In general, a Veteran will "apply" for any non-disability benefit (including pension and DIC benefits) and "file a claim" for disability.
 
 **claim**
 : In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. We use this term to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. 
+
+Example: You apply for a disability rating. After you get your rating, you file a claim for your compensation.
 
 **claim exam**
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
