@@ -4,7 +4,7 @@ Follow these steps to enter data for an accessibility audit.
 
 ## Edit CSV file
 
-- Edit a11y-audit.csv in your editor of choice.
+- Open `a11y-audit.csv` from this folder in your editor of choice.
 - Update an existing row or add a new row for the component.
 - Enter the name, audit date, and status for each category. The status should start with one of the following, so the site can display the appropriate icon. Any text after that is freeform to describe the issue.
     - "Pass" - If the component passed with nothing to note.
