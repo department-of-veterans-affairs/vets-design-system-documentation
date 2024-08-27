@@ -90,7 +90,6 @@ exclude:
   - _patterns/html
   - _foundation/layout/html
   - _foundation/utilities/html
-  - README.md
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.
