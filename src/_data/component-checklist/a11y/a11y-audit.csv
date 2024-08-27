@@ -1,5 +1,5 @@
 Name,Last audit date,Code review,Readability,Automated scans,Use of color,"Text resizing, zoom, and magnification",Screen readers,Input and interaction methods
-va-button,2024-07-11,Pass,Conditional,Pass with exceptions - Axe testing shows a false positive on color contrast for the default variation.,Pass,Pass,Fail,
+va-button,2024-07-11,Pass,Conditional - This is dependent on writing clear button text.,Pass with exceptions - Axe testing shows a false positive on color contrast for the default variation.,Pass,Pass,Fail - Both JAWS and NVDA did not announce the button when tabbing to it.,
 va-alert,2023-01-01,,,,,,,
 va-accordion,2024-05-01,,,,,,,
 va-additional-info,2024-08-21,,,,,,,
