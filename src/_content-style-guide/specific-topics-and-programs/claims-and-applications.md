@@ -12,9 +12,11 @@ anchors:
 
 ## Considerations
 
-- We use the terms "claim," "application," and "request" throughout forms on VA.gov. We use these terms intentionally, and they are not always interchangeable.  
-- In reusable content (like an alert) that appears in many types of online forms and static pages, generally use "form" instead of "claim," "application," or "request." 
-- Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the Sitewide content, accessibility, and information architecture team. 
+- We use the terms "claim," "application," and "request" throughout VA.gov. We use these terms intentionally, and they often aren't interchangeable.  
+- In reusable content that appears in many types of online forms and static pages (like an alert), generally use the general term "form" instead of "claim," "application," or "request" to avoid confusion.  
+Like this: "Thank you for submitting your form on VA.gov"  
+Not this: "Thank you for submitting your application on VA.gov"
+- Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the content and information architecture team. 
 
 ## Related terms
 
@@ -22,7 +24,7 @@ anchors:
 : We use this term in the context of someone submitting an initial application for benefits. In general, a Veteran will "apply" for health care and "file a claim" for disability.
 
 **claim**
-: In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. We use this term intentionally to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. 
+: In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim. We use this term to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation. 
 
 **claim exam**
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
