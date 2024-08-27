@@ -12,8 +12,8 @@ anchors:
 
 ## Considerations
 
-- We use the terms "claim," "application," and "request" throughout VA.gov. We use these terms intentionally, and they often aren't interchangeable.  
-- In reusable content that appears in many types of online forms and static pages (like an alert), generally use the general term "form" instead of "claim," "application," or "request" to avoid confusion.  
+- We use the terms "claim," "application," and "request" throughout VA.gov intentionally, and they often aren't interchangeable.  
+- In reusable content that appears in many types of applications, requests, and static pages (like an alert), use the general term "form" instead of "claim," "application," or "request" to avoid confusion.  
 Like this: "Thank you for submitting your form on VA.gov"  
 Not this: "Thank you for submitting your application on VA.gov"
 - Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the content and information architecture (CAIA) team. 
