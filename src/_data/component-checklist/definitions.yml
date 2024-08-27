@@ -7,13 +7,6 @@ maturity:
     desc: Component has been in production for more than 3 months with no significant issues found.
   - name: Adoption
     desc: Multiple teams have adopted this component.
-accessibility:
-  - name: Code review
-  - name: Readability
-  - name: Automated scans
-  - name: Text resizing, zoom, and magnification
-  - name: Screen readers
-  - name: Input and interaction methods
 code-assets:
   - name: Variations 
     desc: Storybook includes all variations (style, size, orientation, optional iconography, selection, error state, etc.)
