@@ -15,14 +15,22 @@
                     <dt class="site-component-checklist__name">
                         {%if name_value_pair[0] != "Last audit date" %}
                             {% if name_value_pair[1] contains "Pass with exceptions" %}
+                                {% assign completed_items = completed_items | plus: 1 %}
+                                {% assign total_items = total_items | plus: 1 %}
                                 <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
-                            {% elsif name_value_pair[1] contains "Pass" %}                
+                            {% elsif name_value_pair[1] contains "Pass" %}
+                                {% assign completed_items = completed_items | plus: 1 %}
+                                {% assign total_items = total_items | plus: 1 %}           
                                 <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
                             {% elsif name_value_pair[1] contains "Conditional" %}
+                                {% assign completed_items = completed_items | plus: 1 %}
+                                {% assign total_items = total_items | plus: 1 %}
                                 <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
                             {% elsif name_value_pair[1] contains "Fail" %}
+                                {% assign total_items = total_items | plus: 1 %}
                                 <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
                             {% else %}
+                                {% assign total_items = total_items | plus: 1 %}
                                 <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> 
                             {% endif %}
                         {% endif %}
