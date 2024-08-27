@@ -16,7 +16,7 @@ anchors:
 - In reusable content that appears in many types of online forms and static pages (like an alert), generally use the general term "form" instead of "claim," "application," or "request" to avoid confusion.  
 Like this: "Thank you for submitting your form on VA.gov"  
 Not this: "Thank you for submitting your application on VA.gov"
-- Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the content and information architecture team. 
+- Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the content and information architecture (CAIA) team. 
 
 ## Related terms
 
