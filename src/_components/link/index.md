@@ -25,7 +25,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-link--docs" link_text="va-link" height="75px" %}
+{% include storybook-preview.html story="components-va-link--default" link_text="va-link" height="75px" %}
 
 ### Active
 
