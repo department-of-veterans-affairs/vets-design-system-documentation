@@ -11,7 +11,6 @@ anchors:
   - anchor: React applications
   - anchor: Custom events
   - anchor: Native events
-  - anchor: How to migrate to Web Components
 ---
 
 ## How to use a web component
@@ -204,18 +203,3 @@ Another example using the `blur` event in vanilla JavaScript:
 <hr>
 
 For more information about native events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
-
-## How to migrate to Web Components
-
-The Design System Team provides three ways to migrate specific React Components over to Web Components:
-* **Manual** - There is an ESLint rule that informs you that the React component is deprecated but there are too many changes to automate a replacement and a guide will need to be followed ([Storybook](https://design.va.gov/storybook/?path=/story/about-introduction--page) example, Confluence documentation, or other guidance within the ESLint popup).
-* **ESLint Rule** - There is an ESLint rule that informs you of the ability to convert from a React Component to a Web Component with a migration click.
-* [**Migration Script**](https://github.com/department-of-veterans-affairs/vets-website/blob/main/script/component-migration/README.md) - There is a script available to be used in the CLI when in the `vets-website` repo to convert the React Component to a Web Component.
-
-Auto-migrations may not be able to perfectly migrate every component. Before you merge your PR be sure to inspect the diff and test thoroughly. Migrations also do not update test files so you will need to update those manually.
-
-### Web component migrations
-
-Here is a list of each Web Component and the migration available:
-
-* `va-modal`: [ESLint Rule](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/blob/e37233f7ed059c91bf43e92f825390bbf5991298/packages/eslint-plugin/lib/rules/prefer-web-component-library.js)
