@@ -14,7 +14,6 @@ sub-pages:
   - sub-page: Input message
   - sub-page: Label
   - sub-page: Need help?
-  - sub-page: Number input
   - sub-page: Penalty notice
   - sub-page: Prefill
   - sub-page: Privacy Agreement

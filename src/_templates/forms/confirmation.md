@@ -5,6 +5,7 @@ has-parent: /templates/forms/
 title: Confirmation
 status: use-deployed
 intro-text: "The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim."
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=2988-66786&t=1fh2gr46l2FEHw8n-1
 anchors:
   - anchor: About
   - anchor: Example
@@ -17,7 +18,7 @@ Our current confirmation pages vary in format and content. Below are some of the
 
 ## Example
 
-![form confirmation template]({{site.baseurl}}/images/templates/forms/confirmation/mini-template.png) 
+![form confirmation template]({{site.baseurl}}/images/templates/forms/confirmation/mini-template.png)
 
 The form confirmation page consists of:
 
@@ -32,7 +33,6 @@ The form confirmation page consists of:
 
 {% include component-example.html alt="An example of a confirmation page." file="/images/templates/forms/confirmation/health-care-confirmation.png" caption="Example of the Apply for health care confirmation page." width="50%" %}
 
-
 ## Structure
 
 ### Page title
@@ -42,9 +42,9 @@ The H1 for this page should carry over from H1 for the online form. File for [be
 Example:  
 File for disability compensation (Form 21-526EZ)
 
-### Success alert 
+### Success alert
 
-![success alert]({{ site.baseurl }}/images/templates/forms/confirmation/success-alert.png) 
+![success alert]({{ site.baseurl }}/images/templates/forms/confirmation/success-alert.png)
 
 After the H1 there should be a line of content letting users know that they successfully submitted their application. Use a [success alert]({{ site.baseurl }}/components/alert#success-alert) to let your user know that they’ve successfully submitted their form. Content for the success alert will depend on the form.
 
@@ -59,9 +59,9 @@ Once we’ve reviewed your application, a Caregiver Support Coordinator will con
 
 Follow the [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) pattern to allow users to keep a printable record of their form submission.
 
-This pattern employs the [Summary box component]({{ site.baseurl }}/components/summary-box), content, and a “Print this page” [Button - Primary]({{ site.baseurl }}/components/button). 
+This pattern employs the [Summary box component]({{ site.baseurl }}/components/summary-box), content, and a “Print this page” [Button - Primary]({{ site.baseurl }}/components/button).
 
-The Featured content component should contain: 
+The Featured content component should contain:
 
 - Applicant name
 - Benefit they’ve applied for
@@ -70,32 +70,33 @@ The Featured content component should contain:
 - Other important information about their claim, such as disability conditions, they’re claiming. (if applicable)
 - “Print this page” default blue button
 
-### Other content elements 
+### Other content elements
 
 Content to include on the confirmation page will depend on the type of benefit. Some benefit confirmation pages might need more information than others.
 
 Content writers and designers should work together to determine the best format and content for the confirmation page, based on the type of benefit and stakeholder input. The [Process list (subway map) component]({{ site.baseurl }}/components/process-list) can be a good solution for presenting next steps or processes where the user may need to track progress over an extended period of time.
 
 Some examples of other questions we might want to include on a form's confirmation page are:
-- What happens after I apply? 
+
+- What happens after I apply?
 - How long will it take VA to process the application?
 - What can the applicant do while they wait?
 - Are there any actions the applicant needs to take while they wait?
 - What can the applicant do if they have additional questions after they apply?
- 
+
 Some examples of other content we might want to include on a form's confirmation page are:
- 
+
 Letting the applicant know that VA might contact them for more information or documents.
- 
+
 Example message:
- 
+
 >We may contact you if we need more information or documents.
 
 ### Back to VA.gov link
 
-![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/action-link.png) 
+![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/action-link.png)
 
- Include a link that allows users to navigate back to VA.gov. The [Link - Action]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage. 
+ Include a link that allows users to navigate back to VA.gov. The [Link - Action]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage.
 
 ### Need help
 
