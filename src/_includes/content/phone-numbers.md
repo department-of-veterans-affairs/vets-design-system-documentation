@@ -12,7 +12,8 @@ Using the [Telephone component]({{ site.baseurl }}/components/telephone) will ap
 * When a phone number has (TTY: 711) included, it should be formatted in parenthesis directly following the phone number. Example: 866-440-1238 (TTY: 711) or 866-440-1238, ext. 4 (TTY: 711)
 
 ### Links and aria
-* Hyperlink all phone numbers, including (TTY: 711). Include "TTY:" in the link. Don't link the "call" or "text" verb that precedes the number.
+* Hyperlink all phone numbers, including (TTY: 711). Include "TTY:" in the link. Don't link the "call" or "text" verb that precedes the number.  
+Example: `<a href="tel:2021231234"> 202-123-1234 </a> (<a href="tel:711">TTY: 711</a>)`
 * **New guidance as of August 2024:** You no longer need to use aria labels on phone numbers or TTY. This shift came out of evolving accessibility guidance for people who use assistive technology. Teams should stop adding aria labels to phone numbers and TTY in new content, but the shift will take time to implement on existing content. If you have questions, contact the Sitewide Content, Accessibility, and Information Architecture (CAIA) team. 
 
 **Note:** If for some reason you cannot use the Telephone component, you are responsible for meeting the same formatting and accessibility guidance when creating links to phone numbers. 
