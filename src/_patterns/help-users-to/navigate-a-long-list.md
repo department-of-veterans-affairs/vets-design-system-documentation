@@ -32,7 +32,7 @@ anchors:
 
 ## Examples
 
-{% include component-example.html alt="Help users to navigate a long list when scheduling a medical appointment with a provider." file="/images/patterns/help-users-to/navigate-a-long-list/choose-a-provider-w-sort.png" caption="The Appointments tool uses this pattern to help users navigate a long list when scheduling a medical appointment with a provider. <br/> Disclaimer: These are not actual providers or health care facilities." class="x2" %}
+{% include component-example.html alt="Help users to navigate a long list when scheduling a medical appointment with a provider." file="/images/patterns/help-users-to/navigate-a-long-list/choose-a-provider.png" caption="The Appointments tool uses this pattern to help users navigate a long list when scheduling a medical appointment with a provider. <br/> Disclaimer: These are not actual providers or health care facilities." class="x2" %}
 
 ## How to design and build 
 
