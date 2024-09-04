@@ -65,15 +65,14 @@ anchors:
 * **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. 
 
 ### When to use a Back link
-* **As a replacement to the breadcrumb for specific form steps.** All of the following must be true in order to use the back link variation:
-  1. Page template must use [minimal header]({{ site.baseurl }}/components/header/header-minimal) and [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
-  2. Breadcrumb is removed (back link takes it's place in layout)
-  3. Form step uses [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response)
-  4. The H1 of the page is the form question and not the step title
-  5. Form back button is removed
+* **As an alternate to the breadcrumb for specific form steps.** The following conditions must be met in order to implement the back link variation:
+  1. The page template must use the [minimal header]({{ site.baseurl }}/components/header/header-minimal) and the [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal).
+  2. The breadcrumb navigation should be removed, allowing the back link to replace it within the layout.
+  3. The form step must follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response)
+  4. The `H1` element should represent the form headline for the page rather than the step title indicated in the step indicator.  
+  5. Only a "continue" button should be present after the form, with no "back" button included.
 
 See [Minimal header mock forms](https://staging.va.gov/mock-form-minimal-header/) for examples. 
-
 
 ### When to use a Calendar link
 * **Adding an event to a calendar.** Use when the link adds an event to a digital calendar.
