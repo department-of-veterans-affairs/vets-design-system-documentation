@@ -68,7 +68,7 @@ anchors:
 * **As an alternate to the breadcrumb for specific form steps.** The following conditions must be met in order to implement the back link variation:
   1. The page template must use the [minimal header]({{ site.baseurl }}/components/header/header-minimal) and the [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal).
   2. The breadcrumb navigation should be removed, allowing the back link to replace it within the layout.
-  3. The form step must follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response)
+  3. The form step must follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response).
   4. The `H1` element should represent the form headline for the page rather than the step title indicated in the step indicator.  
   5. Only a "continue" button should be present after the form, with no "back" button included.
 
