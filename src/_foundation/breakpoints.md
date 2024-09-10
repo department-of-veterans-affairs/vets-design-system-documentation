@@ -17,6 +17,10 @@ anchors:
 
 ## Names and values
 
+<va-alert status="info" slim>
+  <p class="vads-u-margin-y--0">The VA Design System is currently transitioning to breakpoint names that more closely align with USWDS. The table below lists the original VADS breakpoint names and its new corresponding name.</p>
+</va-alert>
+
 There are six key breakpoints where the design of any page layout, utility, or component may change.
 
 {% include _breakpoint-names.html hide_link=true %}
@@ -50,7 +54,7 @@ The CSS library includes the `@media` mixin to make it easier for developers to 
 This is will compile to:
 
 ```scss
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   //Some styles
 }
 ```
