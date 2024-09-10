@@ -21,7 +21,7 @@ anchors:
   <p class="vads-u-margin-y--0">The VA Design System is currently transitioning to breakpoint names that more closely align with USWDS. The table below lists the original VADS breakpoint names and its new corresponding name.</p>
 </va-alert>
 
-There are six key breakpoints where the design of any page layout, utility, or component may change.
+These are the key breakpoints where the design of any page layout, utility, or component may change.
 
 {% include _breakpoint-names.html hide_link=true %}
 
