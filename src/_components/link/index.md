@@ -69,7 +69,7 @@ anchors:
   * <strong>Conventional Multi-step Forms</strong> that also:
     * Have a [minimal header]({{ site.baseurl }}/components/header/header-minimal) and [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
     * Follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern
-    * Use the `H1` element represent the headline for the current form page, rather than the step title in the step indicator
+    * Use the `H1` element to represent the headline for the current form page, rather than the step title in the step indicator
     * Include only a `Continue` button and do not have a `Back` button after the form
   * <strong>Short Forms</strong> that has a small amount of short, concise steps. For example, the [Pact Act Wizard](https://staging.va.gov/pact-act-eligibility/introduction).
   * <strong>Non-Form Pages</strong> where the current page was accessed from a related page and does not have additional navigation. For example, an appointment details page.
