@@ -8,7 +8,7 @@ title: Position
 # Position
 
 <div class="va-introtext" markdown="1">
-Change the alignment of text or elements. Position classes include [responsive prefixes](#responsive-prefixes).
+Change the positioning of text or elements. Position classes include [responsive prefixes](#responsive-prefixes).
 </div>
 
 <div class="site-showcase">
