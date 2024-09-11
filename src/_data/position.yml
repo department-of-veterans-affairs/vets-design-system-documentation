@@ -4,4 +4,4 @@ position:
   - name: relative
     description: "The element is positioned according to the normal flow of the document, and then offset relative to itself"
   - name: fixed
-    description: "The element is removed from the normal document flow, and no space is created for the element in the page layout."
+    description: "The element is removed from the normal document flow, no space is created for the element in the page layout, and is positioned relative to its initial containing block"
