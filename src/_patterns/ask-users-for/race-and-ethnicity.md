@@ -40,7 +40,7 @@ anchors:
 
 ## Examples
 
-![applicant information race template]({{site.baseurl}}/images/patterns/ask-users-for/race-and-ethnicity/race-ethnicity-or-origin.png) 
+![applicant information race template]({{site.baseurl}}/images/patterns/ask-users-for/race-and-ethnicity/race-and-ethnicity.png) 
 
 ## How to design and build 
 
