@@ -65,14 +65,14 @@ anchors:
 * **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. 
 
 ### When to use a Back link
-* **As an alternate to the breadcrumb for specific form steps.** The following conditions must be met in order to implement the back link variation:
-  1. The page template must use the [minimal header]({{ site.baseurl }}/components/header/header-minimal) and the [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal).
-  2. The breadcrumb navigation should be removed, allowing the back link to replace it within the layout.
-  3. The form step must follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response).
-  4. The `H1` element should represent the form headline for the page rather than the step title indicated in the step indicator.  
-  5. Only a "continue" button should be present after the form, with no "back" button included.
-
-See [Minimal header mock forms](https://staging.va.gov/mock-form-minimal-header/) for examples. 
+* **As a replacement for breadcrumb** on:
+  * <strong>Conventional Multi-step Forms</strong> that also:
+    * Have a [minimal header]({{ site.baseurl }}/components/header/header-minimal) and [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
+    * Follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern
+    * Use the `H1` element represent the headline for the current form page, rather than the step title in the step indicator
+    * Include only a `Continue` button and do not have a `Back` button after the form
+  * <strong>Short Forms</strong> that has a small amount of short, concise steps. For example, the [Pact Act Wizard](https://staging.va.gov/pact-act-eligibility/introduction).
+  * <strong>Non-Form Pages</strong> where the current page was accessed from a related page and does not have additional navigation. For example, an appointment details page.
 
 ### When to use a Calendar link
 * **Adding an event to a calendar.** Use when the link adds an event to a digital calendar.
