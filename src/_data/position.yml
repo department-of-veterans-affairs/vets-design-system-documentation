@@ -1,0 +1,7 @@
+position:
+  - name: absolute
+    description: "The element is removed from the normal document flow, and no space is created for the element in the page layout"
+  - name: relative
+    description: "The element is positioned according to the normal flow of the document, and then offset relative to itself"
+  - name: fixed
+    description: "The element is removed from the normal document flow, and no space is created for the element in the page layout."
