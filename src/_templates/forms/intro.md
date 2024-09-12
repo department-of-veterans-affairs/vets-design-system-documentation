@@ -22,20 +22,20 @@ anchors:
 
 The form intro page does 3 things:
 
-- Sets clear expectations about the process of using this form
+- Sets clear expectations about the process of using the form
 - Helps the person prepare to fill out the form by gathering required information and documents before they start
 - Provides ways to get help and to find more information about the related benefit
 
-Since people can navigate directly to this page from outside VA.gov, this intro page should include basic information they need to understand if this is the correct form.
+Since people can navigate directly to this page from outside VA.gov, the intro page should include basic information the person needs to understand if this is the correct form.
 
 ## Variations
 
-There are 2 versions of the Introduction page:
+There are 2 versions of the intro page:
 
 - **Application**: Use this variation if the form is an application for a benefit or service.
 - **Non-application**: In most cases, use this variation if the form is **not** an application for a benefit or service. For example, use this for [supporting forms](https://www.va.gov/supporting-forms-for-claims/) that people need to submit along with their application and for claims for reimbursement under VA health care programs.
 
-Both variations mostly follow the same structure. The only difference is the section after the intro:
+Both variations mostly follow the same structure. The only difference is the section after the intro paragraph:
 
 - Applications use a process list
 - Non-applications use a "What to know before you fill out this form" section
@@ -48,9 +48,9 @@ Both variations mostly follow the same structure. The only difference is the sec
 
 **Plain language title**
 
-For the H1, use a plain language CTA that starts with an action verb, like "Apply for VA health care" or "File for disability compensation"
+For the H1, use a plain language call to action that starts with an action verb, like "Apply for VA health care" or "File for disability compensation."
 
-Aim for 52 characters or less, but exceptions to character length are OK if a slightly longer description adds clarity (like "Authorize the release of non-VA medical information to VA")
+Aim for 52 characters or fewer. Exceptions to character length are OK if a slightly longer description adds clarity (like "Authorize the release of non-VA medical information to VA")
 
 **Subtitle**
 
@@ -68,18 +68,18 @@ Alternate example:
 
 **Intro paragraph**
 
-- Add a brief intro describing when to use this form (1 to 3 sentences, no more than 25 words per sentence).
+- Add a brief intro describing when to use this form. This could be 1 to 3 sentences, with no more than 25 words per sentence.
 - Try reusing the "When to use" blurb from the form detail page in Find a Form. For example, using the Veterans Pension blurb from the form detail page, this intro could be "Use this form if you’re a wartime Veteran and want to file a pension claim."
 
 **Note:** Guidance on this part of the template is evolving. Check back for updates.
 
 ## Process list (for applications)
 
-- Use a [process list]({{ site.baseurl }}/components/process-list) to describe the steps to apply.
+- Use a [process list]({{ site.baseurl }}/components/process-list) to describe the steps to apply
 - Use this H2 above the list: "Follow these steps to get started"
 - Use the numbered process steps listed here as H3s
 - Add tailored need-to-know information about the specific form under each step, but aim to keep this section as brief as possible
-- Consider how the information in this process list aligns with information on the related VA.gov pages for this benefit — if you need to add or update information on those pages, talk with the **Sitewide content, accessibility, information architecture (CAIA)** team that manages all benefit pages in the Drupal CMS
+- Consider how the information in this process list aligns with information on the related VA.gov pages for this benefit—if you need to add or update information on those pages, talk with the Sitewide content, accessibility, information architecture (CAIA) team that manages all benefit pages in the Drupal CMS
 
 **1. Check your eligibility**
 
@@ -125,7 +125,8 @@ Example:
 
 ## Sign-in widget, prefill alert, or "continue saved form" alert
 
-Dynamically display one of these options. Sign-in widgets and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.
+Dynamically display one of these options. Sign-in widgets and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.  
+
 **Note:** The sign-in and prefill variations assume that the form prefills information for people who are signed in to VA.gov.
 
 ### If the person is already signed in
@@ -145,7 +146,7 @@ Dynamically display one of these options. Sign-in widgets and prefill alerts sho
 
 Choose the correct sign-in widget for your form.
 
-**Note:** The [alert component page]({{ site.baseurl }}/components/alert) has examples of sign-in widget alerts, but we're currently updating our guidance for sign-in and verification widgets in online forms. Check back here for updates, and in the meantime reach out to the Sitewide CAIA team in our sitewide-content-accessibility-ia slack channel for support.
+**Note:** The [alert component page]({{ site.baseurl }}/components/alert) has examples of sign-in widget alerts, but we're currently updating our guidance for sign-in and verification widgets in online forms. Check back here for updates, and in the meantime reach out to the Sitewide CAIA team in our sitewide-content-accessibility-ia Slack channel for support.
 
 ## OMB and Need help sections
 
@@ -192,11 +193,11 @@ The introduction form page for authenticated users consists of:
 
 ### Instances of this template in production
 
-* [https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-* [https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction](https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction)
-* [https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction](https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction)
-* [https://www.va.gov/pension/application/527EZ/introduction](https://www.va.gov/pension/application/527EZ/introduction)
-* [https://www.va.gov/health-care/apply/application/introduction](https://www.va.gov/health-care/apply/application/introduction)
+* [File for disability compensation](https://www.va.gov/disability/file-disability-claim-form-21-526ez/)
+* [Apply for VA Education Benefits](https://www.va.gov/education/apply-for-education-benefits/application/1990/)
+* [Apply for pre-need eligibility determination](https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/)
+* [Apply for Veterans Pension benefits](https://www.va.gov/pension/application/527EZ/)
+* [Apply for VA health care](https://www.va.gov/health-care/apply/application/)
 
 ## Examples (non-application)
 
