@@ -8,17 +8,6 @@ maturity:
   - name: adoption
     score: false
     notes: "This component is not yet in use in production."
-accessibility:
-  - name: accessible-use-of-color
-    score: true
-  - name: accessible-contrast
-    score: true
-  - name: keyboard-interactions
-    score: false
-  - name: content-zoom-tested
-    score: false
-  - name: tested-in-screen-readers
-    score: false
 code-assets:
   - name: variations 
     score: true
