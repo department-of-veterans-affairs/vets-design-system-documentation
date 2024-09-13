@@ -4,7 +4,7 @@ title: Accessibility
 permalink: /about/accessibility/
 intro-text: How to follow accessibility standards when using or contributing to the VA Design System (VADS)
 sub-pages:
-  - sub-page: Accessibility testing
+  - sub-page: Accessibility testing for design system components
   - sub-page: Accessibility annotations
 ---
 
