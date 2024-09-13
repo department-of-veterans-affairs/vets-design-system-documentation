@@ -28,7 +28,3 @@ visual-assets:
     desc: Includes all interactive states that are applicable (hover, active, focus, keyboard focus, disabled).
   - name: Tokens
     desc: All design attributes (color, typography, layout, etc.) are available as tokens.
-#  - name: Form library
-#    desc: Component is available in a UXPin Forms library.
-#  - name: Alt color themes
-#    desc: Works properly on dark backgrounds, Windows high-contrast mode, or OS dark themes.
