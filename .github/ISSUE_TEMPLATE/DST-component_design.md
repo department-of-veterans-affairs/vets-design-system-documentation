@@ -2,7 +2,7 @@
 name: "DST - Component design"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design"
-labels: platform-design-system-team
+labels: platform-design-system-team, DST-design
 assignees: babsdenney, danbrady, lwwright7
 
 ---

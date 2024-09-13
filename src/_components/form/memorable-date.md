@@ -69,7 +69,7 @@ anchors:
 
 ### Choosing between variations
 
-* The v3 version of this component uses a select element instead of a text input for the month. This was done after research conducted by the USWDS team. Teams should note the maturity of this component and proceed with caution.
+* Unlike the USWDS, the default component uses a text input instead of a select input for the month. This was done after user testing showed inconsistencies between field types led to [challenges for users of  assistive technology](https://github.com/uswds/uswds/issues/5945). Teams should note the maturity of this component and proceed with caution.
 
 ### Errors
 

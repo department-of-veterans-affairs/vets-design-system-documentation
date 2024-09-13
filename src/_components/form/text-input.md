@@ -86,6 +86,18 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 {% include storybook-preview.html story="uswds-va-text-input--internationalization" link_text="va-text-input Internationalization" height="175px" %}
 
+### Prefix (Icon)
+
+{% include storybook-preview.html story="uswds-va-text-input--with-icon" link_text="va-text-input with prefix" height="175px" %}
+
+### Suffix (Text)
+
+{% include storybook-preview.html story="uswds-va-text-input--with-suffix" link_text="va-text-input with suffix" height="175px" %}
+
+### Prefix and Suffix
+
+{% include storybook-preview.html story="uswds-va-text-input--with-icon-and-suffix" link_text="va-text-input with icon and suffix" height="175px" %}
+  
 ### Widths
 
 {% include storybook-preview.html story="uswds-va-text-input--widths" link_text="va-text-input widths" height="800px" %}
@@ -111,6 +123,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Error.** Highlights the text input field where the user has made an error that needs to be corrected.
 * **Success.** Indicates to the user in realtime that an error has been cleared and the text entry is now valid. NOTE: This isn't typically used currently.
 * **Internationalization.** Demonstrates how this components changes when used with the language toggle.
+* **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance. 
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
 ### Errors
