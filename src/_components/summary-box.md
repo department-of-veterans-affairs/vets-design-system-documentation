@@ -51,7 +51,7 @@ Summary box is found towards the top of the page after the h1 title of the page 
 
 ### How to use the Summary box component
 
-* Features must use a `h3` or `h4` heading depending on what the appropriate heading level is for your page based on the content of your page.
+* Features must use a `h2`, `h3` or `h4` heading depending on what the appropriate heading level is for your page based on the content of your page.
 * Also supports open text, such as `<p>`, `<ul>`, and `<ol>`, `<strong>`, `<em>`, and `<a>`.
 
 ## Variations

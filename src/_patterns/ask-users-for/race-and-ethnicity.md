@@ -1,11 +1,13 @@
 ---
 layout: pattern
-permalink: /patterns/ask-users-for/race-ethnicity-or-origin
+permalink: /patterns/ask-users-for/race-and-ethnicity
+redirect_from:
+  - /patterns/ask-users-for/race-ethnicity-or-origin
 sub-section: ask-users-for
-title: Race, ethnicity, or origin
-intro-text: Follow this pattern whenever you need to ask veterans for their race, ethnicity, or origin. 
-github-title: pattern-race-ethnicity-origin
-research-title: Ask users for race ethnicity or origin
+title: Race and ethnicity
+intro-text: Follow this pattern whenever you need to ask Veterans for their race and ethnicity.
+github-title: pattern-race-ethnicity
+research-title: Ask users for race and ethnicity
 status: use-deployed
 anchors:
   - anchor: Usage
@@ -38,14 +40,14 @@ anchors:
 
 ## Examples
 
-![applicant information race template]({{site.baseurl}}/images/patterns/ask-users-for/race-ethnicity-or-origin/race-ethnicity-or-origin.png) 
+![applicant information race template]({{site.baseurl}}/images/patterns/ask-users-for/race-and-ethnicity/race-and-ethnicity.png) 
 
 ## How to design and build 
 
 ### How this pattern works
 
 * **Ethnicity is currently a distinct question that precedes race and is limited to one response.** Ethnicity is currently separate (this may change in future) and must only accept one response.
-* **Give users the option of picking more than one race or origin.** Always use checkboxes so that users can identify with multiple races. 
+* **Give users the option of picking more than one race.** Always use checkboxes so that users can identify with multiple races. 
 * **Provide a way to opt-out of answering.** An option labeled "Prefer not to answer" should be provided to both questions.
 * **These questions are optional.** Clearly communicate that the information being collected is not required.
 * **When "Prefer not to answer" is selected, other options are negated.** If a user indicates that they prefer not to answer then all other checkboxes should be unchecked and/or ignored upon submission.
