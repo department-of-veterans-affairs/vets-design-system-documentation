@@ -6,7 +6,7 @@
         {% assign row = site.data.component-checklist.a11y.a11y-audit[forloop.index0] %}
 
         <p>
-            For more information on each category, see <a href="{{ site.baseurl }}/accessibility/accessibillity-testing">Accessibility Testing</a>.
+            For more information on each category, see <a href="{{ site.baseurl }}/accessibility/accessibillity-testing-for-design-system-components">Accessibility testing for design system components</a>.
         </p>
 
         {% for name_value_pair in row %}
@@ -57,5 +57,5 @@
 
 
 {% if component-found == false %}
-    <p>This component has not yet been audited for accessibility.</p>
+    <p>While this component has been previously tested against older criteria, it has not yet been audited with the <a href="{{ site.baseurl }}/accessibility/accessibillity-testing-for-design-system-components">updated testing criteria</a>.</p>
 {% endif %}
