@@ -29,27 +29,27 @@ anchors:
 
 ### Back
 
-{% include storybook-preview.html story="components-va-link--back" link_text="back va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--back" link_text="back va-link" height="50px" %}
 
 ### Active
 
-{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="50px" %}
 
 ### Calendar
 
-{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="50px" %}
 
 ### Channel
 
-{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="50px" %}
 
 ### Download
 
-{% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
 
 ### Video
 
-{% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
 
 ## Usage
 
