@@ -8,16 +8,6 @@ maturity:
   - name: Adoption
     desc: Multiple teams have adopted this component.
 accessibility:
-  - name: Accessible use of color
-    desc: Color is not used as the only visual means of conveying information (WCAG 2.2 1.4.1).
-  - name: Accessible contrast
-    desc: Text has a contrast ratio of at least 4.5:1 for small text and at least 3:1 for large text (WCAG 2.2 1.4.3). Visual information required to identify components and states (except inactive components) has a contrast ratio of at least 3:1 (WCAG 2.2 1.4.11).
-  - name: Keyboard interactions
-    desc: Follows WCAG 2.2 standards for keyboard accessibility guidelines and includes a description of the keyboard interactions. All interactive elements can be selected and activated using the keyboard.
-  - name: Content zoom tested
-    desc: Component has been tested with the display set to 400% at 1280px viewport width to ensure that the component does not have overlapping text or elements and all interactive elements still operate.
-  - name: Tested in screen readers
-    desc: Tested with screen readers to ensure there are no issues with reading order, spelling, dynamic content, and interactive elements.
 code-assets:
   - name: Variations 
     desc: Storybook includes all variations (style, size, orientation, optional iconography, selection, error state, etc.)
