@@ -6,7 +6,7 @@ title: Use short sentences
 intro-text: Try to limit each sentence to one subject and verb when possible. 
 ---
 
-You can break up long sentences in several ways, including using bulleted lists. You can also start a sentence with a conjunction (and, or, but).  
+You can break up long sentences in several ways, including using bulleted lists. You can also start a sentence with a conjunction (and, or, so, but).  
 
 <div class="do-dont">
 <div class="do-dont__do">
