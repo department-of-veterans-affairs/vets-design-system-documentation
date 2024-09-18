@@ -17,6 +17,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
+web-component: va-link
 ---
 
 {% include _site-in-this-section.html %}
@@ -127,6 +128,8 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 - **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
 
 {% include content/links-vs-buttons.md %}
+
+{% include _component-checklist.html component_name=page.web-component %}
 
 ## Related 
 

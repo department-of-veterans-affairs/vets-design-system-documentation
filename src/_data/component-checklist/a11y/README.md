@@ -17,3 +17,16 @@ Follow these steps to enter data for an accessibility audit.
 - Once the pull request is merged, a build of the site will run and incorporate the accessibility audit changes.
 
 You can also edit the CSV directly from GitHub and open a pull request that way.
+
+## Adding a component checklist
+
+If there is currently no component checklist on a component page, follow the steps below to add one.
+
+- Create a `component-name.yml` file under `_data/component-checklist`.
+    - Find an existing component checklist, copy the data.
+    - Set `true` and `"n/a"` values to `false`, this will make them show as Incomplete on the site.
+    - Add an `accessibility:` key under the `maturity` fields. This won't have any fields under it, as that is handled by the CSV mentioned above.
+- Find the documentation page. It will be under the `_components` folder, but may be an `index.md` in a subfolder. It could also be a named page.
+    - In the front matter, add a field for `web-component: [component-name]`.
+    - As the last content section of the page, add `{% include _component-checklist.html component_name=page.web-component %}` to include the checklist.
+- Run the site locally, visit the page to ensure the component checklist shows as expected. 
