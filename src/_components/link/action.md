@@ -18,15 +18,15 @@ anchors:
 
 ### Primary
 
-{% include storybook-preview.html height="50px" story="components-va-link-action--default" link_text="va-action-link primary"  %}
+{% include storybook-preview.html height="50px" story="components-va-link-action--default" link_text="va-link-action primary"  %}
 
 ### Secondary
 
-{% include storybook-preview.html height="50px" story="components-va-link-action--secondary" link_text="va-action-link secondary" %}
+{% include storybook-preview.html height="50px" story="components-va-link-action--secondary" link_text="va-link-action secondary" %}
 
 ### Reverse
 
-{% include storybook-preview.html height="67px" story="components-va-link-action--reverse" link_text="va-action-link reverse" %}
+{% include storybook-preview.html height="67px" story="components-va-link-action--reverse" link_text="va-link-action reverse" %}
 
 ## Usage
 
