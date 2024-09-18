@@ -24,7 +24,7 @@ If there is currently no component checklist on a component page, follow the ste
 
 - Create a `component-name.yml` file under `_data/component-checklist`.
     - Find an existing component checklist, copy the data.
-    - Set `true` and `"n/a"` values to `false`, this will make them show as Incomplete on the site.
+    - Set `true` and `"n/a"` values to `false`, this will make them show as Incomplete on the site. Follow up with the team to see if these can be updated.
     - Add an `accessibility:` key under the `maturity` fields. This won't have any fields under it, as that is handled by the CSV mentioned above.
 - Find the documentation page. It will be under the `_components` folder, but may be an `index.md` in a subfolder. It could also be a named page.
     - In the front matter, add a field for `web-component: [component-name]`.
