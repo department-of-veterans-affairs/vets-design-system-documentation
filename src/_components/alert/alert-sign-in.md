@@ -1,11 +1,12 @@
 ---
 layout: component
+permalink: /components/alert/alert-sign-in
+has-parent: /components/alert/
 title: Alert - Sign-in
 github-title: va-alert-sign-in
 intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
 figma-link: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
 status: use-with-caution-candidate
-contributors: Sara Sterkenburg & Laura Willwerth
 web-component: va-alert-sign-in
 anchors:
   - anchor: Examples

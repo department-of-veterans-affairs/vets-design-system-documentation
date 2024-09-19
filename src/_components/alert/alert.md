@@ -1,5 +1,7 @@
 ---
 layout: component
+permalink: /components/alert/alert
+has-parent: /components/alert/
 title: Alert
 status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."

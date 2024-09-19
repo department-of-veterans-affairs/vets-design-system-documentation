@@ -1,5 +1,7 @@
 ---
 layout: component
+permalink: /components/alert/alert-expandable
+has-parent: /components/alert/
 title: Alert - Expandable
 github-title: va-alert-expandable
 intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
