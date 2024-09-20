@@ -51,3 +51,4 @@ anchors:
 * **Provide a way to opt-out of answering.** An option labeled "Prefer not to answer" should be provided to both questions.
 * **These questions are optional.** Clearly communicate that the information being collected is not required.
 * **When "Prefer not to answer" is selected, other options are negated.** If a user indicates that they prefer not to answer then all other checkboxes should be unchecked and/or ignored upon submission.
+* **Do not remove the user from the task at hand to communicate details about this data collection.** Specific use descriptions, definitions, or other descriptive content must be brief and VA policy compliant with no need for a user to leave what they are doing.
