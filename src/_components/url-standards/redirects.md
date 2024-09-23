@@ -1,5 +1,5 @@
 ---
-layout: component
+layout: default
 title: Redirects
 permalink: /components/url-standards/redirects
 has-parent: /components/url-standards/
@@ -9,12 +9,17 @@ anchors:
   - anchor: Redirect requests and implementation process 
 ---
 
-**A redirect serves 2 purposes:**
+# URL Redirects
+
+A URL redirect serves 2 purposes:
+
 1.  It protects the Veteran's experience by making sure they are sent to a valid destination page rather than receiving a 404 (page not found) error
 
 2.  It informs search engines of the new location of a page so they can update their index and search results, and transfer the search value to the new URL
 
 Teams must formally request a redirect before implementation so they can be vetted for accuracy and appropriateness, and implemented with full validation across environments. That request also kicks off work to update all internal links and identifies existing redirects that may need to be updated.
+
+{% include _site-on-this-page.html %}
 
 ## Usage
 
@@ -52,4 +57,4 @@ Examples of these changes are:
 
 If you need to implement a redirect, a request must first be submitted to VA.gov Information Architecture.  This request will ensure the redirect is valid and accurate, and will kick-off processes to ensure all internal links are appropriately updated. 
 
-<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new/choose">Submit a Redirect or URL change issue on GitHub</a>
+<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md">Submit a Redirect or URL change issue on GitHub</a>
