@@ -25,11 +25,9 @@ anchors:
 
 ## Examples
 
-<!-- TO DO: Add new example -->
+{% include component-example.html alt="Asking for gender in the VA.gov Profile." file="/images/patterns/ask-users-for/gender/gender-identity-profile.png" caption="Asking for gender in the VA.gov Profile, personal information section." width="75%" %}
 
-<!-- {% include component-example.html alt="Asking for gender in the VA.gov Profile." file="/images/patterns/ask-users-for/gender/gender-identity-profile.png" caption="Asking for gender in the VA.gov Profile, personal information section." width="75%" %}
-
-{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." width="75%" %} -->
+{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." width="75%" %}
 
 ## How to design and build
 
