@@ -87,7 +87,7 @@ In the event of an error, an application may determine the next logical step a u
 
 ### Page templates available for this pattern
 
-[Email templates are available in VA Notify](https://notifications.va.gov/information/emails).
+[Email templates are available in VA Notify](https://notifications.va.gov/information/emails). NOTE: You must have a VA Notify account to access these templates.
 
 ## Examples in production
 
