@@ -47,6 +47,10 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-select--internationalization" link_text="va-select internationalization" %}
 
+### Widths
+
+{% include storybook-preview.html story="uswds-va-select--widths" link_text="va-select widths" height="800px" %}
+
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/">Refer to the U.S. Web Design System for usage guidance</a>
