@@ -9,8 +9,8 @@ sub-pages:
   - sub-page: Redirects
   - sub-page: Vanity URLs
 anchors:
-  - anchor: Changing URLs or retiring content
   - anchor: URL standards
+  - anchor: Changing URLs or retiring content
   - anchor: Guidelines for URLs in form flows
   - anchor: Guidelines for anchor tags
   - anchor: Guidelines for parameters in URLs
@@ -31,11 +31,6 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 ![The structure of a URL. Includes illustrations of URL segments including the domain, any subdirectories, and current page name]({{site.baseurl}}/images/url-segments.jpg)
 
 {% include _site-on-this-page.html %}
-
-## Changing URLs or retiring content
-- Always implement a [redirect](/components/url-standards/redirects) when pages are taken down or the URL changes.
-- This ensures users do not encounter a 404 page or a broken link. 
-- This also tells search engines to no longer index a page, and to pass any SEO value along to the new page. 
 
 ## URL standards 
 
@@ -69,6 +64,11 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 - Do not use overly broad terms that may be misinterpreted, or shorten URLs so much that meaning and context are lost.  Be specific in describing the focus of the page.
 - Do not repeat keywords across multiple segments of a URL unless it is necessary to clarify meaning of the content. 
 - Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.  
+
+## Changing URLs or retiring content
+- Always implement a [redirect](/components/url-standards/redirects) when pages are taken down or the URL changes.
+- This ensures users do not encounter a 404 page or a broken link. 
+- This also tells search engines to no longer index a page, and to pass any SEO value along to the new page. 
 
 ## Guidelines for URLs in form flows
 
