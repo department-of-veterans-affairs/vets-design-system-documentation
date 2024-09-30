@@ -6,7 +6,6 @@ anchors:
   - anchor: Fonts
   - anchor: Headings
   - anchor: Paragraphs
-  - anchor: Lists
   - anchor: Typography tokens
 ---
 
