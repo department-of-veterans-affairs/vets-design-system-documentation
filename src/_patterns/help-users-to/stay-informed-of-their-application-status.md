@@ -83,8 +83,8 @@ In the event of an error, an application may determine the next logical step a u
 
 ### Components used in this pattern
 
-* [Alert]({site.baseurl}/components/alert)
-* [Card]({site.baseurl}/components/card)
+* [Alert]({{site.baseurl}}/components/alert)
+* [Card]({{site.baseurl}}/components/card)
 
 ### Page templates available for this pattern
 
