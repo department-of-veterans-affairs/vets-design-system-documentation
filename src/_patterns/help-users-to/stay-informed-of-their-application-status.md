@@ -19,7 +19,6 @@ anchors:
 
 * **Any application that takes data from a user and submits that data to a back-end system.** This pattern is widely applicable to any application or service that accepts users data and submits that data, synchronously or asynchronously, to a system of record. It is a requirement that we notify the user at critical touch points as their request is processed.
 
-### When not to use this pattern
 
 ## Examples
 
