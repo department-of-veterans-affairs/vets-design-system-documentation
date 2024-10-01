@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation#readme",
   "devDependencies": {
-    "@department-of-veterans-affairs/component-library": "^46.3.0",
+    "@department-of-veterans-affairs/component-library": "^46.4.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-rename": "^2.0.0",
@@ -38,9 +38,10 @@
   },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^11.0.12",
-    "@department-of-veterans-affairs/css-library": "^0.11.0"
+    "@department-of-veterans-affairs/css-library": "^0.12.0"
   },
   "engines": {
     "npm": "6.14.8"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
