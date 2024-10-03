@@ -6,6 +6,7 @@ intro-text: How to follow accessibility standards when using or contributing to 
 sub-pages:
   - sub-page: Accessibility testing for design system components
   - sub-page: Accessibility annotations
+  - sub-page: Focus management
 ---
 
 {% include _site-in-this-section.html %}
