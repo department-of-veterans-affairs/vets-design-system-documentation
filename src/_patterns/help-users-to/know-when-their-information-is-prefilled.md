@@ -5,11 +5,14 @@ draft: true
 permalink: /patterns/help-users-to/know-when-their-information-is-prefilled
 sub-section: help-users-to
 intro-text: Follow this pattern to help users know when their information will be prefilled for them in an application.
-research-title: Update prefilled information TODO UPDATE FOR CORRECT DSC label in research repo
+research-title: Help users know when their info is prefilled
 status: use-with-caution-candidate
 anchors:
   - anchor: Usage
   - anchor: How to design and build
+  - anchor: Examples
+  - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Research findings
 ---
 
@@ -38,25 +41,17 @@ This pattern involves these types of pages found in VA.gov forms:
 - **Prefill check page**: Any page of a form that displays prefilled information users can edit within the form.
 
 #### Introduction page
-There are two states of an introduction page: Authenticated and Unathenticated.
+There are two states of an introduction page: Authenticated and Unauthenticated.
 
-<img src="https://github.com/user-attachments/assets/96117070-4a9e-4755-9fc5-2c305a1e76bd" width="600">
-<br>
-Image caption: Authenticated introduction page alert on the introduction page.
+{% include component-example.html alt="Authenticated introduction page alert on the introduction page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-authenticated-alert.png" caption="Authenticated introduction page alert on the introduction page." class="x2" %}
 
-<img src="https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design%20and%20Research/2024-09%20Research%20Initiative%202%20-%20Update%20Prefill/Images/Unauthenticated%20Alert.png" width="600">
-<br>
-Image caption: Unauthenticated introduction page alert on the introduction page.
+{% include component-example.html alt="Unauthenticated introduction page alert on the introduction page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page." class="x2" %}
 
 #### Personal information page
-<img src="https://github.com/user-attachments/assets/1c122b34-1cc3-48c8-b6b4-2950a7dc692c" width="600">
-<br>
-Image caption: Uneditable prefilled information on the personal information page.
+{% include component-example.html alt="Uneditable prefilled information on the personal information page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page." class="x2" %}
 
 #### Prefill check page
-<img src="https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design%20and%20Research/2024-09%20Research%20Initiative%202%20-%20Update%20Prefill/Images/Address%20Review%20Page.png" width="600">
-<br>
-Image caption: Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable.
+{% include component-example.html alt="" file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable." class="x2" %}
 
 ### How this pattern works
 
@@ -125,18 +120,19 @@ Each alert has specific content requirements. You can find each content scenario
 >
 > [text link] Start your form without signing in
 
-<img src="https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design%20and%20Research/2024-09%20Research%20Initiative%202%20-%20Update%20Prefill/Images/Unauthenticated%20Alert.png" width="600">
+
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-unauthenticated-alert.png" width="600" alt="Unauthenticated introduction page alert">
 
 
 #### Authenticated intro page alert
 > [content] **Note:** Since you’re signed in to your account, we can prefill part of your form based on your account details. You can also save your form in progress and come back later to finish filling it out.
 
-<img src="https://github.com/user-attachments/assets/a279e845-aaa9-4373-bda0-932de3d3e2aa" width="600">
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-authenticated-alert-for-intro.png" width="600" alt="Authenticated alert for introduction page">
 
 #### Authenticated contextual alert
 > [content] **Note:** We've prefilled some of your information from your account. If you need to correct anything, you can select edit below. All updates will be made only to this form.
 
-<img src="https://github.com/user-attachments/assets/36b4acb4-be99-49cd-8bd6-536d8ef7db8e" width="600">
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-authenticated-alert-for-page.png" width="600" alt="Authenticated alert for a form application page">
 
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/authenticated-patterns/Design%20and%20Research/2024-07-Research%20Initiative-One-Prefill) to gather validation about this pattern.
