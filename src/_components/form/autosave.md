@@ -26,6 +26,10 @@ anchors:
 
 ## Usage
 
+<va-alert status="info" slim>
+  <p class="vads-u-margin-y--0">Testing has revealed issues with this component. See this <a href="https://github.com/department-of-veterans-affairs/VA.gov-team-forms/blob/main/Accessibility/save-in-progress.md">Usability Report</a> for more details.</p>
+</va-alert>
+
 ### When to use
 
 * **When saving form flow progress as a user completes an application.** This message provides confirmation to the user that their form progress is being saved as they progress through a form flow for an application. 

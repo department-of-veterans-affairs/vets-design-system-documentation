@@ -1,5 +1,5 @@
 ---
-layout: component
+layout: default
 title: Redirects
 permalink: /components/url-standards/redirects
 has-parent: /components/url-standards/
@@ -9,12 +9,17 @@ anchors:
   - anchor: Redirect requests and implementation process 
 ---
 
-**A redirect serves 2 purposes:**
+# URL Redirects
+
+A URL redirect serves 2 purposes:
+
 1.  It protects the Veteran's experience by making sure they are sent to a valid destination page rather than receiving a 404 (page not found) error
 
 2.  It informs search engines of the new location of a page so they can update their index and search results, and transfer the search value to the new URL
 
 Teams must formally request a redirect before implementation so they can be vetted for accuracy and appropriateness, and implemented with full validation across environments. That request also kicks off work to update all internal links and identifies existing redirects that may need to be updated.
+
+{% include _site-on-this-page.html %}
 
 ## Usage
 
@@ -35,6 +40,7 @@ Examples of these changes are:
 - If the change is temporary, use a temporary redirect instead of a permanent redirect.  Redirects default to a permanent 301 code, which tells search engines that the page is permanently gone and to remove it from their index and transfer all search value to the new URL. A temporary redirect is useful for situations where the URL will likely be brought back, such as downtime due to program pauses or maintenance, or the URL may be repurposed in the future, such as an annual campaign.
 - To claim incorrect URLs that are being accessed for a page.  Site visitors can sometimes enter incorrect URLs to try and access a page. We cannot claim every possibly URL variation of every page. Instead, we should work to determine if there is a source to an invalid URL being used, such as a miscommunication or incorrect link.
 - For pages that do not live under the va.gov domain.  If the URL of a page does not contain "va.gov", we do not own the page and therefore cannot redirect it. For example, we cannot redirect a page that lives at "www.example.gov/va" or "va.example.gov", but we could redirect a page at "example.va.gov" or "www.va.gov/example".
+- For pages built using the [Forms Library](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-overview), use a [migration](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-using-forms-in-production#VAFormsLibrary-UsingFormsinProduction-formConfigMigrationsAttribute) instead of a redirect.
 
 ### Redirect standards and guidance
 
@@ -51,4 +57,4 @@ Examples of these changes are:
 
 If you need to implement a redirect, a request must first be submitted to VA.gov Information Architecture.  This request will ensure the redirect is valid and accurate, and will kick-off processes to ensure all internal links are appropriately updated. 
 
-<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new/choose">Submit a Redirect or URL change issue on GitHub</a>
+<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md">Submit a Redirect or URL change issue on GitHub</a>

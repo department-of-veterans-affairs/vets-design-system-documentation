@@ -3,6 +3,7 @@
 {% assign component = components | map: name %}
 {% assign definitions = components | map: "definitions" %}
 
+
 <h2 id="component-checklist">Component checklist</h2>
 <div class="vads-l-grid-container site-component-checklist">
   {% for definition in definitions %}
@@ -18,33 +19,38 @@
           <h3 slot="headline">
             {{ title | replace: "-", " " | capitalize }}
           </h3>
-          <dl class="site-component-checklist__list">
-            {% for item in items %}
-              {% assign name = item.name %}
-              {% assign values = component.first[title] %}
-              {% assign slug_name = name | slugify %}
-              {% assign value = values | where: "name", slug_name %}
-              {% assign score = value.first.score %}
-              {% assign notes = value.first.notes %}
-            <dt class="site-component-checklist__name">
-              {% if score == true %}
-                {% assign completed_items = completed_items | plus: 1 %}
-                {% assign total_items = total_items | plus: 1 %}
-              <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
-              {% elsif score == "n/a" %}
-              <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i>
-              {% elsif score == false %}
-                {% assign total_items = total_items | plus: 1 %}
-              <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
-              {% endif %}
-              {{ name }}
-            </dt>
-            <dd>{{ item.desc }}</dd>
-              {% if notes %}
-            <dd>Note: {{ notes }}</dd>
-              {% endif %}
-            {% endfor %}
-          </dl>
+
+          {% if section[0] == "accessibility" %}
+            {% include a11y/a11y-checklist.html name=include.component_name %}
+          {% else %}
+            <dl class="site-component-checklist__list">
+              {% for item in items %}
+                {% assign name = item.name %}
+                {% assign values = component.first[title] %}
+                {% assign slug_name = name | slugify %}
+                {% assign value = values | where: "name", slug_name %}
+                {% assign score = value.first.score %}
+                {% assign notes = value.first.notes %}
+              <dt class="site-component-checklist__name">
+                {% if score == true %}
+                  {% assign completed_items = completed_items | plus: 1 %}
+                  {% assign total_items = total_items | plus: 1 %}
+                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                {% elsif score == "n/a" %}
+                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i>
+                {% elsif score == false %}
+                  {% assign total_items = total_items | plus: 1 %}
+                <i class="far fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                {% endif %}
+                {{ name }}
+              </dt>
+              <dd>{{ item.desc }}</dd>
+                {% if notes %}
+              <dd>Note: {{ notes }}</dd>
+                {% endif %}
+              {% endfor %}
+            </dl>
+          {% endif %}
         </va-accordion-item>
     {% endfor %}
       </va-accordion>

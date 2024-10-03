@@ -6,8 +6,8 @@ anchors:
   - anchor: Fonts
   - anchor: Headings
   - anchor: Paragraphs
-  - anchor: Lists
   - anchor: Typography tokens
+  - anchor: Related
 ---
 
 # Typography
@@ -173,3 +173,7 @@ Don’t change heading level in order to use a different font size.
 
 {% assign font_semantic = site.data.tokens.vads-font-semantic %}
 {% include tokens.html tokens=font_semantic %}
+
+## Related
+
+* [List]({{ site.baseurl }}/components/list)

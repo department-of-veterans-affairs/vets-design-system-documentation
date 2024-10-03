@@ -44,10 +44,6 @@ By default, the web component icon will display as `--vads-color-base` which is 
 
 ```
 
-### How to migrate from Font Awesome to va-icon
-
-Follow our detailed instructions on [how to migrate to va-icon]({{ site.baseurl }}/about/developers/using-web-components#how-to-migrate-from-font-awesome-to-va-icon).
-
 ### Icon Sizing Reference
 
 <table class="usa-table-borderless" style="width:auto">
