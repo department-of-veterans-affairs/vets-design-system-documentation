@@ -18,7 +18,6 @@ anchors:
   - anchor: Usage
   - anchor: How to design and build - Multi-page
   - anchor: How to design and build - Add item
-  - anchor: How to design and build - Contact information
   - anchor: About single page usage
 ---
 
@@ -192,20 +191,6 @@ This method shows all items on one page in a list with an "Add a new [item]" [Li
 
 * **Most of the information being requested is already available.** If most of the information being requested is already on file then this variation works well because it presents to the user what we have on file and allows them to add items that are missing.
 * **Information on file is not contact information coming from VA.gov Profile.** If the information on file is not coming from VA.gov Profile then this variation presents the data clearly and is preferred. If the information on file IS coming from VA.gov Profile then the "Contact information" variation is preferred.
-
-## How to design and build - Contact information
-
-The Contact information variation of this pattern is captured in the [Help users to know how their information is updated]({{ site.baseurl }}/patterns/help-users-to/know-how-their-information-is-updated) pattern.
-
-{% include component-example.html alt="Veteran details from the Request a Board Appeal application." file="/images/patterns/ask-users-for/multiple-responses/board-appeal-contact-information.png" caption="The user is shown contact information that is on file and will be used as part of the application process with the option to edit." class="x2" %}
-
-### When to use the contact information variation
-
-* **Information on file is contact information coming from VA.gov Profile.** This variation allows the user to see the details of the information we have on file, edit it if necessary, returning them to this screen to confirm the changes have been made and allowing them to continue with their intended goal of completing the application.
-
-### Code considerations
-
-[How to create the contact info Array Data](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-create-the-contact-info-ar) details how to add a contact info page via the VA Forms Library that shows the Veteran's contact info and allows updating the changes to their profile directly.
 
 ## About single page usage
 While the single-page variation is currently used on VA.gov, it is no longer the preferred variation for this pattern. The <a href="#how-to-design-and-build---multi-page">multi-page pattern</a> is recommended for new designs.
