@@ -37,11 +37,9 @@ anchors:
 
 Use this pattern when users need to add similar information multiple times, such as information about dependents. This method allows more table-like data to be collected following the [One thing per page principle]({{ site.baseurl }}/patterns/ask-users-for/a-single-response).
 
-This method is also recommended as the user first identifies the items in a list and then returns to each item in the list on a distinct page, adding details to that item.
-
 ### When to use the multi-page variation
 
-* **This is the default and preferred variation for multiple responses.** This method is the most flexible of the variations of obtaining multiple responses because it can collect just one or multiple pieces of information across multiple pages. Thus it can collect a very limited set of data or complex details. This variation can be used to collect a key identifier for each item in the set, for example a name or condition, and then collect details for each of those items.  
+* **This is the default and preferred variation for multiple responses.** This method is the most flexible of the variations of obtaining multiple responses because it can collect just one or multiple pieces of information across multiple pages. Thus it can collect a very limited set of data or complex details.
 
 ### When to not use multi-page
 
