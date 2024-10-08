@@ -27,7 +27,7 @@ We advise against disabling the focus outline using `outline: 0` or `outline: no
 
 The programmatic focus order should match the visual focus order. Focus typically follows the order in which objects appear in the page source, but may not match the order which users expect to interact with elements on the page. 
 
-This can occur when the order of elements in the source is wrong. If an element's positioned is moved via CSS, it can move that element from where it would normally be positioned. Elements could also be hidden on a page, typically through moving it off-screen or changing it's opacity, but not taken out of the tab order. This makes them focusable even if the focus indicator cannot be seen. Because of that, be sure to test that focus is not placed on an element that is not visible.
+This can occur when the order of elements in the source is wrong. If an element's position is moved via CSS, it can move that element from where it would normally be positioned. Elements could also be hidden on a page, typically through moving it off-screen or changing it's opacity, but not taken out of the tab order. This makes them focusable even if the focus indicator cannot be seen. Because of that, be sure to test that focus is not placed on an element that is not visible.
 
 ## Focus management
 
@@ -41,8 +41,8 @@ Manually managing focus is necessary in some scenarios to provide a seamless and
 
 ### Focus should not be lost or reset to the top of the page, except when the page is reloaded
 
-- If focus is reset, keyboard users will have to start from the beginning of the page again. Screen reader users could also become disoriented and unsure if they are on a different page or if the current page reloaded.
-- Example: If focus gets lost is after closing a dialog. The focus should be set to the original element that triggered it.
+- If focus is reset, keyboard users will have to start again from the beginning of the page. Screen reader users could also become disoriented and unsure if they are on a different page or if the current page reloaded.
+- Example: If focus gets lost after closing a dialog. The focus should be set to the original element that triggered it.
 
 ### When setting focus, the target element must contain text that can be programmatically determined
 
