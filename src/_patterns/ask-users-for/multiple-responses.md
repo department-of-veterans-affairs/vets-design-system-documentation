@@ -48,12 +48,12 @@ Use this pattern when users need to add similar information multiple times, such
 ### Required vs Optional multi-page patterns
 
 There are two types of multiple page patterns with slightly different user flows:
-* **[Required Multi-page Pattern](#required-multi-page-pattern)**<br>
+* **[Required Multi-page Pattern](#required-multi-page-pattern-user-flow)**<br>
   Use when **at least one item** for this step must be added. 
-* **[Optional Multi-page Pattern](#optional-multi-page-pattern)**<br>
+* **[Optional Multi-page Pattern](#optional-multi-page-pattern-user-flow)**<br>
   Use when the step is **completely optional** and users may or may not add items.
 
-{% assign intro_required = "The introduction page provides users with information about the next few screens. If there's a limit to the maximum number of items, see the [code & content considerations](#code--content-considerations) to customize the language." %}
+{% assign intro_required = "The introduction page provides users with information about the next few screens. If there's a limit to the maximum number of items, see the [code & content considerations](#code--content-considerations) to customize the language. " %}
 
 {% assign intro_optional = "The introduction page provides users with information about the next few screens and provides a **Yes/No** choice to provide additional information. If the user selects **Yes** they will proceed into the questions flow. If the user selects **No**, they proceed to the next step."%}
 
@@ -69,17 +69,15 @@ There are two types of multiple page patterns with slightly different user flows
 
 {% assign delete_flow_optional = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user is redirected to the Introduction page."%}
 
-### Required Multi-page Pattern
+### Required multi-page pattern user flow
 
 <div class="vads-l-grid-container--full">
   <div class="vads-l-row">
-    <div class="large-screen:vads-l-col">
-      <h4>Flow Diagram</h4>
-      <img src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="A required multi-page multiple response flow diagram."/>
+    <div class="large-screen:vads-l-col vads-u-padding-top--4">
+      <img src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
     </div>
     <div class="large-screen:vads-l-col">
-      <h4>Steps To Build</h4>
-      <va-process-list>
+      <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_required | markdownify }}
         </va-process-list-item>
@@ -108,17 +106,15 @@ There are two types of multiple page patterns with slightly different user flows
   </div>
 </div>
 
-### Optional Multi-page Pattern
+### Optional multi-page pattern user flow
 
 <div class="vads-l-grid-container--full">
   <div class="vads-l-row">
-    <div class="large-screen:vads-l-col">
-      <h4>Flow Diagram</h4>
-      <img src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="A optional multi-page multiple response flow diagram."/>
+    <div class="large-screen:vads-l-col vads-u-padding-top--4">
+      <img src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
     </div>
     <div class="large-screen:vads-l-col">
-      <h4>Steps To Build</h4>
-        <va-process-list>
+      <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_optional | markdownify }}
         </va-process-list-item>
@@ -141,8 +137,8 @@ There are two types of multiple page patterns with slightly different user flows
       <div class="vads-u-padding-left--3">
         <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-optional }}">
           View a mock form example of an <em>optional</em> multi-page pattern
-        </a>  
-      </div>
+        </a>
+     </div>
     </div>
   </div>
 </div>
@@ -162,6 +158,15 @@ There are two types of multiple page patterns with slightly different user flows
   * You have added the maximum number of [dependents]
 * **If at least one item is required, use hint text to let users know.** The pattern must indicate to users that at least one item is required. If all items are removed, return users to the first page of the loop to gather information.
 * **If there are a maximum number of items, make this clear to the user.** You can use hint text to do this. Also, after the user has entered the maximum number allowed the pattern removes the "add another" question, and displays a warning instructing the user that they have entered the maximum allowed and they can either edit, or remove a card if they need to add more information.
+
+<p>
+  For more details
+  <va-link
+    active
+    href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/array-builder/README.md"
+    text="view developer documentation"
+  />
+</p>
 
 ### Accessibility considerations
 
