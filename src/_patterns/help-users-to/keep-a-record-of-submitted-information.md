@@ -6,6 +6,7 @@ title: Keep a record of submitted information
 intro-text: "This pattern provides the user with a printable record of their submission."
 status: use-deployed
 research-title: Help users to keep a record of submitted info
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=2988-66786&t=4uWczdHlyBNGV123-1
 anchors:
   - anchor: Usage
   - anchor: Examples
