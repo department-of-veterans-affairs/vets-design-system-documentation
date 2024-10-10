@@ -15,7 +15,9 @@ Custom logos for the following use cases are not supported on VA.gov:
 * Pages that list VA programs, such as a list of benefits
 * Benefit detail pages 
 * Within a software application, such as an application form or tool
-* Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events 
+* Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/downloads/VALogos.zip">Download hi-res logo artwork</a>
 
 ## Use the name in place of a logo
 

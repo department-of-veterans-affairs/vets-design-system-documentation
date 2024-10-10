@@ -116,6 +116,6 @@ Follow this pattern whenever you need to ask for a user’s POW information. For
 * ’Have you received any type of severance or separation pay?’ radio buttons
 (If user selects yes)
   * ‘Pay type’ radio buttons
-  * ‘Amount’ number input
+  * ‘Amount’ text input with prefix
 
 ![prisoner of war and severance pay]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.png)
