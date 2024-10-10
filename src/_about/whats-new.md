@@ -36,7 +36,7 @@ The team synced up typography with USWDS v3 and continues to focus on syncing up
 * [Text input - Suffix text]({{ site.baseurl }}/components/form/text-input#suffix-text)
 * [Text input - Prefix and Suffix]({{ site.baseurl }}/components/form/text-input#prefix-and-suffix)
 
-<a class="vads-c-action-link--blue" href="<https://github.com/department-of-veterans-affairs/component-library/releases">Component Library releases</a>
+<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/component-library/releases">Component Library releases</a>
 
 ### New and updated guidance
 
