@@ -3,8 +3,8 @@ layout: pattern
 permalink: /patterns/help-users-to/sign-in
 sub-section: help-users-to
 title: Sign-in
-intro-text: "This pattern provides the user with a printable record of their submission."
-status: use-deployed
+intro-text: "TFollow this pattern to help users sign-in to access VA online services."
+status: use-with-caution-candidate
 research-title: Help users to sign-in
 anchors:
   - anchor: Usage
@@ -17,43 +17,43 @@ anchors:
 
 ### When to use this pattern
 
-**When you are collecting information from users on a long form.** The pattern provides the user with a printable record of their submission. A printed record provides a reference for future use and helps to confirm a successful form submission.
+When people must sign in or have the option to sign in to VA.gov or another VA online service.
 
-## Examples
+### When to consider something else
 
-### Confirmation page summary
+If your product fits one of these descriptions, you may need to adjust the standard pattern for your situation:
 
-{% include component-example.html alt="An example confirmation page containing a component that allows users to print the confirmation page." file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page.png" caption="The 'Your application information' component provides a clear call-to-action for the user to 'Print this page'." width="75%" %}
+* A product that either requires or allows sign-in, but accepts unverified accounts
+* An online form that allows sign-in but does not support prefill
+* An online form that allows sign-in and offers a different reason to sign in—like generating an automatic Intent to File (ITF)
+* A health tool that requires registration with My HealtheVet (currently only applies to messages, medications, and medical records tools)
 
-### Print preview of confirmation page summary
-
-![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-view-page1.png)
-![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-view-page2.png)
+Work with the Office of the Chief Technology Officer's content/information architecture/accessibility team (CAIA) and identity teams to adjust the pattern for your product.
 
 ## How to design and build
 
 ### How this pattern works
+This pattern works differently depending on the product and the account type a person uses to sign in.
 
-* **Create a summary of submitted information.** Include a title for the summary page. An example message is: *Your application information*
-* **Include a recap of submitted information.** Include the applicant's name and date of application.
-* **Inform users to print the confirmation for their records.** Notify users that they can print or download their application information. An example message is: *You can print this confirmation page for your records. You can also download your completed application as a PDF.*
-* **Include a "Print this page" primary button.** A printed record provides a reference for future use. The "Print this page" button appears at the bottom of the summary page.
-* **Include a link to download the completed application in PDF format.** The download link appears below the "Print this page" button.
+**To design and build, follow these steps:**
 
-### Placement
+1. Choose 1 of the 2 blue sign-in alert variations. If a person signs in with a verified account, they should only encounter an initial sign-in alert.
+2. Implement both of the yellow verification alerts. If a person signs in with an unverified account, they should encounter 1 of the 2 variations. One is for unverified **Login.gov** and **ID.me** accounts, and one is for unverified **My HealtheVet** accounts.
+  **Note:** This pattern is currently tailored to products that require verified (LOA3 or IAL2) accounts. If your product accepts unverified (LOA1 or IAL1) accounts, you'll need to adjust the content in the blue sign-in alert. And you won't need to implement the yellow verification alerts. Work with CAIA and the identity team to adjust for your situation.
 
-The component that contains the prompt to print the confirmation page should appear under the Alert - Success component.  
 
-### Components used in this pattern
+**All teams should take these steps when using this pattern:**
 
-* [Summary box]({{ site.baseurl }}/components/summary-box)
-* [Button - Primary]({{ site.baseurl }}/components/button)
-* [Link - Download]({{ site.baseurl }}/components/link/#download)
+* Ask the identity team to review your pull request, so they can confirm you're implementing the pattern correctly on the back end.
+* Work with CAIA for a content review to confirm the standard alerts make sense for your product, or adjust content in the alerts if needed.
+* **If your product has /my-health in its URL**, work with the identity and cartography teams to identify the correct sign-in pattern for your product. You may need an additional registration step on the My HealtheVet national portal, and you may need to place your form or tool behind a /my-health route guard.
+
+**Components used in this pattern**
+
+* [Alert - sign-in]({{ site.baseurl}}/components/alert/alert-sign-in)
 
 ## Content considerations
 
-Review the USWDS [Keep a record pattern](https://designsystem.digital.gov/patterns/complete-a-complex-form/keep-a-record/) for content considerations. The print styling differs between the VA and USWDS systems, but their high-level guidance is still relevant. 
-
-## Accessibility considerations
-
-Review the USWDS [Keep a record pattern](https://designsystem.digital.gov/patterns/complete-a-complex-form/keep-a-record/#section_9) for accessibility considerations.
+* Don't change content in these alerts, unless you've worked with CAIA on a tailored version.
+* In most cases, the alerts in this pattern are the only sign-in-related content you'll need in your product. If you have other content related to sign-in, follow the style guide section for this topic. If you have questions, work with CAIA.
+  [Go to sign-in and identity verification in the content style guide](https://design.va.gov/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification)
