@@ -58,7 +58,7 @@ In general, use the full, official name of the form in title case, followed by t
 
 Example:
 
-[Title] Request personal records
+[Title] Request personal records  
 [Subtitle] Freedom of Information Act (FOIA) or Privacy Act (PA) Request (VA Form 20-10206) 
 
 Alternate example: 
