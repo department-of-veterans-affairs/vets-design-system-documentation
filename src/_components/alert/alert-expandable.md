@@ -1,6 +1,8 @@
 ---
 layout: component
 title: Alert - Expandable
+permalink: /components/alert/alert-expandable/
+has-parent: /components/alert/
 github-title: va-alert-expandable
 intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A146&mode=design&t=J32RmU6Fjbjuh9bD-1
@@ -30,24 +32,6 @@ anchors:
 ### Success alert
 
 {% include storybook-preview.html story="components-va-alert-expandable--success" link_text="va-alert-expandable" %}
-
-{% comment %}
-
- ### Error alert
-
-Used when there is a problem or something destructive is about to occur.
-
-{% include storybook-preview.html story="components-va-alert-expandable--error" link_text="va-alert-expandable" %}
-
-### Continue alert
-
-{% include storybook-preview.html story="components-va-alert-expandable--continue" link_text="va-alert-expandable" %}
-
-### No icon alerts
-
-{% include storybook-preview.html story="components-va-alert-expandable--no-icon" link_text="va-alert-expandable" %}
-
-{% endcomment %}
 
 ## Usage
 

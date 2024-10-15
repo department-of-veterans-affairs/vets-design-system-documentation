@@ -24,6 +24,8 @@ vads-color-feedback-surface-error-on-dark,Semantic,vads-color-feedback-surface-e
 vads-color-feedback-surface-info-on-dark,Semantic,vads-color-feedback-surface-info-on-dark,uswds-system-color-blue-vivid-80,#112f4e,,Used for alert background on mobile app in dark mode
 vads-color-feedback-surface-success-on-dark,Semantic,vads-color-feedback-surface-success-on-dark,uswds-system-color-green-cool-80v,#19311e,,Used for success alert background on mobile app in dark mode
 vads-color-feedback-surface-warning-on-dark,Semantic,vads-color-feedback-surface-warning-on-dark,uswds-system-color-yellow-80v,#332d27,,Used for warning alert background on mobile app in dark mode
+vads-color-forms-surface-active-on-dark,Semantic,vads-color-forms-surface-active-on-dark,uswds-system-color-blue-warm-80,#252f3e,,Used for active background of tile variations of checkbox/radio in dark mode
+vads-color-forms-surface-active-on-light,Semantic,vads-color-forms-surface-active-on-light,uswds-system-color-blue-warm-5,#ecf1f7,,Used for active background of tile variations of checkbox/radio in light mode
 vads-color-gibill-accent,Semantic,vads-color-gibill-accent,,#fef0c8,vads-color-gold-lightest,
 vads-color-hub-burials,Semantic,vads-color-hub-burials,uswds-system-color-blue-50,#2378c3,,
 vads-color-hub-careers,Semantic,vads-color-hub-careers,uswds-system-color-orange-warm-50,#bd5727,,

@@ -14,7 +14,6 @@ anchors:
   - anchor: Usage
   - anchor: Code usage
   - anchor: Accessibility considerations
-  - anchor: Component checklist
 ---
 
 {% include _site-in-this-section.html %}
