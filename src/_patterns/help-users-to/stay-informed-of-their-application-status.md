@@ -23,7 +23,7 @@ anchors:
 
 ### Email notifications
 
-We'll add examples of these notifications soon.
+We'll add examples of these notifications soon. If you need examples now, contact #sitewide-content-accessibility-ia. 
 
 ### Form submission status in My VA
 
@@ -100,5 +100,5 @@ Every time a form submission error happens, you must notify the user that about 
 ### Page templates available for this pattern
 
 * [Email templates are available in VA Notify](https://notifications.va.gov/information/emails). [VA.gov email templates](https://notifications.va.gov/services/5bda137e-689e-4532-b3d2-2c81c0324331/templates). You'll need a VA Notify account to access the sample templates. Select **Add new template**. Then select **Sample templates**.
-* The sample email templates include variables you'll need to fill in for your form. If you need help adjusting the templates to work for your form, contact the Sitewide Content, Accessibility, and IA (CAIA) team.
+* The sample email templates include variables you'll need to fill in for your form. If you need help adjusting the templates to work for your form, contact #sitewide-content-accessibility-ia.
 * Email templates must be reviewed by a VA Privacy Officer in the appropriate portfolio (VBA or VHA). 
