@@ -1,9 +1,9 @@
 ---
 layout: pattern
-title: Stay informed of their application status
+title: Stay informed of their form submission status
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
-intro-text: "Follow this pattern to notify users when their request is submitted, received, and has hit an error. These are required notification touch points." 
+intro-text: "Follow this pattern to notify users when their online form submission is in progress, when we've received their submitted form, and when a system error has caused teh submission to fail. These are required notification touch points." 
 status: use-with-caution-candidate
 research-title: Help users to stay informed of app status
 anchors:
@@ -17,29 +17,39 @@ anchors:
 
 ### When to use this pattern
 
-* **Any application that takes data from a user and submits that data to a back-end system.** This pattern is widely applicable to any application or service that accepts users data and submits that data, synchronously or asynchronously, to a system of record. It is a requirement that we notify the user at critical touch points as their request is processed.
-
+* **Any online form that takes data from a user and submits that data to a back-end system.** This pattern is widely applicable to any online form that accepts user data and submits that data, synchronously or asynchronously, to a system of record. We're required to notify the user at critical touch points in the submission process.
 
 ## Examples
 
 ### Email notifications
 
-{% include component-example.html alt="Screen shots of 3 email templates." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/email-templates.png" caption="Three templates for email notification touch points sent via VA Notify." class="x2" %}
+We'll add examples of these notifications soon.
 
-### Status in MyVA
+### Form submission status in My VA
 
 {% include component-example.html alt="Screen shots of 3 MyVA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Three Card component variations used to convey status of a user's submission in MyVA for Benefits applications." reverse="true" %}
 
 ## How to design and build
 
-### Email notification touch points
+### Sending email notifications
 
-When a request reaches these 3 touch points the user must be notified via email: 
+#### For synchronous submissions
 
-1. **Submission in progress**: The status immediately after a user clicks "submit" on a form. This is the period between the submission and when that submission reaches a system of record. During this time, data submitted by the user may travel through several systems.
-  * **Not required for synchronous status.** This touch point is only necessary if the user's data submission is being handled asynchronously. If you can synchronously confirm that the user's data has reached the system of record immediately then you can skip this status notification.
-2. **Received**: The status when a request has arrived in the system of record. From there it can be worked on and ultimately completed. **This status notification must not be sent unless we have confirmation that the request has reached the system of record.**
-3. **Action needed:** The status which informs the user that their request has failed as it has not reached the system of record. This status may be accompanied by directions for re-submission or directions to call our call center for help.
+If there's no lag time between the user submitting the form and us receiving the form in a system of record, you only need to implement 1 email notification: 
+
+1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
+
+**Note:** The reason you don't need "Action needed" notifications for synchronous submissions is that you show the user the error message in the form itself. If form submission can fail after the user gets a success message on the form confirmation page, your form has asynchronous submissions and you need 3 email notifications.
+
+Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
+
+#### For asynchronous submissions
+
+If there's a lag time between the user submitting the form and us receiving the form in a system of record, you must implement 3 email notifications: 
+
+1. **Submission in progress**: The notification we send immediately after a user selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached a system of record. During this time, data submitted by the user may travel through several systems.
+2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
+3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the user to resubmit or take another action before we can process their form. This notification must include instructions for the user to recover from the error.
 
 Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
 
@@ -50,27 +60,29 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
   * Replace all but the first 3 and last 2 characters (numbers or letters) of the filename with the "X" character.
   * Show the MIME type of the file (e.g. ".png", ".pdf", etc.)
 
-### Showing status in MyVA for Benefits applications
+### Showing form submission status on the form confirmation page
 
-Submissions to the VA made via VA.gov or the mobile app must show the status of a request in MyVA such that authenticated users can see the status of any and all submissions. MyVA includes several sections where status can be conveyed:
+#### For synchronous submissions
 
-* Claims and appeals
-* Health care
-* Outstanding debts
-* Benefit payments
-* Benefit applications and forms
+If there's no lag time between the user submitting the form and us receiving the form in a system of record, do these 2 things on your form confirmation page:
+- Show a success message confirming that the submission was successful and we've received the form, like "You've submitted your form"
+- In the What to expect section, tell the user about the next notification we'll send (in this case, that should be an email confirming we've received their form)
 
-#### Claims and appeals
+#### For asynchronous submissions
 
-Obtains status from the Claims Status Tool.
+If there's a lag time between the user submitting the form and us receiving the form in a system of record, do these 2 things on the form confirmation page:
+- Show a success message message confirming only that the submission is in progress, like "Your form submission is in progress" — explain that we'll send an email to confirm when we've received the form and an estimate for how long that will take
+- In the What to expect section, tell the user about the next notifications we'll send (in this case, an email confirming the submission is in progress and then a second email confirming when we've received their form) 
 
-#### Benefit applications and forms
+### Showing form submission status in My VA
 
-Currently obtains status from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
+Form submissions on VA.gov or in the mobile app must show the submission status in My VA for authenticated users. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently obtains status from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
+
+Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the Claim Status Tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA. 
 
 ### How this pattern works
 
-Communicating status of a request has three critical phases that all teams must account for in their applications:
+Communicating form submission status has 3 critical phases that all teams must account for in their online forms:
 
 1. **Status notification via email or text.**
 2. **Status notification in the user interface of VA.gov and the flagship mobile app.** 
@@ -78,7 +90,7 @@ Communicating status of a request has three critical phases that all teams must 
 
 #### How to provide a clear next step in the event of an error
 
-In the event of an error, an application may determine the next logical step a user can take to remedy that error. At the very least users must be notified that they can contact the Call Center in the event of a submission failure.
+Every time a form submission error happens, you must notify the user that about the error and provide a recovery step. At the very least, tell users to contact the Call Center.
 
 ### Components used in this pattern
 
@@ -87,20 +99,6 @@ In the event of an error, an application may determine the next logical step a u
 
 ### Page templates available for this pattern
 
-* [Email templates are available in VA Notify](https://notifications.va.gov/information/emails). [VA.gov email templates](https://notifications.va.gov/services/5bda137e-689e-4532-b3d2-2c81c0324331/templates) are available if you have access to that workspace. 
-  * NOTE: You must have a VA Notify account to access these templates.
+* [Email templates are available in VA Notify](https://notifications.va.gov/information/emails). [VA.gov email templates](https://notifications.va.gov/services/5bda137e-689e-4532-b3d2-2c81c0324331/templates). You'll need a VA Notify account to access the sample templates. Select **Add new template**. Then select **Sample templates**.
+* The sample email templates include variables you'll need to fill in for your form. If you need help adjusting the templates to work for your form, contact the Sitewide Content, Accessibility, and IA (CAIA) team.
 * Email templates must be reviewed by a VA Privacy Officer in the appropriate portfolio (VBA or VHA). 
-
-## Examples in production
-
-### Claim status
-
-{% include component-example.html alt="An example of the track your claims page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/track-your-claims.png" caption="The Claim Status Tool uses Cards that provide details on the current step of the process." class="x2" %}
-
-### Decision letter
-
-{% include component-example.html alt="An example of a claim status card that shows the ability to download a decision letter" file="/images/patterns/help-users-to/stay-informed-of-their-application-status/decision-letter-status-card.png" caption="This claim Card component provides a status of the claim and indicates that a decision letter is available for download." class="x2" %}
-
-### Certificate of eligibility
-
-{% include component-example.html alt="An example of the Certificate of eligibility status page." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/COE-automatic-download-page.png" caption="The Certificate of eligibility uses an Alert component on the confirmation page to show status of a synchronous request." class="x2" %}
