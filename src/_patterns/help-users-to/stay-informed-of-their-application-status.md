@@ -39,7 +39,7 @@ If there's no lag time between when someone submits the form and when VA receive
 
 1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 
-**Note:** The reason you don't need "Action needed" notifications for synchronous submissions is that you show the person the error message in the form itself. If form submission can fail after the person gets a success message on the form confirmation page, your form has asynchronous submissions and you need 3 email notifications.
+**Note:** The reason you don't need "Action needed" notifications for synchronous submissions is that you show the person the error message in the form itself. If form submission can fail after the person gets a success message on the form confirmation page, your form has asynchronous submissions and you need at least 2 email notifications.
 
 Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
 
