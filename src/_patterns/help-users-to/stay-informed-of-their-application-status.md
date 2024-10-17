@@ -17,7 +17,7 @@ anchors:
 
 ### When to use this pattern
 
-* **Any online form that takes data from a user and submits that data to a back-end system.** This pattern is widely applicable to any online form that accepts user data and submits that data, synchronously or asynchronously, to a system of record. We're required to notify the user at critical touch points in the submission process.
+* **Any online form that takes data from a user and submits that data to a back-end system.** This pattern is widely applicable to any online form that accepts user data and submits that data, synchronously or asynchronously, to the system of record. We're required to notify the user at critical touch points in the submission process.
 
 ## Examples
 
@@ -35,7 +35,7 @@ We'll add examples of these notifications soon. If you need examples now, contac
 
 #### For synchronous submissions
 
-If there's no lag time between when someone submits the form and when VA receives it in a system of record, you need to implement only 1 email notification: 
+If there's no lag time between when someone submits the form and when VA receives it in the system of record, you need to implement only 1 email notification: 
 
 1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 
@@ -45,9 +45,9 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 
 #### For asynchronous submissions
 
-If there's a lag time between when someone submits the form and when VA receives it in a system of record, you must implement 3 email notifications: 
+If there's a lag time between when someone submits the form and when VA receives it in the system of record, you must implement 3 email notifications: 
 
-1. **Submission in progress**: The notification we send immediately after a user selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached a system of record. During this time, data submitted by the user may travel through several systems.
+1. **Submission in progress**: The notification we send immediately after a user selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached the system of record. During this time, data submitted by the user may travel through several systems.
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error.
 
@@ -58,20 +58,20 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 * **Do NOT send personally identifiable information (PII) or protected health information (PHI) in notifications.** It is imperative that notifications not include any PII or PHI.
 * **Hide filenames.** File names for evidence and other uploads of documents to the VA can often include personal information. So we hide all filenames in notifications. To do this:
   * Replace all but the first 3 and last 2 characters (numbers or letters) of the filename with the "X" character.
-  * Show the MIME type of the file (e.g. ".png", ".pdf", etc.)
+  * Show the MIME type of the file (like ".png", ".pdf", etc.)
 
 ### Showing form submission status on the form confirmation page
 
 #### For synchronous submissions
 
-If there's no lag time between when someone submits the form and when VA receives it in a system of record, do these 2 things on your form confirmation page:
+If there's no lag time between when someone submits the form and when VA receives it in the system of record, do these 2 things on your form confirmation page:
 - Show a success message confirming that the submission was successful and we've received the form, like "You've submitted your form"
 - In the What to expect section, tell the user about the next notification we'll send (in this case, that should be an email confirming we've received their form)
 
 #### For asynchronous submissions
 
-If there's a lag time between when someone submits the form and when VA receives it in a system of record, do these 2 things on the form confirmation page:
-- Show a success message message confirming only that the submission is in progress, like "Your form submission is in progress" — explain that we'll send an email to confirm when we've received the form and an estimate for how long that will take
+If there's a lag time between when someone submits the form and when VA receives it in the system of record, do these 2 things on the form confirmation page:
+- Show a success message confirming only that the submission is in progress, like "Your form submission is in progress" — and explain that we'll send an email to confirm when we've received the form and an estimate for how long that will take
 - In the What to expect section, tell the user about the next notifications we'll send (in this case, an email confirming the submission is in progress and then a second email confirming when we've received their form) 
 
 ### Showing form submission status in My VA
@@ -80,23 +80,23 @@ Form submissions on VA.gov or in the mobile app must show the submission status 
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the Claim Status Tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA. 
 
-**Note:** As of October 2024, form submission status in My VA is not yet in production. Teams should work towards implementing this as soon as possible.
+**Note:** As of October 2024, form submission status in My VA is not yet in production. Teams should work toward implementing this as soon as possible.
 
-### Showing form processing status after we receive it in a system of record
+### Showing form processing status after we receive it in the system of record
 
-Some forms show processing status after point of receipt in the Claim Status Tool. In the future, all forms should work towards allowing people to track the processing status through to the point of a VA decision or other ultimate end point.
+Some forms show processing status after point of receipt in the Claim Status Tool. In the future, all forms should work toward allowing people to track the processing status through to the point of a VA decision or other ultimate end point.
 
 ### How this pattern works
 
 Communicating form submission status has 3 critical phases that all teams must account for in their online forms:
 
-1. **Status notification via email or text.**
-2. **Status notification in the user interface of VA.gov and the flagship mobile app.** 
-3. **Providing a clear next step in the event of an error.**
+1. **Status notification via email or text**
+2. **Status notification in the user interface of VA.gov and the flagship mobile app** 
+3. **A clear next step in the event of an error**
 
 #### How to provide a clear next step in the event of an error
 
-Every time a form submission error happens, you must notify the user that about the error and provide a recovery step. At the very least, tell users to contact the Call Center.
+Every time a form submission error happens, you must notify the person about that error and provide a recovery step. At the very least, tell users to contact the Call Center.
 
 ### Components used in this pattern
 
