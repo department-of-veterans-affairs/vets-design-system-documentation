@@ -3,7 +3,7 @@ layout: pattern
 title: Stay informed of their form submission status
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
-intro-text: "Follow this pattern to notify users when their online form submission is in progress, when we've received their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
+intro-text: "Follow this pattern to notify people when their online form submission is in progress, when we receive their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
 status: use-with-caution-candidate
 research-title: Help users to stay informed of app status
 anchors:
@@ -35,7 +35,7 @@ We'll add examples of these notifications soon. If you need examples now, contac
 
 #### For synchronous submissions
 
-If there's no lag time between when someone submits the form and when VA receives it in a system of record, you only need to implement 1 email notification: 
+If there's no lag time between when someone submits the form and when VA receives it in a system of record, you need to implement only 1 email notification: 
 
 1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 
@@ -49,14 +49,14 @@ If there's a lag time between when someone submits the form and when VA receives
 
 1. **Submission in progress**: The notification we send immediately after a user selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached a system of record. During this time, data submitted by the user may travel through several systems.
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
-3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the user to resubmit or take another action before we can process their form. This notification must include instructions for the user to recover from the error.
+3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error.
 
 Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
 
 #### Protecting PII & PHI in notifications
 
-* **Do NOT send PII or PHI in notifications.** It is imperative that notifications not include any PII or PHI.
-* **Obfuscate filenames.** File names for evidence and other uploads of documents to the VA can often include personal information. Thus we obfuscate all filenames in notifications. To do this:
+* **Do NOT send personally identifiable information (PII) or protected health information (PHI) in notifications.** It is imperative that notifications not include any PII or PHI.
+* **Hide filenames.** File names for evidence and other uploads of documents to the VA can often include personal information. So we hide all filenames in notifications. To do this:
   * Replace all but the first 3 and last 2 characters (numbers or letters) of the filename with the "X" character.
   * Show the MIME type of the file (e.g. ".png", ".pdf", etc.)
 
