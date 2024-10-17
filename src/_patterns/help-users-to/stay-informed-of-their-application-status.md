@@ -106,5 +106,5 @@ Every time a form submission error happens, you must notify the person about tha
 ### Page templates available for this pattern
 
 * [Email templates are available in VA Notify](https://staging.notifications.va.gov/). You'll need a VA Notify account to access the sample templates. Select a service. If you're not assigned to a service contact # va-notify-public. Select **Add template**. Then select **Sample templates**.
-* The sample email templates include variables you'll need to fill in for your form. If you need help adjusting the templates to work for your form, contact #sitewide-content-accessibility-ia.
+* The sample email templates include customizable content you'll need to fill in for your form. If you need help adjusting the templates to work for your form, contact #sitewide-content-accessibility-ia.
 * Email templates must be reviewed by a VA Privacy Officer in the appropriate portfolio (VBA or VHA). 
