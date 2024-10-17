@@ -3,7 +3,7 @@ layout: pattern
 title: Stay informed of their form submission status
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
-intro-text: "Follow this pattern to notify users when their online form submission is in progress, when we've received their submitted form, and when a system error has caused teh submission to fail. These are required notification touch points." 
+intro-text: "Follow this pattern to notify users when their online form submission is in progress, when we've received their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
 status: use-with-caution-candidate
 research-title: Help users to stay informed of app status
 anchors:
@@ -76,9 +76,15 @@ If there's a lag time between the user submitting the form and us receiving the 
 
 ### Showing form submission status in My VA
 
-Form submissions on VA.gov or in the mobile app must show the submission status in My VA for authenticated users. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently obtains status from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
+Form submissions on VA.gov or in the mobile app must show the submission status in My VA for authenticated users. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets status from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the Claim Status Tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA. 
+
+**Note:** As of October 2024, form submission status in My VA is not yet in production. Teams should work towards implementing this as soon as possible.
+
+### Showing form processing status after we receive it in a system of record
+
+Some forms show processing status after point of receipt in the Claim Status Tool. In the future, all forms should work towards allowing people to track the processing status through to the point of a VA decision or other ultimate end point.
 
 ### How this pattern works
 
