@@ -35,7 +35,7 @@ We'll add examples of these notifications soon. If you need examples now, contac
 
 #### For synchronous submissions
 
-If there's no lag time between the user submitting the form and us receiving the form in a system of record, you only need to implement 1 email notification: 
+If there's no lag time between when someone submits the form and when VA receives it in a system of record, you only need to implement 1 email notification: 
 
 1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 
@@ -45,7 +45,7 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 
 #### For asynchronous submissions
 
-If there's a lag time between the user submitting the form and us receiving the form in a system of record, you must implement 3 email notifications: 
+If there's a lag time between when someone submits the form and when VA receives it in a system of record, you must implement 3 email notifications: 
 
 1. **Submission in progress**: The notification we send immediately after a user selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached a system of record. During this time, data submitted by the user may travel through several systems.
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
@@ -64,13 +64,13 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 
 #### For synchronous submissions
 
-If there's no lag time between the user submitting the form and us receiving the form in a system of record, do these 2 things on your form confirmation page:
+If there's no lag time between when someone submits the form and when VA receives it in a system of record, do these 2 things on your form confirmation page:
 - Show a success message confirming that the submission was successful and we've received the form, like "You've submitted your form"
 - In the What to expect section, tell the user about the next notification we'll send (in this case, that should be an email confirming we've received their form)
 
 #### For asynchronous submissions
 
-If there's a lag time between the user submitting the form and us receiving the form in a system of record, do these 2 things on the form confirmation page:
+If there's a lag time between when someone submits the form and when VA receives it in a system of record, do these 2 things on the form confirmation page:
 - Show a success message message confirming only that the submission is in progress, like "Your form submission is in progress" — explain that we'll send an email to confirm when we've received the form and an estimate for how long that will take
 - In the What to expect section, tell the user about the next notifications we'll send (in this case, an email confirming the submission is in progress and then a second email confirming when we've received their form) 
 
