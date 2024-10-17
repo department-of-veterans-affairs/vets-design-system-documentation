@@ -39,13 +39,13 @@ If there's no lag time between when someone submits the form and when VA receive
 
 1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 
-**Note:** The reason you don't need "Action needed" notifications for synchronous submissions is that you show the person the error message in the form itself. If form submission can fail after the person gets a success message on the form confirmation page, your form has asynchronous submissions and you need at least 2 email notifications.
+**Note:** The reason you don't need "Action needed" notifications for synchronous submissions is that you show the person the error message in the form itself. If form submission can fail after the person gets a success message on the form confirmation page, your form has asynchronous submissions and you need to implement 3 email notifications.
 
 Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
 
 #### For asynchronous submissions
 
-If there's a lag time between when someone submits the form and when VA receives it in the system of record, you must implement these email notifications: 
+If there's a lag time between when someone submits the form and when VA receives it in the system of record, you must implement these 3 email notifications: 
 
 1. **Submission in progress**: The notification we send immediately after someone selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached the system of record. During this time, data submitted by the person may travel through several systems.
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
