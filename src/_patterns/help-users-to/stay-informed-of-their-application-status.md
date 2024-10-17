@@ -27,7 +27,7 @@ We'll add examples of these notifications soon. If you need examples now, contac
 
 ### Form submission status in My VA
 
-{% include component-example.html alt="Screen shots of 3 MyVA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Three Card component variations used to convey status of someone's submission in MyVA for Benefits applications." reverse="true" %}
+{% include component-example.html alt="Screen shots of 3 My VA status cards." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" caption="Three Card component variations used to show the status of someone's submission in My VA for Benefits applications." reverse="true" %}
 
 ## How to design and build
 
@@ -35,7 +35,7 @@ We'll add examples of these notifications soon. If you need examples now, contac
 
 #### For synchronous submissions
 
-If there's no lag time between when someone submits the form and when VA receives it in the system of record, you need to implement only one email notification: 
+If there’s no lag time between when someone submits a form and when we receive it—the form was received in the system of record in time for us to show a success message on the confirmation page—then we consider it a synchronous form. In this case, you need to implement only one email notification: 
 
 1. **Received**: The notification when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 
@@ -55,7 +55,7 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 
 #### Protecting PII & PHI in notifications
 
-* **Do NOT send personally identifiable information (PII) or protected health information (PHI) in notifications.** It is imperative that notifications not include any PII or PHI.
+* **Do not send personally identifiable information (PII) or protected health information (PHI) in notifications.** It's imperative that notifications do not include any PII or PHI.
 * **Hide filenames.** File names for evidence and other uploads of documents to the VA can often include personal information. So we hide all filenames in notifications. To do this:
   * Replace all but the first 3 and last 2 characters (numbers or letters) of the filename with the "X" character.
   * Show the MIME type of the file (like ".png", ".pdf", etc.)
