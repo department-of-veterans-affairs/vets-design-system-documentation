@@ -78,9 +78,7 @@ If there's a lag time between when someone submits the form and when VA receives
 
 Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets statuses from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
 
-Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA. 
-
-**Note:** As of October 2024, form submission status in My VA is not yet in production. Teams should work toward implementing this as soon as possible.
+Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
 
 ### Showing form processing status after we receive it in the system of record
 
@@ -106,5 +104,5 @@ Every time a form submission error happens, you must notify the person about tha
 ### Page templates available for this pattern
 
 * [Email templates are available in VA Notify](https://staging.notifications.va.gov/). You'll need a VA Notify account to access the sample templates. Select a service. If you're not assigned to a service contact # va-notify-public. Select **Add template**. Then select **Sample templates**.
-* The sample email templates include customizable content you'll need to fill in for your form. If you need help adjusting the templates to work for your form, contact #sitewide-content-accessibility-ia.
+* The sample email templates include customizable content you'll need to fill in for your form. Try to use as much of the template content as possible and only adjust where needed. If you have questions or need help adjusting the templates for your form, you can contact #sitewide-content-accessibility-ia
 * Email templates must be reviewed by a VA Privacy Officer in the appropriate portfolio (VBA or VHA). 
