@@ -23,7 +23,7 @@ anchors:
 
 ### Email notifications
 
-We'll add examples of these notifications soon. If you need examples now, contact #sitewide-content-accessibility-ia. 
+{% include component-example.html alt="Screen shots of 3 email templates." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/email-templates.png" caption="Three template examples for email notification touch points sent via VA Notify." class="x2" %}
 
 ### Form submission status in My VA
 
