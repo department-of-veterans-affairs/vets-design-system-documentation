@@ -20,20 +20,20 @@ anchors:
 
 ## Examples
 
-### Sign-in alert for all products that require sign-in with a verified account
-<!-- INSERT STORYBOOK PREVIEW -->
-<!-- {% include storybook-preview.html story="components-va-alert-expandable--default" link_text="va-alert-expandable" %} -->
+### Required sign-in (Verified)
+{% include component-example.html alt="An example of a sign-in alert for all products that require sign-in with a verified account." file="/images/components/alert-sign-in/required-sign-in-verified.png" caption="An example of a sign-in alert for all products that require sign-in with a verified account" reverse=true class="x2" %}
 
-### Sign-in alert for forms that support optional sign-in with a verified account
-<!-- INSERT STORYBOOK PREVIEW -->
-<!-- {% include storybook-preview.html story="components-va-alert-expandable--warning" link_text="va-alert-expandable" %} -->
+### Optional sign-in (Verified)
+{% include component-example.html alt="An example of a sign-in alert for forms that support optional sign-in with a verified account." file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for forms that support optional sign-in with a verified account." reverse=true class="x2" %}
 
-### Verification alert for unverified Login.gov or ID.me accounts
-<!-- INSERT STORYBOOK PREVIEW -->
-<!-- {% include storybook-preview.html story="components-va-alert-expandable--success" link_text="va-alert-expandable" %} -->
+### Verify with ID.me
+{% include component-example.html alt="An example of a sign-in alert for unverified ID.me accounts" file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for unverified ID.me accounts" reverse=true class="x2" %}
 
-### Verification alert for unverified My HealtheVet accounts
-<!-- INSERT STORYBOOK PREVIEW -->
+### Verify with Login.gov
+{% include component-example.html alt="An example of a sign-in alert for unverified Login.gov accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified Login.gov accounts." reverse=true class="x2" %}
+
+### Sign-in with another account
+{% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true class="x2" %}
 
 ## Usage
 
@@ -72,20 +72,6 @@ When these are true:
 * Person is signed in with an unverified (LOA1 or IAL1) My HealtheVet account, **and**
 * Your product only accepts verified (LOA3 or IAL2) accounts
 
-### Instances of this component in production
-<!-- TO DO: ADD SCREENSHOTS -->
-<a href="https://www.va.gov/health-care/secure-messaging/">Static page with a sign-in alert.</a>
-<a href="https://www.va.gov/health-care/apply-for-health-care-form-10-10ez/introduction">Form intro page with a sign-in alert.</a>
-
-<!-- 
-
-
-#### Facility status for COVID-19 in Location finder
-{% include component-example.html alt="Alert - Expandable in a mobile viewport." file="/images/components/alert-expandable/info-facility-status-location-finder.png" caption="Alert - Expandable, default variation, collapsed in the Location finder results list." width="50%" %}
-
-#### Facility status for COVID-19 in Facility page
-{% include component-example.html alt="Alert - Expandable in a desktop viewport." file="/images/components/alert-expandable/info-desktop.png" caption="Alert - Expandable, default variation, expanded in a Facility page in a wide viewport." width="50%" %} -->
-
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
@@ -105,8 +91,6 @@ Work with the Office of the CAIA and identity teams to adjust the content in thi
 ## Related
 
 * [Alert]({{ site.baseurl}}/components/alert/alert)
+* [Pattern - Help users to sign-in]({{ site.baseurl}}/patterns/help-users-to/sign-in)
 
 {% include _component-checklist.html component_name=page.web-component %}
-
-<!-- TO DO: ADD A COMPONENT CHECKLIST -->
-<!-- TO DO: ASK ABOUT INCLUDING A LINK TO THE PATTERN PAGE (SIGN IN) ON THIS PAGE -->
