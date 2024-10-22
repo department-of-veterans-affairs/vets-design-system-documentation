@@ -4,7 +4,7 @@ All email and text notifications we send to Veterans should be trustworthy, acti
 
 ## General guidance for notifications
 * **Start with a sample template.** The VA Notify system provides several sample templates for common notification types. Try to use as much of the sample template content as possible, for consistency across notifications.
-* **Follow the VA content style guide.** Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. 
+* **Follow our content style guide.** Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. [Review our top 10 plain language standards](https://design.va.gov/content-style-guide/plain-language/#top-10-va-plain-language-standards)
 * **Protect Veterans' personal information.** Always get approval of new or updated notifications from a VA privacy officer. Email and text notifications are not secure, so we can’t include Veterans’ personally identifiable information (PII) or protected health information (PHI). 
 **Note:** Privacy officers may allow exceptions to the PII/PHI rule when a Veteran opts in to receive PII/PHI in their notifications. You must work closely with the privacy office and get specific approval for any notifications that include PII/PHI.
 
@@ -20,6 +20,8 @@ All email and text notifications we send to Veterans should be trustworthy, acti
     * Like this: We've received your VA form 
 * If it's a post-submission failure notification (part of the zero silent failures initiative), start the subject line with "Action needed"
     * Like this: Action needed: We couldn't process your VA form
+
+**Note:** For digital forms, get guidance on submission notification emails and templates in the Pattern section of the design system. [Form submission status pattern](https://design.va.gov/patterns/help-users-to/stay-informed-of-their-application-status) 
 
 ### Salutation 
 
