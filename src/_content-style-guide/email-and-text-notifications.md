@@ -1,3 +1,12 @@
+---
+layout: content-style-guide
+title: Email and text notifications
+intro-text: All email and text notifications we send to Veterans should be trustworthy, actionable, and easy to understand. 
+anchors:
+  - anchor: General guidance for notifications
+  - anchor: Email notifications
+---
+
 # Email and text notifications
 
 All email and text notifications we send to Veterans should be trustworthy, actionable, and easy to understand. 
