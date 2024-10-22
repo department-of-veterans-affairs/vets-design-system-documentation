@@ -142,6 +142,11 @@ anchors:
 
 The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
+## Content considerations
+
+<a class="vads-c-action-link--blue" 
+href="https://design.va.gov/content-style-guide/bulleted-lists">Refer to our bulleted list guidance for punctuation and general considerations</a>
+
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/#accessibility-checkbox">Refer to the U.S. Web Design System for accessibility guidance</a>
