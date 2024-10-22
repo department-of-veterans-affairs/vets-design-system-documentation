@@ -7,10 +7,6 @@ anchors:
   - anchor: Email notifications
 ---
 
-# Email and text notifications
-
-All email and text notifications we send to Veterans should be trustworthy, actionable, and easy to understand. 
-
 ## General guidance for notifications
 * **Start with a sample template.** The VA Notify system provides several sample templates for common notification types. Try to use as much of the sample template content as possible, for consistency across notifications.
 * **Follow our content style guide.** Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. [Review our top 10 plain language standards](https://design.va.gov/content-style-guide/plain-language/#top-10-va-plain-language-standards)
