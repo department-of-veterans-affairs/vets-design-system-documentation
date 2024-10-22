@@ -1,7 +1,7 @@
 ---
 layout: content-style-guide
 title: Bulleted lists
-intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list.
+intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list. These guidelines also apply to checkboxes in forms.
 anchors:
   - anchor: Considerations
   - anchor: Punctuation for bulleted lists
@@ -11,7 +11,7 @@ anchors:
 
 {% include content/unordered-list.md %}
 
-## Punctuation for bulleted lists
+## Punctuation
 
 * When the list is made up of fragments, don't use ending periods.
 * When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the additional sentence. To be consistent, also use ending periods on the other items in the bulleted list, even if they're fragments.
@@ -88,7 +88,7 @@ __All of these must be true:__
 
 </div>
 
-### Example of bulleted list with more than one sentence
+### Example of bullet list with more than one sentence
 
 Use ending periods for each bulleted item in a list if any of the items contain a fragment and an additional sentence. 
 
