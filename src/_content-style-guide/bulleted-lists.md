@@ -1,7 +1,7 @@
 ---
 layout: content-style-guide
 title: Bulleted lists
-intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list. These guidelines also apply to checkboxes in forms.
+intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list. These guidelines also apply to content next to checkboxes and radio buttons in forms.
 anchors:
   - anchor: Considerations
   - anchor: Punctuation for bulleted lists
