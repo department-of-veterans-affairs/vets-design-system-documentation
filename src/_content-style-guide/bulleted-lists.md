@@ -13,11 +13,11 @@ anchors:
 
 ## Punctuation
 
-* When the list is made up of fragments, don't use ending periods.
-* When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the additional sentence. To be consistent, also use ending periods on the other items in the bulleted list, even if they're fragments.
-* Don't use a period at the end of the last bullet in a series of fragments.
+* When the list is made up of fragments or single sentences, don't use ending periods
+* If one or more bullets contains an additional sentence, use ending periods on all items in the bullet list—including any fragments
+* Don't use a period at the end of the last bullet in a series of fragments
 
-Note: Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets that are full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
+Note: Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets with multiple full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
 
 ### Example of bullet list with fragments
 
