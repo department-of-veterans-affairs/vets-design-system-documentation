@@ -30,7 +30,7 @@ All email and text notifications we send to Veterans should be trustworthy, acti
 
 ### Closing and sign-off 
 
-* In most emails to Veterans, you don't need to add a closing line — in VA Notify, the standard template header the sender address will identify U.S. Department of Veteran Affairs as the sender
+* In most emails to Veterans, you don’t need to add a closing line — the VA Notify header identifies U.S. Department of Veteran Affairs as the sender
 * Don't sign off as "VA.gov" or "VA" or "the VA team"
 * Don't say "Thank you for your service" in the closing or anywhere else in the email (research has found that some Veterans may have negative feelings about this phrase) 
 
