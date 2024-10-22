@@ -28,23 +28,23 @@ All email and text notifications we send to Veterans should be trustworthy, acti
 * Personalize the email with the Veteran's first name in the salutation as “Dear ((first_name)),”
 * Don't include the Veteran's last name
 
-#### Closing and sign-off 
+### Closing and sign-off 
 
 * In most emails to Veterans, you don't need to add a closing line — in VA Notify, the standard template header the sender address will identify U.S. Department of Veteran Affairs as the sender
 * Don't sign off as "VA.gov" or "VA" or "the VA team"
 * Don't say "Thank you for your service" in the closing or anywhere else in the email (research has found that some Veterans may have negative feelings about this phrase) 
 
-#### Header levels 
+### Header levels 
 
 * VA Notify supports header levels 1, 2, and 3
 * H1 should be either exactly the same as the subject line, or a slightly longer and more detailed version of the subject line (for example, using "VA form" in subject line and "disability claim form" in H1, to keep subject line in character limits)
 
-#### Feature card (also called block quote card)
+### Feature card (also called block quote card)
 
 * Use the card component to display important information, like confirmation numbers or the date of an upcoming appointment
 * If the feature card displays information from an online form confirmation screen, try to use the same data field labels in both (like "Date submitted")
 
-#### Links 
+### Links 
 
 * [Follow general VA guidance for writing link text](https://design.va.gov/content-style-guide/links), including these rules:
     * Always include purpose and the destination in link text — for links to the VA website, add "on VA.gov" as the destination
@@ -55,7 +55,7 @@ All email and text notifications we send to Veterans should be trustworthy, acti
 * If you're using VA Notify, use the analytics link generator for tracking
 * Aim for no more than 3 links in a single email
 
-#### Footer 
+### Footer 
 
 * Use the footer to explain why we sent this email and tell people not to reply:
     * **Like this:** You’re receiving this email because you submitted a form on [VA.gov](https://wwww.va.gov). Don’t reply to this email.
