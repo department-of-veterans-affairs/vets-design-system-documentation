@@ -23,12 +23,12 @@ anchors:
 - **When you prefill the user's data into an application, like a form.** When using this pattern, clearly inform the user of where their data is being pulled from to prefill for them.
 - **When users can update prefilled information.** View [Help users to... Know how their information is updated](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) for guidance on helping users update this prefilled information.
 
-#### Design Principals
+#### Design principles
 - **Visibility of system status.** This pattern demonstrates the usability principle of communicating the current state to help users feel in control and take appropriate action. [Learn more about Visibility of system status](https://www.nngroup.com/articles/visibility-system-status/).
 - **User control and freedom.** This pattern also gives users control over their own information. [Learn more about User Control and Freedom](https://www.nngroup.com/articles/user-control-and-freedom/).
 
 ### When not to use this pattern
-- **For unauthenticated users**. Users who aren't signed in shouldn't see their information prefilled when they interact with an application. However, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [View the unauthenticated intro page alert](#unauthenticated-intro-page-alert) later described on this page.
+- **For unauthenticated users**. Users who aren't signed in shouldn't see their information prefilled when they interact with an application. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [View the unauthenticated intro page alert](#unauthenticated-intro-page-alert) later described on this page.
 
 ### When to use caution
 - **When prefilling data from a source other than VA Profile.** It is crucial to explain to the user exactly where the data is coming from so that if there are any errors in the data, it is clear how to correct them.
@@ -63,7 +63,7 @@ This pattern communicates when and why information will be prefilled with:
 #### Communicate information that cannot be edited
 This pattern communicates information that cannot be edited with:
 - **Uneditable prefilled information displayed in a card.** Prefilled information (such as legal name, date of birth, and Social Security Number) is displayed in a card component.
-- **Directions for updating uneditable information.** Helper text is added under the card that has the bolded word 'Note" and directions to update this information offline. For additional guidance on helping users update prefilled information, see the ["Help users to... Know how their information is updated"](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) pattern which will be updated soon.
+- **Directions for updating uneditable information.** Helper text is added under the card that has the bolded word "note" and directions to update this information offline. For additional guidance on helping users update prefilled information, see the ["Help users to... Know how their information is updated"](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) pattern which will be updated soon.
 
 #### Communicate information that can be edited
 This pattern communicates information that can be edited with:
@@ -92,19 +92,11 @@ Coming soon!
 
 ## Content considerations
 ### Directions for updating uneditable information
-Directions for updating information that can't be updated online within the form varies and should be updated based on the context of the form or application being used. CAIA is currently working on finalizing some base language to be included, but general guidelines are:
-- If it's benefits related, include the content that has the VA benefits hotline
-- If it's health related, include the content that has the VA benefits hotline AND the content to contact your local medical center
-
-
-### Contextual Alert content
-Each alert has specific content requirements. You can find each content scenario below.
-- Unauthenticated intro page alert
-- Authenticated intro page alert
-- Authenticated contextual alert
+Directions for updating information that can't be updated online vary. So directions should be updated based on the context of the form or application used. CAIA is currently working on finalizing some base language to be included, but general guidelines are:
+- If it's benefits-related, include the content that has the VA benefits hotline
+- If it's health-related, include the content that has the VA benefits hotline AND the content to contact your local medical center
 
 #### Unauthenticated intro page alert
-...[Draft guidance from CAIA](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/content/content-patterns-and-standards/sign-in-alerts.md) on sign in alerts?
 
 > [heading] Sign in with a verified account
 >
