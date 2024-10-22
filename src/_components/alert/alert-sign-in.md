@@ -4,14 +4,14 @@ permalink: /components/alert/alert-sign-in
 has-parent: /components/alert/
 title: Alert - Sign-in
 github-title: va-alert-sign-in
-intro-text: An alert component with specific content focused on helping users complete the sign-in process.
+intro-text: An alert component with specific content focused on helping users complete the sign in process.
 figma-link: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
 status: use-with-caution-candidate
 web-component: va-alert-sign-in
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Code usage
+  - anchor: Behavior
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -21,19 +21,19 @@ anchors:
 ## Examples
 
 ### Required sign-in (Verified)
-{% include component-example.html alt="An example of a sign-in alert for all products that require sign-in with a verified account." file="/images/components/alert-sign-in/required-sign-in-verified.png" caption="An example of a sign-in alert for all products that require sign-in with a verified account" reverse=true class="x2" %}
+{% include component-example.html alt="An example of a sign-in alert for all products that require sign-in with a verified account." file="/images/components/alert-sign-in/required-sign-in-verified.png" caption="An example of a sign-in alert for all products that require sign-in with a verified account" reverse=true %}
 
 ### Optional sign-in (Verified)
-{% include component-example.html alt="An example of a sign-in alert for forms that support optional sign-in with a verified account." file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for forms that support optional sign-in with a verified account." reverse=true class="x2" %}
+{% include component-example.html alt="An example of a sign-in alert for forms that support optional sign-in with a verified account." file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for forms that support optional sign-in with a verified account." reverse=true %}
 
 ### Verify with ID.me
-{% include component-example.html alt="An example of a sign-in alert for unverified ID.me accounts" file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for unverified ID.me accounts" reverse=true class="x2" %}
+{% include component-example.html alt="An example of a sign-in alert for unverified ID.me accounts" file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for unverified ID.me accounts" reverse=true %}
 
 ### Verify with Login.gov
-{% include component-example.html alt="An example of a sign-in alert for unverified Login.gov accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified Login.gov accounts." reverse=true class="x2" %}
+{% include component-example.html alt="An example of a sign-in alert for unverified Login.gov accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified Login.gov accounts." reverse=true %}
 
 ### Sign-in with another account
-{% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true class="x2" %}
+{% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true %}
 
 ## Usage
 
@@ -50,24 +50,27 @@ anchors:
 ## Behavior
 
 ### Selecting variations for the sign-in pattern in your product
-**All products that require or allow sign-in with verified accounts only must use 1 of these 2 sign-in variations:**
+**All products that require or allow sign in with verified accounts only must use 1 of these 2 sign-in variations:**
 
 **Sign-in alert for all products that require sign-in with a verified account**
 * Your product requires people to sign in, **and**
 * Your product only accepts verified (LOA3 or IAL2) accounts
 
 **Sign-in alert for forms that support optional sign-in with a verified account**
+
 When these are true:
 * Your product is a form that gives people the option to sign in, **and**
 * Your form only accepts verified (LOA3 or IAL2) accounts, **and**
 * Your form supports prefill and save-in-progress
 
 **Verification alert for unverified Login.gov or ID.me accounts**
+
 When these are true:
 * Person is signed in with an unverified (LOA1 or IAL1) Login.gov or ID.me account, **and**
 * Your product only accepts verified (LOA3 or IAL2) accounts
 
 **Verification alert for unverified My HealtheVet accounts**
+
 When these are true:
 * Person is signed in with an unverified (LOA1 or IAL1) My HealtheVet account, **and**
 * Your product only accepts verified (LOA3 or IAL2) accounts
@@ -91,6 +94,6 @@ Work with the Office of the CAIA and identity teams to adjust the content in thi
 ## Related
 
 * [Alert]({{ site.baseurl}}/components/alert/alert)
-* [Pattern - Help users to sign-in]({{ site.baseurl}}/patterns/help-users-to/sign-in)
+* [Pattern - Help users to sign in]({{ site.baseurl}}/patterns/help-users-to/sign-in)
 
 {% include _component-checklist.html component_name=page.web-component %}
