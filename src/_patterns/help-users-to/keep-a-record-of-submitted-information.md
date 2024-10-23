@@ -31,14 +31,14 @@ The pattern must display the name of the form, the date of the submission, a con
 
 ### Print preview of confirmation page summary
 
-![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-view-page1.png)
-![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-view-page2.png)
+![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-confirmation-status.png)
 
 ## How to design and build
 
 ### How this pattern works
 
 * **Create a summary of the action completed.** Include a success alert that accurately describes the action just completed. For example, for forms that have to travel through several systems before it gets to the system of record you can say, _Form submission started on Date_
+    * The alert should give a time frame for when the user should expect the next communication from VA about their form submision.
     * The alert should also include a confirmation number.
     * The alert should also include a link where they can go to check the status of the application. This may be a link to Claim Status Tool or My VA. 
 * **Include a copy of the submitted information.** Include a copy of the information submitted on the form. Be sure to mask out SSN, VA File number, and Alien Registration numbers on this copy.
