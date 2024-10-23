@@ -8,18 +8,6 @@ maturity:
     notes: "This component has mobile accessibility issues and should be used sparingly."
   - name: adoption
     score: true
-accessibility:
-  - name: accessible-use-of-color
-    score: true
-  - name: accessible-contrast
-    score: true
-  - name: keyboard-interactions
-    score: false
-    notes: "This component has mobile accessibility issues and should be used sparingly."
-  - name: content-zoom-tested
-    score: true
-  - name: tested-in-screen-readers
-    score: true
 code-assets:
   - name: variations 
     score: false

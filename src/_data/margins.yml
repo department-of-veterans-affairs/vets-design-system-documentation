@@ -456,7 +456,7 @@ x:
     show_square2: 1
     outer_classes: vads-u-margin-left--yikes site-u-height--2square
   - class: margin-x--auto
-    value: -1px
+    value: auto 
     grid_cols: 12
     outer_classes: width-100
 
@@ -548,7 +548,7 @@ right:
     show_square2: 1
     outer_classes: vads-u-margin-left--yikes site-u-height--2square
   - class: margin-right--auto
-    value: -1px
+    value: auto 
     grid_cols: 12
     outer_classes: width-100
 
@@ -626,7 +626,7 @@ left:
     value: -1px
     outer_classes: vads-u-margin-left--yikes site-u-height--2square
   - class: margin-left--auto
-    value: -1px
+    value: auto 
     grid_cols: 12
     outer_classes: width-100
 

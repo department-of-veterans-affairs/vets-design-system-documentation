@@ -33,24 +33,6 @@ anchors:
 
 {% include storybook-preview.html story="components-va-alert-expandable--success" link_text="va-alert-expandable" %}
 
-{% comment %}
-
- ### Error alert
-
-Used when there is a problem or something destructive is about to occur.
-
-{% include storybook-preview.html story="components-va-alert-expandable--error" link_text="va-alert-expandable" %}
-
-### Continue alert
-
-{% include storybook-preview.html story="components-va-alert-expandable--continue" link_text="va-alert-expandable" %}
-
-### No icon alerts
-
-{% include storybook-preview.html story="components-va-alert-expandable--no-icon" link_text="va-alert-expandable" %}
-
-{% endcomment %}
-
 ## Usage
 
 ### When to use Alert - Expandable
