@@ -14,12 +14,12 @@ anchors:
 ## Punctuation
 
 * When the list is made up of fragments or single sentences, don't use ending periods
-* If one or more bullets contains an additional sentence, use ending periods on all items in the bullet list—including any fragments
+* If one or more bullets contains an additional sentence, use ending periods on all items in the bulleted list—including any fragments
 * Don't use a period at the end of the last bullet in a series of fragments
 
 Note: Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets with multiple full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
 
-### Example of bullet list with fragments
+### Example of bulleted list with fragments
 
 Use parallel construction and don't use ending periods for fragments.
 
@@ -52,7 +52,7 @@ __What documents and information do I need to apply?__
 </div>
 </div>
 
-### Example of bullet list with conjunctions
+### Example of bulleted list with conjunctions
 
 When using "and" or "or" at the end of each bullet point, use a comma and bold the "and"/"or" at the end of each bullet point. 
 
@@ -88,7 +88,7 @@ __All of these must be true:__
 
 </div>
 
-### Example of bullet list with more than one sentence
+### Example of bulleted list with more than one sentence
 
 Use ending periods for each bulleted item in a list if any of the items contain a fragment and an additional sentence. 
 
