@@ -39,22 +39,22 @@ This pattern works differently depending on the product and the account type a p
 
 1. Choose 1 of the 2 blue sign-in alert variations. If a person signs in with a verified account, they should only encounter an initial sign-in alert.
   #### Required sign-in (Verified)
-  {% include component-example.html alt="An example of a sign-in alert for all products that require sign-in with a verified account." file="/images/components/alert-sign-in/required-sign-in-verified.png" caption="An example of a sign-in alert for all products that require sign-in with a verified account" reverse=true class="x2" %}
+  {% include component-example.html alt="An example of a sign-in alert for all products that require sign-in with a verified account." file="/images/components/alert-sign-in/required-sign-in-verified.png" caption="An example of a sign-in alert for all products that require sign-in with a verified account" reverse=true %}
 
   #### Optional sign-in (Verified)
-  {% include component-example.html alt="An example of a sign-in alert for forms that support optional sign-in with a verified account." file="/images/components/alert-sign-in/optional-sign-in-verified.png" caption="An example of a sign-in alert for forms that support optional sign-in with a verified account." reverse=true class="x2" %}
+  {% include component-example.html alt="An example of a sign-in alert for forms that support optional sign-in with a verified account." file="/images/components/alert-sign-in/optional-sign-in-verified.png" caption="An example of a sign-in alert for forms that support optional sign-in with a verified account." reverse=true %}
 
 2. Implement both of the yellow verification alerts. If a person signs in with an unverified account, they should encounter 1 of the 2 variations. One is for unverified **Login.gov** and **ID.me** accounts, and one is for unverified **My HealtheVet** accounts.
   **Note:** This pattern is currently tailored to products that require verified (LOA3 or IAL2) accounts. If your product accepts unverified (LOA1 or IAL1) accounts, you'll need to adjust the content in the blue sign-in alert. And you won't need to implement the yellow verification alerts. Work with CAIA and the identity team to adjust for your situation.
 
   #### Verify with ID.me
-  {% include component-example.html alt="An example of a sign-in alert for unverified ID.me accounts" file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for unverified ID.me accounts" reverse=true class="x2" %}
+  {% include component-example.html alt="An example of a sign-in alert for unverified ID.me accounts" file="/images/components/alert-sign-in/verify-with-idme.png" caption="An example of a sign-in alert for unverified ID.me accounts" reverse=true %}
 
   #### Verify with Login.gov
-  {% include component-example.html alt="An example of a sign-in alert for unverified Login.gov accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified Login.gov accounts." reverse=true class="x2" %}
+  {% include component-example.html alt="An example of a sign-in alert for unverified Login.gov accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified Login.gov accounts." reverse=true %}
 
   #### Sign-in with another account
-  {% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true class="x2" %}
+  {% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true %}
 
 **All teams should take these steps when using this pattern:**
 
