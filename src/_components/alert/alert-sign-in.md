@@ -33,7 +33,7 @@ anchors:
 {% include component-example.html alt="An example of a sign-in alert for unverified Login.gov accounts." file="/images/components/alert-sign-in/verify-with-logingov.png" caption="An example of a sign-in alert for unverified Login.gov accounts." reverse=true %}
 
 ### Sign-in with another account
-{% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/sign-in-with-another-account.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true %}
+{% include component-example.html alt="An example of a sign-in alert for unverified My HealtheVet accounts." file="/images/components/alert-sign-in/sign-in-with-a-different-account.png" caption="An example of a sign-in alert for unverified My HealtheVet accounts." reverse=true %}
 
 ## Usage
 
