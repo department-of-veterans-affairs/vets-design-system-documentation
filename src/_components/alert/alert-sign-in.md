@@ -1,6 +1,6 @@
 ---
 layout: component
-permalink: /components/alert/alert-sign-in
+permalink: /components/alert/alert-sign-in/
 has-parent: /components/alert/
 title: Alert - Sign-in
 github-title: va-alert-sign-in
