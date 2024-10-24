@@ -1,4 +1,4 @@
-name: Preview Environment
+name: Preview
 
 on:
   pull_request:
@@ -8,13 +8,15 @@ on:
       - synchronize
 
 jobs:
-  build-and-preview:
+  dev-deploy:
     runs-on: ubuntu-latest
-
+    environment:
+      name: development
+      url: https://dev-design.va.gov/${{ github.event.number }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
@@ -24,13 +26,44 @@ jobs:
         with:
           ruby-version: 2.7.5 # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-        if: github.event.action != 'closed' # You might want to skip the build if the PR has been closed
       - run: yarn install
       - run: yarn run build
       - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
-
-      - name: Upload to artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: preview-site
-          path: ./_site  # Replace with the output directory of your build
+      - name: Make BUILD.txt file
+        # The -e flag enables the interpretation of the \n newline character
+        run: |
+          echo -e "REF=${{ github.sha }}\n\
+          BUILD_ID=${{ github.run_id }}\n\
+          BUILDTIME=$(date)" > _site/BUILD.txt
+      # We are taking these extra steps due to some differences between Jekyll and AWS S3.
+      # To access a .html file served from S3, the URL needs to have the .html extension.
+      # We're removing the extension to make the URLs prettier.
+      # More context:
+      #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
+      - name: Remove .html extension on non-index files
+        run: |
+          find _site/ -type f ! -iname 'index.html' -iname '*.html' \
+          -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+          - uses: aws-actions/configure-aws-credentials@v1
+          with:
+            aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            aws-region: "us-gov-west-1"
+      - name: Sync extensionless html files with correct type
+        run: |
+          aws s3 sync _site s3://dev-design.va.gov \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*" \
+          --exclude "*.*" \
+          --content-type "text/html"
+      - name: Sync remaining files
+        run: |
+          aws s3 sync _site s3://dev-design.va.gov \
+          --acl public-read \
+          --delete \
+          --exclude "*" \
+          --include "*.*" \
+          --exclude "storybook/*"  
+      - name: AWS sync
+        run: aws s3 sync _site s3://dev-design.va.gov/${{ github.event.number }}
