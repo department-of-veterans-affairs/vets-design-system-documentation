@@ -1,0 +1,101 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+const index = require('./index-cef0edc2.js');
+const index$1 = require('./index-c4897a3e.js');
+
+const vaButtonCss = "button:not([disabled]):focus,select:not([disabled]):focus,a:not([disabled]):focus,h1:focus,input:not([disabled]):focus,textarea:not([disabled]):focus,#form-question [role='option']:focus{outline:2px solid var(--vads-color-action-focus-on-light);outline-offset:2px}.usa-sr-only{position:absolute;left:-999em;right:auto}.usa-button{font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-size:1.06rem;line-height:0.9;color:white;background-color:#005ea2;-webkit-appearance:none;-moz-appearance:none;appearance:none;-ms-flex-align:center;align-items:center;border:0;border-radius:0.25rem;cursor:pointer;-webkit-column-gap:0.5rem;-moz-column-gap:0.5rem;column-gap:0.5rem;display:-ms-inline-flexbox;display:inline-flex;font-weight:700;-ms-flex-pack:center;justify-content:center;margin-right:0.5rem;padding:0.75rem 1.25rem;text-align:center;text-decoration:none;width:100%}@media all and (min-width: 30em){.usa-button{width:auto}}.usa-button:visited{color:white}.usa-button:hover,.usa-button.usa-button--hover{color:white;background-color:#1a4480;border-bottom:0;text-decoration:none}.usa-button:active,.usa-button.usa-button--active{color:white;background-color:#162e51}.usa-button:not([disabled]):focus,.usa-button:not([disabled]).usa-focus{outline-offset:0.25rem}.usa-button:disabled,.usa-button[aria-disabled=true]{color:#454545;background-color:#c9c9c9;cursor:not-allowed;opacity:1}.usa-button:disabled:hover,.usa-button:disabled:active,.usa-button:disabled:focus,.usa-button:disabled.usa-focus,.usa-button[aria-disabled=true]:hover,.usa-button[aria-disabled=true]:active,.usa-button[aria-disabled=true]:focus,.usa-button[aria-disabled=true].usa-focus{color:#454545;background-color:#c9c9c9}@media (forced-colors: active){.usa-button:disabled,.usa-button[aria-disabled=true]{border:0;color:GrayText}.usa-button:disabled:hover,.usa-button:disabled:active,.usa-button:disabled:focus,.usa-button:disabled.usa-focus,.usa-button[aria-disabled=true]:hover,.usa-button[aria-disabled=true]:active,.usa-button[aria-disabled=true]:focus,.usa-button[aria-disabled=true].usa-focus{color:GrayText}}.usa-button:disabled.usa-button--hover,.usa-button:disabled.usa-button--active,.usa-button[aria-disabled=true].usa-button--hover,.usa-button[aria-disabled=true].usa-button--active{color:#454545;background-color:#c9c9c9;cursor:not-allowed;opacity:1}.usa-button:disabled.usa-button--hover:hover,.usa-button:disabled.usa-button--hover:active,.usa-button:disabled.usa-button--hover:focus,.usa-button:disabled.usa-button--hover.usa-focus,.usa-button:disabled.usa-button--active:hover,.usa-button:disabled.usa-button--active:active,.usa-button:disabled.usa-button--active:focus,.usa-button:disabled.usa-button--active.usa-focus,.usa-button[aria-disabled=true].usa-button--hover:hover,.usa-button[aria-disabled=true].usa-button--hover:active,.usa-button[aria-disabled=true].usa-button--hover:focus,.usa-button[aria-disabled=true].usa-button--hover.usa-focus,.usa-button[aria-disabled=true].usa-button--active:hover,.usa-button[aria-disabled=true].usa-button--active:active,.usa-button[aria-disabled=true].usa-button--active:focus,.usa-button[aria-disabled=true].usa-button--active.usa-focus{color:#454545;background-color:#c9c9c9}@media (forced-colors: active){.usa-button:disabled.usa-button--hover,.usa-button:disabled.usa-button--active,.usa-button[aria-disabled=true].usa-button--hover,.usa-button[aria-disabled=true].usa-button--active{border:0;color:GrayText}.usa-button:disabled.usa-button--hover:hover,.usa-button:disabled.usa-button--hover:active,.usa-button:disabled.usa-button--hover:focus,.usa-button:disabled.usa-button--hover.usa-focus,.usa-button:disabled.usa-button--active:hover,.usa-button:disabled.usa-button--active:active,.usa-button:disabled.usa-button--active:focus,.usa-button:disabled.usa-button--active.usa-focus,.usa-button[aria-disabled=true].usa-button--hover:hover,.usa-button[aria-disabled=true].usa-button--hover:active,.usa-button[aria-disabled=true].usa-button--hover:focus,.usa-button[aria-disabled=true].usa-button--hover.usa-focus,.usa-button[aria-disabled=true].usa-button--active:hover,.usa-button[aria-disabled=true].usa-button--active:active,.usa-button[aria-disabled=true].usa-button--active:focus,.usa-button[aria-disabled=true].usa-button--active.usa-focus{color:GrayText}}@media (forced-colors: active){.usa-button:disabled:not(.usa-button--unstyled),.usa-button[aria-disabled=true]:not(.usa-button--unstyled){border:2px solid GrayText}}.usa-button .usa-icon{-ms-flex-negative:0;flex-shrink:0}@media (forced-colors: active){.usa-button:not(.usa-button--unstyled){border:2px solid transparent}}.usa-button--accent-cool{color:#1b1b1b;background-color:#00bde3}.usa-button--accent-cool:visited{color:#1b1b1b;background-color:#00bde3}.usa-button--accent-cool:hover,.usa-button--accent-cool.usa-button--hover{color:#1b1b1b;background-color:#28a0cb}.usa-button--accent-cool:active,.usa-button--accent-cool.usa-button--active{color:white;background-color:#07648d}.usa-button--accent-warm{color:#1b1b1b;background-color:#fa9441}.usa-button--accent-warm:visited{color:#1b1b1b;background-color:#fa9441}.usa-button--accent-warm:hover,.usa-button--accent-warm.usa-button--hover{color:white;background-color:#c05600}.usa-button--accent-warm:active,.usa-button--accent-warm.usa-button--active{color:white;background-color:#775540}.usa-button--outline{background-color:transparent;-webkit-box-shadow:inset 0 0 0 2px #005ea2;box-shadow:inset 0 0 0 2px #005ea2;color:#005ea2}.usa-button--outline:visited{color:#005ea2}.usa-button--outline:hover,.usa-button--outline.usa-button--hover{background-color:transparent;-webkit-box-shadow:inset 0 0 0 2px #1a4480;box-shadow:inset 0 0 0 2px #1a4480;color:#1a4480}.usa-button--outline:active,.usa-button--outline.usa-button--active{background-color:transparent;-webkit-box-shadow:inset 0 0 0 2px #162e51;box-shadow:inset 0 0 0 2px #162e51;color:#162e51}.usa-button--outline.usa-button--inverse{-webkit-box-shadow:inset 0 0 0 2px #dfe1e2;box-shadow:inset 0 0 0 2px #dfe1e2;color:#dfe1e2}.usa-button--outline.usa-button--inverse:visited{color:#dfe1e2}.usa-button--outline.usa-button--inverse:hover,.usa-button--outline.usa-button--inverse.usa-button--hover{-webkit-box-shadow:inset 0 0 0 2px #f0f0f0;box-shadow:inset 0 0 0 2px #f0f0f0;color:#f0f0f0}.usa-button--outline.usa-button--inverse:active,.usa-button--outline.usa-button--inverse.usa-button--active{background-color:transparent;-webkit-box-shadow:inset 0 0 0 2px white;box-shadow:inset 0 0 0 2px white;color:white}.usa-button--outline.usa-button--inverse.usa-button--unstyled{color:#005ea2;text-decoration:underline;background-color:transparent;border:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none;font-weight:normal;-ms-flex-pack:normal;justify-content:normal;text-align:left;margin:0;padding:0;color:#dfe1e2}.usa-button--outline.usa-button--inverse.usa-button--unstyled:visited{color:#54278f}.usa-button--outline.usa-button--inverse.usa-button--unstyled:hover{color:#1a4480}.usa-button--outline.usa-button--inverse.usa-button--unstyled:active{color:#162e51}.usa-button--outline.usa-button--inverse.usa-button--unstyled:focus{outline:0.25rem solid #2491ff;outline-offset:0rem}.usa-button--outline.usa-button--inverse.usa-button--unstyled:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled.usa-button--hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true].usa-button--hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled:active,.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--active,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:active,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:active,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled.usa-button--active,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true].usa-button--active,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:focus,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:focus,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled.usa-focus,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true].usa-focus,.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true],.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--disabled{background-color:transparent;-webkit-box-shadow:none;box-shadow:none;text-decoration:underline}.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--hover{color:#1a4480}.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--active{color:#162e51}.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true],.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:focus{color:#757575}@media (forced-colors: active){.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true],.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled=true]:focus{color:GrayText}}.usa-button--outline.usa-button--inverse.usa-button--unstyled:visited{color:#dfe1e2}.usa-button--outline.usa-button--inverse.usa-button--unstyled:hover,.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--hover{color:#f0f0f0}.usa-button--outline.usa-button--inverse.usa-button--unstyled:active,.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--active{color:white}.usa-button--base{color:white;background-color:#71767a}.usa-button--base:hover,.usa-button--base.usa-button--hover{color:white;background-color:#565c65}.usa-button--base:active,.usa-button--base.usa-button--active{color:white;background-color:#3d4551}.usa-button--secondary{color:white;background-color:#d83933}.usa-button--secondary:hover,.usa-button--secondary.usa-button--hover{color:white;background-color:#b50909}.usa-button--secondary:active,.usa-button--secondary.usa-button--active{color:white;background-color:#8b0a03}.usa-button--big{border-radius:0.25rem;font-size:1.46rem;padding:1rem 1.5rem}.usa-button--outline:disabled,.usa-button--outline:disabled:hover,.usa-button--outline:disabled:active,.usa-button--outline:disabled:focus,.usa-button--outline[aria-disabled=true],.usa-button--outline[aria-disabled=true]:hover,.usa-button--outline[aria-disabled=true]:active,.usa-button--outline[aria-disabled=true]:focus,.usa-button--outline-inverse:disabled,.usa-button--outline-inverse:disabled:hover,.usa-button--outline-inverse:disabled:active,.usa-button--outline-inverse:disabled:focus,.usa-button--outline-inverse[aria-disabled=true],.usa-button--outline-inverse[aria-disabled=true]:hover,.usa-button--outline-inverse[aria-disabled=true]:active,.usa-button--outline-inverse[aria-disabled=true]:focus{background-color:transparent;color:#757575}.usa-button--outline:disabled,.usa-button--outline[aria-disabled=true]{-webkit-box-shadow:inset 0 0 0 2px #c9c9c9;box-shadow:inset 0 0 0 2px #c9c9c9}.usa-button--outline:disabled.usa-button--inverse,.usa-button--outline[aria-disabled=true].usa-button--inverse{-webkit-box-shadow:inset 0 0 0 2px #919191;box-shadow:inset 0 0 0 2px #919191;color:#919191}@media (forced-colors: active){.usa-button--outline:disabled.usa-button--inverse,.usa-button--outline[aria-disabled=true].usa-button--inverse{color:GrayText}}.usa-button--unstyled{color:#005ea2;text-decoration:underline;background-color:transparent;border:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none;font-weight:normal;-ms-flex-pack:normal;justify-content:normal;text-align:left;margin:0;padding:0}.usa-button--unstyled:visited{color:#54278f}.usa-button--unstyled:hover{color:#1a4480}.usa-button--unstyled:active{color:#162e51}.usa-button--unstyled:focus{outline:0.25rem solid #2491ff;outline-offset:0rem}.usa-button--unstyled:hover,.usa-button--unstyled.usa-button--hover,.usa-button--unstyled:disabled:hover,.usa-button--unstyled[aria-disabled=true]:hover,.usa-button--unstyled:disabled.usa-button--hover,.usa-button--unstyled[aria-disabled=true].usa-button--hover,.usa-button--unstyled:active,.usa-button--unstyled.usa-button--active,.usa-button--unstyled:disabled:active,.usa-button--unstyled[aria-disabled=true]:active,.usa-button--unstyled:disabled.usa-button--active,.usa-button--unstyled[aria-disabled=true].usa-button--active,.usa-button--unstyled:disabled:focus,.usa-button--unstyled[aria-disabled=true]:focus,.usa-button--unstyled:disabled.usa-focus,.usa-button--unstyled[aria-disabled=true].usa-focus,.usa-button--unstyled:disabled,.usa-button--unstyled[aria-disabled=true],.usa-button--unstyled.usa-button--disabled{background-color:transparent;-webkit-box-shadow:none;box-shadow:none;text-decoration:underline}.usa-button--unstyled.usa-button--hover{color:#1a4480}.usa-button--unstyled.usa-button--active{color:#162e51}.usa-button--unstyled:disabled,.usa-button--unstyled[aria-disabled=true],.usa-button--unstyled:disabled:hover,.usa-button--unstyled[aria-disabled=true]:hover,.usa-button--unstyled[aria-disabled=true]:focus{color:#757575}@media (forced-colors: active){.usa-button--unstyled:disabled,.usa-button--unstyled[aria-disabled=true],.usa-button--unstyled:disabled:hover,.usa-button--unstyled[aria-disabled=true]:hover,.usa-button--unstyled[aria-disabled=true]:focus{color:GrayText}}:host{display:inline-block}:host([disabled]:not([disabled=false])) button{pointer-events:none}:host([disabled]:not([disabled=false])){cursor:not-allowed}:host([big]:not([big=false]):is([back],[continue])) .usa-button--big{padding-top:14px}.usa-button.usa-button--outline{background-color:var(--vads-button-color-background-secondary-on-light)}.usa-button.usa-button--outline:hover,.usa-button.usa-button--outline:focus{background-color:var(--vads-button-color-background-secondary-on-light);text-decoration:none}.va-button-primary--alternate{background:var(--vads-color-success-dark)}.va-button-primary--alternate:hover,.va-button-primary--alternate:focus{background-color:var(--vads-button-color-background-primary-alt-active-on-light);text-decoration:none}";
+const VaButtonStyle0 = vaButtonCss;
+
+const VaButton = class {
+    constructor(hostRef) {
+        index.registerInstance(this, hostRef);
+        this.componentLibraryAnalytics = index.createEvent(this, "component-library-analytics", 7);
+        this.handleClick = () => {
+            if (!this.disableAnalytics) {
+                const detail = {
+                    componentName: 'va-button',
+                    action: 'click',
+                    details: {
+                        type: this.secondary ? 'secondary' : 'primary',
+                        label: this.getButtonText(),
+                    },
+                };
+                this.componentLibraryAnalytics.emit(detail);
+            }
+        };
+        this.getButtonText = () => {
+            if (this.continue)
+                return 'Continue';
+            if (this.back)
+                return 'Back';
+            return this.text;
+        };
+        this.back = false;
+        this.big = false;
+        this.continue = false;
+        this.disableAnalytics = false;
+        this.disabled = false;
+        this.label = undefined;
+        this.primaryAlternate = false;
+        this.secondary = false;
+        this.submit = undefined;
+        this.text = undefined;
+        this.messageAriaDescribedby = undefined;
+    }
+    handleSubmit() {
+        if (this.submit === undefined) {
+            return;
+        }
+        // eslint-disable-next-line i18next/no-literal-string
+        const theForm = this.el.closest('form');
+        if (!theForm) {
+            return;
+        }
+        const submitEvent = new CustomEvent('submit', {
+            bubbles: true,
+            cancelable: true,
+            composed: true,
+        });
+        if (this.submit !== 'skip') {
+            theForm.dispatchEvent(submitEvent);
+        }
+        if (this.submit !== 'prevent') {
+            theForm.submit();
+        }
+    }
+    /**
+     * This workaround allows us to use disabled for styling and to prevent the click event from firing while improving
+     * the button's accessibility by allowing it to be focusable and through the use of aria-disabled.
+     *
+     * Using a click handler on the button with this same check for disabled results in the event bubbling.
+     */
+    handleClickOverride(e) {
+        if (this.disabled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+        }
+        this.handleClick();
+        this.handleSubmit();
+    }
+    render() {
+        const { back, continue: _continue, disabled, getButtonText, label, submit, secondary, primaryAlternate, big, messageAriaDescribedby, } = this;
+        const ariaDescribedbyIds = `${messageAriaDescribedby ? 'button-description' : ''}`.trim() || null;
+        const ariaDisabled = disabled ? 'true' : undefined;
+        const buttonText = getButtonText();
+        const type = submit !== undefined ? 'submit' : 'button';
+        const buttonClass = index$1.classnames({
+            'usa-button': true,
+            'usa-button--big': big,
+            'usa-button--outline': back || secondary,
+            'va-button-primary--alternate': primaryAlternate,
+        });
+        return (index.h(index.Host, { key: '62e45ff82229c98a3917c0fbcc6280c22da9a37b' }, index.h("button", { key: 'aff1f9a0ce358f582c39471a014519e7b6080c94', class: buttonClass, "aria-disabled": ariaDisabled, "aria-label": label, "aria-describedby": ariaDescribedbyIds, type: type, part: "button" }, back && !_continue && index.h("va-icon", { key: 'fc8c8d493fe967074b2f905ee4a38912f7b5384c', icon: "navigate_far_before" }), buttonText, _continue && !back && index.h("va-icon", { key: 'f1c20f165d2106d643c32259e8ecb56889bb05df', icon: "navigate_far_next" })), messageAriaDescribedby && (index.h("span", { key: 'fda5cbe483f17b8e2fb1921b6b7a55ffed46e778', id: "button-description", class: "usa-sr-only" }, messageAriaDescribedby))));
+    }
+    get el() { return index.getElement(this); }
+};
+VaButton.style = VaButtonStyle0;
+
+exports.va_button = VaButton;

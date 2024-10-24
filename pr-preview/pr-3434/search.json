@@ -1,0 +1,2626 @@
+[
+  
+    {
+      "title"    : "Accessibility annotations for VA.gov applications",
+      "section"  : "About",
+      "url"      : "/about/accessibility/accessibility-annotations",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Accessibility testing for design system components",
+      "section"  : "About",
+      "url"      : "/about/accessibility/accessibility-testing-for-design-system-components",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Focus management",
+      "section"  : "About",
+      "url"      : "/about/accessibility/focus-management",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Accessibility",
+      "section"  : "About",
+      "url"      : "/about/accessibility/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Component name",
+      "section"  : "About",
+      "url"      : "/about/component-template",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Add a component or pattern once approved",
+      "section"  : "About",
+      "url"      : "/about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Experimental components and patterns",
+      "section"  : "About",
+      "url"      : "/about/contributing-to-the-design-system/experimental-components-and-patterns",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Contributing to the design system",
+      "section"  : "About",
+      "url"      : "/about/contributing-to-the-design-system/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Suggest a removal",
+      "section"  : "About",
+      "url"      : "/about/contributing-to-the-design-system/suggest-a-removal",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Suggest an addition or update",
+      "section"  : "About",
+      "url"      : "/about/contributing-to-the-design-system/suggest-an-addition-or-update",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Creating components",
+      "section"  : "About",
+      "url"      : "/about/designers/creating-components",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Design libraries",
+      "section"  : "About",
+      "url"      : "/about/designers/design-libraries",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Figma at VA",
+      "section"  : "About",
+      "url"      : "/about/designers/figma-at-va",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "For designers",
+      "section"  : "About",
+      "url"      : "/about/designers/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Contributing",
+      "section"  : "About",
+      "url"      : "/about/developers/contributing",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Implementing design work",
+      "section"  : "About",
+      "url"      : "/about/developers/implementing-design-work",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "For developers",
+      "section"  : "About",
+      "url"      : "/about/developers/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Install",
+      "section"  : "About",
+      "url"      : "/about/developers/install",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Using Web Components",
+      "section"  : "About",
+      "url"      : "/about/developers/using-web-components",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Experience Standards",
+      "section"  : "About",
+      "url"      : "/about/experience-standards/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Feedback",
+      "section"  : "About",
+      "url"      : "/about/feedback",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "For content writers",
+      "section"  : "About",
+      "url"      : "/about/content-writers",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Getting started with design.va.gov",
+      "section"  : "About",
+      "url"      : "/about/index",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Maturity scale",
+      "section"  : "About",
+      "url"      : "/about/maturity-scale",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Naming convention",
+      "section"  : "About",
+      "url"      : "/about/naming",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Design principles",
+      "section"  : "About",
+      "url"      : "/about/principles",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Updating this site",
+      "section"  : "About",
+      "url"      : "/about/updating-this-site",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "What’s new?",
+      "section"  : "About",
+      "url"      : "/about/whats-new",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+
+  
+  
+    {
+      "title"    : "Breakpoints",
+      "section"  : "Foundation",
+      "url"      : "/foundation/breakpoints",
+      "category" : "",
+      "tags"     : "media, queries,, media,, responsive",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Color palette",
+      "section"  : "Foundation",
+      "url"      : "/foundation/color-palette",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Design tokens",
+      "section"  : "Foundation",
+      "url"      : "/foundation/design-tokens",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Icons",
+      "section"  : "Foundation",
+      "url"      : "/foundation/icons",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Image aspect ratios",
+      "section"  : "Foundation",
+      "url"      : "/foundation/image-aspect-ratios",
+      "category" : "",
+      "tags"     : "Images",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Foundation",
+      "section"  : "Foundation",
+      "url"      : "/foundation/index",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Flexbox grid",
+      "section"  : "Foundation",
+      "url"      : "/foundation/layout/flexbox-grid",
+      "category" : "",
+      "tags"     : "Columns,, Nesting, grids,, Layout, grid",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Float grid",
+      "section"  : "Foundation",
+      "url"      : "/foundation/layout/float-grid",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Layout",
+      "section"  : "Foundation",
+      "url"      : "/foundation/layout/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Page layouts",
+      "section"  : "Foundation",
+      "url"      : "/foundation/layout/page-layouts",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Logos",
+      "section"  : "Foundation",
+      "url"      : "/foundation/logos",
+      "category" : "",
+      "tags"     : "logos,, logo,, brand,, branding",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Spacing units",
+      "section"  : "Foundation",
+      "url"      : "/foundation/spacing-units",
+      "category" : "",
+      "tags"     : "Grid,, Spacing, tokens",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Typography",
+      "section"  : "Foundation",
+      "url"      : "/foundation/typography",
+      "category" : "",
+      "tags"     : "Fonts,, Lists,, Links,, Headings,, Paragraphs",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Background color",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/background-color",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Border",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/border",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Display",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/display",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Flexbox",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/flexbox",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Font family",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/font-family",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Font size",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/font-size",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Font style",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/font-style",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Font weight",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/font-weight",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Height and width",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/height-and-width",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Utilities",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Line height",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/line-height",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Margins",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/margins",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Measure",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/measure",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Padding",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/padding",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Position",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/position",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Text align",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/text-align",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Text Color",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/text-color",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Text decoration",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/text-decoration",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Visibility",
+      "section"  : "Foundation",
+      "url"      : "/foundation/utilities/visibility",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+
+  
+  
+    {
+      "title"    : "Accordion",
+      "section"  : "Components",
+      "url"      : "/components/accordion",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Accordions, which use the UX principle of progressive disclosure, are a list of headers that can be clicked to hide or reveal additional content. By default, accordions are multi-selectable and borderless, however, props can be added to make them bordered and single-select."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Additional info",
+      "section"  : "Components",
+      "url"      : "/components/additional-info",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Additional info component to situate plain language help at the point of the process where it is most relevant."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Address block",
+      "section"  : "Components",
+      "url"      : "/components/address-block",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Address block is used to highlight mailing and physical addresses and contact information for VA facilities (with some notable exceptions). It can also be used to display personal information we may have for a Veteran."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Alert - Expandable",
+      "section"  : "Components",
+      "url"      : "/components/alert/alert-expandable/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Alert - Sign-in",
+      "section"  : "Components",
+      "url"      : "/components/alert/alert-sign-in/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "An alert component with specific content focused on helping users complete the sign in process."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Alert",
+      "section"  : "Components",
+      "url"      : "/components/alert/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Alerts keep users informed of important and sometimes time-sensitive changes."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Back to top",
+      "section"  : "Components",
+      "url"      : "/components/back-to-top",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The Back to top component is a shortcut that allows the user to quickly navigate to the top of a long page of content."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Banner",
+      "section"  : "Components",
+      "url"      : "/components/banner/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Banners are for announcements that typically prepare a Veteran to visit a VA facility or to help them maintain their health. Banners appear at the top of the page, below the header and navigation components."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Banner - Maintenance",
+      "section"  : "Components",
+      "url"      : "/components/banner/maintenance",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Banners specifically for site-wide system messages, typically system maintenance, which are fixed to the top of the viewport."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Banner - Official Gov",
+      "section"  : "Components",
+      "url"      : "/components/banner/official-gov",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "This banner identifies official websites of government organizations in the United States. They also help visitors understand whether a website is official and secure."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Banner - Promo",
+      "section"  : "Components",
+      "url"      : "/components/banner/promo",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A promo banner is fixed content at the bottom of the viewport used for dismissible announcements such as new tools, news, etc."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Breadcrumbs",
+      "section"  : "Components",
+      "url"      : "/components/breadcrumbs",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Breadcrumbs provide secondary navigation to help users understand where they are in a website. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results. This can improve rankings, and provide users with additional context."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Button group",
+      "section"  : "Components",
+      "url"      : "/components/button/button-group",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Button - Icon",
+      "section"  : "Components",
+      "url"      : "/components/button/button-icon",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The button icon variation acts as a tertiary button which has equal visual prominence to Link - Action and thus can be used in contexts that require a mix of links and buttons."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Button",
+      "section"  : "Components",
+      "url"      : "/components/button/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A button draws attention to important actions with a large selectable surface."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Card",
+      "section"  : "Components",
+      "url"      : "/components/card",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Divider",
+      "section"  : "Components",
+      "url"      : "/components/divider",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Dividers are used sparingly to separate significant sections of content"
+
+    },
+  
+  
+  
+    {
+      "title"    : "Experimental pattern name",
+      "section"  : "Components",
+      "url"      : "/components/experimental-design-template",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Footer",
+      "section"  : "Components",
+      "url"      : "/components/footer/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A footer serves site visitors who arrive at the bottom of a page without finding what they want."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Footer - Minimal",
+      "section"  : "Components",
+      "url"      : "/components/footer/footer-minimal",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The minimal footer can be used when navigating away would prevent the user from easily accomplishing their main task."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Autosave",
+      "section"  : "Components",
+      "url"      : "/components/form/autosave",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Informs the user that we will, and have, automatically saved their progress in a form flow."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Checkbox",
+      "section"  : "Components",
+      "url"      : "/components/form/checkbox",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Allows users to select one or more items from a list. Checkboxes are an easily understandable way to indicate that users can select one or more answers to a question or items from a list."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Date input",
+      "section"  : "Components",
+      "url"      : "/components/form/date-input",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Use the date input component to help users enter a date they would know or a date they can approximate."
+
+    },
+  
+  
+  
+    {
+      "title"    : "File input",
+      "section"  : "Components",
+      "url"      : "/components/form/file-input",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "File input allows users to attach files, one at a time, to be uploaded."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Form",
+      "section"  : "Components",
+      "url"      : "/components/form/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Form controls allow users to enter information."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Input message",
+      "section"  : "Components",
+      "url"      : "/components/form/input-message",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Provides helpful, in-context information about an input, either before or immediately after a Veteran interacts with an input (e.g. on a form input that auto-saves)."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Label",
+      "section"  : "Components",
+      "url"      : "/components/form/label",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Labels associate a descriptive title with each form input used to collect information from the user."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Memorable date",
+      "section"  : "Components",
+      "url"      : "/components/form/memorable-date",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Three text fields are the easiest way for users to enter most dates."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Need help?",
+      "section"  : "Components",
+      "url"      : "/components/form/need-help",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A footer found on application pages that provides contact information for the VA."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Penalty notice",
+      "section"  : "Components",
+      "url"      : "/components/form/penalty-notice",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A required legal notice for all forms."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Prefill",
+      "section"  : "Components",
+      "url"      : "/components/form/prefill",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Informs the user that information from their profile has been used to prefill form fields."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Progress bar - Segmented",
+      "section"  : "Components",
+      "url"      : "/components/form/progress-bar-segmented",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A segmented progress bar updates users on their progress through a multi-step process."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Radio button",
+      "section"  : "Components",
+      "url"      : "/components/form/radio-button",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Radio buttons allow users to select exactly one choice from a group."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Select",
+      "section"  : "Components",
+      "url"      : "/components/form/select",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A select component allows users to choose one option from a menu."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Statement of truth",
+      "section"  : "Components",
+      "url"      : "/components/form/statement-of-truth",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The Statement of truth allows users to certify that the information they have provided in form is correct and true to the best of their knowledge and belief."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Text input",
+      "section"  : "Components",
+      "url"      : "/components/form/text-input",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Text input allows people to enter any type of text unless otherwise restricted."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Textarea",
+      "section"  : "Components",
+      "url"      : "/components/form/textarea",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Textarea allows people to enter any type of text."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Header",
+      "section"  : "Components",
+      "url"      : "/components/header/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Header - Minimal",
+      "section"  : "Components",
+      "url"      : "/components/header/header-minimal",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The minimal header can be used when navigating away would prevent the user from easily accomplishing their main task."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Icon",
+      "section"  : "Components",
+      "url"      : "/components/icon",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Icons help communicate meaning, actions, status, or feedback. This component provides an easy way to access the foundational iconography of the Design System."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Components",
+      "section"  : "Components",
+      "url"      : "/components/index",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Language toggle",
+      "section"  : "Components",
+      "url"      : "/components/language-toggle",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The language toggle is our way of providing translated versions of select pages on va.gov."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Link - Action",
+      "section"  : "Components",
+      "url"      : "/components/link/action",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Action links guide users to a new page to take an action or to start an online tool or digital service."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Link - Collection",
+      "section"  : "Components",
+      "url"      : "/components/link/collection",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Collections of links that allow users to navigate to related content within and outside of the current content section."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Link - Deep content",
+      "section"  : "Components",
+      "url"      : "/components/link/deep-content",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Link",
+      "section"  : "Components",
+      "url"      : "/components/link/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
+
+    },
+  
+  
+  
+    {
+      "title"    : "List",
+      "section"  : "Components",
+      "url"      : "/components/list",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A list organizes information into discrete sequential sections."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Loading indicator",
+      "section"  : "Components",
+      "url"      : "/components/loading-indicator",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A loading indicator provides a clue to ongoing activity when the site needs to load additional content."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Crisis Line Modal",
+      "section"  : "Components",
+      "url"      : "/components/modal/crisis-line-modal",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The Crisis Line Modal is found in the Header of VA.gov and provides contact information for the Veteran Crisis Line."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Modal",
+      "section"  : "Components",
+      "url"      : "/components/modal/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A modal disables page content and focuses the user’s attention on a single task or message."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Notification",
+      "section"  : "Components",
+      "url"      : "/components/notification",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Provides a visually distinct card in order to surface time-sensitive updates and action items."
+
+    },
+  
+  
+  
+    {
+      "title"    : "OMB info",
+      "section"  : "Components",
+      "url"      : "/components/omb-info",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Provides text required by the Office of Management and Budget (OMB) to be present on all forms."
+
+    },
+  
+  
+  
+    {
+      "title"    : "On this page",
+      "section"  : "Components",
+      "url"      : "/components/on-this-page",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The On this page jump links component summarizes the sections (&amp;lt;h2&amp;gt;s) at the top of long pages and allows users to jump down the page to the respective section."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Pagination",
+      "section"  : "Components",
+      "url"      : "/components/pagination",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Pagination is navigation for paginated content."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Privacy Agreement",
+      "section"  : "Components",
+      "url"      : "/components/form/privacy-agreement",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Used on the review step of a form flow to provide a link to the privacy policy content and provide a confirmation checkbox."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Process list",
+      "section"  : "Components",
+      "url"      : "/components/process-list",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The process list, also known as the subway map, is used in a static informational context to describe the process to apply for a benefit or to provide tracking information to a user where they are in a given process."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Progress bar - Activity",
+      "section"  : "Components",
+      "url"      : "/components/progress-bar/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A progress bar provides status as the system is taking an action on behalf of the user."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Search Input",
+      "section"  : "Components",
+      "url"      : "/components/search-input",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The Search input component lives in the global header of VA.gov and on search results pages, and can be paired with type-ahead functionality. Type-ahead displays up to five suggested search terms in a dropdown below the Search input field while the user is typing a query. The goal of type-ahead is to help Veterans navigate to relevant content more quickly by providing them with suggestions that match the characters they type."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Sidenav",
+      "section"  : "Components",
+      "url"      : "/components/sidenav",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Hierarchical, vertical navigation to place at the side of a page."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Summary box",
+      "section"  : "Components",
+      "url"      : "/components/summary-box",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The summary box component helps Veterans quickly identify must-read information on a page. Use this component to highlight a small chunk of the most important information on a page, like eligibility criteria or coverage under a particular VA benefit."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Table",
+      "section"  : "Components",
+      "url"      : "/components/table",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The table component organizes data into columns and rows."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Tabs",
+      "section"  : "Components",
+      "url"      : "/components/tabs",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Tag",
+      "section"  : "Components",
+      "url"      : "/components/tag",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A tag draws attention to new or important content."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Telephone",
+      "section"  : "Components",
+      "url"      : "/components/telephone",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "The telephone component captures the many variations of phone numbers displayed on VA.gov."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Component name (singular)",
+      "section"  : "Components",
+      "url"      : "/components/template",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : "This text provides the overall purpose and function of the component."
+
+    },
+  
+  
+  
+    {
+      "title"    : "URLs",
+      "section"  : "Components",
+      "url"      : "/components/url-standards/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+  
+    {
+      "title"    : "Redirects",
+      "section"  : "Components",
+      "url"      : "/components/url-standards/redirects",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : "A URL redirect forwards both visitors and search engines to a different URL than the one requested. Teams should implement a redirect or request a redirect whenever they change a URL or remove a page."
+
+    },
+  
+  
+  
+    {
+      "title"    : "Vanity URLs",
+      "section"  : "Components",
+      "url"      : "/components/url-standards/vanity-urls",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+  
+
+  
+    {
+      "title"    : "Word list",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/word-list",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Abbreviations and acronyms",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/abbreviations-and-acronyms",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Alternative text for images",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/alternative-text-for-images",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Bold &amp; italic text",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/bold-text",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Bulleted lists",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/bulleted-lists",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Button labels",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/button-labels",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Capitalization",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/capitalization",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Content principles",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/content-principles",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Dates, times, phone numbers, and addresses",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/dates-and-numbers",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Access messages",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/error-messages/access",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Engagement messages",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/error-messages/engagement",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Feedback messages",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/error-messages/feedback",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Error messages",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/error-messages/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "System messages",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/error-messages/system",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Form labels",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/form-labels",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Government forms",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/government-forms",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Destigmatizing language in substance use",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/health-content/destigmatizing-language-in-substance-use",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Health content",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/health-content/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "VA.gov content style guide",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/index",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Links",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/links",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Messaging dictionary",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/messaging-dictionary",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Messaging - Error messages",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/messaging-error-messages",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Naming and labels",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/naming-and-labels",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Neutral and inclusive language",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/neutral-and-inclusive-language",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Numbers",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/numbers",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Page titles and section titles",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/page-titles-and-section-titles",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Avoid branded names",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/avoid-branded-names",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Define complex terms",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/define-complex-terms",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Don’t use idioms",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/don-t-use-idioms",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Don’t use jargon",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/don-t-use-jargon",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Plain language",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Use simple words and terms",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/use-simple-words-and-terms",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Structure your content",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/structure-your-content",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Use active voice",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/use-active-voice",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Use contractions",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/use-contractions",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Use pronouns",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/use-pronouns",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Use short sentences",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/plain-language/use-short-sentences",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Punctuation",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/punctuation",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Specific topics and programs",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/specific-topics-and-programs/",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Payments and debts",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/specific-topics-and-programs/payments-and-debts",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Sign in and identity verification",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "They, their",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/they-their",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Title tags",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/title-tags",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Trademarks",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/trademarks",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "User interface elements",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/user-interface-elements",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "We, us, you",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/we-us-you",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Web policies and directives",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/web-policies-and-directives",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Writing for SEO",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/seo",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+    {
+      "title"    : "Sign up for updates",
+      "section"  : "Content style guide",
+      "url"      : "/content-style-guide/sign-up-for-updates",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    },
+  
+
+  
+  
+    {
+      "title"    : "A mutually exclusive answer",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/a-mutually-exclusive-answer",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "A single response",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/a-single-response",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Addresses",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/addresses",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Contact preferences",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/contact-preferences",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Dates",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/dates",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Direct deposit",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/direct-deposit",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Email address",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/email-address",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Feedback",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/feedback",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Files",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/files",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Gender",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/gender",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Housing status",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/housing-status",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Multiple responses",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/multiple-responses",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Names",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/names",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Phone numbers",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/phone-numbers",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Pronouns",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/pronouns",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Race and ethnicity",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/race-and-ethnicity",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Relationship to Veteran",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/relationship",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Service history",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/service-history",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Signature",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/signature",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Social security or VA file number",
+      "section"  : "Patterns",
+      "url"      : "/patterns/ask-users-for/social-security-number",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Check answers",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/check-answers",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Check eligibility",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/check-eligibility",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Check personal information",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/check-personal-information",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Complete a sub task",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/complete-a-sub-task",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Keep a record of submitted information",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/keep-a-record-of-submitted-information",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Know how their information is updated",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/know-how-their-information-is-updated",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Know when their information is prefilled",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/know-when-their-information-is-prefilled",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Navigate a long list",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/navigate-a-long-list",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Navigate benefit applications",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/navigate-benefit-applications",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Recover from errors",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/recover-from-errors",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Sign-in",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/sign-in",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Stay informed of their form submission status",
+      "section"  : "Patterns",
+      "url"      : "/patterns/help-users-to/stay-informed-of-their-application-status",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Patterns",
+      "section"  : "Patterns",
+      "url"      : "/patterns/index",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Intentional Omissions",
+      "section"  : "Patterns",
+      "url"      : "/patterns/intentional-omissions",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Pattern name",
+      "section"  : "Patterns",
+      "url"      : "/patterns/[ask|help]-users-to]/[pattern name]",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:23 +0000",
+      "description" : " "
+
+    } ,
+  
+  
+  
+    {
+      "title"    : "Wizard",
+      "section"  : "Patterns",
+      "url"      : "/patterns/wizards",
+      "category" : "",
+      "tags"     : "",
+      "date"     : "2024-10-24 19:06:47 +0000",
+      "description" : " "
+
+    } 
+  
+  
+]

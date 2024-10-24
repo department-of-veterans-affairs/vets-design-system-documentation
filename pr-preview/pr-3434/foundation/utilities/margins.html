@@ -1,0 +1,6211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Margins - VA.gov Design System </title>
+  <meta name="description" content="Margins">
+
+  
+
+  
+
+  <!-- Web component setup -->
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css?v=1729796807" />
+  <script type="module">
+    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    defineCustomElements();
+</script>
+
+  <!-- Icons -->
+  <link href="/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+  <link href="/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="/assets/img/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="/assets/img/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+
+  <link rel="stylesheet" href="/formation.min.css?v=1729796807">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css?v=1729796807">
+  <link rel="canonical" href="https://design.va.gov/foundation/utilities/margins">
+  <link rel="alternate" type="application/rss+xml" title="VA.gov Design System" href="https://design.va.gov/feed.xml">
+
+  <script src="/assets/javascripts/polyfills/array.from.js?v=1729796807"></script>
+
+</head>
+
+  <body >
+
+    
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+
+<section class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="" style="padding-left:24px;">
+      <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        Here's how you know
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="site-header" role="banner">
+
+  <div class="site-l-wrapper">
+    <div class="site-header__masthead">
+      <div class="site-header__logo" id="extended-logo">
+        <em class="site-header__logo-text">
+          <a class="site-header__logo-link" title="VA.gov Design System homepage" href="/"><strong class="vads-u-display--block small-screen:vads-u-display--inline">VA.gov</strong> <span class="vads-u-display--none small-screen:vads-u-display--inline">|</span> Design System</a>
+        </em>
+      </div>
+      <div class="site-header__utility-links">
+        <div id="search-container" class="site-search-container">
+          <i class="fas fa-search search-icon"></i>
+          <form action="/results" method="get" id="search-form" class="search-form">
+          <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+          </form>
+          <ul id="results-container" class="site-search-results" role="listbox"></ul>
+        </div>
+      </div>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
+  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <form action="/results" method="get" id="mobile-search-form" class="search-form">
+    <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+  </form>
+  <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
+</div>
+
+
+    <nav class="va-sidebarnav site-mobile-nav" id="mobile-nav">
+  <button id="close_mobile_nav_button" class="site-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fas fa-times"></i></button>
+  <ul class="usa-accordion">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false" aria-controls="nav-a1">About</button>
+  </li>
+  <div id="nav-a1" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/about">Overview</a>
+      </li>
+      
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/">Accessibility</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-annotations">Accessibility annotations for VA.gov applications</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-testing-for-design-system-components">Accessibility testing for design system components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved">Add a component or pattern once approved</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/contributing">Contributing</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/">Contributing to the design system</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/creating-components">Creating components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/design-libraries">Design libraries</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/principles">Design principles</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/experience-standards/">Experience Standards</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/experimental-components-and-patterns">Experimental components and patterns</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/feedback">Feedback</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/figma-at-va">Figma at VA</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/focus-management">Focus management</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/content-writers">For content writers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/">For designers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/">For developers</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/implementing-design-work">Implementing design work</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/install">Install</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/maturity-scale">Maturity scale</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/naming">Naming convention</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-a-removal">Suggest a removal</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-an-addition-or-update">Suggest an addition or update</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/updating-this-site">Updating this site</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/using-web-components">Using Web Components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/whats-new">What’s new?</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a2">
+      Content
+    </button>
+  </li>
+  <div id="nav-a2" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/content-style-guide">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/abbreviations-and-acronyms">Abbreviations and acronyms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/access">Access messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/alternative-text-for-images">Alternative text for images</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/avoid-branded-names">Avoid branded names</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bold-text">Bold & italic text</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bulleted-lists">Bulleted lists</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/button-labels">Button labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/capitalization">Capitalization</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/content-principles">Content principles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/dates-and-numbers">Dates, times, phone numbers, and addresses</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/define-complex-terms">Define complex terms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/destigmatizing-language-in-substance-use">Destigmatizing language in substance use</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-idioms">Don’t use idioms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-jargon">Don’t use jargon</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/engagement">Engagement messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/">Error messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/feedback">Feedback messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/form-labels">Form labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/government-forms">Government forms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/">Health content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/links">Links</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/naming-and-labels">Naming and labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/neutral-and-inclusive-language">Neutral and inclusive language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/numbers">Numbers</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/page-titles-and-section-titles">Page titles and section titles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/payments-and-debts">Payments and debts</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/">Plain language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/punctuation">Punctuation</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification">Sign in and identity verification</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/sign-up-for-updates">Sign up for updates</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/">Specific topics and programs</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/structure-your-content">Structure your content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/system">System messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/they-their">They, their</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/title-tags">Title tags</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/trademarks">Trademarks</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-active-voice">Use active voice</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-contractions">Use contractions</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-pronouns">Use pronouns</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-short-sentences">Use short sentences</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-simple-words-and-terms">Use simple words and terms</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/we-us-you">We, us, you</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/web-policies-and-directives">Web policies and directives</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/word-list">Word list</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/seo">Writing for SEO</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="true" aria-controls="nav-a3">
+      Foundation
+    </button>
+  </li>
+  <div id="nav-a3" class="usa-accordion-content" aria-hidden="false">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/background-color">Background color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/border">Border</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/breakpoints">Breakpoints</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/color-palette">Color palette</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/design-tokens">Design tokens</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/display">Display</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/flexbox">Flexbox</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/flexbox-grid">Flexbox grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/float-grid">Float grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-family">Font family</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-size">Font size</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-style">Font style</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-weight">Font weight</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/height-and-width">Height and width</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/icons">Icons</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/image-aspect-ratios">Image aspect ratios</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/">Layout</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/line-height">Line height</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/logos">Logos</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="active-level">
+              <a class="usa-current" href="/foundation/utilities/margins">Margins</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/measure">Measure</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/padding">Padding</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/page-layouts">Page layouts</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/position">Position</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/spacing-units">Spacing units</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-color">Text Color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-align">Text align</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-decoration">Text decoration</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/typography">Typography</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/">Utilities</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/visibility">Visibility</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a4">
+      Components
+    </button>
+  </li>
+  <div id="nav-a4" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/components">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/accordion">Accordion</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/additional-info">Additional info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/address-block">Address block</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/">Alert</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-expandable/">Alert - Expandable</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-sign-in/">Alert - Sign-in</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/autosave">Autosave</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/back-to-top">Back to top</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/">Banner</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/maintenance">Banner - Maintenance</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/official-gov">Banner - Official Gov</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/promo">Banner - Promo</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/breadcrumbs">Breadcrumbs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/">Button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-icon">Button - Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-group">Button group</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/card">Card</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/checkbox">Checkbox</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/crisis-line-modal">Crisis Line Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/date-input">Date input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/divider">Divider</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/file-input">File input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/">Footer</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/footer-minimal">Footer - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/">Form</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/">Header</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/header-minimal">Header - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/icon">Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/input-message">Input message</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/label">Label</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/language-toggle">Language toggle</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/">Link</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/action">Link - Action</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/collection">Link - Collection</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/deep-content">Link - Deep content</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/list">List</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/loading-indicator">Loading indicator</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/memorable-date">Memorable date</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/">Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/need-help">Need help?</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/notification">Notification</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/omb-info">OMB info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/on-this-page">On this page</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/pagination">Pagination</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/penalty-notice">Penalty notice</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/prefill">Prefill</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/privacy-agreement">Privacy Agreement</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/process-list">Process list</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/progress-bar/">Progress bar - Activity</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/progress-bar-segmented">Progress bar - Segmented</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/radio-button">Radio button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/redirects">Redirects</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/search-input">Search Input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/select">Select</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/sidenav">Sidenav</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/statement-of-truth">Statement of truth</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/summary-box">Summary box</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/table">Table</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tabs">Tabs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tag">Tag</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/telephone">Telephone</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/text-input">Text input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/textarea">Textarea</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/">URLs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/vanity-urls">Vanity URLs</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a5">
+      Patterns
+    </button>
+  </li>
+  <div id="nav-a5" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/patterns">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-mutually-exclusive-answer">A mutually exclusive answer</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-single-response">A single response</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/addresses">Addresses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-answers">Check answers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-eligibility">Check eligibility</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-personal-information">Check personal information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/complete-a-sub-task">Complete a sub task</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/contact-preferences">Contact preferences</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/dates">Dates</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/direct-deposit">Direct deposit</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/email-address">Email address</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/feedback">Feedback</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/files">Files</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/gender">Gender</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/housing-status">Housing status</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/keep-a-record-of-submitted-information">Keep a record of submitted information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/know-how-their-information-is-updated">Know how their information is updated</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/multiple-responses">Multiple responses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/names">Names</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-a-long-list">Navigate a long list</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-benefit-applications">Navigate benefit applications</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/phone-numbers">Phone numbers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/pronouns">Pronouns</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/race-and-ethnicity">Race and ethnicity</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/recover-from-errors">Recover from errors</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/relationship">Relationship to Veteran</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/service-history">Service history</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/sign-in">Sign-in</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/signature">Signature</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/social-security-number">Social security or VA file number</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/stay-informed-of-their-application-status">Stay informed of their form submission status</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/wizards">Wizard</a>
+            </li>
+          
+          
+      
+    </ul>
+  </div>
+  </ul>
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-mobile-nav__link site-mobile-nav__link--icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+    </svg>
+    Submit Issue
+  </a>
+</nav>
+
+
+    <div>
+      <div class="site-top-nav-wrapper site-l-wrapper sticky">
+  <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/about">About</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/content-style-guide">Content</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link  current " href="/foundation">Foundation</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/components">Components</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/patterns">Patterns</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/templates">Templates</a>
+      </li>
+    </ul>
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-header__nav-item__link site-header__nav-item__link--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+          </svg>
+          Submit Issue
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      <div class="vads-u-background-color--gold-lightest vads-u-padding-y--1">
+  <div class="site-l-wrapper">
+    <p class="vads-u-font-size--md vads-u-margin--0">
+      <strong>Summer updates</strong>
+        <a href="/about/whats-new">
+          USWDS v3 upgrade nearing completion!
+        </a>
+  </div>
+</div>
+
+      <div class="site-content vads-u-margin-bottom--9">
+        
+          <div class="site-content__nav">
+  
+    <nav class="va-sidebarnav va-sidebarnav--foundation">
+  <ul class="usa-sidenav-list">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/breakpoints">
+                      Breakpoints
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/color-palette">
+                      Color palette
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/design-tokens">
+                      Design tokens
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/icons">
+                      Icons
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/image-aspect-ratios">
+                      Image aspect ratios
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="layout">Layout</button>
+                      <div id="layout" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/foundation/layout/">
+                              Layout</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/layout/flexbox-grid">
+                              Flexbox grid</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/layout/float-grid">
+                              Float grid</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/layout/page-layouts">
+                              Page layouts</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/logos">
+                      Logos
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/spacing-units">
+                      Spacing units
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/typography">
+                      Typography
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="true" aria-controls="utilities">Utilities</button>
+                      <div id="utilities" class="usa-accordion-content" aria-hidden="false">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/foundation/utilities/">
+                              Utilities</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/background-color">
+                              Background color</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/border">
+                              Border</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/display">
+                              Display</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/flexbox">
+                              Flexbox</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-family">
+                              Font family</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-size">
+                              Font size</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-style">
+                              Font style</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-weight">
+                              Font weight</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/height-and-width">
+                              Height and width</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/line-height">
+                              Line height</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="usa-current" href="/foundation/utilities/margins">
+                              Margins</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/measure">
+                              Measure</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/padding">
+                              Padding</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/position">
+                              Position</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/text-align">
+                              Text align</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/text-color">
+                              Text color</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/text-decoration">
+                              Text decoration</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/visibility">
+                              Visibility</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+  </ul>
+</nav>
+    
+  
+</div>
+        <div class="site-content__content">
+          <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+            
+              
+              
+                <div>
+  <p class="site-content__section-name">
+    Foundation
+  </p>
+</div>
+              
+            
+            <h1 id="margins">Margins</h1>
+
+<div class="va-introtext">
+  <p>Change the spacing around an item. Margin classes include <a href="#responsive-prefixes">responsive prefixes</a>.</p>
+</div>
+
+<nav aria-labelledby="on-this-page" class="site-on-this-page">
+  <dl class="site-on-this-page__list">
+    <dt id="on-this-page" role="heading" aria-level="2" class="site-on-this-page__title">
+      On this page
+    </dt>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-on-all-sides">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin on all sides
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-top-and-bottom">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin top and bottom
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-top">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin top
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-bottom">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin bottom
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-right-and-left">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin right and left
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-right">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin right
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#margin-left">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Margin left
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#responsive-prefixes">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Responsive prefixes
+      </a>
+    </dd>
+  
+  </dl>
+</nav>
+
+<h2 id="margin-on-all-sides">Margin on all sides</h2>
+
+<div class="site-showcase">
+
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margins</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin</span></p>
+</div>
+
+  <div class="vads-l-row">
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="margin-top-and-bottom">Margin top and bottom</h2>
+
+<div class="site-showcase">
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margin top and bottom</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin-top, margin-bottom</span></p>
+</div>
+  <p>The ghosted square represents another element just below the example in the DOM to depict a negative bottom margin.</p>
+  <div class="vads-l-row">
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg9"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg9</p>
+    <p class="site-utility-value vads-u-margin-y--0">-72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg8"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg8</p>
+    <p class="site-utility-value vads-u-margin-y--0">-64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg7"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg7</p>
+    <p class="site-utility-value vads-u-margin-y--0">-56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg6"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg6</p>
+    <p class="site-utility-value vads-u-margin-y--0">-48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg4"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg4</p>
+    <p class="site-utility-value vads-u-margin-y--0">-32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg3"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg3</p>
+    <p class="site-utility-value vads-u-margin-y--0">-24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg2p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg2"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg2</p>
+    <p class="site-utility-value vads-u-margin-y--0">-16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg1p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg1"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg1</p>
+    <p class="site-utility-value vads-u-margin-y--0">-8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg0p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg0p25"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">-2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--yikes site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-y--neg1px"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-y--neg1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">-1px</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="margin-top">Margin top</h2>
+<div class="site-showcase">
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margin top</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin-top</span></p>
+</div>
+  <div class="vads-l-row">
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg9</p>
+    <p class="site-utility-value vads-u-margin-y--0">-72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg8</p>
+    <p class="site-utility-value vads-u-margin-y--0">-64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg7</p>
+    <p class="site-utility-value vads-u-margin-y--0">-56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg6</p>
+    <p class="site-utility-value vads-u-margin-y--0">-48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg4</p>
+    <p class="site-utility-value vads-u-margin-y--0">-32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg3</p>
+    <p class="site-utility-value vads-u-margin-y--0">-24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg2</p>
+    <p class="site-utility-value vads-u-margin-y--0">-16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg1</p>
+    <p class="site-utility-value vads-u-margin-y--0">-8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">-2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-top--neg1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-top--neg1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">-1px</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="margin-bottom">Margin bottom</h2>
+<div class="site-showcase">
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margin bottom</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin-bottom</span></p>
+</div>
+
+  <p>The ghosted square represents another element just below the example in the DOM to depict a negative bottom margin.</p>
+  <div class="vads-l-row">
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg9"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg9</p>
+    <p class="site-utility-value vads-u-margin-y--0">-72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg8"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg8</p>
+    <p class="site-utility-value vads-u-margin-y--0">-64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg7"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg7</p>
+    <p class="site-utility-value vads-u-margin-y--0">-56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg6"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg6</p>
+    <p class="site-utility-value vads-u-margin-y--0">-48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg4"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg4</p>
+    <p class="site-utility-value vads-u-margin-y--0">-32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg3"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg3</p>
+    <p class="site-utility-value vads-u-margin-y--0">-24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg2p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg2"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg2</p>
+    <p class="site-utility-value vads-u-margin-y--0">-16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg1p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg1"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg1</p>
+    <p class="site-utility-value vads-u-margin-y--0">-8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg0p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg0p25"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">-2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-top--9 site-u-height--2square vads-u-flex-direction--column
+    ">
+    <div class="site-square site-square--small vads-u-margin-bottom--neg1px"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-bottom--neg1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">-1px</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="margin-right-and-left">Margin right and left</h2>
+<div class="site-showcase">
+
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margin right and left</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin-right, margin-left</span></p>
+</div>
+
+  <p>The squares in this example are set to display inline.The ghosted square represents another element just below the example in the DOM to depict a negative right margin.</p>
+  <div class="vads-l-row">
+
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg9"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg9</p>
+    <p class="site-utility-value vads-u-margin-y--0">-72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg8"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg8</p>
+    <p class="site-utility-value vads-u-margin-y--0">-64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg7"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg7</p>
+    <p class="site-utility-value vads-u-margin-y--0">-56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg6"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg6</p>
+    <p class="site-utility-value vads-u-margin-y--0">-48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg4"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg4</p>
+    <p class="site-utility-value vads-u-margin-y--0">-32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg3"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg3</p>
+    <p class="site-utility-value vads-u-margin-y--0">-24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg2p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg2"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg2</p>
+    <p class="site-utility-value vads-u-margin-y--0">-16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg1p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg1"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg1</p>
+    <p class="site-utility-value vads-u-margin-y--0">-8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg0p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg0p25"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">-2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--neg1px"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--neg1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">-1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--12
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      width-100
+    ">
+    <div class="site-square site-square--small vads-u-margin-x--auto"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-x--auto</p>
+    <p class="site-utility-value vads-u-margin-y--0">auto</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="margin-right">Margin right</h2>
+<div class="site-showcase">
+
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margin right</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin-right</span></p>
+</div>
+
+  <p>The squares in this example are set to display inline.The ghosted square represents another element just below the example in the DOM to depict a negative right margin.</p>
+  <div class="vads-l-row">
+
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg9"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg9</p>
+    <p class="site-utility-value vads-u-margin-y--0">-72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg8"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg8</p>
+    <p class="site-utility-value vads-u-margin-y--0">-64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg7"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg7</p>
+    <p class="site-utility-value vads-u-margin-y--0">-56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg6"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg6</p>
+    <p class="site-utility-value vads-u-margin-y--0">-48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg4"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg4</p>
+    <p class="site-utility-value vads-u-margin-y--0">-32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg3"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg3</p>
+    <p class="site-utility-value vads-u-margin-y--0">-24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg2p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg2"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg2</p>
+    <p class="site-utility-value vads-u-margin-y--0">-16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg1p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg1"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg1</p>
+    <p class="site-utility-value vads-u-margin-y--0">-8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg0p5"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg0p25"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">-2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--neg1px"></div>
+    
+      <div class="site-square site-square--small opacity-25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--neg1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">-1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--12
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      width-100
+    ">
+    <div class="site-square site-square--small vads-u-margin-right--auto"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-right--auto</p>
+    <p class="site-utility-value vads-u-margin-y--0">auto</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="margin-left">Margin left</h2>
+<div class="site-showcase">
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Margin left</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <a class="site-utility-scope__button site-utility-scope__button--supported" href="#responsive-prefixes"><i class="fas fa-check-circle" aria-label="Is"></i> Responsive</a>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">margin-left</span></p>
+</div>
+
+  <div class="vads-l-row">
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--0"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--0</p>
+    <p class="site-utility-value vads-u-margin-y--0">0px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--1</p>
+    <p class="site-utility-value vads-u-margin-y--0">8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--2</p>
+    <p class="site-utility-value vads-u-margin-y--0">16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--3</p>
+    <p class="site-utility-value vads-u-margin-y--0">24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--4</p>
+    <p class="site-utility-value vads-u-margin-y--0">32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--5</p>
+    <p class="site-utility-value vads-u-margin-y--0">40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--6</p>
+    <p class="site-utility-value vads-u-margin-y--0">48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--7</p>
+    <p class="site-utility-value vads-u-margin-y--0">56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--8</p>
+    <p class="site-utility-value vads-u-margin-y--0">64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--9</p>
+    <p class="site-utility-value vads-u-margin-y--0">72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg9"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg9</p>
+    <p class="site-utility-value vads-u-margin-y--0">-72px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg8"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg8</p>
+    <p class="site-utility-value vads-u-margin-y--0">-64px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg7"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg7</p>
+    <p class="site-utility-value vads-u-margin-y--0">-56px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg6"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg6</p>
+    <p class="site-utility-value vads-u-margin-y--0">-48px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-40px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg4"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg4</p>
+    <p class="site-utility-value vads-u-margin-y--0">-32px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg3"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg3</p>
+    <p class="site-utility-value vads-u-margin-y--0">-24px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg2p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg2p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-20px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg2"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg2</p>
+    <p class="site-utility-value vads-u-margin-y--0">-16px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg1p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg1p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-12px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg1"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg1</p>
+    <p class="site-utility-value vads-u-margin-y--0">-8px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg0p5"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg0p5</p>
+    <p class="site-utility-value vads-u-margin-y--0">-4px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg0p25"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg0p25</p>
+    <p class="site-utility-value vads-u-margin-y--0">-2px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--6 large-screen:vads-l-col--3
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      vads-u-margin-left--yikes site-u-height--2square
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--neg1px"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--neg1px</p>
+    <p class="site-utility-value vads-u-margin-y--0">-1px</p>
+  </div>
+</div>
+    
+      <div class="site-showcase__col
+
+  vads-l-col--12
+
+vads-u-display--flex vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start">
+  <div class="site-square-outer
+    
+      width-100
+    ">
+    <div class="site-square site-square--small vads-u-margin-left--auto"></div>
+    
+  </div>
+  <div class="vads-u-align-items--flex-start">
+    <p class="site-utility-class vads-u-margin-top--2 vads-u-margin-bottom--0p5">.vads-u-margin-left--auto</p>
+    <p class="site-utility-value vads-u-margin-y--0">auto</p>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<h2 id="responsive-prefixes">Responsive prefixes</h2>
+
+<p>Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.</p>
+
+<h3 id="example">Example</h3>
+
+<pre><code class="language-html">&lt;div class="medium-screen:vads-u-margin--3 large-screen:vads-u-margin--5"&gt;
+</code></pre>
+<table class="usa-table usa-table-borderless">
+  <thead>
+    <tr>
+      <th>VADS Breakpoint Sass Variable</th>
+      <th>USWDS Breakpoint Custom Property</th>
+      <th>Width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$xsmall-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--mobile</code></td>
+      <td>320px</td>
+    </tr>
+    <tr>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$small-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--mobile-lg</code></td>
+      <td>481px</td>
+    </tr>
+    <tr>
+      <td><span class="vads-u-background-color--white vads-u-display--inline-block vads-u-font-size--base">--</span></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--tablet</code></td>
+      <td>640px</td>
+    </tr>
+    <tr>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$medium-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--medium-screen</code></td>
+      <td>768px</td>
+    </tr>
+    <tr>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$small-desktop-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--desktop</code></td>
+      <td>1024px</td>
+    </tr>
+    <tr>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$large-screen</code></td>
+      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--desktop-lg</code></td>
+      <td>1201px</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Read more about <a href="/foundation/breakpoints">breakpoints</a>.</p>
+
+          </main>
+          
+<div class="vads-u-margin-top--7">
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/edit/main/src/_foundation/utilities/margins.md" target="_blank">Edit this page in GitHub</a>
+  (Permissions required)
+</div>
+
+
+          
+
+<div>Last updated: Oct 24, 2024</div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <footer class="site-footer vads-u-padding-y--5" role="contentinfo">
+  <div class="site-l-wrapper">
+    <div class="medium-screen:vads-u-display--flex medium-screen:vads-u-justify-content--space-between vads-u-align-items--center">
+      <div>
+        <ul class="site-footer__links">
+          <li class=site-footer__links__item>
+            <a href="/about/whats-new">What’s new?</a>
+          </li>
+          <li class=site-footer__links__item>
+            <a href="/about/feedback">Feedback</a>
+          </li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/playbook/" target="_blank">VA.gov playbook</a></li>
+          <li class=site-footer__links__item><a target="_blank" href="https://www.va.gov/accessibility-at-va/">Accessibility</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/web/" target="_blank">Web governance &amp; policies</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-seal">
+        <a href="https://va.gov" class="site-footer__logo" title="Go to VA.gov"><img src="/assets/img/va-logo-white.png" alt="U.S. Department of Veterans Affairs logo"></a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/assets/javascripts/site.js?v=1729796807"></script>
+<script src="/vendor/javascripts/formation.js?v=1729796807"></script>
+
+  </body>
+</html>

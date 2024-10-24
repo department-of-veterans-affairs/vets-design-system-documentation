@@ -1,0 +1,4115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Card - VA.gov Design System </title>
+  <meta name="description" content="Examples">
+
+  
+
+  
+
+  <!-- Web component setup -->
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css?v=1729796807" />
+  <script type="module">
+    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    defineCustomElements();
+</script>
+
+  <!-- Icons -->
+  <link href="/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+  <link href="/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="/assets/img/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="/assets/img/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+
+  <link rel="stylesheet" href="/formation.min.css?v=1729796807">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css?v=1729796807">
+  <link rel="canonical" href="https://design.va.gov/components/card">
+  <link rel="alternate" type="application/rss+xml" title="VA.gov Design System" href="https://design.va.gov/feed.xml">
+
+  <script src="/assets/javascripts/polyfills/array.from.js?v=1729796807"></script>
+
+</head>
+
+  <body>
+
+    
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+
+<section class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="" style="padding-left:24px;">
+      <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        Here's how you know
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="site-header" role="banner">
+
+  <div class="site-l-wrapper">
+    <div class="site-header__masthead">
+      <div class="site-header__logo" id="extended-logo">
+        <em class="site-header__logo-text">
+          <a class="site-header__logo-link" title="VA.gov Design System homepage" href="/"><strong class="vads-u-display--block small-screen:vads-u-display--inline">VA.gov</strong> <span class="vads-u-display--none small-screen:vads-u-display--inline">|</span> Design System</a>
+        </em>
+      </div>
+      <div class="site-header__utility-links">
+        <div id="search-container" class="site-search-container">
+          <i class="fas fa-search search-icon"></i>
+          <form action="/results" method="get" id="search-form" class="search-form">
+          <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+          </form>
+          <ul id="results-container" class="site-search-results" role="listbox"></ul>
+        </div>
+      </div>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
+  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <form action="/results" method="get" id="mobile-search-form" class="search-form">
+    <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+  </form>
+  <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
+</div>
+
+
+    <nav class="va-sidebarnav site-mobile-nav" id="mobile-nav">
+  <button id="close_mobile_nav_button" class="site-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fas fa-times"></i></button>
+  <ul class="usa-accordion">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false" aria-controls="nav-a1">About</button>
+  </li>
+  <div id="nav-a1" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/about">Overview</a>
+      </li>
+      
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/">Accessibility</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-annotations">Accessibility annotations for VA.gov applications</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-testing-for-design-system-components">Accessibility testing for design system components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved">Add a component or pattern once approved</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/contributing">Contributing</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/">Contributing to the design system</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/creating-components">Creating components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/design-libraries">Design libraries</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/principles">Design principles</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/experience-standards/">Experience Standards</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/experimental-components-and-patterns">Experimental components and patterns</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/feedback">Feedback</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/figma-at-va">Figma at VA</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/focus-management">Focus management</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/content-writers">For content writers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/">For designers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/">For developers</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/implementing-design-work">Implementing design work</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/install">Install</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/maturity-scale">Maturity scale</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/naming">Naming convention</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-a-removal">Suggest a removal</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-an-addition-or-update">Suggest an addition or update</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/updating-this-site">Updating this site</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/using-web-components">Using Web Components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/whats-new">What’s new?</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a2">
+      Content
+    </button>
+  </li>
+  <div id="nav-a2" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/content-style-guide">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/abbreviations-and-acronyms">Abbreviations and acronyms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/access">Access messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/alternative-text-for-images">Alternative text for images</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/avoid-branded-names">Avoid branded names</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bold-text">Bold & italic text</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bulleted-lists">Bulleted lists</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/button-labels">Button labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/capitalization">Capitalization</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/content-principles">Content principles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/dates-and-numbers">Dates, times, phone numbers, and addresses</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/define-complex-terms">Define complex terms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/destigmatizing-language-in-substance-use">Destigmatizing language in substance use</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-idioms">Don’t use idioms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-jargon">Don’t use jargon</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/engagement">Engagement messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/">Error messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/feedback">Feedback messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/form-labels">Form labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/government-forms">Government forms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/">Health content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/links">Links</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/naming-and-labels">Naming and labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/neutral-and-inclusive-language">Neutral and inclusive language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/numbers">Numbers</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/page-titles-and-section-titles">Page titles and section titles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/payments-and-debts">Payments and debts</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/">Plain language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/punctuation">Punctuation</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification">Sign in and identity verification</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/sign-up-for-updates">Sign up for updates</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/">Specific topics and programs</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/structure-your-content">Structure your content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/system">System messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/they-their">They, their</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/title-tags">Title tags</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/trademarks">Trademarks</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-active-voice">Use active voice</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-contractions">Use contractions</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-pronouns">Use pronouns</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-short-sentences">Use short sentences</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-simple-words-and-terms">Use simple words and terms</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/we-us-you">We, us, you</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/web-policies-and-directives">Web policies and directives</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/word-list">Word list</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/seo">Writing for SEO</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a3">
+      Foundation
+    </button>
+  </li>
+  <div id="nav-a3" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/background-color">Background color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/border">Border</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/breakpoints">Breakpoints</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/color-palette">Color palette</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/design-tokens">Design tokens</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/display">Display</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/flexbox">Flexbox</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/flexbox-grid">Flexbox grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/float-grid">Float grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-family">Font family</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-size">Font size</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-style">Font style</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-weight">Font weight</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/height-and-width">Height and width</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/icons">Icons</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/image-aspect-ratios">Image aspect ratios</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/">Layout</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/line-height">Line height</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/logos">Logos</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/margins">Margins</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/measure">Measure</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/padding">Padding</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/page-layouts">Page layouts</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/position">Position</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/spacing-units">Spacing units</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-color">Text Color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-align">Text align</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-decoration">Text decoration</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/typography">Typography</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/">Utilities</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/visibility">Visibility</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="true" aria-controls="nav-a4">
+      Components
+    </button>
+  </li>
+  <div id="nav-a4" class="usa-accordion-content" aria-hidden="false">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/components">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/accordion">Accordion</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/additional-info">Additional info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/address-block">Address block</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/">Alert</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-expandable/">Alert - Expandable</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-sign-in/">Alert - Sign-in</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/autosave">Autosave</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/back-to-top">Back to top</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/">Banner</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/maintenance">Banner - Maintenance</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/official-gov">Banner - Official Gov</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/promo">Banner - Promo</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/breadcrumbs">Breadcrumbs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/">Button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-icon">Button - Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-group">Button group</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="active-level">
+              <a class="usa-current" href="/components/card">Card</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/checkbox">Checkbox</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/crisis-line-modal">Crisis Line Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/date-input">Date input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/divider">Divider</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/file-input">File input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/">Footer</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/footer-minimal">Footer - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/">Form</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/">Header</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/header-minimal">Header - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/icon">Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/input-message">Input message</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/label">Label</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/language-toggle">Language toggle</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/">Link</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/action">Link - Action</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/collection">Link - Collection</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/deep-content">Link - Deep content</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/list">List</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/loading-indicator">Loading indicator</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/memorable-date">Memorable date</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/">Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/need-help">Need help?</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/notification">Notification</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/omb-info">OMB info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/on-this-page">On this page</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/pagination">Pagination</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/penalty-notice">Penalty notice</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/prefill">Prefill</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/privacy-agreement">Privacy Agreement</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/process-list">Process list</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/progress-bar/">Progress bar - Activity</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/progress-bar-segmented">Progress bar - Segmented</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/radio-button">Radio button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/redirects">Redirects</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/search-input">Search Input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/select">Select</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/sidenav">Sidenav</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/statement-of-truth">Statement of truth</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/summary-box">Summary box</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/table">Table</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tabs">Tabs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tag">Tag</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/telephone">Telephone</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/text-input">Text input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/textarea">Textarea</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/">URLs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/vanity-urls">Vanity URLs</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a5">
+      Patterns
+    </button>
+  </li>
+  <div id="nav-a5" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/patterns">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-mutually-exclusive-answer">A mutually exclusive answer</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-single-response">A single response</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/addresses">Addresses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-answers">Check answers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-eligibility">Check eligibility</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-personal-information">Check personal information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/complete-a-sub-task">Complete a sub task</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/contact-preferences">Contact preferences</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/dates">Dates</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/direct-deposit">Direct deposit</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/email-address">Email address</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/feedback">Feedback</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/files">Files</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/gender">Gender</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/housing-status">Housing status</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/keep-a-record-of-submitted-information">Keep a record of submitted information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/know-how-their-information-is-updated">Know how their information is updated</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/multiple-responses">Multiple responses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/names">Names</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-a-long-list">Navigate a long list</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-benefit-applications">Navigate benefit applications</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/phone-numbers">Phone numbers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/pronouns">Pronouns</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/race-and-ethnicity">Race and ethnicity</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/recover-from-errors">Recover from errors</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/relationship">Relationship to Veteran</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/service-history">Service history</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/sign-in">Sign-in</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/signature">Signature</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/social-security-number">Social security or VA file number</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/stay-informed-of-their-application-status">Stay informed of their form submission status</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/wizards">Wizard</a>
+            </li>
+          
+          
+      
+    </ul>
+  </div>
+  </ul>
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-mobile-nav__link site-mobile-nav__link--icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+    </svg>
+    Submit Issue
+  </a>
+</nav>
+
+    <div>
+
+    <div class="site-top-nav-wrapper site-l-wrapper sticky">
+  <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/about">About</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/content-style-guide">Content</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/foundation">Foundation</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link  current " href="/components">Components</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/patterns">Patterns</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/templates">Templates</a>
+      </li>
+    </ul>
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-header__nav-item__link site-header__nav-item__link--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+          </svg>
+          Submit Issue
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <div class="site-content vads-u-margin-bottom--9">
+      <div class="site-content__nav">
+  
+    <nav class="va-sidebarnav va-sidebarnav--components">
+  <ul class="usa-sidenav-list">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li class="">
+        <a class="" href="/components">Overview</a>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/accordion">
+                      Accordion
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/additional-info">
+                      Additional info
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/address-block">
+                      Address block
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="alert">Alert</button>
+                      <div id="alert" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/alert/">
+                              Alert
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/alert/alert-expandable">
+                              Alert - Expandable
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/alert/alert-sign-in">
+                              Alert - Sign-In
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/back-to-top">
+                      Back to top
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="banner">Banner</button>
+                      <div id="banner" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/banner/">
+                              Banner
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/banner/maintenance">
+                              Maintenance
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/banner/official-gov">
+                              Official Gov
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/banner/promo">
+                              Promo
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/breadcrumbs">
+                      Breadcrumbs
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="button">Button</button>
+                      <div id="button" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/button/">
+                              Button
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/button/button-group">
+                              Button group
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/button/button-icon">
+                              Button icon
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li class="active-level">
+                    <a class="usa-current" href="/components/card">
+                      Card
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/divider">
+                      Divider
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="footer">Footer</button>
+                      <div id="footer" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/footer/">
+                              Footer</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/footer/footer-minimal">
+                              Footer - Minimal
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="form">Form</button>
+                      <div id="form" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/form/">
+                              Overview
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/autosave">
+                              Autosave
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/checkbox">
+                              Checkbox
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/date-input">
+                              Date input
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/memorable-date">
+                              Memorable date
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/file-input">
+                              File input
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/input-message">
+                              Input message
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/label">
+                              Label
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/need-help">
+                              Need help?
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/penalty-notice">
+                              Penalty notice
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/prefill">
+                              Prefill
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/privacy-agreement">
+                              Privacy Agreement
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/progress-bar-segmented">
+                              Progress bar - Segmented
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/radio-button">
+                              Radio button
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/select">
+                              Select
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/statement-of-truth">
+                              Statement of truth
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/text-input">
+                              Text input
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/form/textarea">
+                              Textarea
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="header">Header</button>
+                      <div id="header" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/header/">
+                              Header</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/header/header-minimal">
+                              Header - Minimal
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/icon">
+                      Icon
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/language-toggle">
+                      Language toggle
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="link">Link</button>
+                      <div id="link" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/link/">
+                              Link
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/link/action">
+                              Action
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/link/collection">
+                              Collection
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/link/deep-content">
+                              Deep content
+
+
+
+
+
+  <i class="fas fa-square site-sidenav-status site-sidenav-status--dont-use-deprecated" aria-label="Don't use Deprecated"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/list">
+                      List
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/loading-indicator">
+                      Loading indicator
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="modal">Modal</button>
+                      <div id="modal" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/modal/">
+                              Modal
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/modal/crisis-line-modal">
+                              Crisis Line modal
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/notification">
+                      Notification
+
+
+
+
+
+  <i class="fas fa-square site-sidenav-status site-sidenav-status--dont-use-deprecated" aria-label="Don't use Deprecated"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/omb-info">
+                      OMB info
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/on-this-page">
+                      On this page
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/pagination">
+                      Pagination
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/process-list">
+                      Process list
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/progress-bar/">
+                      Progress bar - Activity
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/search-input">
+                      Search Input
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/sidenav">
+                      Sidenav
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/summary-box">
+                      Summary box
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/table">
+                      Table
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/tabs">
+                      Tabs
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/tag">
+                      Tag
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/components/telephone">
+                      Telephone
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-best-practice" aria-label="Use Best practice"></i></a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="urls">URLs</button>
+                      <div id="urls" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/components/url-standards/">
+                              URLs</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/url-standards/redirects">
+                              Redirects
+
+
+
+
+</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/components/url-standards/vanity-urls">
+                              Vanity URLs
+
+
+
+
+</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+  </ul>
+</nav>
+    
+  
+</div>
+      <div class="site-content__content">
+        <main lang="en" id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+          
+            
+            <div>
+  <p class="site-content__section-name">
+    Components
+  </p>
+</div>
+          <h1 id="Card">Card</h1>
+            
+            
+              
+
+
+
+
+<a class="site-component-status__link" href="/about/maturity-scale#use-with-caution-candidate">
+  <span class="usa-label site-component-status site-component-status--use-with-caution-candidate">
+    Use with caution: Candidate
+  </span>
+</a>
+            
+            
+
+
+
+
+
+            
+
+            
+          <div class="va-introtext" markdown="1">
+            A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items.
+          </div>
+            
+            
+
+
+
+
+
+
+
+
+<nav aria-labelledby="component-resources" class="site-component-resources-links">
+  <dl class="site-component-resources-links__list">
+    <dt id="component-resources" role="heading" aria-level="2" class="site-component-resources-links__title">
+      Resources
+    </dt>
+    
+    <dd role="definition" class="site-component-resources-links__definition">
+      <a class="site-component-resources-links__link" href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aopen+label%3Ava-card" target="_blank" rel="noopener noreferrer" title="View issues related to this component (internal only)">
+        <img aria-hidden="true" src="/assets/img/github-logo.svg" alt="Github logo" role="img" class="site-component-resources-links__img">Open Issues
+      </a>
+    </dd>
+    
+    
+    <dd role="definition" class="site-component-resources-links__definition">
+      <a class="site-component-resources-links__link" href="https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues?q=is%3Aissue+label%3A%22DSC%3A+card%22" target="_blank" rel="noopener noreferrer" title="View research related to this component (internal only)">
+        <i aria-hidden="true" class="fas fa-book site-component-resources-links__icon" role="img"></i>Research
+      </a>
+    </dd>
+    
+    
+    <dd role="definition" class="site-component-resources-links__definition">
+      <a class="site-component-resources-links__link" href="https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1319%3A20931&mode=design&t=nYOotVcwdpiMCL5C-1" target="_blank" rel="noopener noreferrer" title="View the visual design for this component (internal only)">
+        <img aria-hidden="true" src="/assets/img/figma-logo.svg" alt="Figma logo" role="img" class="site-component-resources-links__img">Figma
+      </a>
+    </dd>
+    
+    
+  </dl>
+</nav>
+
+            
+            
+              
+<nav aria-labelledby="on-this-page" class="site-on-this-page">
+  <dl class="site-on-this-page__list">
+    <dt id="on-this-page" role="heading" aria-level="2" class="site-on-this-page__title">
+      On this page
+    </dt>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#examples">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Examples
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#variations">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Variations
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#usage">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Usage
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#behavior">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Behavior
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#code-usage">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Code usage
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#not-a-card">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Not a Card
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#content-considerations">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Content considerations
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#accessibility-considerations">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Accessibility considerations
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#related">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Related
+      </a>
+    </dd>
+  
+  </dl>
+</nav>
+
+            
+          
+          <h2 id="examples">Examples</h2>
+
+<h3 id="default---gray">Default - Gray</h3>
+
+<div class="site-showcase">
+  <div class="vads-u-display--flex vads-u-flex-direction--column large-screen:vads-u-flex--1 vads-u-margin-bottom--2p5">
+  <div class="vads-u-background-color--gray-lightest vads-u-padding-y--2p5 vads-u-padding-x--2p5" data-testid="payment-card-v2">
+    <h3 class="vads-u-margin-top--0">Header</h3>
+    <h4 class="vads-u-margin-top--0">Status or Sub-header</h4>
+    <p class="vads-u-margin-bottom--1 vads-u-margin-top--0">
+      Body text
+    </p>
+    <a aria-label="" href="#" class="vads-u-display--inline-block vads-c-action-link--blue">
+      Link - Action
+    </a>
+  </div>
+</div>
+</div>
+
+<h3 id="default---white-with-border">Default - White with border</h3>
+
+<div class="site-showcase" style="max-width: 100%">
+  <iframe width="100%" height="" src="/storybook/iframe.html?id=components-va-card--default&amp;viewMode=story"></iframe>
+</div>
+
+<p><a href="/storybook/?path=/docs/components-va-card--default"><img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo" />View va-card default in Storybook</a></p>
+
+<h3 id="with-drop-shadow">With Drop Shadow</h3>
+
+<div class="site-showcase" style="max-width: 100%">
+  <iframe width="100%" height="" src="/storybook/iframe.html?id=components-va-card--with-drop-shadow&amp;viewMode=story"></iframe>
+</div>
+
+<p><a href="/storybook/?path=/docs/components-va-card--with-drop-shadow"><img aria-hidden="true" role="img" src="/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo" />View va-card default in Storybook</a></p>
+
+<h3 id="benefit-payments">Benefit payments</h3>
+
+<div class="site-showcase">
+  <div class="vads-u-display--flex vads-u-flex-direction--column large-screen:vads-u-flex--1 vads-u-margin-bottom--2p5">
+  <div class="vads-u-background-color--gray-lightest vads-u-padding-y--2p5 vads-u-padding-x--2p5" data-testid="payment-card-v2">
+    <h3 class="vads-u-margin-top--0">
+      +$1,862.96
+    </h3>
+    <h4 class="vads-u-margin-top--0">
+      Compensation &amp; Pension - Recurring
+    </h4>
+    <p class="vads-u-margin-bottom--1 vads-u-margin-top--0">
+      Check mailed on March 31, 2023
+    </p>
+    <va-link active="" href="#/va-payment-history/payments/" text="Review your payment history" />
+  </div>
+</div>
+</div>
+
+<h3 id="application-status-benefit-application-drafts">Application status (Benefit application drafts)</h3>
+
+<div class="site-showcase">
+  <div class="vads-u-display--flex vads-u-width--full vads-u-flex-direction--column vads-u-justify-content--space-between vads-u-align-items--flex-start vads-u-background-color--gray-lightest vads-u-padding--2p5">
+  <div class="vads-u-width--full">
+    <p id="20-0996" class="vads-u-text-transform--uppercase vads-u-margin-y--0">FORM 20-0996</p>
+    <h4 aria-describedby="20-0996" class="vads-u-font-size--h3 vads-u-margin-top--0">Application for Higher-level review
+    </h4>
+    <div class="vads-u-display--flex">
+      <va-icon icon="error" size="3" class="vads-u-margin-right--0p5"></va-icon>
+      <span class="sr-only">Alert:</span>
+      <div>
+        <p class="vads-u-margin-top--0">Application expires on: June 26, 2023</p>
+        <p>Last opened on: April 27, 2023</p>
+      </div>
+    </div>
+  </div>
+  <va-link active="" text="Continue your application" href="#/decision-reviews/higher-level-review/request-higher-level-review-form-20-0996/resume"></va-link>
+</div>
+</div>
+
+<h2 id="usage">Usage</h2>
+
+<h3 id="when-to-use-card">When to use Card</h3>
+
+<ul>
+  <li><strong>Collections.</strong> Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.</li>
+  <li><strong>Framing a call to action.</strong> Cards are often used to highlight and frame a specific call to action or decision a user needs to take.</li>
+  <li><strong>Conveying status.</strong> Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the <a href="/components/tag">Tag component</a> or an icon with a text description to indicate the status.</li>
+</ul>
+
+<h3 id="when-to-consider-something-else">When to consider something else</h3>
+
+<ul>
+  <li><strong>Eligibility information or other content highlight.</strong> The <a href="/components/summary-box">Summary box</a> component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.</li>
+  <li><strong>Dynamic content.</strong> Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an <a href="/components/alert">Alert</a> component.</li>
+  <li><strong>Forms - A Card is not a Fieldset.</strong> A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.</li>
+  <li><strong>Large data - A Card is not a Table row.</strong> A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a <a href="/components/table">table</a>.</li>
+  <li><strong>Navigation - A Card is not a Button or a Link.</strong> While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target.</li>
+</ul>
+
+<h3 id="when-to-use-caution">When to use caution</h3>
+
+<ul>
+  <li><strong>Search results.</strong> Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.</li>
+</ul>
+
+<h3 id="how-this-component-works">How this component works</h3>
+
+<h4 id="default">Default</h4>
+
+<p><img src="/images/components/card/annotated.png" alt="Basic card" /></p>
+
+<ol>
+  <li><strong>Background color.</strong> White or <a href="/foundation/color-palette#grayscale">$color-gray-lightest</a>.</li>
+  <li><strong>Header.</strong> Header that summarizes the card’s content.</li>
+  <li><strong>Secondary content.</strong> Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.</li>
+  <li><strong>Call to action.</strong> An <a href="/components/link/action">action link</a> should be used for the primary call-to-action. A <a href="/components/link">link</a> may also be used.</li>
+</ol>
+
+<h4 id="status-via-tag">Status via Tag</h4>
+
+<p><img src="/images/components/card/status.png" alt="Status card via Tag" /></p>
+
+<p>Use this variation when you have a short status which can use the <a href="/components/tag">Tag component</a>.</p>
+
+<ol>
+  <li><strong>Background color.</strong> Currently <a href="/foundation/color-palette#grayscale">$color-gray-lightest</a>.</li>
+  <li><strong>Status.</strong> Status using the <a href="/components/tag">Tag component</a>.</li>
+  <li><strong>Header.</strong> Header that summarizes the card’s content.</li>
+  <li><strong>Secondary content.</strong> Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.</li>
+  <li><strong>Call to action.</strong> An <a href="/components/link/action">action link</a> should be used for the primary call-to-action. A <a href="/components/link">link</a> may also be used.</li>
+</ol>
+
+<h4 id="status-via-label-with-indicator">Status via label with indicator</h4>
+
+<p><img src="/images/components/card/status-long-label.png" alt="Status card via label with indicator" /></p>
+
+<p>Use this variation when you have a longer status label.</p>
+
+<ol>
+  <li><strong>Background color.</strong> Currently <a href="/foundation/color-palette#grayscale">$color-gray-lightest</a>.</li>
+  <li><strong>Header.</strong> Header that summarizes the card’s content.</li>
+  <li><strong>Status.</strong> Status with indicator. Accommodates longer status labels.</li>
+  <li><strong>Secondary content.</strong> Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.</li>
+  <li><strong>Call to action.</strong> An <a href="/components/link/action">action link</a> should be used for the primary call-to-action. A <a href="/components/link">link</a> may also be used.</li>
+</ol>
+
+<p>You can see these options in use in the <a href="#variations">variations</a> below.</p>
+
+<h2 id="variations">Variations</h2>
+
+<h3 id="choosing-between-variations">Choosing between variations</h3>
+
+<p>Currently (06/2023), there are 3 variations to choose from:</p>
+
+<h4 id="1-default-gray">1. Default gray</h4>
+
+<p>This variation was the previous default and is the Card variation most widely used across VA.gov. Visually, it features a gray background (<code>$color-gray-lightest</code>) with no border or drop shadow. <a href="#benefit-payments">Benefit payments</a> and <a href="#application-status-benefit-application-drafts">Application status</a> are examples of this variation.</p>
+
+<h4 id="2-default-white">2. Default white</h4>
+
+<p>This variation is the <a href="#2-default-white">new default</a> and is codified in a web-component. Content should be structured in the same way. New variations of Card will start with this variation as the base. Currently you may choose to use either the gray or white default Card however, this newer variation is preferred.</p>
+
+<h4 id="3-with-drop-shadow">3. With drop shadow</h4>
+
+<p>Use <a href="#3-with-drop-shadow">this variation</a> for emphasis, for example at the top of a page or section, or as the primary card in a series of cards. When using in a series, use with the default white variation. Do not combine this variation with the default gray variation.</p>
+
+<h3 id="instances-of-this-component-in-production">Instances of this component in production</h3>
+
+<p>There are many instances of the Card component in production. This is not an exhaustive list but does serve to augment the <a href="#examples">examples</a> above and highlight well defined instances of a Card.</p>
+
+<h4 id="appointment">Appointment</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image " alt="An appointment card in MyVA." src="/images/components/card/appointment-mobile.png" width="50%" />
+  <figcaption class="site-component-example__caption">
+    An appointment card in MyVA.
+  </figcaption>
+</figure>
+
+<h4 id="appointment-with-status">Appointment with status</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image " alt="An appointment card with a status of canceled." src="/images/components/card/appointment-canceled-mobile.png" width="50%" />
+  <figcaption class="site-component-example__caption">
+    An appointment card for a canceled appointment.
+  </figcaption>
+</figure>
+
+<h4 id="appointment-large-with-icon">Appointment, large with icon</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image x2" alt="A large appointment card with an icon." src="/images/components/card/appointment-with-icon.png" />
+  <figcaption class="site-component-example__caption">
+    A large appointment card with an icon to identify the card type or category, in this case for an in-person appointment.
+  </figcaption>
+</figure>
+
+<h4 id="claims-status">Claims status</h4>
+
+<figure class="site-component-example ">
+  <img class="site-component-example__image x2" alt="A Claims status card in the Claim Status Tool." src="/images/components/card/card-with-alert-slim.png" />
+  <figcaption class="site-component-example__caption">
+    A Claims status card showing status for a compensation claim with a slim Alert in at a mobile viewport width.
+  </figcaption>
+</figure>
+
+<h4 id="financial-status-report">Financial Status Report</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image x2" alt="A Financial Status Report card." src="/images/components/card/financial-status-report.png" />
+  <figcaption class="site-component-example__caption">
+    A Financial Status Report (VA form 5655) card showing a household expense added with a Link - Active for editing the monthly amount and a Button - Icon for deleting the entry.
+  </figcaption>
+</figure>
+
+<h4 id="media">Media</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image " alt="A media card for the GI Bill Comparison Tool ." src="/images/components/card/media.png" width="50%" />
+  <figcaption class="site-component-example__caption">
+    A media card features an image or icon and contains a call-to-action with a description.
+  </figcaption>
+</figure>
+
+<h4 id="navigation">Navigation</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image x2" alt="A navigation card used in the MyHealtheVet landing page." src="/images/components/card/my-healthevet-mobile.png" />
+  <figcaption class="site-component-example__caption">
+    A navigation card used in the MyHealtheVet landing page which contains a category of links.
+  </figcaption>
+</figure>
+
+<h4 id="number-highlight">Number highlight</h4>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image " alt="A Number highlight card showing a disability rating." src="/images/components/card/disability-rating.png" width="75%" />
+  <figcaption class="site-component-example__caption">
+    A Number Highlight card brings attention to a specific number or statistic.
+  </figcaption>
+</figure>
+
+<h2 id="behavior">Behavior</h2>
+
+<h3 id="calls-to-action">Calls to action</h3>
+
+<ul>
+  <li><strong>Make cards actionable.</strong> A Card should be actionable. That can be accomplished through the use of the <a href="/components/link/action">action link</a> component.</li>
+  <li><strong>Action links for primary CTA.</strong> An <a href="/components/link/action">action link</a> should be used for the primary call-to-action.</li>
+  <li><strong>Max 3 CTAs.</strong> A card should not contain more than three calls-to-action (CTAs).</li>
+  <li><strong>Secondary and tertiary actions.</strong> Secondary and tertiary actions can use the <a href="/components/link/action">secondary variation of action link</a>, an <a href="/components/link/#variations">active or other link variation</a>, or a <a href="/components/link">default link</a>.</li>
+</ul>
+
+<h3 id="communicating-status">Communicating status</h3>
+
+<ul>
+  <li><strong>Tag for status.</strong> Use the <a href="/components/tag">Tag component</a> to communicate status.
+    <ul>
+      <li>NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.</li>
+    </ul>
+  </li>
+  <li><strong>Make accessible color choices.</strong> If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.</li>
+  <li><strong>Color and another.</strong> Never rely on color alone to communicate status.</li>
+</ul>
+
+<h3 id="placement">Placement</h3>
+
+<h4 id="dimensions">Dimensions</h4>
+
+<p>Cards use the following widths:</p>
+
+<ul>
+  <li><a href="/foundation/breakpoints#names-and-values">$xsmall-screen up to $medium-screen</a>:
+    <ul>
+      <li>Card maximum width = 304px</li>
+      <li>Card minimum width = 280px</li>
+    </ul>
+  </li>
+  <li><a href="/foundation/breakpoints#names-and-values">$medium-screen through $large-screen</a> and above:
+    <ul>
+      <li>Card maximum width = 752px</li>
+      <li>Card minimum width = 384px</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="layout">Layout</h4>
+
+<p>Cards can sit inside or outside of a grid layout. Cards start with <a href="/foundation/spacing-units">1.5 spacing units (1.2rem/12px)</a> below each card to separate them. Then the spacing increases to <a href="/foundation/spacing-units">2 spacing units (1.6rem/16px)</a> of margin on all sides at the <a href="/foundation/breakpoints">$medium-screen and above breakpoint</a>.</p>
+
+<h3 id="element-states">Element states</h3>
+
+<ul>
+  <li>When a Card behaves as a link it must have hover, focus, and active states. The hover state should be a 2px solid <a href="/foundation/color-palette#base">$color-primary</a> border. An appropriate focus status would add a 2px solid outline.</li>
+</ul>
+
+<h2 id="code-usage">Code usage</h2>
+
+<h3>Attributes and Properties</h3>
+<table>
+  <tr>
+    <th><strong>Property</strong></th>
+    <th><strong>Attribute</strong></th>
+    <th><strong>Type</strong></th>
+    <th><strong>Default</strong></th>
+    <th><strong>Description</strong></th>
+  </tr>
+  <div>
+    
+    <tr>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">background</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">background</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">boolean</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">false</code></th>
+      <th>If `true`, the card will have a gray background.</th>
+    </tr>
+    
+    <tr>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">showShadow</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">show-shadow</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">boolean</code></th>
+      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">false</code></th>
+      <th>If `true`, a drop-shadow will be displayed with a white background.</th>
+    </tr>
+    
+  </div>
+</table>
+
+<h2 id="not-a-card">Not a Card</h2>
+
+<p>There are a few design elements that look like a Card but do not behave like a Card and are actually instances, or variations, of other components or are simply containers that share the same background color as a Card. These Card adjacent designs should not be thought of as a Card component and do not adhere to the guidelines defined here.</p>
+
+<h3 id="containers-for-links-in-the-mobile-app">Containers for links in the Mobile app</h3>
+
+<figure class="site-component-example ">
+  <img class="site-component-example__image " alt="A mobile link that looks like a Card." src="/images/components/card/not-a-card-mobile-link.png" width="50%" />
+  <figcaption class="site-component-example__caption">
+    Mobile link. Not a Card.
+  </figcaption>
+</figure>
+
+<p>The <a href="https://apps.apple.com/us/app/va-health-and-benefits/id1559609596?platform=iphone">Mobile App</a> uses a Card-like container around an <a href="/components/link/#active-link">active link</a> to make the link a large tap target on mobile. This treatment should be thought of as a mobile-specific link variation rather than an instance of a Card.</p>
+
+<h3 id="containers-for-asking-users-for-multiple-responses-aka-list-and-loop-in-forms">Containers for asking users for multiple responses (aka List and Loop) in forms</h3>
+
+<figure class="site-component-example site-component-example--reverse">
+  <img class="site-component-example__image " alt="A container for an action in a form used in the Ask users for multiple responses (aka List and Loop) pattern." src="/images/components/card/not-a-card-list-and-loop.png" width="50%" />
+  <figcaption class="site-component-example__caption">
+    Container for a button and title. Not a Card.
+  </figcaption>
+</figure>
+
+<p>The <a href="/patterns/ask-users-for/multiple-responses">pattern for asking users for multiple responses</a> (aka List and Loop) uses a Card-like container to enter the loop to edit or remove an item in the list. This treatment is specific to that pattern and should not be thought of as an instance of a Card.</p>
+
+<h3 id="containers-for-radio-button-tiles-and-checkboxes">Containers for radio button tiles and checkboxes</h3>
+
+<figure class="site-component-example ">
+  <img class="site-component-example__image " alt="A container for a checkbox and description in a form." src="/images/components/card/not-a-card-radio-button-tile.png" width="50%" />
+  <figcaption class="site-component-example__caption">
+    Container for a checkbox. Not a Card.
+  </figcaption>
+</figure>
+
+<p>A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the <a href="/components/form/radio-button#tile">Radio button - Tile variation</a>. It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.</p>
+
+<h2 id="content-considerations">Content considerations</h2>
+
+<ul>
+  <li><strong>Concise headers and text.</strong> Keep card content (especially <a href="/content-style-guide/page-titles-and-section-titles#section-titles">header text</a>) short, crisp, and to-the-point: Users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.</li>
+  <li><strong>Translation proof.</strong> Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.</li>
+  <li><strong>Statuses</strong>: Currently, the following status names that are known to be in-use:
+    <ul>
+      <li><a href="https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/">Appeals</a> has over 40 status labels.</li>
+      <li>Appointments:
+        <ul>
+          <li>Upcoming</li>
+          <li>Requested</li>
+          <li>Past</li>
+          <li>Canceled</li>
+        </ul>
+      </li>
+      <li><a href="https://www.va.gov/resources/what-your-claim-status-means/">Claims</a>:
+        <ul>
+          <li>Claim received</li>
+          <li>Initial review</li>
+          <li>Evidence gathering, review, and decision</li>
+          <li>Preparation for notification</li>
+          <li>Complete</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="accessibility-considerations">Accessibility considerations</h2>
+
+<ul>
+  <li><strong>Use the appropriate heading level for your page.</strong> Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.</li>
+  <li><strong>Use unordered lists and list items.</strong> Use a <code>ul</code> for a card group and an <code>li</code> for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.</li>
+  <li><strong>Keyboard navigation.</strong> The tab key should bring focus to the call(s) to action within the card.  The enter key or spacebar should open a <a href="/components/link">Link</a> or <a href="/components/link/action">Link - Action</a>.</li>
+</ul>
+
+<h2 id="related">Related</h2>
+
+<p>Sub-components used in this component:</p>
+
+<ul>
+  <li><a href="/content-style-guide/page-titles-and-section-titles#section-titles">Section titles</a></li>
+  <li><a href="/components/link/action">Link - Action</a></li>
+  <li><a href="/components/tag">Tag</a></li>
+</ul>
+
+
+          
+        </main>
+        
+<div class="vads-u-margin-top--7">
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/edit/main/src/_components/card.md" target="_blank">Edit this page in GitHub</a>
+  (Permissions required)
+</div>
+
+
+        
+
+<div>Last updated: Oct 24, 2024</div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer vads-u-padding-y--5" role="contentinfo">
+  <div class="site-l-wrapper">
+    <div class="medium-screen:vads-u-display--flex medium-screen:vads-u-justify-content--space-between vads-u-align-items--center">
+      <div>
+        <ul class="site-footer__links">
+          <li class=site-footer__links__item>
+            <a href="/about/whats-new">What’s new?</a>
+          </li>
+          <li class=site-footer__links__item>
+            <a href="/about/feedback">Feedback</a>
+          </li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/playbook/" target="_blank">VA.gov playbook</a></li>
+          <li class=site-footer__links__item><a target="_blank" href="https://www.va.gov/accessibility-at-va/">Accessibility</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/web/" target="_blank">Web governance &amp; policies</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-seal">
+        <a href="https://va.gov" class="site-footer__logo" title="Go to VA.gov"><img src="/assets/img/va-logo-white.png" alt="U.S. Department of Veterans Affairs logo"></a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/assets/javascripts/site.js?v=1729796807"></script>
+<script src="/vendor/javascripts/formation.js?v=1729796807"></script>
+
+  </body>
+</html>

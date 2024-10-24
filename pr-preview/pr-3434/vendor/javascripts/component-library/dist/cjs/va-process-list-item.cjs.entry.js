@@ -1,0 +1,30 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+const index = require('./index-cef0edc2.js');
+
+const vaProcessListItemCss = ".usa-sr-only{position:absolute;left:-999em;right:auto}.usa-process-list{font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-size:1.06rem;line-height:1.5;margin-bottom:0;margin-top:0;list-style-type:none;padding-left:0;counter-reset:usa-numbered-list;padding:20px 0 0 calc((2.5rem / 2) - (0.5rem / 2));position:relative}.usa-process-list>li{margin-bottom:0;max-width:unset}.usa-process-list>.usa-process-list__item{max-width:72ex}.usa-process-list__item{border-left:0.5rem solid #d9e8f6;font-size:1.06rem;margin-bottom:0;padding-bottom:2rem;padding-left:calc(calc(\n  (2.5rem / 2) - 0.25rem\n) * 2)}.usa-prose .usa-process-list{font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-size:1.06rem;line-height:1.5;margin-bottom:0;margin-top:0;list-style-type:none;padding-left:0;counter-reset:usa-numbered-list;padding:20px 0 0 calc((2.5rem / 2) - (0.5rem / 2));position:relative}.usa-prose .usa-process-list>li{margin-bottom:0;max-width:unset}.usa-prose .usa-process-list>.usa-process-list__item{max-width:72ex}.usa-prose .usa-process-list__item{border-left:0.5rem solid #d9e8f6;font-size:1.06rem;margin-bottom:0;padding-bottom:2rem;padding-left:calc(calc(\n  (2.5rem / 2) - 0.25rem\n) * 2)}.usa-process-list__item:last-child{border-left:0.5rem solid transparent}.usa-process-list__item::before{-ms-flex-direction:row;flex-direction:row;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;height:2.5rem;border-radius:99rem;width:2.5rem;background-color:white;border:0.25rem solid #1b1b1b;-webkit-box-shadow:0 0 0 0.25rem white;box-shadow:0 0 0 0.25rem white;color:#1b1b1b;content:counter(usa-numbered-list, decimal);counter-increment:usa-numbered-list;display:-ms-flexbox;display:flex;font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-size:1.46rem;font-weight:700;height:2.5rem;left:0;line-height:0.9;margin-top:-0.4rem;position:absolute;width:2.5rem}.usa-process-list__item ul{list-style-type:disc}.usa-process-list__item ul li{margin-bottom:0.25rem}.usa-process-list__item ul li:last-child{margin-bottom:0}.usa-process-list__item>*:first-child{margin-top:0}.usa-process-list__item>*:last-child{margin-bottom:0}.usa-process-list__heading{font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-size:1.46rem;line-height:1.1;color:#1b1b1b;font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-weight:700;margin:0}.usa-process-list__heading+*{margin-top:0.25rem}.usa-process-list__item{display:list-item}va-process-list-item[pending=true] .usa-process-list__heading{color:var(--vads-process-list-color-text-pending-on-light)}va-process-list-item[active=true] .usa-process-list__heading{color:var(--vads-color-primary)}.usa-process-list__heading:is(h1,h2,h3,h4,h5){font-family:var(--font-serif)}h1.usa-process-list__heading{font-size:40px}h2.usa-process-list__heading{font-size:30px}h3.usa-process-list__heading{font-size:20px}h4.usa-process-list__heading{font-size:17px}h5.usa-process-list__heading,h6.usa-process-list__heading{font-size:15px}";
+const VaProcessListItemStyle0 = vaProcessListItemCss;
+
+const VaProcessListItem = class {
+    constructor(hostRef) {
+        index.registerInstance(this, hostRef);
+        this.header = undefined;
+        this.level = 3;
+        this.active = false;
+        this.pending = false;
+        this.checkmark = false;
+    }
+    render() {
+        const { header, level, checkmark, active, pending } = this;
+        // eslint-disable-next-line i18next/no-literal-string
+        const HeaderTag = `h${level}`;
+        return (index.h(index.Host, { key: 'd1b706c813491a6fde5bd055fdf693d69aca15f3', role: "listitem", class: 'usa-process-list__item' }, checkmark || active || pending ?
+            index.h("span", { class: 'sr-only' }, checkmark ? 'Completed:' : active ? 'Current Step:' : pending ? 'Pending:' : null)
+            : null, header ? index.h(HeaderTag, { class: 'usa-process-list__heading' }, header) : null, index.h("slot", { key: '4b570acb800d0187aefe38f55b91adbed06a1ac9' })));
+    }
+};
+VaProcessListItem.style = VaProcessListItemStyle0;
+
+exports.va_process_list_item = VaProcessListItem;

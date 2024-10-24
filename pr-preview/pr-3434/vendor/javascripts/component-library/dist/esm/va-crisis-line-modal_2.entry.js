@@ -1,0 +1,144 @@
+import { r as registerInstance, h, H as Host, g as getElement, c as createEvent, f as forceUpdate } from './index-f0e1e12e.js';
+import { C as CONTACTS } from './contacts-c39c7b78.js';
+import { i as instance } from './i18next-858cee77.js';
+
+const vaCrisisLineModalCss = "button:not([disabled]):focus,select:not([disabled]):focus,a:not([disabled]):focus,h1:focus,input:not([disabled]):focus,textarea:not([disabled]):focus,#form-question [role='option']:focus{outline:2px solid var(--vads-color-action-focus-on-light);outline-offset:2px}.va-crisis-line-container{position:relative;margin:auto;background-color:var(--vads-color-secondary-dark)}@media (min-width: 1008px){.va-crisis-line-container{max-width:60.938rem;background-color:transparent}}a{color:var(--vads-color-link)}button.va-crisis-line{cursor:pointer;background-color:var(--vads-color-secondary-darkest);display:block;border-radius:0;color:var(--vads-button-color-text-primary-alt-on-light);font-family:var(--font-source-sans);font-size:16px;font-weight:normal;text-decoration:none;padding:0;margin:0;width:100%;border:0;-webkit-transition-duration:0.3s;transition-duration:0.3s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;-webkit-transition-property:background-color;transition-property:background-color}button.va-crisis-line:focus{outline-offset:-2px}button.va-crisis-line:hover,button.va-crisis-line:active{background-color:#8b0a03}@media (min-width: 1008px){button.va-crisis-line:hover .va-crisis-line-icon,button.va-crisis-line:active .va-crisis-line-icon{background-color:#b51d09}}@media (min-width: 1008px){button.va-crisis-line{width:auto;border-radius:0 0 2.3px 2.3px;-webkit-box-shadow:0 2px 5px var(--vads-color-base);box-shadow:0 2px 5px var(--vads-color-base)}}.va-crisis-line-inner{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;margin:auto}@media (min-width: 1008px){.va-crisis-line-inner{text-align:left;-ms-flex-pack:justify;justify-content:space-between}}.va-crisis-line-icon{content:\"\";background:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 96 60%22 width%3D%2296px%22 height%3D%2260px%22%3E%3Cpath d%3D%22M58 14c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zM58 30c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zM58 46c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm-48 2L32 60h-2V48H4c-2.20914 0-4-1.79086-4-4V4c0-2.20914 1.79086-4 4-4h40c2.20914 0 4 1.79086 4 4v40c0 2.20914-1.79086 4-4 4h-2zM24 31.72174L33.86667 39l-3.73334-11.86087L40 20.13043H28L24 8l-4 12.13043H8l9.86667 7.0087L14.13333 39 24 31.72174z%22 fill%3D%22%23FFF%22 fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E\") no-repeat right 29%;background-size:30px auto;background-position:8px 8px;width:40px;height:36px;padding-right:3px;-webkit-transition-duration:0.3s;transition-duration:0.3s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;-webkit-transition-property:background-color;transition-property:background-color}@media (max-width: 480px){.va-crisis-line-icon{display:none}}@media (min-width: 1008px){.va-crisis-line-icon{border-bottom-left-radius:3.2px}}.va-crisis-line-text{padding:8px}.va-icon__right-arrow{position:relative;top:2px}.va-clm__icon{position:relative;top:15px;margin-right:23px}.va-crisis-panel{color:var(--vads-color-base)}.va-crisis-panel-body{max-height:100%}.va-crisis-panel-title{color:var(--vads-color-base);padding-left:41px;background-image:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox%3D%220 0 96 60%22 width%3D%2296px%22 height%3D%2260px%22%3E%3Cpath d%3D%22M58 14c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zM58 30c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zM58 46c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm16 0c-3.3137 0-6-2.6863-6-6s2.6863-6 6-6 6 2.6863 6 6-2.6863 6-6 6zm-48 2L32 60h-2V48H4c-2.20914 0-4-1.79086-4-4V4c0-2.20914 1.79086-4 4-4h40c2.20914 0 4 1.79086 4 4v40c0 2.20914-1.79086 4-4 4h-2zM24 31.72174L33.86667 39l-3.73334-11.86087L40 20.13043H28L24 8l-4 12.13043H8l9.86667 7.0087L14.13333 39 24 31.72174z%22 fill%3D%22%23FFF%22 fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E\") no-repeat left;background-position:left 5px;background-size:32px auto}.va-crisis-panel-list{list-style:none;padding:0}.va-crisis-panel-list>li{display:-ms-flexbox;display:flex;min-height:56px;margin-bottom:0;border-top:1px solid var(--vads-color-base-light)}.va-crisis-panel-list>li:last-child{border-bottom:1px solid var(--vads-color-base-light)}.va-crisis-panel-list>li>a,.va-crisis-panel-list>li>span{padding:8px 0;-ms-flex-item-align:center;align-self:center}";
+const VaCrisisLineModalStyle0 = vaCrisisLineModalCss;
+
+const VACrisisLineModal = class {
+    constructor(hostRef) {
+        registerInstance(this, hostRef);
+        this.isOpen = false;
+        this.shifted = false;
+    }
+    setVisible() {
+        this.isOpen = true;
+    }
+    setNotVisible() {
+        this.isOpen = false;
+    }
+    // This keydown event listener tracks if the shift key is held down while changing focus
+    trackShiftKey(e) {
+        this.shifted = e.shiftKey;
+    }
+    // Redirects focus back to the modal, if the modal is open/visible
+    trapFocus() {
+        var _a;
+        const modal = (_a = this.el) === null || _a === void 0 ? void 0 : _a.shadowRoot.querySelector('va-modal');
+        const modalVisible = modal === null || modal === void 0 ? void 0 : modal.getAttribute('visible');
+        if (modalVisible !== null && modalVisible !== 'false') {
+            let focusedChild;
+            const query = this.shifted
+                ? '.last-focusable-child'
+                : '[role="document"]';
+            if (this.shifted) {
+                focusedChild = modal === null || modal === void 0 ? void 0 : modal.querySelector(query);
+            }
+            else {
+                focusedChild = modal === null || modal === void 0 ? void 0 : modal.shadowRoot.querySelector(query);
+            }
+            focusedChild === null || focusedChild === void 0 ? void 0 : focusedChild.focus();
+        }
+    }
+    render() {
+        return (h(Host, { key: '4e90c5d4db78e8d37d4e72bd00d723ffc207fd5c' }, h("div", { key: 'bc05ef2144c56cbf0d60a7f7da955ba36209654d', class: "va-crisis-line-container" }, h("button", { key: 'a7f4581ecfb67abd60ebc58153908bd1ceb4430f', onClick: () => this.setVisible(), onFocusin: () => this.trapFocus(), "data-show": "#modal-crisisline", class: "va-crisis-line va-overlay-trigger", part: "button" }, h("div", { key: '1c34f4579d7db003d731b0b9e69f0f58bc642caf', class: "va-crisis-line-inner" }, h("span", { key: 'dd11b1684c385712e0df2ee09861fecd92bdf93d', class: "va-crisis-line-icon", "aria-hidden": "true" }), h("span", { key: '8dfebbee9eb46675094e07963a68d85d1472afe1', class: "va-crisis-line-text" }, "Talk to the ", h("strong", { key: 'de53465ae24dfea04d8cccd9ad881a15bf0b590b' }, "Veterans Crisis Line"), " now"), h("va-icon", { key: 'dd02180de69097e0c09bbd74891cc87bf6566ea3', class: "va-icon__right-arrow", icon: "navigate_next", size: 3 })))), h("va-modal", { key: 'a0ab2dcc7e9db96f1874e74b8924aefde1ed9b90', modalTitle: "We\u2019re here anytime, day or night \u2013 24/7", onPrimaryButtonClick: () => this.setNotVisible(), onCloseEvent: () => this.setNotVisible(), visible: this.isOpen, large: true }, h("p", { key: 'a8cc0770ab7cb8cd2791f5a25f578251012cbe49' }, "If you are a Veteran in crisis or concerned about one, connect with our caring, qualified responders for confidential help. Many of them are Veterans themselves."), h("ul", { key: 'dfea79a845e3959b397f820b6fac4a7312a07261', class: "va-crisis-panel-list" }, h("li", { key: 'c7e18da47b5bb5bca1edb9000c3de4769fdb9cfd' }, h("va-icon", { key: '691a03eb6546edfa64c961d04ab184400844616a', class: "va-clm__icon", icon: "phone", size: 3 }), h("span", { key: '9d184d69e2c256469858a428da0ccfab6504b0a0' }, "Call", ' ', h("strong", { key: '59999060bbfd8b2eed02710e3c9519d15cc0ffc7' }, h("va-telephone", { key: '05ce0783810af34eb1641bea00b68fed4d0ba143', contact: "988" }), " and select 1"))), h("li", { key: '5f8cbde7e495ce7d0a0503fe4d59dc6136907d92' }, h("va-icon", { key: '55a91221adf00df947fdc0a712a4d40bd7623302', icon: "phone_iphone", class: "va-clm__icon", size: 3 }), h("span", { key: '80bb0f592dc03bdcac6992ced2b9b270eb3c329a' }, "Text\u00A0", h("strong", { key: 'c42270b926bb76f289265631800dda850654ea4e' }, h("va-telephone", { key: '5d746961661530563939267adcdd8d185dc5e5c7', sms: true, contact: "838255" })))), h("li", { key: '75e9e7b146d90901f36e34e21fda6c49ee5a9c85' }, h("va-icon", { key: 'd8fcdf74c85119f7623a12f0ca3c4d7b4a429438', icon: "chat", class: "va-clm__icon", size: 3 }), h("a", { key: '76fcf1c4b288aea711068a7d325fe8b976ab3539', class: "no-external-icon", href: "https://www.veteranscrisisline.net/get-help-now/chat/" }, "Start a confidential chat")), h("li", { key: 'f359a96b1f39f9bf5e9082b6563be99b6f5d608b' }, h("va-icon", { key: 'b76ffa21861676d1d515df138f18e0689cda4e1b', icon: "tty", class: "va-clm__icon", size: 3 }), h("p", { key: '9ad60032abc74eab181cbc1aea3fb70906286b7d' }, "Call TTY if you have hearing loss", ' ', h("strong", { key: '7f4d6d6b4a68ff6fe773f302fceceb0b6f20e83f' }, h("va-telephone", { key: '4466d858b720245c9e7726240b3e70ee29c2acfa', tty: true, contact: CONTACTS.CRISIS_TTY }))))), h("p", { key: '63d09c7339f8858c969e9d6ced03a06aa7c01237' }, "Get more resources at", ' ', h("a", { key: '34483ed00ac1ce1365f685bd4cf2816314fa0ddc', class: "no-external-icon", href: "https://www.veteranscrisisline.net/" }, "VeteransCrisisLine.net")))));
+    }
+    get el() { return getElement(this); }
+};
+VACrisisLineModal.style = VaCrisisLineModalStyle0;
+
+const iconHttpsSvg = 'data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMzIgMGMxNy42NzMgMCAzMiAxNC4zMjcgMzIgMzJzLTE0LjMyNyAzMi0zMiAzMi0zMi0xNC4zMjctMzItMzIgMTQuMzI3LTMyIDMyLTMyem0wIDEuMjA4Yy0xNy4wMDYgMC0zMC43OTIgMTMuNzg2LTMwLjc5MiAzMC43OTJzMTMuNzg2IDMwLjc5MiAzMC43OTIgMzAuNzkyIDMwLjc5Mi0xMy43ODYgMzAuNzkyLTMwLjc5Mi0xMy43ODYtMzAuNzkyLTMwLjc5Mi0zMC43OTJ6bTAgMTguODg2YTcuMjQ1IDcuMjQ1IDAgMCAxIDcuMjQ1IDcuMjQ1djMuMTAzaC41MmMuODYgMCAxLjU1Ny42OTggMS41NTcgMS41NTh2OS4zMjJjMCAuODYtLjY5NyAxLjU1OC0xLjU1NyAxLjU1OGgtMTUuNTNjLS44NiAwLTEuNTU3LS42OTctMS41NTctMS41NTh2LTkuMzIyYzAtLjg2LjY5Ny0xLjU1OCAxLjU1Ny0xLjU1OGguNTJ2LTMuMTAyYTcuMjQ1IDcuMjQ1IDAgMCAxIDcuMjQ1LTcuMjQ2em0wIDMuMTAzYTQuMTQyIDQuMTQyIDAgMCAwIC00LjE0MiA0LjE0MnYzLjEwM2g4LjI4NHYtMy4xMDJhNC4xNDIgNC4xNDIgMCAwIDAgLTQuMTQyLTQuMTQzeiIgZmlsbD0iIzcxOWYyYSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+';
+
+const iconDotGovSvg = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiB2aWV3Qm94PSIwIDAgNjQgNjQiPjx0aXRsZT5pY29uLWRvdC1nb3Y8L3RpdGxlPjxwYXRoIGZpbGw9IiMyMzc4QzMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMyIDBjMTcuNjczIDAgMzIgMTQuMzI3IDMyIDMyIDAgMTcuNjczLTE0LjMyNyAzMi0zMiAzMkMxNC4zMjcgNjQgMCA0OS42NzMgMCAzMiAwIDE0LjMyNyAxNC4zMjcgMCAzMiAwem0wIDEuMjA4QzE0Ljk5NCAxLjIwOCAxLjIwOCAxNC45OTQgMS4yMDggMzJTMTQuOTk0IDYyLjc5MiAzMiA2Mi43OTIgNjIuNzkyIDQ5LjAwNiA2Mi43OTIgMzIgNDkuMDA2IDEuMjA4IDMyIDEuMjA4em0xMC41OSAzOC44NThhLjg1Ny44NTcgMCAwIDEgLjg4Mi44MjJ2MS42NDJIMTguODg2di0xLjY0MmEuODU3Ljg1NyAwIDAgMSAuODgyLS44MjJINDIuNTl6TTI1LjQ0MyAyNy43NzR2OS44MjloMS42NDJ2LTkuODNoMy4yNzN2OS44M0gzMnYtOS44M2gzLjI3MnY5LjgzaDEuNjQzdi05LjgzaDMuMjcydjkuODNoLjc2YS44NTcuODU3IDAgMCAxIC44ODIuODIxdi44MjFoLTIxLjN2LS44MDlhLjg1Ny44NTcgMCAwIDEgLjg4LS44MmguNzYydi05Ljg0MmgzLjI3MnptNS43MzYtOC4xODhsMTIuMjkzIDQuOTE1djEuNjQyaC0xLjYzYS44NTcuODU3IDAgMCAxLS44ODIuODIySDIxLjQxYS44NTcuODU3IDAgMCAxLS44ODItLjgyMmgtMS42NDJ2LTEuNjQybDEyLjI5My00LjkxNXoiLz48L3N2Zz4=';
+
+const vaOfficialGovBannerCss = "p,a,ol,ul,li,dl,dt,dd,form,label,button{font-family:Source Sans Pro Web, \"Source Sans Pro\", \"Helvetica Neue\", Helvetica, Arial, sans;font-size:1.06rem;line-height:1.5}:host{display:block}.banner{background-color:#f0f0f0;font-size:12px;line-height:1.5;padding-bottom:0}.accordion{color:#1b1b1b;line-height:1.5;list-style-type:none;margin:0;padding:0;width:100%}.grid-col-fill{-ms-flex:1 1 0%;flex:1 1 0%;min-width:1px}.grid-col-auto,.grid-col-fill{-ms-flex:0 1 auto;flex:0 1 auto;width:auto;max-width:100%}.grid-row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-0.469rem;margin-right:-0.469rem;margin-top:0;margin-bottom:0}.col{-ms-flex-align:start;align-items:flex-start;display:-ms-flexbox;display:flex;-ms-flex:0 0 46%;flex:0 0 46%;padding-left:0.469rem;padding-right:0.469rem}@media (max-width: 767px){.col{-ms-flex:unset;flex:unset}}#header{padding-bottom:6px;padding-top:6px;position:relative}#header.expanded .header-action{display:none}@media (max-width: 767px){#header{min-height:32px}#header.expanded{padding-right:56px}}.inner{margin-left:auto;margin-right:auto;max-width:1024px;padding-left:16px;padding-right:16px;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:start;align-items:flex-start;padding-right:0}.header-flag{float:left;margin-right:8px;width:16px}.header-text{font-size:12px;margin-bottom:2px;margin-right:5px;margin-top:2px;line-height:1.1}.header-action{color:#005ea2;font-size:12px;line-height:1.1;margin-bottom:0;margin-top:2px;text-decoration:underline}@media (min-width: 768px){.header-action{display:none}}button:not([disabled]):focus{outline:2px solid var(--vads-color-action-focus-on-light)}button[aria-expanded=false],button[aria-expanded=true]{background-image:none}@media (max-width: 767px){button{width:100%}}button{border:0;color:#005ea2;font-size:12px;margin:0;margin-left:0.313rem;padding-left:0;padding-right:0;position:relative}@media (max-width: 767px){button{-webkit-font-smoothing:inherit;background-color:transparent;border:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none;margin:0;margin-bottom:-4px;text-align:left;left:0;position:absolute;bottom:0;top:0;color:#005ea2;display:block;height:auto;line-height:1.1;padding:0;text-decoration:none;width:100%}}button:hover{color:#1a4480;cursor:pointer}.button-text{position:absolute;left:-999em;right:auto;text-decoration:underline}@media (min-width: 768px){.button-text{position:static;display:inline}}@media (max-width: 767px){#header .header-action::after,#header.expanded .header-action::after{background-color:#005ea2}#header.expanded .header-action::after,#header .header-action::after{background:0 0;background-color:#005ea2;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain;mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain;display:inline-block;height:18px;width:18px;content:\"\";vertical-align:middle;margin-left:2px}}@media (min-width: 768px){button::after,button:hover::after{background-color:#005ea2;position:absolute}button::after,#header.expanded button::after{background:0 0;background-color:#005ea2;display:inline-block;height:18px;width:18px;content:\"\";vertical-align:middle;margin-left:2px;top:-1px}button::after{-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain;mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain}#header.expanded button::after{-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain;mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain}}@media (max-width: 767px){button[aria-expanded=true]:after{bottom:0;top:0;position:absolute;right:0}@supports ((-webkit-mask: url()) or (mask: url())){button[aria-expanded=true]::after{background:0 0;background-color:#005ea2 !important;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/24px 24px;mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/24px 24px}}button[aria-expanded=true]::after,button[aria-expanded=true]:before{position:absolute;content:\"\";height:48px;width:48px;bottom:0;top:0;right:0}button[aria-expanded=true]::after{background:0 0;background-color:#005ea2;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain;mask:url(\"data:image/svg+xml,%3Csvg xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width%3D%2224%22 height%3D%2224%22 viewBox%3D%220 0 24 24%22%3E%3Cpath d%3D%22M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z%22%2F%3E%3C%2Fsvg%3E\") no-repeat center/contain;display:inline-block;height:48px;width:48px;content:\"\";vertical-align:middle;margin-left:0}button[aria-expanded=true]:before{background-color:#dfe1e2;display:block}}button::after{position:absolute}.content{margin-left:auto;margin-right:auto;max-width:1024px;background-color:transparent;font-size:16px;overflow:hidden;padding:24px 32px 16px 16px}.content img{-ms-flex-negative:0;flex-shrink:0;margin-right:8px;width:45px}.content .media-block{-ms-flex:1 1 0%;flex:1 1 0%}.content svg{height:1.5ex;width:1.21875ex}.content p{margin-top:0;-webkit-margin-after:1em;margin-block-end:1em}";
+const VaOfficialGovBannerStyle0 = vaOfficialGovBannerCss;
+
+const VaOfficialGovBanner = class {
+    constructor(hostRef) {
+        registerInstance(this, hostRef);
+        this.componentLibraryAnalytics = createEvent(this, "component-library-analytics", 7);
+        this.handleClick = () => {
+            var _a, _b, _c;
+            const content = (_a = this.el.shadowRoot) === null || _a === void 0 ? void 0 : _a.querySelector('.content');
+            const button = (_b = this.el.shadowRoot) === null || _b === void 0 ? void 0 : _b.querySelector('button');
+            const header = (_c = this.el.shadowRoot) === null || _c === void 0 ? void 0 : _c.querySelector('div#header');
+            button.setAttribute('aria-expanded', button.getAttribute('aria-expanded') === 'true'
+                ? 'false'
+                : 'true');
+            header.classList.toggle('expanded');
+            // Toggle the hidden attribute on the content.
+            content.hidden ? content.removeAttribute('hidden') : content.setAttribute('hidden', 'true');
+            if (!this.disableAnalytics) {
+                const isOpen = button.getAttribute('aria-expanded') === 'true';
+                const detail = {
+                    componentName: 'va-official-gov-banner',
+                    action: isOpen ? 'expand' : 'collapse',
+                };
+                this.componentLibraryAnalytics.emit(detail);
+            }
+        };
+        /**
+         * This will add <strong> tags around the
+         * matching TLD value (.gov or .mil) in the text that is provided
+         * and the innerHTML of the element will be updated.
+         */
+        this.govSiteExplanationText = () => {
+            var _a;
+            const el = (_a = this.el.shadowRoot) === null || _a === void 0 ? void 0 : _a.querySelector('.gov-site-explanation-text');
+            if (el) {
+                const text = instance.t('gov-site-explanation', { tld: this.tld });
+                if (text) {
+                    el.innerHTML = text.replace(`.${this.tld}`, `<strong>.${this.tld}</strong>`);
+                }
+            }
+        };
+        /**
+         * This will add <strong> tags around various words in the text that is provided
+         * as well as add the SVG lock image.
+         */
+        this.govSiteLockText = () => {
+            var _a;
+            const el = (_a = this.el.shadowRoot) === null || _a === void 0 ? void 0 : _a.querySelector('.gov-site-lock-text');
+            // eslint-disable-next-line i18next/no-literal-string
+            const lockSvg = `(&nbsp;<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" role="img" aria-labelledby="banner-lock-description" focusable="false">
+    <title id="banner-lock-title">Lock</title>
+    <desc id="banner-lock-description">Locked padlock icon</desc>
+    <path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path>
+    </svg></span>&nbsp;)`;
+            let html = instance.t('gov-site-lock', { image: 'SVG', tld: this.tld });
+            html = html.replace('SVG', lockSvg);
+            html = html.replace('lock', `<strong>lock</strong>`);
+            html = html.replace('candado', `<strong>candado</strong>`);
+            html = html.replace('https://', `<strong>https://</strong>`);
+            if (el) {
+                el.innerHTML = html;
+            }
+        };
+        this.disableAnalytics = false;
+        this.tld = 'gov';
+    }
+    connectedCallback() {
+        instance.on('languageChanged', () => {
+            forceUpdate(this.el);
+        });
+    }
+    disconnectedCallback() {
+        instance.off('languageChanged');
+    }
+    componentDidLoad() {
+        // Initial loading of formatted text.
+        this.govSiteExplanationText();
+        this.govSiteLockText();
+    }
+    render() {
+        const { tld } = this;
+        if (tld === 'gov' || tld === 'mil') {
+            return (h(Host, { key: '7869b4f29a61109e708b0b812f2f211c77ebe207' }, h("div", { key: '1917bf586f23db18d8f8d478a9527fcff2205eba', class: "banner" }, h("div", { key: '25f9b3966635fe3b1d2da5fe70a71fd11a307c20', class: "accordion" }, h("div", { key: '356b803c72b3cf83e8450a2dcd5a94e44a6f1e58', id: "header" }, h("div", { key: '49111939f4236ee2a15ef1ab64215833912519ed', class: "inner" }, h("div", { key: '3bb1a2198a638a540204f82f12d030b732023741', class: "grid-col-auto" }, h("img", { key: 'b66cea16919e69bbb2c3d03f400d32326b4c8d35', role: "presentation", class: "header-flag", src: "https://s3-us-gov-west-1.amazonaws.com/content.www.va.gov/img/tiny-usa-flag.png", alt: "" })), h("div", { key: '302252b34a8ba9d10ad2da69e02e3ec40960c6b1', class: "grid-col-fill", "aria-hidden": "true" }, h("p", { key: 'eee51d08d14cd5975b4d729582779be8d07dc8aa', class: "header-text" }, instance.t('gov-site-label')), h("p", { key: '417c200daf3e4d587e480e5d711b13082fcb83fe', class: "header-action" }, instance.t('gov-site-button'))), h("button", { key: '74592195c2409306705ad662985ade6092a91cbe', onClick: this.handleClick, type: "button", "aria-expanded": "false", "aria-controls": "official-gov-banner" }, h("span", { key: '80f36bb8be8553548abdeb381563e87b18e5e112', class: "button-text" }, instance.t('gov-site-button'))))), h("div", { key: 'a030f5f60ff2df42dd3b1b1d3f2c166e16e926f5', class: "content", id: "official-gov-banner", hidden: true }, h("div", { key: 'd1d5fc20349f14c8f0d016db2b1c247e8299ab20', class: "grid-row" }, h("div", { key: '7fc85f0756a6300403c71949ecf1a30548fce1ca', class: "col" }, h("img", { key: 'cd2f510b514a7e84258e555a5e459fdf48473263', src: iconHttpsSvg, role: "presentation", alt: "" }), h("div", { key: '3f2f7b9a2ab9c70d9a80cc0d1be645f1980990a1', class: "media-block" }, h("p", { key: '6f6852b6484352e74ef942736616389be028dfbf' }, h("strong", { key: 'e2b1d94e183ee1cf46c60e361cb12567cc64041d' }, instance.t('gov-site-website', { tld })), h("br", { key: '618e591cad753873414998ceb66d3f4e693f316e' }), h("span", { key: '9912992f63c631e199cee6154b5fcfe9d37b993d', class: "gov-site-explanation-text" }, this.govSiteExplanationText())))), h("div", { key: 'f8ad1d503009409195f21d1c1d9fde04d6fc54e4', class: "col" }, h("img", { key: 'f0d4c7dfae9033416d9efc656dd6ef91c000eeeb', src: iconDotGovSvg, role: "presentation", alt: "" }), h("div", { key: 'd543254a725a00b887f1bd3b61a2ae00373d5e99', class: "media-block" }, h("p", { key: '96a91d463ce139ab688cb955186e9ca6679af047' }, h("strong", { key: '39878bbcaaab8a6cba50cdd6e8dd724d9a3dbafa' }, instance.t('gov-site-https', { tld })), h("br", { key: '3a4861f344650125aacddd082d2a55aa658204ff' }), h("span", { key: '019edac97e6ce44ae7a6a464911b4590019a372b', class: "gov-site-lock-text" }, this.govSiteLockText()))))))))));
+        }
+    }
+    get el() { return getElement(this); }
+};
+VaOfficialGovBanner.style = VaOfficialGovBannerStyle0;
+
+export { VACrisisLineModal as va_crisis_line_modal, VaOfficialGovBanner as va_official_gov_banner };

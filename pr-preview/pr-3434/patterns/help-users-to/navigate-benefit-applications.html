@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Navigate benefit applications - VA.gov Design System </title>
+  <meta name="description" content="Each benefit application has four epics: Eligibility, How to apply, Apply now, and After you apply.">
+
+  
+
+  
+
+  <!-- Web component setup -->
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css?v=1729796807" />
+  <script type="module">
+    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    defineCustomElements();
+</script>
+
+  <!-- Icons -->
+  <link href="/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+  <link href="/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="/assets/img/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="/assets/img/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+
+  <link rel="stylesheet" href="/formation.min.css?v=1729796807">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css?v=1729796807">
+  <link rel="canonical" href="https://design.va.gov/patterns/help-users-to/navigate-benefit-applications">
+  <link rel="alternate" type="application/rss+xml" title="VA.gov Design System" href="https://design.va.gov/feed.xml">
+
+  <script src="/assets/javascripts/polyfills/array.from.js?v=1729796807"></script>
+
+</head>
+  <body>
+
+    
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+
+<section class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="" style="padding-left:24px;">
+      <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        Here's how you know
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="site-header" role="banner">
+
+  <div class="site-l-wrapper">
+    <div class="site-header__masthead">
+      <div class="site-header__logo" id="extended-logo">
+        <em class="site-header__logo-text">
+          <a class="site-header__logo-link" title="VA.gov Design System homepage" href="/"><strong class="vads-u-display--block small-screen:vads-u-display--inline">VA.gov</strong> <span class="vads-u-display--none small-screen:vads-u-display--inline">|</span> Design System</a>
+        </em>
+      </div>
+      <div class="site-header__utility-links">
+        <div id="search-container" class="site-search-container">
+          <i class="fas fa-search search-icon"></i>
+          <form action="/results" method="get" id="search-form" class="search-form">
+          <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+          </form>
+          <ul id="results-container" class="site-search-results" role="listbox"></ul>
+        </div>
+      </div>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
+  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <form action="/results" method="get" id="mobile-search-form" class="search-form">
+    <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+  </form>
+  <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
+</div>
+
+
+    <nav class="va-sidebarnav site-mobile-nav" id="mobile-nav">
+  <button id="close_mobile_nav_button" class="site-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fas fa-times"></i></button>
+  <ul class="usa-accordion">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false" aria-controls="nav-a1">About</button>
+  </li>
+  <div id="nav-a1" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/about">Overview</a>
+      </li>
+      
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/">Accessibility</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-annotations">Accessibility annotations for VA.gov applications</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-testing-for-design-system-components">Accessibility testing for design system components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved">Add a component or pattern once approved</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/contributing">Contributing</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/">Contributing to the design system</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/creating-components">Creating components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/design-libraries">Design libraries</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/principles">Design principles</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/experience-standards/">Experience Standards</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/experimental-components-and-patterns">Experimental components and patterns</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/feedback">Feedback</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/figma-at-va">Figma at VA</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/focus-management">Focus management</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/content-writers">For content writers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/">For designers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/">For developers</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/implementing-design-work">Implementing design work</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/install">Install</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/maturity-scale">Maturity scale</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/naming">Naming convention</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-a-removal">Suggest a removal</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-an-addition-or-update">Suggest an addition or update</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/updating-this-site">Updating this site</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/using-web-components">Using Web Components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/whats-new">What’s new?</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a2">
+      Content
+    </button>
+  </li>
+  <div id="nav-a2" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/content-style-guide">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/abbreviations-and-acronyms">Abbreviations and acronyms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/access">Access messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/alternative-text-for-images">Alternative text for images</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/avoid-branded-names">Avoid branded names</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bold-text">Bold & italic text</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bulleted-lists">Bulleted lists</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/button-labels">Button labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/capitalization">Capitalization</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/content-principles">Content principles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/dates-and-numbers">Dates, times, phone numbers, and addresses</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/define-complex-terms">Define complex terms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/destigmatizing-language-in-substance-use">Destigmatizing language in substance use</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-idioms">Don’t use idioms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-jargon">Don’t use jargon</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/engagement">Engagement messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/">Error messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/feedback">Feedback messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/form-labels">Form labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/government-forms">Government forms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/">Health content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/links">Links</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/naming-and-labels">Naming and labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/neutral-and-inclusive-language">Neutral and inclusive language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/numbers">Numbers</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/page-titles-and-section-titles">Page titles and section titles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/payments-and-debts">Payments and debts</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/">Plain language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/punctuation">Punctuation</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification">Sign in and identity verification</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/sign-up-for-updates">Sign up for updates</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/">Specific topics and programs</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/structure-your-content">Structure your content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/system">System messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/they-their">They, their</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/title-tags">Title tags</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/trademarks">Trademarks</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-active-voice">Use active voice</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-contractions">Use contractions</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-pronouns">Use pronouns</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-short-sentences">Use short sentences</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-simple-words-and-terms">Use simple words and terms</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/we-us-you">We, us, you</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/web-policies-and-directives">Web policies and directives</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/word-list">Word list</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/seo">Writing for SEO</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a3">
+      Foundation
+    </button>
+  </li>
+  <div id="nav-a3" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/background-color">Background color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/border">Border</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/breakpoints">Breakpoints</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/color-palette">Color palette</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/design-tokens">Design tokens</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/display">Display</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/flexbox">Flexbox</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/flexbox-grid">Flexbox grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/float-grid">Float grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-family">Font family</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-size">Font size</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-style">Font style</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-weight">Font weight</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/height-and-width">Height and width</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/icons">Icons</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/image-aspect-ratios">Image aspect ratios</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/">Layout</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/line-height">Line height</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/logos">Logos</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/margins">Margins</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/measure">Measure</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/padding">Padding</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/page-layouts">Page layouts</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/position">Position</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/spacing-units">Spacing units</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-color">Text Color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-align">Text align</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-decoration">Text decoration</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/typography">Typography</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/">Utilities</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/visibility">Visibility</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a4">
+      Components
+    </button>
+  </li>
+  <div id="nav-a4" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/components">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/accordion">Accordion</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/additional-info">Additional info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/address-block">Address block</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/">Alert</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-expandable/">Alert - Expandable</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-sign-in/">Alert - Sign-in</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/autosave">Autosave</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/back-to-top">Back to top</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/">Banner</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/maintenance">Banner - Maintenance</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/official-gov">Banner - Official Gov</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/promo">Banner - Promo</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/breadcrumbs">Breadcrumbs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/">Button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-icon">Button - Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-group">Button group</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/card">Card</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/checkbox">Checkbox</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/crisis-line-modal">Crisis Line Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/date-input">Date input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/divider">Divider</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/file-input">File input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/">Footer</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/footer-minimal">Footer - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/">Form</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/">Header</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/header-minimal">Header - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/icon">Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/input-message">Input message</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/label">Label</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/language-toggle">Language toggle</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/">Link</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/action">Link - Action</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/collection">Link - Collection</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/deep-content">Link - Deep content</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/list">List</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/loading-indicator">Loading indicator</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/memorable-date">Memorable date</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/">Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/need-help">Need help?</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/notification">Notification</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/omb-info">OMB info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/on-this-page">On this page</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/pagination">Pagination</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/penalty-notice">Penalty notice</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/prefill">Prefill</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/privacy-agreement">Privacy Agreement</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/process-list">Process list</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/progress-bar/">Progress bar - Activity</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/progress-bar-segmented">Progress bar - Segmented</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/radio-button">Radio button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/redirects">Redirects</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/search-input">Search Input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/select">Select</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/sidenav">Sidenav</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/statement-of-truth">Statement of truth</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/summary-box">Summary box</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/table">Table</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tabs">Tabs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tag">Tag</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/telephone">Telephone</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/text-input">Text input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/textarea">Textarea</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/">URLs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/vanity-urls">Vanity URLs</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="true" aria-controls="nav-a5">
+      Patterns
+    </button>
+  </li>
+  <div id="nav-a5" class="usa-accordion-content" aria-hidden="false">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/patterns">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-mutually-exclusive-answer">A mutually exclusive answer</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-single-response">A single response</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/addresses">Addresses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-answers">Check answers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-eligibility">Check eligibility</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-personal-information">Check personal information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/complete-a-sub-task">Complete a sub task</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/contact-preferences">Contact preferences</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/dates">Dates</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/direct-deposit">Direct deposit</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/email-address">Email address</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/feedback">Feedback</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/files">Files</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/gender">Gender</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/housing-status">Housing status</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/keep-a-record-of-submitted-information">Keep a record of submitted information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/know-how-their-information-is-updated">Know how their information is updated</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/multiple-responses">Multiple responses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/names">Names</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-a-long-list">Navigate a long list</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="active-level">
+              <a class="usa-current" href="/patterns/help-users-to/navigate-benefit-applications">Navigate benefit applications</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/phone-numbers">Phone numbers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/pronouns">Pronouns</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/race-and-ethnicity">Race and ethnicity</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/recover-from-errors">Recover from errors</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/relationship">Relationship to Veteran</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/service-history">Service history</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/sign-in">Sign-in</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/signature">Signature</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/social-security-number">Social security or VA file number</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/stay-informed-of-their-application-status">Stay informed of their form submission status</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/wizards">Wizard</a>
+            </li>
+          
+          
+      
+    </ul>
+  </div>
+  </ul>
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-mobile-nav__link site-mobile-nav__link--icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+    </svg>
+    Submit Issue
+  </a>
+</nav>
+
+    <div> <!-- random div? -->
+
+    <div class="site-top-nav-wrapper site-l-wrapper sticky">
+  <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/about">About</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/content-style-guide">Content</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/foundation">Foundation</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/components">Components</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link  current " href="/patterns">Patterns</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/templates">Templates</a>
+      </li>
+    </ul>
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-header__nav-item__link site-header__nav-item__link--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+          </svg>
+          Submit Issue
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <div class="site-content vads-u-margin-bottom--9">
+      <div class="site-content__nav">
+  
+    <nav class="va-sidebarnav va-sidebarnav--patterns">
+  
+  
+  
+
+  <h3 class="va-sidebarnav__sub-section">
+    Ask users for&hellip;
+  </h3>
+  <ul class="usa-sidenav-list">
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/a-mutually-exclusive-answer">
+            A mutually exclusive answer
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/a-single-response">
+            A single response
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/addresses">
+            Addresses
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/contact-preferences">
+            Contact preferences
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/dates">
+            Dates
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/direct-deposit">
+            Direct deposit
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/email-address">
+            Email address
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/feedback">
+            Feedback
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/files">
+            Files
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/gender">
+            Gender
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/housing-status">
+            Housing status
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/multiple-responses">
+            Multiple responses
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/names">
+            Names
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/phone-numbers">
+            Phone numbers
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/pronouns">
+            Pronouns
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/race-and-ethnicity">
+            Race and ethnicity
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/relationship">
+            Relationship to Veteran
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/service-history">
+            Service history
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/signature">
+            Signature
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/ask-users-for/social-security-number">
+            Social security or VA file number
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+</ul>
+
+
+  <h3 class="va-sidebarnav__sub-section">
+    Help users to&hellip;
+  </h3>
+  <ul class="usa-sidenav-list">
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/check-answers">
+            Check answers
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/check-eligibility">
+            Check eligibility
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/check-personal-information">
+            Check personal information
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/complete-a-sub-task">
+            Complete a sub task
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-available" aria-label="Use with caution Available"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/keep-a-record-of-submitted-information">
+            Keep a record of submitted information
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/know-how-their-information-is-updated">
+            Know how their information is updated
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/navigate-a-long-list">
+            Navigate a long list
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="active-level">
+          <a class="usa-current" href="/patterns/help-users-to/navigate-benefit-applications">
+            Navigate benefit applications
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/recover-from-errors">
+            Recover from errors
+
+
+
+
+
+  <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/sign-in">
+            Sign-in
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+        </li>
+      
+    
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/help-users-to/stay-informed-of-their-application-status">
+            Stay informed of their form submission status
+
+
+
+
+
+  <i class="fas fa-exclamation-triangle site-sidenav-status site-sidenav-status--use-with-caution-candidate" aria-label="Use with caution Candidate"></i></a>
+        </li>
+      
+    
+  
+</ul>
+
+
+  <h3 class="va-sidebarnav__sub-section">
+    Deprecated
+  </h3>
+  <ul class="usa-sidenav-list">
+  
+    
+    
+    
+      
+        <li class="">
+          <a class="" href="/patterns/wizards">
+            Wizard
+
+
+
+
+
+  <i class="fas fa-square site-sidenav-status site-sidenav-status--dont-use-deprecated" aria-label="Don't use Deprecated"></i></a>
+        </li>
+      
+    
+  
+</ul>
+
+</nav>
+    
+  
+</div>
+      <div class="site-content__content">
+        <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+          
+            
+            <div>
+  <p class="site-content__section-name">
+    Patterns
+  </p>
+</div>
+          
+          <p class="vads-u-display--inline-block vads-u-font-size--h3 vads-u-margin--0 vads-u-color--black">
+            Help users to&hellip;
+          </p>
+          
+          <h1 id="Navigate benefit applications">Navigate benefit applications</h1>
+            
+          <p>Also known as: Benefit applications</p>
+            
+            
+              
+
+
+
+
+<a class="site-component-status__link" href="/about/maturity-scale#use-deployed">
+  <span class="usa-label site-component-status site-component-status--use-deployed">
+    Use: Deployed
+  </span>
+</a>
+            
+            
+          <div class="va-introtext" markdown="1">
+            Users can apply for benefits in any of the benefit hubs on VA.gov. The policies and regulations around these benefits are very complex, and users often have difficulty determining if they are eligible, what they need to provide, and what to expect after they've submitted their application. For these reasons, Benefit applications, as a pattern, is divided into four distinct "epics" that help users navigate the process from start to finish.
+          </div>
+            
+            
+
+
+
+
+
+
+
+
+            
+            
+              
+<nav aria-labelledby="on-this-page" class="site-on-this-page">
+  <dl class="site-on-this-page__list">
+    <dt id="on-this-page" role="heading" aria-level="2" class="site-on-this-page__title">
+      On this page
+    </dt>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#eligibility">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Eligibility
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#how-to-apply">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        How to apply
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#apply-now">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Apply now
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#after-you-apply">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        After you apply
+      </a>
+    </dd>
+  
+  </dl>
+</nav>
+
+            
+          
+          <p>Each benefit application has four epics: Eligibility, How to apply, Apply now, and After you apply.</p>
+
+<p>Structuring benefit applications in this way has, through rigorous usability testing, demonstrably improved how to educate users about the benefits and how to set expectations about the application process. For the Department of Veterans Affairs, this means that applications are more accurate and complete, so the Department to better serves its constituents.</p>
+
+<h2 id="eligibility">Eligibility</h2>
+
+<p>For Veterans, determining whether or not they (or their beneficiaries) are eligible for a specific benefit is a difficult process. The policies governing those benefits can be complex, fraught with dependencies and variations that can be overwhelming.</p>
+
+<p>The associated pattern of content and functionality designed to help users of the website understand their eligibility, therefore, needs to accomplish a few things which can seem at odds with one another. Manifested as a single page, it should:</p>
+<ul>
+  <li>Provide a simple introduction to eligibility rules that covers the most common scenarios.</li>
+  <li>Scale (expand) to represent variations in complexity.</li>
+  <li>Prevent users from going to the wrong form.</li>
+  <li>Provide the ability to announce changes in the law or availability of benefits that may impact their eligibility.</li>
+  <li>Provide space to connect users to benefits that are likely to be related to their question about the benefit they are viewing.</li>
+  <li>Guide users to the next logical step in determining their eligibility, ultimately concluding getting them to the proper benefit application.</li>
+</ul>
+
+<h3 id="eligibility-hierarchy">Eligibility hierarchy</h3>
+<p>The hierarchy of the eligibility pattern allows it to be flexible enough to cover simple or complex benefit eligibility information while still feeling straightforward and easy to follow. Generally, the eligibility pattern manifests itself as a single web page. It sits within a benefits hub based upon the following rules:</p>
+
+<ul>
+  <li>For benefits hubs with a single benefit (such as <a href="https://www.va.gov/health-care">Health care</a>), we link to a separate <a href="https://www.va.gov/health-care/eligibility/">Eligibility</a> page as well as <a href="https://www.va.gov/health-care/how-to-apply">How to apply</a> page from the hub landing page.</li>
+  <li>For benefits hubs with multiple benefits (like <a href="https://www.va.gov/life-insurance/">Life insurance</a>), we link to the <a href="https://www.va.gov/life-insurance/options-eligibility/">main options/Eligibility</a> page from the hub landing page. From this page, the user can choose the option for which they want to explore their eligibility.</li>
+  <li>For a benefits hub where there is only a single benefit available, such as <a href="https://www.va.gov/pension/">Veteran’s Pension</a>, we link directly to the <a href="https://www.va.gov/pension/eligibility/">Eligibility</a> and page for that benefit from the hub landing page. We also link to pages for other, related benefits (Aid and Attendance, and Survivors Pension) from the hub.</li>
+</ul>
+
+<p>The eligibility page consists of the following elements:</p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/eligibility_page_heirarchy.png" alt="eligibility_page_heirarchy" /></p>
+
+<h4 id="a-title-and-statement-of-intent">A. Title and statement of intent</h4>
+<p>The title should be “Eligibility for (Most Commonly Used Benefit Name).” The statement of intent should state the job the page will do for the user, by stating something like “Find out if you are eligible for (most commonly requested benefits, described in plain language). This allows a user to quickly assess if they are in the right place, and it helps search engines highly rank these pages for appropriate searches.</p>
+
+<h4 id="b-critically-important-information-most-common-scenario">B. Critically important information (most common scenario)</h4>
+
+<p>The featured content component is used to present the user with the most commonly sought benefit eligibility scenario. Some benefits are complex and contain several optional paths to confirmation. It is not acceptable to repeat this element on the page; instead use the Additional eligibility information &amp; scenarios element for other variations. Note: please do not use this pattern more than one time on the page as it decreases its effectiveness at drawing the eye to the most likely sought content.</p>
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content">
+      <p>Use a single featured component for the most common scenario.</p>
+      <p><img src="/images/patterns/help-users-to/navigate-benefit-applications/featured-content-do.png" alt="eligibility_page_heirarchy" /></p>
+    </div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don’t</h3>
+<div class="do-dont__content">
+      <p>Use two or more featured components for multiple scenarios, because there can't be more than one that is the most common. Use other page elements for this purpose.</p>
+      <p><img src="/images/patterns/help-users-to/navigate-benefit-applications/featured-content-dont.png" alt="eligibility_page_heirarchy" /></p>
+    </div>
+</div>
+</div>
+
+<p><a href="/components/summary-box">View the Summary box component</a></p>
+
+<h4 id="c-additional-eligibility-information--scenarios">C. Additional eligibility information &amp; scenarios</h4>
+
+<p>Benefit eligibility or requirements information that is more nuanced than the summary placed inside the Common scenario overview (featured content component), including different requirements for sub-audiences, application assistance, etc.  Group prerequisites logically by benefit type, and order benefit types from most common to less common.</p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/additional-eligibility.png" alt="eligibility_prerequisites" /></p>
+
+<h4 id="d-optional-eligibility-change-announcement">D. Optional: Eligibility change announcement</h4>
+
+<p>When time sensitive content about a benefit — such as a new benefit being made available or a significant change in the laws around eligibility for a particular benefit — you can place an informational alert on this page. Follow the recommendations governing alert usage, including</p>
+<ul>
+  <li>Use informational alerts to announce upcoming benefits</li>
+  <li>Use informational alerts with expandable content to hide detail that may not apply to everyone visiting the page</li>
+</ul>
+
+<p><a href="/components/alert">View the alert component</a></p>
+
+<h4 id="e-how-to-apply-heading-and-action-links">E. How to apply heading and action links</h4>
+
+<p>A brief heading should precede and call attention to the sub-task link or action link. This heading can be followed by an optional single sentence of text or phrase if necessary.</p>
+
+<p>If your page uses the <a href="/patterns/help-users-to/complete-a-sub-task">Help users to complete a sub-task pattern</a>, use a <a href="/components/link/action#secondary">secondary action link</a>. If the page does not have a help users to complete a sub-task pattern and you want to direct your user to the application flow, use a <a href="/components/link/action#primary">primary action link</a>. This action link is a visually prominent link that will bring the user to another page.</p>
+
+<p>Having an action link on the page helps the user follow the most logical path. 
+Note: Avoid putting more than one action link on the page. If you have a page that requires multiple benefit form links, use the <a href="/patterns/help-users-to/complete-a-sub-task">pattern for helping users to complete a sub-task</a> to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).</p>
+
+<p>The action link can be followed by item 6, Additional Benefit-Eligibility-Specific Relevant Content, if necessary.</p>
+
+<p><strong>Accessibility considerations</strong></p>
+
+<p>Screen reader users can’t scan a page visually to immediately know that there is content below any particular action item such as an action link. So, if they come across a key call to action, there is no guarantee or certainty that they will know that more information, that may be important to that call to action, could exist beyond that call to action. Therefore, please be mindful about placing important content below the key call to action.</p>
+
+<h4 id="f-optional-help-users-to-complete-a-sub-task-pattern-for-branching-eligibility-choices">F. Optional: Help users to complete a sub-task pattern for branching eligibility choices</h4>
+
+<p>In the case where there are multiple benefit options, the <a href="/patterns/help-users-to/complete-a-sub-task">pattern for helping users to complete a sub-task</a> allows a user to branch into the appropriate benefit application from the eligibility page.</p>
+
+<p>The text of the action link should represent the job the sub-task is performing, such as “Find your education benefits form”.</p>
+
+<h4 id="g-optional-additional-benefit-eligibility-specific-relevant-content">G. Optional: Additional benefit-eligibility-specific relevant content</h4>
+
+<p>Any additional content necessary that is connected to the primary benefit eligibility use case for the page can be added here.</p>
+
+<h4 id="h-optional-benefit-eligibility-frequently-asked-questions">H. Optional: Benefit eligibility frequently asked questions</h4>
+
+<p>Use the accordion component to present questions that are common about eligibility for a benefit.</p>
+
+<p><a href="/components/accordion">View the accordion component</a></p>
+
+<h4 id="i-optional-related-benefits-content">I. Optional: Related benefits content</h4>
+
+<p>Any additional benefits (e.g. vocational benefits eligibility that is related to education benefit eligibility) can be added to the bottom of the page using the RELATED PAGES component.</p>
+
+<h2 id="how-to-apply">How to apply</h2>
+
+<p>This is a high-level description of the “How to apply” page for benefit applications. The content recommended for the “How to apply” page may overlap with the “Eligibility” or “Apply now” sections.</p>
+
+<h3 id="page-title">Page title</h3>
+<p>The page title should be “How to apply for (Most Commonly Used Benefit Name).”</p>
+
+<h3 id="introduction">Introduction</h3>
+<p>The introduction describes what the page is about. For the “How to apply” page, the introduction text includes the following:</p>
+<ul>
+  <li>The benefit(s) the application is for</li>
+  <li>The type(s) of users the application is aimed at (Veteran, service member, qualified family member)</li>
+  <li>A link back to the Eligiblity page to send users to the Eligibility page to ensure they’re eligible for benefit</li>
+  <li>SEO keywords (See <a href="/content-style-guide/seo">Writing for SEO</a>.)</li>
+</ul>
+
+<h3 id="preparing-to-apply-informational-callout">Preparing to apply (informational callout)</h3>
+<p>On the “How to apply” page, use the <a href="/components/featured-content">featured content</a> component to present chunked, scannable snippets of critical information needed by the majority of applicants to apply. For example,</p>
+
+<ul>
+  <li>Describe what a user needs to do before they begin the application</li>
+  <li>List items needed to complete the application (SSN, military history, etc.). Required items should be called out.</li>
+</ul>
+
+<p>Note: The <a href="/components/featured-content">featured content</a> component should only be used for the most important information on the page. Since it includes critical information, featured content should appear near the top of the page.</p>
+
+<h3 id="how-do-i-apply">How do I apply?</h3>
+<p>The “How do I apply” section lists possible application methods. It should emphasize the optimal path for Veterans, (which may be how to get help from a human instead of online help.) Some common application methods are:</p>
+<ul>
+  <li>Online
+    <ul>
+      <li>Wizard button
+ If your page has a wizard, use a primary green button. We reserve buttons for those actions that trigger on the page, in this case a wizard mini-form interface allowing the user to self-select into (or out of) the appropriate benefit form.</li>
+      <li>Action link
+ If the page does not have a wizard and you want to direct your user to the application flow. Use a primary green action link. This action link is a visually prominent link that will bring the user to another page.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Note:</strong> never put more than one green button or green action link on the page. If you have a page that requires multiple benefit form links, use the wizard mini-form interface to create branching logic to get the correct benefit application (or prevent a user from applying to the wrong benefit).</p>
+
+<ul>
+  <li>By mail
+    <ul>
+      <li>Link to the printable application form</li>
+      <li>Instructions for mailing the completed, printed form</li>
+    </ul>
+  </li>
+  <li>In person
+    <ul>
+      <li>Link to find nearest VA regional office</li>
+    </ul>
+  </li>
+  <li>With the help of a trained professional
+    <ul>
+      <li>Link to get help</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="what-happens-after-i-apply">What happens after I apply?</h3>
+<p>The “What happens after I apply” section sets the user’s expectations about what will happen next in the application process. This section may include:</p>
+
+<ul>
+  <li>Concise content or a link to a page describing what the user can expect after they apply</li>
+  <li>A call to action (primary blue button) that allows the user to track the status of their application</li>
+  <li>A card that sets the user’s expectation for how long it takes to receive a response</li>
+</ul>
+
+<h3 id="optional-more-information">Optional: More information</h3>
+<p>Include the “More information section” if there is helpful supporting information about applying for the benefit.</p>
+<ul>
+  <li>For many short content items, consider using the accordion component to reduce the content on the page.</li>
+  <li>For longer content items, consider linking to a separate page.</li>
+</ul>
+
+<h3 id="live-page-examples">Live page examples</h3>
+<ul>
+  <li><a href="https://www.va.gov/health-care/how-to-apply/">How to apply for VA health care</a></li>
+  <li><a href="https://www.va.gov/disability/how-to-file-claim/">How to file a VA disability claim</a></li>
+  <li><a href="https://www.va.gov/education/how-to-apply/">How to apply for the GI Bill and other education benefits</a></li>
+  <li><a href="https://www.va.gov/pension/how-to-apply/">How to apply for a VA pension as a Veteran</a></li>
+</ul>
+
+<h2 id="apply-now">Apply now</h2>
+
+<p>The “Apply” page is the start of the react app and indicates the beginning of the form. It isn’t a static page. 
+This page is separate from the static “How to apply” page, and repeats some eligiblity and how to apply information in case users navigate to this page from somewhere outside of VA.gov.</p>
+
+<h3 id="page-title-1">Page title</h3>
+<p>The page title should be: “Apply for [benefit type]”. For Disability, the page header should be “File for disability compensation”</p>
+
+<p>Under the page header is the VA paper form equivalency. This shows the equivalent VA paper form that the online application corresponds to. <br />
+For example: <em>Equal to VA Form 21-526EZ (Application for Disability Compensation and Related Compensation Benefits).</em></p>
+
+<h3 id="sign-in-message">Sign-in message</h3>
+<p>At the top of the introduction page, is a sign in message. There are two different messages depending if a user is signed in or if the user isn’t signed in to their account.</p>
+
+<p><strong>Message when a user isn’t signed in:</strong></p>
+<ul>
+  <li>Lets applicants know that by signing in some information from their profile account could be prefilled into the application and that they can save their work as they go.</li>
+  <li>Gives time on how long the application will be saved for</li>
+  <li>Blue CTA button <em>Sign in to start your application</em></li>
+  <li>Link to fill out the application without signing in. (For all online applications except for Disability Compensation)</li>
+</ul>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/unauth-message.png" alt="how-to-apply_unauth-message" /></p>
+
+<p><strong>Message when a user is signed in:</strong></p>
+<ul>
+  <li>Lets applicant know they are signed in and can save their work as they go</li>
+  <li><a href="/components/link/action#primary">Primary action link</a></li>
+</ul>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/action-link.png" alt="how-to-apply_unauth-message" /></p>
+
+<h3 id="subway-map">Subway map</h3>
+<p><a href="/components/process-list">Subway or process map</a> shows the steps the users needs to take to apply for a benefit. The headings are action words, short and concise, and consistent across forms.</p>
+
+<p><strong>Prepare</strong></p>
+<ul>
+  <li>Gives the applicant the information they’ll need to fill out the form, such as if they need to submit any documentation or provide their SSN, bank information, military history, spouse information, etc.</li>
+  <li>Items that are optional are called out.</li>
+</ul>
+
+<p><strong>Apply</strong></p>
+
+<p>We use the same language for this step across all forms:</p>
+
+<p><em>Complete this [benefits] form. After submitting the form, you’ll get a confirmation message. You can print this page for your records.</em></p>
+
+<p><em>What if I need help filling out my application? An accredited representative, like a Veterans Service Officer (VSO), can help you fill out your claim.</em> <br />
+[Get help filing your claim]</p>
+
+<p><strong>VA review</strong></p>
+
+<p>The step tells applicants how much time it takes VA to review the application. The content under this heading depends on what type of benefit they’re applying for. For example:</p>
+
+<ul>
+  <li>For Health Care form, the message is: <em>We process health care claims within a week.</em> <br /></li>
+  <li>For Education forms, the message is: <em>We usually process claims within 30 days. We’ll let you know by mail if we need more information.</em> <br /></li>
+  <li>
+    <p>For Disability Comp form, the message is: <em>We process applications in the order we receive them. We may contact you if we have questions or need more information.  The amount of time it takes to review your claim depends on:</em></p>
+
+    <ul>
+      <li>xxxyxlxlx</li>
+      <li>xxxyxlxlx</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>VA decision</strong></p>
+
+<p>This step sets the user’s expectation for when they will receive a response. It tells applicants how and when they will be informed of the status of their application (if denied or approved).</p>
+
+<h3 id="omb-information">OMB information</h3>
+<p>This appears at the bottom of the Apply page and shows:</p>
+<ul>
+  <li>Respondent burden</li>
+  <li>OMB control number</li>
+  <li>Privacy act link</li>
+</ul>
+
+<h3 id="need-help">Need help?</h3>
+<p>This footer appears on the bottom of every page of the form. It includes phone numbers if an applicant needs more support or has questions about filling out the form.</p>
+
+<h3 id="optional-other-components-on-the-apply-page">Optional: Other components on the Apply page</h3>
+<p>Depending on the type of benefit, an <a href="/components/alert">alert</a> is sometimes included with specific inforomation or detail about that benefit.</p>
+
+<p>This is an optional component and should only be used if there is an important benefit or application process to call out to the applicant.</p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/apply-now-alert-box.png" alt="apply-now-alert-box" /></p>
+
+<h3 id="live-page-examples-1">Live page examples</h3>
+<p><a href="https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction">File for disability compensation introduction page</a><br />
+<a href="https://www.va.gov/education/apply-for-education-benefits/application/1990/introduction">Apply for education benefits introduction page</a><br />
+<a href="https://www.va.gov/burials-and-memorials/pre-need/form-10007-apply-for-eligibility/introduction">Apply for Pre-need eligiblity introduction page</a> <br />
+<a href="https://www.va.gov/pension/application/527EZ/introduction">Apply for Veterans pension introduction page</a></p>
+
+<h2 id="after-you-apply">After you apply</h2>
+<p>This is a high-level description of the “After you apply” page for benefit application.</p>
+
+<h3 id="page-title-2">Page title</h3>
+<p>The page title should be: “After you apply for (Most Commonly Used Benefit Name).”</p>
+
+<h3 id="introduction-1">Introduction</h3>
+<p>The introduction describes what will happen next in the application process after an applicant submits an application. This section may include:</p>
+<ul>
+  <li>What an applicant needs to do after they submit their application.</li>
+  <li>SEO keywords (See <a href="/content-style-guide/seo">Writing for SEO</a>.)</li>
+</ul>
+
+<h3 id="when-will-i-hear-back-about-my-application">When will I hear back about my application?</h3>
+<p>This section appears as card or <a href="/components/alert">gray alert</a> that sets the user’s expectation for how long it takes to receive a response, and includes:</p>
+<ul>
+  <li>Content or a link to a page describing what the user can expect after they apply</li>
+  <li>Time frame for how long it takes to receive a response</li>
+</ul>
+
+<p><strong>Health care:</strong></p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-health-care-decision.png" alt="after-you-apply-health-care" /></p>
+
+<p><strong>Education:</strong></p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-edu-decision.png" alt="after-you-apply-edu" /></p>
+
+<p><strong>Disability compensation:</strong></p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-disability-decision.png" alt="after-you-apply-disability" /></p>
+
+<h3 id="optional-other-components-on-the-after-you-apply-page">Optional: Other components on the “After you apply” page</h3>
+
+<p>Below is a list of optional components that appear on the “After you apply” page.</p>
+
+<h3 id="subway-process-map">Subway process map</h3>
+
+<p><a href="/components/process-list">View the subway map component</a>.</p>
+
+<p><strong>Health care:</strong>
+<img src="/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-subway-map.png" alt="after-you-apply-subway-map" /></p>
+
+<h3 id="accordions">Accordions</h3>
+
+<p><a href="/components/accordion">View the accordion component</a>.</p>
+
+<p><strong>Health care:</strong></p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-accordions.png" alt="after-you-apply-accordions" /></p>
+
+<h3 id="call-to-action-button-or-action-link">Call-to-action button or action link</h3>
+
+<p>Use a button for a clickable action on the page. Use the action link if you are navigating the user to another page.</p>
+
+<p><a href="/components/button">View the button component</a>.</p>
+
+<p><a href="/components/link/action">View the action link component</a>.</p>
+
+<p><strong>Disability compensation:</strong></p>
+
+<p><img src="/images/patterns/help-users-to/navigate-benefit-applications/after-you-apply-cta-button.png" alt="after-you-apply-cta-button" /></p>
+
+        </main>
+        
+<div class="vads-u-margin-top--7">
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/edit/main/src/_patterns/help-users-to/navigate-benefit-applications.md" target="_blank">Edit this page in GitHub</a>
+  (Permissions required)
+</div>
+
+
+        
+
+<div>Last updated: Oct 24, 2024</div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer vads-u-padding-y--5" role="contentinfo">
+  <div class="site-l-wrapper">
+    <div class="medium-screen:vads-u-display--flex medium-screen:vads-u-justify-content--space-between vads-u-align-items--center">
+      <div>
+        <ul class="site-footer__links">
+          <li class=site-footer__links__item>
+            <a href="/about/whats-new">What’s new?</a>
+          </li>
+          <li class=site-footer__links__item>
+            <a href="/about/feedback">Feedback</a>
+          </li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/playbook/" target="_blank">VA.gov playbook</a></li>
+          <li class=site-footer__links__item><a target="_blank" href="https://www.va.gov/accessibility-at-va/">Accessibility</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/web/" target="_blank">Web governance &amp; policies</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-seal">
+        <a href="https://va.gov" class="site-footer__logo" title="Go to VA.gov"><img src="/assets/img/va-logo-white.png" alt="U.S. Department of Veterans Affairs logo"></a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/assets/javascripts/site.js?v=1729796807"></script>
+<script src="/vendor/javascripts/formation.js?v=1729796807"></script>
+
+  </body>
+</html>

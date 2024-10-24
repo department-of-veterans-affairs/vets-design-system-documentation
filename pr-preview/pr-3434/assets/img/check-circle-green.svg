@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>check-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-498.000000, -740.000000)" fill="#2E8540" fill-rule="nonzero">
+            <g id="check-circle" transform="translate(498.000000, 740.000000)">
+                <path d="M22,11 C22,17.0751492 17.0751492,22 11,22 C4.92485081,22 0,17.0751492 0,11 C0,4.92485081 4.92485081,0 11,0 C17.0751492,0 22,4.92485081 22,11 Z M9.7276371,16.8244113 L17.8889274,8.66312097 C18.1660565,8.38599194 18.1660565,7.93663306 17.8889274,7.65950403 L16.8853105,6.6558871 C16.6081815,6.37871371 16.1588226,6.37871371 15.8816492,6.6558871 L9.22580645,13.3116855 L6.11835081,10.2042298 C5.84122177,9.92710081 5.3918629,9.92710081 5.11468952,10.2042298 L4.11107258,11.2078468 C3.83394355,11.4849758 3.83394355,11.9343347 4.11107258,12.2114637 L8.72397581,16.8243669 C9.00114919,17.1015403 9.45046371,17.1015403 9.7276371,16.8244113 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

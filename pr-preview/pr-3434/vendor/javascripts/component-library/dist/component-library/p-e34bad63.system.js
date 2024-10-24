@@ -1,0 +1,1 @@
+System.register(["./p-18cac48c.system.js","./p-2b0bbcd2.system.js"],(function(t){"use strict";return{setters:[function(e){var s={};s.CONTACTS=e.C;s.contactsMap=e.c;t(s)},function(e){t("i18next",e.i)}],execute:function(){}}}));
