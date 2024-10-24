@@ -34,6 +34,7 @@ anchors:
 * **On form intro pages**, place the alert directly after the process list or "what to know" section of the intro page. (Some forms have a process list and some have "what to know." [Refer to the form into page template for that guidance](https://design.va.gov/templates/forms/introduction).)
 
 ## Behavior
+[Refer to the related sign-in pattern page for full guidance](https://design.va.gov/patterns/help-users-to/sign-in) 
 
 ### All products that only allow verified accounts must implement 1 of these 2 alert variations
 
