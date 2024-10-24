@@ -2,6 +2,7 @@
 .jekyll-metadata
 .sass-cache
 .vscode
+*.code-workspace
 _site
 fonts
 node_modules
