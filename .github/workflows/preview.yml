@@ -31,13 +31,14 @@ jobs:
       - run: yarn install
       - run: yarn run build
       - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
+
+      - name: Format links
+        run: .github/workflows/preview.yml
+
       - name: Remove .html extension on non-index files
         run: |
           find _site/ -type f ! -iname 'index.html' -iname '*.html' \
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
-
-      - name: Clean links
-        run: ./preview-links.sh
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
