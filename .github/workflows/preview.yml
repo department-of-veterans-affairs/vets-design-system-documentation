@@ -33,7 +33,7 @@ jobs:
       - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
 
       - name: Format links
-        run: chmod +x .github/workflows/preview-links.yml
+        run: chmod +x .github/workflows/preview-links.sh
 
       - name: Remove .html extension on non-index files
         run: |
