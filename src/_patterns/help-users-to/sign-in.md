@@ -42,7 +42,7 @@ This pattern works differently depending on the product and the account type a p
 2. Implement both of the yellow verification alerts. If a person signs in with an unverified account, they should encounter 1 of the 2 variations. One is for unverified **Login.gov** and **ID.me** accounts, and one is for unverified **My HealtheVet** accounts.
   **Note:** This pattern is currently tailored to products that require verified (LOA3 or IAL2) accounts. If your product accepts unverified (LOA1 or IAL1) accounts, you'll need to adjust the content in the blue sign-in alert. And you won't need to implement the yellow verification alerts. Work with CAIA and the identity team to adjust for your situation.
 
-{% include content/file-sign-in-alert-examples.md %}
+{% include content/sign-in-alert-examples.md %}
 
 **All teams should take these steps when using this pattern:**
 
