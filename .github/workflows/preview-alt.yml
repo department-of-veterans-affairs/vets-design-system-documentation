@@ -51,7 +51,7 @@ jobs:
             aws-region: "us-gov-west-1"
       - name: Sync extensionless html files with correct type
         run: |
-          aws s3 sync _site s3://dev-design.va.gov \
+          aws s3 sync _site s3://dev-design.va.gov/${{ github.event.number }} \
           --acl public-read \
           --delete \
           --exclude "storybook/*" \
@@ -59,11 +59,9 @@ jobs:
           --content-type "text/html"
       - name: Sync remaining files
         run: |
-          aws s3 sync _site s3://dev-design.va.gov \
+          aws s3 sync _site s3://dev-design.va.gov/${{ github.event.number }} \
           --acl public-read \
           --delete \
           --exclude "*" \
           --include "*.*" \
-          --exclude "storybook/*"  
-      - name: AWS sync
-        run: aws s3 sync _site s3://dev-design.va.gov/${{ github.event.number }}
+          --exclude "storybook/*"
