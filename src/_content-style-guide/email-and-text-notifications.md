@@ -18,6 +18,8 @@ anchors:
 * Email and text notifications are not secure, so we can’t include Veterans’ personally identifiable information (PII) or protected health information (PHI).
 * Privacy officers may allow exceptions to the PII/PHI rule when a Veteran opts in to receive PII/PHI in their notifications. But you must work closely with the privacy office and get specific approval for any notifications that include PII/PHI.
 
+**Note:** We're adding more guidance for notifications soon.
+
 ## Email notifications
 
 ### Subject line 
