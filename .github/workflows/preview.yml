@@ -13,6 +13,9 @@ jobs:
     environment:
       name: development
       url: https://dev-design.va.gov/${{ github.event.number }}
+
+    # TODO: make these build steps reusable with deploy.yml as a resuable workflow
+    # https://docs.github.com/en/actions/sharing-automations/reusing-workflows#creating-a-reusable-workflow
     steps:
       - uses: actions/checkout@v2
         with:
@@ -44,6 +47,9 @@ jobs:
         run: |
           find _site/ -type f ! -iname 'index.html' -iname '*.html' \
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+
+      # TODO: update internal site links to use the github.event.number
+      
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
