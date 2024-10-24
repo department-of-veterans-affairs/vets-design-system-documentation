@@ -49,18 +49,14 @@ jobs:
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
 
       # TODO: update internal site links to use the github.event.number
-
-      # Find all HTML files within the _site directory and update links
-      # - name: Update HTML links
-      #   run: |
-      #     find "_site" -type f -name "*.html" | while read -r file; do
-      #       # Use sed to find and replace all href="/..." and src="/..."
-      #       sed -i.bak -E 's/(href|src)=\"\/([^"]*)\"/\1="${{ github.event.number }}\/\2"/g' "$file"
-      #       # Remove backup files created by sed
-      #       rm "$file.bak"
-      #     done
-      #   shell: bash
-      
+      - name: Update HTML href links
+        run: |
+          find "_site" -type f -name "*.html" | while read -r file; do
+            sed -i.bak -E 's/href="\/([^"]*)"/href="\/${{ github.event.number }}\/\1"/g' "$file"
+            # Remove backup files created by sed
+            rm "$file.bak"
+          done
+        shell: bash
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
