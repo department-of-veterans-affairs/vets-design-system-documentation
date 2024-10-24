@@ -4,7 +4,7 @@ permalink: /components/alert/alert-sign-in/
 has-parent: /components/alert/
 title: Alert - Sign-in
 github-title: va-alert-sign-in
-intro-text: An alert component with specific content focused on helping users complete the sign in process.
+intro-text: An alert component with specific content focused on helping users complete the sign-in process.
 figma-link: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
 status: use-with-caution-candidate
 web-component: va-alert-sign-in
@@ -25,37 +25,48 @@ anchors:
 
 ### When to use Alert - Sign-in
 
-* **Static pages with entry points to online tools.** The sign-in alert appears on a static unauthenticated VA.gov page and serves as the entry point to the tool's authenticated experience. The Office of the Chief Technology Officer's content/information architecture/accessibility team (CAIA) team manages these pages in Drupal. Here's an example of a static page with a sign-in alert (note that alert is an older content variation). Work with CAIA to add the alert to the correct page.
-* **Form intro pages.** The sign-in alert goes on the form intro page that the product team creates and manages. The URL for this page ends in /introduction. Here's example of a form intro page with a sign-in alert (note that alert is an older content variation).
+* **Static pages with entry points to online tools.** The sign-in alert appears on a static unauthenticated VA.gov page and serves as the entry point to the tool's authenticated experience. The Office of the Chief Technology Officer's content/information architecture/accessibility team (CAIA) team manages these pages in Drupal. Work with CAIA to add the alert to the correct page. Here's an example of a static page with a sign-in alert (note that alert is an older content variation): [Secure messaging page with sign-in alert](https://www.va.gov/health-care/secure-messaging/)
+* **Form intro pages.** The sign-in alert goes on the form intro page that the product team creates and manages. The URL for this page ends in /introduction. Here's example of a form intro page with a sign-in alert (note that alert is an older content variation): [Disability claim intro page with sign-in alert](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
   **Exception:** If your form is only accessible after signing in (meaning there is no unauthenticated state of the intro page), the sign-in alert must appear on the static unauthenticated page that serves as the entry point. Currently, this only applies to 2 forms in the /my-health section: the 1010EZR and the order form for CPAP and hearing aid supplies.
 
 ### Placement
 * **For entry points to online tools**, work with CAIA to determine placement on the static page. Placement may vary depending on the page structure. Always place the alert directly under a header that makes it clear what the user is signing in to do (for example, "Check your claim status online").
-* **On form intro pages**, place the alert directly after the process list or "what to know" section of the intro page. (Some forms have a process list and some have "what to know.")
+* **On form intro pages**, place the alert directly after the process list or "what to know" section of the intro page. (Some forms have a process list and some have "what to know." [Refer to the form into page template for that guidance](https://design.va.gov/templates/forms/introduction).)
 
 ## Behavior
 
-### Selecting variations for the sign-in pattern in your product
-**All products that require or allow sign in with verified accounts only must use 1 of these 2 sign-in variations:**
+### All products that only allow verified accounts must implement 1 of these 2 alert variations
 
-**Sign-in alert for all products that require sign-in with a verified account**
+#### Required sign-in (verified)
+
+When these are true:
+* Person is not signed in, **and**
 * Your product requires people to sign in, **and**
 * Your product only accepts verified (LOA3 or IAL2) accounts
 
-**Sign-in alert for forms that support optional sign-in with a verified account**
+#### Optional sign-in (verified)
 
 When these are true:
+* Person is not signed in, **and**
 * Your product is a form that gives people the option to sign in, **and**
 * Your form only accepts verified (LOA3 or IAL2) accounts, **and**
 * Your form supports prefill and save-in-progress
 
-**Verification alert for unverified Login.gov or ID.me accounts**
+### All products that only allow verified accounts must implement all 3 of these alerts
+
+#### Verify with ID.me
 
 When these are true:
-* Person is signed in with an unverified (LOA1 or IAL1) Login.gov or ID.me account, **and**
+* Person is signed in with an unverified (LOA1 or IAL1) ID.me account, **and**
 * Your product only accepts verified (LOA3 or IAL2) accounts
 
-**Verification alert for unverified My HealtheVet accounts**
+#### Verify with Login.gov
+
+When these are true:
+* Person is signed in with an unverified (LOA1 or IAL1) Login.gov account, **and**
+* Your product only accepts verified (LOA3 or IAL2) accounts
+
+#### Sign in with another account
 
 When these are true:
 * Person is signed in with an unverified (LOA1 or IAL1) My HealtheVet account, **and**
@@ -71,11 +82,11 @@ If your product fits one of these descriptions, you may need to adjust the stand
 * An online form that allows sign-in and offers a different reason to sign in—like generating an automatic Intent to File (ITF)
 * A health tool that requires registration with My HealtheVet (currently only applies to messages, medications, and medical records tools)
 
-Work with the Office of the CAIA and identity teams to adjust the content in this component for your product.
+Work with the CAIA and identity teams to adjust the content in this component for your product.
 
 ## Accessibility considerations
 
-{% include a11y/alerts.md %}
+[Refer to the accessibility considerations for the general alert component](https://design.va.gov/components/alert/#accessibility-considerations)
 
 ## Related
 
