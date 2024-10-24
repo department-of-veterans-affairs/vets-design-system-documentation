@@ -19,7 +19,7 @@ anchors:
 ---
 
 ## Examples
-{% include content/file-upload.md %}
+{% include content/sign-in-alert-examples.md %}
 
 ## Usage
 
