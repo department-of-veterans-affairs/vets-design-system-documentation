@@ -9,7 +9,7 @@ anchors:
 
 ## General guidance for email and text notifications
 
-### Follow our content style guide
+### Follow our content style guide and existing patterns
 * Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. [Review our top 10 plain language standards](https://design.va.gov/content-style-guide/plain-language/#top-10-va-plain-language-standards)
 * For some types of emails, VA Notify has sample templates with plain language content that's ready to use. You'll just need to fill in any manual variables and adjust other content as needed. This includes the emails in the form submission status pattern. [Review the form submission status pattern](https://design.va.gov/patterns/help-users-to/stay-informed-of-their-application-status) 
 
@@ -50,19 +50,21 @@ anchors:
 
 ### Links 
 
-* Follow these rules for link text:
-    * [Follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
-    * Always include purpose and the destination in link text—for links from emails to the VA website, add "on VA.gov" as the destination
-    * Make each link a full sentence
-    * Put each link on a separate line
-    * Avoid “Click here,” since not all people are physically clicking links
-    * Avoid generic link text like “Learn more” and “Read more” by themselves
-    * **Like this:** [Pay your copay bill on VA.gov](https://www.va.gov/health-care/pay-copay-bill/)
-* Limit the number of links in each email:
-    * Only include a link if the Veteran needs it to complete the call to action or to find need-to-know information
-    * Try to use a single, clear call-to-action link, like "Submit your disability claim on VA.gov"
-    * Don't include more than 3 links total
- * If you're using VA Notify, use the analytics link generator for UTM tracking
+Follow these general rules for link text:
+* [Follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
+* Always include purpose and the destination in link text—for links from emails to the VA website, add "on VA.gov" as the destination
+* Make each link a full sentence
+* Put each link on a separate line
+* Avoid “Click here,” since not all people are physically clicking links
+* Avoid generic link text like “Learn more” and “Read more” by themselves
+  * **Like this:** [Pay your copay bill on VA.gov](https://www.va.gov/health-care/pay-copay-bill/)
+
+Limit the number of links in each email:
+* Only include a link if the Veteran needs it to complete the call to action or to find need-to-know information
+* Try to use a single, clear call-to-action link, like "Submit your disability claim on VA.gov"
+* Don't include more than 3 links total
+
+If you're using VA Notify, use the analytics link generator for UTM tracking. 
 
 ### Footer 
 
