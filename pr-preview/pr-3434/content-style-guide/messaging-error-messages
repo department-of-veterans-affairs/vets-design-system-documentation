@@ -1,0 +1,3473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Messaging - Error messages - VA.gov Design System </title>
+  <meta name="description" content="Error message style guide">
+
+  
+
+  
+  <meta name=”robots” content=”noindex, nofollow”>
+  
+
+  <!-- Web component setup -->
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css?v=1729797815" />
+  <script type="module">
+    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    defineCustomElements();
+</script>
+
+  <!-- Icons -->
+  <link href="/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+  <link href="/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="/assets/img/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="/assets/img/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+
+  <link rel="stylesheet" href="/formation.min.css?v=1729797815">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css?v=1729797815">
+  <link rel="canonical" href="https://design.va.gov/content-style-guide/messaging-error-messages">
+  <link rel="alternate" type="application/rss+xml" title="VA.gov Design System" href="https://design.va.gov/feed.xml">
+
+  <script src="/assets/javascripts/polyfills/array.from.js?v=1729797815"></script>
+
+</head>
+
+  <body >
+
+    
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+
+<section class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="" style="padding-left:24px;">
+      <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        Here's how you know
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="site-header" role="banner">
+
+  <div class="site-l-wrapper">
+    <div class="site-header__masthead">
+      <div class="site-header__logo" id="extended-logo">
+        <em class="site-header__logo-text">
+          <a class="site-header__logo-link" title="VA.gov Design System homepage" href="/"><strong class="vads-u-display--block small-screen:vads-u-display--inline">VA.gov</strong> <span class="vads-u-display--none small-screen:vads-u-display--inline">|</span> Design System</a>
+        </em>
+      </div>
+      <div class="site-header__utility-links">
+        <div id="search-container" class="site-search-container">
+          <i class="fas fa-search search-icon"></i>
+          <form action="/results" method="get" id="search-form" class="search-form">
+          <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+          </form>
+          <ul id="results-container" class="site-search-results" role="listbox"></ul>
+        </div>
+      </div>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
+  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <form action="/results" method="get" id="mobile-search-form" class="search-form">
+    <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+  </form>
+  <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
+</div>
+
+
+    <nav class="va-sidebarnav site-mobile-nav" id="mobile-nav">
+  <button id="close_mobile_nav_button" class="site-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fas fa-times"></i></button>
+  <ul class="usa-accordion">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false" aria-controls="nav-a1">About</button>
+  </li>
+  <div id="nav-a1" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/about">Overview</a>
+      </li>
+      
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/">Accessibility</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-annotations">Accessibility annotations for VA.gov applications</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-testing-for-design-system-components">Accessibility testing for design system components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved">Add a component or pattern once approved</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/contributing">Contributing</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/">Contributing to the design system</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/creating-components">Creating components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/design-libraries">Design libraries</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/principles">Design principles</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/experience-standards/">Experience Standards</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/experimental-components-and-patterns">Experimental components and patterns</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/feedback">Feedback</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/figma-at-va">Figma at VA</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/focus-management">Focus management</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/content-writers">For content writers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/">For designers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/">For developers</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/implementing-design-work">Implementing design work</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/install">Install</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/maturity-scale">Maturity scale</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/naming">Naming convention</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-a-removal">Suggest a removal</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-an-addition-or-update">Suggest an addition or update</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/updating-this-site">Updating this site</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/using-web-components">Using Web Components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/whats-new">What’s new?</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="true" aria-controls="nav-a2">
+      Content
+    </button>
+  </li>
+  <div id="nav-a2" class="usa-accordion-content" aria-hidden="false">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/content-style-guide">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/abbreviations-and-acronyms">Abbreviations and acronyms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/access">Access messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/alternative-text-for-images">Alternative text for images</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/avoid-branded-names">Avoid branded names</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bold-text">Bold & italic text</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bulleted-lists">Bulleted lists</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/button-labels">Button labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/capitalization">Capitalization</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/content-principles">Content principles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/dates-and-numbers">Dates, times, phone numbers, and addresses</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/define-complex-terms">Define complex terms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/destigmatizing-language-in-substance-use">Destigmatizing language in substance use</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-idioms">Don’t use idioms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-jargon">Don’t use jargon</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/engagement">Engagement messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/">Error messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/feedback">Feedback messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/form-labels">Form labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/government-forms">Government forms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/">Health content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/links">Links</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/naming-and-labels">Naming and labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/neutral-and-inclusive-language">Neutral and inclusive language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/numbers">Numbers</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/page-titles-and-section-titles">Page titles and section titles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/payments-and-debts">Payments and debts</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/">Plain language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/punctuation">Punctuation</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification">Sign in and identity verification</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/sign-up-for-updates">Sign up for updates</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/">Specific topics and programs</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/structure-your-content">Structure your content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/system">System messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/they-their">They, their</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/title-tags">Title tags</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/trademarks">Trademarks</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-active-voice">Use active voice</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-contractions">Use contractions</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-pronouns">Use pronouns</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-short-sentences">Use short sentences</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-simple-words-and-terms">Use simple words and terms</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/we-us-you">We, us, you</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/web-policies-and-directives">Web policies and directives</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/word-list">Word list</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/seo">Writing for SEO</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a3">
+      Foundation
+    </button>
+  </li>
+  <div id="nav-a3" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/background-color">Background color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/border">Border</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/breakpoints">Breakpoints</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/color-palette">Color palette</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/design-tokens">Design tokens</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/display">Display</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/flexbox">Flexbox</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/flexbox-grid">Flexbox grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/float-grid">Float grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-family">Font family</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-size">Font size</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-style">Font style</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-weight">Font weight</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/height-and-width">Height and width</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/icons">Icons</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/image-aspect-ratios">Image aspect ratios</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/">Layout</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/line-height">Line height</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/logos">Logos</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/margins">Margins</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/measure">Measure</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/padding">Padding</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/page-layouts">Page layouts</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/position">Position</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/spacing-units">Spacing units</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-color">Text Color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-align">Text align</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-decoration">Text decoration</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/typography">Typography</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/">Utilities</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/visibility">Visibility</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a4">
+      Components
+    </button>
+  </li>
+  <div id="nav-a4" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/components">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/accordion">Accordion</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/additional-info">Additional info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/address-block">Address block</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/">Alert</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-expandable/">Alert - Expandable</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-sign-in/">Alert - Sign-in</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/autosave">Autosave</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/back-to-top">Back to top</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/">Banner</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/maintenance">Banner - Maintenance</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/official-gov">Banner - Official Gov</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/promo">Banner - Promo</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/breadcrumbs">Breadcrumbs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/">Button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-icon">Button - Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-group">Button group</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/card">Card</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/checkbox">Checkbox</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/crisis-line-modal">Crisis Line Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/date-input">Date input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/divider">Divider</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/file-input">File input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/">Footer</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/footer-minimal">Footer - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/">Form</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/">Header</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/header-minimal">Header - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/icon">Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/input-message">Input message</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/label">Label</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/language-toggle">Language toggle</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/">Link</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/action">Link - Action</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/collection">Link - Collection</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/deep-content">Link - Deep content</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/list">List</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/loading-indicator">Loading indicator</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/memorable-date">Memorable date</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/">Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/need-help">Need help?</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/notification">Notification</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/omb-info">OMB info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/on-this-page">On this page</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/pagination">Pagination</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/penalty-notice">Penalty notice</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/prefill">Prefill</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/privacy-agreement">Privacy Agreement</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/process-list">Process list</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/progress-bar/">Progress bar - Activity</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/progress-bar-segmented">Progress bar - Segmented</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/radio-button">Radio button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/redirects">Redirects</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/search-input">Search Input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/select">Select</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/sidenav">Sidenav</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/statement-of-truth">Statement of truth</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/summary-box">Summary box</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/table">Table</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tabs">Tabs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tag">Tag</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/telephone">Telephone</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/text-input">Text input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/textarea">Textarea</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/">URLs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/vanity-urls">Vanity URLs</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a5">
+      Patterns
+    </button>
+  </li>
+  <div id="nav-a5" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/patterns">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-mutually-exclusive-answer">A mutually exclusive answer</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-single-response">A single response</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/addresses">Addresses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-answers">Check answers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-eligibility">Check eligibility</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-personal-information">Check personal information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/complete-a-sub-task">Complete a sub task</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/contact-preferences">Contact preferences</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/dates">Dates</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/direct-deposit">Direct deposit</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/email-address">Email address</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/feedback">Feedback</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/files">Files</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/gender">Gender</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/housing-status">Housing status</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/keep-a-record-of-submitted-information">Keep a record of submitted information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/know-how-their-information-is-updated">Know how their information is updated</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/multiple-responses">Multiple responses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/names">Names</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-a-long-list">Navigate a long list</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-benefit-applications">Navigate benefit applications</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/phone-numbers">Phone numbers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/pronouns">Pronouns</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/race-and-ethnicity">Race and ethnicity</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/recover-from-errors">Recover from errors</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/relationship">Relationship to Veteran</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/service-history">Service history</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/sign-in">Sign-in</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/signature">Signature</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/social-security-number">Social security or VA file number</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/stay-informed-of-their-application-status">Stay informed of their form submission status</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/wizards">Wizard</a>
+            </li>
+          
+          
+      
+    </ul>
+  </div>
+  </ul>
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-mobile-nav__link site-mobile-nav__link--icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+    </svg>
+    Submit Issue
+  </a>
+</nav>
+
+
+    <div>
+      <div class="site-top-nav-wrapper site-l-wrapper sticky">
+  <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/about">About</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link  current " href="/content-style-guide">Content</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/foundation">Foundation</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/components">Components</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/patterns">Patterns</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/templates">Templates</a>
+      </li>
+    </ul>
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-header__nav-item__link site-header__nav-item__link--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+          </svg>
+          Submit Issue
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      <div class="vads-u-background-color--gold-lightest vads-u-padding-y--1">
+  <div class="site-l-wrapper">
+    <p class="vads-u-font-size--md vads-u-margin--0">
+      <strong>Summer updates</strong>
+        <a href="/about/whats-new">
+          USWDS v3 upgrade nearing completion!
+        </a>
+  </div>
+</div>
+
+      <div class="site-content vads-u-margin-bottom--9">
+        
+          <div class="site-content__nav">
+  
+    <nav class="va-sidebarnav va-sidebarnav--content">
+  <ul class="usa-sidenav-list">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li class="">
+        <a class="" href="/content-style-guide">Overview</a>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/abbreviations-and-acronyms">
+                      Abbreviations and acronyms
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/alternative-text-for-images">
+                      Alternative text for images
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/bold-text">
+                      Bold & italic text
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/bulleted-lists">
+                      Bulleted lists
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/button-labels">
+                      Button labels
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/capitalization">
+                      Capitalization
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/content-principles">
+                      Content principles
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/dates-and-numbers">
+                      Dates, times, phone numbers, and addresses
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="error-messages">Error messages</button>
+                      <div id="error-messages" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/content-style-guide/error-messages/">
+                              Error messages</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/error-messages/system">
+                              System</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/error-messages/engagement">
+                              Engagement</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/error-messages/access">
+                              Access</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/error-messages/feedback">
+                              Feedback</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/form-labels">
+                      Form labels
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/government-forms">
+                      Government forms
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="health-content">Health content</button>
+                      <div id="health-content" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/content-style-guide/health-content/">
+                              Health content</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/health-content/destigmatizing-language-in-substance-use">
+                              Destigmatizing language in substance use</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/links">
+                      Links
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li class="active-level">
+                    <a class="usa-current" href="/content-style-guide/messaging-error-messages">
+                      Messaging - Error messages
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/naming-and-labels">
+                      Naming and labels
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/neutral-and-inclusive-language">
+                      Neutral and inclusive language
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/numbers">
+                      Numbers
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/page-titles-and-section-titles">
+                      Page titles and section titles
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="plain-language">Plain language</button>
+                      <div id="plain-language" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/content-style-guide/plain-language/">
+                              Standards</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/use-short-sentences">
+                              Use short sentences</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/use-simple-words-and-terms">
+                              Use simple words and terms</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/use-active-voice">
+                              Use active voice</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/define-complex-terms">
+                              Define complex terms</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/use-pronouns">
+                              Use pronouns</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/use-contractions">
+                              Use contractions</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/don-t-use-jargon">
+                              Don't use jargon</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/don-t-use-idioms">
+                              Don't use idioms</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/avoid-branded-names">
+                              Avoid branded names</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/plain-language/structure-your-content">
+                              Structure your content</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/punctuation">
+                      Punctuation
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/sign-up-for-updates">
+                      Sign up for updates
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="specific-topics-and-programs">Specific topics and programs</button>
+                      <div id="specific-topics-and-programs" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/content-style-guide/specific-topics-and-programs/">
+                              Specific topics and programs</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/specific-topics-and-programs/payments-and-debts">
+                              Payments and debts</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification">
+                              Sign in and identity verification</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/they-their">
+                      They, their
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/title-tags">
+                      Title tags
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/trademarks">
+                      Trademarks
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/we-us-you">
+                      We, us, you
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/web-policies-and-directives">
+                      Web policies and directives
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/word-list">
+                      Word list
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/content-style-guide/seo">
+                      Writing for SEO
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+  </ul>
+</nav>
+    
+  
+</div>
+        <div class="site-content__content">
+          <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+            
+              
+                <div class="vads-u-margin-bottom--2 vads-u-padding--2 vads-u-background-color--gold vads-u-display--inline-block vads-u-font-weight--bold">
+  This page is a draft. <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_content-style-guide/messaging-error-messages.md">Edit this page in GitHub</a>.
+</div>
+              
+              
+                <div>
+  <p class="site-content__section-name">
+    Content style guide
+  </p>
+</div>
+              
+            
+            <h1 id="error-message-style-guide">Error message style guide</h1>
+
+<p><em>Note: The guidelines below don’t apply to inline error messages in form fields (for example, “Please enter a valid Social Security number.”). Inline form field error messages will be handled in a separate error guide.</em></p>
+
+<nav aria-labelledby="on-this-page" class="site-on-this-page">
+  <dl class="site-on-this-page__list">
+    <dt id="on-this-page" role="heading" aria-level="2" class="site-on-this-page__title">
+      On this page
+    </dt>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#structure">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Structure
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#content-within-the-description">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Content within the description
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#style-and-tone">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Style and tone
+      </a>
+    </dd>
+  
+    <dd role="definition" class="site-on-this-page__definition">
+      <a class="site-on-this-page__link" href="#additional-guidance">
+        <i aria-hidden="true" class="fas fa-arrow-down"></i>
+        Additional guidance
+      </a>
+    </dd>
+  
+  </dl>
+</nav>
+
+<h2 id="structure">Structure</h2>
+
+<p>Every error message will have <strong>up to</strong> 3 parts:</p>
+
+<p><img src="/images/error-message-diagram.png" alt="Error message diagram" /></p>
+
+<ol>
+  <li>
+    <p>Message title: Bold title giving the user a quick idea of what’s wrong (or, for informational alerts, the key message the user needs to know)</p>
+  </li>
+  <li>Message content (description):
+    <ul>
+      <li>Apology (if the error is coming from a problem on our end)</li>
+      <li>Succinct description of the issue, cause, and any relevant details</li>
+      <li>Call to action telling the user what to do next (if applicable)</li>
+      <li>Next-step call to action telling the user what to do if the first call to action fails to resolve the issue (if applicable)</li>
+    </ul>
+  </li>
+  <li>Button(s): Actionable next-step for user (if applicable)</li>
+</ol>
+
+<h2 id="content-within-the-message-description">Content within the message description</h2>
+
+<h3 id="general-description-guidance">General description guidance</h3>
+
+<p>To create an effective error message, ask yourself these 4 questions:</p>
+
+<ol>
+  <li>
+    <p>What’s the error/issue?</p>
+
+    <p>The answer will inform the details of the issue and cause.</p>
+  </li>
+  <li>
+    <p>What’s the source of the error/issue?</p>
+
+    <p>The answer will determine how the error/issue needs to be framed, and whether an apology is needed. <strong>Consider if the issue is caused by:</strong></p>
+
+    <ul>
+      <li>
+        <p>The user’s action</p>
+      </li>
+      <li>
+        <p>An authorization issue. <strong>Consider whether the issue is due to:</strong></p>
+      </li>
+      <li>VA.gov’s inability to find user’s records in our system, <strong>or</strong></li>
+      <li>The user’s records showing user can’t use benefit/service (ie, user isn’t a VA patient, user isn’t enrolled in benefit/service, user isn’t eligible for benefit/service)</li>
+      <li>
+        <p>Something else</p>
+      </li>
+      <li>A system or network access issue. <strong>Consider whether the issue:</strong>
+        <ul>
+          <li>Affects the entire site or just one page/application/component/user task</li>
+          <li>Is scheduled/expected or unexpected</li>
+          <li>Is the result of an issue of VA.gov, a separate site/app (such as DS Logon), or Internet network connection</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>What does the user need to know to resolve the error/issue?</p>
+
+    <p>The answer will inform the call to action telling the user what to do next, as well as any relevant details.</p>
+
+    <ul>
+      <li>For an error caused by user action, offer the user clear guidance on how to resolve the error (ie, “Please make sure your file is a .pdf format”).</li>
+      <li>For an error caused by an authorization issue, if the issue is due to VA.gov inability to find user’s records in our system, direct the user to try again or call the VA.gov help desk if they think their records should be available.</li>
+      <li>If the issue is due to the user’s records showing the user can’t use benefit/service, offer a path forward:
+        <ul>
+          <li>User not eligible for benefit: Direct to relevant eligibility information</li>
+          <li>User not enrolled in benefit: Direct to relevant eligibility information and application page.</li>
+          <li>User not a VA patient: Direct to facility locator to find contact information to call their VA facility.</li>
+        </ul>
+      </li>
+      <li>For an error caused by a system or network access issue, the error message should include timing for when the user should try again. This can be specific timing (eg, in an hour, tomorrow, etc.) if an estimate is available or more general timing (eg, soon, later) if an estimate isn’t available.</li>
+    </ul>
+  </li>
+  <li>
+    <p>If the resolution fails, what’s the next step?</p>
+
+    <p>The answer will inform whether or not to include a “next-step call to action” to help guide the user further should the first call to action fail to resolve the issue. This may be language directing the user to call the VA.gov help desk or other VA resources, and will be determined on an issue-by-issue basis. See <a href="#next-step">Next-step calls to action</a> below for more information and guidance.</p>
+  </li>
+</ol>
+
+<h3 id="for-task-completion-success-alerts">For task completion success alerts</h3>
+
+<p>Create a brief title documenting the task that was successfully completed, followed by a brief description of the success.</p>
+
+<p>Example:</p>
+
+<p><strong>Saved</strong></p>
+
+<p>We saved the information you’ve entered so far.</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Saved-001.png" alt="Saved" /></p>
+
+<h3 id="for-task-completion-failure-alerts">For task completion failure alerts</h3>
+
+<p>Include exactly what failed in the title, followed by a brief apology, reiteration of the failure reframed in the VA.gov perspective, and prompt to try again.</p>
+
+<p>Example:</p>
+
+<p><strong>Your form didn’t save</strong></p>
+
+<p>We’re sorry. We couldn’t save your form. Please try again.</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Error-002.png" alt="Your form didn't save" /></p>
+
+<p>Consider whether there is additional information, including a time estimate for resolution and/or a call to action button, that should be included.</p>
+
+<p>Example:</p>
+
+<p><strong>Please save this application and try again</strong></p>
+
+<p>We’re sorry. Your application didn’t go through. We’re working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow.</p>
+
+<p>(button) Save your application</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Save-003.png" alt="Please save this application and try again" /></p>
+
+<h3 id="for-informational-messages-and-warnings">For informational messages and warnings</h3>
+
+<p>To create an effective informational message or warning, ask yourself these 2 questions:</p>
+
+<p><strong>1. What’s the key information the user needs to know?</strong></p>
+
+<p>This information should be presented as succinctly as possible in the title and then reiterated in the description with any additional relevant details.</p>
+
+<ul>
+  <li>Informational example:</li>
+</ul>
+
+<p><strong>VA.gov will be down for maintenance soon</strong></p>
+
+<p>We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Down-004.png" alt="VA.gov will be down for maintenance soon" /></p>
+
+<ul>
+  <li>Warning example:</li>
+</ul>
+
+<p><strong>We’re working on the site</strong></p>
+
+<p>We’re doing some work on VA.gov right now. You should still be able to use the site applications and tools. If you have any trouble, please check back soon.</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Warning-005.png" alt="We're working on the site" /></p>
+
+<p><strong>2. Does the user need to take action, or do we want the user to take action?</strong></p>
+
+<ul>
+  <li>When action is required, frame required information as a need.</li>
+</ul>
+
+<p>Example:</p>
+
+<p><strong>We need your help to finish reviewing your claim</strong></p>
+
+<p>We need you to provide more evidence (supporting documents) so we can finish reviewing your claim.</p>
+
+<p>(button) See details</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Continue-006.png" alt="We need your help to finish reviewing your claim" /></p>
+
+<ul>
+  <li>When we want to prompt the user to take action, frame the prompt as a question to engage the user.</li>
+</ul>
+
+<p>Example:</p>
+
+<p><strong>Want to make your VA.gov account more secure?</strong></p>
+
+<p>You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if they get your password.</p>
+
+<p>(button) Secure your account</p>
+
+<p><img src="/images/ErrorMessageStyleGuide-Secure-007.png" alt="Want to make your VA.gov account more secure?" /></p>
+
+<h2 id="style-and-tone">Style and tone</h2>
+
+<h3 id="clear-and-direct">Clear and direct</h3>
+
+<p>Tell the user what’s happened/happening, how it will impact them, and how they can resolve it.</p>
+
+<h3 id="humble-helpful-and-non-alarming">Humble, helpful, and non-alarming</h3>
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Use language that...</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>Accepts ownership (or shared ownership) of the error <em>(ie, “We’re sorry. We can’t find your records in our system.”)</em></li>
+        <li>Instills confidence in the user <em>(ie, “We’re working to fix the problem.”)</em></li>
+        <li>Offers steady, helpful guidance toward resolution <em>(ie, “Please make sure the file you’re uploading is a .pdf or .doc file and try again.”)</em></li>
+      </ul>
+
+    </div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Avoid language that...</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>Blames the user for the error (even if error is user-generated) <em>(ie, “You’re not in our system.”)</em></li>
+        <li>Instills alarm <em>(ie, “Warning!”)</em></li>
+        <li>Feels overly casual or dismissive <em>(ie, “Oops! Incorrect file type”)</em></li>
+      </ul>
+
+    </div>
+</div>
+</div>
+
+<h3 id="framed-to-highlight-vagov-ownershipshared-ownership-of-the-error">Framed to highlight VA.gov ownership/shared ownership of the error</h3>
+
+<p>Did the user’s action cause the error?</p>
+
+<p><strong>If yes:</strong> Avoid language that feels alarming or blame-oriented and re-frame error as being a shared one, while guiding user to correct the error.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Sample error message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>File upload fails because user tried to upload an unacceptable file type.</td>
+      <td><strong>We couldn’t upload your file</strong> We weren’t able to upload your file. Please make sure the file you’re uploading is a .pdf or .doc file and try again. [button] Upload file again</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>If no:</strong> Accept responsibility for the error and offer user brief, but clear, details and guidance to resolution.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Sample error message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Application fails to go through due to server issues.</td>
+      <td><strong>Please save this application and try again</strong> We’re sorry. Your application didn’t go through. We’re working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow. [button] Save your application</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="conversational-and-plain-language">Conversational and plain language</h3>
+
+<p>First person/second person with a personal/helpful tone. Example:</p>
+
+<div class="do-dont">
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">This...</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>These records are unavailable. The help desk may be able to help locate them…</li>
+      </ul>
+
+    </div>
+</div>
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Becomes something like this</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>We can’t find your records. You can call the VA.gov help desk…We’re here Monday through Friday…</li>
+      </ul>
+
+    </div>
+</div>
+</div>
+
+<p>Plain, simple words (ie, avoid jargon and multisyllabic words wherever possible). Examples:</p>
+
+<div class="do-dont">
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">This...</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>If you need immediate assistance…</li>
+        <li>The system is currently unavailable…</li>
+      </ul>
+
+    </div>
+</div>
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Becomes something like this</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>If you need help right now…</li>
+        <li>VA.gov isn’t working right now…or VA.gov is down at the moment</li>
+      </ul>
+
+    </div>
+</div>
+</div>
+
+<p>When the instructions are conditional, lead with the conditional phrase to make it clear who the instructions are for. Examples:</p>
+
+<div class="do-dont">
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">This...</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>Please call us if it still doesn’t work.</li>
+        <li>You can’t use this tool if you’re not a VA patient.</li>
+      </ul>
+
+    </div>
+</div>
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Becomes something like this</h3>
+<div class="do-dont__content">
+
+      <ul>
+        <li>If it still doesn’t work, please call us.</li>
+        <li>If you’re not a VA patient, you can’t use this tool.</li>
+      </ul>
+
+    </div>
+</div>
+</div>
+
+<h2 id="additional-guidance">Additional guidance</h2>
+
+<h3 id="error-state-and-message-intent">Error state and message intent</h3>
+<p>Focusing in on the intent of the error message can help to further flesh out the nuances of tone and description content.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Error state</th>
+      <th>When to use</th>
+      <th>Tone</th>
+      <th>Goals</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Informational</strong></td>
+      <td>To surface system-related feedback not initiated by the user (e.g. status updates). or, To provide information that helps set the user’s expectations for their experience (e.g. SiP available).</td>
+      <td>Clear and direct, Humble, Empathetic, Helpful</td>
+      <td>Succinctly convey information  Explain how (and for how long) user may be impacted Offer guidance toward resolution (if needed)</td>
+      <td><strong>VA.gov will be down for maintenance soon</strong> <br />We’ll be doing some work on VA.gov on [Date] between [time] and [time]. If you have trouble using the site during that time, please check back soon.</td>
+    </tr>
+    <tr>
+      <td><strong>Success</strong></td>
+      <td>As a confirmation that a user-initiated action was completed successfully.</td>
+      <td>Positive, direct, and definitive</td>
+      <td>Quickly and clearly convey user’s success</td>
+      <td><strong>File uploaded</strong> <br /> We’ve uploaded your file. Thank you.</td>
+    </tr>
+    <tr>
+      <td><strong>Warning</strong></td>
+      <td>An action was unsuccessful, but the user can still proceed. or,  some parts of the user’s experience may be limited that normally wouldn’t be (e.g. system is down and records are accessible but outdated).</td>
+      <td>Clear that there may be a problem, while being un-alarming and focused on reason and resolution</td>
+      <td>Help user understand the issue and resolve it as needed</td>
+      <td><strong>Some information may not be current</strong><br /> We’re sorry. We’re having issues with our server. We’re working to fix it, but it may take us a while. You can still use [APPLICATION/PAGE NAME], but you may not see all of your updated information. If you’re having trouble, please try again later.</td>
+    </tr>
+    <tr>
+      <td><strong>Error</strong></td>
+      <td>A user action was not completed and must be resolved to proceed.</td>
+      <td>Clear that’s something’s wrong that will block the user from moving forward, while being un-alarming and focused on reason and resolution</td>
+      <td>Help user understand the issue and resolve it</td>
+      <td><strong>We’ve run into a problem</strong> <br /> We’re sorry. It looks like your latest action didn’t go through on the site because there’s a problem with the Internet connection. We can’t take you to the next step until this is complete. Please check to make sure you’re connected to the Internet and try again.</td>
+    </tr>
+    <tr>
+      <td><strong>Actions (single button)</strong></td>
+      <td>The user must take an action to proceed with the task indicated by the message</td>
+      <td>Enticing to help prompt user to take action, while being clear about the action needed</td>
+      <td>Get user to take a specific action</td>
+      <td><strong>Still want to apply for VA health care benefits?</strong> <br />You started an application for health care benefits on [DATE], but you didn’t submit it. You can open the application and finish applying at any time. [button] Open your application</td>
+    </tr>
+    <tr>
+      <td><strong>Actions (binary button)</strong></td>
+      <td>The user must choose between two actions to proceed with a task, or to confirm an important action.</td>
+      <td>Clear and direct about how each of the choices will impact the user</td>
+      <td>Help user make an informed choice of action to take</td>
+      <td><strong>Are you sure you want to start this application over?</strong><br /> If you start over, you’ll lose all the information you’ve filled in so far. [button 1] Start over [button 2] Continue your application</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="messaging-categories">Messaging categories</h3>
+
+<p>The <a href="/content-style-guide/messaging-dictionary">Messaging Dictionary</a> can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Error state</th>
+      <th>When to use</th>
+      <th>Link to dictionary of messages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>System messaging</strong></td>
+      <td>Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.</td>
+      <td><a href="/content-style-guide/messaging-dictionary#system-messaging">See system message examples</a></td>
+    </tr>
+    <tr>
+      <td><strong>Engagement messaging</strong></td>
+      <td>Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.</td>
+      <td><a href="/content-style-guide/messaging-dictionary#engagement-messaging">See engagement message examples</a></td>
+    </tr>
+    <tr>
+      <td><strong>Access messaging</strong></td>
+      <td>Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc.</td>
+      <td><a href="/content-style-guide/messaging-dictionary#access-messaging">See access message examples</a></td>
+    </tr>
+    <tr>
+      <td><strong>Feedback messaging</strong></td>
+      <td>The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging.</td>
+      <td><a href="/content-style-guide/messaging-dictionary#feedback-messaging">See feedback message examples</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="next-step-calls-to-action">Next-step calls to action</h3>
+
+<p>Some errors may not be resolved based on initial instructions to user (ie, “Try again later”). In these cases, a next-step call to action (ie, “Call the VA.gov help desk”) may be necessary. This will be decided on a case-by-case basis, but below are some initial guidelines for determining the appropriate next-step call to action.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Next-step call to action</th>
+      <th>When to use</th>
+      <th>Standard language to use</th>
+      <th>Potential condition variations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Call the VA.gov help desk</strong></td>
+      <td>User can’t resolve an error that is directly related to the website (specifics TBD)</td>
+      <td>Please call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET.</td>
+      <td>If you need more help, please call… If it still doesn’t work, please call…</td>
+    </tr>
+    <tr>
+      <td><strong>Get more information about/help with your VA benefits</strong></td>
+      <td>User may not be able to resolve error, but next step would involve talking to someone at VA about benefits</td>
+      <td>If you need more help, call us at 800-827-1000. Or, contact a VA regional benefit office near you. (button) <a href="https://www.vets.gov/facilities/">Find a VA regional benefit office</a></td>
+      <td>If you have questions about your benefits…</td>
+    </tr>
+    <tr>
+      <td><strong>Get help filing a disability claim</strong></td>
+      <td>User needs more help filing a disability claim</td>
+      <td>If you need more help with your claim, you may want to work with a trained professional. (button) <a href="https://www.vets.gov/disability-benefits/apply/help/index.html">Get help with your claim</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Contact the Veterans Health Administration toll-free hotline</strong></td>
+      <td>User needs help filling out a health care benefits application</td>
+      <td>If you need more help filling out your application, call our toll-free hotline at 877-222-VETS (877-222-8387). We’re here Monday–Friday, 8:00 a.m. to 8:00 p.m. ET. You can also get help from a trained professional called an accredited representative. Or, find your state’s Veterans agency.</td>
+      <td>(button 1) <a href="https://www.ebenefits.va.gov/ebenefits/about/feature?feature=request-vso-representative">Request a representative</a><br />(button 2) <a href="https://www.va.gov/statedva.htm">Find a Veterans agency</a> <br />If you have questions about your application,…</td>
+    </tr>
+    <tr>
+      <td><strong>Contact your local VA medical center</strong></td>
+      <td>User needs to contact their doctor or speak to someone at a VA medical center for more information</td>
+      <td>If you need more help with this, call your healthcare provider or your local VA medical center or clinic. button) <a href="https://www.vets.gov/facilities/">Find a VA health facility</a></td>
+      <td>If you have questions, call your doctor or a VA medical center or clinic near you…</td>
+    </tr>
+    <tr>
+      <td><strong>Get answers to questions about education benefits</strong></td>
+      <td>User needs more help/answers to questions about their education benefits</td>
+      <td>If you need more help, call us at 888-GI-Bill (888-442-4551). We’re here Monday–Friday, 8:00 a.m. to 7:00 p.m. ET.</td>
+      <td>If you’d like to request a paper application…</td>
+    </tr>
+  </tbody>
+</table>
+
+          </main>
+          
+
+          
+
+<div>Last updated: Oct 24, 2024</div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <footer class="site-footer vads-u-padding-y--5" role="contentinfo">
+  <div class="site-l-wrapper">
+    <div class="medium-screen:vads-u-display--flex medium-screen:vads-u-justify-content--space-between vads-u-align-items--center">
+      <div>
+        <ul class="site-footer__links">
+          <li class=site-footer__links__item>
+            <a href="/about/whats-new">What’s new?</a>
+          </li>
+          <li class=site-footer__links__item>
+            <a href="/about/feedback">Feedback</a>
+          </li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/playbook/" target="_blank">VA.gov playbook</a></li>
+          <li class=site-footer__links__item><a target="_blank" href="https://www.va.gov/accessibility-at-va/">Accessibility</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/web/" target="_blank">Web governance &amp; policies</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-seal">
+        <a href="https://va.gov" class="site-footer__logo" title="Go to VA.gov"><img src="/assets/img/va-logo-white.png" alt="U.S. Department of Veterans Affairs logo"></a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/assets/javascripts/site.js?v=1729797815"></script>
+<script src="/vendor/javascripts/formation.js?v=1729797815"></script>
+
+  </body>
+</html>

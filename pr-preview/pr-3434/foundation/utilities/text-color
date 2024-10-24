@@ -1,0 +1,5038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Text Color - VA.gov Design System </title>
+  <meta name="description" content="Text Color">
+
+  
+
+  
+
+  <!-- Web component setup -->
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/component-library.css?v=1729797815" />
+  <script type="module">
+    import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
+    defineCustomElements();
+</script>
+
+  <!-- Icons -->
+  <link href="/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+  <link href="/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+  <link href="/assets/img/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+  <link href="/assets/img/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+  <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+
+  <link rel="stylesheet" href="/formation.min.css?v=1729797815">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css?v=1729797815">
+  <link rel="canonical" href="https://design.va.gov/foundation/utilities/text-color">
+  <link rel="alternate" type="application/rss+xml" title="VA.gov Design System" href="https://design.va.gov/feed.xml">
+
+  <script src="/assets/javascripts/polyfills/array.from.js?v=1729797815"></script>
+
+</head>
+
+  <body >
+
+    
+
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+
+<section class="usa-banner">
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="" style="padding-left:24px;">
+      <img src="/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        Here's how you know
+      </button>
+      </div>
+    </header>
+    <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner">
+      <div class="usa-banner-guidance-gov usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl usa-width-one-half">
+        <img class="usa-banner-icon usa-media_block-img" src="/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<header class="site-header" role="banner">
+
+  <div class="site-l-wrapper">
+    <div class="site-header__masthead">
+      <div class="site-header__logo" id="extended-logo">
+        <em class="site-header__logo-text">
+          <a class="site-header__logo-link" title="VA.gov Design System homepage" href="/"><strong class="vads-u-display--block small-screen:vads-u-display--inline">VA.gov</strong> <span class="vads-u-display--none small-screen:vads-u-display--inline">|</span> Design System</a>
+        </em>
+      </div>
+      <div class="site-header__utility-links">
+        <div id="search-container" class="site-search-container">
+          <i class="fas fa-search search-icon"></i>
+          <form action="/results" method="get" id="search-form" class="search-form">
+          <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+          </form>
+          <ul id="results-container" class="site-search-results" role="listbox"></ul>
+        </div>
+      </div>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
+  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <form action="/results" method="get" id="mobile-search-form" class="search-form">
+    <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
+  </form>
+  <ul id="mobile-results-container" class="site-search-results site-search-results--mobile" role="listbox"></ul>
+</div>
+
+
+    <nav class="va-sidebarnav site-mobile-nav" id="mobile-nav">
+  <button id="close_mobile_nav_button" class="site-mobile-nav__close-button" type="button" aria-label="Close this menu"><i class="fas fa-times"></i></button>
+  <ul class="usa-accordion">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false" aria-controls="nav-a1">About</button>
+  </li>
+  <div id="nav-a1" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/about">Overview</a>
+      </li>
+      
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/">Accessibility</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-annotations">Accessibility annotations for VA.gov applications</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/accessibility-testing-for-design-system-components">Accessibility testing for design system components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/add-a-component-or-pattern-once-approved">Add a component or pattern once approved</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/contributing">Contributing</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/">Contributing to the design system</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/creating-components">Creating components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/design-libraries">Design libraries</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/principles">Design principles</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/experience-standards/">Experience Standards</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/experimental-components-and-patterns">Experimental components and patterns</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/feedback">Feedback</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/figma-at-va">Figma at VA</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/accessibility/focus-management">Focus management</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/content-writers">For content writers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/designers/">For designers</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/">For developers</a>
+            </li>
+          
+        
+      
+       
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/implementing-design-work">Implementing design work</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/install">Install</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/maturity-scale">Maturity scale</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/naming">Naming convention</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-a-removal">Suggest a removal</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/contributing-to-the-design-system/suggest-an-addition-or-update">Suggest an addition or update</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/updating-this-site">Updating this site</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/developers/using-web-components">Using Web Components</a>
+            </li>
+          
+        
+      
+       
+          
+            <li class="">
+              <a class="" href="/about/whats-new">What’s new?</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a2">
+      Content
+    </button>
+  </li>
+  <div id="nav-a2" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/content-style-guide">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/abbreviations-and-acronyms">Abbreviations and acronyms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/access">Access messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/alternative-text-for-images">Alternative text for images</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/avoid-branded-names">Avoid branded names</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bold-text">Bold & italic text</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/bulleted-lists">Bulleted lists</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/button-labels">Button labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/capitalization">Capitalization</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/content-principles">Content principles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/dates-and-numbers">Dates, times, phone numbers, and addresses</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/define-complex-terms">Define complex terms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/destigmatizing-language-in-substance-use">Destigmatizing language in substance use</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-idioms">Don’t use idioms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/don-t-use-jargon">Don’t use jargon</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/engagement">Engagement messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/">Error messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/feedback">Feedback messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/form-labels">Form labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/government-forms">Government forms</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/health-content/">Health content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/links">Links</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/naming-and-labels">Naming and labels</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/neutral-and-inclusive-language">Neutral and inclusive language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/numbers">Numbers</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/page-titles-and-section-titles">Page titles and section titles</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/payments-and-debts">Payments and debts</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/">Plain language</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/punctuation">Punctuation</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification">Sign in and identity verification</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/sign-up-for-updates">Sign up for updates</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/specific-topics-and-programs/">Specific topics and programs</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/structure-your-content">Structure your content</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/error-messages/system">System messages</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/they-their">They, their</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/title-tags">Title tags</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/trademarks">Trademarks</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-active-voice">Use active voice</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-contractions">Use contractions</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-pronouns">Use pronouns</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-short-sentences">Use short sentences</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/plain-language/use-simple-words-and-terms">Use simple words and terms</a>
+            </li>
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/we-us-you">We, us, you</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/web-policies-and-directives">Web policies and directives</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/word-list">Word list</a>
+            </li>
+          
+        
+      
+        
+          
+            <li class="">
+              <a class="" href="/content-style-guide/seo">Writing for SEO</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="true" aria-controls="nav-a3">
+      Foundation
+    </button>
+  </li>
+  <div id="nav-a3" class="usa-accordion-content" aria-hidden="false">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/background-color">Background color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/border">Border</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/breakpoints">Breakpoints</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/color-palette">Color palette</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/design-tokens">Design tokens</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/display">Display</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/flexbox">Flexbox</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/flexbox-grid">Flexbox grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/float-grid">Float grid</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-family">Font family</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-size">Font size</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-style">Font style</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/font-weight">Font weight</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/height-and-width">Height and width</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/icons">Icons</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/image-aspect-ratios">Image aspect ratios</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/">Layout</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/line-height">Line height</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/logos">Logos</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/margins">Margins</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/measure">Measure</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/padding">Padding</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/layout/page-layouts">Page layouts</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/position">Position</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/spacing-units">Spacing units</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="active-level">
+              <a class="usa-current" href="/foundation/utilities/text-color">Text Color</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-align">Text align</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/text-decoration">Text decoration</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/typography">Typography</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/">Utilities</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/foundation/utilities/visibility">Visibility</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a4">
+      Components
+    </button>
+  </li>
+  <div id="nav-a4" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/components">Overview</a>
+      </li>
+      
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/accordion">Accordion</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/additional-info">Additional info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/address-block">Address block</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/">Alert</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-expandable/">Alert - Expandable</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/alert/alert-sign-in/">Alert - Sign-in</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/autosave">Autosave</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/back-to-top">Back to top</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/">Banner</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/maintenance">Banner - Maintenance</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/official-gov">Banner - Official Gov</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/banner/promo">Banner - Promo</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/breadcrumbs">Breadcrumbs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/">Button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-icon">Button - Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/button/button-group">Button group</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/card">Card</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/checkbox">Checkbox</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/crisis-line-modal">Crisis Line Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/date-input">Date input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/divider">Divider</a>
+            </li>
+          
+        
+      
+      
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/file-input">File input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/">Footer</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/footer/footer-minimal">Footer - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/">Form</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/">Header</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/header/header-minimal">Header - Minimal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/icon">Icon</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/input-message">Input message</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/label">Label</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/language-toggle">Language toggle</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/">Link</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/action">Link - Action</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/collection">Link - Collection</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/link/deep-content">Link - Deep content</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/list">List</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/loading-indicator">Loading indicator</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/memorable-date">Memorable date</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/modal/">Modal</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/need-help">Need help?</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/notification">Notification</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/omb-info">OMB info</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/on-this-page">On this page</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/pagination">Pagination</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/penalty-notice">Penalty notice</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/prefill">Prefill</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/privacy-agreement">Privacy Agreement</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/process-list">Process list</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/progress-bar/">Progress bar - Activity</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/progress-bar-segmented">Progress bar - Segmented</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/radio-button">Radio button</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/redirects">Redirects</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/search-input">Search Input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/select">Select</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/sidenav">Sidenav</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/statement-of-truth">Statement of truth</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/summary-box">Summary box</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/table">Table</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tabs">Tabs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/tag">Tag</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/telephone">Telephone</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/text-input">Text input</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/form/textarea">Textarea</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/">URLs</a>
+            </li>
+          
+        
+      
+      
+          
+            <li class="">
+              <a class="" href="/components/url-standards/vanity-urls">Vanity URLs</a>
+            </li>
+          
+        
+      
+    </ul>
+  </div>
+
+
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="nav-a5">
+      Patterns
+    </button>
+  </li>
+  <div id="nav-a5" class="usa-accordion-content" aria-hidden="true">
+    <ul class="usa-sidenav-list">
+      <li class="">
+        <a class="" href="/patterns">Overview</a>
+      </li>
+      
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-mutually-exclusive-answer">A mutually exclusive answer</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/a-single-response">A single response</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/addresses">Addresses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-answers">Check answers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-eligibility">Check eligibility</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/check-personal-information">Check personal information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/complete-a-sub-task">Complete a sub task</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/contact-preferences">Contact preferences</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/dates">Dates</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/direct-deposit">Direct deposit</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/email-address">Email address</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/feedback">Feedback</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/files">Files</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/gender">Gender</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/housing-status">Housing status</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/keep-a-record-of-submitted-information">Keep a record of submitted information</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/know-how-their-information-is-updated">Know how their information is updated</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/multiple-responses">Multiple responses</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/names">Names</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-a-long-list">Navigate a long list</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/navigate-benefit-applications">Navigate benefit applications</a>
+            </li>
+          
+          
+      
+        
+          
+          
+      
+        
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/phone-numbers">Phone numbers</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/pronouns">Pronouns</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/race-and-ethnicity">Race and ethnicity</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/recover-from-errors">Recover from errors</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/relationship">Relationship to Veteran</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/service-history">Service history</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/sign-in">Sign-in</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/signature">Signature</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/ask-users-for/social-security-number">Social security or VA file number</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/help-users-to/stay-informed-of-their-application-status">Stay informed of their form submission status</a>
+            </li>
+          
+          
+      
+        
+          
+            <li class="">
+              <a class="" href="/patterns/wizards">Wizard</a>
+            </li>
+          
+          
+      
+    </ul>
+  </div>
+  </ul>
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-mobile-nav__link site-mobile-nav__link--icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+      <path fill="currentColor" fill-rule="evenodd"
+        d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+    </svg>
+    Submit Issue
+  </a>
+</nav>
+
+
+    <div>
+      <div class="site-top-nav-wrapper site-l-wrapper sticky">
+  <nav class="site-header__nav">
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/about">About</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/content-style-guide">Content</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link  current " href="/foundation">Foundation</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/components">Components</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/patterns">Patterns</a>
+      </li>
+      <li class="site-header__nav-item">
+        <a class="site-header__nav-item__link " href="/templates">Templates</a>
+      </li>
+    </ul>
+    <ul class="site-header__nav-list">
+      <li class="site-header__nav-item">
+        <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose" class="site-header__nav-item__link site-header__nav-item__link--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M.75 16A16 16 0 0 0 11.7 31.18c.8.15 1.1-.34 1.1-.77l-.02-2.72c-4.46.97-5.4-2.15-5.4-2.15C6.66 23.7 5.6 23.2 5.6 23.2c-1.45-.99.1-.97.1-.97 1.61.11 2.46 1.65 2.46 1.65 1.43 2.45 3.74 1.74 4.66 1.33a3.42 3.42 0 0 1 1.01-2.14c-3.55-.4-7.29-1.78-7.29-7.9 0-1.75.63-3.18 1.65-4.3-.16-.4-.71-2.03.16-4.23 0 0 1.34-.43 4.4 1.64a15.33 15.33 0 0 1 8 0c3.06-2.07 4.4-1.64 4.4-1.64.88 2.2.33 3.83.16 4.23a6.17 6.17 0 0 1 1.65 4.3c0 6.14-3.74 7.5-7.3 7.89.57.5 1.08 1.47 1.08 2.96l-.02 4.4c0 .42.29.92 1.1.76A16 16 0 1 0 .75 16Z" />
+          </svg>
+          Submit Issue
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+      <div class="vads-u-background-color--gold-lightest vads-u-padding-y--1">
+  <div class="site-l-wrapper">
+    <p class="vads-u-font-size--md vads-u-margin--0">
+      <strong>Summer updates</strong>
+        <a href="/about/whats-new">
+          USWDS v3 upgrade nearing completion!
+        </a>
+  </div>
+</div>
+
+      <div class="site-content vads-u-margin-bottom--9">
+        
+          <div class="site-content__nav">
+  
+    <nav class="va-sidebarnav va-sidebarnav--foundation">
+  <ul class="usa-sidenav-list">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+      <li class="">
+        <a class="" href="/foundation">Overview</a>
+      </li>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/breakpoints">
+                      Breakpoints
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/color-palette">
+                      Color palette
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/design-tokens">
+                      Design tokens
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/icons">
+                      Icons
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/image-aspect-ratios">
+                      Image aspect ratios
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="false" aria-controls="layout">Layout</button>
+                      <div id="layout" class="usa-accordion-content" aria-hidden="true">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/foundation/layout/">
+                              Layout</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/layout/flexbox-grid">
+                              Flexbox grid</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/layout/float-grid">
+                              Float grid</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/layout/page-layouts">
+                              Page layouts</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/logos">
+                      Logos
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/spacing-units">
+                      Spacing units
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <li >
+                    <a class="" href="/foundation/typography">
+                      Typography
+
+
+
+
+</a>
+                  </li>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+            
+                <ul class="usa-accordion">
+                    <li>
+                      <button class="usa-accordion-button" aria-expanded="true" aria-controls="utilities">Utilities</button>
+                      <div id="utilities" class="usa-accordion-content" aria-hidden="false">
+                        <ul class="usa-sidenav-list">
+                          <li >
+                            <a class="" href="/foundation/utilities/">
+                              Utilities</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/background-color">
+                              Background color</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/border">
+                              Border</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/display">
+                              Display</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/flexbox">
+                              Flexbox</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-family">
+                              Font family</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-size">
+                              Font size</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-style">
+                              Font style</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/font-weight">
+                              Font weight</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/height-and-width">
+                              Height and width</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/line-height">
+                              Line height</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/margins">
+                              Margins</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/measure">
+                              Measure</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/padding">
+                              Padding</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/position">
+                              Position</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/text-align">
+                              Text align</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="usa-current" href="/foundation/utilities/text-color">
+                              Text color</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/text-decoration">
+                              Text decoration</a>
+                          </li>
+                          
+                            
+                            
+                            
+                          <li>
+                            <a class="" href="/foundation/utilities/visibility">
+                              Visibility</a>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+          
+        
+    
+        
+        
+        
+        
+        
+          
+        
+    
+  </ul>
+</nav>
+    
+  
+</div>
+        <div class="site-content__content">
+          <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+            
+              
+              
+                <div>
+  <p class="site-content__section-name">
+    Foundation
+  </p>
+</div>
+              
+            
+            <h1 id="text-color">Text Color</h1>
+
+<div class="va-introtext">
+Change the color of text and SVGs (using <code>fill: currentColor</code>).
+</div>
+
+<p><strong>Note:</strong> Not all of these colors are placed in accessible color combinations.</p>
+
+<div class="site-showcase">
+  <div class="site-showcase__header">
+  <h3 class="site-showcase__heading">Color</h3>
+  <ul class="site-utility-scope">
+    <li class="site-utility-scope__item">
+      
+        <span class="site-utility-scope__button site-utility-scope__button--unsupported"><i class="fas fa-times-circle" aria-label="Is not"></i> Responsive</span>
+      
+    </li>
+  </ul>
+  <p class="site-showcase__prop-head">CSS property: <span class="site-showcase__prop">color</span></p>
+</div>
+
+  <h4>Base colors</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--base
+      
+    ">.vads-u-color--base</strong>
+    <button aria-label="Copy" id="vads-u-color--base" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--base');" type="button">
+      <i id="vads-u-color--base-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-base
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--base"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-base'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--white
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--white</strong>
+    <button aria-label="Copy" id="vads-u-color--white" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--white');" type="button">
+      <i id="vads-u-color--white-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-white
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--white"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-white'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--black
+      
+    ">.vads-u-color--black</strong>
+    <button aria-label="Copy" id="vads-u-color--black" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--black');" type="button">
+      <i id="vads-u-color--black-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-black
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--black"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-black'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--orange
+      
+    ">.vads-u-color--orange</strong>
+    <button aria-label="Copy" id="vads-u-color--orange" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--orange');" type="button">
+      <i id="vads-u-color--orange-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-orange
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--orange"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-orange'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--link-default
+      
+    ">.vads-u-color--link-default</strong>
+    <button aria-label="Copy" id="vads-u-color--link-default" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--link-default');" type="button">
+      <i id="vads-u-color--link-default-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-link-default
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--link-default"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--warning-message
+      
+    ">.vads-u-color--warning-message</strong>
+    <button aria-label="Copy" id="vads-u-color--warning-message" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--warning-message');" type="button">
+      <i id="vads-u-color--warning-message-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-warning-message
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--warning-message"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-warning-message'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gibill-accent
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gibill-accent</strong>
+    <button aria-label="Copy" id="vads-u-color--gibill-accent" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gibill-accent');" type="button">
+      <i id="vads-u-color--gibill-accent-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gibill-accent
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gibill-accent"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gold-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary
+      
+    ">.vads-u-color--primary</strong>
+    <button aria-label="Copy" id="vads-u-color--primary" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary');" type="button">
+      <i id="vads-u-color--primary-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-dark
+      
+    ">.vads-u-color--primary-dark</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-dark" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-dark');" type="button">
+      <i id="vads-u-color--primary-dark-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-dark
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-dark"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-dark'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-darker
+      
+    ">.vads-u-color--primary-darker</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-darker" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-darker');" type="button">
+      <i id="vads-u-color--primary-darker-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-darker
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-darker"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-darker'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-alt
+      
+    ">.vads-u-color--primary-alt</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-alt" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-alt');" type="button">
+      <i id="vads-u-color--primary-alt-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-alt
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-alt"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-alt'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-alt-dark
+      
+    ">.vads-u-color--primary-alt-dark</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-alt-dark" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-alt-dark');" type="button">
+      <i id="vads-u-color--primary-alt-dark-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-alt-dark
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-alt-dark"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-alt-dark'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-alt-darkest
+      
+    ">.vads-u-color--primary-alt-darkest</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-alt-darkest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-alt-darkest');" type="button">
+      <i id="vads-u-color--primary-alt-darkest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-alt-darkest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-alt-darkest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-alt-darkest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-alt-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--primary-alt-light</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-alt-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-alt-light');" type="button">
+      <i id="vads-u-color--primary-alt-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-alt-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-alt-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-alt-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--primary-alt-lightest
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--primary-alt-lightest</strong>
+    <button aria-label="Copy" id="vads-u-color--primary-alt-lightest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--primary-alt-lightest');" type="button">
+      <i id="vads-u-color--primary-alt-lightest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-primary-alt-lightest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--primary-alt-lightest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-primary-alt-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--secondary
+      
+    ">.vads-u-color--secondary</strong>
+    <button aria-label="Copy" id="vads-u-color--secondary" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--secondary');" type="button">
+      <i id="vads-u-color--secondary-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-secondary
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--secondary"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-secondary'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--secondary-dark
+      
+    ">.vads-u-color--secondary-dark</strong>
+    <button aria-label="Copy" id="vads-u-color--secondary-dark" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--secondary-dark');" type="button">
+      <i id="vads-u-color--secondary-dark-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-secondary-dark
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--secondary-dark"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-secondary-dark'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--secondary-darkest
+      
+    ">.vads-u-color--secondary-darkest</strong>
+    <button aria-label="Copy" id="vads-u-color--secondary-darkest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--secondary-darkest');" type="button">
+      <i id="vads-u-color--secondary-darkest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-secondary-darkest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--secondary-darkest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-secondary-darkest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--secondary-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--secondary-light</strong>
+    <button aria-label="Copy" id="vads-u-color--secondary-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--secondary-light');" type="button">
+      <i id="vads-u-color--secondary-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-secondary-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--secondary-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-secondary-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--secondary-lightest
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--secondary-lightest</strong>
+    <button aria-label="Copy" id="vads-u-color--secondary-lightest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--secondary-lightest');" type="button">
+      <i id="vads-u-color--secondary-lightest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-secondary-lightest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--secondary-lightest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-secondary-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+  </div>
+
+  <h4>Grayscale</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray
+      
+    ">.vads-u-color--gray</strong>
+    <button aria-label="Copy" id="vads-u-color--gray" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray');" type="button">
+      <i id="vads-u-color--gray-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-dark
+      
+    ">.vads-u-color--gray-dark</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-dark" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-dark');" type="button">
+      <i id="vads-u-color--gray-dark-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-dark
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-dark"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-dark'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-medium
+      
+    ">.vads-u-color--gray-medium</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-medium" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-medium');" type="button">
+      <i id="vads-u-color--gray-medium-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-medium
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-medium"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-medium'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gray-light</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-light');" type="button">
+      <i id="vads-u-color--gray-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-light-alt
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gray-light-alt</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-light-alt" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-light-alt');" type="button">
+      <i id="vads-u-color--gray-light-alt-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-light-alt
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-light-alt"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-light-alt'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-lighter
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gray-lighter</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-lighter" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-lighter');" type="button">
+      <i id="vads-u-color--gray-lighter-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-lighter
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-lighter"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-lighter'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-lightest
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gray-lightest</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-lightest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-lightest');" type="button">
+      <i id="vads-u-color--gray-lightest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-lightest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-lightest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-warm-dark
+      
+    ">.vads-u-color--gray-warm-dark</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-warm-dark" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-warm-dark');" type="button">
+      <i id="vads-u-color--gray-warm-dark-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-warm-dark
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-warm-dark"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-warm-dark'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-warm-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gray-warm-light</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-warm-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-warm-light');" type="button">
+      <i id="vads-u-color--gray-warm-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-warm-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-warm-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-warm-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gray-cool-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gray-cool-light</strong>
+    <button aria-label="Copy" id="vads-u-color--gray-cool-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gray-cool-light');" type="button">
+      <i id="vads-u-color--gray-cool-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gray-cool-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gray-cool-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gray-cool-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+  </div>
+
+  <h4>Tertiary colors</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gold
+      
+    ">.vads-u-color--gold</strong>
+    <button aria-label="Copy" id="vads-u-color--gold" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gold');" type="button">
+      <i id="vads-u-color--gold-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gold
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gold"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gold'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gold-darker
+      
+    ">.vads-u-color--gold-darker</strong>
+    <button aria-label="Copy" id="vads-u-color--gold-darker" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gold-darker');" type="button">
+      <i id="vads-u-color--gold-darker-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gold-darker
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gold-darker"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gold-darker'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gold-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gold-light</strong>
+    <button aria-label="Copy" id="vads-u-color--gold-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gold-light');" type="button">
+      <i id="vads-u-color--gold-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gold-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gold-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gold-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gold-lighter
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gold-lighter</strong>
+    <button aria-label="Copy" id="vads-u-color--gold-lighter" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gold-lighter');" type="button">
+      <i id="vads-u-color--gold-lighter-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gold-lighter
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gold-lighter"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gold-lighter'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--gold-lightest
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--gold-lightest</strong>
+    <button aria-label="Copy" id="vads-u-color--gold-lightest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--gold-lightest');" type="button">
+      <i id="vads-u-color--gold-lightest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-gold-lightest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--gold-lightest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-gold-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--green
+      
+    ">.vads-u-color--green</strong>
+    <button aria-label="Copy" id="vads-u-color--green" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--green');" type="button">
+      <i id="vads-u-color--green-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-green
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--green"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-green'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--green-darker
+      
+    ">.vads-u-color--green-darker</strong>
+    <button aria-label="Copy" id="vads-u-color--green-darker" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--green-darker');" type="button">
+      <i id="vads-u-color--green-darker-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-green-darker
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--green-darker"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-green-darker'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--green-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--green-light</strong>
+    <button aria-label="Copy" id="vads-u-color--green-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--green-light');" type="button">
+      <i id="vads-u-color--green-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-green-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--green-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-green-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--green-lighter
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--green-lighter</strong>
+    <button aria-label="Copy" id="vads-u-color--green-lighter" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--green-lighter');" type="button">
+      <i id="vads-u-color--green-lighter-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-green-lighter
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--green-lighter"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-green-lighter'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--green-lightest
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--green-lightest</strong>
+    <button aria-label="Copy" id="vads-u-color--green-lightest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--green-lightest');" type="button">
+      <i id="vads-u-color--green-lightest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-green-lightest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--green-lightest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-green-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--cool-blue
+      
+    ">.vads-u-color--cool-blue</strong>
+    <button aria-label="Copy" id="vads-u-color--cool-blue" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--cool-blue');" type="button">
+      <i id="vads-u-color--cool-blue-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-cool-blue
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--cool-blue"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-blue-cool'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--cool-blue-light
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--cool-blue-light</strong>
+    <button aria-label="Copy" id="vads-u-color--cool-blue-light" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--cool-blue-light');" type="button">
+      <i id="vads-u-color--cool-blue-light-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-cool-blue-light
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--cool-blue-light"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-blue-cool-light'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--cool-blue-lighter
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--cool-blue-lighter</strong>
+    <button aria-label="Copy" id="vads-u-color--cool-blue-lighter" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--cool-blue-lighter');" type="button">
+      <i id="vads-u-color--cool-blue-lighter-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-cool-blue-lighter
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--cool-blue-lighter"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-blue-cool-lighter'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--cool-blue-lightest
+      
+        vads-u-background-color--black
+      
+    ">.vads-u-color--cool-blue-lightest</strong>
+    <button aria-label="Copy" id="vads-u-color--cool-blue-lightest" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--cool-blue-lightest');" type="button">
+      <i id="vads-u-color--cool-blue-lightest-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-cool-blue-lightest
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--cool-blue-lightest"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-blue-cool-lightest'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+  </div>
+
+  <h4>Hub colors</h4>
+  <div class="vads-l-row vads-u-flex-direction--column">
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-health-care
+      
+    ">.vads-u-color--hub-health-care</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-health-care" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-health-care');" type="button">
+      <i id="vads-u-color--hub-health-care-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-health-care
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-health-care"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-health-care'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-education
+      
+    ">.vads-u-color--hub-education</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-education" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-education');" type="button">
+      <i id="vads-u-color--hub-education-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-education
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-education"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-education'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-disability
+      
+    ">.vads-u-color--hub-disability</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-disability" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-disability');" type="button">
+      <i id="vads-u-color--hub-disability-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-disability
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-disability"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-disability'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-careers
+      
+    ">.vads-u-color--hub-careers</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-careers" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-careers');" type="button">
+      <i id="vads-u-color--hub-careers-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-careers
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-careers"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-careers'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-pension
+      
+    ">.vads-u-color--hub-pension</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-pension" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-pension');" type="button">
+      <i id="vads-u-color--hub-pension-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-pension
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-pension"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-pension'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-records
+      
+    ">.vads-u-color--hub-records</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-records" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-records');" type="button">
+      <i id="vads-u-color--hub-records-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-records
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-records"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-records'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-housing
+      
+    ">.vads-u-color--hub-housing</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-housing" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-housing');" type="button">
+      <i id="vads-u-color--hub-housing-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-housing
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-housing"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-housing'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-life-insurance
+      
+    ">.vads-u-color--hub-life-insurance</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-life-insurance" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-life-insurance');" type="button">
+      <i id="vads-u-color--hub-life-insurance-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-life-insurance
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-life-insurance"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-life-insurance'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-burials
+      
+    ">.vads-u-color--hub-burials</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-burials" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-burials');" type="button">
+      <i id="vads-u-color--hub-burials-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-burials
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-burials"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-burials'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-family-member
+      
+    ">.vads-u-color--hub-family-member</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-family-member" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-family-member');" type="button">
+      <i id="vads-u-color--hub-family-member-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-family-member
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-family-member"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-family-member'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+      <script type="text/javascript">
+  function clickToCopy(text) {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(text);
+
+    const buttonImage = document.getElementById(text+'-icon');
+
+    // Replace copy icon with success icon when clicked
+    buttonImage.classList.remove('fa-copy');
+    buttonImage.classList.add('fa-check-circle', 'vads-u-color--green');
+
+    // Reset icon after 1.5 seconds
+    setTimeout(function() {
+      buttonImage.classList.remove('fa-check-circle', 'vads-u-color--green');
+      buttonImage.classList.add('fa-copy');
+    }, 1500);
+  }
+</script>
+
+<div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+  <div>
+    <strong class=" vads-u-display--inline-block vads-u-padding-x--0p5 vads-u-padding-y--1
+      vads-u-color--hub-service-member
+      
+    ">.vads-u-color--hub-service-member</strong>
+    <button aria-label="Copy" id="vads-u-color--hub-service-member" class="usa-button-secondary" onclick="clickToCopy('vads-u-color--hub-service-member');" type="button">
+      <i id="vads-u-color--hub-service-member-icon" class="fas fa-copy"></i>
+    </button>
+  </div>
+  <div class="medium-screen:vads-u-margin-left--auto medium-screen:vads-u-display--flex">
+    <div class="utility-value-color medium-screen:vads-u-margin-right--1 vads-u-color--secondary-darkest">
+      $color-hub-service-member
+    </div>
+    <div class="utility-value-color">
+      <span class="utility-value-color__chip vads-u-background-color--hub-service-member"></span>
+      
+      
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('--color-hub-service-member'));</script>
+      
+    </div>
+  </div>
+</div>
+    
+  </div>
+
+</div>
+
+          </main>
+          
+<div class="vads-u-margin-top--7">
+  <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/edit/main/src/_foundation/utilities/text-color.md" target="_blank">Edit this page in GitHub</a>
+  (Permissions required)
+</div>
+
+
+          
+
+<div>Last updated: Oct 24, 2024</div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    <footer class="site-footer vads-u-padding-y--5" role="contentinfo">
+  <div class="site-l-wrapper">
+    <div class="medium-screen:vads-u-display--flex medium-screen:vads-u-justify-content--space-between vads-u-align-items--center">
+      <div>
+        <ul class="site-footer__links">
+          <li class=site-footer__links__item>
+            <a href="/about/whats-new">What’s new?</a>
+          </li>
+          <li class=site-footer__links__item>
+            <a href="/about/feedback">Feedback</a>
+          </li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/playbook/" target="_blank">VA.gov playbook</a></li>
+          <li class=site-footer__links__item><a target="_blank" href="https://www.va.gov/accessibility-at-va/">Accessibility</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/web/" target="_blank">Web governance &amp; policies</a></li>
+          <li class=site-footer__links__item><a href="http://www.va.gov/privacy/">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-seal">
+        <a href="https://va.gov" class="site-footer__logo" title="Go to VA.gov"><img src="/assets/img/va-logo-white.png" alt="U.S. Department of Veterans Affairs logo"></a>
+      </div>
+    </div>
+  </div>
+</footer><script src="/assets/javascripts/site.js?v=1729797815"></script>
+<script src="/vendor/javascripts/formation.js?v=1729797815"></script>
+
+  </body>
+</html>
