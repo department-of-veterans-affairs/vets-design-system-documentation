@@ -51,8 +51,8 @@ Example of acceptable formats for U.S. phone numbers:
   * 7031234567
 
 Example of acceptable formats for international phone numbers:
-  * +1-703-123-4567
-  * 17031234567
+  * +52 123 456-7890
+  * 637031234567
 
 * **If a user chooses a home or mobile phone number as their method of contact, phone numbers are required fields.** If a user chooses email or mail as their preferred method then a phone number field won’t be validated. (Note: Method of contact field is form dependent)
 * **“Mobile phone number” is a required field if the user checks (I would like to receive text messages from VA about my [  ] benefits).** An example of this is on the [VA Form 22-10203 (Application for Edith Nourse Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
