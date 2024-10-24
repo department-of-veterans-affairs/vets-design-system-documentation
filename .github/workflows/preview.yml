@@ -39,3 +39,4 @@ jobs:
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: ./_site/
+          custom-url: https://pr-${{ github.event.number }}--design.va.gov
