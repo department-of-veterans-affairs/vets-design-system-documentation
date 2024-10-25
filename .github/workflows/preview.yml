@@ -32,7 +32,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: yarn install
       - run: yarn run build
-      - run: bundle exec jekyll build --config _config.yml --baseurl /${{ github.event.number }}
+      - run: bundle exec jekyll build --config _config.yml --baseurl /${{ github.event.number }} --url https://dev-design.va.gov
       - name: Make BUILD.txt file
         # The -e flag enables the interpretation of the \n newline character
         run: |
