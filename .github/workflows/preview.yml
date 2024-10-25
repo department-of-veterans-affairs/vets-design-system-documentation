@@ -49,8 +49,8 @@ jobs:
           find _site/ -type f ! -iname 'index.html' -iname '*.html' \
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
 
-      # Update internal site links to use the github.event.number so that they link correctly in the preview site.
-      # Otherwise, the links will point to the production site.
+      # Update any rogue site links that aren't yet pointing to the github.event.number baseurl.
+      # TODO: Confirm that this is working locally
       - name: Update HTML action attributes
         run: |
           find "_site" -type f -name "*.html" | while read -r file; do
@@ -59,53 +59,6 @@ jobs:
             rm "$file.bak"
           done
         shell: bash
-
-      # Fix duplicate github.event.number in href and src attributes
-      # - name: Fix duplicates in HTML href, src, and action attributes
-      #   run: |
-      #     find "_site" -type f -name "*.html" | while read -r file; do
-      #       sed -i.bak -E 's/href="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/href="\/${{ github.event.number }}\/\1"/g' "$file"
-      #       sed -i.bak -E 's/src="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/src="\/${{ github.event.number }}\/\1"/g' "$file"
-      #       sed -i.bak -E 's/action="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/action="\/${{ github.event.number }}\/\1"/g' "$file"
-      #     done
-      #   shell: bash
-
-      # Update internal site links to use the github.event.number so that they link correctly in the preview site.
-      # - name: Update HTML href attributes
-      #   run: |
-      #     find "_site" -type f -name "*.html" | while read -r file; do
-      #       sed -i.bak -E 's|href="https://design.va.gov|href="https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
-      #       # Remove backup files created by sed
-      #       rm "$file.bak"
-      #     done
-      #   shell: bash
-
-      # Update the redirect file paths to use the github.event.number
-      # - name: Update redirect file paths
-      #   run: |
-      #     find "_site" -type f -name "redirects.json" | while read -r file; do
-      #       sed -i.bak 's|https://design.va.gov|https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
-      #       # Remove backup files created by sed
-      #       rm "$file.bak"
-      #     done
-      #   shell: bash
-
-      # Update the redirect file keys to use the github.event.number
-      # - name: Update redirect file keys
-      #   run: |
-      #     site_dir=$(find . -type d -name "_site" -print -quit)
-      #     if [ -z "$site_dir" ]; then
-      #       echo "No _site directory found."
-      #       exit 1
-      #     fi
-      #     json_file="$site_dir/redirects.json"
-      #     if [ ! -f "$json_file" ]; then
-      #       echo "No redirects.json file found in the _site directory."
-      #       exit 1
-      #     fi
-      #     jq 'with_entries(.key |= "${{ github.event.number }}" + .)' "$json_file" > tmp.json && mv tmp.json "$json_file"
-      #     done
-      #   shell: bash
 
       - uses: aws-actions/configure-aws-credentials@v1
         with:
