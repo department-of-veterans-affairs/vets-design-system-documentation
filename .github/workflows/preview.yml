@@ -69,6 +69,17 @@ jobs:
             sed -i.bak -E 's/action="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/action="\/${{ github.event.number }}\/\1"/g' "$file"
           done
         shell: bash
+
+      # Update internal site links to use the github.event.number so that they link correctly in the preview site.
+      - name: Update HTML href attributes
+        run: |
+          find "_site" -type f -name "*.html" | while read -r file; do
+            sed -i.bak -E 's|href="https://dev-design.va.gov|href="https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
+            # Remove backup files created by sed
+            rm "$file.bak"
+          done
+        shell: bash
+
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
