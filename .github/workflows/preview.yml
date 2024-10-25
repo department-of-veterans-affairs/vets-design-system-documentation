@@ -84,7 +84,7 @@ jobs:
       - name: Update redirect file paths
         run: |
           find "_site" -type f -name "redirects.json" | while read -r file; do
-            sed -i.bak 's|https://dev-design.va.gov|https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
+            sed -i.bak 's|https://design.va.gov|https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
             # Remove backup files created by sed
             rm "$file.bak"
           done
