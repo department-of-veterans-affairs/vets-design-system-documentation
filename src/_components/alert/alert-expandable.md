@@ -89,6 +89,6 @@ The alert was tested as part of a usability study with 9 participants. The alert
 ## Related
 
 * [Additional info]({{ site.baseurl }}/components/additional-info)
-* [Alert - Background only]({{ site.baseurl}}/components/alert/background-only)
+* [Alert]({{ site.baseurl}}/components/alert/alert)
 
 {% include _component-checklist.html component_name=page.web-component %}

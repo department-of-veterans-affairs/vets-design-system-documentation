@@ -43,14 +43,15 @@ web-component: va-date
 
 ### When to use date input
 
-- Use a month, day, year date input component for a date a user knows, like a date of birth or marriage.  (Example: July 21, 1992). 
+- Use a month, day, year date input component for a date a user knows, like a date of birth or marriage.  (Example: July 21, 1992). Or a date they can easily look up (for example, the expiration date of a credit card).
 - Use the [month year](#monthyear) variant for a date a user can approximate, like a date they graduated from high school or a GED equivalent. (Example: May 2010) 
 
 ### When to consider something else
 
-If users are trying to schedule something, consider using a calendar picker.
+Do not use the date input component if users are unlikely to know the exact date of the event you’re asking about. You may consider using a date picker for scheduling, with the following caveats
 
-**Note:** We do not currently have a calendar picker as part of the design system. For reference, visit the VA online scheduling tool (VAOS) to see an experimental version of a calendar picker. 
+- We do not currently have a calendar picker as part of the design system. For reference, visit the VA online scheduling tool (VAOS) to see an experimental version of a calendar picker.
+- Date pickers have not been tested for accessibility, and may lead to launch blocking issues for your product unless carefully designed with an accessibility specialist. We strongly recommend reaching out to #accessibility-help on slack for support before considering this pattern.
 
 ### How to use date inputs
 
