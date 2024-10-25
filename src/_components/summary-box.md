@@ -2,7 +2,7 @@
 layout: component
 permalink: /components/summary-box
 redirect_from:
-  - /3435/components/featured-content
+  - /components/featured-content
 title: "Summary box"
 aka: Featured content
 status: use-deployed

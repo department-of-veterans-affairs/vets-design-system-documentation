@@ -3,7 +3,7 @@ layout: pattern
 title: Check answers
 permalink: /patterns/help-users-to/check-answers
 redirect_from:
-  - /3435/patterns/forms/review
+  - /patterns/forms/review
 sub-section: help-users-to
 intro-text: "Follow this pattern to help users check their answers before submitting a form."
 research-title: Help users to check answers 

@@ -2,7 +2,7 @@
 layout: component
 permalink: /components/form/privacy-agreement
 redirect_from:
-  - /3435/components/privacy-agreement
+  - /components/privacy-agreement
 has-parent: /components/form/
 title: Privacy Agreement
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85151&mode=design&t=TiJHClaf3VQ6wU6B-1

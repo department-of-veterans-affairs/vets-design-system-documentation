@@ -2,7 +2,7 @@
 layout: pattern
 permalink: /patterns/ask-users-for/race-and-ethnicity
 redirect_from:
-  - /3435/patterns/ask-users-for/race-ethnicity-or-origin
+  - /patterns/ask-users-for/race-ethnicity-or-origin
 sub-section: ask-users-for
 title: Race and ethnicity
 intro-text: Follow this pattern whenever you need to ask Veterans for their race and ethnicity.

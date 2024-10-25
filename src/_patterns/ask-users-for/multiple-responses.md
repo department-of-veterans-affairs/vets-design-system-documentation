@@ -3,7 +3,7 @@ layout: pattern
 title: Multiple responses
 permalink: /patterns/ask-users-for/multiple-responses
 redirect_from:
-  - /3435/patterns/forms/list-and-loop
+  - /patterns/forms/list-and-loop
 aka: List & Loop
 contributors: Jeana Clark (Ad Hoc), Robert Hasselle (Oddball), Robin Garrison (Ad Hoc)
 sub-section: ask-users-for
