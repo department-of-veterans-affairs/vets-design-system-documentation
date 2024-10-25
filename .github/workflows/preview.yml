@@ -51,10 +51,10 @@ jobs:
 
       # Update internal site links to use the github.event.number so that they link correctly in the preview site.
       # Otherwise, the links will point to the production site.
-      - name: Update HTML href links
+      - name: Update HTML href, src, and action links
         run: |
           find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's/href="\/([^"]*)"/href="\/${{ github.event.number }}\/\1"/g' "$file"
+            sed -i.bak -E 's/(href|src|action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
             # Remove backup files created by sed
             rm "$file.bak"
           done
