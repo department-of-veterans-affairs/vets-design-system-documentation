@@ -51,7 +51,7 @@ jobs:
 
       # Update internal site links to use the github.event.number so that they link correctly in the preview site.
       # Otherwise, the links will point to the production site.
-      - name: Update HTML href, src, and action links
+      - name: Update HTML href, src, and action attributes
         run: |
           find "_site" -type f -name "*.html" | while read -r file; do
             sed -i.bak -E 's/(href|src|action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
@@ -59,21 +59,14 @@ jobs:
             rm "$file.bak"
           done
         shell: bash
-      - name: Remove duplicate preview numbers from paths.
+
+      # Fix duplicate github.event.number in href and src attributes
+      - name: Fix duplicates in HTML href, src, and action attributes
         run: |
-          # Find all HTML files within the _site directory and subdirectories
           find "_site" -type f -name "*.html" | while read -r file; do
-            # Use sed to replace href="/${{ github.event.number }}/..." with href="/"
-            sed -i.bak -E 's/href="\/${{ github.event.number }}\/([^"]*)"/href="\/\1"/g' "$file"
-            
-            # Use sed to replace src="/..." with src="/"
-            sed -i.bak -E 's/src="\/([^"]*)"/src="\/\1"/g' "$file"
-            
-            # Use sed to replace action="/..." with action="/"
-            sed -i.bak -E 's/action="\/([^"]*)"/action="\/\1"/g' "$file"
-            
-            # Remove backup files created by sed
-            rm "$file.bak"
+            sed -i.bak -E 's/href="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/href="\/${{ github.event.number }}\/\1"/g' "$file"
+            sed -i.bak -E 's/src="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/src="\/${{ github.event.number }}\/\1"/g' "$file"
+            sed -i.bak -E 's/action="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/action="\/${{ github.event.number }}\/\1"/g' "$file"
           done
         shell: bash
       - uses: aws-actions/configure-aws-credentials@v1
