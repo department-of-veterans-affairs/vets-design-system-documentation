@@ -6,6 +6,7 @@ on:
       - opened
       - reopened
       - synchronize
+      - converted_to_draft
 
 jobs:
   dev-deploy:
@@ -48,7 +49,8 @@ jobs:
           find _site/ -type f ! -iname 'index.html' -iname '*.html' \
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
 
-      # TODO: update internal site links to use the github.event.number
+      # Update internal site links to use the github.event.number so that they link correctly in the preview site.
+      # Otherwise, the links will point to the production site.
       - name: Update HTML href links
         run: |
           find "_site" -type f -name "*.html" | while read -r file; do
