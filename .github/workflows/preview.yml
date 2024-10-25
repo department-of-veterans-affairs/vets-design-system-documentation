@@ -32,7 +32,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: yarn install
       - run: yarn run build
-      - run: bundle exec jekyll build --config _config.yml --baseurl /${{ github.run_id }},jekyll-configs/dev.yml
+      - run: bundle exec jekyll build --config _config.yml --baseurl /${{ github.event.number }}
       - name: Make BUILD.txt file
         # The -e flag enables the interpretation of the \n newline character
         run: |
@@ -87,6 +87,23 @@ jobs:
       #       sed -i.bak 's|https://design.va.gov|https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
       #       # Remove backup files created by sed
       #       rm "$file.bak"
+      #     done
+      #   shell: bash
+
+      # Update the redirect file keys to use the github.event.number
+      # - name: Update redirect file keys
+      #   run: |
+      #     site_dir=$(find . -type d -name "_site" -print -quit)
+      #     if [ -z "$site_dir" ]; then
+      #       echo "No _site directory found."
+      #       exit 1
+      #     fi
+      #     json_file="$site_dir/redirects.json"
+      #     if [ ! -f "$json_file" ]; then
+      #       echo "No redirects.json file found in the _site directory."
+      #       exit 1
+      #     fi
+      #     jq 'with_entries(.key |= "${{ github.event.number }}" + .)' "$json_file" > tmp.json && mv tmp.json "$json_file"
       #     done
       #   shell: bash
 
