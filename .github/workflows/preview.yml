@@ -32,7 +32,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - run: yarn install
       - run: yarn run build
-      - run: bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml
+      - run: bundle exec jekyll build --config _config.yml --baseurl /${{ github.run_id }},jekyll-configs/dev.yml
       - name: Make BUILD.txt file
         # The -e flag enables the interpretation of the \n newline character
         run: |
@@ -51,44 +51,44 @@ jobs:
 
       # Update internal site links to use the github.event.number so that they link correctly in the preview site.
       # Otherwise, the links will point to the production site.
-      - name: Update HTML href, src, and action attributes
-        run: |
-          find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's/(href|src|action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
-            # Remove backup files created by sed
-            rm "$file.bak"
-          done
-        shell: bash
+      # - name: Update HTML href, src, and action attributes
+      #   run: |
+      #     find "_site" -type f -name "*.html" | while read -r file; do
+      #       sed -i.bak -E 's/(href|src|action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
+      #       # Remove backup files created by sed
+      #       rm "$file.bak"
+      #     done
+      #   shell: bash
 
       # Fix duplicate github.event.number in href and src attributes
-      - name: Fix duplicates in HTML href, src, and action attributes
-        run: |
-          find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's/href="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/href="\/${{ github.event.number }}\/\1"/g' "$file"
-            sed -i.bak -E 's/src="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/src="\/${{ github.event.number }}\/\1"/g' "$file"
-            sed -i.bak -E 's/action="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/action="\/${{ github.event.number }}\/\1"/g' "$file"
-          done
-        shell: bash
+      # - name: Fix duplicates in HTML href, src, and action attributes
+      #   run: |
+      #     find "_site" -type f -name "*.html" | while read -r file; do
+      #       sed -i.bak -E 's/href="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/href="\/${{ github.event.number }}\/\1"/g' "$file"
+      #       sed -i.bak -E 's/src="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/src="\/${{ github.event.number }}\/\1"/g' "$file"
+      #       sed -i.bak -E 's/action="\/${{ github.event.number }}\/${{ github.event.number }}\/([^"]*)"/action="\/${{ github.event.number }}\/\1"/g' "$file"
+      #     done
+      #   shell: bash
 
       # Update internal site links to use the github.event.number so that they link correctly in the preview site.
-      - name: Update HTML href attributes
-        run: |
-          find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's|href="https://design.va.gov|href="https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
-            # Remove backup files created by sed
-            rm "$file.bak"
-          done
-        shell: bash
+      # - name: Update HTML href attributes
+      #   run: |
+      #     find "_site" -type f -name "*.html" | while read -r file; do
+      #       sed -i.bak -E 's|href="https://design.va.gov|href="https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
+      #       # Remove backup files created by sed
+      #       rm "$file.bak"
+      #     done
+      #   shell: bash
 
       # Update the redirect file paths to use the github.event.number
-      - name: Update redirect file paths
-        run: |
-          find "_site" -type f -name "redirects.json" | while read -r file; do
-            sed -i.bak 's|https://design.va.gov|https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
-            # Remove backup files created by sed
-            rm "$file.bak"
-          done
-        shell: bash
+      # - name: Update redirect file paths
+      #   run: |
+      #     find "_site" -type f -name "redirects.json" | while read -r file; do
+      #       sed -i.bak 's|https://design.va.gov|https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
+      #       # Remove backup files created by sed
+      #       rm "$file.bak"
+      #     done
+      #   shell: bash
 
       - uses: aws-actions/configure-aws-credentials@v1
         with:
