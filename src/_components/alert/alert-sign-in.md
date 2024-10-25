@@ -87,7 +87,7 @@ Work with the CAIA and identity teams to adjust the content in this component fo
 
 ## Accessibility considerations
 
-[Refer to the accessibility considerations for the general alert component](https://design.va.gov/components/alert/#accessibility-considerations)
+{% include a11y/alerts.md %}
 
 ## Related
 
