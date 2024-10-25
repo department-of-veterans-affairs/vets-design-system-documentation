@@ -74,7 +74,7 @@ jobs:
       - name: Update HTML href attributes
         run: |
           find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's|href="https://dev-design.va.gov|href="https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
+            sed -i.bak -E 's|href="https://design.va.gov|href="https://dev-design.va.gov/${{ github.event.number }}|g' "$file"
             # Remove backup files created by sed
             rm "$file.bak"
           done
