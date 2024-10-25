@@ -90,23 +90,6 @@ jobs:
           done
         shell: bash
 
-      # Update the redirect file keys to use the github.event.number
-      - name: Update redirect file keys
-        run: |
-          site_dir=$(find . -type d -name "_site" -print -quit)
-          if [ -z "$site_dir" ]; then
-            echo "No _site directory found."
-            exit 1
-          fi
-          json_file="$site_dir/redirects.json"
-          if [ ! -f "$json_file" ]; then
-            echo "No redirects.json file found in the _site directory."
-            exit 1
-          fi
-          jq 'with_entries(.key |= "${{ github.event.number }}" + .)' "$json_file" > tmp.json && mv tmp.json "$json_file"
-          done
-        shell: bash
-
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
