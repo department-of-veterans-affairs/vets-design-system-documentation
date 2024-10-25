@@ -25,8 +25,8 @@ anchors:
 
 ### When to use Alert - Sign-in
 
-* **Static pages with entry points to online tools.** The sign-in alert appears on a static unauthenticated VA.gov page and serves as the entry point to the tool's authenticated experience. The Office of the Chief Technology Officer's content/information architecture/accessibility team (CAIA) team manages these pages in Drupal. Work with CAIA to add the alert to the correct page. Here's an example of a static page with a sign-in alert (note that alert is an older content variation): [Secure messaging page with sign-in alert](https://www.va.gov/health-care/secure-messaging/)
-* **Form intro pages.** The sign-in alert goes on the form intro page that the product team creates and manages. The URL for this page ends in /introduction. Here's example of a form intro page with a sign-in alert (note that alert is an older content variation): [Disability claim intro page with sign-in alert](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+* **Static pages with entry points to online tools.** The sign-in alert appears on a static unauthenticated VA.gov page and serves as the entry point to the tool's authenticated experience. The Office of the Chief Technology Officer's content/information architecture/accessibility team (CAIA) team manages these pages in Drupal. Work with CAIA to add the alert to the correct page. 
+* **Form intro pages.** The sign-in alert goes on the form intro page that the product team creates and manages. The URL for this page ends in /introduction. 
   **Exception:** If your form is only accessible after signing in (meaning there is no unauthenticated state of the intro page), the sign-in alert must appear on the static unauthenticated page that serves as the entry point. Currently, this only applies to 2 forms in the /my-health section: the 1010EZR and the order form for CPAP and hearing aid supplies.
 
 ### Placement
@@ -49,9 +49,9 @@ When these are true:
 
 When these are true:
 * Person is not signed in, **and**
-* Your product is a form that gives people the option to sign in, **and**
-* Your form only accepts verified (LOA3 or IAL2) accounts, **and**
-* Your form supports prefill and save-in-progress
+* Your product is a form, **and**
+* Your product doesn't require sign-in, but if people choose to sign in they must use verified (LOA3 or IAL2) accounts, **and**
+* Your form supports both prefill and save-in-progress
 
 ### All products that only allow verified accounts must implement all 3 of these alerts
 
