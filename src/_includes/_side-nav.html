@@ -1,72 +1,9 @@
 <nav class="va-sidebarnav va-sidebarnav--{{include.name}}">
   <ul class="usa-sidenav-list">
-    {% for p in include.section %}
-      {% if p.index %}
-      <li class="{% if page.index %}active-level{% endif %}">
-        <a class="{% if page.index %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url | replace: '/index', ''}}">Overview</a>
-      </li>
-      {% endif %}
-    {% endfor %}
-    {% assign sortedPages = include.section | sort: "title", "last" %}
-    {% for p in sortedPages %}
-        {% assign is-current = false %}
-        {% if p.url == page.url %}
-          {% assign is-current = true %}
-        {% endif %}
-        {% assign open-accordion = false %}
-        {% if p.url == page.url or (page.has-parent == p.permalink) %}
-         {% assign open-accordion = true %}
-        {% endif %}
-        {% if p.layout != "iframe" %}
-          {% unless p.index or p.has-parent %}
-            {% unless p.draft and (p.url != page.url) %}
-                {% assign slug = p.title | slugify %}
-                {%- if p.sub-pages -%}
-                  <ul class="usa-accordion">
-                    <li>
-                      <button class="usa-accordion-button" aria-expanded="{%- if open-accordion == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">{{p.title}}</button>
-                      <div id="{{ slug }}" class="usa-accordion-content" aria-hidden="{%- if open-accordion == true -%}false{%- else -%}true{%- endif -%}">
-                        <ul class="usa-sidenav-list">
-                          <li {% if is-current == true %}class="active-level"{%- endif -%}>
-                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-                              {% if p.inner-title %}{{ p.inner-title }}{% else %}{{ p.title }}{%- endif -%}
-                              {%- if p.status -%}
-                                {%- include _site-side-nav-status.html components=sortedPages component=p.title -%}
-                              {%- endif -%}
-                            </a>
-                          </li>
-                          {% for item in p.sub-pages %}
-                            {% assign link = page.url %}
-                            {% assign slug = item.sub-page | slugify %}
-                            {% if link contains slug %}
-                              {% assign is-current = true %}
-                            {% else %}
-                              {% assign is-current = false %}
-                            {% endif %}
-                          <li>
-                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{p.permalink }}{{ item.sub-page | slugify }}">
-                              {{ item.sub-page }}
-                              {%- if include.name == 'components' -%}
-                                {%- include _site-side-nav-status.html components=sortedPages component=item.sub-page parent=p.title -%}
-                            {%- endif -%}
-                            </a>
-                          </li>
-                          {% endfor %}
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                  {%- else -%}
-                  <li {% if is-current == true %}class="active-level"{%- endif -%}>
-                    <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-                      {{p.title}}
-                      {%- include _site-side-nav-status.html components=sortedPages component=p.title -%}
-                    </a>
-                  </li>
-                {%- endif -%}
-            {% endunless %}
-          {% endunless %}
-        {% endif %}
-    {% endfor %}
+    <li class="active-level">
+      <a class="usa-current" href="/patterns/ask-users-for/a-mutually-exclusive-answer">
+        A mutually exclusive answer
+      <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
+    </li>
   </ul>
 </nav>

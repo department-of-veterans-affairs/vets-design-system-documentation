@@ -1,12 +1,8 @@
 <ul class="usa-sidenav-list">
-  
-  <li class="{% if is-current == true %}active-level{%- endif -%}">
-    <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
-      {{p.title}}
-        {%- if p.status -%}
-          {%- include _site-side-nav-status.html pattern-status=p.status -%}
-        {%- endif -%}
-    </a>
+  <li class="active-level">
+    <a class="usa-current" href="/patterns/ask-users-for/a-mutually-exclusive-answer">
+      A mutually exclusive answer
+    <i class="fas fa-circle site-sidenav-status site-sidenav-status--use-deployed" aria-label="Use Deployed"></i></a>
   </li>
   <!-- {% for p in include.section_list %}
     {% assign is-current = false %}
