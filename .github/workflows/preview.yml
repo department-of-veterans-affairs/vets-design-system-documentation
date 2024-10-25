@@ -59,6 +59,23 @@ jobs:
             rm "$file.bak"
           done
         shell: bash
+      - name: Remove duplicate preview numbers from paths.
+        run: |
+          # Find all HTML files within the _site directory and subdirectories
+          find "_site" -type f -name "*.html" | while read -r file; do
+            # Use sed to replace href="/${{ github.event.number }}/..." with href="/"
+            sed -i.bak -E 's/href="\/${{ github.event.number }}\/([^"]*)"/href="\/\1"/g' "$file"
+            
+            # Use sed to replace src="/..." with src="/"
+            sed -i.bak -E 's/src="\/([^"]*)"/src="\/\1"/g' "$file"
+            
+            # Use sed to replace action="/..." with action="/"
+            sed -i.bak -E 's/action="\/([^"]*)"/action="\/\1"/g' "$file"
+            
+            # Remove backup files created by sed
+            rm "$file.bak"
+          done
+        shell: bash
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
