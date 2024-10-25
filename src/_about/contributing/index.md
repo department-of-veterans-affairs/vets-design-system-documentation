@@ -26,7 +26,7 @@ When considering if a component or pattern should be added to the design system 
 
 <figure>
   <a href="https://app.mural.co/t/departmentofveteransaffairs9999/m/departmentofveteransaffairs9999/1715279885465/a8a7701ed5948be8cd98f972ee930a16b9e7444b">
-  <img alt="A thumbnail image of experimental design decision tree and process Mural" src="/images/components/address-block/mailing-address.png" width="50%">
+  <img alt="A thumbnail image of experimental design decision tree and process Mural" src="src/_about/contributing/experimental-design.png" width="50%">
   </a>
   <figcaption class="site-component-example__caption">Experimental design decision tree and process Mural.</figcaption>
 </figure>
