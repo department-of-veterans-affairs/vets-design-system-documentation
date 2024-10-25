@@ -2,7 +2,7 @@
 layout: component
 permalink: /components/button/button-icon
 redirect_from:
-  - /components/button-icon
+  - /3435/components/button-icon
 has-parent: /components/button/
 title: Button - Icon
 aka: Button - Tertiary

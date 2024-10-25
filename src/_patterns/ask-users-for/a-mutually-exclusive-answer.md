@@ -3,7 +3,7 @@ layout: pattern
 title: A mutually exclusive answer
 permalink: /patterns/ask-users-for/a-mutually-exclusive-answer
 redirect_from:
-  - /patterns/forms/all-or-none-of-the-above
+  - /3435/patterns/forms/all-or-none-of-the-above
 aka: All or none of the above
 sub-section: ask-users-for
 intro-text: "In some questions, either none of the options or all of them may apply to the user. Here is how to design responses for that instance."

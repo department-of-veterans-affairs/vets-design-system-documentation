@@ -3,7 +3,7 @@ layout: pattern
 title: Navigate a long list
 permalink: /patterns/help-users-to/navigate-a-long-list
 redirect_from:
-  - /patterns/show-more-options
+  - /3435/patterns/show-more-options
 aka: Show more options
 sub-section: help-users-to
 contributors: Peter Russo (VAOS)

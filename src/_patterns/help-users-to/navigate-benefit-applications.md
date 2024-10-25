@@ -3,7 +3,7 @@ layout: pattern
 title: Navigate benefit applications
 permalink: /patterns/help-users-to/navigate-benefit-applications
 redirect_from:
-  - /patterns/benefit-applications
+  - /3435/patterns/benefit-applications
 aka: Benefit applications
 sub-section: help-users-to
 status: use-deployed

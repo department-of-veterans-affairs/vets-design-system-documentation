@@ -4,7 +4,7 @@ title: For developers
 inner-title: Working with the system
 permalink: /about/developers/
 redirect_from:
-  - /about/developers
+  - /3435/about/developers
 intro-text: Documentation and resources for developers.
 sub-pages:
   - sub-page: Install

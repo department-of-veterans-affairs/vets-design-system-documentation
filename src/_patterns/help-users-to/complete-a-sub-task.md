@@ -2,7 +2,7 @@
 layout: pattern
 permalink: /patterns/help-users-to/complete-a-sub-task
 redirect_from:
-  - /patterns/forms/sub-task
+  - /3435/patterns/forms/sub-task
 sub-section: help-users-to
 title: Complete a sub task
 aka: Sub-task, Wizard

@@ -3,7 +3,7 @@ layout: pattern
 title: Recover from errors
 permalink: /patterns/help-users-to/recover-from-errors
 redirect_from:
-  - /patterns/messaging-error-messages
+  - /3435/patterns/messaging-error-messages
 aka: Error messages
 sub-section: help-users-to
 intro-text: "Details the structure for error messages."

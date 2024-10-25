@@ -3,7 +3,7 @@ layout: pattern
 title: Files
 permalink: /patterns/ask-users-for/files
 redirect_from:
-  - /patterns/forms/file-upload
+  - /3435/patterns/forms/file-upload
 aka: File upload
 sub-section: ask-users-for
 intro-text: "Follow this pattern to help users upload a file."
