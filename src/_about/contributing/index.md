@@ -24,4 +24,13 @@ When considering if a component or pattern should be added to the design system 
 2. The component or pattern is different in more than one major way than existing components in the design system, if the component is only different in color or format, for instance, then it would be better as a variant of the existing component. Note that variants of existing components should also go through this experimental process.
 3. Our existing components and patterns will not solve the user problems sufficiently.
 
+<figure>
+  <a href="https://app.mural.co/t/departmentofveteransaffairs9999/m/departmentofveteransaffairs9999/1715279885465/a8a7701ed5948be8cd98f972ee930a16b9e7444b">
+  <img alt="A thumbnail image of experimental design decision tree and process Mural" src="/images/components/address-block/mailing-address.png" width="50%">
+  </a>
+  <figcaption class="site-component-example__caption">Experimental design decision tree and process Mural.</figcaption>
+</figure>
+
+<a href="https://app.mural.co/t/departmentofveteransaffairs9999/m/departmentofveteransaffairs9999/1715279885465/a8a7701ed5948be8cd98f972ee930a16b9e7444b">View the experimental design decision tree and process Mural.</a>
+
 {% include _site-in-this-section.html %}
