@@ -82,7 +82,7 @@ Some forms also show a "received" status in the **Claims and appeals** section o
 
 #### How to handle forms submitted within the process of another form (sub-forms)
 
-For sub-forms such as the Authorization to Disclose Information to the Department of Veterans Affairs (21-4142), submitted within the process of completing an Application for Disability Compensation and Related Compensation Benefits (21-526EZ) or Decision Review Request: Supplemental Claim (20-0995), the status of the sub-forms should be communicated independently from the status of the main form. In other words, each sub-form would have a separate status card shown in My VA.
+For sub-forms such as the Authorization to Disclose Information to the Department of Veterans Affairs (21-4142), submitted within the process of completing an Application for Disability Compensation and Related Compensation Benefits (21-526EZ) or Decision Review Request: Supplemental Claim (20-0995), the status of the sub-forms should be communicated independently from the status of the main form. In other words, each sub-form would send a separate email notification and would have a separate status card shown in My VA, independent from the notifications and cards of the main form.
 
 #### How to show status for uploaded documents
 
