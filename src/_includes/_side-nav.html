@@ -44,7 +44,7 @@
                               {% assign is-current = false %}
                             {% endif %}
                           <li>
-                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{p.permalink }}{{ item.sub-page | slugify }}">
+                            <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{p.permalink }}{{ item.sub-page | slugify }}">
                               {{ item.sub-page }}
                               {%- if include.name == 'components' -%}
                                 {%- include _site-side-nav-status.html components=sortedPages component=item.sub-page parent=p.title -%}
