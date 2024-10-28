@@ -46,11 +46,11 @@ anchors:
 * **If possible, tell users why you want their phone number.** An example message is: *Please enter your contact information so we can get in touch with you if we have questions about your application.* This message can be at the top of the page if asking for any other contact information.
 * **Validate phone numbers.** Users must provide at least a 10 digit phone number with or without dashes for U.S. phone numbers and up to a 15-digit phone number for international phone numbers. 
 
-Example of acceptable formats for U.S. phone numbers:
+  Example of acceptable formats for U.S. phone numbers:
   * 703-123-4567
   * 7031234567
 
-Example of acceptable formats for international phone numbers:
+  Example of acceptable formats for international phone numbers:
   * +52 123 456-7890
   * 637031234567
 
