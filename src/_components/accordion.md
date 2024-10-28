@@ -17,6 +17,10 @@ anchors:
   - anchor: Component checklist
 ---
 
+
+Oh, I love accordions!
+
+
 ## Examples
 
 ### Default
