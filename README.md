@@ -96,9 +96,9 @@ Merges into `main` will automatically deploy to production `design.va.gov` after
 
 ### Previewing Pull Requests
 
-When a PR is created, a preview of those changes will be available after the [Preview workflow](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/.github/workflows/preview.yml) has completed. When the workflow is complete, there will be a "View deployment" button visible that will launch the preview environment when clicked.
+When a PR is created, a preview of those changes will be available after the [Preview workflow](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/.github/workflows/preview.yml) has completed. There will be a "View deployment" button visible that will launch the preview environment when clicked.
 
-[The view deployment button on a pull request](src/images/readme/pr-view-deployment-button.png)
+[The "view deployment" button on a pull request](src/images/readme/pr-view-deployment-button.png)
 
 The preview link can also be accessed directly using this pattern: `https://dev-design.va.gov/PR_NUMBER`. For example, `https://dev-design.va.gov/3435` where `3435` is the unique PR number.
 
