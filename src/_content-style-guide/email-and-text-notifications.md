@@ -59,7 +59,7 @@ Follow these general rules for link text:
 * Put each link on a separate line
 * Avoid “Click here,” since not all people are physically clicking links
 * Avoid generic link text like “Learn more” and “Read more” by themselves
-  * **Like this:** [Pay your copay bill on VA.gov](https://www.va.gov/health-care/pay-copay-bill/)
+  * **Like this:** [Learn how to pay your copay bill on VA.gov](https://www.va.gov/health-care/pay-copay-bill/)
 
 Limit the number of links in each email:
 * Only include a link if the Veteran needs it to complete the call to action or to find need-to-know information
