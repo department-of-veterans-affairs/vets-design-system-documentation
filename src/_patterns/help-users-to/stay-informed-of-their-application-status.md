@@ -90,7 +90,7 @@ Indicate to the user on the status card shown in My VA the count of uploaded doc
 
 > NOTE: The exact language and how to convey this to users is currently being designed and is subject to change.
 
-In addition, forms uploaded in the claims status tool do not need to be reflected in My VA.
+In addition, documents uploaded in the claims status tool do not need to be reflected in My VA.
 
 ### Showing form processing status after we receive it in the system of record
 
