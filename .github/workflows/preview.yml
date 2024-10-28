@@ -11,7 +11,7 @@ jobs:
   call-workflow-jekyll-build:
     uses: ./.github/workflows/jekyll-build.yml
     with: 
-      jekyll-build-args: "bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml"
+      jekyll-build-args: "bundle exec jekyll build --config _config.yml,_config-preview.yml --baseurl /${{ github.event.number }}"
       github-sha: ${{ github.sha }}
       github-run-id: ${{ github.run_id }}
       github-event-number: ${{ github.event.number }}
