@@ -1,0 +1,45 @@
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      environment-url:
+        required: true
+        type: string
+      s3-site:
+        required: true
+        type: string
+    secrets:
+      aws-access-key-id:
+        required: true
+      aws-secret-access-key:
+        required: true
+jobs:
+  aws-sync-reusable_workflow_job:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment }}
+      url: ${{ inputs.environment-url }}
+    steps:
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.aws-access-key-id }}
+          aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
+          aws-region: "us-gov-west-1"
+      - name: Sync extensionless html files with correct type
+        run: |
+          aws s3 sync _site ${{ inputs.s3-site }} \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*" \
+          --exclude "*.*" \
+          --content-type "text/html"
+      - name: Sync remaining files
+        run: |
+          aws s3 sync _site ${{ inputs.s3-site }} \
+          --acl public-read \
+          --delete \
+          --exclude "*" \
+          --include "*.*" \
+          --exclude "storybook/*"
