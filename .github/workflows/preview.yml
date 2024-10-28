@@ -14,30 +14,7 @@ jobs:
       jekyll-build-args: "bundle exec jekyll build --config _config.yml,jekyll-configs/dev.yml"
       github-sha: ${{ github.sha }}
       github-run-id: ${{ github.run_id }}
-      environment: "Preview"
-      environment-url: "https://dev-design.va.gov/${{ github.event.number }}"
-
-  update-action-attributes:
-    runs-on: ubuntu-latest
-    environment:
-      name: development
-      url: https://dev-design.va.gov/${{ github.event.number }}
-    steps:
-      # The search functionality uses an action attribute to send form data and we are doing
-      # this custom step because the Jekyll settings are not automatically updating the form submit path 
-      # to the preview URL. ie. action="results" should be action="/3435/results"
-      - name: Update action attributes to reference the preview URL
-        run: |
-          find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's/(action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
-            # Remove backup files created by sed
-            rm "$file.bak"
-          done
-        shell: bash
-
-  aws-sync:
-    uses: ./.github/workflows/aws-sync.yml
-    with:
+      github-event-number: ${{ github.event.number }}
       environment: "Preview"
       environment-url: "https://dev-design.va.gov/${{ github.event.number }}"
       s3-site: "s3://dev-design.va.gov/${{ github.event.number }}"
