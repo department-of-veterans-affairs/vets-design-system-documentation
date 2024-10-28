@@ -8,16 +8,73 @@ on:
       - synchronize
 
 jobs:
-  call-workflow-jekyll-build:
-    uses: ./.github/workflows/jekyll-build.yml
-    with: 
-      jekyll-build-args: "bundle exec jekyll build --config _config.yml,_config-preview.yml --baseurl /${{ github.event.number }}"
-      github-sha: ${{ github.sha }}
-      github-run-id: ${{ github.run_id }}
-      github-event-number: ${{ github.event.number }}
-      environment: "Preview"
-      environment-url: "https://dev-design.va.gov/${{ github.event.number }}"
-      s3-site: "s3://dev-design.va.gov/${{ github.event.number }}"
-    secrets:
-      aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  dev-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: development
+      url: https://dev-design.va.gov/${{ github.event.number }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.5 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: yarn install
+      - run: yarn run build
+      - run: bundle exec jekyll build --config _config.yml,_config-preview.yml --baseurl /${{ github.event.number }}
+      - name: Make BUILD.txt file
+        # The -e flag enables the interpretation of the \n newline character
+        run: |
+          echo -e "REF=${{ github.sha }}\n\
+          BUILD_ID=${{ github.run_id }}\n\
+          BUILDTIME=$(date)" > _site/BUILD.txt
+      # We are taking these extra steps due to some differences between Jekyll and AWS S3.
+      # To access a .html file served from S3, the URL needs to have the .html extension.
+      # We're removing the extension to make the URLs prettier.
+      # More context:
+      #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
+      - name: Remove .html extension on non-index files
+        run: |
+          find _site/ -type f ! -iname 'index.html' -iname '*.html' \
+          -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+
+        # The search functionality uses an action attribute to send form data and we are doing
+        # this conditional script because the Jekyll settings are not automatically updating the form submit path 
+        # to the preview URL. ie. action="/results" should be action="/3435/results"y
+      - name: Update HTML action attributes to use the preview URL
+        run: |
+          find "_site" -type f -name "*.html" | while read -r file; do
+            sed -i.bak -E 's/(action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
+            # Remove backup files created by sed
+            rm "$file.bak"
+          done
+        shell: bash
+
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-gov-west-1"
+      - name: Sync extensionless html files with correct type
+        run: |
+          aws s3 sync _site s3://dev-design.va.gov/${{ github.event.number }} \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*" \
+          --exclude "*.*" \
+          --content-type "text/html"
+      - name: Sync remaining files
+        run: |
+          aws s3 sync _site s3://dev-design.va.gov/${{ github.event.number }} \
+          --acl public-read \
+          --delete \
+          --exclude "*" \
+          --include "*.*" \
+          --exclude "storybook/*"
