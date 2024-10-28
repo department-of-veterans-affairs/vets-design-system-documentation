@@ -45,18 +45,6 @@ jobs:
           find _site/ -type f ! -iname 'index.html' -iname '*.html' \
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
 
-        # The search functionality uses an action attribute to send form data and we are doing
-        # this conditional script because the Jekyll settings are not automatically updating the form submit path 
-        # to the preview URL. ie. action="/results" should be action="/3435/results"y
-      - name: Update HTML action attributes to use the preview URL
-        run: |
-          find "_site" -type f -name "*.html" | while read -r file; do
-            sed -i.bak -E 's/(action)=\"\/([^"]*)\"/\1="\/${{ github.event.number }}\/\2"/g' "$file"
-            # Remove backup files created by sed
-            rm "$file.bak"
-          done
-        shell: bash
-
       - uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
