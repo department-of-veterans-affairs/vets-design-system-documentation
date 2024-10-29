@@ -13,7 +13,7 @@ on:
       environment-name:
         required: true
         type: string
-      environment-url:
+      environment-bucket:
         required: true
         type: string
       environment-config:
@@ -25,11 +25,11 @@ on:
       aws-secret-access-key:
         required: true
 jobs:
-  jekyll-build-reusable_workflow_job:
+  jekyll-deploy-reusable_workflow_job:
     runs-on: ubuntu-latest
     environment:
       name: ${{ inputs.environment-name }}
-      url: ${{ inputs.environment-url }}
+      url: "https://${{ inputs.environment-bucket }}"
     steps:
       - uses: actions/checkout@v2
         with:
@@ -61,14 +61,14 @@ jobs:
         run: |
           find _site/ -type f ! -iname 'index.html' -iname '*.html' \
           -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
-      - uses: aws-actions/configure-aws-credentials@v1
+      - uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.aws-access-key-id }}
           aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
           aws-region: "us-gov-west-1"
       - name: Sync extensionless html files with correct type
         run: |
-          aws s3 sync _site s3://${{ inputs.environment-url }} \
+          aws s3 sync _site s3://${{ inputs.environment-bucket }} \
           --acl public-read \
           --delete \
           --exclude "storybook/*" \
@@ -76,7 +76,7 @@ jobs:
           --content-type "text/html"
       - name: Sync remaining files
         run: |
-          aws s3 sync _site s3://${{ inputs.environment-url }} \
+          aws s3 sync _site s3://${{ inputs.environment-bucket }} \
           --acl public-read \
           --delete \
           --exclude "*" \
