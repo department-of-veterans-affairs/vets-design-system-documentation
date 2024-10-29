@@ -17,9 +17,9 @@ jobs:
       github-sha: ${{ github.sha }}
       github-run-id: ${{ github.run_id }}
       github-event-number: ${{ github.event.number }}
-      environment-name: ${{ matrix.environment.name }}
-      environment-bucket: ${{ matrix.environment.bucket }}
-      environment-config: ${{ matrix.environment.config }}
+      matrix-name: ${{ matrix.environment.name }}
+      matrix-bucket: ${{ matrix.environment.bucket }}
+      matrix-config: ${{ matrix.environment.config }}
     secrets:
       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
