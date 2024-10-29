@@ -17,6 +17,14 @@ anchors:
   - anchor: Component checklist
 ---
 
+I REALLY lOVE ACCORDIONS!
+
+
+{% include component-example.html alt="TEST ALT" file="/images/test.png" caption="TEST CAPTION" %}
+
+
+
+
 ## Examples
 
 ### Default
