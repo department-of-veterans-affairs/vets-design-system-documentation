@@ -24,4 +24,4 @@ We need to conduct a full accessibility review of the [component name] component
 
 ## Acceptance Criteria
 - [ ] Component has been reviewed for accessibility issues
-- [ ] Any accessibility issues have been addressed
+- [ ] Any accessibility issues have been addressed or ticket has been written with issues that need to be fixed
