@@ -10,9 +10,9 @@ on:
       github-event-number:
         required: false
         type: string
-      # environment-name:
-      #   required: true
-      #   type: string
+      environment-name:
+        required: true
+        type: string
       environment-url:
         required: true
         type: string
@@ -27,6 +27,9 @@ on:
 jobs:
   jekyll-build-reusable_workflow_job:
     runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.environment-name }}
+      url: ${{ inputs.environment-url }}
     steps:
       - uses: actions/checkout@v2
         with:
