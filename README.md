@@ -100,13 +100,13 @@ When a PR is created, a preview of those changes will be available after the [Pr
 
 [The "view deployment" button on a pull request](src/images/readme/pr-view-deployment-button.png)
 
-The preview link can also be accessed directly using this pattern: `https://dev-design.va.gov/PR_NUMBER`. For example, `https://dev-design.va.gov/3435` where `3435` is the unique PR number.
+The preview link can also be accessed directly using this pattern: `https://dev-design.va.gov/PR_NUMBER`. For example, `https://dev-design.va.gov/3435` where `3435` is the unique PR number visible in the PR title.
 
-If the preview has stopped working (for example if you're only seeing a 403 Forbidden error or similar), try re-running the preview workflow by clicking "Details" next to the Preview check and then click the "Re-run all jobs" button.
+If the preview has stopped working (for example if you're only seeing a 403 Forbidden error or similar), re-run the preview workflow by clicking "Details" next to the Preview check and then click the "Re-run all jobs" button.
 
-[A list of PR checks with an arrowing pointing to the details link for the Preview workflow](src/images/readme/pr-checks-preview-details.png)
+[A list of PR checks with an arrow pointing to the details link for the Preview workflow](src/images/readme/pr-checks-preview-details.png)
 
-[The Re-run all jobs button for running a Github workflow again](src/images/readme/re-run-workflow-button.png)
+[The "Re-run all jobs" button for running a Github workflow again](src/images/readme/re-run-workflow-button.png)
 
 ## Additional Testing
 
