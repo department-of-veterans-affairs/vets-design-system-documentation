@@ -23,7 +23,7 @@ anchors:
 
 ### Email notifications
 
-{% include component-example.html alt="Screen shots of 3 email templates." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/email-templates.png" caption="Three template examples for email notification touch points sent via VA Notify." class="x2" %}
+{% include component-example.html alt="Screen shots of 5 email templates." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/email-templates.png" caption="Five template examples for email notification touch points sent via VA Notify." class="x2" %}
 
 ### Form submission status in My VA
 
@@ -49,7 +49,7 @@ If there's a lag time between when someone submits the form and when VA receives
 
 1. **Submission in progress**: The notification we send immediately after someone selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached the system of record. During this time, data submitted by the person may travel through several systems.
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
-3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error.
+3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error. There are different templates available based on the remediation steps specific to the form.
 
 Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
 
