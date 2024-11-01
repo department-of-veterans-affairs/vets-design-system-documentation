@@ -110,15 +110,15 @@ Here is some example markup for a card of uneditable content that utilizes a des
 
 ``` html
 <va-card background>
-  <div className="vads-u-padding--4 vads-u-margin--0">
+  <div class="vads-u-padding--4 vads-u-margin--0">
     <dl>
-      <dt className="vads-u-font-weight--bold">Name</dt>
+      <dt class="vads-u-font-weight--bold">Name</dt>
       <dd>Godzilla</dd>
-      <dt className="vads-u-font-weight--bold">Born</dt>
+      <dt class="vads-u-font-weight--bold">Born</dt>
       <dd>1952</dd>
-      <dt className="vads-u-font-weight--bold">Birthplace</dt>
+      <dt class="vads-u-font-weight--bold">Birthplace</dt>
       <dd>Japan</dd>
-      <dt className="vads-u-font-weight--bold">Color</dt>
+      <dt class="vads-u-font-weight--bold">Color</dt>
       <dd>Green</dd>
     </dl>
   </div>
@@ -132,7 +132,7 @@ If a user can update their information, than pieces of information can be shown 
 ``` html
 <va-card show-shadow="true">
 
-  <h4 className="vads-u-width--auto vads-u-margin-top--0">
+  <h4 class="vads-u-width--auto vads-u-margin-top--0">
     Email address
   </h4>
 
@@ -158,11 +158,10 @@ A prefill info alert tells users that some information on a form has been prefil
 <va-alert
   status="info"
 >
-  <p className="vads-u-margin-y--0">
-    <strong>
-      Note:
-    </strong>
-    {' '}We've prefilled some of your information from your account. If you need to correct anything, you can select edit below. All updates will be made only to this form.
+  <p class="vads-u-margin-y--0">
+    <strong>Note:</strong> We've prefilled some of your information from your account.
+    If you need to correct anything, you can select edit below.
+    All updates will be made only to this form.
   </p>
 </va-alert>
 ```
