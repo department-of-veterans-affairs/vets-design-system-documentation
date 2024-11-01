@@ -43,15 +43,15 @@ This pattern involves these types of pages found in VA.gov forms:
 #### Introduction page
 There are two states of an introduction page: Authenticated and Unauthenticated.
 
-{% include component-example.html alt="Authenticated introduction page alert on the introduction page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-authenticated-alert.png" caption="Authenticated introduction page alert on the introduction page." class="x2" %}
+{% include component-example.html alt="A form introduction page viewed by an authenticated user with an alert that the form will fill parts of their application based on the their account details. Annotations state that alerts should be placed at the top of the page and the word 'note' in the alert should be bolded." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-authenticated-alert.png" caption="Authenticated introduction page alert on the introduction page."  %}
 
-{% include component-example.html alt="Unauthenticated introduction page alert on the introduction page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page." class="x2" %}
+{% include component-example.html alt="Unauthenticated introduction page alert on the introduction page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page."  class="x2" %}
 
 #### Personal information page
-{% include component-example.html alt="Uneditable prefilled information on the personal information page." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page." class="x2" %}
+{% include component-example.html alt="A Veteran information page in a form flow with an uneditable card containing the Veteran's name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information. An annotation states that the gray card might be replaced in future iterations of the pattern." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page."  %}
 
 #### Prefill check page
-{% include component-example.html alt="" file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable." class="x2" %}
+{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a white editable card containing the Veteran's mailing address. The alert states that the form has prefilled some of the Veteran's information. Annotations state that alerts should be placed at the top of the page, and that the white card might be replaced in future iterations of the pattern." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable." %}
 
 ### How this pattern works
 
@@ -81,13 +81,93 @@ List of links to page templates or layouts used to build any pages for this patt
 
 ## Examples
 
-Examples of this pattern. May contain reference or links to:
+### Uneditable Prefill Card
+{% include storybook-preview.html story="patterns-components-card--uneditable" link_text="uneditable prefill alert" %}
+
+### Editable Prefill Card
+{% include storybook-preview.html story="patterns-components-card--editable" link_text="editable prefill alert" %}
+
+
+### Signed In Prefill Alert
+{% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" link_text="signed in prefill alert" %}
+
+### Unauthenticated Prefill Alert
+{% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" link_text="unauthenticated prefill alert" %}
+
+### Prefilled Info Alert
+{% include storybook-preview.html story="patterns-components-prefill-alert--prefilled-info-alert" link_text="prefilled info alert" %}
+
 
 ### Examples in production
 Coming soon!
 
 ## Code usage
-Coming soon!
+
+When using the `va-card` element to display prefilled information, ensure that the correct structure of the html is present. The description list `<dl>` and unordered list `<ul>` elements can be useful for displaying several pieces of uneditable data.
+
+### Uneditable information
+Here is some example markup for a card of uneditable content that utilizes a description list.
+
+``` html
+<va-card background>
+  <div className="vads-u-padding--4 vads-u-margin--0">
+    <dl>
+      <dt className="vads-u-font-weight--bold">Name</dt>
+      <dd>Godzilla</dd>
+      <dt className="vads-u-font-weight--bold">Born</dt>
+      <dd>1952</dd>
+      <dt className="vads-u-font-weight--bold">Birthplace</dt>
+      <dd>Japan</dd>
+      <dt className="vads-u-font-weight--bold">Color</dt>
+      <dd>Green</dd>
+    </dl>
+  </div>
+</va-card>
+```
+
+### Editable information
+
+If a user can update their information, than pieces of information can be shown with a heading followed by the information itself, along with an edit link.
+
+``` html
+<va-card show-shadow="true">
+
+  <h4 className="vads-u-width--auto vads-u-margin-top--0">
+    Email address
+  </h4>
+
+  <p>testemail1234@unattended.com</p>
+
+  <va-link
+    label="Edit email address"
+    href="/link-here"
+    text="Edit"
+    active
+  />
+
+</va-card>
+```
+
+[View more prefill card examples on storybook](https://design.va.gov/storybook/?path=/docs/patterns-components-card--docs)
+
+### Prefilled info alert
+
+A prefill info alert tells users that some information on a form has been prefilled.
+
+``` html
+<va-alert
+  status="info"
+>
+  <p className="vads-u-margin-y--0">
+    <strong>
+      Note:
+    </strong>
+    {' '}We've prefilled some of your information from your account. If you need to correct anything, you can select edit below. All updates will be made only to this form.
+  </p>
+</va-alert>
+```
+
+[View mort prefill alert examples on storybook](https://design.va.gov/storybook/?path=/docs/patterns-components-prefill-alert--docs)
 
 
 ## Content considerations
