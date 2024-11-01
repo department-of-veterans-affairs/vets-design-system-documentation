@@ -82,17 +82,17 @@ List of links to page templates or layouts used to build any pages for this patt
 ## Examples
 
 ### Uneditable Prefill Card
-{% include storybook-preview.html story="patterns-components-card--uneditable" link_text="uneditable prefill alert" %}
+{% include storybook-preview.html story="patterns-components-card--uneditable" height="200px" link_text="uneditable prefill alert" %}
 
 ### Editable Prefill Card
-{% include storybook-preview.html story="patterns-components-card--editable" link_text="editable prefill alert" %}
+{% include storybook-preview.html story="patterns-components-card--editable" height="250px" link_text="editable prefill alert" %}
 
 
 ### Signed In Prefill Alert
-{% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" link_text="signed in prefill alert" %}
+{% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" height="250px" link_text="signed in prefill alert" %}
 
 ### Unauthenticated Prefill Alert
-{% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" link_text="unauthenticated prefill alert" %}
+{% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="350px" link_text="unauthenticated prefill alert" %}
 
 ### Prefilled Info Alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--prefilled-info-alert" link_text="prefilled info alert" %}
