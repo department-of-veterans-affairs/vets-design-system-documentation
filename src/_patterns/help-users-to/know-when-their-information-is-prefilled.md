@@ -21,7 +21,7 @@ anchors:
 ### When to use this pattern
 
 - **When you prefill the user's data into an application, like a form.** When using this pattern, clearly inform the user of where their data is being pulled from to prefill for them.
-- **When users can update prefilled information.** View [Help users to... Know how their information is updated](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) for guidance on helping users update this prefilled information.
+- **When users can update prefilled information.** Review [Help users to... Know how their information is updated](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) for guidance on helping users update this prefilled information.
 
 #### Design principles
 - **Visibility of system status.** This pattern demonstrates the usability principle of communicating the current state to help users feel in control and take appropriate action. [Learn more about Visibility of system status](https://www.nngroup.com/articles/visibility-system-status/).
@@ -67,7 +67,7 @@ This pattern communicates information that cannot be edited with:
 
 #### Communicate information that can be edited
 This pattern communicates information that can be edited with:
-- **Editable prefilled information displayed in a card with an edit link.** Prefilled information the is editable is displayed in a card component with a link to edit the information. For additional guidance on helping users update prefilled information, see the ["Help users to... Know how their information is updated"](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) pattern which will be updated soon.
+- **Editable prefilled information displayed in a card with an edit link.** Prefilled information that is editable is displayed in a card component with a link to edit the information. For additional guidance on helping users update prefilled information, see the ["Help users to... Know how their information is updated"](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) pattern which will be updated soon.
 
 ### Components used in this pattern
 
