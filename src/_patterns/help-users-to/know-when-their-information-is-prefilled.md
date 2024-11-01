@@ -108,7 +108,7 @@ When using the `va-card` element to display prefilled information, ensure that t
 ### Uneditable information
 Here is some example markup for a card of uneditable content that utilizes a description list.
 
-``` html
+```html
 <va-card background>
   <div class="vads-u-padding--4 vads-u-margin--0">
     <dl>
@@ -129,7 +129,7 @@ Here is some example markup for a card of uneditable content that utilizes a des
 
 If a user can update their information, than pieces of information can be shown with a heading followed by the information itself, along with an edit link.
 
-``` html
+```html
 <va-card show-shadow="true">
 
   <h4 class="vads-u-width--auto vads-u-margin-top--0">
@@ -154,7 +154,7 @@ If a user can update their information, than pieces of information can be shown 
 
 A prefill info alert tells users that some information on a form has been prefilled.
 
-``` html
+```html
 <va-alert status="info">
   <p class="vads-u-margin-y--0">
     <strong>Note:</strong> We've prefilled some of your information from your account.
