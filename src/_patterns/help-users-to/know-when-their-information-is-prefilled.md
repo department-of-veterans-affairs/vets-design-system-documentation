@@ -89,7 +89,7 @@ List of links to page templates or layouts used to build any pages for this patt
 
 
 ### Signed In Prefill Alert
-{% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" height="250px" link_text="signed in prefill alert" %}
+{% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" link_text="signed in prefill alert" %}
 
 ### Unauthenticated Prefill Alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="350px" link_text="unauthenticated prefill alert" %}
