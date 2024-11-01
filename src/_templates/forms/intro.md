@@ -40,7 +40,7 @@ Both variations mostly follow the same structure. The only difference is the sec
 - Applications use a process list
 - Non-applications use a "What to know before you fill out this form" section
 
-**Note:** Some straightforward applications may not require a process list. It's OK to use the same structure as non-application forms for those.  
+**Note:** Some straightforward applications may not require a process list. It's OK to use the same structure as non-application forms for those.
 
 ## Structure
 
@@ -58,12 +58,12 @@ In general, use the full, official name of the form in title case, followed by t
 
 Example:
 
-[Title] Request personal records  
-[Subtitle] Freedom of Information Act (FOIA) or Privacy Act (PA) Request (VA Form 20-10206) 
+[Title] Request personal records
+[Subtitle] Freedom of Information Act (FOIA) or Privacy Act (PA) Request (VA Form 20-10206)
 
-Alternate example: 
+Alternate example:
 
-[Title] Request a Higher-Level Review  
+[Title] Request a Higher-Level Review
 [Subtitle] (VA Form 20-0996)
 
 **Intro paragraph**
@@ -125,13 +125,13 @@ Example:
 
 ## Sign-in widget, prefill alert, or "continue saved form" alert
 
-Dynamically display one of these options. Sign-in widgets and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.  
+Dynamically display one of these options. Sign-in widgets and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.
 
 **Note:** The sign-in and prefill variations assume that the form prefills information for people who are signed in to VA.gov.
 
 ### If the person is already signed in
 
-**If the person has no saved forms,** use the standard [prefill alert](https://design.va.gov/components/form/prefill) component.
+**If the person has no saved forms,** use the standard [prefill alert](/patterns/help-users-to/know-when-their-information-is-prefilled#signed-in-prefill-alert) component.
 
 **If the person has saved forms,** use the "Continue your form" alert.
 
@@ -156,7 +156,7 @@ Choose the correct sign-in widget for your form.
 
 ### Need help
 
-The [Need help component]({{ site.baseurl }}/components/form/need-help) is a footer that appears on the bottom of every page of the form. This content lets people know how to get additional help with the form or the benefits. 
+The [Need help component]({{ site.baseurl }}/components/form/need-help) is a footer that appears on the bottom of every page of the form. This content lets people know how to get additional help with the form or the benefits.
 
 {% include component-example.html alt="An example of a need help footer for forms pages." file="/images/templates/forms/introduction/need-help.png" caption="An example of a Need help component used on all forms pages." class="x2" %}
 
