@@ -155,9 +155,7 @@ If a user can update their information, than pieces of information can be shown 
 A prefill info alert tells users that some information on a form has been prefilled.
 
 ``` html
-<va-alert
-  status="info"
->
+<va-alert status="info">
   <p class="vads-u-margin-y--0">
     <strong>Note:</strong> We've prefilled some of your information from your account.
     If you need to correct anything, you can select edit below.
