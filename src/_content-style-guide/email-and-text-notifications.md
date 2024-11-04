@@ -9,16 +9,17 @@ anchors:
 
 ## General guidance for email and text notifications
 
+**Note:** This notifications guidance applies to emails and texts we send to Veterans related to interactions they have with VA—like reminders or updates related to their submitted online forms, disability claims, and health appointments. We're adding more guidance for notifications soon. This guidance may not always apply to outreach emails and texts that we send for awareness and education about VA benefits and services. 
+
 ### Follow our content style guide and existing patterns
 * Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. [Review our top 10 plain language standards](https://design.va.gov/content-style-guide/plain-language/#top-10-va-plain-language-standards)
 * For some types of emails, VA Notify has sample templates with plain language content that's ready to use. You'll just need to fill in any manual variables and adjust other content as needed. This includes the emails in the form submission status pattern. [Review the form submission status pattern](https://design.va.gov/patterns/help-users-to/stay-informed-of-their-application-status) 
 
 ### Protect Veterans' personal information
-* Always get approval of new or updated notifications from a VA privacy officer.
+* Always get approval of new or updated notifications from a VA privacy officer. 
+[Find your product's privacy officer (link only works on VA network)](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3406/files#diff-989f423e8013e63dd7c10f19aa0b5c8138e5eb14d00a05b7acba8453d80a457a)
 * Email and text notifications are not secure, so we can’t include Veterans’ personally identifiable information (PII) or protected health information (PHI).
 * Privacy officers may allow exceptions to the PII/PHI rule when a Veteran opts in to receive PII/PHI in their notifications. But you must work closely with the privacy office and get specific approval for any notifications that include PII/PHI.
-
-**Note:** We're adding more guidance for notifications soon.
 
 ## Email notifications
 
@@ -42,17 +43,18 @@ anchors:
 
 ### Header levels 
 
-* Use headers to chunk email content and make it easier to scan—VA Notify supports header levels 1, 2, and 3
+* To make your email content accessible and easier to scan, use headers to chunk the content—VA Notify supports header levels 1, 2, and 3
 * H1 should be either exactly the same wording as the subject line, or a slightly more detailed version of the subject line (for example, using "We received your VA form" in subject line and "We received your authorization to release medical information" in H1, to keep subject line in character limits)
 
 ### Feature card (also called block quote card)
 
 * Use the feature card component to display important details, like confirmation numbers or the date of an upcoming appointment
+* Only use 1 feature card in each email
 * If the feature card displays information from an online form confirmation screen, make sure the data field labels (like "Date submitted") match between the feature card and the confirmation screen
 
 ### Links 
 
-Follow these general rules for link text:
+Follow these general rules for accessible link text:
 * [Follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
 * Always include purpose and the destination in link text—for links from emails to the VA website, add "on VA.gov" as the destination
 * Make each link a full sentence
