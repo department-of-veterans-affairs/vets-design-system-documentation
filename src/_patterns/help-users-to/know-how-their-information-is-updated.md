@@ -12,6 +12,17 @@ anchors:
   - anchor: Research findings
 ---
 
+<va-alert
+  status="warning"
+  slim
+>
+    <div class="vads-u-margin-y--0">
+    <p class="vads-u-margin-y--0">
+      We are updating this pattern. Please note that some guidance may be out of date. <va-link href="/patterns/help-users-to/know-when-their-information-is-prefilled" text="See the new prefill pattern page for up-to-date guidance." ></va-link>
+    </p>
+    </div>
+</va-alert>
+
 ## Usage
 
 ### When to use this pattern
@@ -25,7 +36,7 @@ anchors:
 
 ### When not to use this pattern
 
-* **When an update in this form will not update their VA.gov profile.**  If a contact information addition or change will **not** update the user's VA.gov profile then use the text "*Any updates you make here to your [type of contact information] will only apply to this application.*" 
+* **When an update in this form will not update their VA.gov profile.**  If a contact information addition or change will **not** update the user's VA.gov profile then use the text "*Any updates you make here to your [type of contact information] will only apply to this application.*"
 
 ### When to use caution
 
@@ -47,7 +58,7 @@ However, some forms show a set of data taken from VA.gov profile and display the
 
 * In this example, at the start of the Request a Board Appeal process, the user is shown information that we have on file but that cannot be changed in this application. A note below the information calls out how to get the information updated.
 
-#### Communicate information that can be edited 
+#### Communicate information that can be edited
 
 {% include component-example.html alt="Contact information from the Request a Board Appeal application." file="/images/patterns/help-users-to/know-how-their-information-is-updated/board-appeal-contact-information.png" caption="The user is shown contact information stored in their profile that can be edited before continuing with the process." width="50%" %}
 
