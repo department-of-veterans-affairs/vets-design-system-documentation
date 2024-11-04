@@ -23,7 +23,7 @@ anchors:
 
 ### Email notifications
 
-{% include component-example.html alt="Screen shots of 3 email templates." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/email-templates.png" caption="Three template examples for email notification touch points sent via VA Notify." class="x2" %}
+{% include component-example.html alt="Screen shots of 5 email templates." file="/images/patterns/help-users-to/stay-informed-of-their-application-status/email-templates.png" caption="Five template examples for email notification touch points sent via VA Notify." class="x2" %}
 
 ### Form submission status in My VA
 
@@ -49,7 +49,7 @@ If there's a lag time between when someone submits the form and when VA receives
 
 1. **Submission in progress**: The notification we send immediately after someone selects the **Submit** button on an online form. This means that the form submission has successfully started, but it has not yet reached the system of record. During this time, data submitted by the person may travel through several systems.
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
-3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error.
+3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error. There are different templates available based on the remediation steps specific to the form.
 
 Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
 
@@ -80,6 +80,18 @@ Form submissions on VA.gov or in the mobile app must show the submission status 
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
 
+#### How to handle forms submitted within the process of another form (sub-forms)
+
+For sub-forms such as the Authorization to Disclose Information to the Department of Veterans Affairs (21-4142), submitted within the process of completing an Application for Disability Compensation and Related Compensation Benefits (21-526EZ) or Decision Review Request: Supplemental Claim (20-0995), the status of the sub-forms should be communicated independently from the status of the main form. In other words, each sub-form would send a separate email notification and would have a separate status card shown in My VA, independent from the notifications and cards of the main form.
+
+#### How to show status for uploaded documents
+
+Indicate to the user on the status card shown in My VA the count of uploaded documents. For example, "You uploaded 22 documents. We'll email you if we can't successfully deliver any of them." 
+
+> NOTE: The exact language and how to convey this to users is currently being designed and is subject to change.
+
+In addition, documents uploaded in the claims status tool do not need to be reflected in My VA.
+
 ### Showing form processing status after we receive it in the system of record
 
 Some forms show processing status after point of receipt in the claim status tool. In the future, all forms should work toward allowing people to track the processing status through to the point of a VA decision or other ultimate end point.
@@ -103,6 +115,6 @@ Every time a form submission error happens, you must notify the person about tha
 
 ### Page templates available for this pattern
 
-* [Email templates are available in VA Notify](https://staging.notifications.va.gov/). You'll need a VA Notify account to access the sample templates. Select a service. If you're not assigned to a service contact # va-notify-public. Select **Add template**. Then select **Sample templates**.
+* [Email templates are available in VA Notify](https://staging.notifications.va.gov/). You'll need a VA Notify account to access the sample templates. Select a service. If you're not assigned to a service contact #va-notify-public. Select **Add template**. Then select **Sample templates**.
 * The sample email templates include customizable content you'll need to fill in for your form. Try to use as much of the template content as possible and only adjust where needed. If you have questions or need help adjusting the templates for your form, you can contact #sitewide-content-accessibility-ia
 * Email templates must be reviewed by a VA Privacy Officer in the appropriate portfolio (VBA or VHA). 

@@ -23,7 +23,7 @@ Teams must formally request a redirect before implementation so they can be vett
 
 ## Usage
 
-### When to use a redirect
+### When to use a redirect 
 
 If you're making a change that impacts the availability of a page at a specific URL on VA.gov, you should redirect the old URL to an alternative URL that has at least some equivalent content, to avoid rendering a 404 (page not found) error.
 
@@ -58,3 +58,5 @@ Examples of these changes are:
 If you need to implement a redirect, a request must first be submitted to VA.gov Information Architecture.  This request will ensure the redirect is valid and accurate, and will kick-off processes to ensure all internal links are appropriately updated. 
 
 <a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md">Submit a Redirect or URL change issue on GitHub</a>
+
+<a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/developer-docs/redirect-implementation-strategies">Learn about how to implement redirects on the VA Platform website</a>

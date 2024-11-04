@@ -63,6 +63,11 @@ Start with "VA.gov home". Clearly indicate that the home page is the VA.gov home
 
 * The breadcrumb should be placed below the header and above the main content.
 * The placement of the breadcrumb must be consistent from page to page.
+* Spacing for the breadcrumb is built in to the component and should be consistent throughout all layouts. The correct spacing is specified in the images below:
+
+{% include component-example.html alt="Breadcrumbs have 20px / 2.5 spacing units above and 32px / 4 spacing units below at a mobile breakpoint." file="/images/components/breadcrumbs/breadcrumbs-spacing-mobile.png" caption="Breadcrumbs have 20px or 2.5 spacing units above and 32px or 4 spacing units below at a mobile breakpoint." %}
+
+{% include component-example.html alt="Breadcrumbs have 20px / 2.5 spacing units above and 48px / 6 spacing units below at a desktop breakpoint." file="/images/components/breadcrumbs/breadcrumbs-spacing-desktop.png" caption="Breadcrumbs have 20px or 2.5 spacing units above and 48px or 6 spacing units below at a desktop breakpoint." %}
 
 ### Behavior
 
