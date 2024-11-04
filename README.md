@@ -104,15 +104,15 @@ The preview link can also be accessed directly using this pattern: `https://dev-
 
 ### Preview Troubleshooting
 
-#### Check branch
+#### Check the branch name
 
-A preview environment will generate only when the PR has been created from a direct push to the main repository. It does not work if the PR was created from a fork. 
+A preview environment will generate only when the PR has been created from a direct branch from the main repository. It does not work if the PR was created from a fork.
 
-You can confirm if your PR is from a fork by looking at the branch name at the top of the PR. If you see your Github username in front of your branch name, this means the PR was created from a fork and the preview will not generate.
+You can confirm if your PR was created from a fork by looking at the branch name at the top of the PR. If you see your Github username in front of your branch name, this means the PR was created from a fork and the preview will not generate.
 
 ![The top of a PR showing the branch to be merged into main. There is a Github username at the front of a branch name which means the branch is from a fork](https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/refs/heads/main/src/images/readme/pr-branch-from-fork.png)
 
-If this was done because you do not have write access to this repository, you can request that access by submitting a support request in the #vfs-platform-support Slack channel.
+If this was done because you don't have write access to this repository, you can request that access by submitting a support request in the #vfs-platform-support Slack channel.
 
 #### Re-running the preview workflow
 
