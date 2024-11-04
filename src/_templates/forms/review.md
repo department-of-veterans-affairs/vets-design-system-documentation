@@ -5,7 +5,7 @@ has-parent: /templates/forms/
 title: Review
 status: use-deployed
 intro-text: Allows the user to review information and make edits if necessary.
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/22D26EF0-4325-4899-AAB5-2FCF50AD12BC/canvas
+figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A66785&mode=design&t=0y4ua4v9DIeIvkhX-1
 anchors:
   - anchor: About
   - anchor: Example
@@ -24,8 +24,8 @@ The Review page consists of:
 
 1. [Page title and subtitle](#page-title-and-subtitle)
 2. [Progress bar - Segmented](#progress-bar-segmented)
-3. [Review steps or chapters - Expanded](#review-steps-or-chapters-expanded)
-4. [Review steps or chapters - Collapsed](#review-steps-or-chapters-collapsed)
+3. [Review steps or chapters - Expanded](#review-steps-or-chapters---expanded)
+4. [Review steps or chapters - Collapsed](#review-steps-or-chapters---collapsed)
 5. [Penalty notice](#penalty-notice)
 6. [Privacy agreement](#privacy-agreement)
 7. [Button pair](#button-pair)
@@ -65,11 +65,11 @@ All accordions start out collapsed.
 
 ### Penalty notice
 
-[Penalty notice]({{site.baseurl}}/components/forms/penalty-notice) component. This is a content component which is a required legal notice that must appear on this final step of an application.
+[Penalty notice]({{site.baseurl}}/components/form/penalty-notice) component. This is a content component which is a required legal notice that must appear on this final step of an application.
 
 ### Privacy agreement
 
-[Privacy agreement]({{site.baseurl}}/components/forms/privacy-agreement) component. This component is used unless a form requires a wet signature in which case this component is replaced by the [Ask users for signature]({{ site.basurl }}/patterns/ask-users-for/signature) pattern, wet signature variation.
+[Privacy agreement]({{site.baseurl}}/components/form/privacy-agreement) component. This component is used unless a form requires a wet signature in which case this component is replaced by the [Ask users for signature]({{ site.basurl }}/patterns/ask-users-for/signature) pattern, wet signature variation.
 
 ### Button pair
 
@@ -77,7 +77,7 @@ All accordions start out collapsed.
 
 ### Autosave
 
-The [Autosave]({{site.baseurl}}/components/forms/autosave) component provides the last saved application date and time in a Alert - background only - Success variation.
+The [Autosave]({{site.baseurl}}/components/form/autosave) component provides the last saved application date and time in a Alert - background only - Success variation.
 
 ### Finish application later
 
@@ -85,4 +85,4 @@ A link that allows the user to exit the process with their progress saved.
 
 ### Need help?
 
-The [Need help?]({{site.baseurl}}/components/forms/need-help) component provides contact information for reaching VA.
+The [Need help?]({{site.baseurl}}/components/form/need-help) component provides contact information for reaching VA.

@@ -8,7 +8,7 @@ sub-pages:
   - sub-page: Display
   - sub-page: Flexbox
   - sub-page: Font family
-  - sub-page: Font size 
+  - sub-page: Font size
   - sub-page: Font style
   - sub-page: Font weight
   - sub-page: Height and width
@@ -16,6 +16,7 @@ sub-pages:
   - sub-page: Margins
   - sub-page: Measure
   - sub-page: Padding
+  - sub-page: Position
   - sub-page: Text align
   - sub-page: Text color
   - sub-page: Text decoration
@@ -46,7 +47,7 @@ Some of the utilities, such as margin and padding, are built to maintain a consi
 
 ## Utilities for designers
 
-Designers should explore the available utilities in Formation. Because designs will be implemented with the styles in formation, knowledge of the utilities may assist in how designers describe their work.
+Designers should explore the available utilities in the CSS Library. Because designs will be implemented with the styles in formation, knowledge of the utilities may assist in how designers describe their work.
 
 ## Naming
 
@@ -59,9 +60,11 @@ Be descriptive, use the global & utility prefixes, and avoid creating ambiguity 
 Use descriptive class names that clearly indicate the associated CSS property.
 
 #### Example
+
 ```css
 .vads-u-margin-bottom--5
 ```
+
 </div>
 </div>
 <div class="do-dont__dont">
@@ -70,9 +73,11 @@ Use descriptive class names that clearly indicate the associated CSS property.
 Don’t use acroynms or shorthand, ambiguous class names that do not clearly indicate the associated CSS property.
 
 #### Example
+
 ```css
 .vads-u-mb5
 ```
+
 </div>
 </div>
 </div>

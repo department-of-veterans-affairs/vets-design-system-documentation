@@ -1,242 +1,275 @@
 Appointments:
   - name: Duration (days/months/years)
-    fa-class: "fas fa-calendar"
+    icon-name: calendar_today
     unicode: "#xf133;"
     additional-usage: Link - Calendar
   - name: In-person appointment
-    fa-class: "fas fa-building"
+    icon-name: location_city
     unicode: "#xf1ad;"
   - name: Phone appointment
-    fa-class: "fas fa-phone-alt"
+    icon-name: phone
     unicode: "#xf879;"
   - name: Time (hours/minutes)
-    fa-class: "fas fa-clock"
+    icon-name: schedule
     unicode: "#xf0e0;"
+  - name: TTY
+    icon-name: tty
   - name: Video appointment
-    fa-class: "fas fa-video"
+    icon-name: videocam
     unicode: "#xf03d;"
 
 Feedback:
   - name: Informational
-    fa-class: "fas fa-info-circle"
+    icon-name: info
     unicode: "#xf05a;"
-    additional-usage: Alert - Info, Notifications
+    additional-usage: Alert - Info
   - name: Confirmation or completion
-    fa-class: "fas fa-check"
-    unicode: "#xf00c;"
-    color: "#2e8540"
+    icon-name: check_circle
     additional-usage: Alert - Success
   - name: Warning
-    fa-class: "fas fa-exclamation-triangle"
+    icon-name: warning
     unicode: "#xf071;"
     additional-usage: Alert - Warning
   - name: Error
-    fa-class: "fas fa-exclamation-circle"
+    icon-name: error
     unicode: "#xf06a;"
-    color: "#cd2026"
-    additional-usage: Alert - Error, Notifications
+    additional-usage: Alert - Error
+  - name: Sign in or tool prompt
+    icon-name: lock
+    additional-usage: Alert - Continue
+  - name: Confirmation or completion
+    icon-name: check
+    unicode: "#xf00c;"
+    additional-usage: Process List
 
 Health:
+  - name: In progress status
+    icon-name: acute
   - name: Lab and test results (Facilities)
-    fa-class: "fas fa-clipboard-list"
+    icon-name: assignment
     unicode: "#xf46d;"
     additional-usage: Compare GI benefits by school (Profile)
   - name: Health care facility operating status (Facilities)
-    fa-class: "fas fa-dot-circle"
+    icon-name: adjust
     unicode: "#xf192;"
   - name: Hearing aid (Facilities)
-    fa-class: "fas fa-deaf"
+    icon-name: hearing_disabled
     unicode: "#xf2a4;"
+  - name: Shipped items
+    icon-name: local_shipping
+    additional-usage: Mobile app
+  - name: Medications
+    icon-name: pill
 
 Hub:
   - name: Burials
-    fa-class: "fas fa-star"
+    icon-name: star
     unicode: "#xf005;"
   - name: Careers and employment
-    fa-class: "fas fa-briefcase"
+    icon-name: work
     unicode: "#xf0b1;"
     additional-usage: On-the-job Training (GI Bill Comparison tool)
   - name: Disability
-    fa-class: "fas fa-file-alt"
+    icon-name: description
     unicode: "#xf15c;"
   - name: Education
-    fa-class: "fas fa-graduation-cap"
+    icon-name: school
     unicode: "#xf19d;"
     additional-usage: VA education and benefits (Profile)
   - name: Family member benefits
-    fa-class: "fas fa-users"
+    icon-name: groups
     unicode: "#xf0c0;"
   - name: Healthcare
-    fa-class: "fas fa-medkit"
+    icon-name: medical_services
     unicode: "#xf0fa;"
   - name: Housing
-    fa-class: "fas fa-home"
+    icon-name: home
     unicode: "#xf015;"
   - name: Life Insurance
-    fa-class: "fas fa-shield-alt"
+    icon-name: shield
     unicode: "#xf3ed;"
   - name: Pension
-    fa-class: "fas fa-handshake"
+    icon-name: handshake
     unicode: "#xf2b5;"
   - name: Records
-    fa-class: "fas fa-id-card"
+    icon-name: identification
     unicode: "#xf2c2;"
   - name: Service member benefits
-    fa-class: "fas fa-flag-usa"
+    icon-name: flag
     unicode: "#xf74d;"
 
 
 Identification:
   - name: Telephone number
-    fa-class: "fas fa-phone"
+    icon-name: phone
     unicode: "#xf095;"
+  - name: Phone
+    icon-name: phone_iphone
+    additional-usage: Telephone number in Crisis Line modal
   - name: Location or address
-    fa-class: "fas fa-map-marker-alt"
+    icon-name: location_on
     unicode: "#xf041;"
   - name: Driving directions
-    fa-class: "fas fa-road"
+    icon-name: directions
     unicode: "#xf018;"
   - name: Website address
-    fa-class: "fas fa-globe"
+    icon-name: language
     unicode: "#xf0ac;"
   - name: Help or contact information
-    fa-class: "fas fa-question-circle"
+    icon-name: help
     unicode: "#xf059;"
   - name: Settings
-    fa-class: "fas fa-cog"
+    icon-name: settings
     unicode: "#xf013;"
   - name: Homepage sign in button
-    fa-class: "fas fa-user-circle"
+    icon-name: account_circle
     unicode: "#f2bd;"
   - name: Announcement
-    fa-class: "fas fa-bullhorn"
+    icon-name: campaign
     unicode: "#f0e0;"
 
 Interaction:
   - name: Accordion expand indicator
-    fa-class: "fas fa-plus"
-    unicode: "#xf067;"
+    icon-name: add
     additional-usage: Add item
   - name: Accordion collapse indicator
-    fa-class: "fas fa-minus"
-    unicode: "#xf068;"
+    icon-name: remove
   - name: Close indicator (modals, alerts)
-    fa-class: "fas fa-times"
-    unicode: "#xf00d;"
+    icon-name: close
   - name: Download item
-    fa-class: "fas fa-download"
-    unicode: "#xf019;"
+    icon-name: file_download
     additional-usage: Link - Download
   - name: Dropdown expand indicator
-    fa-class: "fas fa-chevron-down"
-    unicode: "#xf078;"
+    icon-name: expand_more
   - name: Dropdown collapse indicator
-    fa-class: "fas fa-chevron-up"
-    unicode: "#xf077;"
+    icon-name: expand_less
   - name: Form field dropdown
-    fa-class: "fas fa-sort"
-    unicode: "#xf0dc;"
+    icon-name: unfold_more
+  - name: Reload view
+    icon-name: refresh
+    additional-usage: Mobile app
   - name: Remove or delete item
-    fa-class: "fas fa-trash-alt"
+    icon-name: delete
+    unicode: "#xf1f8;"
+  - name: Cancel an action
+    icon-name: cancel
+  - name: Loading indicator
+    icon-name: autorenew
     unicode: "#xf1f8;"
 
 Messaging:
   - name: Attachment
-    fa-class: "fas fa-paperclip"
+    icon-name: attach_file
     unicode: "#xf0c6;"
   - name: Content folder
-    fa-class: "fas fa-folder"
+    icon-name: folder
     unicode: "#xf07b;"
     additional-usage: Move
+  - name: Inbox
+    icon-name: inbox
+    additional-usage: Messaging, Mobile app
   - name: Message, letter
-    fa-class: "fas fa-envelope"
+    icon-name: mail
     unicode: "#xf0e0;"
     additional-usage: Subscribe to news, notifications, or updates (Facilities)
   - name: Print
-    fa-class: "fas fa-print"
+    icon-name: print
     unicode: "#xf02f;"
   - name: Reply
-    fa-class: "fas fa-reply"
+    icon-name: undo
     unicode: "#xf3e5;"
+  - name: Secure messaging
+    icon-name: chat
 
 Navigation:
   - name: Previous
-    fa-class: "fas fa-angle-double-left"
+    icon-name: navigate_far_before
     unicode: "#xf100;"
   - name: Next
-    fa-class: "fas fa-angle-double-right"
+    icon-name: navigate_far_next
     unicode: "#xf101;"
+  - name: External link
+    icon-name: launch
+    unicode: "#xf35d;"
   - name: Link - Active component
-    fa-class: "fas fa-chevron-right"
+    icon-name: navigate_next
     unicode: "#xf054;"
+  - name: Pagination - Navigate previous
+    icon-name: navigate_before
   - name: Navigate page down
-    fa-class: "fas fa-arrow-down"
+    icon-name: arrow_downward
     unicode: "#xf063;"
   - name: Navigate page up
-    fa-class: "fas fa-arrow-up"
+    icon-name: arrow_back
     unicode: "#xf062;"
   - name: Search
-    fa-class: "fas fa-search"
+    icon-name: search
     unicode: "#xf002;"
   - name: Channel
-    fa-class: "fab fa-youtube"
+    icon-name: youtube
     unicode: "#xf167;"
     additional-usage: Link - Channel, YouTube (Social)
   - name: Video
-    fa-class: "fas fa-play-circle"
+    icon-name: play_circle
     unicode: "#xf144;"
     additional-usage: Link - Video
 
-Notifications:
-  - name: Urgent - requiring user action
-    fa-class: "fas fa-exclamation-circle"
-    unicode: "#xf06a;"
-    color: "#981b1e"
-  - name: Informational - not requiring user action
-    fa-class: "fas fa-info-circle"
-    unicode: "#xf05a;"
-    color: "#0071bb"
-
 Profile:
   - name: Appointment
-    fa-class: "fas fa-calendar-check"
+    icon-name: event_available
     unicode: "#xf274;"
   - name: Claims and appeals
-    fa-class: "fas fa-clipboard-check"
+    icon-name: assignment_turned_in
     unicode: "#xf46c;"
   - name: Debt
-    fa-class: "fas fa-file-invoice-dollar"
+    icon-name: request_quote
     unicode: "#xf571;"
   - name: Direct Deposit
-    fa-class: "fas fa-dollar-sign"
+    icon-name: attach_money
     unicode: "#xf155;"
     additional-usage: Profile - Check your GI bill statement of benefits
   - name: Messages
-    fa-class: "fas fa-comments"
+    icon-name: forum
     unicode: "#xf086;"
   - name: Medical records
-    fa-class: "fas fa-file-medical"
+    icon-name: note_add
     unicode: "#xf477;"
   - name: Payment history
-    fa-class: "fas fa-user-check"
+    icon-name: how_to_reg
     unicode: "#xf4fc;"
   - name: Prescriptions
-    fa-class: "fas fa-prescription-bottle"
+    icon-name: medication
     unicode: "#xf485;"
+  - name: Submitted
+    icon-name: fact_check
   - name: Travel reimbursement
-    fa-class: "fas fa-suitcase"
+    icon-name: work
     unicode: "#xf0f2;"
 
 Social:
+  - name: Apple App Store
+    icon-name: app_store
   - name: Facebook
-    fa-class: "fab fa-facebook"
+    icon-name: facebook
     unicode: "#xf090;"
   - name: Flickr
-    fa-class: "fab fa-flickr"
+    icon-name: flickr
     unicode: "#xf16e;"
+  - name: Google Play Store
+    icon-name: google_play
   - name: Instagram
-    fa-class: "fab fa-instagram"
+    icon-name: instagram
     unicode: "#xf167;"
   - name: Twitter
-    fa-class: "fab fa-twitter"
+    icon-name: twitter
     unicode: "#xf099;"
+  - name: LinkedIn
+    icon-name: linkedin
+  - name: X
+    icon-name: x
+
+developer.va.gov:
+  - name: Authentication
+    icon-name: key
+  - name: Tags
+    icon-name: sell

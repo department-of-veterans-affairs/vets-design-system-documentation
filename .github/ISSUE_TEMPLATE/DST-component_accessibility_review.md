@@ -2,7 +2,7 @@
 name: "DST - Component accessibility review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Accessibility review"
-labels: vsp-design-system-team
+labels: platform-design-system-team
 
 ---
 ## Configuring this issue
@@ -24,4 +24,4 @@ We need to conduct a full accessibility review of the [component name] component
 
 ## Acceptance Criteria
 - [ ] Component has been reviewed for accessibility issues
-- [ ] Any accessibility issues have been addressed
+- [ ] Any accessibility issues have been addressed or ticket has been written with issues that need to be fixed

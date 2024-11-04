@@ -5,154 +5,126 @@ permalink: /about/developers/contributing
 has-parent: /about/developers/
 intro-text: How to contribute code to the Design System.
 anchors:
+  - anchor: Getting started
   - anchor: Modifying existing components
-  - anchor: Writing CSS for the Design System
   - anchor: Contributing new components
+  - anchor: Timeline to get a new component to prod
 ---
 
-The two main ways for developers to contribute to the Design System are by modifying existing components and contributing new components. Regardless of which type of contribution you are making, each PR should:
+## Getting started
 
-- have at least 90% test coverage
-- have appropriate comments/documentation for functions, classes, etc.
-- have Storybook stories for new features
-- minimize complexity
-- include only the smallest changeset required for the feature or fix
+The [Component Library](https://github.com/department-of-veterans-affairs/component-library) is a monorepo that contains various Design System packages including a package for web components and Storybook.
+
+To begin local development, clone the Component Library repo and follow the steps in the readme file for [Running the Build via Storybook](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#running-build-via-storybook). After following each of these steps, a local instance of Storybook will load at `localhost:6006` where development can occur.
+
+Other important sections to review:
+
+- [Branch Naming](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#branch-naming)
+- [How to choose a version number](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#how-to-choose-a-version-number)
+- [Testing](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#testing)
+
+### Ways to contribute
+
+The two main ways for developers to contribute to the Design System are by modifying existing components (fixes, new features, enhancements) and contributing new components. 
+
+Regardless of which type of contribution you are making, each PR should:
+
+- Include or update tests where applicable
+- Have appropriate comments and documentation for functions, classes, logic, as well as descriptive pull requests
+- Have Storybook stories added or updated where applicable
+- Minimize complexity
+- Include only the smallest changeset required for the feature or fix
 
 ## Modifying existing components
 
-PRs which make a change to the Design System should be manageable in size (less than ~500 lines of code). This is to meant to:
+The Design System welcomes all pull requests that will help us improve the component library. This includes fixes for [existing issues](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues), issues that you've identified yourself, or enhancements. Thank you for your contribution!
+
+### General considerations
+
+PRs which make a change to the Design System should be manageable in size. This is meant to:
 
 - Save your time as the developer
 - Keep PRs tightly focused
-- Keep the review process short.
+- Keep the review process short
 
-## Writing CSS for the Design System
-
-When naming components, be sure to use Formation’s [naming conventions](naming).
-
-### Searchable selectors
-
-Many of the features in Sass make it easy to use shorthand to reduce repetitive typing and write cleaner .scss files. However, this makes using search features in GitHub or text editors much more difficult because it is not always clear how the shorthand was written; finding the right query requires guesswork.
-
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Do</h3>
-<div class="do-dont__content" markdown="1">
-Write out the full name of each selector.
-
-```css
-.alert {
-}
-
-.alert--warning {
-}
-
-.alert--error {
-}
-```
-</div>
-</div>
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Don’t</h3>
-<div class="do-dont__content" markdown="1">
-Don’t use Sass shorthand features, such as nesting with ampersands often used with BEM syntax.
-
-```scss
-.alert {
-  &--warning {
-  }
-  &--error {
-  }
-}
-```
-</div>
-</div>
-</div>
+Be sure to follow the steps outlined in the [Getting Started](/about/developers/contributing#getting-started) section above and submit your pull request when it's ready to be reviewed by the Design System Team engineers and designers. You can reach out to the #platform-design-system Slack channel with questions.
 
 ## Contributing new components
 
-This section details how to follow the experimental design process to contribute new components. If you haven't read it already, refer to the [contributing to the design system]({{ site.baseurl }}/about/contributing-to-the-design-system) page for more information about the full process.
+This section details how to contribute new components. If you haven't read it already, refer to the [contributing to the design system]({{ site.baseurl }}/about/contributing-to-the-design-system) page for more information about the full process. If you're unsure if you're ready to start creating a new component, make sure you've gone through the [experimental design process details]({{ site.baseurl }}/about/contributing-to-the-design-system) first. 
 
-### Writing experimental design code
+Reach out to the #platform-design-system Slack channel with questions.
 
-Each experimental design should:
+### General considerations
+
+Each component should:
 - Be absent of business logic and domain knowledge
 - Not import application code
 - Not introduce breaking changes
 
-Developing the experiment as if it were a standalone library will make the code more reusable and graduating the component or pattern into the official design system smoother.
+Developing the component as if it had no dependencies on anything within the vets-website will make the code more reusable.
 
-Each experimental design should [include a README](#readme) and be [owned by a team](#codeowners).
+### Creating a new component
 
-### Sharing experimental design code
+Each component is located in its own directory within the `web-components` package of the [`component-library`](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components/src/components)
 
-Sharing code between applications is necessarily more involved than writing code for a single application. To avoid the overhead that sharing code introduces (reporting development status, managing breaking changes, deprecating the code etc.), it's recommended to develop experimental designs in the application directory and not import it from another application.
+The library leverages [Stencil](https://stenciljs.com/docs/introduction) for generating web components which makes use of Typescript, JSX, and CSS. Stencil's documentation outlines and defines virtually everything you need to know to develop a Stencil generated web component, so be sure to rely on that as you work.
 
-If the time comes that another application needs to use the experiment, the rest of this section describes the process for how to share this code.
+To create a new component, run the Stencil interactive generator in the web-components package: 
 
-### Code location
+`yarn stencil generate va-new-component`
 
-Each experimental design is located in its own directory in [`vets-website`](https://github.com/department-of-veterans-affairs/vets-website/) at `src/experimental/` unless otherwise noted in its documentation on this site.
+The generator will create files for your component in the `packages/web-components/src/components/` director to include a `.jsx` entry file as well as a stylesheet and testing files for your component.
 
-**Example:**
-If your team needs an experimental button that's larger than the standard button, you would create `src/experimental/large-button/index.jsx` as the entry file for your "library."
+Additional Stencil documentation: [https://stenciljs.com/docs/cli#stencil-generate](https://stenciljs.com/docs/cli#stencil-generate)
 
-### README
+### Component front-matter
 
-Each experimental design should have a README that contains the following information:
-- Development status: `stable`, `unstable`, or `deprecated`
-     - The `unstable` status means the code is under active development and the public API may change without notice
-     - The `stable` status means the public API is finalized, but the code may still receive backward-compatible updates such as accessibility improvements and bug fixes
-     - The `deprecated` status means the code should no longer be used in applications
-          - This may be because of a breaking change (see [Breaking changes](#breaking-changes) below), official adoption into the design system, or research which indicates the experiment was unsuccessful
-          - See [Ending the experiment](#ending-the-experiment) below for instructions on what to do when deprecating code
-- API documentation (optional but encouraged)
+Near the top of your component, you will want to include the component front-matter content in order to aid the automatic documentation generator. Here is an example from the `va-banner` component:
 
-### Breaking changes
-"Breaking changes" is defined here In `semver` terms as a backwards incompatible change to the public API of your component or pattern. (See the [Semantic Versioning Specification](https://semver.org/#spec-item-8) for more details.)
-
-Once the code for an experimental design is stable, **breaking changes should not be introduced.** Other applications may depend on this code, but are unable to pin the version because it's not a "proper" library.
-
-If you need to introduce breaking changes, **do not modify the existing code.** Instead, copy the contents of the directory to a sibling directory post-fixed with a version number.
-
-**Example:**
-The `LargeButton` you created accepted `children`, but because of reasons, you need to limit the content of the button to only text. You've decided to remove the `children` prop and add a `label` prop instead which accepts only strings. To introduce this change, you would:
-1. Copy the contents of `src/experimental/large-button/` to `src/experimental/large-button-2`
-2. Update the status in `src/experimental/large-button/README` to `deprecated` and indicate why (because there's a new version)
-3. Make the breaking changes to `src/experimental/large-button-2`
-4. Change the import statements `'experimental/large-button-2'` in your application
-5. Update the [CODEOWNERS file](#codeowners) to add the new directory
-6. Make an announcement for anybody who may be using the deprecated code
-
-### CODEOWNERS
-Add your team's GitHub team name to the [CODEOWNERS file](https://github.com/department-of-veterans-affairs/vets-website/blob/master/.github/CODEOWNERS) to take ownership of the experiment's code. This will mean your team will be required reviewers on all changes to this code.
-
-### Test coverage
-As with all code, test coverage is critical. This is especially true with shared code. Aim for at least 90% unit test coverage before declaring an experiment to be `stable`.
-
-### Using shared experimental designs
-
-Before using an experimental design, first check the `src/experimental/` directory in `vets-website` to see if it's been shared yet. If not, work with the authoring team to move the code into `src/experimental/`. See [Sharing experimental design code](#sharing-experimental-design-code) above for more information.
-
-The babel module resolver plugin has the `root` set to `"./src"`, so you can import your experimental design with the following:
-
- ```js
-import LargeButton from '~/experimental/large-button';
+```javascript
+/**
+ * @componentName Banner
+ * @maturityCategory use
+ * @maturityLevel deployed
+ */
+@Component({
+  tag: 'va-banner',
+  styleUrl: 'va-banner.css',
+  shadow: true,
+})
 ```
 
-### Ending the experiment
-Experimental designs are meant to be short-lived. The experimental design code may no longer be needed because:
-- The design was approved for adoption into the design system
-- The design was rejected for adoption into the design system
-- A breaking change was introduced and a new version was created
+- `@componentName` should be the name of your component, minus the 'va-' prefix
+- `@maturityCategory` should be assigned based on the [maturity scale]({{ site.baseurl }}/about/maturity-scale) which for a new component should be `caution`
+- `@maturityLevel` should be assigned based on the [maturity scale]({{ site.baseurl }}/about/maturity-scale) which for a new component should be `candidate`
+- `tag` should be the 'custom element tag' that the component will use when inserted into a page
+- `styleUrl` should point to the file Stencil should use as this component's stylesheet
+- `shadow` should be `true`, as we make use of the shadow DOM to encapsulate all components and prevent arbitrary DOM and style changes
 
-When code is deprecated for any of these reasons, the goal is to delete the code. If there are no applications using the deprecated code, simply delete the directory.
+### Writing Style for your component
 
-If there are applications using the deprecated code:
-1. In the README: Mark the code as `deprecated`
-1. In the README: Clearly outline what engineers should do to stop using the experiment
-    - This may be something like "upgrade to `~/experimental/large-button-2`," "use `@department-of-veterans-affairs/component-library/LargeButton`," or "discontinue use; the experiment has been rejected"
-1. In Slack: Notify teams that the code has been deprecated, either via an announcement or reaching out directly to the teams using the experiment
-1. Check in weekly to see if there are still applications using the experiment; delete the directory when no applications are dependent on it
+Web component styles are scoped to the component's shadow dom which means that styles are encapsulated.
 
-It's the responsibility of the code owners to delete deprecated code when it's no longer in use.
+Design System web components will support either `.css` or `.scss` stylesheet types. The Stencil generator will automatically create the component's stylesheet as `.css` but in some cases it will be necessary or preferred to update the stylesheet extension to `.scss` which you are encouraged to do.
+
+It can be helpful to make use of the `:host` pseudo-class function when defining your styles. Read more about the [:host function](https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function) and review existing components for examples of where it may be appropriate to use in your stylesheet.
+
+### Test coverage
+
+As with all code, test coverage is critical. This is especially true with shared code. 
+
+All components are required to have end-to-end tests located in the `web-components/src/components/va-new-component/test/` folder having the `.e2e.ts` extension. Stencil E2E tests verify your components in a real browser using Puppeteer.
+
+Stencil provides many utility functions to help write e2e tests using Jest and Puppeteer. Review the Stencil documentation on [End-to-end Testing](https://stenciljs.com/docs/end-to-end-testing) for more information or review existing component tests for guidance.
+
+Unit testing is also encouraged where appropriate. The [va-telephone component unit tests](https://github.com/department-of-veterans-affairs/component-library/blob/main/packages/web-components/src/components/va-telephone/test/va-telephone.spec.tsx) can be used as an example.
+
+## Timeline to get a new component to prod
+
+1. [Experimental design ]({{ site.baseurl }}/about/contributing-to-the-design-system) is proposed and approved
+2. New component is created
+3. PR submitted, reviewed, revised, and approved
+4. New version of the component-library package is released
+5. PR to update the component-library package in vets-website is submitted, reviewed, and approved
+6. vets-website now has access to include the new component into apps

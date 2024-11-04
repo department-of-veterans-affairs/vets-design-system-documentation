@@ -50,7 +50,7 @@ Add links to images or Sketch for Teams files here. Please include mobile and de
 
 ## Accessibility notes
 
-How does an engineer build the pattern to meet WCAG 2.1 standards? What is the focus order of UI elements in your pattern? Include guidelines and code snippets here.
+How does an engineer build the pattern to meet WCAG 2.2 standards? What is the focus order of UI elements in your pattern? Include guidelines and code snippets here.
 
 ## Research
 

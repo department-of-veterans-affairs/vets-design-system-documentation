@@ -12,7 +12,7 @@ anchors:
 # Page templates
 
 <p class="va-introtext">
-  These are the most common layouts used on VA.gov. The templates on this page are not full-page layouts, as main header and footer are not currently part of Formation, but snippets here are for everything in between to help you establish for page grid.
+  These are the most common layouts used on VA.gov. The templates on this page are not full-page layouts, as the main header and footer are not currently part of the Design System, but snippets here are for everything in between to help you establish the page grid.
 </p>
 
 {% include _site-on-this-page.html %}

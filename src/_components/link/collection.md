@@ -5,7 +5,7 @@ permalink: /components/link/collection
 has-parent: /components/link/
 github-title: va-link-collection
 intro-text: "Collections of links that allow users to navigate to related content within and outside of the current content section."
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/2842568E-5650-4F60-BB25-15C03C4073B3
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10942&mode=design&t=nYOotVcwdpiMCL5C-1
 status: use-deployed
 anchors:
   - anchor: Examples

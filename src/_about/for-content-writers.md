@@ -16,7 +16,7 @@ anchors:
 
 We’ve also pulled out a few sections below that address common questions. Because this is a living document that will be updated and added to over time, we encourage you to sign up for email updates.
 
-We focus on usage, rather than web policies and governance. If you’re looking for VA web policies, VA Handbook 6102, and other web governance information for all VA digital experiences (including intranet, subdomains, and social media), please visit the [VA Web Governance site](<https://www.va.gov/web/index.cfm>).
+We focus on usage, rather than web policies and governance. If you’re looking for VA web policies, VA Handbook 6102, and other web governance information for all VA digital experiences (including intranet, subdomains, and social media), please visit the [VA Web Governance site](https://digital.va.gov/web-governance/).
 
 {% include _site-on-this-page.html %}
 
@@ -30,6 +30,12 @@ Use our in-house style for common words on VA.gov, so we can use words and label
 
 ### [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo)
 See basic SEO tips and best practices for making content findable in searches.
+
+## Get content guidance early from the CAIA team
+
+The Sitewide Content, Accessibility, and Information Architecture (CAIA) team can help you meet VA.gov’s content standards. Whether you’re starting a new product or refining an existing one, contact the CAIA team as early as possible to create accurate, consistent, accessible, and equitable content for Veterans.
+
+Submit a [Sitewide Content, Accessibility, and IA intake form ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?assignees=RLHecht%2C+coforma-terry%2C+kristinoletmuskat%2C+laurwill%2C+sara-amanda&labels=sitewide+CAIA%2C+sitewide+content-product+support%2C+Sitewide+IA%2C+sitewide+content%2C+sitewide+accessibility&projects=&template=sitewide-content-intake-form.md&title=%3CType+of+Request%3E+from+%3CTeam%3E) in GitHub to get started.
 
 ## Sign up for updates
 <form id="GD-snippet-form" action="https://public.govdelivery.com/accounts/USVADS/subscribers/qualify" accept-charset="UTF-8" method="post">

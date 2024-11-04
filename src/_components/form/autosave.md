@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Autosave
 intro-text: "Informs the user that we will, and have, automatically saved their progress in a form flow."
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9/p/DD364E2A-FF85-4009-BA2C-ACA9DA452F57/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A24511&mode=design&t=TiJHClaf3VQ6wU6B-1
 status: use-deployed
 anchors:
   - anchor: Examples
@@ -26,6 +26,10 @@ anchors:
 
 ## Usage
 
+<va-alert status="info" slim>
+  <p class="vads-u-margin-y--0">Testing has revealed issues with this component. See this <a href="https://github.com/department-of-veterans-affairs/VA.gov-team-forms/blob/main/Accessibility/save-in-progress.md">Usability Report</a> for more details.</p>
+</va-alert>
+
 ### When to use
 
 * **When saving form flow progress as a user completes an application.** This message provides confirmation to the user that their form progress is being saved as they progress through a form flow for an application. 
@@ -36,7 +40,7 @@ anchors:
 
 ### How this component works
 
-* **Use Alert - Background-only Success.** This component is an instance of the [Alert - Background-only with icon - Success]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component.
+* **Use Alert - Slim.** This component is an instance of the [Alert - Slim]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component in the success state.
 
 ### Placement
 

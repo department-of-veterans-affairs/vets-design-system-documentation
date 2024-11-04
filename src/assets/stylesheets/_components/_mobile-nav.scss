@@ -36,14 +36,14 @@
 
 .site-mobile-nav__close-button {
   background-color: transparent;
-  color: var(--color-base);
+  color: var(--vads-color-base);
   position: relative;
   left: 100%;
   transform: translateX(-100%);
   width: auto;
 
   .fa {
-    font-size: 1.8rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -52,6 +52,13 @@
 .site-mobile-nav__close-button:focus {
   background-color: transparent;
   color: $color-base;
+}
+
+.site-mobile-nav__link {
+  display: flex;
+  gap: $units-0p5;
+  padding: $units-2;
+  text-decoration: none;
 }
 
 .site-overlay {

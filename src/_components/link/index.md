@@ -4,7 +4,7 @@ permalink: /components/link/
 title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
 research-title: Links
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/D58429E9-064C-48EE-8681-0389401F887C
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
 status: use-deployed
 sub-pages:
   - sub-page: Action
@@ -24,27 +24,32 @@ anchors:
 ## Examples
 
 ### Default
+
 {% include storybook-preview.html story="components-va-link--default" link_text="va-link" height="75px" %}
+
+### Back
+
+{% include storybook-preview.html story="components-va-link--back" link_text="back va-link" height="50px" %}
 
 ### Active
 
-{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="50px" %}
 
 ### Calendar
 
-{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="50px" %}
 
 ### Channel
 
-{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="50px" %}
 
 ### Download
 
-{% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
 
 ### Video
 
-{% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="25px" %}
+{% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
 
 ## Usage
 
@@ -58,6 +63,16 @@ anchors:
 
 * **Collections, such as Hub pages.** Active links can be seen on [Hub pages]({{ site.baseurl }}/templates/hub#example)
 * **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. 
+
+### When to use a Back link
+* **As a replacement for breadcrumb** on:
+  * <strong>Conventional Multi-step Forms</strong> that also:
+    * Have a [minimal header]({{ site.baseurl }}/components/header/header-minimal) and [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
+    * Follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern
+    * Use the `H1` element to represent the headline for the current form page, rather than the step title in the step indicator
+    * Include only a `Continue` button and do not have a `Back` button after the form
+  * <strong>Short Forms</strong> that has a small amount of short, concise steps. For example, the [Pact Act Wizard](https://staging.va.gov/pact-act-eligibility/introduction).
+  * <strong>Non-Form Pages</strong> where the current page was accessed from a related page and does not have additional navigation. For example, an appointment details page.
 
 ### When to use a Calendar link
 * **Adding an event to a calendar.** Use when the link adds an event to a digital calendar.
@@ -93,22 +108,23 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ### Behavior
 
-- **Open in the same window except in certain instances.** Links should only open in a new tab if clicking the link will result in the user losing progress or data. Otherwise, links should open in the same window.
+* **Open all links in the same window except in certain instances.** Links on VA.gov should open in a new tab only if clicking the link will result in the user losing progress or data. This scenario should be avoided when possible. In all other instances, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide for additional information.
 - **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
 
 ### Choosing between variations
 
-Review ["Usage"](#usage) for guidance.
+Review "[Usage](#usage)" for guidance.
 
 ## Content considerations
 
-{% include content/links.md %}
+Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links).
 
 ## Accessibility considerations
 
-- **Material honesty**: Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
-- **Keyboard navigation**: The user must be able to navigate to links using the Tab key and activate links using the Enter key.
-- **Purpose and target**: Without a purpose and target, everyone-- but especially screen reader users-- will struggle to understand where they may be routed off to.
+- **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
+- **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
+- **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
+- **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
 
 {% include content/links-vs-buttons.md %}
 

@@ -1,0 +1,21 @@
+<dl class="vads-u-margin-bottom--5">
+  {% for item in include.tokens %}
+  <div class="vads-u-margin-y--2" style="display: grid; grid-gap: 0; grid-template-columns: minmax(200px, 35%) auto;">
+    <dt class="vads-u-padding-y--1 vads-u-padding-right--1 vads-u-font-weight--bold vads-u-border-top--1px vads-u-border-color--gray-light">
+      {{ item.vads-name}}
+    </dt>
+    <dd class="vads-u-padding-y--1 vads-u-border-top--1px vads-u-border-color--gray-light" style="grid-column: 2;">
+      {% if item.value-from-uswds-design-token %}
+        {{ item.value-from-uswds-design-token }}
+      {% elsif item.value-from-vads-alias %}
+        {{ item.value-from-vads-alias }}
+      {% else %}
+        {{ item.value }}
+      {% endif %}
+    </dd>
+    <dd style="grid-column: 2;">
+      {{ item.description }}
+    </dd>
+  </div>
+  {% endfor %}
+</dl>

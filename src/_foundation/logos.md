@@ -15,7 +15,9 @@ Custom logos for the following use cases are not supported on VA.gov:
 * Pages that list VA programs, such as a list of benefits
 * Benefit detail pages 
 * Within a software application, such as an application form or tool
-* Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events 
+* Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/downloads/VALogos.zip">Download hi-res logo artwork</a>
 
 ## Use the name in place of a logo
 
@@ -32,6 +34,8 @@ VA provides specific examples of how to execute a logo or word mark within VA br
 This is based on page 9 of the VA Graphic Standards, seen below:
 
 [<img src="/images/VA_508_GraphicStandardsGuide_013113-9.png">](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2)
+
+Logos can be accessed in our [{{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries).
 
 ### Veterans recognize VA
 

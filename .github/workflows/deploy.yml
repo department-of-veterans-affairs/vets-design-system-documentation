@@ -8,23 +8,23 @@ jobs:
   deploy:
     strategy:
       matrix:
-        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
+        environment: [{ bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - name: Use Node.js 14.x
+    - name: Use Node.js 16.x
       uses: actions/setup-node@v2
       with:
-        node-version: 14.x
-        cache: 'npm'
+        node-version: 16.x
+        cache: 'yarn'
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.7.5 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - run: npm install
-    - run: npm run-script build
+    - run: yarn install
+    - run: yarn run build
     - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ matrix.environment.config }}
     - name: Make BUILD.txt file
       # The -e flag enables the interpretation of the \n newline character
@@ -41,7 +41,7 @@ jobs:
       run: |
         find _site/ -type f ! -iname 'index.html' -iname '*.html' \
         -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
-    - uses: aws-actions/configure-aws-credentials@v1
+    - uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

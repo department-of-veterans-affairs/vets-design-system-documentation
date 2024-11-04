@@ -39,7 +39,16 @@
     </div>
     <div class="utility-value-color">
       <span class="utility-value-color__chip vads-u-background-color--{{ include.name }}"></span>
-      #{{ include.hex }}
+      {%
+        if include.hex
+      %}
+        #{{ include.hex }}
+      {% endif %}
+      {%
+        if include.token
+      %}
+        <script>document.write(getComputedStyle(document.body).getPropertyValue('{{ include.token }}'));</script>
+      {% endif %}
     </div>
   </div>
 </div>

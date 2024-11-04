@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Need help?
 intro-text: A footer found on application pages that provides contact information for the VA.
 research-title: Form controls
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/A0AFFFF0-CFBB-4E0E-992E-175AFBF7E7AD/canvas
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86293&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-with-caution-candidate
 web-component: va-need-help
 anchors:

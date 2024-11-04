@@ -13,6 +13,8 @@ anchors:
   - anchor: Notifications
   - anchor: Profile
   - anchor: Social
+  - anchor: developer.va.gov
+  - anchor: Requesting a new icon
   - anchor: Accessibility considerations
 ---
 
@@ -21,8 +23,12 @@ anchors:
 {% assign icons = site.data.icons %}
 
 <div class="va-introtext">
-  We leverage Font Awesome (v5.15.4) icons to communicate meaning, action, status, or feedback.
+  Use icons to communicate meaning, action, status, or feedback.
 </div>
+<p>
+  VADS icons are adapted from <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> and also
+  includes additional icons for VA-specific use cases.
+</p>
 
 {% include _site-on-this-page.html %}
 
@@ -32,8 +38,7 @@ anchors:
   <thead>
     <tr>
       <th scope="col">Icon</th>
-      <th scope="col">HTML</th>
-      <th scope="col">Unicode</th>
+      <th scope="col">Value</th>
       <th scope="col">Usage</th>
     </tr>
   </thead>
@@ -41,10 +46,9 @@ anchors:
   {% for icon in section[1] %}
     <tr>
       <th scope="row">
-        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
+        <va-icon icon="{{icon.icon-name}}" size=3 srtext="{{icon.name}}" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%} />
       </th>
-      <td><code>&lt;i class="{{ icon.fa-class }}">&lt;/i></code></td>
-      <td><code class='code-fa'>&amp;{{ icon.unicode }}</code></td>
+      <td>{{ icon.icon-name }}</td>
       <td>
         {% if icon.additional-usage %}
           {% assign usage = icon.name | append: ', ' | append: icon.additional-usage %}
@@ -59,44 +63,64 @@ anchors:
 </table>
 {% endfor %}
 
+<h2 id="requesting-a-new-icon">Requesting a new icon</h2>
+<p>
+  If your team needs a new icon and wants to suggest adding it to the design system, follow these steps:
+</p>
+
+<ol>
+  <li>
+    <strong>Check Existing VADS Icons</strong>:
+    Look through the current icon set to ensure a similar icon does not already exist. We aim to maintain consistency in
+    semantic use by avoiding duplicating similar icons.
+    </li>
+
+    <li>
+      <strong>Explore USWDS Icons</strong>:
+      Search
+      <a href="https://designsystem.digital.gov/components/icon/">USWDS Icon</a> to see if another existing icon suits your
+      needs. Preferably, choose generic icons that could be reused in various applications.
+
+      <p>If VADS and USWDS do not contain a suitable icon, you
+        may search <a href="https://fonts.google.com/icons">Material
+          Icons</a> or browse the official <a
+          href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a>
+        Figma
+        plugin by Google. Note that we typically use the "filled" icon style.</p>
+      </li>
+  <li>
+    <strong>Submit Your Icon</strong>:
+    Once you've found a suitable icon for VADS, submit it using the following link:
+    <p><a class="vads-c-action-link--blue" href="{{ site.request_addition_link }}">Request a new addition to the Design
+        System</a></p>
+  </li>
+</ol>
+
+<p>These steps should streamline the process for suggesting and adding new icons to the design system.</p>
+
 <h2 id="accessibility-considerations">Accessibility considerations</h2>
+<p>
+  Icon usage typically falls into two categories, decorative and semantic.
+</p>
 <ul>
-  <li>When using a decorative icon, it shouldn’t be read out to screen-reader users because it doesn’t add to their understanding. Icons should be accompanied with text.</li>
-  <li>All interactive accessible icons must be keyboard accessible and touch accessible as well as clickable via a mouse.</li>
+  <li><strong>Decorative icons</strong> are icons that are only used for visual reinforcement. If these were removed from the page, users would still be able to
+  understand and use the page.</li>
+  <li><strong>Semantic icons</strong> are icons that convey meaning, rather than only being decorative. This includes icons without text next to them that are
+  used as interactive elements such as buttons.</li>
 </ul>
 
-<h3 id="when-to-use-roleimg">When to use <code>role="img"</code></h3>
+<h3 id="decorative-icons">Using decorative icons</h3>
 <p>
-  If an icon is being used alone (without support text), it should have a `role="img"` AND appropriate ARIA markup OR screen reader only descriptive text.
+  If your icons are only decorative, _do not_ include <code>srtext</code> on the component. The component will add an <code>aria-hidden</code> attribute to the icon for accessibility.
 </p>
 
-<h3 id="when-to-use-rolepresentation">When to use</h3>
+<p>Icon buttons containing a decorative icon plus a visual label are supported with <a href="{{ site.baseurl }}/components/button-icon">Button - Icon</a>, but with limited options. Rather than supporting any text and icon combination, these will be added on a case-by-case basis. Generally, we feel that icons in buttons are not necessary.</p>
+
+<h3 id="semantic-icons">Using semantic icons</h3>
 <p>
-  If an icon is being used with visual (and assistive device) text, it should have `role="presentation"`.
+  We do not advise using icons as links or buttons on their own. Links and buttons should always have a visible label.
 </p>
 
-<h3 id="examples">Examples</h3>
 <p>
-  Here are a few examples of icons being used in different contexts:
+  Exceptions to this are a close button on a modal or an alert. However, it is advised to use the design system component for these scenarios, as they are coded with the proper accessibility attributes.
 </p>
-
-<h4 id="icon-being-used-alone">Icon being used alone</h4>
-
-<pre><code class="language-html">&lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} /&gt;</code></pre>
-
-<h4 id="icon-being-used-with-supporting-text">
-  Icon being used with supporting text
-</h4>
-
-<pre><code class="language-html">&lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} /&gt; Help </code></pre>
-
-<h4 id="icon-being-used-alone-inside-an-a-tag">Icon being used alone inside an <code>&lt;a&gt;</code> tag</h4>
-
-<pre><code class="language-html">&lt;a href="#"&gt; &lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'img'} ariaLabel={'Help'} /&gt; &lt;/a&gt;</code></pre>
-
-<h4 id="icon-being-used-with-supporting-text-inside-an-a-tag">
-  icon being used with supporting text inside an <code>&lt;a&gt;</code> tag
-</h4>
-
-<pre><code class="language-html">&lt;a href="#"&gt; &lt;IconHelp color={'#000000'} cssClass={'a-class'} id={'icon-help'} role={'presentation'} ariaLabel={'Help'} /&gt; Help &lt;/a&gt;</code></pre>
-

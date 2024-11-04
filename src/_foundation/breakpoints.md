@@ -17,13 +17,17 @@ anchors:
 
 ## Names and values
 
-There are six key breakpoints where the design of any page layout, utility, or component may change.
+<va-alert status="info" slim>
+  <p class="vads-u-margin-y--0">The VA Design System is currently transitioning to breakpoint names that more closely align with USWDS. The table below lists the original VADS breakpoint names and its new corresponding name.</p>
+</va-alert>
+
+These are the key breakpoints where the design of any page layout, utility, or component may change.
 
 {% include _breakpoint-names.html hide_link=true %}
 
 ### What if you need to create a different breakpoint?
 
-In some cases, you will need to have a breakpoint that is not included in Formation’s core set. This should only be done sparingly and only in cases where the design element reaches a stress point that cannot resolved through modifying the design. This breakpoint should be declared locally within a .scss partial and named to reflect the element it pertains.
+In some cases, you will need to have a breakpoint that is not included in the core set. This should only be done sparingly and only in cases where the design element reaches a stress point that cannot resolved through modifying the design. This breakpoint should be declared locally within a .scss partial and named to reflect the element it pertains.
 
 ```scss
 $nav-width: 702px;
@@ -39,7 +43,7 @@ $nav-width: 702px;
 
 ## Sass mixins
 
-Formation includes the `@media` mixin to make it easier for developers to create breakpoints in their styles.
+The CSS library includes the `@media` mixin to make it easier for developers to create breakpoints in their styles.
 
 ```scss
 @include media($medium-screen) {
@@ -50,7 +54,7 @@ Formation includes the `@media` mixin to make it easier for developers to create
 This is will compile to:
 
 ```scss
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   //Some styles
 }
 ```
@@ -72,5 +76,3 @@ You may place the `@media` mixin inside of a selector or places selectors inside
   }
 }
 ```
-
-

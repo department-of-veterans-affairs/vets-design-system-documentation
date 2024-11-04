@@ -52,7 +52,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
 
 **Armed Forces**
-: Capitalize.
+: Capitalize. The Armed Forces consist of 6 service branches: the Air Force, Army, Coast Guard, Marine Corps, Navy, and Space Force. Also refer to the "uniformed services" entry.
 
 **asbestos**
 : Define on first mention in body copy as "toxic fibers, once used in many buildings and products." Include the definition in another sentence, as a parenthetical, or set off with commas.
@@ -142,12 +142,21 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Comprehensive Assistance for Family Caregivers**
 : The proper program name is Program of Comprehensive Assistance for Family Caregivers. Don't make the name into an acronym.
 
+**condition vs. disability** 
+: In the context of service connection, we use "condition" to describe an illness or injury that affects your mind or body. We call a condition a "disability" after a Veteran has received a disability rating.
+
+: - Like this: If you have a condition connected to your service, you may be eligible for compensation.   
+: - Like this: If your service-connected disability has gotten worse, find out how to file a claim to increase your disability rating.
+
 **conditions**
 : Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 
 **contamination**
 : Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. 
 : - Exception: On the Camp Lejeune page, don't define this term.
+
+**contention**
+: Use "condition" or an alternate word or phrase instead, depending on context. Internally, "contention" refers to an issue connected with a claim. Typically this is a medical condition, but in some cases it could be for other things like claiming a dependent.
 
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
@@ -308,9 +317,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "having trouble paying for basic needs, like food and housing." Include definition in another sentence, as a parenthetical, or set off with commas.  
 
 **Fourth Mission**
-: Capitalize.  
+: Capitalize.
 
 ### G
+
+**gender diverse**
+: No hyphen.
 
 **GI**
 : No periods (*not* G.I.).
@@ -390,6 +402,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **input**
 : Use "record" instead.
 
+**intent to file** 
+: Lowercase in almost all cases unless referencing the full form name. Don’t use “ITF” or the phrase “file your intent to file.” 
+
+: - Like this: Fill out your intent to file form. 
+: - Like this: Submit your intent to file.
+
 **internet**
 : Lowercase, per AP Style.
 
@@ -449,6 +467,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **MISSION Act**
 : Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
+
+**mobile phone**
+: Use mobile phone when referencing a device for talking and texting, with or without internet connectivity. Don’t use cell phone or cellular phone. You can also use “mobile device” to reference tablets or mobile phones more generally. For related information, go to the entry for "smartphone."
 
 **Montgomery GI Bill Active Duty (MGIB-AD)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
@@ -527,6 +548,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **postservice**
 : No hyphen.
+
+**posttraumatic stress disorder**
+: No hyphen, per the National Center for PTSD. Go to entry for "PTSD."
 
 **Premium**
 : Capitalize when used in the context of account level (for example: DS Logon Premium account)
@@ -648,6 +672,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : -	Like this: Sign in to make an appointment.
 : - Not this: Sign on to make an appointment.
 
+**smartphone** 
+: Use smartphone when specifically referencing a mobile phone that connects to the internet. Like this: “At some VA health care facilities, you can now check in for appointments with your smartphone.” For related information, go to the entry for "mobile phone."
+
 **Social Security number**
 : Lowercase "number."
 
@@ -692,6 +719,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 
 ### U
+
+**uniformed services**
+: Uniformed services refers to the Armed Forces plus these 2 branches: the National Oceanic and Atmospheric Administration and the Public Health Service. Also refer to the "Armed Forces" entry.
 
 **U.S.**
 : Use periods.

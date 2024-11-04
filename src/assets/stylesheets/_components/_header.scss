@@ -1,6 +1,6 @@
 .site-header {
   color: #fff;
-  background-color: $color-primary-darkest;
+  background-color: $vads-color-primary-darker;
 }
 
 .site-header .site-l-wrapper {
@@ -26,12 +26,12 @@
 
 .usa-button.site-button-inverse {
   background-color: #ffffff;
-  color: $color-primary-darker;
+  color: $vads-color-primary-dark;
 
   &:active,
   &:hover {
     background-color: rgba(255,255,255,.8);
-    color: $color-primary-darker;
+    color: $vads-color-primary-dark;
   }
 }
 
@@ -47,13 +47,13 @@
 
 .site-header__logo-text {
   display: block;
-  font-size: 2.1rem;
+  font-size: 1.3125rem;
   font-weight: 300;
   font-style: normal;
   margin: $units-3 0;
 
   @include media($nav-width) {
-    font-size: 3.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -83,7 +83,7 @@
 
 .site-top-nav-wrapper {
   display: none;
-  background-color: $color-primary-darkest;
+  background-color: $vads-color-primary-darker;
 
   @include media($nav-width) {
     display: block;
@@ -104,7 +104,8 @@
   display: none;
 
   @include media($nav-width) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -120,8 +121,12 @@
   margin: 0;
 }
 
-.site-header__nav-item:first-child {
-  margin-left: $units-neg-3
+.site-header__nav-list:first-child {
+  margin-left: $units-neg-3;
+}
+
+.site-header__nav-list:last-child {
+  margin-right: $units-neg-3;
 }
 
 .site-header__nav-item__link,
@@ -141,4 +146,11 @@
 
 .site-header__nav-item__link.current {
   border-bottom: 4px solid $color-gold;
+}
+
+.site-header__nav-item__link.site-header__nav-item__link--icon {
+  align-items: center;
+  display: flex;
+  gap: $units-0p5;
+  white-space: nowrap;
 }

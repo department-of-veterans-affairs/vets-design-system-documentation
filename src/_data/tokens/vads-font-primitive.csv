@@ -1,0 +1,26 @@
+﻿Name,type,vads-name,value,uswds-design-token,value-from-uswds-design-token,description
+vads-font-family-sans-serif,Primitive,vads-font-family-sans-serif,"'Source Sans Pro', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif",,,Sans-serif font stack
+vads-font-family-serif,Primitive,vads-font-family-serif,"""Bitter"",""Georgia"",""Cambria"",""Times New Roman"",""Times"",serif",,,Serif font stack
+vads-font-line-height-1,Primitive,vads-font-line-height-1,,uswds-system-font-line-height-1,1,"From USWDS. Usage: buttons, navigation, and text not meant to break over a line"
+vads-font-line-height-2,Primitive,vads-font-line-height-2,,uswds-system-font-line-height-2,1.2,"From USWDS. Usage: headings, introductory (lead or dek) text, no more than 1-2 sentences"
+vads-font-line-height-3,Primitive,vads-font-line-height-3,,uswds-system-font-line-height-3,1.35,"From USWDS. Usage: short text (under 1 paragraph), captions, text with a very short or very long measure"
+vads-font-line-height-4,Primitive,vads-font-line-height-4,,uswds-system-font-line-height-4,1.5,"From USWDS. Usage: short (1-2 paragraphs) of running text, especially with a short measure"
+vads-font-line-height-5,Primitive,vads-font-line-height-5,,uswds-system-font-line-height-5,1.62,"From USWDS. Usage: a good choice for most reading text, especially text meant for extended reading"
+vads-font-line-height-6,Primitive,vads-font-line-height-6,,uswds-system-font-line-height-6,1.75,"From USWDS. Usage: shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes"
+vads-font-line-length-1,Primitive,vads-size-line-length-1,,uswds-system-font-line-length-1,44ex,From USWDS.
+vads-font-line-length-2,Primitive,vads-size-line-length-2,,uswds-system-font-line-length-2,60ex,From USWDS.
+vads-font-line-length-3,Primitive,vads-size-line-length-3,,uswds-system-font-line-length-3,64ex,From USWDS.
+vads-font-line-length-4,Primitive,vads-size-line-length-4,,uswds-system-font-line-length-4,68ex,From USWDS.
+vads-font-line-length-5,Primitive,vads-size-line-length-5,,uswds-system-font-line-length-5,72ex,From USWDS.
+vads-font-line-length-6,Primitive,vads-size-line-length-6,88ex,uswds-system-font-line-length-6,88ex,From USWDS.
+vads-font-line-length-none,Primitive,vads-size-line-length-none,,uswds-system-font-line-length-none,none,From USWDS.
+vads-font-size-2xl,Primitive,vads-font-size-2xl,,uswds-system-font-size-14,40px,
+vads-font-size-base,Primitive,vads-font-size-base,17px,uswds-system-font-size-6,17px,
+vads-font-size-lg,Primitive,vads-font-size-lg,,uswds-system-font-size-8,20px,
+vads-font-size-md,Primitive,vads-font-size-md,,uswds-system-font-size-6,17px,
+vads-font-size-sm,Primitive,vads-font-size-sm,,uswds-system-font-size-4,15px,
+vads-font-size-xl,Primitive,vads-font-size-xl,,uswds-system-font-size-12,32px,
+vads-font-style-italic,Primitive,vads-font-style-italic,italic,,,
+vads-font-style-normal,Primitive,vads-font-style-normal,normal,,,
+vads-font-weight-bold,Primitive,vads-font-weight-bold,bold,,,
+vads-font-weight-regular,Primitive,vads-font-weight-regular,regular,,,

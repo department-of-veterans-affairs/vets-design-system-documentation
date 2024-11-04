@@ -1,0 +1,18 @@
+﻿Name,type,vads-name,uswds-design-token,value-from-uswds-design-token,description
+vads-spacing-0,Primitive,vads-spacing-0,uswds-system-spacing-special-0,0,"VA treats 0 as part of the scale rather than ""special""."
+vads-spacing-0p5,Primitive,vads-spacing-0p5,uswds-system-spacing-05,4px,
+vads-spacing-0p25,Primitive,vads-spacing-0p25,uswds-system-spacing-2px,2px,
+vads-spacing-1,Primitive,vads-spacing-1,uswds-system-spacing-1,8px,
+vads-spacing-1p5,Primitive,vads-spacing-1p5,uswds-system-spacing-105,12px,
+vads-spacing-1px,Primitive,vads-spacing-1px,uswds-system-spacing-1px,1px,
+vads-spacing-2,Primitive,vads-spacing-2,uswds-system-spacing-2,16px,
+vads-spacing-2p5,Primitive,vads-spacing-2p5,uswds-system-spacing-205,20px,
+vads-spacing-3,Primitive,vads-spacing-3,uswds-system-spacing-3,24px,
+vads-spacing-4,Primitive,vads-spacing-4,uswds-system-spacing-4,32px,
+vads-spacing-5,Primitive,vads-spacing-5,uswds-system-spacing-5,40px,
+vads-spacing-6,Primitive,vads-spacing-6,uswds-system-spacing-6,48px,
+vads-spacing-7,Primitive,vads-spacing-7,uswds-system-spacing-7,56px,
+vads-spacing-8,Primitive,vads-spacing-8,uswds-system-spacing-8,64px,
+vads-spacing-9,Primitive,vads-spacing-9,uswds-system-spacing-9,72px,
+vads-spacing-10,Primitive,vads-spacing-10,uswds-system-spacing-10,80px,
+vads-spacing-15,Primitive,vads-spacing-15,uswds-system-spacing-15,120px,

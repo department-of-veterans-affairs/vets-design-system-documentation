@@ -4,6 +4,8 @@ permalink: /patterns/ask-users-for/pronouns
 sub-section: ask-users-for
 title: Pronouns
 intro-text: Follow this pattern to ask Veterans for their pronouns. 
+github-title: pattern-pronouns
+research-title: Ask users for pronouns
 status: use-deployed
 anchors:
   - anchor: Usage

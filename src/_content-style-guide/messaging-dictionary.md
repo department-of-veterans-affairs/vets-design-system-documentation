@@ -17,7 +17,7 @@ anchors:
 
 Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [content style guide]({{ site.baseurl }}/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### Scheduled downtime notice scenarios
 
@@ -42,7 +42,7 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 Nudges the user to enter or update data in the system. It can be initiated by either the system or another user.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [content style guide]({{ site.baseurl }}/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### Prompt to complete a task or enter data
 
@@ -55,7 +55,7 @@ Nudges the user to enter or update data in the system. It can be initiated by ei
 
 Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [content style guide]({{ site.baseurl }}/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### System downtime
 
@@ -74,7 +74,7 @@ Variations in messaging will be contingent on:
 | Application or page is not accessible, no timeframe | **[APPLICATION NAME] is down for maintenance** | We're making some updates to [APPLICATION NAME]. We're sorry it's not working right now. Please check back soon. | N/A | [Plain text](/design/typography) | N/A | Replace page below title |
 | Application or page is accessible (general message; specific iterations to be added later) | **Some parts of this may not be working** | You can still use [APPLICATION/PAGE NAME], but some parts of it may not work for you. If you're having trouble, please try again later. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Below page title |
 | Component is not accessible (general message; specific iterations to be added later) | **[COMPONENT NAME] isn't working right now** | We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")].  | Go back to previous page | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Replace affected component |
-| Component is accessible (general message; [see application/component specific messages](https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Products/Platform/Design%20System/Guidelines/Error%20handling/Dictionary/Access%20Messaging.md))| **Some information may not be up to date** | We're sorry. Something's not working quite right. You can still use [COMPONTENT NAME], but you may not be able to see all your updated information. If you're having trouble, please try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")]. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Above affected component |
+| Component is accessible (general message; [see application/component specific messages](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-system/guidelines/error-handling/Access%20Messaging.md))| **Some information may not be up to date** | We're sorry. Something's not working quite right. You can still use [COMPONTENT NAME], but you may not be able to see all your updated information. If you're having trouble, please try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")]. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Above affected component |
 | Unable to complete an automated task (e.g. save application in progress) | **We couldn't save your form** | We're sorry. Something went wrong when we tried to save your form. If you're on a secure and private computer, you can leave this page open and try saving your form again in a few minutes. If you're on a public computer, you can continue to fill out your form, but it won't automatically save as you fill it out. | N/A | [Alert box](/components/alert) | [Error alert](/components/alert#error-alert) | Below affected component |
 | Unable to complete a user-initiated task, can't proceed | **We've run into a problem** | We're sorry. Something went wrong on our end. Please try again. | N/A | [Alert box](/components/alert) | [Error alert](/components/alert#error-alert) | Above page title |
 | Unable to complete a user-initiated task, can still proceed | **We've run into a problem** | We're sorry. Something went wrong on our end. You can try again now, or move on to the next step and come back later to complete this. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Above page title |
@@ -110,7 +110,7 @@ Variations in messaging will be contingent on:
 
 The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging.
 
-***Note:** See [content style guide](/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+***Note:** See [content style guide]({{ site.baseurl }}/content-style-guide/messaging-error-messages#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
 
 ### Task completion success/failure
 

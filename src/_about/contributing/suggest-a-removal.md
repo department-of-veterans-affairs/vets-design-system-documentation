@@ -23,17 +23,16 @@ When we decide to remove a component, we take the following steps:
 
 ### Deprecation
 
-- In the codebase, move the component’s CSS into a `deprecating.scss` file (empty placeholder file still needs to be added to Formation)
-- Update the component-library version number to the next MINOR version.
-- On the component’s guidance page in design.va.gov mark the component as [deprecated]({{ site.baseurl }}/about/maturity-scale#dont-use-deprecated).
-- Add a note on the "What's new?" page indicating that the component is deprecated under the heading of the component-library version number mentioned above.
-- Archive the component in the Sketch pattern library and remove any symbols.
+* On the component’s guidance page in design.va.gov mark the component as [deprecated]({{ site.baseurl }}/about/maturity-scale#dont-use-deprecated).
+* Update the component-library version number to the next MINOR version.
+* Add a note on the "What's new?" page indicating that the component is deprecated under the heading of the component-library version number mentioned above.
+* Archive the component in the Figma component and example libraries.
 
 ### Removal
 
 After a **30 day** period the component can be removed entirely. To remove the component:
 
-- Delete the corresponding CSS selectors
-- Since this is a breaking change, update the component-library to the next MAJOR version
-- Remove the guidance page from design.va.gov
-- Add a note on the "What’s new?" page about the removal under the heading of the Formation version number mentioned above.
+* Delete the web-component.
+* Since this is a breaking change, update the component-library to the next MAJOR version
+* Remove the guidance page from design.va.gov
+* Add a note on the "What's new?" page about the removal under the heading of the version number mentioned above

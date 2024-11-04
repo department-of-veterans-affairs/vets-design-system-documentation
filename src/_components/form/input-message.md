@@ -41,8 +41,6 @@ anchors:
   - All field sets are interactive
   - Last fieldset demonstrates error state
 
-- [Design specs](https://www.sketch.com/s/afd69a1f-72d2-430b-9b62-285e9d3f479c/a/9P4QlQn)
-
 ## Usage
 
 ### When to use this variation

@@ -1,0 +1,7 @@
+{% if page.uswds-v3 %}
+    {% assign component = page.web-component %}
+    {% assign variation = page.uswds-v3 %}
+<a class="site-component-badge-link site-component-badge-link--uswds" href="{{ site.storybook_prod_uswds_path }}-{{ component }}--{{ variation }}">
+  <img src="{{ site.baseurl }}/assets/img/uswds-logo.svg" class="site-component-badge-link__img" width="16px" height="16px" /> USWDS v3
+</a>
+{% endif %}

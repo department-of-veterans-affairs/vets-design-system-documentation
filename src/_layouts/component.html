@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
 
   <body>
@@ -28,16 +27,19 @@
             {% endif %}
             {% include _site-section-name.html %}
           <h1 id="{{ page.title }}">{{ page.title }}</h1>
+            {% if page.aka %}
+          <p>Also known as: {{ page.aka }}</p>
+            {% endif %}
             {% if page.status %}
               {% include _status.html %}
             {% endif %}
-
             {% include _component-translations.html %}
+            {% include _component-uswds.html %}
 
             {% if page.intro-text %}
-            <div class="va-introtext" markdown="1">
-              {{ page.intro-text }}
-            </div>
+          <div class="va-introtext" markdown="1">
+            {{ page.intro-text }}
+          </div>
             {% endif %}
             {% include component-resource-links.html %}
             {% include component-contributors.html %}
@@ -46,6 +48,8 @@
             {% endif %}
           {% endunless %}
           {{ content }}
+
+          
         </main>
         {% include edit-on-github.html %}
         {% include timestamps.html %}
@@ -54,9 +58,5 @@
   </div>
 
   {% include footer.html %}
-  <script src="{{ site.baseurl }}/assets/javascripts/site.js"></script>
-  <script src="{{ site.baseurl }}/vendor/javascripts/formation.js"></script>
   </body>
 </html>
-
-

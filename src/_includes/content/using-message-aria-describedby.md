@@ -1,0 +1,5 @@
+### Using message-aria-describedby
+
+In HTML, the attribute `aria-describedby` accepts `id`s of the elements that describe an object. This is used to establish a relationship between an element and text elsewhere that describes it for screen readers.
+
+However, the VA.gov Design System uses web components and the shadow DOM, which prevents HTML's `aria-describedby` from being able to establish the relationship between elements. Because of that, the `message-aria-describedby` prop is used in our components instead. Instead of accepting `id`s, it accepts a message string to read out. This message is placed inside the shadow DOM, hidden visually, but made accessible to screen readers. This allows it to function similarly to `aria-describedby` and have the descriptive text read out when the element is focused.

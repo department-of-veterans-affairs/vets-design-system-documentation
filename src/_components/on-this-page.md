@@ -3,6 +3,7 @@ layout: component
 title: On this page
 intro-text: "The On this page jump links component summarizes the sections (&lt;h2&gt;s) at the top of long pages and allows users to jump down the page to the respective section."
 research-title: "On this page jump link"
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=35%3A165&mode=design&t=q1Wbhw4ZIogPDFEb-1
 status: use-best-practice
 web-component: va-on-this-page
 anchors:
@@ -35,4 +36,3 @@ anchors:
 - **The focus should be on the destination.** When a user clicks on an item on the On this page component, the focus should move to the heading that it links to.
 - **Allow enough spacing between components.** Space should be 1.5 rem (36px) from the bottom of the descender to the top of the ascender.
 - **On this page jump links should be contained in a navigation landmark** so it can be easily discovered by screen reader users.
-

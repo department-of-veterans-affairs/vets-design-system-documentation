@@ -25,7 +25,7 @@ Change the background color of an element
     {% for item in site.data.colors.primary %}
       {% include _background-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -35,7 +35,7 @@ Change the background color of an element
     {% for item in site.data.colors.grayscale %}
       {% include _background-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -45,7 +45,7 @@ Change the background color of an element
     {% for item in site.data.colors.tertiary %}
       {% include _background-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -55,7 +55,7 @@ Change the background color of an element
     {% for item in site.data.colors.hub %}
       {% include _background-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>

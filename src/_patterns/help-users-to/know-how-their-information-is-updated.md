@@ -31,9 +31,15 @@ anchors:
 
 * **Data that cannot be changed.** This pattern should not be used if the data cannot reliably be updated to reflect the user's intent. If most of the instances of user information can be updated with some exceptions then those exceptions may be called out to the user.
 
-## How to design and build 
+## How to design and build
 
 ### How this pattern works
+
+Currently, most forms simply pre-populate information from the VA.gov profile by putting the values from profile into editable form fields within the form pages. Then the following message is also displayed to inform users that some information has been pre-populated:
+
+{% include component-example.html alt="An information box in a form flow that tells the user that some information has been prefilled from their VA.gov profile." file="/images/patterns/help-users-to/know-how-their-information-is-updated/prefill-information.png" caption="Example of an informational message informing a user that information from their profile has been prefilled into the form below." class="x2" %}
+
+However, some forms show a set of data taken from VA.gov profile and display the information that will be used across steps within the form, thereby skipping those steps, while also providing the ability to edit that information, if necessary. This documentation details how to implement this version of the prefill pattern.
 
 #### Communicate information that is on file
 

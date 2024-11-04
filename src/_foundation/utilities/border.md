@@ -125,7 +125,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
     {% for item in site.data.colors.primary %}
       {% include border-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -135,7 +135,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
     {% for item in site.data.colors.grayscale %}
       {% include border-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -145,7 +145,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
     {% for item in site.data.colors.tertiary %}
       {% include border-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>
@@ -155,7 +155,7 @@ The border shorthand utility provides border widths for all sides, as well as `t
     {% for item in site.data.colors.hub %}
       {% include border-color-example.html
         name=item.name
-        hex=item.hex
+        token=item.token
       %}
     {% endfor %}
   </div>

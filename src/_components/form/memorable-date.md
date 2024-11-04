@@ -6,12 +6,12 @@ title: Memorable date
 research-title: Memorable Date
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-with-caution-available
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/p/F8230127-0500-4C1A-BBBB-821299A5BDFF/
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
+uswds-v3: default
 web-component: va-memorable-date
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: How to use
   - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Component checklist
@@ -21,50 +21,76 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--default" link_text="va-memorable-date" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--default" link_text="va-memorable-date" %}
+
+### Month select
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--with-month-select" link_text="va-memorable-date with month select" %}
 
 ### Extra hint text
 
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--extra-hint-text" link_text="va-memorable-date with extra hint text" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--extra-hint-text" link_text="va-memorable-date with extra hint text" %}
 
 ### Custom validation
 
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--custom-validation" link_text="va-memorable-date with custom validation" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--custom-validation" link_text="va-memorable-date with custom validation" %}
+
+### Forms pattern single default
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-single-without-month-dropdown" link_text="va-memorable-date forms pattern single default " %}
+
+### Forms pattern multiple
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-multiple" link_text="va-memorable-date forms pattern multiple" %}
 
 ### Error
 
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--error" link_text="va-memorable-date error" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--error" link_text="va-memorable-date error" %}
+
+### Error with month select
+
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--error-with-month-select" link_text="va-memorable-date error with month select" %}
+
+### Forms pattern single error
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-single-error" link_text="va-memorable-date forms pattern single error" %}
+
+### Forms pattern multiple error
+
+{% include storybook-preview.html height="300px" story="uswds-va-memorable-date--forms-pattern-multiple-error" link_text="va-memorable-date forms pattern multiple error" %}
 
 ### Internationalization
 
-{% include storybook-preview.html height="200px" story="components-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
+{% include storybook-preview.html height="200px" story="uswds-va-memorable-date--internationalization" link_text="va-memorable-date internationalization" %}
 
 ## Usage
 
-### When to use date inputs
-- Appropriate for most dates.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/memorable-date/">Refer to the U.S. Web Design System for usage guidance</a>
 
-### When to consider something else
+### Choosing between variations
 
-- Consider a date picker for scheduling. If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
+* Unlike the USWDS, the default component uses a text input instead of a select input for the month. This was done after user testing showed inconsistencies between field types led to [challenges for users of  assistive technology](https://github.com/uswds/uswds/issues/5945). Teams should note the maturity of this component and proceed with caution.
 
-**Note:** We do not currently have a calendar picker as part of the design system. For reference, visit the VA online scheduling tool (VAOS) to see an experimental version of a calendar picker. 
+### Errors
 
-### Usability Guidance
-- Label each field. Be sure each field is properly labeled — some countries enter dates in day, month, year order.
-- Avoid select elements. It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text boxes.
+* Refer to the specific error examples above.
 
-### How to use date inputs
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
+  View form error handling for additional guidance
+</a>
 
-- The year input is set to accept only a four-digit number while the month and day inputs can accept up to a two-digit number.
-- Always use back-end validation on dates for correctness.
+### Hint text
+
+* Refer to the [hint text example](#extra-hint-text) above.
+
+<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
+  View label hint text for additional guidance
+</a>
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
-- Follow input guidance. These text fields should follow the accessibility guidelines for all text inputs.
-- Don’t auto-advance focus. Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
-- Use “text” instead of “number” inputs. Research indicates that numeric inputs still carry many usability problems, according to the gov.uk Technology in Government blog.
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/memorable-date/#accessibility-memorable-date">Refer to the U.S. Web Design System for accessibility guidance</a>
 
 {% include _component-checklist.html component_name=page.web-component %}

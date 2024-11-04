@@ -1,0 +1,4 @@
+﻿Name,type,vads-name,value,vads-alias,value-from-vads-alias,description
+vads-shape-border-radius-control-large,Semantic,vads-shape-border-radius-control-large,8px,vads-spacing-1,uswds-system-spacing-1,Border radius for modals
+vads-shape-border-radius-control-medium,Semantic,vads-shape-border-radius-control-medium,4px,vads-spacing-0p5,uswds-system-spacing-05,Border radius for controls such as buttons and other interactive elements
+vads-shape-border-radius-control-small,Semantic,vads-shape-border-radius-control-small,2px,vads-spacing-0p25,uswds-system-spacing-2px,Border radius for controls such as checkboxes

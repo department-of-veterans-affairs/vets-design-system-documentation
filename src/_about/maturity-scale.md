@@ -67,7 +67,7 @@ The full maturity scale goes in this order:
 
 A team has filed a request for a component or pattern but it has not yet been reviewed by the Design System Team or Design System Council. You will not see this status in the system but it is included here to give a complete view of the lifecycle of a component.
 
-* The Github issue may link to supporting research, a Sketch (or other tool) mock-up, or a functional instance on VA.gov. 
+* The Github issue may link to supporting research, a Figma (or other tool) mock-up, or a functional instance on VA.gov. 
 
 <h3 id="use-with-caution-candidate" class="site-component-status-heading">
   <i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution-candidate"></i> 
@@ -94,7 +94,7 @@ The component or pattern is:
 * The team that proposed the component can now use it from the system.
 * There is some research that backs at least the default variation.
 
-By “complete” we mean that the documentation of the component or pattern is complete and in sync across the Design System (design.va.gov, Storybook, and Sketch library). 
+By “complete” we mean that the documentation of the component or pattern is complete and in sync across the Design System (design.va.gov, Storybook, and Figma library). 
 
 <h3 id="use-deployed" class="site-component-status-heading">
   <i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-deployed"></i> 

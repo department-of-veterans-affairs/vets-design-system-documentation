@@ -75,8 +75,8 @@
 
 .site-seach-container--mobile {
   display: none;
-  border-top: 1px solid $color-primary-darker;
-  background: $color-primary-darkest;
+  border-top: 1px solid $vads-color-primary-dark;
+  background: $vads-color-primary-darker;
   width: 100%;
   margin: -3px 0 -3px;
   padding: units(2);
@@ -108,7 +108,7 @@
   position: static;
   max-height: none;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.25rem;
   border: none;
   overflow: visible;
 
@@ -124,7 +124,7 @@
 
   .site-search-results__url {
     display: block;
-    font-size: 1.5rem;
+    font-size: 0.9375rem;
     color: $color-primary-alt-darkest;
   }
 }

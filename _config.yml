@@ -4,15 +4,19 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://design.va.gov" # Base hostname & protocol for the site
 
 project_name: VA.gov Design System
+design_library_name: "VADS Component Library"
+example_library_name: "VADS Example Library"
+resource_library_name: "VADS Templates, Patterns, and Forms"
 
 # Common links
-sketch_cloud_link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156
-sketch_templates_link: https://www.sketch.com/s/c8df169f-5b02-4999-befb-34c7b3b62ba9
-sketch_annotations_link: https://sketch.com/s/aaa5c25f-6991-4aac-a6ed-d378bdff7727
-sketch_github_link: https://github.com/department-of-veterans-affairs/vets.gov-team/blob/master/Work%20Practices/Design/Design%20Resources/Pattern%20Library/VA-gov-Pattern-Library.sketch
+figma_example_library: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=c29j3xBxzMAyLWxu-1 
+figma_component_library: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=121%3A1484&mode=design&t=ygQCLqlAL5VdSPil-1
+figma_templates_library: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A29744&mode=design&t=A89mK0w9KGp2uWIR-1
+figma_annotations_library: https://www.figma.com/file/CZcnWfQOwtLqPm4WA5paYG/VADS-Web-Annotation-Kit?type=design&node-id=415%3A1135&mode=design&t=V0V5YZrcbM7VnWa6-1
 
 forms_system_link: https://depo-platform-documentation.scrollhelp.site/developer-docs/VA-Forms-System-Overview.2085355587.html
 
+github_issues_templates: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose
 github_issues_link_1: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aopen+is%3Aissue+label%3Acomponent-new%2Cpattern-new
 github_issues_link_2: https://github.com/department-of-veterans-affairs/va.gov-team/issues?q=is%3Aopen+is%3Aissue+label%3Avsp-design-system-team+label%3Apattern-new
 github_issues_new: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=1_bug_template.md&title=
@@ -28,11 +32,12 @@ new_component_template_raw_link: https://raw.githubusercontent.com/department-of
 new_pattern_template_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md
 new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-veterans-affairs/vets-design-system-documentation/main/src/_patterns/template.md
 update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=2_documentation_request_form.yml
+uswds_link: https://designsystem.digital.gov/
 
 
 # People
 sketch_for_teams_admin: "Kevin Hoffman" 
-sketch_library_owner: "Natalie Hill"
+sketch_library_owner: "Lillian Boot, Barb Denney"
 experimental_reviewer_1: "Matthew Dingee"
 
 
@@ -88,4 +93,5 @@ exclude:
 
 # Default for building locally. 
 # See configuration files in jekyll-configs/ for environment overrides.
-storybook_path: "http://localhost:6006"
+storybook_path: "http://127.0.0.1:6006"
+storybook_prod_uswds_path: "https://design.va.gov/storybook/?path=/docs/uswds"

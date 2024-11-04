@@ -66,7 +66,7 @@ The featured content component is used to present the user with the most commonl
 </div>
 </div>
 
-[View the featured content component]({{ site.baseurl }}/components/featured-content)
+[View the Summary box component]({{ site.baseurl }}/components/summary-box)
 
 #### C. Additional eligibility information &amp; scenarios
 

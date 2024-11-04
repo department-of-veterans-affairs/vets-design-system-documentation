@@ -2,7 +2,7 @@
 name: "4. \U0001F64B Support question"
 about: If you need support using the Design System
 title: ''
-labels: 'vsp-design-system-team'
+labels: 'platform-design-system-team'
 
 ---
 
@@ -16,7 +16,7 @@ labels: 'vsp-design-system-team'
         Describe what you are stuck on, what you have tried and how you would like us to help.
 -->
 
-## What you have tried:
+## What you have tried
 
 <!--
        Describe in detail what you have tried and what you have found from any research you

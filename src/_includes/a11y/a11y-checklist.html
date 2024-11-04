@@ -1,0 +1,61 @@
+{% assign component-found = false %}
+
+{% for component in site.data.component-checklist.a11y.a11y-audit %}
+    {% if component["Name"] == include.name %}
+        {% assign component-found = true %}
+        {% assign row = site.data.component-checklist.a11y.a11y-audit[forloop.index0] %}
+
+        <p>
+            For more information on each category, see <a href="{{ site.baseurl }}/accessibility/accessibillity-testing-for-design-system-components">Accessibility testing for design system components</a>.
+        </p>
+
+        {% for name_value_pair in row %}
+            {% if name_value_pair[0] != "Name" %}
+                <dl class="site-component-checklist__list">
+                    <dt class="site-component-checklist__name">
+                        {%if name_value_pair[0] != "Last audit date" %}
+                            {% if name_value_pair[1] contains "Pass with exceptions" %}
+                                {% assign completed_items = completed_items | plus: 1 %}
+                                {% assign total_items = total_items | plus: 1 %}
+                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                            {% elsif name_value_pair[1] contains "Pass" %}
+                                {% assign completed_items = completed_items | plus: 1 %}
+                                {% assign total_items = total_items | plus: 1 %}           
+                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                            {% elsif name_value_pair[1] contains "Conditional" %}
+                                {% assign completed_items = completed_items | plus: 1 %}
+                                {% assign total_items = total_items | plus: 1 %}
+                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                            {% elsif name_value_pair[1] contains "Fail" %}
+                                {% assign total_items = total_items | plus: 1 %}
+                                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                            {% else %}
+                                {% assign total_items = total_items | plus: 1 %}
+                                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> 
+                            {% endif %}
+                        {% endif %}
+
+                        {{ name_value_pair[0] }}
+                    </dt>
+
+                    {% if name_value_pair[1] %}
+                        <dd>{{ name_value_pair[1] }}</dd>
+                    {% else %}
+                        <dd>This category has not been tested.</dd>
+                    {% endif %}
+
+                    {% if name_value_pair[1] contains "Conditional" %}
+                        <p>
+                            <u>Note:</u> <b>This category is dependent on how you use this component.</b> Test this for accessibility in your project.
+                        </p>
+                    {% endif %}
+                </dl>
+            {%endif%}
+        {% endfor %}
+    {% endif %}
+{% endfor %}
+
+
+{% if component-found == false %}
+    <p>While this component has been previously tested against older criteria, it has not yet been audited with the <a href="{{ site.baseurl }}/about/accessibility/accessibility-testing-for-design-system-components">updated testing criteria</a>.</p>
+{% endif %}

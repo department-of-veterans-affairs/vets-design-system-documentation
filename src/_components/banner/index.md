@@ -17,6 +17,8 @@ anchors:
 web-component: va-banner
 ---
 
+{% include _site-in-this-section.html %}
+
 ## Examples
 
 ### Default

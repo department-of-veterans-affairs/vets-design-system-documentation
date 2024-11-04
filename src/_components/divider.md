@@ -2,6 +2,7 @@
 layout: component
 title: Divider
 research-title: "Divider"
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=974%3A2775&mode=design&t=jMcVWkPlFhZu3RTh-1
 status: use-best-practice
 intro-text: "Dividers are used sparingly to separate significant sections of content"
 ---
@@ -10,7 +11,7 @@ intro-text: "Dividers are used sparingly to separate significant sections of con
 
 ### Stars
 
-{% include storybook-preview.html story="components-divider--default-story" %}
+{% include storybook-preview.html story="components-divider--default" %}
 
 ## Usage
 

@@ -5,9 +5,10 @@ redirect_from:
   - /components/privacy-agreement
 has-parent: /components/form/
 title: Privacy Agreement
-sketch-link: https://www.sketch.com/s/610156b6-f281-4497-81f3-64454fc72156/a/l13oDA7
+figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85151&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Used on the review step of a form flow to provide a link to the privacy policy content and provide a confirmation checkbox."
 status: use-deployed
+uswds-v3: default
 web-component: va-privacy-agreement
 anchors:
   - anchor: Examples
@@ -22,11 +23,11 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--default" link_text="va-privacy-agreement" %}
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--default" link_text="va-privacy-agreement default" %}
 
-### With Error
+### Error
 
-{% include storybook-preview.html height="100px" story="components-va-privacy-agreement--with-error" link_text="va-privacy-agreement" %}
+{% include storybook-preview.html height="100px" story="uswds-va-privacy-agreement--with-error" link_text="va-privacy-agreement error" %}
 
 ## Usage
 
@@ -34,7 +35,7 @@ anchors:
 
 **For all forms that collect Personally Identifiable Information (PII).** As stated in the [VA Privacy Policy](https://www.va.gov/privacy-policy/):
 
->  The VA.gov web pages that collect personal information will have a hyperlink to the Limited Privacy Policy that applies to that particular web page.
+> The VA.gov web pages that collect personal information will have a hyperlink to the Limited Privacy Policy that applies to that particular web page.
 
 This is a requirement of the Privacy Act of 1974.
 
@@ -54,7 +55,6 @@ This component appears at the bottom of a form, above the link to "Finish this a
 ### Instances of this component in production
 
 {% include component-example.html alt="An example of this component in use on VA.gov." file="/images/components/privacy-agreement/10-10EZ-privacy-agreement.png" caption="An example of this component in use on the 10-10EZ form on VA.gov" %}
-
 
 {% include component-docs.html component_name=page.web-component %}
 
