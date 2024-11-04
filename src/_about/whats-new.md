@@ -9,12 +9,7 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
-<va-alert
-  close-btn-aria-label="Close notification"
-  status="warning"
-  visible
-  uswds
->
+
   <h2 slot="headline">
     v1 components have now been deprecated
   </h2>
@@ -24,6 +19,45 @@ title: What’s new?
     </p>
   </div>
 </va-alert>
+
+## Fall 2024
+
+### New and updated components
+* va-process-list-item: Add text to describe status by @powellkerry in #1362
+* Add custom message to va-file-input and update message in va-file-input-multiple by @ataker in #1367
+* va-table: add sorting variation by @it-harrison in #1358
+* va-file-input: add support for read-only mode by @pennja in #1300
+* va-date: add prop to make month optional by @it-harrison in #1377
+
+### Bug fixes
+* va-modal: set box-sizing to border-box to prevent text overflow by @powellkerry in #1357
+* va-accordion: open accordion when media is print by @ataker in #1363
+* va-process-list: update status eyebrow text to uppercase by @powellkerry in #1365
+* va-process-list: change color variable from usa to vads by @powellkerry in #1368
+* va-table: show table header for non-stacked & stacked small screen by @harshil1793 in #1364
+* va-table: update va-table-inner to properly scope table header row to columns by @1Copenut in #1370
+* va-select: add import for focusable mixin by @powellkerry in #1376
+* va-modal: set overflow-wrap:anywhere on modal content by @powellkerry in #1372
+* focusable: add tabindex selector by @powellkerry in #1380
+
+### Other changes
+* CSS Library: replace FA icons for action link and alert classes by @jamigibbs in #1371
+* CSS Library: style and image path updates for alert and action link modules by @jamigibbs in #1378
+* CSS Library: remove the /alerts image path by @jamigibbs in #1381
+
+### Design and documentation updates
+* [Design] Table variations #3137 
+* [Design]Update Alert spacing in Figma #3231 
+* Update breadcrumb spacing in Page templates - Design #3049 
+* Update guidance for Keep a record of submitted information pattern #3054 
+* Add List guidance to VADS #3206 
+* Alerts - Sign in - Documentation 
+* Issue with downloading logos (PNG format) 
+* [Documentation] - Update va-link External link variation guidance #3224
+* [Documentation] - Multiple responses pattern and flow chart #3219
+* [Documentation] - Update guidance for select component - Documentation #3251
+* [Documentation]Guidance for international phone numbers #3316
+* [Documentation] Update gender pattern #3289 
 
 ## Summer 2024
 
