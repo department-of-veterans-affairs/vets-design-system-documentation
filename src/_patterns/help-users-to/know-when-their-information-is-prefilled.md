@@ -37,7 +37,7 @@ anchors:
 ### Anatomy or layout details
 This pattern involves these types of pages found in VA.gov forms:
 - **Introduction page**: The first page of a form. Introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. Changes slightly after a user signs in.
-- **Personal information page**: Usually the first page of a form after the user signs in. Has personal details that cannot be edited online, like name, date of birth, Social Security Number, etc.
+- **Personal information page**: Usually the first page of a form after the user signs in. Has personal details that cannot be edited online, like name, date of birth, Social Security number, etc.
 - **Prefill check page**: Any page of a form that displays prefilled information users can edit within the form.
 
 #### Introduction page
@@ -57,12 +57,12 @@ There are two states of an introduction page: Authenticated and Unauthenticated.
 
 #### Communicate when and why information will be prefilled
 This pattern communicates when and why information will be prefilled with:
-- **Unauthenticated intro page alert.**. This tells users they should expect prefilled information in a form after they sign in.
+- **Unauthenticated intro page alert.** This tells users they should expect prefilled information in a form after they sign in. The alert also encourages users to sign in to benefit from this time-saving feature.
 - **Authenticated intro page alert.** This alert tells users that some of their information may be prefilled for them because they are signed in.
 
 #### Communicate information that cannot be edited
 This pattern communicates information that cannot be edited with:
-- **Uneditable prefilled information displayed in a card.** Prefilled information (such as legal name, date of birth, and Social Security Number) is displayed in a card component.
+- **Uneditable prefilled information displayed in a card.** Prefilled information (such as legal name, date of birth, and Social Security number) is displayed in a card component.
 - **Directions for updating uneditable information.** Helper text is added under the card that has the bolded word "note" and directions to update this information offline. For additional guidance on helping users update prefilled information, see the ["Help users to... Know how their information is updated"](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) pattern which will be updated soon.
 
 #### Communicate information that can be edited
@@ -74,10 +74,6 @@ This pattern communicates information that can be edited with:
 - [Alert](https://design.va.gov/components/alert/)
 - [Card](https://design.va.gov/components/card)
 
-
-### Page templates available for this pattern
-
-List of links to page templates or layouts used to build any pages for this pattern.
 
 ## Examples
 
