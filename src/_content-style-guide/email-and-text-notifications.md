@@ -16,7 +16,7 @@ anchors:
 * For some types of emails, VA Notify has sample templates with plain language content that's ready to use. You'll just need to fill in any manual variables and adjust other content as needed. This includes the emails in the form submission status pattern. [Review the form submission status pattern](https://design.va.gov/patterns/help-users-to/stay-informed-of-their-application-status) 
 
 ### Protect Veterans' personal information
-* Always get approval of new or updated notifications from a VA privacy officer. 
+* Always get approval for new or updated notifications from a VA privacy officer. 
 [Find your product's privacy officer (link only works on VA network)](https://dvagov.sharepoint.com/sites/OITPrivacyHub/SitePages/Privacy-Officer-Locator-Resources.aspx)
 * Email and text notifications are not secure, so we can’t include Veterans’ personally identifiable information (PII) or protected health information (PHI).
 * Privacy officers may allow exceptions to the PII/PHI rule when a Veteran opts in to receive PII/PHI in their notifications. But you must work closely with the privacy office and get specific approval for any notifications that include PII/PHI.
