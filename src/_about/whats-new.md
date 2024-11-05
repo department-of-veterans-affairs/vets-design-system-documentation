@@ -11,26 +11,44 @@ title: What’s new?
 
 ## Fall 2024
 
-The team has nearly completed moving us to USWDS v3 iconography and is now focused on finally deprecating Formation.
-
 ### New and updated components
-
-* [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in/) - New content component.
-* [Process list item]({{ site.baseurl }}/components/process-list#status) - Adds a status eyebrow to the component.
-* [Table]({{ site.baseurl }}/components/table#sortable) - Adds a sortable variation.
-* [Select]({{ site.baseurl }}/components/form/select) - Adds support for optgroup.
-
-<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/component-library/releases">Component Library releases</a>
-
-### New and updated guidance
-
-* [Help users to stay informed of their form submission status]({{ site.baseurl }}/patterns/help-users-to/stay-informed-of-their-application-status)
-* [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information)
-* [Help users to sign in](https://design.va.gov/patterns/help-users-to/sign-in)
+* va-process-list-item: Add text to describe status by @powellkerry in #1362
+* Add custom message to va-file-input and update message in va-file-input-multiple by @ataker in #1367
+* va-table: add sorting variation by @it-harrison in #1358
+* va-file-input: add support for read-only mode by @pennja in #1300
+* va-date: add prop to make month optional by @it-harrison in #1377
 
 ### Bug fixes
+* va-modal: set box-sizing to border-box to prevent text overflow by @powellkerry in #1357
+* va-accordion: open accordion when media is print by @ataker in #1363
+* va-process-list: update status eyebrow text to uppercase by @powellkerry in #1365
+* va-process-list: change color variable from usa to vads by @powellkerry in #1368
+* va-table: show table header for non-stacked & stacked small screen by @harshil1793 in #1364
+* va-table: update va-table-inner to properly scope table header row to columns by @1Copenut in #1370
+* va-select: add import for focusable mixin by @powellkerry in #1376
+* va-modal: set overflow-wrap:anywhere on modal content by @powellkerry in #1372
+* focusable: add tabindex selector by @powellkerry in #1380
 
-[Issues closed this Fall](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2024-09-01..2024-12-31+) (158)
+### Other changes
+* CSS Library: replace FA icons for action link and alert classes by @jamigibbs in #1371
+* CSS Library: style and image path updates for alert and action link modules by @jamigibbs in #1378
+* CSS Library: remove the /alerts image path by @jamigibbs in #1381
+
+### Design updates
+* [Design] Table variations #3137 
+* [Design]Update Alert spacing in Figma #3231 
+* Update breadcrumb spacing in Page templates - Design #3049 
+
+### Documentation updates  
+* Update guidance for Keep a record of submitted information pattern #3054 
+* Add List guidance to VADS #3206 
+* Alerts - Sign in - Documentation 
+* Issue with downloading logos (PNG format)
+* Update va-link External link variation guidance #3224
+* Multiple responses pattern and flow chart #3219
+* Update guidance for select component - Documentation #3251
+* Guidance for international phone numbers #3316
+* Update gender pattern #3289 
 
 ## Summer 2024
 
