@@ -17,7 +17,7 @@ anchors:
 
 ### Protect Veterans' personal information
 * Always get approval of new or updated notifications from a VA privacy officer. 
-[Find your product's privacy officer (link only works on VA network)](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3406/files#diff-989f423e8013e63dd7c10f19aa0b5c8138e5eb14d00a05b7acba8453d80a457a)
+[Find your product's privacy officer (link only works on VA network)](https://dvagov.sharepoint.com/sites/OITPrivacyHub/SitePages/Privacy-Officer-Locator-Resources.aspx)
 * Email and text notifications are not secure, so we can’t include Veterans’ personally identifiable information (PII) or protected health information (PHI).
 * Privacy officers may allow exceptions to the PII/PHI rule when a Veteran opts in to receive PII/PHI in their notifications. But you must work closely with the privacy office and get specific approval for any notifications that include PII/PHI.
 
