@@ -8,12 +8,6 @@ title: What’s new?
 <div class="va-introtext">
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
-<va-alert
-  close-btn-aria-label="Close notification"
-  status="warning"
-  visible
-  uswds
->
 
   <h2 slot="headline">
     v1 components have now been deprecated
