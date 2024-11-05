@@ -8,7 +8,12 @@ title: What’s new?
 <div class="va-introtext">
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
-
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+  uswds
+>
 
   <h2 slot="headline">
     v1 components have now been deprecated
@@ -45,19 +50,21 @@ title: What’s new?
 * CSS Library: style and image path updates for alert and action link modules by @jamigibbs in #1378
 * CSS Library: remove the /alerts image path by @jamigibbs in #1381
 
-### Design and documentation updates
+### Design updates
 * [Design] Table variations #3137 
 * [Design]Update Alert spacing in Figma #3231 
 * Update breadcrumb spacing in Page templates - Design #3049 
+
+### Documentation updates  
 * Update guidance for Keep a record of submitted information pattern #3054 
 * Add List guidance to VADS #3206 
 * Alerts - Sign in - Documentation 
-* Issue with downloading logos (PNG format) 
-* [Documentation] - Update va-link External link variation guidance #3224
-* [Documentation] - Multiple responses pattern and flow chart #3219
-* [Documentation] - Update guidance for select component - Documentation #3251
-* [Documentation]Guidance for international phone numbers #3316
-* [Documentation] Update gender pattern #3289 
+* Issue with downloading logos (PNG format)
+* Update va-link External link variation guidance #3224
+* Multiple responses pattern and flow chart #3219
+* Update guidance for select component - Documentation #3251
+* Guidance for international phone numbers #3316
+* Update gender pattern #3289 
 
 ## Summer 2024
 
