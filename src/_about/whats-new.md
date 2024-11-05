@@ -9,21 +9,28 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
-<va-alert
-  close-btn-aria-label="Close notification"
-  status="warning"
-  visible
-  uswds
->
-  <h2 slot="headline">
-    v1 components have now been deprecated
-  </h2>
-  <div>
-    <p className="vads-u-margin-y--0">
-      If your team is still using a v1 component, instances will be flagged in the Collab Cycle and may be considered launch blocking. <a href="{{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration">Learn how to migrate a component</a>.
-    </p>
-  </div>
-</va-alert>
+## Fall 2024
+
+The team has nearly completed moving us to USWDS v3 iconography and is now focused on finally deprecating Formation.
+
+### New and updated components
+
+* [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in/) - New content component.
+* [Process list item]({{ site.baseurl }}/components/process-list#status) - Adds a status eyebrow to the component.
+* [Table]({{ site.baseurl }}/components/table#sortable) - Adds a sortable variation.
+* [Select]({{ site.baseurl }}/components/form/select) - Adds support for optgroup.
+
+<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/component-library/releases">Component Library releases</a>
+
+### New and updated guidance
+
+* [Help users to stay informed of their form submission status]({{ site.baseurl }}/patterns/help-users-to/stay-informed-of-their-application-status)
+* [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information)
+* [Help users to sign in](https://design.va.gov/patterns/help-users-to/sign-in)
+
+### Bug fixes
+
+[Issues closed this Fall](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2024-09-01..2024-12-31+) (158)
 
 ## Summer 2024
 
@@ -48,7 +55,7 @@ The team synced up typography with USWDS v3 and continues to focus on syncing up
 
 ### Bug fixes
 
-[Issues closed this summer](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2024-06-01..2024-08-30+)
+[Issues closed this Summer](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2024-06-01..2024-08-30+) (206)
 
 ## Spring 2024
 
