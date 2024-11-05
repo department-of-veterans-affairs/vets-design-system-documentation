@@ -9,7 +9,7 @@ anchors:
 
 ## General guidance for email and text notifications
 
-**Note:** This notifications guidance applies to emails and texts we send to Veterans related to interactions they have with VA—like reminders or updates related to their submitted online forms, disability claims, and health appointments. We're adding more guidance for notifications soon. This guidance may not always apply to outreach emails and texts that we send for awareness and education about VA benefits and services. 
+**Note:** This notifications guidance applies to emails and texts we send to Veterans related to interactions they have with VA—like reminders or updates related to their submitted online forms, disability claims, and health appointments. We're adding more guidance for notifications soon. This guidance does not apply to outreach emails and texts that VA communications teams send for awareness and education about VA benefits and services.
 
 ### Follow our content style guide and existing patterns
 * Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. [Review our top 10 plain language standards](https://design.va.gov/content-style-guide/plain-language/#top-10-va-plain-language-standards)
