@@ -1,7 +1,6 @@
 ---
 layout: pattern
 title: Know when their information is prefilled
-draft: true
 permalink: /patterns/help-users-to/know-when-their-information-is-prefilled
 sub-section: help-users-to
 intro-text: Follow this pattern to help users know when their information will be prefilled for them in an application.
