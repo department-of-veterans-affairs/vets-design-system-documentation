@@ -41,7 +41,7 @@ Example: You apply for a disability rating. After you get your rating, you file 
 : - Note: File input screens in form flows should use "document" in the screen header. For example, "Upload your supporting documents."
 
 **evidence**
-: We use evidence to refer to all documents and information you submit to support your claim or application. We define evidence as “supporting documents or information.” A document or information becomes evidence when it gets attached to claim or application.
+: We use evidence to refer to all documents and information you submit to support your claim or application. We define evidence as “supporting documents or information.” Supporting documents and other information become evidence when they get attached to a claim or application.
 
 ## Resources
 
