@@ -28,6 +28,13 @@ Not this: "Thank you for submitting your application on VA.gov"
 
 Example: You apply for a disability rating. After you get your rating, you file a claim for your compensation.
 
+**claimant** 
+: We sometimes use this term to refer to the person with the claim, especially if the person is not a Veteran. Or if they are not the person submitting the form (for example: "I'm signing for the claimant"). Always define the term on the first instance as "person with the claim." When possible, use specific plain language instead of "claimant," like "Veteran's spouse" or "Veteran's child." 
+
+Example
+Like this: "I'm the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
+Not this: "I'm a non-Veteran claimant."
+
 **claim exam**
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
 : - Note: This term is evolving. For now, on first mention on a page, use “VA claim exam (also known as a compensation and pension, or C&P, exam).” After first mention, use “VA claim exam” or “claim exam.”
