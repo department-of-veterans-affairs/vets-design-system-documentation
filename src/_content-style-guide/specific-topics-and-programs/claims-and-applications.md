@@ -50,6 +50,11 @@ Not this: "I'm a non-Veteran claimant."
 **evidence**
 : We use evidence to refer to all documents and information you submit to support your claim or application. We define evidence as “supporting documents or information.” Supporting documents and other information become evidence when they get attached to a claim or application.
 
+**sponsor** 
+: We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It's OK to use the word sponsor but lead with the plain language definition. 
+
+Example: the Veteran you're connected to (called your "sponsor")
+
 ## Resources
 
 - [Check your VA claim, decision review, or appeal status](https://www.va.gov/claim-or-appeal-status/)
