@@ -9,16 +9,6 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
-  <h2 slot="headline">
-    v1 components have now been deprecated
-  </h2>
-  <div>
-    <p className="vads-u-margin-y--0">
-      If your team is still using a v1 component, instances will be flagged in the Collab Cycle and may be considered launch blocking. <a href="{{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration">Learn how to migrate a component</a>.
-    </p>
-  </div>
-</va-alert>
-
 ## Fall 2024
 
 ### New and updated components
