@@ -31,7 +31,6 @@ Example: You apply for a disability rating. After you get your rating, you file 
 **claimant** 
 : We sometimes use this term to refer to the person with the claim, especially if the person is not a Veteran. Or if they are not the person submitting the form (for example: "I'm signing for the claimant"). Always define the term on the first instance as "person with the claim." When possible, use specific plain language instead of "claimant," like "Veteran's spouse" or "Veteran's child." 
 
-Example
 Like this: "I'm the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
 Not this: "I'm a non-Veteran claimant."
 
