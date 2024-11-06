@@ -20,7 +20,7 @@ Governance team references these standards when we review products during the Co
 
 ## List of Experience Standards
 
-There are 22 experience standards grouped into 7 user experience categories.
+There are 23 experience standards grouped into 7 user experience categories.
 
 ### Category: Comprehension
 
@@ -117,6 +117,12 @@ GitHub label: [exp-std-voice-tone](https://github.com/department-of-veterans-aff
 **There’s an issue when:** User can't review, edit, or confirm their information before form submission.
 
 GitHub label: [exp-std-form-integrity](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-form-integrity)
+
+#### User receives appropriate notification from the VA or VA.gov about the status of their request
+
+**There's an issue when:** User does not receive appropriate notification from the VA or VA.gov about the status of their request.
+
+GitHub label: [exp-std-submission-status](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-submission-status)
 
 ### Category: Efficiency
 
