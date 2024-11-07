@@ -34,6 +34,10 @@ anchors:
 
 {% include storybook-preview.html height="410px" story="uswds-va-table--with-pagination" link_text="va-table with pagination" %}
 
+### Sortable
+
+{% include storybook-preview.html height="410px" story="uswds-va-table--sortable" link_text="Sortable va-table" %}
+
 ## Examples - v1
 
 ### Responsive stacked table (v1 Default)
