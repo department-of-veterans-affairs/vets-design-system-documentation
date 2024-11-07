@@ -16,7 +16,9 @@ anchors:
 - In reusable content that appears in many types of applications, requests, and static pages (like an alert), use the general term "form" instead of "claim," "application," or "request" to avoid confusion.  
 Like this: "Thank you for submitting your form on VA.gov"  
 Not this: "Thank you for submitting your application on VA.gov"
-- Existing pages on VA.gov may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the content and information architecture (CAIA) team. 
+- Updated standards can take time to implement across all content on VA.gov pages and interactive forms and tools. Existing content on VA.gov, including the claims status tool, may not always reflect the latest decisions documented here. If you have questions about any content, feel free to ask the content and information architecture (CAIA) team.
+
+**Note:** We're working on style guidance for additional types of VA forms and for how to refer to different people involved in submitting forms, like third-party representatives. Check back soon.
 
 ## Related terms
 
@@ -25,8 +27,6 @@ Not this: "Thank you for submitting your application on VA.gov"
 
 **claim** (noun) and **file a claim** (verb)
 : In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim or a life insurance claim. We use this term to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation.
-
-Example: You apply for a disability rating. After you get your rating, you file a claim for your compensation.
 
 **claimant** and **applicant**
 : We sometimes use this term to refer to the person with the claim or the person applying for the benefit—especially if the person is not a Veteran, or if they are not the person submitting the form (for example: "I'm signing for the claimant"). Always define the term on the first instance as "person with the claim" or "person applying for this benefit." When possible, use specific plain language instead, like "Veteran's spouse" or "Veteran's child." 
