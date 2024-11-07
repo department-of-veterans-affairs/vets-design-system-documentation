@@ -15,6 +15,17 @@ anchors:
   - anchor: Content considerations
 ---
 
+<va-alert
+  status="warning"
+  slim
+>
+    <div class="vads-u-margin-y--0">
+    <p class="vads-u-margin-y--0">
+      We may be replacing this page soon. <va-link href="/patterns/help-users-to/know-when-their-information-is-prefilled" text="See the new prefill pattern page for up-to-date guidance." ></va-link>
+    </p>
+    </div>
+</va-alert>
+
 ## Examples
 
 ### Intro
@@ -23,7 +34,7 @@ anchors:
   {% include_relative html/prefill-intro.html %}
 </div>
 
-### Step 
+### Step
 
 <div class="site-showcase">
   {% include_relative html/prefill-step.html %}
@@ -42,7 +53,7 @@ anchors:
 ### How this component works
 
 * **Intro variation uses Alert - Informational.** The Intro variation of this component is an instance of the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component, but without a header.
-* **Step variation uses Alert - Background-only Informational.** The Step variations of this component is an instance of the [Alert - Background-only with icon - Informational]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component. 
+* **Step variation uses Alert - Background-only Informational.** The Step variations of this component is an instance of the [Alert - Background-only with icon - Informational]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component.
 
 ### Placement
 

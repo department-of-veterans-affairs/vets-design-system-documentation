@@ -128,7 +128,7 @@ All text styles should be pulled from the VADS Figma file. 
 
 ### Iconography
 
-* **Only use icons from the VA Design System.** Currently, these are [Font Awesome version 5.15.4 icons]({{ site.baseurl }}/foundation/icons) however, we are moving to the [USWDS icon set](https://designsystem.digital.gov/components/icon/). Some USWDS v3-based components are already using USWDS icons.
+* **Only use icons from the VA Design System.** [Our icons](https://design.va.gov/foundation/icons) are a subset of [USWDS icons](https://designsystem.digital.gov/components/icon/). We aim to maintain consistency in semantic use by avoiding duplicating similar icons. If you have a need for an icon that doesn't exist in our set, you may [request a new icon](https://design.va.gov/foundation/icons#requesting-a-new-icon) to be added. 
 
 ## Quality assurance
 

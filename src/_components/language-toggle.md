@@ -4,6 +4,7 @@ title: Language toggle
 intro-text: "The language toggle is our way of providing translated versions of select pages on va.gov."
 github-title: va-language-toggle
 research-title: va-language-toggle
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=10077-912&t=hljp6A4V60A0rDms-1
 status: use-with-caution-available
 anchors:
   - anchor: Examples
