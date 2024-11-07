@@ -12,7 +12,7 @@ anchors:
 
 ## Considerations
 
-- We use the terms "claim," "application," and "request" throughout VA.gov intentionally, and they often aren't interchangeable.  
+- We use the terms "claim" and "application" intentionally, and they often aren't interchangeable. We also use other related terms like "request" and "authorization" to refer to other types of VA forms.
 - In reusable content that appears in many types of applications, requests, and static pages (like an alert), use the general term "form" instead of "claim," "application," or "request" to avoid confusion.  
 Like this: "Thank you for submitting your form on VA.gov"  
 Not this: "Thank you for submitting your application on VA.gov"
@@ -20,16 +20,16 @@ Not this: "Thank you for submitting your application on VA.gov"
 
 ## Related terms
 
-**apply**
+**application** (noun) and **apply** (verb)
 : We use this term in the context of someone submitting an initial application for benefits. In general, a Veteran will "apply" for any non-disability benefit (including pension and DIC benefits) and "file a claim" for disability.
 
-**claim**
+**claim** (noun) and **file a claim** (verb)
 : In most cases we use this term in the context of someone filing a disability claim. We also use this term in the context of reimbursement and after someone applies for a benefit and has been judged eligible. For example, a Veteran may file a travel reimbursement claim or a life insurance claim. We use this term to reflect that Veterans who are filing for disability-or filing a claim for reimbursement-have a right to that compensation.
 
 Example: You apply for a disability rating. After you get your rating, you file a claim for your compensation.
 
-**claimant** 
-: We sometimes use this term to refer to the person with the claim, especially if the person is not a Veteran. Or if they are not the person submitting the form (for example: "I'm signing for the claimant"). Always define the term on the first instance as "person with the claim." When possible, use specific plain language instead of "claimant," like "Veteran's spouse" or "Veteran's child." 
+**claimant** and **applicant**
+: We sometimes use this term to refer to the person with the claim or the person applying for the benefit—especially if the person is not a Veteran, or if they are not the person submitting the form (for example: "I'm signing for the claimant"). Always define the term on the first instance as "person with the claim" or "person applying for this benefit." When possible, use specific plain language instead, like "Veteran's spouse" or "Veteran's child." 
 
 Like this: "I'm the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
 Not this: "I'm a non-Veteran claimant."
@@ -38,7 +38,7 @@ Not this: "I'm a non-Veteran claimant."
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
 : - Note: This term is evolving. For now, on first mention on a page, use “VA claim exam (also known as a compensation and pension, or C&P, exam).” After first mention, use “VA claim exam” or “claim exam.”
 
-**file**
+**file** (noun)
 : We use this term to refer to the actual file a Veteran is uploading from their device. These may not be “documents” as in .doc. They could be .pdf, .jpg, .png, or other file types.
 : - Note: Button text on file upload screens should say "Upload file," not "Upload document" or "Upload evidence."
 
