@@ -156,6 +156,13 @@ Interaction:
   - name: Loading indicator
     icon-name: autorenew
     unicode: "#xf1f8;"
+  - name: Filter
+    icon-name: filter_alt
+    unicode: "#xf1f8;"
+  - name: List filter
+    icon-name: filter_list
+    unicode: "#xf1f8;"
+
 
 Messaging:
   - name: Attachment
