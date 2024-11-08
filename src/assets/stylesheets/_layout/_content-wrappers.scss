@@ -179,6 +179,12 @@
   /* Copy button positioning */
   .highlight-container .copy-button {
     justify-self: end;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .highlight-container:hover .copy-button {
+    opacity: 1;
   }
 
   /* make sure code is vertically centered */
