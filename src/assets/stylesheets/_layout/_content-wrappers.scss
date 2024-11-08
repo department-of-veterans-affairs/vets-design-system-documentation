@@ -15,27 +15,6 @@
     margin: $units-2 0;
   }
 
-  .highlight .table-wrapper {
-    display: flex;
-  }
-
-  /* Line numbers styling */
-  .highlight .gutter {
-    padding: $units-2 $units-1;
-    border-right: 1px solid $vads-color-base-lighter;
-    background: $vads-color-base-lightest;
-    color: $vads-color-base-dark;
-    user-select: none;
-    text-align: right;
-    min-width: 3em;
-  }
-
-  /* Code content */
-  .highlight .code {
-    padding: $units-2;
-    overflow-x: auto;
-  }
-
   /* Base styles */
   .highlight pre {
     margin: 0;
@@ -194,6 +173,7 @@
     display: grid;
     grid-template-columns: 10fr 1fr;
     padding: units(2);
+    border: 1px solid $vads-color-base-lighter;
   }
 
   /* Copy button positioning */
@@ -231,10 +211,8 @@
 
   p .highlighter-rouge,
   li .highlighter-rouge {
-    padding: $units-0_5;
     margin: 0;
     border: 0;
-    border-radius: 2px;
   }
 
   //
