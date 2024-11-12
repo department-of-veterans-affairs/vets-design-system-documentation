@@ -183,7 +183,9 @@
     transition: all 0.2s ease-in-out;
   }
 
-  .highlight-container:hover .copy-button {
+  .highlight-container:hover .copy-button,
+  .highlight-container:focus-within .copy-button,
+  .copy-button:focus {
     opacity: 1;
   }
 
