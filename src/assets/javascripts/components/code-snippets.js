@@ -24,16 +24,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const container = document.createElement('div');
     container.className = 'highlight-container';
 
+    // Create wrapper div copy button
+    const copyButtonWrapper = document.createElement('div');
+
     // Create VA button
     const copyButton = document.createElement('va-button');
     copyButton.setAttribute('secondary', '');
     copyButton.setAttribute('text', 'Copy');
     copyButton.className = 'copy-button';
 
+    copyButtonWrapper.appendChild(copyButton);
+
     // Wrap code block
     codeBlock.parentNode.insertBefore(container, codeBlock);
     container.appendChild(codeBlock);
-    container.appendChild(copyButton);
+    container.appendChild(copyButtonWrapper);
 
     // Add click handler
     copyButton.addEventListener('click', async function () {
