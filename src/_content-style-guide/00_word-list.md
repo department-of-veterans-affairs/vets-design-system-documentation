@@ -540,6 +540,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Persian Gulf War era**
 : Lowercase "era."
 
+**Philippines**
+: Use “Philippines” (without "the") in a list. Use “the Philippines” in the context of a paragraph (like “If you served in the Philippines”)
+
 **PO Box**
 : Don't use periods.
 
