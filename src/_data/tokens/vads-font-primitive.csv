@@ -15,7 +15,8 @@ vads-font-line-length-5,Primitive,vads-size-line-length-5,,uswds-system-font-lin
 vads-font-line-length-6,Primitive,vads-size-line-length-6,88ex,uswds-system-font-line-length-6,88ex,From USWDS.
 vads-font-line-length-none,Primitive,vads-size-line-length-none,,uswds-system-font-line-length-none,none,From USWDS.
 vads-font-size-2xl,Primitive,vads-font-size-2xl,,uswds-system-font-size-14,40px,
-vads-font-size-base,Primitive,vads-font-size-base,17px,uswds-system-font-size-6,17px,
+vads-font-size-root,Primitive,vads-font-size-root,16px,uswds-system-font-size-6,16px,
+vads-font-size-source-sans-normalized,Primitive,vads-font-size-source-sans-normalized,16.96px,uswds-system-font-size-7,16.96px,
 vads-font-size-lg,Primitive,vads-font-size-lg,,uswds-system-font-size-8,20px,
 vads-font-size-md,Primitive,vads-font-size-md,,uswds-system-font-size-6,17px,
 vads-font-size-sm,Primitive,vads-font-size-sm,,uswds-system-font-size-4,15px,

@@ -9,6 +9,11 @@ node_modules
 tmp_remote_assets
 src/.jekyll-cache
 src/assets/stylesheets/component-library.css
+src/assets/stylesheets/core.css
+src/assets/stylesheets/mobile-typography.css
+src/assets/stylesheets/shame.css
+src/assets/stylesheets/uswds-typography.css
+src/assets/stylesheets/utilities.css
 src/formation.min.css
 src/vendor
 src/_data/component-docs.json

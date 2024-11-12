@@ -6,7 +6,7 @@ vads-font-size-body-large,Semantic,vads-font-size-body-large,uswds-system-font-s
 vads-font-size-body-lead,Semantic,vads-font-size-body-lead,,,vads-font-size-body-large,Lead font size for body text. For lead paragraphs.,20px
 vads-font-size-body-medium,Semantic,vads-font-size-body-medium,uswds-system-font-size-6,17px,,Medium body font size,
 vads-font-size-body-small,Semantic,vads-font-size-body-small,uswds-system-font-size-4,15px,,Smallest body font size,
-vads-font-size-eyebrow,Semantic,vads-font-size-eyebrow,,,vads-font-size-base,Eyebrow is an experimental request which adds type above an h1.,17px
+vads-font-size-eyebrow,Semantic,vads-font-size-eyebrow,,,vads-font-size-root,Eyebrow is an experimental request which adds type above an h1.,16px
 vads-font-size-heading-level-1,Semantic,vads-font-size-heading-level-1,uswds-system-font-size-14,40px,,Heading level 1. h1 value.,
 vads-font-size-heading-level-2,Semantic,vads-font-size-heading-level-2,uswds-system-font-size-12,32px,,Heading level 2. h2 value. Was 30px,
 vads-font-size-heading-level-3,Semantic,vads-font-size-heading-level-3,uswds-system-font-size-8,20px,,Heading level 3. h3 value.,
