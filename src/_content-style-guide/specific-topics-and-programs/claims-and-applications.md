@@ -1,6 +1,6 @@
 ---
 layout: content-style-guide
-permalink: /content-style-guide/specific-topics-and-programs/claims
+permalink: /content-style-guide/specific-topics-and-programs/claims-and-applications
 has-parent: /content-style-guide/specific-topics-and-programs/
 title: Claims and applications
 intro-text: "The information on this page will help you use consistent language about claims and applications across communication channels."
