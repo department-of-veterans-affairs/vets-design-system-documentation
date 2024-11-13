@@ -21,9 +21,7 @@ Watch [this tutorial](https://www.youtube.com/watch?v=kXwhzUg1lKA) if you need t
 
 ### Preview your changes
 
-When making updates to documentation you can preview your changes before publishing them to the live site. When you create a pull request or a draft pull request, a preview link is created where you can view the entire documentation site with the changes that submitted before publishing those changes to the live site. Follow [these instructions](https://github.com/department-of-veterans-affairs/vets-design-system-documentation?tab=readme-ov-file#previewing-pull-requests) or watch this [demo on YouTube (9:41)](https://youtu.be/kXwhzUg1lKA?feature=shared&t=581) to see the preview link in action. 
-
-Use the Preview pull request feature to share your changes with others before submitting
+When making updates to documentation you can preview your changes before publishing them to the live site. When you create a pull request or a draft pull request, a preview link is created where you can view the entire documentation site with the changes that you submitted before publishing those changes to the live site. Follow [these instructions](https://github.com/department-of-veterans-affairs/vets-design-system-documentation?tab=readme-ov-file#previewing-pull-requests) or watch this [demo on YouTube (9:41)](https://youtu.be/kXwhzUg1lKA?feature=shared&t=581) to see the preview link in action. 
 
 ## Updating CSS and this site
 
