@@ -18,7 +18,7 @@ gulp.task('copy-web-components-css', function (done) {
 });
 
 gulp.task('copy-css-library', function (done) {
-  console.log('copying web-components CSS');
+  console.log('copying css-library CSS');
   var stream = gulp.src('./node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/*.css')
     .pipe(gulp.dest('src/assets/stylesheets/'));
 
@@ -27,5 +27,6 @@ gulp.task('copy-css-library', function (done) {
 
 gulp.task(task, gulp.series(
   'copy-formation-css',
-  'copy-web-components-css'
+  'copy-web-components-css',
+  'copy-css-library'
 ));
