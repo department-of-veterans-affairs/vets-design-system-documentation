@@ -25,9 +25,9 @@ anchors:
 
 ## Examples
 
-{% include component-example.html alt="Asking for gender identity in the VA.gov Profile." file="/images/patterns/ask-users-for/gender/gender-identity-profile.png" caption="Asking for gender identity in the VA.gov Profile, personal information section." class="x2" %}
+{% include component-example.html alt="Asking for gender identity in the VA.gov Profile." file="/images/patterns/ask-users-for/gender-identity/gender-identity-profile.png" caption="Asking for gender identity in the VA.gov Profile, personal information section." class="x2" %}
 
-{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." class="x2" %}
+{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender-identity/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." class="x2" %}
 
 ## How to design and build
 
