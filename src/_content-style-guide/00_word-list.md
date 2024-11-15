@@ -220,6 +220,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **disease**
 : Use "illness" unless it's part of a proper name of a specific disease.
 
+**District of Columbia** 
+: Refer to entry for "Washington, DC."
+
 **dividend**
 : Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.
 
@@ -836,6 +839,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 ### W
+
+**Washington, DC**
+: Default to Washington, DC when referring to the location, the VAMC, or a regional office. In some cases, especially government contexts, "District of Columbia" is also fine ("the government of the District of Columbia"). 
 
 **website**
 : One word, lowercase.
