@@ -125,6 +125,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
+**claimant** 
+: Define the term on the first instance as “person with the claim” or “person applying for this benefit.” When possible, use specific plain language instead, like “Veteran’s spouse” or “Veteran’s child.” Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word.
+
 **claim exam**
 : This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
 
@@ -686,6 +689,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **special claim**
 : Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
+
+**sponsor**
+: We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It’s OK to use the word sponsor but lead with the plain language definition. Example: the Veteran you’re connected to (called your “sponsor”). Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **Statement of the Case**
 : Capitalize.
