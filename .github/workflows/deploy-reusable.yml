@@ -1,0 +1,84 @@
+on:
+  workflow_call:
+    inputs:
+      github-sha:
+        required: true
+        type: string
+      github-run-id:
+        required: true
+        type: string
+      github-event-number:
+        required: false
+        type: string
+      matrix-name:
+        required: true
+        type: string
+      matrix-bucket:
+        required: true
+        type: string
+      matrix-config:
+        required: true
+        type: string
+    secrets:
+      aws-access-key-id:
+        required: true
+      aws-secret-access-key:
+        required: true
+jobs:
+  jekyll-deploy-reusable_workflow_job:
+    runs-on: ubuntu-latest
+    environment:
+      name: ${{ inputs.matrix-name }}
+      url: "https://${{ inputs.matrix-bucket }}"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.5 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - run: yarn install
+      - run: yarn run build
+      - run: bundle exec jekyll build --config _config.yml,jekyll-configs/${{ inputs.matrix-config }} --baseurl /${{ inputs.github-event-number }}
+      - name: Make BUILD.txt file
+        # The -e flag enables the interpretation of the \n newline character
+        run: |
+          echo -e "REF=${{ inputs.github-sha }}\n\
+          BUILD_ID=${{ inputs.github-run-id }}\n\
+          BUILDTIME=$(date)" > _site/BUILD.txt
+      # We are taking these extra steps due to some differences between Jekyll and AWS S3.
+      # To access a .html file served from S3, the URL needs to have the .html extension.
+      # We're removing the extension to make the URLs prettier.
+      # More context:
+      #   https://simpleit.rocks/ruby/jekyll/tutorials/having-pretty-urls-in-a-jekyll-website-hosted-in-amazon-s3/
+      - name: Remove .html extension on non-index files
+        run: |
+          find _site/ -type f ! -iname 'index.html' -iname '*.html' \
+          -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.aws-access-key-id }}
+          aws-secret-access-key: ${{ secrets.aws-secret-access-key }}
+          aws-region: "us-gov-west-1"
+      - name: Sync extensionless html files with correct type
+        run: |
+          aws s3 sync _site s3://${{ inputs.matrix-bucket }} \
+          --acl public-read \
+          --delete \
+          --exclude "storybook/*" \
+          --exclude "*.*" \
+          --content-type "text/html"
+      - name: Sync remaining files
+        run: |
+          aws s3 sync _site s3://${{ inputs.matrix-bucket }} \
+          --acl public-read \
+          --delete \
+          --exclude "*" \
+          --include "*.*" \
+          --exclude "storybook/*"

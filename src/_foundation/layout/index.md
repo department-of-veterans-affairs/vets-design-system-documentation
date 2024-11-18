@@ -4,7 +4,6 @@ permalink: /foundation/layout/
 title: Layout
 sub-pages:
   - sub-page: Flexbox grid
-  - sub-page: Float grid
   - sub-page: Page layouts
 ---
 
@@ -16,9 +15,9 @@ sub-pages:
 
 {% include _site-in-this-section.html %}
 
-## Grids
+## Flexbox grid
 
-We have two types of grids. One is the float grid (whereas "float" refers to the `float` CSS property) provide by the U.S. Web Design System.  The other grid is a flexbox grid (which refers to the `flexbox` CSS spec) that provides more design flexibility and options to use with responsive design. A similar flexbox grid will be offered in the U.S. Web Design System version 2.0.
+The flexbox grid (which refers to the `flexbox` CSS spec) provides more design flexibility and options to use with responsive design.
 
 ## Page layouts
 

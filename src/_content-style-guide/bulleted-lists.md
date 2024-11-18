@@ -1,7 +1,7 @@
 ---
 layout: content-style-guide
 title: Bulleted lists
-intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than three items or ideas, we recommend breaking them up into a bulleted list.
+intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than 3 items or ideas, we recommend breaking them up into a bulleted list. These guidelines also apply to content for checkboxes and radio buttons in forms.
 anchors:
   - anchor: Considerations
   - anchor: Punctuation for bulleted lists
@@ -11,19 +11,22 @@ anchors:
 
 {% include content/unordered-list.md %}
 
-## Punctuation for bulleted lists
+## Punctuation
 
-* When the list is made up of fragments, don't use ending periods.
-* When the list is made up of fragments and one bullet contains an additional sentence, use ending periods on both the fragment and the additional sentence. To be consistent, also use ending periods on the other items in the bulleted list, even if they're fragments.
-* Don't use a period at the end of the last bullet in a series of fragments.
+* When the list is made up of fragments or single sentences, don't use ending periods
+* If one or more bullets contains an additional sentence, use ending periods on all items in the bulleted list—including any fragments
+* Don't use a period at the end of the last bullet in a series of fragments
 
-Note: Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets that are full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
+**Note:** Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets with multiple full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
+
+### Example of bulleted list with fragments
+
+Use parallel construction and don't use ending periods for fragments.
 
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1"> 
-Use parallel construction and don't use ending periods for fragments.
   
 __What documents and information do I need to apply?__
 
@@ -49,17 +52,18 @@ __What documents and information do I need to apply?__
 </div>
 </div>
 
+### Example of bulleted list with conjunctions
+
+When using "and" or "or" at the end of each bullet point, use a comma and bold the "and"/"or" at the end of each bullet point. 
+
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-
-When using "and" or "or" at the end of each bullet point, use a comma and bold the "and"/"or" at the end of each bullet point. 
   
 __Both of these must be true:__
 - You’re enrolled in VA health care, __and__
 - You’re registered as a patient in a VA health facility
-
 
 __And you must have one of these free accounts:__
 - An Advanced or Premium My HealtheVet account, __or__
@@ -84,12 +88,14 @@ __All of these must be true:__
 
 </div>
 
+### Example of bulleted list with more than one sentence
+
+Use ending periods for each bulleted item in a list if any of the items contain a fragment and an additional sentence. 
+
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-
-Use ending periods for each bulleted item in a list if any of the items contain a fragment and an additional sentence. 
   
 Here's what you'll need to apply:
 

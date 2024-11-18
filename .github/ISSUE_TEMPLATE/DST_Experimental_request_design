@@ -1,0 +1,37 @@
+---
+name: "DST - Experimental request - design"
+about: INTERNAL DST USE ONLY
+title: "[experimental component name] - Design"
+labels: platform-design-system-team
+assignees: babsdenney, danbrady, lwwright7
+
+---
+
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add Design System component label (such as `va-alert`)
+- [ ] Add `component-new` or `component-update` label, if applicable
+- [ ] Complete sections below
+- [ ] Delete this section once complete
+
+## Description
+Create design and/or update Figma artifacts for [experimental design component name]
+
+## Details
+[add links to experimental design request ticket or notes with details about the design]
+[add links to any research documents related to the component]
+
+## Tasks
+- [ ] Create designs for component
+- [ ] Review designs with PO and DST designers 
+- [ ] Review designs with developers and accessibility specialist
+- [ ] Address any comments from reviews, if necessary
+- [ ] Comment on this ticket with any accessibility considerations engineers may need to know
+- [ ] Comment on this ticket with content specifications (e.g. labels and error messages)
+- [ ] Comment on this ticket with a link to the designs and post in DST Slack channel
+
+## Acceptance Criteria
+- [ ] Component design is complete and has been reviewed
+- [ ] Accessibility and development considerations have been added to this ticket, if necessary
+- [ ] Content specifications have been added to this ticket, if necessary
+- [ ] Link to design has been added to this ticket and shared in Slack
