@@ -19,11 +19,11 @@ title: What’s new?
 * va-date: add prop to make month optional by @it-harrison in #1377
 
 ### New content guidance
-* In Claims and applications (under Specific topics and programs): New page with general guidance for content about claims and applications #3504 
-* In Email and text notifications: New page with general guidance for email notifications #3406
-* In Bulleted lists: Clarification on single sentences in lists; crosslink with radio buttons and checkboxes #3268
-* In Use short sentences: New example and suggested guideline for maximum sentence length #3268 
-* In Sign in and identity verification special topic section: Updates to word list related to sign-in changes and clarification on when and when not to use "verify your identity" 
+* Claims and applications (under Specific topics and programs): New page with general guidance for content about claims and applications #3504 
+* Email and text notifications: New page with general guidance for email notifications #3406
+* Bulleted lists: Clarification on single sentences in lists; crosslink with radio buttons and checkboxes #3268
+* Use short sentences: New example and suggested guideline for maximum sentence length #3268 
+* Sign in and identity verification special topic section: Updates to word list related to sign-in changes and clarification on when and when not to use "verify your identity" 
 
 ### Bug fixes
 * va-modal: set box-sizing to border-box to prevent text overflow by @powellkerry in #1357
