@@ -23,7 +23,8 @@ title: What’s new?
 * Email and text notifications: New page with general guidance for email notifications #3406
 * Bulleted lists: Clarification on single sentences in lists; crosslink with radio buttons and checkboxes #3268
 * Use short sentences (under Plain language): New example and suggested guideline for maximum sentence length #3268 
-* Sign in and identity verification (under Specific topics and programs): Updates to word list related to sign-in changes and clarification on when and when not to use "verify your identity" 
+* Sign in and identity verification (under Specific topics and programs): Updates to word list related to sign-in changes and clarification on when and when not to use "verify your identity"
+* Word list: New entries for claimant, sponsor, Philippines, and Washington, DC
 
 ### Bug fixes
 * va-modal: set box-sizing to border-box to prevent text overflow by @powellkerry in #1357
