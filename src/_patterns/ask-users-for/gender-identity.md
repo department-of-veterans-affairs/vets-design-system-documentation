@@ -1,11 +1,11 @@
 ---
 layout: pattern
-permalink: /patterns/ask-users-for/gender
+permalink: /patterns/ask-users-for/gender-identity
 sub-section: ask-users-for
-title: Gender
-intro-text: Follow this pattern whenever you need to ask Veterans their gender. 
-github-title: pattern-gender
-research-title: Ask users for gender
+title: Gender identity
+intro-text: Follow this pattern whenever you need to ask Veterans their gender identity. 
+github-title: pattern-gender-identity
+research-title: Ask users for gender identity
 status: use-with-caution-candidate
 anchors:
   - anchor: Usage
@@ -21,13 +21,13 @@ anchors:
 * **Only ask a user to provide information if it benefits the user experience.** You should only ask a user for their race or ethnicity, sexual orientation, or gender identity if you can clearly explain how providing this information will benefit the user (not the VA) and the question is related to the larger action they are trying to perform.
 * **Only collect data when you can reinforce trust, transparency, and user choice.** You must clarify their information will not be used for their medical treatment or benefits determinations and demonstrate how a user can change their race or ethnicity, sexual orientation, or gender identity and related privacy preferences in the VA.gov profile. If a user does not have and is not eligible to create a VA.gov profile, such as an unauthenticated users, then the data is not collected.
 
-**Note:** Many forms are based off of paper forms with limited fields for gender. Work with your stakeholder to expand the fields.
+**Note:** Many forms are based off of paper forms with limited fields for gender identity. Work with your stakeholder to expand the fields.
 
 ## Examples
 
-{% include component-example.html alt="Asking for gender in the VA.gov Profile." file="/images/patterns/ask-users-for/gender/gender-identity-profile.png" caption="Asking for gender in the VA.gov Profile, personal information section." width="75%" %}
+{% include component-example.html alt="Asking for gender identity in the VA.gov Profile." file="/images/patterns/ask-users-for/gender-identity/gender-identity-profile.png" caption="Asking for gender identity in the VA.gov Profile, personal information section." class="x2" %}
 
-{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." width="75%" %}
+{% include component-example.html alt="Contents of the What to know, additional information component." file="/images/patterns/ask-users-for/gender-identity/gender-identity-profile-what-to-know.png" caption="Contents of the What to know before you decide to share your gender identity additional information component in Profile." class="x2" %}
 
 ## How to design and build
 
