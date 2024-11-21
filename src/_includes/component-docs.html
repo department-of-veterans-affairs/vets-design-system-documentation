@@ -1,8 +1,8 @@
-{% for component in site.data.component-docs.components %} {% if component.tag
-  == include.component_name %}
-{% if component.props != empty or component.events != empty %}
+{% for component in site.data.component-docs.components %} 
+  {% if component.tag == include.component_name %}
+    {% if component.props != empty or component.events != empty %}
 <h2 id="code-usage">Code usage</h2>
-{% if component.props != empty %}
+      {% if component.props != empty %}
 <h3>Attributes and Properties</h3>
 <table>
   <tr>
@@ -13,7 +13,7 @@
     <th><strong>Description</strong></th>
   </tr>
   <div>
-    {% for prop in component.props %}
+        {% for prop in component.props %}
     <tr>
       <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.name }}</code></th>
       <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.attr }}</code></th>
@@ -21,12 +21,12 @@
       <th>{% if prop.default %}<code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.default }}</code>{% endif %}</th>
       <th>{{ prop.docs }}</th>
     </tr>
-    {% endfor %}
+        {% endfor %}
   </div>
 </table>
-{% endif %}
+      {% endif %}
 
-{% if component.events != empty %}
+      {% if component.events != empty %}
 <h3>Events</h3>
 <table>
   <tr>
@@ -34,19 +34,22 @@
     <th><strong>Description</strong></th>
   </tr>
   <div>
-    {% for event in component.events %}
+        {% for event in component.events %}
     <tr>
       <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ event.event }}</code></th>
       <th>{{ event.docs }}</th>
     </tr>
-    {% endfor %} {% for listener in component.listeners %} {% assign docs =
-    component.docsTags | where: "name", listener.event %}
+        {% endfor %} 
+        {% for listener in component.listeners %} 
+          {% assign docs = component.docsTags | where: "name", listener.event %}
     <tr>
       <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ listener.event }}</code></th>
       <th>{% for doc in docs %} {{ doc.text }} {% endfor %}</th>
     </tr>
-    {% endfor %}
+        {% endfor %}
   </div>
 </table>
-{% endif %}
-{% endif %} {% endif %} {% endfor %}
+      {% endif %}
+    {% endif %} 
+  {% endif %} 
+{% endfor %}
