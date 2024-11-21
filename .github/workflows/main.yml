@@ -1,0 +1,23 @@
+name: PR creation event notification
+
+on:
+  pull_request:
+    - opened
+    - reopened
+
+jobs:
+  notify:
+    name: PR notification
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Post message
+        uses: slackapi/slack-github-action@v1.25.0
+        env:
+          SLACK_WEBHOOK_URL: https://slack.com/shortcuts/Ft0829LWHYRF/641deb7a6798e112a2b56587d08bf3cb
+        with:
+          payload: |
+            {
+              "title": ${{ toJson(github.event.pull_request.title) }},
+              "author": ${{ toJson(github.event.pull_request.user.login) }},
+              "link": ${{ toJson(github.event.pull_request.html_url) }}
+            }
