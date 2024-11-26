@@ -42,6 +42,10 @@ All teams must now be using the v3 versions of our web-components. The Design Sy
   </div>
 </va-alert>
 
+#### Imposter components
+
+Most components are listed in Storybook. If your team is not using the components and their code in Storybook, then that is considered an imposter component and will be flagged at a Staging Review. This includes components that are coded to look like the ones in Storybook, but do not use the Storybook code.
+
 ### Governance rules for using v3-based components
 
 v3-based versions of the components are designed to sit alongside our current v1 based components and the foundational elements of the Design System. Teams must use the new versions of our web-components and following these rules:
