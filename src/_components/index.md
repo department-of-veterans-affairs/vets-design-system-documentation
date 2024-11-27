@@ -42,16 +42,13 @@ All teams must now be using the v3 versions of our web-components. The Design Sy
   </div>
 </va-alert>
 
-#### Imposter components
-
-Most components are listed in Storybook. If your team is not using the components and their code in Storybook, then that is considered an imposter component and will be flagged at a Staging Review. This includes components that are coded to look like the ones in Storybook, but do not use the Storybook code.
-
-### Governance rules for using v3-based components
+### Governance rules for using components
 
 v3-based versions of the components are designed to sit alongside our current v1 based components and the foundational elements of the Design System. Teams must use the new versions of our web-components and following these rules:
 
 * Do not mix and match different versions (v1 vs. v3) of the same component on the same page. For example, if you were to use the v3-based version of the [accordion component]({{ site.baseurl }}/components/accordion) on a page, that version must be used throughout that page (and ideally throughout your application as soon as possible).
 * Do not mix and match v1 and v3 based [form components]({{ site.baseurl }}/components/form/) in the same application flow. For example, if you were to use the v3-based version of the radio button component on the first step in an application, that version must be used on all subsequent steps throughout the flow.
+* Most exmaples of design system components can be found in [Storybook](https://design.va.gov/storybook/). If your team is not using the [design system web components](https://github.com/department-of-veterans-affairs/component-library), then that is considered an imposter component and will be flagged at a Staging Review. This includes components that are coded to look and function like the ones in Storybook, but do not use the design system code.
 
 {% include components-patterns-templates.md %}
 
