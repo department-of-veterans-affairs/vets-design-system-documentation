@@ -832,9 +832,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Veterans Service Organization (VSO)**
 : "Veterans" is plural and doesn't take an apostrophe. Don't use VSO to reference a Veterans Service Officer. Instead use Veterans Service Organization representative. Or VSO representatitve. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-**Veterans Service Representative (VSR)**
-: “Veterans” is plural and doesn't take an apostrophe. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
-
 **Vietnam Era: Capitalize**
 : But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry for "era" for additional explanation.
 
