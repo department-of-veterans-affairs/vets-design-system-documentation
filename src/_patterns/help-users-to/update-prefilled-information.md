@@ -1,9 +1,9 @@
 ---
 layout: pattern
-title: Help users to... Update prefilled information
+title: Update prefilled information
 draft: true
 permalink: /patterns/help-users-to/update-prefilled-information
-sub-section: [help-users-to]
+sub-section: help-users-to
 intro-text: Follow this pattern to help users update prefilled information in an application.
 research-title: Help users update prefilled information
 figma-link: https://www.figma.com/design/1z3bAkQl4uR1IvAxmtyqZi/AE-Design-Patterns---Update-Prefill?node-id=4013-14358&t=GYX9RT423zMZrhat-1
