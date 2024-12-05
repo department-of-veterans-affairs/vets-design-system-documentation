@@ -39,7 +39,6 @@ anchors:
 
 ### How this component works
 
-* **Use square list-item-type for unordered lists.** The square list item type is preferred.
 * **Two or more items.** Lists with 2 or more items are acceptable.
 
 ### Choosing between variations
@@ -54,9 +53,7 @@ anchors:
 
 {% include component-example.html alt="List in an accordion." file="/images/components/list/unordered-list-in-accordion.png" caption="An example of an unordered list in an Accordion component." class="x2" %}
 
-{% include component-example.html alt="List in a Summary box." file="/images/components/list/unordered-list-in-summary-box.png" caption="An example of an unordered list in a Summary box component." class="x2" %}
-
-{% include component-example.html alt="List with two connected items." file="/images/components/list/unordered-list-with-and.png" caption="An example of an unordered list where items are concatenated using and." class="x2" %}
+{% include component-example.html alt="List with two connected items." file="/images/components/list/unordered-list-with-and.png" caption="An example of an unordered list in a Summary box where items are concatenated using **and**." class="x2" %}
 
 {% include component-example.html alt="List of appointments in VA.gov." file="/images/components/list/appointments-list.png" caption="An example of an inline list of appointments where each list item is a row containing appointment details." class="x2" %}
 
@@ -73,7 +70,6 @@ anchors:
 ## Accessibility considerations
 
 * **Unique headings and link text.** For complex list items that are comprised of more than one line of content (e.g. header, description, link, etc.) ensure that any headings and link text within the list are unique.
-* **Under review: Unordered list items will read out as "black square".** We're reviewing whether this potentially unexpected behavior is problematic for users of screen readers and may adjust the list item style type appropriately in future.
 
 ## Related
 
