@@ -23,15 +23,15 @@ Note for designers using the form step template in Figma: You can replace the pl
 
 ### Variations
 There are two versions of the form step page: 
-- Authenticated
--   Includes a header design showing the logged in state
--   Includes a prefill information alert near the top of the page that explains to a user that certain information can be prefilled because they are signed in to va.gov. This alert should only appear on pages where information has been prefilled.
--   Includes a text area message above the prefill alert notifying a user that their application is saved automatically and provides an ID number.
--   Includes a success alert that reiterates when the form autosaves with a timestamp. This success alert only appears after a user interacts with a field. But for design purposes we show it static on all Figma pages.
-- Unauthenticated
--   No authenticated header
--   No prefill alert
--   No autosave messaging
+#### Authenticated
+-  Includes a header design showing the logged in state
+-  Includes a prefill information alert near the top of the page that explains to a user that certain information can be prefilled because they are signed in to va.gov. This alert should only appear on pages where information has been prefilled.
+-  Includes a text area message above the prefill alert notifying a user that their application is saved automatically and provides an ID number.
+-  Includes a success alert that reiterates when the form autosaves with a timestamp. This success alert only appears after a user interacts with a field. But for design purposes we show it static on all Figma pages.
+#### Unauthenticated
+-  No authenticated header
+-  No prefill alert
+-  No autosave messaging
 
 ## Example - Authenticated
 
@@ -65,15 +65,15 @@ The unauthenticated form step page template consists of:
 ## Structure
 
 ### Breadcrumb
-The breadcrumb will remain static across all form step pages for a single form. [Learn more about expected breadcrumb behavior in the design system]{https://design.va.gov/components/breadcrumbs}. We recommend that designers create a breadcrumb local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
+The breadcrumb will remain static across all form step pages for a single form. [Learn more about expected breadcrumb behavior in the design system](https://design.va.gov/components/breadcrumbs). We recommend that designers create a breadcrumb local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
 
 ### Page title and subtitle
 
-Use the same H1 page title and subtitle as the form introduction, review, and confirmation pages. [Review the form introduction template for page title and subtitle for more guidance and examples]{https://design.va.gov/templates/forms/introduction#structure}. We recommend that designers create a page title and subtitle local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
+Use the same H1 page title and subtitle as the form introduction, review, and confirmation pages. [Review the form introduction template for page title and subtitle for more guidance and examples](https://design.va.gov/templates/forms/introduction#structure). We recommend that designers create a page title and subtitle local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
 
 ### Progress bar & overall form step structure
 
-Use the [progress bar - segmented component]{https://design.va.gov/templates/forms/introduction#structure} to organize form steps. 
+Use the [progress bar - segmented component](https://design.va.gov/templates/forms/introduction#structure) to organize form steps. 
 
 The name for each step is called the “step header.” The way you organize the form steps will also impact the “page title” (the H3 that begins the form content section), pattern, and content. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
 
@@ -99,16 +99,17 @@ It’s an information architecture best practice to ask for the information that
 
 #### Example form step structure breakdown
 This is not meant to be a definitive, prescriptive structure, only to show an example.
+
 | Template type  | Step header (progress bar) examples | Step # (progress bar) examples | Page 1 title examples | Page 2 title examples | Page 3 title examples |
 | ------------- | ------------- |------------- | ------------- |------------- | ------------- |
-| [Introduction]{https://design.va.gov/templates/forms/introduction}  | n/a  | n/a  | n/a  | n/a  | n/a   |
+| [Introduction](https://design.va.gov/templates/forms/introduction)  | n/a  | n/a  | n/a  | n/a  | n/a   |
 | Form step  | Your personal information  | 1 of x  | Your name & DOB  | Your identification information  |   |
 | Form step  | Your contact information  | 2 of x  | Your phone & email address  | Your mailing address  | Your physical/home address  |
 | Form step  | Your education  | (Other form steps and pages will be dependent upon individual forms.) |
 | Form step  | Your employment  | (Other form steps and pages will be dependent upon individual forms.)  |
 | Form step  | Your service history  | (Other form steps and pages will be dependent upon individual forms.)  |
-| [Review]{https://design.va.gov/templates/forms/review}  | Review & submit  | x of x (always last step)  | n/a  | n/a   | n/a  |
-| [Confirmation]{https://design.va.gov/templates/forms/confirmation}  | Confirmation  | n/a   | n/a   | n/a  | n/a   |
+| [Review](https://design.va.gov/templates/forms/review)  | Review & submit  | x of x (always last step)  | n/a  | n/a   | n/a  |
+| [Confirmation](https://design.va.gov/templates/forms/confirmation)  | Confirmation  | n/a   | n/a   | n/a  | n/a   |
 
 #### Example of form step structure mockup for form submitter's personal information step
 View an example of the form step structure using mockups for step one. The content of some patterns may be out of date. 
@@ -135,7 +136,7 @@ On form step pages with only one question, the page title could be the field lab
 {% include component-example.html alt="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." file="/images/templates/forms/form-step/7-label-title.png" caption="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." class="x2" %}
 
 #### Additional information
-Use the additional information component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. Review guidelines for using the additional information component. 
+Use the additional information component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. [Review guidelines for using the additional information component.](https://design.va.gov/components/additional-info) 
 ### Finish this application later link
 A link that allows the user to exit the process with their progress saved.
 ### Button pair
