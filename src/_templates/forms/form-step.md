@@ -15,14 +15,14 @@ anchors:
 
 ## About
 
-This is a standardized template for all pages (besides the introduction, review, and confirmation page) of an online form that ask Veterans to enter information, select an answer option, or upload supporting documents. Within Figma, the placeholder section of the form step page template is the primary section of the page that you replace with a common form pattern or a custom local component. 
+This is a standardized template for all pages (besides the introduction, review, and confirmation page) of an online form that ask Veterans to enter information, select an answer option, or upload supporting documents. Within Figma, the placeholder section of the form step template is the primary section of the page that you replace with a common form pattern or a custom local component. 
 
 Note for designers using the form step template in Figma: You can replace the placeholder with only a single component. You may need to create a custom local Figma component made of  multiple design system components or patterns.
 
 [View form step template page in VA Figma with padding and accessibility annotations.](https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=5845-55249)
 
 ### Variations
-There are two versions of the form step page: 
+There are two versions of the form step template: 
 #### Authenticated
 -  Includes a header design showing the logged in state
 -  Includes a prefill information alert near the top of the page that explains to a user that certain information can be prefilled because they are signed in to va.gov. This alert should only appear on pages where information has been prefilled.
@@ -35,9 +35,9 @@ There are two versions of the form step page:
 
 ## Example - Authenticated
 
-{% include component-example.html alt="An example of form step page for authenticated users." file="/images/templates/forms/form-step/1-example-auth.png" caption="Anatomy of the form step page for authenticated users." class="x2" %}
+{% include component-example.html alt="An example of form step page for authenticated users." file="/images/templates/forms/form-step/1-example-auth.png" caption="Anatomy of the form step template for authenticated users." class="x2" %}
 
-The authenticated form step page template consists of:
+The authenticated form step template consists of:
 1. Breadcrumb
 2. Page title and subtitle
 3. Progress bar - segmented (includes step header)
@@ -51,9 +51,9 @@ The authenticated form step page template consists of:
 
 ## Example - Unauthenticated
 
-{% include component-example.html alt="An example of a form step page for unauthenticated users." file="/images/templates/forms/form-step/2-example-unauth.png" caption="Anatomy of the Review page for unauthenticated users." class="x2" %}
+{% include component-example.html alt="An example of a form step page for unauthenticated users." file="/images/templates/forms/form-step/2-example-unauth.png" caption="Anatomy of the form step template for unauthenticated users." class="x2" %}
 
-The unauthenticated form step page template consists of:
+The unauthenticated form step template consists of:
 1. Breadcrumb
 2. Page title and subtitle
 3. Progress bar - segmented (includes step header)
@@ -85,7 +85,7 @@ This part of the template shows how to order and group form patterns (like name 
 Create the steps and pages that match the requirements for your form. Whenever possible, use existing patterns and standardized content from the design system for those patterns.
 
 #### Step header and page title
-The step header (found within the progress bar) should usually have different content than the page title. The step header will be the general type of information we’re collecting (like “personal information”) and the page title will be the more specific information we’re collecting (like “name and date of birth”).
+The step header (found within the progress bar) should usually have different content than the page title. The step header will be the general type of information we’re collecting (like “Your personal information”) and the page title will be the more specific information you’re collecting (like “Your name and date of birth”). A step within the progress bar could, but doesn't have to, include multiple pages.
 
 {% include component-example.html alt="Screenshot of form page distinguishing that the step header and page title should have different content." file="/images/templates/forms/form-step/3-step-header-page-title.png" caption="Distinguishing an example of when the step header and page title should have different content" class="x2" %}
 
@@ -93,37 +93,24 @@ Use the step header and the page title to specify the role of the form submitter
 
 Identifying within your form’s information architecture who the form submitter is and which pages are asking for their information will also allow you to more easily leverage prefilled information since, as of right now, someone can only be logged in to va.gov as themselves. 
 
+It’s an information architecture best practice to ask for the information that’s easiest for the form submitter to recall. This will reduce form abandonment. So always ask for the form submitter’s information (“your information”) first, using “Your” in step and page titles. [Read more in the content style guide about how to use pronouns to promote an active, conversational voice.](https://design.va.gov/content-style-guide/plain-language/use-pronouns) 
+
 {% include component-example.html alt="Screenshot side-by-sides of form screenshots  showing how to leverage the step header and page title for different form submitter roles." file="/images/templates/forms/form-step/4-side-by-side.png" caption="This side-by-sides of form screenshots shows how to leverage the step header and page title for different form submitter roles." class="x2" %}
 
-It’s an information architecture best practice to ask for the information that’s easiest for the form submitter to recall. This will reduce form abandonment. So always ask for the form submitter’s information (“your information”) first, using “Your” in step and page titles. 
-
-#### Example form step structure breakdown
-This is not meant to be a definitive, prescriptive structure, only to show an example.
-
-| Template type  | Step header (progress bar) examples | Step # (progress bar) examples | Page 1 title examples | Page 2 title examples | Page 3 title examples |
-| ------------- | ------------- |------------- | ------------- |------------- | ------------- |
-| [Introduction](https://design.va.gov/templates/forms/introduction)  | n/a  | n/a  | n/a  | n/a  | n/a   |
-| Form step  | Your personal information  | 1 of x  | Your name & DOB  | Your identification information  |   |
-| Form step  | Your contact information  | 2 of x  | Your phone & email address  | Your mailing address  | Your physical/home address  |
-| Form step  | Your education  | (Other form steps and pages will be dependent upon individual forms.) |
-| Form step  | Your employment  | (Other form steps and pages will be dependent upon individual forms.)  |
-| Form step  | Your service history  | (Other form steps and pages will be dependent upon individual forms.)  |
-| [Review](https://design.va.gov/templates/forms/review)  | Review & submit  | x of x (always last step)  | n/a  | n/a   | n/a  |
-| [Confirmation](https://design.va.gov/templates/forms/confirmation)  | Confirmation  | n/a   | n/a   | n/a  | n/a   |
-
 #### Example of form step structure mockup for form submitter's personal information step
-View an example of the form step structure using mockups for step one. The content of some patterns may be out of date. 
+View an example of the form step structure using mockups for step one. The content of some patterns may be out of date. Notice that this step includes two pages. 
 
 {% include component-example.html alt="Example of form step structure for step one." file="/images/templates/forms/form-step/5-step-one.png" caption="Example of form step structure for step one." class="x2" %}
 
 #### Example of form step structure mockup for form submitter’s contact information step
+View an example of the form step structure using mockups for step two. The content of some patterns may be out of date. Notice that this step includes three pages.
 
 {% include component-example.html alt="Example of form step structure for step two." file="/images/templates/forms/form-step/6-step-two.png" caption="Example of form step structure for step two." class="x2" %}
 
 ### Saved as message with application ID
 Text area notifying a user that their application is saved automatically and provides an application ID number.
 ### Form step content
-Insert customized form step content in this section of the form step page. Consult the form step structure guidance above and the One thing per page design principle to determine how much form content to fit onto a single page.
+Insert customized form step content in this section of the form step template. Consult the form step structure guidance above and the [One thing per page design principle](https://design.va.gov/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single page.
 
 Some components may include the option to add body text, hint text, or additional information. Use these guidelines to decide which one to use. 
 #### Body text
@@ -131,7 +118,7 @@ Use body text to add clarifying information that is relevant to all the informat
 #### Hint text
 Add hint text under a field label if it would help someone choose the right response to give–like “We’ll use your email address to confirm when we receive your form” since knowing how we’ll use their email may help them choose which email to enter. Or use hint text to help someone answer a question more easily–like “For example: January 1, 2001”. Don’t use punctuation in hint text unless the copy is two sentences or more.  
 #### Field label text (also called legend)
-On form step pages with only one question, the page title could be the field label for a checkbox or radio group. For these components, there’s no need to add an additional field label if it doesn’t add meaning beyond what’s in the page title. For example “Are you filling this form out for yourself or someone else?” is both page title and field label.
+On a form step page with only one question, the page title could be the field label for a checkbox or radio group. For these components, there’s no need to add an additional field label if it doesn’t add meaning beyond what’s in the page title. For example “Are you filling this form out for yourself or someone else?” is both page title and field label.
 
 {% include component-example.html alt="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." file="/images/templates/forms/form-step/7-label-title.png" caption="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." class="x2" %}
 
