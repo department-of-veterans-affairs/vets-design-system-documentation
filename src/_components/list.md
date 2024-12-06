@@ -37,10 +37,6 @@ anchors:
 
 ### Additional guidance for VA
 
-### How this component works
-
-* **Two or more items.** Lists with 2 or more items are acceptable.
-
 ### Choosing between variations
 
 * **Use unordered lists when the order of the items is not relevant.** List items in unordered lists can be in any order and are indicated with a black square.
