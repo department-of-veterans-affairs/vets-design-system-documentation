@@ -49,7 +49,7 @@ anchors:
 
 {% include component-example.html alt="List in an accordion." file="/images/components/list/unordered-list-in-accordion.png" caption="An example of an unordered list in an Accordion component." class="x2" %}
 
-{% include component-example.html alt="List with two connected items." file="/images/components/list/unordered-list-with-and.png" caption="An example of an unordered list in a Summary box where items are concatenated using **and**." class="x2" %}
+{% include component-example.html alt="List with two connected items." file="/images/components/list/unordered-list-with-and.png" caption="An example of an unordered list in a Summary box where items are concatenated using and." class="x2" %}
 
 {% include component-example.html alt="List of appointments in VA.gov." file="/images/components/list/appointments-list.png" caption="An example of an inline list of appointments where each list item is a row containing appointment details." class="x2" %}
 
