@@ -22,32 +22,17 @@ anchors:
 
 ## Examples
 
-### Default - Gray
-
-<div class="site-showcase">
-  {% include_relative html/card.html %}
-</div>
-
-### Default - White with border
+### Default 
 
 {% include storybook-preview.html story="components-va-card--default" link_text="va-card default" %}
 
+### With Background
+
+{% include storybook-preview.html story="components-va-card--with-background" link_text="va-card with background" %}
+
 ### With Drop Shadow
 
-{% include storybook-preview.html story="components-va-card--with-drop-shadow" link_text="va-card default" %}
-
-### Benefit payments
-
-<div class="site-showcase">
-  {% include_relative html/card-benefit-payments.html %}
-</div>
-
-### Application status (Benefit application drafts)
-
-<div class="site-showcase">
-  {% include_relative html/card-benefit-application-drafts.html %}
-</div>
-
+{% include storybook-preview.html story="components-va-card--with-drop-shadow" link_text="va-card with drop shadow" %}
 
 ## Usage
 
