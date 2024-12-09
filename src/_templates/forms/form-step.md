@@ -75,27 +75,21 @@ Use the same H1 page title and subtitle as the form introduction, review, and co
 
 Use the [progress bar - segmented component](https://design.va.gov/templates/forms/introduction#structure) to organize form steps. 
 
-The name for each step is called the “step header.” The way you organize the form steps will also impact the “page title” (the H3 that begins the form content section), pattern, and content. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
+The name for each step within the progress bar is the “step header.” The way you organize the form steps will also impact the “page title” (the H3 that begins the form content section), pattern, and content. A step within the progress bar could, but doesn't have to, include multiple pages. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
+
+The step header should usually have different content than the page title. The step header will be the general type of information you're collecting (like “Your personal information”) and the page title will be more specific (like “Your name and date of birth”). 
 
 If your form contains conditionals, you may need multiple versions of the progress bar to cover all the possible paths (sometimes called user stories) that a user might take through a form. We recommend that designers create a progress bar local component in Figma for each possible path rather than manually updating each form step template page individually.
 
-#### Form step content structure
-This part of the template shows how to order and group form patterns (like name and date of birth) into steps. It also shows how to format page titles within those steps. This is not a list of required steps and pages for all forms. Each form will be different. 
-
-Create the steps and pages that match the requirements for your form. Whenever possible, use existing patterns and standardized content from the design system for those patterns.
-
-#### Step header and page title
-The step header (found within the progress bar) should usually have different content than the page title. The step header will be the general type of information we’re collecting (like “Your personal information”) and the page title will be the more specific information you’re collecting (like “Your name and date of birth”). A step within the progress bar could, but doesn't have to, include multiple pages.
+#### Crafting thoughtful step headers and page titles
 
 {% include component-example.html alt="Screenshot of form page distinguishing that the step header and page title should have different content." file="/images/templates/forms/form-step/3-step-header-page-title.png" caption="Distinguishing an example of when the step header and page title should have different content" class="x2" %}
 
-Use the step header and the page title to specify the role of the form submitter. For example, use “your” only when referring to the form submitter. If that could be a different person than the Veteran or a non-Veteran claimant, the step header and page title content are important tools to help the form submitter understand when we’re asking for their information versus another person’s information. 
+The step header and page title content are important tools to help the person filling out and submitting a form to understand when you're asking for their information versus another person’s information. Use the step header and the page title to specify the role of the form submitter as needed. For example, use “your” only when referring to the person filling out and submitting the form. [Read more in the content style guide about how to use pronouns to promote an active, conversational voice.](https://design.va.gov/content-style-guide/plain-language/use-pronouns) It is an information architecture best practice to ask for information that is easiest to recall first. Therefore, organize your form to ask for the form submitter's information first if they are a different person than a Veteran or a non-Veteran claimant.
 
 Identifying within your form’s information architecture who the form submitter is and which pages are asking for their information will also allow you to more easily leverage prefilled information since, as of right now, someone can only be logged in to va.gov as themselves. 
 
-It’s an information architecture best practice to ask for the information that’s easiest for the form submitter to recall. This will reduce form abandonment. So always ask for the form submitter’s information (“your information”) first, using “Your” in step and page titles. [Read more in the content style guide about how to use pronouns to promote an active, conversational voice.](https://design.va.gov/content-style-guide/plain-language/use-pronouns) 
-
-{% include component-example.html alt="Screenshot side-by-sides of form screenshots  showing how to leverage the step header and page title for different form submitter roles." file="/images/templates/forms/form-step/4-side-by-side.png" caption="This side-by-sides of form screenshots shows how to leverage the step header and page title for different form submitter roles." class="x2" %}
+{% include component-example.html alt="Screenshot side-by-sides of form screenshots showing how to leverage the step header and page title." file="/images/templates/forms/form-step/4-side-by-side.png" caption="This side-by-side of form screenshots shows how to leverage the step header and page title to specify whose information is being asked for." class="x2" %}
 
 #### Example of form step structure mockup for form submitter's personal information step
 View an example of the form step structure using mockups for step one. The content of some patterns may be out of date. Notice that this step includes two pages. 
@@ -118,7 +112,7 @@ Use body text to add clarifying information that is relevant to all the informat
 #### Hint text
 Add hint text under a field label if it would help someone choose the right response to give–like “We’ll use your email address to confirm when we receive your form” since knowing how we’ll use their email may help them choose which email to enter. Or use hint text to help someone answer a question more easily–like “For example: January 1, 2001”. Don’t use punctuation in hint text unless the copy is two sentences or more.  
 #### Field label text (also called legend)
-On a form step page with only one question, the page title could be the field label for a checkbox or radio group. For these components, there’s no need to add an additional field label if it doesn’t add meaning beyond what’s in the page title. For example “Are you filling this form out for yourself or someone else?” is both page title and field label.
+On a form step page with only one question, you must create a separate page title and field label (also called the legend). The exceptions to this rule are that the page title could also be the field label ONLY for a checkbox or radio group. For example, the radio button question “Are you filling this form out for yourself or someone else?” is both the page title and field label. 
 
 {% include component-example.html alt="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." file="/images/templates/forms/form-step/7-label-title.png" caption="Figma annotations distinguishing a page title and field label from the fieldset for a radio button set." class="x2" %}
 
