@@ -11,6 +11,7 @@ intro-text: "Common form structures and designs used on VA.gov"
 sub-pages:
   - sub-page: How to apply
   - sub-page: Introduction
+  - sub-page: Form step
   - sub-page: Review
   - sub-page: Confirmation
 ---
