@@ -122,7 +122,7 @@ GitHub label: [exp-std-form-integrity](https://github.com/department-of-veterans
 
 **There's an issue when:** User does not receive appropriate notification from the VA or VA.gov about the status of their request.
 
-GitHub label: [exp-std-submission-status](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-submission-status)
+GitHub label: [exp-std-notifications](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-notifications)
 
 ### Category: Efficiency
 
