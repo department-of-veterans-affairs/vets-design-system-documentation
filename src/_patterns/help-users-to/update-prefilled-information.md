@@ -1,6 +1,6 @@
 ---
 layout: pattern
-title: Update prefilled information
+title: Help users to... Update prefilled information
 draft: true
 permalink: /patterns/help-users-to/update-prefilled-information
 sub-section: help-users-to
@@ -19,20 +19,27 @@ anchors:
 
 
 ## Usage
+
 ### When to use this pattern
-- **When you prefill the user’s data into an application, like a form.** This pattern helps users understand how they can edit their prefilled information, especially sensitive information that requires calling a VA center to change. Additionally, this pattern informs users where their changes will be saved—either to the form, or to their form and VA.gov profile. See the related ["Help users to... Know when their information is prefilled"](https://design.va.gov/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on how to display the prefilled information.
+
+- **When you prefill the user’s data into an application, like a form.** This pattern helps users understand how they can edit their prefilled information, especially sensitive information that requires calling a VA center to change. Additionally, this pattern informs users where their changes will be saved—either to the form, or to their form and VA.gov profile. See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on how to display the prefilled information.
 
 #### Design principals
+
 - **Visibility of system status.** This pattern demonstrates the usability principle of communicating the current state to help users feel in control and take appropriate action. [Learn more about Visibility of system status](https://www.nngroup.com/articles/visibility-system-status/).
+
 - **User control and freedom.** This pattern also gives users control over their own information. [Learn more about User Control and Freedom](https://www.nngroup.com/articles/user-control-and-freedom/).
 
 ### When not to use this pattern
+
 - **When prefilled information is not used.** If the form does not include prefilled information, there is no need to inform users how to update their prefilled information.
 
 ### When to use caution
+
 - **When data cannot be changed online.** This pattern accounts for cases when the user needs to call VA to change their information, such as changing their name and Social Security number. Form developers should confirm that the phone number listed is the correct number for Veterans to call and update this specific information. If there are cases where information cannot be changed, even by calling VA, explain this to the user.
 
 ## How to design and build
+
 ### Anatomy or layout details
 This pattern involves these types of pages found in VA.gov forms:
 
@@ -42,10 +49,24 @@ This pattern involves these types of pages found in VA.gov forms:
 See the related ["Help users to... Know when their information is prefilled"](https://design.va.gov/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
 #### Personal information page
-_(screenshot with annotation coming soon - in the interim, view this [Figma file](https://www.figma.com/design/1z3bAkQl4uR1IvAxmtyqZi/AE-Design-Patterns---Update-Prefill?node-id=3-127&t=GYX9RT423zMZrhat-1))_
+
+{% include component-example.html
+  alt="The first step of a form, asking users to confirm their personal information, such as legal name, date of birth, and Social Security number. That information is contained in a white card. Below the white card is a string of text explaining why this information cannot be edited online."
+  file="/images/patterns/help-users-to/update-prefilled-information/personal-information-page.png" %}
 
 #### Prefill check page
-_(screenshot with annotation coming soon - in the interim, view this [Figma file](https://www.figma.com/design/1z3bAkQl4uR1IvAxmtyqZi/AE-Design-Patterns---Update-Prefill?node-id=3-127&t=GYX9RT423zMZrhat-1))_
+
+In most cases, changes should save to the VA Profile. An informational alert informs users where the changes will be saved.
+
+{% include component-example.html
+  alt="A page for users to update their mailing address. Above the fields is an informational alert stating, 'Any changes you make will also be reflected on your VA.gov profile.'"
+  file="/images/patterns/help-users-to/update-prefilled-information/edit-save-to-profile.png" %}
+
+In cases where users may need more control over where the data saves, instead of displaying the alert at the top of the page, display a radio button asking the user where they want the information to save. Learn more about these cases in the "communicate where changes will save" section below.
+
+{% include component-example.html
+  alt="A page for users to update their mailing address. Below the address fields is a required radio button field asking, 'Do you also want to update this information in your VA.gov profile?'"
+  file="/images/patterns/help-users-to/update-prefilled-information/edit-choose-where-to-save.png" %}
 
 ### How this pattern works
 
@@ -62,39 +83,55 @@ This pattern communicates information that can be edited with:
 - **In most cases, save changes to the VA.gov profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/authenticated-patterns/Design%20and%20Research/2024-09%20Research%20Initiative%202%20-%20Update%20Prefill), most users indicated that they want changes they make to their information to update the information stored on their VA.gov profile. On the edit page, display an informational alert informing users that these changes will impact their profile information.
 
 #### Where needed, give users the choice of where to save
-- **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change over time, like mailing address. This might be especially relevant in cases where forms or perscriptions will be sent to users within the coming days or weeks. In this case, on the edit page, do not display the informational alert informing them where their changes will save. Instead, display a required radio button below the fields asking them if they also want to update this information in their VA.gov profile.
+- **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change over time, like mailing address. This might be especially relevant in cases where forms or prescriptions will be sent to users within the coming days or weeks. In this case, on the edit page, do not display the informational alert informing them where their changes will save. Instead, display a required radio button below the fields asking them if they also want to update this information in their VA.gov profile.
 
 #### Display success alerts when information has been saved
 - **Inform users where the changes were saved.** Display a success alert informing users "We've made these changes to this form and your VA.gov profile" or "We've made these changes to only this form.” Use a standard alert within the form steps. Use a slim alert if the user made changes from the final review page.
 
 ### Components used in this pattern
-- [Alert](https://design.va.gov/components/alert/)
-- [Radio button](https://design.va.gov/components/form/radio-button)
-- [Additional info](https://design.va.gov/components/additional-info)
+- [Alert](/components/alert/)
+- [Radio button](/components/form/radio-button)
+- [Additional info](/components/additional-info)
 
 ## Examples
 ### Informational text after a set of uneditable information
 Inform the user that they need to call VA to update this information. The specific numbers to call may vary by form.
 
-<img width="649" alt="How to edit personal information" src="https://github.com/user-attachments/assets/0c784990-98d2-4c69-a18a-9fdaa8552362">
+{% include component-example.html
+  class="x2"
+  alt="A note to the user explaining why they can't edit personal information online. It starts with the bolded word 'Note' and ends with a link to find more detailed instructions on how to change their legal name."
+  file="/images/patterns/help-users-to/update-prefilled-information/how-to-edit-personal-information.png" %}
 
 ### Alert about where information will save
+Inform users that their information will save to their profile before they make the changes. If your form does not save changes to VA profile by default, or you have a compelling reason why a specific field should not save to the profile, see the Radio button example below.
 
-_(screenshot coming soon - in the interim, view this [Figma file](https://www.figma.com/design/1z3bAkQl4uR1IvAxmtyqZi/AE-Design-Patterns---Update-Prefill?node-id=3-127&t=GYX9RT423zMZrhat-1))_
+{% include component-example.html
+  class="x2"
+  alt="An informational alert with a bolded header saying 'Any changes you make will also be reflected on your VA.gov profile.'"
+  file="/images/patterns/help-users-to/update-prefilled-information/alert-about-where-information-will-save.png" %}
 
 ### Success alert
-Inform users their change has been saved to the form and their VA.gov profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
+Inform users their change has been saved to the form and their VA Profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
 
-![Alert - form and profile](https://github.com/user-attachments/assets/323786ec-62f3-4890-8441-4d8091b985b3)
+{% include component-example.html
+  class="x2"
+  alt="A success alert with the header 'We've updated your mailing address' and the body text 'We've made these changes to this form and your VA.gov profile.'"
+  file="/images/patterns/help-users-to/update-prefilled-information/success-alert.png" %}
 
 If the user made the edit from the final review page, display the slim success alert on the review page, immediately under the header of the section that was edited.
 
-![Alert - form only](https://github.com/user-attachments/assets/b90882ed-ebdc-48a2-abc3-4d00603c39e5)
+{% include component-example.html
+  class="x2"
+  alt="A slim success alert with the text 'Address successfully updated on this form.'"
+  file="/images/patterns/help-users-to/update-prefilled-information/slim-success-alert.png" %}
 
 ### Radio button
-In cases where the information might be subject to change (especially mailing addresses), ask users if they want to save their changes to their VA.gov profile.
+In cases where the information might be subject to change (especially mailing addresses), ask users if they want to save their changes to their VA Profile.
 
-![Radio Buttons](https://github.com/user-attachments/assets/dc1f2a69-9ce2-4e34-b830-cc85f773e56a)
+{% include component-example.html
+  class="x2"
+  alt="A required radio button field asking the user if they also want to update this information in their VA.gov profile."
+  file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
 
 ### Examples in production
 Coming soon!
