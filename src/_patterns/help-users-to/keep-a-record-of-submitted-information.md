@@ -62,7 +62,7 @@ The pattern should load at the top of the page beneath the h1 in this order
 * [Link]({{ site.baseurl}}/components/link) (download?)
 * [Accordion]({{ site.baseurl}}/components/accordion)
 * [Button-Primary]({{ site.baseurl }}/components/button)
-* [ProcessList-Status]({{ site.baseurl }}/components/process-list)
+* [ProcessList]({{ site.baseurl }}/components/process-list)
 
 ## When to consider something else
 Forms that are submitted by unauthenticated users should not display links to claim status tool or My VA on the confirmation page as those submissions will not be immediately tracked or connected to a profile account.
