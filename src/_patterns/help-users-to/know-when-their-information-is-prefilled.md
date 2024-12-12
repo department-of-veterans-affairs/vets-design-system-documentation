@@ -42,15 +42,15 @@ This pattern involves these types of pages found in VA.gov forms:
 #### Introduction page
 There are two states of an introduction page: Authenticated and Unauthenticated.
 
-{% include component-example.html alt="A form introduction page viewed by an authenticated user with an alert that the form will fill parts of their application based on the their account details. Annotations state that alerts should be placed at the top of the page and the word 'note' in the alert should be bolded." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-authenticated-alert.png" caption="Authenticated introduction page alert on the introduction page."  %}
+{% include component-example.html alt="A form introduction page viewed by an authenticated user with an alert that the form will fill parts of their application based on the their account details. Annotations state that alert header is an H2, and that alerts should be placed at the top of the page and the word 'note' in the alert should be bolded." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-authenticated-alert.png" caption="Authenticated introduction page alert on the introduction page."  %}
 
 {% include component-example.html alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page."  class="x2" %}
 
 #### Personal information page
-{% include component-example.html alt="A Veteran information page in a form flow with an uneditable card containing the Veteran's name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information. An annotation states that the gray card might be replaced in future iterations of the pattern." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page."  %}
+{% include component-example.html alt="A Veteran information page in a form flow with a white card containing  Veteran's uneditable information, including name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page."  %}
 
 #### Prefill check page
-{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a white editable card containing the Veteran's mailing address. The alert states that the form has prefilled some of the Veteran's information. Annotations state that alerts should be placed at the top of the page, and that the white card might be replaced in future iterations of the pattern." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable." %}
+{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a card containing the Veteran's editable mailing address. The alert states that the form has prefilled some of the Veteran's information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable." %}
 
 ### How this pattern works
 
@@ -191,12 +191,8 @@ Directions for updating information that can't be updated online vary. So direct
 #### Authenticated intro page alert
 > [content] **Note:** Since you’re signed in to your account, we can prefill part of your form based on your account details. You can also save your form in progress and come back later to finish filling it out.
 
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-authenticated-alert-for-intro.png" width="600" alt="Authenticated alert for introduction page">
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/authenticated-prefill-alert.png" width="600" alt="An informational alert with the header 'We can prefill some of your  information.' It informs users that if they sign in, we can prefill some information for them, and they can leave and return to the form later to finish filling it out.">
 
-#### Authenticated contextual alert
-> [content] **Note:** We've prefilled some of your information from your account. If you need to correct anything, you can select edit below. All updates will be made only to this form.
-
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-authenticated-alert-for-page.png" width="600" alt="Authenticated alert for a form application page">
 
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/authenticated-patterns/Design%20and%20Research/2024-07-Research%20Initiative-One-Prefill) to gather validation about this pattern.
