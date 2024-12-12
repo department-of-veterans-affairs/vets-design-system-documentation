@@ -185,7 +185,7 @@ Directions for updating information that can't be updated online vary. So direct
 > [text link] Start your form without signing in
 
 
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-unauthenticated-alert.png" width="600" alt="Unauthenticated introduction page alert">
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-unauthenticated-alert.png" width="600" alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in.">
 
 
 #### Authenticated intro page alert
