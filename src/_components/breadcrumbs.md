@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Breadcrumbs
-intro-text: "Breadcrumbs provide secondary navigation to help users understand where they are in a website. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results. This can improve rankings, and provide users with additional context."
+intro-text: "Breadcrumbs provide secondary navigation to help users understand where they are in a website. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results (for unauthenticated content that doesn’t require users to be logged in). This can improve rankings, and provide users with additional context."
 status: use-deployed
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A151&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
@@ -40,44 +40,48 @@ anchors:
 
 ### When to use
 
-* **Hierarchies more than 2 levels.** Use a breadcrumb when the section of content is more than 2 levels deep.
-* **Include one, include all.** If you use a breadcrumb for one page in a hierarchy, use a breadcrumb for all pages within that hierarchy.
+**For pages in hierarchies with more than 2 levels.** Use a breadcrumb for sections of content that have more than 2 levels. The breadcrumb should be displayed starting at the level 2 page and persist on all child pages in the hierarchy. For example, if a level 2 page has child pages, all pages starting at that level 2 page would need a breadcrumb.  
+
+**To provide a consistent experience for similar pages.** A breadcrumb can be used if similar pages or sections of a site are using breadcrumbs even if it doesn’t meet the requirements.  For example, the Service Members benefit hub page is a level 2 page with no hierarchy and therefore wouldn’t normally have a breadcrumb.  However, all other benefit hubs do have a breadcrumb, so providing one on this page creates a consistent experience when navigating various benefit hubs to learn about benefits. 
 
 ### When to consider something else
 
-* **Simple sections of the site.** Do not use a breadcrumb if the section of the site is not every deep (i.e. only 2 levels of content or less)
-* **Irrelevant hierarchy.** Do not use a breadcrumb if the path or hierarchy of the page is irrelevant to the user or experience.
+**The top level page of your site.** A breadcrumb is not necessary for the top level page of your site.  For example, the VA.gov home page should not have a breadcrumb.
+
+**Level 2 pages with no children.** A breadcrumb is not necessary for pages that are 2 levels deep and do not have any child pages.  For example, the My VA page lives at `VA.gov home > My VA`. Since this page is only 2 levels deep and does not have any child pages, it does not need a breadcrumb. 
+
+**When using the minimal header component.** When the [Header - Minimal]({{ site.baseurl }}/components/header/header-minimal) component is used, the breadcrumb can be removed to further prevent the user from easily navigating away and inadvertently interrupting their main task.
 
 ### Usability guidance
 
-* **Hierarchical relationships, not linear paths.** Breadcrumbs should be based on content hierarchy, not on the user’s click path or browser history. For online applications and forms, the breadcrumb represents the forms’s placement within the site hierarchy, it does not track the steps or progress of the form flow.
-* **Match the text of the title (h1).** Breadcrumb segment text must match the text of the title (h1) text of a corresponding page and not be an abbreviation or variation of that title. When writing H1s for a page, follow the [content styleguide for writing page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
-Start with "VA.gov home". Clearly indicate that the home page is the VA.gov home page. This clarifies placement within broader VA.gov site, and ensures there's no confusion between the VA.gov home page and the landing page of a section of the site.
+#### The breadcrumb should be placed below the header and above the main content.
+The placement of the breadcrumb must be consistent from page to page and across the entire site.
 
-#### Breadcrumbs in form flows
-
-* In form flows, the breadcrumb should only show up to the form introduction page as the final segment, and maintain that display while the user progresses through the flow. This allows the user to easily get to the beginning of the form flow. Forward and backward CTAs can be provided within the page to allow page by page navigation. The breadcrumb works in concert with the [Progress bar - Segmented component]({{ site.baseurl }}/components/form/progress-bar-segmented) to provide context for where a user is in a process and on the site.
-* When using the [Header - Minimal]({{ site.baseurl }}/components/header/header-minimal), the breadcrumb can be removed to further prevent the user from easily navigating away and not not accomplishing their main task. In this case, the breadcrumb can be replaced with a "Back" link that allows the user to navigate backwards in the flow.
-
-### Placement
-
-* The breadcrumb should be placed below the header and above the main content.
-* The placement of the breadcrumb must be consistent from page to page.
-* Spacing for the breadcrumb is built in to the component and should be consistent throughout all layouts. The correct spacing is specified in the images below:
+Spacing for the breadcrumb is built in to the component and should be consistent throughout all layouts. The correct spacing is specified in the images below:
 
 {% include component-example.html alt="Breadcrumbs have 20px / 2.5 spacing units above and 32px / 4 spacing units below at a mobile breakpoint." file="/images/components/breadcrumbs/breadcrumbs-spacing-mobile.png" caption="Breadcrumbs have 20px or 2.5 spacing units above and 32px or 4 spacing units below at a mobile breakpoint." %}
 
 {% include component-example.html alt="Breadcrumbs have 20px / 2.5 spacing units above and 48px / 6 spacing units below at a desktop breakpoint." file="/images/components/breadcrumbs/breadcrumbs-spacing-desktop.png" caption="Breadcrumbs have 20px or 2.5 spacing units above and 48px or 6 spacing units below at a desktop breakpoint." %}
 
-### Behavior
+#### Use a descriptive label for  the first segment of the breadcrumb. 
+For the home page of a site, do not use icons or just `Home`.  This ensures that the main site home page is differentiated from other types of landing pages on the site.  For www.va.gov, the home page label should be `VA.gov home`.
 
-* All links in the breadcrumb should be interactive and link to their corresponding page, or in the case of the current page link, link to content on the current page.
+#### Breadcrumbs must represent content hierarchy, not the user’s click path. 
+Breadcrumbs represent hierarchical relationships between pages and their placement in that hierarchy, giving the user a sense of where they are in the overall site. 
 
-### SEO considerations
+#### Each breadcrumb segment should use the full page title of the corresponding page.
+Do not shorten or truncate titles of a page (the H1) in the breadcrumb to reduce or eliminate wrapping.  Consider alternative, shorter page titles if possible. Always follow the content style guide for writing [page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
 
-* Search engines utilize breadcrumbs to understand your site structure and gain additional context about your page to help in ranking.
-* Breadcrumbs can also be displayed in search engine results pages (SERPs), which provides additional context to users about your page.
-* Breadcrumbs are not the only element used by search engines, go to [writing for SEO in the content styleguide]({{ site.baseurl }}/content-style-guide/seo) for more SEO assistance.
+#### All segments of the breadcrumb should be interactive and link to their corresponding page. 
+Each breadcrumb segment, including the current page segment,  should link to its corresponding page. Making every segment a link allows screen readers to voice the page link whether the user navigates by element or by tabbing.  Making the current page a link rather than text makes it a focusable and clickable element. This follows [WAI-ARIA Authoring Practices Guide (APG) guidance](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/), which states that an element with `aria-current="page"` should represent the current page.
+
+### Breadcrumbs for linear page flows
+When a user starts a linear flow on the site (i.e. a form flow or task flow), the breadcrumb should represent the placement of the start of that flow within the site, but not follow the user as they step through the pages of the flow.
+
+* The breadcrumb only represents the hierarchy up to the first page of the linear flow (i.e. often the introduction page for forms). As the user progresses through the flow, the breadcrumb does not change or progress with them, and instead remains displaying only up to that initial page.
+  * Example: for a form with the title ‘Apply for VA health care’, the breadcrumb for the introduction page, all pages within the flow, and confirmation page would be `VA.gov home > Health care > Apply for VA health care`
+* This allows a user to use the breadcrumb to return to the beginning of the form flow. The breadcrumb combined with the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component, provides context for where a user is on the site and within the flow
+* Other CTAs on the page, such as the [Button group]({{ site.baseurl }}/components/button/button-group) component, can be used to navigate between pages of the flow. 
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -85,14 +89,6 @@ Start with "VA.gov home". Clearly indicate that the home page is the VA.gov home
 
 To use React Router with this component [follow these instructions](https://design.va.gov/storybook/?path=/docs/uswds-va-breadcrumbs--with-router-link-support#with-router-link-support).
 
-## Content considerations
-
-* **Use "VA.gov home" as the default home crumb title.** This component will default to "VA.gov home" for the first crumb. This is the preferred content for this crumb. Deviation from this should only be done with express permission from CAIA.
-
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
-
-### Additional accessibility guidance for VA
-
-* **Make current page a link.** Use a link for the current page for robustness. While it may sound counterintuitive to link to the current page in this component, it makes sense to include this as a link so screen readers voice the current page link whether the user navigates by element or by tabbing. Making the current page a link rather than text makes it a focusable and clickable element. It also follows [WAI-ARIA Authoring Practices Guide (APG) guidances](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/) which states that an `a` element with `aria-current="page"` should represent the current page.
