@@ -12,28 +12,31 @@ anchors:
 
 <h2 id="new-component-or-pattern">New component or pattern</h2>
 
+<p>Proposing a new component or pattern is appropriate if you have an idea for something that should be included in the design system, or if you receive feedback in the Collaboration Cycle that your work may be useful for other teams. Note that the experimental design process is only necessary when a component or pattern will be useful for other VFS teams. Custom components and patterns that will be used only in your product do not need to go through this process.</p>
+
 <va-process-list>
   <li>
     <h3 id="check-the-design-system-backlog">
       Check the design system and the backlog
     </h3>
     <p>
-      Be sure to check the design system and ensure your component or pattern does not already exist. If your addition overlaps with a current component or pattern, be sure to call that out when you file your request in step 2.
+      As you build your component or pattern, check the design system and ensure it does not already exist. If your addition overlaps with a current component or pattern, be sure to call that out when you file your request.
     </p>
     <p>
-      Check the backlog to see if your idea has already been suggested. If you do not see your idea in the backlog, go to step 2.
+      Next, check the backlog to see if your idea has already been suggested.
     </p>
+    <ul>
+      <li>If you do see your idea in the backlog, comment on that ticket indicating that you have a need for the component. You will need to wait until the Design System Team is able to continue work on this ticket. Do not file a new experimental design request.</li>
+      <li>If you do not see your idea in the backlog, you may continue with filing your request.</li>
+    </ul>
     <p>
       <a class="vads-c-action-link--blue" href="{{ site.github_issues_link_1 }}">Check the backlog</a> 
-    </p>
-    <p>
-      If you do see your idea in the backlog, message the contributors to see if they are moving forward or not. If not, and you would like to tackle the problem, move forward with step 2.
     </p>
   </li>
   <li>
     <h3 id="fill-out-a-request">Fill out a request</h3>
     <p>
-      Fill out an Experimental Design System request issue. This should take no more than 10-15 minutes. In the issue you will need to provide justification for this new component or pattern, and link to any artifacts you want to include. 
+Fill out an Experimental Design System request issue. This should take no more than 10-15 minutes. In the issue you will need to provide justification for this new component or pattern, and link to any artifacts you want to include.
     </p>
     <p>
       <a class="vads-c-action-link--blue" href="{{ site.request_addition_link }}">Request a new addition to the Design System</a>
@@ -42,13 +45,19 @@ anchors:
       If you feel the addition is small and well explained in your issue, then you may request an <a href="#async-review">asynchronous review</a>.
     </p>
     <p>
-      After filling out the issue, post in the <a href="{{ site.slack_channel_link }}">{{ site.slack_channel_name }}</a> slack channel and tag Carol Wong to alert the team that you have filled out an issue and would like to get on the council's agenda.
+      Note that you do not need to have anything coded at this point, and in fact, we suggest not having anything coded since ideally ideas would be surfaced to the council before teams put effort into building new components.
     </p>
     <p>
-      Note that you do not need to have anything coded at this point, and in fact, we suggest not having anything coded since ideally ideas would be surfaced to the council before teams put effort into building new components.  
+      Additionally, the artifacts you include do not need to be high fidelity. They only need to be able to illustrate your concept. We do, however, encourage some thoughts on how your component or pattern works on mobile.    
+    </p>
+  </li>
+  <li>
+    <h3 id="conduct-research">Conduct research</h3>
+    <p>
+      You must validate the design of your new component or pattern with user research. <a href="https://depo-platform-documentation.scrollhelp.site/research-design/research-at-va">Learn about conducting research at VA.</a> You may conduct research before presenting your work to the Design System Council, or you may present to the Design System Council and receive feedback before you complete a research study. 
     </p>
     <p>
-      Additionally, the artifacts you include do not need to be high fidelity. They only need to be able to illustrate your concept. We do, however, encourage some thoughts on how your component or pattern works on mobile.
+      Note that even if the Design System Council approves your component or pattern before you conduct research, you must still validate your work with user research and present your findings to the Design System Council before it can be included in the design system.
     </p>
   </li>
   <li>
@@ -56,31 +65,28 @@ anchors:
       Present to Design System Council
     </h3>
     <p>
-      You will present your work to the Design System Council at an upcoming meeting (unless you have requested an <a href="#async-review">asynchronous review</a>). The Design System Council meets every other Thursday at 11am Eastern. Experimental design requests will always be prioritized in this meeting, and teams can assume generally that they will be able to present the same week of the request. In order to kick off this step:
+      You will present your work to the Design System Council at an upcoming meeting (unless you have requested an <a href="#async-review">asynchronous review</a>). The Design System Council meets every other Thursday at 11am Eastern. Experimental design requests will always be prioritized in this meeting, and teams can assume generally that they will be able to present the same week of the request.
     </p>
-    <ul>
-      <li>
-        Submit a request to join an upcoming Design System Council meeting in <a href="{{ site.slack_channel_link }}">{{ site.slack_channel_name }}</a>. 
-      </li>
-      <li>
-        During the meeting, the Design System Council will evaluate the request and make a decision.
-      </li>
-    </ul>
+    <p>
+      When you are ready to present, post in the <a href="https://dsva.slack.com/archives/C01DBGX4P45">#platform-design-system</a> Slack channel and tag Carol Wong to alert the team that you have filled out an issue and would like to get on the council's agenda. During the meeting, the Design System Council will evaluate the request and make a decision.
+    </p>
     <p>
       <strong>If your component or pattern request is rejected</strong>, the council will add notes as to why and what they suggest you do instead in the issue.
     </p>
+    <ul>
+      <li>
+        <h2 id="async-review">Asynchronous review</h2>
+        <p>
+          If you feel like the change is simple and does not need further explanation beyond what you have provided in your issue then you may ask to have asynchronous approval when creating the initial request. 
+        </p>
+        <ul>
+          <li>Your addition will still be discussed in the council meeting, but you do not have to attend.</li> 
+          <li>The Design System Council may still request additional information from you in order to properly handle your request.</li>
+        </ul>
+      </li>
+    </ul>
   </li>
 </va-process-list>
-
-<h2 id="async-review">Asynchronous review</h2>
-<p>
-  If you feel like the change is simple and does not need further explanation beyond what you have provided in your issue then you may ask to have asynchronous approval when creating the initial request. 
-</p>
-<ul>
-  <li>Your addition will still be discussed in the council meeting, but you do not have to attend.</li> 
-  <li>The Design System Council may still request additional information from you in order to properly handle your request.</li>
-</ul>
-
 
 <h2 id="update-an-existing-component-or-pattern">
   Update an existing component or pattern
@@ -88,14 +94,10 @@ anchors:
 <p>
   If you are suggesting a change to something that already exists in the VA.gov Design System, you should go through the <a href="#new-component-or-pattern">New component or pattern</a> process above. 
 </p>
-<h3>Minor changes</h3>
-<p>
-  If you are requesting a minor change, a change which you feel would be a minor adjustment to current functionality, then you may request an asynchronous review. To do so, complete <a href="#new-component-or-pattern">steps 1 and 2</a> above and indicate in your request that you would like an asynchronous review by the Design System Council.
-</p>
-<h3>Bugs</h3>
-<p>
-  If the change you are requesting is a bug in a component or pattern <a href="{{ site.github_issues_new }}">file an issue</a>. For example, if the behavior of the component does not match our documentation or a component is not behaving as expected. If the Design System Team feels the matter needs to be addressed by the Design System Council, we'll let you know in the issue.
-</p>
+<ul>
+  <li><strong>Minor cahnges:</strong> If you are requesting a minor change, a change which you feel would be a minor adjustment to current functionality, then you may request an asynchronous review. To do so, complete <a href="#new-component-or-pattern">the process</a> above and indicate in your request that you would like an asynchronous review by the Design System Council.</li>
+  <li><strong>Bugs:</strong> If the change you are requesting is a bug in a component or pattern <a href="{{ site.github_issues_new }}">file an issue</a>. For example, if the behavior of the component does not match our documentation or a component is not behaving as expected. If the Design System Team feels the matter needs to be addressed by the Design System Council, we'll let you know in the issue.</li>
+</ul>
 
 <h2 id="update-documentation">
   Update documentation
