@@ -10,7 +10,6 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
-  - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
 
