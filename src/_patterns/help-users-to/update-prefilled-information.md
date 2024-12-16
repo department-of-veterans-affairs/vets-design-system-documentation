@@ -24,11 +24,10 @@ anchors:
 - **When you prefill the user’s information into a form or other online tool.** This pattern helps users understand how they can update their prefilled information, including sensitive information that they can't update online. This pattern also informs users where we'll save their changes—either only to the specific form or tool, or to the form or tool and their VA.gov profile. See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on how to display the prefilled information.
 
 
-#### Design principals
+#### Design principles
+- **Visibility of system status.** This pattern demonstrates the [usability principle of communicating the current state](https://www.nngroup.com/articles/visibility-system-status/) in order to allow users to feel in control and to be able to take appropriate action.
 
-- **Visibility of system status.** This pattern demonstrates the usability principle of communicating the current state to help users feel in control and take appropriate action. [Learn more about Visibility of system status](https://www.nngroup.com/articles/visibility-system-status/).
-
-- **User control and freedom.** This pattern also gives users control over their own information. [Learn more about User Control and Freedom](https://www.nngroup.com/articles/user-control-and-freedom/).
+- **User control and freedom.** This pattern also gives users control over their own information, thereby providing [control and freedom](https://www.nngroup.com/articles/user-control-and-freedom/).
 
 ### When not to use this pattern
 
