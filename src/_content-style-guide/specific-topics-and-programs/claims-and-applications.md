@@ -50,8 +50,7 @@ Not this: "I'm a non-Veteran claimant."
 : We use evidence to refer to all documents and information you submit to support your claim or application. We define evidence as “supporting documents or information.” Supporting documents and other information become evidence when they get attached to a claim or application.
 
 **request**
-: We use requests to refer to a formal ask for something. This could be asking for a next step or further action on something—like requesting a decision review or clinical appeal. Or this could be asking for an item—like requesting a Presidential Memorial Certificate. When you submit a request on VA.gov, you usually don't need to explain why you're eligible in the request itself. This differs from applications, which often involve someone explaining or proving that they're eligible.
-We also use this term in the context of reimbursement for licensing and certification tests and the prep courses for those tests.
+: We use requests to refer to a formal ask for something. This could be asking for a next step or further action on something—like requesting a decision review or clinical appeal. Or this could be asking for an item—like requesting a Presidential Memorial Certificate. When you submit a request on VA.gov, you usually don't need to explain why you're eligible in the request itself. This differs from applications, which often involve someone explaining or proving that they're eligible. We also use this term in the context of reimbursement for licensing and certification tests and the prep courses for those tests.
 
 **sponsor** 
 : We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It's OK to use the word sponsor but lead with the plain language definition. 
