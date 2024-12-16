@@ -77,4 +77,6 @@ The v3 default table is a standard table and does not offer the responsive stack
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/table/#accessibility-accordion">Refer to the U.S. Web Design System for accessibility guidance</a>
+- Tables should be used to display tabular data, which is structured data made up of rows and columns. A table allows the information to be easily interpreted by visually associating row and column headers.
+- _Do not_ use tables for layout purposes. Tables should only be used for data that has inherent relationships, not for design purposes.
+- <a href="https://designsystem.digital.gov/components/table/#accessibility-accordion">Refer to the U.S. Web Design System for additional accessibility guidance</a>.
