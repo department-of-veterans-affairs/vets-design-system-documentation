@@ -38,16 +38,16 @@ Not this: "I'm a non-Veteran claimant."
 : We use claim exams to determine if a Veteran has a service-connected disability. We also use claim exams to rate that disability.
 : - Note: This term is evolving. For now, on first mention on a page, use “VA claim exam (also known as a compensation and pension, or C&P, exam).” After first mention, use “VA claim exam” or “claim exam.”
 
-**file** (noun)
-: We use this term to refer to the actual file a Veteran is uploading from their device. These may not be “documents” as in .doc. They could be .pdf, .jpg, .png, or other file types.
-: - Note: Button text on file upload screens should say "Upload file," not "Upload document" or "Upload evidence."
-
 **document**
 : We use this term to refer to the digital or paper item a Veteran is submitting as evidence.
 : - Note: File input screens in form flows should use "document" in the screen header. For example, "Upload your supporting documents."
 
 **evidence**
 : We use evidence to refer to all documents and information you submit to support your claim or application. We define evidence as “supporting documents or information.” Supporting documents and other information become evidence when they get attached to a claim or application.
+
+**file** (noun)
+: We use this term to refer to the actual file a Veteran is uploading from their device. These may not be “documents” as in .doc. They could be .pdf, .jpg, .png, or other file types.
+: - Note: Button text on file upload screens should say "Upload file," not "Upload document" or "Upload evidence."
 
 **request**
 : We use requests to refer to a formal ask for something. This could be asking for a next step or further action on something—like requesting a decision review or clinical appeal. Or this could be asking for an item—like requesting a Presidential Memorial Certificate. When you submit a request on VA.gov, you usually don't need to explain why you're eligible in the request itself. This differs from applications, which often involve someone explaining or proving that they're eligible. We also use this term in the context of reimbursement for licensing and certification tests and the prep courses for those tests.
