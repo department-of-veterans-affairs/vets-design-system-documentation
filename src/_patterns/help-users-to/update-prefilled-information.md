@@ -21,7 +21,8 @@ anchors:
 
 ### When to use this pattern
 
-- **When you prefill the user’s data into an application, like a form.** This pattern helps users understand how they can edit their prefilled information, especially sensitive information that requires calling a VA center to change. Additionally, this pattern informs users where their changes will be saved—either to the form, or to their form and VA.gov profile. See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on how to display the prefilled information.
+- **When you prefill the user’s information into a form or other online tool.** This pattern helps users understand how they can update their prefilled information, including sensitive information that they can't update online. This pattern also informs users where we'll save their changes—either only to the specific form or tool, or to the form or tool and their VA.gov profile. See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on how to display the prefilled information.
+
 
 #### Design principals
 
@@ -31,11 +32,12 @@ anchors:
 
 ### When not to use this pattern
 
-- **When prefilled information is not used.** If the form does not include prefilled information, there is no need to inform users how to update their prefilled information.
+- **When you don't prefill the user's information.**
 
 ### When to use caution
 
-- **When data cannot be changed online.** This pattern accounts for cases when the user needs to call VA to change their information, such as changing their name and Social Security number. Form developers should confirm that the phone number listed is the correct number for Veterans to call and update this specific information. If there are cases where information cannot be changed, even by calling VA, explain this to the user.
+- **When the user can't update their information online, but can update another way.** This pattern accounts for cases when the user needs to call VA or take a different step to change certain information, such as their name and Social Security number. You'll need to confirm that you're giving the correct instructions for changing that specific information.
+- **When the user can't update their information at all.** If your form prefills information that the user can't change through any means, you'll need to explain that directly.
 
 ## How to design and build
 
@@ -43,29 +45,32 @@ anchors:
 
 This pattern involves these types of pages found in VA.gov forms:
 
-- **Personal information page:** Usually the first page of a form after the user signs in. Has personal details that typically cannot be edited online, like name, date of birth, Social Security number, etc.
-
-- **Prefill check page:** Any page of a form that displays prefilled information users can edit within the form.
+- **Prefilled information the user can't update:** This is usually personal information like name, date of birth, and Social Security number.
+- **Prefilled information the user can update:** This can be many different types of information that the user can update directly on the screen where we display it.
 
 See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
-#### Personal information page
+#### Prefilled information the user can update
 
 {% include component-example.html
   class="x2"
-  alt="The first step of a form, asking users to confirm their personal information, such as legal name, date of birth, and Social Security number. That information is contained in a white card. Below the white card is a string of text explaining why this information cannot be edited online."
+  alt="A form page asking users to confirm their personal information, such as legal name, date of birth, and Social Security number. That information is contained in a white card. Below the white card is a string of text explaining why users can't update that information online."
   file="/images/patterns/help-users-to/update-prefilled-information/personal-information-page.png" %}
 
-#### Prefill check page
+#### Prefilled information the user can update
 
-In most cases, changes should save to the VA Profile. An informational alert informs users where the changes will be saved.
+There are 2 variations of this type of page.
+
+##### If we automatically save changes to VA.gov profile
+In most cases, changes should save to both the form or tool and to VA.gov profile. An informational alert informs users where we'll save their changes.
 
 {% include component-example.html
   class="x2"
   alt="A page for users to update their mailing address. Above the fields is an informational alert stating, 'Any changes you make will also be reflected on your VA.gov profile.'"
   file="/images/patterns/help-users-to/update-prefilled-information/edit-save-to-profile.png" %}
 
-In cases where users may need more control over where the data saves, instead of displaying the alert at the top of the page, display a radio button asking the user where they want the information to save. Learn more about these cases in the "communicate where changes will save" section below.
+##### If we let the user choose whether to save changes to VA.gov profile
+In certain cases, users may need more control over where the changes will save. Instead of displaying an informational alert at the top of the page, display a question with radio button response options asking the user where they want to save their changes. Learn more about these cases in the "communicate where changes will save" section below.
 
 {% include component-example.html
   class="x2"
@@ -74,30 +79,24 @@ In cases where users may need more control over where the data saves, instead of
 
 ### How this pattern works
 
-#### Communicate information that cannot be edited
+#### Communicate whether or not users can update their prefilled information online
 
-This pattern communicates information that cannot be edited with:
+Here's how to communicate that users can't update certain information online:
 
-- **Uneditable prefilled information displayed in a gray card.** Display prefilled information that cannot be changed online (such as legal name, date of birth, and Social Security number) in a card component. This is often one of the first pages in a form.
-- **Directions for updating uneditable information displayed as text.** Add informational text under the card that has the bolded word “note” and directions to update this information offline.
+- **Omit the edit link in cards with non-editable information.**
+- **Include instructions for how to update uneditable information.** Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. See the "content considerations" section for sample text.
 
-#### Communicate information that can be edited
+Here's how to communicate that users can update certain information online:
 
-This pattern communicates information that can be edited with:
+- **Display editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone, email, or mailing address.
 
-- **Editable prefilled information displayed in a white card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone, email, or mailing address.
+#### Communicate that changes will also save to VA.gov profile — or let users choose whether to save to profile
+- **In most cases, tell users that we'll automatically save changes to their VA.gov profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md), most users indicated that they want changes they make to their information to update their VA.gov profile. On the edit page, display an informational alert informing users that these changes will impact their profile information.
 
-#### Communicate where changes will save
+- **In certain cases, let users choose where to save their information.** Consider using this variation for information that may change frequently. For example, when reordering medical supplies, users may want to provide a temporary mailing address. But they may not want this temporary mailing address to save to their VA.gov profile. In these cases, on the edit page, don't display the informational alert informing them where their changes will save. Instead, display a required radio button below the editable fields asking them if they also want to update this information in their VA.gov profile.
 
-- **In most cases, save changes to the VA.gov profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/authenticated-patterns/Design%20and%20Research/2024-09%20Research%20Initiative%202%20-%20Update%20Prefill), most users indicated that they want changes they make to their information to update the information stored on their VA.gov profile. On the edit page, display an informational alert informing users that these changes will impact their profile information.
-
-#### Where needed, give users the choice of where to save
-
-- **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change over time, like mailing address. This might be especially relevant in cases where forms or prescriptions will be sent to users within the coming days or weeks. In this case, on the edit page, do not display the informational alert informing them where their changes will save. Instead, display a required radio button below the fields asking them if they also want to update this information in their VA.gov profile.
-
-#### Display success alerts when information has been saved
-
-- **Inform users where the changes were saved.** Display a success alert informing users "We've made these changes to this form and your VA.gov profile" or "We've made these changes to only this form.” Use a standard alert within the form steps. Use a slim alert if the user made changes from the final review page.
+#### Communicate when updates to prefilled information are successful
+- **Inform users where the changes were saved.** Display a success alert informing users "We've made these changes to this form and your VA.gov profile" or "We've made these changes to only this form.” Place this alert at the top of the page, below the stepper and the auto-save text. Use a standard alert if the user made the changes on a form step page. Use a slim alert if the user made the changes on the final review page.
 
 ### Components used in this pattern
 
@@ -107,18 +106,18 @@ This pattern communicates information that can be edited with:
 
 ## Examples
 
-### Informational text after a set of uneditable information
+### Note after uneditable prefilled information
 
-Inform the user that they need to call VA to update this information. The specific numbers to call may vary by form.
+Inform the user that they need to call VA to find out how to update this information. The specific number to call will vary by form.
 
 {% include component-example.html
   class="x2"
   alt="A note to the user explaining why they can't edit personal information online. It starts with the bolded word 'Note' and ends with a link to find more detailed instructions on how to change their legal name."
   file="/images/patterns/help-users-to/update-prefilled-information/how-to-edit-personal-information.png" %}
 
-### Alert about where information will save
+### Alert informing user we'll save changes to VA.gov profile
 
-Inform users that their information will save to their profile before they make the changes. If your form does not save changes to VA profile by default, or you have a compelling reason why a specific field should not save to the profile, see the Radio button example below.
+Inform users that their changes will save to their profile before they make the changes. If your form does not save changes to VA.gov profile, use a radio button question instead (example below).
 
 {% include component-example.html
   class="x2"
@@ -127,14 +126,14 @@ Inform users that their information will save to their profile before they make 
 
 ### Success alert
 
-Inform users their change has been saved to the form and their VA Profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
+Inform users their change has been saved to the form and their VA.gov profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
 
 {% include component-example.html
   class="x2"
   alt="A success alert with the header 'We've updated your mailing address' and the body text 'We've made these changes to this form and your VA.gov profile.'"
   file="/images/patterns/help-users-to/update-prefilled-information/success-alert.png" %}
 
-If the user made the edit from the final review page, display the slim success alert on the review page, immediately under the header of the section that was edited.
+If the user made the change from the final review page, display the slim success alert on the review page, immediately under the header of the section where they made the change.
 
 {% include component-example.html
   class="x2"
@@ -143,7 +142,7 @@ If the user made the edit from the final review page, display the slim success a
 
 ### Radio button
 
-In cases where the information might be subject to change (especially mailing addresses), ask users if they want to save their changes to their VA Profile.
+In cases where the information might change frequently (like a temporary mailing address), ask users if they want to save their changes to their VA.gov profile.
 
 {% include component-example.html
   class="x2"
@@ -161,21 +160,12 @@ Coming soon!
 ## Content considerations
 
 ### Directions for updating uneditable information
+Directions for updating information vary by form, benefit type, and type of information. You must confirm with subject matter experts that your instructions are accurate for the way your specific form populates information and how to update it. And you must confirm with the call center that they will be able to either update the information directly, or give the person instructions for how to update the information.
 
-Directions for updating information that can’t be updated online vary. Instructions should be updated based on the context of the form or application used. General guidelines are:
-
-- If it’s **benefits**-related, include the content that has the VA benefits hotline. For example:
-
-  > **Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call the VA benefits hotline at 800-827-1000 (TTY: 711), Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
-  >
-  > [Find more detailed instructions for how to change your legal name (opens in new tab)](https://www.va.gov/resources/how-to-change-your-legal-name-on-file-with-va/)
-
-- If it’s **health**-related, include the content that has the VA benefits hotline _and_ the content to contact your local medical center.
-
-  > **Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call your local VA medical center ([find a VA location tool](https://www.va.gov/find-locations/)) to get help changing your name on file with VA. Ask for the eligibility department.
-  >
-  > [Find more detailed instructions for how to change your legal name (opens in new tab)](https://www.va.gov/resources/how-to-change-your-legal-name-on-file-with-va/)
+Here's an example that tells people to call the VA benefits hotline:
+> **Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call us at 800-827-1000 (TTY: 711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
+>
+> [Find more detailed instructions for how to change your legal name (opens in new tab)](https://www.va.gov/resources/how-to-change-your-legal-name-on-file-with-va/)
 
 ## Research findings
-
-The Authenticated Experience Design Patterns team [conducted user research](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/authenticated-patterns/Design%20and%20Research/2024-09%20Research%20Initiative%202%20-%20Update%20Prefill) in late 2024 about how users prefer to see their editable and non-editable information, and how they prefer to be informed about how to edit it. The majority of participants want updates to save to their VA.gov profile, but some also want the ability to choose where the data saves, in the case that they are using a temporary address or other temporary situation.
+The Authenticated Experience Design Patterns team [conducted user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in late 2024 about how users prefer to see their editable and non-editable information, and how they prefer to be informed about how to edit it. The majority of participants want updates to save to their VA.gov profile, but some also want the ability to choose where the updates save, in the case that they are using a temporary address or other temporary situation.

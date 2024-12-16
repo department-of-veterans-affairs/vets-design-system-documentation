@@ -64,7 +64,7 @@ This pattern communicates information that can be edited by:
 - **Displaying editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone, email, or mailing address.
 
 #### Communicate where changes will save
-- **In most cases, save changes to the VA Profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md), most users indicated that they want changes made to their information to update the information stored on their VA Profile. On the edit page, display an informational alert informing users that these changes will impact their profile information.
+- **In most cases, save changes to the VA Profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md), most users indicated that they want changes made to their information to update the information stored on their VA Profile. On the edit page, display an informational alert informing users that these changes will impact their profile information. This alert and others should be placed at the top of the page, directly under the form name.
 
 #### Where needed, give users the choice of where to save
 - **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change semi-frequently. For example, when applying to refill and track VA prescriptions or medical devices, users may want to send to a temporary mailing address, and may not want this temporary mailing address to save to their VA Profile. In these cases, on the edit page, do not display the informational alert informing them where their changes will save. Instead, display a required radio button below the fields asking them if they also want to update this information in their VA Profile.
@@ -108,7 +108,7 @@ When using the `va-card` element to display prefilled information, ensure that t
 Here is some example markup for a card of uneditable content that utilizes a description list.
 
 ```html
-<va-card background>
+<va-card>
   <div class="vads-u-padding--4 vads-u-margin--0">
     <dl>
       <dt class="vads-u-font-weight--bold">Name</dt>
@@ -151,9 +151,7 @@ If a user can update their information, than pieces of information can be shown 
 
 ## Content considerations
 ### Directions for updating uneditable information
-Directions for updating information that can’t be updated online vary. See the ["Help users to... Update Prefilled information" pattern](/patterns/help-users-to/update-prefilled-information) for guidance. So directions should be updated based on the context of the form or application used. CAIA is currently working on finalizing some base language to be included, but general guidelines are:
-- If it's benefits-related, include the content that has the VA benefits hotline
-- If it's health-related, include the content that has the VA benefits hotline AND the content to contact your local medical center
+Directions for updating information that can’t be updated online vary. See the ["Help users to... Update Prefilled information" pattern](/patterns/help-users-to/update-prefilled-information) for guidance.
 
 #### Unauthenticated intro page alert
 
@@ -182,4 +180,4 @@ Directions for updating information that can’t be updated online vary. See the
 
 
 ## Research findings
-The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/authenticated-patterns/Design%20and%20Research/2024-07-Research%20Initiative-One-Prefill) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
+The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
