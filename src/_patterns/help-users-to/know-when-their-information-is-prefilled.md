@@ -50,7 +50,7 @@ There are two states of an introduction page: Authenticated and Unauthenticated.
 {% include component-example.html alt="A Veteran information page in a form flow with a white card containing  Veteran's uneditable information, including name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page."  %}
 
 #### Prefill check page
-{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a card containing the Veteran's editable mailing address. The alert states that the form has prefilled some of the Veteran's information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the Prefill check page. This is the proposed style to display data that is editable." %}
+{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a card containing the Veteran's editable mailing address. The alert states that the form has prefilled some of the Veteran's information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the prefill check page. This is the proposed style to display data that is editable." %}
 
 ### How this pattern works
 
