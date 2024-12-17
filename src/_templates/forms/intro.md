@@ -32,15 +32,8 @@ Since people can navigate directly to this page from outside VA.gov, the intro p
 
 There are 2 versions of the intro page:
 
-- **Application**: Use this variation if the form is an application for a benefit or service.
-- **Non-application**: In most cases, use this variation if the form is **not** an application for a benefit or service. For example, use this for [supporting forms](https://www.va.gov/supporting-forms-for-claims/) that people need to submit along with their application and for claims for reimbursement under VA health care programs.
-
-Both variations mostly follow the same structure. The only difference is the section after the intro paragraph:
-
-- Applications use a process list
-- Non-applications use a "What to know before you fill out this form" section
-
-**Note:** Some straightforward applications may not require a process list. It's OK to use the same structure as non-application forms for those.
+- **Process list**: Use this variation if the process of using the form is complicated enough that it warrants a process list. This variation provides more space to list information to gather before starting the form. In most cases, use this variation if the form is an initial claim or application for a VA benefit or a decision review request. 
+- **No process list**: In most cases, use this variation if the form is **not** an application for a benefit or service. For example, use this for [supporting forms](https://www.va.gov/supporting-forms-for-claims/) that people need to submit along with their application and for claims for reimbursement under VA health care programs. In place of the process list, this variation has a "What to know before you fill out this form" section.
 
 ## Structure
 
@@ -73,13 +66,13 @@ Alternate example:
 
 **Note:** Guidance on this part of the template is evolving. Check back for updates.
 
-## Process list (for applications)
+## Process list
 
-- Use a [process list]({{ site.baseurl }}/components/process-list) to describe the steps to apply
+- Use a [process list]({{ site.baseurl }}/components/process-list) to describe the steps
 - Use this H2 above the list: "Follow these steps to get started"
 - Use the numbered process steps listed here as H3s
 - Add tailored need-to-know information about the specific form under each step, but aim to keep this section as brief as possible
-- Consider how the information in this process list aligns with information on the related VA.gov pages for this benefit—if you need to add or update information on those pages, talk with the Sitewide content, accessibility, information architecture (CAIA) team that manages all benefit pages in the Drupal CMS
+- Consider how the information in this process list aligns with information on the related VA.gov pages for this benefit—if you need to add or update information on those pages, talk with the sitewide content and IA team that manages all benefit pages in the Drupal CMS
 
 **1. Check your eligibility**
 
@@ -117,15 +110,15 @@ Example:
 > What happens after you apply [additional info component header]
 > We process health care applications within about a week. We’ll send you a letter in the mail with our decision.
 
-## What to know section (for non-applications)
+## What to know section (for variation with no process list)
 
 - Use the H2 "What to know before you fill out this form"
 - Use a short bulleted list (2 to 5 bullets) to explain the most important things people need to know related to the form, like who can submit this form, when submitting this form is unnecessary, or time limits to be aware of
 - If you need an additional list with more information about this form, you can add a second bulleted list in this section, or add another H2 section for that information
 
-## Sign-in widget, prefill alert, or "continue saved form" alert
+## Sign-in alert, prefill alert, or "continue saved form" alert
 
-Dynamically display one of these options. Sign-in widgets and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.
+Dynamically display one of these options. Sign-in alerts and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.
 
 **Note:** The sign-in and prefill variations assume that the form prefills information for people who are signed in to VA.gov.
 
@@ -144,9 +137,7 @@ Dynamically display one of these options. Sign-in widgets and prefill alerts sho
 
 ### If the person is not signed in yet
 
-Choose the correct sign-in widget for your form.
-
-**Note:** The [alert component page]({{ site.baseurl }}/components/alert) has examples of sign-in widget alerts, but we're currently updating our guidance for sign-in and verification widgets in online forms. Check back here for updates, and in the meantime reach out to the Sitewide CAIA team in our sitewide-content-accessibility-ia Slack channel for support.
+Implement the [Help users to sign-in pattern](https://design.va.gov/patterns/help-users-to/sign-in) with the correct series of [sign-in alert components](https://design.va.gov/components/alert/alert-sign-in/) for your form. If you need help implementing this pattern, contact the identity team and the sitewide content and IA team.
 
 ## OMB and Need help sections
 
@@ -160,7 +151,7 @@ The [Need help component]({{ site.baseurl }}/components/form/need-help) is a foo
 
 {% include component-example.html alt="An example of a need help footer for forms pages." file="/images/templates/forms/introduction/need-help.png" caption="An example of a Need help component used on all forms pages." class="x2" %}
 
-## Examples (application)
+## Examples (process list)
 
 ### Unauthenticated
 
@@ -199,7 +190,7 @@ The introduction form page for authenticated users consists of:
 * [Apply for Veterans Pension benefits](https://www.va.gov/pension/application/527EZ/)
 * [Apply for VA health care](https://www.va.gov/health-care/apply/application/)
 
-## Examples (non-application)
+## Examples (no process list)
 
 ### Unauthenticated
 
