@@ -45,7 +45,7 @@ The pattern must display the name of the form, the date of the submission, a con
 * **Include a copy of the submitted information.** Include a copy of the information submitted on the form. Be sure to mask out SSN, VA File number, and Alien Registration numbers on this copy.
 * **Inform users to print the confirmation for their records.** Notify users that they can print this confirmation page.
 * **Include a "Print this page" primary button.** A printed record provides a reference for future use. The "Print this page" button appears at the bottom of the summary page.
-* **Include a "What to expect next" task list.** (add more text here)
+* **Include a "What to expect next" task list.** This task list should tell the user what VA is doing next with their form submission. 
 
 
 ### Placement
@@ -62,7 +62,7 @@ The pattern should load at the top of the page beneath the h1 in this order
 * [Link]({{ site.baseurl}}/components/link) (download?)
 * [Accordion]({{ site.baseurl}}/components/accordion)
 * [Button-Primary]({{ site.baseurl }}/components/button)
-* [ProcessList-Status]({{ site.baseurl }}/components/process-list)
+* [ProcessList]({{ site.baseurl }}/components/process-list)
 
 ## When to consider something else
 Forms that are submitted by unauthenticated users should not display links to claim status tool or My VA on the confirmation page as those submissions will not be immediately tracked or connected to a profile account.
