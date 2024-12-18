@@ -118,7 +118,7 @@ Example:
 
 ## Sign-in alert, prefill alert, or "continue saved form" alert
 
-Dynamically display one of these options. Sign-in alerts and prefill alerts should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.
+Dynamically display one of these options. [Sign-in alerts]({{ site.baseurl}}/components/alert/alert-sign-in/) and [prefill alerts]({{ site.baseurl }/components/form/prefill) should appear directly under the process list or "what to know" section. The "continue saved form" alert should appear above the process list or "what to know" section, because the person has already gotten that information when they started the form in a past session.
 
 **Note:** The sign-in and prefill variations assume that the form prefills information for people who are signed in to VA.gov.
 
