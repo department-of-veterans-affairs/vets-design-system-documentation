@@ -4,6 +4,7 @@ title: Stay informed of their form submission status
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
 intro-text: "Follow this pattern to notify people when their online form submission is in progress, when we receive their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=5600-63725&t=WnCXwOVti1WHXnIP-1
 status: use-with-caution-candidate
 research-title: Help users to stay informed of app status
 anchors:
