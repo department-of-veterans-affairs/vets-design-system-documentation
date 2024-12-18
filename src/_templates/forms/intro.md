@@ -137,7 +137,7 @@ Dynamically display one of these options. [Sign-in alerts]({{ site.baseurl}}/com
 
 ### If the person is not signed in yet
 
-Implement the [Help users to sign-in pattern](https://design.va.gov/patterns/help-users-to/sign-in) with the correct series of [sign-in alert components](https://design.va.gov/components/alert/alert-sign-in/) for your form. If you need help implementing this pattern, contact the identity team and the sitewide content and IA team.
+Implement the [Help users to sign-in pattern]({{ site.baseurl }}/patterns/help-users-to/sign-in) with the correct series of [sign-in alert components]({{ site.baseurl }}/components/alert/alert-sign-in/) for your form. If you need help implementing this pattern, contact the identity team and the sitewide content and IA team.
 
 ## OMB and Need help sections
 
