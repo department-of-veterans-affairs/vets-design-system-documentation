@@ -13,7 +13,6 @@ sub-pages:
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Variations
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
