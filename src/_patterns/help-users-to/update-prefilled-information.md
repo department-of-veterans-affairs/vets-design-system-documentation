@@ -49,7 +49,7 @@ This pattern involves these types of pages found in VA.gov forms:
 
 See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
-#### Prefilled information the user can update
+#### Prefilled information the user can't update
 
 {% include component-example.html
   class="x2"
@@ -57,6 +57,11 @@ See the related ["Help users to... Know when their information is prefilled"](/p
   file="/images/patterns/help-users-to/update-prefilled-information/personal-information-page.png" %}
 
 #### Prefilled information the user can update
+
+{% include component-example.html
+  class="x2"
+  alt="A card that shows the address information along with a link to edit if needed."
+  file="/images/patterns/help-users-to/update-prefilled-information/address-page.png" %}
 
 There are 2 variations of this type of page.
 
