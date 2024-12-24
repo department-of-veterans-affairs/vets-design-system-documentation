@@ -22,8 +22,8 @@ It consists of three required parts.
 
 When put together, the structure is `[global namespace]-[class prefix]-[BEM syntax]`, or:
 
-```
-vads-c-component-name
+```css
+.vads-c-component-name
 ```
 
 There are other variants on the naming convention as well.
@@ -53,26 +53,26 @@ While the BEM syntax typically results in longer class names, it is excellent fo
 
 For example, an alert can be considered a **block** (for brevity, we will not use the full naming convention here).
 
-```
+```css
 .alert {}
 ```
 
 The alert might have several child **elements** unique to that block, perhaps a header or a body. Element names are the block + the element name, separated by two underscores (`__`).
 
-```
+```css
 .alert__header {}
 .alert__body {}
 ```
 
 There can be different types of alerts, such as success or error. These are _types_ are known as **modifiers**. Modifier names are the block + modifier name, separated by two hyphens (`--`). Modifier selectors are secondary class names that contain only the modified properties.
 
-```
+```css
 .alert--success {}
 .alert--error {}
 ```
 
 When put together, we can have something like:
-```
+```html
 <div class="alert alert--success">
   <h2 class="alert__header">This is the alert heading</h2>
   <div class="alert__body">

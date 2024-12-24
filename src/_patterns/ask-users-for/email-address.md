@@ -22,13 +22,13 @@ anchors:
 
 ### When to use this pattern
 
-* **When you need to collect an email address.** For example, for contact information.
+* **For collecting an email address, which is required for online forms.** As of October 2024, collecting an email address is required for online forms. Digital submissions require following up with the user digitally which requires an email address.
 
 ## Examples
 
 ### Default
 
-{% include component-example.html alt="An email address text-input field." file="/images/patterns/ask-users-for/email-address/email-address.png" caption="An example of asking users for an email address." width="50%" %}
+{% include component-example.html alt="An email address text-input field." file="/images/patterns/ask-users-for/email-address/email-address.png" caption="An example of asking users for an email address" width="50%" %}
 
 <a class="vads-c-action-link--blue" href="{{ page.example-link }}">
   View an example
@@ -38,12 +38,12 @@ anchors:
 
 ### How this pattern works
 
-* **Prepopulate email address from profile whenever possible.** This makes it easier for users as they have one less field to complete.
-* **Adding an email confirmation field.** The email confirmation field is unnecessary if we're using the email from a profile. Also, it's not useful for catching errors as most users copy and paste and don't review their initial entry.
+* **Collect an email address for the Veteran and, if not the same person, the person completing the form.** It is a requirement to capture the email address of the person completing the form. If this is not the Veteran it is also necessary to collect the email address of the Veteran. Both should be [notified at the appropriate touch points for a form submission]({{ site.baseurl }}/patterns/help-users-to/stay-informed-of-their-application-status).
+* **Pre-populate email address from VA.gov Profile whenever possible.** This makes it easier for users as they have one less field to complete.
 * **If possible, tell users why you want their email address.** Users need to know that the VA won't abuse their email and which email they'd like to provide. An example message is: *We may use your contact information so we can get in touch with you if we have questions about your application.*
-* **Validate email addresses.** You should validate email addresses so you can let users know if they have entered one incorrectly.
-* **Inform users when prefilling information from VA.gov profile.** Notify users that information from their profile has been prefilled into the form. An example message is: *We've prefilled some of your information from your account.*
-* **Indicate to users whether an update in this form will update their VA.gov profile.** Notify users that a change will not update their VA.gov profile. An example message is: *Any updates you make here will only apply to this application.*
+* **Do not use an email confirmation field.** The email confirmation field is unnecessary if we're using the email from a profile. Also, it's not useful for catching errors as most users copy and paste and don't review their initial entry.
+* **Validate email addresses upon entry.** You should validate email addresses for formatting so you can let users know if they have entered an email incorrectly.
+* **Inform users when prefilling information from VA.gov profile.** Notify users that information from their profile has been prefilled into the form using the [prefill component]({{ site.baseurl }}/components/form/prefill).
 * **Pair with phone numbers.** Collection of email address is paired with [phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers). The two patterns typically appear on the same step/page.
 
 ### Components used in this pattern

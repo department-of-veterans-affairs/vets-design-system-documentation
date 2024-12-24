@@ -13,7 +13,6 @@ sub-pages:
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Variations
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -46,6 +45,10 @@ anchors:
 ### Download
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
+
+### External
+
+{% include storybook-preview.html story="components-va-link--external" link_text="external va-link" height="50px" %}
 
 ### Video
 
@@ -125,6 +128,7 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 - **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
 - **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
 - **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
+  - By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
 
 {% include content/links-vs-buttons.md %}
 

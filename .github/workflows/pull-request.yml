@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        environment: [{ bucket: dev-design.va.gov, config: dev.yml }, { bucket: staging-design.va.gov, config: staging.yml }, { bucket: design.va.gov, config: prod.yml }]
+        environment: [ { bucket: design.va.gov, config: prod.yml }]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

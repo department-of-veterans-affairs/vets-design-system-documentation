@@ -2814,9 +2814,24 @@
             }
           }
         },
-        "vads-font-size-base": {
+        "vads-font-size-root": {
           "type": "dimension",
           "value": "{uswds.font.size.uswds-system-font-size-6}",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "mode": "Value",
+              "collection": "vads-primitives",
+              "scopes": [
+                "ALL_SCOPES"
+              ],
+              "variableId": "VariableID:562:4293",
+              "exportKey": "variables"
+            }
+          }
+        },
+        "vads-u-font-size--source-sans-normalized": {
+          "type": "dimension",
+          "value": "{uswds.font.size.uswds-system-font-size-7}",
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "mode": "Value",
@@ -3228,7 +3243,7 @@
       },
       "vads-label-font-size": {
         "type": "color",
-        "value": "{vads-primitives.font.size.vads-font-size-base}",
+        "value": "{vads-primitives.font.size.vads-font-size-root}",
         "extensions": {
           "org.lukasoppermann.figmaDesignTokens": {
             "mode": "Mode 1",

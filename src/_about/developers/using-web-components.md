@@ -148,7 +148,7 @@ If the Web Component has a custom event that you need to use and you're **not** 
   const element = document.querySelector('va-example-component');
   const exampleCallback = event => { console.log(event.detail) }
   element.addEventListener('vaChange', exampleCallback)
-<script>
+</script>
 
 <va-example-component>
 ```

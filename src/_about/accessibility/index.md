@@ -6,6 +6,7 @@ intro-text: How to follow accessibility standards when using or contributing to 
 sub-pages:
   - sub-page: Accessibility testing for design system components
   - sub-page: Accessibility annotations
+  - sub-page: Focus management
 ---
 
 {% include _site-in-this-section.html %}
@@ -18,7 +19,7 @@ Therefore, [accessibility is core to all design decisions]({{ site.baseurl }}/ab
 
 The VA Design System provides accessible components, the guidance to implement these components, and the tools to customize and extend the design system accessibly. It was built on top of a fork of the U.S. Web Design System (USWDS), which prioritizes accessibility throughout. [Learn more about how USWDS practices accessibility.](https://designsystem.digital.gov/documentation/accessibility/)
 
-Components don’t live in a vacuum. As standalone elements, they can only be tested atomically. [Learn more about how VA Design System components are tested.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/8b49df2eddc3956daf9cff03728430311c597631/about/accessibility/accessibility-testing) For a product to launch, you need to test holistically; you should review the product as a whole before launch.
+Components don’t live in a vacuum. As standalone elements, they can only be tested atomically. [Learn more about how VA Design System components are tested.]({{ site.baseurl }}/about/accessibility/accessibility-testing-for-design-system-components) For a product to launch, you need to test holistically; you should review the product as a whole before launch.
 
 The surest way to make an accessible product is to “shift left,” or prioritize accessibility during an entire project’s lifecycle.
 
