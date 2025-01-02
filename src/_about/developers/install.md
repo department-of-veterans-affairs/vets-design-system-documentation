@@ -11,24 +11,21 @@ anchors:
 
 ## Install CSS library into your project
 
-How you implement VA Design System (VADS) styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the Design System styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
+How you implement VA Design System (VADS) styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the Design System styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/css-library/dist/stylesheets/core.css`.
 
 We recommend using `npm` to install the formation package into your project.
 
 ```bash
-$ npm install --save @department-of-veterans-affairs/formation
+$ npm install --save @department-of-veterans-affairs/css-library
 ```
 
-This line installs the Design System as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/formation/dist` directory.
+This line installs the Design System as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/css-library/dist` directory.
 
-If you would like to use the un-compiled Sass files instead, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
-
-If you prefer to change the location of the `fonts/` and `img/` directories relative to `formation.min.css`, set the following variables in your project:
+If you prefer to change the location of the `fonts/` and `img/` directories relative to `core.css`, set the following variables in your project:
 
 ```
-$formation-asset-path: '../assets';
-$formation-image-path: "#{$formation-asset-path}/img";
-$formation-font-path: "#{$formation-asset-path}/fonts";
+$image-path: "#{$image-path}/img";
+$theme-font-path: "#{$theme-font-path}/fonts";
 ```
 
 The example above is what is used on VA.gov, but you can customize this for your project.
