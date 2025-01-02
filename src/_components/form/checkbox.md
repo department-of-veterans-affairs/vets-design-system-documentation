@@ -106,6 +106,10 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
 
+### Indeterminate
+
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
+
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/">Refer to the U.S. Web Design System for usage guidance</a>
