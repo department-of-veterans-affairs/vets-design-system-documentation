@@ -153,13 +153,9 @@ In cases where the information might change frequently (like a temporary mailing
   alt="A required radio button field asking the user if they also want to update this information in their VA.gov profile."
   file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
 
-### Examples in production
-
-Coming soon!
-
 ## Code usage
 
-Coming soon!
+Contact the [Authenticated Experience Design Patterns team via slack](https://dsva.slack.com/archives/C07909N7U8Z) for code examples or more information on technical implementation.
 
 ## Content considerations
 
