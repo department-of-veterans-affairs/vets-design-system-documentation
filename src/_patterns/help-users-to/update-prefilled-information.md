@@ -68,6 +68,8 @@ When the user updates this information, there are two potential pathways.
 ##### If we automatically save changes to VA.gov profile
 In most cases, changes should save to both the form or tool and to VA.gov profile. An informational alert informs users where we'll save their changes.
 
+For developer documentation on saving contact information changes to VA.gov profile, see [How to create the contact info Array Data](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-create-the-contact-info-ar).
+
 {% include component-example.html
   class="x2"
   alt="A page for users to update their mailing address. Above the fields is an informational alert stating, 'Any changes you make will also be reflected on your VA.gov profile.'"
