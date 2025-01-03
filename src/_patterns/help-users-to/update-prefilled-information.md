@@ -44,7 +44,7 @@ anchors:
 
 This pattern involves these types of pages found in VA.gov forms:
 
-- **Prefilled information the user can't update:** This is usually personal information like name, date of birth, and Social Security number.
+- **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.
 - **Prefilled information the user can update:** This can be many different types of information that the user can update directly on the screen where we display it.
 
 See the related ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
@@ -63,7 +63,7 @@ See the related ["Help users to... Know when their information is prefilled"](/p
   alt="A card that shows the address information along with a link to edit if needed."
   file="/images/patterns/help-users-to/update-prefilled-information/address-page.png" %}
 
-There are 2 variations of this type of page.
+When the user updates this information, there are two potential pathways.
 
 ##### If we automatically save changes to VA.gov profile
 In most cases, changes should save to both the form or tool and to VA.gov profile. An informational alert informs users where we'll save their changes.
