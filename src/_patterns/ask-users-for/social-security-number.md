@@ -5,6 +5,7 @@ sub-section: ask-users-for
 title: Social security or VA file number
 intro-text: "Follow this pattern whenever you need to collect a person's Social Security or VA file number for an application."
 code-link: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx
+code-link-mask-string: https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/utilities/ui/mask-string.jsx
 example-link: https://staging.va.gov/mock-form-patterns/identification-information
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A23560&mode=design&t=93yXuwTXsWwWopry-1
 github-title: pattern-ssn
@@ -70,6 +71,19 @@ Use the [VADS templates (Patterns & Forms) for Social Security or VA file number
 ## Code usage
 
 [ssnPattern is a web-component pattern available in the Forms library]({{ page.code-link }}).
+
+[formatNumberForScreenReader is a utility function available in the Forms library]({{ page.code-link-mask-string }}). This utility function can be used to format a number for screen readers, such as a Social Security number when it is prefilled.
+
+Example:
+
+```jsx
+const formattedNumber = formatNumberForScreenReader(123456789);
+const ssnPrefillText = () => (
+  <p>
+    Last four digits of Social Security number: {formattedNumber}
+  </p>
+)
+```
 
 ## Content considerations
 
