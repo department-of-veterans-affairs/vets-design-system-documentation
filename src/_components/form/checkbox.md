@@ -108,6 +108,8 @@ anchors:
 
 ### Indeterminate
 
+Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected. 
+
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
 
 ## Usage
