@@ -57,38 +57,9 @@ To add content, you will need to look into `/src` directory. This will be the so
 
 [Read the wiki](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki) to learn how to add new pages to design.va.gov, improve local search, add images, etc.
 
-## Testing updates to the CSS-Library codebase on this site
+## Testing updates to the CSS Library codebase on this site
 
-In order to test new updates to CSS-Library, you will need to work in two different repositories: the repository for this site and `component-library`. For the steps below, make sure you are doing your work in a new branch for both repos.
-
-1. Clone the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) at the same level as the design system documentation site.
-
-   ```
-   my-projects-folder
-   |   ├── vets-design-system-documentation
-   |   ├── component-library
-   ```
-
-1. Follow the [contributing instructions](https://github.com/department-of-veterans-affairs/component-library/tree/main?tab=readme-ov-file#contributing) to make and test changes.
-
-1. Change `package.json` in `vets-design-system-documentation` to use a local version. `"@department-of-veterans-affairs/css-library": "file:../component-library/packages/css-library"`
-
-1. Make your changes in `css-library` and run `$ npm run build`.
-
-1. Now, in `vets-design-system-documentation`, run the following:
-
-   ```
-   $ yarn
-   $ yarn start
-   ```
-
-While `vets-design-system-documentation` is running and make further updates to `css-library`, you will need to run `$ npm run build` in that repo, then `$ yarn build` in `vets-design-system-documentation`.
-
-1. When you have finished your work in `css-library`, follow the [instructions](https://github.com/department-of-veterans-affairs/component-library/tree/main?tab=readme-ov-file#publishing) to submit a PR and publish to NPM.
-
-1. Once your update has been published to NPM, update `package.json` in `vets-design-system-documentation` from the local version to the new version number.
-
-1. Commit this along with any updates to the documentation site and submit a PR.
+See the Component Library [readme](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#local-testing-in-vets-website-with-verdaccio) instructions on how to use verdaccio to test changes to CSS Library
 
 ## Deployments
 

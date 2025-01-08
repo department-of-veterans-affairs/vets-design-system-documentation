@@ -1,9 +1,10 @@
 ---
 layout: documentation
 title: Install
+status: dont-use-deprecated
 permalink: /about/developers/install
 has-parent: /about/developers/
-intro-text: 
+intro-text: "New guidance in coming soon. With the deprecation of Formation and the adoption off CSS Library the design system team is in the process of creating and providing guidance on using CSS Library across different projects."
 anchors:
   - anchor: Install CSS library into your project
   - anchor: Load the Web Component library
@@ -11,21 +12,24 @@ anchors:
 
 ## Install CSS library into your project
 
-How you implement VA Design System (VADS) styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the Design System styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/css-library/dist/stylesheets/core.css`.
+How you implement VA Design System (VADS) styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the Design System styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
 
 We recommend using `npm` to install the formation package into your project.
 
 ```bash
-$ npm install --save @department-of-veterans-affairs/css-library
+$ npm install --save @department-of-veterans-affairs/formation
 ```
 
-This line installs the Design System as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/css-library/dist` directory.
+This line installs the Design System as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/formation/dist` directory.
 
-If you prefer to change the location of the `fonts/` and `img/` directories relative to `core.css`, set the following variables in your project:
+If you would like to use the un-compiled Sass files instead, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
+
+If you prefer to change the location of the `fonts/` and `img/` directories relative to `formation.min.css`, set the following variables in your project:
 
 ```
-$image-path: "#{$image-path}/img";
-$theme-font-path: "#{$theme-font-path}/fonts";
+$formation-asset-path: '../assets';
+$formation-image-path: "#{$formation-asset-path}/img";
+$formation-font-path: "#{$formation-asset-path}/fonts";
 ```
 
 The example above is what is used on VA.gov, but you can customize this for your project.

@@ -44,9 +44,9 @@ The VA follows the USWDS spacing unit tokens and then adds additional semantic t
 
 ## Using the spacing units
 
-In order to keep spacing consistent throughout VA.gov, it is recommended you favor using the `units` functions instead of hard coding pixels (or relative units) for margins and padding.
+In order to keep spacing consistent throughout VA.gov, it is recommended you favor using the unit tokens instead of hard coding pixels (or relative units) for margins and padding.
 
-In order to access the spacing tokens in your project, you will need to import the [base files](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library/src/stylesheets) into your project. 
+In order to access the unit tokens in your project, you will need to import the [variables file](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library/dist/tokens/css/variables.css) into your project. 
 <!-- 
 
 ToDo: uncomment after removing formation imports 
