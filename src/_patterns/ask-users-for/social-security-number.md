@@ -80,7 +80,7 @@ Example:
 const formattedNumber = formatNumberForScreenReader(123456789);
 const ssnPrefillText = () => (
   <p>
-    Last four digits of Social Security number: {formattedNumber}
+    Last 4 digits of Social Security number: {formattedNumber}
   </p>
 )
 ```
