@@ -33,6 +33,8 @@ anchors:
 
 - **When you don't prefill the user's information.**
 
+- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [View the unauthenticated intro page alert]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled#unauthenticated-intro-page-alert) within the ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
+
 ### When to use caution
 
 - **When the user can't update their information online, but can update another way.** This pattern accounts for cases when the user needs to call VA or take a different step to change certain information, such as their name and Social Security number. You'll need to confirm that you're giving the correct instructions for changing that specific information.
