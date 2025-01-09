@@ -17,7 +17,7 @@ sub-pages:
 
 ### Parts of the Design System
 
-- [CSS library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) contains the styles of the VA.gov Design System
+- [CSS Library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) contains the styles of the VA.gov Design System
 - [Component library](https://github.com/department-of-veterans-affairs/component-library)
 
 **If you are working in the vets-website repository**, you can skip straight to the [frontend developer documentation](https://depo-platform-documentation.scrollhelp.site/developer-docs/Frontend-developer-documentation.687931428.html). Otherwise, proceed below.

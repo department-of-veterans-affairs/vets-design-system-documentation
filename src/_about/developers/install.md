@@ -6,11 +6,11 @@ permalink: /about/developers/install
 has-parent: /about/developers/
 intro-text: "New guidance in coming soon. With the deprecation of Formation and the adoption off CSS Library the design system team is in the process of creating and providing guidance on using CSS Library across different projects."
 anchors:
-  - anchor: Install CSS library into your project
+  - anchor: Install Formation into your project
   - anchor: Load the Web Component library
 ---
 
-## Install CSS library into your project
+## Install Formation into your project
 
 How you implement VA Design System (VADS) styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the Design System styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
 
@@ -36,7 +36,7 @@ The example above is what is used on VA.gov, but you can customize this for your
 
 ### Sass functions, variables, and interactive components
 
-If you would like to use the Sass functions, such as for [spacing]({{ site.baseurl }}/foundation/spacing-units#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports the CSS library’s Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss#L5).
+If you would like to use the Sass functions, such as for [spacing]({{ site.baseurl }}/foundation/spacing-units#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports the Formation Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss#L5).
 
 ## Load the Web Component library
 
