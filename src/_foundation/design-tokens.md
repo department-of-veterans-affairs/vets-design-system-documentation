@@ -117,7 +117,7 @@ Component tokens are scoped to a specific component and represent decisions spec
 
 ### Forthcoming design tokens
 
-These tokens are not available in Figma nor are they yet represented in the CSS library. However, they do provide values that teams can coalesce around that will soon be available as tokens in our component-library.
+These tokens are not available in Figma nor are they yet represented in the CSS Library. However, they do provide values that teams can coalesce around that will soon be available as tokens in our component-library.
 
 <va-accordion bordered="false" uswds="true">
   <va-accordion-item header="Elevation" id="second" uswds>

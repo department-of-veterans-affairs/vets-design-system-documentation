@@ -43,7 +43,7 @@ $nav-width: 702px;
 
 ## Sass mixins
 
-The CSS library includes the `@media` mixin to make it easier for developers to create breakpoints in their styles.
+The CSS Library includes the `@media` mixin to make it easier for developers to create breakpoints in their styles.
 
 ```scss
 @include media($medium-screen) {
