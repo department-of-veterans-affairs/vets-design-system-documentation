@@ -34,17 +34,11 @@ anchors:
   {% include_relative html/prefill-intro.html %}
 </div>
 
-### Step
-
-<div class="site-showcase">
-  {% include_relative html/prefill-step.html %}
-</div>
-
 ## Usage
 
 ### When to use
 
-* **When prefilling information from the user's profile.** These messages communicate to the user that their profile information has been leveraged to pre-populate the form that they are filling out. The Intro variation, used on the Introduction page, also informs the user that their progress will be saved as they complete the form.
+* **When prefilling information from the user's profile.** These messages communicate to the user that their profile information has been leveraged to pre-populate the form that they are filling out and informs the user that their progress will be saved as they complete the form.
 
 ### When to consider something else
 
@@ -52,13 +46,11 @@ anchors:
 
 ### How this component works
 
-* **Intro variation uses Alert - Informational.** The Intro variation of this component is an instance of the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component, but without a header.
-* **Step variation uses Alert - Background-only Informational.** The Step variations of this component is an instance of the [Alert - Background-only with icon - Informational]({{ site.baseurl }}/components/alert#background-color-only-alert-with-icon) component.
+* **Uses Alert - Informational.** This component is an instance of the [Alert - Informational]({{ site.baseurl }}/components/alert#informational-alert) component, with specific pre-determined content.
 
 ### Placement
 
-* The Intro variation of this component appears after the subtitle of the form and before the action link to start the form process on the authenticated variation of the [Form - Introduction]({{ site.baseurl }}/templates/forms/introduction#authenticated) page.
-* The Step variation of this component appears after the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component on a step of the form.
+* This component appears after the subtitle of the form and before the action link to start the form process on the authenticated variation of the [Form - Introduction]({{ site.baseurl }}/templates/forms/introduction#authenticated) page.
 
 ## Code usage
 
