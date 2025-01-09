@@ -33,7 +33,7 @@ anchors:
 
 - **When you don't prefill the user's information.**
 
-- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [View the unauthenticated intro page alert]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled#unauthenticated-intro-page-alert) within the ["Help users to... Know when their information is prefilled"](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
+- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [View the unauthenticated intro page alert]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled#unauthenticated-intro-page-alert) within the [Help users to... Know when their information is prefilled](/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
 
 ### When to use caution
 
