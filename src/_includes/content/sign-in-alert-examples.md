@@ -13,5 +13,5 @@ See the [Login.gov brand assets](https://developers.login.gov/user-experience/si
 {% include storybook-preview.html story="components-va-alert-sign-in--verify-with-login-gov" link_text="va-alert verify with login gov" %}
 
 ### Sign in with a different account
-See the [Login.gov brand assets](https://developers.login.gov/user-experience/sign-in-sign-out/#design-your-applications-sign-in-and-sign-out-buttons) and [ID.me brand assets](https://developers.id.me/brand-assets) for buttons and branding guidelines.
+See the [Login.gov](https://developers.login.gov/user-experience/sign-in-sign-out/#design-your-applications-sign-in-and-sign-out-buttons) and [ID.me](https://developers.id.me/brand-assets) brand assets for buttons and branding guidelines.
 {% include storybook-preview.html story="components-va-alert-sign-in--sign-in-with-another-account" link_text="va-alert sign in with another-account" %}
