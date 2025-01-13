@@ -79,7 +79,7 @@ If either of these are true, we would recommend using the React binding for ease
 - You must pass in a function, object or array to a web component's properties
 - You must use custom events
 
-If you are not sure if you need either of those features, refer to the web component's [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page) to review its events and properties.
+If you are not sure if you need either of those features, refer to the web component's [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--docs) to review its events and properties.
 
 **Importing a React binding of a web component**
 
@@ -156,7 +156,7 @@ If the Web Component has a custom event that you need to use and you're **not** 
 
 The majority of our web components also fire a `component-library-analytics` event used to send component library interactions into analytics data layer events. The [handler for the Google Analytics event](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/site-wide/component-library-analytics-setup.js) exists in vets-website.
 
-For more information about custom events for specific components, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
+For more information about custom events for specific components, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--docs).
 
 ## Native Events
 
@@ -202,4 +202,4 @@ Another example using the `blur` event in vanilla JavaScript:
 
 <hr>
 
-For more information about native events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--page).
+For more information about native events in a specific component, refer to the [Storybook documentation](https://design.va.gov/storybook/?path=/docs/about-introduction--docs).
