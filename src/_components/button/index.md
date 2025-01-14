@@ -62,7 +62,7 @@ anchors:
 
 #### Destructive
 
-{% include storybook-preview.html height="100px" story="button--destructive" link_text="va-mobile__button--base-secondary" %}
+{% include storybook-preview.html height="100px" story="va-mobile_button--destructive" link_text="va-mobile__button--base-secondary" %}
 
 ## Usage
 
