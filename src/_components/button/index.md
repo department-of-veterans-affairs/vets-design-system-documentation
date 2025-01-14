@@ -54,7 +54,7 @@ anchors:
 
 #### Base - Primary
 
-{% include storybook-preview.html height="100px" story="button--base" link_text="va-mobile__button--base" %}
+{% include storybook-preview.html height="100px" story="va-mobile_button--base" link_text="va-mobile__button--base" %}
 
 #### Base - Secondary
 
