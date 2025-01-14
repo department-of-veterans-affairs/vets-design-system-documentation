@@ -1,6 +1,6 @@
 # Vets Design System Documentation
 
-This repo is for VA Design System documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the design system components, see the [component-library](https://github.com/department-of-veterans-affairs/component-library). Additionally, the [Formation package](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools/tree/master/packages/formation) inside the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools) contains sitewide VA.gov base styles and utility classes.
+This repo is for VA Design System documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the design system components, see the [component-library](https://github.com/department-of-veterans-affairs/component-library). For sitewide VA.gov base styles and utility classes see the [css-library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) package within component-library.
 
 Min specs:
 
@@ -57,38 +57,9 @@ To add content, you will need to look into `/src` directory. This will be the so
 
 [Read the wiki](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/wiki) to learn how to add new pages to design.va.gov, improve local search, add images, etc.
 
-## Testing updates to the Formation codebase on this site
+## Testing updates to the CSS Library codebase on this site
 
-In order to test new updates to Formation, you will need to work in two different repositories: the repository for this site and `veteran-facing-services-tools`. For the steps below, make sure you are doing your work in a new branch for both repos.
-
-1. Clone the [veteran-facing-services-tools repo](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools) at the same level as the design system documentation site.
-
-   ```
-   my-projects-folder
-   |   ├── vets-design-system-documentation
-   |   ├── veteran-facing-services-tools
-   ```
-
-1. Follow the [setup instructions](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools#setup) to get `veteran-facing-services-tools` running.
-
-1. Change `package.json` in `vets-design-system-documentation` to use a local version. `"@department-of-veterans-affairs/formation": "file:../veteran-facing-services-tools/packages/formation"`
-
-1. Make your changes in `veteran-facing-services-tools` and run `$ npm run build`.
-
-1. Now, in `vets-design-system-documentation`, run the following:
-
-   ```
-   $ yarn
-   $ yarn start
-   ```
-
-While `vets-design-system-documentation` is running and make further updates to `veteran-facing-services-tools`, you will need to run `$ npm run build` in that repo, then `$ yarn build` in `vets-design-system-documentation`.
-
-1. When you have finished your work in `veteran-facing-services-tools`, follow the [instructions](https://github.com/department-of-veterans-affairs/veteran-facing-services-tools#publishing-module-to-npm) to submit a PR and publish to NPM.
-
-1. Once your update has been published to NPM, update `package.json` in `vets-design-system-documentation` from the local version to the new version number.
-
-1. Commit this along with any updates to the documentation site and submit a PR.
+See the Component Library [readme](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#local-testing-in-vets-website-with-verdaccio) instructions on how to use verdaccio to test changes to CSS Library
 
 ## Deployments
 

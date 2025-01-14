@@ -106,6 +106,12 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
 
+### Indeterminate
+
+Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected. 
+
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
+
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/">Refer to the U.S. Web Design System for usage guidance</a>

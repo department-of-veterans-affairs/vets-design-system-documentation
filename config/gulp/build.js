@@ -2,7 +2,6 @@ var gulp = require('gulp');
 //var clean = require('gulp-clean');
 
 gulp.task('build',
-  //gulp.series(
     gulp.series(
       'json',
       'fonts',
@@ -11,5 +10,4 @@ gulp.task('build',
       'css',
       'storybook',
     )
-//  )
 );

@@ -24,7 +24,7 @@ labels: platform-design-system-team, bug
 
 ## Reproducing
 
-- Formation version:
+- CSS Library version:
 - Device: (e.g. iPhone 8, Macbook)
 - Browser: (e.g. Firefox, IE 11)
 
