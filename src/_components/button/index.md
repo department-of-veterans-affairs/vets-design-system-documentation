@@ -58,7 +58,7 @@ anchors:
 
 #### Base - Secondary
 
-{% include storybook-preview.html height="100px" story="button--base" link_text="va-mobile__button--base-secondary" %}
+{% include storybook-preview.html height="100px" story="va-mobile_button--base-secondary" link_text="va-mobile__button--base-secondary" %}
 
 #### Destructive
 
