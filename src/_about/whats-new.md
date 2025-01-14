@@ -9,6 +9,71 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## New Features & Components  (as of Jan 15, 2025)
+ **[v48.4.0](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v48.4.0) of the component library**
+
+- va-button: add loading variation by [**@powellkerry**](https://github.com/powellkerry) in [#1446](https://github.com/department-of-veterans-affairs/component-library/pull/1446)
+- va-search-input: add clear search button by [**@ataker**](https://github.com/ataker) in [#1450](https://github.com/department-of-veterans-affairs/component-library/pull/1450)
+
+**Fixes**
+
+- va-accordion: add custom event to expand/collapse all button by [**@jamigibbs**](https://github.com/jamigibbs) in [#1445](https://github.com/department-of-veterans-affairs/component-library/pull/1445)
+- va-date: remove unnecessary aria labels for select by [**@powellkerry**](https://github.com/powellkerry) in [#1447](https://github.com/department-of-veterans-affairs/component-library/pull/1447)
+- va-alert-sign-in: Hides no-sign-in-link when not present by [**@asg5704**](https://github.com/asg5704) in [#1452](https://github.com/department-of-veterans-affairs/component-library/pull/1452)
+- va-link: add aria-label to all variations by [**@jamigibbs**](https://github.com/jamigibbs) in [#1448](https://github.com/department-of-veterans-affairs/component-library/pull/1448)
+
+**Other Changes**
+
+- css-library: add img folder to dist by [**@micahchiang**](https://github.com/micahchiang) in [#1441](https://github.com/department-of-veterans-affairs/component-library/pull/1441)
+- css-library: fix the html element's font-size so it will respect browser settings by [**@Andrew565**](https://github.com/Andrew565) in [#1444](https://github.com/department-of-veterans-affairs/component-library/pull/1444)
+
+**Figma Changelog**
+
+- [Update Confirmation template screenshots & guidance](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3659)  (Dan Brady)
+
+- Update design of Language Toggle / #3605  (Lucas Wright)
+  - Created a new design that has the current language display (in VADS-base color) which complies with latest WCAG guidelines.
+
+- [Error Color mismatch between Figma and Production](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3519) (Dan Brady) 
+
+- Link Collection (active link) Figma update - Design #3487  (Barb Denney)
+  - Fixed bug in link collection that caused the active link arrow to align to the right. 
+
+- Update visuals based on USWDS 3.9.0 update / #3524  (Lucas Wright)
+
+  - Updated Pagination based on USWDS 3.9.0 update (add underlines to all links) #3524
+
+  - Update page link to 40x40
+
+  - Add properties: Type, State
+
+  - Updated the spacing of the icon and padding on left side to 20 px
+
+  - Fixed the overlap of the close button (X) with text in the slim designs
+
+  - Fixed the odd spacing issues in the layout of the variations
+
+- Card (Dan Brady)
+  - Fixed tag height  
+
+- Button  (Dan Brady)
+
+  - Deprecate disabled variation
+
+  - Add loading variation
+
+
+**Guidance updates**
+
+- [[Documentation\] - Update list component documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3399)  (Barb Denney)
+
+- [va-checkbox indeterminate state - Documentation update](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3610)  (Barb Denney)
+
+- [Update links for Alert Sign-in](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3637)  (Barb Denney)
+
+
+
+
 ## Fall 2024
 
 ### New and updated components
