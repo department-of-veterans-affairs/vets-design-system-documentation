@@ -21,15 +21,23 @@ anchors:
 
 ## Examples
 
-### Default
+### Web
+
+#### Default
 
 {% include storybook-preview.html story="components-va-component-name--default" link_text=page.web-component %}
 
-### Variation 1
+#### Variation 1
 
 Add Storybook examples as necessary.
 
-### Variation 2
+#### Variation 2
+
+Add Storybook examples as necessary.
+
+### Mobile
+
+### Variation 1
 
 Add Storybook examples as necessary.
 
@@ -61,7 +69,7 @@ Describe the key interactions for this component.
 
 ### Choosing between variations
 
-Help the designer and developer understand when to choose between any variations of this component.
+Help the designer and developer understand when to choose between any variations of this component. Include mobile variations.
 
 ### Placement
 
