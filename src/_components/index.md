@@ -4,6 +4,8 @@ title: Components
 index: true
 ---
 
+test
+
 # Components
 
 <div class="va-introtext" markdown="1">
