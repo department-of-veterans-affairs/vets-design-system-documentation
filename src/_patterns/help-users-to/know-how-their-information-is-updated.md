@@ -5,7 +5,7 @@ permalink: /patterns/help-users-to/know-how-their-information-is-updated
 sub-section: help-users-to
 intro-text: Follow this pattern to help users know how and when their personal information will be updated in their profile when the user is updating information in an application.
 research-title: Help users know how their info is updated
-status: use-deployed
+status: dont-use-deprecated
 anchors:
   - anchor: Usage
   - anchor: How to design and build
@@ -18,7 +18,7 @@ anchors:
 >
     <div class="vads-u-margin-y--0">
     <p class="vads-u-margin-y--0">
-      We are updating this pattern. Please note that some guidance may be out of date. <va-link href="/patterns/help-users-to/know-when-their-information-is-prefilled" text="See the new prefill pattern page for up-to-date guidance." ></va-link>
+      This pattern is being removed. <va-link href="/patterns/help-users-to/update-prefilled-information" text="Please refer to the new update prefilled information pattern page for up-to-date guidance." ></va-link>
     </p>
     </div>
 </va-alert>

@@ -15,17 +15,6 @@ anchors:
   - anchor: Content considerations
 ---
 
-<va-alert
-  status="warning"
-  slim
->
-    <div class="vads-u-margin-y--0">
-    <p class="vads-u-margin-y--0">
-      We may be replacing this page soon. <va-link href="/patterns/help-users-to/know-when-their-information-is-prefilled" text="See the new prefill pattern page for up-to-date guidance." ></va-link>
-    </p>
-    </div>
-</va-alert>
-
 ## Examples
 
 ### Intro
