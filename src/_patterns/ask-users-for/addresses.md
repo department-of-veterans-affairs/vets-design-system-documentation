@@ -82,7 +82,7 @@ Follow this guidance when asking for both mailing and home addresses. In some fo
 
 * **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 * **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses "Yes", they can skip the home address form.
-* **Indicate to users whether an update in this form will update their VA.gov profile.**  If an address addition or change will **not** update the user's VA.gov profile then use the text "*Any updates you make here to your address will only apply to this application.*" Refer to the [Help users to know how their information is updated pattern]({{ site.baseurl }}/patterns/help-users-to/know-how-their-information-is-updated) for information on how to communicate that an update will be reflected in their profile.
+* **Indicate to users whether an update in this form will update their VA.gov profile.**  If an address addition or change will **not** update the user's VA.gov profile then use the text "*We’ve made these changes to only this form.*" Refer to the [Help users to update prefilled information pattern]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) for information on how to communicate that an update will be reflected in their profile.
 
 ### Address confirmation details
 

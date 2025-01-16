@@ -1,7 +1,6 @@
 ---
 layout: pattern
 title: Update prefilled information
-draft: true
 permalink: /patterns/help-users-to/update-prefilled-information
 sub-section: help-users-to
 intro-text: Follow this pattern to help users update prefilled information in an application.

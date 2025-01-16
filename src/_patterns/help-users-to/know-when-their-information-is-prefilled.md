@@ -20,7 +20,7 @@ anchors:
 ### When to use this pattern
 
 - **When you prefill the user's data into an application, like a form.** When using this pattern, clearly inform the user of where their data is being pulled from to prefill for them.
-- **When users can update prefilled information.** Review [Help users to... Know how their information is updated](https://design.va.gov/patterns/help-users-to/know-how-their-information-is-updated) for guidance on helping users update this prefilled information.
+- **When users can update prefilled information.** Review [Help users to... Update prefilled information](/patterns/help-users-to/update-prefilled-information) for guidance on helping users update this prefilled information.
 
 #### Design principles
 * **Visibility of system status.** This pattern demonstrates the [usability principle of communicating the current state](https://www.nngroup.com/articles/visibility-system-status/) in order to allow users to feel in control and to be able to take appropriate action.
@@ -81,10 +81,10 @@ This pattern communicates information that can be edited by:
 ## Examples
 
 ### Uneditable Prefill Card
-{% include storybook-preview.html story="patterns-components-card--uneditable" height="200px" link_text="uneditable prefill alert" %}
+{% include storybook-preview.html story="patterns-components-card--uneditable" height="250px" link_text="uneditable prefill alert" %}
 
 ### Editable Prefill Card
-{% include storybook-preview.html story="patterns-components-card--editable" height="250px" link_text="editable prefill alert" %}
+{% include storybook-preview.html story="patterns-components-card--editable" height="190px" link_text="editable prefill alert" %}
 
 
 ### Signed In Prefill Alert
@@ -93,8 +93,6 @@ This pattern communicates information that can be edited by:
 ### Unauthenticated Prefill Alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="350px" link_text="unauthenticated prefill alert" %}
 
-### Prefilled Info Alert
-{% include storybook-preview.html story="patterns-components-prefill-alert--prefilled-info-alert" link_text="prefilled info alert" %}
 
 
 ### Examples in production
