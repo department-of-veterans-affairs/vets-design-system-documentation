@@ -23,9 +23,9 @@ Closes #[Issue_number]
 > [!TIP]  
 > A preview environment is automatically created and updated with every PR (including draft PRs).
 >
-> Once you've committed, we run some automated tests and generate this preview environment, so it takes a minute or two.
+> Once you've committed, we run some automated checks and generate this preview environment, so it takes a minute or two.
 >
-> The URL of this environment follows this format:
+> The URL of this preview environment follows this format:
 >
 > `https://dev-design.va.gov/[This_PR_number]`
 >
