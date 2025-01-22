@@ -5,7 +5,7 @@ title: They, their
 
 # They, their 
 
-We use "they" and "their" as pronouns. Don't use "he or she" and "his or her" as this adds unnecessary words *The New Fowler's Modern English Language,* third edition, and *Garner's Modern American Usage,* third edition, support this approach.
+We use "they" and "their" as pronouns. Don't use "he or she" and "his or her" as this adds unnecessary words. *The New Fowler's Modern English Language,* third edition, and *Garner's Modern American Usage,* third edition, support this approach.
 
 
 <div class="do-dont">
