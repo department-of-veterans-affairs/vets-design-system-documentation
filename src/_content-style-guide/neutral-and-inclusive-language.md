@@ -1,6 +1,6 @@
 ---
 layout: content-style-guide
-title: Accurate and neutral language
+title: Neutral language
 intro-text: At VA, we aim to create language that’s accurate for all our audiences while remaining as simple and clear as possible. 
 anchors:
   - anchor: Language referring to people
