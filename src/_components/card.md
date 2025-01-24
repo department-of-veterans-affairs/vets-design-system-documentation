@@ -233,11 +233,11 @@ A radio button tile has a title and description within the label and a Card-like
 * **Announce "Status" to screen readers** When adding status to a card, it's important to have the word "status" announced by screen readers before the actual status and header text of the card. For example:
 
 ```html
-<h3>
-   <span class="vads-u-visibility--screen-reader">Status</span>
-   <span class="usa-label">In progress</span>
-   <span class="vads-u-display-block">Claim for compensation</span>
-</h3>
+  <h3>
+    <span class="vads-u-visibility--screen-reader">Status</span>
+    <span class="usa-label vads-u-display--inline-block vads-u-font-family--sans vads-u-font-weight--normal vads-u-margin-bottom--1">In progress</span>
+    <span class="vads-u-display--block">Claim for compensation</span>
+  </h3>
 ```
 
 ## Related
