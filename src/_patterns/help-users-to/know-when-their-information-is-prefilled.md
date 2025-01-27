@@ -44,7 +44,7 @@ There are two states of an introduction page: Authenticated and Unauthenticated.
 
 {% include component-example.html alt="A form introduction page viewed by an authenticated user with an alert that the form will fill parts of their application based on the their account details. Annotations state that alert header is an H2, and that alerts should be placed at the top of the page and the word 'note' in the alert should be bolded." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-authenticated-alert.png" caption="Authenticated introduction page alert on the introduction page."  %}
 
-{% include component-example.html alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/intro-page-unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page."  class="x2" %}
+{% include component-example.html alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page."  class="x2" %}
 
 #### Personal information page
 {% include component-example.html alt="A Veteran information page in a form flow with a white card containing  Veteran's uneditable information, including name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page."  %}
@@ -91,7 +91,7 @@ This pattern communicates information that can be edited by:
 {% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" link_text="signed in prefill alert" %}
 
 ### Unauthenticated Prefill Alert
-{% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="350px" link_text="unauthenticated prefill alert" %}
+{% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
 
 
@@ -159,7 +159,9 @@ Directions for updating information that can’t be updated online vary. See the
 > - We can fill in some of your information for you to save you time.
 > - You can save your work in progress. You’ll have {time limit} from when you start or make changes to submit your form.
 >
-> After you sign in, we’ll tell you if you need to verify your identity for your account.
+> **Don't yet have a verified account?** Create a Login.gov or ID.me account. We’ll help you verify your identity for your account now.
+>
+> **Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we'll help you do that now.
 >
 > **Note:** You can sign in after you start filling out your form. But you'll lose any information you already filled in.
 >
@@ -168,13 +170,15 @@ Directions for updating information that can’t be updated online vary. See the
 > [text link] Start your form without signing in
 
 
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/content-unauthenticated-alert.png" width="600" alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in.">
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/unauthenticated-alert.png" width="600" alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in.">
 
 
 #### Authenticated intro page alert
-> [content] **Note:** Since you’re signed in to your account, we can prefill part of your form based on your account details. You can also save your form in progress and come back later to finish filling it out.
+> [heading] We've prefilled some of your information
+>
+> [content] Since you’re signed in, we've prefilled part of your application based on your profile details. You can also save your application in progress and come back later to finish filling it out.
 
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/authenticated-prefill-alert.png" width="600" alt="An informational alert with the header 'We can prefill some of your  information.' It informs users that if they sign in, we can prefill some information for them, and they can leave and return to the form later to finish filling it out.">
+<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/authenticated-intro-alert.png" width="600" alt="An informational alert with the header 'We've prefilled some of your information.' It informs users that if they sign in, we can prefill some information for them, and they can leave and return to the form later to finish filling it out.">
 
 
 ## Research findings
