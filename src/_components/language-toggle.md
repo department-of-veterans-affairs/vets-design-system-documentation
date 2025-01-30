@@ -19,7 +19,9 @@ anchors:
 
 ### Default
 
-{% include component-example.html alt="The language toggle with the spanish option selected." file="/images/components/language-toggle/spanish.png" caption="The language toggle allows users to click links to load the same page which has been translated to one of three languages." %}
+The language toggle allows users to click links to load the same page which has been translated to one of three languages.
+
+{% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
 
 #### Page context
 
@@ -29,11 +31,11 @@ anchors:
 
 ### When to use Component name
 
-* **Presenting an option to switch between translated pages.**: Use this component when you want to provide the user a way to switch between translated versions of the same page.
+* **Presenting an option to switch between translated pages.** Use this component when you want to provide the user a way to switch between translated versions of the same page.
 
 ### When to consider something else
 
-* **Links to pages that don't match.**: Do not use this toggle to point to anything other than the corresponding page in the equivalent language.
+* **Links to pages that don't match.** Do not use this toggle to point to anything other than the corresponding page in the equivalent language.
 * **Other language options.** VA.gov supports the 3 languages identified in the toggle. Do not add or remove from those 3 languages.
 
 ### How this component works
