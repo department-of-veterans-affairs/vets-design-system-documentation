@@ -1,18 +1,28 @@
 ---
 layout: pattern
-permalink: /patterns/ask-users-for/pronouns
-sub-section: ask-users-for
 title: Pronouns
 intro-text: Follow this pattern to ask Veterans for their pronouns. 
 github-title: pattern-pronouns
 research-title: Ask users for pronouns
-status: use-deployed
+status: dont-use-deprecated
 anchors:
   - anchor: Usage
   - anchor: Examples
   - anchor: How to design and build
   - anchor: Accessibility considerations
 ---
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="error"
+  visible
+>
+  <h2 slot="headline">
+    The current policy recommends against using this pattern.
+  </h2>
+  <div>
+  </div>
+</va-alert>
 
 ## Usage
 
