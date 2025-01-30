@@ -140,6 +140,7 @@ A previously available or deployed component or pattern is now considered lackin
 * May have significant issues filed against it and/or now be considered an anti-pattern
 * Teams may have moved to a different solution
 * Research may have proven our design or implementation was not effective
+* Policy may have been issued by VA or OMB that invalidates the pattern.
 
 Components or patterns in this state will direct users to preferred components or patterns and stay in the system for 3 months before being removed.
 
