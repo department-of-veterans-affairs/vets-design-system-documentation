@@ -23,11 +23,6 @@ The language toggle allows users to click links to load the same page which has 
 
 {% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
 
-<!--- HIDING SCREENSHOT TILL IT CAN BE UPDATED WITH CURRENT DESIGN -->
-<!--- #### Page context --->
-
-<!--- {% include component-example.html alt="Some, but not all, of the content on a page will be translated." file="/images/components/language-toggle/page-context.png" caption="Translated content appears in the body of the page, in the side navigation, and in the breadcrumbs of the page." %} --->
-
 ## Usage
 
 ### When to use Component name
