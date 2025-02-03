@@ -43,7 +43,7 @@ anchors:
 
 ### With Hint Text
 
-{% include storybook-preview.html story="va-combo-box--with-hint-text" link_text="va-combo-box with hint text" %}
+{% include storybook-preview.html story="uswds-va-combo-box--with-hint-text" link_text="va-combo-box with hint text" %}
 
 ### With Message Aria Described By
 
@@ -55,14 +55,14 @@ anchors:
 
 ### When to use the Combo Box
 * **When you have between 5 to 15 options.** Use the combo box when there are more than 5 options but less than 15 options.
-* **When the options are known and memorable.** Use the combobox when the user will know what is in the dropdown like a list of countries or states. See the USWDS address pattern for an example.
+* **When the options are known and memorable.** Use the combobox when the user will know what is in the dropdown like a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2) for an example.
 
 ### When to use something else
-**More than 15 options.** When you have more than 15 options use the typeahead featured in the [Search Input](https://design.va.gov/components/search-input#usage) component.
+* **More than 15 options.** When you have more than 15 options use the typeahead featured in the [Search Input]({{ site.baseurl }}/components/search-input#usage) component.
 
 ### Errors
 
-* Refer to the specific [error example](#error) above.
+* Refer to the specific [error example](#with-error) above.
 
 <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
   View form error handling for additional guidance
@@ -70,7 +70,7 @@ anchors:
 
 ### Hint text
 
-* Refer to the [hint text example](#hint-text) above.
+* Refer to the [hint text example](#with-hint-text) above.
 
 <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
   View label hint text for additional guidance
@@ -80,7 +80,6 @@ anchors:
 
 ### Behavior
 
-
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
@@ -88,10 +87,12 @@ anchors:
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/accordion/#accessibility-accordion">Refer to the U.S. Web Design System for accessibility guidance</a>
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/combo-box/#accessibility-guidance">Refer to the U.S. Web Design System for accessibility guidance</a>
 
 ## Related
 
-* [Additional info]({{ site.baseurl }}/components/additional-info)
+* [Select]({{ site.baseurl }}/components/form/select)
+* [Radio button]({{ site.baseurl }}/components/form/radio-button)
+* [Search input]({{ site.baseurl }}/components/search-input)
 
 {% include _component-checklist.html component_name=page.web-component %}
