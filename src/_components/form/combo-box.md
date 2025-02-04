@@ -23,31 +23,31 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-combo-box--default" link_text="va-combo-box default" %}
+{% include storybook-preview.html story="uswds-va-combo-box--default" link_text="va-combo-box default" height="300px" %}
 
 ### With Default Value
 
-{% include storybook-preview.html story="uswds-va-combo-box--with-default-value" link_text="va-combo-box with default value" %}
+{% include storybook-preview.html story="uswds-va-combo-box--with-default-value" link_text="va-combo-box with default value" height="300px" %}
 
 ### With Error
 
-{% include storybook-preview.html story="uswds-va-combo-box--with-error" link_text="va-combo-box with error" %}
+{% include storybook-preview.html story="uswds-va-combo-box--with-error" link_text="va-combo-box with error" height="300px" %}
 
 ### Required
 
-{% include storybook-preview.html story="uswds-va-combo-box--required" link_text="va-combo-box required" %}
+{% include storybook-preview.html story="uswds-va-combo-box--required" link_text="va-combo-box required" height="300px" %}
 
 ### With Placeholder Text
 
-{% include storybook-preview.html story="uswds-va-combo-box--with-placeholder-text" link_text="va-combo-box with placeholder text" %}
+{% include storybook-preview.html story="uswds-va-combo-box--with-placeholder-text" link_text="va-combo-box with placeholder text" height="300px" %}
 
 ### With Hint Text
 
-{% include storybook-preview.html story="uswds-va-combo-box--with-hint-text" link_text="va-combo-box with hint text" %}
+{% include storybook-preview.html story="uswds-va-combo-box--with-hint-text" link_text="va-combo-box with hint text" height="300px" %}
 
 ### With Message Aria Described By
 
-{% include storybook-preview.html story="uswds-va-combo-box--with-message-aria-described-by" link_text="uswds-va-combo-box with message aria described by" %}
+{% include storybook-preview.html story="uswds-va-combo-box--with-message-aria-described-by" link_text="uswds-va-combo-box with message aria described by" height="300px" %}
 
 ## Usage
 
@@ -55,10 +55,11 @@ anchors:
 
 ### When to use the Combo Box
 * **When you have between 5 to 15 options.** Use the combo box when there are more than 5 options but less than 15 options.
-* **When the options are known and memorable.** Use the combobox when the user will know what is in the dropdown like a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2) for an example.
+* **When the options are known and memorable.** Use the combo box when the user will know what to expect as options in the drop down. Some examples of this would be a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2) for an example.
 
 ### When to use something else
-* **More than 15 options.** When you have more than 15 options use the typeahead featured in the [Search Input]({{ site.baseurl }}/components/search-input#usage) component.
+* **More than 15 options.** When you have more than 15 options consider using the type-ahead featured in the [Search Input]({{ site.baseurl }}/components/search-input#usage) component.
+* **When there are less than 5 options.** Consider using a [radio button]({{ site.baseurl }}/components/form/radio-button) for less than 5 options.
 
 ### Errors
 
@@ -77,13 +78,6 @@ anchors:
 </a>
 
 {% include component-docs.html component_name=page.web-component %}
-
-### Behavior
-
-{% include component-docs.html component_name=page.web-component %}
-
-## Content considerations
-
 
 ## Accessibility considerations
 
