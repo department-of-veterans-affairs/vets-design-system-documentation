@@ -13,7 +13,6 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
-  - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
@@ -54,11 +53,11 @@ anchors:
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/combo-box/">Refer to the U.S. Web Design System for usage guidance</a>
 
 ### When to use the Combo Box
-* **When you have around 100 options or less.** Ideally, aim for no more than 100 options. If you have more than this, consider using a different approach, such as using the type-ahead option in the [search input component]({{ site.baseurl }}/components/search-input) to help users find what they need.
+* **When you have around 100 options or less.** Ideally, aim for no more than 100 options when using a combo box. 
 * **When the options are known and memorable.** Use the combo box when the user will know what to expect as options in the drop down. Some examples of this would be a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2) for an example.
 
 ### When to use something else
-* **Around a 100 or more options.** When you have more than around a 100 options consider using the type-ahead featured in the [Search Input]({{ site.baseurl }}/components/search-input#usage) component.
+* **Around a 100 or more options.** If you have more or around a 100 options, consider using a different approach, such as using the type-ahead feature in the [search input]({{ site.baseurl }}/components/search-input) component to help users find what they need.
 
 ### Errors
 

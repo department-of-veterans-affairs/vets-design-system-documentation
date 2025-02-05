@@ -59,8 +59,8 @@ anchors:
 
 #### Additional reasons to consider something else
 
-* **More than 15 options.** If the list of options is very long use the [combo box](https://design.va.gov/components/form/combo-box) component.  
-* **Around a 100 or more options.** When you have more than around a 100 options consider using the type-ahead featured in the [Search Input]({{ site.baseurl }}/components/search-input#usage) component.
+* **More than 15 options.** If the list of options is very long use the [combo box]({ site.baseurl }}components/form/combo-box) component or type-ahead feature in the [search input]({{ site.baseurl }}/components/search-input) component.   
+
 
 ### Errors
 

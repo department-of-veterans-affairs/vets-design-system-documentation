@@ -51,7 +51,8 @@ web-component: va-search-input
 ### When to consider something else
 
 * When free text input is allowed, do not use type-ahead in form fields where the user might assume they are limited to selecting a suggested term. Alternatively, provide a clear way for the user to add an entry if you do use type-ahead in a form field.
-* When there are around 100 or less options consider using the [combo box](https://design.va.gov/components/form/combo-box) component. 
+* When there are around 100 or less options consider using the [combo box]({{ site.baseurl }}components/form/combo-box) component.
+* If you have less or around a 100 options, consider using a different approach, such as using the [combo box]({{ site.baseurl }}/components/combo-box) component to help users find what they need.
 
 ### Placement
 
