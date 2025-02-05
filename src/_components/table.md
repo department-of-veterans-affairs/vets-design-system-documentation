@@ -38,12 +38,6 @@ anchors:
 
 {% include storybook-preview.html height="410px" story="uswds-va-table--sortable" link_text="Sortable va-table" %}
 
-## Examples - v1
-
-### Responsive stacked table (v1 Default)
-
-{% include storybook-preview.html height="400px" story="components-va-table--default" link_text="va-table v1 along with additional variations"  %}
-
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/table/">Refer to the U.S. Web Design System for usage guidance</a>
