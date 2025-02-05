@@ -59,7 +59,8 @@ anchors:
 
 #### Additional reasons to consider something else
 
-**More than 15 options.** If the list of options is very long, we do not yet have the combo box component in our system thus an alternative is to use functionality that allows users to type the same information into a text input that suggests possible options instead as seen in our [search input]({{ site.baseurl }}/components/search-input) component. (Change this)
+* **More than 15 options.** If the list of options is very long use the [combo box](https://design.va.gov/components/form/combo-box) component.  
+* **Around a 100 or more options.** When you have more than around a 100 options consider using the type-ahead featured in the [Search Input]({{ site.baseurl }}/components/search-input#usage) component.
 
 ### Errors
 
