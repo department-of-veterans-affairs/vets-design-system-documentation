@@ -80,12 +80,12 @@ It is the intention of this team to improve our testing standards to more accura
 
 ## Resources for Veteran-facing service teams
 
-### Get accessibility guidance early from the CAIA team
+### Get accessibility guidance early from the Accessibility Digital Experience (ADE) team
 
-The Sitewide Content, Accessibility, and Information Architecture (CAIA) team can help you meet [VA.gov](http://VA.gov)’s accessibility standards. Whether you’re starting a new product or refining an existing one, contact the CAIA team as early as possible to create accurate, consistent, accessible, and equitable digital services for Veterans.
+The Accessibility Digital Experience (ADE) team can help you meet [VA.gov](http://VA.gov)’s accessibility standards. Whether you’re starting a new product or refining an existing one, contact the CAIA team as early as possible to create accurate, consistent, accessible, and equitable digital services for Veterans.
 
-- Submit a [Sitewide Content, Accessibility, and IA intake form ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?assignees=RLHecht%2C+coforma-terry%2C+kristinoletmuskat%2C+laurwill%2C+sara-amanda&labels=sitewide+CAIA%2C+sitewide+content-product+support%2C+Sitewide+IA%2C+sitewide+content%2C+sitewide+accessibility&projects=&template=sitewide-content-intake-form.md&title=%3CType+of+Request%3E+from+%3CTeam%3E) in GitHub
-- [Contact CAIA on Slack](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/sitewide-content-and-ia-intake-request#Content,Accessibility,andInformationArchitecturesupport-SitewideCAIA-Contactus)
+- Submit an [ADE intake form ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=Accessibility-Digital-Experience-Intake-Ticket.md) in GitHub
+- Contact ADE on Slack using their handle: @accessibility-de
 
 ### Learn how to make accessible products on the modernized [VA.gov](http://VA.gov) platform
 
