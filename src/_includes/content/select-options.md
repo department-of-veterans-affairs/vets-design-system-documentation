@@ -6,7 +6,7 @@ Consider how many options the user will have when choosing the right component. 
 * **16 - 100: [Combo Box]({{ site.baseurl }}/components/form/combo-box).** For over 15 items, use a combo box that combines a select with typeahead.
 * **101 - ∞: [Search input]({{ site.baseurl }}/components/search-input) typeahead.** Over 100 items, use the search input component with typeahead.
 
-### Some exceptions
+### Some exceptions when choosing the right component
 Some exceptions can be considered when choosing the right component. 
 
 * **When the options are known and memorable.** Use the combo box when the user will know what to expect as options in the dropdown. Some examples of this would be a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2) for an example.
