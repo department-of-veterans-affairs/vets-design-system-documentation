@@ -7,8 +7,8 @@ intro-text: "Form controls allow users to enter information."
 status: use-deployed
 sub-pages:
   - sub-page: Autosave
-  - sub-page: Combo box
   - sub-page: Checkbox
+  - sub-page: Combo box
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input

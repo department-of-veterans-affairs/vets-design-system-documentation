@@ -57,10 +57,7 @@ anchors:
 
 ### Additional guidance for VA
 
-#### Additional reasons to consider something else
-
-* **More than 15 options.** If the list of options is very long use the [combo box]({{ site.baseurl }}/components/form/combo-box) component or type-ahead feature in the [search input]({{ site.baseurl }}/components/search-input) component.   
-
+{% include content/select-options.md %}
 
 ### Errors
 

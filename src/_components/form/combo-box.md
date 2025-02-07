@@ -52,12 +52,7 @@ anchors:
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/combo-box/">Refer to the U.S. Web Design System for usage guidance</a>
 
-### When to use the Combo Box
-* **When you have around 100 options or less.** Ideally, aim for no more than 100 options when using a combo box. 
-* **When the options are known and memorable.** Use the combo box when the user will know what to expect as options in the drop down. Some examples of this would be a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2) for an example.
-
-### When to use something else
-* **Around a 100 or more options.** If you have more or around a 100 options, consider using a different approach, such as using the type-ahead feature in the [search input]({{ site.baseurl }}/components/search-input) component to help users find what they need.
+{% include content/select-options.md %}
 
 ### Errors
 
