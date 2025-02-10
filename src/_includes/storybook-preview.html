@@ -2,11 +2,13 @@
 {% if include.base_path %}
   {% assign storybook_path = include.base_path %}
 {% endif %}
+
 <div
   class="site-showcase"
   style="max-width: {{ include.width | default: '100%' }}"
 >
   <iframe
+    id="{{ include.story }}"
     width="100%"
     height="{{ include.height }}"
     src="{{ storybook_path }}/iframe.html?id={{ include.story }}&amp;viewMode=story"
@@ -14,3 +16,40 @@
 </div>
 
 [{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_path }}/?path=/docs/{{ include.story }})
+
+<script>
+  function handleIframe($iframe) {
+    if ($iframe.id === 'storybook-preview-iframe') {
+        $iframe.addEventListener('load', onLoad);
+        onLoad.call($iframe);
+    } else {
+        adjustHeight($iframe);
+    }
+}
+
+function onLoad() {
+    this.contentWindow.addEventListener('animationend', onAnimationEnd);
+}
+
+function adjustHeight($iframe) {
+    console.log($iframe);
+}
+
+function adjustHeight($iframe) {
+    const $body = $iframe.contentWindow.document.body;
+    const $parent = $iframe.parentElement;
+    const currentHeight = $parent.style.height;
+
+    if (currentHeight === '400px') {
+        $parent.style.height = $body.scrollHeight + 'px';
+    }
+}
+</script>
+<!-- 
+<script>
+
+   window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
+   window["{{ include.story }}"].onload = function() {
+     window["{{ include.story }}"].style.height = window["{{ include.story }}"].contentDocument.getElementById('root').scrollHeight + "px";
+  }
+ </script> -->

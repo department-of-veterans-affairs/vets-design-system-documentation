@@ -21,11 +21,36 @@
   <meta name=”robots” content=”noindex, nofollow”>
   {% endif %}
 
+  <style>
+    iframe {
+    visibility: hidden;
+    animation: appear 0s linear forwards;
+    }
+
+    @keyframes appear {
+    to { visibility: visible }
+    }
+  </style>
+
   <!-- Web component setup -->
   <link rel="stylesheet" type="text/css" href="{{ '/assets/stylesheets/component-library.css' | append: cacheBust }}" />
   <script type="module">
     import { defineCustomElements } from "/vendor/javascripts/component-library/loader/index.es2017.js";
     defineCustomElements();
+</script>
+
+<script>
+  window.addEventListener('animationend', onAnimationEnd);
+
+  function onAnimationEnd(ev) {
+      if (ev.animationName === 'appear') {
+          handleIframe(ev.target);
+      }
+  }
+
+  function handleIframe($iframe) {
+      console.log($iframe);
+  }
 </script>
 
   <!-- Icons -->
