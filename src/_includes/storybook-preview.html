@@ -50,9 +50,9 @@ function adjustHeight($iframe) {
     const $parent = $iframe.parentElement;
     const currentHeight = $parent.style.height;
 
-    //if (currentHeight === '400px') {
+    if (currentHeight === '150px') {
         $parent.style.height = $body.scrollHeight + 'px';
-    //}
+    }
 }
 
   //  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
