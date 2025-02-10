@@ -46,7 +46,7 @@ function adjustHeight($iframe) {
 }
 
 function adjustHeight($iframe) {
-    const $body = $iframe.contentWindow.document.body;
+    const $body = $iframe.contentWindow.document.getElementById('storybook-root');
     const $parent = $iframe.parentElement;
     const currentHeight = $parent.style.height;
 
