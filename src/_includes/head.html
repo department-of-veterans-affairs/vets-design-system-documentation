@@ -28,6 +28,18 @@
     defineCustomElements();
 </script>
 
+ <!-- Update iframe heights to match content -->
+<style>
+    iframe {
+    visibility: hidden;
+    animation: appear 0s linear forwards;
+    }
+
+    @keyframes appear {
+    to { visibility: visible }
+    }    
+</style>
+
   <!-- Icons -->
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
