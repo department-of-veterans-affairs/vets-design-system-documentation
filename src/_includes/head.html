@@ -40,65 +40,19 @@
 </script>
 
 <script>
-   /*  ========== Update iframe heights to match content ========== */
+/*  ========== Update iframe heights to match content ========== */
 
-    function handleIframe($iframe) {
-        if ($iframe.id === 'storybook-preview-iframe') {
-            $iframe.addEventListener('load', preview);
-            preview.call($iframe);
-            return;
-        }
-        $iframe.addEventListener('load', () => {
-            const observer = new ResizeObserver(([entry]) => {
-                if (!entry.contentRect.height) return;
-                adjustHeight($iframe, entry.target);
-                observer.unobserve(entry.target);
-            });
-            observer.observe($iframe.contentWindow.document.body);
-        });
-        reload.call($iframe);
+window.addEventListener('animationend', onAnimationEnd);
+
+function onAnimationEnd(ev) {
+    if (ev.animationName === 'appear') {
+        handleIframe(ev.target);
     }
+}
 
-    function reload() {
-        const src = this.src;
-        this.removeAttribute('src');
-        this.removeAttribute('loading');
-        this.src = src;
-    }
-
-    function adjustHeight($iframe, $body) {
-        const adjustedHeight = $body.scrollHeight;
-        const currentHeight = $iframe.parentElement.style.height;
-        const allow = $iframe.parentElement.hasAttribute('data-adjusted')
-            || currentHeight === '400px';
-
-        if (allow && adjustedHeight) {
-            $iframe.parentElement.style.height = `${adjustedHeight + 12}px`;
-            $iframe.parentElement.setAttribute('data-adjusted', '');
-        }
-    }
-
-    function preview() {
-        const doc = (this?.contentDocument)
-            ? this.contentDocument
-            : this.contentWindow.document;
-
-        this.contentWindow.addEventListener('animationend', (ev) => {
-            if (ev.animationName === 'appear') {
-                if (ev.target.tagName === 'IFRAME') {
-                    const $iframe = ev.target
-                    handleIframe($iframe);
-
-                    const resizer = $iframe.closest('.sbdocs-preview');
-                    if (!resizer) return;
-
-                    resizer.addEventListener('pointerup', () => {
-                        adjustHeight($iframe, $iframe.contentWindow.document.body);
-                    });
-                }
-            }
-        });
-    }
+function handleIframe($iframe) {
+    console.log($iframe);
+}
 </script>
 
   <!-- Icons -->
