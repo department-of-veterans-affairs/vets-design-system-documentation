@@ -17,7 +17,7 @@
   <iframe
     id="{{ include.story }}"
     width="100%"
-    height="{{ include.height }}"
+   // height="{{ include.height }}"
     src="{{ storybook_path }}/iframe.html?id={{ include.story }}&amp;viewMode=story"
   ></iframe>
 </div>
@@ -50,9 +50,9 @@ function adjustHeight($iframe) {
     const $parent = $iframe.parentElement;
     const currentHeight = $parent.style.height;
 
-    if (currentHeight === '150px') {
+    //if (currentHeight === '150px') {
         $parent.style.height = $body.scrollHeight + 'px';
-    }
+    //}
 }
 
   //  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
