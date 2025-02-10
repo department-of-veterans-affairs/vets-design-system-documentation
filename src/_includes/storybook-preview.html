@@ -14,10 +14,10 @@
   class="site-showcase"
   style="max-width: {{ include.width | default: '100%' }}"
 >
+  // height="{{ include.height }}"
   <iframe
     id="{{ include.story }}"
     width="100%"
-   // height="{{ include.height }}"
     src="{{ storybook_path }}/iframe.html?id={{ include.story }}&amp;viewMode=story"
   ></iframe>
 </div>
