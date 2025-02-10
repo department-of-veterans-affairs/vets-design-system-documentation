@@ -28,15 +28,22 @@
 
 window.addEventListener('animationend', onAnimationEnd);
 
-  function onAnimationEnd(ev) {
-      if (ev.animationName === 'appear') {
-          handleIframe(ev.target);
-      }
-  }
-  
   function handleIframe($iframe) {
-      console.log($iframe);
-  }
+    if ($iframe.id === 'storybook-preview-iframe') {
+        $iframe.addEventListener('load', onLoad);
+        onLoad.call($iframe);
+    } else {
+        adjustHeight($iframe);
+    }
+}
+
+function onLoad() {
+    this.contentWindow.addEventListener('animationend', onAnimationEnd);
+}
+
+function adjustHeight($iframe) {
+    console.log($iframe);
+}
 
   //  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
   //  window["{{ include.story }}"].onload = function() {
