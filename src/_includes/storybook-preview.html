@@ -17,34 +17,6 @@
 
 [{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_path }}/?path=/docs/{{ include.story }})
 
-<script>
-  function handleIframe($iframe) {
-    if ($iframe.id === 'storybook-preview-iframe') {
-        $iframe.addEventListener('load', onLoad);
-        onLoad.call($iframe);
-    } else {
-        adjustHeight($iframe);
-    }
-}
-
-function onLoad() {
-    this.contentWindow.addEventListener('animationend', onAnimationEnd);
-}
-
-function adjustHeight($iframe) {
-    console.log($iframe);
-}
-
-function adjustHeight($iframe) {
-    const $body = $iframe.contentWindow.document.body;
-    const $parent = $iframe.parentElement;
-    const currentHeight = $parent.style.height;
-
-    if (currentHeight === '400px') {
-        $parent.style.height = $body.scrollHeight + 'px';
-    }
-}
-</script>
 <!-- 
 <script>
 
