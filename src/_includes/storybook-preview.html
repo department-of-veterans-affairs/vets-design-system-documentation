@@ -2,6 +2,14 @@
 {% if include.base_path %}
   {% assign storybook_path = include.base_path %}
 {% endif %}
+<style>
+   @keyframes appear { to { visibility: visible; } }
+
+    iframe {
+        visibility: hidden;
+        animation: appear 0s linear forwards;
+    }
+</style>
 <div
   class="site-showcase"
   style="max-width: {{ include.width | default: '100%' }}"
