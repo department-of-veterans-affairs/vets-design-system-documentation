@@ -30,8 +30,8 @@ window.addEventListener('animationend', onAnimationEnd);
       console.log($iframe);
   }
 
-   window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
-   window["{{ include.story }}"].onload = function() {
-     window["{{ include.story }}"].style.height = window["{{ include.story }}"].contentDocument.getElementById('root').scrollHeight + "px";
-  }
+  //  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
+  //  window["{{ include.story }}"].onload = function() {
+  //    window["{{ include.story }}"].style.height = window["{{ include.story }}"].contentDocument.getElementById('root').scrollHeight + "px";
+  // }
  </script>
