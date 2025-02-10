@@ -61,6 +61,18 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
   * Replace all but the first 3 and last 2 characters (numbers or letters) of the filename with the "X" character.
   * Show the MIME type of the file (like ".png", ".pdf", etc.)
 
+#### Recovering from an action needed notification failure
+
+In the event that an action needed notification fails to reach the person who submitted the form, then it is imperative that we make multiple attempts to reach the person. 
+
+First, if appropriate, attempt to manually re-submit the form one last time. If successful, an action needed email is no longer necessary. If unsuccessful, move on to the following recommended communication paths:
+
+1. **Email to primary email address.** Our first communication attempt should be to the primary email address provided in the form, or collected from the user's profile.
+2. **Email to alternative email address.** If the primary email notification fails, as determined via callback to VA Notify or other mechanism, fallback to any alternative email addresses available.
+3. **Text message to primary phone number.** If the secondary email notification fails, fallback to sending a text message via VA Notify to the primary phone number either collected in the form or obtained from the user's profile. Users do not need to opt-in to this message as it is a critical communication.
+
+Finally, if all attempts to reach the person fail, the submission should be logged as a silent failure. Regardless of the notification status, the status of the form submission should be visible in the user interface of VA.gov or the Health and Benefits mobile application. This may be accomplished via [My VA](#form-submission-status-in-my-va), Claim Status Tool, or another service. 
+
 ### Showing form submission status on the form confirmation page
 
 #### For synchronous submissions
