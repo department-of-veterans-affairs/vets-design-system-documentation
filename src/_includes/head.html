@@ -29,16 +29,30 @@
 </script>
 
  <!-- Update iframe heights to match content -->
-<style>
-    iframe {
-    visibility: hidden;
-    animation: appear 0s linear forwards;
-    }
+  <style>
+      iframe {
+      visibility: hidden;
+      animation: appear 0s linear forwards;
+      }
+  
+      @keyframes appear {
+      to { visibility: visible }
+      }    
+  </style>
 
-    @keyframes appear {
-    to { visibility: visible }
-    }    
-</style>
+  <script>
+    window.addEventListener('animationend', onAnimationEnd);
+
+    function onAnimationEnd(ev) {
+        if (ev.animationName === 'appear') {
+            handleIframe(ev.target);
+        }
+    }
+    
+    function handleIframe($iframe) {
+        console.log($iframe);
+    }
+  </script>
 
   <!-- Icons -->
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
