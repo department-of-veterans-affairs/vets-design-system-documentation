@@ -2,7 +2,6 @@
 {% if include.base_path %}
   {% assign storybook_path = include.base_path %}
 {% endif %}
-
 <div
   class="site-showcase"
   style="max-width: {{ include.width | default: '100%' }}"
@@ -17,11 +16,22 @@
 
 [{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_path }}/?path=/docs/{{ include.story }})
 
-<!-- 
 <script>
+
+window.addEventListener('animationend', onAnimationEnd);
+
+  function onAnimationEnd(ev) {
+      if (ev.animationName === 'appear') {
+          handleIframe(ev.target);
+      }
+  }
+  
+  function handleIframe($iframe) {
+      console.log($iframe);
+  }
 
    window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
    window["{{ include.story }}"].onload = function() {
      window["{{ include.story }}"].style.height = window["{{ include.story }}"].contentDocument.getElementById('root').scrollHeight + "px";
   }
- </script> -->
+ </script>
