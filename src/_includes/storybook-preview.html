@@ -45,6 +45,16 @@ function adjustHeight($iframe) {
     console.log($iframe);
 }
 
+function adjustHeight($iframe) {
+    const $body = $iframe.contentWindow.document.body;
+    const $parent = $iframe.parentElement;
+    const currentHeight = $parent.style.height;
+
+    if (currentHeight === '400px') {
+        $parent.style.height = $body.scrollHeight + 'px';
+    }
+}
+
   //  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
   //  window["{{ include.story }}"].onload = function() {
   //    window["{{ include.story }}"].style.height = window["{{ include.story }}"].contentDocument.getElementById('root').scrollHeight + "px";
