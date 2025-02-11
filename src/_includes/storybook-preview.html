@@ -18,13 +18,12 @@
 
 <script>
   window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
-  const storybookIframe = window["{{ include.story }}"];
 
-  storybookIframe.addEventListener("load", function() {
+  window["{{ include.story }}"].addEventListener("load", function() {
 
-    console.log('storybookIframe loaded!', storybookIframe);
+    console.log('storybookIframe loaded!', window["{{ include.story }}"]);
 
-    const innerDoc = storybookIframe.contentDocument || storybookIframe.contentWindow.document;
+    const innerDoc = window["{{ include.story }}"].contentDocument || window["{{ include.story }}"].contentWindow.document;
 
     console.log('innerDoc', innerDoc);
 
@@ -35,7 +34,7 @@
 
       console.log('innerDoc.body', innerDoc.body);
       console.log('innerDoc.body.scrollHeight', innerDoc.body.scrollHeight);
-      storybookIframe.height = innerDoc.body.scrollHeight;
+      window["{{ include.story }}"].height = innerDoc.body.scrollHeight;
     }
   });
 </script>
