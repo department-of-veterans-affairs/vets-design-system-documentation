@@ -52,6 +52,8 @@ web-component: va-search-input
 
 * When free text input is allowed, do not use type-ahead in form fields where the user might assume they are limited to selecting a suggested term. Alternatively, provide a clear way for the user to add an entry if you do use type-ahead in a form field.
 
+{% include content/select-options.md %}
+
 ### Placement
 
 * The search input component should only appear in the global header, on search results pages, and in search-related tools such as Resources and Support and Find a VA Form.

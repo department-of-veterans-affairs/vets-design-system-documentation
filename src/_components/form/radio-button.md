@@ -63,6 +63,8 @@ anchors:
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/radio-buttons/">Refer to the U.S. Web Design System for usage guidance</a>
 
+{% include content/select-options.md %}
+
 ### Choosing between variations
 
 * Use the [Hint text](#hint-text) variation to provide additional information that pertains to the question being asked or all of the options presented.

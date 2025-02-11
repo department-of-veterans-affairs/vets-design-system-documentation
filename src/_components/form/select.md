@@ -27,7 +27,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-select--required" link_text="va-select required" %}
 
-### With hint text
+### Hint text
 
 {% include storybook-preview.html story="uswds-va-select--with-hint-text" link_text="va-select with hint text" %}
 
@@ -57,9 +57,7 @@ anchors:
 
 ### Additional guidance for VA
 
-#### Additional reasons to consider something else
-
-**More than 15 options.** If the list of options is very long, we do not yet have the combo box component in our system thus an alternative is to use functionality that allows users to type the same information into a text input that suggests possible options instead as seen in our [search input]({{ site.baseurl }}/components/search-input) component.
+{% include content/select-options.md %}
 
 ### Errors
 
