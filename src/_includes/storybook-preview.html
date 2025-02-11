@@ -30,6 +30,7 @@
 
     if (innerDoc) {
       const storybookRoot = innerDoc.getElementById('storybook-root');
+      console.log('storybookRoot', storybookRoot);
       storybookIframe.style.height = storybookRoot.scrollHeight + "px";
     }
   });
