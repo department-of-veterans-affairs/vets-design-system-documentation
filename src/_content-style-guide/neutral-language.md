@@ -1,16 +1,16 @@
 ---
 layout: content-style-guide
-title: Neutral and inclusive language
-intro-text: At VA, we aim to create language that’s accurate for all our audiences. That means using language that’s neutral and inclusive for Veterans and family members of different experiences, identities, and abilities. We focus on the intent of the action rather than the specific way a person experiences that action.
+title: Neutral language
+intro-text: At VA, we aim to create language that’s accurate for all our audiences while remaining as simple and clear as possible. 
 anchors:
-  - anchor: Gender-neutral pronouns and terms for family relationships
-  - anchor: Language that doesn’t assume an ability or device
+  - anchor: Language referring to people
+  - anchor: Language that doesn’t assume an experience or device
   - anchor: First-person language instead of specific roles and titles
 ---
 
-## Gender-neutral pronouns and terms for family relationships 
+## Referring to people 
 
-### We use “they” and “their” as gender-neutral pronouns
+### We use “they” and “their” 
 
 Don’t use “he or she” or “his or her.”
 
@@ -38,16 +38,17 @@ If your provider has filled out the form electronically, he or she must print it
 </div>
 </div>
 
-### We use gender-neutral terms for family relationships
+### We use broad and neutral terms for family relationships
 
 -	Spouse or partner instead of husband or wife
 -	Child or dependent child instead of son or daughter
 -	Stepchild instead of stepson or stepdaughter
 -	Parent instead of mother or father
 
-**Note:** Some VA forms currently capture gendered relationships on their backend, so we may need to keep gendered terms in some online forms until VA is able to adjust the backend.
+**Note:** In some cases, we may need to align with backend data fields in forms.
 
-## Language that doesn’t assume an ability or device
+
+## Language that doesn’t assume an experience or device
 
 ### We avoid “view” and “hear” 
 
