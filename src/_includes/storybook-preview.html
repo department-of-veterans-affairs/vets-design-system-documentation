@@ -34,7 +34,8 @@
       // storybookIframe.style.height = storybookRoot.scrollHeight + "px";
 
       console.log('innerDoc.body', innerDoc.body);
-      storybookIframe.style.height = innerDoc.body.scrollHeight;
+      console.log('innerDoc.body.scrollHeight', innerDoc.body.scrollHeight);
+      storybookIframe.height = innerDoc.body.scrollHeight;
     }
   });
 </script>
