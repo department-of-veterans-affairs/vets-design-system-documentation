@@ -28,10 +28,13 @@
 
     console.log('innerDoc', innerDoc);
 
-    if (innerDoc) {
-      const storybookRoot = innerDoc.getElementById('storybook-root');
-      console.log('storybookRoot', storybookRoot);
-      storybookIframe.style.height = storybookRoot.scrollHeight + "px";
+    if (innerDoc.body) {
+      // const storybookRoot = innerDoc.getElementById('storybook-root');
+      // console.log('storybookRoot', storybookRoot);
+      // storybookIframe.style.height = storybookRoot.scrollHeight + "px";
+
+      console.log('innerDoc.body', innerDoc.body);
+      storybookIframe.style.height = innerDoc.body.scrollHeight;
     }
   });
 </script>
