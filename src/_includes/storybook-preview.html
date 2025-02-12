@@ -23,18 +23,22 @@
 
     console.log('storybookIframe loaded!', window["{{ include.story }}"]);
 
-    const innerDoc = window["{{ include.story }}"].contentDocument || window["{{ include.story }}"].contentWindow.document;
+    setTimeout(() => {
+      const innerDoc = window["{{ include.story }}"].contentDocument || window["{{ include.story }}"].contentWindow.document;
 
-    console.log('innerDoc', innerDoc);
+      console.log('innerDoc', innerDoc);
 
-    if (innerDoc.body) {
-      // const storybookRoot = innerDoc.getElementById('storybook-root');
-      // console.log('storybookRoot', storybookRoot);
-      // storybookIframe.style.height = storybookRoot.scrollHeight + "px";
+      if (innerDoc.body) {
+        // const storybookRoot = innerDoc.getElementById('storybook-root');
+        // console.log('storybookRoot', storybookRoot);
+        // storybookIframe.style.height = storybookRoot.scrollHeight + "px";
 
-      console.log('innerDoc.body', innerDoc.body);
-      console.log('innerDoc.body.scrollHeight', innerDoc.body.scrollHeight);
-      window["{{ include.story }}"].height = innerDoc.body.scrollHeight;
-    }
+        console.log('innerDoc.body', innerDoc.body);
+        console.log('innerDoc.body.scrollHeight', innerDoc.body.scrollHeight);
+        window["{{ include.story }}"].height = innerDoc.body.scrollHeight;
+      }
+    }, 1000)
+
+
   });
 </script>
