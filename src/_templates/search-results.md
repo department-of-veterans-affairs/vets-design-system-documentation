@@ -6,7 +6,7 @@ status: use-with-caution-candidate
 intro-text: "Search results show links to the user of pages that matched the search query."
 anchors:
   - anchor: About
-  - anchor: Example
+  - anchor: Examples
   - anchor: Structure
 ---
 
@@ -14,7 +14,39 @@ anchors:
 
 A search results page has certain requisite parts detailed in this guidance.
 
-## Example
+## Examples
+
+### Results only
+
+{% include component-example.html
+  class="x2"
+  alt="An example of a search results page." 
+  caption="Search results page without options to sort or filter."
+  file="/images/templates/search-results/site-search-results-only.png" %}
+
+### Sort only
+
+{% include component-example.html
+  class="x2"
+  alt="An example of a search results page showing sorting only." 
+  caption="Search results page showing only a sort option."
+  file="/images/templates/search-results/site-search-sort-only.png" %}
+
+### Filter only
+
+{% include component-example.html
+  class="x2"
+  alt="An example of a search results page showing filtering only." 
+  caption="Search results page showing only a filter option."
+  file="/images/templates/search-results/site-search-filter-only.png" %}
+
+### Filter and sort
+
+{% include component-example.html
+  class="x2"
+  alt="An example of a search results page showing filtering and sorting." 
+  caption="Search results page showing only a filter option."
+  file="/images/templates/search-results/site-search-filter-and-sort.png" %}
 
 ### Search results page
 
