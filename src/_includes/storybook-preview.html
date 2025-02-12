@@ -29,16 +29,11 @@
       console.log('innerDoc', innerDoc);
 
       if (innerDoc.body) {
-        // const storybookRoot = innerDoc.getElementById('storybook-root');
-        // console.log('storybookRoot', storybookRoot);
-        // storybookIframe.style.height = storybookRoot.scrollHeight + "px";
-
         console.log('innerDoc.body', innerDoc.body);
         console.log('innerDoc.body.scrollHeight', innerDoc.body.scrollHeight);
         window["{{ include.story }}"].height = innerDoc.body.scrollHeight;
       }
-    }, 1000)
-
+    }, 500)
 
   });
 </script>
