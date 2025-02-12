@@ -1,336 +1,38 @@
 ---
 layout: default
 title: What’s new?
+sidebar: true
+anchors:
+  - anchor: design.va.gov Updates
+  - anchor: VADS Component Library Releases
+  - anchor: Figma Component Library Changelog
 ---
 
 # What’s new?
 
 <div class="va-introtext">
-  The latest news and updates on the Design System, Forms library and the Content style guide.
+  The latest news and updates on the VA Design System.
 </div>
-
-## New Features & Components  (as of Jan 15, 2025)
- **[v48.4.0](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v48.4.0) of the component library**
-
-- va-button: add loading variation by [**@powellkerry**](https://github.com/powellkerry) in [#1446](https://github.com/department-of-veterans-affairs/component-library/pull/1446)
-- va-search-input: add clear search button by [**@ataker**](https://github.com/ataker) in [#1450](https://github.com/department-of-veterans-affairs/component-library/pull/1450)
-
-**Fixes**
-
-- va-accordion: add custom event to expand/collapse all button by [**@jamigibbs**](https://github.com/jamigibbs) in [#1445](https://github.com/department-of-veterans-affairs/component-library/pull/1445)
-- va-date: remove unnecessary aria labels for select by [**@powellkerry**](https://github.com/powellkerry) in [#1447](https://github.com/department-of-veterans-affairs/component-library/pull/1447)
-- va-alert-sign-in: Hides no-sign-in-link when not present by [**@asg5704**](https://github.com/asg5704) in [#1452](https://github.com/department-of-veterans-affairs/component-library/pull/1452)
-- va-link: add aria-label to all variations by [**@jamigibbs**](https://github.com/jamigibbs) in [#1448](https://github.com/department-of-veterans-affairs/component-library/pull/1448)
-
-**Other Changes**
-
-- css-library: add img folder to dist by [**@micahchiang**](https://github.com/micahchiang) in [#1441](https://github.com/department-of-veterans-affairs/component-library/pull/1441)
-- css-library: fix the html element's font-size so it will respect browser settings by [**@Andrew565**](https://github.com/Andrew565) in [#1444](https://github.com/department-of-veterans-affairs/component-library/pull/1444)
-
-**Figma Changelog**
-
-- [Update Confirmation template screenshots & guidance](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3659)  (Dan Brady)
-
-- Update design of Language Toggle / #3605  (Lucas Wright)
-  - Created a new design that has the current language display (in VADS-base color) which complies with latest WCAG guidelines.
-
-- [Error Color mismatch between Figma and Production](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3519) (Dan Brady) 
-
-- Link Collection (active link) Figma update - Design #3487  (Barb Denney)
-  - Fixed bug in link collection that caused the active link arrow to align to the right. 
-
-- Update visuals based on USWDS 3.9.0 update / #3524  (Lucas Wright)
-
-  - Updated Pagination based on USWDS 3.9.0 update (add underlines to all links) #3524
-
-  - Update page link to 40x40
-
-  - Add properties: Type, State
-
-  - Updated the spacing of the icon and padding on left side to 20 px
-
-  - Fixed the overlap of the close button (X) with text in the slim designs
-
-  - Fixed the odd spacing issues in the layout of the variations
-
-- Card (Dan Brady)
-  - Fixed tag height  
-
-- Button  (Dan Brady)
-
-  - Deprecate disabled variation
-
-  - Add loading variation
-
-
-**Guidance updates**
-
-- [[Documentation\] - Update list component documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3399)  (Barb Denney)
-
-- [va-checkbox indeterminate state - Documentation update](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3610)  (Barb Denney)
-
-- [Update links for Alert Sign-in](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3637)  (Barb Denney)
-
-
-
-
-## Fall 2024
-
-### New and updated components
-* va-process-list-item: Add text to describe status by @powellkerry in #1362
-* Add custom message to va-file-input and update message in va-file-input-multiple by @ataker in #1367
-* va-table: add sorting variation by @it-harrison in #1358
-* va-file-input: add support for read-only mode by @pennja in #1300
-* va-date: add prop to make month optional by @it-harrison in #1377
-
-### New content guidance
-* Claims and applications (under Specific topics and programs): New page with general guidance for content about claims and applications #3504 
-* Email and text notifications: New page with general guidance for email notifications #3406
-* Bulleted lists: Clarification on single sentences in lists; crosslink with radio buttons and checkboxes #3268
-* Use short sentences (under Plain language): New example and suggested guideline for maximum sentence length #3268 
-* Sign in and identity verification (under Specific topics and programs): Updates to word list related to sign-in changes and clarification on when and when not to use "verify your identity"
-* Word list: New entries for claimant, sponsor, Philippines, and Washington, DC #3513
-
-### Bug fixes
-* va-modal: set box-sizing to border-box to prevent text overflow by @powellkerry in #1357
-* va-accordion: open accordion when media is print by @ataker in #1363
-* va-process-list: update status eyebrow text to uppercase by @powellkerry in #1365
-* va-process-list: change color variable from usa to vads by @powellkerry in #1368
-* va-table: show table header for non-stacked & stacked small screen by @harshil1793 in #1364
-* va-table: update va-table-inner to properly scope table header row to columns by @1Copenut in #1370
-* va-select: add import for focusable mixin by @powellkerry in #1376
-* va-modal: set overflow-wrap:anywhere on modal content by @powellkerry in #1372
-* focusable: add tabindex selector by @powellkerry in #1380
-
-### Other changes
-* CSS Library: replace FA icons for action link and alert classes by @jamigibbs in #1371
-* CSS Library: style and image path updates for alert and action link modules by @jamigibbs in #1378
-* CSS Library: remove the /alerts image path by @jamigibbs in #1381
-
-### Design updates
-* [Design] Table variations #3137 
-* [Design]Update Alert spacing in Figma #3231 
-* Update breadcrumb spacing in Page templates - Design #3049 
-
-### Documentation updates  
-* Update guidance for Keep a record of submitted information pattern #3054 
-* Add List guidance to VADS #3206 
-* Alerts - Sign in - Documentation 
-* Issue with downloading logos (PNG format)
-* Update va-link External link variation guidance #3224
-* Multiple responses pattern and flow chart #3219
-* Update guidance for select component - Documentation #3251
-* Guidance for international phone numbers #3316
-* Update gender pattern #3289 
-
-## Summer 2024
-
-The team synced up typography with USWDS v3 and continues to focus on syncing up iconography and replacing v1 components with their v3 equivalents.
-
-### New and updated components
-
-* [File input]({{ site.baseurl }}/components/form/file-input)
-* [Text input - Prefix icon]({{ site.baseurl }}/components/form/text-input#prefix-icon)
-* [Text input - Suffix text]({{ site.baseurl }}/components/form/text-input#suffix-text)
-* [Text input - Prefix and Suffix]({{ site.baseurl }}/components/form/text-input#prefix-and-suffix)
-
-<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/component-library/releases">Component Library releases</a>
-
-### New and updated guidance
-
-* [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs)
-* [Ask users for housing status](/patterns/ask-users-for/housing-status)
-* [URLs]({{ site.baseurl }}/components/url-standards/)
-* [URLs - Redirects]({{ site.baseurl }}/components/url-standards/redirects)
-* [Use short sentences]({{ site.baseurl }}/content-style-guide/plain-language/use-short-sentences)
-
-### Bug fixes
-
-[Issues closed this Summer](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues?q=is%3Aissue+is%3Aclosed+closed%3A2024-06-01..2024-08-30+) (206)
-
-## Spring 2024
-
-### May 2024
-
-The team continued to synch to USWDS v3 specifically aligning typography and updated and fixed v3 components. The Figma Library continued to be built out and updated.
-
-#### New features and components
-
-* Experimental Design - Button - Icon (#1559)
-* Experimental Design [new icon request: pill] (#2811)
-* Add icons for the mobile app (#2865)
-
-#### Updated components and bug fixes
-
-* Allow `<va-link>` to be a white link instead of default blue (#2602)
-* Add `aria-describedby` attribute/functionality to va-button (#2739)
-* Formation Deprecation - Styles Migration - Swap content-build import (#2539)
-* Screen Reader bug: Signature / Statement of Truth (JAWS) (#2649)
-* Remove V1 Modal from Component Library and Storybook (#2661)
-* Component Analytics enhancement request: Provide context for `<va-link>` (#2693)
-* Cannot submit a form with va-button (#2734)
-* Statement of Truth change events do not contain the form values (#2783)
-* Remove the v1 components in Storybook (#2800)
-* Switch any non v3 components to use USWDS icons (#2198)
-* DST Staging Review: Insufficient color contrast on focus/hover states (#2833)
-* Accessibility: V3 Select's options are not being read with Chrome when arrowed through (#2610)
-* Tag component should use USWDS v3 background color (#2361)
-* Update the "Icon Found" bot in vets-website and content-build for va-icon(#2626)
-* File Input - Update v3 component to align with Figma (#2642)
-* Cannot change text of a continue va-button (#2733)
-* va-icon should be properly aligned to parent element and pick up font size(#2818)
-* Replace content-build breadcrumb partial with V3 Component (#2742)
-* Formation Deprecation - CSS Library Utility class rename (#2855)
-* Fix Drag-and-Drop Handling and Add Custom Validation Example for `<va-file-input>` (#84044)
-* Formation Deprecation - Typography Migration - Swap vets-website imports (#2538)
-* Pill icon has hard-coded fill value (#2875)
-
-#### Figma Library updates
-
-* Figma rebuild: Templates - Feedback (Patterns) (#2454)
-* Figma rebuild: Templates - Review (Forms) add accessibility annotations (#2545)
-* Figma rebuild: Templates - Form Step (pattern) (#2778)
-* [List] - Add Figma components for Lists (#2510)
-* Add Table Example in Figma (#2809)
-* Figma rebuild: Templates - Signature (Patterns) (#2461)
-* [Figma] Update Penalty Statement in figma components(#2528)
-* [va-checkbox] - Add Indeterminate State - Design (#2653)
-* Figma update: Add white link variation to va-link (#2776)
-* Tag component should use USWDS v3 background color (#2361)
-* Update button width for mobile modals in Figma component (#2740)
-
-#### Global Typography updates
-
-* Typography Step 1 Completion: Merge component-library and vets-website PRs (#2681)
-* Typography - Update Application REM Values - Appeals 995, 996 (#2698)
-* Typography - Update Application REM Values - Appeals 10182 and Appeals/shared (#2699)
-* Typography - Update Application REM Values - ask-a-question and ask-va (#2700)
-* Typography - Update Application REM Values -auth and avs (#2701)
-* Typography - Update Application REM Values - burials-v2 and caregivers (#2702)
-* Typography - Update Application REM Values - check-in and claims-status (#2703)
-* Typography - Update Application REM Values - dhp-connected-devices and discharge-wizard (#2704)
-* Typography - Update Application REM Values - disability-benefits/686c-674 and disability-benefits/2346 (#2705)
-* Typography - Update Application REM Values - disability-benefits/all-claims (#2706)
-* Typography - Update Application REM Values - discharge-wizard and education-letters (#2707)
-
-#### Documentation updates
-
-* Converted v3 Borderless Table - Documentation (#2307)
-* Remove v1 component guidance from v3 components (#2802)Button Icon - Documentation (#2745)
-* Update documentation for `aria-describedby` attribute/functionality to va-button (#2770)
-
-### April 2024
-
-The team continued to synch to USWDS v3 and updated and fixed v3 components while the Figma Library continued to be built out.
-
-#### New features and components
-
-* Icon Button Component (#2641)
-* Formation Deprecation - Add 768px Breakpoint to CSS Library (#2533)
-* Conversion to USWDS v3 Borderless table component (#1860)
-
-#### Updated components and bug fixes
-
-* [Alert] - Remove background-only prop from Alert In Figma (#2394)
-* Review & submit - fix accordion error styling (#77064)
-* Injected Header - Add eslint warning & inline comments for React Modals that should not be touched (#2541)
-* Remove V1 Memorable Date from Component Library and Storybook (#2660)
-* Search Typeahead component does not close as expected when the component loads with a value prefilled (#2676)
-* Formation Deprecation - Typography base size migration QA vets-website, content-build and vagov-content (#2525)
-* Formation Deprecation - Typography base size migration QA component-library (#2566)
-* Rename medium-mobile breakpoint to tablet (#2679)
-* va-summary-box should require that a header be present (#2557)
-* Update components section in Storybook(#2589)
-* Update remaining Formation color variables to their css-library counterparts (#79489)
-* Review & submit - fix accordion error styling(#77064)
-* Update remaining Formation color variables to their css-library counterparts (#79489)
-* Formation Deprecation - Migrate font settings from Formation to CSS Library (#2537)
-* Remove Font Awesome icon overrides in USWDS components (#2577)
-
-#### Figma Library updates
-
-* Figma rebuild: Templates - How to apply (Forms (#2464)
-* Figma rebuild: Templates - Multiple Responses (Patterns) (#2457)
-* Add missing icons for texting/mobile device and external link (#2381)
-* Figma rebuild: Templates - Confirmation (Forms) (2466)
-* Icons - Update Figma Components to use USWDS icons (#2624) 
-
-#### Documentation updates
-
-* Icon web component - Documentation (#2197)
-* Create documentation about web component analytics (#2625) 
-
-#### Accessibility  updates
-
-* Discovery: Research and propose aria-describedby alternatives(#2619)
-* Icon web component - Accessibility review (#1365)
-* va-select needs describedby property (#2587)
-  
-## Winter 2024
-
-### March 2024
-
-The team continued to synch to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out.
-
-#### Updated components and bug fixes
-
-* CSS-Library: add missing tokens after audit of formation (#1074)
-* CSS-Library: update tokens missed in previous update (#1087)
-* va-accordion: remove Font Awesome icon override (#1083)
-* va-header-minimal: add optional headings (#1084)
-* updated CSS-Library version in web-components (#1086)
-* va-text-input and va-textarea error message not announced by screen readers (#2572)
-* Updated all instances of color-primary-darker and color-primary-darkest in vets-website#2311
-
-#### Figma Library updates
-
-* Added v3 Borderless Table Design to the component library (#1859)
-* Add Military Address pattern to templates (#2329)
-* Added Direct Deposit pattern to templates (#2453)
-* Added Review form pattern to templates (#2465)
-* Added Introduction pattern to templates (#2484)
-* Added Service History pattern to templates (#2460)
-* Update the design system template screens for intro page (#2385)
-
-#### Documentation updates
-
-* Fixed broken link to "linking to external link" info (#2552)
-* Documented pattern for Ask users for a single response (#2611)
-* Wrote guidance for icon migration (#2536)
-
-### February 2024
-
-The team continued to deliver web components synced to USWDS v3 and made updates and fixes to v3 components while the Figma Library continues to be built out.
-
-#### New and updated components
-
-* va-breadcrumb: VA.gov home is now the default first label in #638
-* va-flle-input: Made accessibility visual updates to the focus state and error state in #2441
-
-#### Bug fixes
-
-* va-modal: Fixed icon positioning in larger version in 2445
-* va-file-input: Made accessibility fix so it reads out selected files correctly in #2442
-* va-file-input: Disabled multiple file input dragging and dropping in #2479
-* va-icon: Updated to use sprite successfully in #2353
-* va-pagination: Fixed incorrect active page color in v3 in #2420
-* va-maintenance-banner: Remove banner role in #2429
-* Forms pattern: Updated  headings to correct serif font in #2474
-* Forms pattern: Updated radio button to show title and required label in #2475
-
-#### Deprecated React components
-
-Modal (#1634, #2449,  #2450)
-
-#### Figma Library updates
-
-* Added Contact preferences pattern in #2452
-* Updated expandable alert with number of lines property in #2454
-* Added LinkedIn icon in #2497
-* Fixed font & link color for Email Template #2506
-
-#### Documentation updates
-
-* Developer contribution page updates in #2446 
-* va-alert and va-expandable-alert: Updated accessibility documentation for announcing alerts (role="alert") in #2145
-* Design Libraries has been updated with Figma information in #2410
+ 
+## design.va.gov Updates
+{% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=2 %}
+
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases"
+  text="View all design.va.gov releases"
+></va-link-action>
+
+## VADS Component Library Releases
+{% include _github_markdown_parser.html json=site.data.component_library_releases num_recent_releases=6 %}
+
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/component-library/releases"
+  text="View all VADS Component Library releases"
+></va-link-action>
+
+## Figma Component Library Changelog
+<iframe src="{{ site.figma_changelog_embed_url }}" style="width:100%; height:480px; max-height:80vh"></iframe>
+<va-link-action
+  href="{{ site.figma_changelog_direct_url }}"
+  text="Open Component Library changelog in Figma"
+></va-link-action>
