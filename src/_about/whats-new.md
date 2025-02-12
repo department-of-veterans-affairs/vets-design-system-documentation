@@ -13,7 +13,7 @@ anchors:
 <div class="va-introtext">
   The latest news and updates on the VA Design System.
 </div>
- 
+
 ## design.va.gov Updates
 {% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=2 %}
 
