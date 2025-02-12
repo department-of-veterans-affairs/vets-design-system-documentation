@@ -4,7 +4,7 @@ permalink: /components/modal/
 title: Modal
 intro-text: "A modal disables page content and focuses the user’s attention on a single task or message."
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=861%3A1708&mode=design&t=jMcVWkPlFhZu3RTh-1
-status: use-deployed
+status: use-best-practice
 sub-pages:
   - sub-page: Crisis Line modal
 uswds-v3: default
