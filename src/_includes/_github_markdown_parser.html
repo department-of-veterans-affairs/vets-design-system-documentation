@@ -1,0 +1,20 @@
+{% assign reGithubUrl = '(https?:\/\/(www\.)?github\.com(?:\/.*)?)' %}
+{% assign rePrNumber = '\[https?:\/\/(www\.)?github\.com(?:\/.*)?pull\/(\d+)\s?\]' %}
+{% assign reHeadingLevels = '(#{2,6})\s' %}
+{% assign reUsernames = 'by\s(@(\S+))\s' %}
+
+{% assign recentReleases = include.json | slice: 0, include.num_recent_releases %}
+
+{% for release in recentReleases %}
+<va-card class="vads-u-margin-bottom--2">
+  <span class="usa-label">{{ release.name }}</span>
+  <div class="vads-u-font-size--xl vads-u-font-weight--bold vads-u-font-family--serif">{{ release.published_at | date: "%B %-d, %Y" }}</div>
+  {{ release.body
+      | regexreplace: reGithubUrl, '[\1](\1)'
+      | regexreplace: rePrNumber, '[\#\2]'
+      | regexreplace: reHeadingLevels, '\1# '
+      | regexreplace: reUsernames, 'by [\1](https://github.com/\2) '
+      | markdownify
+  }}
+</va-card>
+{% endfor %}
