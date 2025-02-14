@@ -5,7 +5,7 @@ permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
 intro-text: "Follow this pattern to notify people when their online form submission is in progress, when we receive their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=5600-63725&t=WnCXwOVti1WHXnIP-1
-status: use-with-caution-candidate
+status: use-with-caution-available
 research-title: Help users to stay informed of app status
 anchors:
   - anchor: Usage
@@ -63,15 +63,13 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 
 #### Recovering from an action needed notification failure
 
-In the event that an action needed notification fails to reach the person who submitted the form, then it is imperative that we make multiple attempts to reach the person. 
+In the event that an action needed notification to the form submitter's primary email address fails to reach them, then it is imperative that we make multiple attempts to reach the person. 
 
-First, if appropriate, attempt to manually re-submit the form one last time. If successful, an action needed email is no longer necessary. If unsuccessful, move on to the following recommended communication paths:
+**Important!** Regardless of the notification status, the status of the form submission should be visible in the user interface of VA.gov or the Health and Benefits mobile application. This may be accomplished via [My VA](#form-submission-status-in-my-va), Claim Status Tool, or another service. 
 
-1. **Email to primary email address.** Our first communication attempt should be to the primary email address provided in the form, or collected from the user's profile.
-2. **Email to alternative email address.** If the primary email notification fails, as determined via callback to VA Notify or other mechanism, fallback to any alternative email addresses available.
-3. **Text message to primary phone number.** If the secondary email notification fails, fallback to sending a text message via VA Notify to the primary phone number either collected in the form or obtained from the user's profile. Users do not need to opt-in to this message as it is a critical communication.
-
-Finally, if all attempts to reach the person fail, the submission should be logged as a silent failure. Regardless of the notification status, the status of the form submission should be visible in the user interface of VA.gov or the Health and Benefits mobile application. This may be accomplished via [My VA](#form-submission-status-in-my-va), Claim Status Tool, or another service. 
+1. **Email to alternative email address.** If the primary email notification fails, as determined via callback to VA Notify or other mechanism, fallback to any alternative email addresses available.
+2. **Text message to primary phone number.** If the secondary email notification fails, fallback to sending a text message via VA Notify to the primary phone number either collected in the form or obtained from the user's profile. Users do not need to opt-in to this message as it is a critical communication. Given that it is not possible to confirm receipt of a SMS message, move onto the next step.
+3. **Hand-off to Veteran Support team.** At this point, teams should use an internal process to hand off contacting the Veteran to the Veteran support team. A Support team member will contact the Veteran and assist them with re-submitting their request.
 
 ### Showing form submission status on the form confirmation page
 
