@@ -4,6 +4,7 @@ title: Header
 permalink: /components/header/
 intro-text: A header helps users identify where they are and provides a quick, organized way to reach the main sections of a website.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
+status: dont-use-proposed
 sub-pages:
   - sub-page: Header - Minimal
 anchors:

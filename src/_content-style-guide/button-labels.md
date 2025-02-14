@@ -12,5 +12,4 @@ slug: button-labels
 
 * [Button]({{ site.baseurl }}/components/button)
 * [Button group]({{ site.baseurl }}/components/button/button-group)
-
-
+* [Button icon]({{ site.baseurl }}/components/button/button-icon)
