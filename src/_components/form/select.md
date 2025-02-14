@@ -6,7 +6,7 @@ title: Select
 intro-text: "A select component allows users to choose one option from a menu."
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A93876&mode=design&t=h9BoxMWwcHe2DhUd-1
-status: use-deployed
+status: use-best-practice
 uswds-v3: default
 web-component: va-select
 anchors:
