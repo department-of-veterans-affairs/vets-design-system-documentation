@@ -43,7 +43,7 @@ anchors:
 ### When to consider something else
 
 * **Accordions for a series**: If you have a series of content in the body of a page and outside of a form or tool then an [Accordion]({{ site.baseurl }}/components/accordion) is preferred. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details.
-* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of CAIA to edit content and explore alternatives.
+* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of the Content and IA team to edit content and explore alternatives.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 * **Content organized under a new heading.** If you have enough content that it makes sense to organize under a new heading that does not make sense under the same heading as the content nearby then use an [Accordion]({{ site.baseurl }}/components/accordion).
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
