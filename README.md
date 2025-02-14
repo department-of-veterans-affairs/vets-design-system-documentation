@@ -40,6 +40,16 @@ Tested using `node` v18.19.0 and `yarn` v1.22.19.
 
 6. **Verify in browser: [localhost:4000](http://localhost:4000/)**
 
+7. **Start the Storybook server for component previews**
+
+In a new terminal window, navigate to your `component-library/packages/storybook` directory and run:
+
+   ```
+   $ yarn static-storybook-server
+   ```
+
+8. **Verify Storybook is running: [localhost:8080](http://localhost:8080/)**
+
 ## Adding content to the documentation site
 
 To add content, you will need to look into `/src` directory. This will be the source from which [Jekyll](http://jekyllrb.com) builds the site.
