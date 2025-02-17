@@ -54,15 +54,15 @@ anchors:
 
 #### Base - Primary
 
-{% include storybook-preview.html height="100px" story="button--base" base_path=site.storybook_mobile_path link_text="va-mobile__button--base" %}
+{% include storybook-preview.html height="100px" story="button--base" link_text="va-mobile__button--base" is_mobile=true %}
 
 #### Base - Secondary
 
-{% include storybook-preview.html height="100px" story="button--base-secondary" base_path=site.storybook_mobile_path link_text="va-mobile__button--base-secondary" %}
+{% include storybook-preview.html height="100px" story="button--base-secondary" link_text="va-mobile__button--base-secondary" is_mobile=true %}
 
 #### Destructive
 
-{% include storybook-preview.html height="100px" story="button--destructive" base_path=site.storybook_mobile_path  link_text="va-mobile__button--destructive" %}
+{% include storybook-preview.html height="100px" story="button--destructive" link_text="va-mobile__button--destructive" is_mobile=true %}
 
 ## Usage
 
