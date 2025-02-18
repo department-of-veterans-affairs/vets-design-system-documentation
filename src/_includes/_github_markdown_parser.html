@@ -1,5 +1,6 @@
+{% assign reIssueNumbersInTitle = '(#(\d+))' %}
 {% assign reGithubUrl = '(https?:\/\/(www\.)?github\.com(?:\/.*)?)' %}
-{% assign rePrNumber = '\[https?:\/\/(www\.)?github\.com(?:\/.*)?pull\/(\d+)\s?\]' %}
+{% assign rePrUrl = '\[https?:\/\/(www\.)?github\.com(?:\/.*)?pull\/(\d+)\s?\]' %}
 {% assign reHeadingLevels = '(#{2,6})\s' %}
 {% assign reUsernames = 'by\s(@(\S+))\s' %}
 
@@ -10,11 +11,12 @@
   <span class="usa-label">{{ release.name }}</span>
   <div class="vads-u-font-size--xl vads-u-font-weight--bold vads-u-font-family--serif">{{ release.published_at | date: "%B %-d, %Y" }}</div>
   {{ release.body
-      | regexreplace: reGithubUrl, '[\1](\1)'
-      | regexreplace: rePrNumber, '[\#\2]'
-      | regexreplace: reHeadingLevels, '\1# '
-      | regexreplace: reUsernames, 'by [\1](https://github.com/\2) '
-      | markdownify
+    | regexreplace: reGithubUrl, '[\1](\1)'
+    | regexreplace: reIssueNumbersInTitle, '[\1](https:/github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/\2)'
+    | regexreplace: rePrUrl, '[\#\2]'
+    | regexreplace: reHeadingLevels, '\1# '
+    | regexreplace: reUsernames, 'by [\1](https://github.com/\2) '
+    | markdownify
   }}
 </va-card>
 {% endfor %}
