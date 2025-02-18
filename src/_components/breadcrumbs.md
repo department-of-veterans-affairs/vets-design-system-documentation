@@ -39,17 +39,14 @@ anchors:
 
 ### When to use
 
-**For pages in hierarchies with more than 2 levels.** Use a breadcrumb for sections of content that have more than 2 levels. The breadcrumb should be displayed starting at the level 2 page and persist on all child pages in the hierarchy. For example, if a level 2 page has child pages, all pages starting at that level 2 page would need a breadcrumb.  
-
-**To provide a consistent experience for similar pages.** A breadcrumb can be used if similar pages or sections of a site are using breadcrumbs even if it doesn’t meet the requirements.  For example, the Service Members benefit hub page is a level 2 page with no hierarchy and therefore wouldn’t normally have a breadcrumb.  However, all other benefit hubs do have a breadcrumb, so providing one on this page creates a consistent experience when navigating various benefit hubs to learn about benefits. 
+* **For pages in hierarchies with more than 2 levels.** Use a breadcrumb for sections of content that have more than 2 levels. The breadcrumb should be displayed starting at the level 2 page and persist on all child pages in the hierarchy. For example, if a level 2 page has child pages, all pages starting at that level 2 page would need a breadcrumb.  
+* **To provide a consistent experience for similar pages.** A breadcrumb can be used if similar pages or sections of a site are using breadcrumbs even if it doesn’t meet the requirements. For example, the Service Members benefit hub page is a level 2 page with no hierarchy and therefore wouldn’t normally have a breadcrumb. However, all other benefit hubs do have a breadcrumb, so providing one on this page creates a consistent experience when navigating various benefit hubs to learn about benefits. 
 
 ### When to consider something else
 
-**The top level page of your site.** A breadcrumb is not necessary for the top level page of your site.  For example, the VA.gov home page should not have a breadcrumb.
-
-**Level 2 pages with no children.** A breadcrumb is not necessary for pages that are 2 levels deep and do not have any child pages.  For example, the My VA page lives at `VA.gov home > My VA`. Since this page is only 2 levels deep and does not have any child pages, it does not need a breadcrumb. 
-
-**When using the minimal header component.** When the [Header - Minimal]({{ site.baseurl }}/components/header/header-minimal) component is used, the breadcrumb can be removed to further prevent the user from easily navigating away and inadvertently interrupting their main task.
+* **The top level page of your site.** A breadcrumb is not necessary for the top level page of your site. For example, the VA.gov home page should not have a breadcrumb.
+* **Level 2 pages with no children.** A breadcrumb is not necessary for pages that are 2 levels deep and do not have any child pages.  For example, the My VA page lives at `VA.gov home > My VA`. Since this page is only 2 levels deep and does not have any child pages, it does not need a breadcrumb. 
+* **When using the minimal header component.** When the [Header - Minimal]({{ site.baseurl }}/components/header/header-minimal) component is used, the breadcrumb can be removed to further prevent the user from easily navigating away and inadvertently interrupting their main task.
 
 ### Usability guidance
 

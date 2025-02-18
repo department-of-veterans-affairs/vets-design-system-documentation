@@ -4,7 +4,7 @@ title: Address block
 intro-text: "Address block is used to highlight mailing and physical addresses and contact information for VA facilities (with some notable exceptions). It can also be used to display personal information we may have for a Veteran."
 github-title: va-address-block
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1102%3A9228&mode=design&t=J32RmU6Fjbjuh9bD-1
-status: use-deployed
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage
