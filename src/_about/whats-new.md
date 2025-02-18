@@ -15,7 +15,7 @@ anchors:
 </div>
 
 ## design.va.gov Updates
-{% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=2 %}
+{% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=3 %}
 
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases"
@@ -23,7 +23,7 @@ anchors:
 ></va-link-action>
 
 ## VADS Component Library Releases
-{% include _github_markdown_parser.html json=site.data.component_library_releases num_recent_releases=6 %}
+{% include _github_markdown_parser.html json=site.data.component_library_releases num_recent_releases=3 %}
 
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/component-library/releases"
