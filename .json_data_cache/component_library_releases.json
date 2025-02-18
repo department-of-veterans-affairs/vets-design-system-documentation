@@ -1,5 +1,48 @@
 [
   {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/200199575",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/200199575/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/200199575/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v49.2.0",
+    "id": 200199575,
+    "author": {
+      "login": "jamigibbs",
+      "id": 872479,
+      "node_id": "MDQ6VXNlcjg3MjQ3OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/872479?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jamigibbs",
+      "html_url": "https://github.com/jamigibbs",
+      "followers_url": "https://api.github.com/users/jamigibbs/followers",
+      "following_url": "https://api.github.com/users/jamigibbs/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jamigibbs/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jamigibbs/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jamigibbs/subscriptions",
+      "organizations_url": "https://api.github.com/users/jamigibbs/orgs",
+      "repos_url": "https://api.github.com/users/jamigibbs/repos",
+      "events_url": "https://api.github.com/users/jamigibbs/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jamigibbs/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOEjVS084L7s2X",
+    "tag_name": "v49.2.0",
+    "target_commitish": "main",
+    "name": "v49.2.0",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2025-02-13T17:24:28Z",
+    "published_at": "2025-02-13T17:35:29Z",
+    "assets": [
+
+    ],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v49.2.0",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v49.2.0",
+    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-banner: add dismissed-banner-id prop by @SnowboardTechie in https://github.com/department-of-veterans-affairs/component-library/pull/1488\r\n* va-file-input: add support restricting the size of the file added by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1490\r\n### Fixes\r\n* va-button-pair: add support for submitting form by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1482\r\n* va-language-toggle: accessibility updates by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1484\r\n* va-button & va-button-pair: allow custom text for continue variation by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1485\r\n### Other Changes\r\n* CSS-Library: Improved font handling for source sans pro across multiple platforms by @Andrew565 in https://github.com/department-of-veterans-affairs/component-library/pull/1483\r\n\r\n## New Contributors\r\n* @SnowboardTechie made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1488\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v49.1.1...v49.2.0",
+    "mentions_count": 5
+  },
+  {
     "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/198432051",
     "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/198432051/assets",
     "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/198432051/assets{?name,label}",
@@ -1242,48 +1285,5 @@
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v43.0.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-breadcrumb: Add lang attr support by @Andrew565 in https://github.com/department-of-veterans-affairs/component-library/pull/1206\r\n### New Features & Components 🎉\r\n* va-memorable-date: add props to support custom error messages for day, month, or year by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1208\r\n* va-table: add stacked table variant by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1204\r\n* va-text-input: New prefix and suffix variant by @harshil1793 in https://github.com/department-of-veterans-affairs/component-library/pull/1217\r\n### Fixes\r\n* va-breadcrumbs: Add export to Breadcrumb type so components.d.ts can find it by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1210\r\n* va-search-input: fix suggestion box from always staying open by @nickjg231 in https://github.com/department-of-veterans-affairs/component-library/pull/1216\r\n* va-file-input: Update modal title by @danbrady in https://github.com/department-of-veterans-affairs/component-library/pull/1218\r\n* va-telephone: remove number formatting from aria-label by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1220\r\n* va-link: add style inheritance to anchor element by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1222\r\n* Add override to header margin on adjacent selector by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1213\r\n\r\n### Other Changes\r\n* CSS Library: add linked header style by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1198\r\n* CSS Library: Update to _core-variables.scss to change $image-path to /img by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1205\r\n* CSS Library: add anchor tag to va-textintro by @micahchiang in https://github.com/department-of-veterans-affairs/component-library/pull/1215\r\n\r\n## New Contributors\r\n* @danbrady made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1218\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v42.2.2...v43.0.0",
     "mentions_count": 9
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/162152432",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/162152432/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/162152432/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v42.2.2",
-    "id": 162152432,
-    "author": {
-      "login": "jamigibbs",
-      "id": 872479,
-      "node_id": "MDQ6VXNlcjg3MjQ3OQ==",
-      "avatar_url": "https://avatars.githubusercontent.com/u/872479?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/jamigibbs",
-      "html_url": "https://github.com/jamigibbs",
-      "followers_url": "https://api.github.com/users/jamigibbs/followers",
-      "following_url": "https://api.github.com/users/jamigibbs/following{/other_user}",
-      "gists_url": "https://api.github.com/users/jamigibbs/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/jamigibbs/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/jamigibbs/subscriptions",
-      "organizations_url": "https://api.github.com/users/jamigibbs/orgs",
-      "repos_url": "https://api.github.com/users/jamigibbs/repos",
-      "events_url": "https://api.github.com/users/jamigibbs/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/jamigibbs/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "RE_kwDOEjVS084Jqj_w",
-    "tag_name": "v42.2.2",
-    "target_commitish": "main",
-    "name": "v42.2.2",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2024-06-24T20:36:17Z",
-    "published_at": "2024-06-24T20:36:47Z",
-    "assets": [
-
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v42.2.2",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v42.2.2",
-    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-file-input: address storybook story bug and vaChange event payload bug by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1201\r\n* va-alert: add specificity to slot style by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1202\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v42.2.1...v42.2.2",
-    "mentions_count": 2
   }
 ]
