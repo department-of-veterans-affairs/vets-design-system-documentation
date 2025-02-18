@@ -6,7 +6,7 @@ has-parent: /components/footer/
 contributors: Ben Brasso (Agile 6), Ya-ching Tsao (CivicActions), Zach Park (Agile 6), Kristen McConnell (Ad Hoc)
 intro-text: The minimal footer can be used when navigating away would prevent the user from easily accomplishing their main task.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=538-7198&mode=design&t=kPk3dlhnHSGw5X0f-0
-status: use-with-caution-candidate
+status: use-with-caution-available
 web-component: va-minimal-footer
 anchors:
   - anchor: Examples

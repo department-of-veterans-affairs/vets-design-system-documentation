@@ -6,7 +6,8 @@ title: Penalty notice
 intro-text: A required legal notice for all forms.
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86436&mode=design&t=h9BoxMWwcHe2DhUd-1
-status: use-deployed
+github-title: va-penalty-notice
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage
