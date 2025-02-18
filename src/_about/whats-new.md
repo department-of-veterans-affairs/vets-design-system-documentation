@@ -31,7 +31,7 @@ anchors:
 ></va-link-action>
 
 ## Figma Component Library Changelog
-<iframe src="{{ site.figma_changelog_embed_url }}" style="width:100%; height:480px; max-height:80vh"></iframe>
+<iframe src="{{ site.figma_changelog_embed_url }}" style="width:100%; height:640px; max-height:80vh"></iframe>
 <va-link-action
   href="{{ site.figma_changelog_direct_url }}"
   text="Open Component Library changelog in Figma"
