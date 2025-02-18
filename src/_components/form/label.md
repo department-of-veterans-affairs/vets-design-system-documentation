@@ -4,7 +4,8 @@ permalink: /components/form/label
 has-parent: /components/form/
 title: Label
 intro-text: Labels associate a descriptive title with each form input used to collect information from the user.
-status: use-deployed
+github-title: va-text-input
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage
