@@ -14,7 +14,7 @@ anchors:
 
 ## Examples
 
-{% include storybook-preview.html height="250px" story="components-va-on-this-page--default" %}
+{% include storybook-preview.html height="250px" story="components-va-on-this-page--default" link_text=page.web-component %}
 
 ## Usage
 

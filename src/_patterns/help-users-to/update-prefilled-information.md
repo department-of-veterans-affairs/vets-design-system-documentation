@@ -4,7 +4,7 @@ title: Update prefilled information
 permalink: /patterns/help-users-to/update-prefilled-information
 sub-section: help-users-to
 intro-text: Follow this pattern to help users update prefilled information in an application.
-research-title: Help users update prefilled information
+research-title: Help users know how their info is updated
 figma-link: https://www.figma.com/design/1z3bAkQl4uR1IvAxmtyqZi/AE-Design-Patterns---Update-Prefill?node-id=4013-14358&t=GYX9RT423zMZrhat-1
 status: use-with-caution-available
 anchors:
@@ -149,7 +149,7 @@ If the user made the change from the final review page, display the slim success
 
 ### Radio button
 
-In cases where the information might change frequently (like a temporary mailing address), ask users if they want to save their changes to their VA.gov profile.
+In cases where the information might change frequently (like a temporary mailing address), ask users if they want to save their changes to their VA.gov profile. Inform the user of the implications of this decision.
 
 {% include component-example.html
   class="x2"
@@ -166,7 +166,7 @@ Contact the [Authenticated Experience Design Patterns team via slack](https://ds
 Directions for updating information vary by form, benefit type, and type of information. You must confirm with subject matter experts that your instructions are accurate for the way your specific form populates information and how to update it. And you must confirm with the call center that they will be able to either update the information directly, or give the person instructions for how to update the information.
 
 Here's an example that tells people to call the VA benefits hotline:
-> **Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call us at 800-827-1000 (TTY: 711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
+> **Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call us at [800-827-1000](tel:+18008271000) [(TTY: 711)](tel:711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
 >
 > [Find more detailed instructions for how to change your legal name (opens in new tab)](https://www.va.gov/resources/how-to-change-your-legal-name-on-file-with-va/)
 

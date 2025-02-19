@@ -1,17 +1,27 @@
 ---
 layout: pattern
-permalink: /patterns/ask-users-for/gender-identity
-sub-section: ask-users-for
 title: Gender identity
 intro-text: Follow this pattern whenever you need to ask Veterans their gender identity. 
 github-title: pattern-gender-identity
 research-title: Ask users for gender identity
-status: use-with-caution-candidate
+status: dont-use-deprecated
 anchors:
   - anchor: Usage
   - anchor: Examples
   - anchor: How to design and build
 ---
+
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="error"
+  visible
+>
+  <h2 slot="headline">
+    The current policy recommends against using this pattern.
+  </h2>
+  <div>
+  </div>
+</va-alert>
 
 ## Usage
 

@@ -4,6 +4,7 @@ title: Know when their information is prefilled
 permalink: /patterns/help-users-to/know-when-their-information-is-prefilled
 sub-section: help-users-to
 intro-text: Follow this pattern to help users know when their information will be prefilled for them in an application.
+figma-link: https://www.figma.com/design/2j01RTqCSJRy4lX3eUOiod/AE-Design-Patterns---Prefill?node-id=1430-24359&t=AVctDQNNetYewkto-1
 research-title: Help users know when their info is prefilled
 status: use-with-caution-candidate
 anchors:
@@ -20,7 +21,7 @@ anchors:
 ### When to use this pattern
 
 - **When you prefill the user's data into an application, like a form.** When using this pattern, clearly inform the user of where their data is being pulled from to prefill for them.
-- **When users can update prefilled information.** Review [Help users to... Update prefilled information](/patterns/help-users-to/update-prefilled-information) for guidance on helping users update this prefilled information.
+- **When users can update prefilled information.** Review the "[Help users to... Update prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance on helping users update this prefilled information.
 
 #### Design principles
 * **Visibility of system status.** This pattern demonstrates the [usability principle of communicating the current state](https://www.nngroup.com/articles/visibility-system-status/) in order to allow users to feel in control and to be able to take appropriate action.
@@ -36,8 +37,8 @@ anchors:
 ### Anatomy or layout details
 This pattern involves these types of pages found in VA.gov forms:
 - **Introduction page**: The first page of a form. Introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. Changes slightly after a user signs in.
-- **Personal information page**: Usually the first page of a form after the user signs in. Has personal details that cannot be edited online, like name, date of birth, Social Security number, etc.
-- **Prefill edit pages**: Any pages on which users edit prefilled data.
+- **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.
+- **Prefilled information the user can update:** This can be many different types of information that the user can update directly on the screen where we display it.
 
 #### Introduction page
 There are two states of an introduction page: Authenticated and Unauthenticated.
@@ -46,11 +47,11 @@ There are two states of an introduction page: Authenticated and Unauthenticated.
 
 {% include component-example.html alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/unauthenticated-alert.png" caption="Unauthenticated introduction page alert on the introduction page."  class="x2" %}
 
-#### Personal information page
-{% include component-example.html alt="A Veteran information page in a form flow with a white card containing  Veteran's uneditable information, including name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" caption="Uneditable prefilled information on the personal information page."  %}
+#### Prefilled information the user can’t update
+{% include component-example.html alt="A Veteran information page in a form flow with a white card containing  Veteran's uneditable information, including name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" %}
 
-#### Prefill check page
-{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a card containing the Veteran's editable mailing address. The alert states that the form has prefilled some of the Veteran's information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" caption="Editable prefilled information displayed on the prefill check page. This is the proposed style to display data that is editable." %}
+#### Prefilled information the user can update
+{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a card containing the Veteran's editable mailing address. The alert states that the form has prefilled some of the Veteran's information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" %}
 
 ### How this pattern works
 
@@ -67,7 +68,7 @@ This pattern communicates information that can be edited by:
 - **In most cases, save changes to the VA Profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md), most users indicated that they want changes made to their information to update the information stored on their VA Profile. On the edit page, display an informational alert informing users that these changes will impact their profile information. This alert and others should be placed at the top of the page, directly under the form name.
 
 #### Where needed, give users the choice of where to save
-- **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change semi-frequently. For example, when applying to refill and track VA prescriptions or medical devices, users may want to send to a temporary mailing address, and may not want this temporary mailing address to save to their VA Profile. In these cases, on the edit page, do not display the informational alert informing them where their changes will save. Instead, display a required radio button below the fields asking them if they also want to update this information in their VA Profile.
+- **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change semi-frequently. For example, when applying to refill and track VA prescriptions or medical devices, users may want to send to a temporary mailing address, and may not want this temporary mailing address to save to their VA Profile. In these cases, on the edit page, do not display the informational alert informing them where their changes will save. Instead, display a required radio button below the fields asking them if they also want to update this information in their VA Profile. Explain the implications of saving information to their profile. For example, "If you select 'yes,' this information will be updated across multiple VA benefits and services. Read more about [changing your address in your VA.gov profile (opens in new tab)](https://www.va.gov/change-address/)."
 
 #### Display success alerts when information has been saved
 - **Inform users where the changes were saved.** Display a success alert informing users "We've made these changes to this form and your VA.gov profile" or "We've made these changes to only this form.” This alert should be placed at the top of the page, below the stepper and text "We’ll save your application on every change." Use a standard alert within the form steps. Use a slim alert if the user made changes from the final review page.
@@ -124,7 +125,7 @@ Here is some example markup for a card of uneditable content that utilizes a des
 
 ### Editable information
 
-If a user can update their information, than pieces of information can be shown with a heading followed by the information itself, along with an edit link.
+If a user can update their information, then pieces of information can be shown with a heading followed by the information itself, along with an edit link.
 
 ```html
 <va-card show-shadow="true">
@@ -149,7 +150,7 @@ If a user can update their information, than pieces of information can be shown 
 
 ## Content considerations
 ### Directions for updating uneditable information
-Directions for updating information that can’t be updated online vary. See the ["Help users to... Update Prefilled information" pattern](/patterns/help-users-to/update-prefilled-information) for guidance.
+Directions for updating information that can’t be updated online vary. See the "[Help users to... Update Prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance.
 
 #### Unauthenticated intro page alert
 

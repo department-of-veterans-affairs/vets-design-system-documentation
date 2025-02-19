@@ -8,6 +8,7 @@ status: use-deployed
 sub-pages:
   - sub-page: Autosave
   - sub-page: Checkbox
+  - sub-page: Combo box
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input

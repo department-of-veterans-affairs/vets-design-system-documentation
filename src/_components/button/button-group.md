@@ -75,6 +75,12 @@ anchors:
 
 {% include component-docs.html component_name=page.web-component %}
 
+## Content considerations
+
+### Button labels
+
+{% include content/button-labels.md %}
+
 ## Accessibility considerations
 
 * Include more contextual information in the button label for screen readers. You can use an aria label, using the ariaLabel or ariaDescribedby properties, to specify form numbers or program names in the buttons for greater context. 
