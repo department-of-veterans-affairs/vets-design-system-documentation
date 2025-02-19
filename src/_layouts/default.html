@@ -33,6 +33,18 @@
             </div>
           </div>
         </main>
+        {% elsif page.sidebar %}
+          {% include _site-content-nav.html %}
+          <div class="site-content__content">
+            <main id="main-content" class="site-l-content-wrapper--sidebar large-screen:vads-u-margin-top--neg2">
+                <aside class="main-content__sidebar">
+                    {% include _site-on-this-page.html %}
+                </aside>
+                <div class="main-content__content">
+                  {{ content }}
+                </div>
+            </main>
+          </div>
         {% else %}
           {% include _site-content-nav.html %}
         <div class="site-content__content">

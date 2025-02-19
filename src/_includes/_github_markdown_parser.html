@@ -1,0 +1,50 @@
+{% comment %}
+  Capture linebreaks before headings (to add another linebreak which fixes an issue where the headings are incorrectly nested within a list)
+{% endcomment %}
+{% assign reLineBreakBeforeHeader = '(\r\n)#' %}
+
+{% comment %}
+  Capture github URL (to convert to markdown-type link)
+{% endcomment %}
+{% assign reGithubUrl = '(https?:\/\/(www\.)?github\.com(?:\/.*)?)' %}
+
+{% comment %}
+  Capture any issue numbers in titles (to make them links)
+{% endcomment %}
+{% assign reIssueNumbersInTitle = '(#(\d+))' %}
+
+{% comment %}
+  Capture PR number from URL (to create a link to the PR)
+{% endcomment %}
+{% assign rePrUrl = '\[https?:\/\/(www\.)?github\.com(?:\/.*)?pull\/(\d+)\s?\]' %}
+
+{% comment %}
+  Capture h2-h5 headings (to +1 heading level so the HTML stays semantically structured with our page)
+{% endcomment %}
+{% assign reHeadingLevels = '(#{2,6})\s' %}
+
+{% comment %}
+  Capture github usernames (to make a link to user profile)
+{% endcomment %}
+{% assign reUsernames = 'by\s(@(\S+))\s' %}
+
+{% comment %}
+  Trim number of releases to show
+{% endcomment %}
+{% assign recentReleases = include.json | slice: 0, include.num_recent_releases %}
+
+{% for release in recentReleases %}
+<va-card class="vads-u-margin-bottom--2">
+  <span class="usa-label">{{ release.name }}</span>
+  <div class="vads-u-font-size--xl vads-u-font-weight--bold vads-u-font-family--serif">{{ release.published_at | date: "%B %-d, %Y" }}</div>
+  {{ release.body
+    | regexreplace: reLineBreakBeforeHeader, '\1\1#'
+    | regexreplace: reGithubUrl, '[\1](\1)'
+    | regexreplace: reIssueNumbersInTitle, '[\1](https:/github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/\2)'
+    | regexreplace: rePrUrl, '[\#\2]'
+    | regexreplace: reHeadingLevels, '\1# '
+    | regexreplace: reUsernames, 'by [\1](https://github.com/\2) '
+    | markdownify
+  }}
+</va-card>
+{% endfor %}
