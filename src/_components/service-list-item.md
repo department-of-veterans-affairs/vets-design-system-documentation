@@ -1,31 +1,21 @@
-Service list item
-Use with caution: Available
-
-The Service list item component is used to show a brief summary of a benefit or tool. For example, a Service list item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the  “Help users to… Manage benefits and tools” pattern[link]. 
-Resources
-Open Issues
-
-
-Research
-
-
-Figma [Use our file for now; Design System will adjust it later]
-
-Contributors
-Lynn Stahl (Agile Six)
-Adam Whitlock (Ad Hoc)
-Belle Poopongpanit (Agile Six)
-Christine Rose Steiffer (Agile Six)
-Kristen Faiferlick (Ad Hoc)
-
-On this page
-Examples
-Usage
-Code usage
-Content considerations
-Accessibility considerations 
-Related
-Component checklist
+---
+layout: component
+title: Service list item
+intro text: The Service list item component is used to show a brief summary of a benefit or tool. For example, a Service list item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the  “Help users to… Manage benefits and tools” pattern[link]. 
+status: Use with caution: Available
+research-title: Service list item
+figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=52qYQM9JQBOPO71q-1
+Contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
+web-component: va-service-list-item
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Code usage
+  - anchor: Content considerations
+  - anchor: Accessibility considerations 
+  - anchor: Related
+  - anchor: Component checklist
+---
 
 ## Examples
 
