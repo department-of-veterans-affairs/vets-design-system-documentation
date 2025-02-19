@@ -10,7 +10,7 @@ uswds-v3: default
 web-component: va-alert
 sub-pages:
   - sub-page: Alert - Expandable
-  - sub-page: Alert - Sign-In
+  - sub-page: Alert - Sign-in
 anchors:
   - anchor: Examples - Standard
   - anchor: Examples - Standard properties
