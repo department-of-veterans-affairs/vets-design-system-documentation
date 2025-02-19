@@ -25,7 +25,7 @@ title: What’s new?
 
 - CSS-Library: Improved font handling for source sans pro across multiple platforms by [@Andrew565](https://github.com/Andrew565) in [#1483](https://github.com/department-of-veterans-affairs/component-library/pull/1483)
 
-## New Contributors
+### New Contributors
 
 - [@SnowboardTechie](https://github.com/SnowboardTechie) made their first contribution in [#1488](https://github.com/department-of-veterans-affairs/component-library/pull/1488)
 
