@@ -3,8 +3,13 @@ layout: pattern
 title: Manage benefits and tools
 draft: true
 permalink: /patterns/help-users-to/manage-benefits-and-tools
+aka: Service list
+contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
 sub-section: help-users-to
 intro-text: Follow this pattern to help users manage their benefits and tools.
+figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=ndStAutrvUcgt5Um-1
+github-title: manage-benefits-and-tools
+research-title: Help users to manage benefits and tools
 status: use-with-caution-available
 anchors:
   - anchor: Usage
@@ -78,6 +83,8 @@ Below are some potential benefits a Veteran or family member may enroll in, whic
 * Pension
 * Vocational rehabilitation (VRE)
 
+alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have critical information components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits."
+
 ### Tools
 
 Below are some  tools that a Veteran, family member, or caretaker may use to manage a Veteran’s benefits, which might use this pattern:
@@ -97,7 +104,7 @@ A link to the page.code-link, when available.
 
 ## Content considerations
 
-* Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.   
+Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.   
 
 ## Accessibility considerations
 
