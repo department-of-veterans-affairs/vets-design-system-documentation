@@ -44,9 +44,9 @@ anchors:
 
 ## Design Principles
 
-1. **Scannable—limited amount of information per list object:** The job of the list view is to display a summary of the object, not the entire object.
-2. **Consistency of content and hierarchy:** The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
-3. **Consistent implementation of supporting functionality:** If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same. 
+* ***Scannable—limited amount of information per list object:** The job of the list view is to display a summary of the object, not the entire object.
+* **Consistency of content and hierarchy:** The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
+* **Consistent implementation of supporting functionality:** If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same. 
 
 ## How to design and build
 
