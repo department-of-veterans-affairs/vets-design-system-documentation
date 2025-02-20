@@ -25,15 +25,15 @@ anchors:
 
 ### Terms
 
-* **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
-* **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
-* **Service**: A term used to describe both benefits and tools.
-* **Service list**: A list of services. This pattern articulates how to design a Service list.
-* **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the Service list item component[link].
+- **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
+- **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
+- **Service**: A term used to describe both benefits and tools.
+- **Service list**: A list of services. This pattern articulates how to design a Service list.
+- **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the Service list item component[link].
 
 ### When to use this pattern
 
-* **When you are using the Service list item component[link].** 
+* **When you are using the Service list item component[link].**
 * **When you want to show benefits or tools the user is currently enrolled in or has access to.**
 
 ### When not to use this pattern
@@ -46,7 +46,7 @@ anchors:
 
 * ***Scannable—limited amount of information per list object:** The job of the list view is to display a summary of the object, not the entire object.
 * **Consistency of content and hierarchy:** The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
-* **Consistent implementation of supporting functionality:** If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same. 
+* **Consistent implementation of supporting functionality:** If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same.
 
 ## How to design and build
 
@@ -58,7 +58,7 @@ This pattern vertically stacks Service list items to form a list, called a “Se
 
 List items should be displayed in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and consider running usability studies to confirm the most appropriate display order for your content.
 
-Note that when list items include a Critical information component[link] or Status light component[link], these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page. 
+Note that when list items include a Critical information component[link] or Status light component[link], these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
 
 ### Components used in this pattern
 
@@ -102,7 +102,7 @@ A link to the page.code-link, when available.
 
 ## Content considerations
 
-Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.   
+Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.
 
 ## Accessibility considerations
 
