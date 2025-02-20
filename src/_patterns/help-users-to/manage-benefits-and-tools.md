@@ -38,7 +38,7 @@ anchors:
 
 ### When not to use this pattern
 
-* **When you are representing items that are neither a benefit nor a tool. Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool.**
+* **When you are representing items that are neither a benefit nor a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool.
 * **When you want to show benefits within a form.** Do not use this pattern to show benefits or services in an interactive list with checkboxes or other selection methods.
 * **When you want to display content in an unordered list.** Content that can be shared with bullet points should use an unordered list. Find more information in the [List component](https://design.va.gov/components/list) and the [Bulleted list style guide](https://design.va.gov/content-style-guide/bulleted-lists).
 
@@ -52,7 +52,7 @@ anchors:
 
 ### How this pattern works
 
-This pattern vertically stacks Service list items to form a list, called a “Service list.” As noted in the Service list item component[link], the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a Critical information component, Status light component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service list item component.
+This pattern vertically stacks Service list items to form a list, called a “Service list.” As noted in the [Service list item component]({{ site.baseurl }}/components/service-list-item), the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a Critical information component, Status light component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service list item component.
 
 ### Display order
 
@@ -106,8 +106,7 @@ Statuses should be normalized with CAIA so that the same terms are used when the
 
 ## Accessibility considerations
 
-Review the accessibility considerations for the Service list component[link].
+Review the accessibility considerations for the [Service list item component]({{ site.baseurl }}/components/service-list-item).
 
 ## Research findings
 
-[Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests that users view lists positively and should be able to navigate through them with relative ease. This particular pattern has not yet been tested directly with users.

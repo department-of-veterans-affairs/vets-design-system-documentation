@@ -45,7 +45,7 @@ anchors:
 * **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
 * **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
 * **Service**: A term used to describe both benefits and tools.
-* **Service list**: A list of services. The “Help users to… Manage benefits and tools” pattern[link] describes how to build a Service list.
+* **Service list**: A list of services. The [“Help users to… Manage benefits and tools” pattern]({{ site.baseurl }}/patterns/help-users-to/manage-benefits-and-tools) describes how to build a Service list.
 * **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. This component explains how to use and build a Service list item.
 
 ### When to use Service list item
@@ -111,12 +111,12 @@ See the accessibility concerns section of the following components:
 ## Related
 
 Service list item may be confused with several other components:
-* [List]({{ site.baseurl }}/components/list): See When not to use Service list item[link] for information on when to use a list instead of a Service list item.
-* [Card]({{ site.baseurl }}/components/card): See When not to use Service list item[link] and Content considerations[link] for information on when to use a list instead of a Service list item.
+* [List]({{ site.baseurl }}/components/list): See [When not to use Service list item]({{ site.baseurl }}/components/service-list-item#when-not-to-use-service-list-item) for information on when to use a list instead of a Service list item.
+* [Card]({{ site.baseurl }}/components/card): See [When not to use Service list item]({{ site.baseurl }}/components/service-list-item#when-not-to-use-service-list-item) and [Content considerations]({{ site.baseurl }}/components/service-list-item#content-considerations) for information on when to use a card instead of a Service list item.
 
 The below components are nested within the Service list item component:
 * Critical information (NEW)
 * [Tag]({{ site.baseurl }}/components/tag)
 * [Link]({{ site.baseurl }}/components/link/)
 
-{% include _component-checklist.html component_name=page.web-component %}
+{% include _component-checklist.html component_name="va-service-list-item" %}
