@@ -25,11 +25,11 @@ anchors:
 
 ### Terms
 
-- **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
-- **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
-- **Service**: A term used to describe both benefits and tools.
-- **Service list**: A list of services. This pattern articulates how to design a Service list.
-- **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the Service list item component[link].
+* **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
+* **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
+* **Service**: A term used to describe both benefits and tools.
+* **Service list**: A list of services. This pattern articulates how to design a Service list.
+* **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the Service list item component[link].
 
 ### When to use this pattern
 
