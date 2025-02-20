@@ -22,19 +22,21 @@ anchors:
 
 ### With only the required elements (header, status, details)
 
-[Alt text: A set of information—designed to be shown within a list—that contains a header, a status tag, and one set of data formatted as a “Label: Value” pair.]
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a status tag, and one set of data formatted as a “Label: Value” pair." file="/images/components/service-list-item/service-list-item-minimal.png" class="x2" %}
 
 ### With the Critical information component
 
-[Alt text: A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, and four sets of data formatted as “Label: Value” pairs.]
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, and four sets of data formatted as “Label: Value” pairs." file="/images/components/service-list-item/service-list-item-critical-action.png" class="x2" %}
 
 ### With the optional link
 
-[Alt text: A set of information—designed to be shown within a list—that contains a header, a status tag, four sets of data formatted as “Label: Value” pairs, and a link.]
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a status tag, four sets of data formatted as “Label: Value” pairs, and a link." file="/images/components/service-list-item/service-list-item-link.png" class="x2" %}
+
+
 
 ### With all possible additions
 
-[Alt text: A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as “Label: Value” pairs, and a link.]
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as “Label: Value” pairs, and a link." file="/images/components/service-list-item/service-list-item-all-info.png" class="x2" %}
 
 ## Usage
 
@@ -52,10 +54,10 @@ anchors:
 
 ### When not to use Service list item
 
-* **When you are representing items that are neither a benefit nor a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool. If you want to group short, related pieces of information that are not benefits or tools, consider using the [Card component](https://design.va.gov/components/card).
-* **When you want to put links, radio buttons, or checkboxes in a container.** There are some components that have variations with containers around them. These might look like Service list items, but they are distinct. Service list items are exclusively for benefits and tools, offer a brief snapshot of information, and link to another page with more details. The guidance within the [Not a card](https://design.va.gov/components/card#not-a-card) section of the Card component also applies to the Service list item.
+* **When you are representing items that are neither a benefit nor a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool. If you want to group short, related pieces of information that are not benefits or tools, consider using the [Card component]({{ site.baseurl }}/components/card).
+* **When you want to put links, radio buttons, or checkboxes in a container.** There are some components that have variations with containers around them. These might look like Service list items, but they are distinct. Service list items are exclusively for benefits and tools, offer a brief snapshot of information, and link to another page with more details. The guidance within the [Not a card]({{ site.baseurl }}/components/card#not-a-card) section of the Card component also applies to the Service list item.
 * **When you want to show benefits within a form.** Do not use this component to show benefits or services in an interactive list with checkboxes or other selection methods.
-* **When you want to display content in an unordered list.** Content that can be shared with bullet points should use an unordered list. Find more information in the [List component](https://design.va.gov/components/list) and the [Bulleted list style guide](https://design.va.gov/content-style-guide/bulleted-lists).
+* **When you want to display content in an unordered list.** Content that can be shared with bullet points should use an unordered list. Find more information in the [List component]({{ site.baseurl }}/components/list) and the [Bulleted list style guide]({{ site.baseurl }}/content-style-guide/bulleted-lists).
 
 ### Anatomy or layout details
 
@@ -94,44 +96,27 @@ The link should use the standard default, hover, focus, active, and visited link
 (Coming soon)
 
 ## Content considerations
-Before the development of this component, the Card component was used to accomplish similar functions. When evaluating if your team needs to use Service list items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the Usage[link] section.
+Before the development of this component, the Card component was used to accomplish similar functions. When evaluating if your team needs to use Service list items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the [Usage](#usage) section.
 Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, “pending” versus “in-progress”). CAIA will define which of those is correct across benefits and tools.
 
 ## Accessibility considerations
 
 See the accessibility concerns section of the following components:
-* [Card](https://design.va.gov/components/card#accessibility-considerations)
-* [List](https://design.va.gov/components/list#accessibility-considerations)
-* [Link](https://design.va.gov/components/link/#accessibility-considerations)
-* [Link - Action](https://design.va.gov/components/link/action#accessibility-considerations)
-* [Tag](https://design.va.gov/components/tag#accessibility-considerations)
+* [Card]({{ site.baseurl }}/components/card#accessibility-considerations)
+* [List]({{ site.baseurl }}/components/list#accessibility-considerations)
+* [Link]({{ site.baseurl }}/components/link/#accessibility-considerations)
+* [Link - Action]({{ site.baseurl }}/components/link/action#accessibility-considerations)
+* [Tag]({{ site.baseurl }}/components/tag#accessibility-considerations)
 
 ## Related
 
 Service list item may be confused with several other components:
-* [List](https://dev-design.va.gov/3749/components/list): See When not to use Service list item[link] for information on when to use a list instead of a Service list item.
-* [Card](https://dev-design.va.gov/3749/components/card): See When not to use Service list item[link] and Content considerations[link] for information on when to use a list instead of a Service list item.
+* [List]({{ site.baseurl }}/components/list): See When not to use Service list item[link] for information on when to use a list instead of a Service list item.
+* [Card]({{ site.baseurl }}/components/card): See When not to use Service list item[link] and Content considerations[link] for information on when to use a list instead of a Service list item.
 
 The below components are nested within the Service list item component:
 * Critical information (NEW)
-* [Tag](https://design.va.gov/components/tag)
-* [Link](https://design.va.gov/components/link/)
+* [Tag]({{ site.baseurl }}/components/tag)
+* [Link]({{ site.baseurl }}/components/link/)
 
-## Component checklist [format as an accordion; example]
-Maturity
-Guidance - Examples, usage, code usage, content considerations, and accessibility considerations are all complete.
-Research - VFS team conducted research on this component which is linked from this page.
-Stability - Component has been in production for more than 3 months with no significant issues found.
- Adoption - Multiple teams have adopted this component.
-Accessibility
-Code assets
-​​Variations - Storybook includes all variations (style, size, orientation, optional iconography, selection, error state, etc.)
-Responsive - Component depicted in all responsive breakpoints.
-Interactive states - Includes all interactive states that are applicable (hover, active, focus, keyboard focus, disabled).
-Tokens - All design attributes (color, typography, layout, etc.) are available as tokens.
-Internationalization - Describes i18n attributes.
-Visual assets
-Variations - Sketch library includes all variations (style, size, orientation, optional iconography, selection, error state, etc.)
-Responsive - Component designed to work in all responsive breakpoints.
-Interactive states - Includes all interactive states that are applicable (hover, active, focus, keyboard focus, disabled).
-Tokens - All design attributes (color, typography, layout, etc.) are available as tokens.
+{% include _component-checklist.html component_name=page.web-component %}
