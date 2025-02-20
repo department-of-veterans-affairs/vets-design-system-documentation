@@ -33,7 +33,7 @@ anchors:
 
 ### When to use this pattern
 
-* **When you are using the Service list item component[link].**
+* **When you are using the [Service list item]({{ site.baseurl }}/components/service-list-item) component.**
 * **When you want to show benefits or tools the user is currently enrolled in or has access to.**
 
 ### When not to use this pattern
@@ -44,7 +44,7 @@ anchors:
 
 ## Design Principles
 
-* ***Scannable—limited amount of information per list object:** The job of the list view is to display a summary of the object, not the entire object.
+* **Scannable—limited amount of information per list object:** The job of the list view is to display a summary of the object, not the entire object.
 * **Consistency of content and hierarchy:** The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
 * **Consistent implementation of supporting functionality:** If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same.
 
@@ -56,13 +56,13 @@ This pattern vertically stacks Service list items to form a list, called a “Se
 
 ### Display order
 
-List items should be displayed in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and consider running usability studies to confirm the most appropriate display order for your content.
+* List items should be displayed in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and consider running usability studies to confirm the most appropriate display order for your content.
 
-Note that when list items include a Critical information component[link] or Status light component[link], these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
+* Note that when list items include a Critical information component[link] or Status light component[link], these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
 
 ### Components used in this pattern
 
-* Service list item (NEW)
+* [Service list item (NEW)]({{ site.baseurl }}/components/service-list-item)
 * Critical information (NEW)
 * [Tag component](https://design.va.gov/components/tag])
 
@@ -81,7 +81,7 @@ Below are some potential benefits a Veteran or family member may enroll in, whic
 * Pension
 * Vocational rehabilitation (VRE)
 
-alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have critical information components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits."
+{% include component-example.html alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have critical information components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits." %}
 
 ### Tools
 
