@@ -19,7 +19,7 @@ Therefore, [accessibility is core to all design decisions]({{ site.baseurl }}/ab
 
 The VA Design System provides accessible components, the guidance to implement these components, and the tools to customize and extend the design system accessibly. It was built on top of a fork of the U.S. Web Design System (USWDS), which prioritizes accessibility throughout. [Learn more about how USWDS practices accessibility.](https://designsystem.digital.gov/documentation/accessibility/)
 
-Components don’t live in a vacuum. As standalone elements, they can only be tested atomically. [Learn more about how VA Design System components are tested.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/8b49df2eddc3956daf9cff03728430311c597631/about/accessibility/accessibility-testing) For a product to launch, you need to test holistically; you should review the product as a whole before launch.
+Components don’t live in a vacuum. As standalone elements, they can only be tested atomically. [Learn more about how VA Design System components are tested.]({{ site.baseurl }}/about/accessibility/accessibility-testing-for-design-system-components) For a product to launch, you need to test holistically; you should review the product as a whole before launch.
 
 The surest way to make an accessible product is to “shift left,” or prioritize accessibility during an entire project’s lifecycle.
 
@@ -51,7 +51,7 @@ Manually test your product:
 
 ### Research
 
-- [Test with people who use assistive technology](https://depo-platform-documentation.scrollhelp.site/research-design/research-assistive-technology-sessions) (at least 20% of your participants)
+- [Test with people who use assistive technology](https://depo-platform-documentation.scrollhelp.site/research-design/research-with-assistive-technology-users) (at least 20% of your participants)
 
 ## Contribute accessible components to the Design System
 
@@ -80,14 +80,14 @@ It is the intention of this team to improve our testing standards to more accura
 
 ## Resources for Veteran-facing service teams
 
-### Get accessibility guidance early from the CAIA team
+### Get accessibility guidance early from the Accessibility Digital Experience (ADE) team
 
-The Sitewide Content, Accessibility, and Information Architecture (CAIA) team can help you meet [VA.gov](http://VA.gov)’s accessibility standards. Whether you’re starting a new product or refining an existing one, contact the CAIA team as early as possible to create accurate, consistent, accessible, and equitable digital services for Veterans.
+The Accessibility Digital Experience (ADE) team can help you meet VA.gov’s accessibility standards. Whether you’re starting a new product or refining an existing one, contact the CAIA team as early as possible to create accurate, consistent, accessible, and equitable digital services for Veterans.
 
-- Submit a [Sitewide Content, Accessibility, and IA intake form ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?assignees=RLHecht%2C+coforma-terry%2C+kristinoletmuskat%2C+laurwill%2C+sara-amanda&labels=sitewide+CAIA%2C+sitewide+content-product+support%2C+Sitewide+IA%2C+sitewide+content%2C+sitewide+accessibility&projects=&template=sitewide-content-intake-form.md&title=%3CType+of+Request%3E+from+%3CTeam%3E) in GitHub
-- [Contact CAIA on Slack](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/sitewide-content-and-ia-intake-request#Content,Accessibility,andInformationArchitecturesupport-SitewideCAIA-Contactus)
+- Submit an [ADE intake form ticket](https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=Accessibility-Digital-Experience-Intake-Ticket.md) in GitHub
+- Contact ADE on Slack using their handle: @accessibility-de
 
-### Learn how to make accessible products on the modernized [VA.gov](http://VA.gov) platform
+### Learn how to make accessible products on the modernized VA.gov platform
 
 - [Resources for researchers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-on-va-gov#AccessibilityonVA.gov-ResourcesforResearchers)
 - [Resources for designers](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-on-va-gov#AccessibilityonVA.gov-ResourcesforDesigners)

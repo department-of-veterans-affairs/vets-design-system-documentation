@@ -16,8 +16,7 @@
   "keywords": [
     "Vets.gov",
     "design",
-    "uswds",
-    "formation"
+    "uswds"
   ],
   "author": "Matthew Dingee",
   "license": "ISC",
@@ -26,7 +25,7 @@
   },
   "homepage": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation#readme",
   "devDependencies": {
-    "@department-of-veterans-affairs/component-library": "^48.0.2",
+    "@department-of-veterans-affairs/component-library": "^48.3.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-rename": "^2.0.0",

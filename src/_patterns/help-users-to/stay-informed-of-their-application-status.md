@@ -4,7 +4,8 @@ title: Stay informed of their form submission status
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
 intro-text: "Follow this pattern to notify people when their online form submission is in progress, when we receive their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
-status: use-with-caution-candidate
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=5600-63725&t=WnCXwOVti1WHXnIP-1
+status: use-with-caution-available
 research-title: Help users to stay informed of app status
 anchors:
   - anchor: Usage
@@ -59,6 +60,16 @@ Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-aff
 * **Hide filenames.** File names for evidence and other uploads of documents to the VA can often include personal information. So we hide all filenames in notifications. To do this:
   * Replace all but the first 3 and last 2 characters (numbers or letters) of the filename with the "X" character.
   * Show the MIME type of the file (like ".png", ".pdf", etc.)
+
+#### Recovering from an action needed notification failure
+
+In the event that an action needed notification to the form submitter's primary email address fails to reach them, then it is imperative that we make multiple attempts to reach the person. 
+
+**Important!** Regardless of the notification status, the status of the form submission should be visible in the user interface of VA.gov or the Health and Benefits mobile application. This may be accomplished via [My VA](#form-submission-status-in-my-va), Claim Status Tool, or another service. 
+
+1. **Email to alternative email address.** If the primary email notification fails, as determined via callback to VA Notify or other mechanism, fallback to any alternative email addresses available.
+2. **Text message to primary phone number.** If the secondary email notification fails, fallback to sending a text message via VA Notify to the primary phone number either collected in the form or obtained from the user's profile. Users do not need to opt-in to this message as it is a critical communication. Given that it is not possible to confirm receipt of a SMS message, move onto the next step.
+3. **Hand-off to Veteran Support team.** At this point, teams should use an internal process to hand off contacting the Veteran to the Veteran support team. A Support team member will contact the Veteran and assist them with re-submitting their request.
 
 ### Showing form submission status on the form confirmation page
 

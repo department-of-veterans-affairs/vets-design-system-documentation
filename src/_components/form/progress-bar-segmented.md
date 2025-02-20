@@ -71,7 +71,7 @@ anchors:
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/alert/#accessibility-alert">Refer to the U.S. Web Design System for accessibility guidance</a>
+<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/step-indicator/#accessibility-guidance">Refer to the U.S. Web Design System for accessibility guidance</a>
 
 ## Related
 

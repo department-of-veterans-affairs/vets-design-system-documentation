@@ -91,7 +91,7 @@ Work with the CAIA and identity teams to adjust the content in this component fo
 
 ## Related
 
-* [Alert]({{ site.baseurl}}/components/alert/alert)
+* [Alert]({{ site.baseurl}}/components/alert)
 * [Pattern - Help users to sign in]({{ site.baseurl}}/patterns/help-users-to/sign-in)
 
 {% include _component-checklist.html component_name=page.web-component %}

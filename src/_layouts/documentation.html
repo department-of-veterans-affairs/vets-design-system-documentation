@@ -30,6 +30,9 @@
           {% if collection_name %}
             {% include _site-section-name.html %}
           {% endif %}
+          {% if page.status %}
+              {% include _status.html %}
+            {% endif %}
           <h1 id="{{ page.title }}">{{ page.title }}</h1>
           {% if page.intro-text %}
           <div class="va-introtext" markdown="1">
