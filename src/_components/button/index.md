@@ -8,7 +8,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 status: use-deployed
 sub-pages:
   - sub-page: Button group
-  - sub-page: Button icon
+  - sub-page: Button - Icon
 uswds-v3: primary
 web-component: va-button
 anchors:
@@ -93,6 +93,7 @@ anchors:
 * **Use Secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
 * **Use Big primary buttons for the only action.** Use the big variation of the primary button for the only action on the page.
 * **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** Note that these buttons can be used as a pair from [button pair]({{ site.baseurl }}/components/button/button-pair). Also, note that the Back button should not be used if it is only navigating rather than taking an action (like submitting data ala the Continue button).
+* **Use Loading for actions that should only be triggered once.** Use the loading variation when it is necessary to block the user from additional clicks of a button that might cause transaction issues.
 * **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons will not pass the required color contrast ratio.
 * **Use destructive for actions that have serious consequences.** Use the destructive button for any action that cannot be reversed and may result in data loss. Currently used in the mobile app when canceling an appointment and when removing contact information.
   * Don't rely on the red color alone to communicate the destructive nature of the action. Always ensure the button text clearly communicates what will happen.

@@ -9,6 +9,49 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## What's Changed (Sprint 20: Jan 30 to Feb 13) 
+
+### New Features & Components 🎉
+
+- va-banner: add dismissed-banner-id prop by [@SnowboardTechie](https://github.com/SnowboardTechie) in [#1488](https://github.com/department-of-veterans-affairs/component-library/pull/1488)
+- va-file-input: add support restricting the size of the file added by [@it-harrison](https://github.com/it-harrison) in [#1490](https://github.com/department-of-veterans-affairs/component-library/pull/1490)
+### Fixes
+
+- va-button-pair: add support for submitting form by [@jamigibbs](https://github.com/jamigibbs) in [#1482](https://github.com/department-of-veterans-affairs/component-library/pull/1482)
+- va-language-toggle: accessibility updates by [@ataker](https://github.com/ataker) in [#1484](https://github.com/department-of-veterans-affairs/component-library/pull/1484)
+- va-button & va-button-pair: allow custom text for continue variation by [@jamigibbs](https://github.com/jamigibbs) in [#1485](https://github.com/department-of-veterans-affairs/component-library/pull/1485)
+
+### Other Changes
+
+- CSS-Library: Improved font handling for source sans pro across multiple platforms by [@Andrew565](https://github.com/Andrew565) in [#1483](https://github.com/department-of-veterans-affairs/component-library/pull/1483)
+
+### New Contributors
+
+- [@SnowboardTechie](https://github.com/SnowboardTechie) made their first contribution in [#1488](https://github.com/department-of-veterans-affairs/component-library/pull/1488)
+
+
+### Figma Changelog
+[Update Figma with the new gutter specs - Design](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3413)  (Dan Brady) 
+- Added specs for planned margin and grid updates within all breakpoints #3413
+
+Color of Eyebrow incorrect / Comment #4274 (Lucas Wright) 
+- Changed hex color to 3d4551
+
+[Update guidance for process list eyebrow - documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3178) (Lucas Wright)
+- Added optional eyebrow for "Default" (none), "Pending", "Active", "Checked", and "Custom" statuses. 
+
+Update design for current links in breadcrumbs] (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3759)  (Lucas Wright)
+- To align with the treatment of the language toggle, we are making the last "leg" of the breadcrumb (the current page) bold, black font (not underline). 
+
+### Guidance updates
+
+- [Language toggle component- Update documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/2585) (Barb Denney)
+- [Update va-checkbox to include guidance for indeterminate state](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3683) (Barb Denney)
+- [Combo box - Documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3567) (Barb Denney)
+- [DST Staging Review: Broken link to Alert from Related section of guidance](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3672) (Dan Brady)
+
+
+
 ### **New Features & Components Jan 2025 (Sprints 19)**
 
 [v49.0.0 of the component library](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v49.0.0) 

@@ -3,6 +3,7 @@ layout: component
 title: Sidenav
 intro-text: "Hierarchical, vertical navigation to place at the side of a page."
 github-title: va-sidenav
+status: dont-use-proposed
 anchors:
   - anchor: Examples
   - anchor: Usage
