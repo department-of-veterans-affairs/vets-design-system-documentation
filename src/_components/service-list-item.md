@@ -61,7 +61,7 @@ anchors:
 
 ### Anatomy or layout details
 
-[Alt text: An annotated Service list item, calling out the header, critical information, status, details, and link.]
+{% include component-example.html alt="An annotated Service list item, calling out the header, critical information, status, details, and link." file="/images/components/service-list-item/annotated-service-list-item-component.png" %}
 
 A Service list item can have:
 
@@ -89,7 +89,7 @@ The link should use the standard default, hover, focus, active, and visited link
 * Active: Similar to the default state, but underlined and with a yellow outline. The outline is similar to the focus state of action links.
 * Visited: Similar to the default state, but the color of the link and chevron turn to vads-color-link-visited once the link has been visited.
 
-[Alt text: A table of headers for the Service list item. There are two columns, one for mobile and one for desktop. The five rows show each of the states described above: default, hover, focus, active and visited.]
+{% include component-example.html alt="A table of headers for the Service list item. There are two columns, one for mobile and one for desktop. The five rows show each of the states described above: default, hover, focus, active and visited." file="/images/components/service-list-item/annotated-service-list-item-header-states.png" %}
 
 ## Code usage
 
