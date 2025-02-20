@@ -8,7 +8,7 @@
     "build": "gulp build",
     "start": "yarn run build && bundle exec jekyll serve --baseurl ''",
     "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental",
-    "update-releases": "rm -rf .json_data_cache && yarn run build && bundle exec jekyll serve --baseurl ''"
+    "update-releases": "rm -rf json_data_cache && yarn run build && bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
     "type": "git",

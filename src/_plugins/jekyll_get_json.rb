@@ -19,7 +19,7 @@ module Jekyll_Get_Json
     def load_json(site, feed)
       name = feed['name']
       url = feed['json']
-      path = ".json_data_cache/#{name}.json"
+      path = "json_data_cache/#{name}.json"
       if not File.exist?(path)
         FileUtils.mkpath File.dirname(path)
         print "* Caching #{url}\n".green
