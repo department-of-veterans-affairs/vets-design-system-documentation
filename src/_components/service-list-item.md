@@ -69,13 +69,13 @@ A Service list item can have:
 * Header (required)
   * The header consists of an icon (optional), header text, and chevron. These elements combine to create a link to a page with more details about the benefit or tool. All Service list items must link to a details page from the header.
   * Headers should be visually consistent in each list item within the list. For example, if some list item headers have icons, all list items in the list should have icons.
-  * The header has a default, hover, active, focus, and visited state. See details in the Header states section below.
+  * The header has a default, hover, active, focus, and visited state. See details in the [Header states section](#header-states) below.
 * Status (required)
   * Status must be represented by a gray Tag component.
   * Every benefit or tool in a list has a set of internal states, which are used to track the progress of enrolling in that benefit or using that tool. A status is the way to communicate the item's state to the user (such as Active, Pending, etc).
   * Statuses do not have to mirror internal states in a one-to-one manner. (They can, but they are not required to.) Every state change does not necessarily warrant a status change.
 * Critical information
-  * This is a new component that is currently being developed. It navigates the user to the most direct path to take action on the critical information.
+  * This component is still under development. It navigates the user to the most direct path to take action on the critical information. Future updates will include adjustments to color contrast, focus states, and more.
 * Details (required)
   * The details provide users with helpful information, formatted in a “Label: Value” structure (for example, “Approved on: May 5, 2011”).
 There can be anywhere from one to five lines of “Label: Value” pairs.
@@ -97,18 +97,19 @@ The link should use the standard default, hover, focus, active, and visited link
 (Coming soon)
 
 ## Content considerations
-Before the development of this component, the Card component was used to accomplish similar functions. When evaluating if your team needs to use Service list items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the [Usage](#usage) section.
+Teams used the Card component before this component existed. When evaluating if your team needs to use Service list items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the [Usage](#usage) section.
 
 Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, “pending” versus “in-progress”). CAIA will define which of those is correct across benefits and tools.
 
 ## Accessibility considerations
 
-See the accessibility concerns section of the following components:
+Review the accessibility concerns section of the following components:
 * [Card]({{ site.baseurl }}/components/card#accessibility-considerations)
 * [List]({{ site.baseurl }}/components/list#accessibility-considerations)
 * [Link]({{ site.baseurl }}/components/link/#accessibility-considerations)
 * [Link - Action]({{ site.baseurl }}/components/link/action#accessibility-considerations)
 * [Tag]({{ site.baseurl }}/components/tag#accessibility-considerations)
+* Critical information (link coming soon)
 
 ## Related
 
