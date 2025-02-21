@@ -29,7 +29,7 @@ anchors:
 * **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
 * **Service**: A term used to describe both benefits and tools.
 * **Service list**: A list of services. This pattern articulates how to design a Service list.
-* **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the Service list item component[link].
+* **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the [Service list item component]({{ site.baseurl }}/components/service-list-item).
 
 ### When to use this pattern
 
@@ -44,26 +44,26 @@ anchors:
 
 ## Design Principles
 
-* **Scannable—limited amount of information per list object:** The job of the list view is to display a summary of the object, not the entire object.
-* **Consistency of content and hierarchy:** The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
-* **Consistent implementation of supporting functionality:** If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same.
+* **Scannable—limited amount of information per list object**: The job of the list view is to display a summary of the object, not the entire object.
+* **Consistency of content and hierarchy**: The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
+* **Consistent implementation of supporting functionality**: If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same.
 
 ## How to design and build
 
 ### How this pattern works
 
-This pattern vertically stacks Service list items to form a list, called a “Service list.” As noted in the [Service list item component]({{ site.baseurl }}/components/service-list-item), the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a Critical information component, Status light component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service list item component.
+This pattern vertically stacks Service list items to form a list, called a “Service list.” As noted in the [Service list item component]({{ site.baseurl }}/components/service-list-item), the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a Critical information component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service list item component.
 
 ### Display order
 
 * List items should be displayed in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and consider running usability studies to confirm the most appropriate display order for your content.
 
-* Note that when list items include a Critical information component[link] or Status light component[link], these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
+* Note that when list items include a Critical information component (coming soon), these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
 
 ### Components used in this pattern
 
 * [Service list item (NEW)]({{ site.baseurl }}/components/service-list-item)
-* Critical information (NEW)
+* Critical information (NEW; link coming soon)
 * [Tag component](https://design.va.gov/components/tag])
 
 ## Examples
@@ -98,7 +98,7 @@ Below are some  tools that a Veteran, family member, or caretaker may use to man
 
 ## Code usage
 
-A link to the page.code-link, when available.
+(Link coming soon)
 
 ## Content considerations
 
@@ -106,7 +106,7 @@ Statuses should be normalized with CAIA so that the same terms are used when the
 
 ## Accessibility considerations
 
-Review the accessibility considerations for the [Service list item component]({{ site.baseurl }}/components/service-list-item).
+Review the accessibility considerations for the [Service list item component]({{ site.baseurl }}/components/service-list-item#accessibility-considerations).
 
 ## Research findings
 

@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Service list item
-intro text: The Service list item component is used to show a brief summary of a benefit or tool. For example, a Service list item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the  “Help users to… Manage benefits and tools” pattern[link].
+intro-text: The Service list item summarizes a benefit or tool. For example, a Service list item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the “Help users to… Manage benefits and tools” pattern.
 status: use-with-caution-candidate
 research-title: Service list item
 figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=52qYQM9JQBOPO71q-1
@@ -19,6 +19,7 @@ anchors:
 ---
 
 ## Examples
+Storybook previews are coming shortly
 
 ### With only the required elements (header, status, details)
 
@@ -34,7 +35,7 @@ anchors:
 
 
 
-### With all possible additions
+### With all possible elements
 
 {% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as “Label: Value” pairs, and a link." file="/images/components/service-list-item/service-list-item-all-info.png" class="x2" %}
 
@@ -67,7 +68,7 @@ A Service list item can have:
 
 * Header (required)
   * The header consists of an icon (optional), header text, and chevron. These elements combine to create a link to a page with more details about the benefit or tool. All Service list items must link to a details page from the header.
-Headers should be visually consistent in each list item within the list. For example, if some list item headers have icons, all list items in the list should have icons.
+  * Headers should be visually consistent in each list item within the list. For example, if some list item headers have icons, all list items in the list should have icons.
   * The header has a default, hover, active, focus, and visited state. See details in the Header states section below.
 * Status (required)
   * Status must be represented by a gray Tag component.
@@ -97,6 +98,7 @@ The link should use the standard default, hover, focus, active, and visited link
 
 ## Content considerations
 Before the development of this component, the Card component was used to accomplish similar functions. When evaluating if your team needs to use Service list items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the [Usage](#usage) section.
+
 Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, “pending” versus “in-progress”). CAIA will define which of those is correct across benefits and tools.
 
 ## Accessibility considerations
@@ -115,7 +117,7 @@ Service list item may be confused with several other components:
 * [Card]({{ site.baseurl }}/components/card): See [When not to use Service list item]({{ site.baseurl }}/components/service-list-item#when-not-to-use-service-list-item) and [Content considerations]({{ site.baseurl }}/components/service-list-item#content-considerations) for information on when to use a card instead of a Service list item.
 
 The below components are nested within the Service list item component:
-* Critical information (NEW)
+* Critical information (NEW; link coming soon)
 * [Tag]({{ site.baseurl }}/components/tag)
 * [Link]({{ site.baseurl }}/components/link/)
 
