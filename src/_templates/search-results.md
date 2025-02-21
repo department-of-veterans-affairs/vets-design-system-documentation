@@ -8,7 +8,8 @@ intro-text: "Search results show links to the user of pages that matched the sea
 anchors:
   - anchor: About
   - anchor: Examples
-  - anchor: Structure
+  - anchor: Structure - Search results page
+  - anchor: Structure - Single search result
   - anchor: How to design and build
 ---
 
@@ -64,6 +65,31 @@ Contexts such as:
   caption="Search results page showing sorting and filtering options with active filter chips. Annotated."
   file="/images/templates/search-results/search-results-sort-and-filter-with-chips-annotated.png" %}
 
+### Filters open - Nested accordions
+
+{% include component-example.html
+  class="x2"
+  alt="An example of a set of filters." 
+  caption="Filters open showing nested accordions. At desktop viewport widths the containing Accordion would convert to a header only."
+  file="/images/templates/search-results/filters-open-A.png" %}
+
+### Filters open - Headers
+
+{% include component-example.html
+  class="x2"
+  alt="A second example of a set of filters." 
+  caption="Filters open showing filter headers."
+  file="/images/templates/search-results/filters-open-B.png" %}
+
+### Search result
+
+{% include component-example.html
+  alt="An example of a single search result." 
+  caption="A search result. Annotated."
+  file="/images/templates/search-results/search-result-annotated.png" %}
+
+## Structure - Search results page
+
 ### Search results page
 
 The search results page can feature all of the following, but not all aspects are required.
@@ -79,21 +105,6 @@ The search results page can feature all of the following, but not all aspects ar
 9. [Clear all filters](#clear-all-filters)
 10. [Pagination](#pagination)
 11. [Search result](#search-result)
-
-### Search result
-
-{% include component-example.html
-  alt="An example of a single search result." 
-  caption="A search result. Annotated."
-  file="/images/templates/search-results/search-result-annotated.png" %}
-
-### Single search result
-
-1. [Link - Page title of matching page](#link---page-title-of-matching-page)
-2. [Description](#description)
-3. [URL](#url)
-
-## Structure - Search results page
 
 ### Page title
 
@@ -141,6 +152,13 @@ Text describing how many results are being shown.
 
 ## Structure - Single search result
 
+### Single search result
+
+1. [Link - Page title of matching page](#link---page-title-of-matching-page)
+2. [Description](#description)
+3. [URL](#url)
+
+
 ### Link - Page title of matching page
 
 This should match the H1 of the page that the result will link to. 
@@ -184,7 +202,7 @@ Faceted search is a way to filter search results by using attributes, or facets,
 * **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. See [guidance on sort](#sort).
 * **Use a checkbox for filtering on multiple facets.** Multiple facet filtering uses the [Checkbox]({{ site.baseurl }}/components/form/checkbox) component as the interaction input.
 * **Use a radio button when only one filter can be applied at a time.** If a facet only allows mutually exclusive results at a time, in other words only one filter can be applied at one time, then use the [Radio button]({{ site.baseurl }}/components/form/radio-button) component as the interaction input up to 5 items. For more than 5 items use a [Select]({{ site.baseurl }}/components/form/select) component. 
-    * When there only 2-3 items within a facet that can be filtered on, use of a Segmented Button component is an option excluding task flows such as filling out a form, reviewing secure messages, etc.
+    * When there are only 2-3 items within a facet that can be filtered on, use of a Segmented Button component is an option excluding task flows such as filling out a form, reviewing secure messages, etc.
 * **Filtering must have a distinct button to apply filtering to the results.** Use a [button]({{ site.baseurl }}/components/button) component to apply filtering. The button must use the text "Apply filters".
 * **Provide a way to clear or reset all filters.** The user must have a clear and easy way to clear or reset all filters. 
 * **Filtering happens inline on the page.** Do not take users to a new page or screen in order to filter search results.
