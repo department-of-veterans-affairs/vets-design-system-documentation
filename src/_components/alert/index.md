@@ -49,24 +49,6 @@ Used to indicate success.
 
 Used when there is a problem or something destructive is about to occur.
 
-### Sign in or tool prompt
-
-{% include storybook-preview.html story="uswds-va-alert--sign-in-or-tool-prompt" link_text="va-alert sign in or tool prompt" height="220px" %}
-
-Used to prompt a user to sign in, create an account, or launch an online tool to access certain information.
-
-### Sign-in to start your application - Pre-fill
-
-{% include storybook-preview.html story="uswds-va-alert--sign-in-to-start-your-application" link_text="va-alert sign in to start your application" height="330px" %}
-
-Used to inform the user of the benefits of signing in. Mainly, that information can be prefilled into some forms from Profile data and that information entered into a form will be saved as the user progresses from step to step.
-
-### Sign-in to start your application - No-pre-fill
-
-{% include component-example.html alt="An example of a sign-in to start your application alert, no-pre-fill variation." file="/images/components/alert/sign-in-no-prefill.png" caption="The Sign-in to start your application alert, no-pre-fill variation." reverse=true class="x2" %}
-
-This variation can be used when pre-fill is not offered on a form (which should be avoided).
-
 ## Examples - Standard properties
 
 ### Heading level
