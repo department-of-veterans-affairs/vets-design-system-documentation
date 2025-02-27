@@ -6,7 +6,8 @@
     </dt>
   {% for item in page.anchors %}
     <dd role="definition" class="site-on-this-page__definition">
-      <a class="site-on-this-page__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’", "" | replace: "'", "" | replace: ",", "" }}">
+      <a class="site-on-this-page__link" href="#{{ item.anchor | downcase | replace: " ", "-" | replace: "’" , "" |
+        replace: "'" , "" | replace: "," , "" | replace: "." , "" }}">
         <i aria-hidden="true" class="fas fa-arrow-down"></i>
         {{ item.anchor }}
       </a>
