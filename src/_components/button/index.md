@@ -8,7 +8,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 status: use-deployed
 sub-pages:
   - sub-page: Button group
-  - sub-page: Button icon
+  - sub-page: Button - Icon
 uswds-v3: primary
 web-component: va-button
 anchors:
