@@ -110,3 +110,4 @@ Review the accessibility considerations for the [Service list item component]({{
 
 ## Research findings
 
+[Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests that users view lists positively and should be able to navigate through them with relative ease. This particular pattern has not yet been tested directly with users.
