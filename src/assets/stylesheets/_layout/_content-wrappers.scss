@@ -308,3 +308,30 @@
     content: '\00a0';
   }
 }
+
+.site-l-content-wrapper--sidebar {
+    display: flex;
+    gap: units(8);
+
+  .main-content__content {
+    flex: 1;
+    order: 1
+  }
+
+  .main-content__sidebar {
+    display: none;
+
+    @include media($large-screen) {
+      display: inline;
+      flex-basis: 256px;
+      order: 2;
+    }
+  }
+
+  .site-on-this-page {
+    border-left: 1px solid var(--vads-color-base-lighter);
+    position: sticky;
+    padding: units(2) 0 units(2) units(3);
+    top: units(10);
+  }
+}
