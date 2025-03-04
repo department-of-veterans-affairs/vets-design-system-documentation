@@ -3,6 +3,7 @@ layout: component
 title: Tag
 intro-text: A tag draws attention to new or important content.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
+github-title: va-tag
 status: use-deployed
 anchors:
   - anchor: Examples
@@ -12,7 +13,7 @@ anchors:
 
 ## Examples
 
-{% include storybook-preview.html height="50px" story="components-tag--default-story" %}
+{% include storybook-preview.html height="50px" story="components-tag--default-story" link_text="View Tag" %}
 
 ## Usage
 

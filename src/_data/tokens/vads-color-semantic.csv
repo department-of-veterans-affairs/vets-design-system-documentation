@@ -20,6 +20,10 @@ vads-color-error-darker,Semantic,vads-color-error-darker,uswds-system-color-red-
 vads-color-error-light,Semantic,vads-color-error-light,uswds-system-color-red-warm-30v,#f39268,,$theme-color-error-light from USWDS
 vads-color-error-lighter,Semantic,vads-color-error-lighter,uswds-system-color-red-warm-10,#f4e3db,,$theme-color-error-lighter from USWDS
 vads-color-feedback-border-warning-on-dark,Semantic,vads-color-feedback-border-warning-on-dark,uswds-system-color-yellow-20v,#face00,,Used for warning alert border on mobile app in dark mode
+vads-color-feedback-foreground-success-on-dark,Semantic,vads-color-feedback-foreground-success-on-dark,uswds-system-color-green-cool-vivid-30,#21c834,,Used for success alert foreground on mobile app in dark mode
+vads-color-feedback-foreground-success-on-light,Semantic,vads-color-feedback-foreground-success-on-light,uswds-system-color-green-cool-vivid-50,#008817,,Used for success alert foreground on mobile app in light mode
+vads-color-feedback-foreground-warning-on-dark,Semantic,vads-color-feedback-foreground-warning-on-dark,uswds-system-color-green-cool-vivid-50,#e5a000,,Used for warning alert foreground on mobile app in dark mode
+vads-color-feedback-foreground-warning-on-light,Semantic,vads-color-feedback-foreground-warning-on-light,uswds-system-color-gold-vivid-40,#c2850c,,Used for warning alert foreground on mobile app in light mode
 vads-color-feedback-surface-error-on-dark,Semantic,vads-color-feedback-surface-error-on-dark,uswds-system-color-red-vivid-80,#5c1111,,Used for error alert background on mobile app in dark mode
 vads-color-feedback-surface-info-on-dark,Semantic,vads-color-feedback-surface-info-on-dark,uswds-system-color-blue-vivid-80,#112f4e,,Used for alert background on mobile app in dark mode
 vads-color-feedback-surface-success-on-dark,Semantic,vads-color-feedback-surface-success-on-dark,uswds-system-color-green-cool-80v,#19311e,,Used for success alert background on mobile app in dark mode

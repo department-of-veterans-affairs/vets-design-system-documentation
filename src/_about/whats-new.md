@@ -9,6 +9,126 @@ title: What’s new?
   The latest news and updates on the Design System, Forms library and the Content style guide.
 </div>
 
+## What's Changed (Sprint 20: Jan 30 to Feb 13) 
+
+### New Features & Components 🎉
+
+- va-banner: add dismissed-banner-id prop by [@SnowboardTechie](https://github.com/SnowboardTechie) in [#1488](https://github.com/department-of-veterans-affairs/component-library/pull/1488)
+- va-file-input: add support restricting the size of the file added by [@it-harrison](https://github.com/it-harrison) in [#1490](https://github.com/department-of-veterans-affairs/component-library/pull/1490)
+### Fixes
+
+- va-button-pair: add support for submitting form by [@jamigibbs](https://github.com/jamigibbs) in [#1482](https://github.com/department-of-veterans-affairs/component-library/pull/1482)
+- va-language-toggle: accessibility updates by [@ataker](https://github.com/ataker) in [#1484](https://github.com/department-of-veterans-affairs/component-library/pull/1484)
+- va-button & va-button-pair: allow custom text for continue variation by [@jamigibbs](https://github.com/jamigibbs) in [#1485](https://github.com/department-of-veterans-affairs/component-library/pull/1485)
+
+### Other Changes
+
+- CSS-Library: Improved font handling for source sans pro across multiple platforms by [@Andrew565](https://github.com/Andrew565) in [#1483](https://github.com/department-of-veterans-affairs/component-library/pull/1483)
+
+### New Contributors
+
+- [@SnowboardTechie](https://github.com/SnowboardTechie) made their first contribution in [#1488](https://github.com/department-of-veterans-affairs/component-library/pull/1488)
+
+
+### Figma Changelog
+[Update Figma with the new gutter specs - Design](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3413)  (Dan Brady) 
+- Added specs for planned margin and grid updates within all breakpoints #3413
+
+Color of Eyebrow incorrect / Comment #4274 (Lucas Wright) 
+- Changed hex color to 3d4551
+
+[Update guidance for process list eyebrow - documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3178) (Lucas Wright)
+- Added optional eyebrow for "Default" (none), "Pending", "Active", "Checked", and "Custom" statuses. 
+
+Update design for current links in breadcrumbs] (https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3759)  (Lucas Wright)
+- To align with the treatment of the language toggle, we are making the last "leg" of the breadcrumb (the current page) bold, black font (not underline). 
+
+### Guidance updates
+
+- [Language toggle component- Update documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/2585) (Barb Denney)
+- [Update va-checkbox to include guidance for indeterminate state](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3683) (Barb Denney)
+- [Combo box - Documentation](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3567) (Barb Denney)
+- [DST Staging Review: Broken link to Alert from Related section of guidance](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3672) (Dan Brady)
+
+
+
+### **New Features & Components Jan 2025 (Sprints 19)**
+
+[v49.0.0 of the component library](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v49.0.0) 
+
+### Breaking Changes
+
+- va-file-input-multiple: update data for vaMultipleChange to return more detail (BREAKING) va-file-input: fix bug with upload message not resetting by [@powellkerry](https://github.com/powellkerry) in [#1460](https://github.com/department-of-veterans-affairs/component-library/pull/1460)
+
+### New Features & Components 🎉
+
+- va-file-input-multiple: allow for slots to be conditionally rendered on file inputs by [@powellkerry](https://github.com/powellkerry) in [#1458](https://github.com/department-of-veterans-affairs/component-library/pull/1458)
+- va-file-input: display previously uploaded file by [@powellkerry](https://github.com/powellkerry) in [#1461](https://github.com/department-of-veterans-affairs/component-library/pull/1461)
+- va-file-input: add statusText prop by [@powellkerry](https://github.com/powellkerry) in [#1463](https://github.com/department-of-veterans-affairs/component-library/pull/1463)
+
+### Fixes
+
+- va-telephone: add health resource center number to constants by [@Dr-Pongo](https://github.com/Dr-Pongo) in [#1455](https://github.com/department-of-veterans-affairs/component-library/pull/1455)
+- va-select: Adding 'vaSelectBlur' event by [@Andrew565](https://github.com/Andrew565) in [#1466](https://github.com/department-of-veterans-affairs/component-library/pull/1466)
+- va-checkbox and va-radio-option: Improved a11y by [@Andrew565](https://github.com/Andrew565) in [#1442](https://github.com/department-of-veterans-affairs/component-library/pull/1442)
+- va-alert: Fixing it so close button on slim alerts doesn't overflow by [@Andrew565](https://github.com/Andrew565) in [#1467](https://github.com/department-of-veterans-affairs/component-library/pull/1467)
+
+### Other Changes
+
+- CSS-Library: Moving fonts loading to core by [@Andrew565](https://github.com/Andrew565) in [#1469](https://github.com/department-of-veterans-affairs/component-library/pull/1469)
+- CSS-Library: add primitive and semantic spacing tokens by [@micahchiang](https://github.com/micahchiang) in [#1468](https://github.com/department-of-veterans-affairs/component-library/pull/1468)
+    
+
+### Figma Changelog
+
+- [[Design] Update search input with clear search variation.](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3608) (Barb Denney)
+	- Breaking Change: When updating the search input component, edited text in the input will clear and default to the term 'Search'. Text in the search button and suggestions will remain unaffected 
+		- Added a clear button to search input
+		- Added focus rings to the search input and the new clear button
+- [Error Color mismatch between Figma and Production](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3519) (Dan Brady) 
+	- Form Elements: 
+		- Label
+		- Error Text
+		- Hint Text
+		- Label Header
+	- Checkbox and Checkbox Element
+	- Date Input
+	- File Input
+	- Memorable Date
+	- Privacy Agreement
+	- Radio Buttons
+	- Select and Select Element
+	- Statement of Truth
+	- Text Input and Text Input Element
+	- Textarea and Textarea Element 
+- [[Crisis Line Modal] - Add to VADS Component Examples and add modal contents](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/2590) (Dan Brady) 
+	- Update name to "Crisis Line Modal"
+	- Add modal variants and content
+	- Update properties for device and element
+- [Layout Grid](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3413) (Dan Brady)
+	- Added specs for planned margin and grid updates within all breakpoints
+- [Update language toggle component - Design](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/3605)  (Lucas Wright)
+	- Created a new design that has the current language display (in VADS-base color) which complies with the latest WCAG guidelines.
+    
+### Guidance updates
+
+- Creates a path for mobile examples. [Amends [#2391](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/2391)] by [@humancompanion-usds](https://github.com/humancompanion-usds) in [#3697](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3697)
+- Updates prefill docs to reflect update prefilled information pattern by [@bellepx0](https://github.com/bellepx0) in [#3701](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3701)
+- Alert - Sign-in: Fix broken link by [@danbrady](https://github.com/danbrady) in [#3708](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3708)
+- Update neutral-and-inclusive-language.md in content style guide by [@RLHecht](https://github.com/RLHecht) in [#3719](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3719)
+- Add audit data for alert sign in by [@rsmithadhoc](https://github.com/rsmithadhoc) in [#3705](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3705)
+- More fixes to style guide by [@RLHecht](https://github.com/RLHecht) in [#3722](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3722)
+- Renames a file. by [@humancompanion-usds](https://github.com/humancompanion-usds) in [#3720](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3720)
+- Update checkbox.md by [@babsdenney](https://github.com/babsdenney) in [#3729](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3729)
+- Update content for intro page prefill alerts in prefill pattern docs by [@bellepx0](https://github.com/bellepx0) in [#3733](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3733)
+- Card, Tag: Adding status to cards by [@danbrady](https://github.com/danbrady) in [#3725](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3725)
+- Update link/button guidance for downloads by [@rsmithadhoc](https://github.com/rsmithadhoc) in [#3744](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3744)
+- Download link update by [@rsmithadhoc](https://github.com/rsmithadhoc) in [#3758](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/3758)
+
+
+
+
+
 ## New Features & Components  (as of Jan 15, 2025)
  **[v48.4.0](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v48.4.0) of the component library**
 

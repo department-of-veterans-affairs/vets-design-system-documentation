@@ -49,7 +49,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
 **apply**
-: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
+: Use this term in the context of non-disability benefits, like this: apply for DIC benefits or apply for VA health care. Use "file" for disability compensation, like this: file a claim for disability. Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **Armed Forces**
 : Capitalize. The Armed Forces consist of 6 service branches: the Air Force, Army, Coast Guard, Marine Corps, Navy, and Space Force. Also refer to the "uniformed services" entry.
@@ -277,7 +277,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Capitalize in Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era," lowercase: Vietnam War era.
 
 **evidence**
-: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed.
+: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed. Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **Exception**
 : Used to call special attention to something. It should be bolded and never in all caps. Use a colon following "Exception."
@@ -314,7 +314,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 **file a claim for disability compensation**
-: Use "file a claim" instead of "apply for benefits" when referring to disability.
+: Use "file a claim" instead of "apply for benefits" when referring to disability. Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **final status**
 : Use “in final status” instead of “in a final status."

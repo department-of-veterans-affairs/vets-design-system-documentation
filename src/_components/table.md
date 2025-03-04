@@ -4,7 +4,7 @@ title: Table
 intro-text: "The table component organizes data into columns and rows."
 research-title: Table
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
-status: use-best-practice
+status: use-with-caution-available
 uswds-v3: default
 web-component: va-table
 anchors:
@@ -37,12 +37,6 @@ anchors:
 ### Sortable
 
 {% include storybook-preview.html height="410px" story="uswds-va-table--sortable" link_text="Sortable va-table" %}
-
-## Examples - v1
-
-### Responsive stacked table (v1 Default)
-
-{% include storybook-preview.html height="400px" story="components-va-table--default" link_text="va-table v1 along with additional variations"  %}
 
 ## Usage
 
