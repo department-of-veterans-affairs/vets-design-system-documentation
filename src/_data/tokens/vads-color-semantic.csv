@@ -1,7 +1,9 @@
 ﻿Name,type,vads-name,uswds-design-token,final-hex-value,vads-alias,description
 vads-color-action-border-base-active-on-dark,Semantic,vads-color-action-border-base-active-on-dark,uswds-system-color-gray-30,#adadad,,Used for button on mobile app in base style in dark mode
 vads-color-action-border-base-active-on-light,Semantic,vads-color-action-border-base-active-on-light,uswds-system-color-gray-80,#2e2e2e,,Used for button on mobile app in base style
-vads-color-action-focus-on-light,Semantic,vads-color-action-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus outline color
+vads-color-action-background-focus-on-light,Semantic,vads-color-action-background-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus background color
+vads-color-action-border-focus-on-light,Semantic,vads-color-action-border-focus-on-light,uswds-system-color-gray-90,#1b1b1b,,Focus border color
+vads-color-action-text-focus-on-light,Semantic,vads-color-action-text-focus-on-light,uswds-system-color-gray-90,#1b1b1b,,Focus text color
 vads-color-action-surface-default-on-dark,Semantic,vads-color-action-surface-default-on-dark,uswds-system-color-blue-30v,#58b4ff,,Used for button on mobile app in dark mode
 vads-color-action-surface-destructive-on-dark,Semantic,vads-color-action-surface-destructive-on-dark,uswds-system-color-red-vivid-40,#fb5a47,,Used for button on mobile app in dark mode
 vads-color-background-default-on-dark,Semantic,vads-color-background-default-on-dark,uswds-system-color-gray-warm-90,#171716,,Used for app background on mobile app in dark mode
