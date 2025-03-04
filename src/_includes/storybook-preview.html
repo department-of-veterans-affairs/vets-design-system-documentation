@@ -7,6 +7,7 @@
   style="max-width: {{ include.width | default: '100%' }}"
 >
   <iframe
+    id="{{ include.story }}"
     width="100%"
     height="{{ include.height }}"
     src="{{ storybook_path }}/iframe.html?id={{ include.story }}&amp;viewMode=story"
@@ -14,3 +15,25 @@
 </div>
 
 [{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_path }}/?path=/docs/{{ include.story }})
+
+<script>
+  window["{{ include.story }}"] = document.getElementById("{{ include.story }}");
+
+  window["{{ include.story }}"].addEventListener("load", function() {
+
+    console.log('storybookIframe loaded!', window["{{ include.story }}"]);
+
+    setTimeout(() => {
+      const innerDoc = window["{{ include.story }}"].contentDocument || window["{{ include.story }}"].contentWindow.document;
+
+      console.log('innerDoc', innerDoc);
+
+      if (innerDoc.body) {
+        console.log('innerDoc.body', innerDoc.body);
+        console.log('innerDoc.body.scrollHeight', innerDoc.body.scrollHeight);
+        window["{{ include.story }}"].height = innerDoc.body.scrollHeight;
+      }
+    }, 500)
+
+  });
+</script>
