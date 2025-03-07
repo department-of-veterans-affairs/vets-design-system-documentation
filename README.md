@@ -162,14 +162,16 @@ Within this project is the ability to automate the display of the latest release
 
 1. Run `yarn run update-releases`. This script deletes the `json_data_cache/` folder and then fetches the latest release data from GitHub, ensuring you have the most current information. It will then continue to build the site normally.
 2. If release data is fetched, you should see this captured in the logs as the site builds: 
-```
-...
-Generating... 
-* Caching https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases in json_data_cache/site_releases.json
-* Caching https://api.github.com/repos/department-of-veterans-affairs/component-library/releases in json_data_cache/component_library_releases.json
-   Jekyll Feed: Generating feed for posts
-...
-```
+   ```
+   ...
+   Generating... 
+   * Caching https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases in json_data_cache/site_releases.json
+   * Caching https://api.github.com/repos/department-of-veterans-affairs/component-library/releases in json_data_cache/component_library_releases.json
+      Jekyll Feed: Generating feed for posts
+   ...
+   ```
+3. Once Jekyll completes building, navigate to the What's new page in a browser to confirm the latest releases are visible.
+4. Submit a PR with the updated JSON files.
 
 ## Additional Testing
 
