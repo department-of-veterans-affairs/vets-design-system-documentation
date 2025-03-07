@@ -134,8 +134,8 @@ Within this project is the ability to automate the display of the latest release
 
 ### How Jekyll Displays the Latest Releases
 
-[!NOTE]
-These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately.  
+> [!NOTE]
+> These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately.  
 
 1.  **JSON Data Retrieval:**
     * When Jekyll builds the site, it checks for JSON files (defined in `_config.yml`) in the `json_data_cache/` folder.
@@ -157,8 +157,8 @@ These scripts rely on releases to be created in the [component-library repo](htt
 
 ### How to Update the What's New Page
 
-[!NOTE]
-Be sure your local environment is not running before getting the latest updates.
+> [!NOTE]
+> Be sure your local environment is not running before getting the latest updates.
 
 1. Run `yarn run update-releases`. This script deletes the `json_data_cache/` folder and then fetches the latest release data from GitHub, ensuring you have the most current information. It will then continue to build the site normally.
 2. If release data is fetched, you should see this captured in the logs as the site builds: 
