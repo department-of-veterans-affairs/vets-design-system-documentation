@@ -152,7 +152,7 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 ### How Jekyll Displays the Latest Releases
 
 > [!NOTE]
-> These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately.  
+> These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately. See instructions for [releasing component-library](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#releasing) or **How to Create a New Release for design.va.gov** above.   
 
 1.  **JSON Data Retrieval:**
     * When Jekyll builds the site, it checks for JSON files (defined in `_config.yml`) in the `json_data_cache/` folder.
