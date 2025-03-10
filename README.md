@@ -172,7 +172,7 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 5.  **Figma Data:**
     * The Figma changelog frame is simply embedded into the page with an iframe direct from the Figma Component Library. Updates are in real time. 
 
-### How to Update the What's New Page
+### How to Update the [What's New](https://design.va.gov/about/whats-new) Page
 
 > [!NOTE]
 > Be sure your local environment is not running before getting the latest updates.
