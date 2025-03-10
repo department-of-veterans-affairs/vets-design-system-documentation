@@ -154,6 +154,97 @@ Then click the "Re-run all jobs" button at the top of the page:
 
 ![The "Re-run all jobs" button for running a Github workflow again](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/images/readme/re-run-workflow-button.png?raw=true)
 
+
+## Updating the What's New Page with Changelogs
+
+Within this project is the ability to automate the display of the latest releases from the VADS component library and design system documentation repositories, along with recent changes from the component library's Figma file. This ensures the "What's New" page in the documentation site is always up-to-date.
+
+### Features
+
+* **Automated Release Fetching:** Retrieves and displays the latest releases from:
+    * [VADS Component Library repository](https://github.com/department-of-veterans-affairs/component-library)
+    * [design.va.gov repository](https://github.com/department-of-veterans-affairs/vets-design-system-documentation)
+* **Embedded Figma Changelog:** Integrates the changelog frame from the Component Library Figma file.
+* **Dynamic "What's New" Updates:** Automatically updates the "What's New" page with the latest release notes.
+
+### File Structure
+
+* `json_data_cache/` - Stores fetched release data in JSON format, enabling Jekyll to access it during site builds.
+* `src/`
+    * `_about/`
+        * `whats-new.md` - The page that displays the latest updates.
+    * `_includes/`
+        * `_github_markdown_parser.html` - Parses each release from the `data` object into a `va-card` and performs text manipulation for a more user-friendly display.
+    * `_plugins/`
+        * `jekyll_get_json.rb` - A Jekyll plugin that fetches and stores JSON data from GitHub, making it available to Jekyll's `data` object.
+        * `vads.rb` - Provides a custom Jekyll/Liquid filter for applying regular expression-based string transformations to release notes, enhancing readability.
+* `_config.yml` - Configuration file for Jekyll, defining repository URLs and Figma file details.
+* `package.json` - Contains the `yarn run update-releases` script, a shortcut for updating release data.
+
+### How to Create a New Release for design.va.gov
+
+1. Go to [vets-design-system-documentation releases](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases)
+2. Note the latest release tag. At the time of this writing, it matches this format: `v0.0.###`.
+2. Click the **Draft a new release** button to start a new release
+3. Click the **Choose a tag** button to display the dropdown of already created tags
+4. In the **Find or create a new tag** text input, enter an incremented version number from last release. 
+As you start typing the format `v0.0...`, the dropdown will show you the latest tags matching that format. Increment the last number by one. For example, if the latest release (noted from Step #2) is `v0.0.436`, enter `v0.0.437` as the tag name.
+5. Once the new label is entered, the dropdown will state:
+    > Create new tag: v0.0.### on publish
+
+    Click on this to field to apply the new tag when this release is published.
+6. Enter the same new tag value in the **Release title** field
+7. To populate the **Describe this release** textarea with a changelog, click the `Generate release notes` button above. This will populate the changelog with the titles of all the merged PRs since last release.
+8. Be sure that the **Set as the latest release** checkbox is checked.
+9. Click the **Publish release** button.
+
+### How Jekyll Displays the Latest Releases
+
+> [!NOTE]
+> These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately. See instructions for [releasing component-library](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#releasing) or **How to Create a New Release for design.va.gov** above.   
+
+1.  **JSON Data Retrieval:**
+    * When Jekyll builds the site, it checks for JSON files (defined in `_config.yml`) in the `json_data_cache/` folder.
+    * If the files do exist, the cached files are used preventing repeated requests to Github.
+    * If the files do not exist, it fetches the latest release notes from GitHub and stores it as JSON in the `json_data_cache/` folder.
+2.  **Data Loading:**
+    * The JSON data is loaded into Jekyll's `data` object upon building the site.
+3.  **"What's New" Page Generation:**
+    * The `whats-new.md` page uses the `_github_markdown_parser.html` include to process the release data from the `data` object and passes that into `json`.
+    * The `num_recent_releases` parameter controls how many of the most recent releases are shown.
+    * Example:
+         ```
+         {% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=3 %}
+         ```
+4.  **String Manipulation:**
+    * The `vads.rb` custom filter applies regular expression transformations to the release notes (`json`), improving readability.
+5.  **Figma Data:**
+    * The Figma changelog frame is simply embedded into the page with an iframe direct from the Figma Component Library. Updates are in real time. 
+
+### How to Update the [What's New](https://design.va.gov/about/whats-new) Page
+
+> [!NOTE]
+> Be sure your local environment is not running before getting the latest updates.
+
+1. Run `yarn run update-releases`. This script deletes the `json_data_cache/` folder and then fetches the latest release data from GitHub, ensuring you have the most current information. It will then continue to build the site normally.
+2. If release data is fetched, you should see this captured in the logs as the site builds: 
+   ```
+   ...
+   Generating... 
+   * Caching https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases in json_data_cache/site_releases.json
+   * Caching https://api.github.com/repos/department-of-veterans-affairs/component-library/releases in json_data_cache/component_library_releases.json
+      Jekyll Feed: Generating feed for posts
+   ...
+   ```
+3. Once Jekyll completes building, navigate to the What's new page in a browser to confirm the latest releases are visible.
+4. Submit a PR with the updated JSON files.
+
+## Release Cadence
+* The component library is released following the conclusion of a sprint, which typically occurs every two weeks (as of this writing).
+* The guidance site, design.va.gov, will align its releases with the component library releases.
+* Currently, the Figma component library does not have scheduled releases. However, a Changelog page within the Figma file is maintained by the Design System designers to reflect updates. Since the guidance site embeds a live view of the changelog page on the "What's New" page, it displays updates in "real time".
+
+
 ## Additional Testing
 
 This project is tested with BrowserStack.
