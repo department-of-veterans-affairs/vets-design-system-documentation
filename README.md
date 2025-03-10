@@ -1,4 +1,53 @@
-# Vets Design System Documentation
+# Veteran Affairs Design System
+The Veteran Affairs Design System (VADS) exists to provide design guidelines and code, enabling teams to rapidly create trustworthy, accessible, and consistent digital services on the VA.gov platform. 
+
+There are currently over 200 active products on VA.gov built by more than 30 product teams. The VADS empowers these teams to move quickly while maintaining predictable and familiar brand identity as they deliver meaningful value to veterans. 
+
+## Table of Contents
+- [OKR alignment](#aligned-to-2025-okrs)
+- [List of Products](#list-of-products)
+- [Our work](#our-work-at-a-glance)
+- [Contact us](#dsva-slack-channel)
+- [Running this repo locally](#to-run-locally)
+- [Adding content](#adding-content-to-the-documentation-site)
+
+## Aligned to 2025 OKRs
+The VADS actively contributes toward the following 2025 OCTO OKRs:
+- **Objective 1: VA's digital experiences are the easiest and most efficient way to access VA health care and benefits.**
+	- OKR 1.1: Improve the satisfaction with our web and mobile products by 5 points.
+  - OKR 1.2: We have reduced the total time Veterans spend waiting for a response from our digital experiences by 50%, towards a goal of less than 4 seconds per transaction.
+- **Objective 2: OCTO's platforms are the fastest, most efficient, and most secure way to deliver products at VA.**
+	- OKR 2.4: Each of our platforms and tools increase the number of non-OCTO built capabilities or non-OCTO users by 50%.
+- **Objective 3: OCTO teammates are empowered with the knowledge and resources they need to make sustained impact.**
+	- OKR 3.3: 75% or more team members are confident they have the knowledge needed to make effective decisions.
+- **Objective 4: OCTO positively influences VA's ability to deliver software products and services faster, safer, and with higher quality.**
+	- 4.1: OCTO has delivered at least 10 impactful artifacts or learning activities (e.g., trainings, guides, COP meetings) focused on improving delivery practices that achieve an NPS score of 30 or higher from the target OIT delivery staff.
+
+## List of Products
+Our team actively maintains the following products:
+- [design.va.gov](design.va.gov) | **OKRs 3.3, 4.1**: design.va.gov is the flagship site for all information surrounding the VADS. From there, developers, designers, content writers, and anyone else interested in learning more about, or using, the design system will find thorough documentation and guidance. 
+- [Web-Components](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components) | **OKRs 1.1, 1.2, 2.4**: The VADS actively maintains a library of web components that application teams can use to build veteran facing products. Web components provide a familiar and intuitive way to rapidly create UIs that maintain consistency and adhere to VADS standards across products. By abstracting away the need for developers and designers to spend time recreating similar patterns over and over again, we increase the ability for teams to provide value to veterans in a shorter span of time. 
+- [CSS-Library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) | **OKRs 1.1, 2.4**: The VADS actively maintains a library of CSS that bootstraps the global UI of VA.gov and removes the need for individual application teams to invest time in maintaining their own stylesheets, thereby reducing technical debt and enabling them to iterate on valuable features at a faster pace. 
+- [Forms-Library](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system) | **OKRs 1.1, 1.2, 2.4:** The forms library allows teams to rapidly build applications that digitize the multitude of Veteran Affairs paper forms. The use of this library leads to an increase in submissions for benefits and provides veterans with a unified and coherent experience across different products available on VA.gov. Additionally, the ability of the forms library to prefill existing veteran information leads to a direct reduction in respondent burden.
+- [Figma Libraries](https://design.va.gov/about/designers/design-libraries) | **OKRs 3.3**: The Figma Libraries for components, pattern, and templates allow designers to quickly create high fidelity mock-ups of an application. This allows teams to rapidly articulate what their application will do and how it will behave.
+
+
+## Our work at a Glance
+- [Web-Components and CSS-Library release notes](https://github.com/department-of-veterans-affairs/component-library/releases) 
+- [Design System Guidance Changelog](https://design.va.gov/about/whats-new)
+- [Roadmap](https://github.com/orgs/department-of-veterans-affairs/projects/768/views/20)
+- [Prioritized experimental requests](https://github.com/orgs/department-of-veterans-affairs/projects/946/views/5)
+- [Sprint planning board](https://github.com/orgs/department-of-veterans-affairs/projects/768/views/31)
+
+## DSVA Slack Channel
+Please reach out to us at our DSVA Slack Channel: #platform-design-system 
+
+## Key Stakeholders
+- Matthew Dingee, VA Product Owner, VA, matthew.dingee@va.gov
+- Carol Wang, Product Manager, Oddball, Carol.Wong@oddball.io
+- Micah Chiang, Tech Lead, Ad Hoc, micah@adhocteam.us
+
+## Veteran Affairs Design System Documentation
 
 This repo is for VA Design System documentation, aka [design.va.gov](https://design.va.gov). If you are looking for the repo that contains the design system components, see the [component-library](https://github.com/department-of-veterans-affairs/component-library). For sitewide VA.gov base styles and utility classes see the [css-library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) package within component-library.
 
