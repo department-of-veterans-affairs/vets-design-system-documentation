@@ -29,8 +29,9 @@ The sub-task pattern provides guidance on how to "keep it simple". This pattern 
 
 All of the use cases below are valid uses for this pattern.
 
-* **Task before a flow.** Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. Use this pattern to guide users down an optimal pathway for their circumstances. This is also known as [branching eligibility choices]({{ site.baseurl }}/patterns/help-users-to/navigate-benefit-applications#f-optional-help-users-to-complete-a-sub-task-pattern-for-branching-eligibility-choices).
-* **Task within a flow.** Use this pattern when we need the user to complete a shorter task, one that can be accomplished with a few questions, within a larger process that may span touchpoints.
+* **Task within a flow.** Sometimes, the eligibility for a VA benefit or resource is so complex that it has multiple access pathways, depending on a user's specific needs or circumstances. Users may experience consequences (e.g. not getting the benefit or limiting benefit options), if they misunderstand eligibility content or choose the wrong pathway. Use this pattern to guide users down an optimal pathway for their circumstances. This is also known as [branching eligibility choices]({{ site.baseurl }}/patterns/help-users-to/navigate-benefit-applications#f-optional-help-users-to-complete-a-sub-task-pattern-for-branching-eligibility-choices).
+* **Task within a larger process.** Use this pattern when we need the user to complete a shorter task, one that can be accomplished with a few questions, within a larger process that may span touchpoints. 
+
 
 ### Design principles
 
@@ -39,6 +40,7 @@ This pattern is an example of the [One thing per page]({{ site.baseurl }}/patter
 ### When not to use this pattern
 
 * **In place of a standard form flow.** This pattern does not replace a standard form flow and layout. This pattern exists within a larger flow or process, not by itself. Thus it would be inappropriate to create a stand-alone form flow that does not have a [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented), [Button pair]({{ site.baseurl }}/components/button/button-pair), and other components found in a typical [form flow]({{ site.baseurl }}/templates/forms/#the-structure-of-a-form).
+* **When eligibility is short and concise.** Do not use this pattern if you can reasonably include information users need to know about their eligibility for a benefit or service and the eligibility requirements on our [Introduction page]({{ site.baseurl }}/templates/forms/introduction). Placing this information in content, rather than in a form, allows the content to be searchable.
 
 ### When to use caution
 
