@@ -190,6 +190,12 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 3. Once Jekyll completes building, navigate to the What's new page in a browser to confirm the latest releases are visible.
 4. Submit a PR with the updated JSON files.
 
+## Release Cadence
+* The component library is released following the conclusion of a sprint, which typically occurs every two weeks (as of this writing).
+* The guidance site, design.va.gov, will align its releases with the component library releases.
+* Currently, the Figma component library does not have scheduled releases. However, a Changelog page within the Figma file is maintained by the Design System designers to reflect updates. Since the guidance site embeds a live view of the changelog page on the "What's New" page, it displays updates in "real time".
+
+
 ## Additional Testing
 
 This project is tested with BrowserStack.
