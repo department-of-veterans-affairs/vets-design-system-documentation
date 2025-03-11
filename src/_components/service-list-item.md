@@ -20,20 +20,20 @@ anchors:
 
 ### With only the required elements (header, status, details)
 
-{% include storybook-preview.html height="550px" story="components-va-service-list-item--minimal-base" link_text="va-service-list minimal base" %}
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--minimal-base" link_text="va-service-list minimal base" %}
 
 ### With the Critical information component
 
-{% include storybook-preview.html height="550px" story="components-va-service-list-item--base-with-critical-information" link_text="va-service-list base with critical information" %}
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--base-with-critical-information" link_text="va-service-list base with critical information" %}
 
 ### With the optional link
 
-{% include storybook-preview.html height="550px" story="components-va-service-list-item--base-with-optional-link" link_text="va-service-list base with optional link" %}
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--base-with-optional-link" link_text="va-service-list base with optional link" %}
 
 
 ### With all possible elements
 
-{% include storybook-preview.html height="550px" story="components-va-service-list-item--maximal-base" link_text="va-service-list maximal base" %}
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--maximal-base" link_text="va-service-list maximal base" %}
 
 ### Terms
 
