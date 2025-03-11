@@ -10,8 +10,6 @@ draft: true
 web-component: va-service-list-item
 anchors:
   - anchor: Examples
-  - anchor: Usage
-  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -19,27 +17,23 @@ anchors:
 ---
 
 ## Examples
-Storybook previews are coming shortly
 
 ### With only the required elements (header, status, details)
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a status tag, and one set of data formatted as a “Label: Value” pair." file="/images/components/service-list-item/service-list-item-minimal.png" class="x2" %}
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--minimal-base" link_text="va-service-list minimal base" %}
 
 ### With the Critical information component
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, and four sets of data formatted as “Label: Value” pairs." file="/images/components/service-list-item/service-list-item-critical-action.png" class="x2" %}
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--base-with-critical-information" link_text="va-service-list base with critical information" %}
 
 ### With the optional link
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a status tag, four sets of data formatted as “Label: Value” pairs, and a link." file="/images/components/service-list-item/service-list-item-link.png" class="x2" %}
-
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--base-with-optional-link" link_text="va-service-list base with optional link" %}
 
 
 ### With all possible elements
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as “Label: Value” pairs, and a link." file="/images/components/service-list-item/service-list-item-all-info.png" class="x2" %}
-
-## Usage
+{% include storybook-preview.html height="400px" story="components-va-service-list-item--maximal-base" link_text="va-service-list maximal base" %}
 
 ### Terms
 
@@ -92,9 +86,6 @@ The link should use the standard default, hover, focus, active, and visited link
 
 {% include component-example.html alt="A table of headers for the Service list item. There are two columns, one for mobile and one for desktop. The five rows show each of the states described above: default, hover, focus, active and visited." file="/images/components/service-list-item/annotated-service-list-item-header-states.png" %}
 
-## Code usage
-
-(Coming soon)
 
 ## Content considerations
 Teams used the Card component before this component existed. When evaluating if your team needs to use Service list items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the [Usage](#usage) section.
