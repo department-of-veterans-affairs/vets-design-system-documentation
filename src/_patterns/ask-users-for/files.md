@@ -89,7 +89,7 @@ When a user triggers an action to remove or delete an upload file a modal confir
 
 #### Error
 
-{% include storybook-preview.html story="components-va-file-input--error-message#error-message" link_text="va-file-input--error-message" %}
+{% include storybook-preview.html story="uswds-va-file-input--error-message#error-message" link_text="va-file-input--error-message" %}
 
 * **Help prevent error states by listing the types and sizes of files allowed _above_ the File input component.** The allowed file types depend on the form, though most forms accept pdf, jpg, jpeg, and png.
 * **Validate file uploads and provide actionable error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
