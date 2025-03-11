@@ -28,12 +28,12 @@ anchors:
 
 ### With the optional link
 
-{% include storybook-preview.html height="550px" story="components-va-service-list-item--base-with-critical-information" link_text="va-service-list base with optional link" %}
+{% include storybook-preview.html height="550px" story="components-va-service-list-item--base-with-optional-link" link_text="va-service-list base with optional link" %}
 
 
 ### With all possible elements
 
-{% include storybook-preview.html height="550px" story="components-va-service-list-item--base-with-critical-information" link_text="va-service-list maximal base" %}
+{% include storybook-preview.html height="550px" story="components-va-service-list-item--maximal-base" link_text="va-service-list maximal base" %}
 
 ### Terms
 
