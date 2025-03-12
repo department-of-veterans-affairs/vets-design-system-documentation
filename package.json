@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "yarn run build && bundle exec jekyll serve --baseurl ''",
-    "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental"
+    "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental",
+    "update-releases": "rm -rf json_data_cache && yarn run build && bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
   },
   "homepage": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation#readme",
   "devDependencies": {
-    "@department-of-veterans-affairs/component-library": "^48.3.0",
+    "@department-of-veterans-affairs/component-library": "^49.3.0",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-rename": "^2.0.0",
@@ -37,7 +38,7 @@
   },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^11.0.12",
-    "@department-of-veterans-affairs/css-library": "^0.15.0"
+    "@department-of-veterans-affairs/css-library": "^0.19.0"
   },
   "engines": {
     "npm": "6.14.8"

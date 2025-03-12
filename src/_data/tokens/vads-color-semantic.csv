@@ -1,7 +1,9 @@
 ﻿Name,type,vads-name,uswds-design-token,final-hex-value,vads-alias,description
 vads-color-action-border-base-active-on-dark,Semantic,vads-color-action-border-base-active-on-dark,uswds-system-color-gray-30,#adadad,,Used for button on mobile app in base style in dark mode
 vads-color-action-border-base-active-on-light,Semantic,vads-color-action-border-base-active-on-light,uswds-system-color-gray-80,#2e2e2e,,Used for button on mobile app in base style
-vads-color-action-focus-on-light,Semantic,vads-color-action-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus outline color
+vads-color-action-background-focus-on-light,Semantic,vads-color-action-background-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus background color
+vads-color-action-border-focus-on-light,Semantic,vads-color-action-border-focus-on-light,uswds-system-color-gray-90,#1b1b1b,,Focus border color
+vads-color-action-text-focus-on-light,Semantic,vads-color-action-text-focus-on-light,uswds-system-color-gray-90,#1b1b1b,,Focus text color
 vads-color-action-surface-default-on-dark,Semantic,vads-color-action-surface-default-on-dark,uswds-system-color-blue-30v,#58b4ff,,Used for button on mobile app in dark mode
 vads-color-action-surface-destructive-on-dark,Semantic,vads-color-action-surface-destructive-on-dark,uswds-system-color-red-vivid-40,#fb5a47,,Used for button on mobile app in dark mode
 vads-color-background-default-on-dark,Semantic,vads-color-background-default-on-dark,uswds-system-color-gray-warm-90,#171716,,Used for app background on mobile app in dark mode
@@ -20,6 +22,10 @@ vads-color-error-darker,Semantic,vads-color-error-darker,uswds-system-color-red-
 vads-color-error-light,Semantic,vads-color-error-light,uswds-system-color-red-warm-30v,#f39268,,$theme-color-error-light from USWDS
 vads-color-error-lighter,Semantic,vads-color-error-lighter,uswds-system-color-red-warm-10,#f4e3db,,$theme-color-error-lighter from USWDS
 vads-color-feedback-border-warning-on-dark,Semantic,vads-color-feedback-border-warning-on-dark,uswds-system-color-yellow-20v,#face00,,Used for warning alert border on mobile app in dark mode
+vads-color-feedback-foreground-success-on-dark,Semantic,vads-color-feedback-foreground-success-on-dark,uswds-system-color-green-cool-vivid-30,#21c834,,Used for success alert foreground on mobile app in dark mode
+vads-color-feedback-foreground-success-on-light,Semantic,vads-color-feedback-foreground-success-on-light,uswds-system-color-green-cool-vivid-50,#008817,,Used for success alert foreground on mobile app in light mode
+vads-color-feedback-foreground-warning-on-dark,Semantic,vads-color-feedback-foreground-warning-on-dark,uswds-system-color-green-cool-vivid-50,#e5a000,,Used for warning alert foreground on mobile app in dark mode
+vads-color-feedback-foreground-warning-on-light,Semantic,vads-color-feedback-foreground-warning-on-light,uswds-system-color-gold-vivid-40,#c2850c,,Used for warning alert foreground on mobile app in light mode
 vads-color-feedback-surface-error-on-dark,Semantic,vads-color-feedback-surface-error-on-dark,uswds-system-color-red-vivid-80,#5c1111,,Used for error alert background on mobile app in dark mode
 vads-color-feedback-surface-info-on-dark,Semantic,vads-color-feedback-surface-info-on-dark,uswds-system-color-blue-vivid-80,#112f4e,,Used for alert background on mobile app in dark mode
 vads-color-feedback-surface-success-on-dark,Semantic,vads-color-feedback-surface-success-on-dark,uswds-system-color-green-cool-80v,#19311e,,Used for success alert background on mobile app in dark mode
