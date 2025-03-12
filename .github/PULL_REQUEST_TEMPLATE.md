@@ -12,14 +12,10 @@
 -->
 
 ## Summary
-<!--
-  Provide a brief summary of what this PR does, if the title doesn't fully explain it.
--->
+_Provide a brief summary of what this PR does, if the title doesn't fully explain it._
 
 ## Related Issue
-<!-- 
-  If this PR resolves an open issue, please add the issue number here.
--->
+_If this PR resolves an open issue, please add the issue number here._
 
 Closes #[Issue_number]
 
@@ -34,7 +30,7 @@ Closes #[Issue_number]
 
   `https://dev-design.va.gov/[This_PR_number]`
 
-  After a minute or so after committing, you will see an entry in the GitHub timeline similar to this:
+  A minute or two after committing, you will see an entry in the GitHub timeline similar to this:
    
   > [Your Username] deployed to development [X time] ago - with Github Actions [View Deployment]
  
