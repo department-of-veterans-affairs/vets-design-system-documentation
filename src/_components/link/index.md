@@ -13,6 +13,7 @@ sub-pages:
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Behavior
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -22,37 +23,73 @@ anchors:
 
 ## Examples
 
-### Default
+### Web
+
+#### Default
 
 {% include storybook-preview.html story="components-va-link--default" link_text="va-link" height="75px" %}
 
-### Back
+#### Back
 
 {% include storybook-preview.html story="components-va-link--back" link_text="back va-link" height="50px" %}
 
-### Active
+#### Active
 
 {% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="50px" %}
 
-### Calendar
+#### Calendar
 
 {% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="50px" %}
 
-### Channel
+#### Channel
 
 {% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="50px" %}
 
-### Download
+#### Download
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
 
-### External
+#### External
 
 {% include storybook-preview.html story="components-va-link--external" link_text="external va-link" height="50px" %}
 
-### Video
+#### Video
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
+
+### Mobile
+
+### Default
+
+{% include storybook-preview.html height="70px" story="link--default" link_text="va-mobile__link--default" is_mobile=true %}
+
+### Attachment
+
+{% include storybook-preview.html height="70px" story="link--attachment" link_text="va-mobile__link--attachment" is_mobile=true %}
+
+### Calendar
+
+{% include storybook-preview.html height="70px" story="link--calendar" link_text="va-mobile__link--calendar" is_mobile=true %}
+
+### Directions
+
+{% include storybook-preview.html height="70px" story="link--directions" link_text="va-mobile__link--directions" is_mobile=true %}
+
+### External link
+
+{% include storybook-preview.html height="70px" story="link--external" link_text="va-mobile__link--external" is_mobile=true %}
+
+### Phone
+
+{% include storybook-preview.html height="70px" story="link--phone" link_text="va-mobile__link--phone" is_mobile=true %}
+
+### Phone TTY
+
+{% include storybook-preview.html height="70px" story="link--phone-tty" link_text="va-mobile__link--phone-tty" is_mobile=true %}
+
+### Text (SMS)
+
+{% include storybook-preview.html height="70px" story="link--text" link_text="va-mobile__link--text" is_mobile=true %}
 
 ## Usage
 
@@ -105,18 +142,35 @@ anchors:
 
 If for some reason you do not use a link web-component links must meet the following criteria:
 
-- All links use Source Sans Pro (Regular), underlined, at 16px.
-- All links share the same color (`$color-link-default` `#004795`) for icon, link text, and underline. 
+- All links use Source Sans Pro (Regular), underlined, at [vads-font-size-source-sans-normalized]({{ site.baseurl }}/foundation/typography#typography-tokens).
+- All links share the same color, [vads-color-link]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens) for icon, link text, and underline. On mobile, dark mode changes the link color to [vads-color-link-on-dark]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens). 
 - All text links should be underlined. This is especially important for low-vision users. (Exception: [side navigation links]({{ site.baseurl }}/components/sidenav) should not be underlined.)
 
-### Behavior
+## Behavior
 
+### Web
 * **Open all links in the same window except in certain instances.** Links on VA.gov should open in a new tab only if clicking the link will result in the user losing progress or data. This scenario should be avoided when possible. In all other instances, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide for additional information.
-- **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
+* **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
 
 ### Choosing between variations
 
 Review "[Usage](#usage)" for guidance.
+
+### Mobile
+
+* Link opens in the app:
+  * In a full panel if the content is within the app.
+  * In a webview if the content is not within the app and the user does not need a separate sign in to access the content.
+* Link opens another app:
+  * In the [browser app](#external-link) if the user needs to sign in to access the content. Before leaving the app, always use a native alert to warn the user. Once confirmed, open the default browser app.
+  * If the user is taking an action such as making a phone call, getting directions, or downloading a file. Before leaving the app, consider using a confirmation message (such as a native alert or action sheet) to warn the user. These variants were created to include the onPress logic for app teams. This allows the component to always display a native confirmation message when needed.
+    * **[Attachment](#attachment)**: Display the attachment in the app with the ability to download to their device.
+    * **[Calendar](#calendar-1)**: Display the event information to allow the user to review and confirm before adding to their calendar. Once confirmed, add to the default calendar app.
+    * **[Directions](#directions)**: Display an Action Sheet to allow the user to select their preferred maps app (Apple Maps, Google Maps, etc.). Once selected, open the maps app with their destination.
+    * **[Phone](#phone)**: Display an Action Sheet to allow the user to confirm the phone call. Once confirmed, open the default phone app.
+    * **[Phone TTY](#phone-tty)**: Display an Action Sheet to allow user to confirm the TTY call. Once confirmed, open the default phone app.
+    * **[Text (SMS)](#text-sms)**: Open the default messages app.
+* Currently, the Link component does not support inline links. In the future, a Paragraph component will be created for inline links to support proper text wrapping and accessibility in React Native.
 
 ## Content considerations
 
@@ -124,15 +178,15 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 
 ## Accessibility considerations
 
-- **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
-- **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
-- **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
-- **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
+* **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
+* **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
+* **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
+* **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
   - By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
 
 {% include content/links-vs-buttons.md %}
 
 ## Related 
 
-- [Button]({{ site.baseurl }}/components/button)
-- [On this page]({{ site.baseurl }}/components/on-this-page)
+* [Button]({{ site.baseurl }}/components/button)
+* [On this page]({{ site.baseurl }}/components/on-this-page)
