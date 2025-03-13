@@ -44,7 +44,7 @@ Please reach out to us at our DSVA Slack Channel: #platform-design-system
 
 ## Key Stakeholders
 - Matthew Dingee, VA Product Owner, VA, matthew.dingee@va.gov
-- Carol Wang, Product Manager, Oddball, Carol.Wong@oddball.io
+- Carol Wong, Product Manager, Oddball, carol.wong@oddball.io
 - Micah Chiang, Tech Lead, Ad Hoc, micah@adhocteam.us
 
 ## Veteran Affairs Design System Documentation
