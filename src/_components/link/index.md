@@ -149,8 +149,9 @@ If for some reason you do not use a link web-component links must meet the follo
 ## Behavior
 
 ### Web
-* **Open all links in the same window except in certain instances.** Links on VA.gov should open in a new tab only if clicking the link will result in the user losing progress or data. This scenario should be avoided when possible. In all other instances, links should open in the same window. See [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide for additional information.
-* **Use semantically appropriate encodings.** Encode email and phone links with `mailto:` and `tel:`, respectively.
+
+* **Open links in the same window, with exceptions.** Links on VA.gov should open in a new tab only if clicking the link will cause the user to lose progress or data. This should be avoided when possible. In all other cases, links should open in the same window. For more details, see [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide.
+* **Use appropriate encodings for email and phone links.** Use mailto: for email links and tel: for phone links.
 
 ### Choosing between variations
 
@@ -158,19 +159,19 @@ Review "[Usage](#usage)" for guidance.
 
 ### Mobile
 
-* Link opens in the app:
+* **Link opens within the app:**
   * In a full panel if the content is within the app.
-  * In a webview if the content is not within the app and the user does not need a separate sign in to access the content.
-* Link opens another app:
-  * In the [browser app](#external-link) if the user needs to sign in to access the content. Before leaving the app, always use a native alert to warn the user. Once confirmed, open the default browser app.
-  * If the user is taking an action such as making a phone call, getting directions, or downloading a file. Before leaving the app, consider using a confirmation message (such as a native alert or action sheet) to warn the user. These variants were created to include the onPress logic for app teams. This allows the component to always display a native confirmation message when needed.
+  * In a webview if the content is not within the app and does not require a separate sign-in.
+* **Link opens another app:**
+  * In the [browser app](#external-link) if the user needs to sign in to access the content. Always use a native alert to warn the user before leaving the app. Once confirmed, open the default browser app.
+  * If the user is performing an action such as making a phone call, getting directions, or downloading a file. Consider using a confirmation message (like a native alert or action sheet) to warn the user before leaving the app. These variants include the onPress logic for app teams, ensuring a native confirmation message is displayed when needed.
     * **[Attachment](#attachment)**: Display the attachment in the app with the ability to download to their device.
     * **[Calendar](#calendar-1)**: Display the event information to allow the user to review and confirm before adding to their calendar. Once confirmed, add to the default calendar app.
-    * **[Directions](#directions)**: Display an Action Sheet to allow the user to select their preferred maps app (Apple Maps, Google Maps, etc.). Once selected, open the maps app with their destination.
+    * **[Directions](#directions)**: Display an Action Sheet to allow the user to select their preferred maps app (Apple Maps, Google Maps, etc.). Once selected, open the maps app with the destination.
     * **[Phone](#phone)**: Display an Action Sheet to allow the user to confirm the phone call. Once confirmed, open the default phone app.
     * **[Phone TTY](#phone-tty)**: Display an Action Sheet to allow user to confirm the TTY call. Once confirmed, open the default phone app.
     * **[Text (SMS)](#text-sms)**: Open the default messages app.
-* Currently, the Link component does not support inline links. In the future, a Paragraph component will be created for inline links to support proper text wrapping and accessibility in React Native.
+* **NOTE:** The Link component currently does not support inline links. A Paragraph component will be created in the future to support inline links, ensuring proper text wrapping and accessibility in React Native.
 
 ## Content considerations
 
