@@ -73,10 +73,6 @@ For collections of links, the [Law of Proximity](https://lawsofux.com/law-of-pro
 
 Collections of links, given their close proximity, will be perceived to share similar traits or properties. Also, proximity helps users to understand and organize the information faster and more efficiently. 
 
-### Instances of this component in production
-
-Our [examples](#examples) are all from production. Once these link styles are converted into web-components we will swap the examples out for code examples and move the current examples to this section.
-
 ## Content considerations
 
 * Refer to the [usage](#usage) section as well as the [content style guide for links]({{ site.baseurl }}/content-style-guide/links).
