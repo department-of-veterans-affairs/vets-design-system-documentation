@@ -45,6 +45,7 @@ anchors:
 
 * **User feedback.** Use the [Alert]({{ site.baseurl }}/components/alert) component when responding to an action taken by a user such as submitting a form.
 * **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
+* **Showing an error.** Errors should never be hidden. They should only appear as a result of a user action, and always be visible to the user. The error text should be brief and clear, eliminating the need for it to be collapsed. Consider using a standard or slim variation of [Alert]({{ site.baseurl }}/components/alert) if there is an error.
 
 ### Behavior
 

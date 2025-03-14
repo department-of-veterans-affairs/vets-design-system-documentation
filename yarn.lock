@@ -3,28 +3,28 @@
 
 
 "@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.12.13", "@babel/runtime@^7.17.2", "@babel/runtime@^7.19.0":
-  version "7.23.9"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.9.tgz#47791a15e4603bb5f905bc0753801cf21d6345f7"
-  integrity sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.26.10.tgz#a07b4d8fa27af131a633d7b3524db803eb4764c2"
+  integrity sha512-2WJMeRQPHKSPemqk/awGrAiuFfzBmOIPXKizAsVhWH9YJqLZ0H+HS4c8loHGgW6utJ3E/ejXQUsiGaQy2NZ9Fw==
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@department-of-veterans-affairs/component-library@^49.3.0":
-  version "49.3.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-49.3.0.tgz#06377bd81d1161e9b56efef627f0ab6735528dd7"
-  integrity sha512-dLWAV/PT0IhxTQ7bTWvKdMvmh4KhaMpIWJvfSb27jKDh41/tMFRy1wn3upBLlY1tmnc3EfG9fM3ddk2b1us7ug==
+"@department-of-veterans-affairs/component-library@^49.4.1":
+  version "49.4.1"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-49.4.1.tgz#24db9be6818d339897a2c3aeddd14230ffd4a758"
+  integrity sha512-QiljFnjYBKtSKPvL4+ekGo3z1VBbPZaRESqUWAUavvUfZzLLN9j1nShTB9T1dYzieMuXOUaY6ebAXE315RDbRw==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.1.0"
-    "@department-of-veterans-affairs/web-components" "17.3.0"
+    "@department-of-veterans-affairs/web-components" "17.4.1"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
     react-transition-group "^1.0.0"
 
-"@department-of-veterans-affairs/css-library@^0.19.1-rc2":
-  version "0.19.1-rc2"
-  resolved "http://localhost:4873/@department-of-veterans-affairs%2fcss-library/-/css-library-0.19.1-rc2.tgz#52b506f12cdf558536c624a49c418bad390cdf10"
-  integrity sha512-KRVQlRONUcpVJCXhVhUt8s2MiqdEEzvos6uK7n0iu8kv5x4I09LOKtCJpGUn2RzdPOh6QP/I897ZfAQvu8+u8Q==
+"@department-of-veterans-affairs/css-library@^0.20.0":
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/css-library/-/css-library-0.20.0.tgz#56e5721e57f85b69ffa53c9cba7de2f9cbfe1bfa"
+  integrity sha512-zWs6LCOTIWGZFp3O0KX0diENkFw7Fvfa8a9dtjtLgAvU6L17RXobb2tDdzLR6y0g0O72ouQ6QGcVnyE3dgx9cA==
   dependencies:
     "@divriots/style-dictionary-to-figma" "^0.4.0"
     "@uswds/uswds" "^3.9.0"
@@ -51,10 +51,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@17.3.0":
-  version "17.3.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-17.3.0.tgz#dd30e26c1c1585c49f2e184964611bbed0a9dd99"
-  integrity sha512-z7DkqwsjoNNtXzdQYLOf+79Un75uXOxnjgA7obS4c4mWPDVIkHyU1hf24PxB7BGxdNrKf2gJq0eSgCk+Lx9dhg==
+"@department-of-veterans-affairs/web-components@17.4.1":
+  version "17.4.1"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-17.4.1.tgz#6a8757e2da7f232e98038ca965b0b466fc414ef1"
+  integrity sha512-iIiLLmhaa34QhfKuDjjLbdzbeGnNDgZAdz9fXiYz56Q1jHczx+q+1Y469qAggCy72kLltjiJTDRsza8qn8hjjw==
   dependencies:
     "@stencil/core" "4.20.0"
     aria-hidden "^1.1.3"
@@ -94,26 +94,6 @@
   version "4.20.0"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-4.20.0.tgz#221f2b36ab999891560449b02d6915862c435f49"
   integrity sha512-WPrTHFngvN081RY+dJPneKQLwnOFD60OMCOQGmmSHfCW0f4ujPMzzhwWU1gcSwXPWXz5O+8cBiiCaxAbJU7kAg==
-
-"@types/expect@^1.20.4":
-  version "1.20.4"
-  resolved "https://registry.yarnpkg.com/@types/expect/-/expect-1.20.4.tgz#8288e51737bf7e3ab5d7c77bfa695883745264e5"
-  integrity sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg==
-
-"@types/node@*":
-  version "22.13.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.5.tgz#23add1d71acddab2c6a4d31db89c0f98d330b511"
-  integrity sha512-+lTU0PxZXn0Dr1NBtC7Y8cR21AJr87dLLU953CWA6pMxxv/UDc7jYAY90upcrie1nRcD6XNG5HOYEDtgW5TxAg==
-  dependencies:
-    undici-types "~6.20.0"
-
-"@types/vinyl@^2.0.4":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@types/vinyl/-/vinyl-2.0.12.tgz#17642ca9a8ae10f3db018e9f885da4188db4c6e6"
-  integrity sha512-Sr2fYMBUVGYq8kj3UthXFAu5UN6ZW+rYr4NACjZQJvHvj+c8lYv0CahmZ2P/r7iUkN44gGUBwqxZkrKXYPb7cw==
-  dependencies:
-    "@types/expect" "^1.20.4"
-    "@types/node" "*"
 
 "@uswds/uswds@^3.9.0":
   version "3.10.0"
@@ -377,11 +357,6 @@ binary-extensions@^1.0.0:
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.13.1.tgz#598afe54755b2868a5330d2aff9d4ebb53209b65"
   integrity sha512-Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==
-
-binaryextensions@^2.2.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/binaryextensions/-/binaryextensions-2.3.0.tgz#1d269cbf7e6243ea886aa41453c3651ccbe13c22"
-  integrity sha512-nAihlQsYGyc5Bwq6+EsubvANYGExeJKHDO3RjnvwU042fawQTQfM3Kxn7IHUXQOz4bzfwsGYYHGSvXyW4zOGLg==
 
 bindings@^1.5.0:
   version "1.5.0"
@@ -1266,17 +1241,6 @@ gulp-rename@^2.0.0:
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-2.0.0.tgz#9bbc3962b0c0f52fc67cd5eaff6c223ec5b9cf6c"
   integrity sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
 
-gulp-replace@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/gulp-replace/-/gulp-replace-1.1.4.tgz#06a0e9ee36f30e343c1e0a2dd760ec32c8a3d3b2"
-  integrity sha512-SVSF7ikuWKhpAW4l4wapAqPPSToJoiNKsbDoUnRrSgwZHH7lH8pbPeQj1aOVYQrbZKhfSVBxVW+Py7vtulRktw==
-  dependencies:
-    "@types/node" "*"
-    "@types/vinyl" "^2.0.4"
-    istextorbinary "^3.0.0"
-    replacestream "^4.0.3"
-    yargs-parser ">=5.0.0-security.0"
-
 gulp-string-replace@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/gulp-string-replace/-/gulp-string-replace-1.1.2.tgz#26e646ae1201954d07cce9172ed25efbcd01d171"
@@ -1621,14 +1585,6 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==
-
-istextorbinary@^3.0.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/istextorbinary/-/istextorbinary-3.3.0.tgz#06b1c57d948da11461bd237c00ce09e9902964f2"
-  integrity sha512-Tvq1W6NAcZeJ8op+Hq7tdZ434rqnMx4CCZ7H0ff83uEloDvVbqAwaMTZcafKGJT0VHkYzuXUiCY4hlXQg6WfoQ==
-  dependencies:
-    binaryextensions "^2.2.0"
-    textextensions "^3.2.0"
 
 jackspeak@^2.3.6:
   version "2.3.6"
@@ -2781,11 +2737,6 @@ tar@>=6.2.1:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-textextensions@^3.2.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/textextensions/-/textextensions-3.3.0.tgz#03530d5287b86773c08b77458589148870cc71d3"
-  integrity sha512-mk82dS8eRABNbeVJrEiN5/UMSCliINAuz8mkUwH4SwslkNP//gbEzlWNS5au0z5Dpx40SQxzqZevZkn+WYJ9Dw==
-
 through2-filter@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/through2-filter/-/through2-filter-3.0.0.tgz#700e786df2367c2c88cd8aa5be4cf9c1e7831254"
@@ -2892,11 +2843,6 @@ undertaker@^1.2.1:
     object.defaults "^1.0.0"
     object.reduce "^1.0.0"
     undertaker-registry "^1.0.0"
-
-undici-types@~6.20.0:
-  version "6.20.0"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.20.0.tgz#8171bf22c1f588d1554d55bf204bc624af388433"
-  integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
 union-value@^1.0.0:
   version "1.0.1"
@@ -3098,11 +3044,6 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
-
-yargs-parser@>=5.0.0-security.0:
-  version "21.1.1"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
-  integrity sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==
 
 yargs-parser@^5.0.1:
   version "5.0.1"
