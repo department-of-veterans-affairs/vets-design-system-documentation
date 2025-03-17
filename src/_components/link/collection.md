@@ -14,6 +14,22 @@ anchors:
   - anchor: Accessibility considerations
 ---
 
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+  uswds
+>
+  <h2 slot="headline">
+    This component is not officially supported
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      This component has not yet been built as a component in the Design System. Thus the Design System Team does not officially recognize nor support this component. Guidance and design assets are provided as is.
+    </p>
+  </div>
+</va-alert>
+
 ## Examples
 
 ### Related links
