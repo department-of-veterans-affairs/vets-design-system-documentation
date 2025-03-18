@@ -1,0 +1,137 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.no-text-transform {
+  text-transform: none;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.va-button-link {
+  background: none;
+  background-color: transparent !important;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  padding: 0 !important;
+  margin: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  color: #005ea2 !important;
+  font-weight: normal;
+  text-decoration: underline;
+  display: inline;
+  width: auto !important;
+  line-height: inherit;
+}
+.va-button-link:hover {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  padding: 0 !important;
+  color: #005ea2;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+}
+.va-button-link:active {
+  background: rgba(0, 0, 0, 0.05);
+}
+.va-button-link:focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+  outline-offset: 0;
+}
+.va-button-link:disabled {
+  text-decoration: none;
+  color: #aeb0b5 !important;
+}
+
+.dashed-underline {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.dashed-underline:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.js-visual {
+  visibility: hidden !important;
+}
+
+.js-hide {
+  display: none !important;
+}
+
+.heading-level-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.heading-level-2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.heading-level-3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.heading-level-4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+.heading-level-5 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+.heading-level-6 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+/*# sourceMappingURL=utils.css.map */

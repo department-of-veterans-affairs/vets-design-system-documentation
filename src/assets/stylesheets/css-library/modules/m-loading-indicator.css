@@ -1,0 +1,45 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.loading-indicator-container {
+  text-align: center;
+}
+.loading-indicator-container .loading-indicator {
+  display: block;
+  height: 4rem;
+  margin-top: 1rem;
+}
+.loading-indicator-container .loading-indicator:after {
+  content: " ";
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 1px;
+  border-radius: 50%;
+  border: 8px solid #005ea2;
+  border-color: #005ea2 transparent #005ea2 transparent;
+  animation: spin 1.2s linear infinite;
+}
+.loading-indicator-container .loading-indicator:focus {
+  outline: none;
+}
+
+.async-loader {
+  padding-bottom: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=m-loading-indicator.css.map */

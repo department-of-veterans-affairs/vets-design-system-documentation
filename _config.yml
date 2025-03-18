@@ -49,9 +49,8 @@ plugins:
 source: src
 
 sass:
-  sass_dir: assets/stylesheets/
   style: compressed
-  implementation: sass-embedded
+  importers: [new sass.NodePackageImporter()]
 
 # Collections
 collections:

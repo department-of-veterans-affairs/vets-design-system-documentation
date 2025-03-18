@@ -23,7 +23,7 @@
 
 .site-showcase__heading {
   font-size: 1.25rem;
-  font-family: $font-sans;
+  font-family: var(--font-family-sans);
   margin-top: 0;
 
   @include media($medium-screen) {
@@ -65,10 +65,10 @@
 
 .site-utility-scope__button--supported,
 .site-utility-scope__button--supported:visited {
-  border-color: $color-green-lighter;
+  border-color: var(--vads-color-green-lighter);
 
   .fas {
-    color: $color-green;
+    color: var(----vads-color-success-dark);
   }
 }
 
@@ -100,7 +100,7 @@
 }
 
 .site-square-outer {
-  background: $color-secondary-light;
+  background: var(--vads-color-secondary-light);
   display: flex;
 }
 
@@ -159,7 +159,7 @@
 
 .site-showcase__padding-example__outer {
   border: 1px solid $color-base;
-  background: $color-primary-alt-light;
+  background: var(--vads-color-primary-alt-light);
   display: inline-block;
   width: 160px;
   height: 160px;
@@ -202,7 +202,7 @@
 }
 
 .site-aspect-ratio {
-   background-color: $color-primary-alt-light;
+   background-color: var(--vads-color-primary-alt-light);
    position: relative;
    width: 100%;
 }

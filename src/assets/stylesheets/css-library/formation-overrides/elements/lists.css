@@ -1,0 +1,57 @@
+/*
+  Original: @import "~uswds/src/stylesheets/elements/labels";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/elements/labels";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+ul,
+ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1.94em;
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+.usa-unstyled-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.usa-unstyled-list > li {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=lists.css.map */

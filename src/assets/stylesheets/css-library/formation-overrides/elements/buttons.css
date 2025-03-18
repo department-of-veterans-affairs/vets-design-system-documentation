@@ -1,0 +1,562 @@
+/*
+  Original: @import "~uswds/src/stylesheets/elements/buttons";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+.usa-button,
+.usa-button-primary,
+.usa-button:visited,
+.usa-button-primary:visited,
+button,
+[type=button],
+[type=submit],
+[type=reset],
+[type=image] {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  appearance: none;
+  background-color: #005ea2;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+@media screen and (min-width: 481px) {
+  .usa-button,
+  .usa-button-primary,
+  .usa-button:visited,
+  .usa-button-primary:visited,
+  button,
+  [type=button],
+  [type=submit],
+  [type=reset],
+  [type=image] {
+    width: auto;
+  }
+}
+.usa-button:hover, .usa-button.usa-button-hover,
+.usa-button-primary:hover,
+.usa-button-primary.usa-button-hover,
+.usa-button:visited:hover,
+.usa-button:visited.usa-button-hover,
+.usa-button-primary:visited:hover,
+.usa-button-primary:visited.usa-button-hover,
+button:hover,
+button.usa-button-hover,
+[type=button]:hover,
+[type=button].usa-button-hover,
+[type=submit]:hover,
+[type=submit].usa-button-hover,
+[type=reset]:hover,
+[type=reset].usa-button-hover,
+[type=image]:hover,
+[type=image].usa-button-hover {
+  background-color: #1a4480;
+  border-bottom: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+.usa-button:active, .usa-button.usa-button-active,
+.usa-button-primary:active,
+.usa-button-primary.usa-button-active,
+.usa-button:visited:active,
+.usa-button:visited.usa-button-active,
+.usa-button-primary:visited:active,
+.usa-button-primary:visited.usa-button-active,
+button:active,
+button.usa-button-active,
+[type=button]:active,
+[type=button].usa-button-active,
+[type=submit]:active,
+[type=submit].usa-button-active,
+[type=reset]:active,
+[type=reset].usa-button-active,
+[type=image]:active,
+[type=image].usa-button-active {
+  background-color: #162e51;
+}
+.usa-button.usa-button-primary-alt,
+.usa-button-primary.usa-button-primary-alt,
+.usa-button:visited.usa-button-primary-alt,
+.usa-button-primary:visited.usa-button-primary-alt,
+button.usa-button-primary-alt,
+[type=button].usa-button-primary-alt,
+[type=submit].usa-button-primary-alt,
+[type=reset].usa-button-primary-alt,
+[type=image].usa-button-primary-alt {
+  background-color: #02bfe7;
+  color: #212121;
+}
+.usa-button.usa-button-primary-alt:hover, .usa-button.usa-button-primary-alt.usa-button-hover,
+.usa-button-primary.usa-button-primary-alt:hover,
+.usa-button-primary.usa-button-primary-alt.usa-button-hover,
+.usa-button:visited.usa-button-primary-alt:hover,
+.usa-button:visited.usa-button-primary-alt.usa-button-hover,
+.usa-button-primary:visited.usa-button-primary-alt:hover,
+.usa-button-primary:visited.usa-button-primary-alt.usa-button-hover,
+button.usa-button-primary-alt:hover,
+button.usa-button-primary-alt.usa-button-hover,
+[type=button].usa-button-primary-alt:hover,
+[type=button].usa-button-primary-alt.usa-button-hover,
+[type=submit].usa-button-primary-alt:hover,
+[type=submit].usa-button-primary-alt.usa-button-hover,
+[type=reset].usa-button-primary-alt:hover,
+[type=reset].usa-button-primary-alt.usa-button-hover,
+[type=image].usa-button-primary-alt:hover,
+[type=image].usa-button-primary-alt.usa-button-hover {
+  background-color: #00a6d2;
+}
+.usa-button.usa-button-primary-alt:active, .usa-button.usa-button-primary-alt.usa-button-active,
+.usa-button-primary.usa-button-primary-alt:active,
+.usa-button-primary.usa-button-primary-alt.usa-button-active,
+.usa-button:visited.usa-button-primary-alt:active,
+.usa-button:visited.usa-button-primary-alt.usa-button-active,
+.usa-button-primary:visited.usa-button-primary-alt:active,
+.usa-button-primary:visited.usa-button-primary-alt.usa-button-active,
+button.usa-button-primary-alt:active,
+button.usa-button-primary-alt.usa-button-active,
+[type=button].usa-button-primary-alt:active,
+[type=button].usa-button-primary-alt.usa-button-active,
+[type=submit].usa-button-primary-alt:active,
+[type=submit].usa-button-primary-alt.usa-button-active,
+[type=reset].usa-button-primary-alt:active,
+[type=reset].usa-button-primary-alt.usa-button-active,
+[type=image].usa-button-primary-alt:active,
+[type=image].usa-button-primary-alt.usa-button-active {
+  background-color: #046b99;
+  color: #ffffff;
+}
+.usa-button.usa-button-secondary,
+.usa-button-primary.usa-button-secondary,
+.usa-button:visited.usa-button-secondary,
+.usa-button-primary:visited.usa-button-secondary,
+button.usa-button-secondary,
+[type=button].usa-button-secondary,
+[type=submit].usa-button-secondary,
+[type=reset].usa-button-secondary,
+[type=image].usa-button-secondary {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #005ea2;
+  color: #005ea2;
+}
+.usa-button.usa-button-secondary:hover, .usa-button.usa-button-secondary.usa-button-hover,
+.usa-button-primary.usa-button-secondary:hover,
+.usa-button-primary.usa-button-secondary.usa-button-hover,
+.usa-button:visited.usa-button-secondary:hover,
+.usa-button:visited.usa-button-secondary.usa-button-hover,
+.usa-button-primary:visited.usa-button-secondary:hover,
+.usa-button-primary:visited.usa-button-secondary.usa-button-hover,
+button.usa-button-secondary:hover,
+button.usa-button-secondary.usa-button-hover,
+[type=button].usa-button-secondary:hover,
+[type=button].usa-button-secondary.usa-button-hover,
+[type=submit].usa-button-secondary:hover,
+[type=submit].usa-button-secondary.usa-button-hover,
+[type=reset].usa-button-secondary:hover,
+[type=reset].usa-button-secondary.usa-button-hover,
+[type=image].usa-button-secondary:hover,
+[type=image].usa-button-secondary.usa-button-hover {
+  box-shadow: inset 0 0 0 2px #1a4480;
+  color: #1a4480;
+}
+.usa-button.usa-button-secondary:active, .usa-button.usa-button-secondary.usa-button-active,
+.usa-button-primary.usa-button-secondary:active,
+.usa-button-primary.usa-button-secondary.usa-button-active,
+.usa-button:visited.usa-button-secondary:active,
+.usa-button:visited.usa-button-secondary.usa-button-active,
+.usa-button-primary:visited.usa-button-secondary:active,
+.usa-button-primary:visited.usa-button-secondary.usa-button-active,
+button.usa-button-secondary:active,
+button.usa-button-secondary.usa-button-active,
+[type=button].usa-button-secondary:active,
+[type=button].usa-button-secondary.usa-button-active,
+[type=submit].usa-button-secondary:active,
+[type=submit].usa-button-secondary.usa-button-active,
+[type=reset].usa-button-secondary:active,
+[type=reset].usa-button-secondary.usa-button-active,
+[type=image].usa-button-secondary:active,
+[type=image].usa-button-secondary.usa-button-active {
+  box-shadow: inset 0 0 0 2px #162e51;
+  color: #162e51;
+}
+.usa-button.usa-button-secondary-inverse, .usa-button.usa-button-outline-inverse,
+.usa-button-primary.usa-button-secondary-inverse,
+.usa-button-primary.usa-button-outline-inverse,
+.usa-button:visited.usa-button-secondary-inverse,
+.usa-button:visited.usa-button-outline-inverse,
+.usa-button-primary:visited.usa-button-secondary-inverse,
+.usa-button-primary:visited.usa-button-outline-inverse,
+button.usa-button-secondary-inverse,
+button.usa-button-outline-inverse,
+[type=button].usa-button-secondary-inverse,
+[type=button].usa-button-outline-inverse,
+[type=submit].usa-button-secondary-inverse,
+[type=submit].usa-button-outline-inverse,
+[type=reset].usa-button-secondary-inverse,
+[type=reset].usa-button-outline-inverse,
+[type=image].usa-button-secondary-inverse,
+[type=image].usa-button-outline-inverse {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff;
+}
+.usa-button.usa-button-secondary-inverse:hover, .usa-button.usa-button-secondary-inverse.usa-button-hover, .usa-button.usa-button-outline-inverse:hover, .usa-button.usa-button-outline-inverse.usa-button-hover,
+.usa-button-primary.usa-button-secondary-inverse:hover,
+.usa-button-primary.usa-button-secondary-inverse.usa-button-hover,
+.usa-button-primary.usa-button-outline-inverse:hover,
+.usa-button-primary.usa-button-outline-inverse.usa-button-hover,
+.usa-button:visited.usa-button-secondary-inverse:hover,
+.usa-button:visited.usa-button-secondary-inverse.usa-button-hover,
+.usa-button:visited.usa-button-outline-inverse:hover,
+.usa-button:visited.usa-button-outline-inverse.usa-button-hover,
+.usa-button-primary:visited.usa-button-secondary-inverse:hover,
+.usa-button-primary:visited.usa-button-secondary-inverse.usa-button-hover,
+.usa-button-primary:visited.usa-button-outline-inverse:hover,
+.usa-button-primary:visited.usa-button-outline-inverse.usa-button-hover,
+button.usa-button-secondary-inverse:hover,
+button.usa-button-secondary-inverse.usa-button-hover,
+button.usa-button-outline-inverse:hover,
+button.usa-button-outline-inverse.usa-button-hover,
+[type=button].usa-button-secondary-inverse:hover,
+[type=button].usa-button-secondary-inverse.usa-button-hover,
+[type=button].usa-button-outline-inverse:hover,
+[type=button].usa-button-outline-inverse.usa-button-hover,
+[type=submit].usa-button-secondary-inverse:hover,
+[type=submit].usa-button-secondary-inverse.usa-button-hover,
+[type=submit].usa-button-outline-inverse:hover,
+[type=submit].usa-button-outline-inverse.usa-button-hover,
+[type=reset].usa-button-secondary-inverse:hover,
+[type=reset].usa-button-secondary-inverse.usa-button-hover,
+[type=reset].usa-button-outline-inverse:hover,
+[type=reset].usa-button-outline-inverse.usa-button-hover,
+[type=image].usa-button-secondary-inverse:hover,
+[type=image].usa-button-secondary-inverse.usa-button-hover,
+[type=image].usa-button-outline-inverse:hover,
+[type=image].usa-button-outline-inverse.usa-button-hover {
+  box-shadow: inset 0 0 0 2px #dfe1e2;
+  color: #dfe1e2;
+}
+.usa-button.usa-button-secondary-inverse:active, .usa-button.usa-button-secondary-inverse.usa-button-active, .usa-button.usa-button-outline-inverse:active, .usa-button.usa-button-outline-inverse.usa-button-active,
+.usa-button-primary.usa-button-secondary-inverse:active,
+.usa-button-primary.usa-button-secondary-inverse.usa-button-active,
+.usa-button-primary.usa-button-outline-inverse:active,
+.usa-button-primary.usa-button-outline-inverse.usa-button-active,
+.usa-button:visited.usa-button-secondary-inverse:active,
+.usa-button:visited.usa-button-secondary-inverse.usa-button-active,
+.usa-button:visited.usa-button-outline-inverse:active,
+.usa-button:visited.usa-button-outline-inverse.usa-button-active,
+.usa-button-primary:visited.usa-button-secondary-inverse:active,
+.usa-button-primary:visited.usa-button-secondary-inverse.usa-button-active,
+.usa-button-primary:visited.usa-button-outline-inverse:active,
+.usa-button-primary:visited.usa-button-outline-inverse.usa-button-active,
+button.usa-button-secondary-inverse:active,
+button.usa-button-secondary-inverse.usa-button-active,
+button.usa-button-outline-inverse:active,
+button.usa-button-outline-inverse.usa-button-active,
+[type=button].usa-button-secondary-inverse:active,
+[type=button].usa-button-secondary-inverse.usa-button-active,
+[type=button].usa-button-outline-inverse:active,
+[type=button].usa-button-outline-inverse.usa-button-active,
+[type=submit].usa-button-secondary-inverse:active,
+[type=submit].usa-button-secondary-inverse.usa-button-active,
+[type=submit].usa-button-outline-inverse:active,
+[type=submit].usa-button-outline-inverse.usa-button-active,
+[type=reset].usa-button-secondary-inverse:active,
+[type=reset].usa-button-secondary-inverse.usa-button-active,
+[type=reset].usa-button-outline-inverse:active,
+[type=reset].usa-button-outline-inverse.usa-button-active,
+[type=image].usa-button-secondary-inverse:active,
+[type=image].usa-button-secondary-inverse.usa-button-active,
+[type=image].usa-button-outline-inverse:active,
+[type=image].usa-button-outline-inverse.usa-button-active {
+  box-shadow: inset 0 0 0 2px #aeb0b5;
+  color: #dfe1e2;
+}
+.usa-button.usa-button-gray,
+.usa-button-primary.usa-button-gray,
+.usa-button:visited.usa-button-gray,
+.usa-button-primary:visited.usa-button-gray,
+button.usa-button-gray,
+[type=button].usa-button-gray,
+[type=submit].usa-button-gray,
+[type=reset].usa-button-gray,
+[type=image].usa-button-gray {
+  background-color: #5b616b;
+}
+.usa-button.usa-button-gray:hover, .usa-button.usa-button-gray.usa-button-hover,
+.usa-button-primary.usa-button-gray:hover,
+.usa-button-primary.usa-button-gray.usa-button-hover,
+.usa-button:visited.usa-button-gray:hover,
+.usa-button:visited.usa-button-gray.usa-button-hover,
+.usa-button-primary:visited.usa-button-gray:hover,
+.usa-button-primary:visited.usa-button-gray.usa-button-hover,
+button.usa-button-gray:hover,
+button.usa-button-gray.usa-button-hover,
+[type=button].usa-button-gray:hover,
+[type=button].usa-button-gray.usa-button-hover,
+[type=submit].usa-button-gray:hover,
+[type=submit].usa-button-gray.usa-button-hover,
+[type=reset].usa-button-gray:hover,
+[type=reset].usa-button-gray.usa-button-hover,
+[type=image].usa-button-gray:hover,
+[type=image].usa-button-gray.usa-button-hover {
+  background-color: #323a45;
+}
+.usa-button.usa-button-gray:active, .usa-button.usa-button-gray.usa-button-active,
+.usa-button-primary.usa-button-gray:active,
+.usa-button-primary.usa-button-gray.usa-button-active,
+.usa-button:visited.usa-button-gray:active,
+.usa-button:visited.usa-button-gray.usa-button-active,
+.usa-button-primary:visited.usa-button-gray:active,
+.usa-button-primary:visited.usa-button-gray.usa-button-active,
+button.usa-button-gray:active,
+button.usa-button-gray.usa-button-active,
+[type=button].usa-button-gray:active,
+[type=button].usa-button-gray.usa-button-active,
+[type=submit].usa-button-gray:active,
+[type=submit].usa-button-gray.usa-button-active,
+[type=reset].usa-button-gray:active,
+[type=reset].usa-button-gray.usa-button-active,
+[type=image].usa-button-gray:active,
+[type=image].usa-button-gray.usa-button-active {
+  background-color: #212121;
+}
+.usa-button.usa-button-red,
+.usa-button-primary.usa-button-red,
+.usa-button:visited.usa-button-red,
+.usa-button-primary:visited.usa-button-red,
+button.usa-button-red,
+[type=button].usa-button-red,
+[type=submit].usa-button-red,
+[type=reset].usa-button-red,
+[type=image].usa-button-red {
+  background-color: #e31c3d;
+}
+.usa-button.usa-button-red:hover, .usa-button.usa-button-red.usa-button-hover,
+.usa-button-primary.usa-button-red:hover,
+.usa-button-primary.usa-button-red.usa-button-hover,
+.usa-button:visited.usa-button-red:hover,
+.usa-button:visited.usa-button-red.usa-button-hover,
+.usa-button-primary:visited.usa-button-red:hover,
+.usa-button-primary:visited.usa-button-red.usa-button-hover,
+button.usa-button-red:hover,
+button.usa-button-red.usa-button-hover,
+[type=button].usa-button-red:hover,
+[type=button].usa-button-red.usa-button-hover,
+[type=submit].usa-button-red:hover,
+[type=submit].usa-button-red.usa-button-hover,
+[type=reset].usa-button-red:hover,
+[type=reset].usa-button-red.usa-button-hover,
+[type=image].usa-button-red:hover,
+[type=image].usa-button-red.usa-button-hover {
+  background-color: #cd2026;
+}
+.usa-button.usa-button-red:active, .usa-button.usa-button-red.usa-button-active,
+.usa-button-primary.usa-button-red:active,
+.usa-button-primary.usa-button-red.usa-button-active,
+.usa-button:visited.usa-button-red:active,
+.usa-button:visited.usa-button-red.usa-button-active,
+.usa-button-primary:visited.usa-button-red:active,
+.usa-button-primary:visited.usa-button-red.usa-button-active,
+button.usa-button-red:active,
+button.usa-button-red.usa-button-active,
+[type=button].usa-button-red:active,
+[type=button].usa-button-red.usa-button-active,
+[type=submit].usa-button-red:active,
+[type=submit].usa-button-red.usa-button-active,
+[type=reset].usa-button-red:active,
+[type=reset].usa-button-red.usa-button-active,
+[type=image].usa-button-red:active,
+[type=image].usa-button-red.usa-button-active {
+  background-color: #981b1e;
+}
+.usa-button.usa-button-big,
+.usa-button-primary.usa-button-big,
+.usa-button:visited.usa-button-big,
+.usa-button-primary:visited.usa-button-big,
+button.usa-button-big,
+[type=button].usa-button-big,
+[type=submit].usa-button-big,
+[type=reset].usa-button-big,
+[type=image].usa-button-big {
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 0.9375rem 1.875rem;
+}
+.usa-button:disabled,
+.usa-button-primary:disabled,
+.usa-button:visited:disabled,
+.usa-button-primary:visited:disabled,
+button:disabled,
+[type=button]:disabled,
+[type=submit]:disabled,
+[type=reset]:disabled,
+[type=image]:disabled {
+  background-color: #dfe1e2;
+  pointer-events: none;
+}
+.usa-button:disabled:hover, .usa-button:disabled.usa-button-hover, .usa-button:disabled:active, .usa-button:disabled.usa-button-active, .usa-button:disabled:focus, .usa-button:disabled.usa-focus,
+.usa-button-primary:disabled:hover,
+.usa-button-primary:disabled.usa-button-hover,
+.usa-button-primary:disabled:active,
+.usa-button-primary:disabled.usa-button-active,
+.usa-button-primary:disabled:focus,
+.usa-button-primary:disabled.usa-focus,
+.usa-button:visited:disabled:hover,
+.usa-button:visited:disabled.usa-button-hover,
+.usa-button:visited:disabled:active,
+.usa-button:visited:disabled.usa-button-active,
+.usa-button:visited:disabled:focus,
+.usa-button:visited:disabled.usa-focus,
+.usa-button-primary:visited:disabled:hover,
+.usa-button-primary:visited:disabled.usa-button-hover,
+.usa-button-primary:visited:disabled:active,
+.usa-button-primary:visited:disabled.usa-button-active,
+.usa-button-primary:visited:disabled:focus,
+.usa-button-primary:visited:disabled.usa-focus,
+button:disabled:hover,
+button:disabled.usa-button-hover,
+button:disabled:active,
+button:disabled.usa-button-active,
+button:disabled:focus,
+button:disabled.usa-focus,
+[type=button]:disabled:hover,
+[type=button]:disabled.usa-button-hover,
+[type=button]:disabled:active,
+[type=button]:disabled.usa-button-active,
+[type=button]:disabled:focus,
+[type=button]:disabled.usa-focus,
+[type=submit]:disabled:hover,
+[type=submit]:disabled.usa-button-hover,
+[type=submit]:disabled:active,
+[type=submit]:disabled.usa-button-active,
+[type=submit]:disabled:focus,
+[type=submit]:disabled.usa-focus,
+[type=reset]:disabled:hover,
+[type=reset]:disabled.usa-button-hover,
+[type=reset]:disabled:active,
+[type=reset]:disabled.usa-button-active,
+[type=reset]:disabled:focus,
+[type=reset]:disabled.usa-focus,
+[type=image]:disabled:hover,
+[type=image]:disabled.usa-button-hover,
+[type=image]:disabled:active,
+[type=image]:disabled.usa-button-active,
+[type=image]:disabled:focus,
+[type=image]:disabled.usa-focus {
+  background-color: #dfe1e2;
+  border: 0;
+  box-shadow: none;
+}
+
+/* stylelint-disable */
+.usa-button-disabled {
+  background-color: #dfe1e2;
+  pointer-events: none;
+}
+.usa-button-disabled:hover, .usa-button-disabled.usa-button-hover, .usa-button-disabled:active, .usa-button-disabled.usa-button-active, .usa-button-disabled:focus, .usa-button-disabled.usa-focus {
+  background-color: #dfe1e2;
+  border: 0;
+  box-shadow: none;
+}
+
+.usa-button-secondary-disabled,
+.usa-button-secondary-inverse-disabled,
+.usa-button-secondary:disabled,
+.usa-button-secondary-inverse:disabled,
+.usa-button-outline-inverse:disabled {
+  box-shadow: inset 0 0 0 2px #dfe1e2;
+  pointer-events: none;
+  color: #dfe1e2;
+}
+.usa-button-secondary-disabled:hover, .usa-button-secondary-disabled.usa-button-hover, .usa-button-secondary-disabled:active, .usa-button-secondary-disabled.usa-button-active, .usa-button-secondary-disabled:focus, .usa-button-secondary-disabled.usa-focus,
+.usa-button-secondary-inverse-disabled:hover,
+.usa-button-secondary-inverse-disabled.usa-button-hover,
+.usa-button-secondary-inverse-disabled:active,
+.usa-button-secondary-inverse-disabled.usa-button-active,
+.usa-button-secondary-inverse-disabled:focus,
+.usa-button-secondary-inverse-disabled.usa-focus,
+.usa-button-secondary:disabled:hover,
+.usa-button-secondary:disabled.usa-button-hover,
+.usa-button-secondary:disabled:active,
+.usa-button-secondary:disabled.usa-button-active,
+.usa-button-secondary:disabled:focus,
+.usa-button-secondary:disabled.usa-focus,
+.usa-button-secondary-inverse:disabled:hover,
+.usa-button-secondary-inverse:disabled.usa-button-hover,
+.usa-button-secondary-inverse:disabled:active,
+.usa-button-secondary-inverse:disabled.usa-button-active,
+.usa-button-secondary-inverse:disabled:focus,
+.usa-button-secondary-inverse:disabled.usa-focus,
+.usa-button-outline-inverse:disabled:hover,
+.usa-button-outline-inverse:disabled.usa-button-hover,
+.usa-button-outline-inverse:disabled:active,
+.usa-button-outline-inverse:disabled.usa-button-active,
+.usa-button-outline-inverse:disabled:focus,
+.usa-button-outline-inverse:disabled.usa-focus {
+  background-color: #ffffff;
+  border: 0;
+}
+
+html .usa-button-secondary-disabled,
+.usa-button-secondary:disabled {
+  background-color: #ffffff;
+}
+
+html .usa-button-secondary-inverse-disabled,
+.usa-button-secondary-inverse:disabled {
+  background-color: transparent;
+  color: #5b616b;
+  box-shadow: inset 0 0 0 2px #5b616b;
+}
+
+.usa-button-unstyled {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+}
+.usa-button-unstyled:hover {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=buttons.css.map */

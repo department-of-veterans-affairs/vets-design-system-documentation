@@ -1,0 +1,316 @@
+/*
+  Original: @import "~uswds/src/stylesheets/elements/typography";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/elements/typography";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+html {
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+a {
+  color: #005ea2;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  color: #1a4480;
+}
+a:focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+a:visited {
+  color: #54278f;
+}
+
+.usa-external_link::after {
+  background: url(~@department-of-veterans-affairs/css-library/dist/img/external-link.png) no-repeat 0 0;
+  background: url(~@department-of-veterans-affairs/css-library/dist/img/external-link.svg) no-repeat 0 0;
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.65em;
+  margin-bottom: -1px;
+  margin-left: 4px;
+  width: 0.65em;
+}
+.usa-external_link:hover::after {
+  background-image: url(~@department-of-veterans-affairs/css-library/dist/img/external-link-hover.png);
+  background-image: url(~@department-of-veterans-affairs/css-library/dist/img/external-link-hover.svg);
+}
+
+.usa-external_link-alt::after {
+  background: url(~@department-of-veterans-affairs/css-library/dist/img/external-link.png) no-repeat 0 0;
+  background: url(~@department-of-veterans-affairs/css-library/dist/img/external-link.svg) no-repeat 0 0;
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.65em;
+  margin-bottom: -1px;
+  margin-left: 4px;
+  width: 0.65em;
+}
+.usa-external_link-alt:hover::after {
+  background-image: url(~@department-of-veterans-affairs/css-library/dist/img/external-link-hover.png);
+  background-image: url(~@department-of-veterans-affairs/css-library/dist/img/external-link-hover.svg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h1 a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+h2 a {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+h3 a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+h4 a {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h5 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+h5 a {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h6 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+h6 a {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+cite,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+.usa-content {
+  max-width: 43.75rem;
+}
+
+.usa-content p,
+.usa-content ul:not(.usa-accordion):not(.usa-accordion-bordered),
+.usa-content ol:not(.usa-accordion):not(.usa-accordion-bordered) {
+  max-width: 43.75rem;
+}
+
+.usa-content-list {
+  max-width: 43.75rem;
+}
+
+.usa-sans p,
+.usa-sans a,
+.usa-sans li,
+.usa-sans span {
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.usa-sans a {
+  border-bottom: none;
+  font-weight: 700;
+}
+
+.usa-serif p,
+.usa-serif a,
+.usa-serif li,
+.usa-serif span {
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.usa-display {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-display {
+    font-size: 3.25rem;
+    font-weight: 700;
+  }
+}
+
+.usa-font-lead {
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 48.125rem;
+}
+
+.usa-background-dark {
+  background-color: #323a45;
+}
+.usa-background-dark p,
+.usa-background-dark span {
+  color: #ffffff;
+}
+.usa-background-dark a {
+  color: #d6d7d9;
+}
+.usa-background-dark a:hover {
+  color: #ffffff;
+}
+
+.usa-text-small {
+  font-size: 0.8125rem;
+  margin-top: 0;
+}
+
+.usa-section > :first-child,
+.usa-grid > :first-child,
+.usa-grid-full > :first-child {
+  margin-top: 0;
+}
+.usa-section > :last-child,
+.usa-grid > :last-child,
+.usa-grid-full > :last-child {
+  margin-bottom: 0;
+}
+
+.usa-width-one-whole:first-child > :first-child,
+.usa-width-one-half:first-child > :first-child,
+.usa-width-one-third:first-child > :first-child,
+.usa-width-two-thirds:first-child > :first-child,
+.usa-width-one-fourth:first-child > :first-child,
+.usa-width-three-fourths:first-child > :first-child,
+.usa-width-one-sixth:first-child > :first-child,
+.usa-width-five-sixths:first-child > :first-child,
+.usa-width-one-twelfth:first-child > :first-child {
+  margin-top: 0;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-width-one-whole > :first-child,
+  .usa-width-one-half > :first-child,
+  .usa-width-one-third > :first-child,
+  .usa-width-two-thirds > :first-child,
+  .usa-width-one-fourth > :first-child,
+  .usa-width-three-fourths > :first-child,
+  .usa-width-one-sixth > :first-child,
+  .usa-width-five-sixths > :first-child,
+  .usa-width-one-twelfth > :first-child {
+    margin-top: 0;
+  }
+}
+.usa-width-one-whole:last-child > :last-child,
+.usa-width-one-half:last-child > :last-child,
+.usa-width-one-third:last-child > :last-child,
+.usa-width-two-thirds:last-child > :last-child,
+.usa-width-one-fourth:last-child > :last-child,
+.usa-width-three-fourths:last-child > :last-child,
+.usa-width-one-sixth:last-child > :last-child,
+.usa-width-five-sixths:last-child > :last-child,
+.usa-width-one-twelfth:last-child > :last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-width-one-whole > :last-child,
+  .usa-width-one-half > :last-child,
+  .usa-width-one-third > :last-child,
+  .usa-width-two-thirds > :last-child,
+  .usa-width-one-fourth > :last-child,
+  .usa-width-three-fourths > :last-child,
+  .usa-width-one-sixth > :last-child,
+  .usa-width-five-sixths > :last-child,
+  .usa-width-one-twelfth > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=typography.css.map */

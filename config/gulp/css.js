@@ -1,14 +1,13 @@
 var gulp = require('gulp');
-var replace = require('gulp-replace');
 var task = 'css';
 
-gulp.task('copy-formation-css', function (done) {
+/*gulp.task('copy-formation-css', function (done) {
   console.log('copying Formation CSS');
   var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/formation.min.css')
     .pipe(gulp.dest('src'));
 
   return stream;
-});
+});*/
 
 gulp.task('copy-web-components-css', function (done) {
   console.log('copying web-components CSS');
@@ -21,15 +20,13 @@ gulp.task('copy-web-components-css', function (done) {
 gulp.task('copy-css-library-css', function (done) {
   console.log('copying css-library CSS');
   var stream = gulp.src('./node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/**/*.css')
-    .pipe(replace(/~@uswds/g, 'uswds'))
-    .pipe(replace(new RegExp('~@department-of-veterans-affairs/css-library/dist','g'), ''))
     .pipe(gulp.dest('src/assets/stylesheets/css-library'));
 
   return stream;
 });
 
 gulp.task(task, gulp.series(
-  'copy-formation-css',
+  //'copy-formation-css',
   'copy-web-components-css',
   'copy-css-library-css'
 ));

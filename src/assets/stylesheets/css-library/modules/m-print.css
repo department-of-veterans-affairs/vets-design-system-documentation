@@ -1,0 +1,27 @@
+.print-only {
+  display: none;
+}
+
+@media print {
+  header, footer, nav {
+    display: none;
+  }
+  .schemaform-title,
+  .schemaform-subtitle,
+  .screen-only {
+    display: none;
+  }
+  .print-only {
+    display: block;
+  }
+  /* Relative URLs - include the HREF with the domain prepended */
+  a[href^="/"]:after {
+    content: " (https://www.va.gov" attr(href) ")";
+  }
+  /* Absolute URLs - show the HREF without prepending the domain. */
+  a[href^=http]:after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/*# sourceMappingURL=m-print.css.map */

@@ -1,0 +1,267 @@
+/*
+  Original: @import "~uswds/src/stylesheets/components/forms";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  [type=submit] {
+    margin-top: calc(1.875rem - 0.2em);
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-form {
+    max-width: 32rem;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-tiny {
+    max-width: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-medium {
+    max-width: 7.5rem;
+  }
+}
+
+.usa-form-note {
+  float: right;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9375rem;
+  margin: 0 0 scale(1.5rem);
+}
+.usa-form-note + * {
+  clear: both;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-form-large {
+    max-width: 28.75rem;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid {
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid:last-of-type {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid-small {
+    float: left;
+    width: 35%;
+  }
+}
+.usa-input-grid-small input {
+  margin-bottom: 1.875rem;
+}
+.usa-input-grid-small select {
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid-medium {
+    float: left;
+    width: 65%;
+  }
+}
+.usa-input-grid-medium input {
+  margin-bottom: 1.875rem;
+}
+.usa-input-grid-medium select {
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid-large {
+    float: left;
+    width: 100%;
+  }
+}
+.usa-input-grid-large input {
+  margin-bottom: 1.875rem;
+}
+.usa-input-grid-large select {
+  margin-bottom: 1.875rem;
+}
+
+.usa-additional_text {
+  font-weight: normal;
+}
+
+.usa-checklist {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.usa-checklist li {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 3em;
+  text-indent: -2em;
+}
+.usa-checklist li::before {
+  content: " ";
+  display: inline-block;
+  height: 0.8em;
+  margin-right: 0.2em;
+  width: 1.8em;
+}
+
+.usa-checklist-checked::before {
+  background-image: url(~@department-of-veterans-affairs/css-library/dist/img/correct9.png);
+  background-image: url(~@department-of-veterans-affairs/css-library/dist/img/correct9.svg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+body .row {
+  max-width: 62.5em;
+  margin: 0 auto;
+}
+body .row-padded {
+  max-width: 62.5rem;
+  padding: 0 0.625rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .form-panel {
+    max-width: 32rem;
+  }
+}
+
+.progress-box button {
+  width: 100%;
+}
+
+.progress-box {
+  border: 1px solid #f1f1f1;
+  margin: 0.9375rem 0;
+  padding: 0.625rem 0;
+}
+
+.button-icon {
+  font-size: 1.0625rem;
+}
+
+.input-section {
+  margin-bottom: 2em;
+}
+.input-section .row {
+  margin: 0;
+}
+
+.usa-input-error select {
+  border: 3px solid #cd2026;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.csp-inline-patch-footer {
+  display: none;
+  visibility: hidden;
+}
+
+.csp-inline-patch-page-react {
+  padding: 2em 0;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-grid .usa-width-one-fourth {
+    margin-right: 2.35765%;
+    width: 23.23176%;
+  }
+  .usa-grid .usa-width-three-fourths {
+    width: 74.41059%;
+  }
+}
+input[type=checkbox],
+input[type=radio] {
+  margin-left: -1.25rem;
+  opacity: 0;
+  position: absolute;
+  left: auto;
+}
+
+[hidden=false] {
+  display: block !important;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  form [type=submit] {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 100%;
+  }
+}
+
+#top-of-page-alert-container {
+  width: 100%;
+  background-color: #fef0c8;
+  position: relative;
+}
+#top-of-page-alert-container:before {
+  background-color: #fdb81e;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0.625rem;
+}
+
+#top-of-page-alert {
+  max-width: 62.5em;
+  margin: 0 auto;
+}
+#top-of-page-alert.usa-alert::before {
+  content: none;
+}
+#top-of-page-alert .usa-alert-body {
+  margin: 0 auto;
+  text-align: left;
+}
+#top-of-page-alert .usa-alert-body .usa-alert-heading {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*# sourceMappingURL=shame.css.map */

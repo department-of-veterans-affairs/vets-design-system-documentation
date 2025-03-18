@@ -3,13 +3,38 @@ font-matter: yay
 ---
 
 // Files that allow us to use Formation’s Sass functions, variables, and mixins
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-variables';
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-breakpoints';
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-functions';
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-mixins';
+//@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-variables';
+//@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/_b-breakpoints';
+//@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/base/b-functions';
+
+
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/core.css';
+
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/utilities.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/uswds-typography.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-alert.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-breadcrumbs.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-button.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-form-elements.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-megamenu.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-loading-indicator.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-print.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-dropdown.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-overlay.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-additional-info.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-hub-page-link-list.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-action-link.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/mobile-typography.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-modal.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-process-list.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-nav-sidebar.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/modules/m-nav-linklist.css';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/shame.css';
+
+@import "../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/mixins";
 
 // Other Formation CSS we need for this site.
-@import '../../../node_modules/@department-of-veterans-affairs/formation/sass/site/_m-crisis-line';
+@import '~@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.css';
 
 // Override Formation color variables 
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss';

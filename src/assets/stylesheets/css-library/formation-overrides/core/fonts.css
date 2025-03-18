@@ -1,0 +1,50 @@
+/*
+  Original: @import "~uswds/src/stylesheets/core/fonts";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/* stylelint-disable at-rule-empty-line-before */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(~@uswds/uswds/fonts/merriweather/Latin-Merriweather-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(~@uswds/uswds/fonts/merriweather/Latin-Merriweather-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(~@uswds/uswds/fonts/merriweather/Latin-Merriweather-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(~@uswds/uswds/fonts/merriweather/Latin-Merriweather-Italic.woff2) format("woff2");
+}
+/* stylelint-enable */
+
+/*# sourceMappingURL=fonts.css.map */

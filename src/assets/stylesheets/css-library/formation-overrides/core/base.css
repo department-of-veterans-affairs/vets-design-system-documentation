@@ -1,0 +1,64 @@
+/*
+  ***THIS IS USWDS v1***
+  Original import: @import "~uswds/src/stylesheets/core/base";
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+.lt-ie9 * {
+  filter: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+[hidden] {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+button:not([disabled]):focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+iframe:focus,
+[href]:focus,
+[tabindex]:focus,
+[contentEditable=true]:focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+.usa-focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+/*# sourceMappingURL=base.css.map */
