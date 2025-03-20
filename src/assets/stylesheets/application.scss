@@ -59,11 +59,6 @@ font-matter: yay
 @import '_components/showcase';
 @import '_components/sidenav';
 
-
-body {
-  font-family: var(--font-family-sans)
-}
-
 .usa-skipnav {
   background: transparent;
   color: var(--vads-color-base);
