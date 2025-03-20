@@ -49,7 +49,7 @@
 .site-utility-scope__button:visited,
 .site-utility-scope__button:hover {
   background: transparent;
-  color: $color-base;
+  color: var(--vads-color-base);
   font-weight: $font-bold;
   display: inline-block;
   text-decoration: none;
@@ -106,7 +106,7 @@
 
 .site-square {
   background: #fff;
-  border: 1px solid $color-base;
+  border: 1px solid var(--vads-color-base);
   display: inline-block;
   flex-shrink: 0;
 }
@@ -158,7 +158,7 @@
 }
 
 .site-showcase__padding-example__outer {
-  border: 1px solid $color-base;
+  border: 1px solid var(--vads-color-base);
   background: var(--vads-color-primary-alt-light);
   display: inline-block;
   width: 160px;

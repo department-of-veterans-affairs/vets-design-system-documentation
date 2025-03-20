@@ -25,7 +25,7 @@
   }
 
   &--is-false {
-    color: $color-orange;
+    color: var(--vads-color-orange);
   }
 
   &--is-na {

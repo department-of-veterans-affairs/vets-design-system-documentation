@@ -25,11 +25,17 @@ The maturity scale is divided into 3 major categories:
 {% assign use_with_caution_symbol = use_with_caution.first.symbol %}
 {% assign dont_use_symbol = dont_use.first.symbol %}
 
-<i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use"></i> <span class="usa-label site-component-status site-component-status--use">Use</span>
+<!-- <i class="fas {{use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use"></i>  -->
+<va-icon icon="check_circle" size="3" class="site-sidenav-status"></va-icon>
+<span class="usa-label site-component-status site-component-status--use">Use</span>
 
-<i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution"></i> <span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
+<!-- <i class="fas {{use_with_caution_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--use-with-caution"></i>  -->
+<va-icon icon="warning" size="3" class="site-sidenav-status"></va-icon>
+<span class="usa-label site-component-status site-component-status--use-with-caution">Use with caution</span>
 
-<i class="fas {{dont_use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--dont-use"></i> <span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
+<!-- <i class="fas {{dont_use_symbol}} site-sidenav-status site-sidenav-status--large site-sidenav-status--dont-use"></i>  -->
+<va-icon icon="error" size="3" class="site-sidenav-status"></va-icon>
+<span class="usa-label site-component-status site-component-status--dont-use">Don't use</span>
 
 Within each of those categories there are 2 levels:
 

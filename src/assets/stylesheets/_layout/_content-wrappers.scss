@@ -272,7 +272,7 @@
   }
 
   > .usa-table-borderless {
-    border: 1px solid $color-base;
+    border: 1px solid var(--vads-color-base);
 
     th {
       padding-left: .8em;
@@ -285,7 +285,7 @@
 
     tbody tr:last-child td,
     tbody tr:last-child th {
-      border-color: $color-base;
+      border-color: var(--vads-color-base);
     }
   }
 

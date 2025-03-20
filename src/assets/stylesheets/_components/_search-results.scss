@@ -36,7 +36,7 @@
 }
 
 .site-search-results {
-  color: $color-base;
+  color: var(--vads-color-base);
   border: 1px solid $color-gray-lighter;
   background: transparent;
   margin: 0;
@@ -62,13 +62,13 @@
       text-decoration: none;
       padding: units(2);
       margin-top: -1px;
-      color: $color-base;
+      color: var(--vads-color-base);
       transition: none;
       width: 100%;
     }
 
     a:hover {
-      color: $color-base;
+      color: var(--vads-color-base);
     }
   }
 }
@@ -125,7 +125,7 @@
   .site-search-results__url {
     display: block;
     font-size: 0.9375rem;
-    color: $color-primary-alt-darkest;
+    color: var(--vads-color-primary-alt-darkest);
   }
 }
 
