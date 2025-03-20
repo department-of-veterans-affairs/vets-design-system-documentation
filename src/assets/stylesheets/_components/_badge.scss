@@ -21,12 +21,12 @@ main {
   .site-component-status--use,
   .site-component-status--use-best-practice,
   .site-component-status--use-deployed {
-    background-color: $color-green-darker;
+    background-color: var(--vads-button-color-background-primary-alt-active-on-light);
   }
   .site-sidenav-status--use,
   .site-sidenav-status--use-best-practice,
   .site-sidenav-status--use-deployed {
-    color: $color-green-darker;
+    color: var(--vads-button-color-background-primary-alt-active-on-light);
   }
 
   .site-component-status--use-with-caution,

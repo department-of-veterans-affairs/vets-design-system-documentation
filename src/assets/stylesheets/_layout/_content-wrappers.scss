@@ -214,7 +214,7 @@
   .highlighter-rouge .highlight {
     background: #fff;
     border-bottom: none;
-    font-weight: $font-normal;
+    font-weight: normal;
   }
 
   p .highlighter-rouge,
@@ -290,7 +290,7 @@
   }
 
   > .va-introtext {
-    font-family: $font-sans;
+    font-family: var(--font-family-sans);
     font-size: 1.375rem;
     margin: units(3) 0;
   }
