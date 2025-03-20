@@ -18,21 +18,21 @@
       </div>
       <div class="site-header__utility-links">
         <div id="search-container" class="site-search-container">
-          <va-icon icon="search" size="3" ></va-icon>
+          <va-icon icon="search" size="3" class="search-icon"></va-icon>
           <form action="{{ site.baseurl }}/results" method="get" id="search-form" class="search-form">
           <input type="search" class="site-search-container__input" id="search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
           </form>
           <ul id="results-container" class="site-search-results" role="listbox"></ul>
         </div>
       </div>
-      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><i class="fas fa-search"></i></button>
+      <button type="button" id="toggle-mobile-search" aria-label="Show search" class="site-toggle-search" aria-controls="mobile-search-container"><va-icon icon="search" size="3"/></button>
       <button class="site-header__open-mobile-nav-button" id="open-mobile-nav-button" aria-label="Open navigation menu" type="button">Menu</button>
     </div>
   </div>
 </header>
 
 <div id="mobile-search-container" class="site-search-container site-seach-container--mobile">
-  <i class="fas fa-search search-icon search-icon--mobile"></i>
+  <va-icon icon="search" size="3" class="search-icon search-icon--mobile"></va-icon>
   <form action="{{ site.baseurl }}/results" method="get" id="mobile-search-form" class="search-form">
     <input type="search" class="site-search-container__input vads-u-max-width--none" id="mobile-search-input" placeholder="Search..." aria-label="Search" name="query" autocomplete="off">
   </form>
