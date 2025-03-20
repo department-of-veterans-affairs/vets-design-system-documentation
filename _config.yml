@@ -51,6 +51,7 @@ source: src
 sass:
   sass_dir: assets/stylesheets/
   style: compressed
+  sourcemap: never
 
 # Collections
 collections:
