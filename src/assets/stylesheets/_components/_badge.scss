@@ -18,6 +18,11 @@ main {
     font-size: 1.25rem;
   }
 
+  .site-component-status-heading va-icon {
+    position: relative;
+    top: 4px;
+  }
+
   .site-component-status--use,
   .site-component-status--use-best-practice,
   .site-component-status--use-deployed {
