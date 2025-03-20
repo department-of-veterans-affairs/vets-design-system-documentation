@@ -2,10 +2,9 @@
 font-matter: yay
 ---
 
-// Override Formation color variables 
+// CSS-Library
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss';
 
-// @import 'css-library/modules/m-action-link.css';
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss';
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.scss';
 
