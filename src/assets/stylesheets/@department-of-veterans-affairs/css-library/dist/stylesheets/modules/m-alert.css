@@ -1,0 +1,256 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+.usa-alert {
+  background: none;
+  background-color: #f1f1f1;
+  border-left-style: solid;
+  border-left-width: 10px;
+  display: table;
+  padding: 2rem 4rem 2rem 1.5rem;
+  width: 100%;
+}
+.usa-alert::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/info.svg);
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: unset;
+  border-radius: 50%;
+  content: "";
+  height: 31px;
+  width: 31px;
+  top: 2px;
+  left: 0;
+  font-family: unset;
+  font-weight: unset;
+  font-size: unset;
+  margin-right: 1rem;
+  position: static;
+  display: block;
+}
+.usa-alert .usa-alert-body {
+  display: table-cell;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+.usa-alert-heading {
+  font-size: 1.25rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+.usa-alert-text {
+  margin-top: 1.25rem;
+}
+.usa-alert-text:only-child {
+  margin: 0;
+  padding: 0;
+}
+.usa-alert-text p:first-child {
+  margin-top: 0;
+}
+.usa-alert-text p:last-child {
+  margin-bottom: 0;
+}
+.usa-alert-text .usa-alert-heading + p:only-of-type {
+  margin-top: 1.25rem;
+}
+.usa-alert-text ul {
+  padding-left: 1.25rem;
+}
+.usa-alert-info {
+  border-left-color: #00a6d2;
+}
+.usa-alert-info::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/info.svg);
+}
+.usa-alert-info.background-color-only {
+  background-color: #e1f3f8;
+}
+.usa-alert-error {
+  border-left-color: #cd2026;
+}
+.usa-alert-error::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/error.svg);
+}
+.usa-alert-error.background-color-only {
+  background-color: #f9dede;
+}
+.usa-alert-success {
+  border-left-color: #008817;
+}
+.usa-alert-success::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/success.svg);
+}
+.usa-alert-success.background-color-only {
+  background-color: #e7f4e4;
+}
+.usa-alert-warning {
+  border-left-color: #fdb81e;
+}
+.usa-alert-warning::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/warning.svg);
+}
+.usa-alert-warning.background-color-only {
+  background-color: #fff1d2;
+}
+.usa-alert-continue {
+  border-left-color: #008817;
+}
+.usa-alert.background-color-only {
+  border-left: none;
+  padding: 1.25rem;
+}
+.usa-alert.background-color-only::before {
+  content: none;
+}
+
+.va-alert-close {
+  background-color: transparent;
+  color: #005ea2;
+  font-size: 1.40625rem;
+  padding: 0;
+  position: absolute;
+  margin: 1rem;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 9;
+}
+.va-alert-close:hover {
+  background-color: transparent;
+  color: #1a4480;
+}
+.va-alert-close:active {
+  background-color: transparent;
+  color: #112e51;
+}
+
+p.usa-alert-heading {
+  margin-top: 0;
+}
+
+.claims-list-alert {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.va-alert-close-icon {
+  font-size: 1.1em !important;
+}
+
+.claims-alert-status {
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.claims-alert-header {
+  padding-bottom: 0 !important;
+  margin-top: 0;
+}
+
+.alerts-list {
+  list-style: none;
+}
+.alerts-list li {
+  margin-left: -0.4em;
+}
+
+.claims-alert-checkbox > label {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.need-files-alert {
+  padding-bottom: 4em;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .need-files-alert {
+    padding-bottom: 1em;
+  }
+}
+
+.alert-with-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .alert-with-details {
+    flex-direction: row;
+  }
+}
+
+.usa-alert-full-width {
+  background-color: #f1f1f1;
+}
+.usa-alert-full-width.dismissable-option-header {
+  display: none;
+}
+.usa-alert-full-width.dismissable-option-header.show-alert {
+  display: block;
+}
+.usa-alert-full-width.dismissable-option-header.dismissed {
+  display: none;
+}
+.usa-alert-full-width .usa-alert-dismiss {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+}
+.usa-alert-full-width > .usa-alert {
+  border-left: none;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.usa-alert-full-width > .usa-alert .paragraph--type--expandable-text .field--name-field-text-expander .field__label {
+  display: none;
+}
+.usa-alert-full-width > .usa-alert .paragraph--type--expandable-text .field--name-field-text-expander .field__item {
+  font-size: 1.25rem;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #1a4480;
+  cursor: pointer;
+}
+.usa-alert-full-width > .usa-alert .paragraph--type--expandable-text .field--type-text-long {
+  display: none;
+}
+.usa-alert-full-width > .usa-alert .paragraph--type--expandable-text .field--type-text-long .field__label {
+  display: none;
+}
+.usa-alert-full-width > .usa-alert .paragraph--type--expandable-text .field--type-text-long.expander-content-open {
+  display: block;
+}
+.usa-alert-full-width-warning {
+  border-top: 0.625rem solid #fdb81e;
+}
+.usa-alert-full-width-info, .usa-alert-full-width-information {
+  border-top: 0.625rem solid #00a6d2;
+}
+.usa-alert-full-width-info .usa-alert:before, .usa-alert-full-width-information .usa-alert:before {
+  background: none;
+}
+
+/*# sourceMappingURL=m-alert.css.map */

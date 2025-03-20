@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/*
+  Original: @import "~uswds/src/stylesheets/elements/inputs";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/elements/inputs";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+input,
+textarea,
+select {
+  appearance: none;
+  border: 1px solid #5b616b;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #1b1b1b;
+  display: block;
+  font-size: 16px;
+  height: 42px;
+  line-height: 1.3;
+  margin: 0.2em 0;
+  max-width: 460px;
+  padding: 10px 11.2px;
+  width: 100%;
+}
+input.usa-input-success,
+textarea.usa-input-success,
+select.usa-input-success {
+  border: 3px solid #4aa564;
+}
+
+/* stylelint-enable */
+.usa-input-error {
+  border-left: 4px solid #cd2026;
+  margin-top: 1.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.9375rem;
+  padding-top: 0.5rem;
+  position: relative;
+  right: 1.1875rem;
+}
+.usa-input-error input,
+.usa-input-error textarea,
+.usa-input-error select {
+  border: 3px solid #cd2026;
+  width: calc(100% + 1.1875rem);
+}
+.usa-input-error label {
+  margin-top: 0;
+}
+.usa-input-error .usa-input-inline {
+  border: 0.0625rem solid #5b616b;
+  width: inherit;
+}
+.usa-input-error .usa-input-inline-error {
+  border: 3px solid #cd2026;
+}
+
+.usa-input-error-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.usa-input-error-message {
+  color: #cd2026;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.usa-input-required:after {
+  color: #981b1e;
+  content: " (*required)";
+}
+
+.usa-input-optional:after {
+  color: #757575;
+  content: " (optional)";
+}
+
+.usa-input-label-helper {
+  color: #757575;
+}
+
+.usa-input-label-required {
+  color: #981b1e;
+}
+
+label {
+  display: block;
+  margin-top: 1.875rem;
+  max-width: 28.75rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+select {
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/arrow-both.png);
+  background-image: none, url(@department-of-veterans-affairs/css-library/dist/img/arrow-both.svg), url(@department-of-veterans-affairs/css-library/dist/img/arrow-both.png);
+  background-position: right 0.8125rem center;
+  background-repeat: no-repeat;
+  background-size: 0.625rem;
+  padding-right: 1.875rem;
+}
+select::-ms-expand {
+  display: none;
+}
+select:-webkit-autofill {
+  appearance: menulist;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
+}
+
+option:first-child {
+  font-weight: 700;
+}
+
+legend {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.usa-fieldset-inputs label {
+  margin-top: 0;
+}
+
+.usa-form-hint {
+  color: #757575;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+[type=checkbox],
+[type=radio] {
+  position: absolute;
+  left: -999em;
+}
+.lt-ie9 [type=checkbox],
+.lt-ie9 [type=radio] {
+  border: 0;
+  float: left;
+  margin: 0.4em 0.4em 0 0;
+  position: static;
+  width: auto;
+}
+
+[type=checkbox] + label,
+[type=radio] + label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.65em;
+}
+
+[type=checkbox] + label::before,
+[type=radio] + label::before {
+  background: #ffffff;
+  content: " ";
+  display: inline-block;
+  text-indent: 0.15em;
+  vertical-align: middle\0 ;
+}
+
+[type=checkbox] + label::before {
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px #757575;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  margin-left: 1px;
+  margin-right: 0.6em;
+  width: 1.25rem;
+}
+
+[type=radio] + label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
+  height: 0.875rem;
+  line-height: 0.875rem;
+  margin-left: 3px;
+  margin-right: 0.75em;
+  width: 0.875rem;
+}
+
+[type=checkbox]:checked + label::before,
+[type=radio]:checked + label::before {
+  background-color: #005ea2;
+  box-shadow: 0 0 0 1px #005ea2;
+}
+
+[type=radio]:checked + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #005ea2;
+}
+
+[type=checkbox]:checked + label::before,
+[type=checkbox]:checked:disabled + label::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/correct8.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/correct8.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+[type=radio]:focus + label::before {
+  outline: 2px solid #face00;
+  outline-offset: 4px;
+}
+
+[type=checkbox]:disabled + label {
+  color: #d6d7d9;
+}
+
+[type=checkbox]:focus + label::before {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+[type=checkbox]:disabled + label::before,
+[type=radio]:disabled + label::before {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed;
+}
+
+@media print {
+  [type=checkbox]:checked + label::before,
+  [type=checkbox]:checked:disabled + label::before {
+    background-image: none;
+    background-color: #ffffff;
+    content: url(@department-of-veterans-affairs/css-library/dist/img/correct8-alt.png);
+    content: url(@department-of-veterans-affairs/css-library/dist/img/correct8-alt.svg);
+    text-indent: 0;
+  }
+  [type=radio]:checked:disabled + label::before,
+  [type=radio]:checked + label::before {
+    box-shadow: 0 0 0 2px #ffffff, inset 0 0 0 14px #005ea2, 0 0 0 4px #005ea2;
+  }
+}
+[type=range] {
+  appearance: none;
+  border: none;
+  padding-left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+[type=range]:focus {
+  outline: none;
+}
+[type=range]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 2px #005ea2;
+}
+[type=range]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 2px #005ea2;
+}
+[type=range]:focus::-ms-thumb {
+  box-shadow: 0 0 0 2px #005ea2;
+}
+[type=range]::-webkit-slider-runnable-track {
+  background: #d6d7d9;
+  border: 1px solid #757575;
+  cursor: pointer;
+  height: 1rem;
+  width: 100%;
+}
+[type=range]::-moz-range-track {
+  background: #d6d7d9;
+  border: 1px solid #757575;
+  cursor: pointer;
+  height: 1rem;
+  width: 100%;
+}
+[type=range]::-ms-track {
+  background: #d6d7d9;
+  border: 1px solid #757575;
+  cursor: pointer;
+  height: 1rem;
+  width: 100%;
+}
+[type=range]::-webkit-slider-thumb {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #757575;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  appearance: none;
+  margin-top: -0.375rem;
+}
+[type=range]::-moz-range-thumb {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #757575;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+[type=range]::-ms-thumb {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #757575;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+[type=range]::-ms-fill-lower {
+  background: #aeb0b5;
+  border: 1px solid #757575;
+  border-radius: 1.25rem;
+}
+[type=range]::-ms-fill-upper {
+  background: #aeb0b5;
+  border: 1px solid #757575;
+  border-radius: 1.25rem;
+}
+
+[type=file] {
+  border: none;
+  padding-left: 0;
+}
+
+.usa-date-of-birth { /* stylelint-disable-line */ }
+.usa-date-of-birth label {
+  margin-top: 0;
+}
+.usa-date-of-birth [type=number] {
+  -moz-appearance: textfield;
+}
+.usa-date-of-birth [type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+.usa-date-of-birth [type=number]::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+
+.usa-form-group-day,
+.usa-form-group-month,
+.usa-form-group-year {
+  clear: none;
+  float: left;
+  margin-right: 0.9375rem;
+  width: 3.125rem;
+}
+
+.usa-form-group-year {
+  width: 4.375rem;
+}
+
+/*# sourceMappingURL=inputs.css.map */

@@ -1,0 +1,370 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+#mega-menu,
+.mega-menu {
+  flex: 1 0 100%;
+  color: #005ea2;
+  width: 100%;
+  z-index: 2;
+}
+#mega-menu .panel-bottom-link,
+.mega-menu .panel-bottom-link {
+  position: unset;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  border: none;
+}
+#mega-menu .panel-bottom-link a,
+.mega-menu .panel-bottom-link a {
+  padding: 20px 25px 20px 7px;
+  font-weight: bold;
+}
+#mega-menu .panel-bottom-link a svg,
+.mega-menu .panel-bottom-link a svg {
+  width: 15px;
+}
+#mega-menu .column-three,
+.mega-menu .column-three {
+  display: none;
+}
+#mega-menu .vetnav-level2,
+.mega-menu .vetnav-level2 {
+  width: 100%;
+}
+#mega-menu .panel-top-link:nth-of-type(1),
+.mega-menu .panel-top-link:nth-of-type(1) {
+  display: block;
+  font-weight: bold;
+  padding-top: 15px;
+}
+#mega-menu .vetnav-panel--submenu:not([hidden]),
+.mega-menu .vetnav-panel--submenu:not([hidden]) {
+  position: static;
+}
+#mega-menu .vetnav-panel--submenu:not([hidden]) h3,
+.mega-menu .vetnav-panel--submenu:not([hidden]) h3 {
+  display: none;
+}
+#mega-menu .back-button,
+.mega-menu .back-button {
+  display: block;
+}
+#mega-menu .vetnav-panel,
+.mega-menu .vetnav-panel {
+  height: auto;
+}
+#mega-menu .mm-link-container-small,
+.mega-menu .mm-link-container-small {
+  background: #112e51;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+}
+#mega-menu .all-link-arrow,
+.mega-menu .all-link-arrow {
+  display: none;
+}
+#mega-menu .vetnav-level1:active, #mega-menu .vetnav-level1:visited, #mega-menu .vetnav-level1:focus, #mega-menu .vetnav-level1:hover,
+.mega-menu .vetnav-level1:active,
+.mega-menu .vetnav-level1:visited,
+.mega-menu .vetnav-level1:focus,
+.mega-menu .vetnav-level1:hover {
+  color: #ffffff;
+}
+#mega-menu .mm-links,
+.mega-menu .mm-links {
+  white-space: pre-wrap;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  #mega-menu,
+  .mega-menu {
+    min-height: 51px;
+  }
+  #mega-menu .vetnav-panel--submenu:not([hidden]),
+  .mega-menu .vetnav-panel--submenu:not([hidden]) {
+    position: absolute;
+    box-shadow: none;
+    width: 260px;
+    padding: 72px 0px 0px 28px;
+    white-space: normal;
+  }
+  #mega-menu .vetnav-panel--submenu:not([hidden]) h3,
+  .mega-menu .vetnav-panel--submenu:not([hidden]) h3 {
+    display: block;
+    color: #000000;
+    font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 0;
+  }
+  #mega-menu .vetnav-panel--submenu:not([hidden]).panel-white,
+  .mega-menu .vetnav-panel--submenu:not([hidden]).panel-white {
+    padding-top: 22px;
+  }
+  #mega-menu .vetnav-level1[aria-expanded=true],
+  .mega-menu .vetnav-level1[aria-expanded=true] {
+    border-top-color: #8a7237;
+  }
+  #mega-menu .vetnav-level1[aria-expanded=true]:active, #mega-menu .vetnav-level1[aria-expanded=true]:visited, #mega-menu .vetnav-level1[aria-expanded=true]:focus, #mega-menu .vetnav-level1[aria-expanded=true]:hover,
+  .mega-menu .vetnav-level1[aria-expanded=true]:active,
+  .mega-menu .vetnav-level1[aria-expanded=true]:visited,
+  .mega-menu .vetnav-level1[aria-expanded=true]:focus,
+  .mega-menu .vetnav-level1[aria-expanded=true]:hover {
+    color: #212121;
+  }
+  #mega-menu .vetnav-level2[aria-expanded=true],
+  .mega-menu .vetnav-level2[aria-expanded=true] {
+    box-shadow: -3px 0 #8a7237;
+  }
+  #mega-menu .vetnav-panel,
+  .mega-menu .vetnav-panel {
+    box-shadow: 0 7px 25px -11px #000000;
+    height: 490px;
+    width: 1008px;
+    left: 0;
+  }
+  #mega-menu .vetnav-panel .mm-links,
+  .mega-menu .vetnav-panel .mm-links {
+    padding: 5px 0px;
+  }
+  #mega-menu .vetnav-panel .mm-link-container,
+  .mega-menu .vetnav-panel .mm-link-container {
+    width: 225px;
+    margin-bottom: 0;
+  }
+  #mega-menu .column-one,
+  .mega-menu .column-one {
+    left: 20px;
+  }
+  #mega-menu .column-one.panel-white,
+  .mega-menu .column-one.panel-white {
+    background-color: #ffffff;
+    border-left: none;
+  }
+  #mega-menu .column-two,
+  .mega-menu .column-two {
+    border-left: none;
+    left: 280px;
+  }
+  #mega-menu .column-two.panel-white,
+  .mega-menu .column-two.panel-white {
+    background-color: #ffffff;
+    border-left: none;
+  }
+  #mega-menu .column-three,
+  .mega-menu .column-three {
+    border-left: none;
+    color: #000000;
+    left: 540px;
+    white-space: normal;
+  }
+  #mega-menu .column-three.vetnav-panel--submenu:not([hidden]),
+  .mega-menu .column-three.vetnav-panel--submenu:not([hidden]) {
+    padding: 86px 20px 20px 14px;
+    width: 240px;
+  }
+  #mega-menu .column-three.vetnav-panel--submenu:not([hidden]).panel-white,
+  .mega-menu .column-three.vetnav-panel--submenu:not([hidden]).panel-white {
+    padding-top: 30px;
+    background-color: #ffffff;
+    border-left: none;
+  }
+  #mega-menu .column-three a,
+  .mega-menu .column-three a {
+    font-weight: bold;
+    padding: 14px 0px 0px 0px;
+  }
+  #mega-menu .panel-bottom-link,
+  .mega-menu .panel-bottom-link {
+    margin: 0;
+  }
+  #mega-menu .all-link-arrow,
+  .mega-menu .all-link-arrow {
+    display: initial;
+  }
+  #mega-menu .panel-top-link,
+  .mega-menu .panel-top-link {
+    display: none !important;
+  }
+  #mega-menu .vetnav-level2,
+  .mega-menu .vetnav-level2 {
+    width: 15.1875rem;
+  }
+}
+#mega-menu .panel-title,
+.mega-menu .panel-title {
+  font-weight: bold;
+  color: #000000;
+}
+#mega-menu a.vetnav-level1,
+.mega-menu a.vetnav-level1 {
+  color: #ffffff;
+}
+#mega-menu .main-column,
+.mega-menu .main-column {
+  left: -230px;
+}
+#mega-menu .main-column.panel-white,
+.mega-menu .main-column.panel-white {
+  background-color: #ffffff;
+}
+#mega-menu .mm-marketing-container,
+.mega-menu .mm-marketing-container {
+  background-color: #ffffff;
+  height: 380px;
+  overflow: hidden;
+}
+#mega-menu .mm-marketing-container.mm-marketing-gray,
+.mega-menu .mm-marketing-container.mm-marketing-gray {
+  background-color: #f0f0f0;
+}
+#mega-menu .mm-marketing-container .mm-marketing-text,
+.mega-menu .mm-marketing-container .mm-marketing-text {
+  padding: 20px;
+}
+#mega-menu .mm-marketing-container .mm-marketing-text a,
+.mega-menu .mm-marketing-container .mm-marketing-text a {
+  font-size: 16px;
+}
+#mega-menu .mm-marketing-container p,
+.mega-menu .mm-marketing-container p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+#mega-menu #vetnav-column-one-col .panel-bottom-link,
+.mega-menu #vetnav-column-one-col .panel-bottom-link {
+  width: 200%;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  #mega-menu .panel-top-link,
+  .mega-menu .panel-top-link {
+    display: none;
+  }
+  #mega-menu .back-button,
+  .mega-menu .back-button {
+    display: none;
+  }
+  #mega-menu .vetnav-panel--submenu:not([hidden]) h3,
+  .mega-menu .vetnav-panel--submenu:not([hidden]) h3 {
+    font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+  }
+}
+#mega-menu #vetnav-menu,
+#mega-menu #vetnav,
+.mega-menu #vetnav-menu,
+.mega-menu #vetnav {
+  margin-top: 0;
+}
+#mega-menu .my-va-top-nav,
+.mega-menu .my-va-top-nav {
+  margin-left: auto;
+}
+#mega-menu .my-va-top-nav.current-page,
+.mega-menu .my-va-top-nav.current-page {
+  margin-left: auto;
+}
+#mega-menu .mm-marketing-container,
+.mega-menu .mm-marketing-container {
+  height: 380px;
+}
+#mega-menu .mm-marketing-container p,
+.mega-menu .mm-marketing-container p {
+  margin-top: 5px;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  #mega-menu .current-page,
+  .mega-menu .current-page {
+    box-shadow: inset 0 -5px 0 #005ea2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  #mega-menu .current-page a,
+  .mega-menu .current-page a {
+    padding: 1rem 0;
+  }
+  #mega-menu .vetnav-panel,
+  .mega-menu .vetnav-panel {
+    width: 768px;
+    height: 380px;
+  }
+  #mega-menu .column-one,
+  .mega-menu .column-one {
+    width: 24.375rem;
+  }
+  #mega-menu .column-two,
+  .mega-menu .column-two {
+    width: 24.375rem;
+  }
+  #mega-menu .column-three,
+  .mega-menu .column-three {
+    display: none;
+  }
+  #mega-menu .panel-bottom-link,
+  .mega-menu .panel-bottom-link {
+    position: absolute;
+    height: 60px;
+    width: 471px;
+    left: 280px;
+    border-bottom: 1px solid #d0d0d0;
+    z-index: 3;
+    top: 0;
+  }
+  #mega-menu .panel-bottom-link a,
+  .mega-menu .panel-bottom-link a {
+    background-size: 13px;
+    padding: 20px 0px;
+    display: inline-block;
+    padding-right: 25px;
+  }
+  #mega-menu .panel-bottom-link a svg,
+  .mega-menu .panel-bottom-link a svg {
+    height: 11px;
+    width: 11px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 1024px), print and (min-width: 1024px) {
+  #mega-menu .vetnav-panel,
+  .mega-menu .vetnav-panel {
+    width: 1024px;
+    height: 490px;
+  }
+  #mega-menu .panel-bottom-link,
+  .mega-menu .panel-bottom-link {
+    position: absolute;
+    width: 727px;
+  }
+  #mega-menu .column-one,
+  .mega-menu .column-one {
+    width: 260px;
+  }
+  #mega-menu .column-two,
+  .mega-menu .column-two {
+    width: 260px;
+  }
+  #mega-menu .column-three,
+  .mega-menu .column-three {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=m-megamenu.css.map */

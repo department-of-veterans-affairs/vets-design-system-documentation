@@ -1,0 +1,14 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.external-link-icon-black {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/exit-icon.png);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  padding-right: 1.2em;
+  position: relative;
+}
+
+/*# sourceMappingURL=m-external-link.css.map */

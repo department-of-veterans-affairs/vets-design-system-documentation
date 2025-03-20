@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.va-pagination {
+  border-top: 1px solid #f1f1f1;
+  font-size: 0.9em;
+  overflow: hidden;
+  padding: 1.25rem 0 0.625rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .va-pagination-prev {
+    margin-left: -1.875rem;
+    padding: 0 0.625rem 0 0;
+  }
+}
+@media (min-width: 481px) {
+  .va-pagination-prev:not(:empty) a::before {
+    content: "‹  ";
+  }
+}
+@media (max-width: 768px) {
+  .va-pagination-next {
+    margin-right: -1.875rem;
+    padding: 0 0 0 0.625rem;
+  }
+}
+@media (min-width: 481px) {
+  .va-pagination-next:not(:empty) a::after {
+    content: "  ›";
+  }
+}
+.va-pagination-prev, .va-pagination-next {
+  position: relative;
+}
+.va-pagination-prev:hover, .va-pagination-prev:focus, .va-pagination-next:hover, .va-pagination-next:focus {
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .va-pagination-prev, .va-pagination-next {
+    padding: 0 0.625rem;
+  }
+}
+.va-pagination-inner {
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .va-pagination-inner {
+    width: 12.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .va-pagination-inner {
+    width: 25rem;
+  }
+}
+.va-pagination-prev, .va-pagination-next, .va-pagination-inner {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+.va-pagination a {
+  line-height: 2;
+  text-decoration: none;
+}
+
+.va-pagination-inner a {
+  border-radius: 1000px;
+  display: inline-block;
+  height: 1.875rem;
+  margin: 0 0.3125rem;
+  width: 1.875rem;
+  text-decoration: none;
+}
+
+.va-pagination-inner a:hover,
+.va-pagination-inner a:focus,
+.va-pagination-active,
+.va-pagination-active:visited {
+  background: #005ea2;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=va-pagination.css.map */

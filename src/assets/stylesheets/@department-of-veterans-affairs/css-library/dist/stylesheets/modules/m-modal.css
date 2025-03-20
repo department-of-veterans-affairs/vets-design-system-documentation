@@ -1,0 +1,121 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+#va-modal {
+  display: none;
+}
+
+.va-modal {
+  background: rgba(50, 58, 69, 0.8);
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+}
+@media screen and (max-width: 481px) {
+  .va-modal {
+    overflow-y: scroll;
+  }
+}
+.va-modal .va-modal-body {
+  margin-right: 1.25rem;
+}
+.va-modal .va-modal-body p:first-of-type {
+  margin-top: 0;
+}
+.va-modal-title {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.va-modal-inner {
+  background: #ffffff;
+  margin: auto;
+  max-width: 25rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  cursor: auto;
+}
+@media screen and (max-width: 481px) {
+  .va-modal-inner {
+    transform: none;
+    top: 0;
+  }
+}
+.va-modal-alert {
+  max-width: 37.5rem;
+}
+.va-modal-alert .alert-actions {
+  margin-top: 1.5rem;
+}
+.va-modal-alert .alert-actions button {
+  margin: 0;
+}
+.va-modal-alert .alert-actions button + button {
+  margin-left: 1.25rem;
+}
+.va-modal-body {
+  overflow-wrap: break-word;
+  padding: 1.25rem;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.va-modal-large .va-modal-inner {
+  max-width: 46.875rem;
+  width: 75vw;
+}
+.va-modal-large .va-modal-inner .va-modal-body {
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+.va-modal-body h3 {
+  margin-top: 0;
+}
+
+.va-modal button {
+  white-space: nowrap;
+}
+
+button.va-modal-close {
+  background-color: transparent;
+  color: #005ea2;
+  font-size: 1.40625rem;
+  padding: 0;
+  position: absolute;
+  margin: 1rem;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: 9;
+}
+button.va-modal-close:hover {
+  background-color: transparent;
+  color: #1a4480;
+}
+button.va-modal-close:active {
+  background-color: transparent;
+  color: #112e51;
+}
+
+/*# sourceMappingURL=m-modal.css.map */

@@ -1,0 +1,4935 @@
+@charset "UTF-8";
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+GENERAL SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+----------------------------------------
+*/
+/*
+----------------------------------------
+Image path
+----------------------------------------
+Relative image file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Show compile warnings
+----------------------------------------
+Show Sass warnings when functions and
+mixins use non-standard tokens.
+AND
+Show updates and notifications.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Namespace
+----------------------------------------
+*/
+/*
+----------------------------------------
+Prefix separator
+----------------------------------------
+Set the character the separates
+responsive and state prefixes from the
+main class name.
+The default (":") needs to be preceded
+by two backslashes to be properly
+escaped.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Layout grid
+----------------------------------------
+Should the layout grid classes output
+with !important
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border box sizing
+----------------------------------------
+When set to true, sets the box-sizing
+property of all site elements to
+`border-box`.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Focus styles
+----------------------------------------
+*/
+/*
+----------------------------------------
+Icons
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+TYPOGRAPHY SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS typography tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/typesetting/overview/
+----------------------------------------
+*/
+/*
+----------------------------------------
+Root font size
+----------------------------------------
+Setting $theme-respect-user-font-size to
+true sets the root font size to 100% and
+uses ems for media queries
+----------------------------------------
+$theme-root-font-size only applies when
+$theme-respect-user-font-size is set to
+false.
+
+This will set the root font size
+as a specific px value and use px values
+for media queries.
+
+Accepts true or false
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global styles
+----------------------------------------
+Adds basic styling for the following
+unclassed elements:
+
+- paragraph: paragraph text
+- link: links
+- content: paragraph text, links,
+  headings, lists, and tables
+----------------------------------------
+*/
+/*
+----------------------------------------
+Broswer compatibility mode
+----------------------------------------
+When true, outputs woff and ttf font 
+formats in addition to woff2
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font path
+----------------------------------------
+Relative font file path
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom typeface tokens
+----------------------------------------
+Add a new custom typeface token if
+your project uses a typeface not already
+defined by USWDS.
+----------------------------------------
+USWDS defines the following tokens
+by default:
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+Add as many new tokens as you have
+custom typefaces. Reference your new
+token(s) in the type-based font settings
+using the quoted name of the token.
+
+For example:
+
+$theme-font-type-cond: 'example-font-token';
+
+display-name:
+The display name of your font
+
+cap-height:
+The height of a 500px `N` in Sketch
+----------------------------------------
+You should change `example-[style]-token`
+names to something more descriptive.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type-based font settings
+----------------------------------------
+Set the type-based tokens for your
+project from the following tokens,
+or from any new font tokens you added in
+$theme-typeface-tokens.
+----------------------------------------
+'georgia'
+'helvetica'
+'merriweather'
+'open-sans'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+'system'
+'tahoma'
+'verdana'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Custom font stacks
+----------------------------------------
+Add custom font stacks to any of the
+type-based fonts. Any USWDS typeface
+token already has a default stack.
+
+Custom stacks don't need to include the
+font's display name. It will
+automatically appear at the start of
+the stack.
+----------------------------------------
+Example:
+$theme-font-type-sans: 'source-sans-pro';
+$theme-font-sans-custom-stack: "Helvetica Neue", Helvetica, Arial, sans;
+
+Output:
+font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans;
+----------------------------------------
+*/
+/*
+----------------------------------------
+Add any custom font source files
+----------------------------------------
+If you want USWDS to generate additional
+@font-face declarations, add your font
+data below, following the example that
+follows.
+----------------------------------------
+USWDS automatically generates @font-face
+declarations for the following
+
+'merriweather'
+'public-sans'
+'roboto-mono'
+'source-sans-pro'
+
+These typefaces not require custom
+source files.
+----------------------------------------
+EXAMPLE
+
+- dir:
+  Directory relative to $theme-font-path
+- This directory should include fonts saved as
+  .woff2
+  ExampleSerif-Normal.woff2
+
+$theme-font-serif-custom-src: (
+  dir: 'custom/example-serif',
+  roman: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-Light',
+    400: 'ExampleSerif-Normal',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-Bold',
+    800: false,
+    900: false,
+  ),
+  italic: (
+    100: false,
+    200: false,
+    300: 'ExampleSerif-LightItalic',
+    400: 'ExampleSerif-Italic',
+    500: false,
+    600: false,
+    700: 'ExampleSerif-BoldItalic',
+    800: false,
+    900: false,
+  ),
+);
+----------------------------------------
+*/
+/*
+----------------------------------------
+Role-based font settings
+----------------------------------------
+Set the role-based tokens for your
+project from the following font-type
+tokens.
+----------------------------------------
+'cond'
+'icon'
+'lang'
+'mono'
+'sans'
+'serif'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Type scale
+----------------------------------------
+Define your project's type scale using
+values from the USWDS system type scale
+
+1-20
+----------------------------------------
+*/
+/*
+----------------------------------------
+Font weights
+----------------------------------------
+Assign weights 100-900
+Or use `false` for unneeded weights.
+----------------------------------------
+*/
+/*
+----------------------------------------
+General typography settings
+----------------------------------------
+Type scale tokens
+----------------------------------------
+micro:      10px
+1:          12px
+2:          13px
+3:          14px
+4:          15px
+5:          16px
+6:          17px
+7:          18px
+8:          20px
+9:          22px
+10:         24px
+11:         28px
+12:         32px
+13:         36px
+14:         40px
+15:         48px
+16:         56px
+17:         64px
+18:         80px
+19:         120px
+20:         140px
+----------------------------------------
+Line height tokens
+----------------------------------------
+1:    1
+2:    1.15
+3:    1.35
+4:    1.5
+5:    1.62
+6:    1.75
+----------------------------------------
+Font role tokens
+----------------------------------------
+'ui'
+'heading'
+'body'
+'code'
+'alt'
+----------------------------------------
+Measure (max-width) tokens
+----------------------------------------
+1:       44ex
+2:       60ex
+3:       64ex
+4:       68ex
+5:       74ex
+6:       88ex
+none:    none
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+COLOR SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS color tokens in the documentation:
+https://designsystem.digital.gov/design-tokens/color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Theme palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+State palette colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+COMPONENT SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS style tokens in the documentation:
+https://designsystem.digital.gov/design-tokens
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+SPACING SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS spacing units tokens in the
+documentation:
+https://designsystem.digital.gov/design-tokens/spacing-units
+----------------------------------------
+*/
+/*
+----------------------------------------
+Border radius
+----------------------------------------
+2px           2px
+0.5           4px
+1             8px
+1.5           12px
+2             16px
+2.5           20px
+3             24px
+4             32px
+5             40px
+6             48px
+7             56px
+8             64px
+9             72px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Column gap
+----------------------------------------
+2px         2px
+0.5         4px
+1           8px
+2           16px
+3           24px
+4           32px
+5           40px
+6           48px
+----------------------------------------
+*/
+/*
+----------------------------------------
+Grid container max-width
+----------------------------------------
+mobile
+mobile-lg
+tablet
+tablet-lg
+desktop
+desktop-lg
+widescreen
+----------------------------------------
+*/
+/*
+----------------------------------------
+Site
+----------------------------------------
+*/
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+UTILITIES SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS utilities in the documentation:
+https://designsystem.digital.gov/utilities
+----------------------------------------
+*/
+/*
+----------------------------------------
+map-collect()
+----------------------------------------
+Collect multiple maps into a single
+large map
+source: https://gist.github.com/bigglesrocks/d75091700f8f2be5abfe
+----------------------------------------
+*/
+/*
+----------------------------------------
+Utility breakpoints
+----------------------------------------
+Which breakpoints does your project
+need? Select as `true` any breakpoint
+used by utilities or layout grid
+----------------------------------------
+*/
+/*
+----------------------------------------
+Global colors
+----------------------------------------
+The following palettes will be added to
+- background-color
+- border-color
+- color
+- text-decoration-color
+----------------------------------------
+*/
+/*
+----------------------------------------
+Settings
+----------------------------------------
+*/
+/*
+----------------------------------------
+Values
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+append-important()
+----------------------------------------
+Append `!important` to a list
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-last()
+----------------------------------------
+Return the last item of a list,
+Return null if the value is null
+----------------------------------------
+*/
+/*
+----------------------------------------
+de-list()
+----------------------------------------
+Transform a one-element list or arglist
+into that single element.
+----------------------------------------
+(1) => 1
+((1)) => (1)
+----------------------------------------
+*/
+/*
+----------------------------------------
+error-not-token()
+----------------------------------------
+Returns a common not-a-token error.
+----------------------------------------
+*/
+/*
+----------------------------------------
+uswds-error()
+----------------------------------------
+Allow the system to pass an error as text
+to test error states in unit testing
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-default()
+----------------------------------------
+Returns the default value from a map
+of project defaults
+get-default("bg-color")
+> $theme-body-background-color
+----------------------------------------
+*/
+/*
+----------------------------------------
+has-important()
+----------------------------------------
+Check to see if `!important` is
+being passed in a mixin's props
+----------------------------------------
+*/
+/*
+----------------------------------------
+map-deep-get()
+----------------------------------------
+@author Hugo Giraudel
+@access public
+@param {Map} $map - Map
+@param {Arglist} $keys - Key chain
+@return {*} - Desired value
+----------------------------------------
+*/
+/*
+----------------------------------------
+multi-cat()
+----------------------------------------
+Concatenate two lists
+----------------------------------------
+*/
+/*
+----------------------------------------
+remove()
+----------------------------------------
+Remove a value from a list
+----------------------------------------
+*/
+/*
+----------------------------------------
+smart-quote()
+----------------------------------------
+Quotes strings
+Inspects `px`, `xs`, and `xl` numbers
+Leaves bools as is
+----------------------------------------
+*/
+/*
+----------------------------------------
+str-replace()
+----------------------------------------
+Replace any substring with another
+string
+----------------------------------------
+*/
+/*
+----------------------------------------
+str-split()
+----------------------------------------
+Split a string at a given separator
+and convert into a list of substrings
+----------------------------------------
+*/
+/*
+----------------------------------------
+strip-unit()
+----------------------------------------
+Remove the unit of a length
+@author Hugo Giraudel
+@param {Number} $number - Number to remove unit from
+@return {Number} - Unitless number
+----------------------------------------
+*/
+/*
+----------------------------------------
+base-to-map()
+@TODO: Deprecate and delete
+----------------------------------------
+Convert a single base to a USWDS
+value map.
+
+Candidate for deprecation if we remove
+isReadable
+----------------------------------------
+*/
+/*
+----------------------------------------
+to-number()
+----------------------------------------
+Casts a string into a number
+----------------------------------------
+@param {String | Number} $value - Value to be parsed
+@return {Number}
+----------------------------------------
+*/
+/*
+----------------------------------------
+unpack()
+----------------------------------------
+Create lists of single items from lists
+of lists.
+----------------------------------------
+(1, (2.1, 2.2), 3) -->
+(1, 2.1, 2.2, 3)
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-system-color()
+----------------------------------------
+Derive a system color from its
+family, value, and vivid or a passed
+variable that is, itself, a list
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+color()
+----------------------------------------
+Derive a color from a color shortcode
+----------------------------------------
+*/
+/*
+----------------------------------------
+set-theme-color()
+----------------------------------------
+Derive a color from a system color token
+or a hex value
+----------------------------------------
+*/
+/*
+----------------------------------------
+px-to-rem()
+----------------------------------------
+Converts a value in px to a value in rem
+----------------------------------------
+*/
+/*
+----------------------------------------
+rem-to-user-em()
+----------------------------------------
+Converts a value in rem to a value in
+[user-settings] em for use in media
+queries
+----------------------------------------
+*/
+/*
+----------------------------------------
+px-to-user-em()
+----------------------------------------
+Converts a value in px to a value in em
+----------------------------------------
+*/
+/*
+----------------------------------------
+rem-to-px()
+----------------------------------------
+Converts a value in rem to a value in px
+----------------------------------------
+*/
+/*
+----------------------------------------
+spacing-multiple()
+----------------------------------------
+Converts a spacing unit multiple into
+the desired final units (currently rem)
+----------------------------------------
+*/
+/*
+----------------------------------------
+units()
+----------------------------------------
+Converts a spacing unit into
+the desired final units (currently rem)
+----------------------------------------
+*/
+/*
+----------------------------------------
+number-to-token()
+----------------------------------------
+Converts an integer or numeric value
+into a system value
+
+Ex: 0.5   --> '05'
+    -1px  --> 'neg-1px'
+----------------------------------------
+*/
+/*
+----------------------------------------
+Project fonts
+----------------------------------------
+Collects font settings in a map for
+looping.
+----------------------------------------
+*/
+/*
+----------------------------------------
+Luminance ranges
+----------------------------------------
+*/
+/*
+----------------------------------------
+ns()
+----------------------------------------
+Add a namesspace of $type if that
+namespace is set to output
+----------------------------------------
+*/
+/*
+----------------------------------------
+Line height
+----------------------------------------
+*/
+/*
+----------------------------------------
+Measure
+----------------------------------------
+*/
+/*
+----------------------------------------
+cap-height()
+----------------------------------------
+Get the cap height of a valid typeface
+----------------------------------------
+*/
+/*
+----------------------------------------
+validate-typeface-token()
+----------------------------------------
+Check to see if a typeface-token exists.
+Throw an error if a passed token does
+not exist in the typeface-token map.
+----------------------------------------
+*/
+/*
+----------------------------------------
+convert-to-font-type()
+----------------------------------------
+Converts a font-role token into a
+font-type token. Leaves font-type tokens
+unchanged.
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-sources()
+----------------------------------------
+Outputs a list of font sources used in
+a @font-face declaration.
+
+$theme-font-browser-compatibility: true - output woff2, woff, ttf
+$theme-font-browser-compatibility: false - output woff2
+
+@param stem: string - [font path]/[custom-src.dir]/[custom-src.[style].[weight]]
+@output: string
+
+filetypes must be one of the filetypes set in variables/$project-font-face-filetypes (woff, woff2, ttf)
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-font-stack()
+----------------------------------------
+Get a font stack from a style- or
+role-based font token.
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-typeface-token()
+----------------------------------------
+Get a typeface token from a font-type or
+font-role token.
+----------------------------------------
+*/
+/*
+----------------------------------------
+normalize-type-scale()
+----------------------------------------
+Normalizes a specific face's optical size
+to a set target
+----------------------------------------
+*/
+/*
+----------------------------------------
+system-type-scale()
+----------------------------------------
+Get a value from the system type scale
+----------------------------------------
+*/
+/*
+----------------------------------------
+Easing
+----------------------------------------
+*/
+/*  deprecated.scss
+    ---
+    Occasionally the design system will deprecate
+    old variables or functionality. If we replace
+    the old functionality with something new, this is a
+    place to connect the old functionality to the
+    new functionality, in the service of better
+    continuity and backwards compatibility within a
+    major release cycle.
+
+    Note the USWDS version where we deprecated the
+    old functionality in a comment.
+
+    Be sure to update notifications.scss.
+
+    This file should started fresh at each
+    major version.
+*/
+/*
+----------------------------------------
+advanced-color()
+----------------------------------------
+Derive a color from a color triplet:
+[family], [grade], [variant]
+----------------------------------------
+*/
+/*
+----------------------------------------
+calculate-grade()
+----------------------------------------
+Derive the grade equivalent any color,
+even non-token colors
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-assignment()
+----------------------------------------
+Get the system token equivalent of any
+theme color token
+----------------------------------------
+*/
+/*
+----------------------------------------
+is-system-color-token()
+----------------------------------------
+Return whether a token is a system
+color token
+----------------------------------------
+*/
+/*
+----------------------------------------
+is-theme-color-token()
+----------------------------------------
+Return whether a token is a theme
+color token
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-family()
+----------------------------------------
+Returns the family of a color token.
+Returns: color-family
+color-token-family("accent-warm-vivid")
+> "accent-warm"
+color-token-family("red-50v")
+> "red"
+color-token-variant(("red", 50, "vivid"))
+> "red"
+----------------------------------------
+*/
+/*
+----------------------------------------
+decompose()
+----------------------------------------
+Convert a color token into into a list
+of form [family], [grade], [variant]
+Vivid variants return "vivid" as the
+variant.
+If neither grade nor variant exists,
+returns 'null'
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-family()
+----------------------------------------
+Returns the family of a color token.
+Returns: color-family
+color-token-family("accent-warm-vivid")
+> "accent-warm"
+color-token-family("red-50v")
+> "red"
+color-token-variant(("red", 50, "vivid"))
+> "red"
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-grade()
+----------------------------------------
+Returns the grade of a USWDS color token.
+Returns: color-grade
+color-token-grade("accent-warm")
+> "root"
+color-token-grade("accent-warm-vivid")
+> "root"
+color-token-grade("accent-warm-darker")
+> "darker"
+color-token-grade("red-50v")
+> 50
+color-token-variant(("red", 50, "vivid"))
+> 50
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-family()
+----------------------------------------
+Returns the family of a color token.
+Returns: color-family
+color-token-family("accent-warm-vivid")
+> "accent-warm"
+color-token-family("red-50v")
+> "red"
+color-token-variant(("red", 50, "vivid"))
+> "red"
+----------------------------------------
+*/
+/*
+----------------------------------------
+is-color-token()
+----------------------------------------
+Returns whether a given string is a
+USWDS color token.
+----------------------------------------
+*/
+/*
+----------------------------------------
+pow()
+----------------------------------------
+Raises a unitless number to the power
+of another unitless number
+Includes helper functions
+----------------------------------------
+*/
+/*
+----------------------------------------
+Helper functions
+----------------------------------------
+*/
+/* factorial()
+----------------------------------------
+*/
+/* summation()
+----------------------------------------
+*/
+/* exp-maclaurin()
+----------------------------------------
+*/
+/* ln()
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-type()
+----------------------------------------
+Returns the type of a color token.
+Returns: "system" | "theme"
+----------------------------------------
+*/
+/*
+----------------------------------------
+color-token-variant()
+----------------------------------------
+Returns the variant of color token.
+Returns: "vivid" | false
+color-token-variant("accent-warm")
+> false
+color-token-variant("accent-warm-vivid")
+> "vivid"
+color-token-variant("red-50v")
+> "vivid"
+color-token-variant(("red", 50, "vivid"))
+> "vivid"
+----------------------------------------
+*/
+/*
+----------------------------------------
+magic-number()
+----------------------------------------
+Returns the magic number of two color
+grades. Takes numbers or color tokens.
+magic-number(50, 10)
+return: 40
+magic-number("red-50", "red-10")
+return: 40
+----------------------------------------
+*/
+/*
+----------------------------------------
+is-accessible-magic-number()
+----------------------------------------
+Returns whether two grades achieve
+specified target color contrast
+Returns: true | false
+is-accessible-magic-number(10, 50, "AA")
+> false
+is-accessible-magic-number(10, 60, "AA")
+> true
+----------------------------------------
+*/
+/*
+----------------------------------------
+wcag-magic-number()
+----------------------------------------
+Returns the magic number of a specific
+wcag grade:
+"AA"
+"AA-Large"
+"AAA"
+wcag-magic-number("AA")
+> 50
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-link-tokens-from-bg()
+----------------------------------------
+Get accessible link colors for a given
+background color
+returns: link-token, hover-token
+get-link-tokens-from-bg(
+  "black",
+  "red-60",
+  "red-10",
+  "AA")
+> "red-10", "red-5"
+get-link-tokens-from-bg(
+  "black",
+  "red-60v",
+  "red-10v",
+  "AA-large")
+> "red-60v", "red-50v"
+get-link-tokens-from-bg(
+  "black",
+  "red-5v",
+  "red-60v",
+  "AA")
+> "red-5v", "white"
+get-link-tokens-from-bg(
+  "black",
+  "white",
+  "red-60v",
+  "AA")
+> "white", "white"
+----------------------------------------
+*/
+/*
+----------------------------------------
+next-token()
+----------------------------------------
+Returns next "darker" or "lighter" color
+token of the same token type and variant.
+Returns: color-token | false
+next-token("accent-warm", "lighter")
+> "accent-warm-light"
+next-token("gray-10", "lighter")
+> "gray-5"
+next-token("gray-5", "lighter")
+> "white"
+next-token("white", "lighter")
+> false
+next-token("red-50v", "darker")
+> "red-60v"
+next-token("red-50", "darker")
+> "red-60"
+next-token("red-80v", "darker")
+> "red-90"
+next-token("red-90", "darker")
+> "black"
+next-token("white", "darker")
+> "gray-5"
+next-token("black", "lighter")
+> "gray-90"
+----------------------------------------
+*/
+/*
+----------------------------------------
+test-colors()
+----------------------------------------
+Check to see if all system colors
+fall between the proper relative
+luminance range for their grade.
+Has a couple quirks, as the luminance()
+function returns slightly different
+results than expected.
+----------------------------------------
+*/
+/*
+----------------------------------------
+columns()
+----------------------------------------
+outputs a grid-col number based on
+the number of desired columns in the
+12-column grid
+
+Ex: columns(2) --> 6
+    grid-col(columns(2))
+----------------------------------------
+*/
+/*
+----------------------------------------
+USWDS Properties
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-uswds-value()
+----------------------------------------
+Finds and outputs a value from the
+USWDS standard values.
+
+Used to build other standard utility
+functions and mixins.
+----------------------------------------
+*/
+/*
+----------------------------------------
+get-standard-values()
+----------------------------------------
+Gets a map of USWDS standard values
+for a property
+----------------------------------------
+*/
+/*
+----------------------------------------
+border-radius()
+----------------------------------------
+Get a border-radius from the system
+border-radii
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-weight()
+fw()
+----------------------------------------
+Get a font-weight value from the
+system font-weight
+----------------------------------------
+*/
+/*
+----------------------------------------
+feature()
+----------------------------------------
+Gets a valid USWDS font feature setting
+----------------------------------------
+*/
+/*
+----------------------------------------
+flex()
+----------------------------------------
+Gets a valid USWDS flex value
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-family()
+family()
+----------------------------------------
+Get a font-family stack from a
+role-based or type-based font family
+----------------------------------------
+*/
+/*
+----------------------------------------
+letter-spacing()
+ls()
+----------------------------------------
+Get a letter-spacing value from the
+system letter-spacing
+----------------------------------------
+*/
+/*
+----------------------------------------
+measure()
+----------------------------------------
+Gets a valid USWDS reading line length
+----------------------------------------
+*/
+/*
+----------------------------------------
+opacity()
+----------------------------------------
+Get an opacity from the system
+opacities
+----------------------------------------
+*/
+/*
+----------------------------------------
+order()
+----------------------------------------
+Get an order value from the
+system orders
+----------------------------------------
+*/
+/*
+----------------------------------------
+radius()
+----------------------------------------
+Get a border-radius value from the
+system letter-spacing
+----------------------------------------
+*/
+/*
+----------------------------------------
+font-size()
+----------------------------------------
+Get type scale value from a [family] and
+[scale]
+----------------------------------------
+*/
+/*
+----------------------------------------
+z-index()
+z()
+----------------------------------------
+Get a z-index value from the
+system z-index
+----------------------------------------
+*/
+/*
+----------------------------------------
+utility-font()
+----------------------------------------
+Get a normalized font-size in rem from
+a family and a type size in either
+system scale or project scale
+----------------------------------------
+Not the public-facing function.
+Used for building the utilities and
+withholds certain errors.
+----------------------------------------
+*/
+/*
+----------------------------------------
+family()
+----------------------------------------
+Get a font-family stack
+----------------------------------------
+*/
+/*
+----------------------------------------
+size()
+----------------------------------------
+Get a normalized font-size in rem from
+a family and a type size in either
+system scale or project scale
+----------------------------------------
+*/
+/*
+----------------------------------------
+font()
+----------------------------------------
+Get a font-family stack
+AND
+Get a normalized font-size in rem from
+a family and a type size in either
+system scale or project scale
+----------------------------------------
+*/
+/*
+----------------------------------------
+typeset()
+----------------------------------------
+Sets:
+- family
+- size
+- line-height
+----------------------------------------
+*/
+/* stylelint-disable max-nesting-depth */
+/*
+----------------------------------------
+@render-pseudoclass
+----------------------------------------
+Build a pseucoclass utiliy from values
+calculated in the @render-utilities-in
+loop
+----------------------------------------
+*/
+/*
+----------------------------------------
+@render-utility
+----------------------------------------
+Build a utility from values calculated
+in the @render-utilities-in loop
+----------------------------------------
+TODO: Determine the proper use of
+unquote() in the following. Changed to
+account for a 'interpolation near
+operators will be simplified in a
+future version of Sass' warning.
+----------------------------------------
+*/
+/*
+----------------------------------------
+@render-utilities-in
+----------------------------------------
+The master loop that sets the building
+blocks of utilities from the values
+in individual rule settings and loops
+through all possible variants
+----------------------------------------
+*/
+/* stylelint-enable */
+/*  notifications.scss
+    ---
+    Adds a notification at the top of each USWDS
+    compile. Use this file for important notifications
+    and updates to the design system.
+
+    This file should started fresh at each
+    major version.
+
+*/
+/* prettier-ignore */
+/* prettier-ignore */
+/* stylelint-disable */
+@font-face {
+  font-family: "Roboto Mono Web";
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/roboto-mono/roboto-mono-v5-latin-300.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono Web";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/roboto-mono/roboto-mono-v5-latin-regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono Web";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/roboto-mono/roboto-mono-v5-latin-700.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono Web";
+  font-style: italic;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/roboto-mono/roboto-mono-v5-latin-300italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono Web";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/roboto-mono/roboto-mono-v5-latin-italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono Web";
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/roboto-mono/roboto-mono-v5-latin-700italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro Web";
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/source-sans-pro/sourcesanspro-light-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro Web";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro Web";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/source-sans-pro/sourcesanspro-bold-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro Web";
+  font-style: italic;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/source-sans-pro/sourcesanspro-lightitalic-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro Web";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/source-sans-pro/sourcesanspro-italic-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Sans Pro Web";
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/source-sans-pro/sourcesanspro-bolditalic-webfont.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather Web";
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather Web";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather Web";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather Web";
+  font-style: italic;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-LightItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather Web";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather Web";
+  font-style: italic;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-BoldItalic.woff2) format("woff2");
+}
+/* stylelint-enable */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.row {
+  max-width: 39.0625rem;
+}
+
+.row .row {
+  margin: 0 -0.5859375rem;
+}
+
+.column,
+.columns {
+  padding-left: 0.5859375rem;
+  padding-right: 0.5859375rem;
+}
+
+@media only screen {
+  .column,
+  .columns {
+    padding-left: 0.5859375rem;
+    padding-right: 0.5859375rem;
+  }
+  .row.small-uncollapse > .column,
+  .row.small-uncollapse > .columns {
+    padding-left: 0.5859375rem;
+    padding-right: 0.5859375rem;
+  }
+}
+@media only screen and (min-width: 40.0625em) {
+  .column,
+  .columns {
+    padding-left: 0.5859375rem;
+    padding-right: 0.5859375rem;
+  }
+  .row.medium-uncollapse > .column,
+  .row.medium-uncollapse > .columns {
+    padding-left: 0.5859375rem;
+    padding-right: 0.5859375rem;
+  }
+  .column,
+  .columns {
+    padding-left: 0.5859375rem;
+    padding-right: 0.5859375rem;
+  }
+  .row.large-uncollapse > .column,
+  .row.large-uncollapse > .columns {
+    padding-left: 0.5859375rem;
+    padding-right: 0.5859375rem;
+  }
+}
+[class*=block-grid-] {
+  margin: 0 -0.390625rem;
+}
+
+[class*=block-grid-] > li {
+  padding: 0 0.390625rem 0.78125rem;
+}
+
+/* latin */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bitter Regular"), local("Bitter-Regular"), url("@department-of-veterans-affairs/css-library/dist/fonts/bitter-regular.woff2") format("woff2"), url("@department-of-veterans-affairs/css-library/dist/fonts/bitter-regular.ttf") format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Bitter Bold"), local("Bitter-Bold"), url("@department-of-veterans-affairs/css-library/dist/fonts/bitter-bold.woff2") format("woff2"), url("@department-of-veterans-affairs/css-library/dist/fonts/bitter-bold.ttf") format("truetype");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.no-text-transform {
+  text-transform: none;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.va-button-link {
+  background: none;
+  background-color: transparent !important;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  padding: 0 !important;
+  margin: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  color: #005ea2 !important;
+  font-weight: normal;
+  text-decoration: underline;
+  display: inline;
+  width: auto !important;
+  line-height: inherit;
+}
+.va-button-link:hover {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  padding: 0 !important;
+  color: #005ea2;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+}
+.va-button-link:active {
+  background: rgba(0, 0, 0, 0.05);
+}
+.va-button-link:focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+  outline-offset: 0;
+}
+.va-button-link:disabled {
+  text-decoration: none;
+  color: #aeb0b5 !important;
+}
+
+.dashed-underline {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+.dashed-underline:hover {
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.js-visual {
+  visibility: hidden !important;
+}
+
+.js-hide {
+  display: none !important;
+}
+
+.heading-level-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.heading-level-2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+.heading-level-3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.heading-level-4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+.heading-level-5 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+.heading-level-6 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/core/fonts";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/* stylelint-disable at-rule-empty-line-before */
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(@uswds/uswds/fonts/merriweather/Latin-Merriweather-Italic.woff2) format("woff2");
+}
+/* stylelint-enable */
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/*
+  ***THIS IS USWDS v1***
+  Original import: @import "~uswds/src/stylesheets/core/base";
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+.lt-ie9 * {
+  filter: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+[hidden] {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+button:not([disabled]):focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+iframe:focus,
+[href]:focus,
+[tabindex]:focus,
+[contentEditable=true]:focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+.usa-focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+.usa-button,
+.usa-button-primary,
+.usa-button:visited,
+.usa-button-primary:visited,
+button,
+[type=button],
+[type=submit],
+[type=reset],
+[type=image] {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  appearance: none;
+  background-color: #005ea2;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-button,
+  .usa-button-primary,
+  .usa-button:visited,
+  .usa-button-primary:visited,
+  button,
+  [type=button],
+  [type=submit],
+  [type=reset],
+  [type=image] {
+    width: auto;
+  }
+}
+.usa-button:hover, .usa-button.usa-button-hover,
+.usa-button-primary:hover,
+.usa-button-primary.usa-button-hover,
+.usa-button:visited:hover,
+.usa-button:visited.usa-button-hover,
+.usa-button-primary:visited:hover,
+.usa-button-primary:visited.usa-button-hover,
+button:hover,
+button.usa-button-hover,
+[type=button]:hover,
+[type=button].usa-button-hover,
+[type=submit]:hover,
+[type=submit].usa-button-hover,
+[type=reset]:hover,
+[type=reset].usa-button-hover,
+[type=image]:hover,
+[type=image].usa-button-hover {
+  background-color: #1a4480;
+  border-bottom: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+.usa-button:active, .usa-button.usa-button-active,
+.usa-button-primary:active,
+.usa-button-primary.usa-button-active,
+.usa-button:visited:active,
+.usa-button:visited.usa-button-active,
+.usa-button-primary:visited:active,
+.usa-button-primary:visited.usa-button-active,
+button:active,
+button.usa-button-active,
+[type=button]:active,
+[type=button].usa-button-active,
+[type=submit]:active,
+[type=submit].usa-button-active,
+[type=reset]:active,
+[type=reset].usa-button-active,
+[type=image]:active,
+[type=image].usa-button-active {
+  background-color: #162e51;
+}
+.usa-button.usa-button-primary-alt,
+.usa-button-primary.usa-button-primary-alt,
+.usa-button:visited.usa-button-primary-alt,
+.usa-button-primary:visited.usa-button-primary-alt,
+button.usa-button-primary-alt,
+[type=button].usa-button-primary-alt,
+[type=submit].usa-button-primary-alt,
+[type=reset].usa-button-primary-alt,
+[type=image].usa-button-primary-alt {
+  background-color: #02bfe7;
+  color: #212121;
+}
+.usa-button.usa-button-primary-alt:hover, .usa-button.usa-button-primary-alt.usa-button-hover,
+.usa-button-primary.usa-button-primary-alt:hover,
+.usa-button-primary.usa-button-primary-alt.usa-button-hover,
+.usa-button:visited.usa-button-primary-alt:hover,
+.usa-button:visited.usa-button-primary-alt.usa-button-hover,
+.usa-button-primary:visited.usa-button-primary-alt:hover,
+.usa-button-primary:visited.usa-button-primary-alt.usa-button-hover,
+button.usa-button-primary-alt:hover,
+button.usa-button-primary-alt.usa-button-hover,
+[type=button].usa-button-primary-alt:hover,
+[type=button].usa-button-primary-alt.usa-button-hover,
+[type=submit].usa-button-primary-alt:hover,
+[type=submit].usa-button-primary-alt.usa-button-hover,
+[type=reset].usa-button-primary-alt:hover,
+[type=reset].usa-button-primary-alt.usa-button-hover,
+[type=image].usa-button-primary-alt:hover,
+[type=image].usa-button-primary-alt.usa-button-hover {
+  background-color: #00a6d2;
+}
+.usa-button.usa-button-primary-alt:active, .usa-button.usa-button-primary-alt.usa-button-active,
+.usa-button-primary.usa-button-primary-alt:active,
+.usa-button-primary.usa-button-primary-alt.usa-button-active,
+.usa-button:visited.usa-button-primary-alt:active,
+.usa-button:visited.usa-button-primary-alt.usa-button-active,
+.usa-button-primary:visited.usa-button-primary-alt:active,
+.usa-button-primary:visited.usa-button-primary-alt.usa-button-active,
+button.usa-button-primary-alt:active,
+button.usa-button-primary-alt.usa-button-active,
+[type=button].usa-button-primary-alt:active,
+[type=button].usa-button-primary-alt.usa-button-active,
+[type=submit].usa-button-primary-alt:active,
+[type=submit].usa-button-primary-alt.usa-button-active,
+[type=reset].usa-button-primary-alt:active,
+[type=reset].usa-button-primary-alt.usa-button-active,
+[type=image].usa-button-primary-alt:active,
+[type=image].usa-button-primary-alt.usa-button-active {
+  background-color: #046b99;
+  color: #ffffff;
+}
+.usa-button.usa-button-secondary,
+.usa-button-primary.usa-button-secondary,
+.usa-button:visited.usa-button-secondary,
+.usa-button-primary:visited.usa-button-secondary,
+button.usa-button-secondary,
+[type=button].usa-button-secondary,
+[type=submit].usa-button-secondary,
+[type=reset].usa-button-secondary,
+[type=image].usa-button-secondary {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #005ea2;
+  color: #005ea2;
+}
+.usa-button.usa-button-secondary:hover, .usa-button.usa-button-secondary.usa-button-hover,
+.usa-button-primary.usa-button-secondary:hover,
+.usa-button-primary.usa-button-secondary.usa-button-hover,
+.usa-button:visited.usa-button-secondary:hover,
+.usa-button:visited.usa-button-secondary.usa-button-hover,
+.usa-button-primary:visited.usa-button-secondary:hover,
+.usa-button-primary:visited.usa-button-secondary.usa-button-hover,
+button.usa-button-secondary:hover,
+button.usa-button-secondary.usa-button-hover,
+[type=button].usa-button-secondary:hover,
+[type=button].usa-button-secondary.usa-button-hover,
+[type=submit].usa-button-secondary:hover,
+[type=submit].usa-button-secondary.usa-button-hover,
+[type=reset].usa-button-secondary:hover,
+[type=reset].usa-button-secondary.usa-button-hover,
+[type=image].usa-button-secondary:hover,
+[type=image].usa-button-secondary.usa-button-hover {
+  box-shadow: inset 0 0 0 2px #1a4480;
+  color: #1a4480;
+}
+.usa-button.usa-button-secondary:active, .usa-button.usa-button-secondary.usa-button-active,
+.usa-button-primary.usa-button-secondary:active,
+.usa-button-primary.usa-button-secondary.usa-button-active,
+.usa-button:visited.usa-button-secondary:active,
+.usa-button:visited.usa-button-secondary.usa-button-active,
+.usa-button-primary:visited.usa-button-secondary:active,
+.usa-button-primary:visited.usa-button-secondary.usa-button-active,
+button.usa-button-secondary:active,
+button.usa-button-secondary.usa-button-active,
+[type=button].usa-button-secondary:active,
+[type=button].usa-button-secondary.usa-button-active,
+[type=submit].usa-button-secondary:active,
+[type=submit].usa-button-secondary.usa-button-active,
+[type=reset].usa-button-secondary:active,
+[type=reset].usa-button-secondary.usa-button-active,
+[type=image].usa-button-secondary:active,
+[type=image].usa-button-secondary.usa-button-active {
+  box-shadow: inset 0 0 0 2px #162e51;
+  color: #162e51;
+}
+.usa-button.usa-button-secondary-inverse, .usa-button.usa-button-outline-inverse,
+.usa-button-primary.usa-button-secondary-inverse,
+.usa-button-primary.usa-button-outline-inverse,
+.usa-button:visited.usa-button-secondary-inverse,
+.usa-button:visited.usa-button-outline-inverse,
+.usa-button-primary:visited.usa-button-secondary-inverse,
+.usa-button-primary:visited.usa-button-outline-inverse,
+button.usa-button-secondary-inverse,
+button.usa-button-outline-inverse,
+[type=button].usa-button-secondary-inverse,
+[type=button].usa-button-outline-inverse,
+[type=submit].usa-button-secondary-inverse,
+[type=submit].usa-button-outline-inverse,
+[type=reset].usa-button-secondary-inverse,
+[type=reset].usa-button-outline-inverse,
+[type=image].usa-button-secondary-inverse,
+[type=image].usa-button-outline-inverse {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #ffffff;
+  color: #ffffff;
+}
+.usa-button.usa-button-secondary-inverse:hover, .usa-button.usa-button-secondary-inverse.usa-button-hover, .usa-button.usa-button-outline-inverse:hover, .usa-button.usa-button-outline-inverse.usa-button-hover,
+.usa-button-primary.usa-button-secondary-inverse:hover,
+.usa-button-primary.usa-button-secondary-inverse.usa-button-hover,
+.usa-button-primary.usa-button-outline-inverse:hover,
+.usa-button-primary.usa-button-outline-inverse.usa-button-hover,
+.usa-button:visited.usa-button-secondary-inverse:hover,
+.usa-button:visited.usa-button-secondary-inverse.usa-button-hover,
+.usa-button:visited.usa-button-outline-inverse:hover,
+.usa-button:visited.usa-button-outline-inverse.usa-button-hover,
+.usa-button-primary:visited.usa-button-secondary-inverse:hover,
+.usa-button-primary:visited.usa-button-secondary-inverse.usa-button-hover,
+.usa-button-primary:visited.usa-button-outline-inverse:hover,
+.usa-button-primary:visited.usa-button-outline-inverse.usa-button-hover,
+button.usa-button-secondary-inverse:hover,
+button.usa-button-secondary-inverse.usa-button-hover,
+button.usa-button-outline-inverse:hover,
+button.usa-button-outline-inverse.usa-button-hover,
+[type=button].usa-button-secondary-inverse:hover,
+[type=button].usa-button-secondary-inverse.usa-button-hover,
+[type=button].usa-button-outline-inverse:hover,
+[type=button].usa-button-outline-inverse.usa-button-hover,
+[type=submit].usa-button-secondary-inverse:hover,
+[type=submit].usa-button-secondary-inverse.usa-button-hover,
+[type=submit].usa-button-outline-inverse:hover,
+[type=submit].usa-button-outline-inverse.usa-button-hover,
+[type=reset].usa-button-secondary-inverse:hover,
+[type=reset].usa-button-secondary-inverse.usa-button-hover,
+[type=reset].usa-button-outline-inverse:hover,
+[type=reset].usa-button-outline-inverse.usa-button-hover,
+[type=image].usa-button-secondary-inverse:hover,
+[type=image].usa-button-secondary-inverse.usa-button-hover,
+[type=image].usa-button-outline-inverse:hover,
+[type=image].usa-button-outline-inverse.usa-button-hover {
+  box-shadow: inset 0 0 0 2px #dfe1e2;
+  color: #dfe1e2;
+}
+.usa-button.usa-button-secondary-inverse:active, .usa-button.usa-button-secondary-inverse.usa-button-active, .usa-button.usa-button-outline-inverse:active, .usa-button.usa-button-outline-inverse.usa-button-active,
+.usa-button-primary.usa-button-secondary-inverse:active,
+.usa-button-primary.usa-button-secondary-inverse.usa-button-active,
+.usa-button-primary.usa-button-outline-inverse:active,
+.usa-button-primary.usa-button-outline-inverse.usa-button-active,
+.usa-button:visited.usa-button-secondary-inverse:active,
+.usa-button:visited.usa-button-secondary-inverse.usa-button-active,
+.usa-button:visited.usa-button-outline-inverse:active,
+.usa-button:visited.usa-button-outline-inverse.usa-button-active,
+.usa-button-primary:visited.usa-button-secondary-inverse:active,
+.usa-button-primary:visited.usa-button-secondary-inverse.usa-button-active,
+.usa-button-primary:visited.usa-button-outline-inverse:active,
+.usa-button-primary:visited.usa-button-outline-inverse.usa-button-active,
+button.usa-button-secondary-inverse:active,
+button.usa-button-secondary-inverse.usa-button-active,
+button.usa-button-outline-inverse:active,
+button.usa-button-outline-inverse.usa-button-active,
+[type=button].usa-button-secondary-inverse:active,
+[type=button].usa-button-secondary-inverse.usa-button-active,
+[type=button].usa-button-outline-inverse:active,
+[type=button].usa-button-outline-inverse.usa-button-active,
+[type=submit].usa-button-secondary-inverse:active,
+[type=submit].usa-button-secondary-inverse.usa-button-active,
+[type=submit].usa-button-outline-inverse:active,
+[type=submit].usa-button-outline-inverse.usa-button-active,
+[type=reset].usa-button-secondary-inverse:active,
+[type=reset].usa-button-secondary-inverse.usa-button-active,
+[type=reset].usa-button-outline-inverse:active,
+[type=reset].usa-button-outline-inverse.usa-button-active,
+[type=image].usa-button-secondary-inverse:active,
+[type=image].usa-button-secondary-inverse.usa-button-active,
+[type=image].usa-button-outline-inverse:active,
+[type=image].usa-button-outline-inverse.usa-button-active {
+  box-shadow: inset 0 0 0 2px #aeb0b5;
+  color: #dfe1e2;
+}
+.usa-button.usa-button-gray,
+.usa-button-primary.usa-button-gray,
+.usa-button:visited.usa-button-gray,
+.usa-button-primary:visited.usa-button-gray,
+button.usa-button-gray,
+[type=button].usa-button-gray,
+[type=submit].usa-button-gray,
+[type=reset].usa-button-gray,
+[type=image].usa-button-gray {
+  background-color: #5b616b;
+}
+.usa-button.usa-button-gray:hover, .usa-button.usa-button-gray.usa-button-hover,
+.usa-button-primary.usa-button-gray:hover,
+.usa-button-primary.usa-button-gray.usa-button-hover,
+.usa-button:visited.usa-button-gray:hover,
+.usa-button:visited.usa-button-gray.usa-button-hover,
+.usa-button-primary:visited.usa-button-gray:hover,
+.usa-button-primary:visited.usa-button-gray.usa-button-hover,
+button.usa-button-gray:hover,
+button.usa-button-gray.usa-button-hover,
+[type=button].usa-button-gray:hover,
+[type=button].usa-button-gray.usa-button-hover,
+[type=submit].usa-button-gray:hover,
+[type=submit].usa-button-gray.usa-button-hover,
+[type=reset].usa-button-gray:hover,
+[type=reset].usa-button-gray.usa-button-hover,
+[type=image].usa-button-gray:hover,
+[type=image].usa-button-gray.usa-button-hover {
+  background-color: #323a45;
+}
+.usa-button.usa-button-gray:active, .usa-button.usa-button-gray.usa-button-active,
+.usa-button-primary.usa-button-gray:active,
+.usa-button-primary.usa-button-gray.usa-button-active,
+.usa-button:visited.usa-button-gray:active,
+.usa-button:visited.usa-button-gray.usa-button-active,
+.usa-button-primary:visited.usa-button-gray:active,
+.usa-button-primary:visited.usa-button-gray.usa-button-active,
+button.usa-button-gray:active,
+button.usa-button-gray.usa-button-active,
+[type=button].usa-button-gray:active,
+[type=button].usa-button-gray.usa-button-active,
+[type=submit].usa-button-gray:active,
+[type=submit].usa-button-gray.usa-button-active,
+[type=reset].usa-button-gray:active,
+[type=reset].usa-button-gray.usa-button-active,
+[type=image].usa-button-gray:active,
+[type=image].usa-button-gray.usa-button-active {
+  background-color: #212121;
+}
+.usa-button.usa-button-red,
+.usa-button-primary.usa-button-red,
+.usa-button:visited.usa-button-red,
+.usa-button-primary:visited.usa-button-red,
+button.usa-button-red,
+[type=button].usa-button-red,
+[type=submit].usa-button-red,
+[type=reset].usa-button-red,
+[type=image].usa-button-red {
+  background-color: #e31c3d;
+}
+.usa-button.usa-button-red:hover, .usa-button.usa-button-red.usa-button-hover,
+.usa-button-primary.usa-button-red:hover,
+.usa-button-primary.usa-button-red.usa-button-hover,
+.usa-button:visited.usa-button-red:hover,
+.usa-button:visited.usa-button-red.usa-button-hover,
+.usa-button-primary:visited.usa-button-red:hover,
+.usa-button-primary:visited.usa-button-red.usa-button-hover,
+button.usa-button-red:hover,
+button.usa-button-red.usa-button-hover,
+[type=button].usa-button-red:hover,
+[type=button].usa-button-red.usa-button-hover,
+[type=submit].usa-button-red:hover,
+[type=submit].usa-button-red.usa-button-hover,
+[type=reset].usa-button-red:hover,
+[type=reset].usa-button-red.usa-button-hover,
+[type=image].usa-button-red:hover,
+[type=image].usa-button-red.usa-button-hover {
+  background-color: #cd2026;
+}
+.usa-button.usa-button-red:active, .usa-button.usa-button-red.usa-button-active,
+.usa-button-primary.usa-button-red:active,
+.usa-button-primary.usa-button-red.usa-button-active,
+.usa-button:visited.usa-button-red:active,
+.usa-button:visited.usa-button-red.usa-button-active,
+.usa-button-primary:visited.usa-button-red:active,
+.usa-button-primary:visited.usa-button-red.usa-button-active,
+button.usa-button-red:active,
+button.usa-button-red.usa-button-active,
+[type=button].usa-button-red:active,
+[type=button].usa-button-red.usa-button-active,
+[type=submit].usa-button-red:active,
+[type=submit].usa-button-red.usa-button-active,
+[type=reset].usa-button-red:active,
+[type=reset].usa-button-red.usa-button-active,
+[type=image].usa-button-red:active,
+[type=image].usa-button-red.usa-button-active {
+  background-color: #981b1e;
+}
+.usa-button.usa-button-big,
+.usa-button-primary.usa-button-big,
+.usa-button:visited.usa-button-big,
+.usa-button-primary:visited.usa-button-big,
+button.usa-button-big,
+[type=button].usa-button-big,
+[type=submit].usa-button-big,
+[type=reset].usa-button-big,
+[type=image].usa-button-big {
+  border-radius: 8px;
+  font-size: 1.5rem;
+  padding: 0.9375rem 1.875rem;
+}
+.usa-button:disabled,
+.usa-button-primary:disabled,
+.usa-button:visited:disabled,
+.usa-button-primary:visited:disabled,
+button:disabled,
+[type=button]:disabled,
+[type=submit]:disabled,
+[type=reset]:disabled,
+[type=image]:disabled {
+  background-color: #dfe1e2;
+  pointer-events: none;
+}
+.usa-button:disabled:hover, .usa-button:disabled.usa-button-hover, .usa-button:disabled:active, .usa-button:disabled.usa-button-active, .usa-button:disabled:focus, .usa-button:disabled.usa-focus,
+.usa-button-primary:disabled:hover,
+.usa-button-primary:disabled.usa-button-hover,
+.usa-button-primary:disabled:active,
+.usa-button-primary:disabled.usa-button-active,
+.usa-button-primary:disabled:focus,
+.usa-button-primary:disabled.usa-focus,
+.usa-button:visited:disabled:hover,
+.usa-button:visited:disabled.usa-button-hover,
+.usa-button:visited:disabled:active,
+.usa-button:visited:disabled.usa-button-active,
+.usa-button:visited:disabled:focus,
+.usa-button:visited:disabled.usa-focus,
+.usa-button-primary:visited:disabled:hover,
+.usa-button-primary:visited:disabled.usa-button-hover,
+.usa-button-primary:visited:disabled:active,
+.usa-button-primary:visited:disabled.usa-button-active,
+.usa-button-primary:visited:disabled:focus,
+.usa-button-primary:visited:disabled.usa-focus,
+button:disabled:hover,
+button:disabled.usa-button-hover,
+button:disabled:active,
+button:disabled.usa-button-active,
+button:disabled:focus,
+button:disabled.usa-focus,
+[type=button]:disabled:hover,
+[type=button]:disabled.usa-button-hover,
+[type=button]:disabled:active,
+[type=button]:disabled.usa-button-active,
+[type=button]:disabled:focus,
+[type=button]:disabled.usa-focus,
+[type=submit]:disabled:hover,
+[type=submit]:disabled.usa-button-hover,
+[type=submit]:disabled:active,
+[type=submit]:disabled.usa-button-active,
+[type=submit]:disabled:focus,
+[type=submit]:disabled.usa-focus,
+[type=reset]:disabled:hover,
+[type=reset]:disabled.usa-button-hover,
+[type=reset]:disabled:active,
+[type=reset]:disabled.usa-button-active,
+[type=reset]:disabled:focus,
+[type=reset]:disabled.usa-focus,
+[type=image]:disabled:hover,
+[type=image]:disabled.usa-button-hover,
+[type=image]:disabled:active,
+[type=image]:disabled.usa-button-active,
+[type=image]:disabled:focus,
+[type=image]:disabled.usa-focus {
+  background-color: #dfe1e2;
+  border: 0;
+  box-shadow: none;
+}
+
+/* stylelint-disable */
+.usa-button-disabled {
+  background-color: #dfe1e2;
+  pointer-events: none;
+}
+.usa-button-disabled:hover, .usa-button-disabled.usa-button-hover, .usa-button-disabled:active, .usa-button-disabled.usa-button-active, .usa-button-disabled:focus, .usa-button-disabled.usa-focus {
+  background-color: #dfe1e2;
+  border: 0;
+  box-shadow: none;
+}
+
+.usa-button-secondary-disabled,
+.usa-button-secondary-inverse-disabled,
+.usa-button-secondary:disabled,
+.usa-button-secondary-inverse:disabled,
+.usa-button-outline-inverse:disabled {
+  box-shadow: inset 0 0 0 2px #dfe1e2;
+  pointer-events: none;
+  color: #dfe1e2;
+}
+.usa-button-secondary-disabled:hover, .usa-button-secondary-disabled.usa-button-hover, .usa-button-secondary-disabled:active, .usa-button-secondary-disabled.usa-button-active, .usa-button-secondary-disabled:focus, .usa-button-secondary-disabled.usa-focus,
+.usa-button-secondary-inverse-disabled:hover,
+.usa-button-secondary-inverse-disabled.usa-button-hover,
+.usa-button-secondary-inverse-disabled:active,
+.usa-button-secondary-inverse-disabled.usa-button-active,
+.usa-button-secondary-inverse-disabled:focus,
+.usa-button-secondary-inverse-disabled.usa-focus,
+.usa-button-secondary:disabled:hover,
+.usa-button-secondary:disabled.usa-button-hover,
+.usa-button-secondary:disabled:active,
+.usa-button-secondary:disabled.usa-button-active,
+.usa-button-secondary:disabled:focus,
+.usa-button-secondary:disabled.usa-focus,
+.usa-button-secondary-inverse:disabled:hover,
+.usa-button-secondary-inverse:disabled.usa-button-hover,
+.usa-button-secondary-inverse:disabled:active,
+.usa-button-secondary-inverse:disabled.usa-button-active,
+.usa-button-secondary-inverse:disabled:focus,
+.usa-button-secondary-inverse:disabled.usa-focus,
+.usa-button-outline-inverse:disabled:hover,
+.usa-button-outline-inverse:disabled.usa-button-hover,
+.usa-button-outline-inverse:disabled:active,
+.usa-button-outline-inverse:disabled.usa-button-active,
+.usa-button-outline-inverse:disabled:focus,
+.usa-button-outline-inverse:disabled.usa-focus {
+  background-color: #ffffff;
+  border: 0;
+}
+
+html .usa-button-secondary-disabled,
+.usa-button-secondary:disabled {
+  background-color: #ffffff;
+}
+
+html .usa-button-secondary-inverse-disabled,
+.usa-button-secondary-inverse:disabled {
+  background-color: transparent;
+  color: #5b616b;
+  box-shadow: inset 0 0 0 2px #5b616b;
+}
+
+.usa-button-unstyled {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+}
+.usa-button-unstyled:hover {
+  background-color: transparent;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/elements/inputs";
+  ***THIS IS USWDS v1***
+*/
+/* stylelint-disable selector-no-qualifying-type */
+input,
+textarea,
+select {
+  appearance: none;
+  border: 1px solid #5b616b;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #1b1b1b;
+  display: block;
+  font-size: 16px;
+  height: 42px;
+  line-height: 1.3;
+  margin: 0.2em 0;
+  max-width: 460px;
+  padding: 10px 11.2px;
+  width: 100%;
+}
+input.usa-input-success,
+textarea.usa-input-success,
+select.usa-input-success {
+  border: 3px solid #4aa564;
+}
+
+/* stylelint-enable */
+.usa-input-error {
+  border-left: 4px solid #cd2026;
+  margin-top: 1.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.9375rem;
+  padding-top: 0.5rem;
+  position: relative;
+  right: 1.1875rem;
+}
+.usa-input-error input,
+.usa-input-error textarea,
+.usa-input-error select {
+  border: 3px solid #cd2026;
+  width: calc(100% + 1.1875rem);
+}
+.usa-input-error label {
+  margin-top: 0;
+}
+.usa-input-error .usa-input-inline {
+  border: 0.0625rem solid #5b616b;
+  width: inherit;
+}
+.usa-input-error .usa-input-inline-error {
+  border: 3px solid #cd2026;
+}
+
+.usa-input-error-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.usa-input-error-message {
+  color: #cd2026;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.usa-input-required:after {
+  color: #981b1e;
+  content: " (*required)";
+}
+
+.usa-input-optional:after {
+  color: #757575;
+  content: " (optional)";
+}
+
+.usa-input-label-helper {
+  color: #757575;
+}
+
+.usa-input-label-required {
+  color: #981b1e;
+}
+
+label {
+  display: block;
+  margin-top: 1.875rem;
+  max-width: 28.75rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+select {
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/arrow-both.png);
+  background-image: none, url(@department-of-veterans-affairs/css-library/dist/img/arrow-both.svg), url(@department-of-veterans-affairs/css-library/dist/img/arrow-both.png);
+  background-position: right 0.8125rem center;
+  background-repeat: no-repeat;
+  background-size: 0.625rem;
+  padding-right: 1.875rem;
+}
+select::-ms-expand {
+  display: none;
+}
+select:-webkit-autofill {
+  appearance: menulist;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000000;
+}
+
+option:first-child {
+  font-weight: 700;
+}
+
+legend {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.usa-fieldset-inputs label {
+  margin-top: 0;
+}
+
+.usa-form-hint {
+  color: #757575;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+[type=checkbox],
+[type=radio] {
+  position: absolute;
+  left: -999em;
+}
+.lt-ie9 [type=checkbox],
+.lt-ie9 [type=radio] {
+  border: 0;
+  float: left;
+  margin: 0.4em 0.4em 0 0;
+  position: static;
+  width: auto;
+}
+
+[type=checkbox] + label,
+[type=radio] + label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.65em;
+}
+
+[type=checkbox] + label::before,
+[type=radio] + label::before {
+  background: #ffffff;
+  content: " ";
+  display: inline-block;
+  text-indent: 0.15em;
+  vertical-align: middle\0 ;
+}
+
+[type=checkbox] + label::before {
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px #757575;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  margin-left: 1px;
+  margin-right: 0.6em;
+  width: 1.25rem;
+}
+
+[type=radio] + label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
+  height: 0.875rem;
+  line-height: 0.875rem;
+  margin-left: 3px;
+  margin-right: 0.75em;
+  width: 0.875rem;
+}
+
+[type=checkbox]:checked + label::before,
+[type=radio]:checked + label::before {
+  background-color: #005ea2;
+  box-shadow: 0 0 0 1px #005ea2;
+}
+
+[type=radio]:checked + label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #005ea2;
+}
+
+[type=checkbox]:checked + label::before,
+[type=checkbox]:checked:disabled + label::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/correct8.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/correct8.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+[type=radio]:focus + label::before {
+  outline: 2px solid #face00;
+  outline-offset: 4px;
+}
+
+[type=checkbox]:disabled + label {
+  color: #d6d7d9;
+}
+
+[type=checkbox]:focus + label::before {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+
+[type=checkbox]:disabled + label::before,
+[type=radio]:disabled + label::before {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed;
+}
+
+@media print {
+  [type=checkbox]:checked + label::before,
+  [type=checkbox]:checked:disabled + label::before {
+    background-image: none;
+    background-color: #ffffff;
+    content: url(@department-of-veterans-affairs/css-library/dist/img/correct8-alt.png);
+    content: url(@department-of-veterans-affairs/css-library/dist/img/correct8-alt.svg);
+    text-indent: 0;
+  }
+  [type=radio]:checked:disabled + label::before,
+  [type=radio]:checked + label::before {
+    box-shadow: 0 0 0 2px #ffffff, inset 0 0 0 14px #005ea2, 0 0 0 4px #005ea2;
+  }
+}
+[type=range] {
+  appearance: none;
+  border: none;
+  padding-left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+[type=range]:focus {
+  outline: none;
+}
+[type=range]:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 2px #005ea2;
+}
+[type=range]:focus::-moz-range-thumb {
+  box-shadow: 0 0 0 2px #005ea2;
+}
+[type=range]:focus::-ms-thumb {
+  box-shadow: 0 0 0 2px #005ea2;
+}
+[type=range]::-webkit-slider-runnable-track {
+  background: #d6d7d9;
+  border: 1px solid #757575;
+  cursor: pointer;
+  height: 1rem;
+  width: 100%;
+}
+[type=range]::-moz-range-track {
+  background: #d6d7d9;
+  border: 1px solid #757575;
+  cursor: pointer;
+  height: 1rem;
+  width: 100%;
+}
+[type=range]::-ms-track {
+  background: #d6d7d9;
+  border: 1px solid #757575;
+  cursor: pointer;
+  height: 1rem;
+  width: 100%;
+}
+[type=range]::-webkit-slider-thumb {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #757575;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  appearance: none;
+  margin-top: -0.375rem;
+}
+[type=range]::-moz-range-thumb {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #757575;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+[type=range]::-ms-thumb {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #757575;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  height: 1.5625rem;
+  width: 1.5625rem;
+}
+[type=range]::-ms-fill-lower {
+  background: #aeb0b5;
+  border: 1px solid #757575;
+  border-radius: 1.25rem;
+}
+[type=range]::-ms-fill-upper {
+  background: #aeb0b5;
+  border: 1px solid #757575;
+  border-radius: 1.25rem;
+}
+
+[type=file] {
+  border: none;
+  padding-left: 0;
+}
+
+.usa-date-of-birth { /* stylelint-disable-line */ }
+.usa-date-of-birth label {
+  margin-top: 0;
+}
+.usa-date-of-birth [type=number] {
+  -moz-appearance: textfield;
+}
+.usa-date-of-birth [type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+.usa-date-of-birth [type=number]::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+
+.usa-form-group-day,
+.usa-form-group-month,
+.usa-form-group-year {
+  clear: none;
+  float: left;
+  margin-right: 0.9375rem;
+  width: 3.125rem;
+}
+
+.usa-form-group-year {
+  width: 4.375rem;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/elements/labels";
+  ***THIS IS USWDS v1***
+*/
+.usa-label, .usa-label-big {
+  background-color: #565c65;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 0.9375rem;
+  margin-right: 0.3125rem;
+  padding: 0.0625rem 0.4375rem;
+  text-transform: uppercase;
+}
+.usa-label:only-of-type, .usa-label-big:only-of-type {
+  margin-right: 0;
+}
+
+.usa-label-big {
+  font-size: 1rem;
+  padding-left: 0.5625rem;
+  padding-right: 0.5625rem;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/elements/labels";
+  ***THIS IS USWDS v1***
+*/
+ul,
+ol {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-left: 1.94em;
+}
+
+li {
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+.usa-unstyled-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.usa-unstyled-list > li {
+  margin-bottom: 0;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+/*
+  Original: @import "~uswds/src/stylesheets/core/utilities";
+  ***THIS IS USWDS v1***
+*/
+.usa-sr-only {
+  position: absolute;
+  left: -999em;
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/elements/typography";
+  ***THIS IS USWDS v1***
+*/
+html {
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+a {
+  color: #005ea2;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  color: #1a4480;
+}
+a:focus {
+  outline: 2px solid #face00;
+  outline-offset: 2px;
+}
+a:visited {
+  color: #54278f;
+}
+
+.usa-external_link::after {
+  background: url(@department-of-veterans-affairs/css-library/dist/img/external-link.png) no-repeat 0 0;
+  background: url(@department-of-veterans-affairs/css-library/dist/img/external-link.svg) no-repeat 0 0;
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.65em;
+  margin-bottom: -1px;
+  margin-left: 4px;
+  width: 0.65em;
+}
+.usa-external_link:hover::after {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/external-link-hover.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/external-link-hover.svg);
+}
+
+.usa-external_link-alt::after {
+  background: url(@department-of-veterans-affairs/css-library/dist/img/external-link.png) no-repeat 0 0;
+  background: url(@department-of-veterans-affairs/css-library/dist/img/external-link.svg) no-repeat 0 0;
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.65em;
+  margin-bottom: -1px;
+  margin-left: 4px;
+  width: 0.65em;
+}
+.usa-external_link-alt:hover::after {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/external-link-hover.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/external-link-hover.svg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h1 a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+h2 a {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+h3 a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+h4 a {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h5 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+h5 a {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+h6 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+h6 a {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+cite,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+.usa-content {
+  max-width: 43.75rem;
+}
+
+.usa-content p,
+.usa-content ul:not(.usa-accordion):not(.usa-accordion-bordered),
+.usa-content ol:not(.usa-accordion):not(.usa-accordion-bordered) {
+  max-width: 43.75rem;
+}
+
+.usa-content-list {
+  max-width: 43.75rem;
+}
+
+.usa-sans p,
+.usa-sans a,
+.usa-sans li,
+.usa-sans span {
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.usa-sans a {
+  border-bottom: none;
+  font-weight: 700;
+}
+
+.usa-serif p,
+.usa-serif a,
+.usa-serif li,
+.usa-serif span {
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.usa-display {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-display {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-display {
+    font-size: 3.25rem;
+    font-weight: 700;
+  }
+}
+
+.usa-font-lead {
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 48.125rem;
+}
+
+.usa-background-dark {
+  background-color: #323a45;
+}
+.usa-background-dark p,
+.usa-background-dark span {
+  color: #ffffff;
+}
+.usa-background-dark a {
+  color: #d6d7d9;
+}
+.usa-background-dark a:hover {
+  color: #ffffff;
+}
+
+.usa-text-small {
+  font-size: 0.8125rem;
+  margin-top: 0;
+}
+
+.usa-section > :first-child,
+.usa-grid > :first-child,
+.usa-grid-full > :first-child {
+  margin-top: 0;
+}
+.usa-section > :last-child,
+.usa-grid > :last-child,
+.usa-grid-full > :last-child {
+  margin-bottom: 0;
+}
+
+.usa-width-one-whole:first-child > :first-child,
+.usa-width-one-half:first-child > :first-child,
+.usa-width-one-third:first-child > :first-child,
+.usa-width-two-thirds:first-child > :first-child,
+.usa-width-one-fourth:first-child > :first-child,
+.usa-width-three-fourths:first-child > :first-child,
+.usa-width-one-sixth:first-child > :first-child,
+.usa-width-five-sixths:first-child > :first-child,
+.usa-width-one-twelfth:first-child > :first-child {
+  margin-top: 0;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-width-one-whole > :first-child,
+  .usa-width-one-half > :first-child,
+  .usa-width-one-third > :first-child,
+  .usa-width-two-thirds > :first-child,
+  .usa-width-one-fourth > :first-child,
+  .usa-width-three-fourths > :first-child,
+  .usa-width-one-sixth > :first-child,
+  .usa-width-five-sixths > :first-child,
+  .usa-width-one-twelfth > :first-child {
+    margin-top: 0;
+  }
+}
+.usa-width-one-whole:last-child > :last-child,
+.usa-width-one-half:last-child > :last-child,
+.usa-width-one-third:last-child > :last-child,
+.usa-width-two-thirds:last-child > :last-child,
+.usa-width-one-fourth:last-child > :last-child,
+.usa-width-three-fourths:last-child > :last-child,
+.usa-width-one-sixth:last-child > :last-child,
+.usa-width-five-sixths:last-child > :last-child,
+.usa-width-one-twelfth:last-child > :last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-width-one-whole > :last-child,
+  .usa-width-one-half > :last-child,
+  .usa-width-one-third > :last-child,
+  .usa-width-two-thirds > :last-child,
+  .usa-width-one-fourth > :last-child,
+  .usa-width-three-fourths > :last-child,
+  .usa-width-one-sixth > :last-child,
+  .usa-width-five-sixths > :last-child,
+  .usa-width-one-twelfth > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/components/accordions";
+  ***THIS IS USWDS v1***
+*/
+.usa-accordion,
+.usa-accordion-bordered {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.usa-accordion > li,
+.usa-accordion-bordered > li {
+  margin-bottom: 0;
+}
+.usa-accordion > ul li ul,
+.usa-accordion-bordered > ul li ul {
+  list-style: disc;
+}
+.usa-accordion > ul li ul > li > ul,
+.usa-accordion-bordered > ul li ul > li > ul {
+  list-style: circle;
+}
+.usa-accordion > ul li ul > li > ul > li > ul,
+.usa-accordion-bordered > ul li ul > li > ul > li > ul {
+  list-style: square;
+}
+.usa-accordion + .usa-accordion,
+.usa-accordion + .usa-accordion-bordered,
+.usa-accordion-bordered + .usa-accordion,
+.usa-accordion-bordered + .usa-accordion-bordered {
+  margin-top: 0.625rem;
+}
+.usa-accordion > ul,
+.usa-accordion-bordered > ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.usa-accordion > ul > li,
+.usa-accordion-bordered > ul > li {
+  margin-bottom: 0;
+}
+.usa-accordion > ul > li,
+.usa-accordion-bordered > ul > li {
+  background-color: #f0f0f0;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  list-style: none;
+  margin-bottom: 0.3125rem;
+  width: 100%;
+}
+.usa-accordion > ul button,
+.usa-accordion-bordered > ul button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: #f0f0f0;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/minus.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/minus.svg);
+  background-position: right 1.25rem center;
+  background-repeat: no-repeat;
+  background-size: 0.9375rem;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.9375rem 3.4375rem 0.9375rem 1.25rem;
+  width: 100%;
+}
+.usa-accordion > ul button:hover,
+.usa-accordion-bordered > ul button:hover {
+  background-color: transparent;
+}
+.usa-accordion > ul button:hover,
+.usa-accordion-bordered > ul button:hover {
+  background-color: #d6d7d9;
+  color: #212121;
+}
+.usa-accordion > ul button h1,
+.usa-accordion > ul button h2,
+.usa-accordion > ul button h3,
+.usa-accordion > ul button h4,
+.usa-accordion > ul button h5,
+.usa-accordion > ul button h6,
+.usa-accordion-bordered > ul button h1,
+.usa-accordion-bordered > ul button h2,
+.usa-accordion-bordered > ul button h3,
+.usa-accordion-bordered > ul button h4,
+.usa-accordion-bordered > ul button h5,
+.usa-accordion-bordered > ul button h6 {
+  margin: 0;
+}
+.usa-accordion > ul [aria-expanded=false],
+.usa-accordion-bordered > ul [aria-expanded=false] {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/plus.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 0.9375rem;
+}
+.usa-accordion > li,
+.usa-accordion-bordered > li {
+  background-color: #f0f0f0;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  list-style: none;
+  margin-bottom: 0.3125rem;
+  width: 100%;
+}
+
+.usa-accordion-bordered .usa-accordion-content {
+  border-bottom: 3px solid #f0f0f0;
+  border-left: 3px solid #f0f0f0;
+  border-right: 3px solid #f0f0f0;
+}
+
+.usa-accordion-content {
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 0.9375rem 1.25rem;
+}
+.usa-accordion-content > *:first-child {
+  margin-top: 0;
+}
+.usa-accordion-content > *:last-child {
+  margin-bottom: 0;
+}
+.usa-accordion-content:not([aria-hidden]) {
+  position: absolute;
+  left: -999em;
+}
+.usa-accordion-content[aria-hidden=true] {
+  display: none;
+}
+
+.usa-accordion-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  background-color: #f0f0f0;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/minus.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/minus.svg);
+  background-position: right 1.25rem center;
+  background-repeat: no-repeat;
+  background-size: 0.9375rem;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.9375rem 3.4375rem 0.9375rem 1.25rem;
+  width: 100%;
+}
+.usa-accordion-button:hover {
+  background-color: transparent;
+}
+.usa-accordion-button:hover {
+  background-color: #d6d7d9;
+  color: #212121;
+}
+.usa-accordion-button h1,
+.usa-accordion-button h2,
+.usa-accordion-button h3,
+.usa-accordion-button h4,
+.usa-accordion-button h5,
+.usa-accordion-button h6 {
+  margin: 0;
+}
+
+.usa-accordion-button[aria-expanded=false] {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/plus.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 0.9375rem;
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/components/alerts";
+  ***THIS IS USWDS v1***
+*/
+.usa-alert {
+  background-color: #f1f1f1;
+  background-position: 1.25rem 1.25rem;
+  background-repeat: no-repeat;
+  background-size: scale(5.2rem);
+  padding-bottom: 0.875rem;
+  padding-left: 1.875rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  position: relative;
+}
+.usa-alert::before {
+  background-color: #8b8b8b;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 0.625rem;
+}
+.usa-alert a {
+  color: #1a4480;
+}
+.usa-alert a:focus, .usa-alert a:hover {
+  color: #162e51;
+}
+.usa-alert ul {
+  margin-bottom: 0;
+  margin-top: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+.usa-alert-slim {
+  background-position: 1.25rem 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+}
+.usa-alert-slim .usa-alert-text:only-child {
+  margin-bottom: 0.3125rem;
+  padding-top: 0.3125rem;
+}
+
+.usa-alert-icon {
+  display: table-cell;
+  padding-right: 0.625rem;
+}
+
+.usa-alert-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.usa-alert-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.usa-alert-text {
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.usa-alert-text:only-child {
+  margin-bottom: 0.625rem;
+  padding-top: 0.3125rem;
+}
+
+.usa-alert-success {
+  background-color: #ecf3ec;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/success.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/success.svg);
+}
+.usa-alert-success::before {
+  background-color: #008817;
+}
+.usa-alert-success .usa-alert-body {
+  padding-left: 3.125rem;
+}
+
+.usa-alert-warning {
+  background-color: #fef0c8;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/warning.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/warning.svg);
+}
+.usa-alert-warning::before {
+  background-color: #ffbe2e;
+}
+.usa-alert-warning .usa-alert-body {
+  padding-left: 3.125rem;
+}
+
+.usa-alert-error {
+  background-color: #f8dfe2;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/error.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/error.svg);
+}
+.usa-alert-error::before {
+  background-color: #d83933;
+}
+.usa-alert-error .usa-alert-body {
+  padding-left: 3.125rem;
+}
+
+.usa-alert-info {
+  background-color: #e1f3f8;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/info.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/info.svg);
+}
+.usa-alert-info::before {
+  background-color: #00bde3;
+}
+.usa-alert-info .usa-alert-body {
+  padding-left: 3.125rem;
+}
+
+.usa-alert-no_icon {
+  background-image: none;
+}
+
+.usa-alert-paragraph {
+  width: 43.75rem;
+}
+
+.usa-alert {
+  margin-top: 1.5em;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/components/banner";
+  ***THIS IS USWDS v1***
+*/
+.usa-banner {
+  background-color: #f1f1f1;
+  padding-bottom: 0.4375rem;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner {
+    font-size: 0.8125rem;
+    padding-bottom: 0;
+  }
+}
+
+.usa-banner-content {
+  padding-right: 0.9375rem;
+  padding-bottom: 3px;
+  padding-left: 0.9375rem;
+  background-color: transparent;
+  font-size: 0.9375rem;
+  padding-top: 1.25rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-banner-content {
+    padding-bottom: 23px;
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 951px), print and (min-width: 951px) {
+  .usa-banner-content {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+.usa-banner-content p:first-child {
+  margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-banner-content p:first-child {
+    margin-top: 0;
+  }
+}
+
+.usa-banner-inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+.usa-banner-inner::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+@media screen and (min-width: 951px), print and (min-width: 951px) {
+  .usa-banner-inner {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
+.usa-banner-header {
+  padding-top: 0.34375rem;
+  padding-bottom: 0.34375rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.usa-banner-header p {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+  overflow: hidden;
+  vertical-align: middle;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: inline-block;
+  }
+}
+.usa-banner-header img {
+  float: left;
+  margin-right: 0.625rem;
+  margin-top: 1px;
+  width: 1.5rem;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header img {
+    margin-right: 7px;
+    width: 20px;
+  }
+}
+
+.usa-banner-header-expanded {
+  align-items: center;
+  border-bottom: 1px solid #aeb0b5;
+  display: flex;
+  font-size: 0.9375rem;
+  min-height: 3.5rem;
+  padding-right: 1.875rem;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header-expanded {
+    border-bottom: none;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 400;
+    min-height: 0;
+    padding-right: 0;
+  }
+}
+.usa-banner-header-expanded > .usa-banner-inner {
+  margin-left: 0;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header-expanded > .usa-banner-inner {
+    margin-left: auto;
+  }
+}
+.usa-banner-header-expanded img {
+  margin-right: 1.5rem;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header-expanded img {
+    margin-right: 0.4375rem;
+  }
+}
+.usa-banner-header-expanded p {
+  line-height: 1.3;
+  vertical-align: top;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-header-expanded p {
+    line-height: 1.5;
+    vertical-align: middle;
+  }
+}
+
+.usa-banner-button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  -webkit-font-smoothing: auto;
+  padding-top: 13px;
+  padding-left: 48px;
+  background-position-x: right;
+  color: #005ea2;
+  display: block;
+  font-size: 12px;
+  height: 2.6875rem;
+  left: 0;
+  position: absolute;
+  text-decoration: underline;
+  top: 0;
+  width: 100%;
+}
+.usa-banner-button:hover {
+  background-color: transparent;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-button {
+    padding-top: 0;
+    padding-left: 0;
+    /* stylelint-disable declaration-block-no-ignored-properties */
+    display: inline;
+    height: auto;
+    margin-left: 3px;
+    position: relative;
+    vertical-align: middle;
+    width: auto;
+    /* stylelint-enable */
+  }
+}
+.usa-banner-button:hover {
+  color: #1a4480;
+  text-decoration: underline;
+}
+.usa-banner-button[aria-expanded=false] {
+  background-image: none;
+}
+.usa-banner-button[aria-expanded=false]::after {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-down-primary.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-down-primary.svg);
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.625rem;
+  width: 0.625rem;
+  /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+  margin-left: 0;
+  /* stylelint-enable */
+}
+.usa-banner-button[aria-expanded=false]:hover::after {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-down-primary-hover.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-down-primary-hover.svg);
+}
+.usa-banner-button[aria-expanded=false]::after {
+  background-position-y: 1px;
+}
+.usa-banner-button[aria-expanded=true] {
+  background-image: none;
+  height: 3.5rem;
+}
+.usa-banner-button[aria-expanded=true]::after {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/close.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/close.svg);
+  background-size: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.8125rem;
+  width: 0.8125rem;
+  /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+  margin-left: 0;
+  /* stylelint-enable */
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-button[aria-expanded=true] {
+    height: initial;
+    padding: 0;
+    position: relative;
+  }
+  .usa-banner-button[aria-expanded=true]::after {
+    background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-up-primary.png);
+    background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-up-primary.svg);
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    height: 0.625rem;
+    width: 0.625rem;
+    /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
+    margin-left: 0;
+    /* stylelint-enable */
+  }
+  .usa-banner-button[aria-expanded=true]:hover::after {
+    background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-up-primary-hover.png);
+    background-image: url(@department-of-veterans-affairs/css-library/dist/img/angle-arrow-up-primary-hover.svg);
+  }
+  .usa-banner-button[aria-expanded=true]::after {
+    background-position-y: 1px;
+  }
+}
+.usa-banner-button[aria-expanded=true]::after {
+  position: absolute;
+  right: 0.9375rem;
+  top: 1.34375rem;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-button[aria-expanded=true]::after {
+    position: static;
+  }
+}
+.usa-banner-button[aria-expanded=true] .usa-banner-button-text {
+  display: none;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .usa-banner-button[aria-expanded=true] .usa-banner-button-text {
+    display: inline;
+  }
+}
+
+.usa-banner-icon {
+  width: 38px;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/components/forms";
+  ***THIS IS USWDS v1***
+*/
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  [type=submit] {
+    margin-top: calc(1.875rem - 0.2em);
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-form {
+    max-width: 32rem;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-tiny {
+    max-width: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-medium {
+    max-width: 7.5rem;
+  }
+}
+
+.usa-form-note {
+  float: right;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9375rem;
+  margin: 0 0 scale(1.5rem);
+}
+.usa-form-note + * {
+  clear: both;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-form-large {
+    max-width: 28.75rem;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid {
+    padding-right: 5%;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid:last-of-type {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid-small {
+    float: left;
+    width: 35%;
+  }
+}
+.usa-input-grid-small input {
+  margin-bottom: 1.875rem;
+}
+.usa-input-grid-small select {
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid-medium {
+    float: left;
+    width: 65%;
+  }
+}
+.usa-input-grid-medium input {
+  margin-bottom: 1.875rem;
+}
+.usa-input-grid-medium select {
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-input-grid-large {
+    float: left;
+    width: 100%;
+  }
+}
+.usa-input-grid-large input {
+  margin-bottom: 1.875rem;
+}
+.usa-input-grid-large select {
+  margin-bottom: 1.875rem;
+}
+
+.usa-additional_text {
+  font-weight: normal;
+}
+
+.usa-checklist {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.usa-checklist li {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 3em;
+  text-indent: -2em;
+}
+.usa-checklist li::before {
+  content: " ";
+  display: inline-block;
+  height: 0.8em;
+  margin-right: 0.2em;
+  width: 1.8em;
+}
+
+.usa-checklist-checked::before {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/correct9.png);
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/correct9.svg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*
+  Original: @import "~uswds/src/stylesheets/components/media-block";
+  ***THIS IS USWDS v1***
+*/
+.usa-media_block-img {
+  float: left;
+  margin-right: 0.625rem;
+}
+
+.usa-media_block-body {
+  overflow: hidden;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+/*
+  Original: @import "~uswds/src/stylesheets/components/side-nav";
+  ***THIS IS USWDS v1***
+*/
+.usa-sidenav-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+.usa-sidenav-list > li {
+  margin-bottom: 0;
+}
+.usa-sidenav-list > li {
+  background-color: transparent;
+  border-top: 1px solid #5b616b;
+  font-size: 1.0625rem;
+}
+.usa-sidenav-list > li:first-child {
+  border-top: none;
+}
+.usa-sidenav-list a {
+  border: none;
+  color: #212121;
+  display: block;
+  font-family: "Source Sans Pro Web", "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.3;
+  padding: 0.53125rem 0.625rem 0.53125rem 0.5859375rem;
+  text-decoration: none;
+}
+.usa-sidenav-list a:hover {
+  background-color: #f1f1f1;
+  color: #005ea2;
+  text-decoration: none;
+}
+.usa-sidenav-list a:focus {
+  outline-offset: 0;
+  position: relative;
+  z-index: 1;
+}
+.usa-sidenav-list a.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
+  border-left: 0.25rem solid #005ea2;
+  color: #005ea2;
+  font-weight: 700;
+  padding-left: 0.6875rem;
+}
+@media screen and (min-width: 1201px), print and (min-width: 1201px) {
+  .usa-sidenav-list {
+    border-bottom: none;
+    border-top: none;
+  }
+}
+.usa-grid .usa-sidenav-list {
+  margin-right: -0.9375rem;
+  margin-left: -0.9375rem;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .usa-grid .usa-sidenav-list {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.usa-sidenav-sub_list {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+}
+.usa-sidenav-sub_list > li {
+  margin-bottom: 0;
+}
+.usa-sidenav-sub_list li {
+  border: none;
+  font-size: 0.9375rem;
+}
+.usa-sidenav-sub_list a {
+  padding-left: 1.75rem;
+  line-height: 1.3;
+}
+.usa-sidenav-sub_list a:hover, .usa-sidenav-sub_list a.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
+  border: none;
+  padding-left: 1.75rem;
+}
+.usa-sidenav-sub_list .usa-sidenav-sub_list a {
+  padding-left: 2.375rem;
+}
+.usa-sidenav-sub_list .usa-sidenav-sub_list a:focus {
+  outline-offset: 0;
+}
+.usa-sidenav-sub_list .usa-sidenav-sub_list a:hover {
+  padding-left: 2.375rem;
+}
+
+.usa-layout-docs-sidenav {
+  padding-top: 1.5rem;
+}
+@media screen and (min-width: 1201px), print and (min-width: 1201px) {
+  .usa-layout-docs-sidenav {
+    padding-top: 0;
+  }
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+body {
+  background: #ffffff;
+  color: #1b1b1b;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.show-on-focus {
+  position: absolute;
+  top: -10em;
+  background: #ffffff;
+  padding: 1em;
+  margin: 1em;
+  color: #162e51;
+  display: block;
+  font-weight: 600;
+}
+.show-on-focus:focus {
+  position: inherit;
+  top: auto;
+  outline: 2px solid #ffbe2e;
+}
+
+body .row.full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.no-print-no-sr {
+  display: none !important;
+}
+
+#content abbr {
+  border-bottom: 0px;
+  text-decoration: none;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: #005ea2;
+  text-decoration: underline;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: inherit;
+  text-decoration: underline;
+}
+a:active {
+  background: rgba(0, 0, 0, 0.05);
+}
+a:visited, a:visited abbr {
+  color: #54278f;
+}
+
+ul {
+  padding: 0 0 0 1.5em;
+  list-style: square;
+}
+
+ol {
+  margin: 0 0 0 1.25em;
+  list-style-position: outside;
+}
+
+ul > ul,
+ul ol,
+ol > ul,
+ol ol {
+  margin: 0.5em 0 0.5em 1.2em;
+}
+
+dd {
+  margin-left: 0;
+}
+
+dd + dt {
+  margin-top: 1.5em;
+}
+
+figure {
+  font-size: 0.85em;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media screen and (min-width: 1201px), print and (min-width: 1201px) {
+  figure {
+    margin-left: -16.66667%;
+    margin-right: -16.66667%;
+  }
+}
+
+figcaption {
+  color: #162e51;
+}
+
+input::-webkit-input-placeholder {
+  color: #565c65;
+}
+
+input::-moz-placeholder {
+  color: #565c65;
+}
+
+input:-ms-input-placeholder {
+  color: #565c65;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+input.va-input-medium-large {
+  max-width: 11.25rem;
+}
+
+hr {
+  margin: 2.5em 0;
+  margin: 48px 0 40px;
+  border: 1px solid #a9aeb1;
+}
+
+table {
+  width: 100%;
+}
+
+.va-pos-fixed {
+  position: fixed;
+}
+
+.header {
+  background: #162e51;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  min-height: 189.19px;
+}
+@media screen and (min-width: 481px), print and (min-width: 481px) {
+  .header {
+    min-height: 167.19px;
+  }
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .header {
+    position: relative;
+    min-height: 159px;
+  }
+}
+.header .login-container {
+  background: #162e51;
+  flex-wrap: wrap;
+  white-space: nowrap;
+}
+.header .login-container .row {
+  padding: 0;
+}
+@media screen and (min-width: 640px), print and (min-width: 640px) {
+  .header .login-container {
+    flex: 1 0 100%;
+  }
+}
+
+#va-header-logo-menu {
+  flex-wrap: wrap;
+  padding: 1em 0.75em 0;
+}
+@media screen and (min-width: 640px), print and (min-width: 640px) {
+  #va-header-logo-menu {
+    padding-bottom: 0;
+  }
+}
+
+.va-header-logo-wrapper {
+  flex: 1 0 164px;
+}
+@media screen and (min-width: 640px), print and (min-width: 640px) {
+  .va-header-logo-wrapper {
+    flex-basis: 3.75rem;
+  }
+}
+
+.va-header-logo {
+  background-color: transparent;
+  border-bottom: none;
+  display: block;
+  height: 40px;
+  margin: 0;
+  width: 164px;
+}
+.va-header-logo:hover .vets-logo-va path {
+  fill: #ffbe2e;
+}
+
+.va-notice--banner {
+  background: #ffffff;
+  margin: 0 0 0.75em 0;
+  padding: 0;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .va-notice--banner {
+    background: #f1f1f1;
+  }
+  .va-notice--banner .usa-banner-inner {
+    font-size: 12px;
+    padding-left: 0.9375rem;
+  }
+  .va-notice--banner .usa-banner-inner p {
+    font-size: 12px;
+  }
+  .va-notice--banner .usa-banner-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1024px), print and (min-width: 1024px) {
+  .va-notice--banner .usa-banner-inner {
+    padding-left: 0;
+    font-size: 12px;
+  }
+  .va-notice--banner .usa-banner-inner p {
+    font-size: 12px;
+  }
+}
+.va-notice--banner-inner {
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.va-notice--banner p {
+  margin: 0;
+}
+.va-notice--banner a {
+  background-image: none;
+  color: inherit;
+  padding: 0;
+}
+
+.vets-logo {
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+.vets-logo-vetsdotgov path,
+.vets-logo-vetsdotgov rect, .vets-logo-va path,
+.vets-logo-va rect {
+  fill: #ffffff;
+}
+
+article > h1 {
+  margin-top: 0;
+}
+
+#content {
+  margin: 0;
+  padding: 0;
+  color: #1b1b1b;
+  overflow: hidden;
+}
+
+.va-introtext {
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 48.125rem;
+}
+.va-introtext p, .va-introtext a {
+  font-family: Bitter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.va-h-ruled--stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(@department-of-veterans-affairs/css-library/dist/img/stars.png) no-repeat center;
+  background-size: 6.875rem auto;
+  margin: 1rem auto auto;
+  padding: 1.25rem 0 0;
+  text-align: center;
+}
+.va-h-ruled--stars::before {
+  margin-right: 7.5rem;
+}
+.va-h-ruled--stars::before, .va-h-ruled--stars::after {
+  border-top: 1px solid #aeb0b5;
+  content: " ";
+  flex: 1 1 50%;
+  padding: 0.625rem 0;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .va-h-ruled--stars {
+    padding-left: 0;
+  }
+}
+
+.va-button-primary {
+  background: #008817 !important;
+}
+.va-button-primary:hover, .va-button-primary:focus {
+  background-color: #154c21 !important;
+  text-decoration: none !important;
+}
+.va-button-primary svg {
+  display: inline-block;
+  height: 0.75rem;
+  margin-left: 0.3125rem;
+  width: 0.75rem;
+  vertical-align: -1px;
+}
+
+.va-address-block {
+  margin-left: 3.125rem;
+  border-left: 3px solid #005ea2;
+  padding-left: 0.625rem;
+}
+
+.last-updated {
+  margin-top: 1.5em;
+  border-top: 2px solid #aeb0b5;
+  padding: 1em 0;
+}
+.last-updated p {
+  color: #323a45 !important;
+}
+
+.feature {
+  background: #e1f3f8;
+  padding: 1em;
+  clear: both;
+  margin: 1.5em 0 1.5em 0;
+}
+.feature h2 {
+  margin-top: 0;
+}
+.feature h3 {
+  margin-top: 0;
+}
+.feature h4 {
+  margin-top: 0;
+}
+.feature ul {
+  margin: 0 0 0.5em 1.5em;
+  padding: 0;
+}
+.feature ul li {
+  list-style: square;
+  margin: 0;
+}
+
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.external-link-icon-black {
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/exit-icon.png);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: 1em auto;
+  padding-right: 1.2em;
+  position: relative;
+}
+
+/*# sourceMappingURL=core.css.map */

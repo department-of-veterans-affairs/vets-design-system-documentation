@@ -1,0 +1,153 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+.usa-button,
+.usa-button-primary,
+.usa-button:visited,
+.usa-button-primary:visited,
+button,
+[type=button],
+[type=submit],
+[type=reset],
+[type=image] {
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  background-color: #005ea2;
+  box-sizing: border-box;
+  font-size: 1.06rem;
+}
+.usa-button.usa-button-secondary,
+.usa-button-primary.usa-button-secondary,
+.usa-button:visited.usa-button-secondary,
+.usa-button-primary:visited.usa-button-secondary,
+button.usa-button-secondary,
+[type=button].usa-button-secondary,
+[type=submit].usa-button-secondary,
+[type=reset].usa-button-secondary,
+[type=image].usa-button-secondary {
+  background: transparent;
+}
+.usa-button.usa-button-secondary:focus, .usa-button.usa-button-secondary:hover,
+.usa-button-primary.usa-button-secondary:focus,
+.usa-button-primary.usa-button-secondary:hover,
+.usa-button:visited.usa-button-secondary:focus,
+.usa-button:visited.usa-button-secondary:hover,
+.usa-button-primary:visited.usa-button-secondary:focus,
+.usa-button-primary:visited.usa-button-secondary:hover,
+button.usa-button-secondary:focus,
+button.usa-button-secondary:hover,
+[type=button].usa-button-secondary:focus,
+[type=button].usa-button-secondary:hover,
+[type=submit].usa-button-secondary:focus,
+[type=submit].usa-button-secondary:hover,
+[type=reset].usa-button-secondary:focus,
+[type=reset].usa-button-secondary:hover,
+[type=image].usa-button-secondary:focus,
+[type=image].usa-button-secondary:hover {
+  background-color: #dce4ef;
+}
+
+.usa-button-primary {
+  color: #ffffff !important;
+}
+.usa-button-primary[href^=http] {
+  background-image: none;
+  text-decoration: none !important;
+}
+.usa-button-primary[href^=http]:after {
+  content: none;
+}
+
+.usa-accordion .usa-button-secondary:focus {
+  box-shadow: inset 0 0 0 2px #112e51, 0 0 3px #aeb0b5, 0 0 7px #aeb0b5;
+}
+
+.usa-accordion-button:active {
+  background-color: inherit;
+}
+
+.usa-button-disabled {
+  background-color: #d6d7d9;
+}
+
+.row.form-progress-buttons {
+  max-width: 29.375rem;
+}
+
+button i.fa {
+  font-size: 0.75em;
+}
+button i.fa.before-text {
+  margin-right: 0.5em;
+}
+button i.fa.after-text {
+  margin-left: 0.5em;
+}
+
+button.short {
+  font-weight: 500;
+  padding: 0.625rem;
+}
+
+.va-icon-link,
+.va-icon-link[type=button] {
+  background: transparent;
+  border-radius: 0;
+  color: #005ea2 !important;
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 0;
+  text-align: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  white-space: nowrap;
+}
+.va-icon-link:hover,
+.va-icon-link[type=button]:hover {
+  background: #f1f1f1;
+}
+.va-icon-link .fa,
+.va-icon-link[type=button] .fa {
+  display: inline-block;
+  font-size: 1.125rem;
+}
+.va-icon-link span,
+.va-icon-link[type=button] span {
+  display: inline-block;
+  padding-left: 0.3125rem;
+  text-decoration: underline;
+}
+
+.va-btn-withicon > span {
+  display: flex;
+  align-items: center;
+}
+.va-btn-withicon svg {
+  display: none;
+}
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .va-btn-withicon svg {
+    display: block;
+    height: 15px;
+    margin-right: 2.5px;
+    pointer-events: none;
+    width: 15px;
+  }
+}
+
+/*# sourceMappingURL=m-button.css.map */

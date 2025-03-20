@@ -1,0 +1,47 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.va-dropdown {
+  position: relative;
+}
+.va-dropdown-trigger {
+  background: transparent url(@department-of-veterans-affairs/css-library/dist/img/arrow-down-white.svg) no-repeat;
+  background-position: right 8px center;
+  background-size: 10px 10px;
+  border-radius: 0;
+  border-top: 3px solid transparent;
+  margin: 0;
+  padding: 9px 25px 8px 8px;
+}
+.va-dropdown-trigger:hover {
+  background-color: #005ea2;
+}
+.va-dropdown-trigger[aria-expanded=true] {
+  border-top-color: #8a7237;
+  background-color: #ffffff;
+  background-image: url(@department-of-veterans-affairs/css-library/dist/img/arrow-up.svg) !important;
+  color: #1b1b1b;
+}
+.va-dropdown-trigger[aria-expanded=true] path {
+  fill: currentColor;
+}
+.va-dropdown-panel {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px -4px #1b1b1b;
+  color: #1b1b1b;
+  padding: 0.5rem;
+  position: absolute;
+  min-width: 100%;
+  z-index: 2;
+}
+.va-dropdown-panel a {
+  color: #005ea2;
+  display: inline-block;
+}
+
+[id=helpmenu] {
+  width: 13.125rem;
+}
+
+/*# sourceMappingURL=m-dropdown.css.map */

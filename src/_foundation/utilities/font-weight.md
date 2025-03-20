@@ -19,26 +19,26 @@ Change the font wight of an element.
   responsive=false
   css_property="font-weight"
 %}
-  <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+  <div class="vads-grid-row vads-u-flex-direction--column">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start vads-u-border--0">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-4">
           <code class="code">.vads-u-font-weight--bold</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-4">
           <code class="code">font-weight: 700</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-4">
         <p class="vads-u-font-weight--bold vads-u-margin--0">&lt;p> with bold weight</p>
       </div>
     </div>
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-4">
           <code class="code">.vads-u-font-weight--normal</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-4">
           <code class="code">font-weight: 400</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--4">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-4">
         <h3 class="vads-u-font-weight--normal vads-u-margin--0">&lt;h3> with normal weight</h3>
       </div>
     </div>

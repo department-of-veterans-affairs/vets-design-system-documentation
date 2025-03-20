@@ -18,7 +18,7 @@ anchors:
 <h2 id="semantic-color-tokens">Semantic color tokens</h2>
 {% assign semantic = site.data.tokens.vads-color-semantic %}
 <div class="site-showcase">
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in semantic %}
       {% include _colors-v3.html
           name=item.vads-name
@@ -34,7 +34,7 @@ anchors:
 <h2 id="component-color-tokens">Component color tokens</h2>
 {% assign component = site.data.tokens.vads-color-component %}
 <div class="site-showcase">
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in component %}
       {% include _colors-v3.html
           name=item.vads-name
@@ -50,7 +50,7 @@ anchors:
 <h2 id="primitive-color-tokens">Primitive color tokens</h2>
 {% assign primitives = site.data.tokens.vads-color-primitive %}
 <div class="site-showcase">
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in primitives %}
       {% include _colors-v3.html
           name=item.vads-name
@@ -68,7 +68,7 @@ anchors:
 
 <div class="site-showcase">
   <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-base">Base colors</h3>
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.colors.primary %}
       {% include color-palette-example.html
         name=item.name
@@ -78,7 +78,7 @@ anchors:
   </div>
 
   <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-grayscale">Grayscale</h3>
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.colors.grayscale %}
       {% include color-palette-example.html
         name=item.name
@@ -88,7 +88,7 @@ anchors:
   </div>
 
   <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-tertiary">Tertiary colors</h3>
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.colors.tertiary %}
       {% include color-palette-example.html
         name=item.name
@@ -99,7 +99,7 @@ anchors:
 
   <h3 class="vads-u-border-bottom--1px vads-u-border-color--gray-lighter vads-u-margin-bottom--4" id="v1-hub">Hub colors</h3>
   <p>Hub colors are only to be used on VA.gov benefit hubs.</p>
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.colors.hub %}
       {% include color-palette-example.html
         name=item.name

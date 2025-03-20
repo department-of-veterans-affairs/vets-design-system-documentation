@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.va-nav-breadcrumbs {
+  background: #ffffff;
+  color: #005ea2;
+  font-size: inherit;
+  padding: 1em 0;
+}
+.va-nav-breadcrumbs--gate {
+  margin-bottom: -1em;
+}
+.va-nav-breadcrumbs li {
+  display: inline-block;
+  margin: 0.25em 0;
+  padding: 0.25em 0 0.25em 0;
+  vertical-align: middle;
+}
+.va-nav-breadcrumbs li:after {
+  content: " › ";
+  display: inline-block;
+  padding: 0 0.35em;
+}
+.va-nav-breadcrumbs li:last-child:after {
+  content: "";
+}
+.va-nav-breadcrumbs li.active {
+  font-weight: bold;
+  padding: 0.3em 0;
+}
+.va-nav-breadcrumbs li.active:after {
+  content: "";
+}
+.va-nav-breadcrumbs a {
+  color: #005ea2;
+  display: inline-block;
+  padding: 2px;
+}
+.va-nav-breadcrumbs a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+.va-nav-breadcrumbs a[aria-current=page] {
+  color: #323a45 !important;
+  cursor: default;
+  font-weight: bold;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.va-nav-breadcrumbs-list {
+  font-size: 16px;
+  float: none !important;
+  position: relative;
+}
+
+/* Mobile class declaration for React apps, manual override */
+.va-nav-breadcrumbs--mobile li {
+  display: none;
+}
+.va-nav-breadcrumbs--mobile li:nth-last-child(2) {
+  display: inline-block;
+}
+.va-nav-breadcrumbs--mobile li:nth-last-child(2)::before {
+  content: " ‹";
+  display: inline-block;
+  padding: 0 0.15em;
+}
+.va-nav-breadcrumbs--mobile li:nth-last-child(2)::after {
+  content: "";
+  display: none;
+  padding: 0;
+}
+
+/* Activate the mobile breadcrumb at $small-screen breakpoint */
+@media screen and (max-width: 481px) {
+  .va-nav-breadcrumbs li {
+    display: none;
+  }
+  .va-nav-breadcrumbs li:nth-last-child(2) {
+    display: inline-block;
+  }
+  .va-nav-breadcrumbs li:nth-last-child(2)::before {
+    content: " ‹";
+    display: inline-block;
+    padding: 0 0.15em;
+  }
+  .va-nav-breadcrumbs li:nth-last-child(2)::after {
+    content: "";
+    display: none;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=m-breadcrumbs.css.map */

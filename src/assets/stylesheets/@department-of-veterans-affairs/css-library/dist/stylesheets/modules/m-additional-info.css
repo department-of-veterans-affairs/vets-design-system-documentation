@@ -1,0 +1,39 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.additional-info-content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.additional-info-button {
+  text-decoration: none;
+}
+.additional-info-button:hover {
+  text-decoration: none;
+}
+
+.additional-info-title {
+  border-bottom-right-radius: 1px;
+  border-bottom: 2px #005ea2 dotted;
+  color: #323a45;
+}
+.additional-info-title:hover {
+  color: #000000;
+}
+
+.fa-angle-down {
+  color: #aeb0b5;
+  font-size: 16px !important;
+  margin: 0.3125rem;
+  transform: rotate(0deg);
+  transition: transform 0.15s linear;
+}
+
+.fa-angle-down.open {
+  transform: rotate(180deg);
+  transition: transform 0.15s linear;
+}
+
+/*# sourceMappingURL=m-additional-info.css.map */

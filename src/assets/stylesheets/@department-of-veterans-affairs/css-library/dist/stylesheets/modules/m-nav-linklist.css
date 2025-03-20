@@ -1,0 +1,49 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+.va-nav-linkslist {
+  margin: 0.625rem 0 0;
+  padding: 0 0 0.625rem 0;
+}
+.va-nav-linkslist--related {
+  background: #f1f1f1;
+  padding: 0.0625rem 1rem;
+  margin: 1.625rem 0 2.5rem;
+}
+.va-nav-linkslist-heading {
+  border-bottom: 1px solid #aeb0b5;
+  margin: 0;
+  padding: 1rem 0 0.25rem;
+  font-size: 1.5em;
+}
+.va-nav-linkslist-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.va-nav-linkslist-list a {
+  background: transparent;
+  display: block;
+  padding: 0;
+  text-decoration: none;
+}
+.va-nav-linkslist-list li {
+  margin: 1rem 0;
+}
+.va-nav-linkslist-title {
+  color: #005ea2;
+  padding: 0;
+}
+a:hover .va-nav-linkslist-title {
+  text-decoration: underline;
+}
+.va-nav-linkslist-description {
+  color: #212121;
+  margin: 0;
+}
+.va-nav-linkslist-link {
+  cursor: default;
+}
+
+/*# sourceMappingURL=m-nav-linklist.css.map */

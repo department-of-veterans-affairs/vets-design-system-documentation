@@ -18,12 +18,12 @@ The site header appears at the top of every page. Since VA.gov is responsive, th
 
 When users sign in, the Sign In button is replaced by a link displays the user's first name. **My VA** and **My Health** are also shown as top navigation elements.
 
-<div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
+<div class="vads-grid-row medium-screen:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/header-signed-out.png"><img src="{{ site.baseurl }}/images/templates/auth/header-signed-out.png" alt="signed out header on desktop"/></a>
   </div>
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/header-signed-in.png"><img src="{{ site.baseurl }}/images/templates/auth/header-signed-in.png" alt="signed in header on desktop"></a>
   </div>
@@ -33,12 +33,12 @@ When users sign in, the Sign In button is replaced by a link displays the user's
 
 When users are signed into the site on a smaller device, the Sign In link is replaced with the user's first name.
 
-<div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
+<div class="vads-grid-row medium-screen:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/small-header-signed-out.png"><img src="{{ site.baseurl }}/images/templates/auth/small-header-signed-out.png" alt="signed out view of mobile header"/></a>
   </div>
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/small-header-signed-in.png"><img src="{{ site.baseurl }}/images/templates/auth/small-header-signed-in.png" alt="Signed in view of mobile header"></a>
   </div>
@@ -46,12 +46,12 @@ When users are signed into the site on a smaller device, the Sign In link is rep
 
 When users are signed in and have opened the menu, **My VA** and **My Health** are shown as options at the bottom of the list.
 
-<div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
+<div class="vads-grid-row medium-screen:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-out.png"><img src="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-out.png" alt="screenshot of menu open when signed out"/></a>
   </div>
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-in.png"><img src="{{ site.baseurl }}/images/templates/auth/small-menu-open-signed-in.png" alt="screenshot of menu open when signed in"></a>
   </div>
@@ -80,12 +80,12 @@ A contextual CTA may change based on the authentication status of the user.
 
 Use the green alert component when the user is required to do something before they can continue a process.
 
-<div class="vads-l-row medium-screen:vads-u-margin-x--neg2">
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
+<div class="vads-grid-row medium-screen:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed out</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/cta-sign-in-create-account.png"><img src="{{ site.baseurl }}/images/templates/auth/cta-sign-in-create-account.png" alt="create account screenshot"/></a>
   </div>
-  <div class="vads-l-col--12 medium-screen:vads-l-col--6 medium-screen:vads-u-padding-x--2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 medium-screen:vads-u-padding-x--2">
     <p><strong>Signed in</strong></p>
     <a href="{{ site.baseurl }}/images/templates/auth/cta-verify-identity.png"><img src="{{ site.baseurl }}/images/templates/auth/cta-verify-identity.png" alt="verify identity screen shot"></a>
   </div>

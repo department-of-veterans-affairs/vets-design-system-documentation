@@ -16,6 +16,17 @@ gulp.task('clean-css-library-asset-paths', function() {
     }));
 });
 
+gulp.task('copy-css-library-css', function (done) {
+  console.log('copying css-library CSS');
+  var stream = gulp.src([
+      './node_modules/@department-of-veterans-affairs/css-library/dist/**/*.css',
+      './node_modules/@department-of-veterans-affairs/css-library/dist/**/*.map'
+    ])
+    .pipe(gulp.dest('src/assets/stylesheets/@department-of-veterans-affairs/css-library/dist'));
+
+  return stream;
+});
+
 gulp.task('copy-web-components-css', function (done) {
   console.log('copying web-components CSS');
   var stream = gulp.src('./node_modules/@department-of-veterans-affairs/web-components/dist/component-library/*.css')
@@ -26,5 +37,6 @@ gulp.task('copy-web-components-css', function (done) {
 
 gulp.task(task, gulp.series(
   'clean-css-library-asset-paths',
+  'copy-css-library-css',
   'copy-web-components-css',
 ));

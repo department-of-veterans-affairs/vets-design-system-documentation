@@ -1,0 +1,231 @@
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  Variables ported over from Formation so that we can keep those stylesheets
+  working while we work on deprecation.
+**/
+/**
+  /uswds/dist/scss/lib/addons/_margin.scss
+**/
+/**
+  uswds/src/stylesheets/lib/helpers/_directional-values.scss
+**/
+legend.legend-label + .form-radio-buttons {
+  margin-top: 0.75rem;
+}
+
+.form-radio-buttons label {
+  margin-top: 12px;
+}
+.form-radio-buttons label a {
+  position: relative;
+}
+.form-radio-buttons [type=radio] {
+  height: 3rem !important;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+.form-radio-buttons .errorable-radio-button label {
+  outline: none;
+  padding: 0.75rem;
+  display: inline-block;
+  margin: 0 0 0 0.75rem;
+}
+.form-radio-buttons .errorable-radio-button input:focus + label {
+  background: #ffe396;
+}
+
+.form-required-span {
+  color: #cd2026;
+  margin: 0 0.35em;
+}
+
+button.form-button-green {
+  background: #008817;
+}
+
+button.form-button-disabled {
+  pointer-events: none;
+}
+
+.form-datefield-month,
+.form-datefield-day {
+  clear: none;
+  float: left;
+  margin-right: 0.9375rem;
+}
+.form-datefield-month select,
+.form-datefield-day select {
+  padding-top: 0.53125rem;
+  padding-bottom: 0.53125rem;
+}
+
+.form-alert-body {
+  padding: 0 2.1875rem;
+}
+
+.form-datefield-month {
+  width: 8.125rem;
+}
+
+.form-datefield-day {
+  width: 5rem;
+}
+
+.form-radio-buttons > input[type=radio] + label::before {
+  display: block;
+  float: left;
+  margin-left: -1.7em;
+  margin-top: 0.25em;
+  margin-right: 0;
+  pointer-events: none;
+}
+.form-radio-buttons > input[type=radio] + label {
+  margin-left: 1.8em;
+}
+.form-radio-buttons > input[type=radio] {
+  cursor: pointer;
+}
+
+.form-required-span {
+  color: #cd2026;
+  margin: 0 0.35em;
+}
+
+.form-checkbox [type=checkbox] {
+  height: 1.125rem !important;
+  margin: 0;
+  width: 1.125rem !important;
+  cursor: pointer;
+}
+.form-checkbox > input[type=checkbox] + label::before {
+  display: block;
+  float: left;
+  margin-left: -1.7em;
+  margin-top: 0.14em;
+  margin-right: 0;
+  pointer-events: none;
+}
+.form-checkbox > input[type=checkbox] + label {
+  margin-left: 1.7em;
+}
+
+legend.legend-label + .form-checkbox-buttons {
+  margin-top: 0.75rem;
+}
+
+.form-checkbox-buttons [type=checkbox] {
+  height: 1.125rem !important;
+  width: 1.125rem !important;
+  cursor: pointer;
+  margin: 0.75rem 0 0 1.5rem;
+}
+.form-checkbox-buttons label {
+  padding: 0.75rem;
+  display: inline-block;
+  margin: 0 0 0 0.75rem;
+}
+
+.form-field-alert label {
+  margin-top: 0.5em;
+}
+
+.form-error-date {
+  margin-top: 0;
+}
+
+.usa-input-error.form-error-date input, .usa-input-error.form-error-date select {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px), print and (min-width: 768px) {
+  .form-select-medium {
+    max-width: 7.5rem;
+  }
+}
+.form-expanding-group-active-radio {
+  margin-left: 28px;
+}
+
+.form-expanding-group-active-radio.form-expanding-group-inner-enter,
+.form-expanding-group-active-radio.form-expanding-group-inner-leave-active {
+  margin-top: -16px;
+}
+
+.form-expanding-group-inner-leave {
+  max-height: 800px;
+  opacity: 1;
+  margin-top: 0;
+}
+
+.form-expanding-group-inner-enter {
+  opacity: 0;
+  max-height: 0;
+}
+
+.form-expanding-group-inner-leave.form-expanding-group-inner-leave-active {
+  -webkit-transition: margin-top 500ms 0ms, max-height 300ms 0ms, opacity 300ms 0ms;
+  transition: margin-top 500ms 0ms, max-height 300ms 0ms, opacity 300ms 0ms;
+  max-height: 0;
+  opacity: 0;
+}
+
+.form-expanding-group-inner-enter.form-expanding-group-inner-enter-active {
+  -webkit-transition: margin-top 300ms 0ms, max-height 700ms 0ms, opacity 500ms 200ms;
+  transition: margin-top 300ms 0ms, max-height 700ms 0ms, opacity 500ms 200ms;
+  max-height: 800px;
+  opacity: 1;
+  margin-top: 0 !important;
+}
+
+.form-expanding-group > span .usa-input-error {
+  padding-left: calc(1.5rem - 6px);
+  right: calc(1.9rem - 6px);
+}
+.form-expanding-group > span .schemaform-expandUnder-indent .usa-input-error {
+  padding-left: 0.9375rem;
+  right: 1.1875rem;
+}
+
+.form-expanding-group {
+  margin-left: -1.25rem;
+  padding-left: 1.25rem;
+}
+
+.form-expanding-group-open {
+  padding-left: calc(2rem - 7px);
+  border-left: 7px solid #97d4ea;
+}
+.form-expanding-group-open .form-expanding-group-open {
+  border-left-color: transparent;
+}
+
+.form-expanding-group-plus {
+  position: relative;
+}
+.form-expanding-group-plus::after {
+  content: "+";
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form-expanding-group-open.form-expanding-group-plus::after {
+  content: "-";
+}
+
+.form-errorable-group > .usa-input-error label {
+  margin-top: 1.875rem;
+}
+.form-errorable-group > .usa-input-error .usa-input-error-label {
+  margin-top: 0;
+}
+.form-errorable-group > .usa-input-error .usa-input-error-message {
+  margin-bottom: -1.25rem;
+}
+
+/*# sourceMappingURL=m-form-elements.css.map */
