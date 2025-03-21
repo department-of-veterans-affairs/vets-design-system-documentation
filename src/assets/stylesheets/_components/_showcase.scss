@@ -89,10 +89,6 @@
 .site-utility-scope__button--supported,
 .site-utility-scope__button--supported:visited {
   border-color: var(--vads-color-green-lighter);
-
-  .fas {
-    color: var(--vads-color-success-dark);
-  }
 }
 
 .site-utility-scope__button--unsupported,
@@ -101,10 +97,6 @@
   color: $color-gray-light;
   text-decoration: line-through;
   pointer-events: none;
-
-  .fas {
-    color: $color-gray-lighter;
-  }
 }
 
 .site-showcase__prop-head {
