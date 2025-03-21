@@ -1,4 +1,5 @@
 * **No auto-dismissal.** Don't automatically dismiss an alert based on a timer or time limit.
+* **Elements within an Alert that should receive focus.** Focusable elements within an Alert should include: heading, body copy, phone numbers, and buttons.
 
 ### Assign an appropriate ARIA role
 
@@ -31,3 +32,8 @@ For accessibility best practices, we differentiate between images that are decor
 * **Informative images:** convey some kind of information. To determine whether an image is informative or not, try removing it from the design. If information is missing with the image removed it means that the image is informative and needs alt text.
 
 Consider the purpose of your graphic and whether alt text will provide any information, benefit, or feeling (e.g. the icons used in this Alert component) **If the image will not provide information, benefit, or sentiment then do not provide alt text on the image.** For more information on why we must provide relevant and meaningful alt text and how to create quality alt text please refer to the content style guide on [Alternative text for images]({{ site.baseurl }}/content-style-guide/alternative-text-for-images).
+
+### Mobile
+
+* **Announce drawer states.** Alerts that have expanded / closed states must be announced by a screen reader.
+* **Use appropriate labels.** [accessibilityLabel](https://reactnative.dev/docs/accessibility#accessibilitylabel) and [accessibilityLabelledBy](https://reactnative.dev/docs/accessibility#accessibilitylabelledby-android) should be used where appropriate.
