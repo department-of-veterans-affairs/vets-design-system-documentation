@@ -4,6 +4,7 @@ title: Language toggle
 intro-text: "The language toggle is our way of providing translated versions of select pages on va.gov."
 github-title: va-language-toggle
 research-title: va-language-toggle
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=10077-912&t=hljp6A4V60A0rDms-1
 status: use-with-caution-available
 anchors:
   - anchor: Examples
@@ -18,21 +19,19 @@ anchors:
 
 ### Default
 
-{% include component-example.html alt="The language toggle with the spanish option selected." file="/images/components/language-toggle/spanish.png" caption="The language toggle allows users to click links to load the same page which has been translated to one of three languages." %}
+The language toggle allows users to click links to load the same page which has been translated to one of three languages.
 
-#### Page context
-
-{% include component-example.html alt="Some, but not all, of the content on a page will be translated." file="/images/components/language-toggle/page-context.png" caption="Translated content appears in the body of the page, in the side navigation, and in the breadcrumbs of the page." %}
+{% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
 
 ## Usage
 
 ### When to use Component name
 
-* **Presenting an option to switch between translated pages.**: Use this component when you want to provide the user a way to switch between translated versions of the same page.
+* **Presenting an option to switch between translated pages.** Use this component when you want to provide the user a way to switch between translated versions of the same page.
 
 ### When to consider something else
 
-* **Links to pages that don't match.**: Do not use this toggle to point to anything other than the corresponding page in the equivalent language.
+* **Links to pages that don't match.** Do not use this toggle to point to anything other than the corresponding page in the equivalent language.
 * **Other language options.** VA.gov supports the 3 languages identified in the toggle. Do not add or remove from those 3 languages.
 
 ### How this component works

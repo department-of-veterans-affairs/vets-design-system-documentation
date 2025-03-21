@@ -32,7 +32,7 @@ anchors:
 
 ## Examples
 
-{% include component-example.html alt="Help users to navigate a long list example from the VA Claim Status tool." file="/images/patterns/help-users-to/navigate-a-long-list/claim-status-tool-long-list.png" caption="The VA Claim Status tools uses this pattern for navigating a long list of older updates to a claim." class="x2" %}
+{% include component-example.html alt="Help users to navigate a long list when scheduling a medical appointment with a provider." file="/images/patterns/help-users-to/navigate-a-long-list/choose-a-provider.png" caption="The Appointments tool uses this pattern to help users navigate a long list when scheduling a medical appointment with a provider. <br/> Disclaimer: These are not actual providers or health care facilities." class="x2" %}
 
 ## How to design and build 
 

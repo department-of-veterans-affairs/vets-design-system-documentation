@@ -7,17 +7,6 @@ maturity:
     score: true
   - name: adoption
     score: false
-accessibility:
-  - name: accessible-use-of-color
-    score: true
-  - name: accessible-contrast
-    score: true
-  - name: keyboard-interactions
-    score: true
-  - name: content-zoom-tested
-    score: true
-  - name: tested-in-screen-readers
-    score: true
 code-assets:
   - name: variations 
     score: false

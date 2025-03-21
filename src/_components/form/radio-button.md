@@ -6,13 +6,14 @@ title: Radio button
 research-title: Form controls
 intro-text: Radio buttons allow users to select exactly one choice from a group.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1373%3A86693&mode=design&t=h9BoxMWwcHe2DhUd-1
-status: use-deployed
+status: use-best-practice
 uswds-v3: default
 web-component: va-radio
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
 
@@ -62,6 +63,8 @@ anchors:
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/radio-buttons/">Refer to the U.S. Web Design System for usage guidance</a>
 
+{% include content/select-options.md %}
+
 ### Choosing between variations
 
 * Use the [Hint text](#hint-text) variation to provide additional information that pertains to the question being asked or all of the options presented.
@@ -89,6 +92,15 @@ anchors:
 
 {% include component-docs.html component_name=page.web-component %}
 
+## Content considerations
+
+<a class="vads-c-action-link--blue" 
+href="https://design.va.gov/content-style-guide/bulleted-lists">Refer to our bulleted list guidance for punctuation and general considerations</a>
+
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/radio-buttons/#accessibility-radio-buttons">Refer to the U.S. Web Design System for accessibility guidance</a>
+
+### Additional accessibility considerations for VA
+
+* When using Safari with VoiceOver, it will read out the fieldset legend for each radio item when navigating through them. However, the recommended behavior is that the legend should only be read out at the end of the first radio option when tabbing into the group. This behaves as expected in other browsers with VoiceOver, but Safari does not support this. There currently is no workaround for this.

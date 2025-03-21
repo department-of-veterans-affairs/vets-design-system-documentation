@@ -8,7 +8,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Libra
 status: use-deployed
 sub-pages:
   - sub-page: Button group
-  - sub-page: Button icon
+  - sub-page: Button - Icon
 uswds-v3: primary
 web-component: va-button
 anchors:
@@ -24,25 +24,45 @@ anchors:
 
 ## Examples
 
-### Default - Primary
+### Web
+
+#### Default - Primary
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--primary" link_text="va-button--primary" %}
 
-### Default - Secondary
+#### Default - Secondary
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--secondary" link_text="va-button--secondary" %}
 
-### Default - Big
+#### Default - Big
 
 {% include storybook-preview.html height="80px" story="uswds-va-button--big" link_text="va-button--big" %}
 
-### Continue
+#### Continue
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--continue" link_text="va-button--continue" %}
 
-### Back
+#### Back
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--back" link_text="va-button--back" %}
+
+#### Loading
+
+{% include storybook-preview.html height="60px" story="uswds-va-button--loading" link_text="va-button--loading" %}
+
+### Mobile
+
+#### Base - Primary
+
+{% include storybook-preview.html height="100px" story="button--base" link_text="va-mobile__button--base" is_mobile=true %}
+
+#### Base - Secondary
+
+{% include storybook-preview.html height="100px" story="button--base-secondary" link_text="va-mobile__button--base-secondary" is_mobile=true %}
+
+#### Destructive
+
+{% include storybook-preview.html height="100px" story="button--destructive" link_text="va-mobile__button--destructive" is_mobile=true %}
 
 ## Usage
 
@@ -53,7 +73,7 @@ anchors:
 #### When to use a button
 
 * **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#links-vs-buttons).
-* **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window. 
+* **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window.
 
 #### When to consider something else
 
@@ -69,8 +89,15 @@ anchors:
 
 ### Choosing between variations
 
-* **Use primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section.
-* **Use secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section.
+* **Use Primary for the most important action.** Use the primary button for the most important action that you want the user to take on the page, or in a section. Also, use primary buttons to take the user to the next step in a process.
+* **Use Secondary for non-primary actions.** Use secondary buttons for any actions that need to be _downplayed_ against other actions on the page, or in a section. Also, use secondary buttons for actions that happen on the current page.
+* **Use Big primary buttons for the only action.** Use the big variation of the primary button for the only action on the page.
+* **Use Continue and Back for advancing to the next step and returning to the previous step, respectively.** Note that these buttons can be used as a pair from [button pair]({{ site.baseurl }}/components/button/button-pair). Also, note that the Back button should not be used if it is only navigating rather than taking an action (like submitting data ala the Continue button).
+* **Use Loading for actions that should only be triggered once.** Use the loading variation when it is necessary to block the user from additional clicks of a button that might cause transaction issues.
+* **Use Base, primary and secondary, in dark mode in mobile applications.** Use the base variations for dark mode or when primary buttons will not pass the required color contrast ratio.
+* **Use destructive for actions that have serious consequences.** Use the destructive button for any action that cannot be reversed and may result in data loss. Currently used in the mobile app when canceling an appointment and when removing contact information.
+  * Don't rely on the red color alone to communicate the destructive nature of the action. Always ensure the button text clearly communicates what will happen.
+  * Since destructive buttons have serious consequences, always add friction before completing the action. This can be in the form of a native confirmation message (alert or action sheet) in the mobile app or a modal on web.
 
 ### Placement
 
@@ -84,7 +111,6 @@ anchors:
 * **Links can substitute for secondary buttons.** It is not always necessary to pair a secondary button with a primary button. In the example below a link can also suffice for a non-primary action.
 
 {% include component-example.html alt="Example of a primary button with a secondary link." file="/images/components/button/primary-with-secondary-link.png" caption="An example of a primary button used with a secondary link." reverse=true %}
-
 
 #### Secondary button as radio button
 

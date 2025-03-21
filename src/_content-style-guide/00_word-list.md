@@ -49,7 +49,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
 **apply**
-: Use "file a claim for disability compensation" instead of "apply for benefits." "Apply" is OK for other benefits, such as "Apply for VA health care."
+: Use this term in the context of non-disability benefits, like this: apply for DIC benefits or apply for VA health care. Use "file" for disability compensation, like this: file a claim for disability. Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **Armed Forces**
 : Capitalize. The Armed Forces consist of 6 service branches: the Air Force, Army, Coast Guard, Marine Corps, Navy, and Space Force. Also refer to the "uniformed services" entry.
@@ -124,6 +124,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+
+**claimant** 
+: Define the term on the first instance as “person with the claim” or “person applying for this benefit.” When possible, use specific plain language instead, like “Veteran’s spouse” or “Veteran’s child.” Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word.
 
 **claim exam**
 : This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
@@ -220,6 +223,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **disease**
 : Use "illness" unless it's part of a proper name of a specific disease.
 
+**District of Columbia** 
+: Refer to entry for "Washington, DC."
+
 **dividend**
 : Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.
 
@@ -271,7 +277,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Capitalize in Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era," lowercase: Vietnam War era.
 
 **evidence**
-: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed.
+: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed. Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **Exception**
 : Used to call special attention to something. It should be bolded and never in all caps. Use a colon following "Exception."
@@ -308,7 +314,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 **file a claim for disability compensation**
-: Use "file a claim" instead of "apply for benefits" when referring to disability.
+: Use "file a claim" instead of "apply for benefits" when referring to disability. Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
 
 **final status**
 : Use “in final status” instead of “in a final status."
@@ -540,6 +546,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Persian Gulf War era**
 : Lowercase "era."
 
+**Philippines**
+: Use “Philippines” (without "the") in a list. Use “the Philippines” in the context of a paragraph (like “If you served in the Philippines”).
+
 **PO Box**
 : Don't use periods.
 
@@ -681,6 +690,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **special claim**
 : Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
+**sponsor**
+: We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It’s OK to use the word sponsor but lead with the plain language definition. Example: the Veteran you’re connected to (called your “sponsor”). Go to [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
+
 **Statement of the Case**
 : Capitalize.
 
@@ -817,22 +829,19 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Veterans Pension**
 : "Veterans" doesn't take an apostrophe. Lowercase "pension" when writing "VA pension." 
 
-**Veterans Service Officer (VSO)**
-: "Veterans" is plural and doesn't take an apostrophe. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
-
 **Veterans Service Organization (VSO)**
-: "Veterans" is plural and doesn't take an apostrophe. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: "Veterans" is plural and doesn't take an apostrophe. Don't use VSO to reference a Veterans Service Officer. Instead use Veterans Service Organization representative. Or VSO representatitve. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
-**Veterans Service Representative (VSR)**
-: “Veterans” is plural and doesn't take an apostrophe. Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
-
-**Vietnam Era: Capitalize**
-: But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry for "era" for additional explanation.
+**Vietnam Era**
+: Capitalize Era in Vietnam Era. But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry for "era" for additional explanation.
 
 **Vocational Rehabilitation Counselor (VRC)**
 : Go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
 
 ### W
+
+**Washington, DC**
+: Default to Washington, DC when referring to the location, the VAMC, or a regional office. In some cases, especially government contexts, "District of Columbia" is also fine ("the government of the District of Columbia"). 
 
 **website**
 : One word, lowercase.

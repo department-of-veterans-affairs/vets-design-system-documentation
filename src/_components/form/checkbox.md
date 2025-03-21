@@ -14,6 +14,7 @@ anchors:
   - anchor: Examples - Group
   - anchor: Usage
   - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
 
@@ -105,6 +106,14 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
 
+### Indeterminate
+
+Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected.
+
+See pattern guidance when asking users [a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
+
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
+
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/">Refer to the U.S. Web Design System for usage guidance</a>
@@ -141,6 +150,11 @@ anchors:
 ### Native Events
 
 The native onBlur event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+
+## Content considerations
+
+<a class="vads-c-action-link--blue" 
+href="https://design.va.gov/content-style-guide/bulleted-lists">Refer to our bulleted list guidance for punctuation and general considerations</a>
 
 ## Accessibility considerations
 

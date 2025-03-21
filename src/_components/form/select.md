@@ -6,7 +6,7 @@ title: Select
 intro-text: "A select component allows users to choose one option from a menu."
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A93876&mode=design&t=h9BoxMWwcHe2DhUd-1
-status: use-deployed
+status: use-best-practice
 uswds-v3: default
 web-component: va-select
 anchors:
@@ -27,7 +27,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-select--required" link_text="va-select required" %}
 
-### With hint text
+### Hint text
 
 {% include storybook-preview.html story="uswds-va-select--with-hint-text" link_text="va-select with hint text" %}
 
@@ -47,15 +47,17 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-select--internationalization" link_text="va-select internationalization" %}
 
+### Widths
+
+{% include storybook-preview.html story="uswds-va-select--widths" link_text="va-select widths" height="800px" %}
+
 ## Usage
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/select/">Refer to the U.S. Web Design System for usage guidance</a>
 
 ### Additional guidance for VA
 
-#### Additional reasons to consider something else
-
-**More than 15 options.** If the list of options is very long, we do not yet have the combo box component in our system thus an alternative is to use functionality that allows users to type the same information into a text input that suggests possible options instead as seen in our [search input]({{ site.baseurl }}/components/search-input) component.
+{% include content/select-options.md %}
 
 ### Errors
 

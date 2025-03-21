@@ -30,6 +30,10 @@
   border-top-color: $color-gray-lightest !important;
 }
 
+.site-code-snippet__content .highlight-container {
+  border: 0px !important;
+}
+
 .site-code-snippet__content[aria-hidden="true"] {
   display: block !important;
   max-height: 96px;

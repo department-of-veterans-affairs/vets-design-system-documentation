@@ -8,13 +8,13 @@ status: use-deployed
 sub-pages:
   - sub-page: Autosave
   - sub-page: Checkbox
+  - sub-page: Combo box
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input
   - sub-page: Input message
   - sub-page: Label
   - sub-page: Need help?
-  - sub-page: Number input
   - sub-page: Penalty notice
   - sub-page: Prefill
   - sub-page: Privacy Agreement

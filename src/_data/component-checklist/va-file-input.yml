@@ -8,17 +8,6 @@ maturity:
     notes: "This component was converted from React to a web-component in August 2022."
   - name: adoption
     score: true
-accessibility:
-  - name: accessible-use-of-color
-    score: true
-  - name: accessible-contrast
-    score: true
-  - name: keyboard-interactions
-    score: true
-  - name: content-zoom-tested
-    score: true
-  - name: tested-in-screen-readers
-    score: true
 code-assets:
   - name: variations 
     score: true

@@ -6,6 +6,7 @@ intro-text: "Read this page to learn how this style guide section can help you a
 sub-pages:
   - sub-page: Payments and debts
   - sub-page: Sign in and identity verification
+  - sub-page: Claims and applications
 ---
 
 ## How this section helps VA content creators
@@ -44,7 +45,6 @@ We’ll continue to add entries to this section over time.
 Entries coming soon: 
 
 - Appointments 
-- Claims 
 - Medical records 
 - Messaging 
 - Prescriptions 

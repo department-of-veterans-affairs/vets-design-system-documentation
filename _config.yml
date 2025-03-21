@@ -9,7 +9,7 @@ example_library_name: "VADS Example Library"
 resource_library_name: "VADS Templates, Patterns, and Forms"
 
 # Common links
-figma_example_library: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=c29j3xBxzMAyLWxu-1 
+figma_example_library: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=c29j3xBxzMAyLWxu-1
 figma_component_library: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=121%3A1484&mode=design&t=ygQCLqlAL5VdSPil-1
 figma_templates_library: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A29744&mode=design&t=A89mK0w9KGp2uWIR-1
 figma_annotations_library: https://www.figma.com/file/CZcnWfQOwtLqPm4WA5paYG/VADS-Web-Annotation-Kit?type=design&node-id=415%3A1135&mode=design&t=V0V5YZrcbM7VnWa6-1
@@ -34,16 +34,14 @@ new_pattern_template_raw_link: https://raw.githubusercontent.com/department-of-v
 update_documentation_link: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?assignees=&labels=vsp-design-system-team&template=2_documentation_request_form.yml
 uswds_link: https://designsystem.digital.gov/
 
-
 # People
-sketch_for_teams_admin: "Kevin Hoffman" 
-sketch_library_owner: "Lillian Boot, Barb Denney"
 experimental_reviewer_1: "Matthew Dingee"
-
 
 # Build settings
 markdown: kramdown
-highlighter: none
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
@@ -91,7 +89,18 @@ exclude:
   - _foundation/layout/html
   - _foundation/utilities/html
 
-# Default for building locally. 
+# Default for building locally.
 # See configuration files in jekyll-configs/ for environment overrides.
-storybook_path: "http://127.0.0.1:6006"
+storybook_path: "http://localhost:8080"
 storybook_prod_uswds_path: "https://design.va.gov/storybook/?path=/docs/uswds"
+storybook_mobile_path: "https://department-of-veterans-affairs.github.io/va-mobile-library"
+
+github_releases:
+  - name: site_releases
+    json: "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases"
+  - name: component_library_releases
+    json: "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases"
+
+figma_changelog_embed_url: https://embed.figma.com/proto/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?page-id=14896%3A14785&node-id=14896-16876&viewport=550%2C221%2C1&scaling=contain&content-scaling=responsive&starting-point-node-id=14896%3A16876&embed-host=share&footer=false
+
+figma_changelog_direct_url: https://embed.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?page-id=14896%3A14785&node-id=14896-16876&viewport=550%2C221%2C1&scaling=contain&content-scaling=responsive&starting-point-node-id=14896%3A16876&embed-host=share&footer=false

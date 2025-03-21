@@ -6,12 +6,12 @@ has-parent: /components/header/
 contributors: Ben Brasso (Agile 6), Ya-ching Tsao (CivicActions), Zach Park (Agile 6), Kristen McConnell (Ad Hoc)
 intro-text: The minimal header can be used when navigating away would prevent the user from easily accomplishing their main task.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
-status: use-with-caution-candidate
+example-link: https://staging.va.gov/mock-form-minimal-header/
+status: use-with-caution-available
 web-component: va-header-minimal
 anchors:
   - anchor: Examples
   - anchor: Usage
-  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Component checklist
 ---
@@ -21,6 +21,10 @@ anchors:
 ### Default
 
 {% include storybook-preview.html story="components-va-header-minimal--default" link_text=page.web-component %}
+
+<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
+  View an example
+</a>
 
 ### With Subheader
 
@@ -45,8 +49,6 @@ anchors:
 ### Placement
 
 * **At the top of the page.** The minimal header appears at the top of the page.
-
-{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 

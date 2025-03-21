@@ -4,7 +4,7 @@ title: Table
 intro-text: "The table component organizes data into columns and rows."
 research-title: Table
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
-status: use-best-practice
+status: use-with-caution-available
 uswds-v3: default
 web-component: va-table
 anchors:
@@ -34,11 +34,9 @@ anchors:
 
 {% include storybook-preview.html height="410px" story="uswds-va-table--with-pagination" link_text="va-table with pagination" %}
 
-## Examples - v1
+### Sortable
 
-### Responsive stacked table (v1 Default)
-
-{% include storybook-preview.html height="400px" story="components-va-table--default" link_text="va-table v1 along with additional variations"  %}
+{% include storybook-preview.html height="410px" story="uswds-va-table--sortable" link_text="Sortable va-table" %}
 
 ## Usage
 
@@ -74,3 +72,8 @@ The v3 default table is a standard table and does not offer the responsive stack
 ## Accessibility considerations
 
 <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/table/#accessibility-accordion">Refer to the U.S. Web Design System for accessibility guidance</a>
+
+### Additional guidance for VA
+
+- Tables should be used to display tabular data, which is structured data made up of rows and columns. A table allows the information to be easily interpreted by visually associating row and column headers.
+- _Do not_ use tables for layout purposes. Tables should only be used for data that has inherent relationships, not for design purposes.

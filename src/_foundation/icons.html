@@ -27,7 +27,7 @@ anchors:
 </div>
 <p>
   VADS icons are adapted from <a href="https://designsystem.digital.gov/components/icon/">USWDS icons</a> and also
-  includes additional icons for VA-specific use cases. Our v1/legacy icon set used Font Awesome v5.15.4.
+  includes additional icons for VA-specific use cases.
 </p>
 
 {% include _site-on-this-page.html %}
@@ -37,10 +37,8 @@ anchors:
 <table class="usa-table-borderless">
   <thead>
     <tr>
-      <th scope="col">Icon v3</th>
-      <th scope="col">Icon v3 name</th>
-      <th scope="col">Icon v1</th>
-      <th scope="col">FontAwesome class</th>
+      <th scope="col">Icon</th>
+      <th scope="col">Value</th>
       <th scope="col">Usage</th>
     </tr>
   </thead>
@@ -51,10 +49,6 @@ anchors:
         <va-icon icon="{{icon.icon-name}}" size=3 srtext="{{icon.name}}" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%} />
       </th>
       <td>{{ icon.icon-name }}</td>
-      <td>
-        <i class="{{ icon.fa-class }}" aria-hidden="true" {%- if icon.color -%}style="color: {{ icon.color }}"{%- endif -%}></i>
-      </td>
-      <td>{{ icon.fa-class }}</td>
       <td>
         {% if icon.additional-usage %}
           {% assign usage = icon.name | append: ', ' | append: icon.additional-usage %}
@@ -86,7 +80,7 @@ anchors:
       Search
       <a href="https://designsystem.digital.gov/components/icon/">USWDS Icon</a> to see if another existing icon suits your
       needs. Preferably, choose generic icons that could be reused in various applications.
-      
+
       <p>If VADS and USWDS do not contain a suitable icon, you
         may search <a href="https://fonts.google.com/icons">Material
           Icons</a> or browse the official <a

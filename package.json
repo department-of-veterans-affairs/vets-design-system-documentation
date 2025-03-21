@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "yarn run build && bundle exec jekyll serve --baseurl ''",
-    "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental"
+    "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental",
+    "update-releases": "rm -rf json_data_cache && yarn run build && bundle exec jekyll serve --baseurl ''"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,7 @@
   "keywords": [
     "Vets.gov",
     "design",
-    "uswds",
-    "formation"
+    "uswds"
   ],
   "author": "Matthew Dingee",
   "license": "ISC",
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation#readme",
   "devDependencies": {
-    "@department-of-veterans-affairs/component-library": "^44.0.0",
+    "@department-of-veterans-affairs/component-library": "^49.4.1",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-rename": "^2.0.0",
@@ -38,9 +38,10 @@
   },
   "dependencies": {
     "@department-of-veterans-affairs/formation": "^11.0.12",
-    "@department-of-veterans-affairs/css-library": "^0.8.5"
+    "@department-of-veterans-affairs/css-library": "^0.20.0"
   },
   "engines": {
     "npm": "6.14.8"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
