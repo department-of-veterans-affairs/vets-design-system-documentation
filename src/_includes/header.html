@@ -2,7 +2,42 @@
 
 
 <section class="usa-banner">
-  <va-official-gov-banner tld="gov" />
+  <div class="usa-accordion">
+    <header class="usa-banner-header">
+      <div class="" style="padding-left:24px;">
+      <img src="{{ site.baseurl }}/img/favicons/favicon-57.png" alt="U.S. flag">
+      <p>An official website of the United States government</p>
+      <button class="usa-accordion-button usa-banner-button"
+        aria-expanded="false" aria-controls="gov-banner">
+        Here's how you know
+      </button>
+      </div>
+    </header>
+    <div class="vads-grid-container usa-banner-content usa-accordion-content" id="gov-banner">
+      <div class="vads-grid-row vads-grid-gap">
+      <div class="usa-banner-guidance-gov vads-grid-col-6">
+        <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-dot-gov.svg" alt="Dot gov">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The .gov means it’s official.</strong>
+            <br>
+            Federal government websites often end in .gov or .mil. Before sharing sensitive information, make sure you’re on a federal government site.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner-guidance-ssl vads-grid-col-6">
+        <img class="usa-banner-icon usa-media_block-img" src="{{ site.baseurl }}/img/icon-https.svg" alt="Https">
+        <div class="usa-media_block-body">
+          <p>
+            <strong>The site is secure.</strong>
+            <br>
+            The <strong>https://</strong> ensures that you are connecting to the official website and that any information you provide is encrypted and transmitted securely.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <header class="site-header" role="banner">
