@@ -29,13 +29,12 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     transition-property: color, background-color, border-color;
+    align-items: center;
   }
 
-  &__link i {
-    font-style: normal;
-    font-weight: 900;
+  &__link va-icon {
     margin-right: 8px;
-    font-size: 0.75em;
+    vertical-align: middle;
   }
 
   &__link:active {
