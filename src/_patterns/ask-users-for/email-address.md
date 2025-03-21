@@ -30,9 +30,11 @@ anchors:
 
 {% include component-example.html alt="An email address text-input field." file="/images/patterns/ask-users-for/email-address/email-address.png" caption="An example of asking users for an email address" width="50%" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ## How to design and build
 

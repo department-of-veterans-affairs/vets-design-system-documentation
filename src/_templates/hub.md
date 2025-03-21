@@ -51,7 +51,11 @@ Refer to the guidance below for the individual sections in the structure.
 
 ## Example
 
-<a class="vads-c-action-link--blue" href="https://www.va.gov/disability/">View example: VA.gov Disability hub</a>  
+<va-link-action
+  href="https://www.va.gov/disability/"
+  text="View example: VA.gov Disability hub"
+  type="secondary"
+></va-link-action>  
 
 ![Screenshot of VA.gov disability benefits hub page]({{site.baseurl}}/images/templates/hub/benefit-hub-outline-desktop.png) 
 

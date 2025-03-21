@@ -22,9 +22,11 @@ anchors:
 
 {% include storybook-preview.html story="components-va-header-minimal--default" link_text=page.web-component %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ### With Subheader
 

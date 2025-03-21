@@ -116,7 +116,11 @@ See pattern guidance when asking users [a mutually exclusive answer](https://des
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/checkbox/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -131,17 +135,21 @@ See pattern guidance when asking users [a mutually exclusive answer](https://des
 
 * Refer to the specific error examples above.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
-  View form error handling for additional guidance
-</a>
+<va-link-action
+  href="{{ site.baseurl }}/components/form/#error-handling"
+  text="View form error handling for additional guidance"
+  type="secondary"
+></va-link-action>
   
 ### Hint text
 
 * Refer to the [hint text example](#hint-text) above.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
-  View label hint text for additional guidance
-</a>
+<va-link-action
+  href="{{ site.baseurl }}/components/form/label#hint-text"
+  text="View label hint text for additional guidance"
+  type="secondary"
+></va-link-action>
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -153,9 +161,16 @@ The native onBlur event is available on this component. It can be used by adding
 
 ## Content considerations
 
-<a class="vads-c-action-link--blue" 
-href="https://design.va.gov/content-style-guide/bulleted-lists">Refer to our bulleted list guidance for punctuation and general considerations</a>
+<va-link-action
+  href="https://design.va.gov/content-style-guide/bulleted-lists"
+  text="Refer to our bulleted list guidance for punctuation and general considerations"
+  type="secondary"
+></va-link-action>
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/checkbox/#accessibility-checkbox">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/checkbox/#accessibility-checkbox"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>

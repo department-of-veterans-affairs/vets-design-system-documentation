@@ -33,7 +33,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/list/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/list/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -61,7 +65,11 @@ anchors:
 
 {% include content/unordered-list.md %}
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/bulleted-lists">Refer to the Content style guide for additional guidance for unordered lists</a>
+<va-link-action
+  href="{{ site.baseurl }}/content-style-guide/bulleted-lists"
+  text="Refer to the Content style guide for additional guidance for unordered lists"
+  type="secondary"
+></va-link-action>
 
 ## Accessibility considerations
 
