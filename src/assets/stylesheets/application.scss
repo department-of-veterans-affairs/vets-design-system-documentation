@@ -4,6 +4,7 @@ font-matter: yay
 
 // CSS-Library
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/scss/variables.scss';
+@import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/tokens/css/variables';
 
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss';
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.scss';
