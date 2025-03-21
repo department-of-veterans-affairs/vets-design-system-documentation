@@ -21,6 +21,10 @@
   margin-right: units(.25);
   vertical-align: middle;
 
+  va-icon {
+    vertical-align: middle;
+  }
+
   &--is-true[icon="check_circle"] {
     color: $color-green;
   }

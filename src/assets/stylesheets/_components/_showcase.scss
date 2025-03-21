@@ -21,6 +21,28 @@
   }
 }
 
+.site-showcase__browser-icon {
+  height: 40px;
+  width: 40px;
+
+  &.firefox {
+    fill: var(--vads-color-orange);
+  }
+
+  &.chrome {
+    fill: var(--vads-color-warning);
+  }
+
+  &.edge {
+    fill: var(--vads-color-blue-cool-light);
+  }
+
+  &.safari {
+    fill: var(--vads-color-primary-alt-dark);
+  }
+  
+}
+
 .site-showcase__heading {
   font-size: 1.25rem;
   font-family: var(--font-family-sans);
@@ -58,8 +80,9 @@
   border-radius: 4px;
   transition: none;
 
-  .fas {
+  va-icon {
     margin-right: units(.5);
+    vertical-align: middle;
   }
 }
 
