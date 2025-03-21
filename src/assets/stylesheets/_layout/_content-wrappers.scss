@@ -271,24 +271,6 @@
     }
   }
 
-  > .usa-table-borderless {
-    border: 1px solid var(--vads-color-base);
-
-    th {
-      padding-left: .8em;
-    }
-
-    th,
-    td {
-      border-color: rgba(0,0,0,.2);
-    }
-
-    tbody tr:last-child td,
-    tbody tr:last-child th {
-      border-color: var(--vads-color-base);
-    }
-  }
-
   > .va-introtext {
     font-family: var(--font-family-sans);
     font-size: 1.375rem;
