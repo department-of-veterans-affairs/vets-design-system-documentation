@@ -3,7 +3,16 @@
 <div class="usa-accordion-bordered site-code-snippet">
 <div>
 <div class="site-code-snippet__button-group">
-<button class="usa-accordion-button site-code-snippet__button" aria-controls="{{accordion_id}}"><span class="fas fa-plus vads-u-margin-right--0p5"></span> Show HTML</button>
+<button class="usa-accordion-button site-code-snippet__button" aria-controls="{{accordion_id}}">
+    <span class="site-code-snippet__show-html">
+        <va-icon icon="add" size="3"></va-icon>
+        <span>Show HTML</span>
+    </span>
+    <span class="site-code-snippet__hide-html">
+        <va-icon icon="remove" size="3"></va-icon>
+        <span>Hide HTML</span>
+    </span>
+</button>
 {% if include.react_component %}
 <a href="{{ include.react_component }}" class="site-code-snippet__link external-link-icon-black" target="_blank" rel="noopener noreferrer"><span class="fab fa-react vads-u-margin-right--0p5"></span> React version </a>
 {% endif %}

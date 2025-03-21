@@ -35,7 +35,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/button-group/">Refer to the U.S. Web Design System for usage guidance for the Default button group</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/button-group/"
+  text="Refer to the U.S. Web Design System for usage guidance for the Default button group"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 

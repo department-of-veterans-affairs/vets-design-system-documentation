@@ -19,7 +19,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/icon/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/icon/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### How this component works
 
@@ -46,51 +50,42 @@ By default, the web component icon will display as `--vads-color-base` which is 
 
 ### Icon Sizing Reference
 
-<table class="usa-table-borderless" style="width:auto">
-  <thead>
-    <tr>
-      <th>Size Attribute</th>
-      <th>Icon Preview</th>
-      <th>Rendered CSS Pixels</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">3</code></td>
-      <td><va-icon icon="search" size="3" /></td>
-      <td>24 x 24</td>
-    </tr>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">4</code></td>
-      <td><va-icon icon="search" size="4" /></td>
-      <td>32 x 32</td>
-    </tr>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">5</code></td>
-      <td><va-icon icon="search" size="5" /></td>
-      <td>40 x 40</td>
-    </tr>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">6</code></td>
-      <td><va-icon icon="search" size="6" /></td>
-      <td>48 x 48</td>
-    </tr>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">7</code></td>
-      <td><va-icon icon="search" size="7" /></td>
-      <td>56 x 56</td>
-    </tr>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">8</code></td>
-      <td><va-icon icon="search" size="8" /></td>
-      <td>64 x 64</td>
-    </tr>
-    <tr>
-      <td><code class="code vads-u-border--1px vads-u-border-color--gray-light">9</code></td>
-      <td><va-icon icon="search" size="9" /></td>
-      <td>72 x 72</td>
-    </tr>
-  </tbody>
-</table>
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Size Attribute</span>
+    <span>Icon Preview</span>
+    <span>Rendered CSS Pixels</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">3</code></span>
+    <span><va-icon icon="search" size="3" /></span>
+    <span>24 x 24</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">4</code></span>
+    <span><va-icon icon="search" size="4" /></span>
+    <span>32 x 32</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">5</code></span>
+    <span><va-icon icon="search" size="5" /></span>
+    <span>40 x 40</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">6</code></span>
+    <span><va-icon icon="search" size="6" /></span>
+    <span>48 x 48</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">7</code></span>
+    <span><va-icon icon="search" size="7" /></span>
+    <span>56 x 56</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">8</code></span>
+    <span><va-icon icon="search" size="8" /></span>
+    <span>64 x 64</span>
+  </va-table-row>
+</va-table>
 
 {% include component-docs.html component_name=page.web-component %}

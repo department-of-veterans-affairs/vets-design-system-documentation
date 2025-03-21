@@ -30,17 +30,21 @@ anchors:
 
 {% include component-example.html alt="An example of a mailing address form." file="/images/patterns/ask-users-for/addresses/mailing-address.png" caption="Example of a form collecting a mailing address." width="50%" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ### Mailing address - Military base
 
 {% include component-example.html alt="An example of a mailing address form that includes the option for a military base." file="/images/patterns/ask-users-for/addresses/military-base-address.png" caption="Example of a form collecting a mailing address on a military base." width="50%" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ### Address confirmation
 

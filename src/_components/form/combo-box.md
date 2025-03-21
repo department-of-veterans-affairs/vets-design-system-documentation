@@ -50,7 +50,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/combo-box/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/combo-box/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 {% include content/select-options.md %}
 
@@ -58,23 +62,31 @@ anchors:
 
 * Refer to the specific [error example](#with-error) above.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
-  View form error handling for additional guidance
-</a>
+<va-link-action
+  href="{{ site.baseurl }}/components/form/#error-handling"
+  text="View form error handling for additional guidance"
+  type="secondary"
+></va-link-action>
 
 ### Hint text
 
 * Refer to the [hint text example](#with-hint-text) above.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/label#hint-text">
-  View label hint text for additional guidance
-</a>
+<va-link-action
+  href="{{ site.baseurl }}/components/form/label#hint-text"
+  text="View label hint text for additional guidance"
+  type="secondary"
+></va-link-action>
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/combo-box/#accessibility-guidance">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/combo-box/#accessibility-guidance"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>
 
 ## Related
 

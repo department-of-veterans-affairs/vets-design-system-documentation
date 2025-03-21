@@ -29,7 +29,11 @@ anchors:
 <va-featured-content>
   <h3 slot="headline">USWDS v3 component</h3>
   <p>This component comes directly from the U.S. Web Design System (USWDS). Thus we follow the guidance and considerations documented in the USWDS for this component. The guidance below augments the USWDS guidance to give specifics on how we use the component at the VA.</p>
-  <a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/banner/">View USWDS guidance on Banner</a>
+  <va-link-action
+    href="https://designsystem.digital.gov/components/banner/"
+    text="View USWDS guidance on Banner"
+    type="secondary"
+  ></va-link-action>
 </va-featured-content>
 
 ### When to use Banner - Official Gov

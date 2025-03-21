@@ -35,7 +35,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/process-list/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/process-list/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -73,7 +77,11 @@ The Process list appears after a start form link on the form [Introduction page]
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/process-list/#accessibility-process-list">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/process-list/#accessibility-process-list"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional accessibility considerations for VA
 

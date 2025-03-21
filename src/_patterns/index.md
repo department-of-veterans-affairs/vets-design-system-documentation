@@ -23,4 +23,8 @@ All of the patterns in this section show or cite examples from VA.gov and were r
 
 If you have a new pattern, or an update to an existing pattern, consider contributing back to the design system. Reach out to the Design System Team if you have questions.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/contributing-to-the-design-system">Create or update a pattern</a>
+<va-link-action
+  href="{{ site.baseurl }}/about/contributing-to-the-design-system"
+  text="Create or update a pattern"
+  type="secondary"
+></va-link-action>

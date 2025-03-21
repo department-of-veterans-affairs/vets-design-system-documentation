@@ -33,7 +33,7 @@ anchors:
     css_property="padding"
   %}
 
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.all %}
       {% include padding-example.html
         class=item.class
@@ -56,7 +56,7 @@ anchors:
     responsive=true
     css_property="padding-top, padding-bottom"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.y %}
       {% include padding-example.html
         class=item.class
@@ -79,7 +79,7 @@ anchors:
     responsive=true
     css_property="padding-top"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.top %}
       {% include padding-example.html
         class=item.class
@@ -102,7 +102,7 @@ anchors:
     responsive=true
     css_property="padding-bottom"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.bottom %}
       {% include padding-example.html
         class=item.class
@@ -125,7 +125,7 @@ anchors:
     responsive=true
     css_property="padding-right, padding-left"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.x %}
       {% include padding-example.html
         class=item.class
@@ -148,7 +148,7 @@ anchors:
     responsive=true
     css_property="padding-right"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.right %}
       {% include padding-example.html
         class=item.class
@@ -171,7 +171,7 @@ anchors:
     responsive=true
     css_property="padding-left"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.padding.left %}
       {% include padding-example.html
         class=item.class

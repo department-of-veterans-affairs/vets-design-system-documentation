@@ -54,4 +54,8 @@ A "shortened URL" is also a short URL, but is generally made up of a randomized 
 ## Vanity URL requests and implementation process
 Vanity URL requests must be submitted to VA.gov Information Architecture for validation, approval, and implementation.
 
-<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md">Submit a vanity URL request on GitHub</a>
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md"
+  text="Submit a vanity URL request on GitHub"
+  type="secondary"
+></va-link-action>

@@ -19,7 +19,7 @@ Change the alignment of text or elements. This utility also [responsive prefixes
     responsive=true
     css_property="text-align"
   %}
-  <div class="vads-l-row vads-u-flex-direction--column">
+  <div class="vads-grid-row vads-u-flex-direction--column">
     {% for item in site.data.text-align.alignments %}
       {% include text-align-example.html
         name=item.name

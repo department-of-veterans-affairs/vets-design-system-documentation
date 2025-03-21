@@ -1,32 +1,29 @@
 {% assign token_type = include.type %}
-<table class="usa-table usa-table-borderless">
-  <thead>
-    <tr>
-      <th scope="col">Token</th>
-      <th scope="col">Value</th>
-      {% if token_type == "primitive" %}
-      <th scope="col">Example</th>
+
+<va-table table-type="bordered" full-width>
+  <va-table-row>
+    <span>Token</span>
+    <span>Value</span>
+    {% if token_type == "primitive" %}
+    <span>Example</span>
+    {% endif %}
+  </va-table-row>
+  {% for item in include.spacing %}
+  <va-table-row>
+    <span><code class="code">{{ item.vads-name }}</code></span>
+    <span>
+      {% if item.value-from-uswds-design-token %}
+        {{ item.value-from-uswds-design-token }}
+      {% else %}
+        {{ item.vads-alias }}
       {% endif %}
-    </tr>
-  </thead>
-  <tbody>
-    {% for item in include.spacing %}
-    <tr>
-      <th scope="row"><code class="code">{{ item.vads-name }}</code></th>
-      <td>
-        {% if item.value-from-uswds-design-token %}
-          {{ item.value-from-uswds-design-token }}
-        {% else %}
-          {{ item.vads-alias }}
-        {% endif %}
-      </td>
-      {% if token_type == "primitive" %}
-      <td>
-        <div class="vads-u-background-color--primary" style="height: {{ item.value-from-uswds-design-token }}">
-        </div>
-      </td>
-      {% endif %}
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    </span>
+    {% if token_type == "primitive" %}
+    <span>
+      <div class="vads-u-background-color--primary" style="height: {{ item.value-from-uswds-design-token }}">
+      </div>
+    </span>
+    {% endif %}
+  </va-table-row>
+  {% endfor %}
+</va-table>

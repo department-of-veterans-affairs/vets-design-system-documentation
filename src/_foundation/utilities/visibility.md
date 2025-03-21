@@ -19,9 +19,9 @@ Change the visibility characteristics of an element
     responsive=true
     css_property="visibility"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.visibility.visibility %}
-      <div class="vads-l-col--12 site-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+      <div class="vads-grid-col-12 site-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
         <div>
           <code class="code">.vads-u-visibility--{{ item.name }} </code>
         </div>

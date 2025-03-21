@@ -30,9 +30,11 @@ anchors:
 
 {% include component-example.html alt="An example of asking the relationship to the Veteran with radio buttons." file="/images/patterns/ask-users-for/relationship/relationship-to-veteran.png" caption="Example of asking the relationship to the Veteran with radio buttons." width="50%" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
   
 ## How to design and build
 

@@ -19,7 +19,7 @@
 
   &__caption {
     padding: units(1) units(2);
-    color: $color-base;
+    color: var(--vads-color-base);
     font-size: 0.9375rem;
     max-width: 72ex;
   }

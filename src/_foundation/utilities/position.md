@@ -19,9 +19,9 @@ Change the positioning of text or elements. Position classes include [responsive
     responsive=true
     css_property="position"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.position.position %}
-      <div class="vads-l-col--12 site-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+      <div class="vads-grid-col-12 site-showcase__col vads-u-display--flex vads-u-flex-direction--column {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
         <div>
           <code class="code">.vads-u-position--{{ item.name }} </code>
         </div>

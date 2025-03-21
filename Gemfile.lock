@@ -11,7 +11,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.19.6)
+    google-protobuf (3.25.6)
     http_parser.rb (0.8.0)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
@@ -60,16 +60,16 @@ GEM
       forwardable-extended (~> 2.6)
     posix-spawn (0.3.15)
     public_suffix (4.0.7)
-    rake (13.0.6)
+    rake (13.2.1)
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.3.9)
     rouge (3.29.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.0.21)
-      google-protobuf (~> 3.19.0)
-      rake (>= 12.3.0)
+    sass-embedded (1.63.6)
+      google-protobuf (~> 3.23)
+      rake (>= 13.0.0)
     sassc (2.4.0)
       ffi (~> 1.9)
     terminal-table (2.0.0)
@@ -86,9 +86,9 @@ DEPENDENCIES
   jekyll-last-modified-at
   jekyll-redirect-from
   minima (~> 2.0)
-  sass-embedded (~> 1.0.0.pre.beta.4)
+  sass-embedded (~> 1.63.0)
   tzinfo-data
   webrick
 
 BUNDLED WITH
-   2.2.22
+   2.2.33

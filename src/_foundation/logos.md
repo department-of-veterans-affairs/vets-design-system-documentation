@@ -17,7 +17,11 @@ Custom logos for the following use cases are not supported on VA.gov:
 * Within a software application, such as an application form or tool
 * Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/downloads/VALogos.zip">Download hi-res logo artwork</a>
+<va-link-action
+  href="{{ site.baseurl }}/downloads/VALogos.zip"
+  text="Download hi-res logo artwork"
+  type="secondary"
+></va-link-action>
 
 ## Use the name in place of a logo
 

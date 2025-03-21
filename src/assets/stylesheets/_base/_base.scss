@@ -1,7 +1,6 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $font-sans;
 
   &:before {
     content: '{ "current": "", "applied": [] }';

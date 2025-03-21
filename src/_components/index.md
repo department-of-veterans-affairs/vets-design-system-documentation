@@ -56,4 +56,8 @@ v3-based versions of the components are designed to sit alongside our current v1
 
 If you have a new component, or an update to an existing component, consider contributing back to the design system. Reach out to the Design System Team if you have questions.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/contributing-to-the-design-system">Create or update a component</a>
+<va-link-action
+  href="{{ site.baseurl }}/about/contributing-to-the-design-system"
+  text="Create or update a component"
+  type="secondary"
+></va-link-action>

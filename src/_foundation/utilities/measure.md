@@ -22,9 +22,9 @@ In other words, as the font size increases, the pixel width increases.
     responsive=true
     css_property="max-width (ch)"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.measures.measures %}
-      <div class="site-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+      <div class="site-showcase__col vads-grid-col-12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
         <div class="vads-u-display--flex vads-u-justify-content--space-between">
           <code class="code">.vads-u-measure--{{ item.name }}</code>
           <span class="site-utility-value">{{ item.value }}</span>

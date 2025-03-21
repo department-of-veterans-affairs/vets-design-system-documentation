@@ -19,13 +19,18 @@
 
 .site-component-checklist-score {
   margin-right: units(.25);
+  vertical-align: middle;
 
-  &--is-true {
+  va-icon {
+    vertical-align: middle;
+  }
+
+  &--is-true[icon="check_circle"] {
     color: $color-green;
   }
 
   &--is-false {
-    color: $color-orange;
+    color: $vads-color-orange;
   }
 
   &--is-na {

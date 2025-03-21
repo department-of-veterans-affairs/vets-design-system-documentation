@@ -1,12 +1,19 @@
 var gulp = require('gulp');
+const replace = require('gulp-replace');
 var task = 'css';
 
-gulp.task('copy-formation-css', function (done) {
-  console.log('copying Formation CSS');
-  var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/formation.min.css')
-    .pipe(gulp.dest('src'));
-
-  return stream;
+gulp.task('clean-css-library-asset-paths', function() {
+  console.log('cleaning css-library asset paths');
+  // Removing the ~ prefix from the asset paths
+  return gulp.src([
+    './node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/**/*.css',
+    './node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/**/*.scss'
+  ])
+    .pipe(replace(/~@uswds/g, '@uswds'))
+    .pipe(replace(/~@department-of-veterans-affairs/g, '@department-of-veterans-affairs'))
+    .pipe(gulp.dest(function(file) {
+      return file.base;
+    }));
 });
 
 gulp.task('copy-web-components-css', function (done) {
@@ -17,16 +24,7 @@ gulp.task('copy-web-components-css', function (done) {
   return stream;
 });
 
-gulp.task('copy-css-library-css', function (done) {
-  console.log('copying css-library CSS');
-  var stream = gulp.src('./node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/*.css')
-    .pipe(gulp.dest('src/assets/stylesheets/'));
-
-  return stream;
-});
-
 gulp.task(task, gulp.series(
-  'copy-formation-css',
+  'clean-css-library-asset-paths',
   'copy-web-components-css',
-  'copy-css-library-css'
 ));
