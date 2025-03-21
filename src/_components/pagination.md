@@ -54,12 +54,20 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/pagination/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/pagination/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/pagination/#accessibility-pagination">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/pagination/#accessibility-pagination"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>
 
 {% include _component-checklist.html component_name=page.web-component %}

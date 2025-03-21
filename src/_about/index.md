@@ -10,13 +10,25 @@ intro-text: This site provides design guidelines and code to help you quickly cr
 <div class="vads-grid-container vads-u-margin-bottom--2">
   <div class="vads-grid-row">
     <div class="vads-grid-col-12 tablet:vads-grid-col-4">
-      <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/content-writers">Content writers</a>
+      <va-link-action
+        href="{{ site.baseurl }}/about/content-writers"
+        text="Content writers"
+        type="secondary"
+      ></va-link-action>
     </div>
     <div class="vads-grid-col-12 tablet:vads-grid-col-4">
-      <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/designers">Designers</a>
+      <va-link-action
+        href="{{ site.baseurl }}/about/designers"
+        text="Designers"
+        type="secondary"
+      ></va-link-action>
     </div>
     <div class="vads-grid-col-12 tablet:vads-grid-col-4">
-      <a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/developers">Developers</a>
+      <va-link-action
+        href="{{ site.baseurl }}/about/developers"
+        text="Developers"
+        type="secondary"
+      ></va-link-action>
     </div>
   </div>
 </div>

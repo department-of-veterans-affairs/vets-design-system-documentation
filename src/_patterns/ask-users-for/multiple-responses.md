@@ -98,9 +98,11 @@ There are two types of multiple page patterns with slightly different user flows
         </va-process-list-item>
       </va-process-list>
       <div class="vads-u-padding-left--3">
-        <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-required }}">
-          View a mock form example of a <em>required</em> multi-page pattern
-        </a>  
+        <va-link-action
+          href="{{ page.example-link-multi-page-required }}"
+          text="View a mock form example of a <em>required</em> multi-page pattern"
+          type="secondary"
+        ></va-link-action>
       </div>
     </div>
   </div>
@@ -135,10 +137,12 @@ There are two types of multiple page patterns with slightly different user flows
         </va-process-list-item>
       </va-process-list>
       <div class="vads-u-padding-left--3">
-        <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-optional }}">
-          View a mock form example of an <em>optional</em> multi-page pattern
-        </a>
-     </div>
+        <va-link-action
+          href="{{ page.example-link-multi-page-optional }}"
+          text="View a mock form example of an <em>optional</em> multi-page pattern"
+          type="secondary"
+        ></va-link-action>
+      </div>
     </div>
   </div>
 </div>

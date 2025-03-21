@@ -19,7 +19,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/icon/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/icon/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### How this component works
 
