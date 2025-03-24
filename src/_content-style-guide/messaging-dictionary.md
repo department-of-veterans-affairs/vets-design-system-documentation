@@ -60,12 +60,53 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 *Some messages written to reflect the example; other variations will be added to expanded dictionary section.*
 
-| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
-| Status update (e.g. claim closed)        | **Your [CLAIM TYPE] claim update** | Our records show that your claim was closed on [DATE].| N/A | [Alert box](/components/alert) | [Informational](/components/alert#informational-alert) | Replace affected component |
-| Action required (e.g. claim evidence request) | **We need your help to finish reviewing your claim** | Please provide more evidence (supporting documents) so we can finish reviewing your claim.| See Details | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Above affected component |
-| Form prefill notice | **We've started your form for you** | We've filled in some of this form based on information you've given us in the past. Please double-check the information and update it as needed. | N/A | [Alert box](/components/alert) | [Informational](/components/alert#informational-alert) | Above affected component |
-| Change in application feature, neutral/positive impact (e.g. SiP now available) | **You can now save your in-progress applications** | Sign in to VA.gov to save your application so you can come back later to complete it. All you'll need to sign in is an email and password. | Sign in to VA.gov | [Alert box](/components/alert) | [Informational](/components/alert#informational-alert) | Above affected component |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Scenario</span>
+    <span>Message title</span>
+    <span>Message content</span>
+    <span>Actions</span>
+    <span>Component</span>
+    <span>State</span>
+    <span>Location</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Status update (e.g. claim closed)</span>
+    <span><strong>Your [CLAIM TYPE] claim update</strong></span>
+    <span>Our records show that your claim was closed on [DATE].</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>Replace affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Action required (e.g. claim evidence request)</span>
+    <span><strong>We need your help to finish reviewing your claim</strong></span>
+    <span>Please provide more evidence (supporting documents) so we can finish reviewing your claim.</span>
+    <span>See Details</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#warning-alert" text="Warning"></va-link></span>
+    <span>Above affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Form prefill notice</span>
+    <span><strong>We've started your form for you</strong></span>
+    <span>We've filled in some of this form based on information you've given us in the past. Please double-check the information and update it as needed.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>Above affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Change in application feature, neutral/positive impact (e.g. SiP now available)</span>
+    <span><strong>You can now save your in-progress applications</strong></span>
+    <span>Sign in to VA.gov to save your application so you can come back later to complete it. All you'll need to sign in is an email and password.</span>
+    <span>Sign in to VA.gov</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>Above affected component</span>
+  </va-table-row>
+</va-table>
 
 ## Engagement messaging
 
@@ -75,10 +116,35 @@ Nudges the user to enter or update data in the system. It can be initiated by ei
 
 ### Prompt to complete a task or enter data
 
-| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
-| Continue a saved benefit application | **Still want to apply for [BENEFIT NAME]?** | The application you started for [BENEFIT NAME] will expire on [EXPIRATION DATE]. If you'd still like to apply, you'll need to submit the application by this date. Or you can start a new application any time. | [BUTTON 1] Continue your application [BUTTON 2] Start over | [Alert box](/components/alert) | [Informational](/components/alert#informational-alert) | Replace affected component |
-| Set up 2-factor authentication       | **Want to make your VA.gov account more secure?** | You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if someone gets your password. | Secure your account | [Alert box](/components/alert) | [Informational](/components/alert#informational-alert) | Replace affected component |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Scenario</span>
+    <span>Message title</span>
+    <span>Message content</span>
+    <span>Actions</span>
+    <span>Component</span>
+    <span>State</span>
+    <span>Location</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Continue a saved benefit application</span>
+    <span><strong>Still want to apply for [BENEFIT NAME]?</strong></span>
+    <span>The application you started for [BENEFIT NAME] will expire on [EXPIRATION DATE]. If you'd still like to apply, you'll need to submit the application by this date. Or you can start a new application any time.</span>
+    <span>[BUTTON 1] Continue your application [BUTTON 2] Start over</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>Replace affected component</span>
+  </va-table-row> 
+  <va-table-row>
+    <span>Set up 2-factor authentication</span>
+    <span><strong>Want to make your VA.gov account more secure?</strong></span>
+    <span>You can add an optional extra layer of security (called 2-factor authentication) to your account. This helps to make sure that no one but you can access your account—even if someone gets your password.</span>
+    <span>[BUTTON 1] Set up 2FA [BUTTON 2] Learn more</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>Replace affected component</span>
+  </va-table-row> 
+</va-table>
 
 ## Access messaging
 
