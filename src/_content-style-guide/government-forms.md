@@ -54,37 +54,133 @@ Many Veterans refer to certain forms by their more common, casual name. For exam
 
 For VA forms not listed here, go to [Find a VA form](https://www.va.gov/find-forms/). DD forms are Department of Defense forms.
 
-| Form number                      | Form name                                                    |
-| -------------------------------- | ------------------------------------------------------------ |
-| DD Form 214                      | Certificate of Release of Discharge from Active Duty <br />(commonly called DD214 or discharge or separation papers) |
-| DD Form 149                      | Application for Correction of Military Record <br />(commonly called DD149) |
-| DD Form 293                      | Application for the Review of Discharge or Dismissal <br />(commonly called DD293) |
-| VA&nbsp;Form&nbsp;SGLV&nbsp;8283 | Claim for Death Benefits                                     |
-| VA&nbsp;Form&nbsp;SGLV&nbsp;8286 | Servicemembers' Group Life Insurance Election and Certificate |
-| VA&nbsp;Form&nbsp;SGLV&nbsp;8600 | Application for TSGLI Benefits                               |
-| VA&nbsp;Form&nbsp;SGLV&nbsp;8715 | Application for the Servicemembers' Group Life Insurance (SGLI) Disability Extension |
-| VA&nbsp;Form&nbsp;SGLV&nbsp;8721 | VGLI Beneficiary Designation/Change                          |
-| VA Form 9                        | Substantive Appeal                                           |
-| VA Form 10-0103                  | Veterans Application for Assistance in Acquiring Home Improvements and Structural Alterations |
-| VA Form 10-10EC                  | Application for Extended Care Services                       |
-| VA Form 10-10EZ                  | Application for Health Benefits                              |
-| VA&nbsp;Form&nbsp;10-10EZR       | Health Benefits Update Form                                  |
-| VA&nbsp;Form&nbsp;10-1394        | Application for Adaptive Equipment—Motor Vehicle             |
-| VA Form 10-8678                  | Application for Annual Clothing Allowance                    |
-| VA Form 1100                     | Agreement to Pay Indebtedness                                |
-| VA Form 21-22a                   | Appointment of Veterans Service Organization                 |
-| VA Form 21-526EZ                 | Disability Compensation and Related Compensation Benefits    |
-| VA Form 21-4138                  | Statement in Support of Claim                                |
-| VA Form 21-4502                  | Application for Automobile or Other Conveyance and Adaptive Equipment |
-| VA Form 21-0958                  | Notice of Disagreement                                       |
-| VA Form 22-1990                  | Application for VA Education Benefits                        |
-| VA&nbsp;Form&nbsp;22-1990e       | Application for Family Member to Use Transferred Benefits    |
-| VA Form 22-1990t                 | Application for Individualized Tutorial Assistance           |
-| VA Form 22-1999                  | VA Enrollment Certificate                                    |
-| VA Form 22-5490                  | Dependents’ Application for VA Education Benefits            |
-| VA Form 26-4555                  | Application in Acquiring Specially Adaptive Housing or Special Home Adaptation Grant |
-| VA Form 29-4125                  | Claim for One Sum Payment                                    |
-| VA Form 29-541                   | Certificate Showing Residence and Heirs of Deceased Veteran  |
-| VA Form 4107                     | Your Rights to Appeal our Decision                           |
-| VA Form 5655                     | Financial Status Report                                      |
-
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Form number</span>
+    <span>Form name</span>
+  </va-table-row>
+  <va-table-row>
+    <span>DD Form 214</span>
+    <span>Certificate of Release of Discharge from Active Duty <br />(commonly called DD214 or discharge or separation papers)</span>
+  </va-table-row>
+  <va-table-row>
+    <span>DD Form 149</span>
+    <span>Application for Correction of Military Record <br />(commonly called DD149)</span>
+  </va-table-row>
+  <va-table-row>
+    <span>DD Form 293</span>
+    <span>Application for the Review of Discharge or Dismissal <br />(commonly called DD293)</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form SGLV 8283</span>
+    <span>Claim for Death Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form SGLV 8286</span>
+    <span>Servicemembers' Group Life Insurance Election and Certificate</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form SGLV 8600</span>
+    <span>Application for TSGLI Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form SGLV 8715</span>
+    <span>Application for the Servicemembers' Group Life Insurance (SGLI) Disability Extension</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form SGLV 8721</span>
+    <span>VGLI Beneficiary Designation/Change</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 9</span>
+    <span>Substantive Appeal</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 10-0103</span>
+    <span>Veterans Application for Assistance in Acquiring Home Improvements and Structural Alterations</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 10-10EC</span>
+    <span>Application for Extended Care Services</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 10-10EZ</span>
+    <span>Application for Health Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 10-10EZR</span>
+    <span>Health Benefits Update Form</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 10-1394</span>
+    <span>Application for Adaptive Equipment—Motor Vehicle</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 10-8678</span>
+    <span>Application for Annual Clothing Allowance</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 1100</span>
+    <span>Agreement to Pay Indebtedness</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 21-22a</span>
+    <span>Appointment of Veterans Service Organization</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 21-526EZ</span>
+    <span>Disability Compensation and Related Compensation Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 21-4138</span>
+    <span>Statement in Support of Claim</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 21-4502</span>
+    <span>Application for Automobile or Other Conveyance and Adaptive Equipment</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 21-0958</span>
+    <span>Notice of Disagreement</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 22-1990</span>
+    <span>Application for VA Education Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA&nbsp;Form&nbsp;22-1990e</span>
+    <span>Application for Family Member to Use Transferred Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 22-1990t</span>
+    <span>Application for Individualized Tutorial Assistance</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 22-1999</span>
+    <span>VA Enrollment Certificate</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 22-5490</span>
+    <span>Dependents’ Application for VA Education Benefits</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 26-4555</span>
+    <span>Acquiring Specially Adaptive Housing or Special Home Adaptation Grant</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 29-4125</span>
+    <span>Claim for One Sum Payment</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 29-541</span>
+    <span>Certificate Showing Residence and Heirs of Deceased Veteran</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 4107</span>
+    <span>Your Rights to Appeal our Decision</span>
+  </va-table-row>
+  <va-table-row>
+    <span>VA Form 5655</span>
+    <span>Financial Status Report</span>
+  </va-table-row>
+</va-table>
