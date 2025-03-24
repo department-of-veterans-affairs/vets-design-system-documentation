@@ -6,7 +6,7 @@ has-parent: /components/alert/
 github-title: va-alert-expandable
 intro-text: A minimized alert style that can be used to alert a user to relevant information on the page that is not prompted by their own action. This component combines the Additional Info component with the Background-Color only Alert variation color schemes.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A146&mode=design&t=J32RmU6Fjbjuh9bD-1
-status: use-with-caution-candidate
+status: use-deployed
 contributors: Leyda Hughes (VSA Facilities Team)
 web-component: va-alert-expandable
 anchors:
@@ -45,6 +45,7 @@ anchors:
 
 * **User feedback.** Use the [Alert]({{ site.baseurl }}/components/alert) component when responding to an action taken by a user such as submitting a form.
 * **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
+* **Showing an error.** Errors should never be hidden. They should only appear as a result of a user action, and always be visible to the user. The error text should be brief and clear, eliminating the need for it to be collapsed. Consider using a standard or slim variation of [Alert]({{ site.baseurl }}/components/alert) if there is an error.
 
 ### Behavior
 

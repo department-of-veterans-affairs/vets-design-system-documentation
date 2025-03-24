@@ -1,12 +1,12 @@
 ---
 layout: component
 title: Card
-status: use-with-caution-candidate
 github-title: va-card
 research-title: card
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1319%3A20931&mode=design&t=nYOotVcwdpiMCL5C-1
 intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
 contributor: Allison Lu, Angela Agosto
+status: use-deployed
 web-component: va-card
 anchors:
   - anchor: Examples
@@ -72,7 +72,7 @@ anchors:
 Use this variation when you have a short status which can use the [Tag component]({{ site.baseurl }}/components/tag).
 
 1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
-2. **Status.** Status using the [Tag component]({{ site.baseurl }}/components/tag).
+2. **Status.** Status using the [Tag component]({{ site.baseurl }}/components/tag). Status should: announce "status" by screen readers, the visible status text, and the header text. See [accessibility considerations](#accessibility-considerations) for more details.
 3. **Header.** Header that summarizes the card's content.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
 5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
@@ -230,6 +230,15 @@ A radio button tile has a title and description within the label and a Card-like
 * **Use the appropriate heading level for your page.** Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.
 * **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
 * **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card.  The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
+* **Announce "Status" to screen readers** When adding status to a card, it's important to have the word "status" announced by screen readers before the actual status and header text of the card. For example:
+
+```html
+  <h3>
+    <span class="vads-u-visibility--screen-reader">Status</span>
+    <span class="usa-label vads-u-display--inline-block vads-u-font-family--sans vads-u-font-weight--normal vads-u-margin-bottom--1">In progress</span>
+    <span class="vads-u-display--block">Claim for compensation</span>
+  </h3>
+```
 
 ## Related
 

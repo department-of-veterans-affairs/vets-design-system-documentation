@@ -1,0 +1,30 @@
+maturity:
+  - name: guidance
+    score: false
+  - name: research
+    score: false
+  - name: stability
+    score: false
+  - name: adoption
+    score: false
+accessibility:
+code-assets:
+  - name: variations 
+    score: false
+  - name: responsive
+    score: false
+  - name: interactive-states
+    score: false
+  - name: tokens
+    score: false
+  - name: internationalization
+    score: false
+visual-assets:
+  - name: variations
+    score: false
+  - name: responsive
+    score: false
+  - name: interactive-states
+    score: false
+  - name: tokens
+    score: false

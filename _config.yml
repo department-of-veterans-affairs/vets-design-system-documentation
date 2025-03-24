@@ -91,6 +91,16 @@ exclude:
 
 # Default for building locally.
 # See configuration files in jekyll-configs/ for environment overrides.
-storybook_path: "http://localhost:6006"
+storybook_path: "http://localhost:8080"
 storybook_prod_uswds_path: "https://design.va.gov/storybook/?path=/docs/uswds"
 storybook_mobile_path: "https://department-of-veterans-affairs.github.io/va-mobile-library"
+
+github_releases:
+  - name: site_releases
+    json: "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases"
+  - name: component_library_releases
+    json: "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases"
+
+figma_changelog_embed_url: https://embed.figma.com/proto/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?page-id=14896%3A14785&node-id=14896-16876&viewport=550%2C221%2C1&scaling=contain&content-scaling=responsive&starting-point-node-id=14896%3A16876&embed-host=share&footer=false
+
+figma_changelog_direct_url: https://embed.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?page-id=14896%3A14785&node-id=14896-16876&viewport=550%2C221%2C1&scaling=contain&content-scaling=responsive&starting-point-node-id=14896%3A16876&embed-host=share&footer=false

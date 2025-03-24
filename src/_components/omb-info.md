@@ -1,9 +1,9 @@
 ---
 layout: component
 title: "OMB info"
-status: use-deployed
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A164&mode=design&t=e27HltZrbIL9enJ1-1
 intro-text: "Provides text required by the Office of Management and Budget (OMB) to be present on all forms."
+status: use-best-practice
 web-component: va-omb-info
 anchors:
   - anchor: Examples
@@ -19,7 +19,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-omb-info--default" link_text="va-omb-info" %}
+{% include storybook-preview.html story="components-va-omb-info--default" link_text=page.web-component %}
 
 ### Without OMB Number
 

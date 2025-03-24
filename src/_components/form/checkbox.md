@@ -108,7 +108,9 @@ anchors:
 
 ### Indeterminate
 
-Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected. 
+Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected.
+
+See pattern guidance when asking users [a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
 
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
 

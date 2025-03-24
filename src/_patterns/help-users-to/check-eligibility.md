@@ -27,6 +27,7 @@ anchors:
 ### When not to use this pattern
 
 * **As a panacea for removing friction and complexity.** Work must still be done to make eligibility criteria clear and understandable to applicants for a service or benefit. This includes, at minimum, writing the eligibility criteria in plain language and testing that content with users, then iterating on the design based on their feedback. This pattern attempts to make complicated requirements clearer to end users but it is neither an excuse nor salve for overly complex or confusing requirements.
+* **When eligibility is short and concise.** Do not use this pattern if you can reasonably include information users need to know about their eligibility for a benefit or service and the eligibility requirements on our [Introduction page]({{ site.baseurl }}/templates/forms/introduction). Placing this information in content, rather than in a form, allows the content to be searchable.
 
 ## Examples
 

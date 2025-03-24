@@ -61,7 +61,7 @@ Alternate example:
 
 **Intro paragraph**
 
-- Add a brief intro describing when to use this form. This could be 1 to 3 sentences, with no more than 25 words per sentence.
+- Add a brief intro describing when to use this form. This could be 1 to 3 sentences, with no more than 25 words per sentence. This text is styled differently than body copy.
 - Try reusing the "When to use" blurb from the form detail page in Find a Form. For example, using the Veterans Pension blurb from the form detail page, this intro could be "Use this form if you’re a wartime Veteran and want to file a pension claim."
 
 **Note:** Guidance on this part of the template is evolving. Check back for updates.
