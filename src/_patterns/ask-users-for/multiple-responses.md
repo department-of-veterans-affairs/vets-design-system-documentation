@@ -71,12 +71,12 @@ There are two types of multiple page patterns with slightly different user flows
 
 ### Required multi-page pattern user flow
 
-<div class="vads-grid-container--full">
+<div class="vads-grid-container">
   <div class="vads-grid-row">
-    <div class="large-screen:vads-col vads-u-padding-top--4">
-      <img src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6 vads-u-padding-top--4">
+      <img width="100%" src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
     </div>
-    <div class="large-screen:vads-col">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6">
       <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_required | markdownify }}
@@ -110,12 +110,12 @@ There are two types of multiple page patterns with slightly different user flows
 
 ### Optional multi-page pattern user flow
 
-<div class="vads-grid-container--full">
+<div class="vads-grid-container">
   <div class="vads-grid-row">
-    <div class="large-screen:vads-col vads-u-padding-top--4">
-      <img src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6 vads-u-padding-top--4">
+      <img width="100%" src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
     </div>
-    <div class="large-screen:vads-col">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6">
       <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_optional | markdownify }}
