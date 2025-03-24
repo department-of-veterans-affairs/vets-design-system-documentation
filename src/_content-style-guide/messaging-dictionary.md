@@ -160,27 +160,157 @@ Variations in messaging will be contingent on:
 - If scheduled, when the application will be back up (precise time stamp if known, general estimate if not)
 - If not expected, general estimate of when the application will be back up
 
-| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
-| Entire site is not accessible (scheduled downtime) | **VA.gov is down for maintenance right now** | We're sorry. VA.gov isn't ready for you right now. We're doing some work to help make this site even better for Veterans, service members, and family members like you. We hope to finish our work by [DATE/TIME]. Please check back then. | N/A | [Plain text](/design/typography) | N/A | Replace page |
-| Entire site is not accessible (expected) | **VA.gov isn't working right now** | We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")]. | N/A | [Plain text](/design/typography) | N/A | Replace page |
-| Entire site is accessible | **We're working on the site** | We’re doing some work on VA.gov right now. You should still be able to use the applications and tools. But if you have any trouble, please check back soon. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Banner |
-| Application or page is not accessible | **[APPLICATION NAME] is down for maintenance** | We're making some updates to [APPLICATION NAME]. We're sorry it's not working right now, and we hope to be finished by [DATE], [TIME]. Please check back soon. | N/A | [Plain text](/design/typography) | N/A | Replace page below title |
-| Application or page is not accessible, no timeframe | **[APPLICATION NAME] is down for maintenance** | We're making some updates to [APPLICATION NAME]. We're sorry it's not working right now. Please check back soon. | N/A | [Plain text](/design/typography) | N/A | Replace page below title |
-| Application or page is accessible (general message; specific iterations to be added later) | **Some parts of this may not be working** | You can still use [APPLICATION/PAGE NAME], but some parts of it may not work for you. If you're having trouble, please try again later. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Below page title |
-| Component is not accessible (general message; specific iterations to be added later) | **[COMPONENT NAME] isn't working right now** | We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")].  | Go back to previous page | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Replace affected component |
-| Component is accessible (general message; [see application/component specific messages](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-system/guidelines/error-handling/Access%20Messaging.md))| **Some information may not be up to date** | We're sorry. Something's not working quite right. You can still use [COMPONTENT NAME], but you may not be able to see all your updated information. If you're having trouble, please try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")]. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Above affected component |
-| Unable to complete an automated task (e.g. save application in progress) | **We couldn't save your form** | We're sorry. Something went wrong when we tried to save your form. If you're on a secure and private computer, you can leave this page open and try saving your form again in a few minutes. If you're on a public computer, you can continue to fill out your form, but it won't automatically save as you fill it out. | N/A | [Alert box](/components/alert) | [Error alert](/components/alert#error-alert) | Below affected component |
-| Unable to complete a user-initiated task, can't proceed | **We've run into a problem** | We're sorry. Something went wrong on our end. Please try again. | N/A | [Alert box](/components/alert) | [Error alert](/components/alert#error-alert) | Above page title |
-| Unable to complete a user-initiated task, can still proceed | **We've run into a problem** | We're sorry. Something went wrong on our end. You can try again now, or move on to the next step and come back later to complete this. | N/A | [Alert box](/components/alert) | [Warning alert](/components/alert#warning-alert) | Above page title |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Scenario</span>
+    <span>Message title</span>
+    <span>Message content</span>
+    <span>Actions</span>
+    <span>Component</span>
+    <span>State</span>
+    <span>Location</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Entire site is not accessible (scheduled downtime)</span>
+    <span><strong>VA.gov is down for maintenance right now</strong></span>
+    <span>We're sorry. VA.gov isn't ready for you right now. We're doing some work to help make this site even better for Veterans, service members, and family members like you. We hope to finish our work by [DATE/TIME]. Please check back then.</span>
+    <span>N/A</span>
+    <span><va-link href="/design/typography" text="Plain text"></va-link></span>
+    <span>N/A</span>
+    <span>Replace page</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Entire site is not accessible (expected)</span>
+    <span><strong>VA.gov isn't working right now</strong></span>
+    <span>We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")).</span>
+    <span>N/A</span>
+    <span><va-link href="/design/typography" text="Plain text"></va-link></span>
+    <span>N/A</span>
+    <span>Replace page</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Entire site is accessible</span>
+    <span><strong>We're working on the site</strong></span>
+    <span>We’re doing some work on VA.gov right now. You should still be able to use the applications and tools. But if you have any trouble, please check back soon.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#warning-alert" text="Warning alert"></va-link></span>
+    <span>Banner</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Application or page is not accessible</span>
+    <span><strong>[APPLICATION NAME] is down for maintenance</strong></span>
+    <span>We’re making some updates to [APPLICATION NAME]. We’re sorry it’s not working right now, and we hope to be finished by [DATE], [TIME]. Please check back soon.</span>
+    <span>N/A</span>
+    <span><va-link href="/design/typography" text="Plain text"></va-link></span>
+    <span>N/A</span>
+    <span>Replace page below title</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Application or page is not accessible, no timeframe</span>
+    <span><strong>[APPLICATION NAME] is down for maintenance</strong></span>
+    <span>We're making some updates to [APPLICATION NAME]. We're sorry it's not working right now. Please check back soon.</span>
+    <span>N/A</span>
+    <span><va-link href="/design/typography" text="Plain text"></va-link></span>
+    <span>N/A</span>
+    <span>Replace page below title</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Application or page is accessible (general message; specific iterations to be added later)</span>
+    <span><strong>Some parts of this may not be working</strong></span>
+    <span>You can still use [APPLICATION/PAGE NAME], but some parts of it may not work for you. If you're having trouble, please try again later.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#warning-alert" text="Warning alert"></va-link></span>
+    <span>Below page title</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Component is not accessible (general message; specific iterations to be added later)</span>
+    <span><strong>[COMPONENT NAME] isn't working right now</strong></span>
+    <span>We're sorry. Something went wrong on our end. Please refresh this page or try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")].</span>
+    <span>Go back to previous page</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#warning-alert" text="Warning alert"></va-link></span>
+    <span>Replace affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Component is accessible (general message; <va-link href="see application/component specific messages" text="see application/component specific messages"></va-link>)</span>
+    <span><strong>Some information may not be up to date</strong></span>
+    <span>We're sorry. Something's not working quite right. You can still use [COMPONENT NAME], but you may not be able to see all your updated information. If you're having trouble, please try again [LENGTH OF TIME (ie, "tomorrow" or "in an hour")].</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#warning-alert" text="Warning alert"></va-link></span>
+    <span>Above affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Unable to complete an automated task (e.g. save application in progress)</span>
+    <span><strong>We couldn't save your form</strong></span>
+    <span>We're sorry. Something went wrong when we tried to save your form. If you're on a secure and private computer, you can leave this page open and try saving your form again in a few minutes. If you're on a public computer, you can continue to fill out your form, but it won't automatically save as you fill it out.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#error-alert" text="Error alert"></va-link></span>
+    <span>Below affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Unable to complete a user-initiated task, can't proceed</span>
+    <span><strong>We've run into a problem</strong></span>
+    <span>We're sorry. Something went wrong on our end. Please try again.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#error-alert" text="Error alert"></va-link></span>
+    <span>Above page title</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Unable to complete a user-initiated task, can still proceed</span>
+    <span><strong>We've run into a problem</strong></span>
+    <span>We're sorry. Something went wrong on our end. You can try again now, or move on to the next step and come back later to complete this.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#warning-alert" text="Warning alert"></va-link></span>
+    <span>Above page title</span>
+  </va-table-row>
+</va-table>
 
 ### Network connection loss
 
-| Scenario                                 | Message title | Message content | Actions | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | ------- | --------- | ------ | -------- |
-| Application/page/component is not accessible due to user connection loss    | **We can't load [APPLICATION/PAGE/COMPONENT NAME]** | Please make sure you're connected to the Internet, and refresh this page to try again. | Try again | [Plain text](/design/typography) | N/A | Below page title |
-| Unable to complete an automated task (e.g. save application in progress) due to user connection loss | **We can't save your form right now** | Please make sure you're connected to the Internet, and then try saving your form again. | Try again | [Plain text](/design/typography) | N/A | Below affected component |
-| Unable to complete a user-initiated task due to user connection loss | **We've run into a problem** | Please check to make sure you're connected to the Internet, and try again. | N/A | [Alert box](/components/alert) | [Error alert](/components/alert#error-alert) | Above page title |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Scenario</span>
+    <span>Message title</span>
+    <span>Message content</span>
+    <span>Actions</span>
+    <span>Component</span>
+    <span>State</span>
+    <span>Location</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Application/page/component is not accessible due to user connection loss</span>
+    <span><strong>We can't load [APPLICATION/PAGE/COMPONENT NAME]</strong></span>
+    <span>Please make sure you're connected to the Internet, and refresh this page to try again.</span>
+    <span>Try again</span>
+    <span><va-link href="/design/typography" text="Plain text"></va-link></span>
+    <span>N/A</span>
+    <span>Below page title</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Unable to complete an automated task (e.g. save application in progress) due to user connection loss</span>
+    <span><strong>We can't save your form right now</strong></span>
+    <span>Please make sure you're connected to the Internet, and then try saving your form again.</span>
+    <span>Try again</span>
+    <span><va-link href="/design/typography" text="Plain text"></va-link></span>
+    <span>N/A</span>
+    <span>Below affected component</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Unable to complete a user-initiated task due to user connection loss</span>
+    <span><strong>We've run into a problem</strong></span>
+    <span>Please check to make sure you're connected to the Internet, and try again.</span>
+    <span>N/A</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#error-alert" text="Error alert"></va-link></span>
+    <span>Above page title</span>
+  </va-table-row>
+</va-table>
 
 ### Authorization
 
