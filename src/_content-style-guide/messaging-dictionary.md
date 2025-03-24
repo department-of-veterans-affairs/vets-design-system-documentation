@@ -21,11 +21,40 @@ Alerts the user of important system-related issues or status. It’s initiated b
 
 ### Scheduled downtime notice scenarios
 
-| Scenario                                 | Message title | Message content | Component | State  | Location |
-| ---------------------------------------- | ----- | ----------- | --------- | ------ | -------- |
-| Notice of upcoming scheduled downtime (sitewide) | **VA.gov will be down for maintenance soon** | We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alert#informational-alert) | N/A | 
-| Notice of upcoming scheduled downtime (application) | **[APPLICATION NAME] will be down for maintenance soon** | We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon. | [Modal](/components/modal) | [Informational](/components/alert#informational-alert) | N/A |
-| Notice of upcoming scheduled downtime (authentication provider) | **[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon** | [ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [DATE] between [TIME] and [TIME]. If you have trouble signing in to your Vets.gov account during that time, please check back soon. | [Alert box](/components/alert) | [Informational](/components/alert#informational-alert) | Below sign in overlay title |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Scenario</span>
+    <span>Message title</span>
+    <span>Message content</span>
+    <span>Component</span>
+    <span>State</span>
+    <span>Location</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Notice of upcoming scheduled downtime (sitewide)</span>
+    <span>VA.gov will be down for maintenance soon</span>
+    <span>We’ll be doing some work on VA.gov on [DATE] between [TIME] and [TIME]. If you have trouble using the site during that time, please check back soon.</span>
+    <span><va-link href="/components/modal" text="Modal"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>N/A</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Notice of upcoming scheduled downtime (application)</span>
+    <span>[APPLICATION NAME] will be down for maintenance soon</span>
+    <span>We'll be doing some work on [APPLICATION NAME] on [DATE] between [TIME] and [TIME]. If you have trouble using this tool during that time, please check back soon.</span>
+    <span><va-link href="/components/modal" text="Modal"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>N/A</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Notice of upcoming scheduled downtime (authentication provider)</span>
+    <span>[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance soon</span>
+    <span>[ID.ME/DS LOGON/MYHEALTHEVET] will be down for maintenance on [DATE] between [TIME] and [TIME]. If you have trouble signing in to your Vets.gov account during that time, please check back soon.</span>
+    <span><va-link href="/components/alert" text="Alert box"></va-link></span>
+    <span><va-link href="/components/alert#informational-alert" text="Informational"></va-link></span>
+    <span>Below sign in overlay title</span>
+  </va-table-row>
+</va-table>
 
 ### Updates to user data (system-initiated)
 
