@@ -163,7 +163,7 @@ Review "[Usage](#usage)" for guidance.
   * In a full panel if the content is within the app.
   * In a webview if the content is not within the app and does not require a separate sign-in.
 * **Link opens another app:**
-  * In the [browser app](#external-link) if the user needs to sign in to access the content. Always use a native alert to warn the user before leaving the app. Once confirmed, open the default browser app.
+  * In the [browser app](#external-link) if the user needs to sign in to access the content or is being linked to a third party. Always use a native alert to warn the user before leaving the app. Once confirmed, open the default browser app.
   * If the user is performing an action such as making a phone call, getting directions, or downloading a file. Consider using a confirmation message (like a native alert or action sheet) to warn the user before leaving the app. These variants include the onPress logic for app teams, ensuring a native confirmation message is displayed when needed.
     * **[Attachment](#attachment)**: Display the attachment in the app with the ability to download to their device.
     * **[Calendar](#calendar-1)**: Display the event information to allow the user to review and confirm before adding to their calendar. Once confirmed, add to the default calendar app.
