@@ -13,7 +13,7 @@ Aspect ratios for images used on VA.gov
 
 <div class="site-showcase">
   <div class="vads-grid-container vads-u-flex-direction--column">
-    <div class="vads-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row vads-u-border-top--0">
+    <div class="vads-grid-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row vads-u-border-top--0">
       <div class="vads-grid-col-12 tablet:vads-grid-col-3">
         <div class="site-aspect-ratio site-aspect-ratio--11"></div>
       </div>
@@ -28,7 +28,7 @@ Aspect ratios for images used on VA.gov
       </div>
     </div>
 
-    <div class="vads-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+    <div class="vads-grid-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
       <div class="vads-grid-col-12 tablet:vads-grid-col-3">
         <div class="site-aspect-ratio site-aspect-ratio--21"></div>
       </div>
@@ -40,7 +40,7 @@ Aspect ratios for images used on VA.gov
       </div>
     </div>
 
-    <div class="vads-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+    <div class="vads-grid-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
       <div class="vads-grid-col-12 tablet:vads-grid-col-3">
         <div class="site-aspect-ratio site-aspect-ratio--32"></div>
       </div>
@@ -56,7 +56,7 @@ Aspect ratios for images used on VA.gov
       </div>
     </div>
 
-    <div class="vads-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+    <div class="vads-grid-col vads-grid-row site-showcase__col vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
       <div class="vads-grid-col-12 tablet:vads-grid-col-3">
         <div class="site-aspect-ratio site-aspect-ratio--72"></div>
       </div>

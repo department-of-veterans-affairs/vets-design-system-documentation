@@ -34,7 +34,7 @@ Unlike the [float grid](float-grid), you will need to use the [padding utility](
 
 ## Auto-sizing columns
 
-Columns without a set width will automatically layout with equal widths. For example, below are four instances of `vads-col` which are each automatically 25% wide. The columns will automatically wrap when they don't fit a single row.
+Columns without a set width will automatically layout with equal widths. For example, below are four instances of `vads-grid-col` which are each automatically 25% wide. The columns will automatically wrap when they don't fit a single row.
 
 <div class="site-showcase">
 {% include_relative html/flexbox-grid-basic.html %}
@@ -44,7 +44,7 @@ Columns without a set width will automatically layout with equal widths. For exa
 
 ## Fixed columns
 
-Column widths can be set using a modifier value on the `vads-col` class, such as `vads-grid-col-3`. The number at the end of the class name represents the number of columns out of a 12-column grid. The total of those numbers in any `vads-grid-row` should equal 12. If the total is more than 12, the grid will collapse into separate rows.
+Column widths can be set using a modifier value on the `vads-grid-col` class, such as `vads-grid-col-3`. The number at the end of the class name represents the number of columns out of a 12-column grid. The total of those numbers in any `vads-grid-row` should equal 12. If the total is more than 12, the grid will collapse into separate rows.
 
 <div class="site-showcase">
 {% include_relative html/flexbox-grid-basic2.html %}
