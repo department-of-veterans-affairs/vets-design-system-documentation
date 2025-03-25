@@ -9,7 +9,7 @@ jobs:
       - name: Update PR Preview URL
         uses: nefrob/pr-description@v1.2.0
         with:
-          content: github.event.pull_request.number
-          regex: "This_PR_number"
+          content: {{ github.event.pull_request.number }}
+          regex: "PR_NUMBER"
           regexFlags: ims
           token: ${{ secrets.GITHUB_TOKEN }}

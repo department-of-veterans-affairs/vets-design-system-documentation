@@ -40,7 +40,8 @@ Closes #[Issue_number]
 
 -->
 
-[Open Preview Environment](https://dev-design.va.gov/[This_PR_number])  ⬅️ _Update URL with your PR preview URL_
+<!-- DO NOT UPDATE - Upon submitting the PR, an automated workflow will populate the correct preview environment URL -->
+[Open Preview Environment](https://dev-design.va.gov/PR_NUMBER)
 
 <!--
   Finally, please remove all these PR template comments before submitting. 🚀 
