@@ -4,7 +4,11 @@
   <!-- Use the accurate heading level to maintain the document outline -->
   <li>
     <button class="usa-accordion-button"
-      aria-expanded="{% if page.url contains "/about/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">About</button>
+      aria-expanded="{% if page.url contains "/about/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">
+      About
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>
+    </button>
   </li>
   <div id="nav-a1" class="usa-accordion-content" aria-hidden="{% if page.url contains "/about/" %}false{% else %}true{% endif %}">
     <ul class="usa-sidenav-list">
@@ -30,6 +34,8 @@
   <li>
     <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/content-style-guide/" %}true{% else %}false{% endif %}" aria-controls="nav-a2">
       Content
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>
     </button>
   </li>
   <div id="nav-a2" class="usa-accordion-content" aria-hidden="{% if page.url contains "/content-style-guide/" %}false{% else %}true{% endif %}">
@@ -55,6 +61,8 @@
   <li>
     <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/foundation/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
       Foundation
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
     </button>
   </li>
   <div id="nav-a3" class="usa-accordion-content" aria-hidden="{% if page.url contains "/foundation/" %}false{% else %}true{% endif %}">
@@ -80,6 +88,8 @@
   <li>
     <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/components/" %}true{% else %}false{% endif %}" aria-controls="nav-a4">
       Components
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
     </button>
   </li>
   <div id="nav-a4" class="usa-accordion-content" aria-hidden="{% if page.url contains "/components/" %}false{% else %}true{% endif %}">
@@ -105,6 +115,8 @@
   <li>
     <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
       Patterns
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
     </button>
   </li>
   <div id="nav-a5" class="usa-accordion-content" aria-hidden="{% if page.url contains "/patterns/" %}false{% else %}true{% endif %}">

@@ -11,9 +11,33 @@
 
   .usa-accordion {
     .usa-accordion-button {
+      position: relative;
       padding: $padding-override;
       padding-left: 16px; // making the buttons line up vertically with links
       font-size: 15px;
+      va-icon {
+        position: absolute;
+        right: 16px;
+        top: 6px;
+      }
+      &[aria-expanded=false] {
+        background-image: none;
+        va-icon[icon="add"] {
+          display: inline-block;
+        }
+        va-icon[icon="remove"] {
+          display: none;
+        }
+      }
+      &[aria-expanded=true] {
+        background-image: none;
+        va-icon[icon="add"] {
+          display: none;
+        }
+        va-icon[icon="remove"] {
+          display: inline-block;
+        }
+      }
     }
     .usa-sidenav-list a {
       padding: $padding-override;
