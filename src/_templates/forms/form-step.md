@@ -102,7 +102,7 @@ View an example of the form step structure using mockups for step two. The conte
 {% include component-example.html alt="Example of form step structure for step two." file="/images/templates/forms/form-step/6-step-two.png" caption="Example of form step structure for step two." class="x2" %}
 
 ### Saved as message with application ID
-Text area notifying a user that their application is saved automatically and provides an application ID number.
+Text area notifying a user that their application is saved automatically and provides an application ID number. This only needs to appear on the first page of the form.
 ### Form step content
 Insert customized form step content in this section of the form step template. Consult the form step structure guidance above and the [One thing per page design principle](https://design.va.gov/patterns/ask-users-for/a-single-response#design-principles) to determine how much form content to fit onto a single page.
 
