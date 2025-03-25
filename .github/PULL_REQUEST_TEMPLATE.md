@@ -2,13 +2,13 @@
   ## How to Title Your PR  
   The titles of all PRs appear together on the [What's New](https://design.va.gov/about/whats-new) page. This page is meant to be easily and quickly scanned so a clear, concise explanation is important.
 
-  We recommend PR titles to include updated page or section, start with action verbs (e.g., Fixed, Added, Improved, Updated), and describe what was updated.
+  We recommend PR titles to include updated page or section, start with present tense action verbs (e.g., Fixes, Adds, Improves, Updates), and describe what was updated.
 
   For example:
-  - Checkbox: Added Storybook examples
-  - Experimental Components & Patterns: Improved submission guidance
-  - Links: Fixed typos
-  - Multiple Responses: Updated usage guidance
+  - Checkbox: Adds Storybook examples
+  - Experimental Components & Patterns: Improves submission guidance
+  - Links: Fixes typos
+  - Multiple Responses: Updates usage guidance
 -->
 
 ## Summary
