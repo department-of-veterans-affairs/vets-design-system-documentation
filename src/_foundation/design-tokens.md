@@ -107,18 +107,21 @@ Component tokens are scoped to a specific component and represent decisions spec
   href="{{ site.baseurl }}/foundation/color-palette"
   text="Colors"
   type="secondary"
+  class="vads-u-display--block"
 ></va-link-action>
 
 <va-link-action
   href="{{ site.baseurl }}/foundation/typography#typography-tokens"
   text="Font"
   type="secondary"
+  class="vads-u-display--block"
 ></va-link-action>
 
 <va-link-action
   href="{{ site.baseurl }}/foundation/spacing-units#spacing-tokens"
   text="Spacing"
   type="secondary"
+  class="vads-u-display--block"
 ></va-link-action>
 
 ### Forthcoming design tokens
