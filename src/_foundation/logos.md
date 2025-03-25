@@ -33,11 +33,15 @@ VA provides specific examples of how to execute a logo or word mark within VA br
 
 **Like this**
 
-[<img src="/images/VA-brand-guidance@4x.png">](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2)
+<a href="https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2">
+    <img width="100%" src="/images/VA-brand-guidance@4x.png" />
+</a>
 
 This is based on page 9 of the VA Graphic Standards, seen below:
 
-[<img src="/images/VA_508_GraphicStandardsGuide_013113-9.png">](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2)
+<a href="https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2">
+    <img width="100%" src="/images/VA_508_GraphicStandardsGuide_013113-9.png" />
+</a>
 
 Logos can be accessed in our [{{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries).
 
