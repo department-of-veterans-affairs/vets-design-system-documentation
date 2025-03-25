@@ -71,7 +71,7 @@ The component appears 32px below the "In this section" menu and 24px above the h
 
 ## Content considerations
 
-* **Link is in native language.** Links in this component should be in the native language. For example, "Español". Note: Sometimes the word is the same in both English and the target language, for example "Tagalog".
+* **Link is in native language.** Links in this component should be in the native language. For example, "Español". **Note**: Sometimes the word is the same in both English and the target language, for example "Tagalog".
 
 ## Accessibility considerations
 
