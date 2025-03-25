@@ -40,7 +40,7 @@ Closes #[Issue_number]
 
 -->
 
-<!-- DO NOT UPDATE - Upon submitting the PR, an automated workflow will populate the correct preview environment URL -->
+<!-- DO NOT UPDATE: Upon submitting the PR, an automated workflow will populate the correct preview environment URL -->
 [Open Preview Environment](https://dev-design.va.gov/PR_NUMBER)
 
 <!--
