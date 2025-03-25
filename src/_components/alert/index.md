@@ -25,46 +25,78 @@ anchors:
 
 ## Examples - Standard
 
-### Informational alert (aka default)
+### Web
+
+#### Informational alert (aka default)
 
 {% include storybook-preview.html story="uswds-va-alert--default" link_text="va-alert informational" %}
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
-### Warning alert
+#### Warning alert
 
 {% include storybook-preview.html story="uswds-va-alert--warning" link_text="va-alert warning" %}
 
 Used to warn a user, such as when there are negative consequences, or when something has gone wrong.
 
-### Success alert
+#### Success alert
 
 {% include storybook-preview.html story="uswds-va-alert--success" link_text="va-alert success" %}
 
 Used to indicate success.
 
-### Error alert
+#### Error alert
 
 {% include storybook-preview.html story="uswds-va-alert--error" link_text="va-alert error" height="220px" %}
 
 Used when there is a problem or something destructive is about to occur.
 
+### Mobile
+
+#### Informational alert (aka default)
+
+{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true %}
+
+#### Warning alert
+
+{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true %}
+
+#### Success alert
+
+{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true %}
+
+#### Error alert
+
+{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true %}
+
 ## Examples - Standard properties
 
-### Heading level
+### Web
+
+#### Heading level
 
 {% include storybook-preview.html story="uswds-va-alert--heading-level" link_text="va-alert heading level" %}
 
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
-### Dismissible
+#### Dismissible
 
 {% include storybook-preview.html story="uswds-va-alert--dismissable" link_text="va-alert dismissible" %}
 
 * Any alert variation can be dismissible, including slim alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss a notification wherever appropriate.
 
+### Mobile
+
+#### Expandable
+
+{% include storybook-preview.html story="alert--info&args=expandable:!true" link_text="va-mobile__alert--info" is_mobile=true %}
+
+* The Alert component in the mobile application can be collapsed and expanded.
+
 ## Examples - Slim alert
+
+### Web
 
 Any style of alert box can be modified to be a Slim alert. The iconography for Slim alerts is consistent with the way icons are used in standard Alerts.
 
@@ -82,19 +114,35 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 
 #### Additional uses of an alert
 
-* **User feedback.** Use Alert for [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) that respond to an action a user has taken and to draw their attention to something that they need to correct or to confirm successful completion of a task. These messages use success and error variations.
-* **In-application system status.** An exception to the above is providing information to the user, unprompted, about a problem with a particular application. These [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) typically use an error or warning variation and do not require user action.
+* **To notify users about the status of the system:**
+  * **In-application system status.** An exception to the above is providing information to the user, unprompted, about a problem with a particular application. These [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) typically use an error or warning variation and do not require user action.
+  * **Access messages when a user tries to access an item that is not available to them.** [Access messages]({{ site.baseurl }}/content-style-guide/error-messages/access) typically warn the user that something they tried to access is not working correctly or is temporarily unavailable. These often use the error or warning variations.
+
+* **To respond to a user action:**
+  * **User feedback.** Use Alert for [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) that respond to an action a user has taken and to draw their attention to something that they need to correct or to confirm successful completion of a task. These messages use success and error variations.
+
 * **Engagement messages that nudge the user to enter or update data.** [Engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement) typically use the informational variation and ask the user to take an action.
-* **Access messages when a user tries to access an item that is not available to them.** [Access messages]({{ site.baseurl }}/content-style-guide/error-messages/access) typically warn the user that something they tried to access is not working correctly or is temporarily unavailable. These often use the error or warning variations.
+* **Unprompted and in-page alerts.** On the website, consider the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/) component to draw attention to important information on the page that is not a response to user feedback. On the mobile app, use the expandable variation of the Alert component.
 
 #### Additional reasons to consider something else
 
-* **Destructive actions.** If an action will result in destroying a user’s work (for example, deleting an application) use a more intrusive pattern, such as a confirmation [modal]({{ site.baseurl }}/components/modal) dialogue, to allow the user to confirm that this is what they want.
+##### Web and mobile
+
 * **Unprompted and in-page alerts.** Consider the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component to draw attention to important information on the page that is not a response to user feedback.
 * **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
-* **System maintenance.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
+* **System maintenance on web.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
+
+##### Mobile only
+
+* **Use native components.** On the mobile app, always consider a native component before using an in-content Alert:
+  * **Action Sheet.** When the user takes an action in which the system needs to clarify their intent, use an action sheet (for both iOS and Android) to offer the user a choice in how to proceed.
+  * **Alert/dialogue.** When the user chooses to do something that has serious consequences, use a native modal alert (for iOS) or dialogue (for Android) to present the user with critical information related to that action.
+  * **Snackbar.** If a user action triggers an API call that is successful or results in an error, consider using a Snackbar in addition to or instead of an Alert. The snackbar may allow users to take an action on the feedback such as trying again or undoing the action.
+* **Sub-alerts on the page.** On the mobile app, do not use sub-alerts.
 
 ### When to use a Slim alert
+
+#### Web
 
 **All of the above standard alert uses cases apply however, use of a Slim alert in place of a standard alert is only appropriate when used with one of these additional constraints:**
 
@@ -116,29 +164,46 @@ When the user is required to do something in response to an alert, let them know
 
 ### Placement
 
-#### Standard Alert
+#### Web
+
+##### Standard Alert
 
 * In most cases, the standard Alert (in all of its variations) should be placed directly below the intro text, near the top of the page.
 * When a standard Alert is applicable to a specific section of content on a page, it should be placed directly below the header of that section.
 
-#### Slim alert
+##### Slim alert
 
 * Slim alerts related to a form field or section should be placed below the label, legend, or section header.
 * The Info variation of the Slim alert can be placed between sections.
 * Save-in-progress success and error Slim alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
 
+#### Mobile
+
+##### Standard Alert
+
+* Alerts always appear near the top of the screen.
+
 ### Choosing between variations
+
+#### Web
 
 * Use the standard Alert variation in most use cases and within static content pages. Slim alerts are not available in Drupal.
 * Use the Slim alert variation for immediate feedback within forms and applications. Slim alerts are most often displayed immediately after the user has taken an action, and can also be used for save-in-progress success and error messaging.
+
+#### Mobile
+
+* Use standard alerts for most use cases.
+* Use expandable alerts when the information is not a response to user feedback.
+* Use dismissible alerts when the content is informational and not specific to the user or their interaction. For example, displaying “what’s new” content in the app.
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
 * Be polite in error messages — don’t place blame on the user.
+  * VA no longer says, “Please” in alerts when making a request of the user.
 * Users generally won’t read documentation, but they’ll read a message that helps them resolve an error; include some educational material in your error message.
-* But don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
+* Don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
 * Don’t use jargon and computer code in the message.
 
 <p>
