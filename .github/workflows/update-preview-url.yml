@@ -1,0 +1,15 @@
+on:
+  pull_request:
+jobs:
+  update-pr-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Update PR Preview URL
+        uses: nefrob/pr-description@v1.2.0
+        with:
+          content: github.event.pull_request.number
+          regex: "This_PR_number"
+          regexFlags: ims
+          token: ${{ secrets.GITHUB_TOKEN }}
