@@ -29,12 +29,12 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     transition-property: color, background-color, border-color;
-    align-items: center;
   }
 
   &__link va-icon {
     margin-right: 8px;
-    vertical-align: middle;
+    top: 2px;
+    position: relative;
   }
 
   &__link:active {
