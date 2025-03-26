@@ -27,7 +27,7 @@
         </main>
         {% elsif page.results_page %}
         <main id="main-content" class="vads-u-margin-y--7 vads-u-width--full">
-          <div class="site-content site-l-wrapper vads-grid-row small-desktop-screen:vads-u-justify-content--center">
+          <div class="site-content site-l-wrapper vads-grid-row desktop:vads-u-justify-content--center">
             <div class="vads-grid-col-12 desktop:vads-grid-col-8">
               {{ content }}
             </div>
@@ -36,7 +36,7 @@
         {% elsif page.sidebar %}
           {% include _site-content-nav.html %}
           <div class="site-content__content">
-            <main id="main-content" class="site-l-content-wrapper--sidebar large-screen:vads-u-margin-top--neg2">
+            <main id="main-content" class="site-l-content-wrapper--sidebar desktop-lg:vads-u-margin-top--neg2">
                 <aside class="main-content__sidebar">
                     {% include _site-on-this-page.html %}
                 </aside>
@@ -48,7 +48,7 @@
         {% else %}
           {% include _site-content-nav.html %}
         <div class="site-content__content">
-          <main id="main-content" class="site-l-content-wrapper--styleguide large-screen:vads-u-margin-top--neg2">
+          <main id="main-content" class="site-l-content-wrapper--styleguide desktop-lg:vads-u-margin-top--neg2">
             {% unless page.index %}
               {% if page.draft %}
                 {% include _draft.html %}

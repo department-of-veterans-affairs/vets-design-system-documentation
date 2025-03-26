@@ -51,6 +51,6 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 ### Example
 
 ```html
-<div class="vads-u-visibility--hidden large-screen:vads-u-visibility--visible">
+<div class="vads-u-visibility--hidden desktop-lg:vads-u-visibility--visible">
 ```
 {% include _breakpoint-names.html %}

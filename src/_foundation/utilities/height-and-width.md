@@ -165,6 +165,6 @@ anchors:
 All height and width utilities include responsive prefixes.
 
 ```html
-<div class="vads-u-min-height--viewport large-screen:vads-u-min-height--none">
+<div class="vads-u-min-height--viewport desktop-lg:vads-u-min-height--none">
 ```
 {% include _breakpoint-names.html %}
