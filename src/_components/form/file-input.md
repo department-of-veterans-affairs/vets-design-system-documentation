@@ -82,7 +82,11 @@ Change the label to any H1 through H6 header size.
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/file-input/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/file-input/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -105,9 +109,11 @@ Change the label to any H1 through H6 header size.
 * When using a single file input the [error message is placed above the file input area](#error-message). If the file input supports multiple files then the error message is placed within the file input card.
 * To display a custom error message, pass text into the `error` property.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/components/form/#error-handling">
-  View form error handling for additional guidance
-</a>
+<va-link-action
+  href="{{ site.baseurl }}/components/form/#error-handling"
+  text="View form error handling for additional guidance"
+  type="secondary"
+></va-link-action>
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -117,6 +123,10 @@ Change the label to any H1 through H6 header size.
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/file-input#accessibility-checkbox">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/file-input#accessibility-checkbox"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>
 
 {% include _component-checklist.html component_name=page.web-component %}

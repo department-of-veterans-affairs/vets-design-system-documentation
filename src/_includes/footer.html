@@ -1,6 +1,6 @@
 <footer class="site-footer vads-u-padding-y--5" role="contentinfo">
   <div class="site-l-wrapper">
-    <div class="medium-screen:vads-u-display--flex medium-screen:vads-u-justify-content--space-between vads-u-align-items--center">
+    <div class="tablet:vads-u-display--flex tablet:vads-u-justify-content--space-between vads-u-align-items--center">
       <div>
         <ul class="site-footer__links">
           <li class=site-footer__links__item>
@@ -25,4 +25,4 @@
 {% endcomment -%}
 {%- assign cacheBust = site.time | date:'?v=%s' -%}
 <script src="{{ '/assets/javascripts/site.js' | prepend: site.baseurl | append: cacheBust }}"></script>
-<script src="{{ '/vendor/javascripts/formation.js' | prepend: site.baseurl | append: cacheBust }}"></script>
+<script src="{{ '/assets/javascripts/sidenav-formation.min.js' | prepend: site.baseurl | append: cacheBust }}"></script>

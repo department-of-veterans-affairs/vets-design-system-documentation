@@ -10,13 +10,21 @@ intro-text: We are always looking to make improvements. If you notice anything o
 
 If you are suggesting a change to something that already exists in the VA.gov Design System, you should go through the New component or pattern process.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/contributing-to-the-design-system/suggest-an-addition-or-update">Suggest an addition or update</a>
+<va-link-action
+  href="{{ site.baseurl }}/about/contributing-to-the-design-system/suggest-an-addition-or-update"
+  text="Suggest an addition or update"
+  type="secondary"
+></va-link-action>
 
 ### Update an existing component, pattern, or documentation
 
 For minor changes, bugs, and documentation updates read our guidance on the correct steps to follow.   
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/contributing-to-the-design-system/suggest-an-addition-or-update#update-an-existing-component-or-pattern">Update an existing component or pattern</a>
+<va-link-action
+  href="{{ site.baseurl }}/about/contributing-to-the-design-system/suggest-an-addition-or-update#update-an-existing-component-or-pattern"
+  text="Update an existing component or pattern"
+  type="secondary"
+></va-link-action>
 
 ## Questions or comments about the content style guide
 

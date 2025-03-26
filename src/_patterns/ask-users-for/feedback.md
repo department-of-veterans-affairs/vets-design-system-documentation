@@ -139,13 +139,44 @@ In late fall 2021, [VA.gov](http://va.gov/) transitioned from utilizing Foresee 
 
 To track the effectiveness of moving the feedback button to the bottom of the main content area, we compared the number of submissions on a single page before and after the button move.
 
-| **Page**                                                     | **Jan 1 - Jan 31 submissions** | **Feb 10 - Mar 12 submissions** | **% increase** |
-| :----------------------------------------------------------- | :----------------------------- | :------------------------------ | :------------- |
-| [Find locations](https://www.va.gov/find-locations)          | 92                             | 247                             | 168%           |
-| [Schedule and manage health appointments](https://www.va.gov/health-care/schedule-view-va-appointments/) | 32                             | 74                              | 131%           |
-| [**View disability rating**](https://www.va.gov/disability/view-disability-rating/rating) | 19                             | 35                              | 84%            |
-| [**File for disability compensation with VA Form 21-526EZ Confirmation**](https://www.va.gov/disability/file-disability-claim-form-21-526ez/confirmation) | 10                             | 138                             | 1280%          |
-| [**Check Your Post-9/11 GI Bill Benefits Status**](https://www.va.gov/education/gi-bill/post-9-11/ch-33-benefit/status) | 17                             | 91                              | 435%           |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Page</span>
+    <span>Jan 1 - Jan 31 submissions</span>
+    <span>Feb 10 - Mar 12 submissions</span>
+    <span>% increase</span>
+  </va-table-row>
+  <va-table-row>
+    <span><va-link href="https://www.va.gov/find-locations" text="Find locations"></va-link></span>
+    <span>92</span>
+    <span>247</span>
+    <span>168%</span>
+  </va-table-row>
+  <va-table-row>
+    <span><va-link href="https://www.va.gov/health-care/schedule-view-va-appointments/" text="Schedule and manage health appointments"></va-link></span>
+    <span>32</span>
+    <span>74</span>
+    <span>131%</span>
+  </va-table-row>
+  <va-table-row>
+    <span><va-link href="https://www.va.gov/disability/view-disability-rating/rating" text="View disability rating"></va-link></span>
+    <span>19</span>
+    <span>35</span>
+    <span>84%</span>
+  </va-table-row>
+  <va-table-row>
+    <span><va-link href="https://www.va.gov/disability/file-disability-claim-form-21-526ez/confirmation" text="File for disability compensation with VA Form 21-526EZ Confirmation"></va-link></span>
+    <span>10</span>
+    <span>138</span>
+    <span>1280%</span>
+  </va-table-row>
+  <va-table-row>
+    <span><va-link href="https://www.va.gov/education/gi-bill/post-9-11/ch-33-benefit/status" text="Check Your Post-9/11 GI Bill Benefits Status"></va-link></span>
+    <span>17</span>
+    <span>91</span>
+    <span>435%</span>
+  </va-table-row>
+</va-table>
 
 Both date ranges span 31 days, and the dates from January are submissions from the button on the sidebar. The February and March dates are submissions from the bottom of the main area (the button moved on Feb. 10).
 

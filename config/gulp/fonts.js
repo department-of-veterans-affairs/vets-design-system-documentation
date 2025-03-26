@@ -1,16 +1,22 @@
 var gulp = require('gulp');
-var task = 'fonts';
 
-
-gulp.task('move-formation-fonts', function (done) {
-  console.log("Moving fonts into folder");
-  var stream = gulp.src('./node_modules/@department-of-veterans-affairs/formation/dist/fonts/*')
-    .pipe(gulp.dest('src/fonts'));
+gulp.task('copy-uswds-fonts', function (done) {
+  console.log('copying uswds fonts');
+  var stream = gulp.src('./node_modules/@uswds/uswds/dist/fonts/**/*')
+    .pipe(gulp.dest('src/assets/stylesheets/@uswds/uswds/fonts/'));
 
   return stream;
 });
 
+gulp.task('copy-css-library-fonts', function (done) {
+  console.log('copying css-library fonts');
+  var stream = gulp.src('./node_modules/@department-of-veterans-affairs/css-library/dist/fonts/**/*')
+    .pipe(gulp.dest('src/assets/stylesheets/@department-of-veterans-affairs/css-library/dist/fonts'));
 
-gulp.task(task, gulp.series(
-  'move-formation-fonts'
+  return stream;
+});
+
+gulp.task('fonts', gulp.series(
+  'copy-uswds-fonts',
+  'copy-css-library-fonts'
 ));

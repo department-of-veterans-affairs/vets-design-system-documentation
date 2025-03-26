@@ -57,6 +57,14 @@ Examples of these changes are:
 
 If you need to implement a redirect, a request must first be submitted to VA.gov Information Architecture.  This request will ensure the redirect is valid and accurate, and will kick-off processes to ensure all internal links are appropriately updated. 
 
-<a class="vads-c-action-link--blue" href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md">Submit a Redirect or URL change issue on GitHub</a>
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/va.gov-team/issues/new?template=redirect-request.md"
+  text="Submit a Redirect or URL change issue on GitHub"
+  type="secondary"
+></va-link-action>
 
-<a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/developer-docs/redirect-implementation-strategies">Learn about how to implement redirects on the VA Platform website</a>
+<va-link-action
+  href="https://depo-platform-documentation.scrollhelp.site/developer-docs/redirect-implementation-strategies"
+  text="Learn about how to implement redirects on the VA Platform website"
+  type="secondary"
+></va-link-action>

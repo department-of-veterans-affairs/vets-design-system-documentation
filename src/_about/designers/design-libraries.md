@@ -14,13 +14,21 @@ anchors:
 
 Use the core **{{ site.design_library_name }}** library to access all components. In Figma, the component library lives in the cloud. Thus you do not need to download the library. The Design System Team updates the component library in order to keep it in sync with the component-library code which contains our web components.
 
-<a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/research-design/designing-with-figma-at-va#DesigningwithFigmaatVA-HowtoenabletheVADesignLibrary">Learn how to enable the {{ site.design_library_name }}</a>
+<va-link-action
+  href="https://depo-platform-documentation.scrollhelp.site/research-design/designing-with-figma-at-va#DesigningwithFigmaatVA-HowtoenabletheVADesignLibrary"
+  text="Learn how to enable the {{ site.design_library_name }}"
+  type="secondary"
+></va-link-action>
 
 Once you’ve loaded the library, you can access the components by navigating to the **Assets** panel, and selecting **{{ site.design_library_name}}**.
 
 **Note:** You cannot edit the component library directly. The Design System Team manages this library.
 
-<a class="vads-c-action-link--blue" href="https://depo-platform-documentation.scrollhelp.site/research-design/designing-with-figma-at-va#DesigningwithFigmaatVA">Learn more about designing with Figma at VA</a>
+<va-link-action
+  href="https://depo-platform-documentation.scrollhelp.site/research-design/designing-with-figma-at-va#DesigningwithFigmaatVA"
+  text="Learn more about designing with Figma at VA"
+  type="secondary"
+></va-link-action>
 
 ### {{ site.example_library_name}}
 
@@ -28,13 +36,21 @@ Once you’ve loaded the library, you can access the components by navigating to
 
 **Note:** Copying example component instances from here to your own files will maintain the link to the main component in the **{{ site.design_library_name}}** so you will be notified of any component updates.
 
-<a class="vads-c-action-link--blue" href="{{ site.figma_example_library }}">View {{ site.example_library_name}}</a>
+<va-link-action
+  href="{{ site.figma_example_library }}"
+  text="View {{ site.example_library_name}}"
+  type="secondary"
+></va-link-action>
 
 ### {{ site.resource_library_name }}
 
 **{{ site.resource_library_name }}** has templates for all of our [Patterns]({{ site.baseurl }}/patterns/), including form patterns. Copy assets from here to kickstart a design.
 
-<a class="vads-c-action-link--blue" href="{{ site.figma_templates_library }}">View {{ site.resource_library_name }}</a>
+<va-link-action
+  href="{{ site.figma_templates_library }}"
+  text="View {{ site.resource_library_name }}"
+  type="secondary"
+></va-link-action>
 
 ### Additional libraries and resources
 
@@ -42,9 +58,17 @@ Use these libraries to assist your design process. Some of the assets you can ge
 
 **VADS Web Annotation Kit** provides useful tools to document your design with accessibility, development, component identification, and many other types of helpful notes. 
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/about/accessibility/accessibility-annotations">Learn how to use the Annotation Kit</a>
+<p><va-link-action
+  href="{{ site.baseurl }}/about/accessibility/accessibility-annotations"
+  text="Learn how to use the Annotation Kit"
+  type="secondary"
+></va-link-action></p>
 
-<a class="vads-c-action-link--blue" href="{{ site.figma_annotations_library }}">View the Web Annotation Kit</a>
+<p><va-link-action
+  href="{{ site.figma_annotations_library }}"
+  text="View the Web Annotation Kit"
+  type="secondary"
+></va-link-action></p>
 
 The **VADS Wireframe Library**  is currently under construction.
 

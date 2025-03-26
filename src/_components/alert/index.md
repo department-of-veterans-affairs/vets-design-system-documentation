@@ -104,7 +104,11 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/alert/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/alert/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -202,13 +206,29 @@ When the user is required to do something in response to an alert, let them know
 * Don’t overdo it — too many notifications will either overwhelm or annoy the user and are likely to be ignored.
 * Don’t use jargon and computer code in the message.
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/error-messages">View content for error messages</a>
+<p>
+<va-link-action
+  href="{{ site.baseurl }}/content-style-guide/error-messages"
+  text="View content for error messages"
+  type="secondary"
+></va-link-action>
+</p>
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors">Review the help users to recover from errors pattern</a>
+<p>
+<va-link-action
+  href="{{ site.baseurl }}/patterns/help-users-to/recover-from-errors"
+  text="Review the help users to recover from errors pattern"
+  type="secondary"
+></va-link-action>
+</p>
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/alert/#accessibility-alert">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/alert/#accessibility-alert"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional accessibility considerations for VA
 
