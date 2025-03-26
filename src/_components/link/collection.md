@@ -14,6 +14,22 @@ anchors:
   - anchor: Accessibility considerations
 ---
 
+<va-alert
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+  uswds
+>
+  <h2 slot="headline">
+    This component is not officially supported
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      This component has not yet been built as a component in the Design System. Thus the Design System Team does not officially recognize nor support this component. Guidance and design assets are provided as is.
+    </p>
+  </div>
+</va-alert>
+
 ## Examples
 
 ### Related links
@@ -72,10 +88,6 @@ For collections of links, the [Law of Proximity](https://lawsofux.com/law-of-pro
 > Objects that are near, or proximate to each other, tend to be grouped together.
 
 Collections of links, given their close proximity, will be perceived to share similar traits or properties. Also, proximity helps users to understand and organize the information faster and more efficiently. 
-
-### Instances of this component in production
-
-Our [examples](#examples) are all from production. Once these link styles are converted into web-components we will swap the examples out for code examples and move the current examples to this section.
 
 ## Content considerations
 

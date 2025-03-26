@@ -44,7 +44,7 @@ Please reach out to us at our DSVA Slack Channel: #platform-design-system
 
 ## Key Stakeholders
 - Matthew Dingee, VA Product Owner, VA, matthew.dingee@va.gov
-- Carol Wang, Product Manager, Oddball, Carol.Wong@oddball.io
+- Carol Wong, Product Manager, Oddball, carol.wong@oddball.io
 - Micah Chiang, Tech Lead, Ad Hoc, micah@adhocteam.us
 
 ## Veteran Affairs Design System Documentation
@@ -185,18 +185,18 @@ Within this project is the ability to automate the display of the latest release
 
 1. Go to [vets-design-system-documentation releases](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases)
 2. Note the latest release tag. At the time of this writing, it matches this format: `v0.0.###`.
-2. Click the **Draft a new release** button to start a new release
-3. Click the **Choose a tag** button to display the dropdown of already created tags
-4. In the **Find or create a new tag** text input, enter an incremented version number from last release. 
+3. Click the **Draft a new release** button to start a new release
+4. Click the **Choose a tag** button to display the dropdown of already created tags
+5. In the **Find or create a new tag** text input, enter an incremented version number from last release. 
 As you start typing the format `v0.0...`, the dropdown will show you the latest tags matching that format. Increment the last number by one. For example, if the latest release (noted from Step #2) is `v0.0.436`, enter `v0.0.437` as the tag name.
-5. Once the new label is entered, the dropdown will state:
+6. Once the new label is entered, the dropdown will state:
     > Create new tag: v0.0.### on publish
 
     Click on this to field to apply the new tag when this release is published.
-6. Enter the same new tag value in the **Release title** field
-7. To populate the **Describe this release** textarea with a changelog, click the `Generate release notes` button above. This will populate the changelog with the titles of all the merged PRs since last release.
-8. Be sure that the **Set as the latest release** checkbox is checked.
-9. Click the **Publish release** button.
+7. Enter the same new tag value in the **Release title** field
+8. To populate the **Describe this release** textarea with a changelog, click the `Generate release notes` button above. This will populate the changelog with the titles of all the merged PRs since last release.
+9. Be sure that the **Set as the latest release** checkbox is checked.
+10. Click the **Publish release** button.
 
 ### How Jekyll Displays the Latest Releases
 
