@@ -55,6 +55,9 @@
   @include media($nav-width) {
     font-size: 2rem;
   }
+  strong {
+    font-weight: 700;
+  }
 }
 
 .site-header__logo-link,

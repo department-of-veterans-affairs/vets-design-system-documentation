@@ -19,7 +19,7 @@ Change the alignment of text or elements. This utility also [responsive prefixes
     responsive=true
     css_property="text-align"
   %}
-  <div class="vads-l-row vads-u-flex-direction--column">
+  <div class="vads-grid-row vads-u-flex-direction--column">
     {% for item in site.data.text-align.alignments %}
       {% include text-align-example.html
         name=item.name
@@ -42,6 +42,6 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 ### Example
 
 ```html
-<div class="vads-u-text-align--left large-screen:vads-u-text-align--center">
+<div class="vads-u-text-align--left desktop-lg:vads-u-text-align--center">
 ```
 {% include _breakpoint-names.html %}

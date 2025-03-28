@@ -56,9 +56,11 @@ Refer to the [Service history pattern]({{ site.baseurl }}/patterns/ask-users-for
 
 ## Example
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ## How to design and build
 

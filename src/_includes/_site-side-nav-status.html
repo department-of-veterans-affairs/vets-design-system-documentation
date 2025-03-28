@@ -15,7 +15,7 @@
 {% if status %}
   {% for scale in site.data.maturity-scale.scale %}
     {%- if scale.name == status -%}
-    <i class="fas {{scale.symbol}} site-sidenav-status site-sidenav-status--{{status}}" aria-label="{{ scale.category }} {{ scale.title }}"></i>
+    <va-icon size="2" icon="{{scale.symbol}}" class="site-sidenav-status site-sidenav-status--{{status}}" aria-label="{{ scale.category }} {{ scale.title }}"></va-icon>
     {%- endif -%}
   {% endfor %}
 {%- endif -%}

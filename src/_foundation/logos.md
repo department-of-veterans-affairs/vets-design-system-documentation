@@ -17,7 +17,11 @@ Custom logos for the following use cases are not supported on VA.gov:
 * Within a software application, such as an application form or tool
 * Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/downloads/VALogos.zip">Download hi-res logo artwork</a>
+<va-link-action
+  href="{{ site.baseurl }}/downloads/VALogos.zip"
+  text="Download hi-res logo artwork"
+  type="secondary"
+></va-link-action>
 
 ## Use the name in place of a logo
 
@@ -29,11 +33,15 @@ VA provides specific examples of how to execute a logo or word mark within VA br
 
 **Like this**
 
-[<img src="/images/VA-brand-guidance@4x.png">](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2)
+<a href="https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2">
+    <img width="100%" src="/images/VA-brand-guidance@4x.png" />
+</a>
 
 This is based on page 9 of the VA Graphic Standards, seen below:
 
-[<img src="/images/VA_508_GraphicStandardsGuide_013113-9.png">](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2)
+<a href="https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2">
+    <img width="100%" src="/images/VA_508_GraphicStandardsGuide_013113-9.png" />
+</a>
 
 Logos can be accessed in our [{{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries).
 

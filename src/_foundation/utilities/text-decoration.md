@@ -19,28 +19,28 @@ Change the text-decoration.
     responsive=false
     css_property="text-decoration"
   %}
-  <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border-top--0">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+  <div class="vads-grid-row vads-u-flex-direction--column">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start vads-u-border-top--0">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
           <code class="code">.vads-u-text-decoration--none</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
         <a href="javascript:void();" class="vads-u-text-decoration--none">Link with no underline</a>
       </div>
     </div>
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
           <code class="code">.vads-u-text-decoration--underline</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
         <span class="vads-u-text-decoration--underline">Non-link with underline</span>
       </div>
     </div>
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
           <code class="code">.vads-u-text-decoration--line-through</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
         <span class="vads-u-text-decoration--line-through">strikethrough text</span>
       </div>
     </div>

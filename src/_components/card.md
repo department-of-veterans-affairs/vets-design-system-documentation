@@ -59,7 +59,7 @@ anchors:
 
 #### Default
 
-![Basic card]({{ site.baseurl }}/images/components/card/annotated.png)
+<img src="{{ site.baseurl }}/images/components/card/annotated.png" alt="Basic card" style="width:100%;"/>
 
 1. **Background color.** White or [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
 2. **Header.** Header that summarizes the card's content.
@@ -68,7 +68,7 @@ anchors:
 
 #### Status via Tag
 
-![Status card via Tag]({{ site.baseurl }}/images/components/card/status.png)
+<img src="{{ site.baseurl }}/images/components/card/status.png" alt="Status card via Tag" style="width:100%;"/>
 
 Use this variation when you have a short status which can use the [Tag component]({{ site.baseurl }}/components/tag).
 
@@ -80,7 +80,7 @@ Use this variation when you have a short status which can use the [Tag component
 
 #### Status via label with indicator
 
-![Status card via label with indicator]({{ site.baseurl }}/images/components/card/status-long-label.png)
+<img src="{{ site.baseurl }}/images/components/card/status-long-label.png" alt="Status card via label with indicator" style="width:100%;"/>
 
 Use this variation when you have a longer status label.
 

@@ -31,7 +31,7 @@ anchors:
     responsive=true
     css_property="height"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.height-and-width.height %}
       {% include height-and-width-example.html
         prop="height"
@@ -54,7 +54,7 @@ anchors:
     responsive=true
     css_property="min-height"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.height-and-width.min_height %}
       {% include height-and-width-example.html
         prop="min-height"
@@ -77,7 +77,7 @@ anchors:
     responsive=true
     css_property="max-height"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.height-and-width.max_height %}
       {% include height-and-width-example.html
         prop="max-height"
@@ -100,7 +100,7 @@ anchors:
     responsive=true
     css_property="width"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.height-and-width.width %}
       {% include height-and-width-example.html
         prop="width"
@@ -123,7 +123,7 @@ anchors:
     responsive=true
     css_property="min-width"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.height-and-width.min_width %}
       {% include height-and-width-example.html
         prop="min-width"
@@ -146,7 +146,7 @@ anchors:
     responsive=true
     css_property="max-height"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.height-and-width.max_width %}
       {% include height-and-width-example.html
         prop="max-width"
@@ -165,6 +165,6 @@ anchors:
 All height and width utilities include responsive prefixes.
 
 ```html
-<div class="vads-u-min-height--viewport large-screen:vads-u-min-height--none">
+<div class="vads-u-min-height--viewport desktop-lg:vads-u-min-height--none">
 ```
 {% include _breakpoint-names.html %}

@@ -1,7 +1,6 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $font-sans;
 
   &:before {
     content: '{ "current": "", "applied": [] }';
@@ -81,4 +80,11 @@ blockquote {
   margin: units(2);
   padding: 0 units(1);
   border-left: 0.25em solid $color-gray-medium;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
 }

@@ -19,20 +19,20 @@ Change the font style of an element.
   responsive=false
   css_property="font-style"
 %}
-  <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start vads-u-border--0">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+  <div class="vads-grid-row vads-u-flex-direction--column">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start vads-u-border--0">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
           <code class="code">.vads-u-font-style--italic</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
         <span class="vads-u-font-style--italic">Italic text in &lt;span>. </span>
       </div>
     </div>
-    <div class="site-showcase__col vads-l-row vads-u-align-items--flex-start">
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+    <div class="site-showcase__col vads-grid-row vads-u-align-items--flex-start">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
           <code class="code">.vads-u-font-style--normal</code>
       </div>
-      <div class="vads-l-col--12 medium-screen:vads-l-col--6">
+      <div class="vads-grid-col-12 tablet:vads-grid-col-6">
         <em class="vads-u-font-style--normal">Normal text in &lt;em> </em>
       </div>
     </div>

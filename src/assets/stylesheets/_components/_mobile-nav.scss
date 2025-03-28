@@ -51,7 +51,7 @@
 .site-mobile-nav__close-button:active,
 .site-mobile-nav__close-button:focus {
   background-color: transparent;
-  color: $color-base;
+  color: var(--vads-color-base);
 }
 
 .site-mobile-nav__link {

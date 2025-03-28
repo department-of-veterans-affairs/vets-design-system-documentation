@@ -73,7 +73,6 @@ The action link is an eye-catching link to start a digital service. An action li
 
 ```
 <a
-  className="vads-c-action-link--blue"  
   href="#"
   hreflang="es"
   lang="es"

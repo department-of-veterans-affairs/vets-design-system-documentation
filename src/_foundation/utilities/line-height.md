@@ -19,9 +19,9 @@ Change the line height of text. Measure classes include [responsive prefixes](#r
     responsive=true
     css_property="line-height"
   %}
-  <div class="vads-l-row">
+  <div class="vads-grid-row">
     {% for item in site.data.line-height.line_heights %}
-      <div class="site-showcase__col vads-l-col--12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
+      <div class="site-showcase__col vads-grid-col-12 {% if forloop.index == 1 %}vads-u-border-top--0{% endif %}">
         <div class="vads-u-display--flex vads-u-justify-content--space-between">
           <code class="code">.vads-u-line-height--{{ item.name }}</code>
           <span class="site-utility-value">{{ item.value }}</span>
@@ -42,6 +42,6 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 ### Example
 
 ```html
-<div class="medium-screen:vads-u-line-height--2 large-screen:vads-u-line-height--5">
+<div class="tablet:vads-u-line-height--2 desktop-lg:vads-u-line-height--5">
 ```
 {% include _breakpoint-names.html %}

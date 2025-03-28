@@ -30,9 +30,11 @@ anchors:
 
 {% include component-example.html alt="Shows the form fields used to obtain home phone number and mobile phone number." file="/images/patterns/ask-users-for/phone-numbers/phone-numbers.png" caption="Example of asking for a home phone number or mobile phone number." class="x2" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ### International phone numbers
 {% include component-example.html alt="Shows the form fields used to obtain a international phone number." file="/images/patterns/ask-users-for/phone-numbers/international-phone-number.png" caption="Example of asking for an international phone number." class="x2" %}

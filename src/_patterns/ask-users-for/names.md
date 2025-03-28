@@ -30,9 +30,11 @@ anchors:
 
 {% include component-example.html alt="Shows the form fields used to obtain first, middle, and last name." file="/images/patterns/ask-users-for/names/form-names.png" caption="Example of asking for first, middle, and last names." class="x2" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ## How to design and build
 

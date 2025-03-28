@@ -33,7 +33,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/breadcrumb/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -87,4 +91,8 @@ To use React Router with this component [follow these instructions](https://desi
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/breadcrumb/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/breadcrumb/#accessibility-select"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>

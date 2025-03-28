@@ -17,21 +17,21 @@
                             {% if name_value_pair[1] contains "Pass with exceptions" %}
                                 {% assign completed_items = completed_items | plus: 1 %}
                                 {% assign total_items = total_items | plus: 1 %}
-                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                                <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
                             {% elsif name_value_pair[1] contains "Pass" %}
                                 {% assign completed_items = completed_items | plus: 1 %}
-                                {% assign total_items = total_items | plus: 1 %}           
-                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                                {% assign total_items = total_items | plus: 1 %}
+                                <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>           
                             {% elsif name_value_pair[1] contains "Conditional" %}
                                 {% assign completed_items = completed_items | plus: 1 %}
                                 {% assign total_items = total_items | plus: 1 %}
-                                <i class="fas fa-check-circle site-component-checklist-score site-component-checklist-score--is-true"></i>
+                                <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon> 
                             {% elsif name_value_pair[1] contains "Fail" %}
                                 {% assign total_items = total_items | plus: 1 %}
-                                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-false"></i>
+                                <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
                             {% else %}
                                 {% assign total_items = total_items | plus: 1 %}
-                                <i class="fas fa-circle site-component-checklist-score site-component-checklist-score--is-na"></i> 
+                                <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon> 
                             {% endif %}
                         {% endif %}
 

@@ -58,3 +58,26 @@
   margin-top: units(-1);
   border-top: 1px solid $color-gray-lighter;
 }
+
+.site-code-snippet__button {
+  va-icon {
+    margin-right: units(.5);
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+  }
+  .site-code-snippet__show-html {
+    display: block;
+  }
+  .site-code-snippet__hide-html {
+    display: none;
+  }
+  &.show {
+    .site-code-snippet__show-html {
+      display: none;
+    }
+    .site-code-snippet__hide-html {
+      display: block;
+    }
+  }
+}

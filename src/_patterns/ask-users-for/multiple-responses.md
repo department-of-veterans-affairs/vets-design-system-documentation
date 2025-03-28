@@ -71,12 +71,12 @@ There are two types of multiple page patterns with slightly different user flows
 
 ### Required multi-page pattern user flow
 
-<div class="vads-l-grid-container--full">
-  <div class="vads-l-row">
-    <div class="large-screen:vads-l-col vads-u-padding-top--4">
-      <img src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
+<div class="vads-grid-container">
+  <div class="vads-grid-row">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6 vads-u-padding-top--4">
+      <img width="100%" src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
     </div>
-    <div class="large-screen:vads-l-col">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6">
       <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_required | markdownify }}
@@ -98,9 +98,11 @@ There are two types of multiple page patterns with slightly different user flows
         </va-process-list-item>
       </va-process-list>
       <div class="vads-u-padding-left--3">
-        <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-required }}">
-          View a mock form example of a <em>required</em> multi-page pattern
-        </a>  
+        <va-link-action
+          href="{{ page.example-link-multi-page-required }}"
+          text="View a mock form example of a <em>required</em> multi-page pattern"
+          type="secondary"
+        ></va-link-action>
       </div>
     </div>
   </div>
@@ -108,12 +110,12 @@ There are two types of multiple page patterns with slightly different user flows
 
 ### Optional multi-page pattern user flow
 
-<div class="vads-l-grid-container--full">
-  <div class="vads-l-row">
-    <div class="large-screen:vads-l-col vads-u-padding-top--4">
-      <img src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
+<div class="vads-grid-container">
+  <div class="vads-grid-row">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6 vads-u-padding-top--4">
+      <img width="100%" src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
     </div>
-    <div class="large-screen:vads-l-col">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6">
       <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_optional | markdownify }}
@@ -135,10 +137,12 @@ There are two types of multiple page patterns with slightly different user flows
         </va-process-list-item>
       </va-process-list>
       <div class="vads-u-padding-left--3">
-        <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-optional }}">
-          View a mock form example of an <em>optional</em> multi-page pattern
-        </a>
-     </div>
+        <va-link-action
+          href="{{ page.example-link-multi-page-optional }}"
+          text="View a mock form example of an <em>optional</em> multi-page pattern"
+          type="secondary"
+        ></va-link-action>
+      </div>
     </div>
   </div>
 </div>

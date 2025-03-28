@@ -31,9 +31,11 @@ anchors:
 
 {% include component-example.html alt="Shows the form fields used to obtain Social Security number and VA file number." file="/images/patterns/ask-users-for/social-security-number/form-ssn.png" caption="Example of asking for a Social security or VA file number." class="x2" %}
 
-<a class="vads-c-action-link--blue" href="{{ page.example-link }}">
-  View an example
-</a>
+<va-link-action
+  href="{{ page.example-link }}"
+  text="View an example"
+  type="secondary"
+></va-link-action>
 
 ### Display
 
