@@ -1,5 +1,48 @@
 [
   {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/208801216",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/208801216/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/208801216/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v50.0.0",
+    "id": 208801216,
+    "author": {
+      "login": "micahchiang",
+      "id": 15097156,
+      "node_id": "MDQ6VXNlcjE1MDk3MTU2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15097156?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/micahchiang",
+      "html_url": "https://github.com/micahchiang",
+      "followers_url": "https://api.github.com/users/micahchiang/followers",
+      "following_url": "https://api.github.com/users/micahchiang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/micahchiang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/micahchiang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/micahchiang/subscriptions",
+      "organizations_url": "https://api.github.com/users/micahchiang/orgs",
+      "repos_url": "https://api.github.com/users/micahchiang/repos",
+      "events_url": "https://api.github.com/users/micahchiang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/micahchiang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOEjVS084Mcg3A",
+    "tag_name": "v50.0.0",
+    "target_commitish": "main",
+    "name": "v50.0.0",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2025-03-27T20:36:09Z",
+    "published_at": "2025-03-27T20:41:48Z",
+    "assets": [
+
+    ],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.0.0",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.0.0",
+    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-pagination: update for maximum of seven slots by @1Copenut in https://github.com/department-of-veterans-affairs/component-library/pull/1476\r\n### New Features & Components 🎉\r\n* va-checkbox: swap out legend element  by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1523\r\n* va-alert-critical: add new component by @bellepx0 in https://github.com/department-of-veterans-affairs/component-library/pull/1533\r\n### Fixes\r\n* va-official-gov-banner: swap icons by @gsong in https://github.com/department-of-veterans-affairs/component-library/pull/1534\r\n* va-alert: use headline text for alert close button ARIA label by @rsmithadhoc in https://github.com/department-of-veterans-affairs/component-library/pull/1535\r\n* va-checkbox: fix interactive elements in description by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1531\r\n* va-combo-box: when clicking into input, if no text is selected, select all of it by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1532\r\n* va-combo-box: user typed matches auto-select by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1537\r\n* Form Components: add message-aria-describedby checks by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1538\r\n### Other Changes\r\n* Storybook: remove formation imports by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1524\r\n* CSS-Library: align list styles to uswds by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1508\r\n\r\n## New Contributors\r\n* @KyleCardwell made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1532\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v49.4.1...v50.0.0",
+    "mentions_count": 8
+  },
+  {
     "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/205427527",
     "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/205427527/assets",
     "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/205427527/assets{?name,label}",
@@ -1242,48 +1285,5 @@
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v45.0.0",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-select: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1258\r\n* va-radio, va-radio-option: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1260\r\n* va-breadcrumbs: Remove v1 variation by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1265\r\n* va-checkbox, va-checkbox-group, va-privacy-agreement: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1264\r\n* va-segmented-progress-bar: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1270\r\n* va-additional-info: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1272\r\n* va-pagination: Remove v1 variation by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1273\r\n* va-summary-box: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1274\r\n* va-button & va-button-pair: Remove V1 variation by @Andrew565 in https://github.com/department-of-veterans-affairs/component-library/pull/1275\r\n* va-process-list: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1276\r\n* va-file-input/va-file-input-multiple: Remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1277\r\n* va-search-input: Remove v1 variation by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1278\r\n* va-alert and va-banner: Remove v1 variation by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1268\r\n### New Features & Components 🎉\r\n* va-search-input: Add disable-analytics prop by @randimays in https://github.com/department-of-veterans-affairs/component-library/pull/1257\r\n* va-text-input: Add suffix icon support by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1280\r\n### Fixes\r\n* va-statement-of-truth: Reflect error prop in va-text-input for styling by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1255\r\n* va-date: V1 code cleanup by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1262\r\n* va-file-input: Improve action button accessibility by @harshil1793 in https://github.com/department-of-veterans-affairs/component-library/pull/1261\r\n* va-modal: Fix focus state bug when va-radio-option is in modal contents by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1266\r\n* va-back-to-top: Set display none to link when it should not be visible by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1267\r\n### Other Changes\r\n* CSS Library: Generate medium-screen breakpoint utility classes by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1263\r\n\r\n## New Contributors\r\n* @randimays made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1257\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v44.0.0...v45.0.0",
     "mentions_count": 6
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/168756182",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/168756182/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/168756182/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v44.0.0",
-    "id": 168756182,
-    "author": {
-      "login": "powellkerry",
-      "id": 1776069,
-      "node_id": "MDQ6VXNlcjE3NzYwNjk=",
-      "avatar_url": "https://avatars.githubusercontent.com/u/1776069?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/powellkerry",
-      "html_url": "https://github.com/powellkerry",
-      "followers_url": "https://api.github.com/users/powellkerry/followers",
-      "following_url": "https://api.github.com/users/powellkerry/following{/other_user}",
-      "gists_url": "https://api.github.com/users/powellkerry/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/powellkerry/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/powellkerry/subscriptions",
-      "organizations_url": "https://api.github.com/users/powellkerry/orgs",
-      "repos_url": "https://api.github.com/users/powellkerry/repos",
-      "events_url": "https://api.github.com/users/powellkerry/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/powellkerry/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "RE_kwDOEjVS084KDwPW",
-    "tag_name": "v44.0.0",
-    "target_commitish": "main",
-    "name": "v44.0.0",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2024-08-05T16:48:59Z",
-    "published_at": "2024-08-05T17:05:50Z",
-    "assets": [
-
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v44.0.0",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v44.0.0",
-    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Breaking Changes\r\n* va-textarea: remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1240\r\n* va-text-input: remove v1 variation by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1247\r\n* va-accordion: remove v1 variation by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1249\r\n### Fixes\r\n* va-breadcrumbs: padding updates by @harshil1793 in https://github.com/department-of-veterans-affairs/component-library/pull/1244\r\n* va-official-gov-banner: Remove banner landmarks by @rsmithadhoc in https://github.com/department-of-veterans-affairs/component-library/pull/1248\r\n* va-file-input/multiple: add aria-hidden to file thumbnails by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1250\r\n* va-breadcrumb: mobile view padding fix by @harshil1793 in https://github.com/department-of-veterans-affairs/component-library/pull/1251\r\n### Other Changes\r\n* CSS Library: update spacing and font utility classes for 16px root font size by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1242\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v43.0.2...v44.0.0",
-    "mentions_count": 4
   }
 ]
