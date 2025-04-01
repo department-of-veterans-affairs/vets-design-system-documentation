@@ -1,5 +1,5 @@
 ### Choosing the right component for the task
-Consider how many options the user will have when choosing the right component. The number of options will determine what component is right for the task. 
+Consider how many options the user will have when choosing the right component. The number of options will determine which component is right for the task. 
 
 * **2 - 5: Radio Buttons.** Use [radio buttons]({{ site.baseurl }}/components/form/radio-button) when there are only a few options that can all be exposed at once.
 * **6 - 15: Select.** Use a [select]({{ site.baseurl }}/components/form/select) for a limited number of options.
