@@ -21,9 +21,9 @@ anchors:
 
 ## Examples
 
-{% include storybook-preview.html story="components-va-alert-critical--default" link_text="va-critical-action default" width="66%" %}
+{% include storybook-preview.html story="components-va-critical-action--default" link_text="va-critical-action default" width="66%" %}
 
-{% include storybook-preview.html story="components-va-alert-critical--card-with-alert-critical" link_text="va-critical-action within a card component" height="400px" %}
+{% include storybook-preview.html story="components-va-critical-action--card-with-alert-critical" link_text="va-critical-action within a card component" height="400px" %}
 
 ## Usage
 
