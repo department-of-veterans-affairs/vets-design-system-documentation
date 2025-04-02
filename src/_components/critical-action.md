@@ -21,20 +21,9 @@ anchors:
 
 ## Examples
 
-(This will eventually transition to Storybook links)
+{% include storybook-preview.html story="components-va-alert-critical--default" link_text="va-critical-action default" %}
 
-{% include component-example.html
-  class="x2"
-  alt="My VA, with five yellow Critical Action components stacked at the top of the page under a header that says “Actions needed.”"
-  caption="On dashboard pages like My VA, Critical Action components stack at the top, highlighting the most pressing actions users need to take."
-  file="/images/components/critical-action/critical-action-in-my-va.png" %}
-
-{% include component-example.html
-  class="x2"
-  alt="A list of benefits a Veteran is enrolled in. Several of the benefits in the list have Critical Action components, which highlight an action the user needs to take."
-  caption="In lists of Cards or Service list items, Critical Action can highlight important or time-sensitive actions the user needs to take. This page is not currently in production."
-  file="/images/components/critical-action/critical-action-in-service-list.png" %}
-
+{% include storybook-preview.html story="components-va-alert-critical--card-with-alert-critical" link_text="va-critical-action within a card component" %}
 
 ## Usage
 
@@ -78,9 +67,7 @@ On the My VA page, you can stack Critical Action components at the top of the pa
   file="/images/components/critical-action/critical-action-in-my-va.png" %}
 
 
-## Code usage
-
-(Coming soon)
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
