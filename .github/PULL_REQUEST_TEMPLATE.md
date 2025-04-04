@@ -43,8 +43,12 @@ Closes #[Issue_number]
 
 -->
 
-[Open Preview Environment](https://dev-design.va.gov/PR_NUMBER)
-
 <!--
   Finally, please remove all these PR template comments before submitting. 🚀
 -->
+
+<!-- start placeholder for CI job - it will be updated automatically -->
+
+PREVIEW_ENVIRONMENT_LINK
+
+<!-- end placeholder -->

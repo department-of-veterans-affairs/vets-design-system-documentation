@@ -90,7 +90,7 @@ jobs:
       - name: Update PR Description
         uses: nefrob/pr-description@v1.2.0
         with:
-          content: "<!-- start match -->\n[Open Preview Environment](https://${{ inputs.matrix-bucket }}/${{ github.event.number }})\n<!-- end match -->"
-          regex: "<!-- start match -->.*?<!-- end match -->"
+          content: "\n[Open Preview Environment](https://${{ inputs.matrix-bucket }})\n"
+          regex: "<!-- start placeholder for CI job - it will be updated automatically  -->.*?<!-- end placeholder -->"
           regexFlags: ims
           token: ${{ secrets.GITHUB_TOKEN }}
