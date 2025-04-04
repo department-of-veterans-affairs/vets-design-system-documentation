@@ -40,5 +40,6 @@ jobs:
         with:
           content: ${{ github.event.number }}
           regex: "PR_NUMBER.*"
+          regexFlags: "gm"
           appendContentOnMatchOnly: true
           token: ${{ secrets.GITHUB_TOKEN }}
