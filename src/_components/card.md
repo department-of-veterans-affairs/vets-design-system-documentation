@@ -14,7 +14,7 @@ anchors:
   - anchor: Usage
   - anchor: Behavior
   - anchor: Code usage
-  - anchor: Not a Card 
+  - anchor: Not a Card
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -22,7 +22,7 @@ anchors:
 
 ## Examples
 
-### Default 
+### Default
 
 {% include storybook-preview.html story="components-va-card--default" link_text="va-card default" %}
 
@@ -39,16 +39,17 @@ anchors:
 ### When to use Card
 
 * **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
-* **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take. 
+* **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take.
 * **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
 
 ### When to consider something else
 
-* **Eligibility information or other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably.
+* **Eligibility information.** When you want to show benefits or tools the user is currently enrolled in or has access to.
+* **Other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably. The Summary box should be used once on the page, and not stacked in a list as the Card component or Service list item component should be.
 * **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
-* **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card. 
+* **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.
 * **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
-* **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target. 
+* **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target.
 
 ### When to use caution
 
@@ -114,21 +115,10 @@ Use [this variation](#3-with-drop-shadow) for emphasis, for example at the top o
 
 There are many instances of the Card component in production. This is not an exhaustive list but does serve to augment the [examples](#examples) above and highlight well defined instances of a Card.
 
-#### Appointment
-
-{% include component-example.html alt="An appointment card in MyVA." file="/images/components/card/appointment-mobile.png" caption="An appointment card in MyVA." reverse=true width="50%" %}
-
-#### Appointment with status
-
-{% include component-example.html alt="An appointment card with a status of canceled." file="/images/components/card/appointment-canceled-mobile.png" caption="An appointment card for a canceled appointment." reverse=true width="50%" %}
 
 #### Appointment, large with icon
 
 {% include component-example.html alt="A large appointment card with an icon." file="/images/components/card/appointment-with-icon.png" caption="A large appointment card with an icon to identify the card type or category, in this case for an in-person appointment." reverse=true class="x2" %}
-
-#### Claims status
-
-{% include component-example.html alt="A Claims status card in the Claim Status Tool." file="/images/components/card/card-with-alert-slim.png" caption="A Claims status card showing status for a compensation claim with a slim Alert in at a mobile viewport width." class="x2" %}
 
 #### Financial Status Report
 
@@ -148,23 +138,23 @@ There are many instances of the Card component in production. This is not an exh
 
 ## Behavior
 
-### Calls to action 
+### Calls to action
 
 * **Make cards actionable.** A Card should be actionable. That can be accomplished through the use of the [action link]({{ site.baseurl }}/components/link/action) component.
-* **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. 
-* **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs). 
+* **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
+* **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
 * **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
 ### Communicating status
 
-* **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status. 
+* **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
   * NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.
-* **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive. 
+* **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.
 * **Color and another.** Never rely on color alone to communicate status.
 
 ### Placement
 
-#### Dimensions 
+#### Dimensions
 
 Cards use the following widths:
 
@@ -185,7 +175,7 @@ Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing 
 
 {% include component-docs.html component_name=page.web-component %}
 
-## Not a Card 
+## Not a Card
 
 There are a few design elements that look like a Card but do not behave like a Card and are actually instances, or variations, of other components or are simply containers that share the same background color as a Card. These Card adjacent designs should not be thought of as a Card component and do not adhere to the guidelines defined here.
 
@@ -206,6 +196,12 @@ The [pattern for asking users for multiple responses]({{ site.baseurl }}/pattern
 {% include component-example.html alt="A container for a checkbox and description in a form." file="/images/components/card/not-a-card-radio-button-tile.png" caption="Container for a checkbox. Not a Card." width="50%" %}
 
 A radio button tile has a title and description within the label and a Card-like container around the radio button and label. This treatment can be seen in the [Radio button - Tile variation]({{ site.baseurl }}/components/form/radio-button#tile). It is also in use around checkboxes in parts of VA.gov. This treatment is specific to radio buttons and checkboxes and should not be thought of an an instance of a Card.
+
+### A list of services or tools
+
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as 'Label: Value' pairs, and a link."  file="/images/components/service-list-item/service-list-item-all-info.png" width="50%" %}
+
+When you want to show benefits or tools the user is currently enrolled in or has access to, use the [Service list item]({{ site.baseurl }}/components/service-list-item) component instead of the Card component.
 
 ## Content considerations
 
@@ -247,3 +243,5 @@ Sub-components used in this component:
 * [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
 * [Link - Action]({{ site.baseurl }}/components/link/action)
 * [Tag]({{ site.baseurl }}/components/tag)
+
+Also see the [Service list item]({{ site.baseurl }}/components/service-list-item) component
