@@ -30,16 +30,3 @@ jobs:
     secrets:
       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  update-pr-description:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Update PR Description
-        uses: nefrob/pr-description@v1.2.0
-        with:
-          content: ${{ github.event.number }}
-          regex: "PR_NUMBER.*"
-          regexFlags: "gm"
-          appendContentOnMatchOnly: true
-          token: ${{ secrets.GITHUB_TOKEN }}
