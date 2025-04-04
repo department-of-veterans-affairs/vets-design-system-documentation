@@ -47,8 +47,8 @@ Closes #[Issue_number]
   Finally, please remove all these PR template comments before submitting. 🚀
 -->
 
-<!-- start placeholder for CI job - it will be updated automatically -->
+<!-- start placeholder for CI job -->
 
-PREVIEW_ENVIRONMENT_LINK
+This will be updated automatically 🪄✨
 
 <!-- end placeholder -->
