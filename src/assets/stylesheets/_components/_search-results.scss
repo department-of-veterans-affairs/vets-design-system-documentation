@@ -2,6 +2,7 @@
   position: relative;
   padding-left: units(2);
   display: none;
+  width: 240px; // Visually align with links
 
   @include media($nav-width) {
     display: block;
