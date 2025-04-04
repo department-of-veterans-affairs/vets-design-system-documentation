@@ -3,15 +3,15 @@
   background-color: $vads-color-primary-darker;
 }
 
-.site-header .site-l-wrapper {
-  padding-right: 0;
+.site-l-wrapper {
+  padding-left: units(3);
 
   @include media($nav-width) {
-    padding-right: units(5);
+    padding: 0 units(5);
   }
 
   @include media($large-screen) {
-    padding-right: units(10);
+    padding: 0 units(10);
   }
 }
 
@@ -65,6 +65,10 @@
   display: inline-block;
   color: #fff;
   text-decoration: none;
+
+  @include media($large-screen) {
+    padding: 0 units(3);
+  }
 }
 
 .site-header__logo-link:hover,
@@ -75,6 +79,7 @@
 .site-header__utility-links {
   align-items: center;
   display: flex;
+  margin-right: units(3);
 
   .usa-button {
     display: none;
@@ -124,21 +129,18 @@
   margin: 0;
 }
 
-.site-header__nav-list:first-child {
-  margin-left: $units-neg-3;
-}
-
-.site-header__nav-list:last-child {
-  margin-right: $units-neg-3;
-}
-
 .site-header__nav-item__link,
 .site-header__nav-item__link:visited {
   color: #fff;
   display: block;
-  padding: $units-2 $units-3;
+  padding: $units-2 $units-1;
   text-decoration: none;
   transition: none;
+  white-space: nowrap;
+
+  @include media($large-screen) {
+    padding: $units-2 $units-3;
+  }
 }
 
 .site-header__nav-item__link:hover,
@@ -151,9 +153,17 @@
   border-bottom: 4px solid $color-gold;
 }
 
-.site-header__nav-item__link.site-header__nav-item__link--icon {
-  align-items: center;
-  display: flex;
-  gap: $units-0p5;
-  white-space: nowrap;
+.badge {
+  position: relative;
+}
+
+.badge__indicator {
+  position: absolute;
+  right: -.5rem;
+  top: 0;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 100%;
+  background-color: var(--vads-color-secondary);
+  text-indent: -9999px;
 }

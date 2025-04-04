@@ -47,20 +47,3 @@
     border-bottom: 3px solid $color-primary;
   }
 }
-
-.site-l-wrapper {
-  padding: 0 units(3);
-
-  @include media($nav-width) {
-    padding: 0 units(5);
-  }
-
-  @include media($large-screen) {
-    padding: 0 units(10);
-  }
-}
-
-.site-l-wrapper--center {
-  margin-left: auto;
-  margin-right: auto;
-}
