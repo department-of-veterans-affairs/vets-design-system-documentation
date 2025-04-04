@@ -39,8 +39,6 @@ jobs:
         uses: nefrob/pr-description@v1.2.0
         with:
           content: ${{ github.event.number }}
-          regex: "PR_NUMBER"
-          regexFlags: "g"
-          contentIsFilePath: true
+          regex: "PR_NUMBER.*"
           appendContentOnMatchOnly: true
           token: ${{ secrets.GITHUB_TOKEN }}
