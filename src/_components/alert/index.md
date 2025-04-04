@@ -33,6 +33,12 @@ anchors:
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
+#### Alert with action link
+
+{% include storybook-preview.html story="uswds-va-alert--with-action-link" link_text="uswds-va-alert--with-action-link" height="220px" %}
+
+Used when an action link is needed in place of a standard link.
+
 #### Warning alert
 
 {% include storybook-preview.html story="uswds-va-alert--warning" link_text="va-alert warning" %}
@@ -48,8 +54,6 @@ Used to indicate success.
 #### Error alert
 
 {% include storybook-preview.html story="uswds-va-alert--error" link_text="va-alert error" height="220px" %}
-
-Used when there is a problem or something destructive is about to occur.
 
 ### Mobile
 
