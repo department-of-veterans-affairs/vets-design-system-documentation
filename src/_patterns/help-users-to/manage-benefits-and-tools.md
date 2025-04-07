@@ -80,7 +80,7 @@ Below are some potential benefits a Veteran or family member may enroll in, whic
 * Pension
 * Vocational rehabilitation (VRE)
 
-{% include component-example.html alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have Critical Action components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits." %}
+{% include component-example.html alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have Critical Action components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits." class="x2" %}
 
 ### Tools
 

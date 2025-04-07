@@ -50,7 +50,7 @@ anchors:
 
 #### Placement details
 
-In most cases, display the Critical Action component in a [Card](https://design.va.gov/components/card) or [Service List Item](https://design.va.gov/components/service-list-item) component. Place the component directly below the Status tag and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
+In most cases, display the Critical Action component in a [Card]({{ site.baseurl }}/components/card) or [Service List Item]({{ site.baseurl }}/components/service-list-item) component. Place the component directly below the Status tag and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
 
 {% include component-example.html
   class="x2"
