@@ -15,7 +15,6 @@ anchors:
   - anchor: Usage
   - anchor: How to design and build
   - anchor: Examples
-  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Research findings
@@ -28,17 +27,17 @@ anchors:
 * **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
 * **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
 * **Service**: A term used to describe both benefits and tools.
-* **Service List**: A list of services. This pattern articulates how to design a Service list.
+* **Service List**: A list of services. This pattern explains how to design a Service list.
 * **Service List Item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 
 ### When to use this pattern
 
-* **When you are using the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.**
-* **When you want to show benefits or tools the user is currently enrolled in or has access to.**
+* When you are using the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
+* When you want to show benefits or tools the user is currently enrolled in or has access to.
 
 ### When not to use this pattern
 
-* **When you are representing items that are neither a benefit nor a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool.
+* **When you are representing items that are not a benefit or a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool.
 * **When you want to show benefits within a form.** Do not use this pattern to show benefits or services in an interactive list with checkboxes or other selection methods.
 * **When you want to display content in an unordered list.** Content that can be shared with bullet points should use an unordered list. Find more information in the [List component](https://design.va.gov/components/list) and the [Bulleted list style guide](https://design.va.gov/content-style-guide/bulleted-lists).
 

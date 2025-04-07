@@ -45,7 +45,7 @@ anchors:
 
 ### When to use Service List Item
 
-* **When you want to show benefits or tools the user is currently enrolled in or has access to.**
+* When you want to show benefits or tools the user is currently enrolled in or has access to.
 
 ### When not to use Service List Item
 
