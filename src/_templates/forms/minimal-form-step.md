@@ -21,7 +21,6 @@ We display the [plain language form name](https://design.va.gov/templates/forms/
 
 Use the H1 of the question page to describe the information needed or ask the specific question on the form page.
 
-
 ### Examples
 There are two versions of the form page template: 
 - Authenticated
@@ -179,11 +178,11 @@ A good approach for programmatically associating helper text is to put it into t
 
 <img width="664" alt="An example with a heading in a legend with 2 text inputs" src="https://github.com/user-attachments/assets/7986eb37-0258-4e54-b16b-3ea322f22dc9" />
 
-{% include component-example.html alt="An example with a heading in a legend with radio group" file="/images/templates/forms/minimal-form-step/6-example-fieldsets-legend-radio.png caption="An example of a fieldset legend for a radio group" class="x2" %}
+{% include component-example.html alt="An example with a heading in a legend with radio group" file="/images/templates/forms/minimal-form-step/6-example-fieldsets-legend-radio.png" caption="An example of a fieldset legend for a radio group" class="x2" %}
 
 <img width="667" alt="legend-example-2" src="https://github.com/user-attachments/assets/f9949a1e-5862-4deb-899d-7e78e029530c" />
 
-{% include component-example.html alt="An example with a heading outside of legend with radio group" file="/images/templates/forms/minimal-form-step/7-example-heading-outside-fieldset.png caption="An example of an h1 outside of a legend for a radio group" class="x2" %}
+{% include component-example.html alt="An example with a heading outside of legend with radio group" file="/images/templates/forms/minimal-form-step/7-example-heading-outside-fieldset.png" caption="An example of an h1 outside of a legend for a radio group" class="x2" %}
 
 <img width="697" alt="legend-example-3" src="https://github.com/user-attachments/assets/163b1a35-b30b-4ac3-aff3-5aac0ddc2893" />
 
