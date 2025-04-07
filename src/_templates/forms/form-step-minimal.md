@@ -10,6 +10,7 @@ anchors:
   - anchor: About
   - anchor: Structure
   - anchor: Research findings
+  - anchor: Code considerations
 ---
 
 ## About
@@ -45,6 +46,8 @@ The authenticated form page template consists of:
 11. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
 12. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
 
+##### Instances of this template in production
+[Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
 
 #### Example - Unauthenticated
 
@@ -242,3 +245,5 @@ This form page layout aims to address pain-points related to the amount of redun
 * Screen reader users are disorientated by repetitive `H1`s as the `H1` is meant to be a unique description of the current page (not a summary of an overall flow e.g. a form title) 
 * For Veterans with low vision who use magnification on mobile devices, questions can be hidden below “the fold” completely
 
+## Code considerations
+[Minimal header (minimal form flow) pattern documentation](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/patterns/minimal-header/README.md) details how to implement this variation.
