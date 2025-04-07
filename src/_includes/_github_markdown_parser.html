@@ -26,7 +26,7 @@
 {% comment %}
   Capture github usernames (to make a link to user profile)
 {% endcomment %}
-{% assign reUsernames = 'by\s(@(\S+))\s' %}
+{% assign reUsernames = '\s(@(\S+))\s' %}
 
 {% comment %}
   Trim number of releases to show
@@ -43,7 +43,7 @@
     | regexreplace: reIssueNumbersInTitle, '[\1](https:/github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/\2)'
     | regexreplace: rePrUrl, '[\#\2]'
     | regexreplace: reHeadingLevels, '\1# '
-    | regexreplace: reUsernames, 'by [\1](https://github.com/\2) '
+    | regexreplace: reUsernames, ' [\1](https://github.com/\2) '
     | markdownify
   }}
 </va-card>
