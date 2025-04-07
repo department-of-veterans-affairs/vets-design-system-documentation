@@ -1,9 +1,9 @@
 ---
 layout: pattern
-title: Manage benefits and tools
+title: Manage Benefits and Tools
 draft: true
 permalink: /patterns/help-users-to/manage-benefits-and-tools
-aka: Service list
+aka: Service List
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
 sub-section: help-users-to
 intro-text: Follow this pattern to help users manage their benefits and tools.
@@ -28,12 +28,12 @@ anchors:
 * **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
 * **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
 * **Service**: A term used to describe both benefits and tools.
-* **Service list**: A list of services. This pattern articulates how to design a Service list.
-* **Service list item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the [Service list item component]({{ site.baseurl }}/components/service-list-item).
+* **Service List**: A list of services. This pattern articulates how to design a Service list.
+* **Service List Item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 
 ### When to use this pattern
 
-* **When you are using the [Service list item]({{ site.baseurl }}/components/service-list-item) component.**
+* **When you are using the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.**
 * **When you want to show benefits or tools the user is currently enrolled in or has access to.**
 
 ### When not to use this pattern
@@ -52,18 +52,18 @@ anchors:
 
 ### How this pattern works
 
-This pattern vertically stacks Service list items to form a list, called a “Service list.” As noted in the [Service list item component]({{ site.baseurl }}/components/service-list-item), the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a Critical information component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service list item component.
+This pattern vertically stacks Service List Items to form a list, called a “Service list.” As noted in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component, the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a [Critical Action]({{ site.baseurl }}/components/critical-action) component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service List Item component.
 
 ### Display order
 
 * List items should be displayed in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and consider running usability studies to confirm the most appropriate display order for your content.
 
-* Note that when list items include a Critical information component (coming soon), these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
+* **Note**: When list items include a [Critical Action]({{ site.baseurl }}/components/critical-action) component, these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
 
 ### Components used in this pattern
 
-* [Service list item (NEW)]({{ site.baseurl }}/components/service-list-item)
-* Critical information (NEW; link coming soon)
+* [Service List Item (NEW)]({{ site.baseurl }}/components/service-list-item)
+* [Critical Action (NEW)]({{ site.baseurl }}/components/critical-action)
 * [Tag component](https://design.va.gov/components/tag])
 
 ## Examples
@@ -81,7 +81,7 @@ Below are some potential benefits a Veteran or family member may enroll in, whic
 * Pension
 * Vocational rehabilitation (VRE)
 
-{% include component-example.html alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have critical information components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits." %}
+{% include component-example.html alt="A list of benefits a Veteran is currently enrolled in. Two of the benefits have Critical Action components shown, linking the user to a page where they can take important actions." file="/images/patterns/help-users-to/manage-benefits-and-tools/service-list-example.png" caption="An example of how this pattern can be applied to help users navigate and learn about their benefits." %}
 
 ### Tools
 
@@ -96,17 +96,13 @@ Below are some  tools that a Veteran, family member, or caretaker may use to man
 * Prescriptions
 * Secure messages
 
-## Code usage
-
-(Link coming soon)
-
 ## Content considerations
 
 Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.
 
 ## Accessibility considerations
 
-Review the accessibility considerations for the [Service list item component]({{ site.baseurl }}/components/service-list-item#accessibility-considerations).
+Review the accessibility considerations for the [Service List Item]({{ site.baseurl }}/components/service-list-item#accessibility-considerations) component.
 
 ## Research findings
 

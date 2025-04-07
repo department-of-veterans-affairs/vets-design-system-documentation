@@ -23,7 +23,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-critical-action--default" link_text="va-critical-action default" width="66%" %}
 
-{% include storybook-preview.html story="components-va-critical-action--card-with-alert-critical" link_text="va-critical-action within a card component" height="400px" %}
+{% include storybook-preview.html story="components-va-critical-action--card-with-critical-action" link_text="va-critical-action within a card component" height="400px" %}
 
 ## Usage
 
@@ -46,26 +46,25 @@ anchors:
 
 #### General guidance
 * The Critical Action component links to a detail page from which the user can complete the call to action.
-* The Critical Action compent is not dismissable. It should be removed when the user completes the call to action.
+* The Critical Action component is not dismissible. It should be removed when the user completes the call to action.
 
 #### Placement details
 
-In most cases, display the Critical Action component in a [Card](https://design.va.gov/components/card) or [Service list item](https://design.va.gov/components/service-list-item) component. Place the component directly below the Status tag and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service list item. Do not include multiple Critical Action components in a single Card or Service list item.
+In most cases, display the Critical Action component in a [Card](https://design.va.gov/components/card) or [Service List Item](https://design.va.gov/components/service-list-item) component. Place the component directly below the Status tag and take up the width of the component it is nested within. Include only one Critical Action component in a Card or Service List Item. Do not include multiple Critical Action components in a single Card or Service List Item.
 
 {% include component-example.html
   class="x2"
   alt="A list of benefits a Veteran is enrolled in. Several of the benefits in the list have Critical Action components, which highlight an action the user needs to take."
-  caption="In lists of Cards or Service list items, Critical Action can highlight important or time-sensitive actions the user needs to take. This page is not currently in production."
+  caption="In lists of Cards or Service List Items, Critical Action can highlight important or time-sensitive actions the user needs to take. This page is not currently in production."
   file="/images/components/critical-action/critical-action-in-service-list.png" %}
 
-On the My VA page, you can stack Critical Action components at the top of the page. (Do not stack them within Cards or Service list items.) The component should take up 66% of the content width. Eventually, there may be other dashboard UI that will also accommodate the stacked Critical Action components.
+On the My VA page, you can stack Critical Action components at the top of the page. (Do not stack them within Cards or Service List Items.) The standalone component should take up 66% of the content width on larger screens, and expand to 100% of the width on mobile sized screens. When using it as a nested component, it should fill 100% of it's parent component's width. Eventually, there may be other dashboard UI that will also accommodate the stacked Critical Action components.
 
 {% include component-example.html
   class="x2"
   alt="My VA, with five yellow Critical Action components stacked at the top of the page under a header that says “Actions needed.”"
   caption="On dashboard pages like My VA, Critical Action components stack at the top, highlighting the most pressing actions users need to take."
   file="/images/components/critical-action/critical-action-in-my-va.png" %}
-
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -74,7 +73,7 @@ On the My VA page, you can stack Critical Action components at the top of the pa
 * When possible, start Critical Action content with verbs.
 * When relevant, include a date by which the user must take the action.
 * Keep the text concise. Work with the Content IA Centralized team (CIAC) to develop clear, short messages that tell the user the required action and deadline (if applicable).
-* You may display the Critical Action component inside a Card or Service list item on My VA or other page that show multiple VA benefits. In these cases, the component is shown outside the context of a Card or Service list item. It's important that the content clearly communicates the action to the user. The examples below show appropriate levels of detail.
+* You may display the Critical Action component inside a Card or Service List Item on My VA or other page that show multiple VA benefits. In these cases, the component is shown outside the context of a Card or Service List Item. It's important that the content clearly communicates the action to the user. The examples below show appropriate levels of detail.
 
 {% include component-example.html
   alt="Two examples of how much detail to add. For example, don’t say simply “Pay” or “Check in.” Rather, say “Pay your debt of $251.42” or “Check in to your Optometry appointment now.”"
