@@ -44,7 +44,7 @@ anchors:
 ### Choosing between variations
 
 * **Use unordered lists when the order of the items is not relevant.** List items in unordered lists can be in any order and are indicated with a black square.
-* **Use ordered lists for sequential information.** Ordered lists are automatically enumerated by the browser. 
+* **Use ordered lists for sequential information.** Ordered lists are automatically enumerated by the browser.
 * **Use description lists for groups of related terms and descriptions.** List items parts in definition lists will be connected programmatically.
 
 ### Instances of this component in production
@@ -78,5 +78,7 @@ anchors:
 ## Related
 
 * [Card]({{ site.baseurl }}/components/card)
+
+* [Service list item]({{ site.baseurl }}/components/service-list-item)
 
 {% include _component-checklist.html component_name=page.github-title %}
