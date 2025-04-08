@@ -100,10 +100,6 @@ Below are some  tools that a Veteran, family member, or caretaker may use to man
 
 Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.
 
-## Accessibility considerations
-
-Review the accessibility considerations for the [Service List Item]({{ site.baseurl }}/components/service-list-item#accessibility-considerations) component.
-
 ## Research findings
 
 [Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests that users view lists positively and should be able to navigate through them with relative ease. This particular pattern has not yet been tested directly with users.
