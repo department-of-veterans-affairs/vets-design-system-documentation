@@ -32,8 +32,8 @@ anchors:
 
 ### When to use this pattern
 
-* When you are using the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 * When you want to show benefits or tools the user is currently enrolled in or has access to.
+* When you are using the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 
 ### When not to use this pattern
 
