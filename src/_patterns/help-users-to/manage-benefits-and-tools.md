@@ -27,7 +27,7 @@ anchors:
 * **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
 * **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
 * **Service**: A term used to describe both benefits and tools.
-* **Service List**: A list of services. This pattern explains how to design a Service list.
+* **Service List**: A list of services. This pattern explains how to design a Service List.
 * **Service List Item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. See more details in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 
 ### When to use this pattern
@@ -37,9 +37,10 @@ anchors:
 
 ### When not to use this pattern
 
-* **When you are representing items that are not a benefit or a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit nor a tool.
+* **When you are representing items that are not a benefit or a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit or a tool.
 * **When you want to show benefits within a form.** Do not use this pattern to show benefits or services in an interactive list with checkboxes or other selection methods.
 * **When you want to display content in an unordered list.** Content that can be shared with bullet points should use an unordered list. Find more information in the [List component](https://design.va.gov/components/list) and the [Bulleted list style guide](https://design.va.gov/content-style-guide/bulleted-lists).
+* **When displaying the results on a global search results page** Content on a search results page should be
 
 ## Design Principles
 
@@ -51,7 +52,7 @@ anchors:
 
 ### How this pattern works
 
-This pattern vertically stacks Service List Items to form a list, called a “Service list.” As noted in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component, the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a [Critical Action]({{ site.baseurl }}/components/critical-action) component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service List Item component.
+This pattern vertically stacks Service List Items to form a list, called a “Service List.” As noted in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component, the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a [Critical Action]({{ site.baseurl }}/components/critical-action) component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service List Item component.
 
 ### Display order
 

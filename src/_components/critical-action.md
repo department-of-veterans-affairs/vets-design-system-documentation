@@ -58,7 +58,7 @@ In most cases, display the Critical Action component in a [Card]({{ site.baseurl
   caption="In lists of Cards or Service List Items, Critical Action can highlight important or time-sensitive actions the user needs to take. This page is not currently in production."
   file="/images/components/critical-action/critical-action-in-service-list.png" %}
 
-On the My VA page, you can stack Critical Action components at the top of the page. (Do not stack them within Cards or Service List Items.) The standalone component should take up 66% of the content width on larger screens, and expand to 100% of the width on mobile sized screens. When using it as a nested component, it should fill 100% of it's parent component's width. Eventually, there may be other dashboard UI that will also accommodate the stacked Critical Action components.
+On the My VA page, you can stack Critical Action components at the top of the page. (Do not stack them within Cards or Service List Items.) The standalone component should take up 66% of the content width on larger screens, and expand to 100% of the width on mobile sized screens. When using it as a nested component, it should fill 100% of its parent component's width. Eventually, there may be other dashboard UI that will also accommodate the stacked Critical Action components.
 
 {% include component-example.html
   class="x2"
