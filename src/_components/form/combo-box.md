@@ -24,11 +24,11 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-combo-box--default" link_text="va-combo-box default" height="300px" %}
 
-### With Default Value
+### With default value
 
 {% include storybook-preview.html story="uswds-va-combo-box--with-default-value" link_text="va-combo-box with default value" height="300px" %}
 
-### With Error
+### With error
 
 {% include storybook-preview.html story="uswds-va-combo-box--with-error" link_text="va-combo-box with error" height="300px" %}
 
@@ -36,15 +36,15 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-combo-box--required" link_text="va-combo-box required" height="300px" %}
 
-### With Placeholder Text
+### With placeholder text
 
 {% include storybook-preview.html story="uswds-va-combo-box--with-placeholder-text" link_text="va-combo-box with placeholder text" height="300px" %}
 
-### With Hint Text
+### With hint text
 
 {% include storybook-preview.html story="uswds-va-combo-box--with-hint-text" link_text="va-combo-box with hint text" height="300px" %}
 
-### With Message Aria Described By
+### With message aria described by
 
 {% include storybook-preview.html story="uswds-va-combo-box--with-message-aria-described-by" link_text="uswds-va-combo-box with message aria described by" height="300px" %}
 

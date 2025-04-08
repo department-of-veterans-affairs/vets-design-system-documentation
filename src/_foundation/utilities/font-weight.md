@@ -8,7 +8,7 @@ title: Font weight
 # Font weight
 
 <div class="va-introtext" markdown="1">
-Change the font wight of an element.
+Change the font weight of an element.
 </div>
 
 <div class="site-showcase">
