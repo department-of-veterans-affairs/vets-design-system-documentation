@@ -23,6 +23,10 @@ The language toggle allows users to click links to load the same page which has 
 
 {% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
 
+### Two Languages
+
+{% include storybook-preview.html story="components-va-language-toggle--two-languages" link_text="Language toggle" %}
+
 ## Usage
 
 ### When to use Component name
