@@ -40,7 +40,7 @@ anchors:
 * **When you are representing items that are not a benefit or a tool.** Do not use the same visual appearance or structured data to represent items that are not a benefit or a tool.
 * **When you want to show benefits within a form.** Do not use this pattern to show benefits or services in an interactive list with checkboxes or other selection methods.
 * **When you want to display content in an unordered list.** Content that can be shared with bullet points should use an unordered list. Find more information in the [List component]({{ site.baseurl }}/components/list) and the [Bulleted list style guide]({{ site.baseurl }}/content-style-guide/bulleted-lists).
-* **When displaying the results on a global search results page** Content on a search results page should use the [Search Results Template]({{ site.baseurl }}/templates/search-results)
+* **When displaying the results on a global search results page** Content on a search results page should use the [Search Results Template]({{ site.baseurl }}/templates/search-results).
 
 ## Design Principles
 
