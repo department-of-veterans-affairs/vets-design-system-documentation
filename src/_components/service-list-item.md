@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Service List Item
-intro-text: The Service List Item summarizes a benefit or tool. For example, a Service List Item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the “Help users to… Manage Benefits and Tools” pattern.
+intro-text: The Service List Item summarizes a benefit or tool. For example, a Service List Item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the “Help Users to… Manage Benefits and Tools” pattern.
 status: use-with-caution-candidate
 research-title: Service List Item
 figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=52qYQM9JQBOPO71q-1
@@ -40,7 +40,7 @@ anchors:
 * **Benefit**: Aid or assistance provided by VA to Veterans, family members, or caretakers. Examples include health care, education and training, disability compensation, life insurance, and pension.
 * **Tool**: A digital product that Veterans, family members, or caretakers use to manage benefits. Examples include appointments, prescriptions, payments, secure messages,  and claims.
 * **Service**: A term used to describe both benefits and tools.
-* **Service list**: A list of services. The [“Help users to… Manage Benefits and Tools” pattern]({{ site.baseurl }}/patterns/help-users-to/manage-benefits-and-tools) describes how to build a Service list.
+* **Service List**: A list of services. The [“Help Users to… Manage Benefits and Tools” pattern]({{ site.baseurl }}/patterns/help-users-to/manage-benefits-and-tools) describes how to build a Service list.
 * **Service List Item**: An item in a service list. Each item contains a summary of the benefit or tool, with a link to for the user to get more information. This component explains how to use and build a Service List Item.
 
 ### When to use Service List Item
@@ -62,6 +62,7 @@ A Service List Item can have:
 
 * **Header (required)**
   * The header consists of an icon (optional), header text, and chevron. These elements combine to create a link to a page with more details about the benefit or tool. All Service List Items must link to a details page from the header.
+  * The icon should only be used when listing VA benefits. The icons should include the [standard icons](https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=293-6211&t=h01Z6dAbcelp997f-1) for VA benefits, placed within a circle using the [color]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens) associated with each benefit.
   * Headers should be visually consistent in each list item within the list. For example, if some list item headers have icons, all list items in the list should have icons.
   * The header has a default, hover, active, focus, and visited state. See details in the [Header states section](#header-states) below.
 * **Status (required)**

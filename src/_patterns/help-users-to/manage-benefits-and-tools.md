@@ -9,7 +9,7 @@ sub-section: help-users-to
 intro-text: Follow this pattern to help users manage their benefits and tools.
 figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=ndStAutrvUcgt5Um-1
 github-title: manage-benefits-and-tools
-research-title: Help users to manage benefits and tools
+research-title: Help Users to Manage Benefits and Tools
 status: use-with-caution-available
 anchors:
   - anchor: Usage
@@ -45,20 +45,20 @@ anchors:
 ## Design Principles
 
 * **Scannable—limited amount of information per list object**: The job of the list view is to display a summary of the object, not the entire object.
-* **Consistency of content and hierarchy**: The content should be consistent from item to item in the list and show the same types of information in each list item. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
-* **Consistent implementation of supporting functionality**: If used, sort or filter functionality should interact the same despite different needs. For example, one list might sort items by date while another sorts items alphabetically, but the interaction should work the same.
+* **Consistency of content and hierarchy**: Content in each list item should be consistent. Each list item shows the same types of information. For example, in a list of appointments, every appointment should have the same details (time, date, status, appointment type, etc.).
+* **Consistent supporting functionality**: If used, sort or filter functionality should interact the same. For example, one list might sort items by date. Another sorts items alphabetically. The interaction should work the same though.
 
 ## How to design and build
 
 ### How this pattern works
 
-This pattern vertically stacks Service List Items to form a list, called a “Service List.” As noted in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component, the user can access a page with more details about each list item by clicking or tapping on the header. Various other elements of the list item–such as a [Critical Action]({{ site.baseurl }}/components/critical-action) component, and status–all convey additional information to the user. View more information about these elements and their interactivity in the Service List Item component.
+This pattern vertically stacks Service List Items to form a list, called a “Service list.” Users can access a page with more details about each list item by clicking or tapping the header. Other elements in the list item all convey more information to the user. Other elements can include the Critical Action component and status tag. Learn more about these elements and their interactivity in the [Service List Item]({{ site.baseurl }}/components/service-list-item) component.
 
 ### Display order
 
-* List items should be displayed in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and consider running usability studies to confirm the most appropriate display order for your content.
+* Display list items in an order that best suits the content. Common options include ordering alphabetically or by date. Check with subject matter experts and conduct UX research to decide the display order for your content.
 
-* **Note**: When list items include a [Critical Action]({{ site.baseurl }}/components/critical-action) component, these items should be displayed at the top of the list, regardless of the chosen display order. This avoids burying items that need review or action at the bottom of a list or on a subsequent page.
+* Display items that have a Critical Action component at the top of the list, regardless of the chosen display order. This helps surface items that need review or action for users.
 
 ### Components used in this pattern
 
@@ -98,8 +98,8 @@ Below are some  tools that a Veteran, family member, or caretaker may use to man
 
 ## Content considerations
 
-Statuses should be normalized with CAIA so that the same terms are used when the same meanings are intended (for example, "pending" versus "in-progress"). CAIA will define which of those is correct across across benefits and tools.
+Check with the Content Platform team for writing status content. This is especially important for statuses with similar definitions. For example, “pending” and “in-progress” have similar definitions. The Content Platform team will help you decide status content.
 
 ## Research findings
 
-[Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests that users view lists positively and should be able to navigate through them with relative ease. This particular pattern has not yet been tested directly with users.
+[Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests users like lists. Users should be able to navigate through lists easily. This patterns still needs direct user testing.

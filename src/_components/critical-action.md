@@ -70,10 +70,10 @@ On the My VA page, you can stack Critical Action components at the top of the pa
 
 ## Content considerations
 
-* When possible, start Critical Action content with verbs.
-* When relevant, include a date by which the user must take the action.
-* Keep the text concise. Work with the Content IA Centralized team (CIAC) to develop clear, short messages that tell the user the required action and deadline (if applicable).
-* You may display the Critical Action component inside a Card or Service List Item on My VA or other page that show multiple VA benefits. In these cases, the component is shown outside the context of a Card or Service List Item. It's important that the content clearly communicates the action to the user. The examples below show appropriate levels of detail.
+* Use the sentence structure "[Verb] by [date by which user must take the action]". For example, "Verify your life insurance dependents by June 4, 2025" or "Pay your $30 copay by May 1, 2025".
+* Keep the text concise. Work with the Platform Content team to develop clear, short messages that tell the user the required action and deadline (if applicable).
+* Content should be a single sentence without a period. If the Platform Content team advises using two sentences, each sentence should end with a period.
+* You may display the Critical Action component inside a Card or Service List Item on My VA or other page that show multiple VA benefits. In these cases, the component will be shown outside the context of a Card or Service List Item. It’s important that the content clearly communicates the action to the user. The examples below show appropriate levels of detail.
 
 {% include component-example.html
   alt="Two examples of how much detail to add. For example, don’t say simply “Pay” or “Check in.” Rather, say “Pay your debt of $251.42” or “Check in to your Optometry appointment now.”"
