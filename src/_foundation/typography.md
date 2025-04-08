@@ -106,8 +106,6 @@ anchors:
     }
 </style>
 
-
-
 ## Headings
 
 <div class="site-showcase">
@@ -153,6 +151,16 @@ Don’t change heading level in order to use a different font size.
 </div>
 </div>
 </div>
+
+### Eyebrow
+
+<div class="site-showcase">
+  {% include_relative html/eyebrow.html %}
+</div>
+
+{% include snippet.html content='html/eyebrow.html' %}
+
+The eyebrow sits above a heading and provides a label for a sequence of pages in a process. It can be used when implementing the [Help users to complete a sub task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) pattern. This component has been [tested indirectly with success](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/checkin/research/2023-04%20Unified%20Check-In%20Experience%20Usability%20Study/research-findings.md#key-findings).
 
 ## Paragraphs
 
