@@ -47,9 +47,6 @@ The authenticated form page template consists of:
 11. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
 12. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
 
-##### Instances of this template in production
-[Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
-
 #### Example - Unauthenticated
 
 {% include component-example.html alt="An example of a form step page for unauthenticated users." file="/images/templates/forms/minimal-form-step/2-example-unauth.png" caption="Anatomy of the form step template for unauthenticated users." class="x2" %}
@@ -75,6 +72,9 @@ The unauthenticated question page has these items:
 ### When to consider something else
 
 Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<h3>`'s on every form page, the lift will not be as large. 
+
+### Instances of this template in production
+[Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
 
 ## Structure
 
