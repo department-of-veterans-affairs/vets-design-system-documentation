@@ -8,6 +8,7 @@ intro-text: Use the form step - minimal template to create all pages of a minima
 figma-link: https://www.figma.com/design/WzqnYSC2B42aFaSCu7L3Dk/Minimal-Form-Flow-Template?node-id=1-114658&p=f&t=yvI1hQv6TghandYK-11
 anchors:
   - anchor: About
+  - anchor: Usage
   - anchor: Structure
   - anchor: Research findings
   - anchor: Code considerations
@@ -65,6 +66,15 @@ The unauthenticated question page has these items:
 8. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
 9. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
 
+## Usage
+
+### When to use this template
+
+**All new forms should use this template.** The templates in figma and in code provides good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
+
+### When to consider something else
+
+Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<h3>`'s on every form page, the lift will not be as large. 
 
 ## Structure
 
@@ -127,7 +137,6 @@ Asking a question on a page does not mean using only one form field. We may add 
 
 The VA Design system has a number of [components](https://design.va.gov/components/) and [patterns](https://design.va.gov/patterns/) available to teams that help you formulate good questions. These patterns are standardized to help give Veterans a unified experience throughout all of our forms. 
 
-* [Form submitter pattern](https://docs.google.com/document/d/1XTGusTYeEqKbmId_Gu8g7h53LKUPIv0nm8pezHEUSyA/edit?usp=sharing) 
 * [Ask users for… addresses](https://design.va.gov/patterns/ask-users-for/addresses)
 * [Ask users for… dates](https://design.va.gov/patterns/ask-users-for/dates)
 * [Ask users for… email address](https://design.va.gov/patterns/ask-users-for/email-address)
