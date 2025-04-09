@@ -102,17 +102,17 @@ Specifications:
  - A minimum of 8 and maximum of 10 links are displayed across 2 columns
 
 ### 7. Featured news
-This section is used to highlight a key VA news article related to benefits and services available to Veterans and their family members. This section is for a single news article. To make sure we are delivering the clearest and most accessible experience possible for all Veterans and family members, we do not allow multiple or rotating messages.
+This section is used to highlight a single VA news article. To make sure we are delivering the clearest and most accessible experience possible for all Veterans and family members, we do not allow multiple or rotating messages.
 
-This section is owned by OPIA and governed by OCTO. 
+This section is owned by OPIA and governed by OCTO.
+
 Specifications:
- - Section title ("VA NEWS" in the screenshot) is an H2, and cannot be changed
- - The photo is required, uses a 1:1 aspect ratio (square), must be less than 2MB, and must be a png, gif, jpg, or jpeg file type 
- - The photo only displays on large screens 
- - Article title is the primary link, is required, and has a maximum of 55 characters
- - Teaser text is required and is a maximum of 125 characters
- - "Read the full article" link is required
- - "More VA news" link is required
+- Section title (“VA NEWS” in the screenshot) is an H2, and cannot be changed
+- The photo is required and only displays on large screens
+- Article title is the primary link, is required, and has a maximum of 55 characters
+- Teaser text is required and is a maximum of 160 characters
+- “Read the full article” link is required
+- “More VA news” link is required
 
 ### 8. Benefit hubs
 We use this section to give Veterans and family members quick access to each of the main VA benefit categories. This section includes a short description and link for each benefit hub, as well as a link to the department and administration site.
