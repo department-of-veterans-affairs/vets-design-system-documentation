@@ -40,7 +40,7 @@ The language toggle allows users to click links to load the same page which has 
 
 ### How this component works
 
-* **Provides navigation to the same page at a different URL.** The language toggle uses links to navigate the user to the same page, in a different language, and at a different URL. Currently, the language code does not match [ISO language codes](https://www.loc.gov/standards/iso639-2/php/code_list.php) but should conform in future. 
+* **Provides navigation to the same page at a language-specific URL.** The language toggle uses links to navigate the user to the same page, in a different language, and at a language-specific URL. Currently, the language code does not match [ISO language codes](https://www.loc.gov/standards/iso639-2/php/code_list.php) but should conform in future.
   * Example English (default) URL: [https://www.va.gov/health-care/covid-19-vaccine/](https://www.va.gov/health-care/covid-19-vaccine/)
   * Example Spanish URL: [https://www.va.gov/health-care/covid-19-vaccine-esp/](https://www.va.gov/health-care/covid-19-vaccine-esp/)
   * Example Tagalog URL: [https://www.va.gov/health-care/covid-19-vaccine-tag/](https://www.va.gov/health-care/covid-19-vaccine-tag/)
@@ -49,7 +49,7 @@ The language toggle allows users to click links to load the same page which has 
 
 * **Navigates to the same page in a different language.** When selected, the language toggle brings the user to the alternate language version of the page they were on.
 * **Body content, side navigation, breadcrumbs, and any alerts are translated.** Currently (01/2024), the expectation is that the following sections of the page are translated:
-  * Main content of the page 
+  * Main content of the page
   * The parent and sibling pages within the [side navigation menu]({{ site.baseurl }}/components/sidenav)
   * The current page title in the [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs)
   * Any [Alert]({{ site.baseurl }}/components/alert) shown to a user
