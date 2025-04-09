@@ -76,7 +76,7 @@ Specifications:
  - Must link to content within the VA.gov benefit experience
 
 ### 4. Create account 
-We use this section is to encourage Veterans and family members to create an account and give them quick access to that flow. 
+We use this section to encourage Veterans and family members to create an account and give them quick access to that flow. 
 This section is owned and governed by OCTO.
 Specifications:
  - The initial sentence is an H2 and is required
