@@ -26,7 +26,7 @@ This template provides a specific design for the single, unique homepage of **ww
 ### When to consider something else
 
 **For pages that are not the homepage of www.va.gov.**
-No other landing page within www.va.gov or within a subdomain of va.gov should use the homepage template. This ensures the homepage is easily recognizable as the only homepage for the only homepage for the main www.va.gov experience. Re-using this template or similar design on other pages can create confusion around where a visitor is on the site. 
+No other landing page within www.va.gov or within a subdomain of va.gov should use the homepage template. This ensures the homepage is easily recognizable as the sole homepage for the main www.va.gov experience. Re-using this template or similar design on other pages can create confusion around where a visitor is on the site. 
 
 
 ### Usability guidance
