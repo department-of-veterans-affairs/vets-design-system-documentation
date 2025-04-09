@@ -70,8 +70,7 @@ The unauthenticated question page has these items:
 **All new forms should use this template.** The templates in figma and in code provides good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
 
 ### When to consider something else
-
-Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<h3>`'s on every form page, the lift will not be as large. 
+**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
 
 ### Instances of this template in production
 [Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
