@@ -11,9 +11,16 @@ jobs:
   dev-deploy-preview:
     strategy:
       matrix:
-        environment: [{ name: development, bucket: "dev-design.va.gov/${{ github.event.number }}", config: dev.yml }]
+        environment:
+          [
+            {
+              name: development,
+              bucket: "dev-design.va.gov/${{ github.event.number }}",
+              config: dev.yml,
+            },
+          ]
     uses: ./.github/workflows/deploy-reusable.yml
-    with: 
+    with:
       github-sha: ${{ github.sha }}
       github-run-id: ${{ github.run_id }}
       github-event-number: ${{ github.event.number }}

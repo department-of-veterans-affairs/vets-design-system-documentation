@@ -11,6 +11,7 @@ web-component: va-service-list-item
 anchors:
   - anchor: Examples
   - anchor: Content considerations
+  - anchor: Code usage
   - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
@@ -92,6 +93,8 @@ The link should use the standard default, hover, focus, active, and visited link
 Teams used the Card component before this component existed. When evaluating if your team needs to use Service List Items instead of cards, consider if your content is either a “benefit” or “tool,” as defined in the [Usage](#usage) section.
 
 Statuses should be normalized with the platform content team so that the same terms are used when the same meanings are intended (for example, “pending” versus “in-progress”). The platform content team will define which of those is correct across benefits and tools.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Accessibility considerations
 
