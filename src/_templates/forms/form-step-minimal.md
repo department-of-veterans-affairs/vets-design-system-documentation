@@ -67,11 +67,11 @@ The unauthenticated question page has these items:
 
 ### When to use this template
 
-**All new forms should use this template.** The templates in figma and in code provides good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
+**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
 
 ### When to consider something else
 
-Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<h3>`'s on every form page, the lift will not be as large. 
+Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<H3>`'s on every form page, the lift will not be as large. 
 
 ### Instances of this template in production
 [Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
@@ -90,7 +90,7 @@ The form title and subtitle are in the minimal header without any semantic headi
 
 ### 2. Back link
 
-Instead of a breadcrumb, we add a back link below the minimal header in this template. The back link will remain static across all question pages for a single form. The link text should read “Back to previous page”.
+Instead of a breadcrumb, we include a back link below the minimal header in this template. The back link remains consistent across all question pages within a single form. Its text should read “Back to previous page”.
 
 [Learn more about the expected behavior for the back link](https://design.va.gov/components/link/#when-to-use-a-back-link). 
 
