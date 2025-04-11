@@ -62,9 +62,9 @@ This pattern vertically stacks Service List Items to form a list, called a “Se
 
 ### Components used in this pattern
 
-* [Service List Item (NEW)]({{ site.baseurl }}/components/service-list-item)
-* [Critical Action (NEW)]({{ site.baseurl }}/components/critical-action)
-* [Tag component](https://design.va.gov/components/tag])
+* [Service List Item]({{ site.baseurl }}/components/service-list-item)
+* [Critical Action]({{ site.baseurl }}/components/critical-action)
+* [Tag]({{ site.baseurl }}/components/tag)
 
 ## Examples
 
@@ -100,6 +100,10 @@ Below are some  tools that a Veteran, family member, or caretaker may use to man
 
 Check with the Content Platform team for writing status content. This is especially important for statuses with similar definitions. For example, “pending” and “in-progress” have similar definitions. The Content Platform team will help you decide status content.
 
+## Accessibility considerations
+
+Within the pattern, headings and links should be descriptive and unique. This will help screen reader users navigate through a list of stacked Service List Items.
+
 ## Research findings
 
-[Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests users like lists. Users should be able to navigate through lists easily. This patterns still needs direct user testing.
+[Secondary research](https://github.com/department-of-veterans-affairs/va.gov-research-repository/issues/810) suggests users like lists. Users should be able to navigate through lists easily. This pattern still needs direct user testing.

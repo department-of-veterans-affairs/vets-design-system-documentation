@@ -74,7 +74,7 @@ A Service List Item can have:
   * The [Critical Action]({{ site.baseurl }}/components/critical-action) component is still under development. It navigates the user to the most direct path to take action on the critical information. Future updates will include adjustments to color contrast, focus states, and more.
 * **Details (required)**
   * The details provide users with helpful information, formatted in a “Label: Value” structure (for example, “Approved on: May 5, 2011”).
-There can be anywhere from one to five lines of “Label: Value” pairs.
+  * There can be anywhere from one to five lines of “Label: Value” pairs.
 * **Link (optional)**
   * Some Service List Items might require an additional link, in addition to the details page linked to from the header and the actionable link offered in the [Critical Action]({{ site.baseurl }}/components/critical-action) component. In these cases, one additional link may be displayed at the bottom of the Service List Item.
 The link should use the standard default, hover, focus, active, and visited link states.
@@ -98,13 +98,8 @@ Statuses should be normalized with the platform content team so that the same te
 
 ## Accessibility considerations
 
-Review the accessibility concerns section of the following components:
-* [Card]({{ site.baseurl }}/components/card#accessibility-considerations)
-* [List]({{ site.baseurl }}/components/list#accessibility-considerations)
-* [Link]({{ site.baseurl }}/components/link/#accessibility-considerations)
-* [Link - Action]({{ site.baseurl }}/components/link/action#accessibility-considerations)
-* [Tag]({{ site.baseurl }}/components/tag#accessibility-considerations)
-* [Critical Action]({{ site.baseurl }}/components/critical-action)
+- Use appropriate heading levels within the Service List Item. Headings within the component are h3 by default, but teams should adjust the heading level if the structure of the page requires them to be a different level.
+- Format the optional link to express what it will do. For example, if the link is a [download link]({{ site.baseurl }}/components/link/#download), include the standard download icon. If it takes users to an external site, display the standard "(opens in new tab)" text. See additional accessibility guidance in the [Link]({{ site.baseurl }}/components/link) component.
 
 ## Related
 
