@@ -139,7 +139,7 @@ There are two types of multiple page patterns with slightly different user flows
       <div class="vads-u-padding-left--3">
         <va-link-action
           href="{{ page.example-link-multi-page-optional }}"
-          text="View a mock form example of an <em>optional</em> multi-page pattern"
+          text="View a mock form example of an optional multi-page pattern"
           type="secondary"
         ></va-link-action>
       </div>
