@@ -9,6 +9,8 @@ font-matter: yay
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/_mixins.scss';
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/site/_m-crisis-line.scss';
 
+// needs to be imported before core
+@import '_components/accordions';
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/core';
 
 @import '../../../node_modules/@department-of-veterans-affairs/css-library/dist/stylesheets/utilities';
