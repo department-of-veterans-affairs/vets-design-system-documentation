@@ -4,7 +4,7 @@
 ### Optional sign-in (verified)
 {% include storybook-preview.html story="components-va-alert-sign-in--optional-sign-in-verified" link_text="va-alert optional sign in verified" height="420px" %}
 
-### Optional sing-in (verified) No Prefill
+### Optional sign-in (verified) No Prefill
 {% include storybook-preview.html story="components-va-alert-sign-in--optional-sign-in-verified-no-prefill" link_text="va-alert optional sign in verified no prefill" height="420px"  %}
 
 ### Verify with ID.me
