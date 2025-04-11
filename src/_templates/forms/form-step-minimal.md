@@ -8,6 +8,7 @@ intro-text: Use the form step - minimal template to create all pages of a minima
 figma-link: https://www.figma.com/design/WzqnYSC2B42aFaSCu7L3Dk/Minimal-Form-Flow-Template?node-id=1-114658&p=f&t=yvI1hQv6TghandYK-11
 anchors:
   - anchor: About
+  - anchor: Usage
   - anchor: Structure
   - anchor: Research findings
   - anchor: Code considerations
@@ -46,9 +47,6 @@ The authenticated form page template consists of:
 11. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
 12. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
 
-##### Instances of this template in production
-[Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
-
 #### Example - Unauthenticated
 
 {% include component-example.html alt="An example of a form step page for unauthenticated users." file="/images/templates/forms/minimal-form-step/2-example-unauth.png" caption="Anatomy of the form step template for unauthenticated users." class="x2" %}
@@ -65,6 +63,18 @@ The unauthenticated question page has these items:
 8. [Feedback pattern](https://design.va.gov/patterns/ask-users-for/feedback)
 9. [Minimal footer](https://design.va.gov/components/footer/footer-minimal)
 
+## Usage
+
+### When to use this template
+
+**All new forms should use this template.** The templates in Figma and in code provide good starting points for new form development. Your forms will have unique `<H1>`'s and be more accessible for users.
+
+### When to consider something else
+
+Teams who want to migrate existing forms to this new template will gain advantages by having unique `<H1>`'s for every form page. However, it can be quite a considerable time investment because nearly every page in a form flow would need to be edited. If forms have already included `<H3>`'s on every form page, the lift will not be as large. 
+
+### Instances of this template in production
+[Request personal records (VA Form 20-10206)](https://staging.va.gov/records/request-personal-records-form-20-10206/introduction)
 
 ## Structure
 
@@ -80,7 +90,7 @@ The form title and subtitle are in the minimal header without any semantic headi
 
 ### 2. Back link
 
-Instead of a breadcrumb, we add a back link below the minimal header in this template. The back link will remain static across all question pages for a single form. The link text should read “Back to previous page”.
+Instead of a breadcrumb, we include a back link below the minimal header in this template. The back link remains consistent across all question pages within a single form. Its text should read “Back to previous page”.
 
 [Learn more about the expected behavior for the back link](https://design.va.gov/components/link/#when-to-use-a-back-link). 
 
@@ -127,7 +137,6 @@ Asking a question on a page does not mean using only one form field. We may add 
 
 The VA Design system has a number of [components](https://design.va.gov/components/) and [patterns](https://design.va.gov/patterns/) available to teams that help you formulate good questions. These patterns are standardized to help give Veterans a unified experience throughout all of our forms. 
 
-* [Form submitter pattern](https://docs.google.com/document/d/1XTGusTYeEqKbmId_Gu8g7h53LKUPIv0nm8pezHEUSyA/edit?usp=sharing) 
 * [Ask users for… addresses](https://design.va.gov/patterns/ask-users-for/addresses)
 * [Ask users for… dates](https://design.va.gov/patterns/ask-users-for/dates)
 * [Ask users for… email address](https://design.va.gov/patterns/ask-users-for/email-address)

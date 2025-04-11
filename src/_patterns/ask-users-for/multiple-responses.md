@@ -65,7 +65,7 @@ There are two types of multiple page patterns with slightly different user flows
 
 {% assign edit_flow = "Clicking **Edit** puts the user into the “edit flow” and returns the user to the first question page. When entering the edit flow, the `H3` of the pages are updated to include “Edit [previous h3 title]”. The fields should pre-populated with their previously supplied information. (Note: There is no **Cancel** button on this page during the editing process.) After editing items, the user returns to the summary page and an [informational alert](/components/alert/#informational-alert-aka-default) is shown confirming their item has been updated."%}
 
-{% assign delete_flow_required = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user will then redirect to the Introduction page with a [warning alert](/components/alert/#warning-alert) reminding the user at least one item is required."%}
+{% assign delete_flow_required = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user will then redirect to the first question page with a [warning alert](/components/alert/#warning-alert) reminding the user at least one item is required."%}
 
 {% assign delete_flow_optional = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user is redirected to the Introduction page."%}
 
@@ -100,7 +100,7 @@ There are two types of multiple page patterns with slightly different user flows
       <div class="vads-u-padding-left--3">
         <va-link-action
           href="{{ page.example-link-multi-page-required }}"
-          text="View a mock form example of a <em>required</em> multi-page pattern"
+          text="View a mock form example of a required multi-page pattern"
           type="secondary"
         ></va-link-action>
       </div>
@@ -139,7 +139,7 @@ There are two types of multiple page patterns with slightly different user flows
       <div class="vads-u-padding-left--3">
         <va-link-action
           href="{{ page.example-link-multi-page-optional }}"
-          text="View a mock form example of an <em>optional</em> multi-page pattern"
+          text="View a mock form example of an optional multi-page pattern"
           type="secondary"
         ></va-link-action>
       </div>
