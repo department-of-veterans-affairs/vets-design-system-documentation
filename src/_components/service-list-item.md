@@ -71,7 +71,7 @@ A Service List Item can have:
   * Every benefit or tool in a list has a set of internal states, which are used to track the progress of enrolling in that benefit or using that tool. A status is the way to communicate the item's state to the user (such as Active, Pending, etc).
   * Statuses do not have to mirror internal states in a one-to-one manner. (They can, but they are not required to.) Every state change does not necessarily warrant a status change.
 * **Critical Action**
-  * The [Critical Action]({{ site.baseurl }}/components/critical-action) component is still under development. It navigates the user to the most direct path to take action on the critical information. Future updates will include adjustments to color contrast, focus states, and more.
+  * The [Critical Action]({{ site.baseurl }}/components/critical-action) component is still under development. It navigates the user to the most direct path to take action on the critical action. Future updates will include adjustments to color contrast, focus states, and more.
 * **Details (required)**
   * The details provide users with helpful information, formatted in a “Label: Value” structure (for example, “Approved on: May 5, 2011”).
   * There can be anywhere from one to five lines of “Label: Value” pairs.
