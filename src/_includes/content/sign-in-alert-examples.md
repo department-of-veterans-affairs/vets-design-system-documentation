@@ -4,6 +4,9 @@
 ### Optional sign-in (verified)
 {% include storybook-preview.html story="components-va-alert-sign-in--optional-sign-in-verified" link_text="va-alert optional sign in verified" height="420px" %}
 
+### Optional sign-in (verified) No Prefill
+{% include storybook-preview.html story="components-va-alert-sign-in--optional-sign-in-verified-no-prefill" link_text="va-alert optional sign in verified no prefill" height="420px"  %}
+
 ### Verify with ID.me
 See the [ID.me brand assets](https://developers.id.me/brand-assets) for buttons and branding guidelines.
 {% include storybook-preview.html story="components-va-alert-sign-in--verify-with-id-me" link_text="va-alert verify with id me" height="300px" %}

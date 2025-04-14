@@ -75,15 +75,15 @@ This guide is for software engineers generating a PDF for submission to the <a h
 
 ##### Unauthenticated
 
-> Signed electronically and submitted via VA.gov at 11:30 UTC 2023-12-13. Signee not signed in.
+> Signed electronically and submitted via VA.gov at [time in format HH:MM] UTC [date in format YYYY-MM-DD]. Signee not signed in.
 
 ##### Identity Assurance Level 1 (IAL1)
 
-> Signed electronically and submitted via VA.gov at 11:30 UTC 2023-12-13. Signee signed in but hasn’t verified their identity.
+> Signed electronically and submitted via VA.gov at [time in format HH:MM] UTC [date in format YYYY-MM-DD]. Signee signed in but hasn’t verified their identity.
 
 ##### Identity Assurance Level 2 (IAL2)
 
-> Signed electronically and submitted via VA.gov at 11:30 UTC 2023-12-13. Signee signed with an identity-verified account.
+> Signed electronically and submitted via VA.gov at [time in format HH:MM] UTC [date in format YYYY-MM-DD]. Signee signed with an identity-verified account.
 
 #### Date and timestamp VA DATE STAMP box format
 
@@ -91,6 +91,10 @@ This guide is for software engineers generating a PDF for submission to the <a h
 > 11:30 UTC 2023-12-13
 
 [Example PDFs](https://www.figma.com/file/Mcspa23rssXdDqwoWumuEV/Date-Authenticated-PDF-Stamp?type=design&node-id=1-25&mode=design&t=1tySoIe8RW7XGFMu-0) are available.
+
+**NOTE:** The Form Upload tool allows a signed paper form to be uploaded to the VA. Those forms are also date and time stamped, but notably do not mention electronic signature as they signed by the submitter of the form:
+
+> Submitted via VA.gov at [UTC date and time stamp] UTC. Signed in and submitted with an identity-verified account.
 
 ### Components used in this pattern
 
