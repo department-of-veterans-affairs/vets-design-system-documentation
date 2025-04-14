@@ -22,7 +22,7 @@ anchors:
 * To draw attention to new, important content on a page that might otherwise be missed.
 * To filter results with one or more tags.
 * To indicate the number of new or unread items within a container. For example, to indicate the number of unread emails within a person’s inbox.
-* To indicate a status in a card. See [Status via Tag]({{ site.baseurl }}/card#status-via-tag) within a `card` component. 
+* To indicate a status in a card. See [Status via Tag]({{ site.baseurl }}components/card#status-via-tag) within a `card` component. 
 
 ### When to consider something else
 
