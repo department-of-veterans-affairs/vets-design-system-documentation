@@ -12,6 +12,7 @@ web-component: va-component-name
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Behavior
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
@@ -58,7 +59,9 @@ Add Storybook examples as necessary.
 
 Details the design decisions inherent to the component.
 
-### Behavior
+## Behavior
+
+### Web
 
 Describe the key interactions for this component.
 
@@ -67,9 +70,17 @@ Describe the key interactions for this component.
 * **Feedback.** What the user sees, hears, and feels that help them understand the rules.
 * **Loops and modes.** Meta rules that govern the interaction.
 
-### Choosing between variations
+#### Choosing between web variations
 
-Help the designer and developer understand when to choose between any variations of this component. Include mobile variations.
+Help the designer and developer understand when to choose between any variations of this component.
+
+### Mobile
+
+Describe the key interactions for this component.
+
+#### Choosing between mobile variations
+
+Help the designer and developer understand when to choose between any mobile app variations of this component.
 
 ### Placement
 

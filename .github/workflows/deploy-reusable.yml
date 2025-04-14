@@ -38,7 +38,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-          cache: 'yarn'
+          cache: "yarn"
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7.5 # Not needed with a .ruby-version file
@@ -82,3 +82,15 @@ jobs:
           --exclude "*" \
           --include "*.*" \
           --exclude "storybook/*"
+  update-pr-description:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Update PR Description
+        uses: nefrob/pr-description@v1.2.0
+        with:
+          content: "<!-- start placeholder for CI job -->\n[Open Preview Environment](https://${{ inputs.matrix-bucket }})\n<!-- end placeholder -->"
+          regex: "<!-- start placeholder for CI job -->.*?<!-- end placeholder -->"
+          regexFlags: ims
+          token: ${{ secrets.GITHUB_TOKEN }}
