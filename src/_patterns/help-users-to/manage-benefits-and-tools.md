@@ -1,7 +1,7 @@
 ---
 layout: pattern
 title: Manage Benefits and Tools
-draft: true
+draft: false
 permalink: /patterns/help-users-to/manage-benefits-and-tools
 aka: Service List
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)

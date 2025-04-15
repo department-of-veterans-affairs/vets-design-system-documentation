@@ -6,7 +6,7 @@ status: use-with-caution-candidate
 research-title: Critical Action
 figma-link: https://www.figma.com/design/UOx5GSKdZW9GVAjy7078hT/AE-Design-Patterns---Critical-Action?node-id=0-1
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
-draft: true
+draft: false
 web-component: va-critical-action
 anchors:
   - anchor: Examples

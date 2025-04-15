@@ -6,7 +6,7 @@ status: use-with-caution-candidate
 research-title: Service List Item
 figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=52qYQM9JQBOPO71q-1
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
-draft: true
+draft: false
 web-component: va-service-list-item
 anchors:
   - anchor: Examples
