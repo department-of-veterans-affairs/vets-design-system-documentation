@@ -88,9 +88,9 @@ When a user starts a linear flow on the site (i.e. a form flow or task flow), th
 * The breadcrumb only represents the hierarchy up to the first page of the linear flow (i.e. often the introduction page for forms). As the user progresses through the flow, the breadcrumb does not change or progress with them, and instead remains displaying only up to that initial page.
   * Example: for a form with the title ‘Apply for VA health care’, the breadcrumb for the introduction page, all pages within the flow, and confirmation page would be `VA.gov home > Health care > Apply for VA health care`.
 
-#### Current page link
+#### Final crumb link
 
-* When used with the standard [Form Step template]({{ site.baseurl }}/templates/forms/form-step), the breadcrumb for the current page must link to the Introduction page of the form. This ensures users can easily navigate back to the starting point of the form flow.
+* When used with the standard [Form Step template]({{ site.baseurl }}/templates/forms/form-step), the breadcrumb for the final crumb must link to the Introduction page of the form. This ensures users can easily navigate back to the starting point of the form flow.
   * This allows a user to use the breadcrumb to return to the beginning of the form flow. The breadcrumb combined with the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component, provides context for where a user is on the site and within the flow.
   * Other CTAs on the page, such as the [Button group]({{ site.baseurl }}/components/button/button-group) component, can be used to navigate between pages of the flow.
 * When used with the new [Form Step - Minimal template]({{ site.baseurl }}/templates/forms/form-step-minimal), the breadcrumb is a [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link) throughout the form flow.
