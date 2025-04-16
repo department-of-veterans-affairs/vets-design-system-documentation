@@ -6,6 +6,7 @@ github-title: va-language-toggle
 research-title: va-language-toggle
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=10077-912&t=hljp6A4V60A0rDms-1
 status: use-with-caution-available
+web-component: va-language-toggle
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -13,6 +14,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
+  - anchor: Component checklist  
 ---
 
 ## Examples
@@ -87,5 +89,4 @@ The component appears 32px below the "In this section" menu and 24px above the h
 * [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs)
 * [Sidenav]({{ site.baseurl }}/components/sidenav)
 
-<!-- TODO: Once we build this component, add the checklist -->
-<!-- include _component-checklist.html component_name=page.web-component -->
+{% include _component-checklist.html component_name=page.web-component %}
