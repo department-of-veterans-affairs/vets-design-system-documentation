@@ -78,3 +78,12 @@ The action link is an eye-catching link to start a digital service. An action li
   lang="es"
 >En Español</a>
 ```
+
+## Privacy guidance
+
+**Links should not include Personally Identifiable Information (PII) or Protected Health Information (PHI).**
+* This includes the link text as well as the URL referenced in the link. Refer to [URL standards](https://design.va.gov/components/url-standards/) for more information.
+* If the link text must include PII/PHI, click events for that link cannot be tracked in analytics or other logs.
+* Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links).
+
+[Learn more about PII/PHI on the VA Platform website.](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
