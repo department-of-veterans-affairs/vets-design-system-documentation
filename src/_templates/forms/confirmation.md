@@ -24,18 +24,15 @@ Our current confirmation pages vary in format and content. Below are some of the
 
 The form confirmation page consists of:
 
-- [About](#about)
-- [Example](#example)
-  - [Production example](#production-example)
-  - [Instances of this template in production](#instances-of-this-template-in-production)
-- [Structure](#structure)
-  - [Page title](#page-title)
-  - [Success alert](#success-alert)
-  - [Help users to keep a record of submitted information pattern](#help-users-to-keep-a-record-of-submitted-information-pattern)
-  - [Other content elements](#other-content-elements)
-  - [Back to VA.gov link](#back-to-vagov-link)
-  - [Need help](#need-help)
-- [Research findings](#research-findings)
+1. [Page title](#page-title)
+2. [Help users to keep a record of submitted information pattern](#help-users-to-keep-a-record-of-submitted-information-pattern)
+3. [Success Alert](#success-alert)
+4. [Download Link]({{ site.baseurl }}/components/link/#download)
+5. [Accordion]({{ site.baseurl }}/components/accordion) of data submitted
+6. [Primary Button]({{ site.baseurl }}/components/button/) to print confirmation
+7. [Other content elements](#other-content-elements)
+8. [Back to VA.gov link](#back-to-vagov-link)
+9. [Need help](#need-help)
 
 ### Production example
 
