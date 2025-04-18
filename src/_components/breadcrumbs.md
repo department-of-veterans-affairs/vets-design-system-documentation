@@ -73,9 +73,24 @@ For the home page of a site, do not use icons or just `Home`. This ensures that 
 
 Breadcrumbs represent hierarchical relationships between pages and their placement in that hierarchy, giving the user a sense of where they are in the overall site.
 
-### Each breadcrumb segment should use the full page title of the corresponding page
+### Each breadcrumb segment should use the full page title of the corresponding page, unless it contains private information
 
 Do not shorten or truncate titles of a page (the H1) in the breadcrumb to reduce or eliminate wrapping. Consider alternative, shorter page titles if possible. Always follow the content style guide for writing [page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
+
+#### Pages with Personally Identifiable Information (PII) or Personal Health Information (PHI)
+Pages with PII or PHI in H1s must genericize the corresponding breadcrumb segment.  This ensures this information is not tracked back into analytics or other logs via the link text for that breadcrumb segment.  
+
+**Example:** A detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc.   
+
+Do this:  
+> - H1: Prednisone, 25mg
+> - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Medication detail
+> - Title tag:  Medication detail – Medications | Veterans Affairs 
+
+Not this: 
+> - H1 Prednisone, 25mg 
+> - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Prednisone, 25mg 
+> - Title tag: Prednisone, 25mg – Medications | Veterans Affairs 
 
 ### All segments of the breadcrumb should be interactive and link to their corresponding page
 
