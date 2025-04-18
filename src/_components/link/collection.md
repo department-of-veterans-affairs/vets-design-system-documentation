@@ -96,3 +96,7 @@ Collections of links, given their close proximity, will be perceived to share si
 ## Accessibility considerations
 
 * Refer to the [link accessibility considerations]({{ site.baseurl }}/components/link/#accessibility-considerations).
+
+## Privacy guidance
+
+* Refer to the [link privacy guidance]({{ site.baseurl }}/components/link/#privacy-guidance).
