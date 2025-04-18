@@ -34,7 +34,7 @@
       padding: units(5) $units-8 0 $units-8;
     }
 
-    @include media($large-screen) {
+    @include media($desktop-lg) {
       // something funky happens at this breakpoint that shifts
       // the main content well up (likely due to not using usa-grid)
       padding-top: units(7);
@@ -55,7 +55,7 @@
     padding: 0 units(5);
   }
 
-  @include media($large-screen) {
+  @include media($desktop-lg) {
     padding: 0 units(10);
   }
 }

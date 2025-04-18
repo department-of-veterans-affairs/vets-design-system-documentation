@@ -38,22 +38,22 @@ anchors:
 
 ### When to use Card
 
-* **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
-* **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take.
-* **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
+- **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
+- **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take.
+- **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
 
 ### When to consider something else
 
-* **Eligibility information.** When you want to show benefits or tools the user is currently enrolled in or has access to.
-* **Other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably. The Summary box should be used once on the page, and not stacked in a list as the Card component or Service list item component should be.
-* **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
-* **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.
-* **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
-* **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target.
+- **Eligibility information.** When you want to show benefits or tools the user is currently enrolled in or has access to.
+- **Other content highlight.** The [Summary box]({{ site.baseurl }}/components/summary-box) component, which is the only card-like element represented in Drupal, is meant to act as a content highlight for the most important information on the page. It was originally intended to highlight eligibility information. Featured content is not a Card and they should not be used interchangeably. The Summary box should be used once on the page, and not stacked in a list as the Card component or Service list item component should be.
+- **Dynamic content.** Do not use a Card when inserting content into the page in response to a user action. In those cases use a variation of an [Alert]({{ site.baseurl }}/components/alert) component.
+- **Forms - A Card is not a Fieldset.** A fieldset can be used to cluster related form fields into a sub-section of a form. The visual design of a fieldset should not mimic a Card.
+- **Large data - A Card is not a Table row.** A collection of cards does not scale up to large data sets. If users needs to compare large amounts of data consider a [table]({{ self.baseurl }}/components/table).
+- **Navigation - A Card is not a Button or a Link.** While a Card may contain a call-to-action link, and may itself be a link, it is not solely a navigation element. Do not use a Card to act as a large tap target.
 
 ### When to use caution
 
-* **Search results.** Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
+- **Search results.** Cards can be returned as a treatment for search results depending on the density of the data. However, the card may in fact add unnecessary visual noise when displaying a list of results. In those cases, if the data density is low consider removing the card container and having rows of results. If the data density is high consider adding pagination and the ability to search and/or filter the results.
 
 ### How this component works
 
@@ -92,7 +92,6 @@ Use this variation when you have a longer status label.
 
 You can see these options in use in the [variations](#variations) below.
 
-
 ## Variations
 
 ### Choosing between variations
@@ -114,7 +113,6 @@ Use [this variation](#3-with-drop-shadow) for emphasis, for example at the top o
 ### Instances of this component in production
 
 There are many instances of the Card component in production. This is not an exhaustive list but does serve to augment the [examples](#examples) above and highlight well defined instances of a Card.
-
 
 #### Appointment, large with icon
 
@@ -140,17 +138,17 @@ There are many instances of the Card component in production. This is not an exh
 
 ### Calls to action
 
-* **Make cards actionable.** A Card should be actionable. That can be accomplished through the use of the [action link]({{ site.baseurl }}/components/link/action) component.
-* **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
-* **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
-* **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
+- **Make cards actionable.** A Card should be actionable. That can be accomplished through the use of the [action link]({{ site.baseurl }}/components/link/action) component.
+- **Action links for primary CTA.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action.
+- **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
+- **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
 ### Communicating status
 
-* **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
-  * NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.
-* **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.
-* **Color and another.** Never rely on color alone to communicate status.
+- **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
+  - NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.
+- **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.
+- **Color and another.** Never rely on color alone to communicate status.
 
 ### Placement
 
@@ -158,12 +156,12 @@ There are many instances of the Card component in production. This is not an exh
 
 Cards use the following widths:
 
-* [$xsmall-screen up to $medium-screen]({{ site.baseurl }}/foundation/breakpoints#names-and-values):
-  * Card maximum width = 304px
-  * Card minimum width = 280px
-* [$medium-screen through $large-screen]({{ site.baseurl }}/foundation/breakpoints#names-and-values) and above:
-  * Card maximum width = 752px
-  * Card minimum width = 384px
+- [$mobile up to $medium-screen]({{ site.baseurl }}/foundation/breakpoints#names-and-values):
+  - Card maximum width = 304px
+  - Card minimum width = 280px
+- [$medium-screen through $desktop-lg]({{ site.baseurl }}/foundation/breakpoints#names-and-values) and above:
+  - Card maximum width = 752px
+  - Card minimum width = 384px
 
 #### Layout
 
@@ -171,7 +169,7 @@ Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing 
 
 ### Element states
 
-* When a Card behaves as a link it must have hover, focus, and active states. The hover state should be a 2px solid [$color-primary]({{ site.baseurl }}/foundation/color-palette#base) border. An appropriate focus status would add a 2px solid outline.
+- When a Card behaves as a link it must have hover, focus, and active states. The hover state should be a 2px solid [$color-primary]({{ site.baseurl }}/foundation/color-palette#base) border. An appropriate focus status would add a 2px solid outline.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -205,43 +203,46 @@ When you want to show benefits or tools the user is currently enrolled in or has
 
 ## Content considerations
 
-* **Concise headers and text.** Keep card content (especially [header text]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)) short, crisp, and to-the-point: Users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
-* **Translation proof.** Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
-* **Statuses**: Currently, the following status names that are known to be in-use:
-  * [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
-  * Appointments:
-    * Upcoming
-    * Requested
-    * Past
-    * Canceled
-  * [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
-    * Claim received
-    * Initial review
-    * Evidence gathering, review, and decision
-    * Preparation for notification
-    * Complete
+- **Concise headers and text.** Keep card content (especially [header text]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)) short, crisp, and to-the-point: Users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
+- **Translation proof.** Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
+- **Statuses**: Currently, the following status names that are known to be in-use:
+  - [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
+  - Appointments:
+    - Upcoming
+    - Requested
+    - Past
+    - Canceled
+  - [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
+    - Claim received
+    - Initial review
+    - Evidence gathering, review, and decision
+    - Preparation for notification
+    - Complete
 
 ## Accessibility considerations
 
-* **Use the appropriate heading level for your page.** Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.
-* **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
-* **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card.  The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
-* **Announce "Status" to screen readers** When adding status to a card, it's important to have the word "status" announced by screen readers before the actual status and header text of the card. For example:
+- **Use the appropriate heading level for your page.** Set the heading level based on the content of your page to make sure card headings are in the correct, logical outline order. Use CSS to style the header visually if you need a different visual representation.
+- **Use unordered lists and list items.** Use a `ul` for a card group and an `li` for each card. This formatting allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
+- **Keyboard navigation.** The tab key should bring focus to the call(s) to action within the card. The enter key or spacebar should open a [Link]({{ site.baseurl }}/components/link) or [Link - Action]({{ site.baseurl }}/components/link/action).
+- **Announce "Status" to screen readers** When adding status to a card, it's important to have the word "status" announced by screen readers before the actual status and header text of the card. For example:
 
 ```html
-  <h3>
-    <span class="vads-u-visibility--screen-reader">Status</span>
-    <span class="usa-label vads-u-display--inline-block vads-u-font-family--sans vads-u-font-weight--normal vads-u-margin-bottom--1">In progress</span>
-    <span class="vads-u-display--block">Claim for compensation</span>
-  </h3>
+<h3>
+  <span class="vads-u-visibility--screen-reader">Status</span>
+  <span
+    class="usa-label vads-u-display--inline-block vads-u-font-family--sans vads-u-font-weight--normal vads-u-margin-bottom--1"
+    >In progress</span
+  >
+  <span class="vads-u-display--block">Claim for compensation</span>
+</h3>
 ```
 
 ## Related
 
 Sub-components used in this component:
 
-* [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
-* [Link - Action]({{ site.baseurl }}/components/link/action)
-* [Tag]({{ site.baseurl }}/components/tag)
+- [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
+- [Link - Action]({{ site.baseurl }}/components/link/action)
+- [Tag]({{ site.baseurl }}/components/tag)
 
 Also see the [Service list item]({{ site.baseurl }}/components/service-list-item) component

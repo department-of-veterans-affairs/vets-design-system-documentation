@@ -6,7 +6,7 @@ title: Button group
 aka: Button pair
 research-link: Buttons
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=3109%3A381&mode=design&t=HPTk6DwbG1oCM61n-1
-intro-text: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically. 
+intro-text: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically.
 status: use-deployed
 uswds-v3: default
 web-component: va-button-pair
@@ -36,44 +36,45 @@ anchors:
 ## Usage
 
 <va-link-action
-  href="https://designsystem.digital.gov/components/button-group/"
-  text="Refer to the U.S. Web Design System for usage guidance for the Default button group"
-  type="secondary"
-></va-link-action>
+href="https://designsystem.digital.gov/components/button-group/"
+text="Refer to the U.S. Web Design System for usage guidance for the Default button group"
+type="secondary"
+
+> </va-link-action>
 
 ### Additional guidance for VA
 
-* NOTE: We will be changing the name of this component from button-pair to button-group to align with the USWDS.
-* NOTE: We do not yet offer the Segmented button group option.
+- NOTE: We will be changing the name of this component from button-pair to button-group to align with the USWDS.
+- NOTE: We do not yet offer the Segmented button group option.
 
 ### When to consider something else
 
-* **Navigation outside of the flow.** For navigation to pages outside of the form flow, use a [link]({{ site.baseurl }}/components/link).
-* **Call-To-Action.** For a visually prominent call to action (CTA) that links to another page, use an [action link]({{ site.baseurl }}/components/action-link).
+- **Navigation outside of the flow.** For navigation to pages outside of the form flow, use a [link]({{ site.baseurl }}/components/link).
+- **Call-To-Action.** For a visually prominent call to action (CTA) that links to another page, use an [action link]({{ site.baseurl }}/components/action-link).
 
 ### Behavior
 
-* **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
-* **Arrows are reserved.** Arrow icons should only appear for the [Back/Continue](#backcontinue) button group.
+- **Avoid using too many buttons on a page.** Pages with many buttons may signal that the page content needs to be split up.
+- **Arrows are reserved.** Arrow icons should only appear for the [Back/Continue](#backcontinue) button group.
 
 ### Mobile behavior
 
-* Primary and secondary buttons should appear full-width up until the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the primary button being on top of the secondary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-unit-tokens) of separation between them.
-* At and after the [small-screen breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the primary button continuing to appear before the secondary button.
+- Primary and secondary buttons should appear full-width up until the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) with the primary button being on top of the secondary button with [2 spacing unit]({{ site.baseurl }}/foundation/spacing-units#spacing-unit-tokens) of separation between them.
+- At and after the [mobile-lg breakpoint]({{ site.baseurl }}/foundation/breakpoints#names-and-values) the buttons left align and revert to a natural width (i.e. as wide as they need to be to accommodate their label) with the primary button continuing to appear before the secondary button.
 
 ### Choosing between variations
 
-* Use the [default](#default-yesno) button group variation to provide primary and secondary response options to a question.
-* Use the [Update/Cancel](#updatecancel) button group variation for saving form input on a form.
-* Use the [Back/Continue](#backcontinue) button group variation for providing navigation options through a step by step flow of form pages.
+- Use the [default](#default-yesno) button group variation to provide primary and secondary response options to a question.
+- Use the [Update/Cancel](#updatecancel) button group variation for saving form input on a form.
+- Use the [Back/Continue](#backcontinue) button group variation for providing navigation options through a step by step flow of form pages.
 
 ### Placement
 
-* A button group appears at the bottom of a form.
+- A button group appears at the bottom of a form.
 
 ### Design principles
 
-* [Fitts's Law](https://lawsofux.com/fittss-law/) is important to keep in mind when determining button sizing and placement. Touch targets should be placed where they can be easily and quickly acquired. For example, this is why we do not split the buttons far apart, aligning them to different sides of the viewport. Fitts's Law states:
+- [Fitts's Law](https://lawsofux.com/fittss-law/) is important to keep in mind when determining button sizing and placement. Touch targets should be placed where they can be easily and quickly acquired. For example, this is why we do not split the buttons far apart, aligning them to different sides of the viewport. Fitts's Law states:
 
 > The time to acquire a target is a function of the distance to and size of the target
 
@@ -87,7 +88,7 @@ anchors:
 
 ## Accessibility considerations
 
-* Include more contextual information in the button label for screen readers. You can use an aria label, using the ariaLabel or ariaDescribedby properties, to specify form numbers or program names in the buttons for greater context. 
-* Refer to our guidance for the [Button component]({{ site.baseurl }}/components/button/#accessibility-considerations)
+- Include more contextual information in the button label for screen readers. You can use an aria label, using the ariaLabel or ariaDescribedby properties, to specify form numbers or program names in the buttons for greater context.
+- Refer to our guidance for the [Button component]({{ site.baseurl }}/components/button/#accessibility-considerations)
 
 {% include _component-checklist.html component_name="va-button-group" %}

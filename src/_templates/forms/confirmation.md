@@ -6,10 +6,12 @@ title: Confirmation
 status: use-deployed
 intro-text: "The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim."
 figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=2988-66786&t=1fh2gr46l2FEHw8n-1
+research-title: "Help users to stay informed of app status"
 anchors:
   - anchor: About
   - anchor: Example
   - anchor: Structure
+  - anchor: Research
 ---
 
 ## About
@@ -85,10 +87,21 @@ Example message:
 
 ### Back to VA.gov link
 
-![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/action-link.png)
+![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/secondary-action-link.png)
 
- Include a link that allows users to navigate back to VA.gov. The [Link - Action]({{ site.baseurl }}/components/link/action) guides the user back to the VA.gov homepage.
+ Include a [Link - Action (secondary)]({{ site.baseurl }}/components/link/action) that allows users to navigate back to the VA.gov homepage. 
 
 ### Need help
 
 The [Need help]({{site.baseurl}}/components/form/need-help) component is a footer that appears on the bottom of every page of the form. This content lets users know how to get additional help with the form or the benefits. The content is customized depending on the form and usually points the user to a number they can call if they need help with their form.
+
+## Research findings
+
+In [2024, VFF/MY VA Form Status Research](https://github.com/department-of-veterans-affairs/VA.gov-team-forms/blob/main/Product/2024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research/Research/Research%20Findings%20for%202024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research%20Study.md) found that a majority of Veterans indicated they would download a copy of their form submission.
+
+The following items have received the most clicks on the confirmation page
+- 30.55% of clicks - Print this page for your records (which also prints a copy of their submitted data in an open accordion)
+- 27.35% of clicks - Download a copy of your VA Form XX-XXXX
+- 27.03% of clicks - Check the status of your from on My VA
+
+The data continues to support our research findings that "The majority of participants expressed a desire to download a copy of their form submission (10 of 12), and 5 of 12 participants also indicated they would want to print a copy of their form submission."
