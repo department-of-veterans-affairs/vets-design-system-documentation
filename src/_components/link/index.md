@@ -16,6 +16,7 @@ anchors:
   - anchor: Behavior
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
   - anchor: Related
 ---
 
