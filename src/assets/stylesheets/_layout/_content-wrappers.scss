@@ -295,7 +295,7 @@
   .main-content__sidebar {
     display: none;
 
-    @include media($large-screen) {
+    @include media($desktop-lg) {
       display: inline;
       flex-basis: 256px;
       order: 2;

@@ -71,7 +71,7 @@ You may place the `@media` mixin inside of a selector or places selectors inside
     margin: units(2);
   }
 
-  @include media($large-screen) {
+  @include media($desktop-lg) {
     margin: units(3);
   }
 }
