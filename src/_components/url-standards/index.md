@@ -63,7 +63,11 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 ### URLs must be clear, specific, and concise.
 - Do not use overly broad terms that may be misinterpreted, or shorten URLs so much that meaning and context are lost.  Be specific in describing the focus of the page.
 - Do not repeat keywords across multiple segments of a URL unless it is necessary to clarify meaning of the content. 
-- Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.  
+- Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.
+
+### URLs cannot include Personally Identifiable Information (PII) and Protected Health Information (PHI).
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual's identity. 
+- [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
 
 ## Changing URLs or retiring content
 - Always implement a [redirect](/components/url-standards/redirects) when pages are taken down or the URL changes.
@@ -145,6 +149,8 @@ When using anchored links or "jump links", in addition to all the URL standards 
 - Ideally the tag ID should be plain language keywords that help provide meaning to the content, e.g. using a primary keyword from the associated heading. This works best for anchor tags on relatively static headings such as the Hub page. 
   - Example:  This link provides a user with quick access to tasks for managing their health care benefits - `www.va.gov/health-care/#manage-your-health-and-benefits`
 - If the heading is lengthy, or could potentially change over time, using an ID (i.e. the content ID from drupal) is a another option. This works well for creating anchor links to accordions that hold frequently asked questions.
+- Anchor tags cannot include Personally Identifiable Information (PII) and Protected Health Information (PHI).
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual's identity. [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
 
 ## Guidelines for parameters in URLs 
 
@@ -165,3 +171,4 @@ When adding parameters to your URL, in addition to all the URL standards above, 
 - For multi-select type values, combine the values into a single parameter rather than exposing the key multiple times in a URL multiple times (i.e. `color=blue,red,white` vs `color=blue&color=red&color=white`).
 - Avoid linking to URLs with parameters. Link to the static or canonical URL when possible.
 - If multiple parameters are used in a query string, set a priority and list them in a consistent order.
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual's identity. [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
