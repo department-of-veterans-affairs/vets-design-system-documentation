@@ -10,7 +10,7 @@
     padding-right: units(5);
   }
 
-  @include media($large-screen) {
+  @include media($desktop-lg) {
     padding-right: units(10);
   }
 }
@@ -78,7 +78,7 @@
 
   .usa-button {
     display: none;
-    @include media($large-screen) {
+    @include media($desktop-lg) {
       display: block;
     }
   }

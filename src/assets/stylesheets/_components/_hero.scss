@@ -23,7 +23,7 @@
     right: 3vw;
   }
 
-  @include media($large-screen) {
+  @include media($desktop-lg) {
     opacity: .9;
     right: 10vw;
   }
