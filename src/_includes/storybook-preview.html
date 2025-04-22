@@ -39,6 +39,7 @@
       const { type, height } = event.data || {};
       if (type === 'storybook-resize' && height) {
         iframe.style.height = `${height}px`;
+        iframe.style.visibility = 'visible'; // Ensure iframe becomes visible after resizing
       }
     });
   });

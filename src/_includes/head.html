@@ -58,14 +58,14 @@
     window.addEventListener('load', function () {
       const resizeObserver = new ResizeObserver(entries => {
         for (let entry of entries) {
-          if (entry.target === document.body) {
-            const height = document.body.scrollHeight;
+          if (entry.target === document.documentElement) { // Observe the root element for accurate height
+            const height = document.documentElement.scrollHeight;
             window.parent.postMessage({ type: 'storybook-resize', height }, '*');
           }
         }
       });
 
-      resizeObserver.observe(document.body);
+      resizeObserver.observe(document.documentElement); // Observe the root element
     });
   </script>
 
