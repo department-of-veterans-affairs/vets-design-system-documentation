@@ -23,7 +23,6 @@
     id="{{ include.story }}"
     src="{{ storybook_iframe_path }}"
     title="Storybook: {{ include.story }}"
-    allowfullscreen
   ></iframe>
 </div>
 
@@ -40,28 +39,27 @@
     const iframe = document.getElementById('{{ include.story }}');
 
     function isValidOrigin(eventOrigin, iframeSrc) {
-      try {
-        return new URL(eventOrigin).origin === new URL(iframeSrc).origin;
-      } catch (e) {
-        return false;
-      }
+      return eventOrigin === new URL(iframeSrc).origin;
     }
+
+    let messageReceived = false;
 
     window.addEventListener('message', function (event) {
       if (!isValidOrigin(event.origin, iframe.src)) return;
 
       const { type, height } = event.data || {};
       if (type === 'storybook-resize' && height) {
+        messageReceived = true;
         iframe.style.height = `${height}px`;
-        iframe.style.opacity = '1';
+        iframe.style.opacity = '1'; // Make iframe visible after height adjustment
       }
     });
 
-    // Optional fallback if no message received in 2 seconds
+    // Fallback if no message is received within 2 seconds
     setTimeout(() => {
-      if (iframe.style.opacity === '0') {
-        iframe.style.opacity = '1';
-        iframe.style.minHeight = '600px';
+      if (!messageReceived) {
+        iframe.style.opacity = '1'; // Ensure iframe is visible
+        iframe.style.height = iframe.style.height || '600px'; // Use fallback height only if not set
       }
     }, 2000);
   });
