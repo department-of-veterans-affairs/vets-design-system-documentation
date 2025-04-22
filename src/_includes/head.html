@@ -59,7 +59,7 @@
       const resizeObserver = new ResizeObserver(entries => {
         for (let entry of entries) {
           if (entry.target === document.documentElement) { // Observe the root element for accurate height
-            const height = document.documentElement.scrollHeight;
+            const height = Math.min(document.documentElement.scrollHeight, window.innerHeight); // Cap height to viewport height
             window.parent.postMessage({ type: 'storybook-resize', height }, '*');
           }
         }

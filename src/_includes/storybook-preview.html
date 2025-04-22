@@ -1,16 +1,18 @@
 {% assign storybook_path = site.storybook_path %}
-{% if include.is_mobile %}{% assign storybook_path = site.storybook_mobile_path %}{% endif %}
-{% assign storybook_iframe_path = storybook_path | append: '/iframe.html?id=' | append: include.story | append: '&amp;viewMode=story' %}
+{% if include.is_mobile %}
+  {% assign storybook_path = site.storybook_mobile_path %}
+{% endif %}
+{% assign storybook_iframe_path = storybook_path | append: '/iframe.html?id=' | append: include.story | append: '&viewMode=story' %}
 
 <style>
-   @keyframes appear { to { visibility: visible; } }
-
-    iframe {
-        visibility: hidden;
-        animation: appear 0s linear forwards;
-        border: none;
-        width: 100%;
-    }
+  iframe {
+    border: none;
+    width: 100%;
+    min-height: 300px; /* fallback height */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: block;
+  }
 </style>
 
 <div
@@ -20,27 +22,47 @@
   <iframe
     id="{{ include.story }}"
     src="{{ storybook_iframe_path }}"
+    title="Storybook: {{ include.story }}"
+    allowfullscreen
   ></iframe>
 </div>
 
 {% assign story_name_prefix = '' %}
-{% if include.is_mobile %}{% assign story_name_prefix = 'va-mobile_' %}{% endif %}
+{% if include.is_mobile %}
+  {% assign story_name_prefix = 'va-mobile_' %}
+{% endif %}
 {% assign storybook_preview_path = site.storybook_path | append: '/?path=/story/' | append: story_name_prefix | append: include.story %}
 
-[{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_preview_path }})
+[<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text | default: 'this' }} in Storybook]({{ storybook_preview_path }})
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const iframe = document.getElementById('{{ include.story }}');
 
+    function isValidOrigin(eventOrigin, iframeSrc) {
+      try {
+        return new URL(eventOrigin).origin === new URL(iframeSrc).origin;
+      } catch (e) {
+        return false;
+      }
+    }
+
     window.addEventListener('message', function (event) {
-      if (event.origin !== new URL(iframe.src).origin) return;
+      if (!isValidOrigin(event.origin, iframe.src)) return;
 
       const { type, height } = event.data || {};
       if (type === 'storybook-resize' && height) {
         iframe.style.height = `${height}px`;
-        iframe.style.visibility = 'visible'; // Ensure iframe becomes visible after resizing
+        iframe.style.opacity = '1';
       }
     });
+
+    // Optional fallback if no message received in 2 seconds
+    setTimeout(() => {
+      if (iframe.style.opacity === '0') {
+        iframe.style.opacity = '1';
+        iframe.style.minHeight = '600px';
+      }
+    }, 2000);
   });
 </script>
