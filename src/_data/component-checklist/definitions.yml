@@ -21,7 +21,7 @@ code-assets:
     desc: Describes i18n attributes.
 visual-assets:
   - name: Variations
-    desc: Sketch library includes all variations (style, size, orientation, optional iconography, selection, error state, etc.)
+    desc: Figma library includes all variations (style, size, orientation, optional iconography, selection, error state, etc.)
   - name: Responsive
     desc: Component designed to work in all responsive breakpoints.
   - name: Interactive states
