@@ -4,9 +4,9 @@ permalink: /components/modal/
 title: Modal
 intro-text: "A modal disables page content and focuses the user’s attention on a single task or message."
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=861%3A1708&mode=design&t=jMcVWkPlFhZu3RTh-1
-status: use-deployed
+status: use-best-practice
 sub-pages:
-  - sub-page: Crisis Line modal
+  - sub-page: Crisis Line Modal
 uswds-v3: default
 web-component: va-modal
 anchors:
@@ -70,7 +70,11 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/modal/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/modal/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
@@ -83,4 +87,8 @@ anchors:
 
 ## Accessibility considerations
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/modal/#accessibility-select">Refer to the U.S. Web Design System for accessibility guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/modal/#accessibility-select"
+  text="Refer to the U.S. Web Design System for accessibility guidance"
+  type="secondary"
+></va-link-action>

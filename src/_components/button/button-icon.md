@@ -9,7 +9,7 @@ aka: Button - Tertiary
 research-link: Buttons
 figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=6554%3A11058&mode=design&t=4Zo01aEkp6l4faTn-1
 intro-text: The button icon variation acts as a tertiary button which has equal visual prominence to Link - Action and thus can be used in contexts that require a mix of links and buttons. 
-status: use-with-caution-candidate
+status: use-with-caution-available
 uswds-v3: default
 web-component: va-button-icon
 anchors:
@@ -55,6 +55,10 @@ The 3 examples above are the only currently approved instances of this component
 ## Content considerations
 
 * **Delete is preferred to remove.** We prefer words that describe exactly what will happen when you tap or click. Note: Currently, icon and button labels are hard-coded into the component. New icons and labels must be requested following the instructions above.
+
+### Button labels
+
+{% include content/button-labels.md %}
 
 ## Accessibility considerations
 

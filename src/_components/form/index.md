@@ -8,6 +8,7 @@ status: use-deployed
 sub-pages:
   - sub-page: Autosave
   - sub-page: Checkbox
+  - sub-page: Combo box
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input
@@ -43,7 +44,11 @@ anchors:
   </p>
 </va-summary-box>
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/form/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/form/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ## Accessibility considerations for all form elements
 

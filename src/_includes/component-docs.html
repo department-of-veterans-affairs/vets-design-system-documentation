@@ -1,55 +1,60 @@
 {% for component in site.data.component-docs.components %} 
   {% if component.tag == include.component_name %}
     {% if component.props != empty or component.events != empty %}
-<h2 id="code-usage">Code usage</h2>
-      {% if component.props != empty %}
-<h3>Attributes and Properties</h3>
-<table>
-  <tr>
-    <th><strong>Property</strong></th>
-    <th><strong>Attribute</strong></th>
-    <th><strong>Type</strong></th>
-    <th><strong>Default</strong></th>
-    <th><strong>Description</strong></th>
-  </tr>
-  <div>
-        {% for prop in component.props %}
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.name }}</code></th>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.attr }}</code></th>
-      <th>{% if prop.type %}<code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.type }}</code>{% endif %}</th>
-      <th>{% if prop.default %}<code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ prop.default }}</code>{% endif %}</th>
-      <th>{{ prop.docs }}</th>
-    </tr>
-        {% endfor %}
-  </div>
-</table>
-      {% endif %}
 
-      {% if component.events != empty %}
-<h3>Events</h3>
-<table>
-  <tr>
-    <th><strong>Name</strong></th>
-    <th><strong>Description</strong></th>
-  </tr>
-  <div>
-        {% for event in component.events %}
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ event.event }}</code></th>
-      <th>{{ event.docs }}</th>
-    </tr>
-        {% endfor %} 
-        {% for listener in component.listeners %} 
-          {% assign docs = component.docsTags | where: "name", listener.event %}
-    <tr>
-      <th><code class="code vads-u-border--1px vads-u-border-color--gray-light">{{ listener.event }}</code></th>
-      <th>{% for doc in docs %} {{ doc.text }} {% endfor %}</th>
-    </tr>
-        {% endfor %}
-  </div>
-</table>
+<h2 id="code-usage">Code usage</h2>
+
+  {% if component.props != empty %}
+  <div style="max-width: 100%;">
+  <h3>Attributes and Properties</h3>
+
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Property</span>
+    <span>Attribute</span>
+    <span>Type</span>
+    <span>Default</span>
+    <span>Description</span>
+  </va-table-row>
+  {% for prop in component.props %}
+  <va-table-row>
+    <span><code class="code">{{ prop.name }}</code></span>
+    <span><code class="code">{{ prop.attr }}</code></span>
+    <span>{% if prop.type %}<code class="code">{{ prop.type }}</code>{% endif %}</span>
+    <span>{% if prop.default %}<code class="code">{{ prop.default }}</code>{% endif %}</span>
+    <span>{{ prop.docs }}</span>
+  </va-table-row>
+  {% endfor %}
+</va-table>
+</div>
+{% endif %}
+
+{% if component.events != empty %}
+<div style="max-width: 100%;">
+  <h3>Events</h3>
+
+  <va-table table-type="bordered">
+    <va-table-row>
+      <span>Name</span>
+      <span>Description</span>
+    </va-table-row>
+    {% for event in component.events %}
+    <va-table-row>
+      <span><code class="code">{{ event.event }}</code></span>
+      <span>{{ event.docs }}</span>
+    </va-table-row>
+    {% endfor %}
+    {% for listener in component.listeners %}
+      {% assign docs = component.docsTags | where: "name", listener.event %}
+    <va-table-row>
+      <span><code class="code">{{ listener.event }}</code></span>
+      <span>{% for doc in docs %} {{ doc.text }} {% endfor %}</span>
+    </va-table-row>
+    {% endfor %}
+  </va-table>
+
+</div>
       {% endif %}
-    {% endif %} 
-  {% endif %} 
+    {% endif %}
+  {% endif %}
 {% endfor %}

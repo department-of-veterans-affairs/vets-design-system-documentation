@@ -24,7 +24,11 @@
                 {%- if p.sub-pages -%}
                   <ul class="usa-accordion">
                     <li>
-                      <button class="usa-accordion-button" aria-expanded="{%- if open-accordion == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">{{p.title}}</button>
+                      <button class="usa-accordion-button" aria-expanded="{%- if open-accordion == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">
+                        {{p.title}}
+                        <va-icon icon="add" size="3"></va-icon>
+                        <va-icon icon="remove" size="3"></va-icon>
+                      </button>
                       <div id="{{ slug }}" class="usa-accordion-content" aria-hidden="{%- if open-accordion == true -%}false{%- else -%}true{%- endif -%}">
                         <ul class="usa-sidenav-list">
                           <li {% if is-current == true %}class="active-level"{%- endif -%}>

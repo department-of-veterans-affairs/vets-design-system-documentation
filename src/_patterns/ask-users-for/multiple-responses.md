@@ -65,18 +65,18 @@ There are two types of multiple page patterns with slightly different user flows
 
 {% assign edit_flow = "Clicking **Edit** puts the user into the “edit flow” and returns the user to the first question page. When entering the edit flow, the `H3` of the pages are updated to include “Edit [previous h3 title]”. The fields should pre-populated with their previously supplied information. (Note: There is no **Cancel** button on this page during the editing process.) After editing items, the user returns to the summary page and an [informational alert](/components/alert/#informational-alert-aka-default) is shown confirming their item has been updated."%}
 
-{% assign delete_flow_required = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user will then redirect to the Introduction page with a [warning alert](/components/alert/#warning-alert) reminding the user at least one item is required."%}
+{% assign delete_flow_required = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user will then redirect to the first question page with a [warning alert](/components/alert/#warning-alert) reminding the user at least one item is required."%}
 
 {% assign delete_flow_optional = "A user may choose to delete any of the summary cards. When clicking **Delete**, a modal appears asking them to confirm their choice. If they confirm, that card is removed from the page. If all cards are removed from the summary page, the user is redirected to the Introduction page."%}
 
 ### Required multi-page pattern user flow
 
-<div class="vads-l-grid-container--full">
-  <div class="vads-l-row">
-    <div class="large-screen:vads-l-col vads-u-padding-top--4">
-      <img src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
+<div class="vads-grid-container">
+  <div class="vads-grid-row">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6 vads-u-padding-top--4">
+      <img width="100%" src="/images/patterns/ask-users-for/multiple-responses/required-multipage-flow.png" alt="The user flow for the required multi-page multiple responses pattern."/>
     </div>
-    <div class="large-screen:vads-l-col">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6">
       <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_required | markdownify }}
@@ -98,9 +98,11 @@ There are two types of multiple page patterns with slightly different user flows
         </va-process-list-item>
       </va-process-list>
       <div class="vads-u-padding-left--3">
-        <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-required }}">
-          View a mock form example of a <em>required</em> multi-page pattern
-        </a>  
+        <va-link-action
+          href="{{ page.example-link-multi-page-required }}"
+          text="View a mock form example of a required multi-page pattern"
+          type="secondary"
+        ></va-link-action>
       </div>
     </div>
   </div>
@@ -108,12 +110,12 @@ There are two types of multiple page patterns with slightly different user flows
 
 ### Optional multi-page pattern user flow
 
-<div class="vads-l-grid-container--full">
-  <div class="vads-l-row">
-    <div class="large-screen:vads-l-col vads-u-padding-top--4">
-      <img src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
+<div class="vads-grid-container">
+  <div class="vads-grid-row">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6 vads-u-padding-top--4">
+      <img width="100%" src="/images/patterns/ask-users-for/multiple-responses/optional-multipage-flow.png" alt="The user flow for the optional multi-page multiple responses pattern."/>
     </div>
-    <div class="large-screen:vads-l-col">
+    <div class="vads-grid-col-12 desktop:vads-grid-col-6">
       <va-process-list class="vads-u-padding-bottom--0">
         <va-process-list-item header="Introduction">
           {{ intro_optional | markdownify }}
@@ -135,10 +137,12 @@ There are two types of multiple page patterns with slightly different user flows
         </va-process-list-item>
       </va-process-list>
       <div class="vads-u-padding-left--3">
-        <a class="vads-c-action-link--blue" href="{{ page.example-link-multi-page-optional }}">
-          View a mock form example of an <em>optional</em> multi-page pattern
-        </a>
-     </div>
+        <va-link-action
+          href="{{ page.example-link-multi-page-optional }}"
+          text="View a mock form example of an optional multi-page pattern"
+          type="secondary"
+        ></va-link-action>
+      </div>
     </div>
   </div>
 </div>

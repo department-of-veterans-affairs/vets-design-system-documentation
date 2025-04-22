@@ -12,7 +12,7 @@ anchors:
 
 ## Example
 
-![email template]({{site.baseurl}}/images/templates/email/email-template.png)
+<img width="100%" src="{{site.baseurl}}/images/templates/email/email-template.png" alt="email template">
 
 ## Guidance
 

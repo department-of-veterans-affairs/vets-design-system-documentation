@@ -5,7 +5,7 @@ intro-text: A list organizes information into discrete sequential sections.
 github-title: va-list
 research-title: va-list
 figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=199%3A1182&mode=design&t=VfndjwGexPuw9yeV-1
-status: use-best-practice
+status: use-deployed
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -33,14 +33,18 @@ anchors:
 
 ## Usage
 
-<a class="vads-c-action-link--blue" href="https://designsystem.digital.gov/components/list/">Refer to the U.S. Web Design System for usage guidance</a>
+<va-link-action
+  href="https://designsystem.digital.gov/components/list/"
+  text="Refer to the U.S. Web Design System for usage guidance"
+  type="secondary"
+></va-link-action>
 
 ### Additional guidance for VA
 
 ### Choosing between variations
 
 * **Use unordered lists when the order of the items is not relevant.** List items in unordered lists can be in any order and are indicated with a black square.
-* **Use ordered lists for sequential information.** Ordered lists are automatically enumerated by the browser. 
+* **Use ordered lists for sequential information.** Ordered lists are automatically enumerated by the browser.
 * **Use description lists for groups of related terms and descriptions.** List items parts in definition lists will be connected programmatically.
 
 ### Instances of this component in production
@@ -61,7 +65,11 @@ anchors:
 
 {% include content/unordered-list.md %}
 
-<a class="vads-c-action-link--blue" href="{{ site.baseurl }}/content-style-guide/bulleted-lists">Refer to the Content style guide for additional guidance for unordered lists</a>
+<va-link-action
+  href="{{ site.baseurl }}/content-style-guide/bulleted-lists"
+  text="Refer to the Content style guide for additional guidance for unordered lists"
+  type="secondary"
+></va-link-action>
 
 ## Accessibility considerations
 
@@ -70,5 +78,7 @@ anchors:
 ## Related
 
 * [Card]({{ site.baseurl }}/components/card)
+
+* [Service list item]({{ site.baseurl }}/components/service-list-item)
 
 {% include _component-checklist.html component_name=page.github-title %}

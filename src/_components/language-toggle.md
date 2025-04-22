@@ -6,6 +6,7 @@ github-title: va-language-toggle
 research-title: va-language-toggle
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=10077-912&t=hljp6A4V60A0rDms-1
 status: use-with-caution-available
+web-component: va-language-toggle
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -13,6 +14,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
+  - anchor: Component checklist  
 ---
 
 ## Examples
@@ -22,6 +24,10 @@ anchors:
 The language toggle allows users to click links to load the same page which has been translated to one of three languages.
 
 {% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
+
+### Two Languages
+
+{% include storybook-preview.html story="components-va-language-toggle--two-languages" link_text="Language toggle" %}
 
 ## Usage
 
@@ -36,7 +42,7 @@ The language toggle allows users to click links to load the same page which has 
 
 ### How this component works
 
-* **Provides navigation to the same page at a different URL.** The language toggle uses links to navigate the user to the same page, in a different language, and at a different URL. Currently, the language code does not match [ISO language codes](https://www.loc.gov/standards/iso639-2/php/code_list.php) but should conform in future. 
+* **Provides navigation to the same page at a language-specific URL.** The language toggle uses links to navigate the user to the same page, in a different language, and at a language-specific URL. Currently, the language code does not match [ISO language codes](https://www.loc.gov/standards/iso639-2/php/code_list.php) but should conform in future.
   * Example English (default) URL: [https://www.va.gov/health-care/covid-19-vaccine/](https://www.va.gov/health-care/covid-19-vaccine/)
   * Example Spanish URL: [https://www.va.gov/health-care/covid-19-vaccine-esp/](https://www.va.gov/health-care/covid-19-vaccine-esp/)
   * Example Tagalog URL: [https://www.va.gov/health-care/covid-19-vaccine-tag/](https://www.va.gov/health-care/covid-19-vaccine-tag/)
@@ -45,7 +51,7 @@ The language toggle allows users to click links to load the same page which has 
 
 * **Navigates to the same page in a different language.** When selected, the language toggle brings the user to the alternate language version of the page they were on.
 * **Body content, side navigation, breadcrumbs, and any alerts are translated.** Currently (01/2024), the expectation is that the following sections of the page are translated:
-  * Main content of the page 
+  * Main content of the page
   * The parent and sibling pages within the [side navigation menu]({{ site.baseurl }}/components/sidenav)
   * The current page title in the [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs)
   * Any [Alert]({{ site.baseurl }}/components/alert) shown to a user
@@ -71,7 +77,7 @@ The component appears 32px below the "In this section" menu and 24px above the h
 
 ## Content considerations
 
-* **Link is in native language.** Links in this component should be in the native language. For example, "Español". Note: Sometimes the word is the same in both English and the target language, for example "Tagalog".
+* **Link is in native language.** Links in this component should be in the native language. For example, "Español". **Note**: Sometimes the word is the same in both English and the target language, for example "Tagalog".
 
 ## Accessibility considerations
 
@@ -83,5 +89,4 @@ The component appears 32px below the "In this section" menu and 24px above the h
 * [Breadcrumbs]({{ site.baseurl }}/components/breadcrumbs)
 * [Sidenav]({{ site.baseurl }}/components/sidenav)
 
-<!-- TODO: Once we build this component, add the checklist -->
-<!-- include _component-checklist.html component_name=page.web-component -->
+{% include _component-checklist.html component_name=page.web-component %}

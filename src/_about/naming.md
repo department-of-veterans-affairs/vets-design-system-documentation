@@ -28,7 +28,7 @@ When put together, the structure is `[global namespace]-[class prefix]-[BEM synt
 
 There are other variants on the naming convention as well.
 
-* Breakpoint prefix (ex. `small-screen:vads-c-component-name`)
+* Breakpoint prefix (ex. `mobile-lg:vads-c-component-name`)
 * JavaScript hook (ex. `js:vads-c-component-name`)
 
 Below is some more information on the different parts of the name.

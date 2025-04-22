@@ -197,15 +197,29 @@ Did the user’s action cause the error?
 
 **If yes:** Avoid language that feels alarming or blame-oriented and re-frame error as being a shared one, while guiding user to correct the error.
 
-| Situation | Sample error message | 
-| ----- | ----- |
-| File upload fails because user tried to upload an unacceptable file type. | **We couldn't upload your file** We weren’t able to upload your file. Please make sure the file you’re uploading is a .pdf or .doc file and try again. [button] Upload file again |
+<va-table table-type="bordered">
+  <va-table-row>
+    <span>Situation</span>
+    <span>Sample error message</span>
+  </va-table-row>
+  <va-table-row>
+    <span>File upload fails because user tried to upload an unacceptable file type.</span>
+    <span><strong>We couldn't upload your file</strong> <br />We weren't able to upload your file. Please make sure the file you're uploading is a .pdf or .doc file and try again. [button] Upload file again</span>
+  </va-table-row>
+</va-table>
 
 **If no:** Accept responsibility for the error and offer user brief, but clear, details and guidance to resolution.
 
-| Situation | Sample error message | 
-| ----- | ----- |
-| Application fails to go through due to server issues. | **Please save this application and try again** We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow. [button] Save your application |
+<va-table table-type="bordered">
+   <va-table-row>
+    <span>Situation</span>
+    <span>Sample error message</span>
+   </va-table-row>
+   <va-table-row>
+    <span>Application fails to go through due to server issues.</span>
+    <span><strong>Please save this application and try again</strong> <br />We're sorry. Your application didn't go through. We're working to fix the problem, but it may take us a while. Please save your application, and try again tomorrow. [button] Save your application</span>
+   </va-table-row>
+</va-table>
 
 ### Conversational and plain language
 
@@ -281,35 +295,134 @@ When the instructions are conditional, lead with the conditional phrase to make 
 ### Error state and message intent
 Focusing in on the intent of the error message can help to further flesh out the nuances of tone and description content.
 
-| Error state | When to use | Tone | Goals | Example |
-| ----- | ----- | ----- | ----- | ----- |
-| **Informational** | To surface system-related feedback not initiated by the user (e.g. status updates). or, To provide information that helps set the user's expectations for their experience (e.g. SiP available). | Clear and direct, Humble, Empathetic, Helpful | Succinctly convey information  Explain how (and for how long) user may be impacted Offer guidance toward resolution (if needed) | **VA.gov will be down for maintenance soon** <br>We’ll be doing some work on VA.gov on [Date] between [time] and [time]. If you have trouble using the site during that time, please check back soon. |
-| **Success** | As a confirmation that a user-initiated action was completed successfully. | Positive, direct, and definitive | Quickly and clearly convey user's success  | **File uploaded** <br> We've uploaded your file. Thank you. |
-| **Warning**  | An action was unsuccessful, but the user can still proceed. or,  some parts of the user’s experience may be limited that normally wouldn’t be (e.g. system is down and records are accessible but outdated). | Clear that there may be a problem, while being un-alarming and focused on reason and resolution | Help user understand the issue and resolve it as needed  | **Some information may not be current**<br> We're sorry. We're having issues with our server. We're working to fix it, but it may take us a while. You can still use [APPLICATION/PAGE NAME], but you may not see all of your updated information. If you're having trouble, please try again later. |
-| **Error** | A user action was not completed and must be resolved to proceed. | Clear that's something's wrong that will block the user from moving forward, while being un-alarming and focused on reason and resolution | Help user understand the issue and resolve it | **We've run into a problem** <br> We're sorry. It looks like your latest action didn't go through on the site because there's a problem with the Internet connection. We can't take you to the next step until this is complete. Please check to make sure you're connected to the Internet and try again. |
-| **Actions (single button)** | The user must take an action to proceed with the task indicated by the message | Enticing to help prompt user to take action, while being clear about the action needed | Get user to take a specific action | **Still want to apply for VA health care benefits?** <br>You started an application for health care benefits on [DATE], but you didn't submit it. You can open the application and finish applying at any time. [button] Open your application |
-| **Actions (binary button)** | The user must choose between two actions to proceed with a task, or to confirm an important action. | Clear and direct about how each of the choices will impact the user | Help user make an informed choice of action to take | **Are you sure you want to start this application over?**<br> If you start over, you'll lose all the information you've filled in so far. [button 1] Start over [button 2] Continue your application |
+<va-table table-type="bordered">
+   <va-table-row>
+      <span>Error state</span>
+      <span>When to use</span>
+      <span>Tone</span>
+      <span>Goals</span>
+      <span>Example</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Informational</strong></span>
+      <span>To surface system-related feedback not initiated by the user (e.g. status updates). or, To provide information that helps set the user's expectations for their experience (e.g. SiP available).</span>
+      <span>Clear and direct, Humble, Empathetic, Helpful</span>
+      <span>Succinctly convey information  Explain how (and for how long) user may be impacted Offer guidance toward resolution (if needed)</span>
+      <span><strong>VA.gov will be down for maintenance soon</strong> <br>We’ll be doing some work on VA.gov on [Date] between [time] and [time]. If you have trouble using the site during that time, please check back soon.</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Success</strong></span>
+      <span>As a confirmation that a user-initiated action was completed successfully.</span>
+      <span>Positive, direct, and definitive</span>
+      <span>Quickly and clearly convey user's success</span>
+      <span><strong>File uploaded</strong> <br> We've uploaded your file. Thank you.</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Warning</strong></span>
+      <span>An action was unsuccessful, but the user can still proceed, or, some parts of the user’s experience may be limited that normally wouldn’t be (e.g. system is down and records are accessible but outdated).</span>
+      <span>Clear that there may be a problem, while being un-alarming and focused on reason and resolution</span>
+      <span>Help user understand the issue and resolve it as needed</span>
+      <span><strong>Some information may not be current</strong> <br> We're sorry. We're having issues with our server. We're working to fix it, but it may take us a while. You can still use [APPLICATION/PAGE NAME], but you may not see all of your updated information. If you're having trouble, please try again later.</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Error</strong></span>
+      <span>A user action was not completed and must be resolved to proceed.</span>
+      <span>Clear that's something's wrong that will block the user from moving forward, while being un-alarming and focused on reason and resolution</span>
+      <span>Help user understand the issue and resolve it</span>
+      <span><strong>We've run into a problem</strong> <br> We're sorry. It looks like your latest action didn't go through on the site because there's a problem with the Internet connection. We can't take you to the next step until this is complete. Please check to make sure you're connected to the Internet and try again.</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Actions (single button)</strong></span>
+      <span>The user must take an action to proceed with the task indicated by the message</span>
+      <span>Enticing to help prompt user to take action, while being clear about the action needed</span>
+      <span>Get user to take a specific action</span>
+      <span><strong>Still want to apply for VA health care benefits?</strong> <br> You started an application for health care benefits on [DATE], but you didn't submit it. You can open the application and finish applying at any time. [button] Open your application</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Actions (binary button)</strong></span>
+      <span>The user must choose between two actions to proceed with a task, or to confirm an important action.</span>
+      <span>Clear and direct about how each of the choices will impact the user</span>
+      <span>Help user make an informed choice of action to take</span>
+      <span><strong>Are you sure you want to start this application over?</strong><br> If you start over, you'll lose all the information you've filled in so far. [button 1] Start over [button 2] Continue your application</span>
+   </va-table-row>
+</va-table>
 
 ### Messaging categories
 
 The [Messaging Dictionary](/content-style-guide/messaging-dictionary) can help offer specific messages to use and/or examples to inform new message creation. We’ll continue expanding the dictionary, so check back often for new messages.
 
-| Error state | When to use | Link to dictionary of messages | 
-| ----- | ----- | ----- | 
-| **System messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See system message examples](/content-style-guide/messaging-dictionary#system-messaging) | 
-| **Engagement messaging** | Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions. | [See engagement message examples](/content-style-guide/messaging-dictionary#engagement-messaging) | 
-| **Access messaging** | Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc. | [See access message examples](/content-style-guide/messaging-dictionary#access-messaging)| 
-| **Feedback messaging** | The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging. | [See feedback message examples](/content-style-guide/messaging-dictionary#feedback-messaging)| 
+<va-table table-type="bordered">
+   <va-table-row>
+      <span>Error state</span>
+      <span>When to use</span>
+      <span>Link to dictionary of messages</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>System messaging</strong></span>
+      <span>Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.</span>
+      <span><va-link href="/content-style-guide/messaging-dictionary#system-messaging" text="See system message examples"></va-link></span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Engagement messaging</strong></span>
+      <span>Alerts the user of important system-related issues or status. It’s initiated by the system and it’s not a result of the user’s actions.</span>
+      <span><va-link href="/content-style-guide/messaging-dictionary#engagement-messaging" text="See engagement message examples"></va-link></span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Access messaging</strong></span>
+      <span>Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc. etc.</span>
+      <span><va-link href="/content-style-guide/messaging-dictionary#access-messaging" text="See access message examples"></va-link></span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Feedback messaging</strong></span>
+      <span>The application’s response when the user is interacting with it. The majority of create, read, update, delete (CRUD) actions will result in feedback messaging.</span>
+      <span><va-link href="/content-style-guide/messaging-dictionary#feedback-messaging" text="See feedback message examples"></va-link></span>
+   </va-table-row>
+</va-table>
 
 ### Next-step calls to action
 
 Some errors may not be resolved based on initial instructions to user (ie, "Try again later"). In these cases, a next-step call to action (ie, "Call the VA.gov help desk") may be necessary. This will be decided on a case-by-case basis, but below are some initial guidelines for determining the appropriate next-step call to action.
 
-| Next-step call to action | When to use | Standard language to use | Potential condition variations | 
-| ----- | ----- | ----- | ----- | 
-| **Call the VA.gov help desk** | User can’t resolve an error that is directly related to the website (specifics TBD) | Please call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET. | If you need more help, please call... If it still doesn't work, please call... | 
-| **Get more information about/help with your VA benefits** | User may not be able to resolve error, but next step would involve talking to someone at VA about benefits | If you need more help, call us at 800-827-1000. Or, contact a VA regional benefit office near you. (button) [Find a VA regional benefit office](https://www.vets.gov/facilities/) | If you have questions about your benefits... | 
-| **Get help filing a disability claim** | User needs more help filing a disability claim | If you need more help with your claim, you may want to work with a trained professional. (button) [Get help with your claim](https://www.vets.gov/disability-benefits/apply/help/index.html) | |
-| **Contact the Veterans Health Administration toll-free hotline** | User needs help filling out a health care benefits application | If you need more help filling out your application, call our toll-free hotline at 877-222-VETS (877-222-8387). We’re here Monday–Friday, 8:00 a.m. to 8:00 p.m. ET. You can also get help from a trained professional called an accredited representative. Or, find your state’s Veterans agency. | (button 1) [Request a representative](https://www.ebenefits.va.gov/ebenefits/about/feature?feature=request-vso-representative)<br />(button 2) [Find a Veterans agency](https://www.va.gov/statedva.htm) <br />If you have questions about your application,... | 
-| **Contact your local VA medical center** | User needs to contact their doctor or speak to someone at a VA medical center for more information | If you need more help with this, call your healthcare provider or your local VA medical center or clinic. button) [Find a VA health facility](https://www.vets.gov/facilities/) | If you have questions, call your doctor or a VA medical center or clinic near you... | 
-| **Get answers to questions about education benefits** | User needs more help/answers to questions about their education benefits | If you need more help, call us at 888-GI-Bill (888-442-4551). We’re here Monday–Friday, 8:00 a.m. to 7:00 p.m. ET. | If you'd like to request a paper application... | 
+<va-table table-type="bordered">
+   <va-table-row>
+      <span>Next-step call to action</span>
+      <span>When to use</span>
+      <span>Standard language to use</span>
+      <span>Potential condition variations</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Call the VA.gov help desk</strong></span>
+      <span>User can’t resolve an error that is directly related to the website (specifics TBD)</span>
+      <span>Please call the VA.gov help desk at 855-574-7286 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET.</span>
+      <span>If you need more help, please call... If it still doesn't work, please call...</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Get more information about/help with your VA benefits</strong></span>
+      <span>User may not be able to resolve error, but next step would involve talking to someone at VA about benefits</span>
+      <span>If you need more help, call us at 800-827-1000. Or, contact a VA regional benefit office near you. (button) <va-link href="https://www.vets.gov/facilities/" text="Find a VA regional benefit office"></va-link></span>
+      <span>If you have questions about your benefits...</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Get help filing a disability claim</strong></span>
+      <span>User needs more help filing a disability claim</span>
+      <span>If you need more help with your claim, you may want to work with a trained professional. (button) <va-link href="https://www.vets.gov/disability-benefits/apply/help/index.html" text="Get help with your claim"></va-link></span>
+      <span>If you have questions about your claim...</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Contact the Veterans Health Administration toll-free hotline</strong></span>
+      <span>User needs help filling out a health care benefits application</span>
+      <span>If you need more help filling out your application, call our toll-free hotline at 877-222-VETS (877-222-8387). We’re here Monday–Friday, 8:00 a.m. to 8:00 p.m. ET. You can also get help from a trained professional called an accredited representative. Or, find your state’s Veterans agency. (button 1) <va-link href="https://www.ebenefits.va.gov/ebenefits/about/feature?feature=request-vso-representative" text="Request a representative"></va-link> <br />(button 2) <va-link href="https://www.va.gov/statedva.htm" text="Find a Veterans agency"></va-link> <br />If you have questions about your application,...</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Contact your local VA medical center</strong></span>
+      <span>User needs to contact their doctor or speak to someone at a VA medical center for more information</span>
+      <span>If you need more help with this, call your healthcare provider or your local VA medical center or clinic. (button) <va-link href="https://www.vets.gov/facilities/" text="Find a VA health facility"></va-link></span>
+      <span>If you have questions, call your doctor or a VA medical center or clinic near you...</span>
+   </va-table-row>
+   <va-table-row>
+      <span><strong>Get answers to questions about education benefits</strong></span>
+      <span>User needs more help/answers to questions about their education benefits</span>
+      <span>If you need more help, call us at 888-GI-Bill (888-442-4551). We’re here Monday–Friday, 8:00 a.m. to 7:00 p.m. ET.</span>
+      <span>If you'd like to request a paper application...</span>
+   </va-table-row>
+</va-table>

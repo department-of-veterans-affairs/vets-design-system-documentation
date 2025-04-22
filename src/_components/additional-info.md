@@ -3,7 +3,7 @@ layout: component
 title: Additional info
 intro-text: "Additional info makes content easier to scan as it hides information that may not be applicable to all users or situations. We use the Additional info component to situate plain language help at the point of the process where it is most relevant."
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A22760&mode=design&t=TiJHClaf3VQ6wU6B-1
-status: use-deployed
+status: use-best-practice
 uswds-v3: default
 web-component: va-additional-info
 anchors:
@@ -43,11 +43,11 @@ anchors:
 ### When to consider something else
 
 * **Accordions for a series**: If you have a series of content in the body of a page and outside of a form or tool then an [Accordion]({{ site.baseurl }}/components/accordion) is preferred. For example, if you have a series of questions as part of an FAQ section or a set of options for payment that each have additional details.
-* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of CAIA to edit content and explore alternatives.
+* **Too much content**: Only include critical information inside this component. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of the Content and IA team to edit content and explore alternatives.
 * **Required content**: If the majority of people need the content to accomplish the main task then it should not be hidden from view.
 * **Content organized under a new heading.** If you have enough content that it makes sense to organize under a new heading that does not make sense under the same heading as the content nearby then use an [Accordion]({{ site.baseurl }}/components/accordion).
 * **Error messages or other immediate actions**: Do not use this component for error messages or other critical or timely information.
-* **Inside Alerts**: Do not use this component inside an [Alert]({{ site.baseurl }}/components/alert). Try the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component instead, especially when the Alert is within the page content and not at the top of the page.
+* **Inside Alerts**: Use this component inside an [Alert]({{ site.baseurl }}/components/alert) only as a last resort and if approved in the Collaboration Cycle. Instead use the [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable) component, especially when the Alert is within the page content and not at the top of the page.
 * **Floating in space**: Try to avoid using Additional info outside of the flow of the page, unattached to a section of content or another component. For example, there are instances of Additional info between a h1 and a Card. See [placement](#placement) for more.
 
 ## Behavior
@@ -64,8 +64,10 @@ The following are places where Additional info can be used:
 
 * After a header (h2, h3, h4) or paragraph to provide orthogonal details or provide an answer to a common question.
 * Within a [Process list]({{ site.baseurl }}/components/process-list) to shorten the length of content within a step.
-* Within a [Form]({{ site.baseurl }}/components/form/label#with-additional-info) to provide additional help text.
+* Within, or at the end, of a [Form]({{ site.baseurl }}/components/form/label#with-additional-info) to provide additional help text. 
 * Whenever there is a chance to enhance the understanding a user has about a particular choice.
+
+**Note:** Placement does not alter [content considerations](#content-considerations) in any way.
 
 ### Design principles
 
@@ -75,8 +77,9 @@ The following are places where Additional info can be used:
 
 ## Content considerations
 
-* Use a statement (e.g. "Learn more about...") rather than a question (e.g. "What is...?") as a pattern for the title (trigger text) of the component. The question format has confused Veterans in testing when there is an input field related to that question somewhere else in the form. 
-* When the component is expanded, the use of Headings (h4-h6), body text, links, ordered lists, and unordered lists are encouraged.
+* **Use a statement, rather than a question.** Use a statement (e.g. "Learn more about...") rather than a question (e.g. "What is...?") as a pattern for the title (trigger text) of the component. The question format has confused Veterans in testing when there is an input field related to that question somewhere else in the form. 
+* **Use headings in expanded content.** When the component is expanded, the use of Headings (h4-h6), body text, links, ordered lists, and unordered lists are encouraged.
+* **Limit the length of expanded content.** Only include critical information inside this component. Content contained within additional info should be limited to 2 paragraphs or less. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of CAIA to edit content and explore alternatives.
 
 ## Accessibility considerations
 

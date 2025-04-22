@@ -1,76 +1,86 @@
-﻿Name,type,vads-name,uswds-design-token,final-hex-value,vads-alias,description
-vads-color-action-border-base-active-on-dark,Semantic,vads-color-action-border-base-active-on-dark,uswds-system-color-gray-30,#adadad,,Used for button on mobile app in base style in dark mode
-vads-color-action-border-base-active-on-light,Semantic,vads-color-action-border-base-active-on-light,uswds-system-color-gray-80,#2e2e2e,,Used for button on mobile app in base style
-vads-color-action-focus-on-light,Semantic,vads-color-action-focus-on-light,uswds-system-color-yellow-20v,#face00,,Focus outline color
-vads-color-action-surface-default-on-dark,Semantic,vads-color-action-surface-default-on-dark,uswds-system-color-blue-30v,#58b4ff,,Used for button on mobile app in dark mode
-vads-color-action-surface-destructive-on-dark,Semantic,vads-color-action-surface-destructive-on-dark,uswds-system-color-red-vivid-40,#fb5a47,,Used for button on mobile app in dark mode
-vads-color-background-default-on-dark,Semantic,vads-color-background-default-on-dark,uswds-system-color-gray-warm-90,#171716,,Used for app background on mobile app in dark mode
-vads-color-base,Semantic,vads-color-base,uswds-system-color-gray-90,#1b1b1b,,
-vads-color-base-dark,Semantic,vads-color-base-dark,uswds-system-color-gray-cool-60,#565c65,vads-color-gray,
-vads-color-base-darker,Semantic,vads-color-base-darker,uswds-system-color-gray-cool-70,#3d4551,vads-color-gray-dark,
-vads-color-base-darkest,Semantic,vads-color-base-darkest,uswds-system-color-gray-90,#1b1b1b,vads-color-base,Also vads-color-ink
-vads-color-base-light,Semantic,vads-color-base-light,uswds-system-color-gray-cool-30,#a9aeb1,vads-color-gray-light,
-vads-color-base-lighter,Semantic,vads-color-base-lighter,uswds-system-color-gray-cool-10,#dfe1e2,vads-color-gray-lighter,
-vads-color-base-lightest,Semantic,vads-color-base-lightest,uswds-system-color-gray-5,#f0f0f0,vads-color-gray-lightest,
-vads-color-emergency,Semantic,vads-color-emergency,uswds-system-color-red-warm-60v,#9c3d10,,$theme-color-emergency from USWDS
-vads-color-emergency-dark,Semantic,vads-color-emergency-dark,uswds-system-color-red-warm-80,#332d29,,$theme-color-emergency-dark from USWDS
-vads-color-error,Semantic,vads-color-error,uswds-system-color-red-warm-50v,#d54309,,$theme-color-error from USWDS
-vads-color-error-dark,Semantic,vads-color-error-dark,uswds-system-color-red-vivid-60,#b21d38,,$theme-color-error-dark from USWDS
-vads-color-error-darker,Semantic,vads-color-error-darker,uswds-system-color-red-70,#6f3331,,$theme-color-error-darker from USWDS
-vads-color-error-light,Semantic,vads-color-error-light,uswds-system-color-red-warm-30v,#f39268,,$theme-color-error-light from USWDS
-vads-color-error-lighter,Semantic,vads-color-error-lighter,uswds-system-color-red-warm-10,#f4e3db,,$theme-color-error-lighter from USWDS
-vads-color-feedback-border-warning-on-dark,Semantic,vads-color-feedback-border-warning-on-dark,uswds-system-color-yellow-20v,#face00,,Used for warning alert border on mobile app in dark mode
-vads-color-feedback-surface-error-on-dark,Semantic,vads-color-feedback-surface-error-on-dark,uswds-system-color-red-vivid-80,#5c1111,,Used for error alert background on mobile app in dark mode
-vads-color-feedback-surface-info-on-dark,Semantic,vads-color-feedback-surface-info-on-dark,uswds-system-color-blue-vivid-80,#112f4e,,Used for alert background on mobile app in dark mode
-vads-color-feedback-surface-success-on-dark,Semantic,vads-color-feedback-surface-success-on-dark,uswds-system-color-green-cool-80v,#19311e,,Used for success alert background on mobile app in dark mode
-vads-color-feedback-surface-warning-on-dark,Semantic,vads-color-feedback-surface-warning-on-dark,uswds-system-color-yellow-80v,#332d27,,Used for warning alert background on mobile app in dark mode
-vads-color-forms-surface-active-on-dark,Semantic,vads-color-forms-surface-active-on-dark,uswds-system-color-blue-warm-80,#252f3e,,Used for active background of tile variations of checkbox/radio in dark mode
-vads-color-forms-surface-active-on-light,Semantic,vads-color-forms-surface-active-on-light,uswds-system-color-blue-warm-5,#ecf1f7,,Used for active background of tile variations of checkbox/radio in light mode
-vads-color-gibill-accent,Semantic,vads-color-gibill-accent,,#fef0c8,vads-color-gold-lightest,
-vads-color-hub-burials,Semantic,vads-color-hub-burials,uswds-system-color-blue-50,#2378c3,,
-vads-color-hub-careers,Semantic,vads-color-hub-careers,uswds-system-color-orange-warm-50,#bd5727,,
-vads-color-hub-disability,Semantic,vads-color-hub-disability,uswds-system-color-red-60,#a23737,,
-vads-color-hub-education,Semantic,vads-color-hub-education,uswds-system-color-mint-cool-50,#40807e,,
-vads-color-hub-family-member,Semantic,vads-color-hub-family-member,,#162e51,vads-color-primary-darker,
-vads-color-hub-health-care,Semantic,vads-color-hub-health-care,uswds-system-color-indigo-cool-60,#3f57a6,,
-vads-color-hub-housing,Semantic,vads-color-hub-housing,uswds-system-color-gold-50,#8e704f,,
-vads-color-hub-life-insurance,Semantic,vads-color-hub-life-insurance,uswds-system-color-green-warm-50,#6f7a41,,
-vads-color-hub-pension,Semantic,vads-color-hub-pension,uswds-system-color-green-cool-50,#4d8055,,
-vads-color-hub-records,Semantic,vads-color-hub-records,uswds-system-color-violet-warm-60,#864381,,
-vads-color-hub-service-member,Semantic,vads-color-hub-service-member,,#162e51,vads-color-primary-darker,
-vads-color-info,Semantic,vads-color-info,uswds-system-color-cyan-30v,#00bde3,,$theme-color-info from USWDS
-vads-color-info-dark,Semantic,vads-color-info-dark,uswds-system-color-cyan-40v,#009ec1,,$theme-color-info-dark from USWDS
-vads-color-info-darker,Semantic,vads-color-info-darker,uswds-system-color-blue-cool-60,#2e6276,,$theme-color-info-darker from USWDS
-vads-color-info-light,Semantic,vads-color-info-light,uswds-system-color-cyan-20,#99deea,,$theme-color-info-light from USWDS
-vads-color-info-lighter,Semantic,vads-color-info-lighter,uswds-system-color-cyan-5,#e7f6f8,,$theme-color-info-lighter from USWDS
-vads-color-ink,Semantic,vads-color-ink,uswds-system-color-gray-90,#1b1b1b,vads-color-base,Also vads-color-base-darkest
-vads-color-inset-bg,Semantic,vads-color-inset-bg,,#e7f6f8,vads-color-info-lighter,
-vads-color-link,Semantic,vads-color-link,uswds-system-color-blue-60v,#005ea2,,
-vads-color-link-active,Semantic,vads-color-link-active,uswds-system-color-blue-70v,#0b4778,,
-vads-color-link-visited,Semantic,vads-color-link-visited,uswds-system-color-violet-70v,#54278f,,
-vads-color-primary,Semantic,vads-color-primary,uswds-system-color-blue-60v,#005ea2,,
-vads-color-primary-alt,Semantic,vads-color-primary-alt,uswds-system-color-cyan-30v,#00bde3,,
-vads-color-primary-alt-dark,Semantic,vads-color-primary-alt-dark,uswds-system-color-blue-cool-40v,#28a0cb,,
-vads-color-primary-alt-darkest,Semantic,vads-color-primary-alt-darkest,uswds-system-color-blue-cool-60v,#07648d,,
-vads-color-primary-alt-light,Semantic,vads-color-primary-alt-light,uswds-system-color-blue-cool-20v,#97d4ea,,
-vads-color-primary-alt-lightest,Semantic,vads-color-primary-alt-lightest,uswds-system-color-blue-cool-5v,#e1f3f8,,
-vads-color-primary-dark,Semantic,vads-color-primary-dark,uswds-system-color-blue-warm-70v,#1a4480,,
-vads-color-primary-darker,Semantic,vads-color-primary-darker,uswds-system-color-blue-warm-80v,#162e51,,"Shifts to primary-dark, takes on primary-darkest"
-vads-color-primary-light,Semantic,vads-color-primary-light,uswds-system-color-blue-30,#73b3e7,,
-vads-color-primary-lighter,Semantic,vads-color-primary-lighter,uswds-system-color-blue-10,#d9e8f6,,
-vads-color-secondary,Semantic,vads-color-secondary,uswds-system-color-red-50,#d83933,,$theme-color-secondary
-vads-color-secondary-dark,Semantic,vads-color-secondary-dark,uswds-system-color-red-60v,#b50909,,$theme-color-secondary-dark
-vads-color-secondary-darkest,Semantic,vads-color-secondary-darkest,uswds-system-color-red-70v,#8b0a03,,$theme-color-secondary-darker
-vads-color-secondary-light,Semantic,vads-color-secondary-light,uswds-system-color-red-30,#f2938c,,$theme-color-secondary-light
-vads-color-secondary-lightest,Semantic,vads-color-secondary-lightest,uswds-system-color-red-cool-10v,#f8dfe2,,$theme-color-secondary-lighter
-vads-color-success,Semantic,vads-color-success,uswds-system-color-green-cool-40v,#00a91c,,$theme-color-success from USWDS
-vads-color-success-dark,Semantic,vads-color-success-dark,uswds-system-color-green-cool-50v,#008817,,$theme-color-success-dark from USWDS
-vads-color-success-darker,Semantic,vads-color-success-darker,uswds-system-color-green-cool-60v,#216e1f,,$theme-color-success-darker from USWDS
-vads-color-success-light,Semantic,vads-color-success-light,uswds-system-color-green-cool-20v,#70e17b,,$theme-color-success-light from USWDS
-vads-color-success-lighter,Semantic,vads-color-success-lighter,uswds-system-color-green-cool-5,#ecf3ec,,$theme-color-success-lighter from USWDS
-vads-color-va-accent,Semantic,vads-color-va-accent,uswds-system-color-yellow-50,#8a7237,,Used in the table and desktop main navigation menu as a top border highlight color. Should be replaced by vads-main-menu-color-border-top-open-on-light
-vads-color-warning,Semantic,vads-color-warning,uswds-system-color-gold-20v,#ffbe2e,,$theme-color-warning from USWDS
-vads-color-warning-dark,Semantic,vads-color-warning-dark,uswds-system-color-gold-30v,#e5a000,,$theme-color-warning-dark from USWDS
-vads-color-warning-darker,Semantic,vads-color-warning-darker,uswds-system-color-gold-50v,#936f38,,$theme-color-warning-darker from USWDS
-vads-color-warning-light,Semantic,vads-color-warning-light,uswds-system-color-yellow-10v,#fee685,,$theme-color-warning-light from USWDS
-vads-color-warning-lighter,Semantic,vads-color-warning-lighter,uswds-system-color-yellow-5,#faf3d1,vads-alert-color-background-warning-on-light,$theme-color-warning-lighter from USWDS
+﻿Name,type,vads-name,System,domain,Group,Component,element,category,concept,property,variant,state,scale,mode,value,uswds-design-token,value-from-uswds-design-token,final-hex-value,vads-alias,Current (v1) value,description,Flagged for investigation,Notes,Components,Figma value,value-from-vads-alias
+vads-color-action-background-focus-on-light,Semantic,,,,,,,color,,,,,,,,uswds-system-color-yellow-20v,#face00,#face00,,,Used for the focus background color,,,,,
+vads-color-action-border-base-active-on-dark,Semantic,vads-color-action-border-base-active-on-dark,vads,,,,,color,action,border-base,,active,,on-dark,,uswds-system-color-gray-30,#adadad,#adadad,,,Used for button on mobile app in base style in dark mode,,Mobile,,uswds-system-color-gray-30,
+vads-color-action-border-base-active-on-light,Semantic,vads-color-action-border-base-active-on-light,vads,,,,,color,action,border-base,,active,,on-light,,uswds-system-color-gray-80,#2e2e2e,#2e2e2e,,,Used for button on mobile app in base style,,Mobile,,uswds-system-color-gray-80,
+vads-color-action-border-focus-on-light,Semantic,,,,,,,color,,,,,,,,uswds-system-color-gray-90,#1b1b1b,#1b1b1b,,,Used for the border color for the focus state,,,,,
+vads-color-action-focus-on-light,Semantic,vads-color-action-focus-on-light,vads,,,,,color,action,,,focus,,on-light,,uswds-system-color-yellow-20v,#face00,#face00,,vads-color-gold-light,Focus outline color,,,,uswds-system-color-yellow-vivid-20,
+vads-color-action-surface-default-on-dark,Semantic,vads-color-action-surface-default-on-dark,vads,,,,,color,action,surface,default,,,on-dark,,uswds-system-color-blue-30v,#58b4ff,#58b4ff,,,Used for button on mobile app in dark mode,,Used for button on mobile app in dark mode,,uswds-system-color-blue-30v,
+vads-color-action-surface-destructive-on-dark,Semantic,vads-color-action-surface-destructive-on-dark,vads,,,,,color,action,surface,destructive,,,on-dark,,uswds-system-color-red-vivid-40,#fb5a47,#fb5a47,,,Used for button on mobile app in dark mode,,Used for button on mobile app in dark mode,,uswds-system-color-red-vivid-40,
+vads-color-action-text-focus-on-light,Semantic,,,,,,,color,,,,,,,,uswds-system-color-gray-90,#1b1b1b,#1b1b1b,,,Used for the text color for focus states,,,,,
+vads-color-background-default-on-dark,Semantic,vads-color-background-default-on-dark,vads,,,,,color,,background,default,,,on-dark,,uswds-system-color-gray-warm-90,#171716,#171716,,,Used for app background on mobile app in dark mode,,Mobile. bg should have been background. We will correct in future.,,uswds-system-color-gray-warm-90,
+vads-color-base,Semantic,vads-color-base,vads,,,,,color,,,base,,,,,uswds-system-color-gray-90,#1b1b1b,#1b1b1b,,#212121,,,#212121 does not exist in the v3 system,,uswds-system-color-gray-90,
+vads-color-base-dark,Semantic,vads-color-base-dark,vads,,,,,color,,,base,,dark,,,uswds-system-color-gray-cool-60,#565c65,#565c65,vads-color-gray,,,,Adding in v3,,uswds-system-color-gray-cool-60,
+vads-color-base-darker,Semantic,vads-color-base-darker,vads,,,,,color,,,base,,darker,,,uswds-system-color-gray-cool-70,#3d4551,#3d4551,vads-color-gray-dark,,,,Adding in v3,,uswds-system-color-gray-cool-70,
+vads-color-base-darkest,Semantic,vads-color-base-darkest,vads,,,,,color,,,base,,darkest,,,uswds-system-color-gray-90,#1b1b1b,#1b1b1b,vads-color-base,#1b1b1b,Also vads-color-ink,,Already added in our tokens as a v3-color,,uswds-system-color-gray-90,
+vads-color-base-light,Semantic,vads-color-base-light,vads,,,,,color,,,base,,light,,,uswds-system-color-gray-cool-30,#a9aeb1,#a9aeb1,vads-color-gray-light,,,,Adding in v3,,uswds-system-color-gray-cool-30,
+vads-color-base-lighter,Semantic,vads-color-base-lighter,vads,,,,,color,,,base,,lighter,,,uswds-system-color-gray-cool-10,#dfe1e2,#dfe1e2,vads-color-gray-lighter,,,,Adding in v3,,uswds-system-color-gray-cool-10,
+vads-color-base-lightest,Semantic,vads-color-base-lightest,vads,,,,,color,,,base,,lightest,,,uswds-system-color-gray-5,#f0f0f0,#f0f0f0,vads-color-gray-lightest,,,,Adding in v3,,uswds-system-color-gray-5,
+vads-color-divider,Semantic,,vads,,,,,color,,,,,,,,uswds-system-color-gray-cool-30,#a9aeb1,#a9aeb1,,,"Used for rules, lines, dividers, and separators",,Added by Dan. Changed the name from rule to divider per meeting https://vfs.atlassian.net/wiki/spaces/DST/pages/2699886742/Design+Weekly+Chat+Meeting+Notes#%5Bdate%5D,,uswds-system-color-gray-cool-30,
+vads-color-emergency,Semantic,vads-color-emergency,vads,,,,,color,,,emergency,,,,,uswds-system-color-red-warm-60v,#9c3d10,#9c3d10,,,$theme-color-emergency from USWDS,,,,uswds-system-color-red-warm-60v,
+vads-color-emergency-dark,Semantic,vads-color-emergency-dark,vads,,,,,color,,,emergency,,dark,,,uswds-system-color-red-warm-80,#332d29,#332d29,,,$theme-color-emergency-dark from USWDS,,,,uswds-system-color-red-warm-80,
+vads-color-error,Semantic,vads-color-error,vads,,,,,color,,,error,,,,,uswds-system-color-red-warm-50v,#d54309,#d54309,,,$theme-color-error from USWDS,,,,uswds-system-color-red-warm-50v,
+vads-color-error-dark,Semantic,vads-color-error-dark,vads,,,,,color,,,error,,dark,,,uswds-system-color-red-vivid-60,#b21d38,#b21d38,,,$theme-color-error-dark from USWDS,,,,uswds-system-color-red-vivid-60,
+vads-color-error-darker,Semantic,vads-color-error-darker,vads,,,,,color,,,error,,darker,,,uswds-system-color-red-70,#6f3331,#6f3331,,,$theme-color-error-darker from USWDS,,,,uswds-system-color-red-70,
+vads-color-error-light,Semantic,vads-color-error-light,vads,,,,,color,,,error,,light,,,uswds-system-color-red-warm-30v,#f39268,#f39268,,,$theme-color-error-light from USWDS,,,,uswds-system-color-red-warm-30v,
+vads-color-error-lighter,Semantic,vads-color-error-lighter,vads,,,,,color,,,error,,lighter,,,uswds-system-color-red-warm-10,#f4e3db,#f4e3db,,,$theme-color-error-lighter from USWDS,,,,uswds-system-color-red-warm-10,
+vads-color-feedback-border-warning-on-dark,Semantic,vads-color-feedback-border-warning-on-dark,vads,,,,,color,feedback,border,warning,,,on-dark,,uswds-system-color-yellow-20v,#face00,#face00,,,Used for warning alert border on mobile app in dark mode,,Mobile,,uswds-system-color-yellow-20v,
+vads-color-feedback-foreground-success-on-dark,Semantic,,vads,,,,,color,feedback,,success,,,on-dark,,uswds-system-color-green-cool-30v,#21c834,#21c834,,,Mobile,,Mobile,,uswds-system-color-green-cool-30v,
+vads-color-feedback-foreground-success-on-light,Semantic,,vads,,,,,color,feedback,,success,,,on-light,,uswds-system-color-green-cool-50v,#008817,#008817,,,Mobile,,Mobile,,uswds-system-color-green-cool-50v,
+vads-color-feedback-foreground-warning-on-dark,Semantic,,vads,,,,,color,feedback,,warning,,,on-dark,,uswds-system-color-gold-30v,#e5a000,#e5a000,,,Mobile,,Mobile,,uswds-system-color-gold-30v,
+vads-color-feedback-foreground-warning-on-light,Semantic,,vads,,,,,color,feedback,,warning,,,on-light,,uswds-system-color-gold-40v,#c2850c,#c2850c,,,Mobile,,Mobile,,uswds-system-color-gold-40v,
+vads-color-feedback-surface-error-on-dark,Semantic,vads-color-feedback-surface-error-on-dark,vads,,,,,color,feedback,surface,error,,,on-dark,,uswds-system-color-red-vivid-80,#5c1111,#5c1111,,,Used for error alert background on mobile app in dark mode,,Mobile,,uswds-system-color-red-vivid-80,
+vads-color-feedback-surface-info-on-dark,Semantic,vads-color-feedback-surface-info-on-dark,vads,,,,,color,feedback,surface,info,,,on-dark,,uswds-system-color-blue-vivid-80,#112f4e,#112f4e,,,Used for alert background on mobile app in dark mode,,Mobile,,uswds-system-color-blue-vivid-80,
+vads-color-feedback-surface-success-on-dark,Semantic,vads-color-feedback-surface-success-on-dark,vads,,,,,color,feedback,surface,success,,,on-dark,,uswds-system-color-green-cool-80v,#19311e,#19311e,,,Used for success alert background on mobile app in dark mode,,Mobile,,uswds-system-color-green-cool-80v,
+vads-color-feedback-surface-warning-on-dark,Semantic,vads-color-feedback-surface-warning-on-dark,vads,,,,,color,feedback,surface,warning,,,on-dark,,uswds-system-color-yellow-80v,#332d27,#332d27,,,Used for warning alert background on mobile app in dark mode,,Mobile,,uswds-system-color-yellow-80v,
+vads-color-forms-surface-active-on-dark,Semantic,vads-color-forms-surface-active-on-dark,vads,,,,,color,,surface,,,,on-dark,,uswds-system-color-blue-warm-80,#252F3E,#252f3e,,,Used for active background of tile variations of checkbox/radio in dark mode,,Mobile,,uswds-system-color-blue-warm-80,
+vads-color-forms-surface-active-on-light,Semantic,vads-color-forms-surface-active-on-light,vads,,,,,color,,surface,,,,on-light,,uswds-system-color-blue-warm-5,#ECF1F7,#ecf1f7,,,Used for active background of tile variations of checkbox/radio in light mode,,Mobile,,uswds-system-color-blue-warm-5,
+vads-color-gibill-accent,Semantic,vads-color-gibill-accent,vads,,,,,color,,,,,,,vads-color-gold-lightest,,,#fef0c8,vads-color-gold-lightest,#fff1d2,,,"Not sure this value is actually in use, but the token name is ill formed and should become an alias to the proper name. Eventually, this token should go away and be replaced by one that fits the taxonomy, if we need to retain it. ",,vads-color-gold-lightest,
+vads-color-hub-burials,Semantic,vads-color-hub-burials,vads,,,,,color,hub,,burials,,,,,uswds-system-color-blue-50,#2378c3,#2378c3,,,,,,,,
+vads-color-hub-careers,Semantic,vads-color-hub-careers,vads,,,,,color,hub,,careers,,,,,uswds-system-color-orange-warm-50,#bd5727,#bd5727,,,,,,,,
+vads-color-hub-disability,Semantic,vads-color-hub-disability,vads,,,,,color,hub,,disability,,,,,uswds-system-color-red-60,#a23737,#a23737,,,,,,,,
+vads-color-hub-education,Semantic,vads-color-hub-education,vads,,,,,color,hub,,education,,,,,uswds-system-color-mint-cool-50,#40807e,#40807e,,,,,,,,
+vads-color-hub-family-member,Semantic,vads-color-hub-family-member,vads,,,,,color,hub,,family-member,,,,,,,#162e51,vads-color-primary-darker,,,,,,,
+vads-color-hub-health-care,Semantic,vads-color-hub-health-care,vads,,,,,color,hub,,health-care,,,,,uswds-system-color-indigo-cool-60,#3f57a6,#3f57a6,,,,,,,,
+vads-color-hub-housing,Semantic,vads-color-hub-housing,vads,,,,,color,hub,,housing,,,,,uswds-system-color-gold-50,#8e704f,#8e704f,,,,,,,,
+vads-color-hub-life-insurance,Semantic,vads-color-hub-life-insurance,vads,,,,,color,hub,,life-insurance,,,,,uswds-system-color-green-warm-50,#6f7a41,#6f7a41,,,,,,,,
+vads-color-hub-pension,Semantic,vads-color-hub-pension,vads,,,,,color,hub,,pension,,,,,uswds-system-color-green-cool-50,#4d8055,#4d8055,,,,,,,,
+vads-color-hub-records,Semantic,vads-color-hub-records,vads,,,,,color,hub,,records,,,,,uswds-system-color-violet-warm-60,#864381,#864381,,,,,,,,
+vads-color-hub-service-member,Semantic,vads-color-hub-service-member,vads,,,,,color,hub,,service-member,,,,,,,#162e51,vads-color-primary-darker,,,,,,,
+vads-color-info,Semantic,vads-color-info,vads,,,,,color,,,info,,,,,uswds-system-color-cyan-30v,#00bde3,#00bde3,,,$theme-color-info from USWDS,,,,uswds-system-color-cyan-vivid-30,
+vads-color-info-dark,Semantic,vads-color-info-dark,vads,,,,,color,,,info,,,,,uswds-system-color-cyan-40v,#009ec1,#009ec1,,,$theme-color-info-dark from USWDS,,,,uswds-system-color-cyan-vivid-40,
+vads-color-info-darker,Semantic,vads-color-info-darker,vads,,,,,color,,,info,,,,,uswds-system-color-blue-cool-60,#2e6276,#2e6276,,,$theme-color-info-darker from USWDS,,,,uswds-system-color-blue-cool-60,
+vads-color-info-light,Semantic,vads-color-info-light,vads,,,,,color,,,info,,light,,,uswds-system-color-cyan-20,#99deea,#99deea,,,$theme-color-info-light from USWDS,,,,uswds-system-color-cyan-20,
+vads-color-info-lighter,Semantic,vads-color-info-lighter,vads,,,,,color,,,info,,lighter,,,uswds-system-color-cyan-5,#e7f6f8,#e7f6f8,,vads-color-primary-alt-lightest,$theme-color-info-lighter from USWDS,,,,uswds-system-color-cyan-5,
+vads-color-ink,Semantic,vads-color-ink,vads,,,,,color,,,ink,,,,,uswds-system-color-gray-90,#1b1b1b,#1b1b1b,vads-color-base,#1b1b1b,Also vads-color-base-darkest,,,,uswds-system-color-gray-90,
+vads-color-inset-bg,Semantic,vads-color-inset-bg,vads,,,,,color,,,,,,,,,,#e7f6f8,vads-color-info-lighter,vads-color-info-lighter,,checked,"Used in forms confirmation page and claims status, but seems to be just a copy of featured content and thus should be replaced by vads-color-info-lighter.",,vads-color-info-lighter,
+vads-color-link,Semantic,vads-color-link,vads,,,,,color,,,link,,,,,uswds-system-color-blue-60v,#005ea2,#005ea2,,#004795,,,,,uswds-system-color-blue-vivid-60,
+vads-color-link-active,Semantic,vads-color-link-active,vads,,,,,color,,,link,active,,,,uswds-system-color-blue-70v,#0b4778,#0b4778,,#003E73,,,,,uswds-system-color-blue-vivid-70,
+vads-color-link-on-dark,Semantic,vads-color-link-on-dark,vads,,,,,color,,,link,,,on-dark,,uswds-system-color-gray-5,#f0f0f0,#f0f0f0,,,Link color on mobile for dark mode,,Added by mattd when adding Link documentation for mobile,Link,uswds-system-color-gray-5,
+vads-color-link-visited,Semantic,vads-color-link-visited,vads,,,,,color,,,link,visited,,,,uswds-system-color-violet-70v,#54278f,#54278f,,#4c2c92,,,,,uswds-system-color-violet-vivid-70,
+vads-color-primary,Semantic,vads-color-primary,vads,,,,,color,,,primary,,,,,uswds-system-color-blue-60v,#005ea2,#005ea2,,#0071bb,,,#0071bb does not exist in the v3 system thus we'll just have to hardcode this hex value.,,uswds-system-color-blue-vivid-60,
+vads-color-primary-alt,Semantic,vads-color-primary-alt,vads,,,,,color,,,primary-alt,,,,,uswds-system-color-cyan-30v,#00bde3,#00bde3,,#02bfe7,,,,,uswds-system-color-cyan-vivid-30,
+vads-color-primary-alt-dark,Semantic,vads-color-primary-alt-dark,vads,,,,,color,,,primary-alt,,,,,uswds-system-color-blue-cool-40v,#28a0cb,#28a0cb,,#00a6d2,,,,,uswds-system-color-blue-cool-vivid-40,
+vads-color-primary-alt-darkest,Semantic,vads-color-primary-alt-darkest,vads,,,,,color,,,primary-alt,,darkest,,,uswds-system-color-blue-cool-60v,#07648d,#07648d,,#046b99,,checked,This is in formation/sass/base/_b-variables.scss but not in our tokens file. It's in use in Secure messaging and 1 instance in benefits. ,,uswds-system-color-blue-cool-60,
+vads-color-primary-alt-light,Semantic,vads-color-primary-alt-light,vads,,,,,color,,,primary-alt,,light,,,uswds-system-color-blue-cool-20v,#97d4ea,#97d4ea,,#9bdaf1,,,,,uswds-system-color-blue-cool-vivid-20,
+vads-color-primary-alt-lightest,Semantic,vads-color-primary-alt-lightest,vads,,,,,color,,,primary-alt,,lightest,,,uswds-system-color-blue-cool-5v,#e1f3f8,#e1f3f8,,#e1f3f8,,,,,uswds-system-color-blue-cool-vivid-5,
+vads-color-primary-dark,Semantic,vads-color-primary-dark,vads,,,,,color,,,primary,,darker,,,uswds-system-color-blue-warm-70v,#1a4480,#1a4480,,,,,,,uswds-system-color-blue-warm-vivid-70,
+vads-color-primary-darker,Semantic,vads-color-primary-darker,vads,,,,,color,,,primary,,darker,,,uswds-system-color-blue-warm-80v,#162e51,#162e51,,#003e73,"Shifts to primary-dark, takes on primary-darkest",,#003e73 does not exist in the v3 system,,uswds-system-color-blue-warm-vivid-80,
+vads-color-primary-light,Semantic,vads-color-primary-light,vads,,,,,color,,,primary,,light,,,uswds-system-color-blue-30,#73b3e7,#73b3e7,,,,,,,uswds-system-color-blue-30,
+vads-color-primary-lighter,Semantic,vads-color-primary-lighter,vads,,,,,color,,,primary,,lighter,,,uswds-system-color-blue-10,#d9e8f6,#d9e8f6,,,,,Added by Dan,,uswds-system-color-blue-10,
+vads-color-secondary,Semantic,vads-color-secondary,vads,,,,,color,,,secondary,,,,,uswds-system-color-red-50,#d83933,#d83933,,#e31c3d,$theme-color-secondary,,,,uswds-system-color-red-50,
+vads-color-secondary-dark,Semantic,vads-color-secondary-dark,vads,,,,,color,,,secondary,,dark,,,uswds-system-color-red-60v,#b50909,#b50909,,#cd2026,$theme-color-secondary-dark,,,,uswds-system-color-red-vivid-60,
+vads-color-secondary-darkest,Semantic,vads-color-secondary-darkest,vads,,,,,color,,,secondary,,darkest,,,uswds-system-color-red-70v,#8b0a03,#8b0a03,,#981b1e,$theme-color-secondary-darker,checked,We should rename this to vads-color-secondary-darker,,uswds-system-color-red-vivid-70,
+vads-color-secondary-light,Semantic,vads-color-secondary-light,vads,,,,,color,,,secondary,,light,,,uswds-system-color-red-30,#f2938c,#f2938c,,#e59393,$theme-color-secondary-light,,,,uswds-system-color-red-30,
+vads-color-secondary-lightest,Semantic,vads-color-secondary-lightest,vads,,,,,color,,,secondary,,lightest,,,uswds-system-color-red-cool-10v,#f8dfe2,#f8dfe2,,#f9dede,$theme-color-secondary-lighter,checked,We should rename this to vads-color-secondary-lighter,,uswds-system-color-red-cool-vivid-10,
+vads-color-success,Semantic,vads-color-success,vads,,,,,color,,,success,,,,,uswds-system-color-green-cool-40v,#00a91c,#00a91c,,vads-color-green,$theme-color-success from USWDS,,"There was a conflict here with our value, which was actually pointing at success-dark and the USWDS value",,uswds-system-color-green-cool-40v,
+vads-color-success-dark,Semantic,vads-color-success-dark,vads,,,,,color,,,success,,dark,,,uswds-system-color-green-cool-50v,#008817,#008817,,,$theme-color-success-dark from USWDS,,,,uswds-system-color-green-cool-50v,
+vads-color-success-darker,Semantic,vads-color-success-darker,vads,,,,,color,,,success,,darker,,,uswds-system-color-green-cool-60v,#216e1f,#216e1f,,,$theme-color-success-darker from USWDS,,,,uswds-system-color-green-cool-60v,
+vads-color-success-light,Semantic,vads-color-success-light,vads,,,,,color,,,success,,light,,,uswds-system-color-green-cool-20v,#70e17b,#70e17b,,,$theme-color-success-light from USWDS,,,,uswds-system-color-green-cool-20v,
+vads-color-success-lighter,Semantic,vads-color-success-lighter,vads,,,,,color,,,success,,lighter,,,uswds-system-color-green-cool-5,#ecf3ec,#ecf3ec,,,$theme-color-success-lighter from USWDS,,,,uswds-system-color-green-cool-5,
+vads-color-va-accent,Semantic,vads-color-va-accent,vads,,,,,color,,,,,,,,uswds-system-color-yellow-50,#8a7237,#8a7237,,#988530,Used in the table and desktop main navigation menu as a top border highlight color. Should be replaced by vads-main-menu-color-border-top-open-on-light,checked,The name here is terrible. Let's replace with vads-main-menu-color-border-top-open-on-light,,uswds-system-color-yellow-50,
+vads-color-warning,Semantic,vads-color-warning,vads,,,,,color,,,warning,,,,,uswds-system-color-gold-20v,#ffbe2e,#ffbe2e,,,$theme-color-warning from USWDS,,,,uswds-system-color-gold-20v,
+vads-color-warning-dark,Semantic,vads-color-warning-dark,vads,,,,,color,,,warning,,dark,,,uswds-system-color-gold-30v,#e5a000,#e5a000,,,$theme-color-warning-dark from USWDS,,,,uswds-system-color-gold-30v,
+vads-color-warning-darker,Semantic,vads-color-warning-darker,vads,,,,,color,,,warning,,darker,,,uswds-system-color-gold-50v,#936f38,#936f38,,,$theme-color-warning-darker from USWDS,,,,uswds-system-color-gold-50v,
+vads-color-warning-light,Semantic,vads-color-warning-light,vads,,,,,color,,,warning,,light,,,uswds-system-color-yellow-10v,#fee685,#fee685,,,$theme-color-warning-light from USWDS,,,,uswds-system-color-yellow-10v,
+vads-color-warning-lighter,Semantic,vads-color-warning-lighter,vads,,,,,color,,,warning,,lighter,,,uswds-system-color-yellow-5,#faf3d1,#faf3d1,vads-alert-color-background-warning-on-light,,"Used for rules, lines, dividers, and separators
+",,,,vads-color-alert-background-warning-on-light,

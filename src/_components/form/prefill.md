@@ -6,7 +6,8 @@ title: Prefill
 intro-text: "Informs the user that information from their profile has been used to prefill form fields."
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86470&mode=design&t=h9BoxMWwcHe2DhUd-1
-status: use-deployed
+github-title: va-prefill
+status: use-best-practice
 anchors:
   - anchor: Examples
   - anchor: Usage

@@ -1,44 +1,47 @@
-<table class="usa-table usa-table-borderless">
-  <thead>
-    <tr>
-      <th>VADS Breakpoint Sass Variable</th>
-      <th>USWDS Breakpoint Custom Property</th>
-      <th>Width</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$xsmall-screen</code></td>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--mobile</code></td>
-      <td>320px</td>
-    </tr>
-    <tr>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$small-screen</code></td>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--mobile-lg</code></td>
-      <td>481px</td>
-    </tr>
-    <tr>
-      <td><span class="vads-u-background-color--white vads-u-display--inline-block vads-u-font-size--base">--</span></td>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--tablet</code></td>
-      <td>640px</td>
-    </tr>
-    <tr>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$medium-screen</code></td>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--medium-screen</code></td>
-      <td>768px</td>
-    </tr>
-    <tr>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$small-desktop-screen</code></td>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--desktop</code></td>
-      <td>1024px</td>
-    </tr>
-    <tr>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">$large-screen</code></td>
-      <td><code class="site-utility-class vads-u-display--inline-block vads-u-font-size--base">--desktop-lg</code></td>
-      <td>1201px</td>
-    </tr>
-  </tbody>
-</table>
+<va-table table-type="bordered" full-width>
+  <va-table-row>
+    <span>Deprecated VADS Breakpoint Names</span>
+    <span>USWDS Breakpoint Sass Variable</span>
+    <span>USWDS Breakpoint Custom Property</span>
+    <span>Width</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code">$xsmall-screen</code></span>
+    <span><code class="code">$mobile</code></span>
+    <span><code class="code">--mobile</code></span>
+    <span>320px</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code">$small-screen</code></span>
+    <span><code class="code">$mobile-lg</code></span>
+    <span><code class="code">--mobile-lg</code></span>
+    <span>481px</span>
+  </va-table-row>
+  <va-table-row>
+    <span></span>
+    <span><code class="code">$tablet</code></span>
+    <span><code class="code">--tablet</code></span>
+    <span>640px</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code">$medium-screen</code></span>
+    <span><code class="code">$medium-screen</code></span>
+    <span><code class="code">--medium-screen</code></span>
+    <span>768px</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code">$small-desktop-screen</code></span>
+    <span><code class="code">$desktop</code></span>
+    <span><code class="code">--desktop</code></span>
+    <span>1024px</span>
+  </va-table-row>
+  <va-table-row>
+    <span><code class="code">$large-screen</code></span>
+    <span><code class="code">$desktop-lg</code></span>
+    <span><code class="code">--desktop-lg</code></span>
+    <span>1201px</span>
+  </va-table-row>
+</va-table>
 
 {% unless include.hide_link == true %}
 <p>Read more about <a href="{{ site.baseurl }}/foundation/breakpoints">breakpoints</a>.</p>

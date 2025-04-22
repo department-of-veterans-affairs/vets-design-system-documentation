@@ -21,16 +21,16 @@ VA.gov uses two typefaces: Bitter for serif and Source Sans as a sans-serif.
   responsive=false
   css_property="font-family"
 %}
-  <div class="vads-l-row vads-u-flex-direction--column">
-    <div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row" style="border-top:none;">
+  <div class="vads-grid-row vads-u-flex-direction--column">
+    <div class="vads-grid-col site-showcase__col vads-u-display--flex tablet:vads-u-align-items--center vads-u-flex-direction--column tablet:vads-u-flex-direction--row" style="border-top:none;">
       <div><code class="code">.vads-u-font-family--sans</code></div>
-      <div class="medium-screen:vads-u-margin-left--auto">
+      <div class="tablet:vads-u-margin-left--auto">
         <span class="vads-u-font-family--sans vads-u-font-size--2xl">Source Sans Pro</span>
       </div>
     </div>
-    <div class="vads-l-col site-showcase__col vads-u-display--flex medium-screen:vads-u-align-items--center vads-u-flex-direction--column medium-screen:vads-u-flex-direction--row">
+    <div class="vads-grid-col site-showcase__col vads-u-display--flex tablet:vads-u-align-items--center vads-u-flex-direction--column tablet:vads-u-flex-direction--row">
       <div><code class="code">.vads-u-font-family--serif</code></div>
-      <div class="medium-screen:vads-u-margin-left--auto">
+      <div class="tablet:vads-u-margin-left--auto">
         <span class="vads-u-font-family--serif vads-u-font-size--2xl">Bitter</span>
       </div>
     </div>

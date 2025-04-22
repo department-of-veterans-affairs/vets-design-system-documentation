@@ -31,11 +31,10 @@
     transition-property: color, background-color, border-color;
   }
 
-  &__link i {
-    font-style: normal;
-    font-weight: 900;
+  &__link va-icon {
     margin-right: 8px;
-    font-size: 0.75em;
+    top: 2px;
+    position: relative;
   }
 
   &__link:active {
