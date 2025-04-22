@@ -1,7 +1,7 @@
 {% assign storybook_path = site.storybook_path %}
-{% if include.base_path %}
-  {% assign storybook_path = include.base_path %}
-{% endif %}
+{% if include.is_mobile %}{% assign storybook_path = site.storybook_mobile_path %}{% endif %}
+{% assign storybook_iframe_path = storybook_path | append: '/iframe.html?id=' | append: include.story | append: '&amp;viewMode=story' %}
+
 <style>
    @keyframes appear { to { visibility: visible; } }
 
@@ -19,13 +19,17 @@
   style="max-width: {{ include.width | default: '100%' }}"
 >
   <iframe
-    id="{{ include.story }}"
     width="100%"
+    height="{{ include.height }}"
     src="{{ storybook_iframe_path }}"
   ></iframe>
 </div>
 
-[{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_path }}/?path=/docs/{{ include.story }})
+{% assign story_name_prefix = '' %}
+{% if include.is_mobile %}{% assign story_name_prefix = 'va-mobile_' %}{% endif %}
+{% assign storybook_preview_path = site.storybook_path | append: '/?path=/story/' | append: story_name_prefix | append: include.story %}
+
+[{% if include.link_text %}<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text}}{% else %}See this{% endif %} in Storybook]({{ storybook_preview_path }})
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
