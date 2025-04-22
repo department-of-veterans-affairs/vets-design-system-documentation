@@ -8,19 +8,17 @@
     iframe {
         visibility: hidden;
         animation: appear 0s linear forwards;
+        border: none;
+        width: 100%;
     }
 </style>
-
-{% if include.is_mobile %}{% assign storybook_path = site.storybook_mobile_path %}{% endif %}
-{% assign storybook_iframe_path = storybook_path | append: '/iframe.html?id=' | append: include.story | append: '&amp;viewMode=story' %}
 
 <div
   class="site-showcase"
   style="max-width: {{ include.width | default: '100%' }}"
 >
   <iframe
-    width="100%"
-    height="{{ include.height }}"
+    id="{{ include.story }}"
     src="{{ storybook_iframe_path }}"
   ></iframe>
 </div>
@@ -41,8 +39,12 @@
 
     function adjustIframeHeight(iframe) {
       try {
-        const iframeBody = iframe.contentWindow.document.body;
-        const newHeight = iframeBody.scrollHeight;
+        const iframeDocument = iframe.contentWindow.document;
+        const iframeBody = iframeDocument.body;
+        const newHeight = Math.max(
+          iframeBody.scrollHeight,
+          iframeDocument.documentElement.scrollHeight
+        );
         iframe.style.height = newHeight + 'px';
       } catch (error) {
         console.error('Error adjusting iframe height:', error);
