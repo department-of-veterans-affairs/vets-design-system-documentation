@@ -33,22 +33,13 @@
   document.addEventListener('DOMContentLoaded', function () {
     const iframe = document.getElementById('{{ include.story }}');
 
-    iframe.addEventListener('load', function () {
-      adjustIframeHeight(iframe);
-    });
+    window.addEventListener('message', function (event) {
+      if (event.origin !== new URL(iframe.src).origin) return;
 
-    function adjustIframeHeight(iframe) {
-      try {
-        const iframeDocument = iframe.contentWindow.document;
-        const iframeBody = iframeDocument.body;
-        const newHeight = Math.max(
-          iframeBody.scrollHeight,
-          iframeDocument.documentElement.scrollHeight
-        );
-        iframe.style.height = newHeight + 'px';
-      } catch (error) {
-        console.error('Error adjusting iframe height:', error);
+      const { type, height } = event.data || {};
+      if (type === 'storybook-resize' && height) {
+        iframe.style.height = `${height}px`;
       }
-    }
+    });
   });
 </script>

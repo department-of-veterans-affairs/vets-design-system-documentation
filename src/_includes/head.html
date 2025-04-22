@@ -54,6 +54,21 @@
     }
   </script>
 
+  <script>
+    window.addEventListener('load', function () {
+      const resizeObserver = new ResizeObserver(entries => {
+        for (let entry of entries) {
+          if (entry.target === document.body) {
+            const height = document.body.scrollHeight;
+            window.parent.postMessage({ type: 'storybook-resize', height }, '*');
+          }
+        }
+      });
+
+      resizeObserver.observe(document.body);
+    });
+  </script>
+
   <!-- Icons -->
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
   <link href="{{ site.baseurl }}/assets/img/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72">
