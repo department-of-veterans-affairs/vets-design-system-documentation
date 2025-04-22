@@ -20,6 +20,10 @@ anchors:
 
 {% include storybook-preview.html height="50px" story="components-va-link-action--default" link_text="va-link-action primary"  %}
 
+### Primary Entry
+
+{% include storybook-preview.html height="50px" story="components-va-link-action--primary-entry" link_text="va-link-action primary entry"  %}
+
 ### Secondary
 
 {% include storybook-preview.html height="50px" story="components-va-link-action--secondary" link_text="va-link-action secondary" %}
@@ -48,33 +52,18 @@ The action link is an eye-catching link to start a digital service. An action li
 
 ### Choosing between variations
 
-* Primary (green) and secondary (blue) Action Links can exist on the same page, but we don’t recommend placing them side by side.
-
-### Placement
-
-* The icon on the left of the Action Link can be slightly out of the grid to grab the user’s attention.
+* **Primary entry is for entry points to an application.** The Primary entry variation was added to stand out within text-heavy pages and to be distinct from a button, yet have a similar visual weight to a button for emphasis. Use a Primary entry link to enter an application. Current examples include the Form Upload tool and form-based applications.
+* **Primary and secondary can go on the same page.** Primary (green) and secondary (blue) Action Links can exist on the same page, but we don’t recommend placing them side by side.
 
 ## Content considerations
 
-* Keep Action Link content short. Start with a verb. For example: “*Apply for health care benefits*” or “*Register for care*”
-* Refer to the content considerations for the [link]({{ site.baseurl }}{{ page.has-parent }}#content-considerations).
+* **Keep Link - Action content short.** Start with a verb. For example: “*Apply for health care benefits*” or “*Register for care*”
+* Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links).
 
 ## Accessibility considerations
 
-* Action Links must have an `href` attribute. 
-* Action links should only use an anchor tag `<a>`. The `<a>` element, or anchor element, is used to create a hyperlink to another webpage or another location within the same webpage.
-* For external links or links that open up to a new tab, make sure to add an aria label to let the user know what sort of link they’re clicking on.
+* **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
+* **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
+  * By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
 
 {% include content/links-vs-buttons.md %}
-
-### Links to content in another language
-
-* Links that point to localized content in another language should have an `hreflang` attribute and a `lang` attribute in the following format:
-
-```
-<a
-  href="#"
-  hreflang="es"
-  lang="es"
->En Español</a>
-```
