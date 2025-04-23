@@ -24,11 +24,13 @@
     id="{{ include.story }}"
     src="{{ storybook_iframe_path }}"
     title="Storybook: {{ include.story }}"
-    {% unless include.auto_resize == false %}
-      data-auto-resize="true"
-    {% else %}
+    {% if include.auto_resize == false %}
       data-auto-resize="false"
-    {% endunless %}
+      style="width: 100%; height: {{ include.height | default: '150px' }}; border: none;"
+    {% else %}
+      data-auto-resize="true"
+      style="width: 100%; border: none;"
+    {% endif %}
   ></iframe>
 </div>
 
