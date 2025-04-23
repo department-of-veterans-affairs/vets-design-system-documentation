@@ -17,7 +17,7 @@ anchors:
 
 ### Desktop
 
-{% include storybook-preview.html height="300px" story="components-va-back-to-top--default" link_text="va-back-to-top" %}
+{% include storybook-preview.html height="300px" story="components-va-back-to-top--default" link_text="va-back-to-top" auto_resize=false %}
 
 ## Usage
 
