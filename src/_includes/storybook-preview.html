@@ -5,14 +5,14 @@
 {% assign storybook_iframe_path = storybook_path | append: '/iframe.html?id=' | append: include.story | append: '&viewMode=story' %}
 
 <style>
-  iframe {
+  /* iframe {
     border: none;
     width: 100%;
-    /* min-height: 300px;  fallback height */
+    min-height: 300px;  fallback height
     opacity: 0;
     transition: opacity 0.3s ease;
     display: block;
-  }
+  } */
 </style>
 
 <div
@@ -36,40 +36,67 @@
 [<img aria-hidden="true" role="img" src="{{ site.baseurl }}/images/storybook.svg" class="site-component-resources-links__icon" width="16px" alt="Storybook logo">View {{ include.link_text | default: 'this' }} in Storybook]({{ storybook_preview_path }})
 
 <script>
-  function resizeIframes() {
-    const iframes = document.querySelectorAll('iframe.storybook-embed');
-    
-    iframes.forEach((iframe, index) => {
-      try {
-        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-        if (!iframeDoc) return;
+    function injectResizeScript(iframe, id) {
+    const script = `
+      (function () {
+        let lastHeight = 0;
 
-        // Get the height of the iframe's body
-        const newHeight = iframeDoc.body.scrollHeight;
-
-        // Only update height if it's changed
-        if (iframe.dataset.lastHeight != newHeight) {
-          iframe.style.height = newHeight + 35 + 'px';
-          iframe.dataset.lastHeight = newHeight;
+        function sendHeight() {
+          const height = document.documentElement.scrollHeight;
+          if (height !== lastHeight) {
+            lastHeight = height;
+            window.parent.postMessage({
+              type: 'storybook-resize',
+              id: '${id}',
+              height
+            }, '*');
+          }
         }
-      } catch (err) {
-        // Likely a cross-origin iframe, can't access it
-        // Consider setting a default height or using postMessage version instead
-        console.warn('Cannot access iframe content due to cross-origin restrictions:', err);
+
+        const observer = new ResizeObserver(sendHeight);
+        observer.observe(document.body);
+
+        setInterval(sendHeight, 300);
+        window.addEventListener('DOMContentLoaded', sendHeight);
+      })();
+    `;
+
+    const blob = new Blob([script], { type: 'text/javascript' });
+    const blobUrl = URL.createObjectURL(blob);
+
+    const inject = () => {
+      try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        const s = doc.createElement('script');
+        s.src = blobUrl;
+        doc.head.appendChild(s);
+      } catch (e) {
+        // Might not be allowed due to cross-origin policy
+        console.warn('Could not inject resize script:', e);
       }
-    });
+    };
+
+    // Try injecting after iframe loads
+    iframe.addEventListener('load', inject);
   }
 
-  // Try resizing every 500ms (you can adjust this)
-  setInterval(resizeIframes, 500);
-
-  // Also try when the page first loads
-  window.addEventListener('load', resizeIframes);
-
   document.querySelectorAll('iframe.storybook-embed').forEach((iframe) => {
-    iframe.addEventListener('load', () => {
-      // Set the opacity to 1 when the iframe is loaded
-      iframe.style.opacity = 1;
-    });
+    const id = iframe.dataset.storybookId;
+    const autoResize = iframe.dataset.autoResize !== 'false';
+
+    if (autoResize && id) {
+      injectResizeScript(iframe, id);
+    }
+  });
+
+  // Resize the iframe from the message sent by injected script
+  window.addEventListener('message', (event) => {
+    const { type, id, height } = event.data || {};
+    if (type === 'storybook-resize' && id) {
+      const iframe = document.querySelector(`iframe[data-storybook-id="${id}"]`);
+      if (iframe && iframe.dataset.autoResize !== 'false') {
+        iframe.style.height = height + 'px';
+      }
+    }
   });
 </script>
