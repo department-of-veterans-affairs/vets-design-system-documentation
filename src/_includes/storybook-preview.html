@@ -20,6 +20,7 @@
   style="max-width: {{ include.width | default: '100%' }}"
 >
   <iframe
+    class="storybook-embed"
     id="{{ include.story }}"
     src="{{ storybook_iframe_path }}"
     title="Storybook: {{ include.story }}"
