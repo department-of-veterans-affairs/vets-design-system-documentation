@@ -65,4 +65,11 @@
 
   // Also try when the page first loads
   window.addEventListener('load', resizeIframes);
+
+  document.querySelectorAll('iframe.storybook-embed').forEach((iframe) => {
+    iframe.addEventListener('load', () => {
+      // Set the opacity to 1 when the iframe is loaded
+      iframe.style.opacity = 1;
+    });
+  });
 </script>
