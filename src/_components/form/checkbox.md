@@ -92,27 +92,27 @@ anchors:
 
 ### Forms pattern - Single error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="va-checkbox group forms pattern single error" height="600px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="Error state for single checkbox pattern" height="600px" %}
 
 ### Forms pattern - Multiple
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="va-checkbox group forms pattern multiple" height="600px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="Multiple checkbox pattern example" height="600px" %}
 
 ### Error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="va-checkbox group error" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="Checkbox group with error state" %}
 
 ### Internationalization
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="Checkbox group with internationalization" %}
 
 ### Indeterminate
 
-Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected.
+Use the indeterminate state for a parent checkbox that controls a sublist of checkboxes. The parent checkbox shows this state when some (but not all) child checkboxes are selected.
 
-See pattern guidance when asking users [a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
+See our pattern guidance on [asking users for a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
 
-{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" %}
 
 ## Usage
 

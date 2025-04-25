@@ -1,12 +1,12 @@
 #### Conditionally revealed fields
 
-In the radio button and checkbox components, we offer an option to conditionally reveal fields when the user selects an answer. These fields are often used to group related questions together by revealing a single follow-up question only when they’re relevant to the user.
+Conditionally revealed fields show additional form elements only when a user selects a specific option. They help reduce visual complexity by showing follow-up questions only when they're relevant.
 
-Conditionally revealed fields can be used if the following conditions are met:
+When using conditionally revealed fields:
 
-1. There should only be one reveal on a page.
-2. When the revealed trigger is selected, you must be able to tab directly into the newly revealed field (Which is why we've put the "other" question last.)
-3. The newly revealed question field must be understood by itself.  For example, don't just say "Other". Instead, say:
+1. **Limit to one reveal per page.** Avoid confusing the user with multiple expanding sections.
+2. **Ensure keyboard accessibility.** When a user selects the trigger option, they should be able to tab directly into the newly revealed field (which is why the trigger option is placed last).
+3. **Make the revealed question self-explanatory.** Avoid vague labels like "Other" for text fields. Instead, use clear, specific labels that work independently:
 
 > Since your relationship with the veteran was not listed, please describe it here
 
