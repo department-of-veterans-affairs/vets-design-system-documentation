@@ -112,7 +112,7 @@ Use the indeterminate state for a parent checkbox that controls a sublist of che
 
 See our pattern guidance on [asking users for a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
 
-{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" %}
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
 ## Usage
 
