@@ -4,10 +4,11 @@ sub_section: Experimental pattern name
 title: Experimental pattern name
 draft: true
 ---
-Suggested by: your name <br/>
-Team/contract: your team <br />
-Product/application/form: describe where your Experimental component/pattern will live <br/>
-Date: today's date <br/>
+
+Suggested by: Your name
+Team/contract: Your team
+Product/application/form: Describe where your Experimental component/pattern will live
+Date: Today's date
 
 # Experimental pattern name 
 
@@ -29,7 +30,7 @@ Talk about the "why" of your Experimental component/pattern. What problem(s) wil
 4. **Name**. Description.
 5. **Name**. Description.
 
-## UX behavior 
+## UX behavior
 
 Include placement and interaction details here.
 
@@ -38,7 +39,7 @@ Include placement and interaction details here.
 
 ## Additional notes
 
-Add supplemental information here. 
+Add supplemental information here.
 
 * This may include PR links, links to code, etc.
 * Note if your experimental pattern relates to other components or patterns. Please include links.
@@ -46,11 +47,13 @@ Add supplemental information here.
 
 ## Design mockups
 
-Add links to images or Sketch for Teams files here. Please include mobile and desktop versions of your design.
+Add links to Figma file here. Please include mobile and desktop versions of your design.
 
 ## Accessibility notes
 
-How does an engineer build the pattern to meet WCAG 2.2 standards? What is the focus order of UI elements in your pattern? Include guidelines and code snippets here.
+* How does an engineer build the pattern to meet WCAG 2.2 standards?
+* What is the focus order of UI elements in your pattern? 
+* Include guidelines and code snippets here.
 
 ## Research
 
