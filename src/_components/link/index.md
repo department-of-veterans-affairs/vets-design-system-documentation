@@ -206,6 +206,8 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 
 {% include content/links-vs-buttons.md %}
 
+{% include content/avoid-links-in-headers.md %}
+
 ## Related
 
 * [Button]({{ site.baseurl }}/components/button)
