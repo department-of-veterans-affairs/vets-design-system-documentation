@@ -129,6 +129,10 @@ See pattern guidance when asking users [a mutually exclusive answer](https://des
 * If there are too many options to display on a mobile screen.
 * If a user can only select one option from a list (use radio buttons instead).
 
+#### Choosing between variations
+
+* **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For checkbox groups used outside of this pattern, for example on a longer form page, use the [Label header](#label-header) checkbox group variation.
+
 {% include content/conditionally-revealed-fields.md %}
 
 ### Errors
