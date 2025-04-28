@@ -89,7 +89,7 @@ By default, the web component icon will display as `--vads-color-base` which is 
     padding: units(1);
 }
 
-<va-icon size="3" icon="medical_services" class="info-icon" />
+<va-icon size="3" icon="medical_services" className="info-icon" />
 
 ```
 
