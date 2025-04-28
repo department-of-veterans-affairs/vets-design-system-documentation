@@ -141,7 +141,7 @@ By default, the web component icon will display as `--vads-color-base` which is 
 ## Accessibility considerations
 Icon usage typically falls into two categories, decorative and semantic.
 
-- **Decorative icons** are icons that are only used for visual reinforcement. If these were removed from the page, users would still be able to understand and use the page.</li>
+- **Decorative icons** are icons that are only used for visual reinforcement. If these were removed from the page, users would still be able to understand and use the page.
 - **Semantic icons** are icons that convey meaning, rather than only being decorative. This includes icons without text next to them that are used as interactive elements such as buttons.
 
 ### Using decorative icons
