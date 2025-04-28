@@ -26,7 +26,7 @@ anchors:
 
 ### Rerender state
 
-{% include storybook-preview.html story="uswds-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs v3 and adjust state" %}
+{% include storybook-preview.html story="uswds-va-breadcrumbs--rerender-state" link_text="va-breadcrumbs v3 and adjust state" scrollable="true" %}
 
 ### Wrapping state
 
