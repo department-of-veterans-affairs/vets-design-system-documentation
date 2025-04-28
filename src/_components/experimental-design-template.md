@@ -20,7 +20,7 @@ Talk about the "why" of your Experimental component/pattern. What problem(s) wil
 
 ## Example
 
-<!-- Insert an image with callouts here, if you have one. Callouts should live as numbered text beneath the image (for accessibility reasons). If the image is large, callout text can live within the image itself as well as beneath it. Use the Anatomy callouts Sketch library in your mockups. -->
+<!-- Insert an image with callouts here, if you have one. Callouts should live as numbered text beneath the image (for accessibility reasons). If the image is large, callout text can live within the image itself as well as beneath it. Use the Anatomy callouts Figma library in your mockups. -->
 
 ![Form Confirmation page example](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/Form-confirmation-mini-template.png)
 
