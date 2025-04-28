@@ -89,7 +89,7 @@ By default, the web component icon will display as `--vads-color-base` which is 
     padding: units(1);
 }
 
-<va-icon size="3" icon="medical_services" className="info-icon" />
+<va-icon size="3" icon="medical_services" class="info-icon" />
 
 ```
 
@@ -171,17 +171,11 @@ Exceptions to this are a close button on a modal or an alert. However, it is adv
       Search
       <a href="https://designsystem.digital.gov/components/icon/">USWDS Icon</a> to see if another existing icon suits your
       needs. Preferably, choose generic icons that could be reused in various applications.
-
-      <p>If VADS and USWDS do not contain a suitable icon, you
-        may search <a href="https://fonts.google.com/icons">Material
-          Icons</a> or browse the official <a
-          href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a>
-        Figma
-        plugin by Google. Note that we typically use the "filled" icon style.</p>
+      <p>If VADS and USWDS do not contain a suitable icon, you may search <a href="https://fonts.google.com/icons">Material
+          Icons</a> or browse the official <a href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a> Figma plugin by Google. Note that we typically use the "filled" icon style.</p>
       </li>
   <li>
-    <strong>Submit Your Icon</strong>:
-    Once you've found a suitable icon for VADS, submit it using the following link:
+    <strong>Submit Your Icon</strong>: Once you've found a suitable icon for VADS, submit it using the following link:
     <p>
       <va-action-link href="{{ site.request_addition_link }}">Request a new addition to the Design System</va-action-link>
     </p>
