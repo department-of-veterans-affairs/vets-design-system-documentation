@@ -110,8 +110,6 @@
     </ul>
   </div>
 
-
-  <!-- Use the accurate heading level to maintain the document outline -->
   <li>
     <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
       Patterns
@@ -136,6 +134,32 @@
       {% endfor %}
     </ul>
   </div>
+
+  <li>
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/templates/" %}true{% else %}false{% endif %}" aria-controls="nav-a6">
+      Templates
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
+    </button>
+  </li>
+  <div id="nav-a6" class="usa-accordion-content" aria-hidden="{% if page.url contains "/templates/" %}false{% else %}true{% endif %}">
+    <ul class="usa-sidenav-list">
+      <li class="{% if page.url contains "templates/index" %}active-level{% endif %}">
+        <a class="{% if page.url contains "templates/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/templates">Overview</a>
+      </li>
+      {% assign sortedTemplates = site.templates | sort: "title", "last" %}
+      {% for p in sortedTemplates %}
+        {% if p.layout != "iframe" %}
+          {% unless p.index or p.draft %}
+            <li class="{% if p.url == page.url %}active-level{% endif %}">
+              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            </li>
+          {% endunless %}
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
   </ul>
   <a href="{{ site.github_issues_templates }}" class="site-mobile-nav__link site-mobile-nav__link--icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 32" width="16">
