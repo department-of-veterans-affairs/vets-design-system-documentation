@@ -2,6 +2,19 @@
 {% if include.is_mobile %}{% assign storybook_path = site.storybook_mobile_path %}{% endif %}
 {% assign storybook_iframe_path = storybook_path | append: '/iframe.html?id=' | append: include.story | append: '&amp;viewMode=story' %}
 
+{% if include.scrollable %}
+<div
+  class="site-showcase"
+  style="width: 840px; max-width: 100%; overflow-x: auto;"
+>
+  <iframe
+    width="1000px"
+    height="{{ include.height }}"
+    src="{{ storybook_iframe_path }}"
+    style="border: 0; padding-right: 20px;"
+  ></iframe>
+</div>
+{% else %}
 <div
   class="site-showcase"
   style="max-width: {{ include.width | default: '100%' }}"
@@ -12,6 +25,7 @@
     src="{{ storybook_iframe_path }}"
   ></iframe>
 </div>
+{% endif %}
 
 {% assign story_name_prefix = '' %}
 {% if include.is_mobile %}{% assign story_name_prefix = 'va-mobile_' %}{% endif %}
