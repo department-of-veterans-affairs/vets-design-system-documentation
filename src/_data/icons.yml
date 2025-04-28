@@ -1,282 +1,242 @@
-Appointments:
-  - name: Duration (days/months/years)
-    icon-name: calendar_today
-    unicode: "#xf133;"
-    additional-usage: Link - Calendar
-  - name: In-person appointment
-    icon-name: location_city
-    unicode: "#xf1ad;"
-  - name: Phone appointment
-    icon-name: phone
-    unicode: "#xf879;"
-  - name: Time (hours/minutes)
-    icon-name: schedule
-    unicode: "#xf0e0;"
-  - name: TTY
-    icon-name: tty
-  - name: Video appointment
-    icon-name: videocam
-    unicode: "#xf03d;"
+- id: account_circle
+  usage: Identification
 
-Feedback:
-  - name: Informational
-    icon-name: info
-    unicode: "#xf05a;"
-    additional-usage: Alert - Info
-  - name: Confirmation or completion
-    icon-name: check_circle
-    additional-usage: Alert - Success
-  - name: Warning
-    icon-name: warning
-    unicode: "#xf071;"
-    additional-usage: Alert - Warning
-  - name: Error
-    icon-name: error
-    unicode: "#xf06a;"
-    additional-usage: Alert - Error
-  - name: Sign in or tool prompt
-    icon-name: lock
-    additional-usage: Alert - Continue
-  - name: Confirmation or completion
-    icon-name: check
-    unicode: "#xf00c;"
-    additional-usage: Process List
+- id: acute
+  usage: Health
 
-Health:
-  - name: In progress status
-    icon-name: acute
-  - name: Lab and test results (Facilities)
-    icon-name: assignment
-    unicode: "#xf46d;"
-    additional-usage: Compare GI benefits by school (Profile)
-  - name: Health care facility operating status (Facilities)
-    icon-name: adjust
-    unicode: "#xf192;"
-  - name: Hearing aid (Facilities)
-    icon-name: hearing_disabled
-    unicode: "#xf2a4;"
-  - name: Shipped items
-    icon-name: local_shipping
-    additional-usage: Mobile app
-  - name: Medications
-    icon-name: pill
+- id: add
+  usage: Interaction, Add item
 
-Hub:
-  - name: Burials
-    icon-name: star
-    unicode: "#xf005;"
-  - name: Careers and employment
-    icon-name: work
-    unicode: "#xf0b1;"
-    additional-usage: On-the-job Training (GI Bill Comparison tool)
-  - name: Disability
-    icon-name: description
-    unicode: "#xf15c;"
-  - name: Education
-    icon-name: school
-    unicode: "#xf19d;"
-    additional-usage: VA education and benefits (Profile)
-  - name: Family member benefits
-    icon-name: groups
-    unicode: "#xf0c0;"
-  - name: Healthcare
-    icon-name: medical_services
-    unicode: "#xf0fa;"
-  - name: Housing
-    icon-name: home
-    unicode: "#xf015;"
-  - name: Life Insurance
-    icon-name: shield
-    unicode: "#xf3ed;"
-  - name: Pension
-    icon-name: handshake
-    unicode: "#xf2b5;"
-  - name: Records
-    icon-name: identification
-    unicode: "#xf2c2;"
-  - name: Service member benefits
-    icon-name: flag
-    unicode: "#xf74d;"
+- id: adjust
+  usage: Health
 
+- id: arrow_back
+  usage: Navigation
 
-Identification:
-  - name: Telephone number
-    icon-name: phone
-    unicode: "#xf095;"
-  - name: Phone
-    icon-name: phone_iphone
-    additional-usage: Telephone number in Crisis Line modal
-  - name: Location or address
-    icon-name: location_on
-    unicode: "#xf041;"
-  - name: Driving directions
-    icon-name: directions
-    unicode: "#xf018;"
-  - name: Website address
-    icon-name: language
-    unicode: "#xf0ac;"
-  - name: Help or contact information
-    icon-name: help
-    unicode: "#xf059;"
-  - name: Settings
-    icon-name: settings
-    unicode: "#xf013;"
-  - name: Homepage sign in button
-    icon-name: account_circle
-    unicode: "#f2bd;"
-  - name: Announcement
-    icon-name: campaign
-    unicode: "#f0e0;"
+- id: arrow_downward
+  usage: Navigation
 
-Interaction:
-  - name: Accordion expand indicator
-    icon-name: add
-    additional-usage: Add item
-  - name: Accordion collapse indicator
-    icon-name: remove
-  - name: Close indicator (modals, alerts)
-    icon-name: close
-  - name: Download item
-    icon-name: file_download
-    additional-usage: Link - Download
-  - name: Dropdown expand indicator
-    icon-name: expand_more
-  - name: Dropdown collapse indicator
-    icon-name: expand_less
-  - name: Form field dropdown
-    icon-name: unfold_more
-  - name: Reload view
-    icon-name: refresh
-    additional-usage: Mobile app
-  - name: Remove or delete item
-    icon-name: delete
-    unicode: "#xf1f8;"
-  - name: Cancel an action
-    icon-name: cancel
-  - name: Loading indicator
-    icon-name: autorenew
-    unicode: "#xf1f8;"
-  - name: Filter
-    icon-name: filter_alt
-    unicode: "#xf1f8;"
-  - name: List filter
-    icon-name: filter_list
-    unicode: "#xf1f8;"
+- id: assignment
+  usage: Health, Compare GI benefits by school (Profile)
 
+- id: assignment_turned_in
+  usage: Profile
 
-Messaging:
-  - name: Attachment
-    icon-name: attach_file
-    unicode: "#xf0c6;"
-  - name: Content folder
-    icon-name: folder
-    unicode: "#xf07b;"
-    additional-usage: Move
-  - name: Inbox
-    icon-name: inbox
-    additional-usage: Messaging, Mobile app
-  - name: Message, letter
-    icon-name: mail
-    unicode: "#xf0e0;"
-    additional-usage: Subscribe to news, notifications, or updates (Facilities)
-  - name: Print
-    icon-name: print
-    unicode: "#xf02f;"
-  - name: Reply
-    icon-name: undo
-    unicode: "#xf3e5;"
-  - name: Secure messaging
-    icon-name: chat
+- id: attach_file
+  usage: Messaging
 
-Navigation:
-  - name: Previous
-    icon-name: navigate_far_before
-    unicode: "#xf100;"
-  - name: Next
-    icon-name: navigate_far_next
-    unicode: "#xf101;"
-  - name: External link
-    icon-name: launch
-    unicode: "#xf35d;"
-  - name: Link - Active component
-    icon-name: navigate_next
-    unicode: "#xf054;"
-  - name: Pagination - Navigate previous
-    icon-name: navigate_before
-  - name: Navigate page down
-    icon-name: arrow_downward
-    unicode: "#xf063;"
-  - name: Navigate page up
-    icon-name: arrow_back
-    unicode: "#xf062;"
-  - name: Search
-    icon-name: search
-    unicode: "#xf002;"
-  - name: Channel
-    icon-name: youtube
-    unicode: "#xf167;"
-    additional-usage: Link - Channel, YouTube (Social)
-  - name: Video
-    icon-name: play_circle
-    unicode: "#xf144;"
-    additional-usage: Link - Video
+- id: attach_money
+  usage: Profile, Check your GI bill statement of benefits
 
-Profile:
-  - name: Appointment
-    icon-name: event_available
-    unicode: "#xf274;"
-  - name: Claims and appeals
-    icon-name: assignment_turned_in
-    unicode: "#xf46c;"
-  - name: Debt
-    icon-name: request_quote
-    unicode: "#xf571;"
-  - name: Direct Deposit
-    icon-name: attach_money
-    unicode: "#xf155;"
-    additional-usage: Profile - Check your GI bill statement of benefits
-  - name: Messages
-    icon-name: forum
-    unicode: "#xf086;"
-  - name: Medical records
-    icon-name: note_add
-    unicode: "#xf477;"
-  - name: Payment history
-    icon-name: how_to_reg
-    unicode: "#xf4fc;"
-  - name: Prescriptions
-    icon-name: medication
-    unicode: "#xf485;"
-  - name: Submitted
-    icon-name: fact_check
-  - name: Travel reimbursement
-    icon-name: work
-    unicode: "#xf0f2;"
+- id: autorenew
+  usage: Interaction
 
-Social:
-  - name: Apple App Store
-    icon-name: app_store
-  - name: Facebook
-    icon-name: facebook
-    unicode: "#xf090;"
-  - name: Flickr
-    icon-name: flickr
-    unicode: "#xf16e;"
-  - name: Google Play Store
-    icon-name: google_play
-  - name: Instagram
-    icon-name: instagram
-    unicode: "#xf167;"
-  - name: Twitter
-    icon-name: twitter
-    unicode: "#xf099;"
-  - name: LinkedIn
-    icon-name: linkedin
-  - name: X
-    icon-name: x
+- id: calendar_today
+  usage: Appointments, Link - Calendar
 
-developer.va.gov:
-  - name: Authentication
-    icon-name: key
-  - name: Tags
-    icon-name: sell
+- id: campaign
+  usage: Identification
+
+- id: cancel
+  usage: Interaction
+
+- id: check
+  usage: Feedback, Process List
+
+- id: check_circle
+  usage: Feedback, Alert - Success
+
+- id: chat
+  usage: Messaging
+
+- id: close
+  usage: Interaction
+
+- id: delete
+  usage: Interaction
+
+- id: description
+  usage: hub
+
+- id: directions
+  usage: Identification
+
+- id: error
+  usage: Feedback, Alert - Error
+
+- id: event_available
+  usage: Profile
+
+- id: expand_less
+  usage: Interaction
+
+- id: expand_more
+  usage: Interaction
+
+- id: fact_check
+  usage: Profile
+
+- id: facebook
+  usage: Social
+
+- id: file_download
+  usage: Interaction, Link - Download
+
+- id: filter_alt
+  usage: Interaction
+
+- id: filter_list
+  usage: Interaction
+
+- id: flickr
+  usage: Social
+
+- id: folder
+  usage: Messaging, Move
+
+- id: forum
+  usage: Profile
+
+- id: google_play
+  usage: Social
+
+- id: groups
+  usage: hub
+
+- id: handshake
+  usage: hub
+
+- id: hearing_disabled
+  usage: Health
+
+- id: help
+  usage: Identification
+
+- id: home
+  usage: hub
+
+- id: how_to_reg
+  usage: Profile
+
+- id: identification
+  usage: hub
+
+- id: info
+  usage: Feedback, Alert - Info
+
+- id: instagram
+  usage: Social
+
+- id: key
+  usage: developer.va.gov
+
+- id: language
+  usage: Identification
+
+- id: launch
+  usage: Navigation
+
+- id: linkedin
+  usage: Social
+
+- id: local_shipping
+  usage: Health, Mobile app
+
+- id: location_city
+  usage: Appointments
+
+- id: location_on
+  usage: Identification
+
+- id: lock
+  usage: Feedback, Alert - Continue
+
+- id: mail
+  usage: Messaging, Subscribe to news, notifications, or updates (Facilities)
+
+- id: medical_services
+  usage: hub
+
+- id: medication
+  usage: Profile
+
+- id: navigate_before
+  usage: Navigation
+
+- id: navigate_far_before
+  usage: Navigation
+
+- id: navigate_far_next
+  usage: Navigation
+
+- id: navigate_next
+  usage: Navigation
+
+- id: note_add
+  usage: Profile
+
+- id: phone
+  usage: Identification
+
+- id: phone_iphone
+  usage: Identification, Telephone number in Crisis Line modal
+
+- id: pill
+  usage: Health
+
+- id: play_circle
+  usage: Navigation, Link - Video
+
+- id: print
+  usage: Messaging
+
+- id: refresh
+  usage: Interaction, Mobile app
+
+- id: remove
+  usage: Interaction
+
+- id: request_quote
+  usage: Profile
+
+- id: schedule
+  usage: Appointments
+
+- id: search
+  usage: Navigation
+
+- id: sell
+  usage: developer.va.gov
+
+- id: shield
+  usage: hub
+
+- id: star
+  usage: hub
+
+- id: tty
+  usage: Appointments
+
+- id: twitter
+  usage: Social
+
+- id: unfold_more
+  usage: Interaction
+
+- id: undo
+  usage: Messaging
+
+- id: videocam
+  usage: Appointments
+
+- id: warning
+  usage: Feedback, Alert - Warning
+
+- id: work
+  usage: Profile, Hub, On-the-job Training (GI Bill Comparison tool)
+
+- id: x
+  usage: Social
+
+- id: youtube
+  usage: Navigation, Link - Channel, YouTube (Social)
