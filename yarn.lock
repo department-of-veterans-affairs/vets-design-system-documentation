@@ -9,13 +9,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@department-of-veterans-affairs/component-library@^50.2.0":
-  version "50.2.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-50.2.0.tgz#cb48c31da7042955a0d9ebd5439023e2dbc620bc"
-  integrity sha512-2AtXfSzNlM1pwcYUEmEsVVU/7jd35HuyW7Zl1PBxGtrbWxjwnJZBAOErefY1hMDHKB7Yqv83DX/R+AdhN9debQ==
+"@department-of-veterans-affairs/component-library@^50.2.1":
+  version "50.2.1"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-50.2.1.tgz#418df9903b6111af5f213c03a771da3577c0348a"
+  integrity sha512-tU7T5JWsX2Oekej3V4F9zzYfIflGckmGQpGTsOMBT/Cg0sgOrq3gJvkYg8XeSe1T4fE4Lu5izkcJD/GMFkCTQw==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.1.0"
-    "@department-of-veterans-affairs/web-components" "18.1.1"
+    "@department-of-veterans-affairs/web-components" "18.1.2"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
@@ -41,10 +41,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@18.1.1":
-  version "18.1.1"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-18.1.1.tgz#d588b99a187960e027a57ecf256b811bd3f8365d"
-  integrity sha512-2KIYmfW9IdeG/uo9ErJrpIeYU+J8nx+DDdU7RfUgaOXpLskpgSfDEkXhhrsOHYOvM6Nlxg4xPm9LPBWz89IITQ==
+"@department-of-veterans-affairs/web-components@18.1.2":
+  version "18.1.2"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-18.1.2.tgz#be0d91bf6400c63c2eb24239fbac6cae2057cd19"
+  integrity sha512-ucm7OKtoEfiaPhWPo8vQHI79owpVCqDoD0pn7M1RwZYy9vEcbX+AiOPek/jxd8ze6EMuioZrZqzqVXv0ivrHRg==
   dependencies:
     "@stencil/core" "4.20.0"
     aria-hidden "^1.1.3"
@@ -2641,7 +2641,7 @@ stream-shift@^1.0.0:
   resolved "https://registry.yarnpkg.com/stream-shift/-/stream-shift-1.0.3.tgz#85b8fab4d71010fc3ba8772e8046cc49b8a3864b"
   integrity sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+"string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -2659,6 +2659,15 @@ string-width@^1.0.1, string-width@^1.0.2:
     is-fullwidth-code-point "^1.0.0"
     strip-ansi "^3.0.0"
 
+string-width@^4.1.0:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
 string-width@^5.0.1, string-width@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-5.1.2.tgz#14f8daec6d81e7221d2a357e668cab73bdbca794"
@@ -2675,7 +2684,7 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -2688,6 +2697,13 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   integrity sha512-VhumSSbBqDTP8p2ZLKj40UjBCV4+v8bUSEpUb4KjRgWk9pbqGF4REFj6KEagidb2f/M6AzC0EmFyDNGaw9OCzg==
   dependencies:
     ansi-regex "^2.0.0"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
 
 strip-ansi@^7.0.1:
   version "7.1.0"

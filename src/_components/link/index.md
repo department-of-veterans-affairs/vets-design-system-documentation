@@ -14,6 +14,7 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Behavior
+  - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -102,30 +103,34 @@ anchors:
 ### When to use an Active link
 
 * **Collections, such as Hub pages.** Active links can be seen on [Hub pages]({{ site.baseurl }}/templates/hub#example)
-* **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis. 
+* **Less prominent links.** For links that need less prominence than an [Action link]({{ site.baseurl }}/components/link/action) and may appear in a [collection]({{ site.baseurl }}/components/link/collection), we recommend using an Active Link. Active Links have a hover behavior that includes a background color change and an animated right-facing chevron icon for more emphasis.
 
 ### When to use a Back link
+
 * **As a replacement for breadcrumb** on:
-  * <strong>Conventional Multi-step Forms</strong> that also:
+  * **Conventional Multi-step Forms** that also:
     * Have a [minimal header]({{ site.baseurl }}/components/header/header-minimal) and [minimal footer]({{ site.baseurl }}/components/footer/footer-minimal)
     * Follow the [one thing per page pattern]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern
     * Use the `H1` element to represent the headline for the current form page, rather than the step title in the step indicator
     * Include only a `Continue` button and do not have a `Back` button after the form
-  * <strong>Short Forms</strong> that has a small amount of short, concise steps. For example, the [Pact Act Wizard](https://staging.va.gov/pact-act-eligibility/introduction).
-  * <strong>Non-Form Pages</strong> where the current page was accessed from a related page and does not have additional navigation. For example, an appointment details page.
+  * **Short Forms** that has a small amount of short, concise steps. For example, the [Pact Act Wizard](https://staging.va.gov/pact-act-eligibility/introduction).
+  * **Non-Form Pages** where the current page was accessed from a related page and does not have additional navigation. For example, an appointment details page.
 
 ### When to use a Calendar link
+
 * **Adding an event to a calendar.** Use when the link adds an event to a digital calendar.
 
 ### When to use a Channel link
+
 * **YouTube channel.** Use when linking to a YouTube channel.
 
 ### When to use a Download link
+
 * **Downloading files.** Use for download links including but not limited to PDFs and Excel files.
 
 ### When to use a Video link
-* **YouTube Video.** Use when linking directly to a YouTube video.
 
+* **YouTube Video.** Use when linking directly to a YouTube video.
 
 ### When to consider something else
 
@@ -142,9 +147,9 @@ anchors:
 
 If for some reason you do not use a link web-component links must meet the following criteria:
 
-- All links use Source Sans Pro (Regular), underlined, at [vads-font-size-source-sans-normalized]({{ site.baseurl }}/foundation/typography#typography-tokens).
-- All links share the same color, [vads-color-link]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens) for icon, link text, and underline. On mobile, dark mode changes the link color to [vads-color-link-on-dark]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens). 
-- All text links should be underlined. This is especially important for low-vision users. (Exception: [side navigation links]({{ site.baseurl }}/components/sidenav) should not be underlined.)
+* All links use Source Sans Pro (Regular), underlined, at [vads-font-size-source-sans-normalized]({{ site.baseurl }}/foundation/typography#typography-tokens).
+* All links share the same color, [vads-color-link]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens) for icon, link text, and underline. On mobile, dark mode changes the link color to [vads-color-link-on-dark]({{ site.baseurl }}/foundation/color-palette#semantic-color-tokens). 
+* All text links should be underlined. This is especially important for low-vision users. (Exception: [side navigation links]({{ site.baseurl }}/components/sidenav) should not be underlined.)
 
 ## Behavior
 
@@ -173,6 +178,20 @@ Review "[Usage](#usage)" for guidance.
     * **[Text (SMS)](#text-sms)**: Open the default messages app.
 * **NOTE:** The Link component currently does not support inline links. A Paragraph component will be created in the future to support inline links, ensuring proper text wrapping and accessibility in React Native.
 
+## Code usage
+
+### Links to content in another language
+
+Links that point to localized content in another language should have an `hreflang` attribute and a `lang` attribute in the following format:
+
+```
+<a
+  href="#"
+  hreflang="es"
+  lang="es"
+>En Español</a>
+```
+
 ## Content considerations
 
 Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-guide/links).
@@ -183,11 +202,13 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 * **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
 * **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
 * **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
-  - By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
+  * By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
 
 {% include content/links-vs-buttons.md %}
 
-## Related 
+{% include content/avoid-links-in-headers.md %}
+
+## Related
 
 * [Button]({{ site.baseurl }}/components/button)
 * [On this page]({{ site.baseurl }}/components/on-this-page)

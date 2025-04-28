@@ -65,9 +65,9 @@ Here is the content structure for asking a user for an address:
 * Street address line 2 text input
 * Street address line 3 text input (if applicable)
 * City text input
-* State/Province/Region select box
+* State/Province/Region text field or select box (dependent on Country selection)
 * Postal code text input
-* Radio button component for mailing address same as home address (if applicable; this is on mailing address page only) 
+* Radio button component for mailing address same as home address (if applicable; this is on mailing address page only)
 
 ### How this pattern works
 
@@ -77,16 +77,17 @@ Here is the content structure for asking a user for an address:
 
 > The United States is automatically chosen as your country if you live on a military base outside of the country.
 
-* **If asking for only one address on a form, be clear which address (mailing or home) you’re asking for.** We recommend asking for a mailing address if you need to only ask for one address.
+* **If asking for only one address on a form, be clear which address (mailing or home) you're asking for.** We recommend asking for a mailing address if you need to only ask for one address.
 * **Street address Line 3 can be omitted.** Sometimes partner databases do not support a third line of address.
+* **State/Province/Region field type is determined by selected Country.** The State/Province/Region input field changes from a text-input to a select menu based on the country entered. When you select the United States, Canada, or Mexico, the input changes to a select menu and displays the appropriate options for the selected country.
 
 #### Multiple addresses: Mailing and Home addresses details
 
-Follow this guidance when asking for both mailing and home addresses. In some forms, we ask for both addresses because some veterans live in different homes depending on the time of year.
+Follow this guidance when asking for both mailing and home addresses. In some forms, we ask for both addresses because some Veterans live in different homes depending on the time of year.
 
 * **The mailing address always comes before home address.** We ask for a mailing address before home address because the majority of VA's correspondence is over mail.
 * **On the mailing address form, ask users if the home address is the same as the mailing address.** If the user chooses "Yes", they can skip the home address form.
-* **Indicate to users whether an update in this form will update their VA.gov profile.**  If an address addition or change will **not** update the user's VA.gov profile then use the text "*We’ve made these changes to only this form.*" Refer to the [Help users to update prefilled information pattern]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) for information on how to communicate that an update will be reflected in their profile.
+* **Indicate to users whether an update in this form will update their VA.gov profile.**  If an address addition or change will **not** update the user's VA.gov profile, then use the text "*We've made these changes to only this form.*" Refer to the [Help users to update prefilled information pattern]({{ site.baseurl }}/patterns/help-users-to/update-prefilled-information) for information on how to communicate that an update will be reflected in their profile.
 
 ### Address confirmation details
 
@@ -114,7 +115,7 @@ Use the [VADS templates (Patterns & Forms) for Addresses in Figma]({{ page.figma
 
 ## Content considerations
 
-* If you need to display an address after it has been collected, then [follow content style guidelines on addresses](/content-style-guide/dates-and-numbers#addresses).
+* If you need to display an address after it has been collected, then [follow content style guidelines on addresses]({{ site.baseurl }}/content-style-guide/dates-and-numbers#addresses).
 
 ### Labels, error messages, and hint text
 

@@ -152,6 +152,8 @@ Don’t change heading level in order to use a different font size.
 </div>
 </div>
 
+{% include content/avoid-links-in-headers.md %}
+
 ### Eyebrow
 
 <div class="site-showcase">

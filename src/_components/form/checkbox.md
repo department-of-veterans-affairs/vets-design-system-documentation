@@ -92,27 +92,27 @@ anchors:
 
 ### Forms pattern - Single error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="va-checkbox group forms pattern single error" height="600px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="Error state for single checkbox pattern" height="600px" %}
 
 ### Forms pattern - Multiple
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="va-checkbox group forms pattern multiple" height="600px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="Multiple checkbox pattern example" height="600px" %}
 
 ### Error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="va-checkbox group error" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="Checkbox group with error state" %}
 
 ### Internationalization
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="Checkbox group with internationalization" %}
 
 ### Indeterminate
 
-Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected.
+Use the indeterminate state for a parent checkbox that controls a sublist of checkboxes. The parent checkbox shows this state when some (but not all) child checkboxes are selected.
 
-See pattern guidance when asking users [a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
+See our pattern guidance on [asking users for a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
 
-{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
 ## Usage
 
@@ -128,6 +128,10 @@ See pattern guidance when asking users [a mutually exclusive answer](https://des
 
 * If there are too many options to display on a mobile screen.
 * If a user can only select one option from a list (use radio buttons instead).
+
+#### Choosing between variations
+
+* **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For checkbox groups used outside of this pattern, for example on a longer form page, use the [Label header](#label-header) checkbox group variation.
 
 {% include content/conditionally-revealed-fields.md %}
 
