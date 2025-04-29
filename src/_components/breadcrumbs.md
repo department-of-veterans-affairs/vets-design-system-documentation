@@ -12,6 +12,7 @@ anchors:
   - anchor: Behavior
   - anchor: Code usage
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
 ---
 
 ## Examples
@@ -77,20 +78,6 @@ Breadcrumbs represent hierarchical relationships between pages and their placeme
 
 Do not shorten or truncate titles of a page (the H1) in the breadcrumb to reduce or eliminate wrapping. Consider alternative, shorter page titles if possible. Always follow the content style guide for writing [page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles).
 
-#### Pages with Personally Identifiable Information (PII) or Personal Health Information (PHI)
-- Pages with PII or PHI in H1s must genericize the corresponding breadcrumb segment.  This ensures this information is not tracked back into analytics or other logs via the link text for that breadcrumb segment.  
-- **Example:** A detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc.   
-
-Do this:  
-> - H1: Prednisone, 25mg
-> - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Medication detail
-> - Title tag:  Medication detail – Medications | Veterans Affairs 
-
-Not this: 
-> - H1 Prednisone, 25mg 
-> - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Prednisone, 25mg 
-> - Title tag: Prednisone, 25mg – Medications | Veterans Affairs 
-
 ### All segments of the breadcrumb should be interactive and link to their corresponding page
 
 Each breadcrumb segment, including the current page segment, must link to its corresponding page. Making every segment a link allows screen readers to voice the page link whether the user navigates by element or by tabbing. Making the current page a link rather than text makes it a focusable and clickable element. This follows [WAI-ARIA Authoring Practices Guide (APG) guidance](https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/), which states that an element with `aria-current="page"` should represent the current page.
@@ -122,3 +109,28 @@ To use React Router with this component [follow these instructions](https://desi
   text="Refer to the U.S. Web Design System for accessibility guidance"
   type="secondary"
 ></va-link-action>
+
+## Privacy guidance
+
+### Mitigating Personally Identifiable Information (PII) or Personal Health Information (PHI) exposure in breadcrumb segments
+Pages with H1s that include PII or PHI create a potential issue because it is shown as the link label in the corresponding breadcrumb segment, and that label is captured when click events are logged. For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc. When the breadcrumb link for that page is clicked, that information is logged along with an authenticated user session.  
+
+Preferred options for mitigating this risk:
+ 
+  1) Remove the sensitive info from the H1. In doing so, that information is also removed from the breadcrumb link label. 
+  2) Replace the sensitive info in the H1 with a generic reference number, data element or ID. 
+  3) Disable analytics tracking on the breadcrumb.  By disabling the tracking, you eliminate the logging of the link labels in analytics. You must also ensure you are not logging those events anywhere else. Once disabled, you may be able to work with the anlytics team to implement custom even tracking.  
+
+Other options to mitigate this risk:
+
+  4) Keep the information in the H1, but use a custom label for the breadcrumb link and title tag. This requires customizing the breadcrumb component. 
+
+  Do this:  
+  > - H1: Prednisone, 25mg
+  > - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Medication detail
+  > - Title tag:  Medication detail – Medications | Veterans Affairs 
+
+Not this: 
+> - H1 Prednisone, 25mg 
+> - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Prednisone, 25mg 
+> - Title tag: Prednisone, 25mg – Medications | Veterans Affairs 
