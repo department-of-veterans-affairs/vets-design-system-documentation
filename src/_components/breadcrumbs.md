@@ -112,25 +112,19 @@ To use React Router with this component [follow these instructions](https://desi
 
 ## Privacy guidance
 
-### Mitigating Personally Identifiable Information (PII) or Personal Health Information (PHI) exposure in breadcrumb segments
-Pages with H1s that include PII or PHI create a potential issue because it is shown as the link label in the corresponding breadcrumb segment, and that label is captured when click events are logged. For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc. When the breadcrumb link for that page is clicked, that information is logged along with an authenticated user session.  
+### Breadcrumb segments cannot have Personally Identifiable Information (PII) or Personal Health Information (PHI)
+- This includes both the link text and the URL referenced in the link.
+- Pages with H1s that include PII or PHI create a potential issue because it is shown as the link label in the corresponding breadcrumb segment, and that label is captured when click events are logged. For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc. When the breadcrumb link for that page is clicked, that information is logged along with an authenticated user session.  
+
+Refer to [URL standards]({{ site.baseurl }}/components/url-standards/) and the [Content Style Guide on Page titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles) for specific guidance. 
 
 Preferred options for mitigating this risk:
  
-  1) Remove the sensitive info from the H1. In doing so, that information is also removed from the breadcrumb link label. 
-  2) Replace the sensitive info in the H1 with a generic reference number, data element or ID. 
+  1) Remove the sensitive info from the H1. In doing so, that information is also removed from the breadcrumb link label.
+  2) Replace the sensitive info in the H1 with a generic reference number, data element or ID.
   3) Disable analytics tracking on the breadcrumb.  By disabling the tracking, you eliminate the logging of the link labels in analytics. You must also ensure you are not logging those events anywhere else. Once disabled, you may be able to work with the anlytics team to implement custom even tracking.  
 
 Other options to mitigate this risk:
-
   4) Keep the information in the H1, but use a custom label for the breadcrumb link and title tag. This requires customizing the breadcrumb component. 
 
-  Do this:  
-  > - H1: Prednisone, 25mg
-  > - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Medication detail
-  > - Title tag:  Medication detail – Medications | Veterans Affairs 
-
-Not this: 
-> - H1 Prednisone, 25mg 
-> - Breadcrumb:  VA.gov home > My HealtheVet > Medications > Prednisone, 25mg 
-> - Title tag: Prednisone, 25mg – Medications | Veterans Affairs 
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
