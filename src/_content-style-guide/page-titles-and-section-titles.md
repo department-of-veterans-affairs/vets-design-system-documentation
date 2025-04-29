@@ -23,14 +23,38 @@ Page titles have a few important functions:
 - To [optimize the page for search]({{ site.baseurl }}/content-style-guide/seo), so the information is findable through Google and other search engines.
 
 Try to keep page titles to 52 characters maximum, with spaces. Use the primary SEO keyword in the page title. On VA.gov, page titles use the H1 tag.
+- Exceptions: 
+  - Articles in resources and support have a page title character limit of 70. 
+  - News releases, blog titles, community stories, and local event titles don't have a page title character limit. 
 
-### Exceptions
+### Privacy guidance
 
-- Articles in resources and support have a page title character limit of 70. 
-- News releases, blog titles, community stories, and local event titles don't have a page title character limit. 
+Page titles should not include Personally Identifiable Information (PII) or Protected Health Information (PHI) when possible. 
+- Page titles are often used in other components of the page - breadcrumbs, title tags or link labels - which have elements that are logged as part of analytics events.  For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc. That H1 is also used as the title tag, and when the page is viewed that title is logged along with an authenticated user session.
 
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
 
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
 
+H1: Upcoming appointment on April 30, 2025
+H1: Blood pressure 
+
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+ 
+H1: Upcoming appointment on April 30, 2025 with Cardiology
+H1: Blood pressure 124/67
+
+</div>
+</div>
+</div>
 
 ## Section titles
 
