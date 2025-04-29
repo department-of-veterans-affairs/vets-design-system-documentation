@@ -125,6 +125,7 @@ Preferred options for mitigating this risk:
   3) Disable analytics tracking on the breadcrumb.  By disabling the tracking, you eliminate the logging of the link labels in analytics. You must also ensure you are not logging those events anywhere else. Once disabled, you may be able to work with the anlytics team to implement custom even tracking.  
 
 Other options to mitigate this risk:
+
   4) Keep the information in the H1, but use a custom label for the breadcrumb link and title tag. This requires customizing the breadcrumb component. 
 
 [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
