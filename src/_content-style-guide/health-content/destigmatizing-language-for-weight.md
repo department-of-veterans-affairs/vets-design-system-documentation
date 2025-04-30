@@ -38,12 +38,12 @@ For example, clinical terms to describe degrees of obesity may be appropriate in
 
 #### To describe people
 
-**Use these person-first phrases:** Person with overweight; person with obesity; person with higher weight; person with a larger body<br>
-**Avoid these stigmatizing adjectives:** Obese; morbidly obese; overweight; chubby; fat; heavy
+**Use these person-first phrases:** Person with overweight, person with obesity, person with higher weight, person with a larger body<br>
+**Avoid these stigmatizing adjectives:** Obese, morbidly obese, overweight, chubby, fat, heavy
 
 #### To describe conditions
 
-**Use these nouns:** Weight; higher weight; unhealthy weight; overweight; obesity<br>
+**Use these nouns:** Weight, higher weight, unhealthy weight, overweight, obesity<br>
 **Avoid this noun:** Fat
 
 **Use this noun:** Class 3 obesity<br>
