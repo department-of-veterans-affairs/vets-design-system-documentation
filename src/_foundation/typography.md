@@ -152,6 +152,8 @@ Don’t change heading level in order to use a different font size.
 </div>
 </div>
 
+{% include content/avoid-links-in-headers.md %}
+
 ### Eyebrow
 
 <div class="site-showcase">
@@ -169,6 +171,8 @@ The eyebrow sits above a heading and provides a label for a sequence of pages in
 </div>
 
 {% include snippet.html content='html/paragraphs.html' %}
+
+* Paragraphs should not exceed vads-size-line-length-5 (72ex) and should use our [line-length design tokens](#primitive-typography-tokens) when appropriate to further constrain their width. Some elements that are not yet using our line-length design tokens will use 77ch as their max-width which is also acceptable.
 
 ## Typography tokens
 

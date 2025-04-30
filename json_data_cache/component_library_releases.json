@@ -1,5 +1,48 @@
 [
   {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/214317415",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/214317415/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/214317415/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v50.2.1",
+    "id": 214317415,
+    "author": {
+      "login": "jamigibbs",
+      "id": 872479,
+      "node_id": "MDQ6VXNlcjg3MjQ3OQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/872479?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jamigibbs",
+      "html_url": "https://github.com/jamigibbs",
+      "followers_url": "https://api.github.com/users/jamigibbs/followers",
+      "following_url": "https://api.github.com/users/jamigibbs/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jamigibbs/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jamigibbs/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jamigibbs/subscriptions",
+      "organizations_url": "https://api.github.com/users/jamigibbs/orgs",
+      "repos_url": "https://api.github.com/users/jamigibbs/repos",
+      "events_url": "https://api.github.com/users/jamigibbs/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jamigibbs/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOEjVS084Mxjln",
+    "tag_name": "v50.2.1",
+    "target_commitish": "main",
+    "name": "v50.2.1",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2025-04-23T18:43:22Z",
+    "published_at": "2025-04-23T18:48:46Z",
+    "assets": [
+
+    ],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.2.1",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.2.1",
+    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Fixes\r\n* va-critical-action: update padding by @bellepx0 in https://github.com/department-of-veterans-affairs/component-library/pull/1576\r\n* va-alert-expandable: align content with title by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1574\r\n* va-combo-box: prevent clear input button from being hidden by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1579\r\n* va-file-input and va-file-input-multiple: add password events to file input by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1578\r\n* va-loading-indicator: fix TypeError by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1577\r\n* va-alert: fix TypeError for close button aria label by @longmd in https://github.com/department-of-veterans-affairs/component-library/pull/1582\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.2.0...v50.2.1",
+    "mentions_count": 5
+  },
+  {
     "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/212854748",
     "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/212854748/assets",
     "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/212854748/assets{?name,label}",
@@ -1243,47 +1286,5 @@
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v46.0.2",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v46.0.2",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\nPlease refer to v46.0.0 [release notes](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v46.0.0)\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v46.0.1...v46.0.2"
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/172022367",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/172022367/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/172022367/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v46.0.1",
-    "id": 172022367,
-    "author": {
-      "login": "micahchiang",
-      "id": 15097156,
-      "node_id": "MDQ6VXNlcjE1MDk3MTU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15097156?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/micahchiang",
-      "html_url": "https://github.com/micahchiang",
-      "followers_url": "https://api.github.com/users/micahchiang/followers",
-      "following_url": "https://api.github.com/users/micahchiang/following{/other_user}",
-      "gists_url": "https://api.github.com/users/micahchiang/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/micahchiang/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/micahchiang/subscriptions",
-      "organizations_url": "https://api.github.com/users/micahchiang/orgs",
-      "repos_url": "https://api.github.com/users/micahchiang/repos",
-      "events_url": "https://api.github.com/users/micahchiang/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/micahchiang/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "RE_kwDOEjVS084KQNpf",
-    "tag_name": "v46.0.1",
-    "target_commitish": "main",
-    "name": "v46.0.1",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2024-08-26T20:50:31Z",
-    "published_at": "2024-08-26T20:51:33Z",
-    "assets": [
-
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v46.0.1",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v46.0.1",
-    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\nRefer to v46.0.0 [release notes](https://github.com/department-of-veterans-affairs/component-library/releases/tag/v46.0.0)\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v46.0.0...v46.0.1"
   }
 ]
