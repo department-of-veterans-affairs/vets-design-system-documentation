@@ -1,11 +1,11 @@
 ---
 layout: component
-permalink: /components/button/button-group-segmented
+permalink: /components/button/button-segmented
 has-parent: /components/button/
-title: Button group segmented
+title: Button - Segmented
 aka: Segmented button, Segmented control
 research-link: Buttons
-intro-text: The button group segmented component provides secondary navigation within a page using a group of buttons in a row as a single element.
+intro-text: The button segmented component provides secondary navigation within a page using a group of buttons in a row as a single element.
 status: use-deployed
 uswds-v3: default
 web-component: va-mobile_segmented-control
@@ -48,7 +48,7 @@ type="secondary"
 
 ### Additional guidance for VA
 
-#### When to use a Button group segmented
+#### When to use a Button - Segmented
 
 * **Filtering a data set.** To represent the same kind of content, such as a list-view with different filters applied.
 * **Views of a data set.** To provide closely related choices that affect an object, state, or view. For example, a segmented control can help people select options, switch between views, or sort elements.
