@@ -13,16 +13,15 @@ anchors:
   - anchor: Component checklist
 ---
 
-
 ## Examples
 
 ### GI Bill Comparison Tool
 
-![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png) 
+![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png)
 
 ### Facility locator mobile view
 
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) 
+![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png)
 
 ## Usage
 
@@ -30,15 +29,16 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 
 ### When to use tabs
 
-* To group 2 to 3 pieces of related content that the user doesn't need to read at the same time.
-* To allow the user to easily toggle between a binary set of options, like Search by name/Search by location or View list/View map.
+* **Secondary navigation within an application.** Tabs allow users to navigate to sections of an application.
+* **Related content within an applicaiton.** To group related content that the user doesn't need to read at the same time.
 
 ### When to consider something else
 
-* Consider using a single-select [accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
-* If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
+* **Changing views of the same data.** To allow the user to easily toggle between a binary set of options to see different views of the same data, use a [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented) component. For example, for switching between viewing a list or a map.
+* **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
+* **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
 
-### Behavior and design
+### Behavior
 
 * Allow the user to click anywhere on a tab to select it.
 * Make sure the selected tab is highlighted and visually connected to the content below it.
@@ -57,5 +57,6 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 ## Related
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
+* [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented)
 
 {% include _component-checklist.html component_name="va-tabs" %}
