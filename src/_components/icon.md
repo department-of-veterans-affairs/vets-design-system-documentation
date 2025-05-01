@@ -12,27 +12,96 @@ anchors:
   - anchor: Requesting a new icon
 ---
 
+<style>
+  /* Custom Page Styles */ 
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1b1b1b;
+    text-align: center;
+    background-color: #fff;
+    aspect-ratio: 1 / 1;
+  }
+
+  .icon-label {
+    margin-top: .5rem;
+  }
+
+  .icon-example {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .icon {
+    background-color: var(--vads-color-primary);
+    border-radius: 50%;
+    color: var(--vads-color-white);
+    padding: .5rem;
+  }
+
+  .icon-table {
+    background: #fff;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .icon-table th {
+    background: #dfe1e2;
+    width: 33%;
+  }
+
+  .icon-table th:last-child {
+    width: 67%;
+    text-align: left;
+  }
+
+  .icon-table tr > * {
+    border: 1px solid #1b1b1b;
+    padding: .5rem;
+  }
+
+  /* TODO: Normalize Roboto Mono */
+  /* Reference: https://designsystem.digital.gov/design-tokens/typesetting/overview/ */
+  code {
+    font-size: calc(1rem * .95);
+  }
+
+</style>
+
 ## Preview
+<div class="vads-u-margin-bottom--3">
+  <va-radio
+    label="Sort icons by:"
+    id="sort-icons-radio"
+    onChange="sortIcons()"
+  >
+    <va-radio-option
+      label="Category"
+      name="sort-icons"
+      value="category"
+    />
+    <va-radio-option
+      label="Icon Name (A-Z)"
+      name="sort-icons"
+      value="name"
+      checked
+    />
+  </va-radio> 
+</div>
 
-{% assign icons = site.data.icons %}
-
-<va-table table-type="bordered" full-width>
-  <va-table-row>
-    <span class="vads-u-text-align--center vads-u-display--block">Preview</span>
-    <span><code>icon</code></span>
-    <span>Known Usage</span>
-  </va-table-row>
-
-  {% for icon in icons %}
-    <va-table-row>
-      <span class="vads-u-text-align--center vads-u-display--block">
-        <va-icon icon="{{icon.id}}" size=3 />
-      </span>
-      <span><code><small>{{ icon.id }}</small></code></span>
-      <span>{{ icon.usage }}</span>
-    </va-table-row>
-  {% endfor %}
-</va-table>
+<div id="icons-container" class="icons-container vads-u-margin-bottom--3">
+  <!-- The table will be dynamically rendered here -->
+</div>
 
 <va-alert status="info" slim>
   Note: The icons listed above show their known uses on VA.gov and are only a subset of the full icon set. <a href="{{ storybook_path }}/storybook/?path=/story/uswds-va-icon--icons">View all available icons</a>
@@ -58,39 +127,21 @@ Before introducing a new icon check the list to be see if the meaning of the ico
 
 ### Icon Color
 
-By default, the web component icon will display as `--vads-color-base` which is the base color set across VA.gov. If a different icon color is needed, a `color` style can be applied directly to the web component element using CSS.
-
-<style>
-  .icon-example {
-    align-items: center;
-    display: flex;
-    gap: 8px;
-    margin-bottom: 1rem;
-  }
-
-  .info-icon {
-    background-color: var(--vads-color-primary);
-    border-radius: 50%;
-    color: var(--vads-color-white);
-    padding: 8px;
-  }
-</style>
+By default, the web component icon will display as `--vads-color-base` which is the base color set across VA.gov. If a different icon color is needed, a `color` style can be applied directly to the web component element using CSS. You may also add a `background-color` as seen in the example below.
 
 <div class="icon-example">
-  Example: <va-icon size="3" icon="medical_services" class="info-icon" />
+  Example: <va-icon size="3" icon="medical_services" class="icon" />
 </div>
 
-
 ```
-.info-icon {
+.icon {
     color: var(--vads-color-white);
     background-color: var(--vads-color-primary);
     border-radius: 50%;
     padding: units(1);
 }
 
-<va-icon size="3" icon="medical_services" class="info-icon" />
-
+<va-icon size="3" icon="medical_services" class="icon" />
 ```
 
 ### Icon Sizing Reference
@@ -183,3 +234,83 @@ Exceptions to this are a close button on a modal or an alert. However, it is adv
 </ol>
 
 {% include component-docs.html component_name=page.web-component %}
+
+<script>
+  const icons = {{ site.data.icons | jsonify }};
+
+  function sortIcons() {
+    const sortBy = document.querySelector('#sort-icons-radio :checked').value;
+
+    if (sortBy === 'name') {
+      renderIconTable(icons.sort((a, b) => a.id.localeCompare(b.id)));
+    } else if (sortBy === 'category') {
+      const categoryGroups = icons.reduce((groups, icon) => {
+        icon.category.split(',').map((cat) => cat.trim()).forEach((category) => {
+          if (!groups[category]) groups[category] = [];
+          groups[category].push(icon);
+        });
+        return groups;
+      }, {});
+      renderCategoryTables(categoryGroups);
+    }
+  }
+
+  function renderIconTable(sortedIcons) {
+    const container = document.getElementById('icons-container');
+    container.innerHTML = `
+      <div class="icon-grid">
+        ${sortedIcons
+          .map(
+            (icon) => `
+            <div class="icon-card">
+              <va-icon icon="${icon.id}" size="3"></va-icon>
+              <div class="icon-label">
+                <code>${icon.id}</code>
+              </div>
+            </div>
+          `
+          )
+          .join('')}
+      </div>
+    `;
+  }
+
+  function renderCategoryTables(categoryGroups) {
+    const container = document.getElementById('icons-container');
+    const sortedCategories = Object.keys(categoryGroups).sort();
+    container.innerHTML = sortedCategories
+      .map(
+        (category) => `
+          <h3>${category}</h3>
+          <table class="icon-table">
+            <thead>
+              <tr>
+                <th>Preview</th>
+                <th><code>icon</code></th>
+              </tr>
+            </thead>
+            <tbody>
+            ${categoryGroups[category]
+              .map(
+                (icon) => `
+              <tr>
+                <td class="vads-u-text-align--center">
+                  <va-icon icon="${icon.id}" size="3" />
+                </td>
+                <td>
+                  <code>${icon.id}</code>
+                </td>
+              </tr>
+            `
+              )
+              .join('')}
+            </tbody>
+          </table>
+        `
+      )
+      .join('');
+  }
+
+  // Initial render
+  renderIconTable(icons);
+</script>

@@ -1,242 +1,248 @@
 - id: account_circle
-  usage: Identification
+  category: Identification
 
 - id: acute
-  usage: Health
+  category: Health
 
 - id: add
-  usage: Interaction, Add item
+  category: Interaction, DS Components
 
 - id: adjust
-  usage: Health
+  category: Health
 
 - id: arrow_back
-  usage: Navigation
+  category: Navigation, DS Components
 
 - id: arrow_downward
-  usage: Navigation
+  category: Navigation, DS Components
+
+- id: arrow_upward
+  category: Navigation, DS Components
 
 - id: assignment
-  usage: Health, Compare GI benefits by school (Profile)
+  category: Health
 
 - id: assignment_turned_in
-  usage: Profile
+  category: Profile
 
 - id: attach_file
-  usage: Messaging
+  category: Messaging, DS Components
 
 - id: attach_money
-  usage: Profile, Check your GI bill statement of benefits
+  category: Profile
 
 - id: autorenew
-  usage: Interaction
+  category: Interaction, DS Components
 
 - id: calendar_today
-  usage: Appointments, Link - Calendar
+  category: Appointments, DS Components
 
 - id: campaign
-  usage: Identification
+  category: Identification
 
 - id: cancel
-  usage: Interaction
-
-- id: check
-  usage: Feedback, Process List
-
-- id: check_circle
-  usage: Feedback, Alert - Success
+  category: Interaction, DS Components
 
 - id: chat
-  usage: Messaging
+  category: Messaging, DS Components
+
+- id: check
+  category: Feedback
+
+- id: check_circle
+  category: Feedback, DS Components
+
+- id: chevron_right
+  category: DS Components
 
 - id: close
-  usage: Interaction
+  category: Interaction, DS Components
 
 - id: delete
-  usage: Interaction
+  category: Interaction, DS Components
 
 - id: description
-  usage: hub
+  category: Hub
 
 - id: directions
-  usage: Identification
+  category: Identification
 
 - id: error
-  usage: Feedback, Alert - Error
+  category: Feedback, DS Components
 
 - id: event_available
-  usage: Profile
+  category: Profile
 
 - id: expand_less
-  usage: Interaction
+  category: Interaction
 
 - id: expand_more
-  usage: Interaction
+  category: Interaction
 
 - id: fact_check
-  usage: Profile
+  category: Profile
 
 - id: facebook
-  usage: Social
+  category: Social
 
 - id: file_download
-  usage: Interaction, Link - Download
+  category: Interaction, DS Components
 
 - id: filter_alt
-  usage: Interaction
+  category: Interaction
 
 - id: filter_list
-  usage: Interaction
+  category: Interaction, DS Components
 
 - id: flickr
-  usage: Social
+  category: Social
 
 - id: folder
-  usage: Messaging, Move
+  category: Messaging
 
 - id: forum
-  usage: Profile
+  category: Profile
 
 - id: google_play
-  usage: Social
+  category: Social
 
 - id: groups
-  usage: hub
+  category: Hub
 
 - id: handshake
-  usage: hub
+  category: Hub
 
 - id: hearing_disabled
-  usage: Health
+  category: Health
 
 - id: help
-  usage: Identification
+  category: Identification
 
 - id: home
-  usage: hub
+  category: Hub
 
 - id: how_to_reg
-  usage: Profile
+  category: Profile
 
 - id: identification
-  usage: hub
+  category: Hub
 
 - id: info
-  usage: Feedback, Alert - Info
+  category: Feedback, DS Components
 
 - id: instagram
-  usage: Social
+  category: Social
 
 - id: key
-  usage: developer.va.gov
+  category: developer.va.gov
 
 - id: language
-  usage: Identification
+  category: Identification
 
 - id: launch
-  usage: Navigation
+  category: Navigation
 
 - id: linkedin
-  usage: Social
+  category: Social
 
 - id: local_shipping
-  usage: Health, Mobile app
+  category: Health
 
 - id: location_city
-  usage: Appointments
+  category: Appointments
 
 - id: location_on
-  usage: Identification
+  category: Identification
 
 - id: lock
-  usage: Feedback, Alert - Continue
+  category: Feedback
 
 - id: mail
-  usage: Messaging, Subscribe to news, notifications, or updates (Facilities)
+  category: Messaging
 
 - id: medical_services
-  usage: hub
+  category: Hub
 
 - id: medication
-  usage: Profile
+  category: Profile
 
 - id: navigate_before
-  usage: Navigation
+  category: Navigation
 
 - id: navigate_far_before
-  usage: Navigation
+  category: Navigation, DS Components
 
 - id: navigate_far_next
-  usage: Navigation
+  category: Navigation, DS Components
 
 - id: navigate_next
-  usage: Navigation
+  category: Navigation
 
 - id: note_add
-  usage: Profile
+  category: Profile
 
 - id: phone
-  usage: Identification
+  category: Identification, DS Components
 
 - id: phone_iphone
-  usage: Identification, Telephone number in Crisis Line modal
+  category: Identification
 
 - id: pill
-  usage: Health
+  category: Health
 
 - id: play_circle
-  usage: Navigation, Link - Video
+  category: Navigation, DS Components
 
 - id: print
-  usage: Messaging
+  category: Messaging
 
 - id: refresh
-  usage: Interaction, Mobile app
+  category: Interaction
 
 - id: remove
-  usage: Interaction
+  category: Interaction, DS Components
 
 - id: request_quote
-  usage: Profile
+  category: Profile
 
 - id: schedule
-  usage: Appointments
+  category: Appointments
 
 - id: search
-  usage: Navigation
+  category: Navigation
 
 - id: sell
-  usage: developer.va.gov
+  category: developer.va.gov
 
 - id: shield
-  usage: hub
+  category: Hub
 
 - id: star
-  usage: hub
+  category: Hub
 
 - id: tty
-  usage: Appointments
+  category: Appointments, DS Components
 
 - id: twitter
-  usage: Social
+  category: Social
 
 - id: unfold_more
-  usage: Interaction
+  category: Interaction
 
 - id: undo
-  usage: Messaging
+  category: Messaging
 
 - id: videocam
-  usage: Appointments
+  category: Appointments
 
 - id: warning
-  usage: Feedback, Alert - Warning
+  category: Feedback, DS Components
 
 - id: work
-  usage: Profile, Hub, On-the-job Training (GI Bill Comparison tool)
+  category: Profile, Hub
 
 - id: x
-  usage: Social
+  category: Social
 
 - id: youtube
-  usage: Navigation, Link - Channel, YouTube (Social)
+  category: Navigation, DS Components
