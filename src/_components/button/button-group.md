@@ -45,7 +45,7 @@ type="secondary"
 ### Additional guidance for VA
 
 - NOTE: We will be changing the name of this component from button-pair to button-group to align with the USWDS.
-- NOTE: We do not yet offer the Segmented button group option.
+- NOTE: We do not yet offer the Segmented button group option for web, but it is used in the mobile app.
 
 ### When to consider something else
 
