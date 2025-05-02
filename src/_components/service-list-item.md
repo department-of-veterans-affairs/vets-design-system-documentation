@@ -82,8 +82,8 @@ The link should use the standard default, hover, focus, active, and visited link
 ### Header states
 * **Default**: The link and chevron are the standard vads-color-link.
 * **Hover**: The link becomes underlined and both the link and chevron turn to vads-color-link-active. There is no background shading.
-* **Focus**: Similar to the default state, but with a yellow outline. The outline is similar to the focus state of action links.
-* **Active**: Similar to the default state, but underlined and with a yellow outline. The outline is similar to the focus state of action links.
+* **Focus**: The background becomes yellow and the text, chevron, and icon background become black.
+* **Active**: Similar to the focus state, but the text is underlined.
 * **Visited**: Similar to the default state, but the color of the link and chevron turn to vads-color-link-visited once the link has been visited.
 
 {% include component-example.html alt="A table of headers for the Service List Item. There are two columns, one for mobile and one for desktop. The five rows show each of the states described above: default, hover, focus, active and visited." file="/images/components/service-list-item/annotated-service-list-item-header-states.png" %}
