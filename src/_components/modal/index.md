@@ -22,51 +22,51 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-modal--default" link_text="va-modal" %}
+{% include storybook-preview.html story="uswds-va-modal--default" link_text="va-modal" auto_resize=false height="300px" %}
 
 ### Info
 
-{% include storybook-preview.html story="uswds-va-modal--info" link_text="va-modal info" %}
+{% include storybook-preview.html story="uswds-va-modal--info" link_text="va-modal info" auto_resize=false height="320px" %}
 
 ### Continue
 
-{% include storybook-preview.html story="uswds-va-modal--continue" link_text="va-modal continue" %}
+{% include storybook-preview.html story="uswds-va-modal--continue" link_text="va-modal continue" auto_resize=false height="340px" %}
 
 ### Success
 
-{% include storybook-preview.html story="uswds-va-modal--success" link_text="va-modal success" %}
+{% include storybook-preview.html story="uswds-va-modal--success" link_text="va-modal success" auto_resize=false height="320px" %}
 
 ### Warning
 
-{% include storybook-preview.html story="uswds-va-modal--warning" link_text="va-modal warning" %}
+{% include storybook-preview.html story="uswds-va-modal--warning" link_text="va-modal warning" auto_resize=false height="320px" %}
 
 ### Error
 
-{% include storybook-preview.html story="uswds-va-modal--error" link_text="va-modal error" %}
+{% include storybook-preview.html story="uswds-va-modal--error" link_text="va-modal error" auto_resize=false height="320px" %}
 
 ### Click outside to close
 
-{% include storybook-preview.html story="uswds-va-modal--click-outside-to-close" link_text="va-modal click outside to close" %}
+{% include storybook-preview.html story="uswds-va-modal--click-outside-to-close" link_text="va-modal click outside to close" auto_resize=false height="300px" %}
 
 ### Without buttons
 
-{% include storybook-preview.html story="uswds-va-modal--without-buttons" link_text="va-modal without buttons" %}
+{% include storybook-preview.html story="uswds-va-modal--without-buttons" link_text="va-modal without buttons" auto_resize=false height="240px" %}
 
 ### Without title
 
-{% include storybook-preview.html story="uswds-va-modal--without-title" link_text="va-modal without title" %}
+{% include storybook-preview.html story="uswds-va-modal--without-title" link_text="va-modal without title" auto_resize=false height="240px" %}
 
 ### With nested web components
 
-{% include storybook-preview.html story="uswds-va-modal--with-nested-web-components" link_text="va-modal with nested web components" %}
+{% include storybook-preview.html story="uswds-va-modal--with-nested-web-components" link_text="va-modal with nested web components" auto_resize=false height="410px" %}
 
 ### Large
 
-{% include storybook-preview.html story="uswds-va-modal--large" link_text="va-modal large" %}
+{% include storybook-preview.html story="uswds-va-modal--large" link_text="va-modal large" auto_resize=false height="360px" %}
 
 ### With forced action
 
-{% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal with forced action" %}
+{% include storybook-preview.html story="uswds-va-modal--with-forced-action" link_text="va-modal with forced action" auto_resize=false height="300px" %}
 
 ## Usage
 

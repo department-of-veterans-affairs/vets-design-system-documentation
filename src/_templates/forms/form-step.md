@@ -58,9 +58,8 @@ The unauthenticated form step template consists of:
 2. Page title and subtitle
 3. Progress bar - segmented (includes step header)
 4. Form step content (includes page title)
-7. Finish this application later link
-8. Button pair (Back/Continue)
-9. Need help?
+5. Button pair (Back/Continue)
+6. Need help?
 
 ## Structure
 
@@ -119,7 +118,7 @@ On a form step page with only one question, you must create a separate page titl
 #### Additional information
 Use the additional information component if there’s relevant information that may be important for some people, but it’s not critical information for everyone filling out the form. [Review guidelines for using the additional information component.](https://design.va.gov/components/additional-info) 
 ### Finish this application later link
-A link that allows the user to exit the process with their progress saved.
+A link that allows authenticated users to exit the process with their progress saved.
 ### Button pair
 Button pair contains a secondary button labeled “Back” and primary button labeled “Continue”. On the last form step page, change “Continue” to “Submit”.
 ### Autosave alert

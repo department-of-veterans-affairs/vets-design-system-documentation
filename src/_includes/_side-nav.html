@@ -10,7 +10,7 @@
     {% assign sortedPages = include.section | sort: "title", "last" %}
     {% for p in sortedPages %}
         {% assign is-current = false %}
-        {% if p.url == page.url %}
+        {% if p.url == page.url or page.url == site.baseurl | append: p.permalink %}
           {% assign is-current = true %}
         {% endif %}
         {% assign open-accordion = false %}
