@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "yarn run build && bundle exec jekyll serve --baseurl ''",
+    "start:storybook-static": "export STORYBOOK_ENV=8080 && yarn run build && bundle exec jekyll serve --baseurl ''",
     "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental",
     "update-releases": "rm -rf json_data_cache && yarn run build && bundle exec jekyll serve --baseurl ''"
   },
