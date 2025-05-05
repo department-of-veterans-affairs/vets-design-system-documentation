@@ -10,7 +10,13 @@ web-component: va-loading-indicator
 
 ## Example
 
+### Web
+
 {% include storybook-preview.html height="150px" story="components-va-loading-indicator--default" link_text="va-loading-indicator" %}
+
+### Mobile
+
+{% include storybook-preview.html height="150px" story="va-mobile_loading-indicator--with-text" link_text="va-loading-indicator" %}
 
 ## Usage
 
