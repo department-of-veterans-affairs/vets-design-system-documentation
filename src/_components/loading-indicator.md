@@ -16,7 +16,7 @@ web-component: va-loading-indicator
 
 ### Mobile
 
-{% include storybook-preview.html height="150px" story="va-mobile_loading-indicator--with-text" link_text="va-loading-indicator" %}
+{% include storybook-preview.html height="150px" story="loading-indicator--with-text" link_text="va_mobile__loading-indicator--with-text" is_mobile=true %}
 
 ## Usage
 
