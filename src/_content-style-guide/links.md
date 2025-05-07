@@ -17,7 +17,8 @@ anchors:
 * We also use links to help us centralize information, rather than repeating content in multiple places. This helps us update content more efficiently and keep content accurate.
 * Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments.
 * External links can be disorienting for all people, but especially people who use screen readers. We want to be clear about where links are taking people.
-* For issues not covered in this style guide, refer to the U.S. Web Design System (USWDS) on links. [Review link guidance on the USWDS website]({{ site.uswds_link }}/components/link/)
+* For issues not covered in this style guide, refer to the U.S. Web Design System (USWDS) on links.<br>
+[Review link guidance on the USWDS website](https://designsystem.digital.gov//components/link/)
 
 ## Link text
 
@@ -27,6 +28,10 @@ anchors:
 * Avoid "Click here," since not all people are physically clicking links. 
 * Avoid generic link text like "Learn more" and "Read more" by themselves.
 * Avoid using words that assume certain abilities, like "See," "Hear," and "Watch."
+
+**Note:** If a link needs to open in a new tab, add “(opens in a new tab)” to notify users. Don’t use the new window icon unless there are space constraints.
+
+[Review guidance on when to open links in a new tab in the Components section](https://design.va.gov/components/link/)
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -98,17 +103,17 @@ In addition, on modernized VA.gov, many pages—particularly static unauthentica
 
 Example:
 - Don’t use the URL without the trailing slash: va.gov/health-care 
-- Do use the URL with a trailing slash:  va.gov/health-care/
+- Do use the URL with a trailing slash: va.gov/health-care/
 
 When we use the canonical URL in links, it reduces the risk of links breaking when sub-URLs in a form or flow change. It also helps tell search engines our preferred URL for search indexing. This can add search value to the canonical URL by eliminating the split of search value between multiple pages. 
 
 
 ## Linking to documents and other file sources
 * Avoid linking to PDFs as much as possible. 
-* If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System. [Review examples of link variations in the Components section]({{ site.baseurl }}/components/link/)
+* If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System.<br>
+[Review examples of link variations in the Components section](https://design.va.gov/content-style-guide/links)
 
 ## Linking to external sites
 
 * **Use text that tells the reader where the link takes them.** Example: [Check COVID-19 symptoms on the CDC website](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html)
 * **Consider using an aria-label to create a screen reader-only label.** Aria-labels can be helpful in specialized instances where there's a clear reason to use separate text for people who use screen readers. The aria-label may append or replace text within a link to provide context about where the link goes.
-* **Explain when a link is opening in a new tab with text, not an icon.** Add "(opens in new tab)" to notify users when a link is opening in a new tab. In standard link text, we avoid using the new window icon, since it can cause confusion. Within components that have space constraints, the icon is acceptable. [Review guidance in the Components section on when to open in a new tab, and when not to]({{ site.baseurl }}/components/link/#behavior)
