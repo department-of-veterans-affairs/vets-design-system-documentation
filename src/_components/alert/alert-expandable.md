@@ -23,15 +23,15 @@ anchors:
 
 ### Default (Informational)
 
-{% include storybook-preview.html story="components-va-alert-expandable--default" link_text="va-alert-expandable" %}
+{% include storybook-preview.html story="components-va-alert-expandable--default" link_text="va-alert-expandable" height="210px" auto_resize=false %}
 
 ### Warning alert
 
-{% include storybook-preview.html story="components-va-alert-expandable--warning" link_text="va-alert-expandable" %}
+{% include storybook-preview.html story="components-va-alert-expandable--warning" link_text="va-alert-expandable" height="210px" auto_resize=false %}
 
 ### Success alert
 
-{% include storybook-preview.html story="components-va-alert-expandable--success" link_text="va-alert-expandable" %}
+{% include storybook-preview.html story="components-va-alert-expandable--success" link_text="va-alert-expandable" height="210px" auto_resize=false %}
 
 ## Usage
 
