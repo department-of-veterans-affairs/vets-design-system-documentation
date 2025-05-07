@@ -21,35 +21,35 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--default" link_text="va-segmented-progress-bar v3 default" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--default" link_text="va-segmented-progress-bar v3 default" height="145px" auto_resize=false %}
 
 ### Step Labels
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--step-labels" link_text="va-segmented-progress-bar step labels" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--step-labels" link_text="va-segmented-progress-bar step labels" height="170px" auto_resize=false %}
 
 ### Centered Step Labels
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--centered-step-labels" link_text="va-segmented-progress-bar vcentered step labels" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--centered-step-labels" link_text="va-segmented-progress-bar vcentered step labels" height="170px" auto_resize=false %}
 
 ### Counters
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--counters" link_text="va-segmented-progress-bar counters" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--counters" link_text="va-segmented-progress-bar counters" height="205px" auto_resize=false %}
 
 ### Small Counters
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--small-counters" link_text="va-segmented-progress-bar small counters" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--small-counters" link_text="va-segmented-progress-bar small counters" height="190px" auto_resize=false %}
 
 ### Centered Counters
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--centered-counters" link_text="va-segmented-progress-bar centered counters" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--centered-counters" link_text="va-segmented-progress-bar centered counters" height="205px" auto_resize=false %}
 
 ### Centered Small Counters
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--centered-small-counters" link_text="va-segmented-progress-bar centered small counters" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--centered-small-counters" link_text="va-segmented-progress-bar centered small counters" height="190px" auto_resize=false %}
 
 ### Custom Header Level
 
-{% include storybook-preview.html story="uswds-va-segmented-progress-bar--custom-header-level" link_text="va-segmented-progress-bar custom header level" height="200px" %}
+{% include storybook-preview.html story="uswds-va-segmented-progress-bar--custom-header-level" link_text="va-segmented-progress-bar custom header level" height="190px" auto_resize=false %}
 
 ## Usage
 
