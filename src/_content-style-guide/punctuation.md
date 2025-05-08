@@ -133,6 +133,8 @@ Note: Some design components may use the exclamation point as an icon for visual
 
 Use curly quotation marks (ex. “quotation marks”) instead of straight up and down ones (ex. &quot;quotation marks&quot;).
 
+Periods and commas go inside the quotation marks, even if they’re not part of the quoted text. All other punctuation (em dashes, question marks, colons, parentheses) go outside the quotation marks unless they’re part of the quoted text.
+
 Use quotation marks when referencing free text that people submit in a form field (like search input).
 
 Don’t use quotation marks when referencing buttons, screens, or section headers in instructions. For these situations, use bold only.
@@ -146,6 +148,10 @@ Showing 1 to 10 of 110 search results for “what are my benefits”
 
 Then select the **Search this area of the map** button.
 
+We refer to them as an “accredited representative.”
+
+What’s the difference between a “condition” and a “disability”?
+
 </div>
 </div>
 <div class="do-dont__dont">
@@ -155,6 +161,10 @@ Then select the **Search this area of the map** button.
 Showing 1 to 10 of 110 search results for **what are my benefits**
 
 Then select the "Search this area of the map" button.
+
+We refer to them as an “accredited representative”.
+
+What’s the difference between a “condition” and a “disability?”
 
 </div>
 </div>
