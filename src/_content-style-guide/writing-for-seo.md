@@ -34,7 +34,7 @@ Each page needs a unique title tag and meta description. Don't use the same [tit
 
 ### Why they're important
 
-- Title tags and descriptions help people identify what the page is about in search results and decide whether to click on your page from the results.
+- Title tags and descriptions help people identify what the page is about in search results and decide whether to select your page from the results.
 - Having a consistent standard for title tags and descriptions also helps ensure that our search "branding" looks consistent and unified in search results.
 - It helps communicate VA's brand as the authoritative source for VA information for Veterans.
 - It also helps people tell quickly which content comes from VA versus non-VA organizations that may also be providing VA benefit information.
