@@ -6,16 +6,106 @@ figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Lib
 status: use-with-caution-available
 web-component: va-icon
 anchors:
-  - anchor: Examples
+  - anchor: Preview
   - anchor: Usage
-  - anchor: Code usage
+  - anchor: Accessibility considerations
+  - anchor: Requesting a new icon
 ---
 
-## Examples
+<style>
+  /* Custom Page Styles */ 
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
 
-### Default
+  .icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1b1b1b;
+    text-align: center;
+    background-color: #fff;
+    aspect-ratio: 1 / 1;
+  }
 
-{% include storybook-preview.html story="uswds-va-icon--default" link_text=page.web-component %}
+  .icon-label {
+    margin-top: .5rem;
+  }
+
+  .icon-example {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1rem;
+  }
+
+  .icon {
+    background-color: var(--vads-color-primary);
+    border-radius: 50%;
+    color: var(--vads-color-white);
+    padding: .5rem;
+  }
+
+  .icon-table {
+    background: #fff;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .icon-table th {
+    background: #dfe1e2;
+    width: 33%;
+  }
+
+  .icon-table th:last-child {
+    width: 67%;
+    text-align: left;
+  }
+
+  .icon-table tr > * {
+    border: 1px solid #1b1b1b;
+    padding: .5rem;
+  }
+
+  /* TODO: Normalize Roboto Mono */
+  /* Reference: https://designsystem.digital.gov/design-tokens/typesetting/overview/ */
+  code {
+    font-size: calc(1rem * .95);
+  }
+
+</style>
+
+## Preview
+<div class="vads-u-margin-bottom--3">
+  <va-radio
+    label="Sort icons by:"
+    id="sort-icons-radio"
+    onChange="sortIcons()"
+  >
+    <va-radio-option
+      label="Category"
+      name="sort-icons"
+      value="category"
+    />
+    <va-radio-option
+      label="Icon Name (A-Z)"
+      name="sort-icons"
+      value="name"
+      checked
+    />
+  </va-radio> 
+</div>
+
+<div id="icons-container" class="icons-container vads-u-margin-bottom--3">
+  <!-- The table will be dynamically rendered here -->
+</div>
+
+<va-alert status="info" slim>
+  Note: The icons listed above show their known uses on VA.gov and are only a subset of the full icon set. <a href="{{ storybook_path }}/storybook/?path=/story/uswds-va-icon--icons">View all available icons</a>
+</va-alert>
 
 ## Usage
 
@@ -37,15 +127,21 @@ Before introducing a new icon check the list to be see if the meaning of the ico
 
 ### Icon Color
 
-By default, the web component icon will display as `--vads-color-base` which is the base color set across VA.gov. If a different icon color is needed, style can be applied directly to the web component element using CSS. For example:
+By default, the web component icon will display as `--vads-color-base` which is the base color set across VA.gov. If a different icon color is needed, a `color` style can be applied directly to the web component element using CSS. You may also add a `background-color` as seen in the example below.
+
+<div class="icon-example">
+  Example: <va-icon size="3" icon="medical_services" class="icon" />
+</div>
 
 ```
-<va-icon size="4" name="alarm" class="alarm-icon" >
-
-.alarm-icon {
-  color: var(--vads-color-white);
+.icon {
+    color: var(--vads-color-white);
+    background-color: var(--vads-color-primary);
+    border-radius: 50%;
+    padding: units(1);
 }
 
+<va-icon size="3" icon="medical_services" class="icon" />
 ```
 
 ### Icon Sizing Reference
@@ -55,6 +151,11 @@ By default, the web component icon will display as `--vads-color-base` which is 
     <span>Size Attribute</span>
     <span>Icon Preview</span>
     <span>Rendered CSS Pixels</span>
+  </va-table-row>
+  <va-table-row>
+    <span><i>(none)</i></span>
+    <span><va-icon icon="search" /></span>
+    <span>1em x 1em</span>
   </va-table-row>
   <va-table-row>
     <span><code class="code vads-u-border--1px vads-u-border-color--gray-light">3</code></span>
@@ -88,4 +189,128 @@ By default, the web component icon will display as `--vads-color-base` which is 
   </va-table-row>
 </va-table>
 
+## Accessibility considerations
+Icon usage typically falls into two categories, decorative and semantic.
+
+- **Decorative icons** are icons that are only used for visual reinforcement. If these were removed from the page, users would still be able to understand and use the page.
+- **Semantic icons** are icons that convey meaning, rather than only being decorative. This includes icons without text next to them that are used as interactive elements such as buttons.
+
+### Using decorative icons
+
+If your icons are only decorative, _do not_ include <code>srtext</code> on the component. The component will add an <code>aria-hidden</code> attribute to the icon for accessibility.
+
+Icon buttons containing a decorative icon plus a visual label are supported with <a href="{{ site.baseurl }}/components/button-icon">Button - Icon</a>, but with limited options. Rather than supporting any text and icon combination, these will be added on a case-by-case basis. Generally, we feel that icons in buttons are not necessary.
+
+### Using semantic icons
+
+We do not advise using icons as links or buttons on their own. Links and buttons should always have a visible label.
+
+Exceptions to this are a close button on a modal or an alert. However, it is advised to use the design system component for these scenarios, as they are coded with the proper accessibility attributes.
+
+## Requesting a new icon
+<p>
+  If your team needs a new icon and wants to suggest adding it to the design system, follow these steps:
+</p>
+
+<ol>
+  <li>
+    <strong>Check Existing VADS Icons</strong>:
+    Look through the entire icon set to ensure a similar icon does not already exist. We aim to maintain consistency in semantic use by avoiding duplicating similar icons.
+    </li>
+    <li>
+      <strong>Explore USWDS Icons</strong>:
+      Search
+      <a href="https://designsystem.digital.gov/components/icon/">USWDS Icon</a> to see if another existing icon suits your
+      needs. Preferably, choose generic icons that could be reused in various applications.
+      <p>If VADS and USWDS do not contain a suitable icon, you may search <a href="https://fonts.google.com/icons">Material
+          Icons</a> or browse the official <a href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a> Figma plugin by Google. Note that we typically use the "filled" icon style.</p>
+      </li>
+  <li>
+    <strong>Submit Your Icon</strong>: Once you've found a suitable icon for VADS, submit it using the following link:
+    <p>
+      <va-action-link href="{{ site.request_addition_link }}">Request a new addition to the Design System</va-action-link>
+    </p>
+  </li>
+</ol>
+
 {% include component-docs.html component_name=page.web-component %}
+
+<script>
+  const icons = {{ site.data.icons | jsonify }};
+
+  function sortIcons() {
+    const sortBy = document.querySelector('#sort-icons-radio :checked').value;
+
+    if (sortBy === 'name') {
+      renderIconTable(icons.sort((a, b) => a.id.localeCompare(b.id)));
+    } else if (sortBy === 'category') {
+      const categoryGroups = icons.reduce((groups, icon) => {
+        icon.category.split(',').map((cat) => cat.trim()).forEach((category) => {
+          if (!groups[category]) groups[category] = [];
+          groups[category].push(icon);
+        });
+        return groups;
+      }, {});
+      renderCategoryTables(categoryGroups);
+    }
+  }
+
+  function renderIconTable(sortedIcons) {
+    const container = document.getElementById('icons-container');
+    container.innerHTML = `
+      <div class="icon-grid">
+        ${sortedIcons
+          .map(
+            (icon) => `
+            <div class="icon-card">
+              <va-icon icon="${icon.id}" size="3"></va-icon>
+              <div class="icon-label">
+                <code>${icon.id}</code>
+              </div>
+            </div>
+          `
+          )
+          .join('')}
+      </div>
+    `;
+  }
+
+  function renderCategoryTables(categoryGroups) {
+    const container = document.getElementById('icons-container');
+    const sortedCategories = Object.keys(categoryGroups).sort();
+    container.innerHTML = sortedCategories
+      .map(
+        (category) => `
+          <h3>${category}</h3>
+          <table class="icon-table">
+            <thead>
+              <tr>
+                <th>Preview</th>
+                <th><code>icon</code></th>
+              </tr>
+            </thead>
+            <tbody>
+            ${categoryGroups[category]
+              .map(
+                (icon) => `
+              <tr>
+                <td class="vads-u-text-align--center">
+                  <va-icon icon="${icon.id}" size="3" />
+                </td>
+                <td>
+                  <code>${icon.id}</code>
+                </td>
+              </tr>
+            `
+              )
+              .join('')}
+            </tbody>
+          </table>
+        `
+      )
+      .join('');
+  }
+
+  // Initial render
+  renderIconTable(icons);
+</script>

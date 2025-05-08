@@ -13,7 +13,7 @@ anchors:
   - anchor: Quality assurance
 ---
 
-## Setup 
+## Setup
 
 All components should have "Simplify all instances" checked. It helps reduce visual clutter when designers are using the components.
 
@@ -46,7 +46,7 @@ All components should have "Simplify all instances" checked. It helps reduce vis
   * Type: Appears below Mode. Used for things like Primary, Secondary, or H1, H2.
   * Layout: Appears below Type. Used for things like Horizontal, Vertical, or varying quantities.
   * State: Appears below Layout. Used for things like Focus, Active, or Open, Closed or Active, Inactive.
-* Booleans should be named and set up consistently: 
+* Booleans should be named and set up consistently:
   * Booleans can be used to show/hide icons, buttons, content, etc.
   * Boolean names should be in the following format: `[Action] [Noun]`.
   * The name should also agree with the true value. For example, "Show Icon" instead of "Hide Icon" or "Icon Show/Hide".
@@ -59,7 +59,7 @@ All components should have "Simplify all instances" checked. It helps reduce vis
   * Body copy fields should always be named “content”.
   * Fields such as labels, tags, and buttons should be named descriptively – i.e. Button Text
   * Naming should use title casing. For example, "Content", "Title", "Show Icon".
-  * Layers should also be named descriptively and not "Frame 1". 
+  * Layers should also be named descriptively and not "Frame 1".
 
 ### States
 
@@ -76,23 +76,22 @@ For any sub-components that are used to build another component that should NOT 
 
 ### Variations
 
-The Design System Example Library will show a default variation and then any other variations the component supports. This may be as simple as the [states](#states) listed above or a more complicated set. 
+The Design System Example Library will show a default variation and then any other variations the component supports. This may be as simple as the [states](#states) listed above or a more complicated set.
 
 In addition, all variations are shown at mobile and desktop viewport widths. If the design for a component doesn't change it is acceptable to only show a variation at the narrowest width.
 
 ## Design tokens
 
-All components should be connected to the VADS Component Library styles & variables. 
+All components should be connected to the VADS Component Library styles & variables.
 
 {% include component-example.html alt="Design token not applied in Figma." file="/images/about/designers/figma/token-not-applied.png" caption="An Auto layout value that is not using a token." %}
 {% include component-example.html alt="Design token applied in Figma." file="/images/about/designers/figma/token-applied.png" caption="An Auto layout value that is correctly using a token." %}
 
-* All components should be connected to the proper style or variable/token. 
+* All components should be connected to the proper style or variable/token.
 * **Colors:** Connected to the correct color token (not primitive!) found in the local variables library.
 * **Typography:** Connected to the correct text style found under local styles.
-* **Spacing:** Connected to the correct spacing token or primitive. 
+* **Spacing:** Connected to the correct spacing token or primitive.
 * **Icons:** Connected to correct icon found on foundation page.
-
 
 ## Visual quality
 
@@ -100,7 +99,7 @@ All components should be connected to the VADS Component Library styles & variab
 
 All colors should be pulled from the variables in the VADS Figma file.
 
-* **All color combinations must pass color contrast at the following sizes and ratios.** 
+* **All color combinations must pass color contrast at the following sizes and ratios.**
   * All text of 20px or smaller has a 4.5:1 contrast ratio to its background (or better)
   * All text of 20px or larger has a 3:1 contrast ratio to its background (or better)
   * Non-text elements have a 3:1 contrast ratio to their background and to neighboring elements (or better)
@@ -110,7 +109,7 @@ All colors should be pulled from the variables in the VADS Figma file.
 
 ### Typography
 
-All text styles should be pulled from the VADS Figma file. 
+All text styles should be pulled from the VADS Figma file.
 
 * Variables are not available for text so use local styles.
 * Make sure your text uses the correct resizing:
@@ -122,21 +121,21 @@ All text styles should be pulled from the VADS Figma file. 
 
 ### Spacing
 
-* **Apply spacing variables whenever possible.** Look for the logo below to access spacing variables. 
+* **Apply spacing variables whenever possible.** Look for the logo below to access spacing variables.
 
 {% include component-example.html alt="Figma spacing logo." file="/images/about/designers/figma/spacing-logo.png" caption="Spacing variables can be found with auto layout, radius, and width and height." %}
 
 ### Iconography
 
-* **Only use icons from the VA Design System.** [Our icons](https://design.va.gov/foundation/icons) are a subset of [USWDS icons](https://designsystem.digital.gov/components/icon/). We aim to maintain consistency in semantic use by avoiding duplicating similar icons. If you have a need for an icon that doesn't exist in our set, you may [request a new icon](https://design.va.gov/foundation/icons#requesting-a-new-icon) to be added. 
+* **Only use icons from the VA Design System.** [Our icons](https://design.va.gov/foundation/icons) are a subset of [USWDS icons](https://designsystem.digital.gov/components/icon/). We aim to maintain consistency in semantic use by avoiding duplicating similar icons. If you have a need for an icon that doesn't exist in our set, you may [request a new icon](https://design.va.gov/foundation/icons#requesting-a-new-icon) to be added.
 
 ## Quality assurance
 
 There are multiple levels of quality assurance performed on components:
 
-1. **Test of the design of the component in a design tool.** The Design System Team tests components built in Figma (and Sketch, UXPin, et. al)
+1. **Test of the design of the component in a design tool.** The Design System Team tests components built in Figma.
 2. **Test of the built web component.** The Design System Team then tests the component again once it is built as a web-component.
-3. **Governance review of the component.** Finally, the Governance team tests and reviews the component for design, content, information architecture, and accessibility. They also review the design assets and guidance on design.va.gov. 
+3. **Governance review of the component.** Finally, the Governance team tests and reviews the component for design, content, information architecture, and accessibility. They also review the design assets and guidance on design.va.gov.
 
 Some of the tests, such as color contrast checks, that the Design System Team performs will be re-tested by the Governance team in the built component. Thus ideally designers will perform these tests themselves when creating a component.
 
@@ -151,8 +150,8 @@ Essentially, we are looking for all of the things mentioned above.
 
 #### Documentation and naming
 
-- [ ] Does the component naming make sense and follow Storybook (if the component has been built)?
-- [ ] Does the component link to guidance in design.va.gov?
+* [ ] Does the component naming make sense and follow Storybook (if the component has been built)?
+* [ ] Does the component link to guidance in design.va.gov?
 
 #### Auto layout
 
@@ -194,4 +193,4 @@ Not all components need every property. It will differ component to component. T
   * **Colors:** Connected to the correct color token (not primitive!) - can be found in local variables library.
   * **Typography:** Connected to the correct text style - under local styles.
   * **Spacing:** Connected to the correct spacing token.
-  * **Icons:** Connected to correct [icon]({{ site.baseurl }}/foundation/icons). 
+  * **Icons:** Connected to correct [icon]({{ site.baseurl }}/foundation/icons).

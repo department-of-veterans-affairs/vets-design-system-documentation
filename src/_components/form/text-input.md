@@ -36,7 +36,7 @@ anchors:
 
 ### Autocomplete
 
-{% include storybook-preview.html story="uswds-va-text-input--autocomplete" link_text="va-text-input Autocomplete" %}
+{% include storybook-preview.html story="uswds-va-text-input--autocomplete" link_text="va-text-input Autocomplete" height="565px" auto_resize=false %}
 
 ### Hint Text
 
@@ -46,7 +46,7 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 ### Inline Hint Text
 
-{% include storybook-preview.html story="uswds-va-text-input--with-inline-hint-text" link_text="va-text-input with inline Hint text" %}
+{% include storybook-preview.html story="uswds-va-text-input--with-inline-hint-text" link_text="va-text-input with inline Hint text" height="155px" auto_resize=false %}
 
 ### Additional Info
 
@@ -110,7 +110,9 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
   type="secondary"
 ></va-link-action>
 
-### Choosing between variations
+### Additional guidance for VA
+
+#### Choosing between variations
 
 * **Required.** Indicates to the user that the text input field is required in order to submit the form.
 * **Pattern.** Allows for a pattern of characters to be required for the text input entry to be valid.
@@ -130,7 +132,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance. 
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
-### Errors
+#### Errors
 
 * Refer to the specific error examples above.
 
@@ -140,7 +142,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
   type="secondary"
 ></va-link-action>
 
-### Hint text
+#### Hint text
 
 * Refer to the [hint text example](#hint-text) above.
 
@@ -154,7 +156,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 
 {% include content/using-message-aria-describedby.md %}
 
-### Native Events
+#### Native Events
 
 * Native onInput and onBlur events are available on this component. They can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 

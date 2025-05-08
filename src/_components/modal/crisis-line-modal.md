@@ -20,7 +20,7 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html story="components-va-crisis-line-modal--default" link_text="va-crisis-line-modal default" %}
+{% include storybook-preview.html story="components-va-crisis-line-modal--default" link_text="va-crisis-line-modal default" height="700px" auto_resize=false %}
 
 ## Usage
 

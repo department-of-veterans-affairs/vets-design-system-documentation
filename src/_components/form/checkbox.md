@@ -20,99 +20,136 @@ anchors:
 
 ## Examples - Single
 
-### Default
+### Web
+
+#### Default
 
 {% include storybook-preview.html story="uswds-va-checkbox--default" link_text="va-checkbox" %}
 
-### Tile
+#### Tile
 
 {% include storybook-preview.html story="uswds-va-checkbox--tile" link_text="va-checkbox tile" %}
 
-### Checked
+#### Checked
 
 {% include storybook-preview.html story="uswds-va-checkbox--checked" link_text="va-checkbox checked" %}
 
-### Hint text
+#### Hint text
 
 {% include storybook-preview.html story="uswds-va-checkbox--with-hint-text" link_text="va-checkbox with hint text" %}
 
-### Description String
+#### Description String
 
 {% include storybook-preview.html story="uswds-va-checkbox--with-description-string" link_text="va-checkbox with description string" %}
 
-### Description JSX
+#### Description JSX
 
 {% include storybook-preview.html story="uswds-va-checkbox--with-description-jsx" link_text="va-checkbox with description JSX" %}
 
-### On background
+#### On background
 
 {% include storybook-preview.html story="uswds-va-checkbox--on-background" link_text="va-checkbox on a background" %}
 
-### Error
+#### Error
 
 {% include storybook-preview.html story="uswds-va-checkbox--error" link_text="va-checkbox error" %}
 
-### Required
+#### Required
 
 {% include storybook-preview.html story="uswds-va-checkbox--required" link_text="va-checkbox required" %}
 
-### Internationalization
+#### Internationalization
 
 {% include storybook-preview.html story="uswds-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
 
+### Mobile
+
+#### Default
+
+{% include storybook-preview.html height="200px" story="checkbox--default" link_text="va-mobile__checkbox--default" is_mobile=true auto_resize=false %}
+
+#### Tile
+
+{% include storybook-preview.html height="200px" story="checkbox--tile" link_text="va-mobile__checkbox--tile" is_mobile=true auto_resize=false %}
+
+#### Checkbox only
+
+{% include storybook-preview.html height="80px" story="checkbox--checkbox-only" link_text="va-mobile__checkbox--checkbox-only" is_mobile=true auto_resize=false %}
+
+#### Error
+
+{% include storybook-preview.html height="225px" story="checkbox--error" link_text="va-mobile__checkbox--error" is_mobile=true auto_resize=false %}
+
 ## Examples - Group
 
-### Default
+### Web
+
+#### Default
 
 {% include storybook-preview.html height="200px" story="uswds-va-checkbox-group--default" link_text="va-checkbox-group default" %}
 
-### Label header
+#### Label header
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--label-header" link_text="va-checkbox group label header" height="250px" %}
 
-### Hint text
+#### Hint text
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--with-hint-text" link_text="va-checkbox group with hint text" %}
 
-### Required
+#### Required
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--required" link_text="va-checkbox group required" %}
 
-### Single checkbox
+#### Single checkbox
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--single-checkbox" link_text="va-checkbox group single checkbox" %}
 
-### Tile
+#### Tile
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--tile" link_text="va-checkbox group tile" %}
 
-### Forms pattern - Single
+#### Forms pattern - Single
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single" link_text="va-checkbox group forms pattern single" height="600px" %}
 
-### Forms pattern - Single error
+#### Forms pattern - Single error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="va-checkbox group forms pattern single error" height="600px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-single-error" link_text="Error state for single checkbox pattern" height="600px" %}
 
-### Forms pattern - Multiple
+#### Forms pattern - Multiple
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="va-checkbox group forms pattern multiple" height="600px" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--forms-pattern-multiple" link_text="Multiple checkbox pattern example" height="600px" %}
 
-### Error
+#### Error
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="va-checkbox group error" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--error" link_text="Checkbox group with error state" %}
 
-### Internationalization
+#### Internationalization
 
-{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="va-checkbox group internationalization" %}
+{% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="Checkbox group with internationalization" %}
 
-### Indeterminate
+#### Indeterminate
 
-Use the indeterminate state when a checkbox has a sublist of checkbox selections that can change from selected to unselected.
+Use the indeterminate state for a parent checkbox that controls a sublist of checkboxes. The parent checkbox shows this state when some (but not all) child checkboxes are selected.
 
-See pattern guidance when asking users [a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
+See our pattern guidance on [asking users for a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
 
-{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="va-checkbox group indeterminate" %}
+{% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
+
+### Mobile
+
+#### Default
+
+{% include storybook-preview.html height="425px" story="checkbox-group--default" link_text="va-mobile__checkbox-group--default" is_mobile=true auto_resize=false %}
+
+#### Tile
+
+{% include storybook-preview.html height="400px" story="checkbox-group--tile" link_text="va-mobile__checkbox-group--tile" is_mobile=true auto_resize=false %}
+
+#### Error
+
+{% include storybook-preview.html height="475px" story="checkbox-group--error" link_text="va-mobile__checkbox-group--error" is_mobile=true auto_resize=false %}
+
 
 ## Usage
 
@@ -128,6 +165,10 @@ See pattern guidance when asking users [a mutually exclusive answer](https://des
 
 * If there are too many options to display on a mobile screen.
 * If a user can only select one option from a list (use radio buttons instead).
+
+#### Choosing between variations
+
+* **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For checkbox groups used outside of this pattern, for example on a longer form page, use the [Label header](#label-header) checkbox group variation.
 
 {% include content/conditionally-revealed-fields.md %}
 

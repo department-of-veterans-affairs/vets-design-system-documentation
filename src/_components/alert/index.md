@@ -59,19 +59,19 @@ Used to indicate success.
 
 #### Informational alert (aka default)
 
-{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true %}
+{% include storybook-preview.html story="alert--info" link_text="va-mobile__alert--info" is_mobile=true height="400px" auto_resize=false %}
 
 #### Warning alert
 
-{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true %}
+{% include storybook-preview.html story="alert--warning" link_text="va-mobile__alert--warning" is_mobile=true height="400px" auto_resize=false %}
 
 #### Success alert
 
-{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true %}
+{% include storybook-preview.html story="alert--success" link_text="va-mobile__alert--success" is_mobile=true height="400px" auto_resize=false %}
 
 #### Error alert
 
-{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true %}
+{% include storybook-preview.html story="alert--error" link_text="va-mobile__alert--error" is_mobile=true height="400px" auto_resize=false %}
 
 ## Examples - Standard properties
 
