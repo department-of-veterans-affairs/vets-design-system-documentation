@@ -132,9 +132,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
 
 **click**
-: Avoid using, especially "click here." Link the relevant words instead. **Exception:** In UI (user interface) copy, it's OK to use "click [Button/Interface Name]." Go to [Links]({{ site.baseurl }}/content-style-guide/links)
-: - Like this: Find an [accredited representative](https://www.va.gov/ogc/apps/accreditation/index.asp) to help you.
-: -	Like this in UI copy: In your account dashboard, click __Profile.__
+: Avoid using "click" and "click here." Instead, follow these formats:
+: - Link the entire call to action where relevant, like this: [Find an accredited representative to help you](https://www.va.gov/ogc/apps/accreditation/index.asp)
+: -	Use "select" to point someone to a specific place in the UI, like this: In your account dashboard, select __Profile__
+: [Learn more in the Neutral language section of the style guide](https://design.va.gov/content-style-guide/neutral-language)
 
 **compensation**
 : "Disability compensation" is the preferred term, but "VA disability pay" has greater SEO value and is more plain language. Use "VA disability compensation (pay)" on first mention, and try to work in both terms. Also include explanation of "monthly payments."
@@ -190,6 +191,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **Defense Department (DOD)**
 : For most cases, use Defense Department on the first instance. After the first instance, use DOD. Capitalize the O. Go to the [DOD brand guide](https://www.defense.gov/Brand-Guide/#use-of-name) for more information. And go to [Abbreviations and acronyms](https://design.va.gov/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
+
+**delete**
+: Use the word "delete" instead of "remove." For example, "Delete file."
+: [Learn more in the Files pattern](https://design.va.gov/patterns/ask-users-for/files)
 
 **demolish**
 : Use "knock down" or, when used as a noun in the context of a job of building demolition, "demolition (knocking down old buildings)."
@@ -734,6 +739,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **uniformed services**
 : Uniformed services refers to the Armed Forces plus these 2 branches: the National Oceanic and Atmospheric Administration and the Public Health Service. Also refer to the "Armed Forces" entry.
+
+**upload**
+: Use the word "upload" instead of "add." For example, "Upload file" and "Upload another file."
+: [Learn more in the Files pattern](https://design.va.gov/patterns/ask-users-for/files)
 
 **U.S.**
 : Use periods.
