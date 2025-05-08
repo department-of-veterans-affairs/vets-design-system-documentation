@@ -15,7 +15,7 @@ anchors:
 
 * We use links to connect Veterans with related information that may be helpful. 
 * We also use links to help us centralize information, rather than repeating content in multiple places. This helps us update content more efficiently and keep content accurate.
-* Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments.
+* Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments. We put links on their own line to help make the page easier to scan and the intention of the link as clear as possible.
 * External links can be disorienting for all people, but especially people who use screen readers. We want to be clear about where links are taking people.
 * For issues not covered in this style guide, refer to the U.S. Web Design System (USWDS) on links.<br>
 [Review link guidance on the USWDS website](https://designsystem.digital.gov//components/link/)
