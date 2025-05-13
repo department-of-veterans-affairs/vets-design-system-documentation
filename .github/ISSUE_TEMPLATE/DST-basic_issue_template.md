@@ -1,6 +1,6 @@
 ---
-name: "DST - Basic Issue Template"
-about: INTERNAL DST USE ONLY
+name: "DS+F - Basic Issue Template"
+about: INTERNAL DS+F USE ONLY
 title: ''
 labels: platform-design-system-team
 
