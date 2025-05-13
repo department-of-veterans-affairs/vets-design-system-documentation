@@ -4,6 +4,7 @@ title: Page titles and section titles
 anchors:
  - anchor: Page titles
  - anchor: Section titles
+ - anchor: Privacy guidance
 ---
 
 # Page titles and section titles
@@ -26,36 +27,6 @@ Try to keep page titles to 52 characters maximum, with spaces. Use the primary S
 - Exceptions: 
   - Articles in resources and support have a page title character limit of 70. 
   - News releases, blog titles, community stories, and local event titles don't have a page title character limit. 
-
-### Privacy guidance
-
-Page titles should not include Personally Identifiable Information (PII) or Protected Health Information (PHI) when possible. 
-- Page titles are often used in design components - breadcrumbs, link labels, etc - and therefore logged as part of analytics events.  For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a health condition, an individual’s file number, etc. That H1 is also used as the title tag, and when the page is viewed that title is logged as part of the page view event, along with an authenticated user session, allowing anyone viewing that data to connect an individual to specific health data.
-
-
-[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
-
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
-
-H1: Upcoming appointment on April 30, 2025
-H1: Blood pressure 
-
-</div>
-</div>
-
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
-<div class="do-dont__content" markdown="1">
- 
-H1: Upcoming appointment on April 30, 2025 with Cardiology
-H1: Blood pressure 124/67
-
-</div>
-</div>
-</div>
 
 ## Section titles
 
@@ -90,6 +61,38 @@ We allow a little more character count for sections and subsections than page ti
 > - H3 How long it takes to hear back from colleges 
 
 - **H2** More information about applying for college 
+
+</div>
+</div>
+</div>
+
+## Privacy guidance
+
+Page titles and section titles should not include Personally Identifiable Information (PII) or Protected Health Information (PHI) when possible. 
+- Page titles and section titles are often utilized in other aspects of the page and design components - such as breadcrumbs, link labels, on-this-page, etc - and are logged as part of analytics events.
+- For example, a detail page within a tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a health condition, an individual’s file number, etc. By default, that H1 is also used as the title tag, and when the page is viewed that title tag is logged as part of the page view event, along with an authenticated user session, allowing anyone viewing that data to connect an individual to specific personal data.
+- If using PII or PHI in an H1 is necessary, then caution must be taken to ensure that information is logged along with all of the various elements and design components that utilize the H1.
+
+
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+H1: Upcoming appointment on April 30, 2025
+H1: Blood pressure 
+
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+ 
+H1: Upcoming appointment on April 30, 2025 with Cardiology
+H1: Blood pressure 124/67
 
 </div>
 </div>
