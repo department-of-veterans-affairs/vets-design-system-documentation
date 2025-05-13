@@ -2,7 +2,6 @@
 layout: component
 title: Search Filter
 intro-text: This component implements faceted search.
-research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 status: use-with-caution-available
 web-component: va-search-filter
 anchors:
