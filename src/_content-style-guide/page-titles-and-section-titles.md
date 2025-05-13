@@ -30,7 +30,8 @@ Try to keep page titles to 52 characters maximum, with spaces. Use the primary S
 ### Privacy guidance
 
 Page titles should not include Personally Identifiable Information (PII) or Protected Health Information (PHI) when possible. 
-- Page titles are often used in other components of the page - breadcrumbs, title tags or link labels - which have elements that are logged as part of analytics events.  For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc. That H1 is also used as the title tag, and when the page is viewed that title is logged along with an authenticated user session.
+- Page titles are often used in design components - breadcrumbs, link labels, etc - and therefore logged as part of analytics events.  For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person – a physician or clinic visited, a medication prescribed, a health condition, an individual’s file number, etc. That H1 is also used as the title tag, and when the page is viewed that title is logged as part of the page view event, along with an authenticated user session, allowing anyone viewing that data to connect an individual to specific health data.
+
 
 [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
 
