@@ -2,7 +2,6 @@
 layout: component
 title: Alert
 permalink: /components/alert/
-status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1

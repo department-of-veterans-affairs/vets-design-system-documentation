@@ -1,0 +1,210 @@
+{
+  "va-accordion": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-additional-info": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-alert": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-alert-expandable": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-alert-sign-in": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
+  "va-back-to-top": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-banner": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-breadcrumbs": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-button": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-button-icon": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-button-pair": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-card": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-checkbox": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-checkbox-group": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-combo-box": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
+  "va-crisis-line-modal": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-critical-action": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
+  "va-date": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-file-input": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-file-input-multiple": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-header-minimal": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-icon": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-language-toggle": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-link": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-link-action": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-loading-indicator": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-maintenance-banner": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-memorable-date": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-minimal-footer": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-modal": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-need-help": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-notification": {
+    "maturityCategory": "dont_use",
+    "maturityLevel": "deprecated"
+  },
+  "va-official-gov-banner": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-omb-info": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-on-this-page": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-pagination": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-privacy-agreement": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-process-list": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-progress-bar": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-promo-banner": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-radio": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-search-input": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-segmented-progress-bar": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-select": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-service-list-item": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
+  "va-statement-of-truth": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-summary-box": {
+    "maturityCategory": "use",
+    "maturityLevel": "deployed"
+  },
+  "va-table": {
+    "maturityCategory": "caution",
+    "maturityLevel": "available"
+  },
+  "va-table-inner": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-telephone": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-text-input": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  },
+  "va-textarea": {
+    "maturityCategory": "use",
+    "maturityLevel": "best_practice"
+  }
+}

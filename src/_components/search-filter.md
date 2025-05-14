@@ -2,7 +2,6 @@
 layout: component
 title: Search Filter
 intro-text: This component implements faceted search.
-status: use-with-caution-available
 web-component: va-search-filter
 anchors:
   - anchor: Examples
