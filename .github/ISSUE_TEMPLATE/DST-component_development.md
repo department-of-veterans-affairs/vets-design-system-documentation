@@ -1,8 +1,9 @@
 ---
-name: "DST - Component development"
+name: DST - Component development
 about: INTERNAL DST USE ONLY
 title: "[component name] - Development"
-labels: platform-design-system-team, dst-engineering
+labels: platform-design-system-team
+assignees: ''
 
 ---
 
