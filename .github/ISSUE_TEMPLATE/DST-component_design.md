@@ -1,8 +1,8 @@
 ---
-name: "DS+F - Component design"
+name: DS+F - Component design
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design (phase 1)"
-labels: platform-design-system-team, DST-design
+labels: platform-design-system-team
 assignees: babsdenney, danbrady, jeana-adhoc
 
 ---

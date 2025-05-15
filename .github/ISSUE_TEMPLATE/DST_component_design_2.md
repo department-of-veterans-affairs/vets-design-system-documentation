@@ -3,7 +3,7 @@ name: "DST - Component Design (phase 2)"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Design (phase 2)"
 labels: platform-design-system-team
-assignees: babsdenney, danbrady, jeanaclark
+assignees: babsdenney, danbrady
 
 ---
 
@@ -32,4 +32,3 @@ Add annotations to the design for [component name] in Figma.
 
 ## Acceptance Criteria
 - [ ] Component design has annotations in Figma
-

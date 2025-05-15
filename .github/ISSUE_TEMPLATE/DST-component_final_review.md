@@ -1,8 +1,9 @@
 ---
-name: "DST - Component final review"
+name: DST - Component final review
 about: INTERNAL DST USE ONLY
 title: "[component name] - Final Review"
 labels: platform-design-system-team
+assignees: ''
 
 ---
 
