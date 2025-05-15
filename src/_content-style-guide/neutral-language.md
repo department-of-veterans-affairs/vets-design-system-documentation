@@ -72,7 +72,8 @@ Examples:
 
 -	In buttons, use “Select **Submit**” instead of “Tap the **Submit** button”
 -	In links and navigation, use “Select **My VA**” instead of “Click on **My VA**”
--	In phone extensions, use “Select 1” instead of “Press 1” 
+-	In phone extensions, use “Select 1” instead of “Press 1”
+-	In step-by-step instructions, use “Select **Save**” instead of “Click **Save**”
  
 ### We avoid directional language
 
