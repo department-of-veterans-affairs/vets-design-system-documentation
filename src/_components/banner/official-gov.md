@@ -5,7 +5,6 @@ permalink: /components/banner/official-gov
 has-parent: /components/banner/
 github-title: va-official-gov-banner
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1173%3A5542&mode=design&t=vNilCSI60pQBiKkM-1
-status: use-best-practice
 intro-text: "This banner identifies official websites of government organizations in the United States. They also help visitors understand whether a website is official and secure."
 web-component: va-official-gov-banner
 anchors:
