@@ -1,10 +1,12 @@
 ---
-name: "DS+F - Component accessibility review"
+name: DS+F - Component accessibility review
 about: INTERNAL DST USE ONLY
 title: "[component name] - Accessibility review"
 labels: platform-design-system-team
+assignees: ''
 
 ---
+
 ## Configuring this issue
 - [ ] Add issue to appropriate epic
 - [ ] Add Design System component label (such as `va-alert`)
@@ -23,4 +25,4 @@ We need to conduct a full accessibility review of the [component name] component
 
 ## Acceptance Criteria
 - [ ] Component has been reviewed for accessibility issues
-- [ ] Any accessibility issues have been put in a new ticket 
+- [ ] Any accessibility issues have been put in a new ticket
