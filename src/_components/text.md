@@ -53,4 +53,10 @@ There are 9 variations of the Text component.
 * Use a Body variation (large, medium, small, x-small) for body copy.
 * Use the Display variation for larger display text.
 
-{% include component-docs.html component_name=page.web-component %}
+## Code usage
+
+<va-link-action
+  href="https://design.va.gov/storybook/?path=/docs/va-mobile_text--docs"
+  text="View code usage documentation in Storybook"
+  type="secondary"
+/>
