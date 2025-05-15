@@ -26,21 +26,24 @@ gulp.task('process-component-maturity', function (done) {
 
   const docs = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
   const result = {};
-  (docs.components || []).forEach(component => {
-    if (!component.tag || !component.docsTags) return;
-    let maturityCategory = null;
-    let maturityLevel = null;
-    component.docsTags.forEach(tag => {
-      if (tag.name === 'maturityCategory') maturityCategory = tag.text;
-      if (tag.name === 'maturityLevel') maturityLevel = tag.text;
+  (docs.components || [])
+    .filter(component => component.tag && component.docsTags)
+    .forEach(component => {
+      // Extract maturity data in a single pass
+      const maturityData = component.docsTags.reduce((data, tag) => {
+        if (tag.name === 'maturityCategory') data.maturityCategory = tag.text;
+        if (tag.name === 'maturityLevel') data.maturityLevel = tag.text;
+        return data;
+      }, {});
+
+      if (maturityData.maturityCategory && maturityData.maturityLevel) {
+        result[component.tag] = {
+          maturityCategory: maturityData.maturityCategory,
+          maturityLevel: maturityData.maturityLevel
+        };
+      }
     });
-    if (maturityCategory && maturityLevel) {
-      result[component.tag] = {
-        maturityCategory,
-        maturityLevel
-      };
-    }
-  });
+
   fs.writeFileSync(outputPath, JSON.stringify(result, null, 2));
   done();
 });
