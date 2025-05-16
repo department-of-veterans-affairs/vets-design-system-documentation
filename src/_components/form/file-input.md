@@ -32,15 +32,11 @@ NOTE: Storybook does not allow for showing components in a particular state. Thu
 
 ### Default - Single file - Populated
 
-{% include component-example.html alt="Populated file upload with a single file" file="/images/components/file-input/file-input-default-populated-single.png" caption="File input component (uswds-va-file-input--default) showing a file attached for upload." class="x2" reverse="true" %}
-
-### Default - Multiple files - Populated singular
-
-{% include component-example.html alt="Populated multiple file upload with a single file" file="/images/components/file-input/multiple-file-input-default-populated-single.png" caption="File input component (uswds-va-file-input-multiple--default) showing the first of multiple files attached for upload." class="x2" reverse="true" %}
+{% include storybook-preview.html story="uswds-va-file-input--file-uploaded" link_text="uswds-va-file-input--file-uploaded" %}
 
 ### Default - Multiple files - Populated multiple
 
-{% include component-example.html alt="Populated multiple file upload" file="/images/components/file-input/multiple-file-input-default-populated.png" caption="File input component (uswds-va-file-input-multiple--default) showing multiple files attached for upload." class="x2" reverse="true" %}
+{% include storybook-preview.html story="uswds-va-file-input-multiple--files-uploaded" link_text="uswds-va-file-input-multiple--files-uploaded" %}
 
 ### Required
 
@@ -75,10 +71,6 @@ Change the label to any H1 through H6 header size.
 ### Additional form inputs
 
 {% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input when an additional form is needed to complete the file upload" class="x2" reverse="true" %}
-
-### Multiple files
-
-{% include component-example.html alt="Multiple files" file="/images/components/file-input/multipleFiles.png" caption="File input when multiple files are uploaded" class="x2" reverse="true" %}
 
 ## Usage
 
