@@ -2,7 +2,6 @@
 layout: component
 title: Alert
 permalink: /components/alert/
-status: use-best-practice
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
@@ -135,6 +134,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 * **Unprompted and in-page alerts.** Consider the [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable) component to draw attention to important information on the page that is not a response to user feedback.
 * **Clarifying background information.** Use the [Additional info]({{ site.baseurl }}/components/additional-info) component when clarifying outcomes for an input or a form question as well as providing background information. Keep in mind that Alert - Expandable should warrant an alert and be used sparingly. The value of any type of alert is diminished if the page is littered with alerts of equal weight.
 * **System maintenance on web.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
+* **As the only content on a page.** An Alert should not be the only, or the majority of, content on a page. Reduce the length of the alert and include context in the content well of the page.
 
 ##### Mobile only
 

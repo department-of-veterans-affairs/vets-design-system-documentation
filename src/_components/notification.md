@@ -3,7 +3,6 @@ layout: component
 title: Notification
 contributor: Angela Agosto, Allison Lu
 intro-text: Provides a visually distinct card in order to surface time-sensitive updates and action items.
-status: dont-use-deprecated
 web-component: va-notification
 anchors:
   - anchor: Examples
