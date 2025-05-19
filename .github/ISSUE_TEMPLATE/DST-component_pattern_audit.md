@@ -1,9 +1,9 @@
 ---
-name: "DST - New component or pattern audit"
+name: DST - New component or pattern audit
 about: INTERNAL DST USE ONLY
 title: "[component or pattern name] - Audit"
 labels: platform-design-system-team
-assignees: babsdenney, LillyBoot
+assignees: babsdenney
 
 ---
 

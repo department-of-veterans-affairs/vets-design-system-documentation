@@ -1,9 +1,9 @@
 ---
 layout: component
 title: Tabs
-status: use-with-caution-available
 intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between." 
 github-title: va-tabs
+status: use-with-caution-available
 anchors:
   - anchor: Examples
   - anchor: Usage

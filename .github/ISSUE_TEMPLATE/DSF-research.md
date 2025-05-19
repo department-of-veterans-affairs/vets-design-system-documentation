@@ -1,8 +1,9 @@
 ---
-name: "DS+F - Research Issue Template"
+name: DS+F - Research Issue Template
 about: INTERNAL DS+F USE ONLY
-title: "Research [component or pattern name]"
+title: Research [component or pattern name]
 labels: platform-design-system-team
+assignees: ''
 
 ---
 
