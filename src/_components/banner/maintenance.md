@@ -5,8 +5,8 @@ permalink: /components/banner/maintenance
 has-parent: /components/banner/
 github-title: va-banner-maintenance
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1173%3A4614&mode=design&t=vNilCSI60pQBiKkM-1
-status: use-deployed
 intro-text: "Banners specifically for site-wide system messages, typically system maintenance, which are fixed to the top of the viewport."
+status: use-deployed
 anchors:
   - anchor: Examples
   - anchor: Usage

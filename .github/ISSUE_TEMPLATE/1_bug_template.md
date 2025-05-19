@@ -2,7 +2,8 @@
 name: "1. \U0001F534 Bug report"
 about: Something in the Design System is not working as expected
 title: ''
-labels: platform-design-system-team, bug
+labels: bug, platform-design-system-team
+assignees: ''
 
 ---
 
