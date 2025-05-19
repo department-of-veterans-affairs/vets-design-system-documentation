@@ -31,9 +31,9 @@ These are some examples of when we use bold in VA style.
 
 **For punctuation following bold text:**
 
-- If the bold text is an introduction, the colon or period following it should also be bold (ex. the colon after “**Note:**” or the period after a list item introduction, “**Be concise.** Use as few words as possible…”)
-- If the bold text is a full sentence, bold any punctuation within or at the end of the sentence
-- If the bold text is only part of a sentence, don’t bold punctuation that isn’t part of the bolded phrase (ex. “Select **Continue**, then answer the remaining questions)
+- If the bold text is an introduction, the colon or period following it should also be bold (ex. the colon after “**Note:**” or the period after a list item introduction, “**Be concise.** Use as few words as possible…”).
+- If the bold text is a full sentence, bold any punctuation within or at the end of the sentence.
+- If the bold text is only part of a sentence, don’t bold punctuation that isn’t part of the bolded phrase (ex. “Select **Continue**, then answer the remaining questions).
 
 ## Italic text
 
