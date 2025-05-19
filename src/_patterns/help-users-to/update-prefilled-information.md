@@ -107,9 +107,12 @@ Here's how to communicate that users can update certain information online:
 
 ### Components used in this pattern
 
-- [Alert]({{ site.baseurl }}/components/alert/)
-- [Radio button]({{ site.baseurl }}/components/form/radio-button)
 - [Additional info]({{ site.baseurl }}/components/additional-info)
+- [Alert]({{ site.baseurl }}/components/alert)
+- [Card]({{ site.baseurl }}/components/card)
+- [Link]({{ site.baseurl }}/components/link)
+- [Radio button]({{ site.baseurl }}/components/form/radio-button)
+- [Telephone]({{ site.baseurl }}/components/telephone)
 
 ## Examples
 

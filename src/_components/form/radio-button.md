@@ -69,7 +69,6 @@ anchors:
 
 {% include storybook-preview.html height="440px" story="radio-button--default" link_text="va-mobile_radio-button--default" is_mobile=true auto_resize=false %}
 
-
 #### Tile
 
 {% include storybook-preview.html height="400px" story="radio-button--tile" link_text="va-mobile_radio-button--tile" is_mobile=true auto_resize=false %}

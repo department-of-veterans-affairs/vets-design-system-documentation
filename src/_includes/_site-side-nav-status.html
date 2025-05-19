@@ -7,7 +7,26 @@
 {% endif %}
 
 {% if component %}
-  {% assign status = component.status %}
+  {% assign component_tag = component.web-component %}
+
+  {% if component_tag %}
+    {% assign maturity = site.data.component-maturity[component_tag] %}
+    {% assign status-category = maturity.maturityCategory | default: "dont_use" %}
+    {% assign status-title = maturity.maturityLevel | replace: '_', '-' | default: "proposed" %}
+    {% assign display-category = status-category %}
+
+    {% if status-category == "dont_use" %}
+      {% assign display-category = "Don't use" %}
+    {% elsif status-category == "caution" %}
+      {% assign status-category = "use-with-caution" %}
+      {% assign display-category = "Use with caution" %}
+    {% endif %}
+
+    {% assign status = status-category | append: '-' | append: status-title %}
+    {% assign status = status | downcase | slugify %}
+  {% else %}
+    {% assign status = component.status %}
+  {% endif %}
 {% elsif include.pattern-status %}
   {% assign status = include.pattern-status %}
 {%- endif -%}

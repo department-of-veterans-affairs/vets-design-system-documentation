@@ -2,7 +2,6 @@
 layout: component
 title: Service List Item
 intro-text: The Service List Item summarizes a benefit or tool. For example, a Service List Item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the “Help Users to… Manage Benefits and Tools” pattern.
-status: use-with-caution-candidate
 research-title: Service List Item
 figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=52qYQM9JQBOPO71q-1
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
