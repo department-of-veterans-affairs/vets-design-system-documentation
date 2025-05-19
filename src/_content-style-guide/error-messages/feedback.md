@@ -31,7 +31,7 @@ intro-text: The application’s response when the user is interacting with it. T
     <va-table-row>
         <span>Form save in progress success (exit page)</span>
         <span><b>We've saved your in-progress application</b></span>
-        <span>You'll need to finish the application and click "Submit" to apply for this benefit. Continue applying now, or come back later to finish.</span>
+        <span>You'll need to finish the application and select <b>Submit</b> to apply for this benefit. Continue applying now, or come back later to finish.</span>
         <span>Continue your application</span>
         <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
         <span><a href="{{ site.baseurl }}/components/alert#success-alert">Success alert</a></span>
