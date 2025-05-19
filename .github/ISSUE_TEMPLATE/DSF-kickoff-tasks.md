@@ -1,9 +1,10 @@
 ---
-name: "DS+F - Kickoff Tasks"
+name: DS+F - Kickoff Tasks
 about: INTERNAL DS+F USE ONLY
 title: "[component name] - Kickoff"
-labels: platform-design-system-team, 
+labels: platform-design-system-team
 assignees: caw310, tbaker1026
+
 ---
 
 ## Configuring this issue
@@ -42,4 +43,4 @@ Create these documents for the new component using these templates
 - [ ] Product outline for the component
 - [ ] Design decision document for the component 
 - [ ] Research/discovery ticket created and in a sprint
-- [ ] Design ticket created and in a sprint 
+- [ ] Design ticket created and in a sprint

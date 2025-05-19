@@ -139,6 +139,6 @@ We all can help reduce negative stereotyping, body shaming, and personal blaming
 
 ## Additional Resources
 
-[Weight Bias & Stigma | Rudd Center for Food Policy and Health (uconnruddcenter.org)](https://uconnruddcenter.org/research/weight-bias-stigma/)
+[Weight Bias & Stigma, Rudd Center for Food Policy and Health (uconnruddcenter.org)](https://uconnruddcenter.org/research/weight-bias-stigma/)
 
 [6 tips to help journalists improve news coverage of obesity (journalistsresource.org)](https://journalistsresource.org/health/myths-misinformation-obesity-stigmatizing-news-tips-journalists/)
