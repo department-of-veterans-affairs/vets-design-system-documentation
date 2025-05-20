@@ -1,7 +1,7 @@
 ---
 name: DST - Component development
 about: INTERNAL DST USE ONLY
-title: "[component name] - Development"
+title: "Step 5: [component name] - Development"
 labels: platform-design-system-team
 assignees: ''
 
