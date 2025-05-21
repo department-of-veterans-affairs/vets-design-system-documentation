@@ -1,0 +1,30 @@
+---
+name: DSF - Update Component Maturity Scale Template
+about: INTERNAL DS+F USE ONLY
+title: ''Update [Component] Maturity Scale"
+labels: platform-design-system-team
+assignees: ''
+
+---
+
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add component label (such as `va-alert`), if applicable
+- [ ] Add `component-new` or `component-update` label, if applicable
+- [ ] Complete sections below
+- [ ] Delete this section once complete
+## Description
+Update the maturity scale for [component nane] in Storybook
+
+## Details
+_optional, delete section if not needed_
+
+
+## Tasks
+- [ ] Update maturity scale in Storybook  
+- [ ] Make sure the JSON file is updated and pushed to the guidance site
+- [ ] Generate the file that updates Figma 
+
+
+## Acceptance Criteria
+- [ ] Maturity level for the component is updated in Storybook, design.va.gov and Figma
