@@ -21,9 +21,10 @@ _optional, delete section if not needed_
 
 
 ## Tasks
-- [ ] Update maturity scale in Storybook  
+- [ ] Update maturity scale of the compnoent(s) in Storybook  
 - [ ] Make sure the JSON file is updated and pushed to the guidance site
 - [ ] Generate the file that updates Figma 
+- [ ] Import the other JSON file to Figma
 
 
 ## Acceptance Criteria
