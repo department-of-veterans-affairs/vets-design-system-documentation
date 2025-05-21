@@ -32,7 +32,6 @@ Create design for [component name] with Figma artifacts in the VADS component li
 - [ ] Sign off from PO and DS+F designers
 - [ ] Update product outline with link to Figma design
 - [ ] Make sure the component has the correct maturity level
-- [ ] Add ‘in progress or under construction” label - NEW STEP
 
 
 ## Acceptance Criteria
