@@ -1,7 +1,7 @@
 ---
 name: DS+F - Kickoff Tasks
 about: INTERNAL DS+F USE ONLY
-title: "[component name] - Kickoff"
+title: "Step 1: [component name] - Kickoff"
 labels: platform-design-system-team
 assignees: caw310, tbaker1026
 
