@@ -6,7 +6,6 @@ title: Alert - Sign-in
 github-title: va-alert-sign-in
 intro-text: An alert component with specific content focused on helping users complete the sign-in process.
 figma-link: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
-status: use-with-caution-candidate
 web-component: va-alert-sign-in
 anchors:
   - anchor: Examples
@@ -19,6 +18,7 @@ anchors:
 ---
 
 ## Examples
+
 {% include content/sign-in-alert-examples.md %}
 
 ## Usage

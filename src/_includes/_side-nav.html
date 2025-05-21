@@ -10,7 +10,7 @@
     {% assign sortedPages = include.section | sort: "title", "last" %}
     {% for p in sortedPages %}
         {% assign is-current = false %}
-        {% if p.url == page.url %}
+        {% if p.url == page.url or page.url == site.baseurl | append: p.permalink %}
           {% assign is-current = true %}
         {% endif %}
         {% assign open-accordion = false %}
@@ -34,7 +34,7 @@
                           <li {% if is-current == true %}class="active-level"{%- endif -%}>
                             <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
                               {% if p.inner-title %}{{ p.inner-title }}{% else %}{{ p.title }}{%- endif -%}
-                              {%- if p.status -%}
+                              {%- if p.web-component or p.status -%}
                                 {%- include _site-side-nav-status.html components=sortedPages component=p.title -%}
                               {%- endif -%}
                             </a>

@@ -84,6 +84,12 @@ Tested using `node` v18.19.0 and `yarn` v1.22.19.
 5. **Build and start the Jekyll server**
 
    ```
+   $ yarn start:storybook-static
+   ```
+
+or, if not using step 7 below:
+
+   ```
    $ yarn start
    ```
 
