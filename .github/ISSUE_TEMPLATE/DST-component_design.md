@@ -1,7 +1,7 @@
 ---
 name: DS+F - Component design
 about: INTERNAL DST USE ONLY
-title: "[component name] - Design (phase 1)"
+title: "Step 3: [component name] - Design (phase 1)"
 labels: platform-design-system-team
 assignees: babsdenney, danbrady, jeana-adhoc
 
@@ -32,7 +32,6 @@ Create design for [component name] with Figma artifacts in the VADS component li
 - [ ] Sign off from PO and DS+F designers
 - [ ] Update product outline with link to Figma design
 - [ ] Make sure the component has the correct maturity level
-- [ ] Add ‘in progress or under construction” label - NEW STEP
 
 
 ## Acceptance Criteria
