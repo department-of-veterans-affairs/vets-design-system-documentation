@@ -1,10 +1,12 @@
 ---
-name: "DST - Basic Issue Template"
-about: INTERNAL DST USE ONLY
+name: DS+F - Basic Issue Template
+about: INTERNAL DS+F USE ONLY
 title: ''
 labels: platform-design-system-team
+assignees: ''
 
 ---
+
 ## Configuring this issue
 - [ ] Add issue to appropriate epic
 - [ ] Add component label (such as `va-alert`), if applicable

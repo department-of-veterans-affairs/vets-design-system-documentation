@@ -1,8 +1,9 @@
 ---
-name: "DST - Component development"
+name: DST - Component development
 about: INTERNAL DST USE ONLY
-title: "[component name] - Development"
-labels: platform-design-system-team, dst-engineering
+title: "Step 4: [component name] - Development"
+labels: platform-design-system-team
+assignees: ''
 
 ---
 
@@ -13,31 +14,38 @@ labels: platform-design-system-team, dst-engineering
 - [ ] Complete sections below
 - [ ] Delete this section once complete
 
+
 ## Description
+[Provide a brief description of the component, its purpose, and its use cases.]
+
 Build a web component of [component name]. Be sure to add analytics if necessary, see [guidance](https://vfs.atlassian.net/wiki/spaces/DST/pages/2079817745/Component+development+process#Analytics%5BinlineExtension%5D).
 
-If this is a pattern or component that is already in existence, check the Design System Team backlog for outstanding issues. If you find any, link to them in a comment on this ticket. If possible, address any outstanding issues with this new version and link to this issue from the original issue. If not, indicate that in the original issue.
 
 ## Details
-- Design documents: [add links to any design documents]
-- Review accessibility considerations added to component design ticket (if any)
+- [Design files (Figma)](link-to-design-files)
+- [Properties / architecture document](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/design-system-forms-library/templates/properties-architecture.md) 
+- [Any related references or documentation](link-to-resources)
 - Review [Design System Engineering Best Practices document](https://vfs.atlassian.net/wiki/spaces/DST/pages/2176516116/Design+System+Engineering+Best+Practices)
 
 ## Tasks
-- [ ] Review DST backlog for outstanding issues with this component, if necessary
-- [ ] Create web component and add to Storybook
-- [ ] Write any necessary tests
-- [ ] Add Chromatic link to #[add accessibility ticket number] and request review from an accessibility specialist
-- [ ] Contact designer for design review
-- [ ] Display the appropriate [maturity scale](https://design.va.gov/about/maturity-scale) option in Storybook (once this feature is available)
-    - If this is a new component that has not gone through Staging Review, it should be labeled "Use with Caution: Candidate"
-- [ ] Merge component
-- [ ] Create a new release of component-library
-- [ ] Update component-library dependency in vets-design-system-documentation to get the updated component-docs.json
-- [ ] Add analytics set-up to `vets-website` repository. See [guidance here](https://vfs.atlassian.net/wiki/spaces/DST/pages/2079817745/Component+development+process#Analytics%5BinlineExtension%5D).
+### Planning & Design
+- [ ] Review component requirements and confirm details with the design team
+- [ ] Ensure Figma designs are complete and accessible (attach links)
+- [ ] Identify dependencies and technical constraints
 
-## Acceptance Criteria
-- [ ] Component is written and added to Storybook
-- [ ] Component has had accessibility and design reviews
-- [ ] Design.va.gov has the latest version of component-library
-- [ ] Analytics has been configured for the component in the `vets-website` repo
+### Development
+- [ ] Set up the component's folder structure and boilerplate code follow [Creating a new component documentation](https://design.va.gov/about/developers/contributing#creating-a-new-component) 
+- [ ] Implement the component's core functionality
+- [ ] Add styles (CSS/SCSS) to match the design system standards and import USWDS styles where possible
+- [ ] Add accessibility features (ARIA roles, keyboard navigation, etc.)
+- [ ] Write unit tests for core functionality
+- [ ] Write integration tests for broader compatibility
+- [ ] Add the component to the design system library (e.g., Storybook)
+
+
+### Review & Testing
+- [ ] Conduct a code review with peers
+- [ ] Conduct a design review with the design team
+- [ ] Perform cross-browser and cross-device testing
+- [ ] Perform accessibility testing (using tools like Axe, NVDA, or VoiceOver)
+
