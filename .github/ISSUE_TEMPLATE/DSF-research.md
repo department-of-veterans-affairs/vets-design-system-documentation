@@ -1,5 +1,5 @@
 ---
-name: DS+F - Research Issue Template
+name: Step 2 DS+F - Research Issue Template
 about: INTERNAL DS+F USE ONLY
 title: "Step 2: Research [component or pattern name]"
 labels: platform-design-system-team
