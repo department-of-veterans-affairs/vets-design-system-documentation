@@ -28,9 +28,11 @@ _optional, delete section if not needed_
    - [ ] Identify potential technical challenges or limitations.
    - [ ] Compile research or user feedback
    - [ ] Review findings with PO, DS+F team members
+   - [ ] Create a discussion topic on the [DSF discussion board](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions)
 
 
 ## Acceptance Criteria
 - [ ] Research findings are reviewed and approved 
 - [ ] Recommendations are documented and shared with the team
-- [ ] The research is ready to inform the next phase (e.g., design or development).
+- [ ] The research is ready to inform the next phase (e.g., design or development)
+- [ ] Share the discussion in #platform-design-system) Slack channel to get feedback
