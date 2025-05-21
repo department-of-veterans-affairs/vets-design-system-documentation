@@ -1,5 +1,5 @@
 ---
-name: DS+F - Component design
+name: Step 3 DSF - Component design
 about: INTERNAL DST USE ONLY
 title: "Step 3: [component name] - Design (phase 1)"
 labels: platform-design-system-team
