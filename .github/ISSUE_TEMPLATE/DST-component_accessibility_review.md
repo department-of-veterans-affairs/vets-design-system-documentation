@@ -19,6 +19,9 @@ We need to conduct a full accessibility review of the [component name] component
 
 ## Tasks
 - [ ] Full accessibility review of the component is completed
+- [ ] If mobile component validate on mobile devices the component accessibility behaviors match expectations
+     - [ ] Screen readers
+     - [ ] Text size changes
 - [ ] Create a ticket with descriptions of any issues found in a new ticket
     - [ ] If any problems are found, add screen recordings and/or screenshots to comments on this ticket that show the problem.
 - [ ] If necessary, discuss any accessibility issues found with the engineer who developed the component
