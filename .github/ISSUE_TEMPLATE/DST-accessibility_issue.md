@@ -1,5 +1,5 @@
 ---
-name: DS+F - Component design
+name: DSF - File a Component Accessibility Issue
 about: INTERNAL DST USE ONLY
 title: "[component name] - [Describe a11y issue]"
 labels: platform-design-system-team, accessibility
