@@ -1,5 +1,5 @@
 ---
-name: DS+F - Kickoff Tasks
+name: Step 1 DS+F - Kickoff Tasks
 about: INTERNAL DS+F USE ONLY
 title: "Step 1: [component name] - Kickoff"
 labels: platform-design-system-team
