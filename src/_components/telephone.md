@@ -74,7 +74,7 @@ web-component: va-telephone
 ### Choosing between variations
 
 * If the phone number should have an `extension`, be `non-clickable`, or represent an `international` number, additional props can be added to accommodate.
-* For TTY numbers, pass the `tty` boolean prop to have appropriate indicators in the link text and the `aria-label`.
+* For TTY numbers, pass the `tty` boolean prop to have appropriate indicators in the link text.
 * For text messages, pass the `sms` boolean prop to have the link trigger a SMS text message instead of placing a phone call. This will open the default program on the computer or device for sending messages.
 
 ### Placement
