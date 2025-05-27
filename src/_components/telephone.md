@@ -89,5 +89,4 @@ web-component: va-telephone
 
 ## Accessibility considerations
 
-* By default an `aria-label` will be created based off of the context entered into the component and will be formatted as a combined phone number with parts within the label separated by periods, e.g. "800-555-1212" becomes "8 0 0. 5 5 5. 1 2 1 2"
-* If the `non-clickable` prop is enabled `aria-hidden="true"` will be added to the span element containing the  number and a `sr-only` CSS class will be added to the span element displaying the number in the `aria-label` format as shown above.
+* Teams should not add aria labels on phone numbers or TTY. If you have questions, contact the Accessibility Design Experience (ADE) Team.
