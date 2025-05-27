@@ -1,5 +1,5 @@
 ---
-name: DS+F - Component accessibility review
+name: "Step 5 DSF - Component accessibility review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Accessibility review"
 labels: platform-design-system-team
