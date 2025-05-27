@@ -1,0 +1,33 @@
+---
+name: Step 9 DSF - Announcements
+about: INTERNAL DS+F USE ONLY
+title: ''Announce VADS Update"
+labels: platform-design-system-team
+assignees: ''caw310, tbaker1026"
+
+---
+
+## Configuring this issue
+- [ ] Add issue to appropriate epic
+- [ ] Add component label (such as `va-alert`), if applicable
+- [ ] Add `component-new` or `component-update` label, if applicable
+- [ ] Complete sections below
+- [ ] Delete this section once complete
+
+## Description
+Post announcements on the latest VADS update. 
+
+## Details
+_optional, delete section if not needed_
+
+
+## Tasks
+- [ ] Post announcement about the new or updated component or pattern in #platform-design-system channel and cross post #vfs-change-announcements (PM)
+- [ ] Announce in ToT slide with link to new component page and/or What’s New (PM)
+- [ ] Announce in Monday Design Meeting (Designer) 
+
+
+## Acceptance Criteria
+- [ ] Slack message posted
+- [ ] ToT slide created and announcement made in the meeting
+- [ ] Announcement in Monday Design Meeting
