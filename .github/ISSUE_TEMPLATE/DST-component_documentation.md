@@ -1,8 +1,9 @@
 ---
-name: "DST - Component documentation"
+name: "Step 6 DSF - Component documentation"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Documentation"
 labels: platform-design-system-team
+assignees: ''
 
 ---
 

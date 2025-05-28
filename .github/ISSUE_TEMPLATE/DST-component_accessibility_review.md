@@ -1,10 +1,12 @@
 ---
-name: "DST - Component accessibility review"
+name: "Step 5 DSF - Component accessibility review"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Accessibility review"
 labels: platform-design-system-team
+assignees: ''
 
 ---
+
 ## Configuring this issue
 - [ ] Add issue to appropriate epic
 - [ ] Add Design System component label (such as `va-alert`)
@@ -17,11 +19,13 @@ We need to conduct a full accessibility review of the [component name] component
 
 ## Tasks
 - [ ] Full accessibility review of the component is completed
-- [ ] Add descriptions of any issues found to this ticket
+- [ ] If mobile component validate on mobile devices the component accessibility behaviors match expectations
+     - [ ] Screen readers
+     - [ ] Text size changes
+- [ ] Create a ticket with descriptions of any issues found in a new ticket
     - [ ] If any problems are found, add screen recordings and/or screenshots to comments on this ticket that show the problem.
 - [ ] If necessary, discuss any accessibility issues found with the engineer who developed the component
-- [ ] Re-review any fixes the developer makes to the component
 
 ## Acceptance Criteria
 - [ ] Component has been reviewed for accessibility issues
-- [ ] Any accessibility issues have been addressed or ticket has been written with issues that need to be fixed
+- [ ] Any accessibility issues have been put in a new ticket

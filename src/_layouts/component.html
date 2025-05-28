@@ -30,7 +30,7 @@
             {% if page.aka %}
           <p>Also known as: {{ page.aka }}</p>
             {% endif %}
-            {% if page.status %}
+            {% if page.web-component or page.status %}
               {% include _status.html %}
             {% endif %}
             {% include _component-translations.html %}
