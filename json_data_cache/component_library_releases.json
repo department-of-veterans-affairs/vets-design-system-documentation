@@ -1,5 +1,48 @@
 [
   {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/221640053",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/221640053/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/221640053/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v50.3.0",
+    "id": 221640053,
+    "author": {
+      "login": "ndsprinkle",
+      "id": 53942725,
+      "node_id": "MDQ6VXNlcjUzOTQyNzI1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/53942725?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ndsprinkle",
+      "html_url": "https://github.com/ndsprinkle",
+      "followers_url": "https://api.github.com/users/ndsprinkle/followers",
+      "following_url": "https://api.github.com/users/ndsprinkle/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ndsprinkle/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ndsprinkle/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ndsprinkle/subscriptions",
+      "organizations_url": "https://api.github.com/users/ndsprinkle/orgs",
+      "repos_url": "https://api.github.com/users/ndsprinkle/repos",
+      "events_url": "https://api.github.com/users/ndsprinkle/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ndsprinkle/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOEjVS084NNfV1",
+    "tag_name": "v50.3.0",
+    "target_commitish": "main",
+    "name": "v50.3.0",
+    "draft": false,
+    "prerelease": false,
+    "created_at": "2025-05-28T18:21:15Z",
+    "published_at": "2025-05-28T18:26:27Z",
+    "assets": [
+
+    ],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v50.3.0",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v50.3.0",
+    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-text-input & va-statement-of-truth: add prop for adding Datadog privacy class on error message by @Mottie in https://github.com/department-of-veterans-affairs/component-library/pull/1600\r\n* va-table: add data-sort-value attribute for raw number value sorting by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1604\r\n* va-input-telephone: add component by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1595\r\n### Fixes\r\n* va-combo-box: make all options persist in dropdown after selection by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1602\r\n* va-accordion: logic update to fix 2 clicks to collapse bug by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1603\r\n* va-combo-box: populate options when loading by @KyleCardwell in https://github.com/department-of-veterans-affairs/component-library/pull/1605\r\n* va-search-filter: make headings consistent across breakpoints by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1611\r\n* va-search-filter: update accordion-items to be heading level 3 by @powellkerry in https://github.com/department-of-veterans-affairs/component-library/pull/1609\r\n* va-alert-sign-in: replace straight apostrophes with curly ones by @RyanMunsch in https://github.com/department-of-veterans-affairs/component-library/pull/1613\r\n\r\n## New Contributors\r\n* @RyanMunsch made their first contribution in https://github.com/department-of-veterans-affairs/component-library/pull/1613\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v50.2.2...v50.3.0",
+    "mentions_count": 6
+  },
+  {
     "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/218648265",
     "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/218648265/assets",
     "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/218648265/assets{?name,label}",
@@ -1243,49 +1286,6 @@
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v46.1.3",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v46.1.3",
     "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-select: add width prop by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1308\r\n### Fixes\r\n* web-components: remove remaining references to uswds variation by @jamigibbs in https://github.com/department-of-veterans-affairs/component-library/pull/1309\r\n### Other Changes\r\n* css-library: add !important to utilities by @it-harrison in https://github.com/department-of-veterans-affairs/component-library/pull/1310\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v46.0.3...v46.1.3",
-    "mentions_count": 2
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/172593841",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/releases/172593841/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/component-library/releases/172593841/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/component-library/releases/tag/v46.0.3",
-    "id": 172593841,
-    "author": {
-      "login": "micahchiang",
-      "id": 15097156,
-      "node_id": "MDQ6VXNlcjE1MDk3MTU2",
-      "avatar_url": "https://avatars.githubusercontent.com/u/15097156?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/micahchiang",
-      "html_url": "https://github.com/micahchiang",
-      "followers_url": "https://api.github.com/users/micahchiang/followers",
-      "following_url": "https://api.github.com/users/micahchiang/following{/other_user}",
-      "gists_url": "https://api.github.com/users/micahchiang/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/micahchiang/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/micahchiang/subscriptions",
-      "organizations_url": "https://api.github.com/users/micahchiang/orgs",
-      "repos_url": "https://api.github.com/users/micahchiang/repos",
-      "events_url": "https://api.github.com/users/micahchiang/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/micahchiang/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "RE_kwDOEjVS084KSZKx",
-    "tag_name": "v46.0.3",
-    "target_commitish": "main",
-    "name": "v46.0.3",
-    "draft": false,
-    "prerelease": false,
-    "created_at": "2024-08-29T15:10:40Z",
-    "published_at": "2024-08-29T15:16:39Z",
-    "assets": [
-
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/tarball/v46.0.3",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/component-library/zipball/v46.0.3",
-    "body": "<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### New Features & Components 🎉\r\n* va-radio: add messageAriaDescribedby prop by @ataker in https://github.com/department-of-veterans-affairs/component-library/pull/1303\r\n### Fixes\r\n* va-link: re-add font inherit by @micahchiang in https://github.com/department-of-veterans-affairs/component-library/pull/1307\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/component-library/compare/v46.0.2...v46.0.3",
     "mentions_count": 2
   }
 ]
