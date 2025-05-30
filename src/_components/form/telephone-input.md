@@ -2,6 +2,8 @@
 layout: component
 title: Telephone Input
 status: use-with-caution-candidate
+permalink: /components/form/telephone-input
+has-parent: /components/form/
 figma-link: https://www.figma.com/design/fsqR9TGOL2FhNqJ3Eoi4Ag/va-input-telephone-Add-Design?node-id=29018-58507
 intro-text: "Use the telephone input component to help users enter a telephone number" 
 anchors:
@@ -10,6 +12,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Related
 web-component: va-input-telephone
 ---
 
@@ -57,6 +60,7 @@ By default the telephone input component has the following validation:
 
 
 ## Content considerations
+Content for both variations can be found in [Ask users for... Phone numbers pattern]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers).
 
 ## Accessibility considerations
 
