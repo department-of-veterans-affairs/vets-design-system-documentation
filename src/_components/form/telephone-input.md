@@ -1,11 +1,12 @@
 ---
 layout: component
-title: Telephone Input
-status: use-with-caution-candidate
 permalink: /components/form/telephone-input
 has-parent: /components/form/
-figma-link: https://www.figma.com/design/fsqR9TGOL2FhNqJ3Eoi4Ag/va-input-telephone-Add-Design?node-id=29018-58507
+title: Telephone Input
 intro-text: "Use the telephone input component to help users enter a telephone number" 
+status: use-with-caution-candidate
+figma-link: https://www.figma.com/design/fsqR9TGOL2FhNqJ3Eoi4Ag/va-input-telephone-Add-Design?node-id=29018-58507
+web-component: va-input-telephone
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -13,7 +14,6 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
-web-component: va-input-telephone
 ---
 
 ## Examples
@@ -35,17 +35,13 @@ Do not use this component if you do not need to collect a telephone number.
 
 ### How this component works
 
-- The component consists of a combo box for the country dialing code and a text input for the phone number. For those components please check the usability guidance for combo boxes and text inputs.
-- For the country combo box, provide the user a flag icon, unabbreviated country names, and the country code to select from. Example: [flag icon] United States of America +1
-- The component supports 200+ international dialing codes 
-- The countries are displayed in alphabetical order, with the United States of America being listed as the default option.
+* **Header:** The header must be understandable and short. The header should describe the type of phone number you are collecting, options may include Home phone number, Mobile phone number, or Work phone number. We try to avoid ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to create more plain language labels.
 
-* **Header** The header must be understandable and short. The header should describe the type of phone number you are collecting, options may include Home phone number, Mobile phone number, or Work phone number. We try to avoid ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to create more plain language labels.
-
-* **The selected option** The United States is preselected for users as 99% of addresses are US based at this time.
-
-* **The list of options** The country list comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme) the component is using and it is based on the [officially assigned ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). This list is sorted alphabetically with the United States listed as the first choice.
-
+* **Phone number** The component consists of a combo box for the country dialing code and a text input for the phone number. For those components please check the usability guidance for combo boxes and text inputs.
+  * For the country combo box, provide the user a flag icon, unabbreviated country names, and the country code to select from. Example: [flag icon] United States of America +1.
+  * The countries are displayed in alphabetical order, with the United States of America being listed as the default option.
+  * The country list of 200+ countryies comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme) the component is using and it is based on the [officially assigned ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). This list is sorted alphabetically with the United States listed as the first choice.
+  * The United States is preselected for users as 99% of addresses are US based at this time.
 
 
 ### Validation
@@ -53,8 +49,6 @@ By default the telephone input component has the following validation:
 - Cannot have blank values
 - The phone number 'sequence' must match the valid pattern for the country code. For example `Enter a United States of America phone number in a valid format, for example, [(xxx) xxx-xxxx]`
 - We use the libphonenumber library to validate phone numbers.
-
-
 
 {% include component-docs.html component_name=page.web-component %}
 
