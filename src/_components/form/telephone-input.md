@@ -37,50 +37,38 @@ Do not use this component if you do not need to collect a telephone number.
 - The component supports 200+ international dialing codes 
 - The countries are displayed in alphabetical order, with the United States of America being listed as the default option.
 
+* **Header** The header must be understandable and short. The header should describe the type of phone number you are collecting, options may include Home phone number, Mobile phone number, or Work phone number. We try to avoid ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to create more plain language labels.
 
+* **The selected option** The United States is preselected for users as 99% of addresses are US based at this time.
 
-Label
-The label must be understandable and short. The label should describe the type of phone number you are collecting, options may include home, mobile, or work.
-
-The selected option
-The United States is preselected for users as 99% of addresses are US based at this time. 
-
-The list of options
-The countries in the select are based on the ISO standadard. This list is sorted alphabetically with the United States listed as the first choice.
+* **The list of options** The country list comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme) the component is using and it is based on the [officially assigned ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). This list is sorted alphabetically with the United States listed as the first choice.
 
 
 
 ### Validation
 By default the telephone input component has the following validation:
 - Cannot have blank values
-- The phone number 'sequence' must match the valid pattern for the country code
-- We use Google’s libphonenumber library to validate phone numbers.
+- The phone number 'sequence' must match the valid pattern for the country code. For example `Enter a United States of America phone number in a valid format, for example, [(xxx) xxx-xxxx]`
+- We use the libphonenumber library to validate phone numbers.
 
 
 
 {% include component-docs.html component_name=page.web-component %}
 
 
-If the phone number is not in the correct format and there is no example
-Say ‘Enter a phone number, like 01632 960 001, 07700 900 982 or +44 808 157 0192’.
-
-If the phone number is not in the correct format and there is an example
-Say ‘Enter a phone number in the correct format’.
-
-
-
-
 ## Content considerations
 
 ## Accessibility considerations
 
-Keyboard Navigation: Users can navigate to the input field via the Tab key. Use Arrow keys to navigate through the country dropdown options. Pressing Enter selects a country, and focus moves back to the input field.
-Focus Indicator: A clear visual outline is shown when the input field or dropdown has focus. For more information follow Focus order for Input fields.
-Screen Readers: Announce the input field as "Phone Number Input" with the current selected country (e.g., "United States flag"). For error states, screen readers announce the error message when it appears.
-Alt Text for Flags: Ensure all flag icons have descriptive alt text (e.g., "United States flag").
-Error Prevention and Feedback: Real-time validation provides clear feedback when input is invalid. Prevent submission until a valid phone number is entered.
+* **Keyboard Navigation:** Users can navigate to the combo box via the Tab key. Use Arrow keys to navigate through the country dropdown options. Pressing Enter selects a country, and focus moves back to the combo box field. Users then navigate to the text input via the tab key to enter a phone number.
+* **Focus Indicator:** A clear visual outline is shown when the input field or dropdown has focus.
+* **Screen Readers:** Announce the input field as "Phone Number Input" with the current selected country (e.g., "United States flag"). For error states, screen readers announce the error message when it appears.
+* **Alt Text for Flags:** Because the flags in the combo box serve a decorative purpose, the alt text is undefined.
+* **Error Prevention and Feedback:** Real-time validation provides clear feedback when input is invalid. This helps prevent submission until a valid phone number is entered.
 
 
 ## Related
-- combo box
-- text input
+* [Combo box]({{ site.baseurl }}/components/form/combo-box)
+* [Text input]({{ site.baseurl }}/components/form/text-input)
+
+{% include _component-checklist.html component_name=page.web-component %}
