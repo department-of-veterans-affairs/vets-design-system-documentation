@@ -26,9 +26,9 @@ anchors:
 
 ## Examples
 
-### U.S. phone numbers
+### Phone numbers with country codes
 
-{% include component-example.html alt="Shows the form fields used to obtain home phone number and mobile phone number." file="/images/patterns/ask-users-for/phone-numbers/phone-numbers.png" caption="Example of asking for a home phone number or mobile phone number." class="x2" %}
+{% include component-example.html alt="Shows the form fields used to obtain home phone number and mobile phone number with a country code." file="/images/patterns/ask-users-for/phone-numbers/with-country-code-phone.png" caption="Example of asking for a home phone number or mobile phone number with a country code." class="x2" %}
 
 <va-link-action
   href="{{ page.example-link }}"
@@ -36,8 +36,8 @@ anchors:
   type="secondary"
 ></va-link-action>
 
-### International phone numbers
-{% include component-example.html alt="Shows the form fields used to obtain a international phone number." file="/images/patterns/ask-users-for/phone-numbers/international-phone-number.png" caption="Example of asking for an international phone number." class="x2" %}
+### Phone numbers without country codes
+{% include component-example.html alt="Shows the form fields used to obtain a phone number with no country code." file="/images/patterns/ask-users-for/phone-numbers/no-country-code-phone.png" caption="Example of asking for an domestic phone number." class="x2" %}
   
 ## How to design and build
 
@@ -46,7 +46,7 @@ anchors:
 ### How this pattern works
 
 * **If possible, tell users why you want their phone number.** An example message is: *Please enter your contact information so we can get in touch with you if we have questions about your application.* This message can be at the top of the page if asking for any other contact information.
-* **Validate phone numbers.** Users must provide at least a 10 digit phone number with or without dashes for U.S. phone numbers and up to a 15-digit phone number for international phone numbers. 
+* **Validate phone numbers.** Users must provide a valid domestic or international phone number. 
 
   Example of acceptable formats for U.S. phone numbers:
   * 703-123-4567
@@ -62,11 +62,11 @@ anchors:
 
 ### Components used in this pattern
 
-* [Text input]({{ site.baseurl }}/components/form/text-input)
+* [Telephone input]({{ site.baseurl }}/components/form/telephone-input)
 
 ### Page templates available for this pattern
 
-Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-link }}).
+Use the [VADS templates (Patterns & Forms) for Phone numbers in Figma]({{ page.figma-link }}).
 
 ## Code usage
 
@@ -74,7 +74,7 @@ Use the [VADS templates (Patterns & Forms) for Names in Figma]({{ page.figma-lin
 
 ## Content considerations
 
-* **Do not use primary or secondary phone numbers as field labels.** Home and mobile phone numbers are more plain language-focused.
+* **Do not use primary or secondary phone numbers as headers.** Home and mobile phone numbers are more plain language-focused.
 * **Display phone numbers in the appropriate way.** If you need to display a phone number after it has been collected, then [follow content style guidelines on phone numbers]({{ site.baseurl }}/content-style-guide/dates-and-numbers#phone-numbers).
 
 ### Labels, error messages, and hint text

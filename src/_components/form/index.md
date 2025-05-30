@@ -22,6 +22,7 @@ sub-pages:
   - sub-page: Radio button
   - sub-page: Select
   - sub-page: Statement of truth
+  - sub-page: Telephone Input
   - sub-page: Text input
   - sub-page: Textarea
 anchors:
