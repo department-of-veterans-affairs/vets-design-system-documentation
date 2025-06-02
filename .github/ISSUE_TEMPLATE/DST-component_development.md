@@ -1,5 +1,5 @@
 ---
-name: DST - Component development
+name: "Step 4 DSF - Component development"
 about: INTERNAL DST USE ONLY
 title: "Step 4: [component name] - Development"
 labels: platform-design-system-team
