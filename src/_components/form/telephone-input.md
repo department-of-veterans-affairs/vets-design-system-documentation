@@ -26,12 +26,12 @@ anchors:
 ## Usage
 
 ### When to use telephone input
-Use this pattern if you need to collect the user’s phone number. Only ask for the phone number if you need it. This pattern is designed to support U.S. and International phone numbers and their specific formats. You may place multiple telephone input components on a page if you need to collect multiple numbers. Each label should be unique.
+* Use this pattern if you need to collect the user’s phone number. Only ask for the phone number if you need it. This pattern is designed to support U.S. and International phone numbers and their specific formats. You may place multiple telephone input components on a page if you need to collect multiple numbers. Each label should be unique.
 
-Users should be allowed to enter telephone numbers in whatever format is familiar to them. You should allow for additional spaces, hyphens, brackets and dashes, and be able to accommodate country and area codes.
+* Users should be allowed to enter telephone numbers in whatever format is familiar to them. You should allow for additional spaces, hyphens, brackets and dashes, and be able to accommodate country and area codes.
 
 ### When to consider something else
-Do not use this component if you do not need to collect a telephone number. 
+* Do not use this component if you do not need to collect a telephone number. 
 
 ### How this component works
 
