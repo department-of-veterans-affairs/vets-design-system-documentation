@@ -38,10 +38,10 @@ Faceted search is a way to filter search results by using attributes, or facets,
 
 ## Behavior
 
-* **Filters collapse inside an Accordion below table width.** At mobile viewports, up until the tablet breakpoint, filters should collapse inside an Accordion component.
+* **Filters collapse inside an Accordion below tablet width.** At mobile viewports, up until the tablet breakpoint, filters should collapse inside an Accordion component.
 * **Checkboxes allow for filtering on multiple facets.** Multiple facet filtering uses the [Checkbox]({{ site.baseurl }}/components/form/checkbox) component as the interaction input.
 * **Filtering must have a distinct button to apply filtering to the results.** This component uses a [button]({{ site.baseurl }}/components/button) component to apply filtering.
-* **Filtering must provide a way to clear or reset all filters.** The user must have a clear and easy way to clear or reset all filters. Thus the inclusion of the "Clear all filters" [button]({{ site.baseurl }}/components/button)
+* **Filtering must provide a way to clear or reset all filters.** The user must have a clear and easy way to clear or reset all filters. Thus the inclusion of the "Clear all filters" [button]({{ site.baseurl }}/components/button).
 
 ### Placement
 
