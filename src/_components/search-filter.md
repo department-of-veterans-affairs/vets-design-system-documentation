@@ -1,6 +1,7 @@
 ---
 layout: component
 title: Search Filter
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=29763-24650&t=RwH9qbwZGs859rIX-1
 intro-text: This component implements faceted search.
 web-component: va-search-filter
 anchors:
@@ -33,19 +34,21 @@ Faceted search is a way to filter search results by using attributes, or facets,
 
 ### When to consider something else
 
-* **Use a radio button when only one filter can be applied at a time.** If a facet only allows mutually exclusive results at a time, in other words only one filter can be applied at one time, then you will need to roll your own version of filtering and use the [Radio button]({{ site.baseurl }}/components/form/radio-button) component as the interaction input up to 5 items. For more than 5 items use a [Select]({{ site.baseurl }}/components/form/select) component.
+* **Use a radio button when only one filter can be applied at a time.** If a facet only allows mutually exclusive results at a time, in other words only one filter can be applied at one time, then you will need to create your own version of filtering and use the [Radio button]({{ site.baseurl }}/components/form/radio-button) component as the interaction input up to 5 items. For more than 5 items use a [Select]({{ site.baseurl }}/components/form/select) component.
 * **Use a segmented button as an alternative when there are limited facet items.** When there are only 2-3 items within a facet that can be filtered on, use of a [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented) component is an option excluding task flows such as filling out a form, reviewing secure messages, etc.
 
 ## Behavior
 
 * **Filters collapse inside an Accordion below tablet width.** At mobile viewports, up until the tablet breakpoint, filters should collapse inside an Accordion component.
 * **Checkboxes allow for filtering on multiple facets.** Multiple facet filtering uses the [Checkbox]({{ site.baseurl }}/components/form/checkbox) component as the interaction input.
-* **Filtering must have a distinct button to apply filtering to the results.** This component uses a [button]({{ site.baseurl }}/components/button) component to apply filtering.
+* **Filtering must have a distinct button to apply filtering to the results.** Search filter uses a [button]({{ site.baseurl }}/components/button) component to apply filtering.
 * **Filtering must provide a way to clear or reset all filters.** The user must have a clear and easy way to clear or reset all filters. Thus the inclusion of the "Clear all filters" [button]({{ site.baseurl }}/components/button).
 
 ### Placement
 
-Refer to the [search results template]({{ site.baseurl }}/templates/search-results) for placement.
+* **Mobile viewport widths:** The search filters should appear below the search input component and above the sort component.
+* **Desktop viewport widths:** The search filters appear in the left-side rail, below a full-width search input component.
+* Refer to the [search results template]({{ site.baseurl }}/templates/search-results) examples for precise placement.
 
 {% include component-docs.html component_name=page.web-component %}
 
