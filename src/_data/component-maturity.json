@@ -88,10 +88,6 @@
     "maturityCategory": "caution",
     "maturityLevel": "available"
   },
-  "va-input-telephone": {
-    "maturityCategory": "caution",
-    "maturityLevel": "proposal"
-  },
   "va-language-toggle": {
     "maturityCategory": "caution",
     "maturityLevel": "available"

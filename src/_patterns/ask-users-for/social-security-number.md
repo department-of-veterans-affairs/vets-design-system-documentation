@@ -25,6 +25,10 @@ anchors:
 
 * **When you need to collect or display a person's Social Security or VA file number.** For example, for an application for identity purposes.
 
+### When not to use this pattern
+
+* **When a user is authenticated, identity proofed, and we have their SSN on file.** When we have a SSN on file for the user we should use that information and not allow the user to change the SSN in the form. Follow the [Help users to know how their information is prefilled pattern]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) for uneditable data.
+
 ## Examples
 
 ### Collect
@@ -49,14 +53,32 @@ A Social Security Number (SSN) consists of nine digits, commonly written as thre
 
 A VA file number is how a Veteran’s claim is tracked through the compensation system and how documents and other evidence are associated with a Veteran’s file in the VA’s electronic database.
 
-* **Use the [web-component-patterns/ssnPattern in the Forms Library]( {{ page.code-link }}).**
+A Military Service number is a unique identifier that was assigned to members of the United States Armed Forces before the Social Security number became the standard identifier.
+
+#### Social Security Number is uneditable for IAL2 authenticated users
+
+When a user is authenticated, identity proofed, and we have their SSN on file we should use that information and not allow the user to change the SSN in the form. Follow the [Help users to know how their information is prefilled pattern]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) for uneditable data.
+
+Decision review forms all use this variation of the pattern, including the 526, the 20-0995, and the 20-0996.
+
+#### Unauthenticated or un-identity proofed (IAL1) users
+
+The most common variation of this pattern is to offer both the Social Security number and VA file number. Most paper forms feature both and thus, for online forms that must map fields to a paper form, the fields match. For paper forms that only feature one or the other, either Social Security number or VA file number can be supplied. The VA has the ability to identify the Veteran using either. While this is a manual process, it's less burdensome for the user. Both fields are the same number of digits.
+
+#### Non-Veteran users
+
+When a form is directed towards a non-Veteran, for example a caregiver or spouse may be filling out the form on the Veteran's behalf, we may ask that person for their Social Security number only. For example, in the 21P-0847 form, we ask for the submitter's Social Security number only on one step. In a later step, when asking for their Veteran's information, we ask for Social Security number (required) and VA file number (optional). In this case, that matches the fields in the paper form.
+
+### Using the ssnPattern
+
+**Use the [web-component-patterns/ssnPattern in the Forms Library]( {{ page.code-link }}).**
 
 The ssnPattern implements the following best practices:
 
 * **Prefill Social Security number when possible.** Don't ask users to input their SSN if you can prefill it instead.
 * **Use a single text input for each field.** Don't split the SSN into 3 text inputs.
 * **Do not abbreviate.** Use ‘Social Security number’. Do not use abbreviations, such as SSN.
-* **When asking for both Social Security and VA file numbers, one or the other may be provided.** VA file numbers are not on every form.If the form asks for a Social Security number and VA file number make sure to note in the VA file number label or helper text, "must have this or a Social Security number".
+* **When asking for both Social Security and VA file numbers, one or the other may be provided.** VA file numbers are not on every form. If the form asks for a Social Security number and VA file number, make sure to note in the VA file number label or helper text, "must have this or a Social Security number".
 * **Give user flexibility in entering their Social Security number.** A user can enter the Social Security number however they like: with spaces, without spaces, dashes, or without dashes. When the user enters their number and the input loses focus, the number will appear masked with dashes.
 * **Validate Social Security numbers.** See [content considerations](#content-considerations) for the appropriate validation messages.
 
