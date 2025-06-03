@@ -37,10 +37,10 @@ anchors:
 
 * **Header:** The header must be understandable and short. The header should describe the type of phone number you are collecting, options may include Home phone number, Mobile phone number, or Work phone number. We try to avoid ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to create more plain language labels.
 
-* **Phone number** The component consists of a combo box for the country dialing code and a text input for the phone number. For those components please check the usability guidance for combo boxes and text inputs.
+* **Phone number:** The component consists of a combo box for the country dialing code and a text input for the phone number. For those components please check the usability guidance for combo boxes and text inputs.
   * For the country combo box, provide the user a flag icon, unabbreviated country names, and the country code to select from. Example: [flag icon] United States of America +1.
   * The countries are displayed in alphabetical order, with the United States of America being listed as the default option.
-  * The country list of 200+ countryies comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme) the component is using and it is based on the [officially assigned ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). This list is sorted alphabetically with the United States listed as the first choice.
+  * The country list of 200+ countries comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme) the component is using and it is based on the [officially assigned ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). This list is sorted alphabetically with the United States listed as the first choice.
   * The United States is preselected for users as 99% of addresses are US based at this time.
 
 
@@ -60,7 +60,7 @@ Content for both variations can be found in [Ask users for... Phone numbers patt
 
 * **Keyboard Navigation:** Users can navigate to the combo box via the Tab key. Use Arrow keys to navigate through the country dropdown options. Pressing Enter selects a country, and focus moves back to the combo box field. Users then navigate to the text input via the tab key to enter a phone number.
 * **Focus Indicator:** A clear visual outline is shown when the input field or dropdown has focus.
-* **Screen Readers:** Announce the input field as "Phone Number Input" with the current selected country (e.g., "United States flag"). For error states, screen readers announce the error message when it appears.
+* **Screen Readers:** Announce the combo box as "Country code" with the current selected country (e.g., "United States +1"). The phone number input will announce the text input field.For error states, screen readers announce the error message when it appears.
 * **Alt Text for Flags:** Because the flags in the combo box serve a decorative purpose, the alt text is undefined.
 * **Error Prevention and Feedback:** Real-time validation provides clear feedback when input is invalid. This helps prevent submission until a valid phone number is entered.
 
