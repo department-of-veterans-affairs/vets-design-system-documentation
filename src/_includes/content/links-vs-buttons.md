@@ -37,6 +37,7 @@ Button and link confusion can be very frustrating for assistive technology users
         *  **Rationale:** The final product is a file, and the Veteran may not know that the PDF is generated on the fly.
         *  **Exception:** If the trigger to generate the PDF is "Generate PDF," "Create PDF," or other phrases that explicitly call out the "action" nature of the generation, use a button.
 * Created using the [Link component]({{ site.baseurl }}/components/link/), the [Action link component]({{ site.baseurl }}/components/link/action) if you need extra visual emphasis, or with [standard semantic HTML link](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+  * When a file download is involved, it is best to use the [download link]({{ site.baseurl }}/components/link/#download) component. This is because links are intended for navigation, and downloading a file is a navigational action to a resource.
 * Styled to look like links and shouldn’t include button signifiers, such as borders
 
 ### Implementation notes
@@ -71,6 +72,3 @@ Button and link confusion can be very frustrating for assistive technology users
           * _Make it a Link_
         * No
           * _Make it a Button_
-
-* Make sure to read both [buttons]({{ site.baseurl }}/components/button) and [Action Link]({{ site.baseurl }}/components/link/action) guidance when using either component.
-* When a file download is involved, it is best to use the [download link]({{ site.baseurl }}/components/link/#download) component. This is because links are intended for navigation, and downloading a file is a navigational action to a resource.
