@@ -3,7 +3,7 @@ layout: component
 permalink: /components/form/telephone-input
 has-parent: /components/form/
 title: Telephone Input
-intro-text: "Use the telephone input component to help users enter a telephone number" 
+intro-text: "Use the telephone input component to help users enter a telephone number."
 status: use-with-caution-candidate
 figma-link: https://www.figma.com/design/fsqR9TGOL2FhNqJ3Eoi4Ag/va-input-telephone-Add-Design?node-id=29018-58507
 web-component: va-input-telephone
@@ -25,33 +25,31 @@ anchors:
 
 ## Usage
 
-### When to use telephone input
-* **To collect a domestic United States and international phone numbers.** You may place multiple telephone input components on a page if you need to collect multiple numbers. Each label should be unique.
+### When to use the telephone input
+* **Collect domestic United States and international phone numbers.** You can place more than one telephone input component on a page if you need to collect multiple numbers. Make each label unique.
 
-* **Users should be allowed to enter telephone numbers in whatever format is familiar to them**. You should allow for additional spaces, hyphens, brackets and dashes, and be able to accommodate country and area codes.
+* **Let users enter telephone numbers in any format familiar to them.** Accept extra spaces, hyphens, brackets, and dashes. Allow country and area codes.
 
-* **Only ask for the phone number if you need it.**
-
+* **Only ask for a phone number if you need it.**
 
 ### When to consider something else
-* Do not use this component if you do not need to collect a telephone number. 
+* Don't use this component if you don't need to collect a telephone number.
 
 ### How this component works
 
-* **Header:** The header must be understandable and short. The header should describe the type of phone number you are collecting, options may include Home phone number, Mobile phone number, or Work phone number. We try to avoid ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to create more plain language labels.
+* **Header:** The header should be clear and concise. It should describe the type of phone number you're collecting, such as Home phone number, Mobile phone number, or Work phone number. Don't use labels like ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to keep language plain.
 
-* **Phone number:** The component consists of a combo box for the country dialing code and a text input for the phone number. For those components please check the usability guidance for combo boxes and text inputs.
-  * For the country combo box, provide the user a flag icon, unabbreviated country names, and the country code to select from. Example: [flag icon] United States of America +1.
-  * The countries are displayed in alphabetical order, with the United States of America being listed as the default option.
-  * The country list of 200+ countries comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme) the component is using and it is based on the [officially assigned ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). This list is sorted alphabetically with the United States listed as the first choice.
-  * The United States is preselected for users as 99% of addresses are US based at this time.
-
+* **Phone number:** The component has a combo box for the country dialing code and a text input for the phone number. For these, check the usability guidance for combo boxes and text inputs.
+  * For the country combo box, show a flag icon, full country names, and the country code. Example: [flag icon] United States of America +1.
+  * Countries appear in alphabetical order, with the United States of America as the default option.
+  * The country list of 200+ countries comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme), which uses [official ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). The list is sorted alphabetically, with the United States first.
+  * The United States is preselected because 99% of addresses are US-based.
 
 ### Validation
-By default the telephone input component has the following validation:
-- Cannot have blank values
-- The phone number 'sequence' must match the valid pattern for the country code. For example `Enter a United States of America phone number in a valid format, for example, [(xxx) xxx-xxxx]`
-- We use the libphonenumber library to validate phone numbers.
+By default, the telephone input component has these validation rules:
+- Values can't be blank.
+- The phone number must match the valid pattern for the selected country code. For example: `Enter a United States of America phone number in a valid format, for example, [(xxx) xxx-xxxx]`.
+- The libphonenumber library validates phone numbers.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -61,11 +59,11 @@ Content for both variations can be found in [Ask users for... Phone numbers patt
 
 ## Accessibility considerations
 
-* **Keyboard Navigation:** Users can navigate to the combo box via the Tab key. Use Arrow keys to navigate through the country dropdown options. Pressing Enter selects a country, and focus moves back to the combo box field. Users then navigate to the text input via the tab key to enter a phone number.
-* **Focus Indicator:** A clear visual outline is shown when the input field or dropdown has focus.
-* **Screen Readers:** Announce the combo box as "Country code" with the current selected country (e.g., "United States +1"). The phone number input will announce the text input field.For error states, screen readers announce the error message when it appears.
-* **Alt Text for Flags:** Because the flags in the combo box serve a decorative purpose, the alt text is undefined.
-* **Error Prevention and Feedback:** Real-time validation provides clear feedback when input is invalid. This helps prevent submission until a valid phone number is entered.
+* **Keyboard navigation:** Users can tab to the combo box. Use the Arrow keys to move through the country dropdown options. Press Enter to select a country. Focus returns to the combo box field. Users can then tab to the text input to enter a phone number.
+* **Focus indicator:** A clear outline appears when the input field or dropdown has focus.
+* **Screen readers:** The combo box is announced as "Country code" with the current selected country (for example, "United States +1"). The phone number input is announced as a text input field. For error states, screen readers announce the error message when it appears.
+* **Alt text for flags:** The flags in the combo box are decorative, so the alt text is undefined.
+* **Error prevention and feedback:** Real-time validation gives clear feedback when input is invalid. This prevents submission until a valid phone number is entered.
 
 
 ## Related
