@@ -130,10 +130,6 @@ anchors:
 
 #### Indeterminate
 
-Use the indeterminate state for a parent checkbox that controls a sublist of checkboxes. The parent checkbox shows this state when some (but not all) child checkboxes are selected.
-
-See our pattern guidance on [asking users for a mutually exclusive answer](https://design.va.gov/patterns/ask-users-for/a-mutually-exclusive-answer).
-
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
 ### Mobile
@@ -149,7 +145,6 @@ See our pattern guidance on [asking users for a mutually exclusive answer](https
 #### Error
 
 {% include storybook-preview.html height="475px" story="checkbox-group--error" link_text="va-mobile__checkbox-group--error" is_mobile=true auto_resize=false %}
-
 
 ## Usage
 
@@ -169,8 +164,26 @@ See our pattern guidance on [asking users for a mutually exclusive answer](https
 #### Choosing between variations
 
 * **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For checkbox groups used outside of this pattern, for example on a longer form page, use the [Label header](#label-header) checkbox group variation.
+* **Use the indeterminate state for a parent checkbox that controls a group of related child checkboxes.** The indeterminate state visually indicates that some (but not all) child checkboxes are selected.
+  * **For hierarchical selection groups**: When checkboxes have a parent-child relationship, where selecting the parent affects all children and vice versa.
+  * **For "Select all" functionality**: When implementing a "Select all" option at the top of a list of checkboxes.
 
 {% include content/conditionally-revealed-fields.md %}
+
+### How it works
+
+#### Indeterminate checkbox
+
+**Parent checkbox behavior**:
+
+* When clicked in the indeterminate state, the parent checkbox typically selects all child checkboxes.
+* When clicked in the checked state, the parent checkbox deselects all child checkboxes.
+
+**Child checkbox influence**:
+
+* When all child checkboxes are selected, the parent checkbox appears checked.
+* When some child checkboxes are selected, the parent checkbox appears indeterminate.
+* When no child checkboxes are selected, the parent checkbox appears unchecked.
 
 ### Errors
 
