@@ -4,7 +4,8 @@
   background-color: $color-gray-lightest;
   border-radius: 0.25rem;
 
-  &__image {
+  &__image,
+  &__video {
     padding: units(2) 0 0 units(2);
     max-inline-size: 100%;
     block-size: auto;
