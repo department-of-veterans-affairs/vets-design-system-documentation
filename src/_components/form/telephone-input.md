@@ -25,21 +25,22 @@ anchors:
 
 ## Usage
 
+Only ask for a phone number if you need it.
+
 ### When to use the telephone input
 * **Collect domestic United States and international phone numbers.** You can place more than one telephone input component on a page if you need to collect multiple numbers. Make each label unique.
 
 * **Let users enter telephone numbers in any format familiar to them.** Accept extra spaces, hyphens, brackets, and dashes. Allow country and area codes.
 
-* **Only ask for a phone number if you need it.**
 
 ### When to consider something else
 * Don't use this component if you don't need to collect a telephone number.
 
 ### How this component works
 
-* **Header:** The header should be clear and concise. It should describe the type of phone number you're collecting, such as Home phone number, Mobile phone number, or Work phone number. Don't use labels like ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to keep language plain.
+* **Label:** The label should be clear and concise. It should describe the type of phone number you're collecting, such as Home phone number, Mobile phone number, or Work phone number. Don't use labels like ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to keep language plain.
 
-* **Phone number:** The component has a combo box for the country dialing code and a text input for the phone number. For these, check the usability guidance for combo boxes and text inputs.
+* **Phone number:** The component has a combo box for the country dialing code and a text input for the phone number. For these, check the usability guidance for [combo boxes]({{ site.baseurl }}/components/form/combo-box) and [text inputs]({{ site.baseurl }}/components/form/text-input).
   * For the country combo box, show a flag icon, full country names, and the country code. Example: [flag icon] United States of America +1.
   * Countries appear in alphabetical order, with the United States of America as the default option.
   * The country list of 200+ countries comes from the [libphonenumber-js library](https://www.npmjs.com/package/libphonenumber-js?activeTab=readme), which uses [official ISO alpha-2 country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements). The list is sorted alphabetically, with the United States first.
@@ -48,7 +49,7 @@ anchors:
 ### Validation
 By default, the telephone input component has these validation rules:
 - Values can't be blank.
-- The phone number must match the valid pattern for the selected country code. For example: `Enter a United States of America phone number in a valid format, for example, [(xxx) xxx-xxxx]`.
+- The phone number must match the valid pattern for the selected country code. For example: `Enter a United States of America phone number in a valid format, for example, (xxx) xxx-xxxx`.
 - The libphonenumber library validates phone numbers.
 
 {% include component-docs.html component_name=page.web-component %}
