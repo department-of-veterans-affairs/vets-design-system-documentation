@@ -79,3 +79,5 @@ anchors:
 
 - Tables should be used to display tabular data, which is structured data made up of rows and columns. A table allows the information to be easily interpreted by visually associating row and column headers.
 - _Do not_ use tables for layout purposes. Tables should only be used for data that has inherent relationships, not for design purposes.
+
+{% include _component-checklist.html component_name=page.web-component %}
