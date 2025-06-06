@@ -98,22 +98,60 @@ For components with multiple levels of variation:
 
 3. **Examples of Multi-level Component Naming**:
 
-   | Web Component | Documentation Title | URL Path |
-   |---------------|---------------------|----------|
-   | `<va-link variant="action" type="primary-entry">` | Link - Action - Primary entry | `/components/link/action#primary-entry` |
-   | `<va-button variant="secondary" size="small">` | Button - Secondary - Small | `/components/button/secondary#small` |
-   | `<va-form-select theme="dark" validation="error">` | Form Select - Dark - With Error | `/components/form-select/theme-options#error-state` |
+   <va-table table-type="bordered" is-stacked="false">
+     <va-table-row>
+       <span>Web Component</span>
+       <span>Documentation Title</span>
+       <span>URL Path</span>
+     </va-table-row>
+     <va-table-row>
+       <span>va-link variant="action" type="primary-entry"</span>
+       <span>Link - Action - Primary entry</span>
+       <span>/components/link/action#primary-entry</span>
+     </va-table-row>
+     <va-table-row>
+       <span>va-button variant="secondary" size="small"</span>
+       <span>Button - Secondary - Small</span>
+       <span>/components/button/secondary#small</span>
+     </va-table-row>
+     <va-table-row>
+       <span>va-form-select theme="dark" validation="error"</span>
+       <span>Form Select - Dark - With Error</span>
+       <span>/components/form-select/theme-options#error-state</span>
+     </va-table-row>
+   </va-table>
 
 ## Naming Pattern Examples
 
 ### Component Examples
 
-| Web Component | Front Matter Name | Documentation Title | URL Path |
-|---------------|-------------------|---------------------|----------|
-| `<va-alert>` | va-alert | Alert | `/components/alert` |
-| `<va-alert-expandable>` | va-alert-expandable | Alert - Expandable | `/components/alert-expandable` |
-| `<va-modal>` | va-modal | Modal | `/components/modal` |
-| `<va-pagination>` | va-pagination | Pagination | `/components/pagination` |
+<va-table table-type="bordered" is-stacked="false">
+  <va-table-row>
+    <span>Web Component</span>
+    <span>Documentation Title</span>
+    <span>URL Path</span>
+  </va-table-row>
+  <va-table-row>
+    <span>va-alert</span>
+    <span>Alert</span>
+    <span>/components/alert</span>
+  </va-table-row>
+  <va-table-row>
+    <span>va-alert-expandable</span>
+    <span>Alert - Expandable</span>
+    <span>/components/alert-expandable</span>
+  </va-table-row>
+  <va-table-row>
+    <span>va-modal</span>
+    <span>Modal</span>
+    <span>/components/modal</span>
+  </va-table-row>
+  <va-table-row>
+    <span>va-pagination</span>
+    <span>Pagination</span>
+    <span>/components/pagination</span>
+  </va-table-row>
+</va-table>
 
 ### Variant Naming
 
