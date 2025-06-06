@@ -9,9 +9,9 @@ maturity:
     score: true
 code-assets:
   - name: variations 
-    score: false
+    score: true
   - name: responsive
-    score: false
+    score: true
   - name: interactive-states
     score: true
   - name: tokens
