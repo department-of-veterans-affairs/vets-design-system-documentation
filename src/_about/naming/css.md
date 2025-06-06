@@ -1,14 +1,12 @@
 ---
-layout: default
-sub_section: naming-convention
-title: Naming convention
+layout: documentation
+permalink: /about/naming-conventions/css
+has-parent: /about/naming-conventions/
+title: CSS naming conventions
+intro-text: CSS naming conventions are an important aspect of any design system.
 ---
 
-# Naming convention
-
-<div class="va-introtext">
-  Naming conventions are an important aspect of any design system. The naming convention helps:
-</div>
+Naming conventions help:
 
 * Provide clarity and scope
 * Keep CSS specificity low
