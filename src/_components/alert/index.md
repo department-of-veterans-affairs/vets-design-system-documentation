@@ -161,6 +161,7 @@ When the user is required to do something in response to an alert, let them know
 * Allow a user to dismiss a notification wherever appropriate.
 * Don't include notifications that aren't related to the user's current goal.
 * Don't stack alerts one after the other.
+* When there are multiple alerts on the page, order them by severity with the most critical being first and ideally top of the page.
 * If the alert appears within the page body content, it should be co-located with relevant content.
 * Alerts should not contain other expandable components such as the [Additional info]({{ site.baseurl }}/components/) component.
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
