@@ -42,7 +42,7 @@ Button and link confusion can be very frustrating for assistive technology users
 
 ### Implementation notes
 
-{% include component-example.html alt="A flowchart designed to arrive at a decision between using a button or link." file="/images/components/button/button-or-link-flow-chart.png" caption="Button vs. Link flow chart." %}
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/qNoljqjvyKCi5YHDugR2yz/Flowcharts?node-id=1-138&embed-host=share" allowfullscreen title="Button vs. Link flow chart></iframe>
 
 #### Should this be a button or link?
 
