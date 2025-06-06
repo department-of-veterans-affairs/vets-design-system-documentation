@@ -33,7 +33,7 @@ This document establishes a consistent approach to naming components in the VA D
 
 - Custom HTML elements should use kebab-case with `va-` prefix (e.g., `<va-alert>`, `<va-modal>`, `<va-pagination>`)
 - The prefix `va-` should be used consistently for all components to indicate they are part of the VA Design System
-- Names should be concise but descriptive, avoiding acronyms where possible
+- Make names concise and descriptive, avoiding acronyms where possible
 
 #### Attributes
 
@@ -44,7 +44,7 @@ This document establishes a consistent approach to naming components in the VA D
 #### Slots and Shadow DOM
 
 - Named slots should use kebab-case (e.g., `<slot name="header-content">`)
-- Internal shadow DOM class names should use BEM notation with kebab-case:
+- Internal shadow DOM class names should use Block Element Modifier (BEM) notation with kebab-case:
   - Block: `.va-component-name`
   - Element: `.va-component-name__element`
   - Modifier: `.va-component-name--modifier` or `.va-component-name__element--modifier`
@@ -72,7 +72,7 @@ This document establishes a consistent approach to naming components in the VA D
 
 #### URL Structure
 
-- Base URLs should follow the primary component pattern in kebab-case (without the `va-` prefix):
+- Use the primary component pattern for URLs in kebab-case (without the `va-` prefix):
   - Example: `<va-alert>` → `/components/alert`
 
 - For component variations, use hierarchical URLs:
@@ -110,14 +110,14 @@ For components with multiple levels of variation:
        <span>/components/link/action#primary-entry</span>
      </va-table-row>
      <va-table-row>
-       <span>va-button variant="secondary" size="small"</span>
-       <span>Button - Secondary - Small</span>
-       <span>/components/button/secondary#small</span>
+       <span>va-button big</span>
+       <span>Button - Primary - Big</span>
+       <span>/components/button/primary#big</span>
      </va-table-row>
      <va-table-row>
-       <span>va-form-select theme="dark" validation="error"</span>
-       <span>Form Select - Dark - With Error</span>
-       <span>/components/form-select/theme-options#error-state</span>
+       <span>va-radio-button tile=true</span>
+       <span>Radio Button - Tile</span>
+       <span>/components/form/radio-button#tile</span>
      </va-table-row>
    </va-table>
 
@@ -183,6 +183,7 @@ When a component has variants, name them using these patterns:
    - Transform kebab-case to Title Case
    - Use dashes with spaces (" - ") to separate hierarchical elements
    - Be consistent with existing similar components
+   - Links to components or patterns should just include the title. Don't include the words "component" or "pattern" in the link text.
 
 3. For URL structure:
 
@@ -202,9 +203,9 @@ For components with multiple variations or states:
 2. **Complex Variations**:
    - Create separate pages for significant variants
    - Maintain hierarchical relationship in titles
-   - Example: "Form Select - Advanced" as a separate page from "Form Select"
+   - Example: "Link - Action" as a separate page from "Link"
 
 3. **State Variations**:
    - Document states on the relevant component/variation page
    - Use clear state indicators in section titles
-   - Example: "Text Input - Disabled State" as a section on the Text Input page
+   - Example: "Radio Button - Error" as a section on the Radio Button page
