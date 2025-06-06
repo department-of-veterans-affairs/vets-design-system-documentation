@@ -25,12 +25,13 @@ anchors:
 
 ## Usage
 
+Only ask for a phone number if you need it.
+
 ### When to use the telephone input
 * **Collect domestic United States and international phone numbers.** You can place more than one telephone input component on a page if you need to collect multiple numbers. Make each label unique.
 
 * **Let users enter telephone numbers in any format familiar to them.** Accept extra spaces, hyphens, brackets, and dashes. Allow country and area codes.
 
-* **Only ask for a phone number if you need it.**
 
 ### When to consider something else
 * Don't use this component if you don't need to collect a telephone number.
