@@ -38,7 +38,7 @@ Only ask for a phone number if you need it.
 
 ### How this component works
 
-* **Header:** The header should be clear and concise. It should describe the type of phone number you're collecting, such as Home phone number, Mobile phone number, or Work phone number. Don't use labels like ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to keep language plain.
+* **Label:** The label should be clear and concise. It should describe the type of phone number you're collecting, such as Home phone number, Mobile phone number, or Work phone number. Don't use labels like ["Primary" and "Secondary"](https://design.va.gov/patterns/ask-users-for/phone-numbers#content-considerations) to keep language plain.
 
 * **Phone number:** The component has a combo box for the country dialing code and a text input for the phone number. For these, check the usability guidance for [combo boxes]({{ site.baseurl }}/components/form/combo-box) and [text inputs]({{ site.baseurl }}/components/form/text-input).
   * For the country combo box, show a flag icon, full country names, and the country code. Example: [flag icon] United States of America +1.
