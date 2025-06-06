@@ -49,11 +49,11 @@ anchors:
 
 ### How this pattern works
 
-A Social Security Number (SSN) consists of nine digits, commonly written as three fields separated by hyphens: AAA-GG-SSSS. The first three-digit field is called the "area number". The central, two-digit field is called the "group number". The final, four-digit field is called the "serial number".
+A **Social Security Number (SSN)** consists of nine digits, commonly written as three fields separated by hyphens: AAA-GG-SSSS. The first three-digit field is called the "area number". The central, two-digit field is called the "group number". The final, four-digit field is called the "serial number".
 
-A VA file number is how a Veteran’s claim is tracked through the compensation system and how documents and other evidence are associated with a Veteran’s file in the VA’s electronic database.
+A **VA file number** consists of eight or nine digits and is a claims folder number assigned through the Beneficiary Identification and Records Locator Subsystem (BIRLS). This is how a Veteran’s claim is tracked through the compensation system and how documents and other evidence are associated with a Veteran. Also known as "C-file numbers", or CNA, VA file numbers were assigned prior to VA converting to the use of SSNs, which is why some older Veterans have C-File numbers even if they also have a Social Security Number.
 
-A Military Service number is a unique identifier that was assigned to members of the United States Armed Forces before the Social Security number became the standard identifier.
+A **Military Service number** is a unique identifier that was assigned to members of the United States Armed Forces before the Social Security number became the standard identifier.
 
 #### Social Security Number is uneditable for IAL2 authenticated users
 
