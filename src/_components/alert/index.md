@@ -118,7 +118,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 #### Additional uses of an alert
 
 * **To notify users about the status of the system:**
-  * **In-application system status.** An exception to the above is providing information to the user, unprompted, about a problem with a particular application. These [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) typically use an error or warning variation and do not require user action.
+  * **In-application system status.** An exception to the above is providing information to the user, unprompted, about a problem with a particular application. These [system status messages]({{ site.baseurl }}/content-style-guide/error-messages/system) typically use an error or warning variation and do not require user action. For application-level maintenance, review the [downtime notifications guidance](https://depo-platform-documentation.scrollhelp.site/developer-docs/downtime-notifications).
   * **Access messages when a user tries to access an item that is not available to them.** [Access messages]({{ site.baseurl }}/content-style-guide/error-messages/access) typically warn the user that something they tried to access is not working correctly or is temporarily unavailable. These often use the error or warning variations.
 
 * **To respond to a user action:**
