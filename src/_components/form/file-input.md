@@ -50,6 +50,26 @@ NOTE: Storybook does not allow for showing components in a particular state. Thu
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-any-kind-of-image" link_text="va-file-input that accepts any kind of image" reverse="true" %}
 
+### Accepts File Password
+
+{% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-file-password" link_text="va-file-input that accepts file password" reverse="true" %}
+
+### Max file size
+
+{% include storybook-preview.html height="270px" story="uswds-va-file-input--with-max-file-size" link_text="va-file-input with max file size" reverse="true" %}
+
+### Read only
+
+{% include storybook-preview.html height="270px" story="uswds-va-file-input--read-only" link_text="va-file-input in read only state" reverse="true" %}
+
+### Read only with additional inputs
+
+{% include storybook-preview.html height="270px" story="uswds-va-file-input--read-only-with-additional-inputs" link_text="va-file-input in read only state with additional inputs" reverse="true" %}
+
+### With percent uploaded
+
+{% include storybook-preview.html height="270px" story="uswds-va-file-input--with-percent-uploaded" link_text="va-file-input showing upload progress" reverse="true" %}
+
 ### Error Message
 
 NOTE: Storybook does not allow for showing components in a particular state. Thus some of the examples in this component are screenshots rather than Storybook examples.
