@@ -48,6 +48,7 @@ This document establishes a consistent approach to naming components in the VA D
   - Block: `.va-component-name`
   - Element: `.va-component-name__element`
   - Modifier: `.va-component-name--modifier` or `.va-component-name__element--modifier`
+- NOTE: The shadow DOM of web components encapsulates CSS so that BEM is unnecessary to scope styles, however it is useful for semantic and hierarchical clarity. 
 
 ### Documentation Site
 
