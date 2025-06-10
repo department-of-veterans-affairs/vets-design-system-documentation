@@ -6,8 +6,8 @@ sub-section: ask-users-for
 title: Marital Information
 intro-text: "Follow this pattern to ask a user for their marital status and information about their current and previous marriages."
 figma-link: https://www.figma.com/design/Ie3VE755qGlK7ONjKGQpNd/AE-Design-Patterns---Marital-Status?node-id=1022-70670&t=FWcorygnFwkvZgOE-1Oj
-github-title: pattern-marital-status
-research-title: Ask users for marital status
+github-title: pattern-marital-information
+research-title: Ask users for marital information
 status: use-with-caution-available
 anchors:
   - anchor: Usage
