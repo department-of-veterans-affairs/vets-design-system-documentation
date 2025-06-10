@@ -30,27 +30,46 @@ anchors:
   **Exception:** If your form is only accessible after signing in (meaning there is no unauthenticated state of the intro page), the sign-in alert must appear on the static unauthenticated page that serves as the entry point. Currently, this only applies to 2 forms in the /my-health section: the 1010EZR and the order form for CPAP and hearing aid supplies.
 
 ### Placement
+
 * **For entry points to online tools**, work with CAIA to determine placement on the static page. Placement may vary depending on the page structure. Always place the alert directly under a header that makes it clear what the user is signing in to do (for example, "Check your claim status online").
 * **On form intro pages**, place the alert directly after the process list or "what to know" section of the intro page. (Some forms have a process list and some have "what to know." [Refer to the form into page template for that guidance](https://design.va.gov/templates/forms/introduction).)
 
 ## Behavior
-[Refer to the related sign-in pattern page for full guidance](https://design.va.gov/patterns/help-users-to/sign-in) 
+[Refer to the related sign-in pattern page for full guidance](https://design.va.gov/patterns/help-users-to/sign-in)
+
+### Authentication level definitions
+
+<h4 id="loa-levels">LOA levels</h4>
+
+**LOA (Level of Assurance):** A measure of the strength of an authentication process defined by NIST. LOA refers to the level of confidence in a user's claimed identity.
+
+* **LOA1** - Low-assurance level where self-asserted identity is acceptable with basic authentication
+* **LOA3** - High-assurance level requiring verified identity and strong authentication
+
+<h4 id="ial-levels">IAL levels</h4>
+
+**IAL (Identity Assurance Level):** A category defined by NIST that indicates the strength of the identity proofing process.
+
+* **IAL1** - Self-asserted identity with no verification required
+* **IAL2** - Identity verified either remotely or in-person with appropriate documentation
 
 ### All products that only allow verified accounts must implement 1 of these 2 alert variations
 
 #### Required sign-in (verified)
 
 When these are true:
+
 * Person is not signed in, **and**
 * Your product requires people to sign in, **and**
-* Your product only accepts verified (LOA3 or IAL2) accounts
+* Your product only accepts verified ([LOA3](#loa-levels) or [IAL2](#ial-levels)) accounts
 
 #### Optional sign-in (verified)
 
 When these are true:
+
 * Person is not signed in, **and**
 * Your product is a form, **and**
-* Your product doesn't require sign-in, but if people choose to sign in they must use verified (LOA3 or IAL2) accounts, **and**
+* Your product doesn't require sign-in, but if people choose to sign in they must use verified ([LOA3](#loa-levels) or [IAL2](#ial-levels)) accounts, **and**
 * Your form supports both prefill and save-in-progress
 
 ### All products that only allow verified accounts must implement all 3 of these alerts
@@ -58,24 +77,28 @@ When these are true:
 #### Verify with ID.me
 
 When these are true:
-* Person is signed in with an unverified (LOA1 or IAL1) ID.me account, **and**
-* Your product only accepts verified (LOA3 or IAL2) accounts
+
+* Person is signed in with an unverified ([LOA1](#loa-levels) or [IAL1](#ial-levels)) ID.me account, **and**
+* Your product only accepts verified ([LOA3](#loa-levels) or [IAL2](#ial-levels)) accounts
 
 #### Verify with Login.gov
 
 When these are true:
-* Person is signed in with an unverified (LOA1 or IAL1) Login.gov account, **and**
-* Your product only accepts verified (LOA3 or IAL2) accounts
+
+* Person is signed in with an unverified ([LOA1](#loa-levels) or [IAL1](#ial-levels)) Login.gov account, **and**
+* Your product only accepts verified ([LOA3](#loa-levels) or [IAL2](#ial-levels)) accounts
 
 #### Sign in with another account
 
 When these are true:
-* Person is signed in with an unverified (LOA1 or IAL1) My HealtheVet account, **and**
-* Your product only accepts verified (LOA3 or IAL2) accounts
+
+* Person is signed in with an unverified ([LOA1](#loa-levels) or [IAL1](#ial-levels)) My HealtheVet account, **and**
+* Your product only accepts verified ([LOA3](#loa-levels) or [IAL2](#ial-levels)) accounts
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
+
 If your product fits one of these descriptions, you may need to adjust the standard sign-in alert component content for your situation:
 
 * A product that either requires or allows sign-in, but accepts unverified accounts

@@ -20,7 +20,7 @@ anchors:
 
 ### Default
 
-The language toggle allows users to click links to load the same page which has been translated to one of three languages.
+The language toggle provides a series of links that load the page in one of three languages.
 
 {% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
 

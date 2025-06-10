@@ -45,7 +45,8 @@ All of the patterns in the "[Ask users for...]({{ site.baseurl }}/patterns/)" se
 
 ## Additional topics
 
-* [Form labels]({{ site.baseurl }}/content-style-guide/form-labels)
+* [Fieldsets, legends, and labels]({{ site.baseurl }}/components/form/#fieldsets-legends-and-labels)
+* [Content for form labels]({{ site.baseurl }}/content-style-guide/form-labels)
 * [Hint text]({{ site.baseurl }}/components/form/#hint-text)
 * [Title tags]({{ site.baseurl }}/content-style-guide/title-tags)
 

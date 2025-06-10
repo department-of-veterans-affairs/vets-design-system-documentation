@@ -2,12 +2,11 @@ maturity:
   - name: guidance
     score: true
   - name: research
-    score: false
+    score: true
   - name: stability
-    score: false
+    score: true
   - name: adoption
-    score: false
-accessibility:
+    score: true
 code-assets:
   - name: variations 
     score: true
@@ -16,15 +15,15 @@ code-assets:
   - name: interactive-states
     score: true
   - name: tokens
-    score: false
+    score: "n/a"
   - name: internationalization
-    score: false
+    score: "n/a"
 visual-assets:
   - name: variations
     score: true
   - name: responsive
-    score: true
+    score: false
   - name: interactive-states
     score: true
   - name: tokens
-    score: false
+    score: "n/a"

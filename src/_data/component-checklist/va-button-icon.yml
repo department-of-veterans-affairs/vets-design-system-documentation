@@ -4,10 +4,9 @@ maturity:
   - name: research
     score: false
   - name: stability
-    score: false
+    score: true
   - name: adoption
     score: false
-accessibility:
 code-assets:
   - name: variations 
     score: true
@@ -16,9 +15,9 @@ code-assets:
   - name: interactive-states
     score: true
   - name: tokens
-    score: false
+    score: "n/a"
   - name: internationalization
-    score: false
+    score: "n/a"
 visual-assets:
   - name: variations
     score: true
@@ -27,4 +26,4 @@ visual-assets:
   - name: interactive-states
     score: true
   - name: tokens
-    score: false
+    score: "n/a"
