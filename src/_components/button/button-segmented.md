@@ -53,6 +53,8 @@ type="secondary"
 * **Filtering a data set.** To represent the same kind of content, such as a list-view with different filters applied.
 * **Views of a data set.** To provide closely related choices that affect an object, state, or view. For example, a segmented control can help people select options, switch between views, or sort elements.
 
+{% include content/tabs-vs-button-segmented.md %}
+
 #### When to consider something else
 
 * If you need to group content that is dissimilar.
