@@ -48,37 +48,27 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 - Spell out noon and midnight. Don't use 12:00 p.m. or 12:00 a.m.
 - Include the minutes, even when on the hour.
 - When referencing office hours, always use the time zone ET, even if the office is in another location (no parentheses, periods, or daylight/standard).
+- When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
+- In an application or tool that has a time stamp of a user's progress or saved work, show hours in their local time zone.
+- In body copy, write out ranges using sentence construction: We're open Monday through Friday, 9:00 a.m. to 6:00 p.m. ET.
+- Where space is limited, indicate ranges with the - hyphen without spaces on either side. Don't combine the hyphen with from/between sentence construction.
+
+**Note:** For the mobile app, when times/time zones aren’t hardcoded, the formatting differs from VA.gov due to default formatting in React Native. For example, React Native formats as AM and PM (both letters capitalized and no punctuation) and EST (three-letter format). 
 
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
 8:00 a.m. to 5:30 p.m. ET
-</div>
-</div>
-<div class="do-dont__dont">
-<h3 class="do-dont__heading">Not this</h3>
-<div class="do-dont__content" markdown="1">
-8 a.m. to 5:30 p.m. ET  
-</div>
-</div>
-</div>
 
-- When referencing international time zones, use the time zone name for that country or the UTC (coordinated universal time) offset. (Example: Central European Time; Korea Standard Time; UTC +2)
-- In an application or tool that has a time stamp of a user's progress or saved work, show hours in their local time zone.
-- In body copy, write out ranges using sentence construction: We're open 9:00 a.m. to 6:00 p.m. ET, Monday through Friday.
-- Where space is limited, indicate ranges with the - hyphen without spaces on either side. Don't combine the hyphen with from/between sentence construction.
-
-<div class="do-dont">
-<div class="do-dont__do">
-<h3 class="do-dont__heading">Like this</h3>
-<div class="do-dont__content" markdown="1">
 8:00 a.m. to noon ET
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
+8 a.m. to 5:30 p.m. ET
+
 from 8:00 a.m. to noon ET
 </div>
 </div>
