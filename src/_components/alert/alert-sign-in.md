@@ -4,7 +4,7 @@ permalink: /components/alert/alert-sign-in/
 has-parent: /components/alert/
 title: Alert - Sign-in
 github-title: va-alert-sign-in
-intro-text: An alert component with specific content focused on helping users complete the sign-in process.
+intro-text: An alert component focused on helping users complete the sign-in process.
 figma-link: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
 web-component: va-alert-sign-in
 anchors:
@@ -90,10 +90,9 @@ When these are true:
 
 #### Sign in with another account
 
-When these are true:
+This variation was used as we sunset MyHealtheVet credentials. However, a new version will be developed, if necessary, to handle the transition away from DS Logon credentials.
 
-* Person is signed in with an unverified ([LOA1](#loa-levels) or [IAL1](#ial-levels)) My HealtheVet account, **and**
-* Your product only accepts verified ([LOA3](#loa-levels) or [IAL2](#ial-levels)) accounts
+**NOTE:** DS Logon is to be sunset in September 2025.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -106,11 +105,14 @@ If your product fits one of these descriptions, you may need to adjust the stand
 * An online form that allows sign-in and offers a different reason to sign in—like generating an automatic Intent to File (ITF)
 * A health tool that requires registration with My HealtheVet (currently only applies to messages, medications, and medical records tools)
 
-Work with the CAIA and identity teams to adjust the content in this component for your product.
+Work with the Content &amp; IA and Identity teams to adjust the content in this component for your product. Refer to the [Sign in and identity verification]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification) guidance for additional information on using consistent language around signing in to VA and verifying identity.
 
 ## Accessibility considerations
 
-{% include a11y/alerts.md %}
+* **Do not assign an ARIA role.** This alert is a static alert that exists on the page when the page gets loaded and thus doesn’t need a role.
+* **Use the appropriate branding images only.** See the [Login.gov brand assets](https://developers.login.gov/user-experience/sign-in-sign-out/#design-your-applications-sign-in-and-sign-out-buttons) for buttons and branding guidelines. No other images are appropriate for use in this component.
+
+Any additional accessibility considerations should follow the parent [Alert]({{ site.baseurl }}/components/alert/#accessibility-considerations) component guidance.
 
 ## Related
 
