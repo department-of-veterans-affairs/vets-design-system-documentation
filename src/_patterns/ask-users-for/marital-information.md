@@ -65,7 +65,7 @@ This optional section includes questions about the spouse, including:
 
 #### Living arrangement information
 
-This optional section asks if the user currently lives with their spouse or has within the past 12 months. If they don't live together, it offers a follow up question asking why users who live separately.
+This optional section asks if the user currently lives with their spouse or has within the past 12 months. If they don't live together, it offers a follow up question asking why they live separately.
 
 {% include component-example.html alt="A display of the page asking if the user lives with their spouse." file="/images/patterns/ask-users-for/marital-information/spouse-living-situation.png" caption="The first of two pages that allow forms to ask living arrangement questions." width="65%" %}
 
@@ -139,6 +139,6 @@ A [secondary research report](https://github.com/department-of-veterans-affairs/
 
 This pattern would benefit from additional research. Some areas that were identified as potentially high-impact include learning:
 * How users respond to trauma-informed language throughout the pattern
-* How users respond to the information inside the Additional Information components
+* How users respond to the information inside the Additional Info components
 * If users have any confusion about whose information is needed in the portion of the pattern asking for information on their current spouse's previous partner(s)
 * The best location for both optional and required file uploads (either in the context of the marital information pattern/step, or at the end of the form flow)
