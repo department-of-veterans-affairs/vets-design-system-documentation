@@ -4,7 +4,7 @@ When deciding which component to use, consider the data that will be displayed a
 
 #### Tabs
 
-Use [Tabs](https://design.va.gov/components/tabs) to navigate between related content sections within the same hierarchy.
+Use [Tabs]({{ site.baseurl }}/components/tabs) to navigate between related content sections within the same hierarchy.
 
 * Best for ~2-7 options that have unique URLS for each content section or tab.
 * Examples that work well with the Tabs:
@@ -13,7 +13,7 @@ Use [Tabs](https://design.va.gov/components/tabs) to navigate between related co
 
 #### Button - Segmented
 
-Use [Buttons - segmented](https://design.va.gov/components/button/button-segmented) to toggle display modes, filters, or sort modes of the same content.
+Use [Buttons - segmented]({{ site.baseurl }}/components/button/button-segmented) to toggle display modes, filters, or sort modes of the same content.
 
 * Best for 2-4 options of tightly related content.
 * Examples that work well with the Button - Segmented:
