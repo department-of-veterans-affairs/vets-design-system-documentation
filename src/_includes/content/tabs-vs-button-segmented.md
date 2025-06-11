@@ -21,17 +21,7 @@ Use [Buttons - segmented](https://design.va.gov/components/button/button-segment
     * Filter transactions by "30 days", "90 days", or "All".
     * Sort by "Oldest" or "Newest".
 
-#### Sidenav
-
-Use [Sidenav](https://design.va.gov/components/sidenav) to navigate between pages or major sections of the site with the same or different hierachies.
-
-* Best for showing long lists of links or hierarchical navigation.
-* Examples that work well with the Sidenav:
-    * Profile sections like "Personal info", "Military info", etc.
-    * [VA Benefits and Healthcare](https://www.va.gov/health-care/about-va-health-benefits/)
-
 #### What to avoid
 
 * **Don't use too many tabs.** Limiting the number of tabs will provide a better experience on small screens.
-* **Don't nest tabs urls within the Sidenav.** If using both the Sidenav and Tabs on the same page, avoid adding tab URLs to the Sidenav.
-
+* **Don't nest tab urls within the Sidenav.** If using both the Sidenav and Tabs on the same page, avoid adding tab URLs to the Sidenav.
