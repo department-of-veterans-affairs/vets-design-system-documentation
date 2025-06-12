@@ -32,7 +32,7 @@ anchors:
 ### Placement
 
 * **For entry points to online tools**, work with CAIA to determine placement on the static page. Placement may vary depending on the page structure. Always place the alert directly under a header that makes it clear what the user is signing in to do (for example, "Check your claim status online").
-* **On form intro pages**, place the alert directly after the process list or "what to know" section of the intro page. (Some forms have a process list and some have "what to know." [Refer to the form into page template for that guidance](https://design.va.gov/templates/forms/introduction).)
+* **On form intro pages**, place the alert directly after the process list or "what to know" section of the intro page. (Some forms have a process list and some have "what to know." [Refer to the form intro page template for that guidance](https://design.va.gov/templates/forms/introduction).)
 
 ## Behavior
 [Refer to the related sign-in pattern page for full guidance](https://design.va.gov/patterns/help-users-to/sign-in)
