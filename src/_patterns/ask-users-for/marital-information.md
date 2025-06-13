@@ -117,7 +117,27 @@ This optional section features the [Multiple Responses](https://design.va.gov/pa
 
 ## Code usage
 
-(Link to the page.code-link, coming soon)
+A Marital Information pattern library is available for reference, complete with a mock form and example pages. You can explore the pattern implementation and examples in the mock form [repository](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6).
+
+### Key Features
+- **Conditional navigation based on marital status**
+
+
+The form dynamically adapts its flow depending on the respondent’s selected marital status. This is achieved by defining route logic within the form configuration [file](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/config/form.js), which determines which pages are shown and in what order.
+
+- **Dynamic page titles**
+
+
+The pattern uses dynamic page titles, specifically:
+
+- In the "Veteran Marriage History" section, titles dynamically reference the respondent’s spouse (e.g., “Spouse’s name”).
+- In the "Spouse Marriage History" section, titles adjust to reference the current spouse’s former spouses (e.g., “Former spouse’s name”).
+
+This logic helps clarify whose information is being collected and is especially important in handling complex marriage history flows.
+
+- Dynamic titles are implemented using the `titleUI` helper with access to `formData` within the form page's `uiSchema`. Please see example [here](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/pages/spouseIdentity.js#L19-L25)
+- A dedicated [helper](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/helpers/dynamicSpouseNameTitles.js) file, is used to generate context-aware dynamic titles throughout the form
+
 
 ## Content considerations
 

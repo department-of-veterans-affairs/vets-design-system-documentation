@@ -164,10 +164,6 @@
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
   },
-  "va-search-filter": {
-    "maturityCategory": "caution",
-    "maturityLevel": "candidate"
-  },
   "va-search-input": {
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
