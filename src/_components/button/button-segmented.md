@@ -5,7 +5,7 @@ has-parent: /components/button/
 title: Button - Segmented
 aka: Segmented button, Segmented control
 research-link: Buttons
-intro-text: The button segmented component provides secondary navigation within a page using a group of buttons in a row as a single element.
+intro-text: presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 status: use-deployed
 uswds-v3: default
 web-component: va-mobile_segmented-control
@@ -24,7 +24,7 @@ anchors:
 
 This component has not yet been built for the web.
 
-### Mobile
+### App
 
 #### 2 segments
 
@@ -50,10 +50,11 @@ type="secondary"
 
 #### When to use a Button - Segmented
 
-* **Filtering a data set.** To represent the same kind of content, such as a list-view with different filters applied.
-* **Views of a data set.** To provide closely related choices that affect an object, state, or view. For example, a segmented control can help people select options, switch between views, or sort elements.
+Use a Button - Segmented for filtering, sorting, or switching views of a single set of data. The options modify the content on the current page without navigating away. It functions like a set of radio buttons where selecting one option automatically deselects the previous one.
 
-{% include content/tabs-vs-button-segmented.md %}
+* **Best for:** 2-4 mutually exclusive choices.
+* **Example:** Filtering a list of appointments by "Upcoming" and "Past".
+* **Example:** Switching a view from a "List" to a "Grid".
 
 #### When to consider something else
 
@@ -61,37 +62,63 @@ type="secondary"
 * If you need to enable actions — such as adding, removing, or editing content.
 * If it needs to be accompanied by any other controls or a title if used in the top navigation bar.
 
+Use [Tabs]({{ site.baseurl }}/components/tabs) for navigation between distinct, related pages or content sections. Each tab typically corresponds to a unique URL.
+* **Example:** Navigating between "Inbox", "Sent", and "Archived" folders.
+
 #### Behavior
 
 A segmented control consists of a horizontal set of 2-4 segments, each of which functions as a button. One option is always selected. The component does not scroll horizontally.
 
 #### Placement
 
-##### Mobile
+##### Web
 
-* It appears in either the top navigation bar or below that navigation bar, near the top of the screen.
-* It should not be used in the bottom toolbar because toolbar items act on the current screen — they don’t let people switch contexts.
+A Button - Segmented is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
+
+##### App
+
+A Button - Segemented is often integrated into the top navigation bar (or just below it) and should not be placed in a bottom toolbar. It is static and does not scroll horizontally.
 
 #### Instances of this component in production
 
-* Claims uses an Active/Closed segmented control to filter claims by status.
-* Appointments uses an Upcoming/Past segmented control to filter appointments by type.
-* Claims also uses a segmented control to show the Status/Details of claims. This is not an appropriate use of this component since it groups content that is dissimilar. In this case, a different component should be considered.
+##### Correct Use
+
+* **Appointments:** Using an "Upcoming/Past" control to filter a list of appointments.
+* **Claims:** Using an "Active/Closed" control to filter a list of claims.
+
+##### Incorrect Use
+
+* **Claims:** Uses a segmented control to show the Status/Details of claims. This is not an appropriate use of this component since it groups content that is dissimilar. In this case, a different component should be considered.
 
 {% include component-docs.html component_name=page.web-component %}
 
 #### Content considerations
 
-* **Keep labels to 1 word.** If you need 2 (or more) words, you're likely trying to include extraneous words or group together items that are not similar enough. You may need to consider using a different component. The label text must be short enough that it doesn't wrap in the component.
-* **Consider if labels are used elsewhere on the screen.** You can help differentiate different sections beneath the segmented control by not reusing the same labels.
+* **Keep labels concise.** Aim for single-word labels (e.g., "List", "Grid", "Upcoming", "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
+* **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
+* **Provide context.** Ensure the labels on the segments clearly differentiate the content that will be displayed below.
 
 #### Accessibility considerations
 
-##### Mobile
+Ensuring the component is accessible is critical on all platforms.
 
-* Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)
-* **Font scaling.** This component will ignore a user's settings for font scaling so the text always remains the same size. This is consistent with Apple's segmented control component.
-* **Name.** Purpose is clear and matches visible label
-* **Role.** Identifies as a button in iOS and "double tap to activate" in Android
-* **Group.** Visible label (if any) is grouped or associated with the button in a single swipe
-* **State.** Expresses its state (selected/disabled/dimmed)
+##### Web
+
+* **Name:** The purpose of each button must be clear and match its visible label.
+* **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g. VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
+* **State:** The component must clearly announce its state, such as "Selected" for the active button.
+Navigation: When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
+* **Mind target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states:
+
+“The size of the target for pointer inputs is at least 44 by 44 CSS pixels…”
+
+##### App
+
+For native mobile apps, the component must correctly report its properties to the operating system's accessibility services. 
+
+* **Name:** The purpose of each button must be clear and match its visible label.
+* **Role:** It should identify as a "button" to the screen reader (e.g., iOS VoiceOver) and announce the appropriate action (e.g., Android TalkBack's "double tap to activate").
+* **State:** The component must clearly announce its state, such as "Selected" for the active button.
+* **Font Scaling:** In some native implementations (like Apple's), this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
+
+Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)

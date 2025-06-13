@@ -32,8 +32,6 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 * **Secondary navigation within an application.** Tabs allow users to navigate to sections of an application.
 * **Related content within an application.** To group related content that the user doesn't need to read at the same time.
 
-{% include content/tabs-vs-button-segmented.md %}
-
 ### When to consider something else
 
 * **Changing views of the same data.** To allow the user to easily toggle between a binary set of options to see different views of the same data, use a [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented) component. For example, for switching between viewing a list or a map.
