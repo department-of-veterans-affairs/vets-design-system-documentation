@@ -15,11 +15,14 @@ Are there any new variations on components? Are there any new components not pre
 
 In general, some rules for implementing design work include:
 
+- Use VA Design System web components everywhere that you can.
+- Use the [experimental design process]({{ site.baseurl }}/about/contributing-to-the-design-system/) when deviating from a component or pattern.
 - Use [spacing units]({{ site.baseurl }}/foundation/spacing-units) instead of hard-coding pixel values for margins and padding.
 - Use Sass [variables for colors]({{ site.baseurl }}/foundation/color-palette) instead of hex codes.
-- Discuss reusability of new design components and where is the most appropriate home for CSS and JS.
-- Use the CSS Library [naming convention](/about/naming).
-- Do not use ID selectors
+- Use or refer to [design tokens]({{ site.baseurl }}/foundation/design-tokens) whenever possible.
+- Use the CSS Library [naming conventions]({{ site.baseurl }}/about/naming-conventions/css).
+- Do not use ID selectors.
+- Do not use iFrames.
 
 ## Use design system utilities
 
