@@ -135,7 +135,7 @@ The pattern uses dynamic page titles, specifically:
 
 This logic helps clarify whose information is being collected and is especially important in handling complex marriage history flows.
 
-- Dynamic titles are implemented using the `titleUI` helper with access to `formData` within the form page's `uiSchema`. Please see example [here](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/pages/spouseIdentity.js#L19-L25)
+- Dynamic titles are implemented using the `titleUI` helper with access to `formData` within the form page's `uiSchema`. Please see example [here](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/pages/spouseIdentity.js#L19-L25).
 - A dedicated [helper](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/helpers/dynamicSpouseNameTitles.js) file, is used to generate context-aware dynamic titles throughout the form
 
 
