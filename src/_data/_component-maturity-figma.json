@@ -219,6 +219,16 @@
       "$value": "Available"
     }
   },
+  "va-input-telephone": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Candidate"
+    }
+  },
   "va-language-toggle": {
     "category": {
       "$type": "string",
