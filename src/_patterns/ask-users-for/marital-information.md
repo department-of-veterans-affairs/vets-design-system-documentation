@@ -123,7 +123,7 @@ A Marital Information pattern library is available for reference, complete with 
 - **Conditional navigation based on marital status**
 
 
-The form dynamically adapts its flow depending on the respondent’s selected marital status. This is achieved by defining route logic within the form configuration [file](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/config/form.js), which determines which pages are shown and in what order.
+The form dynamically adapts its flow depending on the respondent’s selected marital status. This is achieved by defining route logic within the [form configuration file](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/config/form.js), which determines which pages are shown and in what order.
 
 - **Dynamic page titles**
 
@@ -135,8 +135,8 @@ The pattern uses dynamic page titles, specifically:
 
 This logic helps clarify whose information is being collected and is especially important in handling complex marriage history flows.
 
-- Dynamic titles are implemented using the `titleUI` helper with access to `formData` within the form page's `uiSchema`. Please see example [here](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/pages/spouseIdentity.js#L19-L25).
-- A dedicated [helper](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/helpers/dynamicSpouseNameTitles.js) file, is used to generate context-aware dynamic titles throughout the form
+- Dynamic titles are implemented using the `titleUI` helper with access to `formData` within the form page's `uiSchema`. Please see an [example](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/pages/spouseIdentity.js#L19-L25).
+- A [dedicated helper file](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/_mock-form-ae-design-patterns/patterns/pattern6/helpers/dynamicSpouseNameTitles.js), is used to generate context-aware dynamic titles throughout the form.
 
 
 ## Content considerations
