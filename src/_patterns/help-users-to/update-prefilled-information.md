@@ -5,7 +5,7 @@ permalink: /patterns/help-users-to/update-prefilled-information
 sub-section: help-users-to
 intro-text: Follow this pattern to help users update prefilled information in an application.
 research-title: Help users know how their info is updated
-figma-link: https://www.figma.com/design/1z3bAkQl4uR1IvAxmtyqZi/AE-Design-Patterns---Update-Prefill?node-id=4013-14358&t=GYX9RT423zMZrhat-1
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=21035-13131&t=eoaTAXv2PGPTU6mE-1
 status: use-with-caution-available
 anchors:
   - anchor: Usage
