@@ -92,7 +92,7 @@ The component is often integrated into the top navigation bar (or just below it)
 
 {% include component-docs.html component_name=page.web-component %}
 
-### Content considerations
+## Content considerations
 
 * **Keep labels concise.** Aim for single-word labels (e.g., "List", "Grid", "Upcoming", "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
 * **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
