@@ -1,9 +1,13 @@
-<div class="vads-u-background-color--success-darker vads-u-padding-y--1">
+{% assign component-library = site.data.component_library_releases[0] %}
+{% assign guidance = site.data.site_releases[0] %}
+
+<div class="vads-u-background-color--info-lighter vads-u-padding-y--1">
   <div class="site-l-wrapper">
-    <p class="vads-u-font-size--md vads-u-margin--0 vads-u-color--white">
-      <strong>Spring updates</strong>
-        <a href="{{ site.baseurl }}/about/whats-new" class="vads-u-color--white">
-          Design System releases are now documented after every sprint!
-        </a>
+    <p class="vads-u-font-size--md vads-u-margin--0">
+      <strong>Latest release:</strong>
+      Component Library: <a href="{{ site.baseurl }}/about/whats-new#vads-component-library-releases">{{ component-library.name }}</a>,
+      Guidance: <a href="{{ site.baseurl }}/about/whats-new#guidance-updates">{{ guidance.name }}</a>,
+      Figma: <a href="{{ site.baseurl }}/about/whats-new#figma-component-library-changelog">Changelog</a>
+    </p>
   </div>
 </div>
