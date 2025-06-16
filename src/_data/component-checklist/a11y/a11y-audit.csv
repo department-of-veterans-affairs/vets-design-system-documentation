@@ -2,4 +2,4 @@ Name,Last audit date,Code review,Readability,Automated scans,Use of color,"Text 
 va-alert-sign-in,2025-01-09,Pass,Conditional Pass,Pass,Pass,Pass,Pass,Pass
 va-search-filter,2025-05-21,Pass,Conditional Pass,Pass,Pass,Pass,Pass,Pass
 va-input-telephone,2025-06-06,Pass,Pass,Pass,Pass,Pass,Pass,Pass
-va-button-segmented,2025-06-16,Pass,Pass,Pass,Pass,Pass,Pass,Pass
+va-mobile_segmented-control,2025-06-16,Pass,Pass,Pass,Pass,Pass,Pass,Pass
