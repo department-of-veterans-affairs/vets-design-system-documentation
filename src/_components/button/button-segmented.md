@@ -123,4 +123,7 @@ For native mobile apps, the component must correctly report its properties to th
 
 Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)
 
+## Related
+* [Tabs]({{ site.baseurl }}/components/tabs)
+
 {% include _component-checklist.html component_name=page.web-component %}
