@@ -77,7 +77,7 @@ A Button - Segmented is typically placed directly above the content it controls 
 
 #### App
 
-A Button - Segemented is often integrated into the top navigation bar (or just below it) and should not be placed in a bottom toolbar. It is static and does not scroll horizontally.
+The component is often integrated into the top navigation bar (or just below it) and should not be placed in a bottom toolbar. It is static and does not scroll horizontally.
 
 ### Instances of this component in production
 
@@ -91,8 +91,6 @@ A Button - Segemented is often integrated into the top navigation bar (or just b
 * **Claims:** Using a control to switch between "Status" and "Details". This groups dissimilar content and should be handled with a different component, like Tabs.
 
 {% include component-docs.html component_name=page.web-component %}
-
-## Code usage
 
 ### Content considerations
 
