@@ -150,7 +150,11 @@ Veterans, their spouse, or a dependent can complete forms. Depending on who is c
 
 ### Radio button accessibility considerations
 
-**VoiceOver on Safari has accessibility issues.** VoiceOver on Safari reads out the fieldset legend for each radio item. It should only read out the legend at the end of the first radio option. Theres no workaround right now. Learn more in the [Radio button component](https://design.va.gov/components/form/radio-button) page.
+<va-link-action
+  href="https://design.va.gov/components/form/radio-button"
+  text="Refer to the VADS Radio Button component for accessibility guidance"
+  type="secondary"
+></va-link-action>
 
 
 ## Research findings
