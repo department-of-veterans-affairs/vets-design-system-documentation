@@ -5,7 +5,7 @@ contributors: Lynn Stahl (Agile Six), Fran Cross (Agile Six), Adam Whitlock (Ad 
 sub-section: ask-users-for
 title: Marital Information
 intro-text: "Follow this pattern to ask a user for their marital status and information about their current and previous marriages."
-figma-link: https://www.figma.com/design/Ie3VE755qGlK7ONjKGQpNd/AE-Design-Patterns---Marital-Status?node-id=1022-70670&t=FWcorygnFwkvZgOE-1Oj
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=21035-13131&t=oAFexhdSygBhqpxa-1
 github-title: pattern-marital-information
 research-title: Ask users for marital information
 status: use-with-caution-available
