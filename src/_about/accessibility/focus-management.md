@@ -8,7 +8,6 @@ anchors:
   - anchor: Focus indicator
   - anchor: Focus order
   - anchor: Focus management
-
 ---
 
 Testing is crucial to ensure that focus on your page functions as expected across different scenarios. Below are some things to look out for.
