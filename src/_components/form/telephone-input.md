@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Telephone Input
 intro-text: "Use the telephone input component to help users enter a telephone number."
 status: use-with-caution-candidate
-figma-link: https://www.figma.com/design/fsqR9TGOL2FhNqJ3Eoi4Ag/va-input-telephone-Add-Design?node-id=29018-58507
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=31366-83
 web-component: va-input-telephone
 anchors:
   - anchor: Examples
