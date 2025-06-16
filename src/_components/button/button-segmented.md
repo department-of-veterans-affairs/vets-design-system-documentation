@@ -5,7 +5,7 @@ has-parent: /components/button/
 title: Button - Segmented
 aka: Segmented button, Segmented control
 research-link: Buttons
-intro-text: presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
+intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 status: use-deployed
 uswds-v3: default
 web-component: va-mobile_segmented-control
@@ -88,7 +88,7 @@ A Button - Segemented is often integrated into the top navigation bar (or just b
 
 ##### Incorrect Use
 
-* **Claims:** Uses a segmented control to show the Status/Details of claims. This is not an appropriate use of this component since it groups content that is dissimilar. In this case, a different component should be considered.
+* **Claims:** Using a control to switch between "Status" and "Details". This groups dissimilar content and should be handled with a different component, like Tabs.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -98,7 +98,9 @@ A Button - Segemented is often integrated into the top navigation bar (or just b
 * **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
 * **Provide context.** Ensure the labels on the segments clearly differentiate the content that will be displayed below.
 
-#### Accessibility considerations
+### Code usage
+
+### Accessibility considerations
 
 Ensuring the component is accessible is critical on all platforms.
 
