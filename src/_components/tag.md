@@ -13,7 +13,7 @@ anchors:
 
 ## Examples
 
-{% include storybook-preview.html height="50px" story="components-tag--default-story" link_text="View Tag" %}
+{% include storybook-preview.html height="50px" story="components-tag--default" link_text="View Tag" %}
 
 ## Usage
 
