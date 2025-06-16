@@ -65,46 +65,46 @@ Use a Button - Segmented for filtering, sorting, or switching views of a single 
 Use [Tabs]({{ site.baseurl }}/components/tabs) for navigation between distinct, related pages or content sections. Each tab typically corresponds to a unique URL.
 * **Example:** Navigating between "Inbox", "Sent", and "Archived" folders.
 
-#### Behavior
+### Behavior
 
 A segmented control consists of a horizontal set of 2-4 segments, each of which functions as a button. One option is always selected. The component does not scroll horizontally.
 
-#### Placement
+### Placement
 
-##### Web
+#### Web
 
 A Button - Segmented is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
 
-##### App
+#### App
 
 A Button - Segemented is often integrated into the top navigation bar (or just below it) and should not be placed in a bottom toolbar. It is static and does not scroll horizontally.
 
-#### Instances of this component in production
+### Instances of this component in production
 
-##### Correct Use
+#### Correct Use
 
 * **Appointments:** Using an "Upcoming/Past" control to filter a list of appointments.
 * **Claims:** Using an "Active/Closed" control to filter a list of claims.
 
-##### Incorrect Use
+#### Incorrect Use
 
 * **Claims:** Using a control to switch between "Status" and "Details". This groups dissimilar content and should be handled with a different component, like Tabs.
 
 {% include component-docs.html component_name=page.web-component %}
 
-#### Content considerations
+### Content considerations
 
 * **Keep labels concise.** Aim for single-word labels (e.g., "List", "Grid", "Upcoming", "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
 * **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
 * **Provide context.** Ensure the labels on the segments clearly differentiate the content that will be displayed below.
 
-### Code usage
+## Code usage
 
-### Accessibility considerations
+## Accessibility considerations
 
 Ensuring the component is accessible is critical on all platforms.
 
-##### Web
+### Web
 
 * **Name:** The purpose of each button must be clear and match its visible label.
 * **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g. VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
@@ -114,7 +114,7 @@ Navigation: When you navigate to the first button and use the tab key to move fo
 
 “The size of the target for pointer inputs is at least 44 by 44 CSS pixels…”
 
-##### App
+### App
 
 For native mobile apps, the component must correctly report its properties to the operating system's accessibility services. 
 
