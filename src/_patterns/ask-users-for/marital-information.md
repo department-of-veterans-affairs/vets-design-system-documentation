@@ -36,8 +36,14 @@ anchors:
 
 #### “What is your marital status?” question
 
-* **This question is the foundational part of this pattern.** If your form needs additional information, you can include questions from the question bank in this guidance.
-
+* **Start with this question and include additional questions only when necessary.** This question is the foundational part of this pattern. If your form needs additional information, you can include questions from the question bank in this guidance. The format of this question is as follows:
+  * Question: What is your marital status?
+  * Answers:
+    * Married
+    * Divorced or annulled
+    * Separated
+    * Widowed
+    * Never married 
 
 {% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Additional Info component that tells the user why you need this information." width="50%" %}
 
