@@ -4,9 +4,9 @@ title: Know when their information is prefilled
 permalink: /patterns/help-users-to/know-when-their-information-is-prefilled
 sub-section: help-users-to
 intro-text: Follow this pattern to help users know when their information will be prefilled for them in an application.
-figma-link: https://www.figma.com/design/2j01RTqCSJRy4lX3eUOiod/AE-Design-Patterns---Prefill?node-id=1430-24359&t=AVctDQNNetYewkto-1
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=13451-91712&t=eoaTAXv2PGPTU6mE-1
 research-title: Help users know when their info is prefilled
-status: use-with-caution-candidate
+status: use-with-caution-available
 anchors:
   - anchor: Usage
   - anchor: How to design and build
