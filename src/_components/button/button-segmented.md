@@ -16,6 +16,7 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Component checklist
+  - anchor: Related
 ---
 
 ## Examples
