@@ -92,13 +92,13 @@ A Button - Segemented is often integrated into the top navigation bar (or just b
 
 {% include component-docs.html component_name=page.web-component %}
 
+## Code usage
+
 ### Content considerations
 
 * **Keep labels concise.** Aim for single-word labels (e.g., "List", "Grid", "Upcoming", "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
 * **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
 * **Provide context.** Ensure the labels on the segments clearly differentiate the content that will be displayed below.
-
-## Code usage
 
 ## Accessibility considerations
 
@@ -124,3 +124,5 @@ For native mobile apps, the component must correctly report its properties to th
 * **Font Scaling:** In some native implementations (like Apple's), this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
 
 Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)
+
+{% include _component-checklist.html component_name=page.web-component %}
