@@ -94,13 +94,12 @@ anchors:
   </va-table-row>
   <va-table-row>
     <span>During downtime</span>
-    <span><b>You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]</b></span>
-    <span>We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with this account, please check back later.</span>
+    <span><b>You may have trouble signing in with [DS Logon, ID.me, login.gov]</b></span>
+    <span>We’re sorry. We’re working to fix some problems with our [DS Logon, ID.me, login.gov] sign in process. If you’d like to sign in to VA.gov with this account, please check back later.</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
   </va-table-row>
 </va-table>
-
 
 ## Unscheduled downtime notifications
 
@@ -149,8 +148,8 @@ anchors:
   </va-table-row>
   <va-table-row>
     <span>During downtime</span>
-    <span><b>You may have trouble signing in with [DS Logon, MyHealtheVet, ID.me]</b></span>
-    <span>We’re sorry. We’re working to fix some problems with our [DS Logon, MyHealtheVet,ID.me] sign in process. If you’d like to sign in to VA.gov with this account, please check back later.</span>
+    <span><b>You may have trouble signing in with [DS Logon, ID.me, login.gov</b></span>
+    <span>We’re sorry. We’re working to fix some problems with our [DS Logon, ID.me, login.gov] sign in process. If you’d like to sign in to VA.gov with this account, please check back later.</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
   </va-table-row>
