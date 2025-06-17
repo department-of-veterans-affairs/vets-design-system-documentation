@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: documentation
 title: Redirects
 permalink: /components/url-standards/redirects
 has-parent: /components/url-standards/
 intro-text: A URL redirect forwards both visitors and search engines to a different URL than the one requested. Teams should implement a redirect or request a redirect whenever they change a URL or remove a page. 
 ---
-
-# URL Redirects
 
 A URL redirect serves 2 purposes:
 
@@ -15,8 +13,6 @@ A URL redirect serves 2 purposes:
 2. It informs search engines of the new location of a page so they can update their index and search results, and transfer the search value to the new URL
 
 Teams must formally request a redirect before implementation so they can be vetted for accuracy and appropriateness, and implemented with full validation across environments. That request also kicks off work to update all internal links and identifies existing redirects that may need to be updated.
-
-{% include _site-on-this-page.html %}
 
 ## Usage
 
