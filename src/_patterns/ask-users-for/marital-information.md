@@ -81,19 +81,19 @@ This optional section asks if the user currently lives with their spouse or has 
 
 This optional section includes questions about the marriage, such as:
 
-* Date and place of marriage
+##### Date and place of marriage
 
 {% include component-example.html alt="A display of the page asking for the place and date of the marriage." file="/images/patterns/ask-users-for/marital-information/date-place-marriage.png" caption="The page that asks for the place and date of the marriage." width="60%" %}
 
-* Type of marriage
+##### Type of marriage
 
 {% include component-example.html alt="A display of the page asking how the couple was married." file="/images/patterns/ask-users-for/marital-information/how-married.png" caption="The page that asks for the type of marriage ceremony." width="50%" %}
 
-* Reason for termination, if applicable
+##### Reason for termination, if applicable
 
 {% include component-example.html alt="A display of the page asking how the marriage ended." file="/images/patterns/ask-users-for/marital-information/how-marriage-ended.png" caption="The page that asks for how the marriage ended." width="65%" %}
 
-* Date and place of termination or spouse’s death, if applicable
+##### Date and place of termination or spouse’s death, if applicable
 
 {% include component-example.html alt="A display of the page asking for the date and place of the marriage termination." file="/images/patterns/ask-users-for/marital-information/date-place-marriage-ended.png" caption="The page that asks for the date and place of the marriage termination." width="50%" %}
 
