@@ -34,6 +34,10 @@ anchors:
 
 {% include storybook-preview.html story="components-va-card--with-drop-shadow" link_text="va-card with drop shadow" %}
 
+### With Icon
+
+{% include storybook-preview.html story="components-va-card--with-icon" link_text="va-card with icon" height="200px" auto_resize=false %}
+
 ## Usage
 
 ### When to use Card
@@ -96,19 +100,23 @@ You can see these options in use in the [variations](#variations) below.
 
 ### Choosing between variations
 
-Currently (06/2023), there are 3 variations to choose from:
+Currently (06/2025), there are 4 variations to choose from:
 
-#### 1. Default gray
+#### 1. Default
 
-This variation was the previous default and is the Card variation most widely used across VA.gov. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow. [Benefit payments](#benefit-payments) and [Application status](#application-status-benefit-application-drafts) are examples of this variation.
+This variation is the [default](#default). New variations of Card start with this variation as the base.
 
-#### 2. Default white
+#### 2. With Background
 
-This variation is the [new default](#2-default-white) and is codified in a web-component. Content should be structured in the same way. New variations of Card will start with this variation as the base. Currently you may choose to use either the gray or white default Card however, this newer variation is preferred.
+[This variation](#with-background) was the previous default and is the Card variation most widely found across VA.gov. However, it is no longer preferred. Visually, it features a gray background (`$color-gray-lightest`) with no border or drop shadow. [Benefit payments](#benefit-payments) and [Application status](#application-status-benefit-application-drafts) are examples of this variation.
 
-#### 3. With drop shadow
+#### 3. With Drop Shadow
 
-Use [this variation](#3-with-drop-shadow) for emphasis, for example at the top of a page or section, or as the primary card in a series of cards. When using in a series, use with the default white variation. Do not combine this variation with the default gray variation.
+Use [this variation](#with-drop-shadow) for emphasis, for example at the top of a page or section, or as the primary card in a series of cards. When using in a series, use with the default white variation. Do not combine this variation with the default gray variation.
+
+#### 4. With Icon
+
+Use [this variation](#with-icon) to provide additional descriptive information about the contents of the Card. For example, in the context of appointments this variation features an icon that helps differentiate between cards related to [in-person](#appointment-large-with-icon) and remote appointments.
 
 ### Instances of this component in production
 
@@ -197,7 +205,7 @@ A radio button tile has a title and description within the label and a Card-like
 
 ### A list of services or tools
 
-{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as 'Label: Value' pairs, and a link."  file="/images/components/service-list-item/service-list-item-all-info.png" width="50%" %}
+{% include component-example.html alt="A set of information—designed to be shown within a list—that contains a header, a bright call to action, a status tag, four sets of data formatted as 'Label: Value' pairs, and a link."  file="/images/components/service-list-item/annotated-service-list-item-component.png" %}
 
 When you want to show benefits or tools the user is currently enrolled in or has access to, use the [Service list item]({{ site.baseurl }}/components/service-list-item) component instead of the Card component.
 
