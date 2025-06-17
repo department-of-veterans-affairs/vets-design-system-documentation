@@ -10,7 +10,7 @@ Here's how to structure your content.
 
 ## Headings
 
-{% include component-example.html alt="An example of using headings on a page." file="/images/content-style-guide/plain-language/structure-your-content-headers.png" caption="Headings give structure to your page's content. Use an <h1> for the page title, an <h2> for the first sub-heading, and an <h3> for sub-headings within that section." width="60%" %}
+{% include component-example.html alt="An example of using headings on a page." file="/images/content-style-guide/plain-language/structure-your-content-headers.png" caption="Headings give structure to your page's content. Use an H1 for the page title, an H2 for the first sub-heading, and an H3 for sub-headings within that section." width="60%" %}
 
 ### Content and accessibility best practices
 
@@ -19,19 +19,19 @@ Headings help to set expectations for each page and section within a page. They 
 Follow these best practices when using headings:
 - Use only 1 H1 heading per page. The H1 should clearly and briefly capture the page topic. 
   **Note:** On Drupal pages, Drupal will convert the "Page title" to an H1. On non-Drupal pages, you'll need to code the H1 manually.
-- Don't skip heading levels. Only increase by 1 level at a time. For example, follow an <h1> heading only with an <h2> heading, never with an <h3> or <h4> heading.
+- Don't skip heading levels. Only increase by 1 level at a time. For example, follow an H1 heading only with an H2 heading, never with an H3 or H4 heading.
 - Don't use HTML elements or CSS styling for bold, italics, and font sizing in place of proper headings.
-- Use headings for their semantic meaning, not their styling. For example, don't use an `<h4>` just because of its small font size
-  [Use utility classes]({{ site.baseurl }}/foundation/utilities/) to change a heading's style.
-- Make each heading informative and distinct. Don't repeat information from other headings.
-- Don't stack headings (1 heading level followed by another). For example, don't place a `<h2>` immediately after a `<h1> without any regular content in between the headings.
+- Use headings for their semantic meaning, not their styling. For example, don't use an H4 just because of its small font size
+  [Use utility classes to change a heading's style]({{ site.baseurl }}/foundation/utilities/)
+- Don't stack headings (1 heading level followed by another). For example, don't place an H2 immediately after an H1 without any regular content in between the headings.
 - Arrange headings hierarchically on the page, from most important to least important.
+- Make each heading informative and distinct. Don't repeat information from other headings.
 - [Review the "Page titles and section titles" section for more content guidance]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles)
 
 #### Additional resources
 
-- [HeadingsMap Chrome extension from the Chrome webstore website](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?pli=1)
-- [HeadingsMap Firefox extension from the Mozilla website](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
+- [HeadingsMap Chrome extension on the Chrome webstore website](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?pli=1)
+- [HeadingsMap Firefox extension on the Mozilla website](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
 
 ### Further reading
 
