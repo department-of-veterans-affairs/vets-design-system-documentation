@@ -34,10 +34,10 @@ anchors:
 
 ### How this pattern works
 
-#### “What is your marital status?” question
+#### “What is your current marital status?” question
 
 * **Start with this question and include additional questions only when necessary.** This question is the foundational part of this pattern. If your form needs additional information, you can include questions from the question bank in this guidance. The format of this question is as follows:
-  * Question: What is your marital status?
+  * Question: What is your current marital status?
   * Answers:
     * Married
     * Divorced or annulled
@@ -48,7 +48,7 @@ anchors:
 {% include component-example.html alt="A display of the standard Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/standard-marital-status.png" caption="The standard Marital Status question to be used in most forms. Always provide a detailed explanation in the Additional Info component that tells the user why you need this information." width="50%" %}
 
 
-* **If your form doesn't need this level of detail, simply ask "Are you married?".** Include "Yes/No" radio button options for a response. Map those to the "Married/Never Married" workflows.
+* **If your form doesn't need this level of detail, simply ask "Are you currently married?".** Include "Yes/No" radio button options for a response. Map those to the "Married/Never Married" workflows.
 
 {% include component-example.html alt="An annotated display of the simplified version of the Marital Status question with reponses available with radio buttons and an Additional Info component that provides more information on why we ask this information." file="/images/patterns/ask-users-for/marital-information/simple-marital-status.png" caption="Use the simplified Marital Status question in forms that don't need to collect detailed information on the user's marital status. Use when your form only needs a yes/no answer to the question." width="60%" %}
 
@@ -149,7 +149,7 @@ This logic helps clarify whose information is being collected and is especially 
 
 ### Respondent role
 
-Veterans, their spouse, or a dependent can complete forms. Depending on who is completing the form, some slight alterations to the text content may need to shift. Update content as needed. For example, shift "What is your marital status" to "What is the Veteran's marital status"?
+Veterans, their spouse, or a dependent can complete forms. Depending on who is completing the form, some slight alterations to the text content may need to shift. Update content as needed. For example, shift "What is your current marital status" to "What is the Veteran's current marital status"?
 
 
 ## Accessibility considerations
