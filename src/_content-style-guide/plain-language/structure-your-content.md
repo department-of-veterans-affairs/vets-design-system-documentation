@@ -17,12 +17,10 @@ Here's how to structure your content.
 Headings help to set expectations for each page and section within a page. They help sighted readers easily scan the content. And they help people using assistive devices, such as screen readers, quickly get oriented to the page and navigate through the information. 
 
 Follow these best practices when using headings:
-- Use only 1 H1 heading per page. The H1 should clearly and briefly capture the page topic. 
-  **Note:** On Drupal pages, Drupal will convert the "Page title" to an H1. On non-Drupal pages, you'll need to code the H1 manually.
+- Use only 1 H1 heading per page. The H1 should clearly and briefly capture the page topic. **Note:** On Drupal pages, Drupal will convert the "Page title" to an H1. On non-Drupal pages, you'll need to code the H1 manually.
 - Don't skip heading levels. Only increase by 1 level at a time. For example, follow an H1 heading only with an H2 heading, never with an H3 or H4 heading.
 - Don't use HTML elements or CSS styling for bold, italics, and font sizing in place of proper headings.
-- Use headings for their semantic meaning, not their styling. For example, don't use an H4 just because of its small font size
-  [Use utility classes to change a heading's style]({{ site.baseurl }}/foundation/utilities/)
+- Use headings for their semantic meaning, not their styling. For example, don't use an H4 just because of its small font size. [Use utility classes to change a heading's style]({{ site.baseurl }}/foundation/utilities/)
 - Don't stack headings (1 heading level followed by another). For example, don't place an H2 immediately after an H1 without any regular content in between the headings.
 - Arrange headings hierarchically on the page, from most important to least important.
 - Make each heading informative and distinct. Don't repeat information from other headings.
