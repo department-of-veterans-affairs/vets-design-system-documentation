@@ -9,8 +9,6 @@ sub-pages:
   - sub-page: Focus management
 ---
 
-{% include _site-in-this-section.html %}
-
 VA is here to serve Veterans of the United States military, and [approximately 40% have an identified disability](https://www.statista.com/statistics/250316/us-veterans-by-disability-status/).
 
 Therefore, [accessibility is core to all design decisions]({{ site.baseurl }}/about/principles#usable-by-everyone) made in our Design System. All components must be tested before admission into the Design System, and all VA products must be tested before launch.

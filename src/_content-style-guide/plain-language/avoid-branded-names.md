@@ -1,10 +1,16 @@
 ---
-layout: content-style-guide
+layout: default
 permalink: /content-style-guide/plain-language/avoid-branded-names
 has-parent: /content-style-guide/plain-language/
 title: Avoid branded names
 intro-text: "Avoid or minimize references to branded program names. Describe the benefit instead." 
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+   {{ page.intro-text }}
+</div>
 
 {% capture example_like_this_1 %}
 You may be eligible for <span class="do-dont__diff">employment benefits and services</span> to help you live as independently as possible.
