@@ -14,7 +14,7 @@ anchors:
 
 ## Accessibility problem being solved
 
-Teams and practitioners often don’t know what content needs to be announced by screen readers. That can lead to overindexing on the amount of content announced, meaning increased verbosity (amount of words announced on a page) and cognitive load for people who use screen readers. Aim for balance when announcing content to screen readers.
+Teams and practitioners often don’t know what content needs to be announced by screen readers. That can lead to over-indexing on the amount of content announced, resulting in increased verbosity (amount of words announced on a page) and cognitive load for people who use screen readers. Aim for balance when announcing content to screen readers.
 
 ## How screen readers work
 
