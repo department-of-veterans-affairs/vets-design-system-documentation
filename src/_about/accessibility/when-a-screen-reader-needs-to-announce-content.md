@@ -28,7 +28,7 @@ To get to an ideal state with this, you need to understand how screen readers wo
 
 Screen readers announce parts of the page and its state as people navigate them. For example ([from WebAIM](https://webaim.org/techniques/screenreader/)):
 
-- Screen readers announce the page title (the \<title> element in the HTML markup) when first loading a web page.
+- Screen readers announce the page title (the `<title>` element in the HTML markup) when first loading a web page.
 - Screen readers will read the alternative text of images, if alt text is present. JAWS precedes the alternative text with the word “graphic.” If the image is a link, JAWS precedes the alternative text with “graphic link."
 - Screen readers announce headings and identify the heading level. NVDA and JAWS, for example, precede `<h1>` headings with “heading level 1.”
 - Users can navigate in any direction from cell to cell in table navigation mode. If the table is marked up correctly, the screen reader will read the column and/or row heading as the user enters each new cell.
@@ -60,7 +60,7 @@ If changes occur elsewhere on a page away from the current interaction, as a res
 
 If the state on a component or page is important to understand to operate the interface.
 
-**Example**: A page has an accordion component that expands and collapses to show more or less content. The accordion has an aria-expanded="true|false" attribute that communicates whether the accordion is showing or not showing content.
+**Example**: A page has an accordion component that expands and collapses to show more or less content. The accordion has an `aria-expanded="true|false"` attribute that communicates whether the accordion is showing or not showing content.
 
 **Why**: State changes let the person using the interface understand more about what's happening or has happened. That allows the user to better understand the interface and what action they need to take.
 
@@ -92,7 +92,7 @@ When contextual information gets surfaced during a process that's needed to comp
 
 When the language changes on a page. This change can be one word, a paragraph or more.
 
-Note: It's important to point out that the language change is achieved by the HTML lang attribute (example: \`lang="es"\`). The change won't be announced, but the language will get pronounced properly via the screen reader.
+Note: It's important to point out that the language change is achieved by the HTML lang attribute (example: `lang="es"`). The change won't be announced, but the language will get pronounced properly via the screen reader.
 
 **Example**: A page contains information in English, but has a list of links in the footer that link to help content in different languages. Each link would contain the correct lang attribute in the right language.
 
