@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: content-style-guide
 title: Bold & italic text
 ---
-
-# Bold & italic text
 
 ## Bold text
 

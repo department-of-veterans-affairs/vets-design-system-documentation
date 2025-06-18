@@ -1,10 +1,16 @@
 ---
-layout: content-style-guide
+layout: default
 permalink: /content-style-guide/plain-language/use-active-voice
 has-parent: /content-style-guide/plain-language/
 title: Use active voice
 intro-text: "Always connect an action to a subject. If there’s no subject taking responsibility for the verb, it’s likely passive voice."
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+   {{ page.intro-text }}
+</div>
 
 {% include _like-this-not-this.html like_this="After we correct the duty-to-assist error, we’ll make a new decision on your claim." not_this="Once the evidence is received and the duty-to-assist error is satisfied, you will be issued a new decision." %}
 

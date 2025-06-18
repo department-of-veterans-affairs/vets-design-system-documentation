@@ -1,28 +1,15 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/utilities/padding
 has-parent: /foundation/utilities/
 title: Padding
-anchors:
-  - anchor: Padding on all sides
-  - anchor: Padding top and bottom
-  - anchor: Padding top
-  - anchor: Padding bottom
-  - anchor: Padding right and left
-  - anchor: Padding right
-  - anchor: Padding left
-  - anchor: Responsive prefixes
+intro-text: Change the spacing inside an item.
 ---
 
-# Padding
-
-<div class="va-introtext" markdown="1">
-  Change the spacing inside an item. Padding classes include [responsive prefixes](#responsive-prefixes).
-</div>
-
-{% include _site-on-this-page.html %}
+Padding classes include [responsive prefixes](#responsive-prefixes).
 
 ## Padding on all sides
+
 <div class="site-showcase">
 
   {%

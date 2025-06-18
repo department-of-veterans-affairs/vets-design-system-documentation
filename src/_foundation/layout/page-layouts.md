@@ -1,21 +1,10 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/layout/page-layouts
 has-parent: /foundation/layout/
 title: Page layouts
-anchors:
-  - anchor: Guidance
-  - anchor: Two columns, content on right
-  - anchor: Two columns, content on left
+intro-text: These are the most common layouts used on VA.gov. The templates on this page are not full-page layouts, as the main header and footer are not currently part of the Design System, but snippets here are for everything in between to help you establish the page grid.
 ---
-
-# Page templates
-
-<p class="va-introtext">
-  These are the most common layouts used on VA.gov. The templates on this page are not full-page layouts, as the main header and footer are not currently part of the Design System, but snippets here are for everything in between to help you establish the page grid.
-</p>
-
-{% include _site-on-this-page.html %}
 
 ## Guidance for all examples
 
@@ -43,4 +32,5 @@ In this layout on VA.gov, the content is on the left and section on the left is 
 <div class="site-showcase">
   {% include_relative html/2-col-content-left-iframe.html %}
 </div>
+
 {% include snippet.html content='html/2-col-content-left.html' %}

@@ -1,22 +1,11 @@
 ---
-layout: default
+layout: documentation
 title: Maturity scale
-anchors:
-  - anchor: Definitions
-  - anchor: How components and patterns move through the scale
+intro-text: The maturity scale indicates the level of maturity of each component and pattern in the system. It helps designers and developers know if they can use the component and what level of caution they should have when doing so.
 ---
-
-# {{ page.title }}
-
-<div class="va-introtext">
-  The maturity scale indicates the level of maturity of each component and pattern in the system. It helps designers and developers know if they can use the component and what level of caution they should have when doing so.
-</div>
-
-{% include _site-on-this-page.html %}
 
 The maturity scale is divided into 3 major categories:
 
-  
 {% assign scale = site.data.maturity-scale.scale %}
 {% assign use = scale | where: 'category', 'Use' %}
 {% assign use_with_caution = scale | where: 'category', 'Use with caution' %}

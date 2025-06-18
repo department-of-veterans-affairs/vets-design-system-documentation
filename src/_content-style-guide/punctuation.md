@@ -1,21 +1,8 @@
 ---
-layout: default
+layout: content-style-guide
 title: Punctuation
-title: Punctuation
-anchors:
-  - anchor: Ampersands
-  - anchor: Apostrophes
-  - anchor: Commas
-  - anchor: Contractions
-  - anchor: Em and en dashes, hyphens
-  - anchor: Exclamation points
-  - anchor: Quotation marks
+intro-text: We follow standard American English and AP Style on VA.gov. Areas where we differ are listed below.
 ---
-
-# Punctuation
-We follow standard American English and AP Style on VA.gov. Areas where we differ are listed below.
-
-{% include _site-on-this-page.html %}
 
 ## Ampersands
 
@@ -28,7 +15,6 @@ Use curly apostrophes (ex. don't) instead of straight up and down ones (ex. don&
 ## Commas
 
 We use the serial comma, sometimes called the Oxford comma. This is the comma used before a conjunction in a sentence with a series of 3 or more items. Sometimes the sentence can be misread if the serial comma is omitted.
-
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -51,17 +37,17 @@ In his acceptance speech the actor thanked his parents, Martin Scorsese and Robe
 
 ## Contractions
 
-We use contractions on VA.gov. It supports our conversational, person-to-person voice and tone. Some situations might call for spelling out all the words, like in legal or warning messages, but in general, we prefer using contractions. 
+We use contractions on VA.gov. It supports our conversational, person-to-person voice and tone. Some situations might call for spelling out all the words, like in legal or warning messages, but in general, we prefer using contractions.
 
 - Be careful not to mix up "its" and "it's."
-- Use "it's" as a contraction of "it is," never "it has." 
+- Use "it's" as a contraction of "it is," never "it has."
 - Don't use non-standard contractions like "would've," "could've," or "should've."
 
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
-We're available 8:00 a.m. to 6:00 p.m. ET, Monday through Friday. 
+We're available 8:00 a.m. to 6:00 p.m. ET, Monday through Friday.
 
 </div>
 </div>
@@ -74,25 +60,24 @@ We are available 8:00 a.m. to 6:00 p.m. ET, Monday through Friday.
 </div>
 </div>
 
-
 ## Em and en dashes, hyphens
 
-### Em dash 
+### Em dash
 
-Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to overuse them. We don't use a space on either side of the em dash. 
+Use the em dash similar to a parenthetical or commas to set off an important clause, when commas might be awkward. Try not to overuse them. We don't use a space on either side of the em dash.
 
 - **Like this:** You may be eligible if you have an illness or injury caused&mdash;or made worse&mdash;by your time in service.
 
-### En dash 
+### En dash
 
-Avoid using en dashes, since screen readers don't consistently announce them. 
+Avoid using en dashes, since screen readers don't consistently announce them.
 
-### Hyphens 
+### Hyphens
 
 This is the short, single dash. We use it to connect words that modify a noun or in names. Hyphens are also OK to indicate ranges when space is limited. However, in normal body copy, use "to" to indicate ranges (like 2021 to 2022). We don't use a space on either side of the hyphen.
+
 - **Like this:** active-duty service member; VA-related claim; Merriam-Webster 
 - **Like this:** 2021-2022
-
 
 ## Exclamation points
 

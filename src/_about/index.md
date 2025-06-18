@@ -1,9 +1,15 @@
 ---
-layout: documentation
+layout: default
 index: true
 title: Getting started with design.va.gov
 intro-text: This site provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital services on the VA.gov platform. Its primary audience includes content writers, designers, and front-end developers who work on VA.gov.
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+  {{ page.intro-text }}
+</div>
 
 ## Guides by audience
 

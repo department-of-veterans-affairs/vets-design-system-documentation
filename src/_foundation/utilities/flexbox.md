@@ -1,28 +1,14 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/utilities/flexbox
 has-parent: /foundation/utilities/
 title: Flexbox
-anchors:
-  - anchor: Flex
-  - anchor: Flex direction
-  - anchor: Flex wrap
-  - anchor: Align items
-  - anchor: Flex direction
-  - anchor: Justify content
-  - anchor: Align content
-  - anchor: Order
+intro-text: The flexbox utilities provide all of the properties for flex containers and some for flex items. All are responsive. 
 ---
 
-# Flexbox
-
-<div class="va-introtext" markdown="1">
-  The flexbox utilities provide all of the properties for flex containers and some for flex items. All are responsive. Read about [responsive prefixes](#responsive-prefixes). This utility can serve as compliment to the [flexbox grid](../layout/flexbox-grid).
-</div>
+Read about [responsive prefixes](#responsive-prefixes). This utility can serve as compliment to the [flexbox grid](../layout/flexbox-grid).
 
 Flexbox requires two components,  a *flex container* and *flex items*. Any first siblings in a flex container becomes a flex item. It is not possible for any of those siblings to not become a flex item.
-
-{% include _site-on-this-page.html %}
 
 ## Flex
 

@@ -17,7 +17,7 @@
 
     <div class="site-content vads-u-margin-bottom--9">
       {% include _site-content-nav.html %}
-      <div class="site-content__content">
+      <article class="site-content__content">
         <main id="main-content" class="site-l-content-wrapper--styleguide desktop-lg:vads-u-margin-top--neg2">
           {% unless page.index %}
             {% if page.draft %}
@@ -43,15 +43,14 @@
             {% endif %}
             {% include component-resource-links.html %}
             {% include component-contributors.html %}
-            {% if page.anchors %}
-              {% include _site-on-this-page.html %}
-            {% endif %}
+            <va-on-this-page></va-on-this-page>
           {% endunless %}
           {{ content }}
         </main>
         {% include edit-on-github.html %}
         {% include timestamps.html %}
-      </div>
+        <va-back-to-top></va-back-to-top>
+      </article>
     </div>
   </div>
 

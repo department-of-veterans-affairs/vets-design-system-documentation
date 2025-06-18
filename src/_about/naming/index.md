@@ -5,7 +5,7 @@ title: Naming conventions
 inner-title: Overview
 into-text: This section defines naming conventions for components, CSS, and other parts of the VA Design System. 
 sub-pages:
-  - sub-page: CSS naming conventions
+  - sub-page: CSS
 ---
 
 ## Purpose

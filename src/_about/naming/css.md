@@ -2,7 +2,7 @@
 layout: documentation
 permalink: /about/naming-conventions/css
 has-parent: /about/naming-conventions/
-title: CSS naming conventions
+title: CSS
 intro-text: CSS naming conventions are an important aspect of any design system.
 ---
 

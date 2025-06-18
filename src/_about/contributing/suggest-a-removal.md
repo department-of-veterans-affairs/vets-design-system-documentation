@@ -6,6 +6,8 @@ title: Suggest a removal
 intro-text: Follow the steps below to suggest a component or pattern be deprecated in the design system
 ---
 
+## How to suggest a removal
+
 Like any site on the web, we can expect VA.gov’s design to evolve. Some components might be updated and improved, while we might remove others entirely in favor of a replacement.
 
 Deprecating a component is done only by the Design System Team. However, you can file an issue requesting that a component or pattern be deprecated. Be sure to include the following in your request:
@@ -19,7 +21,7 @@ You may need to come to the Design System Council with your request for discussi
   href="{{ site.request_removal_link }}"
   text="Suggest a removal"
   type="secondary"
-></va-link-action> 
+></va-link-action>
 
 ## How the Design System Team deprecates a component
 

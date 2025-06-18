@@ -1,10 +1,16 @@
 ---
-layout: content-style-guide
+layout: default
 permalink: /content-style-guide/plain-language/don-t-use-idioms
 has-parent: /content-style-guide/plain-language/
 title: Don’t use idioms
 intro-text: "Idioms can be confusing, especially for someone whose first language isn’t English."
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+   {{ page.intro-text }}
+</div>
 
 {% capture example_like_this_1 %}
 Your counselor will work with you to <span class="do-dont__diff">plan</span> your career path.
