@@ -181,13 +181,6 @@ The text of the link of the matching page. This should not be a link (the header
   type="secondary"
 ></va-link-action>
 
-#### Additional guidance
-
-* **Use filter chips to show the filters being applied when there are more than 3 facets.** 3 or more facets requires the use of filter chips to show what is currently selected in filters.
-* **Use a left-hand sidebar when the main purpose of the product is to search.** If your product's main purpose is to allow users to search, then use a persistent, visible, left side navigation from the tablet breakpoint and wider viewports. For example, global Search, GI Bill Comparison tool, and Resource & Support (or other knowledge bases) feature search, filtering, and sorting as the main focus of their products thus they would use a persistent side navigation to hold filtering.
-* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. See [guidance on sort](#sort).
-* **Filtering happens inline on the page.** Do not take users to a new page or screen in order to filter search results.
-
 #### Accessibility considerations
 
 * **Move focus to results.** After filters are applied, move focus to the results heading or summary. This orients users and helps them find updated content quickly.
@@ -195,3 +188,10 @@ The text of the link of the matching page. This should not be a link (the header
 * **Preserve the filtered state.** Make sure selected filters remain visible and accessible after results update, so users always know which filters are active.
 * **Announce loading states.** If results take time to update, use an ARIA live region to let users know results are loading.
 * **Provide clear error messages.** If there’s an error applying filters, show a clear message and announce it for screen readers. Use simple, direct language.
+
+#### Additional guidance
+
+* **Use filter chips to show the filters being applied when there are more than 3 facets.** 3 or more facets requires the use of filter chips to show what is currently selected in filters.
+* **Use a left-hand sidebar when the main purpose of the product is to search.** If your product's main purpose is to allow users to search, then use a persistent, visible, left side navigation from the tablet breakpoint and wider viewports. For example, global Search, GI Bill Comparison tool, and Resource & Support (or other knowledge bases) feature search, filtering, and sorting as the main focus of their products thus they would use a persistent side navigation to hold filtering.
+* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. See [guidance on sort](#sort).
+* **Filtering happens inline on the page.** Do not take users to a new page or screen in order to filter search results.
