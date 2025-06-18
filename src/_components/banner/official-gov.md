@@ -11,6 +11,7 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
+  - anchor: Accessibility considerations
 ---
 
 ## Examples
@@ -48,3 +49,10 @@ anchors:
 **Above header.** The official government banner appears directly above the VA.gov header and 
 
 {% include component-docs.html component_name=page.web-component %}
+
+## Accessibility considerations
+
+<va-link-action
+  href="https://designsystem.digital.gov/components/banner/#accessibility-default-banner"
+  text="Refer to the U.S. Web Design System for accessibility guidance" type="secondary">
+</va-link-action>
