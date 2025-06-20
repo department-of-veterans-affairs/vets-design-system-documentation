@@ -35,6 +35,6 @@ New York, NY 67890 <br/>
 
 ### Zip codes
 
--	When Veterans fill out their address, we don’t require them to include the extra 4 digits of their zip code. If Veterans do include the extra 4 digits, it can have either a hyphen or a space (ex. 12345-6789 or 12345 6789).
+-	When Veterans fill out their address, we don’t require them to include the extra 4 digits of their zip code. They only need to provide the 5-digit zip code.
 -	When we provide an address to Veterans, we sometimes include the extra 4 digits of the zip code. If we include the extra 4 digits, use a hyphen (ex. 12345-6789).
 
