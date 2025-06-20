@@ -38,6 +38,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Agent Orange Registry health exam**
 : Lowercase "health exam."
 
+**and/or**
+: Don't use "and/or" in lists or body copy. Instead, restructure the content to list all options (for example, "your income and/or net worth" should be "your income, your net worth, or both").
+
 **annual**
 : Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
 
@@ -488,7 +491,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Montgomery GI Bill Selected Reserve (MGIB-SR)**
 : Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
 
-**multifactor authentication**
+**multifactor authentication (MFA)**
 : Use this term instead of "2-factor authentication." Multifactor is 1 word. No hyphen. 
 
 **My HealtheVet**
@@ -566,8 +569,11 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **posttraumatic stress disorder**
 : No hyphen, per the National Center for PTSD. Go to entry for "PTSD."
 
+**power of attorney (POA)**
+: "POA" is all capitalized. Contact the subject matter experts or legal before using this term to make sure we're using it correctly.
+
 **Premium**
-: Capitalize when used in the context of account level (for example: DS Logon Premium account)
+: Capitalize when used in the context of account level (for example: DS Logon Premium account).
 
 **pre-discharge**
 : Use a hyphen.
