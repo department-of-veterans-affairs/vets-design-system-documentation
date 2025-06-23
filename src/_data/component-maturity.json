@@ -88,7 +88,7 @@
     "maturityCategory": "caution",
     "maturityLevel": "available"
   },
-  "va-input-telephone": {
+  "va-telephone-input": {
     "maturityCategory": "caution",
     "maturityLevel": "candidate"
   },
