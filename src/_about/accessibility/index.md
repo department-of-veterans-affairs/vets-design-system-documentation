@@ -7,6 +7,7 @@ sub-pages:
   - sub-page: Accessibility testing for design system components
   - sub-page: Accessibility annotations
   - sub-page: Focus management
+  - sub-page: When a screen reader needs to announce content
 ---
 
 {% include _site-in-this-section.html %}
