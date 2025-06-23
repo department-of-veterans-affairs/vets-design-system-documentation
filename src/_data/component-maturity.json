@@ -88,10 +88,6 @@
     "maturityCategory": "caution",
     "maturityLevel": "available"
   },
-  "va-telephone-input": {
-    "maturityCategory": "caution",
-    "maturityLevel": "candidate"
-  },
   "va-language-toggle": {
     "maturityCategory": "caution",
     "maturityLevel": "available"
@@ -207,6 +203,10 @@
   "va-telephone": {
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
+  },
+  "va-telephone-input": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
   },
   "va-text-input": {
     "maturityCategory": "use",
