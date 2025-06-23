@@ -53,6 +53,12 @@ By default, the telephone input component has these validation rules:
 
 {% include component-docs.html component_name=page.web-component %}
 
+### Event payload
+Whenever the component is modified it emits a `vaContact` event that includes the following properties:
+* `contact`: the national phone number the user entered, e.g. `2345678910`
+* `countryCode`: the two letter ISO country code for the country the user selected, e.g. `US`
+* `callingCode`: the prefix for the country the user selected, e.g. `1`
+
 
 ## Content considerations
 Content for both variations can be found in [Ask users for... Phone numbers pattern]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers).
