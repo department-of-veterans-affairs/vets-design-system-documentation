@@ -1,7 +1,7 @@
 # Veteran Affairs Design System
-The Veteran Affairs Design System (VADS) exists to provide design guidelines and code, enabling teams to rapidly create trustworthy, accessible, and consistent digital services on the VA.gov platform. 
+The Veteran Affairs Design System (VADS) exists to provide design guidelines and code, enabling teams to rapidly create trustworthy, accessible, and consistent digital services on the VA.gov platform.
 
-There are currently over 200 active products on VA.gov built by more than 30 product teams. The VADS empowers these teams to move quickly while maintaining predictable and familiar brand identity as they deliver meaningful value to veterans. 
+There are currently over 200 active products on VA.gov built by more than 30 product teams. The VADS empowers these teams to move quickly while maintaining predictable and familiar brand identity as they deliver meaningful value to veterans.
 
 ## Table of Contents
 - [OKR alignment](#aligned-to-2025-okrs)
@@ -25,22 +25,22 @@ The VADS actively contributes toward the following 2025 OCTO OKRs:
 
 ## List of Products
 Our team actively maintains the following products:
-- [design.va.gov](design.va.gov) | **OKRs 3.3, 4.1**: design.va.gov is the flagship site for all information surrounding the VADS. From there, developers, designers, content writers, and anyone else interested in learning more about, or using, the design system will find thorough documentation and guidance. 
-- [Web-Components](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components) | **OKRs 1.1, 1.2, 2.4**: The VADS actively maintains a library of web components that application teams can use to build veteran facing products. Web components provide a familiar and intuitive way to rapidly create UIs that maintain consistency and adhere to VADS standards across products. By abstracting away the need for developers and designers to spend time recreating similar patterns over and over again, we increase the ability for teams to provide value to veterans in a shorter span of time. 
-- [CSS-Library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) | **OKRs 1.1, 2.4**: The VADS actively maintains a library of CSS that bootstraps the global UI of VA.gov and removes the need for individual application teams to invest time in maintaining their own stylesheets, thereby reducing technical debt and enabling them to iterate on valuable features at a faster pace. 
+- [design.va.gov](design.va.gov) | **OKRs 3.3, 4.1**: design.va.gov is the flagship site for all information surrounding the VADS. From there, developers, designers, content writers, and anyone else interested in learning more about, or using, the design system will find thorough documentation and guidance.
+- [Web-Components](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/web-components) | **OKRs 1.1, 1.2, 2.4**: The VADS actively maintains a library of web components that application teams can use to build veteran facing products. Web components provide a familiar and intuitive way to rapidly create UIs that maintain consistency and adhere to VADS standards across products. By abstracting away the need for developers and designers to spend time recreating similar patterns over and over again, we increase the ability for teams to provide value to veterans in a shorter span of time.
+- [CSS-Library](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library) | **OKRs 1.1, 2.4**: The VADS actively maintains a library of CSS that bootstraps the global UI of VA.gov and removes the need for individual application teams to invest time in maintaining their own stylesheets, thereby reducing technical debt and enabling them to iterate on valuable features at a faster pace.
 - [Forms-Library](https://github.com/department-of-veterans-affairs/vets-website/tree/main/src/platform/forms-system) | **OKRs 1.1, 1.2, 2.4:** The forms library allows teams to rapidly build applications that digitize the multitude of Veteran Affairs paper forms. The use of this library leads to an increase in submissions for benefits and provides veterans with a unified and coherent experience across different products available on VA.gov. Additionally, the ability of the forms library to prefill existing veteran information leads to a direct reduction in respondent burden.
 - [Figma Libraries](https://design.va.gov/about/designers/design-libraries) | **OKRs 3.3**: The Figma Libraries for components, pattern, and templates allow designers to quickly create high fidelity mock-ups of an application. This allows teams to rapidly articulate what their application will do and how it will behave.
 
 
 ## Our work at a Glance
-- [Web-Components and CSS-Library release notes](https://github.com/department-of-veterans-affairs/component-library/releases) 
+- [Web-Components and CSS-Library release notes](https://github.com/department-of-veterans-affairs/component-library/releases)
 - [Design System Guidance Changelog](https://design.va.gov/about/whats-new)
 - [Roadmap](https://github.com/orgs/department-of-veterans-affairs/projects/768/views/20)
 - [Prioritized experimental requests](https://github.com/orgs/department-of-veterans-affairs/projects/946/views/5)
 - [Sprint planning board](https://github.com/orgs/department-of-veterans-affairs/projects/768/views/31)
 
 ## DSVA Slack Channel
-Please reach out to us at our DSVA Slack Channel: #platform-design-system 
+Please reach out to us at our DSVA Slack Channel: #platform-design-system
 
 ## Key Stakeholders
 - Matthew Dingee, VA Product Owner, VA, matthew.dingee@va.gov
@@ -73,7 +73,7 @@ Tested using `node` v18.19.0 and `yarn` v1.22.19.
 
 3. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
 
-   **NOTE:** This repo works with Ruby version 3.0.2.
+   **NOTE:** This repo works with Ruby version 3.4.4.
 
 4. **Install Ruby gems**
 
@@ -128,7 +128,7 @@ See the Component Library [readme](https://github.com/department-of-veterans-aff
 
 ## Deployments
 
-Merges into `main` will automatically deploy to production `design.va.gov` after CI checks have completed. 
+Merges into `main` will automatically deploy to production `design.va.gov` after CI checks have completed.
 
 ### Previewing Pull Requests
 
@@ -193,7 +193,7 @@ Within this project is the ability to automate the display of the latest release
 2. Note the latest release tag. At the time of this writing, it matches this format: `v0.0.###`.
 3. Click the **Draft a new release** button to start a new release
 4. Click the **Choose a tag** button to display the dropdown of already created tags
-5. In the **Find or create a new tag** text input, enter an incremented version number from last release. 
+5. In the **Find or create a new tag** text input, enter an incremented version number from last release.
 As you start typing the format `v0.0...`, the dropdown will show you the latest tags matching that format. Increment the last number by one. For example, if the latest release (noted from Step #2) is `v0.0.436`, enter `v0.0.437` as the tag name.
 6. Once the new label is entered, the dropdown will state:
     > Create new tag: v0.0.### on publish
@@ -207,7 +207,7 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 ### How Jekyll Displays the Latest Releases
 
 > [!NOTE]
-> These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately. See instructions for [releasing component-library](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#releasing) or **How to Create a New Release for design.va.gov** above.   
+> These scripts rely on releases to be created in the [component-library repo](https://github.com/department-of-veterans-affairs/component-library) and [design.va.gov repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation). Before running the scripts, be sure that a release is made and tagged appropriately. See instructions for [releasing component-library](https://github.com/department-of-veterans-affairs/component-library?tab=readme-ov-file#releasing) or **How to Create a New Release for design.va.gov** above.
 
 1.  **JSON Data Retrieval:**
     * When Jekyll builds the site, it checks for JSON files (defined in `_config.yml`) in the `json_data_cache/` folder.
@@ -225,7 +225,7 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 4.  **String Manipulation:**
     * The `vads.rb` custom filter applies regular expression transformations to the release notes (`json`), improving readability.
 5.  **Figma Data:**
-    * The Figma changelog frame is simply embedded into the page with an iframe direct from the Figma Component Library. Updates are in real time. 
+    * The Figma changelog frame is simply embedded into the page with an iframe direct from the Figma Component Library. Updates are in real time.
 
 ### How to Update the [What's New](https://design.va.gov/about/whats-new) Page
 
@@ -233,10 +233,10 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 > Be sure your local environment is not running before getting the latest updates.
 
 1. Run `yarn run update-releases`. This script deletes the `json_data_cache/` folder and then fetches the latest release data from GitHub, ensuring you have the most current information. It will then continue to build the site normally.
-2. If release data is fetched, you should see this captured in the logs as the site builds: 
+2. If release data is fetched, you should see this captured in the logs as the site builds:
    ```
    ...
-   Generating... 
+   Generating...
    * Caching https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases in json_data_cache/site_releases.json
    * Caching https://api.github.com/repos/department-of-veterans-affairs/component-library/releases in json_data_cache/component_library_releases.json
       Jekyll Feed: Generating feed for posts
