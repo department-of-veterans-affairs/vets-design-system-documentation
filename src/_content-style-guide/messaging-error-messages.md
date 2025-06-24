@@ -1,19 +1,10 @@
 ---
-layout: default
+layout: content-style-guide
 title: Messaging - Error messages
 draft: true
-anchors:
-  - anchor: Structure
-  - anchor: Content within the description
-  - anchor: Style and tone
-  - anchor: Additional guidance
 ---
 
-# Error message style guide 
-
 *Note: The guidelines below don't apply to inline error messages in form fields (for example, "Please enter a valid Social Security number."). Inline form field error messages will be handled in a separate error guide.* 
-
-{% include _site-on-this-page.html %}
 
 ## Structure
 
