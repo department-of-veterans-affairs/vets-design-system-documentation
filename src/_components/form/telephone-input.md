@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Telephone Input
 intro-text: "Use the telephone input component to help users enter a telephone number."
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=31366-83
-web-component: va-input-telephone
+web-component: va-telephone-input
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -17,10 +17,10 @@ anchors:
 
 ## Examples
 ### Default
-{% include storybook-preview.html story="components-va-input-telephone--default" link_text="va-input-telephone" %}
+{% include storybook-preview.html story="components-va-telephone-input--default" link_text="va-telephone-input" %}
 
 ### Mobile
-{% include storybook-preview.html  width="320px" height="230px" story="components-va-input-telephone--default" link_text="va-input-telephone" %}
+{% include storybook-preview.html  width="320px" height="230px" story="components-va-telephone-input--default" link_text="va-telephone-input" %}
 
 ## Usage
 
@@ -52,6 +52,12 @@ By default, the telephone input component has these validation rules:
 - The libphonenumber library validates phone numbers.
 
 {% include component-docs.html component_name=page.web-component %}
+
+### Event payload
+Whenever the component is modified it emits a `vaContact` event that includes the following properties:
+* `contact`: the national phone number the user entered, e.g. `2345678910`
+* `countryCode`: the two letter ISO country code for the country the user selected, e.g. `US`
+* `callingCode`: the prefix for the country the user selected, e.g. `1`
 
 
 ## Content considerations
