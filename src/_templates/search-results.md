@@ -183,7 +183,7 @@ The text of the link of the matching page. This should not be a link (the header
 
 #### Accessibility considerations
 
-{% include content/search-filter-a11y.md %}
+{% include a11y/search-filters.md %}
 
 #### Additional guidance
 

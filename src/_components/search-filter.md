@@ -52,7 +52,7 @@ Faceted search is a way to filter search results by using attributes, or facets,
 
 ## Accessibility considerations
 
-{% include content/search-filter-a11y.md %}
+{% include a11y/search-filters.md %}
 
 {% include component-docs.html component_name=page.web-component %}
 
