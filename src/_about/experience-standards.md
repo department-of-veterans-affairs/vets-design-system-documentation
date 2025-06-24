@@ -1,11 +1,8 @@
 ---
-layout: category
+layout: documentation
 title: Experience Standards
 permalink: /about/experience-standards/
 intro-text: The Experience Standards are the criteria that the Governance team will use to assess VA.gov and VA Mobile App products for design, IA, content, and accessibility as VFS teams bring their work through the Collaboration Cycle.
-anchors:
-  - anchor: Using the Standards
-  - anchor: List of Experience Standards
 ---
 
 Each experience standard is framed around the end-user experience (Veterans, family, caregivers, or members of the public). Issues flagged under these experience standards will result in a degraded experience for at least some users.

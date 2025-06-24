@@ -1,22 +1,9 @@
 ---
-layout: default
+layout: documentation
 title: Typography
 tags: Fonts, Lists, Links, Headings, Paragraphs
-anchors:
-  - anchor: Fonts
-  - anchor: Headings
-  - anchor: Paragraphs
-  - anchor: Typography tokens
-  - anchor: Related
+intro-text: Typographical selections intended to meet the highest standards of usability and accessibility, while setting a consistent look and feel in order to convey credibility.
 ---
-
-# Typography
-
-<p class="va-introtext">
-  Typographical selections intended to meet the highest standards of usability and accessibility, while setting a consistent look and feel in order to convey credibility.
-</p>
-
-{% include _site-on-this-page.html %}
 
 ## Fonts
 
