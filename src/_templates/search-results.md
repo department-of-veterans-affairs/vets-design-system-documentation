@@ -181,7 +181,7 @@ The text of the link of the matching page. This should not be a link (the header
   type="secondary"
 ></va-link-action>
 
-#### Accessibility considerations
+## Accessibility considerations
 
 {% include a11y/search-filters.md %}
 
