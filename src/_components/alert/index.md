@@ -87,7 +87,8 @@ Used to indicate success.
 {% include storybook-preview.html story="uswds-va-alert--dismissable" link_text="va-alert dismissible" %}
 
 * Any alert variation can be dismissible, including slim alerts. This example shows an informational alert that can be dismissed.
-* Allow a user to dismiss a notification wherever appropriate.
+* Allow a user to dismiss an alert wherever appropriate.
+{% include a11y/dismissable-alerts.md %}
 
 ### Mobile
 
