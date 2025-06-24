@@ -7,9 +7,8 @@ sub-pages:
   - sub-page: Accessibility testing for design system components
   - sub-page: Accessibility annotations
   - sub-page: Focus management
+  - sub-page: When a screen reader needs to announce content
 ---
-
-{% include _site-in-this-section.html %}
 
 VA is here to serve Veterans of the United States military, and [approximately 40% have an identified disability](https://www.statista.com/statistics/250316/us-veterans-by-disability-status/).
 

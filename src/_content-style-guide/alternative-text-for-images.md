@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: content-style-guide
 title: Alternative text for images
 ---
-
-# Alternative text for images
 
 ## What alternative text is
 

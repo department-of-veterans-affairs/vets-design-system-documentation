@@ -35,19 +35,20 @@
         </main>
         {% elsif page.sidebar %}
           {% include _site-content-nav.html %}
-          <div class="site-content__content">
+          <article class="site-content__content">
             <main id="main-content" class="site-l-content-wrapper--sidebar desktop-lg:vads-u-margin-top--neg2">
                 <aside class="main-content__sidebar">
-                    {% include _site-on-this-page.html %}
+                  <va-on-this-page></va-on-this-page>
                 </aside>
                 <div class="main-content__content">
                   {{ content }}
                 </div>
             </main>
-          </div>
+            <va-back-to-top></va-back-to-top>
+          </article>
         {% else %}
           {% include _site-content-nav.html %}
-        <div class="site-content__content">
+        <article class="site-content__content">
           <main id="main-content" class="site-l-content-wrapper--styleguide desktop-lg:vads-u-margin-top--neg2">
             {% unless page.index %}
               {% if page.draft %}
@@ -61,7 +62,8 @@
           </main>
           {% include edit-on-github.html %}
           {% include timestamps.html %}
-        </div>
+          <va-back-to-top></va-back-to-top>
+        </article>
         {% endif %}
       </div>
     </div>
