@@ -27,8 +27,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-banner--dismissible" height="172px" link_text="va-banner" %}
 
-{% include a11y/dismissable-alerts.md %}
-
+{% include a11y/dismissable-alerts.md component="banner" %}
 
 ## Usage
 
