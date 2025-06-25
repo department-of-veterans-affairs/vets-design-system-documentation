@@ -88,7 +88,7 @@ Used to indicate success.
 
 * Any alert variation can be dismissible, including slim alerts. This example shows an informational alert that can be dismissed.
 * Allow a user to dismiss an alert wherever appropriate.
-{% include a11y/dismissable-alerts.md %}
+{% include a11y/dismissable-alerts.md component="alert" %}
 
 ### Mobile
 
