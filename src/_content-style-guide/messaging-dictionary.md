@@ -1,17 +1,8 @@
 ---
-layout: default
+layout: content-style-guide
 title: Messaging dictionary
 draft: true
-anchors:
-  - anchor: System messaging
-  - anchor: Engagement messaging
-  - anchor: Access messaging
-  - anchor: Feedback messaging
 ---
-
-# Messaging Dictionary
-
-{% include _site-on-this-page.html %}
 
 ## System messaging
 

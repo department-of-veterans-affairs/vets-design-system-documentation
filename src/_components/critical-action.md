@@ -18,7 +18,6 @@ anchors:
   - anchor: Component checklist
 ---
 
-
 ## Examples
 
 {% include storybook-preview.html story="components-va-critical-action--default" link_text="va-critical-action default" width="66%" %}

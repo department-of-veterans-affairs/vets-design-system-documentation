@@ -1,19 +1,18 @@
 ---
-layout: default
+layout: documentation
 title: Logos
+intro-text: Using custom logos for VA departments, offices, teams, sub-groups, special programs, initiatives, or events is not supported on VA.gov. 
 tags: logos, logo, brand, branding
 ---
 
-# Logos
-
-Using custom logos for VA departments, offices, teams, sub-groups, special programs, initiatives, or events is not supported on VA.gov. This practice aligns with the requirements in the [VA Graphic Standards](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2) and the [Web Governance site](https://www.va.gov/web/standards/templates.cfm). 
+This practice aligns with the requirements in the [VA Graphic Standards](https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2) and the [Web Governance site](https://www.va.gov/web/standards/templates.cfm).
 
 In user research, Veterans told us that VA’s multiple brands are confusing and complicated to understand. By being consistent with our visual branding, we can reduce Veteran confusion from “logo clutter.”
 
 Custom logos for the following use cases are not supported on VA.gov:
 
 * Pages that list VA programs, such as a list of benefits
-* Benefit detail pages 
+* Benefit detail pages
 * Within a software application, such as an application form or tool
 * Search result listings for VA departments, offices, teams, sub-groups, special programs, initiatives, or events
 
@@ -29,18 +28,18 @@ Use the name of the department, office, team, program, initiative, or event.  Do
 
 ## About VA branding guidelines
 
-VA provides specific examples of how to execute a logo or word mark within VA brand standards. This helps us appear as a “branded house.” See pages 9 and 46 – 49 of the  [VA Graphic Standards](https://www.va.gov/opa/publications/graphicstandards/va_graphicstandardsguide_508_0113.pdf) . 
+VA provides specific examples of how to execute a logo or word mark within VA brand standards. This helps us appear as a “branded house.” See pages 9 and 46 – 49 of the  [VA Graphic Standards](https://www.va.gov/opa/publications/graphicstandards/va_graphicstandardsguide_508_0113.pdf).
 
-**Like this**
+### Like this
 
 <a href="https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2">
-    <img width="100%" src="/images/VA-brand-guidance@4x.png" />
+  <img width="100%" src="/images/VA-brand-guidance@4x.png" />
 </a>
 
 This is based on page 9 of the VA Graphic Standards, seen below:
 
 <a href="https://www.va.gov/vapubs/viewPublication.asp?Pub_ID=683&FType=2">
-    <img width="100%" src="/images/VA_508_GraphicStandardsGuide_013113-9.png" />
+  <img width="100%" src="/images/VA_508_GraphicStandardsGuide_013113-9.png" />
 </a>
 
 Logos can be accessed in our [{{ site.design_library_name }}]({{ site.baseurl }}/about/designers/design-libraries).
@@ -51,8 +50,8 @@ They don’t care about our many sub-brands. It confuses them and creates feelin
 
 ### Branded house vs. a house of brands
 
-* **Branded house.** An example of a “branded house” is the company Apple. Every Apple device and service appears as part of a single, unified visual ecosystem. 
-* **House of brands.** An example of a “house of brands” is the company Johnson & Johnson. This company includes many sub-brands that are more recognizable than the company itself. Think of Tylenol, Neutrogena, Listerine, etc. 
+* **Branded house.** An example of a “branded house” is the company Apple. Every Apple device and service appears as part of a single, unified visual ecosystem.
+* **House of brands.** An example of a “house of brands” is the company Johnson & Johnson. This company includes many sub-brands that are more recognizable than the company itself. Think of Tylenol, Neutrogena, Listerine, etc.
 
 ## About VA’s Digital Modernization and Web Brand Consolidation
 
