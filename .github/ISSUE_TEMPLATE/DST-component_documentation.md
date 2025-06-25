@@ -1,8 +1,9 @@
 ---
-name: "DST - Component documentation"
+name: "Step 6 DSF - Component documentation"
 about: INTERNAL DST USE ONLY
 title: "[component name] - Documentation"
 labels: platform-design-system-team
+assignees: ''
 
 ---
 
@@ -28,6 +29,8 @@ Be sure to use the appropriate [maturity scale](https://design.va.gov/about/matu
 - [ ] Coordinate with accessibility specialist to create or update accessibility guidance
 - [ ] Request documentation draft review
 - [ ] Once documentation is approved, publish to design.va.gov
+- [ ] Have designer publish Figma
 
 ## Acceptance Criteria
 - [ ] Component documentation is published on design.va.gov
+- [ ] Component published on Figma

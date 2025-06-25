@@ -3,13 +3,13 @@ layout: component
 title: Icon
 intro-text: "Icons help communicate meaning, actions, status, or feedback. This component provides an easy way to access the foundational iconography of the Design System."
 figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=293%3A6211&mode=design&t=TEFuX0eQQAyBV7Xh-1
-status: use-with-caution-available
 web-component: va-icon
 anchors:
   - anchor: Preview
   - anchor: Usage
   - anchor: Accessibility considerations
   - anchor: Requesting a new icon
+  - anchor: Component checklist
 ---
 
 <style>
@@ -314,3 +314,5 @@ Exceptions to this are a close button on a modal or an alert. However, it is adv
   // Initial render
   renderIconTable(icons);
 </script>
+
+{% include _component-checklist.html component_name=page.web-component %}

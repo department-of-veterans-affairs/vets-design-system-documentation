@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: category
 permalink: /foundation/utilities/
 title: Utilities
+intro-text: Utilities are helpful, usually single-property classes that can provide more flexibility into a design system at a high specificity. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
 sub-pages:
   - sub-page: Background color
   - sub-page: Border
@@ -23,13 +24,6 @@ sub-pages:
   - sub-page: Visibility
 ---
 
-# Utilities
-
-<div class="va-introtext">
-  Utilities are helpful, usually single-property classes that can provide more flexibility into a design system at a high specificity. Designers and developers can use them to test new components or build prototypes without committing unnecessary one-time-use selectors into production.
-</div>
-
-{% include _site-in-this-section.html %}
 
 ## Using in components
 

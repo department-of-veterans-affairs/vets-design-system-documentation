@@ -1,19 +1,9 @@
 ---
-layout: default
+layout: documentation
 title: Breakpoints
+intro-text: VA.gov uses media queries to support responsive design. It is constructed using a mobile-first approach, meaning that styles are written by default for mobile devices and scaled up for larger viewports.
 tags: media queries, media, responsive
-anchors:
-  - anchor: Names and values
-  - anchor: Sass mixins
 ---
-
-# Breakpoints
-
-<p class="va-introtext">
-  VA.gov uses media queries to support responsive design. It is constructed using a mobile-first approach, meaning that styles are written by default for mobile devices and scaled up for larger viewports.
-</p>
-
-{% include _site-on-this-page.html %}
 
 ## Names and values
 

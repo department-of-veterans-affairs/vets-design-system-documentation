@@ -22,11 +22,13 @@ sub-pages:
   - sub-page: Radio button
   - sub-page: Select
   - sub-page: Statement of truth
+  - sub-page: Telephone Input
   - sub-page: Text input
   - sub-page: Textarea
 anchors:
   - anchor: Usage
   - anchor: Accessibility considerations for all form elements
+  - anchor: Fieldsets, legends, and labels 
   - anchor: Error handling
   - anchor: How to group form controls
   - anchor: Hint text
@@ -54,12 +56,7 @@ anchors:
 
 {% include a11y/do-not-disable-buttons.md %}
 
-## How to group form controls
-
-* Group each set of thematically related controls in a `fieldset` element. Use the `legend` element as a heading within each one. The `fieldset` and `legend` elements make it easier for screen reader users to navigate the form.
-* Use a single legend for fieldset (this is required). One example of a common use of `fieldset` and `legend` is a question with radio button options for answers. The question text and radio buttons are wrapped in a fieldset, with the question itself being inside the `legend` tag.
-* Embed multiple fieldsets and legends for more complex forms if the form is not broken in separate chapters.
-* Keep your form inputs and labels arranged vertically along the same Y axis. This approach is ideal, from an accessibility standpoint, because of limited vision that makes it hard to scan from right to left.
+{% include a11y/fieldsets-legends-labels.md %}
 
 ## Error handling
 

@@ -4,19 +4,18 @@ title: Table
 intro-text: "The table component organizes data into columns and rows."
 research-title: Table
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
-status: use-with-caution-available
 uswds-v3: default
 web-component: va-table
 anchors:
-  - anchor: Examples - v3
-  - anchor: Examples - v1
+  - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Component checklist
 ---
 
-## Examples - v3
+## Examples
 
 ### Borderless table (default)
 
@@ -59,10 +58,6 @@ anchors:
 * **Limit characters in headings** Column headings shouldn’t exceed 60 characters. Follow content guidelines on [how to abbreviate dates and time]({{ site.baseurl }}/content-style-guide/dates-and-numbers), as well as, other [abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms)
 * **Tables should have a maximum of 5 columns** Very large tables with lots of columns are difficult to use. This problem only gets exacerbated on smaller screens. Show only what users really need.  
 
-#### Choosing between variations
-
-The v3 default table is a standard table and does not offer the responsive stacked variation. Also, the v3 table does not yet offer a sortable option. Thus if the data in your table requires the responsive stacked table at mobile viewport widths, or if your table currently is sortable, you may stick with the v1 version of this component until we reach feature parity.
-
 * **Use the responsive list view table when you need to present a list of information in an itemized way.** A responsive stacked table collapses at narrow widths for better readability on small screens.
 * **Use the standard table when users have to compare rows and columns** as the table layout remains the same on smaller screens.
   * For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer. All column heading labels should total no more than 60 characters.
@@ -85,3 +80,5 @@ The v3 default table is a standard table and does not offer the responsive stack
 
 - Tables should be used to display tabular data, which is structured data made up of rows and columns. A table allows the information to be easily interpreted by visually associating row and column headers.
 - _Do not_ use tables for layout purposes. Tables should only be used for data that has inherent relationships, not for design purposes.
+
+{% include _component-checklist.html component_name=page.web-component %}

@@ -1,9 +1,9 @@
 ---
 layout: component
 title: Tabs
-status: use-with-caution-available
 intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between." 
 github-title: va-tabs
+status: use-with-caution-available
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -30,7 +30,7 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 ### When to use tabs
 
 * **Secondary navigation within an application.** Tabs allow users to navigate to sections of an application.
-* **Related content within an applicaiton.** To group related content that the user doesn't need to read at the same time.
+* **Related content within an application.** To group related content that the user doesn't need to read at the same time.
 
 ### When to consider something else
 

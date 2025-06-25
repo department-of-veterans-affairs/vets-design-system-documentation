@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: content-style-guide
 title: Bold & italic text
 ---
-
-# Bold & italic text
 
 ## Bold text
 
@@ -26,6 +24,14 @@ These are some examples of when we use bold in VA style.
 - When there’s a “Note:” or “Example:” [Review examples on the VA pension rates for Veterans page](https://www.va.gov/pension/veterans-pension-rates/)
 - The design element or text link we want the Veteran to select when we’re explaining how to do a task. For example, "In the **File** menu, select **Save**." [Review another example on the Verifying your identity page](https://www.va.gov/resources/verifying-your-identity-on-vagov/)
 - If you’re presenting a series of label and value pairs, such as the contact information (address, phone number, etc.) for a location. The label is always bold, not the value, and the label and value are separated by a line break as opposed to a colon. [Review examples on the H. John Heinz III Department of VA Medical Center page](https://www.va.gov/pittsburgh-health-care/locations/h-john-heinz-iii-department-of-veterans-affairs-medical-center/#caregiver-support)
+
+### Punctuation with bold text
+
+**For punctuation following bold text:**
+
+- If the bold text is an introduction, the colon or period following it should also be bold (ex. the colon after “**Note:**” or the period after a list item introduction, “**Be concise.** Use as few words as possible…”).
+- If the bold text is a full sentence, bold any punctuation within or at the end of the sentence.
+- If the bold text is only part of a sentence, don’t bold punctuation that isn’t part of the bolded phrase (ex. “Select **Continue**, then answer the remaining questions).
 
 ## Italic text
 

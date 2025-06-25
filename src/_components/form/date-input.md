@@ -28,7 +28,7 @@ web-component: va-date
 {% include storybook-preview.html story="components-va-date--with-hint-text" link_text="va-date with hint text" %}
 
 ### With a custom required message
-{% include storybook-preview.html story="components-va-date--custom-required-message" link_text="va-date with a custom required message" %}
+{% include storybook-preview.html story="components-va-date--custom-required-message" link_text="va-date with a custom required message" height="275px" auto_resize=false  %}
 
 ### Default with error
 {% include storybook-preview.html story="components-va-date--error" link_text="va-date with error" %}

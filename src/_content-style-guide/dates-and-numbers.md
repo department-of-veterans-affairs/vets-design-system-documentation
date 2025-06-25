@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: content-style-guide
 title: Dates, times, phone numbers, and addresses
-anchors:
-  - anchor: Dates and years
-  - anchor: Times and time zones
-  - anchor: Phone numbers
-  - anchor: Fax numbers
-  - anchor: Addresses
+intro-text: Dates, times, phone numbers, and addresses often appear together, so we've put guidelines for these in one place.
 ---
-
-# Dates, times, phone numbers, and addresses
-
-Dates, times, phone numbers, and addresses often appear together, so we've put guidelines for these in one place.
-
-{% include _site-on-this-page.html %}
 
 ## Dates and years
 
-Spell out dates in body copy, using the full construction: March 31, 1989. Or January 2, 1980. In general, spell out days of the week and months also in body copy.
+- Spell out dates in body copy, using the full construction: March 31, 1989. Or January 2, 1980.
+- Write out date ranges using sentence construction in body copy: This will be available from  December 1, 2025,  to December 31, 2025.
+
+**Note:** Be intentional when picking “from/to,” “from/through,” or “between/and” for date ranges. Each option can mean different things, so pick the option that best matches your needs.
+
+- Add a comma after the year when using the full construction, unless the date is the end of the sentence. If the date is at the end of the sentence, use the punctuation you’d normally use (period, question mark, colon, no punctuation).
+- In general, also spell out days of the week and months in body copy.
 
 ### Exceptions
 
@@ -26,7 +21,7 @@ Spell out dates in body copy, using the full construction: March 31, 1989. Or Ja
   - Mon., Tue., Wed., Thu., Fri., Sat., Sun.
   - Jan., Feb., Aug., Sept., Oct., Nov., Dec. (Don't abbreviate March, April, May, June, July.)
   - In application form fields, we often use the construction: mm/dd/yyyy
-    <br>
+- Where space is limited, indicate date ranges with the - hyphen without spaces on either side. Don’t combine the hyphen with from/between sentence construction.  
 
 ### Years
 
@@ -34,8 +29,6 @@ When referencing decades or periods of years, don't use an apostrophe with the "
 
 - **Like this:** The early 2000s
 - **Not this:** The early 2000's
-
-<br>
 
 ## Times and time zones
 
@@ -80,8 +73,6 @@ from 8:00 a.m. to noon ET
 </div>
 </div>
 
-<br>
-
 ## Phone numbers
 
 {% include content/phone-numbers.md %}
@@ -93,5 +84,5 @@ Don’t hyperlink or add aria labels to fax numbers. Make it clear in the surrou
 **Like this:** If you’re in the U.S., fax your application to 1-844-531-7818.
 
 ## Addresses
- 
+
 {% include content/addresses.md %}

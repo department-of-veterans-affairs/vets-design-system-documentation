@@ -5,7 +5,6 @@ title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
 research-title: Links
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
-status: use-deployed
 web-component: va-link
 sub-pages:
   - sub-page: Action
@@ -155,7 +154,8 @@ If for some reason you do not use a link web-component links must meet the follo
 
 ### Web
 
-* **Open links in the same window, with exceptions.** Links on VA.gov should open in a new tab only if clicking the link will cause the user to lose progress or data. This should be avoided when possible. In all other cases, links should open in the same window. For more details, see [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites) in the content style guide.
+* **Open links in the same window, with exceptions.** Links on VA.gov should open in a new tab only if clicking the link will cause the user to lose progress or data. This should be avoided when possible. In all other cases, links should open in the same window.<br>
+[Review guidance on link text in the content style guide for more information]({{ site.baseurl }}/content-style-guide/links)
 * **Use appropriate encodings for email and phone links.** Use mailto: for email links and tel: for phone links.
 
 #### Choosing between variations

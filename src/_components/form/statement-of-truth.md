@@ -24,19 +24,19 @@ anchors:
 
 ### Default
 
-{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--default" link_text=page.web-component %}
+{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--default" link_text=page.web-component height="555px" auto_resize=false %}
 
 ### With Input Error
 
-{% include storybook-preview.html height="600px" story="uswds-va-statement-of-truth--with-input-error" link_text=page.web-component %}
+{% include storybook-preview.html height="600px" story="uswds-va-statement-of-truth--with-input-error" link_text=page.web-component height="605px" auto_resize=false %}
 
 ### With Custom heading
 
-{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-custom-heading" link_text=page.web-component %}
+{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-custom-heading" link_text=page.web-component height="555px" auto_resize=false %}
 
 ### With Prefilling
 
-{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-prefilling" link_text=page.web-component %}
+{% include storybook-preview.html height="500px" story="uswds-va-statement-of-truth--with-prefilling" link_text=page.web-component height="555px" auto_resize=false %}
 
 ## Usage
 

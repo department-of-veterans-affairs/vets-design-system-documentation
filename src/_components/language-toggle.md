@@ -5,7 +5,6 @@ intro-text: "The language toggle is our way of providing translated versions of 
 github-title: va-language-toggle
 research-title: va-language-toggle
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=10077-912&t=hljp6A4V60A0rDms-1
-status: use-with-caution-available
 web-component: va-language-toggle
 anchors:
   - anchor: Examples
@@ -21,7 +20,7 @@ anchors:
 
 ### Default
 
-The language toggle allows users to click links to load the same page which has been translated to one of three languages.
+The language toggle provides a series of links that load the page in one of three languages.
 
 {% include storybook-preview.html story="components-va-language-toggle--default" link_text="Language toggle" %}
 
