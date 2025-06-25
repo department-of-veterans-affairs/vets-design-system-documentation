@@ -64,7 +64,6 @@ applyPolyfills().then(() => {
 ```
 1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
 1. Copy the icon sprite.svg file found in `@department-of-veterans-affairs/component-library/dist/img/sprite.svg` to you public asset directory. By default icons will use `/img/sprite.svg` as the path, if you need to use a different path you can set the following configuration (This must be done before icons are rendered on the page):
-
 ```js
 // Import the the init function from the web-components package
 import { initIconSpriteLocation } from '@department-of-veterans-affairs/web-components';
