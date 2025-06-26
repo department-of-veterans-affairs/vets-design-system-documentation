@@ -154,3 +154,15 @@ What’s the difference between a “condition” and a “disability?”
 </div>
 </div>
 </div>
+
+## Hint text and error message punctuation
+
+### Hint text
+
+- If hint text on a form is a full sentence or 2 or more sentences, add a period to the end of each sentence
+- If the hint text is a sentence fragment, don’t add a period
+
+### Error messages
+
+- Error messages for individual form fields don’t need a period
+- Error messages that use the Alert component should have a period at the end of each sentence
