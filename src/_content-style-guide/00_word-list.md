@@ -580,7 +580,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : No hyphen, per the National Center for PTSD. Go to entry for "PTSD."
 
 **power of attorney (POA)**
-: "POA" is all capitalized. Contact the subject matter experts or legal before using this term to make sure we're using it correctly.
+: "POA" is capitalized. Contact the subject matter experts or legal before using this term to make sure we're using it correctly.
 
 **Premium**
 : Capitalize when used in the context of account level (for example: DS Logon Premium account).
