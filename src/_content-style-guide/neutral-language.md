@@ -50,11 +50,11 @@ If your provider has filled out the form electronically, he or she must print it
 
 ## Language that doesn’t assume an experience or device
 
-### We avoid “view” and “hear” 
+### We avoid “view,” "see," “hear,” and "listen" 
 
-A person viewing a screen would “view" their medical records, lab results, claim status, or letter. A person using a screen reader or calling in to listen to an interactive voice response experience would “hear” their medical records, lab results, claim status, or letter. 
+A person viewing a screen would “view" their medical records, lab results, claim status, or letter. A person using a screen reader or calling in to listen to an interactive voice response experience would “hear” their medical records, lab results, claim status, or letter. Because we don’t know how a person is accessing the content, we should avoid any interaction-based language.
 
-So, we use language that focuses on the intent of the action rather than the sensory experience. This becomes especially important as we create flexible and reusable content that can work across different channels.
+Instead, we use language that focuses on the intent of the action rather than the sensory experience. This becomes especially important as we create flexible and reusable content that can work across different channels.
 
 Examples:
 
