@@ -21,6 +21,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ---
 
 ### A
+
 **accredited representative**
 : Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas.
 :	- Like this: Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
@@ -155,6 +156,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Like this: If you have a condition connected to your service, you may be eligible for compensation.   
 : - Like this: If your service-connected disability has gotten worse, find out how to file a claim to increase your disability rating.
 
+: For non-Veterans, like beneficiaries and dependents, we use “disability” (or “disabled” depending on the context) to describe an illness or injury that affects your mind or body. Default to people-first language in general content that describes individuals with a disability. For example, “Was this trust created for a Veteran’s child who was seriously disabled before age 18?”
+
+: [Learn more in the Health content section](https://design.va.gov/content-style-guide/health-content/)
+
 **conditions**
 : Define on first mention as "illnesses or injuries (also known as conditions)." For all other mentions, "condition" or "conditions" is OK.
 
@@ -224,8 +229,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "a lack of things such as sleep that people need for their physical and mental well-being." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 **disability rating**
-: Define as "a rating that measures how severe a disability is" or similar language.
-: - Like this: We may use a rating that measures how bad your disability is. This rating helps us decide your level of benefits.
+: This rating is for Veterans. Define as "a rating that measures how severe a disability is" or similar language.
+: - Like this: We may use a disability rating that measures how bad your disability is. This rating helps us decide your level of benefits.
 : - Like this: We assign you a disability rating based on the severity of your disability.
 
 **disease**
@@ -398,6 +403,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 ### I
 
+**illegal**
+: Avoid using the term “illegal.” Instead, our preferred term is “not allowed by law.” Don’t use “illegal” to describe a person.
+
 **illness**
 : Use "illness" to refer to diseases.
 
@@ -465,7 +473,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "problems moving your body" instead.
 
 ### M
-
 
 **manufacturing**
 : Use "making" instead.
@@ -557,6 +564,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Philippines**
 : Use “Philippines” (without "the") in a list. Use “the Philippines” in the context of a paragraph (like “If you served in the Philippines”).
 
+**please**
+: We’re moving away from using “please” in most cases. Avoid using “please” as a default and only if needed in a specific situation. This is a change that we’re working to address across our current components.
+
 **PO Box**
 : Don't use periods.
 
@@ -616,13 +626,15 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - After first instance in body copy: PTSD
 : - Exception for page titles: If the spelled-out term is too long in a page title (H1) or meta title tag, it’s OK to use PTSD by itself, and then use the full spelling with the acronym in the first instance of body copy.
 
-
 ### Q
 
 ### R
 
 **regional office**
 : Use instead of "regional benefit office." Go to entry for "VA regional office" for details.
+
+**required by law and not allowed by law**
+: These are our preferred terms to describe a legal requirement or something that is against the law.
 
 **Reserve**
 : Capitalize when used to refer to members of the military.  
@@ -644,7 +656,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **reviewer**
 : Lowercase. Person who reviews Supplemental Claims. (As opposed to a senior reviewer, who reviews Higher-Level Reviews.)
-
 
 ### S
 
@@ -740,7 +751,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **trauma**
 : Define on first mention in body copy as "an injury or deeply disturbing experience." Include definition in another sentence, as a parenthetical, or set off with commas.
 
-
 ### U
 
 **uniformed services**
@@ -752,6 +762,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **U.S.**
 : Use periods.
+
+**user**
+: We should avoid the term “user” or “users” and instead use “Veterans” or “people” (when referring to a more general audience). “Users” can have a negative connotation and focuses only on how people are using our products. This is a change that we’re working to address across our current content.
 
 ### V
 
@@ -865,7 +878,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Two words, not hyphenated as a noun; hyphenate when using as an adjective preceding a noun.
 : - Like this (modifying a noun): Find out if you can earn money while you go to school through our work-study program.
 : - Like this (as a noun): How much does work study pay? 
-
 
 ### X
 
