@@ -76,9 +76,9 @@ The following are places where Additional info can be used:
 
 ## Content considerations
 
-* **Use a statement, rather than a question.** Use a statement (e.g. "Learn more about...") rather than a question (e.g. "What is...?") as a pattern for the title (trigger text) of the component. The question format has confused Veterans in testing when there is an input field related to that question somewhere else in the form. 
-* **Use headings in expanded content.** When the component is expanded, the use of Headings (h4-h6), body text, links, ordered lists, and unordered lists are encouraged.
-* **Limit the length of expanded content.** Only include critical information inside this component. Content contained within additional info should be limited to 2 paragraphs or less. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of CAIA to edit content and explore alternatives.
+* **Use a statement, rather than a question.** Use a statement (e.g., "Learn more about...") rather than a question (e.g., "What is...?") as a pattern for the title (trigger text) of the component. The question format has confused Veterans in testing when there is an input field related to that question somewhere else in the form. Keep titles to one sentence only with no ending punctuation.
+* **Use headings, links, and lists in expanded content.** When the component is expanded, we encourage using headings (H4-H6), links, numbered (also called "ordered") lists, and bulleted (also called "unordered") lists in the body copy.
+* **Limit the length of expanded content.** Only include critical information inside this component. Content contained within additional info should be easy to scan and limited to fewer than 500 characters (with spaces) when possible. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of the Content and Information Architecture team to edit content and explore alternatives.
 
 ## Accessibility considerations
 
