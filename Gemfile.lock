@@ -65,6 +65,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.2)
+    rake (13.3.0)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
@@ -115,6 +116,7 @@ DEPENDENCIES
   jekyll-last-modified-at
   jekyll-redirect-from
   minima (~> 2.0)
+  rake
   sass-embedded (~> 1.63.0)
   tzinfo-data
   webrick
