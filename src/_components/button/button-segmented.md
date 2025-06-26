@@ -54,8 +54,8 @@ type="secondary"
 Use a Button - Segmented for filtering, sorting, or switching views of a single set of data. The options modify the content on the current page without navigating away. It functions like a set of radio buttons where selecting one option automatically deselects the previous one.
 
 * **Best for:** 2-4 mutually exclusive choices.
-* **Example:** Filtering a list of appointments by "Upcoming" and "Past".
-* **Example:** Switching a view from a "List" to a "Grid".
+* **Example:** Filtering a list of appointments by "Upcoming" and "Past."
+* **Example:** Switching a view from a "List" to a "Grid."
 
 #### When to consider something else
 
@@ -64,7 +64,7 @@ Use a Button - Segmented for filtering, sorting, or switching views of a single 
 * If it needs to be accompanied by any other controls or a title if used in the top navigation bar.
 
 Use [Tabs]({{ site.baseurl }}/components/tabs) for navigation between distinct, related pages or content sections. Each tab typically corresponds to a unique URL.
-* **Example:** Navigating between "Inbox", "Sent", and "Archived" folders.
+* **Example:** Navigating between "Inbox," "Sent," and "Archived" folders.
 
 ### Behavior
 
@@ -89,13 +89,13 @@ The component is often integrated into the top navigation bar (or just below it)
 
 #### Incorrect Use
 
-* **Claims:** Using a control to switch between "Status" and "Details". This groups dissimilar content and should be handled with a different component, like Tabs.
+* **Claims:** Using a control to switch between "Status" and "Details." This groups dissimilar content and should be handled with a different component, like Tabs.
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
-* **Keep labels concise.** Aim for single-word labels (e.g., "List", "Grid", "Upcoming", "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
+* **Keep labels concise.** Aim for single-word labels (e.g., "List," "Grid," "Upcoming," "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
 * **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
 * **Provide context.** Ensure the labels on the segments clearly differentiate the content that will be displayed below.
 
