@@ -44,8 +44,7 @@ anchors:
 ### Layout details
 
 ### How this pattern works
-
-* **If possible, tell users why you want their phone number.** An example message is: *Please enter your contact information so we can get in touch with you if we have questions about your application.* This message can be at the top of the page if asking for any other contact information.
+  
 * **Validate phone numbers.** Users must provide a valid domestic or international phone number. 
 
   Example of acceptable formats for U.S. phone numbers:
@@ -59,6 +58,22 @@ anchors:
 * **If a user chooses a home or mobile phone number as their method of contact, phone numbers are required fields.** If a user chooses email or mail as their preferred method then a phone number field won’t be validated. (Note: Method of contact field is form dependent)
 * **“Mobile phone number” is a required field if the user checks (I would like to receive text messages from VA about my [  ] benefits).** An example of this is on the [VA Form 22-10203 (Application for Edith Nourse Rogers STEM Scholarship)](https://www.va.gov/education/other-va-education-benefits/stem-scholarship/apply-for-scholarship-form-22-10203/introduction)
 * **Pair with email address.** Collection of phone numbers is paired with [email address]({{ site.baseurl }}/patterns/ask-users-for/email-address). The two patterns typically appear on the same step/page.
+* **If possible, tell people why you want their phone number.** This message can be at the top of the page if asking for any other contact information.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+We may use your contact information to contact you if we have questions about your application.
+
+We may use your contact information to contact you if there's an issue with your application.
+
+We may use your contact information to contact you in we need more information.
+
+</div>
+</div>
+</div>
 
 ### Components used in this pattern
 
