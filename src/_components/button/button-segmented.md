@@ -7,8 +7,7 @@ aka: Segmented button, Segmented control
 research-link: Buttons
 intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 status: use-deployed
-uswds-v3: default
-web-component: va-mobile_segmented-control
+web-component: va-button-segmented
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -33,11 +32,11 @@ This component has not yet been built for the web.
 
 #### 3 segments
 
-{% include storybook-preview.html story="segmented-control--3-segments" link_text="va-mobile_segmented-control--2-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--3-segments" link_text="va-mobile_segmented-control--3-segments" is_mobile=true %}
 
 #### 4 segments
 
-{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--2-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--3-segments" is_mobile=true %}
 
 ## Usage
 
@@ -51,7 +50,7 @@ type="secondary"
 
 #### When to use a Button - Segmented
 
-Use a Button - Segmented for filtering, sorting, or switching views of a single set of data. The options modify the content on the current page without navigating away. It functions like a set of radio buttons where selecting one option automatically deselects the previous one.
+Use a Segmented Button for filtering, sorting, or switching views of a single set of data. The options modify the content on the current page without navigating away. It functions like a set of radio buttons where selecting one option automatically deselects the previous one.
 
 * **Best for:** 2-4 mutually exclusive choices.
 * **Example:** Filtering a list of appointments by "Upcoming" and "Past."
@@ -74,7 +73,7 @@ A segmented control consists of a horizontal set of 2-4 segments, each of which 
 
 #### Web
 
-A Button - Segmented is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
+A Segmented Button is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
 
 #### App
 
@@ -89,7 +88,7 @@ The component is often integrated into the top navigation bar (or just below it)
 
 #### Incorrect Use
 
-* **Claims:** Using a control to switch between "Status" and "Details." This groups dissimilar content and should be handled with a different component, like Tabs.
+* **Claims:** Using a control to switch between "Status" and "Details." This groups dissimilar content and should be handled with a different component, like [Tabs]({{ site.baseurl }}/components/tabs).
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -106,12 +105,10 @@ Ensuring the component is accessible is critical on all platforms.
 ### Web
 
 * **Name:** The purpose of each button must be clear and match its visible label.
-* **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g. VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
+* **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g., VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
 * **State:** The component must clearly announce its state, such as "Selected" for the active button.
 Navigation: When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
-* **Mind target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states:
-
-“The size of the target for pointer inputs is at least 44 by 44 CSS pixels…”
+* **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels…”
 
 ### App
 
@@ -120,7 +117,7 @@ For native mobile apps, the component must correctly report its properties to th
 * **Name:** The purpose of each button must be clear and match its visible label.
 * **Role:** It should identify as a "button" to the screen reader (e.g., iOS VoiceOver) and announce the appropriate action (e.g., Android TalkBack's "double tap to activate").
 * **State:** The component must clearly announce its state, such as "Selected" for the active button.
-* **Font Scaling:** In some native implementations (like Apple's), this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
+* **Font Scaling:** In some native implementations (e.g., Apple's), this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
 
 Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)
 
