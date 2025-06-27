@@ -114,9 +114,7 @@ Ensuring the component is accessible is critical on all platforms.
 * **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g. VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
 * **State:** The component must clearly announce its state, such as "Selected" for the active button.
 * **Navigation:** When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
-* **Mind target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states:
-
-“The size of the target for pointer inputs is at least 44 by 44 CSS pixels.”
+* **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels.”
 
 ### App
 
