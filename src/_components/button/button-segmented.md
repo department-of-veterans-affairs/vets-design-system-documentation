@@ -36,7 +36,7 @@ This component has not yet been built for the web.
 
 #### 4 segments
 
-{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--3-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--4-segments" is_mobile=true %}
 
 ## Usage
 
