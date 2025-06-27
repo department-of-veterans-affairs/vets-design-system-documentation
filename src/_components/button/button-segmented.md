@@ -56,11 +56,11 @@ type="secondary"
 
 #### When to use a Button - Segmented
 
-Use a Button - Segmented for filtering, sorting, or switching views of a single set of data. The options modify the content on the current page without navigating away. It functions like a set of radio buttons where selecting one option automatically deselects the previous one.
+Use a Segmented Button for filtering, sorting, or switching views of a single set of data. The options modify the content on the current page without navigating away. It functions like a set of radio buttons where selecting one option automatically deselects the previous one.
 
 * **Best for:** 2-4 mutually exclusive choices.
-* **Example:** Filtering a list of appointments by "Upcoming" and "Past".
-* **Example:** Switching a view from a "List" to a "Grid".
+* **Example:** Filtering a list of appointments by "Upcoming" and "Past."
+* **Example:** Switching a view from a "List" to a "Grid."
 
 #### When to consider something else
 
@@ -69,7 +69,7 @@ Use a Button - Segmented for filtering, sorting, or switching views of a single 
 * If it needs to be accompanied by any other controls or a title if used in the top navigation bar.
 
 Use [Tabs]({{ site.baseurl }}/components/tabs) for navigation between distinct, related pages or content sections. Each tab typically corresponds to a unique URL.
-* **Example:** Navigating between "Inbox", "Sent", and "Archived" folders.
+* **Example:** Navigating between "Inbox," "Sent," and "Archived" folders.
 
 ### Behavior
 
@@ -79,7 +79,7 @@ A segmented control consists of a horizontal set of 2-4 segments, each of which 
 
 #### Web
 
-A Button - Segmented is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
+A Segmented Button is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
 
 #### App
 
@@ -94,13 +94,13 @@ The component is often integrated into the top navigation bar (or just below it)
 
 #### Incorrect Use
 
-* **Claims:** Using a control to switch between "Status" and "Details". This groups dissimilar content and should be handled with a different component, like Tabs.
+* **Claims:** Using a control to switch between "Status" and "Details." This groups dissimilar content and should be handled with a different component, like [Tabs]({{ site.baseurl }}/components/tabs).
 
 {% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
-* **Keep labels concise.** Aim for single-word labels (e.g., "List", "Grid", "Upcoming", "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
+* **Keep labels concise.** Aim for single-word labels (e.g., "List," "Grid," "Upcoming," "Past"). If you need more than one word, it may indicate that the options are not closely related enough, and a different component might be more suitable.
 * **Avoid dissimilar content.** Do not use a Segmented Button to group unrelated items. The purpose is to filter or change the view of a single data set.
 * **Provide context.** Ensure the labels on the segments clearly differentiate the content that will be displayed below.
 
@@ -111,7 +111,7 @@ Ensuring the component is accessible is critical on all platforms.
 ### Web
 
 * **Name:** The purpose of each button must be clear and match its visible label.
-* **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g. VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
+* **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g., VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
 * **State:** The component must clearly announce its state, such as "Selected" for the active button.
 * **Navigation:** When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
 * **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels.”
