@@ -7,7 +7,6 @@ aka: Segmented button, Segmented control
 research-link: Buttons
 intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 status: use-deployed
-uswds-v3: default
 web-component: va-button-segmented
 anchors:
   - anchor: Examples
