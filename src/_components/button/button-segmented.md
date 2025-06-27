@@ -66,7 +66,7 @@ Use a Segmented Button for filtering, sorting, or switching views of a single se
 
 * If you need to group content that is dissimilar.
 * If you need to enable actions — such as adding, removing, or editing content.
-* If it needs to be accompanied by any other controls or a title if used in the top navigation bar.
+* If it is used in the top navigation bar alongside other controls or a title.
 
 Use [Tabs]({{ site.baseurl }}/components/tabs) for navigation between distinct, related pages or content sections. Each tab typically corresponds to a unique URL.
 * **Example:** Navigating between "Inbox," "Sent," and "Archived" folders.
