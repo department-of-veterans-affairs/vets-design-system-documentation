@@ -11,6 +11,7 @@ anchors:
   - anchor: Behavior
   - anchor: Code usage
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
 ---
 
 ## Examples
@@ -107,3 +108,11 @@ To use React Router with this component [follow these instructions](https://desi
   text="Refer to the U.S. Web Design System for accessibility guidance"
   type="secondary"
 ></va-link-action>
+
+## Privacy guidance 
+
+**URLs can’t include Personally Identifiable Information (PII) and Protected Health Information (PHI).** 
+
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual’s identity or health information.  
+
+- [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
