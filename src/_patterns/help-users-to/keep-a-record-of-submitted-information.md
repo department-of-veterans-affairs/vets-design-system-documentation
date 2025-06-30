@@ -67,6 +67,10 @@ The pattern should load at the top of the page beneath the h1 in this order:
 * [Button-Primary]({{ site.baseurl }}/components/button)
 * [ProcessList]({{ site.baseurl }}/components/process-list)
 
+## Code usage
+- [confirmationView is a web-component pattern available in the Forms library.](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/ConfirmationView/README.md)
+- To provide PDF downloads of form submissions, [call the `fetch_presigned_url` class method](https://github.com/department-of-veterans-affairs/vets-api/blob/master/modules/simple_forms_api/app/services/simple_forms_api/form_remediation/docs/form_submission_pdf_backups.md#s3-pre-signed-url-retrieval)
+
 ## When to consider something else
 
 Forms that are submitted by unauthenticated users should not display links to claim status tool or My VA on the confirmation page as those submissions will not be immediately tracked or connected to a profile account.
