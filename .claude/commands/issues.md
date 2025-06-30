@@ -13,8 +13,8 @@ Follow these steps to complete the task, make a todo list and think ultra-hard:
 1. Research the repository:
 
 - Examine this repository's structure, existing issues, and documentation.
-- Note the project's coding style, [naming conventions](src/_about/naming.md).
-- Specifics on how to file issues are in [github-issue-commands.md](github-issue-commands.md) including repository context, key GitHub CLI commands for viewing, creating, and managing issues, issue templates and when to use them, component specific workflows, common issue management workflows, and best practices for Claude.
+- Note the project's coding style, [naming conventions](../../src/_about/naming/index.md).
+- Specifics on how to file issues are in [github-issue-commands.md](../../.github/github-issue-commands.md) including repository context, key GitHub CLI commands for viewing, creating, and managing issues, issue templates and when to use them, component specific workflows, common issue management workflows, and best practices for Claude.
 
 2. Research best practices:
 

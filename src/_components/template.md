@@ -9,15 +9,6 @@ research-title: Use this to match the label in the research repo. Only use if we
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
 status: use-with-caution-available
 web-component: va-component-name
-anchors:
-  - anchor: Examples
-  - anchor: Usage
-  - anchor: Behavior
-  - anchor: Code usage
-  - anchor: Content considerations
-  - anchor: Accessibility considerations
-  - anchor: Related
-  - anchor: Component checklist
 ---
 
 ## Examples
