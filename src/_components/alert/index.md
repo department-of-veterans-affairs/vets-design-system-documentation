@@ -168,6 +168,13 @@ When the user is required to do something in response to an alert, let them know
 * Messaging should be direct, concise, and in [plain language]({{ site.baseurl }}/content-style-guide/plain-language/).
 * Standard alerts must contain headings as opposed to Slim alerts which do not contain headings.
 
+### Links within alerts
+
+* **Use an action link when a link is needed.** The preferred usage of links in an alert is the [action link](#alert-with-action-link), which is a single link directing the user to a clear next step or call-to-action.
+  * A [Link - Active]({{ site.baseurl }}/components/link#active) style is an acceptable variation.
+* **Avoid using multiple links in a list.** Alerts should not includes lists of links. Shorten your alert message and include multiple links outside of the alert itself.
+* **Don't use bold text for standard links within alert messages.** The blue color and underline already provide sufficient visual distinction. Follow the same [link styling guidelines]({{ site.baseurl }}/content-style-guide/links/) and [bold text guidelines]({{ site.baseurl }}/content-style-guide/bold-text/) used elsewhere on VA.gov. Note that standard links are often a secondary action and appear alongside buttons, see [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in) for examples.
+
 ### Placement
 
 #### Web
