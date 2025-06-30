@@ -30,8 +30,10 @@ To write a page in any section:
 
 For new component or pattern documentation, start with one of these templates:
 
-- [Component template](/_components/template.md)
-- [Pattern template](/_patterns/template.md)
+- [Components template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_components/template.md)
+- [Patterns template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md)
+- [Templates template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_templates/template.md)
+- [Contributing a template or pattern guidance](/about/designers/contributing-templates-patterns) — step-by-step instructions for contributing templates and patterns to the Design System
 
 These templates include required front matter and example usage of includes for Storybook examples, images, and code props. See the next section for details on these includes.
 
