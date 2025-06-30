@@ -41,38 +41,46 @@ Submit your new page as a pull request. The team will review and respond as soon
 
 ## Documenting includes in templates
 
-The templates above use several Jekyll includes to standardize documentation:
+The templates above use several Jekyll includes to standardize documentation.
 
 ### Showing Storybook examples
 
 Use the following include to embed a Storybook example:
 
-```liquid
+```markdown
+{% raw %}
 {% include storybook-preview.html story="[components|uswds]-VA-COMPONENT-NAME--VARIATION" link_text=page.web-component %}
+{% endraw %}
 ```
 
 Choose components or uswds (check Storybook to see which is in use). Replace `VA-COMPONENT-NAME` with the relevant component or pattern name. Replace `VARIATION` with the relevant component variation (e.g., "default")
 
 For mobile app components:
 
-```liquid
+```markdown
+{% raw %}
 {% include storybook-preview.html height="100px" story="VA-COMPONENT-NAME--VARIATION" link_text="va-mobile__VA-COMPONENT-NAME--VARIATION" is_mobile=true %}
+{% endraw %}
 ```
 
 ### Showing images
 
 To display an image:
 
-```liquid
+```markdown
+{% raw %}
 {% include component-example.html alt="Explain what is in the image." file="/images/components/component-name/filename.png" caption="Describe what this example image is depicting." %}
+{% endraw %}
 ```
 
 ### Showing code props
 
 To show a table of code props:
 
-```liquid
+```markdown
+{% raw %}
 {% include component-docs.html component_name=page.web-component %}
+{% endraw %}
 ```
 
 Note that the header is included in the include file.
@@ -81,8 +89,10 @@ Note that the header is included in the include file.
 
 To show the component checklist at the bottom of the page:
 
-```liquid
+```markdown
+{% raw %}
 {% include _component-checklist.html component_name=page.web-component %}
+{% endraw %}
 ```
 
 ## Creating and managing drafts
@@ -148,16 +158,20 @@ Refer to [showing images](#showing-images) for the appropriate code to use.
 
 Display code inside an accordion:
 
-```liquid
+```markdown
+{% raw %}
 {% include snippet.html content='html/MY-HTML-FILE.html' %}
+{% endraw %}
 ```
 
 ### Responsive previews
 
 Allow users to preview components on different devices:
 
-```liquid
-{% include iframe-preview.html src="html/flexbox-grid-responsive.html" title="Flexbox grid" height=400 %}
+```markdown
+{% raw %}
+%{ include iframe-preview.html src="html/flexbox-grid-responsive.html" title="Flexbox grid" height=400 %}
+{% endraw %}
 ```
 
 Adjust the `height` parameter as needed.
