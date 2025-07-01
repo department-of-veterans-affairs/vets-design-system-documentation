@@ -23,7 +23,7 @@ This page provides guidance for contributing a new **template** or **pattern** t
 - **Templates** (page layouts) compose components within a single page. They define the structure and arrangement of content and components for a specific page type or use case.
 - **Patterns** incorporate one or more templates and components to solve a common user problem or interaction. Patterns may span multiple pages or channels and often include guidance on content, accessibility, and user flows.
 
-See [Components, Templates, and Patterns]({{ site.baseurl }}/about/components-patterns-templates) for more details.
+See [What is the difference between components, templates, and patterns?]({{ site.baseurl }}/components/#what-is-the-difference-between-components-templates-and-patterns) for more details.
 
 ## How to contribute
 
