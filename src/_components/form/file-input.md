@@ -1,6 +1,8 @@
 ---
 layout: component
 permalink: /components/form/file-input
+redirect_from:
+  - /components/form/file-input-multiple
 has-parent: /components/form/
 title: File input
 intro-text: "File input allows users to attach files, one at a time, to be uploaded."
