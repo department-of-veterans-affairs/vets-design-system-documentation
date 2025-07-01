@@ -6,6 +6,7 @@ permalink: /about/designers/
 intro-text: Documentation and resources for designers.
 sub-pages:
   - sub-page: Contributing to docs
+  - sub-page: Contributing a template or pattern
   - sub-page: Creating components
   - sub-page: Design libraries
   - sub-page: Figma at VA
@@ -20,6 +21,7 @@ The VA.gov Design System is VA.gov’s front-end framework. Before getting start
 - **[Components]({{ site.baseurl }}/components).** Components are the building blocks of the user interfaces. For example, accordions and buttons. Some of these have strict usage guidelines, so please become familiar with them.
 - **[Patterns]({{ site.baseurl }}/patterns).**  Patterns define how components, content strategy, information architecture, accessibility, and visual design work in tandem to solve Veterans' needs. Here you will find patterns to ask users for specific pieces of information and how to help a user to complete a task or interaction.
 - **[Templates]({{ site.baseurl }}/templates).** Templates, or page layouts, compose components within a single page. A layout can contain multiple variations of a component depending on the context.
+- **[Contributing a template or pattern]({{ site.baseurl }}/about/designers/contributing-a-template-or-pattern).** Guidance for contributing a template or pattern to the Design System.
 
 ## Design resources
 
