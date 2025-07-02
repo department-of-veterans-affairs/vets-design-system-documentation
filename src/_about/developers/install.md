@@ -57,11 +57,11 @@ The utility classes are helpful, single-property classes that can provide more f
 
 **Tokens**
 
-The tokens are variables that can be used to style your project inline or in your stylesheets. You can review the [tokens](https://design.va.gov/foundation/design-tokens) in the design system documentation for more information.
+The tokens are variables that can be used to style your project inline or in your stylesheets. Review the [tokens](https://design.va.gov/foundation/design-tokens) in the design system documentation for more information.
 
-The CSS-Library provides design tokens in a number of formats: CSS, SCSS, and JSON. You can review the available [token formats in the CSS-Library repository](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library/dist/tokens).
+The CSS-Library provides design tokens in a number of formats: CSS, SCSS, and JSON. Review the available [token formats in the CSS-Library repository](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library/dist/tokens).
 
-We recommend using the CSS custom properties format by loading the CSS file globally once and using the custom properties in your stylesheets like this:
+We recommend using the CSS custom properties format by loading the CSS file globally just once and using the custom properties in the stylesheets across your application like this:
 
 ```html
 <link rel="stylesheet" href="@department-of-veterans-affairs/css-library/dist/tokens/css/variables.css">
@@ -77,7 +77,7 @@ We recommend using the CSS custom properties format by loading the CSS file glob
 
 While many of the original modules have been converted to web components, some are still available in the CSS-Library. If there is a comparable web component available in the Web Component library, we recommend using that instead.
 
-If you would like to use a module stylesheet, reference this documentation site which [imports the CSS Library Sass files in its application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss).
+If you would like to use a module stylesheet, reference this documentation site which [imports the CSS Library Sass file modules into the application.scss stylesheet](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss).
 
 
 ## Load the Web Component library
