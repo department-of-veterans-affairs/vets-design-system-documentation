@@ -582,9 +582,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **power of attorney (POA)**
 : "POA" is capitalized. Contact the subject matter experts or legal before using this term to make sure we're using it correctly.
 
-**Premium**
-: Capitalize when used in the context of account level (for example: DS Logon Premium account).
-
 **pre-discharge**
 : Use a hyphen.
 
