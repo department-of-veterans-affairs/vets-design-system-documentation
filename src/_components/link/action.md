@@ -12,6 +12,7 @@ anchors:
   - anchor: Usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
 ---
 
 ## Examples
@@ -62,3 +63,7 @@ The action link is an eye-catching link to start a digital service. An action li
   * By default, the link component's external link variation will append the text, "(opens in a new tab)", instead of using an icon. This follows [Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/G201.html) advice on providing users with both a spoken and visual warning that this link opens in a new tab.
 
 {% include content/links-vs-buttons.md %}
+
+## Privacy guidance
+
+{% include content/privacy-links.md %}
