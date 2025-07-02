@@ -16,6 +16,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
   - anchor: Related
 ---
 
@@ -207,6 +208,10 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 {% include content/links-vs-buttons.md %}
 
 {% include content/avoid-links-in-headers.md %}
+
+## Privacy guidance
+
+{% include content/privacy-links.md %}
 
 ## Related
 
