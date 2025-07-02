@@ -44,6 +44,10 @@
     "maturityCategory": "use",
     "maturityLevel": "deployed"
   },
+  "va-button-segmented": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
   "va-card": {
     "maturityCategory": "use",
     "maturityLevel": "deployed"
@@ -87,10 +91,6 @@
   "va-icon": {
     "maturityCategory": "caution",
     "maturityLevel": "available"
-  },
-  "va-input-telephone": {
-    "maturityCategory": "caution",
-    "maturityLevel": "candidate"
   },
   "va-language-toggle": {
     "maturityCategory": "caution",
@@ -161,8 +161,8 @@
     "maturityLevel": "best_practice"
   },
   "va-promo-banner": {
-    "maturityCategory": "use",
-    "maturityLevel": "deployed"
+    "maturityCategory": "dont_use",
+    "maturityLevel": "deprecated"
   },
   "va-radio": {
     "maturityCategory": "use",
@@ -207,6 +207,10 @@
   "va-telephone": {
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
+  },
+  "va-telephone-input": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
   },
   "va-text-input": {
     "maturityCategory": "use",
