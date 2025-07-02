@@ -18,6 +18,7 @@ anchors:
   - anchor: Requesting a new instance
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
   - anchor: Component checklist
 ---
 
@@ -64,5 +65,9 @@ The 3 examples above are the only currently approved instances of this component
 ## Accessibility considerations
 
 * **Follow button considerations.** This component should follow the same considerations as a [typical button]({{ site.baseurl }}/components/button#accessibility-considerations).
+
+## Privacy guidance
+
+{% include content/privacy-buttons.md %}
 
 {% include _component-checklist.html component_name=page.web-component %}
