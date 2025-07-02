@@ -1,27 +1,12 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/utilities/margins
 has-parent: /foundation/utilities/
 title: Margins
-anchors:
-  - anchor: Margin on all sides
-  - anchor: Margin top and bottom
-  - anchor: Margin top
-  - anchor: Margin bottom
-  - anchor: Margin right and left
-  - anchor: Margin right
-  - anchor: Margin left
-  - anchor: Responsive prefixes
+intro-text: Change the spacing around an item. 
 ---
 
-# Margins
-
-<div class="va-introtext" markdown="1">
-  Change the spacing around an item. Margin classes include [responsive prefixes](#responsive-prefixes).
-</div>
-
-{% include _site-on-this-page.html %}
-
+Margin classes include [responsive prefixes](#responsive-prefixes).
 
 ## Margin on all sides
 
@@ -94,8 +79,8 @@ anchors:
   </div>
 </div>
 
-
 ## Margin bottom
+
 <div class="site-showcase">
   {%
     include _showcase-header.html
@@ -120,6 +105,7 @@ anchors:
 </div>
 
 ## Margin right and left
+
 <div class="site-showcase">
 
   {%
@@ -146,6 +132,7 @@ anchors:
 </div>
 
 ## Margin right
+
 <div class="site-showcase">
 
   {%
@@ -172,6 +159,7 @@ anchors:
 </div>
 
 ## Margin left
+
 <div class="site-showcase">
   {%
     include _showcase-header.html
@@ -201,6 +189,7 @@ Add a responsive breakpoint prefix separated with a : to target a utility at a r
 ### Example
 
 ```html
-<div class="tablet:vads-u-margin--3 desktop-lg:vads-u-margin--5">
+  <div class="tablet:vads-u-margin--3 desktop-lg:vads-u-margin--5">
 ```
+
 {% include _breakpoint-names.html %}

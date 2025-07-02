@@ -44,7 +44,7 @@ Contexts such as:
 {% include component-example.html
   class="x2"
   reverse="true"
-  alt="An example of a search results page." 
+  alt="An example of a search results page."
   caption="Search results page without options to sort or filter. Annotated."
   file="/images/templates/search-results/site-search-results-annotated.png" %}
 
@@ -180,6 +180,10 @@ The text of the link of the matching page. This should not be a link (the header
   text="Follow the guidance for the search filter component"
   type="secondary"
 ></va-link-action>
+
+## Accessibility considerations
+
+{% include a11y/search-filters.md %}
 
 #### Additional guidance
 

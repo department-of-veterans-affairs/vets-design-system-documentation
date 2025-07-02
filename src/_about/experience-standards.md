@@ -1,11 +1,8 @@
 ---
-layout: category
+layout: documentation
 title: Experience Standards
 permalink: /about/experience-standards/
-intro-text: The VA.gov Experience Standards are the criteria that the Governance team will use to assess VFS products for design, IA, content, and accessibility as VFS teams bring their work through the Collaboration Cycle.
-anchors:
-  - anchor: Using the Standards
-  - anchor: List of Experience Standards
+intro-text: The Experience Standards are the criteria that the Governance team will use to assess VA.gov and VA Mobile App products for design, IA, content, and accessibility as VFS teams bring their work through the Collaboration Cycle.
 ---
 
 Each experience standard is framed around the end-user experience (Veterans, family, caregivers, or members of the public). Issues flagged under these experience standards will result in a degraded experience for at least some users.
@@ -56,11 +53,11 @@ GitHub label: [exp-std-link-action](https://github.com/department-of-veterans-af
 
 ### Category: Consistency
 
-User has a predictable and unchanging experience across all VA.gov services, tools and pages.
+User has a predictable and unchanging experience across all VA.gov and VA Mobile App services, tools, and pages.
 
 A product might have launch-blocking findings in this category if it:
 
-* Is too far out of alignment with the rest of the VA.gov experience.
+* Is too far out of alignment with the rest of the VA.gov and VA Mobile App experience.
 
 #### User encounters accurate, consistent content
 
@@ -80,9 +77,9 @@ GitHub label: [exp-std-best-practice](https://github.com/department-of-veterans-
 
 GitHub label: [exp-std-design-consistency](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-design-consistency)
 
-#### User encounters content that is similar to other content on VA.gov
+#### User encounters content that is similar to other content on VA.gov or VA Mobile App
 
-**There’s an issue when:** User encounters content that doesn't match other content on VA.gov.
+**There’s an issue when:** User encounters content that doesn't match other content on VA.gov or VA Mobile App.
 
 GitHub label: [exp-std-content-va](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-content-va)
 
@@ -100,7 +97,7 @@ GitHub label: [exp-std-design-principles](https://github.com/department-of-veter
 
 ### Category: Credibility
 
-User perceives VA.gov as a credible source for receiving and sharing information.
+User perceives VA.gov and VA Mobile App as a credible source for receiving and sharing information.
 
 A product might have launch-blocking findings in this category if it:
 
@@ -118,9 +115,9 @@ GitHub label: [exp-std-voice-tone](https://github.com/department-of-veterans-aff
 
 GitHub label: [exp-std-form-integrity](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-form-integrity)
 
-#### User receives appropriate notification from the VA or VA.gov about the status of their request
+#### User receives appropriate notification from VA.gov or VA Mobile App about the status of their request
 
-**There's an issue when:** User does not receive appropriate notification from the VA or VA.gov about the status of their request.
+**There's an issue when:** User does not receive appropriate notification from VA.gov or VA Mobile App about the status of their request.
 
 GitHub label: [exp-std-notifications](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-notifications)
 
@@ -152,7 +149,7 @@ GitHub label: [exp-std-flow-interruption](https://github.com/department-of-veter
 
 ### Category: Findability
 
-User can identify where they are within VA.gov and where to go next to complete a task.
+User can identify where they are within VA.gov or VA Mobile App and where to go next to complete a task.
 
 A product might have launch-blocking findings in this category if it:
 
@@ -165,7 +162,7 @@ A product might have launch-blocking findings in this category if it:
 
 GitHub label: [exp-std-flow-steps](https://github.com/department-of-veterans-affairs/va.gov-team/labels/exp-std-flow-steps)
 
-#### User can determine where a page is within the VA.gov website
+#### User can determine where a page or screen is within VA.gov or VA Mobile App
 
 **There’s an issue when:** User can’t determine where a page is within the VA.gov website.
 
@@ -179,13 +176,13 @@ GitHub label: [exp-std-findability](https://github.com/department-of-veterans-af
 
 ### Category: Health and Safety
 
-User is able to safely access VA.gov tools.
+User is able to safely access VA.gov and VA Mobile App tools.
 
 A product might have launch-blocking findings in this category if it:
 
 * Poses risks to a user’s health and safety
 
-#### User can safely use VA.gov products
+#### User can safely use VA.gov and VA Mobile App products
 
 **There’s an issue when:** User's medical condition could be triggered.
 

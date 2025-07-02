@@ -1,65 +1,149 @@
 ---
 layout: documentation
 title: Install
-status: dont-use-deprecated
 permalink: /about/developers/install
 has-parent: /about/developers/
-intro-text: "New guidance in coming soon. With the deprecation of Formation and the adoption off CSS Library the design system team is in the process of creating and providing guidance on using CSS Library across different projects."
+intro-text: "The VA Design System has two main packages that can be used to build custom applications: the CSS-Library and the Web Component library. The CSS-Library provides a set of stylesheets, tokens, and utilities. The Web Component library provides a set of reusable Web Components."
 anchors:
-  - anchor: Install Formation into your project
+  - anchor: Install the CSS-Library into your project
   - anchor: Load the Web Component library
+  - anchor: Integration Examples
 ---
 
-## Install Formation into your project
+## Install the CSS-Library into your project
 
-How you implement VA Design System (VADS) styles into your project depends on how your project is structured and your preferences. The easiest way to get started is by using `npm`. For a prototype where you need the Design System styles, you can add a `<link>` tag with the `href` set to `https://unpkg.com/@department-of-veterans-affairs/formation/dist/formation.min.css`.
-
-We recommend using `npm` to install the formation package into your project.
+How you implement VA Design System (VADS) into your project depends on how your project is structured and your preferences. The easiest way to get started is by using yarn to install the CSS-Library package into your project:
 
 ```bash
-$ npm install --save @department-of-veterans-affairs/formation
+yarn add @department-of-veterans-affairs/css-library
 ```
 
-This line installs the Design System as a dependency. You can use the compiled files found in the `node_modules/@department-of-veterans-affairs/formation/dist` directory.
+Once the package is installed, import the main CSS files into your project:
 
-If you would like to use the un-compiled Sass files instead, you can find those in the `node_modules/@department-of-veterans-affairs/formation/sass` directory.
-
-If you prefer to change the location of the `fonts/` and `img/` directories relative to `formation.min.css`, set the following variables in your project:
-
-```
-$formation-asset-path: '../assets';
-$formation-image-path: "#{$formation-asset-path}/img";
-$formation-font-path: "#{$formation-asset-path}/fonts";
+```js
+@import "@department-of-veterans-affairs/css-library/dist/stylesheets/core";
+@import "@department-of-veterans-affairs/css-library/dist/stylesheets/uswds-typography";
+@import "@department-of-veterans-affairs/css-library/dist/stylesheets/utilities";
 ```
 
-The example above is what is used on VA.gov, but you can customize this for your project.
+Fonts will need to be loaded from the CSS-Library `fonts/` directory. [For example](https://github.com/department-of-veterans-affairs/component-library/blob/add-react-vite-ts-example/packages/integration-examples/vite-react-typescript/src/fonts/font-face.scss):
 
-### Sass functions, variables, and interactive components
+```scss
+$css-library-font-path: "../../node_modules/@department-of-veterans-affairs/css-library/dist/fonts";
 
-If you would like to use the Sass functions, such as for [spacing]({{ site.baseurl }}/foundation/spacing-units#using-the-spacing-tokens), and variables in your project, you can import the files from your project scss. This documentation site imports the Formation Sass files in its [application.scss](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss#L5).
+/* latin - Source Sans Pro Regular */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Source Sans Pro Regular"),
+    local("SourceSansPro-Regular"),
+    url('#{$css-library-font-path}/sourcesanspro-regular-webfont.woff2') format("woff2"),
+    url('#{$css-library-font-path}/sourcesanspro-regular-webfont.woff') format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+[... other font-face declarations ...]
+```
+
+### Tokens, utilities, and modules
+
+The CSS-Library provides a set of tokens, utilities, and modules that can be used in your project. 
+
+**Utilities**
+
+The utility classes are helpful, single-property classes that can provide more flexibility for inline styling. You can review the [utilities](https://design.va.gov/foundation/utilities/) in the design system documentation for more information.
+
+**Tokens**
+
+The tokens are variables that can be used to style your project inline or in your stylesheets. Review the [tokens](https://design.va.gov/foundation/design-tokens) in the design system documentation for more information.
+
+The CSS-Library provides design tokens in a number of formats: CSS, SCSS, and JSON. Review the available [token formats in the CSS-Library repository](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/css-library/dist/tokens).
+
+We recommend using the CSS custom properties format by loading the CSS file globally just once and using the custom properties in the stylesheets across your application like this:
+
+```html
+<link rel="stylesheet" href="@department-of-veterans-affairs/css-library/dist/tokens/css/variables.css">
+```
+<br />
+```css
+.your-class {
+  background-color: var(--vads-color-base);
+}
+```
+
+**Modules**
+
+While many of the original modules have been converted to web components, some are still available in the CSS-Library. If there is a comparable web component available in the Web Component library, we recommend using that instead.
+
+If you would like to use a module stylesheet, reference this documentation site which [imports the CSS Library Sass file modules into the application.scss stylesheet](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss).
+
 
 ## Load the Web Component library
 
-The Design System team is working on developing a library of reusable Web Components that can be used on any HTML page or React application.
+The Design System team has developed a library of reusable Web Components that can be used on any HTML page or React application.
 
-This is already handled for the `vets-website` repository. To get our Web Component library set up in a new project, here is what we recommend:
+This is already handled for the `vets-website` repository. To get the Web Component library set up in a new project, here is what we recommend:
 
-1. Add the `component-library` dependency to your node/yarn project using `yarn add @department-of-veterans-affairs/component-library`.
-1. Import the global CSS file which contains important CSS variables:
+- Add the `component-library` dependency to your node/yarn project: 
+
+```bash
+yarn add @department-of-veterans-affairs/component-library
+```
+
+- Import the global CSS file:
+
 ```js
 import "@department-of-veterans-affairs/component-library/dist/main.css";
 ```
-1. Import the `defineCustomElements` JS function (`applyPolyfills` is only necessary if you wish to support older browsers such as IE11):
+
+- Import the `defineCustomElements` JS function:
+
 ```js
 import {
-  applyPolyfills,
+  applyPolyfills, // Only necessary if you wish to support older browsers such as IE11
   defineCustomElements,
 } from "@department-of-veterans-affairs/component-library";
 ```
-1. In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
+
+
+- In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
+
 ```js
 applyPolyfills().then(() => {
   defineCustomElements();
 });
 ```
-1. Make sure this script gets loaded on the HTML page - preferably near the top of the document in the `<head>` tag.
+
+### Icons Sprite Sheet
+
+If you're using a component that requires the icons sprite sheet (e.g. `va-icon`), the sprite sheet must be loaded from the same origin as your application. By default, the sprite sheet is loaded inside of the components from the `/img/sprite.svg` path.
+
+The sprite sheet is included in the `@department-of-veterans-affairs/component-library` package at `/dist/img/sprite.svg`. We recommend adding that file to your project as part of your build process to ensure you're receiving the most recent version of the sprite sheet and that it's available at the correct path.
+
+If you need to override the default sprite sheet path from `/img/sprite.svg` to a different path within your project, you can do so by calling `initIconSpriteLocation` as part of the component library initialization and setting the sprite sheet path using `globalThis.setVaIconSpriteLocation`:
+
+```js
+import { initIconSpriteLocation  } from '@department-of-veterans-affairs/web-components';
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from '@department-of-veterans-affairs/component-library/src/main';
+
+applyPolyfills().then(() => {
+  defineCustomElements();
+  initIconSpriteLocation();
+  globalThis.setVaIconSpriteLocation('/your/path/to/sprite.svg');
+});
+```
+
+## Integration Examples
+
+This [integration-examples](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/integration-examples) directory contains examples of how to install the VA Design System into different frameworks and build tools outside of vets-website ([VA.gov](https://VA.gov)).
+
+### Available Examples
+
+- [Vite + React + TypeScript](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/core/vite-react-typescript)
+- [CodeSandbox](https://codesandbox.io/p/sandbox/suspicious-stonebraker-vzfzhw)
+- [CodePen](https://codepen.io/jamigibbs-the-sans/pen/jEEdOmY)

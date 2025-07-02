@@ -109,6 +109,16 @@
       "$value": "Deployed"
     }
   },
+  "va-button-segmented": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Candidate"
+    }
+  },
   "va-card": {
     "category": {
       "$type": "string",
@@ -392,11 +402,11 @@
   "va-promo-banner": {
     "category": {
       "$type": "string",
-      "$value": "Use"
+      "$value": "Dont use"
     },
     "level": {
       "$type": "string",
-      "$value": "Deployed"
+      "$value": "Deprecated"
     }
   },
   "va-radio": {
@@ -507,6 +517,16 @@
     "level": {
       "$type": "string",
       "$value": "Best practice"
+    }
+  },
+  "va-telephone-input": {
+    "category": {
+      "$type": "string",
+      "$value": "Use with caution"
+    },
+    "level": {
+      "$type": "string",
+      "$value": "Candidate"
     }
   },
   "va-text-input": {

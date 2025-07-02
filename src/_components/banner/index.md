@@ -13,7 +13,6 @@ anchors:
   - anchor: Usage
   - anchor: Code usage
   - anchor: Content considerations
-  - anchor: Accessibility considerations
 ---
 
 {% include _site-in-this-section.html %}
@@ -27,6 +26,8 @@ anchors:
 ### Dismissible
 
 {% include storybook-preview.html story="components-va-banner--dismissible" height="172px" link_text="va-banner" %}
+
+{% include a11y/dismissable-alerts.md component="banner" %}
 
 ## Usage
 
@@ -78,7 +79,3 @@ anchors:
 
 * **Short and informative headlines.** Try to keep headlines to 70 characters maximum, with spaces. Titles become hard to scan when they’re too long. Eliminate unnecessary details or nuance in titles, and address them with more depth in the message copy.
 * **Short messages with links for greater detail.** Try to keep message copy to 300 characters maximum, with spaces. When more detail is needed, link to another page that has all of the details. Pages that can be linked to might include Operating status or News releases.
-
-## Accessibility considerations
-
-* Aria `role` of `banner` will be added to the child `va-alert` component to notify users that a banner is to be utilized as the `region`.
