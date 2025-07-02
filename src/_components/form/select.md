@@ -98,3 +98,6 @@ anchors:
 ></va-link-action>
 
 {% include _component-checklist.html component_name=page.web-component %}
+
+## Privacy guidance 
+ {% include content/privacy-selection-fields.md %}
