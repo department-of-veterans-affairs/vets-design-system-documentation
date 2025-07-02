@@ -7,7 +7,7 @@ aka: Service List
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
 sub-section: help-users-to
 intro-text: Follow this pattern to help users manage their benefits and tools.
-figma-link: https://www.figma.com/design/ZIGDfSb8D5YLBdJavzDdqi/AE-Design-Patterns---Service-list?node-id=1-129&t=ndStAutrvUcgt5Um-1
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=21042-10&t=eoaTAXv2PGPTU6mE-1
 github-title: manage-benefits-and-tools
 research-title: Help Users to Manage Benefits and Tools
 status: use-with-caution-available

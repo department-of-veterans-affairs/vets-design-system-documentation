@@ -1,25 +1,12 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/utilities/height-and-width
 has-parent: /foundation/utilities/
 title: Height and width
-anchors:
-  - anchor: Height
-  - anchor: Min-height
-  - anchor: Max-height
-  - anchor: Width
-  - anchor: Min-width
-  - anchor: Max-width
-  - anchor: Responsive prefixes
+intro-text: Reset the height and width of an element. 
 ---
 
-# Height and width
-
-<div class="va-introtext" markdown="1">
-  Reset the height and width of an element. All height and width classes include [responsive prefixes](#responsive-prefixes).
-</div>
-
-{% include _site-on-this-page.html %}
+All height and width classes include [responsive prefixes](#responsive-prefixes).
 
 ## Height
 
