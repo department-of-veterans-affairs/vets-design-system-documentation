@@ -12,6 +12,7 @@ anchors:
   - anchor: Usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
 ---
 
 <va-alert
@@ -96,3 +97,7 @@ Collections of links, given their close proximity, will be perceived to share si
 ## Accessibility considerations
 
 * Refer to the [link accessibility considerations]({{ site.baseurl }}/components/link/#accessibility-considerations).
+
+## Privacy guidance
+
+{% include content/privacy-links.md %}
