@@ -11,6 +11,8 @@ anchors:
   - anchor: Timeline to get a new component to prod
 ---
 
+This page provides guidance for contributing code and component contributions to the VA Design System (VADS) site. For guidance contributions, see the [designers contribution guide](/about/designers/contributing-to-docs).
+
 ## Getting started
 
 The [Component Library](https://github.com/department-of-veterans-affairs/component-library) is a monorepo that contains various Design System packages including a package for web components and Storybook.
@@ -25,7 +27,9 @@ Other important sections to review:
 
 ### Ways to contribute
 
-The two main ways for developers to contribute to the Design System are by modifying existing components (fixes, new features, enhancements) and contributing new components. 
+#### Developers
+
+The two main ways for developers to contribute to the Design System are by modifying existing components (fixes, new features, enhancements) and contributing new components.
 
 Regardless of which type of contribution you are making, each PR should:
 
@@ -34,6 +38,10 @@ Regardless of which type of contribution you are making, each PR should:
 - Have Storybook stories added or updated where applicable
 - Minimize complexity
 - Include only the smallest changeset required for the feature or fix
+
+#### Designers
+
+For guidance on contributing documentation (not code or components), see the [documentation contributor guide](/about/designers/contributing-to-docs).
 
 ## Modifying existing components
 
@@ -70,7 +78,7 @@ Each component is located in its own directory within the `web-components` packa
 
 The library leverages [Stencil](https://stenciljs.com/docs/introduction) for generating web components which makes use of Typescript, JSX, and CSS. Stencil's documentation outlines and defines virtually everything you need to know to develop a Stencil generated web component, so be sure to rely on that as you work.
 
-To create a new component, run the Stencil interactive generator in the web-components package: 
+To create a new component, run the Stencil interactive generator in the web-components package:
 
 `yarn stencil generate va-new-component`
 
@@ -112,7 +120,7 @@ It can be helpful to make use of the `:host` pseudo-class function when defining
 
 ### Test coverage
 
-As with all code, test coverage is critical. This is especially true with shared code. 
+As with all code, test coverage is critical. This is especially true with shared code.
 
 All components are required to have end-to-end tests located in the `web-components/src/components/va-new-component/test/` folder having the `.e2e.ts` extension. Stencil E2E tests verify your components in a real browser using Puppeteer.
 
