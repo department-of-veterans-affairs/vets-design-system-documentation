@@ -136,3 +136,6 @@ anchors:
 ### Additional accessibility considerations for VA
 
 * When using Safari with VoiceOver, it will read out the fieldset legend for each radio item when navigating through them. However, the recommended behavior is that the legend should only be read out at the end of the first radio option when tabbing into the group. This behaves as expected in other browsers with VoiceOver, but Safari does not support this. There currently is no workaround for this.
+
+## Privacy guidance 
+ {% include content/privacy-selection-fields.md %}
