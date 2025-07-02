@@ -18,6 +18,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
   - anchor: Component checklist
 ---
 
@@ -163,5 +164,9 @@ That guidance agrees with [Apple's Human Interface Guidelines](https://developer
 {% include content/links-vs-buttons.md %}
 
 {% include a11y/do-not-disable-buttons.md %}
+
+## Privacy guidance
+
+{% include content/privacy-buttons.md %}
 
 {% include _component-checklist.html component_name=page.web-component %}
