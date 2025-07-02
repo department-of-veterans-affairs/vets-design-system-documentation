@@ -6,9 +6,11 @@ title: Use pronouns
 intro-text: "Use pronouns to speak to our audience in a personable and conversational voice."  
 ---
 
-- Address the Veteran as an individual with second person singular: “you” and “your” 
+- Address the Veteran as an individual with second person singular: “you” and “your”
 - Represent VA with a single voice with first person plural: “we” and “our”  
 - For Q&As, the Veteran asks the question (use “I”) and VA answers (use “we” and “you”)
+
+## Examples
 
 {% capture example_like_this_1 %}
 <span class="do-dont__diff">We</span> base your monthly rate on the 2 factors listed here.

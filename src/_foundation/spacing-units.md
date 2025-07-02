@@ -1,20 +1,9 @@
 ---
-layout: default
+layout: documentation
 title: Spacing units
+intro-text: Spacing units are based on multiples of 8 to maintain a consistent rhythm when applied to margins, padding, and other dimensions.
 tags: Grid, Spacing tokens
-anchors:
-  - anchor: Why multiples of 8?
-  - anchor: Spacing tokens
-  - anchor: Using the spacing tokens
 ---
-
-# Spacing units
-
-<div class="va-introtext">
-  Spacing units are based on multiples of 8 to maintain a consistent rhythm when applied to margins, padding, and other dimensions.
-</div>
-
-{% include _site-on-this-page.html %}
 
 ## Why multiples of 8?
 

@@ -1,24 +1,13 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/layout/flexbox-grid
 has-parent: /foundation/layout/
 title: Flexbox grid
+intro-text: The flexbox grid is another option for creating grid-based layouts with the additional features that flexbox provides. 
 tags: Columns, Nesting grids, Layout grid
-anchors:
-  - anchor: Grid elements
-  - anchor: Auto-sizing columns
-  - anchor: Fixed columns
-  - anchor: How to nest grids
-  - anchor: Responsive grid
 ---
 
-# Flexbox grid
-
-<div class="va-introtext" markdown="1">
-  The flexbox grid is another option for creating grid-based layouts with the additional features that flexbox provides. You can apply more flexbox properties by using the [flexbox utility](../utilities/flexbox).
-</div>
-
-{% include _site-on-this-page.html %}
+You can apply more flexbox properties by using the [flexbox utility](../utilities/flexbox).
 
 ## Grid elements
 

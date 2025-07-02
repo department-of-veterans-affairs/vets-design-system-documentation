@@ -7,17 +7,8 @@ intro-text: "This text provides the overall purpose and function of the componen
 github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
-status: use-with-caution-available
+status: use-with-caution-candidate
 web-component: va-component-name
-anchors:
-  - anchor: Examples
-  - anchor: Usage
-  - anchor: Behavior
-  - anchor: Code usage
-  - anchor: Content considerations
-  - anchor: Accessibility considerations
-  - anchor: Related
-  - anchor: Component checklist
 ---
 
 ## Examples
