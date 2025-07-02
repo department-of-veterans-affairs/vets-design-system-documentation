@@ -1,10 +1,16 @@
 ---
-layout: content-style-guide
+layout: default
 permalink: /content-style-guide/plain-language/use-simple-words-and-terms
 has-parent: /content-style-guide/plain-language/
 title: Use simple words and terms
 intro-text: "Use simple words and terms that are familiar to our primary audience: Veterans and their families."
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+   {{ page.intro-text }}
+</div>
 
 {% capture example_like_this_1 %}
 We’ll <span class="do-dont__diff">get</span> your records from these VA facilities.

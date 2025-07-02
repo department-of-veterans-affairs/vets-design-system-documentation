@@ -50,6 +50,10 @@ Faceted search is a way to filter search results by using attributes, or facets,
 * **Desktop viewport widths:** Place search filters in the left-side rail, below a full-width search input component.
 * **Refer to the search results template.** Check out the [search results template]({{ site.baseurl }}/templates/search-results) examples for precise placement.
 
+## Accessibility considerations
+
+{% include a11y/search-filters.md %}
+
 {% include component-docs.html component_name=page.web-component %}
 
 {% include _component-checklist.html component_name=page.web-component %}
