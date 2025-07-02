@@ -16,6 +16,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
   - anchor: Component checklist
 ---
 
@@ -90,5 +91,9 @@ type="secondary"
 
 - Include more contextual information in the button label for screen readers. You can use an aria label, using the ariaLabel or ariaDescribedby properties, to specify form numbers or program names in the buttons for greater context.
 - Refer to our guidance for the [Button component]({{ site.baseurl }}/components/button/#accessibility-considerations)
+
+## Privacy guidance
+
+{% include content/privacy-buttons.md %}
 
 {% include _component-checklist.html component_name="va-button-group" %}
