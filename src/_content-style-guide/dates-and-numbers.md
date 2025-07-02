@@ -53,7 +53,7 @@ Write out times, using a.m. and p.m. with periods: 9:00 a.m.
 - In body copy, write out ranges using sentence construction: We're open Monday through Friday, 9:00 a.m. to 6:00 p.m. ET.
 - Where space is limited, indicate ranges with the - hyphen without spaces on either side. Don't combine the hyphen with from/between sentence construction.
 
-**Note:** For the mobile app, when times/time zones aren’t hardcoded, the formatting differs from VA.gov due to default formatting in React Native. For example, React Native formats as AM and PM (both letters capitalized and no punctuation) and EST (three-letter format). 
+**Note:** For the mobile app, when times and time zones aren’t hardcoded, the formatting differs from VA.gov due to default formatting in React Native. For example, React Native formats time as AM and PM (both letters capitalized and no punctuation) and EST (3-letter format). We make an exception to our style guide for this default formatting. 
 
 <div class="do-dont">
 <div class="do-dont__do">
