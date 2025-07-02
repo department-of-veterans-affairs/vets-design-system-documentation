@@ -7,6 +7,7 @@ intro-text: "The VA Design System has two main packages that can be used to buil
 anchors:
   - anchor: Install the CSS-Library into your project
   - anchor: Load the Web Component library
+  - anchor: Integration Examples
 ---
 
 ## Install the CSS-Library into your project
@@ -136,3 +137,13 @@ applyPolyfills().then(() => {
   globalThis.setVaIconSpriteLocation('/your/path/to/sprite.svg');
 });
 ```
+
+## Integration Examples
+
+This [integration-examples](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/integration-examples) directory contains examples of how to install the VA Design System into different frameworks and build tools outside of vets-website ([VA.gov](https://VA.gov)).
+
+### Available Examples
+
+- [Vite + React + TypeScript](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/core/vite-react-typescript)
+- [CodeSandbox](https://codesandbox.io/p/sandbox/suspicious-stonebraker-vzfzhw)
+- [CodePen](https://codepen.io/jamigibbs-the-sans/pen/jEEdOmY)
