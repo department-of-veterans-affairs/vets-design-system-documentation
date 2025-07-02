@@ -9,6 +9,7 @@ anchors:
   - anchor: Usage
   - anchor: Accessibility considerations
   - anchor: Requesting a new icon
+  - anchor: Component checklist
 ---
 
 <style>
@@ -313,3 +314,5 @@ Exceptions to this are a close button on a modal or an alert. However, it is adv
   // Initial render
   renderIconTable(icons);
 </script>
+
+{% include _component-checklist.html component_name=page.web-component %}

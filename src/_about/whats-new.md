@@ -15,6 +15,7 @@ anchors:
 </div>
 
 ## Guidance Updates
+
 {% include _github_markdown_parser.html json=site.data.site_releases num_recent_releases=3 %}
 
 <va-link-action
@@ -23,6 +24,7 @@ anchors:
 ></va-link-action>
 
 ## VADS Component Library Releases
+
 {% include _github_markdown_parser.html json=site.data.component_library_releases num_recent_releases=3 %}
 
 <va-link-action
