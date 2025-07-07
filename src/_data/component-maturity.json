@@ -44,6 +44,10 @@
     "maturityCategory": "use",
     "maturityLevel": "deployed"
   },
+  "va-button-segmented": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
   "va-card": {
     "maturityCategory": "use",
     "maturityLevel": "deployed"
@@ -157,8 +161,8 @@
     "maturityLevel": "best_practice"
   },
   "va-promo-banner": {
-    "maturityCategory": "use",
-    "maturityLevel": "deployed"
+    "maturityCategory": "dont_use",
+    "maturityLevel": "deprecated"
   },
   "va-radio": {
     "maturityCategory": "use",
