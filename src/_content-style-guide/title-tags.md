@@ -5,7 +5,7 @@ intro-text: Title tags are HTML elements that are displayed in browsers and on s
 anchors:
   - anchor: Example
   - anchor: Additional guidance
-  - -anchor: Privacy guidance
+  - anchor: Privacy guidance
 ---
 
 On VA.gov, title tags are pulled from the H1 (the page title), so it’s especially important to use the primary keyword or phrase in the page title.
