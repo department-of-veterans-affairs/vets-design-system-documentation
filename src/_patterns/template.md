@@ -7,14 +7,7 @@ sub-section: [ask-users-to|help-users-to]
 intro-text: "This text provides the overall purpose and function of the pattern."
 research-title: Use this to match the label in the research repo. 
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates-(Patterns-%26-Forms)?type=design&node-id=2988%3A29744&mode=design&t=Y0LWxs33fRITMh6x-1
-status: use-with-caution-available
-anchors:
-  - anchor: Usage
-  - anchor: Examples
-  - anchor: How to design and build
-  - anchor: Code usage
-  - anchor: Content considerations
-  - anchor: Accessibility considerations
+status: use-with-caution-candidate
 ---
 
 The intro-text appears fist and should contain the purpose and definition of the pattern. If you need to provide additional context of when and why to use this pattern then include it here.
