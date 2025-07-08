@@ -57,7 +57,7 @@ We may use your contact information to contact you if we have questions about yo
 
 We may use your contact information to contact you if there's an issue with your application.
 
-We may use your contact information to contact you in we need more information.
+We may use your contact information to contact you if we need more information.
 
 </div>
 </div>
