@@ -160,6 +160,9 @@
 - id: mail
   category: Messaging
 
+- id: mark_email_read
+  category: Messaging
+
 - id: medical_services
   category: Hub
 
