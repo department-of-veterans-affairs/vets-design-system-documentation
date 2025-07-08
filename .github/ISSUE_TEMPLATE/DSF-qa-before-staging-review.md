@@ -27,21 +27,22 @@ These are the items to QA and confirm before staging review for [component name]
 ### Figma
 - [ ] Check links in Figma file go to the correct component guidance page 
 - [ ] Check links in Figma file go to the correct Storybook component page
-- [ ] Check links in Figma file go  to the correct component guidance page 
 - [ ] Confirm maturity scale is Don’t Use: Proposed
-- [ ] Check that the component name is the same as what is in guidance and Storybook
+- [ ] Check that the common component name and the va-[component name] is the same as what is in guidance and Storybook
+- [ ] Check that the component Figma page is published
 
 ### Storybook
 - [ ] Check links in Storybook go to the correct component guidance page 
 - [ ] Confirm maturity scale is Don’t Use: Proposed
-- [ ] Check that the component name is the same as what is in guidance and Figma
+- [ ] Check that the common component name and the [va-component name] is the same as what is in guidance and Figma
 
 ### Guidance
 - [ ] Confirm that all Storybook examples are loading
 - [ ] Check links on guidance page go to the correct Figma file
-- [ ] Check links on guidance page go to the correct Storybook component page 
+- [ ] Check links on guidance page go to the correct Storybook component page
+- [ ] Check that the research link works 
 - [ ] Confirm maturity scale is Don’t Use: Proposed
-- [ ] Check that the component name is the same as what is in Figma and Storybook
+- [ ] Check that the common component name and the [va-component name] is the same in Figma and Storybook
 - [ ] Confirm the checklists are accurate and that the accessibility one has been added
 
 ## Acceptance Criteria
@@ -49,6 +50,6 @@ These are the items to QA and confirm before staging review for [component name]
 - [ ] Links in Storybook are all correct
 - [ ] Links in Guidance are all correct
 - [ ] Maturity scale Figma, Storybook and Guidance is Don’t Use: Proposed
-- [ ] Component name is the same in Figma, Storybook and guidance
+- [ ] Component name and va-[component name] is the same in Figma, Storybook and guidance
 - [ ] Guidance page loads correctly
 - [ ] Checklists in guidance are accurate 
