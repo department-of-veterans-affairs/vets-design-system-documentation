@@ -1,7 +1,7 @@
 ---
-name: "Step 3 DSF - Design accessibility review"
+name: "Step 3 DSF: Design accessibility review"
 about: INTERNAL DST USE ONLY
-title: "[component name] Design - Accessibility review"
+title: "[Component] interaction and visual design - Accessibility review"
 labels: platform-design-system-team
 assignees: 'jeana-adhoc, amyleadem'
 
@@ -15,17 +15,20 @@ assignees: 'jeana-adhoc, amyleadem'
 - [ ] Delete this section once complete
 ---
 
-## Issue Description
-We need to conduct a design accessibility review of the [component name]. 
+## Description
+Conduct an accessibility-focused design review of the [Component/Pattern Name]. The goal is to ensure that the design is inclusive and meets accessibility standards before handoff to development.
+
+## Assets
+[Product outline](#)
+Any other existing documentation
 
 ## Tasks
-- [ ] Accessibility review of the design of the component
-- [ ] If mobile component validate on mobile devices the component accessibility behaviors match expectations
-     - [ ] Screen readers
-     - [ ] Text size changes
+- [ ] Using the [Accessibility Design Review Checklist](#) perform visual design review of component in figma to make sure it meets accessibility criteria.
 - [ ] Provide input to the designer with accessibility concerns 
-- [ ] If necessary, write up a ticket with those issues 
+- [ ] If necessary, write up tickets with those issues 
 
 ## Acceptance Criteria
 - [ ] Design of component has been reviewed for accessibility issues
-- [ ] Any accessibility issues have been put in a new ticket if needed
+- [ ] Any accessibility issues have been added in a new ticket
+- [ ] Annotations added to Figma file
+- [ ] Summary of findings added to this ticket
