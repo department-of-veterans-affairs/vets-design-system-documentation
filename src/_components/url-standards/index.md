@@ -11,7 +11,6 @@ anchors:
   - anchor: Guidelines for URLs in form flows
   - anchor: Guidelines for anchor tags
   - anchor: Guidelines for parameters in URLs
-  - anchor: Privacy guidance
 redirect_from:
   - /content-style-guide/url-standards
 ---
@@ -64,6 +63,11 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 - Do not use overly broad terms that may be misinterpreted, or shorten URLs so much that meaning and context are lost.  Be specific in describing the focus of the page.
 - Do not repeat keywords across multiple segments of a URL unless it is necessary to clarify meaning of the content.
 - Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.  
+
+### URLs can’t include Personally Identifiable Information (PII) and Protected Health Information (PHI)
+
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual’s identity or health information
+- [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
 
 ## Changing URLs or retiring content
 
@@ -179,10 +183,3 @@ When adding parameters to your URL, in addition to all the URL standards above, 
 - For multi-select type values, combine the values into a single parameter rather than exposing the key multiple times in a URL multiple times (i.e. `color=blue,red,white` vs `color=blue&color=red&color=white`).
 - Avoid linking to URLs with parameters. Link to the static or canonical URL when possible.
 - If multiple parameters are used in a query string, set a priority and list them in a consistent order.
-
-## Privacy guidance
-
-**URLs can’t include Personally Identifiable Information (PII) and Protected Health Information (PHI).**
-
-- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual’s identity or health information
-- [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
