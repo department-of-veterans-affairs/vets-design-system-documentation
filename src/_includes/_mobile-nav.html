@@ -1,98 +1,16 @@
 <nav class="va-sidebarnav site-mobile-nav" id="mobile-nav">
   <button id="close_mobile_nav_button" class="site-mobile-nav__close-button" type="button" aria-label="Close this menu"><va-icon icon="close" size="3"></va-icon></button>
   <ul class="usa-accordion">
-  <!-- Use the accurate heading level to maintain the document outline -->
+  
+  <!-- Components -->
   <li>
-    <button class="usa-accordion-button"
-      aria-expanded="{% if page.url contains "/about/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">
-      About
-      <va-icon icon="add" size="3"></va-icon>
-      <va-icon icon="remove" size="3"></va-icon>
-    </button>
-  </li>
-  <div id="nav-a1" class="usa-accordion-content" aria-hidden="{% if page.url contains "/about/" %}false{% else %}true{% endif %}">
-    <ul class="usa-sidenav-list">
-      <li class="{% if page.url contains "about/index" %}active-level{% endif %}">
-        <a class="{% if page.url contains "about/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/about">Overview</a>
-      </li>
-      {% assign sortedAbout = site.about | sort: "title", "last" %}
-      {% for p in sortedAbout %}
-       {% if p.layout != "iframe" %}
-          {% unless p.index or p.draft %}
-            <li class="{% if p.url == page.url %}active-level{% endif %}">
-              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            </li>
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-
-
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <li>
-    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/content-style-guide/" %}true{% else %}false{% endif %}" aria-controls="nav-a2">
-      Content
-      <va-icon icon="add" size="3"></va-icon>
-      <va-icon icon="remove" size="3"></va-icon>
-    </button>
-  </li>
-  <div id="nav-a2" class="usa-accordion-content" aria-hidden="{% if page.url contains "/content-style-guide/" %}false{% else %}true{% endif %}">
-    <ul class="usa-sidenav-list">
-      <li class="{% if page.url contains "content-style-guide/index" %}active-level{% endif %}">
-        <a class="{% if page.url contains "content-style-guide/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/content-style-guide">Overview</a>
-      </li>
-      {% assign sortedCSG = site.content-style-guide | sort: "title", "last" %}
-      {% for p in sortedCSG %}
-        {% if p.layout != "iframe" %}
-          {% unless p.index or p.draft %}
-            <li class="{% if p.url == page.url %}active-level{% endif %}">
-              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            </li>
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <li>
-    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/foundation/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
-      Foundation
-      <va-icon icon="add" size="3"></va-icon>
-      <va-icon icon="remove" size="3"></va-icon>  
-    </button>
-  </li>
-  <div id="nav-a3" class="usa-accordion-content" aria-hidden="{% if page.url contains "/foundation/" %}false{% else %}true{% endif %}">
-    <ul class="usa-sidenav-list">
-      <li class="{% if page.url contains "foundation/index" %}active-level{% endif %}">
-        <a class="{% if page.url contains "foundation/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/foundation">Overview</a>
-      </li>
-      {% assign sortedFoundation = site.foundation | sort: "title", "last" %}
-      {% for p in sortedFoundation %}
-      {% if p.layout != "iframe" %}
-          {% unless p.index or p.draft %}
-            <li class="{% if p.url == page.url %}active-level{% endif %}">
-              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
-            </li>
-          {% endunless %}
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-
-
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <li>
-    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/components/" %}true{% else %}false{% endif %}" aria-controls="nav-a4">
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/components/" %}true{% else %}false{% endif %}" aria-controls="nav-a1">
       Components
       <va-icon icon="add" size="3"></va-icon>
       <va-icon icon="remove" size="3"></va-icon>  
     </button>
   </li>
-  <div id="nav-a4" class="usa-accordion-content" aria-hidden="{% if page.url contains "/components/" %}false{% else %}true{% endif %}">
+  <div id="nav-a1" class="usa-accordion-content" aria-hidden="{% if page.url contains "/components/" %}false{% else %}true{% endif %}">
     <ul class="usa-sidenav-list">
       <li class="{% if page.url contains "components/index" %}active-level{% endif %}">
         <a class="{% if page.url contains "components/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/components">Overview</a>
@@ -110,14 +28,15 @@
     </ul>
   </div>
 
+  <!-- Patterns -->
   <li>
-    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/patterns/" %}true{% else %}false{% endif %}" aria-controls="nav-a2">
       Patterns
       <va-icon icon="add" size="3"></va-icon>
       <va-icon icon="remove" size="3"></va-icon>  
     </button>
   </li>
-  <div id="nav-a5" class="usa-accordion-content" aria-hidden="{% if page.url contains "/patterns/" %}false{% else %}true{% endif %}">
+  <div id="nav-a2" class="usa-accordion-content" aria-hidden="{% if page.url contains "/patterns/" %}false{% else %}true{% endif %}">
     <ul class="usa-sidenav-list">
       <li class="{% if page.url contains "patterns/index" %}active-level{% endif %}">
         <a class="{% if page.url contains "patterns/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/patterns">Overview</a>
@@ -135,14 +54,15 @@
     </ul>
   </div>
 
+  <!-- Templates -->
   <li>
-    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/templates/" %}true{% else %}false{% endif %}" aria-controls="nav-a6">
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/templates/" %}true{% else %}false{% endif %}" aria-controls="nav-a3">
       Templates
       <va-icon icon="add" size="3"></va-icon>
       <va-icon icon="remove" size="3"></va-icon>  
     </button>
   </li>
-  <div id="nav-a6" class="usa-accordion-content" aria-hidden="{% if page.url contains "/templates/" %}false{% else %}true{% endif %}">
+  <div id="nav-a3" class="usa-accordion-content" aria-hidden="{% if page.url contains "/templates/" %}false{% else %}true{% endif %}">
     <ul class="usa-sidenav-list">
       <li class="{% if page.url contains "templates/index" %}active-level{% endif %}">
         <a class="{% if page.url contains "templates/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/templates">Overview</a>
@@ -156,6 +76,137 @@
             </li>
           {% endunless %}
           {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Foundation -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/foundation/" %}true{% else %}false{% endif %}" aria-controls="nav-a4">
+      Foundation
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
+    </button>
+  </li>
+  <div id="nav-a4" class="usa-accordion-content" aria-hidden="{% if page.url contains "/foundation/" %}false{% else %}true{% endif %}">
+    <ul class="usa-sidenav-list">
+      <li class="{% if page.url contains "foundation/index" %}active-level{% endif %}">
+        <a class="{% if page.url contains "foundation/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/foundation">Overview</a>
+      </li>
+      {% assign sortedFoundation = site.foundation | sort: "title", "last" %}
+      {% for p in sortedFoundation %}
+      {% if p.layout != "iframe" %}
+          {% unless p.index or p.draft %}
+            <li class="{% if p.url == page.url %}active-level{% endif %}">
+              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            </li>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Content -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/content-style-guide/" %}true{% else %}false{% endif %}" aria-controls="nav-a5">
+      Content
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>
+    </button>
+  </li>
+  <div id="nav-a5" class="usa-accordion-content" aria-hidden="{% if page.url contains "/content-style-guide/" %}false{% else %}true{% endif %}">
+    <ul class="usa-sidenav-list">
+      <li class="{% if page.url contains "content-style-guide/index" %}active-level{% endif %}">
+        <a class="{% if page.url contains "content-style-guide/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/content-style-guide">Overview</a>
+      </li>
+      {% assign sortedCSG = site.content-style-guide | sort: "title", "last" %}
+      {% for p in sortedCSG %}
+        {% if p.layout != "iframe" %}
+          {% unless p.index or p.draft %}
+            <li class="{% if p.url == page.url %}active-level{% endif %}">
+              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            </li>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- IA -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/ia/" %}true{% else %}false{% endif %}" aria-controls="nav-a6">
+      IA
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
+    </button>
+  </li>
+  <div id="nav-a6" class="usa-accordion-content" aria-hidden="{% if page.url contains "/ia/" %}false{% else %}true{% endif %}">
+    <ul class="usa-sidenav-list">
+      <li class="{% if page.url contains "ia/index" %}active-level{% endif %}">
+        <a class="{% if page.url contains "ia/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/ia">Overview</a>
+      </li>
+      {% assign sortedIA = site.ia | sort: "title", "last" %}
+      {% for p in sortedIA %}
+        {% if p.layout != "iframe" %}
+          {% unless p.index or p.draft %}
+            <li class="{% if p.url == page.url %}active-level{% endif %}">
+              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            </li>
+          {% endunless %}
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Accessibility -->
+  <li>
+    <button class="usa-accordion-button" aria-expanded="{% if page.url contains "/accessibility/" %}true{% else %}false{% endif %}" aria-controls="nav-a7">
+      Accessibility
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>  
+    </button>
+  </li>
+  <div id="nav-a7" class="usa-accordion-content" aria-hidden="{% if page.url contains "/accessibility/" %}false{% else %}true{% endif %}">
+    <ul class="usa-sidenav-list">
+      <li class="{% if page.url contains "accessibility/index" %}active-level{% endif %}">
+        <a class="{% if page.url contains "accessibility/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/accessibility">Overview</a>
+      </li>
+      {% assign sortedAccessibility = site.accessibility | sort: "title", "last" %}
+      {% for p in sortedAccessibility %}
+        {% if p.layout != "iframe" %}
+          {% unless p.index or p.draft %}
+            <li class="{% if p.url == page.url %}active-level{% endif %}">
+              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            </li>
+          {% endunless %}
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- About -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="{% if page.url contains "/about/" %}true{% else %}false{% endif %}" aria-controls="nav-a8">
+      About
+      <va-icon icon="add" size="3"></va-icon>
+      <va-icon icon="remove" size="3"></va-icon>
+    </button>
+  </li>
+  <div id="nav-a8" class="usa-accordion-content" aria-hidden="{% if page.url contains "/about/" %}false{% else %}true{% endif %}">
+    <ul class="usa-sidenav-list">
+      <li class="{% if page.url contains "about/index" %}active-level{% endif %}">
+        <a class="{% if page.url contains "about/index" %}usa-current{% endif %}" href="{{ site.baseurl }}/about">Overview</a>
+      </li>
+      {% assign sortedAbout = site.about | sort: "title", "last" %}
+      {% for p in sortedAbout %}
+       {% if p.layout != "iframe" %}
+          {% unless p.index or p.draft %}
+            <li class="{% if p.url == page.url %}active-level{% endif %}">
+              <a class="{% if p.url == page.url %}usa-current{% endif %}" href="{{site.baseurl}}{{ p.url }}">{{p.title}}</a>
+            </li>
+          {% endunless %}
+        {% endif %}
       {% endfor %}
     </ul>
   </div>

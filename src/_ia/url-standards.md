@@ -1,7 +1,7 @@
 ---
 layout: category
-title: URLs
-permalink: /components/url-standards/
+title: URL Standards
+permalink: /ia/url-standards/
 sub-pages:
   - sub-page: Redirects
   - sub-page: Vanity URLs
@@ -13,6 +13,7 @@ anchors:
   - anchor: Guidelines for parameters in URLs
 redirect_from:
   - /content-style-guide/url-standards
+  - /components/url-standards/
 ---
 
 URLs are a highly visible attribute of your content that improve user experience, accessibility, and search rankings by providing:
@@ -45,15 +46,15 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 
 - URLs must accurately represent the placement and hierarchy of the content/page.
   - The hierarchy and structure represented in the URL help users and search engines understand the location and relationship between content on the site.
-- URLs should not include invalid or empty sub-directories (i.e. a directory that doesn’t contain any pages).
-  - Advanced users often use the URL as a means of navigation. They often “hack a URL” by truncating it back to a sub-directory in order to get to broader content.
+- URLs should not include invalid or empty sub-directories (i.e. a directory that doesn't contain any pages).
+  - Advanced users often use the URL as a means of navigation. They often "hack a URL" by truncating it back to a sub-directory in order to get to broader content.
   - If an empty sub-directory is absolutely necessary (i.e. for future planning), ensure the empty directory redirects users to a proper location so users do not get a 404.
 
 ### URLs must be readable, utilize plain language and include appropriate and consistent keywords
 
-- Users (and search engines) must be able to easily “read” the URL and gain an understanding of its content and purpose..
+- Users (and search engines) must be able to easily "read" the URL and gain an understanding of its content and purpose..
 - URL keywords should be selected from the primary keywords used in the H1 of the page and accurately represent the content of the page.
-  - If the content does not include information on eligibility, do not use the word “eligibility” in the URL.  This can be misleading to users and search engines.
+  - If the content does not include information on eligibility, do not use the word "eligibility" in the URL.  This can be misleading to users and search engines.
   - Primary keywords representing the content should be consistently used across headings, links, URLs and navigation components.
 - URLs must adhere to the same content styleguide and plain language standards as the content of the page.
 - URLs cannot have incorrect spelling or grammatical errors.  
@@ -62,16 +63,16 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 
 - Do not use overly broad terms that may be misinterpreted, or shorten URLs so much that meaning and context are lost.  Be specific in describing the focus of the page.
 - Do not repeat keywords across multiple segments of a URL unless it is necessary to clarify meaning of the content.
-- Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.  
+- Do not include stop words - such as "a", "the", "and" - unless they are necessary to clarify meaning of the content.  
 
-### URLs can’t include Personally Identifiable Information (PII) and Protected Health Information (PHI)
+### URLs can't include Personally Identifiable Information (PII) and Protected Health Information (PHI)
 
-- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual’s identity or health information
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual's identity or health information
 - [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
 
 ## Changing URLs or retiring content
 
-- Always implement a [redirect](/components/url-standards/redirects) when pages are taken down or the URL changes.
+- Always implement a [redirect](/ia/url-standards/redirects) when pages are taken down or the URL changes.
 - This ensures users do not encounter a 404 page or a broken link.
 - This also tells search engines to no longer index a page, and to pass any SEO value along to the new page.
 
@@ -178,7 +179,7 @@ When adding parameters to your URL, in addition to all the URL standards above, 
 
 - Do not use any PII in parameter values, or any other data that should not be logged or tracked. This includes everything from names and contact information to unique identifiers used that an be used to identify a specific person such as IP address, ICN, or EDIPI.
 - Set the static, or main, URL as the canonical page using the `rel=canonical` attribute when the parameter-based URL is similar content to the canonical content. An example is when using parameters for sorting. The data returned is the same, but is in a different order, therefore include the `rel=canonical` attribute to tell search engines that the resorted page is the same as the original page.
-- Parameter keys should be no more than 1 word for a label and must clearly define what the parameter is. Do not use generic terms such as “parm” or “key”.
+- Parameter keys should be no more than 1 word for a label and must clearly define what the parameter is. Do not use generic terms such as "parm" or "key".
 - Do not expose empty or null value parameters in the URL.
 - For multi-select type values, combine the values into a single parameter rather than exposing the key multiple times in a URL multiple times (i.e. `color=blue,red,white` vs `color=blue&color=red&color=white`).
 - Avoid linking to URLs with parameters. Link to the static or canonical URL when possible.

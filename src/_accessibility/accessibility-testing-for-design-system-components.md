@@ -1,8 +1,8 @@
 ---
 layout: documentation
 title: Accessibility testing for design system components
-permalink: /about/accessibility/accessibility-testing-for-design-system-components
-has-parent: /about/accessibility/
+permalink: /accessibility/accessibility-testing-for-design-system-components
+has-parent: /accessibility/
 anchors:
   - anchor: Overview
   - anchor: VFS team responsibilities
