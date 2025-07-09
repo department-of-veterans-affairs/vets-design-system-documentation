@@ -6,7 +6,10 @@
       "Bash(mkdir:*)",
       "Bash(cp:*)",
       "Bash(yarn build)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)"
     ],
     "deny": []
   }

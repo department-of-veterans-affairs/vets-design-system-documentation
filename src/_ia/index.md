@@ -2,6 +2,7 @@
 layout: documentation
 title: Information Architecture
 permalink: /ia/
+index: true
 intro-text: Information Architecture (IA) is the practice of organizing and structuring content in a way that helps users navigate and understand information effectively.
 ---
 

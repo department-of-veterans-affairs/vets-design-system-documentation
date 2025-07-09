@@ -2,6 +2,7 @@
 layout: category
 title: Accessibility
 permalink: /accessibility/
+index: true
 intro-text: How to follow accessibility standards when using or contributing to the VA Design System (VADS)
 sub-pages:
   - sub-page: Accessibility testing for design system components

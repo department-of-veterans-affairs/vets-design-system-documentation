@@ -2,7 +2,6 @@
 layout: documentation
 title: When a screen reader needs to announce content
 permalink: /accessibility/when-a-screen-reader-needs-to-announce-content
-has-parent: /accessibility/
 intro-text: Knowing when to announce content in a screen reader can mean the difference between a quick and helpful experience or a long and verbose experience for people who use screen readers.
 anchors:
   - anchor: Accessibility problem being solved
