@@ -25,11 +25,11 @@ anchors:
 
 #### Default
 
-{% include storybook-preview.html story="segmented-control--2-segments" link_text="va-button-segmented--default" %}
+{% include storybook-preview.html story="va-button-segmented--default" link_text="va-button-segmented--default" %}
 
 #### Selected item
 
-{% include storybook-preview.html story="segmented-control--2-segments" link_text="va-button-segmented--selected-item" %}
+{% include storybook-preview.html story="va-button-segmented--selected-item" link_text="va-button-segmented--selected-item" %}
 
 ### App
 
