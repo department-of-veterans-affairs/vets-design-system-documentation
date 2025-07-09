@@ -152,17 +152,6 @@ This logic helps clarify whose information is being collected and is especially 
 Veterans, their spouse, or a dependent can complete forms. Depending on who is completing the form, some slight alterations to the text content may need to shift. Update content as needed. For example, shift "What is your current marital status" to "What is the Veteran's current marital status"?
 
 
-## Accessibility considerations
-
-### Radio button accessibility considerations
-
-<va-link-action
-  href="https://design.va.gov/components/form/radio-button"
-  text="Refer to the VADS Radio Button component for accessibility guidance"
-  type="secondary"
-></va-link-action>
-
-
 ## Research findings
 
 A [secondary research report](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Patterns/marital-status/Discovery%20Research%20Report.md) from April 2025 explores which VA forms ask questions related to an applicant's marital status and how they phrase these questions. It also provides recommendations that influenced the creation of this pattern. Learn more in the [research report](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Patterns/marital-status/Discovery%20Research%20Report.md).
