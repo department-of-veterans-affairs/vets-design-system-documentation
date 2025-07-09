@@ -9,13 +9,14 @@ As part of our plain language style, we use sentence capitalization as the stand
 
 ## Use sentence case capitalization
 
-Use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, and text links, unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
+Use sentence case capitalization for most content, including page titles, headings, subheadings, buttons, text links, and mobile app interface buttons, unless a word is a proper noun. Don't capitalize common words for emphasis or importance.
 
 ### Exceptions where we use title capitalization
 
 - Proper nouns (example: branded terms like "VA.gov," official program names, state names, names of federal agencies, days of the week and months, compositions such as titles of books, etc.)
 - The word “Veterans”
 - Global navigation, top menu labels (VA Benefits and Health Care; About VA; Find a VA Location)
+- For mobile app native actions, use title case for iOS and all caps for Android
 
 ### Exceptions where we use initial capitalization
 - SEO title tags (example: VA Prescription Refill And Tracking \| Veterans Affairs). See [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo) for more information.
