@@ -14,6 +14,7 @@ anchors:
   - anchor: Code usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Privacy guidance
   - anchor: Component checklist
   - anchor: Related
 ---
@@ -24,11 +25,11 @@ anchors:
 
 #### Default
 
-{% include storybook-preview.html story="segmented-control--2-segments" link_text="va-button-segmented--default" %}
+{% include storybook-preview.html story="va-button-segmented--default" link_text="va-button-segmented--default" %}
 
 #### Selected item
 
-{% include storybook-preview.html story="segmented-control--2-segments" link_text="va-button-segmented--selected-item" %}
+{% include storybook-preview.html story="va-button-segmented--selected-item" link_text="va-button-segmented--selected-item" %}
 
 ### App
 
@@ -126,6 +127,10 @@ For native mobile apps, the component must correctly report its properties to th
 * **Font Scaling:** In some native implementations, e.g., Apple's, this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
 
 Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)
+
+## Privacy guidance
+
+{% include content/privacy-buttons.md %}
 
 ## Related
 
