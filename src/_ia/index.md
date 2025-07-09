@@ -1,9 +1,12 @@
 ---
-layout: documentation
+layout: category
 title: Information Architecture
 permalink: /ia/
 index: true
 intro-text: Information Architecture (IA) is the practice of organizing and structuring content in a way that helps users navigate and understand information effectively.
+sub-pages:
+  - sub-page: URL Standards
+  - sub-page: VA Health and Benefits app
 ---
 
 ## What is Information Architecture?
@@ -51,4 +54,3 @@ The VA Mobile App follows established IA principles to create intuitive user exp
 
 - [Content Style Guide]({{ site.baseurl }}/content-style-guide) - Guidelines for writing clear, consistent content
 - [Navigation Patterns]({{ site.baseurl }}/patterns/help-users-to/navigate-benefit-applications) - Design patterns for helping users navigate
-- [URL Standards]({{ site.baseurl }}/ia/url-standards) - Guidelines for creating consistent, user-friendly URLs
