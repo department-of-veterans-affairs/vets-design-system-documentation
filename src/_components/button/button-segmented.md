@@ -4,9 +4,9 @@ permalink: /components/button/button-segmented
 has-parent: /components/button/
 title: Button - Segmented
 aka: Segmented button, Segmented control
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=28629-138&t=3efQOtruhM1IdGDg-1
 research-link: Buttons
 intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
-status: use-deployed
 web-component: va-button-segmented
 anchors:
   - anchor: Examples
@@ -22,7 +22,13 @@ anchors:
 
 ### Web
 
-This component has not yet been built for the web.
+#### Default
+
+{% include storybook-preview.html story="va-button-segmented--default" link_text="va-button-segmented--default" %}
+
+#### Selected item
+
+{% include storybook-preview.html story="va-button-segmented--selected-item" link_text="va-button-segmented--selected-item" %}
 
 ### App
 
@@ -36,7 +42,7 @@ This component has not yet been built for the web.
 
 #### 4 segments
 
-{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--3-segments" is_mobile=true %}
+{% include storybook-preview.html story="segmented-control--4-segments" link_text="va-mobile_segmented-control--4-segments" is_mobile=true %}
 
 ## Usage
 
@@ -60,7 +66,7 @@ Use a Segmented Button for filtering, sorting, or switching views of a single se
 
 * If you need to group content that is dissimilar.
 * If you need to enable actions — such as adding, removing, or editing content.
-* If it needs to be accompanied by any other controls or a title if used in the top navigation bar.
+* If it is used in the top navigation bar alongside other controls or a title.
 
 Use [Tabs]({{ site.baseurl }}/components/tabs) for navigation between distinct, related pages or content sections. Each tab typically corresponds to a unique URL.
 * **Example:** Navigating between "Inbox," "Sent," and "Archived" folders.
@@ -107,21 +113,22 @@ Ensuring the component is accessible is critical on all platforms.
 * **Name:** The purpose of each button must be clear and match its visible label.
 * **Role:** Buttons should identify as “toggle buttons” to the screen reader (e.g., VoiceOver) and announce the appropriate action (e.g., Apple’s Voiceover’s “to select press Control-Option-Space”).
 * **State:** The component must clearly announce its state, such as "Selected" for the active button.
-Navigation: When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
-* **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels…”
+* **Navigation:** When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
+* **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels.”
 
 ### App
 
-For native mobile apps, the component must correctly report its properties to the operating system's accessibility services. 
+For native mobile apps, the component must correctly report its properties to the operating system's accessibility services.
 
 * **Name:** The purpose of each button must be clear and match its visible label.
 * **Role:** It should identify as a "button" to the screen reader (e.g., iOS VoiceOver) and announce the appropriate action (e.g., Android TalkBack's "double tap to activate").
-* **State:** The component must clearly announce its state, such as "Selected" for the active button.
-* **Font Scaling:** In some native implementations (e.g., Apple's), this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
+* **State:** The component must clearly announce its state, such as "Selected," for the active button.
+* **Font Scaling:** In some native implementations, e.g., Apple's, this component may intentionally ignore the user's font scaling settings to maintain a consistent layout in the navigation bar. This is a design trade-off where component integrity is prioritized over text resizing.
 
 Reference [Segmented Control / Tab - Native app accessibility checklist - MagentaA11y](https://www.magentaa11y.com/checklist-native/segmented-control/)
 
 ## Related
+
 * [Tabs]({{ site.baseurl }}/components/tabs)
 
 {% include _component-checklist.html component_name=page.web-component %}
