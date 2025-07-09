@@ -64,6 +64,11 @@ A URL consists of a domain, sub-directories (optional), and a page name.
 - Do not repeat keywords across multiple segments of a URL unless it is necessary to clarify meaning of the content.
 - Do not include stop words - such as “a”, “the”, “and” - unless they are necessary to clarify meaning of the content.  
 
+### URLs can’t include Personally Identifiable Information (PII) and Protected Health Information (PHI)
+
+- No part of the URL, including parameters and anchor tags, can include information that can be used either by itself or in combination with other information to uncover that individual’s identity or health information
+- [Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)
+
 ## Changing URLs or retiring content
 
 - Always implement a [redirect](/components/url-standards/redirects) when pages are taken down or the URL changes.

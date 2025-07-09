@@ -124,3 +124,13 @@ The va-search component behaves as an input field with a submit button by defaul
   text="Refer to the U.S. Web Design System for accessibility guidance"
   type="secondary"
 ></va-link-action>
+
+## Privacy guidance 
+
+**An open text field that allows users to enter a search query has a high risk for users to enter Personally Identifiable Information (PII) or Protected Health Information (PHI).** 
+
+If search entries are tracked, proper procedures must be in place for stripping/redacting PII/PHI from logs. 
+
+If the user’s entered query is passed in a URL parameter, that parameter value should be stripped from any logs. 
+
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
