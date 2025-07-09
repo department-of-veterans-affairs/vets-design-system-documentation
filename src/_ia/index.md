@@ -18,26 +18,31 @@ Information Architecture (IA) is the structural design of shared information env
 Good information architecture follows these key principles:
 
 ### 1. User-Centered Design
+
 - Structure content based on user needs and mental models
 - Conduct user research to understand how people categorize and search for information
 - Test navigation and content organization with real users
 
 ### 2. Clear Hierarchy
+
 - Create logical groupings and categories
 - Use consistent labeling and terminology
 - Establish clear parent-child relationships between content
 
 ### 3. Findability
+
 - Make content discoverable through multiple pathways
 - Implement effective search functionality
 - Use descriptive headings and metadata
 
 ### 4. Consistency
+
 - Apply consistent patterns across the entire system
 - Use standardized navigation elements
 - Maintain consistent terminology and content structure
 
 ### 5. Scalability
+
 - Design systems that can grow and evolve
 - Create flexible structures that accommodate new content
 - Plan for future expansion and changes
@@ -45,9 +50,11 @@ Good information architecture follows these key principles:
 ## IA Resources
 
 ### VA.gov IA Team
+
 For questions about site-wide information architecture and content organization on VA.gov, contact the VA.gov IA team.
 
 ### VA Mobile App IA
+
 The VA Mobile App follows established IA principles to create intuitive user experiences. These principles guide content organization and navigation design across all VA digital products.
 
 ## Related Topics
