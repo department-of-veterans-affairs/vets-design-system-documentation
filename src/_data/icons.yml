@@ -223,6 +223,9 @@
 - id: star
   category: Hub
 
+- id: threads
+  category: Social
+
 - id: tty
   category: Appointments, DS Components
 
