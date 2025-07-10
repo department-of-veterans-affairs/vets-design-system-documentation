@@ -5,6 +5,7 @@ intro-text: Title tags are HTML elements that are displayed in browsers and on s
 anchors:
   - anchor: Example
   - anchor: Additional guidance
+  - anchor: Privacy guidance
 ---
 
 On VA.gov, title tags are pulled from the H1 (the page title), so it’s especially important to use the primary keyword or phrase in the page title.
@@ -44,3 +45,35 @@ Each page in the flow should have the plain language form or task name as the ti
   - Instead of: What's Your Address \| Veterans Affairs
 - Example: Apply For VA Health Care \| Veterans Affairs
   - Instead of: Form 10-10ez \| Veterans Affairs
+
+## Privacy guidance 
+
+**Title tags can’t include Personally Identifiable Information (PII) or Protected Health Information (PHI).** 
+
+Pages with PII/PHI in H1s must genericize the title tag. This ensures the information isn’t tracked back in analytics or other logs through the page title. 
+
+For example, a detail page within an authenticated tool may have an H1 that includes specific information about a person—a physician or clinic visited, a medication prescribed, a disability rating, an individual’s file number, etc.   
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+H1: Prednisone, 25mg
+Breadcrumb: VA.gov home > My HealtheVet > Medications > Medication detail
+Title tag: Medication detail – Medications | Veterans Affairs
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+H1: Prednisone, 25mg
+Breadcrumb: VA.gov home > My HealtheVet > Medications > Prednisone, 25mg
+Title tag: Prednisone, 25mg – Medications | Veterans Affairs
+</div>
+</div>
+</div>
+
+This does create an a11y infraction where there isn’t a unique title tag for each page, but there isn’t other meaningful data that can be exposed in the title tag to differentiate it. The VA 508 office approved this approach in these use cases.  
+
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii) 
+
