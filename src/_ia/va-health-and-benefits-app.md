@@ -10,15 +10,6 @@ anchors:
   - anchor: Background
 ---
 
-## When to think about IA
-
-* Launching a new feature in the VA Health and Benefits app
-* Adding a new category or subsection to the VA Health and Benefits app
-* Rewriting content and needing to split or merge an existing screen
-* Looking to improve the findability of an existing feature and/or screen
-* Removing a feature and/or screen
-* Changing the UX of global navigational elements (i.e. tab bar/bottom navigation, top bar, including treatments for back buttons, contextual actions and screen titles)
-
 ## IA documentation
 
 Understanding what's guiding the app's current information architecture and make future decisions that are in line with the existing organization, navigation, labeling, and indexing systems.
