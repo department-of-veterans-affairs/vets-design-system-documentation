@@ -1,9 +1,7 @@
 ---
-layout: default
+layout: content-style-guide
 title: Alternative text for images
 ---
-
-# Alternative text for images
 
 ## What alternative text is
 
@@ -36,3 +34,14 @@ Follow these 5 tips to create relevant and meaningful alt text:
 3. **Avoid duplicate page content.** Only include unique information that's not also in page content near the image. Repeating information can cause frustration or confusion.
 4. **Skip phrases like "image of," "photo of," or "graphic of."** Screen readers already announce that each image is a graphic. So you don't need to add this context. 
 5. **Leave the image file name out of your alt text.** File names don't provide useful information and can cause frustration or confusion.
+
+## Privacy guidance 
+
+**Personally Identifiable Information (PII) or Protected Health Information (PHI) shouldn’t be used in alt text for images if the images are interactive.** 
+
+- This ensures the information isn’t tracked back in analytics or other logs. 
+- Interactions with images are logged in some analytics tools so alternative text must be masked to protect PII/PHI.  
+[Learn more about masking information in the Datadog RUM dashboard](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/analytics/setup-real-user-monitoring.md#privacy) 
+- For example, a page has images representing a series of x-rays, and each x-ray includes the body part and injury that is the focus of the image (ex. anterior fracture of the left tibia). The body part and injury x-rayed are considered PHI.    
+
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)  

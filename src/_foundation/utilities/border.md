@@ -1,22 +1,10 @@
 ---
-layout: default
+layout: documentation
 permalink: /foundation/utilities/border
 has-parent: /foundation/utilities/
 title: Border
-anchors:
-  - anchor: Border shorthand
-  - anchor: Border style
-  - anchor: Border color
-  - anchor: Responsive prefixes
+intro-text: Set width, style, and color of an item’s borders.
 ---
-
-# Border
-
-<div class="va-introtext" markdown="1">
-  Set width, style, and color of an item’s borders.
-</div>
-
-{% include _site-on-this-page.html %}
 
 ## Border shorthand
 
