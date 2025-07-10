@@ -1,10 +1,11 @@
 ---
 layout: content-style-guide
-title: Bulleted lists
-intro-text: Bulleted lists help make information more scannable and easier to understand.  If a sentence contains more than 3 items or ideas, we recommend breaking them up into a bulleted list. These guidelines also apply to content for checkboxes and radio buttons in forms.
+title: Bulleted and numbered lists
+intro-text: Bulleted and numbered lists help make information more scannable and easier to understand. If a sentence contains more than 3 items or ideas, we recommend breaking them up into a list. These guidelines also apply to content for checkboxes and radio buttons in forms.
 anchors:
   - anchor: Considerations
-  - anchor: Punctuation for bulleted lists
+  - anchor: Punctuation for lists
+  - anchor: Links in lists
 ---
 
 ## Considerations
@@ -14,10 +15,10 @@ anchors:
 ## Punctuation
 
 * When the list is made up of fragments or single sentences, don't use ending periods
-* If one or more bullets contains an additional sentence, use ending periods on all items in the bulleted list—including any fragments
-* Don't use a period at the end of the last bullet in a series of fragments
+* If one or more list items contains an additional sentence, use ending periods on all items in the list—including any fragments
+* Don't use a period at the end of the last item in a series of fragments
 
-**Note:** Punctuation of bullets is determined by list, not by page. It's OK to have a list of bullets that are fragments (that don’t use periods) on the same page as a list of bullets with multiple full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
+**Note:** Punctuation of list items is determined by list, not by page. It's OK to have a list that are fragments (that don’t use periods) on the same page as a list with multiple full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
 
 ### Example of bulleted list with fragments
 
@@ -119,3 +120,10 @@ Here's what you'll need to apply:
 </div>
 </div>
 </div>
+
+## Links in lists
+
+-	List items can be links in certain situations. We don’t want to overwhelm people with a long list of links, if possible.
+-	Not all items in a list need to be a link. It’s okay to have only 1 or 2 items in a list linked.
+-	If every item in a list is a link, keep the list short (less than 7 items). Every link should go to a different location—don’t link to the same page multiple times in the list.
+-	When a list item is a link, the entire list item must be part of the link. Don’t link just 1 or 2 words.
