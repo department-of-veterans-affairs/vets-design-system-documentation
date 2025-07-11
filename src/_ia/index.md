@@ -59,7 +59,7 @@ Thinking about IA is important throughout the planning and design process.  Thes
 
 ### VA.gov IA Team
 
-For questions about site-wide information architecture and content organization on VA.gov, contact the VA.gov IA team.
+For questions about site-wide information architecture and content organization on VA.gov, [contact the VA.gov IA team](https://dsva.slack.com/archives/C01K37HRUAH).
 
 ### IA standards and guidance
 
