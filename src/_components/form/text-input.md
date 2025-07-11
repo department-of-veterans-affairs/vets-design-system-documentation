@@ -171,3 +171,6 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 ### Additional accessibility considerations for VA
 
 * **Avoid `placeholder` text.** Excluding our max characters variation (v1), avoid using placeholder text. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. Also, placeholder text is no longer visible once a user clicks into the field. Thus users will no longer have that text available when they need to review their entries. People who have cognitive or visual disabilities have additional problems with placeholder text.
+
+## Privacy guidance
+{% include content/privacy-open-text.md %}

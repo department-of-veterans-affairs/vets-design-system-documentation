@@ -228,3 +228,6 @@ The native onBlur event is available on this component. It can be used by adding
   text="Refer to the U.S. Web Design System for accessibility guidance"
   type="secondary"
 ></va-link-action>
+
+## Privacy guidance 
+ {% include content/privacy-selection-fields.md %}
