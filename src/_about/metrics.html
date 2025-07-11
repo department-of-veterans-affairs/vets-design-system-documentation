@@ -10,6 +10,40 @@ permalink: /about/metrics/
 
 <div class="metrics-dashboard">
   
+  <h2>Summary Metrics</h2>
+  
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <h4>Open Issues</h4>
+      <div class="metric-value" id="open-issues">-</div>
+    </div>
+    
+    <div class="metric-card">
+      <h4>Closed This Month</h4>
+      <div class="metric-value" id="closed-month">-</div>
+    </div>
+    
+    <div class="metric-card">
+      <h4>Average Resolution Time</h4>
+      <div class="metric-value" id="avg-resolution">-</div>
+    </div>
+    
+    <div class="metric-card">
+      <h4>Total Components</h4>
+      <div class="metric-value" id="total-components">-</div>
+    </div>
+    
+    <div class="metric-card">
+      <h4>Most Used Component</h4>
+      <div class="metric-value" id="most-used-component">-</div>
+    </div>
+    
+    <div class="metric-card">
+      <h4>Total Component Usages</h4>
+      <div class="metric-value" id="total-usages">-</div>
+    </div>
+  </div>
+  
   <h2>Issue Tracking Metrics</h2>
   
   <div class="metrics-section">
@@ -28,22 +62,13 @@ permalink: /about/metrics/
     </div>
   </div>
   
-  <h2>Additional Metrics</h2>
+  <h2>Component Usage Metrics</h2>
   
-  <div class="metrics-grid">
-    <div class="metric-card">
-      <h4>Open Issues</h4>
-      <div class="metric-value" id="open-issues">-</div>
-    </div>
-    
-    <div class="metric-card">
-      <h4>Closed This Month</h4>
-      <div class="metric-value" id="closed-month">-</div>
-    </div>
-    
-    <div class="metric-card">
-      <h4>Average Resolution Time</h4>
-      <div class="metric-value" id="avg-resolution">-</div>
+  <div class="metrics-section">
+    <h3>Top Components by Usage</h3>
+    <p>Most frequently used design system components</p>
+    <div id="top-components-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
     </div>
   </div>
   
@@ -119,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Clear existing charts and re-render
     document.getElementById('quarterly-chart').innerHTML = '';
     document.getElementById('velocity-chart').innerHTML = '';
+    document.getElementById('top-components-chart').innerHTML = '';
     
     // Re-fetch and render with new dimensions
     loadMetricsData();
@@ -126,23 +152,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function loadMetricsData() {
-  // Try to load metrics data
-  fetch('/assets/data/metrics/issue-metrics.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Metrics data not available');
-      }
+  // Load both issue metrics and component usage data
+  Promise.all([
+    fetch('/assets/data/metrics/issue-metrics.json').then(response => {
+      if (!response.ok) throw new Error('Issue metrics not available');
+      return response.json();
+    }),
+    fetch('/assets/data/metrics/component-usage.json').then(response => {
+      if (!response.ok) throw new Error('Component usage not available');
       return response.json();
     })
-    .then(data => {
-      renderQuarterlyChart(data.quarterly);
-      renderVelocityChart(data.velocity);
-      updateMetricCards(data.summary);
-    })
-    .catch(error => {
-      console.log('Metrics data not yet available:', error);
-      showPlaceholders();
-    });
+  ])
+  .then(([issueData, componentData]) => {
+    // Render issue tracking charts
+    renderQuarterlyChart(issueData.quarterly);
+    renderVelocityChart(issueData.velocity);
+    
+    // Render component usage charts
+    renderTopComponentsChart(componentData);
+    
+    // Update metric cards
+    updateMetricCards(issueData.summary, componentData.summary_stats);
+  })
+  .catch(error => {
+    console.log('Some metrics data not yet available:', error);
+    showPlaceholders();
+  });
 }
 
 function showPlaceholders() {
@@ -150,6 +185,8 @@ function showPlaceholders() {
     '<div class="chart-placeholder">Quarterly activity chart will be available once data collection is set up</div>';
   document.getElementById('velocity-chart').innerHTML = 
     '<div class="chart-placeholder">Velocity chart will be available once data collection is set up</div>';
+  document.getElementById('top-components-chart').innerHTML = 
+    '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
 }
 
 function renderQuarterlyChart(data) {
@@ -384,12 +421,125 @@ function renderVelocityChart(data) {
     .attr('fill', '#0071bb');
 }
 
-function updateMetricCards(summary) {
-  if (!summary) return;
+
+function renderTopComponentsChart(data) {
+  if (!data || !data.top_components_overall) {
+    return;
+  }
   
-  document.getElementById('open-issues').textContent = summary.open_issues || '-';
-  document.getElementById('closed-month').textContent = summary.closed_this_month || '-';
-  document.getElementById('avg-resolution').textContent = summary.avg_resolution_days ? 
-    `${summary.avg_resolution_days} days` : '-';
+  const container = document.getElementById('top-components-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 30 : 40, 
+    bottom: containerWidth < 600 ? 120 : 100, 
+    left: containerWidth < 600 ? 60 : 80
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 350 : 450) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#top-components-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Take top 10 components
+  const topComponents = data.top_components_overall.slice(0, 10);
+  
+  // Setup scales
+  const x = d3.scaleBand()
+    .domain(topComponents.map(d => d.name))
+    .range([0, width])
+    .padding(0.1);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(topComponents, d => d.usage_count)])
+    .range([height, 0]);
+  
+  // Add axes
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x));
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '10px' : '12px');
+    
+  g.append('g')
+    .call(d3.axisLeft(y));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Usage Count');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Component');
+  
+  // Add bars
+  g.selectAll('.bar')
+    .data(topComponents)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.name))
+    .attr('width', x.bandwidth())
+    .attr('y', d => y(d.usage_count))
+    .attr('height', d => height - y(d.usage_count))
+    .attr('fill', '#0071bb');
+    
+  // Add value labels on bars
+  g.selectAll('.bar-label')
+    .data(topComponents)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.name) + x.bandwidth() / 2)
+    .attr('y', d => y(d.usage_count) - 5)
+    .attr('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .style('font-weight', 'bold')
+    .text(d => d.usage_count);
+}
+
+function formatComponentType(type) {
+  const typeMap = {
+    'v3': 'V3 Web Components',
+    'v1': 'V1 Web Components', 
+    'react': 'React Components',
+    'icons': 'Icons'
+  };
+  return typeMap[type] || type;
+}
+
+function updateMetricCards(issueSummary, componentSummary) {
+  // Update issue metrics
+  if (issueSummary) {
+    document.getElementById('open-issues').textContent = issueSummary.open_issues || '-';
+    document.getElementById('closed-month').textContent = issueSummary.closed_this_month || '-';
+    document.getElementById('avg-resolution').textContent = issueSummary.avg_resolution_days ? 
+      `${issueSummary.avg_resolution_days} days` : '-';
+  }
+  
+  // Update component metrics
+  if (componentSummary) {
+    document.getElementById('total-components').textContent = componentSummary.total_components || '-';
+    document.getElementById('most-used-component').textContent = componentSummary.most_used || '-';
+    document.getElementById('total-usages').textContent = componentSummary.total_usages || '-';
+  }
 }
 </script>
