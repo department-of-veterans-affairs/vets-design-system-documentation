@@ -133,3 +133,7 @@ anchors:
   text="Refer to the U.S. Web Design System for accessibility guidance"
   type="secondary"
 ></va-link-action>
+
+## Privacy guidance 
+ 
+{% include content/privacy-selection-fields.md %}
