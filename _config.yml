@@ -73,6 +73,12 @@ collections:
   templates:
     output: true
     permalink: /:collection/:title
+  accessibility:
+    output: true
+    permalink: /:collection/:title
+  ia:
+    output: true
+    permalink: /:collection/:title
 
 include:
   - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-8b28c6fa.js

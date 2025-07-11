@@ -16,27 +16,28 @@
   {% include _mobile-nav.html %}
   <div>
     {% include _site-top-nav.html %}
+    {% include _banner-whats-new.html %}
     <div class="site-content vads-u-margin-bottom--9">
       {% include _site-content-nav.html %}
       <article class="site-content__content">
         <main id="main-content" class="site-l-content-wrapper--styleguide desktop-lg:vads-u-margin-top--neg2">
+          {% if page.draft %}
+            {% include _draft.html %}
+          {% endif %}
           {% unless page.index %}
-            {% if page.draft %}
-              {% include _draft.html %}
-            {% endif %}
             {% include _site-section-name.html %}
+          {% endunless %}
           <h1 id="{{ page.title }}">{{ page.title }}</h1>
-            {% if page.status %}
-              {% include _status.html %}
-            {% endif %}
-            {% if page.intro-text %}
+          {% if page.status %}
+            {% include _status.html %}
+          {% endif %}
+          {% if page.intro-text %}
           <div class="va-introtext" markdown="1">
             {{ page.intro-text }}
           </div>
-            {% endif %}
+          {% endif %}
           <va-on-this-page></va-on-this-page>
-            {% include _site-in-this-section.html %}
-          {% endunless %}
+          {% include _site-in-this-section.html %}
           {{ content }}
         </main>
         {% include edit-on-github.html %}
