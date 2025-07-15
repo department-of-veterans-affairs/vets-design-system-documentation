@@ -53,10 +53,13 @@ NOTE: Storybook does not allow for showing components in a particular state. Thu
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-any-kind-of-image" link_text="va-file-input that accepts any kind of image" reverse="true" %}
 
 ### Accepts File Password
+<va-alert slim="true">
+  This component does not check if a file is encrypted. This logic should be done on a case-by-case basis as business needs and requirements dictate. See this guide for more information: <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>
+</va-alert>
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-file-password" link_text="va-file-input that accepts file password" reverse="true" %}
 
-*Note: This component does not check if a file is encrypted. This logic should be done on a case-by-case basis as business needs and requirements dictate. See this guide for more information: [Checking if an uploaded PDF is encrypted](https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted)*
+
 
 ### Max file size
 
