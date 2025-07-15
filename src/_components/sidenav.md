@@ -58,7 +58,7 @@ At mobile breakpoints, the navigation menu is hidden by default to save space. A
 
 ### Placement
 
-* The Side Navigation component should always appear in a consistent space throughout all of va.gov whenever it is used.
+* The Side Navigation component should always appear in a consistent space throughout all of VA.gov whenever it is used.
 * At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
 * At mobile breakpoints, the Side Navigation should appear below the page title and any introductory content, but above the main body content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
 
@@ -78,7 +78,7 @@ This compositional structure allows developers to build complex navigation menus
 
 ## Content considerations
 
-* Keep the navigation links short. They can be shorter derivatives of page titles themselves.
+* Keep links in the side navigation short. They can be shorter derivatives of page titles themselves.
 * If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
 
 ## Accessibility considerations
