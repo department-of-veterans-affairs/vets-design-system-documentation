@@ -129,7 +129,7 @@ If link text must include PII/PHI, click events can’t be tracked for that link
 	
 Links can’t pass PII/PHI as any part of a parameter or destination URL. Teams will need to utilize non-PII data or generate a non-PII number to use as an identifier.
 
-[Learn more on the URLs component page](https://design.va.gov/components/url-standards/)
+[Learn more on the URLs component page](https://design.va.gov/ia/url-standards/)
 
 **File downloads**
 
