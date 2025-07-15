@@ -97,4 +97,7 @@ anchors:
   type="secondary"
 ></va-link-action>
 
+## Privacy guidance 
+{% include content/privacy-selection-fields.md %}
+
 {% include _component-checklist.html component_name=page.web-component %}

@@ -1,8 +1,7 @@
 ---
 layout: documentation
 title: Accessibility annotations for VA.gov applications
-permalink: /about/accessibility/accessibility-annotations
-has-parent: /about/accessibility/
+permalink: /accessibility/accessibility-annotations
 intro-text: Accessibility annotations (called “annotations” in this document) are notes we add to our mockups to communicate meaning, behaviors, and interactions in the design or application.
 anchors:
   - anchor: Who it is for
