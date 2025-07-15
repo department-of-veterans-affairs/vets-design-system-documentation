@@ -1,9 +1,9 @@
 ---
 layout: component
 title: Side Navigation
-intro-text: "Hierarchical, vertical navigation to place at the side of a page."
+intro-text: "Vertical navigation to place at the side of a page."
 status: dont-use-proposed
-figma-link:
+figma-link: javascript:alert("Coming soon!")
 status: use-with-caution-proposed
 web-component: va-sidenav
 ---
@@ -20,15 +20,18 @@ web-component: va-sidenav
 #### Default
 [Storybook example here]
 
-#### With Submenu
+#### Levels
 [Storybook example here]
 
-#### With Submenu Linked
+#### Categorized Links
+[Storybook example here]
+
+#### Nested Links
 [Storybook example here]
 
 ## Usage
 
-### When to use Side Navigation
+### When to use side navigation
 
 * To display a navigational hierarchy with one to three levels of depth.   
 * To display the "sub-navigation" within a specific section of a website.   
@@ -48,18 +51,18 @@ The component is designed to reflect a user's task-oriented goals, rather than t
 
 There are two primary ways to structure side navigation item that contains child pages:
 
-* **Non-linkable "spoke" or category label**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.   
+* **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.   
 
-* **Standard parent-child links**: A parent item can be a standard link that navigates to a landing page for that section, while also containing a nested list of links to child pages. This is a common pattern for hierarchical site structures.
+* **Nested Links**: A parent item can be a standard link that navigates to a landing page for that section, while also containing a nested list of links to child pages. This is a common pattern for hierarchical site structures.
 
 ## Behavior
 
-At mobile breakpoints, the navigation menu is hidden by default to save space. A trigger button, typically labeled "Related pages menu", reveals the navigation menu similarly to an [accordion]({site.baseurl}}/components/accordion) when activated.
+At mobile breakpoints, the navigation menu is hidden by default to save space. A trigger button, typically labeled "Related pages menu", reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
 
 ### Placement
 
 * The Side Navigation component should always appear in a consistent space throughout all of VA.gov whenever it is used.
-* At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
+* At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({{site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
 * At mobile breakpoints, the Side Navigation should appear below the page title and any introductory content, but above the main body content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
 
 ## Code usage
