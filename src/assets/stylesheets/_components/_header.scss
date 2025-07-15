@@ -6,7 +6,7 @@
 .site-header .site-l-wrapper {
   padding-right: 0;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     padding-right: units(5);
   }
 
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     align-items: center;
   }
 }
@@ -40,7 +40,7 @@
   margin: 0;
   width: auto;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     display: none;
   }
 }
@@ -52,7 +52,7 @@
   font-style: normal;
   margin: $units-3 0;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     font-size: 2rem;
   }
   strong {
@@ -88,12 +88,12 @@
   display: none;
   background-color: $vads-color-primary-darker;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     display: block;
   }
 
   &.sticky {
-    @include media($nav-width) {
+    @include media($desktop) {
       position: -webkit-sticky;
       position: sticky;
       top: -1px;
@@ -106,7 +106,7 @@
   border-top: 1px solid white;
   display: none;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     display: flex;
     justify-content: space-between;
   }
@@ -136,7 +136,7 @@
 .site-header__nav-item__link:visited {
   color: #fff;
   display: block;
-  padding: $units-2 $units-3;
+  padding: $units-2 units(2.5);
   text-decoration: none;
   transition: none;
 }

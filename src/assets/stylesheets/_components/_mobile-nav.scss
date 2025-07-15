@@ -20,7 +20,7 @@
     content: none;
   }
 
-  @include media($nav-width) {
+  @include media($desktop) {
     display: none;
   }
 }
@@ -29,7 +29,7 @@
   display: block;
   animation: slidein-left 0.3s ease-in-out;
 
-  @include media($nav-width) {
+  @include media($desktop) {
     display: none;
   }
 }
@@ -78,7 +78,7 @@
     opacity: 1;
     visibility: visible;
   }
-  @include media($nav-width) {
+  @include media($desktop) {
     display: none;
   }
 }

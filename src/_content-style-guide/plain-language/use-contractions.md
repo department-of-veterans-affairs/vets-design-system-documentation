@@ -1,10 +1,16 @@
 ---
-layout: content-style-guide
+layout: default
 permalink: /content-style-guide/plain-language/use-contractions
 has-parent: /content-style-guide/plain-language/
 title: Use contractions
 intro-text: "Use contractions (like “don’t” instead of “do not”) to communicate with our audience in a conversational way." 
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+   {{ page.intro-text }}
+</div>
 
 {% capture example_like_this_1 %}
 If you’re filing for a condition now considered presumptive, you don’t need to include new evidence.
