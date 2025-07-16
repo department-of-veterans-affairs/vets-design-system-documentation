@@ -92,3 +92,5 @@ This compositional structure allows developers to build complex navigation menus
 
 * [On this page]({{ site.baseurl }}/components/on-this-page)
 * [Header]({{ site.baseurl}}/components/header)
+
+{% include _component-checklist.html component_name="va-service-list-item" %}
