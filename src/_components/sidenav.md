@@ -1,11 +1,22 @@
 ---
 layout: component
 title: Side Navigation
+github-title: va-sidenav
 intro-text: "Vertical navigation to place at the side of a page."
 status: dont-use-proposed
-figma-link: javascript:alert("Coming soon!")
+figma-link: 
 status: use-with-caution-proposed
 web-component: va-sidenav
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Behavior
+  - anchor: Code usage
+  - anchor: Not a Card
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Related
+  - anchor: Component checklist  
 ---
 
 <va-alert status="info">
@@ -13,45 +24,46 @@ web-component: va-sidenav
   <p>This component is currently being designed, developed, and released in phases. It is intended to eventually replace several existing side navigation implementations across VA.gov, which vary in features and functionality. The process of establishing consistent site-wide requirements and functionality agreements is currently in progress.</p>
 </va-alert>
 
-## Example
+## Examples
 
 ### Web
 
 #### Default
-[Storybook example here]
+
+{% include storybook-preview.html story="components-va-sidenav--default" link_text="va-sidenav Default" %}
 
 #### Levels
-[Storybook example here]
+{% include storybook-preview.html story="components-va-sidenav--levels" link_text="va-sidenav Levels" %}
 
 #### Categorized Links
-[Storybook example here]
+{% include storybook-preview.html story="components-va-sidenav--categorized-links" link_text="va-sidenav Categorized Links" %}
 
 #### Nested Links
-[Storybook example here]
+{% include storybook-preview.html story="components-va-sidenav--nested-links" link_text="va-sidenav Nested Links" %}
 
 ## Usage
 
 ### When to use side navigation
 
-* To display a navigational hierarchy with one to three levels of depth.   
-* To display the "sub-navigation" within a specific section of a website.   
+* To display a navigational hierarchy with one to three levels of depth.
+* To display the "sub-navigation" within a specific section of a website.
 * To present a curated group of related pages or resources in a non-hierarchical manner.
 
 ### When to consider something else
 
-* For a small site with fewer than five pages, where a full navigational hierarchy may be overly complex.   
-* For navigating within a single, long page. Use the "On this page" component instead.   
-* For linking to content that is not closely related.   
+* For a small site with fewer than five pages, where a full navigational hierarchy may be overly complex.
+* For navigating within a single, long page. Use the "On this page" component instead.
+* For linking to content that is not closely related.
 
 ### How this component works
 
-Side Navigation provides secondary navigation within a specific section of a website. It helps users understand the scope of the current topic and move between closely related pages. This is distinct from the site-wide [Header]({{ site.baseurl }}/components/header) navigation, which covers the entire site, and the [On this page]({{ site.baseurl }}/components/on-this-page) component, which navigates within a single page.   
+Side Navigation provides secondary navigation within a specific section of a website. It helps users understand the scope of the current topic and move between closely related pages. This is distinct from the site-wide [Header]({{ site.baseurl }}/components/header) navigation, which covers the entire site, and the [On this page]({{ site.baseurl }}/components/on-this-page) component, which navigates within a single page.
 
 The component is designed to reflect a user's task-oriented goals, rather than the internal structure of the VA. 
 
 There are two primary ways to structure side navigation item that contains child pages:
 
-* **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.   
+* **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.
 
 * **Nested Links**: A parent item can be a standard link that navigates to a landing page for that section, while also containing a nested list of links to child pages. This is a common pattern for hierarchical site structures.
 
@@ -73,7 +85,7 @@ The component is composed of the following parts:
 
 `va-sidenav` **(Parent Component)**: This is the main container that wraps all the navigation elements. It can include an optional header with a title and an optional icon.
 
-`va-sidenav-item` **(Internal Child Component)**: This is the basic building block for a single, clickable navigation link. It includes properties for the link's destination (`href`) and label. It can also be flagged as the `currentPage` for distinct styling.
+`va-sidenav-item` **(Internal Child Component)**: This is the basic building block for a single, clickable navigation link. It includes properties for the link's destination (`href`) and label. It can also be flagged as the `current-page` for distinct styling.
 
 `va-sidenav-submenu` **(Internal Child Component)**: This component acts as a container for nesting `va-sidenav-items`, allowing for the creation of a hierarchical structure (child and grandchild links). The parent item of a submenu can optionally be a link itself.
 
