@@ -17,9 +17,9 @@ anchors:
 Here's how we determine whether to include ending punctuation for lists:
 
 * If all items in a list are single sentences or sentence fragments, don't use ending periods for any list items (including the last item)
-* If any list items contains 2 or more sentences, use ending periods for all items in the list (including any fragments)
+* If any list item contains 2 or more sentences, use ending periods for all items in the list (including any fragments)
 
-**Note:** We determine punctuation by list, not by page. It's OK to have a list that are fragments (that don’t use periods) on the same page as a list with multiple full sentences (that use periods). Just use the correct house style of punctuation for each type of list.
+**Note:** We determine punctuation by list, not by page. It's OK to have a list of fragments with no ending periods on the same page as a list of multiple full sentences with ending periods. Just use the correct house style of punctuation for each type of list.
 
 ### Example of bulleted list with fragments
 
@@ -56,7 +56,7 @@ __What documents and information do I need to apply?__
 
 ### Example of bulleted list with conjunctions
 
-For complex eligibility criteria, we use the conjunctions “and” or “or” at the end of each individual requirements to help make the relationship between the requirements clear. In these cases, use a comma before the conjunction and bold the “**and**” or “**or**” at the end of each bullet point. Always separate out list of “**and**” and “**or**” into 2 separate lists.
+For complex eligibility criteria, we use the conjunctions “and” or “or” at the end of each individual requirement in the list to help make the relationship between the requirements clear. In these cases, use a comma before the conjunction and bold the “**and**” or “**or**” at the end of each bullet point. Always separate out lists of “**and**” and “**or**” requirements.
 
 <div class="do-dont">
 <div class="do-dont__do">
@@ -72,8 +72,8 @@ __Both of these descriptions must be true:__
 
 __And at least one of these descriptions must be true:__
 
-- You got sick or injured while serving in the military—and can link this condition to your illness or injury (called an in-service disability claim),** or**
-- You had an illness or injury before you joined the military—and serving made it worse (called a pre-service disability claim),** or**
+- You got sick or injured while serving in the military—and can link this condition to your illness or injury (called an in-service disability claim), **or**
+- You had an illness or injury before you joined the military—and serving made it worse (called a pre-service disability claim), **or**
 - You have a disability related to your active-duty service that didn’t appear until after you ended your service (called a post-service disability claim)
 
 </div>
@@ -83,15 +83,15 @@ __And at least one of these descriptions must be true:__
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
 
-__All of these must be true:__
-
 You may be eligible for VA disability benefits or compensation if you meet these requirements.
 
-__Both of these descriptions must be true:__
+__All of these descriptions must be true:__
 
 - You have a current illness or injury (known as a condition) that affects your mind or body, 
 - **And** you served on active duty, active duty for training, or inactive duty training,
-- **And** you got sick or injured while serving in the military and can link this condition to your illness or injury (called an in-service disability claim), or you had an illness or injury before you joined the military and serving made it worse (called a pre-service disability claim), or you have a disability related to your active-duty service that didn’t appear until after you ended your service (called a post-service disability claim)
+- **And** you got sick or injured while serving in the military and can link this condition to your illness or injury (called an in-service disability claim),
+- **Or** you had an illness or injury before you joined the military and serving made it worse (called a pre-service disability claim),
+- **Or** you have a disability related to your active-duty service that didn’t appear until after you ended your service (called a post-service disability claim)
 
 </div>
 </div>
