@@ -86,7 +86,7 @@ This compositional structure allows developers to build complex navigation menus
 
 ## Accessibility considerations
 
-???
+* Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
 
 ## Related
 
