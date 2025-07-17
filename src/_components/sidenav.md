@@ -73,9 +73,22 @@ At mobile breakpoints, the navigation menu is hidden by default to save space. A
 
 ### Placement
 
-* The Side Navigation component should always appear in a consistent space throughout all of VA.gov whenever it is used.
-* At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({{site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
-* At mobile breakpoints, the Side Navigation should appear below the page title and any introductory content, but above the main body content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
+The Side Navigation component should always appear in a consistent space throughout all of VA.gov whenever it is used.
+
+#### Desktop View
+
+At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({{site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
+
+{% include component-example.html alt="Paperless Delivery with side navigation in a desktop view" caption="Desktop view: Side navigation in the Paperless Delivery example." file="/images/components/side-navigation/side-navigation-desktop.png" %}
+
+#### Mobile View
+At mobile breakpoints, the Side Navigation should appear below the page title and any introductory content, but above the main body content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
+
+<figure class="site-component-example">
+  <img src="/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <img src="/images/components/side-navigation/side-navigation-mobile-open.png" alt="Paperless Delivery with an expanded side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <figcaption class="site-component-example__caption">Mobile views: Side navigation collapsed and expanded in the Paperless Delivery example.</figcaption>
+</figure>
 
 ## Code usage
 
