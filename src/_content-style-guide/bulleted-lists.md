@@ -95,12 +95,11 @@ __All of these descriptions must be true:__
 
 </div>
 </div>
-
 </div>
 
 ### Example of bulleted list with more than one sentence
 
-If any item in a bulleted list contains a fragment and 1 or more additional full sentences, use ending periods for all items in the list. 
+If any item in a bulleted list contains 2 or more full sentences, use ending periods for all items in the list (including any fragments). 
 
 <div class="do-dont">
 <div class="do-dont__do">
