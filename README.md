@@ -187,23 +187,6 @@ Within this project is the ability to automate the display of the latest release
 * `_config.yml` - Configuration file for Jekyll, defining repository URLs and Figma file details.
 * `package.json` - Contains the `yarn run update-releases` script, a shortcut for updating release data.
 
-### How to Create a New Release for design.va.gov
-
-1. Go to [vets-design-system-documentation releases](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases)
-2. Note the latest release tag. At the time of this writing, it matches this format: `v0.0.###`.
-3. Click the **Draft a new release** button to start a new release
-4. Click the **Choose a tag** button to display the dropdown of already created tags
-5. In the **Find or create a new tag** text input, enter an incremented version number from last release. 
-As you start typing the format `v0.0...`, the dropdown will show you the latest tags matching that format. Increment the last number by one. For example, if the latest release (noted from Step #2) is `v0.0.436`, enter `v0.0.437` as the tag name.
-6. Once the new label is entered, the dropdown will state:
-    > Create new tag: v0.0.### on publish
-
-    Click on this to field to apply the new tag when this release is published.
-7. Enter the same new tag value in the **Release title** field
-8. To populate the **Describe this release** textarea with a changelog, click the `Generate release notes` button above. This will populate the changelog with the titles of all the merged PRs since last release.
-9. Be sure that the **Set as the latest release** checkbox is checked.
-10. Click the **Publish release** button.
-
 ### How Jekyll Displays the Latest Releases
 
 > [!NOTE]
@@ -227,7 +210,23 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 5.  **Figma Data:**
     * The Figma changelog frame is simply embedded into the page with an iframe direct from the Figma Component Library. Updates are in real time. 
 
-### How to Update the [What's New](https://design.va.gov/about/whats-new) Page
+### Process to Update the What's New Page with Changelogs
+
+#### Step 1: Create a New Release for design.va.gov
+
+1. Go to the [releases page](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases).
+2. Click the **Draft a new release** button.
+3. In the **Choose a tag** dropdown:
+   - Type the sprint name for this release (e.g., `Sprint-6`).
+   - Click the option that appears:
+     > Create new tag: Sprint-6 on publish
+4. In the **Release title** field, enter the same sprint label (you may use spaces instead of dashes, e.g., `Sprint 6`).
+5. Click the **Generate release notes** button to auto-populate the changelog.
+   - This includes all merged pull requests since the last release.
+6. Ensure the **Set as the latest release** checkbox is checked.
+7. Click the **Publish release** button to finalize and publish the release.
+
+#### Step 2: Update the [What's New](https://design.va.gov/about/whats-new) Page
 
 > [!NOTE]
 > Be sure your local environment is not running before getting the latest updates.
@@ -249,7 +248,6 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 * The component library is released following the conclusion of a sprint, which typically occurs every two weeks (as of this writing).
 * The guidance site, design.va.gov, will align its releases with the component library releases.
 * Currently, the Figma component library does not have scheduled releases. However, a Changelog page within the Figma file is maintained by the Design System designers to reflect updates. Since the guidance site embeds a live view of the changelog page on the "What's New" page, it displays updates in "real time".
-
 
 ## Additional Testing
 
