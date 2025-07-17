@@ -45,15 +45,15 @@ anchors:
 
 ### When to use side navigation
 
-* To display a navigational hierarchy with one to three levels of depth.
-* To display the "sub-navigation" within a specific section of a website.
-* To present a curated group of related pages or resources in a non-hierarchical manner.
+* When displaying a navigational hierarchy with one or two levels of depth.
+* To show sub-navigation within a specific section of a site.
+* To present a curated group of closely related pages or resources within a section.
 
 ### When to consider something else
 
-* For a small site with fewer than five pages, where a full navigational hierarchy may be overly complex.
-* For navigating within a single, long page. Use the "On this page" component instead.
-* For linking to content that is not closely related.
+* For small sections with fewer than five pages, where a full navigation structure may be unnecessary.
+* For navigating within a single, long page. Use an [On this page]({{ site.baseurl }}/components/on-this-page) component instead.
+* When linking to content that isn't closely related.
 
 ### How this component works
 
