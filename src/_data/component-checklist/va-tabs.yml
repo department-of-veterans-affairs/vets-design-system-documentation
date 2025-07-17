@@ -10,21 +10,21 @@ maturity:
     score: true
 code-assets:
   - name: variations 
-    score: false
+    score: true
   - name: responsive
     score: false
   - name: interactive-states
-    score: false
+    score: true
   - name: tokens
     score: "n/a"
   - name: internationalization
     score: "n/a"
 visual-assets:
   - name: variations
-    score: false
+    score: true
   - name: responsive
     score: false
   - name: interactive-states
-    score: false
+    score: true
   - name: tokens
     score: "n/a"
