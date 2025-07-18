@@ -15,13 +15,16 @@ anchors:
 
 ## Examples
 
-### GI Bill Comparison Tool
+<!-- ### GI Bill Comparison Tool
 
 ![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png)
 
 ### Facility locator mobile view
 
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png)
+![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) -->
+
+### Web
+Storybook example
 
 ## Usage
 
@@ -37,6 +40,7 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 * **Changing views of the same data.** To allow the user to easily toggle between a binary set of options to see different views of the same data, use a [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented) component. For example, for switching between viewing a list or a map.
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
 * **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
+* **Moving up or down in navigational hierachy**. Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy.
 
 ### Behavior
 
@@ -58,5 +62,6 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented)
+* [Side Navigation]({{ site.baseurl }}/components/side-navigation)
 
 {% include _component-checklist.html component_name="va-tabs" %}
