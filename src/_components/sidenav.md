@@ -53,6 +53,7 @@ anchors:
 * For small sections with fewer than five pages, where a full navigation structure may be unnecessary.
 * For navigating within a single, long page. Use an [On this page]({{ site.baseurl }}/components/on-this-page) component instead.
 * When linking to content that isn't closely related.
+* Only one Side Navigation component should be used per page. If more are needed, consider alternative navigation solutions.
 
 ### How this component works
 
