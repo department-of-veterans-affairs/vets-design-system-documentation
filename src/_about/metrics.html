@@ -154,11 +154,11 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadMetricsData() {
   // Load both issue metrics and component usage data
   Promise.all([
-    fetch('/assets/data/metrics/issue-metrics.json').then(response => {
+    fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
       if (!response.ok) throw new Error('Issue metrics not available');
       return response.json();
     }),
-    fetch('/assets/data/metrics/component-usage.json').then(response => {
+    fetch('{{ site.baseurl }}/assets/data/metrics/component-usage.json').then(response => {
       if (!response.ok) throw new Error('Component usage not available');
       return response.json();
     })
