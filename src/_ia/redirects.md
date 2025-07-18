@@ -1,9 +1,11 @@
 ---
 layout: documentation
 title: Redirects
-permalink: /components/url-standards/redirects
-has-parent: /components/url-standards/
-intro-text: A URL redirect forwards both visitors and search engines to a different URL than the one requested. Teams should implement a redirect or request a redirect whenever they change a URL or remove a page. 
+permalink: /ia/url-standards/redirects
+has-parent: /ia/url-standards/
+intro-text: A URL redirect forwards both visitors and search engines to a different URL than the one requested. Teams should implement a redirect or request a redirect whenever they change a URL or remove a page.
+redirect_from:
+  - /components/url-standards/redirects 
 ---
 
 A URL redirect serves 2 purposes:

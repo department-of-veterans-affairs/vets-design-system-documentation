@@ -88,6 +88,9 @@ anchors:
   type="secondary"
 ></va-link-action>
 
+## Privacy guidance 
+ {% include content/privacy-selection-fields.md %}
+
 ## Related
 
 * [Select]({{ site.baseurl }}/components/form/select)
