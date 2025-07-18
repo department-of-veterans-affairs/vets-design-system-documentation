@@ -84,8 +84,8 @@ At desktop breakpoints, the component should be placed at the top of the left co
 At mobile breakpoints, the Side Navigation should appear below the page title and any introductory content, but above the main body content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
 
 <figure class="site-component-example">
-  <img src="/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
-  <img src="/images/components/side-navigation/side-navigation-mobile-open.png" alt="Paperless Delivery with an expanded side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-open.png" alt="Paperless Delivery with an expanded side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
   <figcaption class="site-component-example__caption">Mobile views: Side navigation collapsed and expanded in the Paperless Delivery example.</figcaption>
 </figure>
 
