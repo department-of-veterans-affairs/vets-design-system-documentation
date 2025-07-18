@@ -227,7 +227,23 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 5.  **Figma Data:**
     * The Figma changelog frame is simply embedded into the page with an iframe direct from the Figma Component Library. Updates are in real time.
 
-### How to Update the [What's New](https://design.va.gov/about/whats-new) Page
+### Process to Update the What's New Page with Changelogs
+
+#### Step 1: Create a New Release for design.va.gov
+
+1. Go to the [releases page](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases).
+2. Click the **Draft a new release** button.
+3. In the **Choose a tag** dropdown:
+   - Type the sprint name for this release (e.g., `Sprint-6`).
+   - Click the option that appears:
+     > Create new tag: Sprint-6 on publish
+4. In the **Release title** field, enter the same sprint label (you may use spaces instead of dashes, e.g., `Sprint 6`).
+5. Click the **Generate release notes** button to auto-populate the changelog.
+   - This includes all merged pull requests since the last release.
+6. Ensure the **Set as the latest release** checkbox is checked.
+7. Click the **Publish release** button to finalize and publish the release.
+
+#### Step 2: Update the [What's New](https://design.va.gov/about/whats-new) Page
 
 > [!NOTE]
 > Be sure your local environment is not running before getting the latest updates.
@@ -249,7 +265,6 @@ As you start typing the format `v0.0...`, the dropdown will show you the latest 
 * The component library is released following the conclusion of a sprint, which typically occurs every two weeks (as of this writing).
 * The guidance site, design.va.gov, will align its releases with the component library releases.
 * Currently, the Figma component library does not have scheduled releases. However, a Changelog page within the Figma file is maintained by the Design System designers to reflect updates. Since the guidance site embeds a live view of the changelog page on the "What's New" page, it displays updates in "real time".
-
 
 ## Additional Testing
 

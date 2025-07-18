@@ -55,3 +55,17 @@ We allow a little more character count for sections and subsections than page ti
 </div>
 </div>
 </div>
+
+## Privacy guidance
+
+**Page titles (H1s) can include Personally Identifiable Information (PII) or Protected Health Information (PHI), but this information can’t be populated or tracked anywhere else.**
+
+**If an H1 includes PII or PHI:**
+
+- Ensure no part of the URL, including parameters and anchor tags, include information that can be used either by itself or in combination with other information to uncover that individual’s identity or health information. 
+- Genericize the corresponding breadcrumb segment. This ensures the information isn’t tracked back into analytics or other logs through the link text for that breadcrumb segment.  
+- Genericize the title tag. This ensures the information isn’t tracked back in analytics or other logs through the page title.<br>
+[Learn more on the Title tag page](https://design.va.gov/content-style-guide/title-tags)
+- This does create an a11y infraction where there isn’t a unique title tag for each page, but there isn’t other meaningful data that can be exposed in the title tag to differentiate it. The VA 508 office approved this approach in these use cases.
+
+[Learn more about PII/PHI on the VA Platform website](https://depo-platform-documentation.scrollhelp.site/research-design/what-is-pii)

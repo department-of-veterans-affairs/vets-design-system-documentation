@@ -49,13 +49,13 @@ $css-library-font-path: "../../node_modules/@department-of-veterans-affairs/css-
 
 ### Tokens, utilities, and modules
 
-The CSS-Library provides a set of tokens, utilities, and modules that can be used in your project. 
+The CSS-Library provides a set of tokens, utilities, and modules that can be used in your project.
 
-**Utilities**
+#### Utilities
 
 The utility classes are helpful, single-property classes that can provide more flexibility for inline styling. You can review the [utilities](https://design.va.gov/foundation/utilities/) in the design system documentation for more information.
 
-**Tokens**
+#### Tokens
 
 The tokens are variables that can be used to style your project inline or in your stylesheets. Review the [tokens](https://design.va.gov/foundation/design-tokens) in the design system documentation for more information.
 
@@ -73,12 +73,11 @@ We recommend using the CSS custom properties format by loading the CSS file glob
 }
 ```
 
-**Modules**
+#### Modules
 
 While many of the original modules have been converted to web components, some are still available in the CSS-Library. If there is a comparable web component available in the Web Component library, we recommend using that instead.
 
 If you would like to use a module stylesheet, reference this documentation site which [imports the CSS Library Sass file modules into the application.scss stylesheet](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/assets/stylesheets/application.scss).
-
 
 ## Load the Web Component library
 
@@ -106,7 +105,6 @@ import {
   defineCustomElements,
 } from "@department-of-veterans-affairs/component-library";
 ```
-
 
 - In the same JS file, call the `defineCustomElements` function, optionally chained after a call to `applyPolyfills`:
 
@@ -144,6 +142,6 @@ This [integration-examples](https://github.com/department-of-veterans-affairs/co
 
 ### Available Examples
 
-- [Vite + React + TypeScript](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/core/vite-react-typescript)
+- [Vite + React + TypeScript](https://github.com/department-of-veterans-affairs/component-library/tree/main/packages/integration-examples/vite-react-typescript#readme)
 - [CodeSandbox](https://codesandbox.io/p/sandbox/suspicious-stonebraker-vzfzhw)
 - [CodePen](https://codepen.io/jamigibbs-the-sans/pen/jEEdOmY)
