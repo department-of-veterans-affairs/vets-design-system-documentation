@@ -17,8 +17,9 @@ anchors:
 ---
 
 <va-alert status="info">
- <h2 slot="headline">Component in Iterative Development</h2>
-  <p>This component is currently being designed, developed, and released in phases. It is intended to eventually replace several existing side navigation implementations across VA.gov, which vary in features and functionality. The process of establishing consistent site-wide requirements and functionality agreements is currently in progress.</p>
+  <h2 slot="headline">Enhancements Planned, Feedback Welcome</h2>
+  <p>This component is available for use and will continue to evolve with additional features and functionality. It is planned to replace several existing side navigation implementations across VA.gov to promote consistency and improve usability.</p>
+  <p>If you'd like you participate in future iterations, <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4252">join the discussion</a>!</p>
 </va-alert>
 
 ## Examples
