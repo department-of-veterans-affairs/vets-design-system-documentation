@@ -5,10 +5,12 @@ github-title: va-sidenav
 intro-text: "Vertical navigation to place at the side of a page."
 status: use-with-caution-candidate
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=34159-3535&t=w2lNwVQNDrEuZwT0-1
+web-component: va-sidenav
 anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Behavior
+  - anchor: Code considerations
   - anchor: Code usage
   - anchor: Not a Card
   - anchor: Content considerations
@@ -88,7 +90,7 @@ At mobile breakpoints, the Side Navigation should appear below the page title an
   <figcaption class="site-component-example__caption">Mobile views: Side navigation collapsed and expanded in the Paperless Delivery example.</figcaption>
 </figure>
 
-## Code usage
+## Code considerations
 
 Side Navigation is built as a flexible component using a compositional architecture. This means the final navigation menu is constructed by combining several smaller, internal child components within a parent container. This modular approach simplifies maintenance, improves future expandability, and allows for easy integration into different environments.
 
@@ -101,6 +103,8 @@ The component is composed of the following parts:
 `va-sidenav-submenu` **(Internal Child Component)**: This component acts as a container for nesting `va-sidenav-items`, allowing for the creation of a hierarchical structure (child and grandchild links). The parent item of a submenu can optionally be a link itself.
 
 This compositional structure allows developers to build complex navigation menus by slotting together the necessary child components. For single-page applications, the component supports router integration by firing a vaRouteChange event, which prevents native link routing and allows a routing library like React Router to handle the navigation.
+
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 
