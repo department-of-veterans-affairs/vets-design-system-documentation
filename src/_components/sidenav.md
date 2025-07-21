@@ -44,9 +44,8 @@ anchors:
 
 ### When to use side navigation
 
-* When displaying a navigational hierarchy with one or two levels of depth.
-* To show sub-navigation within a specific section of a site.
-* To present a curated group of closely related pages or resources within a section.
+* To display a navigational hierarchy of one or two levels.
+* To create a sub-navigation of closely related pages within the same section of a site.
 
 ### When to consider something else
 
