@@ -33,9 +33,6 @@ anchors:
 
 {% include storybook-preview.html story="components-va-sidenav--default" link_text="va-sidenav Default" %}
 
-#### Levels
-{% include storybook-preview.html story="components-va-sidenav--levels" link_text="va-sidenav Levels" %}
-
 #### Categorized Links
 {% include storybook-preview.html story="components-va-sidenav--categorized-links" link_text="va-sidenav Categorized Links" %}
 
