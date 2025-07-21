@@ -21,6 +21,7 @@ anchors:
 ---
 
 This guidance covers two web components:
+
 * Use the [File input variation](https://design.va.gov/storybook/?path=/story/uswds-va-file-input--default) for uploads that accept a single file.
 * Use the [File input multiple variation](https://design.va.gov/storybook/?path=/story/uswds-va-file-input-multiple--default) for uploads that accept multiple files.
 
@@ -53,8 +54,9 @@ NOTE: Storybook does not allow for showing components in a particular state. Thu
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-any-kind-of-image" link_text="va-file-input that accepts any kind of image" reverse="true" %}
 
 ### Accepts File Password
+
 <va-alert slim="true" status="warning">
-  This component does not check if a file is encrypted. This logic should be done on a case-by-case basis as business needs and requirements dictate. See this guide for more information: <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>
+  This component does not check if a file is encrypted. This logic is handled in a shared Forms System utility. See this guide for more information: <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>
 </va-alert>
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-file-password" link_text="va-file-input that accepts file password" reverse="true" %}
