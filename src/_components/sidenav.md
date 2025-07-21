@@ -61,7 +61,7 @@ Side Navigation provides secondary navigation within a specific section of a web
 
 The component is designed to reflect a user's task-oriented goals, rather than the internal structure of the VA. 
 
-There are two primary ways to structure side navigation item that contains child pages:
+There are two primary ways to structure side navigation items that contain child pages:
 
 * **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.
 
@@ -69,11 +69,11 @@ There are two primary ways to structure side navigation item that contains child
 
 ## Behavior
 
-At mobile breakpoints, the navigation menu is hidden by default to save space. A trigger button, typically labeled "Related pages menu", reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
+At mobile breakpoints, the navigation menu is hidden by default to save space. A trigger button, typically labeled "Related pages menu," reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
 
 ### Placement
 
-The Side Navigation component should always appear in a consistent space throughout all of VA.gov whenever it is used.
+The Side Navigation component should appear in a consistent location across desktop views and a consistent (but distinct) location across mobile views.
 
 #### Desktop View
 
