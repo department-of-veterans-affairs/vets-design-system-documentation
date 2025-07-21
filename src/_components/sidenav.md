@@ -105,7 +105,7 @@ This compositional structure allows developers to build complex navigation menus
 ## Content considerations
 
 * **Link text should be concise and descriptive.** Link text should be scannable and clearly convey the purpose of the page. It does not always need to match the related page's title. 
-* If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+* **Consider the impact of displaying long or complex link lists.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Test with real users to find the right balance between breadth and depth.
 
 ## Accessibility considerations
 
