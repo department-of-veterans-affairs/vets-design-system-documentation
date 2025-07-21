@@ -22,9 +22,7 @@ Storybook example
 
 ## Usage
 
-Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using only 2 tabs to present a set of complementary options is acceptable.
-
-The tabs are standalone and URL based. When clicking on a tab, expect the whole page to refresh. This might cause a unexpected delay. 
+Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using only 2 tabs to present a set of complementary options is acceptable. 
 
 ### When to use tabs
 
@@ -39,10 +37,15 @@ The tabs are standalone and URL based. When clicking on a tab, expect the whole 
 * **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
 * **Instantaneaous loading.** The Tabs are URL based so you should anticpate the whole page reloading when clicking on diffferent tabs. 
 
+### How this component works
+
+Add this once final tabs component is complete.
+
 ## Behavior
 
 * Make sure the selected tab is highlighted and visually connected to the content below it.
 * Never let a row of tabs wrap to a second line.
+* The first tab should be used for the default view.
 
 ### Placement
 
@@ -51,20 +54,23 @@ The tabs are standalone and URL based. When clicking on a tab, expect the whole 
 * Information relevant to all tabs can be placed above the tabs.
 * Tabs can be used with the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component. Do not add tab sections to the Side Navigation hierarchy. 
 * Do not use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the Tabs component.
-* Content related to the tab should be place directly below the Tabs component so a connection between the tab and the content is created. 
 * Use 32px spacing above and below the tabs.
 
-#### Desktop View
+#### Desktop view
 
 {% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected and margin annotations." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" %}
 
-#### Mobile View
+#### Mobile view
 
 <figure class="site-component-example">
   <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px">
   <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Files.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." style="max-width:256px">
   <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool with margin annotations.</figcaption>
 </figure>
+
+### Instances of tabs in production
+
+See [Tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on Tabs used in production.
 
 ## Content considerations
 
