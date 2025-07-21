@@ -111,6 +111,8 @@ This compositional structure allows developers to build complex navigation menus
 
 * Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
 
+<va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary">
+
 ## Related
 
 * [On this page]({{ site.baseurl }}/components/on-this-page)
