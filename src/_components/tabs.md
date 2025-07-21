@@ -4,9 +4,11 @@ title: Tabs
 intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between." 
 github-title: va-tabs
 status: use-with-caution-available
+figma-link: https://www.figma.com/design/MNfr6ScW4Sf66tN0iY20GN/Tabs?node-id=24991-2000
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Behavior
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
@@ -15,20 +17,14 @@ anchors:
 
 ## Examples
 
-<!-- ### GI Bill Comparison Tool
-
-![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png)
-
-### Facility locator mobile view
-
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png) -->
-
 ### Web
 Storybook example
 
 ## Usage
 
-Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using 2 tabs (only) to present a set of complementary options is acceptable.
+Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using only 2 tabs to present a set of complementary options is acceptable.
+
+The tabs are standalone and URL based. When clicking on a tab, expect the whole page to refresh. This might cause a unexpected delay. 
 
 ### When to use tabs
 
@@ -39,15 +35,36 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 
 * **Changing views of the same data.** To allow the user to easily toggle between a binary set of options to see different views of the same data, use a [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented) component. For example, for switching between viewing a list or a map.
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
-* **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
-* **Moving up or down in navigational hierachy**. Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy.
+* **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page. 
+* **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
+* **Instantaneaous loading.** The Tabs are URL based so you should anticpate the whole page reloading when clicking on diffferent tabs. 
 
-### Behavior
+## Behavior
 
-* Allow the user to click anywhere on a tab to select it.
 * Make sure the selected tab is highlighted and visually connected to the content below it.
 * Never let a row of tabs wrap to a second line.
-* Keep the interaction design simple. Document selected and not selected tab styles along with the focus state for each style. Hover and active states are optional for tabs.
+
+### Placement
+
+* The Tabs component should appear in a consistent location across desktop and mobile views.
+* Place tabs below the main header. 
+* Information relevant to all tabs can be placed above the tabs.
+* Tabs can be used with the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component. Do not add tab sections to the Side Navigation hierarchy. 
+* Do not use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the Tabs component.
+* Content related to the tab should be place directly below the Tabs component so a connection between the tab and the content is created. 
+* Use 32px spacing above and below the tabs.
+
+#### Desktop View
+
+{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected and margin annotations." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" %}
+
+#### Mobile View
+
+<figure class="site-component-example">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Files.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." style="max-width:256px">
+  <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool with margin annotations.</figcaption>
+</figure>
 
 ## Content considerations
 
@@ -63,5 +80,6 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented)
 * [Side Navigation]({{ site.baseurl }}/components/side-navigation)
+* [On this page]({{ site.baseurl }}/components/on-this-page)
 
 {% include _component-checklist.html component_name="va-tabs" %}
