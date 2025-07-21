@@ -68,7 +68,7 @@ There are two primary ways to structure side navigation items that contain child
 
 ## Behavior
 
-At mobile breakpoints, the navigation menu is hidden by default to save space. A trigger button, typically labeled "Related pages menu," reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
+At mobile breakpoints, the navigation menu is collapsed by default to save space. A trigger button labeled "Related pages menu" reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
 
 ### Placement
 
