@@ -11,7 +11,7 @@ This is the VA Design System Documentation site (design.va.gov) built with Jekyl
 ```bash
 # Setup
 yarn install                    # Install Node dependencies
-bundle install                  # Install Ruby gems (requires Ruby 3.0.2)
+bundle install                  # Install Ruby gems (requires Ruby 3.3.8)
 
 # Development
 yarn start                      # Build and serve at localhost:4000
