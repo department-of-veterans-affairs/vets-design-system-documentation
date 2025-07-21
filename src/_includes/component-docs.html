@@ -1,4 +1,4 @@
-{% for component in site.data.component-docs.components %} 
+{% for component in site.data.component-docs.components %}
   {% if component.tag == include.component_name %}
     {% if component.props != empty or component.events != empty %}
 
@@ -22,7 +22,7 @@
     <span><code class="code">{{ prop.attr }}</code></span>
     <span>{% if prop.type %}<code class="code">{{ prop.type }}</code>{% endif %}</span>
     <span>{% if prop.default %}<code class="code">{{ prop.default }}</code>{% endif %}</span>
-    <span>{{ prop.docs }}</span>
+    <span>{{ prop.docs | markdownify }}</span>
   </va-table-row>
   {% endfor %}
 </va-table>
