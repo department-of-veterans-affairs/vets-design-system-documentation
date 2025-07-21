@@ -1,0 +1,249 @@
+{
+  "top_pages": [
+    {
+      "rank": 1,
+      "path": "/components/button",
+      "title": "Button",
+      "page_views": 15420,
+      "sessions": 12340,
+      "clean_title": "Button"
+    },
+    {
+      "rank": 2,
+      "path": "/patterns/help-users-to",
+      "title": "Help users to...",
+      "page_views": 8930,
+      "sessions": 7210,
+      "clean_title": "Help users to..."
+    },
+    {
+      "rank": 3,
+      "path": "/components/form-controls",
+      "title": "Form controls",
+      "page_views": 7850,
+      "sessions": 6220,
+      "clean_title": "Form controls"
+    },
+    {
+      "rank": 4,
+      "path": "/foundation/typography",
+      "title": "Typography",
+      "page_views": 6540,
+      "sessions": 5180,
+      "clean_title": "Typography"
+    },
+    {
+      "rank": 5,
+      "path": "/components/text-input",
+      "title": "Text input",
+      "page_views": 5920,
+      "sessions": 4680,
+      "clean_title": "Text input"
+    },
+    {
+      "rank": 6,
+      "path": "/foundation/color-palette",
+      "title": "Color palette",
+      "page_views": 5430,
+      "sessions": 4290,
+      "clean_title": "Color palette"
+    },
+    {
+      "rank": 7,
+      "path": "/components/alert",
+      "title": "Alert",
+      "page_views": 4850,
+      "sessions": 3840,
+      "clean_title": "Alert"
+    },
+    {
+      "rank": 8,
+      "path": "/components/accordion",
+      "title": "Accordion",
+      "page_views": 4320,
+      "sessions": 3420,
+      "clean_title": "Accordion"
+    },
+    {
+      "rank": 9,
+      "path": "/patterns/ask-users-for",
+      "title": "Ask users for...",
+      "page_views": 3890,
+      "sessions": 3080,
+      "clean_title": "Ask users for..."
+    },
+    {
+      "rank": 10,
+      "path": "/components/link",
+      "title": "Link",
+      "page_views": 3650,
+      "sessions": 2890,
+      "clean_title": "Link"
+    },
+    {
+      "rank": 11,
+      "path": "/foundation/layout",
+      "title": "Layout",
+      "page_views": 3420,
+      "sessions": 2710,
+      "clean_title": "Layout"
+    },
+    {
+      "rank": 12,
+      "path": "/components/select",
+      "title": "Select",
+      "page_views": 3180,
+      "sessions": 2520,
+      "clean_title": "Select"
+    },
+    {
+      "rank": 13,
+      "path": "/components/checkbox",
+      "title": "Checkbox",
+      "page_views": 2940,
+      "sessions": 2330,
+      "clean_title": "Checkbox"
+    },
+    {
+      "rank": 14,
+      "path": "/components/radio-button",
+      "title": "Radio button",
+      "page_views": 2760,
+      "sessions": 2190,
+      "clean_title": "Radio button"
+    },
+    {
+      "rank": 15,
+      "path": "/components/breadcrumb",
+      "title": "Breadcrumb",
+      "page_views": 2540,
+      "sessions": 2010,
+      "clean_title": "Breadcrumb"
+    }
+  ],
+  "component_pages": [
+    {
+      "rank": 1,
+      "path": "/components/button",
+      "title": "Button",
+      "page_views": 15420,
+      "sessions": 12340,
+      "clean_title": "Button"
+    },
+    {
+      "rank": 2,
+      "path": "/components/form-controls",
+      "title": "Form controls",
+      "page_views": 7850,
+      "sessions": 6220,
+      "clean_title": "Form controls"
+    },
+    {
+      "rank": 3,
+      "path": "/components/text-input",
+      "title": "Text input",
+      "page_views": 5920,
+      "sessions": 4680,
+      "clean_title": "Text input"
+    },
+    {
+      "rank": 4,
+      "path": "/components/alert",
+      "title": "Alert",
+      "page_views": 4850,
+      "sessions": 3840,
+      "clean_title": "Alert"
+    },
+    {
+      "rank": 5,
+      "path": "/components/accordion",
+      "title": "Accordion",
+      "page_views": 4320,
+      "sessions": 3420,
+      "clean_title": "Accordion"
+    },
+    {
+      "rank": 6,
+      "path": "/components/link",
+      "title": "Link",
+      "page_views": 3650,
+      "sessions": 2890,
+      "clean_title": "Link"
+    },
+    {
+      "rank": 7,
+      "path": "/components/select",
+      "title": "Select",
+      "page_views": 3180,
+      "sessions": 2520,
+      "clean_title": "Select"
+    },
+    {
+      "rank": 8,
+      "path": "/components/checkbox",
+      "title": "Checkbox",
+      "page_views": 2940,
+      "sessions": 2330,
+      "clean_title": "Checkbox"
+    },
+    {
+      "rank": 9,
+      "path": "/components/radio-button",
+      "title": "Radio button",
+      "page_views": 2760,
+      "sessions": 2190,
+      "clean_title": "Radio button"
+    },
+    {
+      "rank": 10,
+      "path": "/components/breadcrumb",
+      "title": "Breadcrumb",
+      "page_views": 2540,
+      "sessions": 2010,
+      "clean_title": "Breadcrumb"
+    }
+  ],
+  "pattern_pages": [
+    {
+      "rank": 1,
+      "path": "/patterns/help-users-to",
+      "title": "Help users to...",
+      "page_views": 8930,
+      "sessions": 7210,
+      "clean_title": "Help users to..."
+    },
+    {
+      "rank": 2,
+      "path": "/patterns/ask-users-for",
+      "title": "Ask users for...",
+      "page_views": 3890,
+      "sessions": 3080,
+      "clean_title": "Ask users for..."
+    }
+  ],
+  "summary": {
+    "total_page_views": 125000,
+    "total_sessions": 98500,
+    "active_users": 45200,
+    "top_page": {
+      "path": "/components/button",
+      "title": "Button",
+      "page_views": 15420
+    },
+    "top_component_page": {
+      "path": "/components/button",
+      "title": "Button",
+      "page_views": 15420
+    },
+    "top_pattern_page": {
+      "path": "/patterns/help-users-to",
+      "title": "Help users to...",
+      "page_views": 8930
+    },
+    "component_page_views": 52630,
+    "pattern_page_views": 12820,
+    "last_updated": "2025-07-18T14:30:00.000Z"
+  },
+  "collection_period": "30 days",
+  "generated_at": "2025-07-18T14:30:00.000Z"
+}

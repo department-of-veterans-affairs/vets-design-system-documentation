@@ -42,6 +42,16 @@ permalink: /about/metrics/
       <h4>Total Component Usages</h4>
       <div class="metric-value" id="total-usages">-</div>
     </div>
+    
+    <div class="metric-card">
+      <h4>Page Views (30 days)</h4>
+      <div class="metric-value" id="total-page-views">-</div>
+    </div>
+    
+    <div class="metric-card">
+      <h4>Most Viewed Page</h4>
+      <div class="metric-value" id="top-page-title">-</div>
+    </div>
   </div>
   
   <h2>Issue Tracking Metrics</h2>
@@ -68,6 +78,24 @@ permalink: /about/metrics/
     <h3>Top Components by Usage</h3>
     <p>Most frequently used design system components</p>
     <div id="top-components-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+  </div>
+  
+  <h2>Google Analytics Metrics</h2>
+  
+  <div class="metrics-section">
+    <h3>Top 25 Pages (Last 30 Days)</h3>
+    <p>Most viewed pages on design.va.gov based on Google Analytics data</p>
+    <div id="top-pages-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+  </div>
+  
+  <div class="metrics-section">
+    <h3>Top Component Documentation Pages</h3>
+    <p>Most viewed component documentation pages</p>
+    <div id="top-component-pages-chart" class="chart-container">
       <!-- Chart will be rendered here -->
     </div>
   </div>
@@ -145,6 +173,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('quarterly-chart').innerHTML = '';
     document.getElementById('velocity-chart').innerHTML = '';
     document.getElementById('top-components-chart').innerHTML = '';
+    document.getElementById('top-pages-chart').innerHTML = '';
+    document.getElementById('top-component-pages-chart').innerHTML = '';
     
     // Re-fetch and render with new dimensions
     loadMetricsData();
@@ -152,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function loadMetricsData() {
-  // Load both issue metrics and component usage data
+  // Load issue metrics, component usage data, and analytics data
   Promise.all([
     fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
       if (!response.ok) throw new Error('Issue metrics not available');
@@ -161,9 +191,13 @@ function loadMetricsData() {
     fetch('{{ site.baseurl }}/assets/data/metrics/component-usage.json').then(response => {
       if (!response.ok) throw new Error('Component usage not available');
       return response.json();
+    }),
+    fetch('{{ site.baseurl }}/assets/data/metrics/analytics-metrics.json').then(response => {
+      if (!response.ok) throw new Error('Analytics metrics not available');
+      return response.json();
     })
   ])
-  .then(([issueData, componentData]) => {
+  .then(([issueData, componentData, analyticsData]) => {
     // Render issue tracking charts
     renderQuarterlyChart(issueData.quarterly);
     renderVelocityChart(issueData.velocity);
@@ -171,8 +205,12 @@ function loadMetricsData() {
     // Render component usage charts
     renderTopComponentsChart(componentData);
     
+    // Render analytics charts
+    renderTopPagesChart(analyticsData.top_pages);
+    renderTopComponentPagesChart(analyticsData.component_pages);
+    
     // Update metric cards
-    updateMetricCards(issueData.summary, componentData.summary_stats);
+    updateMetricCards(issueData.summary, componentData.summary_stats, analyticsData.summary);
   })
   .catch(error => {
     console.log('Some metrics data not yet available:', error);
@@ -187,6 +225,10 @@ function showPlaceholders() {
     '<div class="chart-placeholder">Velocity chart will be available once data collection is set up</div>';
   document.getElementById('top-components-chart').innerHTML = 
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
+  document.getElementById('top-pages-chart').innerHTML = 
+    '<div class="chart-placeholder">Top pages chart will be available once analytics data collection is set up</div>';
+  document.getElementById('top-component-pages-chart').innerHTML = 
+    '<div class="chart-placeholder">Component pages chart will be available once analytics data collection is set up</div>';
 }
 
 function renderQuarterlyChart(data) {
@@ -526,7 +568,7 @@ function formatComponentType(type) {
   return typeMap[type] || type;
 }
 
-function updateMetricCards(issueSummary, componentSummary) {
+function updateMetricCards(issueSummary, componentSummary, analyticsSummary) {
   // Update issue metrics
   if (issueSummary) {
     document.getElementById('open-issues').textContent = issueSummary.open_issues || '-';
@@ -541,5 +583,213 @@ function updateMetricCards(issueSummary, componentSummary) {
     document.getElementById('most-used-component').textContent = componentSummary.most_used || '-';
     document.getElementById('total-usages').textContent = componentSummary.total_usages || '-';
   }
+  
+  // Update analytics metrics
+  if (analyticsSummary) {
+    document.getElementById('total-page-views').textContent = analyticsSummary.total_page_views ? 
+      analyticsSummary.total_page_views.toLocaleString() : '-';
+    document.getElementById('top-page-title').textContent = analyticsSummary.top_page ? 
+      analyticsSummary.top_page.title : '-';
+  }
+}
+
+function renderTopPagesChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+  
+  const container = document.getElementById('top-pages-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 30 : 50, 
+    bottom: containerWidth < 600 ? 150 : 120, 
+    left: containerWidth < 600 ? 80 : 100
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 450 : 500) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#top-pages-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Take top 15 pages for better readability
+  const topPages = data.slice(0, 15);
+  
+  // Setup scales
+  const x = d3.scaleBand()
+    .domain(topPages.map(d => d.path))
+    .range([0, width])
+    .padding(0.1);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(topPages, d => d.page_views)])
+    .range([height, 0]);
+  
+  // Add axes
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x)
+      .tickFormat(d => {
+        // Shorten long paths for display
+        if (d.length > 25) {
+          return d.substring(0, 22) + '...';
+        }
+        return d;
+      })
+    );
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '9px' : '11px');
+    
+  g.append('g')
+    .call(d3.axisLeft(y).tickFormat(d3.format('.0s')));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Page Views');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Page Path');
+  
+  // Add bars
+  g.selectAll('.bar')
+    .data(topPages)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.path))
+    .attr('width', x.bandwidth())
+    .attr('y', d => y(d.page_views))
+    .attr('height', d => height - y(d.page_views))
+    .attr('fill', '#0071bb')
+    .append('title') // Tooltip
+    .text(d => `${d.title}\n${d.page_views.toLocaleString()} views`);
+    
+  // Add value labels on bars (for top 5 only to avoid clutter)
+  g.selectAll('.bar-label')
+    .data(topPages.slice(0, 5))
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.path) + x.bandwidth() / 2)
+    .attr('y', d => y(d.page_views) - 5)
+    .attr('text-anchor', 'middle')
+    .style('font-size', '10px')
+    .style('font-weight', 'bold')
+    .text(d => d3.format('.0s')(d.page_views));
+}
+
+function renderTopComponentPagesChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+  
+  const container = document.getElementById('top-component-pages-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 30 : 40, 
+    bottom: containerWidth < 600 ? 120 : 100, 
+    left: containerWidth < 600 ? 60 : 80
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 350 : 400) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#top-component-pages-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Take top 10 component pages
+  const topComponentPages = data.slice(0, 10);
+  
+  // Setup scales
+  const x = d3.scaleBand()
+    .domain(topComponentPages.map(d => d.clean_title))
+    .range([0, width])
+    .padding(0.1);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(topComponentPages, d => d.page_views)])
+    .range([height, 0]);
+  
+  // Add axes
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x));
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '10px' : '12px');
+    
+  g.append('g')
+    .call(d3.axisLeft(y).tickFormat(d3.format('.0s')));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Page Views');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Component');
+  
+  // Add bars
+  g.selectAll('.bar')
+    .data(topComponentPages)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.clean_title))
+    .attr('width', x.bandwidth())
+    .attr('y', d => y(d.page_views))
+    .attr('height', d => height - y(d.page_views))
+    .attr('fill', '#0071bb')
+    .append('title') // Tooltip
+    .text(d => `${d.clean_title}\n${d.page_views.toLocaleString()} views`);
+    
+  // Add value labels on bars
+  g.selectAll('.bar-label')
+    .data(topComponentPages)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.clean_title) + x.bandwidth() / 2)
+    .attr('y', d => y(d.page_views) - 5)
+    .attr('text-anchor', 'middle')
+    .style('font-size', '10px')
+    .style('font-weight', 'bold')
+    .text(d => d3.format('.0s')(d.page_views));
 }
 </script>
