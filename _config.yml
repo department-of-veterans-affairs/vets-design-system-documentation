@@ -44,7 +44,7 @@ kramdown:
   syntax_highlighter: rouge
 plugins:
   # Temporarily commenting out to avoid posix-spawn compilation issues
-  # - jekyll-last-modified-at
+  - jekyll-last-modified-at
   - jekyll-redirect-from
 
 source: src
