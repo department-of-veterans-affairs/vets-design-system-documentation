@@ -49,10 +49,9 @@ anchors:
 
 ### When to consider something else
 
-* For small sections with fewer than five pages, where a full navigation structure may be unnecessary.
-* For navigating within a single, long page. Use an [On this page]({{ site.baseurl }}/components/on-this-page) component instead.
-* When linking to content that isn't closely related.
-* Only one Side Navigation component should be used per page. If more are needed, consider alternative navigation solutions.
+* **If your section has fewer than five pages.** A full navigation structure may not be necessary for small sections of the website. 
+* **If you want users to navigate to different sections on the same page.** Instead, use the [On this page]({{ site.baseurl }}/components/on-this-page) component.
+* **If the links are not closely related or do not live in the same section of the website.**
 
 ### How this component works
 
