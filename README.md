@@ -73,7 +73,7 @@ Tested using `node` v18.19.0 and `yarn` v1.22.19.
 
 3. **[Install Jekyll](https://jekyllrb.com/docs/installation/)**
 
-   **NOTE:** This repo works with Ruby version 3.0.2.
+   **NOTE:** This repo works with Ruby version 3.3.8.
 
 4. **Install Ruby gems**
 
