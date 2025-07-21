@@ -22,7 +22,7 @@ anchors:
 <va-alert status="info">
   <h2 slot="headline">Enhancements Planned, Feedback Welcome</h2>
   <p>This component is available for use and will continue to evolve with additional features and functionality. It is planned to replace several existing side navigation implementations across VA.gov to promote consistency and improve usability.</p>
-  <p>If you want to help us continue to improve this component,<a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4252">join the discussion</a>!</p>
+  <p>If you want to help us continue to improve this component, <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4252">join the discussion</a>!</p>
 </va-alert>
 
 ## Examples
