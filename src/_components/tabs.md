@@ -35,7 +35,7 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
 * **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page. 
 * **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
-* **Instantaneaous loading.** The Tabs are URL based so you should anticpate the whole page reloading when clicking on diffferent tabs. 
+* **Instantaneous loading.** The tabs are URL-based, so you should anticipate the whole page reloading when clicking on different tabs. 
 
 ### How this component works
 
@@ -49,11 +49,11 @@ Add this once final tabs component is complete.
 
 ### Placement
 
-* The Tabs component should appear in a consistent location across desktop and mobile views.
+* The tabs component should appear in a consistent location across desktop and mobile views.
 * Place tabs below the main header. 
 * Information relevant to all tabs can be placed above the tabs.
-* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/side-navigation) component. Do not add tab sections to the Side Navigation hierarchy. 
-* Do not use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the Tabs component.
+* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/side-navigation) component. Don't add tab sections to the Side navigation, they should exist separately.
+* Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the tabs component.
 * Use 32px spacing above and below the tabs.
 
 #### Desktop view
