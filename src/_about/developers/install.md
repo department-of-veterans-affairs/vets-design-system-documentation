@@ -26,7 +26,7 @@ Once the package is installed, import the main CSS files into your project:
 @import "@department-of-veterans-affairs/css-library/dist/stylesheets/utilities";
 ```
 
-Fonts will need to be loaded from the CSS-Library `fonts/` directory. [For example](https://github.com/department-of-veterans-affairs/component-library/blob/add-react-vite-ts-example/packages/integration-examples/vite-react-typescript/src/fonts/font-face.scss):
+Fonts will need to be loaded from the CSS-Library `fonts/` directory. [For example](https://github.com/department-of-veterans-affairs/component-library/blob/main/packages/integration-examples/vite-react-typescript/src/fonts/font-face.scss):
 
 ```scss
 $css-library-font-path: "../../node_modules/@department-of-veterans-affairs/css-library/dist/fonts";
