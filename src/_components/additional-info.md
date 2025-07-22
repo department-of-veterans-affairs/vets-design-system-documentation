@@ -76,9 +76,9 @@ The following are places where Additional info can be used:
 
 ## Content considerations
 
-* **Use a statement, rather than a question.** Use a statement (e.g. "Learn more about...") rather than a question (e.g. "What is...?") as a pattern for the title (trigger text) of the component. The question format has confused Veterans in testing when there is an input field related to that question somewhere else in the form. 
-* **Use headings in expanded content.** When the component is expanded, the use of Headings (h4-h6), body text, links, ordered lists, and unordered lists are encouraged.
-* **Limit the length of expanded content.** Only include critical information inside this component. Content contained within additional info should be limited to 2 paragraphs or less. This includes form fields that require a lot of explanation. Link to another page, consider an [Accordion]({{ site.baseurl }}/components/accordion), or shorten the content. Collaborate with a member of CAIA to edit content and explore alternatives.
+* **Use a statement, rather than a question.** Use a statement (like “Why we ask for this information”) rather than a question (like “Why does VA ask for this information?”) for the title (trigger text) of the component. Because we use questions to gather information from people in our forms, structuring additional information as questions as well can cause confusion. Keep titles to a single sentence or sentence fragment with no ending punctuation.
+* **Limit the amount of expanded content.** Limit content to fewer than 500 characters (with spaces) when possible. If you need to provide more information, consider using one or more [Accordions]({{ site.baseurl }}/components/accordion) instead or providing a brief overview in the Additional info component with a link to another page with more information. Collaborate with a member of the Content and Information Architecture team to edit content and explore alternatives.
+* **Use lists in expanded content as needed.** To make content easier to scan, we encourage you to use numbered (also called "ordered") and bulleted (also called "unordered") lists as needed.
 
 ## Accessibility considerations
 
