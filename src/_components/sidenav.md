@@ -1,60 +1,116 @@
 ---
 layout: component
-title: Sidenav
-intro-text: "Hierarchical, vertical navigation to place at the side of a page."
+title: Side Navigation
 github-title: va-sidenav
-status: dont-use-proposed
+intro-text: "Side Navigation helps users move between related pages within a section."
+research-title: Sidenav
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=34159-3535&t=w2lNwVQNDrEuZwT0-1
+web-component: va-sidenav
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Behavior
+  - anchor: Code considerations
   - anchor: Code usage
+  - anchor: Content considerations
   - anchor: Accessibility considerations
+  - anchor: Related
+  - anchor: Component checklist
 ---
 
-<va-alert
-  close-btn-aria-label="Close notification"
-  status="warning"
-  visible
-  uswds
->
-  <h2 slot="headline">
-    This component is not officially supported
-  </h2>
-  <div>
-    <p className="vads-u-margin-y--0">
-      This component has not yet been built as a component in the Design System. Thus the Design System Team does not officially recognize nor support this component. Guidance and design assets are provided as is.
-    </p>
-  </div>
+<va-alert status="info">
+  <h2 slot="headline">Enhancements Planned, Feedback Welcome</h2>
+  <p>This component is available for use and will continue to evolve with additional features and functionality. It is planned to replace several existing side navigation implementations across VA.gov to promote consistency and improve usability.</p>
+  <p>If you want to help us continue to improve this component, <a href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4252">join the discussion</a>!</p>
 </va-alert>
 
-## Example
+## Examples
 
-{% include storybook-preview.html height="550px" story="components-sidenav--default-story" %}
+### Default
+{% include storybook-preview.html story="components-va-sidenav--default" link_text="va-sidenav Default" %}
+
+### Categorized Links
+{% include storybook-preview.html story="components-va-sidenav--categorized-links" link_text="va-sidenav Categorized Links" %}
+
+### Nested Links
+{% include storybook-preview.html story="components-va-sidenav--nested-links" link_text="va-sidenav Nested Links" %}
 
 ## Usage
 
-### When to use sidenav
+### When to use Side Navigation
 
-* To display the “sub-navigation” within a section of the website.
+* To display a navigational hierarchy of one or two levels.
+* To create a sub-navigation of closely related pages within the same section of a site.
 
 ### When to consider something else
 
-* If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
-* If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
-* If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.
+* **If your section has fewer than five pages.** A full navigation structure may not be necessary for small sections of the website. 
+* **If you want users to navigate to different sections on the same page.** Instead, use the [On this page]({{ site.baseurl }}/components/on-this-page) component.
+* **If the links are not closely related or do not live in the same section of the website.**
 
-### How to use sidenav
+### How this component works
 
-* Typically used in a [two-column layout]({{ site.baseurl }}/foundation/layout/page-layouts#two-columns-content-on-right).
-* Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
-* Keep the navigation links short. They can be shorter derivatives of page titles themselves.
-* If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+Side Navigation provides secondary navigation within a specific section of a website. It helps users understand the scope of the current topic and move between closely related pages. This is distinct from the site-wide [Header]({{ site.baseurl }}/components/header) navigation, which covers the entire site, and the [On this page]({{ site.baseurl }}/components/on-this-page) component, which navigates within a single page.
 
-## Code usage
+The component is designed to reflect a user's task-oriented goals, rather than the internal structure of the VA. 
 
-* All elements, including the `<script>` tag in the snippet are required.
-* The `va-btn-sidebarnav-trigger` may appear anywhere in the DOM, as long as it appears in an expected place on mobile devices.
+There are two primary ways to structure Side Navigation items that contain child pages:
+
+* **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.
+
+* **Nested Links**: A parent item can be a standard link that navigates to a landing page for that section, while also containing a nested list of links to child pages. This is a common pattern for hierarchical site structures.
+
+## Behavior
+
+At mobile breakpoints, the navigation menu is collapsed by default to save space. A trigger button labeled "Related pages menu" reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
+
+### Placement
+
+The Side Navigation component should appear in a consistent location across desktop views and a consistent (but distinct) location across mobile views.
+
+#### Desktop View
+
+At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({{site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
+
+{% include component-example.html alt="Paperless Delivery with Side Navigation in a desktop view" caption="Desktop view: Side Navigation in the Paperless Delivery example." file="/images/components/side-navigation/side-navigation-desktop.png" %}
+
+#### Mobile View
+At mobile breakpoints, the Side Navigation should appear below the breadcrumb, but above the page title and any content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
+
+<figure class="site-component-example">
+  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed Side Navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-open.png" alt="Paperless Delivery with an expanded Side Navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <figcaption class="site-component-example__caption">Mobile views: Side Navigation collapsed and expanded in the Paperless Delivery example.</figcaption>
+</figure>
+
+## Code considerations
+
+Side Navigation is built as a flexible component using a compositional architecture. This means the final navigation menu is constructed by combining several smaller, internal child components within a parent container. This modular approach simplifies maintenance, improves future expandability, and allows for easy integration into different environments.
+
+The component is composed of the following parts:
+
+`va-sidenav` **(Parent Component)**: This is the main container that wraps all the navigation elements. It can include an optional header with a title and an optional icon.
+
+`va-sidenav-item` **(Internal Child Component)**: This is the basic building block for a single, clickable navigation link. It includes properties for the link's destination (`href`) and label. It can also be flagged as the `current-page` for distinct styling.
+
+`va-sidenav-submenu` **(Internal Child Component)**: This component acts as a container for nesting `va-sidenav-items`, allowing for the creation of a hierarchical structure (child and grandchild links). The parent item of a submenu can optionally be a link itself.
+
+This compositional structure allows developers to build complex navigation menus by slotting together the necessary child components. For single-page applications, the component supports router integration by firing a `vaRouteChange` event, which prevents native link routing and allows a routing library like React Router to handle the navigation.
+
+{% include component-docs.html component_name=page.web-component %}
+
+## Content considerations
+
+* **Link text should be concise and descriptive.** Link text should be scannable and clearly convey the purpose of the page. It does not always need to match the related page's title. 
+* **Consider the impact of displaying long or complex link lists.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Test with real users to find the right balance between breadth and depth.
 
 ## Accessibility considerations
 
-* Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
+<va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary"></va-link-action>
+
+## Related
+* [On this page]({{ site.baseurl }}/components/on-this-page)
+* [Header]({{ site.baseurl}}/components/header)
+* [Tabs]({{ site.baseurl}}/components/tabs)
+
+{% include _component-checklist.html component_name=page.web-component %}
