@@ -20,7 +20,6 @@ jobs:
         cache: 'yarn'
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7.5 # Not needed with a .ruby-version file
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: yarn install
     - run: yarn build

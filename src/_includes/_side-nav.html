@@ -19,7 +19,7 @@
         {% endif %}
         {% if p.layout != "iframe" %}
           {% unless p.index or p.has-parent %}
-            {% unless p.draft and (p.url != page.url) %}
+            {% unless p.draft == true and (p.url != page.url) %}
                 {% assign slug = p.title | slugify %}
                 {%- if p.sub-pages -%}
                   <ul class="usa-accordion">

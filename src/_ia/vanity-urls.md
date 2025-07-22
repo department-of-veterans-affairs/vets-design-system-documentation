@@ -1,9 +1,11 @@
 ---
 layout: documentation
 title: Vanity URLs
-permalink: /components/url-standards/vanity-urls
-has-parent: /components/url-standards/
+permalink: /ia/url-standards/vanity-urls
+has-parent: /ia/url-standards/
 intro-text: A vanity URL is a short, simple, memorable, and readable URL that utilizes the existing domain (va.gov) and redirects users to a specific page of the VA.gov site.
+redirect_from:
+  - /components/url-standards/vanity-urls
 ---
 
 ## Example

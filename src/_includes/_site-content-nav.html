@@ -17,5 +17,11 @@
   {% elsif page.url contains "/templates/" %}
     {% include _side-nav.html section=site.templates name="templates" %}
     {% assign collection_name = "Templates" %}
+  {% elsif page.url contains "/accessibility/" %}
+    {% include _side-nav.html section=site.accessibility name="accessibility" %}
+    {% assign collection_name = "Accessibility" %}
+  {% elsif page.url contains "/ia/" %}
+    {% include _side-nav.html section=site.ia name="ia" %}
+    {% assign collection_name = "Information Architecture" %}
   {% endif %}
 </div>
