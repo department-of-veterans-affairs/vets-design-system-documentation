@@ -8,5 +8,6 @@ gulp.task('build',
       'javascript',
       'css',
       'storybook',
+      'icons'
     )
 );

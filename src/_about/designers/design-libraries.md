@@ -59,7 +59,7 @@ Use these libraries to assist your design process. Some of the assets you can ge
 **VADS Web Annotation Kit** provides useful tools to document your design with accessibility, development, component identification, and many other types of helpful notes. 
 
 <p><va-link-action
-  href="{{ site.baseurl }}/about/accessibility/accessibility-annotations"
+  href="{{ site.baseurl }}/accessibility/accessibility-annotations"
   text="Learn how to use the Annotation Kit"
   type="secondary"
 ></va-link-action></p>
