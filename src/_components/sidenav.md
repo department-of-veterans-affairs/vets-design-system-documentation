@@ -100,7 +100,7 @@ The component is composed of the following parts:
 
 `va-sidenav-submenu` **(Internal Child Component)**: This component acts as a container for nesting `va-sidenav-items`, allowing for the creation of a hierarchical structure (child and grandchild links). The parent item of a submenu can optionally be a link itself.
 
-This compositional structure allows developers to build complex navigation menus by slotting together the necessary child components. For single-page applications, the component supports router integration by firing a vaRouteChange event, which prevents native link routing and allows a routing library like React Router to handle the navigation.
+This compositional structure allows developers to build complex navigation menus by slotting together the necessary child components. For single-page applications, the component supports router integration by firing a `vaRouteChange` event, which prevents native link routing and allows a routing library like React Router to handle the navigation.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -111,7 +111,6 @@ This compositional structure allows developers to build complex navigation menus
 
 ## Accessibility considerations
 
-* Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.
 
 <va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary">
 
