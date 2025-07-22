@@ -40,7 +40,7 @@ anchors:
 
 ## Usage
 
-### When to use side navigation
+### When to use Side Navigation
 
 * To display a navigational hierarchy of one or two levels.
 * To create a sub-navigation of closely related pages within the same section of a site.
@@ -57,7 +57,7 @@ Side Navigation provides secondary navigation within a specific section of a web
 
 The component is designed to reflect a user's task-oriented goals, rather than the internal structure of the VA. 
 
-There are two primary ways to structure side navigation items that contain child pages:
+There are two primary ways to structure Side Navigation items that contain child pages:
 
 * **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.
 
@@ -75,15 +75,15 @@ The Side Navigation component should appear in a consistent location across desk
 
 At desktop breakpoints, the component should be placed at the top of the left column in a [two-column layout]({{site.baseurl}}/foundation/layout/page-layouts#two-columns-content-on-right).
 
-{% include component-example.html alt="Paperless Delivery with side navigation in a desktop view" caption="Desktop view: Side navigation in the Paperless Delivery example." file="/images/components/side-navigation/side-navigation-desktop.png" %}
+{% include component-example.html alt="Paperless Delivery with Side Navigation in a desktop view" caption="Desktop view: Side Navigation in the Paperless Delivery example." file="/images/components/side-navigation/side-navigation-desktop.png" %}
 
 #### Mobile View
 At mobile breakpoints, the Side Navigation should appear below the page title and any introductory content, but above the main body content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
 
 <figure class="site-component-example">
-  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
-  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-open.png" alt="Paperless Delivery with an expanded side navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
-  <figcaption class="site-component-example__caption">Mobile views: Side navigation collapsed and expanded in the Paperless Delivery example.</figcaption>
+  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed Side Navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-open.png" alt="Paperless Delivery with an expanded Side Navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
+  <figcaption class="site-component-example__caption">Mobile views: Side Navigation collapsed and expanded in the Paperless Delivery example.</figcaption>
 </figure>
 
 ## Code considerations
