@@ -26,16 +26,13 @@ anchors:
 
 ## Examples
 
-### Web
-
-#### Default
-
+### Default
 {% include storybook-preview.html story="components-va-sidenav--default" link_text="va-sidenav Default" %}
 
-#### Categorized Links
+### Categorized Links
 {% include storybook-preview.html story="components-va-sidenav--categorized-links" link_text="va-sidenav Categorized Links" %}
 
-#### Nested Links
+### Nested Links
 {% include storybook-preview.html story="components-va-sidenav--nested-links" link_text="va-sidenav Nested Links" %}
 
 ## Usage
