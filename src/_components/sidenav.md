@@ -2,7 +2,7 @@
 layout: component
 title: Side Navigation
 github-title: va-sidenav
-intro-text: "Vertical navigation to place at the side of a page."
+intro-text: "Side Navigation helps users move between related pages within a section."
 research-title: Sidenav
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=34159-3535&t=w2lNwVQNDrEuZwT0-1
 web-component: va-sidenav
