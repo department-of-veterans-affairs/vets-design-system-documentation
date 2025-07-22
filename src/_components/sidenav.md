@@ -13,11 +13,10 @@ anchors:
   - anchor: Behavior
   - anchor: Code considerations
   - anchor: Code usage
-  - anchor: Not a Card
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
-  - anchor: Component checklist  
+  - anchor: Component checklist
 ---
 
 <va-alert status="info">
@@ -111,13 +110,11 @@ This compositional structure allows developers to build complex navigation menus
 
 ## Accessibility considerations
 
-
-<va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary">
+<va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary"></va-link-action>
 
 ## Related
-
 * [On this page]({{ site.baseurl }}/components/on-this-page)
 * [Header]({{ site.baseurl}}/components/header)
 * [Tabs]({{ site.baseurl}}/components/tabs)
 
-{% include _component-checklist.html component_name="va-service-list-item" %}
+{% include _component-checklist.html component_name=page.web-component %}
