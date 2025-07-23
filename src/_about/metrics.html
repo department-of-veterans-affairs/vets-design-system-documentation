@@ -13,35 +13,35 @@ permalink: /about/metrics/
   <h2>Summary Metrics</h2>
   
   <div class="metrics-grid">
-    <div class="metric-card">
+    <va-card class="metric-card">
       <h4>Open Issues</h4>
       <div class="metric-value" id="open-issues">-</div>
-    </div>
+    </va-card>
     
-    <div class="metric-card">
+    <va-card class="metric-card">
       <h4>Closed This Month</h4>
       <div class="metric-value" id="closed-month">-</div>
-    </div>
+    </va-card>
     
-    <div class="metric-card">
+    <va-card class="metric-card">
       <h4>Average Resolution Time</h4>
       <div class="metric-value" id="avg-resolution">-</div>
-    </div>
+    </va-card>
     
-    <div class="metric-card">
+    <va-card class="metric-card">
       <h4>Total Components</h4>
       <div class="metric-value" id="total-components">-</div>
-    </div>
+    </va-card>
     
-    <div class="metric-card">
+    <va-card class="metric-card">
       <h4>Most Used Component</h4>
       <div class="metric-value" id="most-used-component">-</div>
-    </div>
+    </va-card>
     
-    <div class="metric-card">
+    <va-card class="metric-card">
       <h4>Total Component Usages</h4>
       <div class="metric-value" id="total-usages">-</div>
-    </div>
+    </va-card>
   </div>
   
   <h2>Issue Tracking Metrics</h2>
@@ -96,51 +96,48 @@ permalink: /about/metrics/
 
 <style>
 .metrics-dashboard {
-  margin: 2rem 0;
+  margin: var(--vads-spacing-4) 0;
 }
 
 .metrics-section {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  margin: var(--vads-spacing-4) 0;
+  padding: var(--vads-spacing-3);
+  border: 1px solid var(--vads-color-gray-lighter);
+  border-radius: var(--vads-radius-sm);
 }
 
 .chart-container {
   height: 400px;
-  margin: 1rem 0;
-  background: #f9f9f9;
-  border-radius: 4px;
+  margin: var(--vads-spacing-2) 0;
+  background: var(--vads-color-gray-lightest);
+  border-radius: var(--vads-radius-sm);
   position: relative;
 }
 
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
+  gap: var(--vads-spacing-2);
+  margin: var(--vads-spacing-4) 0;
 }
 
 .metric-card {
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 1.5rem;
   text-align: center;
+  padding: var(--vads-spacing-1p5);
 }
 
 .metric-card h4 {
-  margin: 0 0 0.5rem 0;
-  font-size: 0.9rem;
-  color: #666;
+  margin: 0 0 var(--vads-spacing-1) 0;
+  font-size: var(--vads-font-size-body-small);
+  color: var(--vads-color-gray-dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .metric-value {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #0071bb;
+  font-size: var(--vads-font-size-heading-level-2);
+  font-weight: var(--font-weight-bold);
+  color: var(--vads-color-primary);
 }
 
 .chart-placeholder {
@@ -148,21 +145,21 @@ permalink: /about/metrics/
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: #666;
+  color: var(--vads-color-gray-dark);
   font-style: italic;
 }
 
 .monthly-reports-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 1rem 0;
+  gap: var(--vads-spacing-3);
+  margin: var(--vads-spacing-2) 0;
 }
 
 .report-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: var(--vads-color-white);
+  border: 1px solid var(--vads-color-gray-lighter);
+  border-radius: var(--vads-radius-lg);
   padding: 0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: box-shadow 0.2s ease;
@@ -174,17 +171,17 @@ permalink: /about/metrics/
 }
 
 .report-card h4 {
-  margin: 0 0 0.5rem 0;
-  color: #0071bb;
-  font-size: 1rem;
-  padding: 1rem 1rem 0 1rem;
+  margin: 0 0 var(--vads-spacing-1) 0;
+  color: var(--vads-color-primary);
+  font-size: var(--vads-font-size-root);
+  padding: var(--vads-spacing-2) var(--vads-spacing-2) 0 var(--vads-spacing-2);
 }
 
 .report-date {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 1rem;
-  padding: 0 1rem 1rem 1rem;
+  font-size: var(--vads-font-size-body-small);
+  color: var(--vads-color-gray-dark);
+  margin-bottom: var(--vads-spacing-2);
+  padding: 0 var(--vads-spacing-2) var(--vads-spacing-2) var(--vads-spacing-2);
 }
 
 .report-image {
