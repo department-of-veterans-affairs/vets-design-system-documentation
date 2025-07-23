@@ -137,8 +137,8 @@
     },
     {
       "period": "2025-Q3",
-      "issues_opened": 131,
-      "issues_closed": 157
+      "issues_opened": 134,
+      "issues_closed": 160
     }
   ],
   "velocity": [
@@ -549,8 +549,8 @@
     },
     {
       "period": "2025-07",
-      "issues_opened": 131,
-      "issues_closed": 157
+      "issues_opened": 134,
+      "issues_closed": 160
     }
   ],
   "experimental_quarterly": [
@@ -658,17 +658,17 @@
     },
     {
       "period": "2025-Q3",
-      "issues_opened": 2,
+      "issues_opened": 3,
       "issues_closed": 10,
       "issues_implemented": 1
     }
   ],
   "summary": {
     "open_issues": 426,
-    "closed_this_month": 157,
+    "closed_this_month": 160,
     "avg_resolution_days": 124,
-    "total_issues": 4485,
-    "last_updated": "2025-07-23T17:02:27.451Z"
+    "total_issues": 4488,
+    "last_updated": "2025-07-23T20:29:20.596Z"
   },
-  "generated_at": "2025-07-23T17:02:27.459Z"
+  "generated_at": "2025-07-23T20:29:20.599Z"
 }
