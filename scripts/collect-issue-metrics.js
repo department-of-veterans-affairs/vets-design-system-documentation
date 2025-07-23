@@ -122,6 +122,63 @@ function processVelocityData(issues) {
 }
 
 /**
+ * Process experimental design issues into quarterly data
+ */
+function processExperimentalQuarterlyData(issues) {
+  // Filter for experimental design issues
+  const experimentalIssues = issues.filter(issue => 
+    issue.labels && issue.labels.includes('experimental_design')
+  );
+  
+  if (experimentalIssues.length === 0) {
+    return [];
+  }
+  
+  const quarterlyData = new Map();
+  
+  experimentalIssues.forEach(issue => {
+    const created = new Date(issue.created_at);
+    const quarterKey = getQuarterKey(created);
+    
+    if (!quarterlyData.has(quarterKey)) {
+      quarterlyData.set(quarterKey, {
+        period: quarterKey,
+        issues_opened: 0,
+        issues_closed: 0,
+        issues_implemented: 0
+      });
+    }
+    
+    quarterlyData.get(quarterKey).issues_opened++;
+    
+    if (issue.closed_at) {
+      const closed = new Date(issue.closed_at);
+      const closedQuarterKey = getQuarterKey(closed);
+      
+      if (!quarterlyData.has(closedQuarterKey)) {
+        quarterlyData.set(closedQuarterKey, {
+          period: closedQuarterKey,
+          issues_opened: 0,
+          issues_closed: 0,
+          issues_implemented: 0
+        });
+      }
+      
+      quarterlyData.get(closedQuarterKey).issues_closed++;
+      
+      // Check if this issue was added to the system
+      if (issue.labels && issue.labels.includes('added-to-system')) {
+        quarterlyData.get(closedQuarterKey).issues_implemented++;
+      }
+    }
+  });
+  
+  return Array.from(quarterlyData.values()).sort((a, b) => 
+    a.period.localeCompare(b.period)
+  );
+}
+
+/**
  * Calculate summary statistics
  */
 function calculateSummary(issues) {
@@ -195,12 +252,14 @@ async function main() {
     
     const quarterlyData = processQuarterlyData(issues);
     const velocityData = processVelocityData(issues);
+    const experimentalQuarterlyData = processExperimentalQuarterlyData(issues);
     const summary = calculateSummary(issues);
     
     // Prepare output
     const metricsData = {
       quarterly: quarterlyData,
       velocity: velocityData,
+      experimental_quarterly: experimentalQuarterlyData,
       summary: summary,
       generated_at: new Date().toISOString()
     };
@@ -215,6 +274,7 @@ async function main() {
     console.log(`   - Avg resolution: ${summary.avg_resolution_days} days`);
     console.log(`   - Quarterly data points: ${quarterlyData.length}`);
     console.log(`   - Velocity data points: ${velocityData.length}`);
+    console.log(`   - Experimental design quarters: ${experimentalQuarterlyData.length}`);
     
   } catch (error) {
     console.error('❌ Error collecting metrics:', error.message);
@@ -231,5 +291,6 @@ module.exports = {
   fetchAllIssues,
   processQuarterlyData,
   processVelocityData,
+  processExperimentalQuarterlyData,
   calculateSummary
 };
