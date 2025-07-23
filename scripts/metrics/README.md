@@ -23,6 +23,25 @@ Collects issue data from the vets-design-system-documentation repository and gen
 
 **Output**: `src/assets/data/metrics/issue-metrics.json`
 
+### Monthly Analytics Reports
+
+Automates the processing and display of monthly Google Looker Studio reports showing top VA.gov page analytics.
+
+**Location**: `../process-monthly-report.js` and `../add-monthly-report.sh`
+
+**What it does**:
+- Converts PDF reports to high-quality PNG images
+- Manages report metadata and organization
+- Integrates reports into the metrics dashboard
+- Maintains a rolling 12-month history
+
+**Documentation**: See [MONTHLY-REPORTS.md](./MONTHLY-REPORTS.md) for detailed setup and usage instructions.
+
+**Output**:
+
+- `src/assets/data/metrics/monthly-reports.json` - Report metadata
+- `src/assets/img/metrics/monthly-reports/` - Converted PNG images
+
 ## Setup
 
 ### Prerequisites
@@ -219,6 +238,9 @@ When adding new metrics or modifying the collection script:
 - `src/_about/metrics.md` - Dashboard page
 - `src/assets/data/metrics/` - Generated metrics data
 - `scripts/collect-issue-metrics.js` - Main collection script
+- [MONTHLY-REPORTS.md](./MONTHLY-REPORTS.md) - Monthly analytics reports documentation
+- `scripts/process-monthly-report.js` - Monthly report processing script
+- `scripts/add-monthly-report.sh` - Monthly report helper script
 
 ## Support
 
