@@ -6,6 +6,16 @@ This directory contains scripts and documentation for collecting and generating 
 
 The metrics system collects data from GitHub and other sources to generate visualizations showing the health and adoption of the VA Design System. The primary focus is on issue tracking metrics including burndown and velocity charts.
 
+## 🤖 Automation
+
+Metrics are automatically updated weekly via GitHub Actions. See [AUTOMATION.md](./AUTOMATION.md) for complete details on the automated workflows.
+
+**Quick Summary**:
+- **Schedule**: Weekly on Sundays at 6:00 AM UTC
+- **Data Sources**: GitHub Issues API, experimental design tracking
+- **Output**: JSON files committed to repository
+- **Manual Trigger**: Available via GitHub Actions interface
+
 ## Scripts
 
 ### `collect-issue-metrics.js`

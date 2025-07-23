@@ -11,7 +11,9 @@
     "watch": "yarn run build && bundle exec jekyll serve --baseurl '' --incremental",
     "update-releases": "rm -rf json_data_cache && yarn run build && bundle exec jekyll serve --baseurl ''",
     "build-json": "gulp move-json-data && gulp process-component-maturity && gulp process-component-maturity-figma",
-    "process-monthly-report": "node scripts/process-monthly-report.js"
+    "process-monthly-report": "node scripts/process-monthly-report.js",
+    "collect-metrics": "node scripts/collect-issue-metrics.js",
+    "update-metrics": "npm run collect-metrics"
   },
   "repository": {
     "type": "git",
