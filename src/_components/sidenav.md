@@ -44,9 +44,9 @@ anchors:
 
 ### When to consider something else
 
-* **If your section has fewer than five pages.** A full navigation structure may not be necessary for small sections of the website. 
+* **If your section has fewer than 5 pages.** A full navigation structure may not be necessary for small sections of the website.
 * **If you want users to navigate to different sections on the same page.** Instead, use the [On this page]({{ site.baseurl }}/components/on-this-page) component.
-* **If the links are not closely related or do not live in the same section of the website.**
+* **If the links aren't closely related or don't live in the same section of the website.**
 
 ### How this component works
 
@@ -54,7 +54,7 @@ Side Navigation provides secondary navigation within a specific section of a web
 
 The component is designed to reflect a user's task-oriented goals, rather than the internal structure of the VA. 
 
-There are two primary ways to structure Side Navigation items that contain child pages:
+There are 2 primary ways to structure Side Navigation items that contain child pages:
 
 * **Categorized Links**: A top-level item can serve as a non-clickable heading for a group of child pages. This pattern is useful for organizing links into thematic categories, similar to the "spokes" on a VA.gov benefit hub page, where a title like "Manage benefits" introduces a list of related tasks.
 
@@ -62,7 +62,7 @@ There are two primary ways to structure Side Navigation items that contain child
 
 ## Behavior
 
-At mobile breakpoints, the navigation menu is collapsed by default to save space. A trigger button labeled "Related pages menu" reveals the navigation menu similarly to an [Accordion]({{site.baseurl}}/components/accordion) when activated.
+At mobile breakpoints, the navigation menu is collapsed by default to save space. A trigger button labeled "Related pages menu" reveals the navigation menu when activated. This works similarly to an [Accordion]({{site.baseurl}}/components/accordion).
 
 ### Placement
 
@@ -75,7 +75,7 @@ At desktop breakpoints, the component should be placed at the top of the left co
 {% include component-example.html alt="Paperless Delivery with Side Navigation in a desktop view" caption="Desktop view: Side Navigation in the Paperless Delivery example." file="/images/components/side-navigation/side-navigation-desktop.png" %}
 
 #### Mobile View
-At mobile breakpoints, the Side Navigation should appear below the breadcrumb, but above the page title and any content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
+At mobile breakpoints, the Side Navigation should appear below the breadcrumb but above the page title and any content. It should be collapsed by default behind a "Related pages menu" button that toggles visibility. This ensures mobile users can access navigation without it taking up excessive screen space. When expanded, the menu should push content downward rather than overlaying it.
 
 <figure class="site-component-example">
   <img src="{{ site.baseurl }}/images/components/side-navigation/side-navigation-mobile-closed.png" alt="Paperless Delivery with a collapsed Side Navigation in a mobile view" class="site-component-example__image" style="max-width:256px">
@@ -85,17 +85,17 @@ At mobile breakpoints, the Side Navigation should appear below the breadcrumb, b
 
 ## Code considerations
 
-Side Navigation is built as a flexible component using a compositional architecture. This means the final navigation menu is constructed by combining several smaller, internal child components within a parent container. This modular approach simplifies maintenance, improves future expandability, and allows for easy integration into different environments.
+Side Navigation is built as a flexible component using a compositional architecture. This means we construct the final navigation menu by combining several smaller, internal child components within a parent container. This modular approach simplifies maintenance, improves future expandability, and allows for easy integration into different environments.
 
 The component is composed of the following parts:
 
 `va-sidenav` **(Parent Component)**: This is the main container that wraps all the navigation elements. It can include an optional header with a title and an optional icon.
 
-`va-sidenav-item` **(Internal Child Component)**: This is the basic building block for a single, clickable navigation link. It includes properties for the link's destination (`href`) and label. It can also be flagged as the `current-page` for distinct styling.
+`va-sidenav-item` **(Internal Child Component)**: This is the basic building block for a single, clickable navigation link. It includes properties for the link's destination (`href`) and label. You can also flag it as the `current-page` for distinct styling.
 
-`va-sidenav-submenu` **(Internal Child Component)**: This component acts as a container for nesting `va-sidenav-items`, allowing for the creation of a hierarchical structure (child and grandchild links). The parent item of a submenu can optionally be a link itself.
+`va-sidenav-submenu` **(Internal Child Component)**: This component acts as a container for nesting `va-sidenav-items`. This allows you to create a hierarchical structure (child and grandchild links). The parent item of a submenu can optionally be a link itself.
 
-This compositional structure allows developers to build complex navigation menus by slotting together the necessary child components. For single-page applications, the component supports router integration by firing a `vaRouteChange` event, which prevents native link routing and allows a routing library like React Router to handle the navigation.
+This compositional structure allows developers to build complex navigation menus by slotting together the necessary child components. For single-page applications, the component supports router integration by firing a `vaRouteChange` event. This prevents native link routing and allows a routing library like React Router to handle the navigation.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -107,6 +107,15 @@ This compositional structure allows developers to build complex navigation menus
 ## Accessibility considerations
 
 <va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary"></va-link-action>
+
+### Focus order placement
+
+- **Place the Side Navigation in the focus order immediately after the breadcrumb and before the main content.** This order helps screen reader and keyboard users understand their location in the section and how it relates to other pages nearby. Users can choose to bypass the navigation by using the "Skip to content" link that's available at the top of each page, or by using landmark navigation in their screen reader to select their desired content region.
+
+### Markup placement
+
+- **Place the Side Navigation outside of \<main\>.** We recommend placing the Side Navigation outside of the `<main>` element, ideally in a landmark region like `<aside>` to help define the structure of the page and support assistive technology navigation. However, we recognize this may not be technically feasible in all implementations. If the side navigation must be placed inside `<main>`, make sure it's placed above the main content in the focus order.
+
 
 ## Related
 * [On this page]({{ site.baseurl }}/components/on-this-page)
