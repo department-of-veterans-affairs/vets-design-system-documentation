@@ -108,6 +108,15 @@ This compositional structure allows developers to build complex navigation menus
 
 <va-link-action href="https://designsystem.digital.gov/components/side-navigation/accessibility-tests/" text="Refer to the U.S. Web Design System for additional accessibility testing guidance" type="secondary"></va-link-action>
 
+### Focus order placement
+
+- **Place the Side Navigation in the focus order immediately after the breadcrumb and before the main content.** This order helps screen reader and keyboard users understand their location in the section and how it relates to other pages nearby. Users can choose to bypass the navigation by using the "Skip to content" link that is available at the top of each page, or by using landmark navigation in their screen reader to select their desired content region.
+
+  ### Markup placement
+
+- **Place the Side Navigation outside of \<main\>.** We recommend placing the Side Navigation outside of the `<main>` element, ideally in a landmark region like `<aside>` to help define the structure of the page and support assistive technology navigation. However, we recognize this may not be technically feasible in all implementations. If the side navigation must be placed inside `<main>`, make sure it is placed above the main content in the focus order.
+
+
 ## Related
 * [On this page]({{ site.baseurl }}/components/on-this-page)
 * [Header]({{ site.baseurl}}/components/header)
