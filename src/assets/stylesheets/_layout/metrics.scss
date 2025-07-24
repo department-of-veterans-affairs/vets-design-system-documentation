@@ -29,21 +29,53 @@
 
 .metric-card {
   text-align: center;
-  padding: var(--vads-spacing-1p5);
+  padding: var(--vads-spacing-3);
 }
 
 .metric-card h4 {
   margin: 0 0 var(--vads-spacing-1) 0;
   font-size: var(--vads-font-size-body-small);
+  font-weight: var(--font-weight-normal);
   color: var(--vads-color-gray-dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .metric-value {
-  font-size: var(--vads-font-size-heading-level-2);
-  font-weight: var(--font-weight-bold);
-  color: var(--vads-color-primary);
+  line-height: 1.1;
+  margin-bottom: var(--vads-spacing-0p5);
+  color: var(--vads-color-base-darkest);
+}
+
+.metric-trend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--vads-spacing-0p5);
+  font-size: var(--vads-font-size-body-small);
+  font-weight: var(--font-weight-normal);
+  
+  &.trend-up {
+    color: var(--vads-color-success-dark);
+  }
+  
+  &.trend-down {
+    color: var(--vads-color-error-dark);
+  }
+  
+  &.trend-neutral {
+    color: var(--vads-color-gray-dark);
+  }
+  
+  .trend-icon {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  va-icon {
+    --va-icon-size: 16px;
+  }
 }
 
 .chart-placeholder {

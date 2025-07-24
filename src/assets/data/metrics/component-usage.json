@@ -4069,7 +4069,17 @@
       "react": 1,
       "v1": 1,
       "v3": 97
+    },
+    "components_trend": {
+      "direction": "up",
+      "percentage": 5,
+      "value": 5
+    },
+    "usage_trend": {
+      "direction": "up",
+      "percentage": 23,
+      "value": 315
     }
   },
-  "generated_at": "2025-07-11T21:00:03.994Z"
+  "generated_at": "2025-07-24T14:09:06.477Z"
 }

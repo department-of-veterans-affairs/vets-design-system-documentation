@@ -668,7 +668,22 @@
     "closed_this_month": 160,
     "avg_resolution_days": 124,
     "total_issues": 4488,
-    "last_updated": "2025-07-23T20:29:20.596Z"
+    "last_updated": "2025-07-24T14:01:20.317Z",
+    "open_issues_trend": {
+      "direction": "down",
+      "percentage": 12,
+      "value": -63
+    },
+    "closed_month_trend": {
+      "direction": "down",
+      "percentage": 38,
+      "value": -99
+    },
+    "resolution_time_trend": {
+      "direction": "down",
+      "percentage": 35,
+      "value": -72
+    }
   },
-  "generated_at": "2025-07-23T20:29:20.599Z"
+  "generated_at": "2025-07-24T14:01:20.336Z"
 }

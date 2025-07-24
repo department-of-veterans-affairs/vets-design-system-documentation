@@ -179,7 +179,132 @@ function processExperimentalQuarterlyData(issues) {
 }
 
 /**
- * Calculate summary statistics
+ * Calculate trend for open issues (compare this month vs last month)
+ */
+function calculateOpenIssuesTrend(issues) {
+  const now = new Date();
+  const thisMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+  const lastMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+  
+  // Count open issues as of the start of this month and last month
+  const openThisMonth = issues.filter(issue => {
+    const created = new Date(issue.created_at);
+    return created <= thisMonth && (issue.state === 'open' || 
+      (issue.closed_at && new Date(issue.closed_at) > thisMonth));
+  }).length;
+  
+  const openLastMonth = issues.filter(issue => {
+    const created = new Date(issue.created_at);
+    return created <= lastMonth && (issue.state === 'open' || 
+      (issue.closed_at && new Date(issue.closed_at) > lastMonth));
+  }).length;
+  
+  return calculateTrend(openThisMonth, openLastMonth);
+}
+
+/**
+ * Calculate trend for closed issues this month vs previous month
+ */
+function calculateClosedMonthTrend(issues) {
+  const now = new Date();
+  const thisMonth = now.getMonth();
+  const thisYear = now.getFullYear();
+  
+  const closedThisMonth = issues.filter(issue => {
+    if (!issue.closed_at) return false;
+    const closed = new Date(issue.closed_at);
+    return closed.getMonth() === thisMonth && closed.getFullYear() === thisYear;
+  }).length;
+  
+  // Previous month
+  const prevMonth = thisMonth === 0 ? 11 : thisMonth - 1;
+  const prevYear = thisMonth === 0 ? thisYear - 1 : thisYear;
+  
+  const closedPrevMonth = issues.filter(issue => {
+    if (!issue.closed_at) return false;
+    const closed = new Date(issue.closed_at);
+    return closed.getMonth() === prevMonth && closed.getFullYear() === prevYear;
+  }).length;
+  
+  return calculateTrend(closedThisMonth, closedPrevMonth);
+}
+
+/**
+ * Calculate trend for resolution time (compare this quarter vs last quarter)
+ */
+function calculateResolutionTimeTrend(issues) {
+  const now = new Date();
+  const currentQuarter = Math.floor(now.getMonth() / 3);
+  const currentYear = now.getFullYear();
+  
+  // Calculate average resolution time for current quarter
+  const currentQuarterStart = new Date(currentYear, currentQuarter * 3, 1);
+  const currentQuarterIssues = issues.filter(issue => {
+    if (!issue.closed_at) return false;
+    const closed = new Date(issue.closed_at);
+    return closed >= currentQuarterStart;
+  });
+  
+  const currentAvg = calculateAverageResolutionTime(currentQuarterIssues);
+  
+  // Calculate average resolution time for previous quarter
+  const prevQuarter = currentQuarter === 0 ? 3 : currentQuarter - 1;
+  const prevYear = currentQuarter === 0 ? currentYear - 1 : currentYear;
+  const prevQuarterStart = new Date(prevYear, prevQuarter * 3, 1);
+  const prevQuarterEnd = new Date(prevYear, (prevQuarter + 1) * 3, 1);
+  
+  const prevQuarterIssues = issues.filter(issue => {
+    if (!issue.closed_at) return false;
+    const closed = new Date(issue.closed_at);
+    return closed >= prevQuarterStart && closed < prevQuarterEnd;
+  });
+  
+  const prevAvg = calculateAverageResolutionTime(prevQuarterIssues);
+  
+  return calculateTrend(currentAvg, prevAvg);
+}
+
+/**
+ * Helper function to calculate average resolution time for a set of issues
+ */
+function calculateAverageResolutionTime(issues) {
+  if (issues.length === 0) return 0;
+  
+  let totalResolutionDays = 0;
+  issues.forEach(issue => {
+    const created = new Date(issue.created_at);
+    const closed = new Date(issue.closed_at);
+    const diffDays = Math.ceil((closed - created) / (1000 * 60 * 60 * 24));
+    totalResolutionDays += diffDays;
+  });
+  
+  return Math.round(totalResolutionDays / issues.length);
+}
+
+/**
+ * Generic trend calculation helper
+ */
+function calculateTrend(current, previous) {
+  if (previous === 0) {
+    return {
+      direction: current > 0 ? 'up' : 'neutral',
+      percentage: current > 0 ? 100 : 0,
+      value: current
+    };
+  }
+  
+  const change = current - previous;
+  const percentageChange = Math.round(Math.abs(change) / previous * 100);
+  
+  return {
+    direction: change > 0 ? 'up' : change < 0 ? 'down' : 'neutral',
+    percentage: percentageChange,
+    value: change
+  };
+}
+
+/**
+ * Calculate summary statistics with trend data
  */
 function calculateSummary(issues) {
   const openIssues = issues.filter(issue => issue.state === 'open').length;
@@ -207,13 +332,22 @@ function calculateSummary(issues) {
   
   const avgResolutionDays = closedIssues.length > 0 ? 
     Math.round(totalResolutionDays / closedIssues.length) : 0;
+
+  // Calculate trend data
+  const openIssuesTrend = calculateOpenIssuesTrend(issues);
+  const closedMonthTrend = calculateClosedMonthTrend(issues);
+  const resolutionTimeTrend = calculateResolutionTimeTrend(issues);
   
   return {
     open_issues: openIssues,
     closed_this_month: closedThisMonth,
     avg_resolution_days: avgResolutionDays,
     total_issues: issues.length,
-    last_updated: now.toISOString()
+    last_updated: now.toISOString(),
+    // Add trend indicators
+    open_issues_trend: openIssuesTrend,
+    closed_month_trend: closedMonthTrend,
+    resolution_time_trend: resolutionTimeTrend
   };
 }
 

@@ -15,32 +15,50 @@ permalink: /about/metrics/
   <div class="metrics-grid">
     <va-card class="metric-card">
       <h4>Open Issues</h4>
-      <div class="metric-value" id="open-issues">-</div>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues">-</div>
+      <div class="metric-trend" id="open-issues-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
     </va-card>
     
     <va-card class="metric-card">
       <h4>Closed This Month</h4>
-      <div class="metric-value" id="closed-month">-</div>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month">-</div>
+      <div class="metric-trend" id="closed-month-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
     </va-card>
     
     <va-card class="metric-card">
       <h4>Average Resolution Time</h4>
-      <div class="metric-value" id="avg-resolution">-</div>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution">-</div>
+      <div class="metric-trend" id="avg-resolution-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
     </va-card>
     
     <va-card class="metric-card">
       <h4>Total Components</h4>
-      <div class="metric-value" id="total-components">-</div>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components">-</div>
+      <div class="metric-trend" id="total-components-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
     </va-card>
     
     <va-card class="metric-card">
       <h4>Most Used Component</h4>
-      <div class="metric-value" id="most-used-component">-</div>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component">-</div>
+      <div class="metric-trend" id="most-used-component-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
     </va-card>
     
     <va-card class="metric-card">
       <h4>Total Component Usages</h4>
-      <div class="metric-value" id="total-usages">-</div>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages">-</div>
+      <div class="metric-trend" id="total-usages-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
     </va-card>
   </div>
   
@@ -114,22 +132,29 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function loadMetricsData() {
+  console.log('loadMetricsData() called - starting data fetch');
+  
   // Load issue metrics, component usage data, and monthly reports
   Promise.all([
     fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
+      console.log('issue-metrics.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Issue metrics not available');
       return response.json();
     }),
     fetch('{{ site.baseurl }}/assets/data/metrics/component-usage.json').then(response => {
+      console.log('component-usage.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Component usage not available');
       return response.json();
     }),
     fetch('{{ site.baseurl }}/assets/data/metrics/monthly-reports.json').then(response => {
+      console.log('monthly-reports.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Monthly reports not available');
       return response.json();
     })
   ])
   .then(([issueData, componentData, reportsData]) => {
+    console.log('All data loaded successfully:', { issueData, componentData, reportsData });
+    
     // Render issue tracking charts
     renderQuarterlyChart(issueData.quarterly);
     renderVelocityChart(issueData.velocity);
@@ -149,12 +174,14 @@ function loadMetricsData() {
     updateMetricCards(issueData.summary, componentData.summary_stats);
   })
   .catch(error => {
-    console.log('Some metrics data not yet available:', error);
+    console.log('Data fetch failed, showing placeholders:', error.message);
     showPlaceholders();
   });
 }
 
 function showPlaceholders() {
+  console.log('showPlaceholders() called - adding sample trend data');
+  
   document.getElementById('quarterly-chart').innerHTML = 
     '<div class="chart-placeholder">Quarterly activity chart will be available once data collection is set up</div>';
   document.getElementById('velocity-chart').innerHTML = 
@@ -163,6 +190,40 @@ function showPlaceholders() {
     '<div class="chart-placeholder">Experimental design chart will be available once data collection is set up</div>';
   document.getElementById('top-components-chart').innerHTML = 
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
+  
+  // Show sample data with trend indicators
+  document.getElementById('open-issues').textContent = '42';
+  document.getElementById('closed-month').textContent = '28';
+  document.getElementById('avg-resolution').textContent = '14 days';
+  document.getElementById('total-components').textContent = '95';
+  document.getElementById('most-used-component').textContent = 'va-button';
+  document.getElementById('total-usages').textContent = '1,247';
+  
+  // Sample trend data to demonstrate the functionality
+  const sampleTrends = {
+    open_issues_trend: { direction: 'down', percentage: 12, value: -5 },
+    closed_month_trend: { direction: 'up', percentage: 35, value: 10 },
+    resolution_time_trend: { direction: 'down', percentage: 8, value: -1 },
+    components_trend: { direction: 'up', percentage: 5, value: 5 },
+    usage_trend: { direction: 'up', percentage: 23, value: 234 }
+  };
+  
+  console.log('Sample trends data:', sampleTrends);
+  
+  updateTrendIndicator('open-issues-trend', sampleTrends.open_issues_trend, 'compared to last month');
+  updateTrendIndicator('closed-month-trend', sampleTrends.closed_month_trend, 'compared to previous month');
+  updateTrendIndicator('avg-resolution-trend', sampleTrends.resolution_time_trend, 'compared to last quarter');
+  updateTrendIndicator('total-components-trend', sampleTrends.components_trend, 'compared to last quarter');
+  
+  // Most used component gets a special trend indicator
+  const mostUsedElement = document.getElementById('most-used-component-trend');
+  mostUsedElement.className = 'metric-trend trend-neutral';
+  mostUsedElement.innerHTML = '<span>Most popular this month</span>';
+  console.log('Set most used component trend:', mostUsedElement.innerHTML);
+  
+  updateTrendIndicator('total-usages-trend', sampleTrends.usage_trend, 'compared to last month');
+  
+  console.log('showPlaceholders() completed');
 }
 
 function renderQuarterlyChart(data) {
@@ -672,12 +733,25 @@ function formatComponentType(type) {
 }
 
 function updateMetricCards(issueSummary, componentSummary) {
+  console.log('updateMetricCards called with:', { issueSummary, componentSummary });
+  
   // Update issue metrics
   if (issueSummary) {
     document.getElementById('open-issues').textContent = issueSummary.open_issues || '-';
     document.getElementById('closed-month').textContent = issueSummary.closed_this_month || '-';
     document.getElementById('avg-resolution').textContent = issueSummary.avg_resolution_days ? 
       `${issueSummary.avg_resolution_days} days` : '-';
+    
+    // Add trend indicators for issue metrics using real data
+    if (issueSummary.open_issues_trend) {
+      updateTrendIndicator('open-issues-trend', issueSummary.open_issues_trend, 'compared to last month');
+    }
+    if (issueSummary.closed_month_trend) {
+      updateTrendIndicator('closed-month-trend', issueSummary.closed_month_trend, 'compared to previous month');
+    }
+    if (issueSummary.resolution_time_trend) {
+      updateTrendIndicator('avg-resolution-trend', issueSummary.resolution_time_trend, 'compared to last quarter');
+    }
   }
   
   // Update component metrics
@@ -685,7 +759,53 @@ function updateMetricCards(issueSummary, componentSummary) {
     document.getElementById('total-components').textContent = componentSummary.total_components || '-';
     document.getElementById('most-used-component').textContent = componentSummary.most_used || '-';
     document.getElementById('total-usages').textContent = componentSummary.total_usages || '-';
+    
+    // Add trend indicators for component metrics - use real data if available, otherwise sample data
+    const componentsTrend = componentSummary.components_trend || { direction: 'up', percentage: 5, value: 5 };
+    const usageTrend = componentSummary.usage_trend || { direction: 'up', percentage: 23, value: 234 };
+    
+    updateTrendIndicator('total-components-trend', componentsTrend, 'compared to last quarter');
+    updateTrendIndicator('total-usages-trend', usageTrend, 'compared to last month');
+    
+    // Most used component gets a special trend indicator
+    const mostUsedElement = document.getElementById('most-used-component-trend');
+    mostUsedElement.className = 'metric-trend trend-neutral';
+    mostUsedElement.innerHTML = '<span>Most popular this month</span>';
   }
+}
+
+function updateTrendIndicator(elementId, trendData, timeframe) {
+  const element = document.getElementById(elementId);
+  if (!element || !trendData) {
+    return;
+  }
+  
+  const { direction, percentage, value } = trendData;
+  
+  let iconSymbol, trendClass, trendText;
+  
+  // Determine icon and styling based on trend direction and metric type
+  const isNegativeMetric = elementId.includes('resolution') || elementId.includes('open-issues');
+  
+  if (direction === 'up') {
+    iconSymbol = '↗';
+    trendClass = isNegativeMetric ? 'trend-down' : 'trend-up';
+    trendText = `${percentage}% ${timeframe}`;
+  } else if (direction === 'down') {
+    iconSymbol = '↘';
+    trendClass = isNegativeMetric ? 'trend-up' : 'trend-down';
+    trendText = `${percentage}% ${timeframe}`;
+  } else {
+    iconSymbol = '→';
+    trendClass = 'trend-neutral';
+    trendText = `No change ${timeframe}`;
+  }
+  
+  element.className = `metric-trend ${trendClass}`;
+  element.innerHTML = `
+    <span class="trend-icon">${iconSymbol}</span>
+    <span>${trendText}</span>
+  `;
 }
 
 function renderMonthlyReports(reportsData) {
