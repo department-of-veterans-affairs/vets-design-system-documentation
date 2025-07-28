@@ -5,8 +5,9 @@ permalink: /ia/
 index: true
 intro-text: Information architecture focuses on the organization, labeling, and navigation of information to help people find what they need, understand where they are and where they can go in an experience, and successfully complete their intended tasks.  
 sub-pages:
-  - sub-page: Domain Structure
+  - sub-page: VA domain structure
   - sub-page: URL Standards
+  - sub-page: Web placement criteria
   - sub-page: VA Health and Benefits app
 ---
 
