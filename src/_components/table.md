@@ -49,18 +49,19 @@ anchors:
 
 #### Using the standard table
 
+* **Use the standard table when users have to compare rows and columns** as the table layout remains the same on smaller screens.
+* **For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer.** All column heading labels should total no more than 60 characters.
 * **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
+* **Use monospace fonts for numerical data in tables, such as percentages, currency, or totals.** Do not use monospace fonts for phone numbers, zip codes, dates, or other data that can’t be added up.
 
 #### Using responsive stacked tables
 
-* **Arrange data in order of importance** Because the leftmost columns are what users see first in a smaller screen, work with a content specialist and determine what order of columns is going to tell the best story with that data. Which columns are most critical to understanding what the meaning of the table is? Ask users what the most important data is to them and have that be the first column.
-* **Left align header and value in list view** When using list view, the header and value are stacked vertically with the bolded header on one line and the value on the line below. Make sure both header and value are left aligned. 
+* **Use the responsive list view table when you need to present information in an itemized way.** A responsive stacked table collapses at narrow widths for better readability on small screens.
+* **Arrange data in order of importance.** Users see leftmost columns first on smaller screens. Work with a content specialist to determine what order of columns tells the best story with that data. Which columns are most critical to understanding the table's meaning? Ask users what data is most important to them and make that the first column.
+* **Left align header and value in list view.** When using list view, the header and value are stacked vertically with the bolded header on 1 line and the value on the line below. Make sure both header and value are left aligned.
+* **Avoid using numerical data in a responsive stacked table.** All data in a stacked table should be left aligned.
 * **Limit characters in headings** Column headings shouldn’t exceed 60 characters. Follow content guidelines on [how to abbreviate dates and time]({{ site.baseurl }}/content-style-guide/dates-and-numbers), as well as, other [abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms)
-* **Tables should have a maximum of 5 columns** Very large tables with lots of columns are difficult to use. This problem only gets exacerbated on smaller screens. Show only what users really need.  
-
-* **Use the responsive list view table when you need to present a list of information in an itemized way.** A responsive stacked table collapses at narrow widths for better readability on small screens.
-* **Use the standard table when users have to compare rows and columns** as the table layout remains the same on smaller screens.
-  * For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer. All column heading labels should total no more than 60 characters.
+* **Tables should have a maximum of 5 columns.** Very large tables with lots of columns are difficult to use. This problem gets worse on smaller screens. Show only what users really need.  
 
 {% include component-docs.html component_name=page.web-component %}
 
