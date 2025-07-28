@@ -7,7 +7,6 @@ intro-text: Information architecture focuses on the organization, labeling, and 
 sub-pages:
   - sub-page: VA domain structure
   - sub-page: URL Standards
-  - sub-page: Web placement criteria
   - sub-page: VA Health and Benefits app
 ---
 
