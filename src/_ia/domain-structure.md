@@ -17,7 +17,7 @@ intro-text: A domain name is the unique name for a website and serves as the sit
 
 VA’s domain name is va.gov. All public-facing VA websites and services must reside on the va.gov domain. Subdomains and subdirectories are utilized to further structure information within the va.gov domain. How we structure information within the va.gov domain can impact technical costs, user experience, content management, and search engine optimization (SEO).
 
-Note: In rare exceptions, we may create a separate top-level domain (such as www.veteranscrisisline.net/). Refer to the process section below for more information. 
+**Note:** In rare exceptions, we may create a separate top-level domain (such as www.veteranscrisisline.net/).
 
 ### Subdirectory 
 
@@ -60,8 +60,6 @@ Note: These examples show that the context of the information along with the int
 
 We have developed these criteria for use in determining subdirectories and subdomains as VA continues to build new experiences and modernize existing experiences. Because modernization is a continuous process, all existing experiences may not currently align with these criteria and cannot be used as examples of proper structuring. 
 
- 
-
 ### When a subdirectory of the primary domain is appropriate 
 
 All information and tools supporting VA’s primary audience and mission must live in a subdirectory of the va.gov domain. This includes all information and tools that meet either of these descriptions: 
@@ -87,14 +85,4 @@ Experiences that have certain technical constraints may also be eligible for a s
 
 ## Requesting a subdirectory or subdomain 
 
- 
-All requests for new 1st level subdirectories on www.va.gov or subdomains of va.gov must be submitted to [WHAT IS THE PROCESS??]  
-
-Requests should include a thorough description of the purpose, audiences, and type of content or functionality that will be included in the experience, as well as any technical requirements or constraints.  The request should also include an explanation of why your information does not fit within any of the existing 1st level subdirectory or subdomains.  
-
-
-Requesting a new .gov domain 
-
-We very rarely issue new .gov domains.  If a rare case for considering an alternative .gov domain arises, the request must provide a clear and compelling case that the domain is necessary to demonstrably better serve Veterans than the va.gov domain can. Request for alternative .gov domains must include justification grounded in audience needs, legal requirements, or technical constraints.  
-
-Submit requests to [WHAT IS THE PROCESS?] 
+Process information for requests coming soon.
