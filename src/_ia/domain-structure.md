@@ -90,7 +90,7 @@ Experiences that have certain technical constraints may also be eligible for a s
  
 All requests for new 1st level subdirectories on www.va.gov or subdomains of va.gov must be submitted to [WHAT IS THE PROCESS??]  
 
-Requests should include a thorough description of the purpose, audiences, and typed of content or functionality that will be included in the experience, as well as any technical requirements or constraints.  The request should also include an explanation of why your information does not fit within any of the existing 1st level subdirectory or subdomains.  
+Requests should include a thorough description of the purpose, audiences, and type of content or functionality that will be included in the experience, as well as any technical requirements or constraints.  The request should also include an explanation of why your information does not fit within any of the existing 1st level subdirectory or subdomains.  
 
 
 Requesting a new .gov domain 
