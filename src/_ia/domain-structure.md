@@ -20,7 +20,7 @@ VA’s domain name is va.gov. All public-facing VA websites and services must re
 
 ### Subdirectory
 
-A subdirectory organizes the content and tools of a site into different sections or categories. A subdirectory appears to the right of the domain in a URL, such as “[www.va.gov/health-care](www.va.gov/health-care),” and keeps the content and tools within the main website. Most VA content and tools belong within a subdirectory of the main va.gov domain.
+A subdirectory organizes the content and tools of a site into different sections or categories. A subdirectory appears to the right of the domain in a URL, such as “[www.va.gov/health-care/](www.va.gov/health-care/),” and keeps the content and tools within the main website. Most VA content and tools belong within a subdirectory of the main va.gov domain.
 
 We further structure subdirectories into deeper levels of subdirectories and pages to create an appropriate hierarchy for and classification of all information. All subdirectories must follow our [URL standards]({{ site.baseurl }}/ia/url-standards).
 
@@ -65,7 +65,6 @@ All information and tools supporting our primary audience and mission must live 
 - Information and tools that Veterans, their family members, and those who support them need to discover, learn about, apply, track, and manage VA benefits, health care, programs, and services, **or**
 - Information about the VA facilities and offices that manage and support VA benefits, programs, services, and health care offered to Veterans, their family members, and those who support them. Note that VA program office content can provide information for VA partners, including basic information and links those audiences may need. For partner audiences who need extensive amounts of information or functional tools, we would consider a separate space. 
 
-[Review the guidance for placement of content and functionality within the existing subdirectory structure of www.va.gov.]({{ site.baseurl }}/ia/web-placement-criteria) 
 
 ### When a subdomain may be appropriate 
 
