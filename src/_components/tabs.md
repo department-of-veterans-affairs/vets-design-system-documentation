@@ -26,8 +26,8 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 
 ### When to use tabs
 
-* **Secondary navigation within an application.** Tabs allow users to navigate to sections of an application.
-* **Related content within an application.** To group related content that the user doesn't need to read at the same time.
+* **Secondary navigation.** Use tabs to help users navigate between sections of an application.
+* **Related content.** Use tabs to organize related content that users don't need to view simultaneously.
 
 ### When to consider something else
 
