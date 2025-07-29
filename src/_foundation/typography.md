@@ -174,7 +174,7 @@ Don’t change heading level in order to use a different font size.
 
 {% include content/avoid-links-in-headers.md %}
 
-## Using monospace fonts
+## Monospace fonts
 
 Use monospace fonts sparingly. Monospace fonts can be difficult to read, especially at small sizes or with poor color contrast. Use monospace fonts only for numerical data in tables, code examples, or when precise horizontal alignment is needed. For body text, choose a sans serif typeface.
 
