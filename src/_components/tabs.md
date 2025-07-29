@@ -35,7 +35,7 @@ Because tabs stack horizontally or wrap to a second line, they're not an optimal
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
 * **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page. 
 * **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
-* **Instantaneous loading.** The tabs are URL-based, so you should anticipate the whole page reloading when clicking on different tabs. 
+* **Instantaneous loading.** The tabs are URL-based, which will reload the entire page when users click between tabs. This Nielsen Norman Group article [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/) provides more details on the differences between navigation tabs and in-page tabs.  
 
 ### How this component works
 
