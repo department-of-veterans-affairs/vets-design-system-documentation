@@ -89,7 +89,7 @@ If there's a lag time between when someone submits the form and when VA receives
 
 ### Showing form submission status in My VA
 
-Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets statuses from the [Lighthouse Benefits Intake (API)](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
+Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets statuses from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
 
