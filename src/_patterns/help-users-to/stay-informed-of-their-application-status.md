@@ -1,6 +1,6 @@
 ---
 layout: pattern
-title: Stay informIf there's no lag time between when someone submits a form and when we receive it—the form was received in the system of record in time for us to show a success message on the confirmation page—then we consider it a synchronous form. In this case, you need to implement only 1 email notification:d of their form submission status
+title: Stay informed of their form submission status
 permalink: /patterns/help-users-to/stay-informed-of-their-application-status
 sub-section: help-users-to
 intro-text: "Follow this pattern to notify people when their online form submission is in progress, when we receive their submitted form, and when a system error has caused the submission to fail. These are required notification touch points." 
