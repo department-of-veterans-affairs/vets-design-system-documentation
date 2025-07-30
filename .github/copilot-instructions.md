@@ -144,7 +144,7 @@ yarn build
 ### Compliance Standards
 
 - **Section 508**: Federal accessibility requirements
-- **WCAG 2.1 AA**: Web Content Accessibility Guidelines
+- **WCAG 2.2 AA**: Web Content Accessibility Guidelines
 - **VA 508 Office**: Internal accessibility review and approval
 
 ### Testing Requirements
