@@ -111,7 +111,7 @@ When we use the canonical URL in links, it reduces the risk of links breaking wh
 ## Linking to documents and other file sources
 * Avoid linking to PDFs as much as possible. 
 * If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System.<br>
-[Review examples of link variations in the Components section](https://designsystem.digital.gov//components/link/)
+[Review examples of link variations in the Components section](https://design.va.gov/components/link/)
 
 ## Linking to external sites
 
