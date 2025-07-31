@@ -1,0 +1,158 @@
+name: Update Metrics Dashboard Data
+
+on:
+  schedule:
+    # Run weekly on Sundays at 6 AM UTC (2 AM ET)
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+    # Allow manual triggering for testing and on-demand updates
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: |
+          npm ci || npm install
+      
+      - name: Setup GitHub CLI
+        uses: cli/cli@v2.32.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Verify GitHub CLI authentication
+        run: |
+          gh auth status
+          gh api user --jq '.login'
+      
+      - name: Create data directories
+        run: |
+          mkdir -p src/assets/data/metrics
+          mkdir -p src/assets/img/metrics
+      
+      - name: Collect issue metrics
+        run: |
+          echo "Starting issue metrics collection..."
+          node scripts/collect-issue-metrics.js
+          echo "Issue metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Verify generated data files
+        run: |
+          echo "Checking for generated files..."
+          ls -la src/assets/data/metrics/
+          if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
+            echo "✅ issue-metrics.json generated successfully"
+            echo "File size: $(du -h src/assets/data/metrics/issue-metrics.json)"
+            # Show first few lines for verification
+            echo "Sample data:"
+            head -20 src/assets/data/metrics/issue-metrics.json
+          else
+            echo "❌ issue-metrics.json not found"
+            exit 1
+          fi
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add src/assets/data/metrics/
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in metrics data"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in metrics data"
+            git diff --staged --stat
+          fi
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Get current date for commit message
+          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          
+          # Count total issues processed
+          TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
+          
+          # Create descriptive commit message
+          git commit -m "📊 Update metrics dashboard data - ${CURRENT_DATE}
+
+          - Updated issue tracking metrics
+          - Processed ${TOTAL_ISSUES} total issues
+          - Updated quarterly and monthly aggregations
+          - Updated experimental design issue tracking
+          
+          🤖 Automated update via GitHub Actions"
+          
+          git push
+      
+      - name: Create summary
+        if: always()
+        run: |
+          echo "## 📊 Metrics Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
+            TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            OPEN_ISSUES=$(jq -r '.summary.open_issues // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            CLOSED_MONTH=$(jq -r '.summary.closed_this_month // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            AVG_RESOLUTION=$(jq -r '.summary.avg_resolution_days // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            QUARTERS=$(jq -r '.quarterly | length' src/assets/data/metrics/issue-metrics.json)
+            EXPERIMENTAL_QUARTERS=$(jq -r '.experimental_quarterly | length' src/assets/data/metrics/issue-metrics.json)
+            
+            echo "### ✅ Issue Metrics Updated Successfully" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Issues Processed:** ${TOTAL_ISSUES}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Currently Open:** ${OPEN_ISSUES}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Closed This Month:** ${CLOSED_MONTH}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Average Resolution Time:** ${AVG_RESOLUTION} days" >> $GITHUB_STEP_SUMMARY
+            echo "- **Quarterly Periods:** ${QUARTERS}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Experimental Design Quarters:** ${EXPERIMENTAL_QUARTERS}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            if [ "${{ steps.git-check.outputs.changes }}" == "true" ]; then
+              echo "### 🚀 Changes Committed" >> $GITHUB_STEP_SUMMARY
+              echo "Updated metrics data has been committed to the repository." >> $GITHUB_STEP_SUMMARY
+            else
+              echo "### ℹ️ No Changes" >> $GITHUB_STEP_SUMMARY
+              echo "No changes detected - metrics data is up to date." >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "### ❌ Issue Metrics Update Failed" >> $GITHUB_STEP_SUMMARY
+            echo "The issue-metrics.json file was not generated successfully." >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📅 Next Update" >> $GITHUB_STEP_SUMMARY
+          echo "The next automatic update is scheduled for next Sunday at 6 AM UTC." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔗 Dashboard" >> $GITHUB_STEP_SUMMARY
+          echo "View the updated metrics at: [design.va.gov/about/metrics/](https://design.va.gov/about/metrics/)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Metrics update workflow failed"
+          echo "Check the workflow logs for details"
+          echo "The dashboard may show stale data until this is resolved"
