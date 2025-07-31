@@ -82,7 +82,7 @@ See [Tabs component discussion](https://github.com/department-of-veterans-affair
 ## Related
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
-* [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented)
+* [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented)
 * [Side navigation]({{ site.baseurl }}/components/side-navigation)
 * [On this page]({{ site.baseurl }}/components/on-this-page)
 
