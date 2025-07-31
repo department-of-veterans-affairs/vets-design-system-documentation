@@ -22,11 +22,9 @@ Storybook example
 
 ## Usage
 
-Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using only 2 tabs to present a set of complementary options is acceptable. 
-
 ### When to use tabs
 
-* **Secondary navigation.** Use tabs to help users navigate between sections of an application.
+* **Secondary navigation.** Use tabs to help users navigate between sections of the page.
 * **Related content.** Use tabs to organize related content that users don't need to view simultaneously.
 
 ### When to consider something else
@@ -50,9 +48,9 @@ Add this once final tabs component is complete.
 ### Placement
 
 * The tabs component should appear in a consistent location across desktop and mobile views.
-* Place tabs below the main header. 
+* Place tabs below the Page title and subtitle. 
 * Information relevant to all tabs can be placed above the tabs.
-* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/side-navigation) component. Don't add tab sections to the Side navigation, they should exist separately.
+* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/side-navigation) component. Don't add tab links to the Side navigation, they should exist separately.
 * Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the tabs component.
 * Use 32px spacing above and below the tabs.
 
