@@ -68,7 +68,7 @@ Add this once final tabs component is complete.
 #### Mobile view
 
 <figure class="site-component-example">
-  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image x2" style="max-width:256px">
   <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Files.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." class="site-component-example__image" style="max-width:256px">
   <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool with margin annotations.</figcaption>
 </figure>
