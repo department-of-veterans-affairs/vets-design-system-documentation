@@ -56,6 +56,12 @@ Add this once final tabs component is complete.
 
 #### Desktop view
 
+<ol>
+<li>Page title and subtitle</li>
+<li>Relevant content to all tabs</li>
+<li>Tabs component (full width of content area)</li>
+<li>Tab panel</li>
+
 {% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected and margin annotations." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" %}
 
 #### Mobile view
