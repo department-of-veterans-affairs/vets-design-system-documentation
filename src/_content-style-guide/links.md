@@ -68,7 +68,7 @@ Apply for a United States burial flag to place over a casket or coffin, or place
 
 * Don't punctuate link text. Exception: Question marks and colons are OK if they're part of the link copy.
 * Create space between different links. Clustering links together can make it hard for users to select the intended link, especially on a touch screen device, like a smartphone.
-* In general, put a link on a separate line to help it stand out. Exception: Putting a link at the end of a sentence is OK if space is limited, like intro copy or alerts.
+* In general, put a link on a separate line to help it stand out. Have a case where you think an inline link might be necessary due to space limitations? Contact the centralized content team for help with your content.
 
 {% capture example_like_this_1 %}
 Put links on their own line
@@ -111,7 +111,7 @@ When we use the canonical URL in links, it reduces the risk of links breaking wh
 ## Linking to documents and other file sources
 * Avoid linking to PDFs as much as possible. 
 * If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System.<br>
-[Review examples of link variations in the Components section](https://design.va.gov/content-style-guide/links)
+[Review examples of link variations in the Components section](https://design.va.gov/components/link/)
 
 ## Linking to external sites
 
