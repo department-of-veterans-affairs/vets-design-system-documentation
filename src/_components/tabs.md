@@ -54,13 +54,14 @@ Add this once final tabs component is complete.
 * Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the tabs component.
 * Use 32px spacing above and below the tabs.
 
-#### Desktop view
-
 <ol>
 <li>Page title and subtitle</li>
 <li>Relevant content to all tabs</li>
 <li>Tabs component (full width of content area)</li>
 <li>Tab panel</li>
+</ol>
+
+#### Desktop view
 
 {% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected and margin annotations." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" %}
 
