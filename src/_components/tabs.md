@@ -57,7 +57,7 @@ anchors:
 
 #### Tab overflow
 
-The Tab component works best when 3 or fewer tabs are needed. If the Tabs overflow on small screens a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When using Tabs be mindful of how many tabs can fit on small screens to minimize scrolling.
+The Tab component works best when 3 or fewer tabs are needed. If the Tabs overflow on small screens a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used a shadow will be show to indicate there are more tabs. When using Tabs be mindful of how many tabs can fit on small screens to minimize scrolling. If your tabs are showing a scrollbar at 320px width, you should consider options for reducing the width of your tabs to prevent any scrolling.
 
 {% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %}
 
