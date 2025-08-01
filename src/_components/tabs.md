@@ -52,7 +52,6 @@ anchors:
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display 1 chunk of content at a time.
 * **Hierarchical content.** If your content is hierarchical or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page.
 * **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
-* **Instant loading.** The tabs are URL-based, which will reload the entire page when users click between tabs. This Nielsen Norman Group article [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/) provides more details on the differences between navigation tabs and in-page tabs.  
 
 ### How this component works
 
@@ -60,9 +59,13 @@ anchors:
 
 The Tab component works best when 3 or fewer tabs are needed. If the Tabs overflow on small screens a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When using Tabs be mindful of how many tabs can fit on small screens to minimize scrolling.
 
+{% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %}
+
 #### Tab panel
 
-The Tabs use a tab panel as a container for the content associated with the selected Tab. A 32px space is the recommended spacing between the content within the tab panel and tabs and is included in the Tabs component. If a different spacing is required the default spacing can be overridden. 
+The Tabs use a tab panel as a container for the content associated with the selected Tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the Tabs component. If a different spacing is required the default spacing can be overridden. 
+
+{% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-ClaimStatus-Files.png" class="x2" %}
 
 ## Behavior
 
