@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Tabs
-intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between." 
+intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between."
 github-title: va-tabs
 status: use-with-caution-available
 figma-link: https://www.figma.com/design/MNfr6ScW4Sf66tN0iY20GN/Tabs?node-id=24991-2000
@@ -63,7 +63,7 @@ The Tab component works best when 3 or fewer tabs are needed. If the Tabs overfl
 
 #### Tab panel
 
-The Tabs use a tab panel as a container for the content associated with the selected Tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the Tabs component. If a different spacing is required the default spacing can be overridden. 
+The Tabs use a tab panel as a container for the content associated with the selected Tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the Tabs component. If a different spacing is required the default spacing can be overridden.
 
 {% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-ClaimStatus-Files.png" class="x2" %}
 
@@ -111,7 +111,11 @@ See the [Tabs component discussion](https://github.com/department-of-veterans-af
 
 ## Accessibility considerations
 
-* Go to Mozilla's [ARIA: tab role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) documentation for guidance.
+* **Use clear, descriptive tab labels.** Tab labels should help users understand the purpose and contents of each tab panel.  Avoid vague labels like “Tab 1” or “More”.
+* **Place Tabs inside the main content region.** Tabs should be located after the `h1` within the `<main>` content region.
+* **Don’t use Tabs for page-level navigation.** Tabs are not a substitute for primary or secondary navigation. For navigating across different pages, use [Side Navigation]({{ site.baseurl }}/components/sidenav).
+* **Keep focus on the selected tab after activation.** When a user activates a tab, focus should remain on the newly selected tab and not move into the tab panel. This helps keyboard and screen reader users stay oriented and easily navigate through the tab list. Users can choose to navigate into the panel content when they’re ready. Avoid auto-focusing inside the panel.
+* **Follow standard keyboard interaction patterns.** Refer to [W3C’s guidance for standard keyboard navigation for tabs](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/#keyboardinteraction).
 
 ## Related
 
