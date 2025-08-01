@@ -18,7 +18,26 @@ anchors:
 ## Examples
 
 ### Web
-Storybook example
+
+#### Default
+
+{% include storybook-preview.html story="components-va-tabs--default" link_text="va-tabs--default" %}
+
+#### With second tab selected
+
+{% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %}
+
+#### Without panel heading
+
+{% include storybook-preview.html story="components-va-tabs--without-panel-heading" link_text="va-tabs--without-panel-heading" %}
+
+#### With heading not matching tab
+
+{% include storybook-preview.html story="components-va-tabs--with-heading-not-matching-tab" link_text="va-tabs--with-heading-not-matching-tab" %}
+
+#### With meaningful content
+
+{% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %}
 
 ## Usage
 
@@ -29,30 +48,34 @@ Storybook example
 
 ### When to consider something else
 
-* **Changing views of the same data.** To allow the user to easily toggle between a binary set of options to see different views of the same data, use a [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented) component. For example, switching between viewing a list or a map.
-* **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
-* **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page. 
+* **Changing views of the same data.** To let users easily toggle between a binary set of options to see different views of the same data, use a [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented) component. For example, switching between viewing a list or a map.
+* **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display 1 chunk of content at a time.
+* **Hierarchical content.** If your content is hierarchical or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page.
 * **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
-* **Instantaneous loading.** The tabs are URL-based, which will reload the entire page when users click between tabs. This Nielsen Norman Group article [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/) provides more details on the differences between navigation tabs and in-page tabs.  
+* **Instant loading.** The tabs are URL-based, which will reload the entire page when users click between tabs. This Nielsen Norman Group article [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/) provides more details on the differences between navigation tabs and in-page tabs.  
 
 ### How this component works
 
-Add this once final tabs component is complete.
+#### Tab overflow
+
+The Tab component works best when 3 or fewer tabs are needed. If the Tabs overflow on small screens a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When using Tabs be mindful of how many tabs can fit on small screens to minimize scrolling.
+
+#### Tab panel
+
+The Tabs use a tab panel as a container for the content associated with the selected Tab. A 32px space is the recommended spacing between the content within the tab panel and tabs and is included in the Tabs component. If a different spacing is required the default spacing can be overridden. 
 
 ## Behavior
 
 * Make sure the selected tab is highlighted and visually connected to the content below it.
-* Never let a row of tabs wrap to a second line.
 * The first tab should be used for the default view.
 
 ### Placement
 
 * The tabs component should appear in a consistent location across desktop and mobile views.
-* Place tabs below the Page title and subtitle. 
+* Place tabs below the Page title and subtitle.
 * Information relevant to all tabs can be placed above the tabs.
 * Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/side-navigation) component. Don't add tab links to the Side navigation, they should exist separately.
-* Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the tabs component.
-* Use 32px spacing above and below the tabs.
+* Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the Tabs component.
 
 #### Desktop view
 
@@ -76,7 +99,7 @@ Add this once final tabs component is complete.
 
 ### Instances of tabs in production
 
-See [Tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on Tabs used in production.
+See the [Tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on Tabs used in production.
 
 ## Content considerations
 
