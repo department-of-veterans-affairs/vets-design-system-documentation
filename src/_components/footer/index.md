@@ -14,6 +14,22 @@ anchors:
 
 {% include _site-in-this-section.html %}
 
+<va-alert
+
+  close-btn-aria-label="Close notification"
+  status="warning"
+  visible
+>
+  <h2 slot="headline">
+    This component is not officially supported
+  </h2>
+  <div>
+    <p className="vads-u-margin-y--0">
+      This component has not yet been built as a component in the Design System. Thus the Design System Team does not officially support this component. The Footer - Minimal variation is supported. Guidance and design assets are provided as is.
+    </p>
+  </div>
+</va-alert>
+
 ## Examples
 
 ### Default
