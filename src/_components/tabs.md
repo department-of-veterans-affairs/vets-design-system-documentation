@@ -43,7 +43,7 @@ anchors:
 
 ### When to use tabs
 
-* **Secondary navigation.** Use tabs to help users navigate between sections of the page.
+* **Groups of related content panels.** Use tabs to help users navigate between sections of the page.
 * **Related content.** Use tabs to organize related content that users don't need to view simultaneously.
 
 ### When to consider something else
