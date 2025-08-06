@@ -51,7 +51,7 @@ anchors:
 * **Changing views of the same data.** To let users easily toggle between a binary set of options to see different views of the same data, use a [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented) component. For example, switching between viewing a list or a map.
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display 1 chunk of content at a time.
 * **Hierarchical content.** If your content is hierarchical or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page.
-* **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/side-navigation) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
+* **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/sidenav) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
 
 ### How this component works
 
@@ -77,7 +77,7 @@ The Tabs use a tab panel as a container for the content associated with the sele
 * The tabs component should appear in a consistent location across desktop and mobile views.
 * Place tabs below the Page title and subtitle.
 * Information relevant to all tabs can be placed above the tabs.
-* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/side-navigation) component. Don't add tab links to the Side navigation, they should exist separately.
+* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/sidenav) component. Don't add tab links to the Side navigation, they should exist separately.
 * Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the Tabs component.
 
 #### Desktop view
@@ -121,7 +121,7 @@ See the [Tabs component discussion](https://github.com/department-of-veterans-af
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
 * [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented)
-* [Side navigation]({{ site.baseurl }}/components/side-navigation)
+* [Side navigation]({{ site.baseurl }}/components/sidenav)
 * [On this page]({{ site.baseurl }}/components/on-this-page)
 
 {% include _component-checklist.html component_name="va-tabs" %}
