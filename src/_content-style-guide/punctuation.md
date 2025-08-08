@@ -33,7 +33,7 @@ In his acceptance speech, the actor thanked his parents, Martin Scorsese and Rob
 
 ## Contractions
 
-We use contractions on VA.gov. It supports our conversational, person-to-person voice and tone. Some situations might call for spelling out each word, like in legal or warning messages, but in general, we prefer using contractions.
+We use contractions on VA.gov to support our conversational, person-to-person voice and tone. Some situations might call for spelling out each word, like in certain legal content. But in general, we use contractions.
 
 - Be careful not to mix up "its" and "it's"
 - Use "it's" as a contraction of "it is," never "it has"
@@ -147,7 +147,7 @@ __You've successfully applied!__
 
 Showing 1 to 10 of 110 search results for “what are my benefits”
 
-Then select the **Search this area of the map** button.
+Then select **Search this area of the map**.
 
 We refer to them as an “accredited representative.”
 
@@ -161,7 +161,7 @@ What’s the difference between a “condition” and a “disability”?
 
 Showing 1 to 10 of 110 search results for **what are my benefits**
 
-Then select the "Search this area of the map" button.
+Then select "Search this area of the map."
 
 We refer to them as an “accredited representative”.
 
