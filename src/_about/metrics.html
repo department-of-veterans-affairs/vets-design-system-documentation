@@ -87,8 +87,11 @@ permalink: /about/metrics/
   <div class="metrics-section">
     <h3>Top 25 Pages</h3>
     <p>The most visited pages of design.va.gov</p>
-    <div id="monthly-reports-container">
-      <!-- Monthly reports will be rendered here -->
+    <div class="monthly-reports-static">
+      <div class="report-item">
+        <h4>July 2025</h4>
+        <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-07.png" target="_blank" />
+      </div>
     </div>
   </div>
   
@@ -134,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadMetricsData() {
   console.log('loadMetricsData() called - starting data fetch');
   
-  // Load issue metrics, component usage data, and monthly reports
+  // Load issue metrics and component usage data
   Promise.all([
     fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
       console.log('issue-metrics.json response:', response.ok, response.status);
@@ -145,15 +148,10 @@ function loadMetricsData() {
       console.log('component-usage.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Component usage not available');
       return response.json();
-    }),
-    fetch('{{ site.baseurl }}/assets/data/metrics/monthly-reports.json').then(response => {
-      console.log('monthly-reports.json response:', response.ok, response.status);
-      if (!response.ok) throw new Error('Monthly reports not available');
-      return response.json();
     })
   ])
-  .then(([issueData, componentData, reportsData]) => {
-    console.log('All data loaded successfully:', { issueData, componentData, reportsData });
+  .then(([issueData, componentData]) => {
+    console.log('Data loaded successfully:', { issueData, componentData });
     
     // Render issue tracking charts
     renderQuarterlyChart(issueData.quarterly);
@@ -166,9 +164,6 @@ function loadMetricsData() {
     
     // Render component usage charts
     renderTopComponentsChart(componentData);
-    
-    // Render monthly reports
-    renderMonthlyReports(reportsData);
     
     // Update metric cards
     updateMetricCards(issueData.summary, componentData.summary_stats);
@@ -806,98 +801,5 @@ function updateTrendIndicator(elementId, trendData, timeframe) {
     <span class="trend-icon">${iconSymbol}</span>
     <span>${trendText}</span>
   `;
-}
-
-function renderMonthlyReports(reportsData) {
-  const container = document.getElementById('monthly-reports-container');
-  
-  if (!reportsData || reportsData.length === 0) {
-    container.innerHTML = `
-      <div class="report-placeholder">
-        <p>Monthly Looker Studio reports will appear here once uploaded.</p>
-        <p><strong>To add a report:</strong></p>
-        <ol style="text-align: left; display: inline-block; margin-top: 1rem;">
-          <li>Save your monthly PDF report to this repository</li>
-          <li>Run: <code>node scripts/process-monthly-report.js path/to/report.pdf YYYY-MM</code></li>
-          <li>The report will automatically appear on this dashboard</li>
-        </ol>
-      </div>
-    `;
-    return;
-  }
-  
-  // Create grid container
-  const grid = document.createElement('div');
-  grid.className = 'monthly-reports-grid';
-  
-  // Show most recent 6 reports
-  const recentReports = reportsData.slice(0, 6);
-  
-  recentReports.forEach(report => {
-    const reportCard = document.createElement('div');
-    reportCard.className = 'report-card';
-    
-    const formatDate = (dateStr) => {
-      const [year, month] = dateStr.split('-');
-      const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
-                         'July', 'August', 'September', 'October', 'November', 'December'];
-      return `${monthNames[parseInt(month) - 1]} ${year}`;
-    };
-    
-    reportCard.innerHTML = `
-      <h4>${report.title}</h4>
-      <div class="report-date">${formatDate(report.date)}</div>
-      <img 
-        src="{{ site.baseurl }}/assets/img/metrics/${report.filename}" 
-        alt="Monthly Report - ${report.date}"
-        class="report-image"
-        onclick="openReportModal(this.src, '${report.title} - ${formatDate(report.date)}')"
-        loading="lazy"
-      />
-    `;
-    
-    grid.appendChild(reportCard);
-  });
-  
-  container.appendChild(grid);
-  
-  // Add modal for full-size viewing
-  if (!document.getElementById('report-modal')) {
-    const modal = document.createElement('div');
-    modal.id = 'report-modal';
-    modal.className = 'report-modal';
-    modal.onclick = () => closeReportModal();
-    
-    modal.innerHTML = `
-      <span class="report-modal-close">&times;</span>
-      <div class="report-modal-content">
-        <img id="report-modal-image" src="" alt="" />
-      </div>
-    `;
-    
-    document.body.appendChild(modal);
-  }
-}
-
-function openReportModal(imageSrc, title) {
-  const modal = document.getElementById('report-modal');
-  const modalImg = document.getElementById('report-modal-image');
-  
-  modal.style.display = 'block';
-  modalImg.src = imageSrc;
-  modalImg.alt = title;
-  
-  // Close modal on escape key
-  document.addEventListener('keydown', function escapeHandler(e) {
-    if (e.key === 'Escape') {
-      closeReportModal();
-      document.removeEventListener('keydown', escapeHandler);
-    }
-  });
-}
-
-function closeReportModal() {
-  const modal = document.getElementById('report-modal');
-  modal.style.display = 'none';
 }
 </script>
