@@ -1,5 +1,5 @@
 ---
-font-matter: yay
+front-matter: yay
 ---
 
 // CSS-Library
@@ -43,6 +43,7 @@ font-matter: yay
 @import '_base/base';
 @import '_layout/site-content';
 @import '_layout/content-wrappers';
+@import '_layout/metrics';
 @import '_components/anchors';
 @import '_components/badge';
 @import '_components/code-snippets';
