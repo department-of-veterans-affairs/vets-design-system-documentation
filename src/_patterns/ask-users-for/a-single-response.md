@@ -139,6 +139,12 @@ Refer to the following component variations to implement this pattern:
 * [Single - error]({{ site.baseurl }}/components/form/radio-button#forms-pattern-single-error)
 * [Multiple]({{ site.baseurl }}/components/form/radio-button#forms-pattern-multiple)
 
+### Select
+
+* [Single]({{ site.baseurl }}/components/form/select#forms-pattern---single)
+* [Single - error]({{ site.baseurl }}/components/form/select#forms-pattern---single-error)
+* [Multiple]({{ site.baseurl }}/components/form/select#forms-pattern---multiple)
+
 ### Text input
 
 * [Single]({{ site.baseurl }}/components/form/text-input#forms-pattern---single)
