@@ -1,14 +1,14 @@
 ---
 layout: content-style-guide
 title: Numbers, signs, and symbols
-intro-text: We differ from AP Style on numbers to meet the needs of users on the web and on mobile.
+intro-text: We differ from AP Style on numbers to meet the needs of people reading digital content.
 ---
 
 ## Use numerals
 
-We use numerals, or figures, for all numbers, including 1 to 10. It's easier to scan on the web and mobile, and can be helpful to readers with lower literacy and people whose first language isn’t English.
+We use numerals, or figures, for all numbers, including 1 to 10. Numerals are easier to scan on a screen. They can also be helpful to readers with lower literacy and people whose first language isn’t English.
 
-When used as part of a series, date, or range, always default to numerals.
+When including numbers as part of a series, date, or range, always default to numerals.
 
 ### Exceptions
 
@@ -146,7 +146,7 @@ Use numerals and the % symbol, with no space between the number and %. This styl
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
 
-The monthly benefit amounts for a single Veteran with no children and a disability rating of 10% to 100% are:
+Here are the monthly benefit amounts for a single Veteran with no children and a disability rating of 10% to 100%:
 
 - 10% disability rating: &mdash;
 - 20% disability rating: &mdash;
@@ -162,7 +162,7 @@ If you have a 50% disability and a 30% disability, the combined disability ratin
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
 
-The monthly benefit amounts for a single Veteran with no children and a disability rating of 10 percent to 100 percent are:
+Here are monthly benefit amounts for a single Veteran with no children and a disability rating of 10 percent to 100 percent:
 
 - 10 percent disability rating: &mdash;
 - 20 percent disability rating: &mdash;
