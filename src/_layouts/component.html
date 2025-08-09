@@ -26,7 +26,7 @@
               {% include _draft.html %}
             {% endif %}
             {% include _site-section-name.html %}
-          <h1 id="{{ page.title }}">{{ page.title }}</h1>
+          <h1 id="{{ page.title }}" data-pagefind-weight="{% if page.pagefind_weight %}{{ page.pagefind_weight }}{% else %}20{% endif %}">{{ page.title }}</h1>
             {% if page.aka %}
           <p>Also known as: {{ page.aka }}</p>
             {% endif %}
@@ -37,7 +37,7 @@
             {% include _component-uswds.html %}
 
             {% if page.intro-text %}
-          <div class="va-introtext" markdown="1">
+          <div class="va-introtext" data-pagefind-weight="5" markdown="1">
             {{ page.intro-text }}
           </div>
             {% endif %}

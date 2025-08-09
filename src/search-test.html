@@ -1,0 +1,427 @@
+---
+layout: default
+title: Search Testing & Analysis
+permalink: /search-test/
+---
+
+<style>
+.search-test-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.test-section {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.test-section h2 {
+  margin-top: 0;
+  color: #495057;
+}
+
+.search-input-section {
+  background: white;
+  border: 2px solid #007cba;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007cba;
+  box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.1);
+}
+
+.search-button, .preset-button {
+  background: #007cba;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-button:hover, .preset-button:hover {
+  background: #005a87;
+}
+
+.preset-button {
+  background: #6c757d;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.preset-button:hover {
+  background: #5a6268;
+}
+
+.results-container {
+  margin-top: 2rem;
+}
+
+.result-item {
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.result-rank {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007cba;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.result-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #007cba;
+}
+
+.result-url {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+  font-family: monospace;
+}
+
+.result-excerpt {
+  color: #495057;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.result-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.result-score {
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.analysis-section {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.analysis-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.test-queries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: #dc3545;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .search-test-container {
+    padding: 0 0.5rem;
+  }
+  
+  .test-section {
+    padding: 1rem;
+  }
+  
+  .result-rank {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 0.5rem;
+    width: auto;
+    height: auto;
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+}
+</style>
+
+<div class="search-test-container">
+  <h1>🔍 Search Testing & Analysis Tool</h1>
+  
+  <div class="search-input-section">
+    <h2>Search Test Interface</h2>
+    <p>Use this tool to test search queries and analyze ranking results. Test different queries to tune search performance.</p>
+    
+    <input type="text" id="searchInput" class="search-input" placeholder="Enter search query (e.g., radio button, form, accessibility)">
+    <button id="searchButton" class="search-button">🔍 Search</button>
+    
+    <div class="test-queries">
+      <strong>Quick Tests:</strong>
+      <button class="preset-button" onclick="runPresetQuery('radio button')">Radio Button</button>
+      <button class="preset-button" onclick="runPresetQuery('button')">Button</button>
+      <button class="preset-button" onclick="runPresetQuery('form')">Form</button>
+      <button class="preset-button" onclick="runPresetQuery('accessibility')">Accessibility</button>
+      <button class="preset-button" onclick="runPresetQuery('alert')">Alert</button>
+      <button class="preset-button" onclick="runPresetQuery('checkbox')">Checkbox</button>
+      <button class="preset-button" onclick="runPresetQuery('color')">Color</button>
+      <button class="preset-button" onclick="runPresetQuery('radioo buttton')">Typo Test</button>
+    </div>
+  </div>
+  
+  <div class="test-section">
+    <h2>🎯 Test Results & Analysis</h2>
+    <div id="searchResults">
+      <div class="loading" style="display: none;">Searching...</div>
+      <div id="resultsContent"></div>
+    </div>
+  </div>
+  
+  <div class="analysis-section">
+    <h2>📊 How to Use This Tool</h2>
+    <div class="analysis-list">
+      <li><strong>Exact Match Testing:</strong> Search for "radio button" - the Radio Button component should rank first</li>
+      <li><strong>Partial Match Testing:</strong> Search for "button" - should show Button, Radio Button, Button Group in top results</li>
+      <li><strong>Typo Tolerance:</strong> Try "radioo buttton" - should still find "Radio Button"</li>
+      <li><strong>Content Relevance:</strong> Search for "accessibility" - should prioritize pages with accessibility content</li>
+      <li><strong>Ranking Analysis:</strong> Check if exact title matches appear before partial matches</li>
+      <li><strong>Score Analysis:</strong> Higher scores should correspond to better relevance</li>
+    </div>
+    
+    <h3>🔧 Tuning Tips</h3>
+    <ul class="analysis-list">
+      <li><strong>Title Weight:</strong> Adjust <code>title_weight</code> in pagefind.yml to boost exact title matches</li>
+      <li><strong>Data Attributes:</strong> Add <code>data-pagefind-weight="10"</code> to important content</li>
+      <li><strong>Term Similarity:</strong> Increase <code>term_similarity_weight</code> for exact matches</li>
+      <li><strong>Exclude Selectors:</strong> Remove noise by excluding navigation, footers, etc.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+let pagefindAPI = null;
+
+// Initialize Pagefind when page loads
+document.addEventListener('DOMContentLoaded', async () => {
+  try {
+    const pagefind = await import('/pagefind/pagefind.js');
+    pagefindAPI = pagefind;
+    console.log('✅ Pagefind API loaded successfully');
+  } catch (error) {
+    console.error('❌ Failed to load Pagefind API:', error);
+    showError('Failed to load search functionality. Please ensure the site is built with Pagefind.');
+  }
+});
+
+// Search input handling
+document.getElementById('searchInput').addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    performSearch();
+  }
+});
+
+document.getElementById('searchButton').addEventListener('click', performSearch);
+
+function runPresetQuery(query) {
+  document.getElementById('searchInput').value = query;
+  performSearch();
+}
+
+async function performSearch() {
+  const query = document.getElementById('searchInput').value.trim();
+  
+  if (!query) {
+    showError('Please enter a search query');
+    return;
+  }
+  
+  if (!pagefindAPI) {
+    showError('Search API not loaded. Please refresh the page.');
+    return;
+  }
+  
+  showLoading();
+  
+  try {
+    const search = await pagefindAPI.search(query);
+    await displayResults(search, query);
+  } catch (error) {
+    console.error('Search error:', error);
+    showError('Search failed: ' + error.message);
+  }
+}
+
+async function displayResults(search, query) {
+  const resultsContainer = document.getElementById('resultsContent');
+  
+  if (!search.results || search.results.length === 0) {
+    resultsContainer.innerHTML = `
+      <div class="no-results">
+        <h3>No results found for "${query}"</h3>
+        <p>Try a different search term or check spelling.</p>
+      </div>
+    `;
+    hideLoading();
+    return;
+  }
+  
+  // Process results
+  const results = [];
+  for (let i = 0; i < search.results.length; i++) {
+    const result = search.results[i];
+    try {
+      const data = await result.data();
+      results.push({
+        rank: i + 1,
+        title: data.meta.title || data.title || 'Untitled',
+        url: data.url,
+        excerpt: data.excerpt || '',
+        score: result.score || 0,
+        data: data
+      });
+    } catch (error) {
+      console.error('Error processing result:', error);
+    }
+  }
+  
+  // Generate HTML
+  let html = `
+    <div style="margin-bottom: 1rem;">
+      <h3>🔍 Results for "${query}" (${results.length} found)</h3>
+    </div>
+  `;
+  
+  results.forEach(result => {
+    html += `
+      <div class="result-item">
+        <div class="result-rank">${result.rank}</div>
+        <div class="result-title">${result.title}</div>
+        <div class="result-url">${result.url}</div>
+        <div class="result-excerpt">${result.excerpt}</div>
+        <div class="result-meta">
+          <span class="result-score">Score: ${result.score.toFixed(3)}</span>
+          <span>Rank: #${result.rank}</span>
+        </div>
+      </div>
+    `;
+  });
+  
+  // Add analysis
+  html += generateAnalysis(results, query);
+  
+  resultsContainer.innerHTML = html;
+  hideLoading();
+}
+
+function generateAnalysis(results, query) {
+  let analysis = `
+    <div class="analysis-section" style="margin-top: 2rem;">
+      <h3>📊 Search Analysis</h3>
+  `;
+  
+  // Check for exact matches
+  const exactMatches = results.filter(r => 
+    r.title.toLowerCase() === query.toLowerCase()
+  );
+  
+  if (exactMatches.length > 0) {
+    const exactMatch = exactMatches[0];
+    if (exactMatch.rank === 1) {
+      analysis += `<p>✅ <strong>Exact title match ranks first:</strong> "${exactMatch.title}" (Score: ${exactMatch.score.toFixed(3)})</p>`;
+    } else {
+      analysis += `<p>⚠️ <strong>Exact title match not first:</strong> "${exactMatch.title}" ranks #${exactMatch.rank} (Score: ${exactMatch.score.toFixed(3)})</p>`;
+    }
+  } else {
+    // Check for partial matches
+    const partialMatches = results.filter(r => 
+      r.title.toLowerCase().includes(query.toLowerCase()) ||
+      query.toLowerCase().includes(r.title.toLowerCase())
+    );
+    
+    if (partialMatches.length > 0) {
+      analysis += `<p>📝 <strong>Partial title matches found:</strong> ${partialMatches.map(r => `"${r.title}" (#${r.rank})`).join(', ')}</p>`;
+    } else {
+      analysis += `<p>📝 <strong>No direct title matches</strong> - results based on content matching</p>`;
+    }
+  }
+  
+  // Score distribution
+  const topScore = results[0]?.score || 0;
+  const lowScore = results[results.length - 1]?.score || 0;
+  analysis += `<p>📈 <strong>Score range:</strong> ${topScore.toFixed(3)} (highest) to ${lowScore.toFixed(3)} (lowest)</p>`;
+  
+  // Top 3 results
+  const top3 = results.slice(0, 3);
+  analysis += `<p>🏆 <strong>Top 3 results:</strong> ${top3.map(r => `"${r.title}"`).join(' → ')}</p>`;
+  
+  analysis += `</div>`;
+  
+  return analysis;
+}
+
+function showLoading() {
+  document.querySelector('.loading').style.display = 'block';
+  document.getElementById('resultsContent').innerHTML = '';
+}
+
+function hideLoading() {
+  document.querySelector('.loading').style.display = 'none';
+}
+
+function showError(message) {
+  hideLoading();
+  document.getElementById('resultsContent').innerHTML = `
+    <div class="no-results">
+      <h3>Error</h3>
+      <p>${message}</p>
+    </div>
+  `;
+}
+</script>

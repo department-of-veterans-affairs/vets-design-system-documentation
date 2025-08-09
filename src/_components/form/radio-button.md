@@ -3,6 +3,7 @@ layout: component
 permalink: /components/form/radio-button
 has-parent: /components/form/
 title: Radio button
+pagefind_weight: 30
 research-title: Form controls
 intro-text: Radio buttons allow users to select exactly one choice from a group.
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1373%3A86693&mode=design&t=h9BoxMWwcHe2DhUd-1

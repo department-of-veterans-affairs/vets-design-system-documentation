@@ -82,6 +82,7 @@ collections:
 
 include:
   - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-8b28c6fa.js
+  - pagefind
 
 # Exclusions are relative to the source directory (which is set to src)
 exclude:

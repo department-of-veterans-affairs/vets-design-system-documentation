@@ -1,0 +1,22 @@
+site: _site
+glob: "**/*.{html}"
+exclude_selectors:
+  - "nav"
+  - ".site-header"
+  - ".site-footer"
+  - ".usa-banner"
+  - "#mobile-search-container"
+  - ".search-form"
+  - ".site-search-results"
+  - "script"
+  - "style"
+exclude_files:
+  - "/search-test/"
+ranking:
+  page_rank_weight: 1.0
+  term_saturation_weight: 0.5
+  term_similarity_weight: 20.0
+  length_weight: 0.1
+  title_weight: 50.0
+  heading_weight: 5.0
+verbose: true

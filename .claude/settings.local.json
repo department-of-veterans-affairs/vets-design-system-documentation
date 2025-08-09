@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
     "allow": [
       "Bash(gh:*)",
@@ -12,7 +13,19 @@
       "Bash(curl:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "WebFetch(domain:department-of-veterans-affairs.github.io)"
+      "WebFetch(domain:department-of-veterans-affairs.github.io)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(claude update)",
+      "Bash(git checkout:*)",
+      "Bash(yarn add:*)",
+      "Bash(npx pagefind:*)",
+      "Bash(yarn run build:*)",
+      "Bash(rbenv versions:*)",
+      "Bash(rbenv local:*)",
+      "Bash(rake search:debug:*)",
+      "Bash(rake:*)",
+      "Bash(node:*)",
+      "Bash(yarn start:*)"
     ],
     "deny": []
   }

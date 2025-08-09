@@ -29,7 +29,7 @@
             {{ page.sub-section | replace: "-", " " | capitalize }}&hellip;
           </p>
           {% endif %}
-          <h1 id="{{ page.title }}">{{ page.title }}</h1>
+          <h1 id="{{ page.title }}" data-pagefind-weight="20">{{ page.title }}</h1>
             {% if page.aka %}
           <p>Also known as: {{ page.aka }}</p>
             {% endif %}
@@ -37,7 +37,7 @@
               {% include _status.html %}
             {% endif %}
             {% if page.intro-text %}
-          <div class="va-introtext" markdown="1">
+          <div class="va-introtext" data-pagefind-weight="5" markdown="1">
             {{ page.intro-text }}
           </div>
             {% endif %}

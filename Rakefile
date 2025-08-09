@@ -233,9 +233,9 @@ end
 
 desc "Show available rake tasks"
 task :help do
-  puts "\nVets Design System Documentation - Git Tasks"
-  puts "=" * 50
-  puts "\nAvailable tasks:"
+  puts "\nVets Design System Documentation - Available Tasks"
+  puts "=" * 60
+  puts "\n📋 Git Tasks:"
   puts "  rake merge_pr PR_NUMBER     - Merge an approved pull request"
   puts "  rake check_pr PR_NUMBER     - Check PR status and information"
   puts "  rake ready_to_merge         - Show PRs approved by you and ready to merge"
@@ -250,10 +250,12 @@ task :help do
   puts "  • Make sure the PR is approved and ready"
 end
 
+
 # Default task
 task default: :help
 
 private
+
 
 def fetch_pr_info(pr_number)
   uri = URI("https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/pulls/#{pr_number}")
