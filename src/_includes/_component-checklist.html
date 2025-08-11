@@ -1,24 +1,44 @@
 {% assign name = include.component_name %}
+{% assign mobile_name = name | replace: "va-", "va-mobile-" %}
 {% assign components = site.data.component-checklist %}
 {% assign component = components | map: name %}
+{% assign mobile_component = components | map: mobile_name %}
 {% assign definitions = components | map: "definitions" %}
 
+{% comment %} Check for platform configuration {% endcomment %}
+{% assign show_web_checklist = page.web %}
+{% assign show_mobile_checklist = page.mobile-app %}
+
+{% comment %} Default behavior if not specified {% endcomment %}
+{% if show_web_checklist == nil %}
+  {% assign show_web_checklist = true %}
+{% endif %}
+{% if show_mobile_checklist == nil and mobile_component.first %}
+  {% assign show_mobile_checklist = true %}
+{% elsif show_mobile_checklist == nil %}
+  {% assign show_mobile_checklist = false %}
+{% endif %}
 
 <h2 id="component-checklist">Component checklist</h2>
+
+{% comment %} Display Web Checklist if enabled {% endcomment %}
+{% if show_web_checklist == true %}
 <div class="site-component-checklist">
+  <h3>Web</h3>
   {% for definition in definitions %}
-    {% assign total_items = 0 %}
-    {% assign completed_items = 0 %}
+    {% assign web_total_items = 0 %}
+    {% assign web_completed_items = 0 %}
   <div class="vads-grid-row">
     <div class="vads-grid-col-12">
       <va-accordion open-single>
     {% for section in definition %}
       {% assign title = section[0] %}
       {% assign items = section[1] %}
-        <va-accordion-item id="checklist-{{ title }}">
-          <h3 slot="headline">
+      {% unless title contains "mobile-app" %}
+        <va-accordion-item id="checklist-web-{{ title }}">
+          <h4 slot="headline">
             {{ title | replace: "-", " " | capitalize }}
-          </h3>
+          </h4>
 
           {% if section[0] == "accessibility" %}
             {% include a11y/a11y-checklist.html name=include.component_name %}
@@ -33,13 +53,13 @@
                 {% assign notes = value.first.notes %}
               <dt class="site-component-checklist__name">
                 {% if score == true %}
-                  {% assign completed_items = completed_items | plus: 1 %}
-                  {% assign total_items = total_items | plus: 1 %}
+                  {% assign web_completed_items = web_completed_items | plus: 1 %}
+                  {% assign web_total_items = web_total_items | plus: 1 %}
                   <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
                 {% elsif score == "n/a" %}
                   <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
                 {% elsif score == false %}
-                  {% assign total_items = total_items | plus: 1 %}
+                  {% assign web_total_items = web_total_items | plus: 1 %}
                   <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
                 {% endif %}
                 {{ name }}
@@ -52,14 +72,15 @@
             </dl>
           {% endif %}
         </va-accordion-item>
+      {% endunless %}
     {% endfor %}
       </va-accordion>
     </div>
   </div>
-    {% if completed_items != 0 && total_items != 0 %}
+    {% if web_completed_items != 0 and web_total_items != 0 %}
   <div class="vads-grid-row">
     <div class="vads-grid-col-12 desktop-lg:vads-grid-col-4 site-component-checklist__totals">
-      {{ completed_items | times: 100 | divided_by: total_items }}% complete ({{ completed_items }} of {{ total_items }})
+      <strong>Overall:</strong> {{ web_completed_items | times: 100 | divided_by: web_total_items }}% complete ({{ web_completed_items }} of {{ web_total_items }})
     </div>
     <div class="vads-grid-col-12 desktop-lg:vads-grid-col-8 site-component-checklist-legend">
       <div class="vads-grid-row site-component-checklist-legend__row">
@@ -71,13 +92,16 @@
         <div class="vads-grid-col-12 desktop:vads-grid-col-10">
           <ul class="site-component-checklist-legend__list">
             <li class="site-component-checklist-legend__item">
-              <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon> Complete
+              <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
+              <span>Complete</span>
             </li>
             <li class="site-component-checklist-legend__item">
-              <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon> Incomplete
+              <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
+              <span>Incomplete</span>
             </li>
             <li class="site-component-checklist-legend__item">
-              <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon> Not applicable
+              <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
+              <span>Not applicable</span>
             </li>
           </ul>
         </div>
@@ -87,3 +111,82 @@
     {% endif %}
   {% endfor %}
 </div>
+{% endif %}
+
+{% comment %} Display Mobile App Checklist if enabled {% endcomment %}
+{% if show_mobile_checklist == true and mobile_component.first %}
+<div class="site-component-checklist">
+  <h3>Mobile app</h3>
+  {% assign mobile_definitions = mobile_component.first %}
+  {% assign mobile_total_items = 0 %}
+  {% assign mobile_completed_items = 0 %}
+  <div class="vads-grid-row">
+    <div class="vads-grid-col-12">
+      <va-accordion open-single>
+        {% for section in mobile_definitions %}
+          {% assign title = section[0] %}
+          {% assign items = section[1] %}
+          <va-accordion-item id="checklist-mobile-{{ title }}">
+            <h4 slot="headline">
+              {{ title | replace: "mobile-app-", "" | replace: "-", " " | capitalize }}
+            </h4>
+            <dl class="site-component-checklist__list">
+              {% for item in items %}
+                {% assign name = item.name %}
+                {% assign score = item.score %}
+                {% assign notes = item.notes %}
+              <dt class="site-component-checklist__name">
+                {% if score == true %}
+                  {% assign mobile_completed_items = mobile_completed_items | plus: 1 %}
+                  {% assign mobile_total_items = mobile_total_items | plus: 1 %}
+                  <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
+                {% elsif score == "n/a" %}
+                  <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
+                {% elsif score == false %}
+                  {% assign mobile_total_items = mobile_total_items | plus: 1 %}
+                  <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
+                {% endif %}
+                {{ name | replace: "-", " " | capitalize }}
+              </dt>
+              <dd>{{ notes }}</dd>
+              {% endfor %}
+            </dl>
+          </va-accordion-item>
+        {% endfor %}
+      </va-accordion>
+    </div>
+  </div>
+  {% if mobile_total_items != 0 %}
+  <div class="vads-grid-row">
+    <div class="vads-grid-col-12 desktop-lg:vads-grid-col-4 site-component-checklist__totals">
+      <strong>Overall:</strong> {{ mobile_completed_items | times: 100 | divided_by: mobile_total_items }}% complete ({{ mobile_completed_items }} of {{ mobile_total_items }})
+    </div>
+    <div class="vads-grid-col-12 desktop-lg:vads-grid-col-8 site-component-checklist-legend">
+      <div class="vads-grid-row site-component-checklist-legend__row">
+        <div class="vads-grid-col-12 desktop:vads-grid-col-2">
+          <p class="site-component-checklist-legend__title">
+            Legend:
+          </p>
+        </div>
+        <div class="vads-grid-col-12 desktop:vads-grid-col-10">
+          <ul class="site-component-checklist-legend__list">
+            <li class="site-component-checklist-legend__item">
+              <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
+              <span>Complete</span>
+            </li>
+            <li class="site-component-checklist-legend__item">
+              <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
+              <span>Incomplete</span>
+            </li>
+            <li class="site-component-checklist-legend__item">
+              <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
+              <span>Not applicable</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}

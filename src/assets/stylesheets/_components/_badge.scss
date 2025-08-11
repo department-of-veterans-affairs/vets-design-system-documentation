@@ -1,6 +1,7 @@
 .site-component-badge-link,
 .site-component-status__link {
   text-decoration: none;
+  vertical-align: baseline;
 
   &:hover {
     text-decoration: none;
@@ -22,9 +23,16 @@ main {
     top: 4px;
   }
 
+  .site-component-status,
   .site-component-status--use,
   .site-component-status--use-best-practice,
   .site-component-status--use-deployed {
+    font-size: 0.9375rem;
+    margin-left: units(0.5);
+    padding: 0.0625rem 0.4375rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display: inline-block;
     background-color: var(--vads-button-color-background-primary-alt-active-on-light);
   }
 
@@ -39,6 +47,12 @@ main {
   .site-component-status--use-with-caution,
   .site-component-status--use-with-caution-available,
   .site-component-status--use-with-caution-candidate {
+    font-size: 0.9375rem;
+    margin-left: units(0.5);
+    padding: 0.0625rem 0.4375rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display: inline-block;
     background-color: var(--vads-color-orange);
     color: var(--vads-color-base);
   }
@@ -54,6 +68,12 @@ main {
   .site-component-status--dont-use,
   .site-component-status--dont-use-proposed,
   .site-component-status--dont-use-deprecated {
+    font-size: 0.9375rem;
+    margin-left: units(0.5);
+    padding: 0.0625rem 0.4375rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    display: inline-block;
     background-color: var(--vads-color-secondary-darkest);
   }
 
@@ -76,10 +96,19 @@ main {
   padding: 0.0625rem 0.4375rem;
   border-radius: 2px;
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .site-component-badge-link__img {
   padding-right: units(0.5);
+}
+
+.site-component-badge-link__icon {
+  margin-right: units(0.25);
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
 }
 
 .site-component-badge-link--uswds {
@@ -93,5 +122,35 @@ main {
 
   &:hover {
     background-color: var(--vads-color-primary-alt);
+  }
+}
+
+.site-component-badge-link--platform-web {
+  background-color: var(--vads-color-success);
+  color: var(--vads-color-white);
+  margin-left: units(0.5);
+
+  &:hover,
+  &:visited {
+    color: var(--vads-color-white);
+  }
+
+  &:hover {
+    background-color: var(--vads-color-success-dark);
+  }
+}
+
+.site-component-badge-link--platform-mobile {
+  background-color: var(--vads-color-primary);
+  color: var(--vads-color-white);
+  margin-left: units(0.5);
+
+  &:hover,
+  &:visited {
+    color: var(--vads-color-white);
+  }
+
+  &:hover {
+    background-color: var(--vads-color-primary-dark);
   }
 }
