@@ -12,6 +12,8 @@ anchors:
   - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-promo-banner
+web: true
+mobile-app: false
 ---
 
 ## Examples

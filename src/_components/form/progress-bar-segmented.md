@@ -10,6 +10,8 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 status: use-deployed
 uswds-v3: default
 web-component: va-segmented-progress-bar
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

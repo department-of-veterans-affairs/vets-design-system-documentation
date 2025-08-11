@@ -8,6 +8,8 @@ intro-text: A minimized alert style that can be used to alert a user to relevant
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A146&mode=design&t=J32RmU6Fjbjuh9bD-1
 contributors: Leyda Hughes (VSA Facilities Team)
 web-component: va-alert-expandable
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

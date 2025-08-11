@@ -7,6 +7,8 @@ research-title: "Alert boxes"
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-alert
+web: true
+mobile-app: true
 sub-pages:
   - sub-page: Alert - Expandable
   - sub-page: Alert - Sign-in

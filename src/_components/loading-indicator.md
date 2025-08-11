@@ -6,6 +6,8 @@ research-title: "Loading indicators"
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A161&mode=design&t=vNilCSI60pQBiKkM-1
 status: use-deployed
 web-component: va-loading-indicator
+web: true
+mobile-app: true
 ---
 
 ## Example

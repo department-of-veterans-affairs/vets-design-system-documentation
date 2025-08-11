@@ -6,6 +6,8 @@ research-title: Accordions
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1384%3A10963&mode=design&t=9GU46tVahgdMFZSW-1
 uswds-v3: default
 web-component: va-accordion
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

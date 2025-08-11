@@ -7,6 +7,8 @@ intro-text: "Informs the user that we will, and have, automatically saved their 
 research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A24511&mode=design&t=TiJHClaf3VQ6wU6B-1
 status: use-deployed
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

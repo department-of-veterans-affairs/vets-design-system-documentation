@@ -5,6 +5,8 @@ intro-text: "Address block is used to highlight mailing and physical addresses a
 github-title: va-address-block
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1102%3A9228&mode=design&t=J32RmU6Fjbjuh9bD-1
 status: use-best-practice
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

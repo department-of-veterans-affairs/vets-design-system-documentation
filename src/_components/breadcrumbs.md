@@ -5,6 +5,8 @@ intro-text: "Breadcrumbs provide secondary navigation to help users understand w
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A151&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-breadcrumbs
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

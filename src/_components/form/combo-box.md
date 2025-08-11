@@ -9,6 +9,8 @@ status: use-with-caution-candidate
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=19200-2377
 uswds-v3: default
 web-component: va-combo-box
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

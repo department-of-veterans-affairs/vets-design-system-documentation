@@ -1,0 +1,17 @@
+{% comment %} Platform support badges for components {% endcomment %}
+
+{% comment %} Check if component supports web browsers {% endcomment %}
+{% if page.web == true or page.web == nil %}
+<span class="site-component-badge-link site-component-badge-link--platform-web">
+  <va-icon icon="language" size="2" class="site-component-badge-link__icon"></va-icon>
+  Web
+</span>
+{% endif %}
+
+{% comment %} Check if component supports mobile app {% endcomment %}
+{% if page.mobile-app == true %}
+<span class="site-component-badge-link site-component-badge-link--platform-mobile">
+  <va-icon icon="phone_iphone" size="2" class="site-component-badge-link__icon"></va-icon>
+  Mobile app
+</span>
+{% endif %}

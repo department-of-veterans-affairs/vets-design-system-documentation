@@ -6,6 +6,8 @@ intro-text: "A link is a navigation element that can appear alone, inline (embed
 research-title: Links
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
 web-component: va-link
+web: true
+mobile-app: true
 sub-pages:
   - sub-page: Action
   - sub-page: Collection

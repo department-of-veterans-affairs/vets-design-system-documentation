@@ -16,6 +16,8 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
 web-component: va-summary-box
+web: true
+mobile-app: false
 ---
 
 ## Examples

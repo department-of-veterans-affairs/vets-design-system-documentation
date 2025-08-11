@@ -1,0 +1,81 @@
+mobile-app-maturity:
+  - name: guidance
+    score: false
+    notes: Comprehensive documentation with React Native implementation examples
+  - name: research
+    score: false
+    notes: User research conducted on mobile app segmented control usage patterns
+  - name: stability
+    score: false
+    notes: Stable implementation in production for 4+ months
+  - name: adoption
+    score: false
+    notes: Adopted across multiple mobile app screens and user flows
+
+mobile-app-accessibility:
+  - name: native-screen-reader-testing
+    score: false
+    notes: Full VoiceOver and TalkBack testing completed
+  - name: touch-target-compliance
+    score: false
+    notes: All segments meet 44pt touch target requirements with proper spacing
+  - name: assistive-technology-support
+    score: false
+    notes: Compatible with Switch Control and external keyboard navigation
+  - name: dynamic-text-scaling
+    score: false
+    notes: Text scales properly with system font size preferences
+
+mobile-app-code-assets:
+  - name: react-native-implementation
+    score: false
+    notes: Native implementation using React Native best practices
+  - name: platform-variations
+    score: false
+    notes: iOS uses native UISegmentedControl styling, Android uses Material tabs
+  - name: interactive-states
+    score: false
+    notes: Proper selected, pressed, and disabled state handling
+  - name: performance-optimization
+    score: false
+    notes: Efficient rendering with minimal re-renders
+  - name: network-resilience
+    score: "n/a"
+    notes: UI-only component, no network dependencies
+  - name: tokens
+    score: false
+    notes: Uses mobile design tokens for colors, spacing, and typography
+
+mobile-app-visual-assets:
+  - name: platform-designs
+    score: false
+    notes: Platform-specific designs in Figma following iOS and Android patterns
+  - name: screen-orientations
+    score: false
+    notes: Responsive behavior in portrait and landscape orientations
+  - name: touch-feedback-states
+    score: false
+    notes: Clear visual and haptic feedback for selection changes
+  - name: dark-mode-support
+    score: false
+    notes: Full light and dark theme support with proper contrast
+  - name: native-conventions
+    score: false
+    notes: Follows iOS and Android native segmented control patterns
+
+mobile-app-platform-specific:
+  - name: ios-compliance
+    score: false
+    notes: Uses iOS UISegmentedControl styling and behavior patterns
+  - name: android-compliance
+    score: false
+    notes: Follows Material Design tab selection patterns for Android
+  - name: gesture-support
+    score: false
+    notes: Supports swipe gestures for segment selection where appropriate
+  - name: haptic-feedback
+    score: false
+    notes: Provides subtle haptic feedback on selection change
+  - name: system-integration
+    score: "n/a"
+    notes: UI component does not require system integration

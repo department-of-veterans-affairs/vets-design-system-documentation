@@ -8,6 +8,8 @@ research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86436&mode=design&t=h9BoxMWwcHe2DhUd-1
 github-title: va-penalty-notice
 status: use-best-practice
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

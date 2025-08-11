@@ -11,6 +11,8 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
 web-component: va-telephone
+web: true
+mobile-app: true
 ---
 
 ## Examples

@@ -9,7 +9,33 @@ research-title: Use this to match the label in the research repo. Only use if we
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
 status: use-with-caution-candidate
 web-component: va-component-name
+web: true # Set to false to hide web browser component checklist
+mobile-app: true # Set to false to hide mobile app component checklist
 ---
+
+<!-- Use these YAML front matter flags to control which platform checklists appear:
+
+web: true/false
+- Controls whether the "Web browsers" component checklist section appears
+- Default: true (always shows if omitted)
+- Set to false for mobile app-only components
+
+mobile-app: true/false  
+- Controls whether the "Mobile app" component checklist section appears
+- Default: true if va-mobile-[component-name].yml file exists, false otherwise
+- Set to false to hide mobile checklist even if data file exists
+- Set to true to show mobile section (requires corresponding va-mobile-[component-name].yml file)
+
+Platform Support Badges:
+The web and mobile-app settings also control platform support badges that appear at the top of component pages:
+- Web browsers badge: Shows when web is true (default)
+- Mobile app badge: Shows when mobile-app is true
+
+Examples:
+- Both platforms: web: true, mobile-app: true
+- Web only: web: true, mobile-app: false  
+- Mobile only: web: false, mobile-app: true
+-->
 
 ## Examples
 
@@ -29,7 +55,15 @@ Add Storybook examples as necessary.
 
 ### Mobile
 
-### Variation 1
+#### Default
+
+{% include storybook-preview.html height="200px" story="mobile-component-name--default" link_text="va-mobile__component-name--default" is_mobile=true %}
+
+#### Variation 1
+
+Add Storybook examples as necessary.
+
+#### Variation 2
 
 Add Storybook examples as necessary.
 
@@ -50,6 +84,18 @@ Add Storybook examples as necessary.
 
 Details the design decisions inherent to the component.
 
+### Platform considerations
+
+#### Web implementation
+* Describe web-specific implementation details, browser considerations, and responsive behavior.
+* Note any web-specific constraints or advantages.
+* Consider performance across desktop, tablet, and mobile browsers.
+
+#### Mobile app implementation  
+* Describe mobile app-specific implementation details using React Native.
+* Note platform-specific considerations for iOS and Android native apps.
+* Address touch targets, gestures, and mobile app-specific interactions.
+
 ## Behavior
 
 ### Web
@@ -67,11 +113,23 @@ Help the designer and developer understand when to choose between any variations
 
 ### Mobile
 
-Describe the key interactions for this component.
+Describe the key interactions for this component in the mobile app context.
+
+* **Touch interactions.** How users interact with this component using touch gestures.
+* **Accessibility gestures.** Support for accessibility gestures like VoiceOver swipe actions.
+* **Platform conventions.** How the component follows iOS and Android native app design patterns.
+* **Performance considerations.** Any mobile app-specific performance or memory considerations.
 
 #### Choosing between mobile variations
 
 Help the designer and developer understand when to choose between any mobile app variations of this component.
+
+#### Mobile app-specific behavior
+
+* **Touch targets.** Ensure minimum 44px touch targets for accessibility.
+* **Haptic feedback.** When and how to provide haptic feedback for interactions.
+* **Orientation changes.** How the component behaves during device rotation.
+* **Network connectivity.** How the component handles offline or poor connectivity states.
 
 ### Placement
 
@@ -92,12 +150,41 @@ This is the Code Usage section. Note that the header is inside this include.
 
 ## Content considerations
 
-* Bulleted list of content related instructions to the designer.
-* May be an include is shared with the Content style guide section.
+### Web content considerations
+* Content guidelines specific to web implementation.
+* Character limits and responsive text considerations.
+
+### Mobile content considerations  
+* Content guidelines specific to mobile app implementation.
+* Shorter content recommendations for mobile viewports.
+* Considerations for voice input and dictation.
+* Push notification content guidelines (if applicable).
+
+### Cross-platform content considerations
+* Shared content guidelines that apply to both web and mobile.
+* Content that should remain consistent across platforms.
 
 ## Accessibility considerations
 
-* Bulleted list of a11y related instructions to the designer and developer.
+### Web accessibility
+* Screen reader compatibility (JAWS, NVDA, VoiceOver on desktop; mobile screen readers in browsers).
+* Keyboard navigation requirements.
+* Color contrast and visual accessibility.
+* Focus management and ARIA labels.
+
+### Mobile app accessibility
+* iOS VoiceOver compatibility and gestures.
+* Android TalkBack compatibility and gestures.
+* Touch target size requirements (minimum 44px).
+* Haptic feedback for accessibility.
+* Support for assistive touch and switch control.
+* Dynamic type and text scaling support.
+
+### Cross-platform accessibility
+* Semantic markup that works across platforms.
+* Consistent accessibility patterns.
+* Alternative text and descriptions.
+* Error handling and user feedback.
 
 ## Related
 

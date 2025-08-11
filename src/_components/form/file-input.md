@@ -11,6 +11,8 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 status: use-with-caution-available
 uswds-v3: default
 web-component: va-file-input
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

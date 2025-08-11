@@ -4,6 +4,8 @@ title: Tabs
 intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between." 
 github-title: va-tabs
 status: use-with-caution-available
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

@@ -12,6 +12,8 @@ sub-pages:
   - sub-page: Button - Icon
 uswds-v3: primary
 web-component: va-button
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

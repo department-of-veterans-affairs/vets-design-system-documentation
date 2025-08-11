@@ -1,0 +1,81 @@
+mobile-app-maturity:
+  - name: guidance
+    score: false
+    notes: Mobile app tag implementation documented with React Native examples
+  - name: research
+    score: false
+    notes: User testing completed for mobile app tag and chip patterns
+  - name: stability
+    score: false
+    notes: Tag component stable in VA mobile app for 6+ months
+  - name: adoption
+    score: false
+    notes: Used throughout VA Health and Benefits mobile app
+
+mobile-app-accessibility:
+  - name: native-screen-reader-testing
+    score: false
+    notes: Tested with VoiceOver on iOS and TalkBack on Android
+  - name: touch-target-compliance
+    score: false
+    notes: Interactive tags meet 44pt minimum touch target
+  - name: assistive-technology-support
+    score: false
+    notes: Works with Switch Control, external keyboards when interactive
+  - name: dynamic-text-scaling
+    score: false
+    notes: Supports iOS Dynamic Type and Android font preferences
+
+mobile-app-code-assets:
+  - name: react-native-implementation
+    score: false
+    notes: Built with React Native, follows mobile app coding standards
+  - name: platform-variations
+    score: false
+    notes: iOS and Android specific tag implementations where needed
+  - name: interactive-states
+    score: false
+    notes: Proper touch feedback for interactive tags
+  - name: performance-optimization
+    score: false
+    notes: Optimized for mobile device performance with efficient rendering
+  - name: network-resilience
+    score: "n/a"
+    notes: Tag component doesn't require network handling
+  - name: tokens
+    score: false
+    notes: Uses mobile app design tokens with platform-specific values
+
+mobile-app-visual-assets:
+  - name: platform-designs
+    score: false
+    notes: Figma designs follow iOS HIG and Android Material Design chip patterns
+  - name: screen-orientations
+    score: false
+    notes: Works in portrait and landscape orientations
+  - name: touch-feedback-states
+    score: false
+    notes: Clear visual feedback for interactive elements
+  - name: dark-mode-support
+    score: false
+    notes: Proper light and dark theme support
+  - name: native-conventions
+    score: false
+    notes: Follows platform-appropriate tag and chip design patterns
+
+mobile-app-platform-specific:
+  - name: ios-compliance
+    score: false
+    notes: Follows iOS Human Interface Guidelines for tags and badges
+  - name: android-compliance
+    score: false
+    notes: Follows Android Material Design chip principles
+  - name: gesture-support
+    score: false
+    notes: Supports platform gestures for interactive tags
+  - name: haptic-feedback
+    score: false
+    notes: Provides appropriate haptic feedback for interactive tags
+  - name: system-integration
+    score: false
+    notes: Integrates properly with mobile app filtering and navigation systems

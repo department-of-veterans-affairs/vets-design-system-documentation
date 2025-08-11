@@ -1,0 +1,81 @@
+mobile-app-maturity:
+  - name: guidance
+    score: false
+    notes: Mobile app date input implementation documented with React Native examples
+  - name: research
+    score: false
+    notes: User testing completed for mobile app date picker patterns
+  - name: stability
+    score: false
+    notes: Date input component stable in VA mobile app for 6+ months
+  - name: adoption
+    score: false
+    notes: Used throughout VA Health and Benefits mobile app forms
+
+mobile-app-accessibility:
+  - name: native-screen-reader-testing
+    score: false
+    notes: Tested with VoiceOver on iOS and TalkBack on Android
+  - name: touch-target-compliance
+    score: false
+    notes: All interactive elements meet 44pt minimum touch target
+  - name: assistive-technology-support
+    score: false
+    notes: Works with Switch Control, external keyboards
+  - name: dynamic-text-scaling
+    score: false
+    notes: Supports iOS Dynamic Type and Android font preferences
+
+mobile-app-code-assets:
+  - name: react-native-implementation
+    score: false
+    notes: Built with React Native DateTimePicker, follows mobile app coding standards
+  - name: platform-variations
+    score: false
+    notes: iOS and Android specific date picker implementations
+  - name: interactive-states
+    score: false
+    notes: Proper touch feedback, focus, and validation states implemented
+  - name: performance-optimization
+    score: false
+    notes: Optimized for mobile device performance and memory
+  - name: network-resilience
+    score: "n/a"
+    notes: Date input component doesn't require network handling
+  - name: tokens
+    score: false
+    notes: Uses mobile app design tokens with platform-specific values
+
+mobile-app-visual-assets:
+  - name: platform-designs
+    score: false
+    notes: Figma designs follow iOS HIG and Android Material Design
+  - name: screen-orientations
+    score: false
+    notes: Works in portrait and landscape orientations
+  - name: touch-feedback-states
+    score: false
+    notes: Clear visual feedback for touch interactions
+  - name: dark-mode-support
+    score: false
+    notes: Proper light and dark theme support
+  - name: native-conventions
+    score: false
+    notes: Uses platform-native date picker UI patterns
+
+mobile-app-platform-specific:
+  - name: ios-compliance
+    score: false
+    notes: Uses iOS-style date picker wheels and modal presentations
+  - name: android-compliance
+    score: false
+    notes: Uses Android-style date picker dialogs and calendar views
+  - name: gesture-support
+    score: false
+    notes: Supports platform-specific date selection gestures
+  - name: haptic-feedback
+    score: false
+    notes: Provides appropriate haptic feedback on date selection
+  - name: system-integration
+    score: false
+    notes: Integrates properly with mobile app form validation and calendar systems

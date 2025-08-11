@@ -1,0 +1,81 @@
+mobile-app-maturity:
+  - name: guidance
+    score: false
+    notes: Mobile app telephone component implementation documented with React Native examples
+  - name: research
+    score: false
+    notes: User testing completed for mobile app phone number display patterns
+  - name: stability
+    score: false
+    notes: Telephone component stable in VA mobile app for 6+ months
+  - name: adoption
+    score: false
+    notes: Used throughout VA Health and Benefits mobile app
+
+mobile-app-accessibility:
+  - name: native-screen-reader-testing
+    score: false
+    notes: Tested with VoiceOver on iOS and TalkBack on Android
+  - name: touch-target-compliance
+    score: false
+    notes: Interactive phone links meet 44pt minimum touch target
+  - name: assistive-technology-support
+    score: false
+    notes: Works with Switch Control, external keyboards
+  - name: dynamic-text-scaling
+    score: false
+    notes: Supports iOS Dynamic Type and Android font preferences
+
+mobile-app-code-assets:
+  - name: react-native-implementation
+    score: false
+    notes: Built with React Native Text and Linking, follows mobile app coding standards
+  - name: platform-variations
+    score: false
+    notes: iOS and Android specific phone linking implementations
+  - name: interactive-states
+    score: false
+    notes: Proper touch feedback for phone links
+  - name: performance-optimization
+    score: false
+    notes: Optimized for mobile device performance and memory
+  - name: network-resilience
+    score: "n/a"
+    notes: Telephone component doesn't require network handling
+  - name: tokens
+    score: false
+    notes: Uses mobile app design tokens with platform-specific values
+
+mobile-app-visual-assets:
+  - name: platform-designs
+    score: false
+    notes: Figma designs follow iOS HIG and Android Material Design
+  - name: screen-orientations
+    score: false
+    notes: Works in portrait and landscape orientations
+  - name: touch-feedback-states
+    score: false
+    notes: Clear visual feedback for touch interactions
+  - name: dark-mode-support
+    score: false
+    notes: Proper light and dark theme support
+  - name: native-conventions
+    score: false
+    notes: Follows platform-appropriate phone number display patterns
+
+mobile-app-platform-specific:
+  - name: ios-compliance
+    score: false
+    notes: Follows iOS Human Interface Guidelines for phone links
+  - name: android-compliance
+    score: false
+    notes: Follows Android Material Design phone link principles
+  - name: gesture-support
+    score: false
+    notes: Supports platform gestures and long press for phone actions
+  - name: haptic-feedback
+    score: false
+    notes: Provides appropriate haptic feedback on phone link press
+  - name: system-integration
+    score: false
+    notes: Integrates properly with mobile device phone and calling systems

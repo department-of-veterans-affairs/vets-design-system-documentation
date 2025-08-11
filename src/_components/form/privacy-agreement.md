@@ -10,6 +10,8 @@ intro-text: "Used on the review step of a form flow to provide a link to the pri
 status: use-deployed
 uswds-v3: default
 web-component: va-privacy-agreement
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

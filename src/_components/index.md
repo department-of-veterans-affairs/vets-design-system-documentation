@@ -2,6 +2,7 @@
 layout: default
 title: Components
 index: true
+
 ---
 
 # Components
@@ -25,6 +26,16 @@ All teams must now be using the v3 versions of our web-components. The Design Sy
 #### Migration strategy
 
 [Instructions are available for developers]({{ site.baseurl }}/about/developers/using-web-components#uswds-v1-to-v3-migration) to be able to migrate components onto their v3-based version.
+
+## Mobile app vs. Web components
+
+Components in the VA Design System support different platforms and devices. Each component page displays platform badges at the top to indicate where the component can be used:
+
+- <span class="site-component-badge-link site-component-badge-link--platform-web"><va-icon icon="language" size="2" class="site-component-badge-link__icon"></va-icon> Web</span> - The component is available for web browsers on desktop, tablet, and mobile devices. This includes the VA.gov website and other web-based applications.
+
+- <span class="site-component-badge-link site-component-badge-link--platform-mobile"><va-icon icon="phone_iphone" size="2" class="site-component-badge-link__icon"></va-icon> Mobile app</span> - The component is available in the VA Health and Benefits native mobile application.
+
+Components may support one or both platforms. The component checklists are organized by platform to provide specific implementation guidance and requirements for each environment.
 
 ### Governance rules for using components
 

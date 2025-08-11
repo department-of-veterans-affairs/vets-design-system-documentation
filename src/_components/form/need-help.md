@@ -8,6 +8,8 @@ research-title: Form controls
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86293&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 web-component: va-need-help
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

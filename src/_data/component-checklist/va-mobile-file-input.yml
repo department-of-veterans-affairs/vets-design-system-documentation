@@ -1,0 +1,81 @@
+mobile-app-maturity:
+  - name: guidance
+    score: false
+    notes: Mobile app file input implementation documented with React Native examples
+  - name: research
+    score: false
+    notes: User testing completed for mobile app file picker patterns
+  - name: stability
+    score: false
+    notes: File input component stable in VA mobile app for 6+ months
+  - name: adoption
+    score: false
+    notes: Used throughout VA Health and Benefits mobile app forms
+
+mobile-app-accessibility:
+  - name: native-screen-reader-testing
+    score: false
+    notes: Tested with VoiceOver on iOS and TalkBack on Android
+  - name: touch-target-compliance
+    score: false
+    notes: All interactive elements meet 44pt minimum touch target
+  - name: assistive-technology-support
+    score: false
+    notes: Works with Switch Control, external keyboards
+  - name: dynamic-text-scaling
+    score: false
+    notes: Supports iOS Dynamic Type and Android font preferences
+
+mobile-app-code-assets:
+  - name: react-native-implementation
+    score: false
+    notes: Built with React Native Document Picker and Image Picker, follows mobile app coding standards
+  - name: platform-variations
+    score: false
+    notes: iOS and Android specific file picker implementations and permissions
+  - name: interactive-states
+    score: false
+    notes: Proper touch feedback, loading, and error states implemented
+  - name: performance-optimization
+    score: false
+    notes: Optimized for mobile device performance with large file handling
+  - name: network-resilience
+    score: false
+    notes: Handles file upload errors and network connectivity issues
+  - name: tokens
+    score: false
+    notes: Uses mobile app design tokens with platform-specific values
+
+mobile-app-visual-assets:
+  - name: platform-designs
+    score: false
+    notes: Figma designs follow iOS HIG and Android Material Design
+  - name: screen-orientations
+    score: false
+    notes: Works in portrait and landscape orientations
+  - name: touch-feedback-states
+    score: false
+    notes: Clear visual feedback for touch interactions
+  - name: dark-mode-support
+    score: false
+    notes: Proper light and dark theme support
+  - name: native-conventions
+    score: false
+    notes: Uses platform-native file picker UI patterns
+
+mobile-app-platform-specific:
+  - name: ios-compliance
+    score: false
+    notes: Follows iOS Human Interface Guidelines for file selection and document picker
+  - name: android-compliance
+    score: false
+    notes: Follows Android Material Design file picker principles
+  - name: gesture-support
+    score: false
+    notes: Supports platform gestures for file selection
+  - name: haptic-feedback
+    score: false
+    notes: Provides appropriate haptic feedback for file selection actions
+  - name: system-integration
+    score: false
+    notes: Integrates properly with mobile device file systems and permissions

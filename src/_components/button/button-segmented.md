@@ -8,6 +8,8 @@ figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-L
 research-link: Buttons
 intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 web-component: va-button-segmented
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

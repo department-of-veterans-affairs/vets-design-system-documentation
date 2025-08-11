@@ -10,6 +10,8 @@ anchors:
   - anchor: Type-ahead behavior
   - anchor: Code usage
 web-component: va-search-input
+web: true
+mobile-app: false
 ---
 
 ## Examples

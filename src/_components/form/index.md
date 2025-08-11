@@ -5,6 +5,8 @@ title: Form
 inner-title: Overview
 intro-text: "Form controls allow users to enter information."
 status: use-deployed
+web: true
+mobile-app: true
 sub-pages:
   - sub-page: Autosave
   - sub-page: Checkbox

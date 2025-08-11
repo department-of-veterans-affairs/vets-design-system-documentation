@@ -6,6 +6,8 @@ research-title: Snackbar
 figma-link: https://www.figma.com/design/rdLIEaC9rVwX70QbIGkMvG/VA-Mobile---Design-Tokens-Library?m=auto&node-id=2321-2925&t=IbOdMq31rx8WXOoc-1
 status: use-best-practice
 web-component: va-mobile__snackbar
+web: false
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

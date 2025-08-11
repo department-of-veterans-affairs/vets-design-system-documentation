@@ -14,6 +14,8 @@ anchors:
   - anchor: Code usage
   - anchor: Accessibility considerations
 web-component: va-date
+web: true
+mobile-app: true
 ---
 
 ## Examples

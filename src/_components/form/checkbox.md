@@ -9,6 +9,8 @@ intro-text: "Allows users to select one or more items from a list. Checkboxes ar
 status: use-deployed
 uswds-v3: default
 web-component: va-checkbox-group
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples - Single
   - anchor: Examples - Group

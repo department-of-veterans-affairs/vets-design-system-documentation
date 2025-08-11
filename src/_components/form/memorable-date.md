@@ -9,6 +9,8 @@ status: use-deployed
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
 uswds-v3: default
 web-component: va-memorable-date
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage

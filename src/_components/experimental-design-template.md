@@ -3,6 +3,8 @@ layout: default
 sub_section: Experimental pattern name
 title: Experimental pattern name
 draft: true
+web: true
+mobile-app: true
 ---
 
 Suggested by: Your name

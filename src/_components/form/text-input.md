@@ -9,6 +9,8 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 status: use-best-practice
 uswds-v3: default
 web-component: va-text-input
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage
