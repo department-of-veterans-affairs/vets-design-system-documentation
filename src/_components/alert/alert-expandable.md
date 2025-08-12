@@ -9,7 +9,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 contributors: Leyda Hughes (VSA Facilities Team)
 web-component: va-alert-expandable
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

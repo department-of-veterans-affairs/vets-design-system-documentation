@@ -8,7 +8,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 intro-text: "Banners specifically for site-wide system messages, typically system maintenance, which are fixed to the top of the viewport."
 status: use-deployed
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
