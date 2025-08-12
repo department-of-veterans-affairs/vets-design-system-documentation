@@ -2,14 +2,14 @@
 
 {% comment %} Check if component supports web browsers {% endcomment %}
 {% if page.web == true or page.web == nil %}
-<span class="usa-label vads-u-margin-left--0p5 usa-label--web">
+<span class="usa-label usa-label--web">
   Web
 </span>
 {% endif %}
 
 {% comment %} Check if component supports mobile app {% endcomment %}
 {% if page.mobile-app == true %}
-<span class="usa-label vads-u-margin-left--0p5 usa-label--mobile">
+<span class="usa-label usa-label--mobile">
   <va-icon icon="phone_iphone" size="2"></va-icon>
   Mobile app
 </span>
