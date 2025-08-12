@@ -44,7 +44,7 @@ Examples of design system components can be found in [Storybook](https://design.
 
 Components in the VA Design System support different platforms and devices. Each component page displays platform badges at the top to indicate where the component can be used:
 
-- <span class="usa-label usa-label--web"><va-icon icon="language" size="2"></va-icon> Web</span> - The component is available for web browsers on desktop, tablet, and mobile devices. This includes the VA.gov website and other web-based applications.
+- <span class="usa-label usa-label--web">Web</span> - The component is available for web browsers on desktop, tablet, and mobile devices. This includes the VA.gov website and other web-based applications.
 
 - <span class="usa-label usa-label--mobile"><va-icon icon="phone_iphone" size="2"></va-icon> Mobile app</span> - The component is available in the VA Health and Benefits native mobile application.
 
