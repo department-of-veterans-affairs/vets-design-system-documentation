@@ -53,6 +53,18 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-select--widths" link_text="va-select widths" height="800px" %}
 
+### Forms pattern - Single
+
+{% include storybook-preview.html story="uswds-va-select--forms-pattern-single" link_text="va-select forms pattern single" height="600px" %}
+
+### Forms pattern - Single error
+
+{% include storybook-preview.html story="uswds-va-select--forms-pattern-single-error" link_text="Error state for single select pattern" height="600px" %}
+
+### Forms pattern - Multiple
+
+{% include storybook-preview.html story="uswds-va-select--forms-pattern-multiple" link_text="Multiple select pattern example" height="600px" %}
+
 ## Usage
 
 <va-link-action
@@ -62,6 +74,10 @@ anchors:
 ></va-link-action>
 
 ### Additional guidance for VA
+
+#### Choosing between variations
+
+* **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For select components used outside of this pattern, for example on a longer form page, use the standard select variations.
 
 {% include content/select-options.md %}
 
@@ -89,7 +105,7 @@ anchors:
 
 ### Native Events
 
-- The native onKeyDown event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
+* The native onKeyDown event is available on this component. It can be used by adding the event handler to your component and it will then listen to the event and respond accordingly when the event fires.
 
 ## Accessibility considerations
 
@@ -99,7 +115,8 @@ anchors:
   type="secondary"
 ></va-link-action>
 
-## Privacy guidance 
+## Privacy guidance
+
 {% include content/privacy-selection-fields.md %}
 
 {% include _component-checklist.html component_name=page.web-component %}
