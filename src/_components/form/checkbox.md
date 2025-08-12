@@ -64,7 +64,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
 
-### Mobile
+### Mobile app
 
 #### Default
 
@@ -134,7 +134,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
-### Mobile
+### Mobile app
 
 #### Default
 

@@ -33,7 +33,7 @@ anchors:
 
 {% include storybook-preview.html story="va-button-segmented--selected-item" link_text="va-button-segmented--selected-item" %}
 
-### App
+### Mobile app
 
 #### 2 segments
 
@@ -84,7 +84,7 @@ A segmented control consists of a horizontal set of 2-4 segments, each of which 
 
 A Segmented Button is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
 
-#### App
+#### Mobile app
 
 The component is often integrated into the top navigation bar (or just below it) and should not be placed in a bottom toolbar. It is static and does not scroll horizontally.
 
@@ -119,7 +119,7 @@ Ensuring the component is accessible is critical on all platforms.
 * **Navigation:** When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
 * **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels.”
 
-### App
+### Mobile app
 
 For native mobile apps, the component must correctly report its properties to the operating system's accessibility services.
 

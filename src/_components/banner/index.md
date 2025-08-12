@@ -5,7 +5,7 @@ permalink: /components/banner/
 intro-text: "Banners are for announcements that typically prepare a Veteran to visit a VA facility or to help them maintain their health. Banners appear at the top of the page, below the header and navigation components."
 web-component: va-banner
 web: true
-mobile-app: true
+mobile-app: false
 sub-pages:
   - sub-page: Maintenance
   - sub-page: Official Gov

@@ -6,7 +6,7 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 github-title: va-tag
 status: use-deployed
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

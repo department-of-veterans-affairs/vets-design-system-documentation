@@ -60,7 +60,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
 
-### Mobile
+### Mobile app
 
 ### Default
 
@@ -165,7 +165,7 @@ If for some reason you do not use a link web-component links must meet the follo
 
 Review "[Usage](#usage)" for guidance.
 
-### Mobile
+### Mobile app
 
 * **Link opens within the app:**
   * In a full panel if the content is within the app.

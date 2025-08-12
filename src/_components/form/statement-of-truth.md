@@ -11,7 +11,7 @@ status: use-deployed
 uswds-v3: default
 web-component: va-statement-of-truth
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

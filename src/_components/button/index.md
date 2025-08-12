@@ -54,7 +54,7 @@ anchors:
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--loading" link_text="va-button--loading" %}
 
-### Mobile
+### Mobile app
 
 #### Base - Primary
 

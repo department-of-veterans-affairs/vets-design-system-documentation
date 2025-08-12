@@ -15,7 +15,7 @@ anchors:
   - anchor: Accessibility considerations
 web-component: va-date
 web: true
-mobile-app: true
+mobile-app: false
 ---
 
 ## Examples

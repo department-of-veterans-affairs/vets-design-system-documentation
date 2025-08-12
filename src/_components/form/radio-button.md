@@ -65,7 +65,7 @@ anchors:
 
 ---
 
-### Mobile
+### Mobile app
 
 #### Default
 

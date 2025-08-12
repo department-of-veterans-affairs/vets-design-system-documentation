@@ -16,7 +16,7 @@ mobile-app: true
 
 {% include storybook-preview.html height="150px" story="components-va-loading-indicator--default" link_text="va-loading-indicator" %}
 
-### Mobile
+### Mobile app
 
 {% include storybook-preview.html height="150px" story="loading-indicator--with-text" link_text="va_mobile__loading-indicator--with-text" is_mobile=true %}
 

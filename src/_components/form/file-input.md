@@ -12,7 +12,7 @@ status: use-with-caution-available
 uswds-v3: default
 web-component: va-file-input
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

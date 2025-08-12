@@ -10,7 +10,7 @@ figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-L
 uswds-v3: default
 web-component: va-combo-box
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

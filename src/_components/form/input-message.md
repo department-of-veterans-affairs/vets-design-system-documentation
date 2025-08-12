@@ -8,7 +8,7 @@ intro-text: "Provides helpful, in-context information about an input, either bef
 status: dont-use-deprecated
 contributors: Liz Lantz (VSA Authenticated Experience Team)
 web: true
-mobile-app: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
