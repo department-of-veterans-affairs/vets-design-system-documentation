@@ -23,25 +23,25 @@ anchors:
 
 ### Web
 
-#### Default
+<!-- #### Default
 
-<!-- {% include storybook-preview.html story="components-va-tabs--default" link_text="va-tabs--default" %} -->
+ {% include storybook-preview.html story="components-va-tabs--default" link_text="va-tabs--default" %} 
 
 #### With second tab selected
 
-<!-- {% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %} -->
+{% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %} 
 
 #### Without panel heading
 
-<!-- {% include storybook-preview.html story="components-va-tabs--without-panel-heading" link_text="va-tabs--without-panel-heading" %} -->
+{% include storybook-preview.html story="components-va-tabs--without-panel-heading" link_text="va-tabs--without-panel-heading" %}
 
 #### With heading not matching tab
 
-<!-- {% include storybook-preview.html story="components-va-tabs--with-heading-not-matching-tab" link_text="va-tabs--with-heading-not-matching-tab" %} -->
+{% include storybook-preview.html story="components-va-tabs--with-heading-not-matching-tab" link_text="va-tabs--with-heading-not-matching-tab" %}
 
 #### With meaningful content
 
-<!-- {% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %} -->
+{% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %} -->
 
 ## Usage
 
@@ -61,13 +61,13 @@ anchors:
 
 #### Tab overflow
 
-The Tab component works best when 3 or fewer tabs are needed. If the Tabs overflow on small screens, a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used, a shadow will show to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px. If your tabs are showing a scrollbar at a 320px width, you should consider options for reducing the width of your tabs to prevent any scrolling.
+**The tab component works best when 3 or fewer tabs are needed.** If the tabs overflow on small screens, a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used, a shadow will show to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px.
 
 <!-- {% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %} -->
 
 #### Tab panel
 
-The Tabs use a tab panel as a container for the content associated with the selected Tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the Tabs component. If a different spacing is required the default spacing can be overridden.
+Tab panels are used as a container for the content associated with the selected tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the tabs component. If a different spacing is required the default spacing can be overridden.
 
 {% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-ClaimStatus-Files.png" class="x2" %}
 
@@ -79,14 +79,14 @@ The Tabs use a tab panel as a container for the content associated with the sele
 ### Placement
 
 * The tabs component should appear in a consistent location across desktop and mobile views.
-* Place tabs below the Page title and subtitle.
+* Place tabs below the page title and subtitle.
 * Information relevant to all tabs can be placed above the tabs.
-* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/sidenav) component. Don't add tab links to the Side navigation, they should exist separately.
-* Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the Tabs component.
+* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/sidenav) component. Don't add tab links to the side navigation, they should exist separately.
+* Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the tabs component.
 
 #### Desktop view
 
-{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected and margin annotations." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" class="x2" %}
+{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" class="x2" %}
 
 #### Placement guidance
 <ol>
@@ -101,12 +101,12 @@ The Tabs use a tab panel as a container for the content associated with the sele
 <figure class="site-component-example">
   <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
   <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Files.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
-  <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool with margin annotations.</figcaption>
+  <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool.</figcaption>
 </figure>
 
 ### Instances of tabs in production
 
-See the [Tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on Tabs used in production.
+See the [tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on tabs used in production.
 
 ## Content considerations
 
