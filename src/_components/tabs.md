@@ -14,37 +14,41 @@ anchors:
   - anchor: Related
   - anchor: Component checklist
 ---
-
+<va-alert status="info">
+   <h2 slot="headline">Work in progress</h2>
+  <p>This documentation is pending a staging review and not officially released yet.</p>
+  </va-alert>
+  
 ## Examples
 
 ### Web
 
 #### Default
 
-{% include storybook-preview.html story="components-va-tabs--default" link_text="va-tabs--default" %}
+<!-- {% include storybook-preview.html story="components-va-tabs--default" link_text="va-tabs--default" %} -->
 
 #### With second tab selected
 
-{% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %}
+<!-- {% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %} -->
 
 #### Without panel heading
 
-{% include storybook-preview.html story="components-va-tabs--without-panel-heading" link_text="va-tabs--without-panel-heading" %}
+<!-- {% include storybook-preview.html story="components-va-tabs--without-panel-heading" link_text="va-tabs--without-panel-heading" %} -->
 
 #### With heading not matching tab
 
-{% include storybook-preview.html story="components-va-tabs--with-heading-not-matching-tab" link_text="va-tabs--with-heading-not-matching-tab" %}
+<!-- {% include storybook-preview.html story="components-va-tabs--with-heading-not-matching-tab" link_text="va-tabs--with-heading-not-matching-tab" %} -->
 
 #### With meaningful content
 
-{% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %}
+<!-- {% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %} -->
 
 ## Usage
 
 ### When to use tabs
 
-* **Groups of related content panels.** Use tabs to help users navigate between sections of the page.
-* **Related content.** Use tabs to organize related content that users don't need to view simultaneously.
+* **Organize related content sections.** Use tabs when you have multiple panels of content that are related but don't need to be viewed simultaneously. 
+* **Reduce cognitive load.** Use tabs to present information into manageable sections, allowing users to focus on one section at a time.
 
 ### When to consider something else
 
@@ -59,7 +63,7 @@ anchors:
 
 The Tab component works best when 3 or fewer tabs are needed. If the Tabs overflow on small screens, a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used, a shadow will show to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px. If your tabs are showing a scrollbar at a 320px width, you should consider options for reducing the width of your tabs to prevent any scrolling.
 
-{% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %}
+<!-- {% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %} -->
 
 #### Tab panel
 
