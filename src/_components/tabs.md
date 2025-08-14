@@ -27,18 +27,6 @@ anchors:
 
 {% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %} 
 
-#### Without panel heading
-
-{% include storybook-preview.html story="components-va-tabs--without-panel-heading" link_text="va-tabs--without-panel-heading" %}
-
-#### With heading not matching tab
-
-{% include storybook-preview.html story="components-va-tabs--with-heading-not-matching-tab" link_text="va-tabs--with-heading-not-matching-tab" %}
-
-#### With meaningful content
-
-{% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %}
-
 ## Usage
 
 ### When to use tabs
