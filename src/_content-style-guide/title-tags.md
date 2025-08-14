@@ -63,7 +63,7 @@ H1: Prednisone, 25mg
 
 Breadcrumb: VA.gov home > My HealtheVet > Medications > Medication detail
 
-Title tag: Medication detail – Medications | Veterans Affairs
+Title tag: Medication detail - Medications \| Veterans Affairs
 
 </div>
 </div>
@@ -75,7 +75,7 @@ H1: Prednisone, 25mg
 
 Breadcrumb: VA.gov home > My HealtheVet > Medications > Prednisone, 25mg
 
-Title tag: Prednisone, 25mg – Medications | Veterans Affairs
+Title tag: Prednisone, 25mg - Medications \| Veterans Affairs
 
 </div>
 </div>
