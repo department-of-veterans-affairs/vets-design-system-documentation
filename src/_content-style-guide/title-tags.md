@@ -58,17 +58,25 @@ For example, a detail page within an authenticated tool may have an H1 that incl
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Like this</h3>
 <div class="do-dont__content" markdown="1">
+
 H1: Prednisone, 25mg
+
 Breadcrumb: VA.gov home > My HealtheVet > Medications > Medication detail
+
 Title tag: Medication detail – Medications | Veterans Affairs
+
 </div>
 </div>
 <div class="do-dont__dont">
 <h3 class="do-dont__heading">Not this</h3>
 <div class="do-dont__content" markdown="1">
+
 H1: Prednisone, 25mg
+
 Breadcrumb: VA.gov home > My HealtheVet > Medications > Prednisone, 25mg
+
 Title tag: Prednisone, 25mg – Medications | Veterans Affairs
+
 </div>
 </div>
 </div>
