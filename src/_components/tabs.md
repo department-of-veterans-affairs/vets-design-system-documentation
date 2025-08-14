@@ -47,8 +47,6 @@ anchors:
 
 **The tab component works best when 3 or fewer tabs are needed.** If the tabs overflow on small screens, a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used, a shadow will show to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px.
 
-{% include storybook-preview.html story="components-va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" width="320px" %}
-
 #### Tab panel
 
 Tab panels are used as a container for the content associated with the selected tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the tabs component. If a different spacing is required the default spacing can be overridden.
