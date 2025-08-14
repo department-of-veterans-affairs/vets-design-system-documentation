@@ -14,12 +14,8 @@ anchors:
   - anchor: Related
   - anchor: Component checklist
 ---
-<va-alert status="info">
-   <h2 slot="headline">Work in progress</h2>
-  <p>This documentation is pending a staging review and not officially released yet.</p>
-  </va-alert>
   
-<!-- ## Examples
+## Examples
 
 ### Web
 
@@ -41,7 +37,7 @@ anchors:
 
 #### With meaningful content
 
-{% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %} -->
+{% include storybook-preview.html story="/story/components-va-tabs--with-meaningful-content" link_text="va-tabs--with-meaningful-content" %}
 
 ## Usage
 
