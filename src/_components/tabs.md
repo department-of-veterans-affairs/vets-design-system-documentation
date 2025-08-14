@@ -59,7 +59,7 @@ anchors:
 
 **The tab component works best when 3 or fewer tabs are needed.** If the tabs overflow on small screens, a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used, a shadow will show to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px.
 
-<!-- {% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %} -->
+{% include storybook-preview.html story="va-tabs--with-additional-tab-item" link_text="va-tabs--with-additional-tab-item" %}
 
 #### Tab panel
 
