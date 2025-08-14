@@ -4,7 +4,7 @@ title: Tabs
 intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between."
 github-title: va-tabs
 status: use-with-caution-available
-figma-link: https://www.figma.com/design/MNfr6ScW4Sf66tN0iY20GN/Tabs?node-id=24991-2000
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
 anchors:
   - anchor: Examples
   - anchor: Usage
