@@ -188,6 +188,10 @@
     "maturityCategory": "caution",
     "maturityLevel": "candidate"
   },
+  "va-sidenav": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
   "va-statement-of-truth": {
     "maturityCategory": "use",
     "maturityLevel": "deployed"

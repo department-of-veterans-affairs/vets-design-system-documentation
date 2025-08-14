@@ -9,13 +9,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@department-of-veterans-affairs/component-library@^51.1.0":
-  version "51.1.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-51.1.0.tgz#75265f7adbaf0405519500b62e26f5bf315e2637"
-  integrity sha512-wpvIvVZobnEeBnnekYZ7uwyQlvyoeW5tEEJ3Zxwy8mlddT/3i/TrtbcMnmvEs7BptYLsV6jtJs/hNMBQth8AGw==
+"@department-of-veterans-affairs/component-library@^51.4.0":
+  version "51.4.0"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-51.4.0.tgz#b444bf7f75e3b66b7932e1ea0d332990f281ec5f"
+  integrity sha512-iPJtXuedaoHKBDgtLU8nRUnsK2yAx3zN11lMmY3InvLlHXNzxCB5cI2CI50DAGxJvycvrwKchLxdckcijTIgnA==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.1.0"
-    "@department-of-veterans-affairs/web-components" "19.1.0"
+    "@department-of-veterans-affairs/web-components" "19.4.0"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
@@ -41,10 +41,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@19.1.0":
-  version "19.1.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-19.1.0.tgz#f4bc82dd66e90952e24eb50a6b7f14be7a5098e2"
-  integrity sha512-Pv8RkvAo5C1N/7GO1RiH4sWb4RqGiIhUaEfA+TU5+qZFwEIwyTDzOudlhrZk6Vdosy4Z4rIr4EEWOqK0DZa9hQ==
+"@department-of-veterans-affairs/web-components@19.4.0":
+  version "19.4.0"
+  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-19.4.0.tgz#e585b4abd5de4aa50354ab62d7cbba5e95cf3e4c"
+  integrity sha512-L1vIRvYCYHU8QDOYCkJ+OOAvE06qIjac+arJTyuext/Eg+oTlx676T1kMSuAuBM7YXHy68QhknWqnXRyVPcn0w==
   dependencies:
     "@stencil/core" "4.20.0"
     aria-hidden "^1.1.3"
