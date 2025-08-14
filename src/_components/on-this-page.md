@@ -6,6 +6,8 @@ research-title: "On this page jump link"
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=35%3A165&mode=design&t=q1Wbhw4ZIogPDFEb-1
 status: use-best-practice
 web-component: va-on-this-page
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

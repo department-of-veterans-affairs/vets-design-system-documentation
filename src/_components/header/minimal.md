@@ -8,6 +8,8 @@ intro-text: The minimal header can be used when navigating away would prevent th
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
 example-link: https://staging.va.gov/mock-form-minimal-header/
 web-component: va-header-minimal
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

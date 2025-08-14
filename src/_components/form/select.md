@@ -9,6 +9,8 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 status: use-best-practice
 uswds-v3: default
 web-component: va-select
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

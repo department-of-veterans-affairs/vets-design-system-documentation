@@ -6,6 +6,8 @@ github-title: va-list
 research-title: va-list
 figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=199%3A1182&mode=design&t=VfndjwGexPuw9yeV-1
 status: use-deployed
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

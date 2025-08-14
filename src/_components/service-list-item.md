@@ -7,6 +7,8 @@ figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-L
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
 draft: false
 web-component: va-service-list-item
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Content considerations

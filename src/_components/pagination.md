@@ -6,6 +6,8 @@ figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Exa
 intro-text: "Pagination is navigation for paginated content."
 web-component: va-pagination
 uswds-v3: default
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples 
   - anchor: Usage

@@ -10,6 +10,8 @@ intro-text: The default button group arranges each button as a separate element 
 status: use-deployed
 uswds-v3: default
 web-component: va-button-pair
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

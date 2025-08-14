@@ -3,7 +3,7 @@
 {% assign languages = translations | map: 'text' | default: nil %}
 
 {% if languages %}
-  <span class="usa-label vads-u-margin-left--0p5 component-label">
+  <span class="usa-label component-label">
     <va-icon icon="language" size="2"></va-icon>
     {{ languages | join: ", " }}
   </span>

@@ -8,6 +8,8 @@ intro-text: "A card groups short, related pieces of personalized information int
 contributor: Allison Lu, Angela Agosto
 status: use-deployed
 web-component: va-card
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Variations

@@ -8,6 +8,8 @@ sub-pages:
   - sub-page: Crisis Line Modal
 uswds-v3: default
 web-component: va-modal
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
