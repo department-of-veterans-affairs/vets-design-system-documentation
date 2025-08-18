@@ -40,7 +40,7 @@ This pattern involves these types of pages found in VA.gov forms:
 - **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.
 - **Prefilled information the user can update:** This can be many different types of information that the user can update directly on the screen where we display it.
 
-#### Introduction page & Sign-in Alerts
+#### Introduction page and sign in alerts
 
 - The existing [form introduction page templates](/templates/forms/introduction) are already updated to support this pattern for both the unauthenticated and authenticated experiences.
 - Use the [existing sign-in alert pattern](patterns/help-users-to/sign-in) that notifies users that their information will be prefilled when signing in.
@@ -81,17 +81,17 @@ This pattern communicates information that can be edited by:
 
 ## Examples
 
-### Uneditable Prefill Card
+### Uneditable prefill card
 {% include storybook-preview.html story="patterns-components-card--uneditable" height="250px" link_text="uneditable prefill alert" %}
 
-### Editable Prefill Card
+### Editable prefill card
 {% include storybook-preview.html story="patterns-components-card--editable" height="190px" link_text="editable prefill alert" %}
 
 
-### Signed In Prefill Alert
+### Signed in prefill alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" link_text="signed in prefill alert" %}
 
-### Unauthenticated Prefill Alert
+### Unauthenticated prefill alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
 
