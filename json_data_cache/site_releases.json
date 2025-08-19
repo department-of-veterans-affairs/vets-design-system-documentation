@@ -1,5 +1,50 @@
 [
   {
+    "url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/241011404",
+    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/241011404/assets",
+    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/241011404/assets{?name,label}",
+    "html_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases/tag/Sprint-9",
+    "id": 241011404,
+    "author": {
+      "login": "babsdenney",
+      "id": 4505990,
+      "node_id": "MDQ6VXNlcjQ1MDU5OTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4505990?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/babsdenney",
+      "html_url": "https://github.com/babsdenney",
+      "followers_url": "https://api.github.com/users/babsdenney/followers",
+      "following_url": "https://api.github.com/users/babsdenney/following{/other_user}",
+      "gists_url": "https://api.github.com/users/babsdenney/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/babsdenney/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/babsdenney/subscriptions",
+      "organizations_url": "https://api.github.com/users/babsdenney/orgs",
+      "repos_url": "https://api.github.com/users/babsdenney/repos",
+      "events_url": "https://api.github.com/users/babsdenney/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/babsdenney/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "node_id": "RE_kwDOCRl4ss4OXYrM",
+    "tag_name": "Sprint-9",
+    "target_commitish": "main",
+    "name": "Sprint 9",
+    "draft": false,
+    "immutable": false,
+    "prerelease": false,
+    "created_at": "2025-08-19T19:26:50Z",
+    "updated_at": "2025-08-19T20:28:40Z",
+    "published_at": "2025-08-19T20:28:40Z",
+    "assets": [
+
+    ],
+    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/tarball/Sprint-9",
+    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/zipball/Sprint-9",
+    "body": "## What's Changed\r\n* What’s New: Update release notes by @danbrady in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4610\r\n* Update imposter component and v1 guidance by @rsmithadhoc in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4601\r\n* Fix typo in Link - Action docs by @jeana-adhoc in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4619\r\n* Update screenshots to match PR 37157 by @jeana-adhoc in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4626\r\n* Numbers, signs, and symbols: Adding ampersands and revised 1 vs one by @laurenvocke-va in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4633\r\n* Select - Adds missing guidance for form pattern variations to implement single response by @humancompanion-usds in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4634\r\n* Punctuation: Removing ampersand info and making style guide… by @laurenvocke-va in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4632\r\n* Dates and numbers: Adding time zone format exception by @laurenvocke-va in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4629\r\n* Update CSS-Library to latest - v0.23.2 by @jamigibbs in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4653\r\n* Tabs: Documentation and component checklist updates by @babsdenney in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4528\r\n* update to latest component library release by @it-harrison in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4672\r\n* Update title-tags.md: Fixing spacing in the PII/PHI example by @laurenvocke-va in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4655\r\n* Update to Know your information is prefilled pattern - Intro page by @jeana-adhoc in https://github.com/department-of-veterans-affairs/vets-design-system-documentation/pull/4674\r\n\r\n\r\n**Full Changelog**: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/compare/Sprint-8...Sprint-9",
+    "mentions_count": 8
+  },
+  {
     "url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/237653433",
     "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/237653433/assets",
     "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/237653433/assets{?name,label}",
@@ -34,6 +79,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-08-04T21:27:54Z",
+    "updated_at": "2025-08-05T12:40:29Z",
     "published_at": "2025-08-05T12:40:29Z",
     "assets": [
 
@@ -78,6 +124,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-07-21T15:18:08Z",
+    "updated_at": "2025-07-21T17:03:49Z",
     "published_at": "2025-07-21T17:03:49Z",
     "assets": [
 
@@ -122,6 +169,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-07-07T14:00:00Z",
+    "updated_at": "2025-07-16T14:37:28Z",
     "published_at": "2025-07-16T14:37:28Z",
     "assets": [
 
@@ -166,6 +214,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-06-26T16:22:13Z",
+    "updated_at": "2025-06-26T20:08:54Z",
     "published_at": "2025-06-26T20:08:54Z",
     "assets": [
 
@@ -210,6 +259,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-06-12T21:26:15Z",
+    "updated_at": "2025-06-12T23:56:52Z",
     "published_at": "2025-06-12T23:56:52Z",
     "assets": [
 
@@ -254,6 +304,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-05-27T18:55:09Z",
+    "updated_at": "2025-05-28T18:42:17Z",
     "published_at": "2025-05-28T18:42:17Z",
     "assets": [
 
@@ -298,6 +349,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-05-13T19:23:33Z",
+    "updated_at": "2025-05-14T19:09:30Z",
     "published_at": "2025-05-14T19:09:30Z",
     "assets": [
 
@@ -342,6 +394,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-04-28T14:03:55Z",
+    "updated_at": "2025-04-28T15:46:18Z",
     "published_at": "2025-04-28T15:46:18Z",
     "assets": [
 
@@ -386,6 +439,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-04-16T18:54:07Z",
+    "updated_at": "2025-04-17T18:02:01Z",
     "published_at": "2025-04-17T18:02:01Z",
     "assets": [
 
@@ -430,6 +484,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-03-31T20:07:56Z",
+    "updated_at": "2025-04-01T20:53:25Z",
     "published_at": "2025-04-01T17:07:21Z",
     "assets": [
 
@@ -474,6 +529,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-03-14T14:18:52Z",
+    "updated_at": "2025-03-14T15:10:19Z",
     "published_at": "2025-03-14T15:10:19Z",
     "assets": [
 
@@ -518,6 +574,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-02-27T16:24:55Z",
+    "updated_at": "2025-03-04T15:52:48Z",
     "published_at": "2025-03-04T15:52:48Z",
     "assets": [
 
@@ -562,6 +619,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-02-11T17:20:40Z",
+    "updated_at": "2025-02-14T18:32:39Z",
     "published_at": "2025-02-14T18:32:39Z",
     "assets": [
 
@@ -606,6 +664,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-01-29T17:54:26Z",
+    "updated_at": "2025-01-30T18:37:38Z",
     "published_at": "2025-01-30T18:37:38Z",
     "assets": [
 
@@ -650,6 +709,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2025-01-15T14:33:20Z",
+    "updated_at": "2025-01-15T19:14:30Z",
     "published_at": "2025-01-15T19:14:30Z",
     "assets": [
 
@@ -694,6 +754,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2024-12-02T15:00:03Z",
+    "updated_at": "2025-01-15T19:13:09Z",
     "published_at": "2025-01-15T19:13:09Z",
     "assets": [
 
@@ -738,6 +799,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-10T19:34:37Z",
+    "updated_at": "2020-12-11T20:01:00Z",
     "published_at": "2020-12-11T20:01:00Z",
     "assets": [
       {
@@ -888,6 +950,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-08T15:44:17Z",
+    "updated_at": "2020-12-10T20:03:12Z",
     "published_at": "2020-12-10T20:03:12Z",
     "assets": [
       {
@@ -1038,6 +1101,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-08T15:44:17Z",
+    "updated_at": "2020-12-09T20:01:05Z",
     "published_at": "2020-12-09T20:01:05Z",
     "assets": [
       {
@@ -1188,6 +1252,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-08T15:44:17Z",
+    "updated_at": "2020-12-08T20:01:11Z",
     "published_at": "2020-12-08T20:01:11Z",
     "assets": [
       {
@@ -1338,6 +1403,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-07T16:42:59Z",
+    "updated_at": "2020-12-07T20:01:09Z",
     "published_at": "2020-12-07T20:01:09Z",
     "assets": [
       {
@@ -1488,6 +1554,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-03T22:57:35Z",
+    "updated_at": "2020-12-04T20:01:10Z",
     "published_at": "2020-12-04T20:01:10Z",
     "assets": [
       {
@@ -1638,6 +1705,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-12-02T20:38:02Z",
+    "updated_at": "2020-12-03T20:01:07Z",
     "published_at": "2020-12-03T20:01:07Z",
     "assets": [
       {
@@ -1788,6 +1856,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-11-24T17:52:56Z",
+    "updated_at": "2020-12-02T20:01:02Z",
     "published_at": "2020-12-02T20:01:02Z",
     "assets": [
       {
@@ -1938,6 +2007,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-11-24T17:52:56Z",
+    "updated_at": "2020-12-01T20:01:07Z",
     "published_at": "2020-12-01T20:01:07Z",
     "assets": [
       {
@@ -2088,6 +2158,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-11-24T17:52:56Z",
+    "updated_at": "2020-11-30T20:01:04Z",
     "published_at": "2020-11-30T20:01:04Z",
     "assets": [
       {
@@ -2238,6 +2309,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-11-24T17:52:56Z",
+    "updated_at": "2020-11-24T20:01:03Z",
     "published_at": "2020-11-24T20:01:03Z",
     "assets": [
       {
@@ -2388,6 +2460,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-11-23T15:09:54Z",
+    "updated_at": "2020-11-23T20:01:03Z",
     "published_at": "2020-11-23T20:01:03Z",
     "assets": [
       {
@@ -2538,6 +2611,7 @@
     "immutable": false,
     "prerelease": false,
     "created_at": "2020-11-12T15:07:01Z",
+    "updated_at": "2020-11-20T20:01:07Z",
     "published_at": "2020-11-20T20:01:07Z",
     "assets": [
       {
@@ -2652,155 +2726,5 @@
     "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/tarball/vets-design-system-documentation/v0.0.419",
     "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/zipball/vets-design-system-documentation/v0.0.419",
     "body": "Release 0.0.419  \n\n"
-  },
-  {
-    "url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/34194658",
-    "assets_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/34194658/assets",
-    "upload_url": "https://uploads.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/34194658/assets{?name,label}",
-    "html_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases/tag/vets-design-system-documentation/v0.0.418",
-    "id": 34194658,
-    "author": {
-      "login": "va-bot",
-      "id": 16944030,
-      "node_id": "MDQ6VXNlcjE2OTQ0MDMw",
-      "avatar_url": "https://avatars.githubusercontent.com/u/16944030?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/va-bot",
-      "html_url": "https://github.com/va-bot",
-      "followers_url": "https://api.github.com/users/va-bot/followers",
-      "following_url": "https://api.github.com/users/va-bot/following{/other_user}",
-      "gists_url": "https://api.github.com/users/va-bot/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/va-bot/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/va-bot/subscriptions",
-      "organizations_url": "https://api.github.com/users/va-bot/orgs",
-      "repos_url": "https://api.github.com/users/va-bot/repos",
-      "events_url": "https://api.github.com/users/va-bot/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/va-bot/received_events",
-      "type": "User",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "node_id": "MDc6UmVsZWFzZTM0MTk0NjU4",
-    "tag_name": "vets-design-system-documentation/v0.0.418",
-    "target_commitish": "3a6e37950b76686e84f3df4f518c65fcd66c714a",
-    "name": "vets-design-system-documentation/v0.0.418",
-    "draft": false,
-    "immutable": false,
-    "prerelease": false,
-    "created_at": "2020-11-12T15:07:01Z",
-    "published_at": "2020-11-19T20:01:02Z",
-    "assets": [
-      {
-        "url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/assets/28523537",
-        "id": 28523537,
-        "node_id": "MDEyOlJlbGVhc2VBc3NldDI4NTIzNTM3",
-        "name": "vets-design-system-documentation-vagov-dev-0.0.418.tar.bz2",
-        "label": "1605816060-vets-design-system-documentation-vagov-dev-0.0.418.tar.bz2",
-        "uploader": {
-          "login": "va-bot",
-          "id": 16944030,
-          "node_id": "MDQ6VXNlcjE2OTQ0MDMw",
-          "avatar_url": "https://avatars.githubusercontent.com/u/16944030?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/va-bot",
-          "html_url": "https://github.com/va-bot",
-          "followers_url": "https://api.github.com/users/va-bot/followers",
-          "following_url": "https://api.github.com/users/va-bot/following{/other_user}",
-          "gists_url": "https://api.github.com/users/va-bot/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/va-bot/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/va-bot/subscriptions",
-          "organizations_url": "https://api.github.com/users/va-bot/orgs",
-          "repos_url": "https://api.github.com/users/va-bot/repos",
-          "events_url": "https://api.github.com/users/va-bot/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/va-bot/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "content_type": "application/x-bzip",
-        "state": "uploaded",
-        "size": 24168448,
-        "digest": null,
-        "download_count": 3,
-        "created_at": "2020-11-19T20:01:07Z",
-        "updated_at": "2020-11-19T20:01:09Z",
-        "browser_download_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases/download/vets-design-system-documentation/v0.0.418/vets-design-system-documentation-vagov-dev-0.0.418.tar.bz2"
-      },
-      {
-        "url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/assets/28523541",
-        "id": 28523541,
-        "node_id": "MDEyOlJlbGVhc2VBc3NldDI4NTIzNTQx",
-        "name": "vets-design-system-documentation-vagov-prod-0.0.418.tar.bz2",
-        "label": "1605816060-vets-design-system-documentation-vagov-prod-0.0.418.tar.bz2",
-        "uploader": {
-          "login": "va-bot",
-          "id": 16944030,
-          "node_id": "MDQ6VXNlcjE2OTQ0MDMw",
-          "avatar_url": "https://avatars.githubusercontent.com/u/16944030?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/va-bot",
-          "html_url": "https://github.com/va-bot",
-          "followers_url": "https://api.github.com/users/va-bot/followers",
-          "following_url": "https://api.github.com/users/va-bot/following{/other_user}",
-          "gists_url": "https://api.github.com/users/va-bot/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/va-bot/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/va-bot/subscriptions",
-          "organizations_url": "https://api.github.com/users/va-bot/orgs",
-          "repos_url": "https://api.github.com/users/va-bot/repos",
-          "events_url": "https://api.github.com/users/va-bot/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/va-bot/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "content_type": "application/x-bzip",
-        "state": "uploaded",
-        "size": 24168448,
-        "digest": null,
-        "download_count": 4,
-        "created_at": "2020-11-19T20:01:13Z",
-        "updated_at": "2020-11-19T20:01:14Z",
-        "browser_download_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases/download/vets-design-system-documentation/v0.0.418/vets-design-system-documentation-vagov-prod-0.0.418.tar.bz2"
-      },
-      {
-        "url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/releases/assets/28523539",
-        "id": 28523539,
-        "node_id": "MDEyOlJlbGVhc2VBc3NldDI4NTIzNTM5",
-        "name": "vets-design-system-documentation-vagov-staging-0.0.418.tar.bz2",
-        "label": "1605816060-vets-design-system-documentation-vagov-staging-0.0.418.tar.bz2",
-        "uploader": {
-          "login": "va-bot",
-          "id": 16944030,
-          "node_id": "MDQ6VXNlcjE2OTQ0MDMw",
-          "avatar_url": "https://avatars.githubusercontent.com/u/16944030?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/va-bot",
-          "html_url": "https://github.com/va-bot",
-          "followers_url": "https://api.github.com/users/va-bot/followers",
-          "following_url": "https://api.github.com/users/va-bot/following{/other_user}",
-          "gists_url": "https://api.github.com/users/va-bot/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/va-bot/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/va-bot/subscriptions",
-          "organizations_url": "https://api.github.com/users/va-bot/orgs",
-          "repos_url": "https://api.github.com/users/va-bot/repos",
-          "events_url": "https://api.github.com/users/va-bot/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/va-bot/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "content_type": "application/x-bzip",
-        "state": "uploaded",
-        "size": 24168448,
-        "digest": null,
-        "download_count": 3,
-        "created_at": "2020-11-19T20:01:10Z",
-        "updated_at": "2020-11-19T20:01:11Z",
-        "browser_download_url": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/releases/download/vets-design-system-documentation/v0.0.418/vets-design-system-documentation-vagov-staging-0.0.418.tar.bz2"
-      }
-    ],
-    "tarball_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/tarball/vets-design-system-documentation/v0.0.418",
-    "zipball_url": "https://api.github.com/repos/department-of-veterans-affairs/vets-design-system-documentation/zipball/vets-design-system-documentation/v0.0.418",
-    "body": "Release 0.0.418  \n\n"
   }
 ]
