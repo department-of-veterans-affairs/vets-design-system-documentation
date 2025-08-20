@@ -108,7 +108,7 @@ This pattern can be implemented with standard form elements and other optional c
 
 ## Content considerations
 
-* Questions, decisions, and other pieces of information in the sub-task must be in [plain language]({{ site.baseurl }}/content-style-guide/content-principles/plain-language).
+* Questions, decisions, and other pieces of information in the sub-task must be in [plain language]({{ site.baseurl }}//content-style-guide/plain-language).
 * Start with essential, required questions then move to optional questions if necessary.
 * Don't nest multiple questions within one question. Most questions should be answerable via the [Yes/No button pair]({{ site.baseurl }}/components/button/button-pair#default-yesno)
   * Example: We would NOT ask, "Do you have a cat, and do you like that cat?" in one question. Those should be two separate questions.
