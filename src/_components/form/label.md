@@ -14,7 +14,7 @@ anchors:
 
 ## Examples
 
-Examples shown here use the [va-text-input component]({{ site.baseurl }}/components/forms/text-input) to demonstrate form labels. Labels are used consistently across standard form components.
+Examples shown here use the [va-text-input component]({{ site.baseurl }}/components/form/text-input) to demonstrate form labels. Labels are used consistently across standard form components.
 
 ### Default
 

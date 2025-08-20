@@ -249,7 +249,7 @@ When the user is required to do something in response to an alert, let them know
 
 ## Related
 
-* [Alert - Expandable]({{ site.baseurl }}/components/alert-expandable)
+* [Alert - Expandable]({{ site.baseurl }}/components/alert/alert-expandable/)
 * [Banner]({{ site.baseurl }}/components/banner)
 
 {% include _component-checklist.html component_name=page.web-component %}
