@@ -5,7 +5,7 @@ has-parent: /templates/forms/
 title: Review
 status: use-deployed
 intro-text: Allows the user to review information and make edits if necessary.
-figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2988%3A66785&mode=design&t=0y4ua4v9DIeIvkhX-1
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2694-27118&t=trebutugV9jwUgJ1-1
 anchors:
   - anchor: About
   - anchor: Example
