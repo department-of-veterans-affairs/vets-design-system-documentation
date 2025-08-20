@@ -141,7 +141,7 @@ anchors:
 
 ### How this component works
 
-* **Use icons as defined.** [Icons]({{ site.baseurl }}/foundation/icons/) defined in the link variations above are reserved for that distinct usage. These icons should not be used for another purpose without explicit permission to do so from the Design System Council.
+* **Use icons as defined.** [Icons]({{ site.baseurl }}/components/icons/) defined in the link variations above are reserved for that distinct usage. These icons should not be used for another purpose without explicit permission to do so from the Design System Council.
 
 #### Implementation details
 
