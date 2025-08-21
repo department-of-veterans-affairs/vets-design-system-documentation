@@ -20,6 +20,7 @@ permalink: /component-checklist-layout-option-1/
 
 .item-content {
   flex: 1;
+  order: 2;
 }
 
 .item-content h4 {
@@ -42,6 +43,7 @@ permalink: /component-checklist-layout-option-1/
   flex-shrink: 0;
   min-width: 240px;
   align-items: flex-start;
+  order: 1;
 }
 
 .platform-status {
@@ -56,23 +58,28 @@ permalink: /component-checklist-layout-option-1/
 .status-icon {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
-  font-weight: bold;
   flex-shrink: 0;
 }
 
 .status-icon.complete {
-  background: #00a91c;
-  color: white;
+  color: #00a91c;
+}
+
+.status-icon.complete va-icon {
+  color: #00a91c !important;
+  fill: #00a91c !important;
 }
 
 .status-icon.incomplete {
-  background: #e6e6e6;
   color: #6c757d;
+}
+
+.status-icon.incomplete va-icon {
+  color: #6c757d !important;
+  fill: #6c757d !important;
 }
 
 .status-icon.na {
@@ -143,8 +150,13 @@ permalink: /component-checklist-layout-option-1/
     gap: 1rem;
   }
   
+  .item-content {
+    order: 2;
+  }
+  
   .platform-indicators {
-    flex-direction: column;
+    order: 1;
+    flex-direction: row;
     gap: 0.5rem;
     min-width: auto;
   }
@@ -172,7 +184,12 @@ permalink: /component-checklist-layout-option-1/
   </div>
 </div>
 
-<va-accordion bordered open-single>
+<div style="margin-bottom: 1rem;">
+  <va-button secondary text="Expand All" id="expand-all-btn"></va-button>
+  <va-button secondary text="Collapse All" id="collapse-all-btn" style="margin-left: 0.5rem;"></va-button>
+</div>
+
+<va-accordion bordered id="checklist-accordion">
   <va-accordion-item header="Maturity">
     <div class="checklist-item">
       <div class="item-content">
@@ -181,11 +198,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -198,11 +215,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon incomplete">○</span>
+          <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3" style="color: #6c757d;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon incomplete">○</span>
+          <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3" style="color: #6c757d;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -215,11 +232,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -232,7 +249,7 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
@@ -251,11 +268,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon incomplete">○</span>
+          <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3" style="color: #6c757d;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon incomplete">○</span>
+          <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3" style="color: #6c757d;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -270,11 +287,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -287,11 +304,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -304,11 +321,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -323,11 +340,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -340,11 +357,11 @@ permalink: /component-checklist-layout-option-1/
       </div>
       <div class="platform-indicators">
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Web</span>
         </div>
         <div class="platform-status">
-          <span class="status-icon complete">✓</span>
+          <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
           <span>Mobile</span>
         </div>
       </div>
@@ -373,11 +390,11 @@ permalink: /component-checklist-layout-option-1/
   <h4>Legend</h4>
   <div class="legend-items">
     <div class="legend-item">
-      <span class="status-icon complete">✓</span>
+      <span class="status-icon complete"><va-icon icon="check_circle" size="3" style="color: #00a91c;"></va-icon></span>
       <span>Complete</span>
     </div>
     <div class="legend-item">
-      <span class="status-icon incomplete">○</span>
+      <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3" style="color: #6c757d;"></va-icon></span>
       <span>Incomplete</span>
     </div>
     <div class="legend-item">
@@ -400,3 +417,27 @@ permalink: /component-checklist-layout-option-1/
     <li>Responsive design that works well on all devices</li>
   </ul>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const expandAllBtn = document.getElementById('expand-all-btn');
+  const collapseAllBtn = document.getElementById('collapse-all-btn');
+  const accordion = document.getElementById('checklist-accordion');
+  
+  if (expandAllBtn && collapseAllBtn && accordion) {
+    expandAllBtn.addEventListener('click', function() {
+      const accordionItems = accordion.querySelectorAll('va-accordion-item');
+      accordionItems.forEach(item => {
+        item.setAttribute('open', '');
+      });
+    });
+    
+    collapseAllBtn.addEventListener('click', function() {
+      const accordionItems = accordion.querySelectorAll('va-accordion-item');
+      accordionItems.forEach(item => {
+        item.removeAttribute('open');
+      });
+    });
+  }
+});
+</script>
