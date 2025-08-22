@@ -99,7 +99,6 @@ See the [tabs component discussion](https://github.com/department-of-veterans-af
 ### Use headers in tab panels
 
 * **Start tab panel content with a heading.** Each tab panel should begin with a heading that describes the panel's content.
-* **Use descriptive headings that expand on the tab label.** While tab labels should be brief (1-2 words), the heading in each panel can be more descriptive.
 * **Maintain proper heading hierarchy.** Ensure headings within tab panels follow logical order (`h2`, `h3`, `h4`, etc.) to maintain document structure for screen readers and assistive technology.
 * **Keep headings consistent across panels.** Use similar heading patterns and levels across all tab panels for a cohesive experience.
 * **Consider the tab label and panel heading relationship.** The panel heading should relate to and expand upon the tab label, providing clear context for the content that follows.
