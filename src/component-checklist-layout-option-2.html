@@ -1,0 +1,624 @@
+---
+layout: default
+title: "Layout Option 2: Static Content Layout"
+permalink: /component-checklist-layout-option-2/
+---
+
+<style>
+    /* Component checklist specific styles */
+    .checklist-section {
+        margin-bottom: 3rem;
+    }
+
+    .section-header {
+        border-bottom: 2px solid #005ea2;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1b1b1b;
+    }
+
+    .checklist-item {
+        padding: 0.75rem 1.5rem;
+        border-bottom: 1px solid #e6e6e6;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: #f9f9f9;
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+    }
+
+    .checklist-item:last-child {
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .item-content {
+        flex: 1;
+        order: 2;
+    }
+
+    .item-content h4 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #1b1b1b;
+        display: inline;
+    }
+
+    .item-content p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #565c65;
+        display: inline;
+        margin-left: 0.5rem;
+    }
+
+    .item-content p::before {
+        content: "— ";
+        color: #9ca3af;
+    }
+
+    .platform-indicators {
+        display: flex;
+        gap: 0.75rem;
+        flex-shrink: 0;
+        min-width: 240px;
+        align-items: center;
+        order: 1;
+    }
+
+    .platform-status {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        min-width: 100px;
+    }
+
+    .status-icon {
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .status-icon.complete {
+        color: #00a91c;
+    }
+
+    .status-icon.complete va-icon {
+        color: #00a91c !important;
+        fill: #00a91c !important;
+    }
+
+    .status-icon.incomplete {
+        color: #6c757d;
+    }
+
+    .status-icon.incomplete va-icon {
+        color: #6c757d !important;
+        fill: #6c757d !important;
+    }
+
+    .status-icon.na {
+        background: transparent;
+        color: #6c757d;
+        font-size: 0.75rem;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        font-weight: 600;
+    }
+
+    .checklist-summary {
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .checklist-summary h3 {
+        margin: 0 0 0.75rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .summary-stats {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .summary-stat {
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .legend {
+        margin-top: 2rem;
+        padding: 1rem 1.5rem;
+        background: #f8f9fa;
+        border-radius: 4px;
+    }
+
+    .legend h4 {
+        margin: 0 0 0.75rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .legend-items {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .checklist-item {
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        .item-content {
+            order: 2;
+        }
+
+        .item-content h4 {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-content p {
+            display: block;
+            margin-left: 0;
+        }
+
+        .item-content p::before {
+            display: none;
+        }
+
+        .platform-indicators {
+            order: 1;
+            flex-direction: row;
+            gap: 0.5rem;
+            min-width: auto;
+        }
+
+        .summary-stats {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .legend-items {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+    }
+</style>
+
+<h1>Component Checklist - Static Content Layout</h1>
+
+<div class="checklist-summary">
+    <h3>Component Completion Status</h3>
+    <div class="summary-stats">
+        <div class="summary-stat">Web: 7 of 9 complete (78%)</div>
+        <div class="summary-stat">Mobile: 6 of 8 complete (75%)</div>
+    </div>
+</div>
+
+<div class="checklist-section">
+    <div class="section-header">
+        <h2>Maturity</h2>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Guidance</h4>
+            <p>Examples, usage, code usage, content considerations, and accessibility considerations are all complete.
+            </p>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                        style="color: #6c757d;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                        style="color: #6c757d;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Research</h4>
+            <p>VFS team conducted research on this component which is linked from this page.</p>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Stability</h4>
+            <p>Component has been in production for more than 3 months with no significant issues found.</p>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon na">N/A</span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Adoption</h4>
+            <p>Multiple teams have adopted this component.</p>
+        </div>
+    </div>
+</div>
+
+<div class="checklist-section">
+    <div class="section-header">
+        <h2>Accessibility</h2>
+    </div>
+    <p>For more information on each category, see Accessibility testing for design system components. 
+    <span><strong>Last audit date:</strong> 2025-07-16</span></p>
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Code review</h4>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Readability</h4>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Automated scans</h4>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Use of color</h4>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Text resizing, zoom, and magnification</h4>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                        style="color: #6c757d;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                        style="color: #6c757d;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Screen readers</h4>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                        style="color: #6c757d;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                        style="color: #6c757d;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Input and interaction methods</h4>
+        </div>
+    </div>
+
+    <div class="checklist-section">
+        <div class="section-header">
+            <h2>Code Assets</h2>
+        </div>
+
+        <div class="checklist-item">
+            <div class="platform-indicators">
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Web</span>
+                </div>
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Mobile</span>
+                </div>
+            </div>
+            <div class="item-content">
+                <h4>Variations</h4>
+                <p>Storybook includes all variations (style, size, orientation, optional iconography, selection,
+                    error state, etc.)</p>
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <div class="platform-indicators">
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Web</span>
+                </div>
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Mobile</span>
+                </div>
+            </div>
+            <div class="item-content">
+                <h4>Responsive</h4>
+                <p>Component depicted in all responsive breakpoints.</p>
+            </div>
+        </div>
+
+        <div class="checklist-item">
+            <div class="platform-indicators">
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Web</span>
+                </div>
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Mobile</span>
+                </div>
+            </div>
+            <div class="item-content">
+                <h4>Interactive states</h4>
+                <p>Includes all interactive states that are applicable (hover, active, focus, keyboard focus,
+                    disabled).</p>
+            </div>
+        </div>
+        <div class="checklist-item">
+            <div class="platform-indicators">
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Web</span>
+                </div>
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Mobile</span>
+                </div>
+            </div>
+            <div class="item-content">
+                <h4>Tokens</h4>
+                <p>All design attributes (color, typography, layout, etc.) are available as tokens.</p>
+            </div>
+        </div>
+        <div class="checklist-item">
+            <div class="platform-indicators">
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Web</span>
+                </div>
+                <div class="platform-status">
+                    <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                            style="color: #00a91c;"></va-icon></span>
+                    <span>Mobile</span>
+                </div>
+            </div>
+            <div class="item-content">
+                <h4>Internationalization</h4>
+                <p>Describes i18n attributes.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="checklist-section">
+    <div class="section-header">
+        <h2>Visual Assets</h2>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Tokens</h4>
+            <p>All design attributes (color, typography, layout, etc.) are available as tokens.</p>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                        style="color: #00a91c;"></va-icon></span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>States</h4>
+            <p>Includes all interactive states that are applicable (hover, active, focus, keyboard focus,
+                disabled).</p>
+        </div>
+    </div>
+
+    <div class="checklist-item">
+        <div class="platform-indicators">
+            <div class="platform-status">
+                <span class="status-icon na">N/A</span>
+                <span>Web</span>
+            </div>
+            <div class="platform-status">
+                <span class="status-icon na">N/A</span>
+                <span>Mobile</span>
+            </div>
+        </div>
+        <div class="item-content">
+            <h4>Tokens</h4>
+            <p>All design attributes (color, typography, layout, etc.) are available as tokens.</p>
+        </div>
+    </div>
+</div>
+
+<div class="legend">
+    <h4>Legend</h4>
+    <div class="legend-items">
+        <div class="legend-item">
+            <span class="status-icon complete"><va-icon icon="check_circle" size="3"
+                    style="color: #00a91c;"></va-icon></span>
+            <span>Complete</span>
+        </div>
+        <div class="legend-item">
+            <span class="status-icon incomplete"><va-icon icon="radio_button_unchecked" size="3"
+                    style="color: #6c757d;"></va-icon></span>
+            <span>Incomplete</span>
+        </div>
+        <div class="legend-item">
+            <span class="status-icon na">N/A</span>
+            <span>Not applicable</span>
+        </div>
+    </div>
+</div>
