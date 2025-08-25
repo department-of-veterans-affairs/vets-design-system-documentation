@@ -31,7 +31,7 @@ anchors:
 ### When not to use this pattern
 
 * **Collecting a single, or limited, response.** For questions in a form that only have one answer, such as "What is the city and state of your birth?", use the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.
-* **Inconsistent questions being asked for each item.** If the same data isn't being collected for each item then this pattern does not lend itself well as a solution as it is meant to capture the same set of information multiple times.
+* **Inconsistent questions being asked for each item.** Don’t use this pattern if you’re asking different questions for each item. This pattern works best when you need the same information for every item.
 
 ## How to design and build - Multi-page
 
@@ -171,6 +171,69 @@ There are two types of multiple page patterns with slightly different user flows
     text="view developer documentation"
   />
 </p>
+
+
+### URL Guidance
+
+When you design forms that collect several responses, make sure the URL shows which item the user is working on. Put the item’s position in the URL, like `/dependents/0/name` for the first dependent. Don’t use query parameters. This makes it easier for users to find, edit, and share links to specific items.
+
+#### How we show “which item” in the URL
+
+We include a folder-like path segment that holds the item's position in the list for the current item. This is called the array index.
+
+`/<form-root>/<section>/<array-name>/<index>/<question-path>`
+
+- `<index>` is zero-based: the first item is `/0/`, the second is `/1/`, and so on. This matches how arrays work in code. It keeps routing logic simple and predictable..
+Example:
+    - First item: `/app-name/dependents/0/name`
+    - Second item: `/app-name/dependents/1/name`
+
+This structure lets the form deep-link to any item's questions. It also simplifies 'Back/Next' behavior within the loop. It also aligns with our “ask for multiple responses” pattern guidance, which gathers the same fields for each item. Note: This creates two empty folders in the URL, which is different from VA’s [URL standards](https://design.va.gov/ia/url-standards/).
+
+**Tip for labels:** When showing labels to users, use the item’s name, like “Edit John Smith’s information,” not “Edit Dependent 1’s information.”
+
+
+#### Why zero-based in the URL?
+- **Matches data structures:** The system stores form data as arrays. Items are numbered 0, 1, 2….
+- **Reduces off-by-one bugs:** Routes, validators, and UI state all point to the same index.
+- **Easier deep links and error recovery:** a validation error can link directly to /…/2/… without translation.
+
+#### URL structure examples
+
+##### Collecting multiple employers
+```
+/app-name/employers/0/name-and-address  # First employer
+/app-name/employers/0/dates
+/app-name/employers/1/name-and-address  # Second employer
+/app-name/employers/1/dates
+```
+
+##### Collecting multiple service periods
+
+```
+/app-name/service-history/0/branch-rank      # First service period
+/app-name/service-history/0/start-end-date
+/app-name/service-history/1/branch-rank      # Second service period
+/app-name/service-history/1/start-end-date
+```
+
+#### Do’s and don’ts
+
+##### Do
+- Keep the item's position in the list (not a query string) so each step is a clean, shareable route.
+- Keep question paths stable (/name, /start-date) across items to enable reuse of the same screen for each index.
+- Use this pattern anytime you “loop” a single-response screen across items.
+
+##### Don’t
+- Don’t encode the item's position in the question path (e.g., avoid `dependent-two-name`).
+- Don’t renumber the item's position in the URL when items are re-ordered in the UI; treat the number as the item’s position in the current array at render time.
+- Don't refer to the arrays as `<array-name> 1` in visual presentation.
+
+##### Edge cases and tips
+- **Insertions and deletions:** If a user deletes item 1, the remaining items will shift (2 becomes 1). That’s expected—routes always reflect the current state of the array. If you need stable IDs for analytics, store a separate per-item UUID in data. Keep the URL index for navigation.
+- **Validation links:** Error summaries should link straight to the indexed route (for example, the second dependent’s name error links to /…/dependent/1/name), which takes users to the correct screen for that item in the loop.
+- **Accessibility notes:** Because every looped screen is a normal single-response screen, follow the standard single-response accessibility guidance (clear page heading, field labeling, focus management). The pattern simply repeats those screens for each array index.
+
 
 ### Accessibility considerations
 
