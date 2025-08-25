@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Tabs
-intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between."
+intro-text: "Tabs organize related content into separate, focused panels that users can easily switch between."
 github-title: va-tabs
 status: use-with-caution-available
 figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
@@ -40,12 +40,13 @@ anchors:
 * **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display 1 chunk of content at a time.
 * **Hierarchical content.** If your content is hierarchical or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page.
 * **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/sidenav) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
+* **Search results and filtering.** For displaying search results with different categories or filters, use the established [Search results]({{ site.baseurl }}/templates/search-results) pattern instead.
 
 ### How this component works
 
 #### Tab overflow
 
-**The tab component works best when 3 or fewer tabs are needed.** If the tabs overflow on small screens, a scrollbar is used so that all tabs are still navigable. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When a scrollbar is used, a shadow will show to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px.
+**The tab component works best when you need 3 or fewer tabs.** If the tabs overflow on small screens, the component uses a scrollbar so that users can still navigate to all tabs. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When the component uses a scrollbar, a shadow appears to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px.
 
 #### Tab panel
 
@@ -94,6 +95,14 @@ See the [tabs component discussion](https://github.com/department-of-veterans-af
 
 * Keep tab labels succinct and use plain language. Labels should be 1 to 2 words.
 * Use sentence case for tab labels.
+
+### Use headers in tab panels
+
+* **Start tab panel content with a heading.** Each tab panel should begin with a heading that describes the panel's content.
+* **Maintain proper heading hierarchy.** Ensure headings within tab panels follow logical order (`h2`, `h3`, `h4`, etc.) to maintain document structure for screen readers and assistive technology.
+* **Keep headings consistent across panels.** Use similar heading patterns and levels across all tab panels for a cohesive experience.
+* **Consider the tab label and panel heading relationship.** The panel heading should relate to and expand upon the tab label, providing clear context for the content that follows.
+* **Consider when headers may not be necessary.** In some cases, a heading may not be needed if the tab panel contains a single, self-explanatory component (like a data table with a clear caption) or when the tab label fully describes the content and no additional context is needed.
 
 ## Accessibility considerations
 

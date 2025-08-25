@@ -5,7 +5,7 @@ has-parent: /templates/forms/
 title: Confirmation
 status: use-deployed
 intro-text: "The form confirmation page gives users information about what they can expect after they submit an online application. This page also provides users with a summary of the benefit they applied for, a confirmation number, and the date they submitted their claim."
-figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?node-id=2988-66786&t=1fh2gr46l2FEHw8n-1
+figma-link: https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2601-126236&t=trebutugV9jwUgJ1-1
 research-title: "Help users to stay informed of app status"
 anchors:
   - anchor: About

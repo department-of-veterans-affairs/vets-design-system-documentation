@@ -39,7 +39,7 @@ anchors:
 
 ### How this pattern works
 
-1. **Alert the user if they do not meet the eligibility requirements for the benefit or service and provide an exit.** On step 2 of the application process above the user is warned that based on their responses they may not be eligible. There is an option to exit the application, finish the application later, or to continue. (NOTE: The green "Exit application" button is deprecated and would today be [secondary button]({{ site.baseurl }}/components//button/#secondary-button) or [action link]({{ site.baseurl }}/components/link/action)).
+1. **Alert the user if they do not meet the eligibility requirements for the benefit or service and provide an exit.** On step 2 of the application process above the user is warned that based on their responses they may not be eligible. There is an option to exit the application, finish the application later, or to continue. (NOTE: The green "Exit application" button is deprecated and would today be [secondary button]({{ site.baseurl }}/components/button/#default---secondary) or [action link]({{ site.baseurl }}/components/link/action)).
 2. **Provide a clear summary of eligibility requirements met and not met.** This provides the user a clear account of which eligibility requirements they have, and have not, met so that they can adjust their answers if they believe the system's assertion to be incorrect, or continue with their application with the knowledge that they may not be eligible. There is no need to continuously repeat this summary or message and doing so may prove tedious to users who do want to continue.
 
 ### Components used in this pattern
