@@ -19,7 +19,7 @@ The grid consists of three distinct pieces:
 - **Row**: Enables the flexbox layout.
 - **Columns**: By default, columns will automatically adjust to evenly fit into a row. Using the responsive prefixes, they can collapse into different lockups at different breakpoints in order provide flexibility in the design across different viewports. There are a maximum of 12 columns in each row.
 
-Unlike the [float grid](float-grid), you will need to use the [padding utility](../utilities/padding) and/or the [margin utility](../utilities/margins) in to provide column spacing. This is intentional and it allows the grid to accept more design options than the standard float grid.
+Unlike the float grid, you will need to use the [padding utility](../utilities/padding) and/or the [margin utility](../utilities/margins) in to provide column spacing. This is intentional and it allows the grid to accept more design options than the standard float grid.
 
 ## Auto-sizing columns
 

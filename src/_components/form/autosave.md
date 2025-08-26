@@ -46,7 +46,7 @@ anchors:
 
 ### Placement
 
-* This component appears after the [Button pair]({{ site.baseurl }}/components/button/button-pair) on a form page and before the link to "Finish this application later" on the authenticated variation of the [Form - Step page]({{ site.baseurl }}/templates/forms/#step-form-pages).
+* This component appears after the [Button pair]({{ site.baseurl }}/components/button/button-group) on the authenticated variation of the [Form - Step page]({{ site.baseurl }}/templates/forms/#step-form-pages).
 
 ## Code usage
 
@@ -55,7 +55,7 @@ Code for this component is shown in the [examples](#examples).
 ## Content considerations
 
 * Message content can be found in the example above or in [engagement messages]({{ site.baseurl }}/content-style-guide/error-messages/engagement).
-* This message is to be accompanied by text that reads: "We'll save your application on every change." and appears just below the [Progress bar - Segmented]({{ site.baseurl }}/components/progress-bar-segmented) component on [Form - Step pages]({{ site.baseurl }}/templates/forms/#step-form-pages).
+* This message is to be accompanied by text that reads: "We'll save your application on every change." and appears just below the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component on [Form - Step pages]({{ site.baseurl }}/templates/forms/#step-form-pages).
 
 ## Accessibility considerations
 

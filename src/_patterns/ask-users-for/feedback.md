@@ -90,7 +90,7 @@ The Medallia Feedback button sits at the bottom of the main content within the c
 * Date last updated
 * Back to top button
 
-These three elements are not present on every page, and multiple variations can be found. For example, the [articles search results page]([https://www.va.gov/resources/va-account-and-profile/) has the back to top and feedback buttons, but no 'date last updated' text. The [signing in to VA.gov page](https://www.va.gov/resources/signing-in-to-vagov/) has all three elements.
+These three elements are not present on every page, and multiple variations can be found. For example, the [articles search results page](https://www.va.gov/resources/va-account-and-profile/) has the back to top and feedback buttons, but no 'date last updated' text. The [signing in to VA.gov page](https://www.va.gov/resources/signing-in-to-vagov/) has all three elements.
 
 To better establish user expectations of location, appropriate space will be provided for an element regardless of it's presence or absence. This creates a cohesive pattern that does not shift in size or location, even if one or two of the elements are not present on a particular page. The width of the pattern is also dynamically determined by the width of the main content container.
 
@@ -117,7 +117,7 @@ The previous location of the Medallia Feedback button was sticky on the right si
 
 #### Homepage redesign study
 
-In the second round of usability testing for the new VA.gov homepage, 2 participants using ZoomText screen magification missed the feedback button. This is likely due to screen magnification showing only part of the screen at any given time. As there’s no indication that the feedback exists on the bottom right side of the page, it may be missed by magnification users who scan the page left to right with a limited view. An example is included in the report, "[How disabled Veterans provide accessibility feedback]([url](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/teams/shared-support/accessibility/research/2022-10-a11y-feedback/research-findings.md#key-insights--3))."
+In the second round of usability testing for the new VA.gov homepage, 2 participants using ZoomText screen magification missed the feedback button. This is likely due to screen magnification showing only part of the screen at any given time. As there’s no indication that the feedback exists on the bottom right side of the page, it may be missed by magnification users who scan the page left to right with a limited view. An example is included in the report, "[How disabled Veterans provide accessibility feedback](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/teams/_archive/shared-support/accessibility/research/2022-10-a11y-feedback/research-findings.mdd#key-insights--3)."
 
 #### Foresee to Medallia usability studies
 

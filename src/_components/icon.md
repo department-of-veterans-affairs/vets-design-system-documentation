@@ -230,7 +230,7 @@ Exceptions to this are a close button on a modal or an alert. However, it is adv
   <li>
     <strong>Submit Your Icon</strong>: Once you've found a suitable icon for VADS, submit it using the following link:
     <p>
-      <va-action-link href="{{ site.request_addition_link }}">Request a new addition to the Design System</va-action-link>
+      <va-link-action href="{{ site.request_addition_link }}">Request a new addition to the Design System</va-link-action>
     </p>
   </li>
 </ol>

@@ -1,64 +1,125 @@
 ---
 layout: component
 title: Tabs
-intro-text: "Tabs organize related groups of content within the same hierarchy into parallel views that a user can easily navigate between." 
+intro-text: "Tabs organize related content into separate, focused panels that users can easily switch between."
 github-title: va-tabs
 status: use-with-caution-available
 web: true
 mobile-app: false
+=======
+figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
 anchors:
   - anchor: Examples
   - anchor: Usage
+  - anchor: Behavior
   - anchor: Content considerations
   - anchor: Accessibility considerations
   - anchor: Related
   - anchor: Component checklist
 ---
-
+  
 ## Examples
 
-### GI Bill Comparison Tool
+### Web
 
-![GI bill comparison tool tabs]({{site.baseurl}}/images/tabs-gibct.png)
+#### Default
 
-### Facility locator mobile view
+ {% include storybook-preview.html story="components-va-tabs--default" link_text="va-tabs--default" %} 
 
-![facility locator mobile tabs]({{site.baseurl}}/images/tabs-fac-loc-sm.png)
+#### With second tab selected
+
+{% include storybook-preview.html story="components-va-tabs--with-second-tab-selected" link_text="va-tabs--with-second-tab-selected" %} 
 
 ## Usage
 
-Because tabs stack horizontally or wrap to a second line, they're not an optimal design solution for mobile viewports. In some cases, using 2 tabs (only) to present a set of complementary options is acceptable.
-
 ### When to use tabs
 
-* **Secondary navigation within an application.** Tabs allow users to navigate to sections of an application.
-* **Related content within an application.** To group related content that the user doesn't need to read at the same time.
+* **Organize related content sections.** Use tabs when you have multiple panels of content that are related but don't need to be viewed simultaneously. 
+* **Reduce cognitive load.** Use tabs to present information into manageable sections, allowing users to focus on one section at a time.
 
 ### When to consider something else
 
-* **Changing views of the same data.** To allow the user to easily toggle between a binary set of options to see different views of the same data, use a [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented) component. For example, for switching between viewing a list or a map.
-* **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display one chunk of content at a time.
-* **Hierarchical content.** If your content is hierarchical and/or sequential, consider using a single page of well-formatted headings and body text.
+* **Changing views of the same data.** To let users easily toggle between a binary set of options to see different views of the same data, use a [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented) component. For example, switching between viewing a list or a map.
+* **Chunking content.** Consider using an [Accordion]({{ site.baseurl }}/components/accordion) to display 1 chunk of content at a time.
+* **Hierarchical content.** If your content is hierarchical or sequential, consider using a single page of well-formatted headings and body text. Use the [On this page]({{ site.baseurl }}/components/on-this-page) component to navigate within a single page.
+* **Moving up or down in navigational hierarchy.** Use the [Side Navigation]({{ site.baseurl }}/components/sidenav) component to move up or down in hierarchy or when the content has over 4 or 5 sections.
+* **Search results and filtering.** For displaying search results with different categories or filters, use the established [Search results]({{ site.baseurl }}/templates/search-results) pattern instead.
 
-### Behavior
+### How this component works
 
-* Allow the user to click anywhere on a tab to select it.
+#### Tab overflow
+
+**The tab component works best when you need 3 or fewer tabs.** If the tabs overflow on small screens, the component uses a scrollbar so that users can still navigate to all tabs. This isn't ideal because horizontal scrolling makes tabs hard to find and scrollbar behavior isn't consistent across browsers. When the component uses a scrollbar, a shadow appears to indicate there are more tabs. The scrollbar should only appear at high zoom levels or when the screen is smaller than 320px.
+
+#### Tab panel
+
+Tab panels are used as a container for the content associated with the selected tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the tabs component. If a different spacing is required the default spacing can be overridden.
+
+{% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-ClaimStatus-Files.png" class="x2" %}
+
+## Behavior
+
 * Make sure the selected tab is highlighted and visually connected to the content below it.
-* Never let a row of tabs wrap to a second line.
-* Keep the interaction design simple. Document selected and not selected tab styles along with the focus state for each style. Hover and active states are optional for tabs.
+* The first tab should be used for the default view.
+
+### Placement
+
+* The tabs component should appear in a consistent location across desktop and mobile views.
+* Place tabs below the page title and subtitle.
+* Information relevant to all tabs can be placed above the tabs.
+* Tabs can be used with the [Side navigation]({{ site.baseurl }}/components/sidenav) component. Don't add tab links to the side navigation, they should exist separately.
+* Don't use the [On this page]({{ site.baseurl }}/components/on-this-page) component with the tabs component.
+
+#### Desktop view
+
+{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" class="x2" %}
+
+#### Placement guidance
+<ol>
+<li>Page title and subtitle</li>
+<li>Relevant content to all tabs</li>
+<li>Tabs component (full width of content area)</li>
+<li>Tab panel</li>
+</ol>
+
+#### Mobile view
+
+<figure class="site-component-example">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Files.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
+  <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool.</figcaption>
+</figure>
+
+### Instances of tabs in production
+
+See the [tabs component discussion](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443) for more information on tabs used in production.
 
 ## Content considerations
 
 * Keep tab labels succinct and use plain language. Labels should be 1 to 2 words.
 * Use sentence case for tab labels.
 
+### Use headers in tab panels
+
+* **Start tab panel content with a heading.** Each tab panel should begin with a heading that describes the panel's content.
+* **Maintain proper heading hierarchy.** Ensure headings within tab panels follow logical order (`h2`, `h3`, `h4`, etc.) to maintain document structure for screen readers and assistive technology.
+* **Keep headings consistent across panels.** Use similar heading patterns and levels across all tab panels for a cohesive experience.
+* **Consider the tab label and panel heading relationship.** The panel heading should relate to and expand upon the tab label, providing clear context for the content that follows.
+* **Consider when headers may not be necessary.** In some cases, a heading may not be needed if the tab panel contains a single, self-explanatory component (like a data table with a clear caption) or when the tab label fully describes the content and no additional context is needed.
+
 ## Accessibility considerations
 
-* Go to Mozilla's [ARIA: tab role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/tab_role) documentation for guidance.
+* **Use clear, descriptive tab labels.** Tab labels should help users understand the purpose and contents of each tab panel.  Avoid vague labels like “Tab 1” or “More”.
+* **Place Tabs inside the main content region.** Tabs should be located after the `h1` within the `<main>` content region.
+* **Don’t use Tabs for page-level navigation.** Tabs are not a substitute for primary or secondary navigation. For navigating across different pages, use [Side Navigation]({{ site.baseurl }}/components/sidenav).
+* **Keep focus on the selected tab after activation.** When a user activates a tab, focus should remain on the newly selected tab and not move into the tab panel. This helps keyboard and screen reader users stay oriented and easily navigate through the tab list. Users can choose to navigate into the panel content when they’re ready. Avoid auto-focusing inside the panel.
+* **Follow standard keyboard interaction patterns.** Refer to [W3C’s guidance for standard keyboard navigation for tabs](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/#keyboardinteraction).
 
 ## Related
 
 * [Accordion]({{ site.baseurl }}/components/accordion)
-* [Button - Group Segmented]({{ site.baseurl }}/components/button/button-group-segmented)
+* [Button - Segmented]({{ site.baseurl }}/components/button/button-segmented)
+* [Side navigation]({{ site.baseurl }}/components/sidenav)
+* [On this page]({{ site.baseurl }}/components/on-this-page)
 
 {% include _component-checklist.html component_name="va-tabs" %}

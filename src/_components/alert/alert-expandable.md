@@ -81,8 +81,6 @@ anchors:
 
 The alert was tested as part of a usability study with 9 participants. The alert was used to display copay charges referred to the Department of Treasury that needed to be resolved ASAP, so it was pertinent that the alert was immediately noticeable by Veterans.
 
-[View the component in the prototype here.](https://preview.uxpin.com/361636c369f65453b4880d1445911c4d9b869349#/pages/140005948/simulate/no-panels?mode=i)
-
 #### Findings
 - The alert was often the first thing Veterans noticed when arriving on the page
 - Some clicked on the alert to read more about the referred charge while others moved on to looking at other sections of the prototype
@@ -91,6 +89,6 @@ The alert was tested as part of a usability study with 9 participants. The alert
 ## Related
 
 * [Additional info]({{ site.baseurl }}/components/additional-info)
-* [Alert]({{ site.baseurl}}/components/alert/alert)
+* [Alert]({{ site.baseurl}}/components/alert)
 
 {% include _component-checklist.html component_name=page.web-component %}

@@ -172,8 +172,6 @@ anchors:
 
 {% include content/conditionally-revealed-fields.md %}
 
-### How it works
-
 #### Indeterminate checkbox
 
 **Parent checkbox behavior**:

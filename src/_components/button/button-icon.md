@@ -54,7 +54,7 @@ anchors:
 
 ## Requesting new instances
 
-The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/foundation/icons#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
+The 3 examples above are the only currently approved instances of this component. Use of icons in buttons of any type will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) and indicate that you would like to use it in Button - Icon or another button type.
 
 ## Content considerations
 
