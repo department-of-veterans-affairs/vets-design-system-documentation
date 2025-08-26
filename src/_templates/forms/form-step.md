@@ -39,7 +39,7 @@ There are two versions of the form step template:
 
 The authenticated form step template consists of:
 1. Breadcrumb
-2. Page title and subtitle
+2. Form title and subtitle
 3. Progress bar - segmented (includes step header)
 4. Saved as message with application ID
 5. Prefill alert
@@ -55,7 +55,7 @@ The authenticated form step template consists of:
 
 The unauthenticated form step template consists of:
 1. Breadcrumb
-2. Page title and subtitle
+2. Form title and subtitle
 3. Progress bar - segmented (includes step header)
 4. Form step content (includes page title)
 5. Button pair (Back/Continue)
@@ -66,17 +66,17 @@ The unauthenticated form step template consists of:
 ### Breadcrumb
 The breadcrumb will remain static across all form step pages for a single form. [Learn more about expected breadcrumb behavior in the design system](https://design.va.gov/components/breadcrumbs). We recommend that designers create a breadcrumb local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
 
-### Page title and subtitle
+### Form title and subtitle
 
-Use the same H1 page title and subtitle as the form introduction, review, and confirmation pages. [Review the form introduction template for page title and subtitle for more guidance and examples](https://design.va.gov/templates/forms/introduction#structure). We recommend that designers create a page title and subtitle local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
+Use the same `H1` form title and subtitle on all pages of the form including the introduction, review, and confirmation pages. [Review the form introduction template for form title and subtitle for more guidance and examples](https://design.va.gov/templates/forms/introduction#structure). We recommend that designers create a form title and subtitle local component in Figma to insert into the form step template rather than manually updating each form step template page individually.
 
 ### Progress bar & overall form step structure
 
-Use the [progress bar - segmented component](https://design.va.gov/templates/forms/introduction#structure) to organize form steps. 
+Use the [progress bar - segmented component](https://design.va.gov/templates/forms/introduction#structure) to organize form steps. The progress bar will be the `H2` for the form pages.
 
-The name for each step within the progress bar is the “step header.” The way you organize the form steps will also impact the “page title” (the H3 that begins the form content section), pattern, and content. A step within the progress bar could, but doesn't have to, include multiple pages. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
+The name for each step within the progress bar is the “step header.” The way you organize the form steps will also impact the “page title” (the `H3` that begins the form content section), pattern, and content. A step could, but doesn't have to, include multiple pages. Because of limitations on the progress bar UI, we recommend limiting all forms to 13 steps total.
 
-The step header should usually have different content than the page title. The step header will be the general type of information you're collecting (like “Your personal information”) and the page title will be more specific (like “Your name and date of birth”). 
+The step header (`H2`) should have different content than the page title (`H3`). The step header will be the general type of information you're collecting (like “Your personal information”) and the page title will be more specific (like “Your name and date of birth”).
 
 If your form contains conditionals, you may need multiple versions of the progress bar to cover all the possible paths (sometimes called user stories) that a user might take through a form. We recommend that designers create a progress bar local component in Figma for each possible path rather than manually updating each form step template page individually.
 
