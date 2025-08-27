@@ -1,16 +1,28 @@
-{% comment %} Platform support badges for components {% endcomment %}
+{% comment %} Platform support badge for components {% endcomment %}
 
-{% comment %} Check if component supports web browsers {% endcomment %}
+{% comment %} Determine platform availability {% endcomment %}
+{% assign has_web = false %}
+{% assign has_mobile = false %}
+
 {% if page.web == true or page.web == nil %}
-<span class="usa-label usa-label--web">
-  Web
-</span>
+  {% assign has_web = true %}
 {% endif %}
 
-{% comment %} Check if component supports mobile app {% endcomment %}
 {% if page.mobile-app == true %}
-<span class="usa-label usa-label--mobile">
-  <va-icon icon="phone_iphone" size="2"></va-icon>
+  {% assign has_mobile = true %}
+{% endif %}
+
+{% comment %} Display combined platform badge {% endcomment %}
+{% if has_web and has_mobile %}
+<span class="usa-label usa-label--platform">
+  Web, Mobile app
+</span>
+{% elsif has_web %}
+<span class="usa-label usa-label--platform">
+  Web
+</span>
+{% elsif has_mobile %}
+<span class="usa-label usa-label--platform">
   Mobile app
 </span>
 {% endif %}

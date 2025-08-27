@@ -136,6 +136,10 @@ main {
     @include badge-colors($color-primary);
   }
 
+  &.usa-label--platform {
+    @include badge-colors($color-green);
+  }
+
   &.component-label {
     @include badge-colors(#71767a);
   }

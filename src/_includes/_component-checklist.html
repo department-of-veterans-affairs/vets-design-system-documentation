@@ -1,8 +1,8 @@
 {% assign name = include.component_name %}
-{% assign mobile_name = name | replace: "va-", "va-mobile-" %}
+{% assign mobile_name = name | replace: "va-", "" %}
 {% assign components = site.data.component-checklist %}
 {% assign component = components | map: name %}
-{% assign mobile_component = components | map: mobile_name %}
+{% assign mobile_component = site.data.component-checklist.mobile-app | map: mobile_name %}
 {% assign definitions = components | map: "definitions" %}
 
 {% comment %} Check for platform configuration {% endcomment %}

@@ -192,8 +192,8 @@ permalink: /component-checklist-progress-visualizations/
 /* Responsive styles */
 @media (max-width: 768px) {
   .three-column-layout {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
   }
   
   .platform-grid {
@@ -202,17 +202,51 @@ permalink: /component-checklist-progress-visualizations/
   }
   
   .stat-box {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
   
   .table-style-container {
-    grid-template-columns: 2fr 2fr 2fr;
-    font-size: 0.875rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
   .header-cell,
   .table-cell {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.25rem;
+  }
+  
+  .header-cell {
+    text-align: center;
+  }
+  
+  .table-cell {
+    align-items: flex-start;
+    text-align: center;
+  }
+  
+  .table-cell[data-label="Section"] {
+    text-align: left;
+  }
+  
+  .status-indicator {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* Additional mobile breakpoint for very small screens */
+@media (max-width: 480px) {
+  .three-column-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+  
+  .table-style-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .header-cell,
+  .table-cell {
+    padding: 0.4rem 0.2rem;
   }
 }
 
@@ -343,32 +377,6 @@ permalink: /component-checklist-progress-visualizations/
   font-size: 0.875rem;
   font-weight: 600;
   color: #1b1b1b;
-}
-
-@media (max-width: 768px) {
-  .three-column-layout {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .platform-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .stat-box {
-    margin-bottom: 1rem;
-  }
-  
-  .table-style-container {
-    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
-    font-size: 0.875rem;
-  }
-  
-  .header-cell,
-  .table-cell {
-    padding: 0.5rem 0.75rem;
-  }
 }
 </style>
 
@@ -519,9 +527,9 @@ permalink: /component-checklist-progress-visualizations/
             </div>
           </div>
         </div>
-      </div>
+      </div>    
     </div>
-      <a href="#component-checklist">View component checklist details below</a>
+    <a href="#component-checklist">View component checklist details below</a>
   </div>
 </div>
 
