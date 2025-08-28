@@ -113,7 +113,7 @@ permalink: /component-checklist-progress-visualizations/
   /* border-radius: 8px; */
   overflow: hidden;
   /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
-  border: 1px solid #d6d7d9;
+  /* border: 1px solid #d6d7d9; */
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
 }
@@ -135,7 +135,7 @@ permalink: /component-checklist-progress-visualizations/
 }
 
 .header-cell {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   font-weight: 600;
   /* border-right: 1px solid #005a94; */
   display: flex;
@@ -143,7 +143,6 @@ permalink: /component-checklist-progress-visualizations/
   box-sizing: border-box;
   /* background: #0071bb; */
   /* color: white; */
-  border-bottom: 1px solid #d6d7d9;
 }
 
 .header-cell:last-child {
@@ -158,21 +157,19 @@ permalink: /component-checklist-progress-visualizations/
   display: contents;
 }
 
-.table-row:nth-child(even) .table-cell {
-  /* background: #f8f9fa; */
-}
-
 .table-cell {
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0;
   display: flex;
   align-items: center;
   /* border-right: 1px solid #e9ecef; */
-  border-bottom: 1px solid #e9ecef;
   box-sizing: border-box;
+}
+.table-cell:first-child {
+  padding-left: 0;
 }
 
 .table-cell:last-child {
-  border-right: none;
+  padding-right: 0;
 }
 
 .section-title {
@@ -252,7 +249,7 @@ permalink: /component-checklist-progress-visualizations/
 
 .three-column-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: start;
   margin: 2rem 0;
@@ -379,11 +376,21 @@ permalink: /component-checklist-progress-visualizations/
   color: #1b1b1b;
 }
 </style>
+<!-- Navigation Section -->
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 1.5rem; margin-bottom: 2rem; border-radius: 4px;">
+    <h2 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.25rem;">Component Checklist Layout Options</h2>
 
-
-
-<h1>Component Status</h1>
-
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <div><a href="/component-checklist-layout-option-1/">Option 1: Component Checklist - Accordion Layout</a></div>
+    <div><a href="/component-checklist-layout-option-2/">Option 2: Component Checklist - Static Layout</a></div>
+    <div><a href="/component-checklist/">Option 3: Component Checklist - Simple Checklist</a></div>
+    <h5 style="margin: 0;">Command center option at the top of the page</h5>
+    <p style="margin: 0;">Combines the component checklist, tags, and resources into a single section</p>
+    <div><a href="/component-checklist-progress-visualizations/">Component Command Center</a></div>
+  </div>
+</div>
+<h1>Component Command Center</h1>
+<p>Currently we have alot of links and tags at the top of the page. This would consolidate the information at the top into a single card and also show the component checklist as well. So if this was on a component page you wouldn't see any more tags or Resource links on the page. I also have an idea of connecting the count of issues and research so that can understand more about what is going on with the component. </p>
 <div class="three-column-layout">
   <div class="column combined-column">
     <div class="stat-box combined-card">
@@ -405,8 +412,8 @@ permalink: /component-checklist-progress-visualizations/
           <span class="overview-value">English, Spanish, Tagalog</span>
         </div>
         <div class="overview-item">
-          <span class="overview-label">Figma</span>
-          <span class="overview-value"><a>Web</a>, <a>Mobile</a></span>
+          <span class="overview-label">Figma file</span>
+          <span class="overview-value"><a>Web</a>, <a>Mobile app</a></span>
         </div>
         <div class="overview-item">
           <span class="overview-label">Open issues</span>
@@ -422,14 +429,14 @@ permalink: /component-checklist-progress-visualizations/
   </div>
   
   <div class="column table-column">
-    <div class="table-style-container">
-      <h2 class="sr-only">Component Status Overview</h2>
-      
-      <div class="table-header">
-        <div class="header-cell">Section</div>
-        <div class="header-cell">Web</div>
-        <div class="header-cell">Mobile app</div>
-      </div>
+    <div class="stat-box">
+      <h3 class="stat-header">Component checklist</h3>
+      <div class="table-style-container">
+        <div class="table-header">
+          <div class="header-cell"></div>
+          <div class="header-cell">Web</div>
+          <div class="header-cell">Mobile app</div>
+        </div>
       
       <div class="table-body">
         <div class="table-row">
@@ -437,22 +444,16 @@ permalink: /component-checklist-progress-visualizations/
             <p class="section-title">Maturity</p>
           </div>
           <div class="table-cell" data-label="Web Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
-                Ready
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">4/4 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
           </div>
           <div class="table-cell" data-label="Mobile Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
-                Ready
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">4/4 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
           </div>
         </div>
         
@@ -461,22 +462,16 @@ permalink: /component-checklist-progress-visualizations/
             <p class="section-title">Accessibility</p>
           </div>
           <div class="table-cell" data-label="Web Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
-                Not complete
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">0/1 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
+              Not complete
+            </span>
           </div>
           <div class="table-cell" data-label="Mobile Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
-                Not complete
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">0/1 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
+              Not complete
+            </span>
           </div>
         </div>
         
@@ -485,22 +480,16 @@ permalink: /component-checklist-progress-visualizations/
             <p class="section-title">Code Assets</p>
           </div>
           <div class="table-cell" data-label="Web Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
-                Ready
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">3/3 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
           </div>
           <div class="table-cell" data-label="Mobile Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
-                Ready
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">3/3 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
           </div>
         </div>
         
@@ -509,25 +498,20 @@ permalink: /component-checklist-progress-visualizations/
             <p class="section-title">Visual Assets</p>
           </div>
           <div class="table-cell" data-label="Web Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
-                Ready
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">3/3 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
           </div>
           <div class="table-cell" data-label="Mobile Platform">
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-              <span class="status-indicator">
-                <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
-                Ready
-              </span>
-              <span style="font-size: 0.875rem; color: #565c65;">2/3 Complete</span>
-            </div>
+            <span class="status-indicator">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
           </div>
         </div>
       </div>    
+    </div>
     </div>
     <a href="#component-checklist">View component checklist details below</a>
   </div>

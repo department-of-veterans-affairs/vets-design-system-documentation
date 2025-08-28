@@ -8,20 +8,20 @@ permalink: /component-checklist-layout-option-2/
     /* Component checklist specific styles */
     .checklist-section {
         margin-bottom: 1.5rem;
+        background: #fff;
+        border: 1px solid #606060;
+        padding: 1rem 1.5rem;
     }
 
-    /* .section-header {
-        border-bottom: 2px solid #005ea2;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1.5rem;
-    } */
-/* 
-    .section-header h2 {
+    .section-header {
+        /* border-bottom: 2px solid #005ea2; */
+        /* padding-bottom: 0.5rem; */
+        margin: .5rem 0;
+    }
+
+    .section-header h3 {
         margin: 0;
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #1b1b1b;
-    } */
+    }
 
     .checklist-item {
         padding: 0.75rem .25rem;
@@ -34,7 +34,7 @@ permalink: /component-checklist-layout-option-2/
     }
 
     .checklist-item:last-child {
-        border-bottom: 1px solid #dfe1e2;
+        border-bottom: none
     }
 
     .item-content {
@@ -51,15 +51,15 @@ permalink: /component-checklist-layout-option-2/
     }
 
     .item-content p {
-        /* margin: 0; */
-        font-size: 0.9rem;
+        margin: 0;
+        /* font-size: 0.9rem; */
         /* color: #565c65; */
-        display: inline;
+        /* display: inline; */
         /* margin-left: 0.5rem; */
     }
 
     .item-content p::before {
-        content: "— ";
+        /* content: "— "; */
         /* color: #9ca3af; */
     }
 
@@ -77,7 +77,7 @@ permalink: /component-checklist-layout-option-2/
         align-items: center;
         gap: 0.5rem;
         font-size: 0.875rem;
-        font-weight: 600;
+        /* font-weight: 600; */
         min-width: 100px;
     }
 
@@ -119,8 +119,8 @@ permalink: /component-checklist-layout-option-2/
     }
 
     .checklist-summary {
-        /* background: #f8f9fa; */
-        border: 1px solid #dfe1e2;
+        background: #fff;
+        border: 1px solid #606060;
         /* border-radius: 4px; */
         padding: 1rem 1.5rem;
         margin-bottom: 2rem;
@@ -213,9 +213,24 @@ permalink: /component-checklist-layout-option-2/
         }
     }
 </style>
+<!-- Navigation Section -->
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 1.5rem; margin-bottom: 2rem; border-radius: 4px;">
+    <h2 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.25rem;">Component Checklist Layout Options</h2>
 
-<h1>Component Checklist</h1>
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <div><a href="/component-checklist-layout-option-1/">Option 1: Component Checklist - Accordion Layout</a></div>
+    <div><a href="/component-checklist-layout-option-2/">Option 2: Component Checklist - Static Layout</a></div>
+    <div><a href="/component-checklist/">Option 3: Component Checklist - Simple Checklist</a></div>
+    <h5 style="margin: 0;">Command center option at the top of the page</h5>
+    <p style="margin: 0;">Combines the component checklist, tags, and resources into a single section</p>
+    <div><a href="/component-checklist-progress-visualizations/">Component Command Center</a></div>
+  </div>
+</div>
+<h1>Option 2: Component Checklist - Static Layout</h1>
+<p>This option takes the component checklist out of the accordion so it is static and possible easier to understand what items are complete and which items are still left.</p>
 
+<h2>Component checklist</h2>
+<br>
 <div class="checklist-summary">
     <h3>Component Completion Status</h3>
     <div class="summary-stats">

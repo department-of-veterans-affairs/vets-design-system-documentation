@@ -1,0 +1,269 @@
+---
+layout: default
+title: "Component Overview"
+permalink: /component-overview/
+---
+
+<style>
+.visualization-card {
+  background: white;
+  border: 1px solid #dee2e6;
+  /* border-radius: 8px; */
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.visualization-card h3 {
+  margin-top: 0;
+  /* color: #0071bb; */
+  /* border-bottom: 2px solid #e9ecef; */
+  padding-bottom: 0.75rem;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.status-card {
+  /* background: #f8f9fa; */
+  border: 1px solid #dee2e6;
+  /* border-radius: 6px; */
+  padding: 1rem;
+  position: relative;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.completion-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.completion-complete {
+  background: #d4edda;
+  color: #155724;
+}
+
+.completion-partial {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.completion-none {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.platform-complete {
+  background: #d4edda;
+  color: #155724;
+}
+
+.platform-partial {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.platform-needs-work {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.three-column-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.combined-column {
+  grid-column: 1;
+}
+
+.stat-box {
+  background: white;
+  border: 1px solid #d6d7d9;
+  /* border-radius: 4px; */
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: none;
+  /* margin-bottom: 1rem; */
+}
+
+.stat-header {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  /* color: #0071bb; */
+  display: block;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 1rem;
+  /* color: #565c65; */
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.stat-sublabel {
+  font-size: 0.875rem;
+  /* color: #565c65; */
+  margin-top: 0.25rem;
+}
+
+.overview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.overview-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.overview-item:last-child {
+  border-bottom: none;
+}
+
+.overview-label {
+  font-size: 0.875rem;
+  color: #565c65;
+  font-weight: 500;
+}
+
+.overview-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .overview-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .status-indicator {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* Additional mobile breakpoint for very small screens */
+@media (max-width: 480px) {
+  .three-column-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+}
+</style>
+<!-- Navigation Section -->
+<div style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 1.5rem; margin-bottom: 2rem; border-radius: 4px;">
+    <h2 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.25rem;">Component Checklist Layout Options</h2>
+
+  <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+    <div><a href="/component-checklist-layout-option-1/">Option 1: Component Checklist - Accordion Layout</a></div>
+    <div><a href="/component-checklist-layout-option-2/">Option 2: Component Checklist - Static Layout</a></div>
+    <div><a href="/component-checklist/">Option 3: Component Checklist - Simple Checklist</a></div>
+    <h5 style="margin: 0;">Command center option at the top of the page</h5>
+    <p style="margin: 0;">Combines the component checklist, tags, and resources into a single section</p>
+    <div><a href="/component-checklist-progress-visualizations/">Component Command Center</a></div>
+  </div>
+</div>
+<h1>Component Command Center</h1>
+
+<div class="three-column-layout">
+  <div class="column combined-column">
+    <div class="stat-box combined-card">
+      <h3 class="stat-header">Component overview</h3>
+      <div class="overview-list">
+        <div class="overview-item">
+          <span class="overview-label"><a href="/components/maturity-level">Maturity level</a></span>
+          <span class="overview-value status-indicator">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Use: deployed
+          </span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Platforms</span>
+          <span class="overview-value">Web, Mobile app</span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Translations</span>
+          <span class="overview-value">English, Spanish, Tagalog</span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Figma file</span>
+          <span class="overview-value"><a>Web</a>, <a>Mobile app</a></span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Open issues</span>
+          <span class="overview-value"><a>7 issues</a></span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Research completed</span>
+          <span class="overview-value"><a>8 findings</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
