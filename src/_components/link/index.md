@@ -200,6 +200,7 @@ Refer to the [Content Style Guide on Links]({{ site.baseurl }}/content-style-gui
 ## Accessibility considerations
 
 * **Material honesty.** Do not style a link to look or behave like a button ([material honesty](https://alistapart.com/article/material-honesty-on-the-web/)).
+* **Screen magnification.** To ensure links are sized properly for screen magnification or browser zoomed-in users, wrap `<va-link>` in the appropriate semantic tag like `<p>`. `<va-link>` will not resize if it is wrapped in a `<div>`.
 * **Keyboard navigation.** The user must be able to navigate to links using the Tab key and activate links using the Enter key.
 * **Purpose and target.** Link text that doesn't indicate a clear purpose or destination makes it harder for everyone--especially screen reader users--to understand where they're getting routed off to.
 * **External links must indicate that they are external.** Follow the methods detailed in [linking to external sites]({{ site.baseurl }}/content-style-guide/links#linking-to-external-sites).
