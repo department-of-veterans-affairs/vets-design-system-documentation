@@ -7,6 +7,8 @@ github-title: va-link-collection
 intro-text: "Collections of links that allow users to navigate to related content within and outside of the current content section."
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10942&mode=design&t=nYOotVcwdpiMCL5C-1
 status: use-deployed
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

@@ -5,6 +5,8 @@ intro-text: "Additional info makes content easier to scan as it hides informatio
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1350%3A22760&mode=design&t=TiJHClaf3VQ6wU6B-1
 uswds-v3: default
 web-component: va-additional-info
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

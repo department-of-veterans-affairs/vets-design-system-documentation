@@ -8,6 +8,8 @@ intro-text: The minimal footer can be used when navigating away would prevent th
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=538-7198&mode=design&t=kPk3dlhnHSGw5X0f-0
 status: use-with-caution-available
 web-component: va-minimal-footer
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

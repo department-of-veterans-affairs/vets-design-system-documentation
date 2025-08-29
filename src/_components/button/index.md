@@ -12,6 +12,8 @@ sub-pages:
   - sub-page: Button - Icon
 uswds-v3: primary
 web-component: va-button
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -52,7 +54,7 @@ anchors:
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--loading" link_text="va-button--loading" %}
 
-### Mobile
+### Mobile app
 
 #### Base - Primary
 
