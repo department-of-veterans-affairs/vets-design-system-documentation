@@ -78,12 +78,12 @@ anchors:
 
 #### When to use a button
 
-* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons]({{ site.baseurl }}/foundation/icons).
+* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#choose-the-right-element-buttons-vs-links).
 * **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window.
 
 #### When to consider something else
 
-* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [links vs. buttons]({{ site.baseurl }}/components/link/#choose-the-right-element-buttons-vs-links).
+* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [links vs. buttons](#choose-the-right-element-buttons-vs-links).
 * **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/link/#choose-the-right-element-buttons-vs-links).
 
 #### Behavior
