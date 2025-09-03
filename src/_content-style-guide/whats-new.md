@@ -52,14 +52,14 @@ Added an exception to time zone formatting for automated time stamps:
 
 -	Changed the page title to **Bulleted and numbered lists**.
 -	Added a new section on links in lists:<br>
-> **Links in lists**<p></p>
+> **Links in lists**<br>
     •	List items can be links in certain situations. But we don’t want to overwhelm people with a long list of links, if possible.<br>
     •	Not all items in a list need to be a link. It’s okay to have only 1 or 2 items in a list linked.<br>
     •	If every item in a list is a link, keep the list short (less than 7 items). Every link should go to a different location—don’t link to the same page multiple times in the list.<br>
     •	When a list item is a link, the entire list item must be part of the link. Don’t link just 1 or 2 words.
 
 -	Added guidance around when to use conjunctions:<br>
-> **Example of bulleted list with conjunctions**<p></p>
+> **Example of bulleted list with conjunctions**<br>
     For complex eligibility criteria, we use the conjunctions “and” or “or” at the end of each individual requirement in the list to help make the relationship between the requirements clear. In these cases, use a comma before the conjunction and bold the “**and**” or “**or**” at the end of each bullet point. Always separate out lists of “**and**” and “**or**” requirements.
 
 -	We also revised the examples and made edits to the current guidance to fit our style, but these changes don’t impact the guidance itself.
@@ -177,17 +177,25 @@ Added mobile app capitalization info/exceptions: interface buttons are sentence 
 
 -	Added the "MFA" acronym to "multifactor authentication"
 -	Updated these existing entries:
+
 > **condition vs. disability:** Added: For non-Veterans, like beneficiaries and dependents, we use “disability” (or “disabled” depending on the context) to describe an illness or injury that affects your mind or body. Default to people-first language in general content that describes individuals with a disability. For example, “Was this trust created for a Veteran’s child who was seriously disabled before age 18?”<br>
-[Learn more in the Health content section](https://design.va.gov/content-style-guide/health-content/)<p></p>
-**disability rating:** Specifying this is for Veterans only
+[Learn more in the Health content section](https://design.va.gov/content-style-guide/health-content/)
+
+> **disability rating:** Specifying this is for Veterans only
 
 - Added these new entries:
-> **and/or:** Don't use "and/or" in lists or body copy. Instead, restructure the content to list all options (for example, "your income and/or net worth" should be "your income, your net worth, or both").<p></p>
-**illegal:** Avoid using the term “illegal.” Instead, our preferred term is “not allowed by law.” Don’t use “illegal” to describe a person.<p></p>
-**please:** We’re moving away from using “please” in most cases. Avoid using “please” as a default and only if needed in a specific situation. This is a change that we’re working to address across our current components.<p></p>
-**power of attorney (POA):** "POA" is capitalized. Contact the subject matter experts or legal before using this term to make sure we're using it correctly.<p></p>
-**required by law and not allowed by law:** These are our preferred terms to describe a legal requirement or something that is against the law.<p></p>
-**user:** We should avoid the term “user” or “users” and instead use “Veterans” or “people” (when referring to a more general audience). “Users” can have a negative connotation and focuses only on how people are using our products. This is a change that we’re working to address across our current content.
+
+> **and/or:** Don't use "and/or" in lists or body copy. Instead, restructure the content to list all options (for example, "your income and/or net worth" should be "your income, your net worth, or both").
+
+> **illegal:** Avoid using the term “illegal.” Instead, our preferred term is “not allowed by law.” Don’t use “illegal” to describe a person.
+
+> **please:** We’re moving away from using “please” in most cases. Avoid using “please” as a default and only if needed in a specific situation. This is a change that we’re working to address across our current components.
+
+> **power of attorney (POA):** "POA" is capitalized. Contact the subject matter experts or legal before using this term to make sure we're using it correctly.
+
+> **required by law and not allowed by law:** These are our preferred terms to describe a legal requirement or something that is against the law.
+
+> **user:** We should avoid the term “user” or “users” and instead use “Veterans” or “people” (when referring to a more general audience). “Users” can have a negative connotation and focuses only on how people are using our products. This is a change that we’re working to address across our current content.
 
 - Removed the "Premium" entry
 
@@ -247,10 +255,12 @@ Added and revised entries:
 > **click:** Avoid using “click” and “click here.” Instead, follow these formats:<br>
     • Link the entire call to action where relevant, like this: [Find an accredited representative to help you](https://www.va.gov/ogc/apps/accreditation/index.asp)<br>
     • Use “select” to point someone to a specific place in the UI, like this: In your account dashboard, select **Profile**<br>
-    [Learn more in the Neutral language section of the style guide](https://design.va.gov/content-style-guide/neutral-language)<p></p>
-**delete:** Use the word “delete” instead of “remove.” For example, “Delete file.”<br>
-[Learn more in the Files pattern](https://design.va.gov/patterns/ask-users-for/files)<p></p>
-**upload:** Use the word “upload” instead of “add.” For example, “Upload file” and “Upload another file.”<br>
+    [Learn more in the Neutral language section of the style guide](https://design.va.gov/content-style-guide/neutral-language)
+
+> **delete:** Use the word “delete” instead of “remove.” For example, “Delete file.”<br>
+[Learn more in the Files pattern](https://design.va.gov/patterns/ask-users-for/files)
+
+> **upload:** Use the word “upload” instead of “add.” For example, “Upload file” and “Upload another file.”<br>
 [Learn more in the Files pattern](https://design.va.gov/patterns/ask-users-for/files)
 
 #### [Error messages - Feedback](https://design.va.gov/content-style-guide/error-messages/feedback) and [Writing for SEO](https://design.va.gov/content-style-guide/seo)
@@ -274,8 +284,8 @@ Added guidance on using punctuation with quotation marks:<br>
 
 Added guidance on when to bold punctuation:
 
-> **Punctuation with bold text**<p></p>
-**For punctuation following bold text:**<p></p>
+> **Punctuation with bold text**<br>
+**For punctuation following bold text:**<br>
 •	If the bold text is an introduction, the colon or period following it should also be bold (ex. the colon after “**Note:**” or the period after a list item introduction, “**Be concise.** Use as few words as possible…”).<br>
 •	If the bold text is a full sentence, bold any punctuation within or at the end of the sentence.<br>
 •	If the bold text is only part of a sentence, don’t bold punctuation that isn’t part of the bolded phrase (ex. “Select **Continue**, then answer the remaining questions).”
