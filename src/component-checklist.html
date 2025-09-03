@@ -422,3 +422,213 @@ permalink: /component-checklist/
    
   </div>
 </div>
+
+<h2>Layout Options</h2>
+<p>Here are different layout approaches for displaying component checklist information:</p>
+
+<h3>Vertical List Layout Option</h3>
+<p>This layout displays checklist items in a vertical list format for detailed scanning.</p>
+
+<div style="max-width: 100%; margin: 2rem 0;">
+  <div class="stat-box">
+    <h4 class="stat-header">Component checklist - Vertical Layout</h4>
+    
+    <!-- Vertical List Layout -->
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      
+      <!-- Platform Headers -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; padding: 0.75rem; background: #f8f9fa; border: 1px solid #dee2e6; font-weight: 600;">
+        <div>Section</div>
+        <div style="text-align: center;">Web</div>
+        <div style="text-align: center;">Mobile app</div>
+      </div>
+      
+      <!-- Maturity Row -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; padding: 0.75rem; border: 1px solid #e9ecef; align-items: center;">
+        <div>
+          <strong>Maturity</strong>
+          <div style="font-size: 0.875rem; color: #565c65; margin-top: 0.25rem;">Component usage and guidance</div>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Complete
+          </span>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Complete
+          </span>
+        </div>
+      </div>
+      
+      <!-- Accessibility Row -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; padding: 0.75rem; border: 1px solid #e9ecef; align-items: center;">
+        <div>
+          <strong>Accessibility</strong>
+          <div style="font-size: 0.875rem; color: #565c65; margin-top: 0.25rem;">Testing and compliance documentation</div>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
+            Not complete
+          </span>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
+            Not complete
+          </span>
+        </div>
+      </div>
+      
+      <!-- Code Assets Row -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; padding: 0.75rem; border: 1px solid #e9ecef; align-items: center;">
+        <div>
+          <strong>Code Assets</strong>
+          <div style="font-size: 0.875rem; color: #565c65; margin-top: 0.25rem;">Implementation and code examples</div>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Complete
+          </span>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Complete
+          </span>
+        </div>
+      </div>
+      
+      <!-- Visual Assets Row -->
+      <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1rem; padding: 0.75rem; border: 1px solid #e9ecef; align-items: center;">
+        <div>
+          <strong>Visual Assets</strong>
+          <div style="font-size: 0.875rem; color: #565c65; margin-top: 0.25rem;">Design files and specifications</div>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Complete
+          </span>
+        </div>
+        <div style="text-align: center;">
+          <span class="status-indicator" style="justify-content: center; font-size: 0.875rem;">
+            <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+            Complete
+          </span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<h3>Compact Single-Line Layout Option</h3>
+<p>This layout displays all sections in a single row per platform for maximum density and quick scanning.</p>
+
+<div style="max-width: 100%; margin: 2rem 0;">
+  <div class="stat-box">
+    <h4 class="stat-header">Component checklist - Compact Layout</h4>
+    
+    <!-- Compact Single-Line Layout -->
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+      
+      <!-- Web Platform Row -->
+      <div style="border: 1px solid #dee2e6; padding: 1.25rem; background: white;">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <h5 style="margin: 0; font-weight: 700; color: #005ea2; min-width: 60px;">Web</h5>
+          <div style="height: 1px; background: #dee2e6; flex: 1;"></div>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+          <!-- Maturity -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Maturity</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
+          </div>
+          
+          <!-- Accessibility -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Accessibility</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
+              Not complete
+            </span>
+          </div>
+          
+          <!-- Code Assets -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Code Assets</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
+          </div>
+          
+          <!-- Visual Assets -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Visual Assets</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile App Platform Row -->
+      <div style="border: 1px solid #dee2e6; padding: 1.25rem; background: white;">
+        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+          <h5 style="margin: 0; font-weight: 700; color: #005ea2; min-width: 60px;">Mobile app</h5>
+          <div style="height: 1px; background: #dee2e6; flex: 1;"></div>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+          <!-- Maturity -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Maturity</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
+          </div>
+          
+          <!-- Accessibility -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Accessibility</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="radio_button_unchecked" style="color: #dc3545;" aria-hidden="true"></va-icon>
+              Not complete
+            </span>
+          </div>
+          
+          <!-- Code Assets -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Code Assets</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
+          </div>
+          
+          <!-- Visual Assets -->
+          <div style="text-align: center; padding: 0.75rem; background: #f8f9fa; border: 1px solid #e9ecef;">
+            <div style="font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem; color: #1b1b1b;">Visual Assets</div>
+            <span class="status-indicator" style="justify-content: center; font-size: 0.8rem;">
+              <va-icon icon="check_circle" style="color: #20a463;" aria-hidden="true"></va-icon>
+              Complete
+            </span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
