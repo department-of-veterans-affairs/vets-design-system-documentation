@@ -5,6 +5,8 @@ intro-text: "The process list, also known as the subway map, is used in a static
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A169&mode=design&t=J32RmU6Fjbjuh9bD-1
 uswds-v3: default
 web-component: va-process-list
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

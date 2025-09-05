@@ -12,6 +12,8 @@ intro-text: The button icon variation acts as a tertiary button which has equal 
 status: use-with-caution-available
 uswds-v3: default
 web-component: va-button-icon
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

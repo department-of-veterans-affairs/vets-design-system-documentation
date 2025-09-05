@@ -6,6 +6,8 @@ intro-text: "A progress bar provides status as the system is taking an action on
 research-title: Progress bars
 figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1271%3A4002&mode=design&t=q1Wbhw4ZIogPDFEb-1
 web-component: va-progress-bar
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

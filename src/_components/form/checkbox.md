@@ -9,6 +9,8 @@ intro-text: "Allows users to select one or more items from a list. Checkboxes ar
 status: use-deployed
 uswds-v3: default
 web-component: va-checkbox-group
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples - Single
   - anchor: Examples - Group
@@ -62,7 +64,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox--internationalization" link_text="va-checkbox internationalization" %}
 
-### Mobile
+### Mobile app
 
 #### Default
 
@@ -132,7 +134,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
-### Mobile
+### Mobile app
 
 #### Default
 

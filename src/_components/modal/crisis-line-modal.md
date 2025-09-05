@@ -7,6 +7,8 @@ research-link: Modals
 figma-link: 
 intro-text: The Crisis Line Modal is found in the Header of VA.gov and provides contact information for the Veteran Crisis Line.
 web-component: va-crisis-line-modal
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
