@@ -2,8 +2,8 @@ name: Update Metrics Dashboard Data
 
 on:
   schedule:
-    # Run weekly on Sundays at 6 AM UTC (2 AM ET)
-    - cron: '0 6 * * 0'
+    # Run weekly on Fridays at 6 AM UTC (2 AM ET) - after Thursday night ds-components generation
+    - cron: '0 6 * * 5'
   workflow_dispatch:
     # Allow manual triggering for testing and on-demand updates
 
@@ -46,7 +46,67 @@ jobs:
         run: |
           mkdir -p src/assets/data/metrics
           mkdir -p src/assets/img/metrics
+          mkdir -p src/_data/metrics
       
+      - name: Fetch ds-components data from component-library
+        run: |
+          echo "Fetching latest ds-components CSV data..."
+          # Clone component-library repo to temporary directory
+          git clone --depth 1 https://github.com/department-of-veterans-affairs/component-library.git temp-component-library
+          
+          # Find the most recent ds-components CSV file by sorting by date in filename
+          OUTPUT_DIR="temp-component-library/packages/design-system-dashboard-cli/output"
+          
+          if [ ! -d "$OUTPUT_DIR" ]; then
+            echo "❌ Output directory not found: $OUTPUT_DIR"
+            echo "Available directories in packages/design-system-dashboard-cli:"
+            ls -la temp-component-library/packages/design-system-dashboard-cli/ || echo "CLI directory not found"
+            exit 1
+          fi
+          
+          echo "Looking for ds-components files in: $OUTPUT_DIR"
+          ls -la "$OUTPUT_DIR"/ds-components-*.csv || echo "No ds-components CSV files found"
+          
+          # Sort by filename (which contains date YYYY-MM-DD) to get the most recent
+          LATEST_CSV=$(ls -1 "$OUTPUT_DIR"/ds-components-*.csv 2>/dev/null | sort -r | head -1)
+          
+          if [ -n "$LATEST_CSV" ] && [ -f "$LATEST_CSV" ]; then
+            BASENAME=$(basename "$LATEST_CSV")
+            echo "Found latest CSV: $BASENAME"
+            
+            # Copy with original timestamp name 
+            cp "$LATEST_CSV" "src/_data/metrics/$BASENAME"
+            echo "✅ ds-components data copied as $BASENAME"
+            
+            # Also create a symlink/copy with consistent name for easier processing
+            cp "$LATEST_CSV" "src/_data/metrics/ds-components-latest.csv"
+            echo "✅ Also available as ds-components-latest.csv"
+            
+            # Show basic info about the file
+            echo "File size: $(du -h "src/_data/metrics/$BASENAME")"
+            echo "Number of lines: $(wc -l < "src/_data/metrics/$BASENAME")"
+            echo "Sample data (first 3 lines):"
+            head -3 "src/_data/metrics/$BASENAME"
+          else
+            echo "❌ No ds-components CSV files found"
+            echo "Available files in output directory:"
+            ls -la "$OUTPUT_DIR" || echo "Could not list output directory"
+            exit 1
+          fi
+          
+          # Clean up temporary directory
+          rm -rf temp-component-library
+
+      - name: Process ds-components data
+        run: |
+          echo "Processing ds-components CSV data..."
+          if node scripts/process-ds-components.js; then
+            echo "✅ ds-components processing completed successfully"
+          else
+            echo "⚠️ ds-components processing failed, but continuing with fallback data"
+            # Don't fail the workflow - fallback data should be available
+          fi
+
       - name: Collect issue metrics
         run: |
           echo "Starting issue metrics collection..."
@@ -59,6 +119,9 @@ jobs:
         run: |
           echo "Checking for generated files..."
           ls -la src/assets/data/metrics/
+          ls -la src/_data/metrics/
+          
+          # Check issue metrics
           if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
             echo "✅ issue-metrics.json generated successfully"
             echo "File size: $(du -h src/assets/data/metrics/issue-metrics.json)"
@@ -69,11 +132,22 @@ jobs:
             echo "❌ issue-metrics.json not found"
             exit 1
           fi
+          
+          # Check ds-components data
+          if [ -f "src/_data/metrics/ds-components-latest.csv" ]; then
+            echo "✅ ds-components-latest.csv available"
+            echo "File size: $(du -h src/_data/metrics/ds-components-latest.csv)"
+            echo "Component data preview:"
+            head -5 src/_data/metrics/ds-components-latest.csv
+          else
+            echo "❌ ds-components-latest.csv not found"
+            exit 1
+          fi
       
       - name: Check for changes
         id: git-check
         run: |
-          git add src/assets/data/metrics/
+          git add src/assets/data/metrics/ src/_data/metrics/
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in metrics data"
@@ -102,6 +176,7 @@ jobs:
           - Processed ${TOTAL_ISSUES} total issues
           - Updated quarterly and monthly aggregations
           - Updated experimental design issue tracking
+          - Fetched latest ds-components usage data from component-library
           
           🤖 Automated update via GitHub Actions"
           
@@ -145,7 +220,7 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📅 Next Update" >> $GITHUB_STEP_SUMMARY
-          echo "The next automatic update is scheduled for next Sunday at 6 AM UTC." >> $GITHUB_STEP_SUMMARY
+          echo "The next automatic update is scheduled for next Friday at 6 AM UTC." >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🔗 Dashboard" >> $GITHUB_STEP_SUMMARY
           echo "View the updated metrics at: [design.va.gov/about/metrics/](https://design.va.gov/about/metrics/)" >> $GITHUB_STEP_SUMMARY
