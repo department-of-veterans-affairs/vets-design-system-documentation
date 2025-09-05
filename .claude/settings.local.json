@@ -12,7 +12,8 @@
       "Bash(curl:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "WebFetch(domain:department-of-veterans-affairs.github.io)"
+      "WebFetch(domain:department-of-veterans-affairs.github.io)",
+      "WebFetch(domain:dev-design.va.gov)"
     ],
     "deny": []
   }
