@@ -11,8 +11,8 @@ The metrics system collects data from GitHub and other sources to generate visua
 Metrics are automatically updated weekly via GitHub Actions. See [AUTOMATION.md](./AUTOMATION.md) for complete details on the automated workflows.
 
 **Quick Summary**:
-- **Schedule**: Weekly on Sundays at 6:00 AM UTC
-- **Data Sources**: GitHub Issues API, experimental design tracking
+- **Schedule**: Weekly on Fridays at 6:00 AM UTC
+- **Data Sources**: GitHub Issues API, component-library CSV data, experimental design tracking
 - **Output**: JSON files committed to repository
 - **Manual Trigger**: Available via GitHub Actions interface
 
@@ -32,6 +32,24 @@ Collects issue data from the vets-design-system-documentation repository and gen
 - Outputs structured JSON data for dashboard consumption
 
 **Output**: `src/assets/data/metrics/issue-metrics.json`
+
+### `process-ds-components.js`
+
+Processes component usage data from the component-library repo's weekly CSV generation into JSON format for dashboard consumption.
+
+**Location**: `../process-ds-components.js`
+
+**What it does**:
+- Finds the most recent ds-components CSV file in `src/_data/metrics/`
+- Parses CSV data containing component usage across 123+ VA applications  
+- Aggregates total usage counts per component (ignoring USWDS column)
+- Separates web components (va-*) from React components (Va*)
+- Provides fallback to sample data when CSV files unavailable
+- Outputs structured JSON compatible with existing dashboard charts
+
+**Input**: `src/_data/metrics/ds-components-YYYY-MM-DD.csv`
+**Output**: `src/assets/data/metrics/component-usage.json`
+**Fallback**: `src/assets/data/metrics/component-usage-fallback.json`
 
 ### Monthly Analytics Reports
 

@@ -20,3 +20,4 @@ src/_data/component-docs.json
 src/_includes/react
 src/img
 !src/img/sprite.svg
+.claude/settings.local.json
