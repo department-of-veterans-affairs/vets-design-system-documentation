@@ -13,7 +13,15 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "WebFetch(domain:department-of-veterans-affairs.github.io)",
-      "WebFetch(domain:dev-design.va.gov)"
+      "WebFetch(domain:dev-design.va.gov)",
+      "Bash(yarn start)",
+      "Bash(chmod:*)",
+      "Bash(ls:*)",
+      "Bash(node:*)",
+      "Bash(bundle exec jekyll serve:*)",
+      "Bash(jobs)",
+      "Bash(mv:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": []
   }
