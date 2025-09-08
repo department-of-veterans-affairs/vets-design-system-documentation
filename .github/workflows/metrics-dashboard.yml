@@ -1,0 +1,265 @@
+name: Update Metrics Dashboard Data
+
+on:
+  schedule:
+    # Run weekly on Fridays at 6 PM UTC (2 PM ET / 1 PM EDT) - after component-library PR is merged
+    - cron: '0 18 * * 5'
+  workflow_dispatch:
+    # Allow manual triggering for testing and on-demand updates
+  push:
+    # Run on pushes to main branch
+    branches: [ main ]
+    paths:
+      - '.github/workflows/metrics-dashboard.yml'
+      - 'scripts/collect-issue-metrics.js'
+      - 'scripts/process-ds-components.js'
+
+jobs:
+  update-metrics:
+    runs-on: ubuntu-latest
+    
+    # Skip if the last commit was made by GitHub Action (prevents infinite loops)
+    if: |
+      github.event.head_commit.author.email != 'action@github.com' &&
+      !contains(github.event.head_commit.message, '📊 Update metrics dashboard data') &&
+      !contains(github.event.head_commit.message, '🤖 Automated update via GitHub Actions')
+    
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.VADS_WORKFLOWS }}
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Skip dependency installation for metrics scripts
+        run: |
+          echo "📝 Metrics scripts only use built-in Node.js modules"
+          echo "🚀 Skipping yarn install to avoid React dependency conflicts"
+          echo "✅ Node.js $(node --version) is ready for script execution"
+      
+      - name: Setup GitHub CLI
+        run: |
+          # GitHub CLI is pre-installed on ubuntu-latest runners
+          echo "Using pre-installed GitHub CLI"
+          gh --version
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
+      - name: Verify GitHub CLI authentication
+        run: |
+          gh auth status
+          gh api user --jq '.login'
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
+      - name: Create data directories
+        run: |
+          mkdir -p src/assets/data/metrics
+          mkdir -p src/assets/img/metrics
+          mkdir -p src/_data/metrics
+      
+      - name: Fetch ds-components data from component-library
+        run: |
+          echo "Fetching latest ds-components CSV data..."
+          # Clone component-library repo to temporary directory
+          git clone --depth 1 https://github.com/department-of-veterans-affairs/component-library.git temp-component-library
+          
+          # Find the most recent ds-components CSV file by sorting by date in filename
+          OUTPUT_DIR="temp-component-library/packages/design-system-dashboard-cli/output"
+          
+          if [ ! -d "$OUTPUT_DIR" ]; then
+            echo "❌ Output directory not found: $OUTPUT_DIR"
+            echo "Available directories in packages/design-system-dashboard-cli:"
+            ls -la temp-component-library/packages/design-system-dashboard-cli/ || echo "CLI directory not found"
+            exit 1
+          fi
+          
+          echo "Looking for ds-components files in: $OUTPUT_DIR"
+          ls -la "$OUTPUT_DIR"/ds-components-*.csv || echo "No ds-components CSV files found"
+          
+          # Sort by filename (which contains date YYYY-MM-DD) to get the most recent
+          LATEST_CSV=$(ls -1 "$OUTPUT_DIR"/ds-components-*.csv 2>/dev/null | sort -r | head -1)
+          
+          if [ -n "$LATEST_CSV" ] && [ -f "$LATEST_CSV" ]; then
+            BASENAME=$(basename "$LATEST_CSV")
+            echo "Found latest CSV: $BASENAME"
+            
+            # Copy with original timestamp name 
+            cp "$LATEST_CSV" "src/_data/metrics/$BASENAME"
+            echo "✅ ds-components data copied as $BASENAME"
+            
+            # Also create a symlink/copy with consistent name for easier processing
+            cp "$LATEST_CSV" "src/_data/metrics/ds-components-latest.csv"
+            echo "✅ Also available as ds-components-latest.csv"
+            
+            # Show basic info about the file
+            echo "File size: $(du -h "src/_data/metrics/$BASENAME")"
+            echo "Number of lines: $(wc -l < "src/_data/metrics/$BASENAME")"
+            echo "Sample data (first 3 lines):"
+            head -3 "src/_data/metrics/$BASENAME"
+          else
+            echo "❌ No ds-components CSV files found"
+            echo "Available files in output directory:"
+            ls -la "$OUTPUT_DIR" || echo "Could not list output directory"
+            exit 1
+          fi
+          
+          # Clean up temporary directory
+          rm -rf temp-component-library
+
+      - name: Process ds-components data
+        run: |
+          echo "Processing ds-components CSV data..."
+          if node scripts/process-ds-components.js; then
+            echo "✅ ds-components processing completed successfully"
+          else
+            echo "⚠️ ds-components processing failed, but continuing with fallback data"
+            # Don't fail the workflow - fallback data should be available
+          fi
+
+      - name: Collect issue metrics
+        run: |
+          echo "Starting issue metrics collection..."
+          node scripts/collect-issue-metrics.js
+          echo "Issue metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
+      - name: Verify generated data files
+        run: |
+          echo "Checking for generated files..."
+          ls -la src/assets/data/metrics/
+          ls -la src/_data/metrics/
+          
+          # Check issue metrics
+          if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
+            echo "✅ issue-metrics.json generated successfully"
+            echo "File size: $(du -h src/assets/data/metrics/issue-metrics.json)"
+            # Show first few lines for verification
+            echo "Sample data:"
+            head -20 src/assets/data/metrics/issue-metrics.json
+          else
+            echo "❌ issue-metrics.json not found"
+            exit 1
+          fi
+          
+          # Check ds-components data
+          if [ -f "src/_data/metrics/ds-components-latest.csv" ]; then
+            echo "✅ ds-components-latest.csv available"
+            echo "File size: $(du -h src/_data/metrics/ds-components-latest.csv)"
+            echo "Component data preview:"
+            head -5 src/_data/metrics/ds-components-latest.csv
+          else
+            echo "❌ ds-components-latest.csv not found"
+            exit 1
+          fi
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add src/assets/data/metrics/ src/_data/metrics/
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in metrics data"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in metrics data"
+            git diff --staged --stat
+          fi
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Ensure we're on the correct branch (not detached HEAD)
+          CURRENT_BRANCH="${{ github.head_ref || github.ref_name }}"
+          echo "Current branch: $CURRENT_BRANCH"
+          
+          # Check if we're in detached HEAD state
+          if git symbolic-ref -q HEAD >/dev/null; then
+            echo "✅ On branch: $(git branch --show-current)"
+          else
+            echo "⚠️ In detached HEAD state, checking out branch: $CURRENT_BRANCH"
+            git checkout -B "$CURRENT_BRANCH"
+          fi
+          
+          # Get current date for commit message
+          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          
+          # Count total issues processed
+          TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
+          
+          # Create descriptive commit message
+          git commit -m "📊 Update metrics dashboard data - ${CURRENT_DATE}
+
+          - Updated issue tracking metrics
+          - Processed ${TOTAL_ISSUES} total issues
+          - Updated quarterly and monthly aggregations
+          - Updated experimental design issue tracking
+          - Fetched latest ds-components usage data from component-library
+          
+          🤖 Automated update via GitHub Actions"
+          
+          git push origin "$CURRENT_BRANCH"
+      
+      - name: Create summary
+        if: always()
+        run: |
+          echo "## 📊 Metrics Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
+            TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            OPEN_ISSUES=$(jq -r '.summary.open_issues // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            CLOSED_MONTH=$(jq -r '.summary.closed_this_month // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            AVG_RESOLUTION=$(jq -r '.summary.avg_resolution_days // "unknown"' src/assets/data/metrics/issue-metrics.json)
+            QUARTERS=$(jq -r '.quarterly | length' src/assets/data/metrics/issue-metrics.json)
+            EXPERIMENTAL_QUARTERS=$(jq -r '.experimental_quarterly | length' src/assets/data/metrics/issue-metrics.json)
+            
+            echo "### ✅ Issue Metrics Updated Successfully" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- **Total Issues Processed:** ${TOTAL_ISSUES}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Currently Open:** ${OPEN_ISSUES}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Closed This Month:** ${CLOSED_MONTH}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Average Resolution Time:** ${AVG_RESOLUTION} days" >> $GITHUB_STEP_SUMMARY
+            echo "- **Quarterly Periods:** ${QUARTERS}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Experimental Design Quarters:** ${EXPERIMENTAL_QUARTERS}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            
+            if [ "${{ steps.git-check.outputs.changes }}" == "true" ]; then
+              echo "### 🚀 Changes Committed" >> $GITHUB_STEP_SUMMARY
+              echo "Updated metrics data has been committed to the repository." >> $GITHUB_STEP_SUMMARY
+            else
+              echo "### ℹ️ No Changes" >> $GITHUB_STEP_SUMMARY
+              echo "No changes detected - metrics data is up to date." >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "### ❌ Issue Metrics Update Failed" >> $GITHUB_STEP_SUMMARY
+            echo "The issue-metrics.json file was not generated successfully." >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📅 Next Update" >> $GITHUB_STEP_SUMMARY
+          echo "The next automatic update is scheduled for next Friday at 6 PM UTC (2 PM ET)." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 🔗 Dashboard" >> $GITHUB_STEP_SUMMARY
+          echo "View the updated metrics at: [design.va.gov/about/metrics/](https://design.va.gov/about/metrics/)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Metrics update workflow failed"
+          echo "Check the workflow logs for details"
+          echo "The dashboard may show stale data until this is resolved"
