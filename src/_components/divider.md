@@ -18,7 +18,7 @@ status: use-best-practice
 ### When to use divider
 
 - To signify a change in topic, content type, or expected interaction.
-- To create visual separation between chunks of content. Divider can help users distinguish between blocks of similar content at-a-glace.  
+- To create visual separation between chunks of content. Divider can help users distinguish between blocks of similar content at-a-glance.  
 
 ### When to consider something else
 
