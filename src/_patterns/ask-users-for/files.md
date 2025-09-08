@@ -15,6 +15,7 @@ anchors:
   - anchor: Usage
   - anchor: Examples
   - anchor: How to design and build
+  - anchor: Code Usage
   - anchor: Content considerations
   - anchor: Accessibility considerations
 ---
@@ -62,7 +63,39 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 * **List allowed file types and sizes above the File input component.** This helps prevent errors. Most forms accept pdf, jpg, jpeg, and png files.
 * **Validate file uploads and provide clear error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
 
+## Code usage
+
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputMultiplePattern.jsx"
+  text="Multifile input pattern in forms library"
+  type="secondary"
+></va-link-action>
+
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputPattern.jsx"
+  text="Single File input pattern in forms library"
+  type="secondary"
+></va-link-action>
+
+**Forms library validation**
+The forms-system performs validates on every file before upload for:
+
+- Mime-type / file-type match (e.g. my-pdf.png)
+- UTF encoding
+- PDF encryption
+
+The forms library sends the password to the backend.
+
+The backend would have to decrypt the file before submission.
+
+**Note:** If validation fails, an error is sent to the component
+
+**File submissions**
+The pattern handles the submission to the endpoint and returns a response if there is an error.
+
 ## Content considerations
+
+If your team needs help customizing the content of the component to address upload problems and user errors, Content and IA centralized team for support.
 
 {% include content/file-upload.md %}
 
