@@ -1,0 +1,58 @@
+name: Guidance Content Review
+
+on:
+  pull_request:
+    paths:
+      - 'src/_components/**/*.md'
+      - 'src/_patterns/**/*.md'
+      - 'src/_templates/**/*.md'
+      - 'src/_content-style-guide/**/*.md'
+      - 'src/_foundation/**/*.md'
+      - 'src/_accessibility/**/*.md'
+      - 'src/_ia/**/*.md'
+      - 'src/_about/**/*.md'
+
+jobs:
+  content-style-guide-check:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Comment on PR with Content Style Guide Review
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            // Read the content style guide prompt
+            const promptContent = fs.readFileSync('.github/prompts/Guidance-follow-content-style-guide.prompt.md', 'utf8');
+            
+            // Create a comment on the PR
+            const comment = `## 📝 Content Style Guide Review Required
+            
+            This PR modifies guidance content. Please ensure the changes follow our content style guide:
+            
+            ${promptContent}
+            
+            **Please review all changes against these guidelines before merging.**`;
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+            
+      - name: Request Review from Design System Team
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.pulls.requestReviewers({
+              pull_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              team_reviewers: ['platform-design-system-team']
+            });
