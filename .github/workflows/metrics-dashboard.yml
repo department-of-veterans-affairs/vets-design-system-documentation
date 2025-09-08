@@ -40,11 +40,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
       
-      - name: Install dependencies
+      - name: Skip dependency installation for metrics scripts
         run: |
-          npm ci || npm install
+          echo "📝 Metrics scripts only use built-in Node.js modules"
+          echo "🚀 Skipping yarn install to avoid React dependency conflicts"
+          echo "✅ Node.js $(node --version) is ready for script execution"
       
       - name: Setup GitHub CLI
         run: |
