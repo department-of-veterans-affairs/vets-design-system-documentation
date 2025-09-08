@@ -21,6 +21,8 @@ All components should have "Simplify all instances" checked. It helps reduce vis
 
 ## Documentation and naming
 
+Follow [naming conventions for components]({{ site.baseurl }}/about/naming-conventions/).
+
 * **Add a link to documentation on design.va.gov.**
 * **Make sure the name matches the component name displayed in Storybook.**
 

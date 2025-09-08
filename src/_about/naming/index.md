@@ -19,6 +19,28 @@ This document establishes a consistent approach to naming components in the VA D
 3. **Developer Experience**: Names should be intuitive for technical implementation.
 4. **Scalability**: The naming system should scale as new components are added.
 
+## General naming guidelines for VADS
+
+### Names for components and templates
+
+Component names and template names should be short and succinct while still relaying necessary information to the user. While 1-2 words is ideal, there are exceptions, such as the [On This Page]({{site.baseurl}}/components/on-this-page) component, where longer names are necessary for clarity.
+
+If the component or template exists as a generic tool on the web (e.g., accordions), then the VADS component or template should share that name.
+
+### Names for patterns
+
+Pattern names follow a two-step format, separated into two categories:
+- Ask Users for...
+- Help Users to...
+
+The specific pattern name should then be a continuation of that first step. For example:
+- [Ask Users for Files]({{site.baseurl}}/patterns/ask-users-for/files)
+- [Help Users to Sign In]({{site.baseurl}}/patterns/help-users-to/sign-in)
+
+### Consistency in naming 
+
+Component, template, and pattern names should be consistent between documentation and code. For example, if a component is named “Memorable date” in the guidance, the name in code should be `memorable-date` for consistency and ease of use. 
+
 ## Component Naming Guidelines
 
 ### Web Component Implementation
@@ -172,6 +194,8 @@ When a component has variants, name them using these patterns:
 ## Implementation Guidelines
 
 ### Adding New Documentation Pages
+
+Follow guidance for [contributing to documentation]({{site.baseurl}}/about/contributing-to-the-design-system/contributing-to-docs).
 
 1. Create front matter that includes:
 
