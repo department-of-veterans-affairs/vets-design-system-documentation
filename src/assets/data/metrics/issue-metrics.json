@@ -678,7 +678,7 @@
     "closed_this_month": 25,
     "avg_resolution_days": 123,
     "total_issues": 4706,
-    "last_updated": "2025-09-08T14:56:12.699Z",
+    "last_updated": "2025-09-08T14:57:39.124Z",
     "open_issues_trend": {
       "direction": "up",
       "percentage": 8,
@@ -695,5 +695,5 @@
       "value": -90
     }
   },
-  "generated_at": "2025-09-08T14:56:12.722Z"
+  "generated_at": "2025-09-08T14:57:39.148Z"
 }
