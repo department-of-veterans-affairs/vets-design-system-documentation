@@ -76,7 +76,10 @@ permalink: /about/metrics/
   
   <div class="metrics-section">
     <h3>Top Components by Usage</h3>
-    <p>Most frequently used design system components</p>
+    <p>Most frequently used design system components across all VA applications</p>
+    <div class="data-freshness" id="component-data-freshness">
+      <!-- Data freshness indicator will be populated by JavaScript -->
+    </div>
     <div id="top-components-chart" class="chart-container">
       <!-- Chart will be rendered here -->
     </div>
@@ -89,8 +92,8 @@ permalink: /about/metrics/
     <p>The most visited pages of design.va.gov</p>
     <div class="monthly-reports-static">
       <div class="report-item">
-        <h4>July 2025</h4>
-        <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-07.png" target="_blank" />
+        <h4>August 2025</h4>
+        <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-08.png" target="_blank" />
       </div>
     </div>
   </div>
@@ -766,7 +769,57 @@ function updateMetricCards(issueSummary, componentSummary) {
     const mostUsedElement = document.getElementById('most-used-component-trend');
     mostUsedElement.className = 'metric-trend trend-neutral';
     mostUsedElement.innerHTML = '<span>Most popular this month</span>';
+    
+    // Update component data freshness indicator
+    updateDataFreshness(componentSummary);
   }
+}
+
+function updateDataFreshness(componentSummary) {
+  const freshnessElement = document.getElementById('component-data-freshness');
+  if (!freshnessElement || !componentSummary) return;
+  
+  let freshnessText = '';
+  let cssClass = 'vads-u-color--gray-medium';
+  
+  if (componentSummary.data_source === 'component-library/ds-components' && componentSummary.report_date) {
+    // Fresh CSV data
+    const reportDate = new Date(componentSummary.report_date);
+    const formattedDate = reportDate.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+    
+    const applicationsText = componentSummary.applications_tracked ? 
+      ` across ${componentSummary.applications_tracked} VA applications` : '';
+    
+    freshnessText = `Data from ${formattedDate}${applicationsText}`;
+    
+    // Check if data is getting stale (older than 14 days)
+    const daysSince = Math.floor((Date.now() - reportDate.getTime()) / (1000 * 60 * 60 * 24));
+    if (daysSince > 14) {
+      freshnessText += ` (${daysSince} days ago)`;
+      cssClass = 'vads-u-color--warning-darker';
+    }
+    
+  } else if (componentSummary.data_source === 'fallback-data') {
+    // Using fallback due to error
+    freshnessText = '⚠️ Using fallback data - latest data temporarily unavailable';
+    cssClass = 'vads-u-color--warning-darker';
+    
+  } else if (componentSummary.data_source === 'fallback-sample-data') {
+    // Clean fallback data
+    freshnessText = 'Sample data for demonstration purposes';
+    cssClass = 'vads-u-color--gray-medium';
+    
+  } else {
+    // Unknown or placeholder
+    freshnessText = 'Data collection in progress';
+    cssClass = 'vads-u-color--gray-medium';
+  }
+  
+  freshnessElement.innerHTML = `<small class="${cssClass}">${freshnessText}</small>`;
 }
 
 function updateTrendIndicator(elementId, trendData, timeframe) {
