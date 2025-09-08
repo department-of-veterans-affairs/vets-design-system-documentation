@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.VADS_WORKFLOWS }}
           fetch-depth: 0
       
       - name: Setup Node.js
@@ -35,7 +35,7 @@ jobs:
       - name: Setup GitHub CLI
         uses: cli/cli@v2.32.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.VADS_WORKFLOWS }}
       
       - name: Verify GitHub CLI authentication
         run: |
@@ -113,7 +113,7 @@ jobs:
           node scripts/collect-issue-metrics.js
           echo "Issue metrics collection completed"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
       - name: Verify generated data files
         run: |
