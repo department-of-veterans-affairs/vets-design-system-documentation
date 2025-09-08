@@ -11726,17 +11726,12 @@
     "report_date": "2025-09-04",
     "applications_tracked": 123,
     "usage_trend": {
-      "direction": "up",
-      "percentage": 23,
-      "value": 450
-    },
-    "components_trend": {
-      "direction": "up",
-      "percentage": 5,
-      "value": 5
+      "direction": "neutral",
+      "percentage": 0,
+      "value": 0
     }
   },
   "data_source": "component-library/ds-components",
-  "generated_at": "2025-09-05T20:02:50.189Z",
+  "generated_at": "2025-09-08T14:43:31.013Z",
   "report_date": "2025-09-04"
 }
