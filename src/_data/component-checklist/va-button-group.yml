@@ -1,30 +1,43 @@
 maturity:
   - name: guidance
     score: true
+    mobile-app-score: false
   - name: research
     score: false
+    mobile-app-score: false
   - name: stability
     score: true
+    mobile-app-score: false
   - name: adoption
     score: true
+    mobile-app-score: false
     notes: "This component was introduced in July 2022."
 code-assets:
   - name: variations 
     score: true
+    mobile-app-score: false
   - name: responsive
     score: true
+    mobile-app-score: false
   - name: interactive-states
     score: true
+    mobile-app-score: false
   - name: tokens
     score: "n/a"
+    mobile-app-score: false
   - name: internationalization
     score: true
+    mobile-app-score: false
 visual-assets:
   - name: variations
     score: true
+    mobile-app-score: false
   - name: responsive
     score: true
+    mobile-app-score: false
   - name: interactive-states
     score: true
+    mobile-app-score: false
   - name: tokens
     score: "n/a"
+    mobile-app-score: false
