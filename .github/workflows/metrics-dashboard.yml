@@ -33,14 +33,19 @@ jobs:
           npm ci || npm install
       
       - name: Setup GitHub CLI
-        uses: cli/cli@v2.32.0
-        with:
-          token: ${{ secrets.VADS_WORKFLOWS }}
+        run: |
+          # GitHub CLI is pre-installed on ubuntu-latest runners
+          echo "Using pre-installed GitHub CLI"
+          gh --version
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
       - name: Verify GitHub CLI authentication
         run: |
           gh auth status
           gh api user --jq '.login'
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
       - name: Create data directories
         run: |
