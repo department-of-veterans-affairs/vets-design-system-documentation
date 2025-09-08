@@ -25,7 +25,7 @@ While there are abbreviations and acronyms that we use extensively in the Design
 
 ### Capitalization
 
-Title case is allowed for the naming of components, patterns, and templates. More details on naming components can be found in the Component, pattern, and template names section of this document. 
+Components, patterns, and template names should use title case. More details on naming components can be found in the [Referencing components, patterns, and templates](#referencing-components-patterns-and-templates) section of this document. 
 
 [VA Content Style Guide: Capitalization]({{ site.baseurl }}/content-style-guide/capitalization)
 
@@ -56,7 +56,7 @@ In these instances, prioritize effective communication over the letter of the la
 
 [VA Content Style Guide: Plain Language]({{ site.baseurl }}/content-style-guide/plain-language/)
 
-### Referencing components, patterns, and templats
+### Referencing components, patterns, and templates
 
 Component, pattern, and template names should be written in title case. 
 
