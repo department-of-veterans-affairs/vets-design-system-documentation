@@ -6,13 +6,6 @@ on:
     - cron: '0 18 * * 5'
   workflow_dispatch:
     # Allow manual triggering for testing and on-demand updates
-  pull_request:
-    # Run on pull requests for testing
-    branches: [ main ]
-    paths:
-      - '.github/workflows/metrics-dashboard.yml'
-      - 'scripts/collect-issue-metrics.js'
-      - 'scripts/process-ds-components.js'
   push:
     # Run on pushes to main branch
     branches: [ main ]
