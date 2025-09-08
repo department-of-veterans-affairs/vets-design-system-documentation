@@ -43,6 +43,7 @@ highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
 plugins:
+  - jekyll-last-modified-at
   - jekyll-redirect-from
 
 source: src
