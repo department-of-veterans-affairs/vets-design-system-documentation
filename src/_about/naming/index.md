@@ -39,7 +39,7 @@ The specific pattern name should then be a continuation of that first step. For 
 
 ### Consistency in naming 
 
-Component, template, and pattern names should be consistent between documentation and code. For example, if a component is named “Memorable date” in the guidance, the name in code should be `memorable-date` for consistency and ease of use. 
+Component, template, and pattern names should be consistent between documentation and code. For example, if a component is named “Memorable Date” in the guidance, the name in code should be `memorable-date` for consistency and ease of use. 
 
 ## Component Naming Guidelines
 
