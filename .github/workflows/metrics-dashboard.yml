@@ -2,8 +2,8 @@ name: Update Metrics Dashboard Data
 
 on:
   schedule:
-    # Run weekly on Fridays at 6 AM UTC (2 AM ET) - after Thursday night ds-components generation
-    - cron: '0 6 * * 5'
+    # Run weekly on Fridays at 6 PM UTC (2 PM ET / 1 PM EDT) - after component-library PR is merged
+    - cron: '0 18 * * 5'
   workflow_dispatch:
     # Allow manual triggering for testing and on-demand updates
   pull_request:
@@ -34,6 +34,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.VADS_WORKFLOWS }}
+          ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0
       
       - name: Setup Node.js
@@ -183,6 +184,18 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
+          # Ensure we're on the correct branch (not detached HEAD)
+          CURRENT_BRANCH="${{ github.head_ref || github.ref_name }}"
+          echo "Current branch: $CURRENT_BRANCH"
+          
+          # Check if we're in detached HEAD state
+          if git symbolic-ref -q HEAD >/dev/null; then
+            echo "✅ On branch: $(git branch --show-current)"
+          else
+            echo "⚠️ In detached HEAD state, checking out branch: $CURRENT_BRANCH"
+            git checkout -B "$CURRENT_BRANCH"
+          fi
+          
           # Get current date for commit message
           CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
           
@@ -200,7 +213,7 @@ jobs:
           
           🤖 Automated update via GitHub Actions"
           
-          git push
+          git push origin "$CURRENT_BRANCH"
       
       - name: Create summary
         if: always()
@@ -240,7 +253,7 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 📅 Next Update" >> $GITHUB_STEP_SUMMARY
-          echo "The next automatic update is scheduled for next Friday at 6 AM UTC." >> $GITHUB_STEP_SUMMARY
+          echo "The next automatic update is scheduled for next Friday at 6 PM UTC (2 PM ET)." >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### 🔗 Dashboard" >> $GITHUB_STEP_SUMMARY
           echo "View the updated metrics at: [design.va.gov/about/metrics/](https://design.va.gov/about/metrics/)" >> $GITHUB_STEP_SUMMARY
