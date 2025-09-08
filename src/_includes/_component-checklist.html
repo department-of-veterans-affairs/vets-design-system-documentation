@@ -1,22 +1,22 @@
 {% assign name = include.component_name %}
-{% assign mobile_name = name | replace: "va-", "" %}
+{% assign mobile_app_name = name | replace: "va-", "" %}
 {% assign components = site.data.component-checklist %}
 {% assign component = components | map: name %}
-{% assign mobile_component = site.data.component-checklist.mobile-app | map: mobile_name %}
+{% assign mobile_app_component = site.data.component-checklist.mobile-app | map: mobile_app_name %}
 {% assign definitions = components | map: "definitions" %}
 
 {% comment %} Check for platform configuration {% endcomment %}
 {% assign show_web_checklist = page.web %}
-{% assign show_mobile_checklist = page.mobile-app %}
+{% assign show_mobile_app_checklist = page.mobile-app %}
 
 {% comment %} Default behavior if not specified {% endcomment %}
 {% if show_web_checklist == nil %}
 {% assign show_web_checklist = true %}
 {% endif %}
-{% if show_mobile_checklist == nil and mobile_component.first %}
-{% assign show_mobile_checklist = true %}
-{% elsif show_mobile_checklist == nil %}
-{% assign show_mobile_checklist = false %}
+{% if show_mobile_app_checklist == nil and mobile_app_component.first %}
+{% assign show_mobile_app_checklist = true %}
+{% elsif show_mobile_app_checklist == nil %}
+{% assign show_mobile_app_checklist = false %}
 {% endif %}
 
 <h2 id="component-checklist">Component checklist</h2>
@@ -27,8 +27,8 @@
   {% for definition in definitions %}
   {% assign web_total_items = 0 %}
   {% assign web_completed_items = 0 %}
-  {% assign mobile_total_items = 0 %}
-  {% assign mobile_completed_items = 0 %}
+  {% assign mobile_app_total_items = 0 %}
+  {% assign mobile_app_completed_items = 0 %}
 
   {% comment %} First pass: Calculate totals for all sections {% endcomment %}
   {% for section in definition %}
@@ -40,26 +40,26 @@
   {% assign values = component.first[title] %}
   {% assign slug_name = name | slugify %}
   {% assign value = values | where: "name", slug_name %}
-  {% assign score = value.first.score %}
+  {% assign web_score = value.first.web-score %}
   {% assign mobile_app_score = value.first.mobile-app-score %}
 
   {% comment %} Count web items {% endcomment %}
   {% if show_web_checklist == true %}
-  {% if score == true %}
+  {% if web_score == true %}
   {% assign web_completed_items = web_completed_items | plus: 1 %}
   {% assign web_total_items = web_total_items | plus: 1 %}
-  {% elsif score == false %}
+  {% elsif web_score == false %}
   {% assign web_total_items = web_total_items | plus: 1 %}
   {% endif %}
   {% endif %}
 
-  {% comment %} Count mobile items {% endcomment %}
-  {% if show_mobile_checklist == true %}
+  {% comment %} Count mobile app items {% endcomment %}
+  {% if show_mobile_app_checklist == true %}
   {% if mobile_app_score == true %}
-  {% assign mobile_completed_items = mobile_completed_items | plus: 1 %}
-  {% assign mobile_total_items = mobile_total_items | plus: 1 %}
+  {% assign mobile_app_completed_items = mobile_app_completed_items | plus: 1 %}
+  {% assign mobile_app_total_items = mobile_app_total_items | plus: 1 %}
   {% elsif mobile_app_score == false %}
-  {% assign mobile_total_items = mobile_total_items | plus: 1 %}
+  {% assign mobile_app_total_items = mobile_app_total_items | plus: 1 %}
   {% endif %}
   {% endif %}
   {% endfor %}
@@ -67,13 +67,13 @@
   {% endfor %}
 
   {% comment %} Display completion cards above accordion {% endcomment %}
-  {% if (show_web_checklist == true and web_total_items != 0) or (show_mobile_checklist == true and mobile_total_items
+  {% if (show_web_checklist == true and web_total_items != 0) or (show_mobile_app_checklist == true and mobile_app_total_items
   != 0) %}
   <div class="vads-grid-row vads-u-margin-bottom--2">
     {% comment %} Show Web card if web platform is enabled and has items {% endcomment %}
     {% if show_web_checklist == true and web_total_items != 0 %}
     <div
-      class="vads-grid-col-12 {% if show_mobile_checklist == true and mobile_total_items != 0 %}tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-margin-bottom--0 tablet:vads-u-padding-right--1{% else %}tablet:vads-grid-col-8 desktop:vads-grid-col-6{% endif %}">
+      class="vads-grid-col-12 {% if show_mobile_app_checklist == true and mobile_app_total_items != 0 %}tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-margin-bottom--0 tablet:vads-u-padding-right--1{% else %}tablet:vads-grid-col-8 desktop:vads-grid-col-6{% endif %}">
       <va-card show-shadow="false" background="true">
         <h3 class="vads-u-margin-y--0">Web Platform</h3>
         <div class="vads-u-font-size--2xl vads-u-font-weight--bold vads-u-margin-bottom--0">
@@ -85,16 +85,16 @@
     </div>
     {% endif %}
 
-    {% comment %} Show Mobile card if mobile platform is enabled and has items {% endcomment %}
-    {% if show_mobile_checklist == true and mobile_total_items != 0 %}
+    {% comment %} Show Mobile app card if mobile app platform is enabled and has items {% endcomment %}
+    {% if show_mobile_app_checklist == true and mobile_app_total_items != 0 %}
     <div
       class="vads-grid-col-12 {% if show_web_checklist == true and web_total_items != 0 %}tablet:vads-grid-col-6 tablet:vads-u-padding-left--1{% else %}tablet:vads-grid-col-8 desktop:vads-grid-col-6{% endif %}">
       <va-card show-shadow="false" background="true">
         <h3 class="vads-u-margin-y--0">Mobile App Platform</h3>
         <div class="vads-u-font-size--2xl vads-u-font-weight--bold vads-u-margin-bottom--0">
-          {{ mobile_completed_items | times: 100 | divided_by: mobile_total_items }}%
+          {{ mobile_app_completed_items | times: 100 | divided_by: mobile_app_total_items }}%
         </div>
-        <p class="vads-u-margin-y--0 vads-u-color--gray-dark">{{ mobile_completed_items }} of {{ mobile_total_items }}
+        <p class="vads-u-margin-y--0 vads-u-color--gray-dark">{{ mobile_app_completed_items }} of {{ mobile_app_total_items }}
           complete</p>
       </va-card>
     </div>
@@ -122,7 +122,7 @@
             {% assign values = component.first[title] %}
             {% assign slug_name = name | slugify %}
             {% assign value = values | where: "name", slug_name %}
-            {% assign score = value.first.score %}
+            {% assign web_score = value.first.web-score %}
             {% assign mobile_app_score = value.first.mobile-app-score %}
             {% assign notes = value.first.notes %}
             <div class="vads-grid-row vads-u-margin-bottom--3">
@@ -133,13 +133,13 @@
                 <dd> {% comment %} Show Web score only if web platform is enabled {% endcomment %}
                   {% if show_web_checklist == true %}
                   <div class="vads-u-display--inline-block">
-                    {% if score == true %}
+                    {% if web_score == true %}
                     <va-icon icon="check_circle" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
-                    {% elsif score == "n/a" %}
+                    {% elsif web_score == "n/a" %}
                     <va-icon icon="radio_button_unchecked" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
-                    {% elsif score == false %}
+                    {% elsif web_score == false %}
                     <va-icon icon="radio_button_unchecked" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
                     {% endif %}
@@ -147,7 +147,7 @@
                   </div>
                   {% endif %}
                   {% comment %} Show Mobile app score only if mobile-app platform is enabled {% endcomment %}
-                  {% if show_mobile_checklist == true %}
+                  {% if show_mobile_app_checklist == true %}
                   <div class="vads-u-display--inline-block vads-u-margin-left--2">
                     {% if mobile_app_score == true %}
                     <va-icon icon="check_circle" size="2"
