@@ -88,7 +88,7 @@ anchors:
 ### Hint text
 
 *  During workflows where dates of life events, periods of service, and more, come in heavy multiples, the hint text can be hidden using the `hide-hint-text` attribute.
-* Refer to the [hint text example](#extra-hint-text) above.
+* For adding extra hint text, refer to the [hint text example](#extra-hint-text) above.
 
 <va-link-action
   href="{{ site.baseurl }}/components/form/label#hint-text"
