@@ -71,31 +71,35 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
   type="secondary"
 ></va-link-action>
 
+
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputPattern.jsx"
   text="Single File input pattern in forms library"
   type="secondary"
 ></va-link-action>
 
-**Forms library validation**
+### Forms library validation
+
 The forms-system performs validates on every file before upload for:
 
-- Mime-type / file-type match (e.g. my-pdf.png)
-- UTF encoding
-- PDF encryption. The forms library sends the encrypted password to the backend and the backend decrypts the file before submission.
+* Mime-type / file-type match (e.g. my-pdf.png)
+* UTF encoding
+* PDF encryption. The forms library sends the encrypted password to the backend and the backend decrypts the file before submission.
 
 **Note:** If validation fails, an error is sent to the component
 
-**File submissions**
+### File submission:
+
 The pattern handles the submission to the endpoint and returns a response if there is an error.
 
 ## Content considerations
 
-If your team needs help customizing the content of the component to address upload problems and user errors, Content and IA centralized team for support.
-
 {% include content/file-upload.md %}
 
 * **Consider the mobile experience.** Avoid using words like "scan" or "convert" in the file upload instructions.
+
+If your team needs help customizing the content of the component to address upload problems and user errors, Content and IA centralized team for support.
+
 
 ## Accessibility considerations
 
