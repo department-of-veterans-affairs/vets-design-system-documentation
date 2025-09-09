@@ -1,3 +1,8 @@
+# Global completion tracking
+last-updated: null
+web-platform-completed: null
+mobile-app-platform-completed: null
+
 maturity:
   - name: guidance
     web-score: true

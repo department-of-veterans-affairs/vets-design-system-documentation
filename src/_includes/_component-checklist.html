@@ -5,6 +5,10 @@
 {% assign mobile_app_component = site.data.component-checklist.mobile-app | map: mobile_app_name %}
 {% assign definitions = components | map: "definitions" %}
 
+{% comment %} Extract completion dates {% endcomment %}
+{% assign web_completion_date = component.first.web-platform-completed %}
+{% assign mobile_app_completion_date = component.first.mobile-app-platform-completed %}
+
 {% comment %} Check for platform configuration {% endcomment %}
 {% assign show_web_checklist = page.web %}
 {% assign show_mobile_app_checklist = page.mobile-app %}
@@ -67,7 +71,8 @@
   {% endfor %}
 
   {% comment %} Display completion cards above accordion {% endcomment %}
-  {% if (show_web_checklist == true and web_total_items != 0) or (show_mobile_app_checklist == true and mobile_app_total_items
+  {% if (show_web_checklist == true and web_total_items != 0) or (show_mobile_app_checklist == true and
+  mobile_app_total_items
   != 0) %}
   <div class="vads-grid-row vads-u-margin-bottom--2">
     {% comment %} Show Web card if web platform is enabled and has items {% endcomment %}
@@ -81,6 +86,11 @@
         </div>
         <p class="vads-u-margin-y--0 vads-u-color--gray-dark">{{ web_completed_items }} of {{ web_total_items }}
           complete</p>
+        {% if web_completion_date %}
+        <p class="vads-u-margin-y--0 vads-u-color--gray-dark vads-u-font-size--sm">
+          Updated: {{ web_completion_date | date: "%B %d, %Y" }}
+        </p>
+        {% endif %}
       </va-card>
     </div>
     {% endif %}
@@ -94,8 +104,14 @@
         <div class="vads-u-font-size--2xl vads-u-font-weight--bold vads-u-margin-bottom--0">
           {{ mobile_app_completed_items | times: 100 | divided_by: mobile_app_total_items }}%
         </div>
-        <p class="vads-u-margin-y--0 vads-u-color--gray-dark">{{ mobile_app_completed_items }} of {{ mobile_app_total_items }}
+        <p class="vads-u-margin-y--0 vads-u-color--gray-dark">{{ mobile_app_completed_items }} of {{
+          mobile_app_total_items }}
           complete</p>
+        {% if mobile_app_completion_date %}
+        <p class="vads-u-margin-y--0 vads-u-color--gray-dark vads-u-font-size--sm">
+          Updated: {{ mobile_app_completion_date | date: "%B %d, %Y" }}
+        </p>
+        {% endif %}
       </va-card>
     </div>
     {% endif %}
@@ -137,8 +153,7 @@
                     <va-icon icon="check_circle" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
                     {% elsif web_score == "n/a" %}
-                    <va-icon icon="radio_button_unchecked" size="2"
-                      class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
+                    <span class="usa-label site-component-checklist-score--is-na">N/A</span>
                     {% elsif web_score == false %}
                     <va-icon icon="radio_button_unchecked" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
@@ -153,8 +168,7 @@
                     <va-icon icon="check_circle" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
                     {% elsif mobile_app_score == "n/a" %}
-                    <va-icon icon="radio_button_unchecked" size="2"
-                      class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
+                    <span class="usa-label site-component-checklist-score--is-na">N/A</span>
                     {% elsif mobile_app_score == false %}
                     <va-icon icon="radio_button_unchecked" size="2"
                       class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
@@ -187,15 +201,17 @@
     <div class="vads-grid-col-12 desktop:vads-grid-col-10">
       <ul class="site-component-checklist-legend__list">
         <li class="site-component-checklist-legend__item">
-          <va-icon icon="check_circle" size="2" class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
+          <va-icon icon="check_circle" size="2"
+            class="site-component-checklist-score site-component-checklist-score--is-true"></va-icon>
           <span>Complete</span>
         </li>
         <li class="site-component-checklist-legend__item">
-          <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
+          <va-icon icon="radio_button_unchecked" size="2"
+            class="site-component-checklist-score site-component-checklist-score--is-false"></va-icon>
           <span>Incomplete</span>
         </li>
         <li class="site-component-checklist-legend__item">
-          <va-icon icon="radio_button_unchecked" size="2" class="site-component-checklist-score site-component-checklist-score--is-na"></va-icon>
+          <span class="usa-label site-component-checklist-score--is-na">N/A</span>
           <span>Not applicable</span>
         </li>
       </ul>
