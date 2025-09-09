@@ -65,18 +65,21 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 
 ## Code usage
 
+<p>
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputMultiplePattern.jsx"
   text="Multifile input pattern in forms library"
   type="secondary"
 ></va-link-action>
+</p>
 
-
+<p>
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/web-component-patterns/fileInputPattern.jsx"
   text="Single File input pattern in forms library"
   type="secondary"
 ></va-link-action>
+</p>
 
 ### Forms library validation
 
