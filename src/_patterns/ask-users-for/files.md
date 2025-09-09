@@ -88,7 +88,7 @@ The forms-system validates every file before upload for:
 
 * **Mime-type and file extension match** (e.g., prevents my-pdf.png)
 * **UTF encoding** to ensure proper file handling
-* **PDF encryption** - The forms library sends the encrypted password to the backend and the backend decrypts the file before submission
+* **PDF encryption** - The forms library detects if a PDF is encrypted and, if so, prompts the user for a password. The password is required to send the file to the backend for decryption before form submission.
 
 **Note:** If validation fails, an error message is sent to the component and displayed to the user.
 
