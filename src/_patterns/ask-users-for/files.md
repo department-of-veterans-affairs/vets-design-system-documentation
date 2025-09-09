@@ -28,7 +28,7 @@ anchors:
 
 ### When not to use this pattern
 
-* **Don’t ask if it does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary.
+* **Don’t ask for a file if does not affect the delivery of a service.** You should only ask users to upload documents if absolutely necessary.
 
 ## Examples
 
@@ -50,17 +50,18 @@ anchors:
 
 Use the [File input]({{ site.baseurl }}/components/form/file-input) component along with the following content placed above it:
 
-* Header
-* Instructions on what file(s) to upload
-* Bullet list of allowed file types and sizes
+* **Header** that clearly describes what file to upload
+* **Instructions** explaining what file(s) to upload and why they're needed
+* **Bullet list** of allowed file types and maximum file sizes
 
-Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can invite user and/or technical errors.
+**Important:** Avoid allowing batch file uploads. Batch uploads are not mobile-friendly and can create user experience and technical issues. Instead, use multiple individual file input components when you need users to upload several files.
 
 ### How this pattern works
 
 We've updated the [File input]({{ site.baseurl }}/components/form/file-input) component to encapsulate this pattern. Upgrade to the latest file input component to get the current functionality.
 
-* **List allowed file types and sizes above the File input component.** This helps prevent errors. Most forms accept pdf, jpg, jpeg, and png files.
+* **List allowed file types and sizes above the File input component.** This helps prevent errors. Most VA forms accept PDF, JPG, JPEG, and PNG files.
+* **Provide clear instructions.** Tell users exactly what document to upload and why it's needed for their application.
 * **Validate file uploads and provide clear error messages.** Review [feedback messages]({{ site.baseurl }}/content-style-guide/error-messages/feedback) in the Messages dictionary for file upload success and error messages.
 
 ## Code usage
@@ -83,15 +84,15 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 
 ### Forms library validation
 
-The forms-system performs validates on every file before upload for:
+The forms-system validates every file before upload for:
 
-* Mime-type / file-type match (e.g. my-pdf.png)
-* UTF encoding
-* PDF encryption. The forms library sends the encrypted password to the backend and the backend decrypts the file before submission.
+* **Mime-type and file extension match** (e.g., prevents my-pdf.png)
+* **UTF encoding** to ensure proper file handling
+* **PDF encryption** - The forms library sends the encrypted password to the backend and the backend decrypts the file before submission
 
-**Note:** If validation fails, an error is sent to the component
+**Note:** If validation fails, an error message is sent to the component and displayed to the user.
 
-### File submission:
+### File submission
 
 The pattern handles the submission to the endpoint and returns a response if there is an error.
 
@@ -101,10 +102,11 @@ The pattern handles the submission to the endpoint and returns a response if the
 
 * **Consider the mobile experience.** Avoid using words like "scan" or "convert" in the file upload instructions.
 
-If your team needs help customizing the content of the component to address upload problems and user errors, Content and IA centralized team for support.
+If your team needs help customizing the content of the component to address upload problems and user errors, contact the Content and IA centralized team for support.
 
 
 ## Accessibility considerations
 
 * **Do not italicize file type and size help text.** Long strings of italicized text can be difficult to read for some users with low vision or reading disabilities.
-* **Ask for confirmation when deleting files.** Destructive actions like deleting files should require two steps by users --- the initial button click, and then a confirmation. This helps prevent users from accidentally deleting a file with an unintentional click, and provides an extra prompt for screen reader users and screen magnification users who might not see the visual change when a file is removed.
+* **Ask for confirmation when deleting files.** Destructive actions like deleting files should require two steps by users — the initial button click, and then a confirmation. This helps prevent users from accidentally deleting a file with an unintentional click, and provides an extra prompt for screen reader users and screen magnification users who might not see the visual change when a file is removed.
+* **Provide clear error messages.** When file uploads fail, ensure error messages clearly explain what went wrong and how to fix the issue.
