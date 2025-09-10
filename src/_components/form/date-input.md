@@ -4,7 +4,7 @@ permalink: /components/form/date-input
 has-parent: /components/form/
 title: Date input
 research-title: Form controls
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Use the date input component to help users enter a date they would know or a date they can approximate."
 status: use-deployed
 anchors:

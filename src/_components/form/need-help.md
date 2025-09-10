@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Need help?
 intro-text: A footer found on application pages that provides contact information for the VA.
 research-title: Form controls
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86293&mode=design&t=h9BoxMWwcHe2DhUd-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1372%3A86293&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 web-component: va-need-help
 web: true

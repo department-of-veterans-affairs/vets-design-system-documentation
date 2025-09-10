@@ -3,7 +3,7 @@ layout: component
 title: Table
 intro-text: "The table component organizes data into columns and rows."
 research-title: Table
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
 uswds-v3: default
 web-component: va-table
 web: true

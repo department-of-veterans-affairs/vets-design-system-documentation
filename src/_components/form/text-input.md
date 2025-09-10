@@ -5,7 +5,7 @@ has-parent: /components/form/
 title: Text input
 intro-text: "Text input allows people to enter any type of text unless otherwise restricted."
 research-title: Form controls
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A95544&mode=design&t=h9BoxMWwcHe2DhUd-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1377%3A95544&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-best-practice
 uswds-v3: default
 web-component: va-text-input

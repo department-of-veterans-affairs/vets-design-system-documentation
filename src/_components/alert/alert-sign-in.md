@@ -5,7 +5,7 @@ has-parent: /components/alert/
 title: Alert - Sign-in
 github-title: va-alert-sign-in
 intro-text: An alert component focused on helping users complete the sign-in process.
-figma-link: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
+figma-link-web: https://www.figma.com/design/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?node-id=5359-436
 web-component: va-alert-sign-in
 web: true
 mobile-app: false

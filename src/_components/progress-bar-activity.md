@@ -4,7 +4,7 @@ permalink: /components/progress-bar/
 title: "Progress bar - Activity"
 intro-text: "A progress bar provides status as the system is taking an action on behalf of the user."
 research-title: Progress bars
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1271%3A4002&mode=design&t=q1Wbhw4ZIogPDFEb-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1271%3A4002&mode=design&t=q1Wbhw4ZIogPDFEb-1
 web-component: va-progress-bar
 web: true
 mobile-app: false

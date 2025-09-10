@@ -7,7 +7,7 @@ has-parent: /components/button/
 title: Button - Icon
 aka: Button - Tertiary
 research-link: Buttons
-figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=6554%3A11058&mode=design&t=4Zo01aEkp6l4faTn-1
+figma-link-web: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=6554%3A11058&mode=design&t=4Zo01aEkp6l4faTn-1
 intro-text: The button icon variation acts as a tertiary button which has equal visual prominence to Link - Action and thus can be used in contexts that require a mix of links and buttons. 
 status: use-with-caution-available
 uswds-v3: default

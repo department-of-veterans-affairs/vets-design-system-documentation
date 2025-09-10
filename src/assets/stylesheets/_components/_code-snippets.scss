@@ -81,3 +81,8 @@
     }
   }
 }
+
+// Remove top margin from h3 headers in code usage tab panels
+va-tab-panel h3 {
+  margin-top: 0;
+}

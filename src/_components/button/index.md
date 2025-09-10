@@ -5,7 +5,7 @@ title: Button
 intro-text: A button draws attention to important actions with a large selectable surface.
 research-link: Buttons
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
-figma-link-mobile-app: https://www.figma.com/design/QVLPB3eOunmKrgQOuOt0SU/%F0%9F%93%90-Flagship-Library---Resource---VA-Mobile?node-id=3817-7455
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-deployed
 sub-pages:
   - sub-page: Button group
@@ -29,6 +29,7 @@ anchors:
 
 ## Examples
 
+{% capture web_content %}
 ### Web
 
 #### Default - Primary
@@ -54,7 +55,9 @@ anchors:
 #### Loading
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--loading" link_text="va-button--loading" %}
+{% endcapture %}
 
+{% capture mobile_content %}
 ### Mobile app
 
 #### Base - Primary
@@ -68,6 +71,18 @@ anchors:
 #### Destructive
 
 {% include storybook-preview.html height="100px" story="button--destructive" link_text="va-mobile__button--destructive" is_mobile=true %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 

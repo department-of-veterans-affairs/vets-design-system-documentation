@@ -1,7 +1,7 @@
 ---
 layout: component
 title: Search Filter
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=29763-24650&t=RwH9qbwZGs859rIX-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=29763-24650&t=RwH9qbwZGs859rIX-1
 intro-text: This component implements faceted search.
 web-component: va-search-filter
 web: true

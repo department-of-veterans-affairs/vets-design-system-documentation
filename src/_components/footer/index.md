@@ -3,7 +3,7 @@ layout: component
 title: Footer
 permalink: /components/footer/
 intro-text: A footer serves site visitors who arrive at the bottom of a page without finding what they want.
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=538-7198&mode=design&t=kPk3dlhnHSGw5X0f-0
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=538-7198&mode=design&t=kPk3dlhnHSGw5X0f-0
 status: dont-use-proposed
 web: true
 mobile-app: false

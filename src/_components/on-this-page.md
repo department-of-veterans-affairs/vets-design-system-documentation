@@ -3,7 +3,7 @@ layout: component
 title: On this page
 intro-text: "The On this page jump links component summarizes the sections (&lt;h2&gt;s) at the top of long pages and allows users to jump down the page to the respective section."
 research-title: "On this page jump link"
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=35%3A165&mode=design&t=q1Wbhw4ZIogPDFEb-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=35%3A165&mode=design&t=q1Wbhw4ZIogPDFEb-1
 status: use-best-practice
 web-component: va-on-this-page
 web: true

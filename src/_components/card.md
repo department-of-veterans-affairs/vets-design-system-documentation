@@ -3,7 +3,7 @@ layout: component
 title: Card
 github-title: va-card
 research-title: card
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1319%3A20931&mode=design&t=nYOotVcwdpiMCL5C-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1319%3A20931&mode=design&t=nYOotVcwdpiMCL5C-1
 intro-text: "A card groups short, related pieces of personalized information into a series of discrete containers, similar to physical index or playing cards. The goal of a card is to present a snapshot of information in one digestible chunk with the option to navigate to more detailed content. The user should be able to easily scan a sequence of cards and take action on the most relevant items."
 contributor: Allison Lu, Angela Agosto
 status: use-deployed

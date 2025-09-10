@@ -5,7 +5,7 @@ redirect_from:
   - /components/privacy-agreement
 has-parent: /components/form/
 title: Privacy Agreement
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85151&mode=design&t=TiJHClaf3VQ6wU6B-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85151&mode=design&t=TiJHClaf3VQ6wU6B-1
 intro-text: "Used on the review step of a form flow to provide a link to the privacy policy content and provide a confirmation checkbox."
 status: use-deployed
 uswds-v3: default

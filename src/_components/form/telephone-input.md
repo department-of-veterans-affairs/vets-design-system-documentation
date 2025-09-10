@@ -4,7 +4,7 @@ permalink: /components/form/telephone-input
 has-parent: /components/form/
 title: Telephone Input
 intro-text: "Use the telephone input component to help users enter a telephone number."
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=31366-83
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=31366-83
 web-component: va-telephone-input
 web: true
 mobile-app: false

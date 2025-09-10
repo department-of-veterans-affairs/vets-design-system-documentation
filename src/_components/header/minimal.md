@@ -5,7 +5,7 @@ permalink: /components/header/header-minimal
 has-parent: /components/header/
 contributors: Ben Brasso (Agile 6), Ya-ching Tsao (CivicActions), Zach Park (Agile 6), Kristen McConnell (Ad Hoc)
 intro-text: The minimal header can be used when navigating away would prevent the user from easily accomplishing their main task.
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=988%3A1384&mode=design&t=jMcVWkPlFhZu3RTh-1
 example-link: https://staging.va.gov/mock-form-minimal-header/
 web-component: va-header-minimal
 web: true

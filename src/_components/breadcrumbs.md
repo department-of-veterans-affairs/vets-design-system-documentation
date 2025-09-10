@@ -2,7 +2,7 @@
 layout: component
 title: Breadcrumbs
 intro-text: "Breadcrumbs provide secondary navigation to help users understand where they are in a website. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results (for unauthenticated content that doesn’t require users to be logged in). This can improve rankings, and provide users with additional context."
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A151&mode=design&t=ep6tlGT5gNsbWqGP-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A151&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-breadcrumbs
 web: true
