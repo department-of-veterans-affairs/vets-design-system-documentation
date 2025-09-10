@@ -4,9 +4,12 @@
 
 <h2 id="code-usage">Code usage</h2>
 
+{% if page.web == true %}
+<h3>Web</h3>
+
   {% if component.props != empty %}
   <div style="max-width: 100%;">
-  <h3>Attributes and Properties</h3>
+  <h4>Attributes and Properties</h4>
 
 <va-table table-type="bordered">
   <va-table-row>
@@ -31,7 +34,7 @@
 
 {% if component.events != empty %}
 <div style="max-width: 100%;">
-  <h3>Events</h3>
+  <h4>Events</h4>
 
   <va-table table-type="bordered">
     <va-table-row>
@@ -54,7 +57,68 @@
   </va-table>
 
 </div>
-      {% endif %}
+{% endif %}
+{% endif %}
+
+{% comment %} Mobile App Component Documentation {% endcomment %}
+{% if page.mobile-app == true %}
+  {% assign storybook_name = include.component_name | replace: 'va-', '' | replace: '-', '_' %}
+  
+  {% for mobile_app_component in site.data.mobile-app-component-docs-source.components %}
+    {% if mobile_app_component.tag == include.component_name %}
+
+<h3>Mobile app</h3>
+
+{% if mobile_app_component.props != empty %}
+<div style="max-width: 100%;">
+  <h4>Props</h4>
+
+  <va-table table-type="bordered">
+    <va-table-row>
+      <span>Property</span>
+      <span>Type</span>
+      <span>Default</span>
+      <span>Description</span>
+    </va-table-row>
+    {% for prop in mobile_app_component.props %}
+    <va-table-row>
+      <span><code class="code">{{ prop.name }}</code></span>
+      <span>{% if prop.type %}<code class="code">{{ prop.type }}</code>{% endif %}</span>
+      <span>{% if prop.default %}<code class="code">{{ prop.default }}</code>{% endif %}</span>
+      <span>{{ prop.docs | markdownify }}</span>
+    </va-table-row>
+    {% endfor %}
+  </va-table>
+</div>
+{% endif %}
+
+{% if mobile_app_component.events != empty %}
+<div style="max-width: 100%;">
+  <h4>Events</h4>
+
+  <va-table table-type="bordered">
+    <va-table-row>
+      <span>Name</span>
+      <span>Description</span>
+    </va-table-row>
+    {% for event in mobile_app_component.events %}
+    <va-table-row>
+      <span><code class="code">{{ event.name }}</code></span>
+      <span>{{ event.docs }}</span>
+    </va-table-row>
+    {% endfor %}
+  </va-table>
+</div>
+{% endif %}
+
+<p>For additional usage examples and interactive demos, view the <a href="https://design.va.gov/storybook/?path=/docs/va-mobile_{{ storybook_name }}--docs" target="_blank" rel="noopener noreferrer">{{ include.component_name }} mobile app component in Storybook</a>.</p>
+
+      {% break %}
     {% endif %}
+  {% endfor %}
+{% endif %}
+
+    {% endif %}
+    {% break %}
   {% endif %}
 {% endfor %}

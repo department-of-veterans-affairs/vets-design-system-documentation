@@ -4,7 +4,8 @@ permalink: /components/button/
 title: Button
 intro-text: A button draws attention to important actions with a large selectable surface.
 research-link: Buttons
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link-mobile-app: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
 status: use-deployed
 sub-pages:
   - sub-page: Button group

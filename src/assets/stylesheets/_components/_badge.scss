@@ -126,19 +126,6 @@ main {
   
   // Reset any default USWDS margins to ensure consistent spacing
   margin: 0 !important;
-  
-  // Platform and component label colors
-  &.usa-label--web {
-    @include badge-colors($color-green);
-  }
-
-  &.usa-label--mobile {
-    @include badge-colors($color-primary);
-  }
-
-  &.usa-label--platform {
-    @include badge-colors($color-green);
-  }
 
   &.component-label {
     @include badge-colors(#71767a);
