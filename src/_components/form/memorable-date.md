@@ -87,7 +87,7 @@ anchors:
 
 ### Hint text
 
-*  During workflows where dates of life events, periods of service, and more, come in heavy multiples, the default hint text can be hidden using the `hide-hint-text` attribute.
+*  During workflows where dates of life events, periods of service, and more, come in heavy multiples, the default hint text can be hidden using the `remove-date-hint` attribute.
 * For adding extra hint text, refer to the [hint text example](#extra-hint-text) above.
 
 <va-link-action
