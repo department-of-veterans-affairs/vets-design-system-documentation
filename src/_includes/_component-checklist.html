@@ -2,7 +2,7 @@
 {% assign mobile_app_name = name | replace: "va-", "" %}
 {% assign components = site.data.component-checklist %}
 {% assign component = components | map: name %}
-{% assign mobile_app_component = site.data.component-checklist.mobile-app | map: mobile_app_name %}
+{% assign mobile_app_component = component %}
 {% assign definitions = components | map: "definitions" %}
 
 {% comment %} Extract completion dates {% endcomment %}
