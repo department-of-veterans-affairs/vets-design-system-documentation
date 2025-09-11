@@ -29,7 +29,14 @@ assignees: ''
 - Device: (e.g. iPhone 8, Macbook)
 - Browser: (e.g. Firefox, IE 11)
 
-Steps to reproduce:
+**URL(s) where this bug occurs**
+
+-
+-
+-
+
+
+**Steps to reproduce:**
 
 1.
 2.

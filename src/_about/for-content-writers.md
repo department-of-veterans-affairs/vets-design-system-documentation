@@ -5,7 +5,7 @@ intro-text: The purpose of the VA.gov content style guide is to help you create 
 slug: content-writers
 ---
 
-If you’re new to our site, we recommend starting with the <a href="{{ site.baseurl }}/content-style-guide/">Overview</a> and <a href="{{ site.baseurl }}/content-style-guide/content-principles">Content principles</a>
+If you’re new to our site, we recommend starting with the <a href="{{ site.baseurl }}/content-style-guide/">Overview</a> and <a href="{{ site.baseurl }}/content-style-guide/content-principles">Content principles</a>.
 
 We’ve also pulled out a few sections below that address common questions. Because this is a living document that will be updated and added to over time, we encourage you to sign up for email updates.
 
@@ -24,6 +24,10 @@ Use our in-house style for common words on VA.gov, so we can use words and label
 ### [Writing for SEO]({{ site.baseurl }}/content-style-guide/seo)
 
 See basic SEO tips and best practices for making content findable in searches.
+
+### [Contributing docs to the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/contributing-to-docs)
+
+Find resources for writing for this website, as well as the [style guide for the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/vads-content-style-guide).
 
 ## Get content guidance early from the Content and IA team
 

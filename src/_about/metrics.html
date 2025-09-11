@@ -1,0 +1,858 @@
+---
+layout: default
+title: Metrics Dashboard
+permalink: /about/metrics/
+---
+
+<h1>Metrics Dashboard</h1>
+
+<p>This dashboard provides insights into the health and adoption of the VA Design System. Metrics are updated weekly to track our progress toward key objectives.</p>
+
+<div class="metrics-dashboard">
+  
+  <h2>Summary Metrics</h2>
+  
+  <div class="metrics-grid">
+    <va-card class="metric-card">
+      <h4>Open Issues</h4>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues">-</div>
+      <div class="metric-trend" id="open-issues-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
+    </va-card>
+    
+    <va-card class="metric-card">
+      <h4>Closed This Month</h4>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month">-</div>
+      <div class="metric-trend" id="closed-month-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
+    </va-card>
+    
+    <va-card class="metric-card">
+      <h4>Average Resolution Time</h4>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution">-</div>
+      <div class="metric-trend" id="avg-resolution-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
+    </va-card>
+    
+    <va-card class="metric-card">
+      <h4>Total Components</h4>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components">-</div>
+      <div class="metric-trend" id="total-components-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
+    </va-card>
+    
+    <va-card class="metric-card">
+      <h4>Most Used Component</h4>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component">-</div>
+      <div class="metric-trend" id="most-used-component-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
+    </va-card>
+    
+    <va-card class="metric-card">
+      <h4>Total Component Usages</h4>
+      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages">-</div>
+      <div class="metric-trend" id="total-usages-trend">
+        <!-- Trend indicator will be populated by JavaScript -->
+      </div>
+    </va-card>
+  </div>
+  
+  <h2>Issue Tracking Metrics</h2>
+  
+  <div class="metrics-section">
+    <h3>Issue Activity by Quarter</h3>
+    <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
+    <div id="quarterly-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+  </div>
+  
+  <h2>Component Usage Metrics</h2>
+  
+  <div class="metrics-section">
+    <h3>Top Components by Usage</h3>
+    <p>Most frequently used design system components across all VA applications</p>
+    <div class="data-freshness" id="component-data-freshness">
+      <!-- Data freshness indicator will be populated by JavaScript -->
+    </div>
+    <div id="top-components-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+  </div>
+
+  <h2>Monthly Analytics</h2>
+  
+  <div class="metrics-section">
+    <h3>Top 25 Pages</h3>
+    <p>The most visited pages of design.va.gov</p>
+    <div class="monthly-reports-static">
+      <div class="report-item">
+        <h4>August 2025</h4>
+        <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-08.png" target="_blank" />
+      </div>
+    </div>
+  </div>
+  
+  <h2>Contributions</h2>
+  
+  <div class="metrics-section">
+    <h3>Monthly new issues created</h3>
+    <p>Displays the rate of new issues opened per time period to track community engagement</p>
+    <div id="velocity-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+  </div>
+  
+  <div class="metrics-section">
+    <h3>Experimental Design Issues by Quarter</h3>
+    <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
+    <div id="experimental-chart" class="chart-container">
+      <!-- Chart will be rendered here -->
+    </div>
+  </div>
+  
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+// Load metrics data and render charts
+document.addEventListener('DOMContentLoaded', function() {
+  loadMetricsData();
+  
+  // Add responsive behavior
+  window.addEventListener('resize', function() {
+    // Clear existing charts and re-render
+    document.getElementById('quarterly-chart').innerHTML = '';
+    document.getElementById('velocity-chart').innerHTML = '';
+    document.getElementById('top-components-chart').innerHTML = '';
+    document.getElementById('experimental-chart').innerHTML = '';
+    
+    // Re-fetch and render with new dimensions
+    loadMetricsData();
+  });
+});
+
+function loadMetricsData() {
+  console.log('loadMetricsData() called - starting data fetch');
+  
+  // Load issue metrics and component usage data
+  Promise.all([
+    fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
+      console.log('issue-metrics.json response:', response.ok, response.status);
+      if (!response.ok) throw new Error('Issue metrics not available');
+      return response.json();
+    }),
+    fetch('{{ site.baseurl }}/assets/data/metrics/component-usage.json').then(response => {
+      console.log('component-usage.json response:', response.ok, response.status);
+      if (!response.ok) throw new Error('Component usage not available');
+      return response.json();
+    })
+  ])
+  .then(([issueData, componentData]) => {
+    console.log('Data loaded successfully:', { issueData, componentData });
+    
+    // Render issue tracking charts
+    renderQuarterlyChart(issueData.quarterly);
+    renderVelocityChart(issueData.velocity);
+    
+    // Render experimental design chart if data exists
+    if (issueData.experimental_quarterly) {
+      renderExperimentalChart(issueData.experimental_quarterly);
+    }
+    
+    // Render component usage charts
+    renderTopComponentsChart(componentData);
+    
+    // Update metric cards
+    updateMetricCards(issueData.summary, componentData.summary_stats);
+  })
+  .catch(error => {
+    console.log('Data fetch failed, showing placeholders:', error.message);
+    showPlaceholders();
+  });
+}
+
+function showPlaceholders() {
+  console.log('showPlaceholders() called - adding sample trend data');
+  
+  document.getElementById('quarterly-chart').innerHTML = 
+    '<div class="chart-placeholder">Quarterly activity chart will be available once data collection is set up</div>';
+  document.getElementById('velocity-chart').innerHTML = 
+    '<div class="chart-placeholder">Velocity chart will be available once data collection is set up</div>';
+  document.getElementById('experimental-chart').innerHTML = 
+    '<div class="chart-placeholder">Experimental design chart will be available once data collection is set up</div>';
+  document.getElementById('top-components-chart').innerHTML = 
+    '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
+  
+  // Show sample data with trend indicators
+  document.getElementById('open-issues').textContent = '42';
+  document.getElementById('closed-month').textContent = '28';
+  document.getElementById('avg-resolution').textContent = '14 days';
+  document.getElementById('total-components').textContent = '95';
+  document.getElementById('most-used-component').textContent = 'va-button';
+  document.getElementById('total-usages').textContent = '1,247';
+  
+  // Sample trend data to demonstrate the functionality
+  const sampleTrends = {
+    open_issues_trend: { direction: 'down', percentage: 12, value: -5 },
+    closed_month_trend: { direction: 'up', percentage: 35, value: 10 },
+    resolution_time_trend: { direction: 'down', percentage: 8, value: -1 },
+    components_trend: { direction: 'up', percentage: 5, value: 5 },
+    usage_trend: { direction: 'up', percentage: 23, value: 234 }
+  };
+  
+  console.log('Sample trends data:', sampleTrends);
+  
+  updateTrendIndicator('open-issues-trend', sampleTrends.open_issues_trend, 'compared to last month');
+  updateTrendIndicator('closed-month-trend', sampleTrends.closed_month_trend, 'compared to previous month');
+  updateTrendIndicator('avg-resolution-trend', sampleTrends.resolution_time_trend, 'compared to last quarter');
+  updateTrendIndicator('total-components-trend', sampleTrends.components_trend, 'compared to last quarter');
+  
+  // Most used component gets a special trend indicator
+  const mostUsedElement = document.getElementById('most-used-component-trend');
+  mostUsedElement.className = 'metric-trend trend-neutral';
+  mostUsedElement.innerHTML = '<span>Most popular this month</span>';
+  console.log('Set most used component trend:', mostUsedElement.innerHTML);
+  
+  updateTrendIndicator('total-usages-trend', sampleTrends.usage_trend, 'compared to last month');
+  
+  console.log('showPlaceholders() completed');
+}
+
+function renderQuarterlyChart(data) {
+  if (!data || data.length === 0) {
+    showPlaceholders();
+    return;
+  }
+  
+  const container = document.getElementById('quarterly-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 60 : 80, 
+    bottom: containerWidth < 600 ? 50 : 60, 
+    left: containerWidth < 600 ? 50 : 60
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#quarterly-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Format quarter labels
+  const formatQuarter = (period) => {
+    const [year, quarter] = period.split('-');
+    return `${quarter} ${year}`;
+  };
+  
+  // Setup scales
+  const x0 = d3.scaleBand()
+    .domain(data.map(d => d.period))
+    .range([0, width])
+    .padding(0.1);
+    
+  const x1 = d3.scaleBand()
+    .domain(['opened', 'closed'])
+    .range([0, x0.bandwidth()])
+    .padding(0.05);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => Math.max(d.issues_opened, d.issues_closed))])
+    .range([height, 0]);
+  
+  // Color scale - using VA accessible colors
+  const color = d3.scaleOrdinal()
+    .domain(['opened', 'closed'])
+    .range(['#0071bb', '#112e51']); // VA primary blue and dark blue
+  
+  // Add axes
+  const tickInterval = containerWidth < 600 ? 4 : 2; // Show fewer labels on mobile
+  const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
+    .map(d => d.period);
+  
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x0)
+      .tickValues(tickValues)
+      .tickFormat(formatQuarter)
+    );
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)');
+    
+  g.append('g')
+    .call(d3.axisLeft(y));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Number of Issues');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Quarter');
+  
+  // Add grouped bars
+  const quarters = g.selectAll('.quarter')
+    .data(data)
+    .enter().append('g')
+    .attr('class', 'quarter')
+    .attr('transform', d => `translate(${x0(d.period)},0)`);
+  
+  quarters.selectAll('rect')
+    .data(d => [
+      { type: 'opened', value: d.issues_opened },
+      { type: 'closed', value: d.issues_closed }
+    ])
+    .enter().append('rect')
+    .attr('x', d => x1(d.type))
+    .attr('y', d => y(d.value))
+    .attr('width', x1.bandwidth())
+    .attr('height', d => height - y(d.value))
+    .attr('fill', d => color(d.type));
+  
+  // Add legend - positioned to avoid overlap with tall bars
+  const legend = g.append('g')
+    .attr('transform', `translate(${width - 180}, 20)`);
+    
+  const legendData = ['opened', 'closed'];
+  const legendItems = legend.selectAll('.legend-item')
+    .data(legendData)
+    .enter().append('g')
+    .attr('class', 'legend-item')
+    .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+    
+  legendItems.append('rect')
+    .attr('width', 18)
+    .attr('height', 18)
+    .attr('fill', d => color(d));
+    
+  legendItems.append('text')
+    .attr('x', 25)
+    .attr('y', 9)
+    .attr('dy', '0.35em')
+    .style('text-transform', 'capitalize')
+    .text(d => d);
+}
+
+function renderVelocityChart(data) {
+  if (!data || data.length === 0) {
+    return;
+  }
+  
+  const container = document.getElementById('velocity-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 20 : 30, 
+    bottom: containerWidth < 600 ? 80 : 70, // Extra space for rotated labels on mobile
+    left: containerWidth < 600 ? 50 : 60
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#velocity-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Format period labels to be more readable
+  const formatPeriod = (period) => {
+    const [year, month] = period.split('-');
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
+                       'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return `${monthNames[parseInt(month) - 1]} ${year}`;
+  };
+  
+  // Setup scales
+  const x = d3.scaleBand()
+    .domain(data.map(d => d.period))
+    .range([0, width])
+    .padding(0.1);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => d.issues_opened)])
+    .range([height, 0]);
+  
+  // Add axes with custom formatting - responsive tick frequency
+  const tickInterval = containerWidth < 600 ? 12 : 6; // Show fewer labels on mobile
+  const tickIndices = [];
+  for (let i = 0; i < data.length; i += tickInterval) {
+    tickIndices.push(i);
+  }
+  // Always include the last index if not already included
+  if (!tickIndices.includes(data.length - 1)) {
+    tickIndices.push(data.length - 1);
+  }
+  
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x)
+      .tickValues(tickIndices.map(i => data[i].period))
+      .tickFormat(formatPeriod)
+    );
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)');
+    
+  g.append('g')
+    .call(d3.axisLeft(y));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Issues Opened');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 5})`)
+    .style('text-anchor', 'middle')
+    .text('Time Period');
+  
+  // Add bars
+  g.selectAll('.bar')
+    .data(data)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.period))
+    .attr('width', x.bandwidth())
+    .attr('y', d => y(d.issues_opened))
+    .attr('height', d => height - y(d.issues_opened))
+    .attr('fill', '#0071bb');
+}
+
+function renderExperimentalChart(data) {
+  if (!data || data.length === 0) {
+    document.getElementById('experimental-chart').innerHTML = 
+      '<div class="chart-placeholder">No experimental design data available yet</div>';
+    return;
+  }
+  
+  const container = document.getElementById('experimental-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 60 : 80, 
+    bottom: containerWidth < 600 ? 50 : 60, 
+    left: containerWidth < 600 ? 50 : 60
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#experimental-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Format quarter labels
+  const formatQuarter = (period) => {
+    const [year, quarter] = period.split('-');
+    return `${quarter} ${year}`;
+  };
+  
+  // Setup scales
+  const x0 = d3.scaleBand()
+    .domain(data.map(d => d.period))
+    .range([0, width])
+    .padding(0.1);
+    
+  const x1 = d3.scaleBand()
+    .domain(['opened', 'closed', 'implemented'])
+    .range([0, x0.bandwidth()])
+    .padding(0.05);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(data, d => Math.max(d.issues_opened, d.issues_closed, d.issues_implemented || 0))])
+    .range([height, 0]);
+  
+  // Color scale - using VA accessible colors with different shades for experimental design
+  const color = d3.scaleOrdinal()
+    .domain(['opened', 'closed', 'implemented'])
+    .range(['#f9c642', '#e59100', '#2e8540']); // VA gold/yellow for opened/closed, green for implemented
+  
+  // Add axes
+  const tickInterval = containerWidth < 600 ? 4 : 2; // Show fewer labels on mobile
+  const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
+    .map(d => d.period);
+  
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x0)
+      .tickValues(tickValues)
+      .tickFormat(formatQuarter)
+    );
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)');
+    
+  g.append('g')
+    .call(d3.axisLeft(y));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Number of Issues');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Quarter');
+  
+  // Add grouped bars
+  const quarters = g.selectAll('.quarter')
+    .data(data)
+    .enter().append('g')
+    .attr('class', 'quarter')
+    .attr('transform', d => `translate(${x0(d.period)},0)`);
+  
+  quarters.selectAll('rect')
+    .data(d => [
+      { type: 'opened', value: d.issues_opened },
+      { type: 'closed', value: d.issues_closed },
+      { type: 'implemented', value: d.issues_implemented || 0 }
+    ])
+    .enter().append('rect')
+    .attr('x', d => x1(d.type))
+    .attr('y', d => y(d.value))
+    .attr('width', x1.bandwidth())
+    .attr('height', d => height - y(d.value))
+    .attr('fill', d => color(d.type))
+    .style('cursor', 'pointer')
+    .on('mouseover', function(event, d) {
+      // Create tooltip
+      const tooltip = d3.select('body').append('div')
+        .attr('class', 'chart-tooltip')
+        .style('opacity', 0)
+        .style('position', 'absolute')
+        .style('background', 'rgba(0, 0, 0, 0.8)')
+        .style('color', 'white')
+        .style('padding', '8px 12px')
+        .style('border-radius', '4px')
+        .style('font-size', '12px')
+        .style('pointer-events', 'none')
+        .style('z-index', '1000');
+      
+      tooltip.transition()
+        .duration(200)
+        .style('opacity', 1);
+        
+      const displayType = d.type === 'implemented' ? 'added to system' : d.type;
+      tooltip.html(`${displayType}: ${d.value}`)
+        .style('left', (event.pageX + 10) + 'px')
+        .style('top', (event.pageY - 28) + 'px');
+        
+      // Highlight the bar
+      d3.select(this).style('opacity', 0.8);
+    })
+    .on('mouseout', function() {
+      // Remove tooltip
+      d3.selectAll('.chart-tooltip').remove();
+      
+      // Reset bar opacity
+      d3.select(this).style('opacity', 1);
+    });
+  
+  // Add legend - positioned to avoid overlap with tall bars
+  const legend = g.append('g')
+    .attr('transform', `translate(20, 20)`); // Moved to top-left
+    
+  const legendData = ['opened', 'closed', 'implemented'];
+  const legendItems = legend.selectAll('.legend-item')
+    .data(legendData)
+    .enter().append('g')
+    .attr('class', 'legend-item')
+    .attr('transform', (d, i) => `translate(0, ${i * 20})`);
+    
+  legendItems.append('rect')
+    .attr('width', 18)
+    .attr('height', 18)
+    .attr('fill', d => color(d));
+    
+  legendItems.append('text')
+    .attr('x', 25)
+    .attr('y', 9)
+    .attr('dy', '0.35em')
+    .style('text-transform', 'capitalize')
+    .text(d => d === 'implemented' ? 'added to system' : d);
+}
+
+
+function renderTopComponentsChart(data) {
+  if (!data || !data.top_components_overall) {
+    return;
+  }
+  
+  const container = document.getElementById('top-components-chart');
+  const containerWidth = container.clientWidth;
+  
+  // Responsive margins based on screen size
+  const margin = {
+    top: 20, 
+    right: containerWidth < 600 ? 30 : 40, 
+    bottom: containerWidth < 600 ? 120 : 100, 
+    left: containerWidth < 600 ? 60 : 80
+  };
+  
+  const width = containerWidth - margin.left - margin.right;
+  const height = (containerWidth < 600 ? 350 : 450) - margin.top - margin.bottom;
+  
+  const svg = d3.select('#top-components-chart')
+    .append('svg')
+    .attr('width', width + margin.left + margin.right)
+    .attr('height', height + margin.top + margin.bottom);
+    
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  // Take top 10 components
+  const topComponents = data.top_components_overall.slice(0, 10);
+  
+  // Setup scales
+  const x = d3.scaleBand()
+    .domain(topComponents.map(d => d.name))
+    .range([0, width])
+    .padding(0.1);
+    
+  const y = d3.scaleLinear()
+    .domain([0, d3.max(topComponents, d => d.usage_count)])
+    .range([height, 0]);
+  
+  // Add axes
+  const xAxis = g.append('g')
+    .attr('transform', `translate(0,${height})`)
+    .call(d3.axisBottom(x));
+    
+  // Rotate x-axis labels for better readability
+  xAxis.selectAll('text')
+    .style('text-anchor', 'end')
+    .attr('dx', '-.8em')
+    .attr('dy', '.15em')
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '10px' : '12px');
+    
+  g.append('g')
+    .call(d3.axisLeft(y));
+  
+  // Add axis labels
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('y', 0 - margin.left)
+    .attr('x', 0 - (height / 2))
+    .attr('dy', '1em')
+    .style('text-anchor', 'middle')
+    .text('Usage Count');
+    
+  g.append('text')
+    .attr('transform', `translate(${width / 2}, ${height + margin.bottom - 10})`)
+    .style('text-anchor', 'middle')
+    .text('Component');
+  
+  // Add bars
+  g.selectAll('.bar')
+    .data(topComponents)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('x', d => x(d.name))
+    .attr('width', x.bandwidth())
+    .attr('y', d => y(d.usage_count))
+    .attr('height', d => height - y(d.usage_count))
+    .attr('fill', '#0071bb');
+    
+  // Add value labels on bars
+  g.selectAll('.bar-label')
+    .data(topComponents)
+    .enter().append('text')
+    .attr('class', 'bar-label')
+    .attr('x', d => x(d.name) + x.bandwidth() / 2)
+    .attr('y', d => y(d.usage_count) - 5)
+    .attr('text-anchor', 'middle')
+    .style('font-size', '12px')
+    .style('font-weight', 'bold')
+    .text(d => d.usage_count);
+}
+
+function formatComponentType(type) {
+  const typeMap = {
+    'v3': 'V3 Web Components',
+    'v1': 'V1 Web Components', 
+    'react': 'React Components',
+    'icons': 'Icons'
+  };
+  return typeMap[type] || type;
+}
+
+function updateMetricCards(issueSummary, componentSummary) {
+  console.log('updateMetricCards called with:', { issueSummary, componentSummary });
+  
+  // Update issue metrics
+  if (issueSummary) {
+    document.getElementById('open-issues').textContent = issueSummary.open_issues || '-';
+    document.getElementById('closed-month').textContent = issueSummary.closed_this_month || '-';
+    document.getElementById('avg-resolution').textContent = issueSummary.avg_resolution_days ? 
+      `${issueSummary.avg_resolution_days} days` : '-';
+    
+    // Add trend indicators for issue metrics using real data
+    if (issueSummary.open_issues_trend) {
+      updateTrendIndicator('open-issues-trend', issueSummary.open_issues_trend, 'compared to last month');
+    }
+    if (issueSummary.closed_month_trend) {
+      updateTrendIndicator('closed-month-trend', issueSummary.closed_month_trend, 'compared to previous month');
+    }
+    if (issueSummary.resolution_time_trend) {
+      updateTrendIndicator('avg-resolution-trend', issueSummary.resolution_time_trend, 'compared to last quarter');
+    }
+  }
+  
+  // Update component metrics
+  if (componentSummary) {
+    document.getElementById('total-components').textContent = componentSummary.total_components || '-';
+    document.getElementById('most-used-component').textContent = componentSummary.most_used || '-';
+    document.getElementById('total-usages').textContent = componentSummary.total_usages || '-';
+    
+    // Add trend indicators for component metrics - use real data if available, otherwise sample data
+    const componentsTrend = componentSummary.components_trend || { direction: 'up', percentage: 5, value: 5 };
+    const usageTrend = componentSummary.usage_trend || { direction: 'up', percentage: 23, value: 234 };
+    
+    updateTrendIndicator('total-components-trend', componentsTrend, 'compared to last quarter');
+    updateTrendIndicator('total-usages-trend', usageTrend, 'compared to last month');
+    
+    // Most used component gets a special trend indicator
+    const mostUsedElement = document.getElementById('most-used-component-trend');
+    mostUsedElement.className = 'metric-trend trend-neutral';
+    mostUsedElement.innerHTML = '<span>Most popular this month</span>';
+    
+    // Update component data freshness indicator
+    updateDataFreshness(componentSummary);
+  }
+}
+
+function updateDataFreshness(componentSummary) {
+  const freshnessElement = document.getElementById('component-data-freshness');
+  if (!freshnessElement || !componentSummary) return;
+  
+  let freshnessText = '';
+  let cssClass = 'vads-u-color--gray-medium';
+  
+  if (componentSummary.data_source === 'component-library/ds-components' && componentSummary.report_date) {
+    // Fresh CSV data
+    const reportDate = new Date(componentSummary.report_date);
+    const formattedDate = reportDate.toLocaleDateString('en-US', { 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+    
+    const applicationsText = componentSummary.applications_tracked ? 
+      ` across ${componentSummary.applications_tracked} VA applications` : '';
+    
+    freshnessText = `Data from ${formattedDate}${applicationsText}`;
+    
+    // Check if data is getting stale (older than 14 days)
+    const daysSince = Math.floor((Date.now() - reportDate.getTime()) / (1000 * 60 * 60 * 24));
+    if (daysSince > 14) {
+      freshnessText += ` (${daysSince} days ago)`;
+      cssClass = 'vads-u-color--warning-darker';
+    }
+    
+  } else if (componentSummary.data_source === 'fallback-data') {
+    // Using fallback due to error
+    freshnessText = '⚠️ Using fallback data - latest data temporarily unavailable';
+    cssClass = 'vads-u-color--warning-darker';
+    
+  } else if (componentSummary.data_source === 'fallback-sample-data') {
+    // Clean fallback data
+    freshnessText = 'Sample data for demonstration purposes';
+    cssClass = 'vads-u-color--gray-medium';
+    
+  } else {
+    // Unknown or placeholder
+    freshnessText = 'Data collection in progress';
+    cssClass = 'vads-u-color--gray-medium';
+  }
+  
+  freshnessElement.innerHTML = `<small class="${cssClass}">${freshnessText}</small>`;
+}
+
+function updateTrendIndicator(elementId, trendData, timeframe) {
+  const element = document.getElementById(elementId);
+  if (!element || !trendData) {
+    return;
+  }
+  
+  const { direction, percentage, value } = trendData;
+  
+  let iconSymbol, trendClass, trendText;
+  
+  // Determine icon and styling based on trend direction and metric type
+  const isNegativeMetric = elementId.includes('resolution') || elementId.includes('open-issues');
+  
+  if (direction === 'up') {
+    iconSymbol = '↗';
+    trendClass = isNegativeMetric ? 'trend-down' : 'trend-up';
+    trendText = `${percentage}% ${timeframe}`;
+  } else if (direction === 'down') {
+    iconSymbol = '↘';
+    trendClass = isNegativeMetric ? 'trend-up' : 'trend-down';
+    trendText = `${percentage}% ${timeframe}`;
+  } else {
+    iconSymbol = '→';
+    trendClass = 'trend-neutral';
+    trendText = `No change ${timeframe}`;
+  }
+  
+  element.className = `metric-trend ${trendClass}`;
+  element.innerHTML = `
+    <span class="trend-icon">${iconSymbol}</span>
+    <span>${trendText}</span>
+  `;
+}
+</script>

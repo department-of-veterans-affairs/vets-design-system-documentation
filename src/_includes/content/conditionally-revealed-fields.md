@@ -7,7 +7,11 @@ When using conditionally revealed fields:
 1. **Limit to one reveal per page.** Avoid confusing the user with multiple expanding sections.
 2. **Ensure keyboard accessibility.** When a user selects the trigger option, they should be able to tab directly into the newly revealed field (which is why the trigger option is placed last).
 3. **Make the revealed question self-explanatory.** Avoid vague labels like "Other" for text fields. Instead, use clear, specific labels that work independently:
-
 > Since your relationship with the veteran was not listed, please describe it here
+4. **Create distinct error messages.** When using conditionally revealed fields, provide one error message for the main radio or checkbox group, and a separate error message for the newly required revealed field.
 
 {% include component-example.html alt="An example of a conditionally revealed field" file="/images/patterns/ask-users-for/relationship/relationship-to-veteran-other.png" caption="Example of asking the relationship to the Veteran with radio buttons and a conditionally revealed field." width="50%" %}
+
+{% include component-example.html alt="An example of a conditionally revealed group with error message" file="/images/patterns/ask-users-for/relationship/relationship-to-veteran-error.png" caption="Example of asking the relationship to the Veteran with radio buttons showing the error message." width="50%" %}
+
+{% include component-example.html alt="An example of a conditionally revealed group with error message" file="/images/patterns/ask-users-for/relationship/relationship-to-veteran-other-error.png" caption="Example of asking the relationship to the Veteran with radio buttons and a conditionally revealed field showing the error message." width="50%" %}

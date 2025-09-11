@@ -78,19 +78,19 @@ anchors:
 
 #### When to use a button
 
-* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#links-vs-buttons).
+* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
 * **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window.
 
 #### When to consider something else
 
-* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [links vs. buttons](#links-vs-buttons).
-* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/action-link).
+* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
+* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/link/#choose-the-right-element-buttons-vs-links).
 
 #### Behavior
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
-* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/foundation/icons#requesting-a-new-icon) .
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) .
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
 
 ### Choosing between variations
