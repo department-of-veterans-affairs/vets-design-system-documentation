@@ -11,7 +11,7 @@ anchors:
   - anchor: Timeline to get a new component to prod
 ---
 
-This page provides guidance for contributing code and component contributions to the VA Design System (VADS) site. For guidance contributions, see the [designers contribution guide](/about/designers/contributing-to-docs).
+This page provides guidance for contributing code and component contributions to the VA Design System (VADS) site. For documentation contributions, see the [Contributing to docs guide]({{ site.baseurl }}/about/contributing-to-the-design-system/contributing-to-docs).
 
 ## Getting started
 
@@ -41,7 +41,7 @@ Regardless of which type of contribution you are making, each PR should:
 
 #### Designers
 
-For guidance on contributing documentation (not code or components), see the [documentation contributor guide](/about/designers/contributing-to-docs).
+For guidance on contributing documentation (not code or components), see the [documentation contributor guide]({{site.baseurl}}/about/contributing-to-the-design-system/contributing-to-docs).
 
 ## Modifying existing components
 
@@ -55,13 +55,13 @@ PRs which make a change to the Design System should be manageable in size. This 
 - Keep PRs tightly focused
 - Keep the review process short
 
-Be sure to follow the steps outlined in the [Getting Started](/about/developers/contributing#getting-started) section above and submit your pull request when it's ready to be reviewed by the Design System Team engineers and designers. You can reach out to the #platform-design-system Slack channel with questions.
+Be sure to follow the steps outlined in the [Getting Started](/about/developers/contributing#getting-started) section above and submit your pull request when it's ready to be reviewed by the Design System Team engineers and designers. You can reach out to the [{{site.slack_channel_name}}]({{site.slack_channel_link}}) Slack channel with questions.
 
 ## Contributing new components
 
 This section details how to contribute new components. If you haven't read it already, refer to the [contributing to the design system]({{ site.baseurl }}/about/contributing-to-the-design-system) page for more information about the full process. If you're unsure if you're ready to start creating a new component, make sure you've gone through the [experimental design process details]({{ site.baseurl }}/about/contributing-to-the-design-system) first. 
 
-Reach out to the #platform-design-system Slack channel with questions.
+Reach out to the [{{site.slack_channel_name}}]({{site.slack_channel_link}}) Slack channel with questions.
 
 ### General considerations
 
@@ -71,6 +71,8 @@ Each component should:
 - Not introduce breaking changes
 
 Developing the component as if it had no dependencies on anything within the vets-website will make the code more reusable.
+
+Follow [naming conventions for components]({{ site.baseurl }}/about/naming-conventions/).
 
 ### Creating a new component
 

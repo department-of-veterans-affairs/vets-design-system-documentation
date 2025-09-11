@@ -5,13 +5,6 @@ draft: false
 permalink: /about/designers/contributing-a-template-or-pattern
 has-parent: /about/designers/
 intro-text: Guidance for contributing a template or pattern to the VA.gov Design System. This page explains the process, requirements, and best practices for adding new templates or patterns.
-anchors:
-  - anchor: Overview
-  - anchor: What is a template or pattern?
-  - anchor: How to contribute
-  - anchor: Requirements
-  - anchor: Figma and documentation
-  - anchor: Review and approval
 ---
 
 ## Overview
@@ -29,7 +22,7 @@ See [What is the difference between components, templates, and patterns?]({{ sit
 
 1. **Check for existing solutions:** Before proposing a new template or pattern, review the [Templates]({{ site.baseurl }}/templates) and [Patterns]({{ site.baseurl }}/patterns) sections to ensure your idea does not already exist.
 2. **Submit a request:** If your idea is new, follow the [experimental design process]({{ site.baseurl }}/about/contributing-to-the-design-system/) to propose your template or pattern. This includes submitting an issue, conducting research, and presenting to the Design System Council.
-3. **Create documentation:** Use the [patterns template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md) or [templates template](ttps://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_templates/template.md) as a starting point. Fill out all sections as best you can. If you are unsure about any section, leave a "TODO:" note for the Design System Team.
+3. **Create documentation:** Use the [patterns template]({{ site.new_pattern_template_raw_link }}) or [templates template]({{ site.new_template_template_raw_link }}) as a starting point. Fill out all sections as best you can. If you are unsure about any section, leave a "TODO:" note for the Design System Team. Refer to [contributing to docs]({{ site.baseurl }}/about/contributing-to-the-design-system/contributing-to-docs) for guidance.
 4. **Add Figma artifacts:** Provide Figma files or links that illustrate the template or pattern. Use the [VADS Figma libraries]({{ site.figma_templates_library }}) and follow naming conventions.
 5. **Submit a pull request:** Add your documentation and assets to the appropriate folder (`src/_patterns/` or `src/_templates/`) and open a pull request for review.
 
