@@ -1,6 +1,6 @@
 ---
 layout: content-style-guide
-title: What’s new
+title: What’s new for content
 intro-text: This page describes the content updates to the content style guide and Design System (components, patterns, and IA) from the most recent 6 months.
 anchors:
   - anchor: August 2025
