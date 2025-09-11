@@ -59,7 +59,7 @@ All of the patterns in the "[Ask users for...]({{ site.baseurl }}/patterns/)" se
 * [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) - One question per page approach
 * [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) - How to collect multiple responses to the same set of questions
 * [Help users to check answers]({{ site.baseurl }}/patterns/help-users-to/check-answers) - Review page guidance
-* * [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) - Confirmation page guidance
+* [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) - Confirmation page guidance
 
 ### Supporting patterns
 * [Help users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) - Breaking down complex processes
