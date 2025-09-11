@@ -50,8 +50,6 @@ Components in the VA Design System support different platforms and devices. Each
 
 - <span class="usa-label usa-label--platform">Web, Mobile app</span> - The component is available on both web and mobile app platforms.
 
-Components may support one or both platforms. The component checklists are organized by platform to provide specific implementation guidance and requirements for each environment.
-
 ## Create or update a component
 
 If you have a new component, or an update to an existing component, consider contributing back to the design system. Reach out to the Design System Team if you have questions.
