@@ -201,9 +201,6 @@ Forms must support users with cognitive disabilities, memory issues, and attenti
 * **Confirmation steps**: Include review pages for important submissions
 * **Recovery guidance**: Provide clear next steps when errors occur
 
-
-
-
 ## Comprehensive accessibility testing
 
 For complete testing methodology guidance, see [Accessibility testing for design system components]({{ site.baseurl }}/accessibility/accessibility-testing-for-design-system-components).
