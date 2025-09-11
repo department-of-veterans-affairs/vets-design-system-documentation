@@ -67,9 +67,39 @@ permalink: /about/metrics/
   <div class="metrics-section">
     <h3>Issue Activity by Quarter</h3>
     <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
-    <div id="quarterly-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
-    </div>
+    
+    <va-tabs>
+      <va-tab-item button-text="Graph" target-id="quarterly-graph-panel"></va-tab-item>
+      <va-tab-item button-text="Table" target-id="quarterly-table-panel"></va-tab-item>
+      
+      <va-tab-panel panel-id="quarterly-graph-panel">
+        <div id="quarterly-chart" 
+             class="chart-container"
+             role="img" 
+             aria-label="Bar chart showing quarterly issue activity with issues opened versus issues closed by quarter"
+             tabindex="0">
+          <!-- Chart will be rendered here -->
+        </div>
+      </va-tab-panel>
+      
+      <va-tab-panel panel-id="quarterly-table-panel">
+        <table class="usa-table usa-table--borderless" 
+               role="table"
+               aria-label="Quarterly issue activity data">
+          <caption>Issue Activity by Quarter: Number of issues opened and closed each quarter</caption>
+          <thead>
+            <tr>
+              <th scope="col">Quarter</th>
+              <th scope="col">Issues Opened</th>
+              <th scope="col">Issues Closed</th>
+            </tr>
+          </thead>
+          <tbody id="quarterly-table-body">
+            <!-- Table data will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </va-tab-panel>
+    </va-tabs>
   </div>
   
   <h2>Component Usage Metrics</h2>
@@ -80,9 +110,38 @@ permalink: /about/metrics/
     <div class="data-freshness" id="component-data-freshness">
       <!-- Data freshness indicator will be populated by JavaScript -->
     </div>
-    <div id="top-components-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
-    </div>
+    
+    <va-tabs>
+      <va-tab-item button-text="Graph" target-id="components-graph-panel"></va-tab-item>
+      <va-tab-item button-text="Table" target-id="components-table-panel"></va-tab-item>
+      
+      <va-tab-panel panel-id="components-graph-panel">
+        <div id="top-components-chart" 
+             class="chart-container"
+             role="img" 
+             aria-label="Bar chart showing top 10 components by usage count across VA applications"
+             tabindex="0">
+          <!-- Chart will be rendered here -->
+        </div>
+      </va-tab-panel>
+      
+      <va-tab-panel panel-id="components-table-panel">
+        <table class="usa-table usa-table--borderless" 
+               role="table"
+               aria-label="Top 25 component usage data">
+          <caption>Top Components by Usage: Top 25 most frequently used design system components</caption>
+          <thead>
+            <tr>
+              <th scope="col">Component Name</th>
+              <th scope="col">Usage Count</th>
+            </tr>
+          </thead>
+          <tbody id="components-table-body">
+            <!-- Table data will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </va-tab-panel>
+    </va-tabs>
   </div>
 
   <h2>Monthly Analytics</h2>
@@ -103,17 +162,77 @@ permalink: /about/metrics/
   <div class="metrics-section">
     <h3>Monthly new issues created</h3>
     <p>Displays the rate of new issues opened per time period to track community engagement</p>
-    <div id="velocity-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
-    </div>
+    
+    <va-tabs>
+      <va-tab-item button-text="Graph" target-id="velocity-graph-panel"></va-tab-item>
+      <va-tab-item button-text="Table" target-id="velocity-table-panel"></va-tab-item>
+      
+      <va-tab-panel panel-id="velocity-graph-panel">
+        <div id="velocity-chart" 
+             class="chart-container"
+             role="img" 
+             aria-label="Line chart showing monthly new issues created over time to track community engagement"
+             tabindex="0">
+          <!-- Chart will be rendered here -->
+        </div>
+      </va-tab-panel>
+      
+      <va-tab-panel panel-id="velocity-table-panel">
+        <table class="usa-table usa-table--borderless" 
+               role="table"
+               aria-label="Monthly issue velocity data">
+          <caption>Monthly New Issues Created: Number of new issues opened each month</caption>
+          <thead>
+            <tr>
+              <th scope="col">Month/Year</th>
+              <th scope="col">Issues Opened</th>
+            </tr>
+          </thead>
+          <tbody id="velocity-table-body">
+            <!-- Table data will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </va-tab-panel>
+    </va-tabs>
   </div>
   
   <div class="metrics-section">
     <h3>Experimental Design Issues by Quarter</h3>
     <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
-    <div id="experimental-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
-    </div>
+    
+    <va-tabs>
+      <va-tab-item button-text="Graph" target-id="experimental-graph-panel"></va-tab-item>
+      <va-tab-item button-text="Table" target-id="experimental-table-panel"></va-tab-item>
+      
+      <va-tab-panel panel-id="experimental-graph-panel">
+        <div id="experimental-chart" 
+             class="chart-container"
+             role="img" 
+             aria-label="Bar chart showing experimental design issues opened, closed, and implemented by quarter"
+             tabindex="0">
+          <!-- Chart will be rendered here -->
+        </div>
+      </va-tab-panel>
+      
+      <va-tab-panel panel-id="experimental-table-panel">
+        <table class="usa-table usa-table--borderless" 
+               role="table"
+               aria-label="Experimental design issues data">
+          <caption>Experimental Design Issues by Quarter: Issues opened, closed, and implemented each quarter</caption>
+          <thead>
+            <tr>
+              <th scope="col">Quarter</th>
+              <th scope="col">Issues Opened</th>
+              <th scope="col">Issues Closed</th>
+              <th scope="col">Issues Implemented</th>
+            </tr>
+          </thead>
+          <tbody id="experimental-table-body">
+            <!-- Table data will be populated by JavaScript -->
+          </tbody>
+        </table>
+      </va-tab-panel>
+    </va-tabs>
   </div>
   
 </div>
@@ -121,8 +240,21 @@ permalink: /about/metrics/
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 // Load metrics data and render charts
+// Global variables to store data for later rendering
+let globalIssueData = null;
+let globalComponentData = null;
+
 document.addEventListener('DOMContentLoaded', function() {
-  loadMetricsData();
+  console.log('DOM Content Loaded - initializing metrics dashboard');
+  
+  // Wait for va-tabs to be ready before rendering charts
+  setTimeout(() => {
+    console.log('Loading metrics data after va-tabs initialization delay');
+    loadMetricsData();
+  }, 100);
+  
+  // Set up tab change listeners to re-render charts when tabs become visible
+  setupTabChangeListeners();
   
   // Add responsive behavior
   window.addEventListener('resize', function() {
@@ -132,10 +264,100 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('top-components-chart').innerHTML = '';
     document.getElementById('experimental-chart').innerHTML = '';
     
-    // Re-fetch and render with new dimensions
-    loadMetricsData();
+    // Clear existing table data
+    const tableBodies = ['quarterly-table-body', 'velocity-table-body', 'components-table-body', 'experimental-table-body'];
+    tableBodies.forEach(id => {
+      const tbody = document.getElementById(id);
+      if (tbody) tbody.innerHTML = '';
+    });
+    
+    // Re-render with stored data
+    if (globalIssueData && globalComponentData) {
+      renderAllCharts(globalIssueData, globalComponentData);
+    } else {
+      loadMetricsData();
+    }
   });
 });
+
+// Setup listeners for tab changes to render charts when they become visible
+function setupTabChangeListeners() {
+  console.log('Setting up tab change listeners for va-tabs');
+  
+  // Use a more robust approach: periodically check for visible but empty charts
+  setInterval(() => {
+    if (globalIssueData && globalComponentData) {
+      renderVisibleChartsIfNeeded();
+    }
+  }, 1000);
+  
+  // Also listen for clicks on tab items to trigger re-rendering
+  document.addEventListener('click', function(event) {
+    if (event.target.tagName === 'VA-TAB-ITEM' || event.target.closest('va-tab-item')) {
+      setTimeout(() => {
+        if (globalIssueData && globalComponentData) {
+          renderVisibleChartsIfNeeded();
+        }
+      }, 50);
+    }
+  });
+}
+
+// Check if charts need rendering and render them if they're visible but empty
+function renderVisibleChartsIfNeeded() {
+  const chartContainers = [
+    { id: 'quarterly-chart', renderFunc: () => renderQuarterlyChart(globalIssueData.quarterly) },
+    { id: 'velocity-chart', renderFunc: () => renderVelocityChart(globalIssueData.velocity) },
+    { id: 'top-components-chart', renderFunc: () => renderTopComponentsChart(globalComponentData) },
+    { id: 'experimental-chart', renderFunc: () => globalIssueData.experimental_quarterly && renderExperimentalChart(globalIssueData.experimental_quarterly) }
+  ];
+  
+  chartContainers.forEach(({ id, renderFunc }) => {
+    const container = document.getElementById(id);
+    if (container && isElementVisible(container) && !container.querySelector('svg') && !container.querySelector('.chart-placeholder')) {
+      console.log(`Re-rendering chart for visible container: ${id}`);
+      renderFunc();
+    }
+  });
+}
+
+// Check if an element is visible (not in a hidden tab panel)
+function isElementVisible(element) {
+  const rect = element.getBoundingClientRect();
+  const hasSpace = rect.width > 0 && rect.height > 0;
+  const tabPanel = element.closest('va-tab-panel');
+  const isInActiveTab = !tabPanel || !tabPanel.hasAttribute('hidden');
+  return hasSpace && isInActiveTab;
+}
+
+// Render all charts with current data
+function renderAllCharts(issueData, componentData) {
+  console.log('renderAllCharts called');
+  
+  // Store data globally for later use
+  globalIssueData = issueData;
+  globalComponentData = componentData;
+  
+  // Render issue tracking charts
+  renderQuarterlyChart(issueData.quarterly);
+  populateQuarterlyTable(issueData.quarterly);
+  
+  renderVelocityChart(issueData.velocity);
+  populateVelocityTable(issueData.velocity);
+  
+  // Render experimental design chart if data exists
+  if (issueData.experimental_quarterly) {
+    renderExperimentalChart(issueData.experimental_quarterly);
+    populateExperimentalTable(issueData.experimental_quarterly);
+  }
+  
+  // Render component usage charts
+  renderTopComponentsChart(componentData);
+  populateComponentsTable(componentData);
+  
+  // Update metric cards
+  updateMetricCards(issueData.summary, componentData.summary_stats);
+}
 
 function loadMetricsData() {
   console.log('loadMetricsData() called - starting data fetch');
@@ -156,20 +378,8 @@ function loadMetricsData() {
   .then(([issueData, componentData]) => {
     console.log('Data loaded successfully:', { issueData, componentData });
     
-    // Render issue tracking charts
-    renderQuarterlyChart(issueData.quarterly);
-    renderVelocityChart(issueData.velocity);
-    
-    // Render experimental design chart if data exists
-    if (issueData.experimental_quarterly) {
-      renderExperimentalChart(issueData.experimental_quarterly);
-    }
-    
-    // Render component usage charts
-    renderTopComponentsChart(componentData);
-    
-    // Update metric cards
-    updateMetricCards(issueData.summary, componentData.summary_stats);
+    // Use the new renderAllCharts function
+    renderAllCharts(issueData, componentData);
   })
   .catch(error => {
     console.log('Data fetch failed, showing placeholders:', error.message);
@@ -188,6 +398,12 @@ function showPlaceholders() {
     '<div class="chart-placeholder">Experimental design chart will be available once data collection is set up</div>';
   document.getElementById('top-components-chart').innerHTML = 
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
+  
+  // Populate placeholder table data
+  populateQuarterlyTable([]);
+  populateVelocityTable([]);
+  populateComponentsTable(null);
+  populateExperimentalTable([]);
   
   // Show sample data with trend indicators
   document.getElementById('open-issues').textContent = '42';
@@ -222,6 +438,168 @@ function showPlaceholders() {
   updateTrendIndicator('total-usages-trend', sampleTrends.usage_trend, 'compared to last month');
   
   console.log('showPlaceholders() completed');
+}
+
+// Table population functions for accessible data views
+function populateQuarterlyTable(data) {
+  const tableBody = document.getElementById('quarterly-table-body');
+  if (!tableBody || !data || data.length === 0) {
+    if (tableBody) {
+      tableBody.innerHTML = '<tr><td colspan="3" tabindex="0" aria-label="No quarterly data currently available">No data available</td></tr>';
+    }
+    return;
+  }
+  
+  // Format quarter labels
+  const formatQuarter = (period) => {
+    const [year, quarter] = period.split('-');
+    return `${quarter} ${year}`;
+  };
+  
+  // Sort data by period (most recent first)
+  const sortedData = [...data].sort((a, b) => {
+    // Parse periods like "2024-Q1" for proper sorting
+    const [yearA, quarterA] = a.period.split('-');
+    const [yearB, quarterB] = b.period.split('-');
+    const quarterNumA = parseInt(quarterA.replace('Q', ''));
+    const quarterNumB = parseInt(quarterB.replace('Q', ''));
+    
+    // Sort by year first, then by quarter (both descending for most recent first)
+    if (yearA !== yearB) {
+      return parseInt(yearB) - parseInt(yearA);
+    }
+    return quarterNumB - quarterNumA;
+  });
+  
+  // Clear existing table data
+  tableBody.innerHTML = '';
+  
+  // Populate table rows with sorted data
+  sortedData.forEach(row => {
+    const tableRow = document.createElement('tr');
+    tableRow.innerHTML = `
+      <td tabindex="0">${formatQuarter(row.period)}</td>
+      <td tabindex="0">${row.issues_opened}</td>
+      <td tabindex="0">${row.issues_closed}</td>
+    `;
+    tableBody.appendChild(tableRow);
+  });
+}
+
+function populateVelocityTable(data) {
+  const tableBody = document.getElementById('velocity-table-body');
+  if (!tableBody || !data || data.length === 0) {
+    if (tableBody) {
+      tableBody.innerHTML = '<tr><td colspan="2" tabindex="0" aria-label="No velocity data currently available">No data available</td></tr>';
+    }
+    return;
+  }
+  
+  // Format period labels to be more readable
+  const formatPeriod = (period) => {
+    const [year, month] = period.split('-');
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
+                       'July', 'August', 'September', 'October', 'November', 'December'];
+    return `${monthNames[parseInt(month) - 1]} ${year}`;
+  };
+  
+  // Sort data by period (most recent first)
+  const sortedData = [...data].sort((a, b) => {
+    // Parse periods like "2024-01" for proper sorting
+    const [yearA, monthA] = a.period.split('-');
+    const [yearB, monthB] = b.period.split('-');
+    
+    // Sort by year first, then by month (both descending for most recent first)
+    if (yearA !== yearB) {
+      return parseInt(yearB) - parseInt(yearA);
+    }
+    return parseInt(monthB) - parseInt(monthA);
+  });
+  
+  // Clear existing table data
+  tableBody.innerHTML = '';
+  
+  // Populate table rows with sorted data
+  sortedData.forEach(row => {
+    const tableRow = document.createElement('tr');
+    tableRow.innerHTML = `
+      <td tabindex="0">${formatPeriod(row.period)}</td>
+      <td tabindex="0">${row.issues_opened}</td>
+    `;
+    tableBody.appendChild(tableRow);
+  });
+}
+
+function populateComponentsTable(data) {
+  const tableBody = document.getElementById('components-table-body');
+  if (!tableBody || !data || !data.top_components_overall) {
+    if (tableBody) {
+      tableBody.innerHTML = '<tr><td colspan="2" tabindex="0" aria-label="No component usage data currently available">No data available</td></tr>';
+    }
+    return;
+  }
+  
+  // Take top 25 components for table (chart shows top 10)
+  const topComponents = data.top_components_overall.slice(0, 25);
+  
+  // Clear existing table data
+  tableBody.innerHTML = '';
+  
+  // Populate table rows
+  topComponents.forEach(component => {
+    const tableRow = document.createElement('tr');
+    tableRow.innerHTML = `
+      <td tabindex="0">${component.name}</td>
+      <td tabindex="0">${component.usage_count.toLocaleString()}</td>
+    `;
+    tableBody.appendChild(tableRow);
+  });
+}
+
+function populateExperimentalTable(data) {
+  const tableBody = document.getElementById('experimental-table-body');
+  if (!tableBody || !data || data.length === 0) {
+    if (tableBody) {
+      tableBody.innerHTML = '<tr><td colspan="4" tabindex="0" aria-label="No experimental design data currently available">No experimental design data available yet</td></tr>';
+    }
+    return;
+  }
+  
+  // Format quarter labels
+  const formatQuarter = (period) => {
+    const [year, quarter] = period.split('-');
+    return `${quarter} ${year}`;
+  };
+  
+  // Sort data by period (most recent first)
+  const sortedData = [...data].sort((a, b) => {
+    // Parse periods like "2024-Q1" for proper sorting
+    const [yearA, quarterA] = a.period.split('-');
+    const [yearB, quarterB] = b.period.split('-');
+    const quarterNumA = parseInt(quarterA.replace('Q', ''));
+    const quarterNumB = parseInt(quarterB.replace('Q', ''));
+    
+    // Sort by year first, then by quarter (both descending for most recent first)
+    if (yearA !== yearB) {
+      return parseInt(yearB) - parseInt(yearA);
+    }
+    return quarterNumB - quarterNumA;
+  });
+  
+  // Clear existing table data
+  tableBody.innerHTML = '';
+  
+  // Populate table rows with sorted data
+  sortedData.forEach(row => {
+    const tableRow = document.createElement('tr');
+    tableRow.innerHTML = `
+      <td tabindex="0">${formatQuarter(row.period)}</td>
+      <td tabindex="0">${row.issues_opened}</td>
+      <td tabindex="0">${row.issues_closed}</td>
+      <td tabindex="0">${row.issues_implemented || 0}</td>
+    `;
+    tableBody.appendChild(tableRow);
+  });
 }
 
 function renderQuarterlyChart(data) {

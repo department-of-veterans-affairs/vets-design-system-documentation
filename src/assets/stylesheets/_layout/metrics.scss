@@ -20,6 +20,45 @@
   position: relative;
 }
 
+// Tab content styling for metrics tables
+.metrics-section va-tabs {
+  margin-top: var(--vads-spacing-3);
+}
+
+// Table view specific styling
+.metrics-section va-table {
+  margin-top: var(--vads-spacing-2);
+  
+  // Ensure tables are responsive
+  overflow-x: auto;
+  
+  // Style for table cells
+  va-table-row span {
+    padding: var(--vads-spacing-1) var(--vads-spacing-2);
+    text-align: left;
+    
+    // Center numeric values
+    &:nth-child(n+2) {
+      text-align: right;
+    }
+    
+    // Header row styling
+    va-table-row:first-child & {
+      font-weight: var(--font-weight-bold);
+      background-color: var(--vads-color-gray-lightest);
+      text-align: center;
+    }
+  }
+  
+  // Empty state styling
+  va-table-row span[colspan] {
+    text-align: center;
+    font-style: italic;
+    color: var(--vads-color-gray-dark);
+    padding: var(--vads-spacing-4);
+  }
+}
+
 .metrics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -191,6 +230,70 @@
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+// Enhanced metrics sections with va-tabs
+.metrics-section {
+  va-tabs {
+    margin-top: var(--vads-spacing-2);
+    
+    // Style tables within tab panels
+    va-tab-panel {
+      padding: var(--vads-spacing-2) 0;
+      
+      table {
+        margin: var(--vads-spacing-2) 0;
+        width: 100%;
+        border-collapse: collapse;
+        
+        caption {
+          text-align: left;
+          font-weight: var(--font-weight-bold);
+          margin-bottom: var(--vads-spacing-1);
+          color: var(--vads-color-base-darkest);
+          padding: var(--vads-spacing-1) 0;
+        }
+        
+        th, td {
+          padding: var(--vads-spacing-1) var(--vads-spacing-2);
+          text-align: left;
+          border-bottom: 1px solid var(--vads-color-gray-lighter);
+          
+          &:focus {
+            outline: 2px solid var(--vads-color-primary-alt);
+            outline-offset: 1px;
+          }
+        }
+        
+        th {
+          background-color: var(--vads-color-gray-lightest);
+          font-weight: var(--font-weight-bold);
+          color: var(--vads-color-base-darkest);
+          
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+          }
+        }
+        
+        td {
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+          }
+          
+          // Empty state styling
+          &[colspan] {
+            text-align: center;
+            font-style: italic;
+            color: var(--vads-color-gray-dark);
+            padding: var(--vads-spacing-4);
+          }
+        }
+      }
+    }
+  }
+}
+
 // Responsive design
 @media (max-width: 768px) {
   .monthly-reports-grid {
@@ -200,5 +303,24 @@
   .report-modal-content {
     max-width: 95%;
     max-height: 95%;
+  }
+  
+  // Optimize tables for mobile
+  .metrics-section va-table {
+    font-size: var(--vads-font-size-body-small);
+    
+    va-table-row span {
+      padding: var(--vads-spacing-0p5) var(--vads-spacing-1);
+      word-break: break-word;
+    }
+  }
+  
+  // Stack tab labels vertically on very small screens
+  @media (max-width: 480px) {
+    .metrics-section va-tabs {
+      va-tab-panel {
+        font-size: var(--vads-font-size-body-small);
+      }
+    }
   }
 }
