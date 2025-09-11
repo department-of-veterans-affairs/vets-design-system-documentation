@@ -125,6 +125,50 @@ yarn run watch
 yarn build
 ```
 
+### GitHub CLI Integration
+
+Use the GitHub CLI (`gh`) for all GitHub-related operations:
+
+#### Issue Management
+```bash
+# Create new issues
+gh issue create --title "Issue title" --body "Description"
+
+# Update existing issues
+gh issue edit [issue-number] --title "New title" --body "Updated description"
+
+# List issues
+gh issue list --state open
+
+# Close issues
+gh issue close [issue-number]
+```
+
+#### Pull Request Management
+```bash
+# Create pull requests
+gh pr create --title "PR title" --body "Description" --draft
+
+# Update pull requests
+gh pr edit [pr-number] --title "New title" --body "Updated description"
+
+# Review pull requests
+gh pr review [pr-number] --approve
+gh pr review [pr-number] --request-changes --body "Feedback"
+
+# Merge pull requests
+gh pr merge [pr-number] --squash
+```
+
+#### Repository Operations
+```bash
+# Clone repositories
+gh repo clone department-of-veterans-affairs/vets-design-system-documentation
+
+# View repository information
+gh repo view
+```
+
 ### Contribution Process
 
 1. **Centralized Team**: All contributions go through the Design & Forms Systems team
@@ -247,5 +291,10 @@ When generating or modifying code for this repository:
 6. **Consistency**: Maintain consistency with existing documentation patterns
 7. **Plain Language**: Write for Veterans and their families, not technical audiences
 8. **Cross-Reference**: Link related components, patterns, and guidance appropriately
+9. **Use GitHub CLI**: For all GitHub operations (issues, PRs, repositories), use the `gh` CLI tool rather than manual web interface operations
+   - Create and update issues using `gh issue` commands
+   - Manage pull requests with `gh pr` commands
+   - Perform repository operations with `gh repo` commands
+   - This ensures consistency, traceability, and automation-friendly workflows
 
 This documentation serves Veterans and the teams that serve them. Every contribution should make it easier for VFS teams to create accessible, consistent, and Veteran-centered digital experiences.
