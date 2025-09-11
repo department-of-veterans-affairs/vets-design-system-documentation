@@ -11,7 +11,7 @@ title: Font family
 Change the font-family.
 </div>
 
-VA.gov uses three typefaces: Bitter for serif, Source Sans as a sans-serif, and Roboto Mono for monospace.
+VA.gov uses two typefaces: Bitter for serif and Source Sans as a sans-serif.
 
 <div class="site-showcase">
 {%
