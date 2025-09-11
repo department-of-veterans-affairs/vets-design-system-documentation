@@ -167,7 +167,6 @@ While forms sometimes require legal or regulatory language, prioritize plain lan
 * Use parenthetical explanations: "Dependents (spouse, children, or other family members you support)"
 * Link to detailed legal definitions rather than including them inline
 
-
 ## Accessibility considerations
 
 Forms must be accessible to all users, including those who use screen readers, keyboard navigation, or other assistive technologies.
