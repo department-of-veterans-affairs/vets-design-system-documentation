@@ -52,7 +52,7 @@ anchors:
 * **Use the standard table when users have to compare rows and columns** as the table layout remains the same on smaller screens.
 * **For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer.** All column heading labels should total no more than 60 characters.
 * **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
-* **Use monospace fonts for numerical data in tables, such as percentages, currency, or totals.** Do not use monospace fonts for phone numbers, zip codes, dates, or other data that can’t be added up.
+* **Use monospace fonts for content that requires precise alignment in tables.** This includes numerical data that can be tabulated and, in some cases, medical terminology. See [Typography]({{ site.baseurl }}/foundation/typography.md) for detailed guidance on when monospace fonts are appropriate. 
 
 #### Using responsive stacked tables
 

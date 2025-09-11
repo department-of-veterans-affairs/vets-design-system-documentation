@@ -61,7 +61,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ---
 
 <section class="usa-grid-full">
-    <h4>Roboto Mono (<tt>.vads-u-font-family--mono</tt>)</h4>
+    <h4>Roboto Mono (<tt>.vads-u-font-family--monospace</tt>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -70,7 +70,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
             <p>Special consideration is given to code display, with clear distinction between similar characters like 0 (zero) and O (capital O), and between 1 (one), l (lowercase L), and I (capital i). This makes Roboto Mono ideal for displaying code, configuration files, and other technical content.</p>
         </div>
 
-        <div class="vads-u-font-family--mono typography-mono-intro usa-width-one-half usa-end-row">
+        <div class="vads-u-font-family--monospace typography-mono-intro usa-width-one-half usa-end-row">
             <span class="text-huge">Aa</span>
             <div>
                 <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -176,38 +176,40 @@ Don’t change heading level in order to use a different font size.
 
 ## Monospace fonts
 
-Use monospace fonts sparingly. Monospace fonts can be difficult to read, especially at small sizes or with poor color contrast. Use monospace fonts only for numerical data in tables, code examples, or when precise horizontal alignment is needed. For body text, choose a sans serif typeface.
+Use monospace fonts sparingly. Monospace fonts can be difficult to read, especially at small sizes or with poor color contrast. Use monospace fonts for numerical data in tables, code examples, or when precise horizontal alignment is needed. For body text, choose a sans serif typeface.
+
+Monospace fonts may also be appropriate for specific medical terminology such as prescription drug names, medical codes, or other clinical identifiers where character-by-character clarity and differentiation are important.
 
 <div class="do-dont">
 <div class="do-dont__do">
 <h3 class="do-dont__heading">Do</h3>
 <div class="do-dont__content" markdown="1">
-Use monospace fonts for numerical data in tables, such as percentages, currency, or totals
+Use monospace fonts for numerical data in tables, such as percentages, currency, or totals.
 
 #### Example
 <table class="usa-table usa-table--borderless">
 <thead>
 <tr>
-<th>Balance</th>
-<th>Interest Rate</th>
-<th>Monthly Payment</th>
+<th class="vads-u-text-align--right">Balance</th>
+<th class="vads-u-text-align--right">Interest Rate</th>
+<th class="vads-u-text-align--right">Monthly Payment</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="vads-u-font-family--mono">$1,234.56</td>
-<td class="vads-u-font-family--mono">3.25%</td>
-<td class="vads-u-font-family--mono">$156.78</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">$1,234.56</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">3.25%</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">$156.78</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--mono">$987.65</td>
-<td class="vads-u-font-family--mono">4.50%</td>
-<td class="vads-u-font-family--mono">$89.34</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">$987.65</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">4.50%</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">$89.34</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--mono">$10,000.00</td>
-<td class="vads-u-font-family--mono">2.75%</td>
-<td class="vads-u-font-family--mono">$1,250.00</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">$10,000.00</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">2.75%</td>
+<td class="vads-u-font-family--monospace vads-u-text-align--right">$1,250.00</td>
 </tr>
 </tbody>
 </table>
@@ -223,26 +225,26 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 <table class="usa-table usa-table--borderless">
 <thead>
 <tr>
-<th>Service</th>
-<th>Phone number</th>
-<th>Zip Code</th>
+<th class="vads-u-text-align--left">Service</th>
+<th class="vads-u-text-align--left">Phone number</th>
+<th class="vads-u-text-align--left">Zip Code</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="vads-u-font-family--mono">Health Care</td>
-<td class="vads-u-font-family--mono">(555) 123-4567</td>
-<td class="vads-u-font-family--mono">12345</td>
+<td class="vads-u-font-family--monospace">Health Care</td>
+<td class="vads-u-font-family--monospace">(555) 123-4567</td>
+<td class="vads-u-font-family--monospace">12345</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--mono">Disability Benefits</td>
-<td class="vads-u-font-family--mono">(800) 827-1000</td>
-<td class="vads-u-font-family--mono">90210</td>
+<td class="vads-u-font-family--monospace">Disability Benefits</td>
+<td class="vads-u-font-family--monospace">(800) 827-1000</td>
+<td class="vads-u-font-family--monospace">90210</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--mono">Education Benefits</td>
-<td class="vads-u-font-family--mono">(888) 442-4551</td>
-<td class="vads-u-font-family--mono">10001</td>
+<td class="vads-u-font-family--monospace">Education Benefits</td>
+<td class="vads-u-font-family--monospace">(888) 442-4551</td>
+<td class="vads-u-font-family--monospace">10001</td>
 </tr>
 </tbody>
 </table>
