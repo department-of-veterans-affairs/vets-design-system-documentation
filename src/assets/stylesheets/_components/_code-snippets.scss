@@ -86,3 +86,11 @@
 va-tab-panel h3 {
   margin-top: 0;
 }
+
+
+// Adds bottom margin from h2 when followed by tabs
+h2:has(+ va-tabs) {
+  margin-bottom: 32px !important;
+}
+
+

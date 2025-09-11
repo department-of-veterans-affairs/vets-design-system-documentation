@@ -112,34 +112,7 @@
       {% endfor %}
     </va-tab-panel>
 
-    {% if component.events != empty %}
-    <div style="max-width: 100%;">
-      <h4>Events</h4>
-
-      <va-table table-type="bordered">
-        <va-table-row>
-          <span>Name</span>
-          <span>Description</span>
-        </va-table-row>
-        {% for event in component.events %}
-        <va-table-row>
-          <span><code class="code">{{ event.event }}</code></span>
-          <span>{{ event.docs }}</span>
-        </va-table-row>
-        {% endfor %}
-        {% for listener in component.listeners %}
-        {% assign docs = component.docsTags | where: "name", listener.event %}
-        <va-table-row>
-          <span><code class="code">{{ listener.event }}</code></span>
-          <span>{% for doc in docs %} {{ doc.text }} {% endfor %}</span>
-        </va-table-row>
-        {% endfor %}
-      </va-table>
-    </div>
-    {% endif %}
-  </va-tab-panel>
-
-  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+    <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
   <va-tab-panel panel-id="panel-2">
     {% assign storybook_name = include.component_name | replace: 'va-', '' | replace: '-', '_' %}
 
@@ -198,65 +171,63 @@
 
 {% else %}
 {% comment %} Show individual sections when only one platform is supported {% endcomment %}
-  {% if page.web == true and has_web == true %}
-    <h3>Web</h3>
+{% if page.web == true and has_web == true %}
+<h3>Web</h3>
+{% for component in site.data.component-docs.components %}
+{% if component.tag == include.component_name %}
+{% if component.props != empty %}
+<div style="max-width: 100%;">
+<h4>Attributes and Properties</h4>
 
-    {% for component in site.data.component-docs.components %}
-      {% if component.tag == include.component_name %}
-        {% if component.props != empty %}
-        <div style="max-width: 100%;">
-        <h4>Attributes and Properties</h4>
+<va-table table-type="bordered">
+<va-table-row>
+<span>Property</span>
+<span>Attribute</span>
+<span>Type</span>
+<span>Default</span>
+<span>Description</span>
+</va-table-row>
+{% for prop in component.props %}
+<va-table-row>
+<span><code class="code">{{ prop.name }}</code></span>
+<span><code class="code">{{ prop.attr }}</code></span>
+<span>{% if prop.type %}<code class="code">{{ prop.type }}</code>{% endif %}</span>
+<span>{% if prop.default %}<code class="code">{{ prop.default }}</code>{% endif %}</span>
+<span>{{ prop.docs | markdownify }}</span>
+</va-table-row>
+{% endfor %}
+</va-table>
+</div>
+{% endif %}
 
-        <va-table table-type="bordered">
-          <va-table-row>
-            <span>Property</span>
-            <span>Attribute</span>
-            <span>Type</span>
-            <span>Default</span>
-            <span>Description</span>
-          </va-table-row>
-          {% for prop in component.props %}
-          <va-table-row>
-            <span><code class="code">{{ prop.name }}</code></span>
-            <span><code class="code">{{ prop.attr }}</code></span>
-            <span>{% if prop.type %}<code class="code">{{ prop.type }}</code>{% endif %}</span>
-            <span>{% if prop.default %}<code class="code">{{ prop.default }}</code>{% endif %}</span>
-            <span>{{ prop.docs | markdownify }}</span>
-          </va-table-row>
-          {% endfor %}
-        </va-table>
-        </div>
-        {% endif %}
-
-        {% if component.events != empty %}
-        <div style="max-width: 100%;">
-          <h4>Events</h4>
-
-          <va-table table-type="bordered">
-            <va-table-row>
-              <span>Name</span>
-              <span>Description</span>
-            </va-table-row>
-            {% for event in component.events %}
-            <va-table-row>
-              <span><code class="code">{{ event.event }}</code></span>
-              <span>{{ event.docs }}</span>
-            </va-table-row>
-            {% endfor %}
-            {% for listener in component.listeners %}
-              {% assign docs = component.docsTags | where: "name", listener.event %}
-            <va-table-row>
-              <span><code class="code">{{ listener.event }}</code></span>
-              <span>{% for doc in docs %} {{ doc.text }} {% endfor %}</span>
-            </va-table-row>
-            {% endfor %}
-          </va-table>
-        </div>
-        {% endif %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
+{% if component.events != empty %}
+<div style="max-width: 100%;">
+<h4>Events</h4>
+<va-table table-type="bordered">
+<va-table-row>
+<span>Name</span>
+<span>Description</span>
+</va-table-row>
+{% for event in component.events %}
+<va-table-row>
+<span><code class="code">{{ event.event }}</code></span>
+<span>{{ event.docs }}</span>
+</va-table-row>
+{% endfor %}
+{% for listener in component.listeners %}
+{% assign docs = component.docsTags | where: "name", listener.event %}
+<va-table-row>
+<span><code class="code">{{ listener.event }}</code></span>
+<span>{% for doc in docs %} {{ doc.text }} {% endfor %}</span>
+</va-table-row>
+{% endfor %}
+</va-table>
+</div>
+{% endif %}
+{% break %}
+{% endif %}
+{% endfor %}
+{% endif %}
 {% endif %}
 
 {% comment %} Mobile App Component Documentation - only show if not using tabs {% endcomment %}
@@ -310,8 +281,6 @@
   </va-table>
 </div>
 {% endif %}
-
-<p>For additional usage examples and interactive demos, view the <a href="https://design.va.gov/storybook/?path=/docs/va-mobile_{{ storybook_name }}--docs" target="_blank" rel="noopener noreferrer">{{ include.component_name }} mobile app component in Storybook</a>.</p>
 
       {% break %}
     {% endif %}
