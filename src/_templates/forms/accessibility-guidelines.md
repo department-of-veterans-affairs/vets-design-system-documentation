@@ -1,8 +1,9 @@
 ---
 layout: pattern
-title: Forms
-inner-title: Accessibility guidelines
 permalink: /templates/forms/accessibility-guidelines
+has-parent: /templates/forms/
+title: Accessibility guidelines for forms
+inner-title: Accessibility guidelines
 redirect_from:
   - /templates/forms/accessibility
 intro-text: "Detailed accessibility requirements and implementation guidance for VA.gov forms"
@@ -26,7 +27,7 @@ Forms are often the primary way Veterans interact with VA services—from applyi
 
 VA is committed to providing equal access to all Veterans, including the millions of Veterans with disabilities. This includes:
 
-- **1 in 4 Veterans** who live with a service-connected disability
+- 1 in 4 Veterans who live with a service-connected disability
 - Veterans who use screen readers, voice recognition software, or other assistive technologies
 - Veterans with cognitive disabilities, traumatic brain injuries, or conditions that affect memory and concentration
 - Veterans with temporary impairments from injuries or medical treatments

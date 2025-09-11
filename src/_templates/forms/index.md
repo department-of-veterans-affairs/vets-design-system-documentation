@@ -57,8 +57,9 @@ All of the patterns in the "[Ask users for...]({{ site.baseurl }}/patterns/)" se
 
 ### Essential form patterns
 * [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) - One question per page approach
-* [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) - When to group related questions
+* [Ask users for multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) - How to collect multiple responses to the same set of questions
 * [Help users to check answers]({{ site.baseurl }}/patterns/help-users-to/check-answers) - Review page guidance
+* * [Help users to keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) - Confirmation page guidance
 
 ### Supporting patterns
 * [Help users to complete a sub-task]({{ site.baseurl }}/patterns/help-users-to/complete-a-sub-task) - Breaking down complex processes
@@ -171,6 +172,24 @@ While forms sometimes require legal or regulatory language, prioritize plain lan
 
 Forms must be accessible to all users, including those who use screen readers, keyboard navigation, or other assistive technologies.
 
+### Why accessible forms matter for Veterans
+
+Approximately 1 in 4 Veterans live with a service-connected disability. When forms aren't accessible, they create barriers that can prevent Veterans from accessing the benefits and services they've earned.
+
+### Essential accessibility requirements
+
+* **Proper form labels**: Every form field must have a clear, descriptive label
+* **Keyboard navigation**: All form functionality must work with keyboard-only navigation
+* **Focus management**: Users must know where they are when navigating between form steps
+* **Error handling**: Error messages must be clearly associated with the relevant form fields
+* **Screen reader support**: All form information must be announced clearly to assistive technology users
+
+### Accessibility resources
+
+* [Form accessibility guidelines]({{ site.baseurl }}/templates/forms/accessibility-guidelines) - Detailed technical requirements for building accessible forms
+* [Focus management]({{ site.baseurl }}/accessibility/focus-management) - Comprehensive focus guidance
+* [Accessibility annotations]({{ site.baseurl }}/accessibility/accessibility-annotations) - Tools for communicating accessibility requirements to developers
+
 
 ## Related resources
 
@@ -179,7 +198,3 @@ Forms must be accessible to all users, including those who use screen readers, k
 * [Fieldsets, legends, and labels]({{ site.baseurl }}/components/form/#fieldsets-legends-and-labels) - Proper form markup
 * [Content for form labels]({{ site.baseurl }}/content-style-guide/form-labels) - Writing effective labels
 * [Hint text guidelines]({{ site.baseurl }}/components/form/#hint-text) - Providing helpful context
-
-### Accessibility resources
-* [Focus management]({{ site.baseurl }}/accessibility/focus-management) - Comprehensive focus guidance
-* [Form accessibility guidelines]({{ site.baseurl }}/templates/forms/accessibility-guidelines) - Detailed technical requirements
