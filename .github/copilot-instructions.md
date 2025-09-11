@@ -248,4 +248,26 @@ When generating or modifying code for this repository:
 7. **Plain Language**: Write for Veterans and their families, not technical audiences
 8. **Cross-Reference**: Link related components, patterns, and guidance appropriately
 
+## Pull Request Review Guidelines
+
+When reviewing pull requests that modify guidance content in the following paths:
+- `src/_components/**/*.md`
+- `src/_patterns/**/*.md`
+- `src/_templates/**/*.md`
+- `src/_content-style-guide/**/*.md`
+- `src/_foundation/**/*.md`
+- `src/_accessibility/**/*.md`
+- `src/_ia/**/*.md`
+- `src/_about/**/*.md`
+
+**You must perform a comprehensive content style guide review** following the detailed instructions in [.github/prompts/Guidance-follow-content-style-guide.prompt.md](prompts/Guidance-follow-content-style-guide.prompt.md).
+
+This prompt file contains:
+- Critical YAML front matter protection guidelines
+- Specific content style guide requirements and links
+- Review process steps
+- Comment template for providing feedback
+
+Always refer to the latest version of this prompt file when conducting content reviews to ensure you're applying the most current standards and guidelines.
+
 This documentation serves Veterans and the teams that serve them. Every contribution should make it easier for VFS teams to create accessible, consistent, and Veteran-centered digital experiences.
