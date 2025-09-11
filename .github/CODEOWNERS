@@ -1,12 +1,1 @@
-# Default reviewers for all files
 *       @department-of-veterans-affairs/platform-design-system-team
-
-# Guidance content - requires content style guide review
-src/_components/**/*.md           @department-of-veterans-affairs/platform-design-system-team
-src/_patterns/**/*.md             @department-of-veterans-affairs/platform-design-system-team
-src/_templates/**/*.md            @department-of-veterans-affairs/platform-design-system-team
-src/_content-style-guide/**/*.md  @department-of-veterans-affairs/platform-design-system-team
-src/_foundation/**/*.md           @department-of-veterans-affairs/platform-design-system-team
-src/_accessibility/**/*.md        @department-of-veterans-affairs/platform-design-system-team
-src/_ia/**/*.md                   @department-of-veterans-affairs/platform-design-system-team
-src/_about/**/*.md                @department-of-veterans-affairs/platform-design-system-team
