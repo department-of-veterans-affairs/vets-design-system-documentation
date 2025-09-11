@@ -21,23 +21,6 @@ _If this PR resolves an open issue, please add the issue number here._
 
 Closes #[Issue_number]
 
-## Content Style Guide Checklist (Required for Guidance Changes)
-
-<!-- If this PR includes changes to guidance content (components, patterns, templates, foundation, accessibility, IA, or about pages), please confirm all items below. Remove this section if not applicable. -->
-
-**Content Quality Standards**
-
-- [ ] Content follows the [VA Content Style Guide](https://design.va.gov/content-style-guide/)
-- [ ] Uses active voice and plain language
-- [ ] Avoids abbreviations and acronyms unless common to designers/developers
-- [ ] Uses correct capitalization and punctuation per style guide
-- [ ] Uses contractions and short sentences
-- [ ] Avoids or minimizes branded program names
-- [ ] Includes accessibility considerations where relevant
-- [ ] Links to related components/patterns appropriately
-
-**For Reviewers:** If this PR modifies guidance content, please review against the [Content Style Guide Prompt](.github/prompts/Guidance-follow-content-style-guide.prompt.md).
-
 ## Preview Environment Links
 
 <!--
