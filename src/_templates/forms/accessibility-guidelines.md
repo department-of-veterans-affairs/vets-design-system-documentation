@@ -206,6 +206,8 @@ Forms must support users with cognitive disabilities, memory issues, and attenti
 
 ## Comprehensive accessibility testing
 
+For complete testing methodology guidance, see [Accessibility testing for design system components]({{ site.baseurl }}/accessibility/accessibility-testing-for-design-system-components).
+
 - **Keyboard navigation**: Navigate through the entire form using only the keyboard
 - **Screen reader testing**: Test with NVDA, JAWS, or VoiceOver to ensure all information is announced clearly
 - **Error handling**: Verify that error messages are clearly associated with the relevant form fields
@@ -230,7 +232,11 @@ Forms must support users with cognitive disabilities, memory issues, and attenti
 - **Session persistence**: Test that authenticated users can leave and return to forms without losing progress
 - **Clear navigation**: Verify users can understand their progress through multi-step forms
 
+For guidance on what content should be announced to screen readers, see [When a screen reader needs to announce content]({{ site.baseurl }}/accessibility/when-a-screen-reader-needs-to-announce-content).
+
 ## VA accessibility requirements and processes
+
+All VA.gov forms must meet [VA.gov Experience Standards]({{ site.baseurl }}/about/experience-standards), which include comprehensive accessibility requirements. For a complete overview of VA's accessibility approach, see [Accessibility overview]({{ site.baseurl }}/accessibility/).
 
 ### Foundational accessibility testing
 
@@ -247,7 +253,11 @@ Before launching any form on VA.gov, teams must complete foundational accessibil
 
 The Accessibility Digital Experience (ADE) team provides early accessibility guidance to help teams build accessible forms from the start. Reach out to the ADE team during your planning phase rather than waiting until staging review.
 
+When working with designers, refer to [Accessibility annotations]({{ site.baseurl }}/accessibility/accessibility-annotations) to understand how accessibility requirements are communicated from design to development.
+
 ## WCAG requirements
+
+Forms must follow the four principles of accessibility (POUR: Perceivable, Operable, Understandable, Robust). For detailed testing methodology based on these principles, see [Accessibility testing principles]({{ site.baseurl }}/accessibility/accessibility-testing-for-design-system-components#testing-principles).
 
 ### Relevant WCAG 2.2 success criteria
 
@@ -274,10 +284,22 @@ The Accessibility Digital Experience (ADE) team provides early accessibility gui
 
 ## Related resources
 
-* [Focus management overview]({{ site.baseurl }}/accessibility/focus-management)
-* [Form components accessibility]({{ site.baseurl }}/components/form/#accessibility-considerations-for-all-form-elements)
-* [Fieldsets, legends, and labels]({{ site.baseurl }}/components/form/#fieldsets-legends-and-labels)
-* [Error message guidelines]({{ site.baseurl }}/content-style-guide/error-messages)
-* [VA Forms Library documentation](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-form-config-options)
-* [Form labels content guidance]({{ site.baseurl }}/content-style-guide/form-labels)
-* [Hint text guidelines]({{ site.baseurl }}/components/form/#hint-text)
+### Accessibility guidance
+* [Accessibility overview]({{ site.baseurl }}/accessibility/) - VA's holistic approach to accessibility
+* [Accessibility testing for design system components]({{ site.baseurl }}/accessibility/accessibility-testing-for-design-system-components) - Comprehensive testing methodology
+* [Focus management overview]({{ site.baseurl }}/accessibility/focus-management) - Detailed focus guidance
+* [When a screen reader needs to announce content]({{ site.baseurl }}/accessibility/when-a-screen-reader-needs-to-announce-content) - Screen reader announcement guidance
+* [Accessibility annotations]({{ site.baseurl }}/accessibility/accessibility-annotations) - Design-to-development communication
+
+### Form-specific resources
+* [Form components accessibility]({{ site.baseurl }}/components/form/#accessibility-considerations-for-all-form-elements) - Component-level guidance
+* [Fieldsets, legends, and labels]({{ site.baseurl }}/components/form/#fieldsets-legends-and-labels) - Form markup guidance
+* [Hint text guidelines]({{ site.baseurl }}/components/form/#hint-text) - Providing helpful context
+
+### Content and standards
+* [Error message guidelines]({{ site.baseurl }}/content-style-guide/error-messages) - Writing helpful error messages
+* [Form labels content guidance]({{ site.baseurl }}/content-style-guide/form-labels) - Content standards for labels
+* [VA.gov Experience Standards]({{ site.baseurl }}/about/experience-standards) - Quality requirements for VA.gov
+
+### Technical implementation
+* [VA Forms Library documentation](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-form-config-options) - Technical implementation guide
