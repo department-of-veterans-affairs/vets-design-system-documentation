@@ -1,0 +1,102 @@
+{
+  "experimental_quarterly": [
+    {
+      "period": "2021-Q2",
+      "issues_opened": 1,
+      "issues_closed": 0
+    },
+    {
+      "period": "2021-Q3",
+      "issues_opened": 2,
+      "issues_closed": 0
+    },
+    {
+      "period": "2021-Q4",
+      "issues_opened": 2,
+      "issues_closed": 0
+    },
+    {
+      "period": "2022-Q1",
+      "issues_opened": 9,
+      "issues_closed": 0
+    },
+    {
+      "period": "2022-Q2",
+      "issues_opened": 4,
+      "issues_closed": 0
+    },
+    {
+      "period": "2022-Q3",
+      "issues_opened": 11,
+      "issues_closed": 0
+    },
+    {
+      "period": "2022-Q4",
+      "issues_opened": 6,
+      "issues_closed": 0
+    },
+    {
+      "period": "2023-Q1",
+      "issues_opened": 15,
+      "issues_closed": 0
+    },
+    {
+      "period": "2023-Q2",
+      "issues_opened": 8,
+      "issues_closed": 0
+    },
+    {
+      "period": "2023-Q3",
+      "issues_opened": 6,
+      "issues_closed": 0
+    },
+    {
+      "period": "2023-Q4",
+      "issues_opened": 5,
+      "issues_closed": 0
+    },
+    {
+      "period": "2024-Q1",
+      "issues_opened": 15,
+      "issues_closed": 0
+    },
+    {
+      "period": "2024-Q2",
+      "issues_opened": 24,
+      "issues_closed": 0
+    },
+    {
+      "period": "2024-Q3",
+      "issues_opened": 15,
+      "issues_closed": 0
+    },
+    {
+      "period": "2024-Q4",
+      "issues_opened": 8,
+      "issues_closed": 0
+    },
+    {
+      "period": "2025-Q1",
+      "issues_opened": 9,
+      "issues_closed": 0
+    },
+    {
+      "period": "2025-Q2",
+      "issues_opened": 4,
+      "issues_closed": 0
+    },
+    {
+      "period": "2025-Q3",
+      "issues_opened": 4,
+      "issues_closed": 0
+    }
+  ],
+  "experimental_summary": {
+    "total_experimental_issues": 148,
+    "open_experimental_issues": 0,
+    "closed_experimental_this_month": 0,
+    "avg_experimental_resolution_days": 0,
+    "last_updated": "2025-09-05T20:02:26.510Z"
+  },
+  "generated_at": "2025-09-05T20:02:26.510Z"
+}

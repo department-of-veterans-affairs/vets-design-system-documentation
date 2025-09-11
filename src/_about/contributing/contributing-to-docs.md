@@ -1,28 +1,24 @@
 ---
 layout: documentation
 title: Contributing to VADS Documentation
-permalink: /about/designers/contributing-to-docs
-has-parent: /about/designers/
+permalink: /about/contributing-to-the-design-system/contributing-to-docs
+has-parent: /about/contributing-to-the-design-system/
 intro-text: How to contribute documentation to the VA Design System site, including templates, drafts, and content guidelines.
-anchors:
-  - anchor: Writing new pages
-  - anchor: Creating and managing drafts
-  - anchor: Useful markdown and HTML snippets
-  - anchor: Additional info doc template
-  - anchor: Deprecation of the wiki
+redirect_from:
+  - /about/designers/contributing-to-docs
 ---
 
-This page provides guidance for contributing documentation to the VA Design System (VADS) site. It consolidates and replaces the previous GitHub wiki content. For code and component contributions, see the [main contributing guide](/about/developers/contributing).
+This page provides guidance for contributing documentation to the VA Design System (VADS) site. It consolidates and replaces the previous GitHub wiki content. For code and component contributions, see the [code contributing guide]({{ site.baseurl }}/about/developers/contributing).
 
 ## Writing new pages
 
 The VADS documentation site uses Markdown. If you are new to Markdown, see the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
-If you need help, you can open a new [issue](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new/choose) and the team will assist you.
+If you need help, [open a new issue]({{site.github_issues_templates}}) and the team will assist you.
 
 To write a page in any section:
 
-- Go to the appropriate section in GitHub and create a new file.
+- Go to the appropriate section in GitHub (`src/_components`, `src/_patterns/` or `src/_templates/`) and create a new file.
 - Choose a file name carefully, as it will appear in the page URL (except for overview pages, which use `index.md`).
 - The file extension must be `.md`.
 
@@ -30,14 +26,18 @@ To write a page in any section:
 
 For new component or pattern documentation, start with one of these templates:
 
-- [Components template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_components/template.md)
-- [Patterns template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_patterns/template.md)
-- [Templates template](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/blob/main/src/_templates/template.md)
-- [Contributing a template or pattern guidance](/about/designers/contributing-a-template-or-pattern) — step-by-step instructions for contributing templates and patterns to the Design System
+- [Components template]({{ site.new_component_template_raw_link }})
+- [Patterns template]({{ site.new_pattern_template_raw_link }})
+- [Templates template]({{ site.new_template_template_raw_link }})
+- [Contributing a template or pattern guidance]({{ site.baseurl }}/about/designers/contributing-a-template-or-pattern) — step-by-step instructions for contributing templates and patterns to the Design System
 
 These templates include required front matter and example usage of includes for Storybook examples, images, and code props. See the next section for details on these includes.
 
-### Submitting your new page
+### Follow style guidance for writing for VADS
+
+While writing documentatation, follow our [style guide for the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/vads-content-style-guide). The guide is based on the [VA.gov Content Style Guide]({{ site.baseurl }}/content-style-guide/), with some differences noted for a more technical audience. 
+
+### Submit your new page
 
 Submit your new page as a pull request. The team will review and respond as soon as possible.
 
@@ -107,7 +107,7 @@ Draft pages allow you and your team to preview documentation before it is publis
 2. Create a new page in the desired section (e.g., `/src/_patterns`).
 3. Name your file (e.g., `draft-pattern.md`). The file name will be part of the page URL.
 4. Add the required front matter, including `draft: true`.
-5. Add your content and any anchors or search tags as needed.
+5. Add your content and any anchors or search tags as needed. Follow the [VADS content style guide]({{ site.baseurl }}/about/contributing-to-the-design-system/vads-content-style-guide) for writing.
 
 ### Previewing and publishing drafts
 
@@ -133,7 +133,7 @@ Here are some helpful code snippets to improve your content presentation:
 
 ### Images
 
-First, upload your image to the [images folder](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/master/src/images). The file name must not contain spaces. Put your image into the appropriate sub-directory in images (components, patterns, templates, etc.)
+First, upload your image to the [images folder](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/src/images). The file name must not contain spaces. Put your image into the appropriate sub-directory in images (components, patterns, templates, etc.)
 
 Refer to [showing images](#showing-images) for the appropriate code to use.
 
