@@ -128,8 +128,7 @@ Each stage of a form uses specific templates designed for that purpose:
 
 Follow all of the content guidelines listed within the VA.gov content style guide when writing for forms.
 
-<>
-https://design.va.gov/content-style-guide/
+[Review the complete VA.gov content style guide]({{ site.baseurl }}/content-style-guide/)
 
 
 #### Use plain language
