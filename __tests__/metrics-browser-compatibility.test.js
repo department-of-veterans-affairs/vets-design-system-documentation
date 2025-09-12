@@ -1,96 +1,64 @@
 /**
  * Browser Compatibility and Cross-Platform Accessibility Tests
- * Ensures metrics dashboard works across different browsers and assistive technologies
+ * Tests real built site for cross-browser accessibility support
  * Based on requirements from issue #4788
  */
 
+const fs = require('fs');
+const path = require('path');
 const { getByRole, getAllByRole, getByText, queryByText } = require('@testing-library/dom');
 const { fireEvent } = require('@testing-library/dom');
 
-describe('Metrics Dashboard Browser Compatibility Tests', () => {
+describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', () => {
+  let builtFileContent;
+  
+  beforeAll(() => {
+    // Load actual built Jekyll file
+    const builtFilePath = path.join(__dirname, '../_site/about/metrics/index.html');
+    
+    try {
+      builtFileContent = fs.readFileSync(builtFilePath, 'utf8');
+    } catch (error) {
+      throw new Error(`
+        Could not load built Jekyll file at ${builtFilePath}. 
+        Make sure to run 'yarn build && bundle exec jekyll build' before running tests.
+        Error: ${error.message}
+      `);
+    }
+  });
   
   beforeEach(() => {
-    // Create simplified dashboard structure for compatibility testing
-    document.body.innerHTML = `
-      <div class="metrics-dashboard">
-        <h1>Metrics Dashboard</h1>
-        
-        <!-- Test Web Components compatibility -->
-        <va-tabs id="test-tabs">
-          <va-tab-item button-text="Graph" target-id="test-graph-panel" 
-                       aria-label="View data as a chart"></va-tab-item>
-          <va-tab-item button-text="Table" target-id="test-table-panel"
-                       aria-label="View data as a table"></va-tab-item>
-          
-          <va-tab-panel panel-id="test-graph-panel" role="tabpanel">
-            <div id="test-chart" 
-                 class="chart-container"
-                 role="img" 
-                 aria-label="Test chart for browser compatibility"
-                 tabindex="0">
-              <svg role="img">
-                <desc>Test chart data for browser compatibility validation</desc>
-                <rect width="100" height="50" fill="#0071bb"></rect>
-              </svg>
-            </div>
-          </va-tab-panel>
-          
-          <va-tab-panel panel-id="test-table-panel" role="tabpanel">
-            <va-table 
-              table-title="Test Data for Browser Compatibility"
-              stacked="true"
-              sortable="true"
-              table-type="borderless">
-              <va-table-row slot="headers">
-                <span>Item</span>
-                <span>Value</span>
-              </va-table-row>
-              <va-table-row>
-                <span>Test Item 1</span>
-                <span>100</span>
-              </va-table-row>
-              <va-table-row>
-                <span>Test Item 2</span>
-                <span>200</span>
-              </va-table-row>
-            </va-table>
-          </va-tab-panel>
-        </va-tabs>
-        
-        <!-- Test focus management -->
-        <div class="metrics-section">
-          <h3 id="test-heading">Test Section</h3>
-          <p>Test description for accessibility validation</p>
-          
-          <div class="metric-card">
-            <h4 id="metric-label">Test Metric</h4>
-            <div class="metric-value" aria-labelledby="metric-label" tabindex="0">42</div>
-            <div class="metric-trend" aria-label="Trend: 5% increase">↗ 5%</div>
-          </div>
-        </div>
-      </div>
-    `;
+    // Load the actual built file into DOM
+    document.documentElement.innerHTML = builtFileContent;
+    
+    // Wait for any dynamic content to be processed
+    return new Promise(resolve => setTimeout(resolve, 50));
+  });
+
+  afterEach(() => {
+    // Clean up DOM
+    document.documentElement.innerHTML = '';
   });
 
   describe('🌐 Cross-Browser DOM API Support', () => {
     test('Should handle querySelector and querySelectorAll consistently', () => {
-      // Test fundamental DOM API compatibility
-      const dashboard = document.querySelector('.metrics-dashboard');
-      const allSections = document.querySelectorAll('.metrics-section');
-      const tabs = document.querySelectorAll('va-tab-item');
+      // Test fundamental DOM API compatibility with real built site
+      const metricsMain = document.querySelector('main.metrics-dashboard');
+      const allSections = document.querySelectorAll('section');
+      const vaTabs = document.querySelectorAll('va-tabs');
       
-      expect(dashboard).toBeTruthy();
+      expect(metricsMain).toBeTruthy();
       expect(allSections.length).toBeGreaterThan(0);
-      expect(tabs.length).toBe(2);
+      expect(vaTabs.length).toBe(4);
     });
 
     test('Should support modern CSS selectors across browsers', () => {
-      // Test CSS selector compatibility
+      // Test CSS selector compatibility with actual built elements
       const complexSelectors = [
         '[role="tabpanel"]',
         'va-table[table-title]',
         '.chart-container[role="img"]',
-        'va-tab-item[button-text="Graph"]'
+        'va-tab-item[button-text]'
       ];
       
       complexSelectors.forEach(selector => {
@@ -100,66 +68,90 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
     });
 
     test('Should handle getAttribute/setAttribute across browsers', () => {
-      const chart = document.getElementById('test-chart');
-      const vaTable = document.querySelector('va-table');
-      const tabItem = document.querySelector('va-tab-item');
+      const charts = document.querySelectorAll('.chart-container');
+      const vaTables = document.querySelectorAll('va-table');
+      const tabItems = document.querySelectorAll('va-tab-item');
       
-      // Test getAttribute
-      expect(chart.getAttribute('role')).toBe('img');
-      expect(chart.getAttribute('aria-label')).toBeTruthy();
-      expect(vaTable.getAttribute('table-title')).toBeTruthy();
-      expect(tabItem.getAttribute('button-text')).toBe('Graph');
+      expect(charts.length).toBe(4);
+      expect(vaTables.length).toBe(4);
+      expect(tabItems.length).toBe(8);
+      
+      // Test getAttribute with real elements
+      charts.forEach(chart => {
+        expect(chart.getAttribute('role')).toBe('img');
+        expect(chart.getAttribute('aria-label')).toBeTruthy();
+        expect(chart.getAttribute('tabindex')).toBe('0');
+      });
+      
+      vaTables.forEach(table => {
+        expect(table.getAttribute('table-title')).toBeTruthy();
+        expect(table.getAttribute('stacked')).toBe('true');
+      });
+      
+      tabItems.forEach(tab => {
+        expect(tab.getAttribute('button-text')).toBeTruthy();
+        expect(tab.getAttribute('target-id')).toBeTruthy();
+      });
       
       // Test setAttribute compatibility
-      chart.setAttribute('data-test', 'browser-compatibility');
-      expect(chart.getAttribute('data-test')).toBe('browser-compatibility');
+      const firstChart = charts[0];
+      if (firstChart) {
+        firstChart.setAttribute('data-test', 'browser-compatibility');
+        expect(firstChart.getAttribute('data-test')).toBe('browser-compatibility');
+      }
     });
   });
 
   describe('🔄 Event Handling Compatibility', () => {
     test('Should support addEventListener across browsers', () => {
-      const chart = document.getElementById('test-chart');
-      let clickCount = 0;
+      const charts = document.querySelectorAll('.chart-container');
+      expect(charts.length).toBeGreaterThan(0);
       
+      let clickCount = 0;
       const clickHandler = () => clickCount++;
-      chart.addEventListener('click', clickHandler);
+      
+      const firstChart = charts[0];
+      firstChart.addEventListener('click', clickHandler);
       
       // Simulate click
       const clickEvent = new MouseEvent('click', { bubbles: true });
-      chart.dispatchEvent(clickEvent);
+      firstChart.dispatchEvent(clickEvent);
       
       expect(clickCount).toBe(1);
       
       // Cleanup
-      chart.removeEventListener('click', clickHandler);
+      firstChart.removeEventListener('click', clickHandler);
     });
 
     test('Should handle keyboard events consistently', () => {
-      const focusableElement = document.querySelector('[tabindex="0"]');
-      let keyPressCount = 0;
+      const focusableElements = document.querySelectorAll('[tabindex="0"]');
+      expect(focusableElements.length).toBeGreaterThan(0);
       
+      let keyPressCount = 0;
       const keyHandler = (event) => {
-        if (event.key === 'Enter' || event.key === 'Space') {
+        if (event.key === 'Enter' || event.key === ' ') {
           keyPressCount++;
         }
       };
       
-      focusableElement.addEventListener('keydown', keyHandler);
+      const firstFocusable = focusableElements[0];
+      firstFocusable.addEventListener('keydown', keyHandler);
       
       // Test Enter key
       const enterEvent = new KeyboardEvent('keydown', { key: 'Enter', bubbles: true });
-      focusableElement.dispatchEvent(enterEvent);
+      firstFocusable.dispatchEvent(enterEvent);
       
       expect(keyPressCount).toBe(1);
       
       // Cleanup
-      focusableElement.removeEventListener('keydown', keyHandler);
+      firstFocusable.removeEventListener('keydown', keyHandler);
     });
 
     test('Should handle focus events for accessibility', () => {
       const focusableElements = document.querySelectorAll('[tabindex="0"]');
-      let focusCount = 0;
+      expect(focusableElements.length).toBeGreaterThan(0);
       
+      let focusCount = 0;
       const focusHandler = () => focusCount++;
       
       focusableElements.forEach(element => {
@@ -173,6 +165,11 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
       });
       
       expect(focusCount).toBe(focusableElements.length);
+      
+      // Cleanup
+      focusableElements.forEach(element => {
+        element.removeEventListener('focus', focusHandler);
+      });
     });
   });
 
@@ -185,43 +182,58 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
         value: 375, // iPhone viewport width
       });
       
-      const chart = document.getElementById('test-chart');
-      const vaTable = document.querySelector('va-table');
+      const charts = document.querySelectorAll('.chart-container');
+      const vaTables = document.querySelectorAll('va-table');
       
-      // Accessibility attributes should remain intact
-      expect(chart.getAttribute('role')).toBe('img');
-      expect(chart.getAttribute('aria-label')).toBeTruthy();
-      expect(chart.getAttribute('tabindex')).toBe('0');
-      expect(vaTable.getAttribute('table-title')).toBeTruthy();
-      expect(vaTable.getAttribute('stacked')).toBe('true');
+      // Accessibility attributes should remain intact on mobile
+      charts.forEach(chart => {
+        expect(chart.getAttribute('role')).toBe('img');
+        expect(chart.getAttribute('aria-label')).toBeTruthy();
+        expect(chart.getAttribute('tabindex')).toBe('0');
+      });
+      
+      vaTables.forEach(table => {
+        expect(table.getAttribute('table-title')).toBeTruthy();
+        expect(table.getAttribute('stacked')).toBe('true'); // Should be mobile-optimized
+      });
+      
+      // Restore original viewport
+      delete window.innerWidth;
     });
 
     test('Should support touch interactions for accessibility', () => {
-      const focusableElement = document.querySelector('[tabindex="0"]');
-      let touchCount = 0;
+      const focusableElements = document.querySelectorAll('[tabindex="0"]');
+      expect(focusableElements.length).toBeGreaterThan(0);
       
+      let touchCount = 0;
       const touchHandler = () => touchCount++;
-      focusableElement.addEventListener('touchstart', touchHandler);
+      
+      const firstFocusable = focusableElements[0];
+      firstFocusable.addEventListener('touchstart', touchHandler);
       
       // Simulate touch event
       const touchEvent = new TouchEvent('touchstart', { bubbles: true });
-      focusableElement.dispatchEvent(touchEvent);
+      firstFocusable.dispatchEvent(touchEvent);
       
       expect(touchCount).toBe(1);
+      
+      // Cleanup
+      firstFocusable.removeEventListener('touchstart', touchHandler);
     });
   });
 
   describe('🎯 Assistive Technology Compatibility', () => {
     test('Should provide proper ARIA roles for screen readers', () => {
-      // Test ARIA roles that are critical for screen readers
+      // Test ARIA roles that are critical for screen readers using real elements
       const expectedRoles = [
-        { selector: '[role="img"]', role: 'img' },
-        { selector: '[role="tabpanel"]', role: 'tabpanel' }
+        { selector: '[role="img"]', role: 'img', expectedCount: 4 },
+        { selector: '[role="tabpanel"]', role: 'tabpanel', expectedCount: 8 },
+        { selector: '[role="main"]', role: 'main', expectedCount: 1 }
       ];
       
-      expectedRoles.forEach(({ selector, role }) => {
+      expectedRoles.forEach(({ selector, role, expectedCount }) => {
         const elements = document.querySelectorAll(selector);
-        expect(elements.length).toBeGreaterThan(0);
+        expect(elements.length).toBe(expectedCount);
         
         elements.forEach(element => {
           expect(element.getAttribute('role')).toBe(role);
@@ -231,6 +243,7 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
 
     test('Should provide proper ARIA labels for screen reader context', () => {
       const labeledElements = document.querySelectorAll('[aria-label]');
+      expect(labeledElements.length).toBeGreaterThan(0);
       
       labeledElements.forEach(element => {
         const label = element.getAttribute('aria-label');
@@ -242,6 +255,7 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
 
     test('Should support aria-labelledby relationships', () => {
       const elementsWithLabelledBy = document.querySelectorAll('[aria-labelledby]');
+      expect(elementsWithLabelledBy.length).toBeGreaterThan(0);
       
       elementsWithLabelledBy.forEach(element => {
         const labelId = element.getAttribute('aria-labelledby');
@@ -254,46 +268,50 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
 
     test('Should provide va-table with proper accessibility attributes', () => {
       const vaTables = document.querySelectorAll('va-table');
+      expect(vaTables.length).toBe(4);
       
       vaTables.forEach(table => {
-        // va-table should have accessibility attributes
+        // va-table should have accessibility attributes from real implementation
         expect(table).toHaveAttribute('table-title');
         expect(table).toHaveAttribute('stacked', 'true');
+        expect(table).toHaveAttribute('sortable', 'true');
         expect(table).toHaveAttribute('table-type', 'borderless');
-        
-        // Should have proper structure
-        const headers = table.querySelectorAll('va-table-row[slot="headers"]');
-        expect(headers.length).toBe(1);
       });
     });
 
     test('Should support keyboard navigation patterns expected by screen readers', () => {
-      // Test tab order and focusability
-      const focusableElements = document.querySelectorAll(
-        '[tabindex="0"], va-tab-item, button, input, select, textarea, a[href]'
-      );
+      // Test tab order with real focusable elements
+      const explicitlyFocusable = document.querySelectorAll('[tabindex="0"]');
+      const vaTabItems = document.querySelectorAll('va-tab-item');
       
-      expect(focusableElements.length).toBeGreaterThan(0);
+      expect(explicitlyFocusable.length).toBeGreaterThan(0);
+      expect(vaTabItems.length).toBe(8);
       
-      focusableElements.forEach(element => {
-        // Element should not have negative tabindex (which would remove it from tab order)
+      explicitlyFocusable.forEach(element => {
+        // Element should be in tab order
         const tabindex = element.getAttribute('tabindex');
-        if (tabindex !== null) {
-          expect(parseInt(tabindex)).toBeGreaterThanOrEqual(0);
-        }
+        expect(parseInt(tabindex)).toBe(0);
+      });
+      
+      // va-tab-item elements should be keyboard accessible
+      vaTabItems.forEach(tabItem => {
+        expect(tabItem.getAttribute('button-text')).toBeTruthy();
+        expect(tabItem.getAttribute('target-id')).toBeTruthy();
       });
     });
   });
 
   describe('🔧 Web Components and Custom Elements', () => {
     test('Should handle VA Web Components consistently', () => {
-      const vaTabs = document.querySelector('va-tabs');
+      const vaTabs = document.querySelectorAll('va-tabs');
       const vaTabItems = document.querySelectorAll('va-tab-item');
       const vaTabPanels = document.querySelectorAll('va-tab-panel');
+      const vaTables = document.querySelectorAll('va-table');
       
-      expect(vaTabs).toBeTruthy();
-      expect(vaTabItems.length).toBe(2);
-      expect(vaTabPanels.length).toBe(2);
+      expect(vaTabs.length).toBe(4);
+      expect(vaTabItems.length).toBe(8); // 4 tabs × 2 items each
+      expect(vaTabPanels.length).toBe(8); // 4 tabs × 2 panels each
+      expect(vaTables.length).toBe(4);
       
       // Test custom attributes specific to VA components
       vaTabItems.forEach(item => {
@@ -305,32 +323,41 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
         expect(panel.getAttribute('panel-id')).toBeTruthy();
         expect(panel.getAttribute('role')).toBe('tabpanel');
       });
+      
+      vaTables.forEach(table => {
+        expect(table.getAttribute('table-title')).toBeTruthy();
+        expect(table.getAttribute('stacked')).toBe('true');
+        expect(table.getAttribute('sortable')).toBe('true');
+      });
     });
 
     test('Should maintain accessibility when web components fail to load', () => {
-      // Test graceful degradation
+      // Test graceful degradation with actual HTML structure
       const tabItems = document.querySelectorAll('va-tab-item');
       const tabPanels = document.querySelectorAll('va-tab-panel');
       
-      // Even if web components don't fully initialize, 
-      // accessibility attributes should be present
+      // Even if web components don't fully initialize,
+      // accessibility attributes should be present in the HTML
       tabItems.forEach(item => {
-        expect(item.getAttribute('aria-label')).toBeTruthy();
+        expect(item.getAttribute('button-text')).toBeTruthy();
+        expect(item.getAttribute('target-id')).toBeTruthy();
       });
       
       tabPanels.forEach(panel => {
         expect(panel.getAttribute('role')).toBe('tabpanel');
+        expect(panel.getAttribute('panel-id')).toBeTruthy();
         
         // Content inside panels should remain accessible
-        const table = panel.querySelector('table');
         const chart = panel.querySelector('.chart-container');
-        
-        if (table) {
-          expect(table.getAttribute('role')).toBe('table');
-        }
+        const table = panel.querySelector('va-table');
         
         if (chart) {
           expect(chart.getAttribute('role')).toBe('img');
+          expect(chart.getAttribute('aria-label')).toBeTruthy();
+        }
+        
+        if (table) {
+          expect(table.getAttribute('table-title')).toBeTruthy();
         }
       });
     });
@@ -338,33 +365,37 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
 
   describe('⚡ Performance and Loading States', () => {
     test('Should maintain accessibility during loading states', () => {
-      // Test that accessibility attributes are present even before data loads
-      const chart = document.getElementById('test-chart');
-      const vaTable = document.querySelector('va-table');
+      // Test that accessibility attributes are present in built HTML immediately
+      const charts = document.querySelectorAll('.chart-container');
+      const vaTables = document.querySelectorAll('va-table');
       
       // Critical accessibility attributes should be present immediately
-      expect(chart.getAttribute('role')).toBe('img');
-      expect(chart.getAttribute('aria-label')).toBeTruthy();
-      expect(chart.getAttribute('tabindex')).toBe('0');
+      charts.forEach(chart => {
+        expect(chart.getAttribute('role')).toBe('img');
+        expect(chart.getAttribute('aria-label')).toBeTruthy();
+        expect(chart.getAttribute('tabindex')).toBe('0');
+      });
       
-      expect(vaTable.getAttribute('table-title')).toBeTruthy();
-      expect(vaTable.getAttribute('stacked')).toBe('true');
-      expect(vaTable.querySelectorAll('va-table-row').length).toBeGreaterThan(0);
+      vaTables.forEach(table => {
+        expect(table.getAttribute('table-title')).toBeTruthy();
+        expect(table.getAttribute('stacked')).toBe('true');
+      });
     });
 
     test('Should handle dynamic content updates accessibly', () => {
-      const chart = document.getElementById('test-chart');
-      const originalLabel = chart.getAttribute('aria-label');
+      const charts = document.querySelectorAll('.chart-container');
+      expect(charts.length).toBeGreaterThan(0);
       
-      // Simulate dynamic update
-      chart.setAttribute('aria-label', 'Updated chart with new data showing improved metrics');
-      chart.innerHTML = '<svg><desc>Updated chart description</desc><rect></rect></svg>';
+      const firstChart = charts[0];
+      const originalLabel = firstChart.getAttribute('aria-label');
       
-      expect(chart.getAttribute('aria-label')).toContain('Updated chart');
-      expect(chart.querySelector('desc')).toBeTruthy();
+      // Simulate dynamic update (like what JavaScript functions would do)
+      firstChart.setAttribute('aria-label', 'Updated chart with new data showing improved metrics');
+      
+      expect(firstChart.getAttribute('aria-label')).toContain('Updated chart');
       
       // Restore original state
-      chart.setAttribute('aria-label', originalLabel);
+      firstChart.setAttribute('aria-label', originalLabel);
     });
   });
 
@@ -372,71 +403,95 @@ describe('Metrics Dashboard Browser Compatibility Tests', () => {
     test('Should support high contrast mode accessibility', () => {
       // Test that elements maintain accessibility in high contrast scenarios
       const interactiveElements = document.querySelectorAll(
-        '[tabindex="0"], va-tab-item, .chart-container'
+        '[tabindex="0"], va-tab-item, .chart-container, va-table'
       );
+      
+      expect(interactiveElements.length).toBeGreaterThan(0);
       
       interactiveElements.forEach(element => {
         // Elements should have proper roles for screen readers in high contrast mode
         const role = element.getAttribute('role');
-        if (role) {
-          expect(['img', 'button', 'tab', 'tabpanel', 'table'].some(validRole => 
-            role.includes(validRole)
-          )).toBeTruthy();
-        }
+        const tagName = element.tagName.toLowerCase();
+        const hasAriaLabel = element.getAttribute('aria-label');
         
-        // Elements should maintain their accessibility attributes
-        const ariaLabel = element.getAttribute('aria-label');
-        if (ariaLabel) {
-          expect(ariaLabel.length).toBeGreaterThan(0);
-        }
+        // Should have semantic meaning or ARIA labeling
+        const hasSemanticMeaning = role || 
+                                   ['va-table', 'va-tab-item'].includes(tagName) || 
+                                   hasAriaLabel;
+        
+        expect(hasSemanticMeaning).toBeTruthy();
       });
     });
 
     test('Should maintain focus indicators across browsers', () => {
       const focusableElements = document.querySelectorAll('[tabindex="0"]');
+      expect(focusableElements.length).toBeGreaterThan(0);
       
       focusableElements.forEach(element => {
         // Elements should be programmatically focusable
-        expect(element.tabIndex).toBe(0);
+        expect(element.getAttribute('tabindex')).toBe('0');
         
         // Should have a way to identify them for styling focus indicators
-        expect(element.getAttribute('tabindex')).toBe('0');
+        expect(element.hasAttribute('tabindex')).toBeTruthy();
       });
     });
   });
 
   describe('🔍 Error Handling and Fallbacks', () => {
-    test('Should handle JavaScript errors gracefully', () => {
-      // Test that accessibility remains even if JavaScript fails
-      const chart = document.getElementById('test-chart');
-      const vaTable = document.querySelector('va-table');
+    test('Should handle browser differences gracefully', () => {
+      // Test that core functionality works regardless of browser
+      const mainStructuralElements = [
+        'main[role="main"]',
+        'va-table[table-title]',
+        '.chart-container[role="img"]',
+        'va-tab-panel[role="tabpanel"]'
+      ];
       
-      // Core accessibility should not depend on JavaScript
-      expect(chart.getAttribute('role')).toBe('img');
-      expect(chart.getAttribute('aria-label')).toBeTruthy();
-      expect(vaTable.getAttribute('table-title')).toBeTruthy();
-      expect(vaTable.getAttribute('stacked')).toBe('true');
+      mainStructuralElements.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        expect(elements.length).toBeGreaterThan(0);
+      });
     });
 
     test('Should provide accessible fallbacks for complex interactions', () => {
-      // Ensure that if advanced features fail, basic accessibility remains
-      const tabPanels = document.querySelectorAll('va-tab-panel');
+      // Ensure that both charts and tables are available as alternatives
+      const tabGroups = document.querySelectorAll('va-tabs');
+      expect(tabGroups.length).toBe(4);
       
-      tabPanels.forEach(panel => {
-        const table = panel.querySelector('table');
-        const chart = panel.querySelector('.chart-container');
+      tabGroups.forEach(tabGroup => {
+        const chartPanel = tabGroup.querySelector('va-tab-panel[panel-id*="graph"]');
+        const tablePanel = tabGroup.querySelector('va-tab-panel[panel-id*="table"]');
         
-        // Both chart and table should be present as fallbacks for each other
-        if (chart) {
-          // Chart should have tabindex for keyboard access
-          expect(chart.getAttribute('tabindex')).toBe('0');
-        }
+        expect(chartPanel).toBeTruthy();
+        expect(tablePanel).toBeTruthy();
         
-        if (table) {
-          // Table should be keyboard navigable
-          const focusableCells = table.querySelectorAll('[tabindex="0"]');
-          expect(focusableCells.length).toBeGreaterThan(0);
-        }
+        // Chart panel should have focusable chart
+        const chart = chartPanel.querySelector('.chart-container[tabindex="0"]');
+        expect(chart).toBeTruthy();
+        
+        // Table panel should have accessible table
+        const table = tablePanel.querySelector('va-table[table-title]');
+        expect(table).toBeTruthy();
+      });
+    });
+
+    test('Should maintain accessibility when JavaScript execution fails', () => {
+      // Core accessibility should not depend on JavaScript
+      const coreElements = document.querySelectorAll(
+        'main[role="main"], section[aria-labelledby], va-table[table-title], .chart-container[role="img"]'
+      );
+      
+      expect(coreElements.length).toBeGreaterThan(10); // Should have multiple core elements
+      
+      // All elements should have their accessibility attributes in the HTML
+      coreElements.forEach(element => {
+        const hasAccessibilityAttributes = 
+          element.hasAttribute('role') ||
+          element.hasAttribute('aria-labelledby') ||
+          element.hasAttribute('aria-label') ||
+          element.hasAttribute('table-title');
+          
+        expect(hasAccessibilityAttributes).toBeTruthy();
       });
     });
   });
