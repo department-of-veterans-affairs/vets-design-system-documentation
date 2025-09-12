@@ -720,8 +720,8 @@ function renderQuarterlyChart(data) {
     .domain(['opened', 'closed'])
     .range(['#0071bb', '#112e51']); // VA primary blue and dark blue
   
-  // Add axes
-  const tickInterval = containerWidth < 600 ? 4 : 2; // Show fewer labels on mobile
+  // Add axes with mobile-optimized spacing
+  const tickInterval = containerWidth < 400 ? 8 : containerWidth < 600 ? 6 : 2; // More aggressive spacing for mobile
   const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
     .map(d => d.period);
   
@@ -732,12 +732,13 @@ function renderQuarterlyChart(data) {
       .tickFormat(formatQuarter)
     );
     
-  // Rotate x-axis labels for better readability
+  // Rotate x-axis labels for better readability with mobile optimization
   xAxis.selectAll('text')
     .style('text-anchor', 'end')
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
-    .attr('transform', 'rotate(-45)');
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '9px' : '12px');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -844,8 +845,8 @@ function renderVelocityChart(data) {
     .domain([0, d3.max(data, d => d.issues_opened)])
     .range([height, 0]);
   
-  // Add axes with custom formatting - responsive tick frequency
-  const tickInterval = containerWidth < 600 ? 12 : 6; // Show fewer labels on mobile
+  // Add axes with custom formatting - responsive tick frequency  
+  const tickInterval = containerWidth < 400 ? 18 : containerWidth < 600 ? 12 : 6; // More aggressive spacing for mobile
   const tickIndices = [];
   for (let i = 0; i < data.length; i += tickInterval) {
     tickIndices.push(i);
@@ -862,12 +863,13 @@ function renderVelocityChart(data) {
       .tickFormat(formatPeriod)
     );
     
-  // Rotate x-axis labels for better readability
+  // Rotate x-axis labels for better readability with mobile optimization
   xAxis.selectAll('text')
     .style('text-anchor', 'end')
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
-    .attr('transform', 'rotate(-45)');
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '9px' : '12px');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -953,8 +955,8 @@ function renderExperimentalChart(data) {
     .domain(['opened', 'closed', 'implemented'])
     .range(['#f9c642', '#e59100', '#2e8540']); // VA gold/yellow for opened/closed, green for implemented
   
-  // Add axes
-  const tickInterval = containerWidth < 600 ? 4 : 2; // Show fewer labels on mobile
+  // Add axes with mobile-optimized spacing
+  const tickInterval = containerWidth < 400 ? 8 : containerWidth < 600 ? 6 : 2; // More aggressive spacing for mobile
   const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
     .map(d => d.period);
   
@@ -965,12 +967,13 @@ function renderExperimentalChart(data) {
       .tickFormat(formatQuarter)
     );
     
-  // Rotate x-axis labels for better readability
+  // Rotate x-axis labels for better readability with mobile optimization
   xAxis.selectAll('text')
     .style('text-anchor', 'end')
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
-    .attr('transform', 'rotate(-45)');
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < 600 ? '9px' : '12px');
     
   g.append('g')
     .call(d3.axisLeft(y));
