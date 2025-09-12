@@ -88,7 +88,7 @@ permalink: /about/metrics/
         
         <va-tab-panel panel-id="quarterly-table-panel" role="tabpanel">
           <va-table id="quarterly-va-table"
-                    table-title="Issue Activity by Quarter: Number of issues opened and closed each quarter"
+                    table-title="Issue Activity by Quarter: Most recent 8 quarters showing issues opened and closed"
                     stacked="true"
                     sortable="true"
                     table-type="borderless">
@@ -178,7 +178,7 @@ permalink: /about/metrics/
         
         <va-tab-panel panel-id="velocity-table-panel" role="tabpanel">
           <va-table id="velocity-va-table"
-                    table-title="Monthly New Issues Created: Number of new issues opened each month"
+                    table-title="Monthly New Issues Created: Most recent 12 months showing new issues opened"
                     stacked="true"
                     sortable="true"
                     table-type="borderless"
@@ -209,7 +209,7 @@ permalink: /about/metrics/
         
         <va-tab-panel panel-id="experimental-table-panel" role="tabpanel">
           <va-table id="experimental-va-table"
-                    table-title="Experimental Design Issues by Quarter: Issues opened, closed, and implemented each quarter"
+                    table-title="Experimental Design Issues by Quarter: Most recent 8 quarters showing experimental issues opened, closed, and implemented"
                     stacked="true"
                     sortable="true"
                     table-type="borderless"
@@ -465,6 +465,9 @@ function populateQuarterlyTable(data) {
     return quarterNumB - quarterNumA;
   });
   
+  // Limit to most recent 8 quarters (2 years) for better mobile experience
+  const recentData = sortedData.slice(0, 8);
+  
   // Clear existing content and add headers
   vaTable.innerHTML = '';
   
@@ -478,8 +481,8 @@ function populateQuarterlyTable(data) {
   `;
   vaTable.appendChild(headerRow);
   
-  // Populate table rows with sorted data
-  sortedData.forEach(row => {
+  // Populate table rows with recent data only
+  recentData.forEach(row => {
     const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
       <span>${formatQuarter(row.period)}</span>
@@ -529,6 +532,9 @@ function populateVelocityTable(data) {
     return parseInt(monthB) - parseInt(monthA);
   });
   
+  // Limit to most recent 12 months for better mobile experience
+  const recentData = sortedData.slice(0, 12);
+  
   // Clear existing content and add headers
   vaTable.innerHTML = '';
   
@@ -541,8 +547,8 @@ function populateVelocityTable(data) {
   `;
   vaTable.appendChild(headerRow);
   
-  // Populate data rows with sorted data
-  sortedData.forEach(row => {
+  // Populate data rows with recent data only
+  recentData.forEach(row => {
     const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
       <span>${formatPeriod(row.period)}</span>
@@ -639,6 +645,9 @@ function populateExperimentalTable(data) {
     return quarterNumB - quarterNumA;
   });
   
+  // Limit to most recent 8 quarters (2 years) for better mobile experience
+  const recentData = sortedData.slice(0, 8);
+  
   // Clear existing content and add headers
   vaTable.innerHTML = '';
   
@@ -653,8 +662,8 @@ function populateExperimentalTable(data) {
   `;
   vaTable.appendChild(headerRow);
   
-  // Populate data rows with sorted data
-  sortedData.forEach(row => {
+  // Populate data rows with recent data only
+  recentData.forEach(row => {
     const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
       <span>${formatQuarter(row.period)}</span>
