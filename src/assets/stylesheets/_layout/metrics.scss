@@ -32,22 +32,10 @@
   // Ensure tables are responsive
   overflow-x: auto;
   
-  // Style for table cells
+  // Minimal styling - let va-table handle responsive behavior
   va-table-row span {
+    // Only apply basic padding, let va-table handle layout
     padding: var(--vads-spacing-1) var(--vads-spacing-2);
-    text-align: left;
-    
-    // Center numeric values
-    &:nth-child(n+2) {
-      text-align: right;
-    }
-    
-    // Header row styling
-    va-table-row:first-child & {
-      font-weight: var(--font-weight-bold);
-      background-color: var(--vads-color-gray-lightest);
-      text-align: center;
-    }
   }
   
   // Empty state styling
