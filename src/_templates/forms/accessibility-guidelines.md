@@ -54,13 +54,13 @@ Every form interaction should be straightforward, regardless of how a Veteran ac
 
 ## Managing focus in form flows
 
-Digitized forms on VA.gov are built as single-page applications (SPAs). When users move to a new page in these forms (also called a “route change" in SPAs) the appcsx must manually set focus. This is because, unlike when a static page loads, focus does not reset automatically after an SPA route change. Setting focus helps users stay oriented and take the next step. 
+Digitized forms on VA.gov are built as single-page applications (SPAs). When users move to a new page in these forms (also called a “route change" in SPAs) the app must manually set focus. This is because, unlike when a static page loads, focus does not reset automatically after an SPA route change. Setting focus helps users stay oriented and take the next step.
 
 ### Why moving focus in a form application matters
 
 * **Moving focus gives users context:** Because screen readers prioritize announcing newly focused elements, screen reader users will hear the focused element right away.
 * **Managing focus moves users closer to the next relevant action:** Moving focus to the beginning of the new content helps users more easily find relevant information and the next action they need to complete.
-* Meets WCAG AA criteria: Supports focus order and visibility (WCAG 2.2: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html), 2.4.7 [2.4.7 Focus Not Obscured](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured.html) (AA)) and reduces unexpected context changes ([3.2.3 Consistent Navigation](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)).
+* Meets WCAG AA criteria: Supports focus order and visibility (WCAG 2.2: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html), 2.4.7 [2.4.7 Focus Not Obscured](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured.html) (AA)) and reduces unexpected context changes ([3.2.3 Consistent Navigation](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html)).
 
 ### Where to move focus when a new form page loads
 
