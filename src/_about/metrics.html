@@ -92,7 +92,12 @@ permalink: /about/metrics/
                     stacked="true"
                     sortable="true"
                     table-type="borderless">
-            <!-- Table content will be populated by JavaScript -->
+            <va-table-row slot="headers">
+              <span>Quarter</span>
+              <span>Issues Opened</span>
+              <span>Issues Closed</span>
+            </va-table-row>
+            <!-- Table rows will be populated by JavaScript -->
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -131,7 +136,11 @@ permalink: /about/metrics/
                     sortable="true"
                     table-type="borderless"
                     right-align-cols="1">
-            <!-- Table content will be populated by JavaScript -->
+            <va-table-row slot="headers">
+              <span>Component</span>
+              <span>Usage Count</span>
+            </va-table-row>
+            <!-- Table rows will be populated by JavaScript -->
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -183,7 +192,11 @@ permalink: /about/metrics/
                     sortable="true"
                     table-type="borderless"
                     right-align-cols="1">
-            <!-- Table content will be populated by JavaScript -->
+            <va-table-row slot="headers">
+              <span>Period</span>
+              <span>Issues Opened</span>
+            </va-table-row>
+            <!-- Table rows will be populated by JavaScript -->
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -214,7 +227,13 @@ permalink: /about/metrics/
                     sortable="true"
                     table-type="borderless"
                     right-align-cols="1,2,3">
-            <!-- Table content will be populated by JavaScript -->
+            <va-table-row slot="headers">
+              <span>Quarter</span>
+              <span>Issues Opened</span>
+              <span>Issues Closed</span>
+              <span>Issues Implemented</span>
+            </va-table-row>
+            <!-- Table rows will be populated by JavaScript -->
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -465,18 +484,9 @@ function populateQuarterlyTable(data) {
     return quarterNumB - quarterNumA;
   });
   
-  // Clear existing content and add headers
-  vaTable.innerHTML = '';
-  
-  // Add header row
-  const headerRow = document.createElement('va-table-row');
-  headerRow.setAttribute('slot', 'headers');
-  headerRow.innerHTML = `
-    <span>Quarter</span>
-    <span>Issues Opened</span>
-    <span>Issues Closed</span>
-  `;
-  vaTable.appendChild(headerRow);
+  // Clear existing data rows only, preserving headers
+  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+  existingRows.forEach(row => row.remove());
   
   // Populate table rows with all data to match chart
   sortedData.forEach(row => {
@@ -529,17 +539,9 @@ function populateVelocityTable(data) {
     return parseInt(monthB) - parseInt(monthA);
   });
   
-  // Clear existing content and add headers
-  vaTable.innerHTML = '';
-  
-  // Add header row
-  const headerRow = document.createElement('va-table-row');
-  headerRow.setAttribute('slot', 'headers');
-  headerRow.innerHTML = `
-    <span>Period</span>
-    <span>Issues Opened</span>
-  `;
-  vaTable.appendChild(headerRow);
+  // Clear existing data rows only, preserving headers
+  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+  existingRows.forEach(row => row.remove());
   
   // Populate data rows with all data to match chart
   sortedData.forEach(row => {
@@ -573,17 +575,9 @@ function populateComponentsTable(data) {
   // Take top 25 components for table (chart shows top 10)
   const topComponents = data.top_components_overall.slice(0, 25);
   
-  // Clear existing content and add headers
-  vaTable.innerHTML = '';
-  
-  // Add header row
-  const headerRow = document.createElement('va-table-row');
-  headerRow.setAttribute('slot', 'headers');
-  headerRow.innerHTML = `
-    <span>Component</span>
-    <span>Usage Count</span>
-  `;
-  vaTable.appendChild(headerRow);
+  // Clear existing data rows only, preserving headers
+  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+  existingRows.forEach(row => row.remove());
   
   // Populate data rows
   topComponents.forEach(component => {
@@ -639,19 +633,9 @@ function populateExperimentalTable(data) {
     return quarterNumB - quarterNumA;
   });
   
-  // Clear existing content and add headers
-  vaTable.innerHTML = '';
-  
-  // Add header row
-  const headerRow = document.createElement('va-table-row');
-  headerRow.setAttribute('slot', 'headers');
-  headerRow.innerHTML = `
-    <span>Quarter</span>
-    <span>Issues Opened</span>
-    <span>Issues Closed</span>
-    <span>Issues Implemented</span>
-  `;
-  vaTable.appendChild(headerRow);
+  // Clear existing data rows only, preserving headers
+  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+  existingRows.forEach(row => row.remove());
   
   // Populate data rows with all data to match chart
   sortedData.forEach(row => {
