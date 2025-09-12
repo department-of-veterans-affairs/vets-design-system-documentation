@@ -6,9 +6,11 @@ title: Combo box
 intro-text: "A combo box helps users select an item from a large list of options."
 research-title: Form controls
 status: use-with-caution-candidate
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=19200-2377
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=19200-2377
 uswds-v3: default
 web-component: va-combo-box
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

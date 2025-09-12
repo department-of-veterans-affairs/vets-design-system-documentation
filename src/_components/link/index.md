@@ -4,8 +4,10 @@ permalink: /components/link/
 title: Link
 intro-text: "A link is a navigation element that can appear alone, inline (embedded), or in a group with other links. A link can trigger a download, but in general links go to internal or external pages when clicked."
 research-title: Links
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1312%3A10138&mode=design&t=nYOotVcwdpiMCL5C-1
 web-component: va-link
+web: true
+mobile-app: true
 sub-pages:
   - sub-page: Action
   - sub-page: Collection
@@ -58,7 +60,7 @@ anchors:
 
 {% include storybook-preview.html story="components-va-link--video" link_text="video va-link" height="50px" %}
 
-### Mobile
+### Mobile app
 
 ### Default
 
@@ -163,7 +165,7 @@ If for some reason you do not use a link web-component links must meet the follo
 
 Review "[Usage](#usage)" for guidance.
 
-### Mobile
+### Mobile app
 
 * **Link opens within the app:**
   * In a full panel if the content is within the app.

@@ -208,6 +208,10 @@
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
   },
+  "va-tabs": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
   "va-telephone": {
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
