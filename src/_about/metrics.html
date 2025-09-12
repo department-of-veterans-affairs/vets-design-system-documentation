@@ -4,238 +4,223 @@ title: Metrics Dashboard
 permalink: /about/metrics/
 ---
 
-<h1>Metrics Dashboard</h1>
+<main role="main" aria-labelledby="main-heading" class="metrics-dashboard">
+  <h1 id="main-heading">Metrics Dashboard</h1>
 
-<p>This dashboard provides insights into the health and adoption of the VA Design System. Metrics are updated weekly to track our progress toward key objectives.</p>
+  <p>This dashboard provides insights into the health and adoption of the VA Design System. Metrics are updated weekly to track our progress toward key objectives.</p>
 
-<div class="metrics-dashboard">
+  <!-- Summary Metrics Cards -->
+  <section aria-labelledby="summary-heading">
+    <h2 id="summary-heading">Summary Metrics</h2>
   
-  <h2>Summary Metrics</h2>
-  
-  <div class="metrics-grid">
-    <va-card class="metric-card">
-      <h4>Open Issues</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues">-</div>
-      <div class="metric-trend" id="open-issues-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Closed This Month</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month">-</div>
-      <div class="metric-trend" id="closed-month-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Average Resolution Time</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution">-</div>
-      <div class="metric-trend" id="avg-resolution-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Total Components</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components">-</div>
-      <div class="metric-trend" id="total-components-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Most Used Component</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component">-</div>
-      <div class="metric-trend" id="most-used-component-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Total Component Usages</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages">-</div>
-      <div class="metric-trend" id="total-usages-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-  </div>
-  
-  <h2>Issue Tracking Metrics</h2>
-  
-  <div class="metrics-section">
-    <h3>Issue Activity by Quarter</h3>
-    <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
-    
-    <va-tabs>
-      <va-tab-item button-text="Graph" target-id="quarterly-graph-panel"></va-tab-item>
-      <va-tab-item button-text="Table" target-id="quarterly-table-panel"></va-tab-item>
-      
-      <va-tab-panel panel-id="quarterly-graph-panel">
-        <div id="quarterly-chart" 
-             class="chart-container"
-             role="img" 
-             aria-label="Bar chart showing quarterly issue activity with issues opened versus issues closed by quarter"
-             tabindex="0">
-          <!-- Chart will be rendered here -->
+    <div class="metrics-grid">
+      <va-card class="metric-card">
+        <h3 id="open-issues-label">Open Issues</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues" aria-labelledby="open-issues-label">-</div>
+        <div class="metric-trend" id="open-issues-trend" aria-label="Open issues trend indicator">
+          <!-- Trend indicator will be populated by JavaScript -->
         </div>
-      </va-tab-panel>
+      </va-card>
       
-      <va-tab-panel panel-id="quarterly-table-panel">
-        <table class="usa-table usa-table--borderless" 
-               role="table"
-               aria-label="Quarterly issue activity data">
-          <caption>Issue Activity by Quarter: Number of issues opened and closed each quarter</caption>
-          <thead>
-            <tr>
-              <th scope="col">Quarter</th>
-              <th scope="col">Issues Opened</th>
-              <th scope="col">Issues Closed</th>
-            </tr>
-          </thead>
-          <tbody id="quarterly-table-body">
-            <!-- Table data will be populated by JavaScript -->
-          </tbody>
-        </table>
-      </va-tab-panel>
-    </va-tabs>
-  </div>
-  
-  <h2>Component Usage Metrics</h2>
-  
-  <div class="metrics-section">
-    <h3>Top Components by Usage</h3>
-    <p>Most frequently used design system components across all VA applications</p>
-    <div class="data-freshness" id="component-data-freshness">
-      <!-- Data freshness indicator will be populated by JavaScript -->
+      <va-card class="metric-card">
+        <h3 id="closed-month-label">Closed This Month</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month" aria-labelledby="closed-month-label">-</div>
+        <div class="metric-trend" id="closed-month-trend" aria-label="Closed this month trend indicator">
+          <!-- Trend indicator will be populated by JavaScript -->
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="avg-resolution-label">Average Resolution Time</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution" aria-labelledby="avg-resolution-label">-</div>
+        <div class="metric-trend" id="avg-resolution-trend" aria-label="Average resolution time trend indicator">
+          <!-- Trend indicator will be populated by JavaScript -->
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="total-components-label">Total Components</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components" aria-labelledby="total-components-label">-</div>
+        <div class="metric-trend" id="total-components-trend" aria-label="Total components trend indicator">
+          <!-- Trend indicator will be populated by JavaScript -->
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="most-used-component-label">Most Used Component</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component" aria-labelledby="most-used-component-label">-</div>
+        <div class="metric-trend" id="most-used-component-trend" aria-label="Most used component trend indicator">
+          <!-- Trend indicator will be populated by JavaScript -->
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="total-usages-label">Total Component Usages</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages" aria-labelledby="total-usages-label">-</div>
+        <div class="metric-trend" id="total-usages-trend" aria-label="Total component usages trend indicator">
+          <!-- Trend indicator will be populated by JavaScript -->
+        </div>
+      </va-card>
     </div>
-    
-    <va-tabs>
-      <va-tab-item button-text="Graph" target-id="components-graph-panel"></va-tab-item>
-      <va-tab-item button-text="Table" target-id="components-table-panel"></va-tab-item>
-      
-      <va-tab-panel panel-id="components-graph-panel">
-        <div id="top-components-chart" 
-             class="chart-container"
-             role="img" 
-             aria-label="Bar chart showing top 10 components by usage count across VA applications"
-             tabindex="0">
-          <!-- Chart will be rendered here -->
-        </div>
-      </va-tab-panel>
-      
-      <va-tab-panel panel-id="components-table-panel">
-        <table class="usa-table usa-table--borderless" 
-               role="table"
-               aria-label="Top 25 component usage data">
-          <caption>Top Components by Usage: Top 25 most frequently used design system components</caption>
-          <thead>
-            <tr>
-              <th scope="col">Component Name</th>
-              <th scope="col">Usage Count</th>
-            </tr>
-          </thead>
-          <tbody id="components-table-body">
-            <!-- Table data will be populated by JavaScript -->
-          </tbody>
-        </table>
-      </va-tab-panel>
-    </va-tabs>
-  </div>
-
-  <h2>Monthly Analytics</h2>
+  </section>
   
-  <div class="metrics-section">
-    <h3>Top 25 Pages</h3>
-    <p>The most visited pages of design.va.gov</p>
-    <div class="monthly-reports-static">
-      <div class="report-item">
-        <h4>August 2025</h4>
-        <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-08.png" target="_blank" />
+  <!-- Issue Tracking Section -->
+  <section aria-labelledby="issue-tracking-heading">
+    <h2 id="issue-tracking-heading">Issue Tracking Metrics</h2>
+    
+    <div class="metrics-section">
+      <h3>Issue Activity by Quarter</h3>
+      <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
+      
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="quarterly-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="quarterly-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="quarterly-graph-panel" role="tabpanel">
+          <div id="quarterly-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Bar chart showing quarterly issue activity with issues opened versus issues closed by quarter"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="quarterly-table-panel" role="tabpanel">
+          <va-table id="quarterly-va-table"
+                    table-title="Issue Activity by Quarter: Number of issues opened and closed each quarter"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless">
+            <!-- Table content will be populated by JavaScript -->
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+  </section>
+  
+  <!-- Component Usage Section -->
+  <section aria-labelledby="component-usage-heading">
+    <h2 id="component-usage-heading">Component Usage Metrics</h2>
+    
+    <div class="metrics-section">
+      <h3>Top Components by Usage</h3>
+      <p>Most frequently used design system components across all VA applications</p>
+      <div class="data-freshness" id="component-data-freshness">
+        <!-- Data freshness indicator will be populated by JavaScript -->
+      </div>
+      
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="components-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="components-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="components-graph-panel" role="tabpanel">
+          <div id="top-components-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Bar chart showing top 10 components by usage count across VA applications"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="components-table-panel" role="tabpanel">
+          <va-table id="components-va-table"
+                    table-title="Top Components by Usage: Top 25 most frequently used design system components"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1">
+            <!-- Table content will be populated by JavaScript -->
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+  </section>
+
+  <!-- Monthly Analytics Section -->
+  <section aria-labelledby="monthly-analytics-heading">
+    <h2 id="monthly-analytics-heading">Monthly Analytics</h2>
+    
+    <div class="metrics-section">
+      <h3>Top 25 Pages</h3>
+      <p>The most visited pages of design.va.gov</p>
+      <div class="monthly-reports-static">
+        <div class="report-item">
+          <h4>August 2025</h4>
+          <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-08.png" alt="Bar chart showing the top 25 most visited pages on design.va.gov for August 2025" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   
-  <h2>Contributions</h2>
-  
-  <div class="metrics-section">
-    <h3>Monthly new issues created</h3>
-    <p>Displays the rate of new issues opened per time period to track community engagement</p>
+  <!-- Contributions Section -->
+  <section aria-labelledby="contributions-heading">
+    <h2 id="contributions-heading">Contributions</h2>
     
-    <va-tabs>
-      <va-tab-item button-text="Graph" target-id="velocity-graph-panel"></va-tab-item>
-      <va-tab-item button-text="Table" target-id="velocity-table-panel"></va-tab-item>
+    <div class="metrics-section">
+      <h3>Monthly new issues created</h3>
+      <p>Displays the rate of new issues opened per time period to track community engagement</p>
       
-      <va-tab-panel panel-id="velocity-graph-panel">
-        <div id="velocity-chart" 
-             class="chart-container"
-             role="img" 
-             aria-label="Line chart showing monthly new issues created over time to track community engagement"
-             tabindex="0">
-          <!-- Chart will be rendered here -->
-        </div>
-      </va-tab-panel>
-      
-      <va-tab-panel panel-id="velocity-table-panel">
-        <table class="usa-table usa-table--borderless" 
-               role="table"
-               aria-label="Monthly issue velocity data">
-          <caption>Monthly New Issues Created: Number of new issues opened each month</caption>
-          <thead>
-            <tr>
-              <th scope="col">Month/Year</th>
-              <th scope="col">Issues Opened</th>
-            </tr>
-          </thead>
-          <tbody id="velocity-table-body">
-            <!-- Table data will be populated by JavaScript -->
-          </tbody>
-        </table>
-      </va-tab-panel>
-    </va-tabs>
-  </div>
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="velocity-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="velocity-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="velocity-graph-panel" role="tabpanel">
+          <div id="velocity-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Line chart showing monthly new issues created over time to track community engagement"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="velocity-table-panel" role="tabpanel">
+          <va-table id="velocity-va-table"
+                    table-title="Monthly New Issues Created: Number of new issues opened each month"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1">
+            <!-- Table content will be populated by JavaScript -->
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
   
-  <div class="metrics-section">
-    <h3>Experimental Design Issues by Quarter</h3>
-    <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
-    
-    <va-tabs>
-      <va-tab-item button-text="Graph" target-id="experimental-graph-panel"></va-tab-item>
-      <va-tab-item button-text="Table" target-id="experimental-table-panel"></va-tab-item>
+    <div class="metrics-section">
+      <h3>Experimental Design Issues by Quarter</h3>
+      <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
       
-      <va-tab-panel panel-id="experimental-graph-panel">
-        <div id="experimental-chart" 
-             class="chart-container"
-             role="img" 
-             aria-label="Bar chart showing experimental design issues opened, closed, and implemented by quarter"
-             tabindex="0">
-          <!-- Chart will be rendered here -->
-        </div>
-      </va-tab-panel>
-      
-      <va-tab-panel panel-id="experimental-table-panel">
-        <table class="usa-table usa-table--borderless" 
-               role="table"
-               aria-label="Experimental design issues data">
-          <caption>Experimental Design Issues by Quarter: Issues opened, closed, and implemented each quarter</caption>
-          <thead>
-            <tr>
-              <th scope="col">Quarter</th>
-              <th scope="col">Issues Opened</th>
-              <th scope="col">Issues Closed</th>
-              <th scope="col">Issues Implemented</th>
-            </tr>
-          </thead>
-          <tbody id="experimental-table-body">
-            <!-- Table data will be populated by JavaScript -->
-          </tbody>
-        </table>
-      </va-tab-panel>
-    </va-tabs>
-  </div>
-  
-</div>
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="experimental-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="experimental-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="experimental-graph-panel" role="tabpanel">
+          <div id="experimental-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Bar chart showing experimental design issues opened, closed, and implemented by quarter"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="experimental-table-panel" role="tabpanel">
+          <va-table id="experimental-va-table"
+                    table-title="Experimental Design Issues by Quarter: Issues opened, closed, and implemented each quarter"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1,2,3">
+            <!-- Table content will be populated by JavaScript -->
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+  </section>
+</main>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
@@ -442,10 +427,19 @@ function showPlaceholders() {
 
 // Table population functions for accessible data views
 function populateQuarterlyTable(data) {
-  const tableBody = document.getElementById('quarterly-table-body');
-  if (!tableBody || !data || data.length === 0) {
-    if (tableBody) {
-      tableBody.innerHTML = '<tr><td colspan="3" tabindex="0" aria-label="No quarterly data currently available">No data available</td></tr>';
+  const vaTable = document.getElementById('quarterly-va-table');
+  if (!vaTable || !data || data.length === 0) {
+    if (vaTable) {
+      vaTable.innerHTML = `
+        <va-table-row slot="headers">
+          <span>Quarter</span>
+          <span>Issues Opened</span>
+          <span>Issues Closed</span>
+        </va-table-row>
+        <va-table-row>
+          <span colspan="3">No quarterly data currently available</span>
+        </va-table-row>
+      `;
     }
     return;
   }
@@ -471,26 +465,45 @@ function populateQuarterlyTable(data) {
     return quarterNumB - quarterNumA;
   });
   
-  // Clear existing table data
-  tableBody.innerHTML = '';
+  // Clear existing content and add headers
+  vaTable.innerHTML = '';
+  
+  // Add header row
+  const headerRow = document.createElement('va-table-row');
+  headerRow.setAttribute('slot', 'headers');
+  headerRow.innerHTML = `
+    <span>Quarter</span>
+    <span>Issues Opened</span>
+    <span>Issues Closed</span>
+  `;
+  vaTable.appendChild(headerRow);
   
   // Populate table rows with sorted data
   sortedData.forEach(row => {
-    const tableRow = document.createElement('tr');
+    const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
-      <td tabindex="0">${formatQuarter(row.period)}</td>
-      <td tabindex="0">${row.issues_opened}</td>
-      <td tabindex="0">${row.issues_closed}</td>
+      <span>${formatQuarter(row.period)}</span>
+      <span>${row.issues_opened}</span>
+      <span>${row.issues_closed}</span>
     `;
-    tableBody.appendChild(tableRow);
+    vaTable.appendChild(tableRow);
   });
 }
 
 function populateVelocityTable(data) {
-  const tableBody = document.getElementById('velocity-table-body');
-  if (!tableBody || !data || data.length === 0) {
-    if (tableBody) {
-      tableBody.innerHTML = '<tr><td colspan="2" tabindex="0" aria-label="No velocity data currently available">No data available</td></tr>';
+  const vaTable = document.getElementById('velocity-va-table');
+  if (!vaTable || !data || data.length === 0) {
+    if (vaTable) {
+      vaTable.innerHTML = `
+        <va-table-row slot="headers">
+          <span>Period</span>
+          <span>Issues Opened</span>
+        </va-table-row>
+        <va-table-row>
+          <span>No data available</span>
+          <span></span>
+        </va-table-row>
+      `;
     }
     return;
   }
@@ -516,25 +529,43 @@ function populateVelocityTable(data) {
     return parseInt(monthB) - parseInt(monthA);
   });
   
-  // Clear existing table data
-  tableBody.innerHTML = '';
+  // Clear existing content and add headers
+  vaTable.innerHTML = '';
   
-  // Populate table rows with sorted data
+  // Add header row
+  const headerRow = document.createElement('va-table-row');
+  headerRow.setAttribute('slot', 'headers');
+  headerRow.innerHTML = `
+    <span>Period</span>
+    <span>Issues Opened</span>
+  `;
+  vaTable.appendChild(headerRow);
+  
+  // Populate data rows with sorted data
   sortedData.forEach(row => {
-    const tableRow = document.createElement('tr');
+    const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
-      <td tabindex="0">${formatPeriod(row.period)}</td>
-      <td tabindex="0">${row.issues_opened}</td>
+      <span>${formatPeriod(row.period)}</span>
+      <span>${row.issues_opened}</span>
     `;
-    tableBody.appendChild(tableRow);
+    vaTable.appendChild(tableRow);
   });
 }
 
 function populateComponentsTable(data) {
-  const tableBody = document.getElementById('components-table-body');
-  if (!tableBody || !data || !data.top_components_overall) {
-    if (tableBody) {
-      tableBody.innerHTML = '<tr><td colspan="2" tabindex="0" aria-label="No component usage data currently available">No data available</td></tr>';
+  const vaTable = document.getElementById('components-va-table');
+  if (!vaTable || !data || !data.top_components_overall) {
+    if (vaTable) {
+      vaTable.innerHTML = `
+        <va-table-row slot="headers">
+          <span>Component</span>
+          <span>Usage Count</span>
+        </va-table-row>
+        <va-table-row>
+          <span>No data available</span>
+          <span></span>
+        </va-table-row>
+      `;
     }
     return;
   }
@@ -542,25 +573,47 @@ function populateComponentsTable(data) {
   // Take top 25 components for table (chart shows top 10)
   const topComponents = data.top_components_overall.slice(0, 25);
   
-  // Clear existing table data
-  tableBody.innerHTML = '';
+  // Clear existing content and add headers
+  vaTable.innerHTML = '';
   
-  // Populate table rows
+  // Add header row
+  const headerRow = document.createElement('va-table-row');
+  headerRow.setAttribute('slot', 'headers');
+  headerRow.innerHTML = `
+    <span>Component</span>
+    <span>Usage Count</span>
+  `;
+  vaTable.appendChild(headerRow);
+  
+  // Populate data rows
   topComponents.forEach(component => {
-    const tableRow = document.createElement('tr');
+    const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
-      <td tabindex="0">${component.name}</td>
-      <td tabindex="0">${component.usage_count.toLocaleString()}</td>
+      <span>${component.name}</span>
+      <span>${component.usage_count.toLocaleString()}</span>
     `;
-    tableBody.appendChild(tableRow);
+    vaTable.appendChild(tableRow);
   });
 }
 
 function populateExperimentalTable(data) {
-  const tableBody = document.getElementById('experimental-table-body');
-  if (!tableBody || !data || data.length === 0) {
-    if (tableBody) {
-      tableBody.innerHTML = '<tr><td colspan="4" tabindex="0" aria-label="No experimental design data currently available">No experimental design data available yet</td></tr>';
+  const vaTable = document.getElementById('experimental-va-table');
+  if (!vaTable || !data || data.length === 0) {
+    if (vaTable) {
+      vaTable.innerHTML = `
+        <va-table-row slot="headers">
+          <span>Quarter</span>
+          <span>Issues Opened</span>
+          <span>Issues Closed</span>
+          <span>Issues Implemented</span>
+        </va-table-row>
+        <va-table-row>
+          <span>No experimental design data available yet</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </va-table-row>
+      `;
     }
     return;
   }
@@ -586,19 +639,30 @@ function populateExperimentalTable(data) {
     return quarterNumB - quarterNumA;
   });
   
-  // Clear existing table data
-  tableBody.innerHTML = '';
+  // Clear existing content and add headers
+  vaTable.innerHTML = '';
   
-  // Populate table rows with sorted data
+  // Add header row
+  const headerRow = document.createElement('va-table-row');
+  headerRow.setAttribute('slot', 'headers');
+  headerRow.innerHTML = `
+    <span>Quarter</span>
+    <span>Issues Opened</span>
+    <span>Issues Closed</span>
+    <span>Issues Implemented</span>
+  `;
+  vaTable.appendChild(headerRow);
+  
+  // Populate data rows with sorted data
   sortedData.forEach(row => {
-    const tableRow = document.createElement('tr');
+    const tableRow = document.createElement('va-table-row');
     tableRow.innerHTML = `
-      <td tabindex="0">${formatQuarter(row.period)}</td>
-      <td tabindex="0">${row.issues_opened}</td>
-      <td tabindex="0">${row.issues_closed}</td>
-      <td tabindex="0">${row.issues_implemented || 0}</td>
+      <span>${formatQuarter(row.period)}</span>
+      <span>${row.issues_opened}</span>
+      <span>${row.issues_closed}</span>
+      <span>${row.issues_implemented || 0}</span>
     `;
-    tableBody.appendChild(tableRow);
+    vaTable.appendChild(tableRow);
   });
 }
 

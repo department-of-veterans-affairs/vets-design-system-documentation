@@ -109,35 +109,32 @@ describe('Metrics Dashboard Accessibility Tests', () => {
             </va-tab-panel>
             
             <va-tab-panel panel-id="quarterly-table-panel" role="tabpanel" aria-labelledby="quarterly-table-tab">
-              <table class="usa-table usa-table--borderless" 
-                     role="table"
-                     aria-label="Quarterly issue activity data showing issues opened and closed by quarter">
-                <caption>Issue Activity by Quarter: Number of issues opened and closed each quarter</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Quarter</th>
-                    <th scope="col">Issues Opened</th>
-                    <th scope="col">Issues Closed</th>
-                  </tr>
-                </thead>
-                <tbody id="quarterly-table-body">
-                  <tr>
-                    <td tabindex="0">Q1 2024</td>
-                    <td tabindex="0">15</td>
-                    <td tabindex="0">12</td>
-                  </tr>
-                  <tr>
-                    <td tabindex="0">Q2 2024</td>
-                    <td tabindex="0">23</td>
-                    <td tabindex="0">18</td>
-                  </tr>
-                  <tr>
-                    <td tabindex="0">Q3 2024</td>
-                    <td tabindex="0">19</td>
-                    <td tabindex="0">25</td>
-                  </tr>
-                </tbody>
-              </table>
+              <va-table 
+                table-title="Issue Activity by Quarter: Number of issues opened and closed each quarter"
+                stacked="true"
+                sortable="true"
+                table-type="borderless">
+                <va-table-row slot="headers">
+                  <span>Quarter</span>
+                  <span>Issues Opened</span>  
+                  <span>Issues Closed</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>Q3 2024</span>
+                  <span>19</span>
+                  <span>25</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>Q2 2024</span>
+                  <span>23</span>
+                  <span>18</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>Q1 2024</span>
+                  <span>15</span>
+                  <span>12</span>
+                </va-table-row>
+              </va-table>
             </va-tab-panel>
           </va-tabs>
         </div>
@@ -175,31 +172,29 @@ describe('Metrics Dashboard Accessibility Tests', () => {
             </va-tab-panel>
             
             <va-tab-panel panel-id="components-table-panel" role="tabpanel">
-              <table class="usa-table usa-table--borderless" 
-                     role="table"
-                     aria-label="Top 25 component usage data showing component names and usage counts">
-                <caption>Top Components by Usage: Top 25 most frequently used design system components</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Component Name</th>
-                    <th scope="col">Usage Count</th>
-                  </tr>
-                </thead>
-                <tbody id="components-table-body">
-                  <tr>
-                    <td tabindex="0">va-button</td>
-                    <td tabindex="0">1,247</td>
-                  </tr>
-                  <tr>
-                    <td tabindex="0">va-card</td>
-                    <td tabindex="0">892</td>
-                  </tr>
-                  <tr>
-                    <td tabindex="0">va-input</td>
-                    <td tabindex="0">654</td>
-                  </tr>
-                </tbody>
-              </table>
+              <va-table 
+                table-title="Top Components by Usage: Top 25 most frequently used design system components"
+                stacked="true"
+                sortable="true"
+                table-type="borderless"
+                right-align-cols="1">
+                <va-table-row slot="headers">
+                  <span>Component Name</span>
+                  <span>Usage Count</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>va-button</span>
+                  <span>1,247</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>va-card</span>
+                  <span>892</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>va-input</span>
+                  <span>654</span>
+                </va-table-row>
+              </va-table>
             </va-tab-panel>
           </va-tabs>
         </div>
@@ -231,31 +226,29 @@ describe('Metrics Dashboard Accessibility Tests', () => {
             </va-tab-panel>
             
             <va-tab-panel panel-id="velocity-table-panel" role="tabpanel">
-              <table class="usa-table usa-table--borderless" 
-                     role="table"
-                     aria-label="Monthly issue velocity data showing issues opened each month">
-                <caption>Monthly New Issues Created: Number of new issues opened each month</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Month/Year</th>
-                    <th scope="col">Issues Opened</th>
-                  </tr>
-                </thead>
-                <tbody id="velocity-table-body">
-                  <tr>
-                    <td tabindex="0">January 2024</td>
-                    <td tabindex="0">18</td>
-                  </tr>
-                  <tr>
-                    <td tabindex="0">February 2024</td>
-                    <td tabindex="0">22</td>
-                  </tr>
-                  <tr>
-                    <td tabindex="0">March 2024</td>
-                    <td tabindex="0">35</td>
-                  </tr>
-                </tbody>
-              </table>
+              <va-table 
+                table-title="Monthly New Issues Created: Number of new issues opened each month"
+                stacked="true"
+                sortable="true"
+                table-type="borderless"
+                right-align-cols="1">
+                <va-table-row slot="headers">
+                  <span>Month/Year</span>
+                  <span>Issues Opened</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>March 2024</span>
+                  <span>35</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>February 2024</span>
+                  <span>22</span>
+                </va-table-row>
+                <va-table-row>
+                  <span>January 2024</span>
+                  <span>18</span>
+                </va-table-row>
+              </va-table>
             </va-tab-panel>
           </va-tabs>
         </div>
@@ -322,12 +315,12 @@ describe('Metrics Dashboard Accessibility Tests', () => {
       // Test structural accessibility without axe-core limitations
       const main = document.querySelector('[role="main"], main');
       const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-      const tables = document.querySelectorAll('table');
+      const vaTables = document.querySelectorAll('va-table');
       const images = document.querySelectorAll('[role="img"]');
       
       expect(main).toBeTruthy();
       expect(headings.length).toBeGreaterThan(3);
-      expect(tables.length).toBeGreaterThan(2);
+      expect(vaTables.length).toBeGreaterThanOrEqual(3);
       expect(images.length).toBeGreaterThan(2);
     });
   });
@@ -372,24 +365,24 @@ describe('Metrics Dashboard Accessibility Tests', () => {
     });
 
     test('Tables should provide comprehensive data context for screen readers', () => {
-      const tables = getAllByRole(document.body, 'table');
+      const vaTables = document.querySelectorAll('va-table');
       
-      tables.forEach(table => {
-        // Each table must have a caption
-        const caption = table.querySelector('caption');
-        expect(caption).toBeTruthy();
-        expect(caption.textContent.trim().length).toBeGreaterThan(10);
+      vaTables.forEach(table => {
+        // Each va-table must have a table-title
+        expect(table).toHaveAttribute('table-title');
+        const tableTitle = table.getAttribute('table-title');
+        expect(tableTitle.length).toBeGreaterThan(10);
         
-        // Tables should have aria-label for additional context
-        expect(table).toHaveAttribute('aria-label');
+        // Should have proper accessibility attributes
+        expect(table).toHaveAttribute('stacked');
+        expect(table).toHaveAttribute('table-type');
         
-        // Column headers must use scope="col"
-        const columnHeaders = table.querySelectorAll('th[scope="col"]');
-        expect(columnHeaders.length).toBeGreaterThan(0);
+        // Should contain header row and data rows
+        const headerRows = table.querySelectorAll('va-table-row[slot="headers"]');
+        expect(headerRows.length).toBe(1);
         
-        // Data cells should be focusable for screen reader navigation
-        const dataCells = table.querySelectorAll('td[tabindex="0"]');
-        expect(dataCells.length).toBeGreaterThan(0);
+        const dataRows = table.querySelectorAll('va-table-row:not([slot="headers"])');
+        expect(dataRows.length).toBeGreaterThan(0);
       });
     });
 
@@ -444,9 +437,9 @@ describe('Metrics Dashboard Accessibility Tests', () => {
         expect(chart).toHaveAttribute('tabindex', '0');
       });
       
-      // Table cells should be focusable for navigation
-      const tableCells = document.querySelectorAll('td[tabindex="0"]');
-      expect(tableCells.length).toBeGreaterThan(0);
+      // va-table components should be present and accessible
+      const vaTables = document.querySelectorAll('va-table');
+      expect(vaTables.length).toBeGreaterThan(0);
     });
 
     test('Tab navigation should work correctly between chart and table views', () => {
@@ -473,46 +466,53 @@ describe('Metrics Dashboard Accessibility Tests', () => {
       tabPanels.forEach(panel => {
         expect(panel).toHaveAttribute('role', 'tabpanel');
         
-        // Panel should contain focusable content
-        const focusableElements = panel.querySelectorAll('[tabindex="0"], [role="img"][tabindex="0"]');
-        expect(focusableElements.length).toBeGreaterThan(0);
+        // Panel should contain accessible content (charts or va-tables)
+        const charts = panel.querySelectorAll('[role="img"][tabindex="0"]');
+        const vaTables = panel.querySelectorAll('va-table');
+        expect(charts.length + vaTables.length).toBeGreaterThan(0);
       });
     });
 
     test('Table navigation should support keyboard-only users', () => {
-      const tables = document.querySelectorAll('table');
+      const vaTables = document.querySelectorAll('va-table');
       
-      tables.forEach(table => {
-        // All data cells should be keyboard navigable
-        const dataCells = table.querySelectorAll('td');
-        dataCells.forEach(cell => {
-          expect(cell).toHaveAttribute('tabindex', '0');
-        });
+      vaTables.forEach(table => {
+        // va-table should be keyboard accessible via its internal implementation
+        expect(table).toBeTruthy();
         
-        // Headers should be properly identified
-        const headers = table.querySelectorAll('th');
-        headers.forEach(header => {
-          expect(header).toHaveAttribute('scope');
-        });
+        // Should have proper sortable functionality for keyboard users
+        if (table.hasAttribute('sortable')) {
+          expect(table.getAttribute('sortable')).toBe('true');
+        }
+        
+        // Should have headers for keyboard navigation
+        const headers = table.querySelectorAll('va-table-row[slot="headers"] span');
+        expect(headers.length).toBeGreaterThan(0);
+        
+        // Should have data rows for navigation
+        const dataRows = table.querySelectorAll('va-table-row:not([slot="headers"])');
+        expect(dataRows.length).toBeGreaterThan(0);
       });
     });
 
     test('Keyboard users should be able to access chart data via tables', () => {
-      // Each section with charts should have corresponding tables
+      // Each section with charts should have corresponding va-tables
       const metricsSections = document.querySelectorAll('.metrics-section');
       
       metricsSections.forEach(section => {
         const chart = section.querySelector('.chart-container');
-        const table = section.querySelector('table');
+        const vaTable = section.querySelector('va-table');
         
-        if (chart && table) {
-          // Table should have navigable content
-          const tableRows = table.querySelectorAll('tbody tr');
-          expect(tableRows.length).toBeGreaterThan(0);
+        if (chart && vaTable) {
+          // va-table should have accessible title
+          expect(vaTable).toHaveAttribute('table-title');
           
-          // Table cells should be keyboard accessible
-          const focusableCells = table.querySelectorAll('td[tabindex="0"]');
-          expect(focusableCells.length).toBeGreaterThan(0);
+          // Should have header and data rows for keyboard navigation
+          const headers = vaTable.querySelectorAll('va-table-row[slot="headers"]');
+          expect(headers.length).toBe(1);
+          
+          const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+          expect(dataRows.length).toBeGreaterThan(0);
         }
       });
     });
@@ -576,24 +576,25 @@ describe('Metrics Dashboard Accessibility Tests', () => {
     });
 
     test('Tables should use proper semantic markup', () => {
-      const tables = getAllByRole(document.body, 'table');
+      const vaTables = document.querySelectorAll('va-table');
       
-      tables.forEach(table => {
-        // Should have explicit role="table"
-        expect(table).toHaveAttribute('role', 'table');
+      vaTables.forEach(table => {
+        // va-table should have proper attributes for accessibility
+        expect(table).toHaveAttribute('table-title');
+        expect(table).toHaveAttribute('table-type', 'borderless');
+        expect(table).toHaveAttribute('stacked', 'true');
         
-        // Should have meaningful caption
-        const caption = table.querySelector('caption');
-        expect(caption).toBeTruthy();
-        expect(caption.textContent.trim()).not.toBe('');
+        // Should have meaningful table title
+        const tableTitle = table.getAttribute('table-title');
+        expect(tableTitle.trim()).not.toBe('');
+        expect(tableTitle.length).toBeGreaterThan(10);
         
-        // Should have thead and tbody
-        expect(table.querySelector('thead')).toBeTruthy();
-        expect(table.querySelector('tbody')).toBeTruthy();
+        // Should have proper structure with headers and data
+        const headers = table.querySelectorAll('va-table-row[slot="headers"]');
+        expect(headers.length).toBe(1);
         
-        // Column headers should use scope="col"
-        const colHeaders = table.querySelectorAll('th[scope="col"]');
-        expect(colHeaders.length).toBeGreaterThan(0);
+        const dataRows = table.querySelectorAll('va-table-row:not([slot="headers"])');
+        expect(dataRows.length).toBeGreaterThan(0);
       });
     });
 
@@ -619,7 +620,7 @@ describe('Metrics Dashboard Accessibility Tests', () => {
         'h1',
         'va-tabs',
         '.chart-container',
-        'table'
+        'va-table'
       ];
       
       keyElements.forEach(selector => {
@@ -636,30 +637,38 @@ describe('Metrics Dashboard Accessibility Tests', () => {
         expect(item).toHaveAttribute('target-id');
       });
       
-      // Tables should remain keyboard navigable
-      const tableCells = document.querySelectorAll('td[tabindex="0"]');
-      expect(tableCells.length).toBeGreaterThan(0);
+      // va-tables should remain accessible with proper attributes
+      const vaTables = document.querySelectorAll('va-table');
+      vaTables.forEach(table => {
+        expect(table).toHaveAttribute('table-title');
+        expect(table).toHaveAttribute('stacked', 'true');
+      });
+      expect(vaTables.length).toBeGreaterThan(0);
     });
   });
 
   describe('🎯 User Experience Validation', () => {
     test('Screen reader users can access chart data through tables', () => {
-      // For each chart, verify there's corresponding tabular data
+      // For each chart, verify there's corresponding va-table data
       const chartSections = document.querySelectorAll('.metrics-section');
       
       chartSections.forEach(section => {
         const chart = section.querySelector('.chart-container');
-        const table = section.querySelector('table');
+        const vaTable = section.querySelector('va-table');
         
-        if (chart && table) {
-          // Table should have accessible data
-          const tableBody = table.querySelector('tbody');
-          const dataRows = tableBody.querySelectorAll('tr');
+        if (chart && vaTable) {
+          // va-table should have accessible title and structure
+          expect(vaTable).toHaveAttribute('table-title');
+          
+          // Should have data rows for screen reader navigation
+          const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
           expect(dataRows.length).toBeGreaterThan(0);
           
-          // Data should be navigable
-          const focusableCells = table.querySelectorAll('td[tabindex="0"]');
-          expect(focusableCells.length).toBeGreaterThan(0);
+          // Should be sortable for enhanced navigation
+          expect(vaTable).toHaveAttribute('sortable', 'true');
+          
+          // Should be stacked for mobile accessibility
+          expect(vaTable).toHaveAttribute('stacked', 'true');
         }
       });
     });

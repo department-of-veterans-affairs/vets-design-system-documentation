@@ -20,7 +20,7 @@ The accessibility test suite consists of four main test files that cover differe
 **Key Features Tested:**
 
 - Charts have proper `role="img"`, `aria-label`, and `tabindex="0"`
-- Tables use semantic markup with `<caption>`, `scope` attributes, and keyboard navigation
+- VA tables (`va-table`) use proper `table-title`, `stacked`, and `sortable` attributes
 - Tab switching between chart and table views is properly announced
 - Data freshness indicators are accessible to screen readers
 
@@ -186,22 +186,24 @@ Tests are configured in:
 </svg>
 ```
 
-### Table Equivalents
+### VA Table Components
 
 ```html
-<table role="table" aria-label="Data table description">
-  <caption>Table Caption: Data context and summary</caption>
-  <thead>
-    <tr>
-      <th scope="col">Column Header</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td tabindex="0">Focusable cell data</td>
-    </tr>
-  </tbody>
-</table>
+<va-table 
+  table-title="Data context and summary"
+  stacked="true"
+  sortable="true"
+  table-type="borderless"
+  right-align-cols="1">
+  <va-table-row slot="headers">
+    <span>Column Header</span>
+    <span>Value Header</span>
+  </va-table-row>
+  <va-table-row>
+    <span>Cell data content</span>
+    <span>123</span>
+  </va-table-row>
+</va-table>
 ```
 
 ## Tab Navigation Implementation
