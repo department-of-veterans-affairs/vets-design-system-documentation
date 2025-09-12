@@ -18,6 +18,12 @@
   background: var(--vads-color-gray-lightest);
   border-radius: var(--vads-radius-sm);
   position: relative;
+  
+  // Ensure charts have adequate space on mobile
+  @media (max-width: 768px) {
+    height: 350px;
+    margin: var(--vads-spacing-3) 0;
+  }
 }
 
 // Tab content styling for metrics tables
@@ -32,10 +38,24 @@
   // Ensure tables are responsive
   overflow-x: auto;
   
-  // Minimal styling - let va-table handle responsive behavior
-  va-table-row span {
-    // Only apply basic padding, let va-table handle layout
-    padding: var(--vads-spacing-1) var(--vads-spacing-2);
+  // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
+  @media (min-width: 769px) {
+    va-table-row span {
+      padding: var(--vads-spacing-1) var(--vads-spacing-2);
+      text-align: left;
+      
+      // Numeric columns right-align on desktop only
+      &:nth-child(n+2) {
+        text-align: right;
+      }
+      
+      // Header row styling
+      va-table-row:first-child & {
+        font-weight: var(--font-weight-bold);
+        background-color: var(--vads-color-gray-lightest);
+        text-align: center;
+      }
+    }
   }
   
   // Empty state styling
