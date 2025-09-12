@@ -9,7 +9,8 @@ redirect_from:
 intro-text: "Detailed accessibility requirements and implementation guidance for VA.gov forms"
 status: use-deployed
 anchors:
-  - anchor: Focus management implementation
+  - anchor: Why form accessibility matters
+  - anchor: Managing focus in form flows
   - anchor: Form labeling and structure
   - anchor: Input validation and error handling
   - anchor: Cognitive accessibility
@@ -51,50 +52,39 @@ These guidelines ensure that VA.gov forms work for everyone by addressing:
 
 Every form interaction should be straightforward, regardless of how a Veteran accesses our services. Following these guidelines helps create forms that are not only compliant with accessibility standards, but truly usable by all Veterans.
 
-## Focus management implementation
+## Managing focus in form flows
 
-### Technical requirements
+Digitized forms on VA.gov are built as single-page applications (SPAs). When users move to a new page in these forms (also called a “route change" in SPAs) the appcsx must manually set focus. This is because, unlike when a static page loads, focus does not reset automatically after an SPA route change. Setting focus helps users stay oriented and take the next step. 
 
-VA.gov forms are single-page applications (SPAs). When a user advances to a new page (route change) in a form, the app **must set focus programmatically** on the page's **top-most unique item** so screen reader and keyboard users immediately land at the correct context.
+### Why moving focus in a form application matters
 
-#### Why focus management matters
+* **Moving focus gives users context:** Because screen readers prioritize announcing newly focused elements, screen reader users will hear the focused element right away.
+* **Managing focus moves users closer to the next relevant action:** Moving focus to the beginning of the new content helps users more easily find relevant information and the next action they need to complete.
+* Meets WCAG AA criteria: Supports focus order and visibility (WCAG 2.2: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html), 2.4.7 [2.4.7 Focus Not Obscured](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured.html) (AA)) and reduces unexpected context changes ([3.2.3 Consistent Navigation](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html)).
 
-- **Announces context**: Users hear the new step name or page name right away (screen readers announce focused element text)
-- **Preserves reading order**: Focus starts at the beginning of the step's content, not mid-page  
-- **Meets WCAG intent**: Supports focus order and visibility (WCAG 2.2: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html), [2.4.7 Focus Not Obscured](https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html) (AA)) and reduces unexpected context changes ([3.2.3 Consistent Navigation](https://www.w3.org/WAI/WCAG21/Understanding/consistent-navigation.html))
+### Where to move focus when a new form page loads
 
-#### How it works
+When a new page loads in a form application, move focus to an element that gives users context and helps them find the next action. Use these guidelines to choose the best focus location:
 
-On each *successful* page load (not an error validation event):
+1. **If the page has a unique page heading** (usually an H1 at the top of the page or H3 inside the step content), set focus there.
+2. **If the page does not have a unique page heading**, set focus on the step indicator header (usually an H2). 
 
-1. **If the page has a unique page heading (`<h3>` for the step content)**: Focus that `<h3>` (preferred when present and unique to the page)
-2. **If the page does not have a unique page heading, focus the stepper header (`<h2>`)**
+### Where to move focus in other scenarios 
 
-#### Exceptions and special cases
+* **If there’s a validation error when submitting, move focus to the first error message.** After the user fixes the error and submits the form successfully, follow the guidance for  [moving focus when a new page loads](#where-to-move-focus-when-a-new-form-page-loads).
+* **When users navigate back to a form page**, treat it like a fresh page load and move focus to the top unique heading.
+* **After a modal closes**, focus should return to the button that opened it.
+* **Do not remove the “Skip to content” link on the page.** Scripts should still set focus to the top unique heading when a new page loads.
+* **Scroll focused headings into view.** This helps users know where they are and meets WCAG criterion [2.4.11 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html): Focus not obscured.
 
-* **Validation errors on submit**: 
-  * Move focus to the first field in error
-  * After the user fixes errors and submits successfully, return to the standard rule above
-* **When users navigate back to a form page**: Treat it like a fresh page load and move focus to the top-most unique heading. Only in deliberate return flows (like closing a modal or dismissing an overlay) should you return focus to the specific control they left
-* **Skip links**: Keep the skip link, but your script should still set focus to the heading after route change
-* **Hidden/obscured focus**: Ensure focused headings are scrolled into view and not covered by sticky headers (meets [2.4.11 AA](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html))
+### How to set focus with forms code
 
+Older forms use [built-in focus management](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/containers/FormPage.jsx) that moves focus to the segmented progress bar.
 
-
-### Code examples
-
-### Legacy forms
-
-Older forms can continue to rely on focus management that is built into the forms library on line 38 of `vets-website/src/platform/forms-system/src/js/containers/FormPage.jsx`. `defaultFocusSelector` is defined as the segmented progress bar in `vets-website/src/platform/utilities/ui/focus.js`.
-
-Because the `h1` in a default form flow is the name of the form on every page of the form, the top level unique thing on a form page was the step indicator.
-
-### Modern forms with unique headings
-
-More recent forms have defined a unique `h3` for each page of the form. Forms that have these unique `h3`s should send focus to the `h3` and this can be done by overriding the default focus in forms by editing your `config/form.js`:
+Newer forms use unique H3 headings for each page, and developers can set focus to these by updating their form configuration in `config/form.js.`
 
 ```javascript
-// In your form configuration
+// In your form configuration (config/form.js)
 {
   useCustomScrollAndFocus: true,
   scrollAndFocusTarget: focusH3, // custom function to scroll and focus
@@ -108,16 +98,11 @@ More recent forms have defined a unique `h3` for each page of the form. Forms th
 
 ### Testing checklist
 
-#### Focus management testing
-
-- After clicking **Continue/Next**, does focus land on the unique `<h3>` (or the stepper `<h2>` if no `<h3>`)?
-- Is the focused element scrolled into view and **not** hidden under sticky headers?
-- With a screen reader, do you immediately hear the step's or page unique name?
-- On validation errors, does focus land on the first error field instead of the heading?
-- Can you Tab forward/backward naturally from the heading? (No stuck `tabindex="-1"`)
-
-
-
+1. After clicking **Continue**, does focus land on the unique heading?
+2. Is the focused item visible?
+3. With a screen reader, do you immediately hear the step or page name?
+4. On validation errors, does focus land on the first error message?
+5. Can you use the Tab key to move forward and backward from the heading naturally?
 
 ## Form labeling and structure
 
@@ -277,7 +262,6 @@ Forms must follow the four principles of accessibility (POUR: Perceivable, Opera
 * **2.2.1 Timing Adjustable (AA)**: Time limits can be extended or disabled
 * **3.2.2 On Input (AA)**: Changing form controls doesn't cause unexpected context changes
 * **3.3.1 Error Identification (AA)**: If input errors are detected, the items in error are identified and described to users in text
-
 
 ## Related resources
 
