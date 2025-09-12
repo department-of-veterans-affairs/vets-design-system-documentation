@@ -4,7 +4,20 @@ This directory contains comprehensive accessibility tests for the metrics dashbo
 
 ## Test Coverage Overview
 
-The accessibility test suite consists of four main test files that cover different aspects of accessibility compliance:
+The accessibility test suite consists of **five main test files** that cover different aspects of accessibility compliance:
+
+### Integration Test (Primary - September 2025)
+
+**`metrics-integration.test.js` - Real Implementation Validation**
+
+- **Coverage**: Tests the actual built Jekyll site at `_site/about/metrics/index.html`
+- **15 comprehensive tests** covering real-world usage
+- **Build-then-test workflow** ensures accuracy
+- **JavaScript function validation** with real DOM
+- **Axe-core testing** on actual metrics dashboard content
+- **Performance and loading state validation**
+
+### Legacy Unit Tests (For Reference)
 
 ### 1. `metrics-accessibility.test.js` - Core Accessibility Tests
 
@@ -108,10 +121,24 @@ Prevents regressions in:
 
 ## Running the Tests
 
-### Individual Test Suites
+### Revised Testing Approach (September 2025)
+
+The testing approach has been updated to test the **actual built Jekyll site** instead of mock HTML structures, providing real confidence in accessibility compliance.
+
+#### Integration Tests (Recommended)
 
 ```bash
-# Run core accessibility tests
+# Run integration tests that load the actual built site
+npm run test:integration
+
+# Run all accessibility tests including integration
+npm run test:all-accessibility
+```
+
+#### Legacy Unit Tests (For Reference)
+
+```bash
+# Run core accessibility tests (uses mocks)
 npm run test:accessibility
 
 # Run specific test files
@@ -121,12 +148,14 @@ npm test __tests__/metrics-browser-compatibility.test.js
 npm test __tests__/metrics-regression-prevention.test.js
 ```
 
-### All Accessibility Tests
+### Key Difference: Build-Then-Test Workflow
 
-```bash
-# Run all accessibility-related tests
-npm test -- --testNamePattern="accessibility|browser.*compatibility|screen.*reader"
-```
+The new approach ensures tests reflect what users actually experience:
+
+1. **Build the site**: `yarn build && bundle exec jekyll build`
+2. **Load real HTML**: Tests read `_site/about/metrics/index.html`
+3. **Test actual implementation**: JavaScript functions, DOM structure, accessibility features
+4. **Validate real user experience**: Screen reader compatibility, keyboard navigation
 
 ## Test Infrastructure
 
@@ -295,17 +324,31 @@ Tests are configured in:
 
 ---
 
-## Test Results Summary
+## Test Results Summary (Updated September 2025)
 
+### Integration Tests (Primary)
+**Test Suite**: `metrics-integration.test.js`  
+**Tests**: 15 comprehensive integration tests ✅  
+**Approach**: Tests actual built Jekyll site  
+**Pass Rate**: 100% ✅  
+
+### Legacy Unit Tests (Reference)
 **Total Test Suites**: 4  
 **Total Tests**: 80 (67 accessibility-focused + 13 regression)  
 **Pass Rate**: 100% ✅  
 
-### Coverage Breakdown
+### Combined Coverage Breakdown
 
-- **Core Accessibility**: 25 tests ✅
-- **Screen Reader Scenarios**: 20 tests ✅  
-- **Browser Compatibility**: 21 tests ✅
-- **Regression Prevention**: 14 tests ✅
+- **Integration Tests**: 15 tests ✅ (Real implementation validation)
+- **Core Accessibility**: 25 tests ✅ (Mock-based validation)
+- **Screen Reader Scenarios**: 20 tests ✅ (Mock-based validation)
+- **Browser Compatibility**: 21 tests ✅ (Mock-based validation)
+- **Regression Prevention**: 14 tests ✅ (Visual and functional validation)
 
-All tests verify the metrics dashboard meets Section 508 and WCAG 2.2 AA accessibility requirements as specified in the original issue requirements.
+**Total**: 95 tests ensuring comprehensive Section 508 and WCAG 2.2 AA accessibility compliance
+
+### Testing Approach Evolution
+
+- **Before September 2025**: Mock HTML structures in `beforeEach()` blocks
+- **After September 2025**: Actual built Jekyll site loaded from `_site/about/metrics/index.html`
+- **Result**: True validation of user experience with real implementation confidence
