@@ -50,7 +50,7 @@ anchors:
 #### Using the standard table
 
 * **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
-**Use monospace fonts for content that requires precise alignment in tables.** This includes numerical data that can be tabulated and, in some cases, medical terminology. See [Typography]({{ site.baseurl }}/foundation/typography.md) for detailed guidance on when monospace fonts are appropriate. 
+* **Use monospace fonts for content that requires precise alignment in tables.** This includes numerical data that can be tabulated and, in some cases, medical terminology. See [Typography]({{ site.baseurl }}/foundation/typography.md) for detailed guidance on when monospace fonts are appropriate. 
 
 #### Using responsive stacked tables
 
