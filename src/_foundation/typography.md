@@ -8,7 +8,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ## Fonts
 
 <section id="sans" class="usa-grid-full">
-    <h4>Source Sans Pro (<tt>.vads-u-font-family--sans</tt>)</h4>
+    <h4>Source Sans Pro (<code>.vads-u-font-family--sans</code>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -32,7 +32,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ---
 
 <section class="usa-grid-full">
-    <h4>Bitter (<tt>.vads-u-font-family--serif</tt>)</h4>
+    <h4>Bitter (<code>.vads-u-font-family--serif</code>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -61,7 +61,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ---
 
 <section class="usa-grid-full">
-    <h4>Roboto Mono (<tt>.vads-u-font-family--monospace</tt>)</h4>
+    <h4>Roboto Mono (<code>.vads-u-font-family--monospace</code>)</h4>
 
     <div>
         <div class="usa-width-one-half">
