@@ -65,8 +65,8 @@ intro-text: Typographical selections intended to meet the highest standards of u
 
     <div>
         <div class="usa-width-one-half">
-            <p><a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono</a> is a monospaced addition to the Roboto type family. Like the other members of the Roboto family, the fonts are optimized for readability on screens across a wide variety of devices and reading environments.</p>
-            <p>While the monospaced version is related to its variable width cousin, it doesn't hesitate to change forms when so beneficial. For instance, narrow glyphs like 'I', 'l' and 'i' have added serifs for more even texture while wider glyphs are adjusted for weight. Curved caps like 'C' and 'O' take on the straighter sides from Roboto Condensed.</p>
+            <p><a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono</a> is a monospace addition to the Roboto type family. Like the other members of the Roboto family, the fonts are optimized for readability on screens across a wide variety of devices and reading environments.</p>
+            <p>While the monospace version is related to its variable width cousin, it doesn't hesitate to change forms when so beneficial. For instance, narrow glyphs like 'I', 'l' and 'i' have added serifs for more even texture while wider glyphs are adjusted for weight. Curved caps like 'C' and 'O' take on the straighter sides from Roboto Condensed.</p>
             <p>Special consideration is given to code display, with clear distinction between similar characters like 0 (zero) and O (capital O), and between 1 (one), l (lowercase L), and I (capital i). This makes Roboto Mono ideal for displaying code, configuration files, and other technical content.</p>
         </div>
 
