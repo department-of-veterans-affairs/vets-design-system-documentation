@@ -5,7 +5,6 @@ inner-title: Working with the system
 permalink: /about/designers/
 intro-text: Documentation and resources for designers.
 sub-pages:
-  - sub-page: Contributing to docs
   - sub-page: Contributing a template or pattern
   - sub-page: Creating components
   - sub-page: Design libraries
