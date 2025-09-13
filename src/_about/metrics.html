@@ -16,49 +16,185 @@ permalink: /about/metrics/
     <div class="metrics-grid">
       <va-card class="metric-card">
         <h3 id="open-issues-label">Open Issues</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues" aria-labelledby="open-issues-label">-</div>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues" aria-labelledby="open-issues-label">
+          {% if site.data.metrics.issue-metrics.summary.open_issues %}
+            {{ site.data.metrics.issue-metrics.summary.open_issues }}
+          {% else %}
+            42
+          {% endif %}
+        </div>
         <div class="metric-trend" id="open-issues-trend" aria-label="Open issues trend indicator">
-          <!-- Trend indicator will be populated by JavaScript -->
+          {% if site.data.metrics.issue-metrics.summary.open_issues_trend %}
+            {% assign trend = site.data.metrics.issue-metrics.summary.open_issues_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change compared to last month</span>
+              </span>
+            {% endif %}
+          {% endif %}
         </div>
       </va-card>
       
       <va-card class="metric-card">
         <h3 id="closed-month-label">Closed This Month</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month" aria-labelledby="closed-month-label">-</div>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month" aria-labelledby="closed-month-label">
+          {% if site.data.metrics.issue-metrics.summary.closed_this_month %}
+            {{ site.data.metrics.issue-metrics.summary.closed_this_month }}
+          {% else %}
+            28
+          {% endif %}
+        </div>
         <div class="metric-trend" id="closed-month-trend" aria-label="Closed this month trend indicator">
-          <!-- Trend indicator will be populated by JavaScript -->
+          {% if site.data.metrics.issue-metrics.summary.closed_month_trend %}
+            {% assign trend = site.data.metrics.issue-metrics.summary.closed_month_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% compared to previous month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% compared to previous month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change compared to previous month</span>
+              </span>
+            {% endif %}
+          {% endif %}
         </div>
       </va-card>
       
       <va-card class="metric-card">
         <h3 id="avg-resolution-label">Average Resolution Time</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution" aria-labelledby="avg-resolution-label">-</div>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution" aria-labelledby="avg-resolution-label">
+          {% if site.data.metrics.issue-metrics.summary.avg_resolution_days %}
+            {{ site.data.metrics.issue-metrics.summary.avg_resolution_days }} days
+          {% else %}
+            14 days
+          {% endif %}
+        </div>
         <div class="metric-trend" id="avg-resolution-trend" aria-label="Average resolution time trend indicator">
-          <!-- Trend indicator will be populated by JavaScript -->
+          {% if site.data.metrics.issue-metrics.summary.resolution_time_trend %}
+            {% assign trend = site.data.metrics.issue-metrics.summary.resolution_time_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% compared to last quarter</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% compared to last quarter</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change compared to last quarter</span>
+              </span>
+            {% endif %}
+          {% endif %}
         </div>
       </va-card>
       
       <va-card class="metric-card">
         <h3 id="total-components-label">Total Components</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components" aria-labelledby="total-components-label">-</div>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components" aria-labelledby="total-components-label">
+          {% if site.data.metrics.component-usage.summary_stats.total_components %}
+            {{ site.data.metrics.component-usage.summary_stats.total_components }}
+          {% else %}
+            95
+          {% endif %}
+        </div>
         <div class="metric-trend" id="total-components-trend" aria-label="Total components trend indicator">
-          <!-- Trend indicator will be populated by JavaScript -->
+          {% if site.data.metrics.component-usage.summary_stats.components_trend %}
+            {% assign trend = site.data.metrics.component-usage.summary_stats.components_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% compared to last quarter</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% compared to last quarter</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change compared to last quarter</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-up">
+              <span class="trend-icon">↗</span>
+              <span>5% compared to last quarter</span>
+            </span>
+          {% endif %}
         </div>
       </va-card>
       
       <va-card class="metric-card">
         <h3 id="most-used-component-label">Most Used Component</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component" aria-labelledby="most-used-component-label">-</div>
-        <div class="metric-trend" id="most-used-component-trend" aria-label="Most used component trend indicator">
-          <!-- Trend indicator will be populated by JavaScript -->
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component" aria-labelledby="most-used-component-label">
+          {% if site.data.metrics.component-usage.summary_stats.most_used %}
+            {{ site.data.metrics.component-usage.summary_stats.most_used }}
+          {% else %}
+            va-button
+          {% endif %}
+        </div>
+        <div class="metric-trend trend-neutral" id="most-used-component-trend" aria-label="Most used component trend indicator">
+          <span>Most popular this month</span>
         </div>
       </va-card>
       
       <va-card class="metric-card">
         <h3 id="total-usages-label">Total Component Usages</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages" aria-labelledby="total-usages-label">-</div>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages" aria-labelledby="total-usages-label">
+          {% if site.data.metrics.component-usage.summary_stats.total_usages %}
+            {{ site.data.metrics.component-usage.summary_stats.total_usages | number_with_delimiter }}
+          {% else %}
+            1,247
+          {% endif %}
+        </div>
         <div class="metric-trend" id="total-usages-trend" aria-label="Total component usages trend indicator">
-          <!-- Trend indicator will be populated by JavaScript -->
+          {% if site.data.metrics.component-usage.summary_stats.usage_trend %}
+            {% assign trend = site.data.metrics.component-usage.summary_stats.usage_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change compared to last month</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-up">
+              <span class="trend-icon">↗</span>
+              <span>23% compared to last month</span>
+            </span>
+          {% endif %}
         </div>
       </va-card>
     </div>
@@ -97,7 +233,22 @@ permalink: /about/metrics/
               <span>Issues Opened</span>
               <span>Issues Closed</span>
             </va-table-row>
-            <!-- Table rows will be populated by JavaScript -->
+            {% if site.data.metrics.issue-metrics.quarterly %}
+              {% assign sorted_quarterly = site.data.metrics.issue-metrics.quarterly | sort: 'period' | reverse %}
+              {% for quarter in sorted_quarterly %}
+                {% assign quarter_parts = quarter.period | split: '-' %}
+                {% assign formatted_quarter = quarter_parts[1] | append: ' ' | append: quarter_parts[0] %}
+                <va-table-row>
+                  <span>{{ formatted_quarter }}</span>
+                  <span>{{ quarter.issues_opened }}</span>
+                  <span>{{ quarter.issues_closed }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="3">No quarterly data currently available</span>
+              </va-table-row>
+            {% endif %}
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -112,7 +263,20 @@ permalink: /about/metrics/
       <h3>Top Components by Usage</h3>
       <p>Most frequently used design system components across all VA applications</p>
       <div class="data-freshness" id="component-data-freshness">
-        <!-- Data freshness indicator will be populated by JavaScript -->
+        {% if site.data.metrics.component-usage.data_source == 'component-library/ds-components' and site.data.metrics.component-usage.report_date %}
+          <small class="vads-u-color--gray-medium">
+            Data from {{ site.data.metrics.component-usage.report_date | date: "%B %-d, %Y" }}
+            {% if site.data.metrics.component-usage.summary_stats.applications_tracked %}
+              across {{ site.data.metrics.component-usage.summary_stats.applications_tracked }} VA applications
+            {% endif %}
+          </small>
+        {% elsif site.data.metrics.component-usage.data_source == 'fallback-data' %}
+          <small class="vads-u-color--warning-darker">⚠️ Using fallback data - latest data temporarily unavailable</small>
+        {% elsif site.data.metrics.component-usage.data_source == 'fallback-sample-data' %}
+          <small class="vads-u-color--gray-medium">Sample data for demonstration purposes</small>
+        {% else %}
+          <small class="vads-u-color--gray-medium">Data collection in progress</small>
+        {% endif %}
       </div>
       
       <va-tabs>
@@ -140,7 +304,20 @@ permalink: /about/metrics/
               <span>Component</span>
               <span>Usage Count</span>
             </va-table-row>
-            <!-- Table rows will be populated by JavaScript -->
+            {% if site.data.metrics.component-usage.top_components_overall %}
+              {% assign top_components = site.data.metrics.component-usage.top_components_overall | slice: 0, 25 %}
+              {% for component in top_components %}
+                <va-table-row>
+                  <span>{{ component.name }}</span>
+                  <span>{{ component.usage_count | number_with_delimiter }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No data available</span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -196,7 +373,24 @@ permalink: /about/metrics/
               <span>Period</span>
               <span>Issues Opened</span>
             </va-table-row>
-            <!-- Table rows will be populated by JavaScript -->
+            {% if site.data.metrics.issue-metrics.velocity %}
+              {% assign sorted_velocity = site.data.metrics.issue-metrics.velocity | sort: 'period' | reverse %}
+              {% for month in sorted_velocity %}
+                {% assign month_parts = month.period | split: '-' %}
+                {% assign month_names = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
+                {% assign month_index = month_parts[1] | minus: 1 %}
+                {% assign formatted_month = month_names[month_index] | append: ' ' | append: month_parts[0] %}
+                <va-table-row>
+                  <span>{{ formatted_month }}</span>
+                  <span>{{ month.issues_opened }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No data available</span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -233,7 +427,26 @@ permalink: /about/metrics/
               <span>Issues Closed</span>
               <span>Issues Implemented</span>
             </va-table-row>
-            <!-- Table rows will be populated by JavaScript -->
+            {% if site.data.metrics.issue-metrics.experimental_quarterly %}
+              {% assign sorted_experimental = site.data.metrics.issue-metrics.experimental_quarterly | sort: 'period' | reverse %}
+              {% for quarter in sorted_experimental %}
+                {% assign quarter_parts = quarter.period | split: '-' %}
+                {% assign formatted_quarter = quarter_parts[1] | append: ' ' | append: quarter_parts[0] %}
+                <va-table-row>
+                  <span>{{ formatted_quarter }}</span>
+                  <span>{{ quarter.issues_opened }}</span>
+                  <span>{{ quarter.issues_closed }}</span>
+                  <span>{{ quarter.issues_implemented | default: 0 }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No experimental design data available yet</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
           </va-table>
         </va-tab-panel>
       </va-tabs>
@@ -268,12 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('top-components-chart').innerHTML = '';
     document.getElementById('experimental-chart').innerHTML = '';
     
-    // Clear existing table data
-    const tableBodies = ['quarterly-table-body', 'velocity-table-body', 'components-table-body', 'experimental-table-body'];
-    tableBodies.forEach(id => {
-      const tbody = document.getElementById(id);
-      if (tbody) tbody.innerHTML = '';
-    });
+    // Clear existing charts only - tables are pre-populated by Jekyll
     
     // Re-render with stored data
     if (globalIssueData && globalComponentData) {
@@ -342,25 +550,20 @@ function renderAllCharts(issueData, componentData) {
   globalIssueData = issueData;
   globalComponentData = componentData;
   
-  // Render issue tracking charts
+  // Render issue tracking charts only - tables are pre-populated by Jekyll
   renderQuarterlyChart(issueData.quarterly);
-  populateQuarterlyTable(issueData.quarterly);
-  
   renderVelocityChart(issueData.velocity);
-  populateVelocityTable(issueData.velocity);
   
   // Render experimental design chart if data exists
   if (issueData.experimental_quarterly) {
     renderExperimentalChart(issueData.experimental_quarterly);
-    populateExperimentalTable(issueData.experimental_quarterly);
   }
   
   // Render component usage charts
   renderTopComponentsChart(componentData);
-  populateComponentsTable(componentData);
   
-  // Update metric cards
-  updateMetricCards(issueData.summary, componentData.summary_stats);
+  // Progressive enhancement: Update any dynamic elements that need JavaScript
+  enhanceMetricCards(issueData.summary, componentData.summary_stats);
 }
 
 function loadMetricsData() {
@@ -392,8 +595,9 @@ function loadMetricsData() {
 }
 
 function showPlaceholders() {
-  console.log('showPlaceholders() called - adding sample trend data');
+  console.log('showPlaceholders() called - showing chart placeholders only');
   
+  // Only show chart placeholders - tables and metric cards are pre-populated by Jekyll
   document.getElementById('quarterly-chart').innerHTML = 
     '<div class="chart-placeholder">Quarterly activity chart will be available once data collection is set up</div>';
   document.getElementById('velocity-chart').innerHTML = 
@@ -403,251 +607,23 @@ function showPlaceholders() {
   document.getElementById('top-components-chart').innerHTML = 
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
   
-  // Populate placeholder table data
-  populateQuarterlyTable([]);
-  populateVelocityTable([]);
-  populateComponentsTable(null);
-  populateExperimentalTable([]);
-  
-  // Show sample data with trend indicators
-  document.getElementById('open-issues').textContent = '42';
-  document.getElementById('closed-month').textContent = '28';
-  document.getElementById('avg-resolution').textContent = '14 days';
-  document.getElementById('total-components').textContent = '95';
-  document.getElementById('most-used-component').textContent = 'va-button';
-  document.getElementById('total-usages').textContent = '1,247';
-  
-  // Sample trend data to demonstrate the functionality
-  const sampleTrends = {
-    open_issues_trend: { direction: 'down', percentage: 12, value: -5 },
-    closed_month_trend: { direction: 'up', percentage: 35, value: 10 },
-    resolution_time_trend: { direction: 'down', percentage: 8, value: -1 },
-    components_trend: { direction: 'up', percentage: 5, value: 5 },
-    usage_trend: { direction: 'up', percentage: 23, value: 234 }
-  };
-  
-  console.log('Sample trends data:', sampleTrends);
-  
-  updateTrendIndicator('open-issues-trend', sampleTrends.open_issues_trend, 'compared to last month');
-  updateTrendIndicator('closed-month-trend', sampleTrends.closed_month_trend, 'compared to previous month');
-  updateTrendIndicator('avg-resolution-trend', sampleTrends.resolution_time_trend, 'compared to last quarter');
-  updateTrendIndicator('total-components-trend', sampleTrends.components_trend, 'compared to last quarter');
-  
-  // Most used component gets a special trend indicator
-  const mostUsedElement = document.getElementById('most-used-component-trend');
-  mostUsedElement.className = 'metric-trend trend-neutral';
-  mostUsedElement.innerHTML = '<span>Most popular this month</span>';
-  console.log('Set most used component trend:', mostUsedElement.innerHTML);
-  
-  updateTrendIndicator('total-usages-trend', sampleTrends.usage_trend, 'compared to last month');
-  
   console.log('showPlaceholders() completed');
 }
 
-// Table population functions for accessible data views
-function populateQuarterlyTable(data) {
-  const vaTable = document.getElementById('quarterly-va-table');
-  if (!vaTable || !data || data.length === 0) {
-    if (vaTable) {
-      vaTable.innerHTML = `
-        <va-table-row slot="headers">
-          <span>Quarter</span>
-          <span>Issues Opened</span>
-          <span>Issues Closed</span>
-        </va-table-row>
-        <va-table-row>
-          <span colspan="3">No quarterly data currently available</span>
-        </va-table-row>
-      `;
-    }
-    return;
+// Progressive enhancement function - only updates dynamic elements that need JavaScript
+function enhanceMetricCards(issueSummary, componentSummary) {
+  console.log('enhanceMetricCards called with:', { issueSummary, componentSummary });
+  
+  // Only update elements that couldn't be pre-populated by Jekyll or need dynamic updates
+  // Most content is now served by Jekyll Liquid templates, so this is minimal
+  
+  // Update component data freshness if needed (though this is also handled by Liquid now)
+  if (componentSummary && componentSummary.data_source === 'component-library/ds-components') {
+    updateDataFreshness(componentSummary);
   }
   
-  // Format quarter labels
-  const formatQuarter = (period) => {
-    const [year, quarter] = period.split('-');
-    return `${quarter} ${year}`;
-  };
-  
-  // Sort data by period (most recent first)
-  const sortedData = [...data].sort((a, b) => {
-    // Parse periods like "2024-Q1" for proper sorting
-    const [yearA, quarterA] = a.period.split('-');
-    const [yearB, quarterB] = b.period.split('-');
-    const quarterNumA = parseInt(quarterA.replace('Q', ''));
-    const quarterNumB = parseInt(quarterB.replace('Q', ''));
-    
-    // Sort by year first, then by quarter (both descending for most recent first)
-    if (yearA !== yearB) {
-      return parseInt(yearB) - parseInt(yearA);
-    }
-    return quarterNumB - quarterNumA;
-  });
-  
-  // Clear existing data rows only, preserving headers
-  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-  existingRows.forEach(row => row.remove());
-  
-  // Populate table rows with all data to match chart
-  sortedData.forEach(row => {
-    const tableRow = document.createElement('va-table-row');
-    tableRow.innerHTML = `
-      <span>${formatQuarter(row.period)}</span>
-      <span>${row.issues_opened}</span>
-      <span>${row.issues_closed}</span>
-    `;
-    vaTable.appendChild(tableRow);
-  });
-}
-
-function populateVelocityTable(data) {
-  const vaTable = document.getElementById('velocity-va-table');
-  if (!vaTable || !data || data.length === 0) {
-    if (vaTable) {
-      vaTable.innerHTML = `
-        <va-table-row slot="headers">
-          <span>Period</span>
-          <span>Issues Opened</span>
-        </va-table-row>
-        <va-table-row>
-          <span>No data available</span>
-          <span></span>
-        </va-table-row>
-      `;
-    }
-    return;
-  }
-  
-  // Format period labels to be more readable
-  const formatPeriod = (period) => {
-    const [year, month] = period.split('-');
-    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
-                       'July', 'August', 'September', 'October', 'November', 'December'];
-    return `${monthNames[parseInt(month) - 1]} ${year}`;
-  };
-  
-  // Sort data by period (most recent first)
-  const sortedData = [...data].sort((a, b) => {
-    // Parse periods like "2024-01" for proper sorting
-    const [yearA, monthA] = a.period.split('-');
-    const [yearB, monthB] = b.period.split('-');
-    
-    // Sort by year first, then by month (both descending for most recent first)
-    if (yearA !== yearB) {
-      return parseInt(yearB) - parseInt(yearA);
-    }
-    return parseInt(monthB) - parseInt(monthA);
-  });
-  
-  // Clear existing data rows only, preserving headers
-  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-  existingRows.forEach(row => row.remove());
-  
-  // Populate data rows with all data to match chart
-  sortedData.forEach(row => {
-    const tableRow = document.createElement('va-table-row');
-    tableRow.innerHTML = `
-      <span>${formatPeriod(row.period)}</span>
-      <span>${row.issues_opened}</span>
-    `;
-    vaTable.appendChild(tableRow);
-  });
-}
-
-function populateComponentsTable(data) {
-  const vaTable = document.getElementById('components-va-table');
-  if (!vaTable || !data || !data.top_components_overall) {
-    if (vaTable) {
-      vaTable.innerHTML = `
-        <va-table-row slot="headers">
-          <span>Component</span>
-          <span>Usage Count</span>
-        </va-table-row>
-        <va-table-row>
-          <span>No data available</span>
-          <span></span>
-        </va-table-row>
-      `;
-    }
-    return;
-  }
-  
-  // Take top 25 components for table (chart shows top 10)
-  const topComponents = data.top_components_overall.slice(0, 25);
-  
-  // Clear existing data rows only, preserving headers
-  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-  existingRows.forEach(row => row.remove());
-  
-  // Populate data rows
-  topComponents.forEach(component => {
-    const tableRow = document.createElement('va-table-row');
-    tableRow.innerHTML = `
-      <span>${component.name}</span>
-      <span>${component.usage_count.toLocaleString()}</span>
-    `;
-    vaTable.appendChild(tableRow);
-  });
-}
-
-function populateExperimentalTable(data) {
-  const vaTable = document.getElementById('experimental-va-table');
-  if (!vaTable || !data || data.length === 0) {
-    if (vaTable) {
-      vaTable.innerHTML = `
-        <va-table-row slot="headers">
-          <span>Quarter</span>
-          <span>Issues Opened</span>
-          <span>Issues Closed</span>
-          <span>Issues Implemented</span>
-        </va-table-row>
-        <va-table-row>
-          <span>No experimental design data available yet</span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </va-table-row>
-      `;
-    }
-    return;
-  }
-  
-  // Format quarter labels
-  const formatQuarter = (period) => {
-    const [year, quarter] = period.split('-');
-    return `${quarter} ${year}`;
-  };
-  
-  // Sort data by period (most recent first)
-  const sortedData = [...data].sort((a, b) => {
-    // Parse periods like "2024-Q1" for proper sorting
-    const [yearA, quarterA] = a.period.split('-');
-    const [yearB, quarterB] = b.period.split('-');
-    const quarterNumA = parseInt(quarterA.replace('Q', ''));
-    const quarterNumB = parseInt(quarterB.replace('Q', ''));
-    
-    // Sort by year first, then by quarter (both descending for most recent first)
-    if (yearA !== yearB) {
-      return parseInt(yearB) - parseInt(yearA);
-    }
-    return quarterNumB - quarterNumA;
-  });
-  
-  // Clear existing data rows only, preserving headers
-  const existingRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-  existingRows.forEach(row => row.remove());
-  
-  // Populate data rows with all data to match chart
-  sortedData.forEach(row => {
-    const tableRow = document.createElement('va-table-row');
-    tableRow.innerHTML = `
-      <span>${formatQuarter(row.period)}</span>
-      <span>${row.issues_opened}</span>
-      <span>${row.issues_closed}</span>
-      <span>${row.issues_implemented || 0}</span>
-    `;
-    vaTable.appendChild(tableRow);
-  });
+  // Any other dynamic enhancements can be added here
+  console.log('enhanceMetricCards completed');
 }
 
 function renderQuarterlyChart(data) {
@@ -1159,50 +1135,6 @@ function formatComponentType(type) {
   return typeMap[type] || type;
 }
 
-function updateMetricCards(issueSummary, componentSummary) {
-  console.log('updateMetricCards called with:', { issueSummary, componentSummary });
-  
-  // Update issue metrics
-  if (issueSummary) {
-    document.getElementById('open-issues').textContent = issueSummary.open_issues || '-';
-    document.getElementById('closed-month').textContent = issueSummary.closed_this_month || '-';
-    document.getElementById('avg-resolution').textContent = issueSummary.avg_resolution_days ? 
-      `${issueSummary.avg_resolution_days} days` : '-';
-    
-    // Add trend indicators for issue metrics using real data
-    if (issueSummary.open_issues_trend) {
-      updateTrendIndicator('open-issues-trend', issueSummary.open_issues_trend, 'compared to last month');
-    }
-    if (issueSummary.closed_month_trend) {
-      updateTrendIndicator('closed-month-trend', issueSummary.closed_month_trend, 'compared to previous month');
-    }
-    if (issueSummary.resolution_time_trend) {
-      updateTrendIndicator('avg-resolution-trend', issueSummary.resolution_time_trend, 'compared to last quarter');
-    }
-  }
-  
-  // Update component metrics
-  if (componentSummary) {
-    document.getElementById('total-components').textContent = componentSummary.total_components || '-';
-    document.getElementById('most-used-component').textContent = componentSummary.most_used || '-';
-    document.getElementById('total-usages').textContent = componentSummary.total_usages || '-';
-    
-    // Add trend indicators for component metrics - use real data if available, otherwise sample data
-    const componentsTrend = componentSummary.components_trend || { direction: 'up', percentage: 5, value: 5 };
-    const usageTrend = componentSummary.usage_trend || { direction: 'up', percentage: 23, value: 234 };
-    
-    updateTrendIndicator('total-components-trend', componentsTrend, 'compared to last quarter');
-    updateTrendIndicator('total-usages-trend', usageTrend, 'compared to last month');
-    
-    // Most used component gets a special trend indicator
-    const mostUsedElement = document.getElementById('most-used-component-trend');
-    mostUsedElement.className = 'metric-trend trend-neutral';
-    mostUsedElement.innerHTML = '<span>Most popular this month</span>';
-    
-    // Update component data freshness indicator
-    updateDataFreshness(componentSummary);
-  }
-}
 
 function updateDataFreshness(componentSummary) {
   const freshnessElement = document.getElementById('component-data-freshness');
@@ -1251,37 +1183,4 @@ function updateDataFreshness(componentSummary) {
   freshnessElement.innerHTML = `<small class="${cssClass}">${freshnessText}</small>`;
 }
 
-function updateTrendIndicator(elementId, trendData, timeframe) {
-  const element = document.getElementById(elementId);
-  if (!element || !trendData) {
-    return;
-  }
-  
-  const { direction, percentage, value } = trendData;
-  
-  let iconSymbol, trendClass, trendText;
-  
-  // Determine icon and styling based on trend direction and metric type
-  const isNegativeMetric = elementId.includes('resolution') || elementId.includes('open-issues');
-  
-  if (direction === 'up') {
-    iconSymbol = '↗';
-    trendClass = isNegativeMetric ? 'trend-down' : 'trend-up';
-    trendText = `${percentage}% ${timeframe}`;
-  } else if (direction === 'down') {
-    iconSymbol = '↘';
-    trendClass = isNegativeMetric ? 'trend-up' : 'trend-down';
-    trendText = `${percentage}% ${timeframe}`;
-  } else {
-    iconSymbol = '→';
-    trendClass = 'trend-neutral';
-    trendText = `No change ${timeframe}`;
-  }
-  
-  element.className = `metric-trend ${trendClass}`;
-  element.innerHTML = `
-    <span class="trend-icon">${iconSymbol}</span>
-    <span>${trendText}</span>
-  `;
-}
 </script>
