@@ -122,7 +122,9 @@ To add content, you will need to look into `/src` directory. This will be the so
 
 ### How to add new pages, improve presentation, etc
 
-### Metrics Dashboard
+Read [contributing to docs]({{ site.baseurl }}/about/contributing-to-the-design-system/contributing-to-docs)
+
+## Metrics Dashboard
 
 The site includes an automated metrics dashboard at [design.va.gov/about/metrics/](https://design.va.gov/about/metrics/) that tracks design system usage and health. For details about the data flow, processing scripts, and automation, see [docs/METRICS-DASHBOARD.md](docs/METRICS-DASHBOARD.md).
 
