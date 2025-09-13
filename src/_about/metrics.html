@@ -237,7 +237,7 @@ permalink: /about/metrics/
               {% assign sorted_quarterly = site.data.metrics.issue-metrics.quarterly | sort: 'period' | reverse %}
               {% for quarter in sorted_quarterly %}
                 {% assign quarter_parts = quarter.period | split: '-' %}
-                {% assign formatted_quarter = quarter_parts[1] | append: ' ' | append: quarter_parts[0] %}
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
                 <va-table-row>
                   <span>{{ formatted_quarter }}</span>
                   <span>{{ quarter.issues_opened }}</span>
@@ -431,7 +431,7 @@ permalink: /about/metrics/
               {% assign sorted_experimental = site.data.metrics.issue-metrics.experimental_quarterly | sort: 'period' | reverse %}
               {% for quarter in sorted_experimental %}
                 {% assign quarter_parts = quarter.period | split: '-' %}
-                {% assign formatted_quarter = quarter_parts[1] | append: ' ' | append: quarter_parts[0] %}
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %>
                 <va-table-row>
                   <span>{{ formatted_quarter }}</span>
                   <span>{{ quarter.issues_opened }}</span>
@@ -657,7 +657,7 @@ function renderQuarterlyChart(data) {
   // Format quarter labels
   const formatQuarter = (period) => {
     const [year, quarter] = period.split('-');
-    return `${quarter} ${year}`;
+    return `${year} ${quarter}`;
   };
   
   // Setup scales
@@ -892,7 +892,7 @@ function renderExperimentalChart(data) {
   // Format quarter labels
   const formatQuarter = (period) => {
     const [year, quarter] = period.split('-');
-    return `${quarter} ${year}`;
+    return `${year} ${quarter}`;
   };
   
   // Setup scales
