@@ -21,6 +21,7 @@ const path = require('path');
 const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
 const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'component-usage.json');
+const JEKYLL_OUTPUT_FILE = path.join(DATA_DIR, 'component-usage.json');
 
 /**
  * Find the most recent ds-components CSV file
@@ -335,10 +336,13 @@ async function main() {
       console.log('✅ Loaded fallback component usage data');
     }
     
-    // Write output
-    await fs.writeFile(OUTPUT_FILE, JSON.stringify(dashboardData, null, 2));
+    // Write output to both locations
+    const jsonOutput = JSON.stringify(dashboardData, null, 2);
+    await fs.writeFile(OUTPUT_FILE, jsonOutput);
+    await fs.writeFile(JEKYLL_OUTPUT_FILE, jsonOutput);
     
     console.log(`✅ Component usage data written to ${OUTPUT_FILE}`);
+    console.log(`✅ Component usage data also written to ${JEKYLL_OUTPUT_FILE}`);
     console.log(`📊 Summary:`);
     console.log(`   - Data source: ${dashboardData.data_source}`);
     console.log(`   - Report date: ${dashboardData.report_date || 'N/A'}`);

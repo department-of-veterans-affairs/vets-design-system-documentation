@@ -135,21 +135,71 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
+      - name: Collect experimental design metrics
+        run: |
+          echo "Starting experimental design metrics collection..."
+          node scripts/collect-experimental-metrics.js
+          echo "Experimental design metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
       - name: Verify generated data files
         run: |
           echo "Checking for generated files..."
           ls -la src/assets/data/metrics/
           ls -la src/_data/metrics/
           
-          # Check issue metrics
+          # Check issue metrics in both locations
           if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
-            echo "✅ issue-metrics.json generated successfully"
+            echo "✅ issue-metrics.json generated successfully in assets"
             echo "File size: $(du -h src/assets/data/metrics/issue-metrics.json)"
             # Show first few lines for verification
             echo "Sample data:"
             head -20 src/assets/data/metrics/issue-metrics.json
           else
-            echo "❌ issue-metrics.json not found"
+            echo "❌ issue-metrics.json not found in assets"
+            exit 1
+          fi
+          
+          if [ -f "src/_data/metrics/issue-metrics.json" ]; then
+            echo "✅ issue-metrics.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/issue-metrics.json)"
+          else
+            echo "❌ issue-metrics.json not found for Jekyll"
+            exit 1
+          fi
+          
+          # Check component usage data in both locations
+          if [ -f "src/assets/data/metrics/component-usage.json" ]; then
+            echo "✅ component-usage.json generated successfully in assets"
+            echo "File size: $(du -h src/assets/data/metrics/component-usage.json)"
+          else
+            echo "❌ component-usage.json not found in assets"
+            exit 1
+          fi
+          
+          if [ -f "src/_data/metrics/component-usage.json" ]; then
+            echo "✅ component-usage.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/component-usage.json)"
+          else
+            echo "❌ component-usage.json not found for Jekyll"
+            exit 1
+          fi
+          
+          # Check experimental metrics in both locations
+          if [ -f "src/assets/data/metrics/experimental-metrics.json" ]; then
+            echo "✅ experimental-metrics.json generated successfully in assets"
+            echo "File size: $(du -h src/assets/data/metrics/experimental-metrics.json)"
+          else
+            echo "❌ experimental-metrics.json not found in assets"
+            exit 1
+          fi
+          
+          if [ -f "src/_data/metrics/experimental-metrics.json" ]; then
+            echo "✅ experimental-metrics.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/experimental-metrics.json)"
+          else
+            echo "❌ experimental-metrics.json not found for Jekyll"
             exit 1
           fi
           
