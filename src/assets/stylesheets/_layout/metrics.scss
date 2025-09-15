@@ -1,6 +1,10 @@
 // Metrics Dashboard Styles
 // Provides styling for the metrics dashboard page with proper VA Design System tokens
 
+// Breakpoint variables for consistency
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 480px;
+
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
 }
@@ -10,6 +14,68 @@
   padding: var(--vads-spacing-3);
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-sm);
+  
+  // va-tabs styling (consolidated from duplicate rule)
+  va-tabs {
+    margin-top: var(--vads-spacing-2);
+    
+    // Style tables within tab panels
+    va-tab-panel {
+      padding: var(--vads-spacing-2) 0;
+      
+      table {
+        margin: var(--vads-spacing-2) 0;
+        width: 100%;
+        border-collapse: collapse;
+        
+        caption {
+          text-align: left;
+          font-weight: var(--font-weight-bold);
+          margin-bottom: var(--vads-spacing-1);
+          color: var(--vads-color-base-darkest);
+          padding: var(--vads-spacing-1) 0;
+        }
+        
+        th, td {
+          padding: var(--vads-spacing-1) var(--vads-spacing-2);
+          text-align: left;
+          border-bottom: 1px solid var(--vads-color-gray-lighter);
+          
+          &:focus {
+            outline: 2px solid var(--vads-color-primary-alt);
+            outline-offset: 1px;
+          }
+        }
+        
+        th {
+          background-color: var(--vads-color-gray-lightest);
+          font-weight: var(--font-weight-bold);
+          color: var(--vads-color-base-darkest);
+          
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+          }
+        }
+        
+        td {
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+          }
+          
+          // Empty state styling
+          &[colspan] {
+            text-align: center;
+            font-style: italic;
+            color: var(--vads-color-gray-dark);
+            padding: var(--vads-spacing-4);
+          }
+        }
+      }
+    }
+  }
 }
 
 .chart-container {
@@ -20,16 +86,13 @@
   position: relative;
   
   // Ensure charts have adequate space on mobile
-  @media (max-width: 768px) {
+  @media (max-width: $tablet-breakpoint) {
     height: 350px;
     margin: var(--vads-spacing-3) 0;
   }
 }
 
-// Tab content styling for metrics tables
-.metrics-section va-tabs {
-  margin-top: var(--vads-spacing-3);
-}
+// This rule has been consolidated into .metrics-section above
 
 // Table view specific styling
 .metrics-section va-table {
@@ -39,7 +102,7 @@
   overflow-x: auto;
   
   // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
-  @media (min-width: 769px) {
+  @media (min-width: #{$tablet-breakpoint + 1}) {
     va-table-row span {
       padding: var(--vads-spacing-1) var(--vads-spacing-2);
       text-align: left;
@@ -238,72 +301,10 @@
   border: 1px solid rgba(255,255,255,0.1);
 }
 
-// Enhanced metrics sections with va-tabs
-.metrics-section {
-  va-tabs {
-    margin-top: var(--vads-spacing-2);
-    
-    // Style tables within tab panels
-    va-tab-panel {
-      padding: var(--vads-spacing-2) 0;
-      
-      table {
-        margin: var(--vads-spacing-2) 0;
-        width: 100%;
-        border-collapse: collapse;
-        
-        caption {
-          text-align: left;
-          font-weight: var(--font-weight-bold);
-          margin-bottom: var(--vads-spacing-1);
-          color: var(--vads-color-base-darkest);
-          padding: var(--vads-spacing-1) 0;
-        }
-        
-        th, td {
-          padding: var(--vads-spacing-1) var(--vads-spacing-2);
-          text-align: left;
-          border-bottom: 1px solid var(--vads-color-gray-lighter);
-          
-          &:focus {
-            outline: 2px solid var(--vads-color-primary-alt);
-            outline-offset: 1px;
-          }
-        }
-        
-        th {
-          background-color: var(--vads-color-gray-lightest);
-          font-weight: var(--font-weight-bold);
-          color: var(--vads-color-base-darkest);
-          
-          // Numeric columns right-align
-          &:nth-child(n+2) {
-            text-align: right;
-          }
-        }
-        
-        td {
-          // Numeric columns right-align
-          &:nth-child(n+2) {
-            text-align: right;
-            font-variant-numeric: tabular-nums;
-          }
-          
-          // Empty state styling
-          &[colspan] {
-            text-align: center;
-            font-style: italic;
-            color: var(--vads-color-gray-dark);
-            padding: var(--vads-spacing-4);
-          }
-        }
-      }
-    }
-  }
-}
+// This duplicate .metrics-section rule has been consolidated above
 
 // Responsive design
-@media (max-width: 768px) {
+@media (max-width: $tablet-breakpoint) {
   .monthly-reports-grid {
     grid-template-columns: 1fr;
   }
@@ -324,7 +325,7 @@
   }
   
   // Stack tab labels vertically on very small screens
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-breakpoint) {
     .metrics-section va-tabs {
       va-tab-panel {
         font-size: var(--vads-font-size-body-small);

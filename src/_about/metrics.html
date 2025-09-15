@@ -27,12 +27,12 @@ permalink: /about/metrics/
           {% if site.data.metrics.issue-metrics.summary.open_issues_trend %}
             {% assign trend = site.data.metrics.issue-metrics.summary.open_issues_trend %}
             {% if trend.direction == 'up' %}
-              <span class="metric-trend trend-down">
+              <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
                 <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
-              <span class="metric-trend trend-up">
+              <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
                 <span>{{ trend.percentage }}% compared to last month</span>
               </span>
@@ -91,12 +91,12 @@ permalink: /about/metrics/
           {% if site.data.metrics.issue-metrics.summary.resolution_time_trend %}
             {% assign trend = site.data.metrics.issue-metrics.summary.resolution_time_trend %}
             {% if trend.direction == 'up' %}
-              <span class="metric-trend trend-down">
+              <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
                 <span>{{ trend.percentage }}% compared to last quarter</span>
               </span>
             {% elsif trend.direction == 'down' %}
-              <span class="metric-trend trend-up">
+              <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
                 <span>{{ trend.percentage }}% compared to last quarter</span>
               </span>
@@ -431,7 +431,7 @@ permalink: /about/metrics/
               {% assign sorted_experimental = site.data.metrics.issue-metrics.experimental_quarterly | sort: 'period' | reverse %}
               {% for quarter in sorted_experimental %}
                 {% assign quarter_parts = quarter.period | split: '-' %}
-                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %>
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
                 <va-table-row>
                   <span>{{ formatted_quarter }}</span>
                   <span>{{ quarter.issues_opened }}</span>
@@ -457,16 +457,35 @@ permalink: /about/metrics/
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 // Load metrics data and render charts
-// Global variables to store data for later rendering
-let globalIssueData = null;
-let globalComponentData = null;
+// Metrics data manager using module pattern to encapsulate data
+const MetricsDataManager = (function() {
+  let issueData = null;
+  let componentData = null;
+  
+  return {
+    setData: function(newIssueData, newComponentData) {
+      issueData = newIssueData;
+      componentData = newComponentData;
+    },
+    
+    hasData: function() {
+      return issueData !== null && componentData !== null;
+    },
+    
+    getIssueData: function() {
+      return issueData;
+    },
+    
+    getComponentData: function() {
+      return componentData;
+    }
+  };
+})();
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM Content Loaded - initializing metrics dashboard');
   
   // Wait for va-tabs to be ready before rendering charts
   setTimeout(() => {
-    console.log('Loading metrics data after va-tabs initialization delay');
     loadMetricsData();
   }, 100);
   
@@ -484,8 +503,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Clear existing charts only - tables are pre-populated by Jekyll
     
     // Re-render with stored data
-    if (globalIssueData && globalComponentData) {
-      renderAllCharts(globalIssueData, globalComponentData);
+    if (MetricsDataManager.hasData()) {
+      renderAllCharts(MetricsDataManager.getIssueData(), MetricsDataManager.getComponentData());
     } else {
       loadMetricsData();
     }
@@ -494,20 +513,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Setup listeners for tab changes to render charts when they become visible
 function setupTabChangeListeners() {
-  console.log('Setting up tab change listeners for va-tabs');
   
-  // Use a more robust approach: periodically check for visible but empty charts
-  setInterval(() => {
-    if (globalIssueData && globalComponentData) {
-      renderVisibleChartsIfNeeded();
-    }
-  }, 1000);
+  // Use MutationObserver to detect tab changes and render charts when needed
+  const vaTabs = document.querySelector('va-tabs');
+  if (vaTabs) {
+    const observer = new MutationObserver(() => {
+      if (MetricsDataManager.hasData()) {
+        renderVisibleChartsIfNeeded();
+      }
+    });
+    observer.observe(vaTabs, { attributes: true, childList: true, subtree: true });
+  }
   
   // Also listen for clicks on tab items to trigger re-rendering
   document.addEventListener('click', function(event) {
     if (event.target.tagName === 'VA-TAB-ITEM' || event.target.closest('va-tab-item')) {
       setTimeout(() => {
-        if (globalIssueData && globalComponentData) {
+        if (MetricsDataManager.hasData()) {
           renderVisibleChartsIfNeeded();
         }
       }, 50);
@@ -518,16 +540,15 @@ function setupTabChangeListeners() {
 // Check if charts need rendering and render them if they're visible but empty
 function renderVisibleChartsIfNeeded() {
   const chartContainers = [
-    { id: 'quarterly-chart', renderFunc: () => renderQuarterlyChart(globalIssueData.quarterly) },
-    { id: 'velocity-chart', renderFunc: () => renderVelocityChart(globalIssueData.velocity) },
-    { id: 'top-components-chart', renderFunc: () => renderTopComponentsChart(globalComponentData) },
-    { id: 'experimental-chart', renderFunc: () => globalIssueData.experimental_quarterly && renderExperimentalChart(globalIssueData.experimental_quarterly) }
+    { id: 'quarterly-chart', renderFunc: () => renderQuarterlyChart(MetricsDataManager.getIssueData().quarterly) },
+    { id: 'velocity-chart', renderFunc: () => renderVelocityChart(MetricsDataManager.getIssueData().velocity) },
+    { id: 'top-components-chart', renderFunc: () => renderTopComponentsChart(MetricsDataManager.getComponentData()) },
+    { id: 'experimental-chart', renderFunc: () => MetricsDataManager.getIssueData().experimental_quarterly && renderExperimentalChart(MetricsDataManager.getIssueData().experimental_quarterly) }
   ];
   
   chartContainers.forEach(({ id, renderFunc }) => {
     const container = document.getElementById(id);
     if (container && isElementVisible(container) && !container.querySelector('svg') && !container.querySelector('.chart-placeholder')) {
-      console.log(`Re-rendering chart for visible container: ${id}`);
       renderFunc();
     }
   });
@@ -544,11 +565,9 @@ function isElementVisible(element) {
 
 // Render all charts with current data
 function renderAllCharts(issueData, componentData) {
-  console.log('renderAllCharts called');
   
   // Store data globally for later use
-  globalIssueData = issueData;
-  globalComponentData = componentData;
+  MetricsDataManager.setData(issueData, componentData);
   
   // Render issue tracking charts only - tables are pre-populated by Jekyll
   renderQuarterlyChart(issueData.quarterly);
@@ -567,35 +586,29 @@ function renderAllCharts(issueData, componentData) {
 }
 
 function loadMetricsData() {
-  console.log('loadMetricsData() called - starting data fetch');
   
   // Load issue metrics and component usage data
   Promise.all([
     fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
-      console.log('issue-metrics.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Issue metrics not available');
       return response.json();
     }),
     fetch('{{ site.baseurl }}/assets/data/metrics/component-usage.json').then(response => {
-      console.log('component-usage.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Component usage not available');
       return response.json();
     })
   ])
   .then(([issueData, componentData]) => {
-    console.log('Data loaded successfully:', { issueData, componentData });
     
     // Use the new renderAllCharts function
     renderAllCharts(issueData, componentData);
   })
   .catch(error => {
-    console.log('Data fetch failed, showing placeholders:', error.message);
     showPlaceholders();
   });
 }
 
 function showPlaceholders() {
-  console.log('showPlaceholders() called - showing chart placeholders only');
   
   // Only show chart placeholders - tables and metric cards are pre-populated by Jekyll
   document.getElementById('quarterly-chart').innerHTML = 
@@ -607,12 +620,10 @@ function showPlaceholders() {
   document.getElementById('top-components-chart').innerHTML = 
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
   
-  console.log('showPlaceholders() completed');
 }
 
 // Progressive enhancement function - only updates dynamic elements that need JavaScript
 function enhanceMetricCards(issueSummary, componentSummary) {
-  console.log('enhanceMetricCards called with:', { issueSummary, componentSummary });
   
   // Only update elements that couldn't be pre-populated by Jekyll or need dynamic updates
   // Most content is now served by Jekyll Liquid templates, so this is minimal
@@ -623,7 +634,6 @@ function enhanceMetricCards(issueSummary, componentSummary) {
   }
   
   // Any other dynamic enhancements can be added here
-  console.log('enhanceMetricCards completed');
 }
 
 function renderQuarterlyChart(data) {
@@ -1141,7 +1151,7 @@ function updateDataFreshness(componentSummary) {
   if (!freshnessElement || !componentSummary) return;
   
   let freshnessText = '';
-  let cssClass = 'vads-u-color--gray-medium';
+  let cssClass = 'vads-u-color--gray';
   
   if (componentSummary.data_source === 'component-library/ds-components' && componentSummary.report_date) {
     // Fresh CSV data
@@ -1172,12 +1182,12 @@ function updateDataFreshness(componentSummary) {
   } else if (componentSummary.data_source === 'fallback-sample-data') {
     // Clean fallback data
     freshnessText = 'Sample data for demonstration purposes';
-    cssClass = 'vads-u-color--gray-medium';
+    cssClass = 'vads-u-color--gray';
     
   } else {
     // Unknown or placeholder
     freshnessText = 'Data collection in progress';
-    cssClass = 'vads-u-color--gray-medium';
+    cssClass = 'vads-u-color--gray';
   }
   
   freshnessElement.innerHTML = `<small class="${cssClass}">${freshnessText}</small>`;
