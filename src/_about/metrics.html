@@ -61,17 +61,17 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to previous month</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to previous month</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to previous month</span>
+                <span>No change compared to last month</span>
               </span>
             {% endif %}
           {% endif %}
@@ -87,23 +87,23 @@ permalink: /about/metrics/
             14 days
           {% endif %}
         </div>
-        <div class="metric-trend" id="avg-resolution-trend" aria-label="Average resolution time trend indicator">
+                <div class="metric-trend" id="avg-resolution-trend" aria-label="Average resolution time trend indicator">
           {% if site.data.metrics.issue-metrics.summary.resolution_time_trend %}
             {% assign trend = site.data.metrics.issue-metrics.summary.resolution_time_trend %}
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last quarter</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last quarter</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last quarter</span>
+                <span>No change compared to last month</span>
               </span>
             {% endif %}
           {% endif %}
@@ -125,23 +125,23 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last quarter</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last quarter</span>
+                <span>{{ trend.percentage }}% compared to last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last quarter</span>
+                <span>No change compared to last month</span>
               </span>
             {% endif %}
           {% else %}
             <span class="metric-trend trend-up">
               <span class="trend-icon">↗</span>
-              <span>5% compared to last quarter</span>
+              <span>5% compared to last month</span>
             </span>
           {% endif %}
         </div>
@@ -464,6 +464,31 @@ const MetricsDataManager = (function() {
   
   return {
     setData: function(newIssueData, newComponentData) {
+      // Validate input data before storing and rendering
+      if (!newIssueData || !newComponentData) {
+        console.error('MetricsDataManager: issueData or componentData is null or undefined.', { 
+          issueData: newIssueData, 
+          componentData: newComponentData 
+        });
+        
+        // Display a user-friendly message in the UI
+        var dashboard = document.querySelector('.metrics-dashboard');
+        if (dashboard && !dashboard.querySelector('.metrics-error')) {
+          var errorDiv = document.createElement('div');
+          errorDiv.className = 'metrics-error';
+          errorDiv.setAttribute('role', 'alert');
+          errorDiv.style.color = 'var(--vads-color-error-dark)';
+          errorDiv.style.backgroundColor = 'var(--vads-color-error-lightest)';
+          errorDiv.style.border = '1px solid var(--vads-color-error-light)';
+          errorDiv.style.borderRadius = 'var(--vads-radius-sm)';
+          errorDiv.style.padding = 'var(--vads-spacing-2)';
+          errorDiv.style.margin = '1em 0';
+          errorDiv.textContent = 'Unable to load metrics data at this time. Please try again later.';
+          dashboard.insertBefore(errorDiv, dashboard.firstChild);
+        }
+        return;
+      }
+      
       issueData = newIssueData;
       componentData = newComponentData;
     },

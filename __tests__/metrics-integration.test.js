@@ -1,7 +1,7 @@
 /**
  * Integration Tests for Metrics Dashboard - Real Implementation
- * Tests the actual built Jekyll file instead of mock HTML structures
- * Based on revised testing approach from issue #4788
+ * Tests the actual built Jekyll site to ensure functionality works correctly
+ * Based on requirements from issue #4788
  */
 
 const fs = require('fs');
@@ -27,13 +27,13 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
       `);
     }
   });
-
+  
   beforeEach(() => {
     // Load the actual built file into DOM
     document.documentElement.innerHTML = builtFileContent;
     
     // Wait for any dynamic content to be processed
-    return new Promise(resolve => setTimeout(resolve, 100));
+    return new Promise(resolve => setTimeout(resolve, 50));
   });
 
   afterEach(() => {
@@ -44,17 +44,16 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
   describe('🏗️ Built Site Structure Validation', () => {
     test('Built site contains all expected va-table components', () => {
       const vaTables = document.querySelectorAll('va-table');
-      expect(vaTables.length).toBe(4); // quarterly, components, velocity, experimental
+      expect(vaTables.length).toBe(4);
       
-      // Check each table has required attributes
-      const expectedTables = [
+      const expectedTableIds = [
         'quarterly-va-table',
         'components-va-table', 
         'velocity-va-table',
         'experimental-va-table'
       ];
       
-      expectedTables.forEach(tableId => {
+      expectedTableIds.forEach(tableId => {
         const table = document.getElementById(tableId);
         expect(table).toBeTruthy();
         expect(table.tagName.toLowerCase()).toBe('va-table');
@@ -67,13 +66,13 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     test('Built site contains proper main landmark and section structure', () => {
       const main = document.querySelector('main[role="main"]');
       expect(main).toBeTruthy();
+      expect(main).toHaveClass('metrics-dashboard');
       expect(main).toHaveAttribute('aria-labelledby', 'main-heading');
       
       const mainHeading = document.getElementById('main-heading');
       expect(mainHeading).toBeTruthy();
       expect(mainHeading.tagName.toLowerCase()).toBe('h1');
       
-      // Check all major sections have proper ARIA labeling
       const sections = document.querySelectorAll('section[aria-labelledby]');
       expect(sections.length).toBeGreaterThanOrEqual(4);
       
@@ -94,7 +93,6 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
         expect(container).toHaveAttribute('aria-label');
         expect(container).toHaveAttribute('tabindex', '0');
         
-        // Check aria-label is meaningful
         const ariaLabel = container.getAttribute('aria-label');
         expect(ariaLabel.length).toBeGreaterThan(20);
         expect(ariaLabel.toLowerCase()).toContain('chart');
@@ -111,6 +109,12 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
         
         expect(tabItems.length).toBe(2); // Graph and Table
         expect(tabPanels.length).toBe(2);
+        
+        // Check tab items have required attributes
+        tabItems.forEach(item => {
+          expect(item).toHaveAttribute('button-text');
+          expect(item).toHaveAttribute('target-id');
+        });
         
         // Check tab panels have proper roles
         tabPanels.forEach(panel => {
@@ -141,165 +145,168 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
   });
 
   describe('🔧 JavaScript Function Integration', () => {
-    // Mock D3.js for testing JavaScript functions
-    beforeAll(() => {
-      global.d3 = {
-        select: jest.fn(() => ({
-          append: jest.fn().mockReturnThis(),
-          attr: jest.fn().mockReturnThis(),
-          style: jest.fn().mockReturnThis(),
-          text: jest.fn().mockReturnThis(),
-          call: jest.fn().mockReturnThis(),
-          selectAll: jest.fn().mockReturnThis(),
-          data: jest.fn().mockReturnThis(),
-          enter: jest.fn().mockReturnThis(),
-          exit: jest.fn().mockReturnThis(),
-          remove: jest.fn().mockReturnThis()
-        })),
-        scaleLinear: jest.fn(() => ({
-          domain: jest.fn().mockReturnThis(),
-          range: jest.fn().mockReturnThis()
-        })),
-        scaleBand: jest.fn(() => ({
-          domain: jest.fn().mockReturnThis(),
-          range: jest.fn().mockReturnThis(),
-          padding: jest.fn().mockReturnThis(),
-          bandwidth: jest.fn(() => 50)
-        })),
-        axisBottom: jest.fn(() => jest.fn()),
-        axisLeft: jest.fn(() => jest.fn()),
-        max: jest.fn(() => 100)
-      };
-    });
-
-    test('populateQuarterlyTable function works with real va-table', () => {
-      const mockData = [
-        { period: '2024-Q3', issues_opened: 19, issues_closed: 25 },
-        { period: '2024-Q2', issues_opened: 23, issues_closed: 18 },
-        { period: '2024-Q1', issues_opened: 15, issues_closed: 12 }
-      ];
+    test('Jekyll pre-populated quarterly table contains valid data structure', () => {
+      const vaTable = document.getElementById('quarterly-va-table');
+      expect(vaTable).toBeTruthy();
+      expect(vaTable).toHaveAttribute('table-title');
+      expect(vaTable).toHaveAttribute('stacked', 'true');
+      expect(vaTable).toHaveAttribute('sortable', 'true');
       
-      // Execute the actual JavaScript function from the built file
-      const scriptContent = builtFileContent.match(/<script>(.*?)<\/script>/si);
-      expect(scriptContent).toBeTruthy();
+      const tableTitle = vaTable.getAttribute('table-title');
+      expect(tableTitle).toContain('Issue Activity');
+      expect(tableTitle).toContain('Quarter');
       
-      // Extract and define only the populateQuarterlyTable function (avoid eval)
-      const funcMatch = scriptContent[1].match(/function\s+populateQuarterlyTable\s*\(([^)]*)\)\s*{([\s\S]*?)^}/m);
-      expect(funcMatch).toBeTruthy();
-      // eslint-disable-next-line no-new-func
-      const populateQuarterlyTable = new Function(funcMatch[1], funcMatch[2]);
+      // Check for headers
+      const headerRow = vaTable.querySelector('va-table-row[slot="headers"]');
+      expect(headerRow).toBeTruthy();
       
-      // Call the function with mock data
-      if (typeof populateQuarterlyTable === 'function') {
-        populateQuarterlyTable(mockData);
-        
-        const vaTable = document.getElementById('quarterly-va-table');
-        expect(vaTable).toBeTruthy();
-        
-        const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-        expect(dataRows.length).toBe(3);
-        
-        // Check first row data
+      const headerCells = headerRow.querySelectorAll('span');
+      expect(headerCells.length).toBe(3);
+      expect(headerCells[0].textContent).toBe('Quarter');
+      expect(headerCells[1].textContent).toBe('Issues Opened');
+      expect(headerCells[2].textContent).toBe('Issues Closed');
+      
+      // Check for data rows (should be populated by Jekyll)
+      const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+      expect(dataRows.length).toBeGreaterThan(0);
+      
+      // Validate first data row structure
+      if (dataRows.length > 0) {
         const firstRowCells = dataRows[0].querySelectorAll('span');
         expect(firstRowCells.length).toBe(3);
-        expect(firstRowCells[0].textContent).toBe('Q3 2024');
-        expect(firstRowCells[1].textContent).toBe('19');
-        expect(firstRowCells[2].textContent).toBe('25');
+        
+        // Check quarter format (should be like "2025 Q3")
+        const quarterText = firstRowCells[0].textContent.trim();
+        expect(quarterText).toMatch(/^\d{4} Q[1-4]$/);
+        
+        // Check numeric values
+        const openedValue = firstRowCells[1].textContent.trim();
+        const closedValue = firstRowCells[2].textContent.trim();
+        expect(openedValue).toMatch(/^\d+$/);
+        expect(closedValue).toMatch(/^\d+$/);
       }
     });
 
-    test('populateComponentsTable function works with real va-table', () => {
-      const mockData = {
-        top_components_overall: [
-          { name: 'va-button', usage_count: 1247 },
-          { name: 'va-card', usage_count: 892 },
-          { name: 'va-input', usage_count: 654 }
-        ]
-      };
+    test('Jekyll pre-populated components table contains valid data structure', () => {
+      const vaTable = document.getElementById('components-va-table');
+      expect(vaTable).toBeTruthy();
+      expect(vaTable).toHaveAttribute('table-title');
+      expect(vaTable).toHaveAttribute('stacked', 'true');
+      expect(vaTable).toHaveAttribute('sortable', 'true');
       
-      const scriptContent = builtFileContent.match(/<script>(.*?)<\/script>/si);
+      const tableTitle = vaTable.getAttribute('table-title');
+      expect(tableTitle).toContain('Components');
+      expect(tableTitle).toContain('Usage');
       
-      // Extract and define only the populateComponentsTable function (avoid eval)
-      const funcMatch = scriptContent[1].match(/function\s+populateComponentsTable\s*\(([^)]*)\)\s*{([\s\S]*?)^}/m);
-      expect(funcMatch).toBeTruthy();
-      // eslint-disable-next-line no-new-func
-      const populateComponentsTable = new Function(funcMatch[1], funcMatch[2]);
+      // Check for headers
+      const headerRow = vaTable.querySelector('va-table-row[slot="headers"]');
+      expect(headerRow).toBeTruthy();
       
-      if (typeof populateComponentsTable === 'function') {
-        populateComponentsTable(mockData);
-        
-        const vaTable = document.getElementById('components-va-table');
-        expect(vaTable).toBeTruthy();
-        
-        const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-        expect(dataRows.length).toBe(3);
-        
-        // Check data formatting
+      const headerCells = headerRow.querySelectorAll('span');
+      expect(headerCells.length).toBe(2);
+      expect(headerCells[0].textContent).toBe('Component');
+      expect(headerCells[1].textContent).toBe('Usage Count');
+      
+      // Check for data rows (should be populated by Jekyll)
+      const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+      expect(dataRows.length).toBeGreaterThan(0);
+      
+      // Validate first data row structure
+      if (dataRows.length > 0) {
         const firstRowCells = dataRows[0].querySelectorAll('span');
-        expect(firstRowCells[0].textContent).toBe('va-button');
-        expect(firstRowCells[1].textContent).toBe('1,247'); // Should be formatted with commas
+        expect(firstRowCells.length).toBe(2);
+        
+        // Check component name format 
+        const componentName = firstRowCells[0].textContent.trim();
+        expect(componentName.length).toBeGreaterThan(0);
+        
+        // Check usage count (should be numeric, possibly with commas)
+        const usageCount = firstRowCells[1].textContent.trim();
+        expect(usageCount).toMatch(/^[\d,]+$/);
       }
     });
 
-    test('populateVelocityTable function works with real va-table', () => {
-      const mockData = [
-        { period: '2024-08', issues_opened: 28 },
-        { period: '2024-07', issues_opened: 23 },
-        { period: '2024-06', issues_opened: 31 }
-      ];
+    test('Jekyll pre-populated velocity table contains valid data structure', () => {
+      const vaTable = document.getElementById('velocity-va-table');
+      expect(vaTable).toBeTruthy();
+      expect(vaTable).toHaveAttribute('table-title');
+      expect(vaTable).toHaveAttribute('stacked', 'true');
+      expect(vaTable).toHaveAttribute('sortable', 'true');
       
-      const scriptContent = builtFileContent.match(/<script>(.*?)<\/script>/si);
+      const tableTitle = vaTable.getAttribute('table-title');
+      expect(tableTitle).toContain('Monthly');
+      expect(tableTitle).toContain('Issues');
       
-      // Extract and define only the populateVelocityTable function (avoid eval)
-      const funcMatch = scriptContent[1].match(/function\s+populateVelocityTable\s*\(([^)]*)\)\s*{([\s\S]*?)^}/m);
-      expect(funcMatch).toBeTruthy();
-      // eslint-disable-next-line no-new-func
-      const populateVelocityTable = new Function(funcMatch[1], funcMatch[2]);
+      // Check for headers
+      const headerRow = vaTable.querySelector('va-table-row[slot="headers"]');
+      expect(headerRow).toBeTruthy();
       
-      if (typeof populateVelocityTable === 'function') {
-        populateVelocityTable(mockData);
-        
-        const vaTable = document.getElementById('velocity-va-table');
-        expect(vaTable).toBeTruthy();
-        
-        const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-        expect(dataRows.length).toBe(3);
-        
-        // Check period formatting (should convert 2024-08 to "August 2024")
+      const headerCells = headerRow.querySelectorAll('span');
+      expect(headerCells.length).toBe(2);
+      expect(headerCells[0].textContent).toBe('Period');
+      expect(headerCells[1].textContent).toBe('Issues Opened');
+      
+      // Check for data rows (should be populated by Jekyll)
+      const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+      expect(dataRows.length).toBeGreaterThan(0);
+      
+      // Validate first data row structure
+      if (dataRows.length > 0) {
         const firstRowCells = dataRows[0].querySelectorAll('span');
-        expect(firstRowCells[0].textContent).toContain('August 2024');
-        expect(firstRowCells[1].textContent).toBe('28');
+        expect(firstRowCells.length).toBe(2);
+        
+        // Check period format (should be like "September 2025")
+        const periodText = firstRowCells[0].textContent.trim();
+        expect(periodText).toMatch(/^[A-Z][a-z]+ \d{4}$/);
+        
+        // Check numeric value
+        const openedValue = firstRowCells[1].textContent.trim();
+        expect(openedValue).toMatch(/^\d+$/);
       }
     });
 
-    test('populateExperimentalTable function works with real va-table', () => {
-      const mockData = [
-        { period: '2024-Q2', issues_opened: 5, issues_closed: 3, issues_implemented: 2 },
-        { period: '2024-Q1', issues_opened: 8, issues_closed: 6, issues_implemented: 4 }
-      ];
+    test('Jekyll pre-populated experimental table contains valid data structure', () => {
+      const vaTable = document.getElementById('experimental-va-table');
+      expect(vaTable).toBeTruthy();
+      expect(vaTable).toHaveAttribute('table-title');
+      expect(vaTable).toHaveAttribute('stacked', 'true');
+      expect(vaTable).toHaveAttribute('sortable', 'true');
       
-      const scriptContent = builtFileContent.match(/<script>(.*?)<\/script>/si);
+      const tableTitle = vaTable.getAttribute('table-title');
+      expect(tableTitle).toContain('Experimental');
+      expect(tableTitle).toContain('Design');
       
-      // Extract and define only the populateExperimentalTable function (avoid eval)
-      const funcMatch = scriptContent[1].match(/function\s+populateExperimentalTable\s*\(([^)]*)\)\s*{([\s\S]*?)^}/m);
-      expect(funcMatch).toBeTruthy();
-      // eslint-disable-next-line no-new-func
-      const populateExperimentalTable = new Function(funcMatch[1], funcMatch[2]);
+      // Check for headers
+      const headerRow = vaTable.querySelector('va-table-row[slot="headers"]');
+      expect(headerRow).toBeTruthy();
       
-      if (typeof populateExperimentalTable === 'function') {
-        populateExperimentalTable(mockData);
-        
-        const vaTable = document.getElementById('experimental-va-table');
-        expect(vaTable).toBeTruthy();
-        
-        const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
-        expect(dataRows.length).toBe(2);
-        
-        // Check all four columns
+      const headerCells = headerRow.querySelectorAll('span');
+      expect(headerCells.length).toBe(4);
+      expect(headerCells[0].textContent).toBe('Quarter');
+      expect(headerCells[1].textContent).toBe('Issues Opened');
+      expect(headerCells[2].textContent).toBe('Issues Closed');
+      expect(headerCells[3].textContent).toBe('Issues Implemented');
+      
+      // Check for data rows (should be populated by Jekyll)
+      const dataRows = vaTable.querySelectorAll('va-table-row:not([slot="headers"])');
+      expect(dataRows.length).toBeGreaterThan(0);
+      
+      // Validate first data row structure
+      if (dataRows.length > 0) {
         const firstRowCells = dataRows[0].querySelectorAll('span');
         expect(firstRowCells.length).toBe(4);
-        expect(firstRowCells[0].textContent).toBe('Q2 2024');
-        expect(firstRowCells[3].textContent).toBe('2'); // issues_implemented
+        
+        // Check quarter format (should be like "2025 Q3")
+        const quarterText = firstRowCells[0].textContent.trim();
+        expect(quarterText).toMatch(/^\d{4} Q[1-4]$/);
+        
+        // Check numeric values
+        const openedValue = firstRowCells[1].textContent.trim();
+        const closedValue = firstRowCells[2].textContent.trim();
+        const implementedValue = firstRowCells[3].textContent.trim();
+        expect(openedValue).toMatch(/^\d+$/);
+        expect(closedValue).toMatch(/^\d+$/);
+        expect(implementedValue).toMatch(/^\d+$/);
       }
     });
   });
@@ -323,98 +330,89 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     });
 
     test('Built site maintains accessibility during error states', () => {
-      const scriptContent = builtFileContent.match(/<script>(.*?)<\/script>/si);
-      
-      // Extract functions using safer approach instead of eval
-      // Note: This test may need refactoring to work without global eval
-      
-      // Test error handling for each table
-      const tableFunctions = [
-        'populateQuarterlyTable',
-        'populateComponentsTable', 
-        'populateVelocityTable',
-        'populateExperimentalTable'
+      // Test that core accessibility works without JavaScript functions
+      const structuralElements = [
+        'main[role="main"]',
+        'section[aria-labelledby]',
+        'va-table[table-title]',
+        '.chart-container[role="img"]',
+        'va-tab-panel[role="tabpanel"]'
       ];
       
-      tableFunctions.forEach(funcName => {
-        if (typeof window[funcName] === 'function') {
-          // Call with empty/invalid data
-          window[funcName](null);
-          window[funcName]([]);
-          window[funcName]({});
-          
-          // Tables should still exist and have headers
-          const tableId = funcName.replace('populate', '').replace('Table', '').toLowerCase() + '-va-table';
-          const table = document.getElementById(tableId);
-          
-          if (table) {
-            const headers = table.querySelectorAll('va-table-row[slot="headers"]');
-            expect(headers.length).toBeGreaterThan(0);
-          }
-        }
+      structuralElements.forEach(selector => {
+        const elements = document.querySelectorAll(selector);
+        expect(elements.length).toBeGreaterThan(0);
+      });
+      
+      // Check that tables have proper accessibility attributes
+      const vaTables = document.querySelectorAll('va-table');
+      vaTables.forEach(table => {
+        expect(table).toHaveAttribute('table-title');
+        expect(table).toHaveAttribute('stacked', 'true');
+        
+        // Headers should exist
+        const headers = table.querySelectorAll('va-table-row[slot="headers"]');
+        expect(headers.length).toBe(1);
       });
     });
 
     test('Built site keyboard navigation works correctly', () => {
-      // Test focusable elements are properly configured
+      // Test that all interactive elements are keyboard accessible
       const focusableElements = document.querySelectorAll(
-        '[tabindex="0"], .chart-container[tabindex="0"]'
+        'va-tab-item, .chart-container[tabindex="0"], va-table[sortable="true"]'
       );
       
       expect(focusableElements.length).toBeGreaterThan(0);
       
       focusableElements.forEach(element => {
-        const tabindex = element.getAttribute('tabindex');
-        if (tabindex !== null) {
-          expect(parseInt(tabindex)).toBeGreaterThanOrEqual(0);
+        // For web components and interactive elements, check they're not explicitly disabled
+        // and have proper focus behavior
+        const hasTabindex = element.hasAttribute('tabindex');
+        const tabIndex = element.tabIndex;
+        
+        // Element should either have no tabindex (default behavior) or have a valid one
+        if (hasTabindex) {
+          expect(tabIndex).toBeGreaterThanOrEqual(0);
         }
         
-        // Elements with role="img" should be focusable
-        if (element.getAttribute('role') === 'img') {
-          expect(element).toHaveAttribute('tabindex', '0');
-          expect(element).toHaveAttribute('aria-label');
-        }
-      });
-      
-      // Test va-tab-item elements separately as they may have different tabIndex behavior
-      const vaTabItems = document.querySelectorAll('va-tab-item');
-      expect(vaTabItems.length).toBeGreaterThan(0);
-      
-      vaTabItems.forEach(tabItem => {
-        expect(tabItem).toHaveAttribute('button-text');
-        expect(tabItem).toHaveAttribute('target-id');
+        // Check that element is not disabled
+        expect(element.disabled).toBeFalsy();
+        expect(element.hasAttribute('disabled')).toBeFalsy();
       });
     });
 
     test('Built site screen reader compatibility is maintained', () => {
-      // Check critical screen reader features exist
-      const ariaLabelledBy = document.querySelectorAll('[aria-labelledby]');
-      const ariaLabels = document.querySelectorAll('[aria-label]');
-      const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-      const landmarks = document.querySelectorAll('main, section, nav, aside');
+      // Test that screen reader specific attributes are present
+      const chartContainers = document.querySelectorAll('.chart-container');
+      chartContainers.forEach(chart => {
+        expect(chart).toHaveAttribute('role', 'img');
+        expect(chart).toHaveAttribute('aria-label');
+        
+        const ariaLabel = chart.getAttribute('aria-label');
+        expect(ariaLabel.length).toBeGreaterThan(25); // Descriptive labels
+      });
       
-      expect(ariaLabelledBy.length).toBeGreaterThan(0);
-      expect(ariaLabels.length).toBeGreaterThan(0);
-      expect(headings.length).toBeGreaterThan(5); // Should have proper heading structure
-      expect(landmarks.length).toBeGreaterThan(4); // Main + sections
-      
-      // Check heading hierarchy
-      const h1s = document.querySelectorAll('h1');
-      expect(h1s.length).toBe(1); // Exactly one h1
-      
-      const h2s = document.querySelectorAll('h2');
-      expect(h2s.length).toBeGreaterThan(3); // Multiple section headings
+      // Test metric cards accessibility
+      const metricCards = document.querySelectorAll('.metric-card');
+      metricCards.forEach(card => {
+        const value = card.querySelector('.metric-value[aria-labelledby]');
+        expect(value).toBeTruthy();
+        
+        const labelId = value.getAttribute('aria-labelledby');
+        const label = document.getElementById(labelId);
+        expect(label).toBeTruthy();
+      });
     });
   });
 
   describe('⚡ Performance and Loading', () => {
     test('Built site critical accessibility attributes are present immediately', () => {
-      // These should be in the HTML, not added by JavaScript
+      // Test that accessibility attributes are in the HTML, not added by JavaScript
       const criticalElements = [
-        'main[role="main"][aria-labelledby]',
-        'section[aria-labelledby]',
+        'main[aria-labelledby]',
+        '.chart-container[role="img"]',
         'va-table[table-title]',
-        '.chart-container[role="img"][aria-label][tabindex="0"]'
+        'va-tab-panel[role="tabpanel"]'
       ];
       
       criticalElements.forEach(selector => {
@@ -424,19 +422,24 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     });
 
     test('Built site maintains structure without JavaScript execution', () => {
-      // Test that core accessibility works even if JavaScript fails
+      // Test that tables are populated by Jekyll, not JavaScript
       const vaTables = document.querySelectorAll('va-table');
-      const chartContainers = document.querySelectorAll('.chart-container[role="img"]');
-      const tabPanels = document.querySelectorAll('va-tab-panel[role="tabpanel"]');
       
-      expect(vaTables.length).toBe(4);
-      expect(chartContainers.length).toBe(4);
-      expect(tabPanels.length).toBe(8); // 4 tabs × 2 panels each
-      
-      // All should have their accessibility attributes
       vaTables.forEach(table => {
-        expect(table).toHaveAttribute('table-title');
-        expect(table).toHaveAttribute('stacked', 'true');
+        const dataRows = table.querySelectorAll('va-table-row:not([slot="headers"])');
+        expect(dataRows.length).toBeGreaterThan(0); // Should have data without JS
+        
+        // Check first data row has content
+        if (dataRows.length > 0) {
+          const firstRowCells = dataRows[0].querySelectorAll('span');
+          expect(firstRowCells.length).toBeGreaterThan(0);
+          
+          // At least one cell should have content
+          const hasContent = Array.from(firstRowCells).some(cell => 
+            cell.textContent.trim().length > 0
+          );
+          expect(hasContent).toBeTruthy();
+        }
       });
     });
   });

@@ -92,8 +92,6 @@ $mobile-breakpoint: 480px;
   }
 }
 
-// This rule has been consolidated into .metrics-section above
-
 // Table view specific styling
 .metrics-section va-table {
   margin-top: var(--vads-spacing-2);
@@ -300,8 +298,6 @@ $mobile-breakpoint: 480px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   border: 1px solid rgba(255,255,255,0.1);
 }
-
-// This duplicate .metrics-section rule has been consolidated above
 
 // Responsive design
 @media (max-width: $tablet-breakpoint) {

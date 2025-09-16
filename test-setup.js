@@ -4,5 +4,5 @@ require('@testing-library/jest-dom');
 
 // Setup DOM cleanup
 beforeEach(() => {
-  document.body.innerHTML = '';
+  document.documentElement.innerHTML = '';
 });
