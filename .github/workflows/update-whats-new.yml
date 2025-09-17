@@ -1,6 +1,8 @@
 name: Update Whats New Releases
 
 on:
+  push:
+    branches: [main, community-branch]
   workflow_dispatch:
 
 jobs:
