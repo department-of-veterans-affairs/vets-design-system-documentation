@@ -1,6 +1,10 @@
 name: Update Whats New Releases
 
 on:
+  # temp for testing
+  pull_request:
+    paths:
+      - .github/workflows/update-whats-new.yml
   # Trigger automatically when new Sprint tags are created
   push:
     tags:
