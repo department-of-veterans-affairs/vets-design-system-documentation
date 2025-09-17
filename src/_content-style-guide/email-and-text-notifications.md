@@ -22,7 +22,7 @@ anchors:
 * Privacy officers may allow exceptions to the PII/PHI rule when a Veteran opts in to receive PII/PHI in their notifications. But you must work closely with the privacy office and get specific approval for any notifications that include PII/PHI.
 
 ### Additional resources
-* This page focuses on providing guidance on how content should be written. To learn more about how emails are structured, [visit the Email template page](https://design.va.gov/templates/email). 
+* This page focuses on providing guidance on how content should be written. To learn more about how emails are structured, [visit the Email template](https://design.va.gov/templates/email). 
 
 ## Email notifications
 
