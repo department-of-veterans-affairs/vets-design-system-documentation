@@ -122,7 +122,7 @@ jobs:
             release
             automated
           reviewers: |
-            design-system-team
+            @platform-design-system-team
           draft: false
 
       - name: No changes summary
