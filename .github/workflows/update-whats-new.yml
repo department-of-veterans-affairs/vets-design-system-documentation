@@ -95,7 +95,7 @@ jobs:
           echo "Successfully prepared branch $BRANCH"
 
       - name: Run update-releases script
-        run: yarn run update-releases
+        run: rm -rf json_data_cache && yarn run build
 
       - name: Check for changes
         id: changes
