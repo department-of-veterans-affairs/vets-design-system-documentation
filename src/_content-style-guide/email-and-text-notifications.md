@@ -43,7 +43,7 @@ anchors:
 
 ### Heading levels 
 
-* Heading level 1 should start off the email and should be either exactly the same wording as the subject line, or a slightly more detailed version of the subject line (for example, using “We received your VA form” in subject line and “We received your authorization to release medical information” in H1, to keep subject line in character limits)
+* Heading level 1 should start off the email and be either exactly the same wording as the subject line, or a slightly more detailed version of the subject line (for example, using “We received your VA form” in subject line and “We received your authorization to release medical information” in H1, to keep subject line in character limits)
 * Heading levels 2, 3, and 4 are also supported to chunk content, making it more accessible and easier to scan
 
 ### Action Link
