@@ -22,6 +22,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install dependencies
+        run: bundle install
+
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
