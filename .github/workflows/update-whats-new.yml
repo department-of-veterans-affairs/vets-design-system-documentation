@@ -1,9 +1,17 @@
 name: Update Whats New Releases
 
 on:
+  # Trigger automatically when new Sprint tags are created
   push:
-    branches: [main, community-branch]
+    tags:
+      - 'Sprint-*'
+  # Allow manual triggering for testing/reruns
   workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Sprint tag to process (optional - defaults to latest)'
+        required: false
+        type: string
 
 jobs:
   release-pr:
@@ -18,16 +26,28 @@ jobs:
       - name: Find latest Sprint tag
         id: latest_tag
         run: |
-          LATEST_TAG=$(git tag --list "Sprint-*" --sort=-creatordate | head -n 1)
+          # Use manually specified tag if provided, otherwise find latest
+          if [ -n "${{ github.event.inputs.tag }}" ]; then
+            LATEST_TAG="${{ github.event.inputs.tag }}"
+            echo "Using manually specified tag: $LATEST_TAG"
+          else
+            LATEST_TAG=$(git tag --list "Sprint-*" --sort=-creatordate | head -n 1)
+            echo "Found latest tag: $LATEST_TAG"
+          fi
+
           if [ -z "$LATEST_TAG" ]; then
             echo "No Sprint tag found!"
             exit 1
           fi
+
+          # Check if we already have a release branch for this tag
+          if git ls-remote --heads origin "release/$LATEST_TAG" | grep -q "release/$LATEST_TAG"; then
+            echo "Release branch for $LATEST_TAG already exists!"
+            exit 1
+          fi
+
           echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
           echo "Using tag $LATEST_TAG"
-
-      - name: Install Yarn
-        run: npm install -g yarn
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -42,26 +62,70 @@ jobs:
         id: branch
         run: |
           BRANCH="release/${{ steps.latest_tag.outputs.latest_tag }}"
+
+          # Verify the tag exists and create branch
+          if ! git rev-parse --verify "${{ steps.latest_tag.outputs.latest_tag }}" >/dev/null 2>&1; then
+            echo "Tag ${{ steps.latest_tag.outputs.latest_tag }} does not exist!"
+            exit 1
+          fi
+
           git checkout -b "$BRANCH" "${{ steps.latest_tag.outputs.latest_tag }}"
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+          echo "Created branch $BRANCH from tag ${{ steps.latest_tag.outputs.latest_tag }}"
 
       - name: Run update-releases script
-        run: rm -rf json_data_cache && yarn run build
+        run: |
+          echo "Clearing cache and running build..."
+          rm -rf json_data_cache
+          yarn run build
+
+          # Check if build was successful
+          if [ $? -ne 0 ]; then
+            echo "Build failed!"
+            exit 1
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes detected"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            git status --porcelain
+          fi
 
       - name: Commit changes
+        if: steps.changes.outputs.has_changes == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Release updates for ${{ steps.latest_tag.outputs.latest_tag }}" || echo "No changes to commit"
+          git commit -m "Release updates for ${{ steps.latest_tag.outputs.latest_tag }}"
 
       - name: Push branch
+        if: steps.changes.outputs.has_changes == 'true'
         run: git push origin "${{ steps.branch.outputs.branch }}"
 
       - name: Create Pull Request
+        if: steps.changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ steps.branch.outputs.branch }}
           title: "Release ${{ steps.latest_tag.outputs.latest_tag }}"
           body: "Automated PR for release ${{ steps.latest_tag.outputs.latest_tag }}"
           base: main
+          labels: |
+            release
+            automated
+          reviewers: |
+            design-system-team
+          draft: false
+
+      - name: No changes summary
+        if: steps.changes.outputs.has_changes == 'false'
+        run: |
+          echo "::notice::No changes detected for ${{ steps.latest_tag.outputs.latest_tag }}. No PR created."
