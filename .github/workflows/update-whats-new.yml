@@ -46,8 +46,10 @@ jobs:
 
           # Check if we already have a release branch for this tag
           if git ls-remote --heads origin "release/$LATEST_TAG" | grep -q "release/$LATEST_TAG"; then
-            echo "Release branch for $LATEST_TAG already exists!"
-            exit 1
+            echo "Release branch for $LATEST_TAG already exists - will use existing branch"
+            echo "branch_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "branch_exists=false" >> $GITHUB_OUTPUT
           fi
 
           echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
@@ -62,20 +64,29 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Create release branch from latest Sprint tag
+      - name: Create or checkout release branch
         id: branch
         run: |
           BRANCH="release/${{ steps.latest_tag.outputs.latest_tag }}"
 
-          # Verify the tag exists and create branch
+          # Verify the tag exists
           if ! git rev-parse --verify "${{ steps.latest_tag.outputs.latest_tag }}" >/dev/null 2>&1; then
             echo "Tag ${{ steps.latest_tag.outputs.latest_tag }} does not exist!"
             exit 1
           fi
 
-          git checkout -b "$BRANCH" "${{ steps.latest_tag.outputs.latest_tag }}"
+          # Check if branch already exists and handle accordingly
+          if [ "${{ steps.latest_tag.outputs.branch_exists }}" = "true" ]; then
+            echo "Checking out existing release branch $BRANCH"
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+          else
+            echo "Creating new release branch $BRANCH from tag ${{ steps.latest_tag.outputs.latest_tag }}"
+            git checkout -b "$BRANCH" "${{ steps.latest_tag.outputs.latest_tag }}"
+          fi
+
           echo "branch=$BRANCH" >> $GITHUB_OUTPUT
-          echo "Created branch $BRANCH from tag ${{ steps.latest_tag.outputs.latest_tag }}"
+          echo "Successfully prepared branch $BRANCH"
 
       - name: Run update-releases script
         run: |
@@ -130,4 +141,17 @@ jobs:
       - name: No changes summary
         if: steps.changes.outputs.has_changes == 'false'
         run: |
-          echo "::notice::No changes detected for ${{ steps.latest_tag.outputs.latest_tag }}. No PR created."
+          if [ "${{ steps.latest_tag.outputs.branch_exists }}" = "true" ]; then
+            echo "::notice::No new changes detected for ${{ steps.latest_tag.outputs.latest_tag }}. Existing release branch was checked but no updates needed."
+          else
+            echo "::notice::No changes detected for ${{ steps.latest_tag.outputs.latest_tag }}. No PR created."
+          fi
+
+      - name: Success summary
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          if [ "${{ steps.latest_tag.outputs.branch_exists }}" = "true" ]; then
+            echo "::notice::Successfully updated existing release branch ${{ steps.branch.outputs.branch }} with new changes."
+          else
+            echo "::notice::Successfully created new release branch ${{ steps.branch.outputs.branch }} and PR for ${{ steps.latest_tag.outputs.latest_tag }}."
+          fi
