@@ -56,7 +56,7 @@ anchors:
 * Avoid using generic text like “Learn more” and “Read more” by themselves
   * **Like this:** Learn how to pay your copay bill on VA.gov
 * If necessary, Action Links can be used within a Blockquote
-* Where relevant,[follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
+* Where relevant, [follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
 
 If you're using VA Notify, use the analytics link generator for UTM tracking
 
@@ -70,7 +70,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking
 
 If you're using VA Notify, use the analytics link generator for UTM tracking 
 
-### Bulleted Lists
+### Bulleted lists
 
 * Bulleted lists are supported to break up paragraph content. The style follows the VA design system bullet styling
 
@@ -94,10 +94,10 @@ If you're using VA Notify, use the analytics link generator for UTM tracking
 * Action Links are supported within a blockquote
 * Nested blockquotes are also supported within Blockquotes--this should be used rarely, only when secondary information needs to be quoted or referenced inside a primary callout (for example, showing an exact error message or policy excerpt inside highlighted instructions)
 
-### Contact Us Section
+### Contact section
 
 * Include a contact section so users can reach out if they have questions
-* By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit https://va.gov or call 800-827-1000 (TTY: 711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider
+* By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit [https://va.gov](https://va.gov) or call [800-827-1000](tel:800-827-1000) (TTY: [711](tel:711)). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider
 * Contact details can be adjusted as needed
 * If the user is required or recommended to reach out to the VA in the body content, the contact section can be removed to reduce redundancy.
 
