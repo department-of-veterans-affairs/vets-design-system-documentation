@@ -145,8 +145,8 @@ jobs:
           labels: |
             release
             automated
-          reviewers: |
-            @platform-design-system-team
+          team-reviewers: |
+            platform-design-system-team
           draft: false
 
       - name: No changes summary
