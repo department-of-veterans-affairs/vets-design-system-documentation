@@ -79,9 +79,7 @@ jobs:
 
       - name: Run update-releases script
         run: |
-          echo "Clearing cache and running build..."
-          rm -rf json_data_cache
-          yarn run build
+          yarn run update-releases
 
           # Check if build was successful
           if [ $? -ne 0 ]; then
