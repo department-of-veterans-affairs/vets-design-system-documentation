@@ -44,31 +44,62 @@ anchors:
 ### Heading levels 
 
 * Heading level 1 should start off the email and should be either exactly the same wording as the subject line, or a slightly more detailed version of the subject line (for example, using “We received your VA form” in subject line and “We received your authorization to release medical information” in H1, to keep subject line in character limits)
-* Headings level 2, 3, and 4 are also supported to chunk content, making it more accessible and easier to scan
+* Heading levels 2, 3, and 4 are also supported to chunk content, making it more accessible and easier to scan
 
-### Feature card (also called block quote card)
+### Action Link
+* Action Links are an extension of a regular link that serve as the primary way for a user to complete a call to actions or find need-to-know information--they should exist as their own line
+* Begin the Action Link with a verb and always include the purpose and destination—if the destination leads to the VA website, add "on VA.gov" as the destination
+  * Try to use a brief, clear Action Link like "Submit your disability claim on VA.gov" or "Check COVID-19 symptoms on the CDC website"
+* Don't include more than 3 Action Links total--it is strongly encouraged to only use one
+* It is not necessary to use an Action Link for informational emails where there is no action for the reader to perform (e.g. a contact info update)
+* Avoid using “Click here,” since not all people are physically clicking Action Links
+* Avoid using generic text like “Learn more” and “Read more” by themselves
+  * **Like this:** Learn how to pay your copay bill on VA.gov
+* If necessary, Action Links can be used within a Blockquote
+* Where relevant,[follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
 
-* Use the feature card component to display important details, like confirmation numbers or the date of an upcoming appointment
-* Use only one feature card in each email
-* If the feature card displays information from an online form confirmation screen, make sure the data field labels (like "Date submitted") match between the feature card and the confirmation screen
+If you're using VA Notify, use the analytics link generator for UTM tracking
 
 ### Links 
 
-Follow these general rules for accessible link text:
-* [Follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
-* Always include purpose and the destination in link text—for links from emails to the VA website, add "on VA.gov" as the destination
-* Make each link a full sentence
+* Links should NOT be used for primary call-to-actions--instead they should be used for secondary things like additional resources
+  * **Like this:** To learn more about monthly enrollment verification, visit our [Frequently Asked Questions (FAQ)](https://www.va.gov/resources/gi-bill-enrollment-verification-faqs/)
 * Put each link on a separate line
-* Avoid “Click here,” since not all people are physically clicking links
-* Avoid generic link text like “Learn more” and “Read more” by themselves
-  * **Like this:** [Learn how to pay your copay bill on VA.gov](https://www.va.gov/health-care/pay-copay-bill/)
+* Aim to use no more than 3 links in each email
+* For additional guidance, [follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
 
-Limit the number of links in each email:
-* Only include a link if the Veteran needs it to complete the call to action or to find need-to-know information
-* Try to use a single, clear call-to-action link, like "Submit your disability claim on VA.gov"
-* Don't include more than 3 links total
+If you're using VA Notify, use the analytics link generator for UTM tracking 
 
-If you're using VA Notify, use the analytics link generator for UTM tracking. 
+### Bulleted Lists
+
+* Bulleted lists are supported to break up paragraph content. The style follows the VA design system bullet styling
+
+### Bolded text
+
+* Bolded text is used to emphasize important information as needed
+* It should NOT be used to establish hierarchy. Headings are used to establish hierarchy
+
+### Divider
+
+* This is a horizontal line used to create visual separation between two sections--it signifies a change in topic
+* Avoid using dividers between short, individual items that are close in proximity
+* Dividers precede the Contact section and the Footer
+
+### Blockquote (formerly known as the Feature Card)
+
+* Use the Blockquote component to display important details, like confirmation numbers or the date of an upcoming appointment
+* Use only one Blockquote in each email
+* If the feature card displays information from an online form confirmation screen, make sure the data field labels (like "Date submitted") match between the feature card and the confirmation screen
+* Avoid using bolded text as headings--the recommended heading for blockquotes is Heading level 4
+* Action Links are supported within a blockquote
+* Nested blockquotes are also supported within Blockquotes--this should be used rarely, only when secondary information needs to be quoted or referenced inside a primary callout (for example, showing an exact error message or policy excerpt inside highlighted instructions)
+
+### Contact Us Section
+
+* Include a contact section so users can reach out if they have questions
+* By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit https://va.gov or call 800-827-1000 (TTY: 711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider
+* Contact details can be adjusted as needed
+* If the user is required or recommended to reach out to the VA in the body content, the contact section can be removed to reduce redundancy.
 
 ### Footer 
 
