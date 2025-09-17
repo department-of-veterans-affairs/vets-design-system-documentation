@@ -22,17 +22,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-
-      - name: Install Bundler
-        run: gem install bundler
-
-      - name: Install dependencies
-        run: bundle install
-
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
@@ -72,6 +61,12 @@ jobs:
           node-version: 18
           cache: yarn
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true  # This handles bundle install automatically
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
@@ -100,14 +95,7 @@ jobs:
           echo "Successfully prepared branch $BRANCH"
 
       - name: Run update-releases script
-        run: |
-          yarn run update-releases
-
-          # Check if build was successful
-          if [ $? -ne 0 ]; then
-            echo "Build failed!"
-            exit 1
-          fi
+        run: yarn run update-releases
 
       - name: Check for changes
         id: changes
