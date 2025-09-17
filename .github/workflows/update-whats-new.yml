@@ -1,0 +1,156 @@
+name: Update Whats New Releases
+
+on:
+  # temp for testing
+  pull_request:
+    paths:
+      - .github/workflows/update-whats-new.yml
+  # Trigger automatically when new Sprint tags are created
+  push:
+    tags:
+      - 'Sprint-*'
+  # Allow manual triggering for testing/reruns
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Sprint tag to process (optional - defaults to latest)'
+        required: false
+        type: string
+
+jobs:
+  release-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # important to get all tags
+
+      - name: Find latest Sprint tag
+        id: latest_tag
+        run: |
+          # Use manually specified tag if provided, otherwise find latest
+          if [ -n "${{ github.event.inputs.tag }}" ]; then
+            LATEST_TAG="${{ github.event.inputs.tag }}"
+            echo "Using manually specified tag: $LATEST_TAG"
+          else
+            LATEST_TAG=$(git tag --list "Sprint-*" --sort=-creatordate | head -n 1)
+            echo "Found latest tag: $LATEST_TAG"
+          fi
+
+          if [ -z "$LATEST_TAG" ]; then
+            echo "No Sprint tag found!"
+            exit 1
+          fi
+
+          # Check if we already have a release branch for this tag
+          if git ls-remote --heads origin "release/$LATEST_TAG" | grep -q "release/$LATEST_TAG"; then
+            echo "Release branch for $LATEST_TAG already exists - will use existing branch"
+            echo "branch_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "branch_exists=false" >> $GITHUB_OUTPUT
+          fi
+
+          echo "latest_tag=$LATEST_TAG" >> $GITHUB_OUTPUT
+          echo "Using tag $LATEST_TAG"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.8'
+          bundler-cache: true  # This handles bundle install automatically
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Create or checkout release branch
+        id: branch
+        run: |
+          BRANCH="release/${{ steps.latest_tag.outputs.latest_tag }}"
+
+          # Verify the tag exists
+          if ! git rev-parse --verify "${{ steps.latest_tag.outputs.latest_tag }}" >/dev/null 2>&1; then
+            echo "Tag ${{ steps.latest_tag.outputs.latest_tag }} does not exist!"
+            exit 1
+          fi
+
+          # Check if branch already exists and handle accordingly
+          if [ "${{ steps.latest_tag.outputs.branch_exists }}" = "true" ]; then
+            echo "Checking out existing release branch $BRANCH"
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+          else
+            echo "Creating new release branch $BRANCH from tag ${{ steps.latest_tag.outputs.latest_tag }}"
+            git checkout -b "$BRANCH" "${{ steps.latest_tag.outputs.latest_tag }}"
+          fi
+
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+          echo "Successfully prepared branch $BRANCH"
+
+      - name: Run update-releases script
+        run: rm -rf json_data_cache && yarn run build
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo "No changes detected"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            git status --porcelain
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Release updates for ${{ steps.latest_tag.outputs.latest_tag }}"
+
+      - name: Push branch
+        if: steps.changes.outputs.has_changes == 'true'
+        run: git push origin "${{ steps.branch.outputs.branch }}"
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.branch.outputs.branch }}
+          title: "Release ${{ steps.latest_tag.outputs.latest_tag }}"
+          body: "Automated PR for release ${{ steps.latest_tag.outputs.latest_tag }}"
+          base: main
+          labels: |
+            release
+            automated
+          team-reviewers: |
+            platform-design-system-team
+          draft: false
+
+      - name: No changes summary
+        if: steps.changes.outputs.has_changes == 'false'
+        run: |
+          if [ "${{ steps.latest_tag.outputs.branch_exists }}" = "true" ]; then
+            echo "::notice::No new changes detected for ${{ steps.latest_tag.outputs.latest_tag }}. Existing release branch was checked but no updates needed."
+          else
+            echo "::notice::No changes detected for ${{ steps.latest_tag.outputs.latest_tag }}. No PR created."
+          fi
+
+      - name: Success summary
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          if [ "${{ steps.latest_tag.outputs.branch_exists }}" = "true" ]; then
+            echo "::notice::Successfully updated existing release branch ${{ steps.branch.outputs.branch }} with new changes."
+          else
+            echo "::notice::Successfully created new release branch ${{ steps.branch.outputs.branch }} and PR for ${{ steps.latest_tag.outputs.latest_tag }}."
+          fi
