@@ -86,7 +86,6 @@ intro-text: Typographical selections intended to meet the highest standards of u
     .text-tiny {
         margin: 0.3125rem 0 0;
         font-size: 0.9375rem;
-
     }
 
     .text-tiny:first-child {
