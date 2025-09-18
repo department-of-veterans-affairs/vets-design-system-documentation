@@ -153,7 +153,7 @@ Don’t change heading level in order to use a different font size.
 
 Use monospace fonts sparingly. Monospace fonts can be difficult to read, especially at small sizes or with poor color contrast. Use monospace fonts for numerical data in tables, code examples, or when precise horizontal alignment is needed. For body text, choose a sans serif typeface.
 
-Monospace fonts may also be appropriate for specific medical terminology where horizontal alignment can be beneficial to scannability. Consider if the monospace font will enhance readability or make it more difficult. Refer to this [recommendations for Pharmacists from AFB.org](https://www.afb.org/blindness-and-low-vision/your-rights/rx-label-enable-campaign/summary-recommendations-pharmacists) for more information. 
+Monospace fonts may also be suitable for specific medical terminology, where horizontal alignment can enhance scannability. Consider whether the monospace font will enhance readability or make it more difficult. Refer to this article, [Recommendations for Pharmacists from AFB.org](https://www.afb.org/blindness-and-low-vision/your-rights/rx-label-enable-campaign/summary-recommendations-pharmacists) for more information. 
 
 <div class="do-dont">
 <div class="do-dont__do">
