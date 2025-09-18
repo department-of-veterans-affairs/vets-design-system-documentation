@@ -205,17 +205,17 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 </thead>
 <tbody>
 <tr>
-<td class="vads-u-font-family--monospace">Health Care</td>
+<td>Health Care</td>
 <td class="vads-u-font-family--monospace">(555) 123-4567</td>
 <td class="vads-u-font-family--monospace">12345</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--monospace">Disability Benefits</td>
+<td>Disability Benefits</td>
 <td class="vads-u-font-family--monospace">(800) 827-1000</td>
 <td class="vads-u-font-family--monospace">90210</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--monospace">Education Benefits</td>
+<td>Education Benefits</td>
 <td class="vads-u-font-family--monospace">(888) 442-4551</td>
 <td class="vads-u-font-family--monospace">10001</td>
 </tr>
