@@ -50,10 +50,11 @@ anchors:
 * Heading levels 2, 3, and 4 are also supported to chunk content, making it more accessible and easier to scan
 
 ### Action Link
-* Action Links are an extension of a regular link that serve as the primary way for a user to complete a call to actions or find need-to-know information--they should exist as their own line
+* Action Links are serve as the primary way for a user to complete the primary call-to-action or find need-to-know information
 * Begin the Action Link with a verb and always include the purpose and destination—if the destination leads to the VA website, add "on VA.gov" as the destination
   * Try to use a brief, clear Action Link like "Submit your disability claim on VA.gov" or "Check COVID-19 symptoms on the CDC website"
-* Don't include more than 3 Action Links total--it is strongly encouraged to only use one
+* Use only one Action Link and it should exist as its own line
+  * In the rare case that two call-to-actions of equal hierarchy, it is permissible to use two.
 * It is not necessary to use an Action Link for informational emails where there is no action for the reader to perform (e.g. a contact info update)
 * Avoid using “Click here,” since not all people are physically clicking Action Links
 * Avoid using generic text like “Learn more” and “Read more” by themselves
@@ -65,8 +66,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking
 
 ### Links 
 
-* Links should NOT be used for primary call-to-actions--instead they should be used for secondary things like additional resources
-  * **Like this:** To learn more about monthly enrollment verification, visit our [Frequently Asked Questions (FAQ)](https://www.va.gov/resources/gi-bill-enrollment-verification-faqs/)
+* Links should be used for secondary purposes like navigating to additional resources (e.g. FAQ) or linking contact information.
 * Put each link on a separate line
 * Aim to use no more than 3 links in each email
 * For additional guidance, [follow general VA style guidance for links](https://design.va.gov/content-style-guide/links)
