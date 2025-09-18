@@ -82,7 +82,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
     </div>
 </section>
 
-<style>
+<style scoped>
     .text-tiny {
         margin: 0.3125rem 0 0;
         font-size: 0.9375rem;
