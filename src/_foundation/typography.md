@@ -84,9 +84,11 @@ intro-text: Typographical selections intended to meet the highest standards of u
 
 ---
 
-<style scoped>
+<style>
     .text-tiny {
-        margin: 5px initial 0;
+        margin: 0.3125rem 0 0;
+            font-size: 0.9375rem;
+
     }
 
     .text-tiny:first-child {
@@ -94,35 +96,8 @@ intro-text: Typographical selections intended to meet the highest standards of u
     }
 
     .text-huge {
-        font-size: 140px;
+        font-size: 8.75rem;
         line-height: 1.05;
-    }
-
-    .text-tiny {
-        font-size: 15px;
-    }
-
-    .typography-serif-intro .text-huge {
-        font-size: 120px;
-        line-height: 1.275;
-    }
-
-    .typography-serif-intro .text-tiny {
-        font-size: 13px;
-    }
-
-    .typography-mono-intro .text-huge {
-        font-size: 100px;
-        line-height: 1.2;
-    }
-
-    .typography-mono-intro .text-tiny {
-        font-size: 12px;
-        line-height: 1.4;
-    }
-
-    .usa-grid-full {
-      max-width: none;
     }
 </style>
 
