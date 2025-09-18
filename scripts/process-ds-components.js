@@ -89,8 +89,8 @@ async function parseDSComponentsCSV(csvPath) {
     for (let i = 1; i < lines.length; i++) {
       const values = parseCSVLine(lines[i]);
       
-      if (values.length < headers.length) {
-        console.warn(`Row ${i + 1} has ${values.length} values but expected ${headers.length}, skipping`);
+      if (values.length < Math.min(headers.length, applicationStartIndex + 10)) {
+        console.warn(`Row ${i + 1} has ${values.length} values but expected at least ${applicationStartIndex + 10}, skipping`);
         continue;
       }
       
@@ -110,7 +110,7 @@ async function parseDSComponentsCSV(csvPath) {
       let totalUsage = 0;
       const applicationUsage = {};
       
-      for (let j = applicationStartIndex; j < values.length && j < headers.length; j++) {
+      for (let j = applicationStartIndex; j < Math.min(values.length, headers.length); j++) {
         const appName = headers[j];
         const usageCount = parseInt(values[j]) || 0;
         applicationUsage[appName] = usageCount;
@@ -216,27 +216,81 @@ function calculateTrend(current, previous) {
 }
 
 /**
+ * Combine React and web component variants of the same component
+ * e.g., va-alert + VaAlert = combined Alert component
+ */
+function combineComponentVariants(components) {
+  const combinedMap = new Map();
+  
+  for (const component of components) {
+    // Normalize component name to get the base name
+    let baseName = component.name;
+    
+    // Convert va-alert to Alert, VaAlert to Alert, etc.
+    if (baseName.startsWith('va-')) {
+      // va-alert -> Alert
+      baseName = baseName.substring(3).split('-').map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1)
+      ).join('');
+    } else if (baseName.startsWith('Va')) {
+      // VaAlert -> Alert
+      baseName = baseName.substring(2);
+    }
+    
+    // Get or create combined entry
+    if (combinedMap.has(baseName)) {
+      const existing = combinedMap.get(baseName);
+      // Combine usage counts
+      existing.totalUsage += component.totalUsage;
+      existing.usage_count += component.usage_count;
+      
+      // Combine application breakdown
+      for (const [app, count] of Object.entries(component.applicationBreakdown)) {
+        existing.applicationBreakdown[app] = (existing.applicationBreakdown[app] || 0) + count;
+      }
+      
+      // Track source components
+      existing.sourceComponents.push(component.name);
+    } else {
+      // Create new combined entry
+      combinedMap.set(baseName, {
+        name: baseName,
+        usage_count: component.usage_count,
+        totalUsage: component.totalUsage,
+        applicationBreakdown: { ...component.applicationBreakdown },
+        sourceComponents: [component.name]
+      });
+    }
+  }
+  
+  return Array.from(combinedMap.values());
+}
+
+/**
  * Process parsed data into dashboard format
  */
 function processForDashboard(parsedData) {
   const { reportDate, components, applicationColumns } = parsedData;
   
-  // Sort components by total usage
-  components.sort((a, b) => b.totalUsage - a.totalUsage);
+  // Combine React and web component variants of the same component
+  const combinedComponents = combineComponentVariants(components);
+  
+  // Sort combined components by total usage
+  combinedComponents.sort((a, b) => b.totalUsage - a.totalUsage);
   
   // Calculate summary statistics
-  const totalComponents = components.length;
-  const totalUsages = components.reduce((sum, comp) => sum + comp.totalUsage, 0);
-  const mostUsed = components[0];
+  const totalComponents = combinedComponents.length;
+  const totalUsages = combinedComponents.reduce((sum, comp) => sum + comp.totalUsage, 0);
+  const mostUsed = combinedComponents[0];
   const avgUsage = totalComponents > 0 ? Math.round(totalUsages / totalComponents) : 0;
   
-  // Group components by type for analysis
+  // Group original components by type for analysis (keep separate for type breakdown)
   const webComponents = components.filter(c => c.name.startsWith('va-'));
   const reactComponents = components.filter(c => c.name.startsWith('Va') && !c.name.startsWith('va-'));
   
   return {
-    // Top components for chart display
-    top_components_overall: components.slice(0, 20),
+    // Top components for chart display (use combined data)
+    top_components_overall: combinedComponents.slice(0, 20),
     
     // Component type breakdown
     components_by_type: {
