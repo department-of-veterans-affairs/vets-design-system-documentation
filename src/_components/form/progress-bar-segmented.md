@@ -63,6 +63,10 @@ anchors:
 
 ### Additional guidance for VA
 
+The segmented progress bar is primarily used in multi-step form flows to show users their progress through the application process.
+
+For additional guidance on using progress bars in form flows, see [Form templates]({{ site.baseurl }}/templates/forms/) and [Form accessibility guidelines]({{ site.baseurl }}/templates/forms/accessibility-guidelines).
+
 ### When to consider something else
 
 * **Tracking progress over an extended period of time**: If the steps in a process span multiple interactions or an extended period of time then use the [Process list]({{ site.baseurl }}/components/process-list) component.

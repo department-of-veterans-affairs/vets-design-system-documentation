@@ -31,6 +31,8 @@ This can occur when the order of elements in the source is wrong. If an element'
 
 Manually managing focus is necessary in some scenarios to provide a seamless and accessible user experience, especially for keyboard and screen reader users. Below are key things to know when setting focus manually.
 
+For detailed guidance on focus management in multi-step forms, see [Focus management implementation]({{ site.baseurl }}/templates/forms/accessibility-guidelines#focus-management-implementation).
+
 ### The focus should be intentionally set to the appropriate element when a user action requires a change of context or location
 
 - When content is added to the screen in response to a user-triggered event, the focus should be moved to the new content.
