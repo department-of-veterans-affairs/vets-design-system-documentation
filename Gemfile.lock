@@ -12,16 +12,15 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.17.2)
-    ffi (1.17.2-aarch64-linux-gnu)
+    ffi (1.17.2-aarch64-linux)
     ffi (1.17.2-aarch64-linux-musl)
-    ffi (1.17.2-arm-linux-gnu)
+    ffi (1.17.2-arm-linux)
     ffi (1.17.2-arm-linux-musl)
     ffi (1.17.2-arm64-darwin)
-    ffi (1.17.2-x86-linux-gnu)
+    ffi (1.17.2-x86-linux)
     ffi (1.17.2-x86-linux-musl)
     ffi (1.17.2-x86_64-darwin)
-    ffi (1.17.2-x86_64-linux-gnu)
+    ffi (1.17.2-x86_64-linux)
     ffi (1.17.2-x86_64-linux-musl)
     forwardable-extended (2.6.0)
     google-protobuf (3.25.8)
@@ -83,31 +82,31 @@ GEM
     rexml (3.4.1)
     rouge (4.5.2)
     safe_yaml (1.0.5)
-    sass-embedded (1.63.6-aarch64-linux-android)
+    sass-embedded (1.63.6-aarch64-linux)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-aarch64-linux-gnu)
+    sass-embedded (1.63.6-aarch64-linux-android)
       google-protobuf (~> 3.23)
     sass-embedded (1.63.6-aarch64-linux-musl)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-arm-linux-androideabi)
+    sass-embedded (1.63.6-arm-linux)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-arm-linux-gnueabihf)
+    sass-embedded (1.63.6-arm-linux-androideabi)
       google-protobuf (~> 3.23)
     sass-embedded (1.63.6-arm-linux-musleabihf)
       google-protobuf (~> 3.23)
     sass-embedded (1.63.6-arm64-darwin)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-x86-linux-android)
+    sass-embedded (1.63.6-x86-linux)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-x86-linux-gnu)
+    sass-embedded (1.63.6-x86-linux-android)
       google-protobuf (~> 3.23)
     sass-embedded (1.63.6-x86-linux-musl)
       google-protobuf (~> 3.23)
     sass-embedded (1.63.6-x86_64-darwin)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-x86_64-linux-android)
+    sass-embedded (1.63.6-x86_64-linux)
       google-protobuf (~> 3.23)
-    sass-embedded (1.63.6-x86_64-linux-gnu)
+    sass-embedded (1.63.6-x86_64-linux-android)
       google-protobuf (~> 3.23)
     sass-embedded (1.63.6-x86_64-linux-musl)
       google-protobuf (~> 3.23)
@@ -120,23 +119,23 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  aarch64-linux
   aarch64-linux-android
-  aarch64-linux-gnu
   aarch64-linux-musl
+  arm-linux
+  arm-linux
   arm-linux-androideabi
-  arm-linux-gnu
-  arm-linux-gnueabihf
   arm-linux-musl
   arm-linux-musleabihf
   arm64-darwin
   x86-linux
+  x86-linux
   x86-linux-android
-  x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
   x86_64-linux
+  x86_64-linux
   x86_64-linux-android
-  x86_64-linux-gnu
   x86_64-linux-musl
 
 DEPENDENCIES
