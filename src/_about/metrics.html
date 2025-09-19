@@ -29,17 +29,17 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last month</span>
+                <span>No change from last month</span>
               </span>
             {% endif %}
           {% endif %}
@@ -61,17 +61,17 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last month</span>
+                <span>No change from last month</span>
               </span>
             {% endif %}
           {% endif %}
@@ -93,17 +93,17 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last month</span>
+                <span>No change from last month</span>
               </span>
             {% endif %}
           {% endif %}
@@ -125,17 +125,17 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last month</span>
+                <span>No change from last month</span>
               </span>
             {% endif %}
           {% else %}
@@ -176,17 +176,17 @@ permalink: /about/metrics/
             {% if trend.direction == 'up' %}
               <span class="metric-trend trend-up">
                 <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% elsif trend.direction == 'down' %}
               <span class="metric-trend trend-down">
                 <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% compared to last month</span>
+                <span>{{ trend.percentage }}% from last month</span>
               </span>
             {% else %}
               <span class="metric-trend trend-neutral">
                 <span class="trend-icon">→</span>
-                <span>No change compared to last month</span>
+                <span>No change from last month</span>
               </span>
             {% endif %}
           {% else %}
@@ -457,6 +457,11 @@ permalink: /about/metrics/
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 // Load metrics data and render charts
+// Chart configuration constants for consistency with CSS
+const CHART_RESPONSIVE_BREAKPOINT = 600;
+const CHART_MOBILE_BREAKPOINT = 400;
+const TOP_COMPONENTS_CHART_LIMIT = 10;
+
 // Metrics data manager using module pattern to encapsulate data
 const MetricsDataManager = (function() {
   let issueData = null;
@@ -466,31 +471,60 @@ const MetricsDataManager = (function() {
     setData: function(newIssueData, newComponentData) {
       // Validate input data before storing and rendering
       if (!newIssueData || !newComponentData) {
-        console.error('MetricsDataManager: issueData or componentData is null or undefined.', { 
-          issueData: newIssueData, 
-          componentData: newComponentData 
+        console.error('MetricsDataManager: Data validation failed', { 
+          issueData: !!newIssueData, 
+          componentData: !!newComponentData,
+          issueDataType: typeof newIssueData,
+          componentDataType: typeof newComponentData
         });
         
-        // Display a user-friendly message in the UI
-        var dashboard = document.querySelector('.metrics-dashboard');
-        if (dashboard && !dashboard.querySelector('.metrics-error')) {
-          var errorDiv = document.createElement('div');
-          errorDiv.className = 'metrics-error';
-          errorDiv.setAttribute('role', 'alert');
-          errorDiv.style.color = 'var(--vads-color-error-dark)';
-          errorDiv.style.backgroundColor = 'var(--vads-color-error-lightest)';
-          errorDiv.style.border = '1px solid var(--vads-color-error-light)';
-          errorDiv.style.borderRadius = 'var(--vads-radius-sm)';
-          errorDiv.style.padding = 'var(--vads-spacing-2)';
-          errorDiv.style.margin = '1em 0';
-          errorDiv.textContent = 'Unable to load metrics data at this time. Please try again later.';
-          dashboard.insertBefore(errorDiv, dashboard.firstChild);
-        }
+        this.displayDataError('Unable to load metrics data at this time. Please refresh the page or try again later.');
+        return;
+      }
+      
+      // Additional validation for required data structure
+      if (!this.validateDataStructure(newIssueData, newComponentData)) {
+        console.error('MetricsDataManager: Data structure validation failed');
+        this.displayDataError('Metrics data is in an unexpected format. Some charts may not display correctly.');
         return;
       }
       
       issueData = newIssueData;
       componentData = newComponentData;
+    },
+    
+    validateDataStructure: function(issueData, componentData) {
+      // Check if issue data has required structure
+      if (!issueData.summary && !issueData.quarterly && !issueData.velocity) {
+        console.warn('Issue data missing expected structure');
+        return false;
+      }
+      
+      // Check if component data has required structure
+      if (!componentData.summary_stats && !componentData.top_components_overall) {
+        console.warn('Component data missing expected structure');
+        return false;
+      }
+      
+      return true;
+    },
+    
+    displayDataError: function(message) {
+      // Display a user-friendly message in the UI
+      var dashboard = document.querySelector('.metrics-dashboard');
+      if (dashboard && !dashboard.querySelector('.metrics-error')) {
+        var errorDiv = document.createElement('div');
+        errorDiv.className = 'metrics-error';
+        errorDiv.setAttribute('role', 'alert');
+        errorDiv.style.color = 'var(--vads-color-error-dark)';
+        errorDiv.style.backgroundColor = 'var(--vads-color-error-lightest)';
+        errorDiv.style.border = '1px solid var(--vads-color-error-light)';
+        errorDiv.style.borderRadius = 'var(--vads-radius-sm)';
+        errorDiv.style.padding = 'var(--vads-spacing-2)';
+        errorDiv.style.margin = '1em 0';
+        errorDiv.textContent = message;
+        dashboard.insertBefore(errorDiv, dashboard.firstChild);
+      }
     },
     
     hasData: function() {
@@ -673,13 +707,13 @@ function renderQuarterlyChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 60 : 80, 
-    bottom: containerWidth < 600 ? 50 : 60, 
-    left: containerWidth < 600 ? 50 : 60
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60, 
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
   
   const svg = d3.select('#quarterly-chart')
     .append('svg')
@@ -716,7 +750,7 @@ function renderQuarterlyChart(data) {
     .range(['#0071bb', '#112e51']); // VA primary blue and dark blue
   
   // Add axes with mobile-optimized spacing
-  const tickInterval = containerWidth < 400 ? 8 : containerWidth < 600 ? 6 : 2; // More aggressive spacing for mobile
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 8 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 6 : 2; // More aggressive spacing for mobile
   const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
     .map(d => d.period);
   
@@ -733,7 +767,7 @@ function renderQuarterlyChart(data) {
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
     .attr('transform', 'rotate(-45)')
-    .style('font-size', containerWidth < 600 ? '9px' : '12px');
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -806,13 +840,13 @@ function renderVelocityChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 20 : 30, 
-    bottom: containerWidth < 600 ? 80 : 70, // Extra space for rotated labels on mobile
-    left: containerWidth < 600 ? 50 : 60
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 20 : 30, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 80 : 70, // Extra space for rotated labels on mobile
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
   
   const svg = d3.select('#velocity-chart')
     .append('svg')
@@ -841,7 +875,7 @@ function renderVelocityChart(data) {
     .range([height, 0]);
   
   // Add axes with custom formatting - responsive tick frequency  
-  const tickInterval = containerWidth < 400 ? 18 : containerWidth < 600 ? 12 : 6; // More aggressive spacing for mobile
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 18 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 12 : 6; // More aggressive spacing for mobile
   const tickIndices = [];
   for (let i = 0; i < data.length; i += tickInterval) {
     tickIndices.push(i);
@@ -864,7 +898,7 @@ function renderVelocityChart(data) {
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
     .attr('transform', 'rotate(-45)')
-    .style('font-size', containerWidth < 600 ? '9px' : '12px');
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -908,13 +942,13 @@ function renderExperimentalChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 60 : 80, 
-    bottom: containerWidth < 600 ? 50 : 60, 
-    left: containerWidth < 600 ? 50 : 60
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60, 
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
   
   const svg = d3.select('#experimental-chart')
     .append('svg')
@@ -951,7 +985,7 @@ function renderExperimentalChart(data) {
     .range(['#f9c642', '#e59100', '#2e8540']); // VA gold/yellow for opened/closed, green for implemented
   
   // Add axes with mobile-optimized spacing
-  const tickInterval = containerWidth < 400 ? 8 : containerWidth < 600 ? 6 : 2; // More aggressive spacing for mobile
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 8 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 6 : 2; // More aggressive spacing for mobile
   const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
     .map(d => d.period);
   
@@ -968,7 +1002,7 @@ function renderExperimentalChart(data) {
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
     .attr('transform', 'rotate(-45)')
-    .style('font-size', containerWidth < 600 ? '9px' : '12px');
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -1077,13 +1111,13 @@ function renderTopComponentsChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 30 : 40, 
-    bottom: containerWidth < 600 ? 120 : 100, 
-    left: containerWidth < 600 ? 60 : 80
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 30 : 40, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 120 : 100, 
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 350 : 450) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 350 : 450) - margin.top - margin.bottom;
   
   const svg = d3.select('#top-components-chart')
     .append('svg')
@@ -1093,8 +1127,8 @@ function renderTopComponentsChart(data) {
   const g = svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
   
-  // Take top 10 components
-  const topComponents = data.top_components_overall.slice(0, 10);
+  // Take top components for chart display
+  const topComponents = data.top_components_overall.slice(0, TOP_COMPONENTS_CHART_LIMIT);
   
   // Setup scales
   const x = d3.scaleBand()
@@ -1117,7 +1151,7 @@ function renderTopComponentsChart(data) {
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
     .attr('transform', 'rotate(-45)')
-    .style('font-size', containerWidth < 600 ? '10px' : '12px');
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));

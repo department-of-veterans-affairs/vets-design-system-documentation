@@ -23,6 +23,12 @@ const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'component-usage.json');
 const JEKYLL_OUTPUT_FILE = path.join(DATA_DIR, 'component-usage.json');
 
+// CSV parsing constants
+const MIN_EXPECTED_COLUMNS = 10;
+
+// Dashboard display constants
+const TOP_COMPONENTS_BY_TYPE_LIMIT = 10;
+
 /**
  * Find the most recent ds-components CSV file
  */
@@ -89,9 +95,16 @@ async function parseDSComponentsCSV(csvPath) {
     for (let i = 1; i < lines.length; i++) {
       const values = parseCSVLine(lines[i]);
       
-      if (values.length < Math.min(headers.length, applicationStartIndex + 10)) {
-        console.warn(`Row ${i + 1} has ${values.length} values but expected at least ${applicationStartIndex + 10}, skipping`);
+      // Improved column count validation - handle both too few and too many columns
+      if (values.length < Math.min(headers.length, applicationStartIndex + 1)) {
+        console.warn(`Row ${i + 1} has ${values.length} values but expected at least ${applicationStartIndex + 1} (${headers.length} total columns), skipping`);
         continue;
+      }
+      
+      // Handle rows with more columns than headers (pad headers or truncate values)
+      if (values.length > headers.length) {
+        console.warn(`Row ${i + 1} has ${values.length} values but only ${headers.length} headers, truncating extra values`);
+        values.length = headers.length; // Truncate extra values
       }
       
       const date = values[dateIndex];
@@ -141,8 +154,14 @@ async function parseDSComponentsCSV(csvPath) {
 
 /**
  * Parse a CSV line handling quoted values and commas
+ * Improved error handling for malformed CSV lines
  */
 function parseCSVLine(line) {
+  if (!line || typeof line !== 'string') {
+    console.warn('parseCSVLine: Invalid line input:', line);
+    return [];
+  }
+  
   const values = [];
   let current = '';
   let inQuotes = false;
@@ -165,6 +184,11 @@ function parseCSVLine(line) {
     } else {
       current += char;
     }
+  }
+  
+  // Check for unclosed quotes
+  if (inQuotes) {
+    console.warn('parseCSVLine: Unclosed quotes detected in line:', line.substring(0, 50) + '...');
   }
   
   values.push(current.trim());
@@ -218,6 +242,7 @@ function calculateTrend(current, previous) {
 /**
  * Combine React and web component variants of the same component
  * e.g., va-alert + VaAlert = combined Alert component
+ * Improved to handle more component naming patterns
  */
 function combineComponentVariants(components) {
   const combinedMap = new Map();
@@ -226,15 +251,29 @@ function combineComponentVariants(components) {
     // Normalize component name to get the base name
     let baseName = component.name;
     
-    // Convert va-alert to Alert, VaAlert to Alert, etc.
+    // Handle different component naming patterns
     if (baseName.startsWith('va-')) {
-      // va-alert -> Alert
+      // va-alert -> Alert, va-alert-dismissible -> AlertDismissible
       baseName = baseName.substring(3).split('-').map(word => 
         word.charAt(0).toUpperCase() + word.slice(1)
       ).join('');
     } else if (baseName.startsWith('Va')) {
-      // VaAlert -> Alert
+      // VaAlert -> Alert, VaAlertDismissible -> AlertDismissible
       baseName = baseName.substring(2);
+    } else if (baseName.startsWith('usa-')) {
+      // usa-button -> Button (for USWDS components)
+      baseName = baseName.substring(4).split('-').map(word => 
+        word.charAt(0).toUpperCase() + word.slice(1)
+      ).join('');
+    } else {
+      // Keep the original name if no pattern matches (e.g., icons)
+      baseName = baseName.charAt(0).toUpperCase() + baseName.slice(1);
+    }
+    
+    // Skip empty or invalid base names
+    if (!baseName || baseName.length === 0) {
+      console.warn(`combineComponentVariants: Skipping component with invalid name: ${component.name}`);
+      continue;
     }
     
     // Get or create combined entry
@@ -263,7 +302,10 @@ function combineComponentVariants(components) {
     }
   }
   
-  return Array.from(combinedMap.values());
+  const combinedComponents = Array.from(combinedMap.values());
+  console.log(`combineComponentVariants: Combined ${components.length} components into ${combinedComponents.length} variants`);
+  
+  return combinedComponents;
 }
 
 /**
@@ -300,8 +342,8 @@ function processForDashboard(parsedData) {
     
     // Top components by type
     top_components_by_type: {
-      'web-component': webComponents.slice(0, 10),
-      'react-component': reactComponents.slice(0, 10)
+      'web-component': webComponents.slice(0, TOP_COMPONENTS_BY_TYPE_LIMIT),
+      'react-component': reactComponents.slice(0, TOP_COMPONENTS_BY_TYPE_LIMIT)
     },
     
     // Summary statistics

@@ -4,6 +4,7 @@
 // Breakpoint variables for consistency
 $tablet-breakpoint: 768px;
 $mobile-breakpoint: 480px;
+$chart-responsive-breakpoint: 600px;
 
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
@@ -15,7 +16,7 @@ $mobile-breakpoint: 480px;
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-sm);
   
-  // va-tabs styling (consolidated from duplicate rule)
+  // va-tabs styling
   va-tabs {
     margin-top: var(--vads-spacing-2);
     
