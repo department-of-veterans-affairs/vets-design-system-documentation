@@ -1,16 +1,17 @@
 ---
 layout: documentation
-title: Contributing to VADS Documentation
+title: Contributing to VADS documentation
 permalink: /about/contributing-to-the-design-system/contributing-to-docs
 has-parent: /about/contributing-to-the-design-system/
 intro-text: How to contribute documentation to the VA Design System site, including templates, drafts, and content guidelines.
 redirect_from:
   - /about/designers/contributing-to-docs
+  - /about/contributing-to-the-design-system/vads-content-style-guide
 ---
 
 This page provides guidance for contributing documentation to the VA Design System (VADS) site. It consolidates and replaces the previous GitHub wiki content. For code and component contributions, see the [code contributing guide]({{ site.baseurl }}/about/developers/contributing).
 
-## Writing new pages
+## Creating new pages
 
 The VADS documentation site uses Markdown. If you are new to Markdown, see the [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
@@ -33,13 +34,68 @@ For new component or pattern documentation, start with one of these templates:
 
 These templates include required front matter and example usage of includes for Storybook examples, images, and code props. See the next section for details on these includes.
 
-### Follow style guidance for writing for VADS
-
-While writing documentatation, follow our [style guide for the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/vads-content-style-guide). The guide is based on the [VA.gov Content Style Guide]({{ site.baseurl }}/content-style-guide/), with some differences noted for a more technical audience. 
-
 ### Submit your new page
 
 Submit your new page as a pull request. The team will review and respond as soon as possible.
+
+## Writing for VADS
+
+When writing content specifically for the VA Design System (VADS), follow the VA.gov Content Style Guide (VA-CSG). 
+
+[View the complete VA.gov Content Style Guide]({{ site.baseurl }}/content-style-guide/)
+
+However, there are some situations where the VA-CSG doesn’t cover VADS-specific content, or where the unique user base for VADS demands deviation from the VA-CSG. This page contains guidance for these situations. 
+
+For issues not covered in this style guide, refer to:
+
+- [VA Content Style Guide]({{ site.baseurl }}/content-style-guide/)
+- [AP Style](https://apstylebook.com/)
+- [Merriam-Webster Dictionary](https://www.merriam-webster.com/)
+
+### VADS-specific guidance
+
+#### [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms)
+
+While there are abbreviations and acronyms that we use extensively in the Design System, we should be careful to define these when they’re first used on a page. This ensures that VADS pages can be used by both experienced and new Veteran-Facing Services (VFS) teams. 
+
+#### [Capitalization]({{ site.baseurl }}/content-style-guide/capitalization)
+
+While the VA-CSG avoids title case altogether, title case is allowed for the naming of components, patterns, and templates in VADS. [Find more details on naming components in the “Component, pattern, and template names” section of this page.](#referencing-components-patterns-and-templates) 
+
+#### Including "AKA" sections
+
+Often, there are several colloquial names for a component, pattern, or template. For example, users often call the [Search Input component]({{ site.baseurl }}/components/search-input) a search box, search field, or search bar. When possible, include a section in the component guidance with a list of these other names. This helps users find what they’re looking for even if they’re familiar with a term that differs from the component name. 
+
+#### [Links]({{ site.baseurl }}/content-style-guide/links)
+
+In-line links are acceptable for linking to components, patterns, and templates in VADS. These links don’t need to be on their own line.
+
+#### [Plain language]({{ site.baseurl }}/content-style-guide/plain-language/)
+
+VA.gov plain language standards still apply to VADS. However, there may be instances where communication with VA.gov product teams demands a higher level of expertise than the plain language standards account for. This is particularly likely in these areas: 
+
+- [Use short sentences]({{ site.baseurl }}/content-style-guide/plain-language/use-short-sentences)
+- [Use simple words and terms]({{ site.baseurl }}/content-style-guide/plain-language/use-simple-words-and-terms)
+- [Define complex terms]({{ site.baseurl }}/content-style-guide/plain-language/define-complex-terms)
+- [Don’t use jargon]({{ site.baseurl }}/content-style-guide/plain-language/don-t-use-jargon)
+
+In these instances, prioritize effective communication over the letter of the law, keeping these best practices in mind: 
+
+- It's better to include too much information than too little 
+- Guidance should be accessible to both seasoned and new VA.gov product team members
+- Link to other guidance when relevant or useful
+
+#### Referencing components, patterns, and templates
+
+Component, pattern, and template names should be written in title case. 
+
+When used in documentation, the component, pattern, or template name should be a hyperlink to the VADS guidance for that component, pattern, or template. 
+
+These formatting conventions help readers to distinguish the difference between a more general tool and our specific VADS components (e.g., the difference between an accordion as a generic UI component and the VADS Accordion component). 
+
+When referencing components, patterns, and templates with multi-step names in other documentation, use the full name. E.g., [Ask Users for A Single Response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response).
+
+[Learn more about VA design system naming conventions]({{ site.baseurl }}/about/naming-conventions)
 
 ## Documenting includes in templates
 
@@ -107,7 +163,7 @@ Draft pages allow you and your team to preview documentation before it is publis
 2. Create a new page in the desired section (e.g., `/src/_patterns`).
 3. Name your file (e.g., `draft-pattern.md`). The file name will be part of the page URL.
 4. Add the required front matter, including `draft: true`.
-5. Add your content and any anchors or search tags as needed. Follow the [VADS content style guide]({{ site.baseurl }}/about/contributing-to-the-design-system/vads-content-style-guide) for writing.
+5. Add your content and any anchors or search tags as needed. Follow the [Writing for VADS guidance](#writing-for-vads).
 
 ### Previewing and publishing drafts
 

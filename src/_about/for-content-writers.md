@@ -27,7 +27,7 @@ See basic SEO tips and best practices for making content findable in searches.
 
 ### [Contributing docs to the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/contributing-to-docs)
 
-Find resources for writing for this website, as well as the [style guide for the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/vads-content-style-guide).
+Find resources for writing for this website, as well as the [style guide for the VA Design System]({{ site.baseurl }}/about/contributing-to-the-design-system/contributing-to-docs#writing-for-vads).
 
 ## Get content guidance early from the Content and IA team
 
