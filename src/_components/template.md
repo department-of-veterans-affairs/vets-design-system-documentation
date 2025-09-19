@@ -3,15 +3,20 @@ layout: component
 title: Component name (singular)
 contributors: Command separated list of contributor names with (org name) following, if applicable
 draft: true
+web: true
+mobile-app: true
 intro-text: "This text provides the overall purpose and function of the component."
 github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-with-caution-candidate
 web-component: va-component-name
 ---
 
 ## Examples
+
+ <!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example -->
 
 ### Web
 
@@ -27,7 +32,7 @@ Add Storybook examples as necessary.
 
 Add Storybook examples as necessary.
 
-### Mobile
+### Mobile app
 
 ### Variation 1
 
@@ -65,7 +70,7 @@ Describe the key interactions for this component.
 
 Help the designer and developer understand when to choose between any variations of this component.
 
-### Mobile
+### Mobile app
 
 Describe the key interactions for this component.
 

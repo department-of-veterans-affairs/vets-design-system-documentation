@@ -4,7 +4,9 @@ title: Tabs
 intro-text: "Tabs organize related content into separate, focused panels that users can easily switch between."
 github-title: va-tabs
 status: use-with-caution-available
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
+web: true
+mobile-app: false
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
 anchors:
   - anchor: Examples
   - anchor: Usage

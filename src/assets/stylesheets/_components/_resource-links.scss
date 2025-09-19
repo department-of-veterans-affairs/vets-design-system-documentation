@@ -61,4 +61,10 @@
     height: units(2);
     width: units(2);
   }
+
+  &__figma-group {
+    img {
+      margin-right: 0;
+    }
+  }
 }

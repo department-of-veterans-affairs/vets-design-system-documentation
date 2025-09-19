@@ -3,8 +3,10 @@ layout: component
 title: Footer
 permalink: /components/footer/
 intro-text: The footer provides consistent navigation to information that’s generally not part of a primary user journey. 
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=538-7198&mode=design&t=kPk3dlhnHSGw5X0f-0
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=538-7198&mode=design&t=kPk3dlhnHSGw5X0f-0
 status: dont-use-proposed
+web: true
+mobile-app: false
 sub-pages:
   - sub-page: Footer - Minimal
 anchors:
