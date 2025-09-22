@@ -1,11 +1,13 @@
 ---
 layout: component
 title: Snackbar
-intro-text: Snackbar is a mobile component that provides feedback regarding API interactions at the bottom of the screen.
+intro-text: Snackbar is a mobile app component that provides feedback regarding API interactions at the bottom of the screen.
 research-title: Snackbar
-figma-link: https://www.figma.com/design/rdLIEaC9rVwX70QbIGkMvG/VA-Mobile---Design-Tokens-Library?m=auto&node-id=2321-2925&t=IbOdMq31rx8WXOoc-1
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=250-14
 status: use-best-practice
-web-component: va-mobile__snackbar
+web-component: va-snackbar
+web: false
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -54,10 +56,7 @@ anchors:
 * "Undo" snackbar appears in Messages when moving a message to a folder.
 * "Try again" snackbar appears in Messages when a draft is not saved successfully.
 
-## Code usage
-
-<va-link-action href="https://design.va.gov/storybook/?path=/docs/va-mobile_snackbar--docs" text="View code usage documentation in Storybook" type="secondary"></va-link-action>
-
+{% include component-docs.html component_name=page.web-component %}
 
 ## Content considerations
 

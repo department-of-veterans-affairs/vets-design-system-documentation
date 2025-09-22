@@ -4,9 +4,11 @@ title: Alert
 permalink: /components/alert/
 intro-text: "Alerts keep users informed of important and sometimes time-sensitive changes."
 research-title: "Alert boxes"
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A145&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-alert
+web: true
+mobile-app: true
 sub-pages:
   - sub-page: Alert - Expandable
   - sub-page: Alert - Sign-in
@@ -54,7 +56,7 @@ Used to indicate success.
 
 {% include storybook-preview.html story="uswds-va-alert--error" link_text="va-alert error" height="220px" %}
 
-### Mobile
+### Mobile app
 
 #### Informational alert (aka default)
 
@@ -90,7 +92,7 @@ Used to indicate success.
 * Allow a user to dismiss an alert wherever appropriate.
 {% include a11y/dismissable-alerts.md component="alert" %}
 
-### Mobile
+### Mobile app
 
 #### Expandable
 
@@ -137,7 +139,7 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
 * **System maintenance on web.** Most [system messages]({{ site.baseurl }}/content-style-guide/error-messages/system) related to maintenance are handled by the [Banner - Maintenance]({{ site.baseurl }}/components/banner/maintenance) component.
 * **As the only content on a page.** An Alert should not be the only, or the majority of, content on a page. Reduce the length of the alert and include context in the content well of the page.
 
-##### Mobile only
+##### Mobile app only
 
 * **Use native components.** On the mobile app, always consider a native component before using an in-content Alert:
   * **Action Sheet.** When the user takes an action in which the system needs to clarify their intent, use an action sheet (for both iOS and Android) to offer the user a choice in how to proceed.
@@ -190,7 +192,7 @@ When the user is required to do something in response to an alert, let them know
 * The Info variation of the Slim alert can be placed between sections.
 * Save-in-progress success and error Slim alerts should be placed directly below the Back/Continue button pair. This placement allows for the page content to remain fixed in the same position when the alert updates dynamically.
 
-#### Mobile
+#### Mobile app
 
 ##### Standard Alert
 
@@ -203,7 +205,7 @@ When the user is required to do something in response to an alert, let them know
 * Use the standard Alert variation in most use cases and within static content pages. Slim alerts are not available in Drupal.
 * Use the Slim alert variation for immediate feedback within forms and applications. Slim alerts are most often displayed immediately after the user has taken an action, and can also be used for save-in-progress success and error messaging.
 
-#### Mobile
+#### Mobile app
 
 * Use standard alerts for most use cases.
 * Use expandable alerts when the information is not a response to user feedback.
