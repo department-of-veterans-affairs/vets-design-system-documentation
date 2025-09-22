@@ -54,7 +54,7 @@ anchors:
 * Begin the Action Link with a verb and always include the purpose and destination—if the destination leads to the VA website, add "on VA.gov" as the destination.
   * Try to use a brief, clear Action Link like "Submit your disability claim on VA.gov" or "Check COVID-19 symptoms on the CDC website".
 * Use only one Action Link and it should exist as its own line.
-  * In the rare case that two call-to-actions of equal hierarchy, it is permissible to use two.
+  * In the rare case that two call-to-actions of equal hierarchy exist, it is permissible to use two.
 * It is not necessary to use an Action Link for informational emails where there is no action for the reader to perform (e.g. a contact info update).
 * Avoid using “Click here,” since not all people are physically clicking Action Links.
 * Avoid using generic text like “Learn more” and “Read more” by themselves.
