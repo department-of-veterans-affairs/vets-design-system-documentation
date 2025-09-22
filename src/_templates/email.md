@@ -44,11 +44,11 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <p><strong>Mobile</strong></p>
-    <a href="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile"></a>
+    <a href="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 tablet:vads-u-padding-x--2">
     <p><strong>Desktop</strong></p>
-    <a href="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg" alt="email template for desktop"></a>
+    <a href="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg" alt="email template for desktop" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
 </div>
 
