@@ -73,7 +73,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/header.jpg" alt="va logo email header" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/email-header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-header.jpg" alt="va logo email header" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <p><strong>Header</strong></p>
