@@ -50,7 +50,7 @@ anchors:
 * Heading levels 2, 3, and 4 are also supported to chunk content, making it more accessible and easier to scan.
 
 ### Action Link
-* Action Links are serve as the primary way for a user to complete the primary call-to-action or find need-to-know information.
+* Action Links serve as the primary way for a user to complete the primary call-to-action or find need-to-know information.
 * Begin the Action Link with a verb and always include the purpose and destination—if the destination leads to the VA website, add "on VA.gov" as the destination.
   * Try to use a brief, clear Action Link like "Submit your disability claim on VA.gov" or "Check COVID-19 symptoms on the CDC website".
 * Use only one Action Link and it should exist as its own line.
