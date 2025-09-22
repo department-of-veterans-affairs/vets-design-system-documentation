@@ -71,9 +71,8 @@
   {% endfor %}
 
   {% comment %} Display completion cards above accordion {% endcomment %}
-  {% if (show_web_checklist == true and web_total_items != 0) or (show_mobile_app_checklist == true and
-  mobile_app_total_items
-  != 0) %}
+  {% assign show_completion_cards = (show_web_checklist == true and web_total_items != 0) or (show_mobile_app_checklist == true and mobile_app_total_items != 0) %}
+  {% if show_completion_cards %}
   <div class="vads-grid-row vads-u-margin-bottom--2">
     {% comment %} Show Web card if web platform is enabled and has items {% endcomment %}
     {% if show_web_checklist == true and web_total_items != 0 %}
