@@ -41,29 +41,17 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 ## Example
 <!-- Add styling -->
 
-<div class="vads-grid-container">
-  <div class="vads-grid-row">
-    <div class="vads-grid-col site-grid-example">
-      Mobile
-    </div>
-    <div class="vads-grid-col site-grid-example">
-      Desktop
-    </div>
+<div class="vads-grid-row tablet:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+    <p><strong>Mobile</strong></p>
+    <a href="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile"></a>
   </div>
-  <div class="vads-grid-row">
-    <div class="vads-grid-col site-grid-example">
-      <img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.png" alt="email template for mobile">
-    </div>
-    <div class="vads-grid-col site-grid-example">
-      <img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.png" alt="email template for desktop">
-    </div>
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 tablet:vads-u-padding-x--2">
+    <p><strong>Desktop</strong></p>
+    <a href="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg" alt="email template for desktop"></a>
   </div>
 </div>
 
-
-  <img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.png" alt="email template for mobile">
-
-<img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.png" alt="email template for desktop">
 
 ## Structure
 <!-- TBD -->
