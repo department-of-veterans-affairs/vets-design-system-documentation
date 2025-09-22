@@ -5,22 +5,42 @@ title: Email
 status: use-deployed
 intro-text: "The email template is used to communicate with Veterans through email."
 figma-link: https://www.figma.com/file/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates%2C-Patterns%2C-and-Forms?type=design&node-id=2607%3A31365&mode=design&t=0y4ua4v9DIeIvkhX-1
+link: VA Notify
 anchors:
   - anchor: Example
   - anchor: Guidance
 ---
 
-## Example
+## About
+Emails are primarily used for transactional emails such as submission confirmations, status changes, and account changes. They may also be used for informational messages.
 
-<img width="100%" src="{{site.baseurl}}/images/templates/email/email-template.png" alt="email template">
+This page documents the supported visual styles for email notifications along with guidelines on how to best use them within the template.
+
+Because of limited support by email clients for custom typefaces, typography within emails uses system fonts and may differ from the types styles defined in the design system. The text styles are the same on mobile. 
 
 ## Guidance
 
 ### When to use
-The email template is used to communicate with Veterans through email. This template is primarily used for transactional emails such as submission confirmations, status changes, and account changes. It may also be used for informational messages. The visual styles supported by email notifications are below along with guidelines for how to best use them within the
-template. 
+This email template is a supplementary tool that can be used to mockup emails in Figma before creating them in VA Notify. 
 
-When incorporating e-mail notifications into a VA.gov application, we recommend using [VA Notify](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify).
+### Content guidance
+For guidance on how content should be written, use the [Email Content and Style Guide](https://design.va.gov/content-style-guide/email-and-text-notifications)
+
+### Implementation guidance
+
+Emails that are sent from the VA are written and launched via VA Notify, a centralized email and SMS creation and
+management portal.
+
+VA Notify supports a Self Service Portal where users can draft and preview emails using markdown. This Figma template serves as an additional tool to mockup emails.
+
+Learn more about how emails are done at the VA by visiting [notifications.va.gov](https://notifications.va.gov/) and  [VA Notify Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify).
+
+## Example
+
+<img width="100%" src="{{site.baseurl}}/images/templates/email/email-template.png" alt="email template">
+
+## Structure
+
 
 ### Header
 The header includes the VA logo with appropriate alt text. No changes should be made to the header to ensure consistency across emails sent by VA.
