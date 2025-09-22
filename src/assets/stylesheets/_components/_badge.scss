@@ -116,10 +116,6 @@ main {
   }
 }
 
-.site-component-badge-link--uswds:hover {
-  background-color: var(--vads-color-primary-alt);
-}
-
 // USA Label badge styles
 .usa-label {
   @include badge-base;
