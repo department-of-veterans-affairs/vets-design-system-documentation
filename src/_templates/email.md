@@ -55,8 +55,30 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 ## Structure
 <!-- TBD -->
+<div class="vads-grid-row tablet:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+    <a href="{{site.baseurl}}/images/templates/email/header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile" style="width: auto; height: auto; max-width: 100%;"></a>
+  </div>
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+    <p><strong>Header</strong></p>
+    <ul>
+    <li>The header includes the VA logo with appropriate alt text.</li>
+    <li>No changes should be made to the header to ensure consistency across emails sent by VA.</li>
+    <li> The header is responsive and has a breakpoint at 600px. Widths 600px and below have the VA seal centered in the header whereas at widths above 600px, the VA seal is left-aligned. Visit the Figma template to learn more.</li>
+</ul>
+  </div>
+</div>
 
-
-
-
-
+<div class="vads-grid-row tablet:vads-u-margin-x--neg2">
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+    <a href="{{site.baseurl}}/images/templates/email/header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile" style="width: auto; height: auto; max-width: 100%;"></a>
+  </div>
+  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+    <p><strong>Header</strong></p>
+    <ul>
+    <li>The header includes the VA logo with appropriate alt text.</li>
+    <li>No changes should be made to the header to ensure consistency across emails sent by VA.</li>
+    <li> The header is responsive and has a breakpoint at 600px. Widths 600px and below have the VA seal centered in the header whereas at widths above 600px, the VA seal is left-aligned. Visit the Figma template to learn more.</li>
+</ul>
+  </div>
+</div>
