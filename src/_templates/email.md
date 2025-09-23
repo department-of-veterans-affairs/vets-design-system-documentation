@@ -27,7 +27,7 @@ Because of limited support by email clients for custom typefaces, typography wit
 This email template is a supplementary tool that can be used to mockup emails in [Figma](https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1) before creating them in VA Notify. 
 
 ### Content guidance
-For guidance on how content should be written, use the [Email Content and Style Guide](https://design.va.gov/content-style-guide/email-and-text-notifications)
+For guidance on how content should be written, use the [Email Content and Style Guide](https://design.va.gov/content-style-guide/email-and-text-notifications).
 
 ### Implementation guidance
 
