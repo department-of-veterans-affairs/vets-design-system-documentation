@@ -42,7 +42,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 <!-- Add styling -->
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--3 tablet:vads-u-padding-x--2">
     <h4>Mobile</h4>
     <a href="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
@@ -57,11 +57,11 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 <!-- TBD -->
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/email-header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-header.jpg" alt="va logo email header" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Header</strong></p>
+    <h4>Header</h4>
     <ul>
     <li>The header includes the VA logo with appropriate alt text.</li>
     <li>No changes should be made to the header to ensure consistency across emails sent by VA.</li>
@@ -71,11 +71,11 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 </div>
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/heading.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/heading.jpg" alt="email heading" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Heading</strong></p>
+    <h4>Heading</h4>
     <ul>
     <li>The use of a Heading 1 as a heading is required to convey the purpose of the email and should repeat the subject line exactly or use a slightly more detailed version of the subject line.</li>
     <li>Use only one Heading 1 per email.</li>
@@ -85,7 +85,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 </div>
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/salutation.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/salutation.jpg" alt="email salutation" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
@@ -98,7 +98,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/body-content.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/body-content.jpg" alt="email body content" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
@@ -120,7 +120,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/closing.png"><img width="100%" src="{{site.baseurl}}/images/templates/email/closing.png" alt="blank closing" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
@@ -134,7 +134,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/contact-section.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/contact-section.jpg" alt="email contact section" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
@@ -149,7 +149,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 </div>
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--3 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/footer.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/footer.jpg" alt="email footer" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
