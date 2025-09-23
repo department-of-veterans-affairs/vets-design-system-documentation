@@ -84,7 +84,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 
 ### Divider
 
-* This is a horizontal line used to create visual separation between two sections--it signifies a change in topic.
+* This is a horizontal line used to create visual separation between two sections — it signifies a change in topic.
 * Avoid using dividers between short, individual items that are close in proximity.
 * Dividers precede the Contact section and the Footer.
 
