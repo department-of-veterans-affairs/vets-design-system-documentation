@@ -34,7 +34,7 @@ For guidance on how content should be written, use the [Email Content and Style 
 Emails that are sent from the VA are written and launched via VA Notify, a centralized email and SMS creation and
 management portal.
 
-VA Notify supports a Self Service Portal where users can draft and preview emails using markdown. This Figma template serves as an additional tool to mockup emails.
+VA Notify supports a Self Service Portal where users can draft and preview emails using markdown. This [Figma template](https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1) serves as an additional tool to mockup emails.
 
 Learn more about how emails are done at the VA by visiting [notifications.va.gov](https://notifications.va.gov/) and  [VA Notify Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify).
 
@@ -65,7 +65,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <ul>
     <li>The header includes the VA logo with appropriate alt text.</li>
     <li>No changes should be made to the header to ensure consistency across emails sent by VA.</li>
-    <li>The header is responsive and has a breakpoint at 600px. Widths 600px and below have the VA seal centered in the header whereas at widths above 600px, the VA seal is left-aligned. Visit the Figma template to learn more.</li>
+    <li>The header is responsive and has a breakpoint at 600px. Widths 600px and below have the VA seal centered in the header whereas at widths above 600px, the VA seal is left-aligned. [Visit the Figma template](https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1) to learn more.</li>
 </ul>
   </div>
 </div>
@@ -141,7 +141,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <p><strong>Contact Section</strong></p>
     <ul>
     <li>Include a contact section so users can reach out if they have questions.</li>
-    <li>By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit https://va.gov or call 800-827-1000 (TTY: 711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
+    <li>By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit [https://va.gov](https://va.gov) or call [800-827-1000](tel:+18008271000) (TTY: [711](tel:+711)). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
       <li>Contact details can be adjusted as needed.</li>
       <li>If the user is required or recommended to reach out to the VA in the body content, the contact section can be removed to reduce redundancy.</li>
 </ul>
@@ -153,11 +153,19 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <a href="{{site.baseurl}}/images/templates/email/footer.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/footer.jpg" alt="email footer" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Closing</strong></p>
+    <p><strong>Footer</strong></p>
     <ul>
-    <li>Use the footer to explain why we sent this email and tell people not to reply--modify the reason as necessary.</li>
+    <li>Use the footer to explain why we sent this email and tell people not to reply—modify the reason as necessary.</li>
     <li>Example: “You are receiving this email because you filed an application on VA.gov. Please do not reply to this email.”</li>
     <li>The footer is noted with the use of a divider above it.</li>
 </ul>
   </div>
 </div>
+
+### Formatting Key
+
+{% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
+{% include spacing-tokens.html 
+    spacing=spacing_semantic 
+    type="semantic"
+%}
