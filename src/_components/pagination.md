@@ -2,10 +2,12 @@
 layout: component
 title: Pagination
 status: use-deployed
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1047%3A3408&mode=design&t=VuR2cBxP21GQYVZc-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1047%3A3408&mode=design&t=VuR2cBxP21GQYVZc-1
 intro-text: "Pagination is navigation for paginated content."
 web-component: va-pagination
 uswds-v3: default
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples 
   - anchor: Usage
