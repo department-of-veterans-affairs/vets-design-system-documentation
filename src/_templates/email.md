@@ -33,7 +33,7 @@ For guidance on how content should be written, use the [Email Content and Style 
 
 Emails that are sent from the VA are written and launched via [VA Notify](https://notifications.va.gov/), a centralized email and SMS creation and management portal. VA Notify supports a Self Service Portal where users can draft and preview emails using markdown. 
 
-Visit the [VA Notify Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify) to get onboarded.
+To onboard to VA Notify, visit the [VA Notify Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify).
 
 ## Example
 
