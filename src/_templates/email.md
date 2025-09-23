@@ -141,7 +141,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <h4>Contact Section </h4>
     <ul>
     <li>Include a contact section so users can reach out if they have questions.</li>
-    <li>By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit <a href="https://va.gov">https://va.gov</a> or call <a href="tel:+18008271000">800-827-1000</a> (TTY:<a href="tel:+711">711</a>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
+    <li>By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit <a href="https://va.gov">https://va.gov</a> or call <a href="tel:+18008271000">800-827-1000</a> (TTY: <a href="tel:+711">711</a>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
       <li>Contact details can be adjusted as needed.</li>
       <li>If the user is required or recommended to reach out to the VA in the body content, the contact section can be removed to reduce redundancy.</li>
 </ul>
@@ -162,9 +162,80 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
   </div>
 </div>
 
-<!--
-### Formatting Key
 
+## Formatting Key
+
+In VA Notify, emails are created by writing text content and stylizing them with markdown. Below is the formatting key that you can preview to understand how it works.
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Syntax</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td># Heading 1</td>
+        <td>Row 1 Col 2</td>
+      </tr>
+      <tr>
+        <td>## Heading 2</td>
+        <td>Row 2 Col 2</td>
+      </tr>
+      <tr>
+        <td>### Heading 3</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+            <tr>
+        <td>**Bold**</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+            <tr>
+        <td>Body
+        <ul>
+        <li>Bulleted</li>
+        <li>List</li>
+        </td>
+        </ul>
+        <td>Row 3 Col 2</td>
+      </tr>
+      <tr>
+        <td>{{Personalization}}</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+      <tr>
+        <td>[Hyperlink](URL)</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+      <tr>
+        <td>>>[Action link](url)</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+      <tr>
+        <td>Horizontal Line
+        ***[3 asterisks]
+        Horizontal Line</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+            <tr>
+        <td>Horizontal Line
+        ***[3 asterisks]
+        Horizontal Line</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+      <tr>
+        <td>> Blockquote</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+      <td>>> Nested blockquote</td>
+        <td>Row 3 Col 2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--
 {% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
 {% include spacing-tokens.html 
     spacing=spacing_semantic 
