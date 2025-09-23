@@ -113,11 +113,13 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <li>Dividers</li>
     </ul>
     <li>For additional content guidance, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
+    <li>Don’t include a closing or sign the email as “VA.gov” or “VA”.</li>
+    <ul><li>Don’t say “Thank you for your service” in the closing or anywhere else in the email. Research has found that some Veterans may have negative feelings about this phrase.</li></ul>
 </ul>
   </div>
 </div>
 
-
+<!--
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/closing.png"><img width="100%" src="{{site.baseurl}}/images/templates/email/closing.png" alt="blank closing" style="width: auto; height: auto; max-width: 100%;"></a>
@@ -130,6 +132,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 </ul>
   </div>
 </div>
+-->
 
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
@@ -272,14 +275,11 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 -->
 
-<!-->
+<!--
 ## Formatting Key
 
 In VA Notify, emails are created by writing text content and stylizing them with markdown. Below is the formatting key that you can preview to understand how it works.
 
--->
-
-  <!--
 {% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
 {% include spacing-tokens.html 
     spacing=spacing_semantic 
