@@ -24,19 +24,16 @@ Because of limited support by email clients for custom typefaces, typography wit
 ## Guidance
 
 ### When to use
-This email template is a supplementary tool that can be used to mockup emails in Figma before creating them in VA Notify. 
+This email template is a supplementary tool that can be used to mockup emails in [Figma](https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1) before creating them in VA Notify. 
 
 ### Content guidance
 For guidance on how content should be written, use the [Email Content and Style Guide](https://design.va.gov/content-style-guide/email-and-text-notifications)
 
 ### Implementation guidance
 
-Emails that are sent from the VA are written and launched via VA Notify, a centralized email and SMS creation and
-management portal.
+Emails that are sent from the VA are written and launched via [VA Notify](https://notifications.va.gov/), a centralized email and SMS creation and management portal. VA Notify supports a Self Service Portal where users can draft and preview emails using markdown. 
 
-VA Notify supports a Self Service Portal where users can draft and preview emails using markdown. This [Figma template](https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1) serves as an additional tool to mockup emails.
-
-Learn more about how emails are done at the VA by visiting [notifications.va.gov](https://notifications.va.gov/) and  [VA Notify Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify).
+Visit the [VA Notify Github](https://github.com/department-of-veterans-affairs/va.gov-team/tree/master/products/va-notify) to get onboarded.
 
 ## Example
 
