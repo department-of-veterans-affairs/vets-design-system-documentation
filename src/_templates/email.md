@@ -43,11 +43,11 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Mobile</strong></p>
+    <h4>Mobile</h4>
     <a href="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 tablet:vads-u-padding-x--2">
-    <p><strong>Desktop</strong></p>
+    <h4>Desktop</h4>
     <a href="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg" alt="email template for desktop" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
 </div>
@@ -89,7 +89,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <a href="{{site.baseurl}}/images/templates/email/salutation.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/salutation.jpg" alt="email salutation" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Salutation</strong></p>
+    <h4>Salutation</h4>
     <ul>
     <li>Personalize the email with the Veteran’s first name in the salutation as “Dear ((first_name)),”—but never include both first and last name, because this counts as PII.</li>
 </ul>
@@ -102,7 +102,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <a href="{{site.baseurl}}/images/templates/email/body-content.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/body-content.jpg" alt="email body content" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Body Content</strong></p>
+    <h4>Body Content</h4>
     <ul>
     <li>The body content contains the details of your message.</li>
     <li>Within the body content, the following are supported:</li>
@@ -124,7 +124,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <a href="{{site.baseurl}}/images/templates/email/closing.png"><img width="100%" src="{{site.baseurl}}/images/templates/email/closing.png" alt="blank closing" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Closing</strong></p>
+    <h4>Closing</h4>
     <ul>
     <li>Don’t include a closing or sign the email as “VA.gov” or “VA”.</li>
     <li>Don’t say “Thank you for your service” in the closing or anywhere else in the email. Research has found that some Veterans may have negative feelings about this phrase.</li>
@@ -138,7 +138,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <a href="{{site.baseurl}}/images/templates/email/contact-section.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/contact-section.jpg" alt="email contact section" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Contact Section</strong></p>
+    <h4>Contact Section </h4>
     <ul>
     <li>Include a contact section so users can reach out if they have questions.</li>
     <li>By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit [https://va.gov](https://va.gov) or call [800-827-1000](tel:+18008271000) (TTY: [711](tel:+711)). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
@@ -153,7 +153,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <a href="{{site.baseurl}}/images/templates/email/footer.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/footer.jpg" alt="email footer" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <p><strong>Footer</strong></p>
+    <h4>Footer</h4>
     <ul>
     <li>Use the footer to explain why we sent this email and tell people not to reply—modify the reason as necessary.</li>
     <li>Example: “You are receiving this email because you filed an application on VA.gov. Please do not reply to this email.”</li>
@@ -163,6 +163,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 </div>
 
 ### Formatting Key
+<!-->
 
 {% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
 {% include spacing-tokens.html 
