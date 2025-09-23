@@ -56,7 +56,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/email-header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-header.jpg" alt="va logo email header" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/email-header.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-header.jpg" alt="va logo email header example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Header</h4>
@@ -71,21 +71,21 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/heading.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/heading.jpg" alt="email heading" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/heading.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/heading.jpg" alt="email heading example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Heading</h4>
     <ul>
     <li>The use of a Heading 1 as a heading is required to convey the purpose of the email and should repeat the subject line exactly or use a slightly more detailed version of the subject line.</li>
     <li>Use only one Heading 1 per email.</li>
-    <li>For additional content guidance on Headings, use the Email Content and Style Guide.</li>
+    <li>For additional content guidance on Headings, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
 </ul>
   </div>
 </div>
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/salutation.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/salutation.jpg" alt="email salutation" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/salutation.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/salutation.jpg" alt="email salutation example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Salutation</h4>
@@ -98,7 +98,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/body-content.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/body-content.jpg" alt="email body content" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/body-content.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/body-content.jpg" alt="email body content example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Body Content</h4>
@@ -112,7 +112,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
     <li>Action Links </li>
     <li>Dividers</li>
     </ul>
-    <li>Visit the Email Content and Style Guide for further usage guidance.</li>
+    <li>For additional content guidance, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
 </ul>
   </div>
 </div>
@@ -134,7 +134,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/contact-section.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/contact-section.jpg" alt="email contact section" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/contact-section.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/contact-section.jpg" alt="email contact section example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Contact Section </h4>
@@ -149,7 +149,7 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/footer.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/footer.jpg" alt="email footer" style="width: auto; height: auto; max-width: 100%;"></a>
+    <a href="{{site.baseurl}}/images/templates/email/footer.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/footer.jpg" alt="email footer example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Footer</h4>
@@ -272,77 +272,12 @@ Learn more about how emails are done at the VA by visiting [notifications.va.gov
 
 -->
 
+<!-->
 ## Formatting Key
 
 In VA Notify, emails are created by writing text content and stylizing them with markdown. Below is the formatting key that you can preview to understand how it works.
 
-
-  <table>
-    <thead>
-      <tr>
-        <th>Syntax</th>
-        <th>Result</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td># Heading 1</td>
-        <td>Row 1 Col 2</td>
-      </tr>
-      <tr>
-        <td>## Heading 2</td>
-        <td>Row 2 Col 2</td>
-      </tr>
-      <tr>
-        <td>### Heading 3</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-            <tr>
-        <td>**Bold**</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-            <tr>
-        <td>Body
-        <ul>
-        <li>Bulleted</li>
-        <li>List</li>
-        </td>
-        </ul>
-        <td>Row 3 Col 2</td>
-      </tr>
-      <tr>
-        <td>{{Personalization}}</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-      <tr>
-        <td>[Hyperlink](URL)</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-      <tr>
-        <td>>>[Action link](url)</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-      <tr>
-        <td>Horizontal Line
-        ***[3 asterisks]
-        Horizontal Line</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-            <tr>
-        <td>Horizontal Line
-        ***[3 asterisks]
-        Horizontal Line</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-      <tr>
-        <td>> Blockquote</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-      <td>>> Nested blockquote</td>
-        <td>Row 3 Col 2</td>
-      </tr>
-    </tbody>
-  </table>
+-->
 
   <!--
 {% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
@@ -351,67 +286,3 @@ In VA Notify, emails are created by writing text content and stylizing them with
     type="semantic"
 %}
 -->
-<aside id="email-formatting-key">
-  <div class="table__caption vads-u-font-weight--bold vads-u-font-size--h4">Formatting key</div>
-  <div class="table__wrapper">
-    <p id="email-format-key-summary" class="sr-only">
-      A table displaying email formatting guidance.
-      Column one has the formatting syntax and column
-      two shows the result of that syntax.
-    </p>
-    <div class="va-table__va-table-wrapper" data-controller="va-table" data-va-table-rows-value="[[&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p class=\&quot;__h1\&quot; aria-hidden=\&quot;true\&quot;&gt;# Heading 1&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Pound symbol followed by Heading 1&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p class=\&quot;__h1\&quot; aria-hidden=\&quot;true\&quot;&gt;Heading 1&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as Heading 1, a large heading.&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p class=\&quot;__h2\&quot; aria-hidden=\&quot;true\&quot;&gt;## Heading 2&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Two pound symbols followed by Heading 2&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p class=\&quot;__h2\&quot; aria-hidden=\&quot;true\&quot;&gt;Heading 2&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as Heading 2, a medium-sized heading&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p class=\&quot;__h3\&quot; aria-hidden=\&quot;true\&quot;&gt;### Heading 3&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Three pound symbols followed by Heading 3&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p class=\&quot;__h3\&quot; aria-hidden=\&quot;true\&quot;&gt;Heading 3&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as Heading 3, a smaller heading&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;**Bold**&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Two asterisks around Bold&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p class=\&quot;__bold\&quot; aria-hidden=\&quot;true\&quot;&gt;Bold&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as bold text&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;- Bulleted&lt;br&gt;- List&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Dash followed by text&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot;&gt;&lt;ul&gt;&lt;li&gt;Bulleted&lt;/li&gt;&lt;li&gt;List&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as a bulleted list&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;((Personalization))&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Double parentheses around Personalization&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;&lt;mark&gt;Personalization&lt;/mark&gt;&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as Personalization text in a yellow box&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;[Hyperlink](URL)&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Left bracket, Hyperlink, right bracket, left parenthesis, URL, right parenthesis&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;&lt;a href='http://URL' data-action='global#preventAction' tabindex='-1'&gt;Hyperlink&lt;/a&gt;&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as a hyperlink, linked to the specified URL&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;&amp;gt;&amp;gt;[Action link](URL)&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Two greater than signs, left bracket, action link, right bracket, left parenthesis, URL, right parenthesis&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;p aria-hidden=\&quot;true\&quot;&gt;&lt;i class='fa-chevron-circle-right vads-u-color--arrow-down vads-u-margin-right--1' aria-hidden='true'&gt;&lt;/i&gt;&lt;a href='http://URL' data-action='global#preventAction' class='vads-u-font-weight--bold' aria-hidden='true' tabindex='-1'&gt;Action Link&lt;/a&gt;&lt;/p&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as an action link, clickable to the specified URL&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot;&gt;&lt;div class='__context'&gt;Horizontal Line&lt;/div&gt;&lt;br&gt;***&lt;div class='__hint'&gt; [3 asterisks]&lt;/div&gt;&lt;br&gt;&lt;div class='__context'&gt;Horizontal Line&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Line break required before and after this line: three asterisks, no spaces (***)&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot;&gt;&lt;p class='__hr'&gt;Horizontal Line&lt;/p&gt;&lt;hr&gt;&lt;p class='__hr'&gt;Horizontal Line&lt;/p&gt;&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as a horizontal line&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot;&gt;&amp;gt; Blockquote&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Greater than symbol followed by text&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot; class=\&quot;__blockquote\&quot;&gt;Blockquote&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as blockquote&lt;/div&gt;&lt;/div&gt;&quot;], [&quot;&lt;div class=\&quot;syntax\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot;&gt;&amp;gt; &amp;gt; Nested line&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Two greater than symbols followed by text&lt;/div&gt;&lt;/div&gt;&quot;, &quot;&lt;div class=\&quot;result\&quot;&gt;&lt;div aria-hidden=\&quot;true\&quot; class=\&quot;__blockquote\&quot;&gt;&lt;div class=\&quot;nested\&quot;&gt;Nested line&lt;/div&gt;&lt;/div&gt;&lt;div class=\&quot;vads-u-visibility--screen-reader\&quot;&gt;Rendered as nested line within blockquote&lt;/div&gt;&lt;/div&gt;&quot;]]" data-va-table-page-size-value="15">
-  <va-table data-va-table-target="table" full-width="" stacked="true" table-type="borderless" aria-describedby="email-format-key-summary" aria-hidden="false" class="hydrated">
-    <va-table-row data-va-table-target="header" class="hydrated">
-        <span slot="va-table-slot-0">Syntax</span>
-        <span slot="va-table-slot-1">Result</span>
-    </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-2"><div class="syntax"><p class="__h1" aria-hidden="true"># Heading 1</p><div class="vads-u-visibility--screen-reader">Pound symbol followed by Heading 1</div></div></span>
-            <span slot="va-table-slot-3"><div class="result"><p class="__h1" aria-hidden="true">Heading 1</p><div class="vads-u-visibility--screen-reader">Rendered as Heading 1, a large heading.</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-4"><div class="syntax"><p class="__h2" aria-hidden="true">## Heading 2</p><div class="vads-u-visibility--screen-reader">Two pound symbols followed by Heading 2</div></div></span>
-            <span slot="va-table-slot-5"><div class="result"><p class="__h2" aria-hidden="true">Heading 2</p><div class="vads-u-visibility--screen-reader">Rendered as Heading 2, a medium-sized heading</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-6"><div class="syntax"><p class="__h3" aria-hidden="true">### Heading 3</p><div class="vads-u-visibility--screen-reader">Three pound symbols followed by Heading 3</div></div></span>
-            <span slot="va-table-slot-7"><div class="result"><p class="__h3" aria-hidden="true">Heading 3</p><div class="vads-u-visibility--screen-reader">Rendered as Heading 3, a smaller heading</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-8"><div class="syntax"><p aria-hidden="true">**Bold**</p><div class="vads-u-visibility--screen-reader">Two asterisks around Bold</div></div></span>
-            <span slot="va-table-slot-9"><div class="result"><p class="__bold" aria-hidden="true">Bold</p><div class="vads-u-visibility--screen-reader">Rendered as bold text</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-10"><div class="syntax"><p aria-hidden="true">- Bulleted<br>- List</p><div class="vads-u-visibility--screen-reader">Dash followed by text</div></div></span>
-            <span slot="va-table-slot-11"><div class="result"><div aria-hidden="true"><ul><li>Bulleted</li><li>List</li></ul></div><div class="vads-u-visibility--screen-reader">Rendered as a bulleted list</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-12"><div class="syntax"><p aria-hidden="true">((Personalization))</p><div class="vads-u-visibility--screen-reader">Double parentheses around Personalization</div></div></span>
-            <span slot="va-table-slot-13"><div class="result"><p aria-hidden="true"><mark>Personalization</mark></p><div class="vads-u-visibility--screen-reader">Rendered as Personalization text in a yellow box</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-14"><div class="syntax"><p aria-hidden="true">[Hyperlink](URL)</p><div class="vads-u-visibility--screen-reader">Left bracket, Hyperlink, right bracket, left parenthesis, URL, right parenthesis</div></div></span>
-            <span slot="va-table-slot-15"><div class="result"><p aria-hidden="true"><a href="http://URL" data-action="global#preventAction" tabindex="-1">Hyperlink</a></p><div class="vads-u-visibility--screen-reader">Rendered as a hyperlink, linked to the specified URL</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-16"><div class="syntax"><p aria-hidden="true">&gt;&gt;[Action link](URL)</p><div class="vads-u-visibility--screen-reader">Two greater than signs, left bracket, action link, right bracket, left parenthesis, URL, right parenthesis</div></div></span>
-            <span slot="va-table-slot-17"><div class="result"><p aria-hidden="true"><i class="fa-chevron-circle-right vads-u-color--arrow-down vads-u-margin-right--1" aria-hidden="true"></i><a href="http://URL" data-action="global#preventAction" class="vads-u-font-weight--bold" aria-hidden="true" tabindex="-1">Action Link</a></p><div class="vads-u-visibility--screen-reader">Rendered as an action link, clickable to the specified URL</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-18"><div class="syntax"><div aria-hidden="true"><div class="__context">Horizontal Line</div><br>***<div class="__hint"> [3 asterisks]</div><br><div class="__context">Horizontal Line</div></div><div class="vads-u-visibility--screen-reader">Line break required before and after this line: three asterisks, no spaces (***)</div></div></span>
-            <span slot="va-table-slot-19"><div class="result"><div aria-hidden="true"><p class="__hr">Horizontal Line</p><hr><p class="__hr">Horizontal Line</p></div><div class="vads-u-visibility--screen-reader">Rendered as a horizontal line</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-20"><div class="syntax"><div aria-hidden="true">&gt; Blockquote</div><div class="vads-u-visibility--screen-reader">Greater than symbol followed by text</div></div></span>
-            <span slot="va-table-slot-21"><div class="result"><div aria-hidden="true" class="__blockquote">Blockquote</div><div class="vads-u-visibility--screen-reader">Rendered as blockquote</div></div></span>
-      </va-table-row>
-      <va-table-row data-va-table-target="rows" class="hydrated">
-            <span slot="va-table-slot-22"><div class="syntax"><div aria-hidden="true">&gt; &gt; Nested line</div><div class="vads-u-visibility--screen-reader">Two greater than symbols followed by text</div></div></span>
-            <span slot="va-table-slot-23"><div class="result"><div aria-hidden="true" class="__blockquote"><div class="nested">Nested line</div></div><div class="vads-u-visibility--screen-reader">Rendered as nested line within blockquote</div></div></span>
-      </va-table-row>
-  <va-table-inner rows="12" cols="2" stacked="true" sortable="false" scrollable="false" striped="false" table-type="borderless" full-width="true" class="hydrated"><span slot="va-table-slot-0">Syntax</span><span slot="va-table-slot-1">Result</span><span slot="va-table-slot-2"><div class="syntax"><p class="__h1" aria-hidden="true"># Heading 1</p><div class="vads-u-visibility--screen-reader">Pound symbol followed by Heading 1</div></div></span><span slot="va-table-slot-3"><div class="result"><p class="__h1" aria-hidden="true">Heading 1</p><div class="vads-u-visibility--screen-reader">Rendered as Heading 1, a large heading.</div></div></span><span slot="va-table-slot-4"><div class="syntax"><p class="__h2" aria-hidden="true">## Heading 2</p><div class="vads-u-visibility--screen-reader">Two pound symbols followed by Heading 2</div></div></span><span slot="va-table-slot-5"><div class="result"><p class="__h2" aria-hidden="true">Heading 2</p><div class="vads-u-visibility--screen-reader">Rendered as Heading 2, a medium-sized heading</div></div></span><span slot="va-table-slot-6"><div class="syntax"><p class="__h3" aria-hidden="true">### Heading 3</p><div class="vads-u-visibility--screen-reader">Three pound symbols followed by Heading 3</div></div></span><span slot="va-table-slot-7"><div class="result"><p class="__h3" aria-hidden="true">Heading 3</p><div class="vads-u-visibility--screen-reader">Rendered as Heading 3, a smaller heading</div></div></span><span slot="va-table-slot-8"><div class="syntax"><p aria-hidden="true">**Bold**</p><div class="vads-u-visibility--screen-reader">Two asterisks around Bold</div></div></span><span slot="va-table-slot-9"><div class="result"><p class="__bold" aria-hidden="true">Bold</p><div class="vads-u-visibility--screen-reader">Rendered as bold text</div></div></span><span slot="va-table-slot-10"><div class="syntax"><p aria-hidden="true">- Bulleted<br>- List</p><div class="vads-u-visibility--screen-reader">Dash followed by text</div></div></span><span slot="va-table-slot-11"><div class="result"><div aria-hidden="true"><ul><li>Bulleted</li><li>List</li></ul></div><div class="vads-u-visibility--screen-reader">Rendered as a bulleted list</div></div></span><span slot="va-table-slot-12"><div class="syntax"><p aria-hidden="true">((Personalization))</p><div class="vads-u-visibility--screen-reader">Double parentheses around Personalization</div></div></span><span slot="va-table-slot-13"><div class="result"><p aria-hidden="true"><mark>Personalization</mark></p><div class="vads-u-visibility--screen-reader">Rendered as Personalization text in a yellow box</div></div></span><span slot="va-table-slot-14"><div class="syntax"><p aria-hidden="true">[Hyperlink](URL)</p><div class="vads-u-visibility--screen-reader">Left bracket, Hyperlink, right bracket, left parenthesis, URL, right parenthesis</div></div></span><span slot="va-table-slot-15"><div class="result"><p aria-hidden="true"><a href="http://URL" data-action="global#preventAction" tabindex="-1">Hyperlink</a></p><div class="vads-u-visibility--screen-reader">Rendered as a hyperlink, linked to the specified URL</div></div></span><span slot="va-table-slot-16"><div class="syntax"><p aria-hidden="true">&gt;&gt;[Action link](URL)</p><div class="vads-u-visibility--screen-reader">Two greater than signs, left bracket, action link, right bracket, left parenthesis, URL, right parenthesis</div></div></span><span slot="va-table-slot-17"><div class="result"><p aria-hidden="true"><i class="fa-chevron-circle-right vads-u-color--arrow-down vads-u-margin-right--1" aria-hidden="true"></i><a href="http://URL" data-action="global#preventAction" class="vads-u-font-weight--bold" aria-hidden="true" tabindex="-1">Action Link</a></p><div class="vads-u-visibility--screen-reader">Rendered as an action link, clickable to the specified URL</div></div></span><span slot="va-table-slot-18"><div class="syntax"><div aria-hidden="true"><div class="__context">Horizontal Line</div><br>***<div class="__hint"> [3 asterisks]</div><br><div class="__context">Horizontal Line</div></div><div class="vads-u-visibility--screen-reader">Line break required before and after this line: three asterisks, no spaces (***)</div></div></span><span slot="va-table-slot-19"><div class="result"><div aria-hidden="true"><p class="__hr">Horizontal Line</p><hr><p class="__hr">Horizontal Line</p></div><div class="vads-u-visibility--screen-reader">Rendered as a horizontal line</div></div></span><span slot="va-table-slot-20"><div class="syntax"><div aria-hidden="true">&gt; Blockquote</div><div class="vads-u-visibility--screen-reader">Greater than symbol followed by text</div></div></span><span slot="va-table-slot-21"><div class="result"><div aria-hidden="true" class="__blockquote">Blockquote</div><div class="vads-u-visibility--screen-reader">Rendered as blockquote</div></div></span><span slot="va-table-slot-22"><div class="syntax"><div aria-hidden="true">&gt; &gt; Nested line</div><div class="vads-u-visibility--screen-reader">Two greater than symbols followed by text</div></div></span><span slot="va-table-slot-23"><div class="result"><div aria-hidden="true" class="__blockquote"><div class="nested">Nested line</div></div><div class="vads-u-visibility--screen-reader">Rendered as nested line within blockquote</div></div></span></va-table-inner></va-table>
-
-</div>
-
-  </div>
-</aside>
