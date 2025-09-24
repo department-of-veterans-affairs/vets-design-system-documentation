@@ -40,12 +40,11 @@ anchors:
 #### Structure
 
 * Heading
-* Branch of service text input
+* Branch of service combobox input
 * Service start date input
 * Service end date input
 * Type of service text input (if applicable)
 * Character of service -- this can also be Character of discharge -- text input (if applicable)
-* ‘Add another service period’ secondary button
 
 ![pension-serviceperiods-1]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop.png)
 
