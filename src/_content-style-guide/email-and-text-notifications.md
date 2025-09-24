@@ -13,7 +13,7 @@ anchors:
 
 ### Follow our content style guide and existing patterns
 * Email and text notifications should use plain language and follow our VA style guide wherever possible. This includes addressing the recipient as “you” and using “we” to refer to VA. [Review our top 10 plain language standards](https://design.va.gov/content-style-guide/plain-language/#top-10-va-plain-language-standards)
-* For some types of emails, [VA Notify](https://notifications.va.gov/) has sample templates with plain language content that's ready to use. You'll just need to fill in any manual variables and adjust other content as needed. This includes the emails in the form submission status pattern. [Review the form submission status pattern](https://design.va.gov/patterns/help-users-to/stay-informed-of-their-application-status) 
+* For some types of emails, [VA Notify](https://notifications.va.gov/) has sample templates with plain language content that's ready to use. You'll just need to fill in any manual variables and adjust other content as needed. This includes the emails in the form submission status pattern. [Review the form submission status pattern](https://design.va.gov/patterns/help-users-to/stay-informed-of-their-application-status).
 
 ### Protect Veterans' personal information
 * Always get approval for new or updated notifications from a VA privacy officer. 
