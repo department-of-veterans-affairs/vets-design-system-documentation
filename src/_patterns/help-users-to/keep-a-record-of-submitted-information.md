@@ -36,7 +36,7 @@ The confirmation page provides a way for the user to 'Print this page', see thei
 
 {% include component-example.html alt="An example print preview of their form confirmation details" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-confirmation-status.png" width="75%" %}
 
-Note that breadcrumbs should be excluded from the print preview and final printout, and that the content takes up 100% of the print width.
+Note that breadcrumbs should be excluded from the print preview and final printout, and that the content fills 100% of the print width.
 
 ## How to design and build
 
