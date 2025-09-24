@@ -24,6 +24,7 @@ anchors:
 * **Service periods.** Follow this pattern whenever you need to ask for a Veteran's periods of service in the military. 
 * **Use the multiple response pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs to gather multiple pieces of information. Read more about the [multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
 * **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there.
+* **Service History data can be prefilled using the Veteran's profile may be innacurate.** Provide a way for users to make changes and upate prefilled information. Make it clear that any changes made to Service History data within forms will NOT be reflected back to the user's Profile. 
 
 ## Examples
 
