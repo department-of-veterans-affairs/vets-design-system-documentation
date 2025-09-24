@@ -53,8 +53,7 @@ anchors:
 * Action Links serve as the primary way for a user to complete the primary call-to-action or find need-to-know information.
 * Begin the Action Link with a verb and always include the purpose and destination—if the destination leads to the VA website, add "on VA.gov" as the destination.
   * Try to use a brief, clear Action Link like "Submit your disability claim on VA.gov" or "Check COVID-19 symptoms on the CDC website".
-* Use only one Action Link and it should exist as its own line.
-  * In the rare case that two call-to-actions of equal hierarchy exist, it is permissible to use two.
+* Use only one Action Link—it should exist as its own line.
 * It is not necessary to use an Action Link for informational emails where there is no action for the reader to perform (e.g. a contact info update).
 * Avoid using “Click here,” since not all people are physically clicking Action Links.
 * Avoid using generic text like “Learn more” and “Read more” by themselves.
@@ -67,8 +66,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 ### Links 
 
 * Links should be used for secondary purposes like navigating to additional resources (e.g. FAQ) or linking contact information.
-* Put each link on a separate line.
-* Aim to use no more than 3 links in each email
+* Use no more than 3 links in the body of an email, each on a separate line.
 * For additional guidance, [follow general VA style guidance for links](https://design.va.gov/content-style-guide/links).
 
 If you're using VA Notify, use the analytics link generator for UTM tracking.
