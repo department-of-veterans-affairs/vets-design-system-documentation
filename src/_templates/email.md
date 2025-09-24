@@ -11,8 +11,6 @@ anchors:
   - anchor: Example
   - anchor: Structure
 ---
-<!-- include VA Notify link -->
-<!-- include Email Content & Style Guide link -->
 
 ## About
 Emails are primarily used for transactional emails such as submission confirmations, status changes, and account changes. They may also be used for informational messages.
@@ -116,22 +114,6 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   </div>
 </div>
 
-<!--
-<div class="vads-grid-row tablet:vads-u-margin-x--neg2">
-  <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
-    <a href="{{site.baseurl}}/images/templates/email/closing.png"><img width="100%" src="{{site.baseurl}}/images/templates/email/closing.png" alt="blank closing" style="width: auto; height: auto; max-width: 100%;"></a>
-  </div>
-  <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <h4>Closing</h4>
-    <ul>
-    <li>Don’t include a closing or sign the email as “VA.gov” or “VA”.</li>
-    <li>Don’t say “Thank you for your service” in the closing or anywhere else in the email. Research has found that some Veterans may have negative feelings about this phrase.</li>
-</ul>
-  </div>
-</div>
--->
-
-
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
     <a href="{{site.baseurl}}/images/templates/email/contact-section.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/contact-section.jpg" alt="email contact section example" style="width: auto; height: auto; max-width: 100%;"></a>
@@ -161,14 +143,3 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   </div>
 </div>
 
-<!--
-## Formatting Key
-
-In VA Notify, emails are created by writing text content and stylizing them with markdown. Below is the formatting key that you can preview to understand how it works.
-
-{% assign spacing_semantic = site.data.tokens.vads-spacing-semantic %}
-{% include spacing-tokens.html 
-    spacing=spacing_semantic 
-    type="semantic"
-%}
--->
