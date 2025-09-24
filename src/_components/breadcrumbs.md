@@ -97,6 +97,10 @@ When a user starts a linear flow on the site (i.e. a form flow or task flow), th
   * Other CTAs on the page, such as the [Button group]({{ site.baseurl }}/components/button/button-group) component, can be used to navigate between pages of the flow.
 * When used with the new [Form Step - Minimal template]({{ site.baseurl }}/templates/forms/form-step-minimal), the breadcrumb is a [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link) throughout the form flow.
 
+### Exclude breadcrumbs from the final print of the confirmation page
+
+* In [2024, VFF/MY VA Form Status Research](https://github.com/department-of-veterans-affairs/VA.gov-team-forms/blob/main/Product/2024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research/Research/Research%20Findings%20for%202024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research%20Study.md) 5 of 12 participants indicated they would want to print a copy of their form submission. Breadcrumbs do not provide much value in the final printout so they should be excluded.
+
 {% include component-docs.html component_name=page.web-component %}
 
 ### Router link support
