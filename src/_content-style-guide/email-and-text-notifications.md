@@ -93,7 +93,6 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 * If the Blockquote displays information from an online form confirmation screen, make sure the data field labels (like "Date submitted") match between the Blockquote and the confirmation screen.
 * Avoid using bolded text as headings—the recommended heading for blockquotes is Heading level 4.
 * Action Links are supported within a blockquote.
-* Nested blockquotes are also supported within Blockquotes — this should be used rarely, only when secondary information needs to be quoted or referenced inside a primary callout (for example, showing an exact error message or policy excerpt inside highlighted instructions).
 
 ### Contact section
 
