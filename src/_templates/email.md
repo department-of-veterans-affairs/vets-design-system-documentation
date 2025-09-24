@@ -105,13 +105,14 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
     <li>The body content contains the details of your message.</li>
     <li>Within the body content, the following are supported:</li>
     <ul>
-    <li>Paragraph text, bold text, italicized text, links, and bulleted lists</li>
+    <li>Paragraph text, bold text, italicized text, and bulleted lists</li>
     <li>Headings level 2, 3, and 4</li>
-    <li>Blockquotes </li>
-    <li>Action Links </li>
+    <li>Blockquotes (no more than one) </li>
+    <li>Action Links (no more than one) </li>
+    <li>Links (no more than three) </li>
     <li>Dividers</li>
     </ul>
-    <li>For additional content guidance, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
+    <li>For additional content and usage guidance, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
     <li>Don’t include a closing or sign the email as “VA.gov” or “VA”.</li>
     <ul><li>Don’t say “Thank you for your service” in the closing or anywhere else in the email. Research has found that some Veterans may have negative feelings about this phrase.</li></ul>
 </ul>
