@@ -19,7 +19,7 @@ Emails are primarily used for transactional emails such as submission confirmati
 
 This page documents the supported visual styles for email notifications along with guidelines on how to best use them within the template.
 
-Because of limited support by email clients for custom typefaces, typography within emails uses system fonts and may differ from the types styles defined in the design system. The text styles are the same on mobile. 
+Because of limited support by email clients for custom typefaces, typography within emails uses system fonts and may differ from the type styles defined in the design system. The text styles are the same on mobile. 
 
 ## Guidance
 
