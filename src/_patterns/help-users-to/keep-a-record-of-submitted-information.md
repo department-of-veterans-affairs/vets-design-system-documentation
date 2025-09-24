@@ -28,7 +28,7 @@ The pattern must display the name of the form, the date of the submission, a con
 
 ### Confirmation page summary
 
-{% include component-example.html alt="An example confirmation page showing a printable copy of their form status, a downloadable PDF, and s task list" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page-status.png" width="75%" %}
+{% include component-example.html alt="An example confirmation page showing a printable copy of their form status, a downloadable PDF, and s task list" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page-status.png" width="100%" %}
 
 The confirmation page provides a way for the user to 'Print this page', see their submission status and download a copy of their submission PDF. There is also a task list displaying known next steps.
 
@@ -36,7 +36,7 @@ The confirmation page provides a way for the user to 'Print this page', see thei
 
 {% include component-example.html alt="An example print preview of their form confirmation details" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-confirmation-status.png" width="75%" %}
 
-Note that breadcrumbs should be excluded from the final printout, as they do not provide much value, and ensure that the print width of the content is 100% so that it expands the entirety of the page.
+Note that breadcrumbs should be excluded from the print preview and final printout, and that the content takes up 100% of the print width.
 
 ## How to design and build
 
