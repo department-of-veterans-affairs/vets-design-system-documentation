@@ -12,8 +12,6 @@ anchors:
   - anchor: Structure
 ---
 <!-- include VA Notify link -->
-<!-- include Email Content & Style Guide link -->
-
 ## About
 Emails are primarily used for transactional emails such as submission confirmations, status changes, and account changes. They may also be used for informational messages.
 
