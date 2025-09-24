@@ -247,7 +247,7 @@ Avoid requesting a new icon when:
   <li>
     <strong>Submit Your Icon Request</strong>: If you've identified an icon that meets your needs and aligns with VADS guidelines, you can propose its addition to the Design System using the link below:
     <p>
-      <va-link-action href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=DST-add-icon.md">Request a new addition to the Design System</va-link-action>
+      <va-link-action href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=DST-add-icon.md" text="Request a new addition to the Design System">Request a new addition to the Design System</va-link-action>
     </p>
     If your request is part of an experimental initiative, please link any related tickets to provide context and ensure visibility for the Design System team.
   </li>
