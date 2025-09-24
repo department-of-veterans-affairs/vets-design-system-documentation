@@ -28,7 +28,7 @@ The pattern must display the name of the form, the date of the submission, a con
 
 ### Confirmation page summary
 
-{% include component-example.html alt="An example confirmation page showing a printable copy of their form status, a downloadable PDF, and s task list" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page-status.png" width="100%" %}
+{% include component-example.html alt="An example confirmation page showing a printable copy of their form status, a downloadable PDF, and a task list" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page-status.png" width="100%" %}
 
 The confirmation page provides a way for the user to 'Print this page', see their submission status and download a copy of their submission PDF. There is also a task list displaying known next steps.
 
