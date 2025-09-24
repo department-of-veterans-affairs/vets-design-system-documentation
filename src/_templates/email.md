@@ -11,13 +11,17 @@ anchors:
   - anchor: Example
   - anchor: Structure
 ---
+<<<<<<< HEAD
 
+=======
+<!-- include VA Notify link -->
+>>>>>>> d5b98aa67af81aed48de7d788fc62e50b5e16501
 ## About
 Emails are primarily used for transactional emails such as submission confirmations, status changes, and account changes. They may also be used for informational messages.
 
 This page documents the supported visual styles for email notifications along with guidelines on how to best use them within the template.
 
-Because of limited support by email clients for custom typefaces, typography within emails uses system fonts and may differ from the types styles defined in the design system. The text styles are the same on mobile. 
+Because of limited support by email clients for custom typefaces, typography within emails uses system fonts and may differ from the type styles defined in the design system. The text styles are the same on mobile. 
 
 ## Guidance
 
