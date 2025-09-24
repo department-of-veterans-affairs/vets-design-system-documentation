@@ -32,6 +32,8 @@ The pattern must display the name of the form, the date of the submission, a con
 
 ### Print preview of confirmation page summary
 
+Note that breadcrumbs should be excluded from the final printout, as they do not provide much value, and ensure that the print width of the content is 100% so that it expands the entirety of the page.
+
 ![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-confirmation-status.png)
 
 ## How to design and build
