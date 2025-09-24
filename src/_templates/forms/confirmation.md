@@ -105,3 +105,7 @@ The following items have received the most clicks on the confirmation page
 - 27.03% of clicks - Check the status of your from on My VA
 
 The data continues to support our research findings that "The majority of participants expressed a desire to download a copy of their form submission (10 of 12), and 5 of 12 participants also indicated they would want to print a copy of their form submission."
+
+## Print Styling 
+
+When the confirmation page is printed out, ensure that the breadcrumbs are removed and that the content fills 100% of the print width.
