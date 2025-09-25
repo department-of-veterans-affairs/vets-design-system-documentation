@@ -59,7 +59,7 @@ anchors:
 * Avoid using generic text like “Learn more” and “Read more” by themselves.
   * **Like this:** Learn how to pay your copay bill on VA.gov
 * If necessary, Action Links can be used within a Blockquote.
-* Where relevant, [follow general VA style guidance for links](https://design.va.gov/content-style-guide/links).
+* Where relevant, [follow general VA content guidance for links](https://design.va.gov/content-style-guide/links).
 
 If you're using VA Notify, use the analytics link generator for UTM tracking.
 
@@ -67,7 +67,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 
 * Links should be used for secondary purposes like navigating to additional resources (e.g. FAQ) or linking contact information.
 * Use no more than 3 links in the body of an email.
-* For additional guidance, [follow general VA style guidance for links](https://design.va.gov/content-style-guide/links).
+* Where relevant, [follow general VA content guidance for links](https://design.va.gov/content-style-guide/links).
 
 If you're using VA Notify, use the analytics link generator for UTM tracking.
 
