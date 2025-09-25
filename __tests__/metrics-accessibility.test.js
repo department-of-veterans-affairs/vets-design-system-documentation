@@ -45,9 +45,14 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
 
   describe('🎯 Core Accessibility Features', () => {
     test('Dashboard has proper main landmark and heading structure', () => {
-      const main = document.querySelector('main[role="main"]');
+      // The main landmark is provided by the Jekyll default layout
+      const main = document.querySelector('main#main-content');
       expect(main).toBeTruthy();
-      expect(main).toHaveAttribute('aria-labelledby', 'main-heading');
+      
+      // The metrics dashboard content is now a div with proper labeling
+      const dashboardDiv = document.querySelector('.metrics-dashboard');
+      expect(dashboardDiv).toBeTruthy();
+      expect(dashboardDiv).toHaveAttribute('aria-labelledby', 'main-heading');
       
       const mainHeading = document.getElementById('main-heading');
       expect(mainHeading).toBeTruthy();
@@ -294,14 +299,14 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
   });
 
   describe('🎨 Visual and Interaction Accessibility', () => {
-    test('High contrast mode compatibility', () => {
-      // Test elements maintain accessibility attributes for high contrast
+    test('Elements have proper accessibility identifiers', () => {
+      // Test elements have semantic meaning or accessibility attributes
       const importantElements = document.querySelectorAll(
         '.chart-container, va-table, .metric-card, va-tab-item'
       );
       
       importantElements.forEach(element => {
-        // Should have roles or semantic meaning that work in high contrast
+        // Should have roles, semantic meaning, or accessibility identifiers
         const hasRole = element.getAttribute('role');
         const isSemanticElement = ['va-table', 'va-tab-item'].includes(element.tagName.toLowerCase());
         const hasAriaLabel = element.getAttribute('aria-label');
@@ -326,16 +331,14 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
 
   describe('🔧 Real-World Accessibility Validation', () => {
     test('Built site passes axe accessibility audit', async () => {
-      // Test only the metrics dashboard content to avoid Jekyll layout issues
-      const metricsMain = document.querySelector('main.metrics-dashboard');
-      expect(metricsMain).toBeTruthy();
+      // Test the metrics dashboard content div
+      const metricsDiv = document.querySelector('div.metrics-dashboard');
+      expect(metricsDiv).toBeTruthy();
       
-      const results = await axe(metricsMain, {
+      const results = await axe(metricsDiv, {
         rules: {
-          // Disable rules that conflict with VA web components or Jekyll layout
-          'aria-allowed-attr': { enabled: false },
-          'landmark-main-is-top-level': { enabled: false }, // Jekyll layout has nested main elements
-          'landmark-no-duplicate-main': { enabled: false }   // Jekyll layout creates duplicate mains
+          // Disable rules that conflict with VA web components
+          'aria-allowed-attr': { enabled: false }
         }
       });
       
@@ -345,7 +348,8 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
     test('Critical accessibility attributes are present in built HTML', () => {
       // These should be in the static HTML, not added by JavaScript
       const criticalElements = [
-        'main[role="main"][aria-labelledby]',
+        'main#main-content', // Main landmark from Jekyll layout
+        'div.metrics-dashboard[aria-labelledby]', // Metrics dashboard content
         'section[aria-labelledby]',
         'va-table[table-title]',
         '.chart-container[role="img"][aria-label][tabindex="0"]'
