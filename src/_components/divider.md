@@ -2,9 +2,11 @@
 layout: component
 title: Divider
 research-title: "Divider"
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=974%3A2775&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=974%3A2775&mode=design&t=jMcVWkPlFhZu3RTh-1
 intro-text: "Dividers are used sparingly to separate significant sections of content"
 status: use-best-practice
+web: true
+mobile-app: false
 ---
 
 ## Example
@@ -18,7 +20,7 @@ status: use-best-practice
 ### When to use divider
 
 - To signify a change in topic, content type, or expected interaction.
-- To create visual separation between chunks of content. Divider can help users distinguish between blocks of similar content at-a-glace.  
+- To create visual separation between chunks of content. Divider can help users distinguish between blocks of similar content at-a-glance.  
 
 ### When to consider something else
 

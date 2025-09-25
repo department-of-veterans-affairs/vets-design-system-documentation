@@ -6,9 +6,11 @@ title: Memorable date
 research-title: Memorable Date
 intro-text: "Three text fields are the easiest way for users to enter most dates."
 status: use-deployed
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A82038&mode=design&t=TiJHClaf3VQ6wU6B-1
 uswds-v3: default
 web-component: va-memorable-date
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -87,7 +89,8 @@ anchors:
 
 ### Hint text
 
-* Refer to the [hint text example](#extra-hint-text) above.
+*  During workflows where dates of life events, periods of service, and more, come in heavy multiples, the default hint text can be hidden using the `remove-date-hint` attribute.
+* For adding extra hint text, refer to the [hint text example](#extra-hint-text) above.
 
 <va-link-action
   href="{{ site.baseurl }}/components/form/label#hint-text"

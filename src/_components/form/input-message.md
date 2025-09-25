@@ -7,6 +7,8 @@ github-title: va-input-message
 intro-text: "Provides helpful, in-context information about an input, either before or immediately after a Veteran interacts with an input (e.g. on a form input that auto-saves)."
 status: dont-use-deprecated
 contributors: Liz Lantz (VSA Authenticated Experience Team)
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

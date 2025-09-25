@@ -6,6 +6,8 @@ title: Label
 intro-text: Labels associate a descriptive title with each form input used to collect information from the user.
 github-title: va-text-input
 status: use-best-practice
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
