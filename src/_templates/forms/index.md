@@ -155,9 +155,11 @@ Follow all of the content guidelines listed within the VA.gov content style guid
 
 In general, our online forms should not be framed as a 1:1 mapping of the paper form. 
 
-A legal memo addresses this situation:
+A legal memo from the Office of Management and Budget addresses this situation:
 
 > “As long as the underlying, approved form is not altered and the interactive materials essentially collect the same information, then OIRA considers these applications a nonsubstantive change to an already approved collection, and would encourage their development.”
+
+Source: [Office of Management and Budget [OMB] Memorandum M-16-17, 2016, p. 5, Section III (PDF)](https://obamawhitehouse.archives.gov/sites/default/files/omb/inforeg/pra_flexibilities_memo_7_22_16_finalI.pdf)
 
 You may need to get PRA approval or other kinds of approval if you are tweaking the form itself and/or adding fields.
 
