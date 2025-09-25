@@ -84,7 +84,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 
 * This is a horizontal line used to create visual separation between two sections, signifying a change in topic.
 * Avoid using dividers between short, individual items that are close in proximity.
-* Dividers must precede the Footer.
+* Dividers should be used to separate the Footer from the rest of the email content.
 
 ### Blockquote (formerly known as the Feature Card)
 
