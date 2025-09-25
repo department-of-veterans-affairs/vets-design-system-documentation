@@ -13,7 +13,7 @@ anchors:
 ---
 
 ## About
-Emails are primarily used for transactional emails such as submission confirmations, status changes, and account changes. They may also be used for informational messages.
+Email is primarily used for transactional messages such as submission confirmations, status changes, and account updates. It may also be used for informational purposes.
 
 This page documents the supported visual styles for email notifications along with guidelines on how to best use them within the template.
 
