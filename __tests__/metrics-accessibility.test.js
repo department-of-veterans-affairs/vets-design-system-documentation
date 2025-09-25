@@ -240,13 +240,36 @@ describe('Metrics Dashboard Accessibility Tests - Real Implementation', () => {
     });
 
     test('Tab order follows logical visual flow', () => {
-      // Test that focusable elements appear in reasonable tab order
-      const focusableElements = Array.from(document.querySelectorAll('[tabindex="0"]'));
-      const vaTabs = Array.from(document.querySelectorAll('va-tab-item'));
+      // Test that tab order follows graph-then-table pattern for each section
+      const vaTabsContainers = Array.from(document.querySelectorAll('va-tabs'));
+      expect(vaTabsContainers.length).toBe(4); // Should have 4 tab containers
       
-      // Combined focusable count should be reasonable
-      const totalFocusable = focusableElements.length + vaTabs.length;
-      expect(totalFocusable).toBeGreaterThanOrEqual(4); // At least chart containers
+      // Check each va-tabs container individually
+      vaTabsContainers.forEach((tabContainer, index) => {
+        const tabItems = Array.from(tabContainer.querySelectorAll('va-tab-item'));
+        expect(tabItems.length).toBe(2); // Should have graph and table tabs
+        
+        const graphTab = tabItems.find(tab => 
+          tab.getAttribute('button-text')?.toLowerCase().includes('graph') ||
+          tab.getAttribute('target-id')?.includes('graph')
+        );
+        const tableTab = tabItems.find(tab => 
+          tab.getAttribute('button-text')?.toLowerCase().includes('table') ||
+          tab.getAttribute('target-id')?.includes('table')
+        );
+        
+        expect(graphTab).toBeTruthy();
+        expect(tableTab).toBeTruthy();
+        
+        // Graph tab should come before table tab in DOM order within this container
+        const graphIndex = tabItems.indexOf(graphTab);
+        const tableIndex = tabItems.indexOf(tableTab);
+        expect(graphIndex).toBeLessThan(tableIndex);
+      });
+      
+      // Also verify chart containers are focusable in proper order
+      const chartContainers = Array.from(document.querySelectorAll('.chart-container[tabindex="0"]'));
+      expect(chartContainers.length).toBeGreaterThanOrEqual(4); // At least one per section
     });
 
     test('Keyboard navigation works with charts and tables', () => {
