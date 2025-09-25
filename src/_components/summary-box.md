@@ -6,7 +6,7 @@ redirect_from:
 title: "Summary box"
 aka: Featured content
 intro-text: "The summary box component helps Veterans quickly identify must-read information on a page. Use this component to highlight a small chunk of the most important information on a page, like eligibility criteria or coverage under a particular VA benefit."
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1192%3A4460&mode=design&t=vNilCSI60pQBiKkM-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1192%3A4460&mode=design&t=vNilCSI60pQBiKkM-1
 uswds-v3: default
 anchors:
   - anchor: Examples
@@ -16,6 +16,8 @@ anchors:
   - anchor: Content considerations
   - anchor: Accessibility considerations
 web-component: va-summary-box
+web: true
+mobile-app: false
 ---
 
 ## Examples

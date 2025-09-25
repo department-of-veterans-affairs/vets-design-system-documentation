@@ -2,9 +2,11 @@
 layout: component
 title: "Process list"
 intro-text: "The process list, also known as the subway map, is used in a static informational context to describe the process to apply for a benefit or to provide tracking information to a user where they are in a given process."
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A169&mode=design&t=J32RmU6Fjbjuh9bD-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A169&mode=design&t=J32RmU6Fjbjuh9bD-1
 uswds-v3: default
 web-component: va-process-list
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

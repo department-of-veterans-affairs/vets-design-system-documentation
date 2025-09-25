@@ -4,10 +4,12 @@ permalink: /components/button/button-segmented
 has-parent: /components/button/
 title: Button - Segmented
 aka: Segmented button, Segmented control
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=28629-138&t=3efQOtruhM1IdGDg-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=28629-138&t=3efQOtruhM1IdGDg-1
 research-link: Buttons
 intro-text: The button segmented component presents a set of 2-4 closely related options or filters in a compact, horizontal container. It allows users to switch between different views or sort/filter a single set of content. One option is always active.
 web-component: va-button-segmented
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -31,7 +33,7 @@ anchors:
 
 {% include storybook-preview.html story="va-button-segmented--selected-item" link_text="va-button-segmented--selected-item" %}
 
-### App
+### Mobile app
 
 #### 2 segments
 
@@ -82,7 +84,7 @@ A segmented control consists of a horizontal set of 2-4 segments, each of which 
 
 A Segmented Button is typically placed directly above the content it controls and modifies that content using client-side logic without a page reload.
 
-#### App
+#### Mobile app
 
 The component is often integrated into the top navigation bar (or just below it) and should not be placed in a bottom toolbar. It is static and does not scroll horizontally.
 
@@ -117,7 +119,7 @@ Ensuring the component is accessible is critical on all platforms.
 * **Navigation:** When you navigate to the first button and use the tab key to move forward and shift+tab to move back between the second or subsequent buttons. Use the tab key to exit the group and into other interactive elements.
 * **Consider target size.** We follow the WCAG 2.2 Target Size - Level AAA criteria which states: “The size of the target for pointer inputs is at least 44 by 44 CSS pixels.”
 
-### App
+### Mobile app
 
 For native mobile apps, the component must correctly report its properties to the operating system's accessibility services.
 

@@ -1,0 +1,28 @@
+{% comment %} Platform support badge for components {% endcomment %}
+
+{% comment %} Determine platform availability {% endcomment %}
+{% assign has_web = false %}
+{% assign has_mobile = false %}
+
+{% if page.web == true or page.web == nil %}
+  {% assign has_web = true %}
+{% endif %}
+
+{% if page.mobile-app == true %}
+  {% assign has_mobile = true %}
+{% endif %}
+
+{% comment %} Display combined platform badge {% endcomment %}
+{% if has_web and has_mobile %}
+<span class="usa-label usa-label--platform">
+  Web, Mobile app
+</span>
+{% elsif has_web %}
+<span class="usa-label usa-label--platform">
+  Web
+</span>
+{% elsif has_mobile %}
+<span class="usa-label usa-label--platform">
+  Mobile app
+</span>
+{% endif %}

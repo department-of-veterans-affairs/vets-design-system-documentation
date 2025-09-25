@@ -16,7 +16,7 @@
   {% assign code-link = page.code-link %}
 {% endif %}
 
-{% if github_component_name or research_component_name or page.figma-link %}
+{% if github_component_name or research_component_name or page.figma-link or page.figma-link-web or page.figma-link-mobile-app %}
 <nav aria-labelledby="component-resources" class="site-component-resources-links">
   <dl class="site-component-resources-links__list">
     <dt id="component-resources" role="heading" aria-level="2" class="site-component-resources-links__title">
@@ -42,11 +42,30 @@
       {% endif %}
     </dd>
     {% endif %}
+    {% comment %} Support legacy single figma-link field {% endcomment %}
     {% if page.figma-link %}
     <dd role="definition" class="site-component-resources-links__definition">
       <a class="site-component-resources-links__link" href="{{page.figma-link}}" target="_blank" rel="noopener noreferrer" title="View the visual design for this component (internal only)">
         <img aria-hidden="true" src="{{ site.baseurl }}/assets/img/figma-logo.svg" alt="Figma logo" role="img" class="site-component-resources-links__img">Figma
       </a>
+    </dd>
+    {% endif %}
+    {% comment %} Support separate web and mobile app Figma links with consolidated layout {% endcomment %}
+    {% if page.figma-link-web or page.figma-link-mobile-app %}
+    <dd role="definition" class="site-component-resources-links__definition">
+      <div class="site-component-resources-links__figma-group">
+        <img aria-hidden="true" src="{{ site.baseurl }}/assets/img/figma-logo.svg" alt="Figma logo" role="img" class="site-component-resources-links__img">
+        <span class="site-component-resources-links__figma-label">Figma -</span>
+        {% if page.figma-link-web %}
+        <a class="site-component-resources-links__figma-link" href="{{page.figma-link-web}}" target="_blank" rel="noopener noreferrer" title="View the web visual design for this component (internal only)">Web</a>
+        {% endif %}
+        {% if page.figma-link-web and page.figma-link-mobile-app %}
+        <span class="site-component-resources-links__figma-separator">,</span>
+        {% endif %}
+        {% if page.figma-link-mobile-app %}
+        <a class="site-component-resources-links__figma-link" href="{{page.figma-link-mobile-app}}" target="_blank" rel="noopener noreferrer" title="View the mobile app visual design for this component (internal only)">Mobile app</a>
+        {% endif %}
+      </div>
     </dd>
     {% endif %}
     {% if page.code-link %}
