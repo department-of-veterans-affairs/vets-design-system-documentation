@@ -91,7 +91,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 * Use the Blockquote component to display important details, like confirmation numbers or the date of an upcoming appointment.
 * Use only one Blockquote in each email.
 * If the Blockquote displays information from an online form confirmation screen, make sure the data field labels (like "Date submitted") match between the Blockquote and the confirmation screen.
-* Avoid using bolded text as headings—the recommended heading for blockquotes is Heading level 4.
+* Do not use bolded text for headings.
 * Action Links are supported within a blockquote.
 
 ### Contact section
