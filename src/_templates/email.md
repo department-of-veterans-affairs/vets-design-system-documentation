@@ -40,7 +40,7 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
     <h4>Mobile</h4>
     <a href="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-mobile.jpg" alt="email template for mobile" style="width: auto; height: auto; max-width: 100% ;"></a>
   </div>
-  <div class="vads-grid-col-18 tablet:vads-grid-col-6 tablet:vads-u-padding-x--2">
+  <div class="vads-grid-col-18 tablet:vads-grid-col-9 tablet:vads-u-padding-x--2">
     <h4>Desktop</h4>
     <a href="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/email-template-desktop.jpg" alt="email template for desktop" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
