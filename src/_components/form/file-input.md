@@ -114,6 +114,7 @@ Change the label to any H1 through H6 header size.
 ### Additional guidance for VA
 
 * **One file per input.** The file input supports uploading a single file multiple times, but does not support selecting multiple files at a single time. This component only supports one file upload at a time. The reason for this is some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app. Thus, the VA implementation of this component does not deviate from our [current pattern]({{ site.baseurl }}/patterns/ask-users-for/files#review) for handling multiple file uploads by prompting for each file with a new file input component.
+* **Slotted content considerations.** For multiple file uploads, break up a pattern that is asking for a number of additional inputs for a file upload so that it instead uses the [Multiple responses / List & Loop pattern]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses). This pattern reduces cognitive load for users and provides a better overall user experience.
 * **Files pattern guidance.** Follow the [files pattern guidance]({{ site.baseurl }}/patterns/ask-users-for/files) for how to include the file input in a form.
 
 ### How this component works
