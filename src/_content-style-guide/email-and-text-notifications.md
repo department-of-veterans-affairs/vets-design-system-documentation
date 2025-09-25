@@ -82,9 +82,9 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 
 ### Divider
 
-* This is a horizontal line used to create visual separation between two sections — it signifies a change in topic.
+* This is a horizontal line used to create visual separation between two sections, signifying a change in topic.
 * Avoid using dividers between short, individual items that are close in proximity.
-* Dividers precede the Contact section and the Footer.
+* Dividers must precede the Footer.
 
 ### Blockquote (formerly known as the Feature Card)
 
@@ -97,7 +97,7 @@ If you're using VA Notify, use the analytics link generator for UTM tracking.
 ### Contact section
 
 * Include a contact section so users can reach out if they have questions.
-* By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit [https://va.gov](https://va.gov) or call [800-827-1000](tel:800-827-1000) (TTY: [711](tel:711)). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.
+* By default, “Have questions?” heads the contact section with an appropriate heading level (2 or 3, typically) and is followed by “Visit [https://va.gov](https://va.gov) or call [800-827-1000](tel:800-827-1000) (TTY: [711](tel:711)). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content.
 * Contact details can be adjusted as needed.
 * If the user is required or recommended to reach out to the VA in the body content, the contact section can be removed to reduce redundancy.
 
