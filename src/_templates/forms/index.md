@@ -8,6 +8,7 @@ redirect_from:
 contributors: "Shawna Hein, Jonathan Nelson, Liz Lantz, Christian Valla, Becca Walsh, Chris Valarida, Peggy Gannon"
 status: use-deployed
 intro-text: "Common form structures and designs used on VA.gov"
+pagefind_weight: 50
 sub-pages:
   - sub-page: How to apply
   - sub-page: Introduction

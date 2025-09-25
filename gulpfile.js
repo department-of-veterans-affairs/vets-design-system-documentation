@@ -9,6 +9,7 @@ require( './config/gulp/json' );
 require( './config/gulp/storybook' );
 require( './config/gulp/icons' );
 require( './config/gulp/build' );
+require( './config/gulp/pagefind' );
 
 
 var gulp = require( 'gulp' );

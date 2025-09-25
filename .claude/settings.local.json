@@ -25,7 +25,11 @@
       "Bash(rake search:debug:*)",
       "Bash(rake:*)",
       "Bash(node:*)",
-      "Bash(yarn start:*)"
+      "Bash(yarn start:*)",
+      "Bash(yarn why:*)",
+      "Bash(yarn info:*)",
+      "Bash(ls:*)",
+      "Bash(npx gulp:*)"
     ],
     "deny": []
   }

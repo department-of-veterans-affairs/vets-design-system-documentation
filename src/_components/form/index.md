@@ -5,6 +5,7 @@ title: Form
 inner-title: Overview
 intro-text: "Form controls allow users to enter information."
 status: use-deployed
+pagefind_weight: 50
 sub-pages:
   - sub-page: Autosave
   - sub-page: Checkbox
