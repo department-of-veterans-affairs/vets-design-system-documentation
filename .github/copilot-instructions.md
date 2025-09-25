@@ -260,7 +260,7 @@ When reviewing pull requests that modify guidance content in the following paths
 - `src/_ia/**/*.md`
 - `src/_about/**/*.md`
 
-**You must perform a comprehensive content style guide review** following the detailed instructions in [.github/prompts/Guidance-follow-content-style-guide.prompt.md](prompts/Guidance-follow-content-style-guide.prompt.md).
+**You must perform a comprehensive content style guide review** following the detailed instructions in [.github/prompts/Guidance-follow-content-style-guide.prompt.md](.github/prompts/Guidance-follow-content-style-guide.prompt.md).
 
 This prompt file contains:
 - Critical YAML front matter protection guidelines
