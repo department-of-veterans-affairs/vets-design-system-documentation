@@ -24,7 +24,7 @@ anchors:
 * **Service periods.** Follow this pattern whenever you need to ask for a Veteran's periods of service in the military. 
 * **Use the multiple response pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs to gather multiple pieces of information. Read more about the [multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
 * **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there.
-* **Service History data can be prefilled using the Veteran's profile may be innacurate.** Provide a way for users to make changes and upate prefilled information. Make it clear that any changes made to Service History data within forms will NOT be reflected back to the user's Profile. 
+* **Service data can be prefilled using the same data on the Veteran's profile, but it may be innacurate.** Provide a way for users to make changes review and make changes for the form. Make it clear that any changes made to Service data within the form will NOT be reflected back to the user's Profile. 
 
 ## Examples
 
@@ -40,9 +40,10 @@ anchors:
 #### Structure
 
 * Heading
-* Branch of service combobox input
+* Branch of service combobox input. Use autocomplete to allow users to select a branch.
 * Service start date input
 * Service end date input
+
 * Type of service text input (if applicable)
 * Character of service -- this can also be Character of discharge -- text input (if applicable)
 
@@ -63,7 +64,6 @@ Follow this pattern whenever you need to ask a user if they served under another
 (If user selects yes)
   * Name form template
   * ‘Add another name’ secondary button
-* ‘Place of last or anticipated separation from service’ text input
 
 ![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.png)
 
@@ -73,9 +73,9 @@ Follow this pattern whenever you need to ask for a user’s Reserve or National 
 
 ### Structure - Reserves and National Guard Disability
 
+* Unit name text input
 * Obligation start date input
 * Obligation end date input
-* Unit name text input
 
 ![reserves and national guard disability form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-disability.png)
 
