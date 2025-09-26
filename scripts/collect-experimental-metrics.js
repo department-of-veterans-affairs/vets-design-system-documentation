@@ -14,6 +14,7 @@ const path = require('path');
 // Configuration
 const REPO = 'department-of-veterans-affairs/vets-design-system-documentation';
 const OUTPUT_FILE = path.join(__dirname, '..', 'src', 'assets', 'data', 'metrics', 'experimental-metrics.json');
+const JEKYLL_OUTPUT_FILE = path.join(__dirname, '..', 'src', '_data', 'metrics', 'experimental-metrics.json');
 
 /**
  * Execute a command and return the output
@@ -181,16 +182,25 @@ function main() {
     generated_at: new Date().toISOString()
   };
   
-  // Ensure output directory exists
+  // Ensure output directories exist
   const outputDir = path.dirname(OUTPUT_FILE);
+  const jekyllOutputDir = path.dirname(JEKYLL_OUTPUT_FILE);
+  
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
   }
   
-  // Write to file
+  if (!fs.existsSync(jekyllOutputDir)) {
+    fs.mkdirSync(jekyllOutputDir, { recursive: true });
+  }
+  
+  // Write to both locations
   try {
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(metricsData, null, 2));
+    const jsonOutput = JSON.stringify(metricsData, null, 2);
+    fs.writeFileSync(OUTPUT_FILE, jsonOutput);
+    fs.writeFileSync(JEKYLL_OUTPUT_FILE, jsonOutput);
     console.log(`✅ Experimental design metrics written to ${OUTPUT_FILE}`);
+    console.log(`✅ Experimental design metrics also written to ${JEKYLL_OUTPUT_FILE}`);
   } catch (error) {
     console.error('Error writing metrics file:', error.message);
     process.exit(1);
