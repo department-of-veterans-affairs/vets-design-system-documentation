@@ -3,9 +3,11 @@ layout: component
 title: "Loading indicator"
 intro-text: "A loading indicator provides a clue to ongoing activity when the site needs to load additional content."
 research-title: "Loading indicators"
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A161&mode=design&t=vNilCSI60pQBiKkM-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=35%3A161&mode=design&t=vNilCSI60pQBiKkM-1
 status: use-deployed
 web-component: va-loading-indicator
+web: true
+mobile-app: true
 ---
 
 ## Example
@@ -14,7 +16,7 @@ web-component: va-loading-indicator
 
 {% include storybook-preview.html height="150px" story="components-va-loading-indicator--default" link_text="va-loading-indicator" %}
 
-### Mobile
+### Mobile app
 
 {% include storybook-preview.html height="150px" story="loading-indicator--with-text" link_text="va_mobile__loading-indicator--with-text" is_mobile=true %}
 

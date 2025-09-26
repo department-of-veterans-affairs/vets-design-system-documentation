@@ -2,9 +2,11 @@
 layout: component
 title: Tag
 intro-text: A tag draws attention to new or important content.
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
 github-title: va-tag
 status: use-deployed
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

@@ -23,6 +23,10 @@ This document establishes a consistent approach to naming components in the VA D
 
 ### Names for components and templates
 
+Component, pattern, and template names should follow the VA content principles where possible, and should be consistent, clear, and user-focused.
+
+[Read the complete VA content principles]({{site.baseurl}}/content-style-guide/content-principles)
+
 Component names and template names should be short and succinct while still relaying necessary information to the user. While 1-2 words is ideal, there are exceptions, such as the [On This Page]({{site.baseurl}}/components/on-this-page) component, where longer names are necessary for clarity.
 
 If the component or template exists as a generic tool on the web (e.g., accordions), then the VADS component or template should share that name.
