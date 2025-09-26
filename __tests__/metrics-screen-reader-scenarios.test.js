@@ -40,8 +40,8 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
     document.documentElement.innerHTML = '';
   });
 
-  describe('🔊 NVDA (Windows) Screen Reader Scenarios', () => {
-    test('User navigates page structure using headings (NVDA H key)', () => {
+  describe('🔊 NVDA (Windows) Screen Reader Compatibility', () => {
+    test('Heading structure supports NVDA heading navigation (H key)', () => {
       const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
       expect(headings.length).toBeGreaterThan(5);
       
@@ -64,14 +64,13 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       });
     });
 
-    test('User navigates landmarks using NVDA D key', () => {
+    test('Landmark structure supports NVDA landmark navigation (D key)', () => {
       const landmarks = document.querySelectorAll('main, section, nav, aside, header, footer');
       expect(landmarks.length).toBeGreaterThan(4);
       
-      // Main landmark should exist and be properly labeled
-      const main = document.querySelector('main[role="main"]');
+      // Main landmark should exist (from Jekyll layout)
+      const main = document.querySelector('main#main-content');
       expect(main).toBeTruthy();
-      expect(main).toHaveAttribute('aria-labelledby');
       
       // Sections should be properly labeled
       const sections = document.querySelectorAll('section[aria-labelledby]');
@@ -85,7 +84,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       });
     });
 
-    test('User explores charts using NVDA graphics mode', () => {
+    test('Chart structure supports NVDA graphics mode exploration', () => {
       const charts = document.querySelectorAll('.chart-container[role="img"]');
       expect(charts.length).toBe(4);
       
@@ -104,7 +103,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       });
     });
 
-    test('User accesses data tables with NVDA table navigation (Ctrl+Alt+arrows)', () => {
+    test('Table structure supports NVDA table navigation (Ctrl+Alt+arrows)', () => {
       const vaTables = document.querySelectorAll('va-table');
       expect(vaTables.length).toBe(4);
       
@@ -123,8 +122,8 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
     });
   });
 
-  describe('📢 JAWS (Windows) Screen Reader Scenarios', () => {
-    test('User navigates with JAWS heading list (Insert+F6)', () => {
+  describe('📢 JAWS (Windows) Screen Reader Compatibility', () => {
+    test('Heading structure supports JAWS heading list (Insert+F6)', () => {
       // JAWS creates a heading list - test heading structure
       const headings = Array.from(document.querySelectorAll('h1, h2, h3, h4, h5, h6'));
       
@@ -142,7 +141,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       }
     });
 
-    test('User explores forms list with JAWS (Insert+F5)', () => {
+    test('Interactive elements support JAWS forms list (Insert+F5)', () => {
       // Test that interactive elements are properly labeled for JAWS forms list
       const interactiveElements = document.querySelectorAll(
         'va-tab-item, [tabindex="0"]'
@@ -183,7 +182,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       });
     });
 
-    test('JAWS graphics mode provides detailed chart descriptions', () => {
+    test('Chart structure supports JAWS graphics mode descriptions', () => {
       const charts = document.querySelectorAll('.chart-container[role="img"]');
       
       charts.forEach(chart => {
@@ -204,8 +203,8 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
     });
   });
 
-  describe('🍎 VoiceOver (macOS) Screen Reader Scenarios', () => {
-    test('User navigates with VoiceOver rotor set to headings', () => {
+  describe('🍎 VoiceOver (macOS) Screen Reader Compatibility', () => {
+    test('Heading structure supports VoiceOver rotor heading navigation', () => {
       const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
       
       // VoiceOver rotor needs well-structured headings
@@ -221,7 +220,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       expect(uniqueLevels.size).toBeGreaterThanOrEqual(3); // h1, h2, h3 minimum
     });
 
-    test('User navigates with VoiceOver rotor set to landmarks', () => {
+    test('Landmark structure supports VoiceOver rotor landmark navigation', () => {
       const landmarks = document.querySelectorAll('[role], main, section, nav, header, footer');
       expect(landmarks.length).toBeGreaterThan(5);
       
@@ -260,7 +259,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       });
     });
 
-    test('VoiceOver chart exploration with VO+Shift+Space', () => {
+    test('Chart structure supports VoiceOver image exploration (VO+Shift+Space)', () => {
       const charts = document.querySelectorAll('.chart-container[role="img"]');
       
       charts.forEach(chart => {
@@ -277,7 +276,7 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
       });
     });
 
-    test('VoiceOver group navigation (VO+Shift+↑/↓) works with tab groups', () => {
+    test('Tab group structure supports VoiceOver group navigation (VO+Shift+↑/↓)', () => {
       const tabGroups = document.querySelectorAll('va-tabs');
       expect(tabGroups.length).toBe(4);
       
@@ -422,7 +421,8 @@ describe('Screen Reader Specific Usage Scenarios - Real Implementation', () => {
     test('JavaScript failures do not break screen reader access', () => {
       // Core accessibility should work without JavaScript
       const structuralElements = [
-        'main[role="main"]',
+        'main#main-content', // Main landmark from Jekyll layout
+        'div.metrics-dashboard[aria-labelledby]', // Metrics dashboard div
         'section[aria-labelledby]',
         'va-table[table-title]',
         '.chart-container[role="img"]',

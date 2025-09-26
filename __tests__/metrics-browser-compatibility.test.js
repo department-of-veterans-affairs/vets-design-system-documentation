@@ -43,11 +43,11 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
   describe('🌐 Cross-Browser DOM API Support', () => {
     test('Should handle querySelector and querySelectorAll consistently', () => {
       // Test fundamental DOM API compatibility with real built site
-      const metricsMain = document.querySelector('main.metrics-dashboard');
+      const metricsDiv = document.querySelector('div.metrics-dashboard');
       const allSections = document.querySelectorAll('section');
       const vaTabs = document.querySelectorAll('va-tabs');
       
-      expect(metricsMain).toBeTruthy();
+      expect(metricsDiv).toBeTruthy();
       expect(allSections.length).toBeGreaterThan(0);
       expect(vaTabs.length).toBe(4);
     });
@@ -227,8 +227,8 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
       // Test ARIA roles that are critical for screen readers using real elements
       const expectedRoles = [
         { selector: '[role="img"]', role: 'img', expectedCount: 4 },
-        { selector: '[role="tabpanel"]', role: 'tabpanel', expectedCount: 8 },
-        { selector: '[role="main"]', role: 'main', expectedCount: 1 }
+        { selector: '[role="tabpanel"]', role: 'tabpanel', expectedCount: 8 }
+        // Note: main role is now provided by Jekyll layout, not the metrics content itself
       ];
       
       expectedRoles.forEach(({ selector, role, expectedCount }) => {
@@ -441,7 +441,8 @@ describe('Metrics Dashboard Browser Compatibility Tests - Real Implementation', 
     test('Should handle browser differences gracefully', () => {
       // Test that core functionality works regardless of browser
       const mainStructuralElements = [
-        'main[role="main"]',
+        'main#main-content', // Main landmark from Jekyll layout
+        'div.metrics-dashboard[aria-labelledby]', // Metrics dashboard div
         'va-table[table-title]',
         '.chart-container[role="img"]',
         'va-tab-panel[role="tabpanel"]'

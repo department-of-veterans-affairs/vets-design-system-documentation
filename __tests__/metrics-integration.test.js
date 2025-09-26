@@ -64,10 +64,14 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     });
 
     test('Built site contains proper main landmark and section structure', () => {
-      const main = document.querySelector('main[role="main"]');
+      // Main landmark is provided by Jekyll default layout
+      const main = document.querySelector('main#main-content');
       expect(main).toBeTruthy();
-      expect(main).toHaveClass('metrics-dashboard');
-      expect(main).toHaveAttribute('aria-labelledby', 'main-heading');
+      
+      // Metrics dashboard content is now a div
+      const metricsDiv = document.querySelector('div.metrics-dashboard');
+      expect(metricsDiv).toBeTruthy();
+      expect(metricsDiv).toHaveAttribute('aria-labelledby', 'main-heading');
       
       const mainHeading = document.getElementById('main-heading');
       expect(mainHeading).toBeTruthy();
@@ -313,16 +317,14 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
 
   describe('🎯 Real-World Accessibility Validation', () => {
     test('Built site passes axe accessibility audit', async () => {
-      // Test only the metrics dashboard content to avoid Jekyll layout issues
-      const metricsMain = document.querySelector('main.metrics-dashboard');
-      expect(metricsMain).toBeTruthy();
+      // Test the metrics dashboard div content
+      const metricsDiv = document.querySelector('div.metrics-dashboard');
+      expect(metricsDiv).toBeTruthy();
       
-      const results = await axe(metricsMain, {
+      const results = await axe(metricsDiv, {
         rules: {
-          // Disable rules that conflict with VA web components or Jekyll layout
-          'aria-allowed-attr': { enabled: false },
-          'landmark-main-is-top-level': { enabled: false }, // Jekyll layout has nested main elements
-          'landmark-no-duplicate-main': { enabled: false }   // Jekyll layout creates duplicate mains
+          // Disable rules that conflict with VA web components
+          'aria-allowed-attr': { enabled: false }
         }
       });
       
@@ -332,7 +334,8 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     test('Built site maintains accessibility during error states', () => {
       // Test that core accessibility works without JavaScript functions
       const structuralElements = [
-        'main[role="main"]',
+        'main#main-content', // Main landmark from Jekyll layout
+        'div.metrics-dashboard[aria-labelledby]', // Metrics dashboard div
         'section[aria-labelledby]',
         'va-table[table-title]',
         '.chart-container[role="img"]',
@@ -409,7 +412,8 @@ describe('Metrics Dashboard - Real Implementation Integration Tests', () => {
     test('Built site critical accessibility attributes are present immediately', () => {
       // Test that accessibility attributes are in the HTML, not added by JavaScript
       const criticalElements = [
-        'main[aria-labelledby]',
+        'main#main-content', // Main landmark from Jekyll layout
+        'div.metrics-dashboard[aria-labelledby]', // Metrics dashboard div
         '.chart-container[role="img"]',
         'va-table[table-title]',
         'va-tab-panel[role="tabpanel"]'

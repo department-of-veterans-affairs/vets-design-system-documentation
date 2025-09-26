@@ -144,7 +144,6 @@ DEPENDENCIES
   bigdecimal
   csv
   jekyll (~> 4.3.0)
-  jekyll-feed (~> 0.6)
   jekyll-last-modified-at
   jekyll-redirect-from
   jekyll-sass-converter (~> 2.2.0)
