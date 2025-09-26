@@ -4,6 +4,18 @@
  * Based on requirements from issue #4788 for NVDA, JAWS, and VoiceOver compatibility
  */
 
+// 🔔 DISCLAIMER: These are proxy tests, not AT automation
+// This suite validates DOM structures that SRs *depend on*
+// but does not simulate NVDA, JAWS, or VoiceOver behavior.
+// Manual assistive technology testing is still required.
+// -------------------------------------------------------
+// eslint-disable-next-line no-console
+console.warn(
+  '\n⚠️ :warning: Accessibility Disclaimer:\n' +
+  'These tests are *structural proxies* for screen reader support.\n' +
+  'They do not run NVDA, JAWS, or VoiceOver. Manual AT validation is required.\n'
+);
+
 const fs = require('fs');
 const path = require('path');
 const { getByRole, getAllByRole, getByLabelText } = require('@testing-library/dom');

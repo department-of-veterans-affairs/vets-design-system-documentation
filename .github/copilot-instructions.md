@@ -129,6 +129,8 @@ yarn build
 
 Use the GitHub CLI (`gh`) for all GitHub-related operations:
 
+**IMPORTANT**: When using the `--json` flag with any GitHub CLI command, ALWAYS pipe the output to `cat` (e.g., `gh issue list --json number,title | cat`) to prevent the output from going to the less pager which cannot be read by Copilot.
+
 #### Issue Management
 ```bash
 # Create new issues
@@ -139,6 +141,9 @@ gh issue edit [issue-number] --title "New title" --body "Updated description"
 
 # List issues
 gh issue list --state open
+
+# List issues with JSON output (ALWAYS pipe to cat with --json flag)
+gh issue list --state open --json number,title,body --limit 100 | cat
 
 # Close issues
 gh issue close [issue-number]
