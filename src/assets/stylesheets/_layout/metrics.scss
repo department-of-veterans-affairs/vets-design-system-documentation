@@ -1,6 +1,11 @@
 // Metrics Dashboard Styles
 // Provides styling for the metrics dashboard page with proper VA Design System tokens
 
+// Breakpoint variables for consistency
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 480px;
+$chart-responsive-breakpoint: 600px;
+
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
 }
@@ -10,6 +15,68 @@
   padding: var(--vads-spacing-3);
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-sm);
+  
+  // va-tabs styling
+  va-tabs {
+    margin-top: var(--vads-spacing-2);
+    
+    // Style tables within tab panels
+    va-tab-panel {
+      padding: var(--vads-spacing-2) 0;
+      
+      table {
+        margin: var(--vads-spacing-2) 0;
+        width: 100%;
+        border-collapse: collapse;
+        
+        caption {
+          text-align: left;
+          font-weight: var(--font-weight-bold);
+          margin-bottom: var(--vads-spacing-1);
+          color: var(--vads-color-base-darkest);
+          padding: var(--vads-spacing-1) 0;
+        }
+        
+        th, td {
+          padding: var(--vads-spacing-1) var(--vads-spacing-2);
+          text-align: left;
+          border-bottom: 1px solid var(--vads-color-gray-lighter);
+          
+          &:focus {
+            outline: 2px solid var(--vads-color-primary-alt);
+            outline-offset: 1px;
+          }
+        }
+        
+        th {
+          background-color: var(--vads-color-gray-lightest);
+          font-weight: var(--font-weight-bold);
+          color: var(--vads-color-base-darkest);
+          
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+          }
+        }
+        
+        td {
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+          }
+          
+          // Empty state styling
+          &[colspan] {
+            text-align: center;
+            font-style: italic;
+            color: var(--vads-color-gray-dark);
+            padding: var(--vads-spacing-4);
+          }
+        }
+      }
+    }
+  }
 }
 
 .chart-container {
@@ -18,6 +85,48 @@
   background: var(--vads-color-gray-lightest);
   border-radius: var(--vads-radius-sm);
   position: relative;
+  
+  // Ensure charts have adequate space on mobile
+  @media (max-width: $tablet-breakpoint) {
+    height: 350px;
+    margin: var(--vads-spacing-3) 0;
+  }
+}
+
+// Table view specific styling
+.metrics-section va-table {
+  margin-top: var(--vads-spacing-2);
+  
+  // Ensure tables are responsive
+  overflow-x: auto;
+  
+  // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
+  @media (min-width: #{$tablet-breakpoint + 1}) {
+    va-table-row span {
+      padding: var(--vads-spacing-1) var(--vads-spacing-2);
+      text-align: left;
+      
+      // Numeric columns right-align on desktop only
+      &:nth-child(n+2) {
+        text-align: right;
+      }
+      
+      // Header row styling
+      va-table-row:first-child & {
+        font-weight: var(--font-weight-bold);
+        background-color: var(--vads-color-gray-lightest);
+        text-align: center;
+      }
+    }
+  }
+  
+  // Empty state styling
+  va-table-row span[colspan] {
+    text-align: center;
+    font-style: italic;
+    color: var(--vads-color-gray-dark);
+    padding: var(--vads-spacing-4);
+  }
 }
 
 .metrics-grid {
@@ -192,7 +301,7 @@
 }
 
 // Responsive design
-@media (max-width: 768px) {
+@media (max-width: $tablet-breakpoint) {
   .monthly-reports-grid {
     grid-template-columns: 1fr;
   }
@@ -200,5 +309,24 @@
   .report-modal-content {
     max-width: 95%;
     max-height: 95%;
+  }
+  
+  // Optimize tables for mobile
+  .metrics-section va-table {
+    font-size: var(--vads-font-size-body-small);
+    
+    va-table-row span {
+      padding: var(--vads-spacing-0p5) var(--vads-spacing-1);
+      word-break: break-word;
+    }
+  }
+  
+  // Stack tab labels vertically on very small screens
+  @media (max-width: $mobile-breakpoint) {
+    .metrics-section va-tabs {
+      va-tab-panel {
+        font-size: var(--vads-font-size-body-small);
+      }
+    }
   }
 }

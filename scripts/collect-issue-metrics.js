@@ -17,6 +17,8 @@ const { execSync } = require('child_process');
 const REPO = 'department-of-veterans-affairs/vets-design-system-documentation';
 const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'issue-metrics.json');
+const JEKYLL_DATA_DIR = path.join(__dirname, '../src/_data/metrics');
+const JEKYLL_OUTPUT_FILE = path.join(JEKYLL_DATA_DIR, 'issue-metrics.json');
 
 /**
  * Fetch all issues from GitHub API using gh CLI
@@ -398,10 +400,13 @@ async function main() {
       generated_at: new Date().toISOString()
     };
     
-    // Write to file
-    await fs.writeFile(OUTPUT_FILE, JSON.stringify(metricsData, null, 2));
+    // Write to both locations
+    const jsonOutput = JSON.stringify(metricsData, null, 2);
+    await fs.writeFile(OUTPUT_FILE, jsonOutput);
+    await fs.writeFile(JEKYLL_OUTPUT_FILE, jsonOutput);
     
     console.log(`✅ Metrics data written to ${OUTPUT_FILE}`);
+    console.log(`✅ Metrics data also written to ${JEKYLL_OUTPUT_FILE}`);
     console.log(`📊 Summary:`);
     console.log(`   - Open issues: ${summary.open_issues}`);
     console.log(`   - Closed this month: ${summary.closed_this_month}`);
