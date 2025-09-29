@@ -111,7 +111,7 @@ In some cases, you may need to add “or” to the beginning of the list item. F
 If you want to provide more information about potential errors in our decision, you can use 1 of these 2 options:
 
 -	**Request an informal conference with a VA reviewer.** Our decision may take longer if you choose this option.
--	**Or submit a written statement.** You must submit your statement with your completed VA Form 20-0996. You can send it by mail or submit it in person. We can’t accept written statements if you complete the online form.
+-	**Or submit a written statement.** You must submit your statement with your completed VA Form 20-0996. You can send your documents by mail or submit them in person. We can’t accept written statements if you complete the online form.
 
 </div>
 </div>
