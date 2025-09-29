@@ -82,6 +82,14 @@ We've updated the [File input]({{ site.baseurl }}/components/form/file-input) co
 ></va-link-action>
 </p>
 
+<p>
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/applications/ds-v3-playground/pages/VaFileInputMultiple.jsx"
+  text="Multifile input as a standalone component"
+  type="secondary"
+></va-link-action>
+</p>
+
 ### Forms library validation
 
 The forms-system validates every file before upload for:
