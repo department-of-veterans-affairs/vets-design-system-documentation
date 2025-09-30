@@ -54,7 +54,7 @@ anchors:
 
 Tab panels are used as a container for the content associated with the selected tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the tabs component. If a different spacing is required the default spacing can be overridden.
 
-{% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-Tabs-spacing.png" class="x2" %}
+{% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-Tabs-spacing.png" %}
 
 ## Behavior
 
@@ -71,7 +71,7 @@ Tab panels are used as a container for the content associated with the selected 
 
 #### Desktop view
 
-{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected." file="/images/components/tabs/Desktop-Tabs-legend.png" class="x2" %}
+{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected." file="/images/components/tabs/Desktop-Tabs-legend.png" %}
 
 #### Placement guidance
 <ol>
