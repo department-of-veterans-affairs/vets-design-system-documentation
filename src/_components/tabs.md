@@ -54,7 +54,7 @@ anchors:
 
 Tab panels are used as a container for the content associated with the selected tab. A 32px space between the tab panel and tabs is recommended for both desktop and mobile views. This is already included in the tabs component. If a different spacing is required the default spacing can be overridden.
 
-{% include component-example.html alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-ClaimStatus-Files.png" class="x2" %}
+{% include component-example.html width="600" alt="Desktop view: 32px margin being shown above and below the tabs." caption="Desktop view: 32px of space is recommended above and below the tabs." file="/images/components/tabs/Desktop-Tabs-spacing.png" %}
 
 ## Behavior
 
@@ -71,7 +71,7 @@ Tab panels are used as a container for the content associated with the selected 
 
 #### Desktop view
 
-{% include component-example.html alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected." file="/images/components/tabs/Desktop-ClaimStatus-Status.png" class="x2" %}
+{% include component-example.html width="600" alt="Claims Status Desktop View with Tabs" caption="Desktop view: Tabs in Claim Status example with first tab selected." file="/images/components/tabs/Desktop-Tabs-legend.png" %}
 
 #### Placement guidance
 <ol>
@@ -84,8 +84,8 @@ Tab panels are used as a container for the content associated with the selected 
 #### Mobile view
 
 <figure class="site-component-example">
-  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Status.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
-  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-ClaimStatus-Files.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-mockup-Tab1.png" alt="Mobile view: Tabs in Claim Status example with first tab selected and margin annotations." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
+  <img src="{{ site.baseurl }}/images/components/tabs/Mobile-mockup-Tab3.png" alt="Mobile view: Tabs in Claim Status example with second tab selected." class="site-component-example__image" style="max-width:256px; vertical-align: top;">
   <figcaption class="site-component-example__caption">Mobile views: Tabs shown in Claim Status tool.</figcaption>
 </figure>
 
