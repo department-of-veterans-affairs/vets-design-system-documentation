@@ -61,7 +61,6 @@ anchors:
 * If necessary, Action Links can be used within a Blockquote.
 * Where relevant, [follow general VA content guidance for links](https://design.va.gov/content-style-guide/links).
 
-If you're using VA Notify, use the analytics link generator for UTM tracking.
 
 ### Links 
 
