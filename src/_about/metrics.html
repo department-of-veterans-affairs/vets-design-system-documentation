@@ -4,125 +4,552 @@ title: Metrics Dashboard
 permalink: /about/metrics/
 ---
 
-<h1>Metrics Dashboard</h1>
+<div aria-labelledby="main-heading" class="metrics-dashboard">
+  <h1 id="main-heading">Metrics Dashboard</h1>
 
-<p>This dashboard provides insights into the health and adoption of the VA Design System. Metrics are updated weekly to track our progress toward key objectives.</p>
+  <p>This dashboard provides insights into the health and adoption of the VA Design System. Metrics are updated weekly to track our progress toward key objectives.</p>
 
-<div class="metrics-dashboard">
+  <!-- Summary Metrics Cards -->
+  <section aria-labelledby="summary-heading">
+    <h2 id="summary-heading">Summary Metrics</h2>
   
-  <h2>Summary Metrics</h2>
-  
-  <div class="metrics-grid">
-    <va-card class="metric-card">
-      <h4>Open Issues</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues">-</div>
-      <div class="metric-trend" id="open-issues-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Closed This Month</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month">-</div>
-      <div class="metric-trend" id="closed-month-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Average Resolution Time</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution">-</div>
-      <div class="metric-trend" id="avg-resolution-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Total Components</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components">-</div>
-      <div class="metric-trend" id="total-components-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Most Used Component</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component">-</div>
-      <div class="metric-trend" id="most-used-component-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-    
-    <va-card class="metric-card">
-      <h4>Total Component Usages</h4>
-      <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages">-</div>
-      <div class="metric-trend" id="total-usages-trend">
-        <!-- Trend indicator will be populated by JavaScript -->
-      </div>
-    </va-card>
-  </div>
-  
-  <h2>Issue Tracking Metrics</h2>
-  
-  <div class="metrics-section">
-    <h3>Issue Activity by Quarter</h3>
-    <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
-    <div id="quarterly-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
+    <div class="metrics-grid">
+      <va-card class="metric-card">
+        <h3 id="open-issues-label">Open Issues</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues" aria-labelledby="open-issues-label">
+          {% if site.data.metrics.issue-metrics.summary.open_issues %}
+            {{ site.data.metrics.issue-metrics.summary.open_issues }}
+          {% else %}
+            42
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="open-issues-trend" aria-label="Open issues trend indicator">
+          {% if site.data.metrics.issue-metrics.summary.open_issues_trend %}
+            {% assign trend = site.data.metrics.issue-metrics.summary.open_issues_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from last month</span>
+              </span>
+            {% endif %}
+          {% endif %}
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="closed-month-label">Closed This Month</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month" aria-labelledby="closed-month-label">
+          {% if site.data.metrics.issue-metrics.summary.closed_this_month %}
+            {{ site.data.metrics.issue-metrics.summary.closed_this_month }}
+          {% else %}
+            28
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="closed-month-trend" aria-label="Closed this month trend indicator">
+          {% if site.data.metrics.issue-metrics.summary.closed_month_trend %}
+            {% assign trend = site.data.metrics.issue-metrics.summary.closed_month_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from last month</span>
+              </span>
+            {% endif %}
+          {% endif %}
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="avg-resolution-label">Average Resolution Time</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution" aria-labelledby="avg-resolution-label">
+          {% if site.data.metrics.issue-metrics.summary.avg_resolution_days %}
+            {{ site.data.metrics.issue-metrics.summary.avg_resolution_days }} days
+          {% else %}
+            14 days
+          {% endif %}
+        </div>
+                <div class="metric-trend" id="avg-resolution-trend" aria-label="Average resolution time trend indicator">
+          {% if site.data.metrics.issue-metrics.summary.resolution_time_trend %}
+            {% assign trend = site.data.metrics.issue-metrics.summary.resolution_time_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from last month</span>
+              </span>
+            {% endif %}
+          {% endif %}
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="total-components-label">Total Components</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components" aria-labelledby="total-components-label">
+          {% if site.data.metrics.component-usage.summary_stats.total_components %}
+            {{ site.data.metrics.component-usage.summary_stats.total_components }}
+          {% else %}
+            95
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="total-components-trend" aria-label="Total components trend indicator">
+          {% if site.data.metrics.component-usage.summary_stats.components_trend %}
+            {% assign trend = site.data.metrics.component-usage.summary_stats.components_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from last month</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-up">
+              <span class="trend-icon">↗</span>
+              <span>5% compared to last month</span>
+            </span>
+          {% endif %}
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="most-used-component-label">Most Used Component</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component" aria-labelledby="most-used-component-label">
+          {% if site.data.metrics.component-usage.summary_stats.most_used %}
+            {{ site.data.metrics.component-usage.summary_stats.most_used }}
+          {% else %}
+            va-button
+          {% endif %}
+        </div>
+        <div class="metric-trend trend-neutral" id="most-used-component-trend" aria-label="Most used component trend indicator">
+          <span>Most popular this month</span>
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="total-usages-label">Total Component Usages</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages" aria-labelledby="total-usages-label">
+          {% if site.data.metrics.component-usage.summary_stats.total_usages %}
+            {{ site.data.metrics.component-usage.summary_stats.total_usages | number_with_delimiter }}
+          {% else %}
+            1,247
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="total-usages-trend" aria-label="Total component usages trend indicator">
+          {% if site.data.metrics.component-usage.summary_stats.usage_trend %}
+            {% assign trend = site.data.metrics.component-usage.summary_stats.usage_trend %}
+            {% if trend.direction == 'up' %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% elsif trend.direction == 'down' %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ trend.percentage }}% from last month</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from last month</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-up">
+              <span class="trend-icon">↗</span>
+              <span>23% compared to last month</span>
+            </span>
+          {% endif %}
+        </div>
+      </va-card>
     </div>
-  </div>
+  </section>
   
-  <h2>Component Usage Metrics</h2>
+  <!-- Issue Tracking Section -->
+  <section aria-labelledby="issue-tracking-heading">
+    <h2 id="issue-tracking-heading">Issue Tracking Metrics</h2>
+    
+    <div class="metrics-section">
+      <h3>Issue Activity by Quarter</h3>
+      <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
+      
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="quarterly-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="quarterly-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="quarterly-graph-panel" role="tabpanel">
+          <div id="quarterly-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Bar chart showing quarterly issue activity with issues opened versus issues closed by quarter"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="quarterly-table-panel" role="tabpanel">
+          <va-table id="quarterly-va-table"
+                    table-title="Issue Activity by Quarter: Number of issues opened and closed each quarter"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless">
+            <va-table-row slot="headers">
+              <span>Quarter</span>
+              <span>Issues Opened</span>
+              <span>Issues Closed</span>
+            </va-table-row>
+            {% if site.data.metrics.issue-metrics.quarterly %}
+              {% assign sorted_quarterly = site.data.metrics.issue-metrics.quarterly | sort: 'period' | reverse %}
+              {% for quarter in sorted_quarterly %}
+                {% assign quarter_parts = quarter.period | split: '-' %}
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
+                <va-table-row>
+                  <span>{{ formatted_quarter }}</span>
+                  <span>{{ quarter.issues_opened }}</span>
+                  <span>{{ quarter.issues_closed }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span colspan="3">No quarterly data currently available</span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
+    </div>
+  </section>
   
-  <div class="metrics-section">
-    <h3>Top Components by Usage</h3>
-    <p>Most frequently used design system components across all VA applications</p>
-    <div class="data-freshness" id="component-data-freshness">
-      <!-- Data freshness indicator will be populated by JavaScript -->
+  <!-- Component Usage Section -->
+  <section aria-labelledby="component-usage-heading">
+    <h2 id="component-usage-heading">Component Usage Metrics</h2>
+    
+    <div class="metrics-section">
+      <h3>Top Components by Usage</h3>
+      <p>Most frequently used design system components across all VA applications</p>
+      <div class="data-freshness" id="component-data-freshness">
+        {% if site.data.metrics.component-usage.data_source == 'component-library/ds-components' and site.data.metrics.component-usage.report_date %}
+          <small class="vads-u-color--gray-medium">
+            Data from {{ site.data.metrics.component-usage.report_date | date: "%B %-d, %Y" }}
+            {% if site.data.metrics.component-usage.summary_stats.applications_tracked %}
+              across {{ site.data.metrics.component-usage.summary_stats.applications_tracked }} VA applications
+            {% endif %}
+          </small>
+        {% elsif site.data.metrics.component-usage.data_source == 'fallback-data' %}
+          <small class="vads-u-color--warning-darker">⚠️ Using fallback data - latest data temporarily unavailable</small>
+        {% elsif site.data.metrics.component-usage.data_source == 'fallback-sample-data' %}
+          <small class="vads-u-color--gray-medium">Sample data for demonstration purposes</small>
+        {% else %}
+          <small class="vads-u-color--gray-medium">Data collection in progress</small>
+        {% endif %}
+      </div>
+      
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="components-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="components-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="components-graph-panel" role="tabpanel">
+          <div id="top-components-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Bar chart showing top 10 components by usage count across VA applications"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="components-table-panel" role="tabpanel">
+          <va-table id="components-va-table"
+                    table-title="Top Components by Usage: Top 25 most frequently used design system components"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1">
+            <va-table-row slot="headers">
+              <span>Component</span>
+              <span>Usage Count</span>
+            </va-table-row>
+            {% if site.data.metrics.component-usage.top_components_overall %}
+              {% assign top_components = site.data.metrics.component-usage.top_components_overall | slice: 0, 25 %}
+              {% for component in top_components %}
+                <va-table-row>
+                  <span>{{ component.name }}</span>
+                  <span>{{ component.usage_count | number_with_delimiter }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No data available</span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
     </div>
-    <div id="top-components-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
-    </div>
-  </div>
+  </section>
 
-  <h2>Monthly Analytics</h2>
-  
-  <div class="metrics-section">
-    <h3>Top 25 Pages</h3>
-    <p>The most visited pages of design.va.gov</p>
-    <div class="monthly-reports-static">
-      <div class="report-item">
-        <h4>August 2025</h4>
-        <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-08.png" target="_blank" />
+  <!-- Monthly Analytics Section -->
+  <section aria-labelledby="monthly-analytics-heading">
+    <h2 id="monthly-analytics-heading">Monthly Analytics</h2>
+    
+    <div class="metrics-section">
+      <h3>Top 25 Pages</h3>
+      <p>The most visited pages of design.va.gov</p>
+      <div class="monthly-reports-static">
+        <div class="report-item">
+          <h4>August 2025</h4>
+          <img src="{{ site.baseurl }}/assets/img/metrics/looker-report-2025-08.png" alt="Bar chart showing the top 25 most visited pages on design.va.gov for August 2025" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   
-  <h2>Contributions</h2>
-  
-  <div class="metrics-section">
-    <h3>Monthly new issues created</h3>
-    <p>Displays the rate of new issues opened per time period to track community engagement</p>
-    <div id="velocity-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
+  <!-- Contributions Section -->
+  <section aria-labelledby="contributions-heading">
+    <h2 id="contributions-heading">Contributions</h2>
+    
+    <div class="metrics-section">
+      <h3>Monthly new issues created</h3>
+      <p>Displays the rate of new issues opened per time period to track community engagement</p>
+      
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="velocity-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="velocity-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="velocity-graph-panel" role="tabpanel">
+          <div id="velocity-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Line chart showing monthly new issues created over time to track community engagement"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="velocity-table-panel" role="tabpanel">
+          <va-table id="velocity-va-table"
+                    table-title="Monthly New Issues Created: Number of new issues opened each month"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1">
+            <va-table-row slot="headers">
+              <span>Period</span>
+              <span>Issues Opened</span>
+            </va-table-row>
+            {% if site.data.metrics.issue-metrics.velocity %}
+              {% assign sorted_velocity = site.data.metrics.issue-metrics.velocity | sort: 'period' | reverse %}
+              {% for month in sorted_velocity %}
+                {% assign month_parts = month.period | split: '-' %}
+                {% assign month_names = 'January,February,March,April,May,June,July,August,September,October,November,December' | split: ',' %}
+                {% assign month_index = month_parts[1] | minus: 1 %}
+                {% assign formatted_month = month_names[month_index] | append: ' ' | append: month_parts[0] %}
+                <va-table-row>
+                  <span>{{ formatted_month }}</span>
+                  <span>{{ month.issues_opened }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No data available</span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
     </div>
-  </div>
   
-  <div class="metrics-section">
-    <h3>Experimental Design Issues by Quarter</h3>
-    <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
-    <div id="experimental-chart" class="chart-container">
-      <!-- Chart will be rendered here -->
+    <div class="metrics-section">
+      <h3>Experimental Design Issues by Quarter</h3>
+      <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
+      
+      <va-tabs>
+        <va-tab-item button-text="Graph" target-id="experimental-graph-panel"></va-tab-item>
+        <va-tab-item button-text="Table" target-id="experimental-table-panel"></va-tab-item>
+        
+        <va-tab-panel panel-id="experimental-graph-panel" role="tabpanel">
+          <div id="experimental-chart" 
+               class="chart-container"
+               role="img" 
+               aria-label="Bar chart showing experimental design issues opened, closed, and implemented by quarter"
+               tabindex="0">
+            <!-- Chart will be rendered here -->
+          </div>
+        </va-tab-panel>
+        
+        <va-tab-panel panel-id="experimental-table-panel" role="tabpanel">
+          <va-table id="experimental-va-table"
+                    table-title="Experimental Design Issues by Quarter: Issues opened, closed, and implemented each quarter"
+                    stacked="true"
+                    sortable="true"
+                    table-type="borderless"
+                    right-align-cols="1,2,3">
+            <va-table-row slot="headers">
+              <span>Quarter</span>
+              <span>Issues Opened</span>
+              <span>Issues Closed</span>
+              <span>Issues Implemented</span>
+            </va-table-row>
+            {% if site.data.metrics.issue-metrics.experimental_quarterly %}
+              {% assign sorted_experimental = site.data.metrics.issue-metrics.experimental_quarterly | sort: 'period' | reverse %}
+              {% for quarter in sorted_experimental %}
+                {% assign quarter_parts = quarter.period | split: '-' %}
+                {% assign formatted_quarter = quarter_parts[0] | append: ' ' | append: quarter_parts[1] %}
+                <va-table-row>
+                  <span>{{ formatted_quarter }}</span>
+                  <span>{{ quarter.issues_opened }}</span>
+                  <span>{{ quarter.issues_closed }}</span>
+                  <span>{{ quarter.issues_implemented | default: 0 }}</span>
+                </va-table-row>
+              {% endfor %}
+            {% else %}
+              <va-table-row>
+                <span>No experimental design data available yet</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </va-table-row>
+            {% endif %}
+          </va-table>
+        </va-tab-panel>
+      </va-tabs>
     </div>
-  </div>
-  
+  </section>
 </div>
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
 // Load metrics data and render charts
+// Chart configuration constants for consistency with CSS
+const CHART_RESPONSIVE_BREAKPOINT = 600;
+const CHART_MOBILE_BREAKPOINT = 400;
+const TOP_COMPONENTS_CHART_LIMIT = 10;
+
+// Metrics data manager using module pattern to encapsulate data
+const MetricsDataManager = (function() {
+  let issueData = null;
+  let componentData = null;
+  
+  return {
+    setData: function(newIssueData, newComponentData) {
+      // Validate input data before storing and rendering
+      if (!newIssueData || !newComponentData) {
+        console.error('MetricsDataManager: Data validation failed', { 
+          issueData: !!newIssueData, 
+          componentData: !!newComponentData,
+          issueDataType: typeof newIssueData,
+          componentDataType: typeof newComponentData
+        });
+        
+        this.displayDataError('Unable to load metrics data at this time. Please refresh the page or try again later.');
+        return;
+      }
+      
+      // Additional validation for required data structure
+      if (!this.validateDataStructure(newIssueData, newComponentData)) {
+        console.error('MetricsDataManager: Data structure validation failed');
+        this.displayDataError('Metrics data is in an unexpected format. Some charts may not display correctly.');
+        return;
+      }
+      
+      issueData = newIssueData;
+      componentData = newComponentData;
+    },
+    
+    validateDataStructure: function(issueData, componentData) {
+      // Check if issue data has required structure
+      if (!issueData.summary && !issueData.quarterly && !issueData.velocity) {
+        console.warn('Issue data missing expected structure');
+        return false;
+      }
+      
+      // Check if component data has required structure
+      if (!componentData.summary_stats && !componentData.top_components_overall) {
+        console.warn('Component data missing expected structure');
+        return false;
+      }
+      
+      return true;
+    },
+    
+    displayDataError: function(message) {
+      // Display a user-friendly message in the UI
+      var dashboard = document.querySelector('.metrics-dashboard');
+      if (dashboard && !dashboard.querySelector('.metrics-error')) {
+        var errorDiv = document.createElement('div');
+        errorDiv.className = 'metrics-error';
+        errorDiv.setAttribute('role', 'alert');
+        errorDiv.style.color = 'var(--vads-color-error-dark)';
+        errorDiv.style.backgroundColor = 'var(--vads-color-error-lightest)';
+        errorDiv.style.border = '1px solid var(--vads-color-error-light)';
+        errorDiv.style.borderRadius = 'var(--vads-radius-sm)';
+        errorDiv.style.padding = 'var(--vads-spacing-2)';
+        errorDiv.style.margin = '1em 0';
+        errorDiv.textContent = message;
+        dashboard.insertBefore(errorDiv, dashboard.firstChild);
+      }
+    },
+    
+    hasData: function() {
+      return issueData !== null && componentData !== null;
+    },
+    
+    getIssueData: function() {
+      return issueData;
+    },
+    
+    getComponentData: function() {
+      return componentData;
+    }
+  };
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
-  loadMetricsData();
+  
+  // Wait for va-tabs to be ready before rendering charts
+  setTimeout(() => {
+    loadMetricsData();
+  }, 100);
+  
+  // Set up tab change listeners to re-render charts when tabs become visible
+  setupTabChangeListeners();
   
   // Add responsive behavior
   window.addEventListener('resize', function() {
@@ -132,54 +559,117 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('top-components-chart').innerHTML = '';
     document.getElementById('experimental-chart').innerHTML = '';
     
-    // Re-fetch and render with new dimensions
-    loadMetricsData();
+    // Clear existing charts only - tables are pre-populated by Jekyll
+    
+    // Re-render with stored data
+    if (MetricsDataManager.hasData()) {
+      renderAllCharts(MetricsDataManager.getIssueData(), MetricsDataManager.getComponentData());
+    } else {
+      loadMetricsData();
+    }
   });
 });
 
+// Setup listeners for tab changes to render charts when they become visible
+function setupTabChangeListeners() {
+  
+  // Use MutationObserver to detect tab changes and render charts when needed
+  const vaTabs = document.querySelector('va-tabs');
+  if (vaTabs) {
+    const observer = new MutationObserver(() => {
+      if (MetricsDataManager.hasData()) {
+        renderVisibleChartsIfNeeded();
+      }
+    });
+    observer.observe(vaTabs, { attributes: true, childList: true, subtree: true });
+  }
+  
+  // Also listen for clicks on tab items to trigger re-rendering
+  document.addEventListener('click', function(event) {
+    if (event.target.tagName === 'VA-TAB-ITEM' || event.target.closest('va-tab-item')) {
+      setTimeout(() => {
+        if (MetricsDataManager.hasData()) {
+          renderVisibleChartsIfNeeded();
+        }
+      }, 50);
+    }
+  });
+}
+
+// Check if charts need rendering and render them if they're visible but empty
+function renderVisibleChartsIfNeeded() {
+  const chartContainers = [
+    { id: 'quarterly-chart', renderFunc: () => renderQuarterlyChart(MetricsDataManager.getIssueData().quarterly) },
+    { id: 'velocity-chart', renderFunc: () => renderVelocityChart(MetricsDataManager.getIssueData().velocity) },
+    { id: 'top-components-chart', renderFunc: () => renderTopComponentsChart(MetricsDataManager.getComponentData()) },
+    { id: 'experimental-chart', renderFunc: () => MetricsDataManager.getIssueData().experimental_quarterly && renderExperimentalChart(MetricsDataManager.getIssueData().experimental_quarterly) }
+  ];
+  
+  chartContainers.forEach(({ id, renderFunc }) => {
+    const container = document.getElementById(id);
+    if (container && isElementVisible(container) && !container.querySelector('svg') && !container.querySelector('.chart-placeholder')) {
+      renderFunc();
+    }
+  });
+}
+
+// Check if an element is visible (not in a hidden tab panel)
+function isElementVisible(element) {
+  const rect = element.getBoundingClientRect();
+  const hasSpace = rect.width > 0 && rect.height > 0;
+  const tabPanel = element.closest('va-tab-panel');
+  const isInActiveTab = !tabPanel || !tabPanel.hasAttribute('hidden');
+  return hasSpace && isInActiveTab;
+}
+
+// Render all charts with current data
+function renderAllCharts(issueData, componentData) {
+  
+  // Store data globally for later use
+  MetricsDataManager.setData(issueData, componentData);
+  
+  // Render issue tracking charts only - tables are pre-populated by Jekyll
+  renderQuarterlyChart(issueData.quarterly);
+  renderVelocityChart(issueData.velocity);
+  
+  // Render experimental design chart if data exists
+  if (issueData.experimental_quarterly) {
+    renderExperimentalChart(issueData.experimental_quarterly);
+  }
+  
+  // Render component usage charts
+  renderTopComponentsChart(componentData);
+  
+  // Progressive enhancement: Update any dynamic elements that need JavaScript
+  enhanceMetricCards(issueData.summary, componentData.summary_stats);
+}
+
 function loadMetricsData() {
-  console.log('loadMetricsData() called - starting data fetch');
   
   // Load issue metrics and component usage data
   Promise.all([
     fetch('{{ site.baseurl }}/assets/data/metrics/issue-metrics.json').then(response => {
-      console.log('issue-metrics.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Issue metrics not available');
       return response.json();
     }),
     fetch('{{ site.baseurl }}/assets/data/metrics/component-usage.json').then(response => {
-      console.log('component-usage.json response:', response.ok, response.status);
       if (!response.ok) throw new Error('Component usage not available');
       return response.json();
     })
   ])
   .then(([issueData, componentData]) => {
-    console.log('Data loaded successfully:', { issueData, componentData });
     
-    // Render issue tracking charts
-    renderQuarterlyChart(issueData.quarterly);
-    renderVelocityChart(issueData.velocity);
-    
-    // Render experimental design chart if data exists
-    if (issueData.experimental_quarterly) {
-      renderExperimentalChart(issueData.experimental_quarterly);
-    }
-    
-    // Render component usage charts
-    renderTopComponentsChart(componentData);
-    
-    // Update metric cards
-    updateMetricCards(issueData.summary, componentData.summary_stats);
+    // Use the new renderAllCharts function
+    renderAllCharts(issueData, componentData);
   })
   .catch(error => {
-    console.log('Data fetch failed, showing placeholders:', error.message);
     showPlaceholders();
   });
 }
 
 function showPlaceholders() {
-  console.log('showPlaceholders() called - adding sample trend data');
   
+  // Only show chart placeholders - tables and metric cards are pre-populated by Jekyll
   document.getElementById('quarterly-chart').innerHTML = 
     '<div class="chart-placeholder">Quarterly activity chart will be available once data collection is set up</div>';
   document.getElementById('velocity-chart').innerHTML = 
@@ -189,39 +679,20 @@ function showPlaceholders() {
   document.getElementById('top-components-chart').innerHTML = 
     '<div class="chart-placeholder">Top components chart will be available once data collection is set up</div>';
   
-  // Show sample data with trend indicators
-  document.getElementById('open-issues').textContent = '42';
-  document.getElementById('closed-month').textContent = '28';
-  document.getElementById('avg-resolution').textContent = '14 days';
-  document.getElementById('total-components').textContent = '95';
-  document.getElementById('most-used-component').textContent = 'va-button';
-  document.getElementById('total-usages').textContent = '1,247';
+}
+
+// Progressive enhancement function - only updates dynamic elements that need JavaScript
+function enhanceMetricCards(issueSummary, componentSummary) {
   
-  // Sample trend data to demonstrate the functionality
-  const sampleTrends = {
-    open_issues_trend: { direction: 'down', percentage: 12, value: -5 },
-    closed_month_trend: { direction: 'up', percentage: 35, value: 10 },
-    resolution_time_trend: { direction: 'down', percentage: 8, value: -1 },
-    components_trend: { direction: 'up', percentage: 5, value: 5 },
-    usage_trend: { direction: 'up', percentage: 23, value: 234 }
-  };
+  // Only update elements that couldn't be pre-populated by Jekyll or need dynamic updates
+  // Most content is now served by Jekyll Liquid templates, so this is minimal
   
-  console.log('Sample trends data:', sampleTrends);
+  // Update component data freshness if needed (though this is also handled by Liquid now)
+  if (componentSummary && componentSummary.data_source === 'component-library/ds-components') {
+    updateDataFreshness(componentSummary);
+  }
   
-  updateTrendIndicator('open-issues-trend', sampleTrends.open_issues_trend, 'compared to last month');
-  updateTrendIndicator('closed-month-trend', sampleTrends.closed_month_trend, 'compared to previous month');
-  updateTrendIndicator('avg-resolution-trend', sampleTrends.resolution_time_trend, 'compared to last quarter');
-  updateTrendIndicator('total-components-trend', sampleTrends.components_trend, 'compared to last quarter');
-  
-  // Most used component gets a special trend indicator
-  const mostUsedElement = document.getElementById('most-used-component-trend');
-  mostUsedElement.className = 'metric-trend trend-neutral';
-  mostUsedElement.innerHTML = '<span>Most popular this month</span>';
-  console.log('Set most used component trend:', mostUsedElement.innerHTML);
-  
-  updateTrendIndicator('total-usages-trend', sampleTrends.usage_trend, 'compared to last month');
-  
-  console.log('showPlaceholders() completed');
+  // Any other dynamic enhancements can be added here
 }
 
 function renderQuarterlyChart(data) {
@@ -236,13 +707,13 @@ function renderQuarterlyChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 60 : 80, 
-    bottom: containerWidth < 600 ? 50 : 60, 
-    left: containerWidth < 600 ? 50 : 60
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60, 
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
   
   const svg = d3.select('#quarterly-chart')
     .append('svg')
@@ -255,7 +726,7 @@ function renderQuarterlyChart(data) {
   // Format quarter labels
   const formatQuarter = (period) => {
     const [year, quarter] = period.split('-');
-    return `${quarter} ${year}`;
+    return `${year} ${quarter}`;
   };
   
   // Setup scales
@@ -278,8 +749,8 @@ function renderQuarterlyChart(data) {
     .domain(['opened', 'closed'])
     .range(['#0071bb', '#112e51']); // VA primary blue and dark blue
   
-  // Add axes
-  const tickInterval = containerWidth < 600 ? 4 : 2; // Show fewer labels on mobile
+  // Add axes with mobile-optimized spacing
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 8 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 6 : 2; // More aggressive spacing for mobile
   const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
     .map(d => d.period);
   
@@ -290,12 +761,13 @@ function renderQuarterlyChart(data) {
       .tickFormat(formatQuarter)
     );
     
-  // Rotate x-axis labels for better readability
+  // Rotate x-axis labels for better readability with mobile optimization
   xAxis.selectAll('text')
     .style('text-anchor', 'end')
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
-    .attr('transform', 'rotate(-45)');
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -368,13 +840,13 @@ function renderVelocityChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 20 : 30, 
-    bottom: containerWidth < 600 ? 80 : 70, // Extra space for rotated labels on mobile
-    left: containerWidth < 600 ? 50 : 60
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 20 : 30, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 80 : 70, // Extra space for rotated labels on mobile
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
   
   const svg = d3.select('#velocity-chart')
     .append('svg')
@@ -402,8 +874,8 @@ function renderVelocityChart(data) {
     .domain([0, d3.max(data, d => d.issues_opened)])
     .range([height, 0]);
   
-  // Add axes with custom formatting - responsive tick frequency
-  const tickInterval = containerWidth < 600 ? 12 : 6; // Show fewer labels on mobile
+  // Add axes with custom formatting - responsive tick frequency  
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 18 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 12 : 6; // More aggressive spacing for mobile
   const tickIndices = [];
   for (let i = 0; i < data.length; i += tickInterval) {
     tickIndices.push(i);
@@ -420,12 +892,13 @@ function renderVelocityChart(data) {
       .tickFormat(formatPeriod)
     );
     
-  // Rotate x-axis labels for better readability
+  // Rotate x-axis labels for better readability with mobile optimization
   xAxis.selectAll('text')
     .style('text-anchor', 'end')
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
-    .attr('transform', 'rotate(-45)');
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -469,13 +942,13 @@ function renderExperimentalChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 60 : 80, 
-    bottom: containerWidth < 600 ? 50 : 60, 
-    left: containerWidth < 600 ? 50 : 60
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60, 
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 50 : 60
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 300 : 400) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 300 : 400) - margin.top - margin.bottom;
   
   const svg = d3.select('#experimental-chart')
     .append('svg')
@@ -488,7 +961,7 @@ function renderExperimentalChart(data) {
   // Format quarter labels
   const formatQuarter = (period) => {
     const [year, quarter] = period.split('-');
-    return `${quarter} ${year}`;
+    return `${year} ${quarter}`;
   };
   
   // Setup scales
@@ -511,8 +984,8 @@ function renderExperimentalChart(data) {
     .domain(['opened', 'closed', 'implemented'])
     .range(['#f9c642', '#e59100', '#2e8540']); // VA gold/yellow for opened/closed, green for implemented
   
-  // Add axes
-  const tickInterval = containerWidth < 600 ? 4 : 2; // Show fewer labels on mobile
+  // Add axes with mobile-optimized spacing
+  const tickInterval = containerWidth < CHART_MOBILE_BREAKPOINT ? 8 : containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 6 : 2; // More aggressive spacing for mobile
   const tickValues = data.filter((d, i) => i % tickInterval === 0 || i === data.length - 1)
     .map(d => d.period);
   
@@ -523,12 +996,13 @@ function renderExperimentalChart(data) {
       .tickFormat(formatQuarter)
     );
     
-  // Rotate x-axis labels for better readability
+  // Rotate x-axis labels for better readability with mobile optimization
   xAxis.selectAll('text')
     .style('text-anchor', 'end')
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
-    .attr('transform', 'rotate(-45)');
+    .attr('transform', 'rotate(-45)')
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -637,13 +1111,13 @@ function renderTopComponentsChart(data) {
   // Responsive margins based on screen size
   const margin = {
     top: 20, 
-    right: containerWidth < 600 ? 30 : 40, 
-    bottom: containerWidth < 600 ? 120 : 100, 
-    left: containerWidth < 600 ? 60 : 80
+    right: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 30 : 40, 
+    bottom: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 120 : 100, 
+    left: containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 60 : 80
   };
   
   const width = containerWidth - margin.left - margin.right;
-  const height = (containerWidth < 600 ? 350 : 450) - margin.top - margin.bottom;
+  const height = (containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 350 : 450) - margin.top - margin.bottom;
   
   const svg = d3.select('#top-components-chart')
     .append('svg')
@@ -653,8 +1127,8 @@ function renderTopComponentsChart(data) {
   const g = svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
   
-  // Take top 10 components
-  const topComponents = data.top_components_overall.slice(0, 10);
+  // Take top components for chart display
+  const topComponents = data.top_components_overall.slice(0, TOP_COMPONENTS_CHART_LIMIT);
   
   // Setup scales
   const x = d3.scaleBand()
@@ -677,7 +1151,7 @@ function renderTopComponentsChart(data) {
     .attr('dx', '-.8em')
     .attr('dy', '.15em')
     .attr('transform', 'rotate(-45)')
-    .style('font-size', containerWidth < 600 ? '10px' : '12px');
+    .style('font-size', containerWidth < CHART_RESPONSIVE_BREAKPOINT ? 'var(--vads-font-size-body-small)' : 'var(--vads-font-size-body)');
     
   g.append('g')
     .call(d3.axisLeft(y));
@@ -730,57 +1204,13 @@ function formatComponentType(type) {
   return typeMap[type] || type;
 }
 
-function updateMetricCards(issueSummary, componentSummary) {
-  console.log('updateMetricCards called with:', { issueSummary, componentSummary });
-  
-  // Update issue metrics
-  if (issueSummary) {
-    document.getElementById('open-issues').textContent = issueSummary.open_issues || '-';
-    document.getElementById('closed-month').textContent = issueSummary.closed_this_month || '-';
-    document.getElementById('avg-resolution').textContent = issueSummary.avg_resolution_days ? 
-      `${issueSummary.avg_resolution_days} days` : '-';
-    
-    // Add trend indicators for issue metrics using real data
-    if (issueSummary.open_issues_trend) {
-      updateTrendIndicator('open-issues-trend', issueSummary.open_issues_trend, 'compared to last month');
-    }
-    if (issueSummary.closed_month_trend) {
-      updateTrendIndicator('closed-month-trend', issueSummary.closed_month_trend, 'compared to previous month');
-    }
-    if (issueSummary.resolution_time_trend) {
-      updateTrendIndicator('avg-resolution-trend', issueSummary.resolution_time_trend, 'compared to last quarter');
-    }
-  }
-  
-  // Update component metrics
-  if (componentSummary) {
-    document.getElementById('total-components').textContent = componentSummary.total_components || '-';
-    document.getElementById('most-used-component').textContent = componentSummary.most_used || '-';
-    document.getElementById('total-usages').textContent = componentSummary.total_usages || '-';
-    
-    // Add trend indicators for component metrics - use real data if available, otherwise sample data
-    const componentsTrend = componentSummary.components_trend || { direction: 'up', percentage: 5, value: 5 };
-    const usageTrend = componentSummary.usage_trend || { direction: 'up', percentage: 23, value: 234 };
-    
-    updateTrendIndicator('total-components-trend', componentsTrend, 'compared to last quarter');
-    updateTrendIndicator('total-usages-trend', usageTrend, 'compared to last month');
-    
-    // Most used component gets a special trend indicator
-    const mostUsedElement = document.getElementById('most-used-component-trend');
-    mostUsedElement.className = 'metric-trend trend-neutral';
-    mostUsedElement.innerHTML = '<span>Most popular this month</span>';
-    
-    // Update component data freshness indicator
-    updateDataFreshness(componentSummary);
-  }
-}
 
 function updateDataFreshness(componentSummary) {
   const freshnessElement = document.getElementById('component-data-freshness');
   if (!freshnessElement || !componentSummary) return;
   
   let freshnessText = '';
-  let cssClass = 'vads-u-color--gray-medium';
+  let cssClass = 'vads-u-color--gray';
   
   if (componentSummary.data_source === 'component-library/ds-components' && componentSummary.report_date) {
     // Fresh CSV data
@@ -811,48 +1241,15 @@ function updateDataFreshness(componentSummary) {
   } else if (componentSummary.data_source === 'fallback-sample-data') {
     // Clean fallback data
     freshnessText = 'Sample data for demonstration purposes';
-    cssClass = 'vads-u-color--gray-medium';
+    cssClass = 'vads-u-color--gray';
     
   } else {
     // Unknown or placeholder
     freshnessText = 'Data collection in progress';
-    cssClass = 'vads-u-color--gray-medium';
+    cssClass = 'vads-u-color--gray';
   }
   
   freshnessElement.innerHTML = `<small class="${cssClass}">${freshnessText}</small>`;
 }
 
-function updateTrendIndicator(elementId, trendData, timeframe) {
-  const element = document.getElementById(elementId);
-  if (!element || !trendData) {
-    return;
-  }
-  
-  const { direction, percentage, value } = trendData;
-  
-  let iconSymbol, trendClass, trendText;
-  
-  // Determine icon and styling based on trend direction and metric type
-  const isNegativeMetric = elementId.includes('resolution') || elementId.includes('open-issues');
-  
-  if (direction === 'up') {
-    iconSymbol = '↗';
-    trendClass = isNegativeMetric ? 'trend-down' : 'trend-up';
-    trendText = `${percentage}% ${timeframe}`;
-  } else if (direction === 'down') {
-    iconSymbol = '↘';
-    trendClass = isNegativeMetric ? 'trend-up' : 'trend-down';
-    trendText = `${percentage}% ${timeframe}`;
-  } else {
-    iconSymbol = '→';
-    trendClass = 'trend-neutral';
-    trendText = `No change ${timeframe}`;
-  }
-  
-  element.className = `metric-trend ${trendClass}`;
-  element.innerHTML = `
-    <span class="trend-icon">${iconSymbol}</span>
-    <span>${trendText}</span>
-  `;
-}
 </script>
