@@ -84,7 +84,7 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Salutation</h4>
     <ul>
-    <li>Personalize the email with the Veteran’s first name in the salutation as “Dear ((first_name)),”—but never include both first and last name, because this counts as PII.</li>
+    <li>Personalize the email with the Veteran’s first name in the salutation as “Dear ((first_name)),” —but never include both first and last name, because this counts as PII.</li>
 </ul>
   </div>
 </div>
