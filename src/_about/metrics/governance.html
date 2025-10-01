@@ -1,0 +1,218 @@
+---
+layout: default
+layout: documentation
+permalink: /about/metrics/governance/
+has-parent: /about/metrics/
+title: Governance Metrics
+---
+
+{% comment %}
+Assign current quarter data from the quarterly file based on governance index
+{% endcomment %}
+{% assign latest_quarter_data = site.data.metrics.governance-metrics-2025Q3 %}
+{% assign governance_index = site.data.metrics.governance-index %}
+
+<div aria-labelledby="main-heading" class="metrics-dashboard">
+  <h1 id="main-heading">Governance Metrics</h1>
+
+  <p>This dashboard tracks the effectiveness of the VA Design System governance process through Collaboration Cycle metrics. These metrics show how VFS teams engage with design system guidelines and the quality of our oversight.</p>
+
+  <!-- Summary Metrics Cards -->
+  <section aria-labelledby="summary-heading">
+    <h2 id="summary-heading">Latest Complete Quarter Summary 
+      {% if site.data.metrics.governance-index.latest_complete_quarter %}
+        ({{ site.data.metrics.governance-index.latest_complete_quarter }})
+      {% endif %}
+    </h2>
+  
+    <div class="metrics-grid">
+      <va-card class="metric-card">
+        <h3 id="touchpoints-held-label">Touchpoints Held</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="touchpoints-held" aria-labelledby="touchpoints-held-label">
+          {% if latest_quarter_data.data.touchpoints_held %}
+            {{ latest_quarter_data.data.touchpoints_held }}
+          {% else %}
+            25
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="touchpoints-held-trend" aria-label="Touchpoints held trend indicator">
+          <span class="metric-trend trend-neutral">
+            <span class="trend-icon">→</span>
+            <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
+          </span>
+        </div>
+      </va-card>
+      
+            <va-card class="metric-card">
+        <h3 id="products-shipped-label">Products Shipped</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="products-shipped" aria-labelledby="products-shipped-label">
+          {% if latest_quarter_data.data.products_shipped %}
+            {{ latest_quarter_data.data.products_shipped }}
+          {% else %}
+            8
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="products-shipped-trend" aria-label="Products shipped trend indicator">
+          <span class="metric-trend trend-neutral">
+            <span class="trend-icon">→</span>
+            <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
+          </span>
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="staging-issues-label">Staging Review Issues</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="staging-issues" aria-labelledby="staging-issues-label">
+          {% if latest_quarter_data.data.total_staging_issues %}
+            {{ latest_quarter_data.data.total_staging_issues }}
+          {% else %}
+            55
+          {% endif %}
+        </div>
+        <div class="metric-trend" id="staging-issues-trend" aria-label="Staging review issues trend indicator">
+          <span class="metric-trend trend-neutral">
+            <span class="trend-icon">→</span>
+            <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
+          </span>
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="launch-blocking-label">Launch-Blocking Issues</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="launch-blocking" aria-labelledby="launch-blocking-label">
+          {% if latest_quarter_data.data.launch_blocking_issues %}
+            {{ latest_quarter_data.data.launch_blocking_issues }}
+          {% else %}
+            7
+          {% endif %}
+        </div>
+        <div class="metric-trend trend-neutral" id="launch-blocking-trend" aria-label="Launch-blocking issues trend indicator">
+          <span>
+            {% if latest_quarter_data.data.launch_blocking_percentage %}
+              {{ latest_quarter_data.data.launch_blocking_percentage }}% of staging issues
+            {% else %}
+              16% of staging issues
+            {% endif %}
+          </span>
+        </div>
+      </va-card>
+      
+      <va-card class="metric-card">
+        <h3 id="participating-teams-label">Participating Teams</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="participating-teams" aria-labelledby="participating-teams-label">
+          {% if latest_quarter_data.participating_teams %}
+            {{ latest_quarter_data.participating_teams }}
+          {% else %}
+            8
+          {% endif %}
+        </div>
+        <div class="metric-trend trend-neutral" id="participating-teams-trend" aria-label="Participating teams trend indicator">
+          <span>Currently in collaboration cycle</span>
+        </div>
+      </va-card>
+    </div>
+  </section>
+  
+  <!-- Quarterly Governance Metrics Section -->
+  <section aria-labelledby="quarterly-governance-heading">
+    <h2 id="quarterly-governance-heading">Quarterly Governance Metrics</h2>
+    
+    <div class="metrics-section">
+      <h3>Collaboration Cycle Activity by Quarter</h3>
+      <p>Shows governance activity including touchpoints completed, products shipped, and staging review issue patterns over time</p>
+      
+      <va-table id="governance-quarterly-va-table"
+                table-title="Quarterly Governance Metrics: Collaboration Cycle activity and staging review patterns by quarter"
+                stacked="true"
+                sortable="true"
+                table-type="borderless"
+                right-align-cols="1,2,3,4,5">
+        <va-table-row slot="headers">
+          <span>Quarter</span>
+          <span>Touchpoints Held</span>
+          <span>Products Shipped</span>
+          <span>Staging Issues</span>
+          <span>Launch-Blocking Issues</span>
+          <span>Launch-Blocking %</span>
+        </va-table-row>
+        {% if latest_quarter_data.data %}
+          <va-table-row>
+            <span>{{ latest_quarter_data.data.period }}</span>
+            <span>{{ latest_quarter_data.data.touchpoints_held }}</span>
+            <span>{{ latest_quarter_data.data.products_shipped }}</span>
+            <span>{{ latest_quarter_data.data.total_staging_issues }}</span>
+            <span>{{ latest_quarter_data.data.launch_blocking_issues }}</span>
+            <span>{{ latest_quarter_data.data.launch_blocking_percentage }}%</span>
+          </va-table-row>
+        {% else %}
+          <va-table-row>
+            <span>2025-Q3</span>
+            <span>25</span>
+            <span>15</span>
+            <span>55</span>
+            <span>7</span>
+            <span>16%</span>
+          </va-table-row>
+          <va-table-row>
+            <span>2025-Q2</span>
+            <span>24</span>
+            <span>15</span>
+            <span>46</span>
+            <span>6</span>
+            <span>14%</span>
+          </va-table-row>
+          <va-table-row>
+            <span>2025-Q1</span>
+            <span>20</span>
+            <span>12</span>
+            <span>42</span>
+            <span>7</span>
+            <span>17%</span>
+          </va-table-row>
+          <va-table-row>
+            <span>2024-Q4</span>
+            <span>21</span>
+            <span>12</span>
+            <span>39</span>
+            <span>6</span>
+            <span>17%</span>
+          </va-table-row>
+        {% endif %}
+      </va-table>
+    </div>
+  </section>
+  
+  <!-- Data Source Information -->
+  <section aria-labelledby="data-source-heading">
+    <h2 id="data-source-heading">About This Data</h2>
+    
+    <div class="metrics-section">
+      <h3>Data Sources and Definitions</h3>
+      <p>This governance data is collected from the <a href="https://github.com/department-of-veterans-affairs/va.gov-team" target="_blank" rel="noopener noreferrer">va.gov-team repository</a> where VFS teams track their Collaboration Cycle participation.</p>
+      
+      <h4>Metric Definitions</h4>
+      <ul>
+        <li><strong>Touchpoints Held:</strong> Total collaboration cycle touchpoints conducted by the governance team (issues labeled with "governance-team" and touchpoint type labels that were created in the quarter)</li>
+        <li><strong>Participating Teams:</strong> VFS teams with open "collaboration-cycle" issues (currently in process)</li>
+        <li><strong>Products Shipped:</strong> Teams that completed Staging Review (issues with both "collaboration-cycle" and "staging-review" labels that are closed)</li>
+        <li><strong>Staging Issues:</strong> Total number of issues filed during Staging Review with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback"</li>
+        <li><strong>Launch-Blocking Issues:</strong> Staging Review issues that also have the "launch-blocking" label</li>
+        <li><strong>Launch-Blocking Percentage:</strong> The percentage of staging issues that are launch-blocking</li>
+      </ul>
+      
+      <div class="data-freshness" id="governance-data-freshness">
+        {% if latest_quarter_data.generated_at %}
+          <small class="vads-u-color--gray-medium">
+            Data last updated: {{ latest_quarter_data.generated_at | date: "%B %-d, %Y at %-I:%M %p" }} 
+            ({{ governance_index.latest_complete_quarter }})
+            {% if latest_quarter_data.data_source %}
+              | Source: {{ latest_quarter_data.data_source }}
+            {% endif %}
+          </small>
+        {% else %}
+          <small class="vads-u-color--gray-medium">Sample data for demonstration purposes</small>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</div>
