@@ -70,7 +70,7 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Heading</h4>
     <ul>
-    <li>The use of a Heading 1 as a heading is required to convey the purpose of the email and should repeat the subject line exactly or use a slightly more detailed version of the subject line.</li>
+    <li>A Heading 1 is required to convey the purpose of the email and should repeat the subject line exactly or use a slightly more detailed version of the subject line.</li>
     <li>Use only one Heading 1 per email.</li>
     <li>For additional content guidance on Headings, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
 </ul>
