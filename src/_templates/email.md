@@ -46,7 +46,6 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   </div>
 </div>
 
-
 ## Structure
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
@@ -56,10 +55,10 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Header</h4>
     <ul>
-    <li>The header includes the VA logo with appropriate alt text.</li>
-    <li>No changes should be made to the header to ensure consistency across emails sent by VA.</li>
-    <li>The header is responsive and has a breakpoint at 600px. Widths 600px and below have the VA seal centered in the header whereas at widths above 600px, the VA seal is left-aligned. Visit the <a href="https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1">Figma template </a>to learn more.</li>
-</ul>
+      <li>The header includes the VA logo with appropriate alt text.</li>
+      <li>No changes should be made to the header to ensure consistency across emails sent by VA.</li>
+      <li>The header is responsive and has a breakpoint at 600px. Widths 600px and below have the VA seal centered in the header, whereas at widths above 600px, the VA seal is left-aligned. Visit the <a href="https://www.figma.com/design/4A3O3mVx4xDAKfHE7fPF1U/VADS-Templates--Patterns--and-Forms?m=auto&node-id=2607-31365&t=95Gd3PqenVQEJIQx-1">Figma template</a> to learn more.</li>
+    </ul>
   </div>
 </div>
 
@@ -70,10 +69,10 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Heading</h4>
     <ul>
-    <li>A Heading 1 is required to convey the purpose of the email and should repeat the subject line exactly or use a slightly more detailed version of the subject line.</li>
-    <li>Use only one Heading 1 per email.</li>
-    <li>For additional content guidance on Headings, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
-</ul>
+      <li>A Heading 1 is required to convey the purpose of the email and should repeat the subject line exactly or use a slightly more detailed version.</li>
+      <li>Use only one Heading 1 per email.</li>
+      <li>For additional content guidance on headings, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
+    </ul>
   </div>
 </div>
 
@@ -84,11 +83,10 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Salutation</h4>
     <ul>
-    <li>Personalize the email with the Veteran’s first name in the salutation as “Dear ((first_name)),” —but never include both first and last name, because this counts as PII.</li>
-</ul>
+      <li>Personalize the email with the Veteran’s first name in the salutation as “Dear ((first_name)),” —but never include both first and last name, because this counts as PII.</li>
+    </ul>
   </div>
 </div>
-
 
 <div class="vads-grid-row tablet:vads-u-margin-x--neg2">
   <div class="vads-grid-col-8 tablet:vads-grid-col-4 vads-u-margin-top--4 tablet:vads-u-padding-x--2">
@@ -97,19 +95,21 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Body Content</h4>
     <ul>
-    <li>The body content contains the details of your message.</li>
-    <li>Within the body content, the following are supported:</li>
-    <ul>
-    <li>Paragraph text, bold text, italicized text, and bulleted lists</li>
-    <li>Headings level 2, 3, and 4</li>
-    <li>Blockquotes (no more than one) </li>
-    <li>Action Links (no more than one) </li>
-    <li>Links (no more than three) </li>
-    <li>Dividers</li>
+      <li>The body content contains the details of your message.</li>
+      <li>
+        Within the body content, the following are supported:
+        <ul>
+          <li>Paragraph text, bold text, italic text, and bulleted lists</li>
+          <li>Headings level 2, 3, and 4</li>
+          <li>Blockquotes (no more than one)</li>
+          <li>Action Links (no more than one)</li>
+          <li>Links (no more than three)</li>
+          <li>Dividers</li>
+        </ul>
+      </li>  
+      <li>For additional content and usage guidance, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
+      <li>Don’t include a closing or sign the email as “VA.gov” or “VA”.</li>
     </ul>
-    <li>For additional content and usage guidance, use the <a href="https://design.va.gov/content-style-guide/email-and-text-notifications">Email Content and Style Guide</a>.</li>
-    <li>Don’t include a closing or sign the email as “VA.gov” or “VA”.</li>
-</ul>
   </div>
 </div>
 
@@ -118,13 +118,13 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
     <a href="{{site.baseurl}}/images/templates/email/contact-section.jpg"><img width="100%" src="{{site.baseurl}}/images/templates/email/contact-section.jpg" alt="email contact section example" style="width: auto; height: auto; max-width: 100%;"></a>
   </div>
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
-    <h4>Contact Section </h4>
+    <h4>Contact Section</h4>
     <ul>
-    <li>Include a contact section so users can reach out if they have questions.</li>
-    <li>By default, “Have questions?” heads the contact section with a Heading level 3, uses “Visit <a href="https://va.gov">https://va.gov</a> or call <a href="tel:+18008271000">800-827-1000</a> (TTY: <a href="tel:+711">711</a>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
+      <li>Include a contact section so users can reach out if they have questions.</li>
+      <li>By default, “Have questions?” heads the contact section with an appropriate heading level (2 or 3, typically), uses “Visit <a href="https://va.gov">https://va.gov</a> or call <a href="tel:+18008271000">800-827-1000</a> (TTY: <a href="tel:+711">711</a>). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.” as the content, and is preceded by a divider.</li>
       <li>Contact details can be adjusted as needed.</li>
       <li>If the user is recommended or required to reach out to the VA in the body content, the contact section can be removed to reduce redundancy.</li>
-</ul>
+    </ul>
   </div>
 </div>
 
@@ -135,11 +135,10 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
   <div class="vads-grid-col-12 tablet:vads-grid-col-6 vads-u-margin-bottom--2 tablet:vads-u-padding-x--2">
     <h4>Footer</h4>
     <ul>
-    <li>Use the footer to explain why we sent this email and tell people not to reply—modify the reason as necessary.</li>
-    <li>Example: “You are receiving this email because you filed an application on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
-    <li>Example: “You are receiving this email because you made a change to your information on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
-    <li>The footer is noted with the use of a divider above it.</li>
+      <li>Use the footer to explain why we sent this email and tell people not to reply—modify the reason as necessary.</li>
+      <li>Example: “You are receiving this email because you filed an application on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
+      <li>Example: “You are receiving this email because you made a change to your information on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
+      <li>The footer is noted with the use of a divider above it.</li>
     </ul>
   </div>
 </div>
-
