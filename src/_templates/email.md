@@ -137,12 +137,10 @@ To onboard to VA Notify, visit the [VA Notify Github](https://github.com/departm
     <h4>Footer</h4>
     <ul>
     <li>Use the footer to explain why we sent this email and tell people not to reply—modify the reason as necessary.</li>
-    <ul>
-      <li>Example: “You are receiving this email because you filed an application on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
-      <li>Example: “You are receiving this email because you made a change to your information on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
-    </ul>
+    <li>Example: “You are receiving this email because you filed an application on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
+    <li>Example: “You are receiving this email because you made a change to your information on <a href="https://www.va.gov/">VA.gov</a>. Please do not reply to this email.”</li>
     <li>The footer is noted with the use of a divider above it.</li>
-</ul>
+    </ul>
   </div>
 </div>
 
