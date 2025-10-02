@@ -1,0 +1,19 @@
+{
+  "quarter": "2025Q1",
+  "data": {
+    "period": "2025-Q1",
+    "total_kickoffs": 26,
+    "touchpoints_held": 57,
+    "design_intent_held": 8,
+    "midpoint_review_held": 19,
+    "staging_review_held": 30,
+    "products_shipped": 19,
+    "total_staging_issues": 267,
+    "launch_blocking_issues": 41,
+    "launch_blocking_percentage": 15
+  },
+  "participating_teams": 818,
+  "generated_at": "2025-10-01T21:35:05.288Z",
+  "data_source": "va.gov-team repository",
+  "description": "Governance metrics for 2025Q1"
+}

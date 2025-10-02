@@ -18,8 +18,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const REPO = 'department-of-veterans-affairs/va.gov-team';
-const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
-const JEKYLL_DATA_DIR = path.join(__dirname, '../src/_data/metrics');
+const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
 
 /**
  * Get the current quarter based on today's date
@@ -471,7 +470,7 @@ async function exportToCSV(quarterlyData) {
   });
   
   const csvOutput = csvRows.join('\n');
-  const csvFile = path.join(OUTPUT_DIR, 'governance-metrics.csv');
+  const csvFile = path.join(DATA_DIR, 'governance-metrics.csv');
   await fs.writeFile(csvFile, csvOutput);
   console.log(`✅ CSV data written to ${csvFile}`);
 }
@@ -480,9 +479,8 @@ async function exportToCSV(quarterlyData) {
  * Save governance data for a specific quarter
  */
 async function saveQuarterlyData(quarterString, quarterData, participatingTeams = 0) {
-  // Ensure output directories exist
-  await fs.mkdir(OUTPUT_DIR, { recursive: true });
-  await fs.mkdir(JEKYLL_DATA_DIR, { recursive: true });
+  // Ensure data directory exists
+  await fs.mkdir(DATA_DIR, { recursive: true });
   
   const governanceData = {
     quarter: quarterString,
@@ -493,14 +491,12 @@ async function saveQuarterlyData(quarterString, quarterData, participatingTeams 
     description: `Governance metrics for ${quarterString}`
   };
   
-  // Write to both locations
+  // Write to data directory (Jekyll will expose as site.data.metrics.*)
   const quarterFile = `governance-metrics-${quarterString}.json`;
-  const outputPath = path.join(OUTPUT_DIR, quarterFile);
-  const jekyllPath = path.join(JEKYLL_DATA_DIR, quarterFile);
+  const dataPath = path.join(DATA_DIR, quarterFile);
   
   const jsonOutput = JSON.stringify(governanceData, null, 2);
-  await fs.writeFile(outputPath, jsonOutput);
-  await fs.writeFile(jekyllPath, jsonOutput);
+  await fs.writeFile(dataPath, jsonOutput);
   
   console.log(`✅ Quarter data saved to ${quarterFile}`);
   return quarterFile;
@@ -522,11 +518,9 @@ async function updateGovernanceIndex() {
   };
   
   const indexOutput = JSON.stringify(indexData, null, 2);
-  const outputPath = path.join(OUTPUT_DIR, 'governance-index.json');
-  const jekyllPath = path.join(JEKYLL_DATA_DIR, 'governance-index.json');
+  const dataPath = path.join(DATA_DIR, 'governance-index.json');
   
-  await fs.writeFile(outputPath, indexOutput);
-  await fs.writeFile(jekyllPath, indexOutput);
+  await fs.writeFile(dataPath, indexOutput);
   
   console.log(`✅ Governance index updated - latest complete quarter: ${mostRecentQuarter}`);
   return indexData;
