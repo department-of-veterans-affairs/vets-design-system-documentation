@@ -1,5 +1,4 @@
 ---
-layout: default
 layout: documentation
 permalink: /about/metrics/governance/
 has-parent: /about/metrics/
@@ -12,21 +11,59 @@ Assign current quarter data from the quarterly file based on governance index
 {% assign latest_quarter_data = site.data.metrics.governance-metrics-2025Q3 %}
 {% assign governance_index = site.data.metrics.governance-index %}
 
-<div aria-labelledby="main-heading" class="metrics-dashboard">
-  <h1 id="main-heading">Governance Metrics</h1>
+{% comment %}
+Calculate trends by comparing latest quarter with previous quarter
+{% endcomment %}
+{% assign previous_quarter_data = site.data.metrics.governance-metrics-2025Q2 %}
+{% if latest_quarter_data.data and previous_quarter_data.data %}
+  {% comment %} Calculate touchpoints trend {% endcomment %}
+  {% assign current_touchpoints = latest_quarter_data.data.touchpoints_held %}
+  {% assign previous_touchpoints = previous_quarter_data.data.touchpoints_held %}
+  {% if previous_touchpoints > 0 %}
+    {% assign touchpoints_change = current_touchpoints | minus: previous_touchpoints %}
+    {% assign touchpoints_percent = touchpoints_change | times: 100.0 | divided_by: previous_touchpoints | round %}
+  {% endif %}
+  
+  {% comment %} Calculate products shipped trend {% endcomment %}
+  {% assign current_products = latest_quarter_data.data.products_shipped %}
+  {% assign previous_products = previous_quarter_data.data.products_shipped %}
+  {% if previous_products > 0 %}
+    {% assign products_change = current_products | minus: previous_products %}
+    {% assign products_percent = products_change | times: 100.0 | divided_by: previous_products | round %}
+  {% endif %}
+  
+  {% comment %} Calculate staging issues trend {% endcomment %}
+  {% assign current_staging = latest_quarter_data.data.total_staging_issues %}
+  {% assign previous_staging = previous_quarter_data.data.total_staging_issues %}
+  {% if previous_staging > 0 %}
+    {% assign staging_change = current_staging | minus: previous_staging %}
+    {% assign staging_percent = staging_change | times: 100.0 | divided_by: previous_staging | round %}
+  {% endif %}
+  
+  {% comment %} Calculate launch blocking trend {% endcomment %}
+  {% assign current_blocking = latest_quarter_data.data.launch_blocking_issues %}
+  {% assign previous_blocking = previous_quarter_data.data.launch_blocking_issues %}
+  {% if previous_blocking > 0 %}
+    {% assign blocking_change = current_blocking | minus: previous_blocking %}
+    {% assign blocking_percent = blocking_change | times: 100.0 | divided_by: previous_blocking | round %}
+  {% endif %}
+{% endif %}
 
+<div aria-labelledby="main-heading" class="metrics-dashboard">
   <p>This dashboard tracks the effectiveness of the VA Design System governance process through Collaboration Cycle metrics. These metrics show how VFS teams engage with design system guidelines and the quality of our oversight.</p>
 
   <!-- Summary Metrics Cards -->
   <section aria-labelledby="summary-heading">
-    <h2 id="summary-heading">Latest Complete Quarter Summary 
+    <h2 id="summary-heading">Quarterly Summary 
       {% if site.data.metrics.governance-index.latest_complete_quarter %}
         ({{ site.data.metrics.governance-index.latest_complete_quarter }})
       {% endif %}
     </h2>
   
-    <div class="metrics-grid">
-      <va-card class="metric-card">
+    <!-- Summary cards -->
+    <div class="vads-l-row vads-u-justify-content--center">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
         <h3 id="touchpoints-held-label">Touchpoints Held</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="touchpoints-held" aria-labelledby="touchpoints-held-label">
           {% if latest_quarter_data.data.touchpoints_held %}
@@ -36,14 +73,35 @@ Assign current quarter data from the quarterly file based on governance index
           {% endif %}
         </div>
         <div class="metric-trend" id="touchpoints-held-trend" aria-label="Touchpoints held trend indicator">
-          <span class="metric-trend trend-neutral">
-            <span class="trend-icon">→</span>
-            <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
-          </span>
+          {% if touchpoints_percent %}
+            {% if touchpoints_change > 0 %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ touchpoints_percent }}% from previous quarter</span>
+              </span>
+            {% elsif touchpoints_change < 0 %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ touchpoints_percent | abs }}% from previous quarter</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from previous quarter</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-neutral">
+              <span class="trend-icon">→</span>
+              <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
+            </span>
+          {% endif %}
         </div>
-      </va-card>
+        </va-card>
+      </div>
       
-            <va-card class="metric-card">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
         <h3 id="products-shipped-label">Products Shipped</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="products-shipped" aria-labelledby="products-shipped-label">
           {% if latest_quarter_data.data.products_shipped %}
@@ -53,14 +111,35 @@ Assign current quarter data from the quarterly file based on governance index
           {% endif %}
         </div>
         <div class="metric-trend" id="products-shipped-trend" aria-label="Products shipped trend indicator">
-          <span class="metric-trend trend-neutral">
-            <span class="trend-icon">→</span>
-            <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
-          </span>
+          {% if products_percent %}
+            {% if products_change > 0 %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ products_percent }}% from previous quarter</span>
+              </span>
+            {% elsif products_change < 0 %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ products_percent | abs }}% from previous quarter</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from previous quarter</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-neutral">
+              <span class="trend-icon">→</span>
+              <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
+            </span>
+          {% endif %}
         </div>
-      </va-card>
+        </va-card>
+      </div>
       
-      <va-card class="metric-card">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
         <h3 id="staging-issues-label">Staging Review Issues</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="staging-issues" aria-labelledby="staging-issues-label">
           {% if latest_quarter_data.data.total_staging_issues %}
@@ -70,14 +149,34 @@ Assign current quarter data from the quarterly file based on governance index
           {% endif %}
         </div>
         <div class="metric-trend" id="staging-issues-trend" aria-label="Staging review issues trend indicator">
-          <span class="metric-trend trend-neutral">
-            <span class="trend-icon">→</span>
-            <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
-          </span>
+          {% if staging_percent %}
+            {% if staging_change > 0 %}
+              <span class="metric-trend trend-up">
+                <span class="trend-icon">↗</span>
+                <span>{{ staging_percent }}% from previous quarter</span>
+              </span>
+            {% elsif staging_change < 0 %}
+              <span class="metric-trend trend-down">
+                <span class="trend-icon">↘</span>
+                <span>{{ staging_percent | abs }}% from previous quarter</span>
+              </span>
+            {% else %}
+              <span class="metric-trend trend-neutral">
+                <span class="trend-icon">→</span>
+                <span>No change from previous quarter</span>
+              </span>
+            {% endif %}
+          {% else %}
+            <span class="metric-trend trend-neutral">
+              <span class="trend-icon">→</span>
+              <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
+            </span>
+          {% endif %}
         </div>
-      </va-card>
-      
-      <va-card class="metric-card">
+        </va-card>
+      </div>
+      <div class="vads-l-col--12 medium-screen:vads-l-col--4 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
         <h3 id="launch-blocking-label">Launch-Blocking Issues</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="launch-blocking" aria-labelledby="launch-blocking-label">
           {% if latest_quarter_data.data.launch_blocking_issues %}
@@ -95,21 +194,8 @@ Assign current quarter data from the quarterly file based on governance index
             {% endif %}
           </span>
         </div>
-      </va-card>
-      
-      <va-card class="metric-card">
-        <h3 id="participating-teams-label">Participating Teams</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="participating-teams" aria-labelledby="participating-teams-label">
-          {% if latest_quarter_data.participating_teams %}
-            {{ latest_quarter_data.participating_teams }}
-          {% else %}
-            8
-          {% endif %}
-        </div>
-        <div class="metric-trend trend-neutral" id="participating-teams-trend" aria-label="Participating teams trend indicator">
-          <span>Currently in collaboration cycle</span>
-        </div>
-      </va-card>
+        </va-card>
+      </div>
     </div>
   </section>
   
@@ -135,49 +221,24 @@ Assign current quarter data from the quarterly file based on governance index
           <span>Launch-Blocking Issues</span>
           <span>Launch-Blocking %</span>
         </va-table-row>
-        {% if latest_quarter_data.data %}
-          <va-table-row>
-            <span>{{ latest_quarter_data.data.period }}</span>
-            <span>{{ latest_quarter_data.data.touchpoints_held }}</span>
-            <span>{{ latest_quarter_data.data.products_shipped }}</span>
-            <span>{{ latest_quarter_data.data.total_staging_issues }}</span>
-            <span>{{ latest_quarter_data.data.launch_blocking_issues }}</span>
-            <span>{{ latest_quarter_data.data.launch_blocking_percentage }}%</span>
-          </va-table-row>
-        {% else %}
-          <va-table-row>
-            <span>2025-Q3</span>
-            <span>25</span>
-            <span>15</span>
-            <span>55</span>
-            <span>7</span>
-            <span>16%</span>
-          </va-table-row>
-          <va-table-row>
-            <span>2025-Q2</span>
-            <span>24</span>
-            <span>15</span>
-            <span>46</span>
-            <span>6</span>
-            <span>14%</span>
-          </va-table-row>
-          <va-table-row>
-            <span>2025-Q1</span>
-            <span>20</span>
-            <span>12</span>
-            <span>42</span>
-            <span>7</span>
-            <span>17%</span>
-          </va-table-row>
-          <va-table-row>
-            <span>2024-Q4</span>
-            <span>21</span>
-            <span>12</span>
-            <span>39</span>
-            <span>6</span>
-            <span>17%</span>
-          </va-table-row>
-        {% endif %}
+        {% comment %}
+        Create an array of quarters in reverse chronological order (most recent first)
+        {% endcomment %}
+        {% assign quarters = "2025Q3,2025Q2,2025Q1,2024Q4,2024Q3,2024Q2,2024Q1" | split: "," %}
+        {% for quarter in quarters %}
+          {% assign quarter_data_key = "governance-metrics-" | append: quarter %}
+          {% assign quarter_data = site.data.metrics[quarter_data_key] %}
+          {% if quarter_data.data %}
+            <va-table-row>
+              <span>{{ quarter_data.data.period }}</span>
+              <span>{{ quarter_data.data.touchpoints_held }}</span>
+              <span>{{ quarter_data.data.products_shipped }}</span>
+              <span>{{ quarter_data.data.total_staging_issues }}</span>
+              <span>{{ quarter_data.data.launch_blocking_issues }}</span>
+              <span>{{ quarter_data.data.launch_blocking_percentage }}%</span>
+            </va-table-row>
+          {% endif %}
+        {% endfor %}
       </va-table>
     </div>
   </section>
@@ -193,7 +254,6 @@ Assign current quarter data from the quarterly file based on governance index
       <h4>Metric Definitions</h4>
       <ul>
         <li><strong>Touchpoints Held:</strong> Total collaboration cycle touchpoints conducted by the governance team (issues labeled with "governance-team" and touchpoint type labels that were created in the quarter)</li>
-        <li><strong>Participating Teams:</strong> VFS teams with open "collaboration-cycle" issues (currently in process)</li>
         <li><strong>Products Shipped:</strong> Teams that completed Staging Review (issues with both "collaboration-cycle" and "staging-review" labels that are closed)</li>
         <li><strong>Staging Issues:</strong> Total number of issues filed during Staging Review with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback"</li>
         <li><strong>Launch-Blocking Issues:</strong> Staging Review issues that also have the "launch-blocking" label</li>
