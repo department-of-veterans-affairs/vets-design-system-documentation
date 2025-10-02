@@ -12,7 +12,6 @@ $chart-responsive-breakpoint: 600px;
 
 .metrics-section {
   margin: var(--vads-spacing-4) 0;
-  padding: var(--vads-spacing-3);
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-sm);
   
@@ -129,16 +128,93 @@ $chart-responsive-breakpoint: 600px;
   }
 }
 
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--vads-spacing-2);
-  margin: var(--vads-spacing-4) 0;
+// Metrics grid now uses VA Design System flexbox grid classes
+// .vads-l-row with .vads-l-col classes for responsive layout
+
+.metrics-dashboard .vads-l-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--vads-spacing-1));
+  margin-right: calc(-1 * var(--vads-spacing-1));
+}
+
+.metrics-dashboard .vads-l-row [class*="vads-l-col"] {
+  flex: 0 0 auto;
+  padding-left: var(--vads-spacing-1);
+  padding-right: var(--vads-spacing-1);
+  margin-bottom: var(--vads-spacing-2);
+  
+  // Fallback responsive grid implementation
+  // Mobile first: full width
+  flex-basis: 100%;
+  width: 100%;
+  
+  // Medium screens: 2 columns (50% width)
+  @media (min-width: 768px) {
+    flex-basis: 50%;
+    width: 50%;
+  }
+  
+  // Large screens: 4 columns (25% width)  
+  @media (min-width: 1024px) {
+    flex-basis: 25%;
+    width: 25%;
+  }
+}
+
+.data-freshness {
+  color: var(--vads-color-base-darkest); // Use black text for accessibility
+  font-size: var(--vads-font-size-body-small);
+  margin-top: var(--vads-spacing-1);
+  margin-bottom: var(--vads-spacing-2);
+  text-align: left; // Left-align for better readability
+  
+  small {
+    display: block;
+    line-height: 1.3;
+    color: var(--vads-color-base-darkest); // Ensure small text is also black
+  }
+  
+  &.warning {
+    color: var(--vads-color-warning-darker);
+    
+    small {
+      color: var(--vads-color-warning-darker);
+    }
+  }
+  
+  &.error {
+    color: var(--vads-color-error-darker);
+    
+    small {
+      color: var(--vads-color-error-darker);
+    }
+  }
+}
+
+// Data freshness in metric cards should be centered
+.metric-card .data-freshness {
+  text-align: center;
 }
 
 .metric-card {
   text-align: center;
-  padding: var(--vads-spacing-3);
+  padding: var(--vads-spacing-2);
+  height: 100%; // Ensure cards have equal height
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  h3 {
+    font-size: var(--vads-font-size-body);
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: var(--vads-spacing-1);
+    
+    // Prevent text overflow on smaller cards
+    @media (min-width: 1024px) {
+      font-size: var(--vads-font-size-body-small);
+    }
+  }
 }
 
 .metric-card h4 {
@@ -163,6 +239,21 @@ $chart-responsive-breakpoint: 600px;
   gap: var(--vads-spacing-0p5);
   font-size: var(--vads-font-size-body-small);
   font-weight: var(--font-weight-normal);
+  text-align: center;
+  line-height: 1.3;
+  
+  // Prevent text wrapping in narrow cards
+  @media (min-width: 1024px) {
+    font-size: 12px;
+    
+    // Stack trend text on smaller screens to prevent overflow
+    flex-direction: column;
+    gap: 2px;
+    
+    .trend-icon {
+      font-size: 12px;
+    }
+  }
   
   &.trend-up {
     color: var(--vads-color-success-dark);

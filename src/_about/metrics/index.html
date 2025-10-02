@@ -1,6 +1,7 @@
 ---
 layout: category
-title: Metrics Dashboard
+title: Metrics
+inner-title: Dashboard
 permalink: /about/metrics/
 sub-pages:
 - sub-page: Governance
@@ -16,9 +17,10 @@ mime_type: text/html
   <section aria-labelledby="summary-heading">
     <h2 id="summary-heading">Summary Metrics</h2>
   
-    <div class="metrics-grid">
-      <va-card class="metric-card">
-        <h3 id="open-issues-label">Open Issues</h3>
+    <div class="vads-l-row vads-u-justify-content--center">
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h3 id="open-issues-label">Open Issues</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="open-issues" aria-labelledby="open-issues-label">
           {% if site.data.metrics.issue-metrics.summary.open_issues %}
             {{ site.data.metrics.issue-metrics.summary.open_issues }}
@@ -47,10 +49,20 @@ mime_type: text/html
             {% endif %}
           {% endif %}
         </div>
-      </va-card>
+        <div class="data-freshness" id="open-issues-data-freshness">
+          {% if site.data.metrics.issue-metrics.summary.last_updated %}
+            {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
+            <small>Updated {{ last_updated }}</small>
+          {% else %}
+            <small>Data collection in progress</small>
+          {% endif %}
+        </div>
+        </va-card>
+      </div>
       
-      <va-card class="metric-card">
-        <h3 id="closed-month-label">Closed This Month</h3>
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h3 id="closed-month-label">Closed This Month</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="closed-month" aria-labelledby="closed-month-label">
           {% if site.data.metrics.issue-metrics.summary.closed_this_month %}
             {{ site.data.metrics.issue-metrics.summary.closed_this_month }}
@@ -79,42 +91,20 @@ mime_type: text/html
             {% endif %}
           {% endif %}
         </div>
-      </va-card>
-      
-      <va-card class="metric-card">
-        <h3 id="avg-resolution-label">Average Resolution Time</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="avg-resolution" aria-labelledby="avg-resolution-label">
-          {% if site.data.metrics.issue-metrics.summary.avg_resolution_days %}
-            {{ site.data.metrics.issue-metrics.summary.avg_resolution_days }} days
+        <div class="data-freshness" id="closed-month-data-freshness">
+          {% if site.data.metrics.issue-metrics.summary.last_updated %}
+            {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
+            <small>Updated {{ last_updated }}</small>
           {% else %}
-            14 days
+            <small>Data collection in progress</small>
           {% endif %}
         </div>
-                <div class="metric-trend" id="avg-resolution-trend" aria-label="Average resolution time trend indicator">
-          {% if site.data.metrics.issue-metrics.summary.resolution_time_trend %}
-            {% assign trend = site.data.metrics.issue-metrics.summary.resolution_time_trend %}
-            {% if trend.direction == 'up' %}
-              <span class="metric-trend trend-up">
-                <span class="trend-icon">↗</span>
-                <span>{{ trend.percentage }}% from last month</span>
-              </span>
-            {% elsif trend.direction == 'down' %}
-              <span class="metric-trend trend-down">
-                <span class="trend-icon">↘</span>
-                <span>{{ trend.percentage }}% from last month</span>
-              </span>
-            {% else %}
-              <span class="metric-trend trend-neutral">
-                <span class="trend-icon">→</span>
-                <span>No change from last month</span>
-              </span>
-            {% endif %}
-          {% endif %}
-        </div>
-      </va-card>
+        </va-card>
+      </div>
       
-      <va-card class="metric-card">
-        <h3 id="total-components-label">Total Components</h3>
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h3 id="total-components-label">Total Components</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-components" aria-labelledby="total-components-label">
           {% if site.data.metrics.component-usage.summary_stats.total_components %}
             {{ site.data.metrics.component-usage.summary_stats.total_components }}
@@ -148,24 +138,20 @@ mime_type: text/html
             </span>
           {% endif %}
         </div>
-      </va-card>
-      
-      <va-card class="metric-card">
-        <h3 id="most-used-component-label">Most Used Component</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="most-used-component" aria-labelledby="most-used-component-label">
-          {% if site.data.metrics.component-usage.summary_stats.most_used %}
-            {{ site.data.metrics.component-usage.summary_stats.most_used }}
+        <div class="data-freshness" id="total-components-data-freshness">
+          {% if site.data.metrics.component-usage.summary_stats.report_date %}
+            {% assign report_date = site.data.metrics.component-usage.summary_stats.report_date | date: "%B %d, %Y" %}
+            <small>Data from {{ report_date }}</small>
           {% else %}
-            va-button
+            <small>Data collection in progress</small>
           {% endif %}
         </div>
-        <div class="metric-trend trend-neutral" id="most-used-component-trend" aria-label="Most used component trend indicator">
-          <span>Most popular this month</span>
-        </div>
-      </va-card>
+        </va-card>
+      </div>
       
-      <va-card class="metric-card">
-        <h3 id="total-usages-label">Total Component Usages</h3>
+      <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
+        <va-card class="metric-card">
+          <h3 id="total-usages-label">Total Component Usages</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="total-usages" aria-labelledby="total-usages-label">
           {% if site.data.metrics.component-usage.summary_stats.total_usages %}
             {{ site.data.metrics.component-usage.summary_stats.total_usages | number_with_delimiter }}
@@ -199,7 +185,16 @@ mime_type: text/html
             </span>
           {% endif %}
         </div>
-      </va-card>
+        <div class="data-freshness" id="total-usages-data-freshness">
+          {% if site.data.metrics.component-usage.summary_stats.report_date %}
+            {% assign report_date = site.data.metrics.component-usage.summary_stats.report_date | date: "%B %d, %Y" %}
+            <small>Data from {{ report_date }}</small>
+          {% else %}
+            <small>Data collection in progress</small>
+          {% endif %}
+        </div>
+        </va-card>
+      </div>
     </div>
   </section>
   
@@ -210,6 +205,14 @@ mime_type: text/html
     <div class="metrics-section">
       <h3>Issue Activity by Quarter</h3>
       <p>Shows issues opened vs. closed each quarter to track activity levels and resolution trends</p>
+      <div class="data-freshness" id="issue-tracking-data-freshness">
+        {% if site.data.metrics.issue-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
+          <small>Data updated {{ last_updated }}</small>
+        {% else %}
+          <small>Data collection in progress</small>
+        {% endif %}
+      </div>
       
       <va-tabs>
         <va-tab-item button-text="Graph" target-id="quarterly-graph-panel"></va-tab-item>
@@ -267,7 +270,7 @@ mime_type: text/html
       <p>Most frequently used design system components across all VA applications</p>
       <div class="data-freshness" id="component-data-freshness">
         {% if site.data.metrics.component-usage.data_source == 'component-library/ds-components' and site.data.metrics.component-usage.report_date %}
-          <small class="vads-u-color--gray-medium">
+          <small>
             Data from {{ site.data.metrics.component-usage.report_date | date: "%B %-d, %Y" }}
             {% if site.data.metrics.component-usage.summary_stats.applications_tracked %}
               across {{ site.data.metrics.component-usage.summary_stats.applications_tracked }} VA applications
@@ -334,6 +337,9 @@ mime_type: text/html
     <div class="metrics-section">
       <h3>Top 25 Pages</h3>
       <p>The most visited pages of design.va.gov</p>
+      <div class="data-freshness" id="monthly-analytics-data-freshness">
+        <small>Data from August 2025 Google Analytics report</small>
+      </div>
       <div class="monthly-reports-static">
         <div class="report-item">
           <h4>August 2025</h4>
@@ -350,6 +356,14 @@ mime_type: text/html
     <div class="metrics-section">
       <h3>Monthly new issues created</h3>
       <p>Displays the rate of new issues opened per time period to track community engagement</p>
+      <div class="data-freshness" id="monthly-contributions-data-freshness">
+        {% if site.data.metrics.issue-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
+          <small>Data updated {{ last_updated }}</small>
+        {% else %}
+          <small>Data collection in progress</small>
+        {% endif %}
+      </div>
       
       <va-tabs>
         <va-tab-item button-text="Graph" target-id="velocity-graph-panel"></va-tab-item>
@@ -402,6 +416,14 @@ mime_type: text/html
     <div class="metrics-section">
       <h3>Experimental Design Issues by Quarter</h3>
       <p>Shows experimental design issues opened vs. closed vs. implemented each quarter to track design system evolution</p>
+      <div class="data-freshness" id="experimental-design-data-freshness">
+        {% if site.data.metrics.issue-metrics.summary.last_updated %}
+          {% assign last_updated = site.data.metrics.issue-metrics.summary.last_updated | date: "%B %d, %Y" %}
+          <small>Data updated {{ last_updated }}</small>
+        {% else %}
+          <small>Data collection in progress</small>
+        {% endif %}
+      </div>
       
       <va-tabs>
         <va-tab-item button-text="Graph" target-id="experimental-graph-panel"></va-tab-item>
@@ -695,7 +717,80 @@ function enhanceMetricCards(issueSummary, componentSummary) {
     updateDataFreshness(componentSummary);
   }
   
+  // Enhanced data freshness for metric cards with real-time checking
+  enhanceDataFreshness(issueSummary, componentSummary);
+  
+  // Ensure numbers are formatted with commas
+  formatMetricNumbers();
+  
   // Any other dynamic enhancements can be added here
+}
+
+// Enhanced data freshness checking for all metric cards and section data freshness elements
+function enhanceDataFreshness(issueSummary, componentSummary) {
+  // Check issue metrics freshness
+  if (issueSummary && issueSummary.last_updated) {
+    const lastUpdated = new Date(issueSummary.last_updated);
+    const daysSince = Math.floor((Date.now() - lastUpdated.getTime()) / (1000 * 60 * 60 * 24));
+    
+    // Update issue-related data freshness elements if data is stale (metric cards)
+    ['open-issues-data-freshness', 'closed-month-data-freshness'].forEach(elementId => {
+      const element = document.getElementById(elementId);
+      if (element && daysSince > 7) {
+        element.classList.add('warning');
+        const small = element.querySelector('small');
+        if (small && !small.textContent.includes('days ago')) {
+          small.textContent += ` (${daysSince} days ago)`;
+        }
+      }
+    });
+    
+    // Update issue-related section data freshness elements if data is stale
+    ['issue-tracking-data-freshness', 'monthly-contributions-data-freshness', 'experimental-design-data-freshness'].forEach(elementId => {
+      const element = document.getElementById(elementId);
+      if (element && daysSince > 7) {
+        element.classList.add('warning');
+        const small = element.querySelector('small');
+        if (small && !small.textContent.includes('days ago')) {
+          small.textContent += ` (${daysSince} days ago)`;
+        }
+      }
+    });
+  }
+  
+  // Check component metrics freshness
+  if (componentSummary && componentSummary.report_date) {
+    const reportDate = new Date(componentSummary.report_date);
+    const daysSince = Math.floor((Date.now() - reportDate.getTime()) / (1000 * 60 * 60 * 24));
+    
+    // Update component-related data freshness elements if data is stale (metric cards)
+    ['total-components-data-freshness', 'total-usages-data-freshness'].forEach(elementId => {
+      const element = document.getElementById(elementId);
+      if (element && daysSince > 14) {
+        element.classList.add('warning');
+        const small = element.querySelector('small');
+        if (small && !small.textContent.includes('days ago')) {
+          small.textContent += ` (${daysSince} days ago)`;
+        }
+      }
+    });
+  }
+}
+
+// Helper function to format numbers with commas
+function formatMetricNumbers() {
+  // Format the total usages number if it exists and doesn't already have commas
+  const totalUsagesElement = document.getElementById('total-usages');
+  if (totalUsagesElement) {
+    const currentText = totalUsagesElement.textContent.trim();
+    const numberOnly = currentText.replace(/[^\d]/g, ''); // Extract just digits
+    if (numberOnly && !currentText.includes(',')) {
+      const formattedNumber = parseInt(numberOnly).toLocaleString();
+      totalUsagesElement.textContent = formattedNumber;
+    }
+  }
+  
+  // You can add other number formatting here for other metrics if needed
 }
 
 function renderQuarterlyChart(data) {
@@ -1213,7 +1308,7 @@ function updateDataFreshness(componentSummary) {
   if (!freshnessElement || !componentSummary) return;
   
   let freshnessText = '';
-  let cssClass = 'vads-u-color--gray';
+  let cssClass = ''; // Use default black text from CSS
   
   if (componentSummary.data_source === 'component-library/ds-components' && componentSummary.report_date) {
     // Fresh CSV data
@@ -1233,26 +1328,28 @@ function updateDataFreshness(componentSummary) {
     const daysSince = Math.floor((Date.now() - reportDate.getTime()) / (1000 * 60 * 60 * 24));
     if (daysSince > 14) {
       freshnessText += ` (${daysSince} days ago)`;
-      cssClass = 'vads-u-color--warning-darker';
+      cssClass = 'warning'; // Use our custom warning class
     }
     
   } else if (componentSummary.data_source === 'fallback-data') {
     // Using fallback due to error
     freshnessText = '⚠️ Using fallback data - latest data temporarily unavailable';
-    cssClass = 'vads-u-color--warning-darker';
+    cssClass = 'warning'; // Use our custom warning class
     
   } else if (componentSummary.data_source === 'fallback-sample-data') {
     // Clean fallback data
     freshnessText = 'Sample data for demonstration purposes';
-    cssClass = 'vads-u-color--gray';
+    cssClass = ''; // Use default black text
     
   } else {
     // Unknown or placeholder
     freshnessText = 'Data collection in progress';
-    cssClass = 'vads-u-color--gray';
+    cssClass = ''; // Use default black text
   }
   
-  freshnessElement.innerHTML = `<small class="${cssClass}">${freshnessText}</small>`;
+  // Apply our custom CSS classes instead of VA utility classes
+  freshnessElement.className = `data-freshness ${cssClass}`.trim();
+  freshnessElement.innerHTML = `<small>${freshnessText}</small>`;
 }
 
 </script>
