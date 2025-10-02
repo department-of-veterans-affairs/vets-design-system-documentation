@@ -65,8 +65,6 @@ Follow this pattern whenever you need to ask a user if they served under another
   * Name form template
   * ‘Add another name’ secondary button
 
-![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.png)
-
 ## Usage - Reserves and National Guard and Federal Orders
 
 Follow this pattern whenever you need to ask for a user’s Reserve or National Guard information. Persons in the Reserve or National Guard are not full-time active duty military personnel, although they can be deployed at any time should the need arise. 
@@ -76,8 +74,6 @@ Follow this pattern whenever you need to ask for a user’s Reserve or National 
 * Unit name text input
 * Obligation start date input
 * Obligation end date input
-
-![reserves and national guard disability form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-disability.png)
 
 ## Usage - Prisoner of War (POW)
 
