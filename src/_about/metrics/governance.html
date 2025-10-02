@@ -202,7 +202,19 @@ Calculate trends by comparing latest quarter with previous quarter
   <!-- Quarterly Governance Metrics Section -->
   <section aria-labelledby="quarterly-governance-heading">
     <h2 id="quarterly-governance-heading">Quarterly Governance Metrics</h2>
-    
+    <div class="data-freshness" id="governance-data-freshness">
+      {% if latest_quarter_data.generated_at %}
+        <small class="data-freshness">
+          Data last updated: {{ latest_quarter_data.generated_at | date: "%B %-d, %Y at %-I:%M %p" }} 
+          ({{ governance_index.latest_complete_quarter }})
+          {% if latest_quarter_data.data_source %}
+            | Source: {{ latest_quarter_data.data_source }}
+          {% endif %}
+        </small>
+      {% else %}
+        <small class="data-freshness">Sample data for demonstration purposes</small>
+      {% endif %}
+    </div>
     <div class="metrics-section">
       <h3>Collaboration Cycle Activity by Quarter</h3>
       <p>Shows governance activity including touchpoints completed, products shipped, and staging review issue patterns over time</p>
@@ -253,26 +265,20 @@ Calculate trends by comparing latest quarter with previous quarter
       
       <h4>Metric Definitions</h4>
       <ul>
-        <li><strong>Touchpoints Held:</strong> Total collaboration cycle touchpoints conducted by the governance team (issues labeled with "governance-team" and touchpoint type labels that were created in the quarter)</li>
-        <li><strong>Products Shipped:</strong> Teams that completed Staging Review (issues with both "collaboration-cycle" and "staging-review" labels that are closed)</li>
-        <li><strong>Staging Issues:</strong> Total number of issues filed during Staging Review with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback"</li>
-        <li><strong>Launch-Blocking Issues:</strong> Staging Review issues that also have the "launch-blocking" label</li>
-        <li><strong>Launch-Blocking Percentage:</strong> The percentage of staging issues that are launch-blocking</li>
+        <li><strong>Touchpoints Held:</strong> Total collaboration cycle touchpoints conducted by the governance team in the quarter. This is the sum of Design Intent reviews, Midpoint reviews, and Staging reviews (issues with "governance-team" label plus specific touchpoint type labels that were created in the quarter)</li>
+        <li><strong>Products Shipped:</strong> VFS team products that completed the full Collaboration Cycle process by passing Staging Review (issues with both "collaboration-cycle" and "staging-review" labels that were closed in the quarter)</li>
+        <li><strong>Staging Issues:</strong> Total feedback issues filed during Staging Review process with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback" created in the quarter</li>
+        <li><strong>Launch-Blocking Issues:</strong> Critical staging review issues that must be resolved before product launch (staging issues that also have the "launch-blocking" label)</li>
+        <li><strong>Launch-Blocking Percentage:</strong> The percentage of staging review issues that are classified as launch-blocking (launch-blocking issues ÷ total staging issues × 100)</li>
       </ul>
       
-      <div class="data-freshness" id="governance-data-freshness">
-        {% if latest_quarter_data.generated_at %}
-          <small class="vads-u-color--gray-medium">
-            Data last updated: {{ latest_quarter_data.generated_at | date: "%B %-d, %Y at %-I:%M %p" }} 
-            ({{ governance_index.latest_complete_quarter }})
-            {% if latest_quarter_data.data_source %}
-              | Source: {{ latest_quarter_data.data_source }}
-            {% endif %}
-          </small>
-        {% else %}
-          <small class="vads-u-color--gray-medium">Sample data for demonstration purposes</small>
-        {% endif %}
-      </div>
+      <h4>Data Collection Process</h4>
+      <p>All metrics are automatically collected using the GitHub API to query issues in the <a href="https://github.com/department-of-veterans-affairs/va.gov-team" target="_blank" rel="noopener noreferrer">va.gov-team repository</a> based on:</p>
+      <ul>
+        <li><strong>Issue labels:</strong> Specific combinations of labels that identify different collaboration cycle activities</li>
+        <li><strong>Date ranges:</strong> Issues created or closed within each quarter's date boundaries</li>
+        <li><strong>Issue state:</strong> Whether issues are open, closed, or created within the time period</li>
+      </ul>
     </div>
   </section>
 </div>
