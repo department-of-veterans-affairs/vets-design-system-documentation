@@ -4,15 +4,18 @@ on:
   schedule:
     # Run weekly on Fridays at 6 PM UTC (2 PM ET / 1 PM EDT) - after component-library PR is merged
     - cron: '0 18 * * 5'
-  workflow_dispatch:
-    # Allow manual triggering for testing and on-demand updates
-  push:
-    # Run on pushes to main branch
-    branches: [ main ]
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches-ignore:
+      - 'metrics-update-**'
+      - '*metrics-update*'
     paths:
       - '.github/workflows/metrics-dashboard.yml'
       - 'scripts/collect-issue-metrics.js'
       - 'scripts/process-ds-components.js'
+      - 'scripts/collect-experimental-metrics.js'
+  workflow_dispatch:
+    # Allow manual triggering for testing and on-demand updates
 
 jobs:
   update-metrics:
@@ -227,26 +230,18 @@ jobs:
             git diff --staged --stat
           fi
       
-      - name: Commit and push changes
+      - name: Create branch and commit changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Ensure we're on the correct branch (not detached HEAD)
-          CURRENT_BRANCH="${{ github.head_ref || github.ref_name }}"
-          echo "Current branch: $CURRENT_BRANCH"
+          # Get current date for branch name and commit message
+          CURRENT_DATE=$(date -u '+%Y-%m-%d')
+          BRANCH_NAME="metrics-update-${CURRENT_DATE}"
           
-          # Check if we're in detached HEAD state
-          if git symbolic-ref -q HEAD >/dev/null; then
-            echo "✅ On branch: $(git branch --show-current)"
-          else
-            echo "⚠️ In detached HEAD state, checking out branch: $CURRENT_BRANCH"
-            git checkout -B "$CURRENT_BRANCH"
-          fi
-          
-          # Get current date for commit message
-          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          # Create and switch to new branch
+          git checkout -b "$BRANCH_NAME"
           
           # Count total issues processed
           TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
@@ -262,7 +257,47 @@ jobs:
           
           🤖 Automated update via GitHub Actions"
           
-          git push origin "$CURRENT_BRANCH"
+          # Push the new branch
+          git push origin "$BRANCH_NAME"
+          
+          # Store branch name for PR creation
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+      
+      - name: Create Pull Request
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          # Get current date for PR description
+          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          
+          # Create PR using GitHub CLI
+          gh pr create \
+            --title "📊 Update metrics dashboard data - $(date -u '+%Y-%m-%d')" \
+            --body "$(cat <<'EOF'
+          ## Summary
+          Automated weekly update of metrics dashboard data collected from GitHub issues and component usage.
+          
+          ### Files Updated
+          - Issue tracking metrics (JSON files)
+          - Component usage data from component-library
+          - Experimental design metrics
+          - Design system component usage CSV data
+          
+          ### Test Plan
+          - [ ] Verify JSON files are valid
+          - [ ] Check dashboard displays updated data correctly
+          - [ ] Confirm no regressions in metric calculations
+          
+          🤖 Generated with automated workflow - ${CURRENT_DATE}
+          EOF
+          )" \
+            --head "$BRANCH_NAME" \
+            --base main
+          
+          # Store PR URL for summary
+          PR_URL=$(gh pr view "$BRANCH_NAME" --json url --jq '.url')
+          echo "PR_URL=$PR_URL" >> $GITHUB_ENV
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
       - name: Create summary
         if: always()
@@ -289,8 +324,11 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             
             if [ "${{ steps.git-check.outputs.changes }}" == "true" ]; then
-              echo "### 🚀 Changes Committed" >> $GITHUB_STEP_SUMMARY
-              echo "Updated metrics data has been committed to the repository." >> $GITHUB_STEP_SUMMARY
+              echo "### 🚀 Pull Request Created" >> $GITHUB_STEP_SUMMARY
+              echo "Updated metrics data has been committed to a new branch and a pull request has been created." >> $GITHUB_STEP_SUMMARY
+              if [ -n "${PR_URL:-}" ]; then
+                echo "**PR URL:** $PR_URL" >> $GITHUB_STEP_SUMMARY
+              fi
             else
               echo "### ℹ️ No Changes" >> $GITHUB_STEP_SUMMARY
               echo "No changes detected - metrics data is up to date." >> $GITHUB_STEP_SUMMARY
