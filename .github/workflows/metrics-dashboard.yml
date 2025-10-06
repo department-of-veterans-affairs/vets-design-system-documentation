@@ -220,7 +220,8 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git add src/assets/data/metrics/ src/_data/metrics/
+          # Only add the specific metric files that were generated, not all files in the directories
+          git add src/assets/data/metrics/*.json src/_data/metrics/*.json src/_data/metrics/*.csv
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in metrics data"
