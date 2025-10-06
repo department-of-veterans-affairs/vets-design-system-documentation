@@ -248,7 +248,7 @@ $chart-responsive-breakpoint: 600px;
     
     // Stack trend text on smaller screens to prevent overflow
     flex-direction: column;
-    gap: 2px;
+    gap: var(--vads-spacing-0p25);
     
     .trend-icon {
       font-size: var(--vads-font-size-xs);
