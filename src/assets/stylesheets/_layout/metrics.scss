@@ -251,7 +251,7 @@ $chart-responsive-breakpoint: 600px;
     gap: 2px;
     
     .trend-icon {
-      font-size: 12px;
+      font-size: var(--vads-font-size-xs);
     }
   }
   
