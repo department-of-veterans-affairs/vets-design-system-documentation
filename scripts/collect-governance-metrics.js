@@ -125,7 +125,8 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
     console.log(`  Search query: ${searchQuery}`);
     
     // First, get the total count to know how many pages we need
-    const totalCountOutput = execSync(`gh api "search/issues?q=${searchQuery}" --jq '.total_count' | cat`, {
+    // Use parameterized approach to prevent command injection
+    const totalCountOutput = execSync(`gh api search/issues -f q=${JSON.stringify(searchQuery)} --jq '.total_count'`, {
       encoding: 'utf8',
       maxBuffer: 1024 * 1024,
       timeout: 15000
@@ -139,7 +140,8 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
     }
     
     // Use GitHub CLI pagination to get all results
-    const output = execSync(`gh api "search/issues?q=${searchQuery}" --paginate --jq '.items[] | {number, title, state, created_at, closed_at, labels: [.labels[].name], url}' | cat`, {
+    // Use parameterized approach to prevent command injection
+    const output = execSync(`gh api search/issues -f q=${JSON.stringify(searchQuery)} --paginate --jq '.items[] | {number, title, state, created_at, closed_at, labels: [.labels[].name], url}'`, {
       encoding: 'utf8',
       maxBuffer: 50 * 1024 * 1024, // Increase buffer for paginated results
       timeout: 120000 // 2 minute timeout for large result sets
@@ -309,7 +311,7 @@ async function getCurrentParticipatingTeams() {
     console.log('Searching for currently open collaboration-cycle issues...');
     const searchQuery = `repo:${REPO}+label:"collaboration-cycle"+type:issue+state:open`;
     
-    const output = execSync(`gh api "search/issues?q=${searchQuery}" --jq '.total_count'`, {
+    const output = execSync(`gh api search/issues -f q=${JSON.stringify(searchQuery)} --jq '.total_count'`, {
       encoding: 'utf8',
       maxBuffer: 1 * 1024 * 1024,
       timeout: 15000 // 15 second timeout
