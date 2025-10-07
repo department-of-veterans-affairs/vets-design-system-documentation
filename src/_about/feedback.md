@@ -1,10 +1,20 @@
 ---
 layout: documentation
 title: Feedback
-intro-text: We are always looking to make improvements. If you notice anything on this site that is unclear or isn’t functioning in a way you expect, please contact us so we can make it better for you.
+intro-text: We are always looking to make improvements. If you notice anything on this site that is unclear or isn't functioning in a way you expect, please contact us so we can make it better for you.
 ---
 
 ## Providing feedback
+
+### Get immediate support
+
+For technical support, urgent issues, or quick questions about using the design system:
+
+<va-link-action
+  href="{{ site.slack_channel_link }}"
+  text="Join {{ site.slack_channel_name }} on Slack"
+  type="secondary"
+></va-link-action>
 
 ### New component or pattern
 
@@ -26,6 +36,19 @@ For minor changes, bugs, and documentation updates read our guidance on the corr
   type="secondary"
 ></va-link-action>
 
+### Component feedback
+
+Each component includes a dedicated github discussion to collect feedback about component usage.
+
+<va-link-action
+  href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions"
+  text="Give feedback about a specific component"
+  type="secondary"
+></va-link-action>
+
 ## Questions or comments about the content style guide
 
-Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov?subject=Content%20style%20guide) with “Content style guide” in the subject line.
+Email us at [vawebdesign@va.gov](mailto:vawebdesign@va.gov?subject=Content%20style%20guide) with "Content style guide" in the subject line.
+
+
+
