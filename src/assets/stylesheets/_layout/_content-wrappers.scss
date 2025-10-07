@@ -253,7 +253,7 @@
   > ol > li > code,
   > ul > li > code {
     background-color: rgba(0,0,0,.07) !important;
-    font-family: $font-monospace;
+    font-family: $font-mono;
     padding: 2px 0 !important;
 
     &:before,
@@ -272,7 +272,7 @@
 
 .code {
   background-color: rgba(0,0,0,.05) !important;
-  font-family: $font-monospace;
+  font-family: $font-mono;
   padding-left: 0 !important;
   padding-right: 0 !important;
 
