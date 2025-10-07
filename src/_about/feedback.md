@@ -38,7 +38,7 @@ For minor changes, bugs, and documentation updates read our guidance on the corr
 
 ### Component feedback
 
-Each component includes a dedicated github discussion to collect feedback about component usage.
+Each component includes a dedicated GitHub discussion to collect feedback about component usage.
 
 <va-link-action
   href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions"
