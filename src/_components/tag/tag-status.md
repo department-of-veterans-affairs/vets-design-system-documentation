@@ -69,7 +69,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 ### How to use tags
 
-* **Status updates within containers.** To indicate a status in a card, table, or container. See the [Card guidance]({{ site.baseurl }}/components/card/) when using a Tag within cards.
+* **Status updates within containers.** Use Status Tags to indicate status within containers such as cards, tables, or other UI elements. See the [Card guidance]({{ site.baseurl }}/components/card/) when using a Tag within cards.
 * **For data-heavy interfaces.** Use Tags - Status to help users quickly scan and prioritize information based on semantic meaning.
 * **Tags should not be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
 * **Test for user confusion.** You might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
