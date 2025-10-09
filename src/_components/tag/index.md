@@ -34,7 +34,7 @@ anchors:
 
 * **For status communication.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component when you need to communicate current state, condition, or progress with semantic color meanings.
 * **When users are likely to confuse a static tag with a button.** For example, when the label appears in the same area of the page as buttons.
-* **When the tag functions as a title.** When the tag content is more accurately described as the title or primary identifier of the content. For example, avoid using an "Education Benefits" tag on a card about Education Benefits. Use the [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) header style, which is a short, descriptive title placed above the main heading to provide additional context.
+* **When the tag functions as a title.** When the tag content is more accurately described as the title or primary identifier of the content. Use the [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) header style, which is a short, descriptive title placed above the main heading to provide additional context.
 * **When users already expect content to be updated frequently.** For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.
 
 
