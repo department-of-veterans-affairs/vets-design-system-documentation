@@ -4,7 +4,7 @@ title: Tag - Status
 permalink: /components/tag/tag-status/
 has-parent: /components/tag/
 intro-text: A status tag indicates the current state or condition of content, processes, or items.
-figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1295%3A9688&mode=design&t=gIDFGH785CqLb8c6-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=39019-83
 github-title: va-tag-status
 status: use-with-caution-candidate
 web: true
@@ -14,6 +14,9 @@ anchors:
   - anchor: Examples - Colored variations
   - anchor: Usage
   - anchor: Accessibility considerations
+  - anchor: Content considerations
+  - anchor: Related
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -77,7 +80,11 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 ## Accessibility considerations
 
-[Need to add]
+* **Color and meaning.** When colored tags are used to convey semantic meaning, ensure that the information is also available through other means such as text, icons, or context. Don't rely solely on color to communicate important information.
+* **Contrast requirements.** All colored tag variations meet WCAG 2.1 AA color contrast requirements for both text and background colors.
+* **Screen reader support.** Consider including visually hidden text or aria-labels that describe the semantic meaning (e.g., "Error:", "Success:", "Warning:") for screen reader users.
+* **Dynamic content.** When tags are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.
+* **Focus indicators.** For interactive tags, ensure proper focus indicators are visible for keyboard navigation users.
 
 ## Content considerations
 
@@ -92,3 +99,5 @@ Used to indicate critical issues, failure states, or items that require immediat
 * [Alert]({{ site.baseurl }}/components/alert/)
 * [Card]({{ site.baseurl }}/components/card/)
 * [Snackbar]({{ site.baseurl }}/components/snackbar/)
+
+{% include _component-checklist.html component_name="va-tag-status" %}

@@ -14,6 +14,8 @@ anchors:
   - anchor: Examples
   - anchor: Usage
   - anchor: Accessibility considerations
+  - anchor: Related
+  - anchor: Component checklist
 ---
 
 ## Examples
@@ -51,5 +53,7 @@ When tags are used to call out new content that is dynamically loaded onto a pag
 
 ## Related
 
-* [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) - For communicating current state, condition, or progress with semantic colors
-* [Card]({{ site.baseurl }}/components/card/) - Tags are commonly used within cards for categorization and labeling
+* [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
+* [Card]({{ site.baseurl }}/components/card/)
+
+{% include _component-checklist.html component_name="va-tag" %}
