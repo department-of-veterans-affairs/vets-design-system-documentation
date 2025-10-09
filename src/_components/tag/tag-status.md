@@ -71,7 +71,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Tags should not be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
 * **Test for user confusion.** You might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
 * **Use tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
-* **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for you.
+* **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
 * **Don't rely on color alone.** Make sure the semantic meaning is also conveyed through clear text labels to maintain accessibility.
 * **For status within cards.** When using tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#using-status-tags-in-cards) for specific implementation details and best practices.
 
