@@ -53,7 +53,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 * **To communicate current state or progress.** Status Tags help users quickly understand the status of an item, process, or workflow—such as "Pending," "Approved," or "Error"—at a glance.
 * **To indicate urgency or required action.** Use warning or error Status Tags to signal items that need attention or immediate action, helping users prioritize tasks.
-* **To provide scannable feedback with semantic meaning.** Status Tags combine color and short labels to communicate meaning consistently, making it easier to scan lists, tables, or dashboards.
+* **To provide scannable feedback at a glance.** Status Tags combine color and short labels to communicate meaning consistently, making it easier to scan lists, tables, or dashboards.
 
 {% include content/tag-status-vs-tag.md %}
 
