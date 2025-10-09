@@ -7,7 +7,7 @@
 - Choose when color and text indicate urgency, priority, or required action.
 
 #### Tags
-**Tags** organize or group items by type or category (like "Benefit Type" or "Document Category"). They help sort information but don’t indicate status.
+Tags organize or group items by type or category (like "Benefit Type" or "Document Category"). They help sort information but don’t indicate status.
 
 - Use for labeling or categorizing items.
 - Choose when color isn’t tied to urgency or meaning.
