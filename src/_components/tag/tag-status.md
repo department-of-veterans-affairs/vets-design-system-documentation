@@ -75,7 +75,6 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Test for user confusion.** You might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
 * **Use tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
-* **Don't rely on color alone.** Make sure the semantic meaning is also conveyed through clear text labels to maintain accessibility.
 * **For status within cards.** When using tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#using-status-tags-in-cards) for specific implementation details and best practices.
 
 ## Accessibility considerations
@@ -84,7 +83,6 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Contrast requirements.** All colored tag variations meet WCAG 2.1 AA color contrast requirements for both text and background colors.
 * **Screen reader support.** Consider including visually hidden text or aria-labels that describe the semantic meaning (e.g., "Error:", "Success:", "Warning:") for screen reader users.
 * **Dynamic content.** When tags are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.
-* **Focus indicators.** For interactive tags, ensure proper focus indicators are visible for keyboard navigation users.
 
 ## Content considerations
 
