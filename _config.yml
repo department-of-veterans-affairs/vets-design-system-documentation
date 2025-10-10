@@ -81,6 +81,9 @@ collections:
   ia:
     output: true
     permalink: /:collection/:title
+  deprecated:
+    output: true
+    permalink: /deprecated/:title
 
 include:
   - vendor/javascripts/component-library/dist/esm/_commonjsHelpers-8b28c6fa.js

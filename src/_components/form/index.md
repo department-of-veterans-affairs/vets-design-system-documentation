@@ -12,7 +12,6 @@ sub-pages:
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input
-  - sub-page: Input message
   - sub-page: Label
   - sub-page: Need help?
   - sub-page: Penalty notice

@@ -9,7 +9,10 @@
     {% include _side-nav.html section=site.foundation name="foundation" %}
     {% assign collection_name = "Foundation" %}
   {% elsif page.url contains "/components/" %}
-    {% include _side-nav.html section=site.components name="components" %}
+    {% include _site-side-nav-components.html name="components" %}
+    {% assign collection_name = "Components" %}
+  {% elsif page.url contains "/deprecated/" %}
+    {% include _site-side-nav-components.html name="components" %}
     {% assign collection_name = "Components" %}
   {% elsif page.url contains "/patterns/" %}
     {% include _site-side-nav-patterns.html name="patterns" %}
