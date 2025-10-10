@@ -46,7 +46,7 @@ anchors:
 
 - **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
 - **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take.
-- **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
+- **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component or an icon with a text description to indicate the status.
 
 ### When to consider something else
 
@@ -76,10 +76,10 @@ anchors:
 
 <img src="{{ site.baseurl }}/images/components/card/status.png" alt="Status card via Tag" style="width:100%;"/>
 
-Use this variation when you have a short status which can use the [Tag component]({{ site.baseurl }}/components/tag).
+Use this variation when you have a short status which can use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component.
 
 1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
-2. **Status.** Status using the [Tag component]({{ site.baseurl }}/components/tag). Status should: announce "status" by screen readers, the visible status text, and the header text. See [accessibility considerations](#accessibility-considerations) for more details.
+2. **Status.** Status using the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component. Status should: announce "status" by screen readers, the visible status text, and the header text. See [accessibility considerations](#accessibility-considerations) for more details.
 3. **Header.** Header that summarizes the card's content.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
 5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
@@ -155,8 +155,7 @@ There are many instances of the Card component in production. This is not an exh
 
 ### Communicating status
 
-- **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
-  - NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.
+- **Status Tag for status.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to communicate status within cards.
 - **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.
 - **Color and another.** Never rely on color alone to communicate status.
 
@@ -254,5 +253,6 @@ Sub-components used in this component:
 - [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
 - [Link - Action]({{ site.baseurl }}/components/link/action)
 - [Tag]({{ site.baseurl }}/components/tag)
+- [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
 
 Also see the [Service list item]({{ site.baseurl }}/components/service-list-item) component

@@ -56,6 +56,8 @@ Used to indicate success.
 
 {% include storybook-preview.html story="uswds-va-alert--error" link_text="va-alert error" height="220px" %}
 
+Used to indicate critical issues, failure states, or items that require immediate attention.
+
 ### Mobile app
 
 #### Informational alert (aka default)
