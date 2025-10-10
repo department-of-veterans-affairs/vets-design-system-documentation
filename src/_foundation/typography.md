@@ -61,7 +61,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ---
 
 <section class="usa-grid-full">
-    <h4>Roboto Mono (<code>.vads-u-font-family--monospace</code>)</h4>
+    <h4>Roboto Mono (<code>.vads-u-font-family--mono</code>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -70,7 +70,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
             <p>Special consideration is given to code display, with clear distinction between similar characters like 0 (zero) and O (capital O), and between 1 (one), l (lowercase L), and I (capital i). This makes Roboto Mono ideal for displaying code, configuration files, and other technical content.</p>
         </div>
 
-        <div class="vads-u-font-family--monospace typography-mono-intro usa-width-one-half usa-end-row">
+        <div class="vads-u-font-family--mono typography-mono-intro usa-width-one-half usa-end-row">
             <span class="text-huge">Aa</span>
             <div>
                 <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
@@ -169,19 +169,19 @@ Use monospace fonts for numerical data in tables, such as percentages, currency,
 </thead>
 <tbody>
 <tr>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">$1,234.56</td>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">3.25%</td>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">$156.78</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$1,234.56</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">3.25%</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$156.78</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">$987.65</td>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">4.50%</td>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">$89.34</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$987.65</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">4.50%</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$89.34</td>
 </tr>
 <tr>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">$10,000.00</td>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">2.75%</td>
-<td class="vads-u-font-family--monospace vads-u-text-align--right">$1,250.00</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$10,000.00</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">2.75%</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$1,250.00</td>
 </tr>
 </tbody>
 </table>
@@ -205,18 +205,18 @@ Do not use monospace fonts for phone numbers, zip codes, dates, or other data th
 <tbody>
 <tr>
 <td>Health Care</td>
-<td class="vads-u-font-family--monospace">(555) 123-4567</td>
-<td class="vads-u-font-family--monospace">12345</td>
+<td class="vads-u-font-family--mono">(555) 123-4567</td>
+<td class="vads-u-font-family--mono">12345</td>
 </tr>
 <tr>
 <td>Disability Benefits</td>
-<td class="vads-u-font-family--monospace">(800) 827-1000</td>
-<td class="vads-u-font-family--monospace">90210</td>
+<td class="vads-u-font-family--mono">(800) 827-1000</td>
+<td class="vads-u-font-family--mono">90210</td>
 </tr>
 <tr>
 <td>Education Benefits</td>
-<td class="vads-u-font-family--monospace">(888) 442-4551</td>
-<td class="vads-u-font-family--monospace">10001</td>
+<td class="vads-u-font-family--mono">(888) 442-4551</td>
+<td class="vads-u-font-family--mono">10001</td>
 </tr>
 </tbody>
 </table>
