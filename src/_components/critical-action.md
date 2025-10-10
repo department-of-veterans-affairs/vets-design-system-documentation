@@ -5,6 +5,7 @@ intro-text: The Critical Action component is used to highlight important and/or 
 status: use-with-caution-candidate
 research-title: Critical Action
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=31143-5822&t=HFKAGuzWFnrLMXTF-1
+github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4800
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
 draft: false
 web-component: va-critical-action

@@ -8,6 +8,7 @@ title: File input
 intro-text: "File input allows users to attach files, one at a time, to be uploaded."
 research-title: Form controls
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85508&mode=design&t=TiJHClaf3VQ6wU6B-1
+github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4609
 status: use-with-caution-available
 uswds-v3: default
 web-component: va-file-input

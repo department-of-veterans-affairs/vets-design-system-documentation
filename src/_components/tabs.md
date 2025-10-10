@@ -7,6 +7,7 @@ status: use-with-caution-available
 web: true
 mobile-app: false
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=24991-2000
+github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4443
 anchors:
   - anchor: Examples
   - anchor: Usage
