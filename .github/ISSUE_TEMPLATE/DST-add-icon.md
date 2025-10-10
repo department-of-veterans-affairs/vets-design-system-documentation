@@ -7,19 +7,30 @@ assignees: babsdenney, danbrady, jeana-adhoc
 
 ---
 
+## What happens when you submit this request
+
+The Design System team will:
+1. **Review** your request to ensure the icon meets criteria for addition to the system
+2. **Add** the approved icon to Figma, code libraries, and documentation
+3. **Deploy** the icon across VA.gov applications
+
+**Tip:** Click "Subscribe" on the right side of this issue to receive email updates on progress.
+
 ## Configuring this issue
-- [ ] List all icons, links to icons in [Material Icons](https://fonts.google.com/icons), descriptions, and categories below. 
-- [ ] Complete sections below
-- [ ] Delete this section once complete
+- [ ] List all icons, links to icons in [Material Icons](https://fonts.google.com/icons), descriptions, and categories in the description section below. 
+- [ ] Add any details if needed.
+- [ ] Delete this section once complete.
+
 ## Description
 
-- [Icon](): Categories, Description
+| Icon Name/Link | Categories | Description |
+|----------------|------------|-------------|
+| [Icon]()       | Add category this icon would be added to. You can see current categories on the [Icon](https://design.va.gov/components/icon#preview) page. | Add a description of what this icon would be used for. |
 
 ## Details
 _optional, delete section if not needed_
 
-
-## Tasks
+## DST Tasks
 You will need to add the icons to the following locations. 
 
 1. [VADS Component Library in Figma](https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?node-id=293-6211)

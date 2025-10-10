@@ -3,10 +3,12 @@ layout: component
 title: Service List Item
 intro-text: The Service List Item summarizes a benefit or tool. For example, a Service List Item could show the most important details about an appointment, prescription, or benefit. It shows high-level details, offers a link to view more information, and can alert the user to any actions that need to be taken. It is always displayed in a list, as described in the “Help Users to… Manage Benefits and Tools” pattern.
 research-title: Service List Item
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=31161-83&t=HFKAGuzWFnrLMXTF-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=31161-83&t=HFKAGuzWFnrLMXTF-1
 contributors: Lynn Stahl (Agile Six), Adam Whitlock (Ad Hoc), Belle Poopongpanit (Agile Six), Christine Rose Steiffer (Agile Six), Kristen Faiferlick (Ad Hoc)
 draft: false
 web-component: va-service-list-item
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Content considerations

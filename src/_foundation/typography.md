@@ -8,7 +8,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ## Fonts
 
 <section id="sans" class="usa-grid-full">
-    <h4>Source Sans Pro (<tt>.vads-u-font-family--sans</tt>)</h4>
+    <h4>Source Sans Pro (<code>.vads-u-font-family--sans</code>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -32,7 +32,7 @@ intro-text: Typographical selections intended to meet the highest standards of u
 ---
 
 <section class="usa-grid-full">
-    <h4>Bitter (<tt>.vads-u-font-family--serif</tt>)</h4>
+    <h4>Bitter (<code>.vads-u-font-family--serif</code>)</h4>
 
     <div>
         <div class="usa-width-one-half">
@@ -60,10 +60,32 @@ intro-text: Typographical selections intended to meet the highest standards of u
 
 ---
 
+<section class="usa-grid-full">
+    <h4>Roboto Mono (<code>.vads-u-font-family--mono</code>)</h4>
+
+    <div>
+        <div class="usa-width-one-half">
+            <p><a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono</a> is a monospace addition to the Roboto type family. Like the other members of the Roboto family, the fonts are optimized for readability on screens across a wide variety of devices and reading environments.</p>
+            <p>While the monospace version is related to its variable width cousin, it doesn't hesitate to change forms when so beneficial. For instance, narrow glyphs like 'I', 'l' and 'i' have added serifs for more even texture while wider glyphs are adjusted for weight. Curved caps like 'C' and 'O' take on the straighter sides from Roboto Condensed.</p>
+            <p>Special consideration is given to code display, with clear distinction between similar characters like 0 (zero) and O (capital O), and between 1 (one), l (lowercase L), and I (capital i). This makes Roboto Mono ideal for displaying code, configuration files, and other technical content.</p>
+        </div>
+
+        <div class="vads-u-font-family--mono typography-mono-intro usa-width-one-half usa-end-row">
+            <span class="text-huge">Aa</span>
+            <div>
+                <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+                <p class="text-tiny">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                <p class="text-tiny">0 1 2 3 4 5 6 7 8 9 ! @ # $ % ^ & * ( ) - _ = +</p>
+                <p class="text-tiny">{ } [ ] | \ : ; " ' &lt; &gt; , . ? /</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <style scoped>
     .text-tiny {
-        margin: 5px initial 0;
+        margin: 0.3125rem 0 0;
+        font-size: 0.9375rem;
     }
 
     .text-tiny:first-child {
@@ -71,25 +93,8 @@ intro-text: Typographical selections intended to meet the highest standards of u
     }
 
     .text-huge {
-        font-size: 140px;
+        font-size: 8.75rem;
         line-height: 1.05;
-    }
-
-    .text-tiny {
-        font-size: 15px;
-    }
-
-    .typography-serif-intro .text-huge {
-        font-size: 120px;
-        line-height: 1.275;
-    }
-
-    .typography-serif-intro .text-tiny {
-        font-size: 13px;
-    }
-
-    .usa-grid-full {
-      max-width: none;
     }
 </style>
 
@@ -141,7 +146,85 @@ Don’t change heading level in order to use a different font size.
 
 {% include content/avoid-links-in-headers.md %}
 
-### Eyebrow
+## Monospace fonts
+
+Use monospace fonts sparingly. Monospace fonts can be difficult to read, especially at small sizes or with poor color contrast. Use monospace fonts for numerical data in tables, code examples, or when precise horizontal alignment is needed. For body text, choose a sans serif typeface.
+
+Monospace fonts may also be suitable for specific medical terminology, where horizontal alignment can enhance scannability. Consider whether the monospace font will enhance readability or make it more difficult. Refer to this article, [Recommendations for Pharmacists from AFB.org](https://www.afb.org/blindness-and-low-vision/your-rights/rx-label-enable-campaign/summary-recommendations-pharmacists) for more information.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Do</h3>
+<div class="do-dont__content" markdown="1">
+Use monospace fonts for numerical data in tables, such as percentages, currency, or totals.
+
+#### Example
+<table class="usa-table usa-table--borderless">
+<thead>
+<tr>
+<th class="vads-u-text-align--right">Balance</th>
+<th class="vads-u-text-align--right">Interest Rate</th>
+<th class="vads-u-text-align--right">Monthly Payment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$1,234.56</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">3.25%</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$156.78</td>
+</tr>
+<tr>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$987.65</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">4.50%</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$89.34</td>
+</tr>
+<tr>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$10,000.00</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">2.75%</td>
+<td class="vads-u-font-family--mono vads-u-text-align--right">$1,250.00</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Don't</h3>
+<div class="do-dont__content" markdown="1">
+Do not use monospace fonts for phone numbers, zip codes, dates, or other data that can’t be added up.
+
+#### Example
+<table class="usa-table usa-table--borderless">
+<thead>
+<tr>
+<th class="vads-u-text-align--left">Service</th>
+<th class="vads-u-text-align--left">Phone number</th>
+<th class="vads-u-text-align--left">Zip Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Health Care</td>
+<td class="vads-u-font-family--mono">(555) 123-4567</td>
+<td class="vads-u-font-family--mono">12345</td>
+</tr>
+<tr>
+<td>Disability Benefits</td>
+<td class="vads-u-font-family--mono">(800) 827-1000</td>
+<td class="vads-u-font-family--mono">90210</td>
+</tr>
+<tr>
+<td>Education Benefits</td>
+<td class="vads-u-font-family--mono">(888) 442-4551</td>
+<td class="vads-u-font-family--mono">10001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+## Eyebrow
 
 <div class="site-showcase">
   {% include_relative html/eyebrow.html %}

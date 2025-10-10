@@ -125,6 +125,55 @@ yarn run watch
 yarn build
 ```
 
+### GitHub CLI Integration
+
+Use the GitHub CLI (`gh`) for all GitHub-related operations:
+
+**IMPORTANT**: When using the `--json` flag with any GitHub CLI command, ALWAYS pipe the output to `cat` (e.g., `gh issue list --json number,title | cat`) to prevent the output from going to the less pager which cannot be read by Copilot.
+
+#### Issue Management
+```bash
+# Create new issues
+gh issue create --title "Issue title" --body "Description"
+
+# Update existing issues
+gh issue edit [issue-number] --title "New title" --body "Updated description"
+
+# List issues
+gh issue list --state open
+
+# List issues with JSON output (ALWAYS pipe to cat with --json flag)
+gh issue list --state open --json number,title,body --limit 100 | cat
+
+# Close issues
+gh issue close [issue-number]
+```
+
+#### Pull Request Management
+```bash
+# Create pull requests
+gh pr create --title "PR title" --body "Description" --draft
+
+# Update pull requests
+gh pr edit [pr-number] --title "New title" --body "Updated description"
+
+# Review pull requests
+gh pr review [pr-number] --approve
+gh pr review [pr-number] --request-changes --body "Feedback"
+
+# Merge pull requests
+gh pr merge [pr-number] --squash
+```
+
+#### Repository Operations
+```bash
+# Clone repositories
+gh repo clone department-of-veterans-affairs/vets-design-system-documentation
+
+# View repository information
+gh repo view
+```
+
 ### Contribution Process
 
 1. **Centralized Team**: All contributions go through the Design & Forms Systems team
@@ -247,5 +296,32 @@ When generating or modifying code for this repository:
 6. **Consistency**: Maintain consistency with existing documentation patterns
 7. **Plain Language**: Write for Veterans and their families, not technical audiences
 8. **Cross-Reference**: Link related components, patterns, and guidance appropriately
+9. **Use GitHub CLI**: For all GitHub operations (issues, PRs, repositories), use the `gh` CLI tool rather than manual web interface operations
+   - Create and update issues using `gh issue` commands
+   - Manage pull requests with `gh pr` commands
+   - Perform repository operations with `gh repo` commands
+   - This ensures consistency, traceability, and automation-friendly workflows
+
+## Pull Request Review Guidelines
+
+When reviewing pull requests that modify guidance content in the following paths:
+- `src/_components/**/*.md`
+- `src/_patterns/**/*.md`
+- `src/_templates/**/*.md`
+- `src/_content-style-guide/**/*.md`
+- `src/_foundation/**/*.md`
+- `src/_accessibility/**/*.md`
+- `src/_ia/**/*.md`
+- `src/_about/**/*.md`
+
+**You must perform a comprehensive content style guide review** following the detailed instructions in [.github/prompts/Guidance-follow-content-style-guide.prompt.md](.github/prompts/Guidance-follow-content-style-guide.prompt.md).
+
+This prompt file contains:
+- Critical YAML front matter protection guidelines
+- Specific content style guide requirements and links
+- Review process steps
+- Comment template for providing feedback
+
+Always refer to the latest version of this prompt file when conducting content reviews to ensure you're applying the most current standards and guidelines.
 
 This documentation serves Veterans and the teams that serve them. Every contribution should make it easier for VFS teams to create accessible, consistent, and Veteran-centered digital experiences.
