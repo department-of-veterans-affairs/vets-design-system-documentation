@@ -66,7 +66,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **For system-wide alerts.** Use the [Alert]({{ site.baseurl }}/components/alert/) for page-level or application-level messaging that requires more context or action from you.
 * **For temporary feedback.** Consider using the [Dismissable Alert]({{ site.baseurl }}/components/alert/#dismissible) for web components and the [Snackbar]({{ site.baseurl }}/components/snackbar/) for Mobile app component for brief, dismissible feedback messages.
 * **When you need to mix status tags and tags in a way that confuses their meaning.** Always use semantic colors for Status Tags and neutral or brand colors for Tags.
-
+* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the tag into a clickable element.
 ### How to use tags
 
 * **Status updates within containers.** Use Status Tags to indicate status within containers such as cards, tables, or other UI elements. See the [Card guidance]({{ site.baseurl }}/components/card/) when using a Tag within cards.
