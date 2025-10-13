@@ -33,7 +33,7 @@ Used to provide helpful information or something that warrants a user’s attent
 
 {% include storybook-preview.html story="components-tag--warning" link_text="components-tag--warning" %}
 
-Used to warn a user, such as when there are negative consequences, or when something has gone wrong.
+Used to warn a user, such as when there are negative consequences, or when an action cannot continue.
 
 ### Success status
 
