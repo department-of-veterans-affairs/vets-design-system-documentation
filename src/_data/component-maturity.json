@@ -227,13 +227,5 @@
   "va-textarea": {
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
-  },
-  "va-text": {
-    "maturityCategory": "caution",
-    "maturityLevel": "candidate"
-  },
-  "va-snackbar": {
-    "maturityCategory": "caution",
-    "maturityLevel": "candidate"
   }
 }
