@@ -153,6 +153,9 @@ There are many instances of the Card component in production. This is not an exh
 - **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
 - **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
+### Using status tags in cards
+
+Status tags are used within cards to communicate the current state or status of the information presented. Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to clearly indicate status, such as "In progress", "Completed", or "Needs attention". Ensure that color choices for status tags are accessible and do not rely solely on color to convey meaning.
 ### Communicating status
 
 - **Status Tag for status.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to communicate status within cards.
