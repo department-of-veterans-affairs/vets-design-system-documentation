@@ -21,7 +21,7 @@ anchors:
 
 ## Examples
 
-Colored tags use semantic colors to convey meaning and priority, aligning with the same color conventions used in the [Alert component]({{ site.baseurl }}/components/alert/). Each color variation has a specific semantic meaning that should be consistently applied.
+Status Tags use semantic colors to convey meaning and priority, aligning with the same color conventions used in the [Alert component]({{ site.baseurl }}/components/alert/). Each color variation has a specific semantic meaning that should be consistently applied.
 
 ### Informational status
 
