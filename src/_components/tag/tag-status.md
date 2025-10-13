@@ -75,7 +75,7 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Test for user confusion.** You might confuse tags with buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
 * **Use tags sparingly.** Don't overdo it — if everything on a page is called out as important, nothing is important.
 * **Use semantic colors consistently.** Apply the same color meanings across all components (tags, alerts, etc.) to create a cohesive experience for users.
-* **For status within cards.** When using tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#using-status-tags-in-cards) for specific implementation details and best practices.
+* **For status within cards.** When using tags to communicate status within card components, see the [Card component status guidance]({{ site.baseurl }}/components/card#status-via-tag) for specific implementation details and best practices.
 
 ## Accessibility considerations
 
