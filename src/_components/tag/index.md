@@ -27,7 +27,7 @@ anchors:
 ### When to use a tag
 
 * **To draw attention to new, important content** on a page that might otherwise be missed.
-* **To filter or categorize results** with one or more tags by topic, type, or other categorical information.
+* **To categorize results** with one or more tags by topic, type, or other categorical information.
 * **To indicate quantity or count** of new or unread items within a container. For example, to indicate the number of unread emails within a person's inbox.
 
 {% include content/tag-status-vs-tag.md %}
@@ -37,15 +37,14 @@ anchors:
 * **For status communication.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component when you need to communicate current state, condition, or progress with semantic color meanings.
 * **When users are likely to confuse a static tag with a button.** For example, when the label appears in the same area of the page as buttons.
 * **When the tag functions as a title.** When the tag content is more accurately described as the title or primary identifier of the content. Use the [Eyebrow](https://design.va.gov/foundation/typography#eyebrow) header style, which is a short, descriptive title placed above the main heading to provide additional context.
-* **When users already expect content to be updated frequently.** For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.
-
+* **When the tag functions as a link.** Tags are not intended to be interactive. Use the [critical action component]({{ site.baseurl }}/components/critical-action/) if you're needing to turn the tag into a clickable element.
 
 ### How to use tags
 
-* Users frequently confuse tags as buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
-* Tags should not be interactive. Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
-* Don't mix interactive and static tags on your site. Once you establish a pattern for how tags behave, users will expect that behavior every time.
-* Don't overdo it — if everything on a page is called out as important, nothing is important.
+* **Users frequently confuse tags as buttons.** Always conduct usability testing to make sure your particular implementation is not causing frustration.
+* **Tags should not be interactive.** Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
+* **Don't mix interactive and static tags on your site.** Once you establish a pattern for how tags behave, users will expect that behavior every time.
+* **Don't overdo it.** If everything on a page is called out as important, nothing is important.
 
 ## Accessibility considerations
 
@@ -54,6 +53,5 @@ When tags are used to call out new content that is dynamically loaded onto a pag
 ## Related
 
 * [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
-* [Card]({{ site.baseurl }}/components/card/)
 
 {% include _component-checklist.html component_name="va-tag" %}
