@@ -43,7 +43,7 @@ anchors:
 ### How to use tags
 
 * Users frequently confuse tags as buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.
-* If your tags are not interactive, be sure to disable hover, focus, and active styles.
+* Tags should not be interactive. Tags are designed to be static labels that convey information, not clickable elements. They should not have hover, focus, or active states that suggest interactivity.
 * Don't mix interactive and static tags on your site. Once you establish a pattern for how tags behave, users will expect that behavior every time.
 * Don't overdo it — if everything on a page is called out as important, nothing is important.
 
