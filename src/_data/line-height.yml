@@ -11,3 +11,7 @@ line_heights:
     value: 1.62
   - name: 6
     value: 1.75
+  - name: serif
+    value: 1.9
+  - name: mono
+    value: 1.7

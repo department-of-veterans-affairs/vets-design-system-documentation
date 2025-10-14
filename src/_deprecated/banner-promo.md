@@ -1,8 +1,7 @@
 ---
 layout: component
 title: Banner - Promo
-permalink: /components/banner/promo
-has-parent: /components/banner/
+status: dont-use-deprecated
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Example-Library?type=design&node-id=1173%3A5043&mode=design&t=vNilCSI60pQBiKkM-1
 intro-text: "A promo banner is fixed content at the bottom of the viewport used for dismissible announcements such as new tools, news, etc."
 research-title: "Promo banners"
