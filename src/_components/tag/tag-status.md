@@ -91,6 +91,19 @@ Used to indicate critical issues, failure states, or items that require immediat
 * **Use consistent terminology.** Apply the same language for similar statuses across the platform (e.g., always use "Approved" rather than mixing "Approved," "Complete," and "Done").
 * **Match semantic meaning.** Ensure the tag text aligns with its color meaning. Don't use error-colored tags for positive messages.
 * **Consider context.** The tag's meaning should be clear within the context where it appears. Avoid jargon or technical terms that Veterans may not understand.
+* - **Statuses**: Currently, the following status names that are known to be in-use:
+  - [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
+  - Appointments:
+    - Upcoming
+    - Requested
+    - Past
+    - Canceled
+  - [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
+    - Claim received
+    - Initial review
+    - Evidence gathering, review, and decision
+    - Preparation for notification
+    - Complete
 
 ## Related
 
