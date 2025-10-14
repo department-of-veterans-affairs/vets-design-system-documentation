@@ -213,19 +213,6 @@ When you want to show benefits or tools the user is currently enrolled in or has
 
 - **Concise headers and text.** Keep card content (especially [header text]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)) short, crisp, and to-the-point: Users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
 - **Translation proof.** Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
-- **Statuses**: Currently, the following status names that are known to be in-use:
-  - [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
-  - Appointments:
-    - Upcoming
-    - Requested
-    - Past
-    - Canceled
-  - [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
-    - Claim received
-    - Initial review
-    - Evidence gathering, review, and decision
-    - Preparation for notification
-    - Complete
 
 ## Accessibility considerations
 
