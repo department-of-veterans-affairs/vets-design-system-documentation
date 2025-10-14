@@ -97,6 +97,38 @@ __All of these descriptions must be true:__
 </div>
 </div>
 
+### Example of non-eligibility-related bulleted list with “or” at the beginning of the list item
+
+In some cases, you may need to add “or” to the beginning of the list item. For example, with list items that have 2 or more sentences, the conjunction may work better at the beginning of the second list item than at the end of the first.
+
+**Note:** This guidance only applies to lists that use “or.”
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+  
+If you want to provide more information about potential errors in our decision, you can use 1 of these 2 options:
+
+-	**Request an informal conference with a VA reviewer.** Our decision may take longer if you choose this option.
+-	**Or submit a written statement.** You must submit your statement with your completed VA Form 20-0996. You can send your documents by mail or submit them in person. We can’t accept written statements if you complete the online form.
+
+</div>
+</div>
+
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+If you want to provide more information about potential errors in our decision, you can use 1 of these 2 options:
+
+- **Request an informal conference with a VA reviewer.** Our decision may take longer if you choose this option, or
+-	**Submit a written statement.** You must submit your statement with your completed VA Form 20-0996. You can send your documents by mail or submit them in person. We can’t accept written statements if you complete the online form.
+
+</div>
+</div>
+</div>
+
 ### Example of bulleted list with more than one sentence
 
 If any item in a bulleted list contains 2 or more full sentences, use ending periods for all items in the list (including any fragments). 
