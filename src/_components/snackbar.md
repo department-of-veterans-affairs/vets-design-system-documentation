@@ -4,8 +4,7 @@ title: Snackbar
 intro-text: Snackbar is a mobile app component that provides feedback regarding API interactions at the bottom of the screen.
 research-title: Snackbar
 figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=250-14
-status: use-best-practice
-web-component: va-snackbar
+status: use-with-caution-candidate
 web: false
 mobile-app: true
 anchors:

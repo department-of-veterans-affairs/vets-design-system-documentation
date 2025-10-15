@@ -4,8 +4,7 @@ title: Text
 intro-text: "Text is a mobile app typography component for headings, body copy, and display text."
 research-title: Text (mobile)
 figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=7072-30
-status: use-best-practice
-web-component: va-text
+status: use-with-caution-candidate
 web: false
 mobile-app: true
 anchors:

@@ -23,6 +23,31 @@
     <div class="site-content vads-u-margin-bottom--9">
       {% include _site-content-nav.html %}
       <article class="site-content__content">
+        {% if page.sidebar %}
+        <main id="main-content" class="site-l-content-wrapper--sidebar desktop-lg:vads-u-margin-top--neg2">
+          <aside class="main-content__sidebar">
+            <va-on-this-page></va-on-this-page>
+          </aside>
+          <div class="main-content__content">
+            {% if page.draft %}
+              {% include _draft.html %}
+            {% endif %}
+            {% if collection_name %}
+              {% include _site-section-name.html %}
+            {% endif %}
+            {% if page.status %}
+              {% include _status.html %}
+            {% endif %}
+            <h1 id="{{ page.title }}">{{ page.title }}</h1>
+            {% if page.intro-text %}
+            <div class="va-introtext" markdown="1">
+              {{ page.intro-text }}
+            </div>
+            {% endif %}
+            {{ content }}
+          </div>
+        </main>
+        {% else %}
         <main id="main-content" class="site-l-content-wrapper--styleguide desktop-lg:vads-u-margin-top--neg2">
           {% if page.draft %}
             {% include _draft.html %}
@@ -42,6 +67,7 @@
           <va-on-this-page></va-on-this-page>
           {{ content }}
         </main>
+        {% endif %}
         {% include edit-on-github.html %}
         {% include timestamps.html %}
         <va-back-to-top></va-back-to-top>
