@@ -139,3 +139,173 @@ these can be removed along with an update to how classes are generated in color-
 .vads-u-background-color--primary-darker {
   background-color: var(--vads-color-primary-darker) !important;
 }
+
+/* Mermaid Charts Styling */
+.mermaid-container {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.mermaid-container .mermaid {
+  background: transparent;
+  max-width: 100%;
+}
+
+.chart-caption {
+  font-style: italic;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--vads-color-base);
+  font-size: 0.875rem;
+}
+
+.mermaid-comparison {
+  margin: 2rem 0;
+}
+
+.mermaid-comparison__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--vads-color-base-darker);
+}
+
+/* Core Mermaid styling */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node polygon {
+  stroke-width: 2px;
+}
+
+.mermaid .node .label {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #1e3a8a;
+}
+
+.mermaid .edgePath .path {
+  stroke-width: 2px;
+  stroke: #4b5563;
+}
+
+.mermaid .edgeLabel {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 1px 4px;
+  font-size: 11px;
+  color: #374151;
+}
+
+/* Generic Mermaid Node Types */
+.mermaid .node {
+  fill: #f0f9ff;
+  stroke: #0f172a;
+}
+
+/* Start/Root nodes */
+.mermaid .node-start rect {
+  fill: #000000;
+}
+
+.mermaid .node-start .label {
+  color: #ffffff;
+}
+
+/* Question/Decision nodes */
+.mermaid .node-question polygon {
+  fill: #E3F2FD;
+  stroke: #1976D2;
+  stroke-width: 2px;
+}
+
+/* Primary answer path nodes (e.g., YES answers) */
+.mermaid .node-answer-primary rect {
+  fill: #FFF9C4;
+  stroke: #F9A825;
+  stroke-width: 2px;
+}
+
+/* Secondary answer path nodes (e.g., NO answers) */
+.mermaid .node-answer-secondary rect {
+  fill: #F3E5F5;
+  stroke: #7B1FA2;
+  stroke-width: 2px;
+}
+
+/* Context/Choice nodes (platform, options, etc.) */
+.mermaid .node-context rect {
+  fill: #E8F5E8;
+  stroke: #4CAF50;
+  stroke-width: 2px;
+}
+
+/* Special/Expert nodes */
+.mermaid .node-special rect {
+  fill: #F3E5F5;
+  stroke: #7B1FA2;
+  stroke-width: 2px;
+}
+
+/* Result nodes - Button outcomes */
+.mermaid .node-result-button rect {
+  fill: #1976D2;
+  stroke-width: 3px;
+}
+
+.mermaid .node-result-button .label {
+  color: #ffffff;
+}
+
+/* Result nodes - Link outcomes */
+.mermaid .node-result-link rect {
+  fill: #388E3C;
+  stroke-width: 3px;
+}
+
+.mermaid .node-result-link .label {
+  color: #ffffff;
+}
+
+/* Result nodes - Action Link outcomes */
+.mermaid .node-result-action rect {
+  fill: #FF9800;
+  stroke-width: 3px;
+}
+
+.mermaid .node-result-action .label {
+  color: #ffffff;
+}
+
+/* Result nodes - Warning/Caution outcomes */
+.mermaid .node-result-warning rect {
+  fill: #F57C00;
+  stroke-width: 3px;
+}
+
+.mermaid .node-result-warning .label {
+  color: #ffffff;
+}
+
+/* Result nodes - Error/Stop outcomes */
+.mermaid .node-result-error rect {
+  fill: #D32F2F;
+  stroke-width: 3px;
+}
+
+.mermaid .node-result-error .label {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .mermaid-container {
+    overflow-x: auto;
+    padding: 0 1rem;
+  }
+  
+  .mermaid {
+    min-width: 600px;
+  }
+}
