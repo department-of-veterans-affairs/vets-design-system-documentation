@@ -87,16 +87,16 @@
     },
     {
       "period": "2025-Q3",
-      "issues_opened": 4,
+      "issues_opened": 6,
       "issues_closed": 0
     }
   ],
   "experimental_summary": {
-    "total_experimental_issues": 148,
+    "total_experimental_issues": 150,
     "open_experimental_issues": 0,
     "closed_experimental_this_month": 0,
     "avg_experimental_resolution_days": 0,
-    "last_updated": "2025-09-05T20:02:26.510Z"
+    "last_updated": "2025-10-15T14:50:06.011Z"
   },
-  "generated_at": "2025-09-05T20:02:26.510Z"
+  "generated_at": "2025-10-15T14:50:06.012Z"
 }
