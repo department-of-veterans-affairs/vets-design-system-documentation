@@ -1,10 +1,10 @@
 // Metrics Dashboard Styles
 // Provides styling for the metrics dashboard page with proper VA Design System tokens
 
-// Breakpoint variables for consistency
-$tablet-breakpoint: 768px;
-$mobile-breakpoint: 480px;
-$chart-responsive-breakpoint: 600px;
+// Breakpoint variables for consistency - aligned with VA Design System breakpoints
+$tablet-breakpoint: 768px; // Matches --vads-breakpoint-md
+$mobile-breakpoint: 481px; // Matches --vads-breakpoint-sm
+$chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
 
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
@@ -151,7 +151,7 @@ $chart-responsive-breakpoint: 600px;
   width: 100%;
   
   // Medium screens: 2 columns (50% width)
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-breakpoint) {
     flex-basis: 50%;
     width: 50%;
   }
@@ -300,12 +300,12 @@ $chart-responsive-breakpoint: 600px;
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-lg);
   padding: 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: var(--vads-shadow-1);
   transition: box-shadow 0.2s ease;
   overflow: hidden;
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: var(--vads-shadow-2);
   }
 
   h4 {
@@ -333,12 +333,12 @@ $chart-responsive-breakpoint: 600px;
 }
 
 .report-placeholder {
-  background: #f9f9f9;
-  border: 2px dashed #ddd;
-  border-radius: 4px;
-  padding: 2rem;
+  background: var(--vads-color-gray-lightest);
+  border: 2px dashed var(--vads-color-gray-lighter);
+  border-radius: var(--vads-radius-sm);
+  padding: var(--vads-spacing-4);
   text-align: center;
-  color: #666;
+  color: var(--vads-color-gray-dark);
   font-style: italic;
 }
 
@@ -346,12 +346,12 @@ $chart-responsive-breakpoint: 600px;
 .report-modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: var(--vads-z-index-modal);
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: var(--vads-color-black-alpha-80);
   cursor: pointer;
 }
 
@@ -366,19 +366,19 @@ $chart-responsive-breakpoint: 600px;
   img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: var(--vads-radius-sm);
   }
 }
 
 .report-modal-close {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+  top: var(--vads-spacing-2);
+  right: var(--vads-spacing-3);
+  color: var(--vads-color-white);
+  font-size: var(--vads-font-size-xl);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
-  z-index: 1001;
+  z-index: calc(var(--vads-z-index-modal) + 1);
 
   &:hover {
     opacity: 0.7;
@@ -387,9 +387,9 @@ $chart-responsive-breakpoint: 600px;
 
 // Chart tooltip styling
 .chart-tooltip {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  border: 1px solid rgba(255,255,255,0.1);
+  font-family: var(--font-family-sans);
+  box-shadow: var(--vads-shadow-2);
+  border: 1px solid var(--vads-color-white-alpha-10);
 }
 
 // Responsive design
