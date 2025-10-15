@@ -1,18 +1,9 @@
 ---
-layout: default
-title: What’s new?
+layout: documentation
+title: What's new?
+intro-text: The latest news and updates on the VA Design System.
 sidebar: true
-anchors:
-  - anchor: Guidance Updates
-  - anchor: VADS Component Library Releases
-  - anchor: Figma Component Library Changelog
 ---
-
-# What’s new?
-
-<div class="va-introtext">
-  The latest news and updates on the VA Design System.
-</div>
 
 ## Guidance Updates
 
@@ -39,4 +30,15 @@ anchors:
 <va-link-action
   href="{{ site.figma_changelog_direct_url }}"
   text="Open Component Library changelog in Figma"
+></va-link-action>
+
+## Content Style Guide Updates
+
+### August 2025
+
+{% include content/whats-new/august-2025.md %}
+
+<va-link-action
+  href="{{ site.baseurl }}/content-style-guide/whats-new"
+  text="Read about older updates in the content style guide what's new page"
 ></va-link-action>
