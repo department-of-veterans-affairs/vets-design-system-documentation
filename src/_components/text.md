@@ -3,9 +3,10 @@ layout: component
 title: Text
 intro-text: "Text is a mobile app typography component for headings, body copy, and display text."
 research-title: Text (mobile)
-figma-link: https://www.figma.com/design/rdLIEaC9rVwX70QbIGkMvG/VA-Mobile---Design-Tokens-Library?m=auto&node-id=2321-2925&t=IbOdMq31rx8WXOoc-1
-status: use-best-practice
-web-component: va-mobile__text
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=7072-30
+status: use-with-caution-candidate
+web: false
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -53,10 +54,4 @@ There are 9 variations of the Text component.
 * Use a Body variation (large, medium, small, x-small) for body copy.
 * Use the Display variation for larger display text.
 
-## Code usage
-
-<va-link-action
-  href="https://design.va.gov/storybook/?path=/docs/va-mobile_text--docs"
-  text="View code usage documentation in Storybook"
-  type="secondary"
-/>
+{% include component-docs.html component_name=page.web-component %}

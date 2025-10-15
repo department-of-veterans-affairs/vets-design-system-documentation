@@ -35,6 +35,7 @@
             {% endif %}
             {% include _component-translations.html %}
             {% include _component-uswds.html %}
+            {% include _component-platforms.html %}
 
             {% if page.intro-text %}
           <div class="va-introtext" markdown="1">
@@ -46,6 +47,7 @@
             <va-on-this-page></va-on-this-page>
           {% endunless %}
           {{ content }}
+          {% include component-feedback.html %}
 
           
         </main>

@@ -1,0 +1,332 @@
+// Metrics Dashboard Styles
+// Provides styling for the metrics dashboard page with proper VA Design System tokens
+
+// Breakpoint variables for consistency
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 480px;
+$chart-responsive-breakpoint: 600px;
+
+.metrics-dashboard {
+  margin: var(--vads-spacing-4) 0;
+}
+
+.metrics-section {
+  margin: var(--vads-spacing-4) 0;
+  padding: var(--vads-spacing-3);
+  border: 1px solid var(--vads-color-gray-lighter);
+  border-radius: var(--vads-radius-sm);
+  
+  // va-tabs styling
+  va-tabs {
+    margin-top: var(--vads-spacing-2);
+    
+    // Style tables within tab panels
+    va-tab-panel {
+      padding: var(--vads-spacing-2) 0;
+      
+      table {
+        margin: var(--vads-spacing-2) 0;
+        width: 100%;
+        border-collapse: collapse;
+        
+        caption {
+          text-align: left;
+          font-weight: var(--font-weight-bold);
+          margin-bottom: var(--vads-spacing-1);
+          color: var(--vads-color-base-darkest);
+          padding: var(--vads-spacing-1) 0;
+        }
+        
+        th, td {
+          padding: var(--vads-spacing-1) var(--vads-spacing-2);
+          text-align: left;
+          border-bottom: 1px solid var(--vads-color-gray-lighter);
+          
+          &:focus {
+            outline: 2px solid var(--vads-color-primary-alt);
+            outline-offset: 1px;
+          }
+        }
+        
+        th {
+          background-color: var(--vads-color-gray-lightest);
+          font-weight: var(--font-weight-bold);
+          color: var(--vads-color-base-darkest);
+          
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+          }
+        }
+        
+        td {
+          // Numeric columns right-align
+          &:nth-child(n+2) {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+          }
+          
+          // Empty state styling
+          &[colspan] {
+            text-align: center;
+            font-style: italic;
+            color: var(--vads-color-gray-dark);
+            padding: var(--vads-spacing-4);
+          }
+        }
+      }
+    }
+  }
+}
+
+.chart-container {
+  height: 400px;
+  margin: var(--vads-spacing-2) 0;
+  background: var(--vads-color-gray-lightest);
+  border-radius: var(--vads-radius-sm);
+  position: relative;
+  
+  // Ensure charts have adequate space on mobile
+  @media (max-width: $tablet-breakpoint) {
+    height: 350px;
+    margin: var(--vads-spacing-3) 0;
+  }
+}
+
+// Table view specific styling
+.metrics-section va-table {
+  margin-top: var(--vads-spacing-2);
+  
+  // Ensure tables are responsive
+  overflow-x: auto;
+  
+  // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
+  @media (min-width: #{$tablet-breakpoint + 1}) {
+    va-table-row span {
+      padding: var(--vads-spacing-1) var(--vads-spacing-2);
+      text-align: left;
+      
+      // Numeric columns right-align on desktop only
+      &:nth-child(n+2) {
+        text-align: right;
+      }
+      
+      // Header row styling
+      va-table-row:first-child & {
+        font-weight: var(--font-weight-bold);
+        background-color: var(--vads-color-gray-lightest);
+        text-align: center;
+      }
+    }
+  }
+  
+  // Empty state styling
+  va-table-row span[colspan] {
+    text-align: center;
+    font-style: italic;
+    color: var(--vads-color-gray-dark);
+    padding: var(--vads-spacing-4);
+  }
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--vads-spacing-2);
+  margin: var(--vads-spacing-4) 0;
+}
+
+.metric-card {
+  text-align: center;
+  padding: var(--vads-spacing-3);
+}
+
+.metric-card h4 {
+  margin: 0 0 var(--vads-spacing-1) 0;
+  font-size: var(--vads-font-size-body-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--vads-color-gray-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-value {
+  line-height: 1.1;
+  margin-bottom: var(--vads-spacing-0p5);
+  color: var(--vads-color-base-darkest);
+}
+
+.metric-trend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--vads-spacing-0p5);
+  font-size: var(--vads-font-size-body-small);
+  font-weight: var(--font-weight-normal);
+  
+  &.trend-up {
+    color: var(--vads-color-success-dark);
+  }
+  
+  &.trend-down {
+    color: var(--vads-color-error-dark);
+  }
+  
+  &.trend-neutral {
+    color: var(--vads-color-gray-dark);
+  }
+  
+  .trend-icon {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  va-icon {
+    --va-icon-size: 16px;
+  }
+}
+
+.chart-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--vads-color-gray-dark);
+  font-style: italic;
+}
+
+.monthly-reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--vads-spacing-3);
+  margin: var(--vads-spacing-2) 0;
+}
+
+.report-card {
+  background: var(--vads-color-white);
+  border: 1px solid var(--vads-color-gray-lighter);
+  border-radius: var(--vads-radius-lg);
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  h4 {
+    margin: 0 0 var(--vads-spacing-1) 0;
+    color: var(--vads-color-primary);
+    font-size: var(--vads-font-size-root);
+    padding: var(--vads-spacing-2) var(--vads-spacing-2) 0 var(--vads-spacing-2);
+  }
+}
+
+.report-date {
+  font-size: var(--vads-font-size-body-small);
+  color: var(--vads-color-gray-dark);
+  margin-bottom: var(--vads-spacing-2);
+  padding: 0 var(--vads-spacing-2) var(--vads-spacing-2) var(--vads-spacing-2);
+}
+
+.report-image {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.report-placeholder {
+  background: #f9f9f9;
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+// Modal styles for report viewing
+.report-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+.report-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+
+.report-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+// Chart tooltip styling
+.chart-tooltip {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+// Responsive design
+@media (max-width: $tablet-breakpoint) {
+  .monthly-reports-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .report-modal-content {
+    max-width: 95%;
+    max-height: 95%;
+  }
+  
+  // Optimize tables for mobile
+  .metrics-section va-table {
+    font-size: var(--vads-font-size-body-small);
+    
+    va-table-row span {
+      padding: var(--vads-spacing-0p5) var(--vads-spacing-1);
+      word-break: break-word;
+    }
+  }
+  
+  // Stack tab labels vertically on very small screens
+  @media (max-width: $mobile-breakpoint) {
+    .metrics-section va-tabs {
+      va-tab-panel {
+        font-size: var(--vads-font-size-body-small);
+      }
+    }
+  }
+}

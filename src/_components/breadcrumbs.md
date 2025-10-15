@@ -2,9 +2,11 @@
 layout: component
 title: Breadcrumbs
 intro-text: "Breadcrumbs provide secondary navigation to help users understand where they are in a website. In addition, the breadcrumb tells search engines how the site is structured, and it can be displayed in search results (for unauthenticated content that doesn’t require users to be logged in). This can improve rankings, and provide users with additional context."
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A151&mode=design&t=ep6tlGT5gNsbWqGP-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A151&mode=design&t=ep6tlGT5gNsbWqGP-1
 uswds-v3: default
 web-component: va-breadcrumbs
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -94,6 +96,10 @@ When a user starts a linear flow on the site (i.e. a form flow or task flow), th
   * This allows a user to use the breadcrumb to return to the beginning of the form flow. The breadcrumb combined with the [Progress bar - Segmented]({{ site.baseurl }}/components/form/progress-bar-segmented) component, provides context for where a user is on the site and within the flow.
   * Other CTAs on the page, such as the [Button group]({{ site.baseurl }}/components/button/button-group) component, can be used to navigate between pages of the flow.
 * When used with the new [Form Step - Minimal template]({{ site.baseurl }}/templates/forms/form-step-minimal), the breadcrumb is a [Back link]({{ site.baseurl }}/components/link/#when-to-use-a-back-link) throughout the form flow.
+
+### Exclude breadcrumbs from the printout of the confirmation page
+
+* In [2024, VFF/MY VA Form Status Research](https://github.com/department-of-veterans-affairs/VA.gov-team-forms/blob/main/Product/2024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research/Research/Research%20Findings%20for%202024-05%20VFF%20and%20My%20VA%20Form%20Submission%20Research%20Study.md) found that 5 of 12 participants indicated they would want to print a copy of their form submission. Breadcrumbs do not provide much value in the final printout so they should be excluded.
 
 {% include component-docs.html component_name=page.web-component %}
 

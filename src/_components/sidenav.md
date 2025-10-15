@@ -4,8 +4,11 @@ title: Side Navigation
 github-title: va-sidenav
 intro-text: "Side Navigation helps users move between a group of related pages."
 research-title: Sidenav
-figma-link: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=34159-3535&t=w2lNwVQNDrEuZwT0-1
+figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?m=auto&node-id=34159-3535&t=w2lNwVQNDrEuZwT0-1
+github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4252
 web-component: va-sidenav
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

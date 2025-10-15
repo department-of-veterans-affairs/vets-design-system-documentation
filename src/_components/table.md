@@ -3,9 +3,11 @@ layout: component
 title: Table
 intro-text: "The table component organizes data into columns and rows."
 research-title: Table
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1879%3A677&mode=design&t=B9iLKTUu5y9dFqd4-1
 uswds-v3: default
 web-component: va-table
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -50,6 +52,7 @@ anchors:
 #### Using the standard table
 
 * **Wrap instead of truncate content.** This reduces confusion in case headers start with the same word.
+* **Use monospace fonts for content that requires precise alignment in tables.** This includes numerical data that can be tabulated and, in some cases, medical terminology. See [Typography]({{ site.baseurl }}/foundation/typography) for detailed guidance on when monospace fonts are appropriate. 
 
 #### Using responsive stacked tables
 
@@ -61,6 +64,7 @@ anchors:
 * **Use the responsive list view table when you need to present a list of information in an itemized way.** A responsive stacked table collapses at narrow widths for better readability on small screens.
 * **Use the standard table when users have to compare rows and columns** as the table layout remains the same on smaller screens.
   * For comparison tables, avoid horizontal scrolling and limit the number of columns to 3 or fewer. All column heading labels should total no more than 60 characters.
+* **Avoid using numerical data in a responsive stacked table.** All data in a stacked table should be left aligned.
 
 {% include component-docs.html component_name=page.web-component %}
 

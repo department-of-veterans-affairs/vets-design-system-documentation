@@ -12,7 +12,6 @@ sub-pages:
   - sub-page: Date input
   - sub-page: Memorable date
   - sub-page: File input
-  - sub-page: Input message
   - sub-page: Label
   - sub-page: Need help?
   - sub-page: Penalty notice
@@ -43,6 +42,9 @@ anchors:
   </p>
   <p>
     View documentation for <a href="{{ site.forms_system_link }}">building forms using the Forms Library</a>.
+  </p>
+  <p>
+    For complete form flow guidance, see <a href="{{ site.baseurl }}/templates/forms/">Form templates</a> and <a href="{{ site.baseurl }}/templates/forms/accessibility-guidelines">Form accessibility guidelines</a>.
   </p>
 </va-summary-box>
 

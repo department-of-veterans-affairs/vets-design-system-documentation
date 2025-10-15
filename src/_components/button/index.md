@@ -4,7 +4,8 @@ permalink: /components/button/
 title: Button
 intro-text: A button draws attention to important actions with a large selectable surface.
 research-link: Buttons
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
+figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-deployed
 sub-pages:
   - sub-page: Button group
@@ -12,6 +13,8 @@ sub-pages:
   - sub-page: Button - Icon
 uswds-v3: primary
 web-component: va-button
+web: true
+mobile-app: true
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -26,6 +29,7 @@ anchors:
 
 ## Examples
 
+{% capture web_content %}
 ### Web
 
 #### Default - Primary
@@ -51,8 +55,10 @@ anchors:
 #### Loading
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--loading" link_text="va-button--loading" %}
+{% endcapture %}
 
-### Mobile
+{% capture mobile_content %}
+### Mobile app
 
 #### Base - Primary
 
@@ -65,6 +71,18 @@ anchors:
 #### Destructive
 
 {% include storybook-preview.html height="100px" story="button--destructive" link_text="va-mobile__button--destructive" is_mobile=true %}
+{% endcapture %}
+
+<va-tabs initially-selected="0" label="Web and Mobile app examples">
+  <va-tab-item button-text="Web" target-id="panel-1"></va-tab-item>
+  <va-tab-panel panel-id="panel-1">
+    {{ web_content | markdownify }}
+  </va-tab-panel>
+  <va-tab-item button-text="Mobile app" target-id="panel-2"></va-tab-item>
+  <va-tab-panel panel-id="panel-2">
+    {{ mobile_content | markdownify }}
+  </va-tab-panel>
+</va-tabs>
 
 ## Usage
 
@@ -78,13 +96,13 @@ anchors:
 
 #### When to use a button
 
-* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Links vs. buttons](#links-vs-buttons).
+* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
 * **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window.
 
 #### When to consider something else
 
-* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [links vs. buttons](#links-vs-buttons).
-* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/link/action).
+* **Non-actions.** For navigation between pages of a website, default to using links. Buttons can be used for navigation between pages within a form flow but otherwise use links. Read the guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
+* **Call-to-action.** For a visually prominent call to action that links to another page, use an [Action link]({{ site.baseurl }}/components/link/#choose-the-right-element-buttons-vs-links).
 
 #### Behavior
 

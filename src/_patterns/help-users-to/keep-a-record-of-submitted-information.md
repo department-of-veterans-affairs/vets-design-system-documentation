@@ -28,11 +28,15 @@ The pattern must display the name of the form, the date of the submission, a con
 
 ### Confirmation page summary
 
-{% include component-example.html alt="An example confirmation page showing a printable copy of their form status, a downloadable PDF, and s task list" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page-status.png" caption="The confirmation page provides a way for the user to 'Print this page', see their submission status and download a copy of their submission PDF. There is also a task list displaying known next steps." width="75%" %}
+{% include component-example.html alt="An example confirmation page showing a printable copy of their form status, a downloadable PDF, and a task list" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/confirmation-page-status.png" width="100%" %}
+
+The confirmation page provides a way for the user to 'Print this page', see their submission status and download a copy of their submission PDF. There is also a task list displaying known next steps.
 
 ### Print preview of confirmation page summary
 
-![print preview of confirmation page summary]({{ site.baseurl }}/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-confirmation-status.png)
+{% include component-example.html alt="An example print preview of their form confirmation details" file="/images/patterns/help-users-to/keep-a-record-of-submitted-information/print-confirmation-status.png" width="75%" %}
+
+Note that breadcrumbs should be excluded from the print preview/final printout, and that the content fills 100% of the print width.
 
 ## How to design and build
 
@@ -70,6 +74,7 @@ The pattern should load at the top of the page beneath the h1 in this order:
 ## Code usage
 - [confirmationView is a web-component pattern available in the Forms library.](https://github.com/department-of-veterans-affairs/vets-website/blob/main/src/platform/forms-system/src/js/components/ConfirmationView/README.md)
 - To provide PDF downloads of form submissions, [call the `fetch_presigned_url` class method](https://github.com/department-of-veterans-affairs/vets-api/blob/master/modules/simple_forms_api/app/services/simple_forms_api/form_remediation/docs/form_submission_pdf_backups.md#s3-pre-signed-url-retrieval)
+- To add your form to My VA, [follow the 'form status on My VA' guidance](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/identity-personalization/my-va/forms-status-on-My-VA/adding-a-form.md)
 
 ## When to consider something else
 

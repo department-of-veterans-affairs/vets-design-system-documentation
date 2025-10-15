@@ -6,10 +6,12 @@ title: "Progress bar - Segmented"
 intro-text: "A segmented progress bar updates users on their progress through a multi-step process."
 aka: Step indicator
 research-title: Progress bars
-figma-link: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1383%3A97673&mode=design&t=h9BoxMWwcHe2DhUd-1
+figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1383%3A97673&mode=design&t=h9BoxMWwcHe2DhUd-1
 status: use-deployed
 uswds-v3: default
 web-component: va-segmented-progress-bar
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage
@@ -60,6 +62,10 @@ anchors:
 ></va-link-action>
 
 ### Additional guidance for VA
+
+The segmented progress bar is primarily used in multi-step form flows to show users their progress through the application process.
+
+For additional guidance on using progress bars in form flows, see [Form templates]({{ site.baseurl }}/templates/forms/) and [Form accessibility guidelines]({{ site.baseurl }}/templates/forms/accessibility-guidelines).
 
 ### When to consider something else
 

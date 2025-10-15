@@ -2,8 +2,10 @@
 layout: component
 title: Icon
 intro-text: "Icons help communicate meaning, actions, status, or feedback. This component provides an easy way to access the foundational iconography of the Design System."
-figma-link: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=293%3A6211&mode=design&t=TEFuX0eQQAyBV7Xh-1
+figma-link-web: https://www.figma.com/file/afurtw4iqQe6y4gXfNfkkk/VADS-Component-Library?type=design&node-id=293%3A6211&mode=design&t=TEFuX0eQQAyBV7Xh-1
 web-component: va-icon
+web: true
+mobile-app: true
 anchors:
   - anchor: Preview
   - anchor: Usage
@@ -208,6 +210,23 @@ We do not advise using icons as links or buttons on their own. Links and buttons
 Exceptions to this are a close button on a modal or an alert. However, it is advised to use the design system component for these scenarios, as they are coded with the proper accessibility attributes.
 
 ## Requesting a new icon
+
+### When to request a new icon
+
+Consider requesting a new icon to be added to the Design System when:
+
+- **No existing icon conveys the intended meaning**: After thoroughly searching both VADS and USWDS icon libraries, you cannot find an icon that clearly represents the concept or action you need to communicate.
+- **The icon serves a broad, reusable purpose**: The icon would be useful across multiple VA applications and teams, not just for a single, specific use case.
+
+### When not to request a new icon
+
+Avoid requesting a new icon when:
+
+- **An existing icon is "close enough"**: If an existing icon can reasonably represent your concept, use it instead of requesting a similar variation
+- **It's purely decorative**: Icons that serve only visual decoration and don't convey meaning should use existing options
+- **It's highly specific to one use case**: Icons that would only be useful in a single application or context should be handled locally rather than added to the system
+- **It duplicates existing functionality**: Multiple icons that serve the same semantic purpose create inconsistency and confusion
+
 <p>
   If your team needs a new icon and wants to suggest adding it to the design system, follow these steps:
 </p>
@@ -226,10 +245,11 @@ Exceptions to this are a close button on a modal or an alert. However, it is adv
           Icons</a> or browse the official <a href="https://www.figma.com/community/file/1014241558898418245/material-design-icons">Material Design Icons</a> Figma plugin by Google. Note that we typically use the "filled" icon style.</p>
       </li>
   <li>
-    <strong>Submit Your Icon</strong>: Once you've found a suitable icon for VADS, submit it using the following link:
+    <strong>Submit Your Icon Request</strong>: If you've identified an icon that meets your needs and aligns with VADS guidelines, you can propose its addition to the Design System using the link below:
     <p>
-      <va-link-action href="{{ site.request_addition_link }}">Request a new addition to the Design System</va-link-action>
+      <va-link-action href="https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/new?template=DST-add-icon.md" text="Request a new addition to the Design System">Request a new addition to the Design System</va-link-action>
     </p>
+    If your request is part of an experimental initiative, please link any related tickets to provide context and ensure visibility for the Design System team.
   </li>
 </ol>
 

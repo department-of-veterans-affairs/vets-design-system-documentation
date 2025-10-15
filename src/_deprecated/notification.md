@@ -1,9 +1,12 @@
 ---
 layout: component
 title: Notification
+status: dont-use-deprecated
 contributor: Angela Agosto, Allison Lu
 intro-text: Provides a visually distinct card in order to surface time-sensitive updates and action items.
 web-component: va-notification
+web: true
+mobile-app: false
 anchors:
   - anchor: Examples
   - anchor: Usage

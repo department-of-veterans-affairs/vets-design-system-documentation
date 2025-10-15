@@ -34,5 +34,11 @@ VA.gov uses two typefaces: Bitter for serif and Source Sans as a sans-serif.
         <span class="vads-u-font-family--serif vads-u-font-size--2xl">Bitter</span>
       </div>
     </div>
+    <div class="vads-grid-col site-showcase__col vads-u-display--flex tablet:vads-u-align-items--center vads-u-flex-direction--column tablet:vads-u-flex-direction--row">
+      <div><code class="code">.vads-u-font-family--mono</code></div>
+      <div class="tablet:vads-u-margin-left--auto">
+        <span class="vads-u-font-family--mono vads-u-font-size--2xl">Monospace</span>
+      </div>
+    </div>
   </div>
 </div>
