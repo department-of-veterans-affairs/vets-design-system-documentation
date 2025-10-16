@@ -97,13 +97,6 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 Use this table as a guide for choosing the appropriate semantic color based on your status text:
 
-| Semantic Color | Use for statuses like | Examples |
-|---|---|---|
-| **Informational** (Blue) | Neutral states, in-progress items, informational notices | "In progress," "Pending," "Scheduled," "Submitted" |
-| **Success** (Green) | Completed, approved, or positive outcomes | "Approved," "Complete," "Confirmed," "Delivered" |
-| **Warning** (Yellow) | Items requiring attention, potential issues, or caution | "Needs attention," "Expiring soon," "Under review," "Delayed" |
-| **Error** (Red) | Failed states, critical issues, rejected items, urgent action required | "Rejected," "Failed," "Overdue," "Action required," "Canceled" |
-
 * **Statuses currently in use**: The following status names are known to be in-use across VA.gov (as of October 2024):
   - [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
   - Appointments:
