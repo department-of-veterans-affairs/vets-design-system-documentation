@@ -95,21 +95,19 @@ Used to indicate critical issues, failure states, or items that require immediat
 
 ### Status examples by semantic color
 
-Use this table as a guide for choosing the appropriate semantic color based on your status text:
-
-* **Statuses currently in use**: The following status names are known to be in-use across VA.gov (as of October 2024):
-  - [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
-  - Appointments:
-    - Upcoming (Informational)
-    - Requested (Informational)
-    - Past (Informational)
-    - Canceled (Error)
-  - [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
-    - Claim received (Informational)
-    - Initial review (Informational)
-    - Evidence gathering, review, and decision (Informational)
-    - Preparation for notification (Informational)
-    - Complete (Success)
+The following status names are known to be in-use across VA.gov (as of October 2024):
+- [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
+- Appointments:
+  - Upcoming (Informational)
+  - Requested (Informational)
+  - Past (Informational)
+  - Canceled (Error)
+- [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
+  - Claim received (Informational)
+  - Initial review (Informational)
+  - Evidence gathering, review, and decision (Informational)
+  - Preparation for notification (Informational)
+  - Complete (Success)
 
 ## Related
 
