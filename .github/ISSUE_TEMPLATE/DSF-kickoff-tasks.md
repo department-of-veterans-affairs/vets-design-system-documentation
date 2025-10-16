@@ -38,6 +38,7 @@ Create these documents for the new component using these templates
 - [ ] Create design ticket 
 	- [ ] Add to sprint
 	- [ ] Associate with the experimental design request or epic
+ - [ ] Meet with the requester and DST designers to discuss use case and requirements (optiona)
 	
 ## Acceptance Criteria
 - [ ] Product outline for the component
