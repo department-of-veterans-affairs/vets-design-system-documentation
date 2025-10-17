@@ -24,25 +24,25 @@ Status Tags use semantic colors to convey meaning and priority, aligning with th
 
 ### Informational status
 
-{% include storybook-preview.html story="components-tag-status--info" link_text="components-tag-status--info" %}
+{% include storybook-preview.html story="components-va-tag-status--informational" link_text="va-tag-status informational" %}
 
 Used to provide helpful information or something that warrants a user’s attention. Not used for negative consequences.
 
 ### Warning status
 
-{% include storybook-preview.html story="components-tag-status--warning" link_text="components-tag-status--warning" %}
+{% include storybook-preview.html story="components-va-tag-status--warning" link_text="va-tag-status warning" %}
 
 Used to warn a user, such as when there are negative consequences, or when an action cannot continue.
 
 ### Success status
 
-{% include storybook-preview.html story="components-tag-status--success" link_text="components-tag-status--success" %}
+{% include storybook-preview.html story="components-va-tag-status--success" link_text="va-tag-status success" %}
 
 Used to indicate success.
 
 ### Error status
 
-{% include storybook-preview.html story="components-tag-status--error" link_text="components-tag-status--error" %}
+{% include storybook-preview.html story="components-va-tag-status--error" link_text="va-tag-status error" %}
 
 Used to indicate critical issues, failure states, or items that require immediate attention.
 
