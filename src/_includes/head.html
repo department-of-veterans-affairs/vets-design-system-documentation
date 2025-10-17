@@ -52,7 +52,167 @@
           rankSpacing: 25,
           curve: 'basis',
           padding: 10
+        },
+        accessibility: {
+          enabled: true
         }
+      });
+
+      // Add keyboard navigation support for Mermaid charts
+      mermaid.run().then(() => {
+        document.querySelectorAll('.mermaid').forEach(chart => {
+          const nodes = chart.querySelectorAll('g.node');
+          
+          // Set up keyboard navigation for each node
+          nodes.forEach((node, index) => {
+            node.setAttribute('tabindex', index === 0 ? '0' : '-1'); // Only first node tabbable initially
+            node.setAttribute('role', 'button');
+            
+            // Add aria-label from node text content
+            const textElement = node.querySelector('foreignObject, text');
+            if (textElement) {
+              const nodeText = textElement.textContent.trim();
+              node.setAttribute('aria-label', nodeText);
+            }
+
+            // Simple keyboard navigation
+            node.addEventListener('keydown', function(e) {
+              const currentNode = e.target.closest('g.node');
+              const allNodesArray = Array.from(nodes);
+              
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                announceSelection(currentNode);
+              }
+              
+              // Simple directional navigation using visual positioning
+              if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                const nextNode = findClosestNodeInDirection(currentNode, allNodesArray, 'right');
+                if (nextNode) {
+                  updateTabIndex(nodes, nextNode);
+                  nextNode.focus();
+                }
+              }
+              
+              if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                const nextNode = findClosestNodeInDirection(currentNode, allNodesArray, 'left');
+                if (nextNode) {
+                  updateTabIndex(nodes, nextNode);
+                  nextNode.focus();
+                }
+              }
+              
+              if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextNode = findClosestNodeInDirection(currentNode, allNodesArray, 'down');
+                if (nextNode) {
+                  updateTabIndex(nodes, nextNode);
+                  nextNode.focus();
+                }
+              }
+              
+              if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const nextNode = findClosestNodeInDirection(currentNode, allNodesArray, 'up');
+                if (nextNode) {
+                  updateTabIndex(nodes, nextNode);
+                  nextNode.focus();
+                }
+              }
+              
+              // Tab moves through nodes in DOM order
+              if (e.key === 'Tab' && !e.shiftKey) {
+                e.preventDefault();
+                const currentIndex = allNodesArray.indexOf(currentNode);
+                const nextIndex = (currentIndex + 1) % allNodesArray.length;
+                updateTabIndex(nodes, allNodesArray[nextIndex]);
+                allNodesArray[nextIndex].focus();
+              }
+              
+              // Shift+Tab moves backward
+              if (e.key === 'Tab' && e.shiftKey) {
+                e.preventDefault();
+                const currentIndex = allNodesArray.indexOf(currentNode);
+                const prevIndex = currentIndex === 0 ? allNodesArray.length - 1 : currentIndex - 1;
+                updateTabIndex(nodes, allNodesArray[prevIndex]);
+                allNodesArray[prevIndex].focus();
+              }
+            });
+          });
+          
+          // Find the closest node in a given direction
+          function findClosestNodeInDirection(currentNode, allNodes, direction) {
+            const currentRect = currentNode.getBoundingClientRect();
+            const currentCenter = {
+              x: currentRect.left + currentRect.width / 2,
+              y: currentRect.top + currentRect.height / 2
+            };
+            
+            let closestNode = null;
+            let closestDistance = Infinity;
+            
+            allNodes.forEach(candidateNode => {
+              if (candidateNode === currentNode) return;
+              
+              const candidateRect = candidateNode.getBoundingClientRect();
+              const candidateCenter = {
+                x: candidateRect.left + candidateRect.width / 2,
+                y: candidateRect.top + candidateRect.height / 2
+              };
+              
+              let isValidDirection = false;
+              let distance = 0;
+              
+              switch(direction) {
+                case 'right':
+                  isValidDirection = candidateCenter.x > currentCenter.x;
+                  distance = Math.abs(candidateCenter.x - currentCenter.x) + 
+                           Math.abs(candidateCenter.y - currentCenter.y) * 2; // Favor horizontal alignment
+                  break;
+                case 'left':
+                  isValidDirection = candidateCenter.x < currentCenter.x;
+                  distance = Math.abs(currentCenter.x - candidateCenter.x) + 
+                           Math.abs(candidateCenter.y - currentCenter.y) * 2; // Favor horizontal alignment
+                  break;
+                case 'down':
+                  isValidDirection = candidateCenter.y > currentCenter.y;
+                  distance = Math.abs(candidateCenter.y - currentCenter.y) + 
+                           Math.abs(candidateCenter.x - currentCenter.x) * 2; // Favor vertical alignment
+                  break;
+                case 'up':
+                  isValidDirection = candidateCenter.y < currentCenter.y;
+                  distance = Math.abs(currentCenter.y - candidateCenter.y) + 
+                           Math.abs(candidateCenter.x - currentCenter.x) * 2; // Favor vertical alignment
+                  break;
+              }
+              
+              if (isValidDirection && distance < closestDistance) {
+                closestDistance = distance;
+                closestNode = candidateNode;
+              }
+            });
+            
+            return closestNode;
+          }
+          
+          // Helper function to announce selections
+          function announceSelection(node) {
+            const announcement = document.createElement('div');
+            announcement.setAttribute('aria-live', 'polite');
+            announcement.setAttribute('class', 'sr-only');
+            announcement.textContent = `Selected: ${node.getAttribute('aria-label')}`;
+            document.body.appendChild(announcement);
+            setTimeout(() => document.body.removeChild(announcement), 1000);
+          }
+          
+          function updateTabIndex(allNodes, focusedNode) {
+            // Set all nodes to tabindex -1, then set focused node to 0
+            allNodes.forEach(node => node.setAttribute('tabindex', '-1'));
+            focusedNode.setAttribute('tabindex', '0');
+          }
+        });
       });
     });
   </script>

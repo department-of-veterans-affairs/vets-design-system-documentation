@@ -203,6 +203,7 @@ these can be removed along with an update to how classes are generated in color-
 .mermaid .node {
   fill: #f0f9ff;
   stroke: #0f172a;
+  cursor: default !important; /* Override any pointer cursor from Mermaid defaults */
 }
 
 /* Start/Root nodes */

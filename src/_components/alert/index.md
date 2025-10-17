@@ -116,6 +116,86 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
   type="secondary"
 ></va-link-action>
 
+### Which Alert variation should I use?
+
+{% include mermaid-chart.html 
+   id="alert-decision-flowchart" 
+   caption="Decision flowchart to help determine which Alert variation to use."
+   chart="
+flowchart TD
+    Start[\"<b>What do I need to communicate?</b>\"]:::node-start --> Scope{\"What's the scope?\"}:::node-question
+    
+    %% Scope Decision
+    Scope --> SiteWide([\"<b>Site-wide</b><br/>Affects entire VA.gov\"]):::node-answer-primary
+    Scope --> PageLevel([\"<b>Page-level</b><br/>Affects specific page/section\"]):::node-answer-secondary
+    
+    %% Site-wide Path - Simple redirect
+    SiteWide --> UseBanner[\"Use Banner component\"]:::node-result-action
+    
+    %% Page-level Path - Alert variations
+    PageLevel --> Purpose{\"What's the purpose?\"}:::node-question
+    Purpose --> Authentication([\"<b>Authentication</b><br/>Sign-in required/optional\"]):::node-answer-primary
+    Purpose --> SystemStatus([\"<b>System Status</b><br/>Application problems\"]):::node-answer-secondary
+    Purpose --> UserFeedback([\"<b>User Feedback</b><br/>Response to user action\"]):::node-answer-primary
+    Purpose --> Information([\"<b>Information</b><br/>Important page content\"]):::node-answer-secondary
+    
+    %% Authentication Path
+    Authentication --> SignInAlert[\"Alert - Sign-in\"]:::node-result-button
+    
+    %% System Status Path
+    SystemStatus --> SysAlert{\"Severity?\"}:::node-question
+    SysAlert --> SysError([\"<b>Broken/Unavailable</b><br/>System error\"]):::node-answer-primary
+    SysAlert --> SysWarning([\"<b>Temporary issue</b><br/>Degraded service\"]):::node-answer-secondary
+    SysError --> ErrorAlert[\"Error Alert\"]:::node-result-error
+    SysWarning --> WarningAlert[\"Warning Alert\"]:::node-result-warning
+    
+    %% User Feedback Path
+    UserFeedback --> FeedbackType{\"What happened?\"}:::node-question
+    FeedbackType --> Success([\"<b>Task completed</b><br/>Form submitted, saved\"]):::node-answer-primary
+    FeedbackType --> UserError([\"<b>User needs to fix</b><br/>Validation, missing info\"]):::node-answer-secondary
+    Success --> SuccessAlert[\"Success Alert\"]:::node-result-button
+    UserError --> UserErrorAlert[\"Error Alert\"]:::node-result-error
+    
+    %% Information Path
+    Information --> InfoType{\"What type of information?\"}:::node-question
+    InfoType --> Standard([\"<b>Standard information</b><br/>Important context or notice\"]):::node-answer-primary
+    InfoType --> Expandable([\"<b>Detailed information</b><br/>Additional context that can be hidden\"]):::node-answer-secondary
+    Standard --> InfoAlert[\"Informational Alert\"]:::node-result-button
+    Expandable --> ExpandableAlert[\"Alert - Expandable\"]:::node-result-action
+" %}
+
+### Where should I place my Alert?
+
+{% include mermaid-chart.html 
+   id="alert-placement-flowchart" 
+   caption="Decision flowchart to help determine where to place your Alert on the page."
+   chart="
+flowchart TD
+    Start[\"<b>Where should I place this Alert?</b>\"]:::node-start --> Trigger{\"When should it appear?\"}:::node-question
+    
+    %% Trigger Decision
+    Trigger --> PageLoad([\"<b>Page load</b><br/>Immediately visible\"]):::node-answer-primary
+    Trigger --> UserAction([\"<b>User action</b><br/>Response to interaction\"]):::node-answer-secondary
+    
+    %% Page Load Path
+    PageLoad --> PageScope{\"What does it affect?\"}:::node-question
+    PageScope --> EntirePage([\"<b>Entire page</b><br/>Page-level concern\"]):::node-answer-primary
+    PageScope --> PageSection([\"<b>Specific section</b><br/>Section-level concern\"]):::node-answer-secondary
+    
+    EntirePage --> TopPage[\"Place at top of page<br/><em>After breadcrumbs, before main content</em>\"]:::node-result-action
+    PageSection --> NearSection[\"Place near relevant section<br/><em>Above the affected content</em>\"]:::node-result-action
+    
+    %% User Action Path
+    UserAction --> ActionType{\"What type of action?\"}:::node-question
+    ActionType --> FormSubmit([\"<b>Form submission</b><br/>Submit, save, etc.\"]):::node-answer-primary
+    ActionType --> FormField([\"<b>Field interaction</b><br/>Validation, help, etc.\"]):::node-answer-secondary
+    ActionType --> GeneralInteraction([\"<b>General interaction</b><br/>Button click, link, etc.\"]):::node-answer-primary
+    
+    FormSubmit --> FormTop[\"Place at top of form<br/><em>Above form title/fields</em>\"]:::node-result-button
+    FormField --> NearField[\"Place near relevant field<br/><em>Below field or fieldset</em>\"]:::node-result-action
+    GeneralInteraction --> ContextualPlace[\"Place contextually<br/><em>Near the triggered element</em>\"]:::node-result-action
+" %}
+
 ### Additional guidance for VA
 
 #### Additional uses of an alert
