@@ -44,7 +44,6 @@ anchors:
 #### Download
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
-W
 #### External
 
 {% include storybook-preview.html story="components-va-link--external" link_text="external va-link" height="50px" %}
