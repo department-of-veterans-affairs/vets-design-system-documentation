@@ -55,32 +55,32 @@ W
 
 ### Mobile app
 
-### Default
+#### Default
 
 {% include storybook-preview.html height="70px" story="link--default" link_text="va-mobile__link--default" is_mobile=true %}
 
-### Attachment
+#### Attachment
 
 {% include storybook-preview.html height="70px" story="link--attachment" link_text="va-mobile__link--attachment" is_mobile=true %}
 
 
-### Directions
+#### Directions
 
 {% include storybook-preview.html height="70px" story="link--directions" link_text="va-mobile__link--directions" is_mobile=true %}
 
-### External link
+#### External link
 
 {% include storybook-preview.html height="70px" story="link--external" link_text="va-mobile__link--external" is_mobile=true %}
 
-### Phone
+#### Phone
 
 {% include storybook-preview.html height="70px" story="link--phone" link_text="va-mobile__link--phone" is_mobile=true %}
 
-### Phone TTY
+#### Phone TTY
 
 {% include storybook-preview.html height="70px" story="link--phone-tty" link_text="va-mobile__link--phone-tty" is_mobile=true %}
 
-### Text (SMS)
+#### Text (SMS)
 
 {% include storybook-preview.html height="70px" story="link--text" link_text="va-mobile__link--text" is_mobile=true %}
 
