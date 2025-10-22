@@ -913,13 +913,13 @@
   resolved "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@department-of-veterans-affairs/component-library@^53.1.0":
-  version "53.1.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/component-library/-/component-library-53.1.0.tgz#36b74ec9755d5204ce54af874f3f5979fcdd7996"
-  integrity sha512-dHWaK1oG6HxUCHcP0b7jcNOf/XZFAhh3shRXmgLWsNhDJk53QXm5ybj3T5/KO2KpqN5lprfPkietJ3Nz3XljPQ==
+"@department-of-veterans-affairs/component-library@^53.2.0":
+  version "53.2.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/component-library/-/component-library-53.2.0.tgz#2eed6faa6e6c82e578634da948f671ae3456f5b2"
+  integrity sha512-4A+9kmoct3HgF2FBtMPxq5q0YbxftRi6b6V5IbW5UmB6vww0cD036DKNoTzdkYa2czOGjfvWCq4eBk5s+13gMw==
   dependencies:
     "@department-of-veterans-affairs/react-components" "28.1.0"
-    "@department-of-veterans-affairs/web-components" "21.1.0"
+    "@department-of-veterans-affairs/web-components" "21.2.0"
     i18next "^21.6.14"
     i18next-browser-languagedetector "^6.1.4"
     react-focus-on "^3.5.1"
@@ -945,10 +945,10 @@
     react-transition-group "1"
     recast "^0.14.4"
 
-"@department-of-veterans-affairs/web-components@21.1.0":
-  version "21.1.0"
-  resolved "https://registry.npmjs.org/@department-of-veterans-affairs/web-components/-/web-components-21.1.0.tgz#c8c5e7d30bd5a4abe4fedf1d2996173c468de46d"
-  integrity sha512-yThlqqbR65Ax46+iAlZCNuIMklNgYkEqMxllC5eF/HvIRQ8E8Ibx+8IVHbDG6XcApEKoNbX4UL7PU/iq5bUKQg==
+"@department-of-veterans-affairs/web-components@21.2.0":
+  version "21.2.0"
+  resolved "https://registry.yarnpkg.com/@department-of-veterans-affairs/web-components/-/web-components-21.2.0.tgz#4e83d5dd27a4604755236235b9f49dd982a62fbf"
+  integrity sha512-vyySGVcNm+TcRLgotnNV1Djsc3thXDkXiouNYW5cgRPGYrsKWZxW7gSHhcrRR+hVeQF+KtGzdQYrSiK0r9Ivvw==
   dependencies:
     "@stencil/core" "4.20.0"
     aria-hidden "^1.1.3"

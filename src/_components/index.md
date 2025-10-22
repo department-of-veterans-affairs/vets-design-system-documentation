@@ -46,7 +46,7 @@ Components in the VA Design System support different platforms and devices. Each
 
 - <span class="usa-label usa-label--platform">Web</span> - The component is available for web browsers on desktop, tablet, and mobile devices. This includes the VA.gov website and other web-based applications.
 
-- <span class="usa-label usa-label--platform">Mobile app</span> - The component is available in the VA Health and Benefits native mobile application.
+- <span class="usa-label usa-label--platform">Mobile app only</span> - The component is only available in the VA Health and Benefits native mobile application.
 
 - <span class="usa-label usa-label--platform">Web, Mobile app</span> - The component is available on both web and mobile app platforms.
 
