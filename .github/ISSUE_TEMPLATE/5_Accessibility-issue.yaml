@@ -1,5 +1,5 @@
-name: "Accessibility Issue"
-description: "Use this template to report accessibility defects following VA.gov & 508 standards."
+name: "Design System Accessibility Issue"
+description: "Use this template to report accessibility defects for VA Design System Components and Patterns"
 labels: ["accessibility", "needs-triage", "platform design system team"]
 
 body:
@@ -41,14 +41,12 @@ body:
     validations:
       required: true
 
-
   - type: textarea
     id: 508
     attributes:
       label: "508 Office"
       description: "If this was a 508 office finding, include those details below."
       placeholder: "Include links to existing tickets if possible"
-
 
   - type: input
     id: url
