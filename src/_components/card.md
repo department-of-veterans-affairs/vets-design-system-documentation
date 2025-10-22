@@ -160,7 +160,7 @@ Status tags are used within cards to communicate the current state or status of 
 
 - **Status Tag for status.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to communicate status within cards.
 - **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.
-- **Use color and another indictor when communicating status.** Never rely on color alone to communicate status.
+- **Use color and another indicator when communicating status.** Never rely on color alone to communicate status.
 
 ### Placement
 
