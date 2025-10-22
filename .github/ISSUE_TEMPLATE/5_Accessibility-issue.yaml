@@ -42,7 +42,7 @@ body:
       required: true
 
   - type: textarea
-    id: 508
+    id: section-508
     attributes:
       label: "508 Office"
       description: "If this was a 508 office finding, include those details below."
