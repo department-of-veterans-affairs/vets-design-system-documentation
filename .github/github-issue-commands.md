@@ -84,7 +84,7 @@ gh issue reopen <issue-number>
 **Use for**: Implementation help, usage questions, best practices
 **Process**: Often redirected to Slack for faster resolution
 
-### 4. Accessibility bug (`5_Accessibility-issue.yaml.md`)
+### 4. Accessibility bug (`5_Accessibility-issue.yml`)
 
 **Use for**: Accessibility bugs found in Design System Components and Patterns
 **Labels**: `accessibility`, `platform-design-system-team`
