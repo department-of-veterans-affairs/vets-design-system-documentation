@@ -171,10 +171,10 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Essential Mermaid fixes */
-.mermaid .cluster rect {
-  fill: none !important;
-  stroke: none !important;
-  opacity: 0 !important;
+.mermaid-container .mermaid .cluster rect {
+  fill: none;
+  stroke: none;
+  opacity: 0;
 }
 
 .mermaid .edgeLabel {
