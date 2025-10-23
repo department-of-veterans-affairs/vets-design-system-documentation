@@ -164,38 +164,6 @@ flowchart TD
     Expandable --> ExpandableAlert[\"Alert - Expandable\"]:::node-result-action
 " %}
 
-### Where should I place my Alert?
-
-{% include mermaid-chart.html 
-   id="alert-placement-flowchart" 
-   caption="Decision flowchart to help determine where to place your Alert on the page."
-   chart="
-flowchart TD
-    Start[\"<b>Where should I place this Alert?</b>\"]:::node-start --> Trigger{\"When should it appear?\"}:::node-question
-    
-    %% Trigger Decision
-    Trigger --> PageLoad([\"<b>Page load</b><br/>Immediately visible\"]):::node-answer-primary
-    Trigger --> UserAction([\"<b>User action</b><br/>Response to interaction\"]):::node-answer-secondary
-    
-    %% Page Load Path
-    PageLoad --> PageScope{\"What does it affect?\"}:::node-question
-    PageScope --> EntirePage([\"<b>Entire page</b><br/>Page-level concern\"]):::node-answer-primary
-    PageScope --> PageSection([\"<b>Specific section</b><br/>Section-level concern\"]):::node-answer-secondary
-    
-    EntirePage --> TopPage[\"Place at top of page<br/><em>After breadcrumbs, before main content</em>\"]:::node-result-action
-    PageSection --> NearSection[\"Place near relevant section<br/><em>Above the affected content</em>\"]:::node-result-action
-    
-    %% User Action Path
-    UserAction --> ActionType{\"What type of action?\"}:::node-question
-    ActionType --> FormSubmit([\"<b>Form submission</b><br/>Submit, save, etc.\"]):::node-answer-primary
-    ActionType --> FormField([\"<b>Field interaction</b><br/>Validation, help, etc.\"]):::node-answer-secondary
-    ActionType --> GeneralInteraction([\"<b>General interaction</b><br/>Button click, link, etc.\"]):::node-answer-primary
-    
-    FormSubmit --> FormTop[\"Place at top of form<br/><em>Above form title/fields</em>\"]:::node-result-button
-    FormField --> NearField[\"Place near relevant field<br/><em>Below field or fieldset</em>\"]:::node-result-action
-    GeneralInteraction --> ContextualPlace[\"Place contextually<br/><em>Near the triggered element</em>\"]:::node-result-action
-" %}
-
 ### Additional guidance for VA
 
 #### Additional uses of an alert
