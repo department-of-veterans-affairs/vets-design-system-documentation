@@ -116,54 +116,6 @@ Any style of alert box can be modified to be a Slim alert. The iconography for S
   type="secondary"
 ></va-link-action>
 
-### Which Alert variation should I use?
-
-{% include mermaid-chart.html 
-   id="alert-decision-flowchart" 
-   caption="Decision flowchart to help determine which Alert variation to use."
-   chart="
-flowchart TD
-    Start[\"<b>What do I need to communicate?</b>\"]:::node-start --> Scope{\"What's the scope?\"}:::node-question
-    
-    %% Scope Decision
-    Scope --> SiteWide([\"<b>Site-wide</b><br/>Affects entire VA.gov\"]):::node-answer-primary
-    Scope --> PageLevel([\"<b>Page-level</b><br/>Affects specific page/section\"]):::node-answer-secondary
-    
-    %% Site-wide Path - Simple redirect
-    SiteWide --> UseBanner[\"Use Banner component\"]:::node-result-action
-    
-    %% Page-level Path - Alert variations
-    PageLevel --> Purpose{\"What's the purpose?\"}:::node-question
-    Purpose --> Authentication([\"<b>Authentication</b><br/>Sign-in required/optional\"]):::node-answer-primary
-    Purpose --> SystemStatus([\"<b>System Status</b><br/>Application problems\"]):::node-answer-secondary
-    Purpose --> UserFeedback([\"<b>User Feedback</b><br/>Response to user action\"]):::node-answer-primary
-    Purpose --> Information([\"<b>Information</b><br/>Important page content\"]):::node-answer-secondary
-    
-    %% Authentication Path
-    Authentication --> SignInAlert[\"Alert - Sign-in\"]:::node-result-button
-    
-    %% System Status Path
-    SystemStatus --> SysAlert{\"Severity?\"}:::node-question
-    SysAlert --> SysError([\"<b>Broken/Unavailable</b><br/>System error\"]):::node-answer-primary
-    SysAlert --> SysWarning([\"<b>Temporary issue</b><br/>Degraded service\"]):::node-answer-secondary
-    SysError --> ErrorAlert[\"Error Alert\"]:::node-result-error
-    SysWarning --> WarningAlert[\"Warning Alert\"]:::node-result-warning
-    
-    %% User Feedback Path
-    UserFeedback --> FeedbackType{\"What happened?\"}:::node-question
-    FeedbackType --> Success([\"<b>Task completed</b><br/>Form submitted, saved\"]):::node-answer-primary
-    FeedbackType --> UserError([\"<b>User needs to fix</b><br/>Validation, missing info\"]):::node-answer-secondary
-    Success --> SuccessAlert[\"Success Alert\"]:::node-result-button
-    UserError --> UserErrorAlert[\"Error Alert\"]:::node-result-error
-    
-    %% Information Path
-    Information --> InfoType{\"What type of information?\"}:::node-question
-    InfoType --> Standard([\"<b>Standard information</b><br/>Important context or notice\"]):::node-answer-primary
-    InfoType --> Expandable([\"<b>Detailed information</b><br/>Additional context that can be hidden\"]):::node-answer-secondary
-    Standard --> InfoAlert[\"Informational Alert\"]:::node-result-button
-    Expandable --> ExpandableAlert[\"Alert - Expandable\"]:::node-result-action
-" %}
-
 ### Additional guidance for VA
 
 #### Additional uses of an alert
