@@ -84,7 +84,7 @@ body:
     id: reproduction-steps
     attributes:
       label: "Steps to reproduce"
-      description: Include instructions that tell us what to navigate to, what to turn on (screen reader), what to do to cause the bug to happen on our devices.
+      description: "Tell us what to navigate to, what to turn on (screen reader), how to recreate the bug on our devices."
       placeholder: |
         1. Navigate to ...
         2. Turn on ...
