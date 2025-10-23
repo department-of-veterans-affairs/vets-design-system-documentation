@@ -43,15 +43,10 @@ Button and link confusion can be very frustrating for assistive technology users
 ### Implementation notes
 
 <div class="mermaid-comparison">
-  <h4 class="mermaid-comparison__title">Current Implementation (Image)</h4>
-  {% include component-example.html alt="A flowchart designed to arrive at a decision between using a button or link." file="/images/components/button/button-or-link-flow-chart.png" caption="Button vs. Link flow chart." %}
-</div>
-
-<div class="mermaid-comparison">
   <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
   {% include mermaid-chart.html 
      id="button-link-decision-flowchart" 
-     caption="Interactive decision flowchart to help determine whether to use a button or link element."
+     caption="Decision flowchart to help determine whether to use a button or link element."
      chart="
 flowchart TD
     Start[\"<b>Should this be a button or a link?</b>\"]:::node-start --> Q1{\"<b>Does it navigate to another page or file?</b>\"}:::node-question
