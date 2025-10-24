@@ -1,13 +1,17 @@
 name: "5. Accessibility Issue"
 description: "Use this template to report accessibility defects for VA Design System Components and Patterns"
-labels: ["accessibility", "needs-triage", "platform design system team"]
-
+labels: ["accessibility", "needs-triage", "platform-design-system-team"]
+title: "[accessibility-defect-X]: Description of bug "
+type: bug
+projects:
+  - https://github.com/orgs/department-of-veterans-affairs/projects/1643/
+  
 body:
   - type: markdown
     attributes:
       value: |
         ## 🎯 Purpose
-        Use this template to file accessibility defects.  
+        Use this template to file accessibility defects with the design system or forms library.  
         Please consult the [Accessibility Defect Severity Rubric](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-defect-severity-rubric) before submitting.
   
   - type: input
@@ -44,15 +48,15 @@ body:
   - type: textarea
     id: section-508
     attributes:
-      label: "508 Office"
-      description: "If this was a 508 office finding, include those details below."
+      label: "VA 508 Office"
+      description: "If this was a VA 508 office finding, include those details below."
       placeholder: "Include links to existing tickets if possible"
 
   - type: input
     id: url
     attributes:
       label: "URL where issue occurs"
-      description: "Include full environment URL."
+      description: "Include full environment URL. https://staging.va.gov/..."
       placeholder: "https://staging.va.gov/..."
     validations:
       required: true
@@ -80,6 +84,7 @@ body:
     id: reproduction-steps
     attributes:
       label: "Steps to reproduce"
+      description: "Tell us what to navigate to, what to turn on (screen reader), how to recreate the bug on our devices."
       placeholder: |
         1. Navigate to ...
         2. Turn on ...
@@ -119,22 +124,22 @@ body:
       description: You may select more than one.
       options:
         - label: Axe-core
-        - label: Screenreader | assistive tech & device support
-        - label: Keyboard
-        - label: Zoom
+        - label: Cognitive | user flows & navigating
         - label: Color, typography, & visual elements
         - label: Components and pattern standards
         - label: Content organization
+        - label: Content style guide
         - label: Focus
         - label: Headings
-        - label: Content style guide
+        - label: Keyboard
         - label: Link and button labels
-        - label: Semantic HTML
         - label: Markup and metadata
         - label: Non-text content and media
         - label: Overall user experience
-        - label: Cognitive | user flows & navigating
+        - label: Screenreader | assistive tech & device support
+        - label: Semantic HTML
         - label: URL standards
+        - label: Zoom or Magnification
         - label: Something else
 
   - type: markdown
