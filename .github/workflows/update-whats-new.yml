@@ -59,6 +59,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.UPDATE_WHATS_NEW }}
           branch: ${{ steps.branch.outputs.branch }}
           title: "Release ${{ steps.latest_tag.outputs.latest_tag }}"
           body: "Automated PR for release ${{ steps.latest_tag.outputs.latest_tag }}"
