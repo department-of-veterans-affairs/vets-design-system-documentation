@@ -49,8 +49,9 @@ jobs:
 
       - name: Create PR with updates
         if: steps.check-changes.outputs.has-changes == 'true'
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.UPDATE_WHATS_NEW }}
           commit-message: 'chore: update releases data'
           title: 'chore: update releases'
           body: |
