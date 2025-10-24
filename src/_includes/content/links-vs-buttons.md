@@ -42,7 +42,47 @@ Button and link confusion can be very frustrating for assistive technology users
 
 ### Implementation notes
 
-{% include component-example.html alt="A flowchart designed to arrive at a decision between using a button or link." file="/images/components/button/button-or-link-flow-chart.png" caption="Button vs. Link flow chart." %}
+<div class="mermaid-comparison">
+  <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
+  {% include mermaid-chart.html 
+     id="button-link-decision-flowchart" 
+     caption="Decision flowchart to help determine whether to use a button or link element."
+     chart="
+flowchart TD
+    Start[\"<b>Should this be a button or a link?</b>\"]:::node-start --> Q1{\"<b>Does it navigate to another page or file?</b>\"}:::node-question
+    
+    %% Navigation Path (YES)
+    Q1 --> NavYes([\"<b>YES</b><br/><b>Navigation Action</b><br/>Examples: Going to a page or file\"]):::node-answer-primary
+    NavYes --> Q2{\"<b>Is data submitted first?</b>\"}:::node-question
+    
+    Q2 --> DataYes([\"<b>YES</b><br/><b>Data Processing</b><br/>Examples: Form submission, saving data\"]):::node-answer-primary
+    DataYes --> ResultBtn1([\"Make it a BUTTON\"]):::node-result-button
+    
+    Q2 --> DataNo([\"<b>NO</b><br/><b>Direct navigation</b><br/>Examples: No data processing\"]):::node-answer-secondary
+    DataNo --> Q3{\"<b>Does it need visual emphasis?</b>\"}:::node-question
+    
+    Q3 --> EmphNo([\"<b>NO</b><br/><b>Standard Navigation</b><br/>Examples: Body text, menu links\"]):::node-answer-secondary
+    EmphNo --> ResultLink1([\"Make it a LINK\"]):::node-result-link
+    
+    Q3 --> EmphYes([\"<b>YES</b><br/><b>Prominent navigation</b><br/>Examples: Call-to-action\"]):::node-answer-primary
+    EmphYes --> Q4{\"<b>Does it need visual emphasis?</b>\"}:::node-question
+    
+    Q4 --> PlatWeb([\"Web\"]):::node-context
+    PlatWeb --> ResultAction([\"Make it an ACTION LINK\"]):::node-result-action
+    Q4 --> PlatMobile([\"Mobile\"]):::node-context
+    PlatMobile --> AskExpert[\"<b>Ask accessibility expert</b>\"]:::node-special
+    
+    %% Action Path (NO)
+    Q1 --> ActionNo([\"<b>NO</b><br/><b>Action (No Navigation)</b><br/>Examples: Modal, state change, etc.\"]):::node-answer-secondary
+    ActionNo --> Q5{\"<b>Does it generate a file?</b>\"}:::node-question
+    
+    Q5 --> FileYes([\"<b>YES</b><br/><b>File Generation</b><br/>Examples: Create PDF, download\"]):::node-answer-primary
+    FileYes --> ResultLink2([\"Make it a LINK\"]):::node-result-link
+    
+    Q5 --> FileNo([\"<b>NO</b><br/><b>Other Actions</b><br/>Examples: Form submit, open modal\"]):::node-answer-secondary
+    FileNo --> ResultBtn2([\"Make it a BUTTON\"]):::node-result-button
+" %}
+</div>
 
 #### Should this be a button or link?
 

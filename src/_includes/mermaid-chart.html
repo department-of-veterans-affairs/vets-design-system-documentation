@@ -1,0 +1,39 @@
+{% comment %}
+  Mermaid Chart Include
+  
+  Usage:
+  {% include mermaid-chart.html 
+     id="unique-chart-id" 
+     caption="Description of the chart"
+     chart="
+flowchart TD
+    A[Start] --> B[End]
+" %}
+  
+  Parameters:
+  - id: Unique identifier for the chart (required)
+  - caption: Accessible description/caption for the chart (required)
+  - chart: The Mermaid chart definition (required)
+{% endcomment %}
+
+<div class="mermaid-chart-container">
+  {% if include.caption %}
+    <div class="mermaid-chart-caption vads-u-font-size--sm vads-u-color--gray-dark vads-u-margin-bottom--1" id="{{ include.id }}-caption">
+      {{ include.caption }}
+    </div>
+  {% endif %}
+  
+  <div class="mermaid" 
+       id="{{ include.id }}"
+       role="img"
+       aria-labelledby="{{ include.id }}-caption"
+       aria-describedby="{{ include.id }}-description"
+       tabindex="0">
+    {{ include.chart }}
+  </div>
+  
+  <!-- Screen reader description -->
+  <div id="{{ include.id }}-description" class="sr-only">
+    This is an interactive flowchart. Use Tab to navigate through the chart elements. The flowchart shows decision points and outcomes to help guide your choice.
+  </div>
+</div>
