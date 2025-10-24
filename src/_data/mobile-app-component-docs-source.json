@@ -188,7 +188,7 @@
         {
           "name": "type",
           "type": "LinkTypes",
-          "docs": "Type of link. Options: url, phone, email, calendar, directions, text",
+          "docs": "Type of link. Options: url, phone, email, directions, text",
           "default": "url",
           "required": false
         },

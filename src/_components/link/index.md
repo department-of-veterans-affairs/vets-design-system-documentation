@@ -153,12 +153,13 @@ Review "[Usage](#usage)" for guidance.
 
 ### Mobile app
 
+<!-- Calendar bullet removed -->
 * **Link opens within the app:**
   * In a full panel if the content is within the app.
   * In a webview if the content is not within the app and does not require a separate sign-in.
 * **Link opens another app:**
   * In the [browser app](#external-link) if the user needs to sign in to access the content or is being linked to a third party. Always use a native alert to warn the user before leaving the app. Once confirmed, open the default browser app.
-  * If the user is performing an action such as making a phone call, getting directions, or downloading a file. Consider using a confirmation message (like a native alert or action sheet) to warn the user before leaving the app. These variants include the onPress logic for app teams, ensuring a native confirmation message is displayed when needed.
+  * If the link enables an action such as downloading a file, getting directions, making a phone call, or sending a text, consider using a confirmation message (like a native alert or action sheet) to warn the user before leaving the app. These variants include the onPress logic for app teams, ensuring a native confirmation message is displayed when needed.
     * **[Attachment](#attachment)**: Display the attachment in the app with the ability to download to their device.
     * **[Directions](#directions)**: Display an Action Sheet to allow the user to select their preferred maps app (Apple Maps, Google Maps, etc.). Once selected, open the maps app with the destination.
     * **[Phone](#phone)**: Display an Action Sheet to allow the user to confirm the phone call. Once confirmed, open the default phone app.
