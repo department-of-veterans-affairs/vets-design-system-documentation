@@ -27,8 +27,9 @@ Use this pattern when your form can be filled out by:
 
 **Claimant**: The person who is applying for benefits or has a claim. This could be a Veteran, spouse, child, parent, or someone else.
 
-We sometimes use this term to refer to the person with the claim or the person applying for the benefit—especially if the person isn’t a Veteran, or if they aren’t the person submitting the form (for example: "I'm signing for the claimant"). Always define the term on the first instance as "person with the claim" or "person applying for this benefit." When possible, use specific plain language instead, like "Veteran’s spouse" or "Veteran’s child."
+We sometimes use this term to refer to the person with the claim or the person applying for the benefit—especially if the person isn’t a Veteran, or if they aren’t the person submitting the form (for example: "I'm signing for the claimant").
 
+Always define the term on the first instance as "person with the claim" or "person applying for this benefit." When possible, use specific plain language instead, like "Veteran’s spouse" or "Veteran’s child."
 For example:
 > "I’m the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
 
