@@ -263,7 +263,9 @@ jobs:
             fi
           done
           
-          # Add specific quarterly governance metrics files (these are generated dynamically)
+          # Add quarterly governance metrics files (governance-metrics-YYYYQN.json pattern)
+          # These are generated dynamically, one file per quarter (e.g., governance-metrics-2025Q3.json)
+          # The wildcard intentionally captures all quarterly files matching this naming convention
           git add src/assets/data/metrics/governance-metrics-*.json 2>/dev/null || true
           git add src/_data/metrics/governance-metrics-*.json 2>/dev/null || true
           
