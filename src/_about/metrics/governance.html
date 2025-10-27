@@ -66,37 +66,18 @@ Calculate trends by comparing latest quarter with previous quarter
         <va-card class="metric-card">
         <h3 id="touchpoints-held-label">Touchpoints Held</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="touchpoints-held" aria-labelledby="touchpoints-held-label">
-          {% if latest_quarter_data.data.touchpoints_held %}
+          {% if latest_quarter_data.data.touchpoints_held != nil %}
             {{ latest_quarter_data.data.touchpoints_held }}
           {% else %}
             25
           {% endif %}
         </div>
-        <div class="metric-trend" id="touchpoints-held-trend" aria-label="Touchpoints held trend indicator">
-          {% if touchpoints_percent %}
-            {% if touchpoints_change > 0 %}
-              <span class="metric-trend trend-up">
-                <span class="trend-icon">↗</span>
-                <span>{{ touchpoints_percent }}% from previous quarter</span>
-              </span>
-            {% elsif touchpoints_change < 0 %}
-              <span class="metric-trend trend-down">
-                <span class="trend-icon">↘</span>
-                <span>{{ touchpoints_percent | abs }}% from previous quarter</span>
-              </span>
-            {% else %}
-              <span class="metric-trend trend-neutral">
-                <span class="trend-icon">→</span>
-                <span>No change from previous quarter</span>
-              </span>
-            {% endif %}
-          {% else %}
-            <span class="metric-trend trend-neutral">
-              <span class="trend-icon">→</span>
-              <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
-            </span>
-          {% endif %}
-        </div>
+        {% include metric-trend.html
+           trend_id="touchpoints-held-trend"
+           aria_label="Touchpoints held trend indicator"
+           percent=touchpoints_percent
+           change=touchpoints_change
+           governance_index=governance_index %}
         </va-card>
       </div>
       
@@ -104,37 +85,18 @@ Calculate trends by comparing latest quarter with previous quarter
         <va-card class="metric-card">
         <h3 id="products-shipped-label">Products Shipped</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="products-shipped" aria-labelledby="products-shipped-label">
-          {% if latest_quarter_data.data.products_shipped %}
+          {% if latest_quarter_data.data.products_shipped != nil %}
             {{ latest_quarter_data.data.products_shipped }}
           {% else %}
             8
           {% endif %}
         </div>
-        <div class="metric-trend" id="products-shipped-trend" aria-label="Products shipped trend indicator">
-          {% if products_percent %}
-            {% if products_change > 0 %}
-              <span class="metric-trend trend-up">
-                <span class="trend-icon">↗</span>
-                <span>{{ products_percent }}% from previous quarter</span>
-              </span>
-            {% elsif products_change < 0 %}
-              <span class="metric-trend trend-down">
-                <span class="trend-icon">↘</span>
-                <span>{{ products_percent | abs }}% from previous quarter</span>
-              </span>
-            {% else %}
-              <span class="metric-trend trend-neutral">
-                <span class="trend-icon">→</span>
-                <span>No change from previous quarter</span>
-              </span>
-            {% endif %}
-          {% else %}
-            <span class="metric-trend trend-neutral">
-              <span class="trend-icon">→</span>
-              <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
-            </span>
-          {% endif %}
-        </div>
+        {% include metric-trend.html
+           trend_id="products-shipped-trend"
+           aria_label="Products shipped trend indicator"
+           percent=products_percent
+           change=products_change
+           governance_index=governance_index %}
         </va-card>
       </div>
       
@@ -142,44 +104,25 @@ Calculate trends by comparing latest quarter with previous quarter
         <va-card class="metric-card">
         <h3 id="staging-issues-label">Staging Review Issues</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="staging-issues" aria-labelledby="staging-issues-label">
-          {% if latest_quarter_data.data.total_staging_issues %}
+          {% if latest_quarter_data.data.total_staging_issues != nil %}
             {{ latest_quarter_data.data.total_staging_issues }}
           {% else %}
             55
           {% endif %}
         </div>
-        <div class="metric-trend" id="staging-issues-trend" aria-label="Staging review issues trend indicator">
-          {% if staging_percent %}
-            {% if staging_change > 0 %}
-              <span class="metric-trend trend-up">
-                <span class="trend-icon">↗</span>
-                <span>{{ staging_percent }}% from previous quarter</span>
-              </span>
-            {% elsif staging_change < 0 %}
-              <span class="metric-trend trend-down">
-                <span class="trend-icon">↘</span>
-                <span>{{ staging_percent | abs }}% from previous quarter</span>
-              </span>
-            {% else %}
-              <span class="metric-trend trend-neutral">
-                <span class="trend-icon">→</span>
-                <span>No change from previous quarter</span>
-              </span>
-            {% endif %}
-          {% else %}
-            <span class="metric-trend trend-neutral">
-              <span class="trend-icon">→</span>
-              <span>Latest complete quarter ({{ governance_index.latest_complete_quarter }})</span>
-            </span>
-          {% endif %}
-        </div>
+        {% include metric-trend.html
+           trend_id="staging-issues-trend"
+           aria_label="Staging review issues trend indicator"
+           percent=staging_percent
+           change=staging_change
+           governance_index=governance_index %}
         </va-card>
       </div>
       <div class="vads-l-col--12 medium-screen:vads-l-col--4 large-screen:vads-l-col--3">
         <va-card class="metric-card">
         <h3 id="launch-blocking-label">Launch-Blocking Issues</h3>
         <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="launch-blocking" aria-labelledby="launch-blocking-label">
-          {% if latest_quarter_data.data.launch_blocking_issues %}
+          {% if latest_quarter_data.data.launch_blocking_issues != nil %}
             {{ latest_quarter_data.data.launch_blocking_issues }}
           {% else %}
             7
@@ -187,7 +130,7 @@ Calculate trends by comparing latest quarter with previous quarter
         </div>
         <div class="metric-trend trend-neutral" id="launch-blocking-trend" aria-label="Launch-blocking issues trend indicator">
           <span>
-            {% if latest_quarter_data.data.launch_blocking_percentage %}
+            {% if latest_quarter_data.data.launch_blocking_percentage != nil %}
               {{ latest_quarter_data.data.launch_blocking_percentage }}% of staging issues
             {% else %}
               16% of staging issues

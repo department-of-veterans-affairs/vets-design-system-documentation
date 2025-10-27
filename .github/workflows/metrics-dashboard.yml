@@ -146,6 +146,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
+      - name: Collect governance metrics
+        run: |
+          echo "Starting governance metrics collection..."
+          node scripts/collect-governance-metrics.js
+          echo "Governance metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
       - name: Verify generated data files
         run: |
           echo "Checking for generated files..."
@@ -216,6 +224,23 @@ jobs:
             echo "❌ ds-components-latest.csv not found"
             exit 1
           fi
+          
+          # Check governance metrics data
+          if [ -f "src/_data/metrics/governance-index.json" ]; then
+            echo "✅ governance-index.json generated successfully"
+            echo "File size: $(du -h src/_data/metrics/governance-index.json)"
+          else
+            echo "❌ governance-index.json not found"
+            exit 1
+          fi
+          
+          # Check if governance metrics CSV was generated
+          if [ -f "src/_data/metrics/governance-metrics.csv" ]; then
+            echo "✅ governance-metrics.csv generated successfully"
+            echo "File size: $(du -h src/_data/metrics/governance-metrics.csv)"
+          else
+            echo "ℹ️ governance-metrics.csv not found (may not be generated in current run)"
+          fi
       
       - name: Check for changes
         id: git-check
@@ -255,6 +280,7 @@ jobs:
           - Processed ${TOTAL_ISSUES} total issues
           - Updated quarterly and monthly aggregations
           - Updated experimental design issue tracking
+          - Updated governance metrics and collaboration cycle data
           - Fetched latest ds-components usage data from component-library
           
           🤖 Automated update via GitHub Actions"
@@ -282,6 +308,7 @@ jobs:
           - Issue tracking metrics (JSON files)
           - Component usage data from component-library
           - Experimental design metrics
+          - Governance metrics and collaboration cycle data
           - Design system component usage CSV data
           
           ### Test Plan

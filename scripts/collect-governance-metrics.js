@@ -15,7 +15,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 const REPO = 'department-of-veterans-affairs/va.gov-team';
 const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
@@ -71,6 +71,37 @@ function parseArgs() {
 }
 
 /**
+ * Validate and sanitize search query components to prevent injection
+ */
+function validateSearchQuery(labels, repo, startDate, endDate) {
+  // Validate repository format (owner/repo)
+  if (!/^[a-zA-Z0-9._-]+\/[a-zA-Z0-9._-]+$/.test(repo)) {
+    throw new Error(`Invalid repository format: ${repo}`);
+  }
+  
+  // Validate date format (YYYY-MM-DD)
+  const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+  if (!dateRegex.test(startDate) || !dateRegex.test(endDate)) {
+    throw new Error(`Invalid date format. Expected YYYY-MM-DD, got: ${startDate}, ${endDate}`);
+  }
+  
+  // Validate and sanitize labels (alphanumeric, hyphens, underscores only)
+  const sanitizedLabels = labels.map(label => {
+    if (!/^[a-zA-Z0-9._-]+$/.test(label)) {
+      throw new Error(`Invalid label format: ${label}. Only alphanumeric characters, periods, hyphens, and underscores are allowed.`);
+    }
+    return label;
+  });
+  
+  return {
+    repo,
+    labels: sanitizedLabels,
+    startDate,
+    endDate
+  };
+}
+
+/**
  * Parse quarter string (e.g., "2025Q3") into quarter object
  */
 function parseQuarter(quarterString) {
@@ -117,16 +148,23 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
   console.log(`Searching for issues with labels: ${labels.join(', ')} ${filterBy} between ${startDate} and ${endDate}`);
   
   try {
+    // Validate and sanitize input parameters
+    const validated = validateSearchQuery(labels, REPO, startDate, endDate);
+    
     // Build the search query with date filtering
-    const labelQuery = labels.map(label => `label:"${label}"`).join('+');
+    const labelQuery = validated.labels.map(label => `label:"${label}"`).join('+');
     const dateFilter = filterBy === 'closed' ? `closed:${startDate}..${endDate}` : `created:${startDate}..${endDate}`;
-    const searchQuery = `repo:${REPO}+${labelQuery}+type:issue+${dateFilter}`;
+    const searchQuery = `repo:${validated.repo}+${labelQuery}+type:issue+${dateFilter}`;
     
     console.log(`  Search query: ${searchQuery}`);
     
     // First, get the total count to know how many pages we need
-    // Use parameterized approach to prevent command injection
-    const totalCountOutput = execSync(`gh api search/issues -f q=${JSON.stringify(searchQuery)} --jq '.total_count'`, {
+    // Use execFileSync with separate arguments to prevent command injection
+    const totalCountOutput = execFileSync('gh', [
+      'api', 'search/issues',
+      '-f', `q=${searchQuery}`,
+      '--jq', '.total_count'
+    ], {
       encoding: 'utf8',
       maxBuffer: 1024 * 1024,
       timeout: 15000
@@ -140,8 +178,13 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
     }
     
     // Use GitHub CLI pagination to get all results
-    // Use parameterized approach to prevent command injection
-    const output = execSync(`gh api search/issues -f q=${JSON.stringify(searchQuery)} --paginate --jq '.items[] | {number, title, state, created_at, closed_at, labels: [.labels[].name], url}'`, {
+    // Use execFileSync with separate arguments to prevent command injection
+    const output = execFileSync('gh', [
+      'api', 'search/issues',
+      '-f', `q=${searchQuery}`,
+      '--paginate',
+      '--jq', '.items[] | {number, title, state, created_at, closed_at, labels: [.labels[].name], url}'
+    ], {
       encoding: 'utf8',
       maxBuffer: 50 * 1024 * 1024, // Increase buffer for paginated results
       timeout: 120000 // 2 minute timeout for large result sets
@@ -309,9 +352,15 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
 async function getCurrentParticipatingTeams() {
   try {
     console.log('Searching for currently open collaboration-cycle issues...');
-    const searchQuery = `repo:${REPO}+label:"collaboration-cycle"+type:issue+state:open`;
+    // Validate repository format before using in query
+    const validated = validateSearchQuery(['collaboration-cycle'], REPO, '2020-01-01', '2030-12-31');
+    const searchQuery = `repo:${validated.repo}+label:"collaboration-cycle"+type:issue+state:open`;
     
-    const output = execSync(`gh api search/issues -f q=${JSON.stringify(searchQuery)} --jq '.total_count'`, {
+    const output = execFileSync('gh', [
+      'api', 'search/issues',
+      '-f', `q=${searchQuery}`,
+      '--jq', '.total_count'
+    ], {
       encoding: 'utf8',
       maxBuffer: 1 * 1024 * 1024,
       timeout: 15000 // 15 second timeout

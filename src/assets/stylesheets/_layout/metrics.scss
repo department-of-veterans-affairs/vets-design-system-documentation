@@ -3,6 +3,7 @@
 
 // Breakpoint variables for consistency - aligned with VA Design System breakpoints
 $tablet-breakpoint: 768px; // Matches --vads-breakpoint-md
+$desktop-breakpoint: 1024px; // Matches --vads-breakpoint-lg
 $mobile-breakpoint: 481px; // Matches --vads-breakpoint-sm
 $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
 
@@ -157,7 +158,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   }
   
   // Large screens: 4 columns (25% width)  
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop-breakpoint) {
     flex-basis: 25%;
     width: 25%;
   }
@@ -212,7 +213,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
     margin-bottom: var(--vads-spacing-1);
     
     // Prevent text overflow on smaller cards
-    @media (min-width: 1024px) {
+    @media (min-width: $desktop-breakpoint) {
       font-size: var(--vads-font-size-body-small);
     }
   }
@@ -244,7 +245,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   line-height: 1.3;
   
   // Prevent text wrapping in narrow cards
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop-breakpoint) {
     font-size: var(--vads-font-size-body-small);
     
     // Stack trend text on smaller screens to prevent overflow
