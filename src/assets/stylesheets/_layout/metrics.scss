@@ -210,9 +210,8 @@
     margin-bottom: var(--vads-spacing-1);
     
     // Prevent text overflow on smaller cards
-    @media (min-width: $small-desktop-screen) {
-      font-size: var(--vads-font-size-body-small);
-    }
+    // (media query removed as font-size is the same)
+    
   }
 }
 
