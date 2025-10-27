@@ -253,12 +253,10 @@ jobs:
             src/assets/data/metrics/issue-metrics.json \
             src/assets/data/metrics/experimental-metrics.json \
             src/assets/data/metrics/ds-components-metrics.json \
-            src/assets/data/metrics/governance-metrics.json \
             src/assets/data/metrics/governance-index.json \
             src/_data/metrics/issue-metrics.json \
             src/_data/metrics/experimental-metrics.json \
             src/_data/metrics/ds-components-metrics.json \
-            src/_data/metrics/governance-metrics.json \
             src/_data/metrics/governance-index.json; do
             if [ -f "$file" ]; then
               git add "$file"
