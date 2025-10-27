@@ -12,8 +12,8 @@
     "launch_blocking_issues": 16,
     "launch_blocking_percentage": 17
   },
-  "participating_teams": 818,
-  "generated_at": "2025-10-01T21:36:47.792Z",
+  "participating_teams": 15,
+  "generated_at": "2025-10-27T19:36:16.802Z",
   "data_source": "va.gov-team repository",
   "description": "Governance metrics for 2024Q1"
 }

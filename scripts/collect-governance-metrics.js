@@ -397,48 +397,66 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
 
 /**
  * Get current VFS teams participating (In Progress issues in Collaboration Cycle)
+ * Counts unique team names from open CC-Request kick-off tickets
  */
-async function getCurrentParticipatingTeams() {
+async function getCurrentParticipatingTeams(startDate = null, endDate = null) {
   try {
-    console.log('Searching for currently open collaboration-cycle issues...');
+    let searchDescription = 'currently open CC-Request kick-off issues';
+    if (startDate && endDate) {
+      searchDescription = `CC-Request issues created between ${startDate} and ${endDate}`;
+    }
+    console.log(`Searching for ${searchDescription}...`);
     
-    const output = execFileSync('gh', [
+    // Build search arguments
+    const searchArgs = [
       'search', 'issues',
       '--repo', REPO,
+      '--label', 'CC-Request',
       '--label', 'collaboration-cycle',
-      '--state', 'open',
-      '--limit', '1', // Just get count, not all issues
-      '--json', 'number'
-    ], {
-      encoding: 'utf8',
-      maxBuffer: 1 * 1024 * 1024,
-      timeout: 30000 // 30 second timeout
-    });
-    
-    // Parse to get actual count from the search
-    // Note: gh search issues doesn't return total count directly,
-    // so we need to get all results up to limit
-    const issues = JSON.parse(output);
-    
-    // For a more accurate count, we can search with a higher limit
-    // But to avoid timeout, we'll use the limit of 1000 which is the max
-    const countOutput = execFileSync('gh', [
-      'search', 'issues',
-      '--repo', REPO,
-      '--label', 'collaboration-cycle',
-      '--state', 'open',
       '--limit', '1000',
-      '--json', 'number'
-    ], {
+      '--json', 'number,body'
+    ];
+    
+    // If date range provided, filter by creation date; otherwise get all open issues
+    if (startDate && endDate) {
+      searchArgs.push('--created', `${startDate}..${endDate}`);
+    } else {
+      searchArgs.push('--state', 'open');
+    }
+    
+    // Get kick-off issues
+    const output = execFileSync('gh', searchArgs, {
       encoding: 'utf8',
-      maxBuffer: 5 * 1024 * 1024,
-      timeout: 45000 // 45 second timeout for larger result set
+      maxBuffer: 10 * 1024 * 1024,
+      timeout: 60000 // 60 second timeout
     });
     
-    const allIssues = JSON.parse(countOutput);
-    const count = allIssues.length;
-    console.log(`  Found ${count} open collaboration-cycle issues`);
-    return count;
+    const issues = JSON.parse(output);
+    console.log(`  Found ${issues.length} CC-Request issues`);
+    
+    // Extract unique team names from the issue bodies
+    const teamNames = new Set();
+    
+    issues.forEach(issue => {
+      if (issue.body) {
+        // Look for the team name in the format:
+        // ### VFS team name
+        // <team-name>
+        const teamNameMatch = issue.body.match(/###\s+VFS team name\s+([^\n#]+)/i);
+        if (teamNameMatch && teamNameMatch[1]) {
+          const teamName = teamNameMatch[1].trim();
+          // Only add non-empty team names
+          if (teamName && teamName !== '_No response_' && teamName.length > 0) {
+            teamNames.add(teamName.toLowerCase()); // Normalize to lowercase for deduplication
+          }
+        }
+      }
+    });
+    
+    const uniqueTeamCount = teamNames.size;
+    console.log(`  Found ${uniqueTeamCount} unique teams${startDate ? ' in this quarter' : ' participating'}`);
+    
+    return uniqueTeamCount;
   } catch (error) {
     console.error('Failed to fetch participating teams:', error.message);
     console.log('  Continuing with 0 for participating teams count...');
@@ -677,9 +695,10 @@ async function main() {
       return;
     }
     
-    // Get participating teams
-    console.log('Getting current participating teams...');
-    const participatingTeams = await getCurrentParticipatingTeams();
+    // Get participating teams for this specific quarter
+    console.log('Getting participating teams for this quarter...');
+    const quarterInfo = parseQuarter(targetQuarter);
+    const participatingTeams = await getCurrentParticipatingTeams(quarterInfo.startDate, quarterInfo.endDate);
     
     // Save the quarterly data
     await saveQuarterlyData(targetQuarter, quarterlyData[0], participatingTeams);
