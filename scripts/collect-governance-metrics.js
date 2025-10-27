@@ -226,7 +226,7 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
     // Execute gh search issues command
     const output = execFileSync('gh', searchArgs, {
       encoding: 'utf8',
-      maxBuffer: 50 * 1024 * 1024, // 50MB buffer for large result sets
+      maxBuffer: 10 * 1024 * 1024, // 10MB buffer is generous for JSON output
       timeout: 120000 // 2 minute timeout
     });
     
