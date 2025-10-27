@@ -1,7 +1,12 @@
 name: Update Releases
 
 on:
-  workflow_dispatch: # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Tag name for release, ex. Sprint 10"
+        required: true
+        default: ""
 
 jobs:
   update-releases:
@@ -15,6 +20,48 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Sanitize tag name
+        run: |
+          RAW_TAG="${{ github.event.inputs.tag_name }}"
+
+          # Replace spaces with hyphens, remove unsafe characters
+          SAFE_TAG=$(echo "$RAW_TAG" | tr '[:space:]' '-' | tr -cd '[:alnum:]._:-')
+
+          # Collapse multiple consecutive special characters into single hyphen
+          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/-\{2,\}/-/g; s/\.\{2,\}/./g; s/::\+/:/g; s/_\{2,\}/_/g')
+
+          # Remove leading special characters
+          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/^[-._:]*//g')
+
+          # Remove trailing special characters
+          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/[-._:]*$//g')
+
+          # Ensure it's not empty
+          if [ -z "$SAFE_TAG" ]; then
+            echo "Error: sanitized tag is empty!"
+            exit 1
+          fi
+
+          echo "RAW_TAG=$RAW_TAG" >> $GITHUB_ENV
+          echo "SAFE_TAG=$SAFE_TAG" >> $GITHUB_ENV
+          echo "Sanitized tag: $SAFE_TAG"
+
+      - name: Create Git tag
+        run: |
+          # Check if tag already exists
+          if git rev-parse "$SAFE_TAG" >/dev/null 2>&1; then
+            echo "Tag $SAFE_TAG already exists, skipping creation"
+          else
+            git tag "$SAFE_TAG"
+            git push origin "$SAFE_TAG"
+          fi
+
+      - name: Create tagged release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$SAFE_TAG" --title "$RAW_TAG" --notes "Automated release"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -43,17 +90,14 @@ jobs:
             echo "No changes detected"
           else
             echo "has-changes=true" >> $GITHUB_OUTPUT
-            echo "Changes detected"
-            git diff --name-only
           fi
 
       - name: Create PR with updates
         if: steps.check-changes.outputs.has-changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.UPDATE_WHATS_NEW }}
           commit-message: 'chore: update releases data'
-          title: 'chore: update releases'
+          title: 'chore: update releases for ${{ github.event.inputs.tag_name }}'
           body: |
             ## Automated Release Update
 
