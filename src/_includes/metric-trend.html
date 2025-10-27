@@ -19,7 +19,7 @@ Usage:
 {% endcomment %}
 
 <div class="metric-trend" id="{{ include.trend_id }}" aria-label="{{ include.aria_label }}">
-  {% if include.percent %}
+  {% if include.percent != nil %}
     {% if include.change > 0 %}
       <span class="metric-trend trend-up">
         <span class="trend-icon">↗</span>
