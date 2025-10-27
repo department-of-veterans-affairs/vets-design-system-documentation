@@ -65,7 +65,7 @@ jobs:
           if gh release view "$SAFE_TAG" >/dev/null 2>&1; then
             echo "Release $SAFE_TAG already exists, skipping creation"
           else
-            gh release create "$SAFE_TAG" --title "$RAW_TAG" --notes "Automated release"
+            gh release create "$SAFE_TAG" --title "$RAW_TAG" --generate-notes
           fi
 
       - name: Setup Node.js
