@@ -80,12 +80,12 @@ Tables on VA.gov should never contain blank or missing cells. Empty cells can co
 
 When a table contains missing data, choose a phrase that reflects *why* the value is missing. Use clear, consistent language so users can interpret the dataset correctly.
 
-| Situation | Recommended Phrase | Example |
-|------------|--------------------|----------|
-| The data does not apply to that row or column | **Not applicable** | A column for “Discharge date” in a table of Veterans still receiving care |
-| The data was expected but not reported | **Not provided** | A missing value in a “Total claims processed” column |
-| The data exists but cannot currently be shown | **Data not available** | Data source is being updated or system temporarily offline |
-| The numeric value is intentionally zero | **Zero** | “Number of dependents: 0” |
+**Examples**
+
+- Use **Not Applicable** when the data does not apply to that row or column. For example, a column for "Discharge date" in a table of Veterans still receiving care.
+- Use **Not provided** when the data was expected but not reported. For example, a missing value in a "Total claims processed" column.
+- Use **Data not available** when the data exists but cannot currently be shown. For example, when the data source is being updated, or the system is currently offline.
+- Use **0** when the numeric value is intentionally zero. For example, when the number of dependents column is reported as 0.
 
 Clear phrasing ensures that all users — including those navigating with assistive technology — can understand what each table cell represents and why a value may be missing.
 
