@@ -96,6 +96,7 @@ jobs:
         if: steps.check-changes.outputs.has-changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'chore: update releases data'
           title: 'chore: update releases for ${{ github.event.inputs.tag_name }}'
           body: |
