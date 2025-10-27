@@ -331,25 +331,25 @@ jobs:
           # Create PR using GitHub CLI
           gh pr create \
             --title "📊 Update metrics dashboard data - $(date -u '+%Y-%m-%d')" \
-            --body "$(cat <<'EOF'
-          ## Summary
-          Automated weekly update of metrics dashboard data collected from GitHub issues and component usage.
+            --body "$(cat <<EOF
+            ## Summary
+            Automated weekly update of metrics dashboard data collected from GitHub issues and component usage.
           
-          ### Files Updated
-          - Issue tracking metrics (JSON files)
-          - Component usage data from component-library
-          - Experimental design metrics
-          - Governance metrics and collaboration cycle data
-          - Design system component usage CSV data
+            ### Files Updated
+            - Issue tracking metrics (JSON files)
+            - Component usage data from component-library
+            - Experimental design metrics
+            - Governance metrics and collaboration cycle data
+            - Design system component usage CSV data
           
-          ### Test Plan
-          - [ ] Verify JSON files are valid
-          - [ ] Check dashboard displays updated data correctly
-          - [ ] Confirm no regressions in metric calculations
+            ### Test Plan
+            - [ ] Verify JSON files are valid
+            - [ ] Check dashboard displays updated data correctly
+            - [ ] Confirm no regressions in metric calculations
           
-          🤖 Generated with automated workflow - ${CURRENT_DATE}
-          EOF
-          )" \
+            🤖 Generated with automated workflow - ${CURRENT_DATE}
+            EOF
+            )" \
             --head "$BRANCH_NAME" \
             --base main
           
