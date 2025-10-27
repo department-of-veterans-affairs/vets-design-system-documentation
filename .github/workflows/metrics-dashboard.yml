@@ -246,8 +246,15 @@ jobs:
         id: git-check
         run: |
           # Only add the specific metric files that were generated, not all files in the directories
-          # Include CSV files from both assets and data directories
-          git add src/assets/data/metrics/*.json src/assets/data/metrics/*.csv src/_data/metrics/*.json src/_data/metrics/*.csv
+          # Include CSV files from both assets and data directories, but handle missing files gracefully
+          
+          # Add JSON files (these should always exist)
+          git add src/assets/data/metrics/*.json src/_data/metrics/*.json
+          
+          # Add CSV files if they exist (use find to avoid glob expansion errors)
+          find src/assets/data/metrics/ -name "*.csv" -type f -exec git add {} + 2>/dev/null || true
+          find src/_data/metrics/ -name "*.csv" -type f -exec git add {} + 2>/dev/null || true
+          
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in metrics data"
