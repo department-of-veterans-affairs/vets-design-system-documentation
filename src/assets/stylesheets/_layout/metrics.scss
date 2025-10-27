@@ -1,12 +1,6 @@
 // Metrics Dashboard Styles
 // Provides styling for the metrics dashboard page with proper VA Design System tokens
 
-// Breakpoint variables for consistency - aligned with VA Design System breakpoints
-$tablet-breakpoint: 768px; // Matches --vads-breakpoint-md
-$desktop-breakpoint: 1024px; // Matches --vads-breakpoint-lg
-$mobile-breakpoint: 481px; // Matches --vads-breakpoint-sm
-$chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
-
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
 }
@@ -88,7 +82,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   position: relative;
   
   // Ensure charts have adequate space on mobile
-  @media (max-width: $tablet-breakpoint) {
+  @media (max-width: var(--vads-breakpoint-md)) {
     height: 350px;
     margin: var(--vads-spacing-3) 0;
   }
@@ -102,7 +96,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   overflow-x: auto;
   
   // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
-  @media (min-width: #{$tablet-breakpoint + 1}) {
+  @media (min-width: calc(var(--vads-breakpoint-md) + 1px)) {
     va-table-row span {
       padding: var(--vads-spacing-1) var(--vads-spacing-2);
       text-align: left;
@@ -152,13 +146,13 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   width: 100%;
   
   // Medium screens: 2 columns (50% width)
-  @media (min-width: $tablet-breakpoint) {
+  @media (min-width: var(--vads-breakpoint-md)) {
     flex-basis: 50%;
     width: 50%;
   }
   
   // Large screens: 4 columns (25% width)  
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: var(--vads-breakpoint-lg)) {
     flex-basis: 25%;
     width: 25%;
   }
@@ -213,7 +207,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
     margin-bottom: var(--vads-spacing-1);
     
     // Prevent text overflow on smaller cards
-    @media (min-width: $desktop-breakpoint) {
+    @media (min-width: var(--vads-breakpoint-lg)) {
       font-size: var(--vads-font-size-body-small);
     }
   }
@@ -245,7 +239,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   line-height: 1.3;
   
   // Prevent text wrapping in narrow cards
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: var(--vads-breakpoint-lg)) {
     font-size: var(--vads-font-size-body-small);
     
     // Stack trend text on smaller screens to prevent overflow
@@ -394,7 +388,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
 }
 
 // Responsive design
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: var(--vads-breakpoint-md)) {
   .monthly-reports-grid {
     grid-template-columns: 1fr;
   }
@@ -415,7 +409,7 @@ $chart-responsive-breakpoint: 600px; // Custom breakpoint for charts
   }
   
   // Stack tab labels vertically on very small screens
-  @media (max-width: $mobile-breakpoint) {
+  @media (max-width: var(--vads-breakpoint-sm)) {
     .metrics-section va-tabs {
       va-tab-panel {
         font-size: var(--vads-font-size-body-small);

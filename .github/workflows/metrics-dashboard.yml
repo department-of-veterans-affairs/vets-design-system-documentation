@@ -246,14 +246,38 @@ jobs:
         id: git-check
         run: |
           # Only add the specific metric files that were generated, not all files in the directories
-          # Include CSV files from both assets and data directories, but handle missing files gracefully
+          # List expected files and add them if they exist
           
-          # Add JSON files (these should always exist)
-          git add src/assets/data/metrics/*.json src/_data/metrics/*.json
+          # Add specific JSON files
+          for file in \
+            src/assets/data/metrics/issue-metrics.json \
+            src/assets/data/metrics/experimental-metrics.json \
+            src/assets/data/metrics/ds-components-metrics.json \
+            src/assets/data/metrics/governance-metrics.json \
+            src/assets/data/metrics/governance-index.json \
+            src/_data/metrics/issue-metrics.json \
+            src/_data/metrics/experimental-metrics.json \
+            src/_data/metrics/ds-components-metrics.json \
+            src/_data/metrics/governance-metrics.json \
+            src/_data/metrics/governance-index.json; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
           
-          # Add CSV files if they exist (use find to avoid glob expansion errors)
-          find src/assets/data/metrics/ -name "*.csv" -type f -exec git add {} + 2>/dev/null || true
-          find src/_data/metrics/ -name "*.csv" -type f -exec git add {} + 2>/dev/null || true
+          # Add specific quarterly governance metrics files (these are generated dynamically)
+          git add src/assets/data/metrics/governance-metrics-*.json 2>/dev/null || true
+          git add src/_data/metrics/governance-metrics-*.json 2>/dev/null || true
+          
+          # Add CSV files if they exist
+          for file in \
+            src/assets/data/metrics/ds-components-latest.csv \
+            src/assets/data/metrics/governance-metrics.csv \
+            src/_data/metrics/governance-metrics.csv; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
           
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
