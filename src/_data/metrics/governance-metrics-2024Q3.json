@@ -9,11 +9,11 @@
     "staging_review_held": 21,
     "products_shipped": 6,
     "total_staging_issues": 144,
-    "launch_blocking_issues": 1,
-    "launch_blocking_percentage": 1
+    "launch_blocking_issues": 13,
+    "launch_blocking_percentage": 9
   },
-  "participating_teams": 0,
-  "generated_at": "2025-10-01T21:33:18.176Z",
+  "participating_teams": 828,
+  "generated_at": "2025-10-27T19:28:19.936Z",
   "data_source": "va.gov-team repository",
   "description": "Governance metrics for 2024Q3"
 }

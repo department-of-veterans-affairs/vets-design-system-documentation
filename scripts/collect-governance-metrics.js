@@ -7,10 +7,11 @@
  * to track Collaboration Cycle metrics for the VADS governance dashboard.
  * 
  * Usage: 
- *   node scripts/collect-governance-metrics.js                    # Generate all quarters
- *   node scripts/collect-governance-metrics.js --quarter 2025Q3   # Generate specific quarter
+ *   node scripts/collect-governance-metrics.js                    # Process most recent complete quarter (default)
+ *   node scripts/collect-governance-metrics.js --quarter 2025Q3   # Process specific quarter
+ *   node scripts/collect-governance-metrics.js --help             # Display help message
  * 
- * Requires: GITHUB_TOKEN environment variable
+ * Requires: GITHUB_TOKEN environment variable and GitHub CLI (gh)
  */
 
 const fs = require('fs').promises;
@@ -57,6 +58,49 @@ function getMostRecentCompleteQuarter() {
 }
 
 /**
+ * Display help message
+ */
+function displayHelp() {
+  console.log(`
+GitHub Governance Metrics Collection Script
+
+Collects governance issue data from the va.gov-team repository
+to track Collaboration Cycle metrics for the VADS governance dashboard.
+
+USAGE:
+  node scripts/collect-governance-metrics.js [OPTIONS]
+
+OPTIONS:
+  --quarter YYYYQN    Specify a quarter to process (e.g., 2025Q3)
+                      If not specified, processes the most recent complete quarter.
+                      
+  --help, -h          Display this help message
+
+EXAMPLES:
+  # Process the most recent complete quarter (recommended)
+  node scripts/collect-governance-metrics.js
+  
+  # Process a specific quarter
+  node scripts/collect-governance-metrics.js --quarter 2025Q3
+  
+  # Display help
+  node scripts/collect-governance-metrics.js --help
+
+REQUIREMENTS:
+  - GITHUB_TOKEN environment variable must be set for API access
+  - GitHub CLI (gh) must be installed and authenticated
+
+OUTPUT:
+  - Saves data to: src/_data/metrics/governance-metrics-YYYYQN.json
+  - Updates index: src/_data/metrics/governance-index.json
+
+NOTE:
+  This script processes ONE quarter at a time to avoid GitHub API rate limits
+  and timeout issues when fetching large numbers of issues.
+`);
+}
+
+/**
  * Parse command line arguments
  */
 function parseArgs() {
@@ -64,7 +108,10 @@ function parseArgs() {
   const options = {};
   
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--quarter' && i + 1 < args.length) {
+    if (args[i] === '--help' || args[i] === '-h') {
+      displayHelp();
+      process.exit(0);
+    } else if (args[i] === '--quarter' && i + 1 < args.length) {
       options.quarter = args[i + 1];
       i++; // Skip the next argument since we consumed it
     }
@@ -154,50 +201,49 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
     // Validate and sanitize input parameters
     const validated = validateSearchQuery(labels, REPO, startDate, endDate);
     
-    // Build the search query with date filtering
-    const labelQuery = validated.labels.map(label => `label:"${label}"`).join('+');
-    const dateFilter = filterBy === 'closed' ? `closed:${startDate}..${endDate}` : `created:${startDate}..${endDate}`;
-    const searchQuery = `repo:${validated.repo}+${labelQuery}+type:issue+${dateFilter}`;
+    // Build search arguments for gh search issues command
+    const searchArgs = [
+      'search', 'issues',
+      '--repo', validated.repo,
+      '--limit', '1000', // Max limit per page
+      '--json', 'number,title,state,createdAt,closedAt,labels,url'
+    ];
     
-    console.log(`  Search query: ${searchQuery}`);
-    
-    // First, get the total count to know how many pages we need
-    // Use execFileSync with separate arguments to prevent command injection
-    const totalCountOutput = execFileSync('gh', [
-      'api', 'search/issues',
-      '-f', `q=${searchQuery}`,
-      '--jq', '.total_count'
-    ], {
-      encoding: 'utf8',
-      maxBuffer: 1024 * 1024,
-      timeout: 15000
+    // Add label filters
+    validated.labels.forEach(label => {
+      searchArgs.push('--label', label);
     });
     
-    const totalCount = parseInt(totalCountOutput.trim());
-    console.log(`  Total matching issues: ${totalCount}`);
-    
-    if (totalCount === 0) {
-      return [];
+    // Add date filter based on filterBy parameter
+    if (filterBy === 'closed') {
+      searchArgs.push('--closed', `${startDate}..${endDate}`);
+    } else {
+      searchArgs.push('--created', `${startDate}..${endDate}`);
     }
     
-    // Use GitHub CLI pagination to get all results
-    // Use execFileSync with separate arguments to prevent command injection
-    const output = execFileSync('gh', [
-      'api', 'search/issues',
-      '-f', `q=${searchQuery}`,
-      '--paginate',
-      '--jq', '.items[] | {number, title, state, created_at, closed_at, labels: [.labels[].name], url}'
-    ], {
+    console.log(`  Running: gh ${searchArgs.join(' ')}`);
+    
+    // Execute gh search issues command
+    const output = execFileSync('gh', searchArgs, {
       encoding: 'utf8',
-      maxBuffer: 50 * 1024 * 1024, // Increase buffer for paginated results
-      timeout: 120000 // 2 minute timeout for large result sets
+      maxBuffer: 50 * 1024 * 1024, // 50MB buffer for large result sets
+      timeout: 120000 // 2 minute timeout
     });
     
     if (output.trim()) {
-      const lines = output.trim().split('\n').filter(line => line.trim());
-      const issues = lines.map(line => JSON.parse(line));
-      console.log(`  Found ${issues.length} matching issues (paginated)`);
-      return issues;
+      const issues = JSON.parse(output);
+      console.log(`  Found ${issues.length} matching issues`);
+      
+      // Transform the output to match the expected format
+      return issues.map(issue => ({
+        number: issue.number,
+        title: issue.title,
+        state: issue.state,
+        created_at: issue.createdAt,
+        closed_at: issue.closedAt,
+        labels: issue.labels.map(l => l.name),
+        url: issue.url
+      }));
     } else {
       console.log(`  Found 0 matching issues`);
       return [];
@@ -355,25 +401,47 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
 async function getCurrentParticipatingTeams() {
   try {
     console.log('Searching for currently open collaboration-cycle issues...');
-    // Validate repository format before using in query
-    const validated = validateSearchQuery(['collaboration-cycle'], REPO, '2020-01-01', '2030-12-31');
-    const searchQuery = `repo:${validated.repo}+label:"collaboration-cycle"+type:issue+state:open`;
     
     const output = execFileSync('gh', [
-      'api', 'search/issues',
-      '-f', `q=${searchQuery}`,
-      '--jq', '.total_count'
+      'search', 'issues',
+      '--repo', REPO,
+      '--label', 'collaboration-cycle',
+      '--state', 'open',
+      '--limit', '1', // Just get count, not all issues
+      '--json', 'number'
     ], {
       encoding: 'utf8',
       maxBuffer: 1 * 1024 * 1024,
-      timeout: 15000 // 15 second timeout
+      timeout: 30000 // 30 second timeout
     });
     
-    const count = parseInt(output.trim(), 10);
+    // Parse to get actual count from the search
+    // Note: gh search issues doesn't return total count directly,
+    // so we need to get all results up to limit
+    const issues = JSON.parse(output);
+    
+    // For a more accurate count, we can search with a higher limit
+    // But to avoid timeout, we'll use the limit of 1000 which is the max
+    const countOutput = execFileSync('gh', [
+      'search', 'issues',
+      '--repo', REPO,
+      '--label', 'collaboration-cycle',
+      '--state', 'open',
+      '--limit', '1000',
+      '--json', 'number'
+    ], {
+      encoding: 'utf8',
+      maxBuffer: 5 * 1024 * 1024,
+      timeout: 45000 // 45 second timeout for larger result set
+    });
+    
+    const allIssues = JSON.parse(countOutput);
+    const count = allIssues.length;
     console.log(`  Found ${count} open collaboration-cycle issues`);
     return count;
   } catch (error) {
     console.error('Failed to fetch participating teams:', error.message);
+    console.log('  Continuing with 0 for participating teams count...');
     return 0;
   }
 }
