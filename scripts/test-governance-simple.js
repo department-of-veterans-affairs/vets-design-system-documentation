@@ -26,7 +26,7 @@ function generateSampleData() {
     const baseValue = 10 + index * 2;
     return {
       period: quarter,
-      touchpoints_completed: baseValue + Math.floor(Math.random() * 5),
+      touchpoints_held: baseValue + Math.floor(Math.random() * 5),
       products_shipped: Math.floor(baseValue * 0.6) + Math.floor(Math.random() * 3),
       total_staging_issues: (baseValue * 2) + Math.floor(Math.random() * 8),
       launch_blocking_issues: Math.floor(baseValue * 0.3) + Math.floor(Math.random() * 2),
@@ -40,7 +40,7 @@ function generateSampleData() {
   
   const summary = {
     current_quarter: latestQuarter.period,
-    touchpoints_completed: latestQuarter.touchpoints_completed,
+    touchpoints_held: latestQuarter.touchpoints_held,
     products_shipped: latestQuarter.products_shipped,
     total_staging_issues: latestQuarter.total_staging_issues,
     launch_blocking_issues: latestQuarter.launch_blocking_issues,
@@ -48,7 +48,7 @@ function generateSampleData() {
     participating_teams: 8, // Sample number of active teams
     last_updated: new Date().toISOString(),
     trends: {
-      touchpoints_trend: calculateTrend(latestQuarter.touchpoints_completed, previousQuarter.touchpoints_completed),
+      touchpoints_trend: calculateTrend(latestQuarter.touchpoints_held, previousQuarter.touchpoints_held),
       products_trend: calculateTrend(latestQuarter.products_shipped, previousQuarter.products_shipped),
       staging_issues_trend: calculateTrend(latestQuarter.total_staging_issues, previousQuarter.total_staging_issues)
     }
@@ -90,13 +90,13 @@ function calculateTrend(current, previous) {
  */
 async function exportToCSV(quarterlyData) {
   const csvRows = [
-    'Quarter,Touchpoints Completed,Products Shipped,Total Staging Issues,Launch Blocking Issues,Launch Blocking Percentage'
+    'Quarter,Touchpoints Held,Products Shipped,Total Staging Issues,Launch Blocking Issues,Launch Blocking Percentage'
   ];
   
   quarterlyData.forEach(row => {
     csvRows.push([
       row.period,
-      row.touchpoints_completed,
+      row.touchpoints_held,
       row.products_shipped,
       row.total_staging_issues,
       row.launch_blocking_issues,
@@ -131,7 +131,7 @@ async function main() {
     
     console.log(`✅ Sample governance metrics written to ${OUTPUT_FILE}`);
     console.log(`📊 Sample Summary for ${governanceData.summary.current_quarter}:`);
-    console.log(`   - Touchpoints completed: ${governanceData.summary.touchpoints_completed}`);
+    console.log(`   - Touchpoints held: ${governanceData.summary.touchpoints_held}`);
     console.log(`   - Products shipped: ${governanceData.summary.products_shipped}`);
     console.log(`   - Total staging issues: ${governanceData.summary.total_staging_issues}`);
     console.log(`   - Launch blocking issues: ${governanceData.summary.launch_blocking_issues}`);

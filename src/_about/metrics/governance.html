@@ -6,15 +6,29 @@ title: Governance Metrics
 ---
 
 {% comment %}
-Assign current quarter data from the quarterly file based on governance index
+Dynamically determine the latest and previous governance metrics quarters from the index
 {% endcomment %}
-{% assign latest_quarter_data = site.data.metrics.governance-metrics-2025Q3 %}
 {% assign governance_index = site.data.metrics.governance-index %}
+{% assign latest_quarter_key = "governance-metrics-" | append: governance_index.latest_complete_quarter %}
+{% assign latest_quarter_data = site.data.metrics[latest_quarter_key] %}
 
 {% comment %}
-Calculate trends by comparing latest quarter with previous quarter
+Calculate previous quarter for trend comparisons
+To get the previous quarter, we extract the year and quarter number, then calculate
 {% endcomment %}
-{% assign previous_quarter_data = site.data.metrics.governance-metrics-2025Q2 %}
+{% assign latest_quarter_string = governance_index.latest_complete_quarter %}
+{% assign year = latest_quarter_string | slice: 0, 4 | plus: 0 %}
+{% assign quarter = latest_quarter_string | slice: 5, 1 | plus: 0 %}
+{% if quarter == 1 %}
+  {% assign prev_year = year | minus: 1 %}
+  {% assign prev_quarter = 4 %}
+{% else %}
+  {% assign prev_year = year %}
+  {% assign prev_quarter = quarter | minus: 1 %}
+{% endif %}
+{% assign previous_quarter_string = prev_year | append: "Q" | append: prev_quarter %}
+{% assign previous_quarter_key = "governance-metrics-" | append: previous_quarter_string %}
+{% assign previous_quarter_data = site.data.metrics[previous_quarter_key] %}
 {% if latest_quarter_data.data and previous_quarter_data.data %}
   {% comment %} Calculate touchpoints trend {% endcomment %}
   {% assign current_touchpoints = latest_quarter_data.data.touchpoints_held %}

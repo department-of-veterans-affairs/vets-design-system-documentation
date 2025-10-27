@@ -270,10 +270,12 @@ jobs:
           git add src/_data/metrics/governance-metrics-*.json 2>/dev/null || true
           
           # Add CSV files if they exist
+          # Note: Only CSV files in src/assets/data/metrics/ are added
+          # CSV files in src/_data/metrics/ (if generated) are intentionally excluded
+          # to avoid duplication since they're copied from src/assets/data/metrics/
           for file in \
             src/assets/data/metrics/ds-components-latest.csv \
-            src/assets/data/metrics/governance-metrics.csv \
-            src/_data/metrics/governance-metrics.csv; do
+            src/assets/data/metrics/governance-metrics.csv; do
             if [ -f "$file" ]; then
               git add "$file"
             fi

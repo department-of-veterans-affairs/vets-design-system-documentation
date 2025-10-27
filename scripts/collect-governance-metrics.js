@@ -356,7 +356,7 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
       quarter.endDate,
       'closed'
     );
-    const productsShipped = stagingReviewIssues.length; // All returned issues are already closed
+    const productsShipped = stagingReviewIssues.length; // All returned issues were closed within the quarter date range
     
     // 4. Total issues filed at Staging Review
     const stagingIssues = await fetchIssuesInDateRange(
