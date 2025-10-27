@@ -1,7 +1,7 @@
 name: "5. Accessibility Issue"
 description: "Use this template to report accessibility defects for VA Design System Components and Patterns"
 labels: ["accessibility", "needs-triage", "platform-design-system-team"]
-title: "[accessibility-defect-X]: Description of bug "
+title: "[Accessibility]: Description of bug "
 type: bug
 projects: ["department-of-veterans-affairs/1643"]
 assignees: jeana-adhoc, amyleadem
