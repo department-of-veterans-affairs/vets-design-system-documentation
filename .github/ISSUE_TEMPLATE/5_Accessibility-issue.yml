@@ -1,0 +1,152 @@
+name: "5. Accessibility Issue"
+description: "Use this template to report accessibility defects for VA Design System Components and Patterns"
+labels: ["accessibility", "needs-triage", "platform-design-system-team"]
+title: "[Accessibility]: Description of bug "
+type: bug
+projects: ["department-of-veterans-affairs/1643"]
+assignees: jeana-adhoc, amyleadem
+  
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🎯 Purpose
+        Use this template to file accessibility defects with the design system or forms library.  
+        Please consult the [Accessibility Defect Severity Rubric](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-defect-severity-rubric) before submitting.
+  
+  - type: input
+    id: contact
+    attributes:
+      label: Point of contact
+      description: The person or team we should follow up with when this ticket is addressed/remediated.
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Defect Severity"
+      description: "Select based on the rubric."
+      options:
+        - 0, Launchblocker. Potentially Harmful. Must be fixed immediately.
+        - 1, Launchblocker. Critical. Must be fixed before launch.
+        - 2, Serious. Should be fixed in 1-2 sprints post-launch.
+        - 3, Moderate. Should be fixed in 1-3 sprints post-launch.
+        - 4, Minor. Consider fixing or exploring in 2-4 sprints post-launch.
+    validations:
+      required: true
+
+  - type: textarea
+    id: severity-rationale
+    attributes:
+      label: "Severity rationale"
+      description: "Explain why you chose this level, referencing the rubric."
+      placeholder: "Example: Screen reader users cannot activate the Submit button; prevents form submission."
+    validations:
+      required: true
+
+  - type: textarea
+    id: section-508
+    attributes:
+      label: "VA 508 Office"
+      description: "If this was a VA 508 office finding, include those details below."
+      placeholder: "Include links to existing tickets if possible"
+
+  - type: input
+    id: url
+    attributes:
+      label: "URL where issue occurs"
+      description: "Include full environment URL. https://staging.va.gov/..."
+      placeholder: "https://staging.va.gov/..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: component
+    attributes:
+      label: "Component or pattern (if applicable)"
+      placeholder: "va-alert, minimal form flow, list and loop."
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment details"
+      description: "Provide OS, browser, screen reader, device, and version info in which you have encountered the bug."
+      placeholder: |
+        - OS: macOS 14.6  
+        - Browser: Chrome 128.0.6613.121  
+        - Screen Reader: VoiceOver v14  
+        - Device: MacBook Air M2
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Tell us what to navigate to, what to turn on (screen reader), how to recreate the bug on our devices."
+      placeholder: |
+        1. Navigate to ...
+        2. Turn on ...
+        3. Move focus to ...
+        4. This happened ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: "Observed behavior"
+      placeholder: "Describe what actually happens."
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior / Acceptance criteria"
+      placeholder: "Describe what should happen per WCAG or VA standards."
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Supporting evidence (screenshots, recordings, code snippets)"
+      placeholder: "Attach or link as needed."
+
+  - type: textarea
+    id: related
+    attributes:
+      label: "Related issues or systemic notes"
+      placeholder: "Link similar issues, design-system components, or patterns."
+
+  - type: checkboxes
+    id: modalities
+    attributes:
+      label: Type of issue
+      description: You may select more than one.
+      options:
+        - label: Axe-core
+        - label: Cognitive | user flows & navigating
+        - label: Color, typography, & visual elements
+        - label: Components and pattern standards
+        - label: Content organization
+        - label: Content style guide
+        - label: Focus
+        - label: Headings
+        - label: Keyboard
+        - label: Link and button labels
+        - label: Markup and metadata
+        - label: Non-text content and media
+        - label: Overall user experience
+        - label: Screenreader | assistive tech & device support
+        - label: Semantic HTML
+        - label: URL standards
+        - label: Zoom or Magnification
+        - label: Something else
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        🧩 **Reminder:**  
+        - Include URLs and environment details.  
+        - Reference the rubric for severity.  
+        - Link systemic issues where possible.
