@@ -576,7 +576,7 @@ function printQuarterDetails(quarterData) {
   console.log(`      - 🎨 Design Intent: ${quarterData.design_intent_held} (governance-team + design-intent labels)`);
   console.log(`      - 🔄 Midpoint Review: ${quarterData.midpoint_review_held} (governance-team + midpoint-review labels)`);
   console.log(`      - 🚀 Staging Review: ${quarterData.staging_review_held} (governance-team + staging-review labels)`);
-  console.log(`   � Products Shipped: ${quarterData.products_shipped}`);
+  console.log(`   📦 Products Shipped: ${quarterData.products_shipped}`);
   console.log(`      - Issues labeled with collaboration-cycle + staging-review closed in this period`);
   console.log(`   ⚠️  Total Staging Issues: ${quarterData.total_staging_issues}`);
   console.log(`      - Issues labeled with CC-Dashboard + Staging + collab-cycle-feedback created in this period`);
