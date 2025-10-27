@@ -61,7 +61,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$SAFE_TAG" --title "$RAW_TAG" --notes "Automated release"
+          # Check if release already exists
+          if gh release view "$SAFE_TAG" >/dev/null 2>&1; then
+            echo "Release $SAFE_TAG already exists, skipping creation"
+          else
+            gh release create "$SAFE_TAG" --title "$RAW_TAG" --notes "Automated release"
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
