@@ -26,7 +26,7 @@ jobs:
           RAW_TAG="${{ github.event.inputs.tag_name }}"
 
           # Replace spaces with hyphens, remove unsafe characters
-          SAFE_TAG=$(echo "$RAW_TAG" | tr '[:space:]' '-' | tr -cd '[:alnum:]._:-')
+          SAFE_TAG=$(echo "$RAW_TAG" | tr '[:space:]' '-' | tr -cd '[:alnum:]._-')
 
           # Collapse multiple consecutive special characters into single hyphen
           SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/-\{2,\}/-/g; s/\.\{2,\}/./g; s/::\+/:/g; s/_\{2,\}/_/g')
