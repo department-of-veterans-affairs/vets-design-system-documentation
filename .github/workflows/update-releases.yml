@@ -85,7 +85,6 @@ jobs:
 
       - name: Run update-releases script
         run: yarn run update-releases
-        continue-on-error: true
 
       - name: Check for changes
         id: check-changes
