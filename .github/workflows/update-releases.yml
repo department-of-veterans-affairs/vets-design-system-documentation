@@ -29,7 +29,7 @@ jobs:
           SAFE_TAG=$(echo "$RAW_TAG" | tr '[:space:]' '-' | tr -cd '[:alnum:]._-')
 
           # Collapse multiple consecutive special characters into single hyphen
-          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/-\{2,\}/-/g; s/\.\{2,\}/./g; s/::\+/:/g; s/_\{2,\}/_/g')
+          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/-\{2,\}/-/g; s/\.\{2,\}/./g; s/:\{2,\}/:/g; s/_\{2,\}/_/g')
 
           # Remove leading special characters
           SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/^[-._:]*//g')
