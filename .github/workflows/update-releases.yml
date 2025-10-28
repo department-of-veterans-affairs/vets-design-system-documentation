@@ -50,7 +50,7 @@ jobs:
       - name: Create Git tag
         run: |
           # Check if tag already exists
-          if git rev-parse "$SAFE_TAG" >/dev/null 2>&1; then
+          if git rev-parse "${SAFE_TAG}" >/dev/null 2>&1; then
             echo "Tag $SAFE_TAG already exists, skipping creation"
           else
             git tag "$SAFE_TAG"
