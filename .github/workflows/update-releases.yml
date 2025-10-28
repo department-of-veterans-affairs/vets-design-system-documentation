@@ -32,10 +32,10 @@ jobs:
           SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/-\{2,\}/-/g; s/\.\{2,\}/./g; s/:\{2,\}/:/g; s/_\{2,\}/_/g')
 
           # Remove leading special characters
-          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/^[-._:]*//g')
+          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/^[-._]*//g')
 
           # Remove trailing special characters
-          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/[-._:]*$//g')
+          SAFE_TAG=$(echo "$SAFE_TAG" | sed 's/[-._]*$//g')
 
           # Ensure it's not empty
           if [ -z "$SAFE_TAG" ]; then
