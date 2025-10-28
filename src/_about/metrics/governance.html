@@ -160,17 +160,17 @@ To get the previous quarter, we extract the year and quarter number, then calcul
   <section aria-labelledby="quarterly-governance-heading">
     <h2 id="quarterly-governance-heading">Quarterly Governance Metrics</h2>
     <div class="data-freshness" id="governance-data-freshness">
+      <small>
       {% if latest_quarter_data.generated_at %}
-        <small class="data-freshness">
           Data last updated: {{ latest_quarter_data.generated_at | date: "%B %-d, %Y at %-I:%M %p" }} 
           ({{ governance_index.latest_complete_quarter }})
           {% if latest_quarter_data.data_source %}
             | Source: {{ latest_quarter_data.data_source }}
           {% endif %}
-        </small>
       {% else %}
-        <small class="data-freshness">Sample data for demonstration purposes</small>
+        Sample data for demonstration purposes
       {% endif %}
+      </small>
     </div>
     <div class="metrics-section">
       <h3>Collaboration Cycle Activity by Quarter</h3>
