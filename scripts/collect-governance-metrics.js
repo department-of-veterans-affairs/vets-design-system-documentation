@@ -18,7 +18,7 @@ const fs = require('fs').promises;
 const path = require('path');
 // We use execFileSync to invoke GitHub CLI commands directly, rather than the Octokit library.
 // This approach leverages existing CLI tooling and simplifies authentication and output parsing.
-// Arguments are always passed as separate parameters to prevent command injection.
+// We use execFileSync (not execSync/exec) and pass arguments as array elements rather than string concatenation to prevent command injection attacks.
 const { execFileSync } = require('child_process');
 
 const REPO = 'department-of-veterans-affairs/va.gov-team';
