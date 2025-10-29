@@ -89,7 +89,7 @@
   function announceSelection(node) {
     const announcement = document.createElement('div');
     announcement.setAttribute('aria-live', 'polite');
-    announcement.className = 'sr-only';
+    announcement.className = 'vads-u-visibility--screen-reader';
     announcement.textContent = `Selected: ${node.getAttribute('aria-label')}`;
     
     document.body.appendChild(announcement);
@@ -166,10 +166,18 @@
 
   // Initialize Mermaid and set up accessibility
   function initializeMermaid() {
+    // Check if Mermaid library is available
+    if (typeof mermaid === 'undefined') {
+      console.error('Mermaid library not loaded');
+      return;
+    }
+
     mermaid.initialize(MERMAID_CONFIG);
     
     mermaid.run().then(() => {
       document.querySelectorAll('.mermaid').forEach(setupChartAccessibility);
+    }).catch(error => {
+      console.error('Failed to initialize Mermaid charts:', error);
     });
   }
 
