@@ -134,6 +134,25 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance. 
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
 
+#### Password input type
+
+Use the password input type when you need users to enter sensitive information that should be hidden from view, such as passwords, PINs, or security codes.
+
+**When to use password input type:**
+* For user account passwords during sign-in or registration
+* For temporary passwords or verification codes
+* For PINs or security codes
+* For any field where the entered text should be masked for privacy and security
+
+**When not to use password input type:**
+* For Social Security Numbers (use a regular text input with appropriate masking)
+* For phone numbers or other information that users may need to verify visually
+
+**Related components and guidance:**
+* For encrypted file uploads that require passwords, see [File input]({{ site.baseurl }}/components/form/file-input#accepts-file-password)
+* For authentication flows and sign-in experiences, see [Sign in pattern]({{ site.baseurl }}/patterns/help-users-to/sign-in) and [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in)
+* For content guidelines about authentication, see [Sign-in and identity verification]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification)
+
 #### Errors
 
 * Refer to the specific error examples above.
