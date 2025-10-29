@@ -46,7 +46,7 @@ anchors:
 
 - **Collections.** Cards usually appear in a collection, rather than in isolation, contain identical or similar information, and are uniform in their look and feel so that users can easily scan the collection of related items and actions.
 - **Framing a call to action.** Cards are often used to highlight and frame a specific call to action or decision a user needs to take.
-- **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag component]({{ site.baseurl }}/components/tag) or an icon with a text description to indicate the status.
+- **Conveying status.** Cards are flexible enough to contain many types of information. However, Cards at the VA often contain time-sensitive information with a status such as appointments, a claim, or submission of a form. When showing status use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component or an icon with a text description to indicate the status.
 
 ### When to consider something else
 
@@ -76,10 +76,10 @@ anchors:
 
 <img src="{{ site.baseurl }}/images/components/card/status.png" alt="Status card via Tag" style="width:100%;"/>
 
-Use this variation when you have a short status which can use the [Tag component]({{ site.baseurl }}/components/tag).
+Use this variation when you have a short status which can use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component.
 
 1. **Background color.** Currently [$color-gray-lightest]({{ site.baseurl }}/foundation/color-palette#grayscale).
-2. **Status.** Status using the [Tag component]({{ site.baseurl }}/components/tag). Status should: announce "status" by screen readers, the visible status text, and the header text. See [accessibility considerations](#accessibility-considerations) for more details.
+2. **Status.** Status using the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component. Status should: announce "status" by screen readers, the visible status text, and the header text. See [accessibility considerations](#accessibility-considerations) for more details.
 3. **Header.** Header that summarizes the card's content.
 4. **Secondary content.** Body text. Includes next steps and bold dates/times to draw attention to the most important details on the card.
 5. **Call to action.** An [action link]({{ site.baseurl }}/components/link/action) should be used for the primary call-to-action. A [link]({{ site.baseurl }}/components/link) may also be used.
@@ -153,12 +153,14 @@ There are many instances of the Card component in production. This is not an exh
 - **Max 3 CTAs.** A card should not contain more than three calls-to-action (CTAs).
 - **Secondary and tertiary actions.** Secondary and tertiary actions can use the [secondary variation of action link]({{ site.baseurl }}/components/link/action), an [active or other link variation]({{ site.baseurl }}/components/link/#variations), or a [default link]({{ site.baseurl }}/components/link).
 
+### Using status tags in cards
+
+Status tags are used within cards to communicate the current state or status of the information presented. Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to clearly indicate status, such as "In progress", "Completed", or "Needs attention". Ensure that color choices for status tags are accessible and do not rely solely on color to convey meaning.
 ### Communicating status
 
-- **Tag for status.** Use the [Tag component]({{ site.baseurl }}/components/tag) to communicate status.
-  - NOTE: There are some accessibility concerns with the Tag component when used in the context of a Card that have been raised but remain untested. If you are testing this component consider using a bold font-weight and letter-spacing to improve the legibility of the Tag.
+- **Status Tag for status.** Use the [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/) component to communicate status within cards.
 - **Make accessible color choices.** If you are using color as a supplementary status indicator, make sure your color choices are accessible and intuitive.
-- **Color and another.** Never rely on color alone to communicate status.
+- **Use color and another indicator when communicating status.** Never rely on color alone to communicate status.
 
 ### Placement
 
@@ -176,10 +178,6 @@ Cards use the following widths:
 #### Layout
 
 Cards can sit inside or outside of a grid layout. Cards start with [1.5 spacing units (1.2rem/12px)]({{ site.baseurl }}/foundation/spacing-units) below each card to separate them. Then the spacing increases to [2 spacing units (1.6rem/16px)]({{ site.baseurl }}/foundation/spacing-units) of margin on all sides at the [$medium-screen and above breakpoint]({{ site.baseurl }}/foundation/breakpoints).
-
-### Element states
-
-- When a Card behaves as a link it must have hover, focus, and active states. The hover state should be a 2px solid [$color-primary]({{ site.baseurl }}/foundation/color-palette#base) border. An appropriate focus status would add a 2px solid outline.
 
 {% include component-docs.html component_name=page.web-component %}
 
@@ -215,19 +213,6 @@ When you want to show benefits or tools the user is currently enrolled in or has
 
 - **Concise headers and text.** Keep card content (especially [header text]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)) short, crisp, and to-the-point: Users should be able to glean the most important information at-a-glance, and have the option to view additional details by clicking a link or action link.
 - **Translation proof.** Avoid using dynamic content within the middle of a sentence to future-proof the card for translation.
-- **Statuses**: Currently, the following status names that are known to be in-use:
-  - [Appeals](https://www.va.gov/resources/what-your-decision-review-or-appeal-status-means/) has over 40 status labels.
-  - Appointments:
-    - Upcoming
-    - Requested
-    - Past
-    - Canceled
-  - [Claims](https://www.va.gov/resources/what-your-claim-status-means/):
-    - Claim received
-    - Initial review
-    - Evidence gathering, review, and decision
-    - Preparation for notification
-    - Complete
 
 ## Accessibility considerations
 
@@ -254,5 +239,6 @@ Sub-components used in this component:
 - [Section titles]({{ site.baseurl }}/content-style-guide/page-titles-and-section-titles#section-titles)
 - [Link - Action]({{ site.baseurl }}/components/link/action)
 - [Tag]({{ site.baseurl }}/components/tag)
+- [Tag - Status]({{ site.baseurl }}/components/tag/tag-status/)
 
 Also see the [Service list item]({{ site.baseurl }}/components/service-list-item) component

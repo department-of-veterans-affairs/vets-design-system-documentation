@@ -129,16 +129,6 @@
         }
         break;
 
-      case KEYS.TAB:
-        e.preventDefault();
-        const currentIndex = allNodesArray.indexOf(currentNode);
-        const nextIndex = e.shiftKey 
-          ? (currentIndex === 0 ? allNodesArray.length - 1 : currentIndex - 1)
-          : (currentIndex + 1) % allNodesArray.length;
-        
-        updateTabIndex(nodes, allNodesArray[nextIndex]);
-        allNodesArray[nextIndex].focus();
-        break;
     }
   }
 

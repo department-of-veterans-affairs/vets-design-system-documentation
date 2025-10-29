@@ -72,6 +72,23 @@ anchors:
 
 * The `table-title`, which the component will place in a `<caption>` element, should succinctly describe the table in a meaningful way.
 
+### Handling Empty Data in Tables
+
+Tables on VA.gov should never contain blank or missing cells. Empty cells can confuse screen reader users and make it difficult for anyone to understand whether a value is missing, unavailable, or zero. Every table cell should communicate meaning. If data is not available, include a short phrase that explains why — for example, “Data not available,” “Not provided,” or “Zero.” This ensures consistent, interpretable data for all users, including those using assistive technologies.
+
+#### Choosing the Right Phrase for Missing Data
+
+When a table contains missing data, choose a phrase that reflects *why* the value is missing. Use clear, consistent language so users can interpret the dataset correctly.
+
+**Examples**
+
+- Use **Not Applicable** when the data does not apply to that row or column. For example, a column for "Discharge date" in a table of Veterans still receiving care.
+- Use **Not provided** when the data was expected but not reported. For example, a missing value in a "Total claims processed" column.
+- Use **Data not available** when the data exists but cannot currently be shown. For example, when the data source is being updated, or the system is currently offline.
+- Use **0** when the numeric value is intentionally zero. For example, when the number of dependents column is reported as 0.
+
+Clear phrasing ensures that all users — including those navigating with assistive technology — can understand what each table cell represents and why a value may be missing.
+
 ## Accessibility considerations
 
 <va-link-action
