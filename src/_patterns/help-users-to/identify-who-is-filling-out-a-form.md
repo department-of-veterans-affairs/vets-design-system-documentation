@@ -33,7 +33,7 @@ Always define the term on the first instance as "person with the claim" or "pers
 For example:
 > "I’m the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
 
-**Form submitter**: The person actually filling out and sending in the form. (Don't use this term when talking to Veterans—it's just for internal use.)
+**Form submitter**: The person actually filling out and sending in the form. Don't use this term when talking to Veterans — it's just for internal use.
 
 **Third-party representative**: Someone who has official permission to help a Veteran with VA paperwork. This includes:
 
@@ -53,7 +53,7 @@ For example:
 * If someone's already signed into VA.gov and we know they're a Veteran, ask: "Are you filling out this form for yourself?"
 * If they say yes, fill in their information automatically and skip the rest of these questions.
 
-<!-- {% include component-example.html alt="A form question asking signed-in Veterans which situation best describes them, with options to fill out the form for themselves, another Veteran, or a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1b-prefill-vet-question.png" caption="Example of Question 1a for signed-in Veterans with prefilled profile information." class="x2" %} -->
+{% include component-example.html alt="A form question asking signed-in Veterans which situation best describes them, with options to fill out the form for themselves, another Veteran, or a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1b-prefill-vet-question.png" caption="Example of Question 1a for signed-in Veterans with prefilled profile information." class="x2" reverse="true" %}
 
 ### Question 1b: For everyone else
 
@@ -65,7 +65,7 @@ Options might include:
 * I'm filling this out for myself (but I'm not a Veteran)
 * I'm filling this out for someone else
 
-<!-- {% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves, non-Veteran claimants, filling out for a Veteran, or filling out for a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" %} -->
+{% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves, non-Veteran claimants, filling out for a Veteran, or filling out for a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" reverse="true" %}
 
 ### Question 2a: Relationship to Veteran
 
@@ -76,7 +76,7 @@ Ask about their relationship to the Veteran whose service earned these benefits:
 * Parent
 * Other specific relationships (depends on the form)
 
-<!-- {% include component-example.html alt="A form question asking which roles best describe the user, with placeholder options for different claimant types permitted by the form." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2a-claimant-question.png" caption="Example of Question 2a asking about the user's relationship or role as a claimant." class="x2" %} -->
+{% include component-example.html alt="A form question asking which roles best describe the user, with placeholder options for different claimant types permitted by the form." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2a-claimant-question.png" caption="Example of Question 2a asking about the user's relationship or role as a claimant." class="x2" reverse="true" %}
 
 ### Question 2b: For people filling out forms for others
 
@@ -87,9 +87,9 @@ Ask what type of representative they are:
 * Family member
 * Other approved representative types
 
-<!-- {% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a Veteran, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for Veterans." class="x2" %} -->
+{% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a Veteran, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for Veterans." class="x2" %}
 
-<!-- {% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a non-Veteran claimant, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-non-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for non-Veteran claimants." class="x2" %} -->
+{% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a non-Veteran claimant, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-non-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for non-Veteran claimants." class="x2" %}
 
 ### How this affects your form
 
@@ -123,7 +123,7 @@ Keep error messages simple:
 
 When users don't have the proper permission to fill out a form for someone else, provide clear guidance on next steps:
 
-<!-- {% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %} -->
+{% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
 
 ## Content considerations
 
