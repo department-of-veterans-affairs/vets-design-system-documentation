@@ -62,6 +62,10 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 {% include storybook-preview.html story="uswds-va-text-input--with-currency" link_text="va-text-input with currency" %}
 
+### Password
+
+{% include storybook-preview.html story="uswds-va-text-input--password" link_text="va-text-input Password" %}
+
 ### Forms pattern - Single
 
 {% include storybook-preview.html story="uswds-va-text-input--forms-pattern-single" link_text="va-text-input forms pattern single" height="500px" %}
@@ -133,25 +137,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Internationalization.** Demonstrates how this components changes when used with the language toggle.
 * **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance. 
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
-
-#### Password input type
-
-Use the password input type when you need users to enter sensitive information that should be hidden from view, such as passwords, PINs, or security codes.
-
-**When to use password input type:**
-* For user account passwords during sign-in or registration
-* For temporary passwords or verification codes
-* For PINs or security codes
-* For any field where the entered text should be masked for privacy and security
-
-**When not to use password input type:**
-* For Social Security Numbers (use a regular text input with appropriate masking)
-* For phone numbers or other information that users may need to verify visually
-
-**Related components and guidance:**
-* For encrypted file uploads that require passwords, see [File input]({{ site.baseurl }}/components/form/file-input#accepts-file-password)
-* For authentication flows and sign-in experiences, see [Sign in pattern]({{ site.baseurl }}/patterns/help-users-to/sign-in) and [Alert - Sign-in]({{ site.baseurl }}/components/alert/alert-sign-in)
-* For content guidelines about authentication, see [Sign-in and identity verification]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification)
+* **Password.** Masks entered text for sensitive information like passwords, PINs, or security codes. Use for authentication fields and temporary verification codes. Don't use for Social Security Numbers, phone numbers, or other information that users may need to verify visually. For encrypted file passwords, see [File input]({{ site.baseurl }}/components/form/file-input#accepts-file-password).
 
 #### Errors
 
