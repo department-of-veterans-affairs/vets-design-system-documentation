@@ -1,8 +1,13 @@
 // Metrics Dashboard Styles
 // Provides styling for the metrics dashboard page with proper VA Design System tokens
 
-// Use SCSS breakpoint variables from VA Design System tokens
+// Use SCSS breakpoint variables from VA Design System tokens (imported globally in application.scss)
 // (media queries can't use CSS custom properties, so we use the SCSS variables imported from css-library)
+
+// Helper function to strip units from values for calculations
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
 
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
