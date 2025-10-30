@@ -493,14 +493,19 @@ function calculateSummary(quarterlyData) {
   for (let i = quarterlyData.length - 1; i >= 0; i--) {
     const quarter = quarterlyData[i];
     // A complete quarter should have meaningful kickoffs AND touchpoints including multiple types
+    // Use a more robust check for complete data rather than hardcoded year assumptions
+    const hasMultipleTouchpointTypes = (quarter.design_intent_held > 0 && quarter.midpoint_review_held > 0) ||
+                                     (quarter.design_intent_held > 0 && quarter.staging_review_held > 0) ||
+                                     (quarter.midpoint_review_held > 0 && quarter.staging_review_held > 0);
+    
+    // Minimum thresholds for considering a quarter "complete"
+    const hasMinimumActivity = quarter.total_kickoffs >= 3 && quarter.touchpoints_held >= 5;
+    
     const hasCompleteData = quarter.total_kickoffs > 0 && 
                            quarter.touchpoints_held > 0 &&
                            (quarter.design_intent_held > 0 || quarter.midpoint_review_held > 0 || quarter.staging_review_held > 0) &&
-                           // Either have multiple touchpoint types OR be from 2024 (known complete data)
-                           (quarter.period.includes('2024') || 
-                            (quarter.design_intent_held > 0 && quarter.midpoint_review_held > 0) ||
-                            (quarter.design_intent_held > 0 && quarter.staging_review_held > 0) ||
-                            (quarter.midpoint_review_held > 0 && quarter.staging_review_held > 0));
+                           // Either have multiple touchpoint types OR meet minimum activity thresholds
+                           (hasMultipleTouchpointTypes || hasMinimumActivity);
     
     if (hasCompleteData) {
       if (!latestQuarterWithData) {
@@ -576,7 +581,7 @@ function printQuarterDetails(quarterData) {
   console.log(`      - 🎨 Design Intent: ${quarterData.design_intent_held} (governance-team + design-intent labels)`);
   console.log(`      - 🔄 Midpoint Review: ${quarterData.midpoint_review_held} (governance-team + midpoint-review labels)`);
   console.log(`      - 🚀 Staging Review: ${quarterData.staging_review_held} (governance-team + staging-review labels)`);
-  console.log(`   📦 Products Shipped: ${quarterData.products_shipped}`);
+  console.log(`   🚢 Products Shipped: ${quarterData.products_shipped}`);
   console.log(`      - Issues labeled with collaboration-cycle + staging-review closed in this period`);
   console.log(`   ⚠️  Total Staging Issues: ${quarterData.total_staging_issues}`);
   console.log(`      - Issues labeled with CC-Dashboard + Staging + collab-cycle-feedback created in this period`);

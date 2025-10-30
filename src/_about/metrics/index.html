@@ -706,26 +706,6 @@ function showPlaceholders() {
   
 }
 
-// Progressive enhancement function - only updates dynamic elements that need JavaScript
-function enhanceMetricCards(issueSummary, componentSummary) {
-  
-  // Only update elements that couldn't be pre-populated by Jekyll or need dynamic updates
-  // Most content is now served by Jekyll Liquid templates, so this is minimal
-  
-  // Update component data freshness if needed (though this is also handled by Liquid now)
-  if (componentSummary && componentSummary.data_source === 'component-library/ds-components') {
-    updateDataFreshness(componentSummary);
-  }
-  
-  // Enhanced data freshness for metric cards with real-time checking
-  enhanceDataFreshness(issueSummary, componentSummary);
-  
-  // Format the total usages number with commas
-  formatMetricNumbers();
-  
-  // Any other dynamic enhancements can be added here
-}
-
 // Enhanced data freshness checking for all metric cards and section data freshness elements
 function enhanceDataFreshness(issueSummary, componentSummary) {
   // Check issue metrics freshness
@@ -776,6 +756,27 @@ function enhanceDataFreshness(issueSummary, componentSummary) {
     });
   }
 }
+
+// Progressive enhancement function - only updates dynamic elements that need JavaScript
+function enhanceMetricCards(issueSummary, componentSummary) {
+  
+  // Only update elements that couldn't be pre-populated by Jekyll or need dynamic updates
+  // Most content is now served by Jekyll Liquid templates, so this is minimal
+  
+  // Update component data freshness if needed (though this is also handled by Liquid now)
+  if (componentSummary && componentSummary.data_source === 'component-library/ds-components') {
+    updateDataFreshness(componentSummary);
+  }
+  
+  // Enhanced data freshness for metric cards with real-time checking
+  enhanceDataFreshness(issueSummary, componentSummary);
+  
+  // Format the total usages number with commas
+  formatMetricNumbers();
+  
+  // Any other dynamic enhancements can be added here
+}
+
 
 // Helper function to format numbers with commas
 function formatMetricNumbers() {
