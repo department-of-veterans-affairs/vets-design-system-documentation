@@ -505,7 +505,7 @@ function calculateSummary(quarterlyData) {
     if (hasCompleteData) {
       if (!latestQuarterWithData) {
         latestQuarterWithData = quarter;
-      } else if (!previousQuarterWithData) {
+      } else {
         previousQuarterWithData = quarter;
         break; // We have both quarters we need
       }
