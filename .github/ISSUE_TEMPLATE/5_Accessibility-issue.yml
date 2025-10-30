@@ -26,7 +26,7 @@ body:
     id: severity
     attributes:
       label: "How severe do you think this issue is?"
-        description: "You can reference the [Platform Accessibility Defect Severity Rubric](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-defect-severity-rubric)"
+      description: "You can reference the [Platform Accessibility Defect Severity Rubric](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-defect-severity-rubric)"
       options:
         - Potentially harmful
         - Critical
