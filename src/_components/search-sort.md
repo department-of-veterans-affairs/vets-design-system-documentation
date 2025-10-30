@@ -1,17 +1,18 @@
 ---
 layout: component
-title:  Sort
-contributors: Command separated list of contributor names with (org name) following, if applicable
+title:  Search Sort
+permalink: /components/search-sort/
+# contributors: Command separated list of contributor names with (org name) following, if applicable
 draft: true
 web: true
 mobile-app: true
-intro-text: "This text provides the overall purpose and function of the component."
-github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
-research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
+intro-text: "This component reorders information so that users can find relevant information quickly and easily. "
+# github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
+# research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
-figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
+# figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-with-caution-candidate
-web-component: va-component-name
+web-component: va-search-sort
 ---
 
 ## Examples
@@ -40,20 +41,45 @@ Add Storybook examples as necessary.
 
 ## Usage
 
-### When to use Component name
+Sort can be used to arrange information alphabetically, chronologically, numerically, or by any other specified criteria. This allows data to be organized in a way that makes it easier to analyze or interpret. 
 
-* **In this context.** Explain the scenario or user context where this component is, or could be, used.
-* **In this task.** Explain the user task or tasks where this component is, or could be, used.
+### When to use search sort
+
+* **Use sort when it can help users fulfill a task more quickly.** For example, sort can be used in these scenarios: 
+    - To find medication history alphabetically
+    - 
+    
+    - within a form
+    - on a search results page
+    - within a form AND viewing search results
+    - within a knowledge base such as Resources and support
+    - in a table
+
+**Note:** User research is recommended to determine if Sort would be helpful or what criteria would be helpful in specific contexts.
+- 
+<!--* **In this task.** Sort can be used to reorder information in the following:
+    - Medications
+    - Appointments
+    - Secure messages
+    - Claims
+    - History -->
 
 ### When to consider something else
 
-* **Not in this context.** Explain which scenarios or user context where this component is not, or should not, be used.
+* **When order is not relevant.** If the order of data does not impact the results or interpretation, sorting may be unnecessary.
+* **When order is not meaningful or natural (Non-comparable data)** When the data attributes do not have a natural or meaningful order, sorting may not provide any additional value.
+
+<!--Explain which scenarios or user context where this component is not, or should not, be used.
 * **Not for these tasks.** Explain the user tasks where this component is not, or should not, be used.
-* **Use this instead.** Explain when another component should be used instead.
+* **Use this instead.** Explain when another component should be used instead.-->
 
 ### How this component works
+Upon selecting a sorting option, the information is rearranged respectively--the focus will go to ...?
 
-Details the design decisions inherent to the component.
+<!--Details the design decisions inherent to the component.-->
+
+Allow users to sort the content by the factors that are most important to them. Results should be sorted by the option relevant to the content. Ie. Global search should be sorted by relevance to the searched term or phrase. Where as a News listing would be sorted by date order.
+
 
 ## Behavior
 
@@ -61,8 +87,8 @@ Details the design decisions inherent to the component.
 
 Describe the key interactions for this component.
 
-* **Trigger.** What does the user do to start the interaction with this component.
-* **Rules.** What rules govern how the component behaves. How does it work?
+* **Trigger.** What does the user do to start the interaction with this component. 
+* **Rules.** Do not take users to a new page or screen in order to Sort.
 * **Feedback.** What the user sees, hears, and feels that help them understand the rules.
 * **Loops and modes.** Meta rules that govern the interaction.
 
