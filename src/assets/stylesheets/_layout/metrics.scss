@@ -99,7 +99,7 @@
   overflow-x: auto;
   
   // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
-  @media (min-width: ($medium-screen + 1px)) {
+  @media (min-width: (strip-unit($medium-screen) + 1) * 1px) {
     va-table-row span {
       padding: var(--vads-spacing-1) var(--vads-spacing-2);
       text-align: left;
