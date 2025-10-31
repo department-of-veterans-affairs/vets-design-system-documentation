@@ -12,7 +12,6 @@ body:
       value: |
         ## 🎯 Purpose
         Use this template to file accessibility defects with the design system or forms library.  
-        Please consult the [Accessibility Defect Severity Rubric](https://depo-platform-documentation.scrollhelp.site/developer-docs/accessibility-defect-severity-rubric) before submitting.
   
   - type: input
     id: contact
