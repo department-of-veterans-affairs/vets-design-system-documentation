@@ -1,5 +1,8 @@
 <nav class="va-sidebarnav va-sidebarnav--{{include.name}}">
   <ul class="usa-sidenav-list">
+    {%- comment %}
+      Display overview link if index page exists
+    {% endcomment -%}
     {% for p in include.section %}
       {% if p.index %}
       <li class="{% if page.index %}active-level{% endif %}">
@@ -7,29 +10,53 @@
       </li>
       {% endif %}
     {% endfor %}
+    {%- comment %}
+      Sort pages by title and loop through to build navigation items
+    {% endcomment -%}
     {% assign sortedPages = include.section | sort: "title", "last" %}
     {% for p in sortedPages %}
+        {%- comment %}
+          Determine if current page is the active navigation item
+        {% endcomment -%}
         {% assign is-current = false %}
         {% if p.url == page.url or page.url == site.baseurl | append: p.permalink %}
           {% assign is-current = true %}
         {% endif %}
+        {%- comment %}
+          Determine if accordion should be open for parent items or current page
+        {% endcomment -%}
         {% assign open-accordion = false %}
         {% if p.url == page.url or (page.has-parent == p.permalink) %}
-         {% assign open-accordion = true %}
+          {% assign open-accordion = true %}
         {% endif %}
+        {%- comment %}
+          Only render items that are not iframes
+        {% endcomment -%}
         {% if p.layout != "iframe" %}
           {% unless p.index or p.has-parent %}
             {% unless p.draft == true and (p.url != page.url) %}
+                {%- comment %}
+                  Create URL-safe slug from page title
+                {% endcomment -%}
                 {% assign slug = p.title | slugify %}
                 {%- if p.sub-pages -%}
+                  {%- comment %}
+                    Render accordion for pages with sub-pages
+                  {% endcomment -%}
                   <ul class="usa-accordion">
                     <li>
                       <button class="usa-accordion-button" aria-expanded="{%- if open-accordion == true -%}true{%- else -%}false{%- endif -%}" aria-controls="{{p.title | slugify }}">
                         {{p.title}}
+                        {%- comment %}
+                          Icons for expanding/collapsing accordion
+                        {% endcomment -%}
                         <va-icon icon="add" size="3"></va-icon>
                         <va-icon icon="remove" size="3"></va-icon>
                       </button>
                       <div id="{{ slug }}" class="usa-accordion-content" aria-hidden="{%- if open-accordion == true -%}false{%- else -%}true{%- endif -%}">
+                        {%- comment %}
+                          Accordion content with parent page link and sub-pages
+                        {% endcomment -%}
                         <ul class="usa-sidenav-list">
                           <li {% if is-current == true %}class="active-level"{%- endif -%}>
                             <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
@@ -39,17 +66,29 @@
                               {%- endif -%}
                             </a>
                           </li>
+                          {%- comment %}
+                            Loop through sub-pages and render each as a link
+                          {% endcomment -%}
                           {% for item in p.sub-pages %}
                             {% assign link = page.url %}
+                            {%- comment %}
+                              Create slug from sub-page title and check if it's the current page
+                            {% endcomment -%}
                             {% assign slug = item.sub-page | slugify %}
                             {% if link contains slug %}
                               {% assign is-current = true %}
                             {% else %}
                               {% assign is-current = false %}
                             {% endif %}
+                          {%- comment %}
+                            Render sub-page link with optional status badge
+                          {% endcomment -%}
                           <li>
                             <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{p.permalink }}{{ item.sub-page | slugify }}">
                               {{ item.sub-page }}
+                              {%- comment %}
+                                Display status badge for component sub-pages only
+                              {% endcomment -%}
                               {%- if include.name == 'components' -%}
                                 {%- include _site-side-nav-status.html components=sortedPages component=item.sub-page parent=p.title -%}
                             {%- endif -%}
@@ -61,6 +100,9 @@
                     </li>
                   </ul>
                   {%- else -%}
+                  {%- comment %}
+                    Simple link for pages without sub-pages
+                  {% endcomment -%}
                   <li {% if is-current == true %}class="active-level"{%- endif -%}>
                     <a class="{% if is-current == true %}usa-current{%- endif -%}" href="{{site.baseurl}}{{ p.url }}">
                       {{p.title}}
