@@ -1,10 +1,13 @@
 // Metrics Dashboard Styles
 // Provides styling for the metrics dashboard page with proper VA Design System tokens
 
-// Breakpoint variables for consistency
-$tablet-breakpoint: 768px;
-$mobile-breakpoint: 480px;
-$chart-responsive-breakpoint: 600px;
+// Use SCSS breakpoint variables from VA Design System tokens (imported globally in application.scss)
+// (media queries can't use CSS custom properties, so we use the SCSS variables imported from css-library)
+
+// Helper function to strip units from values for calculations
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
 
 .metrics-dashboard {
   margin: var(--vads-spacing-4) 0;
@@ -12,7 +15,7 @@ $chart-responsive-breakpoint: 600px;
 
 .metrics-section {
   margin: var(--vads-spacing-4) 0;
-  padding: var(--vads-spacing-3);
+  padding: var(--vads-spacing-2);
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-sm);
   
@@ -87,7 +90,7 @@ $chart-responsive-breakpoint: 600px;
   position: relative;
   
   // Ensure charts have adequate space on mobile
-  @media (max-width: $tablet-breakpoint) {
+  @media (max-width: $medium-screen) {
     height: 350px;
     margin: var(--vads-spacing-3) 0;
   }
@@ -101,7 +104,7 @@ $chart-responsive-breakpoint: 600px;
   overflow-x: auto;
   
   // Table cell styling - only for non-stacked mode, let stacked mode handle its own layout
-  @media (min-width: #{$tablet-breakpoint + 1}) {
+  @media (min-width: (strip-unit($medium-screen) + 1) * 1px) {
     va-table-row span {
       padding: var(--vads-spacing-1) var(--vads-spacing-2);
       text-align: left;
@@ -129,16 +132,88 @@ $chart-responsive-breakpoint: 600px;
   }
 }
 
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--vads-spacing-2);
-  margin: var(--vads-spacing-4) 0;
+// Metrics grid now uses VA Design System flexbox grid classes
+// .vads-l-row with .vads-l-col classes for responsive layout
+
+.metrics-dashboard .vads-l-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--vads-spacing-1));
+  margin-right: calc(-1 * var(--vads-spacing-1));
+}
+
+.metrics-dashboard .vads-l-row [class*="vads-l-col"] {
+  flex: 0 0 auto;
+  padding-left: var(--vads-spacing-1);
+  padding-right: var(--vads-spacing-1);
+  margin-bottom: var(--vads-spacing-2);
+  
+  // Fallback responsive grid implementation
+  // Mobile first: full width
+  flex-basis: 100%;
+  width: 100%;
+  
+  // Medium screens: 2 columns (50% width)
+  @media (min-width: $medium-screen) {
+    flex-basis: 50%;
+    width: 50%;
+  }
+  
+  // Large screens: 4 columns (25% width)  
+  @media (min-width: $small-desktop-screen) {
+    flex-basis: 25%;
+    width: 25%;
+  }
+}
+
+.data-freshness {
+  color: var(--vads-color-base-darkest); // Use black text for accessibility
+  font-size: var(--vads-font-size-body-small);
+  margin-top: var(--vads-spacing-1);
+  margin-bottom: var(--vads-spacing-2);
+  text-align: left; // Left-align for better readability
+  
+  small {
+    display: block;
+    line-height: 1.3;
+    color: var(--vads-color-base-darkest); // Ensure small text is also black
+  }
+  
+  &.warning {
+    color: var(--vads-color-warning-darker);
+    
+    small {
+      color: var(--vads-color-warning-darker);
+    }
+  }
+  
+  &.error {
+    color: var(--vads-color-error-darker);
+    
+    small {
+      color: var(--vads-color-error-darker);
+    }
+  }
+}
+
+// Data freshness in metric cards should be centered
+.metric-card .data-freshness {
+  text-align: center;
 }
 
 .metric-card {
   text-align: center;
-  padding: var(--vads-spacing-3);
+  padding: var(--vads-spacing-2);
+  height: 100%; // Ensure cards have equal height
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  
+  h3 {
+    font-size: var(--vads-font-size-body);
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: var(--vads-spacing-1);
+  }
 }
 
 .metric-card h4 {
@@ -163,6 +238,21 @@ $chart-responsive-breakpoint: 600px;
   gap: var(--vads-spacing-0p5);
   font-size: var(--vads-font-size-body-small);
   font-weight: var(--font-weight-normal);
+  text-align: center;
+  line-height: 1.3;
+  
+  // Prevent text wrapping in narrow cards
+  @media (min-width: $small-desktop-screen) {
+    font-size: var(--vads-font-size-body-small);
+    
+    // Stack trend text on smaller screens to prevent overflow
+    flex-direction: column;
+    gap: var(--vads-spacing-0p25);
+    
+    .trend-icon {
+      font-size: var(--vads-font-size-body-small);
+    }
+  }
   
   &.trend-up {
     color: var(--vads-color-success-dark);
@@ -177,13 +267,13 @@ $chart-responsive-breakpoint: 600px;
   }
   
   .trend-icon {
-    font-size: 14px;
+    font-size: var(--vads-font-size-body-small);
     font-weight: bold;
     line-height: 1;
   }
   
   va-icon {
-    --va-icon-size: 16px;
+    --va-icon-size: var(--vads-font-size-body-small);
   }
 }
 
@@ -208,12 +298,12 @@ $chart-responsive-breakpoint: 600px;
   border: 1px solid var(--vads-color-gray-lighter);
   border-radius: var(--vads-radius-lg);
   padding: 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: var(--vads-shadow-1);
   transition: box-shadow 0.2s ease;
   overflow: hidden;
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: var(--vads-shadow-2);
   }
 
   h4 {
@@ -241,12 +331,12 @@ $chart-responsive-breakpoint: 600px;
 }
 
 .report-placeholder {
-  background: #f9f9f9;
-  border: 2px dashed #ddd;
-  border-radius: 4px;
-  padding: 2rem;
+  background: var(--vads-color-gray-lightest);
+  border: 2px dashed var(--vads-color-gray-lighter);
+  border-radius: var(--vads-radius-sm);
+  padding: var(--vads-spacing-4);
   text-align: center;
-  color: #666;
+  color: var(--vads-color-gray-dark);
   font-style: italic;
 }
 
@@ -254,12 +344,12 @@ $chart-responsive-breakpoint: 600px;
 .report-modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: var(--vads-z-index-modal);
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: var(--vads-color-black-alpha-80);
   cursor: pointer;
 }
 
@@ -274,19 +364,19 @@ $chart-responsive-breakpoint: 600px;
   img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: var(--vads-radius-sm);
   }
 }
 
 .report-modal-close {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+  top: var(--vads-spacing-2);
+  right: var(--vads-spacing-3);
+  color: var(--vads-color-white);
+  font-size: var(--vads-font-size-xl);
+  font-weight: var(--font-weight-bold);
   cursor: pointer;
-  z-index: 1001;
+  z-index: calc(var(--vads-z-index-modal) + 1);
 
   &:hover {
     opacity: 0.7;
@@ -295,13 +385,13 @@ $chart-responsive-breakpoint: 600px;
 
 // Chart tooltip styling
 .chart-tooltip {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  border: 1px solid rgba(255,255,255,0.1);
+  font-family: var(--font-family-sans);
+  box-shadow: var(--vads-shadow-2);
+  border: 1px solid var(--vads-color-white-alpha-10);
 }
 
 // Responsive design
-@media (max-width: $tablet-breakpoint) {
+@media (max-width: $medium-screen) {
   .monthly-reports-grid {
     grid-template-columns: 1fr;
   }
@@ -322,7 +412,7 @@ $chart-responsive-breakpoint: 600px;
   }
   
   // Stack tab labels vertically on very small screens
-  @media (max-width: $mobile-breakpoint) {
+  @media (max-width: $small-screen) {
     .metrics-section va-tabs {
       va-tab-panel {
         font-size: var(--vads-font-size-body-small);
