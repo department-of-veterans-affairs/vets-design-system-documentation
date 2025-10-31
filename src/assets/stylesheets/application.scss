@@ -139,3 +139,63 @@ these can be removed along with an update to how classes are generated in color-
 .vads-u-background-color--primary-darker {
   background-color: var(--vads-color-primary-darker) !important;
 }
+
+/* Mermaid Charts Styling */
+.mermaid-chart-container {
+  margin: 1.5rem 0;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mermaid-chart-container .mermaid {
+  background: transparent;
+  max-width: 100%;
+}
+
+.mermaid-chart-caption {
+  font-style: italic;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--vads-color-base);
+  font-size: 0.875rem;
+}
+
+.mermaid-comparison {
+  margin: 2rem 0;
+}
+
+.mermaid-comparison__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--vads-color-base-darker);
+}
+
+/* Essential Mermaid fixes */
+.mermaid-container .mermaid .cluster rect {
+  fill: none;
+  stroke: none;
+  opacity: 0;
+}
+
+.mermaid .edgeLabel {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.mermaid .node {
+  cursor: default !important;
+}
+
+@media (max-width: 768px) {
+  .mermaid-chart-container {
+    overflow-x: auto;
+    padding: 0 1rem;
+  }
+  
+  .mermaid {
+    min-width: 600px;
+  }
+}
