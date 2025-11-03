@@ -31,7 +31,7 @@ The file input component gives users a way to select and upload files. You have 
 * **Single file input** – Use when users need to upload one file at a time
 * **Multiple file input** – Use when users need to upload several files in sequence
 
-**Note:** Storybook examples don't show uploaded file states. You'll need to manually upload files in Storybook to see those variations, or refer to the screenshots below.
+**Note:** Storybook examples do not show uploaded file states. You will need to manually upload files in Storybook to see those variations, or refer to the screenshots below.
 
 ## Examples
 
