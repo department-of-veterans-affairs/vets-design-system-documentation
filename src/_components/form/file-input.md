@@ -140,9 +140,9 @@ Change the label to any `h1` through `h6` header size.
 
 ### How file inputs work at VA
 
-**Upload one file at a time.** The file input component uploads a single file per interaction. Users cannot select multiple files at once because:
-* Some users don't know how to select multiple files in their OS file browser
-* iOS and some mobile devices don't support multiple-file selection
+**Upload one file at a time.** The file input component uploads a single file per interaction. People cannot select multiple files at once because:
+* Not everyone knows how to select multiple files in their OS file browser
+* Some mobile devices, such as those running iOS, do not support selecting multiple files at once
 * This approach works better on mobile devices overall
 
 **For multiple file uploads**, follow the [files pattern guidance]({{ site.baseurl }}/patterns/ask-users-for/files) and use the [Multiple responses / List & Loop pattern]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) to break up the file upload requests. This reduces cognitive load and improves the user experience.
