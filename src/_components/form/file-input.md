@@ -31,8 +31,6 @@ The file input component gives users a way to select and upload files. You have 
 * **Single file input** – Use when users need to upload one file at a time.
 * **Multiple file input** – Use when users need to upload several files in sequence.
 
-**Note:** Storybook examples do not show uploaded file states. You will need to manually upload files in Storybook to see those variations, or refer to the screenshots below.
-
 ## Examples
 
 ### Basic usage
@@ -83,9 +81,11 @@ Change the label to any `h1` through `h6` header size.
 
 ### Upload states
 
+**Note:** Storybook examples do not show uploaded file states. You will need to manually upload files in Storybook to see those variations, or refer to the screenshots below.
+
 #### File uploading with progress
 
-<va-alert slim status="warning">An API must populate `percentUploaded` with a value to display the progress bar.</va-alert>
+<va-alert slim status="warning">An API must populate <code>percentUploaded</code> with a value to display the progress bar.</va-alert>
 
 {% include component-example.html alt="File input component showing a progress bar at 50% while uploading a document" file="/images/components/file-input/file-input-uploading.png" caption="File input showing upload progress." class="x2" reverse="true" %}
 
