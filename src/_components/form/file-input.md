@@ -5,7 +5,7 @@ redirect_from:
   - /components/form/file-input-multiple
 has-parent: /components/form/
 title: File input
-intro-text: "File input allows users to attach files, one at a time, to be uploaded."
+intro-text: "File input allows users to attach files to be uploaded. Use the single file variation for one file at a time, or the multiple file variation to let users upload several files in sequence."
 research-title: Form controls
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85508&mode=design&t=TiJHClaf3VQ6wU6B-1
 github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4609
@@ -15,6 +15,7 @@ web-component: va-file-input
 web: true
 mobile-app: false
 anchors:
+  - anchor: Overview
   - anchor: Examples
   - anchor: Usage
   - anchor: Code usage
@@ -23,86 +24,105 @@ anchors:
   - anchor: Component checklist
 ---
 
-This guidance covers two web components:
+## Overview
 
-* Use the [File input variation](https://design.va.gov/storybook/?path=/story/uswds-va-file-input--default) for uploads that accept a single file.
-* Use the [File input multiple variation](https://design.va.gov/storybook/?path=/story/uswds-va-file-input-multiple--default) for uploads that accept multiple files.
+The file input component gives users a way to select and upload files. You have two options:
+
+* **Single file input** – Use when users need to upload one file at a time
+* **Multiple file input** – Use when users need to upload several files in sequence
+
+**Note:** Storybook examples don't show uploaded file states. You'll need to manually upload files in Storybook to see those variations, or refer to the screenshots below.
 
 ## Examples
 
-NOTE: Storybook does not allow for showing components in a particular state. Thus some of the examples in this component are screenshots rather than Storybook examples. You will find the Storybook examples in Storybook but will have to manually upload files in order to reproduce the appropriate variation state.
+### Basic usage
 
-### Default - Single file
+#### Single file upload
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--default" link_text="va-file-input" %}
 
-### Default - Single file - Populated
+#### Single file with uploaded state
 
 {% include storybook-preview.html story="uswds-va-file-input--file-uploaded" link_text="uswds-va-file-input--file-uploaded" %}
 
-### Default - Multiple files - Populated multiple
+#### Multiple files uploaded
 
 {% include storybook-preview.html story="uswds-va-file-input-multiple--files-uploaded" link_text="uswds-va-file-input-multiple--files-uploaded" %}
 
-### Required
+### Component variations
+
+#### Required field
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--required" link_text="va-file-input when required" %}
 
-### Accepts only specific file types
+#### File type restrictions
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-only-specific-file-types" link_text="va-file-input that accepts only specific file types" reverse="true" %}
 
-### Accepts any kind of image
+#### Image files only
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-any-kind-of-image" link_text="va-file-input that accepts any kind of image" reverse="true" %}
 
-### Accepts File Password
-
-<va-alert slim="true" status="warning">
-  This component does not check if a file is encrypted. This logic is handled in a shared Forms System utility. See this guide for more information: <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>
-</va-alert>
-
-{% include storybook-preview.html height="270px" story="uswds-va-file-input--accepts-file-password" link_text="va-file-input that accepts file password" reverse="true" %}
-
-
-
-### Max file size
+#### Maximum file size
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--with-max-file-size" link_text="va-file-input with max file size" reverse="true" %}
 
-### Read only
+#### Read-only state
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--read-only" link_text="va-file-input in read only state" reverse="true" %}
 
-### Read only with additional inputs
+#### Read-only with additional field
 
 {% include storybook-preview.html height="270px" story="uswds-va-file-input--read-only-with-additional-inputs" link_text="va-file-input in read only state with additional inputs" reverse="true" %}
 
-### With percent uploaded
+#### Header label variations
 
-{% include storybook-preview.html height="270px" story="uswds-va-file-input--with-percent-uploaded" link_text="va-file-input showing upload progress" reverse="true" %}
-
-### Error Message
-
-NOTE: Storybook does not allow for showing components in a particular state. Thus some of the examples in this component are screenshots rather than Storybook examples.
-
-#### Single file error
-
-{% include component-example.html alt="Single file input error" file="/images/components/file-input/singleFileInputError.png" caption="File input when an error occurs for a single file" class="x2" reverse="true" %}
-
-#### Multiple file error
-
-{% include component-example.html alt="Multiple file input error" file="/images/components/file-input/multipleFileInputError.png" caption="File input when an error occurs when uploading multiple files" class="x2" reverse="true" %}
-
-### Header label
-
-Change the label to any H1 through H6 header size.  
+Change the label to any `h1` through `h6` header size.
 
 {% include storybook-preview.html height="100px" story="uswds-va-file-input--header-label" link_text="va-file-input header label" %}
 
-### Additional form inputs
+### Upload states
 
-{% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input when an additional form is needed to complete the file upload" class="x2" reverse="true" %}
+#### File uploading with progress
+
+<va-alert slim type="warning">An API must populate `percentUploaded` with a value to display the progress bar.</va-alert>
+
+{% include component-example.html alt="File uploading" file="/images/components/file-input/file-input-uploading.png" caption="File input showing upload progress." class="x2" reverse="true" %}
+
+### Error states
+
+#### Missing required file
+
+{% include component-example.html alt="Missing required file error" file="/images/components/file-input/file-input-initial-error.png" caption="Error message shown when a required file is not uploaded" class="x2" reverse="true" %}
+
+#### File-related error
+
+{% include component-example.html alt="Wrong file format" file="/images/components/file-input/file-input-file-error.png" caption="Error message shown when the file doesn't meet requirements (wrong format, too large, etc.)" class="x2" reverse="true" %}
+
+#### Field-related error
+
+{% include component-example.html alt="File form field error" file="/images/components/file-input/file-input-field-error.png" caption="Error message shown for general form field validation issues" class="x2" reverse="true" %}
+
+### Advanced scenarios
+
+#### File with an additional form input
+
+{% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input used with additional form field to complete the upload process" class="x2" reverse="true" %}
+
+#### Password-protected PDF prompt
+
+<va-alert slim="true" status="info">Logic for detecting and decrypting PDF files is handled in a shared Platform utility. See: <a href="https://depo-platform-documentation.scrollhelp.site/developer-docs/checking-if-an-uploaded-pdf-is-encrypted">Checking if an uploaded PDF is encrypted</a>.</va-alert>
+
+{% include component-example.html alt="File input password prompt" file="/images/components/file-input/file-input-password-prompt.png" caption="User prompted to enter password for encrypted PDF file" class="x2" reverse="true" %}
+
+#### Password error
+
+{% include component-example.html alt="File input field error" file="/images/components/file-input/file-input-password-error.png" caption="Error message shown when password is incorrect" class="x2" reverse="true" %}
+
+#### Password success
+
+{% include component-example.html alt="File input field error" file="/images/components/file-input/file-input-password-success.png" caption="Confirmation shown when password-protected PDF is successfully decrypted" class="x2" reverse="true" %}
+
 
 ## Usage
 
@@ -112,31 +132,35 @@ Change the label to any H1 through H6 header size.
   type="secondary"
 ></va-link-action>
 
-### Additional guidance for VA
+### When to use this component
 
-* **One file per input.** The file input supports uploading a single file multiple times, but does not support selecting multiple files at a single time. This component only supports one file upload at a time. The reason for this is some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app. Thus, the VA implementation of this component does not deviate from our [current pattern]({{ site.baseurl }}/patterns/ask-users-for/files#review) for handling multiple file uploads by prompting for each file with a new file input component.
-* **Slotted content considerations.** For multiple file uploads, break up a pattern that is asking for a number of additional inputs for a file upload so that it instead uses the [Multiple responses / List & Loop pattern]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses). This pattern reduces cognitive load for users and provides a better overall user experience.
-* **Files pattern guidance.** Follow the [files pattern guidance]({{ site.baseurl }}/patterns/ask-users-for/files) for how to include the file input in a form.
+* Users need to attach or upload one or more files
+* The upload is a required part of the form submission
+* You need to restrict file types or size for validation
 
-### How this component works
+### How file inputs work at VA
 
-* **Pair with a label.** Be sure to provide label text with the file input component.
-* **Highlight input restrictions.** Use hint-text to be clear about any file restrictions, such as file types or maximum size.
+**Upload one file at a time.** The file input component uploads a single file per interaction. Users cannot select multiple files at once because:
+* Some users don't know how to select multiple files in their OS file browser
+* iOS and some mobile devices don't support multiple-file selection
+* This approach works better on mobile devices overall
 
-### Behavior
+**For multiple file uploads**, follow the [files pattern guidance]({{ site.baseurl }}/patterns/ask-users-for/files) and use the [Multiple responses / List & Loop pattern]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) to break up the file upload requests. This reduces cognitive load and improves the user experience.
 
-* **Trigger**: The file input button triggers a micro-interaction that causes the Operating System (OS) to present a dialog that prompts the user to select a file to upload.
-* **Rules**: Once the file is uploaded, the browser presents a dialog to inform the user of the success or failure of the upload. The uploaded file can then be removed by the user, if necessary. Additional files can be uploaded, one by one.
-* **Feedback**: The [Progress bar - Activity]({{ site.baseurl }}/components/progress-bar/) component should be used to provide feedback to the user while the file is uploading if the upload is happening to the server on the current step. The Progress bar is not necessary if the upload of the file happens upon page submit or at a later point in the process. The Progress bar is currently not a feature of the file input component and will be added at a later date.
+### Implementation best practices
 
-### Errors
+**Always pair with a clear label.** The label should describe what file users need to upload (e.g., "Upload your discharge papers" not just "Upload file").
 
-* When using a single file input the [error message is placed above the file input area](#error-message). If the file input supports multiple files then the error message is placed within the file input card.
-* To display a custom error message, pass text into the `error` property.
+**Use hint text for restrictions.** Clearly communicate any file requirements using hint text:
+* Allowed file types: "PDF, JPG, or PNG only"
+* File size limits: "Maximum file size: 10 MB"
+* Any other requirements: "Must be in color and clearly legible"
+
+**Show upload progress when files upload to the server immediately.** Display the [Progress bar - Activity component]({{ site.baseurl }}/components/progress-bar/) if the upload happens automatically. Progress indication is not needed if the file uploads when the form is submitted.
 
 <va-link-action
   href="{{ site.baseurl }}/components/form/#error-handling"
-  text="View form error handling for additional guidance"
+  text="View additional form error handling guidance"
   type="secondary"
 ></va-link-action>
 
