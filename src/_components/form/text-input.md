@@ -64,7 +64,7 @@ Also refer to the overall [form guidance]({{ site.baseurl }}/components/form#hin
 
 ### Password
 
-{% include storybook-preview.html story="uswds-va-text-input--password" link_text="va-text-input Password" %}
+{% include storybook-preview.html story="uswds-va-text-input--password" link_text="va-text-input password" %}
 
 ### Forms pattern - Single
 
