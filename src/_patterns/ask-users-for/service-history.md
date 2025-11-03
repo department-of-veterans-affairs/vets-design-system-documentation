@@ -12,26 +12,27 @@ anchors:
   - anchor: Usage
   - anchor: Examples
   - anchor: How to build
-  - anchor: Usage - Service under another name
-  - anchor: Usage - Reserves and National Guard and Federal Orders
-  - anchor: Usage - Prisoner of War (POW)
+  - anchor: Service under another name
+  - anchor: Reserves and National Guard and Federal Orders
+  - anchor: Prisoner of War (POW)
 ---
 
 ## Usage
 
 ### When to use this pattern
 
-* **Service periods.** Follow this pattern whenever you need to ask for a Veteran's periods of service in the military. 
-* **Use the multiple response pattern for adding multiple service periods.** This is an example of a complex list and loop pattern with multiple form inputs to gather multiple pieces of information. Read more about the [multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
-* **Some forms will only require the last branch of service.** The healthcare application is an example of a form where they do not need the multiple entries of service periods, so we do not use the list and loop pattern there.
-* **Service data can be prefilled using the same data on the Veteran's profile, but it may be innacurate.** Provide a way for users to make changes review and make changes for the form. Make it clear that any changes made to Service data within the form will NOT be reflected back to the user's Profile. 
+* **Service periods.** Follow this pattern whenever you need to ask for a Veteran’s periods of service in the military.  
+* **Use the multiple response pattern if your form allows Veterans to add more than 1 service period.** This is an example of a complex list and loop pattern with multiple form inputs to gather additional pieces of information. Read more about the \[multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).  
+* **Some forms only require the last branch of service.** The health care application is an example of a form where Veterans don’t need multiple entries of service periods.  
+* **We can prefill service data using API data, but it may be inaccurate.** Provide a way for Veterans to review and make changes to the form. Clearly state that any changes made to service data within the form won’t also change in their VA profile.
 
 ## Examples
 
-* [VA Form 21P-527EZ - Application for Pension Benefits](https://www.va.gov/pension/application/527EZ/introduction)
-* [VA Form 21-526EZ - Application for Disability Compensation and Related Compensation Benefits](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-* [VA Form 10-10EZ - Application for Health Benefits](https://staging.va.gov/health-care/apply/application/introduction)
-* [VA Form 22-1990N - Application for VA Education Benefits Under the National Call to Service (NCS) Program](https://www.va.gov/education/apply-for-education-benefits/application/1990N/introduction)
+* [Simple Forms Patterns: Branch of Service Pattern](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
+* [Application for Pension Benefits (VA Form 21P-527EZ)](https://www.va.gov/pension/application/527EZ/introduction)
+* [Application for Disability Compensation and Related Compensation Benefits (VA Form 21-526EZ)](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
+* [Application for Health Benefits (VA Form 10-10EZ)](https://staging.va.gov/health-care/apply/application/introduction)
+* [Application for VA Education Benefits Under the National Call to Service (NCS) Program (VA Form 22-1990N)](https://www.va.gov/education/apply-for-education-benefits/application/1990N/introduction)
 
 ## How to design and build
 
@@ -39,45 +40,84 @@ anchors:
 
 #### Structure
 
-* Heading
-* Branch of service combobox input. Use autocomplete to allow users to select a branch.
-* Service start date input
-* Service end date input
-
-* Type of service text input (if applicable)
-* Character of service -- this can also be Character of discharge -- text input (if applicable)
+* Heading. Use “Service periods” as the heading for this page.
+* [Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch) combo box input. Use autocomplete to allow users to select a branch. Use “Branch of service” as the field label.
+* Service start date input. Use the memorable date component. Use “Service start date” as the field label.
+* Service end date input. Use the memorable date component. Use “Service end date” as the field label.
 
 ![pension-serviceperiods-1]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop.png)
 
 ![pension-serviceperiods-2]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop3.png)
 
-## Usage - Service under another name
+### Service locations
 
-Follow this pattern whenever you need to ask a user if they served under another name. 
+Follow this pattern whenever you need to ask for location information about their service periods. Use hint text to clarify what type of location information we need for this field. Check with stakeholders to confirm what information we need.
 
-* **The name template fields are conditional fields that are revealed when a user selects “yes.”**  Conditional fields are used in forms to reveal form elements that become relevant based on a user's response to a question. The blue border should be used to create a visual relationship between the parent question and conditional fields it reveals, and should overlap the top and bottom of parent and children.  
-* **Use the list and loop pattern for adding multiple names.** The user will be able to add multiple names they’ve served under. Read more about the [multiple responses]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses) pattern.
+#### Structure
 
-### Structure - Service under another name
+* Heading. Use “Service locations” as the heading for this page.
+* Place you started your service. Use the text input component. Use “Place you started your service” as the field label.
+* Hint text. Use the hint text component to specify what information Veteran’s need to include. The content will vary based on the form.
+* Place you ended your service. Use the text input component. Use “Place you ended your service” as the field label.
 
-* ‘Did you serve under another name’ radio buttons
-(If user selects yes)
-  * Name form template
-  * ‘Add another name’ secondary button
+### Service details
 
-## Usage - Reserves and National Guard and Federal Orders
+Follow this pattern whenever you need to ask for extra information about their service periods. Group fields by relationship and try not to exceed more than 3 fields at a time.
 
-Follow this pattern whenever you need to ask for a user’s Reserve or National Guard information. Persons in the Reserve or National Guard are not full-time active duty military personnel, although they can be deployed at any time should the need arise. 
+#### Structure
 
-### Structure - Reserves and National Guard Disability
+* Heading. Use “Service details” as the heading for this page.
+* Service number. Use the text input component. Use “Service number” as the field label.
+* Grade, rank, or rating when separated from service (if applicable). Use the text input component. Use “Grade, rank, or rating when service ended” as the field label.
+* Character of service/discharge (if applicable). Use the text input component. Use “Character of service/discharge” as the field label.
+* Type of service (if applicable). Use the text input component. Use “Type of service” as the field label.
 
-* Unit name text input
-* Obligation start date input
-* Obligation end date input
+### Service under another name
 
-## Usage - Prisoner of War (POW)
+Follow this pattern whenever you need to ask a Veteran if they served under another name.
 
-Follow this pattern whenever you need to ask for a user’s POW information. Former prisoners of war (POW) are Veterans who, during active military service, were forcibly detained or interned in the line of duty by an enemy government or its agents or a hostile force.
+Use the list and loop pattern for adding multiple names. Read more about the \[multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).
 
-* **Don’t ask if it does not benefit the user experience.** You should only ask users about POW information when absolutely necessary. 
-* **Depending on the form, use the List and Loop pattern to add multiple confinement periods.** An example of adding multiple confinement periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction). 
+#### Structure
+
+* Multi-response optional start. Use the multiple responses pattern. Use “Did you serve under another name?” as the heading for this page.
+
+* Hint text. Include this hint text: “If you select “Yes,” you’ll need to add at least 1 other name,”  
+* Name pattern. Use “Name you served under” as the heading for this page.  
+* Multi-response summary. Use the multiple responses pattern. Use “Review the other names you served under” as the heading for this page.
+
+![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.png)
+
+### **Reserves and National Guard and Federal Orders**
+
+Follow this pattern whenever you need to ask for a Veteran’s Reserve or National Guard information. Persons in the Reserve or National Guard aren’t considered full-time active-duty military personnel. But they can be deployed at any time should the need arise.
+
+#### **Structure**
+
+* Heading. Use “Reserves and National Guard” as the heading for this page.
+
+* Obligation start date input. Use the memorable date component. Use “Obligation start date” as the field label.
+
+* Obligation end date input. Use the memorable date component. Use “Obligation end date” as the field label.  
+* Unit name. Use the text input component. Use “Unit name” as the field label.
+
+![reserves and national guard disability form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-disability.png)
+
+![reserves and national guard pension form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserve-pension.png)
+
+### Prisoner of War (POW)
+
+Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (POW) information. Former POWs are Veterans who, during active military service, were forcibly detained or interned in the line of duty by an enemy government or its agents or a hostile force.
+
+* **Don’t ask if the form doesn’t require POW information.** You should only ask about this information when absolutely necessary.  
+* **Depending on the form, use the multiple response pattern to add multiple periods of time held as a POW.** An example of adding multiple periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction).  
+* **When asking for dates, include hint text if this date can be an estimate.** 
+
+#### **Structure**
+
+* Multi-response optional start. Use the multiple responses pattern. Use “Have you ever been a prisoner of war (POW)?” as the heading for this page.  
+* Heading. Use “Period of time held as a POW” for this page.  
+  * Hint text. Use “These dates need to be within a single service period.” If the dates can be estimates, add “You can give an estimate for these dates, if needed.”  
+  * Start date input. Use the memorable date component. Use “Start date” as the field label.  
+  * End date input. Use the memorable date component. Use “End date” as the field label.  
+* Multi-response summary. Use “Review the periods held as a POW” as the heading for this page.
