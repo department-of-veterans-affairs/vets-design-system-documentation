@@ -87,7 +87,7 @@ Change the label to any `h1` through `h6` header size.
 
 <va-alert slim status="warning">An API must populate `percentUploaded` with a value to display the progress bar.</va-alert>
 
-{% include component-example.html alt="File uploading" file="/images/components/file-input/file-input-uploading.png" caption="File input showing upload progress." class="x2" reverse="true" %}
+{% include component-example.html alt="File input component showing a progress bar at 50% while uploading a document" file="/images/components/file-input/file-input-uploading.png" caption="File input showing upload progress." class="x2" reverse="true" %}
 
 ### Error states
 
