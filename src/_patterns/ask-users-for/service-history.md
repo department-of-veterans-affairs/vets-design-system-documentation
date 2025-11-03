@@ -24,7 +24,7 @@ anchors:
 * **Service periods.** Follow this pattern whenever you need to ask for a Veteran’s periods of service in the military.  
 * **Use the multiple response pattern if your form allows Veterans to add more than 1 service period.** This is an example of a complex list and loop pattern with multiple form inputs to gather additional pieces of information. Read more about the \[multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).  
 * **Some forms only require the last branch of service.** The health care application is an example of a form where Veterans don’t need multiple entries of service periods.  
-* **We can prefill service data using API data, but it may be inaccurate.** Provide a way for Veterans to review and make changes to the form. Clearly state that any changes made to service data within the form won’t also change in their VA profile.
+* **We can prefill service data using API data, but it may be inaccurate.** Provide a way for Veterans to review and make changes to the form. Clearly state that any changes made to service data within the form won’t change the data that VA has on file.
 
 ## Examples
 
