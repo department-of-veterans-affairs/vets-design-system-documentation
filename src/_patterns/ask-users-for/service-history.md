@@ -45,9 +45,7 @@ anchors:
 * Service start date input. Use the memorable date component. Use “Service start date” as the field label.
 * Service end date input. Use the memorable date component. Use “Service end date” as the field label.
 
-![pension-serviceperiods-1]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop.png)
-
-![pension-serviceperiods-2]({{site.baseurl}}/images/patterns/ask-users-for/service-history/list-and-loop3.png)
+![service periods]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-periods.jpg)
 
 ### Service locations
 
@@ -60,6 +58,8 @@ Follow this pattern whenever you need to ask for location information about thei
 * Hint text. Use the hint text component to specify what information Veteran’s need to include. The content will vary based on the form.
 * Place you ended your service. Use the text input component. Use “Place you ended your service” as the field label.
 
+* ![service locations]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-locations.jpg)
+
 ### Service details
 
 Follow this pattern whenever you need to ask for extra information about their service periods. Group fields by relationship and try not to exceed more than 3 fields at a time.
@@ -71,6 +71,8 @@ Follow this pattern whenever you need to ask for extra information about their s
 * Grade, rank, or rating when separated from service (if applicable). Use the text input component. Use “Grade, rank, or rating when service ended” as the field label.
 * Character of service/discharge (if applicable). Use the text input component. Use “Character of service/discharge” as the field label.
 * Type of service (if applicable). Use the text input component. Use “Type of service” as the field label.
+
+* ![service details]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-details.jpg)
 
 ### Service under another name
 
@@ -86,7 +88,11 @@ Use the list and loop pattern for adding multiple names. Read more about the \[m
 * Name pattern. Use “Name you served under” as the heading for this page.  
 * Multi-response summary. Use the multiple responses pattern. Use “Review the other names you served under” as the heading for this page.
 
-![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.png)
+![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.jpg)
+
+![service under another name detail]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name-detail.png)
+
+![service under another name detail]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name-summary.png)
 
 ### **Reserves and National Guard and Federal Orders**
 
@@ -101,9 +107,8 @@ Follow this pattern whenever you need to ask for a Veteran’s Reserve or Nation
 * Obligation end date input. Use the memorable date component. Use “Obligation end date” as the field label.  
 * Unit name. Use the text input component. Use “Unit name” as the field label.
 
-![reserves and national guard disability form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-disability.png)
+![reserves and national guard]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-nationalguard.jpg)
 
-![reserves and national guard pension form structure]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserve-pension.png)
 
 ### Prisoner of War (POW)
 
@@ -121,3 +126,9 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
   * Start date input. Use the memorable date component. Use “Start date” as the field label.  
   * End date input. Use the memorable date component. Use “End date” as the field label.  
 * Multi-response summary. Use “Review the periods held as a POW” as the heading for this page.
+
+* ![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
+
+* ![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
+
+* ![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
