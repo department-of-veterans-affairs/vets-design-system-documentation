@@ -23,70 +23,49 @@ anchors:
 - **When you prefill a user's data into an application, like a form.** When using this pattern, clearly tell users where their data is being pulled from to prefill for them.
 - **When users can update prefilled information.** Review the "[Help users to... Update prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance on helping users update this prefilled information.
 
-#### Design principles
-* **Visibility of system status.** This pattern demonstrates the [usability principle of communicating the current state](https://www.nngroup.com/articles/visibility-system-status/) in order to allow users to feel in control and to be able to take appropriate action.
-* **User control and freedom.** This pattern also gives users control over their own information thereby providing [control and freedom](https://www.nngroup.com/articles/user-control-and-freedom/).
-
 ### When not to use this pattern
-- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [View the unauthenticated intro page alert](#unauthenticated-intro-page-alert) later described on this page.
+- **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. [Refer to the unauthenticated intro page alert](#unauthenticated-intro-page-alert) later described on this page.
+- **When there is no prefill data for the user.**
 
 ### When to use caution
-- **When prefilling data from a source other than VA Profile.** It's crucial to explain to users exactly where the data is coming from so that if there are any errors in the data, it's clear how to correct them.
+- **When prefilling data from a source other than [VA.gov API](https://department-of-veterans-affairs.github.io/va-digital-services-platform-docs/api-reference/#/in_progress_forms/getInProgressForm1).** It’s crucial to explain to users exactly where the data is coming from so that if there are any errors in the data, it’s clear how to correct them.
 
 ## How to design and build
 ### Anatomy or layout details
 This pattern involves these types of pages found in VA.gov forms:
-- **Introduction page**: The first page of a form. Introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. Changes slightly after a user signs in.
-- **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.
+
+- **Introduction page:** The first page of a form. Introduces the process the Veteran or other beneficiary will follow to apply for a benefit or to complete a supporting form. Changes slightly after a user signs in.  
+- **Prefilled information the user cannot update:** This is usually personal information like name, date of birth, and Social Security number.  
 - **Prefilled information the user can update:** This can be many different types of information that the user can update directly on the screen where we display it.
 
 #### Introduction page and sign in alerts
 
 - The existing [form introduction page templates](/templates/forms/introduction) are already updated to support this pattern for both the unauthenticated and authenticated experiences.
 - Use the [existing sign-in alert pattern](patterns/help-users-to/sign-in) that notifies users that their information will be prefilled when signing in.
-
-
-#### Prefilled information the user can’t update
-{% include component-example.html alt="A Veteran information page in a form flow with a white card containing  Veteran's uneditable information, including name, privacy masked Social Security number, date of birth, and gender. Below the card is a note explaining why the content can't be edited in the form and how to update this information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/uneditable-prefill-information.png" %}
-
-#### Prefilled information the user can update
-{% include component-example.html alt="A Veteran information page in a form flow with an alert followed by a card containing the Veteran's editable mailing address. The alert states that the form has prefilled some of the Veteran's information." file="/images/patterns/help-users-to/know-when-their-information-is-prefilled/editable-prefill-information.png" %}
+- Use the [prefill alert](/components/form/prefill) when the user is signed into to notify them that some of their information has been prefilled.
 
 ### How this pattern works
 
-#### Communicate information that cannot be edited
-This pattern communicates information that cannot be edited by:
-- **Omitting the edit link in cards with non-editable information.** For information that cannot be changed online (such as legal name, date of birth, and Social Security number), remove the edit link within the card component.
-- **Including textual instructions for updating uneditable information.** Under the card with the uneditable data, display informational text starting with the bolded word “Note:” followed by directions to update this information offline. See the "content considerations" section below for sample text.
-
 #### Communicate information that can be edited
 This pattern communicates information that can be edited by:
-- **Displaying editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as phone, email, or mailing address.
 
-#### Communicate where changes will save
-- **In most cases, save changes to VA Profile.** In [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md), most users said they want changes made to their information to update the information stored on their VA Profile. On the edit page, show an informational alert telling users that these changes will impact their profile information. This alert and others should be placed at the top of the page, directly under the form name.
+- **Displaying each piece of editable prefilled information in a card with an edit link.** Display prefilled information in a card component with a link to edit the information. This information may include contact information, such as separate cards for phone, email, or mailing address.  
+- Refer to [Help users to… Update prefilled information](/patterns/help-users-to/update-prefilled-information) for a pattern to follow when allowing users to make updates.
 
-#### Where needed, give users the choice of where to save
-- **In some cases, users want to choose where to save their information.** This is especially relevant for information that may change semi-frequently. For example, when applying to refill and track VA prescriptions or medical devices, users may want to send to a temporary mailing address, and may not want this temporary mailing address to save to their VA Profile. In these cases, on the edit page, don't show the informational alert telling them where their changes will save. Instead, show a required radio button below the fields asking them if they also want to update this information in their VA Profile. Explain what happens when they save information to their profile. For example, "If you select 'yes,' this information will be updated across multiple VA benefits and services. Read more about [changing your address in your VA.gov profile (opens in new tab)](https://www.va.gov/change-address/)."
+#### Communicate information that cannot be edited
+This pattern communicates information that cannot be edited by:
 
-#### Display success alerts when information has been saved
-- **Inform users where the changes were saved.** Display a success alert informing users "We've made these changes to this form and your VA.gov profile" or "We've made these changes to only this form.” This alert should be placed at the top of the page, below the stepper and text "We’ll save your application on every change." Use a standard alert within the form steps. Use a slim alert if the user made changes from the final review page.
+- **Omitting the edit link in cards with non-editable information.** For information that cannot be changed online (such as legal name, date of birth, and Social Security number), remove the edit link within the card component.  
+- **Including textual instructions for updating uneditable information**. Under the card with the uneditable data, display informational text starting with the bolded word “Note:” followed by directions to update this information offline. Refer to the “content considerations” section below for sample text.  
+- **Since information from the user’s profile may be inaccurate,** consider adding an additional pathway for users to be able to correct their information for the form itself. Clarify that since the information cannot be updated online, the information they’re providing would be used only for their current submission.
 
 ### Components used in this pattern
 - [Alert](/components/alert/) - To inform users about prefilled information and where changes will be saved
 - [Card](/components/card/) - To display prefilled information in organized sections
-- [Radio button](/components/form/radio-button) - To give users choice about where to save their updated information
-- [Additional info](/components/additional-info) - To provide expandable details about updating information
-
+- [Link]({{ site.baseurl }}/components/link) - To give users an opportunity to make changes to their prefilled information
+- [Prefill]({{ site.baseurl }}/components/form/prefill) - To inform users ahead of the form that there will be prefilled information if they log in
 
 ## Examples
-
-### Uneditable prefill card
-{% include storybook-preview.html story="patterns-components-card--uneditable" height="250px" link_text="uneditable prefill alert" %}
-
-### Editable prefill card
-{% include storybook-preview.html story="patterns-components-card--editable" height="190px" link_text="editable prefill alert" %}
-
 
 ### Signed in prefill alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--signed-in-prefill-alert" link_text="signed in prefill alert" %}
@@ -94,59 +73,11 @@ This pattern communicates information that can be edited by:
 ### Unauthenticated prefill alert
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
+### Editable prefill card
+{% include storybook-preview.html story="patterns-components-card--editable" height="190px" link_text="editable prefill alert" %}
 
-
-### Examples in production
-Coming soon!
-
-## Code usage
-
-When using the `va-card` element to display prefilled information, ensure that the correct structure of the html is present. The description list `<dl>` and unordered list `<ul>` elements can be useful for displaying several pieces of uneditable data.
-
-### Uneditable information
-Here is some example markup for a card of uneditable content that utilizes a description list.
-
-```html
-<va-card>
-  <div class="vads-u-padding--4 vads-u-margin--0">
-    <dl>
-      <dt class="vads-u-font-weight--bold">Name</dt>
-      <dd>Godzilla</dd>
-      <dt class="vads-u-font-weight--bold">Born</dt>
-      <dd>1952</dd>
-      <dt class="vads-u-font-weight--bold">Birthplace</dt>
-      <dd>Japan</dd>
-      <dt class="vads-u-font-weight--bold">Color</dt>
-      <dd>Green</dd>
-    </dl>
-  </div>
-</va-card>
-```
-
-### Editable information
-
-If a user can update their information, then pieces of information can be shown with a heading followed by the information itself, along with an edit link.
-
-```html
-<va-card show-shadow="true">
-
-  <h4 class="vads-u-width--auto vads-u-margin-top--0">
-    Email address
-  </h4>
-
-  <p>testemail1234@unattended.com</p>
-
-  <va-link
-    label="Edit email address"
-    href="/link-here"
-    text="Edit"
-    active
-  />
-
-</va-card>
-```
-
-[View more prefill card examples on storybook](https://design.va.gov/storybook/?path=/docs/patterns-components-card--docs)
+### Uneditable prefill card
+{% include storybook-preview.html story="patterns-components-card--uneditable" height="250px" link_text="uneditable prefill alert" %}
 
 ## Content considerations
 ### Directions for updating uneditable information
