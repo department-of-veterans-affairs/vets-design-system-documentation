@@ -84,7 +84,19 @@ gh issue reopen <issue-number>
 **Use for**: Implementation help, usage questions, best practices
 **Process**: Often redirected to Slack for faster resolution
 
-### 4. DST Internal Templates (DST-*)
+### 4. Accessibility bug (`5_Accessibility-issue.yml`)
+
+**Use for**: Accessibility bugs found in Design System Components and Patterns
+**Labels**: `accessibility`, `platform-design-system-team`
+**Required Info**:
+- Point of contact
+- Severity
+- Severity Rationale
+- URL
+- Environment details
+- Steps to reproduce
+
+### 5. DST Internal Templates (DST-*)
 
 **Use for**: Internal Design System Team workflows
 **Templates**:

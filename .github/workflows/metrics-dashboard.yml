@@ -4,15 +4,18 @@ on:
   schedule:
     # Run weekly on Fridays at 6 PM UTC (2 PM ET / 1 PM EDT) - after component-library PR is merged
     - cron: '0 18 * * 5'
-  workflow_dispatch:
-    # Allow manual triggering for testing and on-demand updates
-  push:
-    # Run on pushes to main branch
-    branches: [ main ]
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches-ignore:
+      - 'metrics-update-**'
+      - '*metrics-update*'
     paths:
       - '.github/workflows/metrics-dashboard.yml'
       - 'scripts/collect-issue-metrics.js'
       - 'scripts/process-ds-components.js'
+      - 'scripts/collect-experimental-metrics.js'
+  workflow_dispatch:
+    # Allow manual triggering for testing and on-demand updates
 
 jobs:
   update-metrics:
@@ -135,21 +138,79 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
+      - name: Collect experimental design metrics
+        run: |
+          echo "Starting experimental design metrics collection..."
+          node scripts/collect-experimental-metrics.js
+          echo "Experimental design metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
+      - name: Collect governance metrics
+        run: |
+          echo "Starting governance metrics collection..."
+          node scripts/collect-governance-metrics.js
+          echo "Governance metrics collection completed"
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+      
       - name: Verify generated data files
         run: |
           echo "Checking for generated files..."
           ls -la src/assets/data/metrics/
           ls -la src/_data/metrics/
           
-          # Check issue metrics
+          # Check issue metrics in both locations
           if [ -f "src/assets/data/metrics/issue-metrics.json" ]; then
-            echo "✅ issue-metrics.json generated successfully"
+            echo "✅ issue-metrics.json generated successfully in assets"
             echo "File size: $(du -h src/assets/data/metrics/issue-metrics.json)"
             # Show first few lines for verification
             echo "Sample data:"
             head -20 src/assets/data/metrics/issue-metrics.json
           else
-            echo "❌ issue-metrics.json not found"
+            echo "❌ issue-metrics.json not found in assets"
+            exit 1
+          fi
+          
+          if [ -f "src/_data/metrics/issue-metrics.json" ]; then
+            echo "✅ issue-metrics.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/issue-metrics.json)"
+          else
+            echo "❌ issue-metrics.json not found for Jekyll"
+            exit 1
+          fi
+          
+          # Check component usage data in both locations
+          if [ -f "src/assets/data/metrics/component-usage.json" ]; then
+            echo "✅ component-usage.json generated successfully in assets"
+            echo "File size: $(du -h src/assets/data/metrics/component-usage.json)"
+          else
+            echo "❌ component-usage.json not found in assets"
+            exit 1
+          fi
+          
+          if [ -f "src/_data/metrics/component-usage.json" ]; then
+            echo "✅ component-usage.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/component-usage.json)"
+          else
+            echo "❌ component-usage.json not found for Jekyll"
+            exit 1
+          fi
+          
+          # Check experimental metrics in both locations
+          if [ -f "src/assets/data/metrics/experimental-metrics.json" ]; then
+            echo "✅ experimental-metrics.json generated successfully in assets"
+            echo "File size: $(du -h src/assets/data/metrics/experimental-metrics.json)"
+          else
+            echo "❌ experimental-metrics.json not found in assets"
+            exit 1
+          fi
+          
+          if [ -f "src/_data/metrics/experimental-metrics.json" ]; then
+            echo "✅ experimental-metrics.json also generated for Jekyll"
+            echo "File size: $(du -h src/_data/metrics/experimental-metrics.json)"
+          else
+            echo "❌ experimental-metrics.json not found for Jekyll"
             exit 1
           fi
           
@@ -163,11 +224,63 @@ jobs:
             echo "❌ ds-components-latest.csv not found"
             exit 1
           fi
+          
+          # Check governance metrics data
+          if [ -f "src/_data/metrics/governance-index.json" ]; then
+            echo "✅ governance-index.json generated successfully"
+            echo "File size: $(du -h src/_data/metrics/governance-index.json)"
+          else
+            echo "❌ governance-index.json not found"
+            exit 1
+          fi
+          
+          # Check if governance metrics CSV was generated
+          if [ -f "src/_data/metrics/governance-metrics.csv" ]; then
+            echo "✅ governance-metrics.csv generated successfully"
+            echo "File size: $(du -h src/_data/metrics/governance-metrics.csv)"
+          else
+            echo "ℹ️ governance-metrics.csv not found (may not be generated in current run)"
+          fi
       
       - name: Check for changes
         id: git-check
         run: |
-          git add src/assets/data/metrics/ src/_data/metrics/
+          # Only add the specific metric files that were generated, not all files in the directories
+          # List expected files and add them if they exist
+          
+          # Add specific JSON files
+          for file in \
+            src/assets/data/metrics/issue-metrics.json \
+            src/assets/data/metrics/experimental-metrics.json \
+            src/assets/data/metrics/ds-components-metrics.json \
+            src/assets/data/metrics/governance-index.json \
+            src/_data/metrics/issue-metrics.json \
+            src/_data/metrics/experimental-metrics.json \
+            src/_data/metrics/ds-components-metrics.json \
+            src/_data/metrics/governance-index.json; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
+          
+          # Add quarterly governance metrics files (governance-metrics-YYYYQN.json pattern)
+          # These are generated dynamically, one file per quarter (e.g., governance-metrics-2025Q3.json)
+          # The wildcard intentionally captures all quarterly files matching this naming convention
+          git add src/assets/data/metrics/governance-metrics-*.json 2>/dev/null || true
+          git add src/_data/metrics/governance-metrics-*.json 2>/dev/null || true
+          
+          # Add CSV files if they exist
+          # Note: Only CSV files in src/assets/data/metrics/ are added
+          # CSV files in src/_data/metrics/ (if generated) are intentionally excluded
+          # to avoid duplication since they're copied from src/assets/data/metrics/
+          for file in \
+            src/assets/data/metrics/ds-components-latest.csv \
+            src/assets/data/metrics/governance-metrics.csv; do
+            if [ -f "$file" ]; then
+              git add "$file"
+            fi
+          done
+          
           if git diff --staged --quiet; then
             echo "changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in metrics data"
@@ -177,26 +290,18 @@ jobs:
             git diff --staged --stat
           fi
       
-      - name: Commit and push changes
+      - name: Create branch and commit changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Ensure we're on the correct branch (not detached HEAD)
-          CURRENT_BRANCH="${{ github.head_ref || github.ref_name }}"
-          echo "Current branch: $CURRENT_BRANCH"
+          # Get current date for branch name and commit message
+          CURRENT_DATE=$(date -u '+%Y-%m-%d')
+          BRANCH_NAME="metrics-update-${CURRENT_DATE}"
           
-          # Check if we're in detached HEAD state
-          if git symbolic-ref -q HEAD >/dev/null; then
-            echo "✅ On branch: $(git branch --show-current)"
-          else
-            echo "⚠️ In detached HEAD state, checking out branch: $CURRENT_BRANCH"
-            git checkout -B "$CURRENT_BRANCH"
-          fi
-          
-          # Get current date for commit message
-          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          # Create and switch to new branch
+          git checkout -b "$BRANCH_NAME"
           
           # Count total issues processed
           TOTAL_ISSUES=$(jq -r '.summary.total_issues_processed // "unknown"' src/assets/data/metrics/issue-metrics.json)
@@ -208,11 +313,53 @@ jobs:
           - Processed ${TOTAL_ISSUES} total issues
           - Updated quarterly and monthly aggregations
           - Updated experimental design issue tracking
+          - Updated governance metrics and collaboration cycle data
           - Fetched latest ds-components usage data from component-library
           
           🤖 Automated update via GitHub Actions"
           
-          git push origin "$CURRENT_BRANCH"
+          # Push the new branch
+          git push origin "$BRANCH_NAME"
+          
+          # Store branch name for PR creation
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+      
+      - name: Create Pull Request
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          # Get current date for PR description
+          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          
+          # Create PR using GitHub CLI
+          gh pr create \
+            --title "📊 Update metrics dashboard data - $(date -u '+%Y-%m-%d')" \
+            --body "$(cat <<EOF
+            ## Summary
+            Automated weekly update of metrics dashboard data collected from GitHub issues and component usage.
+          
+            ### Files Updated
+            - Issue tracking metrics (JSON files)
+            - Component usage data from component-library
+            - Experimental design metrics
+            - Governance metrics and collaboration cycle data
+            - Design system component usage CSV data
+          
+            ### Test Plan
+            - [ ] Verify JSON files are valid
+            - [ ] Check dashboard displays updated data correctly
+            - [ ] Confirm no regressions in metric calculations
+          
+            🤖 Generated with automated workflow - ${CURRENT_DATE}
+            EOF
+            )" \
+            --head "$BRANCH_NAME" \
+            --base main
+          
+          # Store PR URL for summary
+          PR_URL=$(gh pr view "$BRANCH_NAME" --json url --jq '.url')
+          echo "PR_URL=$PR_URL" >> $GITHUB_ENV
+        env:
+          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
       
       - name: Create summary
         if: always()
@@ -239,8 +386,11 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             
             if [ "${{ steps.git-check.outputs.changes }}" == "true" ]; then
-              echo "### 🚀 Changes Committed" >> $GITHUB_STEP_SUMMARY
-              echo "Updated metrics data has been committed to the repository." >> $GITHUB_STEP_SUMMARY
+              echo "### 🚀 Pull Request Created" >> $GITHUB_STEP_SUMMARY
+              echo "Updated metrics data has been committed to a new branch and a pull request has been created." >> $GITHUB_STEP_SUMMARY
+              if [ -n "${PR_URL:-}" ]; then
+                echo "**PR URL:** $PR_URL" >> $GITHUB_STEP_SUMMARY
+              fi
             else
               echo "### ℹ️ No Changes" >> $GITHUB_STEP_SUMMARY
               echo "No changes detected - metrics data is up to date." >> $GITHUB_STEP_SUMMARY
