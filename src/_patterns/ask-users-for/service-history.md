@@ -127,8 +127,8 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
   * End date input. Use the memorable date component. Use “End date” as the field label.  
 * Multi-response summary. Use “Review the periods held as a POW” as the heading for this page.
 
-* ![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
+![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
 
-* ![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
+![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
 
-* ![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
+![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
