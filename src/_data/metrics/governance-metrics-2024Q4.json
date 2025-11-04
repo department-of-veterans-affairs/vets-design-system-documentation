@@ -1,0 +1,19 @@
+{
+  "quarter": "2024Q4",
+  "data": {
+    "period": "2024-Q4",
+    "total_kickoffs": 25,
+    "touchpoints_held": 55,
+    "design_intent_held": 16,
+    "midpoint_review_held": 21,
+    "staging_review_held": 18,
+    "products_shipped": 12,
+    "total_staging_issues": 266,
+    "launch_blocking_issues": 28,
+    "launch_blocking_percentage": 11
+  },
+  "participating_teams": 20,
+  "generated_at": "2025-10-27T19:37:06.044Z",
+  "data_source": "va.gov-team repository",
+  "description": "Governance metrics for 2024Q4"
+}
