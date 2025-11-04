@@ -84,7 +84,7 @@ Use the list and loop pattern for adding multiple names. Read more about the \[m
 
 * Multi-response optional start. Use the multiple responses pattern. Use “Did you serve under another name?” as the heading for this page.
 * Hint text. Include this hint text: “If you select “Yes,” you’ll need to add at least 1 other name,”  
-* Name pattern. Use “Name you served under” as the heading for this page.  
+* [Name pattern](https://design.va.gov/patterns/ask-users-for/names). Use “Name you served under” as the heading for this page.  
 * Multi-response summary. Use the multiple responses pattern. Use “Review the other names you served under” as the heading for this page.
 
 ![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.jpg)
@@ -129,3 +129,9 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
 ![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
 
 ![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
+
+### Components used in this pattern
+
+- \[Branch of service\](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
+- \[Memorable date\]({{ site.baseurl }}/components/form/memorable-date)
+- \[Text input\]({{ site.baseurl }}/components/form/text-input) 
