@@ -20,7 +20,7 @@ anchors:
 
 ### When to use this pattern
 
-**When you prefill the user’s information into a form or other online tool.** This pattern helps users understand how they can update their prefilled information, including sensitive information that they can’t update online. This pattern also informs users where we’ll save their changes—either only to the specific form or tool, or to the form or tool and their profile. \[Learn more about the related “Help users to… Know when their information is prefilled” pattern\] ({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) for guidance on how to display the prefilled information.
+**When you prefill the user’s information into a form or other online tool.** This pattern helps users understand how they can update their prefilled information, including sensitive information that they can’t update online. This pattern also informs users where we’ll save their changes—either only to the specific form or tool, or to the form or tool and their profile. [Learn more about the related “Help users to… Know when their information is prefilled” pattern]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) for guidance on how to display the prefilled information.
 
 ### **When not to use this pattern**
 
