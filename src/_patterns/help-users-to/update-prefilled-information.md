@@ -144,7 +144,7 @@ Directions for updating information vary by form, benefit type, and type of info
 
 Here's an example that tells people to call the VA benefits hotline:
 
-**\> Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call us at [800-827-1000](tel:+18008271000) [(TTY: 711\)](tel:711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
+> **Note:** To protect your personal information, we don't allow online changes to your name, date of birth, or Social Security number. If you need to change this information, call us at [800-827-1000](tel:+18008271000) [(TTY: 711\)](tel:711). We're here Monday through Friday, 8:00 a.m. to 9:00 p.m. ET.
 
 [Find more detailed instructions for how to change your legal name (opens in new tab)](https://www.va.gov/resources/how-to-change-your-legal-name-on-file-with-va/)
 
