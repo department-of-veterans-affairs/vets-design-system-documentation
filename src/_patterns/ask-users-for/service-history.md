@@ -58,7 +58,7 @@ Follow this pattern whenever you need to ask for location information about thei
 * Hint text. Use the hint text component to specify what information Veteran’s need to include. The content will vary based on the form.
 * Place you ended your service. Use the text input component. Use “Place you ended your service” as the field label.
 
-* ![service locations]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-locations.jpg)
+![service locations]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-locations.jpg)
 
 ### Service details
 
@@ -72,7 +72,7 @@ Follow this pattern whenever you need to ask for extra information about their s
 * Character of service/discharge (if applicable). Use the text input component. Use “Character of service/discharge” as the field label.
 * Type of service (if applicable). Use the text input component. Use “Type of service” as the field label.
 
-* ![service details]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-details.jpg)
+![service details]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-details.jpg)
 
 ### Service under another name
 
@@ -83,7 +83,6 @@ Use the list and loop pattern for adding multiple names. Read more about the \[m
 #### Structure
 
 * Multi-response optional start. Use the multiple responses pattern. Use “Did you serve under another name?” as the heading for this page.
-
 * Hint text. Include this hint text: “If you select “Yes,” you’ll need to add at least 1 other name,”  
 * Name pattern. Use “Name you served under” as the heading for this page.  
 * Multi-response summary. Use the multiple responses pattern. Use “Review the other names you served under” as the heading for this page.
@@ -94,16 +93,14 @@ Use the list and loop pattern for adding multiple names. Read more about the \[m
 
 ![service under another name detail]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name-summary.png)
 
-### **Reserves and National Guard and Federal Orders**
+### Reserves and National Guard and Federal Orders
 
 Follow this pattern whenever you need to ask for a Veteran’s Reserve or National Guard information. Persons in the Reserve or National Guard aren’t considered full-time active-duty military personnel. But they can be deployed at any time should the need arise.
 
-#### **Structure**
+#### Structure
 
 * Heading. Use “Reserves and National Guard” as the heading for this page.
-
 * Obligation start date input. Use the memorable date component. Use “Obligation start date” as the field label.
-
 * Obligation end date input. Use the memorable date component. Use “Obligation end date” as the field label.  
 * Unit name. Use the text input component. Use “Unit name” as the field label.
 
@@ -118,7 +115,7 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
 * **Depending on the form, use the multiple response pattern to add multiple periods of time held as a POW.** An example of adding multiple periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction).  
 * **When asking for dates, include hint text if this date can be an estimate.** 
 
-#### **Structure**
+#### Structure
 
 * Multi-response optional start. Use the multiple responses pattern. Use “Have you ever been a prisoner of war (POW)?” as the heading for this page.  
 * Heading. Use “Period of time held as a POW” for this page.  
@@ -127,8 +124,8 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
   * End date input. Use the memorable date component. Use “End date” as the field label.  
 * Multi-response summary. Use “Review the periods held as a POW” as the heading for this page.
 
-* ![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
+![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
 
-* ![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
+![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
 
-* ![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
+![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
