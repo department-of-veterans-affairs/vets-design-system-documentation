@@ -83,35 +83,5 @@ This pattern communicates information that cannot be edited by:
 ### Directions for updating uneditable information
 Directions for updating information that can’t be updated online vary. See the "[Help users to... Update Prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance.
 
-#### Unauthenticated intro page alert
-
-> [heading] Sign in with a verified account
->
-> [content] Here’s how signing in with an identity-verified account helps you:
-> - We can fill in some of your information for you to save you time.
-> - You can save your work in progress. You’ll have {time limit} from when you start or make changes to submit your form.
->
-> **Don't yet have a verified account?** Create a Login.gov or ID.me account. We’ll help you verify your identity for your account now.
->
-> **Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we'll help you do that now.
->
-> **Note:** You can sign in after you start filling out your form. But you'll lose any information you already filled in.
->
-> [button] Sign in or create an account
->
-> [text link] Start your form without signing in
-
-
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/unauthenticated-alert.png" width="600" alt="An alert encouraging users to sign in to save time and save work in progress. A note at the bottom shares that applicants can sign in after they start their application, but will lose any information already filled in.">
-
-
-#### Authenticated intro page alert
-> [heading] We've prefilled some of your information
->
-> [content] Since you’re signed in, we've prefilled part of your application based on your profile details. You can also save your application in progress and come back later to finish filling it out.
-
-<img src="/images/patterns/help-users-to/know-when-their-information-is-prefilled/authenticated-intro-alert.png" width="600" alt="An informational alert with the header 'We've prefilled some of your information.' It informs users that if they sign in, we can prefill some information for them, and they can leave and return to the form later to finish filling it out.">
-
-
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
