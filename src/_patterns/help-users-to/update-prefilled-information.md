@@ -68,7 +68,7 @@ When the user updates this information, there are two potential pathways.
 
 For developer documentation on saving information changes to the profile, consult [How to create the contact info Array Data](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-create-the-contact-info-ar).
 
-{% include component-example.html class="x2" alt="A page for users to update their mailing address. Above the fields is an informational alert stating, 'Any changes you make will also be reflected on your VA.gov profile.'" file="/images/patterns/help-users-to/update-prefilled-information/edit-save-to-profile.png" %}
+{% include component-example.html class="x2" alt="A page for users to update their mailing address. Above the fields is an informational alert stating, 'Any changes you make will also be reflected on your profile.'" file="/images/patterns/help-users-to/update-prefilled-information/edit-save-to-profile.png" %}
 
 ##### If we let the user choose whether to save changes to their profile
 
@@ -76,7 +76,7 @@ For developer documentation on saving information changes to the profile, consul
 
 Consider using this variation for information that may change frequently. For example, when reordering medical supplies, users may want to provide a temporary mailing address. But they may not want this temporary mailing address to save to their profile. 
 
-{% include component-example.html class="x2" alt="A page for users to update their mailing address. Below the address fields is a required radio button field asking, 'Do you also want to update this information in your VA.gov profile?'" file="/images/patterns/help-users-to/update-prefilled-information/edit-choose-where-to-save.png" %}
+{% include component-example.html class="x2" alt="A page for users to update their mailing address. Below the address fields is a required radio button field asking, 'Do you also want to update this information in your profile?'" file="/images/patterns/help-users-to/update-prefilled-information/edit-choose-where-to-save.png" %}
 
 #### **Prefilled information that is missing and required**
 
@@ -110,17 +110,17 @@ Inform the user that they need to call VA to find out how to update this informa
 
 {% include component-example.html class="x2" alt="A note to the user explaining why they can't edit personal information online. It starts with the bolded word 'Note' and ends with a link to find more detailed instructions on how to change their legal name." file="/images/patterns/help-users-to/update-prefilled-information/how-to-edit-personal-information.png" %}
 
-### **Alert informing user we'll save changes to VA.gov profile**
+### **Alert informing user we'll save changes to their profile**
 
-Inform users that their changes will save to their profile before they make the changes. If your form does not save changes to VA.gov profile, use a radio button question instead (example below).
+Inform users that their changes will save to their profile before they make the changes. If your form does not save changes to their profile, use a radio button question instead (example below).
 
-{% include component-example.html class="x2" alt="An informational alert with a bolded header saying 'Any changes you make will also be reflected on your VA.gov profile.'" file="/images/patterns/help-users-to/update-prefilled-information/alert-about-where-information-will-save.png" %}
+{% include component-example.html class="x2" alt="An informational alert with a bolded header saying 'Any changes you make will also be reflected on your profile.'" file="/images/patterns/help-users-to/update-prefilled-information/alert-about-where-information-will-save.png" %}
 
 ### **Success alert**
 
-Inform users their change has been saved to the form and their VA.gov profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
+Inform users their change has been saved to the form and their their profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
 
-{% include component-example.html class="x2" alt="A success alert with the header 'We've updated your mailing address' and the body text 'We've made these changes to this form and your VA.gov profile.'" file="/images/patterns/help-users-to/update-prefilled-information/success-alert.png" %}
+{% include component-example.html class="x2" alt="A success alert with the header 'We've updated your mailing address' and the body text 'We've made these changes to this form and your profile.'" file="/images/patterns/help-users-to/update-prefilled-information/success-alert.png" %}
 
 If the user made the change from the final review page, display the slim success alert on the review page, immediately under the header of the section where they made the change.
 
@@ -128,9 +128,9 @@ If the user made the change from the final review page, display the slim success
 
 ### **Radio button**
 
-In cases where the information might change frequently (like a temporary mailing address), ask users if they want to save their changes to their VA.gov profile. Inform the user of the implications of this decision.
+In cases where the information might change frequently (like a temporary mailing address), ask users if they want to save their changes to their profile. Inform the user of the implications of this decision.
 
-{% include component-example.html class="x2" alt="A required radio button field asking the user if they also want to update this information in their VA.gov profile." file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
+{% include component-example.html class="x2" alt="A required radio button field asking the user if they also want to update this information in their profile." file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
 
 ## **Code usage**
 
@@ -160,6 +160,6 @@ The Authenticated Experience Design Patterns team [conducted user research in la
 This pattern would benefit from additional research into the scenario where prefilled information is missing but required.e-your-legal-name-on-file-with-va/)
 
 ## Research findings
-The Authenticated Experience Design Patterns team [conducted user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in late 2024 about how users prefer to see their editable and non-editable information, and how they prefer to be informed about how to edit it. The majority of participants want updates to save to their VA.gov profile, but some also want the ability to choose where the updates save, in the case that they are using a temporary address or other temporary situation.
+The Authenticated Experience Design Patterns team [conducted user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in late 2024 about how users prefer to see their editable and non-editable information, and how they prefer to be informed about how to edit it. The majority of participants want updates to save to their profile, but some also want the ability to choose where the updates save, in the case that they are using a temporary address or other temporary situation.
 
 This pattern would benefit from additional research. Specifically for the scenario where there is missing and required prefilled information, research to understand if the solution suggested here is effective and understandable for users would be helpful in strengthening this pattern guidance. 
