@@ -99,15 +99,17 @@ Change the label to any `h1` through `h6` header size.
 
 {% include component-example.html alt="Wrong file format" file="/images/components/file-input/file-input-file-error.png" caption="Error message shown when the file doesn't meet requirements (wrong format, too large, etc.)" class="x2" reverse="true" %}
 
-#### Field-related error
-
-{% include component-example.html alt="File form field error" file="/images/components/file-input/file-input-field-error.png" caption="Error message shown for general form field validation issues" class="x2" reverse="true" %}
 
 ### Advanced scenarios
 
 #### File with an additional form input
 
 {% include component-example.html alt="Additional form inputs" file="/images/components/file-input/additionalForm.png" caption="File input used with additional form field to complete the upload process" class="x2" reverse="true" %}
+
+#### File with an additional form input error
+
+{% include component-example.html alt="File form field error" file="/images/components/file-input/file-input-field-error.png" caption="Error message shown for general form field validation issues" class="x2" reverse="true" %}
+
 
 #### Password-protected PDF prompt
 
