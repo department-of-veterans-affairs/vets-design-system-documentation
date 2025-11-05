@@ -22,19 +22,19 @@ anchors:
 
 **When you prefill the user’s information into a form or other online tool.** This pattern helps users understand how they can update their prefilled information, including sensitive information that they can’t update online. This pattern also informs users where we’ll save their changes—either only to the specific form or tool, or to the form or tool and their profile. [Learn more about the related “Help users to… Know when their information is prefilled” pattern]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) for guidance on how to display the prefilled information.
 
-### **When not to use this pattern**
+### When not to use this pattern
 
 * **When you don't prefill the user's information.**  
 * **For unauthenticated users.** Users who aren't signed in shouldn't see their information prefilled when they interact with an application, or be able to update prefilled information. But, when forms don't require users to be signed in, they should see an information alert describing benefits to signing in. \[Check the unauthenticated intro page alert\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled\#unauthenticated-intro-page-alert) within the [Help users to... Know when their information is prefilled]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern.
 
-### **When to use caution**
+### When to use caution
 
 * **When the user can't update their information online, but can update another way.** This pattern accounts for cases when the user needs to call VA or take a different step to change certain information, such as their name and Social Security number. You'll need to confirm that you're giving the correct instructions for changing that specific information.  
 * **When the user can't update their information at all.** If your form prefills information that the user can't change through any means, you'll need to explain that directly.
 
-## **How to design and build**
+## How to design and build
 
-### **Anatomy or layout details**
+### Anatomy or layout details
 
 This pattern involves these types of pages found in VA.gov forms:
 
@@ -43,7 +43,7 @@ This pattern involves these types of pages found in VA.gov forms:
 
 Refer to the related \["Help users to... Know when their information is prefilled"\]({{ site.baseurl }}/patterns/help-users-to/know-when-their-information-is-prefilled) pattern for guidance on helping users know when their information is prefilled.
 
-#### **Prefilled information the user can't update**
+#### Prefilled information the user can't update
 
 {% include component-example.html class="x2" alt="A form page asking users to confirm their personal information, such as legal name, date of birth, and Social Security number. That information is contained in a white card. Below the white card is a string of text explaining why users can't update that information online." file="/images/patterns/help-users-to/update-prefilled-information/personal-information-page.png" %}
 
@@ -52,7 +52,7 @@ Here's how to communicate that users can't update certain information online:
 * **Omit the edit link in cards with non-editable information.**  
 * **Include instructions for how to update uneditable information.** Under the card with the uneditable information, display a note starting with the bolded word “Note:” followed by directions to help users find out how to update this information by phone or another way. See the "content considerations" section for sample text.
 
-#### **Prefilled information the user can update**
+#### Prefilled information the user can update
 
 Here's how to communicate that users can update certain information online:
 
@@ -78,7 +78,7 @@ Consider using this variation for information that may change frequently. For ex
 
 {% include component-example.html class="x2" alt="A page for users to update their mailing address. Below the address fields is a required radio button field asking, 'Do you also want to update this information in your profile?'" file="/images/patterns/help-users-to/update-prefilled-information/edit-choose-where-to-save.png" %}
 
-#### **Prefilled information that is missing and required**
+#### Prefilled information that is missing and required
 
 There may be instances where some information that would otherwise be prefilled is missing from the database, but also required by the form itself. In those instances, users will be brought to a page with a card that utilizes a colored tag to indicate that the information is missing, along with the word "(\*Required)" next to the field heading text to indicate the user needs to provide that information.
 
@@ -90,11 +90,11 @@ If the user does not provide the required missing information and hits the "Cont
 
 Please note that there is currently a [ticket](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues/4276) to update the card component to include this error state. It may not yet be available for use in the VADS Figma design files.
 
-#### **Communicate when and where updates to prefilled information are saved**
+#### Communicate when and where updates to prefilled information are saved
 
 **Inform users where the changes were saved.** Display a success alert informing users “We’ve made these changes to this form and your profile.” or “We’ve made these changes to only this form.” Place this alert at the top of the page, below the stepper and the auto-save text. Use a standard alert if the user made the changes on a form step page. Use a slim alert if the user made the changes on the final review page.
 
-### **Components used in this pattern**
+### Components used in this pattern
 
 * \[Additional info\]({{ site.baseurl }}/components/additional-info)  
 * \[Alert\]({{ site.baseurl }}/components/alert)  
@@ -102,21 +102,21 @@ Please note that there is currently a [ticket](https://github.com/department-of-
 * \[Link\]({{ site.baseurl }}/components/link)  
 * \[Radio button\]({{ site.baseurl }}/components/form/radio-button)
 
-## **Examples**
+## Examples
 
-### **Note after uneditable prefilled information**
+### Note after uneditable prefilled information
 
 Inform the user that they need to call VA to find out how to update this information. The specific number to call will vary by form.
 
 {% include component-example.html class="x2" alt="A note to the user explaining why they can't edit personal information online. It starts with the bolded word 'Note' and ends with a link to find more detailed instructions on how to change their legal name." file="/images/patterns/help-users-to/update-prefilled-information/how-to-edit-personal-information.png" %}
 
-### **Alert informing user we'll save changes to their profile**
+### Alert informing user we'll save changes to their profile
 
 Inform users that their changes will save to their profile before they make the changes. If your form does not save changes to their profile, use a radio button question instead (example below).
 
 {% include component-example.html class="x2" alt="An informational alert with a bolded header saying 'Any changes you make will also be reflected on your profile.'" file="/images/patterns/help-users-to/update-prefilled-information/alert-about-where-information-will-save.png" %}
 
-### **Success alert**
+### Success alert
 
 Inform users their change has been saved to the form and their their profile. If the change was only saved to the form, the alert should read "We've made these changes to only this form."
 
@@ -126,19 +126,15 @@ If the user made the change from the final review page, display the slim success
 
 {% include component-example.html class="x2" alt="A slim success alert with the text 'Address successfully updated on this form.'" file="/images/patterns/help-users-to/update-prefilled-information/slim-success-alert.png" %}
 
-### **Radio button**
+### Radio button
 
 In cases where the information might change frequently (like a temporary mailing address), ask users if they want to save their changes to their profile. Inform the user of the implications of this decision.
 
 {% include component-example.html class="x2" alt="A required radio button field asking the user if they also want to update this information in their profile." file="/images/patterns/help-users-to/update-prefilled-information/radio-button.png" %}
 
-## **Code usage**
+## Content considerations
 
-TBD
-
-## **Content considerations**
-
-### **Directions for updating uneditable information**
+### Directions for updating uneditable information
 
 Directions for updating information vary by form, benefit type, and type of information. You must confirm with subject matter experts that your instructions are accurate for the way your specific form populates information and how to update it. And you must confirm with the call center that they will be able to either update the information directly, or give the person instructions for how to update the information.
 
@@ -148,16 +144,10 @@ Here's an example that tells people to call the VA benefits hotline:
 
 [Find more detailed instructions for how to change your legal name (opens in new tab)](https://www.va.gov/resources/how-to-change-your-legal-name-on-file-with-va/)
 
-## **Accessibility considerations**
+## Accessibility considerations
 
 - Aria-labels for edit links for cards should include the name of the item that’s being edited. For example: An edit link for a phone number card would say “Edit phone number”.  
 - Focus should return to the success alert when an item has been updated.
-
-## **Research findings**
-
-The Authenticated Experience Design Patterns team [conducted user research in late 2024](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) about how users prefer to see their editable and non-editable information, and how they prefer to be informed about how to edit it. The majority of participants want updates to save to their profile, but some also want the ability to choose where the updates save, in the case that they are using a temporary address or other temporary situation.
-
-This pattern would benefit from additional research into the scenario where prefilled information is missing but required.e-your-legal-name-on-file-with-va/)
 
 ## Research findings
 The Authenticated Experience Design Patterns team [conducted user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in late 2024 about how users prefer to see their editable and non-editable information, and how they prefer to be informed about how to edit it. The majority of participants want updates to save to their profile, but some also want the ability to choose where the updates save, in the case that they are using a temporary address or other temporary situation.
