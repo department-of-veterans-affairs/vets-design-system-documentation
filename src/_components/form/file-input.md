@@ -5,7 +5,7 @@ redirect_from:
   - /components/form/file-input-multiple
 has-parent: /components/form/
 title: File input
-intro-text: "File input lets files to be attached and/or uploaded. Use the single file variation for one file at a time, or the multiple file variation to include several files in sequence."
+intro-text: "File input allows files to be attached and/or uploaded. Use the single file variation for one file at a time, or the multiple file variation to include several files in sequence."
 research-title: Form controls
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85508&mode=design&t=TiJHClaf3VQ6wU6B-1
 github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4609
