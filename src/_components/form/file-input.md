@@ -151,10 +151,12 @@ Change the label to any `h1` through `h6` header size.
 
 **Always pair with a clear label.** The label should describe what file users need to upload (e.g., "Upload your discharge papers" not just "Upload file").
 
-**Use hint text for restrictions.** Clearly communicate any file requirements using hint text:
+**Use hint text for restrictions.** Clearly communicate any file requirements using hint text. For example:
 * Allowed file types: "PDF, JPG, or PNG only"
 * File size limits: "Maximum file size: 10 MB"
 * Any other requirements: "Must be in color and clearly legible"
+
+**Note**: These are example hints and not actual limitations of the component.
 
 **Show upload progress when files upload to the server immediately.** Display the [Progress bar - Activity component]({{ site.baseurl }}/components/progress-bar/) if the upload happens automatically. Progress indication is not needed if the file uploads when the form is submitted.
 
