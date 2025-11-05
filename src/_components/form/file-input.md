@@ -123,7 +123,7 @@ Change the label to any `h1` through `h6` header size.
 
 #### Password success
 
-{% include component-example.html alt="File input field error" file="/images/components/file-input/file-input-password-success.png" caption="Confirmation shown when password-protected PDF is successfully decrypted" class="x2" reverse="true" %}
+{% include component-example.html alt="File input password success" file="/images/components/file-input/file-input-password-success.png" caption="Confirmation shown when password-protected PDF is successfully decrypted" class="x2" reverse="true" %}
 
 
 ## Usage
