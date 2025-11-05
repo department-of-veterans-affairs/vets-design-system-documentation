@@ -81,7 +81,7 @@ This pattern communicates information that cannot be edited by:
 
 ## Content considerations
 ### Directions for updating uneditable information
-Directions for updating information that can’t be updated online vary. See the "[Help users to... Update Prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance.
+Directions for updating information that can’t be updated online vary. Refer to the "[Help users to... Update Prefilled information](/patterns/help-users-to/update-prefilled-information)" pattern for guidance.
 
 ## Research findings
 The Authenticated Experience Design Patterns team conducted [user research](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-07-Research-Initiative-One-Prefill/Prefill%20Research%20Report%2009_2024.md) in mid 2024 to gather validation about this pattern. The pattern was [further tested](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/authenticated-patterns/Design-and-research/2024-09-Research-Initiative-Two-Update-Prefill/Update%20Prefill%20Research%20Report.md) as part of a late 2024 study by the same team.
