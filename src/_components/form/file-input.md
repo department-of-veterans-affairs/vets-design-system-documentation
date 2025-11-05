@@ -5,7 +5,7 @@ redirect_from:
   - /components/form/file-input-multiple
 has-parent: /components/form/
 title: File input
-intro-text: "File input lets files to be attached and/or uploaded. Use the single file variation for one file at a time, or the multiple file variation to include several files in sequence."
+intro-text: "File input lets people attach and/or upload files. Use the single file variation for one file at a time, or the multiple file variation to include several files in sequence."
 research-title: Form controls
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=1360%3A85508&mode=design&t=TiJHClaf3VQ6wU6B-1
 github-discussion-url: https://github.com/department-of-veterans-affairs/vets-design-system-documentation/discussions/4609
@@ -26,10 +26,10 @@ anchors:
 
 ## Overview
 
-The file input component gives users a way to select and upload files. You have two options:
+The file input component gives people a way to select and upload files. You have two options:
 
-* **Single file input** – Use when users need to upload one file at a time.
-* **Multiple file input** – Use when users need to upload several files in sequence.
+* **Single file input** – Use when people need to upload one file at a time.
+* **Multiple file input** – Use when people need to upload several files in sequence.
 
 ## Examples
 
@@ -136,7 +136,7 @@ Change the label to any `h1` through `h6` header size.
 
 ### When to use this component
 
-* Users need to attach or upload one or more files
+* People need to attach or upload one or more files
 * The upload is a required part of the form submission
 * You need to restrict file types or size for validation
 
@@ -151,7 +151,7 @@ Change the label to any `h1` through `h6` header size.
 
 ### Implementation best practices
 
-**Always pair with a clear label.** The label should describe what file users need to upload (e.g., "Upload your discharge papers" not just "Upload file").
+**Always pair with a clear label.** The label should describe what file people need to upload (e.g., "Upload your discharge papers" not just "Upload file").
 
 **Use hint text for restrictions.** Clearly communicate any file requirements using hint text. For example:
 * Allowed file types: "PDF, JPG, or PNG only"
