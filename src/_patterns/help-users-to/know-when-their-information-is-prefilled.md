@@ -74,10 +74,10 @@ This pattern communicates information that cannot be edited by:
 {% include storybook-preview.html story="patterns-components-prefill-alert--unauthenticated-prefill-alert" height="415px" link_text="unauthenticated prefill alert" %}
 
 ### Editable prefill card
-{% include storybook-preview.html story="patterns-components-card--editable" height="190px" link_text="editable prefill alert" %}
+![Editable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Editable-prefill-card.png)
 
 ### Uneditable prefill card
-{% include storybook-preview.html story="patterns-components-card--uneditable" height="250px" link_text="uneditable prefill alert" %}
+![Uneditable prefill card]({{site.baseurl}}/images/patterns/help-users-to/know-when-their-information-is-prefilled/Uneditable-prefill-card.png)
 
 ## Content considerations
 ### Directions for updating uneditable information
