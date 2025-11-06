@@ -69,7 +69,7 @@ flowchart TD
     
     Q4 --> PlatWeb([\"Web\"]):::node-context
     PlatWeb --> ResultAction([\"Make it an ACTION LINK\"]):::node-result-action
-    Q4 --> PlatMobile([\"Mobile\"]):::node-context
+    Q4 --> PlatMobile([\"Mobile App\"]):::node-context
     PlatMobile --> AskExpert[\"<b>Ask accessibility expert</b>\"]:::node-special
     
     %% Action Path (NO)
