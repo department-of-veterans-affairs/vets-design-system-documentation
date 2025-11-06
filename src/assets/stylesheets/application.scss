@@ -141,10 +141,17 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Mermaid Charts Styling */
+:root {
+  /* VADS spacing tokens for consistent mermaid chart spacing */
+  --mermaid-node-spacing: var(--vads-spacing-2); /* 16px - aligns with VADS grid system */
+  --mermaid-rank-spacing: var(--vads-spacing-3); /* 24px - provides adequate separation between chart levels */
+}
+
 .mermaid-container {
   margin: 1.5rem 0;
   text-align: center;
-  max-width: 1000px;
+  /* Use design system max-width token for chart containers */
+  max-width: var(--vads-size-max-width-site); /* 1040px - provides adequate space for complex charts */
   margin-left: auto;
   margin-right: auto;
 }
@@ -189,13 +196,14 @@ these can be removed along with an update to how classes are generated in color-
   cursor: default !important;
 }
 
-@media (max-width: $vads-breakpoint--md) {
+@media (max-width: $medium-screen) {
   .mermaid-container {
     overflow-x: auto;
     padding: 0 1rem;
   }
   
   .mermaid {
+    /* 600px ensures chart readability on mobile - specific requirement not covered by VADS breakpoint tokens */
     min-width: 600px;
   }
 }
