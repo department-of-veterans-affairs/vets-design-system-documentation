@@ -137,8 +137,8 @@
     },
     {
       "period": "2025-Q3",
-      "issues_opened": 352,
-      "issues_closed": 333
+      "issues_opened": 472,
+      "issues_closed": 424
     }
   ],
   "velocity": [
@@ -550,17 +550,17 @@
     {
       "period": "2025-07",
       "issues_opened": 173,
-      "issues_closed": 193
+      "issues_closed": 194
     },
     {
       "period": "2025-08",
       "issues_opened": 151,
-      "issues_closed": 115
+      "issues_closed": 114
     },
     {
       "period": "2025-09",
-      "issues_opened": 28,
-      "issues_closed": 25
+      "issues_opened": 148,
+      "issues_closed": 116
     }
   ],
   "experimental_quarterly": [
@@ -646,7 +646,7 @@
       "period": "2024-Q3",
       "issues_opened": 15,
       "issues_closed": 7,
-      "issues_implemented": 0
+      "issues_implemented": 1
     },
     {
       "period": "2024-Q4",
@@ -664,36 +664,36 @@
       "period": "2025-Q2",
       "issues_opened": 4,
       "issues_closed": 30,
-      "issues_implemented": 6
+      "issues_implemented": 9
     },
     {
       "period": "2025-Q3",
-      "issues_opened": 4,
+      "issues_opened": 6,
       "issues_closed": 12,
-      "issues_implemented": 1
+      "issues_implemented": 2
     }
   ],
   "summary": {
-    "open_issues": 472,
-    "closed_this_month": 25,
-    "avg_resolution_days": 123,
-    "total_issues": 4706,
-    "last_updated": "2025-09-08T15:00:45.857Z",
+    "open_issues": 501,
+    "closed_this_month": 116,
+    "avg_resolution_days": 121,
+    "total_issues": 4826,
+    "last_updated": "2025-09-30T20:43:48.253Z",
     "open_issues_trend": {
       "direction": "up",
-      "percentage": 8,
-      "value": 36
+      "percentage": 9,
+      "value": 37
     },
     "closed_month_trend": {
-      "direction": "down",
-      "percentage": 78,
-      "value": -90
+      "direction": "up",
+      "percentage": 2,
+      "value": 2
     },
     "resolution_time_trend": {
       "direction": "down",
-      "percentage": 44,
-      "value": -90
+      "percentage": 52,
+      "value": -107
     }
   },
-  "generated_at": "2025-09-08T15:00:45.880Z"
+  "generated_at": "2025-09-30T20:43:48.268Z"
 }
