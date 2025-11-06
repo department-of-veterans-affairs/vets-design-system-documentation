@@ -157,10 +157,10 @@ these can be removed along with an update to how classes are generated in color-
 .chart-caption {
   font-style: italic;
   text-align: center;
-  max-width: 600px;
+  max-width: var(--vads-breakpoint--sm);
   margin: 0 auto;
   color: var(--vads-color-base);
-  font-size: 0.875rem;
+  font-size: var(--vads-font-size--sm);
 }
 
 .mermaid-comparison {
