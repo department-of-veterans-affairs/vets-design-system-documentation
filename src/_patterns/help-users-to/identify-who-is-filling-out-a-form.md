@@ -31,7 +31,7 @@ We sometimes use this term to refer to the person with the claim or the person a
 
 Always define the term on the first instance as "person with the claim" or "person applying for this benefit." When possible, use specific plain language instead, like "Veteran’s spouse" or "Veteran’s child."
 For example:
-> "I’m the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
+> "I'm the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
 
 **Form submitter**: The person actually filling out and sending in the form. Don't use this term when talking to Veterans — it's just for internal use.
 
@@ -44,7 +44,7 @@ For example:
 **Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It’s OK to use the word sponsor if you lead with the plain language definition.
 
 For example:
-> the Veteran you’re connected to (called your “sponsor”)
+> the Veteran you're connected to (called your "sponsor")
 
 ## How to design and build
 
@@ -110,7 +110,7 @@ Always ask for the form submitter's contact information first, then ask for info
 
 #### Example progress bar component in Figma for a form using the form submitter pattern
 
-This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant.
+{% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant." class="x2" %}
 
 ### Error messages
 
