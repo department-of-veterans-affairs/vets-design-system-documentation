@@ -8,12 +8,12 @@
     "midpoint_review_held": 10,
     "staging_review_held": 16,
     "products_shipped": 41,
-    "total_staging_issues": 238,
+    "total_staging_issues": 237,
     "launch_blocking_issues": 45,
     "launch_blocking_percentage": 19
   },
   "participating_teams": 24,
-  "generated_at": "2025-11-04T14:59:02.267Z",
+  "generated_at": "2025-11-07T18:09:21.346Z",
   "data_source": "va.gov-team repository",
   "description": "Governance metrics for 2025Q3"
 }
