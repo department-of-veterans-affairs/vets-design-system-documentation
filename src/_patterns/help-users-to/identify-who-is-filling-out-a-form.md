@@ -144,7 +144,7 @@ This pattern helps:
 
 * Veterans get through forms faster when they're filling them out for themselves
 * VA staff process forms correctly
-* Everyone understand who they're collecting information about
+* Everyone understands who they're collecting information about
 * Reduce errors and confusion
 
 ## Important notes
