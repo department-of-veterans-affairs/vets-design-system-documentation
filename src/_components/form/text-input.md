@@ -137,7 +137,7 @@ See [form error handling]({{ site.baseurl }}/components/form/#error-handling) fo
 * **Internationalization.** Demonstrates how this components changes when used with the language toggle.
 * **Prefix and Suffix.** Allows an icon or text to be set as an input prefix and/or suffix. See [USWDS Input Prefix and Suffix](https://designsystem.digital.gov/components/input-prefix-suffix/) for additional guidance. 
 * **Widths.** Indicates to the user the expected length of text input by sizing the field relative to what is expected.
-* **Password.** Masks the text entered for sensitive information like passwords, PINs, or security codes. Use for authentication fields and temporary verification codes. Don't use for [Social Security Numbers]({{ site.baseurl }}/patterns/ask-users-for/social-security-number), [phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers), or other information that users may need to verify visually. For encrypted file passwords, see [File input]({{ site.baseurl }}/components/form/file-input#accepts-file-password).
+* **Password.** Masks the text entered for sensitive information like passwords, PINs, or Security Security numbers. Use for authentication fields and temporary verification codes. Don't use for [phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers), or other information that users may need to verify visually. For encrypted file passwords, see [File input]({{ site.baseurl }}/components/form/file-input#accepts-file-password).
 
 #### Errors
 
