@@ -21,22 +21,21 @@ anchors:
 
 ### When to use this pattern
 
-* **Service periods.** Follow this pattern whenever you need to ask for a Veteran’s periods of service in the military.  
-* **Use the multiple response pattern if your form allows Veterans to add more than 1 service period.** This is an example of a complex list and loop pattern with multiple form inputs to gather additional pieces of information. Read more about the \[multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).  
+* **Service periods.** Follow this pattern whenever you need to ask for a Veteran’s periods of service in the military.
+* **Use patterns relevant to your form.** These are patterns for the most commonly asked questions surrounding service history, and not every question will be relevant to your form.
+* **Use the multiple response pattern if your form allows Veterans to add more than 1 service period.** This is an example of a complex list and loop pattern with multiple form inputs to gather additional pieces of information. Read more about the [multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).  
 * **Some forms only require the last branch of service.** The health care application is an example of a form where Veterans don’t need multiple entries of service periods.  
 * **We can prefill service data using API data, but it may be inaccurate.** Provide a way for Veterans to review and make changes to the form. Clearly state that any changes made to service data within the form won’t change the data that VA has on file.
 
 ## Examples
 
 * [Simple Forms Patterns: Branch of Service Pattern](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
-* [Application for Pension Benefits (VA Form 21P-527EZ)](https://www.va.gov/pension/application/527EZ/introduction)
-* [Application for Disability Compensation and Related Compensation Benefits (VA Form 21-526EZ)](https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction)
-* [Application for Health Benefits (VA Form 10-10EZ)](https://staging.va.gov/health-care/apply/application/introduction)
-* [Application for VA Education Benefits Under the National Call to Service (NCS) Program (VA Form 22-1990N)](https://www.va.gov/education/apply-for-education-benefits/application/1990N/introduction)
 
 ## How to design and build
 
 ### Service periods
+
+Follow this pattern whenever you need to ask for information about their service periods. Use the codified Branch of Service combobox to help Veterans select their branch of service.
 
 #### Structure
 
@@ -55,7 +54,7 @@ Follow this pattern whenever you need to ask for location information about thei
 
 * Heading. Use “Service locations” as the heading for this page.
 * Place you started your service. Use the text input component. Use “Place you started your service” as the field label.
-* Hint text. Use the hint text component to specify what information Veteran’s need to include. The content will vary based on the form.
+* Hint text. Use the hint text component to specify what information Veterans need to include. The content will vary based on the form.
 * Place you ended your service. Use the text input component. Use “Place you ended your service” as the field label.
 
 ![service locations]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-locations.jpg)
@@ -78,14 +77,16 @@ Follow this pattern whenever you need to ask for extra information about their s
 
 Follow this pattern whenever you need to ask a Veteran if they served under another name.
 
-Use the list and loop pattern for adding multiple names. Read more about the \[multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).
+Use the list and loop pattern for adding multiple names. Read more about the [multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).
 
 #### Structure
 
-* Multi-response optional start. Use the multiple responses pattern. Use “Did you serve under another name?” as the heading for this page.
-* Hint text. Include this hint text: “If you select “Yes,” you’ll need to add at least 1 other name,”  
+* Multi-response optional start. Use the multiple responses pattern.
+   * Heading. Use “Did you serve under another name?” as the heading for this page.
+   * Hint text. Include this hint text: “If you select “Yes," you’ll need to add at least 1 other name.”  
 * [Name pattern](https://design.va.gov/patterns/ask-users-for/names). Use “Name you served under” as the heading for this page.  
-* Multi-response summary. Use the multiple responses pattern. Use “Review the other names you served under” as the heading for this page.
+* Multi-response summary. Part of the multiple responses pattern.
+   * Heading. Use “Review the other names you served under” as the heading for this page.
 
 ![service under another name]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-name.jpg)
 
@@ -117,12 +118,14 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
 
 #### Structure
 
-* Multi-response optional start. Use the multiple responses pattern. Use “Have you ever been a prisoner of war (POW)?” as the heading for this page.  
+* Multi-response optional start. Use the multiple responses pattern.
+   * Heading. Use “Have you ever been a prisoner of war (POW)?” as the heading for this page.  
 * Heading. Use “Period of time held as a POW” for this page.  
   * Hint text. Use “These dates need to be within a single service period.” If the dates can be estimates, add “You can give an estimate for these dates, if needed.”  
   * Start date input. Use the memorable date component. Use “Start date” as the field label.  
   * End date input. Use the memorable date component. Use “End date” as the field label.  
-* Multi-response summary. Use “Review the periods held as a POW” as the heading for this page.
+* Multi-response summary. Part of the multiple responses pattern.
+   * Heading. Use “Review the periods held as a POW” as the heading for this page.
 
 ![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
 
