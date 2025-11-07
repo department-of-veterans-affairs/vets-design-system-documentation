@@ -22,7 +22,7 @@ anchors:
 ### When to use this pattern
 
 * **Service periods.** Follow this pattern whenever you need to ask for a Veteran’s periods of service in the military.
-* **Use patterns relevant to your form.** These are patterns for the most commonly asked questions surrounding service history, and not every question may be relevant to your form. 
+* **Use patterns relevant to your form.** These are patterns for the most commonly asked questions surrounding service history. Not every question may be relevant to your form. 
 * **Use the multiple response pattern if your form allows Veterans to add more than 1 service period.** This is an example of a complex list and loop pattern with multiple form inputs to gather additional pieces of information. Read more about the [multiple responses pattern\]({{ site.baseurl }}/patterns/ask-users-for/multiple-responses).  
 * **Some forms only require the last branch of service.** The health care application is an example of a form where Veterans don’t need multiple entries of service periods.  
 * **We can prefill service data using API data, but it may be inaccurate.** Provide a way for Veterans to review and make changes to the form. Clearly state that any changes made to service data within the form won’t change the data that VA has on file.
@@ -35,7 +35,7 @@ anchors:
 
 ### Service periods
 
-Follow this pattern whenever you need to ask for information about their service periods. Use the codified Branch of Service combobox to help Veterans select their branch of service.
+Follow this pattern when you need to ask for information about their service periods. Use the codified Branch of Service combo box so Veterans can select their branch of service.
 
 #### Structure
 
