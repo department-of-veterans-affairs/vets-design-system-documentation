@@ -41,7 +41,7 @@ For example:
 
 * **Alternate signer**: Someone certified to sign certain forms for someone else who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. They need to file VA Form 21-0972 first.
 
-**Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It’s OK to use the word sponsor if you lead with the plain language definition.
+**Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. It’s OK to use the word "sponsor" if you lead with this plain language definition.
 
 For example:
 > the Veteran you're connected to (called your "sponsor")
