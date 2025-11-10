@@ -45,7 +45,7 @@ Button and link confusion can be very frustrating for assistive technology users
 <div class="mermaid-comparison">
   <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
   <div class="sr-only">
-    Screen reader users: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
+    If you use a screen reader: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
   </div>
   {% include mermaid-chart.html 
      id="button-link-decision-flowchart" 
