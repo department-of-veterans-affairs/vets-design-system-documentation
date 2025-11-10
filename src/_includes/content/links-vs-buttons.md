@@ -44,47 +44,50 @@ Button and link confusion can be very frustrating for assistive technology users
 
 <div class="mermaid-comparison">
   <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
+  <div class="sr-only">
+    Screen reader users: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
+  </div>
   {% include mermaid-chart.html 
      id="button-link-decision-flowchart" 
      caption="Decision flowchart to help determine whether to use a button or link element."
      chart="
 flowchart TD
-    Start[\"<b>Should this be a button or a link?</b>\"]:::node-start --> Q1{\"<b>Does it navigate to another page or file?</b>\"}:::node-question
+    Start[\"<b>Should this be a button or a link?</b>\"]:::node-start --> Q1{\"<b>Is the purpose of<br/>this control to<br/>navigate elsewhere?</b>\"}:::node-question
     
     %% Navigation Path (YES)
-    Q1 --> NavYes([\"<b>YES</b><br/><b>Navigation Action</b><br/>Examples: Going to a page or file\"]):::node-answer-primary
-    NavYes --> Q2{\"<b>Is data submitted first?</b>\"}:::node-question
+    Q1 --> NavYes([\"<b>YES</b><br/>Examples:<br/> Going to a page or<br/> a static file like a PDF\"]):::node-answer-primary
+    NavYes --> Q2{\"<b>Is data submitted<br/>before navigation?</b>\"}:::node-question
     
-    Q2 --> DataYes([\"<b>YES</b><br/><b>Data Processing</b><br/>Examples: Form submission, saving data\"]):::node-answer-primary
-    DataYes --> ResultBtn1([\"Make it a BUTTON\"]):::node-result-button
+    Q2 --> DataYes([\"<b>YES</b><br/>Examples:<br/> Sending data to server or<br/> saving client side before<br/>moving to a new page\"]):::node-answer-primary
+    DataYes --> ResultBtn1([\"Make it a <b>BUTTON</b>\"]):::node-result-button
     
-    Q2 --> DataNo([\"<b>NO</b><br/><b>Direct navigation</b><br/>Examples: No data processing\"]):::node-answer-secondary
-    DataNo --> Q3{\"<b>Does it need visual emphasis?</b>\"}:::node-question
+    Q2 --> DataNo([\"<b>NO</b>\"]):::node-answer-secondary
+    DataNo --> Q3{\"<b>Does it need to<br/>stand out from surrounding<br/>design elements?</b>\"}:::node-question
     
-    Q3 --> EmphNo([\"<b>NO</b><br/><b>Standard Navigation</b><br/>Examples: Body text, menu links\"]):::node-answer-secondary
-    EmphNo --> ResultLink1([\"Make it a LINK\"]):::node-result-link
+    Q3 --> EmphNo([\"<b>NO</b><br/>Examples:<br/> Link in a body of text,<br/>footer of a form,<br/>or in a menu\"]):::node-answer-secondary
+    EmphNo --> ResultLink1([\"Make it a <b>LINK</b>\"]):::node-result-link
     
-    Q3 --> EmphYes([\"<b>YES</b><br/><b>Prominent navigation</b><br/>Examples: Call-to-action\"]):::node-answer-primary
-    EmphYes --> Q4{\"<b>Does it need visual emphasis?</b>\"}:::node-question
+    Q3 --> EmphYes([\"<b>YES</b><br/>Examples:<br/> Link to a page which <br/>will begin a new form or<br/> needs more visual weight<br/>than other links\"]):::node-answer-primary
+    EmphYes --> Q4{\"<b>Is this on web<br/>or mobile app?</b>\"}:::node-question
     
     Q4 --> PlatWeb([\"Web\"]):::node-context
-    PlatWeb --> ResultAction([\"Make it an ACTION LINK\"]):::node-result-action
+    PlatWeb --> ResultAction([\"Make it an <b>ACTION LINK</b>\"]):::node-result-action
     Q4 --> PlatMobile([\"Mobile App\"]):::node-context
-    PlatMobile --> AskExpert[\"<b>Ask accessibility expert</b>\"]:::node-special
+    PlatMobile --> AskExpert[\"<b>Ask your friendly neighborhood<br/> accessibility expert</b>\"]:::node-special
     
     %% Action Path (NO)
-    Q1 --> ActionNo([\"<b>NO</b><br/><b>Action (No Navigation)</b><br/>Examples: Modal, state change, etc.\"]):::node-answer-secondary
-    ActionNo --> Q5{\"<b>Does it generate a file?</b>\"}:::node-question
+    Q1 --> ActionNo([\"<b>NO</b><br/>Examples:<br/> Taking an action<br/>or opening a modal\"]):::node-answer-secondary
+    ActionNo --> Q5{\"<b>Is the purpose of this<br/>control to generate<br/>data for a file?</b>\"}:::node-question
     
-    Q5 --> FileYes([\"<b>YES</b><br/><b>File Generation</b><br/>Examples: Create PDF, download\"]):::node-answer-primary
-    FileYes --> ResultLink2([\"Make it a LINK\"]):::node-result-link
+    Q5 --> FileYes([\"<b>YES</b><br/>Examples:<br/> Create a PDF<br/>from a web page or<br/>data on the server\"]):::node-answer-primary
+    FileYes --> ResultLink2([\"Make it a <b>LINK</b>\"]):::node-result-link
     
-    Q5 --> FileNo([\"<b>NO</b><br/><b>Other Actions</b><br/>Examples: Form submit, open modal\"]):::node-answer-secondary
-    FileNo --> ResultBtn2([\"Make it a BUTTON\"]):::node-result-button
+    Q5 --> FileNo([\"<b>NO</b>\"]):::node-answer-secondary
+    FileNo --> ResultBtn2([\"Make it a <b>BUTTON</b>\"]):::node-result-button
 " %}
 </div>
 
-#### Should this be a button or link?
+#### Should this be a button or link? {#button-link-decision-list}
 
 * **Is the purpose of the control to navigate elsewhere?**
     * Yes

@@ -140,18 +140,15 @@ these can be removed along with an update to how classes are generated in color-
   background-color: var(--vads-color-primary-darker) !important;
 }
 
-/* Mermaid Charts Styling */
-:root {
-  /* VADS spacing tokens for consistent mermaid chart spacing */
-  --mermaid-node-spacing: var(--vads-spacing-2); /* 16px - aligns with VADS grid system */
-  --mermaid-rank-spacing: var(--vads-spacing-3); /* 24px - provides adequate separation between chart levels */
-}
+/* ==================================================
+   MERMAID CHARTS STYLING
+   ================================================== */
 
+/* Container Layout */
 .mermaid-container {
-  margin: 1.5rem 0;
+  margin: var(--vads-spacing-4) 0;
   text-align: center;
-  /* Use design system max-width token for chart containers */
-  max-width: var(--vads-size-max-width-site); /* 1040px - provides adequate space for complex charts */
+  max-width: var(--vads-size-max-width-site);
   margin-left: auto;
   margin-right: auto;
 }
@@ -159,6 +156,65 @@ these can be removed along with an update to how classes are generated in color-
 .mermaid-container .mermaid {
   background: transparent;
   max-width: 100%;
+}
+
+/* Node Styling - Light Grayscale Theme */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon,
+.mermaid .node path,
+.mermaid g.node > rect,
+.mermaid g.node > circle,
+.mermaid g.node > ellipse,
+.mermaid g.node > polygon {
+  fill: #fff !important;
+  stroke: var(--vads-color-gray-medium) !important;
+  stroke-width: 2px !important;
+}
+
+/* Node Text Styling */
+.mermaid .nodeLabel,
+.mermaid text,
+.mermaid .node text,
+.mermaid g.node text,
+.mermaid tspan,
+.mermaid svg text {
+  font-size: 14px !important;
+  color: var(--vads-color-base) !important;
+}
+
+/* Force tighter line height on all mermaid elements */
+.mermaid * {
+  line-height: 1.2 !important;
+}
+
+/* Edge and Interaction Styling */
+.mermaid .edgeLabel {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.mermaid .node {
+  cursor: default !important;
+}
+
+/* Hide cluster backgrounds */
+.mermaid-container .mermaid .cluster rect {
+  fill: none;
+  stroke: none;
+  opacity: 0;
+}
+
+/* Component Layout */
+.mermaid-comparison {
+  margin: var(--vads-spacing-5) 0;
+}
+
+.mermaid-comparison__title {
+  font-weight: bold;
+  margin-bottom: var(--vads-spacing-2);
+  color: var(--vads-color-base-darker);
 }
 
 .chart-caption {
@@ -170,40 +226,14 @@ these can be removed along with an update to how classes are generated in color-
   font-size: var(--vads-font-size--sm);
 }
 
-.mermaid-comparison {
-  margin: 2rem 0;
-}
-
-.mermaid-comparison__title {
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: var(--vads-color-base-darker);
-}
-
-/* Essential Mermaid fixes */
-.mermaid-container .mermaid .cluster rect {
-  fill: none;
-  stroke: none;
-  opacity: 0;
-}
-
-.mermaid .edgeLabel {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-.mermaid .node {
-  cursor: default !important;
-}
-
+/* Mobile Responsive */
 @media (max-width: $medium-screen) {
   .mermaid-container {
     overflow-x: auto;
-    padding: 0 1rem;
+    padding: 0 var(--vads-spacing-2);
   }
   
   .mermaid {
-    /* 600px ensures chart readability on mobile - specific requirement not covered by VADS breakpoint tokens */
-    min-width: 600px;
+    min-width: 600px; /* Ensures readability on mobile */
   }
 }
