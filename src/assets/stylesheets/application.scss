@@ -175,15 +175,14 @@ these can be removed along with an update to how classes are generated in color-
 
 /* Node Text Styling */
 .mermaid .nodeLabel,
-.mermaid text,
 .mermaid .node text,
-.mermaid g.node text,
-.mermaid tspan,
-.mermaid svg text {
-  font-size: 14px !important;
-  color: var(--vads-color-base) !important;
+.mermaid g.node text {
+  font-size: 14px;
+  color: var(--vads-color-base);
 }
 
+/* If you must override Mermaid's inline styles, use a more specific selector and document why */
+/* Example: .mermaid svg text.nodeLabel { font-size: 14px !important; } */
 /* Set tighter line height only on text elements in Mermaid charts */
 .mermaid .nodeLabel,
 .mermaid text,
