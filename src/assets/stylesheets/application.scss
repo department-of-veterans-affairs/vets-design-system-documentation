@@ -168,7 +168,7 @@ these can be removed along with an update to how classes are generated in color-
 .mermaid g.node > circle,
 .mermaid g.node > ellipse,
 .mermaid g.node > polygon {
-  fill: #fff !important;
+  fill: var(--vads-color-white) !important;
   stroke: var(--vads-color-gray-medium) !important;
   stroke-width: 2px !important;
 }
