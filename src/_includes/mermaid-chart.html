@@ -16,11 +16,11 @@ flowchart TD
   - chart: The Mermaid chart definition (required)
 {% endcomment %}
 
-<div class="mermaid-chart-container">
+<figure class="mermaid-chart-container">
   {% if include.caption %}
-    <div class="mermaid-chart-caption vads-u-font-size--sm vads-u-color--gray-dark vads-u-margin-bottom--1" id="{{ include.id }}-caption">
+    <figcaption class="mermaid-chart-caption vads-u-font-size--sm vads-u-color--gray-dark vads-u-margin-bottom--1" id="{{ include.id }}-caption">
       {{ include.caption }}
-    </div>
+    </figcaption>
   {% endif %}
   
   <div class="mermaid" 
@@ -29,4 +29,4 @@ flowchart TD
        aria-hidden="true">
     {{ include.chart }}
   </div>
-</div>
+</figure>
