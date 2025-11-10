@@ -58,7 +58,7 @@ flowchart TD
     Q1 --> NavYes([\"<b>YES</b><br/>Examples:<br/> Going to a page or<br/> a static file like a PDF\"]):::node-answer-primary
     NavYes --> Q2{\"<b>Is data submitted<br/>before navigation?</b>\"}:::node-question
     
-    Q2 --> DataYes([\"<b>YES</b><br/>Examples:<br/> Sending data to server or<br/> saving client side before<br/>moving to a new page\"]):::node-answer-primary
+    Q2 --> DataYes([\"<b>YES</b><br/>Examples:<br/> Sending data to server or<br/> saving client-side before<br/>moving to a new page\"]):::node-answer-primary
     DataYes --> ResultBtn1([\"Make it a <b>BUTTON</b>\"]):::node-result-button
     
     Q2 --> DataNo([\"<b>NO</b>\"]):::node-answer-secondary
