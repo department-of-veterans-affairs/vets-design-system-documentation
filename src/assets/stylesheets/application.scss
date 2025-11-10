@@ -227,7 +227,7 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Mobile Responsive */
-@media (max-width: $medium-screen) {
+@media (max-width: 768px) {
   .mermaid-container {
     overflow-x: auto;
     padding: 0 var(--vads-spacing-2);
