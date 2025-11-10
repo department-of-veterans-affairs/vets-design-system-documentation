@@ -145,7 +145,7 @@ these can be removed along with an update to how classes are generated in color-
    ================================================== */
 
 /* Container Layout */
-.mermaid-container {
+.mermaid-chart-container {
   margin: var(--vads-spacing-4) 0;
   text-align: center;
   max-width: var(--vads-size-max-width-site);
@@ -153,7 +153,7 @@ these can be removed along with an update to how classes are generated in color-
   margin-right: auto;
 }
 
-.mermaid-container .mermaid {
+.mermaid-chart-container .mermaid {
   background: transparent;
   max-width: 100%;
 }
@@ -204,7 +204,7 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Hide cluster backgrounds */
-.mermaid-container .mermaid .cluster rect {
+.mermaid-chart-container .mermaid .cluster rect {
   fill: none;
   stroke: none;
   opacity: 0;
@@ -232,7 +232,7 @@ these can be removed along with an update to how classes are generated in color-
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .mermaid-container {
+  .mermaid-chart-container {
     overflow-x: auto;
     padding: 0 var(--vads-spacing-2);
   }
