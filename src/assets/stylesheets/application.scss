@@ -219,14 +219,23 @@ these can be removed along with an update to how classes are generated in color-
   font-size: var(--vads-font-size--sm);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* Mobile-first Responsive Styles */
+.mermaid-chart-container {
+  overflow-x: auto;
+  padding: 0 var(--vads-spacing-2);
+}
+
+.mermaid {
+  min-width: 600px; /* Ensures readability on mobile */
+}
+
+/* Desktop overrides (if needed) */
+@media (min-width: #{$vads-breakpoint--md}) {
   .mermaid-chart-container {
-    overflow-x: auto;
-    padding: 0 var(--vads-spacing-2);
+    overflow-x: visible;
+    padding: 0;
   }
-  
   .mermaid {
-    min-width: 600px; /* Ensures readability on mobile */
+    min-width: auto;
   }
 }
