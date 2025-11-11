@@ -177,7 +177,7 @@ these can be removed along with an update to how classes are generated in color-
 /* Node Text Styling */
 /* Use a single, more specific selector to style all text in Mermaid charts */
 .mermaid-chart-container .mermaid text {
-  font-size: 14px;
+  font-size: var(--vads-font-size--sm);
   fill: var(--vads-color-base);
   line-height: 1.2; /* !important not required unless Mermaid sets inline line-height */
 }
