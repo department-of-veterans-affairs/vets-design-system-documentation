@@ -87,7 +87,9 @@ flowchart TD
 " %}
 </div>
 
-#### Should this be a button or link? {#button-link-decision-list}
+<div id="button-link-decision-list">
+
+#### Should this be a button or link?
 
 * **Is the purpose of the control to navigate elsewhere?**
     * Yes
@@ -115,3 +117,5 @@ flowchart TD
           * _Make it a Link_
         * No
           * _Make it a Button_
+
+</div>
