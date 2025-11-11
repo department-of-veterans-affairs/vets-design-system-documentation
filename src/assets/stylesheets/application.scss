@@ -213,14 +213,14 @@ these can be removed along with an update to how classes are generated in color-
 .mermaid-chart-caption {
   font-style: italic;
   text-align: center;
-  max-width: var(--vads-breakpoint--sm);
+  max-width: var(--medium-screen);
   margin: 0 auto;
   color: var(--vads-color-base);
   font-size: var(--vads-font-size--sm);
 }
 
 /* Mobile Responsive */
-@media (max-width: #{$vads-breakpoint--md}) {
+@media (max-width: var(--medium-screen) {
   .mermaid-chart-container {
     overflow-x: auto;
     padding: 0 var(--vads-spacing-2);
