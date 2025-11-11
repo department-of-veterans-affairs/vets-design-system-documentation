@@ -5,6 +5,7 @@
   {% include mermaid-chart.html 
      id="unique-chart-id" 
      caption="Description of the chart"
+     screen_reader_text="Accessible alternative text for screen readers"
      chart="
 flowchart TD
     A[Start] --> B[End]
@@ -13,7 +14,15 @@ flowchart TD
   Parameters:
   - id: Unique identifier for the chart (required)
   - caption: Accessible description/caption for the chart (required)
+  - screen_reader_text: Alternative text for screen readers (optional but strongly recommended)
   - chart: The Mermaid chart definition (required)
+
+  Accessibility Note:
+  The Mermaid chart is hidden from screen readers (aria-hidden="true") because
+  visual flowcharts are not accessible when read aloud. You should ALWAYS provide
+  one of the following:
+  1. Use the 'screen_reader_text' parameter to provide a brief description, OR
+  2. Provide a text-based alternative immediately after the chart in your content
 
   Note: Pages using this include must set 'uses_mermaid: true' in their front matter
   to load the Mermaid.js library. See head.html for conditional library inclusion.
@@ -26,9 +35,16 @@ flowchart TD
     </figcaption>
   {% endif %}
   
+  {% if include.screen_reader_text %}
+    <div class="sr-only" id="{{ include.id }}-description">
+      {{ include.screen_reader_text }}
+    </div>
+  {% endif %}
+  
   <div class="mermaid" 
        id="{{ include.id }}"
-       aria-hidden="true">
+       aria-hidden="true"
+       {% if include.caption %}aria-describedby="{{ include.id }}-caption{% if include.screen_reader_text %} {{ include.id }}-description{% endif %}"{% elsif include.screen_reader_text %}aria-describedby="{{ include.id }}-description"{% endif %}>
     {{ include.chart }}
   </div>
 </figure>
