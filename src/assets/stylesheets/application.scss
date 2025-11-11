@@ -170,9 +170,9 @@ these can be removed along with an update to how classes are generated in color-
 .mermaid-chart-container .mermaid g.node > circle,
 .mermaid-chart-container .mermaid g.node > ellipse,
 .mermaid-chart-container .mermaid g.node > polygon {
-  fill: var(--vads-color-white);
-  stroke: var(--vads-color-gray-medium);
-  stroke-width: 2px;
+  fill: var(--vads-color-white) !important;
+  stroke: var(--vads-color-gray-medium) !important;
+  stroke-width: 2px !important;
   /* If Mermaid sets inline styles that cannot be overridden, add !important and document why. */
 }
 
