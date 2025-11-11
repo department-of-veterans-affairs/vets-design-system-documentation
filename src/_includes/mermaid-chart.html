@@ -43,8 +43,7 @@ flowchart TD
   
   <div class="mermaid" 
        id="{{ include.id }}"
-       aria-hidden="true"
-       {% if include.caption %}aria-describedby="{{ include.id }}-caption{% if include.screen_reader_text %} {{ include.id }}-description{% endif %}"{% elsif include.screen_reader_text %}aria-describedby="{{ include.id }}-description"{% endif %}>
+       aria-hidden="true">
     {{ include.chart }}
   </div>
 </figure>
