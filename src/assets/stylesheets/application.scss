@@ -174,24 +174,18 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Node Text Styling */
-.mermaid .nodeLabel,
-.mermaid .node text,
-.mermaid g.node text {
+/* Use a single, more specific selector to style all text in Mermaid charts */
+.mermaid-chart-container .mermaid text {
   font-size: 14px;
   color: var(--vads-color-base);
-}
-
-/* If you must override Mermaid's inline styles, use a more specific selector and document why */
-/* Set tighter line height only on text elements in Mermaid charts */
-.mermaid .nodeLabel,
-.mermaid svg text {
-  line-height: 1.2 !important;
+  line-height: 1.2 !important; /* !important required to override Mermaid's inline line-height */
 }
 
 /* Edge and Interaction Styling */
-.mermaid .edgeLabel {
+/* Use a more specific selector and document why !important is needed: Mermaid sets border inline */
+.mermaid-chart-container .mermaid .edgeLabel {
   background-color: transparent !important;
-  border: none !important;
+  border: none !important; /* !important required to override Mermaid's inline border */
 }
 
 .mermaid .node {
