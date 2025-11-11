@@ -15,8 +15,8 @@ flowchart TD
   - caption: Accessible description/caption for the chart (required)
   - chart: The Mermaid chart definition (required)
 
-  Note: Requires Mermaid.js to be loaded and initialized in the page head.
-  See head.html for library inclusion.
+  Note: Pages using this include must set 'uses_mermaid: true' in their front matter
+  to load the Mermaid.js library. See head.html for conditional library inclusion.
 {% endcomment %}
 
 <figure class="mermaid-chart-container">

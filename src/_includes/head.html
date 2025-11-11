@@ -40,6 +40,7 @@
 
   <script src="{{ '/assets/javascripts/polyfills/array.from.js' | prepend: site.baseurl | append: cacheBust }}"></script>
 
+  {% if page.uses_mermaid %}
   <!-- Mermaid Charts -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js" 
           integrity="sha384-WmdflGW9aGfoBdHc4rRyWzYuAjEmDwMdGdiPNacbwfGKxBW/SO6guzuQ76qjnSlr" 
@@ -50,4 +51,5 @@
       // You can add more configuration here, e.g. theme: 'default', securityLevel: 'strict'
     });
   </script>
+  {% endif %}
 </head>
