@@ -6,7 +6,6 @@ intro-text: "Banners are for announcements that typically prepare a Veteran to v
 web-component: va-banner
 web: true
 mobile-app: false
-uses_mermaid: true
 sub-pages:
   - sub-page: Maintenance
   - sub-page: Official Gov
