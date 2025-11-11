@@ -230,7 +230,7 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Desktop overrides (if needed) */
-@media (min-width: #{$vads-breakpoint--md}) {
+@media (min-width: 768px) {
   .mermaid-chart-container {
     overflow-x: visible;
     padding: 0;
