@@ -159,8 +159,6 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Node Styling - White nodes with gray borders for WCAG AA contrast.
-   Ensures sufficient contrast and clarity for accessibility in Mermaid charts. */
-/* Node Styling - White nodes with gray borders for WCAG AA contrast.
    Ensures sufficient contrast and clarity for accessibility in Mermaid charts.
    Use a more specific selector to avoid global overrides and minimize !important usage. */
 .mermaid-chart-container .mermaid .node rect,
