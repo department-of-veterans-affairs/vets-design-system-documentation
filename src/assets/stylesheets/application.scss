@@ -162,18 +162,22 @@ these can be removed along with an update to how classes are generated in color-
 
 /* Node Styling - White nodes with gray borders for WCAG AA contrast.
    Ensures sufficient contrast and clarity for accessibility in Mermaid charts. */
-.mermaid .node rect,
-.mermaid .node circle,
-.mermaid .node ellipse,
-.mermaid .node polygon,
-.mermaid .node path,
-.mermaid g.node > rect,
-.mermaid g.node > circle,
-.mermaid g.node > ellipse,
-.mermaid g.node > polygon {
-  fill: var(--vads-color-white) !important;
-  stroke: var(--vads-color-gray-medium) !important;
-  stroke-width: 2px !important;
+/* Node Styling - White nodes with gray borders for WCAG AA contrast.
+   Ensures sufficient contrast and clarity for accessibility in Mermaid charts.
+   Use a more specific selector to avoid global overrides and minimize !important usage. */
+.mermaid-chart-container .mermaid .node rect,
+.mermaid-chart-container .mermaid .node circle,
+.mermaid-chart-container .mermaid .node ellipse,
+.mermaid-chart-container .mermaid .node polygon,
+.mermaid-chart-container .mermaid .node path,
+.mermaid-chart-container .mermaid g.node > rect,
+.mermaid-chart-container .mermaid g.node > circle,
+.mermaid-chart-container .mermaid g.node > ellipse,
+.mermaid-chart-container .mermaid g.node > polygon {
+  fill: var(--vads-color-white);
+  stroke: var(--vads-color-gray-medium);
+  stroke-width: 2px;
+  /* If Mermaid sets inline styles that cannot be overridden, add !important and document why. */
 }
 
 /* Node Text Styling */
