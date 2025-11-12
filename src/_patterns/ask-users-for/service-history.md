@@ -44,7 +44,7 @@ Follow this pattern when you need to ask for information about their service per
 * Service start date input. Use the memorable date component. Use “Service start date” as the field label.
 * Service end date input. Use the memorable date component. Use “Service end date” as the field label.
 
-![service periods]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-periods.jpg)
+![service periods]({{site.baseurl}}/images/patterns/ask-users-for/service-history/service-periods.png)
 
 ### Service locations
 
@@ -105,7 +105,7 @@ Follow this pattern whenever you need to ask for a Veteran’s Reserve or Nation
 * Obligation end date input. Use the memorable date component. Use “Obligation end date” as the field label.  
 * Unit name. Use the text input component. Use “Unit name” as the field label.
 
-![reserves and national guard]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-nationalguard.jpg)
+![reserves and national guard]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-and-national-guard.png)
 
 
 ### Prisoner of War (POW)
@@ -129,7 +129,7 @@ Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (
 
 ![prisoner of war status]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-status.jpg)
 
-![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.jpg)
+![prisoner of war period]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period.png)
 
 ![prisoner of war period summary]({{site.baseurl}}/images/patterns/ask-users-for/service-history/pow-period-summary.png)
 
