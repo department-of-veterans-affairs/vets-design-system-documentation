@@ -136,6 +136,68 @@ Is it an action? → Use button, not link
 
 ---
 
+### Pattern Skills
+
+#### ask-users-for-email-address
+**Skill ID:** `pattern.ask-users-for-email-address`
+**File:** `skills/patterns/ask-users-for-email-address.skill.md`
+
+**Intent Classifiers:**
+- "email", "email address", "contact information", "email collection", "email validation", "collect email"
+
+**Use when user mentions:**
+- Collecting email addresses in forms
+- Email validation patterns
+- Contact information sections
+- Pre-filling from profile
+
+**Key Pattern Highlights:**
+- Email is **mandatory for all digital forms** (as of Oct 2024)
+- Always pre-populate from VA.gov Profile when available
+- Notify user when data is pre-filled
+- NO email confirmation fields (proven ineffective)
+- Validate on blur with standard error messages
+- Pair with phone number on same page
+
+**Component Dependencies:**
+- `component.va-text-input` (type="email")
+- `component.va-alert` (prefill notification)
+
+---
+
+### Cross-Cutting Skills
+
+#### forms-template
+**Skill ID:** `cross-cutting.forms-template`
+**File:** `skills/cross-cutting/forms-template.skill.md`
+
+**Intent Classifiers:**
+- "form", "forms", "form template", "form structure", "multi-step form", "form flow", "form design"
+
+**Use when user mentions:**
+- Building any VA form
+- Multi-step form structure
+- Form flow and navigation
+- Form-wide patterns
+
+**Key Principles:**
+1. **One thing per page** - Reduce cognitive load
+2. **Progressive disclosure** - Show only what's needed
+3. **Clear progress indication** - Always show where user is
+4. **Automatic progress saving** - Prevent data loss
+5. **Plain language** - No jargon, use "you"
+
+**Five-Stage Flow:**
+1. How to apply page (Drupal)
+2. Introduction page (expectations, steps, "Start" button)
+3. Step form pages (one thing per page, progress bar, back/continue)
+4. Review page (verify all info, edit links, submit)
+5. Confirmation page (what happens next, tracking number)
+
+**Applies To:** All VA forms regardless of content
+
+---
+
 ## Trigger Pattern Matching
 
 ### High-Confidence Matches
@@ -150,6 +212,8 @@ These phrases strongly indicate specific components:
 | "button", "submit button" | va-button | `component.va-button` |
 | "continue button", "back button" | va-button (continue/back) | `component.va-button` |
 | "save button", "cancel button" | va-button (primary/secondary) | `component.va-button` |
+| "email address", "collect email" | Email address pattern | `pattern.ask-users-for-email-address` |
+| "build a form", "multi-step form" | Forms template | `cross-cutting.forms-template` |
 
 ### Context-Dependent Matches
 
@@ -170,9 +234,10 @@ Some requests require multiple skills:
 | User Request | Skills Needed |
 |--------------|---------------|
 | "Create a login form" | `component.va-text-input` (email/password) + `component.va-button` (submit) |
-| "Build a contact form" | `component.va-text-input` (multiple) + `component.va-button` (submit + cancel) |
+| "Build a contact form" | `pattern.ask-users-for-email-address` + `component.va-text-input` (name) + `component.va-button` |
 | "Form with validation" | `component.va-text-input` (with error prop) + `component.va-button` |
-| "Multi-step form" | `component.va-text-input` + `component.va-button` (continue/back) |
+| "Multi-step form" | `cross-cutting.forms-template` + relevant component skills |
+| "Collect email address" | `pattern.ask-users-for-email-address` |
 
 ---
 
