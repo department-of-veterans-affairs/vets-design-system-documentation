@@ -7,6 +7,7 @@ research-link: Buttons
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Example-Library?type=design&node-id=35%3A152&mode=design&t=jMcVWkPlFhZu3RTh-1
 figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-deployed
+uses_mermaid: true
 sub-pages:
   - sub-page: Button group
   - sub-page: Button - Segmented

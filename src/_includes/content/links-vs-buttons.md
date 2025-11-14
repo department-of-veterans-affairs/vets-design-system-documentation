@@ -42,9 +42,54 @@ Button and link confusion can be very frustrating for assistive technology users
 
 ### Implementation notes
 
-{% include component-example.html alt="A flowchart designed to arrive at a decision between using a button or link." file="/images/components/button/button-or-link-flow-chart.png" caption="Button vs. Link flow chart." %}
+<div class="mermaid-comparison">
+  <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
+  <div class="sr-only">
+    If you use a screen reader: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
+  </div>
+  {% include mermaid-chart.html 
+     id="button-link-decision-flowchart" 
+     caption="Decision flowchart to help determine whether to use a button or link element."
+     chart="
+flowchart TD
+    Start[\"<b>Should this be a button or a link?</b>\"]:::node-start --> Q1{\"<b>Is the purpose of<br/>this control to<br/>navigate elsewhere?</b>\"}:::node-question
+    
+    %% Navigation Path (YES)
+    Q1 --> NavYes([\"<b>YES</b><br/>Examples:<br/> Going to a page or<br/> a static file like a PDF\"]):::node-answer-primary
+    NavYes --> Q2{\"<b>Is data submitted<br/>before navigation?</b>\"}:::node-question
+    
+    Q2 --> DataYes([\"<b>YES</b><br/>Examples:<br/> Sending data to server or<br/> saving client-side before<br/>moving to a new page\"]):::node-answer-primary
+    DataYes --> ResultBtn1([\"Make it a <b>BUTTON</b>\"]):::node-result-button
+    
+    Q2 --> DataNo([\"<b>NO</b>\"]):::node-answer-secondary
+    DataNo --> Q3{\"<b>Does it need to<br/>stand out from surrounding<br/>design elements?</b>\"}:::node-question
+    
+    Q3 --> EmphNo([\"<b>NO</b><br/>Examples:<br/> Link in a body of text,<br/>footer of a form,<br/>or in a menu\"]):::node-answer-secondary
+    EmphNo --> ResultLink1([\"Make it a <b>LINK</b>\"]):::node-result-link
+    
+    Q3 --> EmphYes([\"<b>YES</b><br/>Examples:<br/> Link to a page which <br/>will begin a new form or<br/> needs more visual weight<br/>than other links\"]):::node-answer-primary
+    EmphYes --> Q4{\"<b>Is this on web<br/>or mobile app?</b>\"}:::node-question
+    
+    Q4 --> PlatWeb([\"Web\"]):::node-context
+    PlatWeb --> ResultAction([\"Make it an <b>ACTION LINK</b>\"]):::node-result-action
+    Q4 --> PlatMobile([\"Mobile App\"]):::node-context
+    PlatMobile --> AskExpert[\"<b>Ask your friendly neighborhood<br/> accessibility expert</b>\"]:::node-special
+    
+    %% Action Path (NO)
+    Q1 --> ActionNo([\"<b>NO</b><br/>Examples:<br/> Taking an action<br/>or opening a modal\"]):::node-answer-secondary
+    ActionNo --> Q5{\"<b>Is the purpose of this<br/>control to generate<br/>data for a file?</b>\"}:::node-question
+    
+    Q5 --> FileYes([\"<b>YES</b><br/>Examples:<br/> Create a PDF<br/>from a web page or<br/>data on the server\"]):::node-answer-primary
+    FileYes --> ResultLink2([\"Make it a <b>LINK</b>\"]):::node-result-link
+    
+    Q5 --> FileNo([\"<b>NO</b>\"]):::node-answer-secondary
+    FileNo --> ResultBtn2([\"Make it a <b>BUTTON</b>\"]):::node-result-button
+" %}
+</div>
 
-#### Should this be a button or link?
+
+
+#### Should this be a button or link? {#button-link-decision-list}
 
 * **Is the purpose of the control to navigate elsewhere?**
     * Yes
@@ -72,3 +117,4 @@ Button and link confusion can be very frustrating for assistive technology users
           * _Make it a Link_
         * No
           * _Make it a Button_
+
