@@ -280,7 +280,7 @@ Please:
 
 For questions or issues:
 - **Slack:** `#vfs-platform-support` or `#platform-design-system`
-- **GitHub Issues:** Report via component-library repo
+- **GitHub Issues:** Report via vets-design-system-documentation repo
 - **Email:** Contact Design System Team
 
 ---

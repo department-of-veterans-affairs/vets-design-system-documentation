@@ -48,7 +48,7 @@
     "whenNotToUse": [
       "Multi-line text is needed → Use va-textarea instead",
       "Phone numbers require masking → Never mask phone fields",
-      "File password entry → Use va-file-input instead",
+      "File upload is needed → Use va-file-input instead",
       "Selecting from predefined options → Use va-select, va-radio, or va-checkbox",
       "Date input is needed → Use va-date or va-memorable-date",
       "Only placeholder text available → Always provide proper labels"

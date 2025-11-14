@@ -338,13 +338,13 @@ The generated code should demonstrate:
 In Claude Code, you can reference the skill file:
 
 ```
-Read the skill file at /Users/OITCODingeM/repos/component-library/skills/components/va-text-input.skill.md
+Read the skill file at skills/components/va-text-input.skill.md
 ```
 
 Or import the JSON directly if Claude Code supports skill import:
 
 ```
-Import skill: /Users/OITCODingeM/repos/component-library/skills/components/va-text-input.skill.json
+Import skill: skills/components/va-text-input.skill.json
 ```
 
 ### Step 2: Give a Task
@@ -411,7 +411,7 @@ If you discover:
 - New anti-patterns
 - Unclear guidance
 
-Please open an issue in the component-library repo with:
+Please open an issue in the [vets-design-system-documentation repo](https://github.com/department-of-veterans-affairs/vets-design-system-documentation/issues) with:
 - Skill ID: `component.va-text-input`
 - Version: `0.1.0`
 - Description of the issue

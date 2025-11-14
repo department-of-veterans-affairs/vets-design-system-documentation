@@ -52,7 +52,7 @@ Use `va-text-input` when you need to collect text-based user input in forms. Thi
 
 - **Multi-line text is needed** → Use `va-textarea` instead
 - **Phone numbers require masking** → Never mask phone fields; users need visual verification
-- **File password entry** → Use `va-file-input` component instead
+- **File upload is needed** → Use `va-file-input` component instead
 - **Selecting from predefined options** → Use `va-select`, `va-radio`, or `va-checkbox` instead
 - **Date input is needed** → Use `va-date` or `va-memorable-date` components
 - **Only placeholder text available** → Never use placeholder-only; always provide proper labels

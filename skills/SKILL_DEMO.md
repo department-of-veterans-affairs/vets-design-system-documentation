@@ -147,7 +147,7 @@ to create a form with email validation
 ### Method 3: Import Skill JSON (Future)
 When Claude Code supports direct skill imports:
 ```
-Import skill: /Users/OITCODingeM/repos/component-library/skills/components/va-text-input.skill.json
+Import skill: skills/components/va-text-input.skill.json
 ```
 
 ### Method 4: MCP Server (Future Phase)
