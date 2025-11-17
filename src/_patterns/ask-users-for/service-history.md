@@ -29,7 +29,8 @@ anchors:
 
 ## Examples
 
-* [Simple Forms Patterns: Branch of Service Pattern](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
+![service periods]({{site.baseurl}}/images/patterns/ask-users-for/service-history/branch-of-service.png)
+* [Simple Forms Patterns: Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
 
 ## How to design and build
 
