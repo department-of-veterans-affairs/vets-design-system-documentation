@@ -60,12 +60,12 @@ In most cases, display the Critical Action component in a [Card]({{ site.baseurl
   caption="In lists of Cards or Service List Items, Critical Action can highlight important or time-sensitive actions the user needs to take. This page is not currently in production."
   file="/images/components/critical-action/critical-action-in-service-list.png" %}
 
-On the My VA page, you can stack Critical Action components at the top of the page. (Do not stack them within Cards or Service List Items.) The standalone component should take up 66% of the content width on larger screens, and expand to 100% of the width on mobile sized screens. When using it as a nested component, it should fill 100% of its parent component's width. In the future, we'll explore other placements of this component in other contexts. Currently, this component should not be stacked in any other context and should not appear outside of a container. Alerts have different [guidelines](https://design.va.gov/components/alert/#how-to-use-alerts) and should not be stacked.
+On the My VA page, Critical Action components can be placed within a card to call out a specific action the user has to take. Within the card, it should fill 100% of its parent component's width. Currently, this component should not be stacked in any other context and should not appear outside of a card.
 
 {% include component-example.html
   class="x2"
   alt="My VA, with five yellow Critical Action components stacked at the top of the page under a header that says “Actions needed.”"
-  caption="On dashboard pages like My VA, Critical Action components stack at the top, highlighting the most pressing actions users need to take."
+  caption="On dashboard pages like My VA, Critical Action components should appear within the cards, to highlight the most pressing actions users need to take."
   file="/images/components/critical-action/critical-action-in-my-va.png" %}
 
 {% include component-docs.html component_name=page.web-component %}
@@ -75,7 +75,7 @@ On the My VA page, you can stack Critical Action components at the top of the pa
 * Use the sentence structure "[Verb] by [date by which user must take the action]". For example, "Verify your life insurance dependents by June 4, 2025" or "Pay your $30 copay by May 1, 2025".
 * Keep the text concise. Work with the Platform Content team to develop clear, short messages that tell the user the required action and deadline (if applicable).
 * Content should be a single sentence without a period. If the Platform Content team advises using two sentences, each sentence should end with a period.
-* You may display the Critical Action component inside a Card or Service List Item on My VA or other page that show multiple VA benefits. In these cases, the component will be shown outside the context of a Card or Service List Item. It’s important that the content clearly communicates the action to the user. The examples below show appropriate levels of detail.
+* You may display the Critical Action component inside a Card or Service List Item on My VA or other page that shows multiple VA benefits. In these cases, the component should be shown in context with the benefit the action relates to. It's important that the content clearly communicates the action to the user. The examples below show appropriate levels of detail.
 
 {% include component-example.html
   alt="Two examples of how much detail to add. For example, don’t say simply “Pay” or “Check in.” Rather, say “Pay your debt of $251.42” or “Check in to your Optometry appointment now.”"
