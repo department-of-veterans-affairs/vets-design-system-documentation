@@ -106,7 +106,7 @@ Follow this pattern whenever you need to ask for a Veteran’s Reserve or Nation
 * Obligation end date input. Use the memorable date component. Use “Obligation end date” as the field label.  
 * Unit name. Use the text input component. Use “Unit name” as the field label.
 
-![reserves and national guard]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-and-national-guard.png?skip)
+![reserves and national guard]({{site.baseurl}}/images/patterns/ask-users-for/service-history/reserves-and-national-guard.png)
 
 
 ### Prisoner of War (POW)
