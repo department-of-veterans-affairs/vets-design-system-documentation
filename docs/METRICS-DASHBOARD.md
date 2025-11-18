@@ -161,6 +161,22 @@ Each JSON file exists in TWO locations:
   - Groups by quarterly periods
 - **Output**: `experimental-metrics.json` (both locations)
 
+### 4. `scripts/analyze_issues.js`
+
+- **Purpose**: Analyzes open GitHub issues by component labels
+- **Input**: GitHub Issues API data (open issues only)
+- **Processing**:
+  - Categorizes issues by component labels
+  - Counts bug issues per component
+  - Tracks accessibility defects by severity (0=Critical, 1=Serious, 2=Moderate, 3=Minor, 4=Enhancement)
+  - When an issue has multiple a11y-defect labels, counts only the most severe
+  - Generates markdown report with sortable tables and quick links
+- **Output**: `component-issues-report.md` in `/src/_data/metrics/`
+- **Usage**: `yarn analyze-issues` or `node scripts/analyze_issues.js`
+- **Requirements**:
+  - GitHub CLI (`gh`) installed and authenticated (`gh auth login`)
+  - Internet connection for API calls
+
 ## Automation (GitHub Actions)
 
 ### Workflow: `.github/workflows/metrics-dashboard.yml`
@@ -241,6 +257,9 @@ GITHUB_TOKEN=your_token node scripts/collect-issue-metrics.js
 
 # Update experimental metrics  
 GITHUB_TOKEN=your_token node scripts/collect-experimental-metrics.js
+
+# Analyze component issues (generates markdown report)
+node scripts/analyze_issues.js
 ```
 
 ### Verification Commands:

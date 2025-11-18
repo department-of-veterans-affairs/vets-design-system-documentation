@@ -1,17 +1,70 @@
 #!/usr/bin/env node
 
-// Script to analyze GitHub issues by component
+/**
+ * GitHub Issues Component Analysis Script
+ * 
+ * Analyzes open GitHub issues in the vets-design-system-documentation repository,
+ * categorizes them by component labels, and generates a detailed markdown report
+ * showing bug counts, accessibility defects by severity, and component metrics.
+ * 
+ * Usage: node scripts/analyze_issues.js
+ *        yarn analyze-issues
+ * 
+ * Requirements:
+ * - GitHub CLI (gh) must be installed and accessible in PATH
+ * - User must be authenticated with gh (run `gh auth login` if needed)
+ * - Internet connection for API calls
+ * 
+ * Output:
+ * - Console: Full report displayed in terminal
+ * - File: src/_data/metrics/component-issues-report.md
+ */
+
 const fs = require('fs');
 const { execSync } = require('child_process');
+const path = require('path');
 
 // Get component names from component-maturity.json
-const path = require('path');
 const componentMaturityPath = path.join(__dirname, '../src/_data/component-maturity.json');
-const componentMaturity = JSON.parse(fs.readFileSync(componentMaturityPath, 'utf8'));
+
+let componentMaturity;
+try {
+  componentMaturity = JSON.parse(fs.readFileSync(componentMaturityPath, 'utf8'));
+} catch (err) {
+  console.error(
+    `❌ Error reading or parsing component-maturity.json at ${componentMaturityPath}:\n${err.message}`
+  );
+  process.exit(1);
+}
+
 const componentNames = Object.keys(componentMaturity);
 
 // Fetch issues data
-const issuesJson = execSync('gh api repos/department-of-veterans-affairs/vets-design-system-documentation/issues --paginate --jq \'.[] | select(.state == "open") | {number: .number, title: .title, labels: [.labels[].name]}\'').toString();
+let issuesJson;
+try {
+  issuesJson = execSync(
+    'gh api repos/department-of-veterans-affairs/vets-design-system-documentation/issues --paginate --jq \'.[] | select(.state == "open") | {number: .number, title: .title, labels: [.labels[].name]}\'',
+    {
+      encoding: 'utf8',
+      maxBuffer: 10 * 1024 * 1024 // 10MB buffer for large datasets
+    }
+  );
+} catch (error) {
+  console.error('\n❌ Error: Failed to fetch issues from GitHub using the gh CLI.');
+  console.error('Possible causes:');
+  console.error('- GitHub CLI (gh) is not installed or not in your PATH');
+  console.error('- You are not authenticated with gh (try `gh auth login`)');
+  console.error('- Network or API error');
+  console.error('\nDetails:', error.message);
+  process.exit(1);
+}
+
+/**
+ * Helper function to pluralize words
+ */
+function pluralize(count, singular, plural = singular + 's') {
+  return count === 1 ? singular : plural;
+}
 
 // Parse the issues
 const issues = issuesJson.trim().split('\n')
@@ -50,7 +103,7 @@ issues.forEach(issue => {
     componentData[componentLabel].totalIssues++;
     
     // Check if it's a bug
-    const isBug = labels.includes('bug') || labels.some(label => label.toLowerCase() === 'bug');
+    const isBug = labels.includes('bug');
     if (isBug) {
       componentData[componentLabel].bugIssues++;
     }
@@ -62,12 +115,23 @@ issues.forEach(issue => {
     if (isA11y) {
       componentData[componentLabel].accessibilityIssues++;
       
-      // Count by severity level
-      labels.forEach(label => {
-        if (label.startsWith('a11y-defect-')) {
-          componentData[componentLabel].a11yDefects[label]++;
+      // Count by severity level (only count the most severe defect per issue)
+      const defectLabels = labels.filter(label => label.startsWith('a11y-defect-'));
+      if (defectLabels.length > 0) {
+        // Find the most severe (lowest number) defect
+        let mostSevere = defectLabels[0];
+        let minLevel = parseInt(mostSevere.replace('a11y-defect-', ''), 10);
+        defectLabels.forEach(label => {
+          const level = parseInt(label.replace('a11y-defect-', ''), 10);
+          if (!isNaN(level) && level < minLevel) {
+            minLevel = level;
+            mostSevere = label;
+          }
+        });
+        if (componentData[componentLabel].a11yDefects.hasOwnProperty(mostSevere)) {
+          componentData[componentLabel].a11yDefects[mostSevere]++;
         }
-      });
+      }
     }
   });
 });
@@ -154,7 +218,9 @@ reportContent.push('');
 reportContent.push('## Top 10 Components by Issue Count');
 reportContent.push('');
 sortedComponents.slice(0, 10).forEach(([component, data], index) => {
-  reportContent.push(`${index + 1}. **${component}** - ${data.totalIssues} total (${data.bugIssues} bugs, ${data.accessibilityIssues} a11y)`);
+  const bugText = `${data.bugIssues} ${pluralize(data.bugIssues, 'bug')}`;
+  const a11yText = `${data.accessibilityIssues} ${pluralize(data.accessibilityIssues, 'a11y')}`;
+  reportContent.push(`${index + 1}. **${component}** - ${data.totalIssues} total (${bugText}, ${a11yText})`);
 });
 
 reportContent.push('');
@@ -162,11 +228,25 @@ reportContent.push('---');
 reportContent.push('');
 reportContent.push('**Note**: Issues may be associated with multiple components if they have multiple component labels.');
 reportContent.push('**A11y Defect Levels**: 0=Critical, 1=Serious, 2=Moderate, 3=Minor, 4=Enhancement');
+reportContent.push('**A11y Counting**: When an issue has multiple a11y-defect labels, only the most severe (lowest number) is counted in the defect columns.');
 
 // Write to file
-const outputFile = path.join(__dirname, '../component-issues-report.md');
-fs.writeFileSync(outputFile, reportContent.join('\n'));
+const metricsDir = path.join(__dirname, '../src/_data/metrics');
+try {
+  fs.mkdirSync(metricsDir, { recursive: true });
+} catch (err) {
+  console.error(`❌ Failed to create metrics directory ${metricsDir}: ${err.message}`);
+  process.exit(1);
+}
+
+const outputFile = path.join(metricsDir, 'component-issues-report.md');
+try {
+  fs.writeFileSync(outputFile, reportContent.join('\n'));
+} catch (err) {
+  console.error(`❌ Failed to write report to ${outputFile}: ${err.message}`);
+  process.exit(1);
+}
 
 // Also output to console
 console.log(reportContent.join('\n'));
-console.log(`\n✅ Report saved to: component-issues-report.md`);
+console.log(`\n✅ Report saved to: src/_data/metrics/component-issues-report.md`);
