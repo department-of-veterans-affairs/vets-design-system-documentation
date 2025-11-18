@@ -64,7 +64,7 @@ On the My VA page, Critical Action components can be placed within a card to cal
 
 {% include component-example.html
   class="x2"
-  alt="My VA, with five yellow Critical Action components stacked at the top of the page under a header that says “Actions needed.”"
+  alt="My VA, with two yellow Critical Action components within cards."
   caption="On dashboard pages like My VA, Critical Action components should appear within the cards, to highlight the most pressing actions users need to take."
   file="/images/components/critical-action/critical-action-in-my-va.png" %}
 
