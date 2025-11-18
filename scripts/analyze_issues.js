@@ -66,10 +66,20 @@ function pluralize(count, singular, plural = singular + 's') {
   return count === 1 ? singular : plural;
 }
 
-// Parse the issues
-const issues = issuesJson.trim().split('\n')
-  .filter(line => line.trim())
-  .map(line => JSON.parse(line));
+// Parse the issues with error handling
+const issues = [];
+const issueLines = issuesJson.trim().split('\n').filter(line => line.trim());
+for (let i = 0; i < issueLines.length; i++) {
+  const line = issueLines[i];
+  try {
+    issues.push(JSON.parse(line));
+  } catch (err) {
+    console.error(`❌ Error parsing JSON for issue at line ${i + 1}:`);
+    console.error(line);
+    console.error('Parse error:', err.message);
+    process.exit(1);
+  }
+}
 
 console.log(`Total open issues: ${issues.length}`);
 console.log(`Total components tracked: ${componentNames.length}`);
