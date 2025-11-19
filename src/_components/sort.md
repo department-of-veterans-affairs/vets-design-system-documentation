@@ -148,31 +148,39 @@ This is the Code Usage section. Note that the header is inside this include.
 * **Only include a sort option if it is relevant to the user.** For example, don't sort Medication history by the alphabetical order of comments from an open text field.
 * **Data should be able to be sorted both directions.** As a guideline, avoid sorting in only one direction. The opposite direction should be available to the user. This may be context-dependent.
 * **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.
-* **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest)`, then the desktop experience should use the same (as opposed to using something like `Fill date (newest)*` and vice versa).
+* **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest)`, then the desktop experience should use the same (as opposed to using something like `Fill date (newest)` and vice versa).
 * **Follow general sort option naming conventions.** A list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
-    - Alphabetical
+    - **Alphabetically**
         - Ascending (A-Z)
         - Descending (Z-A)
-    - Chronological
+    - **Chronologically**
         - Newest to oldest
         - Oldest to newest
-        - *Sort attribute* (newest)
-        - *Sort attribute* (oldest)
-    - Numerical
-        - Quantity
+    - **Numerically**
+        - Least to most
+        - Most to least
+        - Contextual alternatives:
+            - Smallest to largest
+            - Lowest to highest
+            - Shortesst to longest
+        <!--**Quantity**
             - Least to most
             - Most to least
-        - Size
+        - **Size**
             - Smallest to largest
             - Largest to smallest
-        - Value
+        - **Value**
             - Lowest to highest
             - Highest to lowest
-        - Length/duration
+        - **Length/duration**
             - Shortest to longest
-            - Longest to shortest
-    - Algorithms
+            - Longest to shortest-->
+    - **Algorithmically**
         - Relevance
+    - **By sort attribute**
+        - *Sort attribute* (general sort method)
+            - For example, `Date entered (newest to oldest)`. This can be shortened to `Date entered (newest)` for brevity. 
+    <!--Adding a sort attributes as an option can be added as way to introduce additional specificity and is permitted so long as the general sort method is included at the end in parentheses.--> 
 
 <!--
 * Ensure that the default sort option is the one that most users expect information to be sorted by.
@@ -182,7 +190,7 @@ This is the Code Usage section. Note that the header is inside this include.
 * Allow users to sort the content by the factors that are most important to them. Results should be sorted by the option relevant to the content. 
  * For example, a global search should be sorted by relevance to the searched term or phrase. Whereas employment history would be sorted chronologically or by tenure.-->
 
-<!-->
+<!--
 Bulleted list of content related instructions to the designer.
 * May be an include is shared with the Content style guide section.-->
 
@@ -211,4 +219,3 @@ Follow these accessibility guidelines when sorting your search results:
 
 This is the Component checklist section. Note that the header is inside this include.
 <!-- include _component-checklist.html component_name=page.web-component -->
--->
