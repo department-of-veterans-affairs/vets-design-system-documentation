@@ -45,8 +45,8 @@ The Sort component can be used to reorder information alphabetically, chronologi
 
 ### When to use search sort
 
-* **When users benefit from seeing information in a different order** As a guideline, use Sort when there is more than one page of results or more than 10 items.
-    - Common scenarios include the following:
+* **When users benefit from seeing information in a different order.** As a guideline, use Sort when there is more than one page of results or more than 10 items.
+    - Common contexts include the following:
         - Medications
         - Appointments
         - Secure messages
@@ -94,12 +94,12 @@ The Sort component uses the Select component as the foundation.
 ### Web
 
 * **Trigger.** User clicks the dropdown menu to open a list of sort options.
-* **Feedback.** Upon selection, the menu closes and the results automatically update. 
+* **Feedback.** Upon selection, the menu closes and the results automatically update (implicit submission). 
 * **Keyboard Focus** Upon selection, the focus stays on the sort component with the menu closed.
 
 ### Mobile
 
-The VA Health & Benefits app currently does not use this Sort component. It instead uses a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. The Sort component described on this page relies on implicit submission that allows result to automatically update upon selection. 
+The VA Health & Benefits app currently does not use this Sort component. It instead uses a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. 
 
 <!--## Web and Mobile Parity
 
@@ -124,7 +124,7 @@ Help the designer and developer understand when to choose between any mobile app
 
 Sort should be placed above and aligned with the content that it affects.
 
-<!-->
+<!--
 Where the component appears visually, and if necessary to clarify, where it may appear in the source code. Can also comment on where the component is not to be placed -->
 
 <!-- ### Design principles
@@ -144,34 +144,35 @@ This is the Code Usage section. Note that the header is inside this include.
 
 ## Content considerations
 
-* **Only include a sort option if it is relevant to the user.**
+* **Always provide a default sort option that users expect the most.** The default `- Select-` option should not be available to the user.
+* **Only include a sort option if it is relevant to the user.** For example, don't sort Medication history by the alphabetical order of comments from an open text field.
 * **Data should be able to be sorted both directions.** As a guideline, avoid sorting in only one direction. The opposite direction should be available to the user. This may be context-dependent.
-* **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is "Date filled: Oct 10th, 2025", then the way the sort option should be labeled should be *Date filled (newest)* and *Date filled (oldest)*.
-* **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest)*, then the desktop experience should use the same (as opposed to using something like *Fill date (newest)*) and vice versa.
-    - Some general sort options include the following. They can be modified in whatever way makes the most sense according to the context.
-        - Alphabetical
-            - Ascending (A-Z)
-            - Descending (Z-A)
-        - Chronological
-            - Newest to oldest
-            - Oldest to newest
-            - *Sort attribute* (newest)
-            - *Sort attribute* (oldest)
-        - Numerical
-            - Quantity
-                - Least to most
-                - Most to least
-            - Size
-                - Smallest to largest
-                - Largest to smallest
-            - Value
-                - Lowest to highest
-                - Highest to lowest
-            - Length/duration
-                - Shortest to longest
-                - Longest to shortest
-        - Algorithms
-            - Relevance
+* **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.
+* **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest)`, then the desktop experience should use the same (as opposed to using something like `Fill date (newest)*` and vice versa).
+* **Follow general sort option naming conventions.** A list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
+    - Alphabetical
+        - Ascending (A-Z)
+        - Descending (Z-A)
+    - Chronological
+        - Newest to oldest
+        - Oldest to newest
+        - *Sort attribute* (newest)
+        - *Sort attribute* (oldest)
+    - Numerical
+        - Quantity
+            - Least to most
+            - Most to least
+        - Size
+            - Smallest to largest
+            - Largest to smallest
+        - Value
+            - Lowest to highest
+            - Highest to lowest
+        - Length/duration
+            - Shortest to longest
+            - Longest to shortest
+    - Algorithms
+        - Relevance
 
 <!--
 * Ensure that the default sort option is the one that most users expect information to be sorted by.
