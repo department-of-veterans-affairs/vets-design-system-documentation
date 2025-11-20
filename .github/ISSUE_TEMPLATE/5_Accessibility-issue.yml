@@ -109,7 +109,7 @@ body:
     attributes:
       label: "Second screen reader or browser verification"
       description: "Check the same interaction in a second screen reader or browser and include your findings below. This helps us diagnose whether the issue is systemic (WCAG violation) or isolated to a specific AT/browser. That lets us give engineering the right direction and prevents unnecessary workarounds."
-
+      placeholder: "Example: Tested in NVDA 2024.1 with Firefox 130.0 on Windows 11 - issue also occurs. The button is not announced as interactive in either screen reader."
   - type: textarea
     id: evidence
     attributes:
