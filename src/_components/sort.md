@@ -99,7 +99,7 @@ The Sort component uses the Select component as the foundation.
 
 ### Mobile
 
-The VA Health & Benefits app currently does not use this Sort component. It instead uses a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. 
+* The VA Mobile app does not currently have a use case for a standalone Sort component. Instead, the app uses a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. 
 
 <!--## Web and Mobile Parity
 
@@ -120,7 +120,7 @@ Describe the key interactions for this component.
 
 Help the designer and developer understand when to choose between any mobile app variations of this component. -->
 
-### Placement
+## Placement
 
 Sort should be placed above and aligned with the content that it affects.
 
