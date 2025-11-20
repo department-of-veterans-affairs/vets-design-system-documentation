@@ -125,7 +125,7 @@ This example shows how to present optional forms by:
 
 ### Components used in this pattern
 
-* [Alert]({{ site.baseurl}}/components/alert) - For important timing or requirement information
+* [Alert]({{ site.baseurl }}/components/alert) - For important timing or requirement information
 * [Process list]({{ site.baseurl }}/components/process-list) - For sequential steps or ordered forms
 * [Link]({{ site.baseurl }}/components/link) - For linking to online forms and PDFs
 * [Button]({{ site.baseurl }}/components/button) - For primary calls-to-action to start the next form
