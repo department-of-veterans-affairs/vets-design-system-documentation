@@ -35,7 +35,7 @@ As users navigate a page without a mouse, focus should move in a way that’s lo
 ### Guidelines for focus order
 
 * **Focus order should match the visual reading order of the page.** For English pages, focus should move left to right, then top to bottom.
-* **Only include interactive elements in the tab order.** Users expect focus to move only to interactive elements like buttons, links, and form fields.
+* **Include interactive elements in the tab order.** Users expect focus to move only to interactive elements like buttons, links, and form fields.
 
 ## Focus management
 
@@ -62,7 +62,7 @@ Effective focus management can benefit everyone, but it’s especially important
 #### Managing focus when a new page loads
 
 * **Do not move focus when a static page loads.** Browsers automatically set focus at the top, which works well for most users.
-* **For single-page applications, set focus to the top unique heading when a new page loads.**  If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/forms/accessibility-guidelines/#managing-focus-in-form-flows).
+* **For single-page applications, set focus to the top unique heading when a new page loads.** If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/forms/accessibility-guidelines/#managing-focus-in-form-flows).
 
 #### Managing focus when page content is added or removed
 
@@ -86,3 +86,4 @@ Effective focus management can benefit everyone, but it’s especially important
 #### Developer considerations
 
 * **Moving focus inside the Shadow DOM can result in unexpected behavior.** For example, some browsers and assistive technologies may not announce focus changes inside custom elements, or may skip them entirely. To manage focus reliably across browsers and assistive technologies, only move focus to natively interactive elements, and test thoroughly.
+*
