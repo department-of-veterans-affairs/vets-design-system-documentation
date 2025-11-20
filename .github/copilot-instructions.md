@@ -62,7 +62,7 @@ src/
 
 All content must follow the VA.gov Content Style Guide principles:
 - **Plain Language**: Use simple, clear language that Veterans can understand
-- **Veteran-First**: Address users as "you" and refer to VA as "we"
+- **Veteran-First**: In Veteran-facing content, use "Veterans" or "people" instead of "users." Address Veterans as "you" and refer to VA as "we". In design system documentation, "user" is appropriate for user research, user experience, and user testing contexts.
 - **Consistent**: Use standardized terminology from the word list
 - **Accessible**: Write for screen readers and diverse literacy levels
 - **Conversational**: Avoid bureaucratic language and jargon
@@ -70,7 +70,7 @@ All content must follow the VA.gov Content Style Guide principles:
 ### Key Content Principles
 
 1. **Better content, not better bureaucracy**
-2. **Based on Veteran feedback** 
+2. **Based on Veteran feedback**
 3. **Consistent voice and tone**
 4. **Person-first language**
 
@@ -94,7 +94,7 @@ Components use `src/_components/template.md` as the base structure:
 - **Accessibility**: Screen reader and keyboard navigation notes
 - **Research**: Links to user research and usability testing
 
-### Pattern Template Structure  
+### Pattern Template Structure
 
 Patterns use `src/_patterns/template.md` with these sections:
 - **Sub-sections**: `ask-users-to` or `help-users-to` categories
@@ -184,7 +184,7 @@ gh repo view
 ### Common Tasks
 
 - **Adding New Components**: Use `src/_components/template.md` as starting point
-- **Adding New Patterns**: Use `src/_patterns/template.md` as starting point  
+- **Adding New Patterns**: Use `src/_patterns/template.md` as starting point
 - **Updating Guidance**: Follow content style guide standards
 - **Content Updates**: Maintain consistency with existing voice/tone
 
@@ -234,7 +234,7 @@ gh repo view
 - Maintain consistency between documentation and live examples
 - Link to component library source code
 
-### Figma Integration  
+### Figma Integration
 
 - Link to specific Figma components/patterns
 - Use standardized Figma URLs in front matter
@@ -292,7 +292,7 @@ On government-furnished computers, Playwright browsers are installed in a shared
 # Browsers installed in shared location
 /opt/ms-playwright/
 ├── chromium-1187/chrome-mac/Chromium.app/Contents/MacOS/Chromium
-├── chromium-1193/chrome-mac/Chromium.app/Contents/MacOS/Chromium  
+├── chromium-1193/chrome-mac/Chromium.app/Contents/MacOS/Chromium
 ├── firefox-1490/
 ├── webkit-2203/
 └── ...
@@ -353,16 +353,16 @@ When you need to visually inspect layouts, responsive behavior, or debug CSS iss
        headless: true,
        executablePath: `${process.env.PLAYWRIGHT_BROWSERS_PATH}/chromium-1187/chrome-mac/Chromium.app/Contents/MacOS/Chromium`
      });
-     
+
      const context = await browser.newContext();
      const page = await context.newPage();
-     
+
      // Test at multiple viewport sizes
      await page.setViewportSize({ width: 1200, height: 800 });
      await page.goto('http://localhost:4000/about/metrics/');
-     
+
      // Your layout testing code here
-     
+
      await browser.close();
    })();
    ```
@@ -395,7 +395,7 @@ const overflowCheck = await page.locator('.metric-card').evaluateAll((cards) => 
     const cardRect = card.getBoundingClientRect();
     const h3 = card.querySelector('h3');
     const h3Rect = h3 ? h3.getBoundingClientRect() : null;
-    
+
     const hasOverflow = h3Rect && (h3Rect.right > cardRect.right);
     return { cardIndex: index, hasOverflow };
   });
@@ -418,7 +418,7 @@ const flexProperties = await page.locator('.vads-l-row').evaluate(el => {
 
 Once VS Code is reloaded with the MCP configuration, Copilot can directly:
 - Take screenshots of pages at different viewport sizes
-- Inspect element properties and computed styles  
+- Inspect element properties and computed styles
 - Verify responsive behavior across breakpoints
 - Debug layout issues in real browsers
 - Test accessibility features and keyboard navigation
@@ -445,7 +445,7 @@ A typical workflow for layout testing in this repository:
 1. Make CSS changes to metrics dashboard
 2. Start Jekyll server on localhost:4000
 3. Create Playwright test to verify responsive behavior
-4. Run test across mobile (375px), tablet (768px), and desktop (1200px) viewports  
+4. Run test across mobile (375px), tablet (768px), and desktop (1200px) viewports
 5. Check for text overflow, proper spacing, and flexbox behavior
 6. Iterate on CSS based on test results
 7. Clean up test files when satisfied
