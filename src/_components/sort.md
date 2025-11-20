@@ -53,7 +53,7 @@ The Sort component can be used to reorder information alphabetically, chronologi
         - Claims
         - History
 
-* **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. Some common ways include sorting alphabetically, chronologically, or numerically.
+* **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. 
 
 <!--* **Use sort when there exist ways to sort by and when there is more than 3 results.** For example, sort can be used in these scenarios: 
     - To find medication history alphabetically
@@ -74,7 +74,7 @@ The Sort component can be used to reorder information alphabetically, chronologi
 
 ### When to consider something else
 
-* **When filtering would be more appropriate.** Sorting changes result order whereas Filters narrow down results. 
+* **When filtering would be more appropriate.** Sorting changes result order whereas filters narrow down results. 
 * **When order is not relevant.** If the order of data does not impact the results or interpretation, sorting is not necessary.
 * **When there's only one obvious order**. If there's only one meaningful or possible way to sort, leave this component out.
 
@@ -162,7 +162,13 @@ This is the Code Usage section. Note that the header is inside this include.
         - Contextual alternatives:
             - Smallest to largest
             - Lowest to highest
-            - Shortesst to longest
+            - Shortest to longest
+    - **Algorithmically**
+        - Relevance
+    - **By sort attribute**
+        - *Sort attribute name* (general sort method)
+            - For example, `Date entered (newest to oldest)`. This can be shortened to `Date entered (newest)` for brevity. 
+
         <!--**Quantity**
             - Least to most
             - Most to least
@@ -175,11 +181,6 @@ This is the Code Usage section. Note that the header is inside this include.
         - **Length/duration**
             - Shortest to longest
             - Longest to shortest-->
-    - **Algorithmically**
-        - Relevance
-    - **By sort attribute**
-        - *Sort attribute* (general sort method)
-            - For example, `Date entered (newest to oldest)`. This can be shortened to `Date entered (newest)` for brevity. 
     <!--Adding a sort attributes as an option can be added as way to introduce additional specificity and is permitted so long as the general sort method is included at the end in parentheses.--> 
 
 <!--
