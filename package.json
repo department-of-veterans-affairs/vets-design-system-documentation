@@ -22,7 +22,8 @@
     "build-json": "gulp move-json-data && gulp process-component-maturity && gulp process-component-maturity-figma",
     "process-monthly-report": "node scripts/process-monthly-report.js",
     "collect-metrics": "node scripts/collect-issue-metrics.js",
-    "update-metrics": "npm run collect-metrics"
+    "update-metrics": "npm run collect-metrics",
+    "analyze-issues": "node scripts/analyze_issues.js"
   },
   "repository": {
     "type": "git",
