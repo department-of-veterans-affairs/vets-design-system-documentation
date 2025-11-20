@@ -5,9 +5,6 @@ sub-section: help-users-to
 title: Navigate multiple related forms
 intro-text: "Use this pattern to help Veterans understand which forms come next, which are optional, and how to move through multiple forms without confusion."
 status: use-deployed
-research-title: 
-figma-link: 
-code-link: 
 anchors:
   - anchor: Usage
   - anchor: Examples
