@@ -107,8 +107,8 @@ body:
   - type: textarea
     id: other-sr
     attributes:
-      label: "Check the same interaction in a second screen reader or browser and include your findings below"
-      description: “This helps us diagnose whether the issue is systemic (WCAG violation) or isolated to a specific AT/browser. That lets us give engineering the right direction and prevents unnecessary workarounds.”
+      label: "Second screen reader or browser verification"
+      description: "Check the same interaction in a second screen reader or browser and include your findings below. This helps us diagnose whether the issue is systemic (WCAG violation) or isolated to a specific AT/browser. That lets us give engineering the right direction and prevents unnecessary workarounds."
 
   - type: textarea
     id: evidence
