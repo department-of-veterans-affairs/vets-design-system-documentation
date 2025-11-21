@@ -28,6 +28,8 @@ The form intro page does 3 things:
 
 Since people can navigate directly to this page from outside VA.gov, the intro page should include basic information the person needs to understand if this is the correct form.
 
+**When multiple forms are involved:** If the user will need to complete additional forms as part of their process, you may mention these on the intro page to help them prepare. Follow the [Help users to navigate multiple related forms]({{ site.baseurl }}/patterns/help-users-to/navigate-multiple-related-forms) pattern for guidance on how and when to surface information about related forms.
+
 ## Variations
 
 There are 2 versions of the intro page:

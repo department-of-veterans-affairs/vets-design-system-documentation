@@ -50,7 +50,7 @@ Note that breadcrumbs should be excluded from the print preview/final printout, 
   * An HTML representation of a form submission is required in addition to a PDF download in order to make form submission data more easily available to users of assistive technology.
 * **Inform users to print the confirmation for their records.** Notify users that they can print this confirmation page.
 * **Include a "Print this page" primary button.** A printed record provides a reference for future use. The "Print this page" button appears at the bottom of the summary page.
-* **Include a "What to expect next" task list.** This task list should tell the user what VA is doing next with their form submission. 
+* **Include a "What to expect next" task list.** This task list should tell the user what VA is doing next with their form submission. When the user needs to complete additional forms as part of their process, follow the [Help users to navigate multiple related forms]({{ site.baseurl }}/patterns/help-users-to/navigate-multiple-related-forms) pattern to provide clear guidance on next steps.
 
 
 ### Placement
