@@ -4,7 +4,7 @@ title: Focus management
 permalink: /accessibility/focus-management
 intro-text: Focus shows which element is active and ready for input. Good focus management helps everyone, and is especially important for people who navigate without a mouse and people who use screen readers.
 anchors:
-  - anchor: Focus indicator
+  - anchor: Focus appearance
   - anchor: Focus order
   - anchor: Focus management
 ---
@@ -12,7 +12,7 @@ anchors:
 
 * [1.4.13 Content on Hover or Focus (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html)
 * [2.4.3 Focus Order (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)
-* [2.4.7 Focus visible (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)
+* [2.4.7 Focus Visible (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)
 * [2.4.11 Focus Not Obscured (Level AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html)
 * [2.4.13 Focus Appearance (Level AAA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance)
 * [3.2.1 On Focus (Level A)](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html)
@@ -65,7 +65,7 @@ Effective focus management can benefit everyone, but it’s especially important
 #### When a new page loads
 
 * **Do not move focus when a static page loads.** Browsers automatically set focus at the top, which works well for most users.
-* **For single-page applications, set focus to the first unique heading when a new page loads.** If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/forms/accessibility-guidelines/#managing-focus-in-form-flows).
+* **For single-page applications, set focus to the first unique heading when a new page loads.** If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines/#managing-focus-in-form-flows).
 
 #### When page content is added or removed
 
@@ -75,7 +75,7 @@ Effective focus management can benefit everyone, but it’s especially important
 
 #### When there is an error on the page
 
-* **When an error blocks the next action, move focus to the first input with an error.**  If the error isn’t tied to a specific input, move focus instead to the first interactive element that lets the user fix it. After the error is resolved and the user successfully advances to the next view, follow the [guidance for moving focus when a new page loads](#managing-focus-when-a-new-page-loads).
+* **When an error blocks the next action, move focus to the first input with an error.** If the error isn’t tied to a specific input, move focus instead to the first interactive element that lets the user fix it. After the error is resolved and the user successfully advances to the next view, follow the [guidance for moving focus when a new page loads](#when-a-new-page-loads).
 
 #### When opening and closing a modal
 
@@ -85,7 +85,7 @@ Effective focus management can benefit everyone, but it’s especially important
 
 #### When inside a multi-page form
 
-* Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines/#managing-focus-in-form-flows)
+* **Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines/#managing-focus-in-form-flows).**
 
 #### Developer considerations
 
