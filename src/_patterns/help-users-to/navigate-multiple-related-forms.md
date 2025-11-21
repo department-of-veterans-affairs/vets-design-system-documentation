@@ -30,27 +30,28 @@ Use this pattern to guide Veterans through multi-form processes by:
 
 #### When a Veteran's primary form submission leads to follow-up actions.
 
-Some form submissions require Veterans to provide additional evidence to be submitted with their form. Use this pattern to guide Veterans on how to submit that evidence:
+Some form submissions require Veterans to provide additional evidence to be submitted with their form. Use this pattern to guide Veterans on how to submit that evidence by:
 
 * Listing additional evidence or documentation that needs to be submitted to VA on the introduction page
-* Provide ways within the form for the user to submit digital copies of this evidence
-* Don't prevent the user from submitting the form if they do not have these copies available - allow them to submit what they have and provide clear guidance on how to submit remaining documents later
-* Remind users on the confirmation page of any additional information that needs to be submitted and how it can be submitted to VA
+* Providing ways within the form for the user to submit digital copies of this evidence
+* Not preventing the user from submitting the form if they do not have these copies available - allow them to submit what they have and provide clear guidance on how to submit remaining documents later
+* Reminding users on the confirmation page of any additional information that needs to be submitted and how it can be submitted to VA
 
 
 #### When and where to point to other forms
+
+**On introduction pages.** Mention related forms upfront when:
+* Veterans need to gather additional documents or information before starting
+* Multiple forms are part of a single application process
+* Understanding the full scope helps Veterans decide whether to proceed
+* The additional forms significantly impact the time or effort required
 
 **On confirmation pages.** Use this pattern primarily on confirmation pages as part of the "What to expect next" section for:
 * Forms that become available after the primary form is processed
 * Required follow-up forms with specific deadlines
 * Optional supplemental forms that can enhance the application
-* Required documentation that should be submitted
+* Additional documentation that should be submitted as part of the form process
 
-**On intro pages when helpful.** Mention related forms upfront when:
-* Veterans need to gather additional documents or information before starting
-* Multiple forms are part of a single application process
-* Understanding the full scope helps Veterans decide whether to proceed
-* The additional forms significantly impact the time or effort required
 
 ### When not to use this pattern
 
@@ -59,6 +60,10 @@ Some form submissions require Veterans to provide additional evidence to be subm
 **When follow-up timing is unclear.** If your team doesn't have clear information about when or if additional forms will be needed, focus on what you do know rather than speculating about future requirements.
 
 ## Examples
+
+### Introduction page preparation
+
+{% include component-example.html alt="Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="Example of mentioning related forms on an intro page to help Veterans prepare." class="x2" %}
 
 ### Confirmation page with required follow-up
 
@@ -79,14 +84,8 @@ This example shows how to present optional forms by:
 * Explaining the benefit of completing them
 * Using consistent formatting for multiple options
 * Providing both online and PDF options when appropriate
-
-### Introduction page preparation
-
-{% include component-example.html alt="Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="Example of mentioning related forms on an intro page to help Veterans prepare." class="x2" %}
-
+  
 ## How to design and build
-
-### How this pattern works
 
 **Clearly distinguish required forms from optional forms.** Use explicit language like "You must also complete..." for required forms and "You may also want to submit..." for optional forms. Don't rely on visual cues alone.
 
