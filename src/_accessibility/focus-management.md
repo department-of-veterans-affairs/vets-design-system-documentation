@@ -90,3 +90,4 @@ Effective focus management can benefit everyone, but it’s especially important
 #### Developer considerations
 
 * **Moving focus to an element inside the Shadow DOM can result in unexpected behavior.** For example, some browsers and screen readers may not announce focus changes inside custom elements, or may skip them entirely. To manage focus reliably across browsers and assistive technologies, only move focus to natively interactive elements, and test thoroughly.
+* **Consider removing aria-live when you’re also managing focus.** These two announcement methods can conflict if they fire at the same time. Focus changes are usually announced more reliably, so prefer focus announcements whenever possible.
