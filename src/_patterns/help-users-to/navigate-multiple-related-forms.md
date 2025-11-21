@@ -19,23 +19,32 @@ Some VA.gov form flows require Veterans to complete additional forms to accompli
 
 ### When to use this pattern
 
-**When a Veteran's primary form submission leads to follow-up forms or actions.** Use this pattern to guide Veterans through multi-form processes by:
+#### When a Veteran's primary form submission leads to follow-up forms. 
+
+Use this pattern to guide Veterans through multi-form processes by:
 
 * Clearly identifying which additional forms are required vs. optional
 * Providing logical ordering when sequence matters
 * Offering consistent linking strategies (online tools vs. PDFs)
 * Setting clear expectations about timing and next steps
 
-**When and where to point to other forms:**
-* **On confirmation pages** for forms that become relevant after the primary submission
-* **On intro pages** for forms that Veterans should know about before starting (preparation)
-* **In "What to expect next" sections** for immediate next steps
-* **In help text or additional info components** for context-specific guidance during form completion
+#### When a Veteran's primary form submission leads to follow-up actions.
+
+Some form submissions require Veterans to provide additional evidence to be submitted with their form. Use this pattern to guide Veterans on how to submit that evidence:
+
+* Listing additional evidence or documentation that needs to be submitted to VA on the introduction page
+* Provide ways within the form for the user to submit digital copies of this evidence
+* Don't prevent the user from submitting the form if they do not have these copies available - allow them to submit what they have and provide clear guidance on how to submit remaining documents later
+* Remind users on the confirmation page of any additional information that needs to be submitted and how it can be submitted to VA
+
+
+#### When and where to point to other forms
 
 **On confirmation pages.** Use this pattern primarily on confirmation pages as part of the "What to expect next" section for:
 * Forms that become available after the primary form is processed
 * Required follow-up forms with specific deadlines
 * Optional supplemental forms that can enhance the application
+* Required documentation that should be submitted
 
 **On intro pages when helpful.** Mention related forms upfront when:
 * Veterans need to gather additional documents or information before starting
@@ -71,7 +80,7 @@ This example shows how to present optional forms by:
 * Using consistent formatting for multiple options
 * Providing both online and PDF options when appropriate
 
-### Intro page preparation
+### Introduction page preparation
 
 {% include component-example.html alt="Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="Example of mentioning related forms on an intro page to help Veterans prepare." class="x2" %}
 
@@ -79,7 +88,7 @@ This example shows how to present optional forms by:
 
 ### How this pattern works
 
-**Distinguish required from optional forms clearly.** Use explicit language like "You must also complete..." for required forms and "You may also want to submit..." for optional forms. Don't rely on visual cues alone.
+**Clearly distinguish required forms from optional forms.** Use explicit language like "You must also complete..." for required forms and "You may also want to submit..." for optional forms. Don't rely on visual cues alone.
 
 **Prioritize online experiences over PDFs.** When both online and PDF versions exist, default to linking to the online experience. Provide PDF links as secondary options or for users who specifically need them.
 
@@ -99,26 +108,28 @@ This example shows how to present optional forms by:
 
 ### Placement
 
-**Decision framework for where to mention related forms:**
+Decision framework for where to mention related forms
 
-**Use confirmation pages when:**
+#### On confirmation pages when
 * The additional form becomes relevant only after the primary form is submitted
 * You need to provide specific deadlines or next-step timing
 * The form is optional and Veterans can decide later whether they need it
 
-**Use intro pages when:**
+Include this guidance in the "What to expect next" section, after the primary confirmation message and before general next steps.
+
+#### On introduction pages when
 * Veterans need to prepare documents for multiple forms before starting
 * Multiple forms are part of one comprehensive application process
 * Not knowing about additional forms would significantly impact the Veteran's decision to start
 * The additional forms must be completed in a specific sequence
 
-**Implementation by location:**
+When mentioning related forms upfront, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
 
-**On confirmation pages:** Include this guidance in the "What to expect next" section, after the primary confirmation message and before general next steps.
+### Other patterns and templates used in this pattern
 
-**On intro pages:** When mentioning related forms upfront, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
-
-**In help text:** For complex multi-form processes, consider adding brief mentions in form help text to prepare Veterans.
+* [Help users keep a record of submitted information]({{ site.baseurl }}/patterns/help-users-to/keep-a-record-of-submitted-information) - Confirmation page
+* [Forms - Introduction page template]({{ site.baseurl }}/templates/forms/introduction)
+* [Forms - Confirmation page template]({{ site.baseurl }}/templates/forms/confirmation)
 
 ### Components used in this pattern
 
