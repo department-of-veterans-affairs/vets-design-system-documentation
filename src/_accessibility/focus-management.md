@@ -4,6 +4,7 @@ title: Focus management
 permalink: /accessibility/focus-management
 intro-text: Focus shows which element is active and ready for input. Good focus management helps everyone, and is especially important for people who navigate without a mouse and people who use screen readers.
 anchors:
+  - anchor: Related WCAG criteria
   - anchor: Focus appearance
   - anchor: Focus order
   - anchor: Focus management
@@ -64,14 +65,14 @@ Effective focus management can benefit everyone, but it’s especially important
 
 #### When a new page loads
 
-* **Do not move focus when a static page loads.** Browsers automatically set focus at the top, which works well for most users.
-* **For single-page applications, set focus to the first unique heading when a new page loads.** If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines/#managing-focus-in-form-flows).
+* **Don't move focus when a static page loads.** Browsers automatically set focus at the top, which works well for most users.
+* **For single-page applications, set focus to the first unique heading when a new page loads.** If the new content does not have a unique heading, choose the element that gives users the most context. For multi-page forms, follow the specific guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).
 
 #### When page content is added or removed
 
 * **Move focus to new content.** When content is added to the page as a result of user action, focus should be moved to the new content.
 * **Restore focus to a logical location when content is removed.** If content is removed, set focus to the next logical spot for the user. For an example, see the [guidance for focus management when opening or closing a modal](#when-opening-and-closing-a-modal).
-* **Do not move focus when content is loading.** Instead of moving focus to the loading indicator, use ARIA attributes to announce the loading state. Once loading is complete, move focus to the new content.
+* **Don't move focus when content is loading.** Instead of moving focus to the loading indicator, use ARIA attributes to announce the loading state. Once loading is complete, move focus to the new content.
 
 #### When there is an error on the page
 
@@ -85,7 +86,7 @@ Effective focus management can benefit everyone, but it’s especially important
 
 #### When inside a multi-page form
 
-* **Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines/#managing-focus-in-form-flows).**
+* **Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).**
 
 #### Developer considerations
 
