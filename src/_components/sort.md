@@ -148,11 +148,11 @@ This is the Code Usage section. Note that the header is inside this include.
 * **Only include a sort option if it is relevant to the user.** For example, don't sort Medication history by the alphabetical order of comments from an open text field.
 * **Data should be able to be sorted both directions.** As a guideline, avoid sorting in only one direction. The opposite direction should be available to the user. This may be context-dependent.
 * **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.
-
+<!--
 Alpha sort would be "[Data label] (A to Z)" - i.e. Form name (A to Z)
 Date sort would be "[Data label] (newest)- i.e. Revision date (newest first)
 Numeric sort would be "[Data label] (high to low) - i.e. Form number (high to low)
-A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.
+A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.-->
 
 * **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest)`, then the desktop experience should use the same (as opposed to using something like `Fill date (newest)` and vice versa).
 * **Follow general sort option naming conventions.** A list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
