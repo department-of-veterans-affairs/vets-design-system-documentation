@@ -8,9 +8,9 @@ slug: word-list
 
 For most terms on VA.gov, we use the standard American English spelling in Merriam-Webster Dictionary. The words on this list are exceptions or need clarification.
 
-- We might use different capitalization or hyphenation.
-- We may call for using a more plain language version of a word or to define it in body copy.  
-- We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word.
+- We might use different capitalization or hyphenation
+- We may call for using a more plain language version of a word or to define it in body copy
+- We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word
 
 For terms that are not on this list, refer to [Merriam-Webster](https://www.merriam-webster.com). 
 
@@ -24,11 +24,11 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **accredited representative**
 : Lowercase, and define on first appropriate instance as "a trained professional trusted to help with VA-related claims." Include the definition in another sentence, as a parenthetical, or set off with commas.
-:	- Like this: Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
+:	Like this: Get help from an accredited representative, a trained professional trusted to help with VA-related claims.
 
 **active duty**
 : Lowercase, and hyphenate when it modifies a noun. 
-: -	Like this: active-duty service member
+: Like this: active-duty service member
 
 **advanced**
 : Capitalize only when used as part of the branded term "My HealtheVet Advanced." Otherwise lowercase.
@@ -44,7 +44,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **annual**
 : Unless part of a benefit or program name, avoid the use of terms like "annual," "biannual," and "biennial." Opt for plain language alternatives instead.
-
 : - Instead of annual:  "each year" or "once each year"
 : -	Instead of bi-annual: "2 times each year" or "twice each year"
 : -	Instead of biennial: "every other year"
@@ -53,7 +52,11 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
 **apply**
-: Use this term in the context of non-disability benefits, like this: apply for DIC benefits or apply for VA health care. Use "file" for disability compensation, like this: file a claim for disability. Go to [Claims and applications]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
+: Use this term in the context of non-disability benefits, like this: apply for DIC benefits or apply for VA health care. Use "file" for disability compensation, like this: file a claim for disability.
+: [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications)
+
+**approved program**
+: We use this term to describe an approved program at a school (not “approved school”). The schools themselves aren’t approved, only some programs at schools. It isn’t accurate to say that a school is approved.
 
 **Armed Forces**
 : Capitalize. The Armed Forces consist of 6 service branches: the Air Force, Army, Coast Guard, Marine Corps, Navy, and Space Force. Also refer to the "uniformed services" entry.
@@ -82,7 +85,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Don't use "benefit office" or "regional benefit office." Use "regional office" instead. Go to entry for "VA regional office" for details. 
 
 **Benefits Delivery at Discharge (BDD) program**
-: Note that “Benefits” is plural. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Note that “Benefits” is plural.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **blind or low-vision**
 : Don't use "blind or sight-impaired."
@@ -102,7 +106,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### C
 
 **C&P exam**
-: Go to entry for "claim exam."
+: Go to the entry for "claim exam."
 
 **can vs. may**
 : Use "can" when meaning the ability or power to do something; use "may" when meaning the permission to do it.
@@ -111,11 +115,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "caregiver," not "caretaker." Also note that family members don't necessarily see themselves as "caregivers." While "family caregiver" may be used as a shorthand term, wherever possible use a more descriptive phrase such as "a family member caring for a Veteran with disabilities."
 
 **Certificate of Eligibility (COE)**
-: Capitalize. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: Capitalize.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **certifying official**
 : Use this term to refer to the person at one's school who needs to approve or submit enrollment information for VA education benefits.
-: -	Like this: Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
+: Like this: Your school’s certifying official will submit your enrollment information with a VA Enrollment Certification (VA Form 22-1999).
 
 **Character of Discharge review process:**
 : Lowercase "review process."
@@ -127,10 +132,11 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "long-lasting" or when needed, "illness that lasts for a long time." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 **Civilian Health and Medical Program of the Department of Veterans Affairs (CHAMPVA)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **claimant** 
-: Define the term on the first instance as “person with the claim” or “person applying for this benefit.” When possible, use specific plain language instead, like “Veteran’s spouse” or “Veteran’s child.” Go to [Claims and applications]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word.
+: Define the term on the first instance as “person with the claim” or “person applying for this benefit.” When possible, use specific plain language instead, like “Veteran’s spouse” or “Veteran’s child.”
+: [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications)
 
 **claim exam**
 : This is a term VA is working to rebrand. For now, on first mention on a page, use "VA claim exam (also known as a compensation and pension, or C&P, exam)." After first mention, use "VA claim exam" or "claim exam."
@@ -152,12 +158,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **condition vs. disability** 
 : In the context of service connection, we use "condition" to describe an illness or injury that affects your mind or body. We call a condition a "disability" after a Veteran has received a disability rating.
-
 : - Like this: If you have a condition connected to your service, you may be eligible for compensation.   
 : - Like this: If your service-connected disability has gotten worse, find out how to file a claim to increase your disability rating.
-
 : For non-Veterans, like beneficiaries and dependents, we use “disability” (or “disabled” depending on the context) to describe an illness or injury that affects your mind or body. Default to people-first language in general content that describes individuals with a disability. For example, “Was this trust created for a Veteran’s child who was seriously disabled before age 18?”
-
 : [Learn more in the Health content section](https://design.va.gov/content-style-guide/health-content/)
 
 **conditions**
@@ -165,17 +168,24 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **contamination**
 : Define on first mention in body copy as "water that was found to have toxic chemicals in it." Include the definition in another sentence, as a parenthetical, or set off with commas. 
-: - Exception: On the Camp Lejeune page, don't define this term.
+: **Exception:** On the Camp Lejeune page, don't define this term.
 
 **contention**
 : Use "condition" or an alternate word or phrase instead, depending on context. Internally, "contention" refers to an issue connected with a claim. Typically this is a medical condition, but in some cases it could be for other things like claiming a dependent.
 
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
-: - Like this: Served for at least 30 continuous days (all at once, without a break in service)."
+: Like this: Served for at least 30 continuous days (all at once, without a break in service)."
 
 **convalescence**
 : Use "rehab care" instead. If used in the context of a specific benefit, can include as a parenthetical: "(also known as convalescence)."
+
+**copay (or copayment, or health care copay)**
+: We use this term to describe the amount some Veterans pay for certain health care services and prescriptions. On first mention, include a plain language definition. For example, “You may need to pay a copay for outpatient care for conditions not related to your military service. A copay is a fixed amount you owe for the service.”
+: **Note:** Use “health care copay” on first mention in general content where the context of health care is necessary and then “copay” on subsequent mentions.
+
+**copay bill (or patient statement, or billing statement)**
+: We use these terms to describe the bill or statement that a Veteran receives for their health care copay. On first mention, include a plain language definition. For example, “You may get a copay bill (or “statement") for the amount you owe for health care services that aren’t exempt from copays.” 
 
 **court-appointed guardian**
 : Define on first mention in body content as "a person the court decides is in charge of caring for another person who can't take care of him or herself." Include definition in another sentence, as a parenthetical, or set off with commas.
@@ -183,10 +193,17 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **court-martial**
 : Lowercase, as in "general court-martial," "special court-martial," and "summary court-martial."
 
+**cover the costs/cover expenses**
+: We use this term when we’re explaining that education benefits pay for more than tuition and fees.
+
 ### D
 
 **death benefits**
 : Define on first mention in body copy as "money from a Veteran’s life insurance policy when that Veteran dies." Include definition in another sentence, as a parenthetical, or set off with commas.
+
+**debt**
+: We use this term as the overarching term for any money the Veteran owes to VA. “Debt” encompasses money owed for overpayments as well as copays. If the debt is because of an overpayment or a copay, we should use those terms to explain why the Veteran owes money. Debt can be a sensitive topic. Refer to our Payments and debts section in the style guide for more information about how to write about debt.
+: [Go to the Payments and debts section](https://design.va.gov/content-style-guide/specific-topics-and-programs/payments-and-debts)
 
 **deceased**
 : This is the preferred term on VA.gov over "decedent," which is chiefly a legal term.
@@ -198,10 +215,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : A Veteran fills out a decision review "form," not an "application."
 
 **Defense Department (DOD)**
-: For most cases, use Defense Department on the first instance. After the first instance, use DOD. Capitalize the O. Go to the [DOD brand guide](https://www.defense.gov/Brand-Guide/#use-of-name) for more information. And go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov. 
+: For most cases, use "Defense Department (DOD)" on the first instance. After the first instance, use "DOD." Capitalize the O.
+: [Go to the DOD brand guide for more information](https://www.defense.gov/Brand-Guide/#use-of-name)
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **delete**
-: Use the word "delete" instead of "remove." For example, "Delete file."
+: For file uploads, use “delete” instead of “remove.” For example, “Delete file.” We can use “remove” for other actions within a form, like “Remove dependents.”
 : [Learn more in the Files pattern]({{ site.baseurl }}/patterns/ask-users-for/files)
 
 **demolish**
@@ -211,16 +230,20 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "dental care" instead.
 
 **Department of Defense**
-: Go to entry for Defense Department.
+: Go to the entry for Defense Department.
 
 **Department of Veterans Affairs**
-: "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we." Go to [We, us, you]({{ site.baseurl }}/content-style-guide/we-us-you) for examples.
-
-: - Don't use "DVA," "Dept of VA," or other non-standard shortened versions. For more, go to the entries "VA" and "VA.gov."
-: - Exception: When using the full, official federal agency name, spell out in its entirety on the first instance. After the first instance, shorten to Veterans Affairs or VA. 
+: "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we."
+: [Go to the We, us, you section for examples](https://design.va.gov/content-style-guide/we-us-you)
+: Don't use "DVA," "Dept of VA," or other non-standard shortened versions. For more, go to the entries "VA" and "VA.gov."
+: **Exception:** When using the full, official federal agency name, spell out in its entirety on the first instance. After the first instance, shorten to Veterans Affairs or VA. 
 
 **Dependency and Indemnity Compensation (DIC)**
-: Capitalize. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: Capitalize.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
+
+**dependent child**
+: We use “dependent child” but not “dependent spouse.” Use this construction if you’re referring to both spouse and child: “spouse and dependent child” (not “dependent spouse and child”).
 
 **Dependents’ Educational Assistance Program**
 : Refer to this as "Survivors' and Dependents' Educational Assistance (DEA) program." Include "also called Chapter 35" on first mention. Can be shortened to "DEA program" after first mention.
@@ -255,25 +278,37 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Like this: education benefits OR education and training opportunities
 : - Not this: educational benefits OR educational and training opportunities
 
+**education benefit**
+: Use “education benefit” rather than “education program.” This helps avoid confusion with “school programs.”
+: We sometimes use “program” when talking about the name of an education benefit, like the Yellow Ribbon Program. But we’d then in subsequent/surrounding content say, “this education benefit.”
+
 **educational**
-: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education." (Go to entry for "education.") 
-: - Like this: educational assistance, educational institution, educational plan, educational program
+: Because businesses within VA apply different usage styles for  “education” and “educational,” we've listed instances here, where we use "educational" in specific phrases rather than "education." (Go to the entry for "education.") 
+: Like this: educational assistance, educational institution, educational plan, educational program
 
 **educational and career counseling**
-:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Career Counseling. Note: This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
+:  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Career Counseling.
+: **Note:** This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
  
 **educational assistance**
 : We use this style of phrasing to be consistent with Chapter 35, DEA, REAP, and VEAP.
 
 **educational counseling**
-: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling. Note: This usage differs from the style within eBenefits VR&E > Education and Career Counseling pages.
+: We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling.
+: **Note:** This usage differs from the style within eBenefits VR&E > Education and Career Counseling pages.
   
+**eligible**
+: We use both “qualify” and “eligible” when referring to benefits someone may be able to get.
+
 **email**
 : No hyphen (not "e-mail").
 
 **employment handicap**
 : Add a definition or note to help explain this term.
-: - Like this: Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
+: Like this: Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
+
+**entitlement**
+: This term refers to how much of a benefit you have available to use. It’s often talked about as “remaining entitlement.” We don’t say “draw down your entitlement.” Instead, we’d say, “charge your entitlement.” For education benefits, it’s measured in months and days.
 
 **environmental hazards**
 : Define on first mention in body copy as "harmful toxins in the air, water, or land such as those that get released from burn pits." Include definition as another sentence, a parenthetical, or set off with commas.
@@ -290,7 +325,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Capitalize in Vietnam Era (this is a VA term). If you need to talk about the Vietnam War, which has different dates associated with it than Vietnam Era, style it with "era," lowercase: Vietnam War era.
 
 **evidence**
-: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed. Go to [Claims and applications]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
+: Define as "supporting documents" and add, "like a doctor's report or medical test results," as needed.
+: [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) 
 
 **Exception**
 : Used to call special attention to something. It should be bolded and never in all caps. Use a colon following "Exception."
@@ -315,7 +351,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use this term instead of “beneficiary” whenever possible.
 
 **Family Servicemembers’ Group Life Insurance (FSGLI)**
-: This is the program name. Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: This is the program name. Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member."
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **FAQs**
 : Use in all instances for "frequently asked questions." 
@@ -327,7 +364,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 **file a claim for disability compensation**
-: Use "file a claim" instead of "apply for benefits" when referring to disability. Go to [Claims and applications]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
+: Use "file a claim" instead of "apply for benefits" when referring to disability.
+: [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications)
 
 **final status**
 : Use “in final status” instead of “in a final status."
@@ -343,15 +381,18 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **gender diverse**
 : No hyphen.
 
+**get paid back**
+: We try to use this plain language phrase instead of “get reimbursed,” but we do have some instances of “reimbursed.”
+
 **GI**
-: No periods (*not* G.I.).
+: No periods (not G.I.).
 
 **GI Bill®**
 : Include the trademark symbol in the first prominent mention on the website (currently on Education and Training hub page).
 
 **GI Bill Comparison Tool**
 : Capitalize "Comparison Tool." Treat as a proper noun when mentioning it by the complete name. Lowercase "tool" when simply referencing it, not by name.
-: - Like this: The GI Bill Comparison Tool can help you compare benefits by school. Fill out the tool to get started.
+: Like this: The GI Bill Comparison Tool can help you compare benefits by school. Fill out the tool to get started.
 
 **gravesite**
 : Style this as 1 word. (Merriam-Webster doesn't address whether this should be 1 or 2 words, but the Gravesite Locator and Arlington National Cemetery both style it as 1 word. In addition, the following related words do appear in Merriam-Webster as 1 word: graveside and gravestone.)
@@ -366,8 +407,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use the gender-neutral term, "Guard member," instead of Guardsman/Guardsmen on VA.gov. Capitalize "Guard."
 
 **Gulf War Illness**
-: Capitalize "Illness." Per NIH, this is also sometimes called "chronic multisymptom illness." Note: "Gulf War Syndrome" is the former name, and is no longer used. When needed for clarity or SEO, include the former term on first mention. 
-: - Like this: Gulf War Illness (known in the past as Gulf War Syndrome)
+: Capitalize "Illness." Per NIH, this is also sometimes called "chronic multisymptom illness."
+: **Note:** "Gulf War Syndrome" is the former name, and is no longer used. When needed for clarity or SEO, include the former term on first mention. 
+: Like this: Gulf War Illness (known in the past as Gulf War Syndrome)
 
 ### H
 
@@ -379,10 +421,11 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **health care**
 : Two words, never hyphenated as a compound adjective (for example, “health care system"). Lowercase unless it's part of the official name of a VA medical center. 
-: - Exception: Defer to the VA medical center's official name, which may have health care as 1 word versus 2 words.
+: **Exception:** Defer to the VA medical center's official name, which may have health care as 1 word versus 2 words.
 
 **Higher-Level Review decision**
-: Lowercase "decision." Note: A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
+: Lowercase "decision."
+: **Note:** A Veteran “requests” a Higher-Level Review, a Board Appeal, or a decision review. We don’t say “apply” or “file” for a Higher-Level Review, a Board Appeal or a decision review.
 
 **home loan**
 : Don't use a hyphen even when used as an adjective.
@@ -426,7 +469,6 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **intent to file** 
 : Lowercase in almost all cases unless referencing the full form name. Don’t use “ITF” or the phrase “file your intent to file.” 
-
 : - Like this: Fill out your intent to file form. 
 : - Like this: Submit your intent to file.
 
@@ -441,7 +483,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### K
 
 **Korean Demilitarized Zone (DMZ)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 ### L
 
@@ -481,10 +523,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Go to entry for "can."
 
 **Military Occupation Code (MOC)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Million Veteran Program (MVP)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **MISSION Act**
 : Use the official short title, VA MISSION Act, instead of the abbreviated or full name. (The full name of the bill is the "John S. McCain III, Daniel K. Akaka, and Samuel R. Johnson VA Maintaining Internal Systems and Strengthening Integrated Outside Networks Act of 2018.")
@@ -492,11 +534,16 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **mobile phone**
 : Use mobile phone when referencing a device for talking and texting, with or without internet connectivity. Don’t use cell phone or cellular phone. You can also use “mobile device” to reference tablets or mobile phones more generally. For related information, go to the entry for "smartphone."
 
+**Montgomery GI Bill**
+: We shouldn’t use a shortened “Montgomery GI Bill” to indicate both Active Duty and Selected Reserve. Instead write out the full name of both benefits.
+
 **Montgomery GI Bill Active Duty (MGIB-AD)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Include “MGIB-AD” and “Chapter 30” on first mention. For example, “Montgomery GI Bill Active Duty (MGIB-AD), or Chapter 30.” It’s OK to use “MGIB-AD” for any following instances. We usually advise that we can use an acronym by itself after the first mention of the full name. But we should balance that guidance with how often we use an acronym on a single page to be sure we don’t overuse it. Try to find a balance between using the full name and the acronym.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Montgomery GI Bill Selected Reserve (MGIB-SR)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Include “MGIB-SR” and “Chapter 1606” on first mention. For example, “Montgomery GI Bill Selected Reserve (MGIB-SR), or Chapter 1606.” It’s OK to use “MGIB-SR” for any following instances. We usually advise that we can use an acronym by itself after the first mention of the full name. But we should balance that guidance with how often we use an acronym on a single page to be sure we don’t overuse it. Try to find a balance between using the full name and the acronym.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **multifactor authentication (MFA)**
 : Use this term instead of "2-factor authentication." Multifactor is 1 word. No hyphen. 
@@ -507,16 +554,24 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### N
 
 **National Cemetery Administration (NCA)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **National Guard**
 : Can also use "Guard."
 
+**national tests**
+: We use “national tests” rather than “national exams” because we know from SEO data that Veterans are searching for “tests” much more often than “exams.”
+: **Note:** VA.gov content differs from the PDF form that uses “national exams.”
+
 **Native American direct loan (NADL)**
-: Lowercase "direct loan." Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: Lowercase "direct loan."
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **new claim**
 : Define on first mention in body copy as "a claim for added benefits or other benefit requests related to an existing service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
+
+**non-qualifying period of service**
+: We use this term (and variations of it) to explain when a Veteran’s period of service doesn’t count toward their GI Bill eligibility requirements.
 
 **non-traditional**
 : Hyphenate when preceding and modifying a noun.
@@ -528,7 +583,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Used to call special attention to something. It should be bolded and never in all caps. Use a colon following "Note."
 
 **Notice of Disagreement (NOD)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **number**
 : Spell out this word. Don't abbreviate to "No." or "#."
@@ -537,6 +592,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **original claim**
 : Define on first mention in body copy as "your first claim for disability compensation." Include definition in another sentence, as a parenthetical, or set off with commas.
+
+**overpayment or overpayment debt**
+: We use this term to refer to a debt that’s because of an overpayment. In some cases, we can go with “overpayments” (and not add “overpayment debts”). Debt can be a sensitive topic. Refer to our Payments and debts section of the style guide for more information about how to write about debt.
+: [Go to the Payments and debts section](https://design.va.gov/content-style-guide/specific-topics-and-programs/payments-and-debts)
 
 ### P
 
@@ -547,7 +606,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use "person living with," as in "person living with diabetes," instead of "diabetes patient."
 
 **pension management center**
-: Capitalize only if part of the formal name of a center. Example: Get more information about the Philadelphia VA Pension Management Center. Find the VA pension management center that serves the state you live in.
+: Capitalize only if part of the formal name of a center. For example: "Get more information about the Philadelphia VA Pension Management Center" and "Find the VA pension management center that serves the state you live in."
 
 **percent**
 : Use the symbol % rather than spelling it out, for scannability.
@@ -561,6 +620,10 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Persian Gulf War era**
 : Lowercase "era."
 
+**Personalized Career Planning and Guidance (PCPG)**
+: Include “Chapter 36” on first mention. For example, “Personalized Career Planning and Guidance (PCPG), or Chapter 36.”
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
+
 **Philippines**
 : Use “Philippines” (without "the") in a list. Use “the Philippines” in the context of a paragraph (like “If you served in the Philippines”).
 
@@ -571,7 +634,13 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Don't use periods.
 
 **post-9/11**
-: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11). Example: Post-9/11 GI Bill. In cases when "post-9/11" stands alone rather than as part of a program name, it should be lowercase. 
+: Hyphenate. We use the slash rather than the hyphen for 9/11 (not 9-11).
+: **Example:** Post-9/11 GI Bill. In cases when "post-9/11" stands alone rather than as part of a program name, it should be lowercase.
+
+**Post-9/11 GI Bill (PGIB)**
+: Include “PGIB” and “Chapter 33” on first mention. For example, “Post-9/11 GI Bill (PGIB), or Chapter 33.” It’s OK to use “PGIB” for any following instances. We usually advise that we can use an acronym by itself after the first mention of the full name. But we should balance that guidance with how often we use an acronym on a single page to be sure we don’t overuse it. Try to find a balance between using the full name and the acronym.
+: **Note:** PGIB is a new acronym (as of 2024) and we are working to include it site-wide.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **postservice**
 : No hyphen.
@@ -584,6 +653,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **pre-discharge**
 : Use a hyphen.
+
+**preparatory courses or prep courses**
+: Use “preparatory courses” on the first mention. The shorter "prep courses" is OK for any following mentions. Preparatory courses help Veterans prepare for licensing and certification tests.
 
 **preseparation**
 : No hyphen.
@@ -599,15 +671,19 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **presumptive disability**
 : Use "health problem" and reference when needed for clarity. 
-: - Like this: A health problem (called presumptive disability) that we've concluded is likely caused by....
+: Like this: A health problem (called presumptive disability) that we've concluded is likely caused by....
+
+**Primary Family Caregiver**
+: This role is capitalized since it’s considered a proper noun. “Caregiver” by itself is lowercase.
 
 **prisoner of war (POW)**
-: Lowercase per the [Department of Defense military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243). 
-: - Like this: You may be eligible for benefits as a former prisoner of war (POW).
+: Lowercase per the Defense Department (DOD) military dictionary. 
+: Like this: You may be eligible for benefits as a former prisoner of war (POW).
+: [Learn more in the DOD military dictionary](https://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=4243)
 
 **process (a claim)**
-:  When using as a verb, use "review" instead. 
-: - Like this: We'll review your disability claim.
+: When using as a verb, use "review" instead. 
+: Like this: We'll review your disability claim.
 
 **Project 112/SHAD**
 
@@ -618,17 +694,23 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **PTSD**
 : posttraumatic stress disorder (no hyphen), per the National Center for PTSD. In body copy, we reference the full spelling with “(PTSD)” after it. On subsequent mentions in body copy, we use PTSD by itself. 
-
 : - First instance in body copy: posttraumatic stress disorder (PTSD)
 : - After first instance in body copy: PTSD
 : - Exception for page titles: If the spelled-out term is too long in a page title (H1) or meta title tag, it’s OK to use PTSD by itself, and then use the full spelling with the acronym in the first instance of body copy.
 
 ### Q
 
+**qualify**
+: We use both “qualify” and “eligible” when referring to benefits someone may be able to get.
+
 ### R
 
 **regional office**
 : Use instead of "regional benefit office." Go to entry for "VA regional office" for details.
+
+**relinquish your benefits**
+: Include the plain language definition (“give up your right to use your benefits”) on first mention. For example, “Even if you gave up your right to use MGIB-AD benefits in the past (we call this “relinquishing” your benefits), you may now qualify to use some of that entitlement.”
+: **Note:** This is not evergreen content as it’s connected to the Rudisill Supreme Court decision.
 
 **required by law and not allowed by law**
 : These are our preferred terms to describe a legal requirement or something that is against the law.
@@ -646,7 +728,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Don't use accent marks when referring to the noun, as in a job resume.
 
 **retroactive**
-: Provide contextual information to help define, as relevant in the specific situation. Example: Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury.
+: Provide contextual information to help define, as relevant in the specific situation.
+: **Example:** Can I get retroactive TSGLI for a past injury? You may be able to get retroactive TSGLI that takes effect starting from the date of your injury.
 
 **review option**
 : A Veteran selects from one of the available review options when they request a decision review. The 3 review options are Supplemental Claim, Board Appeal, and Higher-Level Review. 
@@ -655,6 +738,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Lowercase. Person who reviews Supplemental Claims. (As opposed to a senior reviewer, who reviews Higher-Level Reviews.)
 
 ### S
+
+**Secondary Family Caregiver**
+: This role is capitalized since it’s considered a proper noun. “Caregiver” by itself is lowercase.
 
 **secondary service-connected claim**
 : Define on first mention in body copy as "a claim for a new disability that's linked to a service-connected disability you already have." Include definition in another sentence, as a parenthetical, or set off with commas.
@@ -671,7 +757,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Like this (not modifying a noun): The disability is considered service connected.
 
 **service-connected condition**
-: Define in body copy as an "illness or injury caused—or made worse by—active-duty service." Can define in another sentence, as a parenthetical, or set off with commas.  For example: "A service-connected condition is an illness or injury caused—or made worse by—your active-duty service."
+: Define in body copy as an "illness or injury caused—or made worse by—active-duty service." Can define in another sentence, as a parenthetical, or set off with commas. For example: "A service-connected condition is an illness or injury caused—or made worse by—your active-duty service."
 
 **service-connected disability**
 : In most cases, add the definition separately as another sentence or a note below a bulleted list. For example: "Having a service-connected disability means we've concluded that you're disabled because of an illness or injury caused—or made worse—by your active-duty service."
@@ -680,20 +766,23 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : In most cases, use "disability rating" instead for simplicity. Although using the full phrase is not wrong.
 
 **Service-Disabled Veterans Insurance (S-DVI)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **service member**
 : Two words, lowercase. This follows the Department of Defense style guide as well as guidance from the VA Office of Public and Intergovernmental Affairs (OPIA). 
-: - Exception: When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
+: **Exception:** When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
 
 **Servicemembers’ Group Life Insurance (SGLI)**
-: Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member."
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Servicemembers’ Group Life Insurance Disability Extension (SGLI-DE)**
-: Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member."
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Servicemembers’ Group Life Insurance Traumatic Injury Protection (TSGLI)**
-: Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member." Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Note that the word Servicemembers’ is plural with a plural possessive apostrophe. Because this is a proper noun, we follow the "Servicemember" spelling here, instead of our house style, "service member."
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **sign in, sign out**
 : Don't use log in/log out, login ID, or sign on.  
@@ -710,20 +799,26 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 **sponsor**
-: We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It’s OK to use the word sponsor but lead with the plain language definition. Example: the Veteran you’re connected to (called your “sponsor”). Go to [Claims and applications]({{ site.baseurl }}/content-style-guide/specific-topics-and-programs/claims-and-applications) for more guidance related to this word. 
+: We use this word in forms and other content to refer to the Veteran who earned the benefits that a family member may be using. It’s OK to use the word sponsor but lead with the plain language definition.
+: **Example:** the Veteran you’re connected to (called your “sponsor”).
+: [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications)
+
+**spouse**
+: We use “surviving spouse” if the Veteran has died. We use “spouse” if the Veteran is living (we don’t use “dependent spouse”). Use this construction if you’re referring to both spouse and child: “spouse and dependent child” (not “dependent spouse and child”).
 
 **Statement of the Case**
 : Capitalize.
 
 **substantially gainful employment**
 : Provide a definition or note when using this term. 
-: - Like this: You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment) don’t count.
+: Like this: You can’t hold down a steady job that supports you financially (known as substantially gainful employment) because of your service-connected disability. Odd jobs (marginal employment) don’t count.
 
 **suicide**
 : When posing as a question for the Veteran, phrase as "Are you thinking of hurting yourself or others?" Don't use "Are you having thoughts of suicide?"
 
 **Supplemental Claim**
-: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied." Note: A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
+: Define on first mention in body copy as "providing new evidence to support a disability claim that was denied."
+: **Note:** A Veteran "files" a Supplemental Claim, not "requests" a Supplemental Claim.
 
 **Supplemental Claim decision**
 : Lowercase "decision."
@@ -740,7 +835,8 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### T
 
 **terminal illness**
-: When this term is used as part of eligibility information for a benefit such as hospice care or life insurance, include a plain language definition of the term. Example: "terminal illness (a condition that can't be treated)."
+: When this term is used as part of eligibility information for a benefit such as hospice care or life insurance, include a plain language definition of the term.
+: **Example:** "terminal illness (a condition that can't be treated)."
 
 **total disability, permanent and total disability**
 :  Define a "total disability" as "a disability that we've rated as 100% disabling," and define "permanent and total disability" as "a disability that we've rated as 100% disabling and that's not expected to improve." Include definition in another sentence, as a parenthetical, or set off with commas.
@@ -754,7 +850,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Uniformed services refers to the Armed Forces plus these 2 branches: the National Oceanic and Atmospheric Administration and the Public Health Service. Also refer to the "Armed Forces" entry.
 
 **upload**
-: Use the word "upload" instead of "add." For example, "Upload file" and "Upload another file."
+: For file uploads, use “upload” instead of “add.” For example, “Upload file” and “Upload another file.” We can use “add” for other actions within a form, like “Add dependents.”
 : [Learn more in the Files pattern]({{ site.baseurl }}/patterns/ask-users-for/files)
 
 **U.S.**
@@ -766,8 +862,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 ### V
 
 **VA**
-: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. Go to entry for "Department of Veterans Affairs" for full guidance. 
-
+: Don't use "the" before VA when it's used as a noun. However, when VA serves as an adjective, use the article where appropriate. Go to entry for "Department of Veterans Affairs" for full guidance.
 : - As a noun: VA announced today that...   
 : - As a noun phrase ("VA facilities"): Some VA facilities in Texas are affected by Hurricane Florida.
 : - As an adjective (modifying "task force"): The VA task force announced today...
@@ -791,7 +886,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **VA regional office**
 : Use "VA regional office" instead of "VA regional benefits office." "Regional Office" should be capitalized only if a specific name is included in the title.
-: - Like this: The Buffalo Regional Office (RO) is 1 of 4 regional processing centers nationwide that process education claims.
+: Like this: The Buffalo Regional Office (RO) is 1 of 4 regional processing centers nationwide that process education claims.
 
 **vesicant agents**
 : Use "vesicant (blistering) agents."
@@ -799,28 +894,36 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Vet Center**
 : Capitalize "Center."
 
+**VET TEC 2.0**
+: “VET TEC” is 2 words, all capitalized. This is a 2-year pilot program that eligible Veterans and active-duty service members will be able to start applying for in 2026. If a Veteran or service member wants to develop their skills to start or advance a career in a high-tech industry, this program will match them with a leading training provider.
+
 **Veteran**
 : On VA.gov, capitalize even when used as a common noun. When possible, recast sentences into a more conversational tone. Use the second person point of view to speak directly with Veterans, rather than referring to them in the third person.
 : -	OK: Learn about services and benefits that we offer to Veterans and their families.
 : -	Better: Learn about VA services and benefits that you and your family may be eligible for.
 
 **Veteran Health Identification Card (VHIC)**
-: Note that "Veteran" is singular. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: Note that "Veteran" is singular.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veteran ID Card (VIC)**
-: Capitalize when referring to the [ID card](https://www.va.gov/records/get-veteran-id-cards/vic/) that allows Veterans discounts at many businesses. Note that "Veteran" is singular. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: Capitalize when referring to the [ID card](https://www.va.gov/records/get-veteran-id-cards/vic/) that allows Veterans discounts at many businesses. Note that "Veteran" is singular.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veteran-owned small business (VSOB)**
-: Lowercase all words except "Veteran" when the term is spelled out. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: Lowercase all words except "Veteran" when the term is spelled out.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veteran Readiness and Employment (VR&E)**
-: Capitalize as the full name of the program. This used to be called Vocational Rehabilitation and Employment, and we have places where we reference the old name and say "formerly known as." We also reference the shortened version of the old name: "voc rehab." Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: Capitalize as the full name of the program. Include both the acronym and “Chapter 31” on first mention. For example, “Veteran Readiness and Employment (VR&E), or Chapter 31.” VA used to call this program Vocational Rehabilitation and Employment, and we have places where we reference the former name and say, “formerly known as Vocational Rehabilitation and Employment.” We do this for certain terms that have changed to help Veterans recognize the program name from potentially outdated materials or signage in facilities. We also reference the shortened version of the former name: “voc rehab.” 
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans Affairs**
 : "Veterans" doesn't take an apostrophe. Go to the entries "VA" and "Department of Veterans Affairs."
 
 **Veterans Benefits Administration (VBA)**
-: "Benefits" is plural. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: "Benefits" is plural.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans cemetery**
 : "Veterans" doesn't take an apostrophe, and "cemetery" is lowercase except when part of the official name of a cemetery.
@@ -828,19 +931,22 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : - Or when used in a proper noun: The Hawaii State Veterans Cemetery is located in Kaneohe, Hawaii.
 
 **Veterans Crisis Line (VCL)**
-: "Veterans" doesn't take an apostrophe. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: "Veterans" doesn't take an apostrophe.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans’ Educational Assistance Program (VEAP)**
-: "Veterans’" takes a plural possessive apostrophe. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: "Veterans’" takes a plural possessive apostrophe.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans Employment Center™ (VEC)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans’ Group Life Insurance (VGLI)**
-: "Veterans’" takes a plural possessive apostrophe. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: "Veterans’" takes a plural possessive apostrophe.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans Health Administration (VHA)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using acronyms on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans Job Bank**
 : "Veterans" is plural.
@@ -849,21 +955,28 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Capitalize. Can use lowercase "judge" on subsequent mentions in body copy instead of the full formal term.
 
 **Veterans’ Mortgage Life Insurance (VMLI)**
-: "Veterans’" takes a plural possessive apostrophe. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: "Veterans’" takes a plural possessive apostrophe.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Veterans Pension**
 : "Veterans" doesn't take an apostrophe. Lowercase "pension" when writing "VA pension." 
 
 **Veterans Service Organization (VSO)**
-: "Veterans" is plural and doesn't take an apostrophe. Don't use VSO to reference a Veterans Service Officer. Instead use Veterans Service Organization representative. Or VSO representatitve. Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: "Veterans" is plural and doesn't take an apostrophe. Don't use "VSO" to reference a Veterans Service Officer. Instead use Veterans Service Organization representative. Or VSO representatitve.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **Vietnam Era**
 : Capitalize Era in Vietnam Era. But lowercase "era" when you include "War" in the term ("Vietnam War era"). Go to entry for "era" for additional explanation.
 
 **Vocational Rehabilitation Counselor (VRC)**
-: Go to [Abbreviations and acronyms]({{ site.baseurl }}/content-style-guide/abbreviations-and-acronyms) for guidance on using abbreviations on VA.gov.
+: [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 ### W
+
+**waiver (debt forgiveness)**
+: Include “(debt forgiveness)” on first mention. We use this term to describe a debt repayment or relief option in which a Veteran asks us to forgive (or “waive”) part or all of a debt. 
+: **Note:** Waivers are a debt repayment or relief option for both overpayment and copay debt. Other options include compromise offers, monthly offsets (overpayment debt only), monthly repayment plans, waivers, and write-offs (copay debt only). Debt can be a sensitive topic. Refer to our Payments and debts section of the style guide for more information about how to write about debt. 
+: [Go to the Payments and debts section](https://design.va.gov/content-style-guide/specific-topics-and-programs/payments-and-debts)
 
 **Washington, DC**
 : Default to Washington, DC when referring to the location, the VAMC, or a regional office. In some cases, especially government contexts, "District of Columbia" is also fine ("the government of the District of Columbia"). 
