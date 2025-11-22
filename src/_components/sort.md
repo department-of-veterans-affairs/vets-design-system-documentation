@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: true
 web: true
 mobile-app: true
-intro-text: "This component reorders information so that users can find relevant information quickly and easily. "
+intro-text: "The Sort component reorders information alphabetically, chronologically, numerically, or by any other specified criteria to organize information in a way that makes it easier to analyze or interpret for the user."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
@@ -41,102 +41,52 @@ Add Storybook examples as necessary.
 
 ## Usage
 
-The Sort component can be used to reorder information alphabetically, chronologically, numerically, or by any other specified criteria. This allows information to be organized in a way that makes it easier to analyze or interpret for the user. 
-
 ### When to use search sort
 
 * **When users benefit from seeing information in a different order.** As a guideline, use Sort when there is more than one page of results or more than 10 items.
-    - Common contexts include the following:
-        - Medications
-        - Appointments
-        - Secure messages
-        - Claims
-        - History
 
 * **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. 
 
-<!--* **Use sort when there exist ways to sort by and when there is more than 3 results.** For example, sort can be used in these scenarios: 
-    - To find medication history alphabetically
-    - **Note:** User research is recommended to determine if Sort would be helpful or what criteria would be helpful in specific
-* **Sorting can be useful when there are lists of the following:**  
+* **Common contexts include the following:**
     - Medications
     - Appointments
     - Secure messages
     - Claims
-    - History 
-    
-    within a form
-    - on a search results page
-    - within a form AND viewing search results
-    - within a knowledge base such as Resources and support
-    - in a table
--->
+    - History
 
 ### When to consider something else
 
-* **When filtering would be more appropriate.** Sorting changes result order whereas filters narrow down results. 
 * **When order is not relevant.** If the order of data does not impact the results or interpretation, sorting is not necessary.
 * **When there's only one obvious order**. If there's only one meaningful or possible way to sort, leave this component out.
-
-<!--Explain which scenarios or user context where this component is not, or should not, be used.
-* **Not for these tasks.** Explain the user tasks where this component is not, or should not, be used.
-* **Use this instead.** Explain when another component should be used instead.-->
-
-### How this component works
-The Sort component uses the Select component as the foundation.
- 
-
-<!--Details the design decisions inherent to the component.-->
+* **When filtering would be more appropriate.** Sorting changes result order whereas filters narrow down results. 
 
 
 ## Behavior
+
+### How this component works
+The Sort component uses the Select component as the foundation with some design, content, and accessibility considerations locked in.
 
 ### Web
 
 * **Trigger.** User clicks the dropdown menu to open a list of sort options.
 * **Feedback.** Upon selection, the menu closes and the results automatically update (implicit submission). 
+* **Navigating sort options as a keyboard user** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
 * **Keyboard Focus** Upon selection, the focus stays on the sort component with the menu closed.
+* **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.  
 
-### Mobile
+**Why implicit submission?** Implicit submission was ultimately chosen as the submission behavior because `reason`.
 
-* The VA Mobile app does not currently have a use case for a standalone Sort component. Instead, the app uses a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. 
 
-<!--## Web and Mobile Parity
 
-Web 
-
-Mobile 
-
--->
-
-<!-- #### Choosing between web variations
-
-Help the designer and developer understand when to choose between any variations of this component.
 ### Mobile app
 
-Describe the key interactions for this component.
+* Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in mobile app experiences should still align with the sort options in their desktop counterparts.
+* The VA Mobile app does use a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. 
 
-#### Choosing between mobile variations
+### Placement
 
-Help the designer and developer understand when to choose between any mobile app variations of this component. -->
+* Sort should be placed above and aligned with the content that it affects.
 
-## Placement
-
-Sort should be placed above and aligned with the content that it affects.
-
-<!--
-Where the component appears visually, and if necessary to clarify, where it may appear in the source code. Can also comment on where the component is not to be placed -->
-
-<!-- ### Design principles
-
-* List of design or UX principles that this component is an example or or adheres to.
-
-### Instances of this component in production
-
-Images with captions that describe different instances of this component being used in production.
--->
-
-<!-- include component-example.html alt="Explain what is in the image." file="/images/components/component-name/filename.png" caption="Describe what this example image is depicting." --> 
 
 ## Code Usage
 This is the Code Usage section. Note that the header is inside this include.
@@ -157,8 +107,8 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest)`, then the desktop experience should use the same (as opposed to using something like `Fill date (newest)` and vice versa).
 * **Follow general sort option naming conventions.** A list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
     - **Alphabetically**
-        - Ascending (A-Z)
-        - Descending (Z-A)
+        - Ascending (A to Z)
+        - Descending (Z to A)
     - **Chronologically**
         - Newest to oldest
         - Oldest to newest
@@ -220,9 +170,6 @@ Follow these accessibility guidelines when sorting your search results:
 
 * **Provide clear error messages.** If there's an error applying a sort, show a clear message and announce it for screen reader users. Use simple, direct language. 
 
-* **Sort results are updated with the onChange event.** This means that when a user clicks a sort option, the search results will immediately update. This was done because [reason]. To prevent keyboard-only users from prematurely making a selection while navigating sort options...
-- (From Jeana) use an Aria live region and manage what is announced to the screen reader and determine where the focus goes after the state change
-- (From Jason) debounce/delay the onchange event to check for another option selection -->
 
 <!-- ## Related
 
