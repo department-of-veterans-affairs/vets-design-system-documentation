@@ -163,7 +163,4 @@ Here's what you'll need to apply:
 
 ## Links in lists
 
--	List items can be links in certain situations. But we don’t want to overwhelm people with a long list of links, if possible.
--	Not all items in a list need to be a link. It’s okay to have only 1 or 2 items in a list linked.
--	If every item in a list is a link, keep the list short (less than 7 items). Every link should go to a different location—don’t link to the same page multiple times in the list.
--	When a list item is a link, the entire list item must be part of the link. Don’t link just 1 or 2 words.
+{% include content/links-in-lists.md %}
