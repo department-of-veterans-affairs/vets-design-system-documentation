@@ -37,11 +37,11 @@ For lists with only a few items that have relevant links, add the links on a sep
   
 **Burial in a VA national cemetery includes these burial benefits:**
 
-- A gravesite in any of our national cemeteries with available space
+- A gravesite in any of our national cemeteries with available space<br>
   [Find a VA national cemetery](https://www.cem.va.gov/find-cemetery/)
 - Opening and closing of the grave
 - A burial liner provided by the government
-- A headstone or marker provided by the government
+- A headstone or marker provided by the government<br>
   [Learn about eligibility for Veterans headstones and markers](https://www.va.gov/burials-memorials/memorial-items/headstones-markers-medallions)
 - Perpetual (ongoing) care of the gravesite
 
@@ -92,15 +92,15 @@ When you have a list of brief items, make each of the list items a link. With th
 
 **We offer many health and wellness programs, like these:**
 
-- Nutrition and food services
+- Nutrition and food services<br>
   [Learn more about nutrition and food services](https://www.nutrition.va.gov/)
-- Tobacco and health
+- Tobacco and health<br>
   [Learn more about tobacco and health services](https://www.mentalhealth.va.gov/quit-tobacco/)
-- Weight management
+- Weight management<br>
   [Learn more about weight management services](https://www.move.va.gov/)
-- Women’s health
+- Women’s health<br>
   [Learn more about women’s health services](https://www.womenshealth.va.gov/)
-- Mental health
+- Mental health<br>
   [Learn more about mental health services](https://www.mentalhealth.va.gov/)
 
 </div>
