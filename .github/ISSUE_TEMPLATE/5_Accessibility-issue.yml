@@ -72,13 +72,13 @@ body:
       label: "Environment details"
       description: "Provide the operating system, browser, screen reader, and device where you saw the bug. If you can include multiple environments, it helps us triage and fix the issue faster."
       placeholder: |
-      Environment 1
-        - OS: macOS 14.6  
-        - Browser: Chrome 128.0.6613.121  
-        - Screen Reader: VoiceOver v14  
-        - Device: MacBook Air M2
-      Environment 2
-      ...   
+        Environment 1
+          - OS: macOS 14.6  
+          - Browser: Chrome 128.0.6613.121  
+          - Screen Reader: VoiceOver v14  
+          - Device: MacBook Air M2
+        Environment 2
+        ...   
     validations:
       required: true
 
