@@ -13,6 +13,8 @@
 - Submit VA Form 9 to the Board of Veterans’ Appeals, **or**
 - [Opt in to the decision review process](https://www.va.gov/decision-reviews/)
 
+---
+
 **Here are some examples of situations a coordinator can help you with:** 
 
 - You’re scheduled for a virtual hearing, but you never received a link to join the virtual hearing 
