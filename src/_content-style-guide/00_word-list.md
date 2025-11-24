@@ -761,8 +761,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use periods.
 
 **user**
-: In Veteran-facing content, avoid "user" or "users" and instead use "Veterans" or "people" (for a more general audience). "Users" can have a negative connotation and focuses only on how people are using our products.
-: **Note:** This guidance applies only to Veteran-facing applications, forms, and pages on VA.gov. On this design system documentation site, "user" is appropriate when referring to user research, user experience, user testing, and similar contexts.
+: We should avoid the term “user” or “users” and instead use “Veterans” or “people” (when referring to a more general audience). “Users” can have a negative connotation and focuses only on how people are using our products. This is a change that we’re working to address across our current content.
 
 ### V
 

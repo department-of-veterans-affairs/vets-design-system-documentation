@@ -68,7 +68,13 @@ Often, there are several colloquial names for a component, pattern, or template.
 
 #### [Links]({{ site.baseurl }}/content-style-guide/links)
 
-In-line links are acceptable for linking to components, patterns, and templates in VADS. These links don’t need to be on their own line.
+In-line links are acceptable for linking to components, patterns, and templates in VADS. These links don't need to be on their own line.
+
+#### [User vs. Veteran]({{ site.baseurl }}/content-style-guide/user-vs-veteran)
+
+In Veteran-facing content, avoid "user" or "users" and instead use "Veterans" or "people" (for a more general audience). "Users" can have a negative connotation and focuses only on how people are using our products.
+
+**Note:** This guidance applies only to Veteran-facing applications, forms, and pages on VA.gov. On this design system documentation site, "user" is appropriate when referring to user research, user experience, user testing, and similar contexts.
 
 #### [Plain language]({{ site.baseurl }}/content-style-guide/plain-language/)
 
