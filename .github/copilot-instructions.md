@@ -62,7 +62,7 @@ src/
 
 All content must follow the VA.gov Content Style Guide principles:
 - **Plain Language**: Use simple, clear language that Veterans can understand
-- **Veteran-First**: In Veteran-facing content, use "Veterans" or "people" instead of "users." Address Veterans as "you" and refer to VA as "we". In design system documentation, "user" is appropriate for user research, user experience, and user testing contexts.
+- **Veteran-First**: In Veteran-facing content, use "Veterans" or "people" instead of "users." Address Veterans as "you" and refer to VA as "we." In design system documentation, "user" is appropriate for user research, user experience, and user testing contexts.
 - **Consistent**: Use standardized terminology from the word list
 - **Accessible**: Write for screen readers and diverse literacy levels
 - **Conversational**: Avoid bureaucratic language and jargon
