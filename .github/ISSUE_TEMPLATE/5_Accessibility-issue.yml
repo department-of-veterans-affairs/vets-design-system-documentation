@@ -108,6 +108,12 @@ body:
       placeholder: "Describe what should happen per WCAG or VA standards."
 
   - type: textarea
+    id: evidence
+    attributes:
+      label: "Supporting evidence (screenshots, recordings, code snippets)"
+      placeholder: "Attach or link as needed."
+
+  - type: textarea
     id: related
     attributes:
       label: "Related issues or systemic notes"
