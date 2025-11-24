@@ -30,7 +30,7 @@ anchors:
 ## Examples
 
 ![service periods]({{site.baseurl}}/images/patterns/ask-users-for/service-history/branch-of-service.png)
-* [Simple Forms Patterns: Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch)
+* [Simple Forms Patterns: Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch?skip)
 
 ## How to design and build
 
@@ -41,7 +41,7 @@ Follow this pattern when you need to ask for information about their service per
 #### Structure
 
 * Heading. Use “Service periods” as the heading for this page.
-* [Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch) combo box input. Use autocomplete to allow users to select a branch. Use “Branch of service” as the field label.
+* [Branch of service](https://staging.va.gov/mock-simple-forms-patterns/service-branch?skip) combo box input. Use autocomplete to allow users to select a branch. Use “Branch of service” as the field label.
 * Service start date input. Use the memorable date component. Use “Service start date” as the field label.
 * Service end date input. Use the memorable date component. Use “Service end date” as the field label.
 
@@ -114,7 +114,7 @@ Follow this pattern whenever you need to ask for a Veteran’s Reserve or Nation
 Follow this pattern whenever you need to ask for a Veteran’s prisoner of war (POW) information. Former POWs are Veterans who, during active military service, were forcibly detained or interned in the line of duty by an enemy government or its agents or a hostile force.
 
 * **Don’t ask if the form doesn’t require POW information.** You should only ask about this information when absolutely necessary.  
-* **Depending on the form, use the multiple response pattern to add multiple periods of time held as a POW.** An example of adding multiple periods is in the [File for disability compensation form](https://staging.va.gov/disability/file-disability-claim-form-21-526ez/introduction).  
+* **Depending on the form, use the multiple response pattern to add multiple periods of time held as a POW.**
 * **When asking for dates, include hint text if this date can be an estimate.** 
 
 #### Structure
