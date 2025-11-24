@@ -7,13 +7,14 @@
     "design_intent_held": 10,
     "midpoint_review_held": 5,
     "staging_review_held": 15,
-    "products_shipped": 10,
+    "products_shipped": 0,
+    "avg_collab_cycle_time": 0,
     "total_staging_issues": 147,
     "launch_blocking_issues": 33,
     "launch_blocking_percentage": 22
   },
   "participating_teams": 22,
-  "generated_at": "2025-10-27T19:37:39.164Z",
+  "generated_at": "2025-11-20T22:50:56.283Z",
   "data_source": "va.gov-team repository",
   "description": "Governance metrics for 2025Q2"
 }

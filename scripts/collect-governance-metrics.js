@@ -206,7 +206,7 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
       'search', 'issues',
       '--repo', validated.repo,
       '--limit', '1000', // Max limit per page
-      '--json', 'number,title,state,createdAt,closedAt,labels,url'
+      '--json', 'number,title,state,createdAt,closedAt,labels,url,body'
     ];
     
     // Add label filters
@@ -242,7 +242,8 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
         created_at: issue.createdAt,
         closed_at: issue.closedAt,
         labels: issue.labels.map(l => l.name),
-        url: issue.url
+        url: issue.url,
+        body: issue.body
       }));
     } else {
       console.log(`  Found 0 matching issues`);
@@ -349,22 +350,64 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
     // Total touchpoints held is the sum of all three types
     const touchpointsHeld = designIntentHeld + midpointReviewHeld + stagingReviewHeld;
     
-    // 3. Products shipped - Issues with both "collaboration-cycle" and "staging-review" that were closed in this quarter
-    const stagingReviewIssues = await fetchIssuesInDateRange(
-      ['collaboration-cycle', 'staging-review'], 
-      quarter.startDate, 
-      quarter.endDate,
-      'closed'
-    );
-    const productsShipped = stagingReviewIssues.length; // All returned issues were closed within the quarter date range
-    
-    // 4. Total issues filed at Staging Review
-    const stagingIssues = await fetchIssuesInDateRange(
+    // 3. Get all staging-review finding issues created in this quarter
+    const stagingFindingIssues = await fetchIssuesInDateRange(
       ['CC-Dashboard', 'Staging', 'collab-cycle-feedback'], 
       quarter.startDate, 
-      quarter.endDate
+      quarter.endDate,
+      'created'
     );
-    const totalStagingIssues = stagingIssues.length;
+    
+    // Build a map of kick-off issue numbers to their milestone numbers and creation dates
+    const kickoffMap = new Map();
+    kickoffIssues.forEach(issue => {
+      if (issue.body) {
+        // Extract milestone number from body (e.g., "milestone/1473" -> 1473)
+        const milestoneMatch = issue.body.match(/milestone\/(\d+)/);
+        if (milestoneMatch) {
+          kickoffMap.set(issue.number, {
+            milestoneNumber: milestoneMatch[1],
+            createdAt: issue.created_at
+          });
+        }
+      }
+    });
+    
+    // Build a map of kick-off issue numbers to their earliest staging finding issue
+    const kickoffToStagingMap = new Map();
+    
+    stagingFindingIssues.forEach(stagingIssue => {
+      if (stagingIssue.body) {
+        // Extract all issue references from the staging issue body
+        // Matches patterns like: #12345, issues/12345, va.gov-team/issues/12345
+        const issueRefs = stagingIssue.body.match(/(?:#|issues\/)(\d+)/g);
+        
+        if (issueRefs) {
+          issueRefs.forEach(ref => {
+            const issueNumber = parseInt(ref.replace(/[^0-9]/g, ''), 10);
+            
+            // Check if this references a kick-off issue from this quarter
+            if (kickoffMap.has(issueNumber)) {
+              const existing = kickoffToStagingMap.get(issueNumber);
+              
+              // Keep only the earliest staging issue for each kick-off
+              if (!existing || new Date(stagingIssue.created_at) < new Date(existing.created_at)) {
+                kickoffToStagingMap.set(issueNumber, {
+                  created_at: stagingIssue.created_at,
+                  number: stagingIssue.number
+                });
+              }
+            }
+          });
+        }
+      }
+    });
+    
+    // Calculate products shipped (unique kick-off issues that have staging findings)
+    const productsShipped = kickoffToStagingMap.size;
+    
+    // 4. Total issues filed at Staging Review (use the staging finding issues we already fetched)
+    const totalStagingIssues = stagingFindingIssues.length;
     
     // 5. Launch-blocking issues at Staging Review
     const launchBlockingIssues = await fetchIssuesInDateRange(
@@ -403,7 +446,7 @@ async function getCurrentParticipatingTeams(startDate = null, endDate = null) {
   try {
     let searchDescription = 'currently open CC-Request kick-off issues';
     if (startDate && endDate) {
-      searchDescription = `CC-Request issues created between ${startDate} and ${endDate}`;
+      searchDescription = `CC-Request kick-off issues created between ${startDate} and ${endDate}`;
     }
     console.log(`Searching for ${searchDescription}...`);
     
@@ -582,7 +625,7 @@ function printQuarterDetails(quarterData) {
   console.log(`      - 🔄 Midpoint Review: ${quarterData.midpoint_review_held} (governance-team + midpoint-review labels)`);
   console.log(`      - 🚀 Staging Review: ${quarterData.staging_review_held} (governance-team + staging-review labels)`);
   console.log(`   🚢 Products Shipped: ${quarterData.products_shipped}`);
-  console.log(`      - Issues labeled with collaboration-cycle + staging-review closed in this period`);
+  console.log(`      - Unique kick-off issues that have at least one staging-review finding issue in this quarter`);
   console.log(`   ⚠️  Total Staging Issues: ${quarterData.total_staging_issues}`);
   console.log(`      - Issues labeled with CC-Dashboard + Staging + collab-cycle-feedback created in this period`);
   console.log(`   🚫 Launch Blocking Issues: ${quarterData.launch_blocking_issues}`);
