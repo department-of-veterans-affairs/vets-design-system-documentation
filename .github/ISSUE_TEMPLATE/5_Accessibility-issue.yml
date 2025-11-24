@@ -70,12 +70,15 @@ body:
     id: environment
     attributes:
       label: "Environment details"
-      description: "Provide OS, browser, screen reader, device, and version info in which you have encountered the bug."
+      description: "Provide the operating system, browser, screen reader, and device where you saw the bug. If you can include multiple environments, it helps us triage and fix the issue faster."
       placeholder: |
+      Environment 1
         - OS: macOS 14.6  
         - Browser: Chrome 128.0.6613.121  
         - Screen Reader: VoiceOver v14  
         - Device: MacBook Air M2
+      Environment 2
+      ...   
     validations:
       required: true
 
@@ -103,18 +106,6 @@ body:
     attributes:
       label: "Expected behavior / Acceptance criteria"
       placeholder: "Describe what should happen per WCAG or VA standards."
-
-  - type: textarea
-    id: other-sr
-    attributes:
-      label: "Second screen reader or browser verification"
-      description: "Check the same interaction in a second screen reader or browser and include your findings below. This helps us diagnose whether the issue is systemic (WCAG violation) or isolated to a specific AT/browser. That lets us give engineering the right direction and prevents unnecessary workarounds."
-      placeholder: "Example: Tested in NVDA 2024.1 with Firefox 130.0 on Windows 11 - issue also occurs. The button is not announced as interactive in either screen reader."
-  - type: textarea
-    id: evidence
-    attributes:
-      label: "Supporting evidence (screenshots, recordings, code snippets)"
-      placeholder: "Attach or link as needed."
 
   - type: textarea
     id: related
