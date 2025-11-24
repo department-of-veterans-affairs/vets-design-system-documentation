@@ -202,6 +202,8 @@ You must have received a discharge under conditions other than dishonorable to b
 
 **Note:** If you’re not eligible for VA education benefits based on your character of discharge, you can apply for a discharge upgrade.
 
+---
+
 Your monthly GI Bill payment may be less than your monthly rate for 1 of these reasons:
 
 - **You attended classes for only part of the month.** Classes often begin and end somewhere in the middle of a month, instead of on the first and last day of a month. So we’ll base your payment only on the part of the month you attend classes.<br>
@@ -215,6 +217,8 @@ Your monthly GI Bill payment may be less than your monthly rate for 1 of these r
 <div class="do-dont__content" markdown="1">
 
 You must have received a discharge under conditions other than dishonorable to be eligible for Veteran Readiness and Employment (VR&E) benefits. **Note:** If you’re not eligible for VA education benefits based on your character of discharge, you can apply for a discharge upgrade.
+
+---
 
 Your monthly GI Bill payment may be less than your monthly rate for 1 of these reasons:
 
