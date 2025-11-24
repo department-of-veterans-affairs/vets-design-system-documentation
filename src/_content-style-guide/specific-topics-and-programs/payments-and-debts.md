@@ -22,10 +22,12 @@ When we write about debt, we want to always communicate these things:
 
 **benefit overpayment (or overpayment)**
 : We use this term to describe when VA pays a Veteran too much money related to a VA benefit (such as disability, education, or pension benefits) and the Veteran now owes that money back to VA.
+
 : **Note:** Use "benefit overpayment" on first mention and "overpayment" for all subsequent mentions. "Overpayments" alone is OK for all instances with limited character counts.
 
 **balance (used with "debt balance" and "copay bill balance")**
 : We use this term to describe the remaining amount a Veteran owes on a debt or copay bill.
+
 : **Note:** We use this term mainly within the online debt portal itself.
 
 **benefit debt**
@@ -33,10 +35,12 @@ When we write about debt, we want to always communicate these things:
 
 **compromise offer**
 : We use this term to describe this specific debt repayment or relief option. A compromise offer means that the Veteran offers VA a lesser one-time lump sum amount as full payment.
+
 : **Note:** Compromise offers are a debt repayment or relief option for both benefit overpayment and copay debt. Other options include monthly repayment plans, monthly offsets (overpayment debt only), waivers, and write-offs (copay debt only).
 
 **copay (or copayment, or health care copay)** 
 : We use this term to describe the amount some Veterans pay for certain health care services and prescriptions. On first mention, include a plain language definition. For example, “You may need to pay a copay for outpatient care for conditions not related to your military service. A copay is a fixed amount you owe for the service.”
+
 : **Note:** Use "health care copay" on first mention in general content where the context of health care is necessary and then "copay" on subsequent mentions.
 
 **copay bill (or patient statement, or billing statement)** 
@@ -50,6 +54,7 @@ When we write about debt, we want to always communicate these things:
 
 **monthly offset** 
 : We use this term to describe when VA keeps (or "offsets") all or part of a Veteran's VA benefit payments each month to pay down a debt.
+
 : **Note:** Monthly offsets are a debt repayment or relief option for benefit overpayment debt. Other options include compromise offers, monthly repayment plans, and waivers.
 
 **outstanding debt** 
@@ -66,6 +71,7 @@ When we write about debt, we want to always communicate these things:
 
 **pay**
 : We use this term to describe paying a copay bill.
+
 : **Note:** We use the term "repay" to describe repaying an overpayment from VA. We use "make a payment" in both contexts.
 
 **pay down a debt**
@@ -73,24 +79,29 @@ When we write about debt, we want to always communicate these things:
 
 **repay** 
 : We use this term (instead of "pay") to describe repaying an overpayment from VA.
+
 : **Note:** We use the term "pay" to describe paying a copay bill. We use "make a payment" in both contexts.
 
 **repayment plan (or monthly repayment plan)**
 : We use this term to describe a debt repayment or relief option in which a Veteran pays a smaller amount each month to pay down a debt.
+
 : **Note:** Repayment plans are a debt repayment or relief option for both benefit overpayment and copay debt. Other options include compromise offers, monthly offsets (overpayment debt only), waivers, and write-offs (copay debt only).
 
 **waiver (debt forgiveness)**
 : Include “(debt forgiveness)” on first mention. We use this term to describe a debt repayment or relief option in which a Veteran asks VA to forgive (or "waive") part or all of a debt.
+
 : **Note:** Waivers are a debt repayment or relief option for both benefit overpayment and copay debt. Other options include compromise offers, monthly offsets (overpayment debt only), monthly repayment plans, waivers, and write-offs (copay debt only).
 
 **write-off**
 : We use this term to describe a debt repayment or relief option in which a Veteran asks VA to cancel a debt.
+
 : **Note:** Write-offs are a debt repayment or relief option for copay debt. Other options include compromise offers, monthly repayment plans, and waivers.
 
 ## Retired terms
 
 **benefit debt**
 : Previously we used this term to describe a debt related to VA benefits and to distinguish it from copay-related debt. We now refer to all benefit-related debts as "overpayments," as this is a less negative term.
+
 : **Note:** Use "overpayment" instead.
 
 ## Resources
