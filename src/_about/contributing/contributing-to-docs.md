@@ -70,7 +70,7 @@ Often, there are several colloquial names for a component, pattern, or template.
 
 In-line links are acceptable for linking to components, patterns, and templates in VADS. These links don't need to be on their own line.
 
-#### [User vs. Veteran]({{ site.baseurl }}/content-style-guide/user-vs-veteran)
+#### [User vs. Veteran]({{ site.baseurl }}/content-style-guide/word-list#user)
 
 In Veteran-facing content, avoid "user" or "users" and instead use "Veterans" or "people" (for a more general audience). "Users" can have a negative connotation and focuses only on how people are using our products.
 
