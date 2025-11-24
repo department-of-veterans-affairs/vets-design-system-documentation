@@ -1,14 +1,16 @@
 ---
 layout: content-style-guide
-title: Punctuation
+title: Punctuation and formatting
 intro-text: We follow standard American English and AP Style on VA.gov. This page explains the areas where we differ from AP Style.
 ---
 
-## Apostrophes
+## Punctuation
+
+### Apostrophes
 
 Use curly apostrophes (ex. don't) instead of straight ones (ex. don&apos;t).
 
-## Commas
+### Commas
 
 We use the serial comma, sometimes called the Oxford comma. This is the comma used before a conjunction in a sentence with a series of 3 or more items. Sometimes a person can misread a sentence without a serial comma.
 
@@ -31,7 +33,7 @@ In his acceptance speech, the actor thanked his parents, Martin Scorsese and Rob
 </div>
 </div>
 
-## Contractions
+### Contractions
 
 We use contractions on VA.gov to support our conversational, person-to-person voice and tone. Some situations might call for spelling out each word, like in certain legal content. But in general, we use contractions.
 
@@ -56,9 +58,9 @@ We are available Monday through Friday, 8:00 a.m. to 6:00 p.m. ET.
 </div>
 </div>
 
-## Em dashes, en dashes, and hyphens
+### Em dashes, en dashes, and hyphens
 
-### Em dash
+#### Em dash
 
 Use the em dash to set off an important clause, like you would with a parenthetical or commas, when commas might be awkward. Try not to overuse them. We don't add a space on either side of the em dash.
 
@@ -73,11 +75,11 @@ You may be eligible if you have an illness or injury caused&mdash;or made worse&
 </div>
 </div>
 
-### En dash
+#### En dash
 
 Avoid using en dashes since screen readers don't consistently announce them.
 
-### Hyphens
+#### Hyphens
 
 This is the short, single dash. We use it in names and to connect words that modify a noun. Hyphens are also OK to indicate ranges when space is limited. However, in normal body copy, use "to," "through," etc. to indicate ranges (like 2021 to 2022). We don't add a space on either side of the hyphen.
 
@@ -97,7 +99,7 @@ Merriam-Webster
 </div>
 </div>
 
-## Exclamation points
+### Exclamation points
 
 Don't use the exclamation point on VA.gov for any text elements (body copy, headers, subheaders, field labels, CTAs, etc.). It doesn't align with our voice and tone, which is conversational, helpful, and straightforward. We don't yell, and we're not hyperbolic or casual.
 
@@ -132,7 +134,7 @@ __You've successfully applied!__
 </div>
 </div>
 
-## Quotation marks
+### Quotation marks
 
 - Use curly quotation marks (ex. “quotation marks”) instead of straight ones (ex. &quot;quotation marks&quot;).
 - Periods and commas go inside the quotation marks, even if they’re not part of the quoted text. All other punctuation (em dashes, question marks, colons, parentheses) go outside the quotation marks unless they’re part of the quoted text.
@@ -171,14 +173,93 @@ What’s the difference between a “condition” and a “disability?”
 </div>
 </div>
 
-## Hint text and error message punctuation
+### Hint text and error message punctuation
 
-### Hint text in form fields
+#### Hint text in form fields
 
 - If the hint text has 1 or more full sentences, add a period at the end of each sentence
 - If the hint text is a sentence fragment, don’t add a period
 
-### Error messages
+#### Error messages in form fields
 
 - For error messages in individual form fields, don’t add a period at the end of the message unless it has 2 or more full sentences
 - For error messages that use the Alert component, add a period at the end of each sentence
+
+## Formatting
+
+### Notes
+
+-	Place notes on their own line directly after the text the note applies to.
+-	Capitalize and bold “**Note:**”.
+-	If a note applies to only 1 item in a list, place the note directly after that specific list item (not after the full list). Use a soft return (shift + enter on PCs, shift + return on Macs) so the note appears on a separate line, aligned with the list indent, with no space between the lines. Don’t make the note its own bullet or sub-bullet.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+You must have received a discharge under conditions other than dishonorable to be eligible for Veteran Readiness and Employment (VR&E) benefits.
+
+**Note:** If you’re not eligible for VA education benefits based on your character of discharge, you can apply for a discharge upgrade.
+
+Your monthly GI Bill payment may be less than your monthly rate for 1 of these reasons:
+
+- **You attended classes for only part of the month.** Classes often begin and end somewhere in the middle of a month, instead of on the first and last day of a month. So we’ll base your payment only on the part of the month you attend classes.<br>
+**Note:** Your monthly rate is based on a 30-day period. The rate for a month that has 31 days (like October) is the same as the rate for a month with 30 days (like September).
+- **We overpaid you at some point in the past.** If we discover an overpayment, we’ll need to pay you less for 1 or more payments.
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+You must have received a discharge under conditions other than dishonorable to be eligible for Veteran Readiness and Employment (VR&E) benefits. **Note:** If you’re not eligible for VA education benefits based on your character of discharge, you can apply for a discharge upgrade.
+
+Your monthly GI Bill payment may be less than your monthly rate for 1 of these reasons:
+
+- **You attended classes for only part of the month.** Classes often begin and end somewhere in the middle of a month, instead of on the first and last day of a month. So we’ll base your payment only on the part of the month you attend classes.
+  - **Note:** Your monthly rate is based on a 30-day period. The rate for a month that has 31 days (like October) is the same as the rate for a month with 30 days (like September).
+- **We overpaid you at some point in the past.** If we discover an overpayment, we’ll need to pay you less for 1 or more payments.
+
+</div>
+</div>
+</div>
+
+### Error messages in form fields
+
+- Make error messages for form fields sentence case and bold
+- Don’t place a period after the error message unless it has 2 or more sentences
+- In most cases, start error messages with a verb, like “Enter” (for text fields) or “Select” (for radio buttons, checkboxes, and dropdown menus)
+- If an error message references a specific checkbox, radio button, etc., use quotation marks 
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+
+**Select a country**
+
+**Enter a year between 1900 and the current year**
+
+**Select “Yes” or “No”**
+
+**Select “I acknowledge this information is correct”**
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+
+**Select a Country**
+
+Enter a year between 1900 and the current year.
+
+**Select yes or no**
+
+**Select I acknowledge this information is correct**
+
+</div>
+</div>
+</div>
