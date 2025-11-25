@@ -218,7 +218,7 @@ When the user is required to do something in response to an alert, let them know
 ## Content considerations
 
 * When possible, keep alert and error message titles (headings) to 50 characters, including spaces. Titles should follow the general guidelines for page and section titles.<br>
-[Learn more in the Page titles and sections titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
+[Learn more in the Page titles and section titles section of the content style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
 * Acknowledge when an issue is our fault. Don’t place blame on the person, even if the person's actions caused the error.<br>
 **Note:** We no longer say, “please” in alert and error messages when making a request.
 * People may not read documentation, but they’re more likely to read a message that helps them resolve an error. Include some educational material in your alert and error messages when needed.
