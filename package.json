@@ -60,7 +60,11 @@
     "tar": ">=6.2.1"
   },
   "dependencies": {
+<<<<<<< Updated upstream
     "@department-of-veterans-affairs/component-library": "^54.0.0",
+=======
+    "@department-of-veterans-affairs/component-library": "^54.2.0",
+>>>>>>> Stashed changes
     "@department-of-veterans-affairs/css-library": "^0.27.0",
     "@uswds/uswds": "^3.9.0"
   },
