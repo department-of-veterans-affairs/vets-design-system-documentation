@@ -1,5 +1,5 @@
 -	List items can be links in certain situations. But we don’t want to overwhelm people with a long list of links, if possible.
--	Not all items in a list need to be a link. It’s okay to have only 1 or 2 items in a list linked.
+-	Not all items in a list need to be a link. It’s OK to have only 1 or 2 items in a list linked.
 -	If every item in a list is a link, keep the list short (less than 7 items). Every link should go to a different location—don’t link to the same page multiple times in the list.
 -	If 1 link applies to all items in the list, add the link on a separate line after the list.
 
