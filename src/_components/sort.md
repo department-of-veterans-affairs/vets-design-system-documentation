@@ -119,11 +119,14 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
         - Shortest to longest
     - **Algorithmically**
         - Relevance
+
 **Note:** If a sort attribute is available, follow this naming convention:
     - [Sort attribute name] (general sort method)
             - For example, *Date entered (newest to oldest)*. This can be shortened to [Date entered] (newest) if needed. 
 
-<!-->
+
+
+<!--
 * **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.-->
 
 <!--**Quantity**
