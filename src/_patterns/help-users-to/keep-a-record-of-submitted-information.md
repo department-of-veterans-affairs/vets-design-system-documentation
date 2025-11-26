@@ -73,7 +73,7 @@ The pattern should load at the top of the page beneath the h1 in this order:
 
 #### On My VA
 
-* Include a link to download the form when available through the submission status on My VA. More on how to inmplement this pattern can be found on the [Help users... stay informed of their application pattern]({{site.baseurl}}/patterns/help-users-to/stay-informed-of-their-application-status#showing-form-submission-status-in-my-va)
+Include a link to download the form when available through the submission status on My VA. More on how to inmplement this pattern can be found on the [Help users... stay informed of their application pattern]({{site.baseurl}}/patterns/help-users-to/stay-informed-of-their-application-status#showing-form-submission-status-in-my-va)
 
 ### Components used in this pattern
 
