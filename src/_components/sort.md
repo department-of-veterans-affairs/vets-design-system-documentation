@@ -71,9 +71,9 @@ The Sort component uses the Select component as the foundation with some design,
 
 * **Trigger.** User clicks the dropdown menu to open a list of sort options.
 * **Feedback.** Upon selection, the menu closes and the results automatically update (implicit submission). 
-    * **Why implicit submission?** This behavior seems to be the most common and expected behavior. Additionally, from a [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) from Medications on VA.gov, "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reeader dependent user did mention missin things because of his speed".
-* **Navigating sort options as a keyboard user** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
-* **Keyboard Focus** Upon selection, the focus stays on the sort component with the menu closed.
+    * **Why implicit submission?** This behavior seems to be the most common and expected behavior. Additionally, from a [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) from Medications on VA.gov, "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reeader dependent user did mention missing things because of his speed".
+* **Navigating sort options as a keyboard user.** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
+* **Keyboard Focus.** Upon selection, the focus stays on the sort component with the menu closed.
 * **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.  
 
 
@@ -98,7 +98,6 @@ This is the Code Usage section. Note that the header is inside this include.
 * **Always provide a default sort option that users expect the most.** The default `- Select-` option should not be available to the user.
 * **Only include a sort option if it is relevant to the user.** For example, don't sort Medication history by the alphabetical order of comments from an open text field.
 * **Data should be able to be sorted both directions.** As a guideline, avoid sorting in only one direction. The opposite direction should be available to the user. This may be context-dependent.
-* **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.
 <!--
 Alpha sort would be "[Data label] (A to Z)" - i.e. Form name (A to Z)
 Date sort would be "[Data label] (newest)- i.e. Revision date (newest first)
@@ -120,9 +119,12 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
         - Shortest to longest
     - **Algorithmically**
         - Relevance
-    - **By sort attribute**
-        - [Sort attribute name] (general sort method)
-            - For example, *Date entered (newest to oldest)*. This can be shortened to [Date entered] (newest) for brevity. 
+**Note:** If a sort attribute is available, follow this naming convention:
+    - [Sort attribute name] (general sort method)
+            - For example, *Date entered (newest to oldest)*. This can be shortened to [Date entered] (newest) if needed. 
+
+<!-->
+* **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.-->
 
 <!--**Quantity**
             - Least to most
