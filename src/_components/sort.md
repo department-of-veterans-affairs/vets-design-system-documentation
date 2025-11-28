@@ -44,7 +44,6 @@ Add Storybook examples as necessary.
 ### When to use Sort
 
 * **When users benefit from seeing information in a different order.** As a guideline, use Sort when there is more than one page of results or more than 10 items.
-
 * **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. 
 
 <!--
@@ -61,33 +60,36 @@ Add Storybook examples as necessary.
 * **When there's only one obvious order**. If there's only one meaningful or possible way to sort, leave this component out.
 * **When the goal is to narrow results down**. Instead, use a [Filter]({{ site.baseurl }}/components/search-filter).
 
-
+<!--The Sort component uses the Select component as the foundation with some design, content, and accessibility considerations locked in.-->
 
 ## Behavior
 
-### How this component works
-The Sort component uses the Select component as the foundation with some design, content, and accessibility considerations locked in.
-
 ### Web
 
-* **Trigger.** User clicks the dropdown menu to open a list of sort options.
-* **Feedback.** Upon selection, the menu closes and the results automatically update (implicit submission). 
-    * **Why implicit submission?** This behavior seems to be the most common and expected. From a VA.gov Medications [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.), "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reeader dependent user did mention missing things because of his speed".
-* **Navigating sort options as a keyboard user.** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
-* **Keyboard Focus.** Upon selection, the focus stays on the sort component with the menu closed.
-* **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.  
+* **User clicks the dropdown (Select component) to open a list of sort options.** Alternatively, the user can arrow up and down the menu without entering the menu when the menu is focused. 
 
+* **Results automatically update upon selecting a sort option.**
+ This type of behavior was chosen over the option of allowing a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns) because this seems to be the most common and expected behavior. From a VA.gov Medications [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.)...
+> "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reeader dependent user did mention missing things because of his speed".
+
+Additional accessibility recommendations are defined in Accessibility Considerations.
+
+* **(TBD) A text description of the results should update with how many results are being shown.** The implementation should follow this format:
+> Showing 1-10 of results.
+
+
+
+### Placement
+
+* Sort should be placed above and aligned with the content that it affects.
 
 
 
 ### Mobile app
 
-* Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in mobile app experiences should still align with the sort options in their desktop counterparts.
+* Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in the mobile app experiences should still align with the sort options in their desktop counterparts.
 * The VA Mobile app does use a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. 
 
-### Placement
-
-* Sort should be placed above and aligned with the content that it affects.
 
 
 ## Code Usage
@@ -157,6 +159,10 @@ Bulleted list of content related instructions to the designer.
 * May be an include is shared with the Content style guide section.-->
 
 ## Accessibility considerations
+
+* **Navigating sort options as a keyboard user.** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
+* **Keyboard Focus.** Upon selection, the focus stays on the sort component with the menu closed.
+* **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.  
 
 ### Must
 
