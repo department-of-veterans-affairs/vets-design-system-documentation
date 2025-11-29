@@ -74,6 +74,8 @@ Add Storybook examples as necessary.
 
 Additional accessibility recommendations are defined in Accessibility Considerations.
 
+* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. 
+
 * **(TBD) A text description of the results should update with how many results are being shown.** The implementation should follow this format:
 > Showing 1-10 of results.
 
@@ -98,7 +100,7 @@ This is the Code Usage section. Note that the header is inside this include.
 
 ## Content considerations
 
-* **Always provide a default sort option that users expect the most.** The default `- Select-` option should not be available to the user.
+* **Always provide a default sort option that users would expect the most.** The default `- Select-` option should not be available to the user.
 * **Only include a sort option if it is relevant to the user.** For example, don't sort Medication history by the alphabetical order of comments from an open text field.
 * **Data should be able to be sorted both directions.** As a guideline, avoid sorting in only one direction. The opposite direction should be available to the user. This may be context-dependent.
 <!--
@@ -125,8 +127,21 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 **Note:** If a sort attribute is available, follow this naming convention:
     - [Sort attribute name] (general sort method)
-            - For example, *Date entered (newest to oldest)*. This can be shortened to [Date entered] (newest) if needed. 
+        - For example, *Date entered (newest to oldest)*. 
+    - (TBD) Avoid shortening the general sort.
+        -  For example *Date entered (newest to oldest)* should not be shortened to *Date entered (newest)*.
 
+* **(TBD) Avoid mixing and matching the two conventions.** For example, if the sort options are:
+- Newest to oldest
+- Oldest to newest
+- Remaining refills (least to most)
+- Remaining refills (most to least)
+
+Change the general options to specify the sort attribute. If there is no label for that attribute, create one for the sort option. The correct example should look like this:
+- Date prescribed (newest to oldest)
+- Date prescribed (oldest to newest)
+- Remaining refills (least to most)
+- Remaining refills (most to least)
 
 
 <!--
@@ -160,9 +175,9 @@ Bulleted list of content related instructions to the designer.
 
 ## Accessibility considerations
 
-* **Navigating sort options as a keyboard user.** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
+<!--* **Navigating sort options as a keyboard user.** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
 * **Keyboard Focus.** Upon selection, the focus stays on the sort component with the menu closed.
-* **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.  
+* **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.-->
 
 ### Must
 
