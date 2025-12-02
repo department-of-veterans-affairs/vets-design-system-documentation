@@ -130,21 +130,21 @@ Include this guidance in the "What to expect next" section or in its own section
 
 **Use parallel structure.** When listing multiple forms, use consistent sentence structure and formatting:
 
-**Good:**
+**Like this:**
 * Disability compensation claim (VA Form 21-526EZ)
 * Pension claim (VA Form 21P-527EZ)
 * Pension claim for survivors (21P-534EZ)
 
-**Avoid:**
+**Not this:**
 * Form 21-526EZ (disability compensation)
 * You might want to fill out Form 21-4140 to request increased evaluation  
 * Individual unemployability requires 21-8940
 
 **Be specific about requirements.** Don't use vague language about whether forms are needed:
 
-**Good:** "You must also complete Form 10-10EZ to enroll in VA health care."
+**Like this:** "You must also complete Form 10-10EZ to enroll in VA health care."
 
-**Avoid:** "You might need to fill out other forms depending on your situation."
+**Not this:** "You might need to fill out other forms depending on your situation."
 
 The content style guide contains more examples on how to mention forms on VA.gov
 * [Content style guide for government forms]({{ site.baseurl}}/content-style-guide/government-forms)
