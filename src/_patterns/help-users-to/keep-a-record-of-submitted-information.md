@@ -42,7 +42,7 @@ Note that breadcrumbs should be excluded from the print preview/final printout, 
 
 {% include component-example.html alt="An example My VA status card with download link" file="/images/patterns/help-users-to/stay-informed-of-their-application-status/myva-status-cards.png" width="75%" %}
 
-Note that download link includes the expiration date for the file download.
+Note that the download link includes the expiration date for the file download (60 days from submission, as described in the research findings below).
 
 ## How to design and build
 
