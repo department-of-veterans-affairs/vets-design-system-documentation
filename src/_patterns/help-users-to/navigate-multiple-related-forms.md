@@ -32,13 +32,13 @@ Use this pattern to guide Veterans through multi-form processes by:
 
 Some form submissions require Veterans to provide additional evidence to be submitted with their form. Use this pattern to guide Veterans on how to submit that evidence by:
 
-* Listing additional evidence or documentation that needs to be submitted to VA on the introduction page
+* Listing additional evidence or documentation the Veteran needs to submit to VA on the introduction page
 * Providing ways within the form for the user to submit digital copies of this evidence
-* Not preventing the user from submitting the form if they do not have these copies available - allow them to submit what they have and provide clear guidance on how to submit remaining documents later
+* Not preventing the user from submitting the form if they don't have the documents available—allow them to submit what they have and provide clear guidance on how to submit remaining documents later
 * Reminding users on the confirmation page of any additional information that needs to be submitted and how it can be submitted to VA
 
 
-#### When and where to point to other forms
+#### Where to mention related forms
 
 **On introduction pages.** Mention related forms upfront when:
 * Veterans need to gather additional documents or information before starting
@@ -50,7 +50,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 * Forms that become available after the primary form is processed
 * Required follow-up forms with specific deadlines
 * Optional supplemental forms that can enhance the application
-* Additional documentation that should be submitted as part of the form process
+* Additional documentation Veterans should submit as part of the form process
 
 
 ### When not to use this pattern
@@ -106,7 +106,7 @@ When mentioning related forms upfront, include this information in a clearly lab
 #### On confirmation pages when
 * The additional form becomes relevant only after the primary form is submitted
 * You need to provide specific deadlines or next-step timing
-* The form is optional and Veterans can decide later whether they need it
+* The additional form is optional, and you can decide later if you need it
 
 Include this guidance in the "What to expect next" section or in its own section labeled "What are my next steps?"
 
