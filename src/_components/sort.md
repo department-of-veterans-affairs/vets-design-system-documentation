@@ -74,7 +74,9 @@ Add Storybook examples as necessary.
 
 Additional accessibility recommendations are defined in Accessibility Considerations.
 
-* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. 
+<!--* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. -->
+
+* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the width is fixed--we recommended choosing a pre-defined size that fits the longest sort option to avoid truncation.
 
 * **(TBD) A text description of the results should update with how many results are being shown.** The implementation should follow this format:
 > Showing 1-10 of results.
