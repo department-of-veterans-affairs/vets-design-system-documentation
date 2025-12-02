@@ -63,33 +63,21 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 ### Introduction page preparation
 
-{% include component-example.html alt="Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="Example of mentioning related forms on an intro page to help Veterans prepare." class="x2" %}
+{% include component-example.html alt="Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="Example of mentioning related forms on an intro page to help Veterans plan ahead." class="x2" %}
 
 ### Confirmation page with required follow-up
 
-{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-required.png" caption="Example of a confirmation page directing Veterans to a required supplemental form with clear timing expectations." class="x2" %}
-
-In this example, the Veteran must complete an additional form to finalize their application. The guidance:
-* Uses clear, direct language about the requirement
-* Provides a timeline for when to complete it
-* Links to the online version of the form
-* Explains what happens if they don't complete it
+{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="Example of a confirmation page directing Veterans to a the next forms they should submit." class="x2" %}
 
 ### Confirmation page with optional forms
 
-{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-optional.png" caption="Example showing how to present optional forms that may enhance or expedite the Veteran's application." class="x2" %}
-
-This example shows how to present optional forms by:
-* Clearly labeling them as optional
-* Explaining the benefit of completing them
-* Using consistent formatting for multiple options
-* Providing both online and PDF options when appropriate
+{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="Example showing optional forms that Veteran may now complete because of the completion of this form." class="x2" %}
   
 ## How to design and build
 
 **Clearly distinguish required forms from optional forms.** Use explicit language like "You must also complete..." for required forms and "You may also want to submit..." for optional forms. Don't rely on visual cues alone.
 
-**Prioritize online experiences over PDFs.** When both online and PDF versions exist, default to linking to the online experience. Provide PDF links as secondary options or for users who specifically need them.
+**Prioritize online experiences over PDFs.** When both online and PDF versions exist, default to linking to the online experience. Links to PDFs can also be included as a secondary option to the online experience.
 
 **Provide clear sequencing when order matters.** If forms must be completed in a specific order, use numbered lists or process lists to make the sequence clear. If order is flexible, use bullet points and explain that flexibility.
 
@@ -109,13 +97,6 @@ This example shows how to present optional forms by:
 
 Decision framework for where to mention related forms
 
-#### On confirmation pages when
-* The additional form becomes relevant only after the primary form is submitted
-* You need to provide specific deadlines or next-step timing
-* The form is optional and Veterans can decide later whether they need it
-
-Include this guidance in the "What to expect next" section, after the primary confirmation message and before general next steps.
-
 #### On introduction pages when
 * Veterans need to prepare documents for multiple forms before starting
 * Multiple forms are part of one comprehensive application process
@@ -123,6 +104,14 @@ Include this guidance in the "What to expect next" section, after the primary co
 * The additional forms must be completed in a specific sequence
 
 When mentioning related forms upfront, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
+
+#### On confirmation pages when
+* The additional form becomes relevant only after the primary form is submitted
+* You need to provide specific deadlines or next-step timing
+* The form is optional and Veterans can decide later whether they need it
+
+Include this guidance in the "What to expect next" section or in its own section labeled "What are my next steps?". 
+
 
 ### Other patterns and templates used in this pattern
 
@@ -138,15 +127,15 @@ When mentioning related forms upfront, include this information in a clearly lab
 * [Additional info]({{ site.baseurl }}/components/additional-info) - For optional details about form purposes
 
 ## Content considerations
-
+  
 ### Writing clear form relationships
 
 **Use parallel structure.** When listing multiple forms, use consistent sentence structure and formatting:
 
 **Good:**
-* Complete Form 21-526EZ for disability compensation
-* Complete Form 21-4140 for increased evaluation
-* Complete Form 21-8940 for individual unemployability
+* Disability compensation claim (VA Form 21-526EZ)
+* Pension claim (VA Form 21P-527EZ)
+* Pension claim for survivors (21P-534EZ)
 
 **Avoid:**
 * Form 21-526EZ (disability compensation)
@@ -159,11 +148,12 @@ When mentioning related forms upfront, include this information in a clearly lab
 
 **Avoid:** "You might need to fill out other forms depending on your situation."
 
+The content style guide contains more examples on how to mention forms on VA.gov
+* [Content style guide for Government forms]({{ site.baseurl}}/content-style-guide/government-forms)
+
 ### Linking guidelines
 
 **Default to online experiences:** "Complete your Application for Health Care Benefits" (linking to online form)
-
-**Provide PDF alternatives clearly:** "If you can't complete the form online, you can download and mail VA Form 10-10EZ (PDF)."
 
 **Use descriptive link text:** Link text should clearly describe what the user will find, not generic phrases like "click here" or "this form."
 
