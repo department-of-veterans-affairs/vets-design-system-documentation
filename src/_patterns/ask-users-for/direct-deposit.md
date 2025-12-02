@@ -28,7 +28,7 @@ anchors:
 
 {% include component-example.html alt="Add direct deposit information." file="/images/patterns/ask-users-for/direct-deposit/form-22-10203-direct-deposit-20230608.png" caption="An example from form 22-10203, Apply for the Rogers STEM Scholarship, of collecting direct deposit information." class="x2" %}
 
-{% include component-example.html alt="Add direct deposit information in profile." file="/images/patterns/ask-users-for/direct-deposit/direct-deposit-in-profile.png" caption="How direct deposit information is collected in Profile." class="x2" reverse="true" %}
+{% include component-example.html alt="Add direct deposit information in profile." file="/images/patterns/ask-users-for/direct-deposit/direct-deposit-in-profile.png" caption="How direct deposit information is collected in profile." class="x2" reverse="true" %}
 
 ### Examples in production
 
@@ -86,20 +86,17 @@ Provide more information if Veterans do not have a bank account.
 
 {% include component-example.html alt="What if I don't have a bank account? additional information." file="/images/patterns/ask-users-for/direct-deposit/what-if-i-dont-have-a-bank-account.png" caption="An example using the additional information component to answer to the question of what Veterans can do if they do not have a bank account, also from the application for the Rogers STEM Scholarship." class="x2" %}
 
-<!--
 ## How to design and build - Review
 
 ![Direct deposit review state]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/Direct-deposit-review-state-small.png)
 
-
 #### Bank account information card
-The direct deposit information will live in the bank account information card. The card will have a short description on what the information below means, *“This is the bank account information we have on file for you. This is where we’ll send your payments.”*
-Under the description, the information will be displayed in the component similar to the [address block component.]({{ site.baseurl }}/components/address-block) 
+The direct deposit information will live in an editable bank account information card. 
+The card would include information that allows the user to identify their account, which includes bank name, routing number, and the type of account.
 Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the call to action button below.
 
 #### Call to action
-When the “update account information” button is clicked, the bank account information card will turn into an interactive card in which the review state will revert back into the input state.
--->
+When the “edit” button is clicked, the bank account information card will turn into change into the input state.
 
 ## Content considerations
 
