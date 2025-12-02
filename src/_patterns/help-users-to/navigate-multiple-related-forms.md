@@ -19,7 +19,7 @@ Some VA.gov form flows require Veterans to complete additional forms to accompli
 
 ### When to use this pattern
 
-#### When a Veteran's primary form submission leads to follow-up forms. 
+#### When a Veteran's primary form submission leads to follow-up forms
 
 Use this pattern to guide Veterans through multi-form processes by:
 
@@ -28,7 +28,7 @@ Use this pattern to guide Veterans through multi-form processes by:
 * Offering consistent linking strategies (online tools vs. PDFs)
 * Setting clear expectations about timing and next steps
 
-#### When a Veteran's primary form submission leads to follow-up actions.
+#### When a Veteran's primary form submission leads to follow-up actions
 
 Some form submissions require Veterans to provide additional evidence to be submitted with their form. Use this pattern to guide Veterans on how to submit that evidence by:
 
