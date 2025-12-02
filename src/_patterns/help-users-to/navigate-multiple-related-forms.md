@@ -40,7 +40,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 #### Where to mention related forms
 
-**On introduction pages.** Mention related forms upfront when:
+**On introduction pages.** Mention related forms up front when:
 * Veterans need to gather additional documents or information before starting
 * Multiple forms are part of a single application process
 * Understanding the full scope helps Veterans decide whether to proceed
@@ -101,7 +101,7 @@ Decision framework for where to mention related forms
 * Not knowing about additional forms would significantly impact the Veteran's decision to start
 * The additional forms must be completed in a specific sequence
 
-When mentioning related forms upfront, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
+When mentioning related forms up front, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
 
 #### On confirmation pages when
 * The additional form becomes relevant only after the primary form is submitted
@@ -147,7 +147,7 @@ Include this guidance in the "What to expect next" section or in its own section
 **Not this:** "You might need to fill out other forms depending on your situation."
 
 The content style guide contains more examples on how to mention forms on VA.gov
-* [Content style guide for government forms]({{ site.baseurl}}/content-style-guide/government-forms)
+* [Content style guide for government forms]({{ site.baseurl }}/content-style-guide/government-forms)
 
 ### Linking guidelines
 
