@@ -19,7 +19,7 @@ Some VA.gov form flows require Veterans to complete additional forms to accompli
 
 ### When to use this pattern
 
-#### When a Veteran's primary form submission leads to follow-up forms. 
+#### When a Veteran's primary form submission leads to follow-up forms
 
 Use this pattern to guide Veterans through multi-form processes by:
 
@@ -28,11 +28,11 @@ Use this pattern to guide Veterans through multi-form processes by:
 * Offering consistent linking strategies (online tools vs. PDFs)
 * Setting clear expectations about timing and next steps
 
-#### When a Veteran's primary form submission leads to follow-up actions.
+#### When a Veteran's primary form submission leads to follow-up actions
 
 Some form submissions require Veterans to provide additional evidence to be submitted with their form. Use this pattern to guide Veterans on how to submit that evidence by:
 
-* Listing additional evidence or documentation the Veteran needs to submit to VA on the introduction page
+* Listing additional evidence or documentation that the Veteran needs to submit to VA on the introduction page
 * Providing ways within the form for the user to submit digital copies of this evidence
 * Not preventing the user from submitting the form if they don't have the documents available—allow them to submit what they have and provide clear guidance on how to submit remaining documents later
 * Reminding users on the confirmation page of any additional information that needs to be submitted and how it can be submitted to VA
@@ -71,7 +71,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 ### Confirmation page with optional forms
 
-{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="Example showing optional forms that a Veteran may now complete because of the completion of this form." class="x2" %}
+{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="Example showing optional forms that a Veteran may now complete after completing this form." class="x2" %}
   
 ## How to design and build
 
@@ -105,8 +105,8 @@ When mentioning related forms upfront, include this information in a clearly lab
 
 #### On confirmation pages when
 * The additional form becomes relevant only after the primary form is submitted
-* You need to provide specific deadlines or next-step timing
-* The additional form is optional, and you can decide later if you need it
+* Veterans need to meet specific deadlines
+* The additional form is optional, and Veterans can decide later if they need it
 
 Include this guidance in the "What to expect next" section or in its own section labeled "What are my next steps?"
 
