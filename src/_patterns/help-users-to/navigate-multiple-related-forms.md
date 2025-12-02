@@ -67,11 +67,11 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 ### Confirmation page with required follow-up
 
-{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="Example of a confirmation page directing Veterans to a the next forms they should submit." class="x2" %}
+{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="Example of a confirmation page directing Veterans to the next forms they should submit." class="x2" %}
 
 ### Confirmation page with optional forms
 
-{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="Example showing optional forms that Veteran may now complete because of the completion of this form." class="x2" %}
+{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="Example showing optional forms that a Veteran may now complete because of the completion of this form." class="x2" %}
   
 ## How to design and build
 
@@ -110,7 +110,7 @@ When mentioning related forms upfront, include this information in a clearly lab
 * You need to provide specific deadlines or next-step timing
 * The form is optional and Veterans can decide later whether they need it
 
-Include this guidance in the "What to expect next" section or in its own section labeled "What are my next steps?". 
+Include this guidance in the "What to expect next" section or in its own section labeled "What are my next steps?"
 
 
 ### Other patterns and templates used in this pattern
@@ -149,7 +149,7 @@ Include this guidance in the "What to expect next" section or in its own section
 **Avoid:** "You might need to fill out other forms depending on your situation."
 
 The content style guide contains more examples on how to mention forms on VA.gov
-* [Content style guide for Government forms]({{ site.baseurl}}/content-style-guide/government-forms)
+* [Content style guide for government forms]({{ site.baseurl}}/content-style-guide/government-forms)
 
 ### Linking guidelines
 
