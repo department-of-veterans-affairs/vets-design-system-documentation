@@ -79,8 +79,6 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 **Prioritize online experiences over PDFs.** When both online and PDF versions exist, default to linking to the online experience. Links to PDFs can also be included as a secondary option to the online experience.
 
-**Provide clear sequencing when order matters.** If forms must be completed in a specific order, use numbered lists or process lists to make the sequence clear. If order is flexible, use bullet points and explain that flexibility.
-
 **Set realistic expectations about timing.** Tell Veterans when they should complete additional forms and what happens if they don't. Be specific about deadlines when possible.
 
 **Link to the right tools.** Direct Veterans to the most appropriate version of each form:
