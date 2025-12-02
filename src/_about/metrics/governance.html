@@ -38,14 +38,6 @@ To get the previous quarter, we extract the year and quarter number, then calcul
     {% assign touchpoints_percent = touchpoints_change | times: 100.0 | divided_by: previous_touchpoints | round %}
   {% endif %}
   
-  {% comment %} Calculate products shipped trend {% endcomment %}
-  {% assign current_products = latest_quarter_data.data.products_shipped %}
-  {% assign previous_products = previous_quarter_data.data.products_shipped %}
-  {% if previous_products > 0 %}
-    {% assign products_change = current_products | minus: previous_products %}
-    {% assign products_percent = products_change | times: 100.0 | divided_by: previous_products | round %}
-  {% endif %}
-  
   {% comment %} Calculate staging issues trend {% endcomment %}
   {% assign current_staging = latest_quarter_data.data.total_staging_issues %}
   {% assign previous_staging = previous_quarter_data.data.total_staging_issues %}
@@ -76,11 +68,7 @@ To get the previous quarter, we extract the year and quarter number, then calcul
 
   <!-- Summary Metrics Cards -->
   <section aria-labelledby="summary-heading">
-    <h2 id="summary-heading">Quarterly Summary 
-      {% if site.data.metrics.governance-index.latest_complete_quarter %}
-        ({{ site.data.metrics.governance-index.latest_complete_quarter }})
-      {% endif %}
-    </h2>
+    <h2 id="summary-heading">Summary</h2>
   
     <!-- Summary cards -->
     <div class="vads-l-row vads-u-justify-content--center">
@@ -105,19 +93,19 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       
       <div class="vads-l-col--12 medium-screen:vads-l-col--6 large-screen:vads-l-col--3">
         <va-card class="metric-card">
-        <h3 id="products-shipped-label">Products Shipped</h3>
-        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="products-shipped" aria-labelledby="products-shipped-label">
-          {% if latest_quarter_data.data.products_shipped != nil %}
-            {{ latest_quarter_data.data.products_shipped }}
+        <h3 id="staging-review-findings-label">Staging Review Findings</h3>
+        <div class="metric-value vads-u-font-size--xl vads-u-font-weight--bold" id="staging-review-findings" aria-labelledby="staging-review-findings-label">
+          {% if latest_quarter_data.data.total_staging_issues != nil %}
+            {{ latest_quarter_data.data.total_staging_issues }}
           {% else %}
-            8
+            0
           {% endif %}
         </div>
         {% include metric-trend.html
-           trend_id="products-shipped-trend"
-           aria_label="Products shipped trend indicator"
-           percent=products_percent
-           change=products_change
+           trend_id="staging-review-findings-trend"
+           aria_label="Staging review findings trend indicator"
+           percent=staging_percent
+           change=staging_change
            governance_index=governance_index %}
         </va-card>
       </div>
@@ -184,7 +172,11 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       {% endif %}
     </div>
     <div class="metrics-section">
-      <h3>Collaboration Cycle Activity by Quarter</h3>
+      <h3>Collaboration Cycle Activity by Quarter
+        {% if governance_index.latest_complete_quarter %}
+          (most recent: {{ governance_index.latest_complete_quarter }})
+        {% endif %}
+      </h3>
       <p>Shows governance activity including touchpoints completed, products shipped, and staging review issue patterns over time</p>
       
       <va-table id="governance-quarterly-va-table"
@@ -192,11 +184,10 @@ To get the previous quarter, we extract the year and quarter number, then calcul
                 stacked="true"
                 sortable="true"
                 table-type="borderless"
-                right-align-cols="1,2,3,4,5">
+                right-align-cols="1,2,3,4">
         <va-table-row slot="headers">
           <span>Quarter</span>
           <span>Touchpoints Held</span>
-          <span>Products Shipped</span>
           <span>Staging Issues</span>
           <span>Launch-Blocking Issues</span>
           <span>Launch-Blocking %</span>
@@ -212,7 +203,6 @@ To get the previous quarter, we extract the year and quarter number, then calcul
             <va-table-row>
               <span>{{ quarter_data.data.period }}</span>
               <span>{{ quarter_data.data.touchpoints_held }}</span>
-              <span>{{ quarter_data.data.products_shipped }}</span>
               <span>{{ quarter_data.data.total_staging_issues }}</span>
               <span>{{ quarter_data.data.launch_blocking_issues }}</span>
               <span>{{ quarter_data.data.launch_blocking_percentage }}%</span>
@@ -321,9 +311,8 @@ To get the previous quarter, we extract the year and quarter number, then calcul
       <h4>Metric Definitions</h4>
       <ul>
         <li><strong>Touchpoints Held:</strong> Total collaboration cycle touchpoints conducted by the governance team in the quarter. This is the sum of Design Intent reviews, Midpoint reviews, and Staging reviews (issues with "governance-team" label plus specific touchpoint type labels that were created in the quarter)</li>
-        <li><strong>Products Shipped:</strong> VFS team products that completed the full Collaboration Cycle process and reached Staging Review. This is calculated by counting unique kick-off issues (labeled "CC-Request" and "collaboration-cycle") that have at least one staging review finding issue (labeled "CC-Dashboard", "Staging", and "collab-cycle-feedback") created in the quarter that references the kick-off issue</li>
+        <li><strong>Staging Review Findings:</strong> Total feedback issues filed during Staging Review process with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback" created in the quarter. Each issue represents a specific finding or recommendation from the governance team</li>
         <li><strong>Avg Collab Cycle Time:</strong> The average number of days from when a kick-off issue is created to when the "staging-review" label is added to that issue. This metric is calculated across the entire fiscal year (not quarterly) using label timestamp data from the GitHub API. Shows FY2025 data (Oct 2024 - Sep 2025)</li>
-        <li><strong>Staging Issues:</strong> Total feedback issues filed during Staging Review process with labels "CC-Dashboard", "Staging", and "collab-cycle-feedback" created in the quarter</li>
         <li><strong>Launch-Blocking Issues:</strong> Critical staging review issues that must be resolved before product launch (staging issues that also have the "launch-blocking" label)</li>
         <li><strong>Launch-Blocking Percentage:</strong> The percentage of staging review issues that are classified as launch-blocking (launch-blocking issues ÷ total staging issues × 100)</li>
       </ul>

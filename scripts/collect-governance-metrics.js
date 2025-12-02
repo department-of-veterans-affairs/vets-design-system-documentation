@@ -206,7 +206,7 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
       'search', 'issues',
       '--repo', validated.repo,
       '--limit', '1000', // Max limit per page
-      '--json', 'number,title,state,createdAt,closedAt,labels,url,body'
+      '--json', 'number,title,state,createdAt,closedAt,labels,url'
     ];
     
     // Add label filters
@@ -242,8 +242,7 @@ async function fetchIssuesWithDateFilter(labels, startDate, endDate, filterBy = 
         created_at: issue.createdAt,
         closed_at: issue.closedAt,
         labels: issue.labels.map(l => l.name),
-        url: issue.url,
-        body: issue.body
+        url: issue.url
       }));
     } else {
       console.log(`  Found 0 matching issues`);
@@ -358,55 +357,7 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
       'created'
     );
     
-    // Build a map of kick-off issue numbers to their milestone numbers and creation dates
-    const kickoffMap = new Map();
-    kickoffIssues.forEach(issue => {
-      if (issue.body) {
-        // Extract milestone number from body (e.g., "milestone/1473" -> 1473)
-        const milestoneMatch = issue.body.match(/milestone\/(\d+)/);
-        if (milestoneMatch) {
-          kickoffMap.set(issue.number, {
-            milestoneNumber: milestoneMatch[1],
-            createdAt: issue.created_at
-          });
-        }
-      }
-    });
-    
-    // Build a map of kick-off issue numbers to their earliest staging finding issue
-    const kickoffToStagingMap = new Map();
-    
-    stagingFindingIssues.forEach(stagingIssue => {
-      if (stagingIssue.body) {
-        // Extract all issue references from the staging issue body
-        // Matches patterns like: #12345, issues/12345, va.gov-team/issues/12345
-        const issueRefs = stagingIssue.body.match(/(?:#|issues\/)(\d+)/g);
-        
-        if (issueRefs) {
-          issueRefs.forEach(ref => {
-            const issueNumber = parseInt(ref.replace(/[^0-9]/g, ''), 10);
-            
-            // Check if this references a kick-off issue from this quarter
-            if (kickoffMap.has(issueNumber)) {
-              const existing = kickoffToStagingMap.get(issueNumber);
-              
-              // Keep only the earliest staging issue for each kick-off
-              if (!existing || new Date(stagingIssue.created_at) < new Date(existing.created_at)) {
-                kickoffToStagingMap.set(issueNumber, {
-                  created_at: stagingIssue.created_at,
-                  number: stagingIssue.number
-                });
-              }
-            }
-          });
-        }
-      }
-    });
-    
-    // Calculate products shipped (unique kick-off issues that have staging findings)
-    const productsShipped = kickoffToStagingMap.size;
-    
-    // 4. Total issues filed at Staging Review (use the staging finding issues we already fetched)
+    // Total issues filed at Staging Review
     const totalStagingIssues = stagingFindingIssues.length;
     
     // 5. Launch-blocking issues at Staging Review
@@ -428,7 +379,6 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
       design_intent_held: designIntentHeld,
       midpoint_review_held: midpointReviewHeld,
       staging_review_held: stagingReviewHeld,
-      products_shipped: productsShipped,
       total_staging_issues: totalStagingIssues,
       launch_blocking_issues: totalLaunchBlockingIssues,
       launch_blocking_percentage: launchBlockingPercentage
@@ -436,75 +386,6 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
   }
   
   return quarterlyData;
-}
-
-/**
- * Get current VFS teams participating (In Progress issues in Collaboration Cycle)
- * Counts unique team names from open CC-Request kick-off tickets
- */
-async function getCurrentParticipatingTeams(startDate = null, endDate = null) {
-  try {
-    let searchDescription = 'currently open CC-Request kick-off issues';
-    if (startDate && endDate) {
-      searchDescription = `CC-Request kick-off issues created between ${startDate} and ${endDate}`;
-    }
-    console.log(`Searching for ${searchDescription}...`);
-    
-    // Build search arguments
-    const searchArgs = [
-      'search', 'issues',
-      '--repo', REPO,
-      '--label', 'CC-Request',
-      '--label', 'collaboration-cycle',
-      '--limit', '1000',
-      '--json', 'number,body'
-    ];
-    
-    // If date range provided, filter by creation date; otherwise get all open issues
-    if (startDate && endDate) {
-      searchArgs.push('--created', `${startDate}..${endDate}`);
-    } else {
-      searchArgs.push('--state', 'open');
-    }
-    
-    // Get kick-off issues
-    const output = execFileSync('gh', searchArgs, {
-      encoding: 'utf8',
-      maxBuffer: 10 * 1024 * 1024,
-      timeout: 60000 // 60 second timeout
-    });
-    
-    const issues = JSON.parse(output);
-    console.log(`  Found ${issues.length} CC-Request issues`);
-    
-    // Extract unique team names from the issue bodies
-    const teamNames = new Set();
-    
-    issues.forEach(issue => {
-      if (issue.body) {
-        // Look for the team name in the format:
-        // ### VFS team name
-        // <team-name>
-        const teamNameMatch = issue.body.match(/###\s+VFS team name\s+([^\n#]+)/i);
-        if (teamNameMatch && teamNameMatch[1]) {
-          const teamName = teamNameMatch[1].trim();
-          // Only add non-empty team names
-          if (teamName && teamName !== '_No response_' && teamName.length > 0) {
-            teamNames.add(teamName.toLowerCase()); // Normalize to lowercase for deduplication
-          }
-        }
-      }
-    });
-    
-    const uniqueTeamCount = teamNames.size;
-    console.log(`  Found ${uniqueTeamCount} unique teams${startDate ? ' in this quarter' : ' participating'}`);
-    
-    return uniqueTeamCount;
-  } catch (error) {
-    console.error('Failed to fetch participating teams:', error.message);
-    console.log('  Continuing with 0 for participating teams count...');
-    return 0;
-  }
 }
 
 /**
@@ -519,11 +400,9 @@ function calculateSummary(quarterlyData) {
       design_intent_held: 0,
       midpoint_review_held: 0,
       staging_review_held: 0,
-      products_shipped: 0,
       total_staging_issues: 0,
       launch_blocking_issues: 0,
       launch_blocking_percentage: 0,
-      participating_teams: 0,
       last_updated: new Date().toISOString()
     };
   }
@@ -571,11 +450,9 @@ function calculateSummary(quarterlyData) {
     design_intent_held: latestQuarter.design_intent_held,
     midpoint_review_held: latestQuarter.midpoint_review_held,
     staging_review_held: latestQuarter.staging_review_held,
-    products_shipped: latestQuarter.products_shipped,
     total_staging_issues: latestQuarter.total_staging_issues,
     launch_blocking_issues: latestQuarter.launch_blocking_issues,
     launch_blocking_percentage: latestQuarter.launch_blocking_percentage,
-    participating_teams: 0, // Will be updated by getCurrentParticipatingTeams
     last_updated: new Date().toISOString(),
     // Add trends if we have previous quarter data
     trends: previousQuarter ? {
@@ -584,7 +461,6 @@ function calculateSummary(quarterlyData) {
       design_intent_trend: calculateTrend(latestQuarter.design_intent_held, previousQuarter.design_intent_held),
       midpoint_review_trend: calculateTrend(latestQuarter.midpoint_review_held, previousQuarter.midpoint_review_held),
       staging_review_trend: calculateTrend(latestQuarter.staging_review_held, previousQuarter.staging_review_held),
-      products_trend: calculateTrend(latestQuarter.products_shipped, previousQuarter.products_shipped),
       staging_issues_trend: calculateTrend(latestQuarter.total_staging_issues, previousQuarter.total_staging_issues)
     } : null
   };
@@ -624,8 +500,6 @@ function printQuarterDetails(quarterData) {
   console.log(`      - 🎨 Design Intent: ${quarterData.design_intent_held} (governance-team + design-intent labels)`);
   console.log(`      - 🔄 Midpoint Review: ${quarterData.midpoint_review_held} (governance-team + midpoint-review labels)`);
   console.log(`      - 🚀 Staging Review: ${quarterData.staging_review_held} (governance-team + staging-review labels)`);
-  console.log(`   🚢 Products Shipped: ${quarterData.products_shipped}`);
-  console.log(`      - Unique kick-off issues that have at least one staging-review finding issue in this quarter`);
   console.log(`   ⚠️  Total Staging Issues: ${quarterData.total_staging_issues}`);
   console.log(`      - Issues labeled with CC-Dashboard + Staging + collab-cycle-feedback created in this period`);
   console.log(`   🚫 Launch Blocking Issues: ${quarterData.launch_blocking_issues}`);
@@ -639,7 +513,7 @@ function printQuarterDetails(quarterData) {
  */
 async function exportToCSV(quarterlyData) {
   const csvRows = [
-    'Quarter,Total Kickoffs,Touchpoints Held,Design Intent Held,Midpoint Review Held,Staging Review Held,Products Shipped,Total Staging Issues,Launch Blocking Issues,Launch Blocking Percentage'
+    'Quarter,Total Kickoffs,Touchpoints Held,Design Intent Held,Midpoint Review Held,Staging Review Held,Total Staging Issues,Launch Blocking Issues,Launch Blocking Percentage'
   ];
   
   quarterlyData.forEach(row => {
@@ -650,7 +524,6 @@ async function exportToCSV(quarterlyData) {
       row.design_intent_held,
       row.midpoint_review_held,
       row.staging_review_held,
-      row.products_shipped,
       row.total_staging_issues,
       row.launch_blocking_issues,
       row.launch_blocking_percentage
@@ -666,14 +539,13 @@ async function exportToCSV(quarterlyData) {
 /**
  * Save governance data for a specific quarter
  */
-async function saveQuarterlyData(quarterString, quarterData, participatingTeams = 0) {
+async function saveQuarterlyData(quarterString, quarterData) {
   // Ensure data directory exists
   await fs.mkdir(DATA_DIR, { recursive: true });
   
   const governanceData = {
     quarter: quarterString,
     data: quarterData,
-    participating_teams: participatingTeams,
     generated_at: new Date().toISOString(),
     data_source: 'va.gov-team repository',
     description: `Governance metrics for ${quarterString}`
@@ -743,13 +615,8 @@ async function main() {
       return;
     }
     
-    // Get participating teams for this specific quarter
-    console.log('Getting participating teams for this quarter...');
-    const quarterInfo = parseQuarter(targetQuarter);
-    const participatingTeams = await getCurrentParticipatingTeams(quarterInfo.startDate, quarterInfo.endDate);
-    
     // Save the quarterly data
-    await saveQuarterlyData(targetQuarter, quarterlyData[0], participatingTeams);
+    await saveQuarterlyData(targetQuarter, quarterlyData[0]);
     
     // Update the governance index
     const indexData = await updateGovernanceIndex();
@@ -762,11 +629,9 @@ async function main() {
     console.log(`     - Design intent: ${quarter.design_intent_held}`);
     console.log(`     - Midpoint review: ${quarter.midpoint_review_held}`);
     console.log(`     - Staging review: ${quarter.staging_review_held}`);
-    console.log(`   - Products shipped: ${quarter.products_shipped}`);
     console.log(`   - Total staging issues: ${quarter.total_staging_issues}`);
     console.log(`   - Launch blocking issues: ${quarter.launch_blocking_issues}`);
     console.log(`   - Launch blocking percentage: ${quarter.launch_blocking_percentage}%`);
-    console.log(`   - Participating teams: ${participatingTeams}`);
     console.log(`\n🔄 Current quarter: ${indexData.current_quarter}`);
     console.log(`📈 Latest complete quarter for reporting: ${indexData.latest_complete_quarter}`);
     
@@ -784,6 +649,5 @@ if (require.main === module) {
 module.exports = {
   fetchIssuesInDateRange,
   processCollaborationCycleMetrics,
-  getCurrentParticipatingTeams,
   calculateSummary
 };
