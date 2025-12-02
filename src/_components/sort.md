@@ -100,23 +100,41 @@ This is the Code Usage section. Note that the header is inside this include.
 
 ## Content considerations
 
-* **Always provide a default sort option that users would expect the most.** The default `- Select-` option should not be available to the user.
-* **Only include a sort option if it is relevant to the user.** For example, don't sort Medication history by the alphabetical order of comments from an open text field.
-* **Data should be able to be sorted both directions.** As a guideline, avoid sorting in only one direction. The opposite direction should be available to the user. This may be context-dependent.
+* **A default sort option should always be provided.** It should also be the one that users would expect the most. In contexts that include Searches, `Relevance` is often the default. Note that the `- Select-` option that is native to the Select component should not be available to the user.
+
 <!--
 Alpha sort would be "[Data label] (A to Z)" - i.e. Form name (A to Z)
 Date sort would be "[Data label] (newest)- i.e. Revision date (newest first)
 Numeric sort would be "[Data label] (high to low) - i.e. Form number (high to low)
 A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.-->
 
-* **Sort option labels should be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest)`, then the desktop experience should use the same (as opposed to using something like `Fill date (newest)` and vice versa).
-* **Follow general sort option naming conventions.** A list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
+* **Name sort options consistently.** Sort options (aside from the option to sort by Relevance or another algorithmic method) should follow this convention:`[Sort attribute] (sort method)`. For example:
+    - *Date entered (newest to oldest)*
+    - *Medication name (A to Z)*
+    - *Refills remaining (least to most)*
+    
+    While the `[Sort attribute]` can vary greatly, `[sort methods]` should be consistent. Deviations are permissible depending on the context, but teams should aim to align with the following list:
+    - **Alphabetical**
+        - A to Z      
+    - **Chronological**
+        - Newest to oldest
+    - **Numerical**
+        - Least to most
+        - Closest to furthest
+        - Smallest to largest
+        - Lowest to highest
+        - Shortest to longest
+
+* **If there is no label for the sort attribute, create one for the sort option.** A standalone `[sort method]`is not permissible.
+
+* **Align Sort option labels across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest to oldest)`, then the desktop experience should use the same as opposed to using something like `Fill date (newest to oldest)`.
+
+<!--OPTION 2:
+* **Follow general sort option naming conventions.** Here are some common ways to sort information. This list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
     - **Alphabetically**
-        - Ascending (A to Z)
-        - Descending (Z to A)
+        - A to Z      
     - **Chronologically**
         - Newest to oldest
-        - Oldest to newest
     - **Numerically (depends on context)**
         - Least to most
         - Smallest to largest
@@ -128,10 +146,16 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 **Note:** If a sort attribute is available, follow this naming convention:
     - [Sort attribute name] (general sort method)
         - For example, *Date entered (newest to oldest)*. 
-    - (TBD) Avoid shortening the general sort.
-        -  For example *Date entered (newest to oldest)* should not be shortened to *Date entered (newest)*.
+    - Avoid shortening the general sort.
+        -  For example *Date entered (newest to oldest)* should not be shortened to *Date entered (newest)*.-->
 
-* **(TBD) Avoid mixing and matching the two conventions.** For example, if the sort options are:
+* **Users should be able to sort data in both directions.** For example, a user should be able to sort medication names from A to Z and Z to A.
+    * Sorting in the opposite direction is not necessary if it doesn't reasonably represent a user goal. For example, it may not make sense to allow a user to sort VA locations from furthest to closest.
+
+* **Only include a sort option if it is relevant to the user.** Just because information can be sorted does not mean it should. Use best judgement to determine whether a user would reasonably need a sort option. 
+
+
+<!--* **(TBD) Avoid mixing and matching the two conventions.** For example, if the sort options are:
 - Newest to oldest
 - Oldest to newest
 - Remaining refills (least to most)
@@ -141,7 +165,7 @@ Change the general options to specify the sort attribute. If there is no label f
 - Date prescribed (newest to oldest)
 - Date prescribed (oldest to newest)
 - Remaining refills (least to most)
-- Remaining refills (most to least)
+- Remaining refills (most to least) -->
 
 
 <!--
