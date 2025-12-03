@@ -168,7 +168,7 @@ anchors:
 #### Choosing between variations
 
 * **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For checkbox groups used outside of this pattern, for example on a longer form page, use the [Label header](#label-header) checkbox group variation.
-* **Use the indeterminate state for a parent checkbox that controls a group of related child checkboxes.** The indeterminate state visually indicates that some (but not all) child checkboxes are selected. 
+* **Use the indeterminate state for a parent checkbox that controls a group of related child checkboxes.** The indeterminate state visually indicates that some (but not all) child checkboxes are selected.
   * **For hierarchical selection groups**: When checkboxes have a parent-child relationship, where selecting the parent affects all children and vice versa.
   * **For "Select all" functionality**: When implementing a "Select all" option at the top of a list of checkboxes
   
