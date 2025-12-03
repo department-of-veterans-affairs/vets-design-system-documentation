@@ -91,9 +91,9 @@ Provide more information if Veterans do not have a bank account.
 ![Direct deposit review state]({{site.baseurl}}/images/patterns/ask-users-for/direct-deposit/Direct-deposit-review-state-small.png)
 
 #### Bank account information card
-The direct deposit information will live in an editable bank account information card. 
-The card would include information that allows the user to identify their account, which includes bank name, routing number, and the type of account.
-Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the call to action button below.
+* The direct deposit information will live in an editable bank account information card. 
+* The card would include information that allows the user to identify their account, which includes bank name, routing number, and the type of account.
+* Mask the routing and account number but leave the 4 last digits. This masking is for security purposes. This information is uneditable until the user clicks the call to action button below.
 
 #### Call to action
 When the “edit” button is clicked, the bank account information card will turn into change into the input state.
