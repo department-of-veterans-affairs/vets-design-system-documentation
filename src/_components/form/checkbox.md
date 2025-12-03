@@ -179,8 +179,6 @@ anchors:
 
 #### Indeterminate checkbox
 
-<va-alert slim status="warning">Review the <a href="#indeterminate-state">indeterminate state accessibility considerations</a> before implementing.</va-alert>
-
 **Parent checkbox behavior**:
 
 * When clicked in the indeterminate state, the parent checkbox typically selects all child checkboxes.
@@ -191,6 +189,9 @@ anchors:
 * When all child checkboxes are selected, the parent checkbox appears checked.
 * When some child checkboxes are selected, the parent checkbox appears indeterminate.
 * When no child checkboxes are selected, the parent checkbox appears unchecked.
+
+**Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state
+) before implementing.
 
 ### Errors
 
