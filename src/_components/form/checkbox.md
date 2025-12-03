@@ -190,8 +190,7 @@ anchors:
 * When some child checkboxes are selected, the parent checkbox appears indeterminate.
 * When no child checkboxes are selected, the parent checkbox appears unchecked.
 
-**Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state
-) before implementing.
+**Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
 
 ### Errors
 
