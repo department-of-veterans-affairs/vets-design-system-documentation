@@ -70,12 +70,15 @@ body:
     id: environment
     attributes:
       label: "Environment details"
-      description: "Provide OS, browser, screen reader, device, and version info in which you have encountered the bug."
+      description: "Provide the operating system, browser, screen reader, and device where you saw the bug. If you can include multiple environments, it helps us triage and fix the issue faster."
       placeholder: |
-        - OS: macOS 14.6  
-        - Browser: Chrome 128.0.6613.121  
-        - Screen Reader: VoiceOver v14  
-        - Device: MacBook Air M2
+        Environment 1
+          - OS: macOS 14.6  
+          - Browser: Chrome 128.0.6613.121  
+          - Screen Reader: VoiceOver v14  
+          - Device: MacBook Air M2
+        Environment 2
+        ...   
     validations:
       required: true
 
