@@ -23,7 +23,6 @@ const https = require('https');
 const REPO_OWNER = 'department-of-veterans-affairs';
 const REPO_NAME = 'va.gov-team';
 const DATA_DIR = path.join(__dirname, '../src/_data/metrics');
-const GITHUB_API = 'https://api.github.com/graphql';
 
 /**
  * Display help message
@@ -349,7 +348,7 @@ function extractTeamName(issueBody) {
   // Look for the team name in the format:
   // ### VFS team name
   // <team-name>
-  const teamNameMatch = issueBody.match(/###\s+VFS team name\s+([^\n#]+)/i);
+  const teamNameMatch = issueBody.match(/###\s+VFS team name\s*\n?\s*([^\n#]+)/i);
   if (teamNameMatch && teamNameMatch[1]) {
     const teamName = teamNameMatch[1].trim();
     if (teamName && teamName !== '_No response_' && teamName.length > 0) {
@@ -658,7 +657,7 @@ async function main() {
     const outliers = identifyOutliers(cycleTimeData);
     
     // Save data
-    const filename = await saveCycleTimeData(
+    await saveCycleTimeData(
       dateRange.label,
       cycleTimeData,
       statistics,
