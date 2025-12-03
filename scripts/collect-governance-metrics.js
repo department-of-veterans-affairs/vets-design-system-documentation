@@ -346,8 +346,26 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
     );
     const stagingReviewHeld = stagingReviewHeldIssues.length;
 
-    // Total touchpoints held is the sum of all three types
-    const touchpointsHeld = designIntentHeld + midpointReviewHeld + stagingReviewHeld;
+    // PO Sync touchpoints - Issues with PO-Sync-approved label created in this quarter
+    const poSyncIssues = await fetchIssuesInDateRange(
+      ['PO-Sync-approved'], 
+      quarter.startDate, 
+      quarter.endDate,
+      'created'
+    );
+    const poSyncHeld = poSyncIssues.length;
+
+    // Architecture Intent touchpoints - Issues with architecture-intent label created in this quarter
+    const architectureIntentIssues = await fetchIssuesInDateRange(
+      ['architecture-intent'], 
+      quarter.startDate, 
+      quarter.endDate,
+      'created'
+    );
+    const architectureIntentHeld = architectureIntentIssues.length;
+
+    // Total touchpoints held is the sum of all touchpoint types
+    const touchpointsHeld = poSyncHeld + architectureIntentHeld + designIntentHeld + midpointReviewHeld + stagingReviewHeld;
     
     // 3. Get all staging-review finding issues created in this quarter
     const stagingFindingIssues = await fetchIssuesInDateRange(
@@ -376,6 +394,8 @@ async function processCollaborationCycleMetrics(specificQuarter = null) {
       period: quarter.label,
       total_kickoffs: totalKickoffs,
       touchpoints_held: touchpointsHeld,
+      po_sync_held: poSyncHeld,
+      architecture_intent_held: architectureIntentHeld,
       design_intent_held: designIntentHeld,
       midpoint_review_held: midpointReviewHeld,
       staging_review_held: stagingReviewHeld,
@@ -496,7 +516,9 @@ function printQuarterDetails(quarterData) {
   console.log(`   📋 Total Kickoffs: ${quarterData.total_kickoffs}`);
   console.log(`      - Issues labeled with CC-Request + collaboration-cycle created in this period`);
   console.log(`   ✅ Total Touchpoints Held: ${quarterData.touchpoints_held}`);
-  console.log(`      - Sum of all three touchpoint types held by governance team in this period:`);
+  console.log(`      - Sum of all touchpoint types held by governance team in this period:`);
+  console.log(`      - 🤝 PO Sync: ${quarterData.po_sync_held} (PO-Sync-approved label)`);
+  console.log(`      - 🏗️ Architecture Intent: ${quarterData.architecture_intent_held} (architecture-intent label)`);
   console.log(`      - 🎨 Design Intent: ${quarterData.design_intent_held} (governance-team + design-intent labels)`);
   console.log(`      - 🔄 Midpoint Review: ${quarterData.midpoint_review_held} (governance-team + midpoint-review labels)`);
   console.log(`      - 🚀 Staging Review: ${quarterData.staging_review_held} (governance-team + staging-review labels)`);
@@ -513,7 +535,7 @@ function printQuarterDetails(quarterData) {
  */
 async function exportToCSV(quarterlyData) {
   const csvRows = [
-    'Quarter,Total Kickoffs,Touchpoints Held,Design Intent Held,Midpoint Review Held,Staging Review Held,Total Staging Issues,Launch Blocking Issues,Launch Blocking Percentage'
+    'Quarter,Total Kickoffs,Touchpoints Held,PO Sync Held,Architecture Intent Held,Design Intent Held,Midpoint Review Held,Staging Review Held,Total Staging Issues,Launch Blocking Issues,Launch Blocking Percentage'
   ];
   
   quarterlyData.forEach(row => {
@@ -521,6 +543,8 @@ async function exportToCSV(quarterlyData) {
       row.period,
       row.total_kickoffs,
       row.touchpoints_held,
+      row.po_sync_held,
+      row.architecture_intent_held,
       row.design_intent_held,
       row.midpoint_review_held,
       row.staging_review_held,
@@ -626,6 +650,8 @@ async function main() {
     console.log(`\n📊 Summary for ${quarter.period}:`);
     console.log(`   - Total kickoffs: ${quarter.total_kickoffs}`);
     console.log(`   - Total touchpoints held: ${quarter.touchpoints_held}`);
+    console.log(`     - PO sync: ${quarter.po_sync_held}`);
+    console.log(`     - Architecture intent: ${quarter.architecture_intent_held}`);
     console.log(`     - Design intent: ${quarter.design_intent_held}`);
     console.log(`     - Midpoint review: ${quarter.midpoint_review_held}`);
     console.log(`     - Staging review: ${quarter.staging_review_held}`);
