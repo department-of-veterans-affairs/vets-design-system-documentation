@@ -172,8 +172,7 @@ anchors:
   * **For hierarchical selection groups**: When checkboxes have a parent-child relationship, where selecting the parent affects all children and vice versa.
   * **For "Select all" functionality**: When implementing a "Select all" option at the top of a list of checkboxes
   
-  **Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state
-) before implementing.
+  **Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
 
 {% include content/conditionally-revealed-fields.md %}
 
