@@ -47,8 +47,39 @@
           crossorigin="anonymous"></script>
   <script>
     mermaid.initialize({
-      startOnLoad: true,
-      // You can add more configuration here, e.g. theme: 'default', securityLevel: 'strict'
+      startOnLoad: false,
+      theme: 'default',
+      securityLevel: 'strict'
+    });
+
+    // Render and resize mermaid charts
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.run().then(() => {
+        const MAX_WIDTH = 528;
+        
+        document.querySelectorAll('.mermaid svg').forEach(svg => {
+          const currentWidth = svg.getAttribute('width') || svg.viewBox?.baseVal?.width || 0;
+          const targetWidth = Math.min(currentWidth, MAX_WIDTH);
+          const widthPx = targetWidth + 'px';
+          
+          // Apply responsive styling - use max-width for mobile scaling
+          Object.assign(svg.style, {
+            width: '100%',
+            height: 'auto',
+            maxWidth: widthPx
+          });
+          
+          // Resize mermaid container to be responsive
+          const container = svg.closest('.mermaid');
+          if (container) {
+            Object.assign(container.style, {
+              width: '100%',
+              maxWidth: widthPx,
+              margin: '0'
+            });
+          }
+        });
+      });
     });
   </script>
   {% endif %}

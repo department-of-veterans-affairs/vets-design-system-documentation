@@ -155,7 +155,12 @@ these can be removed along with an update to how classes are generated in color-
 
 .mermaid-chart-container .mermaid {
   background: transparent;
-  max-width: 100%;
+}
+
+/* Mermaid chart width controlled via JavaScript after rendering */
+.mermaid-chart-container .mermaid {
+  margin: 0 auto;
+  overflow: visible;
 }
 
 /* Node Styling - White nodes with gray borders for WCAG AA contrast.

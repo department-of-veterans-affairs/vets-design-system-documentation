@@ -42,7 +42,7 @@ Button and link confusion can be very frustrating for assistive technology users
 
 ### Implementation notes
 
-<div class="mermaid-comparison">
+<div class="mermaid-comparison" style="max-width: 528px">
   <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
   <div class="sr-only">
     If you use a screen reader: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
@@ -89,32 +89,83 @@ flowchart TD
 
 
 
-#### Should this be a button or link? {#button-link-decision-list}
+<va-additional-info trigger="View text-based decision list for buttons vs. links" id="button-link-decision-list">
 
-* **Is the purpose of the control to navigate elsewhere?**
-    * Yes
-      * Examples: Going to a page; Going to a static file, like a PDF
-      * **Is data submitted before navigation?**
-        * Yes
-          * Examples: Sending data to a server or saving client side before moving to a new page, like a form
-          * _Make it a Button_
-        * No
-          * **Does it need to stand out from surrounding design elements?**
-            * No
-              * Examples: Link in body text; Link in the footer of a form; Links in a menu
-              * _Make it a Link_
-            * Yes
-              * Examples: A link to a page which will begin a new form; A link on a page with an existing button as the primary action that’s needs more visual weight than other links
-                * **Is this on web or mobile?**
-                  * Mobile
-                    * _Ask your friendly neighborhood accessibility expert_
-                  * Web
-                    * _Make it an Action Link_
-    * No
-      * **Is the purpose of this control to generate data for a file?**
-        * Examples: Creating a PDF from a web page; Creating a PDF from data on the server
-        * Yes
-          * _Make it a Link_
-        * No
-          * _Make it a Button_
+<h4>Should this be a button or link?</h4>
+
+<ul>
+<li><strong>Is the purpose of the control to navigate elsewhere?</strong>
+    <ul>
+    <li>Yes
+      <ul>
+      <li>Examples: Going to a page or a static file like a PDF</li>
+      <li><strong>Is data submitted before navigation?</strong>
+        <ul>
+        <li>Yes
+          <ul>
+          <li>Examples: Sending data to server or saving client-side before moving to a new page</li>
+          <li><em>Make it a Button</em></li>
+          </ul>
+        </li>
+        <li>No
+          <ul>
+          <li><strong>Does it need to stand out from surrounding design elements?</strong>
+            <ul>
+            <li>No
+              <ul>
+              <li>Examples: Link in a body of text, footer of a form, or in a menu</li>
+              <li><em>Make it a Link</em></li>
+              </ul>
+            </li>
+            <li>Yes
+              <ul>
+              <li>Examples: Link to a page which will begin a new form or needs more visual weight than other links</li>
+              <li><strong>Is this on web or mobile?</strong>
+                <ul>
+                <li>Mobile App
+                  <ul>
+                  <li><em>Ask your friendly neighborhood accessibility expert</em></li>
+                  </ul>
+                </li>
+                <li>Web
+                  <ul>
+                  <li><em>Make it an Action Link</em></li>
+                  </ul>
+                </li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    <li>No
+      <ul>
+      <li><strong>Is the purpose of this control to generate data for a file?</strong>
+        <ul>
+        <li>Examples: Create a PDF from a web page or data on the server</li>
+        <li>Yes
+          <ul>
+          <li><em>Make it a Link</em></li>
+          </ul>
+        </li>
+        <li>No
+          <ul>
+          <li><em>Make it a Button</em></li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    </ul>
+</li>
+</ul>
+
+</va-additional-info>
 
