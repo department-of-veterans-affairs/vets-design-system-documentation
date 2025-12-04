@@ -41,10 +41,10 @@ anchors:
 ### How this pattern works
 
 * **Collect an email address for the Veteran and, if not the same person, the person completing the form.** It is a requirement to capture the email address of the person completing the form. If this is not the Veteran it is also necessary to collect the email address of the Veteran. Both should be [notified at the appropriate touch points for a form submission]({{ site.baseurl }}/patterns/help-users-to/stay-informed-of-their-application-status).
-* **Pre-populate email address from VA.gov Profile whenever possible.** This makes it easier for users as they have one less field to complete.
+* **Pre-populate email address from VA Profile API whenever possible.** This makes it easier for users as they have one less field to complete.
 * **Do not use an email confirmation field.** The email confirmation field is unnecessary if we're using the email from a profile. Also, it's not useful for catching errors as most users copy and paste and don't review their initial entry.
 * **Validate email addresses upon entry.** You should validate email addresses for formatting so you can let users know if they have entered an email incorrectly.
-* **Inform users when prefilling information from VA.gov profile.** Notify users that information from their profile has been prefilled into the form using the [prefill component]({{ site.baseurl }}/components/form/prefill).
+* **Inform users when prefilling information from their profile.** Notify users that information from their profile has been prefilled into the form using the [prefill component]({{ site.baseurl }}/components/form/prefill).
 * **Pair with phone numbers.** Collection of email address is paired with [phone numbers]({{ site.baseurl }}/patterns/ask-users-for/phone-numbers). The two patterns typically appear on the same step/page.
 * **If possible, tell people why you want their email address.** People filling out a form need to know that we won't abuse their email and decide which email they'd like to provide.
 
