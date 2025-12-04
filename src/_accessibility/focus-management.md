@@ -43,23 +43,15 @@ As users navigate a page without a mouse, focus should move through the page ele
 
 ## Focus management
 
-On most static pages, you won’t need to move focus because browsers handle that automatically. However, on pages with dynamic content, you may need to move focus manually to improve usability and help users stay oriented.
+On most static pages, you won’t need to move focus because browsers handle that automatically. However, on pages with dynamic content, you may need to move focus manually to improve usability and help users stay oriented when page content changes.
 
-Effective focus management can benefit everyone, but it’s especially important for people using screen readers or magnification tools, who might otherwise not know when page content has updated.
-
-### Benefits of focus management
-
-* **Moving focus can help users understand where they are.** When a new element receives focus, screen readers announce it, giving users immediate context about their location.
-* **Managing focus can bring users closer to the next relevant action.** Moving focus to the right location can make it easier for users to find information and complete tasks.
-
-### Risks of focus management
-
-* **Moving focus can be disorienting for the user.** If a user is already interacting with the page, moving focus can be disruptive and confusing. Only manage focus when it’s needed.
-* **Moving focus can disrupt other screen reader announcements.** Since newly focused elements tend to be prioritized in screen reader announcements, focus management can prevent aria-live from announcing as expected.
+{% include a11y/focus-management-benefits-risks.md %}
 
 ### Guidelines for focus management
 
-* **Move focus to interactive elements like buttons, links, and inputs.** Some combinations of browsers and assistive technologies behave unpredictably when focus lands on elements that are not natively interactive.
+#### General guidelines
+
+* **When available, move focus to interactive elements like buttons, links, and inputs.** Some combinations of browsers and assistive technologies behave unpredictably when focus lands on elements that are not natively interactive.
 * **Give focusable elements descriptive text or an accessible label.** This context helps users immediately understand where they are and what they need to do.
 * **Scroll the focused element into view.** Don’t let sticky headers or overlays hide it.
 
@@ -76,17 +68,19 @@ Effective focus management can benefit everyone, but it’s especially important
 
 #### When there is an error on the page
 
-* **When an error blocks the next action, move focus to the first input with an error.** If the error isn’t tied to a specific input, move focus instead to the first interactive element that lets the user fix it. After the error is resolved and the user successfully advances to the next view, follow the [guidance for moving focus when a new page loads](#when-a-new-page-loads).
+* **When an error blocks the next action, move focus to the first input with an error.** If the error isn’t tied to a specific input, move focus to the first interactive element that lets the user fix it. After the error is resolved and the user successfully advances to the next view, follow the [guidance for moving focus when a new page loads](#when-a-new-page-loads).
 
 #### When opening and closing a modal
 
-* **Move focus to the first interactive element in the modal, unless it’s a destructive action.** The element can be a button, a form input, or the "close" button. However, if the first interactive element is a destructive action, choose a safer place to focus.
+* **When the modal opens, move focus to the first interactive element in the modal, unless it’s a destructive action.** The element can be a button, a form input, or the "close" button. However, if the first interactive element is a destructive action, choose a safer place to focus.
 * **Ensure keyboard focus is trapped inside the modal.** While the modal is open, focus should stay inside the modal and should not move to the page elements behind it.
 * **When the modal closes, restore focus to the button that opened it.** This helps users continue their workflow without losing their place.
 
 #### When inside a multi-page form
 
-* **Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).**
+{% include a11y/focus-management-form-flows.md %}
+
+You can find additional guidance for managing focus in form flows in the [forms accessibility guidelines]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).
 
 #### Developer considerations
 
