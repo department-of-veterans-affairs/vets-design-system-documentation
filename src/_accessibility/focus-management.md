@@ -78,9 +78,7 @@ On most static pages, you won’t need to move focus because browsers handle tha
 
 #### When inside a multi-page form
 
-{% include a11y/focus-management-form-flows.md %}
-
-You can find additional guidance for managing focus in form flows in the [forms accessibility guidelines]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).
+* **Follow the guidance for [managing focus in form flows]({{ site.baseurl }}/templates/forms/accessibility-guidelines#managing-focus-in-form-flows).**
 
 #### Developer considerations
 
