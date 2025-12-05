@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: true
 web: true
 mobile-app: true
-intro-text: "The Sort component enables users to reorder information in a way that allows them to find relevant information quickly and easily within web and mobile applications."
+intro-text: "The Sort component enables the user to reorder search results and long lists of data."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
@@ -50,9 +50,9 @@ Add Storybook examples as necessary.-->
 
 ### When to consider something else
 
-* **When order is not relevant.** If the order of data does not impact the results or interpretation, sorting is not necessary.
-* **When there's only one obvious order**. If there's only one meaningful or possible way to sort, leave this component out.
-* **When the goal is to narrow results down**. Instead, use a [Filter]({{ site.baseurl }}/components/search-filter).
+* **When order of data does not impact the results or interpretation.** 
+* **When there's only one obvious order.** This means that there should be a minimum of two ways to sort in order to use the component.
+* **When the goal is to narrow results down**. Use a [Filter]({{ site.baseurl }}/components/search-filter) instead.
 
 <!--The Sort component uses the Select component as the foundation with some design, content, and accessibility considerations locked in.-->
 
@@ -60,12 +60,16 @@ Add Storybook examples as necessary.-->
 
 ### Web
 
-* **User clicks the dropdown to open a list of sort options.** Alternatively, the user can arrow up and down the menu without entering the menu when the menu is focused. 
+* **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user who does not traditionally "open" a menu can arrow up and down the menu.
 
-* **Results automatically update upon selecting a sort option.** The dataset is reset to page 1. 
+* **Results automatically update upon selecting a sort option.** This is also known as implicit submission. Additionally, the dataset is reset to page 1.
     * **Why implicit submission?**
-    This type of behavior was chosen over the option of allowing a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns) because this seems to be the most common and expected behavior. From a VA.gov Medications [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.)...
+    This seems to be the most common and expected behavior. The alternative was to allow a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns). However, a [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
 > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reeader dependent user did mention missing things because of his speed".
+
+    A debounce or delay should be implemented to prevent a user who arrows up and down the dropdown from prematurely making a sort selection.
+
+* **The focus must remain stable and visible after sorting.**
 
 
 <!--* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. -->
@@ -167,10 +171,9 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 * The sort control must use a native `<select>` element for predictable keyboard and AT behavior.  
 * Changing a sort value must not cause unexpected navigation; only the relevant results region updates.  
-* Focus must remain stable and visible after sorting.  
 * Live region must announce sorting changes with dataset and page context.  
 * The sort must re-sort the entire data set, not just the data available in a paginated view. 
-* When navigating through paginated results, the sort criteria must be maintained
+* When navigating through paginated results, the sort criteria must be maintained.
 * Following [Loading state rules]({{ site.baseurl }}/components/loading-indicator) for sorting that may take awhile.
 * Focus stay on sort component after a selection is made
 <!-- Defined in Behavior * When sorting paginated results, the dataset resets the user to page 1.-->
@@ -179,7 +182,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * Announce loading states using `aria-busy`.
 <!--* Reset sort and filtered views when the browser is refreshed-->
 * When a page is refreshed by the user, the sort selection should persist
-* Should not support opt groups
+* Should not support `<optgroup>`.
 
 
 ### Consider
@@ -205,5 +208,4 @@ Follow these accessibility guidelines when sorting your search results:
 This is the Component checklist section. Note that the header is inside this include.
 <!-- include _component-checklist.html component_name=page.web-component -->
 
-## Research
 
