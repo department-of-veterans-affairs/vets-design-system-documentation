@@ -94,14 +94,14 @@ Add Storybook examples as necessary.-->
 
 ### Placement
 
-* Sort should be placed above and aligned with the content that it affects.
+* **Sort should be placed above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
 
 
 
 ### Mobile app
 
-* The VA mobile app does not currently rely on this component as they already have a combined Filter & Sort button that opens a modal to select and submit sort and filter options.
-    * Regardless, the naming of sort options must remain consistent across mobile and desktop experiences.
+* **The VA mobile app does not currently rely on this component.** It uses it's own combined Filter & Sort button that opens a modal to select and submit sort and filter options.
+    * The naming of sort options must still remain consistent across mobile and desktop experiences.
 
 <!--*Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in the mobile app experiences should still align with the sort options in their desktop counterparts.
 * The VA Mobile app does use a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. --> 
@@ -143,7 +143,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 * **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
 
-* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `[sort method]` (aside from Relevance or another algorithmic method) is not recommended.
+* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `sort method` (aside from Relevance or another algorithmic method) is not recommended.
 
 <!--OPTION 2:
 * **Follow general sort option naming conventions.** Here are some common ways to sort information. This list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
@@ -170,7 +170,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 * **Only include a sort option if it is relevant to the user.** Just because information can be sorted does not mean it should. Use best judgement to determine whether a user would reasonably need a sort option. 
 
-* **When sorting accompanies filtering or other results, a description of the sort event should be added to the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied, sorted by `[Sort attribute]``[sort method]`.” 
+* **When sorting accompanies filtering or other results, a description of the sort event should be added to the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied, sorted by `[Sort attribute]``(sort method)`.” 
 
 
 ## Accessibility considerations
