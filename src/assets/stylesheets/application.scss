@@ -199,7 +199,7 @@ these can be removed along with an update to how classes are generated in color-
   border: none !important; /* !important required to override Mermaid's inline border */
 }
 
-.mermaid .node {
+.mermaid-chart-container .mermaid .node {
   cursor: default !important;
   font-size: 14px;
 }
