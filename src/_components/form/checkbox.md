@@ -132,6 +132,8 @@ anchors:
 
 #### Indeterminate
 
+<va-alert slim status="warning">Review the <a href="#indeterminate-state">indeterminate state accessibility considerations</a> before implementing.</va-alert>
+
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
 ### Mobile app
@@ -169,6 +171,8 @@ anchors:
 * **Use the indeterminate state for a parent checkbox that controls a group of related child checkboxes.** The indeterminate state visually indicates that some (but not all) child checkboxes are selected.
   * **For hierarchical selection groups**: When checkboxes have a parent-child relationship, where selecting the parent affects all children and vice versa.
   * **For "Select all" functionality**: When implementing a "Select all" option at the top of a list of checkboxes.
+  
+  **Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
 
 {% include content/conditionally-revealed-fields.md %}
 
@@ -184,6 +188,8 @@ anchors:
 * When all child checkboxes are selected, the parent checkbox appears checked.
 * When some child checkboxes are selected, the parent checkbox appears indeterminate.
 * When no child checkboxes are selected, the parent checkbox appears unchecked.
+
+**Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
 
 ### Errors
 
@@ -228,6 +234,23 @@ The native onBlur event is available on this component. It can be used by adding
   text="Refer to the U.S. Web Design System for accessibility guidance"
   type="secondary"
 ></va-link-action>
+
+### Indeterminate state
+
+**Screen reader behavior for the indeterminate state varies significantly across assistive technologies.** This inconsistency can create confusion for screen reader users who may not have the visual context of the full checkbox group:
+
+* **VoiceOver on iOS** announces the checkbox as "mixed"
+* **Narrator on Windows** announces the checkbox as "indeterminate"
+* **NVDA on Windows** announces the checkbox as "half checked"
+
+While the indeterminate state is relatively easy to understand with visual context, typical screen reader users may not immediately understand what "mixed," "indeterminate," or "half checked" means in the context of your form.
+
+**When using the indeterminate state, provide additional context to help all users understand the parent checkbox behavior:**
+
+* Use clear, descriptive labels that explain the relationship between parent and child checkboxes
+* Consider providing hint text that explains how selecting or deselecting the parent checkbox affects child checkboxes
+* Ensure the label clearly indicates this is a control that affects multiple related options
+* Test with actual screen reader users to verify the interaction is understandable
 
 ## Privacy guidance 
  {% include content/privacy-selection-fields.md %}
