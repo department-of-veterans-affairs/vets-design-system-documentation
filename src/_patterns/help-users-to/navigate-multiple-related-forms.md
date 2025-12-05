@@ -38,21 +38,6 @@ Some form submissions require Veterans to provide additional evidence to be subm
 * Reminding users on the confirmation page of any additional information that needs to be submitted and how it can be submitted to VA
 
 
-#### Where to mention related forms
-
-**On introduction pages.** Mention related forms up front when:
-* Veterans need to gather additional documents or information before starting
-* Multiple forms are part of a single application process
-* Understanding the full scope helps Veterans decide whether to proceed
-* The additional forms significantly impact the time or effort required
-
-**On confirmation pages.** Use this pattern primarily on confirmation pages as part of the "What to expect next" section for:
-* Forms that become available after the primary form is processed
-* Required follow-up forms with specific deadlines
-* Optional supplemental forms that can enhance the application
-* Additional documentation Veterans should submit as part of the form process
-
-
 ### When not to use this pattern
 
 **For unrelated forms.** Don't group forms together that serve different purposes or benefits, even if they might apply to the same Veteran.
@@ -87,28 +72,34 @@ Some form submissions require Veterans to provide additional evidence to be subm
 * Provide PDF downloads only when necessary or requested
 
 **Group related forms logically.** When multiple forms are needed, group them by:
-* Priority (required vs. optional)
-* Timing (immediate vs. later)
-* Purpose (related to the same benefit or process)
+
+When multiple forms are needed, group them in a way that helps users understand priority and context — and clearly label that grouping. Teams should choose one logical approach based on the importance of the forms and what matters most for user decision-making:
+
+* **By priority:** “Required forms” vs. “Optional forms”  
+  Use when users must complete certain forms before others.  
+* **By timing:** “Complete now” vs. “Complete later”  
+  Use when the timing of actions matters more than type or purpose.  
+* **By purpose:** “Forms related to your disability benefits” vs. “Forms related to dependents”  
+  Use when forms serve different but related goals in the same process.  
+
+Consistency of labeling helps Veterans understand what’s essential versus optional and when to act.
 
 ### Placement
 
-Decision framework for where to mention related forms
-
 #### On introduction pages when
 * Veterans need to prepare documents for multiple forms before starting
-* Multiple forms are part of one comprehensive application process
-* Not knowing about additional forms would significantly impact the Veteran's decision to start
-* The additional forms must be completed in a specific sequence
+* Multiple forms are part of a single application process
+* Understanding the full scope helps Veterans decide whether to proceed
+* he additional forms significantly impact the time or effort required
 
 When mentioning related forms up front, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
 
 #### On confirmation pages when
-* The additional form becomes relevant only after the primary form is submitted
+* Forms that become available after the primary form is processed
 * Veterans need to meet specific deadlines
 * The additional form is optional, and Veterans can decide later if they need it
 
-Include this guidance in the "What to expect next" section or in its own section labeled "What are my next steps?"
+Use this pattern primarily on confirmation pages as part of the "What to expect next" section or in its own section labeled "What are my next steps?"
 
 
 ### Other patterns and templates used in this pattern
