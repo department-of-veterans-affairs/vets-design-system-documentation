@@ -146,6 +146,7 @@ flowchart TD
     </li>
     <li>No
       <ul>
+      <li>Examples: Taking an action or opening a modal</li>
       <li><strong>Is the purpose of this control to generate data for a file?</strong>
         <ul>
         <li>Examples: Create a PDF from a web page or data on the server</li>
