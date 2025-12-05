@@ -58,7 +58,7 @@
         const MAX_WIDTH = 528;
         
         document.querySelectorAll('.mermaid svg').forEach(svg => {
-          const currentWidth = svg.getAttribute('width') || svg.viewBox?.baseVal?.width || 0;
+          const currentWidth = svg.getAttribute('width') || svg.viewBox?.baseVal?.width || MAX_WIDTH;
           const targetWidth = Math.min(currentWidth, MAX_WIDTH);
           const widthPx = targetWidth + 'px';
           
