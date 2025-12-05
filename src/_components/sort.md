@@ -114,6 +114,7 @@ This is the Code Usage section. Note that the header is inside this include.-->
 
 ## Content considerations
 
+### Must
 * **A default sort option must always be provided.** It should be the one that users would expect the most. In Search contexts, *Relevance* is often the default. 
     * The default *- Select-* option that is native to the Select component should not be available to the user, even within the menu.
 
@@ -143,7 +144,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 * **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
 
-* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `sort method` (aside from Relevance or another algorithmic method) is not recommended.
+* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `Sort method` (aside from Relevance or another algorithmic method) is not recommended.
 
 <!--OPTION 2:
 * **Follow general sort option naming conventions.** Here are some common ways to sort information. This list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
@@ -164,6 +165,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
         - For example, *Date entered (newest to oldest)*. 
     - Avoid shortening the general sort.
         -  For example *Date entered (newest to oldest)* should not be shortened to *Date entered (newest)*.-->
+### Should
 
 * **Users should be able to sort data in both directions.** For example, a user should be able to sort medication names from A to Z and Z to A.
     * Sorting in the opposite direction is not necessary if it doesn't reasonably represent a user goal. For example, it may not make sense to allow a user to sort VA locations from furthest to closest.
@@ -197,7 +199,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * Should not support `<optgroup>`.
 
 
-### Consider
+<!--### Consider-->
 <!-- Source: Search filter
 
 Follow these accessibility guidelines when sorting your search results:
