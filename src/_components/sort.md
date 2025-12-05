@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: true
 web: true
 mobile-app: true
-intro-text: "The Sort component enables the user to reorder search results and long lists of data."
+intro-text: "The Sort component enables the user to reorder search results and long lists of data in a way that is easier for them to interpret."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
