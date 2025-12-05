@@ -241,7 +241,7 @@ The native onBlur event is available on this component. It can be used by adding
 ### Indeterminate state
 
 **Screen reader behavior for the indeterminate state varies significantly across assistive technologies.**  
-This can create confusion for non-visual users who don't see the parent—child relationship.
+This can create confusion for non-visual users who don't see the parent-child relationship.
 
 Examples:
 
@@ -254,13 +254,13 @@ Because these announcements differ, **don't rely on the term "mixed" alone to ex
 
 To ensure all users understand the control:
 
-* **Use a clear label** that describes the group the parent checkbox controls.
+* **Use a clear label** that describes the group the parent checkbox controls
 
-* **Provide optional hint text** that explains the parent checkbox selects or deselects all related options.
+* **Provide optional hint text** that explains the parent checkbox selects or deselects all related options
 
-* **Use semantic grouping** (fieldset/legend or role="group") so screen reader users understand the parent—child relationship.
+* **Use semantic grouping** (fieldset/legend or role="group") so screen reader users understand the parent-child relationship
 
-* **For large or complex groups**, consider adding short dynamic context (such as "2 of 5 selected") to help clarify why the parent is in a mixed state.
+* **For large or complex groups**, consider adding short dynamic context (such as "2 of 5 selected") to help clarify why the parent is in a mixed state
 
 * **Test with actual screen reader users** to verify the interaction is understandable
 
