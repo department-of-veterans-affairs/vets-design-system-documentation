@@ -144,6 +144,10 @@ these can be removed along with an update to how classes are generated in color-
    MERMAID CHARTS STYLING
    ================================================== */
 
+   .mermaid-width {
+     max-width: 528px;
+   }
+
 /* Container Layout */
 .mermaid-chart-container {
   margin: var(--vads-spacing-4) auto;

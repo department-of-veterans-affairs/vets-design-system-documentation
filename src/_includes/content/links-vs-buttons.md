@@ -42,7 +42,7 @@ Button and link confusion can be very frustrating for assistive technology users
 
 ### Implementation notes
 
-<div class="mermaid-comparison" style="max-width: 528px">
+<div class="mermaid-width mermaid-comparison">
   <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
   <div class="sr-only">
     If you use a screen reader: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
