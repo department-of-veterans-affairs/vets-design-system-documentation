@@ -243,7 +243,7 @@ The native onBlur event is available on this component. It can be used by adding
 **Screen reader behavior for the indeterminate state varies significantly across assistive technologies.**  
 This can create confusion for non-visual users who don't see the parent-child relationship.
 
-Examples:
+Screen reader announcement examples:
 
 * **VoiceOver (iOS/macOS):** often “mixed,” “partially selected,” or sometimes reads only “selected”
 * **NVDA (Windows):** “partially checked”
@@ -260,7 +260,7 @@ To ensure all users understand the control:
 
 * **Use semantic grouping** (fieldset/legend or role="group") so screen reader users understand the parent-child relationship
 
-* **For large or complex groups**, consider adding short dynamic context (such as "2 of 5 selected") to help clarify why the parent is in a mixed state
+* **For large or complex groups**, consider adding hidden screen reader text (such as "2 of 5 selected") to help clarify why the parent is in a mixed state
 
 * **Test with actual screen reader users** to verify the interaction is understandable
 
