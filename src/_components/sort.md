@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: true
 web: true
 mobile-app: true
-intro-text: "The Sort component reorders information alphabetically, chronologically, numerically, or by any other specified criteria to organize information in a way that makes it easier to analyze or interpret for the user."
+intro-text: "The Sort component reorders information by a specified criteria in a way that makes it easier to analyze or interpret for the user."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
@@ -66,7 +66,7 @@ Add Storybook examples as necessary.
 
 ### Web
 
-* **User clicks the dropdown (Select component) to open a list of sort options.** Alternatively, the user can arrow up and down the menu without entering the menu when the menu is focused. 
+* **User clicks the dropdown to open a list of sort options.** Alternatively, the user can arrow up and down the menu without entering the menu when the menu is focused. 
 
 * **Results automatically update upon selecting a sort option.**
  This type of behavior was chosen over the option of allowing a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns) because this seems to be the most common and expected behavior. From a VA.gov Medications [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.)...
@@ -76,10 +76,14 @@ Additional accessibility recommendations are defined in Accessibility Considerat
 
 <!--* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. -->
 
-* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the width is fixed--we recommended choosing a pre-defined size that fits the longest sort option to avoid truncation.
+* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the width is pre-defined and fixed--choose either the Medium or Large size, whichever avoids truncating the longest sort option. The Extra Large size is available but not recommended as text could be truncated on mobile resolutions. 
 
-* **(TBD) A text description of the results should update with how many results are being shown.** The implementation should follow this format:
-> Showing 1-10 of results.
+<!--recommended choosing a pre-defined size that fits the longest sort option to avoid truncation.-->
+
+
+
+<!--* **(TBD) A text description of the results should update with how many results are being shown.** The implementation should follow this format:
+> Showing 1-10 of results.-->
 
 
 
@@ -127,7 +131,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
         - Lowest to highest
         - Shortest to longest
 
-* **If there is no label for the sort attribute, create one for the sort option.** A standalone `[sort method]`is not permissible.
+* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `[sort method]` (aside from Relevance or another algorithmic method) is not permissible.
 
 * **Align Sort option labels across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest to oldest)`, then the desktop experience should use the same as opposed to using something like `Fill date (newest to oldest)`.
 
@@ -151,11 +155,11 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
     - Avoid shortening the general sort.
         -  For example *Date entered (newest to oldest)* should not be shortened to *Date entered (newest)*.-->
 
-* **Users should be able to sort data in both directions.** For example, a user should be able to sort medication names from A to Z and Z to A.
+* **Users should generally be able to sort data in both directions.** For example, a user should be able to sort medication names from A to Z and Z to A.
     * Sorting in the opposite direction is not necessary if it doesn't reasonably represent a user goal. For example, it may not make sense to allow a user to sort VA locations from furthest to closest.
 
 * **Only include a sort option if it is relevant to the user.** Just because information can be sorted does not mean it should. Use best judgement to determine whether a user would reasonably need a sort option. 
-
+<!-- for example, sorting general site search results from A to Z-->
 
 <!--* **(TBD) Avoid mixing and matching the two conventions.** For example, if the sort options are:
 - Newest to oldest
