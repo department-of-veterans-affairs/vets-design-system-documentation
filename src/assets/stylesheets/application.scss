@@ -231,10 +231,6 @@ these can be removed along with an update to how classes are generated in color-
 }
 
 /* Mobile-first Responsive Styles */
-.mermaid-chart-container {
-  overflow-x: auto;
-  padding: 0 var(--vads-spacing-2);
-}
 
 .mermaid {
   min-width: 600px; /* Ensures readability on mobile */
