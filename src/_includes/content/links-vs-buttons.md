@@ -120,7 +120,7 @@ flowchart TD
             <li>Yes
               <ul>
               <li>Examples: Link to a page which will begin a new form or needs more visual weight than other links</li>
-              <li><strong>Is this on web or mobile?</strong>
+              <li><strong>Is this on web or mobile app?</strong>
                 <ul>
                 <li>Mobile App
                   <ul>
