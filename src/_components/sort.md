@@ -78,7 +78,8 @@ Add Storybook examples as necessary.-->
 <!--* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. -->
 
 * **Sizing and alignment differ on mobile and desktop.**
-    * On desktop resolutions, the width is pre-defined and fixed. The *Sort by* label is in-line with the dropdown. Choose either the Medium or Large size, whichever avoids truncating the longest sort option. The Extra Large size is available but not recommended as text could be truncated on mobile resolutions. 
+    * On desktop resolutions, the width is pre-defined and fixed. The *Sort by* label is in-line with the dropdown.
+        * Choose either the Medium or Large size, whichever avoids truncating the longest sort option. The Extra Large size is available but not recommended due to mobile truncation concerns.
     * On mobile resolutions, the component is responsive and full-width. The *Sort by* label is stacked on top of the dropdown.
 
 <!--recommended choosing a pre-defined size that fits the longest sort option to avoid truncation.-->
@@ -100,7 +101,7 @@ Add Storybook examples as necessary.-->
 ### Mobile app
 
 * The VA mobile app does not currently rely on this component as they already have a combined Filter & Sort button that opens a modal to select and submit sort and filter options.
-    * The naming of sort options must remain consistent across mobile and desktop experiences.
+    * Regardless, the naming of sort options must remain consistent across mobile and desktop experiences.
 
 <!--*Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in the mobile app experiences should still align with the sort options in their desktop counterparts.
 * The VA Mobile app does use a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. --> 
@@ -122,7 +123,7 @@ Date sort would be "[Data label] (newest)- i.e. Revision date (newest first)
 Numeric sort would be "[Data label] (high to low) - i.e. Form number (high to low)
 A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.-->
 
-* **Name sort options consistently.** Sort options (aside from the option to sort by Relevance or another algorithmic method) should follow this convention:`[Sort attribute] (sort method)`. For example:
+* **Name sort options consistently.** Sort options (aside from the option to sort by Relevance or another algorithmic method) must follow this convention:`[Sort attribute]``(sort method)`. For example:
     - *Date entered (newest to oldest)*
     - *Medication name (A to Z)*
     - *Refills remaining (least to most)*
@@ -169,7 +170,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 * **Only include a sort option if it is relevant to the user.** Just because information can be sorted does not mean it should. Use best judgement to determine whether a user would reasonably need a sort option. 
 
-* **When sorting accompanies filtering or other results, a description of the sort event should be added to the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied, sorted by `[Sort attribute][sort method]`.” 
+* **When sorting accompanies filtering or other results, a description of the sort event should be added to the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied, sorted by `[Sort attribute]``[sort method]`.” 
 
 
 ## Accessibility considerations
@@ -183,8 +184,8 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * The sort control must use a native `<select>` element for predictable keyboard and AT behavior.  
 * Changing a sort value must not cause unexpected navigation; only the relevant results region updates.  
 * Live region must announce sorting changes with dataset and page context.  
-<!--Defined in behavior* The sort must re-sort the entire data set, not just the data available in a paginated view. 
-* When navigating through paginated results, the sort criteria must be maintained.-->
+<!--Defined in behavior* The sort must re-sort the entire data set, not just the data available in a paginated view.-->
+<!--* When navigating through paginated results, the sort criteria must be maintained.-->
 * Following [Loading state rules]({{ site.baseurl }}/components/loading-indicator) for sorting that may take awhile.
 <!-- Defined in Behavior * Focus stay on sort component after a selection is made-->
 <!-- Defined in Behavior and combined with maintaining sort criteria for navigating paginated results * When sorting paginated results, the dataset resets the user to page 1.-->
