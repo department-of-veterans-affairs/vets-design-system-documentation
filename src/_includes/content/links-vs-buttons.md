@@ -42,33 +42,131 @@ Button and link confusion can be very frustrating for assistive technology users
 
 ### Implementation notes
 
-{% include component-example.html alt="A flowchart designed to arrive at a decision between using a button or link." file="/images/components/button/button-or-link-flow-chart.png" caption="Button vs. Link flow chart." %}
+<div class="mermaid-width mermaid-comparison">
+  <h4 class="mermaid-comparison__title">Should this be a button or link?</h4>
+  <div class="sr-only">
+    If you use a screen reader: Skip the visual flowchart below and jump to the <a href="#button-link-decision-list">text-based decision list</a> for the same information in a more accessible format.
+  </div>
+  {% include mermaid-chart.html 
+     id="button-link-decision-flowchart" 
+     caption="Decision flowchart to help determine whether to use a button or link element."
+     chart="
+flowchart TD
+    Start[\"<b>Should this be a button or a link?</b>\"]:::node-start --> Q1{\"<b>Is the purpose of<br/>this control to<br/>navigate elsewhere?</b>\"}:::node-question
+    
+    %% Navigation Path (YES)
+    Q1 --> NavYes([\"<b>YES</b><br/>Examples:<br/> Going to a page or<br/> a static file like a PDF\"]):::node-answer-primary
+    NavYes --> Q2{\"<b>Is data submitted<br/>before navigation?</b>\"}:::node-question
+    
+    Q2 --> DataYes([\"<b>YES</b><br/>Examples:<br/> Sending data to server or<br/> saving client-side before<br/>moving to a new page\"]):::node-answer-primary
+    DataYes --> ResultBtn1([\"Make it a <b>BUTTON</b>\"]):::node-result-button
+    
+    Q2 --> DataNo([\"<b>NO</b>\"]):::node-answer-secondary
+    DataNo --> Q3{\"<b>Does it need to<br/>stand out from surrounding<br/>design elements?</b>\"}:::node-question
+    
+    Q3 --> EmphNo([\"<b>NO</b><br/>Examples:<br/> Link in a body of text,<br/>footer of a form,<br/>or in a menu\"]):::node-answer-secondary
+    EmphNo --> ResultLink1([\"Make it a <b>LINK</b>\"]):::node-result-link
+    
+    Q3 --> EmphYes([\"<b>YES</b><br/>Examples:<br/> Link to a page which <br/>will begin a new form or<br/> needs more visual weight<br/>than other links\"]):::node-answer-primary
+    EmphYes --> Q4{\"<b>Is this on web<br/>or mobile app?</b>\"}:::node-question
+    
+    Q4 --> PlatWeb([\"Web\"]):::node-context
+    PlatWeb --> ResultAction([\"Make it an <b>ACTION LINK</b>\"]):::node-result-action
+    Q4 --> PlatMobile([\"Mobile App\"]):::node-context
+    PlatMobile --> AskExpert[\"<b>Ask your friendly neighborhood<br/> accessibility expert</b>\"]:::node-special
+    
+    %% Action Path (NO)
+    Q1 --> ActionNo([\"<b>NO</b><br/>Examples:<br/> Taking an action<br/>or opening a modal\"]):::node-answer-secondary
+    ActionNo --> Q5{\"<b>Is the purpose of this<br/>control to generate<br/>data for a file?</b>\"}:::node-question
+    
+    Q5 --> FileYes([\"<b>YES</b><br/>Examples:<br/> Create a PDF<br/>from a web page or<br/>data on the server\"]):::node-answer-primary
+    FileYes --> ResultLink2([\"Make it a <b>LINK</b>\"]):::node-result-link
+    
+    Q5 --> FileNo([\"<b>NO</b>\"]):::node-answer-secondary
+    FileNo --> ResultBtn2([\"Make it a <b>BUTTON</b>\"]):::node-result-button
+" %}
+</div>
 
-#### Should this be a button or link?
 
-* **Is the purpose of the control to navigate elsewhere?**
-    * Yes
-      * Examples: Going to a page; Going to a static file, like a PDF
-      * **Is data submitted before navigation?**
-        * Yes
-          * Examples: Sending data to a server or saving client side before moving to a new page, like a form
-          * _Make it a Button_
-        * No
-          * **Does it need to stand out from surrounding design elements?**
-            * No
-              * Examples: Link in body text; Link in the footer of a form; Links in a menu
-              * _Make it a Link_
-            * Yes
-              * Examples: A link to a page which will begin a new form; A link on a page with an existing button as the primary action that’s needs more visual weight than other links
-                * **Is this on web or mobile?**
-                  * Mobile
-                    * _Ask your friendly neighborhood accessibility expert_
-                  * Web
-                    * _Make it an Action Link_
-    * No
-      * **Is the purpose of this control to generate data for a file?**
-        * Examples: Creating a PDF from a web page; Creating a PDF from data on the server
-        * Yes
-          * _Make it a Link_
-        * No
-          * _Make it a Button_
+
+<va-additional-info trigger="View text-based decision list for buttons vs. links" id="button-link-decision-list">
+
+<h4>Should this be a button or link?</h4>
+
+<ul>
+<li><strong>Is the purpose of the control to navigate elsewhere?</strong>
+    <ul>
+    <li>Yes
+      <ul>
+      <li>Examples: Going to a page or a static file like a PDF</li>
+      <li><strong>Is data submitted before navigation?</strong>
+        <ul>
+        <li>Yes
+          <ul>
+          <li>Examples: Sending data to server or saving client-side before moving to a new page</li>
+          <li><em>Make it a Button</em></li>
+          </ul>
+        </li>
+        <li>No
+          <ul>
+          <li><strong>Does it need to stand out from surrounding design elements?</strong>
+            <ul>
+            <li>No
+              <ul>
+              <li>Examples: Link in a body of text, footer of a form, or in a menu</li>
+              <li><em>Make it a Link</em></li>
+              </ul>
+            </li>
+            <li>Yes
+              <ul>
+              <li>Examples: Link to a page which will begin a new form or needs more visual weight than other links</li>
+              <li><strong>Is this on web or mobile app?</strong>
+                <ul>
+                <li>Mobile App
+                  <ul>
+                  <li><em>Ask your friendly neighborhood accessibility expert</em></li>
+                  </ul>
+                </li>
+                <li>Web
+                  <ul>
+                  <li><em>Make it an Action Link</em></li>
+                  </ul>
+                </li>
+                </ul>
+              </li>
+              </ul>
+            </li>
+            </ul>
+          </li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    <li>No
+      <ul>
+      <li>Examples: Taking an action or opening a modal</li>
+      <li><strong>Is the purpose of this control to generate data for a file?</strong>
+        <ul>
+        <li>Yes
+          <ul>
+          <li>Examples: Create a PDF from a web page or data on the server</li>
+          <li><em>Make it a Link</em></li>
+          </ul>
+        </li>
+        <li>No
+          <ul>
+          <li><em>Make it a Button</em></li>
+          </ul>
+        </li>
+        </ul>
+      </li>
+      </ul>
+    </li>
+    </ul>
+</li>
+</ul>
+
+</va-additional-info>
+
