@@ -130,9 +130,7 @@ anchors:
 
 {% include storybook-preview.html story="uswds-va-checkbox-group--internationalization" link_text="Checkbox group with internationalization" %}
 
-#### Indeterminate
-
-<va-alert slim status="warning">Review the <a href="#indeterminate-state">indeterminate state accessibility considerations</a> before implementing.</va-alert>
+#### Indeterminate checkbox state
 
 {% include storybook-preview.html story="uswds-va-checkbox--indeterminate" link_text="Checkbox with indeterminate state" height="300px" %}
 
@@ -168,11 +166,12 @@ anchors:
 #### Choosing between variations
 
 * **Use the [Forms pattern - Single](#forms-pattern---single) and [Forms pattern - Multiple](#forms-pattern---multiple) variations for implementing the [Ask users for a single response]({{ site.baseurl }}/patterns/ask-users-for/a-single-response) pattern.** These component variations are specifically designed to help implement the single response pattern. The [Forms pattern - Single error](#forms-pattern---single-error) variation shows error handling for the component variation. For checkbox groups used outside of this pattern, for example on a longer form page, use the [Label header](#label-header) checkbox group variation.
-* **Use the indeterminate state for a parent checkbox that controls a group of related child checkboxes.** The indeterminate state visually indicates that some (but not all) child checkboxes are selected.
-  * **For hierarchical selection groups**: When checkboxes have a parent-child relationship, where selecting the parent affects all children and vice versa.
-  * **For "Select all" functionality**: When implementing a "Select all" option at the top of a list of checkboxes.
-  
-  **Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
+* **Use the indeterminate state only on a parent checkbox that controls a group of related child checkboxes.**
+  The parent checkbox may appear in a mixed (indeterminate) state when *some, but not all* child checkboxes are selected.
+  * **Use in hierarchical groups** where the parent represents the aggregate state of the child items.
+  * **Use for "Select all" controls** to reflect partial or complete selection.
+  * **Don't apply the indeterminate state to child checkboxes.** Child checkboxes can only be checked or unchecked.
+
 
 {% include content/conditionally-revealed-fields.md %}
 
@@ -180,14 +179,18 @@ anchors:
 
 **Parent checkbox behavior**:
 
-* When clicked in the indeterminate state, the parent checkbox typically selects all child checkboxes.
-* When clicked in the checked state, the parent checkbox deselects all child checkboxes.
+* When clicked in an indeterminate state, the parent checkbox typically selects all child checkboxes.
+* When clicked in the checked state, the parent checkbox typically deselects all child checkboxes.
+* The parent’s checked, unchecked, or mixed state must always match the computed state of its children.
 
 **Child checkbox influence**:
 
-* When all child checkboxes are selected, the parent checkbox appears checked.
-* When some child checkboxes are selected, the parent checkbox appears indeterminate.
-* When no child checkboxes are selected, the parent checkbox appears unchecked.
+* All children selected → parent is **checked**
+* Some children selected → parent is **indeterminate**
+* No children selected → parent is **unchecked**
+
+**Important:**
+The indeterminate state is **not user-interactive**. Users can't toggle a checkbox into or out of this state; it's set programmatically to reflect the mixed selection state of the group.
 
 **Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
 
@@ -237,20 +240,31 @@ The native onBlur event is available on this component. It can be used by adding
 
 ### Indeterminate state
 
-**Screen reader behavior for the indeterminate state varies significantly across assistive technologies.** This inconsistency can create confusion for screen reader users who may not have the visual context of the full checkbox group:
+**Screen reader behavior for the indeterminate state varies significantly across assistive technologies.**  
+This can create confusion for non-visual users who don't see the parent-child relationship.
 
-* **VoiceOver on iOS** announces the checkbox as "mixed"
-* **Narrator on Windows** announces the checkbox as "indeterminate"
-* **NVDA on Windows** announces the checkbox as "half checked"
+Screen reader announcement examples:
 
-While the indeterminate state is relatively easy to understand with visual context, typical screen reader users may not immediately understand what "mixed," "indeterminate," or "half checked" means in the context of your form.
+* **VoiceOver (iOS/macOS):** often “mixed,” “partially selected,” or sometimes reads only “selected”
+* **NVDA (Windows):** “partially checked”
+* **JAWS (Windows):** “mixed” or “partially checked”
+* **Narrator:** “indeterminate”
 
-**When using the indeterminate state, provide additional context to help all users understand the parent checkbox behavior:**
+Because these announcements differ, **don't rely on the term "mixed" alone to explain the control's purpose.**  
 
-* Use clear, descriptive labels that explain the relationship between parent and child checkboxes
-* Consider providing hint text that explains how selecting or deselecting the parent checkbox affects child checkboxes
-* Ensure the label clearly indicates this is a control that affects multiple related options
-* Test with actual screen reader users to verify the interaction is understandable
+To ensure all users understand the control:
+
+* **Use a clear label** that describes the group the parent checkbox controls
+
+* **Provide optional hint text** that explains the parent checkbox selects or deselects all related options
+
+* **Use semantic grouping** (fieldset/legend or role="group") so screen reader users understand the parent-child relationship
+
+* **For large or complex groups**, consider adding hidden screen reader text (such as "2 of 5 selected") to help clarify why the parent is in a mixed state
+
+* **Test with actual screen reader users** to verify the interaction is understandable
+
+These enhancements help ensure that screen reader users understand what the parent checkbox represents, even when their technology announces “mixed,” “partially checked,” or another inconsistent term.
 
 ## Privacy guidance 
- {% include content/privacy-selection-fields.md %}
+{% include content/privacy-selection-fields.md %}
