@@ -5,7 +5,7 @@ permalink: /components/sort/
 # contributors: Command separated list of contributor names with (org name) following, if applicable
 draft: true
 web: true
-mobile-app: true
+mobile-app: false
 intro-text: "The Sort component enables the user to reorder search results and long lists of data in a way that is easier for them to interpret."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
