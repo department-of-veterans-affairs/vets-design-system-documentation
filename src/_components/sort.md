@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: true
 web: true
 mobile-app: true
-intro-text: "The Sort component reorders information by a specified criteria in a way that makes it easier to analyze or interpret for the user."
+intro-text: "The Sort component enables users to reorder information in a way that allows them to find relevant information quickly and easily within web and mobile applications."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
@@ -15,9 +15,9 @@ status: use-with-caution-candidate
 web-component: va-sort
 ---
 
-## Examples
+<!--## Examples
 
- <!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example -->
+ <!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example 
 
 ### Web
 
@@ -37,23 +37,17 @@ Add Storybook examples as necessary.
 
 ### Variation 1
 
-Add Storybook examples as necessary.
+Add Storybook examples as necessary.-->
 
 ## Usage
 
 ### When to use Sort
 
-* **When users benefit from seeing information in a different order.** As a guideline, use Sort when there is more than one page of results or more than 10 items.
 * **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. 
 
-<!--
-* **Common contexts include the following:**
-    - Medications
-    - Appointments
-    - Secure messages
-    - Claims
-    - History
--->
+* **When there is more than one page of results or more than 10 items.**
+
+
 ### When to consider something else
 
 * **When order is not relevant.** If the order of data does not impact the results or interpretation, sorting is not necessary.
@@ -68,15 +62,15 @@ Add Storybook examples as necessary.
 
 * **User clicks the dropdown to open a list of sort options.** Alternatively, the user can arrow up and down the menu without entering the menu when the menu is focused. 
 
-* **Results automatically update upon selecting a sort option.**
- This type of behavior was chosen over the option of allowing a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns) because this seems to be the most common and expected behavior. From a VA.gov Medications [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.)...
+* **Results automatically update upon selecting a sort option.** The dataset is reset to page 1. 
+    * **Why implicit submission?**
+    This type of behavior was chosen over the option of allowing a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns) because this seems to be the most common and expected behavior. From a VA.gov Medications [Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.)...
 > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reeader dependent user did mention missing things because of his speed".
 
-Additional accessibility recommendations are defined in Accessibility Considerations.
 
 <!--* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. -->
 
-* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the width is pre-defined and fixed--choose either the Medium or Large size, whichever avoids truncating the longest sort option. The Extra Large size is available but not recommended as text could be truncated on mobile resolutions. 
+* **The component is responsive and full-width on mobile resolutions.** On desktop, the width is pre-defined and fixed--choose either the Medium or Large size, whichever avoids truncating the longest sort option. The Extra Large size is available but not recommended as text could be truncated on mobile resolutions. 
 
 <!--recommended choosing a pre-defined size that fits the longest sort option to avoid truncation.-->
 
@@ -131,7 +125,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
         - Lowest to highest
         - Shortest to longest
 
-* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `[sort method]` (aside from Relevance or another algorithmic method) is not permissible.
+* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `[sort method]` (aside from Relevance or another algorithmic method) is not recommended.
 
 * **Align Sort option labels across mobile and desktop experiences.** If the mobile experience for Prescriptions uses `Date filled (newest to oldest)`, then the desktop experience should use the same as opposed to using something like `Fill date (newest to oldest)`.
 
@@ -159,49 +153,9 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
     * Sorting in the opposite direction is not necessary if it doesn't reasonably represent a user goal. For example, it may not make sense to allow a user to sort VA locations from furthest to closest.
 
 * **Only include a sort option if it is relevant to the user.** Just because information can be sorted does not mean it should. Use best judgement to determine whether a user would reasonably need a sort option. 
-<!-- for example, sorting general site search results from A to Z-->
 
-<!--* **(TBD) Avoid mixing and matching the two conventions.** For example, if the sort options are:
-- Newest to oldest
-- Oldest to newest
-- Remaining refills (least to most)
-- Remaining refills (most to least)
+* **When sorting accompanies filtering or other results, the “Sort” description can be added to a “results description”.** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied. Sorted by [Sort method].” 
 
-Change the general options to specify the sort attribute. If there is no label for that attribute, create one for the sort option. The correct example should look like this:
-- Date prescribed (newest to oldest)
-- Date prescribed (oldest to newest)
-- Remaining refills (least to most)
-- Remaining refills (most to least) -->
-
-
-<!--
-* **The label for the sort option should align with the label of the sort attribute.** For example, if the label for the result's sort attribute is `Date filled:` *Oct 10th, 2025*, then the way the sort option should be labeled should be `Date filled (newest)` and `Date filled (oldest)`.-->
-
-<!--**Quantity**
-            - Least to most
-            - Most to least
-        - **Size**
-            - Smallest to largest
-            - Largest to smallest
-        - **Value**
-            - Lowest to highest
-            - Highest to lowest
-        - **Length/duration**
-            - Shortest to longest
-            - Longest to shortest
-    Adding a sort attributes as an option can be added as way to introduce additional specificity and is permitted so long as the general sort method is included at the end in parentheses.--> 
-
-<!--
-* Ensure that the default sort option is the one that most users expect information to be sorted by.
-    * For example, when a user is viewing their Vaccine history, the information should be expressed chronologically by default, meaning that the sort option should be "Date received (newest)".It may not make sense to organize Vaccine history alphabetically by default since history is usually chronological.
-*  sort options to the sorting parameter name when possible.
-    * For example, if the parameter that is being used to sort prescription history is "Last filled on [date]", the sort option should be "Last filled" rather than "Date last filled". This helps users maintain mental model of the sorting options.
-* Allow users to sort the content by the factors that are most important to them. Results should be sorted by the option relevant to the content. 
- * For example, a global search should be sorted by relevance to the searched term or phrase. Whereas employment history would be sorted chronologically or by tenure.-->
-
-<!--
-Bulleted list of content related instructions to the designer.
-* May be an include is shared with the Content style guide section.-->
 
 ## Accessibility considerations
 
@@ -211,7 +165,22 @@ Bulleted list of content related instructions to the designer.
 
 ### Must
 
+* The sort control must use a native `<select>` element for predictable keyboard and AT behavior.  
+* Changing a sort value must not cause unexpected navigation; only the relevant results region updates.  
+* Focus must remain stable and visible after sorting.  
+* Live region must announce sorting changes with dataset and page context.  
+* The sort must re-sort the entire data set, not just the data available in a paginated view. 
+* When navigating through paginated results, the sort criteria must be maintained
+* Following [Loading state rules]({{ site.baseurl }}/components/loading-indicator) for sorting that may take awhile.
+* Focus stay on sort component after a selection is made
+<!-- Defined in Behavior * When sorting paginated results, the dataset resets the user to page 1.-->
+
 ### Should
+* Announce loading states using `aria-busy`.
+<!--* Reset sort and filtered views when the browser is refreshed-->
+* When a page is refreshed by the user, the sort selection should persist
+* Should not support opt groups
+
 
 ### Consider
 <!-- Source: Search filter
