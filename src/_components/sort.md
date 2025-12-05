@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: true
 web: true
 mobile-app: false
-intro-text: "The Sort component enables the user to reorder search results and long lists of data in a way that is easier for them to interpret."
+intro-text: "The Sort component enables the user to reorder search results and lists of information in a way that is easier for them to interpret."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/file/JDFpGLIojfuQwANXScQjqe/VADS-Component-Examples?type=design&node-id=0%3A1&mode=design&t=3RlM8TiFaDLH4OAE-1
@@ -43,7 +43,13 @@ Add Storybook examples as necessary.-->
 
 ### When to use Sort
 
-* **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. 
+* **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. Some contexts could include:
+    * Search results 
+    * Medications
+    * Appointments
+    * Secure messages
+    * Claims
+    * History 
 
 * **When there is more than one page of results or more than 10 items.**
 
