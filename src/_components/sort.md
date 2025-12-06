@@ -85,7 +85,7 @@ Add Storybook examples as necessary.-->
 
 * **Sizing and alignment differ on mobile and desktop.**
     * On desktop resolutions, the width is pre-defined and fixed. The *Sort by* label is in-line with the dropdown.
-        * Choose either the Medium or Large size, whichever avoids truncating the longest sort option. The Extra Large size is available but not recommended due to mobile truncation concerns.
+        * Choose either the Medium (md) or Large (lg) size, whichever avoids truncating the longest sort option. The Extra Large (xl) size is available but not recommended due to mobile truncation concerns.
     * On mobile resolutions, the component is responsive and full-width. The *Sort by* label is stacked on top of the dropdown.
 
 <!--recommended choosing a pre-defined size that fits the longest sort option to avoid truncation.-->
