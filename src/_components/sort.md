@@ -130,10 +130,12 @@ Date sort would be "[Data label] (newest)- i.e. Revision date (newest first)
 Numeric sort would be "[Data label] (high to low) - i.e. Form number (high to low)
 A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.-->
 
-* **Name sort options consistently.** Sort options (aside from the option to sort by Relevance or another algorithmic method) must follow this convention:`[Sort attribute](sort method)`. For example:
-    - *Date entered (newest to oldest)*
-    - *Medication name (A to Z)*
-    - *Refills remaining (least to most)*
+* **Name sort options consistently.** Sort options (aside from the option to sort by *Relevance* or another algorithmic method) must follow this convention:
+    * `[Sort attribute](sort method)`. 
+    * Some examples: 
+        - *Date entered (newest to oldest)*
+        - *Medication name (A to Z)*
+        - *Refills remaining (least to most)*
     
     While the `[Sort attribute]` can vary greatly, `[sort methods]` should be consistent. Deviations are permissible depending on the context, but teams should aim to align with the following list:
     - **Alphabetical**
