@@ -43,7 +43,7 @@ Add Storybook examples as necessary.-->
 
 ### When to use Sort
 
-* **When there are clear, meaningful ways to sort.** Sort options should represent different user goals. Some contexts could include:
+* **When there are clear, meaningful ways to sort.** Sort options provide utility to the user by representing user goals. Some contexts could include:
     * Search results 
     * Medications
     * Appointments
