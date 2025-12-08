@@ -43,7 +43,7 @@ Add Storybook examples as necessary.-->
 
 ### When to use Sort
 
-* **When there are clear, meaningful ways to sort.** Sort options provide utility to the user by representing user goals. Some contexts could include:
+* **When there are clear, meaningful ways to sort.** Sort options should provide utility to the user by representing user goals. Some contexts could include:
     * Search results 
     * Medications
     * Appointments
@@ -66,11 +66,11 @@ Add Storybook examples as necessary.-->
 
 ### Web
 
-* **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the menu.
+* **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu.
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission. 
     * **Why implicit submission?**
-    This seems to be the most common and expected behavior. The alternative to allow a user to explicitly confirm their sort option with a button (which has fewer accessibility concerns) was considered, however a [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
+    This seems to be the most common and expected behavior. The alternative to allow a user to explicitly confirm their sort option with a button was considered, however a [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
 > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
 
     In order to prevent a screen-reading user from prematurely making a sort selection while navigating sort options, teams should implement a debounce or delay.
@@ -104,7 +104,7 @@ Add Storybook examples as necessary.-->
 
 ### Mobile app
 
-* **The VA mobile app does not currently rely on this component.** It uses it's own combined Filter & Sort button that opens a modal to select and submit sort and filter options.
+* **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
     * The naming of sort options must still remain consistent across mobile and desktop experiences.
 
 <!--*Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in the mobile app experiences should still align with the sort options in their desktop counterparts.
