@@ -7,8 +7,10 @@ anchors:
   - anchor: Link text
   - anchor: Formatting
   - anchor: Linking to the main VA website
+  - anchor: Linking to forms
   - anchor: Linking to documents and other file sources
   - anchor: Linking to external sites
+  - anchor: Links in lists
   - anchor: Privacy guidance
 ---
 
