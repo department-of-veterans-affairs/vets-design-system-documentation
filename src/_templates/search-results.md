@@ -111,7 +111,7 @@ Active filter chips that show the currently applied filter values.
 
 ### Sort
 
-Changes the order of the results. Sort uses the [Select]({{ site.baseurl }}/components/form/select) component to show the sorting options.
+[Sort]({{ site.baseurl }}/components/sort) component which utilizes [Select]({{ site.baseurl }}/components/form/select) as its foundation. It allows the user to change the order of the results. 
 
 ### Results description
 
@@ -195,5 +195,5 @@ The text of the link of the matching page. This should not be a link (the header
 
 * **Use filter chips to show the filters being applied when there are more than 3 facets.** 3 or more facets requires the use of filter chips to show what is currently selected in filters.
 * **Use a left-hand sidebar when the main purpose of the product is to search.** If your product's main purpose is to allow users to search, then use a persistent, visible, left side navigation from the tablet breakpoint and wider viewports. For example, global Search, GI Bill Comparison tool, and Resource & Support (or other knowledge bases) feature search, filtering, and sorting as the main focus of their products thus they would use a persistent side navigation to hold filtering.
-* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. See [guidance on sort](#sort).
+* **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action. Sorting is for reordering results whereas Filtering is for narrowing them down.
 * **Filtering happens inline on the page.** Do not take users to a new page or screen in order to filter search results.
