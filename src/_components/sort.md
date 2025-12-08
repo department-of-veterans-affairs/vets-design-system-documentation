@@ -3,7 +3,7 @@ layout: component
 title: Sort
 permalink: /components/sort/
 # contributors: Command separated list of contributor names with (org name) following, if applicable
-draft: true
+draft: false
 web: true
 mobile-app: false
 intro-text: "Enables the user to reorder search results and lists of information in a way that is easier for them to analyze."
