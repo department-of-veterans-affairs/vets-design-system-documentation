@@ -1,5 +1,5 @@
 ---
-layout: content-style-guide
+layout: default
 permalink: /content-style-guide/plain-language/use-conversational-language
 has-parent: /content-style-guide/plain-language/
 title: Use conversational language
@@ -36,7 +36,7 @@ VA bases the monthly rate for Veterans on the 2 factors listed here.
 
 This will help VA process your claim quickly.
 
-**Are Veterans eligible for pension benefits?** Veterans who meet these requirements may be eligible. 
+**Are Veterans eligible for pension benefits?** Veterans who meet these requirements may be eligible. 
 
 </div>
 </div>
