@@ -119,9 +119,13 @@ Text describing how many results are being shown.
 
 * **Showing 1-10 of results.** The implementation should follow this format:
 
-> Showing 1-10 of results for "[query]"
+> Showing 1-10 of 999 results for "`[query]`"
 
-* **Update when filters or sort changes.** The results description must update when filters or sort are changed so that all users can understand that the results have been updated.
+* **Update when filters or sort changes.** The results description must update when filters or sort are changed so that all users can understand that the results have been updated. Implementation should follow this format:
+
+> “Showing 1–10 of 999 results for "`[query]`" with 5 filters applied, sorted by `[Sort attribute](sort method)`.” 
+
+When used in non-searching contexts, `for "[query]"` can be dropped.
 
 ### Apply filters
 
