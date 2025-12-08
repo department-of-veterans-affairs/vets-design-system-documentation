@@ -189,9 +189,6 @@ anchors:
 * Some children selected → parent is **indeterminate**
 * No children selected → parent is **unchecked**
 
-**Important:**
-The indeterminate state is **not user-interactive**. Users can't toggle a checkbox into or out of this state; it's set programmatically to reflect the mixed selection state of the group.
-
 **Note:** Review the [indeterminate state accessibility considerations](#indeterminate-state) before implementing.
 
 ### Errors
