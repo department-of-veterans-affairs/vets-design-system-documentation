@@ -3,8 +3,14 @@ layout: default
 permalink: /content-style-guide/plain-language/use-conversational-language
 has-parent: /content-style-guide/plain-language/
 title: Use conversational language
-intro-text: "We use a personable and conversational voice in VA content. This approach aligns with our content principle to speak person-to-person with the people we serve rather than talking about them."  
+intro-text: "We use a personable and conversational voice in VA content. This approach aligns with our content principle to speak person-to-person with the people we serve rather than talking about them."
 ---
+
+# {{ page.title }}
+
+<div class="va-introtext" markdown="1">
+   {{ page.intro-text }}
+</div>
 
 Here's what this means:
 
