@@ -121,7 +121,7 @@ Text describing how many results are being shown.
 
 > Showing 1-10 of results for "[query]"
 
-* **Update when filters change.** The results description must update when filters are changed so that all users can understand that the results have been updated.
+* **Update when filters or sort changes.** The results description must update when filters or sort are changed so that all users can understand that the results have been updated.
 
 ### Apply filters
 
@@ -163,7 +163,13 @@ The text of the link of the matching page. This should not be a link (the header
 ## How to design and build
 
 ### Sorting
+<va-link-action
+  href="{{ site.baseurl }}/components/sort"
+  text="Follow the guidance for the sort component"
+  type="secondary"
+></va-link-action>
 
+<!--
 * **Add sorting when it has utility to the user.** Sorting is not required but recommended when changing the order of the search results provides utility to the user. For example, if results contain one or more facets that can be sorted.
 * **Sorting does not change contents of the page.** The action of sorting must not change any information on the page. Sorting simply reorders the page contents.
 * **Sort and filtering are not the same!** Do not conflate the Sort action with the Filter action.
@@ -171,7 +177,7 @@ The text of the link of the matching page. This should not be a link (the header
   * Sometimes users want to simply sort a list (and not filter anything) and should have a clear path to do so.
   * Combining them adds unnecessary complexity and cognitive load, and can force users to make more clicks or taps to simply reorder a list (Sort) while still having to navigate through the Filter options.
 * **Sorting happens inline on the page.** Do not take users to a new page or screen in order to sort search results.
-* **Sorting does not require an additional action.** Sorting does not require an accompanying button to trigger the sort. Changing the select menu triggers the sorting action.
+* **Sorting does not require an additional action.** Sorting does not require an accompanying button to trigger the sort. Changing the select menu triggers the sorting action.-->
 
 ### Filtering
 
