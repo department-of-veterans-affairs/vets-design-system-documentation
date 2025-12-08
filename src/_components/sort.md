@@ -66,7 +66,7 @@ Add Storybook examples as necessary.-->
 
 ### Web
 
-* **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu.
+* **User clicks the dropdown to open a menu of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu.
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission. 
     * **Why implicit submission?**
@@ -194,7 +194,7 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * Live region must announce sorting changes with dataset and page context.  
 <!--Defined in behavior* The sort must re-sort the entire data set, not just the data available in a paginated view.-->
 <!--* When navigating through paginated results, the sort criteria must be maintained.-->
-* Following [Loading state rules]({{ site.baseurl }}/components/loading-indicator) for sorting that may take awhile.
+* Follow [loading state rules]({{ site.baseurl }}/components/loading-indicator) for sorting that may take awhile.
 <!-- Defined in Behavior * Focus stay on sort component after a selection is made-->
 <!-- Defined in Behavior and combined with maintaining sort criteria for navigating paginated results * When sorting paginated results, the dataset resets the user to page 1.-->
 
