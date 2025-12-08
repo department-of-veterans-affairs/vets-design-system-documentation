@@ -12,7 +12,7 @@ intro-text: "Enables the user to reorder search results and lists of information
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/branch/ZCvzpF0EbyeCbO4fL9u8r0/VADS-Component-Library?m=auto&node-id=40936-5762&t=JVGxloXD7xd6RgeE-1
 # figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-with-caution-candidate
-web-component: va-sort
+# web-component: va-sort
 ---
 
 <!--## Examples
