@@ -162,6 +162,15 @@ The text of the link of the matching page. This should not be a link (the header
 
 ## How to design and build
 
+### Filtering
+
+<va-link-action
+  href="{{ site.baseurl }}/components/search-filter"
+  text="Follow the guidance for the search filter component"
+  type="secondary"
+></va-link-action>
+
+
 ### Sorting
 <va-link-action
   href="{{ site.baseurl }}/components/sort"
@@ -178,14 +187,6 @@ The text of the link of the matching page. This should not be a link (the header
   * Combining them adds unnecessary complexity and cognitive load, and can force users to make more clicks or taps to simply reorder a list (Sort) while still having to navigate through the Filter options.
 * **Sorting happens inline on the page.** Do not take users to a new page or screen in order to sort search results.
 * **Sorting does not require an additional action.** Sorting does not require an accompanying button to trigger the sort. Changing the select menu triggers the sorting action.-->
-
-### Filtering
-
-<va-link-action
-  href="{{ site.baseurl }}/components/search-filter"
-  text="Follow the guidance for the search filter component"
-  type="secondary"
-></va-link-action>
 
 ## Accessibility considerations
 
