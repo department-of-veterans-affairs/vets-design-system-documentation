@@ -255,7 +255,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **Department of Veterans Affairs**
 : "Veterans" doesn't take an apostrophe. On VA.gov, because we show the complete U.S. Department of Veterans Affairs (VA) logo in the global header, we use VA or use the first-person "we."
 
-: [Go to the We, us, you section for examples](https://design.va.gov/content-style-guide/we-us-you)
+: [Go to the Use conversational language section for examples](https://design.va.gov/content-style-guide/use-conversational-language)
 
 : Don't use "DVA," "Dept of VA," or other non-standard shortened versions. For more, go to the entries "VA" and "VA.gov."
 
