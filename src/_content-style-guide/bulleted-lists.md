@@ -4,7 +4,7 @@ title: Bulleted and numbered lists
 intro-text: Bulleted and numbered lists help make information easier to scan and understand. If a sentence contains more than 3 items or ideas, we recommend breaking the sentence up into a list. These guidelines also apply to content for checkboxes and radio buttons in forms.
 anchors:
   - anchor: Considerations
-  - anchor: Punctuation for lists
+  - anchor: Punctuation
   - anchor: Links in lists
 ---
 
