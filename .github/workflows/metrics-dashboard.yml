@@ -330,28 +330,28 @@ jobs:
           # Get current date for PR description
           CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
           
+          # Create PR body as a variable
+          PR_BODY="## Summary
+          Automated weekly update of metrics dashboard data collected from GitHub issues and component usage.
+          
+          ### Files Updated
+          - Issue tracking metrics (JSON files)
+          - Component usage data from component-library
+          - Experimental design metrics
+          - Governance metrics and collaboration cycle data
+          - Design system component usage CSV data
+          
+          ### Test Plan
+          - [ ] Verify JSON files are valid
+          - [ ] Check dashboard displays updated data correctly
+          - [ ] Confirm no regressions in metric calculations
+          
+          🤖 Generated with automated workflow - ${CURRENT_DATE}"
+          
           # Create PR using GitHub CLI
           gh pr create \
             --title "📊 Update metrics dashboard data - $(date -u '+%Y-%m-%d')" \
-            --body "$(cat <<EOF
-            ## Summary
-            Automated weekly update of metrics dashboard data collected from GitHub issues and component usage.
-          
-            ### Files Updated
-            - Issue tracking metrics (JSON files)
-            - Component usage data from component-library
-            - Experimental design metrics
-            - Governance metrics and collaboration cycle data
-            - Design system component usage CSV data
-          
-            ### Test Plan
-            - [ ] Verify JSON files are valid
-            - [ ] Check dashboard displays updated data correctly
-            - [ ] Confirm no regressions in metric calculations
-          
-            🤖 Generated with automated workflow - ${CURRENT_DATE}
-            EOF
-            )" \
+            --body "$PR_BODY" \
             --head "$BRANCH_NAME" \
             --base main
           
