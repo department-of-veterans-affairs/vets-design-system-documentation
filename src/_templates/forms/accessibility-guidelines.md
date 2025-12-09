@@ -56,26 +56,19 @@ Every form interaction should be straightforward, regardless of how a Veteran ac
 
 Digitized forms on VA.gov are built as single-page applications (SPAs). When users move to a new page in these forms (also called a “route change" in SPAs) the app must manually set focus. This is because, unlike when a static page loads, focus does not reset automatically after an SPA route change. Setting focus helps users stay oriented and take the next step.
 
-### Why moving focus in a form application matters
-
-* **Moving focus gives users context:** Because screen readers prioritize announcing newly focused elements, screen reader users will hear the focused element right away.
-* **Managing focus moves users closer to the next relevant action:** Moving focus to the beginning of the new content helps users more easily find relevant information and the next action they need to complete.
-* Meets WCAG AA criteria: Supports focus order and visibility (WCAG 2.2: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html), 2.4.7 [2.4.7 Focus Not Obscured](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured.html) (AA)) and reduces unexpected context changes ([3.2.3 Consistent Navigation](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html)).
+{% include a11y/focus-management-benefits-risks.md %}
 
 ### Where to move focus when a new form page loads
 
 When a new page loads in a form application, move focus to an element that gives users context and helps them find the next action. Use these guidelines to choose the best focus location:
 
-1. **If the page has a unique page heading** (usually an H1 at the top of the page or H3 inside the step content), set focus there.
-2. **If the page does not have a unique page heading**, set focus on the step indicator header (usually an H2). 
+- **If the page has a unique page heading**, set focus there. The unique heading is usually an H1 at the top of the page or H3 inside the step content.
+- **If the page does not have a unique page heading**, set focus on the step indicator header. This header is usually an H2.
+- **When users navigate back to a form page**, treat it like a fresh page load and move focus to the top unique heading.
 
-### Where to move focus in other scenarios 
+### Where to move focus in other scenarios
 
-* **If there’s a validation error when submitting, move focus to the first error message.** After the user fixes the error and submits the form successfully, follow the guidance for  [moving focus when a new page loads](#where-to-move-focus-when-a-new-form-page-loads).
-* **When users navigate back to a form page**, treat it like a fresh page load and move focus to the top unique heading.
-* **After a modal closes**, focus should return to the button that opened it.
-* **Do not remove the “Skip to content” link on the page.** Scripts should still set focus to the top unique heading when a new page loads.
-* **Scroll focused headings into view.** This helps users know where they are and meets WCAG criterion [2.4.11 (AA)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html): Focus not obscured.
+You can find guidance for managing focus in other scenarios in the [focus management guidelines]({{ site.baseurl }}/accessibility/focus-management#focus-management).
 
 ### How to set focus with forms code
 
@@ -204,7 +197,7 @@ For complete testing methodology guidance, see [Accessibility testing for design
 
 ### Error handling testing
 
-- **Error recovery**: Test that focus moves appropriately after users fix validation errors  
+- **Error recovery**: Test that focus moves appropriately after users fix validation errors
 - **Form persistence**: Verify that fixing errors doesn't cause loss of data in other form sections
 - **Error announcements**: Confirm error messages are announced in the context of the current form step
 
@@ -226,7 +219,7 @@ Before launching any form on VA.gov, teams must complete foundational accessibil
 
 - Color and color contrast evaluation
 - Automated testing with aXe DevTools
-- Content zoom and reflow testing  
+- Content zoom and reflow testing
 - Keyboard navigation testing
 
 [Learn more about foundational accessibility testing requirements](https://depo-platform-documentation.scrollhelp.site/collaboration-cycle/prepare-for-an-accessibility-staging-review) and how to prepare for your staging review.
@@ -244,7 +237,7 @@ Forms must follow the four principles of accessibility (POUR: Perceivable, Opera
 ### Relevant WCAG 2.2 success criteria
 
 * **2.4.3 Focus Order (AA)**: Focus moves in a logical sequence that preserves meaning and operability
-* **2.4.7 Focus Visible (AA)**: Keyboard focus indicator is visible when components receive keyboard focus  
+* **2.4.7 Focus Visible (AA)**: Keyboard focus indicator is visible when components receive keyboard focus
 * **2.4.11 Focus Not Obscured (Minimum) (AA)**: When a component receives keyboard focus, it is not entirely hidden due to author-created content
 * **3.2.3 Consistent Navigation (AA)**: Navigational mechanisms that are repeated on multiple pages occur in the same relative order each time they are repeated
 
