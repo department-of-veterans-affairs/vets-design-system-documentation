@@ -93,13 +93,39 @@ Form submissions on VA.gov or in the mobile app must show the submission status 
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
 
+#### How to display status for application or VA form submissions
+
+VA form and application submissions on My VA display status to help users stay informed about their submission. Follow this guidance and backend workflow for new forms or patterns.
+
+#### Supported statuses
+
+Forms and applications can show the following statuses:
+
+| Status                     | Description                                               | Managed by           |
+|----------------------------|----------------------------------------------------------|----------------------|
+| DRAFT                      | Saved but not submitted; available to resume             | Save-In-Progress     |
+| SUBMISSION IN PROGRESS     | VA is processing your submission                         | Backend/API          |
+| RECEIVED                   | VA received your submission and it is being reviewed     | Backend/API          |
+| ACTION NEEDED              | VA needs additional info from you                        | Backend/API          |
+
+**Note:** "DRAFT" is managed by the Save-In-Progress (SiP) system. Learn more in the [VA Forms Library: Save-In-Progress guide](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-set-up-save-in-progress-si).
+
+#### Status Card Variants
+
+There are two card variants for displaying form status:
+
+- **Uploadable Forms** — fallback title, e.g., "VA Form XX-XXXX"
+- **Save-In-Progress Forms** — product title with subheading (from application configuration)
+
+_Sample screenshots and details are available in team onboarding docs._
+
 #### How to handle forms submitted within the process of another form (sub-forms)
 
 For sub-forms such as the Authorization to Disclose Information to the Department of Veterans Affairs (21-4142), submitted within the process of completing an Application for Disability Compensation and Related Compensation Benefits (21-526EZ) or Decision Review Request: Supplemental Claim (20-0995), the status of the sub-forms should be communicated independently from the status of the main form. In other words, each sub-form would send a separate email notification and each would have a separate status card shown in My VA, independent from the notifications and cards of the main form.
 
 #### How to show status for uploaded documents
 
-Indicate to the user on the status card shown in My VA the count of uploaded documents. For example, "You uploaded 22 documents. We'll email you if we can't successfully deliver any of them."
+Indicate to the user on the status card shown in My VA the uploaded documents. For example, "You uploaded 22 documents. We'll email you if we can't successfully deliver any of them."
 
 > NOTE: The exact language and how to convey this to users is currently being designed and is subject to change.
 
