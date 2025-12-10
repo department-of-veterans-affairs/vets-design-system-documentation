@@ -52,7 +52,7 @@ If there's a lag time between when someone submits the form and when VA receives
 2. **Received**: The notification we send when we've received a submitted form in the system of record. This means the form is ready for processing. **Only send this status notification when we have confirmation that the request has reached the system of record.**
 3. **Action needed:** The error notification we send if a form submission fails to reach the system of record. This means we need the person to resubmit or take another action before we can process their form. This notification must include instructions for the person to recover from the error. There are different templates available based on the remediation steps specific to the form.
 
-Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application.
+VA Notify templates are available for these 3 email notifications. Submit a [VA Notify intake ticket](https://github.com/department-of-Veterans-affairs/va.gov-team/issues/new?assignees=christy-tongty%2C+mjones-oddball%2C+GitSamJennings&labels=vanotify-intake&template=VANotify-Business-Intake.md&title=Business+intake+form+for+%5BBusiness+or+team%5D) to start the process of activating email notifications for your application. 
 
 #### Protecting PII & PHI in notifications
 
@@ -89,7 +89,7 @@ If there's a lag time between when someone submits the form and when VA receives
 
 ### Showing form submission status in My VA
 
-Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets statuses from the [Lighthouse Benefits Intake API](https://developer.va.gov/explore/api/benefits-intake) polling mechanism for submissions processed asynchronously.
+Form submissions on VA.gov or in the mobile app must show the submission status in My VA for people who are authenticated. These statuses appear in the **Benefit applications and forms** section of My VA. This section currently gets statuses from an API polling mechanism for submissions processed asynchronously.
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
 
@@ -117,7 +117,6 @@ There are two card variants for displaying form status:
 - **Uploadable Forms**: fallback title, e.g., "VA Form XX-XXXX"
 - **Save-In-Progress Forms**: product title with subheading (from application configuration)
 
-_Sample screenshots and details are available in team onboarding docs._
 
 #### How to handle forms submitted within the process of another form (sub-forms)
 
@@ -125,7 +124,7 @@ For sub-forms such as the Authorization to Disclose Information to the Departmen
 
 #### How to show status for uploaded documents
 
-Indicate to the user on the status card shown in My VA the uploaded documents. For example, "You uploaded 22 documents. We'll email you if we can't successfully deliver any of them."
+Indicate to the user on the status card shown in My VA the uploaded documents.
 
 > NOTE: The exact language and how to convey this to users is currently being designed and is subject to change.
 
@@ -155,5 +154,5 @@ Every time a form submission error happens, you must notify the person about tha
 ### Page templates available for this pattern
 
 * [Email templates are available in VA Notify](https://staging.notifications.va.gov/). You'll need a VA Notify account to access the sample templates. Select a service. If you're not assigned to a service contact #va-notify-public. Select **Add template**. Then select **Sample templates**.
-* The sample email templates include customizable content you'll need to fill in for your form. Try to use as much of the template content as possible and only adjust where needed. If you have questions or need help adjusting the templates for your form, you can contact #sitewide-content-accessibility-ia in Slack.
+* The sample email templates include customizable content you'll need to fill in for your form. Try to use as much of the template content as possible and only adjust where needed. If you have questions or need help adjusting the templates for your form, you can contact ##content-ia-centralized-team in Slack.
 * Email templates must be reviewed by a VA Privacy Officer in the appropriate portfolio (Veterans Benefits Administration or Veterans Health Administration).
