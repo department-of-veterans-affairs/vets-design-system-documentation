@@ -103,10 +103,10 @@ Forms and applications can show the following statuses:
 
 | Status                     | Description                                               | Managed by           |
 |----------------------------|----------------------------------------------------------|----------------------|
-| DRAFT                      | Saved but not submitted; available to resume             | Save-In-Progress     |
-| SUBMISSION IN PROGRESS     | VA is processing your submission                         | Backend/API          |
-| RECEIVED                   | VA received your submission and it is being reviewed     | Backend/API          |
-| ACTION NEEDED              | VA needs additional info from you                        | Backend/API          |
+| Draft                      | Saved but not submitted; available to resume             | Save-In-Progress     |
+| Submission in progress     | VA is processing your submission                         | Backend/API          |
+| Received                   | VA received your submission and it is being reviewed     | Backend/API          |
+| Action needed              | VA needs additional info from you                        | Backend/API          |
 
 **Note:** "DRAFT" is managed by the Save-In-Progress (SiP) system. Learn more in the [VA Forms Library: Save-In-Progress guide](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-set-up-save-in-progress-si).
 
@@ -114,8 +114,8 @@ Forms and applications can show the following statuses:
 
 There are two card variants for displaying form status:
 
-- **Uploadable Forms** — fallback title, e.g., "VA Form XX-XXXX"
-- **Save-In-Progress Forms** — product title with subheading (from application configuration)
+- **Uploadable Forms**: fallback title, e.g., "VA Form XX-XXXX"
+- **Save-In-Progress Forms**: product title with subheading (from application configuration)
 
 _Sample screenshots and details are available in team onboarding docs._
 
