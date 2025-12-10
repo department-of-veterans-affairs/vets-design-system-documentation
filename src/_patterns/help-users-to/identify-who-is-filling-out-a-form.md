@@ -108,7 +108,7 @@ We ask about the person’sir relationship to the Veteran whose service earned t
 
 ### Question 2b: For people filling out forms for others
 
-We ask what type of third-party representative they are: “What type of permission do you have to fill out this form for a [Veteran or family member of a Veteran]?”
+We ask what type of third-party representative they are: “What type of permission do you have to fill out this form for a Veteran or family member of a Veteran?”
 Options might include: 
 
 * I’m an accredited representative
@@ -158,7 +158,7 @@ When users don't have the proper permission to fill out a form for someone else,
 ###  Content considerations
 Follow the plain language standards in the content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 
-Error messages and hint text
+#### Error messages and hint text
 
 **Question 1a**
 * Hint text: We refer to this person as a “claimant” because they’re the person claiming the VA benefit or service.
