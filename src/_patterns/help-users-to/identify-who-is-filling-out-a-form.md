@@ -149,13 +149,6 @@ Always require email addresses for both the person filling out the form and the 
 
 {% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant." class="x2" %}
 
-### Error messages
-
-Keep error messages simple:
-
-* "Please select the option that best describes you"
-* "Please select the type of representative you are"
-
 ### Handling permission issues
 
 When users don't have the proper permission to fill out a form for someone else, provide clear guidance on next steps:
