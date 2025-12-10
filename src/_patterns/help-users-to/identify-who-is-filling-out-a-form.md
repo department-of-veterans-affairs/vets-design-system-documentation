@@ -15,17 +15,16 @@ status: use-with-caution-candidate
 This pattern helps us figure out 2 important things for VA forms:
 1.  Who is filling out the form (the person typing or writing)
 2.  Who the form is for(the person who will get the benefits)
-- Sometimes these are the same person. Sometimes they’'re different.
-- When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
+* Sometimes these are the same person. Sometimes they’'re different.
+* When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
 
 ### Why this pattern matterns
 
 This pattern helps:
-- Veterans get through forms faster when they’re filling it out for themselves
-- VA staff process forms correctly
-- Everyone understand who they’re collecting information about
-- Reduce errors and confusion
-
+* Veterans get through forms faster when they’re filling it out for themselves
+* VA staff process forms correctly
+* Everyone understand who they’re collecting information about
+* Reduce errors and confusion
 
 ### When to use this pattern
 
@@ -165,23 +164,28 @@ When users don't have the proper permission to fill out a form for someone else,
 
 ###  Content considerations
 Follow the plain language standards in the content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
-Error mMessages and hint text
-Question 1a
-Hint text: We refer to this person as a “claimant” because they’re the person claiming the VA benefit or service.
-Error type: No selection
-Error message: Select the option that best describes you
-Question 1b
-Hint text: This helps us understand your relationship to the person you’re filling out this form for (called the “claimant”). The claimant is the person who is claiming the VA benefit or service.
-Error type: No selection
-Error message: Select the option that best describes you
-Question 2a
-Hint text: None
-Error type: No selection
-Error message: Select the option that best describes you
-Question 2b
-Hint text: You may need to submit an additional form to prove you have permission.
-Error type: No selection
-Error message: Select the option that best describes you
+
+Error messages and hint text
+
+**Question 1a**
+* Hint text: We refer to this person as a “claimant” because they’re the person claiming the VA benefit or service.
+* Error type: No selection
+* Error message: Select the option that best describes you
+
+**Question 1b**
+* Hint text: This helps us understand your relationship to the person you’re filling out this form for (called the “claimant”). The claimant is the person who is claiming the VA benefit or service.
+* Error type: No selection
+* Error message: Select the option that best describes you
+
+**Question 2a**
+* Hint text: None
+* Error type: No selection
+* Error message: Select the option that best describes you
+
+**Question 2b**
+* Hint text: You may need to submit an additional form to prove you have permission.
+* Error type: No selection
+* Error message: Select the option that best describes you
 
 
 
