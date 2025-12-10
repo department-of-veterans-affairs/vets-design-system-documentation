@@ -110,7 +110,7 @@ Forms and applications can show the following statuses:
 
 **Note:** "DRAFT" is managed by the Save-In-Progress (SiP) system. Learn more in the [VA Forms Library: Save-In-Progress guide](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-set-up-save-in-progress-si).
 
-#### Status Card Variants
+#### Status card variants
 
 There are two card variants for displaying form status:
 
