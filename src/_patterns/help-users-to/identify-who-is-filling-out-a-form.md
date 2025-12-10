@@ -12,86 +12,122 @@ status: use-with-caution-candidate
 
 ## Usage
 
+This pattern helps us figure out 2 important things for VA forms:
+1.  Who is filling out the form (the person typing or writing)
+2.  Who the form is for(the person who will get the benefits)
+- Sometimes these are the same person. Sometimes they’'re different.
+- When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
+
+### Why this pattern matterns
+
+This pattern helps:
+- Veterans get through forms faster when they’re filling it out for themselves
+- VA staff process forms correctly
+- Everyone understand who they’re collecting information about
+- Reduce errors and confusion
+
+
 ### When to use this pattern
 
 Use this pattern when your form can be filled out by:
 
 * Veterans for themselves
-* Claimants for themselves
+* Family members for themselves
 * Family members for a Veteran
-* Third-party representatives filling out for a Veteran or claimant
+* Someone else for a Veteran or family member of a Veteran
 
-### Key terms
+### Decision tree questions
+
+Before using this pattern, ask yourself these 4 questions:
+1. Can Veterans fill out this form for themselves?
+2. Can family members fill this form out for a Veteran or themselves?
+3. Can third-party representatives fill this form out for someone?
+4. Do we need to know the exact relationship between the person filling out the form and the person it’s for?
+- If you answered yes to any of questions 2 through 4, this pattern will help organize the flow.
+
+### Key terms you need to know
+- These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and Claims and applications sections in the content style guide.
 
 **Veteran**: Someone who served in the military and is now a civilian.
 
 **Claimant**: The person who is applying for benefits or has a claim. This could be a Veteran, spouse, child, parent, or someone else.
 
-We sometimes use this term to refer to the person with the claim or the person applying for the benefit—especially if the person isn’t a Veteran, or if they aren’t the person submitting the form (for example: "I'm signing for the claimant").
-
-Use specific plain language terms whenever possible, such as "Veteran’s spouse" or "Veteran’s child." Only use "claimant" when a more specific term does not apply, and always define it on first use as "person with the claim" or "person applying for this benefit."
-For example:
-> "I'm the spouse, dependent, survivor, or caregiver of a Veteran, and I have an existing claim."
-
-**Form submitter**: The person actually filling out and sending in the form. Don't use this term when talking to Veterans — it's just for internal use.
+**Form submitter**: The person actually filling out and submitting the form. (Don't use this term when talking to Veterans — it's just for internal use.)
 
 **Third-party representative**: Someone who has official permission to help a Veteran with VA paperwork. This includes:
 
-* **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative who VA has officially approved to help Veterans. They need to file VA Form 21-22 or VA Form 21-22a first.
+* **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative officially approved to help Veterans. The accredited representative needs to file VA Form 21-22 or 21-22a before they can submit a Veteran's paperwork.  A person can only have 1 accredited representative at a time.
 
-* **Alternate signer**: Someone certified to sign certain forms for someone else who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. They need to file VA Form 21-0972 first.
-
-**Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. It’s OK to use the word "sponsor" if you lead with this plain language definition.
-
-For example:
-> the Veteran you're connected to (called your "sponsor")
+* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. The alternate signer needs to file VA Form 21-0972 before they can sign for another person.  A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives.  They need offical VA approval.)
+  
+**Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. If you include this term in your form, include a plain language definition at first mention.
 
 ## How to design and build
 
 ### Question 1a: For signed-in Veterans
 
-* If someone's already signed into VA.gov and we know they're a Veteran, ask: "Are you filling out this form for yourself?"
-* If they say yes, fill in their information automatically and skip the rest of these questions.
+* If Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran.  Who are you fillint out this form for?"
+
+They can choose from these options:
+* I’m filling out this form for myself
+* I’m filling out this form for another Veteran
+* I’m filling out this form for my family member
+* I’m filling out this form for the family member of another Veteran
+
+If they’re filling out the form for themselves, we can fill in their information automatically and skip the rest of these questions.
+
+Include hint text that explains who a claimant is: “We refer to this person as a “claimant” because they’re the person claiming the VA benefit or service.”
+
 
 {% include component-example.html alt="A form question asking signed-in Veterans which situation best describes them, with options to fill out the form for themselves, another Veteran, or a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1b-prefill-vet-question.png" caption="Example of Question 1a for signed-in Veterans with prefilled profile information." class="x2" reverse="true" %}
 
 ### Question 1b: For everyone else
 
-If you don't know if someone's a Veteran, ask: "Which of these best describes you?"
+If we don’'t know if someone is a Veteran, we ask: “Which of these best describes you?”
 
 Options might include:
+* I'm a Veteran filling out this form based on my own status
+* I'm a family member of a Veteran filling out this form for myself
+* I’m filling out this form for a Veteran
+* I'm filling out this form for a family member of a Veteran
 
-* I'm a Veteran filling this out for myself
-* I'm filling this out for myself (but I'm not a Veteran)
-* I'm filling this out for someone else
+Include hint text that explains who a claimant is: “This helps us understand your relationship to the person you’re filling out this form for (called the “claimant”). The claimant is the person who is claiming the VA benefit or service.”
+
 
 {% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves, non-Veteran claimants, filling out for a Veteran, or filling out for a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" reverse="true" %}
 
 ### Question 2a: Relationship to Veteran
 
-Ask about their relationship to the Veteran whose service earned these benefits:
+We ask about the person’sir relationship to the Veteran whose service earned these benefits: “Which of these best describes you?”
 
-* Spouse
-* Child
-* Parent
-* Other specific relationships (depends on the form)
+* I’m a Veteran’s Sspouse
+* I’m a Veteran’s dependent child
+* I’m a Veteran’s parent
+* Other permitted claimant type (depends on the form)
 
 {% include component-example.html alt="A form question asking which roles best describe the user, with placeholder options for different claimant types permitted by the form." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2a-claimant-question.png" caption="Example of Question 2a asking about the user's relationship or role as a claimant." class="x2" reverse="true" %}
 
 ### Question 2b: For people filling out forms for others
 
-Ask what type of representative they are:
+We ask what type of third-party representative they are: “What type of permission do you have to fill out this form for a [Veteran or family member of a Veteran]?”
+Options might include: 
 
-* Accredited representative
-* Alternate signer
-* Family member
-* Other approved representative types
+* I’m an accredited representative
+* I’m an alternate signer
+* I’m a family member
+* Other approved representative types (depends on the form)
+* None of these options apply to me
+
+Include hint text that explains additional forms may be needed: “You may need to submit an additional form to prove you have permission
+
+
+
 
 {% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a Veteran, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for Veterans." class="x2" %}
 
 {% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a non-Veteran claimant, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-non-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for non-Veteran claimants." class="x2" %}
 
-### How this affects your form
+### How this pattern affects your form
 
 #### Introduction page
 
@@ -102,13 +138,15 @@ Your form's first page should clearly explain:
 
 #### Progress bar
 
-Step 1 should be called "Your identity" and include questions 1 and 2.
+Label step 1 as "Your identity" and include questions 1 and 2.
 
 #### Personal information pages
 
-Always ask for the form submitter's contact information first, then ask for information about the person the form is about (if they're different people).
+Always ask for the form submitter's contact information first, then ask for information about the person the form is for (if they're different people).
 
-#### Example progress bar component in Figma for a form using the form submitter pattern
+Always require email addresses for both the person filling out the form and the person it’s for.
+
+#### Example progress bar component in Figma 
 
 {% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant." class="x2" %}
 
@@ -125,31 +163,26 @@ When users don't have the proper permission to fill out a form for someone else,
 
 {% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
 
-## Content considerations
+###  Content considerations
+Follow the plain language standards in the content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
+Error mMessages and hint text
+Question 1a
+Hint text: We refer to this person as a “claimant” because they’re the person claiming the VA benefit or service.
+Error type: No selection
+Error message: Select the option that best describes you
+Question 1b
+Hint text: This helps us understand your relationship to the person you’re filling out this form for (called the “claimant”). The claimant is the person who is claiming the VA benefit or service.
+Error type: No selection
+Error message: Select the option that best describes you
+Question 2a
+Hint text: None
+Error type: No selection
+Error message: Select the option that best describes you
+Question 2b
+Hint text: You may need to submit an additional form to prove you have permission.
+Error type: No selection
+Error message: Select the option that best describes you
 
-### Decision tree questions
 
-Before using this pattern, ask yourself:
 
-1. Can this form be filled out by the Veteran themselves?
-2. Can family members fill it out for a Veteran?
-3. Can official representatives fill it out for someone?
-4. Do we need to know the exact relationship between people?
 
-If you answered yes to multiple questions, this pattern will help organize the flow.
-
-## Why this pattern matters
-
-This pattern helps:
-
-* Veterans get through forms faster when they're filling them out for themselves
-* VA staff process forms correctly
-* Everyone understands who they're collecting information about
-* Reduce errors and confusion
-
-## Important notes
-
-* A person can only have one accredited representative at a time
-* A person can only have one alternate signer at a time
-* Family members aren't automatically representatives - they need official approval from VA
-* Always require email addresses for both the person filling out the form and the person it's about (to prevent lost communications)
