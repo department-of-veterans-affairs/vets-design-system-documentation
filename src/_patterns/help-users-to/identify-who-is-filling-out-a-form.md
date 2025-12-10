@@ -15,8 +15,10 @@ status: use-with-caution-candidate
 This pattern helps us figure out 2 important things for VA forms:
 1.  Who is filling out the form (the person typing or writing)
 2.  Who the form is for(the person who will get the benefits)
-* Sometimes these are the same person. Sometimes they’'re different.
-* When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
+
+Sometimes these are the same person. Sometimes they’re different.
+
+When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
 
 ### Why this pattern matterns
 
@@ -42,10 +44,11 @@ Before using this pattern, ask yourself these 4 questions:
 2. Can family members fill this form out for a Veteran or themselves?
 3. Can third-party representatives fill this form out for someone?
 4. Do we need to know the exact relationship between the person filling out the form and the person it’s for?
-- If you answered yes to any of questions 2 through 4, this pattern will help organize the flow.
+
+If you answered yes to any of questions 2 through 4, this pattern will help organize the flow.
 
 ### Key terms you need to know
-- These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and Claims and applications sections in the content style guide.
+- These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and Claims and applications https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications sections in the content style guide.
 
 **Veteran**: Someone who served in the military and is now a civilian.
 
@@ -97,9 +100,9 @@ Include hint text that explains who a claimant is: “This helps us understand y
 
 ### Question 2a: Relationship to Veteran
 
-We ask about the person’sir relationship to the Veteran whose service earned these benefits: “Which of these best describes you?”
+We ask about the person’s relationship to the Veteran whose service earned these benefits: “Which of these best describes you?”
 
-* I’m a Veteran’s Sspouse
+* I’m a Veteran’s spouse
 * I’m a Veteran’s dependent child
 * I’m a Veteran’s parent
 * Other permitted claimant type (depends on the form)
@@ -117,7 +120,7 @@ Options might include:
 * Other approved representative types (depends on the form)
 * None of these options apply to me
 
-Include hint text that explains additional forms may be needed: “You may need to submit an additional form to prove you have permission
+Include hint text that explains additional forms may be needed: "You may need to submit an additional form to prove you have permission."
 
 
 
@@ -155,7 +158,7 @@ When users don't have the proper permission to fill out a form for someone else,
 
 {% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
 
-###  Content considerations
+###  Content considerations [NEED LINKS]
 Follow the plain language standards in the content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 
 #### Error messages and hint text
