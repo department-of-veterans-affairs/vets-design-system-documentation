@@ -1,0 +1,764 @@
+{
+  "fiscal_year": "FY2025",
+  "date_range": {
+    "start": "2024-10-01",
+    "end": "2025-09-30"
+  },
+  "statistics": {
+    "count": 46,
+    "mean": 79,
+    "median": 61,
+    "min": 0,
+    "max": 248,
+    "standardDeviation": 65,
+    "percentile25": 31,
+    "percentile75": 107,
+    "percentile90": 182
+  },
+  "team_statistics": [
+    {
+      "teamName": "Benefits Intake Optimization - Agile Six Team",
+      "count": 2,
+      "mean": 25,
+      "median": 25,
+      "min": 18,
+      "max": 31
+    },
+    {
+      "teamName": "Bio-Huntridgelabs",
+      "count": 2,
+      "mean": 41,
+      "median": 41,
+      "min": 34,
+      "max": 48
+    },
+    {
+      "teamName": "vfs-mhv-secure-messaging",
+      "count": 2,
+      "mean": 121,
+      "median": 121,
+      "min": 22,
+      "max": 219
+    },
+    {
+      "teamName": "Disability Benefits",
+      "count": 2,
+      "mean": 57,
+      "median": 57,
+      "min": 21,
+      "max": 93
+    },
+    {
+      "teamName": "Identity",
+      "count": 2,
+      "mean": 53,
+      "median": 53,
+      "min": 42,
+      "max": 64
+    },
+    {
+      "teamName": "Conditions Team",
+      "count": 2,
+      "mean": 204,
+      "median": 204,
+      "min": 182,
+      "max": 225
+    },
+    {
+      "teamName": "Lifestage Pension and Burial",
+      "count": 2,
+      "mean": 111,
+      "median": 111,
+      "min": 107,
+      "max": 115
+    },
+    {
+      "teamName": "Iterate, Innovate, & Run (IIR)",
+      "count": 2,
+      "mean": 117,
+      "median": 117,
+      "min": 63,
+      "max": 170
+    },
+    {
+      "teamName": "Benefits Management Tool 2",
+      "count": 2,
+      "mean": 162,
+      "median": 162,
+      "min": 78,
+      "max": 245
+    },
+    {
+      "teamName": "MHV",
+      "count": 2,
+      "mean": 56,
+      "median": 56,
+      "min": 55,
+      "max": 56
+    },
+    {
+      "teamName": "vfs-mhv-medical-records",
+      "count": 2,
+      "mean": 78,
+      "median": 78,
+      "min": 78,
+      "max": 78
+    },
+    {
+      "teamName": "Design System & Forms Library",
+      "count": 1,
+      "mean": 24,
+      "median": 24,
+      "min": 24,
+      "max": 24
+    },
+    {
+      "teamName": "Reapers Team",
+      "count": 1,
+      "mean": 47,
+      "median": 47,
+      "min": 47,
+      "max": 47
+    },
+    {
+      "teamName": "Form Upload",
+      "count": 1,
+      "mean": 85,
+      "median": 85,
+      "min": 85,
+      "max": 85
+    },
+    {
+      "teamName": "MHV Medical Records",
+      "count": 1,
+      "mean": 49,
+      "median": 49,
+      "min": 49,
+      "max": 49
+    },
+    {
+      "teamName": "MHV Horizon",
+      "count": 1,
+      "mean": 83,
+      "median": 83,
+      "min": 83,
+      "max": 83
+    },
+    {
+      "teamName": "govcio-vebt",
+      "count": 1,
+      "mean": 112,
+      "median": 112,
+      "min": 112,
+      "max": 112
+    },
+    {
+      "teamName": "Authenticated Experience Design Patterns Team (AEDP)",
+      "count": 1,
+      "mean": 14,
+      "median": 14,
+      "min": 14,
+      "max": 14
+    },
+    {
+      "teamName": "Benefits Management Tools (BMT) Team 1",
+      "count": 1,
+      "mean": 63,
+      "median": 63,
+      "min": 63,
+      "max": 63
+    },
+    {
+      "teamName": "VFS-MHV-Secure-Messaging",
+      "count": 1,
+      "mean": 4,
+      "median": 4,
+      "min": 4,
+      "max": 4
+    },
+    {
+      "teamName": "IVC Forms",
+      "count": 1,
+      "mean": 147,
+      "median": 147,
+      "min": 147,
+      "max": 147
+    },
+    {
+      "teamName": "AEDP",
+      "count": 1,
+      "mean": 17,
+      "median": 17,
+      "min": 17,
+      "max": 17
+    },
+    {
+      "teamName": "VA Travel Pay",
+      "count": 1,
+      "mean": 128,
+      "median": 128,
+      "min": 128,
+      "max": 128
+    },
+    {
+      "teamName": "Accredited Rep Facing",
+      "count": 1,
+      "mean": 129,
+      "median": 129,
+      "min": 129,
+      "max": 129
+    },
+    {
+      "teamName": "Financial Management",
+      "count": 1,
+      "mean": 49,
+      "median": 49,
+      "min": 49,
+      "max": 49
+    },
+    {
+      "teamName": "Form Engine Tool",
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    },
+    {
+      "teamName": "Sitewide Facilities",
+      "count": 1,
+      "mean": 56,
+      "median": 56,
+      "min": 56,
+      "max": 56
+    },
+    {
+      "teamName": "Benefits Decision Review",
+      "count": 1,
+      "mean": 9,
+      "median": 9,
+      "min": 9,
+      "max": 9
+    },
+    {
+      "teamName": "Accredited Rep Facing (ARF) + Accredited Rep Mgmt (ARM)",
+      "count": 1,
+      "mean": 58,
+      "median": 58,
+      "min": 58,
+      "max": 58
+    },
+    {
+      "teamName": "EDM and VEBT team",
+      "count": 1,
+      "mean": 105,
+      "median": 105,
+      "min": 105,
+      "max": 105
+    },
+    {
+      "teamName": "Authenticated Experience Design Patterns (AEDP)",
+      "count": 1,
+      "mean": 0,
+      "median": 0,
+      "min": 0,
+      "max": 0
+    },
+    {
+      "teamName": "Facilities",
+      "count": 1,
+      "mean": 36,
+      "median": 36,
+      "min": 36,
+      "max": 36
+    },
+    {
+      "teamName": "CMS Team",
+      "count": 1,
+      "mean": 14,
+      "median": 14,
+      "min": 14,
+      "max": 14
+    },
+    {
+      "teamName": "Debt Resolution",
+      "count": 1,
+      "mean": 248,
+      "median": 248,
+      "min": 248,
+      "max": 248
+    },
+    {
+      "teamName": "MHV Medications",
+      "count": 1,
+      "mean": 106,
+      "median": 106,
+      "min": 106,
+      "max": 106
+    }
+  ],
+  "monthly_trends": [
+    {
+      "month": "2024-10",
+      "count": 4,
+      "mean": 128,
+      "median": 92
+    },
+    {
+      "month": "2024-11",
+      "count": 4,
+      "mean": 29,
+      "median": 25
+    },
+    {
+      "month": "2024-12",
+      "count": 3,
+      "mean": 136,
+      "median": 105
+    },
+    {
+      "month": "2025-01",
+      "count": 7,
+      "mean": 65,
+      "median": 56
+    },
+    {
+      "month": "2025-02",
+      "count": 1,
+      "mean": 49,
+      "median": 49
+    },
+    {
+      "month": "2025-03",
+      "count": 7,
+      "mean": 122,
+      "median": 128
+    },
+    {
+      "month": "2025-04",
+      "count": 4,
+      "mean": 112,
+      "median": 131
+    },
+    {
+      "month": "2025-05",
+      "count": 3,
+      "mean": 40,
+      "median": 42
+    },
+    {
+      "month": "2025-06",
+      "count": 1,
+      "mean": 112,
+      "median": 112
+    },
+    {
+      "month": "2025-07",
+      "count": 1,
+      "mean": 93,
+      "median": 93
+    },
+    {
+      "month": "2025-08",
+      "count": 4,
+      "mean": 60,
+      "median": 66
+    },
+    {
+      "month": "2025-09",
+      "count": 7,
+      "mean": 32,
+      "median": 31
+    }
+  ],
+  "outliers": [
+    {
+      "kickoff_issue": 105226,
+      "team": "Conditions Team",
+      "cycle_time_days": 225
+    },
+    {
+      "kickoff_issue": 98499,
+      "team": "Benefits Management Tool 2",
+      "cycle_time_days": 245
+    },
+    {
+      "kickoff_issue": 95575,
+      "team": "Debt Resolution",
+      "cycle_time_days": 248
+    }
+  ],
+  "raw_data": [
+    {
+      "kickoffIssue": 120790,
+      "kickoffTitle": "Collaboration Cycle for Benefits Intake Optimization (BIO Heart) - Agile Six Team | 21P-601 Form Digitization",
+      "kickoffDate": "2025-09-29T18:33:25Z",
+      "stagingReviewLabeledAt": "2025-10-30T19:26:22Z",
+      "cycleTimeDays": 31,
+      "teamName": "Benefits Intake Optimization - Agile Six Team"
+    },
+    {
+      "kickoffIssue": 120221,
+      "kickoffTitle": "Collaboration Cycle for Benefits Intake Optimization (BIO Heart) - Agile Six Team | 21P-537 Form Digitization",
+      "kickoffDate": "2025-09-22T20:44:06Z",
+      "stagingReviewLabeledAt": "2025-10-10T18:46:12Z",
+      "cycleTimeDays": 18,
+      "teamName": "Benefits Intake Optimization - Agile Six Team"
+    },
+    {
+      "kickoffIssue": 120186,
+      "kickoffTitle": "Collaboration Cycle for Forms Library - 21-4140 Employment Questionnaire",
+      "kickoffDate": "2025-09-22T18:40:38Z",
+      "stagingReviewLabeledAt": "2025-10-16T20:01:40Z",
+      "cycleTimeDays": 24,
+      "teamName": "Design System & Forms Library"
+    },
+    {
+      "kickoffIssue": 120010,
+      "kickoffTitle": "Collaboration Cycle for Bio-Huntridgelabs, VA Form 21P-534EZ (Application for DIC, Survivors Pension, and/or Accrued Benefits), Form Digitization",
+      "kickoffDate": "2025-09-19T17:00:35Z",
+      "stagingReviewLabeledAt": "2025-11-06T21:26:11Z",
+      "cycleTimeDays": 48,
+      "teamName": "Bio-Huntridgelabs"
+    },
+    {
+      "kickoffIssue": 120005,
+      "kickoffTitle": "Collaboration Cycle for Bio-Huntridgelabs, VA Form 21P-8416 (Medical Expense Report), Form Digitization",
+      "kickoffDate": "2025-09-19T16:29:26Z",
+      "stagingReviewLabeledAt": "2025-10-23T20:06:37Z",
+      "cycleTimeDays": 34,
+      "teamName": "Bio-Huntridgelabs"
+    },
+    {
+      "kickoffIssue": 118500,
+      "kickoffTitle": "Collaboration Cycle for [Reapers Team, VRE Ch31 Eligibility & Entitlement]",
+      "kickoffDate": "2025-09-03T18:46:29Z",
+      "stagingReviewLabeledAt": "2025-10-20T12:57:22Z",
+      "cycleTimeDays": 47,
+      "teamName": "Reapers Team"
+    },
+    {
+      "kickoffIssue": 118453,
+      "kickoffTitle": "Collaboration Cycle for [[mhv-secure-messaging, OH Curated List] (Post MVP)",
+      "kickoffDate": "2025-09-03T14:50:58Z",
+      "stagingReviewLabeledAt": "2025-09-25T19:37:47Z",
+      "cycleTimeDays": 22,
+      "teamName": "vfs-mhv-secure-messaging"
+    },
+    {
+      "kickoffIssue": 118038,
+      "kickoffTitle": "Collaboration Cycle for Form Upload > Multi-file input support",
+      "kickoffDate": "2025-08-28T15:32:59Z",
+      "stagingReviewLabeledAt": "2025-11-21T20:07:49Z",
+      "cycleTimeDays": 85,
+      "teamName": "Form Upload"
+    },
+    {
+      "kickoffIssue": 116901,
+      "kickoffTitle": "Collaboration Cycle for MHV MR Team - MHV MR - Add PDF and TXT to CCD",
+      "kickoffDate": "2025-08-14T13:30:30Z",
+      "stagingReviewLabeledAt": "2025-10-02T19:27:44Z",
+      "cycleTimeDays": 49,
+      "teamName": "MHV Medical Records"
+    },
+    {
+      "kickoffIssue": 116216,
+      "kickoffTitle": "Collaboration Cycle for Horizon Team, MHV on VA.gov, Notification email update critical alerts",
+      "kickoffDate": "2025-08-06T23:30:33Z",
+      "stagingReviewLabeledAt": "2025-10-28T16:03:04Z",
+      "cycleTimeDays": 83,
+      "teamName": "MHV Horizon"
+    },
+    {
+      "kickoffIssue": 115880,
+      "kickoffTitle": "Collaboration Cycle for [Disability Benefits, 21-526ez Disability Benefits Application, Update Form 4142 within 526 to latest version]",
+      "kickoffDate": "2025-08-01T22:18:51Z",
+      "stagingReviewLabeledAt": "2025-08-22T18:37:47Z",
+      "cycleTimeDays": 21,
+      "teamName": "Disability Benefits"
+    },
+    {
+      "kickoffIssue": 115648,
+      "kickoffTitle": "Collaboration Cycle for [Disability Benefits, 21-526ez Disability Benefits Application, Veterans can see and save their completed disability form responses after submitting]",
+      "kickoffDate": "2025-07-30T20:08:46Z",
+      "stagingReviewLabeledAt": "2025-10-31T15:49:01Z",
+      "cycleTimeDays": 93,
+      "teamName": "Disability Benefits"
+    },
+    {
+      "kickoffIssue": 111512,
+      "kickoffTitle": "Collaboration Cycle for [govcio-vebt, Application for High Technology Program, Product (VA Form 22-10297), VA Form 22-10297]",
+      "kickoffDate": "2025-06-06T18:45:14Z",
+      "stagingReviewLabeledAt": "2025-09-26T18:26:18Z",
+      "cycleTimeDays": 112,
+      "teamName": "govcio-vebt"
+    },
+    {
+      "kickoffIssue": 110241,
+      "kickoffTitle": "Collaboration Cycle for AEDP Team, Marital Status Pattern Design",
+      "kickoffDate": "2025-05-21T13:47:51Z",
+      "stagingReviewLabeledAt": "2025-06-04T13:48:56Z",
+      "cycleTimeDays": 14,
+      "teamName": "Authenticated Experience Design Patterns Team (AEDP)"
+    },
+    {
+      "kickoffIssue": 110059,
+      "kickoffTitle": "Collaboration Cycle [Benefits Management Team 1 - CST - Smooth, Stable Loading Experience]",
+      "kickoffDate": "2025-05-19T16:56:53Z",
+      "stagingReviewLabeledAt": "2025-07-21T14:11:41Z",
+      "cycleTimeDays": 63,
+      "teamName": "Benefits Management Tools (BMT) Team 1"
+    },
+    {
+      "kickoffIssue": 109653,
+      "kickoffTitle": "Collaboration Cycle for [Identity, Sign-In Transition, DSLogon Deprecation]",
+      "kickoffDate": "2025-05-13T17:23:40Z",
+      "stagingReviewLabeledAt": "2025-06-24T15:38:11Z",
+      "cycleTimeDays": 42,
+      "teamName": "Identity"
+    },
+    {
+      "kickoffIssue": 107461,
+      "kickoffTitle": "Collaboration Cycle for [VFS MHV Secure Messaging, MHV Secure Messaging, SM Read Receipts]",
+      "kickoffDate": "2025-04-14T13:00:35Z",
+      "stagingReviewLabeledAt": "2025-04-18T21:14:14Z",
+      "cycleTimeDays": 4,
+      "teamName": "VFS-MHV-Secure-Messaging"
+    },
+    {
+      "kickoffIssue": 107299,
+      "kickoffTitle": "Collaboration Cycle for [Conditions Team, 21-526ez Disability Benefits Application, Classifier integration with ML models]",
+      "kickoffDate": "2025-04-10T18:23:59Z",
+      "stagingReviewLabeledAt": "2025-10-09T17:33:19Z",
+      "cycleTimeDays": 182,
+      "teamName": "Conditions Team"
+    },
+    {
+      "kickoffIssue": 106774,
+      "kickoffTitle": "Collaboration Cycle for IVC Forms, 10-10D CHAMPVA Benefits and 10-7959c OHI, Merged form solution",
+      "kickoffDate": "2025-04-04T16:51:38Z",
+      "stagingReviewLabeledAt": "2025-08-29T18:49:39Z",
+      "cycleTimeDays": 147,
+      "teamName": "IVC Forms"
+    },
+    {
+      "kickoffIssue": 106512,
+      "kickoffTitle": "Collaboration Cycle for [Lifestage Pension and Burial, Intent to File V1]",
+      "kickoffDate": "2025-04-01T16:42:13Z",
+      "stagingReviewLabeledAt": "2025-07-25T19:19:57Z",
+      "cycleTimeDays": 115,
+      "teamName": "Lifestage Pension and Burial"
+    },
+    {
+      "kickoffIssue": 106384,
+      "kickoffTitle": "Collaboration Cycle for [Lifestage Pension and Burial, Digitize Income and Asset Statement 21P-0969]",
+      "kickoffDate": "2025-03-31T14:56:41Z",
+      "stagingReviewLabeledAt": "2025-07-16T15:58:49Z",
+      "cycleTimeDays": 107,
+      "teamName": "Lifestage Pension and Burial"
+    },
+    {
+      "kickoffIssue": 106128,
+      "kickoffTitle": "Collaboration Cycle for IIR, Paperless Delivery",
+      "kickoffDate": "2025-03-26T16:34:23Z",
+      "stagingReviewLabeledAt": "2025-09-12T18:40:41Z",
+      "cycleTimeDays": 170,
+      "teamName": "Iterate, Innovate, & Run (IIR)"
+    },
+    {
+      "kickoffIssue": 105516,
+      "kickoffTitle": "Collaboration Cycle for AEDP, Design Patterns, Manage your benefits and tools pattern, Critical Information and Service List Item Components",
+      "kickoffDate": "2025-03-18T17:48:42Z",
+      "stagingReviewLabeledAt": "2025-04-04T19:00:34Z",
+      "cycleTimeDays": 17,
+      "teamName": "AEDP"
+    },
+    {
+      "kickoffIssue": 105484,
+      "kickoffTitle": "Collaboration Cycle for Travel Pay, Travel Claim Status, Travel Claim Details Page",
+      "kickoffDate": "2025-03-18T15:05:06Z",
+      "stagingReviewLabeledAt": "2025-07-24T18:35:41Z",
+      "cycleTimeDays": 128,
+      "teamName": "VA Travel Pay"
+    },
+    {
+      "kickoffIssue": 105226,
+      "kickoffTitle": "Collaboration Cycle for [Conditions Team, 21-526ez Disability Benefits Application, Multi-step conditions submission: Integrate Increase conditions and cause question improvements]",
+      "kickoffDate": "2025-03-13T22:27:51Z",
+      "stagingReviewLabeledAt": "2025-10-24T18:26:43Z",
+      "cycleTimeDays": 225,
+      "teamName": "Conditions Team"
+    },
+    {
+      "kickoffIssue": 105105,
+      "kickoffTitle": "Collaboration Cycle for [BMTII, Claim Status Tool, Evidence Requests Pattern]",
+      "kickoffDate": "2025-03-12T21:03:43Z",
+      "stagingReviewLabeledAt": "2025-05-29T18:08:15Z",
+      "cycleTimeDays": 78,
+      "teamName": "Benefits Management Tool 2"
+    },
+    {
+      "kickoffIssue": 104783,
+      "kickoffTitle": "Collaboration Cycle for Accredited Rep Facing (ARF) - Representative Form Upload",
+      "kickoffDate": "2025-03-10T18:27:27Z",
+      "stagingReviewLabeledAt": "2025-07-17T19:13:32Z",
+      "cycleTimeDays": 129,
+      "teamName": "Accredited Rep Facing"
+    },
+    {
+      "kickoffIssue": 104021,
+      "kickoffTitle": "Collaboration Cycle for Financial Management - Debt Portal, One VA Debt Letter",
+      "kickoffDate": "2025-02-27T16:06:32Z",
+      "stagingReviewLabeledAt": "2025-04-17T19:52:07Z",
+      "cycleTimeDays": 49,
+      "teamName": "Financial Management"
+    },
+    {
+      "kickoffIssue": 102015,
+      "kickoffTitle": "Collaboration Cycle for [mhv-secure-messaging, OH Curated List]",
+      "kickoffDate": "2025-01-29T15:49:57Z",
+      "stagingReviewLabeledAt": "2025-09-05T18:55:54Z",
+      "cycleTimeDays": 219,
+      "teamName": "vfs-mhv-secure-messaging"
+    },
+    {
+      "kickoffIssue": 101641,
+      "kickoffTitle": "Collaboration Cycle:  Staging Review Request for TMF Form Builder | Form-Engine",
+      "kickoffDate": "2025-01-23T17:56:50Z",
+      "stagingReviewLabeledAt": "2025-01-23T17:56:50Z",
+      "cycleTimeDays": 0,
+      "teamName": "Form Engine Tool"
+    },
+    {
+      "kickoffIssue": 101492,
+      "kickoffTitle": "Collaboration Cycle for Sitewide Facilities - Facility Locator mobile map iteration",
+      "kickoffDate": "2025-01-21T23:41:18Z",
+      "stagingReviewLabeledAt": "2025-03-18T16:08:33Z",
+      "cycleTimeDays": 56,
+      "teamName": "Sitewide Facilities"
+    },
+    {
+      "kickoffIssue": 101469,
+      "kickoffTitle": "Collaboration Cycle for Decision Reviews Team, Supplemental Claims, Form Updates",
+      "kickoffDate": "2025-01-21T20:27:34Z",
+      "stagingReviewLabeledAt": "2025-01-30T20:42:18Z",
+      "cycleTimeDays": 9,
+      "teamName": "Benefits Decision Review"
+    },
+    {
+      "kickoffIssue": 101329,
+      "kickoffTitle": "Collaboration Cycle for MHV Medications - Refill Alerts & Trackers",
+      "kickoffDate": "2025-01-17T14:34:43Z",
+      "stagingReviewLabeledAt": "2025-03-13T17:47:56Z",
+      "cycleTimeDays": 55,
+      "teamName": "MHV"
+    },
+    {
+      "kickoffIssue": 101328,
+      "kickoffTitle": "Collaboration Cycle for MHV Medications - Filtering In Product Education",
+      "kickoffDate": "2025-01-17T14:30:27Z",
+      "stagingReviewLabeledAt": "2025-03-14T18:29:51Z",
+      "cycleTimeDays": 56,
+      "teamName": "MHV"
+    },
+    {
+      "kickoffIssue": 100167,
+      "kickoffTitle": "Collaboration Cycle for IIR 1095-B MVP",
+      "kickoffDate": "2025-01-07T19:48:12Z",
+      "stagingReviewLabeledAt": "2025-03-11T16:02:57Z",
+      "cycleTimeDays": 63,
+      "teamName": "Iterate, Innovate, & Run (IIR)"
+    },
+    {
+      "kickoffIssue": 99796,
+      "kickoffTitle": "Collaboration Cycle for Accredited Rep Facing (Accredited Rep Portal MVP), Accredited Rep Mgmt (Appoint a Rep 2.0)",
+      "kickoffDate": "2024-12-31T21:29:43Z",
+      "stagingReviewLabeledAt": "2025-02-27T19:20:06Z",
+      "cycleTimeDays": 58,
+      "teamName": "Accredited Rep Facing (ARF) + Accredited Rep Mgmt (ARM)"
+    },
+    {
+      "kickoffIssue": 98557,
+      "kickoffTitle": "Collaboration Cycle for EDM and VEBT team, GI Bill Comparison Tool homepage",
+      "kickoffDate": "2024-12-06T17:59:18Z",
+      "stagingReviewLabeledAt": "2025-03-21T20:28:59Z",
+      "cycleTimeDays": 105,
+      "teamName": "EDM and VEBT team"
+    },
+    {
+      "kickoffIssue": 98499,
+      "kickoffTitle": "Collaboration Cycle for [Benefits Management Tools, VA Letters and Documents]",
+      "kickoffDate": "2024-12-05T19:23:51Z",
+      "stagingReviewLabeledAt": "2025-08-07T18:05:44Z",
+      "cycleTimeDays": 245,
+      "teamName": "Benefits Management Tool 2"
+    },
+    {
+      "kickoffIssue": 97906,
+      "kickoffTitle": "Collaboration Cycle for AEDP, Design Patterns, Help users to...Update prefilled information",
+      "kickoffDate": "2024-11-26T19:08:12Z",
+      "stagingReviewLabeledAt": "2024-11-26T19:09:02Z",
+      "cycleTimeDays": 0,
+      "teamName": "Authenticated Experience Design Patterns (AEDP)"
+    },
+    {
+      "kickoffIssue": 96978,
+      "kickoffTitle": "Collaboration Cycle for Identity, Login, Guardian Access",
+      "kickoffDate": "2024-11-13T16:03:57Z",
+      "stagingReviewLabeledAt": "2025-01-16T22:13:08Z",
+      "cycleTimeDays": 64,
+      "teamName": "Identity"
+    },
+    {
+      "kickoffIssue": 96762,
+      "kickoffTitle": "Collaboration Cycle for [Sitewide, Facility Pages , VAMC, Alternative Alert Banners]",
+      "kickoffDate": "2024-11-08T00:27:18Z",
+      "stagingReviewLabeledAt": "2024-12-13T19:13:02Z",
+      "cycleTimeDays": 36,
+      "teamName": "Facilities"
+    },
+    {
+      "kickoffIssue": 96324,
+      "kickoffTitle": "Collaboration Cycle for CMS Team - Next Build and Next Build's Events and Event Listings Templates",
+      "kickoffDate": "2024-11-01T17:33:31Z",
+      "stagingReviewLabeledAt": "2024-11-15T19:49:36Z",
+      "cycleTimeDays": 14,
+      "teamName": "CMS Team"
+    },
+    {
+      "kickoffIssue": 95575,
+      "kickoffTitle": "Collaboration Cycle for Debt Resolution - Digital Debt Dispute",
+      "kickoffDate": "2024-10-22T14:58:00Z",
+      "stagingReviewLabeledAt": "2025-06-27T18:30:32Z",
+      "cycleTimeDays": 248,
+      "teamName": "Debt Resolution"
+    },
+    {
+      "kickoffIssue": 95082,
+      "kickoffTitle": "Collaboration Cycle for [MHV Medical Records, Settings]",
+      "kickoffDate": "2024-10-16T17:59:33Z",
+      "stagingReviewLabeledAt": "2025-01-02T14:06:27Z",
+      "cycleTimeDays": 78,
+      "teamName": "vfs-mhv-medical-records"
+    },
+    {
+      "kickoffIssue": 95081,
+      "kickoffTitle": "Collaboration Cycle for [MHV Medical Records, Phase 1 Radiology Flow/Images]",
+      "kickoffDate": "2024-10-16T17:59:30Z",
+      "stagingReviewLabeledAt": "2025-01-02T14:06:08Z",
+      "cycleTimeDays": 78,
+      "teamName": "vfs-mhv-medical-records"
+    },
+    {
+      "kickoffIssue": 94684,
+      "kickoffTitle": "Collaboration Cycle for MHV Medications Prescription Grouping",
+      "kickoffDate": "2024-10-09T17:32:40Z",
+      "stagingReviewLabeledAt": "2025-01-23T20:47:19Z",
+      "cycleTimeDays": 106,
+      "teamName": "MHV Medications"
+    }
+  ],
+  "generated_at": "2025-11-24T21:53:30.808Z",
+  "data_source": "GitHub GraphQL API",
+  "description": "Collaboration cycle times from kick-off to Staging Review for FY2025"
+}

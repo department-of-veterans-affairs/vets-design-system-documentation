@@ -73,6 +73,9 @@
 - id: event_available
   category: Profile
 
+- id: expand_circle_right
+  category: Interaction
+
 - id: expand_less
   category: Interaction
 
