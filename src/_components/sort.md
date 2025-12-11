@@ -131,25 +131,24 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * **Name sort options consistently.** Sort options (aside from the option to sort by *Relevance* or another algorithmic method) must follow this convention:
     * `[Sort attribute](sort method)`
         * `[Sort attribute]` represents the attribute being used to sort by.
-        * `(Sort method)` represents the direction of the sort.
+            * This could be things like medication names, entry dates, remaining refills, distance, etc.
+        * `(Sort method)` represents the direction of the sort. Teams should aim to align the naming with the following list:
+            * **Alphabetical**
+                * A to Z      
+            * **Chronological**
+                * Newest to oldest
+            * **Numerical**
+                * Least to most
+                * Closest to furthest
+                * Smallest to largest
+                * Lowest to highest
+                * Shortest to longest
     
-    While the naming of the `[Sort attribute]` can vary depending on the context, `[sort methods]` should be consistent--teams should aim to align with the following list:
-    - **Alphabetical**
-        * A to Z      
-    - **Chronological**
-        * Newest to oldest
-    - **Numerical**
-        * Least to most
-        * Closest to furthest
-        * Smallest to largest
-        * Lowest to highest
-        * Shortest to longest
-    
-    Some examples: 
-    -  *Medication name (A to Z)*
-    -  *Date entered (newest to oldest)*
-    -  *Refills remaining (least to most)*
-    -  *Distance (closest to furthest)*
+    Examples that follow the naming convention: 
+        -  *Medication name (A to Z)*
+        -  *Date entered (newest to oldest)*
+        -  *Refills remaining (least to most)*
+        -  *Distance (closest to furthest)*
 
 
 * **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
