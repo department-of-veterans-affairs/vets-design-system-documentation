@@ -122,12 +122,6 @@ This is the Code Usage section. Note that the header is inside this include.-->
 * **A default sort option must always be provided.** It should be the one that users would expect the most. In Search contexts, *Relevance* is often the default. 
     * The default *- Select-* option that is native to the Select component should not be available to the user, even within the menu.
 
-<!--
-Alpha sort would be "[Data label] (A to Z)" - i.e. Form name (A to Z)
-Date sort would be "[Data label] (newest)- i.e. Revision date (newest first)
-Numeric sort would be "[Data label] (high to low) - i.e. Form number (high to low)
-A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.-->
-
 * **Name sort options consistently.** Sort options (aside from the option to sort by *Relevance* or another algorithmic method) must follow this convention:
     * `[Sort attribute](sort method)`
         * `[Sort attribute]` represents the attribute being used to sort by.
@@ -144,11 +138,11 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
                 * Lowest to highest
                 * Shortest to longest
     
-    Examples that follow the naming convention: 
-        -  *Medication name (A to Z)*
-        -  *Date entered (newest to oldest)*
-        -  *Refills remaining (least to most)*
-        -  *Distance (closest to furthest)*
+    * Examples that follow the naming convention: 
+        *  *Medication name (A to Z)*
+        *  *Date entered (newest to oldest)*
+        *  *Refills remaining (least to most)*
+        *  *Distance (closest to furthest)*
 
 
 * **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
