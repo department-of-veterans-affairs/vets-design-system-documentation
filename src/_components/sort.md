@@ -129,13 +129,11 @@ Numeric sort would be "[Data label] (high to low) - i.e. Form number (high to lo
 A relevancy sort could be something like "Most relevant" or "Recommended" - those are different in meaning and logic.-->
 
 * **Name sort options consistently.** Sort options (aside from the option to sort by *Relevance* or another algorithmic method) must follow this convention:
-    * `[Sort attribute](sort method)`. 
-    * Some examples: 
-        - *Date entered (newest to oldest)*
-        - *Medication name (A to Z)*
-        - *Refills remaining (least to most)*
+    * `[Sort attribute](sort method)`
+        * [Sort attribute] represents the attribute being used to sort by.
+        * (Sort method) represents the direction of the sort.
     
-    While the `[Sort attribute]` can vary greatly, `[sort methods]` should be consistent. Deviations are permissible depending on the context, but teams should aim to align with the following list:
+    While the naming of the `[Sort attribute]` can vary depending on the context, `[sort methods]` should be consistent--teams should aim to align with the following list:
     - **Alphabetical**
         - A to Z      
     - **Chronological**
@@ -146,31 +144,19 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
         - Smallest to largest
         - Lowest to highest
         - Shortest to longest
+    
+    * Some examples: 
+        - *Medication name (A to Z)*
+        - *Date entered (newest to oldest)*
+        - *Refills remaining (least to most)*
+        - *Distance (closest to furthest)*
 
 
 * **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
 
 * **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `Sort method` (aside from Relevance or another algorithmic method) is not permissible.
 
-<!--OPTION 2:
-* **Follow general sort option naming conventions.** Here are some common ways to sort information. This list has been provided below as a guideline but can be modified in whatever way makes the most sense according to the context.
-    - **Alphabetically**
-        - A to Z      
-    - **Chronologically**
-        - Newest to oldest
-    - **Numerically (depends on context)**
-        - Least to most
-        - Smallest to largest
-        - Lowest to highest
-        - Shortest to longest
-    - **Algorithmically**
-        - Relevance
 
-**Note:** If a sort attribute is available, follow this naming convention:
-    - [Sort attribute name] (general sort method)
-        - For example, *Date entered (newest to oldest)*. 
-    - Avoid shortening the general sort.
-        -  For example *Date entered (newest to oldest)* should not be shortened to *Date entered (newest)*.-->
 ### Should
 
 * **Users should be able to sort data in both directions.** For example, a user should be able to sort medication names from A to Z and Z to A.
@@ -182,10 +168,6 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 
 
 ## Accessibility considerations
-
-<!--* **Navigating sort options as a keyboard user.** To prevent keyboard users from prematurely making a selection while navigating sort options, implement a delay or debounce.
-* **Keyboard Focus.** Upon selection, the focus stays on the sort component with the menu closed.
-* **Announcing changes with a aria-live region.** After the user makes a selection, an aria-live region should announce that the results have been updated in addition to how those results are sorted by.-->
 
 ### Must
 
@@ -205,27 +187,9 @@ A relevancy sort could be something like "Most relevant" or "Recommended" - thos
 * Should not support `<optgroup>`.
 
 
-<!--### Consider-->
-<!-- Source: Search filter
 
-Follow these accessibility guidelines when sorting your search results:
- 
-* **Move focus to results.** After selecting a sort criteria, move focus to the results heading or summary. This orients users and helps them find updated content quickly.
+## Related
 
-* **Announce updates after sorting.** Use an ARIA live region to announce the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) when results have updated, including the number of results found. This helps screen readers users know their action was successful.  (Should we include the sorting method?)
+* [USWDS Table Component](https://designsystem.digital.gov/components/table/#guidance)
 
-* **Preserve the sorted state.** Make sure selected sort method remains visible and accessible after results update, so users always know what sort method is active. 
-
-* **Announce loading states.** If results take time to update, use an ARIA live region to let users know results are loading.
-
-* **Provide clear error messages.** If there's an error applying a sort, show a clear message and announce it for screen reader users. Use simple, direct language. 
-
-
-<!-- ## Related
-
-* Links to related components.
-
-This is the Component checklist section. Note that the header is inside this include.
-<!-- include _component-checklist.html component_name=page.web-component -->
-
-
+<!--{% include _component-checklist.html component_name=page.web-component %}-->
