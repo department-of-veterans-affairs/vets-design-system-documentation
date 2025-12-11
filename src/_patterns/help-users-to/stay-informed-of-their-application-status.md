@@ -103,19 +103,16 @@ Forms and applications can show the following statuses:
 
 | Status                     | Description                                               | Managed by           |
 |----------------------------|----------------------------------------------------------|----------------------|
-| Draft                      | Saved but not submitted; available to resume             | Save-In-Progress     |
 | Submission in progress     | VA is processing your submission                         | Backend/API          |
 | Received                   | VA received your submission and it is being reviewed     | Backend/API          |
 | Action needed              | VA needs additional info from you                        | Backend/API          |
-
-**Note:** "DRAFT" is managed by the Save-In-Progress (SiP) system. Learn more in the [VA Forms Library: Save-In-Progress guide](https://depo-platform-documentation.scrollhelp.site/developer-docs/va-forms-library-how-to-set-up-save-in-progress-si).
 
 #### Status card variants
 
 There are two card variants for displaying form status:
 
-- **Uploadable Forms**: fallback title, e.g., "VA Form XX-XXXX"
-- **Save-In-Progress Forms**: product title with subheading (from application configuration)
+- **Uploaded Forms**: fallback title, e.g., "VA Form XX-XXXX"
+- **Online Forms**: product title with subheading (from application configuration)
 
 
 #### How to handle forms submitted within the process of another form (sub-forms)
