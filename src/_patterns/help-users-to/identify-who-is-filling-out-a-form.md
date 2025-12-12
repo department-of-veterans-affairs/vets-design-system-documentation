@@ -60,7 +60,7 @@ If you answered yes to any of questions 2 through 4, this pattern will help orga
 
 * **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative officially approved to help Veterans. The accredited representative needs to file VA Form 21-22 or 21-22a before they can submit a Veteran's paperwork.  A person can only have 1 accredited representative at a time.
 
-* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. The alternate signer needs to file VA Form 21-0972 before they can sign for another person.  A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives.  They need offical VA approval.)
+* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. The alternate signer needs to file VA Form 21-0972 before they can sign for another person.  A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives.  They need official VA approval.)
   
 **Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. If you include this term in your form, include a plain language definition at first mention.
 
