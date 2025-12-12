@@ -85,6 +85,8 @@ Example message:
 
 >We may contact you if we need more information or documents.
 
+**When additional forms are required:** If the user needs to complete additional forms as part of their process, provide clear guidance on next steps in the "What to expect next" section. Follow the [Help users to navigate multiple related forms]({{ site.baseurl }}/patterns/help-users-to/navigate-multiple-related-forms) pattern.
+
 ### Back to VA.gov link
 
 ![confirmation page action link]({{site.baseurl}}/images/templates/forms/confirmation/secondary-action-link.png)
