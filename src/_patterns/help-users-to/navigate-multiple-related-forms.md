@@ -51,7 +51,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 {% include component-example.html alt="VA Form 21-0966 Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="VA Form 21-0966 example of mentioning related forms on an intro page to help Veterans plan ahead." class="x2" %}
 
 ### Mid-form flow
-{% include component-example.html alt="Midform flow telling user that they need to submit additional forms." file="/images/patterns/help-users-to/navigate-multiple-related-forms/mid-form.png" caption="VA Form 21P-0969 instructs a user to download a now required form. If they have already filled it out, they are also able to upload it in the middle of this form process." }
+{% include component-example.html alt="Midform flow telling user that they need to submit additional forms." file="/images/patterns/help-users-to/navigate-multiple-related-forms/mid-form.png" caption="VA Form 21P-0969 instructs a user to download a now required form. If they have already filled it out, they are also able to upload it in the middle of this form process." class="x2" %}
 
 ### Confirmation page with required follow-up
 
