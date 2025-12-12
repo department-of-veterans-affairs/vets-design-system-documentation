@@ -14,7 +14,7 @@ status: use-with-caution-candidate
 
 This pattern helps us figure out 2 important things for VA forms:
 1.  Who is filling out the form (the person typing or writing)
-2.  Who the form is for(the person who will get the benefits)
+2.  Who the form is for (the person who will get the benefits)
 
 Sometimes these are the same person. Sometimes they’re different.
 
