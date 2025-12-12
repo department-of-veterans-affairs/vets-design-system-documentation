@@ -74,9 +74,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 * Link to authenticated experiences (like My VA) when relevant
 * Provide PDF downloads only when necessary or requested
 
-**Group related forms logically.** When multiple forms are needed, group them by:
-
-When multiple forms are needed, group them in a way that helps users understand priority and context — and clearly label that grouping. Teams should choose one logical approach based on the importance of the forms and what matters most for user decision-making:
+**Group related forms logically.** When multiple forms are needed, group them in a way that helps users understand priority and context — and clearly label that grouping. Teams should choose one logical approach based on the importance of the forms and what matters most for user decision-making:
 
 * **By priority:** “Required forms” vs. “Optional forms”
   Use when users must complete certain forms before others.
