@@ -93,7 +93,7 @@ Form submissions on VA.gov or in the mobile app must show the submission status 
 
 Some forms also show a "received" status in the **Claims and appeals** section of My VA. If your form appears as a claim, decision review, or appeal in the claim status tool, work with the team that manages that tool to determine how and where you should show form submission status in My VA.
 
-#### How to display status for application or VA form submissions
+#### How to display status for VA form and application submissions
 
 VA form and application submissions on My VA display status to help users stay informed about their submission. Follow this guidance and backend workflow for new forms or patterns.
 
