@@ -137,7 +137,7 @@ This is the Code Usage section. Note that the header is inside this include.-->
                 * Smallest to largest
                 * Lowest to highest
                 * Shortest to longest
-        * **Note:** `Sort method` should not be used in a standalone context. If a sort attribute label is not visually defined in the results (e.g. a Vaccine history card only has *Jan 22, 2025*), define the attribute in the sort options. 
+        * **Note:** `Sort method` should not be used as a standalone sort option. If a sort attribute label is not visually defined in the results (e.g. a Vaccine history card only has *Jan 22, 2025*), define the attribute in the sort options. 
     * Examples of sort options that follow the naming convention: 
         *  *Medication name (A to Z)*
         *  *Date entered (newest to oldest)*
