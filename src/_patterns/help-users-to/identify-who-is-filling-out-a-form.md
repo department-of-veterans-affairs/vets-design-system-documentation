@@ -85,7 +85,7 @@ Include hint text that explains who a claimant is: “We refer to this person as
 
 ### Question 1b: For everyone else
 
-If we don’'t know if someone is a Veteran, we ask: “Which of these best describes you?”
+If we don't know if someone is a Veteran, we ask: “Which of these best describes you?”
 
 Options might include:
 * I'm a Veteran filling out this form based on my own status
