@@ -137,17 +137,17 @@ This is the Code Usage section. Note that the header is inside this include.-->
                 * Smallest to largest
                 * Lowest to highest
                 * Shortest to longest
-    
-    * Examples that follow the naming convention: 
+        * **Note:** `Sort method` should not be used in a standalone context. If a sort attribute label is not visually defined in the results (e.g. a Vaccine history card only has *Jan 22, 2025*), define the attribute in the sort options. 
+    * Examples of sort options that follow the naming convention: 
         *  *Medication name (A to Z)*
         *  *Date entered (newest to oldest)*
         *  *Refills remaining (least to most)*
         *  *Distance (closest to furthest)*
 
 
-* **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
+<!--* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `Sort method` (aside from Relevance or another algorithmic method) is not permissible.-->
 
-* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `Sort method` (aside from Relevance or another algorithmic method) is not permissible.
+* **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
 
 
 ### Should
