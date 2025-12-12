@@ -20,7 +20,7 @@ Sometimes these are the same person. Sometimes they’re different.
 
 When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
 
-### Why this pattern matterns
+### Why this pattern matters
 
 This pattern helps:
 * Veterans get through forms faster when they’re filling it out for themselves
