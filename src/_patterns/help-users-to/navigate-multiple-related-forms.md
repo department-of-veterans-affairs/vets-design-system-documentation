@@ -48,11 +48,14 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 ### Introduction page preparation
 
-{% include component-example.html alt="Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="Example of mentioning related forms on an intro page to help Veterans plan ahead." class="x2" %}
+{% include component-example.html alt="VA Form 21-0966 Intro page mentioning related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/intro-page.png" caption="VA Form 21-0966 example of mentioning related forms on an intro page to help Veterans plan ahead." class="x2" %}
+
+### Mid-form flow
+{% include component-example.html alt="Mid-form flow telling user that they need to submit additional forms." file="/images/patterns/help-users-to/navigate-multiple-related-forms/mid-form.png" caption="VA Form 21P-0969 instructs a user to download a now required form. If they have already filled it out, they are also able to upload it in the middle of this form process." }
 
 ### Confirmation page with required follow-up
 
-{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="Example of a confirmation page directing Veterans to the next forms they should submit." class="x2" %}
+{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="VA Form 21-0972 Example of a confirmation page directing Veterans to the next forms they should submit." class="x2" %}
 
 ### Confirmation page with optional forms
 
@@ -94,8 +97,17 @@ Consistency of labeling helps Veterans understand what’s essential versus opti
 
 When mentioning related forms up front, include this information in a clearly labeled section like "Other forms you may need" or "Additional requirements."
 
+#### Use in the middle of a form when
+* The user's answer to a question triggers the need for an additional form
+
+When a user's response makes another form necessary:
+* Allow them to open the required form in a new tab so they don't lose their progress
+* Link to the online version of the form when available (rather than the PDF)
+* Remind them about the additional form on the confirmation page
+* If only a PDF is available, let them download it and upload the completed version later in the current form
+
 #### Use on confirmation pages when
-* Forms that become available after the primary form is processed
+* Forms become available after the primary form is processed
 * Veterans need to meet specific deadlines
 * The additional form is optional, and Veterans can decide later if they need it
 
@@ -142,15 +154,15 @@ The content style guide contains more examples on how to mention forms on VA.gov
 
 ### Linking guidelines
 
-**Default to online experiences:** "Complete your Application for Health Care Benefits" (linking to online form)
+**Default to online experiences.** "Complete your Application for Health Care Benefits" (linking to online form)
 
-**Use descriptive link text:** Link text should clearly describe what the user will find, not generic phrases like "click here" or "this form."
+**Use descriptive link text.** Link text should clearly describe what the user will find, not generic phrases like "click here" or "this form."
 
 ### Setting expectations
 
-**Be clear about timing:** "Complete this form within 30 days of your appointment" rather than "Complete this form soon."
+**Be clear about timing.** "Complete this form within 30 days of your appointment" rather than "Complete this form soon."
 
-**Explain consequences:** "If you don't submit this form by the deadline, we may not be able to process your application."
+**Explain consequences.** "If you don't submit this form by the deadline, we may not be able to process your application."
 
 **Provide context:** "This additional form helps us determine the full extent of your benefits."
 
