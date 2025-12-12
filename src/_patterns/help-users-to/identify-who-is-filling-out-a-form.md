@@ -68,7 +68,7 @@ If you answered yes to any of questions 2 through 4, this pattern will help orga
 
 ### Question 1a: For signed-in Veterans
 
-* If Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran.  Who are you fillint out this form for?"
+* If Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran.  Who are you filling out this form for?"
 
 They can choose from these options:
 * I’m filling out this form for myself
