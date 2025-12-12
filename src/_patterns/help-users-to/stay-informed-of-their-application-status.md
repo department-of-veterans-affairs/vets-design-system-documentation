@@ -114,7 +114,6 @@ There are two card variants for displaying form status:
 - **Uploaded Forms**: fallback title, e.g., "VA Form XX-XXXX"
 - **Online Forms**: product title with subheading (from application configuration)
 
-
 #### How to handle forms submitted within the process of another form (sub-forms)
 
 For sub-forms such as the Authorization to Disclose Information to the Department of Veterans Affairs (21-4142), submitted within the process of completing an Application for Disability Compensation and Related Compensation Benefits (21-526EZ) or Decision Review Request: Supplemental Claim (20-0995), the status of the sub-forms should be communicated independently from the status of the main form. In other words, each sub-form would send a separate email notification and each would have a separate status card shown in My VA, independent from the notifications and cards of the main form.
