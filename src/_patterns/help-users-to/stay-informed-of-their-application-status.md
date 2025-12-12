@@ -95,7 +95,7 @@ Some forms also show a "received" status in the **Claims and appeals** section o
 
 #### How to display status for VA form and application submissions
 
-VA form and application submissions on My VA display status to help users stay informed about their submission. Follow this guidance and backend workflow for new forms or patterns.
+VA form and application submissions on My VA display status to help people stay informed about their submission. Follow this guidance and backend workflow for new forms or patterns.
 
 #### Supported statuses
 
