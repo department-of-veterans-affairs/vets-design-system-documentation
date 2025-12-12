@@ -149,7 +149,7 @@ Use this pattern primarily on confirmation pages as part of the "What to expect 
 
 **Not this:** "You might need to fill out other forms depending on your situation."
 
-The content style guide contains more examples on how to mention forms on VA.gov
+The content style guide contains more examples on how to mention forms on VA.gov.
 * [Content style guide for government forms]({{ site.baseurl }}/content-style-guide/government-forms)
 
 ### Linking guidelines
