@@ -162,13 +162,13 @@ The content style guide contains more examples on how to mention forms on VA.gov
 
 **Explain consequences.** "If you don't submit this form by the deadline, we may not be able to process your application."
 
-**Provide context:** "This additional form helps us determine the full extent of your benefits."
+**Provide context.** "This additional form helps us determine the full extent of your benefits."
 
 ## Accessibility considerations
 
 **Ensure proper heading structure.** Use hierarchical headings (H3, H4) to organize sections of related forms information.
 
-**Use clear link text.** Screen reader users should understand form relationships and requirements from link text alone.
+**Use clear link text.** People using screen readers should understand form relationships and requirements from link text alone.
 
 **Structure lists properly.** Use proper HTML list markup for groups of related forms to ensure screen readers announce the relationships correctly.
 
