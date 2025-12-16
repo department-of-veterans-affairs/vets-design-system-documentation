@@ -157,6 +157,30 @@ these can be removed along with an update to how classes are generated in color-
   font-size: var(--vads-font-size--sm);
 }
 
+/* Mermaid Loading Components */
+.mermaid-container {
+  position: relative;
+}
+
+.mermaid-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.mermaid-loading-text {
+  color: var(--vads-color-gray-dark);
+  font-size: var(--vads-font-size--sm);
+}
+
+/* Mermaid chart styling */
 .mermaid-chart-container .mermaid {
   background: transparent;
   margin: 0 auto;

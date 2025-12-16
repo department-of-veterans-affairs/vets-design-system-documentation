@@ -78,6 +78,11 @@
             });
           }
         });
+        
+        // Hide loading overlays after charts are rendered
+        document.querySelectorAll('.mermaid-loading-overlay').forEach(overlay => {
+          overlay.style.display = 'none';
+        });
       });
     });
   </script>
