@@ -70,7 +70,7 @@ __Both of these descriptions must be true:__
 - You have a current illness or injury (known as a condition) that affects your mind or body, **and**
 - You served on active duty, active duty for training, or inactive duty training
 
-__And at least one of these descriptions must be true:__
+__And at least 1 of these descriptions must be true:__
 
 - You got sick or injured while serving in the military—and can link this condition to your illness or injury (called an in-service disability claim), **or**
 - You had an illness or injury before you joined the military—and serving made it worse (called a pre-service disability claim), **or**
@@ -129,7 +129,7 @@ If you want to provide more information about potential errors in our decision, 
 </div>
 </div>
 
-### Example of bulleted list with more than one sentence
+### Example of bulleted list with more than 1 sentence
 
 If any item in a bulleted list contains 2 or more full sentences, use ending periods for all items in the list (including any fragments). 
 
