@@ -25,14 +25,17 @@ anchors:
 
 ## Link text
 
-* Use natural and descriptive language.
-* Describe the purpose of the link and the destination if it’s taking the reader outside of VA.gov.
-* Don’t make the link so long that the relevant words get lost.
-* Avoid "Click here," since not all people are physically clicking links. 
-* Avoid generic link text like "Learn more" and "Read more" by themselves.
-* Avoid using words that assume certain abilities, like "See," "Hear," and "Watch."
+* Use natural and descriptive language
+* Describe the purpose of the linked page
+* If the link take the reader outside of VA.gov, name the external website in the link text (for example: "Review link guidance on the USWDS website")
+* Balance link text length to provide the needed descriptions without having the relevant words get lost in the length
+* Use "Select" instead of "Click here," since not all people are physically clicking links 
+* Avoid generic link text like "Learn more" and "Read more" by themselves
+* Avoid using words that assume certain abilities, like "See," "Hear," and "Watch"
 
-**Note:** If a link needs to open in a new tab, add “(opens in a new tab)” to notify users. Don’t use the new window icon unless there are space constraints.
+[Review more guidance for neutral language](https://design.va.gov/content-style-guide/neutral-language)
+
+**Note:** If a link needs to open in a new tab, add “(opens in a new tab)” to notify the person. Don’t use the new window icon unless there are space constraints.
 
 [Review guidance on when to open links in a new tab in the Components section](https://design.va.gov/components/link/)
 
@@ -138,9 +141,9 @@ On a form’s About page, include a direct download link to the PDF of that form
 </div>
 </div>
 
-For forms that aren’t part of the VA forms database, you may need to use a direct download link to the PDF version of the form. This is a rare situation. Contact the VA.gov content and information architecture (IA) team for guidance.
+For forms that aren’t part of the VA forms database, you may need to use a direct download link to the PDF version of the form. This is a rare situation. Contact the centralized content and information architecture (IA) team for guidance.
 
-You may also need a direct download link if the person filling out the form is downloading and generating their own completed copy. Contact the VA.gov content and IA team for guidance.
+You may also need a direct download link if the person filling out the form is downloading and generating their own completed copy. Contact the centralized content and IA team for guidance.
 
 ## Linking to documents and other file sources
 
@@ -148,7 +151,7 @@ You may also need a direct download link if the person filling out the form is d
 * If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System. This does not apply to pages housed within Drupal.<br>
 [Review examples of link variations in the Components section](https://design.va.gov/components/link/)
 * Include the file format (ex. PDF, HTML, or XML) in the link label. Place the file format at the end of the link label in parentheses. For example, “Download the Continuity of Care document (PDF).”
-* If you have a list of links to the same document with different file formats, consider rewording the link text to include the file format earlier. Contact the VA.gov content and IA team for help with your link text.
+* If you have a list of links to the same document with different file formats, consider rewording the link text to include the file format earlier. Contact the centralized content and IA team for help with your link text.
 
 <div class="do-dont">
 <div class="do-dont__do">
