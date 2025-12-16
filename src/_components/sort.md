@@ -15,7 +15,9 @@ status: use-with-caution-candidate
 # web-component: va-sort
 ---
 
-<!--## Examples
+## Examples
+
+{% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/Medications_example.png" caption="Use of this component on the Medications page." width="50%" %}
 
  <!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example 
 
