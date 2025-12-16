@@ -16,10 +16,10 @@ anchors:
 
 ## Considerations
 
-* We use links to connect Veterans with related information that may be helpful. 
+* We use links to connect Veterans and other visitors with related information that may be helpful to them. 
 * We also use links to help us centralize information, rather than repeating content in multiple places. This helps us update content more efficiently and keep content accurate.
-* Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments. We put links on their own line to help make the page easier to scan and the intention of the link as clear as possible.
-* External links can be disorienting for all people, but especially people who use screen readers. We want to be clear about where links are taking people.
+* We put links on their own line to help make the page easier to scan and the intention of the link as clear as possible. Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments.
+* We tell people where links are taking them and why. External links can be disorienting for all people, but especially people who use screen readers. 
 * For issues not covered in this style guide, refer to the U.S. Web Design System (USWDS) on links.<br>
 [Review link guidance on the USWDS website](https://designsystem.digital.gov//components/link/)
 
@@ -27,7 +27,7 @@ anchors:
 
 * Use natural and descriptive language
 * Describe the purpose of the linked page
-* If the link take the reader outside of VA.gov, name the external website in the link text (for example: "Review link guidance on the USWDS website")
+* If the link takes the reader outside of VA.gov, name the external website in the link text
 * Balance link text length to provide the needed descriptions without having the relevant words get lost in the length
 * Use "Select" instead of "Click here," since not all people are physically clicking links 
 * Avoid generic link text like "Learn more" and "Read more" by themselves
