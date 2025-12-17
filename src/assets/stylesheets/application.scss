@@ -168,7 +168,7 @@ these can be removed along with an update to how classes are generated in color-
   left: 0;
   right: 0;
   bottom: 0;
-  background: white;
+  background: var(--vads-color-white);
   display: flex;
   align-items: center;
   justify-content: center;
