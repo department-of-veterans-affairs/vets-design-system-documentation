@@ -83,6 +83,14 @@
         document.querySelectorAll('.mermaid-loading-overlay').forEach(overlay => {
           overlay.style.display = 'none';
         });
+      }).catch((error) => {
+        // Hide loading overlays even if rendering fails
+        document.querySelectorAll('.mermaid-loading-overlay').forEach(overlay => {
+          overlay.style.display = 'none';
+        });
+        
+        // Log error for debugging
+        console.error('Mermaid chart rendering failed:', error);
       });
     });
   </script>
