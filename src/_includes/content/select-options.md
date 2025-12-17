@@ -1,10 +1,10 @@
 ### Choosing the right component for the task
 When deciding which component to use, consider the number of options available to the user. The total number of options will determine which component is right for the task:
 
-* **2 - 5 options:** Use [Radio button]({{ site.baseurl }}/components/form/radio-button) when there are only a few options that can all be exposed at once
-* **6 - 15 options:** Use [Select]({{ site.baseurl }}/components/form/select) for a limited number of options
-* **16 - 100 options:** Use [Combo box]({{ site.baseurl }}/components/form/combo-box), which combines a select with typeahead functionality for easier selection
-* **101+ options:** Use [Search input]({{ site.baseurl }}/components/search-input) with typeahead to help users quickly find the right option from a large set
+* **2 - 5 options:** Use [Radio button]({{ site.baseurl }}/components/form/radio-button) when there are only a few options that can all be exposed at once.
+* **6 - 15 options:** Use [Select]({{ site.baseurl }}/components/form/select) for a limited number of options.
+* **16 - 100 options:** Use [Combo box]({{ site.baseurl }}/components/form/combo-box), which combines a select with typeahead functionality for easier selection.
+* **101+ options:** Use [Search input]({{ site.baseurl }}/components/search-input) with typeahead to help users quickly find the right option from a large set.
 
 ### Exceptions to consider when choosing a component
 In some cases, there are common outliers and exceptions to account for:
