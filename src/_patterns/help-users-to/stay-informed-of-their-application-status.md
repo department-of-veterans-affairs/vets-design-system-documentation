@@ -118,6 +118,12 @@ There are two card variants for displaying form status:
 
 For sub-forms such as the Authorization to Disclose Information to the Department of Veterans Affairs (21-4142), submitted within the process of completing an Application for Disability Compensation and Related Compensation Benefits (21-526EZ) or Decision Review Request: Supplemental Claim (20-0995), the status of the sub-forms should be communicated independently from the status of the main form. In other words, each sub-form would send a separate email notification and each would have a separate status card shown in My VA, independent from the notifications and cards of the main form.
 
+#### How to show status for uploaded documents
+
+In the email, show the list of documents uploaded within the application on the confirmation page and email.
+
+In the future, also indicate to the user on the status card shown in My VA the count of uploaded documents. For example, "You uploaded 22 documents. We'll email you if we can't successfully deliver any of them."
+
 ### Showing form processing status after we receive it in the system of record
 
 Some forms show processing status after point of receipt in the claim status tool. In the future, all forms should work toward allowing people to track the processing status through to the point of a VA decision or other ultimate end point.
