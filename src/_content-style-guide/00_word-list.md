@@ -597,7 +597,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use this term instead of "2-factor authentication." Multifactor is 1 word. No hyphen. 
 
 **My HealtheVet**
-: Don't italicize the "e" between "Health" and "Vet" in body copy, headlines, and user interface elements such as links, buttons, and navigation. The "e" is italicized only in the logo.
+: "My HealtheVet" is 2 words. Don't italicize the "e" between "Health" and "Vet" in body copy, headlines, and user interface elements such as links, buttons, and navigation. The "e" is italicized only in the logo.
 
 ### N
 
