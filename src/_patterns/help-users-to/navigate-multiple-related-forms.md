@@ -70,9 +70,12 @@ Some form submissions require Veterans to provide additional evidence to be subm
 **Set realistic expectations about timing.** Tell Veterans when they should complete additional forms and what happens if they don't. Be specific about deadlines when possible.
 
 **Link to the right tools.** Direct Veterans to the most appropriate version of each form:
-* Link to online applications when available
+* Link to about pages for forms. These about pages will provide the most options available for Veterans to fill out a form, including:
+  * Filling out the form online in their browser
+  * Downloading the PDF
+  * Uploading a PDF
 * Link to authenticated experiences (like My VA) when relevant
-* Provide PDF downloads only when necessary or requested
+* Provide direct PDF downloads only when necessary or requested
 
 **Group related forms logically.** When multiple forms are needed, group them in a way that helps users understand priority and context — and clearly label that grouping. Teams should choose one logical approach based on the importance of the forms and what matters most for user decision-making:
 
@@ -123,7 +126,7 @@ Use this pattern primarily on confirmation pages as part of the "What to expect 
 * [Process list]({{ site.baseurl }}/components/process-list) - For sequential steps or ordered forms
 * [Link]({{ site.baseurl }}/components/link) - For linking to online forms and PDFs
 * [Additional info]({{ site.baseurl }}/components/additional-info) - For optional details about form purposes
-* [Alert]({{ site.baseurl}}/components/additional-info) - For notifying users of additional actions that need to be taken
+* [Alert]({{ site.baseurl }}/components/alert) - For notifying users of additional actions that need to be taken
 
 ## Content considerations
   
@@ -147,8 +150,7 @@ Use this pattern primarily on confirmation pages as part of the "What to expect 
 
 **Not this:** "You might need to fill out other forms depending on your situation."
 
-The content style guide contains more examples on how to mention forms on VA.gov.
-* [Content style guide for government forms]({{ site.baseurl }}/content-style-guide/government-forms)
+The content style guide contains more [examples on how to mention forms on VA.gov]({{ site.baseurl }}/content-style-guide/government-forms).
 
 ### Linking guidelines
 
