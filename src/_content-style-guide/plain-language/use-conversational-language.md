@@ -16,8 +16,8 @@ Here's what this means:
 
 - Address Veterans, service members, family members, and other audiences using second person singular: “you” and “your”
 - Refer to VA using first person plural: “we,” "us," and “our”  
-- For Q&As on VA.gov informational pages (ex. a Q&A on a benefit eligibility page), frame the question as though asked by the Veteran (using “I”) and the answer as though answered by VA (using “we” and “you”)
-- In VA forms and interactive tools, frame questions as VA asking the Veteran the question directly (using “we” and “you”)
+- For Q&As on VA.gov informational pages (ex. a Q&A on a benefit eligibility page), frame the question as though asked by the Veteran or beneficiary (using “I”) and the answer as though answered by VA (using “we” and “you”)
+- In VA forms and interactive tools, frame questions as VA asking the Veteran or beneficiary the question directly (using “we” and “you”)
 
 [Learn more in the Content principles section of the style guide](https://design.va.gov/content-style-guide/content-principles)
 
