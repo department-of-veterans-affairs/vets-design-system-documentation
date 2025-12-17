@@ -54,6 +54,13 @@
 
     // Render and resize mermaid charts
     document.addEventListener('DOMContentLoaded', function() {
+      // Helper function to hide loading overlays
+      function hideLoadingOverlays() {
+        document.querySelectorAll('.mermaid-loading-overlay').forEach(overlay => {
+          overlay.style.display = 'none';
+        });
+      }
+      
       mermaid.run().then(() => {
         const MAX_WIDTH = 528;
         
@@ -80,9 +87,13 @@
         });
         
         // Hide loading overlays after charts are rendered
-        document.querySelectorAll('.mermaid-loading-overlay').forEach(overlay => {
-          overlay.style.display = 'none';
-        });
+        hideLoadingOverlays();
+      }).catch((error) => {
+        // Hide loading overlays even if rendering fails
+        hideLoadingOverlays();
+        
+        // Log error for debugging
+        console.error('Mermaid chart rendering failed:', error);
       });
     });
   </script>
