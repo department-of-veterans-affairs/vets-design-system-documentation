@@ -17,7 +17,15 @@ status: use-with-caution-candidate
 
 ## Examples
 
-{% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/Medications_example.png" caption="Sorting medications by last fill date." width="50%" %}
+### Medications
+{% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/medication_sort.png" caption="Sorting medications by last fill date." width="50%" %}
+
+### Site Search
+{% include component-example.html alt="Example of forms sorted by last update (newest to oldest) on VA.gov's form finder" file="/images/components/sort/find_a_form_sort.png" caption="Sorting forms on VA.gov's form finder." width="50%" %}
+
+### Secure Messaging
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in MyHealtheVet" file="/images/components/sort/find_a_form_sort.png" caption="Sorting messages by send date (newest to oldest) on MyHealtheVet." width="50%" %}
+
 
 <!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example 
 
@@ -126,9 +134,9 @@ This is the Code Usage section. Note that the header is inside this include.-->
 
 * **Name sort options consistently.** Sort options (aside from the option to sort by *Relevance* or another algorithmic method) must follow this convention:
     * `[Sort attribute](sort method)`
-        * `[Sort attribute]` represents the attribute being used to sort by.
+        * `[Sort attribute]` represents what the results are being sorted by.
             * This could be things like medication names, entry dates, remaining refills, distance, etc.
-        * `(Sort method)` represents the direction of the sort. Teams should aim to align the naming with the following list:
+        * `(Sort method)` represents how the results are sorted. Teams should aim to align the naming with the following list:
             * **Alphabetical**
                 * A to Z      
             * **Chronological**
