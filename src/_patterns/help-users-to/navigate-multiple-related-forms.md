@@ -59,7 +59,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 ### Confirmation page with optional forms
 
-{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="Example showing optional forms that a Veteran may now complete after completing this form." class="x2" %}
+{% include component-example.html alt="Confirmation page showing optional related forms" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-2.png" caption="VA Form 21-0972 example showing optional forms that a Veteran may now complete after completing this form." class="x2" %}
   
 ## How to design and build
 
