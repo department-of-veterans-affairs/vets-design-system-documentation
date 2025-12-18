@@ -41,9 +41,20 @@ flowchart TD
     </div>
   {% endif %}
   
-  <div class="mermaid" 
-       id="{{ include.id }}"
-       aria-hidden="true">
-    {{ include.chart }}
+  <div class="mermaid-container" style="min-height: 400px;">
+    <!-- Loading overlay -->
+    <div class="mermaid-loading-overlay">
+      <div class="loading-indicator-container">
+        <div class="loading-indicator" aria-hidden="true"></div>
+        <div class="mermaid-loading-text" role="status" aria-live="polite">Loading chart...</div>
+      </div>
+    </div>
+    
+    <!-- Original mermaid chart -->
+    <div class="mermaid" 
+         id="{{ include.id }}"
+         aria-hidden="true">
+      {{ include.chart }}
+    </div>
   </div>
 </figure>
