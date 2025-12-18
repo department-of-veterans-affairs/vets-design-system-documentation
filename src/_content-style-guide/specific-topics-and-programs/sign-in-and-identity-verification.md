@@ -15,7 +15,7 @@ anchors:
 
 - We want to encourage Veterans to create Login.gov or ID.me accounts, with an emphasis on Login.gov. 
 - Research has shown that some people confuse Login.gov with being a separate tool. Reinforce that Login.gov and ID.me are types of sign-in accounts—not tools or portals—by using the phrase “**Login.gov** account” or “**ID.me** account.”
-- We bold the terms **Login.gov**, **ID.me**, **DS Logon**, and **My HealtheVet** when we're referring to types of sign-in accounts.
+- We bold the terms **Login.gov** and **ID.me** when we're referring to types of sign-in accounts.
 **Like this:** “You can use your **Login.gov** account to access your VA benefits, services, and information online.”  
 **Not this:** “You can use Login.gov to access your VA benefits, services, and information online.”  
 **Exception:** We don’t need “account” to follow “Login.gov” in this example: “**Login.gov** is our government’s one account provider for VA and other government benefits and services.” 
