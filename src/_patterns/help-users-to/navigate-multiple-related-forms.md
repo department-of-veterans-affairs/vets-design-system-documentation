@@ -55,7 +55,7 @@ Some form submissions require Veterans to provide additional evidence to be subm
 
 ### Confirmation page with required follow-up
 
-{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="VA Form 21-0972 Example of a confirmation page directing Veterans to the next forms they should submit." class="x2" %}
+{% include component-example.html alt="Confirmation page showing required follow-up form" file="/images/patterns/help-users-to/navigate-multiple-related-forms/confirmation-example-1.png" caption="VA Form 21-0972 example of a confirmation page directing Veterans to the next forms they should submit." class="x2" %}
 
 ### Confirmation page with optional forms
 
