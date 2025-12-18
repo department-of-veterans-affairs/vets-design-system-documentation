@@ -18,7 +18,7 @@ status: use-with-caution-candidate
 ## Examples
 
 ### Medications
-{% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/medication_sort.png" caption="Sorting medications by last fill date." width="50%" %}
+{% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/medications_sort.png" caption="Sorting medications by last fill date." width="50%" %}
 
 ### Find a Form
 {% include component-example.html alt="Example of forms sorted by last update (newest to oldest) on VA.gov's form finder" file="/images/components/sort/find_a_form_sort.png" caption="Sorting forms on VA.gov's form finder." width="50%" %}
