@@ -20,11 +20,11 @@ status: use-with-caution-candidate
 ### Medications
 {% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/medication_sort.png" caption="Sorting medications by last fill date." width="50%" %}
 
-### Site Search
+### Find a Form
 {% include component-example.html alt="Example of forms sorted by last update (newest to oldest) on VA.gov's form finder" file="/images/components/sort/find_a_form_sort.png" caption="Sorting forms on VA.gov's form finder." width="50%" %}
 
 ### Secure Messaging
-{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in MyHealtheVet" file="/images/components/sort/find_a_form_sort.png" caption="Sorting messages by send date (newest to oldest) on MyHealtheVet." width="50%" %}
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the MyHealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by send date (newest to oldest) in the MyHealtheVet Inbox." width="50%" %}
 
 
 <!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example 
@@ -122,8 +122,10 @@ Add Storybook examples as necessary.-->
 
 
 
-<!--## Code Usage
-This is the Code Usage section. Note that the header is inside this include.-->
+## Code Usage
+* **When implementing the chronological Sort, ensure that dates are formatted in a way that correctly produces chronological order.** For example, MM/DD/YYYY without proper handling could sort results by month rather than by year, then month, then day. To prevent this, we recommend converting time into the epoch(UNIX) format. This may not be applicable if sorting is handled at the API level.
+
+
 <!-- include component-docs.html component_name=page.web-component  -->
 
 ## Content considerations
@@ -147,7 +149,8 @@ This is the Code Usage section. Note that the header is inside this include.-->
                 * Smallest to largest
                 * Lowest to highest
                 * Shortest to longest
-        * **Note:** `Sort method` should not be used as a standalone sort option. If a sort attribute label is not visually defined in the results (e.g. a Vaccine history card only has *Jan 22, 2025*), define the attribute in the sort options. 
+        * **Note:** `Sort method` should not be used as a standalone sort option. If a sort attribute label is not visually defined in the results, define the attribute in the sort options. 
+            * For example, if a Vaccine history card only contains *Jan 22, 2025*, the sort option should be something like *Date received (newest to oldest)*.
     * Examples of sort options that follow the naming convention: 
         *  *Medication name (A to Z)*
         *  *Date entered (newest to oldest)*
