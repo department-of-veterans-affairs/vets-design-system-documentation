@@ -13,6 +13,15 @@ figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/branch/ZCvzp
 # figma-link-mobile-app: https://www.figma.com/design/Zzt8z60hCtdEzXx2GFWghH/VA-Mobile---Component-Library?node-id=224-314
 status: use-with-caution-candidate
 # web-component: va-sort
+anchors:
+  - anchor: Examples
+  - anchor: Usage
+  - anchor: Behavior
+  - anchor: Code usage
+  - anchor: Content considerations
+  - anchor: Accessibility considerations
+  - anchor: Privacy guidance
+  - anchor: Related
 ---
 
 ## Examples
@@ -79,11 +88,8 @@ Add Storybook examples as necessary.-->
 * **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu. These behaviors are identical to the [Select]({{ site.baseurl }}/components/form/select) component's because Select is used as the foundation.
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission. 
-    <va-additional-info trigger="Why implicit submission?" disable-analytics="false" disable-border="false" class="hydrated"><p>
-    The Design Systems Council has determined this to be the most common and expected behavior and has worked with accessibility specialists to develop [technical considerations](#accessibility considerations) that mitigate shortcomings that affect assistive technology users. The alternative that allow a user to explicitly confirm their sort option with a button was found to not meet user expectations--a 2024 [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
+    **Why implicit submission?** The Design Systems Council has determined this to be the most common and expected behavior and has worked with accessibility specialists to develop [technical considerations](#Accessibility considerations) that mitigate shortcomings that affect assistive technology users. The alternative that allow a user to explicitly confirm their sort option with a button was found to not meet user expectations--a 2024 [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
     > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
-    </p>
-    </va-additional-info>
 
             
 <!--Though implicit submission has its shortcomings, accessibility specialists have identified ways that they can be mitigated by implementing the following guardrails:
