@@ -88,7 +88,13 @@ Add Storybook examples as necessary.-->
 * **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu. These behaviors are identical to the [Select]({{ site.baseurl }}/components/form/select) component's because Select is used as the foundation.
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission. 
-    **Why implicit submission?** The Design Systems Council has determined this to be the most common and expected behavior and has worked with accessibility specialists to develop [technical considerations](#Accessibility considerations) that mitigate shortcomings that affect assistive technology users. The alternative that allow a user to explicitly confirm their sort option with a button was found to not meet user expectations--a 2024 [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
+    
+    * **Why implicit submission?** The Design Systems Council has determined this to be the most common, expected behavior and has worked with accessibility specialists to identify considerations that mitigate shortcomings to the assistive technology user experience:
+        * A debounce or delay to prevent screen reading users from prematurely making sort selection while navigating options.
+        * The focus on the component must remain stable after a selection is made to prevent unexpectedly changing the user's context (some users may not expect an implicit submission)
+        * The user must be notified that results have updated by using an `aria-live` region.
+        * The full list can be found under the [Accessibility Considerations](#Accessibility considerations) section.
+    * The alternative to allow a user to explicitly confirm their sort choice with a button was found to be easily missed--a 2024 [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
     > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
 
             
@@ -102,8 +108,6 @@ Add Storybook examples as necessary.-->
 
 
 * **The sort should apply to the entire data set, not just the data available in a paginated view.** This means the sort resets the results to page 1.
-
-* **The focus must remain stable and visible after sorting.**
 
 * **A sort action should not unexpectedly disappear.** When navigating through paginated results or refreshing the page, the sort criteria must persist.
 
@@ -192,9 +196,13 @@ Add Storybook examples as necessary.-->
 ## Accessibility considerations
 
 ### Must
-
+* Use semantic HTML `label` + `select`.
+* Implement live region updates using aria-live="polite"; ensure only one active live region.
+* Add `aria-busy` on the results container during asynchronous updates.
+* Ensure DOM reordering reflects the visual order ([WCAG 1.3.2](https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html)).
 * The sort control must use a native `<select>` element for predictable keyboard and AT behavior.  
-* Changing a sort value must not cause unexpected navigation; only the relevant results region updates.  
+* Changing a sort value must not cause unexpected navigation; only the relevant results region updates.
+* The focus must remain stable and visible after sorting. 
 * Live region must announce sorting changes with dataset and page context.  
 <!--Defined in behavior* The sort must re-sort the entire data set, not just the data available in a paginated view.-->
 <!--* When navigating through paginated results, the sort criteria must be maintained.-->
@@ -203,6 +211,7 @@ Add Storybook examples as necessary.-->
 <!-- Defined in Behavior and combined with maintaining sort criteria for navigating paginated results * When sorting paginated results, the dataset resets the user to page 1.-->
 
 ### Should
+* Debounce network requests when multiple sorts occur in quick succession or delay the `onchange` event to check for another option selection.
 * Announce loading states using `aria-busy`.
 <!--* Reset sort and filtered views when the browser is refreshed-->
 <!-- Defined in Behavior * When a page is refreshed by the user, the sort selection should persist-->
