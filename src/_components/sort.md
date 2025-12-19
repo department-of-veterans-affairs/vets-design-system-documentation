@@ -85,6 +85,16 @@ Add Storybook examples as necessary.-->
 
     In order to prevent a screen-reading user from prematurely making a sort selection while navigating sort options, teams should implement a debounce or delay. 
 
+    Implicit versus explicit submission has been heavily debated, and the Design Systems Council verdict was to side with implicit submission with its shortcomings addressed by additional accessibility considerations.The most important guardrails that teams should implement are to:
+        *Add a debounce or delay to prevent SR users from prematurely making  sort selection while navigating their options
+       * Keep the focus  on the component after a selection is made to prevent unexpectedly changing the user's context (some users may not expect an implicit submission)
+       * Notify the user that results have updated by using an `aria-live` region.
+
+        Additional guardrails are detailed in [Accessibility Considerations](#accessibility considerations).
+
+<va-additional-info trigger="(Test) Why implicit submission" disable-analytics="false" disable-border="false" class="hydrated"><p>Here are some popular pets to consider</p><ul><li>Dogs</li><li>Cats</li><li>Fish</li><li>Birds</li></ul></va-additional-info>
+
+
 * **The sort should apply to the entire data set, not just the data available in a paginated view.** This means the sort resets the results to page 1.
 
 * **The focus must remain stable and visible after sorting.**
