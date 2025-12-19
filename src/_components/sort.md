@@ -79,20 +79,20 @@ Add Storybook examples as necessary.-->
 * **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu. These behaviors are identical to the [Select]({{ site.baseurl }}/components/form/select) component's because Select is used as the foundation.
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission. 
-    * **Why implicit submission?**
-    This seems to be the most common and expected behavior. The alternative to allow a user to explicitly confirm their sort option with a button was considered, however a [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
-> "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
+    <va-additional-info trigger="Why implicit submission?" disable-analytics="false" disable-border="false" class="hydrated"><p>
+    The Design Systems Council has determined this to be the most common and expected behavior and has worked with accessibility specialists to develop [technical considerations](#accessibility considerations) that mitigate shortcomings that affect assistive technology users. The alternative that allow a user to explicitly confirm their sort option with a button was found to not meet user expectations--a 2024 [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
+    > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
+    </p>
+    </va-additional-info>
 
-    In order to prevent a screen-reading user from prematurely making a sort selection while navigating sort options, teams should implement a debounce or delay. 
-
-    Implicit versus explicit submission has been heavily debated, and the Design Systems Council verdict was to side with implicit submission with its shortcomings addressed by additional accessibility considerations.The most important guardrails that teams should implement are to:
-        *Add a debounce or delay to prevent SR users from prematurely making  sort selection while navigating their options
-       * Keep the focus  on the component after a selection is made to prevent unexpectedly changing the user's context (some users may not expect an implicit submission)
-       * Notify the user that results have updated by using an `aria-live` region.
-
-        Additional guardrails are detailed in [Accessibility Considerations](#accessibility considerations).
-
-<va-additional-info trigger="(Test) Why implicit submission" disable-analytics="false" disable-border="false" class="hydrated"><p>Here are some popular pets to consider</p><ul><li>Dogs</li><li>Cats</li><li>Fish</li><li>Birds</li></ul></va-additional-info>
+            
+<!--Though implicit submission has its shortcomings, accessibility specialists have identified ways that they can be mitigated by implementing the following guardrails:
+* A debounce or delay to prevent screen reading users from prematurely making sort selection while navigating options.
+ * The focus on the component must remain stable after a selection is made to prevent unexpectedly changing the user's context (some users may not expect an implicit submission)
+* The user must be notified that results have updated by using an `aria-live` region.
+* Additional considerations are documented in the [Accessibility Considerations](#accessibility considerations) section.-->
+        
+<!-- (old)In order to prevent a screen-reading user from prematurely making a sort selection while navigating sort options, teams should implement a debounce or delay.-->
 
 
 * **The sort should apply to the entire data set, not just the data available in a paginated view.** This means the sort resets the results to page 1.
