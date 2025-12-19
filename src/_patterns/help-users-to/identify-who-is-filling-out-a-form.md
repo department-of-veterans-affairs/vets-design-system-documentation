@@ -47,6 +47,34 @@ Before using this pattern, ask yourself these 4 questions:
 
 If you answered yes to any of questions 2 through 4, this pattern will help organize the flow.
 
+```mermaid
+flowchart TD
+    Start["START HERE: <br/>Does your form represent a service/<br/>benefit available to Veterans and a<br/>Claimant or just Veterans?"]
+    
+    Start -->|VETERAN & CLAIMANT| Q1["Does the form<br/>ask the relationship of<br/>the Claimant<br/>to the Veteran?"]
+    Start -->|VETERAN ONLY| Q3["Can your form<br/>be filled out/<br/>submitted by<br/>a third party?"]
+    
+    Q1 -->|YES| Q2["Can your form<br/>be filled out/<br/>submitted by<br/>a third party?"]
+    Q1 -->|NO| Skip["Skip using<br/>question 2a"]
+    
+    Q2 -->|YES| FullPattern["Use full pattern -<br/>2b"]
+    Q2 -->|NO| Question2a["Just use<br/>question 2a<br/>from the<br/>pattern"]
+    
+    Q3 -->|NO| NoNeed["No need to<br/>use form<br/>submitter<br/>pattern"]
+    Q3 -->|YES| FullPattern
+    
+    Skip -.-> Q2
+    
+    style Start fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Q1 fill:#7dd3c0,stroke:#333,stroke-width:2px
+    style Q2 fill:#7dd3c0,stroke:#333,stroke-width:2px
+    style Q3 fill:#7dd3c0,stroke:#333,stroke-width:2px
+    style Skip fill:#b5e7a0,stroke:#333,stroke-width:2px
+    style Question2a fill:#a8d8ea,stroke:#333,stroke-width:2px
+    style NoNeed fill:#f5a3b8,stroke:#333,stroke-width:2px
+    style FullPattern fill:#c8b5e8,stroke:#333,stroke-width:2px
+```
+
 ### Key terms you need to know
 - These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and Claims and applications https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications sections in the content style guide.
 
@@ -93,10 +121,8 @@ Options might include:
 * I’m filling out this form for a Veteran
 * I'm filling out this form for a family member of a Veteran
 
-Include hint text that explains who a claimant is: “This helps us understand your relationship to the person you’re filling out this form for (called the “claimant”). The claimant is the person who is claiming the VA benefit or service.”
 
-
-{% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves, non-Veteran claimants, filling out for a Veteran, or filling out for a non-Veteran claimant." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" reverse="true" %}
+{% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves or their family member, a fammily member filling out for a Veteran, or someone else filling out for a family member of the Veteran." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" reverse="true" %}
 
 ### Question 2a: Relationship to Veteran
 
@@ -107,7 +133,7 @@ We ask about the person’s relationship to the Veteran whose service earned the
 * I’m a Veteran’s parent
 * Other permitted claimant type (depends on the form)
 
-{% include component-example.html alt="A form question asking which roles best describe the user, with placeholder options for different claimant types permitted by the form." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2a-claimant-question.png" caption="Example of Question 2a asking about the user's relationship or role as a claimant." class="x2" reverse="true" %}
+{% include component-example.html alt="A form question asking which roles best describe the user, with placeholder options for different claimant types permitted by the form." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2a-claimant-question.png" caption="Example of Question 2a asking about the user's relationship to the Veteran." class="x2" reverse="true" %}
 
 ### Question 2b: For people filling out forms for others
 
