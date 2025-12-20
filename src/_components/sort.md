@@ -84,7 +84,6 @@ Add Storybook examples as necessary.-->
 ## Behavior
 
 ### Web
-
 * **User clicks the dropdown to open a list of sort options.** Alternatively, a screen-reading user may arrow up and down the list without opening the menu. These behaviors are identical to the [Select]({{ site.baseurl }}/components/form/select) component's because Select is used as the foundation.
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission.
