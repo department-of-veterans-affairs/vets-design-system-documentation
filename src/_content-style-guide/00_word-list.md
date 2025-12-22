@@ -862,7 +862,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Use smartphone when specifically referencing a mobile phone that connects to the internet. Like this: “At some VA health care facilities, you can now check in for appointments with your smartphone.” For related information, go to the entry for "mobile phone."
 
 **Social Security number**
-: Lowercase "number."
+: Lowercase "number." Don't use the "SSN" acronym.
 
 **special claim**
 : Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
@@ -876,6 +876,9 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **spouse**
 : We use “surviving spouse” if the Veteran has died. We use “spouse” if the Veteran is living (we don’t use “dependent spouse”). Use this construction if you’re referring to both spouse and child: “spouse and dependent child” (not “dependent spouse and child”).
+
+**Statement of Service**
+: Capitalize.
 
 **Statement of the Case**
 : Capitalize.
