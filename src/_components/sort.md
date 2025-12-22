@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: false
 web: true
 mobile-app: false
-intro-text: "Enables the user to reorder search results and lists of information in a way that is easier for them to analyze."
+intro-text: "Enables users to reorder search results and lists of information in a way that is easier to analyze."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/branch/ZCvzpF0EbyeCbO4fL9u8r0/VADS-Component-Library?m=auto&node-id=40936-5762&t=JVGxloXD7xd6RgeE-1
@@ -33,30 +33,8 @@ anchors:
 {% include component-example.html alt="Example of forms sorted by last update (newest to oldest) on VA.gov's form finder" file="/images/components/sort/find_a_form_sort.png" caption="Sorting forms on VA.gov's form finder." width="50%" %}
 
 ### Secure Messaging
-{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the MyHealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by send date (newest to oldest) in the MyHealtheVet Inbox." width="50%" %}
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the MyHealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the MyHealtheVet Inbox." width="50%" %}
 
-
-<!--  Use tabs to consolidate examples if you have both web and mobile app examples. See the buttons component page for an example 
-
-### Web
-
-#### Default
-
-{% include storybook-preview.html story="components-va-component-name--default" link_text=page.web-component %}
-
-#### Variation 1
-
-Add Storybook examples as necessary.
-
-#### Variation 2
-
-Add Storybook examples as necessary.
-
-### Mobile app
-
-### Variation 1
-
-Add Storybook examples as necessary.-->
 
 ## Usage
 
@@ -79,7 +57,6 @@ Add Storybook examples as necessary.-->
 * **When there's only one obvious order.** This means that there should be a minimum of two ways to sort in order to use the component.
 * **When the goal is to narrow results down**. Use a [Filter]({{ site.baseurl }}/components/search-filter) instead.
 
-<!--The Sort component uses the Select component as the foundation with some design, content, and accessibility considerations locked in.-->
 
 ## Behavior
 
@@ -89,41 +66,19 @@ Add Storybook examples as necessary.-->
 
 * **Results automatically update upon selecting a sort option.** This is known as implicit submission.
     * **Why implicit submission?**
-        * The Design Systems Council has determined this to be the most common, expected behavior and has worked with accessibility specialists to identify important [considerations](#Accessibility considerations) that mitigate its shortcomings to the assistive technology user experience.
+        * The Design Systems Council has determined this to be the most common, expected behavior and has worked with accessibility specialists to identify important [considerations](#accessibility-considerations) that mitigate its shortcomings to the assistive technology user experience.
         * The alternative to allow a user to explicitly confirm their sort choice with a button was found to be easily missed--a 2024 [VA.gov Medications Round 3 study](https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/products/health-care/digital-health-modernization/mhv-to-va.gov/medications/research/2024-05-medications-usability-testing-round3-AT/research-findings.md#:~:text=6%20of%2011%20participants%20missed%20the%20%E2%80%98Sort%E2%80%99%20button%20after%20selecting%20the%20sort%20option.%20Vision%20did%20not%20seem%20to%20play%20a%20role%20in%20who%20missed%20the%20button%20as%204%20of%20the%206%20were%20sighted.%20One%20screen%20reader%20dependent%20user%20did%20mention%20missing%20things%20because%20of%20his%20speed.) found that...
-        > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
-
-<!--* A debounce or delay to prevent screen reading users from prematurely making sort selection while navigating options.
-* The focus on the component must remain stable after a selection is made to prevent unexpectedly changing the user's context (some users may not expect an implicit submission)
-* The user must be notified that results have updated by using an `aria-live` region.
-* The full list can be found under the [Accessibility Considerations](#Accessibility considerations) section.-->
-
-            
-<!--Though implicit submission has its shortcomings, accessibility specialists have identified ways that they can be mitigated by implementing the following guardrails:
-* A debounce or delay to prevent screen reading users from prematurely making sort selection while navigating options.
- * The focus on the component must remain stable after a selection is made to prevent unexpectedly changing the user's context (some users may not expect an implicit submission)
-* The user must be notified that results have updated by using an `aria-live` region.
-* Additional considerations are documented in the [Accessibility Considerations](#accessibility considerations) section.-->
-        
-<!-- (old)In order to prevent a screen-reading user from prematurely making a sort selection while navigating sort options, teams should implement a debounce or delay.-->
+    > "6 of 11 participants missed the `Sort` button after selecting the sort option. Vision did not seem to play a role in who missed the button as 4 of the 6 were sighted. One screen reader dependent user did mention missing things because of his speed".
 
 
 * **The sort should apply to the entire data set, not just the data available in a paginated view.** This means the sort resets the results to page 1.
 
 * **A sort action should not unexpectedly disappear.** When navigating through paginated results or refreshing the page, the sort criteria must persist.
 
-<!--* **(TBD) The component is responsive and full-width on mobile resolutions.** On desktop, the maximum width of the component is 347px, which can fit approximately 34 characters before getting cut off. It is recommended to use a size that does not cut off sort options. -->
-
 * **Sizing and alignment differ on mobile and desktop.**
     * On desktop resolutions, the width is pre-defined and fixed. The *Sort by* label is in-line with the dropdown.
         * Choose either the Medium (md), Large (lg), or Extra Large (xl) size, whichever avoids truncating the longest sort option. 
     * On mobile resolutions, the component is responsive and full-width. The *Sort by* label is stacked on top of the dropdown.
-
-
-
-
-<!--* **(TBD) A text description of the results should update with how many results are being shown.** The implementation should follow this format:
-> Showing 1-10 of results.-->
 
 
 
@@ -138,16 +93,12 @@ Add Storybook examples as necessary.-->
 * **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
     * The naming of sort options must still remain consistent across mobile and desktop experiences.
 
-<!--*Only the web version of this component is available as the VA Mobile app does not currently have a use case for a standalone Sort component. However, sort options that exist in the mobile app experiences should still align with the sort options in their desktop counterparts.
-* The VA Mobile app does use a combined Filter and Sort button that opens a modal that allows users to select and submit filters/sort options. --> 
-
 
 
 ## Code Usage
-* **When implementing the chronological Sort, ensure that dates are formatted in a way that correctly produces chronological order.** For example, MM/DD/YYYY without proper handling could sort results by month rather than by year, then month, then day. To prevent this, we recommend converting time into the epoch(UNIX) format. This may not be applicable if sorting is handled at the API level.
+* **Format times and dates in a way that will ensure a true and correct chronological sort.** For example, sorting a dataset of string dates `2/20/2025`, `10/1/2024`, `9/5/2023` from newest to oldest could result in an incorrect A-Z sort (`10/1/2024`, `2/20/2025`, `9/5/2023`) rather than a true chronological sort that sorts by year, then month, then day (`2/20/2025`, `10/1/2024`, `9/5/2023`). Consider storing dates as a date type or ISO-formatted string.
+    * This may not be applicable if sorting is handled at the API level.
 
-
-<!-- include component-docs.html component_name=page.web-component  -->
 
 ## Content considerations
 
@@ -178,8 +129,6 @@ Add Storybook examples as necessary.-->
         *  *Refills remaining (least to most)*
         *  *Distance (closest to furthest)*
 
-
-<!--* **If there is no visible label for the sort attribute, create one for the sort option.** A standalone `Sort method` (aside from Relevance or another algorithmic method) is not permissible.-->
 
 * **Sort option labels must be aligned across mobile and desktop experiences.** If the mobile experience for Prescriptions uses *Date filled (newest to oldest)*, then the desktop experience should use the same as opposed to using something like *Fill date (newest to oldest)*.
 
