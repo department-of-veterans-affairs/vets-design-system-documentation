@@ -97,12 +97,11 @@ anchors:
 
 ## Code Usage
 * **Format times and dates in a way that will ensure a correct chronological sort.** Consider storing dates as a date type or ISO-formatted string. 
-    * Attempting to sort date strings *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in an A-Z sort:
+    * Attempting to sort dates as strings *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in an A-Z sort:
         * ***1****0/1/2024*
         * ***2****/20/2025*
         * ***9****/5/2023*
-        
-    rather than a true chronological sort that sorts by year, then month, then day:
+    * A true chronological sort that sorts by year, then month, then day would instead be:
         * *2/20/****2025***
         * *10/1/****2024***
         * *9/5/****2023***
