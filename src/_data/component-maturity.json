@@ -212,6 +212,10 @@
     "maturityCategory": "caution",
     "maturityLevel": "candidate"
   },
+  "va-tag-status": {
+    "maturityCategory": "caution",
+    "maturityLevel": "candidate"
+  },
   "va-telephone": {
     "maturityCategory": "use",
     "maturityLevel": "best_practice"
