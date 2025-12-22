@@ -6,7 +6,7 @@ permalink: /components/sort/
 draft: false
 web: true
 mobile-app: false
-intro-text: "Enables users to reorder search results and lists of information in a way that is easier to analyze."
+intro-text: "The Sort component enables users to reorder search results and lists of information in a way that is easier to analyze."
 # github-title: va-component-name - Only use this if the component is not actually a web component and thus just needs a label that matches that format.
 # research-title: Use this to match the label in the research repo. Only use if web-component does not match the label.
 figma-link-web: https://www.figma.com/design/afurtw4iqQe6y4gXfNfkkk/branch/ZCvzpF0EbyeCbO4fL9u8r0/VADS-Component-Library?m=auto&node-id=40936-5762&t=JVGxloXD7xd6RgeE-1
@@ -97,13 +97,14 @@ anchors:
 
 ## Code Usage
 * **Format times and dates in a way that will ensure a correct chronological sort.** Consider storing dates as a date type or ISO-formatted string. Attempting to sort a dataset of string dates *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in an incorrect A-Z sort:
-    * *10/1/2024*
-    * *2/20/2025*
-    * *9/5/2023*
+    * ***1****0/1/2024*
+    * ***2****/20/2025*
+    * ***9***/5/2023*
+    
      Rather than a true chronological sort that sorts by year, then month, then day:
-    * *2/20/2025*
-    * *10/1/2024*
-    * *9/5/2023*
+    * *2/20/****2025***
+    * *10/1/****2024***
+    * *9/5/****2023***
 
 
 ## Content considerations
