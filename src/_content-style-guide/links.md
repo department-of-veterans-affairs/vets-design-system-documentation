@@ -7,30 +7,35 @@ anchors:
   - anchor: Link text
   - anchor: Formatting
   - anchor: Linking to the main VA website
+  - anchor: Linking to forms
   - anchor: Linking to documents and other file sources
   - anchor: Linking to external sites
+  - anchor: Links in lists
   - anchor: Privacy guidance
 ---
 
 ## Considerations
 
-* We use links to connect Veterans with related information that may be helpful. 
+* We use links to connect Veterans and other visitors with related information that may be helpful to them. 
 * We also use links to help us centralize information, rather than repeating content in multiple places. This helps us update content more efficiently and keep content accurate.
-* Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments. We put links on their own line to help make the page easier to scan and the intention of the link as clear as possible.
-* External links can be disorienting for all people, but especially people who use screen readers. We want to be clear about where links are taking people.
+* We put links on their own line to help make the page easier to scan and the intention of the link as clear as possible. Too many embedded links can be distracting or overwhelming to people with traumatic brain injuries or other cognitive impairments.
+* We tell people where links are taking them and why. External links can be disorienting for all people, but especially people who use screen readers. 
 * For issues not covered in this style guide, refer to the U.S. Web Design System (USWDS) on links.<br>
 [Review link guidance on the USWDS website](https://designsystem.digital.gov//components/link/)
 
 ## Link text
 
-* Use natural and descriptive language.
-* Describe the purpose of the link and the destination if it’s taking the reader outside of VA.gov.
-* Don’t make the link so long that the relevant words get lost.
-* Avoid "Click here," since not all people are physically clicking links. 
-* Avoid generic link text like "Learn more" and "Read more" by themselves.
-* Avoid using words that assume certain abilities, like "See," "Hear," and "Watch."
+* Use natural and descriptive language
+* Describe the purpose of the linked page
+* If the link takes the reader outside of VA.gov, name the external website in the link text
+* Balance link text length to provide the needed descriptions without having the relevant words get lost in the length
+* Use "Select" instead of "Click here," since not all people are physically clicking links 
+* Avoid generic link text like "Learn more" and "Read more" by themselves
+* Avoid using words that assume certain abilities, like "See," "Hear," and "Watch"
 
-**Note:** If a link needs to open in a new tab, add “(opens in a new tab)” to notify users. Don’t use the new window icon unless there are space constraints.
+[Review more guidance for neutral language](https://design.va.gov/content-style-guide/neutral-language)
+
+**Note:** If a link needs to open in a new tab, add “(opens in a new tab)” to notify the person. Don’t use the new window icon unless there are space constraints.
 
 [Review guidance on when to open links in a new tab in the Components section](https://design.va.gov/components/link/)
 
@@ -108,15 +113,80 @@ Example:
 
 When we use the canonical URL in links, it reduces the risk of links breaking when sub-URLs in a form or flow change. It also helps tell search engines our preferred URL for search indexing. This can add search value to the canonical URL by eliminating the split of search value between multiple pages. 
 
+## Linking to forms
+
+For VA forms stored in the forms database, link to the form’s About page rather than directly to the PDF version of the form. This ensures we’re always linking to the most current version of the form. This guidance applies to links in all content except for the form’s About page.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+  
+[Get VA Form 10-10EZ to download](https://www.va.gov/find-forms/about-form-10-10ez)
+
+</div>
+</div>
+</div>
+
+On a form’s About page, include a direct download link to the PDF of that form.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+  
+[Download VA Form 10-10EZ (PDF)](https://www.va.gov/vaforms/medical/pdf/VA Form 10-10EZ.pdf)
+
+</div>
+</div>
+</div>
+
+For forms that aren’t part of the VA forms database, you may need to use a direct download link to the PDF version of the form. This is a rare situation. Contact the centralized content and information architecture (IA) team for guidance.
+
+You may also need a direct download link if the person filling out the form is downloading and generating their own completed copy. Contact the centralized content and IA team for guidance.
+
 ## Linking to documents and other file sources
+
 * Avoid linking to PDFs as much as possible. 
-* If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System.<br>
+* If a link opens a calendar, YouTube video, XLS, or other file format, add the relevant icon from the Components section in the Design System. This does not apply to pages housed within Drupal.<br>
 [Review examples of link variations in the Components section](https://design.va.gov/components/link/)
+* Include the file format (ex. PDF, HTML, or XML) in the link label. Place the file format at the end of the link label in parentheses. For example, “Download the Continuity of Care document (PDF).”
+* If you have a list of links to the same document with different file formats, consider rewording the link text to include the file format earlier. Contact the centralized content and IA team for help with your link text.
+
+<div class="do-dont">
+<div class="do-dont__do">
+<h3 class="do-dont__heading">Like this</h3>
+<div class="do-dont__content" markdown="1">
+  
+Download the Continuity of Care document in 1 of these formats:
+
+Download the PDF
+Download the HTML
+Download the XML
+
+</div>
+</div>
+<div class="do-dont__dont">
+<h3 class="do-dont__heading">Not this</h3>
+<div class="do-dont__content" markdown="1">
+  
+Download the Continuity of Care document (PDF)
+Download the Continuity of Care document (HTML)
+Download the Continuity of Care document (XML)
+  
+</div>
+</div>
+</div>
 
 ## Linking to external sites
 
-* **Use text that tells the reader where the link takes them.** Example: [Check COVID-19 symptoms on the CDC website](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html)
-* **Consider using an aria-label to create a screen reader-only label.** Aria-labels can be helpful in specialized instances where there's a clear reason to use separate text for people who use screen readers. The aria-label may append or replace text within a link to provide context about where the link goes.
+* **Use a link label that tells the reader where the link takes them.** Example: [Check COVID-19 symptoms on the CDC website](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html)
+* **Consider using an aria-label to create a screen reader-only link label.** Aria-labels can be helpful in specialized instances where there's a clear reason to use separate text for people who use screen readers. The aria-label may append or replace text within a link to provide context about where the link goes.
+* **Avoid linking to the Code of Federal Regulations (CFR).** On VA.gov pages, don't add links to CFR references.
+
+## Links in lists
+
+{% include content/links-in-lists.md %}
 
 ## Privacy guidance
 
