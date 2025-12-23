@@ -191,7 +191,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
 
-: Like this: "Served for at least 30 continuous days (all at once, without a break in service)."
+: Like this: Served for at least 30 continuous days (all at once, without a break in service).
 
 **convalescence**
 : Use "rehab care" instead. If used in the context of a specific benefit, can include as a parenthetical: "(also known as convalescence)."
@@ -258,7 +258,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 
 : [Go to the Use conversational language section for examples](https://design.va.gov/content-style-guide/use-conversational-language)
 
-: Don't use "DVA," "Dept of VA," or other non-standard shortened versions. For more, go to the entries "VA" and "VA.gov."
+: Don't use "DVA," "Dept of VA," or other non-standard shortened versions. For more, go to the entries for "VA" and "VA.gov."
 
 : **Exception:** When using the full, official federal agency name, spell out in its entirety on the first instance. After the first instance, shorten to Veterans Affairs or VA. 
 
@@ -289,7 +289,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 : Refer to entry for "Washington, DC."
 
 **dividend**
-: Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include definition in another sentence, as a parenthetical, or set off with commas.
+: Define on first mention in body copy as "cash payments made to policyholders when the company makes a profit" OR as "when life insurance companies make money, they sometimes make cash payments (called dividends) to people who have policies with them." Include the definition in another sentence, as a parenthetical, or set off with commas.
 
 **Don't Ask, Don't Tell policy**
 : Capitalize with no quotation marks. Lowercase "policy."
@@ -724,7 +724,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 **presumptive disability**
 : Use "health problem" and reference when needed for clarity.
 
-: Like this: A health problem (called presumptive disability) that we've concluded is likely caused by....
+: Like this: A health problem (called presumptive disability) that we've concluded is likely caused by...
 
 **Primary Family Caregiver**
 : This role is capitalized since it’s considered a proper noun. “Caregiver” by itself is lowercase.
@@ -830,7 +830,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 : [Go to the Abbreviations and acronyms section for more guidance](https://design.va.gov/content-style-guide/abbreviations-and-acronyms)
 
 **service member**
-: Two words, lowercase. This follows the Department of Defense style guide as well as guidance from the VA Office of Public and Intergovernmental Affairs (OPIA).
+: Two words, lowercase. This follows the Defense Department style guide as well as guidance from the VA Office of Public and Intergovernmental Affairs (OPIA).
 
 : **Exception:** When it appears as part of a branded product or program name, like Servicemembers’ Group Life Insurance (SGLI).
 
@@ -859,7 +859,7 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 : Use smartphone when specifically referencing a mobile phone that connects to the internet. Like this: “At some VA health care facilities, you can now check in for appointments with your smartphone.” For related information, go to the entry for "mobile phone."
 
 **Social Security number**
-: Lowercase "number." Don't use the "SSN" acronym.
+: Lowercase "number." Avoid using the "SSN" acronym.
 
 **special claim**
 : Define on first mention in body copy as "a claim for special needs linked to your service-connected disability." Include definition in another sentence, as a parenthetical, or set off with commas.
