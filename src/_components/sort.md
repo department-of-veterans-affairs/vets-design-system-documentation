@@ -148,7 +148,7 @@ anchors:
 
 * **Only include a sort option if it is relevant to the user.** Just because information can be sorted does not mean it should. Use best judgement to determine whether a user would reasonably need a sort option. 
 
-* **When sorting accompanies filtering or other results, a description of the sort event should be added to the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied, sorted by [Sort attribute](sort method).” 
+* **When sorting accompanies filtering or other results, a description of the sort event should be added to the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** For example, “Showing 1–10 of 999 results for "2020" with 5 filters applied, sorted by *[Sort attribute] (sort method)*.” 
 
 ## Accessibility considerations
 
