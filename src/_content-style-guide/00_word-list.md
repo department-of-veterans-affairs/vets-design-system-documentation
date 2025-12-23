@@ -8,11 +8,12 @@ slug: word-list
 
 For most terms on VA.gov, we use the standard American English spelling in Merriam-Webster Dictionary. The words on this list are exceptions or need clarification.
 
-- We might use different capitalization or hyphenation
-- We may call for using a more plain language version of a word or to define it in body copy
-- We may call for using a preferred version on VA.gov when different VA agencies use variations for the same word
+- We may use different capitalization or hyphenation
+- We may call for using a more plain language version of a word or for adding a definition of a word in body copy
+- We may call for using a preferred version of a word on VA.gov when different VA agencies use variations for the same word
 
-For terms that are not on this list, refer to [Merriam-Webster](https://www.merriam-webster.com). 
+For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
+[Go to the Merriam-Webster dictionary website](https://www.merriam-webster.com). 
 
 ---
 
@@ -55,7 +56,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : On the Board Appeal form, a Veteran selects a Direct Review, Evidence Submission, or Hearing “appeal option” from the list of Board Appeal options. Avoid use of the word “lane.” 
 
 **apply**
-: Use this term in the context of non-disability benefits, like this: apply for DIC benefits or apply for VA health care. Use "file" for disability compensation, like this: file a claim for disability.
+: Use this term in the context of non-disability benefits, like this: "apply for the GI Bill and other VA education benefits" or "apply for VA health care." Use "file" for disability compensation, like this: "file a claim for disability."
 
 : [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications)
 
@@ -190,7 +191,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **continuous**
 : When used in the context of eligibility, define this term as "all at once, without a break in service."
 
-: Like this: Served for at least 30 continuous days (all at once, without a break in service)."
+: Like this: "Served for at least 30 continuous days (all at once, without a break in service)."
 
 **convalescence**
 : Use "rehab care" instead. If used in the context of a specific benefit, can include as a parenthetical: "(also known as convalescence)."
@@ -316,16 +317,12 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 
 **educational and career counseling**
 :  We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Career Counseling.
-
-: **Note:** This style differs from the style within eBenefits VR&E > Education and Career Counseling pages.
  
 **educational assistance**
 : We use this style of phrasing to be consistent with Chapter 35, DEA, REAP, and VEAP.
 
 **educational counseling**
 : We use this style of phrasing to be consistent with VR&E Chapter 36: Educational and Vocational Counseling.
-
-: **Note:** This usage differs from the style within eBenefits VR&E > Education and Career Counseling pages.
   
 **eligible**
 : We use both “qualify” and “eligible” when referring to benefits someone may be able to get.
@@ -336,7 +333,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 **employment handicap**
 : Add a definition or note to help explain this term.
 
-: Like this: Having an employment handicap means your service-connected disability limits your ability to prepare for, obtain, and maintain suitable employment (a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests).
+: Like this: Having an employment handicap means your service-connected disability limits your ability to prepare for, get, and maintain suitable employment. Suitable employment means a job that doesn’t make your disability worse, is stable, and matches your abilities, aptitudes, and interests.
 
 **entitlement**
 : This term refers to how much of a benefit you have available to use. It’s often talked about as “remaining entitlement.” We don’t say “draw down your entitlement.” Instead, we’d say, “charge your entitlement.” For education benefits, it’s measured in months and days.
@@ -399,7 +396,7 @@ For terms that are not on this list, refer to [Merriam-Webster](https://www.merr
 : Define on first mention in body copy as "a sickness that causes tiredness, pain in different areas of your body, and sleep, memory, and mood problems." Include definition in another sentence, as a parenthetical, or set off with commas.
 
 **file a claim for disability compensation**
-: Use "file a claim" instead of "apply for benefits" when referring to disability.
+: Use "file a claim" instead of "apply for benefits" when referring to disability compensation.
 
 : [Go to the Claims and applications section for more information](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications)
 
