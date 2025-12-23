@@ -56,7 +56,7 @@ anchors:
 * **When order of data does not impact the results or interpretation.** 
 * **When there's only one obvious order.** This means that there should be a minimum of two ways to sort in order to use the component.
 * **When the goal is to narrow results down**. Use a [Filter]({{ site.baseurl }}/components/search-filter) instead.
-    * <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50%;"/>
+    * For example, do not use Sort to filter by date ranges. <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50%;"/>
 
 ## Behavior
 
