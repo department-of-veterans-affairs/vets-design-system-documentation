@@ -56,7 +56,7 @@ anchors:
 * **When order of data does not impact the results or interpretation.** 
 * **When there's only one obvious order.** This means that there should be a minimum of two ways to sort in order to use the component.
 * **When the goal is to narrow results down**. Use a [Filter]({{ site.baseurl }}/components/search-filter) instead.
-    * {% include component-example.html alt="Example of the Sort component being used to filter date ranges which is incorrect." file="/images/components/sort/sort_nonexample.png" caption="Example of Sort being used to filter date ranges" width="50%" %}
+    * <img src="{{ site.baseurl }}/images/components/sort/sort_nonexample.png" alt="Nonexample where Sort is being used to filter by a date range" style="width:50;"/>
 
 ## Behavior
 
@@ -96,7 +96,7 @@ anchors:
 
 
 ## Code Usage
-* **Format times and dates in a way that will ensure a correct chronological sort.** Consider storing dates as a date type or ISO-formatted string. 
+* **Format times and dates in a way that will ensure a correct chronological sort.** Consider storing dates as an [ISO-formatted string](https://en.wikipedia.org/wiki/ISO_8601#:~:text=Date%20and%20time%0Ain,00%20UTC%E2%88%9212%3A00) (date and time in UTC or date and time with offset). 
     * Attempting to sort dates as strings like *2/20/2025*, *10/1/2024*, *9/5/2023* from newest to oldest, for example, could result in a non-chronological A-Z sort:
         * ***1****0/1/2024*
         * ***2****/20/2025*
