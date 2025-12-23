@@ -49,30 +49,21 @@ If you answered yes to any of questions 2 through 4, this pattern will help orga
 
 ```mermaid
 flowchart TD
-    Start["START HERE: <br/>Does your form represent a service/<br/>benefit available to Veterans and a<br/>Claimant or just Veterans?"]
+    Start["Is your form for Veterans only<br/>or Veterans AND Claimants?"]
     
-    Start -->|VETERAN & CLAIMANT| Q1["Does the form<br/>ask the relationship of<br/>the Claimant<br/>to the Veteran?"]
-    Start -->|VETERAN ONLY| Q3["Can your form<br/>be filled out/<br/>submitted by<br/>a third party?"]
+    Start -->|Veterans AND Claimants| Q1["Does the form ask about<br/>the Claimant's relationship<br/>to the Veteran?"]
+    Start -->|Veterans only| Q2["Can a third party<br/>fill out the form?"]
     
-    Q1 -->|YES| Q2["Can your form<br/>be filled out/<br/>submitted by<br/>a third party?"]
-    Q1 -->|NO| Skip["Skip using<br/>question 2a"]
+    Q1 -->|Yes| Q2
+    Q1 -->|No| Skip["Skip question 2a,<br/>go to question 2b"]
     
-    Q2 -->|YES| FullPattern["Use full pattern -<br/>2b"]
-    Q2 -->|NO| Question2a["Just use<br/>question 2a<br/>from the<br/>pattern"]
+    Q2 -->|Yes| Use["Use the full pattern"]
+    Q2 -->|No| Result
     
-    Q3 -->|NO| NoNeed["No need to<br/>use form<br/>submitter<br/>pattern"]
-    Q3 -->|YES| FullPattern
+    Skip -->|Can third party<br/>fill out form?| Result{"Result"}
     
-    Skip -.-> Q2
-    
-    style Start fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Q1 fill:#7dd3c0,stroke:#333,stroke-width:2px
-    style Q2 fill:#7dd3c0,stroke:#333,stroke-width:2px
-    style Q3 fill:#7dd3c0,stroke:#333,stroke-width:2px
-    style Skip fill:#b5e7a0,stroke:#333,stroke-width:2px
-    style Question2a fill:#a8d8ea,stroke:#333,stroke-width:2px
-    style NoNeed fill:#f5a3b8,stroke:#333,stroke-width:2px
-    style FullPattern fill:#c8b5e8,stroke:#333,stroke-width:2px
+    Result -->|Yes| Partial["Use question 2a only"]
+    Result -->|No| None["Pattern not needed"]
 ```
 
 ### Key terms you need to know
