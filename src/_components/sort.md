@@ -57,8 +57,7 @@ anchors:
 * **When there's only one obvious order.** This means that there should be a minimum of two ways to sort in order to use the component.
 * **When the goal is to narrow results down**. Use a [Filter]({{ site.baseurl }}/components/search-filter) instead.
     * For example, do not use this component to filter date ranges.
-    {% include component-example.html alt="Example of the Sort component being used to filter date ranges which is incorrect." file="/images/components/sort/nonexample_sort.png" width="50%" %}
-
+    {% include component-example.html alt="Example of the Sort component being used to filter date ranges which is incorrect." file="/images/components/sort/sort_nonexample.png" width="50%" %}
 
 ## Behavior
 
