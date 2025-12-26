@@ -41,18 +41,10 @@ anchors:
 
 {% include storybook-preview.html story="components-va-link--active" link_text="active va-link" height="50px" %}
 
-#### Calendar
-
-{% include storybook-preview.html story="components-va-link--calendar" link_text="calendar va-link" height="50px" %}
-
-#### Channel
-
-{% include storybook-preview.html story="components-va-link--channel" link_text="channel va-link" height="50px" %}
 
 #### Download
 
 {% include storybook-preview.html story="components-va-link--download" link_text="download va-link" height="50px" %}
-
 #### External
 
 {% include storybook-preview.html story="components-va-link--external" link_text="external va-link" height="50px" %}
@@ -63,35 +55,32 @@ anchors:
 
 ### Mobile app
 
-### Default
+#### Default
 
 {% include storybook-preview.html height="70px" story="link--default" link_text="va-mobile__link--default" is_mobile=true %}
 
-### Attachment
+#### Attachment
 
 {% include storybook-preview.html height="70px" story="link--attachment" link_text="va-mobile__link--attachment" is_mobile=true %}
 
-### Calendar
 
-{% include storybook-preview.html height="70px" story="link--calendar" link_text="va-mobile__link--calendar" is_mobile=true %}
-
-### Directions
+#### Directions
 
 {% include storybook-preview.html height="70px" story="link--directions" link_text="va-mobile__link--directions" is_mobile=true %}
 
-### External link
+#### External link
 
 {% include storybook-preview.html height="70px" story="link--external" link_text="va-mobile__link--external" is_mobile=true %}
 
-### Phone
+#### Phone
 
 {% include storybook-preview.html height="70px" story="link--phone" link_text="va-mobile__link--phone" is_mobile=true %}
 
-### Phone TTY
+#### Phone TTY
 
 {% include storybook-preview.html height="70px" story="link--phone-tty" link_text="va-mobile__link--phone-tty" is_mobile=true %}
 
-### Text (SMS)
+#### Text (SMS)
 
 {% include storybook-preview.html height="70px" story="link--text" link_text="va-mobile__link--text" is_mobile=true %}
 
@@ -119,9 +108,6 @@ anchors:
   * **Short Forms** that has a small amount of short, concise steps. For example, the [Pact Act Wizard](https://staging.va.gov/pact-act-eligibility/introduction).
   * **Non-Form Pages** where the current page was accessed from a related page and does not have additional navigation. For example, an appointment details page.
 
-### When to use a Calendar link
-
-* **Adding an event to a calendar.** Use when the link adds an event to a digital calendar.
 
 ### When to use a Channel link
 
@@ -168,14 +154,14 @@ Review "[Usage](#usage)" for guidance.
 
 ### Mobile app
 
+<!-- Calendar bullet removed -->
 * **Link opens within the app:**
   * In a full panel if the content is within the app.
   * In a webview if the content is not within the app and does not require a separate sign-in.
 * **Link opens another app:**
   * In the [browser app](#external-link) if the user needs to sign in to access the content or is being linked to a third party. Always use a native alert to warn the user before leaving the app. Once confirmed, open the default browser app.
-  * If the user is performing an action such as making a phone call, getting directions, or downloading a file. Consider using a confirmation message (like a native alert or action sheet) to warn the user before leaving the app. These variants include the onPress logic for app teams, ensuring a native confirmation message is displayed when needed.
+  * If the link enables an action such as downloading a file, getting directions, making a phone call, or sending a text, consider using a confirmation message (like a native alert or action sheet) to warn the user before leaving the app. These variants include the onPress logic for app teams, ensuring a native confirmation message is displayed when needed.
     * **[Attachment](#attachment)**: Display the attachment in the app with the ability to download to their device.
-    * **[Calendar](#calendar-1)**: Display the event information to allow the user to review and confirm before adding to their calendar. Once confirmed, add to the default calendar app.
     * **[Directions](#directions)**: Display an Action Sheet to allow the user to select their preferred maps app (Apple Maps, Google Maps, etc.). Once selected, open the maps app with the destination.
     * **[Phone](#phone)**: Display an Action Sheet to allow the user to confirm the phone call. Once confirmed, open the default phone app.
     * **[Phone TTY](#phone-tty)**: Display an Action Sheet to allow user to confirm the TTY call. Once confirmed, open the default phone app.

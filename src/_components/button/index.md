@@ -53,12 +53,14 @@ anchors:
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--back" link_text="va-button--back" %}
 
+
 #### Loading
 
 {% include storybook-preview.html height="60px" story="uswds-va-button--loading" link_text="va-button--loading" %}
 {% endcapture %}
 
 {% capture mobile_content %}
+
 ### Mobile app
 
 #### Base - Primary
@@ -97,8 +99,11 @@ anchors:
 
 #### When to use a button
 
-* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save.” Buttons **do things**, links **go places**. Refer to guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
+* **Actions.** Use buttons for clickable actions you want users to take on a page, such as “Add”, “Close”, “Cancel”, or “Save”. Buttons **do things**, links **go places**. Refer to guidance on [Buttons vs. Links](#choose-the-right-element-buttons-vs-links).
+<!-- pending approval re: new storybook variation for Calendar-->
+  * For the case of adding calendar events that download a .ics file, use the [Add to Calendar](URL) variant. It uses onPress logic for mobile apps teams, ensuring that a native confirmation allows the user to review and confirm the download before adding to their default calendar app. 
 * **Triggers.** Buttons can also trigger functionality via Javascript. For example, closing a modal window.
+
 
 #### When to consider something else
 
@@ -109,8 +114,14 @@ anchors:
 
 * **Avoid using many primary buttons on a single page or section.** Pages with many primary buttons reduces their impact and make it harder for users to know what to do next.
 * **Arrows are reserved.** Arrow icons should only appear for "Back" and "Continue" buttons that appear in forms.
-* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon) .
+* **Use icons only when necessary.** [Icons]({{ site.baseurl }}/foundation/icons) can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration. Note that va-button does not support iconography, but has some variations that use an icon. Use of icons in buttons will be made on a case-by-case basis. If you feel you need an icon for a button, [follow the process for requesting a new icon]({{ site.baseurl }}/components/icon#requesting-a-new-icon).
 * **Avoid disabling buttons.** [Disabling buttons is strongly discouraged.](#do-not-disable-buttons)
+
+<!-- discuss with team: guidance from the Calendar link page>
+* **For mobile apps, warn users if a button opens another app.** Use a confirmation message (like a native alert or action sheet) to warn users. The variants below contain onPress logic for apps teams, ensuring a native confirmation is displayed when needed.
+  * For downloading attachments, display the attachment in the app with the ability to download to their device.
+  * For adding calendar events that download .ics files, display the event information to allow the user to review and confirm before adding to their calendar. Once confirmed, add the event to their default calendar app.   
+-->
 
 ### Choosing between variations
 
