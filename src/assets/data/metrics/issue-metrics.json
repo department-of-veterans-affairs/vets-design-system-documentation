@@ -142,8 +142,8 @@
     },
     {
       "period": "2025-Q4",
-      "issues_opened": 408,
-      "issues_closed": 326
+      "issues_opened": 451,
+      "issues_closed": 359
     }
   ],
   "velocity": [
@@ -579,8 +579,8 @@
     },
     {
       "period": "2025-12",
-      "issues_opened": 57,
-      "issues_closed": 83
+      "issues_opened": 100,
+      "issues_closed": 116
     }
   ],
   "experimental_quarterly": [
@@ -694,32 +694,32 @@
     },
     {
       "period": "2025-Q4",
-      "issues_opened": 9,
+      "issues_opened": 12,
       "issues_closed": 0,
       "issues_implemented": 0
     }
   ],
   "summary": {
-    "open_issues": 586,
-    "closed_this_month": 83,
+    "open_issues": 596,
+    "closed_this_month": 116,
     "avg_resolution_days": 119,
-    "total_issues": 5233,
-    "last_updated": "2025-12-12T18:10:01.986Z",
+    "total_issues": 5276,
+    "last_updated": "2025-12-26T18:09:28.424Z",
     "open_issues_trend": {
       "direction": "up",
       "percentage": 7,
       "value": 38
     },
     "closed_month_trend": {
-      "direction": "down",
-      "percentage": 19,
-      "value": -19
+      "direction": "up",
+      "percentage": 14,
+      "value": 14
     },
     "resolution_time_trend": {
       "direction": "down",
-      "percentage": 6,
-      "value": -6
+      "percentage": 2,
+      "value": -2
     }
   },
-  "generated_at": "2025-12-12T18:10:02.012Z"
+  "generated_at": "2025-12-26T18:09:28.449Z"
 }
