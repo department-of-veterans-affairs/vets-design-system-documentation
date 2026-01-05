@@ -49,21 +49,21 @@ If you answered yes to any of questions 2 through 4, this pattern will help orga
 
 ```mermaid
 flowchart TD
-    Start["Is your form for Veterans only<br/>or Veterans AND Claimants?"]
+    Start["Is your form for a service/benefit available to Veterans only or Veterans AND Claimants?"]
     
-    Start -->|Veterans AND Claimants| Q1["Does the form ask about<br/>the Claimant's relationship<br/>to the Veteran?"]
-    Start -->|Veterans only| Q2["Can a third party<br/>fill out the form?"]
+    Start -->|VETERAN & CLAIMANT| Q1["Does the form ask the relationship of the Claimant to the Veteran?"]
+    Start -->|VETERAN ONLY| Q2B["Can your form be filled out/submitted by a third party?"]
     
-    Q1 -->|Yes| Q2
-    Q1 -->|No| Skip["Skip question 2a,<br/>go to question 2b"]
+    Q1 -->|YES| Q2A["Can your form be filled out/submitted by a third party?"]
+    Q1 -->|NO| R1(["Skip using question 2a"])
+
+    R1 --> Q2A
     
-    Q2 -->|Yes| Use["Use the full pattern"]
-    Q2 -->|No| Result
+    Q2A -->|YES| R2(["Use full pattern 2b"])
+    Q2A -->|NO| R3(["Just use question 2a from the pattern"])
     
-    Skip -->|Can third party<br/>fill out form?| Result{"Result"}
-    
-    Result -->|Yes| Partial["Use question 2a only"]
-    Result -->|No| None["Pattern not needed"]
+    Q2B -->|NO| R4(["No need to use form submitter pattern"])
+    Q2B -->|YES| R2
 ```
 
 ### Key terms you need to know
