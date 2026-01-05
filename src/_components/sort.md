@@ -27,10 +27,10 @@ anchors:
 ## Examples
 
 ### Medications
-{% include component-example.html alt="Example of the medications on the Medications page sorted by newest to oldest last fill date." file="/images/components/sort/medications_sort.png" caption="Sorting medications by last fill date." width="50%" %}
+{% include component-example.html alt="Example of medications on the Medications page sorted by last fill date (newest to oldest)." file="/images/components/sort/medications_sort.png" caption="Sorting medications by last fill date (newest to oldest)." width="50%" %}
 
 ### Find a Form
-{% include component-example.html alt="Example of forms sorted by last update (newest to oldest) on VA.gov's form finder" file="/images/components/sort/find_a_form_sort.png" caption="Sorting forms on VA.gov's form finder." width="50%" %}
+{% include component-example.html alt="Example of the default sort on the VA Find a Form." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}
 
 ### Secure Messaging
 {% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the MyHealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the MyHealtheVet Inbox." width="50%" %}
