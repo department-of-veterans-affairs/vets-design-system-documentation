@@ -3,9 +3,9 @@
   "data": {
     "period": "2025-Q3",
     "total_kickoffs": 35,
-    "touchpoints_held": 73,
+    "touchpoints_held": 74,
     "po_sync_held": 23,
-    "architecture_intent_held": 10,
+    "architecture_intent_held": 11,
     "design_intent_held": 14,
     "midpoint_review_held": 10,
     "staging_review_held": 16,
@@ -13,8 +13,7 @@
     "launch_blocking_issues": 45,
     "launch_blocking_percentage": 19
   },
-  "participating_teams": 24,
-  "generated_at": "2025-12-03T18:43:47.911Z",
+  "generated_at": "2025-12-26T18:09:44.781Z",
   "data_source": "va.gov-team repository",
   "description": "Governance metrics for 2025Q3"
 }
