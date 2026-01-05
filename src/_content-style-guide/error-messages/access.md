@@ -3,7 +3,7 @@ layout: content-style-guide
 permalink: /content-style-guide/error-messages/access
 has-parent: /content-style-guide/error-messages/
 title: Access messages
-intro-text: Appears when the user tries to access an item that’s not available to them. It may be because the record has been deleted, the user doesn’t have access, etc.
+intro-text: Access messages appear when the person tries to access an item that’s not available to them. For example, an access message may appear when a record has been deleted or the person doesn’t have access to a piece of information.
 anchors:
   - anchor: System downtime
   - anchor: Network connection loss
@@ -11,15 +11,17 @@ anchors:
   - anchor: Empty state
 ---
 
-***Note:** See the [help users to recover from errors pattern]({{ site.baseurl }}/patterns/help-users-to/recover-from-errors#next-step-calls-to-action) for guidance on when to consider adding instruction to call the VA.gov help desk or other "next-step" call to action.*
+**Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call the VA.gov help desk and when to add other "next-step" calls to action.
+
+[Learn more in the Help users to recover from errors pattern]({{ site.baseurl }}/patterns/help-users-to/recover-from-errors#next-step-calls-to-action)
 
 ## System downtime
 
-Variations in messaging will be contingent on:
+Variations in messaging depend on these factors:
 
-- Whether or not the downtime is scheduled/expected
-- If scheduled, when the application will be back up (precise time stamp if known, general estimate if not)
-- If not expected, general estimate of when the application will be back up
+- Whether the downtime is scheduled/expected
+- If scheduled, when the application/claim/form will be available again (precise time stamp if known, or a general estimate if not)
+- If unexpected, a general estimate of when the application/claim/form will be available again
 
 <va-table>
   <va-table-row>
@@ -32,59 +34,62 @@ Variations in messaging will be contingent on:
     <span>Location</span>
   </va-table-row>
   <va-table-row>
-    <span>Entire site is not accessible (site-wide scheduled downtime)</span>
+    <span>Entire site isn't accessible (site-wide scheduled downtime)</span>
     <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br/><b>Date:</b> Day, Date, Year <b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
+    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br/><b>Date:</b> Month Day, Year
+      <b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
     <span>Replace page</span>
   </va-table-row>
   <va-table-row>
-    <span>Entire site is not accessible (expected)</span>
+    <span>Entire site isn't accessible (expected)</span>
     <span><b>VA.gov isn't working right now</b></span>
-    <span>We're sorry. Something went wrong on our end. Please refresh this page or try again later.</span>
+    <span>We're sorry. Something went wrong on our end. Refresh this page or try again later.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
     <span>Replace page</span>
   </va-table-row>
   <va-table-row>
-    <span>Application or tool is not accessible</span>
-    <span><b>[APPLICATION NAME] is down for maintenance</b></span>
-    <span>We're making some updates to [APPLICATION NAME]. We're sorry it's not working right now. Please check back soon.</span>
+    <span>Application, claim, form, or tool isn't accessible</span>
+    <span><b>We're working on [name]</b></span>
+    <span>We're making some updates to this [application, claim, form, tool]. We're sorry it's not working right now. Check back later.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
-    <span>Replace page below title</span>
+    <span>Replace page after title</span>
   </va-table-row>
   <va-table-row>
-    <span>Application or page is accessible (general message; specific iterations to be added later)</span>
-    <span><b>Some parts of this may not be working</b></span>
-    <span>You can still use [APPLICATION/PAGE NAME], but some parts of it may not work for you. If you're having trouble, please try again later.</span>
+    <span>Application, claim, form, tool, or page is accessible (general message; we'll add specific iterations later)</span>
+    <span><b>Some parts of [name] may not be working</b></span>
+    <span>You can still use [name], but some parts of it may not work for you. If you're having trouble, check back later.</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Warning alert</a></span>
-    <span>Below page title</span>
+    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
+    <span>Warning</span>
+    <span>After page title</span>
   </va-table-row>
   <va-table-row>
-    <span>Component is not accessible (general message; specific iterations to be added later)</span>
-    <span><b>[COMPONENT NAME] isn't working right now</b></span>
-    <span>We're sorry. Something went wrong on our end. Please refresh this page or try again later.</span>
+    <span>Component is not accessible (general message; we'll add specific iterations later)</span>
+    <span><b>[Component name] isn't working right now</b></span>
+    <span>We're sorry. Something went wrong in our system. Refresh this page or check back later.</span>
     <span>Go back to previous page</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Warning alert</a></span>
+    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
+    <span>Warning</span>
     <span>Replace affected component</span>
   </va-table-row>
   <va-table-row>
-    <span>Component is accessible (general message; <a href="https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-system/guidelines/error-handling/Access%20Messaging.md">see application/component specific messages</a>)</span>
+    <span>Component is accessible (general message; learn more in <a href="https://github.com/department-of-veterans-affairs/va.gov-team/blob/master/platform/design/design-system/guidelines/error-handling/Access%20Messaging.md">application/component-specific messages</a>)</span>
     <span><b>Some information may not be up to date</b></span>
-    <span>You can still use [COMPONENT NAME], but you may not be able to see all your updated information. If you're having trouble, please try again later.</span>
+    <span>You can still use [component name], but it may not have all your updated information yet. If you're having trouble, check back later.</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Warning alert</a></span>
-    <span>Above affected component</span>
+    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
+    <span>Warning</span>
+    <span>Before affected component</span>
   </va-table-row>
+
+  
   <va-table-row>
     <span>Unable to complete an automated task (e.g. save application in progress)</span>
     <span><b>We couldn't save your form</b></span>
