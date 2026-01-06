@@ -26,7 +26,6 @@ When using this pattern, work with the Content and IA team to help with the radi
 This pattern helps:
 * Veterans get through forms faster when they’re filling it out for themselves
 * Everyone understands who they’re collecting information about
-* Everyone understands who they’re collecting information about
 * Reduce errors and confusion
 
 ### When to use this pattern
@@ -81,19 +80,19 @@ flowchart TD
 " %}
 
 ### Key terms you need to know
-- These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and Claims and applications https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications sections in the content style guide.
+These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) sections in the content style guide.
 
 **Veteran**: Someone who served in the military and is now a civilian.
 
 **Claimant**: The person who is applying for benefits or has a claim. This could be a Veteran, spouse, child, parent, or someone else.
 
-**Form submitter**: The person actually filling out and submitting the form. (Don't use this term when talking to Veterans — it's just for internal use.)
+**Form submitter**: The person actually filling out and submitting the form. (Don't use this term when talking to Veterans – it's just for internal use.)
 
 **Third-party representative**: Someone who has official permission to help a Veteran with VA paperwork. This includes:
 
-* **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative officially approved to help Veterans. The accredited representative needs to file VA Form 21-22 or 21-22a before they can submit a Veteran's paperwork.  A person can only have 1 accredited representative at a time.
+* **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative officially approved to help Veterans. Accredited representatives need to file VA Form 21-22 or 21-22a before they can submit a Veteran's paperwork.  A person can only have 1 accredited representative at a time.
 
-* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. The alternate signer needs to file VA Form 21-0972 before they can sign for another person.  A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives.  They need official VA approval.)
+* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. Alternate signers need to file VA Form 21-0972 before they can sign for another person.  A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives.  They need official VA approval.)
   
 **Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. If you include this term in your form, include a plain language definition at first mention.
 
@@ -127,11 +126,11 @@ Options might include:
 * I'm filling out this form for a family member of a Veteran
 
 
-{% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves or their family member, a fammily member filling out for a Veteran, or someone else filling out for a family member of the Veteran." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" reverse="true" %}
+{% include component-example.html alt="A form question asking which situation best describes the user, with options for Veterans filling out for themselves or their family member, a family member filling out for a Veteran, or someone else filling out for a family member of the Veteran." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/1a-form-submitter-question.png" caption="Example of Question 1b for users when their Veteran status is unknown." class="x2" reverse="true" %}
 
 ### Question 2a: Relationship to Veteran
 
-We ask about the person’s relationship to the Veteran whose service earned these benefits: “Which of these best describes you?”
+We ask about the person’s relationship to the Veteran: “Which of these best describes you?”
 
 * I’m a Veteran’s spouse
 * I’m a Veteran’s dependent child
@@ -213,7 +212,3 @@ Follow the [plain language standards](https://design.va.gov/content-style-guide/
 * Hint text: You may need to submit an additional form to prove you have permission.
 * Error type: No selection
 * Error message: Select the option that best describes you
-
-
-
-
