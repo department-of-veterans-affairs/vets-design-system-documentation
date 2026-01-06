@@ -67,8 +67,6 @@ flowchart TD
     Q1Yes --> Q2A[\"<b>Can your form be filled out/submitted by a third party?</b>\"]:::node-question
     Q1No --> R1([\"<b>Skip using question 2a</b>\"]):::node-context
     
-- These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) sections in the content style guide.
-    
     VetOnly --> Q2B[\"<b>Can your form be filled out/submitted by a third party?</b>\"]:::node-question
     
     Q2A --> Q2AYes([\"<b>YES</b>\"]):::node-answer-secondary
