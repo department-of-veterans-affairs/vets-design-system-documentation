@@ -17,7 +17,7 @@ This pattern helps us figure out 2 important things for VA forms:
 1.  Who is filling out the form (the person typing or writing)
 2.  Who the form is for (the person who will get the benefits)
 
-Sometimes these are the same person. Sometimes they’re different.
+Sometimes they’re the same person. Sometimes they’re different.
 
 When using this pattern, work with the Content and IA team to help with the radio options, hint text, and other content your specific form needs.
 
@@ -26,7 +26,7 @@ When using this pattern, work with the Content and IA team to help with the radi
 This pattern helps:
 * Veterans get through forms faster when they’re filling it out for themselves
 * Everyone understands who they’re collecting information about
-* Everyone understand who they’re collecting information about
+* Everyone understands who they’re collecting information about
 * Reduce errors and confusion
 
 ### When to use this pattern
@@ -44,7 +44,7 @@ Before using this pattern, ask yourself these 4 questions:
 1. Can Veterans fill out this form for themselves?
 2. Can family members fill this form out for a Veteran or themselves?
 3. Can third-party representatives fill this form out for someone?
-4. Do we need to know the exact relationship between the person filling out the form and the person it’s for?
+4. Do we need to know the exact relationship between the person filling out the form and the person who will receive the benefits?
 
 If you answered yes to any of questions 2 through 4, this pattern will help organize the flow.
 
@@ -158,7 +158,7 @@ Include hint text that explains additional forms may be needed: "You may need to
 
 
 
-{% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a Veteran, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for Veterans." class="x2" %}
+{% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a Veteran, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for Veterans. Make sure you use the options that are relevant to your form." class="x2" %}
 
 {% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a non-Veteran claimant, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-non-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for non-Veteran claimants." class="x2" %}
 
@@ -183,7 +183,7 @@ Always require email addresses for both the person filling out the form and the 
 
 #### Example progress bar component in Figma 
 
-{% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant." class="x2" %}
+{% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant. Make sure you use the options that are relevant to your form." class="x2" %}
 
 ### Handling permission issues
 
@@ -191,8 +191,8 @@ When users don't have the proper permission to fill out a form for someone else,
 
 {% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
 
-###  Content considerations [NEED LINKS]
-Follow the plain language standards in the content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
+### Content considerations
+Follow the [plain language standards](https://design.va.gov/content-style-guide/) in the VA.gov content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 
 #### Error messages and hint text
 
