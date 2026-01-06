@@ -25,7 +25,7 @@ When using this pattern, work with the Content and IA team to help with the radi
 
 This pattern helps:
 * Veterans get through forms faster when they’re filling it out for themselves
-* VA staff process forms correctly
+* Everyone understands who they’re collecting information about
 * Everyone understand who they’re collecting information about
 * Reduce errors and confusion
 
@@ -67,7 +67,7 @@ flowchart TD
     Q1Yes --> Q2A[\"<b>Can your form be filled out/submitted by a third party?</b>\"]:::node-question
     Q1No --> R1([\"<b>Skip using question 2a</b>\"]):::node-context
     
-    R1 --> Q2A
+- These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and [Claims and applications](https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications) sections in the content style guide.
     
     VetOnly --> Q2B[\"<b>Can your form be filled out/submitted by a third party?</b>\"]:::node-question
     
@@ -175,8 +175,8 @@ Your form's first page should clearly explain:
 
 Label step 1 as "Your identity" and include questions 1 and 2.
 
-#### Personal information pages
-
+### Content considerations
+Follow the [plain language standards](https://design.va.gov/content-style-guide/) in the VA.gov content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 Always ask for the form submitter's contact information first, then ask for information about the person the form is for (if they're different people).
 
 Always require email addresses for both the person filling out the form and the person it’s for.
