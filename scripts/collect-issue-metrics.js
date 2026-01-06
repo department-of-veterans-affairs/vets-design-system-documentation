@@ -228,6 +228,17 @@ function calculateClosedMonthTrend(issues) {
     return closed.getMonth() === prevMonth && closed.getFullYear() === prevYear;
   }).length;
   
+  // Check for insufficient data periods (early in month + holiday periods)
+  if (isInsufficientDataPeriod(now, closedThisMonth)) {
+    return {
+      direction: null,
+      percentage: null,
+      value: closedThisMonth - closedPrevMonth,
+      reliability: "low",
+      reason: getInsufficientDataReason(now, closedThisMonth)
+    };
+  }
+  
   return calculateTrend(closedThisMonth, closedPrevMonth);
 }
 
@@ -303,6 +314,96 @@ function calculateTrend(current, previous) {
     percentage: percentageChange,
     value: change
   };
+}
+
+/**
+ * Check if current period has insufficient data for reliable trend calculation
+ */
+function isInsufficientDataPeriod(date, closedThisMonth) {
+  const dayOfMonth = date.getDate();
+  const dayOfWeek = date.getDay(); // 0 = Sunday, 1 = Monday, etc.
+  
+  // Early in month (first 3 days)
+  if (dayOfMonth <= 3) {
+    return true;
+  }
+  
+  // Holiday periods (major US holidays where issue activity is typically low)
+  if (isHolidayPeriod(date)) {
+    return true;
+  }
+  
+  // Weekend with very low activity
+  if ((dayOfWeek === 0 || dayOfWeek === 6) && closedThisMonth === 0) {
+    return true;
+  }
+  
+  return false;
+}
+
+/**
+ * Get reason for insufficient data
+ */
+function getInsufficientDataReason(date, closedThisMonth) {
+  const dayOfMonth = date.getDate();
+  const dayOfWeek = date.getDay();
+  
+  if (dayOfMonth <= 3) {
+    return "early_month_period";
+  }
+  
+  if (isHolidayPeriod(date)) {
+    return "holiday_period";
+  }
+  
+  if ((dayOfWeek === 0 || dayOfWeek === 6) && closedThisMonth === 0) {
+    return "weekend_low_activity";
+  }
+  
+  return "insufficient_data";
+}
+
+/**
+ * Check if date falls in a major holiday period
+ */
+function isHolidayPeriod(date) {
+  const month = date.getMonth(); // 0-based
+  const day = date.getDate();
+  
+  // New Year's Day period (Dec 30 - Jan 3)
+  if ((month === 11 && day >= 30) || (month === 0 && day <= 3)) {
+    return true;
+  }
+  
+  // Christmas period (Dec 23-26)
+  if (month === 11 && day >= 23 && day <= 26) {
+    return true;
+  }
+  
+  // Thanksgiving week (4th Thursday of November + Friday)
+  if (month === 10) { // November
+    const thanksgiving = getNthWeekdayOfMonth(date.getFullYear(), 10, 4, 4); // 4th Thursday
+    if (day >= thanksgiving && day <= thanksgiving + 1) {
+      return true;
+    }
+  }
+  
+  // July 4th weekend
+  if (month === 6 && day >= 3 && day <= 5) {
+    return true;
+  }
+  
+  return false;
+}
+
+/**
+ * Get the nth occurrence of a weekday in a month
+ */
+function getNthWeekdayOfMonth(year, month, weekday, n) {
+  const firstOfMonth = new Date(year, month, 1);
+  const firstWeekday = firstOfMonth.getDay();
+  const offset = (weekday - firstWeekday + 7) % 7;
+  return 1 + offset + (n - 1) * 7;
 }
 
 /**
