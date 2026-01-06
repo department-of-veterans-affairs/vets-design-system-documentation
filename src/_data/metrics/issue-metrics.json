@@ -721,9 +721,11 @@
       "value": -15
     },
     "closed_month_trend": {
-      "direction": "down",
-      "percentage": 100,
-      "value": -119
+      "direction": null,
+      "percentage": null,
+      "value": -119,
+      "reliability": "low",
+      "reason": "holiday_period"
     },
     "resolution_time_trend": {
       "direction": "down",
