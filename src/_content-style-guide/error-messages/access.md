@@ -88,37 +88,34 @@ Variations in messaging depend on these factors:
     <span>Warning</span>
     <span>Before affected component</span>
   </va-table-row>
-
-  
   <va-table-row>
-    <span>Unable to complete an automated task (e.g. save application in progress)</span>
-    <span><b>We couldn't save your form</b></span>
-    <span>We're sorry. Something went wrong when we tried to save your form. Try saving it again in a few minutes. If you're on a public computer, you can continue to fill out your form, but your information won't automatically be saved.</span>
+    <span>Unable to complete an automated task (e.g., save application in progress)</span>
+    <span><b>We couldn't save your [application, claim, form]</b></span>
+    <span>We're sorry. Something went wrong when we tried to save your [application, claim, form]. Try saving it again later. If you're on a public computer, you can continue to fill out your [application, claim, form]. But your information won't save automatically.</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#error-alert">Error alert</a></span>
-    <span>Below affected component</span>
+    <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
+    <span>Error</span>
+    <span>After affected component</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete a user-initiated task, can't proceed</span>
-    <span><b>We've run into a problem</b></span>
-    <span>We're sorry. Something went wrong on our end. Please try again.</span>
+    <span>Unable to complete a task the person initiated, can't proceed</span>
+    <span><b>There was a problem</b></span>
+    <span>We're sorry. Something went wrong. Try again later.</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#error-alert">Error alert</a></span>
-    <span>Above page title</span>
+    <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
+    <span>Error</span>
+    <span>Before page title</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete a user-initiated task, can still proceed</span>
-    <span><b>We've run into a problem</b></span>
-    <span>We're sorry. Something went wrong on our end. You can try again now, or move on to the next step and come back later to complete this.</span>
+    <span>Unable to complete a task the person initiated, can still proceed</span>
+    <span><b>There was a problem</b></span>
+    <span>We're sorry. Something went wrong. You can try again now or move on to the next step. You can come back later to complete this step.</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Warning alert</a></span>
-    <span>Above page title</span>
+    <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
+    <span>Warning</span>
+    <span>Before page title</span>
   </va-table-row>
 </va-table>
-
 
 ## Network connection loss
 
@@ -133,33 +130,32 @@ Variations in messaging depend on these factors:
     <span>Location</span>
   </va-table-row>
   <va-table-row>
-    <span>Application/page/component is not accessible due to user connection loss</span>
-    <span><b>We can't load [APPLICATION/PAGE/COMPONENT NAME]</b></span>
-    <span>Please refresh this page or try again later.</span>
+    <span>Application, claim, form, tool, page, or component isn't accessible due to the person's connection loss</span>
+    <span><b>We can't load [name]</b></span>
+    <span>Refresh this page or try again later.</span>
     <span>Try again</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
-    <span>Below page title</span>
+    <span>After page title</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete an automated task (e.g. save application in progress) due to user connection loss</span>
-    <span><b>We can't save your form right now</b></span>
-    <span>Please make sure you're connected to the Internet, and then try saving your form again.</span>
+    <span>Unable to complete an automated task (e.g., save application in progress) due to the person's connection loss</span>
+    <span><b>We can't save your [application, claim, form] right now</b></span>
+    <span>Make sure you're connected to the internet and then try saving your [application, claim, form] again.</span>
     <span>Try again</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
-    <span>Below affected component</span>
+    <span>After affected component</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete a user-initiated task due to user connection loss</span>
-    <span><b>We've run into a problem</b></span>
-    <span>Please check to make sure you're connected to the Internet, and try again.</span>
+    <span>Unable to complete a task the person initiated due to their connection loss</span>
+    <span><b>There was a problem</b></span>
+    <span>Make sure you're connected to the internet and try again.</span>
     <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/components/alert">Alert box</a></span>
-    <span><a href="{{ site.baseurl }}/components/alert#error-alert">Error alert</a></span>
-    <span>Above page title</span>
+    <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
+    <span>Error</span>
+    <span>Before page title</span>
   </va-table-row>
-
 </va-table>
 
 ## Authorization
@@ -175,58 +171,49 @@ Variations in messaging depend on these factors:
     <span>Location</span>
   </va-table-row>
   <va-table-row>
-    <span>(Application) user's records are not found</span>
-    <span><b>We don't seem to have your records</b></span>
-    <span>We're sorry. We can't match your information to our records. If you think your information should be here, please try again later or call us at 800-698-2411 (TTY: 711). We’re here 24/7.</span>
+    <span>(Application or page) Person's records aren't found</span>
+    <span><b>We can't match your records</b></span>
+    <span>We're sorry. We can't match your information to our records. If you think your information should be here, try again later or call us at 800-698-2411 (TTY: 711). We’re here 24/7.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
-    <span>Replace content below page title</span>
+    <span>Replace content after page title</span>
   </va-table-row>
   <va-table-row>
-    <span>(Page) user's records are not found</span>
-    <span><b>We don't seem to have your records</b></span>
-    <span>We're sorry. We can't match your information to our records. If you think your information should be here, please try again later or call us at 800-698-2411 (TTY: 711). We’re here 24/7.</span>
-    <span>N/A</span>
-    <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
-    <span>N/A</span>
-    <span>Replace content below page title</span>
-  </va-table-row>
-  <va-table-row>
-    <span>(Component) user's records are not found</span>
-    <span><b>We don't seem to have your records</b></span>
-    <span>We're sorry. We can't match your information to our records. If you think your information should be here, please try again later or call us at 800-698-2411 (TTY: 711). We’re here Monday–Friday, 8:00 a.m.–8:00 p.m. ET.</span>
+    <span>(Component) Person's records aren't found</span>
+    <span><b>We can't match your records</b></span>
+    <span>We're sorry. We can't match your information to our records. If you think your information should be here, try again later or call us at 800-698-2411 (TTY: 711). We’re here Monday through Friday, 8:00 a.m. to 8:00 p.m. ET.</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
     <span>Replace affected component</span>
   </va-table-row>
   <va-table-row>
-    <span>(Application) user is not eligible for a benefit because they aren't a Veteran/dependent/spouse</span>
+    <span>(Application) Person isn't eligible for a benefit because they aren't a Veteran/dependent/spouse</span>
     <span><b>You're not eligible for this benefit</b></span>
-    <span>It looks like you're not eligible for this benefit based on the information you've given us. Please check your eligibility again.</span>
+    <span>Based on the information you gave us, you're not eligible for this benefit. Check your eligibility again.</span>
     <span>Check your eligibility</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
-    <span>Replace content below page title</span>
+    <span>Replace content after page title</span>
   </va-table-row>
   <va-table-row>
-    <span>(Application) user is not currently enrolled in a benefit (e.g. not enrolled in Post-9/11 GI Bill benefits)</span>
-    <span><b>You're not enrolled in this benefit right now</b></span>
+    <span>(Application) Person isn't currently enrolled in a benefit (e.g., not enrolled in Post-9/11 GI Bill benefits)</span>
+    <span><b>You're not enrolled in this benefit</b></span>
     <span>Our records show that you're not signed up for this benefit. If you think you're eligible for this benefit, you can apply now.</span>
-    <span>(1) Check your eligibility (2) Apply now</span>
+    <span>Check your eligibility (button 1); Apply now (button 2)</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
-    <span>Replace content below page title</span>
+    <span>Replace content after page title</span>
   </va-table-row>
   <va-table-row>
-    <span>(Application) user is not a VA patient</span>
-    <span><b>We can't give you access to this tool right now</b></span>
-    <span>We're sorry. Only patients who've received care at a VA facility can use VA.gov health tools. If you've received care at a VA medical center, clinic, or Vet center, please call that facility to find out if you're in their records.</span>
+    <span>(Application) Person isn't a VA patient</span>
+    <span><b>We can't give you access to this tool</b></span>
+    <span>We're sorry. Only people who've received care at a VA health facility can use VA.gov health tools. If you've received care at a VA medical center, clinic, or Vet center, call that facility to find out if you're in their records.</span>
     <span>Find your VA facility</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
-    <span>Replace content below page title</span>
+    <span>Replace content after page title</span>
   </va-table-row>
 </va-table>
 
@@ -241,25 +228,17 @@ Variations in messaging depend on these factors:
     <span>Location</span>
   </va-table-row>
   <va-table-row>
-    <span>(Application) No data tied to the user or scenario</span>
-    <span><b>We don't have any [DATA TYPE (ie, prescription refills or health records)] for you in our system</b></span>
+    <span>(Application or page) No data tied to the person or scenario</span>
+    <span><b>We don't have any [data type (e.g., prescription refills or health records)] for you in our system.</b></span>
     <span>&nbsp;</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
-    <span>Replace content below page title</span>
+    <span>Replace content after page title</span>
   </va-table-row>
   <va-table-row>
-    <span>(Page) no data tied to the user or scenario</span>
-    <span><b>We don't have any [DATA TYPE] for you in our system</b></span>
-    <span>&nbsp;</span>
-    <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
-    <span>Replace content below page title</span>
-  </va-table-row>
-  <va-table-row>
-    <span>(Component) no data tied to the user or scenario</span>
-    <span><b>We don't have any [DATA TYPE] for you in our system</b></span>
+    <span>(Component) No data tied to the person or scenario</span>
+    <span><b>We don't have any [data type] for you in our system.</b></span>
     <span>&nbsp;</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>Replace affected component</span>
   </va-table-row>
-
 </va-table>
