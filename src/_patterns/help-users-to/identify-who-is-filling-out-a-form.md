@@ -8,6 +8,7 @@ intro-text: "This pattern helps determine two things: Who is filling out the for
 research-title: Form respondent
 figma-link: https://www.figma.com/design/5RyCNn2x5LiNj15TLEh4tD/WIP---Form-Submitter-Pattern?node-id=4-47&t=4KIttqDZYZZOB26A-1
 status: use-with-caution-candidate
+uses_mermaid: true
 ---
 
 ## Usage
@@ -47,24 +48,39 @@ Before using this pattern, ask yourself these 4 questions:
 
 If you answered yes to any of questions 2 through 4, this pattern will help organize the flow.
 
-```mermaid
+{% include mermaid-chart.html 
+   id="form-submitter-decision-flowchart" 
+   caption="Decision flowchart to help determine when to use the form submitter pattern."
+   screen_reader_text="This flowchart helps you decide when to use the form submitter pattern based on four decision points: who can fill out the form, whether family members can submit it, whether third-party representatives are allowed, and whether you need to know the exact relationship between the form submitter and beneficiary."
+   chart="
 flowchart TD
-    Start["Is your form for a service/benefit available to Veterans only or Veterans AND Claimants?"]
+    Start[\"<b>Is your form for a service/benefit available to Veterans only or Veterans AND Claimants?</b>\"]:::node-start
     
-    Start -->|VETERAN & CLAIMANT| Q1["Does the form ask the relationship of the Claimant to the Veteran?"]
-    Start -->|VETERAN ONLY| Q2B["Can your form be filled out/submitted by a third party?"]
+    Start --> VetClaimant([\"<b>VETERAN & CLAIMANT</b>\"]):::node-answer-primary
+    Start --> VetOnly([\"<b>VETERAN ONLY</b>\"]):::node-answer-primary
     
-    Q1 -->|YES| Q2A["Can your form be filled out/submitted by a third party?"]
-    Q1 -->|NO| R1(["Skip using question 2a"])
-
+    VetClaimant --> Q1[\"<b>Does the form ask the relationship of the Claimant to the Veteran?</b>\"]:::node-question
+    
+    Q1 --> Q1Yes([\"<b>YES</b>\"]):::node-answer-secondary
+    Q1 --> Q1No([\"<b>NO</b>\"]):::node-answer-secondary
+    
+    Q1Yes --> Q2A[\"<b>Can your form be filled out/submitted by a third party?</b>\"]:::node-question
+    Q1No --> R1([\"<b>Skip using question 2a</b>\"]):::node-context
+    
     R1 --> Q2A
     
-    Q2A -->|YES| R2(["Use full pattern 2b"])
-    Q2A -->|NO| R3(["Just use question 2a from the pattern"])
+    VetOnly --> Q2B[\"<b>Can your form be filled out/submitted by a third party?</b>\"]:::node-question
     
-    Q2B -->|NO| R4(["No need to use form submitter pattern"])
-    Q2B -->|YES| R2
-```
+    Q2A --> Q2AYes([\"<b>YES</b>\"]):::node-answer-secondary
+    Q2A --> Q2ANo([\"<b>NO</b>\"]):::node-answer-secondary
+    Q2B --> Q2BYes([\"<b>YES</b>\"]):::node-answer-secondary  
+    Q2B --> Q2BNo([\"<b>NO</b>\"]):::node-answer-secondary
+    
+    Q2AYes --> R2([\"<b>Use full pattern 2b</b>\"]):::node-result-button
+    Q2ANo --> R3([\"<b>Just use question 2a from the pattern</b>\"]):::node-result-action
+    Q2BYes --> R2
+    Q2BNo --> R4([\"<b>No need to use form submitter pattern</b>\"]):::node-result-link
+" %}
 
 ### Key terms you need to know
 - These terms are also defined in the [Word list](https://design.va.gov/content-style-guide/word-list) and Claims and applications https://design.va.gov/content-style-guide/specific-topics-and-programs/claims-and-applications sections in the content style guide.
