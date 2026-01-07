@@ -215,7 +215,7 @@ anchors:
     <span><b>Sign in with a verified account</b></span>
     <span>Here’s how signing in with an identify-verified account helps you:<br>- We can fill in some of your information for you to save you time.<br>- You can save your work in progress. You’ll have 60 days from when you start or make changes to submit your [application, claim, form].<br><b>Don’t yet have a verified account?</b> Create an <b>ID.me</b> or <b>Login.gov</b> account. We’ll help you verify your identity for your account now.<br><b>Not sure if your account is verified?</b> Sign in here. If you still need to verify your identity, we’ll help you do that now.<br><b>Note:</b> You can sign in after you start filling out your [application, claim, form]. But you’ll lose any information you already filled in.</span>
     <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
-    <span><a href="/components/alert/#examples---standard">Alert</a></span>
+    <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
     <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
   </va-table-row>
@@ -224,7 +224,7 @@ anchors:
     <span><b>Sign in with a verified account</b></span>
     <span>You’ll need to sign in with an identity-verified account through 1 of our account providers. Identity verification helps us protect all Veterans’ information and prevent scammers from stealing your benefits.<br><b>Don’t yet have a verified account?</b> Create an <b>ID.me</b> or <b>Login.gov</b> account. We’ll help you verify your identity for your account now.<br><b>Not sure if your account is verified?</b> Sign in here. If you still need to verify your identity, we’ll help you do that now.</span>
     <span>Sign in or create an account (primary button); Learn about creating an account (link)</span>
-    <span><a href="/components/alert/#examples---standard">Alert</a></span>
+    <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
     <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
   </va-table-row>
@@ -233,7 +233,7 @@ anchors:
     <span><b>Sign in with a verified account</b></span>
     <span>When you sign in with an identity-verified account, you can save your work in progress. You’ll have 60 days from when you start or make changes to submit your [application, claim, form].<br><b>Don’t yet have a verified account?</b> Create an <b>ID.me</b> or <b>Login.gov</b> account. We’ll help you verify your identity for your account now.<br><b>Not sure if your account is verified?</b> Sign in here. If you still need to verify your identity, we’ll help you do that now.<br><b>Note:</b> You can sign in after you start filling out your [application, claim, form]. But you’ll lose any information you already filled in.</span>
     <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
-    <span><a href="/components/alert/#examples---standard">Alert</a></span>
+    <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
     <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
   </va-table-row>
@@ -242,7 +242,7 @@ anchors:
     <span><b>We prefilled some of your information</b></span>
     <span>Since you’re signed in, we prefilled part of your [application, claim, form] based on your VA profile. You can also save your [application, claim, form] in progress and come back later to finish filling it out.<br><b>Note:</b> You’ll have 60 days from when you start or make updates to your [application, claim, form] to come back and finish it.</span>
     <span>N/A</span>
-    <span><a href="/components/alert/#examples---standard">Alert</a></span>
+    <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
     <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
   </va-table-row>
