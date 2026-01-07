@@ -33,7 +33,7 @@ anchors:
 {% include component-example.html alt="Example of the default sort on the VA Find a Form." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}
 
 ### Secure Messaging
-{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the MyHealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the MyHealtheVet Inbox." width="50%" %}
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
 
 
 ## Usage
