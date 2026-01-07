@@ -26,7 +26,7 @@ When using this pattern, work with the Content and IA team to help with the radi
 This pattern helps:
 * Veterans get through forms faster when they’re filling it out for themselves
 * Everyone understands who they’re collecting information about
-* Reduce errors and confusion
+* Reduces errors and confusion
 
 ### When to use this pattern
 
@@ -100,7 +100,7 @@ These terms are also defined in the [Word list](https://design.va.gov/content-st
 
 ### Question 1a: For signed-in Veterans
 
-* If Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran.  Who are you filling out this form for?"
+* If a Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran.  Who are you filling out this form for?"
 
 They can choose from these options:
 * I’m filling out this form for myself
