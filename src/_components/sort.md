@@ -2,7 +2,7 @@
 layout: component
 title: Sort
 permalink: /components/sort/
-# contributors: Command separated list of contributor names with (org name) following, if applicable
+# contributors: Comma separated list of contributor names with (org name) following, if applicable
 draft: false
 web: true
 mobile-app: false
