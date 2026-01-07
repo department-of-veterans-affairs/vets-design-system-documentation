@@ -76,7 +76,7 @@ jobs:
         with:
           repository: department-of-veterans-affairs/component-library
           path: component-library
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.VADS_WORKFLOWS }}
           fetch-depth: 1
 
       - name: Checkout vets-website for analysis
@@ -84,7 +84,7 @@ jobs:
         with:
           repository: department-of-veterans-affairs/vets-website
           path: vets-website
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.VADS_WORKFLOWS }}
           fetch-depth: 1
 
       - name: Checkout content-build for analysis
@@ -92,7 +92,7 @@ jobs:
         with:
           repository: department-of-veterans-affairs/content-build
           path: content-build
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.VADS_WORKFLOWS }}
           fetch-depth: 1
 
       - name: Install CLI dependencies
