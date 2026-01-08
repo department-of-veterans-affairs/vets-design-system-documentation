@@ -6,7 +6,7 @@ permalink: /patterns/help-users-to/identify-who-is-filling-out-a-form
 sub-section: help-users-to
 intro-text: "This pattern helps determine two things: Who is filling out the form (the person typing or writing) and who the form is about (the person who will get the benefits). Sometimes these are the same person and sometimes they are different."
 research-title: Form respondent
-figma-link: https://www.figma.com/design/5RyCNn2x5LiNj15TLEh4tD/WIP---Form-Submitter-Pattern?node-id=4-47&t=4KIttqDZYZZOB26A-1
+figma-link: 
 status: use-with-caution-candidate
 uses_mermaid: true
 ---
@@ -130,7 +130,7 @@ Options might include:
 
 ### Question 2a: Relationship to Veteran
 
-We ask about the person’s relationship to the Veteran: “Which of these best describes you?”
+We ask about the person’s relationship to the Veteran: “What’s your relationship to the Veteran?”
 
 * I’m a Veteran’s spouse
 * I’m a Veteran’s dependent child
