@@ -38,7 +38,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
         <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
-        <span>[After h1 on form introduction page](https://design.va.gov/templates/forms/introduction)</span>
+        <span>After h1 on [form introduction page](https://design.va.gov/templates/forms/introduction)</span>
     </va-table-row>
     <va-table-row>
         <span>Save your work in progress (unauthenticated), sign in required</span>
@@ -47,7 +47,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
         <span>Sign in or create an account (primary button); Learn about creating an account (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
-        <span>[After h1 on form introduction page](https://design.va.gov/templates/forms/introduction)</span>
+        <span>After h1 on [form introduction page](https://design.va.gov/templates/forms/introduction)</span>
     </va-table-row>
     <va-table-row>
         <span>Optional sign in without prefill</span>
@@ -56,7 +56,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
         <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
-        <span>[After h1 on form introduction page](https://design.va.gov/templates/forms/introduction)</span>
+        <span>After h1 on [form introduction page](https://design.va.gov/templates/forms/introduction)</span>
     </va-table-row>
     <va-table-row>
         <span>Prefill: Intro variation (authenticated)</span>
@@ -65,7 +65,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
         <span>N/A</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
-        <span>[After h1 on form Introduction page](https://design.va.gov/templates/forms/introduction)</span>
+        <span>After h1 on [form Introduction page](https://design.va.gov/templates/forms/introduction)</span>
     </va-table-row>
     <va-table-row>
         <span>Prefill: Step variation (authenticated), if saving to form and profile</span>
@@ -92,7 +92,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
         <span>Verify with [**ID.me**, **Login.gov**] (brand asset button)</span>
         <span>[Alert](https://design.va.gov/components/alert#warning-alert)</span>
         <span>Warning</span>
-        <span>[After h1 on form Introduction page](https://design.va.gov/templates/forms/introduction)</span>
+        <span>After h1 on [form Introduction page](https://design.va.gov/templates/forms/introduction)</span>
     </va-table-row>
     <va-table-row>
         <span>Sign in with a different account</span>
@@ -101,7 +101,7 @@ intro-text: Engagement messages recommend that the person enter or update data i
         <span>Sign in with **ID.me** (brand asset button 1); Sign in with **Login.gov** (brand asset button 2); Learn about creating an account (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#warning-alert)</span>
         <span>Warning</span>
-        <span>[After h1 on form Introduction page](https://design.va.gov/templates/forms/introduction)</span>
+        <span>After h1 on [form Introduction page](https://design.va.gov/templates/forms/introduction)</span>
     </va-table-row>
     <va-table-row>
         <span>Verify a U.S. address (failure)</span>
