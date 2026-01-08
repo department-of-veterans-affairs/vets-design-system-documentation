@@ -56,7 +56,7 @@ When possible, keep error and alert message titles (headings) to 50 characters, 
 
 #### [Alert](https://design.va.gov/components/alert/)
 
-- Made style guide edits throughout Content considerations to match current guidance
+- Made style guide edits throughout content considerations to match current guidance
 - Added guidance on heading/title length:
   > When possible, keep error and alert message titles (headings) to 50 characters, including spaces. Error and alert message titles should follow the general guidelines for page and section titles.<p>
 [Learn more in the Page titles and section titles section of the style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
@@ -65,7 +65,7 @@ When possible, keep error and alert message titles (headings) to 50 characters, 
 
 #### [Help users to... Recover from errors](https://design.va.gov/patterns/help-users-to/recover-from-errors)
 
-- Made style guide edits throughout Step 1 to match current guidance
+- Made style guide edits throughout **Step 1** to match current guidance
 - Added guidance on heading/title length:
   > When possible, keep error and alert message titles (headings) to 50 characters, including spaces. Error and alert message titles should follow the general guidelines for page and section titles.<p>
 [Learn more in the Page titles and section titles section of the style guide](https://design.va.gov/content-style-guide/page-titles-and-section-titles)
