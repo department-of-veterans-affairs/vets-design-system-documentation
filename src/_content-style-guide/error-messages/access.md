@@ -20,7 +20,7 @@ anchors:
 Variations in messaging depend on these factors:
 
 - Whether the downtime is scheduled/expected
-- If scheduled, when the application/claim/form will be available again (precise time stamp if known, or a general estimate if not)
+- If scheduled, when the application/claim/form will be available again (precise timestamp if known, or a general estimate if not)
 - If unexpected, a general estimate of when the application/claim/form will be available again
 
 <va-table>
@@ -36,8 +36,7 @@ Variations in messaging depend on these factors:
   <va-table-row>
     <span>Entire site isn't accessible (site-wide scheduled downtime)</span>
     <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br/><b>Date:</b> Month Day, Year
-      <b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
+    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br/><b>Date:</b> Month Day, Year<br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
@@ -71,9 +70,9 @@ Variations in messaging depend on these factors:
     <span>After page title</span>
   </va-table-row>
   <va-table-row>
-    <span>Component is not accessible (general message; we'll add specific iterations later)</span>
+    <span>Component isn't accessible (general message; we'll add specific iterations later)</span>
     <span><b>[Component name] isn't working right now</b></span>
-    <span>We're sorry. Something went wrong in our system. Refresh this page or check back later.</span>
+    <span>We're sorry. Something went wrong in our system. Refresh this page or try again later.</span>
     <span>Go back to previous page</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
@@ -89,7 +88,7 @@ Variations in messaging depend on these factors:
     <span>Before affected component</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete an automated task (e.g., save application in progress)</span>
+    <span>Unable to complete an automated task (ex. save application in progress)</span>
     <span><b>We couldn't save your [application, claim, form]</b></span>
     <span>We're sorry. Something went wrong when we tried to save your [application, claim, form]. Try saving it again later. If you're on a public computer, you can continue to fill out your [application, claim, form]. But your information won't save automatically.</span>
     <span>N/A</span>
@@ -104,7 +103,7 @@ Variations in messaging depend on these factors:
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
     <span>Error</span>
-    <span>Before page title</span>
+    <span>After page title</span>
   </va-table-row>
   <va-table-row>
     <span>Unable to complete a task the person initiated, can still proceed</span>
@@ -113,7 +112,7 @@ Variations in messaging depend on these factors:
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
-    <span>Before page title</span>
+    <span>After page title</span>
   </va-table-row>
 </va-table>
 
@@ -122,8 +121,8 @@ Variations in messaging depend on these factors:
 <va-table>
   <va-table-row>
     <span>Scenario</span>
-    <span>Message Title</span>
-    <span>Message Count</span>
+    <span>Message title</span>
+    <span>Message content</span>
     <span>Actions</span>
     <span>Component</span>
     <span>State</span>
@@ -139,7 +138,7 @@ Variations in messaging depend on these factors:
     <span>After page title</span>
   </va-table-row>
   <va-table-row>
-    <span>Unable to complete an automated task (e.g., save application in progress) due to the person's connection loss</span>
+    <span>Unable to complete an automated task (ex., save application in progress) due to the person's connection loss</span>
     <span><b>We can't save your [application, claim, form] right now</b></span>
     <span>Make sure you're connected to the internet and then try saving your [application, claim, form] again.</span>
     <span>Try again</span>
@@ -154,7 +153,7 @@ Variations in messaging depend on these factors:
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
     <span>Error</span>
-    <span>Before page title</span>
+    <span>After page title</span>
   </va-table-row>
 </va-table>
 
@@ -163,8 +162,8 @@ Variations in messaging depend on these factors:
 <va-table>
   <va-table-row>
     <span>Scenario</span>
-    <span>Message Title</span>
-    <span>Message Content</span>
+    <span>Message title</span>
+    <span>Message content</span>
     <span>Actions</span>
     <span>Component</span>
     <span>State</span>
@@ -193,12 +192,13 @@ Variations in messaging depend on these factors:
     <span><b>You're not eligible for this benefit</b></span>
     <span>Based on the information you gave us, you're not eligible for this benefit. Check your eligibility again.</span>
     <span>Check your eligibility</span>
-    <span>N/A</span>
+    
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
+    <span>N/A</span>
     <span>Replace content after page title</span>
   </va-table-row>
   <va-table-row>
-    <span>(Application) Person isn't currently enrolled in a benefit (e.g., not enrolled in Post-9/11 GI Bill benefits)</span>
+    <span>(Application) Person isn't currently enrolled in a benefit (ex. not enrolled in Post-9/11 GI Bill benefits)</span>
     <span><b>You're not enrolled in this benefit</b></span>
     <span>Our records show that you're not signed up for this benefit. If you think you're eligible for this benefit, you can apply now.</span>
     <span>Check your eligibility (button 1); Apply now (button 2)</span>
@@ -229,14 +229,14 @@ Variations in messaging depend on these factors:
   </va-table-row>
   <va-table-row>
     <span>(Application or page) No data tied to the person or scenario</span>
-    <span><b>We don't have any [data type (e.g., prescription refills or health records)] for you in our system.</b></span>
+    <span><b>We don't have any [data type (ex. prescription refills or health records)] for you in our system</b></span>
     <span>&nbsp;</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>Replace content after page title</span>
   </va-table-row>
   <va-table-row>
     <span>(Component) No data tied to the person or scenario</span>
-    <span><b>We don't have any [data type] for you in our system.</b></span>
+    <span><b>We don't have any [data type] for you in our system</b></span>
     <span>&nbsp;</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>Replace affected component</span>
