@@ -217,7 +217,7 @@ anchors:
     <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
     <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
-    <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
+    <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
   <va-table-row>
     <span>Save your work in progress (unauthenticated), sign in required</span>
@@ -226,7 +226,7 @@ anchors:
     <span>Sign in or create an account (primary button); Learn about creating an account (link)</span>
     <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
-    <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
+    <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
   <va-table-row>
     <span>Optional sign in without prefill</span>
@@ -235,7 +235,7 @@ anchors:
     <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
     <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
-    <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
+    <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
   <va-table-row>
     <span>Prefill: Intro variation (authenticated)</span>
@@ -244,7 +244,7 @@ anchors:
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
     <span>Informational</span>
-    <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
+    <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
   <va-table-row>
     <span>Verify your identity with <b>ID.me</b> or <b>Login.gov</b></span>
@@ -253,7 +253,7 @@ anchors:
     <span>Verify with [<b>ID.me</b>, <b>Login.gov</b>] (brand asset button)</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
-    <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
+    <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
   <va-table-row>
     <span>Sign in with a different account</span>
@@ -262,6 +262,6 @@ anchors:
     <span>Sign in with <b>ID.me</b> (brand asset button 1); Sign in with <b>Login.gov</b> (brand asset button 2); Learn about creating an account (link)</span>
     <span><a href="{{ site.baseurl }}/components/alert#warning-alert">Alert</a></span>
     <span>Warning</span>
-    <span><a href="/templates/forms/introduction">After h1 on form introduction page</a></span>
+    <span>After h1 on <a href="/templates/forms/introduction">form introduction page</a></span>
   </va-table-row>
 </va-table>
