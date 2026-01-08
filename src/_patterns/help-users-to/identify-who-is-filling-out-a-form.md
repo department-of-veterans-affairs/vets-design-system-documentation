@@ -1,7 +1,7 @@
 ---
 layout: pattern
 title: Identify who is filling out a form
-draft: true
+draft: false
 permalink: /patterns/help-users-to/identify-who-is-filling-out-a-form
 sub-section: help-users-to
 intro-text: "This pattern helps determine two things: Who is filling out the form (the person typing or writing) and who the form is about (the person who will get the benefits). Sometimes these are the same person and sometimes they are different."
