@@ -139,3 +139,129 @@ these can be removed along with an update to how classes are generated in color-
 .vads-u-background-color--primary-darker {
   background-color: var(--vads-color-primary-darker) !important;
 }
+
+/* ==================================================
+   MERMAID CHARTS STYLING
+   ================================================== */
+
+   .mermaid-width {
+     max-width: 528px;
+   }
+
+/* Container Layout */
+.mermaid-chart-container {
+  margin: var(--vads-spacing-4) auto;
+  text-align: center;
+  max-width: var(--vads-size-max-width-site);
+  line-height: 1.2;
+  font-size: var(--vads-font-size--sm);
+}
+
+/* Mermaid Loading Components */
+.mermaid-container {
+  position: relative;
+}
+
+.mermaid-loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--vads-color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.mermaid-loading-text {
+  color: var(--vads-color-gray-dark);
+  font-size: var(--vads-font-size--sm);
+}
+
+/* Mermaid chart styling */
+.mermaid-chart-container .mermaid {
+  background: transparent;
+  margin: 0 auto;
+  overflow: visible;
+}
+/* Node Styling - White nodes with gray borders for WCAG AA contrast.
+   Ensures sufficient contrast and clarity for accessibility in Mermaid charts.
+   Use a more specific selector to avoid global overrides and minimize !important usage. */
+.mermaid-chart-container .mermaid .node rect,
+.mermaid-chart-container .mermaid .node circle,
+.mermaid-chart-container .mermaid .node ellipse,
+.mermaid-chart-container .mermaid .node polygon,
+.mermaid-chart-container .mermaid .node path,
+.mermaid-chart-container .mermaid g.node > rect,
+.mermaid-chart-container .mermaid g.node > circle,
+.mermaid-chart-container .mermaid g.node > ellipse,
+.mermaid-chart-container .mermaid g.node > polygon {
+  fill: var(--vads-color-white) !important;
+  stroke: var(--vads-color-gray-medium) !important;
+  stroke-width: 2px !important;
+  /* If Mermaid sets inline styles that cannot be overridden, add !important and document why. */
+}
+
+/* Node Text Styling */
+/* Use a single, more specific selector to style all text in Mermaid charts */
+.mermaid-chart-container .mermaid text {
+  font-size: var(--vads-font-size--sm);
+  fill: var(--vads-color-base);
+}
+
+/* Edge and Interaction Styling */
+/* Use a more specific selector and document why !important is needed: Mermaid sets border inline */
+.mermaid-chart-container .mermaid .edgeLabel {
+  background-color: transparent !important;
+  border: none !important; /* !important required to override Mermaid's inline border */
+}
+
+.mermaid-chart-container .mermaid .node {
+  cursor: default !important;
+  font-size: 14px;
+}
+
+/* Hide cluster backgrounds */
+.mermaid-chart-container .mermaid .cluster rect {
+  fill: none;
+  stroke: none;
+}
+
+/* Component Layout */
+.mermaid-comparison {
+  margin: var(--vads-spacing-5) 0;
+}
+
+.mermaid-comparison__title {
+  font-weight: bold;
+  margin-bottom: var(--vads-spacing-2);
+  color: var(--vads-color-base-darker);
+}
+
+.mermaid-chart-caption {
+  font-style: italic;
+  text-align: center;
+  max-width: 768px;
+  margin: 0 auto;
+  color: var(--vads-color-base);
+  font-size: var(--vads-font-size--sm);
+}
+
+/* Mobile-first Responsive Styles */
+
+.mermaid {
+  min-width: 600px; /* Ensures readability on mobile */
+}
+
+/* Desktop overrides (if needed) */
+@media (min-width: 768px) {
+  .mermaid-chart-container {
+    overflow-x: visible;
+    padding: 0;
+  }
+  .mermaid-chart-container .mermaid {
+    min-width: auto;
+  }
+}

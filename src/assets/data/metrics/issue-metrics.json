@@ -133,17 +133,22 @@
     {
       "period": "2025-Q2",
       "issues_opened": 448,
-      "issues_closed": 581
+      "issues_closed": 579
     },
     {
       "period": "2025-Q3",
       "issues_opened": 472,
-      "issues_closed": 423
+      "issues_closed": 422
     },
     {
       "period": "2025-Q4",
-      "issues_opened": 301,
-      "issues_closed": 205
+      "issues_opened": 455,
+      "issues_closed": 362
+    },
+    {
+      "period": "2026-Q1",
+      "issues_opened": 1,
+      "issues_closed": 0
     }
   ],
   "velocity": [
@@ -545,7 +550,7 @@
     {
       "period": "2025-05",
       "issues_opened": 156,
-      "issues_closed": 203
+      "issues_closed": 201
     },
     {
       "period": "2025-06",
@@ -565,7 +570,7 @@
     {
       "period": "2025-09",
       "issues_opened": 148,
-      "issues_closed": 115
+      "issues_closed": 114
     },
     {
       "period": "2025-10",
@@ -574,8 +579,18 @@
     },
     {
       "period": "2025-11",
-      "issues_opened": 90,
-      "issues_closed": 64
+      "issues_opened": 140,
+      "issues_closed": 102
+    },
+    {
+      "period": "2025-12",
+      "issues_opened": 104,
+      "issues_closed": 119
+    },
+    {
+      "period": "2026-01",
+      "issues_opened": 1,
+      "issues_closed": 0
     }
   ],
   "experimental_quarterly": [
@@ -689,32 +704,32 @@
     },
     {
       "period": "2025-Q4",
-      "issues_opened": 9,
+      "issues_opened": 12,
       "issues_closed": 0,
       "issues_implemented": 0
     }
   ],
   "summary": {
-    "open_issues": 597,
-    "closed_this_month": 64,
+    "open_issues": 598,
+    "closed_this_month": 0,
     "avg_resolution_days": 119,
-    "total_issues": 5126,
-    "last_updated": "2025-11-18T17:27:31.829Z",
+    "total_issues": 5281,
+    "last_updated": "2026-01-02T18:09:26.053Z",
     "open_issues_trend": {
-      "direction": "up",
-      "percentage": 14,
-      "value": 70
+      "direction": "down",
+      "percentage": 2,
+      "value": -15
     },
     "closed_month_trend": {
       "direction": "down",
-      "percentage": 55,
-      "value": -77
+      "percentage": 100,
+      "value": -119
     },
     "resolution_time_trend": {
       "direction": "down",
-      "percentage": 38,
-      "value": -37
+      "percentage": 100,
+      "value": -96
     }
   },
-  "generated_at": "2025-11-18T17:27:31.854Z"
+  "generated_at": "2026-01-02T18:09:26.079Z"
 }
