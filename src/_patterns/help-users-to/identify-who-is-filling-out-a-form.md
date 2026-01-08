@@ -30,12 +30,16 @@ This pattern helps:
 
 ### When to use this pattern
 
-Use this pattern when your form can be filled out by:
+Use this pattern when your form can be filled out by the following:
 
 * Veterans for themselves
 * Family members for themselves
 * Family members for a Veteran
 * Someone else for a Veteran or family member of a Veteran
+
+### When not to use this pattern
+
+* The form can only ever be completed by the Veteran for themselves
 
 ### Decision tree questions
 
@@ -156,6 +160,12 @@ Include hint text that explains additional forms may be needed: "You may need to
 
 {% include component-example.html alt="A form question asking what type of permission the user has to fill out a form for a non-Veteran claimant, with radio tile options and an expandable help section." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/2b-third-party-question-non-veteran.png" caption="Example of Question 2b for third-party representatives filling out forms for non-Veteran claimants." class="x2" %}
 
+### Handling permission issues
+
+When users don't have the proper permission to fill out a form for someone else, provide clear guidance on next steps:
+
+{% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
+
 ### How this pattern affects your form
 
 #### Introduction page
@@ -169,8 +179,6 @@ Your form's first page should clearly explain:
 
 Label step 1 as "Your identity" and include questions 1 and 2.
 
-### Content considerations
-Follow the [plain language standards](https://design.va.gov/content-style-guide/) in the VA.gov content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 Always ask for the form submitter's contact information first, then ask for information about the person the form is for (if they're different people).
 
 Always require email addresses for both the person filling out the form and the person it’s for.
@@ -179,11 +187,8 @@ Always require email addresses for both the person filling out the form and the 
 
 {% include component-example.html alt="An example progress bar." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/progress-bar.png" caption="This progress bar represents a form flow where a third party is filling out the form for a non-Veteran claimant. Make sure you use the options that are relevant to your form." class="x2" %}
 
-### Handling permission issues
-
-When users don't have the proper permission to fill out a form for someone else, provide clear guidance on next steps:
-
-{% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
+### Content considerations
+Follow the [plain language standards](https://design.va.gov/content-style-guide/) in the VA.gov content style guide when creating radio options, hint text, additional information, etc. Contact the Content and IA team for help with any new content.
 
 #### Error messages and hint text
 
