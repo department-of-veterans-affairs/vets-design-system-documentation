@@ -34,8 +34,7 @@ anchors:
   <va-table-row>
     <span>Advance notification</span>
     <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be working on VA.gov soon. The maintenance will last [x hour]. During that time, you won’t be able to sign in or use tools.<br>
-      
+    <span>We’ll be working on VA.gov soon. The maintenance will last [x hour]. During that time, you won’t be able to sign in or use tools.<br><br> 
       <b>Date:</b> Month Day, Year <br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner#before-maintenance">Maintenance banner</a></span>
     <span>Before maintenance</span>
@@ -43,9 +42,7 @@ anchors:
   <va-table-row>
     <span>Advance notification/24 hour</span>
     <span><b>Upcoming site maintenance</b></span>
-    <span>We’ll be working on VA.gov soon. The maintenance will last 24 hours. During that time, you won’t be able to sign in or use tools.<br>
-      
-      <b>Start:</b> Month Day, Year, at 0:00 a.m. ET<br><b>End:</b> Month Day, Year, at 0:00 a.m. ET</span>
+    <span>We’ll be working on VA.gov soon. The maintenance will last 24 hours. During that time, you won’t be able to sign in or use tools.   <br><b>Start:</b> Month Day, Year, at 0:00 a.m. ET<br><b>End:</b> Month Day, Year, at 0:00 a.m. ET</span>
     <span><a href="{{ site.baseurl }}/components/banner#before-maintenance">Maintenance banner</a></span>
     <span>Before maintenance</span>
   </va-table-row>
