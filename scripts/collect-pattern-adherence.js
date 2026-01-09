@@ -18,6 +18,7 @@ const { execSync } = require('child_process');
 
 const PATTERNS_DIR = path.join(__dirname, '../src/_patterns');
 const PRODUCT_DIRECTORY_REPO = 'department-of-veterans-affairs/product-directory';
+const VETS_WEBSITE_REPO = 'department-of-veterans-affairs/vets-website';
 
 /**
  * Parse pattern metadata from markdown file
@@ -214,6 +215,58 @@ async function getFormProducts() {
 }
 
 /**
+ * Find which applications import a specific file from vets-website
+ * Returns array of application paths that import the file
+ */
+async function findImporters(patternCodeFile) {
+  console.log(`Analyzing imports for ${patternCodeFile}...`);
+
+  try {
+    // Extract just the filename for searching (without extension)
+    const filename = path.basename(patternCodeFile);
+    const filenameWithoutExt = filename.replace('.jsx', '').replace('.js', '');
+
+    // Search vets-website for references to this filename
+    // GitHub code search looks for the filename in the content
+    const searchQuery = `repo:${VETS_WEBSITE_REPO} "${filenameWithoutExt}"`;
+
+    const output = execSync(
+      `gh api search/code --method GET -f q='${searchQuery}' --paginate --jq '.items[] | select(.path | test("src/applications")) | {path: .path}'`,
+      {
+        encoding: 'utf8',
+        maxBuffer: 10 * 1024 * 1024,
+        stdio: ['pipe', 'pipe', 'ignore'] // Suppress stderr warnings
+      }
+    );
+
+    if (!output.trim()) {
+      return [];
+    }
+
+    // Parse JSONL output
+    const lines = output.trim().split('\n').filter(line => line.trim());
+    const results = lines.map(line => JSON.parse(line));
+
+    // Extract application paths from file paths
+    // Format: src/applications/{app-name}/...
+    const appPaths = new Set();
+
+    results.forEach(result => {
+      const match = result.path.match(/src\/applications\/([^\/]+)/);
+      if (match) {
+        appPaths.add(match[1]);
+      }
+    });
+
+    return Array.from(appPaths);
+  } catch (error) {
+    // GitHub code search may fail due to rate limits or missing results
+    console.warn(`Could not analyze imports for ${patternCodeFile}: ${error.message}`);
+    return [];
+  }
+}
+
+/**
  * Main execution
  */
 async function main() {
@@ -261,5 +314,6 @@ module.exports = {
   getAllPatterns,
   findPatternFiles,
   fetchProductDirectory,
-  getFormProducts
+  getFormProducts,
+  findImporters
 };
