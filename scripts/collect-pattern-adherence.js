@@ -64,11 +64,33 @@ function parsePatternMetadata(filename, content) {
   // Extract file path from GitHub URL
   let codeFile = null;
   if (codeLink) {
+    // Validate that code-link is a GitHub URL
+    if (!codeLink.startsWith('https://github.com/')) {
+      console.warn(`⚠️  Invalid code-link URL in ${filename}: ${codeLink}`);
+      return {
+        filename,
+        title,
+        permalink,
+        hasCodeLink: false,
+        codeLink: codeLink,
+        codeFile: null
+      };
+    }
+
     // Extract path after /blob/main/ or /blob/master/
     const pathMatch = codeLink.match(/\/blob\/(?:main|master)\/(.*)/);
-    if (pathMatch) {
-      codeFile = pathMatch[1];
+    if (!pathMatch) {
+      console.warn(`⚠️  Could not extract file path from code-link in ${filename}: ${codeLink}`);
+      return {
+        filename,
+        title,
+        permalink,
+        hasCodeLink: true,
+        codeLink,
+        codeFile: null
+      };
     }
+    codeFile = pathMatch[1];
   }
 
   return {
@@ -88,6 +110,13 @@ function parsePatternMetadata(filename, content) {
 async function collectPatternMetadata() {
   console.log('Collecting pattern metadata from markdown files...');
 
+  // Check that patterns directory exists
+  try {
+    await fs.access(PATTERNS_DIR);
+  } catch (error) {
+    throw new Error(`Patterns directory not found: ${PATTERNS_DIR}`);
+  }
+
   const patterns = [];
 
   async function processDirectory(dir) {
@@ -104,9 +133,14 @@ async function collectPatternMetadata() {
           continue;
         }
 
-        const content = await fs.readFile(fullPath, 'utf8');
-        const metadata = parsePatternMetadata(entry.name, content);
-        patterns.push(metadata);
+        try {
+          const content = await fs.readFile(fullPath, 'utf8');
+          const metadata = parsePatternMetadata(entry.name, content);
+          patterns.push(metadata);
+        } catch (error) {
+          console.warn(`⚠️  Could not read ${path.relative(PATTERNS_DIR, fullPath)}: ${error.message}`);
+          continue;
+        }
       }
     }
   }
