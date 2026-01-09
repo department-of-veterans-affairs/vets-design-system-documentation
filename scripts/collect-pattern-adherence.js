@@ -221,21 +221,31 @@ async function getFormProducts() {
 async function findImporters(patternCodeFile) {
   console.log(`Analyzing imports for ${patternCodeFile}...`);
 
+  // Validate input
+  if (!patternCodeFile || typeof patternCodeFile !== 'string') {
+    console.warn('Invalid pattern code file:', patternCodeFile);
+    return [];
+  }
+
   try {
     // Extract just the filename for searching (without extension)
     const filename = path.basename(patternCodeFile);
-    const filenameWithoutExt = filename.replace('.jsx', '').replace('.js', '');
+    const filenameWithoutExt = path.parse(filename).name;
 
     // Search vets-website for references to this filename
     // GitHub code search looks for the filename in the content
     const searchQuery = `repo:${VETS_WEBSITE_REPO} "${filenameWithoutExt}"`;
 
+    // CRITICAL: Properly escape single quotes to prevent command injection
+    const escapedQuery = searchQuery.replace(/'/g, "'\\''");
+
     const output = execSync(
-      `gh api search/code --method GET -f q='${searchQuery}' --paginate --jq '.items[] | select(.path | test("src/applications")) | {path: .path}'`,
+      `gh api search/code --method GET -f q='${escapedQuery}' --paginate --jq '.items[] | select(.path | test("src/applications")) | {path: .path}'`,
       {
         encoding: 'utf8',
         maxBuffer: 10 * 1024 * 1024,
-        stdio: ['pipe', 'pipe', 'ignore'] // Suppress stderr warnings
+        stdio: ['pipe', 'pipe', 'ignore'], // Suppress stderr warnings
+        timeout: 60000 // 60 second timeout to prevent hanging
       }
     );
 
@@ -245,7 +255,14 @@ async function findImporters(patternCodeFile) {
 
     // Parse JSONL output
     const lines = output.trim().split('\n').filter(line => line.trim());
-    const results = lines.map(line => JSON.parse(line));
+    const results = lines.map(line => {
+      try {
+        return JSON.parse(line);
+      } catch (e) {
+        console.warn(`⚠️  Failed to parse search result: ${e.message}`);
+        return null;
+      }
+    }).filter(Boolean); // Remove nulls
 
     // Extract application paths from file paths
     // Format: src/applications/{app-name}/...
