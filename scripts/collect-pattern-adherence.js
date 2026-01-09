@@ -189,10 +189,17 @@ async function fetchProductDirectory() {
   console.log('Fetching product directory...');
 
   try {
-    const output = execSync(
-      `gh api repos/${PRODUCT_DIRECTORY_REPO}/contents/product-directory.json --jq '.content'`,
-      { encoding: 'utf8', timeout: 30000 }
-    );
+    // Use execFileSync for security and pass GITHUB_TOKEN for authentication
+    const output = execFileSync('gh', [
+      'api',
+      `repos/${PRODUCT_DIRECTORY_REPO}/contents/product-directory.json`,
+      '--jq',
+      '.content'
+    ], {
+      encoding: 'utf8',
+      timeout: 30000,
+      env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN }
+    });
 
     // Decode base64 content
     const jsonContent = Buffer.from(output.trim(), 'base64').toString('utf8');
@@ -389,19 +396,29 @@ async function findImporters(patternCodeFile) {
       // Use GitHub API
       console.log(`  Using GitHub API for ${VETS_WEBSITE_REPO}`);
 
-      const repoInfo = execSync(
-        `gh api repos/${VETS_WEBSITE_REPO} --jq '.default_branch'`,
-        { encoding: 'utf8', timeout: 10000 }
-      ).trim();
+      // Use execFileSync for security and pass GITHUB_TOKEN for authentication
+      const repoInfo = execFileSync('gh', [
+        'api',
+        `repos/${VETS_WEBSITE_REPO}`,
+        '--jq',
+        '.default_branch'
+      ], {
+        encoding: 'utf8',
+        timeout: 10000,
+        env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN }
+      }).trim();
 
-      const treeOutput = execSync(
-        `gh api repos/${VETS_WEBSITE_REPO}/git/trees/${repoInfo}?recursive=1 --jq '.tree[] | select(.path | startswith("src/applications/")) | select(.path | endswith(".js") or endswith(".jsx")) | select(.path | contains("/pages/") or contains("/config/")) | .path'`,
-        {
-          encoding: 'utf8',
-          maxBuffer: 20 * 1024 * 1024,
-          timeout: 60000
-        }
-      );
+      const treeOutput = execFileSync('gh', [
+        'api',
+        `repos/${VETS_WEBSITE_REPO}/git/trees/${repoInfo}?recursive=1`,
+        '--jq',
+        '.tree[] | select(.path | startswith("src/applications/")) | select(.path | endswith(".js") or endswith(".jsx")) | select(.path | contains("/pages/") or contains("/config/")) | .path'
+      ], {
+        encoding: 'utf8',
+        maxBuffer: 20 * 1024 * 1024,
+        timeout: 60000,
+        env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN }
+      });
 
       if (!treeOutput.trim()) {
         console.log(`  No files found in src/applications`);
