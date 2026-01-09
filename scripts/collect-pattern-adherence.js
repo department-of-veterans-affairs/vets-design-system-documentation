@@ -9,12 +9,25 @@
  * 3. Analyzing vets-website code to identify pattern usage
  * 4. Generating compliance reports
  *
- * Usage: node scripts/collect-pattern-adherence.js
+ * Usage:
+ *   node scripts/collect-pattern-adherence.js [--vets-website-path <path>]
+ *
+ * Options:
+ *   --vets-website-path   Path to local vets-website repo (default: use GitHub API)
  */
 
 const fs = require('fs').promises;
 const path = require('path');
 const { execSync } = require('child_process');
+
+// Parse command-line arguments
+const args = process.argv.slice(2);
+let VETS_WEBSITE_PATH = null;
+for (let i = 0; i < args.length; i++) {
+  if (args[i] === '--vets-website-path' && i + 1 < args.length) {
+    VETS_WEBSITE_PATH = path.resolve(args[i + 1]);
+  }
+}
 
 const PATTERNS_DIR = path.join(__dirname, '../src/_patterns');
 const PRODUCT_DIRECTORY_REPO = 'department-of-veterans-affairs/product-directory';
@@ -216,9 +229,41 @@ async function getFormProducts() {
   }));
 }
 
+// Pattern export mapping - maps pattern filenames to their exported names
+// This helps identify which forms use which patterns
+const PATTERN_EXPORT_MAPPING = {
+  'ssnPattern.jsx': ['ssn', 'vaFileNumber', 'serviceNumber', 'ssnOrVaFileNumber', 'ssnOrServiceNumber'],
+  'emailPattern.jsx': ['email'],
+  'phonePatterns.jsx': ['phone', 'Phone'], // note: some use capitalized
+  'fullNamePattern.js': ['fullName'],
+  'datePatterns.jsx': ['date', 'currentOrPastDate', 'currentOrFutureDate', 'monthYear'],
+  'addressPattern.jsx': ['address', 'Address'],
+  'relationshipToVeteranPattern.jsx': ['relationshipToVeteran'],
+  'FormSignature.jsx': ['FormSignature'],
+};
+
+/**
+ * Recursively find all .js/.jsx files in a directory
+ */
+async function findJSFiles(dir, baseDir = dir) {
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  const files = await Promise.all(entries.map(async (entry) => {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      return findJSFiles(fullPath, baseDir);
+    } else if (entry.name.endsWith('.js') || entry.name.endsWith('.jsx')) {
+      return path.relative(baseDir, fullPath);
+    }
+    return null;
+  }));
+  return files.flat().filter(Boolean);
+}
+
 /**
  * Find which applications import a specific file from vets-website
- * Returns array of application paths that import the file
+ * Two-step approach:
+ * 1. Find all files that import from web-component-patterns directory
+ * 2. Check which ones use exports from this specific pattern
  */
 async function findImporters(patternCodeFile) {
   console.log(`Analyzing imports for ${patternCodeFile}...`);
@@ -230,56 +275,127 @@ async function findImporters(patternCodeFile) {
   }
 
   try {
-    // Extract just the filename for searching (without extension)
     const filename = path.basename(patternCodeFile);
-    const filenameWithoutExt = path.parse(filename).name;
 
-    // Search vets-website for references to this filename
-    // GitHub code search looks for the filename in the content
-    const searchQuery = `repo:${VETS_WEBSITE_REPO} "${filenameWithoutExt}"`;
-
-    // CRITICAL: Properly escape single quotes to prevent command injection
-    const escapedQuery = searchQuery.replace(/'/g, "'\\''");
-
-    const output = execSync(
-      `gh api search/code --method GET -f q='${escapedQuery}' --paginate --jq '.items[] | select(.path | test("src/applications")) | {path: .path}'`,
-      {
-        encoding: 'utf8',
-        maxBuffer: 10 * 1024 * 1024,
-        stdio: ['pipe', 'pipe', 'ignore'], // Suppress stderr warnings
-        timeout: 60000 // 60 second timeout to prevent hanging
-      }
-    );
-
-    if (!output.trim()) {
+    // Get the export names for this pattern
+    const exportNames = PATTERN_EXPORT_MAPPING[filename];
+    if (!exportNames || exportNames.length === 0) {
+      console.warn(`⚠️  No export mapping defined for ${filename}`);
       return [];
     }
 
-    // Parse JSONL output
-    const lines = output.trim().split('\n').filter(line => line.trim());
-    const results = lines.map(line => {
+    console.log(`  Looking for exports: ${exportNames.join(', ')}`);
+
+    let filePaths;
+
+    if (VETS_WEBSITE_PATH) {
+      // Use local filesystem
+      console.log(`  Using local vets-website at: ${VETS_WEBSITE_PATH}`);
+      const applicationsDir = path.join(VETS_WEBSITE_PATH, 'src/applications');
+
       try {
-        return JSON.parse(line);
-      } catch (e) {
-        console.warn(`⚠️  Failed to parse search result: ${e.message}`);
-        return null;
+        await fs.access(applicationsDir);
+      } catch {
+        console.warn(`  ⚠️  Directory not found: ${applicationsDir}`);
+        return [];
       }
-    }).filter(Boolean); // Remove nulls
 
-    // Extract application paths from file paths
-    // Format: src/applications/{app-name}/...
+      // Find all .js/.jsx files
+      const allFiles = await findJSFiles(applicationsDir);
+
+      // Filter to config and pages files
+      filePaths = allFiles.filter(p =>
+        p.includes('/pages/') || p.includes('/config/')
+      );
+
+      console.log(`  Found ${filePaths.length} config/page files`);
+    } else {
+      // Use GitHub API
+      console.log(`  Using GitHub API for ${VETS_WEBSITE_REPO}`);
+
+      const repoInfo = execSync(
+        `gh api repos/${VETS_WEBSITE_REPO} --jq '.default_branch'`,
+        { encoding: 'utf8', timeout: 10000 }
+      ).trim();
+
+      const treeOutput = execSync(
+        `gh api repos/${VETS_WEBSITE_REPO}/git/trees/${repoInfo}?recursive=1 --jq '.tree[] | select(.path | startswith("src/applications/")) | select(.path | endswith(".js") or endswith(".jsx")) | select(.path | contains("/pages/") or contains("/config/")) | .path'`,
+        {
+          encoding: 'utf8',
+          maxBuffer: 20 * 1024 * 1024,
+          timeout: 60000
+        }
+      );
+
+      if (!treeOutput.trim()) {
+        console.log(`  No files found in src/applications`);
+        return [];
+      }
+
+      filePaths = treeOutput.trim().split('\n').filter(p => p.trim());
+      console.log(`  Found ${filePaths.length} config/page files`);
+    }
+
     const appPaths = new Set();
+    let checked = 0;
+    let found = 0;
 
-    results.forEach(result => {
-      const match = result.path.match(/src\/applications\/([^\/]+)/);
-      if (match) {
-        appPaths.add(match[1]);
+    for (const filePath of filePaths) {
+      try {
+        checked++;
+        if (checked % 100 === 0) {
+          console.log(`    Progress: ${checked}/${filePaths.length} files checked, ${found} matches found`);
+        }
+
+        let content;
+
+        if (VETS_WEBSITE_PATH) {
+          // Read from local filesystem
+          const fullPath = path.join(VETS_WEBSITE_PATH, 'src/applications', filePath);
+          content = await fs.readFile(fullPath, 'utf8');
+        } else {
+          // Fetch from GitHub API
+          const fileContent = execSync(
+            `gh api repos/${VETS_WEBSITE_REPO}/contents/src/applications/${filePath} --jq '.content'`,
+            { encoding: 'utf8', timeout: 10000, stdio: ['pipe', 'pipe', 'ignore'] }
+          );
+          content = Buffer.from(fileContent.trim(), 'base64').toString('utf8');
+        }
+
+        // First check if it imports from web-component-patterns
+        if (!content.includes('web-component-patterns')) {
+          continue;
+        }
+
+        // Check if this file uses any of this pattern's exports
+        const usesPattern = exportNames.some(exportName => {
+          // Match export name with any combination of suffixes
+          // e.g., ssnOrVaFileNumber, ssnOrVaFileNumberUI, ssnOrVaFileNumberNoHintUI, etc.
+          const regex = new RegExp(`\\b${exportName}(NoHint)?(UI|Schema|Pattern)?\\b`, 'i');
+          return regex.test(content);
+        });
+
+        if (usesPattern) {
+          found++;
+          // Extract app name from path
+          const match = filePath.match(/^([^\/]+)/);
+          if (match) {
+            appPaths.add(match[1]);
+          }
+        }
+      } catch (error) {
+        // Skip files we can't read
+        if (!error.message.includes('404') && !error.message.includes('ENOENT')) {
+          console.warn(`⚠️  Could not read ${filePath}: ${error.message}`);
+        }
       }
-    });
+    }
 
-    return Array.from(appPaths);
+    const apps = Array.from(appPaths);
+    console.log(`  ✓ Found ${apps.length} apps using this pattern (checked ${checked} files)`);
+    return apps;
+
   } catch (error) {
-    // GitHub code search may fail due to rate limits or missing results
     console.warn(`Could not analyze imports for ${patternCodeFile}: ${error.message}`);
     return [];
   }
@@ -480,6 +596,12 @@ async function saveMarkdownReport(data) {
  */
 async function main() {
   console.log('=== VA.gov Pattern Adherence Analysis ===\n');
+
+  if (VETS_WEBSITE_PATH) {
+    console.log(`Using local vets-website repository: ${VETS_WEBSITE_PATH}\n`);
+  } else {
+    console.log(`Using GitHub API for vets-website analysis\n`);
+  }
 
   try {
     const data = await buildPatternAdherence();
