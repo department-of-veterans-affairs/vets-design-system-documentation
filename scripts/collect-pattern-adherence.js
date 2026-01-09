@@ -18,7 +18,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, execFileSync } = require('child_process');
 
 // Parse command-line arguments
 const args = process.argv.slice(2);
@@ -431,10 +431,17 @@ async function findImporters(patternCodeFile) {
           content = await fs.readFile(fullPath, 'utf8');
         } else {
           // Fetch from GitHub API
-          const fileContent = execSync(
-            `gh api repos/${VETS_WEBSITE_REPO}/contents/src/applications/${filePath} --jq '.content'`,
-            { encoding: 'utf8', timeout: 10000, stdio: ['pipe', 'pipe', 'ignore'] }
-          );
+          // Use execFileSync to avoid shell interpretation of filePath
+          const fileContent = execFileSync('gh', [
+            'api',
+            `repos/${VETS_WEBSITE_REPO}/contents/src/applications/${filePath}`,
+            '--jq',
+            '.content'
+          ], {
+            encoding: 'utf8',
+            timeout: 10000,
+            stdio: ['pipe', 'pipe', 'ignore']
+          });
           content = Buffer.from(fileContent.trim(), 'base64').toString('utf8');
         }
 
