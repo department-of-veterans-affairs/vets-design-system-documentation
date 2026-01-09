@@ -36,7 +36,8 @@ Variations in messaging depend on these factors:
   <va-table-row>
     <span>Entire site isn't accessible (site-wide scheduled downtime)</span>
     <span><b>Site maintenance</b></span>
-    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br/><b>Date:</b> Month Day, Year<br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
+    <span>We’re working on VA.gov right now. If you have trouble signing in or using tools, check back after we’re finished. Thank you for your patience.<br><br>
+      <b>Date:</b> Month Day, Year<br><b>Start/End time:</b> 0:00 a.m. to 0:00 a.m. ET</span>
     <span>N/A</span>
     <span><a href="{{ site.baseurl }}/foundation/typography">Plain text</a></span>
     <span>N/A</span>
