@@ -14,8 +14,8 @@ uses_mermaid: true
 ## Usage
 
 This pattern helps us figure out 2 important things for VA forms:
-1.  Who is filling out the form (the person typing or writing)
-2.  Who the form is for (the person who will get the benefits)
+1. Who is filling out the form (the person typing or writing)
+2. Who the form is for (the person who will get the benefits)
 
 Sometimes they’re the same person. Sometimes they’re different.
 
@@ -90,21 +90,21 @@ These terms are also defined in the [Word list](https://design.va.gov/content-st
 
 **Claimant**: The person who is applying for benefits or has a claim. This could be a Veteran, spouse, child, parent, or someone else.
 
-**Form submitter**: The person actually filling out and submitting the form. (Don't use this term when talking to Veterans – it's just for internal use.)
+**Form submitter**: The person actually filling out and submitting the form. (Don't use this term when talking to Veterans – it's just for internal use. In the pattern, we refer to this person as "you".)
 
 **Third-party representative**: Someone who has official permission to help a Veteran with VA paperwork. This includes:
 
-* **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative officially approved to help Veterans. Accredited representatives need to file VA Form 21-22 or 21-22a before they can submit a Veteran's paperwork.  A person can only have 1 accredited representative at a time.
+* **Accredited representative**: A lawyer, claims agent, or Veterans Service Organization (VSO) representative officially approved to help Veterans. Accredited representatives need to file VA Form 21-22 or 21-22a before they can submit a Veteran's paperwork. A person can only have 1 accredited representative at a time.
 
-* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. Alternate signers need to file VA Form 21-0972 before they can sign for another person.  A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives.  They need official VA approval.)
-  
+* **Alternate signer**: A person certified to sign certain forms for someone who can't sign for themselves. They might be a court-appointed guardian, someone with power of attorney, or a caregiver. Alternate signers need to file VA Form 21-0972 before they can sign for another person. A person can only have 1 alternate signer at a time. (Family members aren't automatically representatives. They need official VA approval.)
+
 **Sponsor**: The Veteran whose military service earned the benefits that someone else (like a spouse or child) is now applying for. If you include this term in your form, include a plain language definition at first mention.
 
 ## How to design and build
 
 ### Question 1a: For signed-in Veterans
 
-* If a Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran.  Who are you filling out this form for?"
+* If a Veteran is already signed into VA.gov, we ask "Our records show that you're a Veteran. Who are you filling out this form for?"
 
 They can choose from these options:
 * I’m filling out this form for myself
