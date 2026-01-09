@@ -17,6 +17,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const PATTERNS_DIR = path.join(__dirname, '../src/_patterns');
+const PRODUCT_DIRECTORY_REPO = 'department-of-veterans-affairs/product-directory';
 
 /**
  * Parse pattern metadata from markdown file
@@ -166,6 +167,49 @@ async function getAllPatterns() {
 }
 
 /**
+ * Fetch product directory JSON from GitHub
+ */
+async function fetchProductDirectory() {
+  console.log('Fetching product directory...');
+
+  try {
+    const output = execSync(
+      `gh api repos/${PRODUCT_DIRECTORY_REPO}/contents/product-directory.json --jq '.content'`,
+      { encoding: 'utf8' }
+    );
+
+    // Decode base64 content
+    const jsonContent = Buffer.from(output.trim(), 'base64').toString('utf8');
+    return JSON.parse(jsonContent);
+  } catch (error) {
+    console.error('Failed to fetch product directory:', error.message);
+    throw error;
+  }
+}
+
+/**
+ * Filter products to only include forms
+ */
+async function getFormProducts() {
+  const products = await fetchProductDirectory();
+
+  const forms = products.filter(product =>
+    product.analytics_category === 'Forms' ||
+    product.platform_console_category === 'Forms'
+  );
+
+  console.log(`Found ${forms.length} form products in product directory`);
+
+  return forms.map(form => ({
+    product_id: form.product_id,
+    product_name: form.product_name,
+    path_to_code: form.path_to_code,
+    analytics_category: form.analytics_category,
+    github_product_label: form.github_product_label
+  }));
+}
+
+/**
  * Main execution
  */
 async function main() {
@@ -209,6 +253,9 @@ if (require.main === module) {
 
 module.exports = {
   parsePatternMetadata,
+  parseFrontmatter: parsePatternMetadata, // Alias for consistency
   getAllPatterns,
-  findPatternFiles
+  findPatternFiles,
+  fetchProductDirectory,
+  getFormProducts
 };

@@ -29,10 +29,23 @@ async function testPatternDiscovery() {
   console.log(`✅ Pattern discovery test passed - found ${patterns.length} patterns`);
 }
 
+async function testProductDirectory() {
+  const { getFormProducts } = require('./collect-pattern-adherence.js');
+  const forms = await getFormProducts();
+
+  assert.ok(forms.length > 0, 'Should find form products');
+  const cgForm = forms.find(f => f.product_name.includes('10-10CG'));
+  assert.ok(cgForm, 'Should find 10-10CG form');
+  assert.strictEqual(cgForm.analytics_category, 'Forms');
+
+  console.log(`✅ Product directory test passed - found ${forms.length} forms`);
+}
+
 // Update main test runner
 async function runAllTests() {
   await testPatternParser();
   await testPatternDiscovery();
+  await testProductDirectory();
 }
 
 runAllTests().catch(console.error);
