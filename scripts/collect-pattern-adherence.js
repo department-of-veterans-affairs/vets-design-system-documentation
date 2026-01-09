@@ -285,6 +285,12 @@ async function findImporters(patternCodeFile) {
 
 /**
  * Build mapping of patterns to forms that use them
+ * @returns {Promise<Object>} Object containing:
+ *   - generated_at: ISO timestamp
+ *   - total_patterns: Number of codified patterns analyzed
+ *   - total_forms: Total number of forms in product directory
+ *   - patterns: Array of pattern adherence data
+ *   - forms: Array of all form products
  */
 async function buildPatternAdherence() {
   const patterns = await getAllPatterns();
@@ -295,13 +301,14 @@ async function buildPatternAdherence() {
 
   console.log(`\nAnalyzing adherence for ${codifiedPatterns.length} codified patterns...`);
 
-  const adherenceData = [];
-
-  for (const pattern of codifiedPatterns) {
+  // Process all patterns in parallel
+  const adherenceDataPromises = codifiedPatterns.map(async (pattern) => {
     console.log(`\nProcessing: ${pattern.title}`);
 
     // Find applications that import this pattern
-    const importingApps = await findImporters(pattern.codeFile);
+    const importingApps = pattern.codeFile
+      ? await findImporters(pattern.codeFile)
+      : [];
 
     // Cross-reference with form products
     const matchingForms = forms.filter(form => {
@@ -312,7 +319,9 @@ async function buildPatternAdherence() {
       return importingApps.includes(appName);
     });
 
-    adherenceData.push({
+    console.log(`  ✓ ${matchingForms.length} forms use this pattern`);
+
+    return {
       pattern_name: pattern.title,
       pattern_file: pattern.filename,
       pattern_permalink: pattern.permalink,
@@ -324,11 +333,13 @@ async function buildPatternAdherence() {
       })),
       usage_count: matchingForms.length,
       total_forms: forms.length,
-      compliance_percentage: Math.round((matchingForms.length / forms.length) * 100)
-    });
+      compliance_percentage: forms.length > 0
+        ? Math.round((matchingForms.length / forms.length) * 100)
+        : 0
+    };
+  });
 
-    console.log(`  ✓ ${matchingForms.length} forms use this pattern`);
-  }
+  const adherenceData = await Promise.all(adherenceDataPromises);
 
   return {
     generated_at: new Date().toISOString(),
