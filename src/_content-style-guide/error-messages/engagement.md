@@ -34,7 +34,12 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Save your work in progress (unauthenticated), sign in not required</span>
         <span><b>Sign in with a verified account</b></span>
-        <span>Here’s how signing in with an identity-verified account helps you:<br>- We can fill in some of your information for you to save you time.<br>- You can save your work in progress. You’ll have 60 days from when you start or make changes to submit your [application, claim, form].<br>**Don’t yet have a verified account?** Create an **ID.me** or **Login.gov** account. We’ll help you verify your identity for your account now.<br>**Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we’ll help you do that now.<br>**Note:** You can sign in after you start filling out your [application, claim, form]. But you’ll lose any information you already filled in.</span>
+        <span>Here’s how signing in with an identity-verified account helps you:<br><br>
+            • We can fill in some of your information for you to save you time.<br>
+            • You can save your work in progress. You’ll have 60 days from when you start or make changes to submit your [application, claim, form].<br><br>
+            **Don’t yet have a verified account?** Create an **ID.me** or **Login.gov** account. We’ll help you verify your identity for your account now.<br><br>
+            **Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we’ll help you do that now.<br><br>
+            **Note:** You can sign in after you start filling out your [application, claim, form]. But you’ll lose any information you already filled in.</span>
         <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
@@ -43,7 +48,9 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Save your work in progress (unauthenticated), sign in required</span>
         <span><b>Sign in with a verified account</b></span>
-        <span>You’ll need to sign in with an identity-verified account through 1 of our account providers. Identity verification helps us protect all Veterans’ information and prevent scammers from stealing your benefits.<br>**Don’t yet have a verified account?** Create an **ID.me** or **Login.gov** account. We’ll help you verify your identity for your account now.<br>**Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we’ll help you do that now.</span>
+        <span>You’ll need to sign in with an identity-verified account through 1 of our account providers. Identity verification helps us protect all Veterans’ information and prevent scammers from stealing your benefits.<br><br>
+            **Don’t yet have a verified account?** Create an **ID.me** or **Login.gov** account. We’ll help you verify your identity for your account now.<br><br>
+            **Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we’ll help you do that now.</span>
         <span>Sign in or create an account (primary button); Learn about creating an account (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
@@ -52,7 +59,10 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Optional sign in without prefill</span>
         <span><b>Sign in with a verified account</b></span>
-        <span>When you sign in with an identity-verified account, you can save your work in progress. You’ll have 60 days from when you start or make changes to submit your [application, claim, form].<br>**Don’t yet have a verified account?** Create an **ID.me** or **Login.gov** account. We’ll help you verify your identity for your account now.<br>**Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we’ll help you do that now.<br>**Note:** You can sign in after you start filling out your [application, claim, form]. But you’ll lose any information you already filled in.</span>
+        <span>When you sign in with an identity-verified account, you can save your work in progress. You’ll have 60 days from when you start or make changes to submit your [application, claim, form].<br><br>
+            **Don’t yet have a verified account?** Create an **ID.me** or **Login.gov** account. We’ll help you verify your identity for your account now.<br><br>
+            **Not sure if your account is verified?** Sign in here. If you still need to verify your identity, we’ll help you do that now.<br><br>
+            **Note:** You can sign in after you start filling out your [application, claim, form]. But you’ll lose any information you already filled in.</span>
         <span>Sign in or create an account (primary button); Start your [application, claim, form] without signing in (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
@@ -61,7 +71,8 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Prefill: Intro variation (authenticated)</span>
         <span><b>We prefilled some of your information</b></span>
-        <span>Since you’re signed in, we prefilled part of your [application, claim, form] based on your VA profile. You can also save your [application, claim, form] in progress and come back later to finish filling it out.<br>**Note:** You’ll have 60 days from when you start or make updates to your [application, claim, form] to come back and finish it.</span>
+        <span>Since you’re signed in, we prefilled part of your [application, claim, form] based on your VA profile. You can also save your [application, claim, form] in progress and come back later to finish filling it out.<br><br>
+            **Note:** You’ll have 60 days from when you start or make updates to your [application, claim, form] to come back and finish it.</span>
         <span>N/A</span>
         <span>[Alert](https://design.va.gov/components/alert#informational-alert)</span>
         <span>Informational</span>
@@ -88,7 +99,8 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Verify your identity with **ID.me** or **Login.gov**</span>
         <span>**Verify your identity**</span>
-        <span>We need you to verify your identity for your [**ID.me**, **Login.gov**] account. This step helps us protect all Veterans’ information and prevent scammers from stealing your benefits.<br>This one-time process often takes about 10 minutes. You’ll need to provide certain personal information and identification.</span>
+        <span>We need you to verify your identity for your [**ID.me**, **Login.gov**] account. This step helps us protect all Veterans’ information and prevent scammers from stealing your benefits.<br><br>
+            This one-time process often takes about 10 minutes. You’ll need to provide certain personal information and identification.</span>
         <span>Verify with [**ID.me**, **Login.gov**] (brand asset button)</span>
         <span>[Alert](https://design.va.gov/components/alert#warning-alert)</span>
         <span>Warning</span>
@@ -97,7 +109,9 @@ intro-text: Engagement messages recommend that the person enter or update data i
     <va-table-row>
         <span>Sign in with a different account</span>
         <span>**You need to sign in with a different account**</span>
-        <span>We need you to sign in with an identity-verified account. This helps us protect all Veterans’ information and prevent scammers from stealing your benefits. You have 2 options: a verified **ID.me** or a verified **Login.gov** account.<br>**If you already have an ID.me or Login.gov account**, sign in with that account. If you still need to verify your identity for your account, we’ll help you do that now.<br>**If you don’t have an ID.me or Login.gov account**, create one now. We’ll help you verify your identity.</span>
+        <span>We need you to sign in with an identity-verified account. This helps us protect all Veterans’ information and prevent scammers from stealing your benefits. You have 2 options: a verified **ID.me** or a verified **Login.gov** account.<br><br>
+            **If you already have an ID.me or Login.gov account**, sign in with that account. If you still need to verify your identity for your account, we’ll help you do that now.<br><br>
+            **If you don’t have an ID.me or Login.gov account**, create one now. We’ll help you verify your identity.</span>
         <span>Sign in with **ID.me** (brand asset button 1); Sign in with **Login.gov** (brand asset button 2); Learn about creating an account (link)</span>
         <span>[Alert](https://design.va.gov/components/alert#warning-alert)</span>
         <span>Warning</span>
