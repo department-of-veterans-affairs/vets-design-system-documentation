@@ -284,6 +284,62 @@ async function findImporters(patternCodeFile) {
 }
 
 /**
+ * Build mapping of patterns to forms that use them
+ */
+async function buildPatternAdherence() {
+  const patterns = await getAllPatterns();
+  const forms = await getFormProducts();
+
+  // Only process patterns with code-link
+  const codifiedPatterns = patterns.filter(p => p.hasCodeLink);
+
+  console.log(`\nAnalyzing adherence for ${codifiedPatterns.length} codified patterns...`);
+
+  const adherenceData = [];
+
+  for (const pattern of codifiedPatterns) {
+    console.log(`\nProcessing: ${pattern.title}`);
+
+    // Find applications that import this pattern
+    const importingApps = await findImporters(pattern.codeFile);
+
+    // Cross-reference with form products
+    const matchingForms = forms.filter(form => {
+      if (!form.path_to_code) return false;
+
+      // Extract app name from path_to_code (e.g., "src/applications/caregivers" -> "caregivers")
+      const appName = form.path_to_code.replace(/^src\/applications\//, '').split('/')[0];
+      return importingApps.includes(appName);
+    });
+
+    adherenceData.push({
+      pattern_name: pattern.title,
+      pattern_file: pattern.filename,
+      pattern_permalink: pattern.permalink,
+      code_file: pattern.codeFile,
+      forms_using_pattern: matchingForms.map(f => ({
+        product_name: f.product_name,
+        path_to_code: f.path_to_code,
+        github_label: f.github_product_label
+      })),
+      usage_count: matchingForms.length,
+      total_forms: forms.length,
+      compliance_percentage: Math.round((matchingForms.length / forms.length) * 100)
+    });
+
+    console.log(`  ✓ ${matchingForms.length} forms use this pattern`);
+  }
+
+  return {
+    generated_at: new Date().toISOString(),
+    total_patterns: codifiedPatterns.length,
+    total_forms: forms.length,
+    patterns: adherenceData,
+    forms: forms
+  };
+}
+
+/**
  * Main execution
  */
 async function main() {
@@ -332,5 +388,6 @@ module.exports = {
   findPatternFiles,
   fetchProductDirectory,
   getFormProducts,
-  findImporters
+  findImporters,
+  buildPatternAdherence
 };
