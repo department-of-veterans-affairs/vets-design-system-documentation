@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-09T19:21:50.471Z",
+  "generated_at": "2026-01-09T21:07:52.509Z",
   "total_patterns": 9,
   "total_forms": 55,
   "patterns": [
@@ -10,6 +10,20 @@
       "code_file": "src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx",
       "forms_using_pattern": [
         {
+          "product_name": "10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers",
+          "path_to_code": "src/applications/caregivers",
+          "github_label": "1010-cg"
+        },
+        {
+          "product_name": "10-10EZ - Apply for VA health care",
+          "path_to_code": "src/applications/hca",
+          "github_label": "1010-ez"
+        },
+        {
+          "product_name": "10-10EZR - Health Benefits Update Form",
+          "path_to_code": "src/applications/ezr"
+        },
+        {
           "product_name": "20-10206 - Privacy Act",
           "path_to_code": "src/applications/simple-forms/20-10206"
         },
@@ -17,6 +31,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
         },
         {
           "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
@@ -35,6 +53,10 @@
           "path_to_code": "src/applications/simple-forms/21-10210"
         },
         {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
           "product_name": "21-4138 - Statement in support of claim",
           "path_to_code": "src/applications/simple-forms/21-4138",
           "github_label": "21-4138"
@@ -47,6 +69,21 @@
           "product_name": "21P-0847 - Request to be substitute claimant",
           "path_to_code": "src/applications/simple-forms/21P-0847",
           "github_label": "21P-0847"
+        },
+        {
+          "product_name": "21P-527EZ - Apply for Veterans Pension benefits",
+          "path_to_code": "src/applications/pensions",
+          "github_label": "pension"
+        },
+        {
+          "product_name": "22-1990 - Education Benefits Application",
+          "path_to_code": "src/applications/edu-benefits/1990",
+          "github_label": null
+        },
+        {
+          "product_name": "22-1995 - Education Change of Program or Training Application",
+          "path_to_code": "src/applications/edu-benefits/1995",
+          "github_label": null
         },
         {
           "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
@@ -55,11 +92,26 @@
         {
           "product_name": "40-0247 Presidential Memorial Certificate",
           "path_to_code": "src/applications/simple-forms/40-0247"
+        },
+        {
+          "product_name": "Benefits Delivery at Discharge",
+          "path_to_code": "src/applications/disability-benefits/all-claims",
+          "github_label": "BDD"
+        },
+        {
+          "product_name": "Dependency Claims (21-686c and 21-674)",
+          "path_to_code": "src/applications/disability-benefits/686c-674",
+          "github_label": "686 or 674"
+        },
+        {
+          "product_name": "Supply Reordering Tool",
+          "path_to_code": "src/applications/health-care-supply-reordering",
+          "github_label": "mDOT"
         }
       ],
-      "usage_count": 11,
+      "usage_count": 22,
       "total_forms": 55,
-      "compliance_percentage": 20
+      "compliance_percentage": 40
     },
     {
       "pattern_name": "Dates",
@@ -68,6 +120,20 @@
       "code_file": "src/platform/forms-system/src/js/web-component-patterns/datePatterns.jsx",
       "forms_using_pattern": [
         {
+          "product_name": "10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers",
+          "path_to_code": "src/applications/caregivers",
+          "github_label": "1010-cg"
+        },
+        {
+          "product_name": "10-10EZ - Apply for VA health care",
+          "path_to_code": "src/applications/hca",
+          "github_label": "1010-ez"
+        },
+        {
+          "product_name": "10-10EZR - Health Benefits Update Form",
+          "path_to_code": "src/applications/ezr"
+        },
+        {
           "product_name": "20-10206 - Privacy Act",
           "path_to_code": "src/applications/simple-forms/20-10206"
         },
@@ -75,6 +141,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
         },
         {
           "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
@@ -93,6 +163,10 @@
           "path_to_code": "src/applications/simple-forms/21-10210"
         },
         {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
           "product_name": "21-4138 - Statement in support of claim",
           "path_to_code": "src/applications/simple-forms/21-4138",
           "github_label": "21-4138"
@@ -105,6 +179,11 @@
           "product_name": "21P-0847 - Request to be substitute claimant",
           "path_to_code": "src/applications/simple-forms/21P-0847",
           "github_label": "21P-0847"
+        },
+        {
+          "product_name": "21P-527EZ - Apply for Veterans Pension benefits",
+          "path_to_code": "src/applications/pensions",
+          "github_label": "pension"
         },
         {
           "product_name": "22-1990 - Education Benefits Application",
@@ -135,9 +214,9 @@
           "github_label": "686 or 674"
         }
       ],
-      "usage_count": 15,
+      "usage_count": 21,
       "total_forms": 55,
-      "compliance_percentage": 27
+      "compliance_percentage": 38
     },
     {
       "pattern_name": "Email address",
@@ -145,6 +224,20 @@
       "pattern_permalink": "/patterns/ask-users-for/email-address",
       "code_file": "src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx",
       "forms_using_pattern": [
+        {
+          "product_name": "10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers",
+          "path_to_code": "src/applications/caregivers",
+          "github_label": "1010-cg"
+        },
+        {
+          "product_name": "10-10EZ - Apply for VA health care",
+          "path_to_code": "src/applications/hca",
+          "github_label": "1010-ez"
+        },
+        {
+          "product_name": "10-10EZR - Health Benefits Update Form",
+          "path_to_code": "src/applications/ezr"
+        },
         {
           "product_name": "10182 - Request a Board Appeal",
           "path_to_code": "src/applications/appeals/10182",
@@ -156,22 +249,6 @@
           "github_label": "Decision-Reviews-Team"
         },
         {
-          "product_name": "Higher Level Review",
-          "path_to_code": "src/applications/appeals/996",
-          "github_label": "HLR"
-        }
-      ],
-      "usage_count": 3,
-      "total_forms": 55,
-      "compliance_percentage": 5
-    },
-    {
-      "pattern_name": "Names",
-      "pattern_file": "ask-users-for/names.md",
-      "pattern_permalink": "/patterns/ask-users-for/names",
-      "code_file": "src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js",
-      "forms_using_pattern": [
-        {
           "product_name": "20-10206 - Privacy Act",
           "path_to_code": "src/applications/simple-forms/20-10206"
         },
@@ -179,6 +256,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
         },
         {
           "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
@@ -197,6 +278,10 @@
           "path_to_code": "src/applications/simple-forms/21-10210"
         },
         {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
           "product_name": "21-4138 - Statement in support of claim",
           "path_to_code": "src/applications/simple-forms/21-4138",
           "github_label": "21-4138"
@@ -211,6 +296,126 @@
           "github_label": "21P-0847"
         },
         {
+          "product_name": "21P-527EZ - Apply for Veterans Pension benefits",
+          "path_to_code": "src/applications/pensions",
+          "github_label": "pension"
+        },
+        {
+          "product_name": "22-1990 - Education Benefits Application",
+          "path_to_code": "src/applications/edu-benefits/1990",
+          "github_label": null
+        },
+        {
+          "product_name": "22-1995 - Education Change of Program or Training Application",
+          "path_to_code": "src/applications/edu-benefits/1995",
+          "github_label": null
+        },
+        {
+          "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
+          "path_to_code": "src/applications/simple-forms/26-4555"
+        },
+        {
+          "product_name": "40-0247 Presidential Memorial Certificate",
+          "path_to_code": "src/applications/simple-forms/40-0247"
+        },
+        {
+          "product_name": "Higher Level Review",
+          "path_to_code": "src/applications/appeals/996",
+          "github_label": "HLR"
+        },
+        {
+          "product_name": "Supply Reordering Tool",
+          "path_to_code": "src/applications/health-care-supply-reordering",
+          "github_label": "mDOT"
+        }
+      ],
+      "usage_count": 23,
+      "total_forms": 55,
+      "compliance_percentage": 42
+    },
+    {
+      "pattern_name": "Names",
+      "pattern_file": "ask-users-for/names.md",
+      "pattern_permalink": "/patterns/ask-users-for/names",
+      "code_file": "src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js",
+      "forms_using_pattern": [
+        {
+          "product_name": "10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers",
+          "path_to_code": "src/applications/caregivers",
+          "github_label": "1010-cg"
+        },
+        {
+          "product_name": "10-10EZ - Apply for VA health care",
+          "path_to_code": "src/applications/hca",
+          "github_label": "1010-ez"
+        },
+        {
+          "product_name": "10-10EZR - Health Benefits Update Form",
+          "path_to_code": "src/applications/ezr"
+        },
+        {
+          "product_name": "20-10206 - Privacy Act",
+          "path_to_code": "src/applications/simple-forms/20-10206"
+        },
+        {
+          "product_name": "20-10207 - Request for priority processing",
+          "path_to_code": "src/applications/simple-forms/20-10207",
+          "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
+        },
+        {
+          "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
+          "path_to_code": "src/applications/simple-forms/21-0845"
+        },
+        {
+          "product_name": "21-0966 - Intent to file a claim",
+          "path_to_code": "src/applications/simple-forms/21-0966"
+        },
+        {
+          "product_name": "21-0972 - Sign VA claim forms as an alternate signer",
+          "path_to_code": "src/applications/simple-forms/21-0972"
+        },
+        {
+          "product_name": "21-10210 - Lay or Witness Statement",
+          "path_to_code": "src/applications/simple-forms/21-10210"
+        },
+        {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
+          "product_name": "21-4138 - Statement in support of claim",
+          "path_to_code": "src/applications/simple-forms/21-4138",
+          "github_label": "21-4138"
+        },
+        {
+          "product_name": "21-4142 - Authorization to Disclose Information to the VA",
+          "path_to_code": "src/applications/simple-forms/21-4142"
+        },
+        {
+          "product_name": "21P-0847 - Request to be substitute claimant",
+          "path_to_code": "src/applications/simple-forms/21P-0847",
+          "github_label": "21P-0847"
+        },
+        {
+          "product_name": "21P-527EZ - Apply for Veterans Pension benefits",
+          "path_to_code": "src/applications/pensions",
+          "github_label": "pension"
+        },
+        {
+          "product_name": "22-1990 - Education Benefits Application",
+          "path_to_code": "src/applications/edu-benefits/1990",
+          "github_label": null
+        },
+        {
+          "product_name": "22-1995 - Education Change of Program or Training Application",
+          "path_to_code": "src/applications/edu-benefits/1995",
+          "github_label": null
+        },
+        {
           "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
           "path_to_code": "src/applications/simple-forms/26-4555"
         },
@@ -219,19 +424,119 @@
           "path_to_code": "src/applications/simple-forms/40-0247"
         }
       ],
-      "usage_count": 11,
+      "usage_count": 19,
       "total_forms": 55,
-      "compliance_percentage": 20
+      "compliance_percentage": 35
     },
     {
       "pattern_name": "Phone numbers",
       "pattern_file": "ask-users-for/phone-numbers.md",
       "pattern_permalink": "/patterns/ask-users-for/phone-numbers",
       "code_file": "src/platform/forms-system/src/js/web-component-patterns/phonePatterns.jsx",
-      "forms_using_pattern": [],
-      "usage_count": 0,
+      "forms_using_pattern": [
+        {
+          "product_name": "10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers",
+          "path_to_code": "src/applications/caregivers",
+          "github_label": "1010-cg"
+        },
+        {
+          "product_name": "10-10EZ - Apply for VA health care",
+          "path_to_code": "src/applications/hca",
+          "github_label": "1010-ez"
+        },
+        {
+          "product_name": "10-10EZR - Health Benefits Update Form",
+          "path_to_code": "src/applications/ezr"
+        },
+        {
+          "product_name": "10182 - Request a Board Appeal",
+          "path_to_code": "src/applications/appeals/10182",
+          "github_label": "NOD"
+        },
+        {
+          "product_name": "20-0995 - Supplemental Claim Form",
+          "path_to_code": "src/applications/appeals/995",
+          "github_label": "Decision-Reviews-Team"
+        },
+        {
+          "product_name": "20-10206 - Privacy Act",
+          "path_to_code": "src/applications/simple-forms/20-10206"
+        },
+        {
+          "product_name": "20-10207 - Request for priority processing",
+          "path_to_code": "src/applications/simple-forms/20-10207",
+          "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
+        },
+        {
+          "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
+          "path_to_code": "src/applications/simple-forms/21-0845"
+        },
+        {
+          "product_name": "21-0966 - Intent to file a claim",
+          "path_to_code": "src/applications/simple-forms/21-0966"
+        },
+        {
+          "product_name": "21-0972 - Sign VA claim forms as an alternate signer",
+          "path_to_code": "src/applications/simple-forms/21-0972"
+        },
+        {
+          "product_name": "21-10210 - Lay or Witness Statement",
+          "path_to_code": "src/applications/simple-forms/21-10210"
+        },
+        {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
+          "product_name": "21-4138 - Statement in support of claim",
+          "path_to_code": "src/applications/simple-forms/21-4138",
+          "github_label": "21-4138"
+        },
+        {
+          "product_name": "21-4142 - Authorization to Disclose Information to the VA",
+          "path_to_code": "src/applications/simple-forms/21-4142"
+        },
+        {
+          "product_name": "21P-0847 - Request to be substitute claimant",
+          "path_to_code": "src/applications/simple-forms/21P-0847",
+          "github_label": "21P-0847"
+        },
+        {
+          "product_name": "21P-527EZ - Apply for Veterans Pension benefits",
+          "path_to_code": "src/applications/pensions",
+          "github_label": "pension"
+        },
+        {
+          "product_name": "22-1990 - Education Benefits Application",
+          "path_to_code": "src/applications/edu-benefits/1990",
+          "github_label": null
+        },
+        {
+          "product_name": "22-1995 - Education Change of Program or Training Application",
+          "path_to_code": "src/applications/edu-benefits/1995",
+          "github_label": null
+        },
+        {
+          "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
+          "path_to_code": "src/applications/simple-forms/26-4555"
+        },
+        {
+          "product_name": "40-0247 Presidential Memorial Certificate",
+          "path_to_code": "src/applications/simple-forms/40-0247"
+        },
+        {
+          "product_name": "Higher Level Review",
+          "path_to_code": "src/applications/appeals/996",
+          "github_label": "HLR"
+        }
+      ],
+      "usage_count": 22,
       "total_forms": 55,
-      "compliance_percentage": 0
+      "compliance_percentage": 40
     },
     {
       "pattern_name": "Relationship to Veteran",
@@ -296,21 +601,10 @@
       "pattern_file": "ask-users-for/signature.md",
       "pattern_permalink": "/patterns/ask-users-for/signature",
       "code_file": "src/platform/forms-system/src/js/components/FormSignature.jsx",
-      "forms_using_pattern": [
-        {
-          "product_name": "22-1990 - Education Benefits Application",
-          "path_to_code": "src/applications/edu-benefits/1990",
-          "github_label": null
-        },
-        {
-          "product_name": "22-1995 - Education Change of Program or Training Application",
-          "path_to_code": "src/applications/edu-benefits/1995",
-          "github_label": null
-        }
-      ],
-      "usage_count": 2,
+      "forms_using_pattern": [],
+      "usage_count": 0,
       "total_forms": 55,
-      "compliance_percentage": 4
+      "compliance_percentage": 0
     },
     {
       "pattern_name": "Social security or VA file number",
@@ -319,6 +613,72 @@
       "code_file": "src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx",
       "forms_using_pattern": [
         {
+          "product_name": "10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers",
+          "path_to_code": "src/applications/caregivers",
+          "github_label": "1010-cg"
+        },
+        {
+          "product_name": "10-10EZ - Apply for VA health care",
+          "path_to_code": "src/applications/hca",
+          "github_label": "1010-ez"
+        },
+        {
+          "product_name": "10-10EZR - Health Benefits Update Form",
+          "path_to_code": "src/applications/ezr"
+        },
+        {
+          "product_name": "20-10206 - Privacy Act",
+          "path_to_code": "src/applications/simple-forms/20-10206"
+        },
+        {
+          "product_name": "20-10207 - Request for priority processing",
+          "path_to_code": "src/applications/simple-forms/20-10207",
+          "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
+        },
+        {
+          "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
+          "path_to_code": "src/applications/simple-forms/21-0845"
+        },
+        {
+          "product_name": "21-0966 - Intent to file a claim",
+          "path_to_code": "src/applications/simple-forms/21-0966"
+        },
+        {
+          "product_name": "21-0972 - Sign VA claim forms as an alternate signer",
+          "path_to_code": "src/applications/simple-forms/21-0972"
+        },
+        {
+          "product_name": "21-10210 - Lay or Witness Statement",
+          "path_to_code": "src/applications/simple-forms/21-10210"
+        },
+        {
+          "product_name": "21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance",
+          "path_to_code": "src/applications/benefits-optimization-aquia/21-2680-house-bound-status"
+        },
+        {
+          "product_name": "21-4138 - Statement in support of claim",
+          "path_to_code": "src/applications/simple-forms/21-4138",
+          "github_label": "21-4138"
+        },
+        {
+          "product_name": "21-4142 - Authorization to Disclose Information to the VA",
+          "path_to_code": "src/applications/simple-forms/21-4142"
+        },
+        {
+          "product_name": "21P-0847 - Request to be substitute claimant",
+          "path_to_code": "src/applications/simple-forms/21P-0847",
+          "github_label": "21P-0847"
+        },
+        {
+          "product_name": "21P-527EZ - Apply for Veterans Pension benefits",
+          "path_to_code": "src/applications/pensions",
+          "github_label": "pension"
+        },
+        {
           "product_name": "22-1990 - Education Benefits Application",
           "path_to_code": "src/applications/edu-benefits/1990",
           "github_label": null
@@ -327,11 +687,19 @@
           "product_name": "22-1995 - Education Change of Program or Training Application",
           "path_to_code": "src/applications/edu-benefits/1995",
           "github_label": null
+        },
+        {
+          "product_name": "26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant",
+          "path_to_code": "src/applications/simple-forms/26-4555"
+        },
+        {
+          "product_name": "40-0247 Presidential Memorial Certificate",
+          "path_to_code": "src/applications/simple-forms/40-0247"
         }
       ],
-      "usage_count": 2,
+      "usage_count": 19,
       "total_forms": 55,
-      "compliance_percentage": 4
+      "compliance_percentage": 35
     },
     {
       "pattern_name": "Keep a record of submitted information",
