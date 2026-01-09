@@ -34,7 +34,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>Application, claim, or form save in progress success (exit page)</span>
         <span><b>We saved your in-progress [application, claim, form]</b></span>
-        <span>You'll need to finish the [application, claim, form] and select <b>Submit</b> to apply for [name]. Continue applying now or come back later to finish.</span>
+        <span>You’ll need to finish the [application, claim, form] and select <b>Submit</b> to apply for [name]. Continue applying now or come back later to finish.</span>
         <span>Continue your [application, claim, form]</span>
         <span><a href="{{ site.baseurl }}/components/alert#success-alert">Alert</a></span>
         <span>Success</span>
@@ -42,7 +42,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Application, claim, or form save in progress success (inline)</span>
-        <span><b>We’re saving your [name of what's being saved (ex. new mobile phone number)]</b></span>
+        <span><b>We’re saving your [name of what’s being saved (ex. new mobile phone number)]</b></span>
         <span>We’ll show it here once it’s saved.</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#success-alert">Alert</a></span>
@@ -51,7 +51,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Application, claim, or form save in progress failure (inline)</span>
-        <span><b>Your [application, claim, form] didn't save</b></span>
+        <span><b>Your [application, claim, form] didn’t save</b></span>
         <span>Try again later.</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
@@ -61,7 +61,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>Application, claim, or form general error</span>
         <span><b>We need you to start over with this [application, claim, form]</b></span>
-        <span>We're sorry. Something's not working right. Try again later.</span>
+        <span>We’re sorry. Something’s not working right. Try again later.</span>
         <span>Start over</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
         <span>Error</span>
@@ -70,7 +70,8 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>General error (500), version 1</span>
         <span><b>This [tool, application, form] isn’t working right now</b></span>
-        <span>We’re sorry. There’s a problem with [name]. Refresh this page or try again later.<br>[Add instructions for who to contact or how to remedy the problem.]</span>
+        <span>We’re sorry. There’s a problem with [name]. Refresh this page or try again later.<br><br>
+            [Add instructions for who to contact or how to remedy the problem.]</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
         <span>Error</span>
@@ -88,7 +89,8 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>General error (500), version 3</span>
         <span><b>We can’t access your [type of information] right now</b></span>
-        <span>We're sorry. There's a problem with our system. Check back later.<br>[Add instructions to remedy the problem or when to come back and try again.]</span>
+        <span>We’re sorry. There’s a problem with our system. Check back later.<br><br>
+            [Add instructions to remedy the problem or when to come back and try again.]</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
         <span>Error</span>
@@ -106,16 +108,16 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>Application, claim, form submission failure, can save in progress</span>
         <span><b>Save this [application, claim, form] and try again</b></span>
-        <span>We're sorry. Your [application, claim, form] didn't go through. We're working to fix the problem, but it may take us a while. Save your [application, claim, form] and try again later.</span>
+        <span>We’re sorry. Your [application, claim, form] didn’t go through. We’re working to fix the problem, but it may take us a while. Save your [application, claim, form] and try again later.</span>
         <span>Save your [application, claim, form]</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
         <span>Error</span>
         <span>After page title</span>
     </va-table-row>
     <va-table-row>
-        <span>Application, claim, or form submission failure, can't save in progress</span>
+        <span>Application, claim, or form submission failure, can’t save in progress</span>
         <span><b>Start over with this [application, claim, form]</b></span>
-        <span>We're sorry. Your [application, claim, form] didn't go through and you'll need to start over. We suggest you wait a day while we fix this problem.</span>
+        <span>We’re sorry. Your [application, claim, form] didn’t go through and you’ll need to start over. We suggest you wait a day while we fix this problem.</span>
         <span>N/A</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
         <span>Error</span>
@@ -124,7 +126,8 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>Application, claim, or form submission in progress</span>
         <span><b>[Application, Claim, Form] submission started on [Month Day, Year]</b></span>
-        <span>Your submission is in progress.<br>It can take up to 30 days for us to receive your [application, claim, form]. Your confirmation number is [number].</span>
+        <span>Your submission is in progress.<br><br>
+            It can take up to 30 days for us to receive your [application, claim, form]. Your confirmation number is [number].</span>
         <span>Check the status of your [application, claim, form] on My VA (primary action link)</span>
         <span><a href="{{ site.baseurl }}/components/alert#success-alert">Alert</a></span>
         <span>Success</span>
@@ -133,10 +136,10 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     <va-table-row>
         <span>Application, claim, or form submission in progress, alternate version</span>
         <span><b>Your [application, claim, form] is in progress and was last saved on [Month Day, Year], at [timestamp]</b></span>
-        <span>You can continue applying now or come back later to finish your application.<br>Your application will expire on **[Month Day, Year], at [timestamp]**.
+        <span>You can continue applying now or come back later to finish your application.<br>Your application will expire on <b>[Month Day, Year], at [timestamp]</b>.
 </span>
-        <span>Continue your [application, claim, form] (button);  Start a new application (primary action link)</span>
-        <span>[Alert](https://design.va.gov/components/alert/#informational-alert-aka-default)</span>
+        <span>Continue your [application, claim, form] (primary button);  Start a new application (primary action link)</span>
+        <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
         <span>Informational</span>
         <span>Replace affected component</span>
     </va-table-row>
@@ -150,9 +153,9 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
         <span>N/A</span>
     </va-table-row>
     <va-table-row>
-        <span>Form field entry isn't valid</span>
+        <span>Form field entry isn’t valid</span>
         <span>N/A</span>
-        <span>Enter a valid [address, email address, phone number, city, state, etc.].</span>
+        <span>Enter a valid [address, email address, phone number, city, state, etc.]</span>
         <span>N/A</span>
         <span>Inline</span>
         <span>Error</span>
@@ -169,7 +172,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>File upload failure</span>
-        <span><b>We couldn't upload your file</b></span>
+        <span><b>We couldn’t upload your file</b></span>
         <span>Try again later.</span>
         <span>Dismissible</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
@@ -187,7 +190,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>File download failure</span>
-        <span><b>We couldn't download your file</b></span>
+        <span><b>We couldn’t download your file</b></span>
         <span>Try again later.</span>
         <span>Dismissible</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
@@ -205,7 +208,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Message failed to send</span>
-        <span><b>We couldn't send your message</b></span>
+        <span><b>We couldn’t send your message</b></span>
         <span>Try again later.</span>
         <span>Dismissible</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
@@ -223,7 +226,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Creation failure</span>
-        <span><b>We couldn't create your file</b></span>
+        <span><b>We couldn’t create your file</b></span>
         <span>Try again later.</span>
         <span>Dismissible</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
@@ -241,7 +244,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Deletion failure</span>
-        <span><b>We couldn't delete your file</b></span>
+        <span><b>We couldn’t delete your file</b></span>
         <span>Try again later.</span>
         <span>Dismissible</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
@@ -259,7 +262,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
     </va-table-row>
     <va-table-row>
         <span>Update failure</span>
-        <span><b>We couldn't update your file</b></span>
+        <span><b>We couldn’t update your file</b></span>
         <span>Try again later.</span>
         <span>Dismissible</span>
         <span><a href="{{ site.baseurl }}/components/alert#error-alert">Alert</a></span>
