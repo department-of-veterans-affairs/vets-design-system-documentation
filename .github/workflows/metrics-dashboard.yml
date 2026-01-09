@@ -71,54 +71,109 @@ jobs:
           mkdir -p src/assets/img/metrics
           mkdir -p src/_data/metrics
       
-      - name: Fetch ds-components data from component-library
+      - name: Checkout component-library for CLI tools
+        uses: actions/checkout@v4
+        with:
+          repository: department-of-veterans-affairs/component-library
+          path: component-library
+          token: ${{ secrets.VADS_WORKFLOWS }}
+          fetch-depth: 1
+
+      - name: Checkout vets-website for analysis
+        uses: actions/checkout@v4
+        with:
+          repository: department-of-veterans-affairs/vets-website
+          path: vets-website
+          token: ${{ secrets.VADS_WORKFLOWS }}
+          fetch-depth: 1
+
+      - name: Checkout content-build for analysis
+        uses: actions/checkout@v4
+        with:
+          repository: department-of-veterans-affairs/content-build
+          path: content-build
+          token: ${{ secrets.VADS_WORKFLOWS }}
+          fetch-depth: 1
+
+      - name: Install CLI dependencies
+        working-directory: component-library/packages/design-system-dashboard-cli
+        run: yarn install
+
+      - name: Set consistent date for all operations
         run: |
-          echo "Fetching latest ds-components CSV data..."
-          # Clone component-library repo to temporary directory
-          git clone --depth 1 https://github.com/department-of-veterans-affairs/component-library.git temp-component-library
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          echo "CURRENT_DATE=$CURRENT_DATE" >> $GITHUB_ENV
+          echo "📅 Using consistent date: $CURRENT_DATE"
+
+      - name: Create CLI .env.json for GitHub Actions
+        working-directory: component-library/packages/design-system-dashboard-cli
+        run: |
+          echo '{
+            "repos": {
+              "vets-website": "../../../vets-website/",
+              "content-build": "../../../content-build/"
+            }
+          }' > .env.json
+
+      - name: Generate forms report
+        working-directory: component-library/packages/design-system-dashboard-cli
+        run: |
+          mkdir -p output
+          yarn forms --csv --output "output/form-apps-${CURRENT_DATE}.csv"
+          echo "✅ Forms report generated: form-apps-${CURRENT_DATE}.csv"
+
+      - name: Generate design system components report
+        working-directory: component-library/packages/design-system-dashboard-cli
+        run: |
+          yarn report:csv --output "output/ds-components-${CURRENT_DATE}.csv"
+          echo "✅ DS components report generated: ds-components-${CURRENT_DATE}.csv"
+
+      - name: Generate forms library usage report
+        working-directory: component-library/packages/design-system-dashboard-cli
+        run: |
+          yarn forms-library-usage --list > "output/forms-library-usage-${CURRENT_DATE}.txt"
+          echo "✅ Forms library usage report generated: forms-library-usage-${CURRENT_DATE}.txt"
+
+      - name: Copy reports to metrics directories
+        run: |
+          CLI_OUTPUT="component-library/packages/design-system-dashboard-cli/output"
           
-          # Find the most recent ds-components CSV file by sorting by date in filename
-          OUTPUT_DIR="temp-component-library/packages/design-system-dashboard-cli/output"
+          # Verify all required files exist before copying
+          FORM_APPS_FILE="${CLI_OUTPUT}/form-apps-${CURRENT_DATE}.csv"
+          DS_COMPONENTS_FILE="${CLI_OUTPUT}/ds-components-${CURRENT_DATE}.csv"
+          FORMS_USAGE_FILE="${CLI_OUTPUT}/forms-library-usage-${CURRENT_DATE}.txt"
           
-          if [ ! -d "$OUTPUT_DIR" ]; then
-            echo "❌ Output directory not found: $OUTPUT_DIR"
-            echo "Available directories in packages/design-system-dashboard-cli:"
-            ls -la temp-component-library/packages/design-system-dashboard-cli/ || echo "CLI directory not found"
+          if [ ! -f "$FORM_APPS_FILE" ]; then
+            echo "❌ Error: Forms report not found at $FORM_APPS_FILE"
             exit 1
           fi
           
-          echo "Looking for ds-components files in: $OUTPUT_DIR"
-          ls -la "$OUTPUT_DIR"/ds-components-*.csv || echo "No ds-components CSV files found"
-          
-          # Sort by filename (which contains date YYYY-MM-DD) to get the most recent
-          LATEST_CSV=$(ls -1 "$OUTPUT_DIR"/ds-components-*.csv 2>/dev/null | sort -r | head -1)
-          
-          if [ -n "$LATEST_CSV" ] && [ -f "$LATEST_CSV" ]; then
-            BASENAME=$(basename "$LATEST_CSV")
-            echo "Found latest CSV: $BASENAME"
-            
-            # Copy with original timestamp name 
-            cp "$LATEST_CSV" "src/_data/metrics/$BASENAME"
-            echo "✅ ds-components data copied as $BASENAME"
-            
-            # Also create a symlink/copy with consistent name for easier processing
-            cp "$LATEST_CSV" "src/_data/metrics/ds-components-latest.csv"
-            echo "✅ Also available as ds-components-latest.csv"
-            
-            # Show basic info about the file
-            echo "File size: $(du -h "src/_data/metrics/$BASENAME")"
-            echo "Number of lines: $(wc -l < "src/_data/metrics/$BASENAME")"
-            echo "Sample data (first 3 lines):"
-            head -3 "src/_data/metrics/$BASENAME"
-          else
-            echo "❌ No ds-components CSV files found"
-            echo "Available files in output directory:"
-            ls -la "$OUTPUT_DIR" || echo "Could not list output directory"
+          if [ ! -f "$DS_COMPONENTS_FILE" ]; then
+            echo "❌ Error: DS components report not found at $DS_COMPONENTS_FILE"
             exit 1
           fi
           
-          # Clean up temporary directory
-          rm -rf temp-component-library
+          if [ ! -f "$FORMS_USAGE_FILE" ]; then
+            echo "❌ Error: Forms library usage report not found at $FORMS_USAGE_FILE"
+            exit 1
+          fi
+          
+          echo "✅ All required files verified, copying reports..."
+          
+          # Copy all three reports with timestamped names
+          cp "$FORM_APPS_FILE" "src/_data/metrics/form-apps-${CURRENT_DATE}.csv"
+          cp "$DS_COMPONENTS_FILE" "src/_data/metrics/ds-components-${CURRENT_DATE}.csv"
+          cp "$FORMS_USAGE_FILE" "src/_data/metrics/forms-library-usage-${CURRENT_DATE}.txt"
+
+          # Also create "latest" copies for easier processing
+          cp "$FORM_APPS_FILE" "src/_data/metrics/form-apps-latest.csv"
+          cp "$DS_COMPONENTS_FILE" "src/_data/metrics/ds-components-latest.csv"
+          cp "$FORMS_USAGE_FILE" "src/_data/metrics/forms-library-usage-latest.txt"
+
+          echo "✅ All reports copied to src/_data/metrics/"
+          echo "Files created:"
+          ls -lh src/_data/metrics/*-${CURRENT_DATE}.*
+          ls -lh src/_data/metrics/*-latest.*
 
       - name: Process ds-components data
         run: |
@@ -296,8 +351,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Get current date for branch name and commit message
-          CURRENT_DATE=$(date -u '+%Y-%m-%d')
+          # Use consistent date for branch name and commit message
           BRANCH_NAME="metrics-update-${CURRENT_DATE}"
           
           # Create and switch to new branch
@@ -327,8 +381,8 @@ jobs:
       - name: Create Pull Request
         if: steps.git-check.outputs.changes == 'true'
         run: |
-          # Get current date for PR description
-          CURRENT_DATE=$(date -u '+%Y-%m-%d %H:%M UTC')
+          # Use consistent date for PR description
+          CURRENT_TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
           
           # Create PR body as a variable
           PR_BODY="## Summary
@@ -345,12 +399,12 @@ jobs:
           - [ ] Verify JSON files are valid
           - [ ] Check dashboard displays updated data correctly
           - [ ] Confirm no regressions in metric calculations
-          
-          🤖 Generated with automated workflow - ${CURRENT_DATE}"
+
+          🤖 Generated with automated workflow - ${CURRENT_TIMESTAMP}"
           
           # Create PR using GitHub CLI
           gh pr create \
-            --title "📊 Update metrics dashboard data - $(date -u '+%Y-%m-%d')" \
+            --title "📊 Update metrics dashboard data - ${CURRENT_DATE}" \
             --body "$PR_BODY" \
             --head "$BRANCH_NAME" \
             --base main
