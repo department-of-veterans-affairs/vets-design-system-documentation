@@ -412,7 +412,7 @@ function generateMarkdownReport(data) {
   sortedPatterns.forEach(pattern => {
     lines.push(`### ${pattern.pattern_name}`);
     lines.push('');
-    lines.push(`**Code:** [\`${pattern.code_file}\`](${data.patterns.find(p => p.pattern_name === pattern.pattern_name)?.pattern_permalink || '#'})`);
+    lines.push(`**Code:** [\`${pattern.code_file}\`](${pattern.pattern_permalink || '#'})`);
     lines.push('');
     lines.push(`**Usage:** ${pattern.usage_count} forms (${pattern.compliance_percentage}%)`);
     lines.push('');
@@ -434,6 +434,15 @@ function generateMarkdownReport(data) {
   lines.push('## Forms × Patterns Matrix');
   lines.push('');
 
+  // Build lookup map for O(1) form-pattern checks
+  const formPatternMap = new Map();
+  data.patterns.forEach(pattern => {
+    pattern.forms_using_pattern.forEach(form => {
+      const key = `${form.product_name}|${pattern.pattern_name}`;
+      formPatternMap.set(key, true);
+    });
+  });
+
   // Create matrix header
   const patternNames = sortedPatterns.map(p => p.pattern_name);
   lines.push('| Form | ' + patternNames.join(' | ') + ' |');
@@ -444,10 +453,7 @@ function generateMarkdownReport(data) {
     const row = [form.product_name];
 
     patternNames.forEach(patternName => {
-      const pattern = data.patterns.find(p => p.pattern_name === patternName);
-      const usesPattern = pattern.forms_using_pattern.some(f =>
-        f.product_name === form.product_name
-      );
+      const usesPattern = formPatternMap.has(`${form.product_name}|${patternName}`);
       row.push(usesPattern ? '✅' : '');
     });
 
