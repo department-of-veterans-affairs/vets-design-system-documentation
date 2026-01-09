@@ -301,9 +301,9 @@ async function findSignaturePattern() {
         // Look for statementOfTruth configuration
         if (content.includes('statementOfTruth')) {
           found++;
-          // Extract app name from path
-          const match = filePath.match(/^([^\/]+)/);
-          if (match) {
+          // Extract app name from path (handle optional leading slash)
+          const match = filePath.match(/^\/?([^\/]+)/);
+          if (match && match[1]) {
             appPaths.add(match[1]);
           }
         }
@@ -453,9 +453,9 @@ async function findImporters(patternCodeFile) {
 
         if (usesPattern) {
           found++;
-          // Extract app name from path
-          const match = filePath.match(/^([^\/]+)/);
-          if (match) {
+          // Extract app name from path (handle optional leading slash)
+          const match = filePath.match(/^\/?([^\/]+)/);
+          if (match && match[1]) {
             appPaths.add(match[1]);
           }
         }
@@ -508,8 +508,9 @@ async function buildPatternAdherence() {
     const matchingForms = forms.filter(form => {
       if (!form.path_to_code) return false;
 
-      // Extract app name from path_to_code (e.g., "src/applications/caregivers" -> "caregivers")
-      const appName = form.path_to_code.replace(/^src\/applications\//, '').split('/')[0];
+      // Extract app name from path_to_code
+      // Handle both "src/applications/app" and "/src/applications/app" formats
+      const appName = form.path_to_code.replace(/^\/?src\/applications\//, '').split('/')[0];
       return importingApps.includes(appName);
     });
 
