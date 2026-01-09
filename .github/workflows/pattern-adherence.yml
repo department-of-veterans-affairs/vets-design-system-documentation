@@ -70,7 +70,7 @@ jobs:
           sparse-checkout: |
             src/applications
           sparse-checkout-cone-mode: false
-          depth: 1
+          fetch-depth: 1
 
       - name: Create data directories
         run: |
