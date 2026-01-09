@@ -11,5 +11,6 @@ In some cases, exceptions may be considered when choosing the right component:
 
 * **When the options are known and memorable.** Use [Combo box]({{ site.baseurl }}/components/form/combo-box) if the user will know what to expect as options in the dropdown, such as a list of countries or states. See the [USWDS address pattern](https://designsystem.digital.gov/patterns/create-a-user-profile/address/#guidance-2).
 * **When the radio button labels are long or radio tiles contain descriptive text.** Long labels within a dropdown might make it difficult to read and select an option. Radio tiles often include descriptive text that cannot be used in a dropdown. In these cases, [Radio button]({{ site.baseurl }}/components/form/radio-button) may be the better choice.
+* **When the task is to sort a set of results.** Use the dedicated [Sort]({{  site.baseurl }}/components/sort) component, which utilizes a Select component as its foundation.
 
 Contact the Design System team via [{{ site.slack_channel_name }}]({{ site.slack_channel_link }}) for help if you have other use cases that may be considered exceptions.
