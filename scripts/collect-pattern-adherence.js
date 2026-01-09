@@ -260,10 +260,81 @@ async function findJSFiles(dir, baseDir = dir) {
 }
 
 /**
+ * Find applications using the Signature pattern (FormSignature.jsx)
+ *
+ * This pattern is special because forms don't import it - they use
+ * declarative config with `statementOfTruth:` in preSubmitInfo.
+ */
+async function findSignaturePattern() {
+  console.log(`  Looking for statementOfTruth configuration in form configs...`);
+
+  if (VETS_WEBSITE_PATH) {
+    // Use local filesystem
+    console.log(`  Using local vets-website at: ${VETS_WEBSITE_PATH}`);
+    const applicationsDir = path.join(VETS_WEBSITE_PATH, 'src/applications');
+
+    try {
+      await fs.access(applicationsDir);
+    } catch {
+      console.warn(`  ⚠️  Directory not found: ${applicationsDir}`);
+      return [];
+    }
+
+    // Find all config/form.js files
+    const allFiles = await findJSFiles(applicationsDir);
+    const configFiles = allFiles.filter(p =>
+      p.endsWith('/config/form.js') || p.endsWith('/config/form.jsx')
+    );
+
+    console.log(`  Found ${configFiles.length} form config files`);
+
+    const appPaths = new Set();
+    let checked = 0;
+    let found = 0;
+
+    for (const filePath of configFiles) {
+      try {
+        checked++;
+        const fullPath = path.join(applicationsDir, filePath);
+        const content = await fs.readFile(fullPath, 'utf8');
+
+        // Look for statementOfTruth configuration
+        if (content.includes('statementOfTruth')) {
+          found++;
+          // Extract app name from path
+          const match = filePath.match(/^([^\/]+)/);
+          if (match) {
+            appPaths.add(match[1]);
+          }
+        }
+      } catch (error) {
+        // Skip files we can't read
+        if (!error.message.includes('ENOENT')) {
+          console.warn(`⚠️  Could not read ${filePath}: ${error.message}`);
+        }
+      }
+    }
+
+    const apps = Array.from(appPaths);
+    console.log(`  ✓ Found ${apps.length} apps using this pattern (checked ${checked} files, ${found} matches)`);
+    return apps;
+
+  } else {
+    // GitHub API mode - not implemented for this special case
+    console.warn(`  ⚠️  Signature pattern detection via GitHub API not yet implemented`);
+    console.warn(`  ⚠️  Please use --vets-website-path for accurate Signature pattern detection`);
+    return [];
+  }
+}
+
+/**
  * Find which applications import a specific file from vets-website
  * Two-step approach:
  * 1. Find all files that import from web-component-patterns directory
  * 2. Check which ones use exports from this specific pattern
+ *
+ * Special case: FormSignature.jsx uses declarative config (statementOfTruth)
+ * rather than imports, so it requires different detection logic.
  */
 async function findImporters(patternCodeFile) {
   console.log(`Analyzing imports for ${patternCodeFile}...`);
@@ -276,6 +347,11 @@ async function findImporters(patternCodeFile) {
 
   try {
     const filename = path.basename(patternCodeFile);
+
+    // Special case: FormSignature pattern uses declarative config
+    if (filename === 'FormSignature.jsx') {
+      return await findSignaturePattern();
+    }
 
     // Get the export names for this pattern
     const exportNames = PATTERN_EXPORT_MAPPING[filename];

@@ -1,6 +1,6 @@
 # Pattern Adherence Report
 
-Generated: 1/9/2026, 4:07:52 PM
+Generated: 1/9/2026, 4:25:09 PM
 
 ## Summary
 
@@ -17,8 +17,8 @@ Generated: 1/9/2026, 4:07:52 PM
 | Dates | 21/55 | 38% |
 | Names | 19/55 | 35% |
 | Social security or VA file number | 19/55 | 35% |
+| Signature | 14/55 | 25% |
 | Relationship to Veteran | 11/55 | 20% |
-| Signature | 0/55 | 0% |
 | Keep a record of submitted information | 0/55 | 0% |
 
 ## Detailed Pattern Usage
@@ -203,6 +203,29 @@ Generated: 1/9/2026, 4:07:52 PM
 - 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant
 - 40-0247 Presidential Memorial Certificate
 
+### Signature
+
+**Code:** [`src/platform/forms-system/src/js/components/FormSignature.jsx`](/patterns/ask-users-for/signature)
+
+**Usage:** 14 forms (25%)
+
+**Forms using this pattern:**
+
+- 20-10206 - Privacy Act
+- 20-10207 - Request for priority processing
+- 21-0845 - Authorization to Disclose Personal Information to a Third Party
+- 21-0966 - Intent to file a claim
+- 21-0972 - Sign VA claim forms as an alternate signer
+- 21-10210 - Lay or Witness Statement
+- 21-4138 - Statement in support of claim
+- 21-4142 - Authorization to Disclose Information to the VA
+- 21P-0847 - Request to be substitute claimant
+- 21P-527EZ - Apply for Veterans Pension benefits
+- 22-1990 - Education Benefits Application
+- 22-1995 - Education Change of Program or Training Application
+- 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant
+- 40-0247 Presidential Memorial Certificate
+
 ### Relationship to Veteran
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/relationshipToVeteranPattern.jsx`](/patterns/ask-users-for/relationship)
@@ -223,14 +246,6 @@ Generated: 1/9/2026, 4:07:52 PM
 - 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant
 - 40-0247 Presidential Memorial Certificate
 
-### Signature
-
-**Code:** [`src/platform/forms-system/src/js/components/FormSignature.jsx`](/patterns/ask-users-for/signature)
-
-**Usage:** 0 forms (0%)
-
-*No forms currently use this pattern*
-
 ### Keep a record of submitted information
 
 **Code:** [`src/platform/forms-system/src/js/components/ConfirmationView/README.md`](/patterns/help-users-to/keep-a-record-of-submitted-information)
@@ -241,7 +256,7 @@ Generated: 1/9/2026, 4:07:52 PM
 
 ## Forms × Patterns Matrix
 
-| Form | Email address | Addresses | Phone numbers | Dates | Names | Social security or VA file number | Relationship to Veteran | Signature | Keep a record of submitted information |
+| Form | Email address | Addresses | Phone numbers | Dates | Names | Social security or VA file number | Signature | Relationship to Veteran | Keep a record of submitted information |
 |------|---|---|---|---|---|---|---|---|---|
 | 10-10CG - Apply for the Program of Comprehensive Assistance for Family Caregivers | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
 | 10-10D - Application for CHAMPVA |  |  |  |  |  |  |  |  |  |
@@ -253,24 +268,24 @@ Generated: 1/9/2026, 4:07:52 PM
 | 10182 - Request a Board Appeal | ✅ |  | ✅ |  |  |  |  |  |  |
 | 1095-B - IRS tax form for proof of VA Health coverage |  |  |  |  |  |  |  |  |  |
 | 20-0995 - Supplemental Claim Form | ✅ |  | ✅ |  |  |  |  |  |  |
-| 20-10206 - Privacy Act | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 20-10207 - Request for priority processing | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
+| 20-10206 - Privacy Act | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 20-10207 - Request for priority processing | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 21-0538 - Dependency Verification |  |  |  |  |  |  |  |  |  |
 | 21-0779 - Request for Nursing Home Information (Aid & Attendance) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
-| 21-0845 - Authorization to Disclose Personal Information to a Third Party | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 21-0966 - Intent to file a claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 21-0972 - Sign VA claim forms as an alternate signer | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 21-10210 - Lay or Witness Statement | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
+| 21-0845 - Authorization to Disclose Personal Information to a Third Party | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 21-0966 - Intent to file a claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 21-0972 - Sign VA claim forms as an alternate signer | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 21-10210 - Lay or Witness Statement | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 21-2680 - Examination for Housebound Status or Permanent Need for Regular Aid & Attendance | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
-| 21-4138 - Statement in support of claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 21-4142 - Authorization to Disclose Information to the VA | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
+| 21-4138 - Statement in support of claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 21-4142 - Authorization to Disclose Information to the VA | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 21-4192 - Request for Employment Information in Connection with Claim for Disability Benefits |  |  |  |  |  |  |  |  |  |
 | 21-526EZ - AI Document Classification API |  |  |  |  |  |  |  |  |  |
 | 21-526EZ - File for disability compensation |  |  |  |  |  |  |  |  |  |
 | 21-526EZ - Multi-step conditions submission |  |  |  |  |  |  |  |  |  |
 | 21-8940 - Veteran's Application for Increased Compensation Based on Unemployability |  |  |  |  |  |  |  |  |  |
-| 21P-0847 - Request to be substitute claimant | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 21P-527EZ - Apply for Veterans Pension benefits | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
+| 21P-0847 - Request to be substitute claimant | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 21P-527EZ - Apply for Veterans Pension benefits | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
 | 21P-530a - State Application for Interment Allowance (Under 38 U.S.C. Chapter 23) |  |  |  |  |  |  |  |  |  |
 | 21P-530EZ - Apply for Veterans burial allowance and transportation benefits |  |  |  |  |  |  |  |  |  |
 | 21P-534EZ - Application for DIC, Survivors Pension, or Accrued Benefits |  |  |  |  |  |  |  |  |  |
@@ -283,13 +298,13 @@ Generated: 1/9/2026, 4:07:52 PM
 | 22-10272 - Request for Reimbursement of Preparatory (Prep) Course for Licensing or Certification Test |  |  |  |  |  |  |  |  |  |
 | 22-10278 - Authorization To Disclose Personal Information To a Third Party |  |  |  |  |  |  |  |  |  |
 | 22-1919 - Conflicting Interests Certification for Proprietary Schools |  |  |  |  |  |  |  |  |  |
-| 22-1990 - Education Benefits Application | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
+| 22-1990 - Education Benefits Application | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
 | 22-1990e - Apply to use transferred education benefits |  |  |  |  |  |  |  |  |  |
-| 22-1995 - Education Change of Program or Training Application | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
+| 22-1995 - Education Change of Program or Training Application | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
 | 22-8794 - Designation of Certifying Official(s) |  |  |  |  |  |  |  |  |  |
 | 26-1880 - Request a VA home loan Certificate of Eligibility (COE) |  |  |  |  |  |  |  |  |  |
-| 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
-| 40-0247 Presidential Memorial Certificate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
+| 26-4555 Application in Acquiring Specially Adapted Housing or Special Home Adaptation Grant | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
+| 40-0247 Presidential Memorial Certificate | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | Benefits Delivery at Discharge |  | ✅ |  | ✅ |  |  |  |  |  |
 | Dependency Claims (21-686c and 21-674) |  | ✅ |  | ✅ |  |  |  |  |  |
 | Discharge Upgrade Wizard |  |  |  |  |  |  |  |  |  |
