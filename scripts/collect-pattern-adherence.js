@@ -19,6 +19,8 @@ const { execSync } = require('child_process');
 const PATTERNS_DIR = path.join(__dirname, '../src/_patterns');
 const PRODUCT_DIRECTORY_REPO = 'department-of-veterans-affairs/product-directory';
 const VETS_WEBSITE_REPO = 'department-of-veterans-affairs/vets-website';
+const OUTPUT_DIR = path.join(__dirname, '../src/assets/data/metrics');
+const JEKYLL_DATA_DIR = path.join(__dirname, '../src/_data/metrics');
 
 /**
  * Parse pattern metadata from markdown file
@@ -351,38 +353,151 @@ async function buildPatternAdherence() {
 }
 
 /**
+ * Save adherence data as JSON
+ */
+async function saveAdherenceData(data) {
+  // Ensure output directories exist
+  await fs.mkdir(OUTPUT_DIR, { recursive: true });
+  await fs.mkdir(JEKYLL_DATA_DIR, { recursive: true });
+
+  const outputFile = path.join(OUTPUT_DIR, 'pattern-adherence.json');
+  const jekyllFile = path.join(JEKYLL_DATA_DIR, 'pattern-adherence.json');
+
+  const jsonContent = JSON.stringify(data, null, 2);
+
+  await fs.writeFile(outputFile, jsonContent, 'utf8');
+  await fs.writeFile(jekyllFile, jsonContent, 'utf8');
+
+  console.log(`\n✅ Saved pattern adherence data to:`);
+  console.log(`   ${outputFile}`);
+  console.log(`   ${jekyllFile}`);
+}
+
+/**
+ * Generate markdown report
+ */
+function generateMarkdownReport(data) {
+  const lines = [];
+
+  lines.push('# Pattern Adherence Report');
+  lines.push('');
+  lines.push(`Generated: ${new Date(data.generated_at).toLocaleString()}`);
+  lines.push('');
+
+  // Summary section
+  lines.push('## Summary');
+  lines.push('');
+  lines.push(`- **Total Patterns Analyzed:** ${data.total_patterns}`);
+  lines.push(`- **Total Forms:** ${data.total_forms}`);
+  lines.push('');
+
+  // Sort patterns by usage count (descending)
+  const sortedPatterns = [...data.patterns].sort((a, b) => b.usage_count - a.usage_count);
+
+  lines.push('## Pattern Compliance Summary');
+  lines.push('');
+  lines.push('| Pattern | Forms Using | Compliance % |');
+  lines.push('|---------|-------------|--------------|');
+
+  sortedPatterns.forEach(pattern => {
+    lines.push(`| ${pattern.pattern_name} | ${pattern.usage_count}/${pattern.total_forms} | ${pattern.compliance_percentage}% |`);
+  });
+
+  lines.push('');
+
+  // Detailed section
+  lines.push('## Detailed Pattern Usage');
+  lines.push('');
+
+  sortedPatterns.forEach(pattern => {
+    lines.push(`### ${pattern.pattern_name}`);
+    lines.push('');
+    lines.push(`**Code:** [\`${pattern.code_file}\`](${data.patterns.find(p => p.pattern_name === pattern.pattern_name)?.pattern_permalink || '#'})`);
+    lines.push('');
+    lines.push(`**Usage:** ${pattern.usage_count} forms (${pattern.compliance_percentage}%)`);
+    lines.push('');
+
+    if (pattern.forms_using_pattern.length > 0) {
+      lines.push('**Forms using this pattern:**');
+      lines.push('');
+      pattern.forms_using_pattern.forEach(form => {
+        lines.push(`- ${form.product_name}`);
+      });
+      lines.push('');
+    } else {
+      lines.push('*No forms currently use this pattern*');
+      lines.push('');
+    }
+  });
+
+  // Forms matrix
+  lines.push('## Forms × Patterns Matrix');
+  lines.push('');
+
+  // Create matrix header
+  const patternNames = sortedPatterns.map(p => p.pattern_name);
+  lines.push('| Form | ' + patternNames.join(' | ') + ' |');
+  lines.push('|------|' + patternNames.map(() => '---').join('|') + '|');
+
+  // Create matrix rows
+  data.forms.forEach(form => {
+    const row = [form.product_name];
+
+    patternNames.forEach(patternName => {
+      const pattern = data.patterns.find(p => p.pattern_name === patternName);
+      const usesPattern = pattern.forms_using_pattern.some(f =>
+        f.product_name === form.product_name
+      );
+      row.push(usesPattern ? '✅' : '');
+    });
+
+    lines.push('| ' + row.join(' | ') + ' |');
+  });
+
+  return lines.join('\n');
+}
+
+/**
+ * Save markdown report
+ */
+async function saveMarkdownReport(data) {
+  const reportContent = generateMarkdownReport(data);
+  const reportFile = path.join(OUTPUT_DIR, 'pattern-adherence-report.md');
+
+  await fs.writeFile(reportFile, reportContent, 'utf8');
+
+  console.log(`✅ Saved markdown report to: ${reportFile}`);
+}
+
+/**
  * Main execution
  */
 async function main() {
+  console.log('=== VA.gov Pattern Adherence Analysis ===\n');
+
   try {
-    console.log('Starting pattern adherence collection...');
+    const data = await buildPatternAdherence();
 
-    const patterns = await getAllPatterns();
+    await saveAdherenceData(data);
+    await saveMarkdownReport(data);
 
-    const patternsWithCodeLinks = patterns.filter(p => p.hasCodeLink);
-    const patternsWithoutCodeLinks = patterns.filter(p => !p.hasCodeLink);
+    console.log('\n✅ Pattern adherence analysis complete!');
 
-    console.log(`\n📊 Pattern Analysis:`);
-    console.log(`   - Total patterns: ${patterns.length}`);
-    console.log(`   - Patterns with code-link: ${patternsWithCodeLinks.length}`);
-    console.log(`   - Patterns without code-link: ${patternsWithoutCodeLinks.length}`);
+    // Print summary
+    console.log('\n=== SUMMARY ===');
+    console.log(`Analyzed ${data.total_patterns} patterns across ${data.total_forms} forms`);
+    console.log('\nTop patterns by usage:');
 
-    if (patternsWithCodeLinks.length > 0) {
-      console.log(`\n✅ Patterns with code links:`);
-      patternsWithCodeLinks.forEach(p => {
-        console.log(`   - ${p.title || p.filename}: ${p.codeFile}`);
-      });
-    }
+    const top5 = [...data.patterns]
+      .sort((a, b) => b.usage_count - a.usage_count)
+      .slice(0, 5);
 
-    if (patternsWithoutCodeLinks.length > 0) {
-      console.log(`\n⚠️  Patterns without code links:`);
-      patternsWithoutCodeLinks.forEach(p => {
-        console.log(`   - ${p.title || p.filename}`);
-      });
-    }
+    top5.forEach((pattern, i) => {
+      console.log(`  ${i + 1}. ${pattern.pattern_name}: ${pattern.usage_count} forms (${pattern.compliance_percentage}%)`);
+    });
 
   } catch (error) {
-    console.error('❌ Error collecting pattern adherence data:', error.message);
+    console.error('\n❌ Error:', error.message);
     process.exit(1);
   }
 }
@@ -400,5 +515,9 @@ module.exports = {
   fetchProductDirectory,
   getFormProducts,
   findImporters,
-  buildPatternAdherence
+  buildPatternAdherence,
+  generateMarkdownReport,
+  saveMarkdownReport,
+  saveAdherenceData,
+  main
 };
