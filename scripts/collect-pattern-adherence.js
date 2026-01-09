@@ -175,7 +175,7 @@ async function fetchProductDirectory() {
   try {
     const output = execSync(
       `gh api repos/${PRODUCT_DIRECTORY_REPO}/contents/product-directory.json --jq '.content'`,
-      { encoding: 'utf8' }
+      { encoding: 'utf8', timeout: 30000 }
     );
 
     // Decode base64 content
@@ -192,6 +192,10 @@ async function fetchProductDirectory() {
  */
 async function getFormProducts() {
   const products = await fetchProductDirectory();
+
+  if (!Array.isArray(products)) {
+    throw new Error('Product directory did not return an array');
+  }
 
   const forms = products.filter(product =>
     product.analytics_category === 'Forms' ||
