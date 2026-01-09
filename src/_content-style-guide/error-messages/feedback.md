@@ -3,7 +3,7 @@ layout: content-style-guide
 permalink: /content-style-guide/error-messages/feedback
 has-parent: /content-style-guide/error-messages/
 title: Feedback messages
-intro-text: Feedback messages appear as a response to a person’s actions. The majority of create, read, update, and delete actions will result in feedback messaging.
+intro-text: Feedback messages appear as a response to a person’s actions. Most create, read, update, and delete actions will result in feedback messaging.
 ---
 
 **Note:** The Help users to recover from errors pattern has guidance on when to consider instructing the person to call the VA.gov help desk and when to add other "next-step" calls to action.
@@ -68,7 +68,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. The 
         <span>Replace content after page title</span>
     </va-table-row>
     <va-table-row>
-        <span>General error (500)</span>
+        <span>General error (500), version 1</span>
         <span><b>This [tool, application, form] isn’t working right now</b></span>
         <span>We’re sorry. There’s a problem with [name]. Refresh this page or try again later.<br>[Add instructions for who to contact or how to remedy the problem.]</span>
         <span>N/A</span>
@@ -77,7 +77,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. The 
         <span>After page title</span>
     </va-table-row>
     <va-table-row>
-        <span>General error (500)</span>
+        <span>General error (500), version 2</span>
         <span><b>Sorry, we couldn’t complete your request</b></span>
         <span>[Name] isn’t working as expected. [Add instructions to remedy the problem or when to come back and try again.]</span>
         <span>N/A</span>
@@ -86,7 +86,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. The 
         <span>After page title</span>
     </va-table-row>
     <va-table-row>
-        <span>General error (500)</span>
+        <span>General error (500), version 3</span>
         <span><b>We can’t access your [type of information] right now</b></span>
         <span>We're sorry. There's a problem with our system. Check back later.<br>[Add instructions to remedy the problem or when to come back and try again.]</span>
         <span>N/A</span>
@@ -131,12 +131,12 @@ intro-text: Feedback messages appear as a response to a person’s actions. The 
         <span>After h1 on page summary</span>
     </va-table-row>
     <va-table-row>
-        <span>Application, claim, or form submission in progress alternate version</span>
+        <span>Application, claim, or form submission in progress, alternate version</span>
         <span><b>Your [application, claim, form] is in progress and was last saved on [Month Day, Year], at [timestamp]</b></span>
-        <span>You can continue applying now or come back later to finish your application.<br>Your application will expire on [Month Day, Year], at [timestamp].
+        <span>You can continue applying now or come back later to finish your application.<br>Your application will expire on **[Month Day, Year], at [timestamp]**.
 </span>
         <span>Continue your [application, claim, form] (button);  Start a new application (primary action link)</span>
-        <span>[Alert(https://design.va.gov/components/alert/#informational-alert-aka-default)</a></span>
+        <span>[Alert](https://design.va.gov/components/alert/#informational-alert-aka-default)</span>
         <span>Informational</span>
         <span>Replace affected component</span>
     </va-table-row>
@@ -155,7 +155,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. The 
         <span>Enter a valid [address, email address, phone number, city, state, etc.].</span>
         <span>N/A</span>
         <span>Inline</span>
-        <span>Error alert</span>
+        <span>Error</span>
         <span>N/A</span>
     </va-table-row>
     <va-table-row>
