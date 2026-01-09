@@ -104,11 +104,37 @@ function parsePatternMetadata(filename, content) {
 }
 
 /**
- * Read and parse all pattern files from the patterns directory
- * @returns {Promise<Array>} Array of pattern metadata objects
+ * Recursively find all pattern markdown files
  */
-async function collectPatternMetadata() {
-  console.log('Collecting pattern metadata from markdown files...');
+async function findPatternFiles(dir) {
+  const entries = await fs.readdir(dir, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      // Skip HTML directories and other non-pattern dirs
+      if (entry.name !== 'html') {
+        files.push(...await findPatternFiles(fullPath));
+      }
+    } else if (entry.isFile() && entry.name.endsWith('.md') &&
+               entry.name !== 'index.md' &&
+               entry.name !== 'template.md' &&
+               entry.name !== 'intentional-omissions.md' &&
+               entry.name !== 'wizards.md') {
+      files.push(fullPath);
+    }
+  }
+
+  return files;
+}
+
+/**
+ * Get all patterns with their metadata
+ */
+async function getAllPatterns() {
+  console.log('Discovering patterns...');
 
   // Check that patterns directory exists
   try {
@@ -117,35 +143,24 @@ async function collectPatternMetadata() {
     throw new Error(`Patterns directory not found: ${PATTERNS_DIR}`);
   }
 
+  const patternFiles = await findPatternFiles(PATTERNS_DIR);
   const patterns = [];
 
-  async function processDirectory(dir) {
-    const entries = await fs.readdir(dir, { withFileTypes: true });
-
-    for (const entry of entries) {
-      const fullPath = path.join(dir, entry.name);
-
-      if (entry.isDirectory()) {
-        await processDirectory(fullPath);
-      } else if (entry.isFile() && entry.name.endsWith('.md')) {
-        // Skip template and index files
-        if (entry.name === 'template.md' || entry.name === 'index.md') {
-          continue;
-        }
-
-        try {
-          const content = await fs.readFile(fullPath, 'utf8');
-          const metadata = parsePatternMetadata(entry.name, content);
-          patterns.push(metadata);
-        } catch (error) {
-          console.warn(`⚠️  Could not read ${path.relative(PATTERNS_DIR, fullPath)}: ${error.message}`);
-          continue;
-        }
-      }
+  for (const filePath of patternFiles) {
+    try {
+      const content = await fs.readFile(filePath, 'utf8');
+      const relativePath = path.relative(PATTERNS_DIR, filePath);
+      const metadata = parsePatternMetadata(relativePath, content);
+      patterns.push(metadata);
+    } catch (error) {
+      console.warn(`⚠️  Could not read ${path.relative(PATTERNS_DIR, filePath)}: ${error.message}`);
+      continue;
     }
   }
 
-  await processDirectory(PATTERNS_DIR);
+  console.log(`Found ${patterns.length} patterns`);
+  const withCodeLinks = patterns.filter(p => p.hasCodeLink).length;
+  console.log(`${withCodeLinks} patterns have code-link defined`);
 
   return patterns;
 }
@@ -157,7 +172,7 @@ async function main() {
   try {
     console.log('Starting pattern adherence collection...');
 
-    const patterns = await collectPatternMetadata();
+    const patterns = await getAllPatterns();
 
     const patternsWithCodeLinks = patterns.filter(p => p.hasCodeLink);
     const patternsWithoutCodeLinks = patterns.filter(p => !p.hasCodeLink);
@@ -194,5 +209,6 @@ if (require.main === module) {
 
 module.exports = {
   parsePatternMetadata,
-  collectPatternMetadata
+  getAllPatterns,
+  findPatternFiles
 };

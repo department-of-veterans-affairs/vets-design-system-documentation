@@ -17,4 +17,22 @@ async function testPatternParser() {
   console.log('✅ Pattern parser test passed');
 }
 
-testPatternParser().catch(console.error);
+async function testPatternDiscovery() {
+  const { getAllPatterns } = require('./collect-pattern-adherence.js');
+  const patterns = await getAllPatterns();
+
+  assert.ok(patterns.length > 0, 'Should find patterns');
+  const emailPattern = patterns.find(p => p.title === 'Email address');
+  assert.ok(emailPattern, 'Should find email pattern');
+  assert.ok(emailPattern.hasCodeLink, 'Email pattern should have code link');
+
+  console.log(`✅ Pattern discovery test passed - found ${patterns.length} patterns`);
+}
+
+// Update main test runner
+async function runAllTests() {
+  await testPatternParser();
+  await testPatternDiscovery();
+}
+
+runAllTests().catch(console.error);
