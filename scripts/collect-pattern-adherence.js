@@ -189,7 +189,8 @@ async function fetchProductDirectory() {
   console.log('Fetching product directory...');
 
   try {
-    // Use execFileSync for security and pass GITHUB_TOKEN for authentication
+    // Use execFileSync for security and pass GH_TOKEN for authentication
+    // gh CLI requires GH_TOKEN environment variable
     const output = execFileSync('gh', [
       'api',
       `repos/${PRODUCT_DIRECTORY_REPO}/contents/product-directory.json`,
@@ -198,7 +199,10 @@ async function fetchProductDirectory() {
     ], {
       encoding: 'utf8',
       timeout: 30000,
-      env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN }
+      env: {
+        ...process.env,
+        GH_TOKEN: process.env.GH_TOKEN || process.env.GITHUB_TOKEN
+      }
     });
 
     // Decode base64 content
@@ -396,7 +400,13 @@ async function findImporters(patternCodeFile) {
       // Use GitHub API
       console.log(`  Using GitHub API for ${VETS_WEBSITE_REPO}`);
 
-      // Use execFileSync for security and pass GITHUB_TOKEN for authentication
+      // Use execFileSync for security and pass GH_TOKEN for authentication
+      // gh CLI requires GH_TOKEN environment variable
+      const ghEnv = {
+        ...process.env,
+        GH_TOKEN: process.env.GH_TOKEN || process.env.GITHUB_TOKEN
+      };
+
       const repoInfo = execFileSync('gh', [
         'api',
         `repos/${VETS_WEBSITE_REPO}`,
@@ -405,7 +415,7 @@ async function findImporters(patternCodeFile) {
       ], {
         encoding: 'utf8',
         timeout: 10000,
-        env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN }
+        env: ghEnv
       }).trim();
 
       const treeOutput = execFileSync('gh', [
@@ -417,7 +427,7 @@ async function findImporters(patternCodeFile) {
         encoding: 'utf8',
         maxBuffer: 20 * 1024 * 1024,
         timeout: 60000,
-        env: { ...process.env, GITHUB_TOKEN: process.env.GITHUB_TOKEN }
+        env: ghEnv
       });
 
       if (!treeOutput.trim()) {
@@ -457,7 +467,11 @@ async function findImporters(patternCodeFile) {
           ], {
             encoding: 'utf8',
             timeout: 10000,
-            stdio: ['pipe', 'pipe', 'ignore']
+            stdio: ['pipe', 'pipe', 'ignore'],
+            env: {
+              ...process.env,
+              GH_TOKEN: process.env.GH_TOKEN || process.env.GITHUB_TOKEN
+            }
           });
           content = Buffer.from(fileContent.trim(), 'base64').toString('utf8');
         }

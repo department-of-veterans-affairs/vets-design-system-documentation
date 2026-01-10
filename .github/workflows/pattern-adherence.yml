@@ -83,7 +83,7 @@ jobs:
           node scripts/collect-pattern-adherence.js --vets-website-path vets-website
           echo "Pattern adherence analysis completed"
         env:
-          GITHUB_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
+          GH_TOKEN: ${{ secrets.VADS_WORKFLOWS }}
 
       - name: Verify generated data files
         run: |
