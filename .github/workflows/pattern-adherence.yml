@@ -4,17 +4,8 @@ on:
   schedule:
     # Run weekly on Mondays at 6 AM UTC (2 AM ET / 1 AM EDT)
     - cron: '0 6 * * 1'
-  pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
-    branches-ignore:
-      - 'pattern-adherence-update-**'
-      - '*pattern-adherence*'
-    paths:
-      - '.github/workflows/pattern-adherence.yml'
-      - 'scripts/collect-pattern-adherence.js'
-      - 'src/_patterns/**/*.md'
   workflow_dispatch:
-    # Allow manual triggering for testing
+    # Allow manual triggering for testing and development
 
 jobs:
   update-pattern-adherence:
