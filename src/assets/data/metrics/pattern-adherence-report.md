@@ -1,6 +1,6 @@
 # Pattern Adherence Report
 
-Generated: 1/9/2026, 4:25:09 PM
+Generated: 1/10/2026, 2:57:11 PM
 
 ## Summary
 
@@ -11,13 +11,13 @@ Generated: 1/9/2026, 4:25:09 PM
 
 | Pattern | Forms Using | Compliance % |
 |---------|-------------|--------------|
-| Email address | 23/55 | 42% |
-| Addresses | 22/55 | 40% |
-| Phone numbers | 22/55 | 40% |
-| Dates | 21/55 | 38% |
-| Names | 19/55 | 35% |
-| Social security or VA file number | 19/55 | 35% |
-| Signature | 14/55 | 25% |
+| Email address | 24/55 | 44% |
+| Addresses | 23/55 | 42% |
+| Phone numbers | 23/55 | 42% |
+| Dates | 22/55 | 40% |
+| Names | 20/55 | 36% |
+| Social security or VA file number | 20/55 | 36% |
+| Signature | 15/55 | 27% |
 | Relationship to Veteran | 11/55 | 20% |
 | Keep a record of submitted information | 0/55 | 0% |
 
@@ -27,7 +27,7 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/emailPattern.jsx`](/patterns/ask-users-for/email-address)
 
-**Usage:** 23 forms (42%)
+**Usage:** 24 forms (44%)
 
 **Forms using this pattern:**
 
@@ -38,6 +38,7 @@ Generated: 1/9/2026, 4:25:09 PM
 - 20-0995 - Supplemental Claim Form
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0779 - Request for Nursing Home Information (Aid & Attendance)
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
@@ -59,7 +60,7 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/addressPattern.jsx`](/patterns/ask-users-for/addresses)
 
-**Usage:** 22 forms (40%)
+**Usage:** 23 forms (42%)
 
 **Forms using this pattern:**
 
@@ -68,6 +69,7 @@ Generated: 1/9/2026, 4:25:09 PM
 - 10-10EZR - Health Benefits Update Form
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0779 - Request for Nursing Home Information (Aid & Attendance)
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
@@ -90,7 +92,7 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/phonePatterns.jsx`](/patterns/ask-users-for/phone-numbers)
 
-**Usage:** 22 forms (40%)
+**Usage:** 23 forms (42%)
 
 **Forms using this pattern:**
 
@@ -101,6 +103,7 @@ Generated: 1/9/2026, 4:25:09 PM
 - 20-0995 - Supplemental Claim Form
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0779 - Request for Nursing Home Information (Aid & Attendance)
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
@@ -121,7 +124,7 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/datePatterns.jsx`](/patterns/ask-users-for/dates)
 
-**Usage:** 21 forms (38%)
+**Usage:** 22 forms (40%)
 
 **Forms using this pattern:**
 
@@ -130,6 +133,7 @@ Generated: 1/9/2026, 4:25:09 PM
 - 10-10EZR - Health Benefits Update Form
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0779 - Request for Nursing Home Information (Aid & Attendance)
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
@@ -151,7 +155,7 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/fullNamePattern.js`](/patterns/ask-users-for/names)
 
-**Usage:** 19 forms (35%)
+**Usage:** 20 forms (36%)
 
 **Forms using this pattern:**
 
@@ -160,6 +164,7 @@ Generated: 1/9/2026, 4:25:09 PM
 - 10-10EZR - Health Benefits Update Form
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0779 - Request for Nursing Home Information (Aid & Attendance)
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
@@ -179,7 +184,7 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/web-component-patterns/ssnPattern.jsx`](/patterns/ask-users-for/social-security-number)
 
-**Usage:** 19 forms (35%)
+**Usage:** 20 forms (36%)
 
 **Forms using this pattern:**
 
@@ -188,6 +193,7 @@ Generated: 1/9/2026, 4:25:09 PM
 - 10-10EZR - Health Benefits Update Form
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0779 - Request for Nursing Home Information (Aid & Attendance)
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
@@ -207,12 +213,13 @@ Generated: 1/9/2026, 4:25:09 PM
 
 **Code:** [`src/platform/forms-system/src/js/components/FormSignature.jsx`](/patterns/ask-users-for/signature)
 
-**Usage:** 14 forms (25%)
+**Usage:** 15 forms (27%)
 
 **Forms using this pattern:**
 
 - 20-10206 - Privacy Act
 - 20-10207 - Request for priority processing
+- 21-0538 - Dependency Verification
 - 21-0845 - Authorization to Disclose Personal Information to a Third Party
 - 21-0966 - Intent to file a claim
 - 21-0972 - Sign VA claim forms as an alternate signer
@@ -270,7 +277,7 @@ Generated: 1/9/2026, 4:25:09 PM
 | 20-0995 - Supplemental Claim Form | ✅ |  | ✅ |  |  |  |  |  |  |
 | 20-10206 - Privacy Act | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 20-10207 - Request for priority processing | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
-| 21-0538 - Dependency Verification |  |  |  |  |  |  |  |  |  |
+| 21-0538 - Dependency Verification | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |
 | 21-0779 - Request for Nursing Home Information (Aid & Attendance) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |  |  |
 | 21-0845 - Authorization to Disclose Personal Information to a Third Party | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
 | 21-0966 - Intent to file a claim | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |  |
