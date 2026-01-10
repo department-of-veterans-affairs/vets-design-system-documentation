@@ -129,7 +129,7 @@ jobs:
           git config --local user.name "GitHub Action"
 
           CURRENT_DATE=$(date -u '+%Y-%m-%d')
-          BRANCH_NAME="pattern-adherence-update-${CURRENT_DATE}"
+          BRANCH_NAME="pattern-adherence-update-${CURRENT_DATE}-${{ github.run_id }}"
 
           git checkout -b "$BRANCH_NAME"
 
