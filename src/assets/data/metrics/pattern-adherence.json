@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-01-09T21:25:09.432Z",
+  "generated_at": "2026-01-10T14:54:50.371Z",
   "total_patterns": 9,
   "total_forms": 55,
   "patterns": [
@@ -31,6 +31,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
         },
         {
           "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
@@ -109,9 +113,9 @@
           "github_label": "mDOT"
         }
       ],
-      "usage_count": 22,
+      "usage_count": 23,
       "total_forms": 55,
-      "compliance_percentage": 40
+      "compliance_percentage": 42
     },
     {
       "pattern_name": "Dates",
@@ -141,6 +145,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
         },
         {
           "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
@@ -214,9 +222,9 @@
           "github_label": "686 or 674"
         }
       ],
-      "usage_count": 21,
+      "usage_count": 22,
       "total_forms": 55,
-      "compliance_percentage": 38
+      "compliance_percentage": 40
     },
     {
       "pattern_name": "Email address",
@@ -258,6 +266,10 @@
           "github_label": "20-10207"
         },
         {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
+        },
+        {
           "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
           "path_to_code": "src/applications/benefits-optimization-aquia/21-0779-nursing-home-information"
         },
@@ -329,9 +341,9 @@
           "github_label": "mDOT"
         }
       ],
-      "usage_count": 23,
+      "usage_count": 24,
       "total_forms": 55,
-      "compliance_percentage": 42
+      "compliance_percentage": 44
     },
     {
       "pattern_name": "Names",
@@ -361,6 +373,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
         },
         {
           "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
@@ -424,9 +440,9 @@
           "path_to_code": "src/applications/simple-forms/40-0247"
         }
       ],
-      "usage_count": 19,
+      "usage_count": 20,
       "total_forms": 55,
-      "compliance_percentage": 35
+      "compliance_percentage": 36
     },
     {
       "pattern_name": "Phone numbers",
@@ -466,6 +482,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
         },
         {
           "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
@@ -534,9 +554,9 @@
           "github_label": "HLR"
         }
       ],
-      "usage_count": 22,
+      "usage_count": 23,
       "total_forms": 55,
-      "compliance_percentage": 40
+      "compliance_percentage": 42
     },
     {
       "pattern_name": "Relationship to Veteran",
@@ -612,6 +632,10 @@
           "github_label": "20-10207"
         },
         {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
+        },
+        {
           "product_name": "21-0845 - Authorization to Disclose Personal Information to a Third Party",
           "path_to_code": "src/applications/simple-forms/21-0845"
         },
@@ -665,9 +689,9 @@
           "path_to_code": "src/applications/simple-forms/40-0247"
         }
       ],
-      "usage_count": 14,
+      "usage_count": 15,
       "total_forms": 55,
-      "compliance_percentage": 25
+      "compliance_percentage": 27
     },
     {
       "pattern_name": "Social security or VA file number",
@@ -697,6 +721,10 @@
           "product_name": "20-10207 - Request for priority processing",
           "path_to_code": "src/applications/simple-forms/20-10207",
           "github_label": "20-10207"
+        },
+        {
+          "product_name": "21-0538 - Dependency Verification",
+          "path_to_code": "/src/applications/dependents/dependents-verification"
         },
         {
           "product_name": "21-0779 - Request for Nursing Home Information (Aid & Attendance)",
@@ -760,9 +788,9 @@
           "path_to_code": "src/applications/simple-forms/40-0247"
         }
       ],
-      "usage_count": 19,
+      "usage_count": 20,
       "total_forms": 55,
-      "compliance_percentage": 35
+      "compliance_percentage": 36
     },
     {
       "pattern_name": "Keep a record of submitted information",
