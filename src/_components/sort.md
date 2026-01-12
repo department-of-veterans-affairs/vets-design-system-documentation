@@ -27,7 +27,7 @@ anchors:
 ## Examples
 
 ### Medications
-{% include component-example.html alt="Mobile example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort.png" caption="Sorting MyHealtheVet medications by last fill date (newest to oldest) on mobile." width="50%" %}
+{% include component-example.html alt="Mobile example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Sorting MyHealtheVet medications by last fill date (newest to oldest) on mobile." width="50%" %}
 
 {% include component-example.html alt="Desktop example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Sorting MyHealtheVet medications by last fill date (newest to oldest) on desktop." width="50%" %}
 
