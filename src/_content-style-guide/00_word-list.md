@@ -966,6 +966,11 @@ For terms that are not on this list, refer to the Merriam-Websiter Dictionary.
 
 : Like this: The Buffalo Regional Office (RO) is 1 of 4 regional processing centers nationwide that process education claims.
 
+**verify and verification**
+: We only use the terms “identity verification” and “verify your identity” to describe the initial, one-time process of verifying your identity through **ID.me** or **Login.gov**. We don’t use “verify your identity” to describe signing in to VA.gov (using multifactor authentication or the “LOROTA” sign-in process for check-in and pre-check-in) with an account a person has already verified. Avoid using the terms “verify” or “verification” outside of identity verification. When asking someone to check the information they’ve provided in a form (ex. mailing address, email address, etc.), use “confirm” or “confirmation.”
+
+: [Go to the Sign in and identity verification section for more guidance](https://design.va.gov/content-style-guide/specific-topics-and-programs/sign-in-and-identity-verification)
+
 **vesicant agents**
 : Use "vesicant (blistering) agents."
 
