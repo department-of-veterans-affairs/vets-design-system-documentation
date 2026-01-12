@@ -2,7 +2,7 @@
 layout: component
 title: Sort
 permalink: /components/sort/
-# contributors: Command separated list of contributor names with (org name) following, if applicable
+# contributors: Comma separated list of contributor names with (org name) following, if applicable
 draft: false
 web: true
 mobile-app: false
@@ -37,9 +37,11 @@ anchors:
 <!--### Find a Form
 {% include component-example.html alt="Example of the default sort on the VA Find a Form." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}-->
 
+### Find a Form
+{% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}
 
 ### Secure Messaging
-{% include component-example.html alt="Desktop example of MyHealtheVet messages sorted by last updated (newest to oldest) in the Inbox." file="/images/components/sort/inbox_sort.png" caption="Sorting MyHealtheVet Inbox messages by last updated (newest to oldest) on desktop." width="50%" %}
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
 
 
 ## Usage
