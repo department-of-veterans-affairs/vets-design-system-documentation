@@ -138,7 +138,7 @@ intro-text: Feedback messages appear as a response to a person’s actions. Most
         <span><b>Your [application, claim, form] is in progress and was last saved on [Month Day, Year], at [timestamp]</b></span>
         <span>You can continue applying now or come back later to finish your application.<br>Your application will expire on <b>[Month Day, Year], at [timestamp]</b>.
 </span>
-        <span>Continue your [application, claim, form] (primary button);  Start a new application (primary action link)</span>
+        <span>Continue your [application, claim, form] (primary button); Start a new application (secondary button)</span>
         <span><a href="{{ site.baseurl }}/components/alert#informational-alert">Alert</a></span>
         <span>Informational</span>
         <span>Replace affected component</span>
