@@ -27,21 +27,21 @@ anchors:
 ## Examples
 
 ### Medications
-{% include component-example.html alt="Mobile example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Sorting MyHealtheVet medications by last fill date (newest to oldest) on mobile." width="50%" %}
+{% include component-example.html alt="Mobile example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Mobile example of MyHealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
 
-{% include component-example.html alt="Desktop example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Sorting MyHealtheVet medications by last fill date (newest to oldest) on desktop." width="50%" %}
+{% include component-example.html alt="Desktop example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Desktop example of MyHealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
 
 ### Questions
-{% include component-example.html alt="Desktop example of Sort placed below the Search Input component, separated by a divider with the Search Filter in a column to the left." file="/images/components/sort/askva_sort_search_input_filter.png" caption="Sorting AskVA questions by last updated (newest to oldest) alongside the Search Input and Search Filter components on desktop." width="50%" %}
+{% include component-example.html alt="Desktop example of Sort placed below the Search Input component, separated by a divider with the Search Filter in a column to the left." file="/images/components/sort/askva_sort_search_input_filter.png" caption="Desktop example of AskVA questions sorted by last updated (newest to oldest) alongside the Search Input and Search Filter components on desktop." width="50%" %}
 
 <!--### Find a Form
 {% include component-example.html alt="Example of the default sort on the VA Find a Form." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}-->
 
 ### Find a Form
-{% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="VA Find a Form's default sort" width="50%" %}
+{% include component-example.html alt="Screenshot of the VA Find a Form search results page showing a Sort by dropdown set to the default option above a list of form results." file="/images/components/sort/find_a_form_sort.png" caption="Desktop example of VA forms sorted by relevance." width="50%" %}
 
 ### Secure Messaging
-{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Sorting messages by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
+{% include component-example.html alt="Example of messages sorted by send date (newest to oldest) in the My HealtheVet Inbox" file="/images/components/sort/inbox_sort.png" caption="Desktop example of messages sorted by last updated (newest to oldest) in the My HealtheVet Inbox." width="50%" %}
 
 
 ## Usage
