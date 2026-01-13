@@ -29,10 +29,10 @@ anchors:
 ### Medications
 
 #### Mobile
-{% include component-example.html alt="Mobile example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Mobile example of MyHealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="25%" %}
+{% include component-example.html alt="Mobile example of medications on the My HealtheVet Medications page placed below the Filter and above the search results." file="/images/components/sort/medications_sort_mobile.png" caption="Mobile example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="25%" %}
 
 #### Desktop
-{% include component-example.html alt="Desktop example of medications on the MyHealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Desktop example of MyHealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
+{% include component-example.html alt="Desktop example of medications on the My HealtheVet Medications page placed below the Filter and above the search results" file="/images/components/sort/medications_sort.png" caption="Desktop example of My HealtheVet medications sorted by last fill date (newest to oldest) alongside the Search Filter component." width="50%" %}
 
 ### Questions
 {% include component-example.html alt="Desktop example of Sort placed below the Search Input component, separated by a divider with the Search Filter in a column to the left." file="/images/components/sort/askva_sort_search_input_filter.png" caption="Desktop example of AskVA questions sorted by last updated (newest to oldest) alongside the Search Input and Search Filter components." width="50%" %}
