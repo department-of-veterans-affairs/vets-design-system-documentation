@@ -176,6 +176,7 @@ These considerations describe how sorting changes are communicated and experienc
 
 * [Search Input](https://design.va.gov/components/search-input)
 * [Search Filter](https://design.va.gov/components/search-filter)
+* [Search Results](https://design.va.gov/templates/search-results)
 * [Select](https://design.va.gov/components/form/select)
 * [USWDS Table Component](https://designsystem.digital.gov/components/table/#guidance)
 
