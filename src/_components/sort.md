@@ -176,7 +176,7 @@ These considerations describe how sorting changes are communicated and experienc
 
 * [Select]({{ site.baseurl }}/components/form/select)
 * [Search Input]({{ site.baseurl }}/components/search-input)
-* [Search Filter]({{ site.baseurl }}/components/search-input)
+* [Search Filter]({{ site.baseurl }}/components/search-filter)
 * [Search Results]({{ site.baseurl }}/templates/search-results)
 * [USWDS Table Component](https://designsystem.digital.gov/components/table/#guidance)
 
