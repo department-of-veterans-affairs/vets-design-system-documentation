@@ -12,7 +12,6 @@ uses_mermaid: true
 anchors:
   - anchor: Usage
   - anchor: How to design and build
-  - anchor: Related
   - anchor: How this pattern affects your form
   - anchor: Content considerations
 ---
