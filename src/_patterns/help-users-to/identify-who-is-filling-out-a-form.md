@@ -12,7 +12,6 @@ uses_mermaid: true
 anchors:
   - anchor: Usage
   - anchor: How to design and build
-  - anchor: How this pattern affects your form
   - anchor: Content considerations
 ---
 
@@ -171,7 +170,7 @@ When users don't have the proper permission to fill out a form for someone else,
 
 {% include component-example.html alt="A warning alert page stating 'You need permission to fill out this form' with guidance on what steps to take next and how to get proper permissions." file="/images/patterns/help-users-to/identify-who-is-filling-out-a-form/alert-page-permission-denied.png" caption="Example of an alert page shown when users lack proper permissions, with clear next steps and pathways to obtain authorization." class="x2" %}
 
-## How this pattern affects your form
+### How this pattern affects your form
 
 #### Introduction page
 
