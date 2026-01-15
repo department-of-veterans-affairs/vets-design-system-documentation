@@ -93,12 +93,18 @@ anchors:
 ### Placement
 
 * **Place Sort above and aligned with the content that it affects.** It serves as a visual indicator of the current order.
+* **If used in conjunction with the Search Filter, place Sort after the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).** This prevents the situation where the keyboard focus skips the Sort component.
 
 
 ### Mobile app
 
 * **The VA mobile app does not currently use this component.** It uses its own combined Filter & Sort button that opens a modal to select and explicitly submit sort and filter options.
     * The naming of sort options must still remain consistent across mobile and desktop experiences.
+    * <img src="{{ site.baseurl }}/images/components/sort/va_mobile_filter_sort.png" alt="A Filter and Sort button that opens a modal that allows a user to explicitly submit sort and filter options." style="width:25%;"/>
+
+* **Reflect the active sort in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how) when sorting is used alongside filtering or other result refinements,**
+    * For example: “Showing 1–10 of 999 results for ‘2020’ with 5 filters applied, sorted by *[Sort attribute] (sort method)*.”
+    * This is not necessary for the web component because the component already serves as a visual indicator of the order whereas it hidden within the modal on the mobile app. 
 
 
 
@@ -151,9 +157,6 @@ anchors:
     * Offering both directions isn't necessary when the reverse order wouldn't be meaningful or useful for users' goals. For example, it may not make sense to sort VA locations from furthest to closest.
   
 * **Only include sort options that provide clear value.** The ability to sort data doesn't automatically mean it will help users.
-
-* **When sorting is used alongside filtering or other result refinements**, reflect the active sort in the [results description](https://design.va.gov/templates/search-results#results-description:~:text=the%20sorting%20options.-,Results%20description,-Text%20describing%20how).
-    * For example: “Showing 1–10 of 999 results for ‘2020’ with 5 filters applied, sorted by *[Sort attribute] (sort method)*.”
 
 ## Accessibility considerations
 These considerations describe how sorting changes are communicated and experienced by users of assistive technologies.
