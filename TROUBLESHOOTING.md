@@ -22,9 +22,8 @@ Check your config.yml
 **Solution 1: Clear cache (try first)**
 
 ```bash
-cd apps/docs
 rm -rf .docusaurus
-pnpm run dev:cms
+npm run dev:cms
 ```
 
 **Solution 2: Kill conflicting processes**
@@ -34,20 +33,21 @@ pnpm run dev:cms
 lsof -ti:3000 -ti:3003 -ti:8081 -ti:8082 | xargs kill -9 2>/dev/null
 
 # Restart
-cd apps/docs
-pnpm run dev:cms
+npm run dev:cms
 ```
 
 **Solution 3: Full reset**
 
 ```bash
-cd apps/docs
 rm -rf .docusaurus node_modules
+npm install
+npm run dev:cms
+```
 git checkout static/admin/config.yml
 cd ../..
-pnpm install
+npm install
 cd apps/docs
-pnpm run dev:cms
+npm run dev:cms
 ```
 
 ### How Multiple Configs Are Prevented
@@ -65,7 +65,7 @@ If the error persists after clearing cache, verify the config is valid:
 
 ```bash
 # Count collection names (should be 11, all unique)
-grep -E "^  - name:" apps/docs/static/admin/config.yml
+grep -E "^  - name:" static/admin/config.yml
 
 # Validate YAML and check for duplicates
 cd apps/docs
@@ -156,7 +156,7 @@ lsof -ti:8082 | xargs kill -9 2>/dev/null
 
 # Then start the app you need
 cd apps/docs
-pnpm run dev:cms
+npm run dev:cms
 ```
 
 ### Running Both Apps Simultaneously
@@ -166,12 +166,12 @@ If you need both apps running at the same time, start them in separate terminals
 ```bash
 # Terminal 1 - docs app
 cd apps/docs
-pnpm run dev:cms
+npm run dev:cms
 # Access at http://localhost:3000/admin/
 
 # Terminal 2 - team-docs app
 cd apps/team-docs
-pnpm run dev:cms
+npm run dev:cms
 # Access at http://localhost:3003/admin/
 ```
 
@@ -192,11 +192,11 @@ git checkout static/admin/config.yml
 # 3. Reinstall from root
 cd ../..
 rm -rf node_modules
-pnpm install
+npm install
 
 # 4. Start CMS
 cd apps/docs
-pnpm run dev:cms
+npm run dev:cms
 ```
 
 ### Browser Cache
@@ -237,37 +237,37 @@ The script:
 
 ```bash
 # Verify the config.yml is valid
-grep -E "^  - name:" apps/docs/static/admin/config.yml | sort | uniq -c
+grep -E "^  - name:" static/admin/config.yml | sort | uniq -c
 
 # All counts should be 1 (no duplicates)
 # If you see counts > 1, there's a parsing issue
 
 # Reset config to committed state
-git checkout apps/docs/static/admin/config.yml
+git checkout static/admin/config.yml
 
 # Restart CMS (will regenerate partials with correct indentation)
-pnpm run dev:docs:cms
+npm run dev:docs:cms
 ```
 
 ### Manual Script Execution
 
 ```bash
 # Set URLs for dev/prod
-pnpm run cms:url:dev
-pnpm run cms:url:prod
+npm run cms:url:dev
+npm run cms:url:prod
 
 # Regenerate partials options (run when partials are added/changed)
-pnpm run cms:generate-partials
+npm run cms:generate-partials
 ```
 
 ---
 
 ## Config File Locations
 
-- **Source config:** `apps/docs/static/admin/config.yml`
-- **Admin page:** `apps/docs/static/admin/index.html`
-- **Partials script:** `apps/docs/scripts/generate-partials-config.js`
-- **URL script:** `apps/docs/scripts/set-cms-url.js`
+- **Source config:** `static/admin/config.yml`
+- **Admin page:** `static/admin/index.html`
+- **Partials script:** `scripts/generate-partials-config.js`
+- **URL script:** `scripts/set-cms-url.js`
 
 ---
 

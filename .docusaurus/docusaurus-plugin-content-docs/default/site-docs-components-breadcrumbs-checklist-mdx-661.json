@@ -7,8 +7,8 @@
   "slug": "/components/breadcrumbs/checklist",
   "permalink": "/docs/components/breadcrumbs/checklist",
   "draft": false,
-  "unlisted": true,
-  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/breadcrumbs/checklist.mdx",
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/docs/components/breadcrumbs/checklist.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {

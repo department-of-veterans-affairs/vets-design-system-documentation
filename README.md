@@ -8,10 +8,10 @@ The main documentation site for the VA Design System, built with Docusaurus and 
 
 ```bash
 # From repo root
-pnpm run dev:docs:cms
+npm run dev:docs:cms
 
 # Or from this directory
-pnpm run dev:cms
+npm run dev:cms
 ```
 
 This starts:
@@ -22,24 +22,24 @@ This starts:
 ### Without CMS
 
 ```bash
-pnpm run dev
+npm run dev
 ```
 
 ## Build
 
 ```bash
-pnpm run build
+npm run build
 ```
 
 ## CMS Scripts
 
 | Command | Description |
 |---------|-------------|
-| `pnpm run dev:cms` | Start Docusaurus + CMS for local editing |
-| `pnpm run cms:validate` | Validate CMS config.yml for errors |
-| `pnpm run cms:generate-partials` | Regenerate shared content options |
-| `pnpm run cms:url:dev` | Set CMS URLs to localhost |
-| `pnpm run cms:url:prod` | Set CMS URLs to production |
+| `npm run dev:cms` | Start Docusaurus + CMS for local editing |
+| `npm run cms:validate` | Validate CMS config.yml for errors |
+| `npm run cms:generate-partials` | Regenerate shared content options |
+| `npm run cms:url:dev` | Set CMS URLs to localhost |
+| `npm run cms:url:prod` | Set CMS URLs to production |
 
 ## Project Structure
 
@@ -98,8 +98,8 @@ See [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common issues and solutions.
 **"collections names must be unique" error:**
 ```bash
 rm -rf .docusaurus
-pnpm run cms:validate
-pnpm run dev:cms
+npm run cms:validate
+npm run dev:cms
 ```
 
 **CMS not loading:**
@@ -110,5 +110,5 @@ lsof -i:8081
 
 # Kill and restart
 lsof -ti:3000 -ti:8081 | xargs kill -9 2>/dev/null
-pnpm run dev:cms
+npm run dev:cms
 ```

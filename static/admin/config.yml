@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: department-of-veterans-affairs/platform  # Update with your actual repo
+  repo: department-of-veterans-affairs/vets-design-system-documentation
   branch: main
   base_url: https://your-oauth-provider.com  # Will need OAuth setup for production
 

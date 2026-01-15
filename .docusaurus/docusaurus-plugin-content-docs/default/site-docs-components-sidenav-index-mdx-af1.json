@@ -8,7 +8,7 @@
   "permalink": "/docs/components/sidenav/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://design.va.gov/admin/#/collections/components/entries/sidenav/index",
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/sidenav/index",
   "tags": [],
   "version": "current",
   "frontMatter": {

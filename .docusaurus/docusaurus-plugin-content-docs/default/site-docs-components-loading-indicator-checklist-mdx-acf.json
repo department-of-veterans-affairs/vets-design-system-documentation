@@ -7,8 +7,8 @@
   "slug": "/components/loading-indicator/checklist",
   "permalink": "/docs/components/loading-indicator/checklist",
   "draft": false,
-  "unlisted": true,
-  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/loading-indicator/checklist.mdx",
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/docs/components/loading-indicator/checklist.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {

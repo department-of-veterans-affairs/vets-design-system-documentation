@@ -7,8 +7,8 @@
   "slug": "/components/pagination/checklist",
   "permalink": "/docs/components/pagination/checklist",
   "draft": false,
-  "unlisted": true,
-  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/pagination/checklist.mdx",
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/docs/components/pagination/checklist.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {

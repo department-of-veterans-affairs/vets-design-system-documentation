@@ -8,7 +8,7 @@
   "permalink": "/docs/components/omb-info/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://design.va.gov/admin/#/collections/components/entries/omb-info/index",
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/omb-info/index",
   "tags": [],
   "version": "current",
   "frontMatter": {

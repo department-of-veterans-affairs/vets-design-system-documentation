@@ -62,7 +62,7 @@ const config: Config = {
               return `${baseUrl}/admin/#/collections/components/entries/${entryPath}`;
             }
             // Fall back to GitHub for other pages
-            return `https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/${docPath}`;
+            return `https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/docs/${docPath}`;
           },
           remarkPlugins: [],
           // Exclude partials and templates from being generated as pages

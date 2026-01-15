@@ -7,8 +7,8 @@
   "slug": "/components/accordion/checklist",
   "permalink": "/docs/components/accordion/checklist",
   "draft": false,
-  "unlisted": true,
-  "editUrl": "https://github.com/department-of-veterans-affairs/vads-design-system/tree/main/apps/docs/docs/components/accordion/checklist.mdx",
+  "unlisted": false,
+  "editUrl": "https://github.com/department-of-veterans-affairs/vets-design-system-documentation/tree/main/docs/components/accordion/checklist.mdx",
   "tags": [],
   "version": "current",
   "frontMatter": {

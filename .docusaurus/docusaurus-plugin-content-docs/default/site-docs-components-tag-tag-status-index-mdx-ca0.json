@@ -8,7 +8,7 @@
   "permalink": "/docs/components/tag/tag-status/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://design.va.gov/admin/#/collections/components/entries/tag/tag-status/index",
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/tag/tag-status/index",
   "tags": [],
   "version": "current",
   "frontMatter": {

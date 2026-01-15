@@ -8,7 +8,7 @@
   "permalink": "/docs/components/on-this-page/",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://design.va.gov/admin/#/collections/components/entries/on-this-page/index",
+  "editUrl": "http://localhost:3000/admin/#/collections/components/entries/on-this-page/index",
   "tags": [],
   "version": "current",
   "frontMatter": {
